@@ -1,0 +1,2721 @@
+#AREADATA
+Name        {  ALL } The Great Arena~
+Builders    Zhyril~
+VNUMs       2700 2799
+Security    100
+Recall      2713
+Flags       256
+Version     107
+Creator     Zhyril~
+Llevel      0
+Ulevel      0
+Sounds      The crowd roars.~
+Music       u4_combt.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#2700
+Man MP~
+A Military Police Officer~
+This Uniformed Man is Guarding the Gate
+~
+~
+67 8192 16777216 8192 0 450 S
+60 1 120 120 10000 10000d0+0 0d0+250
+600 0 0
+0 0 1
+0 0 0
+#2712
+master healer~
+the master healer~
+The master healer of the Arena is here, tending to the injured.
+~
+A tall, broad man of uncertain years and compassionate eyes, this mighty
+cleric has saved the lives of thousands.  He smiles gravely at you, and
+continues with his work.  
+~
+11 128 32784 134742016 2 1000 S
+0 1 0 0 0 100000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>fight_prog 90~
+emote waves a hand, and his wounds disappear.
+mprestore self
+~
+>fight_prog 40~
+say Have you not had enough of bloodshed?
+sigh
+cast 'dispel magic' $n
+cast 'dispel magic' $n
+cast 'dispel magic' $n
+cast 'blind' $n
+~
+|
+#2713
+white-robed healer~
+a white-robed healer~
+A white-robed healer walks by.
+~
+A young man well-versed in the healing arts, he seems to be calm despite
+the frantic pace.  
+~
+75 128 32784 540672 0 1000 S
+90 1 180 180 0 40000d0+0 0d0+0
+0 0 0
+0 0 1
+6 0 0
+#2714
+white-robed healer~
+a white-robed healer~
+A white-robed healer tends to the injured.
+~
+A beautiful woman with pale grey eyes, she tends to the injured quickly and
+efficiently.
+~
+1 128 262160 0 0 1000 S
+90 1 180 180 0 40000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+>speech_prog help~
+say fear not, $n, you are safe.
+cast 'cure light' $n
+~
+|
+#2715
+pit guard~
+a pit guard~
+A pit guard is here.
+~
+~
+3 72 16 0 3 0 S
+107 1 214 214 0 40000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say Welcome to the pits!
+peer $n
+ 
+if level($n)>20
+say Bah!  If you want to fight, go to the arena!
+emote whistles, and guards escort $n away.
+mptrans $n 2715
+endif
+~
+|
+#2719
+orc pit fighter~
+an orcish pit fighter~
+A burly orc laughs at you, and advances.
+~
+A big, muscle-bound fighter with the scars of many a battle.  His piggish
+eyes reveal an animal cunning, and he seems to be well-used to fighting in
+the pit.  
+~
+3 32 16 0 0 -700 S
+10 1 20 20 0 750d0+0 0d0+0
+40 18 0
+0 0 1
+0 0 0
+#2720
+goblin pit fighter~
+a goblin pit fighter~
+A goblin pit fighter snarls tauntingly at you, and raises his weapon.
+~
+A savage little warrior, marked with scars and adorned with trophies
+scavenged from it's opponents, this goblin looks like a deadly opponent.
+~
+3 0 0 0 0 -500 S
+5 1 10 10 0 100d0+0 0d0+0
+0 18 0
+0 0 1
+0 0 0
+#2721
+gnoll pit fighter~
+a gnoll pit fighter~
+A gnoll pit fighter screams in anger and attacks.
+~
+A tall, lanky, ugly brute.
+~
+3 8 16 0 0 -600 S
+15 1 30 30 0 1500d0+0 0d0+0
+0 16 0
+0 0 1
+0 0 0
+>death_prog 100~
+say Impossible! Puny one beats ME?
+emote coughs and dies.
+~
+|
+#2722
+kobold pit fighter~
+a kobold pit fighter~
+A kobold pit fighter shrieks and attacks!
+~
+A nasty little fighter with sharp claws.
+~
+35 0 0 0 0 -400 S
+6 1 12 12 0 350d0+0 0d0+0
+0 18 0
+0 0 1
+0 0 0
+#2723
+orius~
+Orius~
+A disreputable-looking man is here, scouting the area.
+~
+A disreputable-looking merchant, Orius stands here anxiously scanning the
+gladiators, trying to separate the winners from the losers.  Every once in a
+while he'll scribble down something, and hand it to a messenger who runs
+off.  
+~
+3 128 0 0 3 0 S
+107 1 214 214 0 40000d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+look $n
+say How you feeling today, $n?  Strong?  Think you'll do well?
+ponder
+~
+|
+#2724
+arena guard~
+an Arena guard~
+A huge guard is here, carefully observing the area.
+~
+A huge brute, with a massive black beard and glowering black eyes.  He's
+even big enough to keep most of the gladiators in line, and they're hardened
+fighters, not easily intimidated.  
+~
+67 64 0 0 1 0 S
+105 1 210 210 0 50000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if level($n)<30
+look $n
+snicker
+say Try the pit fights, youngster!
+push $n west
+endif
+~
+|
+#2725
+arena guard~
+an arena guard~
+An arena guard is here, watching the fights.
+~
+A big, bored-looking guard.
+~
+3 0 0 0 0 0 S
+110 1 220 220 0 0d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+~
+|
+#2726
+master ring~
+the Master of the Ring~
+The Master of the Ring is here, refereeing the fight.
+~
+A burly man with eagle eyes and massive fists.  You should probably not
+try anything illegal here.  
+~
+67 16777312 16 0 0 0 S
+500 1 20000 30000 0 50000d0+0 0d0+0
+0 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+say Welcome to the Pugilists' Ring!
+say The rules are simple; no weapons, armor, or anything else may be used.
+say No magic is permitted.
+say Begin at your leisure.
+mpforce $n remove all
+~
+>act_prog wears wields holds lights~
+say You have broken the rules!
+murder $n
+~
+>act_prog p is dead!~
+say WE HAVE A WINNER!
+mpecho The crowd cheers wildly!
+emote drops a sack of gold coins.
+say Your prize!
+drop 5000 coins
+~
+|
+#2727
+deputy master games~
+the Master of the Games~
+The Deputy Master of the Arena stands here.
+~
+A tall, tough old warrior with iron-grey hair.  He is responsible for the
+administration of the fighter's area of the Arena.  
+~
+3 104 16 0 1 0 S
+140 1 280 280 0 40000d0+0 0d0+0
+8 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Welcome to the Arena.
+look $n
+ 
+if level($n)<46
+say I think I'll assign you to the first battleground, $n.
+emote motions to some guards, who scramble to do his bidding.
+mptrans $n 2730
+break
+endif
+ 
+if level($n)<61
+say I think I'll assign you to the second battleground.
+emote signals to some guards, who lead $n away.
+mptrans $n 2741
+break
+endif
+ 
+if level($n)<90
+say $n, you are assigned to the third battleground.
+say Guards!
+mpecho Guards lead $n through one of the doors.
+mptrans $n 2752
+break
+endif
+ 
+if level($n)<106
+say $n, I shall let you fight in the Grand Arena!
+say Fight well!
+emote signals to some guards.
+mpecho They respectfully lead $n through a door.
+mptrans $n 2774
+shout $n has entered the Great Arena!
+break
+endif
+ 
+~
+|
+#2740
+spectator~
+a spectator~
+A spectator gazes raptly into the pit, watching the fight.
+~
+A ruffian of the most common sort, he seems quite happy to watch the pit
+fighters beat on each other.  
+~
+1 0 0 0 0 0 S
+10 1 20 20 0 0d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#2750
+gambler~
+a gambler~
+A rough-looking man shouts angrily as he watches the fight.
+~
+A burly man with a wine-stained tunic, he is dispensing and receiving money
+as the patrons bet on the pit fights.
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#2754
+gladiator~
+a gladiator~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+60 1 120 120 0 2000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#2770
+arena guard~
+an arena guard~
+An Arena guard walks by on patrol.
+~
+A large, intimidating-looking guard.
+~
+1 64 0 134217728 0 0 S
+90 1 180 180 0 27000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#2774
+nubile young maiden~
+a masseuse~
+A beautiful young maiden is here.
+~
+A beautiful young woman dressed only in a toga, her job is to succor the
+fighters before she enters the arena.  
+~
+67 0 0 0 0 300 S
+17 1 34 34 0 1000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+>speech_prog massage rubdown oil help~
+if sex($n)==1
+ say Welcome, master!
+ say Have a seat and I shall massage your mighty thews before you fight.
+massage $n
+endif
+ 
+if sex($n)==2
+ say Welcome, mistress!
+ say Shall I massage you before your match?
+ smile $n
+ emote rubs oil into $n's skin.
+massage $n
+caress $n
+massage $n
+endif
+ 
+if sex($n)==0
+ say Welcome, good...err...
+look $n
+say Entity.
+say Have a seat.
+massage $n
+endif
+~
+|
+#2775
+none~
+Zhyril~
+Zhyril is standing here.
+~
+~
+1 234881088 17072180 8192 0 0 S
+114 1 500 500 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#2785
+ticketseller~
+a ticketseller~
+A ticketseller is here.
+~
+A short, stocky man who seems to enjoy the small power his job provides.
+~
+3 0 0 0 0 0 S
+10 1 20 20 0 5000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Back, peasants!
+mpecho A few guards try to shove the thronging mass back, but it accomplishes little.
+look $n
+sneer
+say You can watch the fight with the rest of the groundlings.
+say 20 coins!
+~
+>bribe_prog 20~
+say Stay to the right, with the rest of the groundlings.
+mpecho $n is dragged along with the rest of the crowd to the lower seating.
+mptrans $n 2786
+~
+|
+#2788
+spectator~
+a spectator~
+A spectator is here, raptly watching the combat below.
+~
+~
+1 0 0 0 0 200 S
+5 1 10 10 0 100d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#2789
+spectator~
+a cheering spectator~
+A spectator cheers at the top of his lungs.
+~
+~
+1 0 0 0 0 0 S
+10 1 20 20 0 40d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#2790
+pitmaster~
+the Master of the Pit~
+The Master of the Pit is here.
+~
+A burly, bald man with a huge black beard.
+~
+1 0 0 0 3 0 S
+150 1 300 300 0 0d0+0 0d0+0
+1500 0 0
+0 0 0
+0 0 0
+#2792
+haughty nobleman~
+a haughty nobleman~
+A haughty young nobleman is here, looking at you suspiciously.
+~
+A young nobleman with powdered face and garish finery, he seems surprised
+to see someone as uncouth as you up here.  
+~
+3 0 0 0 0 0 S
+5 1 10 10 0 90d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+look $n
+say You there, peasant!
+say You're not supposed to be here!  Leave, before I call the guards.
+emote tries to shoo you away with a frilly handkerchief.
+~
+>act_prog p slaps you.~
+mpecho $n's battle-hardened hand hits with a force that the citybred nobleman isn't quite used to.
+mpecho He crumples to the ground, unconscious, and his retainers cart him off to the healer, stopping only to smile gratefully at $n.
+mppurge self
+~
+>act_prog p leaves up.~
+say Wait there, peasant!
+emote grabs $n's leg, and tries to pull $m down..
+say I told you, leave this place at once!
+slap $n
+mpforce $n down
+~
+|
+#2794
+serving girl~
+a serving girl~
+A serving girl wades through the pool, carrying a flagon of wine.
+~
+She is wearing a white toga, which due to the water is plastered to her
+skin.  She is quite shapely.  
+~
+3 0 0 0 0 0 S
+10 1 20 20 0 0d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+>speech_prog wine help~
+if sex($n)==2
+say Here, mistress.
+blush $n
+mpoload 2794
+emote pours some wine into a mug.
+give mug $n
+endif
+ 
+if sex($n)==1
+say Here, master.
+mpoload 2794
+emote pours some wine into a mug.
+give mug $n
+endif
+ 
+~
+|
+#2795
+cleaner~
+cleaner mob~
+A cleaner mob is here.
+~
+~
+3 0 0 0 1 0 S
+0 1 0 0 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>rand_prog 5~
+~
+|
+#2796
+master arena~
+the Master of the Arena~
+The Master of the Arena is here, surveying the carnage.
+~
+A huge man dressed in full platemail, his face is obscured by a silver
+mask in the shape of a human face.  You sense great power emanating from
+him.  
+~
+3 234889344 294964 24576 2 0 S
+150 1 1000 1000 0 100000d0+0 0d0+0
+1000 0 0
+0 0 1
+134 0 0
+>fight_prog 30~
+dim
+~
+>fight_prog 30~
+cast 'meteor swarm'
+~
+>fight_prog 30~
+paralyse $n
+~
+|
+#0
+
+
+
+#OBJECTS
+#2700
+lane arena~
+the lane~
+A lane leads off towards the massive Arena of Methidoral.~
+~
+29 0 0 0 0 2097153 60
+100 100
+2701~ 0~ 0~ 0~
+5 100 0
+0 0
+reserved~
+0 0
+0 2703 2701
+#2701
+1~
+1~
+1~
+~
+9 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+4 1 0
+0 0
+reserved~
+0 0
+2700 0 0
+#2702
+full Clip~
+full Clip~
+A Full Pistol Clip, is here.~
+~
+8 0 0 0 0 1 60
+100 100
+0~ 0~ 0~ 0~
+2 1000 0
+0 0
+reserved~
+0 0
+2700 0 0
+#2703
+Expended Clip~
+an Expened Clip~
+This empty pistol clip, is here.~
+~
+8 0 0 0 0 1 60
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2704
+Standard Issue Uniform~
+&gStandard Issue Uniform~
+This uniform is piled here.~
+~
+9 32768 0 0 0 9 60
+100 100
+0~ 0~ 0~ 0~
+6 60 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -10
+A
+24 30
+A
+13 60
+#2705
+MP Helmet~
+&wMP Helmet~
+A White Bowl-shaped Helmet, lies here~
+~
+9 0 0 0 0 17 60
+100 100
+0~ 0~ 0~ 0~
+3 92 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 20
+A
+24 20
+#2706
+Impact Vest~
+impact-Resistance Vest~
+A Suit of Body Armor, rests here.~
+~
+9 32768 0 0 0 1025 60
+100 100
+0~ 0~ 0~ 0~
+7 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 30
+#2707
+white Leather Gloves~
+white Leather Gloves~
+A pair of White Leather Gloves, lie here~
+~
+9 0 0 0 0 129 60
+100 100
+0~ 0~ 0~ 0~
+2 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+18 5
+#2708
+done~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2712
+white robe~
+a white robe~
+A white robe is here.~
+~
+9 0 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2718
+pit~
+the pit~
+A wide stone pit is here.~
+~
+29 0 0 0 0 0 0
+100 100
+2720~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2719
+the pit~
+the pit~
+A deep stone pit is here.~
+~
+29 0 0 0 0 0 0
+100 100
+2721~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2725
+pugilist's ring~
+the pugilists' ring~
+A large ring with a canvas floor is here.~
+~
+29 0 0 0 0 0 0
+100 100
+2726~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2726
+rod authority~
+a rod of authority~
+A huge rod is here.~
+~
+5 0 0 0 0 8193 150
+100 100
+0~ 10~ 0~ 6~
+20 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 100
+A
+19 5000
+A
+18 5000
+#2732
+passage~
+a passage~
+A passage leads back inside.~
+~
+29 0 0 0 0 0 0
+100 100
+2731~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2742
+entrance prep room~
+the entrance~
+The entrance to the rooms below the arena is here.~
+~
+29 0 0 0 0 0 0
+100 100
+2741~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2753
+grate~
+the grate~
+A grate is in the floor here.~
+~
+29 0 0 0 0 0 0
+100 100
+2752~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2770
+spear~
+a long spear~
+A spear is here.~
+~
+5 0 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 0~
+10 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+#2771
+bronze breastplate~
+a suit of bronze plate mail~
+Some bronze armor is here.~
+~
+9 0 0 0 0 9 50
+100 100
+10~ 0~ 0~ 0~
+40 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+#2774
+marble fountain~
+a beautiful marble fountain~
+A huge marble fountain is here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2775
+huge marble pool~
+the pool~
+A huge marble pool is here, full of hot water.~
+~
+29 0 0 0 0 0 0
+100 100
+2794~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2776
+trap~
+a trap~
+A strange opening is in the wall here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>look_prog 100~
+0
+mpecho Its a trap!
+cast 'webbing' $n
+~
+|
+#2777
+The Great Arena~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2780
+gate of swords~
+the Gate of Swords~
+The Gate of Swords is here, leading to the Arena battlegrounds.~
+~
+29 0 0 0 0 0 0
+100 100
+2775~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2794
+mug wine~
+a mug of wine~
+A mug of wine is here.~
+~
+17 0 0 0 0 1 1
+100 100
+1~ 1~ 2~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2796
+huge black sword redeemer~
+a huge black sword named "Redeemer"~
+An enormous black sword is here.~
+~
+5 128 0 0 0 8193 105
+100 100
+0~ 10~ 100~ 1~
+15 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 100
+A
+5 2
+A
+1 2
+A
+13 200
+A
+19 45
+A
+18 45
+#2797
+silver mask~
+a silver mask~
+A mask is here.~
+~
+9 1 0 0 0 65537 105
+100 100
+10~ 0~ 0~ 0~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 50
+A
+13 100
+A
+18 15
+A
+19 15
+#2798
+black platemail~
+a suit of black plate mail~
+A suit of armor is here.~
+~
+9 0 0 0 0 9 105
+100 100
+12~ 0~ 0~ 0~
+30 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 20
+A
+1 2
+#0
+
+
+
+#ROOMDATA
+#2700
+Beginning of the Lane~
+~
+~
+You are travelling along a wide stone roadway through a pleasant valley. 
+To the southwest is the city of Methidoral, while far off to the north you
+can make out a vast stone structure.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 2701
+D2
+~
+~
+0 0 25147
+S
+#2701
+A Wide Lane~
+~
+~
+You are walking along a wide cobblestone lane bordered by trees.  To the
+north you can make out a massive stone structure in the distance.  The air
+is warm here, and the gentle breeze makes the trees rustle and sway.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 2702
+D2
+~
+~
+0 0 2700
+S
+#2702
+A Wide Lane~
+~
+~
+The lane continues north and south through gently rolling meadows.  On either
+side a line of trees borders the roadway.  At this point you can make other
+travellers along the road; that, and the worn and wagon-rutted state of the
+lane reveals that this path is well-travelled.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 2703
+D2
+~
+~
+0 0 2701
+S
+#2703
+A Wide Lane~
+~
+~
+The lane runs north towards a massive stone structure.  While it is quiet
+and peaceful here, every once in a while the warm breeze brings a faint,
+strange sound.  It almost sounds like a vast throng of people, screaming and
+cheering.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 2704
+D2
+~
+~
+0 0 2702
+S
+#2704
+A Wide Lane~
+~
+~
+You are getting closer to the stone structure, which is now only a little
+north of you.  The sound is definitely stronger, and it is definitely a
+cheering throng.  To the south the lane runs through rolling meadows and
+fields.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 2705
+D2
+~
+~
+0 0 2703
+S
+#2705
+A Wide Lane~
+~
+~
+You are a little bit south of the huge stone structure.  It appears to be
+in the shape of a circle, and the outer walls tower hundreds of feet into
+the air.  From within you hear cheering crowds.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 2706
+D2
+~
+~
+0 0 2704
+S
+#2706
+Before the Arena~
+~
+~
+You stand before the enormous arched entranceway of a massive stone structure.
+The cheering of a vast crowd fills the air, and you feel you blood race;
+the excitement is contagious.  Above the massive entranceway words have been
+carved in the common tongue:
+ 
+"Enter, O Warrior, and test thy courage!"
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2707
+D2
+~
+~
+0 0 2705
+S
+#2707
+In the Arena~
+~
+~
+You stand just inside the massive entranceway of the Great Arena of
+Methidoral.  All about you are excited citizens, eager to see the carnage,
+while the occasional gladiator swaggers through the crowd.  To the north the
+crowds get even thicker.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 2708
+D2
+~
+~
+0 0 2706
+S
+#2708
+The Inner Gates~
+~
+~
+Barriers have been erected here, manned by a squadron of ticketsellers. 
+You can join the lines and enter the arena as a spectator here, while to the
+east is a side passage, above which areis carved the word "Contestants".  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 2785
+D1
+~
+~
+0 0 2709
+D2
+~
+~
+0 0 2707
+S
+#2709
+The Hall of Fighters~
+~
+~
+This side passage leads off from the Arena's main hall, towards the
+fighters' preparation area.  About you stride the other gladiators; they
+seem to be a varied lot, some veterans, some hopeful beginners.  To the east
+is an intersection of passageways.  
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 2710
+D3
+~
+~
+0 0 2708
+S
+#2710
+An Intersection~
+~
+~
+Passages run in all directions from this intersection.  To the east a
+hallway leads to the Arena's main entrance hall, while to the east a wide
+corridor runs towards what can only be the battlegrounds themselves; the
+roar of the crowd and sound of metal striking metal emanate from that
+direction.  To the north and south run slightly smaller passageways.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 2711
+D1
+~
+~
+0 0 2723
+D2
+~
+~
+0 0 2715
+D3
+~
+~
+0 0 2709
+S
+#2711
+The Hall of Healers~
+~
+~
+This hallway runs north towards a large, well-lit area.  To the south is
+the intersection.  
+~
+0 394244 0
+Rd     0
+D0
+~
+~
+0 0 2712
+D2
+~
+~
+0 0 2710
+S
+#2712
+The Healing Room~
+~
+~
+In this vast chamber white-robed healers rush around, tending to the wounded.
+Stone slabs have been set up; on them lie the dead and dying.  To the north
+the chamber continues, while to the south is a hallway.
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 2713
+D1
+~
+~
+0 0 2788
+D2
+~
+~
+0 0 2711
+S
+#2713
+The Healing Chamber~
+~
+~
+The northern section of the chamber is very much like the south. 
+White-robed healers frantically tend to the injured, and the air is
+occasionally broken by an injured moan and the soft chant of a healing
+spell.  
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 2712
+S
+#2715
+To the Pits~
+~
+~
+This hallway runs south towards a wide stone stairway that leads down. 
+The fighters awalking here seem to be a disreputable lot.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 2710
+D2
+~
+~
+0 0 2716
+S
+#2716
+A Stairway~
+~
+~
+You stand at the top of a stone stairway that leads deep into the depths
+of the Arena.  The torches are few and far between here, and the shadows
+give this area a forbidding look.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 2715
+D5
+~
+~
+0 0 2717
+S
+#2717
+The Bottom of the Stairs~
+~
+~
+The stairs end here, at the southern end of a cavernous room deep below
+the Arena.  Smoky torchlight envelops the room, and crowds of surly ruffians
+stand above deep stone pits, looking down.  Shouts, screams, and curses fill
+the room.  
+~
+0 132108 0
+Rd     0
+D0
+~
+~
+0 0 2718
+D4
+~
+~
+0 0 2716
+S
+#2718
+The Pit Fights~
+~
+~
+Here the dregs of society gather to gamble over the pits.  The room is
+full of a wide variety of scoundrels; humans stand shoulder-to-shoulder with
+goblins, orcs, and gnolls, and even the occasional ogre stands looming above
+the crowd.  
+~
+0 394252 0
+Rd     0
+D0
+~
+~
+0 0 2719
+D2
+~
+~
+0 0 2717
+S
+#2719
+The Pit Fights~
+~
+~
+Another pit lies here, above which loom a throng of cheering gamblers. 
+To the north your way is blocked by a thick stone wall, upon which has been
+carved a wide variety of profanities, threats, and unintelligible scrawl.  
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 2718
+S
+#2720
+In the Pit~
+~
+~
+You have scrambled down into stone pit.  As you grip your weapon, the
+shouts and screams of the gamblers echo deafeningly through the air.  
+~
+0 12 0
+Rd     0
+D4
+~
+~
+0 0 2718
+S
+#2721
+In the Pit~
+~
+~
+You stand at the bottom of a crude stone pit, above which a throng of
+spectators lurk eagerly.  The floor is stained with the blood of the fallen,
+and the rank odor of unwashed bodies permeates the air.  
+~
+0 4 0
+Rd     0
+D4
+~
+~
+0 0 2719
+S
+#2723
+The Hall of Fighters~
+~
+~
+This wide hall leads east towards the fighting area, and west towards the
+main Arena complex.  Fighters stride through the halls, jostling and
+taunting each other.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 2724
+D3
+~
+~
+0 0 2710
+S
+#2724
+The Hall of Fighters~
+~
+~
+The hall continues to the east, while an intersection lies to the west. 
+Fighters walk back and forth, checking their equipment; many of the younger
+warriors look nervous.  
+~
+0 394252 0
+Rd     0
+D1
+~
+~
+0 0 2727
+D3
+~
+~
+0 0 2723
+S
+#2725
+Before the Pugilist's Ring~
+~
+~
+You have entered a large room, apparently a smaller arena dedicated to
+the pugilistic arts.  A mass of fighters and spectators surround it,
+cheering the occupants.  
+ 
+You note a large sign, which proclaims:
+ 
+"Enter at your own risk!  NO WEAPONS, ARMOR, OR ANY OTHER OBJECTS CAN BE WORN."
+~
+0 4 0
+Rd     0
+S
+#2726
+In the Ring~
+~
+~
+You stand on the canvas-covered floor of the Pugilists' Ring.  You clench
+your fists and wait for the fight to start.  
+~
+0 537165824 0
+Rd     0
+D5
+~
+~
+0 0 2725
+S
+>enter_prog 100~
+0
+mpecho The Master of the Ring shouts from ringside:
+mpecho "The rules are these:"
+mpecho "No weapons, no armor, no objects of any kind may be used!"
+mpecho "Now fight!"
+mpforce $n remove all
+~
+>rand_prog 10~
+0
+mpecho The crowd chants and whistles!
+~
+|
+#2727
+The Hall of Fighters~
+~
+~
+The Hall comes to an end here, in a large room with a series of doors.  
+~
+0 132110 0
+Rd     0
+D3
+~
+~
+0 0 2724
+S
+#2730
+The Preparation Area~
+~
+~
+You have been brought to the Arena's preparation room.  Other fighters
+are here, some resting, some exercising, others talking quietly on the huge
+stone benches that line the walls.  To the east is the passageway that leads
+into one of the Arena's battlegrounds; be warned, though, for the greatest
+fighters in the world come here to do battle.  
+~
+0 394250 0
+Rd     0
+D1
+~
+~
+0 0 2731
+D2
+~
+~
+0 0 2727
+S
+#2731
+A Passage~
+~
+~
+To the east lies the battleground, and the sounds of steel ringing and
+the shouts of the injured fill the air.  You grip your weapon and prepare
+for battle.  
+~
+0 394250 0
+Rd     0
+D1
+~
+~
+0 0 2732
+D3
+~
+~
+0 0 2730
+S
+#2732
+The Arena Battleground~
+~
+~
+You have emerged into one of the Arena's sandy battlegrounds.  All about
+you rise the vast Arena stands, filled with screaming spectators.  You grip
+your weapon and prepare to do battle.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2737
+D1
+~
+~
+0 0 2733
+D2
+~
+~
+0 0 2738
+S
+#2733
+The Arena Battleground~
+~
+~
+You stand in the center of the Arena, almost overwhelmed by the roar of
+the crowd.  You grip your weapon, and charge into battle.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2736
+D1
+~
+~
+0 0 2734
+D2
+~
+~
+0 0 2739
+D3
+~
+~
+0 0 2732
+S
+#2734
+The Arena Battleground~
+~
+~
+You have reached the eastern wall of this part of the Arena's vast
+battlegrounds.  From over the wall you hear the sounds of fighting in the
+main arena, but you try not to get distracted; there are foes about, seeking
+your blood.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2735
+D2
+~
+~
+0 0 2740
+D3
+~
+~
+0 0 2733
+S
+#2735
+The Arena Battleground~
+~
+~
+You have reached the northeastern corner of the battleground.  To the
+north a stone wall blocks your way; above it are the stands of cheering
+spectators.  
+~
+0 537264130 0
+Rd     0
+D2
+~
+~
+0 0 2734
+D3
+~
+~
+0 0 2736
+S
+#2736
+The Arena Battleground~
+~
+~
+The arena stretches in all directions but north, where your way is
+blocked by the high stone divider that separates the battleground from the
+stands.  Cheering crowds fill the air with a mighty roar.  
+~
+0 537264130 0
+Rd     0
+D1
+~
+~
+0 0 2735
+D2
+~
+~
+0 0 2733
+D3
+~
+~
+0 0 2737
+S
+#2737
+The Arena Battleground~
+~
+~
+You stand in the northwestern corner of the arena.  On all sides rise up
+great stands, filled with screaming crowds of people.  The sand under your
+feet is torn and bloodied, and fragments of weapons and armor lie in
+splintered ruins about you.  
+~
+0 537264130 0
+Rd     0
+D1
+~
+~
+0 0 2736
+D2
+~
+~
+0 0 2732
+S
+#2738
+The Arena Battleground~
+~
+~
+You are in the Arena's southwestern corner.  The sand has been churned by
+the fighting, and a few arrows lie embedded in the mortar between the stones
+of the high walls.  The crowd cheers wildly as you scramble to find an
+opponent.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2732
+D1
+~
+~
+0 0 2739
+S
+#2739
+The Arena Battleground~
+~
+~
+Above you to the south is a high wall that separates this battleground
+from another.  From over the wall you hear the sounds of fighting, but your
+investigation must wait until you have defeated the foes here.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2733
+D1
+~
+~
+0 0 2740
+D3
+~
+~
+0 0 2738
+S
+#2740
+The Arena Battleground~
+~
+~
+You are in the southeastern corner of this battleground.  The 30-foot
+wall prevents your passage to the east and south, while in all other
+directions the sandy battleground stretches out.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2734
+D3
+~
+~
+0 0 2739
+S
+#2741
+The Preparation Room~
+~
+~
+This small room has been set aside for the fighters to prepare themselves
+for battle.  To the west a large opening leads right into the Arena; you'd
+best be ready before you go through it.  To the south lies the gymnasium;
+leave through that way and you probably won't be able to get back in the
+same way.  
+~
+0 132106 0
+Rd     0
+D2
+~
+~
+0 0 2788
+D3
+~
+~
+0 0 2742
+S
+#2742
+In the Arena~
+~
+~
+You stand at the eastern edge of a large sand arena.  Above you rise vast
+stands full of screaming spectators.  You can enter the preparation room at
+this point, though the audience might not appreciate it if you haven't
+fought enough.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2747
+D2
+~
+~
+0 0 2750
+D3
+~
+~
+0 0 2743
+S
+#2743
+In the Arena~
+~
+~
+You stand in the center of the Arena battleground.  In all directions
+rise up enormous stone stands containing thousands of cheering spectators. 
+The ground here is covered with rusty brown stains...  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2746
+D1
+~
+~
+0 0 2742
+D2
+~
+~
+0 0 2749
+D3
+~
+~
+0 0 2744
+S
+#2744
+In the Arena~
+~
+~
+You are at the western edge of the Arena battlegrounds.  Over the wall to
+the west you hear the sound of fighting from the battlegrounds on the other
+side.  You wonder how the fighters there are faring.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2745
+D1
+~
+~
+0 0 2743
+D2
+~
+~
+0 0 2748
+S
+#2745
+In the Arena~
+~
+~
+You are at the northwestern corner of the battlegrounds.  The ground here
+is churned and stained with the lifeblood of the fallen.  
+~
+0 537264130 0
+Rd     0
+D1
+~
+~
+0 0 2746
+D2
+~
+~
+0 0 2744
+S
+#2746
+In the Arena~
+~
+~
+The stands are north of you, while to the south is the center of the
+Arena battlegrounds.  The crowd roars wildly as you scramble to find a foe. 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2747
+D2
+~
+~
+0 0 2743
+D3
+~
+~
+0 0 2745
+S
+#2747
+In the Arena~
+~
+~
+You are in the northeastern corner of the battlegrounds.  Great stands
+rise up to the north, containing the cheering throng.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2742
+D3
+~
+~
+0 0 2746
+S
+#2748
+In the Arena~
+~
+~
+The southwestern corner of the Arena battlegrounds is little different
+from the rest of it.  You are on edge, waiting for a foe to appear.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2744
+D1
+~
+~
+0 0 2749
+S
+#2749
+In the Arena~
+~
+~
+You stand at the southern edge of the battlegrounds.  A large wall rises
+up to your south, blocking your way.  
+~
+0 537264128 0
+Rd     0
+D0
+~
+~
+0 0 2743
+D1
+~
+~
+0 0 2750
+D3
+~
+~
+0 0 2748
+S
+#2750
+In the Arena~
+~
+~
+You are in the southeastern corner of the Arena battlegrounds.  The stone
+here is pitted and scarred, and an arrow sticks out from the mortar
+inbetween two of the bricks.  
+~
+0 537264134 0
+Rd     0
+D0
+~
+~
+0 0 2742
+D3
+~
+~
+0 0 2749
+S
+#2752
+The Preparation Room~
+~
+~
+This large room is full of gladiators preparing for the Arena.  Stone
+benches line the wall, and large urns full of water sit in the center of the
+room for drinking and washing.  Stone steps lead up through a grating into
+the arena; climb them and you enter battle.  To the south a doorway leads
+away from the battleground area.  If you enter it, you will not be able to
+re-enter.  
+~
+0 1036 0
+Rd     0
+D2
+~
+~
+0 0 2788
+D3
+~
+~
+0 0 2727
+D4
+~
+~
+0 0 2753
+S
+#2753
+In the Arena~
+~
+~
+You stand upon the bloody battleground of the Arena.  On all sides rise
+up enormous stands, filled with screaming spectators.  You grip your weapon
+tightly and ready yourself for battle.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2754
+D1
+~
+~
+0 0 2755
+D2
+~
+~
+0 0 2757
+D3
+~
+~
+0 0 2756
+S
+#2754
+In the Arena~
+~
+~
+The Arena ground continues east, west, and south, while to the north a
+stone wall separates you from the stands.  
+~
+0 537264130 0
+Rd     0
+D1
+~
+~
+0 0 2759
+D2
+~
+~
+0 0 2753
+D3
+~
+~
+0 0 2761
+S
+#2755
+In the Arena~
+~
+~
+You stride through the Arena, weapon in hand and a snarl on your lips. 
+Foes rise up in the dusty air.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2759
+D2
+~
+~
+0 0 2758
+D3
+~
+~
+0 0 2753
+S
+#2756
+In the Arena~
+~
+~
+A wall blocks your way west, while in all other directions the sandy
+battleground stretches out.  The sand has been stained red by what you can
+only assume is the lifeblood of the fallen.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2761
+D1
+~
+~
+0 0 2753
+D2
+~
+~
+0 0 2760
+S
+#2757
+In the Arena~
+~
+~
+You walk through the Arena, your heart pounding and the sweat collecting
+on your face.  The way south is blocked by a high stone wall, separating
+this battleground from the others.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2753
+D1
+~
+~
+0 0 2758
+D3
+~
+~
+0 0 2760
+S
+#2758
+In the Arena~
+~
+~
+You've reached the southeastern corner of this battleground.  From over
+the wall comes the sound of fighting, but you force yourself to ignore it
+and focus on the enemies here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2755
+D3
+~
+~
+0 0 2757
+S
+#2759
+In the Arena~
+~
+~
+You stand in the northeastern corner of the arena, scanning the dusty air
+for the sight of one of your foes.  The air is filled with the sound of the
+crowd.  
+~
+0 537264130 0
+Rd     0
+D2
+~
+~
+0 0 2755
+D3
+~
+~
+0 0 2754
+S
+#2760
+In the Arena~
+~
+~
+You are at the southwestern corner of the battleground.  The air is heavy
+and oppressive, and the smell of blood and sweat assails your nostrils.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2756
+D1
+~
+~
+0 0 2757
+S
+#2761
+In the Arena~
+~
+~
+You are in the northwestern corner.  In all directions rise up the
+massive stands, filled with screaming and cheering spectators.  You scan the
+area, looking for foes.  
+~
+0 537264130 0
+Rd     0
+D1
+~
+~
+0 0 2754
+D2
+~
+~
+0 0 2756
+S
+#2763
+The Preparation Room~
+~
+~
+Here you and the other gladiators are able to prepare for your fight. 
+Stone benches have been provided for you to sit on, and a large fountain in
+the center of the room provides water.  To the north is the entranceway to
+the arena; pass through it and you are fair game for attack.  
+~
+0 12 0
+Rd     0
+S
+#2772
+The Preparation Room~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#2774
+The Preparation Room~
+~
+~
+You have entered a huge, luxuriously appointed chamber.  Marble columns
+line the walls, and colorful frescos display scenes of both love and war. 
+All about you are marble benches, covered with silken cushions, where you
+and the other gladiators are allowed to prepare for the fight.  Beautiful
+maidens carry pitchers of wine between the benches, while others massage oil
+into the fighters' skin.  The legendary Gate of Swords is here, providing
+entry into the Great Arena.  But be warned; those who fight here have
+achieved the pinnacle of martial skill, and will not be easy foes.  To the
+west a door leads away from the battleground.  
+~
+0 12 0
+Rd     0
+D3
+~
+~
+0 0 2788
+S
+#2775
+The Grand Arena~
+~
+~
+You stand at the entrance to the Grand Arena of Methidoral.  Unlike the
+rest of the Arena battlegrounds, this area is in the form of a labyrinth of
+forbidding spiked walls.  At this point you can head north.  Beware the
+deathtraps that have been placed here; they can kill you before you meet a
+single foe.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2776
+S
+#2776
+The Grand Arena~
+~
+~
+The labyrinthine passage runs north and south from this point.  The roar
+of the crowd assails your ears, making it difficult to hear the tread of
+anyone sneaking up on you.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2777
+D2
+~
+~
+0 0 2775
+S
+#2777
+The Grand Arena~
+~
+~
+The Arena labyrinth opens up to the north, while to the east and west your
+way is blocked by tall stone walls.  You hear a strange grunting coming from
+somewhere close.
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2778
+D2
+~
+~
+0 0 2776
+S
+>enter_prog 40~
+0
+mpecho Suddenly, you hear a strange rustling sound.
+mpecho A huge ball of flame erupts before you!
+cast 'fireball' $n
+~
+|
+#2778
+The Center of the Arena~
+~
+~
+You have entered a wide stone platform, the central battleground of the
+legendary Grand Arena.  In all other directions stretches the cruel
+labyrinth that the Master of the Arena has created to hinder those who test
+their skills here.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2781
+D1
+~
+~
+0 0 2782
+D2
+~
+~
+0 0 2777
+D3
+~
+~
+0 0 2779
+S
+#2779
+The Grand Arena~
+~
+~
+The labyrinth takes the form of a maze of ironthorn hedges.  You look
+wildly about, seeking opponents to fight, while carefully avoiding the
+razor-sharp thorns that the hedge thrusts at you.  
+~
+0 537264130 0
+Rd     0
+D0
+~
+~
+0 0 2780
+D1
+~
+~
+0 0 2778
+S
+>enter_prog 30~
+0
+mpecho You curse as a high shrieking sound heralds the triggering of another trap.
+cast 'lightning' $n
+~
+|
+#2780
+The Grand Arena~
+~
+~
+The labyrinth twists and turns, confusing you greatly.  The constant
+shouting of the crowds isn't helping your state of mind either.  
+~
+0 537264130 0
+Rd     0
+D2
+~
+~
+0 0 2779
+S
+>enter_prog 60~
+0
+mpecho You hear a snap.
+cast 'high explosive' $n
+~
+|
+#2781
+The Grand Arena~
+~
+~
+The labyrinth ends at a dead end.  You curse, but are startled to find
+that no sound comes out of your throat.  Apparently this room has been
+affected by a mighty enchantment.  Strange also is the sudden silence, as
+the crowd has been totally muffled by whatever magic has been used here.  
+~
+0 679870466 0
+Rd     0
+D2
+~
+~
+0 0 2778
+S
+#2782
+The Grand Arena~
+~
+~
+The push through the labyrinth, hoping not to get ambushed in it's twists
+and turns.  Ironically enough, the lowliest groundling in the stands knows
+more about the location of your opponents from their vantage point.  
+~
+0 537264130 0
+Rd     0
+D2
+~
+~
+0 0 2783
+D3
+~
+~
+0 0 2778
+S
+#2783
+The Grand Arena~
+~
+~
+The labyrinth ends here, at a dead-end.  You spin as you hear what you
+thought was the tread of a foot behind you, but there is nobody there.  
+~
+0 537264129 0
+Rd     0
+D0
+~
+~
+0 0 2782
+S
+>enter_prog 40~
+0
+mpecho Another trap has been triggered!
+cast 'blindness' $n
+~
+|
+#2784
+A Crowded Passage~
+~
+~
+You try to fight through the crowd, but it is of little use; even a
+hardened fighter such as yourself can't win through this mass of men, women,
+and children.  To the south is the ticketseller's area; you might be able to
+get there if you push hard enough.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 2785
+S
+#2785
+The Ticketseller~
+~
+~
+You have pushed your way to the barricade, and can now buy a ticket. 
+Some people seem to object to the way you pushed through, but after glancing
+at your weaponry, decide not to object.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 2708
+S
+#2786
+The Lower Seating~
+~
+~
+You are packed in with what seems like half of humanity.  Representatives
+of a dozen races and two dozen nationalities throng about you, cheering the
+fight.  The view from here isn't that great, but the Arena seems to be made
+up of several different battlegrounds separated by walls.  Maybe you can get
+a better view if you climb up to the next level.  A ladder is conveniently
+close.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2787
+D4
+~
+~
+0 0 2789
+S
+#2787
+The Lower Seating~
+~
+~
+You are really packed in here.  The stands stretch entirely around the
+arena, and they seem to be completely full.  You might be able to fight your
+way down a narrow flight of stairs.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 2786
+D5
+~
+~
+0 0 2784
+S
+#2788
+A Gymnasium~
+~
+~
+Here the fighters gather before and after matches to train and trade
+tricks of the trade.  Practice mats lay about, though most of the fighters
+are relaxing over a tankard of ale.  A series of doors lie against the
+eastern wall, leading to the battlegrounds preparation areas.  They cannot
+be entered from here, though; you must be assigned to a battleground by the
+Deputy Master of the Arena.  Occasionally a bloodied and battered fighter
+will stagger out from one of them, and head to the medical area to the west.
+~
+0 4 0
+Rd     0
+D3
+~
+~
+0 0 2712
+S
+#2789
+The Higher Seating~
+~
+~
+This level of seating provides more comfort than the groundlings' hard
+stone benches.  Moderately comfortable wooden chairs have been set up, and
+you have a decent view of the entire Arena from here.  It seems to be
+divided into a few different battlegrounds, with the largest, the Great
+Arena, occupying the center.  Several fights are going on below you.  
+A narrow stone stairway leads up to the next level.
+~
+0 394240 0
+Rd     0
+D3
+~
+~
+0 0 2790
+D4
+~
+~
+0 0 2792
+S
+#2790
+The Higher Seating~
+~
+~
+You work your way along this level of seating, but its hard going. 
+Though this level of seating surrounds the entire arena, the stands are so
+packed you can barely move.  A set of stone steps leads downwards.  
+~
+0 132098 0
+Rd     0
+D1
+~
+~
+0 0 2789
+D5
+~
+~
+0 0 2784
+S
+#2792
+The Nobles' Seating~
+~
+~
+The nobles' seating is surprisingly luxurious.  Marble benches lined with
+silken pillows stretch around the arena, while various members of the
+nobility sit on them, watching the fight.  Their cheers are sometimes even
+more raucous than that of their supposed inferiors down in the groundlings'
+seats...  
+To the east the stands continue, while to the west is the outer wall of the
+Arena.
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 2793
+D5
+~
+~
+0 0 2789
+S
+#2793
+The Nobles' Seating~
+~
+~
+The nobles' seating continues to the east, but the crowds are too packed
+in for you to proceed in that direction anymore.  A set of stone stairs is
+here, leading up to a massive stone platform that lies even above the
+nobles' seating.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 2792
+D4
+~
+~
+0 0 2796
+S
+#2794
+In the Pool~
+~
+~
+You let the warm water luxuriously massage your aching muscles as you
+soak in the pool.  Before you get too comfortable, remember; you're here to
+fight.  
+~
+0 393226 0
+Rd     0
+D4
+~
+~
+0 0 2774
+S
+#2795
+Hidden Room~
+~
+~
+If you have entered this room, please contact an imm.
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 25001
+S
+#2796
+The Master of the Arena's platform~
+~
+~
+This is the highest point in the arena; a large stone platform looks out
+over the battlegrounds, providing an eagle's eye view of the entire Arena. 
+Here is where the Master of the Arena holds court; in this place, his word
+is law.  The protective glyphs that cover the rest of the stands are absent
+here.  Does the warding that prevents violence elsewhere not exist here?  If
+so, it is probably because the Master fears no mortal warrior; even so, part
+of you wishes to test your mettle against him.  
+~
+0 4194304 0
+Rd     0
+D5
+~
+~
+0 0 2793
+S
+#2798
+Electrical Fence~
+~
+~
+Walking up to the humming fence you try to climb it.  You are zapped by a
+strong electrical current and are foced to let go!  
+~
+0 268468228 11
+Rd     10
+S
+#2799
+Electrical Fence~
+~
+~
+Walking up to the humming fence you try to climb it.  You are zapped by a
+strong electrical current and are foced to let go!  
+~
+0 270566404 0
+Rd     15
+S
+#0
+
+
+
+#SPECIALS
+M 2700 spec_cast_adept
+M 2712 spec_healer
+M 2713 spec_cast_cleric
+M 2714 spec_cast_cleric
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 2713 1 2712
+E 0 2712 0 5
+M 0 2714 1 2712
+E 0 2712 0 5
+M 0 2712 1 2713
+E 0 2712 0 5
+O 0 2718 0 2718
+M 0 2715 1 2718
+M 0 2740 2 2718
+O 0 2719 0 2719
+M 0 2750 1 2719
+M 0 2719 1 2720
+M 0 2722 1 2720
+M 0 2719 1 2721
+M 0 2722 1 2721
+M 0 2721 1 2721
+M 0 2723 1 2723
+M 0 2724 1 2724
+O 0 2725 0 2725
+M 0 2726 1 2726
+E 0 2726 0 20
+M 0 2727 1 2727
+E 0 2726 0 20
+O 0 2732 0 2732
+O 0 2742 0 2742
+O 0 2753 0 2753
+M 0 2774 1 2774
+O 0 2774 0 2774
+O 0 2775 0 2774
+O 0 2780 0 2774
+M 0 2789 1 2784
+M 0 2788 2 2784
+M 0 2785 1 2785
+M 0 2785 1 2785
+M 0 2789 3 2789
+M 0 2789 2 2789
+M 0 2770 1 2790
+E 0 2770 0 20
+E 0 2771 0 5
+M 0 2770 1 2792
+E 0 2770 0 20
+E 0 2771 0 5
+M 0 2792 1 2793
+M 0 2794 1 2794
+M 0 2796 1 2796
+E 0 2796 0 20
+E 0 2797 0 8
+E 0 2798 0 5
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,5210 @@
+#AREADATA
+Name        New area~
+Builders    Kadence~
+VNUMs       19300 19499
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Kadence~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#19300
+Animated Bone Guardian~
+Animated Bone Guardian~
+An Animated Bone Guardian stands here as if awaiting you.
+~
+~
+8195 402653224 4259856 0 0 0 S
+120 1 240 240 0 53000d0+0 0d0+0
+1200 21 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+sa You have finally arrived, $n.
+em nod $n
+sa To advance, answer my question.
+sa &YWhom is the master of all that is dead?&w
+~
+>speech_prog Necromancer~
+sa Correct, $n.
+em eaves it's boney arms in an odd pattern.
+mpechoat $n You have been mystically teleported to a new location.
+mptrans $n 19331
+~
+>rand_prog 2~
+weaponmaster
+~
+>rand_prog 2~
+iron
+~
+>fight_prog 10~
+em makes a devistating swing at your weapon.
+break
+~
+>fight_prog 20~
+em punches you in the side of the head.
+stun
+~
+>fight_prog 10~
+em chants rapidly
+c solidify
+~
+>fight_prog 10~
+em chants rapidly
+c 'tomb rot'
+~
+>fight_prog 60~
+em raises it's arms to the sky and brings them down rapidly
+c 'winters chill'
+~
+|
+#19301
+Translucent Golem~
+A Translucent Golem~
+A Translucent Golem stand here with it's arms crossed, looking at you menecingly
+~
+~
+3 67108928 71893008 134217728 0 0 S
+120 1 240 240 0 53000d0+0 0d0+0
+1200 19 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+sa Hello, $n.
+em looks you up and down.
+sa I don't know if you should be continuing but if you can answer my question
+sa I will send you on your way.
+sa &YWhom can make you believe things are there when they are not?&w
+~
+>speech_prog Illusionist~
+sa Very well, the answer is correct.
+em looks you up and down.
+sa laskdbna asdfio
+mpechoat $n You have been teleported to a new area.
+mptrans $n 19357
+~
+>fight_prog 10~
+em chants rapidly
+c 'bend light'
+~
+>fight_prog 25~
+em chants rapid and smiles
+c 'dispel magic'
+~
+>fight_prog 30~
+em whips it's hand out at you
+c 'shards of glass'
+~
+>fight_prog 60~
+em punches you extemely hard turning you around for a second
+circle
+~
+|
+#19302
+Psychotic Ranger~
+The Psychotic Ranger~
+A Psychotic Ranger stand here, smirking at you.
+~
+~
+3 436224064 16 0 16 0 S
+120 1 240 240 0 45000d0+0 0d0+0
+1200 3 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+sa I have a question for you, $n.
+snicker
+sa &YWhom can cause devistation without even speaking a word?&w
+~
+>speech_prog Psionicist~
+sa That's right!
+em pats you on the head
+mpechoat $n You pass out for a moment and wake up again in a new location.
+mptrans $n 19384
+~
+>fight_prog 15~
+em cups his hand and raises it.
+c entangle
+~
+>fight_prog 30~
+em raises his hand to the sky and then points at you.
+c 'thunder strike'
+~
+>fight_prog 10~
+em smiles gleefully at you
+c 'bend light'
+~
+>fight_prog 15~
+em bonks you on top of your head
+c 'confusion'
+~
+>fight_prog 60~
+cackle
+c 'disrupt'
+~
+>rand_prog 5~
+c 'natures blessing'
+~
+>rand_prog 5~
+c 'combat mind'
+~
+|
+#19303
+Flaming Back Demon~
+Flaming Backed Demon~
+A Demon with a flame trailing down it's back looks at you and shows it's teeth.
+~
+~
+3 33554496 16777232 256 0 -1000 S
+120 1 240 240 0 63000d0+0 0d0+0
+1200 23 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+sa $n, you wish to see my master?
+em stares at you intently
+sa Answer me this...
+sa &YWhom is the master of all that is satanic?&w
+~
+>speech_prog Demonologist~
+sa Hmm...
+sa You are right.
+em pounds his staff on the ground.
+mpechoat $n The ground rumbles and you are flung through a portal that opens underneath you.
+mptrans $n 19406
+~
+>rand_prog 3~
+war
+~
+>rand_prog 3~
+rage
+~
+>rand_prog 3~
+c 'daemonic might'
+~
+>fight_prog 20~
+em chants rapidly pointing at you
+c 'flash burn'
+~
+>fight_prog 20~
+em smirks at you and chants
+c 'drain life'
+~
+>fight_prog 20~
+em flings his arm at you
+c 'fireball'
+~
+>fight_prog 50~
+em leaps in the arm at you and hits you on the head with both fists
+stun
+slam
+~
+>hitprcnt_prog 25~
+em goes into a berserker frenzy
+berserk
+~
+|
+#19304
+Rennie~
+Rennie~
+Rennie, the high cleric of the area is here to heal you
+~
+~
+11 234881024 16 0 101 1000 S
+350 1 700 700 0 1d0+0 0d0+0
+3500 22 0
+0 0 2
+3 0 0
+#19305
+Ryllina~
+Ryllina~
+A beautiful drow, named Ryllina, stands here with a gentle smile on her face.
+~
+~
+3 470286528 4259856 2048 0 -1000 S
+130 1 260 260 0 48000d0+0 0d0+0
+1300 8 0
+0 0 2
+3 0 0
+>fight_prog 10~
+em chants
+c curse
+~
+>fight_prog 30~
+em chants
+c 'hellfire'
+~
+>fight_prog 10~
+em chants
+c 'solidify'
+~
+>fight_prog 10~
+em slashes at your throat
+slit
+~
+>fight_prog 30~
+em twists around you gracefully
+dim
+~
+>fight_prog 100~
+em raises her arms to the sky
+c 'cone of frost'
+~
+>greet_prog 100~
+if isgood($n) == 1
+  sa How dare you approach me.
+  sa There is only one reason why you can be here.
+  sa And, I'll beat you to it.
+  assassinate $n
+else
+  sa Hello, $n
+  sa I will let you leave with your life.
+  sa I would suggest leaving soon.
+endif
+~
+|
+#19306
+Alicia~
+Alicia~
+There is an angel here, wings spread, named Alicia.
+~
+~
+3 235405376 4784144 134234112 4 1000 S
+130 1 260 260 0 40000d0+0 0d0+0
+1300 17 0
+0 0 2
+3 0 0
+>fight_prog 15~
+em raises both her hands at you
+c curse
+c 'dancing lights'
+~
+>fight_prog 25~
+em raises both her hands towards you
+c 'confusion'
+c 'bend light'
+~
+>fight_prog 15~
+em point her index fingers at you
+c 'dispel magic'
+c 'dispel magic'
+~
+>fight_prog 50~
+em throws her head back and raises her arms to the sky
+c 'shards of glass'
+c 'shards of glass'
+~
+>fight_prog 100~
+em flaps her wings a few times, turning around quickly
+backkick
+~
+>greet_prog 100~
+if isgood($n) == 1
+  sa greetings, $n.
+  sa Make yourself welcome.
+else
+  sa So, $n, you have come to take my life?
+  sa So be it, a battle to the death.
+  c 'holy fires' $n
+  c 'daggers of pain' $n
+endif
+~
+|
+#19307
+Faith~
+Faith~
+Faith, the psychotic druid stands here giggling.
+~
+~
+3 470302720 16 0 112 0 S
+130 1 260 260 0 40000d0+0 0d0+0
+1300 16 0
+0 0 2
+3 0 0
+>fight_prog 15~
+em points at her eyes
+c 'bend light'
+~
+>fight_prog 15~
+em points at her feet
+c 'entangle'
+~
+>fight_prog 15~
+em points at her head
+c 'nagaroms curse'
+~
+>fight_prog 35~
+em crosses her arms
+c 'ultrablast'
+~
+>fight_prog 100~
+em points to the ground
+c 'earthblast'
+~
+>hitprcnt_prog 40~
+em 's eyes glaze over.
+bloodthirsty
+~
+>rand_prog 5~
+c 'combat mind'
+~
+>rand_prog 1~
+metamorph
+~
+>greet_prog 100~
+sa $n!!!
+busty $n
+dance $n
+slap $n
+sulk
+sa What the hell do you want?
+~
+|
+#19308
+Daemoness~
+Daemoness~
+An attractive woman, named Daemoness, stands before you, ready to rip your throat out.
+~
+~
+3 302514240 16 1610612992 0 -1000 S
+130 1 260 260 0 55000d0+0 0d0+0
+1300 1 0
+0 0 2
+3 0 0
+>rand_prog 2~
+weaponmaster
+~
+>rand_prog 2~
+iron
+~
+>rand_prog 2~
+c 'daemonic might'
+~
+>fight_prog 15~
+em opens her mouth and spits fire at you
+c 'flash burn'
+c 'flash burn'
+~
+>fight_prog 30~
+em let's loose a flurry of attacks
+stun
+punch
+kick
+head
+~
+>fight_prog 15~
+em starts chanting a hex
+c curse
+c 'unholy curse'
+c 'dispel magic'
+~
+>fight_prog 45~
+em calls forth the demons of her tower to strike at once
+c demonfire
+~
+>fight_prog 100~
+em stomps the ground, causing a fissure
+c hellfire
+~
+>greet_prog 100~
+if isgood($n) == 1
+  sa You chose the wrong place to come, $n!
+  c 'meteor swarm'
+else
+  sa I welcome evil but if you think I will let you stay here...
+  sa I don't think you will like to, I'll make sure of it.
+  sa the clock is running, $n
+endif
+~
+|
+#19309
+Harris~
+Harris~
+A warrior named Harris wanders around.
+~
+~
+1 168296448 4194320 16384 4 500 S
+103 1 206 206 0 33250d0+0 0d0+0
+1030 7 0
+0 0 1
+0 0 0
+>rand_prog 1~
+weapon
+~
+>rand_prog 2~
+sa That damned Necromantress.
+sa She killed my dog.
+~
+>fight_prog 10~
+em roundhouse kicks you in the head
+stun
+em takes a devastating swing at your weapon
+break
+~
+>fight_prog 15~
+em raises a hand at you and looks away
+c 'dancing lights'
+~
+>fight_prog 10~
+em says a rapid prayer
+c curse
+~
+>fight_prog 20~
+em stretches both arms towards you and chants towards the heavens
+c 'dispel magic'
+~
+>fight_prog 100~
+if isgood($n) == 1
+  head $n
+else
+  c 'holy fires' $n
+endif
+~
+|
+#19310
+Dragarian~
+Dragarian~
+There is a large beast wandering here, possibly looking for food.
+~
+~
+1 104 16777216 0 96 0 S
+104 1 208 208 0 35000d0+0 0d0+0
+1040 5 0
+0 0 0
+0 0 0
+>hitprcnt_prog 25~
+berserk
+~
+>fight_prog 15~
+em roars at you
+c 'curse of nature'
+~
+>fight_prog 15~
+em roars at you
+c 'entangle'
+~
+>fight_prog 50~
+em reaches for you
+strangle
+~
+>fight_prog 100~
+em charges you
+slam
+~
+>rand_prog 2~
+rage
+~
+>rand_prog 2~
+war
+~
+>greet_prog 50~
+roar $n
+~
+>death_prog 150~
+mpjunk claw
+mpjunk claw
+~
+|
+#19311
+Thed'baag~
+Thed'baag~
+A gnome stands ready for you.
+~
+~
+1 201326784 4194304 0 0 -500 S
+105 1 210 210 0 36750d0+0 0d0+0
+1050 4 0
+0 0 0
+0 0 0
+>greet_prog 75~
+if ispc($n) == 1
+  if isgood($n) == 1
+    voodoo $n
+    smash $n
+    c curse $n
+    c 'dancing lights' $n
+    sa Now you die!
+    kill $n
+  endif
+endif
+~
+>fight_prog 10~
+c curse
+~
+>fight_prog 10~
+c 'dancing lights'
+~
+>fight_prog 30~
+c 'stigeon mists'
+~
+>fight_prog 45~
+chop
+~
+>fight_prog 100~
+backkick
+~
+>death_prog 150~
+mpjunk fist
+mpjunk fist
+~
+|
+#19312
+A Large Wolf~
+A Large Wolf~
+A large wolf looks at you and then turns around again.
+~
+~
+1 552 16777216 0 0 0 S
+108 1 216 216 0 54000d0+0 0d0+0
+1080 24 0
+0 0 0
+0 0 0
+>fight_prog 50~
+claw
+~
+>fight_prog 50~
+bite
+~
+>fight_prog 25~
+rake
+~
+>death_prog 150~
+mpjunk claw
+mpjunk claw
+~
+|
+#19313
+Rambling Woman~
+Rambling Woman~
+A woman sits here rambling to herself.
+~
+~
+3 436207680 65552 536871168 0 0 S
+106 1 212 212 0 30000d0+0 0d0+0
+1060 1 0
+0 0 2
+0 0 0
+>fight_prog 5~
+sa Anillyr!
+c 'winters chill'
+sa Ssenomead!
+c 'demonfire'
+~
+>fight_prog 35~
+sa Anillyr!
+c 'winters chill'
+~
+>fight_prog 35~
+sa Ssenomesd!
+c 'demonfire'
+~
+>fight_prog 75~
+em pounds herself on the head repeatedly
+sa ARGH!!!!
+~
+>rand_prog 7~
+sa ?ssenomeaD ro anillyR ,ot netsil ot hcihW
+em bonks her head repeatedly.
+sa !daeh ym ni seciov htoB
+~
+|
+#19314
+Moonaf~
+Moonaf~
+This person looks a lot like one of the well known adventurers of legends told.
+~
+~
+129 67108928 4718608 134217728 0 0 S
+107 1 214 214 0 40250d0+0 0d0+0
+1070 1 0
+0 0 1
+0 0 0
+>fight_prog 10~
+c 'bend light'
+~
+>fight_prog 20~
+slit
+~
+>fight_prog 40~
+dim
+~
+>fight_prog 100~
+c 'shards of glass'
+c 'shards of glass'
+~
+>greet_prog 100~
+if ispc($n) == 1
+  if name($n) == Fanoom
+    sa Damn you, imposter!
+    ass $n
+  else
+    sa $n, there is rumor that there is someone impersonating me...
+    sa What have you heard of this?
+  endif
+endif
+~
+|
+#19315
+Guard~
+A Guard~
+A guard wanders around here, looking for anyone that might be up to no good.
+~
+~
+1 167772160 48 16384 4 1000 S
+108 1 216 216 0 36000d0+0 0d0+0
+1080 1 0
+0 0 1
+2 0 0
+>greet_prog 30~
+sa You better be keeping that nose clean, $n
+~
+>fight_prog 15~
+c 'dancing lights'
+~
+>fight_prog 15~
+c 'dispel magic'
+~
+>fight_prog 15~
+c curse
+~
+>fight_prog 100~
+soulstrike
+~
+>death_prog 150~
+mpjunk guardonly
+~
+|
+#19316
+Bard of Doom~
+The Bard with no name~
+A lowly bard wanders around the area.
+~
+~
+1 33652866 0 0 0 0 S
+106 1 212 212 0 44000d0+0 0d0+0
+1060 22 0
+0 0 1
+0 0 0
+>greet_prog 75~
+l $n
+em hums a small tune to himself with quite the grin on his face.
+~
+>fight_prog 10~
+em sings an odd sounding tune
+c 'curse'
+~
+>fight_prog 10~
+em sings a scary sounding tune
+c 'tale of terror'
+~
+>fight_prog 40~
+em sings a soothing melody
+c 'enchanted song'
+~
+>fight_prog 100~
+em sings a song of war directly at you
+c 'sonic boom'
+~
+>death_prog 150~
+mpjunk illusionary
+mpjunk guardonly
+~
+|
+#19317
+Animated Skeleton~
+Animated Skeleton~
+A humanoid figure of bone rattles around.
+~
+~
+1 201326760 4194304 0 0 0 S
+110 1 220 220 0 45500d0+0 0d0+0
+1100 20 0
+0 0 0
+2048 0 0
+>fight_prog 25~
+stun
+~
+>fight_prog 15~
+c 'curse'
+~
+>fight_prog 20~
+c 'dispel magic'
+~
+>fight_prog 65~
+c 'stigeon mists'
+~
+>fight_prog 100~
+c 'hellfire'
+~
+>death_prog 150~
+mpecho The animated figure of bones crumbles to the ground.
+~
+|
+#19318
+Lesser Vampire~
+Lesser Vampire~
+A very pale creature of the night floats around.
+~
+~
+4194305 201851112 262144 131072 0 0 S
+112 1 224 224 0 35000d0+0 0d0+0
+1120 20 0
+0 0 0
+0 0 0
+>fight_prog 15~
+c 'curse'
+~
+>fight_prog 20~
+c 'dispel magic'
+~
+>fight_prog 40~
+c 'stigeon mists'
+~
+>fight_prog 60~
+c 'hellfire'
+~
+>fight_prog 100~
+shriek
+~
+>death_prog 120~
+mpecho You can hear the lesser vampire's equipment hit the ground.
+mpoload 19349
+mpoload 19350
+drop cloak
+mpoload 19351
+drop pant
+~
+|
+#19319
+Wight~
+The wight~
+A wight looks at you, curiously.
+~
+~
+1 470286504 0 1073741824 0 0 S
+114 1 228 228 0 45000d0+0 0d0+0
+1140 20 0
+0 0 0
+0 0 0
+>fight_prog 30~
+c curse
+c 'unholy curse'
+~
+>fight_prog 45~
+c 'stigeon mists'
+~
+>fight_prog 60~
+c 'energy drain'
+c 'energy drain'
+c 'energy drain'
+~
+>fight_prog 100~
+c 'hellfire'
+~
+|
+#19320
+Spectre~
+The spectre~
+A spectre floats around without a care in the world.
+~
+~
+1 403177472 327696 131072 0 0 S
+116 1 232 232 0 40000d0+0 0d0+0
+1160 20 0
+0 0 0
+0 0 0
+>fight_prog 15~
+c solidify
+~
+>fight_prog 15~
+c 'tomb rot'
+~
+>fight_prog 15~
+c 'dispel magic'
+~
+>fight_prog 30~
+c 'cloud of cold'
+~
+>fight_prog 40~
+c 'cone of frost'
+~
+>fight_prog 60~
+shriek
+~
+>fight_prog 100~
+c 'winters chill'
+~
+|
+#0
+
+
+
+#OBJECTS
+#19300
+key to the Mage Caverns~
+key to the Mage Caverns~
+A mystical key lays here.~
+~
+18 234881026 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 19310 19311
+#19301
+Main Portal~
+a portal~
+A portal stands here, shimmering in the light.~
+~
+29 33 256 0 0 0 0
+100 100
+19315~ 0~ 0~ 0~
+100000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19302
+claw~
+claw~
+A claw~
+~
+5 0 0 0 0 8193 108
+100 100
+0~ 0~ 0~ 5~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19303
+fist~
+fist~
+~
+~
+5 0 0 0 0 8193 105
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19304
+GuardOnly~
+a Sword Burning with Holy Fire~
+~
+~
+5 167772161 8192 0 0 8193 108
+100 100
+0~ 0~ 0~ 3~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 200
+A
+18 200
+A
+24 -200
+#19306
+Piece Bone~
+a piece of bone~
+A long piece of white bone~
+~
+13 134217728 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+19310 0 0
+#19307
+Small orb raw chaos~
+a small orb of raw chaos~
+A small orb emitting raw chaotic energy~
+~
+13 67108864 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+19310 0 0
+#19308
+Clear Sphere~
+A small clear sphere~
+A small clear sphere~
+~
+13 2 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+19311 0 0
+#19309
+Demon Horn~
+a demon's horn~
+A long horn of some unnatural beast~
+~
+13 33554432 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+19311 0 0
+#19310
+Piece Bone Raw Chaos~
+a piece of bone with a golden orb~
+A piece of white bone with a glowing gold orb on the end of it~
+~
+13 201326592 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+19300 19306 19307
+#19311
+Horn Clear Sphere~
+an unnatural horn with a clear sphere attached~
+An unnatural horn with a clear sphere attached to it~
+~
+13 33554434 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+19300 19308 19309
+#19312
+Guardian Mace~
+a Guardian Mace~
+A large mace lays on the ground.~
+~
+5 134217728 0 0 0 8193 103
+100 100
+0~ 0~ 0~ 8~
+3 2500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 58
+A
+1 2
+A
+5 2
+A
+13 -130
+A
+24 -30
+#19313
+guardian Shortsword~
+guardian Shortsword~
+A finely crafted shortsword lays on the ground.~
+~
+5 0 139265 0 0 8193 103
+100 100
+0~ 0~ 0~ 11~
+2 2500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 39
+A
+19 39
+A
+2 2
+A
+1 1
+A
+23 -20
+#19314
+guardian Longsword~
+guardian Longsword~
+A well made longsword glimmers on the ground.~
+~
+5 67113088 1 0 0 8193 103
+100 100
+0~ 0~ 0~ 3~
+2 2500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 2
+A
+3 -1
+A
+18 42
+A
+19 36
+A
+12 80
+A
+24 -15
+A
+23 -15
+#19315
+guardian Battleaxe~
+guardian Battleaxe~
+A large double headed battleaxe lays here.~
+~
+5 33554432 163840 0 0 8193 103
+100 100
+0~ 0~ 0~ 13~
+10 2500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 -2
+A
+5 2
+A
+18 30
+A
+19 50
+A
+13 160
+A
+12 -160
+A
+23 -16
+A
+24 -16
+#19316
+dagger of Black Gold~
+dagger of Black Gold~
+A dagger lays glistening on the ground.~
+~
+5 134234176 1056769 0 0 8193 104
+100 100
+0~ 0~ 0~ 11~
+1 2500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 100
+A
+12 -150
+A
+13 -150
+A
+19 54
+A
+18 30
+A
+2 2
+A
+1 2
+#19317
+breastplate of Black Gold~
+breastplate of Black Gold~
+A piece of armor made from black gold lays streen upon the ground.~
+~
+9 138477568 0 0 1048576 9 104
+100 100
+0~ 0~ 0~ 0~
+5 2500 0
+5 0
+invis~
+10 10
+0 0 0
+A
+25 80
+A
+13 180
+A
+19 42
+A
+18 42
+A
+23 -36
+#19318
+Necklace Black Gold~
+black Gold Necklace~
+There is a necklace made of black gold shining on the ground at your feet.~
+~
+9 134217792 0 0 0 5 104
+100 100
+0~ 0~ 0~ 0~
+1 2500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -18
+A
+23 -18
+A
+2 1
+A
+19 14
+A
+18 14
+#19319
+Wings of Angel~
+wings of an Angel~
+A pair of wings lay on the ground, they look fresh from the owner's back.~
+~
+9 3 131328 0 0 1025 104
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 18
+A
+24 -35
+A
+119 -1
+A
+12 75
+#19320
+ornate Sceptre~
+ornate Sceptre~
+A sceptre covered in gems is laying on the ground.~
+~
+9 35 256 0 0 16385 104
+100 100
+0~ 0~ 0~ 0~
+3 3500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -35
+A
+18 28
+A
+3 2
+A
+12 175
+A
+26 -20
+#19321
+gold Laced Shield~
+gold Laced Shield~
+~
+~
+9 536871105 0 0 0 513 104
+100 100
+0~ 0~ 0~ 0~
+2 3000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -35
+A
+24 -35
+A
+13 -100
+A
+12 -100
+A
+26 100
+A
+18 15
+A
+19 15
+#19322
+Gold Ring Precious~
+a Gold Ring that Faith called Precious~
+A gold ring with an inscription glitters at your feet.~
+~
+9 32 0 0 0 3 104
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 36
+A
+13 175
+A
+12 175
+A
+25 75
+A
+18 1
+A
+19 1
+A
+151 -1
+#19323
+Teddy Bear Head~
+head of a Teddy bear~
+The head of a teddy bear lays here discarded.~
+~
+9 65 0 0 0 32769 104
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -25
+A
+19 20
+A
+18 18
+A
+25 50
+#19324
+pink Polka Dot Mask~
+pink Polka Dot Mask~
+There is a funny looking mask with pick polka dots on it laying on the ground.~
+~
+9 4224 1048576 0 0 65537 104
+100 100
+0~ 0~ 0~ 0~
+1 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 15
+A
+19 15
+A
+24 -35
+A
+13 -50
+A
+4 1
+A
+3 1
+#19325
+Tiger Tail~
+a Tiger's Tail~
+Something that looks like a tiger's tail has been discarded here.~
+~
+5 671219776 270346 0 4194304 8193 104
+100 100
+0~ 0~ 0~ 4~
+2 350 0
+5 0
+confusion~
+1 1
+0 0 0
+A
+19 75
+A
+18 -25
+A
+13 80
+A
+12 34
+A
+26 51
+#19326
+demonfire Dagger~
+demonfire Dagger~
+A short dagger, forged of demonfire, lays here abandoned.~
+~
+5 641813056 131073 0 1048576 8193 104
+100 100
+0~ 0~ 0~ 11~
+1 1 0
+0 0
+reserved~
+0 0
+19328 0 0
+A
+5 1
+A
+2 1
+A
+19 50
+A
+18 25
+A
+25 75
+A
+13 125
+A
+12 -200
+A
+24 -20
+>wear_prog 100~
+0
+mpecho $n feels a surge of hatred release itself from the dagger.
+~
+|
+#19327
+demonfire Longsword~
+demonfire Longsword~
+A long sword forged from demonfire, lays here seething for blood.~
+~
+5 641796608 131072 0 1048576 8193 104
+100 100
+0~ 0~ 0~ 1~
+2 1 0
+0 0
+reserved~
+0 0
+19328 0 0
+A
+5 1
+A
+2 1
+A
+19 50
+A
+18 25
+A
+25 75
+A
+13 125
+A
+12 -200
+A
+24 -20
+>wear_prog 100~
+0
+mpecho The Longsword cries out for blood.
+~
+|
+#19328
+etheral Shortsword~
+etheral Shortsword~
+A shortsword made of an etheral substance floats just above the ground here.~
+~
+5 570425408 139265 0 25174016 8193 105
+100 100
+0~ 0~ 0~ 11~
+2 0 0
+0 0
+reserved~
+0 0
+0 19326 19327
+A
+19 60
+A
+18 40
+A
+23 -25
+A
+24 -25
+A
+26 -50
+#19329
+Anklet Black Gold~
+anklet of Black Gold~
+An ankle piece made of black gold rests here.~
+~
+9 0 16384 0 0 1048577 104
+100 100
+0~ 0~ 0~ 0~
+1 2500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -10
+A
+24 -10
+A
+18 14
+A
+19 14
+A
+13 100
+#19330
+simple White Orb~
+simple White Orb~
+A sphere of pure white light comes to a stop at your feet.~
+~
+1 0 0 0 0 1 104
+100 100
+0~ 0~ -1~ 0~
+0 0 0
+5 0
+scry~
+5 5
+0 0 0
+A
+23 -35
+A
+18 25
+#19331
+screw up~
+flaming Eyes~
+A pair of eyes burns at your feet.~
+~
+27 33554432 0 0 0 131073 104
+100 100
+0~ -1~ 0~ identify~
+1 1500 0
+5 0
+identify~
+0 -1
+0 0 0
+#19332
+flaming Eyes~
+flaming Eyes~
+A set of eyes burn at your feet.~
+~
+27 33554432 0 0 0 131073 104
+100 100
+100~ -1~ 0~ identify~
+1 1500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 14
+A
+19 14
+A
+24 14
+A
+23 14
+A
+13 14
+A
+12 14
+#19333
+shining Helmet~
+shining Helmet~
+A very shiny helmet is being tarnished by the ground.~
+~
+9 1 0 0 0 17 100
+100 100
+0~ 0~ 0~ 0~
+3 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+A
+23 -5
+A
+4 1
+A
+13 50
+#19334
+glimmering Broadsword~
+glimmering Broadsword~
+A large glimmering two handed sword lays here collecting dust.~
+~
+5 0 163840 0 0 8193 100
+100 100
+0~ 0~ 0~ 3~
+7 1500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 -2
+A
+18 30
+A
+19 30
+A
+13 45
+#19335
+dragon Scale Wristband~
+dragon Scale Wristband~
+A circular band of dragon scales lays discarded.~
+~
+9 4 0 0 0 4097 100
+100 100
+0~ 0~ 0~ 0~
+1 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+5 1
+A
+18 10
+A
+19 10
+A
+23 -15
+#19336
+well Beaten and Used Gloves~
+well Beaten and Used Gloves~
+A pair of gloves that are torn and faded almost blend in with the ground.~
+~
+9 536870913 0 0 0 129 100
+100 100
+0~ 0~ 0~ 0~
+1 0 0
+5 0
+combat mind~
+5 5
+0 0 0
+A
+19 20
+A
+2 1
+A
+1 1
+A
+12 25
+#19337
+bracelet made of Fire~
+bracelet made of Fire~
+A bracelet made of fire lays here smoldering.~
+~
+9 33554432 0 0 0 4097 100
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+19339 0 0
+A
+13 100
+A
+19 20
+A
+4 1
+A
+5 1
+A
+24 -20
+#19338
+bracelet made of Ice~
+bracelet made of Ice~
+A bracelet made of ice is staring to melt on the ground here.~
+~
+9 134217728 0 0 0 4097 100
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+19339 0 0
+A
+12 100
+A
+18 20
+A
+4 1
+A
+5 1
+A
+23 -20
+#19339
+red and Blue Bracelet~
+red and Blue Bracelet~
+A red and blue bracelet has been discarded here~
+~
+9 167772160 0 0 0 4097 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+4 1
+#19340
+illusionary Dagger~
+illusionary Dagger~
+It appears there is an illusion of a dagger on the ground by your feet.~
+~
+5 28864 1056769 0 8388608 8193 100
+100 100
+0~ 0~ 0~ 11~
+1 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 30
+A
+19 30
+A
+24 -20
+A
+35 1
+#19341
+cloak of Mental Protection~
+cloak of Mental Protection~
+A flowing cloak is caught on something on the ground here.~
+~
+9 33 256 0 0 1025 100
+100 100
+0~ 0~ 0~ 0~
+1 1500 0
+5 0
+mental block~
+1 1
+0 0 0
+A
+35 5
+A
+18 10
+A
+19 10
+A
+12 50
+#19342
+tower Guard Longsword~
+tower Guard Longsword~
+A longsword with an emblem on it is rusting away on the ground.~
+~
+5 134217793 8192 0 0 8193 100
+100 100
+0~ 0~ 0~ 3~
+3 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 35
+A
+19 25
+A
+1 1
+A
+3 -1
+A
+13 25
+A
+12 -25
+#19343
+tower Guard Standard Breastplate~
+tower Guard Standard Breastplate~
+A breastplate with a large emblem on it was left on the ground here.~
+~
+9 2049 0 0 0 9 100
+100 100
+0~ 0~ 0~ 0~
+5 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 40
+A
+19 20
+A
+13 100
+A
+24 -20
+#19344
+tower Guard Standard Leggings~
+tower Guard Standard Leggings~
+A pair of leggings shines here on the ground.~
+~
+9 2049 0 0 0 33 100
+100 100
+0~ 0~ 0~ 0~
+3 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 15
+A
+19 5
+A
+13 50
+A
+23 -10
+A
+2 2
+#19345
+singing Stone~
+singing Stone~
+A shiny stone catches your attention before you step on it.~
+~
+9 3 16384 0 0 32769 100
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+A
+24 -5
+A
+12 5
+>get_from_prog 100~
+0
+mpecho A Singing Stone sings a song about freedom
+~
+|
+#19346
+bone Club~
+bone Club~
+A long piece of bone is collecting dust on the ground.~
+~
+5 132 0 0 0 8193 101
+100 100
+0~ 0~ 0~ 8~
+4 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 30
+A
+2 -2
+A
+19 33
+A
+18 33
+#19347
+fractured Skull Mask~
+fractured Skull Mask~
+A face that looks like a skull lays here discarded.~
+~
+9 16516 0 0 0 65537 101
+100 100
+0~ 0~ 0~ 0~
+2 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+304 -1
+A
+13 75
+A
+19 11
+A
+18 11
+#19348
+bone Boots~
+bone Boots~
+Boots made of bone have been left here.~
+~
+9 16516 256 0 0 65 101
+100 100
+0~ 0~ 0~ 0~
+3 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+42 5
+A
+2 -1
+A
+14 100
+A
+19 12
+A
+18 10
+#19349
+pile of Dust~
+pile of Dust~
+A pile of dust is here, the remains of a creature.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19350
+blood Red Cloak~
+blood Red Cloak~
+A cloak the color of blood remains still on the ground.~
+~
+9 33558532 0 0 0 1025 102
+100 100
+0~ 0~ 0~ 0~
+1 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+19 20
+A
+18 4
+A
+23 28
+A
+25 60
+#19351
+black Pantaloons~
+black Pantaloons~
+An old style of pants that are black lay here.~
+~
+9 4100 0 0 0 33 102
+100 100
+0~ 0~ 0~ 0~
+1 1500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 60
+A
+19 10
+A
+18 14
+A
+25 60
+#19352
+javelin~
+javelin~
+A long pole, looking similar to a javelin rests here.~
+~
+5 134222016 1220608 0 0 8193 102
+100 100
+0~ 0~ 0~ 11~
+4 3000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 -50
+A
+13 50
+A
+24 20
+A
+19 36
+A
+18 36
+#19353
+bone Collar~
+bone Collar~
+A necklace made of bone lays on the ground here.~
+~
+9 5 131072 0 0 5 101
+100 100
+0~ 0~ 0~ 0~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 12
+A
+24 12
+A
+19 11
+A
+18 11
+#0
+
+
+
+#ROOMDATA
+#19300
+Entrance~
+~
+~
+You have entered a large hallway that leads into an even larger
+&Yfoyer&w.  From where you are standing, to the east is the foyer of this
+enourmous tower.  Not much sound is coming from anywhere but you can tell my
+the ground that this area has been walked upon quite a bit in the last
+little while.  
+~
+0 393231 0
+Rd     0
+D1
+~
+~
+0 0 19301
+S
+#19301
+First step into the Foyer~
+~
+~
+You have stepped into a very large room.  The ceiling is raised to at
+least 30 feet sloping from this doorway and all the walls to a higher point
+in the center.  From here, you can go north, east, south or back out to the
+west.  
+~
+0 393227 0
+Rd     0
+D1
+~
+~
+0 0 19302
+D2
+~
+~
+0 0 19307
+D3
+~
+~
+0 0 19300
+S
+#19302
+In the Foyer~
+~
+~
+The wall to the north is extremely decorated.  Paintings along the wall
+but PART of the wall as well.  It's almost as if something magical has the
+paint there...  From here, your choices for travel are to the east, south,
+or the west.  
+~
+0 393227 0
+Rd     0
+D1
+~
+~
+0 0 19303
+D2
+~
+~
+0 0 19308
+D3
+~
+~
+0 0 19301
+S
+#19303
+Before a Doorway~
+~
+~
+This room is a little different from the rest of the area, there is a
+large ominous door that leads to the north here.  The door is the only thing
+noteworthy in this room, a large, deep blue color.  The door seems to be
+made of an oddly discolored wood.  Besides the door to the north, you may
+travel east, south or west.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+3 0 19304
+D1
+~
+~
+0 0 19305
+D2
+~
+~
+0 0 19309
+D3
+~
+~
+0 0 19302
+S
+#19304
+A Small Room~
+~
+~
+This room is extremely small and COLD.  Not cold enough to jurt you but
+you definately feel the difference as you walk in.  In the center of the
+room is what looks to be some odd markings on the ground.  They glow a deep
+blue, similar to the door to the south...  
+~
+0 401423 0
+Rd     0
+D2
+~
+~
+3 0 19303
+S
+#19305
+In the Foyer~
+~
+~
+The wall to the north is extremely decorated.  Paintings along the wall
+but PART of the wall as well.  It's almost as if something magical has the
+paint there...  From here, your choices for travel are to the east, the
+south, or the west.  
+~
+0 393227 0
+Rd     0
+D1
+~
+~
+0 0 19306
+D2
+~
+~
+0 0 19310
+D3
+~
+~
+0 0 19303
+S
+#19306
+In the Foyer~
+~
+~
+This appears to be the north eastern area of the Foyer.  The walls to the
+north and east are painted different scenes.  The northern wall is painted a
+scene of death where the eastern wall seems to depict surprise and
+deception.  You may travel to the west or the south from this corner. 
+~
+0 393227 0
+Rd     0
+D2
+~
+~
+0 0 19311
+D3
+~
+~
+0 0 19305
+S
+#19307
+In the Foyer~
+~
+~
+The western wall has an odd painting on it.  Paintings of demons and
+other extremely evil looking creatures that you cannot identify seem to be
+torturing creatures of different races you recognize.  Some of the tortured
+beings resemble dwarves, humans, felines as well as a few others you have
+seen before.  There are passages to the north, east and south of here.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19301
+D1
+~
+~
+0 0 19308
+D2
+~
+~
+0 0 19313
+S
+#19308
+In the Foyer~
+~
+~
+This room has no walls directly off it but there is a LARGE pillar in the
+middle of this section.  The pillar is of marble and seems to be centuries
+old.  From here, you may travel north, east, south or west.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19302
+D1
+~
+~
+0 0 19309
+D2
+~
+~
+0 0 19314
+D3
+~
+~
+0 0 19307
+S
+#19309
+In the Foyer~
+~
+~
+This room has nothing too special about it.  There are sounds coming from
+all directions.  For some reason, the back of your mind is calling you
+south, something tells you there is a presence that can be off assistance. 
+You may go to the north, east, south, or west.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19303
+D1
+~
+~
+0 0 19310
+D2
+~
+~
+0 0 19315
+D3
+~
+~
+0 0 19308
+S
+#19310
+In the Foyer~
+~
+~
+A large marble pillar stands tall in the middle of the room.  It seems to
+be partially responsible for holding up the sloping ceiling that seems to
+come to a point to the south west of where you are standing.  Travel from
+here is to the north, east, south or the west.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19305
+D1
+~
+~
+0 0 19311
+D2
+~
+~
+0 0 19316
+D3
+~
+~
+0 0 19309
+S
+#19311
+In the Foyer~
+~
+~
+To the east is a wall with a painting on it.  The painting seems to be of
+transparent beings that seem to be agressive to adventurers in the painting.
+Some of the transparent beings seem to be depicted as going right THROUGH
+some of the adventurers.  What kind of creatures are these?  You may go
+north, south or west of this room.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19306
+D2
+~
+~
+0 0 19317
+D3
+~
+~
+0 0 19310
+S
+#19312
+A Small Room~
+~
+~
+This room is warm, VERY warm.  You start perspiring upon entering the
+room.  The walls are a pure fire, best not to touch them.  On the ground in
+the center of the room is what seems to be a pentagram made of a dull,
+undying fire.  The only way out is through the door to the east that you
+entered to get here.  
+~
+0 401423 0
+Rd     0
+D1
+~
+~
+3 0 19313
+S
+#19313
+Before a Doorway~
+~
+~
+You have come before a large fire-red wooden door that is inlaid on the
+western wall.  Upon close inspection, it almost seems that the door is made
+of fire itself BUT it is not hot to the touch.  Besides the door to the
+west, you may travel north, east or south.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19307
+D1
+~
+~
+0 0 19314
+D2
+~
+~
+0 0 19319
+D3
+~
+~
+3 0 19312
+S
+#19314
+In the Foyer~
+~
+~
+This room is quite plain.  There are no paintings nearby that you can
+see, no odd marks on the floor.  The only thing that catches your attention
+is that the sloped ceiling seems to come to it's highest point DIRECTLY east
+of where you stand.  Does that mean there is something important there? 
+There are exits to the north, east, south and west of where you stand.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19308
+D1
+~
+~
+0 0 19315
+D2
+~
+~
+0 0 19320
+D3
+~
+~
+0 0 19313
+S
+#19315
+Center of the Foyer~
+~
+~
+You have reached the center of the Foyer.  The ceiling here has an
+opening in it with a 50 foot long rope ladder hanging from it.  Upon closer
+inpection of the room, you also notice a keyhole in the ground but there is
+no sign of a door to lift or push.  From here, you may go up, north, east,
+south or west.  
+~
+0 393230 0
+Rd     0
+D0
+~
+~
+0 0 19309
+D1
+~
+~
+0 0 19316
+D2
+~
+~
+0 0 19321
+D3
+~
+~
+0 0 19314
+D4
+~
+~
+0 0 19330
+D5
+~
+~
+631 19300 19431
+S
+#19316
+In the Foyer~
+~
+~
+This room is a vairly plain room.  The only thing that catches your
+attention is that the ceiling comes to it's highest point directly west of
+here.  You may exit this room to the north, east, south or west.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19310
+D1
+~
+~
+0 0 19317
+D2
+~
+~
+0 0 19322
+D3
+~
+~
+0 0 19315
+S
+#19317
+Before a Doorway~
+~
+~
+There is what LOOKS like a door to the east here.  It's hard to tell, it
+appears as if it is and isn't there.  It just keeps shimmering, you can
+almost see through it.  From here, you can go north, south and west or, you
+can go through this door to the east.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 19311
+D1
+~
+~
+3 0 19318
+D2
+~
+~
+0 0 19323
+D3
+~
+~
+0 0 19316
+S
+#19318
+A Small Room~
+~
+~
+This room is extremely small, or is it?  It's hard to tell the dimensions
+of the room due to the walls shimmering and appearing closer, then farther
+away.  The ceiling looks like the sky.  The only thing that looks about
+right is the ground.  Mind you, there is an extremely large symbol, that you
+cannot identify, on the ground.  The only way out of this room is the door
+to the west.  
+~
+0 401414 4
+Rd     0
+D3
+~
+~
+3 0 19317
+S
+#19319
+In the Foyer~
+~
+~
+The western wall has a painting showing a demon whipping slaves into
+submission.  Quite a pleasent thought...  From here you way venture north,
+east or south.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19313
+D1
+~
+~
+0 0 19320
+D2
+~
+~
+0 0 19324
+S
+#19320
+In the Foyer~
+~
+~
+You are in a room with a large marble pillar in the center of it.  Beyond
+this pillar reaching to the ceiling, there is nothing else out of the
+ordinary in this room.  You may go north, east, south or west from here.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19314
+D1
+~
+~
+0 0 19321
+D2
+~
+~
+0 0 19325
+D3
+~
+~
+0 0 19319
+S
+#19321
+In the Foyer~
+~
+~
+Looking around, it catches your attention that the ceiling comes to it's
+highest point directly north of here.  Beyond that, you notice in the
+distance a large pillar east and west of you.  You can go north, east, south
+or west of here.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19315
+D1
+~
+~
+0 0 19322
+D2
+~
+~
+0 0 19326
+D3
+~
+~
+0 0 19320
+S
+#19322
+In the Foyer~
+~
+~
+This room is similar to a few others you have seen.  There is a very
+large marble pillar in the room supporting the ceiling.  To the north west,
+the ceiling seems to come to it's highest point.  From here, you can go
+north, east, south or west.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19316
+D1
+~
+~
+0 0 19323
+D2
+~
+~
+0 0 19327
+D3
+~
+~
+0 0 19321
+S
+#19323
+In the Foyer~
+~
+~
+The wall to the east has yet another painting on it.  This one has a
+ghostly figure that seems to be passing through a wall, in the painting.  Do
+these painted walls mean something?  There are passages to the north, south
+and west from here.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19317
+D2
+~
+~
+0 0 19328
+D3
+~
+~
+0 0 19322
+S
+#19324
+In the Foyer~
+~
+~
+You have reached the south wesr corner of the foyer area.  The walls here
+have 2 different themed paintings.  The western wall has what most persons
+would picture Satan to look like on it, whereas the wall to the south has a
+woman standing with her arms crossed looking at a wall that seems to be
+getting crushed.  From here, you may go north or east.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19319
+D1
+~
+~
+0 0 19325
+S
+#19325
+In the Foyer~
+~
+~
+There is only one thing here that catches your eye.  The painting on the
+wall to the south.  There is a picture of a woman looking directly at you,
+or at least it seems so where ever you are in the room.  It feels like she
+is looking deep within your soul.  From here, you might want to rush to the
+north, east, or west.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19320
+D1
+~
+~
+0 0 19326
+D3
+~
+~
+0 0 19324
+S
+#19326
+Before a Doorway~
+~
+~
+There is a door to the south.  The door looks like a solid oak door but
+upon closer inspection there is an eerie gold glow that eminates from it. 
+The glow does not look the most inviting.  You may travel to the north,
+east, west or try your luck with the door to the south.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19321
+D1
+~
+~
+0 0 19327
+D2
+~
+~
+3 0 19329
+D3
+~
+~
+0 0 19325
+S
+#19327
+In the Foyer~
+~
+~
+The room is fairly quiet, not hearing much from any direction.  There is
+another painting on the wall to the south.  This painting depicts nothing
+but a gold glow.  You do not feel relaxed looking at the glow, it seems as
+though it is not inviting at all.  You may continue along the wall either
+east or west or move into the foyer north.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19322
+D1
+~
+~
+0 0 19328
+D3
+~
+~
+0 0 19326
+S
+#19328
+In the Foyer~
+~
+~
+This is the south eastern corner of the foyer.  The eastern wall has a
+painting of shadowy armor and weapons floating through the air, doing battle
+with adventurers, The southern wall is oddly, blank.  Nothing on it at all. 
+From here, you may follow the one wall north or the other west.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 19323
+D3
+~
+~
+0 0 19327
+S
+#19329
+A Small Room~
+~
+~
+This room, for some odd reason has nothing on the walls.  Both the
+ceiling and the floor also look very plain.  After staring at the floor for
+a few minutes, you notice a golden symbol starting to appear out of no
+where.  The only way out of here is to the north, the door you used to get
+here.  
+~
+0 401423 0
+Rd     0
+D0
+~
+~
+3 0 19326
+S
+#19330
+Room of the Healer~
+~
+~
+This room has paintings on each wall of different themes.  The north, has
+a painting of skeletons and ghouls, the east has a painting of a translucent
+Dwarf and Elf.  On the southern wall, the paint is hard to tell what it
+means, there seems to be different adventurers writhing in pain from what
+looks like a mage but it has not raised a finger.  The western wall is the
+most noticable theme.  There is a very large demon standing there.  Besides
+the paintings, the room feels extremely safe, as if you know you can rest
+without having problems from creatures that are out for blood.  The only
+exit from this room is back down the rope ladder through the ground in the
+middle of the room.  
+~
+0 33817614 0
+Rd     0
+D5
+~
+~
+0 0 19315
+S
+#19331
+First Floor of the Tower of Death~
+~
+~
+You have just entered the &bTower of Death&w.  There is a chill that runs
+through your body looking around at the walls.  They are covered in scratchs
+and claw marks.  You could also swear there are bite marks here and there. 
+You may venture to the east or south or back through the portal to escape
+this area.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19332
+D2
+~
+~
+0 0 19334
+S
+#19332
+First Floor of the Tower of Death~
+~
+~
+The ground here feels very cold through your footwear.  The walls look to
+have been taking a beating from any number of different beings, whether
+trying to escape or during battle, that is unknown.  There are exits to the
+east, south and west.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19333
+D2
+~
+~
+0 0 19335
+D3
+~
+~
+0 0 19331
+S
+#19333
+First Floor of the Tower of Death~
+~
+~
+This seems to be the north east corner of the first floor of this tower. 
+There is a long scratch mark that starts on the northern wall and seems to
+go into the next room along the eastern wall.  You may go south, following
+the scratch mark or head west.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19336
+D3
+~
+~
+0 0 19332
+S
+#19334
+First Floor of the Tower of Death~
+~
+~
+This is the south western corner of the first floor of this tower.  The
+stench of death surronds you and it looks like this place has been rotting
+for centuries.  There is wear and tear on the walls that look like they have
+been made by creatures.  You can follow the walls either north or east.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19331
+D1
+~
+~
+0 0 19335
+S
+#19335
+First Floor of the Tower of Death~
+~
+~
+This room has a large blood stain in the middle of the room.  It looks
+fairly fresh too.  There is no body in sight but there are a lot of scratch
+marks in the ground that you can see surrounding and in where the blood
+stain is.  There are exits to the north, east and west of here.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19332
+D1
+~
+~
+0 0 19336
+D3
+~
+~
+0 0 19334
+S
+#19336
+First Floor of the Tower of Death~
+~
+~
+This room is different from the rest you have seen so far.  This one has
+a stair case built into the southern wall that appears to be going up.  At
+the top of the staircase, it looks like a lot of rubble has covered it from
+continuing up.  The exits that you can use are to the north and west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19333
+D3
+~
+~
+0 0 19335
+D4
+~
+~
+512 0 19342
+S
+#19337
+Second Floor of the Tower of Death~
+~
+~
+You have reached the north western corner of the tower.  Again, there are
+scratch marks all over the walls.  Could it be the creatures here, trying to
+escape?  You can go east or south of here.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19338
+D2
+~
+~
+0 0 19340
+S
+#19338
+Second Floor of the Tower of Death~
+~
+~
+Following the northern wall with your eyes, the scratch marks that seem
+to be in every other room, actually seem deeper into the walls here.  The
+blocks of the wall also look a little different than the rest.  Could it be,
+the wall had to be rebuild here?  There are passages to the east, south and
+west.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19339
+D2
+~
+~
+0 0 19341
+D3
+~
+~
+0 0 19337
+S
+#19339
+Second Floor of the Tower of Death~
+~
+~
+This is the north eastern corner of the tower.  Right in the corner, it
+looks like there is an impression of a dwarven body.  There must be
+something very strong in here to make that kind of an impression with a body
+of it's opponent.  You may follow the wall either south or west.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19342
+D3
+~
+~
+0 0 19338
+S
+#19340
+Second Floor of the Tower of Death~
+~
+~
+This room has a very obvious spiralling ramp up to the next floor. 
+Listening carefully, you hear moans and wailing coming from there.  Besides
+the ramp, there does not seem to be anything out of the ordinary here. 
+There are three choices for leaving this room, north, east or up the ramp.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19337
+D1
+~
+~
+0 0 19341
+D4
+~
+~
+0 0 19346
+S
+#19341
+Second Floor of the Tower of Death~
+~
+~
+To your surprise, there is a window in the southern wall here.  Looking
+out it, you see absolutely nothing though.  You try to reach your hand
+through it but it seems to be part of the wall.  From here, you may travel
+north, east or west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19338
+D1
+~
+~
+0 0 19342
+D3
+~
+~
+0 0 19340
+S
+#19342
+Second Floor of the Tower of Death~
+~
+~
+Stepping into this room, the first thing you notice is the large pile of
+rubble that seems to have collapsed at the south east corner of the room. 
+The next thing you notice is that from here you can travel north and west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19339
+D3
+~
+~
+0 0 19341
+D5
+~
+~
+512 0 19336
+S
+#19343
+Third Floor of the Tower of Death~
+~
+~
+This is the north west of the tower.  The wall here seems to have a huge
+chunk out of it.  You shiver as a cold breeze blows through the room.  There
+are exits to the east and south.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19344
+D2
+~
+~
+0 0 19346
+S
+#19344
+Third Floor of the Tower of Death~
+~
+~
+The ground here looks like it has taken years upon years upon years of
+punishment.  It is worn down in many locations.  Thankfully, this tower
+seems to be built quite strong.  From here, you can go to the east, south or
+west.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19345
+D2
+~
+~
+0 0 19347
+D3
+~
+~
+0 0 19343
+S
+#19345
+Third Floor of the Tower of Death~
+~
+~
+The shadows in this room almost seem to be alive.  There is some odd
+magic at work in this tower.  You feel as if you are being watched but by
+whom or what, you do not know.  This being the north east corner of the
+tower, you may go south or west.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19348
+D3
+~
+~
+0 0 19344
+S
+#19346
+Third Floor of the Tower of Death~
+~
+~
+This room gives you a chill down your spine.  The ground here is strewn
+with bones.  One of the bones, you recognize to be the femur of a Dracoform.
+The ways you may travel are to the north, east or back down to the second
+floor.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19343
+D1
+~
+~
+0 0 19347
+D5
+~
+~
+0 0 19340
+S
+#19347
+Third Floor of the Tower of Death~
+~
+~
+There is a stone stairway here that leads directly up at a very sharp
+angle.  This being the third floor of the tower, how many more can there be?
+What other creatures await you?  It is time to decide whether to go north,
+east, west or up the stairway.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19344
+D1
+~
+~
+0 0 19348
+D3
+~
+~
+0 0 19346
+D4
+~
+~
+0 0 19353
+S
+#19348
+Third Floor of the Tower of Death~
+~
+~
+You are in the couth east corner of the tower now.  There are sounds
+coming from the north and west of you, which seem to also be the only ways
+you can travel from here.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19345
+D3
+~
+~
+0 0 19347
+S
+#19349
+Fourth Floor of the Tower of Death~
+~
+~
+The walls to the north and west here are made of bone.  There are skulls
+and femurs and pelvises all around you.  The bone here is still a nice white
+color, almost as if it has been polished.  There is a passage to the east
+and south here.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19350
+D2
+~
+~
+0 0 19352
+S
+#19350
+Fourth Floor of the Tower of Death~
+~
+~
+This room is like the rest of this floor, walls of bone.  What is
+different though is that there is a staircase make of bone as well.  The
+stairs lead up and look fairly solid.  Shall you go east, south, west or up
+the bone stairs?  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19351
+D2
+~
+~
+0 0 19353
+D3
+~
+~
+0 0 19349
+D4
+~
+~
+0 0 19355
+S
+#19351
+Fourth Floor of the Tower of Death~
+~
+~
+The walls here are made of bones.  The north wall is fairly level but on
+the eastern wall there is what looks like part of a spine hanging from the
+wall.  The spine is extremely large.  Could it be that of a dragon?  Your
+travels call you to either the south or west.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19354
+D3
+~
+~
+0 0 19350
+S
+#19352
+Fourth Floor of the Tower of Death~
+~
+~
+You are in the south west corner of the fourth floor of this tower.  The
+walls here are no longer stone blocks like the other three floors you have
+come up, they are now make of bone.  You can go either north or east from
+here.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19349
+D1
+~
+~
+0 0 19353
+S
+#19353
+Fourth Floor of the Tower of Death~
+~
+~
+This room has the stairway that leads to the third floor of this tower. 
+In the distance, you think that you hear a scream.  Mind you, it didn't
+sound like anything you have heard before in your life.  From here, you may
+travel north, east, west or back down to the third floor.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19350
+D1
+~
+~
+0 0 19354
+D3
+~
+~
+0 0 19352
+D5
+~
+~
+0 0 19347
+S
+#19354
+Fourth Floor of the Tower of Death~
+~
+~
+The walls here in the south east corner of the tower are made of bone. 
+Oddly, the majority of it seems quite level except for one skull that looks
+like that of a Giant or an Ogre that seems to stick out a bit further. 
+Maybe it is a new addition to the wall.  North and west seem to be the only
+ways you can go from here.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19351
+D3
+~
+~
+0 0 19353
+S
+#19355
+Top of the Tower of Death~
+~
+~
+This room is bone white.  The walls are not mande of bone but the floor
+ad ceiling is.  There is also a bloodstained path leading from the stairs up
+to the center of the room where there is a large circle of blood with a
+woman standing in the middle of it.  The only way out of this room is down. 
+~
+0 401423 0
+Rd     0
+D5
+~
+~
+0 0 19350
+S
+#19356
+First Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19360
+D1
+~
+~
+0 0 19357
+D2
+~
+~
+0 0 19358
+D3
+~
+~
+0 0 19357
+S
+#19357
+First Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19361
+D1
+~
+~
+0 0 19356
+D2
+~
+~
+0 0 19359
+D3
+~
+~
+0 0 19356
+S
+#19358
+First Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19356
+D1
+~
+~
+0 0 19359
+D2
+~
+~
+0 0 19360
+D3
+~
+~
+0 0 19359
+S
+#19359
+First Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19357
+D1
+~
+~
+0 0 19358
+D2
+~
+~
+0 0 19361
+D3
+~
+~
+0 0 19358
+S
+#19360
+First Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19358
+D1
+~
+~
+0 0 19361
+D2
+~
+~
+0 0 19356
+D3
+~
+~
+0 0 19361
+D4
+~
+~
+0 0 19366
+S
+#19361
+First Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19359
+D1
+~
+~
+0 0 19360
+D2
+~
+~
+0 0 19357
+D3
+~
+~
+0 0 19360
+S
+#19362
+Second Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19366
+D1
+~
+~
+0 0 19363
+D2
+~
+~
+0 0 19364
+D3
+~
+~
+0 0 19363
+D4
+~
+~
+0 0 19368
+S
+#19363
+Second Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19367
+D1
+~
+~
+0 0 19362
+D2
+~
+~
+0 0 19365
+D3
+~
+~
+0 0 19362
+S
+#19364
+Second Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19362
+D1
+~
+~
+0 0 19365
+D2
+~
+~
+0 0 19366
+D3
+~
+~
+0 0 19365
+S
+#19365
+Second Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19363
+D1
+~
+~
+0 0 19364
+D2
+~
+~
+0 0 19367
+D3
+~
+~
+0 0 19364
+S
+#19366
+Second Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19364
+D1
+~
+~
+0 0 19367
+D2
+~
+~
+0 0 19362
+D3
+~
+~
+0 0 19367
+D5
+~
+~
+0 0 19360
+S
+#19367
+Second Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19365
+D1
+~
+~
+0 0 19366
+D2
+~
+~
+0 0 19363
+D3
+~
+~
+0 0 19366
+S
+#19368
+Third Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19372
+D1
+~
+~
+0 0 19369
+D2
+~
+~
+0 0 19370
+D3
+~
+~
+0 0 19369
+D5
+~
+~
+0 0 19362
+S
+#19369
+Third Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19373
+D1
+~
+~
+0 0 19368
+D2
+~
+~
+0 0 19371
+D3
+~
+~
+0 0 19368
+S
+#19370
+Third Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19368
+D1
+~
+~
+0 0 19371
+D2
+~
+~
+0 0 19372
+D3
+~
+~
+0 0 19371
+D4
+~
+~
+0 0 19376
+S
+#19371
+Third Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19369
+D1
+~
+~
+0 0 19370
+D2
+~
+~
+0 0 19373
+D3
+~
+~
+0 0 19370
+S
+#19372
+Third Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19370
+D1
+~
+~
+0 0 19373
+D2
+~
+~
+0 0 19368
+D3
+~
+~
+0 0 19373
+S
+#19373
+Third Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19371
+D1
+~
+~
+0 0 19372
+D2
+~
+~
+0 0 19369
+D3
+~
+~
+0 0 19372
+S
+#19374
+Fourth Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19378
+D1
+~
+~
+0 0 19375
+D2
+~
+~
+0 0 19376
+D3
+~
+~
+0 0 19375
+S
+#19375
+Fourth Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19379
+D1
+~
+~
+0 0 19374
+D2
+~
+~
+0 0 19377
+D3
+~
+~
+0 0 19374
+S
+#19376
+Fourth Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19374
+D1
+~
+~
+0 0 19377
+D2
+~
+~
+0 0 19378
+D3
+~
+~
+0 0 19377
+D5
+~
+~
+0 0 19370
+S
+#19377
+Fourth Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19375
+D1
+~
+~
+0 0 19376
+D2
+~
+~
+0 0 19379
+D3
+~
+~
+0 0 19376
+D4
+~
+~
+0 0 19380
+S
+#19378
+Fourth Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19376
+D1
+~
+~
+0 0 19379
+D2
+~
+~
+0 0 19374
+D3
+~
+~
+0 0 19379
+S
+#19379
+Fourth Floor of the Tower of Illusion~
+~
+~
+This tower seems to be changing shape constantly.  The walls shimmer and
+shine and apeear to be moving.  If you time it right, you can probably leave
+this room in any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19377
+D1
+~
+~
+0 0 19378
+D2
+~
+~
+0 0 19375
+D3
+~
+~
+0 0 19378
+S
+#19380
+Top of the Tower of Illusion~
+~
+~
+You have reached the top of the tower.  In this room, the walls seem
+distant and look as if you are looking out into the city of Methidoral.  At
+the center of the room, there is a woman standing in the middle of 6 evenly
+spaced, translucent pillars that reach up about 40 feet.  Here, the obvious
+exit is down.  
+~
+0 401423 0
+Rd     0
+D5
+~
+~
+0 0 19377
+S
+#19381
+First Floor of the Tower of the Mind~
+~
+~
+This seems to be the north eastern corner of the tower's first floor. 
+The walls are a barren gray.  The ground has a single foot print on it but
+you cannot tell what left it or in which direction it was headed.  Following
+the wall, you may go either east or south.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19382
+D2
+~
+~
+0 0 19384
+S
+#19382
+First Floor of the Tower of the Mind~
+~
+~
+This room is a plain and dull shade if grey.  The walls, the ceiling, the
+floor...  The only difference is, looking carefully, you noticed one spot of
+blood on the ground.  From here, you can travel east, south or west.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19383
+D2
+~
+~
+0 0 19385
+D3
+~
+~
+0 0 19381
+S
+#19383
+First Floor of the Tower of the Mind~
+~
+~
+This room is a little different than the rest, there is actually a very
+plain stone staircase that leads up to the next level.  Besides that, you
+would almost swear you've already been here.  There are three choices to
+continue, south, west or up the stairs.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19386
+D3
+~
+~
+0 0 19382
+D4
+~
+~
+0 0 19389
+S
+#19384
+First Floor of the Tower of the Mind~
+~
+~
+You have entered the &bTower of the Mind&w.  This tower has extremely
+plain walls but seems to be trying to communicate with you directly into
+your mind.  From here, the room tells you that you may leave north or east. 
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19381
+D1
+~
+~
+0 0 19385
+S
+>rand_prog 5~
+0
+mpecho This is the entrance to &bThe Tower of the Mind&w, do you really want to be here?
+~
+|
+#19385
+First Floor of the Tower of the Mind~
+~
+~
+This room is very barren.  The walls have nothing on them, the ground
+does not look like it has ever been stepped on and the ceiling is plain. 
+Without even looking, the room tells you that you can go north, east, or
+west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19382
+D1
+~
+~
+0 0 19386
+D3
+~
+~
+0 0 19384
+S
+#19386
+First Floor of the Tower of the Mind~
+~
+~
+This room is quite plain as well.  The walls are just a plain grey with
+no markings on it at all.  From here, you can go one of two directions,
+north or west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19383
+D3
+~
+~
+0 0 19385
+S
+#19387
+Second Floor of the Tower of the Mind~
+~
+~
+There is a set of gold dust covered stairs here, along the western wall. 
+They seem to lead up to the next level.  Oddly, there seems to be a blood
+spot on each one of the the steps.  Will you go east, south or up the
+stairs?  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19388
+D2
+~
+~
+0 0 19390
+D4
+~
+~
+0 0 19393
+S
+#19388
+Second Floor of the Tower of the Mind~
+~
+~
+Along the north of this room, you can see the wall glitter golden a
+little.  There is also a couple spots of blood on the ground.  Fairly fresh.
+East, south or west, is what you have to decide.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19389
+D2
+~
+~
+0 0 19391
+D3
+~
+~
+0 0 19387
+S
+#19389
+Second Floor of the Tower of the Mind~
+~
+~
+There is palin stone staircase in the corner of this room leading to the
+first floor of the tower, The walls here are slightly different from the
+first floor though.  These walls seem to have a hint of gold to them.  You
+can travel south, west or down from here.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19392
+D3
+~
+~
+0 0 19388
+D5
+~
+~
+0 0 19383
+S
+#19390
+Second Floor of the Tower of the Mind~
+~
+~
+This is the south western corner of the tower.  The walls glitter a
+little as your light highlights the golden dust that is on it.  From here,
+you can go either north or east.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19387
+D1
+~
+~
+0 0 19391
+S
+#19391
+Second Floor of the Tower of the Mind~
+~
+~
+The southern wall is again, covered in a glittering gold dust.  Quite a
+plain sight compared to some things you have seen before.  From here, you
+may go north, east or west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19388
+D1
+~
+~
+0 0 19392
+D3
+~
+~
+0 0 19390
+S
+#19392
+Second Floor of the Tower of the Mind~
+~
+~
+The walls come to a right angle here.  The walls have a hint of what
+could be called a golden glitter to them.  From here, you can follow the
+walls either north or west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19389
+D3
+~
+~
+0 0 19391
+S
+#19393
+Third Floor of the Tower of the Mind~
+~
+~
+This room has the stairway to the second floor of this tower.  You are in
+a room that glows in the light that you have.  The walls are a brilliant
+gold.  You can go east, south or back down to the second floor.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19394
+D2
+~
+~
+0 0 19396
+D5
+~
+~
+0 0 19387
+S
+#19394
+Third Floor of the Tower of the Mind~
+~
+~
+With your light source glowing off the walls, you have to take a second
+look to notice the gold stair case that leads up to the next floor.  Your
+choice is to go east, sout, west or up the stairs to the next level.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19395
+D2
+~
+~
+0 0 19397
+D3
+~
+~
+0 0 19393
+D4
+~
+~
+0 0 19400
+S
+#19395
+Third Floor of the Tower of the Mind~
+~
+~
+This is the north eastern corner of the third floor of this tower.  The
+golden walls glow from the small amount of light that comes from your light
+source.  Looking at the walls, you can make out your own reflection.  A
+little distorted, but it's you.  From here, you can go south or west.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19398
+D3
+~
+~
+0 0 19394
+S
+#19396
+Third Floor of the Tower of the Mind~
+~
+~
+This is the south west corner of the tower's third floor.  There is a
+brilliant glow when your light source hits the walls.  They look as if they
+are made of pure gold.  From here you can venture north or east.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19393
+D1
+~
+~
+0 0 19397
+S
+#19397
+Third Floor of the Tower of the Mind~
+~
+~
+The walls here are not just lined with gold but seem to actually be gold.
+The light shines off it with an intensity that makes you feel you are
+outside on the brightest summer day rather than in a dingy tower.  From
+here, you can travel north, east, or west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19394
+D1
+~
+~
+0 0 19398
+D3
+~
+~
+0 0 19396
+S
+#19398
+Third Floor of the Tower of the Mind~
+~
+~
+This is the south eastern corner of the third floor of this tower.  This
+tower, or at least this floor of it, must be worth millions.  Seeing these
+walls, made of gold, gets a stirring a greedy going in the gut.  From this
+corner, you may travel north or west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19395
+D3
+~
+~
+0 0 19397
+S
+#19399
+Fourth Floor of the Tower of the Mind~
+~
+~
+The walls here are gold and seeping of raw chaos.  That is hard to tell
+though.  The floor, ceiling, and north and west wall are just covered in
+blood.  It almost looks like something went extreley savage on it's victim
+and left a mess everywhere.  You can leave this room to the east or south.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19400
+D2
+~
+~
+0 0 19402
+S
+#19400
+Fourth Floor of the Tower of the Mind~
+~
+~
+This is the entrance to the fourth floor from the third.  The walls here
+are not only gold but seem to glows and throb with pure chaos.  From here,
+your choices to leave this room will lead you east, south, west or down.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19401
+D2
+~
+~
+0 0 19403
+D3
+~
+~
+0 0 19399
+D5
+~
+~
+0 0 19394
+S
+#19401
+Fourth Floor of the Tower of the Mind~
+~
+~
+This wall, like the rest on this floor, is made of pure gold and has
+waves of golden, chaotic magic seeping from it.  The eastern wall has an
+imprint of an orc's face in it.  Something powerful, must have used the wall
+to their advantage.  There are exits to the south and west of here.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19404
+D3
+~
+~
+0 0 19400
+S
+#19402
+Fourth Floor of the Tower of the Mind~
+~
+~
+This room is glowing from your lightsource.  There is also a visible
+golden glow eminating right out of the walls.  This must be what the brush
+of chaos looks like.  From here, you may go north or east.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19399
+D1
+~
+~
+0 0 19403
+S
+#19403
+Fourth Floor of the Tower of the Mind~
+~
+~
+You have reaached a set of stairs that is envoloped in a golden haze. 
+The ground here is strewn with broken bones and blood.  The ground itself
+does not even show any sign of the battle that left this mess.  You can go
+north, east, west or up from where you stand.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19400
+D1
+~
+~
+0 0 19404
+D3
+~
+~
+0 0 19402
+D4
+~
+~
+0 0 19405
+S
+#19404
+Fourth Floor of the Tower of the Mind~
+~
+~
+You have reached the south eastern corner of this floor.  The walls glow
+gold in the light you bear and in that same light, you can see a golden mist
+rise from the floor.  There is a passage to the north and west from here.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19401
+D3
+~
+~
+0 0 19403
+S
+#19405
+Top of the Tower of the Mind~
+~
+~
+This is the top of the tower.  The entire room is made of gold that is
+almost blinding from the little amount of light that your lightsource emits.
+There is also a deep, golden haze filling the room.  Through the haze, in
+the center of the room, you can see where a woman is standing, smiling at
+you with her arms crossed.  The only way out of this room is down the
+stairs.  
+~
+0 401423 0
+Rd     0
+D5
+~
+~
+0 0 19403
+S
+#19406
+First Floor of the Tower of Satanic Fire~
+~
+~
+You have entered the &bTower of Daemonic Intentions&w.  The name pretty
+much says it all as for what to expect through this area.  There is an exit
+to the east and south.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19407
+D2
+~
+~
+0 0 19408
+S
+#19407
+First Floor of the Tower of Daemonic Intentions~
+~
+~
+You have reached the north east corner of the first floor.  The walls
+here have an odd red glow to them.  The stone itself looks like it was made
+of fire.  You can go south or west from here.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19409
+D3
+~
+~
+0 0 19406
+S
+#19408
+First Floor of the Tower of Daemonic Intentions~
+~
+~
+Evil intentions run through your head.  Whether you follow them or not is
+up to you.  Thankfully, the magic here is not strong enough to make you do
+things you don't want to.  You can go north, east or south of here.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19406
+D1
+~
+~
+0 0 19409
+D2
+~
+~
+0 0 19410
+S
+#19409
+First Floor of the Tower of Daemonic Intentions~
+~
+~
+The walls here are made of a red stone that seems to be able to survive
+practiacally anything.  There are a few marks on it, possibly from previous
+battles in this tower.  There are exits to the north, south and west of
+here.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19407
+D2
+~
+~
+0 0 19411
+D3
+~
+~
+0 0 19408
+S
+#19410
+First Floor of the Tower of Daemonic Intentions~
+~
+~
+This is the south west corner of the tower.  The wall comes to a ninety
+degree angle.  From here, you have two choices for travel, follow the wall
+north or east.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19408
+D1
+~
+~
+0 0 19411
+S
+#19411
+First Floor of the Tower of Daemonic Intentions~
+~
+~
+You have come to the south corner of this tower.  Apparently there is a
+set of stairs that seem to lead up to the next level of the tower.  Shall
+you venture north, west or up the stairs?  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19409
+D3
+~
+~
+0 0 19410
+D4
+~
+~
+0 0 19417
+S
+#19412
+Second Floor of the Tower of Daemonic Intentions~
+~
+~
+This is the north western corner of the second floor of this tower.  The
+red stone of the walls come together quite evenly in the corner.  The
+building of this tower must have taken quite a bit of time to make it so
+strong.  You can go either east or south from here.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19413
+D2
+~
+~
+0 0 19414
+S
+#19413
+Second Floor of the Tower of Daemonic Intentions~
+~
+~
+You have come across a set of stairs that seem to lead up to the next
+level of this tower.  The stairs are are made of a red stone that looks
+fairly similar to the walls of the tower.  You can go south, west or up the
+stairs.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19415
+D3
+~
+~
+0 0 19412
+D4
+~
+~
+0 0 19419
+S
+#19414
+Second Floor of the Tower of Daemonic Intentions~
+~
+~
+This section of the tower seems to be fairly quiet.  The walls here are
+also made of a red stone but what does appear different is that there is a
+blood stain on the ceiling...  What could have caused that?  There are open
+doors to the north, east and south of here.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19412
+D1
+~
+~
+0 0 19415
+D2
+~
+~
+0 0 19416
+S
+#19415
+Second Floor of the Tower of Daemonic Intentions~
+~
+~
+The walls here are made of a deep red stone.  The ground and ceiling
+themselves seems to be fire encased in glass.  There are passages to the
+north, south and west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19413
+D2
+~
+~
+0 0 19417
+D3
+~
+~
+0 0 19414
+S
+#19416
+Second Floor of the Tower of Daemonic Intentions~
+~
+~
+This is the south western corner of the tower.  The walls here are a red
+stone.  Upon closer inspection, there are a few gouges out of the stone. 
+The gouges look like they might have been made by sword strikes.  From here,
+you may take the north or eastern passages.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19414
+D1
+~
+~
+0 0 19417
+S
+#19417
+Second Floor of the Tower of Daemonic Intentions~
+~
+~
+You are at the top of the stairs that lead to the first floor of this
+tower.  The rooms here seem to be made of a red stone.  There is a passage
+to the north and west.  Or you can go down to the first floor.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19415
+D3
+~
+~
+0 0 19416
+D5
+~
+~
+0 0 19411
+S
+#19418
+Third Floor of the Tower of Daemonic Intentions~
+~
+~
+You have reached yet another corner in this tower.  This is the north
+western corner.  The ground a red stone and the walls seem to be made of a
+heatless fire.  There is passages to the east and south.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19419
+D2
+~
+~
+0 0 19420
+S
+#19419
+Third Floor of the Tower of Daemonic Intentions~
+~
+~
+You have reached the top of the stairs from the second level to the thrid
+level.  The ground here is no longer made of glass encased fire but of red
+stone.  From here, you may go south, west of down to the second floor.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19421
+D3
+~
+~
+0 0 19418
+D5
+~
+~
+0 0 19413
+S
+#19420
+Third Floor of the Tower of Daemonic Intentions~
+~
+~
+The fire encased walls here seem to have taken a beating from battles in
+the past.  It looks as though one or two good strikes could set it free into
+the tower.  There is a passage to the north, east and south, in case you
+would like to get away from this.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19418
+D1
+~
+~
+0 0 19421
+D2
+~
+~
+0 0 19422
+S
+#19421
+Third Floor of the Tower of Daemonic Intentions~
+~
+~
+You have come across a set of stairs that are made of glass encased fire.
+They seem to lead to the fourth floor of this tower.  Shall you go up them
+or go north, south or west?  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19419
+D2
+~
+~
+0 0 19423
+D3
+~
+~
+0 0 19420
+D4
+~
+~
+0 0 19427
+S
+#19422
+Third Floor of the Tower of Daemonic Intentions~
+~
+~
+You have found the south western corner of this floor.  Looking at the
+walls, they are still made of encased flame but there seems to be a skeleton
+of a gnome in the wall itself.  Not an inviting way to die.  From here, the
+path leads north or east.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19420
+D1
+~
+~
+0 0 19423
+S
+#19423
+Third Floor of the Tower of Daemonic Intentions~
+~
+~
+The walls of fire here seem to actaully give off a bit of heat.  There is
+a puddle of blood near the wall and it's bubbling a little.  The walls must
+be getting thinner with time.  There is an exit to the north and west of
+where you stand.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19421
+D3
+~
+~
+0 0 19422
+S
+#19424
+Fourth Floor of the Tower of Daemonic Intentions~
+~
+~
+This is the north western corner of the tower.  The black flamed walls
+seem to be disipating a little here.  Either the magic that keeps it going
+is fadnig or it's an illusion of some sort.  There is a path to the east and
+south of here.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 19425
+D2
+~
+~
+0 0 19426
+S
+#19425
+Fourth Floor of the Tower of Daemonic Intentions~
+~
+~
+You have come to the north eastern corner of the tower.  The black fire
+walls seem to almost be coming out towards you as you walk in the room.  Can
+it be that there is some odd force at work here?  You may travel south or
+west.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 19427
+D3
+~
+~
+0 0 19424
+S
+#19426
+Fourth Floor of the Tower of Daemonic Intentions~
+~
+~
+There is a spiralling set of stairs in the middle of the room here, made
+of the same black fire that the walls area made of.  Testing it with your
+foot, it seems as though they are fairly solid.  There is a path to the
+north, east or south.  Another choice is to take the stairs up.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19424
+D1
+~
+~
+0 0 19427
+D2
+~
+~
+0 0 19428
+D4
+~
+~
+0 0 19430
+S
+#19427
+Fourth Floor of the Tower of Daemonic Intentions~
+~
+~
+This room has the stairs down to the third floor of the tower.  The room
+seems quite warm when you enter it.  The walls here area made of a black
+fire that looks quite ominous.  From here, you may go north, south west or
+down the stairs.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19425
+D2
+~
+~
+0 0 19429
+D3
+~
+~
+0 0 19426
+D5
+~
+~
+0 0 19421
+S
+#19428
+Fourth Floor of the Tower of Daemonic Intentions~
+~
+~
+This is the south western corner of the tower.  The black flames of the
+wall are very still, almost motionless.  There is a small spot of blood near
+your feet.  Must have been something that came through here.  There are
+exits to the north and east of this room.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19426
+D1
+~
+~
+0 0 19429
+S
+#19429
+Fourth Floor of the Tower of Daemonic Intentions~
+~
+~
+You have come to the south eastern corner of the tower's floor.  The
+walls of black flame look as if the are flowing away from the corner of the
+room.  These flames direct your attention to the exits to the north and
+west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 19427
+D3
+~
+~
+0 0 19428
+S
+#19430
+The Top of the Tower of Daemonic Intentions~
+~
+~
+Looking about the room, the entire place is made of black flame encased
+in glass.  There is a red flame path that leads to the center of the room
+where there is a large pentagram burning.  The only way out of this room is
+down the black fire stairs that you came up.  
+~
+0 401423 0
+Rd     0
+D5
+~
+~
+0 0 19426
+S
+#19431
+A Small Room~
+~
+~
+A small room, hidden underneath the healer of this area.  This room is
+decorated with tapestries that show different locations of the world and
+different people.  All these people seem to be well known, you can identify
+a few of them.  There is a tapestry that looks similar to Tiana, another
+that looks similar to Talrax.  Could this mean something?  You do not see
+any obvious exits from this room.  
+~
+0 401417 0
+Rd     0
+D4
+~
+~
+631 0 19315
+S
+#19443
+Entrance to the Catacombs~
+~
+~
+~
+0 401423 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 19304 spec_healer
+M 19315 spec_guard
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 19300 1 19304
+E 0 19312 0 20
+E 0 19312 0 21
+M 0 19309 1 19308
+E 0 19333 0 6
+E 0 19334 0 20
+M 0 19310 1 19309
+E 0 19335 0 18
+E 0 19302 0 20
+E 0 19302 0 21
+M 0 19311 1 19310
+E 0 19336 0 13
+E 0 19302 0 20
+E 0 19302 0 21
+M 0 19303 1 19312
+E 0 19315 0 20
+M 0 19312 3 19314
+E 0 19302 0 20
+E 0 19302 0 21
+M 0 19313 1 19316
+E 0 19337 0 18
+E 0 19338 0 19
+M 0 19301 1 19318
+E 0 19313 0 20
+E 0 19313 0 21
+M 0 19314 1 19320
+E 0 19340 0 20
+E 0 19340 0 21
+E 0 19341 0 16
+M 0 19315 4 19321
+E 0 19342 0 20
+E 0 19304 0 21
+E 0 19343 0 5
+E 0 19344 0 11
+M 0 19316 1 19322
+E 0 19340 0 20
+E 0 19304 0 21
+E 0 19345 0 9
+M 0 19302 1 19329
+E 0 19314 0 20
+E 0 19314 0 21
+M 0 19304 1 19330
+O 0 19301 0 19331
+M 0 19317 2 19332
+E 0 19346 0 20
+E 0 19346 0 21
+E 0 19347 0 8
+E 0 19348 0 12
+M 0 19318 2 19338
+E 0 19302 0 20
+E 0 19302 0 21
+E 0 19350 0 16
+E 0 19351 0 11
+M 0 19319 1 19344
+E 0 19352 0 20
+E 0 19353 0 3
+M 0 19305 1 19355
+E 0 19316 0 20
+E 0 19317 0 5
+E 0 19318 0 4
+G 0 19306 0
+O 0 19301 0 19357
+M 0 19306 1 19380
+E 0 19319 0 16
+E 0 19320 0 22
+E 0 19321 0 15
+G 0 19308 0
+O 0 19301 0 19384
+M 0 19307 1 19405
+E 0 19322 0 2
+E 0 19323 0 9
+E 0 19324 0 8
+E 0 19325 0 20
+G 0 19307 0
+O 0 19301 0 19406
+M 0 19308 1 19430
+E 0 19326 0 20
+E 0 19327 0 21
+E 0 19329 0 26
+E 0 19330 0 0
+E 0 19332 0 7
+G 0 19309 0
+O 0 19300 0 19431
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

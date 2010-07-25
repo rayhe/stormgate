@@ -1,0 +1,1910 @@
+#AREADATA
+Name        New area~
+Builders    Brey Denylyn~
+VNUMs       24200 24299
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     None~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#24200
+Kat'wun~
+The spirit of Kat'wun~
+The spirit of Kat'wun, the ancient huntress
+~
+You see a ancient spirit hovering here.  It is shrouded in tattered
+clothing.  She appears to be very powerful and you can feel the vibrations
+of her power.  She seems to be holding an ancient weapon.  
+~
+99 268959808 86016020 1208107008 2 -1000 S
+102 1 170 174 0 20000d0+0 0d0+0
+1020 20 0
+0 0 2
+226 0 0
+#24201
+Yoku'jin~
+The spirit of Yoku'jin~
+The spirit of Yoku'jin, the ancient assassin
+~
+You see an ancient spirit hovering here.  It is shrouded in decaying
+armor and tattered clothing.  You can feel its powers vibrate against your
+flesh.  It seems to be holding an ancient weapon.  
+~
+35 167772352 90210320 24832 2 -1000 S
+110 1 190 190 0 18000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+#24202
+Navaikii~
+The spirit of Navaikii~
+The spirit of Navaikii, an ancient warlord
+~
+You see a spirit floating here.  It is huge and seems to have emmense
+fighting power.  It seems to be wielding an ancient weapon.  
+~
+35 34095296 90439808 26624 2 -1000 S
+110 1 200 200 0 20000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+#24203
+Fazek~
+The spirit of Fazek~
+The spirit of Fazek, an ancient summoner.
+~
+You see a skinny spirit floating here in decaying armor.  It has a very
+enlightened expression on his face.  He glows with brilliant power, and
+seems to be wielding an ancient weapon.  
+~
+35 234897600 83918848 149760 2 -1000 S
+110 1 120 120 0 18000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+#24204
+Samurai~
+An Ancient Samurai~
+A huge man stands here shrouded in ancient armor
+~
+You look up to a man, he appears to be about eight feet tall.  This very
+muscular man is wearing heavy armor.  His body radiates with power and you
+cringe in fear.  This guy looks like trouble!  If your still alive RUN!  
+~
+35 301990080 90275840 1207984384 2 -1000 S
+140 1 200 200 0 40000d0+0 0d0+0
+1400 0 0
+0 0 1
+0 0 0
+#24299
+The weaponmaster~
+The weaponmaster~
+The weaponmaster of the dojo sits here meditating.
+~
+Sitting here is an ancient man.  He holds onto a weapon of extream power,
+and is very skilled with it.  Infact he is skilled with all weapons.  
+~
+35 134742210 16810004 1073752064 2 0 S
+103 1 177 190 0 25000d0+0 0d0+0
+1030 0 0
+0 0 0
+2050 0 0
+#0
+
+
+
+#OBJECTS
+#24200
+Hunter's Scythe~
+an Ancient Hunter's Scythe~
+An ancient hunter's scythe lies here and glows with power~
+~
+5 704643077 40960 0 0 8193 102
+100 100
+0~ 0~ 0~ 1~
+7 1 0
+5 0
+friend of nature~
+2 2
+0 0 0
+A
+18 20
+A
+19 52
+A
+26 100
+A
+13 111
+#24201
+Half Decomposed Armor~
+a Half Decomposed Suit of Armor~
+A crappy piece of armor sits here getting crappier through the years~
+~
+9 152208 16416 0 0 9 82
+100 100
+0~ 0~ 0~ 0~
+5 1 0
+5 0
+curse~
+3 3
+0 0 0
+A
+5 2
+A
+1 -3
+#24202
+Sai of the Ancients~
+an Ancient Sai~
+An ancient sai lies here glowing with power~
+~
+5 570425345 12289 0 0 8193 103
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 50
+A
+25 30
+A
+13 153
+A
+19 48
+A
+18 30
+#24203
+blindfold~
+a blindfold~
+A blindfold lies here ~
+~
+9 8454145 4096 0 0 65537 1
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+5 0
+cure blindness~
+3 5
+0 0 0
+A
+2 -5
+A
+4 -5
+#24204
+Ancient Nunchakus~
+a pair of Ancient Nunchakus~
+Two sticks with a chain between them lie here radiating in power~
+~
+5 83935745 272 0 0 8193 103
+100 100
+0~ 0~ 0~ 7~
+6 800 0
+5 0
+giant strength~
+4 -1
+0 0 0
+A
+18 39
+A
+19 39
+A
+13 150
+A
+1 2
+#24205
+Snake Staff~
+a Snake Staff~
+A staff that looks like a snake lies on the ground~
+~
+4 536872964 20736 0 0 16385 101
+100 100
+100~ 10~ 10~ demonfire~
+2 400 0
+4 24206
+reserved~
+3 -1
+0 0 0
+A
+4 3
+A
+18 10
+A
+19 10
+A
+13 100
+#24206
+Snake~
+a Snake~
+A long snake lies here and hisses wield me~
+~
+5 167790592 12544 0 0 8193 103
+100 100
+0~ 0~ 0~ 4~
+4 1 0
+0 24205
+reserved~
+4 -1
+0 0 0
+A
+18 46
+A
+19 20
+A
+13 120
+A
+25 40
+A
+26 100
+A
+23 -5
+A
+24 -5
+A
+12 100
+#24207
+Katana~
+&rAn ancient katana named "Karaki"~
+A red, razor sharp blade lies here collecting dust~
+~
+5 706235623 290833 0 8388608 8193 104
+100 100
+0~ 0~ 0~ 1~
+2 1 0
+5 0
+vortex~
+5 5
+0 0 0
+A
+35 1
+A
+32 4
+A
+5 -5
+A
+1 4
+A
+25 200
+A
+42 13
+A
+23 -20
+A
+24 -20
+A
+12 65
+A
+13 100
+A
+19 40
+A
+18 60
+#24299
+stinger~
+a shortsword named "Stinger"~
+A short sword with ancient engravings lies here.~
+~
+5 79758336 8 0 1048576 8193 104
+100 100
+0~ 0~ 0~ 11~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 34
+A
+19 50
+A
+13 136
+A
+12 94
+A
+26 100
+A
+25 74
+A
+-99 -138
+#0
+
+
+
+#ROOMDATA
+#24200
+A Serene Path~
+~
+~
+You are walking on a path toward a building with large stone walls and
+elegant pagodas.  The sound of men the warcry of intense training can be
+heard in the distance.  To the north the path continues.  
+~
+0 8192 4
+Rd     0
+D0
+~
+~
+0 0 24201
+S
+#24201
+The Dojo Gates~
+~
+~
+You have reached the end of the path.  There are huge iron gates infront
+of you.  Beside the gates there is a sign.  The sign reads: REMOVE SHOES AT
+THE DOOR!  To the east there seems to be a trail, overgrown with vegitation.
+~
+0 8192 4
+Rd     0
+D0
+~
+~
+1 0 24202
+D1
+~
+~
+515 0 24247
+D2
+~
+~
+0 0 24200
+S
+#24202
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking ahead you see an ocean of blue mats.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24206
+D1
+~
+~
+0 0 24203
+D2
+~
+~
+1 0 24201
+D3
+~
+~
+0 0 24204
+S
+#24203
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking ahead you see an ocean of blue mats.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24207
+D3
+~
+~
+0 0 24202
+S
+#24204
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking ahead you see an ocean of blue mats.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24205
+D1
+~
+~
+0 0 24202
+S
+#24205
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking ahead you see an ocean of blue mats.  To the west you see a
+door leading to the western pagoda.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24208
+D1
+~
+~
+0 0 24206
+D2
+~
+~
+0 0 24204
+D3
+~
+~
+3 0 24249
+S
+#24206
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking ahead you see an ocean of blue mats.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24209
+D1
+~
+~
+0 0 24207
+D2
+~
+~
+0 0 24202
+D3
+~
+~
+0 0 24205
+S
+#24207
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking ahead you see an ocean of blue mats.  To the east you see a
+door leading to the eastern pagoda.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24210
+D1
+~
+~
+3 0 24211
+D2
+~
+~
+0 0 24203
+D3
+~
+~
+0 0 24206
+S
+#24208
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking around you see an ocean of blue mats.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24209
+D2
+~
+~
+0 0 24205
+S
+#24209
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking around you see an ocean of blue mats.  To the north there is
+a door leading to the dojo's arsenal.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+3 0 24272
+D1
+~
+~
+0 0 24210
+D2
+~
+~
+0 0 24206
+D3
+~
+~
+0 0 24208
+S
+#24210
+Practice Mats~
+~
+~
+You are on the practice mats, where all of the soldiers of the dojo
+train.  Looking around you see an ocean of blue mats.  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 24207
+D3
+~
+~
+0 0 24209
+S
+#24211
+Path to a Large Pagoda~
+~
+~
+You stand before a giant pagoda, and feel the presence of ancient
+warriors.  You admire the beauty of this ancient form of architecture.  To
+the north is the entrance to the eastern pagoda, enter if you dare.  
+~
+0 8192 4
+Rd     0
+D0
+~
+~
+3 0 24212
+D3
+~
+~
+3 0 24207
+S
+#24212
+Pagoda Entrance~
+~
+~
+You have entered the eastern pagoda.  The room is very brightly lit and
+you see armor set on display from the warriors of the past.  To the east and
+west you see bright hallways.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24213
+D2
+~
+~
+3 0 24211
+D3
+~
+~
+0 0 24218
+S
+#24213
+A Bright Hall~
+~
+~
+A very brightly lit hallway.  You see armor set on display from the
+warriors of the past.  The hallway continues to the north.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24214
+D3
+~
+~
+0 0 24212
+S
+#24214
+A Bright Hall~
+~
+~
+A very brightly lit hallway.  You see armor set on display from the
+warriors of the past.  The hallway continues to the north.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24215
+D2
+~
+~
+0 0 24213
+S
+#24215
+A Bright Hall~
+~
+~
+A very brightly lit hallway.  You see armor set on display from the
+warriors of the past.  The hallway continues to the west.  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 24214
+D3
+~
+~
+0 0 24216
+S
+#24216
+A Bright Hall~
+~
+~
+A very brightly lit hallway.  You see armor set on display from the
+warriors of the past.  The hallway continues to the south.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24215
+D2
+~
+~
+0 0 24217
+S
+#24217
+The End of the Hall~
+~
+~
+You have reached the end of the hallway.  This room is a little less
+bright than the previous rooms.  There is a staircase leading to the second
+floor of the pagoda.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24216
+D4
+~
+~
+0 0 24234
+S
+#24218
+A Bright Hall~
+~
+~
+A very brightly lit hallway.  You see armor set on display from the
+warriors of the past.  The hallway continues to the north.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24219
+D1
+~
+~
+0 0 24212
+S
+#24219
+A Bright Hall~
+~
+~
+A very brightly lit hallway.  You see armor set on display from the
+warriors of the past.  The hallway continues to the north.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24220
+D2
+~
+~
+0 0 24218
+S
+#24220
+A Bright Hall~
+~
+~
+A very brightly lit hallway.  You see armor set on display from the
+warriors of the past.  The hallway continues to the north.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24221
+D2
+~
+~
+0 0 24219
+S
+#24221
+The End of the Hall~
+~
+~
+You have reached the end of the hall.  The smell of the dead is in the
+air.  There are stairs going down to the tombs of ancient warriors.  Enter
+with caution!  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 24220
+D5
+~
+~
+3 0 24222
+S
+#24222
+Catacombs of the Ancients~
+~
+~
+You have reached the catacombs of the dojo.  This is where the bodies of
+nobles and legends are buried.  The stench of death assults you nose.  The
+passage continues to the east.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 24223
+D4
+~
+~
+3 0 24221
+S
+#24223
+Catacombs of the Ancients~
+~
+~
+As you venture deeper in to the catacombs the smell death grows stronger.
+The black walls are lined with flaming torches.  The passage continues to
+the east.  Are you sure you shouldn't be turning around?  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 24224
+D3
+~
+~
+0 0 24222
+S
+#24224
+Further into the Catacombs~
+~
+~
+As wander further into the catacombs a breeze chills your bones.  You
+feel the presence of the ancients watching your every move.  The path
+continues to the north.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 24225
+D3
+~
+~
+0 0 24223
+S
+#24225
+Deeper into the Catacombs~
+~
+~
+Even deeper into the catacombs you walk.  Your lantern lights the room
+and makes ancient writing visible on the walls.  The path continues to the
+north.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 24226
+D2
+~
+~
+0 0 24224
+S
+#24226
+Entrance to the Tomb of the Ancients~
+~
+~
+You stand before the tombs of the ancient heros of this dojo.  There are
+two giant pillars holding up the ceiling.  The pillars are made of pure gold
+and are lined with rubys and emeralds.  The tombs are to the west.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 24225
+D3
+~
+~
+0 0 24227
+S
+#24227
+Between Ancient Crypts~
+~
+~
+You stand inbetween the crypts of the ancients.  Supernatural powers can
+be felt from ever direction.  You shudder at the breeze, it is freezing!  To
+the north and south are the tombs.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 24232
+D1
+~
+~
+0 0 24226
+D2
+~
+~
+0 0 24233
+D3
+~
+~
+0 0 24228
+S
+#24228
+Between Ancient Crypts~
+~
+~
+You stand inbetween the crypts of the ancients.  Supernatural powers can
+be felt from ever direction.  You shudder at the breeze, it is freezing!  To
+the north and south are the tombs.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 24230
+D1
+~
+~
+0 0 24227
+D2
+~
+~
+0 0 24231
+D3
+~
+~
+103 0 24229
+S
+#24229
+An Ancient Crypt~
+~
+~
+This is an empty crypt waiting to be filled with another hero.  There is
+a large carpet on the floor, carpet has an elegant design and is very
+beautiful.  Some say to meditate here is to reach complete inner peace.  It
+is every monks dream to reach inner peace and reach purgatory to finally
+uncover the secrets of the dojo and the meaning of life.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+103 0 24228
+S
+#24230
+Crypt of an Ancient Huntress~
+~
+~
+You have entered the crypt of Kat'wun the ancient huntress of the dojo. 
+She helped protect the dojo from the black armies of Kim'chi.  She remains a
+legend even in the afterlife.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 24228
+S
+#24231
+Crypt of an Ancient Assassin~
+~
+~
+You have entered the crypt of Yoku'jin the ancient assassin of the dojo. 
+This ancient warrior has awesome power and was general of the dojo's army. 
+He is a master of the dagger and is strong in mental awareness.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 24228
+S
+#24232
+Crypt of an Ancient Warlord~
+~
+~
+You have entered the crypt of Navaikii the ancient warrior of the dojo. 
+He was a warrior of extreme strength.  He was the son to the weaponmaster of
+his time.  He would have been the weaponmaster, but was slayed in war.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 24227
+S
+#24233
+Crypt of an Ancient Summoner~
+~
+~
+You have entered the crypt of Fazek the ancient summoner of the dojo.  He
+was the chief advisor of the weaponmaster and an adept prophet of the dojo. 
+He was considered the smartest man alive.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 24227
+S
+#24234
+Second Floor of the Pagoda~
+~
+~
+You have reached the top of the stairs and are on the second floor.  This
+room is dimly lit by torches but it is just bright enough to see.  A hallway
+continues to the north.  A staircase leads down.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24235
+D5
+~
+~
+0 0 24217
+S
+#24235
+A Twisting Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 24234
+D3
+~
+~
+0 0 24236
+S
+#24236
+A Twisting Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24235
+D2
+~
+~
+0 0 24237
+S
+#24237
+A Bright Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24236
+D2
+~
+~
+0 0 24238
+S
+#24238
+A Turn in the Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24237
+D1
+~
+~
+0 0 24239
+S
+#24239
+A Bright Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24240
+D3
+~
+~
+0 0 24238
+S
+#24240
+A Turn in the Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 24241
+D3
+~
+~
+0 0 24239
+S
+#24241
+A Bright Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24240
+D2
+~
+~
+0 0 24242
+S
+#24242
+A Turn in the Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24241
+D3
+~
+~
+0 0 24243
+S
+#24243
+A Bright Hall~
+~
+~
+You stand in a bright twisting hall way.  The whole room is white and
+there are suits of ancient armor on display.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24242
+D3
+~
+~
+0 0 24244
+S
+#24244
+End of the Hall~
+~
+~
+You have reached the end of the hallway.  It is dimly lit by torches. 
+There is a staircase leading up.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24243
+D4
+~
+~
+0 0 24245
+S
+#24245
+At the Top of the Pagoda~
+~
+~
+You have reached the top of the pagoda.  You stand in a brightly lit room
+and you hear the chanting of what sounds like a monk.  To the north is the
+chamber of the dojo's weaponmaster.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24246
+D5
+~
+~
+0 0 24244
+S
+#24246
+Living Quarters of the Weaponmaster~
+~
+~
+You have come to your final destination.  The chamber of the dojo's
+weaponmaster.  There is a big golden throne siting in the middle of the
+room.  The weaponmaster sits on his throne and appears to be meditating. 
+His weapon is radiating the room with its power and you can feel it on your
+skin.  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 24245
+S
+#24247
+A Hidden Path~
+~
+~
+You have wandered off on a hidden path.  To the west is the path to the
+dojo.  There seems to be a big metal door in front of you, then again it
+could just be the dojo wall.  
+~
+0 8192 4
+Rd     0
+D0
+~
+~
+631 0 24248
+D3
+~
+~
+515 0 24201
+S
+#24248
+walk~
+~
+~
+You have reveiled the secret of the dojo.  A reward is at hand if you can
+defeat its guardian, not willing to give it up.  This is the final test,
+pass and you will be rewarded, fail and die!  
+~
+0 4202496 0
+Rd     0
+D2
+~
+~
+631 0 24247
+S
+#24249
+Path to a Large Pagoda~
+~
+~
+You stand before a giant pagoda, it sparkles with magic energy.  You feel
+the vibrations of energy radiate your skin, and hear the hum of pure energy.
+To the south is the pagoda entrance.  
+~
+0 8192 4
+Rd     0
+D1
+~
+~
+3 0 24205
+D2
+~
+~
+3 0 24250
+S
+#24250
+Pagoda Entrance~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 24249
+D1
+~
+~
+0 0 24251
+D3
+~
+~
+0 0 24252
+S
+#24251
+A Glowing Hall~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 24254
+D3
+~
+~
+0 0 24250
+S
+#24252
+A Glowing Hall~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24250
+D2
+~
+~
+0 0 24253
+S
+#24253
+A Glowing Hall~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24252
+D2
+~
+~
+0 0 24255
+S
+#24254
+A Glowing Hall~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24251
+D2
+~
+~
+0 0 24257
+S
+#24255
+A Brightly Lit Hall~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24253
+D1
+~
+~
+0 0 24256
+S
+#24256
+A Blinding Light~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24258
+D1
+~
+~
+0 0 24257
+D3
+~
+~
+0 0 24255
+S
+#24257
+A Brightly Lit Hall~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24254
+D3
+~
+~
+0 0 24256
+S
+#24258
+Darkness~
+~
+~
+~
+0 8388609 0
+Rd     0
+D2
+~
+~
+0 0 24256
+D4
+~
+~
+0 0 24259
+S
+#24259
+A Flaming Room~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 24260
+D5
+~
+~
+0 0 24258
+S
+#24260
+In the Midst of Flames~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24259
+D1
+~
+~
+0 0 24261
+D3
+~
+~
+0 0 24267
+S
+#24261
+In the Midst of Flames~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24262
+D3
+~
+~
+0 0 24260
+S
+#24262
+Smothered in Flames~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24263
+D2
+~
+~
+0 0 24261
+S
+#24263
+In the Midst of Flames~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 24262
+D3
+~
+~
+0 0 24264
+S
+#24264
+Smoldering Agony~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24268
+D1
+~
+~
+0 0 24263
+D3
+~
+~
+0 0 24265
+S
+#24265
+In the Midst of Flames~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24264
+D2
+~
+~
+0 0 24266
+S
+#24266
+Smothered in Flames~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24265
+D2
+~
+~
+0 0 24267
+S
+#24267
+In the Midst of Flames~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24266
+D1
+~
+~
+0 0 24260
+S
+#24268
+Instant Relief~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 24264
+D4
+~
+~
+0 0 24269
+S
+#24269
+The Top of the Pagoda of Magic~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 24270
+D3
+~
+~
+3 0 24271
+D5
+~
+~
+0 0 24268
+S
+#24270
+Archmage's Chamber~
+~
+~
+~
+0 4 0
+Rd     0
+D3
+~
+~
+3 0 24269
+S
+#24271
+Electric Bath~
+~
+~
+~
+0 33554432 0
+Rd     0
+D1
+~
+~
+3 0 24269
+D5
+~
+~
+0 0 24250
+S
+#24272
+Before the Storage Rooms~
+~
+~
+As you leave the practice mats you enter a hall leading to the check-out
+counter and the dojo arsenal.  South you can return to the practice mats. 
+North is the check-out counter.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 24273
+D2
+~
+~
+3 0 24209
+S
+#24273
+Check-Out Area~
+~
+~
+You have entered the check-out room.  There is a big wooden desk in the
+middle of the room with check-out papers on it.  To the east is weapon
+storage.  To the west is the Armor storage.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24274
+D2
+~
+~
+0 0 24272
+D3
+~
+~
+0 0 24275
+S
+#24274
+Weapon Storage~
+~
+~
+You stand in the weapon room.  Weapon racks line the walls, every kind of
+weapon katanas to maces line the racks.  A large sign is on the wall.  The
+sign reads: TAKE ONLY TWO AT A TIME!  
+~
+0 8192 0
+Rd     0
+D3
+~
+~
+0 0 24273
+S
+#24275
+Armory~
+~
+~
+You stand in the Armor room.  Armor racks line the walls, all kinds of
+armor line the racks helmets to boots.  A large sign is on the wall.  The
+sign reads: ONE FULL SET OF ARMOR PER PERSON!  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 24273
+S
+#24276
+Wandering Purgatory~
+~
+~
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 24280
+D1
+~
+~
+0 0 24277
+D3
+~
+~
+0 0 24278
+S
+#24277
+Wandering Purgatory~
+~
+~
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 24279
+D1
+~
+~
+0 0 24279
+D2
+~
+~
+0 0 24279
+D3
+~
+~
+0 0 24279
+D4
+~
+~
+0 0 24279
+D5
+~
+~
+0 0 24279
+S
+#24278
+Wandering Purgatory~
+~
+~
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 24279
+D1
+~
+~
+0 0 24279
+D2
+~
+~
+0 0 24279
+D3
+~
+~
+0 0 24279
+D4
+~
+~
+0 0 24279
+D5
+~
+~
+0 0 24279
+S
+#24279
+Wandering Purgatory~
+~
+~
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 24276
+S
+#24280
+Wandering Purgatory~
+~
+~
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 24279
+D1
+~
+~
+0 0 24279
+D2
+~
+~
+0 0 24279
+D3
+~
+~
+0 0 24279
+D4
+~
+~
+0 0 24281
+D5
+~
+~
+0 0 24247
+S
+#24281
+Upon a cloud~
+~
+~
+~
+0 0 9
+Rd     0
+D5
+~
+~
+0 0 24280
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 24200 1 24230
+E 0 24200 0 20
+E 0 24201 0 5
+M 0 24201 1 24231
+E 0 24202 0 20
+E 0 24202 0 21
+E 0 24201 0 5
+E 0 24202 0 20
+E 0 24202 0 21
+E 0 24201 0 5
+E 0 24203 0 8
+M 0 24202 1 24232
+E 0 24204 0 20
+E 0 24204 0 21
+E 0 24201 0 5
+M 0 24203 1 24233
+E 0 24205 0 22
+E 0 24201 0 5
+M 0 24299 1 24246
+E 0 24299 0 20
+M 0 24204 1 24248
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

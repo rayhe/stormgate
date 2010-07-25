@@ -1,0 +1,420 @@
+#AREADATA
+Name        New area~
+Builders    Mishval~
+VNUMs       32000 32199
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     Mishval~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#32000
+child small girl~
+A small girl~
+A little girl runs around, chasing her kite.
+~
+~
+3 0 0 0 0 0 S
+40 1 80 70 0 4000d0+0 0d0+0
+400 11 0
+0 0 0
+0 0 0
+>greet_prog 100~
+say Hi!  I'm Kaya.  This is a great place to fly kites!
+say The wind is kind of strong today, I hope I don't lose
+say my kite!
+smile
+~
+>speech_prog kite~
+say Yea, a kite!  Haven't you ever heard
+say of a kite??
+boggle $n
+~
+|
+#32010
+keeper sky~
+The Keeper~
+The Keeper of the Sky stands here, watching over the palace.
+~
+~
+3 67108992 262144 0 0 0 S
+87 1 150 170 0 7400d0+0 0d0+0
+870 19 0
+0 0 0
+0 0 0
+#32015
+Nyrali wind maiden~
+Nyrali~
+Nyrali, a wind maiden, sits on the bed, folding clothes.
+~
+~
+3 128 0 0 0 0 S
+75 1 120 130 0 7500d0+0 0d0+0
+750 11 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if ispc($n) == 1
+say Greeting $n.  I'm sorry if I look so
+say flustered.  I'm just worried something
+say happened to my precious daughter.
+cringe
+say Let's pray she returns home soon.
+sigh
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#32001
+bare tree~
+a bare tree~
+A tree with naked branches stretches toward the sky.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#32002
+broken kite~
+a broken kite~
+A kite has fallen on the steps, torn in several areas.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#32005
+statue lady~
+a statue~
+A lady in mourning has been casted into a marble statue here.~
+~
+13 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#32000
+A Bridge of Air~
+~
+~
+For a moment you feel disoriented, seeing as the bridge is completely
+transparent.  You can barely make out the edges of the bridge, preventing you
+from venturing to far to the sides.  The bridge does not feel solid at all, 
+and appears to more of a heavily compressed layer of air.  Looking below, it is
+a very long way down.  The bridge continues on for some distance, but far off
+on the horizon you can see the outline of a magnificent structure.
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 1
+S
+#32003
+On the Transparent Stairs~
+~
+~
+Looking back down, you see that you are about a third of the way up.  Daring to
+sneak a peek at the steps you walk on, you see sharp rock spikes in a valley
+right below your feet.  The wind continues to howl, blowing and slamming into
+you from every possible direction.  The wind is so strong, it almost rips the
+armor from your body.
+~
+0 393218 1
+Rd     0
+D4
+~
+~
+0 0 32004
+D5
+~
+~
+0 0 1
+S
+#32004
+On the Transparent Stairs~
+~
+~
+Upon reaching this point on the enormous set of stairs, the only comfort you
+gain is in the fact that you are almost at the top.  You are now very high up
+in the air and one misstep could send you tumbling toward the sharp spikes
+right below you.  As you get closer, you notice large birds flying in a
+circular formation right above the palace, unbothered by the fierce winds.
+You have come this far and the palace is so close.  ONWARD!
+~
+0 393218 1
+Rd     0
+D4
+~
+~
+0 0 1
+D5
+~
+~
+0 0 32003
+S
+#32006
+Corridor of the Four Winds~
+~
+~
+You stand in a circular room with exits on all sides.  As you stand here, you
+can feel the winds picking up once more and blasting you from all directions.
+Paints on the floor of this room is a colossal image of a compass pointing in
+all the cardinal directions.  The main directions, east, north, south and
+west all have a soft golden glow.  The arrow pointing north is especially
+is painted with exceptional detail and design and glows more brightly than
+the other directions.  Looking in all directions, you see long hallways.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 32007
+D2
+~
+~
+0 0 32012
+D3
+~
+~
+0 0 32013
+S
+#32007
+Passage of the North Wind~
+~
+~
+Stepping into the northern hallway, you feel a gust pushing you forward, 
+allowing you to expend much less energy walking than before.  Ahead of you,
+the hall continues for awhile.  Looking to either side of you, and past the
+walls of air, you can see a magnificent view of the outside.  On both sides,
+the horizon extends far into the distance and you can see the rolling hillsides
+of this continent.  A weak mist has started to form and appears to originate
+from the north.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 32008
+D2
+~
+~
+0 0 32006
+S
+#32008
+Passage of the North Wind~
+~
+~
+With each step, the wind seems to blow a little harder, pushing you forward a
+little more.  You sense it would be quite difficult to go back the way you
+came with such a windforce.  As you peer upwards, you see that the birds you
+saw from a distance are now directly overhead and flying in circles.  They do
+not seem to get tired or weary from all that flying.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 32009
+D2
+~
+~
+0 0 32007
+S
+#32009
+Passage of the North Wind~
+~
+~
+Before you stands a mammoth silver door, engraved with strange symbols and odd
+writing.  Two large pillars stand to either side of the door and they have been
+patterned in the shape of ocean waves.  The tops and bottoms of the pillars
+resemble large storm clouds and a single lightning bolt streaks down each of
+the pillars.  Above the door is a large black metal awning, depicting the
+night sky.  Glowing stars have been added to the scene to further enhance the
+image.  From within the door you hear the loud howling of fierce winds.  The
+floor is equally as brilliant as the other decorations in the part of the hall.
+One the floor is glowing painting of the north star, glowing in its eternal
+radiance.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 32010
+D2
+~
+~
+0 0 32008
+S
+#32010
+Chamber of the Night Sky~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 32009
+S
+#32011
+Palace of the Four Winds~
+~
+~
+As you step inside, a heavy gust rushes past you, slamming the double doors
+closed.  Directing your attention upward, the palace appears to lack a roof of
+any kind, but you can see heavy streams of air flowing in a horizontal pattern,
+deflecting anything that might fall toward the palace.  The floor is painted
+with a mural of clouds, the sky and the sun.  Looking for a path to take, you
+notice that there are no solid walls.  In fact, the walls are merely heavy
+columns of air.  Even so, it is almost impossible to get past these walls of
+air.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 32012
+D2
+~
+~
+3 0 1
+S
+#32012
+Path of the South Wind~
+~
+~
+The wind has picked up again but this time it has a definite direction: the
+south.  You feel five pounds heavier as you try to move north.  Large columns
+that do not actually support anything stand along the walls, providing some
+decoration.  To the north you notice a larger room and the beginning of yet
+another hall.
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 32006
+D2
+~
+~
+0 0 32011
+S
+#32013
+The Path of the West Wind~
+~
+~
+You notice the west wind is much calmer and warmer than any of the other winds
+you have encountered thus far.  Paintings of beaches and various vacations spots
+are suspended in mid-air by the walls.  You can hear a soft humming coming
+from the west.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 32006
+D3
+~
+~
+0 0 32014
+S
+#32014
+The Path of the West Wind~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 32015
+D1
+~
+~
+0 0 32013
+S
+#32015
+A Maiden's Chamber~
+~
+~
+As you step into the room, you immediately notice that the walls are no longer
+transparent.  In fact, large blue satin sheets hang magically in the air,
+covering all sides.  Two beds have been placed side by side in the corner of
+the room.  On the eastern wall, a spinning machine sits idly.  The room is
+illuminated by several small glass covered candles, which protects the flame
+from the sudden gushes of wind that occurs so often.  A dresser stands in 
+another corner of the room, half open, exposing several pieces of women's
+clothing.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 32014
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 32000 1 32000
+M 0 32010 1 32010
+M 0 32015 1 32015
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

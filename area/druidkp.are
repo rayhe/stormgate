@@ -1,0 +1,10368 @@
+#AREADATA
+Name        { 100+ } The Druid's Keep~
+Builders    Ahsile~
+VNUMs       4551 4800
+Security    100
+Recall      4642
+Flags       160
+Version     107
+Creator     Ahsile~
+Llevel      0
+Ulevel      0
+Sounds      &BThe sound of unearthly chanting permeates the air.~
+Music       gravyard.mid V=50 L=1 p=50 T=Background~
+End
+
+
+
+#MOBILES
+#4551
+Salin~
+Salin~
+A man sneaks around here in an earthen coloured robe.
+~
+A man of middle age stands before you.  His long grey hair tumbles down
+his back in large curls.  As you look to his face, there seems to be a pain
+or some kind of anguish there.  His brown robes are stained with blood and
+dirt, suggesting he lives out here in the wilderness.  
+~
+69 302096576 90210448 51200 2 -1000 S
+110 1 220 220 25000 30000d0+0 0d0+50
+1100 19 0
+0 0 1
+2050 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+  break
+endif
+if class($n) == 9
+or multi($n) == 9
+    say Vampires?!? Burn with the heat of hell below!
+    mpecho &RThe earth shakes and a crevice opens!
+    c 'meteor swarm' $n
+else
+    mpecho &zSomeone slips into the shadow behind you...
+    voodoo $n
+    smash $n
+    snicker
+    say Time to die, little one.
+    dbs $n
+    if position($n) == 8
+    or position($n) == 4
+    or position($n) == 5
+    or position($n) == 3
+          mpkill $n
+    endif
+endif
+c entangle $n
+~
+>fight_prog 30~
+mpoload 4551
+quaff gift
+say We'll meet again!
+mpecho &zSalin fades into the shadows.
+retreat
+~
+>rand_prog 20~
+if isfollow($n) == 1
+break
+endif
+if isnpc($n) == 1
+  break
+endif
+if class($n) == 9
+or multi($n) == 9
+    say Vampires?!? Burn with the heat of hell below!
+    mpecho &RThe earth shakes and a crevice opens!
+    c 'meteor swarm' $n
+else
+    mpecho &zSomeone slips into the shadow behind you...
+    voodoo $n
+    smash $n
+    snicker
+    say Time to die, little one.
+    dbs $n
+    if position($n) == 8
+    or position($n) == 4
+    or position($n) == 5
+    or position($n) == 3
+          mpkill $n
+    endif
+endif
+c entangle $n
+~
+>fight_prog 10~
+mpoload 4554
+Salin pulls a scroll out from under his robes!
+recite scroll $n
+~
+>rand_prog 5~
+peer
+mpecho &zSalin pulls a skull from under his robes.
+say They'll never catch us, Zilfa, will they?
+cackle
+mpecho &zSalin replaces the skull to a pocket in his robe.
+~
+>rand_prog 2~
+sniff
+say ZILFA! Why did you leave me so!
+scream
+~
+>fight_prog 10~
+cackle
+say You can't run from me, $n!
+c sol $n
+~
+>fight_prog 10~
+emote shakes his finger at you.
+say You can't touch me, I am power!
+c conf
+~
+>fight_prog 25~
+say I bet you'll like this one!
+mpecho Salin slips into the shadows...
+circle
+circle
+circle
+~
+>fight_prog 10~
+mpecho &YA voice enters your mind...
+mpecho &RYOU WILL DIE!
+c disrupt $n
+~
+>rand_prog 10~
+mpoload 4556
+quaff gift
+~
+>rand_prog 10~
+mpoload 4551
+quaff gift
+~
+|
+#4552
+stuff~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+1 1 2 2 1 1d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#4553
+grey wolf~
+A Big Grey Wolf~
+A big grey wolf wanders through the forest.
+~
+~
+1 167772160 98320 134217984 0 500 S
+105 1 300 300 0 17500d0+0 0d0+0
+1050 19 0
+0 0 1
+0 0 0
+>fight_prog 25~
+snarl
+claw
+~
+>fight_prog 50~
+growl
+bite
+~
+>fight_prog 75~
+howl
+c 'curse of n
+~
+>fight_prog 95~
+howl
+c 'dispel magic'
+~
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isfollow($n)
+ break
+endif
+if isgood($n)
+ bark
+else
+ bark $n
+ mpkill $n
+endif
+~
+|
+#4554
+tree golden talking oak~
+A Golden Oak~
+&YA large golden oak tree strethes is branches over the altar.
+~
+As you look at the large golden oak in front of you, you see the age old
+scars of time.  The nicks from a man-made weapon of some sort, perhaps a
+neanderthal axe, and the marks of water from floods in years long passed by.
+The oak has stood here through it all watching over the altar of Dolmaar.  
+~
+3 0 32784 0 0 0 S
+110 1 220 220 50000 50000d0+0 0d0+0
+1100 19 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if isfollow($n) == 1
+break
+endif
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+mpecho &WA soft voice permeates your mind.
+say Welcome, $n.
+say Have you come to make a sacrifice to Dolmaar?
+else
+mpecho &RA voice of anger booms from above.
+mpat 4642 mpforce dolmaar mpat $n say $n!
+mpat 4642 mpforce dolmaar mpat $n say You dare defile my sanctuary?
+endif
+~
+>act_prog p sacrifices A glowing tree branch to the gods.~
+if isgood($n)
+beam
+say You have spoken to Dolmaar. Exellent.
+say $n, here is the candle that Dlraxor seeks.
+mpecho A candle appears before your eyes!
+mpoload 4565
+drop candle
+say Give this to him, it will solve his problems.
+else
+mpat $n say I hope you can find a way out of here!
+mpat $n say I told you once not to defile this place.
+mpat $n say I hope you listen next time.
+mpechoaround $n &Y$n disappears into a swirling vortex!
+mpechoat $n &RYou feel dizzy...
+mptrans $n 4800
+mpat $n mpforce $n look
+endif
+~
+>speech_prog key pool~
+if isfollow($n) == 1
+break
+endif
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+mpecho &WA soft voice surrournds you...
+say Ahhhh...you want to look into the pool!
+say Beware the guardian!
+mpoload 4562
+drop bark
+endif
+~
+>speech_prog sacrifice dolmaar~
+if isfollow($n) == 1
+break
+endif
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+mpecho &WA soft voice, not unlike music, enters your mind:
+say I know little of the outside world, but I do know
+say that Dolmaar will reward those pure of heart if they
+say sacrifice gifts to him!
+else
+mpecho &YA disturbed screech permeates your soul!
+say Dolmaar will not accept sacrifices
+say from your kind!
+endif
+~
+|
+#4558
+large owl~
+A Large Owl~
+A large Owl twists its head around to point at you.
+~
+~
+65 167772160 32784 134217728 0 0 S
+105 1 200 200 0 15000d0+0 0d0+0
+1050 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isfollow($n)
+ break
+endif
+say Hoo! Hoo!
+~
+>fight_prog 30~
+emote goes for your eyes!
+rake
+~
+>fight_prog 60~
+say Hoooooooooooooooooooot! 
+c 'dispel magic'
+~
+>fight_prog 90~
+emote points a wing to the sky...
+say Hoot! Hoot! Hooooooot!
+c 'thunder strike'
+~
+|
+#4565
+angel might~
+The angel of might~
+A large angel floats here in the middle of the room...waiting for its orders.
+~
+A sexless creature, but surrounded by beauty nonetheless.  Its two large
+wings protude from the small of its back and arch out creating a heavenly
+structure.  It floats silently...  Waiting for the command of the one who
+summoned it.  
+~
+524291 8384 21004432 134217728 2 1000 S
+120 1 500 500 0 40000d0+0 0d0+0
+1200 19 0
+0 0 0
+2 0 0
+>fight_prog 20~
+mpecho &WThe angel bends the light in the room!
+c bend
+~
+>fight_prog 20~
+say STOP!
+stun
+~
+>hitprcnt_prog 50~
+say Dolmaar, aid me in my time of need!
+c wrath
+~
+>fight_prog 20~
+say Dolmaar, strip the magic from this one!
+c 'dispel mag'
+~
+>death_prog ~
+say I have served my purpose!
+say Dolmaar, accept my sacrifice for you!
+~
+|
+#4566
+leopard large cat~
+A leopard~
+A leopard sits upon a rock basking in the suns rays.
+~
+~
+35 65728 17334320 134250496 0 200 S
+105 1 300 500 0 25000d0+0 0d0+0
+200 15 0
+0 0 0
+2 0 0
+>all_greet_prog 100~
+roar
+say To gaze into the pool, you must defeate me!
+mpecho&Y The leopard gets into an attack stance...
+c 'gas breath'
+~
+>fight_prog 20~
+par
+mpecho &YThe leopard tries to hamstring you!
+~
+>fight_prog 40~
+say I like the taste of mortal flesh!
+bite
+bite
+~
+>fight_prog 30~
+mpecho The leopard goes for your throat!!!
+slit $n
+~
+>fight_prog 20~
+say Dolmaar, help this spirit of nature protect thee!
+c thunderstrike $n
+~
+|
+#4575
+large white deer~
+&WA Large White Deer~
+A large white deer bounds around the forest effortlessly.
+~
+~
+1 167772288 16810000 24576 0 500 S
+110 1 300 300 0 20000d0+0 0d0+0
+1100 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isfollow($n)
+ break
+endif
+emote bounds around the forest avoiding you!
+~
+>fight_prog 30~
+emote turns around to kick you!
+bk
+~
+>fight_prog 60~
+emote wiggles its nose!
+c 'dispel mag'
+~
+>fight_prog 90~
+emote leaps high and lands on the ground with a shake!
+c earthblast
+~
+|
+#4576
+kayama merchant~
+Kayama the Merchant~
+Kayama the Merchant has his wares spread out across a table.
+~
+A man, as far as you can tell, sits behind his table selling goods.  His
+teeth look as though they have all rotted out and have been replaced with
+gold.  His face looks old and weathered, but his hands look as though he
+were young.  In his eyes, there seems to be something not quite right... 
+~
+3 134217856 32784 134225920 0 0 S
+110 1 220 220 0 100000d0+0 0d0+0
+0 19 0
+0 0 1
+0 0 0
+>all_greet_prog 30~
+say Hello, $n!
+say You look like the adventuring type...
+emote looks around...
+say I hear there is a treasure beneath the Druid's statue.
+say I wish I could get it.
+~
+>speech_prog treasure lockpick~
+say You want to go after the treasure, eh?
+say I hear there's a secret entrance.
+say I don't have the key, but I do have a
+say WONDERFUL, STUPENDOUS, GUARUNTEED
+say TO WORK OR YOUR MONEY BACK LOCKPICK!
+say For only 1,000,000 coins.
+emote holds out his hand, ready for payment.
+~
+>bribe_prog 1000000~
+say Thank you, $n!
+say Let me just find that lockpick...
+mpoload 4577
+emote rustles through his pack for a few moments.
+give lock $n
+say There you go!
+~
+|
+#4588
+Gratch short tailed gars~
+Gratch~
+A short tailed Gars eats a deer noisily.
+~
+This ugly beast seems oblivious to you as it eats.  It is covered with
+flies that are biting at your neck and other exposed areas.  Its eye glow a
+pale green colour as it growls softly.  
+~
+35 168338144 16810160 0 0 0 S
+115 1 220 220 0 25000d0+0 0d0+0
+0 19 0
+0 0 1
+0 0 0
+>fight_prog 30~
+emote picks you up and drops you!
+slam
+~
+>fight_prog 50~
+emote calls its blood flies to attack you!
+c 'summon swarm'
+~
+>fight_prog 75~
+emote mumbles nearly incomrehensibly...'dispel!'
+c 'dispel magic
+~
+>fight_prog 95~
+roar
+c demonf
+~
+|
+#4589
+Alkar Druid~
+Alkar~
+A tall druid sits upon a stone, guarding the keep.
+~
+You begin to look the tall druid up and down, noting his every feature. 
+His hair is brown, but when you look to his eyes you see that he is
+timeless.  The fabled longevity of the druids, as you now know, is true.  He
+strokes a large oaken staff in his one hand, and his other is never far away
+from the longsword on his belt.  
+~
+3 17326272 17072304 16384 0 1000 S
+135 1 270 270 30000 35000d0+0 0d0+0
+1350 19 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isfollow($n) == 1
+break
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+say Welcome, $n!
+say I hope you have not come to pay homage to Dolmaar.
+say We cannot open the gates while Salin is running loose.
+say Although, if you can give me proof of his demise,
+say I might be able let you in...
+else
+frown $n
+say Why do you defile this sacred ground, $n?
+shake
+say You know I cannot open the gates for you...
+endif
+endif
+~
+>give_prog "all"~
+if number($o) == 4555
+say The Skull of St. Zilfa!
+mpecho Alkar slips the skull under his robes.
+mpjunk skull
+say You have slain Salin then?
+say It is safe to enter!
+mpoload 4589
+unlock north
+open north
+mpjunk key
+break
+endif
+if number($o) == 4576
+say The Skull of St. Zilfa!
+mpecho Alkar slips the skull under his robes.
+mpjunk skull
+say You have slain Salin then?
+say It is safe to enter!
+mpoload 4589
+unlock north
+open north
+mpjunk key
+break
+endif
+mpecho Alkar looks carefully at the $o for a few seconds.
+give $o $n
+say Why do you give these things to me?
+~
+>death_prog 100~
+say You may have beaten me, $n...
+say But you pay for your actions...
+mpecho &YAlkar calls force the will of Dolmaar!
+mpmload 4590
+mpforce spirit c wrath $n
+mpecho &YThe spirit fades away...
+mppurge spirit
+mpjunk fist
+mpjunk robe
+~
+>fight_prog 20~
+mpecho &RAlkar calls upon the wrath of Dolmaar...
+c curse
+~
+>fight_prog 10~
+say Dolmaar! Strip the magic from this unforgiving soul!
+c 'dispel magic'
+~
+>fight_prog 20~
+mpechoat $n &WWhite flames scorch your body!
+mpechoaround $n &WWhite flames surround $n's body!
+c 'holy fires'
+~
+>fight_prog 10~
+say You think the Druids are weak?
+laugh
+punch
+punch
+punch
+~
+>fight_prog 25~
+cackle
+say Why do you think I am the door guard?
+emote picks you up and drops you!
+slam
+~
+>rand_prog 5~
+mpecho &zAlkar gets down upon his knees and begins to whisper...
+pray
+~
+>fight_prog 10~
+say Dolmaar! Curse $n for this violence is unheeded!
+c 'curse of nature
+~
+|
+#4590
+spirit~
+The Spirit of Dolmaar~
+A translucent spirit floats here.
+~
+~
+3 1048704 0 0 0 1000 S
+110 1 220 220 30000 30000d0+0 0d0+0
+1100 19 0
+0 0 0
+0 0 0
+#4591
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#4592
+blah~
+(no short description)~
+&z
+~
+~
+1 0 0 0 0 0 S
+109 1 218 218 0 0d0+0 0d0+0
+1090 19 0
+0 0 0
+0 0 0
+#4595
+druid guard~
+A Druid Guard~
+A large female Druid stands at the entrance to the Halls.
+~
+She is dressed in the earthen brown robes that all of the other druids
+seem to be wearing too.  Her long blond hair flows over her shoulders and
+gathers in the middle of her back.  A large sword is strapped to her belt
+and looks like it is fitted to be drawn very quickly if the need arises...  
+~
+3 167772160 32768 0 0 1000 S
+105 1 210 210 22000 22000d0+0 0d0+105000
+1050 19 0
+0 0 2
+0 0 0
+#4597
+druid guard male~
+A Druid Guard~
+A large male Druid stands at the entrace to the Halls.
+~
+This large man looks as if he stands just under seven feet tall.  Come to
+think of it, you have noticed that most of these druids have been at least
+six feet in height or taller.  Like most of his fellow druids, he wears the
+earthen brown robes about his body.  On his back he wears a massive
+two-handed sword, although it looks as if he could wield it with one.  
+~
+3 167772160 32768 0 0 1000 S
+105 1 210 210 0 22000d0+0 0d0+105000
+1050 19 0
+0 0 1
+0 0 0
+#4606
+khalan female druid~
+Khalan~
+A female druid stand oblivious to her surroundings.
+~
+~
+3 192 32768 1207984128 0 1000 S
+110 1 100 100 0 25000d0+0 0d0+0
+1100 19 0
+0 0 2
+120 0 0
+>rand_prog 5~
+Say Have you noticed the graffiti around the Keep lately?  
+Say Just today I saw something in the western stairwell!
+Say And last week I found words carved into the windowsill
+Say in the entrance!
+~
+>fight_prog 20~
+say Inflict suffering upon this mortal, Dolmaar!
+c curse
+~
+>fight_prog 20~
+say May you be useless in battle!
+c conf
+~
+>fight_prog 20~
+say Your defense will crumble!
+c 'dispel magic'
+~
+>fight_prog 30~
+say Lest your constitution fail you!
+c danc
+~
+>rand_prog 5~
+mpecho &bKhalan adjusts a charm on her neck.
+mpoload 4607
+wear all
+cloak
+~
+>death_prog 100~
+mpjunk all
+mpoload 4608
+~
+>speech_prog p keeping to himself in that office.~
+say And those guards he has! I can't believe they
+say call themselves Druids! Nasty fellows they are.
+~
+>speech_prog p I've discovered the secret of resisting all types of magic!~
+mpecho Khalan takes in what Richard just said...
+say That's extrordinary! I myself have discovered a way
+say to resist physical damage!
+~
+>speech_prog p druid~
+say Actually, the Druids are a wonderful thing.
+say We were originally conceived by a man named Grafph
+say over three thousand years ago! Some even
+say say that Grafph was the physical embodiment of
+say of Dolmaar...
+~
+>speech_prog p Khalan will tell you what you can do.~
+if isnpc($n)
+say Find Dlraxor. His office is upstairs.
+say He will set you about a task to complete.
+say You will bring good to the druids once more!
+endif
+~
+>rand_prog 5~
+cloak
+~
+|
+#4607
+richard male druid~
+Richard~
+A large male druid stands talking in the middle of the hallway.
+~
+~
+3 167772288 83984416 0 0 1000 S
+110 1 300 300 0 25000d0+0 0d0+0
+1100 19 0
+0 0 1
+55172 0 0
+>rand_prog 5~
+say I've figured out a wonderful thing!
+say I've discovered the secret of resisting all types of magic!
+~
+>fight_prog 20~
+slam
+say I can still beat you even without my magic!
+~
+>fight_prog 20~
+stun
+say Be stilled, with the power of Dolmaar!
+~
+>fight_prog 30~
+souls
+say May my soul be stronger than yours!
+~
+>rand_prog 5~
+mpoload 4606
+mpecho &RRichard plays with a bracelet on his wrist
+wear all
+cloak
+~
+>death_prog 100~
+mpjunk all
+mpoload 4609
+~
+>speech_prog dlraxor~
+say Dlraxor...well, he used to be a wonderful leader.
+say As of late he has been rather strange. Always
+say keeping to himself in that office.
+~
+>speech_prog p in the entrance!~
+mpecho Richard looks shocked
+say Why just the other day I was out speaking to Alkar,
+say and what did I see? There was something carved on the
+say rock that he sits on. It's sinful I tell you!
+~
+>speech_prog p of Dolmaar...~
+mpecho &YKhalan drones on about the Druids for some time.
+mpecho &YEventually she stops for a second and Richard picks up...
+say The Druids are a group of people who thirst for
+say knowledge, and uphold truth and honour.
+say We are a very noble bunch of people. As of late
+say our values seem to have been a little corrupted!
+say Druids have been working in dark magic
+say and saying it is in the pursuit of knowledge.
+say It is perverse, I tell you!
+mpecho &WRichard continues to talk...
+mpecho &WBut you believe you have heard the important information.
+~
+>speech_prog p help~
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+say You want to help, $n!
+say That is wonderful!!!
+say Khalan will tell you what you can do.
+else
+say I have been too busy to notice your evil
+say intentions! You will pay for making us
+say tell you of the Druids!
+mpforce Khalan c 'unholy curse' $n
+mpkill $n
+c ent $n
+endif
+~
+>fight_prog 30~
+slit
+~
+>rand_prog 5~
+cloak
+~
+|
+#4613
+head maid servant~
+The head maid~
+The head maid has cornered a servant and is yelling at her!
+~
+~
+3 34078912 83984528 1073875200 0 -1000 S
+120 1 300 300 0 25000d0+0 0d0+0
+1200 19 0
+0 0 2
+2 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+ break
+endif
+if isfollow($n) == 1
+ break
+endif
+if isgood($n) == 1
+ grumble
+ say What do you want? Can't you see I'm busy!
+ say These servants are always dilly dallying!
+ break
+else
+ peer
+ emote motions you to come closer.
+ say I have information for you.
+ say Our queen has chosen you to assist her escape.
+endif
+~
+>speech_prog queen Ahaseurous~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say Ahaseurous, of course!
+ emote looks around sheepishly...
+ say I have work to do. Leave me be!
+ break
+endif
+say Are you that stupid that you don't know Ahaseurous' name?
+say Why would she want your help then.
+shake
+~
+>speech_prog assist help~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ break
+endif
+say You must get to the catacombs to get more information...
+say In order to do that, you will need to find someone that
+say is not aligned with us...and fool that Druid Dlraxor
+say into letting you down. I don't care if you have to murder
+say your companion after you get down there. Just do it.
+~
+>fight_prog 15~
+say Let's see how well you fight now!
+slit
+slit
+slit
+~
+>fight_prog 30~
+say You shall be inflicted!
+c tomb
+~
+>fight_prog 45~
+say Be inflicted!
+c curse
+~
+>fight_prog 60~
+mpechoat $n &YYou feel a slight tug at your magical energies...
+mpechoaround $n &RYou see the magical auras around $n fade slightly...
+c 'dispel magic
+~
+>fight_prog 75~
+laugh
+say You fool! Ha ha ha!
+c demonf
+~
+>death_prog 100~
+mppurge claw
+if isgood($n)
+  say Ahaseurous cannot be beaten!
+else
+  say Did she send you to slay me? But why...
+endif
+~
+|
+#4616
+janitor old~
+A janitor~
+An old janitor sweeps the floor slowly, but steadily.
+~
+~
+3 128 32816 134217728 0 500 S
+109 1 200 200 0 18000d0+0 0d0+0
+1090 19 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isfollow($n)
+ break
+endif
+if isgood($n)
+ beam $n
+ say Why hello, $n.
+ say How are you today? I'm good. I'm good.
+ say You want to know about the scraping noised at the
+ say top of the towers too? Everyone wants to know now.
+ shrug
+else
+ spit $n
+ say Why do you pollute these halls, $n.
+ say It was your people who aroused her...
+ say They're the reason this staircase fell.
+ say I'll have nothing to do with you!
+ spit $n
+endif
+~
+>speech_prog tower~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say Well, it's rumoured that there are two large dragons
+ say living in the top of the towers here. They were
+ say sealed away long ago by, at that time, the Guardian.
+else
+ say Go away you wretched piece of stinking meat.
+ spit $n
+ say Now I just have more to clean up!
+endif
+~
+>speech_prog dragons dragon~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say I don't know much about them...I've heard that there
+ say is a light dragon and a dark dragon. The only other
+ say rumour I've heard is their names. Dynaheir and Minsc.
+ say Don't ask which is which, cuz I don't know!
+ shrug
+ say I don't know how to get in either. I only heard something
+ say about there being a lot of shadows up there! Don't
+ say know what that means though...
+else
+ say Your scent makes me want to wretch, $n!
+ spit $n
+ say Now go before I have to clean up vomit!
+endif
+~
+>speech_prog druids druid~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ emote leans on his broom for a moment, and begins to reflect...
+ say The Druids are an ancient group of people. Originally they
+ say started off as people just wanting to learn. Soon afterwards
+ say their quest for knowledge led them to helping people and to
+ say a greater sense of an organization. The only two full roles
+ say are Ancient One and Guardian. The Druids took my family in
+ say generations ago. We help them with their work, and they
+ say provide us with food, shelter, and safety!
+ peer
+ say I've blabbed enough. I should get back to work.
+else
+ cough
+ say I didn't hear anything, Winston, how about you?
+ emote looks to his mop as if it will answer him.
+endif
+~
+>speech_prog guardian~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say I don't know much about the Guardian...
+ say Well, I know his name is Dlraxor and he can
+ say make big decisions, but other than that the
+ say organization of the Druids is a mystery to me.
+ shrug
+ say Dlraxor is on the second floor. He doesn't take
+ say many visitors these days.
+else
+ emote continues mopping slowly.
+endif
+~
+>speech_prog p ancient one~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say Don't know much about him.
+ say He's supposed to be the teacher of the acolytes
+ say around here. As of late he's been sleeping in
+ say the gardens a whole lot.
+ shrug
+else
+ say Didn't I tell you to leave, $n?
+endif
+~
+>fight_prog 2~
+say I served you good, didn't I Dolmaar?
+mpecho &YA glowing spirit appears!
+mpmload 4590
+mpforce spirit c wrath $n
+mpecho &WThe spirit fades away...
+mppurge spirit
+~
+>fight_prog 26~
+emote does a fancy move with his broom!
+disarm
+~
+>fight_prog 50~
+emote screams loudly!
+shriek
+~
+>fight_prog 75~
+say Let's make this even fighting!
+c 'dispel mag'
+~
+|
+#4619
+servant busy~
+a busy servant~
+A servant runs around, busy with her work.
+~
+~
+1 128 16810032 0 0 0 S
+110 1 200 200 0 19000d0+0 0d0+0
+1100 19 0
+0 0 2
+0 0 0
+>rand_prog 5~
+emote wipes the sweat off her brow
+say These Druids, always wanting more.
+say I know they do the work of Dolmaar, but do they need to be so demanding?
+~
+>act_prog ~
+~
+>fight_prog 25~
+say Oh my god! Dolmaar, help me!
+c danc
+~
+>fight_prog 50~
+say They taught me self defense!
+slam
+~
+>fight_prog 75~
+emote screams loudly
+c 'sonic boom'
+~
+|
+#4636
+Ancient One~
+The Ancient~
+An aged druid sits on a chair, staring into the garden.
+~
+~
+3 235405504 16810000 24576 0 1000 S
+130 1 400 400 0 35000d0+0 0d0+0
+1300 19 0
+0 0 1
+0 0 0
+>all_greet_prog 75~
+if isnpc($n)
+ break
+endif
+if isfollow($n)
+ break
+endif
+snore
+say Oh, oh! Hello.
+say I must have dozed off...I'm getting old. Over five hundred years!
+say Actually, I bet it was these damn flowers!
+say Or maybe even the acolytes...I need someone else to teach them youngins.
+~
+>speech_prog flower~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say A flower, eh?
+ think
+ say Oh, I have a nice golden flower!
+ say I need some holy water though...
+ emote starts rambling nonsense.
+else
+ say Leave my presence, or I will smite thee.
+ say You should leave this place entirely, $n.
+endif
+~
+>give_prog holy water holywater flask~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ if number($o) == 4696
+  say Exellent.
+  emote puts the Holy Water beneath his cloak.
+  mppurge holy
+  emote plucks a flower from behind his ear.
+  mpoload 4636
+  give flower $n
+  say There you go, $n!
+  break
+ endif
+else
+ if number($o) == 4696
+   say You defile the holy water of Dolmaar!
+   say Die, you wretched scum!
+   emote calls upon the power of Dolmaar!
+   c ent $n
+   break
+endif
+mpjunk all
+~
+>fight_prog 15~
+laugh
+say You fool, I am the ancient one!
+shriek
+~
+>fight_prog 30~
+emote says a quick prayer...
+say ...be dazzled!
+c danc
+~
+>fight_prog 50~
+say Inflict a mighty curse, oh Dolmaar!
+c curse
+~
+>fight_prog 65~
+say Be scorched by the power of Dolmaar!
+c sunb
+~
+>fight_prog 80~
+say Be chilled with the icy stare of Dolmaar!
+c wint
+~
+>fight_prog 90~
+say Magic, fizzle and leave!
+c 'dispel mag'
+~
+>speech_prog teach acolytes~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say Well...I'll need to make sure you're worthy to teach...
+ say Fetch me an ivy leaf, and I'll give you a deal.
+ say 100,000 coins for a teaching license!
+else
+ say Hrmmm...I don't know if I should let you teach $n.
+ say I guess you probably know a lot though.
+ say Fetch me an ivy leaf, and I'll give you a deal.
+ say 100,000 coins for a teaching license!
+endif
+~
+>give_prog ivy leaf~
+if isnpc($n)
+ break
+endif
+if number($o) == 4586
+else
+ break
+endif
+if goldamt($n) > 99999
+ mpforce $n drop 100000 coins
+ mppurge coins
+ mpecho &GThe Ancient gets some gold coins.
+ mpmload 4637
+ say Say hi to your new student.
+ break
+else
+ say You don't have enough for a license!
+ give ivy $n
+ break
+endif
+~
+>give_prog "all"~
+if ispc($n)
+ if isgood($n)
+  say I don't need this, $n
+  give $o $n
+ else
+  say I don't want your gifts, $n
+ endif
+endif
+~
+|
+#4637
+acolyte druid~
+An Acolyte Druid~
+An acolyte druid intently follows somone around...
+~
+~
+3 17301632 32784 0 1 1000 S
+120 1 240 240 0 1d0+0 0d0+0
+0 19 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ break
+endif
+say I am in need of a teacher, and in thanks I will offer my services!
+say Just say 'I will teach you' and I will follow.
+~
+>speech_prog p I will teach you~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ say I already have a teacher!
+ break
+endif
+say Ok, I will follow you!
+follow $n
+say Say HELP or COMMANDS and I will show you what I can do.
+~
+>fight_prog 10~
+mpecho &YThe acolyte runs away screaming like a girl!
+mpgoto 4800
+mppurge self
+~
+>speech_prog p stay~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ follow self
+endif
+~
+>speech_prog p west~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ west
+endif
+~
+>speech_prog p east~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ east
+endif
+~
+>speech_prog p north~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ north
+endif
+~
+>speech_prog p south~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ south
+endif
+~
+>speech_prog p up~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ up
+endif
+~
+>speech_prog p down~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ down
+endif
+~
+>speech_prog p flee~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ flee
+ flee
+ flee
+endif
+~
+>speech_prog commands command com help~
+if isfight($n)
+ break
+endif
+if ispc($n)
+ mpechoat $n &W*****************************************************
+ mpechoat $n &W*  &YCommands  &W*    &YSpells      &W*  &YCost     &W* &Ykeyword &W*
+ mpechoat $n &W*****************************************************
+ mpechoat $n &W*   &CNorth    &W* &RHealing Hands  &W* &R100,000   &W* &RHeal    &W*
+ mpechoat $n &W*   &CEast     &W* &RCure Blindness &W* &R20,000    &W* &RCblind  &W*
+ mpechoat $n &W*   &CSouth    &W* &RRemove Curse   &W* &R50,000    &W* &RRcurse  &W*
+ mpechoat $n &W*   &CWest     &W* &RMana           &W* &R10,000    &W* &RMana    &W*
+ mpechoat $n &W*   &CUp       &W* &R3 Mana's       &W* &R30,000    &W* &R3mana   &W*
+ mpechoat $n &W*   &CDown     &W* &RCure Poison    &W* &R20,000    &W* &RCpoison &W*
+ mpechoat $n &W*   &CStay     &W* &RResurrection   &W* &R1,000,000 &W* &RResur   &W*
+ mpechoat $n &W*   &CFlee     &W* &G(GOOD ONLY)    &W*           *         *
+ mpechoat $n &W*   &CHelp     &W*                *           *         *
+ mpechoat $n &W*   &CCommands &W*                *           *         *
+ mpechoat $n &W*****************************************************
+endif
+~
+>speech_prog p heal~
+if isnpc($n)
+ break
+endif
+if isfight($n)
+ break
+endif
+if goldamt($n) > 9999
+ mpforce $n drop 10000 coins
+ mppurge coins
+ mpecho &GAn Acolyte Druid gets some gold coins.
+ say Dolmaar, heal this wretch!
+ c 'healing hands' $n
+else
+ say I need the cash!
+endif
+~
+>speech_prog p cblind~
+if isnpc($n)
+ break
+endif
+if isfight($n)
+ break
+endif
+if goldamt($n) > 19999
+ mpforce $n drop 20000 coins
+ mppurge coins
+ mpecho &GAn Acolyte Druid gets some gold coins.
+ mpechoat $n &RThe acolyte smacks his palm onto your forehead!
+ mpechoaround $n &RThe acolyte smacks $n's forehead
+ say See again! Heh. I performed a miracle.
+ c 'cure blind' $n
+else
+ say You're not blind enough to fool me!
+endif
+~
+>speech_prog p rcurse~
+if isnpc($n)
+ break
+endif
+if isfight($n)
+ break
+endif
+if goldamt($n) > 49999
+ mpforce $n drop 50000 coins
+ mppurge coins
+ mpecho &GAn Acolyte Druid gets some gold coins.
+ say Be clean!
+ c 'remove curse' $n
+else
+ say You can stay cursed for all I care.
+endif
+~
+>speech_prog p mana~
+if isnpc($n)
+ break
+endif
+if isfight($n)
+ break
+endif
+if goldamt($n) > 9
+ mpforce $n drop 10 coins
+ mppurge coins
+ mpecho &GAn Acolyte Druid gets some gold coins.
+ say Shabam!
+ c 'mana' $n
+else
+ say Hah! You broke fool!
+endif
+~
+>speech_prog p 3mana~
+if isnpc($n)
+ break
+endif
+if isfight($n)
+ break
+endif
+if goldamt($n) > 29
+ mpforce $n drop 30 coins
+ mppurge coins
+ mpecho &GAn Acolyte Druid gets some gold coins.
+ say Here's some instant pep!
+ c 'mana' $n
+ c 'mana' $n
+ c 'mana' $n
+else
+ say You wish, fool.
+endif
+~
+>speech_prog p cpoison~
+if isnpc($n)
+ break
+endif
+if isfight($n)
+ break
+endif
+if goldamt($n) > 19999
+ mpforce $n drop 20000 coins
+ mppurge coins
+ mpecho &GAn Acolyte Druid gets some gold coins.
+ say I will cleanse thee.
+ c 'cure p' $n
+else
+ say I would let it kill you before I cured you for free!
+endif
+~
+>speech_prog p resur~
+if isnpc($n)
+ break
+endif
+if isfight($n)
+ break
+endif
+if isgood($n)
+else
+ break
+endif
+if goldamt($n) > 999999
+ mpforce $n drop 1000000 coins
+ mppurge coins
+ mpecho &GAn Acolyte Druid gets some gold coins.
+ say Be flesh!
+ c 'resurr' $n
+else
+ say Haha! Look at the dumb ghost!
+endif
+~
+>speech_prog p hi~
+if isnpc($n)
+ break
+endif
+if isfollow($i)
+ break
+endif
+say I am in need of a teacher, and in thanks I will offer my services!
+say Just say 'I will teach you' and I will follow.
+~
+|
+#4639
+druid wandering~
+A Wandering Druid~
+A druid wanders the garden randomly while reading a book
+~
+~
+1 34078848 16810000 1073760512 0 1000 S
+120 1 300 300 0 30000d0+0 0d0+0
+1200 19 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+say Hello, $n. Nice day, isn't it?
+break
+endif
+say You shall suffer the wrath of Dolmaar, $n!
+c sunb $n
+~
+>fight_prog 20~
+say Dolmaar, aid me!
+c curse
+~
+>fight_prog 40~
+say Magic....BE GONE!
+c 'dispel magic'
+~
+>fight_prog 60~
+say May the knowledge of the Druids flee your mind!
+c conf
+~
+>fight_prog 80~
+c sunb
+laugh
+~
+>fight_prog 95~
+shiver
+c winters
+~
+|
+#4642
+oracle dolmaar statue~
+The Oracle of Dolmaar~
+The famed Oracle of Dolmaar stands here.
+~
+A large statue of the purest white marble stands here solitary.  It gives
+off a radient glow and looks as if it could move on its own accord, but it
+is just a statue...  Right?  
+~
+2097163 251658368 98320 24576 1 1000 S
+150 1 2000 2000 100000 100000d0+0 0d0+0
+0 19 0
+0 0 0
+0 0 0
+>fight_prog 50~
+mpoload 4551
+quaff gift
+mpecho &YYOU DARE ATTACK ME!
+mpecho &WI am the personification of Dolmaar!
+c ult
+~
+>speech_prog sacrifice~
+mpechoaround $n &W$n's body is filled with a glowing aura of power.
+if isgood($n)
+mpechoat $n &WAh, you wish to make a sacrifice to me young $n.
+mpechoat $n &WI shall give you this tree branch. Take it to my sanctuary.
+mpechoat &W$n Sacrifice it there, the oak knows what to do.
+mpoload 4642
+give branch $n
+else
+mpechoat $n &YYou have potential for good, $n. I can see it in you.
+mpechoat $n &YCome back when you have done a good deed.
+mpechoat $n &YTo another day, $n. I hope to see you back.
+endif
+~
+>act_prog p sacrifices A ruby ring to the gods.~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ smile
+ say Exellent, $n. You are well on your way to
+ say creating my fabled ring. It is not full of
+ say power with Ahaseurous still in power though.
+ think
+ say Slay her, and bathe this in her blood and it
+ say will shine with the light of the sun!
+ mpoload 4654
+ give ring $n
+else
+ mpat $n say I hope you can find a way out of here!
+ mpat $n say You have defiled my sanctuary.
+ mpechoaround $n $n disappears into a swirling vortex!
+ mpechoat $n You feel dizzy...
+ mptrans $n 4800
+ mpat $n mpforce $n look
+endif
+~
+|
+#4652
+silent wraith~
+A Silent Wraith~
+A silent figure stalks through the halls, shimmering in and out of sight
+~
+~
+33 135266496 18874384 1073744128 0 -500 S
+110 1 200 200 0 20000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+#4655
+Wolf~
+a wolf~
+A wolf snarls savagely as you pass by
+~
+~
+35 100663424 16810032 0 0 500 S
+110 1 500 300 0 3000d0+0 0d0+0
+0 19 0
+0 0 0
+0 0 0
+>fight_prog 50~
+snarl
+bite
+~
+>fight_prog 75~
+rescue wolf
+~
+>fight_prog 95~
+rescue first
+~
+|
+#4657
+guard second druid~
+The Second Guard~
+A guard sits with his sword in his hand, ready to battle evil.
+~
+~
+3 167772352 557072 134242304 0 1000 S
+130 1 260 260 0 30000d0+0 0d0+0
+1300 19 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+say Good day, $n. You wish to pass, do you?
+say I need a sign of your worthiness...bring a flower from the garden, a golden one.
+else
+say The stench of evil permeates from you, $n!
+say Let me cleanse you with fire!
+c sunb $n
+endif
+~
+>give_prog "all"~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ if number($o) == 4636
+  say You have done well, and passed the second test.
+  say You may proceed.
+  mpoload 4660
+  unlock north
+  open north
+  emote motions you forward.
+ else
+  say Thank you.
+  mppurge $o
+else
+ say You will get nowhere, $n.
+endif
+mpjunk all
+~
+>fight_prog 20~
+say You dare attack me?
+c curse
+~
+>fight_prog 40~
+say I am the guard of Dlraxor!
+c 'dispel magic'
+~
+>fight_prog 60~
+say I learned this one in secret!
+if hitprcnt($i) > 50
+ c ult
+else
+ c sunb
+endif
+~
+>fight_prog 80~
+say You fool!
+c disrupt
+~
+|
+#4658
+guard druid first~
+The First Guard~
+The First Guard leans against the door frame
+~
+~
+3 167772288 16810032 24576 0 1000 S
+115 1 300 300 0 27500d0+0 0d0+0
+1150 19 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say Welcome, $n.
+else
+ say I will never open the doors for the likes of you, $n!
+endif
+~
+>speech_prog hello open hi help~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say Let us test your strength, $n.
+ say Let us rumble.
+ say Then, the doors may open for you!
+else
+ say You wish, $n. I will tear you limb from limb.
+endif
+~
+>death_prog 100~
+if isgood($n)
+ say Exellent!
+ mpoload 4657
+ unlock north
+ open north
+ mpjunk key
+else
+ mpjunk all
+endif
+~
+>rand_prog 3~
+rage
+~
+>rand_prog 4~
+weaponm
+~
+>fight_prog 25~
+laugh
+say You are doing well!
+slam
+~
+>fight_prog 40~
+mpmload 4655
+say Fight, my pet!
+mpforce wolf mpkill $n
+~
+>fight_prog 65~
+c danc
+~
+>fight_prog 85~
+c 'dispel mag'
+~
+|
+#4663
+druid guard trigger~
+A Druid Guard~
+A druid guard is killing someone!
+~
+~
+35 168296640 67731472 16384 0 1000 S
+120 1 230 230 1 30000d0+0 0d0+0
+1200 19 0
+0 0 1
+0 0 0
+>hitprcnt_prog 96~
+~
+>hitprcnt_prog 100~
+mpjunk sword
+mpjunk shield
+mpoload 4659
+mpoload 4658
+mpecho &YThe Druid Guard pulls a sword from its scabbard and a shield from his back!
+wear all
+~
+>fight_prog 30~
+say Dolmaar! Let me strip the magic from this evil soul!
+c 'dispel magic'
+~
+>fight_prog 10~
+say Get your filthy weapons away from me!
+stun
+disarm
+disarm
+~
+>fight_prog 20~
+mpecho &OThe Guard says a quick prayer to Dolmaar!
+c 'curse of nature'
+c vines
+~
+>fight_prog 20~
+mpecho &RDrains some of your vital energies away!
+c age
+~
+>fight_prog 10~
+say 'Dolmaar! Hold this criminal in place!'
+c vines
+~
+>fight_prog 25~
+mpecho &GThe Guard takes in a deep breath...
+shriek
+~
+>death_prog 100~
+say Damn! I have to warn Dlraxor!
+mpoload 4662
+unlock north
+open north
+mpjunk key
+mpecho &WThe Guard collapses in front of the door
+mpecho &RBlood spurts from the mouth of the Guard.
+say Now I'm dying and I opened the door for you!
+mpecho &WA voice permeates the are...
+mpecho &CChild, you have done well. Dlraxor is strong.
+mpecho &CCome to Dolmaar, and your spirit will be free.
+~
+|
+#4664
+acolyte druid~
+The acolyte~
+An Acolyte stands at the door making sure Dlraxor is not disturbed.
+~
+~
+3 169345224 32768 0 0 1000 S
+110 1 220 220 20000 30000d0+0 0d0+150000
+1100 19 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+mpoload 4662
+close north
+lock north
+mpjunk all
+if isnpc($n) == 1
+break
+endif
+if inroom($n) == 4666
+south
+mpoload 4662
+close north
+lock north
+mpjunk key
+else
+if isgood($n) == 1
+say Ask me to open the door, and I shall consider it, $n.
+bow $n
+else
+yell $n has come to slay the Guardian, Dlraxor!
+mpoload 4662
+mpecho The acolyte fumbles with the keys!
+unlock north
+open north
+north
+close south
+lock south
+emote cowers in fear!
+mpjunk key
+mpgoto $n
+mpmload 4663
+mpecho &RA guard comes racing frown down the hall at you!
+mpforce guard mpkill $n
+mpgoto 4666
+break
+endif
+endif
+mpgoto 4666
+if isgood($n) == 1
+mpforce dlraxor say $n, you are strong...are you not?
+mpforce dlraxor say If you are up to the challenge, I need your help!
+else
+mpforce dlraxor say Defiler!
+mpforce dlraxor say You are one of Ahaseurus' minions, $n!
+mpforce dlraxor say You can tell your Dark Queen that you were
+mpforce dlraxor say slaughtered by Dlraxor, The Guardian of Dolmaar,
+mpforce dlraxor say when you meet her in HELL!
+mpforce dlraxor mpkill $n
+endif
+mpgoto 4665
+~
+>speech_prog open door~
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+nod $n
+say Just one minute.
+mpecho &wThe acolyte pulls out a ring of keys.
+mpoload 4662
+unlock north
+open north
+emote directs you in.
+else
+laugh $n
+say You wish. Bring it on!!!
+c disrupt $n
+endif
+~
+|
+#4665
+spirit translucent blah~
+A translucent spirit~
+A translucent spirit has risen from the marble...
+~
+~
+3 16777344 32784 0 0 0 S
+110 1 220 220 50000 50000d0+0 0d0+0
+1100 19 0
+0 0 0
+0 0 0
+>rand_prog 95~
+if ispc($r) == 1
+mpechoaround $r &zThe spirit raises its hand an points at $r...
+mpechoaround $r &YA ghostly aura surrounds $r and they disappear!
+mpechoat $r &YThe spirit raises its hand and points to you!
+mpechoat $r &rYou feel like you are going to puke...
+mpechoat $r &WYou look around and notice you aren't in the laboratory anymore!
+mptrans $r 4691
+mpecho &WThe spirits returns to the marble...
+mppurge marb
+mpoload 4664
+close desk
+lock desk
+mppurge self
+endif
+~
+|
+#4666
+Dlraxor druid~
+Dlraxor~
+An aged druid sits at his desk studying a scroll.
+~
+Your eyes fall upon Dlraxor, leader of the druids.  He is known to them
+only as 'The Guardian'.  When you look at his face, he seems troubled.  His
+eyes tell a story that he would rarely speak to anyone.  He looks like a man
+who has committed a grave sin, and would do anything to be able to repent
+for it.  He hardly seems to take notice of you and continues to read over
+his scroll.  
+~
+3 234881256 17662000 24576 0 1000 S
+150 1 300 300 50000 50000d0+0 0d0+135000
+1500 19 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+break
+endif
+if isfollow($n) == 1
+break
+endif
+if isgood($n) == 1
+say $n, you are strong...are you not?
+say If you are up to the challenge, I need your help!
+else
+say Defiler!
+say You are one of Ahaseurus' minions, $n!
+say You can tell your Dark Queen that you were
+say slaughtered by Dlraxor, The Guardian of Dolmaar,
+say when you meet her in HELL!
+mpkill $n
+endif
+~
+>speech_prog yes help~
+if isnpc($n)==1
+break
+endif
+if isgood($n)==1
+say Thank you, $n, for volunteering.
+say I have summoned a vile force from another plane
+say and I could not control it! Its name
+say is Ahasheurus. She is a force of evil beyond
+say mortal comprehention. Only us druids can really
+say know the actual evil she possesses, as we can
+say live several of your lifetimes.
+sigh
+say If you are still willing to help me...
+say I need a candle, but not just any candle!
+say It must be one of the sacred candles from
+say the Altar of Dolmaar.
+say You see, I cannot do this myself because
+say of the shame I have brought upon the Druids.
+else
+say You dare offer help to me!
+say What plan is the Queen of Deceit have for me!
+c ult
+endif
+~
+>speech_prog Ahaseurus~
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+think
+say You ask a deep question, $n.
+say Ahaseurus, the black Queen.
+say She controls the catacombs underneath
+say the keep! She is gathering power
+say even as we speak...and still she
+say is stronger than I am!
+else
+laugh
+say You aren't as strong as your Dark Queen!
+mpkill $n
+endif
+~
+>speech_prog key open door~
+if isnpc($n) == 1
+break
+endif
+if isgood($n) == 1
+say Oh, I'm sorry $n.
+say Just one second. My mind wanders, you know.
+mpoload 4662
+unlock south
+open south
+say There you go.
+mpjunk key
+break
+else
+laugh
+say Go to your Queen! Leave me be.
+endif
+~
+>give_prog "all"~
+if isnpc($n)==1
+break
+endif
+if isgood($n)==1
+if number($o)==4565
+say You have done it, $n! Exellent!
+stare candle
+give candle $n
+say Now, you must invoke it.
+say I cannot for I am tainted.
+endif
+else
+stare $o
+say I must thank you for the $o, $n.
+say But unfortunately you will not be needing this.
+rem all
+wear all
+mptrans $n 4800
+tell $n Thanks for the gift, you ungrateful minion of Ahaseurous!!
+endif
+~
+>act_prog p A candle of summoning spawns The angel of might.~
+say You must kill it, $n. Its blood is the only way
+say that we may be able to get Ahaseurous!
+beg $n
+~
+>act_prog p a candle of summoning sputters and sparks..~
+mpecho &RThe angel flies around the room, free of its prison!
+mppurge angel
+mpmload 4565
+~
+>act_prog p The angel of might is DEAD!!~
+emote collects the blood from the ground in a flask.
+say Give this blood to the demon who guards Ahaseurus.
+say It will let you pass. She will be caught off guard
+say this way...and you may have a chance at destroying her.
+mpecho &zDlraxor pulls a key from his pocket.
+mpoload 4664
+drop key
+say Open the desk and figure out the portal so that
+say you may enter the catacombs.
+mpoload 4661
+drop flask
+~
+>rand_prog 2~
+mpecho &WDlraxor cleans his study quickly
+get all
+~
+|
+#4675
+no name~
+None~
+None
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#4678
+druid librarian~
+Druidic Librarian~
+A librarian sits at a desk examining old books and scrolls.
+~
+~
+3 67108992 84246544 1073760512 0 -200 S
+120 1 300 300 0 25000d0+0 0d0+0
+1200 19 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isfollow($n)
+ break
+endif
+emote mumbles to herself quietly.
+say Scroll!...Powerful...Excellent...
+say She'll love this...
+emote suddenly takes notice of you!
+say What are you doing here?
+say This place is off limits!
+emote looks back to her work.
+~
+>speech_prog queen ahaseurus~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ emote ignores you and continues reading.
+else
+ say You follow her? Wonderful!
+ say Take this note to her for me!
+ say It says I have found something wonderful!
+ mpoload 4675
+ give letter $n
+endif
+~
+>fight_prog 20~
+say You fool! You will not be mentioned in history!
+shriek
+~
+>fight_prog 30~
+emote says a small prayer...
+say Stop the magics of this defiler, my Queen!
+c 'dispel magic'
+~
+>fight_prog 50~
+say Be cursed!
+c curse
+~
+>fight_prog 70~
+say I learned this in secret!
+c demon
+~
+|
+#4690
+druid jared~
+Jared~
+A man sits in tattered robes, covered in filth.
+~
+~
+3 33554560 16810032 134242304 1 1000 S
+120 1 300 300 0 25000d0+0 0d0+0
+1200 19 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isfollow($n)
+ break
+endif
+if isgood($n)
+ say Oh my goodness!
+ say Dolmaar has sent me a saviour!
+ say I've been trapped in here for months, with only the food
+ say and water I can create with my abilities.
+ say In recognition, I will translate any scroll you wish
+ say for a mere 1,000,000 coins!
+else
+ say One of Ahaseurus', eh?
+ say You're the reason I am trapped here.
+ say I would rather die than be helped by you.
+endif
+~
+>give_prog "all"~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+else
+ say What do you want, $n?
+ say Your gifts will not sway me!
+ break
+endif 
+if number($o)==4678
+else
+ say What is this?
+ give $o $n
+ say I want texts to translate, not this junk!
+ break
+endif
+if goldamt($n) > 999999
+ mpforce $n give 1000000 coins druid
+ mpat 100 drop 1000000 coins
+ say Hrmmm, pieces of it are missing...
+ say But, I think I can translate it!
+ emote pulls out a pen and starts writing.
+ say Done!
+ mpjunk scroll
+ mpoload 4690
+ give scroll $n
+else
+ say I'm giving you a deal, $n!
+ say 1,000,000 coins, or no translation!
+ give scroll $n
+endif
+mpjunk all
+~
+>speech_prog food~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say You are hungry? Ok, I will make you food.
+ c 'create f'
+else
+ say You may starve for all I care, $n.
+endif
+~
+>speech_prog water~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say Ah, you are thirsty!
+ say I will make you drink, $n!
+ c 'create s'
+else
+ say I hope you die of thirst, $n!
+say Your kind will never receive help from me!
+endif
+~
+|
+#4693
+Dynaheir~
+The Light Dragon~
+A dragon made of pure light shines brightly
+~
+~
+33 503840896 6389776 134234368 0 1000 S
+110 1 500 500 0 50000d0+0 0d0+0
+2 19 0
+0 0 2
+0 0 0
+#4695
+Minsc~
+The Shadow Dragon~
+A dark dragon made of shadows lurks here.
+~
+~
+33 100663488 98320 1208117504 0 -1000 S
+110 1 300 300 0 50000d0+0 0d0+0
+2 19 0
+0 0 2
+0 0 0
+>act_prog ~
+~
+|
+#4703
+man eating fungus~
+A Man Eating Fungus~
+A Large Glowing Fungus slowly moves to smother you!
+~
+~
+35 64 19660944 1073774592 36 0 S
+110 1 220 220 0 30000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+#4704
+slime puddle goo~
+&gThe goo~
+&gSlimey goo has pooled in the corner of the room.
+~
+~
+3 0 16 0 0 0 S
+125 1 10 10 0 100d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>all_greet_prog 15~
+if ispc($n)
+mptrans druidkeepgoo
+mpforce druidkeepgoo kill $n
+endif
+~
+|
+#4708
+large onyx golem~
+a Large Onyx Golem~
+&zA large piece of onyx sits in the middle of the room...
+~
+~
+3 235405440 17301648 0 0 -500 S
+110 1 250 250 0 20000d0+0 0d0+0
+1100 20 0
+0 0 0
+0 0 0
+#4710
+belial demon greater small man~
+Bel'ial~
+A small man sits behind a desk with dagger in hand...
+~
+~
+3 168296576 32912 1073768704 0 -1000 S
+125 1 250 250 0 30000d0+0 0d0+0
+1250 20 0
+0 0 1
+0 0 0
+>rand_prog 10~
+mpecho &pBel'ial says a few words...
+c 'demonshield'
+~
+|
+#4720
+fire elemental~
+&RFire Elemental~
+A living mass of flame jumps across the cavern
+~
+~
+1 33554624 16777232 536873216 0 0 S
+110 1 220 220 0 28000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+>fight_prog 20~
+emote burns hot!
+c sunfire
+~
+>fight_prog 25~
+emote screams like a demon!
+c demonfire
+~
+>fight_prog 30~
+mpecho &RThe fire is so hot! You must be in HELL!
+c hellfire
+~
+|
+#4722
+diamond golem~
+a Monstrous Diamond Golem~
+&CThe largest piece of diamond you have ever seen sits in your path!
+~
+~
+3 235405440 17039504 16384 0 -500 S
+110 1 250 250 0 20000d0+0 0d0+0
+1100 20 0
+0 0 0
+0 0 0
+#4723
+sihlan female~
+Sihlan~
+A female figure sits in the middle of the room, meditating.
+~
+~
+3 168312960 7176368 16384 0 -1000 S
+125 1 400 400 0 30000d0+0 0d0+0
+1250 20 0
+0 0 2
+0 0 0
+>rand_prog 15~
+mpecho &BSihlan flexes her muscles...
+thick
+~
+>rand_prog 10~
+mpecho &cSihlan snaps her fingers and seems to move more quickly...
+quickn
+~
+>rand_prog 5~
+mpecho &rSihlan stares at her fists for a moment...
+rage
+~
+|
+#4729
+druidkeepgoo goo slime monster muck~
+The vicious goo~
+A vicious slime monster rises from the stream to attack you!
+~
+~
+37 16448 17039508 1073741824 8706 0 S
+112 1 245 210 0 26000d0+0 0d0+0
+200 0 0
+0 0 0
+67586 0 0
+#4733
+no name~
+&z~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#4734
+special~
+Ahaseurous~
+&z
+~
+~
+3 0 0 0 1 0 S
+1 1 2 2 0 1d0+0 0d0+0
+0 20 0
+0 0 2
+0 0 0
+#4735
+iron golem~
+a Big Iron Golem~
+&cA big piece of iron sits in the middle of the room staring at you!
+~
+~
+3 235405440 16777264 16384 0 -500 S
+110 1 250 250 0 20000d0+0 0d0+0
+1100 20 0
+0 0 0
+0 0 0
+#4736
+anrahk an'rahk greater demon~
+An'rahk~
+An enourmous demon fills most of the room...
+~
+~
+3 168296640 4227248 134244608 0 -1000 S
+125 1 500 500 0 30000d0+0 0d0+0
+0 20 0
+0 0 1
+0 0 0
+>rand_prog 2~
+mpecho &WAn'rahk looks around for a way to escape...
+say I need out! Let me out! I'll kill the Druids myself!
+rage
+~
+>rand_prog 5~
+say My Queen, set me loose!
+mpecho A voice seems to materialize from nowhere...
+mpmload 4734
+mpforce special say It is not yet your time, my beloved.
+mppurge special
+say I will wait then, and ready myself.
+weaponm
+~
+|
+#4748
+copper golem~
+a Huge Copper Golem~
+&OA large humanoid figure made of copper stands here.
+~
+~
+3 235421824 16777232 16384 0 -500 S
+110 1 250 250 0 20000d0+0 0d0+0
+1100 20 0
+0 0 0
+0 0 0
+#4749
+guardian demon crylla~
+Crylla~
+A shadowy figure moves continously all around you...
+~
+~
+3 436732032 86868112 1073741824 0 -1000 S
+125 1 300 300 0 30000d0+0 0d0+0
+1250 20 0
+0 0 2
+0 0 0
+#4751
+An Evil Acolyte~
+An Evil Acolyte~
+An acolyte walks around the temple running errands.
+~
+~
+1 128 0 1610612736 4 -1000 S
+120 1 240 240 0 30000d0+0 0d0+0
+1200 20 0
+0 0 1
+0 0 0
+#4752
+A Dark Priest~
+A Dark Priest~
+A Dark Priest is in the middle of a trance.
+~
+~
+3 0 0 0 10788 -1000 S
+115 1 230 400 0 32000d0+0 0d0+0
+1150 20 0
+0 0 1
+0 0 0
+>fight_prog 25~
+mpecho &YA Dark Priest orders his protectors to attack you!
+etherealsnake bite
+etherealwolf bite
+~
+>fight_prog 40~
+say Attack, my pets! Attack!
+etherealsnake strike
+etherealwolf claw
+~
+|
+#4755
+large demon slobbering~
+A Monstrous Demon~
+A Monstrous Demon rages against its chains!
+~
+~
+3 532672 23101584 1610639616 4 -1000 S
+140 1 500 500 0 45000d0+0 0d0+0
+1400 6 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say That Nirak fellow was a genious!
+say You may not think so after this, though.
+c 'niraks curse of the damned' $n
+~
+|
+#4758
+serpent guard~
+A Serpent Guardian~
+A large man with the crest of a Serpent on his armor stands here!
+~
+A large man stands before a locked door here.  He is grizzled and carries
+a large scar across his face running down from forehead, along his left eye,
+and down to his cheek bone.  His armor is a deep purple with a forest green
+serpent etched upon it.  He holds his hand upon his monstrous sword's hilt,
+ever ready for battle.  
+~
+3 64 16842768 1610614784 516 -1000 S
+120 1 500 500 0 35000d0+0 0d0+0
+1200 20 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isfollow($n)
+  break
+endif
+if isnpc($n)
+  break
+endif
+if isgood($n)
+   say The great wyrm will not see you!
+  say You will regret even stepping in here, $n!
+  c 'leap of torf' $n
+else
+ say I need the password, $n.
+  say Otherwise, access to the great Wyrm is barred.
+endif
+~
+>speech_prog p Lahrandu alshanna dal lanna yarin~
+if isgood($n)
+  break
+endif
+is npc($n)
+  break
+endif
+say Excellent.
+unlock north
+open north
+say Be on your way, $n
+cackle
+~
+>fight_prog 75~
+use 'slit'
+say Fool. Think you can best the Wyrm?
+~
+>fight_prog 50~
+say You'll regret this...
+c 'force of nature'
+~
+|
+#4760
+treasure guard~
+Treasury Guard~
+A guard wanders around the Treasury looking for thieves
+~
+~
+33 64 16777232 1610612992 16 -750 S
+110 1 400 400 0 28000d0+0 0d0+0
+1100 20 0
+0 0 2
+0 0 0
+>fight_prog 50~
+use slam
+use slam
+~
+>fight_prog 20~
+c 'dispel magic'
+c 'dispel magic'
+~
+>fight_prog 40~
+use break
+use stun
+use kick
+~
+|
+#4762
+dark prison guard~
+A Dark Prison Guard~
+A Dark Prison Guard wanders the area
+~
+~
+1 192 16777232 1073744128 0 -1000 S
+110 1 300 300 0 28000d0+0 0d0+0
+1100 20 0
+0 0 0
+0 0 0
+#4766
+lathis~
+Lathis~
+An old Paladin sits in the corner of the cell
+~
+~
+3 8384 16810144 24576 1024 1000 S
+115 1 400 400 0 29000d0+0 0d0+0
+1150 25 0
+0 0 0
+0 0 0
+#4769
+dark student~
+A Student of the Dark~
+A Student practices the Dark Arts
+~
+~
+1 192 16777232 536879360 0 0 S
+105 1 210 210 0 0d0+0 0d0+0
+1050 20 0
+0 0 0
+0 0 0
+#4770
+drow treyla~
+Treyla~
+A dark skinned elf watches over the training grounds
+~
+A dark skinned elf who looks like she has been through much.  From what
+you remember of Drow, the women are just as fierce warriors as the men.  She
+stands in the corner of the training grounds, and watches her students. 
+Berating those who are failing, and...  rewarding...  those who succeed.  
+~
+3 128 16777232 1610612992 0 -1000 S
+110 1 220 220 0 20000d0+0 0d0+0
+1100 20 0
+0 0 2
+0 0 0
+#4772
+grall skullmender ogre~
+Grall SkullMender~
+A large Ogre teaches students the dark arts
+~
+~
+3 0 16777232 1207984128 516 -333 S
+110 1 220 220 0 23000d0+0 0d0+0
+1100 20 0
+0 0 0
+0 0 0
+#4775
+spirit dolmaar~
+the Spirit of Dolmaar~
+The Spirit of Dolmaar floats before you.
+~
+~
+3 17301632 16 0 0 0 S
+100 1 100 100 0 30000d0+0 0d0+0
+1000 19 0
+0 0 0
+2 0 0
+>all_greet_prog 100~
+if isnpc($n)
+ break
+endif
+if isgood($n)
+ say Welcome to my holiest ground, $n
+say This is where I gave the first Druid his power.
+else
+ $n say You defile this place, $n!
+ say There is possibility for good in you.
+ mptrans $n 4783
+ mpat $n mpforce $n look
+endif
+~
+>act_prog p gets holy Water.~
+if isnpc($n)
+ say You cannot have that!
+ mpecho &R$n bursts into flames!
+ mppurge $n
+ break
+endif
+if isgood($n)
+ say Use the water only for good.
+else
+mpechoat $n You feel compelled to drop the holy water...
+mpechoaround $n $n looks strange for a moment...
+mpforce $n drop all.water
+endif
+~
+|
+#4789
+giant world worm~
+A Worldworm~
+A Giant Worm eats the moss from the walls.
+~
+~
+1 128 16809984 0 36 0 S
+110 1 700 700 0 28000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+>rand_prog 5~
+emote makes a large slurping sound as in sucks the moss from the walls.
+~
+>rand_prog 2~
+emote turns its head back and forth searching for something...
+~
+>rand_prog 6~
+mpoload 4788
+invoke earthquake
+mpjunk earthquake
+~
+>fight_prog 50~
+roar
+c earthblast
+c earthblast
+c earthblast
+~
+>fight_prog 30~
+c volcanic
+~
+>fight_prog 80~
+c 'force of nature'
+~
+|
+#4792
+ancient wyrm dragon black~
+An Ancient Black Wyrm~
+A massive black dragon fills the cavern
+~
+A very large black dragon fills this cavern almost completely.  It is a
+wonder how it even got in here considering its size.  One of its eyes is
+discolored white, most likely blinded by some battle long ago.  Its other
+good eye stays trained upon you as you come close.  The eye itself is almost
+twice the size of an average Human!  The smell of evil and rotting flesh
+permeates from its maw as it breathes, choking the most iron stomachs.  
+~
+3 192 16809984 1610629120 4 -1000 S
+130 1 500 500 0 35000d0+0 0d0+0
+1300 5 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Mortal. Ah, Mortal. You smell delicious.
+say Why should I not eat you up?
+say Do you even speak Draconic? Fools mortals.
+c tongues $n
+~
+>fight_prog 50~
+c ultrablast
+~
+>fight_prog 20~
+say Oh, Goddess of the Dark, breach this ones guard!
+c 'power leak'
+~
+>fight_prog 40~
+say May the pangs of old-age destroy you!
+c age
+~
+>fight_prog 60~
+say Strip this one of protections!
+c 'dispel magic'
+c 'curse'
+c 'dancing lights'
+~
+|
+#4799
+ahaseurous~
+Ahaseurous~
+Ahaseurous
+~
+~
+3 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 20 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#4551
+gift dolmaar potion~
+the Gift of Dolmaar~
+A bottle sits here with colors changing constantly.~
+~
+10 268447232 0 0 0 1 0
+100 100
+300~ holy strength~ complete healing~ complete healing~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4552
+curved dagger~
+a Curved Dagger~
+A dagger with a wicked curve floats several inches off of the ground.~
+~
+5 101272064 0 0 0 8193 104
+100 100
+0~ 30~ 90~ 11~
+2 1040 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -40
+A
+26 150
+A
+25 90
+A
+12 200
+A
+13 200
+A
+18 40
+A
+19 50
+#4553
+Tree Bark~
+&OA Piece of Bark~
+A scrap of tree bark sits discarded here.~
+~
+9 16779267 16 0 0 5 103
+100 100
+20~ 0~ 0~ 0~
+5 1 0
+5 0
+bark skin~
+10 10
+0 0 0
+A
+4 -1
+A
+2 1
+A
+25 20
+A
+12 50
+A
+18 10
+A
+19 15
+A
+13 100
+#4554
+Lishnara scroll~
+lishnara's Scroll~
+A scroll of human skin sits disrcarded in the corner.~
+~
+2 8194 0 0 0 1 110
+100 100
+110~ dispel magic~ sunburst~ winters chill~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4555
+skull cracked mossy~
+a cracked skull~
+A cracked skull covered in moss sits upon its side.~
+~
+13 0 147456 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+1 4567
+reserved~
+0 0
+0 0 0
+#4556
+gift dolmaar~
+gift of Dolmaar~
+A glowing potion eminating godly power.~
+~
+10 268443648 0 0 0 1 100
+100 100
+300~ golden armor~ fireshield~ satanic inferno~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4557
+claw~
+claw~
+(no description)~
+~
+5 8192 0 0 0 8193 0
+100 100
+0~ 200~ 200~ 5~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4558
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4559
+puddle mud~
+mud~
+&OA small pool of mud covers the trail~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4560
+creek~
+creek~
+&BA small creek runs across the trail~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4561
+sign~
+a sign~
+A large sign stands in the middle of the path~
+~
+13 67 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+You have entered the forest holding the Druid's Keep.  The monsters
+guarding it are powerful, and those who are weaker should not venture forth
+past this sign.  If you do try to face the dangers here you have been
+warned.  I have tried and failed to make it through here, and this sign is a
+warning to all who may try after me.  
+ 
+I am weak, but I am also flesh.
+I can be stronger, and will return.
+I have failed, but wilil return.
+I am Lauren Quickfingers,
+  Master of the Minotaur.
+~
+#4562
+bark~
+a piece of bark~
+A piece of bark has been pulled off of a tree~
+~
+18 1 0 0 0 1 104
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4563
+flower small purple bud~
+a small purple flower~
+&pA small purple flower blows in the wind as you pass by.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#4564
+altar dolmaar wooden~
+dolmaar's Altar~
+A large wooden altar dedicated to Dolmaar rests here.~
+~
+12 3 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4565
+smacll burning candle summoning~
+a candle of summoning~
+A small glowing candle rests silently burning.~
+~
+8 3072 0 0 0 16385 100
+100 100
+0~ 0~ 0~ 0~
+1 8000 0
+2 4565
+reserved~
+1 0
+0 0 0
+A
+4 1
+>invoke_prog 100~
+0
+if inroom($r)==4666
+mpforce angel follow self
+break
+else
+mpecho &CThe angel cannot survive without the magic of Dlraxor and fades away...
+mppurge angel
+endif
+~
+|
+#4566
+pool glass pond water~
+tranquil Pool~
+&BA large pool of water as smooth as glass.~
+~
+29 0 0 0 0 0 1
+100 100
+4631~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4567
+small ruby~
+a small ruby~
+A small ruby sits upon the ground.~
+~
+13 33554432 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+4643 0 0
+#4569
+rune~
+a Recall Rune~
+A slab of stone with a strange marking hovers inches off of the ground.~
+~
+33 100663363 0 0 0 1 104
+100 100
+4691~ 0~ 0~ 0~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4572
+flower white~
+a white flower~
+A white flower stands alone, specked with the red of blood~
+~
+13 134217792 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4575
+no name~
+owl Claw~
+(no description)~
+~
+5 8192 0 0 0 8193 0
+100 100
+0~ 100~ 100~ 5~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 100
+A
+19 100
+#4576
+fake skull st zilfa relic copy~
+a copy of the skull of St. Zilfa~
+The skull of St. Zilfa has rolled onto the ground...~
+~
+13 0 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 20000 0
+0 0
+reserved~
+0 0
+0 0 0
+#4577
+lockpick pick kyama~
+kyama's Lockpick~
+A lockpick has been discarded on the ground.~
+~
+18 3 0 0 0 1 666
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4579
+ivy~
+ivy~
+Ivy covers the wall of the keep.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4582
+gars hide furry~
+gars Hide~
+A large piece of furry hide is rumpled on the ground.~
+~
+9 100893200 8 0 0 1025 90
+100 100
+20~ 0~ 0~ 0~
+1 3600 0
+5 0
+protection evil~
+10 10
+0 0 0
+A
+12 100
+A
+13 100
+A
+18 40
+A
+19 40
+A
+2 1
+A
+26 40
+#4583
+silver fist~
+&wFist~
+A silver fist.~
+~
+5 8192 0 0 0 8193 110
+100 100
+0~ 70~ 120~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 200
+A
+19 150
+A
+26 400
+#4584
+druid robes~
+&zDruidic Robes~
+A set of black robes sits piled in the corner.~
+~
+9 67117056 0 0 0 9 110
+100 100
+50~ 0~ 0~ 0~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 100
+A
+19 100
+A
+24 -200
+#4585
+twisted oak staff~
+a twisted oak staff.~
+A large piece of twisted oak is discarded upon the ground.~
+~
+4 537003009 8713 0 0 16385 103
+100 100
+105~ 5~ 20~ dispel magic~
+5 1028 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 5
+A
+3 3
+A
+5 -1
+#4586
+ivy leaf~
+ivy Leaf~
+A simple ivy leaf lays upon the ground.~
+~
+18 1 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+0 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#4587
+claws~
+claws~
+(no description)~
+~
+5 8192 0 0 0 8193 110
+100 100
+0~ 0~ 0~ 5~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 100
+A
+19 100
+A
+26 100
+#4588
+corpse deer bloody~
+deer corpse~
+A bloody corpse of a deer lays sprawled on the ground.~
+~
+15 0 0 0 0 0 110
+100 100
+0~ 0~ 0~ 0~
+110 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4589
+key~
+a Key~
+A Key that none-o-you is supposed to see is on the ground for some reason~
+~
+18 8192 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4595
+silver hammer~
+silver Hammer~
+A large hammer glimmers as if it were made of molten silver.~
+~
+5 134414401 8200 0 0 8193 100
+100 100
+0~ 30~ 80~ 7~
+3 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 20
+A
+113 -1
+A
+13 100
+A
+12 -50
+A
+24 -20
+#4597
+dagger light~
+dagger of Light~
+A glowing piece of light is sitting in the corner.~
+~
+5 119800289 256 0 0 8193 102
+100 100
+0~ 50~ 75~ 11~
+1 4080 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 -1
+A
+2 1
+A
+26 100
+A
+19 50
+A
+18 20
+#4606
+resist magic bracelet~
+a Magic Resistance Bracelet~
+A glowing bracelet lies upon the ground.~
+~
+9 134225985 131072 0 0 4097 106
+100 100
+200~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+31 100
+A
+24 -300
+A
+36 100
+A
+32 100
+A
+29 100
+A
+48 100
+A
+30 100
+A
+46 100
+A
+35 100
+A
+33 100
+A
+34 100
+A
+37 100
+#4607
+physical charm~
+a Physical Resistance Charm~
+A glowing charm has been discarded on the ground.~
+~
+9 67117057 131072 0 0 5 106
+100 100
+200~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+42 500
+#4608
+physical resistance charm~
+a Physical Resistance Charm~
+A charm with a small heart sparks with unknown energy...~
+~
+9 67108865 0 0 0 5 104
+100 100
+0~ 0~ 0~ 0~
+10 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -20
+A
+19 -10
+A
+18 -10
+A
+42 20
+#4609
+magic resistance bracelet~
+a Magic Resistance Bracelet~
+Steam rises from a bracelet discarded on the ground...~
+~
+9 134217729 0 0 0 4097 104
+100 100
+0~ 0~ 0~ 0~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+31 50
+A
+19 -10
+A
+18 -10
+A
+24 -20
+#4613
+claw~
+assasin Claw~
+A long set of claws has been discarded upon the ground.~
+~
+5 234897984 532480 4096 0 8193 104
+100 100
+0~ 30~ 80~ 11~
+2 1200 0
+5 0
+sanctuary~
+2 2
+0 0 0
+A
+2 4
+A
+24 -50
+A
+18 30
+A
+19 60
+A
+12 100
+A
+13 100
+#4616
+mop winston~
+winston, the Mop~
+Crud, this is an inventory item~
+~
+5 167796737 0 0 0 8192 109
+100 100
+0~ 100~ 100~ 7~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4617
+servant robe~
+&WA Servant's Robe~
+Crud crud crud...another inventory item~
+~
+9 134217793 0 0 0 9 100
+100 100
+150~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 -2
+A
+4 -2
+A
+23 50
+A
+24 50
+A
+18 50
+A
+19 50
+#4619
+platter servant~
+a platter~
+A servant's platter has been discarded upon the ground.~
+~
+5 167772160 0 0 0 8193 100
+100 100
+0~ 20~ 60~ 7~
+0 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 30
+A
+19 40
+A
+13 100
+A
+12 100
+A
+25 33
+A
+26 100
+A
+24 -50
+#4625
+no name~
+a bench~
+A bench is snuggled discreetly into the garden~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4631
+crystal fountain large~
+&WLarge Crystal Fountain~
+A large crystal fountain sprays water across the garden.~
+~
+29 1 0 0 0 0 0
+100 100
+4566~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4636
+flower golden~
+&YA golden flower~
+A lone flower, the color of gold, adorns the ground.~
+~
+13 67108867 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4639
+book~
+a big book~
+(no description)~
+~
+5 167780353 0 0 0 8193 106
+100 100
+0~ 100~ 100~ 7~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+book~
+This is the book of Dolmaar.  His wisdom is absolute.  He has power over
+the wicked one, and his knowledge is infinite 
+~
+#4641
+chair wooden~
+a wooden chair~
+A wooden chair sits in the corner, a book laying upon it.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4642
+tree branch glowing sacrifice~
+a glowing tree branch~
+A glowing tree branch is stuck into the ground.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4643
+ruby ring~
+a ruby ring~
+A small ring has been lost by its owner~
+~
+9 33554496 0 0 0 3 75
+100 100
+50~ 0~ 0~ 0~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 50
+A
+18 15
+A
+5 2
+#4650
+holster sheath TRUTH~
+a silver sheath~
+A sheath with the word TRUTH inscribed upon it sits here.~
+~
+9 1 0 0 0 2097153 105
+100 100
+50~ 0~ 0~ 0~
+1 20000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -40
+A
+151 -1
+A
+19 15
+A
+18 15
+#4652
+small golden ring~
+&YA small golden ring~
+A ring has been lost by its owner...~
+~
+9 64 0 0 0 3 50
+100 100
+100~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+4643 0 0
+A
+24 100
+A
+18 15
+A
+5 2
+#4653
+wraith claw~
+a wraith claw~
+Uh oh. This shouldn't be on the ground.~
+~
+5 67133440 0 0 0 8193 110
+100 100
+0~ 100~ 100~ 5~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4654
+ring dolmaar~
+the Ring of Dolmaar~
+A ring has been misplaced by its owner~
+~
+9 3 0 0 0 3 100
+100 100
+50~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+4655 0 0
+A
+13 100
+A
+12 100
+A
+1 1
+A
+24 -10
+A
+19 10
+A
+18 10
+#4655
+ring of dolmaar~
+&YThe Ring of Dolmaar~
+A ring has been misplaced by its owner...~
+~
+9 33554496 0 0 0 3 105
+100 100
+50~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+12 150
+A
+13 200
+A
+24 -25
+A
+18 10
+A
+19 20
+#4657
+key~
+a key~
+A large brass key hangs from the doorknob~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4658
+shield druid~
+druid Shield~
+A shield sparks with unnatural enegery upon the ground!~
+~
+9 140288 160768 0 0 513 110
+100 100
+250~ 0~ 0~ 0~
+50 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 40
+A
+25 50
+A
+12 200
+A
+13 200
+A
+26 100
+A
+18 100
+#4659
+sword druid~
+druid Sword~
+(no description)~
+~
+5 771776512 0 0 0 8193 110
+100 100
+0~ 60~ 100~ 3~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 200
+A
+19 200
+#4660
+key~
+a Key~
+A nondescript key lies upon the floor~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4661
+flask blood glowing angel~
+a glowing flask of angel blood~
+A bloody flask is discarded upon the ground.~
+~
+8 33554433 16384 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4662
+rune key~
+a rune shaped key~
+A key in the shape of a strange rune floats sever inches off of the ground.~
+~
+18 65 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4663
+gold poile coins~
+gold~
+&YA Pile of Gold coins~
+~
+20 0 0 0 0 1 0
+100 100
+100000~ 0~ 0~ 0~
+0 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+#4664
+key iron small~
+a small iron key~
+A small iron key lies forgotten upon the ground.~
+~
+18 0 131072 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4665
+crystalline marble rolled~
+crystalline Marble~
+A small crystalline marble has rolled out of its place...~
+~
+8 100663296 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>look_prog 100~
+0
+mpmload 4665
+mpecho &WA spirit rises out of the marble!
+~
+|
+#4666
+desk oak~
+oak Desk~
+A desk of solid oak sits in the middle of the room.~
+~
+15 67 0 0 0 0 666
+100 100
+500~ 15~ 4664~ 0~
+666 24 0
+0 0
+reserved~
+0 0
+0 0 0
+>open_prog 100~
+0
+mpecho &RA rumbling echos throughout the Keep...
+mpoload 4665
+mpecho &zAs the rumbling subsides...  A small crystal marble rolls out of the desk.
+~
+|
+#4675
+letter~
+a letter~
+A letter has fallen out of someone's pocket!~
+~
+13 201326592 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+letter~
+The letter is encryted in some kind of cipher.  You are unable to decode
+it.  
+~
+#4676
+book shield~
+a Book Shield~
+A large book looks as if it has been slashed and beaten with weapons.~
+~
+9 67108928 0 0 0 513 102
+100 100
+100~ 0~ 0~ 0~
+2 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 200
+A
+12 200
+A
+19 10
+A
+18 10
+#4677
+letter opener~
+letter Opener~
+Crud, this is supposed to be invventory~
+~
+5 234889216 8192 0 0 8193 110
+100 100
+0~ 100~ 100~ 11~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 100
+A
+19 100
+A
+18 100
+#4678
+strange scroll~
+a strange scroll~
+A tattered scroll has been discarded by its owner.~
+~
+13 3 131072 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+scroll~
+The scroll has strange writings on it you cannot understand.  It seems to
+eminate a strange feeling of power, though.  
+~
+E
+strange~
+The scroll has strange writings on it you cannot understand.  It seems to
+eminate a strange feeling of power, though.  
+~
+#4690
+glowing scroll~
+a glowing scroll~
+A glowing scroll has been discarded by its owner.~
+~
+18 1 0 0 0 1 105
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+scroll~
+I write this scroll in hopes that someone will.....  My research shows
+that St. Zilfa's skull is more valuable than we originally thought...  Join
+the ruby with the ring....  Sacrifice...  Dolmaar.  Hopefully this will not
+fall into the wrong...
+~
+E
+glowing~
+I write this scroll in hopes that someone will.....  My research shows
+that St. Zilfa's skull is more valuable than we originally thought...  Join
+the ruby with the ring....  Sacrifice...  Dolmaar.  Hopefully this will not
+fall into the wrong...  
+~
+#4691
+portal chaotic swirling colours~
+chaotic Portal~
+A portal of swirling colours stands against the wall.~
+~
+29 67108928 0 0 0 0 0
+100 100
+4585~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4696
+holy water holywater flask~
+holy Water~
+A flask of holywater sits undisturbed.~
+~
+18 67 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#4698
+holy portal~
+holy Portal~
+&CA Portal of Holy Energy~
+~
+29 33 256 0 0 0 0
+100 100
+4787~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4699
+armor~
+shadow Armor~
+None~
+~
+9 33562624 0 0 0 9 0
+100 100
+300~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 100
+A
+18 100
+#4700
+~
+shadow Sword~
+A short sword is absorbing light from the room~
+~
+5 33554436 0 0 0 8193 100
+100 100
+0~ 30~ 40~ 3~
+2 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 35
+A
+18 20
+#4701
+~
+~
+~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4702
+small charm thief~
+thief's Charm~
+A small charm has been lost by its owner~
+~
+18 0 0 4 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 0 0
+3 4792
+heal~
+1 1
+0 0 0
+>get_from_prog 4760~
+0
+mpforce $n close chest
+mpoload 4701
+lock chest
+mpjunk all
+~
+|
+#4707
+black chain whip~
+&za Black Chain Whip~
+A whip of black metal floats several inches from the ground.~
+~
+5 167772160 0 0 0 8193 101
+100 100
+0~ 0~ 0~ 4~
+0 1 0
+5 0
+web~
+10 10
+0 0 0
+A
+18 40
+A
+19 25
+A
+26 50
+A
+4 -2
+A
+1 3
+A
+13 75
+A
+12 100
+A
+25 100
+#4708
+onyx key~
+an Onyx Key~
+A key of onyx seems to have been misplaced.~
+~
+18 0 131072 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4709
+cloak human skin~
+a Cloak of Human Skin~
+A cloak made of a strange material has been discarded...~
+~
+9 603996672 0 0 0 1025 104
+100 100
+50~ 0~ 0~ 0~
+4 1 0
+5 0
+flesh armor~
+-1 -1
+0 0 0
+A
+25 50
+A
+13 100
+A
+12 100
+A
+24 -30
+A
+19 12
+A
+18 12
+A
+1 3
+#4710
+sacrificial dagger bloody~
+a Sacrificial Dagger~
+A dagger covered in blood lies upon the ground.~
+~
+5 637534721 8192 0 0 8193 104
+100 100
+0~ 30~ 80~ 11~
+3 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 45
+A
+18 45
+A
+25 75
+A
+26 100
+A
+13 100
+A
+12 100
+#4718
+diamond fist chunk~
+&CA Diamond Fist~
+What looks like a large chunk of diamond sits on the ground.~
+~
+5 100663808 0 16384 0 8193 100
+100 100
+0~ 0~ 0~ 7~
+4 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 30
+A
+19 30
+A
+13 100
+A
+25 30
+A
+26 100
+A
+24 -30
+#4719
+fist~
+fist~
+(no description)~
+~
+5 67117056 16384 0 0 8193 106
+100 100
+0~ 100~ 200~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 100
+A
+19 200
+#4720
+crystal key~
+a Crystal Key~
+A key made of transparent crystal has fallen on the ground.~
+~
+18 0 131072 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4721
+boots of eden~
+&zBoots of Eden~
+A pair of dark boots sit on the ground.~
+~
+9 134219776 0 0 0 65 105
+100 100
+30~ 0~ 0~ 0~
+2 1800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+120 -1
+A
+18 10
+A
+19 12
+A
+24 -25
+A
+13 200
+A
+25 75
+#4722
+special~
+the Fist of Synda~
+(no description)~
+~
+5 234889216 8192 0 0 8193 106
+100 100
+0~ 100~ 200~ 7~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 500
+A
+19 300
+A
+18 300
+A
+24 -200
+#4723
+fist synda glove~
+the Fist of Synda~
+A steel glove has been discarded...~
+~
+5 235341824 8192 0 0 8193 104
+100 100
+0~ 40~ 75~ 7~
+1 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 75
+A
+12 125
+A
+13 125
+A
+42 20
+A
+19 50
+A
+18 50
+#4725
+stream tiny water ~
+&zDark water has gathered into tiny streams on the floor.~
+&zDark water has gathered into tiny streams on the floor.~
+~
+17 0 0 0 0 0 1
+100 100
+1~ 1~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4726
+slime water goo stream~
+&gA slime choked stream of goo trickles through.~
+&gA slime choked stream of goo trickles through.~
+~
+17 0 0 0 0 0 1
+100 100
+10~ 10~ 9~ 1~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4727
+water black slime stream~
+&zA slimy stream of black water trickles past.~
+&zA slimy stream of black water trickles past.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4728
+cascade waterfall water clear black~
+&BClear water cascades down the northern &zwall turning black as it does.~
+&BClear water cascades down the northern &zwall turning black as it does.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4729
+fog mist~
+&WA low hanging mist obscures the floor.~
+&WA low hanging mist obscures the floor.~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4730
+pool water pond murky black~
+&zA dark, murky pool of water occupies the majority of this room.~
+&zA dark, murky pool of water occupies the majority of this room.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4733
+banded iron axe~
+&za Banded Iron Axe~
+An axe has been stuck into the ground, blade first.~
+~
+5 167772160 0 0 0 8193 102
+100 100
+0~ 0~ 0~ 13~
+3 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 50
+A
+19 10
+A
+1 2
+A
+5 -1
+A
+12 100
+A
+13 100
+#4734
+sturdy iron key~
+a sturdy iron key~
+A key of iron has been discarded.~
+~
+18 0 131072 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4735
+anrahks pain~
+an'rahk's Pain~
+A glowing trinket that has some sort of hoop on it has been lost by its owner...~
+~
+9 572523008 8192 0 0 524289 105
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+20 0
+reserved~
+0 0
+0 0 0
+A
+13 100
+A
+25 40
+A
+24 -40
+A
+18 10
+A
+19 18
+A
+12 100
+#4736
+claws~
+claws~
+(no description)~
+~
+5 67133440 0 0 0 8193 106
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 200
+A
+19 200
+A
+24 -300
+A
+26 200
+#4741
+dagger sacrificial~
+a Sacrificial Dagger~
+A long dagger with a wicked curve has been dropped.~
+~
+5 167788608 0 0 0 8193 101
+100 100
+0~ 60~ 80~ 11~
+1 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 35
+A
+19 35
+A
+301 -1
+#4746
+copper short sword~
+&Oa Copper Short Sword~
+(no description)~
+~
+5 16385 0 0 0 8193 102
+100 100
+0~ 0~ 0~ 3~
+3 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 50
+A
+18 10
+A
+2 2
+A
+24 -25
+A
+13 50
+A
+12 100
+#4747
+copper key~
+a copper key~
+A key of shiny copper sits upon the ground.~
+~
+18 0 131072 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4748
+black dagger~
+&zA Black Dagger~
+(no description)~
+~
+5 100687872 0 0 0 8192 106
+100 100
+0~ 0~ 0~ 11~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 200
+A
+18 200
+A
+24 -200
+A
+26 200
+#4749
+belt shadows~
+a Belt of Shadows~
+Something long and slender blends into the shadows...~
+~
+9 67109380 0 0 0 2049 105
+100 100
+0~ 0~ 0~ 0~
+2 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 16
+A
+18 16
+A
+24 -10
+A
+13 100
+A
+12 100
+A
+25 50
+#4751
+a covered lanter~
+a Covered Lantern~
+A Covered Lantern glows brightly.~
+~
+9 513 0 0 0 16385 102
+100 100
+18~ 0~ 0~ 0~
+3 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+134 -1
+A
+18 18
+A
+19 6
+A
+4 2
+A
+3 2
+#4752
+dark altar~
+dark altar~
+A Dark Altar sits in the centre of the room.~
+~
+13 7 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4756
+~
+serpent Etched Armor~
+A set of plate with a snake etched upon it lies here~
+~
+9 16385 0 0 0 9 103
+100 100
+200~ 0~ 0~ 0~
+5 5000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+18 50
+#4757
+golden portal~
+&YGolden Portal~
+&YA Portal of Golden Energy~
+~
+29 67108864 0 0 0 0 0
+100 100
+4776~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4758
+golden key~
+&Ya golden key~
+A key of gold lays among coins and jewels...~
+~
+18 0 131072 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4759
+~
+a Serrated Two Handed Sword~
+A large sword with a very jagged blade has been discarded here~
+~
+5 721502720 163840 8 0 8193 105
+100 100
+0~ 175~ 225~ 3~
+3 1000 0
+5 0
+titan strength~
+-1 -1
+0 0 0
+A
+12 -50
+A
+25 50
+A
+13 450
+A
+2 -1
+A
+3 -1
+A
+4 -1
+A
+1 5
+A
+19 110
+A
+18 90
+#4760
+chest large treasure~
+treasure chest~
+A large treasure chest is hidden in the corner of the room~
+~
+15 0 0 0 0 0 0
+100 100
+100~ 13~ 4701~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4761
+gold pile~
+a Pile of Gold~
+A lage pile of gold sits on the treasury floor.~
+~
+20 0 0 0 0 1 0
+100 100
+1000~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4763
+prison key~
+prison Key~
+A small key ring jingles as your foot brushes it~
+~
+18 0 131072 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4768
+pool blood~
+pool of blood~
+&rA small pool of blood gathers in a recess.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4770
+~
+&rblood red leather armor~
+Some red leather lies in a pile.~
+~
+9 0 0 0 0 9 105
+100 100
+100~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 80
+A
+19 20
+A
+13 200
+A
+1 2
+A
+24 -20
+#4771
+bodies pile~
+bodies~
+A rotting pile of bodies.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#4772
+portal magic~
+portal of Pure Magic~
+&RA portal of pure magical energy swirls eternally...~
+~
+29 33554432 0 0 0 0 0
+100 100
+4774~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4773
+great scimitar black sword~
+a black scimitar~
+A dark sword seems to absorb the light...~
+~
+5 201342980 0 0 0 8193 105
+100 100
+0~ 75~ 100~ 3~
+2 1100 0
+5 0
+summon~
+1 1
+0 0 0
+A
+18 30
+A
+19 70
+A
+1 3
+A
+3 2
+A
+4 2
+A
+24 -10
+A
+13 100
+A
+12 100
+#4774
+portal magic~
+portal of Pure Magic~
+&RA portal of pure magical energy swirls eternally...~
+~
+29 134217728 0 0 0 0 0
+100 100
+4772~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4776
+golden portal~
+&YGolden Portal~
+&YA Portal of Golden Energy~
+~
+29 67108864 0 0 0 0 0
+100 100
+4757~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4777
+portal weak home~
+portal To Home~
+&zA Large Portal leads out, for the weak of heart.~
+~
+29 67108864 0 0 0 0 0
+100 100
+4551~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4779
+dagger dual blade~
+a wicked dual bladed dagger~
+A dagger with two long blades has been lost by its owner.~
+~
+5 67125248 0 0 0 8193 105
+100 100
+0~ 75~ 100~ 11~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 4
+A
+13 100
+A
+18 20
+A
+19 80
+#4787
+a Portal of Swirling Magic~
+swirling Portal~
+A Portal Of Swirling Magic~
+~
+29 33 0 0 0 0 0
+100 100
+4696~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4788
+earthquake~
+None~
+None~
+~
+13 8192 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+5 0
+earthquake~
+2 2
+0 0 0
+#4797
+portal throne~
+throne Room Portal~
+&zA Portal to Ahaseurous' Throne~
+~
+29 67108864 0 0 0 0 0
+100 100
+4799~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4798
+portal ahaseurous~
+portal to Ahaseurous~
+&zA Dark Portal Leading to Ahaseurous' Throne~
+~
+29 67108864 0 0 0 0 0
+100 100
+4777~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4799
+A drop of blood~
+&rA drop of blood~
+A drop of blood is splattered on the ground~
+~
+13 33554432 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+4655 0 0
+#0
+
+
+
+#ROOMDATA
+#4551
+Deep in the Forest~
+thunder6.wav~
+~
+As you enter this dreary forest a cold breath of wind buffets your face. 
+The cold is almost unbearable, but the sun is shining and the rest of the
+land seems warm.  To the north, high up on a mountain precipice, you can see
+the spires of the Druid's Keep jutting forth from above the canopy.  There
+is a strong sense of evil coming forth from that direction, though.  Do you
+dare venture forth to smite the evil, or maybe even make it your own?  
+~
+0 393222 3
+Rd     0
+D0
+~
+~
+0 0 4552
+D2
+~
+~
+0 0 1301
+S
+#4552
+Deep in the Forest~
+~
+~
+There is a cold breeze that blows from the north, chilling the air to a
+frigid temperature.  A small path has begun to form here, leading off into
+the west.  It seems as though a large type of animal has been scavenging for
+food along the path here.  Several smaller bushes have been torn apart and
+are devoid of small black berries.  They are easily recognizable as
+Sharkroot Berries a key ingredient in the most deadly of poisons.  
+~
+0 401410 3
+Rd     0
+D2
+~
+~
+0 0 4551
+D3
+~
+~
+0 0 4553
+S
+#4553
+Deep in the Forest~
+~
+~
+You are on a small path, a little ways away from the Druid's Keep which
+is located to the northeast.  There doesn't seem to be any life in this area
+of the forest at all.  It almost seems like it has been scared away or
+killed.  Several small drops of dried blood have fallen onto the dirt of the
+path and are beginning to blend in with the earthen tones of the
+surroundings.  A small scrap of brown cloth is stuck to a Sharkroot bush
+here.  
+~
+0 401410 3
+Rd     0
+D1
+~
+~
+0 0 4552
+D3
+~
+~
+0 0 4554
+S
+#4554
+Deep in the Forest~
+~
+~
+A small branch from a tree in front of you has fallen across the footpath
+here.  It is small enough that getting over it would not be a problem, but
+part of the break looks almost as if it were a slice at the branch in the
+attempt to fell it across the path.  The once green leaves, now browning,
+lay scattered across the path where someone has cut across to the north.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4555
+D1
+~
+~
+0 0 4553
+S
+#4555
+Deep in the Forest~
+~
+~
+As you continue deeper into the forest the canopy thickens and so do the
+trees.  This is the older part of the forest, but you are still near to its
+outer limits.  It seems as if the trees all sprouted up at once, and then
+attempted to snuff out all other new life growing around them.  Of course,
+this was in vain for life will prosper in the most unlikely of places, but
+it seems to have taken its foothold slowly.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4556
+D2
+~
+~
+0 0 4554
+S
+#4556
+A Forest Clearing~
+~
+~
+A large clearing has formed here in the depths of the forest.  Small
+shrubs and low lying grass have taken a foothold here within it.  It looks
+like a wonderful place for deer and other animals to graze quietly or sun in
+the afternoon.  The path splits here in two directions: Heavy tracks lead
+east, and a little used game trail to the west.  
+~
+0 401410 3
+Rd     0
+D1
+~
+~
+0 0 4557
+D2
+~
+~
+0 0 4555
+D3
+~
+~
+0 0 4567
+S
+#4557
+Deep in the Forest~
+~
+~
+Boot prints trod to the east and west here, heavily in both directions. 
+It looks like both humans and animals tread this path.  The bushes on the
+side of the path have been rustled with the passing of human, demihuman, and
+animal alike.  Stray shafts of light make it down to light your path as the
+cool wind blows the branches of the canopy apart to allow it passage.  
+~
+0 401410 3
+Rd     0
+D1
+~
+~
+0 0 4558
+D3
+~
+~
+0 0 4556
+S
+#4558
+Deep in the Forest~
+~
+~
+A small dirt path leads from east to west here, easily followed by
+anyone.  The trees almost seem to part for you as you walk along. 
+Bootprints and animal tracks are easily distinguished on the trail, alerting
+you to the fact that this could be a game trail.  
+~
+0 401410 3
+Rd     0
+D2
+~
+~
+0 0 4559
+D3
+~
+~
+0 0 4557
+S
+#4559
+Deep in the Forest~
+~
+~
+The trail takes a slight bend as you continue along your journey.  The
+signs of wildlife abound, and your ears can pick up the songs of birds all
+around.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4558
+D1
+~
+~
+0 0 4560
+S
+#4560
+Deep in the Forest~
+~
+~
+A small creek runs across the trail, easily traversed by walking across
+some stones or jumping.  It does not flow very fast or deep, but you still
+see the occasional fish jump for a fly.  The creek runs north to south,
+while the trail continues east to west.  
+~
+0 401410 3
+Rd     0
+D1
+~
+~
+0 0 4561
+D3
+~
+~
+0 0 4559
+S
+#4561
+Deep in the Forest~
+~
+~
+Desc The trail contains another bend at this point.  The trees are all
+around you and smell of nature.  There seems to be a creek to your west, but
+the ground here is dry enough that there are no puddles.  A large tree seems
+to poke out of the forest to the northeast.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4562
+D3
+~
+~
+0 0 4560
+S
+#4562
+Deep in the Forest~
+~
+~
+A flowerbed seems to be half trampled, as if it stood in the way of the
+trail you follow.  Such beauty destroyed, and not a care in the world.  The
+grass is also trampled, to a point where the ground beneath is exposed and
+drying in what sun makes it through the canopy above.  
+~
+0 401410 3
+Rd     0
+D1
+~
+~
+0 0 4563
+D2
+~
+~
+0 0 4561
+S
+#4563
+A Forest Path~
+~
+~
+You are walking on a small dirt path, tread by many before you.  The mud
+is cracked and dried where the grass has been worn down by footsteps.  A
+small purple flower has managed to poke through the mass of shrub and grass
+on both sides of the trail.  Only one of the flower's buds actually reamains
+open, the rest fallen into a small pile on the groud where the wind has
+blown them around.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4564
+D1
+~
+~
+0 0 4565
+D3
+~
+~
+0 0 4562
+S
+#4564
+The Altar of Dolmaar~
+~
+~
+You have entered a large clearing with a large stone block made of pure
+white marble sitting in its exact center.  At closer inspection, this entire
+clearing is an exact hemisphere.  The trees move in at just the right angle,
+and dome over your head in that spherical shape that signifies purity.  The
+white altar a perfect rectangle, pleasing to the eye.  The only mar in color
+is on the ruts cut in the side to allow the blood to flow away from its
+center.  Looking behind the altar is something not entirely out of place,
+but different from the rest here.  It is a large golden oak, larger than
+even the oldest of the trees in this forest.  Its branches high above the
+canopy, letting the light fall down onto the altar where Dolmaar accepts his
+sacrifices.  
+~
+0 2499590 3
+Rd     0
+D2
+~
+~
+0 0 4563
+S
+#4565
+A Forest Path~
+~
+~
+The path seems to end here.  Why it was made this far, noone could
+probably answer.  The only visible exit is to the west.  It seems as if most
+people come this far to see that there is nothing here and only turn back.  
+~
+0 401410 3
+Rd     0
+D2
+~
+tree~
+631 4562 4566
+D3
+~
+~
+0 0 4563
+S
+#4566
+A Tranquil Pool~
+~
+~
+As you enter this section of the forest you notice that there is no noise
+at all.  It is perfectly quiet here.  A large pool of the clearest water you
+have ever seen sits undisturbed as glass.  On its edge is a large rock
+overhanging it, and upon it sits a large leopard.  The leopard, basking in
+the sun, lets a large stag walk by unnoticed.  This is a place of peace.  
+~
+0 401414 3
+Rd     0
+D0
+~
+~
+631 4562 4565
+S
+#4567
+Deep in the Forest~
+~
+~
+You can see to the east what seems to be a clearing, if only by the rays
+of light breaking through the canopy.  Where you stand is much more dark and
+dreary.  Old growth trees fill the area, strangly and choking the young.  It
+seems this forest was once filled with life, but has been dying as of late. 
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4568
+D1
+~
+~
+0 0 4556
+S
+#4568
+Deep in the Forest~
+~
+~
+Deep in the forest evil things lurk, or so it would seem from the
+footprints you notice here.  They seem to be twice the size of a mammoth,
+and almost as big as a dinosaur.  These prints seem to be the only sign of
+passing here in some time.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4569
+D2
+~
+~
+0 0 4567
+S
+#4569
+An Opening in the Forest~
+~
+~
+The sun breaks through the forest here, although not enough to call it a
+clearing.  It looks as if an old tree died and fell, giving leeway for newer
+growth.  The signs of new life are few and far between in this dark place.  
+~
+0 401410 3
+Rd     0
+D1
+~
+~
+0 0 4580
+D2
+~
+~
+0 0 4568
+D3
+~
+~
+0 0 4570
+S
+#4570
+Deep in the Forest~
+~
+~
+The call of a lone raven breaks the eerie silence of the forest.  It gets
+up and flutters away as you come near.  The branch it perched upon is long
+dead, and bears the claw marks of the dark bird.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4571
+D1
+~
+~
+0 0 4569
+S
+#4571
+Deep in the Forest~
+~
+~
+A fallen trunk partially blocks the path you follow, long dead.  The new
+growth is hundreds of years old, and the forest has nearly claimed the
+trunk.  The stench of decay eminates from the west.  
+~
+0 401410 3
+Rd     0
+D2
+~
+~
+0 0 4570
+D3
+~
+~
+0 0 4572
+S
+#4572
+Deep in the Forest~
+~
+~
+A rope hangs from a tree, and dangling from it is a body covered in black
+robes.  The branch the rope is strung upon is thirty or fourty feet above
+ground, making it difficult to cut down.  The throat on the corpse is slit,
+dripping sticky red blood down on a white flower at the base of the tree.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4573
+D1
+~
+~
+0 0 4571
+S
+#4573
+Deep in the Forest~
+~
+~
+The trail you are following quickly forks in two different directions,
+allowing exits to the north south and west.  There is a dampness in the air
+which adds a horrible stench of stagnant water.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4577
+D2
+~
+~
+0 0 4572
+D3
+~
+~
+0 0 4574
+S
+#4574
+Deep in the Forest~
+~
+~
+Darkness permeates your very soul in this dark place.  The howl of a wolf
+grabs your attention, and it disappears into the darkness as quickly as it
+came.  Time and time again the trail twists and turns, leading to dead ends
+where the trees seem to consciously block your way and laugh.  From what you
+can tell, the trail leads east and west, but reality is not always what it
+seems.  
+~
+0 401410 3
+Rd     0
+D1
+~
+~
+0 0 4573
+D3
+~
+~
+0 0 4575
+S
+#4575
+Deep in the Forest~
+~
+~
+The forest is dark.  Your eyes have adjusted to what little light enters
+this dank place through your long journey.  The trail you have been
+following twists and turns leading south and east, you guess.  The wildlife
+is quiet, and you notice eyes staring at you every once in a while.  
+~
+0 401410 3
+Rd     0
+D1
+~
+~
+0 0 4574
+D2
+~
+~
+0 0 4576
+S
+#4576
+Surrounded by Forest~
+~
+~
+A small sanctuary that seems apart from the rest of the forest lies here
+deep inside the oldest section of trees.  The sun cannot penetrate the
+canopy here even in its brightest hour.  A large table sits here, seemingly
+out of place from the rest of the area.  Behind the table sits a man, of
+sorts, with his wares spread out across the table.  
+~
+0 401414 3
+Rd     0
+D0
+~
+~
+0 0 4575
+S
+#4577
+Approaching the Keep~
+~
+~
+The forest thins out as you look north and east, leading to a trail that
+looks well used, rather was well used.  It does not look like a boot has
+walked over this path in months, perhaps more.  Something dark has happened
+here.  
+~
+0 401410 4
+Rd     0
+D1
+~
+~
+0 0 4578
+D2
+~
+~
+0 0 4573
+S
+#4578
+Approaching the Keep~
+~
+~
+You are in a large open area, leading to a trail.  It seems to run
+towards the Keep.  Footprints are easily distinguishable all along the
+trail, giving evidence this path was once highly travelled.  
+~
+0 401410 4
+Rd     0
+D0
+~
+~
+0 0 4579
+D3
+~
+~
+0 0 4577
+S
+#4579
+Outside the West Wall~
+~
+~
+Despite being a hero, this place seems rather ominous.  There is nothing
+particularily scary about it, just a feeling.  Everything is larger than
+life.  The ivy seems as if it is grasping at you, and the air is think and
+damp.  The wall is well over one hundred feet tall, with only stress lines
+from the ivy's relentlesss crawl upwards 
+~
+0 401410 4
+Rd     0
+D0
+~
+~
+0 0 4586
+D2
+~
+~
+0 0 4578
+S
+#4580
+A Simple Dirt Path~
+~
+~
+The opening in the forest opens even more, leading to a small trail.  It
+seems to meander its way around large rocky outcroppings towards the Keep. 
+The path has been travelled recently, strange for this old dark place.  
+~
+0 401410 3
+Rd     0
+D0
+~
+~
+0 0 4581
+D3
+~
+~
+0 0 4569
+S
+#4581
+A Simple Dirt Path~
+~
+~
+The path bends around a large granite boulder.  It is covered with age
+old lichen, and the moss gathered on the top allows for a stunted tree to
+grow.  Although the tree is only a few feet tall, it looks almost as old as
+the rock itself.  
+~
+0 401410 4
+Rd     0
+D1
+~
+~
+0 0 4582
+D2
+~
+~
+0 0 4580
+S
+#4582
+Around the Boulder~
+~
+~
+The path runs relatively straight here, passing past a large boulder. 
+Bootprints are scattered all across the path, both coming and going.  This
+path seems more well used the further you explore.  
+~
+0 401410 4
+Rd     0
+D1
+~
+~
+0 0 4583
+D3
+~
+~
+0 0 4581
+S
+#4583
+A Simple Dirt Path~
+~
+~
+The path is remarkably dull.  If it weren't for the fact that it was
+heading towards the Druid's Keep, perhaps nobody would travel it at all.  A
+large boulder stands to the southwest, which is why the path curves around
+it.  
+~
+0 401410 4
+Rd     0
+D2
+~
+~
+0 0 4584
+D3
+~
+~
+0 0 4582
+S
+#4584
+The Wonderful Scenery~
+~
+~
+The path wanders back and forth, heading, by and large, to the north and
+east.  Small rocks and the occasional stand of stunted trees pass for
+scenery here.  
+~
+0 401410 4
+Rd     0
+D0
+~
+~
+0 0 4583
+D1
+~
+~
+0 0 4585
+S
+#4585
+Before the Keep~
+~
+~
+The fabled Druid's Keep stands before you in all its glory.  Made of
+magnificent dark granite, it has stood the test of time.  Many years of
+weathering leave an aged look upon the walls, covered in millenia of ivy. 
+The sounds of a bustling community can be heard from where you stand,
+hinting at the life inside.  
+~
+0 401410 4
+Rd     0
+D0
+~
+~
+0 0 4589
+D3
+~
+~
+0 0 4584
+S
+#4586
+Outside the West Wall~
+~
+~
+The western wall of the Druid's Keep runs straight north.  The wall is
+made of ancient granite, and when you bang upon it seems stronger than the
+steel of your weapons.  The trail you follow seems to be less highly
+travelled at this point, almost as if most people turned back by the time
+they got this far.  
+~
+0 401410 4
+Rd     0
+D0
+~
+~
+0 0 4587
+D2
+~
+~
+0 0 4579
+S
+#4587
+Outside the West Wall~
+~
+~
+You stand outside the keep, on the Western side.  Ivy climbs the wall,
+putting small cracks and fissures through it.  It will not be man that tears
+this keep down, but time.  
+~
+0 401410 4
+Rd     0
+D0
+~
+~
+0 0 4588
+D2
+~
+~
+0 0 4586
+S
+#4588
+Under the Western Tower~
+~
+~
+You find yourself directly below the western tower of the Keep.  There is
+no entrance in visible from this vantage point.  The corpse of a large deer
+is on the ground, the first sign of wildlife, alive or dead, you have seen
+on your journey through this forest.  
+~
+0 401410 4
+Rd     500
+D2
+~
+~
+0 0 4587
+S
+#4589
+Before the Wooden Doors~
+~
+~
+Large wooden doors stand before you.  Carved on their front is the symbol
+of the Druid God, Dolmaar.  They seem to have lasted centuries, perhaps
+millenia.  There is a rock sitting just off of the path, worn by weather
+throughout the years.  It looks as if it would make a wonderful seat.  The
+walls of the keep are covered in ivy all around, but it is oily and almost
+impossible to climb.  
+~
+0 401414 4
+Rd     0
+E
+rock~
+You look intently at the rock that Alkar is sitting on.  It seems to be
+of plain granite, very simple indeed.  You seem to notice the letters
+LuEgheL inscribed upon the rock.  
+~
+D0
+~
+~
+119 4589 4591
+D2
+~
+~
+0 0 4585
+S
+#4590
+The Grand Entrance~
+~
+~
+You stand in the South Eastern corner of the grand entrance.  This seems
+to be the center of activity for the keep, as you can see Druids and
+visitors bustling back and forth constantly from your vantage point.  A
+tapestry hangs from the wall in front of you, depicting Dolmaar throwing the
+dark lord into his prison.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4595
+D1
+~
+~
+0 0 4591
+S
+#4591
+The Grand Entrance~
+~
+~
+You have walked into the grand entrace of the Druid's Keep!  This
+building is even more stunning on the inside than it was on the outside. 
+The dark granite gives way to elegant, but simple, white marble.  A
+chandeleir with hundreds of candles burns above your head.  The walls are
+covered with tapestries and mosaics depicting the createion of the world by
+Dolmaar, and the banishment of evil.  The floor is carpeted with thick
+eastern rugs, soft even through your adventuring boots.  This place is truly
+awe inspiring.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4596
+D1
+~
+~
+0 0 4592
+D2
+~
+~
+119 0 4589
+D3
+~
+~
+0 0 4590
+S
+#4592
+The Grand Entrance~
+~
+~
+You are in the South Eastern piece of the grand entrance.  The stonework
+in this area of the keep is absolutely stunning.  The stones are jointed
+together so wonderfully that you cannot notice them unless you stare
+intently at the wall.  The detailed carvings on the stones are quite
+intricate as well.  Close up you notice they are all Druidic runes, and from
+further back it is distinguishable that the wall is a large prayer to
+Dolmaar.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4597
+D3
+~
+~
+0 0 4591
+S
+#4593
+Inside the Keep~
+~
+~
+As you wander deeper into the Keep of the Druids, you begin to see the
+wonderful art and decorations these people have gathered throughout the
+centuries.  A painting hangs before you, picturing the mountain the Keep
+stands on, before it was built upon.  The landscape and forest look
+beautiful, although it seems much brighter than when you were in the forest.
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4601
+D1
+~
+~
+0 0 4594
+S
+#4594
+Beyond the Western Doors~
+~
+~
+You stand just west of a massive set of doors.  They are closed tightly,
+but the sound of an active room still trickles through the cracks.  The
+floor is cold marble, with swirls of brown and black through all of it.  The
+hall leads to further to the west, dressed in wonderful pictures and
+tapestries of the finest sort.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+3 0 4595
+D3
+~
+~
+0 0 4593
+S
+#4595
+A Large Double Door~
+~
+~
+You are in the grand foyer, and before you stands a large wooden door,
+only slightly smaller than the door you entered by.  Carved upon its surface
+are wondrous designs, and never ending patterns.  The designs are simple,
+yet wonderfully intracite.  Before the doors stands a single guard.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4596
+D2
+~
+~
+0 0 4590
+D3
+~
+~
+3 0 4594
+S
+#4596
+A Window to the Garden~
+~
+~
+You are still in the grand foyer, but this seems to be as far as it goes.
+There is a window on the north wall, overlooking a beautiful garden in the
+center of the keep.  
+~
+0 401418 0
+Rd     0
+E
+window~
+Through the large stained glass window you can see into the garden.  The
+flowers seem to be layed out in a pattern that resembles the Druid symbol
+for protection.  The reds, blues, greens, yellows and all other colours of
+the rainbow meld together to make the sight quite beautiful and add a sense
+of security to the Keep at the same time.  On the window frame you notice a
+tatter piece of robe, with the word 'ShElNyaan' painted on it.  
+~
+D1
+~
+~
+0 0 4597
+D2
+~
+~
+0 0 4591
+D3
+~
+~
+0 0 4595
+S
+#4597
+A Large Double Door~
+~
+~
+A set of large double doors stands before you, closed tightly and with a
+guard standing before it.  He seems almost as large as the doors themselves,
+perhaps that is why he was assigned such a job.  The wonderful rugs on the
+floor stop several inches from the door, giving the feeling that the rest of
+the keep is not as lavish as this.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+3 0 4598
+D2
+~
+~
+0 0 4592
+D3
+~
+~
+0 0 4596
+S
+#4598
+Beyond the Eastern Doors~
+~
+~
+You stand just east of a massive set of doors.  They are closed tightly,
+but the sound of an active room still trickles through the cracks.  The
+floor is cold marble, with swirls of brown and black through all of it.  The
+hall leads to further to the east, dressed in wonderful pictures and
+tapestries of the finest sort.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4599
+D3
+~
+~
+3 0 4597
+S
+#4599
+Within the Keep~
+~
+~
+The marble floor is cool to the touch; it always is in big keeps like
+this.  Despite the fireplaces that are everywhere, the chill never seems to
+leave.  The hall curves from north to west, curving gently.  The stonemasons
+who worked this place were greatly skilled in their wonderful art.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4602
+D3
+~
+~
+0 0 4598
+S
+#4600
+Wondrous Tapestries~
+~
+~
+Tapestries cover the walls.  Beautiful reds, blues, greens, and white. 
+They hang low, and others trail from the ceiling.  You can barely see the
+stone beneath all of the wonderful flowing cloth.  The largest seems to be
+of the Druidic symbol of knowledge, emblazened upon a large book in the hand
+of Dolmaar.  Truly, a sight to be seen.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4604
+D1
+~
+~
+0 0 4601
+S
+#4601
+Covered in Ivy~
+~
+~
+The hall gently curves from the south to the west, the stonework looking
+like it was never bevelled.  To the north, a patch of ivy grows upon the
+wall stretching its tendrils everywhere.  It most likely came through a
+crack in the wall or an old window, and has made its presence known.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+579 0 4628
+D2
+~
+~
+0 0 4593
+D3
+~
+~
+0 0 4600
+S
+#4602
+Covered in Ivy~
+~
+~
+The hall gently curves from the south to the east, the stonework looking
+like it was never bevelled.  To the north, a patch of ivy grows upon the
+wall stretching its tendrils everywhere.  It most likely came through a
+crack in the wall or an old window, and has made its presence known.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+579 0 4634
+D1
+~
+~
+0 0 4603
+D2
+~
+~
+0 0 4599
+S
+#4603
+A Bend in the Hall~
+~
+~
+The halld bends from the west back to the north, almost as if the keep's
+walls were built around something that couldn't be moved.  The builders
+worked wonderfully with what they had to do, and the walls look seamless. 
+The smooth granite walls are almost as smooth as the white marble floors,
+and just as cool to the touch.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4605
+D3
+~
+~
+0 0 4602
+S
+#4604
+Age Old Stone~
+~
+~
+The stone in this hallway seems icy to the touch, but thousands of years
+of wear still show no sign.  The age of the stone seems to eminate from the
+walls, telling stories of battles fought within the walls, when necessary,
+and experiments gone wrong.  Despite everything this place has been through,
+everything looks as if the Keep has just been finished.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4606
+D2
+~
+~
+0 0 4600
+S
+#4605
+Within the Keep~
+~
+~
+The section of hall you are is absolutely stunning.  The ceiling is well
+over twelve feet high and vaulted with beautiful stone arches.  The ceiling
+itself is covered in a large mosaic depicting Dolmaar sealing the Dark One
+into his eternal prison.  The wall to your right has a relief cut into it as
+well, seeming to depict a large Druid holding a sword as well.  This Keep is
+astounding in both size and beauty; everywhere you look there is something
+to catch the eye!  
+~
+0 401422 0
+Rd     0
+D0
+~
+~
+0 0 4607
+D2
+~
+~
+0 0 4603
+S
+#4606
+Inside the Halls~
+~
+~
+As you walk your footsteps echo faintly behind you.  You are deep within
+the keep of the druids, and this hallway seems quite empty.  It lacks the
+normal decoration you have taken for granted in your journies through the
+rest of the keep.  There is a soft blue carpet on the ground, but no
+tapestries or pictures.  No large cendelabras keeping the hall lit.  No
+windows to see the outside.  It is as if this section of the hall was
+forgotten.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4608
+D2
+~
+~
+0 0 4604
+S
+#4607
+An Interesting Discussion~
+~
+~
+The hallway here is wide, but two large Druids stand in the middle of it.
+Most people passing by attempt to walk around them, but end up jostling them
+to and fro.  They don't seem to take notice of the people as they chat back
+and forth.  The floor is smoothed down around them, almost as if they stand
+here most days and chat in the same spot and traffic continually goes
+around.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4615
+D2
+~
+~
+0 0 4605
+S
+#4608
+Before the Living Quarters~
+~
+~
+You stand in an intersection of halls.  The carpets on the floor look
+worn from the travel east and south, but there seems to be fewer trails to
+the north.  What does come from the north seems covered in dust and dirt. 
+To the east you can see several doors, with druids going in and out.  The
+living quarters.  To the south is the hall towards the main entrance.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4617
+D1
+~
+~
+0 0 4609
+D2
+~
+~
+0 0 4606
+S
+#4609
+The Living Quarters~
+~
+~
+This hallway is rather bland.  You see doors leading off into small rooms
+which look rather cramped.  It seems as if five or six druids are all
+sharing each of the rooms.  There are belongings and books overflowing into
+the hall.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4610
+D3
+~
+~
+0 0 4608
+S
+#4610
+Rooms fit for a King~
+~
+~
+The life of a Druid must not be as hard as you once thought.  This room
+looks as if a King would be able to recline comfortably here.  The bed is on
+the northwest wall, taking up much of the space.  In the northeast corner of
+the room there is a balcony which looks off of the mountain over the forest
+beneath.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4611
+D3
+~
+~
+0 0 4609
+S
+#4611
+Luxurios Rooms~
+~
+~
+This room is absolutely wondrous!  Who would have thought Druids would
+keep such pampered rooms?  A large four post canopy bed takes up most of the
+room, but there is a desk with a fine porcelain vase and other beautiful
+pieces of furniture all around.  There are several paintings depicting men
+and women adorning the room, and even several landscapes dot the walls.  A
+large fireplace is on the south wall, burning nicely and giving off warmth. 
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4618
+D3
+~
+~
+0 0 4610
+S
+#4612
+The Servant's Corridor~
+~
+~
+The corridor you walk in is quite unadorned.  The odd tapestry hangs on
+the wall, and the carpets are quite bland.  The carpet actually looks quite
+stained, probably from spills over the years.  You cannot tell what the
+original color may have been.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4620
+D1
+~
+~
+0 0 4613
+S
+#4613
+The Servant's Corridor~
+~
+~
+You notice a servant backing into a corner, looking quite scared.  The
+head maid seems to be yelling something about not getting work done on time.
+The tray the servant was carrying has been thrown away and its contents
+spilled on the floor.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4614
+D3
+~
+~
+0 0 4612
+S
+#4614
+The Servant's Corridor~
+~
+~
+The decor in the hall lessens considerably from the eastern halls.  Back
+here you can see that there are servants bustling along trying to get all of
+their work done.  A place as large as this keep must need hundreds of staff
+to keep it running smoothly and efficiently.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4615
+D3
+~
+~
+0 0 4613
+S
+#4615
+Deep in the Keep~
+~
+~
+You're standing deep in the Druid's Keep and the artwork and decoration
+is still wonderful.  The halls are teeming with life, druids and students
+bustling back and forth.  Servants are rushing to and fro, coming mostly
+from a hall to the west.  
+~
+0 401422 0
+Rd     0
+D0
+~
+~
+0 0 4621
+D2
+~
+~
+0 0 4607
+D3
+~
+~
+0 0 4614
+S
+#4616
+The Western Tower~
+~
+~
+The first, and most obvious, thing that you notice when you walk into
+this room is the giant pile of rubble that lies in the middle of it.  It
+seems that the giant spiral staircase has collapsed and has blocked further
+passage up.  The room is rather dark because the rubble blocks the light of
+the windows, which doesn't allow you to see much else.  There does seem to
+be an inscription on the wall beside the exit that you can make out, though.
+~
+0 401418 0
+Rd     0
+E
+inscription~
+The inscription reads: "Lahrandu alshanna dal lanna yarin" 
+~
+D1
+~
+~
+0 0 4617
+S
+#4617
+Before the Western Tower~
+~
+~
+You stand in the NorthWest corner of the keep, on the first floor.  To
+the west, is what remains of the western staircase.  It seems to have
+collapsed, from what is still unknown.  This stone was weaved with ancient
+magic, and there is hardly a mark in the rest of it.  Small chunks of stone
+and dust cover the ground here.  The cleanup effort seems to still be
+underway.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 4608
+D3
+~
+~
+0 0 4616
+S
+#4618
+Entrance to the Servant Corridor~
+~
+~
+You stand in a small room.  There is a simple wooden door to the east. 
+It remains closed most of the time, but as you stand here you notice
+servants constantly slipping in and out with trays, pitchers and other
+necessities for the druids.  
+~
+0 401422 0
+Rd     0
+D1
+~
+~
+3 0 4619
+D2
+~
+~
+0 0 4611
+S
+#4619
+Behind the Statue~
+~
+~
+You stand in a hallway, which you believe runs directly behind the inner
+courtyard which contains the wonderful garden of the Keep.  To the west
+there is a closed door.  When you press your ear against it you can hear the
+sounds of people talking gently.  Where you stand is a busy place, with
+servants running everywhere trying to get their work done.  
+~
+0 401422 0
+Rd     0
+D1
+~
+~
+0 0 4620
+D3
+~
+~
+3 0 4618
+S
+#4620
+The Servant's Corridor~
+~
+~
+You stand near the end of the servant's corridor.  You can see food being
+prepared and distributed, laundry being cleaned, and (gross) chamber pots
+being emptied.  Most rush by you without a glance, while others bump into
+you and snarl as they continue on.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 4612
+D3
+~
+~
+0 0 4619
+S
+#4621
+Before the Eastern Tower~
+~
+~
+You stand in a small annex just west of the eastern tower.  A large
+arched doorway leads further to the east, and you can see the beginning of a
+spiral staircase.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4622
+D2
+~
+~
+0 0 4615
+S
+#4622
+The Eastern Tower~
+~
+~
+You stand at the bottom of the eastern tower.  Above you a large
+staircase spirals up for several floors.  An iron railing has been bolted
+all the way along the edge, but it seems rickety and rusted as if it has
+been here as long as the keep itself.
+~
+0 401418 0
+Rd     0
+D3
+~
+~
+0 0 4621
+D4
+~
+~
+0 0 4643
+S
+#4623
+Wandering Through Shrubs~
+~
+~
+The garden you are wandering through is beautiful.  The section you have
+just entered is covered with shrubs carved in the most wonderful of shapes. 
+One looks almost like the keep, and another is a very tall Druid.  The most
+stunning is a large unicorn, rearing on its hind legs.  The artist who trims
+these must be very skilled.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4629
+D1
+~
+~
+0 0 4624
+S
+#4624
+Minature Trees~
+~
+~
+This section of the garden seems to be filled with small rock gardens and
+waterfalls.  Within the rock formations you can see small, stunted trees
+growing.  Most are miniature versions of their full grown cousins, but these
+trees look to be hundreds of years old as well.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4630
+D1
+~
+~
+0 0 4625
+D3
+~
+~
+0 0 4623
+S
+#4625
+A Meeting Place~
+~
+~
+This section of the garden doesn't seem much different from the rest.  A
+small path leads through several flower beds, filled with roses and other
+beautiful flowers.  The only distinguishable feature is a bench set off the
+the side of the path for someone to sit on.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4631
+D1
+~
+~
+0 0 4626
+D3
+~
+~
+0 0 4624
+S
+#4626
+A Game Area~
+~
+~
+The garden is cleared away in roughly a thirty food diamater, and a
+courtyard of interlocking stone has been laid.  Set into the stone there are
+several gaming boards, most you do not recognize, but there are several
+dicing areas that you do recognize.  Most are crowded with servants, and the
+occasional Druid, passing the time.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4632
+D1
+~
+~
+0 0 4627
+D3
+~
+~
+0 0 4625
+S
+#4627
+A Window into the Keep~
+~
+~
+You can faintly hear the rowdy calls of the gamers off to the west, but
+for the most part this section of the garden is fairly calm.  There is a
+window in the south wall, in which you can see into the Grand Foyer of the
+keep.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4633
+D3
+~
+~
+0 0 4626
+S
+#4628
+Beyond the Ivy~
+~
+~
+You stand in the entrance to the Druids' beautiful garden.  It looks like
+the entire inner courtyard has been transformed into trees, shrubs and
+flowers.  You can hear the songs of birds, and the chatter of the ocassional
+small woodland creature.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4635
+D1
+~
+~
+0 0 4629
+D2
+~
+~
+579 0 4601
+S
+#4629
+A Wondrous Garden~
+~
+~
+The garden that surrounds you is very neat and tidy.  All the weeds have
+been pulled, and the color schemes make for a very nice presentation.  As
+you survey your surroundings, a small hummingbird buzzes past your ear to a
+flower and quickly flies away.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4636
+D1
+~
+~
+0 0 4630
+D2
+~
+~
+0 0 4623
+D3
+~
+~
+0 0 4628
+S
+#4630
+The Garden~
+~
+~
+The scent of tulips softly wanders to your nose, almost as sweet as the
+scent of the roses.  As you walk along the paths, a small squirrel runs
+across your path and evades your footsteeps.  If you did not know you were
+in the Keep, it would seem this was a beautiful outdoor grove.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4637
+D1
+~
+~
+0 0 4631
+D2
+~
+~
+0 0 4624
+D3
+~
+~
+0 0 4629
+S
+#4631
+The Crystal Fountain~
+~
+~
+You stand in the center of the Druids' inner courtyard.  The entire area
+is covered in a lavish garden.  In front of you stands the centerpiece of
+the entire place, a large crystal fountain bubbling forth with water crystal
+clear.  Small streams of water pour out of the fountain and travel to other
+parts of the garden.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4638
+D1
+~
+~
+0 0 4632
+D2
+~
+~
+0 0 4625
+D3
+~
+~
+0 0 4630
+S
+#4632
+A Garden Path~
+~
+~
+A winding path slithers through the garden like a snake.  The working of
+the garden makes the path seem natural, and it does not interfere with the
+look at all.  All around there are small pedestals with water in them; the
+birds taking baths within them.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4639
+D1
+~
+~
+0 0 4633
+D2
+~
+~
+0 0 4626
+D3
+~
+~
+0 0 4631
+S
+#4633
+A Garden Path~
+~
+~
+The garden surrounds you with its beauty, covered in soft green grass and
+broken only by a myriad of flowers everywhere you look.  A thin path wanders
+through to take you to all the sights, but it doesn't disturb the garden
+whatsoever.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4640
+D1
+~
+~
+0 0 4634
+D2
+~
+~
+0 0 4627
+D3
+~
+~
+0 0 4632
+S
+#4634
+Beyond the Ivy~
+~
+~
+You stand in the entrance to the Druids' beautiful garden.  It looks like
+the entire inner courtyard has been transformed into trees, shrubs and
+flowers.  You can hear the songs of birds, and the chatter of the ocassional
+small woodland creature.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4641
+D2
+~
+~
+579 0 4602
+D3
+~
+~
+0 0 4633
+S
+#4635
+Beautiful Flowers~
+~
+~
+This section of the garden is immersed in flowers of every type.  You see
+tulips, daisies, roses, and many others you don't even recognize!  The flow
+from one type to the next looks entirely natural, and it is almost
+impossible to tell that this is a man made garden.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4636
+D2
+~
+~
+0 0 4628
+S
+#4636
+The Ancient One~
+~
+~
+This garden looks older here, with a large oak and other large trees as
+well.  It is quiet and peaceful.  An old Druid stands before the large oak,
+staring into it thinking.  
+~
+0 401414 0
+Rd     0
+D1
+~
+~
+0 0 4637
+D2
+~
+~
+0 0 4629
+D3
+~
+~
+0 0 4635
+S
+#4637
+The Garden~
+~
+~
+Vegetables and fruit trees line the small path here, growing most of what
+the Druids need to eat.  You can see apples, oranges and pear trees all
+around.  There also some larger trees growing nuts as well.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4638
+D2
+~
+~
+0 0 4630
+D3
+~
+~
+0 0 4636
+S
+#4638
+Before the Statue~
+~
+~
+You stand in the garden in the Druids Keep.  To the south you can hear
+running water, most likely coming from the crystal fountain or one of the
+small streams it feeds.  To the north you can see the head of a tall statue
+poking through the trees.  
+~
+0 401414 0
+Rd     0
+D0
+~
+~
+0 0 4642
+D1
+~
+~
+0 0 4639
+D2
+~
+~
+0 0 4631
+D3
+~
+~
+0 0 4637
+S
+#4639
+The Garden~
+~
+~
+The sound of bees buzzing fills your ears.  There are hives all around. 
+The Druids make use of the flowers to produce honey for themselves.  The
+beekeeper is covered in tight fitting protective clothing.  Hopefully a bee
+will not fly down your armor.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4640
+D2
+~
+~
+0 0 4632
+D3
+~
+~
+0 0 4638
+S
+#4640
+Dancing with Orchids~
+~
+~
+This section has been dedicated to the tropical orchid.  It is damp and
+warm, moreso than the rest of the garden.  You can feel the magics of this
+section keeping the warmth in.  Other tropical flowers dot the scape, but it
+is the orchid that stands out above the rest.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4641
+D2
+~
+~
+0 0 4633
+D3
+~
+~
+0 0 4639
+S
+#4641
+A Quiet Study Corner~
+~
+~
+This section of the garden is quiet.  A small chair sits in the corner,
+with a large book on it.  Several Druids are sitting around reading from
+books and scrolls, pondering the research they conduct.  
+~
+0 401410 0
+Rd     0
+D2
+~
+~
+0 0 4634
+D3
+~
+~
+0 0 4640
+S
+#4642
+The Sanctuary of Dolmaar~
+~
+~
+You stand before a statue in the back of the garden.  The soft grass has
+given way to hard, simple marble.  There is little decoration here, to make
+the statue stand out that much more.  The eyes of the statue stare down at
+the ground, seemingly focused upon you.  For some reason there seems to be
+an air of uneasiness around, eminating from the statue.  It is only a
+statue, right? 
+~
+0 393220 0
+Rd     0
+D2
+~
+~
+0 0 4638
+D5
+~
+~
+631 4577 4696
+S
+#4643
+The Eastern Tower~
+~
+~
+You stand partway up the eastern tower.  There are stairs continuing
+above and below you.  There is also a door on a landing, about ten feet
+ahead.  The door exits straight out to the second floor, as best as you can
+tell.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4644
+D4
+~
+~
+0 0 4692
+D5
+~
+~
+0 0 4622
+S
+#4644
+Before the Eastern Tower~
+~
+~
+A soft carpet crushes gently under your footsteps as you enter this small
+room.  To the direct south is the stairway leading up and down in the
+eastern tower.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 4643
+D3
+~
+~
+0 0 4645
+S
+#4645
+Nearing the Eastern Tower~
+~
+~
+The hallway begins to get a little thinner at this point.  It is safe to
+say that there are probably no more branching hallways to the east.  The
+carpets and tapestries seem a little less lavish on this floor, but
+everything is still quite regal.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4644
+D3
+~
+~
+0 0 4646
+S
+#4646
+A Long Corridor~
+~
+~
+The soft blue carpet continues on as you walk, leading your way through
+the Keep.  As you walk along the hall you count no less than 4 large
+candelabras on the walls lighting your way.  Even though daylight does enter
+these halls the candle light helps lift the feeling of dark and of dampness.
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4645
+D3
+~
+~
+0 0 4647
+S
+#4647
+An Eastern Corridor~
+~
+~
+The hall seems to go on forever, but it must be leading you somewhere. 
+The only way to find out is to keep going on.  The blue carpet leads,
+straight as an arrow, east and west to whatever destination awaits.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4646
+D3
+~
+~
+0 0 4648
+S
+#4648
+A Bend in the Hall~
+~
+~
+You notice a junction in the carpet, as if two pieces are joined
+together.  One continues east to west, and another heads off to the south as
+the hall makes a sharp turn.  In the corner a dark shape stands wearing a
+black robe that the Druids wear.  As you attempt to get closer you seem to
+be blocked by an unseen barrier.  Most likely a display piece.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4647
+D2
+~
+~
+0 0 4656
+S
+#4649
+Beyond the First Door~
+~
+~
+You stand just beyond the first door guarding whatever secrets are upon
+the second floor.  The stone looks older, if that is possible, up here.  It
+also looks slightly more worn.  It is as if the magics protecting the Keep
+are fading up here.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4659
+D2
+~
+~
+23 4657 4657
+S
+#4650
+A Bend in the Hall~
+~
+~
+You stand in the corner of of the hall as it makes a sharp turn from
+south to west.  As you stand and watch for a moment you can feel something
+pass you by several times.  It is not a breeze, but you can still feel it as
+if it was softly brushing against your face.  There is nothing to indicate
+the passage of a person or creature along the floor or walls.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 4658
+D3
+~
+~
+0 0 4651
+S
+#4651
+A Western Corridor~
+~
+~
+You feel that you are being watched, but from where you cannot tell. 
+There are no windows in this section of the hall, and there are no cracks
+that anyone could peep through.  The joints between the stones are as tight
+here as they are anywhere else in the keep.  You notice a slight temperature
+drop from the corridor just to the east.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4650
+D3
+~
+~
+0 0 4652
+S
+#4652
+A Western Corridor~
+~
+~
+The blue carpet is lush and soft as you walk upon it.  You cannot help
+but notice the temperature of the hallway getting cooler as you continue to
+the west.  The feeling of someone else being with you gets stronger as you
+walk along the hall as well.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4651
+D3
+~
+~
+0 0 4653
+S
+#4653
+Nearing the Tower~
+~
+~
+The hallway begins to get a little thinner at this point.  It is safe to
+say that there are probably no more branching hallways to the west.  The
+carpets and tapestries seem a little less lavish on this floor, but
+everything is still quite regal.
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4652
+D3
+~
+~
+0 0 4654
+S
+#4654
+Before the Tower~
+~
+~
+You stand before the western tower, leading up and down.  The hallway
+will take you east if you wish, and a doorway to the south leads into the
+tower staircase.  There seems to be a lot of dust on the carpet.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4653
+D2
+~
+~
+0 0 4655
+S
+#4655
+The Western Tower~
+~
+~
+You come into a large tower, the western tower that you were able to see
+from outside the keep in the forest.  As you step into here the first thing
+you notice is that several steps down the staircase disappears, crumbled
+with age into a large pile below.  The stairs still continue upwards in a
+spiral taking you closer to Dolmaar.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4654
+D4
+~
+~
+0 0 4694
+S
+#4656
+East of the First Door~
+~
+~
+A small table sits on the north wall, holding a vase of flowers and a
+single candle.  Above the table is a portrait, but of who you cannot say. 
+The simple dressings in the room make it out to be some kind of shrine the
+Druids have set up.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4648
+D3
+~
+~
+0 0 4657
+S
+#4657
+Before the First Door~
+~
+~
+You stand before the first set of doors on this hallway, but what it
+leads to you do not know.  This may be some kind of test to see how far you
+can continue in these halls.  The decor steps up a notch here.  From the
+ceiling hangs a large chandelier holding several hundred candles.  It must
+take hours to replace and light all of them.  The carpet gradually changes
+from a dark blue at the east and west to a dark red, which seems to run
+underneath the door.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+23 4657 4649
+D1
+~
+~
+0 0 4656
+D3
+~
+~
+0 0 4658
+S
+#4658
+West of the First Door~
+~
+~
+You stand just west of the center of the keep, on the second floor.  A
+soft blue carpet braces every step you take making the walk easier on your
+feet.  You notice that to the east the blue gently blends to a purple and
+then to pure red.  
+~
+0 401422 0
+Rd     0
+D0
+~
+~
+0 0 4650
+D1
+~
+~
+0 0 4657
+S
+#4659
+Between the Doors~
+~
+~
+You stand right between the first and second doors.  The hall is short,
+but every step seems like a mile.  Who knows what may be guarding the second
+door.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4660
+D2
+~
+~
+0 0 4649
+S
+#4660
+Before the Second Door~
+~
+~
+Before you stands a large door made of dark, dark wood.  Walnut maybe,
+but you can see the magical auras coming forth from it.  This keep has been
+built to protect something, but you still cannot tell what that is.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+7 4660 4661
+D1
+~
+~
+0 0 4679
+D2
+~
+~
+0 0 4659
+D3
+~
+~
+0 0 4667
+S
+#4661
+Beyond the Doors~
+~
+~
+You are standing past the second set of doors in the upper hallway of the
+Druid's Keep.  The stone seems to change from a plain granite to more of a
+smooth marble as you enter this section of the keep.  The hall continues
+north leading you to something, but what?  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4662
+D2
+~
+~
+7 4660 4660
+S
+#4662
+A Long Hallway~
+~
+~
+The hallways continue on with the smoothe marble that started a shortways
+south.  It is almost pure white with only the slightest hints of darker
+stone showing.  The light and dark almost signifies the druids outlook on
+life, mostly good with a little of the dark to keep everything from getting
+stagnant.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4663
+D2
+~
+~
+0 0 4661
+S
+#4663
+A Long Hallway~
+~
+~
+The whiteness of marble surrounds you in this long hall.  A chandalier of
+fine crystal hangs above you with long white candles burning slowly.  A
+little further north you can see portraits on the wall.  
+~
+0 401422 0
+Rd     0
+D0
+~
+~
+0 0 4664
+D2
+~
+~
+0 0 4662
+S
+#4664
+A Long Hallway~
+~
+~
+You are standing in a long hallway.  You see portraits of men dressed in
+black robes lining the walls on both sides.  The hallway is made of
+intricate inlaid stonework, looking hundreds of years old.  This place is
+simple and extravagant at the same time.  
+~
+0 401422 0
+Rd     0
+D0
+~
+~
+0 0 4665
+D2
+~
+~
+0 0 4663
+S
+#4665
+The Door to Dlraxor's Laboratory~
+~
+~
+You stand before a large door carved from a single piece of oak.  A
+single keyhole and a doorknob adorn the door, nothing else.  This room seems
+like every other in the Druid's Keep, but why was it guarded so much? 
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+103 4662 4666
+D2
+~
+~
+0 0 4664
+S
+#4666
+The Laboratory of Dlraxor~
+~
+~
+As you enter this room a strange smell buffets you strongly.  You notice
+hundreds of different jars sitting upon shelves.  The spell components of
+the mighty druid Dlraxor must be giving off this horrid stench.  Your eyes
+take heed of the large desk carved of solid oak here.  It seems to be
+stained black, red, yellow and other colours upon its surface; most likely
+from the many spells that Dlraxor attempts here.  Underneath the desk is a
+beautiful carpet which depicts a glorious rendition of the Keep from an
+aerial view.  You notice the five points of a pentagram protuding forth from
+under the carpet.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+103 4662 4665
+S
+#4667
+West of the Doors~
+~
+~
+You stand just west of the second set of doors on this floor.  The
+hallway looks as if it carries on to the west if you wish to continue
+travelling.  The lack of carpet in this section of the keep sparks something
+in your mind.  
+~
+0 401422 0
+Rd     0
+D1
+~
+~
+0 0 4660
+D3
+~
+~
+0 0 4668
+S
+#4668
+A Winding Corridor~
+~
+~
+The hall takes a sharp turn to the north here.  Every step you take, now
+that there is no carpet, clinks loudly and echoes for several moments.  It
+seems strange that this place would be the strangest in the Druid's Keep.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4669
+D1
+~
+~
+0 0 4667
+S
+#4669
+A Forked Hall~
+~
+~
+The hall you were following suddenly splits into three different
+directions.  There is the way that you came from, and two seperate choices. 
+You can continue to the north, south, or to the west.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4670
+D2
+~
+~
+0 0 4668
+D3
+~
+~
+0 0 4674
+S
+#4670
+Within the Halls~
+~
+~
+You stand in a hall, void of decorations or anything to mark it as
+distinct.  This upper floor has become much more bland than the lower.  The
+lower section of the keep was filled with decorations and carpets, whereas
+when you step deeper into the halls in this mountain everything seems to be
+getting darker and colder.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4671
+D2
+~
+~
+0 0 4669
+S
+#4671
+Wandering the Halls~
+~
+~
+You are wandering the halls deep in the mountain that the Druid's keep
+resides upon.  It seems as if there are sounds coming from everywhere. 
+Creaks, groans, pops and squeaks at every step you take.  The strange thing
+is that you see no rodents, no spiders, and nothing else that could possibly
+be making these sounds.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4672
+D2
+~
+~
+0 0 4670
+S
+#4672
+Exploring the Halls~
+~
+~
+The dust that covers these halls is thick.  Almost as if nobody has been
+down here in a very long time.  Why do the Druids guard this upper section
+so much when there is nothing here?  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4673
+D2
+~
+~
+0 0 4671
+S
+#4673
+A Dead End~
+~
+~
+The hall you were walking through comes to a sudden dead end.  It seems
+as if this hall was a hasty addition and it was never finished completely. 
+You notice that the spot where the hall ends is rough and jagged, quite
+different from the rest of the keep which is smooth to the touch and not a
+crack to be found.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 4672
+S
+#4674
+A Short Passage~
+~
+~
+You are in a short passage heading east to west.  The walls and ground
+are covered in dust, and every step you take kicks up a small cloud that
+settles back down almost as quickly as it was made.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4669
+D3
+~
+~
+0 0 4675
+S
+#4675
+A Bend in the Hall~
+~
+~
+The hall you are following takes a sharp turn, leading from north to
+east.  It is very strange how this keep is laid out on the second floor.  It
+does not match the first whatsoever.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4676
+D1
+~
+~
+0 0 4674
+S
+#4676
+A Short Hallway~
+~
+~
+You are in a short hallway jaunting from south to north.  The walls are
+smooth and covered in cobwebs.  A small candelabra hangs from the wall,
+dusty from the years of no use.  The candles are half burnt, and have never
+been replaced.  Almost as if this section of the keep was left quite
+hastily.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4677
+D2
+~
+~
+0 0 4675
+S
+#4677
+A Dead End~
+~
+~
+You have reached a dead end in the hall.  The dust here seems less thick
+than in other places, almost as if it has been disturbed recently.  You see
+no footprints or other markings to verify that fact, though.  The walls on
+the sides are the smooth stone you are used to seeing in the Keep.  The
+block in the north is rough and jagged as if hastily made.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+515 0 4678
+D2
+~
+~
+0 0 4676
+S
+#4678
+A Hidden Library~
+~
+~
+You have stumbled upon the great library of the Druids.  This is where
+they hide all the books they have found, or written, which contain knowledge
+that should be kept away from the world.  The writings contained here could
+be used to destroy the world, if in the wrong hands.  Unfortunately,
+everything seems to be written in the ancient tongue of the Druids which you
+are unable to read.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+515 0 4677
+S
+#4679
+East of the Doors~
+~
+~
+You stand just east of the large double doors guarding something that you
+do not know.  There is no carpet here, strange considering there is
+everywhere else that you seem to remember.  The stone on the floor looks
+worn from passage over time, also strange since most of the keep looks as if
+it is brand new.  
+~
+0 401422 0
+Rd     0
+D1
+~
+~
+0 0 4680
+D3
+~
+~
+0 0 4660
+S
+#4680
+A Winding Corridor~
+~
+~
+The stone corridor you stand in winds gently from the west to the north,
+taking you in a different direction than the one you were travelling in. 
+The stone here looks worn as well, quite different from the first floor that
+you were exploring.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4681
+D3
+~
+~
+0 0 4679
+S
+#4681
+A Forked Hall~
+~
+~
+The hall you were walking through splits here.  There are three different
+choices that you may make.  You can go north, east or south at this
+junction.  It seems as if most people who have come this way continued north
+or south, obvious from the path of worn stone in the floor.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4682
+D1
+~
+~
+0 0 4686
+D2
+~
+~
+0 0 4680
+S
+#4682
+A Well Lit Hall~
+~
+~
+A large candelabra is attached to each wall here, holding four candles
+each.  The candles are emitting more light that you would have expected,
+making the hall well lit and easy to see in.  You notice near the bottom of
+the eastern wall there is a small splatter of blood, old and dried.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4683
+D2
+~
+~
+0 0 4681
+S
+#4683
+A Long Corridor~
+~
+~
+This halls seems to go on forever.  It has been dug, straight as an
+arrow, for over two hundred feet.  There is bright light softly seeping into
+your field of vision from the north and south, but a strange darkness hangs
+in this section of the hall.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4684
+D2
+~
+~
+0 0 4682
+S
+#4684
+A Bright Hallway~
+~
+~
+A strange glowing light hangs from the ceiling, most likely a magical
+device of some sort.  The walls look dark, but there seem to be long grooves
+exposing lighter ston.  Almost as if someone clawed the walls trying to get
+out.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4685
+D2
+~
+~
+0 0 4683
+S
+#4685
+A Sudden End~
+~
+~
+The hall you were following comes to a sudden end.  The stone is well
+finished, looking new as if it were on the bottom floor.  The wear marks on
+the floor seem as if they continue going north.  Maybe the wall is new and
+is in place to block something off.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 4684
+S
+#4686
+A Long Corridor~
+~
+~
+The hall winds slightly north and south as you walk along, never enough
+that you cannot see beyond the next curve.  Even though the bends are
+slight, the shadows could still hide something your eyes cannot pick out. 
+Small dust clouds raise, and fall just as quickly, with your passing.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4687
+D3
+~
+~
+0 0 4681
+S
+#4687
+A Bend in the Hall~
+~
+~
+In contrast to the long twisting hall to the west, you come upon a tight
+straight turn.  The hall now travels from east-west to north-south.  Dusty
+footprints are recognizeable on the old floor, travelling farther north.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4688
+D3
+~
+~
+0 0 4686
+S
+#4688
+A Dark Hallway~
+~
+~
+The darkness permeating through this room seems thick enough to cut with
+a knife.  You sense that the hall still continues from the north to the
+south, but you suspect that even with a light you would be unable to see
+much else about the long hallway you stand in.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4689
+D2
+~
+~
+0 0 4687
+S
+#4689
+A Collapsed Hall~
+~
+~
+The hallway you stand in is dark, but not as dark as it was just a short
+way to the south.  You can see through the darkness to make out that the
+hall has collapsed just a few steps to the north.  There is more dust here
+than in the rest of the hall, most being sediment from the stone as it
+collapsed.  The whole place groans as if it may collapse on top of you.  
+~
+0 401422 0
+Rd     0
+D0
+~
+boulder~
+515 0 4690
+D2
+~
+~
+0 0 4688
+S
+#4690
+A Bubble of Safety~
+~
+~
+You stand in what used to be a hallway in the Druids' Keep.  There are
+large pieces of collapsed stone resting on each other to create a small
+bubble of safety within what must have been raining death.  There seems to be
+a small fire in one corner of the little room, and a midden heap in another.
+It seems someone has been living here.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+515 0 4689
+S
+#4691
+&REntering The Catacombs~
+~
+~
+&zYou are within the very depths of the mountain that the Druid's Keep
+stands upon.  These catacombs are jaggedly cut out of the various types of
+rock all around.  Water drips ominously from an unknown source and echoes
+throughout the damp and forboding caves.  
+~
+0 401415 5
+Rd     0
+D5
+~
+~
+0 0 4697
+S
+#4692
+The Eastern Tower~
+~
+~
+You've reached the top of the tower, above you is a wooden roof blocking
+further passage.  The last torch is several feet below your current position
+and the shadows that are being cast make for an ominous setting.  You could
+swear that from outside this tower looked taller, and that you can hear a
+faint scratching sound from above.
+~
+0 134619145 0
+Rd     0
+D4
+~
+~
+631 0 4693
+D5
+~
+~
+0 0 4643
+S
+#4693
+Atop the Eastern Tower~
+~
+~
+This room is bright!  Brighter than you may have ever seen before. 
+Staring at the figure filling most of the room would blind a mortal in
+seconds.  Shielding your eyes you notice two black specks in the middle of
+the light, and teeth formas the form yawns.  The dragon stares at you
+blankly.  
+~
+0 134619145 0
+Rd     0
+D5
+~
+~
+631 0 4692
+S
+#4694
+The Western Tower~
+~
+~
+You've reached the top of the tower, above you is a wooden roof blocking
+further passage.  The last torch is several feet below your current position
+and the shadows that are being cast make for an ominous setting.  You could
+swear that from outside this tower looked taller, and that you can hear a
+faint scratching sound from above.  
+~
+0 401408 1
+Rd     0
+D4
+~
+~
+631 0 4695
+D5
+~
+~
+0 0 4655
+S
+#4695
+Atop the Western Tower~
+~
+~
+This room is dark.  Very dark.  You can see two eyes glowing in the far
+corner of the room, which seem to be the only source of light.  Where the
+light that the eyes reflect comes from, you do not know.  It seems as if
+something is living in this dark, and it cannot be anything good.  The
+sounds of something scraping on wood are much louder here.
+~
+0 393228 0
+Rd     0
+D5
+~
+~
+631 0 4694
+S
+#4696
+The Holy Place~
+~
+~
+This place eminates with holy power.  This is the sort of place that a
+goody-two-shoes would love, and those who follow evil would run from
+screaming.  It is simple, other than a small stream running to the north. 
+The water glows a little differently as it passes beneath where the statue
+stands above.  
+~
+0 401410 0
+Rd     0
+D4
+~
+~
+631 4577 4642
+S
+#4697
+&RThe Catacombs~
+~
+~
+You are in a large intersection of tunnels.  It seems there is a path
+that heads out in every cardinal direction, but there is no hint to where
+they lead.  Strange sounds and cries seemingly come from everwhere, and the
+damp air chills to the bone!  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4698
+D1
+~
+~
+0 0 4711
+D2
+~
+~
+0 0 4724
+D3
+~
+~
+0 0 4737
+D4
+~
+~
+0 0 4691
+D5
+~
+~
+631 0 4798
+S
+#4698
+&RThe Catacombs~
+~
+~
+This cavern seems to slither its was through the darkness underneath the
+Druid's Keep.  It is dark, cold, and damp.  The sound of running water comes
+from the North, while a slight movement of air heads South.
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4699
+D2
+~
+~
+0 0 4697
+S
+#4699
+&RThe Catacombs~
+~
+~
+A small stream of water flows from the North into the cavern wall to the
+West.  It looks black and dirty, most likely polluted by something evil down
+here.  The water is warmer than the air here, adding moisture and generating
+a slight breeze to the South.  
+~
+0 401422 5
+Rd     0
+D0
+~
+~
+0 0 4700
+D2
+~
+~
+0 0 4698
+S
+#4700
+&RThe Catacombs~
+~
+~
+Clean water cascades in through the crumbling roof of the cavern here. 
+The crystal clear liquid turns an inky black however as it splashes down
+over the tumbled rocks of the northern wall.  The splashing tide joins at
+the bottom of the wall with the unsavory stream which runs into this room
+from the south and flows out through a crevice in the room's north west
+corner.  The majority of the room has been cleared of any debris which may
+have resulted from the collapse of the northern wall, however the structure
+does not appear to have been reinforced after the cave in and still seems
+shaky at best.  The sickening stench of evil and decay assault you from the
+east.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4701
+D2
+~
+~
+0 0 4699
+S
+#4701
+&RThe Catacombs~
+~
+~
+The smell of death and decay is very strong.  The scent slowly slithers
+its way across the room and continues to the West with a slow current of
+air.  The cavern floor is damp with condensation, and the sound of running
+water can be heard close by.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4702
+D3
+~
+~
+0 0 4700
+S
+#4702
+&RThe Catacombs~
+~
+~
+Evil seems to eminate from here.  It is all around and the smell of it is
+thick within the air.  There is no visible source to justify its presence,
+but something is close by!  The scent moves slowly to the West, along with
+the sound of far off running water.  
+~
+0 401422 5
+Rd     0
+D1
+~
+~
+0 0 4703
+D2
+~
+~
+627 0 4756
+D3
+~
+~
+0 0 4701
+S
+#4703
+&RThe Catacombs~
+~
+~
+This section of tunnel is a tight fit.  It is overgrown with a thick,
+glowing fungus of some sort.  It looks like it is moving, although it could
+be a trick of the eyes.  There are the shells of thousands of small beetles
+and the bones of many small rodents littering the ground where you can see
+it.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4704
+D3
+~
+~
+0 0 4702
+S
+#4704
+&RThe Catacombs~
+~
+~
+The cave veers sharply here making a tight turn.  In the corner there is
+a large puddle of a slimey substance.  Who knows what could have made it! 
+You carry on slowly as not to slip and fall...  That stuff could be toxic!  
+~
+0 401418 5
+Rd     0
+D2
+~
+~
+0 0 4705
+D3
+~
+~
+0 0 4703
+S
+#4705
+&RThe Catacombs~
+~
+~
+It gets darker and darker as you trudge through the cold caverns down
+here.  It seems like your trusty light is less effective as you forge forth
+through the unknown.  This piece of cavern is a tight fit, it looked large
+enough when you came through, but it seems to have compressed down upon you!
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4704
+D2
+~
+~
+0 0 4706
+S
+#4706
+&RThe Catacombs~
+~
+~
+The catacacombs continue on their dreary trail, this section leading due
+north-south as far as you can tell with your keen sense of direction.  The
+walls are cold and slick with an unknown substance.  They seem to be
+chiseled out with claw marks all over.  What sort of thing could have made
+these caves?  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4705
+D2
+~
+~
+0 0 4707
+S
+#4707
+&RThe Catacombs~
+~
+~
+You have wandered deep into the catacombs below the Druid's Keep.  It is
+cold and damp down here.  The constant sound of dripping water comes from
+everywhere.  Glowing eyes open in close all around you, although never long
+enough to find out where they came from.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4706
+D2
+~
+~
+0 0 4708
+S
+#4708
+&RBefore A Strange Door~
+~
+~
+You have entered a different part of the catacombs.  This piece seems
+more finished that most of the rest, rather than quickly channeled out.  To
+the south lies a heavy door, barred and chained shut.  It looks like there
+is no passing!  
+~
+0 4 5
+Rd     0
+D0
+~
+~
+0 0 4707
+D2
+~
+~
+103 0 4709
+S
+#4709
+&RThe Onyx Door~
+~
+~
+&zThe stone changes from the dark granite that you have become used to
+travelling through these catacombs, into smooth and sleek onyx.  There are
+runes carved everywhere around in the stone!  You recognize several, runes
+of protection and others to boost the carver's spell casting power in this
+area.  Most you cannot decipher, leaving a strange puzzle behind.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+103 0 4708
+D2
+~
+~
+119 4708 4710
+S
+#4710
+&RAn Intricate Study~
+~
+~
+&zYou stand in a large study, lit by several floating balls of light.  You
+can make out paintings on the walls, mostly showing scenes of grotesque
+violence or sexual acts.  As you walk further into the room your step in a
+small puddle, and when you look closer you notice it is a red sticky liquid.
+The south wall, behind a large desk, is overflowing with ancient books and
+scrolls in various stages of decay.  On the desk you can see a small platter
+with what seems to be a still beating heart squirting blood everywhere.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+119 4708 4709
+S
+#4711
+&RThe Catacombs~
+~
+~
+The eastern hall of the catacombs appears to have been carved from the
+bedrock upon which the Druids' Keep is set and then polished to extreme
+shoothness.  The walls appear to be perfectly parallell as do the floor and
+ceiling.  Where they intersect the angle is a perfect 90 degrees and appears
+to lack any sort of seam.  Your breath mists the air before you as the cold
+tries to creep into your bones.  To the west, the tunnel intersects with the
+others which form the catacombs.  To the east, the tunnel continues on, into
+the bowls of the earth.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4712
+D3
+~
+~
+0 0 4697
+S
+#4712
+&RThe Catacombs~
+~
+~
+The eastern passage continues blindly through the bedrock, the dancing
+light of your light source the only thing which seems to add character to
+the perfectly polished passage.  It is difficult to judge how far you've
+travelled as the tunnel offers you no landmarks.  You can only soldier on,
+trusting that this tunnel must eventually end.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4713
+D3
+~
+~
+0 0 4711
+S
+#4713
+&RThe Catacombs~
+~
+~
+The hallway's gentle curve is subtle enough that you realize you must
+have been travelling along the bend for quite some time before noticing the
+change.  The smooth, seemless quality of the tunnel's construction makes the
+detection of subtle changes in direction extremely difficult.  The tunnel
+seems eventually to resume straight courses to the south and to the west of
+your current location.  
+~
+0 401418 5
+Rd     0
+D2
+~
+~
+0 0 4714
+D3
+~
+~
+0 0 4712
+S
+#4714
+&RA Dark Passage~
+~
+~
+The air is comfortable in this section of the hallway.  Warm air flows
+gently past you towards the north.  The hallway's construction is unchanging
+as far as your light source will carry.  The unnaturally smooth, seemless
+construction offers nothing for your eyes to focus on and you regularly find
+yourself feeling disoriented despite the unwavering course of the passage.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4713
+D2
+~
+~
+0 0 4715
+S
+#4715
+&RAn Oaken Door~
+~
+~
+A simple oak door is set into the western wall here.  It is completely
+unadorned, apparantly designed with servicability, and not elegance in mind.
+The air here is warm and a pleasant breeze blows along the passage heading
+north.  In both directions the hallway continues well beyond the outer
+reaches of your light, completely lacking distinguishing features.  
+~
+0 401422 5
+Rd     0
+D0
+~
+~
+0 0 4714
+D2
+~
+~
+0 0 4716
+D3
+~
+~
+83 0 4768
+S
+#4716
+&RA Dark Passage~
+~
+~
+The essentially featureless hallway continues to the north and south
+here.  The air is quite warm and smells slightly of sulphur.  A gentle
+current of air moves towards the north.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4715
+D2
+~
+~
+0 0 4717
+S
+#4717
+&RA Dark Passage~
+~
+~
+You stand at the intersection of two tunnels.  The first, running
+north-south is an immaculitely clean tunnel, looking to have been born from
+the rock and polished to a glassy texture.  The passage south of your
+current location has been cut off by a cave in.  To the north the passage
+stretches off into the darkness.  To the west, a roughly hewn passage shows
+signs of recent passage.  Hot flows of air whistle past you and around the
+corner, rushing off towards the north.  
+~
+0 401422 5
+Rd     0
+D0
+~
+~
+0 0 4716
+D3
+~
+~
+0 0 4718
+S
+#4718
+&RDifficult Terrain~
+~
+~
+The floor here is littered with fallen stone from the crumbling walls and
+ceiling.  Everything seems to be covered in a thick layer of soot and the
+air is thick with sulphur and smoke.  The tunnel appears to open up west of
+here, and an orange glow emenates from the entrance to the chamber in that
+direction.  The hot air rushes past you towards the east, on into the
+darkness.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4717
+D3
+~
+~
+0 0 4719
+S
+#4719
+&RThe Blasting Furnace~
+~
+~
+You stand within the dome of an enormous geode.  A cavernous bubble
+created by lava flow, the entire inner surface covered with crystal
+formations.  The fifteen foot high dome glows a soft orange due to the
+refracted light cast by the small lava vein which runs through the centre of
+this room.  The air is hot and thick with gases escaping from deep within
+the earth.  The heat is overpowering.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 4718
+D3
+~
+~
+0 0 4720
+S
+#4720
+&RPiles of Soot~
+~
+~
+The rough hewn passage continues it's progress through the earth here. 
+The floor is littered here and there with the ashen remains of those
+unfortunate enough to have fallen victim to the Fire Elemental which makes
+its home here.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 4719
+D3
+~
+~
+0 0 4721
+S
+#4721
+&RBefore A Strange Door~
+~
+~
+You stand before a strange metal door.  The surface of the portal is
+grainy and black.  All about, spaced seeminly at random, are runes, the
+likes of which you have seen nowhere else.  The heat from the lava flow to
+the east makes the air almost impossible to breathe.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4720
+D3
+~
+~
+103 0 4722
+S
+#4722
+&RThe Crystal Door~
+~
+~
+&zAs you walk in to this room the first thing that you notice is that the
+rock changes from dark granite to a translucent crystal door leading further
+west.  It seems strange that such a thing would be located is such a dark
+and dreary place.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+103 0 4721
+D3
+~
+~
+119 4720 4723
+S
+#4723
+&RA Crystal Cave~
+~
+~
+&zAs you step into this small cave you almost slip and fall because of the
+quick change from rough rock to slick crystal.  There is only one small
+light in this room, but it seems almost as bright as daylight.  The crystal
+reflects and amplifies the light as it bounces off of it.  There are no
+adornments in this little cave other than the light near the ceiling and a
+small circle on the ground, surrounded by candles.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+119 4720 4722
+S
+#4724
+&RThe Catacombs~
+~
+~
+The darkness is opressive here, seemingly trying to suffocate your light
+source as you wander through the tunnels.  Underfoot lies what one might
+grudgingly call a stream, though the trickle of water has nearly been
+stopped entirely by the slimes and moulds which abound.  The stench in the
+air moves sluggishly past you northward.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4697
+D2
+~
+~
+0 0 4725
+S
+#4725
+&RThe Catacombs~
+~
+~
+The sucking, wet sounds of your footfalls echo strangely as you wander
+through the catacombs.  The ceiling and walls seem to pull in around you as
+you walk, their jagged surfaces seeming ready to crush you at any moment. 
+Your light source creates shifting movement all around, constantly pulling
+your eyes to the shadows.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4724
+D2
+~
+~
+0 0 4726
+S
+#4726
+&RThe Catacombs~
+~
+~
+You've come to a bend in the tunnel.  It is particularly dark, wet and
+slimy here.  The corner is obstructed by a large slab of stone which appears
+to have fallen through the ceiling.  It looks like a tight squeeze, but it
+looks like you can make it.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4725
+D3
+~
+~
+0 0 4727
+S
+#4727
+&RThe Catacombs~
+~
+~
+The air barely moves here.  The damp and cold gnaw away at your bones. 
+Slime and ooze fill the spaces between your toes.  The darkness is
+opressive, seeming almost to have weight of its own.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4726
+D3
+~
+~
+0 0 4728
+S
+#4728
+&RThe Catacombs~
+~
+~
+There is muck everywhere here.  Foul looking moulds and sickly green
+slimes grow everywhere.  The air can hardly be called warm, but it is not so
+firgid as in the central sections of the catacombs.  Condensation collects
+everywhere, running down the walls, and occasionally dripping on your head. 
+~
+0 401422 5
+Rd     0
+D0
+~
+~
+595 0 4762
+D1
+~
+~
+0 0 4727
+D3
+~
+~
+0 0 4729
+S
+#4729
+&RThe Catacombs~
+~
+~
+The air is thick with humidity here.  Warm air from the east mixes with
+cooler air from the west creating a localized fog, which coupled with the
+darkness makes it almost impossible to see.  The ground here is spongy and
+soft.  Closer inspection reveals a healthy carpet of moss.  Only a very
+small trickle of water runs along the floor through the moss.  This must be
+one of the sources of the stream which runs east of here, and along the
+north-south corridor of the catacombs.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4728
+D3
+~
+~
+0 0 4730
+S
+#4730
+&RThe Catacombs~
+~
+~
+It is difficult to see the sides of the cavern here due to it's size. 
+Footfalls echo heavily in the cavernous space.  The ground below is dry and
+supports only sporratic fungal growth.  It is quite warm here, though not
+unpleasant.  The breeze blows softly past, around the bend and towards the
+east.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4731
+D1
+~
+~
+0 0 4729
+S
+#4731
+&RThe Catacombs~
+~
+~
+The catacombs here are of immense size.  Echos seem returned to you at a
+great distance.  The darkness folds in close, caressing you.  Other than
+your light source, the only sign of life is the faint green glow of
+something off in the distance to the north.  
+~
+0 401422 5
+Rd     0
+D0
+~
+~
+0 0 4732
+D2
+~
+~
+0 0 4730
+S
+#4732
+&RThe Catacombs~
+~
+~
+The heat here is uncomfortable.  It drys skin and makes armor chaif.  A
+green light, a pale beacon against the smothering darkness, shimmers to the
+north.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4733
+D2
+~
+~
+0 0 4731
+S
+#4733
+&RThe Catacombs~
+~
+~
+The heat here is opressive.  The dry air burns your throat as you
+breathe, leaving you with a dry gritty fealing in your mouth.  A green light
+shines to the north.  It is the only light, save your own, that you see.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4734
+D2
+~
+~
+0 0 4732
+S
+#4734
+&RBefore A Strange Door~
+~
+~
+You stand at the base of a sheer stone wall which rises into the inky
+blackness above.  To your left and your right it stretches well beyond the
+globe of illumination cast by your light source.  Directly in front of you,
+a strange door seems the only breech in the otherwise glassy smooth surface.
+The door itself is made of semi-lusterous metal embossed at odd intervals
+with runes.  The runes it seems are the source of the green light which can
+be seen from the south.  They dance with contained green fire, as do those
+which adorn the arched door frame.  The writhing green light seems to lend a
+life to the wards, almost making them seem to shift and writh as well.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+103 0 4735
+D2
+~
+~
+0 0 4733
+S
+#4735
+&RThe Iron Door~
+~
+~
+&zYou stand before a large iron door, just a short ways to the north. 
+The door looks rather beaten and worn, but seems to have been able to hold
+whatever is behind it in so far.  You can hear scrapes, wails and banging
+from whatever lies behind it.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+119 4734 4736
+D2
+~
+~
+103 0 4734
+S
+#4736
+&RA Stone Cage~
+~
+~
+&zYou find yourself in a large stone room, almost exactly like a prison
+cell.  There is a small slit on the door to look out, and another near the
+bottom large enough to slide food in and out.  You notice scratch marks
+everywhere here, like the tenant has been trying to escape for some time
+now.  You can see what seems to be bones and half eaten human corpses in the
+northeast corner.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+119 4734 4735
+S
+#4737
+&RThe Catacombs~
+~
+~
+You stand in a dark corridor west of the tunnels' crossing.  The floor
+here has an oddly bubbled texture, almost as if the floor had at one point
+been molten stone, hot and bubbling, then suddenly flash cooled.  The walls
+are smooth and slick with condensation.  The roof is low, barely clearing
+your head.  You are forced to bend low at regular intervals to pass below
+what appear to be wooden support frames.  Closer inspection of the frames
+shows you that either they were carved by extremely skilled stone workers,
+or the frames have been petrified by something since their installation.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4697
+D3
+~
+~
+0 0 4738
+S
+#4738
+&RThe Catacombs~
+~
+~
+You progress along the bubbled tunnel, the dampness of the floor making
+walking extremely treacherous.  Flight is hardly less so due to the low
+ceiling.  To the west, at the extremities of your light, you can see a bend
+in the tunnel which heads north.  To the east you can hear the faint whistle
+of the wind which runs through the north-south tunnel of the catacombs.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4737
+D3
+~
+~
+0 0 4739
+S
+#4739
+&RThe Catacombs~
+~
+~
+The rolling and bubbling of the floor seems to be at it's most vicious
+here.  The oddly formed stone fills the room nearly half way to it's already
+low limits.  To the north and east the stone seems to flow away from this
+geiser, making passage on foot extremely difficult, dangerous, and slow
+going.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4740
+D1
+~
+~
+0 0 4738
+S
+#4740
+&RA Dark Passage~
+~
+~
+Stone, the consistency of melted wax, forms the floor to this passage
+way.  The crevices between the flows of stone now gather the dampness of the
+air into new flows of cool water.  The stone of the walls and ceiling seem
+to be single, seemless, glassy pieces of stone as has been the case the
+entire length of the passage.  To the south, at the edge of your light's
+reach you can see a bend in the tunnel which then leads east.  To the north
+the passage stretches off into the inky blackness.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4741
+D2
+~
+~
+0 0 4739
+S
+#4741
+&RAn Oaken Door~
+~
+~
+You stand beside an oddly out of place oaken door.  This is perhaps the
+only example you have seen along this corridor of construction using
+anything but stone.  If the door is indeed still of any use, it must open
+inwards as the stone flow is obviously well above the bottom of solid oak
+structure.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4742
+D1
+~
+~
+3 0 4751
+D2
+~
+~
+0 0 4740
+S
+#4742
+&RA Dark Passage~
+~
+~
+The catacombs' dark western passage continues north and south here
+through the unnaturally smooth stone.  Smooth, that is, with the exception
+of the stone floor which has a tumultuous look, as though it had once been a
+rushing flow of liquid granite which froze solid even as it boiled.  A low
+fog obscures much of the detail of the stone floor which, coupled with the
+small streams and pools of water which have collected along the hall, makes
+for very treacherous footing.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 4743
+D2
+~
+~
+0 0 4741
+S
+#4743
+&RA Dark Passage~
+~
+~
+The dark western passage bends east and south here.  The northwestern
+corner is piled high with boiled stone.  The current of the stone must have
+been impressive to have created the sorts of splash patterns and the high
+banking which are evident.  To the south, the hall stretches on into the
+gloom.  From the east the sounds of dripping water, and the occasional
+splashes can be heard.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4744
+D2
+~
+~
+0 0 4742
+S
+#4744
+&RA Large Pool~
+~
+~
+You are standing in what appears to have once been an underground tower. 
+The extent of it's actual depth is a mystery locked beneith the surface of
+the murky pool which occupies the greater part of this room.  Water seems to
+trickle into here from every direction leading you to wonder if there might
+be an outlet somewhere at the bottom.  To the west, the catacombs' western
+passage stands open before you.  To the east, beyond the crumbled wreckage a
+long collapsed wall lies a cavernous opening who's true dimensions you can
+only guess at from here.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4745
+D3
+~
+~
+0 0 4743
+S
+#4745
+&RA Partially Collapsed Cave~
+~
+~
+This section of the cavern is cluttered with rubble from the fallen
+western wall and partially collapsed ceiling.  Jagged rocks and shattered
+stalagmites litter the floor wherever they weren't piled together in great
+mounds by the cave in.  Terrible cries can be heard echoing through the
+upper reaches of the cavern.  They come seemingly from nowhere and sound as
+though they may continue forever.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4746
+D3
+~
+~
+0 0 4744
+S
+#4746
+&RLarge Stalactites~
+~
+~
+The cavern's ceiling lies beyond the reaches of your light source,
+however large rock formations reach down towards the floor at regular
+intervals.  Along with their mates which reach up from the floor they give
+the impression of enormous fangs all about.  The air here is damp and cold. 
+Water seems constantly to be falling on you from above, and the screaming...
+The screaming goes on and on in the blackness above.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+0 0 4747
+D3
+~
+~
+0 0 4745
+S
+#4747
+&RBefore A Strange Door~
+~
+~
+You stand at the eastern edge of a massive underground cavern.  All
+around you hear soul tearing screams reflected from every craigy surface. 
+Now and then you are almost certain you also hear the faint sound of
+snickering.  To the west the cavern opens up into a larger chamber.  A
+doorway seemingly swirled together out of the granite of the wall and veins
+of highly lusterous copper bars your passage to the east.  Runes adorn the
+the door at irregular intervals and are likewise spread around the doorframe
+which looks much like the petrified support beams near the beginning of this
+tunnel.  The runes dance with a dark energy which seems to draw in and feed
+upon the glow of your light source.  
+~
+0 401418 5
+Rd     0
+D1
+~
+~
+103 0 4748
+D3
+~
+~
+0 0 4746
+S
+#4748
+&RThe Copper Door~
+~
+~
+&zYou stand in what seems to a large vein of copper in the catacombs
+beneath the Druid's Keep.  Despite being mixed with granite here and there,
+the copper looks quite unblemished.  At the eastern end of this small cavern
+stands a door of pure copper.  There is some kind of dark energy seeping
+through the cracks around the door.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+119 4747 4749
+D3
+~
+~
+103 0 4747
+S
+#4749
+&RA Dark Dark Room~
+~
+~
+&zAs you enter this room you quickly notice that your light does little
+good.  You can see only inches from your own face; your hands and feet seem
+almost invisible.  Each step echoes loudly in your ears, as if the room is
+of unimaginable size.  You can hear short, sharp rasps coming from all
+around you.  The sounds come from everywhere and nowhere all at once.  
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+119 4747 4748
+S
+#4750
+&RThe Unholy Temple~
+~
+~
+You have come to a quiet corner of this strange temple.  The silence is
+more unnverving that the dark black walls.  A jagged vein of obsidian runs
+through this section of the mountain's underbelly, and it has been polished
+to a shine.  It looks as if the wall itself has teeth and is waiting to
+devour your immortal soul.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4753
+D1
+~
+~
+0 0 4755
+S
+#4751
+&RBeyond The Oak Door~
+~
+~
+You have passed into what seems to be a different section of the
+catacombs.  There are candles lighting what seems to be a well-chiseled out
+section of the mountain.  The large oak door you entered from leads back to
+the catacombs, Westward.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4752
+D2
+~
+~
+0 0 4753
+D3
+~
+~
+3 0 4741
+S
+#4752
+&RA Dark Altar~
+~
+~
+You stand in front of the blackest altar there may have ever been
+created.  The light that you hold seems to be sucked into the altar, along
+with that of the candles that are strewn about the room.  Down the centre of
+the altar is a wide groove that leads to a hole in the floor stained with
+dark blood.  Who knows what sort of deity is worshipped here.  
+~
+0 401418 0
+Rd     0
+D3
+~
+~
+0 0 4751
+S
+#4753
+&RThe Unholy Temple~
+~
+~
+You are walking through what seems to be a temple of some sort.  Which
+dark Gods this place is dedicated to, you know not.  Maybe Ahaseurous? 
+Maybe something older and deadlier than her.  No doubt nobody has lived long
+enough to ask the question of its occupants.  There are no pretty
+tapestries, no pictures and candelabras here.  There is only cold and
+unfriendly functionality.  This place was built for death, and it shows.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4751
+D1
+~
+~
+0 0 4754
+D2
+~
+~
+0 0 4750
+S
+#4754
+&RThe Summoning Circle~
+~
+~
+You seem to be standing in the middle of a very large pentagram.  All
+five points contain a large red candle burning.  There are claw marks on the
+ground at the edge of the circle, like whatever was summoned here was trying
+to get out.  Who knows what else may be summoned from the depths of the
+lower planes!  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 4755
+D3
+~
+~
+0 0 4753
+S
+#4755
+The Holding Pen~
+~
+~
+You stand in a large room which is entirely filled by the most massive
+summoning circle you have EVER seen.  Lit entirely by thousands of candles,
+you cannot see the other side of the room.  Chained inside the circle is a
+demon larger than any ever recorded in the annals of history, but has anyone
+ever really seen hell and survived?  
+~
+0 401422 0
+Rd     0
+D0
+~
+~
+0 0 4754
+D3
+~
+~
+0 0 4750
+S
+#4756
+&RThe Treasure Room~
+~
+~
+You have stumbled upon a secret treasury deep beneath the Druid's Keep. 
+All around you can see jeweled armor, weapons, gold, jewels, and more! 
+Every step you take dislodges coins and other items from their resting
+places, kicking up dust and clattering them across the ground.  To the West
+is a wall, but South and East lead further into the treasury.  To the North
+is the door you entered from.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+627 0 4702
+D1
+~
+~
+0 0 4761
+D2
+~
+~
+0 0 4759
+S
+#4757
+&RThe Horde~
+~
+~
+A horde of gold and jewels lays everywhere!  This is where the real
+treasures are stored!  Of course, the treasure isn't what really catches
+your eyes...  There is a large golden portal open in the middle of the room.
+It swirls endlessly in a circle of chaotic energy, leading to who knows
+where?  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+119 4758 4758
+S
+#4758
+&RThe Treasure Room~
+~
+~
+This corner of the treasury seems to be clean and bare of anything. 
+There is little to no dust, and a distinct lack of gold, gems, or treasure
+of any kind to be found!  On the north wall there is a large door which is
+barred and locked tightly, guarding something within!  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+119 4758 4757
+D1
+~
+~
+0 0 4759
+S
+#4759
+&RThe Treasure Room~
+~
+~
+You have followed a path deep into the treasury within the Catacombs. 
+The smell of metal is strong, but the stench of something darker wafts to
+your nose from the West.  The path through the coins and other trinkets also
+leads North and East.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4756
+D1
+~
+~
+0 0 4760
+D3
+~
+~
+0 0 4758
+S
+#4760
+&RA Large Chest~
+~
+~
+As you enter this room you notice a small chest sitting in the corner. 
+It is simple and unadorned, with nothing of note to say about it.  It is
+surrounded by gold, jewels, and many other wondrous items!  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 4761
+D3
+~
+~
+0 0 4759
+S
+#4761
+&RPiles of Gold~
+~
+~
+This section of the treasury is filled with piles and piles of gold coin.
+There must be THOUSANDS of coins here.  If only you could carry it all with
+you!  There are exits leading both South and West here.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 4760
+D3
+~
+~
+0 0 4756
+S
+#4762
+&RA Dark Prison~
+~
+~
+The smell of fear and old sweat overwhelms as you enter into the prison
+deep in the catacombs.  This is where the Queen stores her most valuable of
+prisoners and keeps them tortured and starved.  It looks well guarded.  You
+can see beds to the East, and another small room to the West.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4767
+D2
+~
+~
+595 0 4728
+D3
+~
+~
+0 0 4763
+S
+#4763
+&RA Dark Prison~
+~
+~
+A large door stands in front of you to the North.  It is made of thick
+iron and has a small slit in the middle for food and water.  You can smell
+urine and feces in addition to other rank odors coming from behind the door.
+Whatever prisoners that are penned up in there most likely haven't had the
+cell cleaned for quite some time.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+119 4763 4764
+D1
+~
+~
+0 0 4762
+S
+#4764
+&RA Smelly Prison Cell~
+~
+~
+You have come into the cell of the Queen's Prisoners, and the first thing
+that you notice is the large smelly heap in the corner.  You can see large
+bones sticking out from the pile of feces and assume that these may have
+been past residents.  The large cell continues on to the East.  
+~
+0 401422 0
+Rd     0
+D1
+~
+~
+0 0 4765
+D2
+~
+~
+119 4763 4763
+S
+#4765
+&RA Damp Cell~
+~
+~
+This section of the large prison cell is very damp.  You can hear a small
+dripping sound, and notice a pool of water along the North wall.  The cold
+and the dampness cannot be good for prisoners health, but maybe that is what
+the Queen expects.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4766
+D3
+~
+~
+0 0 4764
+S
+#4766
+&RA Dark Cell~
+~
+~
+You have come upon a part of the cell that looks like it is being lived
+in.  There is a small iron cup and bowl in the one corner, and a thin layer
+of moss and lichen that has been labouriously scraped off the walls in the
+other.  There looks to be some sort of cubby hole in the north wall, but it
+crackles with a strange energy.  Most likely a failed escape attempt!  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 4765
+S
+#4767
+&RThe Guard's Quarters~
+~
+~
+You have come into what seems to be a mini barracks. There are a few
+beds with armor and weapons scattered about. There is a table in the
+middle with some unidentifiable food in the middle, and a set of dice
+that the guards most likely gamble with.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 4762
+S
+#4768
+&RBeyond The Oak Door~
+~
+~
+You stand just West of an oaken door.  To the North you can hear the
+sounds of a skirmish.  To the south, an uneasy silence.  Upon the ground it
+seems there is blood trickling from both directions and seeping into a small
+pool near your feet.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4769
+D1
+~
+~
+83 0 4715
+D2
+~
+~
+0 0 4773
+D3
+~
+~
+0 0 4771
+S
+#4769
+&RThe Training Grounds~
+~
+~
+You have come upon the training grounds nestled deep beneath the Keep of
+the Druids.  Why the Queen is training soldiers down here seems a mystery. 
+There are swords and spears strewn about, and students take each other on
+with various implements of war.  The screams of the injured fill the air but
+it seems that the weak are not getting very far here.  
+~
+0 401418 5
+Rd     0
+D2
+~
+~
+0 0 4768
+D3
+~
+~
+0 0 4770
+S
+#4770
+&RThe Training Grounds~
+~
+~
+There is a small rise in the training grounds in this North-West corner. 
+The training master oversees the studends from this higher vantage point. 
+Several students look as if they are climbing the small rise to approach the
+master, albeit slowly.  One wrong move could mean the training master takes
+off your head.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4769
+D2
+~
+~
+0 0 4771
+S
+#4771
+&RThe Training Grounds~
+~
+~
+A putrid smell comes from this corner of the training grounds.  It seems
+this is where the dead, and the dying, are put.  Little mercy is given to
+those who cannot help themselves.  Injuries are nursed by ones self here, or
+you are dragged on the pile to serve as a reminder of failure.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4770
+D1
+~
+~
+0 0 4768
+S
+#4772
+&RThe Essence of Magic~
+~
+~
+You enter a large room that seems much too big for what you believe could
+fit underneath this mountain.  Lined upon the walls are jars, vials, and
+small cages all around.  Larger cages with strange, fantastical beasts are
+scattered upon the floor in various states of life, death, and undeath. 
+Flying around in the air, so far above, it seems like a flock of bats...  Or
+worse.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 4773
+S
+#4773
+&RThe Entrance To Magic~
+~
+~
+An eerie silence surrounds you in this room.  The walls look black with
+soot, and blood.  The ground is caked with substances it is hard to put a
+name to.  Every step you take you expect to echo, but it somehow doesn't.  
+A small river of blood flows North.
+~
+0 8790026 0
+Rd     0
+D0
+~
+~
+0 0 4768
+D3
+~
+~
+0 0 4772
+S
+#4774
+&RWithin Magic~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 4778
+S
+#4775
+&RHoly Ground~
+~
+~
+You find yourself in a small cave, but the holy power eminating from it
+is immense.  A small pool of water has gathered on the ground, and a
+pedestal with a small flask stands out from the middle.  Despite the lack of
+light down here, it seems as if daylight has somehow seeped through the
+ground.  
+~
+0 401410 0
+Rd     0
+D2
+~
+~
+0 0 4783
+S
+#4776
+An Old Cavern~
+~
+~
+The walls are sticky and wet in your new destination, and look as though
+they were carved by an ancient stream.  You smell something acidic nearby,
+but can't place your finger on what it is exactly.  The only light entering
+the room despite your own is the glowing portal on the south wall, leading
+back to the Catacombs.
+~
+0 401414 0
+Rd     0
+D0
+~
+~
+0 0 4788
+S
+#4777
+&RHalls Of Desperation~
+~
+~
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4793
+S
+#4778
+&RWandering Within Magic~
+~
+~
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 4774
+D1
+~
+~
+0 0 4779
+S
+#4779
+&RWandering Within Magic~
+~
+~
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4780
+D3
+~
+~
+0 0 4778
+S
+#4780
+&RCrackling Energy~
+~
+~
+~
+0 401410 0
+Rd     0
+D3
+~
+~
+0 0 4779
+D5
+~
+~
+0 0 4781
+S
+#4781
+&RNear The Source~
+~
+~
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4782
+D4
+~
+~
+0 0 4780
+S
+#4782
+&RThe Source of Magic~
+~
+~
+~
+0 401410 0
+Rd     0
+D3
+~
+~
+0 0 4781
+S
+#4783
+&RHoly Power~
+~
+~
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 4775
+D3
+~
+~
+0 0 4784
+S
+#4784
+&RBetween Two Large Columns~
+~
+~
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4783
+D3
+~
+~
+0 0 4785
+S
+#4785
+&RA Strange Passage~
+~
+~
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4784
+D5
+~
+~
+0 0 4786
+S
+#4786
+&RDeep Beneath The Keep~
+~
+~
+~
+0 401410 0
+Rd     0
+D3
+~
+~
+0 0 4787
+D4
+~
+~
+0 0 4785
+S
+#4787
+&RDeep Beneath The Keep~
+~
+~
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4786
+S
+#4788
+A Dried Up Streambed~
+~
+~
+You've come to the bank of the old streambed that carved this cavern out.
+There is a slight drop of about three or four feet between where you are and
+the center of the stream.  The whole path looks about ten feet across in
+total.  You are starting to see some vegetation growing in the sediment left
+behind by the old water.  
+~
+0 401410 0
+Rd     0
+D2
+~
+~
+0 0 4776
+D3
+~
+~
+0 0 4789
+S
+#4789
+A Dried Up Streambed~
+~
+~
+The moss and lichen hangs from the low ceiling making your passage tough.
+The hanging vegitation is clumped in curtain-like patches which makes
+passage difficult.  A hole or a stone could be hiding to trip and injure
+you.  As best you can tell, the bed continues in an East-West direction.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4788
+D3
+~
+~
+0 0 4790
+S
+#4790
+A Sharp Decline~
+~
+~
+You are following an old dried up streambed through the large cavern. 
+Old growths of moss and strange ferns have sprouted up making your path
+difficult.  The life down here is amazing considering the lack of light. 
+The heat and humidity are stifling down here!  The streambed takes a sharp
+vertical dip, coming close to straight down.  
+~
+0 401414 0
+Rd     0
+D1
+~
+~
+0 0 4789
+D5
+~
+~
+0 0 4791
+S
+#4791
+The Dark Stairwell~
+~
+~
+There are rough steps here leading up.  The old stream bed that you have
+been following took a sharp drop here.  Someone, or something, has chiseled
+out steps.  They are nowhere near flat, and there are remnants of greenish
+ooze that sizzles upon your armor when it splashes up.  The cave continues
+on to the West, your light cannot penetrate the darnkess to tell more than
+it is a large cavern.  
+~
+0 401414 0
+Rd     0
+D3
+~
+~
+0 0 4792
+D4
+~
+~
+0 0 4790
+S
+#4792
+&RThe Serpent's Lair~
+~
+~
+You have wandered into the Serpent's Lair, and have discovered why it is
+called such.  The evidence of a dragon being here is unmistakable!  Large
+piles of treasure here and there, corpses scattered across the ground, and
+monstrous scales shed off!  The stink of dragon is everywhere, and its aura
+of presence can be felt as you step into the room.  The only exit is the way
+that you came in.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4791
+S
+#4793
+&RHalls Of Desperation~
+~
+~
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4794
+D2
+~
+~
+0 0 4777
+S
+#4794
+&RHall Of Desperation~
+~
+~
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4795
+D3
+~
+~
+0 0 4793
+S
+#4795
+&RHalls Of Desperation~
+~
+~
+~
+0 401410 0
+Rd     0
+D3
+~
+~
+0 0 4794
+D5
+~
+~
+0 0 4796
+S
+#4796
+&RNearing The Queen~
+~
+~
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 4797
+D4
+~
+~
+0 0 4795
+S
+#4797
+&RAbove The Throne~
+~
+~
+~
+0 401410 0
+Rd     0
+D3
+~
+~
+0 0 4796
+S
+#4798
+&RNearing The Throne~
+~
+~
+~
+0 134619139 0
+Rd     0
+D4
+~
+~
+631 0 4697
+S
+#4799
+&RAhaseurous' Throne~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 4798
+S
+#4800
+&RPurgatory~
+~
+~
+This place is featureless...  It is limbo.  What have you done for
+Dolmaar to forsake you like this?  
+~
+0 139270 9
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 4554 spec_healer
+M 4589 spec_cast_psionicist
+M 4619 spec_janitor
+M 4665 spec_cast_psionicist
+M 4735 spec_repairman
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 4561 0 4551
+M 0 4551 1 4552
+E 0 4552 0 20
+E 0 4552 0 21
+E 0 4553 0 3
+G 0 4555 0
+M 0 4553 1 4552
+M 0 4558 1 4558
+E 0 4575 0 20
+E 0 4575 0 21
+O 0 4559 0 4559
+O 0 4560 0 4560
+O 0 4563 0 4563
+O 0 4564 0 4564
+M 0 4554 1 4564
+O 0 4566 0 4566
+M 0 4566 1 4566
+E 0 4557 0 21
+E 0 4557 0 20
+O 0 4572 0 4572
+M 0 4575 1 4575
+M 0 4576 1 4576
+G 0 4576 0
+O 0 4579 0 4579
+O 0 4579 0 4586
+O 0 4579 0 4587
+O 0 4579 0 4588
+M 0 4588 1 4588
+O 0 4588 0 4588
+E 0 4582 0 5
+E 0 4587 0 21
+E 0 4587 0 20
+P 0 4586 0 4588
+M 0 4589 1 4589
+E 0 4585 0 22
+E 0 4584 0 5
+E 0 4583 0 20
+M 0 4595 1 4595
+E 0 4595 0 21
+E 0 4597 0 20
+E 0 4584 0 5
+M 0 4597 1 4597
+E 0 4597 0 20
+E 0 4595 0 21
+E 0 4584 0 5
+M 0 4606 1 4607
+E 0 4607 0 3
+E 0 4584 0 5
+M 0 4607 1 4607
+E 0 4584 0 5
+E 0 4606 0 19
+M 0 4613 1 4613
+E 0 4613 0 20
+E 0 4613 0 21
+E 0 4617 0 5
+M 0 4616 1 4616
+E 0 4616 0 20
+E 0 4617 0 5
+M 0 4619 2 4619
+E 0 4619 0 20
+E 0 4617 0 5
+O 0 4625 0 4625
+O 0 4631 0 4631
+M 0 4636 1 4636
+E 0 4650 0 23
+E 0 4584 0 5
+E 0 4595 0 20
+E 0 4595 0 21
+M 0 4639 3 4639
+E 0 4639 0 20
+E 0 4584 0 5
+E 0 4639 0 21
+O 0 4641 0 4641
+M 0 4642 1 4642
+O 0 4657 0 4649
+M 0 4652 1 4654
+E 0 4653 0 20
+E 0 4653 0 21
+E 0 4652 0 2
+M 0 4658 1 4657
+E 0 4584 0 5
+E 0 4658 0 15
+E 0 4597 0 20
+G 0 4657 0
+M 0 4657 1 4660
+E 0 4659 0 20
+E 0 4659 0 21
+O 0 4660 0 4661
+M 0 4664 1 4665
+G 0 4664 0
+O 0 4666 0 4666
+P 0 4663 0 4666
+M 0 4666 1 4666
+M 0 4678 1 4678
+E 0 4584 0 5
+G 0 4678 0
+E 0 4677 0 20
+E 0 4676 0 15
+M 0 4690 1 4690
+E 0 4584 0 5
+O 0 4691 0 4691
+M 0 4693 1 4693
+M 0 4695 1 4695
+O 0 4698 0 4696
+O 0 4726 0 4697
+O 0 4726 0 4698
+O 0 4727 0 4699
+O 0 4727 0 4700
+O 0 4728 0 4700
+O 0 4725 0 4701
+O 0 4725 0 4702
+M 0 4703 1 4703
+M 0 4704 1 4704
+O 0 4725 0 4705
+O 0 4725 0 4706
+O 0 4725 0 4707
+M 0 4708 1 4709
+G 0 4708 0
+E 0 4719 0 20
+E 0 4707 0 21
+M 0 4710 1 4710
+E 0 4710 0 20
+E 0 4709 0 16
+O 0 4708 0 4710
+M 0 4720 1 4719
+M 0 4722 1 4722
+G 0 4720 0
+E 0 4719 0 20
+E 0 4718 0 21
+M 0 4723 1 4723
+E 0 4723 0 20
+E 0 4722 0 21
+E 0 4721 0 12
+O 0 4720 0 4723
+O 0 4726 0 4724
+O 0 4726 0 4725
+O 0 4726 0 4726
+O 0 4726 0 4727
+O 0 4726 0 4728
+O 0 4726 0 4729
+M 0 4729 1 4729
+M 0 4735 1 4735
+G 0 4734 0
+E 0 4719 0 20
+E 0 4733 0 21
+M 0 4736 1 4736
+E 0 4736 0 20
+E 0 4736 0 21
+E 0 4735 0 24
+O 0 4734 0 4736
+O 0 4725 0 4737
+O 0 4725 0 4738
+O 0 4725 0 4740
+O 0 4725 0 4741
+O 0 4725 0 4742
+O 0 4729 0 4742
+O 0 4725 0 4743
+O 0 4729 0 4743
+O 0 4729 0 4744
+O 0 4730 0 4744
+O 0 4729 0 4745
+O 0 4729 0 4746
+O 0 4729 0 4747
+M 0 4748 1 4748
+E 0 4719 0 20
+G 0 4747 0
+E 0 4746 0 21
+M 0 4749 1 4749
+E 0 4749 0 17
+E 0 4748 0 20
+E 0 4748 0 21
+O 0 4747 0 4749
+M 0 4751 2 4751
+E 0 4741 0 20
+E 0 4751 0 22
+M 0 4752 1 4752
+O 0 4752 0 4752
+E 0 4741 0 21
+E 0 4741 0 20
+M 0 4755 1 4755
+O 0 4757 0 4757
+O 0 4758 0 4757
+M 0 4758 1 4758
+G 0 4758 0
+E 0 4759 0 20
+E 0 4756 0 5
+E 0 4700 0 21
+E 0 4699 0 5
+E 0 4700 0 21
+E 0 4700 0 20
+O 0 4760 0 4760
+P 0 4702 0 4760
+M 0 4760 1 4760
+O 0 4761 0 4761
+M 0 4762 1 4762
+G 0 4763 0
+M 0 4762 1 4762
+G 0 4763 0
+M 0 4766 1 4766
+O 0 4768 0 4768
+M 0 4769 2 4769
+M 0 4770 1 4770
+E 0 4779 0 20
+E 0 4779 0 21
+E 0 4770 0 5
+O 0 4771 0 4771
+M 0 4772 1 4772
+E 0 4773 0 20
+E 0 4773 0 21
+E 0 4770 0 5
+O 0 4774 0 4774
+M 0 4775 1 4775
+O 0 4696 0 4775
+O 0 4776 0 4776
+O 0 4777 0 4777
+O 0 4787 0 4787
+M 0 4789 1 4790
+M 0 4792 1 4792
+O 0 4797 0 4797
+O 0 4798 0 4798
+M 0 4799 1 4799
+S
+
+
+
+#SHOPS
+4576 9 5 8 10 2 100 100 0 23
+0
+
+
+
+#$

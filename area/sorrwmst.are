@@ -1,0 +1,2025 @@
+#AREADATA
+Name        {  5-8 } SorrowsMist Manor~
+Builders    None~
+VNUMs       19650 19699
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Teardrop~
+Llevel      0
+Ulevel      0
+Sounds      A soft chime is heard, tinkling in the breeze.~
+Music       u7_wisp.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#19650
+butler jeeves~
+Jeeves~
+The butler Jeeves is here, looking sharp.
+~
+Jeeves is dressed in your typical butler outfit.  His suit is immaculate,
+the slacks pressed and spotless.  He has short greying hair, and is going
+bald on top.  His eagle-like nose points down, and he has no difficulty
+looking down it at you if you get out of line.  
+~
+3 0 0 0 0 0 S
+5 1 10 10 100 100d0+0 0d0+250
+50 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Good day. Might I take your cloak and hat?
+~
+>speech_prog teardrop~
+if ispc($n)
+say Just one moment, I'll see if she's here.
+north
+east
+east
+say Teardrop, are you here you sexy goddess?
+endif
+~
+>speech_prog yes~
+if ispc($n)
+west
+west
+south
+say Teardrop is in her study!
+say You're lucky, you caught her just in time!!!
+endif
+~
+>rand_prog 5~
+close west
+west
+west
+south
+say Teardrop doesn't seem to be in at the moment, sorry!
+endif
+~
+>speech_prog no~
+say Oh I see...sorry to have bothered you!
+west
+west
+south
+say I can't seem to find her anywhere, sorry!
+endif
+~
+|
+#19651
+kitten fluff tipper~
+Tipper~
+A small fluffy kitten named Tipper bounces around.
+~
+A small ball of fluff, this tiny kitten scampers back and forth, playing
+some kittenish game.  She's orange and white, with soft cream colored paws
+and a patch of black right across her nose.  She takes a running tumble at
+your ankles, then jumps with surpise when you pull back.  She looks up at
+you, her eyes widening with wonder at the big person who has suddenly
+invaded her domain.  
+~
+3 0 0 0 0 0 S
+5 1 10 10 100 100d0+0 0d0+0
+50 0 0
+0 0 2
+0 0 0
+>rand_prog 7~
+emote crouches low, her rear squirming from side to side, then pounces on $r!
+~
+>act_prog p pats you on your head.~
+emote rubs against your ankle.
+purr
+~
+|
+#19652
+shiela cook~
+Shiela~
+Shiela the cook stirs a kettle on the stove.
+~
+A young lady, with beautiful blond hair tied back in a bun, Shiela is a
+wonderful cook.  A few stray hairs have escaped the bun, and curl charmingly
+around her face in the heat of the kitchen.  Wearing a white apron over a
+teal blue cotton dress, she smiles warmly at you and goes back to her
+cooking.  
+~
+3 0 0 0 0 0 S
+8 1 16 16 160 160d0+0 0d0+400
+80 0 0
+0 0 2
+0 0 0
+>act_prog p looks at you.~
+smile $n
+~
+>rand_prog 7~
+emote brushes back the damp curls that fall in front of her eyes.
+~
+|
+#19653
+apprentice cook~
+an apprentice cook~
+An apprentice cook attempts to bake her first cake.
+~
+Flushed a bright pink, this young apprentice is unused to the heat of a
+kitchen.  She consults a cook book and turns to the bowl where she's mixing
+her first cake.  A small frown furrows her brow, and she turns to Shiela for
+clarification.  Reassured, she adds a pinch of this, and a dash of that,
+then pops the cake into the oven.  
+~
+3 0 0 0 0 0 S
+6 1 12 12 120 120d0+0 0d0+250
+60 0 0
+0 0 2
+0 0 0
+#19654
+hummingbird bird~
+A hummingbird~
+A tiny hummingbird darts around, feeding on nectar.
+~
+A bright splash of color, this tiny bird is a bundle of energy.  It zips
+around from flower to flower, collecting its meal.  Every so often you see
+him land upon a twig, rest for a short period of time and then zoom off
+again, happy to be flying through the warm air.  
+~
+3 0 0 0 0 0 S
+5 1 10 10 100 100d0+0 0d0+0
+50 0 0
+0 0 1
+0 0 0
+#19655
+sammy cocker spaniel dog~
+Sammy~
+Sammy, a fat little cocker spaniel jumps up on you.
+~
+A plump little cocker spaniel looks up at you, her nose wrinkling in
+sheer pleasure at your presence.  Her light blonde coat is cut short, and
+she sports lavender bows in her ears.  Her short tail wags madly, causing
+her entire body to wiggle and squirm.  
+~
+3 0 0 0 0 0 S
+7 1 14 14 140 140d0+0 0d0+0
+70 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if name ($n) == Teardrop
+emote jumps up to greet Teardrop, her tail wagging madly.
+lick Teardrop
+else
+bark $n
+emote cocks her head and looks at $n
+endif
+~
+|
+#19656
+bird robin~
+A fat robin~
+A plump robin hops around here, searching for food.
+~
+Very plump, with a deep red chest, this robin searches endlessly for bugs
+and worms to feed her family.  She hops this way and that, her head cocked
+towards the ground, listening for any kind of little critter that would be
+an acceptable meal for her young ones.  
+~
+65 0 0 0 0 0 S
+5 1 10 10 100 100d0+0 0d0+0
+50 0 0
+0 0 2
+0 0 0
+#19657
+squirrel~
+A small red squirrel~
+A small red squirrel chitters at your intrusion.
+~
+A shade of russet red with a bushy tail that flickers nervously, this
+little squirrel looks at you without fear, but with a rather cocky look.  He
+chitters at you a bit, then scampers around, searching for a nut or two to
+add to his storage.  
+~
+65 0 0 0 0 0 S
+6 1 12 12 120 120d0+0 0d0+0
+60 0 0
+0 0 1
+0 0 0
+#19658
+servant groom~
+A groom~
+A groom sits here playing cards on his day off.
+~
+Sitting here relaxing, this groom wears blue denim pants and a dark
+buttoned down shirt.  His cobalt blue eyes and dark hair contrasting with
+eachother.  His feet are propped up on a chair, and he shuffles the cards
+and winks at you as you enter.  He lays out the cards, and then looks at
+them in disgust.  
+~
+3 0 0 0 0 0 S
+9 1 18 18 180 180d0+0 0d0+600
+90 0 0
+0 0 1
+0 0 0
+>rand_prog 7~
+emote shuffles the cards.
+~
+>rand_prog 7~
+,lays another card on the table.
+~
+>all_greet_prog 100~
+if name ($n) == Teardrop
+emote stands up and bows to Teardrop.
+'May I help you, Milady?
+else
+wink $n
+'G'day!
+smile
+endif
+~
+|
+#19659
+upstairs maid~
+An upstairs maid~
+An upstairs maid hums as she dusts the woodwork.
+~
+Wearing a short black maid's outfit, this young lady bustles about,
+finishing her dusting.  Her auburn hair is tucked under a cap, and her leaf
+green eyes sparkle merrily.  She hums a catchy little tune, her eyes far
+away as she is caught up in her daydreams.  
+~
+3 0 0 0 0 0 S
+8 1 16 16 160 160d0+0 0d0+500
+80 0 0
+0 0 2
+0 0 0
+>rand_prog 7~
+'Have you perchance seen the charm for my bracelet?
+'I seem to have misplaced it.
+pout
+~
+>rand_prog 5~
+sing maid
+~
+|
+#19660
+toy soldier~
+A toy soldier~
+A toy soldier made of tin stands on guard here.
+~
+Made of tin, carrying a longsword, this toy soldier guards the playroom
+with his life.  He is a handsome little man, and his armor is made in such a
+way that it can be removed and replaced.  His eyes are painted a vivid
+violet, and his hair painted in gold.  
+~
+3 0 0 0 0 0 S
+6 1 12 12 120 120d0+0 0d0+300
+60 0 0
+0 0 0
+0 0 0
+#19661
+bear teddy~
+a teddy bear~
+A small brown teddy bear sits here, rumpled and loved.
+~
+A brown teddy bear, with black button eyes and a stitched black nose sits
+upon the bed, its eyes watching everything with silent curiosity.  It's
+slightly rumpled, but well loved, its stuffing a bit bunched up in some
+areas.  One ear is almost falling off, and the other looks like it has been
+chewed on.  
+~
+3 0 0 0 0 0 S
+6 1 12 12 120 120d0+0 0d0+150
+60 0 0
+0 0 0
+0 0 0
+#19662
+pup ariel~
+Ariel~
+A red, foxy-looking pup answering to the name of Ariel snoozes here.
+~
+A dark coppery red pup, with bright eyes, she fairly bursts with
+intelligence.  She has a small white patch on her chest, and her front paws
+are both white as well.  She has a dark, almost black marking on her back,
+almost reminiscent of a harnass.  Her ears perk up at the slightest sound,
+and her tail thumps happily.  
+~
+3 0 0 0 0 0 S
+7 1 14 14 140 140d0+0 0d0+0
+70 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if name ($n) == Teardrop
+emote raises her head and wags her tail, her ears perking up.
+yawn
+else
+emote raises her head, looking at $n curiously.
+emote sniffs the air.
+sneeze
+emote wags her tail, and returns her head to her paws, her eyes closing.
+endif
+~
+>speech_prog p ariel~
+emote looks up at you, her tail thumping.
+bark $n
+emote pants, her tongue hanging out of the side of her mouth.
+~
+|
+#19663
+downstairs maid~
+A downstairs maid~
+A downstairs maid straightens things up, putting things to rights.
+~
+Wearing a short maid's outfit, her dark black hair, warm brown eyes and
+copper skin give her a very exotic beauty.  Her hair is pulled back into a
+tail, and her eyes sparkle with some hidden amusement.  She curtsies to you
+prettily, then continues on about her work.  
+~
+1 0 0 0 0 0 S
+7 1 14 14 140 140d0+0 0d0+350
+70 0 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#19650
+key skeleton~
+a skeleton key~
+A key lies here, forgotten.~
+~
+13 268435456 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19651
+pot flower~
+a flower pot~
+A small pot of flowers sits on the steps beside the door.~
+~
+15 0 0 0 0 0 1
+100 100
+100~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19652
+teak vanity~
+a teak vanity~
+An carved antique three-mirrored vanity stands here.~
+~
+15 0 0 0 0 0 1
+100 100
+100~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19653
+brush hairbrush~
+a jeweled hairbrush~
+A jeweled hairbrush, covered in rubies is lying here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#19654
+hand mirror~
+a hand mirror~
+An antique hand mirror lays here, sparkling.~
+~
+8 64 0 0 0 1 6
+100 100
+0~ 0~ 0~ 0~
+1 240 0
+5 0
+astral walk~
+3 3
+0 0 0
+E
+mirror~
+As you look into this mirror, you see your reflection gazing back at you.
+What a faraway look there is in your eyes!  
+~
+#19655
+chair~
+a small vanity chair~
+A small wing-armed chair sits in front of the vanity.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19656
+canopy bed~
+a large canopy bed~
+A large black walnut canopy bed with a white flowing, down comfortor.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19657
+chest drawers~
+a teak chest of drawers~
+A large teak chest of drawers stands here.~
+~
+15 0 0 0 0 0 1
+100 100
+100~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19658
+monocle eye~
+a sparkling monocle~
+A sparkling monocle has been left here.~
+~
+27 0 0 0 0 131073 5
+100 100
+0~ 10~ 10~ identify~
+1 48 0
+0 0
+reserved~
+0 0
+0 0 0
+#19659
+collar jeweled~
+a jeweled collar~
+A small jeweled collar lies forgotten.~
+~
+9 0 0 0 0 5 6
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+#19660
+stove~
+a stove~
+An old fashioned wood-burning stove radiates heat.~
+~
+15 0 0 0 0 0 1
+100 100
+100~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19661
+roast beef meat~
+roast beef~
+A big slab of roast beef steams in the cool air.~
+~
+19 0 0 0 0 1 1
+100 100
+25~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19662
+feather ruby~
+a ruby hummingbird feather~
+A ruby hummingbird feather has been shed and lies forgotten.~
+~
+9 0 0 0 0 524289 6
+100 100
+0~ 0~ 0~ 0~
+1 60 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+#19663
+blue stone~
+a strange blue stone~
+A strange blue stone glows brightly from the dirt.~
+~
+9 1 0 0 0 32769 7
+100 100
+0~ 0~ 0~ 0~
+1 68 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+#19664
+knife butcher~
+a butcher knife~
+A sharp butcher knife gleams brightly in the sun.~
+~
+5 0 0 0 0 8193 7
+100 100
+0~ 0~ 0~ 3~
+1 68 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+A
+18 6
+#19665
+fountain~
+sparkling fountain~
+A small fountain splashes water into the pool below it.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19666
+blanket comfortor~
+a warm blanket~
+A warm blanket lies folded neatly and set out of the way.~
+~
+9 0 1024 0 0 1025 8
+100 100
+0~ 0~ 0~ 0~
+5 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#19667
+television tv~
+a television set~
+A tv set sits here, showing Hardbodies.~
+~
+29 2 0 0 0 0 1
+100 100
+25000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19668
+deck cards~
+a deck of cards~
+An unusual deck of cards lies here.~
+~
+2 0 0 0 0 1 8
+100 100
+10~ invis~ detect invis~  ~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#19669
+boots~
+riding boots~
+A pair of riding boots have been left here.~
+~
+9 0 64 0 0 65 7
+100 100
+0~ 0~ 0~ 0~
+3 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#19670
+charm bracelet~
+a delicate charm bracelet~
+A delicate charm bracelet has been misplaced here.~
+~
+9 0 0 0 0 4097 8
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+0 0
+reserved~
+0 0
+19672 0 0
+#19671
+charm~
+a pretty heart-shaped charm~
+A pretty heart-shaped charm has been misplaced here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+19672 0 0
+#19672
+charm bracelet~
+a charm bracelet with a heart charm~
+A charm bracelet with a heart-shaped charm attached lies here.~
+~
+9 0 0 0 0 4097 7
+100 100
+0~ 0~ 0~ 0~
+2 68 0
+0 0
+reserved~
+0 0
+0 19670 19671
+A
+4 2
+#19673
+toy box toybox~
+a large toybox~
+A large toybox sits here, waiting to be filled with toys.~
+~
+15 0 0 0 0 0 1
+100 100
+100~ 15~ 19650~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19674
+breastplate plate~
+a burnished breastplate~
+A burnished breastplate lies here.~
+~
+9 0 0 0 0 9 5
+100 100
+0~ 0~ 0~ 0~
+20 48 0
+0 0
+reserved~
+0 0
+0 0 0
+#19675
+greaves leggings~
+a pair of blue greaves~
+A pair of blue greaves lay in a heap.~
+~
+9 0 0 0 0 33 7
+100 100
+0~ 0~ 0~ 0~
+10 68 0
+0 0
+reserved~
+0 0
+0 0 0
+#19676
+longsword long sword~
+a longsword~
+A longsword stands in the corner.~
+~
+5 0 0 0 0 8193 8
+100 100
+0~ 0~ 0~ 1~
+5 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#19677
+anklet silver~
+a silver anklet~
+A silver anklet seems to have been dropped here.~
+~
+9 0 1048576 0 0 1048577 6
+100 100
+0~ 0~ 0~ 0~
+1 60 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+#19678
+purple stone~
+a strange purple stone~
+A strange purple stone lies here, half buried.~
+~
+9 1 0 0 0 32769 7
+100 100
+0~ 0~ 0~ 0~
+2 68 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#19679
+oak dresser~
+an oak dresser~
+An old oak dresser sits here.~
+~
+15 0 0 0 0 0 1
+100 100
+100~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19680
+ruby slippers~
+a pair of ruby slippers~
+A sparkling pair of ruby slippers lies here.~
+~
+9 4161 64 0 0 65 8
+100 100
+0~ 0~ 0~ 0~
+2 80 0
+3 25001
+reserved~
+5 5
+0 0 0
+#19681
+box jewelry ebony~
+an intricate ebony jewelry box~
+An intricate ebony jewelry box sits upon the vanity.~
+~
+15 0 0 0 0 0 1
+100 100
+50~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#19650
+Front Walkway~
+~
+~
+Towering old elm trees line this walk way, creating a sun-dappled pattern
+on the red stone of the walkway that leads to a large house.  A narrow
+border of flower beds line each side of the walk, the blooms carefully
+arranged to create an aesthetically cultivated collection of violets, tulips
+and snapdragons.  A soft melody drifts by you on the breeze, so fleeting
+that you can't make out the tune, and the scent of lilacs hangs in the air. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 19651
+D1
+~
+~
+0 0 19698
+D2
+~
+~
+0 0 17823
+D3
+~
+~
+0 0 19697
+S
+#19651
+Front Door~
+~
+~
+The front door is made of oak, the top third dominated with a half circle
+of wedge shaped windows.  A short overhang shelters the steps, and two long
+narrow windows flank the door on either side.  A brass plate is embedded in
+the wood, and engraved upon it is the name Teardrop SorrowsMist and a small
+inscription.  A wrought-iron railing stands on each side of the stairs, and
+a woven mat lies upon the top step.  
+~
+0 4 0
+Rd     0
+E
+plate~
+My home is like my heart and soul
+My life depicting refuge
+And if ye wish to enter here
+To escape destiny's deluge
+ 
+Remember to those I give my trust
+And freedom to discover
+The secrets of both heart and home
+The treasures of a lover
+ 
+Thus I gift you with my dreams
+Hoping you will see
+All I've done here was with love
+A tribute to you and me.
+~
+D0
+~
+door~
+119 19650 19652
+D2
+~
+~
+0 0 19650
+S
+#19652
+Foyer~
+~
+~
+A small hall greets your eyes as you walk through the door.  A small
+credenza stands against the wall, several small figurines sitting upon it. 
+A bouquet of fresh flowers brightens the small room, and on each side of the
+door sits a small palm tree, each in a hand-crafted planter.  A door opens
+on either side of the room, and to the north you see a hall of grand
+proportions.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19655
+D1
+~
+~
+0 0 19653
+D2
+~
+door~
+119 19650 19651
+D3
+~
+door~
+3 0 19654
+S
+#19653
+Doorman's Room~
+~
+~
+A small couch and a writing desk draw your attention, for besides a
+narrow cot, they are the only furnishings in this sparsely furnished room. 
+Though the accomodations are spartan, they are very elegant and well cared
+for.  Upon the desk sits an oil lamp and a book, a page marked with a soft
+piece of velvet.  At the foot of the bed, a crocheted afghan is folded
+neatly and laid across the bed.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 19652
+S
+#19654
+Cloak Room~
+~
+~
+This room is a bit darker than the foyer, for there are no windows.  On
+each side of the room are hooks upon which you might hang your cloak or hat.
+A pair of coat stands have been placed in the far corners, and a small
+umbrella stand holds several parasols and heavier rain umbrellas.  The smell
+of cedar reaches your nose, and you see small cachets of cedar chips hanging
+from decorative hooks.  
+~
+0 12 0
+Rd     0
+D1
+~
+door~
+3 0 19652
+S
+#19655
+Majestic Hall~
+~
+~
+A vaulted ceiling opens above you, and several skylights paned with
+stained glass shower colorful patterns on the marble floors.  The smoky
+marble, veined with white streaks, glistens, shooting sparkles of reflected
+light.  Several doors, some open, others shut, line the hall.  A melody
+bubbles through the hall, soft and gentle to your ears.  
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 19658
+D1
+~
+~
+0 0 19656
+D2
+~
+~
+0 0 19652
+D3
+~
+~
+0 0 19657
+S
+#19656
+Majestic Hall~
+~
+~
+Several tapestries drape the wall, and a bench of marble that matches the
+floor sits to one side, for those who wait to see Teardrop on business.  The
+room to the east is her study, where she spends some time each day listening
+to any concerns or ideas that may come her way.  A large plant sits beside
+the door, its leaves shining with health.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19659
+D1
+~
+door~
+0 0 19663
+D3
+~
+~
+0 0 19655
+S
+#19657
+Majestic Hall~
+~
+~
+The upper walls are covered in red velvet, and the rich rosewood
+wainscotting is adorned with a black ebony chair rail.  Several portraits
+are hung upon the walls, each depicting a close friend of Teardrop's.  Also
+spaced evenly upon the walls are candle holders, each burning a lavender
+candle in the evenings, wreathed with fresh flowers daily.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19660
+D1
+~
+~
+0 0 19655
+D3
+~
+door~
+3 0 19662
+S
+#19658
+Majestic Hall~
+~
+~
+A large staircase rises above you, reaching a landing about halfway up. 
+A small fountain burbles in the center of the room, the sound creating a
+peaceful atmosphere.  Looking up, you can see a railing across one side of
+the wall, which runs around the landing.  The stained glass above creates
+color upon the water of the fountain, making it a picture that constantly
+shifts.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19661
+D1
+~
+~
+0 0 19659
+D2
+~
+~
+0 0 19655
+D3
+~
+~
+0 0 19660
+D4
+~
+~
+0 0 19675
+S
+#19659
+Majestic Hall~
+~
+~
+A small bar stands in the corner, the cabinet slightly open, and several
+rows of clean glasses are set upon it, upside down.  Inside the cabinet is a
+large collection of liquor, some from the farthest reaches of the lands. 
+Two large chairs sit in front of a free standing fireplace, making this
+corner of the great hall almost a private nook.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+1 0 19664
+D2
+~
+~
+0 0 19656
+D3
+~
+~
+0 0 19658
+S
+#19660
+Majestic Hall~
+~
+~
+The scent of frankincense drifts out from beneath the door to the west,
+and the soft music you've been hearing seems to be coming from there as
+well.  The hall in this corner is a bit dimmer than the other parts, but
+it's not a gloomy darkness.  A lantern set upon a small shelf flickers
+happily, causing shadows to dance upon the floor.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19658
+D2
+~
+~
+0 0 19657
+D3
+~
+door~
+3 0 19665
+S
+#19661
+Short Corridor~
+~
+~
+This corridor runs north and south, the large hall opening to the south,
+and branching off to the north.  A soft rug runs the length of the corridor,
+and there are candles in small candle holders attached to the walls.  A
+wonderful smell greets you, and the mouth watering scent grows stronger to
+the north.  A small ball of fluff scampers down the corridor, happily
+playing an unknown game.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19666
+D2
+~
+~
+0 0 19658
+S
+#19662
+Library~
+~
+~
+The tomes which dominate this room come in every shape and size, some
+bound in red leather, others covered in soft cloth.  The shelves take up
+every wall, and large windows are open, allowing the sounds of nature to
+fill the room.  The soft perfume of the lilac bushes in bloom wafts in on
+the wind, and on the sill of one window a sparrow sings as if its heart is
+breaking with joy and life.  A rolling ladder stands against the wall, ready
+to aid in reaching the highest shelf.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+3 0 19657
+S
+#19663
+Study~
+~
+~
+A large fireplace dominates the room, a cozy blaze flickering on the
+hearth.  A huge canvas covers the wall above the mantle, and setting upon
+the mantle itself are a collection of candlesticks and musicboxes.  A
+beautiful old rolltop desk stands against the wall, covered with papers and
+odds and ends.  An inkwell and a quill pen sit beside a crystal oil lamp.  A
+small divan sits to the side, with two fluffed up pillows upon it.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+0 0 19656
+D5
+~
+fireplace~
+119 19650 19695
+S
+#19664
+Ballroom~
+~
+~
+A large crystal chandelier hangs above the dance floor in this large
+ballroom.  A small orchestra pit sits on one corner, and a grand piano waits
+to be played for the next ball.  The carved benches that line the walls are
+padded with embroidered coverings, providing seats for those who wish to sit
+out a dance or two.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+1 0 19659
+S
+#19665
+Gallery~
+~
+~
+A small box sits upon a beautiful round table, music pouring forth from
+it.  Several priceless paintings grace the walls, some of desolate
+landscapes, others of strange but graceful animals.  There are even
+paintings of the heros of the lands, present and past, and even more
+miraculous, of the future.  A large harp stands in the corner, and as you
+pass it, a soft chord seems to be plucked upon the strings, yet no one is
+near.  
+~
+0 8 0
+Rd     0
+E
+enya~
+&RChina Roses
+&BEnya, The Memory of Trees
+ 
+&PWho can tell me if we have heaven,
+who can say the way it should be;
+Moonlight holly, the Sappho comet,
+Angel's tears below a tree.
+ 
+You talk of the break of morning
+as you view the new aurora,
+Cloud in crimson, the key of heaven,
+one love carved in acajou.
+ 
+One told me of China Roses,
+One a Thousand nights and one night,
+Earth's last picture, the end of evening;
+hue of indigo and blue.
+ 
+A new moon leads me to
+woods of dreams and I follow.
+A new world waits for me;
+my dream, my way.
+ 
+I know that if I have heaven
+there is nothing to desire.
+Rain and River, a world of wonder
+may be paradise to me.
+ 
+I see the sun..
+I see the stars..
+~
+D1
+~
+door~
+3 0 19660
+S
+#19666
+Short Corridor~
+~
+~
+The corridor branches here, and as you glance from side to side, you can
+see a large banquet room to the west, and a smaller dining room to the east.
+A strong aroma waftes on the breeze, seeming to grow stronger to the east. 
+The corridor continues on, and to the north it branches again, light
+streaming from both east and west.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19671
+D1
+~
+~
+0 0 19667
+D2
+~
+~
+0 0 19661
+D3
+~
+~
+0 0 19668
+S
+#19667
+Dining Room~
+~
+~
+The dining room is filled with a beautiful oak table, a captain's chair
+on each end, and chairs lining it on each side.  A chandelier lights the
+room, and a centerpiece of fresh flowers sits in the center of the table. 
+The table is set with an intimate setting for two, and two candles are lit,
+providing very little light, but much more in ambience.  The china is
+delicate, and a flowery border rings each plate and dish.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 19669
+D3
+~
+~
+0 0 19666
+S
+#19668
+Banquet Room~
+~
+~
+A long table runs down the center of the room, with chairs lining either
+side of it.  There's enough seating for at least two hundred people, and a
+buffet lines up against one wall.  Two chandeliers hang above the table,
+each supporting hundreds of candles.  In intervals, along the table, set
+beautiful arrangements of fresh flowers, each surrounding a candle floating
+in a globe of water.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19666
+S
+#19669
+Kitchen~
+~
+~
+This large airy kitchen seems to be a very logically and concisely laid
+out room.  A free standing island stands in the center, with a large sink
+and cutting board upon it.  Above the island hang numerous pots and pans,
+utensils and storage containers, all within easy reach.  An immense
+woodburning stove stands against one wall, and an open fireplace offer heat
+and cooking opportunities for the cook and many assistants that create the
+culinary masterpieces that leave this room.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19667
+D1
+~
+~
+0 0 19670
+S
+#19670
+Breakfast Nook~
+~
+~
+Set on the east side of the house, with large bay windows to catch the
+morning sun, this cozy little nook contains a small table, with fresh
+flowers upon it.  Decorated in flowery curtains, with a matching valence
+above the windows, the table linens offset the print with a pastel peach. 
+Already set for breakfast, the black dishes and flowery-handled flatware lay
+in wait for the morning meal.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 19669
+S
+#19671
+End Of The Corridor~
+~
+~
+Here at the end of the corridor it becomes a bit brighter, and as you
+glance to the east and the west, you see why.  To the east is a solarium,
+and to the west is an arboretum.  A large portrait on the north wall shows
+the heart behind the lands, a flattering rendering on canvas of Walius, the
+saviour of the storm.  A soft twittering comes from the arboretum, and a
+soft splashing comes from both the east and the west.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19673
+D2
+~
+~
+0 0 19666
+D3
+~
+~
+0 0 19672
+S
+#19672
+Arboretum~
+~
+~
+As you walk through a curious screened door, you see an enormous
+profusion of plants and flowers.  All types of flora abound in this room,
+and a small waterfall splashes down into a small pool filled with tropical
+fish.  Small flitting forms dash past your eyes, and when one stops below a
+hanging flower, you see that it's a hummingbird feeding upon the nectar of
+the blossoms.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19671
+S
+#19673
+Solarium~
+~
+~
+This room is encased in glass, the floor covered in sand, and with a
+large pool in the center.  Several lounge chairs are situated around the
+pool, and a large sundial catches the sun's rays at the north side of the
+room.  Looking out the glass, you catch glimpses of a beautiful yard out
+back, surrounded by what appears to be a rather dense forest.  
+~
+0 8 0
+Rd     0
+D0
+~
+door~
+3 0 19674
+D3
+~
+~
+0 0 19671
+S
+#19674
+Patio~
+~
+~
+You stand upon a stained redwood patio, overlooking the large backyard. 
+Your entire field of view is dominated by a huge hedge maze.  From hear you
+can hear the sounds of a stream, and the rooftop of the gazebo can be seen
+within the maze.  A carriagehouse sits to the west, with a narrow path
+leading towards the front of the mansion.  A dog barks somewhere nearby, and
+as you watch, a fat little cocker spaniel bounds into view.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 1151
+D2
+~
+~
+3 0 19673
+S
+#19675
+On The Staircase~
+~
+~
+The stairs are carpetted in royal blue carpetting down the center, the
+beautiful hardwood remaining revealed along the sides.  A well polished
+railing runs along the sides, the burnished brass gleaming smartly.  The
+stairs are wide and deep, making them easy to climb, and not at all
+unpleasant to traverse.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 19676
+D5
+~
+~
+0 0 19658
+S
+#19676
+On The Staircase~
+~
+~
+Upon the walls of the stairwell are portraits of special people in
+Teardrop's life.  Among most noteable are the large canvasses of Vampyre and
+Zhyril, Kalourin and Starfire.  All are framed in intricately carved frames,
+and matted with shades of blue and grey.  The stairs continue down, and
+reach a small landing upwards.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 19677
+D5
+~
+~
+0 0 19675
+S
+#19677
+Small Landing~
+~
+~
+Standing upon this landing, you see a large stained glass window to the
+east, and a small alcove to the west.  The stairs run up and down from this
+point, and a large potted plant sits near the bottom step.  The stained
+glass picture represents a vision of violence, the storm that ever rages
+over the lands.  Done in vivid blues and purples, fringed with reds and
+oranges, it's an awesome rendition of nature.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 19678
+D4
+~
+~
+0 0 19680
+D5
+~
+~
+0 0 19676
+S
+#19678
+Alcove Overlooking The Hall~
+~
+~
+This cozy little alcove is fairly bright, and the railing which surrounds
+it provides a vantage point over which to see the hall below.  As you look
+down, you see the ever changing colors upon the water of the fountain, and a
+pattern in the streaked marble that wasn't apparent from below.  A small
+round window looks out into the back yard, and a small desk sits below it,
+covered with stationery.  
+~
+0 520 0
+Rd     0
+D1
+~
+~
+0 0 19677
+D3
+~
+door~
+3 0 19679
+S
+#19679
+Den~
+~
+~
+This room is dim, but not gloomy.  A small fireplace crackles quietly,
+and a box emits a beautiful classical concerto.  A small desk sits to one
+side, a red leather pad protecting the rich wood.  A hand made cabinet rests
+beside the door, various weapons resting inside.  A small table sits between
+two comfortable looking overstuffed chairs, and upon closer examination you
+see exquisitely carved chess pieces upon the chess board.  An old fashioned
+telephone hangs upon the wall, and a pup snoozes before the fire.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+3 0 19678
+S
+#19680
+On The Staircase~
+~
+~
+The carpet muffles all footsteps, and the dark paneling provides a
+sophisticated look to the stairwell.  Each step is sturdy, and not a creak
+sounds as you walk upon it.  The railing continues on each side, and there
+are several more paintings upon the walls, though these seem to be the work
+of lesser known artists.  Each was chosen by Teardrop for its beauty, not
+its value.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 19681
+D5
+~
+~
+0 0 19677
+S
+#19681
+On The Staircase~
+~
+~
+The stairs are clean and neat, but upon one step you notice a spot that
+seems to be a bit worn.  It seems as if someone sits upon this step often,
+and the candle on the wall above this step is melted quite low, as if
+Teardrop sits here quite late in the evening, perhaps reading upon the
+stairs.  To prove this point, a book lies upon the stair, off to one side, a
+place marked with a satin bookmark.  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 19682
+D5
+~
+~
+0 0 19680
+S
+#19682
+Upstairs Landing~
+~
+~
+A large window over looks the side yard, and you can barely see the edge
+of a gazebo towards the back of the house as you gaze out the clear panes of
+glass.  A hallway leads to the south, several doors on each side, and
+another door is closed at the end.  A small table sits under the window, a
+vase of flowers and two candlesticks upon it.  A small staircase continues
+up, a closed door at the top.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 19683
+D4
+~
+door~
+3 0 19699
+D5
+~
+~
+0 0 19681
+S
+#19683
+Hallway~
+~
+~
+A closed door stands on each side of the hall.  The rest of the space
+along the walls is taken up by a plant, evenly spaced between each door. 
+Hanging on the walls are strange objects, one a wooden mask with strange
+markings painted upon it with a dark blue dye.  A small heart-shaped mirror
+graces the other wall, framed in gold.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19682
+D1
+~
+door~
+3 0 19687
+D2
+~
+~
+0 0 19684
+D3
+~
+door~
+3 0 19686
+S
+#19684
+Hallway~
+~
+~
+Another set of doors stand across from eachother, both closed, and more
+unusual objects decorate the walls.  A large ornate sword hangs diagonally
+upon the wall, and a double headed axe with feathers hanging off the handle
+crosses it in the other direction.  The wallpaper that covers the walls
+stands out in contrast to the violent looking decor, for it's a light pastel
+blue.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19683
+D1
+~
+door~
+3 0 19689
+D2
+~
+~
+0 0 19685
+D3
+~
+door~
+3 0 19688
+S
+#19685
+Hallway~
+~
+~
+Two doors face eachother across the hall, and another stands closed to
+the south.  A soft scent of jasmine perfumes the air, and upon the wall are
+placed two small shelves, each containing a small potpourri burner, filled
+with jasmine potpourri.  The little pots are mismatched, but each is
+delicate and very pretty in its own way.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19684
+D1
+~
+door~
+3 0 19691
+D2
+~
+door~
+3 0 19692
+D3
+~
+door~
+3 0 19690
+S
+#19686
+Guest Room~
+~
+~
+This bedroom is decorated in several shades of blue.  A large bed stands
+against the far wall beneath an airy window.  A chest of drawers and a small
+table make up the other furnishings of this room, and a large overstuffed
+chair sits before a small fireplace, kindling laid out for the evening fire.
+This room seems to be unoccupied, but kept clean for any guests who may come
+to visit.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+3 0 19683
+S
+#19687
+Dreamwynd's Guest Bedroom~
+~
+~
+This room is done all in gold and silver.  The cloth covering the large
+bed and walls has threads of gold woven through it, and the pillows are
+embroidered with strands of silver.  A large chair and an oak dresser add to
+the furnishings, and a small vanity with a vase of cut marigolds sits next
+to the bed.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+3 0 19683
+S
+#19688
+Zhyril's Guest Room~
+~
+~
+Done in greens, this room immediately brings to mind the peace of a deep
+forest.  The bedspread is the color of new leaves and the curtains and
+valence that frame the window are a soft grassy green.  A small divan rests
+under the window, and the view out the windows reflects the woodsy feeling
+of the room.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+3 0 19684
+S
+#19689
+Guest Room~
+~
+~
+Shades ranging from deep plum purple to the palest shade of lavender turn
+this room into a maiden's delight.  White lace falls from the canopy over
+the bed, while a violet satin coverlet lays across the foot.  A rocking
+chair sits in front of the fireplace, and a hand-woven rug covers the floor
+beside the bed.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+3 0 19684
+S
+#19690
+Child's Room~
+~
+~
+A small bed rests beneath a partially open window, and a child-sized
+dresser sits beside it.  A soft carpet covers the floor, and the walls are
+decorated with pictures of children at play.  A large teddybear sits upon
+the bed, and a few toys are scattered here and there.  A small bookcase
+filled with children's stories and faerie tales stands against the wall.  A
+small set of stairs leads to another room.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+3 0 19685
+D4
+~
+~
+0 0 19693
+S
+#19691
+Nursery~
+~
+~
+A beautiful antique crib stands here, and a pearly white rocking
+bassinet sits at the foot.  A changing table and a small chest of drawers
+round out the furnishings, and a exquisite old rocking chair stands before a
+screened fireplace.  A mobile swings above the crib, and the smell of baby
+powder and baby oil pervades the room.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+3 0 19685
+S
+#19692
+Master Bedroom~
+~
+~
+A large window faces south, the afternoon sunrays stream in to hit the
+large bed that fills the room.  Tastefully decorated, Teardrop's bedroom is
+roomy yet cozy, a fireplace laid and ready to be lit.  Three steps lead to a
+slightly raised portion of the room, but it is partially concealed by a lace
+curtain.  A skylight above the bed is open a tiny bit, and the curtain
+flutters lightly in the breeze.  A dressing screen stands in one corner,
+brightly painted with oriental dragons.  
+~
+0 520 0
+Rd     0
+D0
+~
+door~
+3 0 19685
+D4
+~
+~
+0 0 19694
+S
+#19693
+Playroom~
+~
+~
+This room makes you feel huge, for everything has been sized down, from
+the windows, which are about waist high on an adult, but just right for a
+child to look out of.  A closet opens into one wall, and this too is just
+right for a child to hang up their clothes, and to put things upon the
+shelves.  A toybox sits against the wall, and everything else in this
+lilliputian room is neatly put away.  
+~
+0 8 0
+Rd     0
+D5
+~
+~
+0 0 19690
+S
+#19694
+Small Sunroom~
+~
+~
+Half hidden behind a white lace curtain, this small room is a perfect
+place to come and just relax.  A daybed made of white wrought iron, and
+covered with a satin cover offers a place to sit, and the slanted ceiling is
+made entirely of glass, offering an excellant exposure to the sun by day,
+and a wonderous view of the stars by night.  A wicker chair is the only
+other seat in the room, but it's filled with stuffed animals.  
+~
+0 131080 0
+Rd     0
+E
+stars~
+.                         .                                .
+ .                 .                     .        *
+        .                 .                             . 
+   .          *                 .            .          
+ .         .             .            .                     .
+      .           .             .             .
+             .                            .          .           .
+   .                     .
+          .                      .              .         . 
+      .            .                      .                         .
+  .
+~
+D5
+~
+~
+0 0 19692
+S
+#19695
+Secret Passage~
+~
+~
+This tunnel is dark and slightly damp.  The walls are made of red brick,
+and a torch ring of iron has been pounded into the wall, but no torch burns
+at the moment.  The floor is packed dirt, but is smooth, as if this tunnel
+is used fairly frequently.  The air is fresh, not musty, which lends further
+belief to the fact that it is well travelled.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19696
+D4
+~
+~
+119 0 19663
+S
+#19696
+Secret Passage~
+~
+~
+This tunnel continues on, each brick weathered yet sturdy.  The hard
+packed floor is swept clean, and very smooth, and you hear no squeaks or
+skittering sounds to indicate mice or other varmints.  A very dark place,
+the air is cool, but not cold.  The fresh air blows past your face and
+around your ankles, and a torch, stuck in an iron torch ring flickers.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 19695
+S
+#19697
+Front Lawn~
+~
+~
+Surrounded by a high lilac hedge and carpeted with immaculately cared for
+grass, this part of the front yard is well shaded by the immense old trees
+that dot the lawn.  From a low branch of one ancient tree is an old tire
+swing, swaying gently in the breeze, and a ladder, nailed to the trunk,
+leads up into the lofty heights of the old giant.  Barely visible through
+the foliage is the underside of what appears to be a rather large treehouse.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 19650
+S
+#19698
+Front Lawn~
+~
+~
+Softly muted sounds filter in from the street, but because of the lilac
+hedge that protects the privacy of guests and owner alike, the outside world
+seems miles away.  A squirrel sits at the foot of one of the many trees, and
+eyes you curriously, and a fat robin hops across the grass, stopping to cock
+its head as it searches for its meal.  You faintly hear the cheeps of her
+tiny family, and as she pecks the ground and darts away, a butterfly flits
+down to rest on your shoulder, then flutters off again.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 19650
+S
+#19699
+Servant's Quarters.~
+~
+~
+This room may be just a room for the servants, but even though it's
+located in the attic, it's clean and comfortable.  Several partitions
+section off the room, each containing a bed and small dresser.  The dormer
+windows are open, and a cool breeze brings relief to a sometimes warm and
+stuffy room.  A woven rug covers the floor, and a few chairs are scattered
+around a table that has been provided for general use.  
+~
+0 8 0
+Rd     0
+D5
+~
+door~
+3 0 19682
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 19651 0 19651
+P 0 19650 0 19651
+M 0 19650 1 19652
+E 0 19658 0 7
+M 0 19663 1 19655
+E 0 19677 0 25
+O 0 19665 0 19658
+M 0 19651 1 19661
+E 0 19659 0 3
+M 0 19652 1 19669
+M 0 19653 2 19669
+O 0 19660 0 19669
+P 0 19661 0 19660
+E 0 19664 0 20
+M 0 19654 5 19672
+G 0 19662 0
+M 0 19655 1 19674
+G 0 19663 0
+M 0 19662 1 19679
+G 0 19678 0
+O 0 19667 0 19679
+M 0 19659 1 19683
+E 0 19670 0 19
+O 0 19679 0 19687
+P 0 19666 0 19679
+M 0 19661 1 19690
+O 0 19652 0 19692
+P 0 19653 0 19652
+P 0 19654 0 19652
+O 0 19655 0 19692
+O 0 19656 0 19692
+O 0 19657 0 19692
+O 0 19681 0 19692
+O 0 19673 0 19693
+P 0 19671 0 19673
+M 0 19660 2 19693
+E 0 19674 0 5
+E 0 19675 0 11
+E 0 19676 0 20
+M 0 19656 2 19698
+M 0 19657 1 19698
+M 0 19658 1 19699
+E 0 19668 0 22
+E 0 19669 0 12
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

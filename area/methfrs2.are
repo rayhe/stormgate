@@ -1,0 +1,1147 @@
+#AREADATA
+Name        { 40-75} Methic Forest (P)~
+Builders    Balthazar~
+VNUMs       26551 26999
+Security    100
+Recall      4006
+Flags       128
+Version     107
+Creator     Balthazar~
+Llevel      0
+Ulevel      0
+Music       u7_theme.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#26612
+Yeti~
+A Yeti~
+A hulking creature covered in fur is here.
+~
+~
+35 134283496 0 0 0 0 S
+69 1 138 138 24000 24000d0+0 0d0+0
+690 0 0
+0 0 0
+257 0 0
+>fight_prog ~
+~
+|
+#0
+
+
+
+#OBJECTS
+#26611
+Yeti Bracelet~
+a Yeti Fur Bracelet~
+A bracelet made from thick fur lies here.~
+~
+9 131075 8 0 0 4097 68
+100 100
+0~ 0~ 0~ 0~
+3 680 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 8
+A
+18 8
+A
+13 50
+A
+24 -6
+A
+23 -3
+A
+4 1
+#26612
+Yeti Fur Boots~
+a pair of Yeti Fur Boots~
+Some thickly furred and well padded boots lie here.~
+~
+9 131073 8 0 0 65 68
+100 100
+0~ 0~ 0~ 0~
+7 680 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+A
+18 7
+A
+13 15
+A
+26 10
+#0
+
+
+
+#ROOMDATA
+#26551
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26552
+D3
+~
+~
+0 0 26550
+S
+#26552
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26553
+D3
+~
+~
+0 0 26551
+S
+#26553
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26554
+D3
+~
+~
+0 0 26552
+S
+#26554
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26555
+D3
+~
+~
+0 0 26553
+S
+#26555
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26556
+D3
+~
+~
+0 0 26554
+S
+#26556
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26555
+D2
+~
+~
+0 0 26557
+S
+#26557
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26556
+D1
+~
+~
+0 0 26558
+S
+#26558
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26559
+D3
+~
+~
+0 0 26557
+S
+#26559
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26560
+D3
+~
+~
+0 0 26558
+S
+#26560
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26559
+D3
+~
+~
+0 0 26561
+S
+#26561
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26560
+D3
+~
+~
+0 0 26562
+S
+#26562
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26561
+D3
+~
+~
+0 0 26563
+S
+#26563
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26562
+D3
+~
+~
+0 0 26564
+S
+#26564
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+E
+cave~
+~
+D0
+~
+~
+3 0 26597
+D1
+~
+~
+0 0 26563
+S
+#26565
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26538
+D3
+~
+~
+0 0 26566
+S
+#26566
+Deeper into the Forest~
+~
+~
+~
+0 134479873 3
+Rd     0
+D1
+~
+~
+0 0 26565
+D3
+~
+~
+0 0 26567
+S
+#26567
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26566
+D3
+~
+~
+0 0 26568
+S
+#26568
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26567
+D3
+~
+~
+0 0 26432
+S
+#26569
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26570
+D2
+~
+~
+0 0 26492
+S
+#26570
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26571
+D2
+~
+~
+0 0 26569
+S
+#26571
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26572
+D2
+~
+~
+0 0 26570
+S
+#26572
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26573
+D3
+~
+~
+0 0 26571
+S
+#26573
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26574
+D3
+~
+~
+0 0 26572
+S
+#26574
+Deeper into the Forest~
+~
+~
+~
+0 134217729 3
+Rd     0
+D1
+~
+~
+0 0 26575
+D3
+~
+~
+0 0 26573
+S
+#26575
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26576
+D3
+~
+~
+0 0 26574
+S
+#26576
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26575
+D2
+~
+~
+0 0 26577
+S
+#26577
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26576
+D3
+~
+~
+0 0 26578
+S
+#26578
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26577
+D3
+~
+~
+0 0 26579
+S
+#26579
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26578
+D2
+~
+~
+0 0 26580
+S
+#26580
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26579
+D1
+~
+~
+0 0 26581
+S
+#26581
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26582
+D3
+~
+~
+0 0 26580
+S
+#26582
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26583
+D3
+~
+~
+0 0 26581
+S
+#26583
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26584
+D3
+~
+~
+0 0 26582
+S
+#26584
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26585
+D3
+~
+~
+0 0 26583
+S
+#26585
+Deeper into the Forest~
+~
+~
+~
+0 134217729 3
+Rd     0
+D1
+~
+~
+0 0 26586
+D3
+~
+~
+0 0 26584
+S
+#26586
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26587
+D3
+~
+~
+0 0 26585
+S
+#26587
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26588
+D3
+~
+~
+0 0 26586
+S
+#26588
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26589
+D2
+~
+~
+0 0 26587
+S
+#26589
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26590
+D2
+~
+~
+0 0 26588
+S
+#26590
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26591
+D2
+~
+~
+0 0 26589
+S
+#26591
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26592
+D2
+~
+~
+0 0 26590
+S
+#26592
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26591
+S
+#26593
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26428
+D3
+~
+~
+0 0 26594
+S
+#26594
+Deeper into the Forest~
+~
+~
+~
+0 134488065 0
+Rd     0
+D1
+~
+~
+0 0 26593
+D3
+~
+~
+0 0 26595
+S
+#26595
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26594
+D3
+~
+~
+0 0 26596
+S
+#26596
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26595
+D3
+~
+~
+0 0 26412
+S
+#26597
+A Well Hidden Cave~
+~
+~
+~
+0 401411 0
+Rd     0
+D0
+~
+~
+0 0 26598
+D2
+~
+cave~
+3 0 26564
+S
+#26598
+A Well Hidden Cave~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 26597
+D3
+~
+~
+0 0 26599
+S
+#26599
+Inside a Well Hidden Cave~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 26598
+D3
+~
+~
+0 0 26600
+S
+#26600
+Inside a Well Hidden Cave~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 26599
+D2
+~
+~
+0 0 26601
+D3
+~
+~
+3 0 26602
+S
+#26601
+Inside a Well Hidden Cave~
+~
+~
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 26600
+S
+#26602
+Lair of the Ancient Ice Dragon~
+~
+~
+~
+0 401411 0
+Rd     0
+D1
+~
+Boulder~
+3 0 26600
+S
+#26603
+Climbing A Tree~
+~
+~
+CLimbing up the large tree is no easy task.  It is very old and very
+large, having branches that go in all directions.  You begin sense that the
+higher you go, the brighter it is getting, as you get out of the thick tree
+cover.  
+~
+0 4 3
+Rd     0
+D4
+~
+~
+0 0 26604
+D5
+~
+Tree~
+3 0 26390
+S
+#26604
+Climbing a Tree~
+~
+~
+Continuing your climb up the tree, you are able to see the bottom of the
+ledge pretty clearly from here.  Whats more, there seems to be a lot of
+animal hair stuck in the tree bark.  
+~
+0 4 3
+Rd     0
+D4
+~
+~
+0 0 26605
+D5
+~
+~
+0 0 26603
+S
+#26605
+An Overhanging Ledge~
+~
+~
+You finally reach the ledge, and notice that there is a dark cave leading
+to thewest.  It is much too dark to see what the cave holds in store for
+you, but if the outside ledge is any indication, it might be a good idea to
+be careful.  Various animal bones lie scattered around and you can make out
+faint rustling noises coming from inside the cave.  
+~
+0 4 3
+Rd     0
+D3
+~
+~
+0 0 26606
+D5
+~
+~
+0 0 26604
+S
+#26606
+Inside a Dark Cave~
+~
+~
+You have walked into the entrance of a very dark cave, very similar to
+the one the Neandrathals live in.  It is damp and musty, but there is an
+odd, lingering odor hanging in the air.  You are not sure what it is, but
+its puts you on edge.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 26605
+D3
+~
+~
+0 0 26607
+S
+#26607
+Inside a Dark Cave~
+~
+~
+Exits lead in all directions from this room, and it would be a wise
+decision not to choose the wrong way.  You notice more thick fur on the
+floor of the cave, along with a few more bones.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 26609
+D1
+~
+~
+0 0 26606
+D2
+~
+~
+0 0 26608
+S
+#26608
+Inside a Dark Cave~
+~
+~
+The room you enter has no exit, save for the same one you entered.  There
+is a great deal of clutter lying around on the floor, but it is very hard to
+determine exactly what it is.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 26607
+S
+#26609
+A Tunnel in the Cave~
+~
+~
+The room smells really bad, and it seems to be coming from underneath
+you.  Searching for a secret passage, you cannot find any, and decide that
+it must be something buried down below.  The smell almost overcomes you, and
+makes you move on.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 26610
+D2
+~
+~
+0 0 26607
+S
+#26610
+A Tunnel in the Cave~
+~
+~
+You enter the room and are startled to see a shadow begin to move away
+from you quickly to the east.  You wonder what could be living in such a
+dank cave, and where its supply of food comes from.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 26611
+D2
+~
+~
+0 0 26609
+S
+#26611
+A Turn in the Tunnel~
+~
+~
+Fur almost lines the entire floor here, and there is a loud moaning sound
+coming from the north.  You instinctively get ready for a possible battle,
+but don't know whether it would be smart to attempt to walk into the room.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 26612
+D3
+~
+~
+0 0 26610
+S
+#26612
+The Room of the Yeti~
+~
+~
+You have entered the room where the moaning has been coming from. 
+Standing in front of you, is an extremely large, half human, half ape
+looking creature.  He looks at you with small, black eyes.  There is a
+certain look of tranquility in his expression, but this all disappears as he
+lets a loud snort out and rushes towards you.  You better hope you can get
+out of here.  
+~
+0 9 0
+Rd     0
+D2
+~
+~
+0 0 26611
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 4035 5 26551
+E 0 26323 0 20
+M 0 4039 4 26571
+E 0 26328 0 20
+E 0 26329 0 16
+M 0 4032 5 26580
+E 0 26320 0 16
+M 0 4040 1 26602
+E 0 26330 0 9
+E 0 26331 0 26
+E 0 26332 0 20
+M 0 26612 1 26612
+E 0 26611 0 19
+E 0 26612 0 12
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

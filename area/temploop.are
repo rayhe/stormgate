@@ -1,0 +1,1282 @@
+#AREADATA
+Name        { 100+ } Temporal Loop~
+Builders    Tyrion Mishval~
+VNUMs       29001 29550
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Mishval~
+Llevel      0
+Ulevel      0
+Sounds      (Default)~
+SoundsA     (None)~
+Music       (None)~
+End
+
+
+
+#MOBILES
+#29001
+drovak~
+Drovak~
+Drovak the Keybearer sits here before you.
+~
+~
+3 503316480 65568 16384 4 0 S
+108 1 440 390 0 35000d0+0 0d0+0
+1080 22 0
+0 0 0
+3 0 0
+>greet_prog 100~
+say Welcome $n to the Convergeance of Time.  It has been awhile since I have had any visitors!  Did you want to enter?
+~
+>speech_prog yes~
+frown
+say I was afraid you were going to say that...
+say Be careful in there.  There are severe consequences for fooling around with Time.
+say Good luck $n.
+unlock up
+open up
+~
+|
+#29031
+jurnov watcher~
+Jurnov the Watcher~
+Jurnov, Watcher of the Past hovers before you.
+~
+~
+3 128 589824 0 96 0 S
+110 1 480 400 0 36000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+#29032
+temporal guide~
+a temporal guide~
+A temporal guide stands here enjoying the scenery.
+~
+~
+3 268435584 524288 0 0 0 S
+108 1 370 350 0 26000d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#29001
+magical stopwatch~
+a magical stopwatch~
+A stop-watch sits here humming with a magical glow.~
+~
+18 3 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#29002
+time sabre~
+&Y a golden sabre of Time~
+A magical sword sits here phasing in and out of existence.~
+~
+5 8193 0 0 0 8193 100
+100 100
+0~ 45~ 90~ 3~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#29029
+silver pool~
+a silvery pool~
+&WA silvery pool swirls in front of you.~
+~
+29 67108929 0 0 0 0 0
+100 100
+29031~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#29031
+blue orb~
+a blue orb~
+&BA manigificent blue orb hovers in mid-air.~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#29001
+Atop a Clock Face~
+~
+~
+What happened?  Where are you?  And most importantly, what time is it?  A
+swirling purple and black cloud surrounds you, amplifying the emptiness that
+resonates in this area.  Admist all of the clouds and haze, you find
+yourself standing on the face of an enormous clock with a golden outer rim
+and an illustrious silver face.  There is an hour, minute and second hand on
+this clock but they do not appear to be operating in normal fashion.  In
+fact, the hands seem to appear and reappear at different times without any
+rhyme or reason.  Even the second hand moves forward and backward without
+any noticeable pattern.  In the distance, you see a hooded figure seated
+cross-legged where the 12 o'clock mark typically is placed.  
+~
+0 393216 0
+Rd     0
+D4
+~
+~
+7 29001 29002
+S
+#29002
+Dawn of Time~
+~
+~
+The swirling haze has cleared substantially and in its place is a
+magnificent landscape showcasing ancient mountains, rivers and vegetation. 
+Through the remnants of the dark clouds you can make out the image of two
+moons.  This place must have existed far into the past, possibly when the
+world as you know it first began.  You are blocked from moving too far into
+the world before you, probably to prevent any tampering with the temporal
+continuum.  However, you see several pulsing vortices before you, beckoning
+you to approach, enter and see what lies ahead.  There is also a portal at
+your feet resonating with strong magic.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 29003
+D5
+~
+~
+7 0 29001
+S
+#29003
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  or escape..  the present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 29004
+D1
+~
+~
+0 0 29008
+D2
+~
+~
+0 0 29002
+D3
+~
+~
+0 0 29007
+S
+#29004
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29014
+D1
+~
+~
+0 0 29008
+D2
+~
+~
+0 0 29018
+D3
+~
+~
+0 0 29011
+S
+#29005
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29008
+D1
+~
+~
+0 0 29016
+D2
+~
+~
+0 0 29010
+D3
+~
+~
+0 0 29013
+S
+#29006
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29026
+D1
+~
+~
+0 0 29013
+D2
+~
+~
+0 0 29025
+D3
+~
+~
+0 0 29008
+S
+#29007
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29026
+D1
+~
+~
+0 0 29013
+D2
+~
+~
+0 0 29005
+D3
+~
+~
+0 0 29016
+S
+#29008
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 29018
+D1
+~
+~
+0 0 29013
+D2
+~
+~
+0 0 29019
+D3
+~
+~
+0 0 29026
+S
+#29009
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29008
+D1
+~
+~
+0 0 29019
+D2
+~
+~
+0 0 29018
+D3
+~
+~
+0 0 29020
+S
+#29010
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29015
+D1
+~
+~
+0 0 29026
+D2
+~
+~
+0 0 29016
+D3
+~
+~
+0 0 29013
+S
+#29011
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29008
+D1
+~
+~
+0 0 29019
+D2
+~
+~
+0 0 29027
+D3
+~
+~
+0 0 29012
+S
+#29012
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 29016
+D1
+~
+~
+0 0 29027
+D2
+~
+~
+0 0 29008
+D3
+~
+~
+0 0 29022
+S
+#29013
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29018
+D1
+~
+~
+0 0 29026
+D2
+~
+~
+0 0 29016
+D3
+~
+~
+0 0 29008
+S
+#29014
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29018
+D1
+~
+~
+0 0 29019
+D2
+~
+~
+0 0 29009
+D3
+~
+~
+0 0 29008
+S
+#29015
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29016
+D1
+~
+~
+0 0 29026
+D2
+~
+~
+0 0 29019
+D3
+~
+~
+0 0 29021
+S
+#29016
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29018
+D1
+~
+~
+0 0 29019
+D2
+~
+~
+0 0 29027
+D3
+~
+~
+0 0 29013
+S
+#29017
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29027
+D1
+~
+~
+0 0 29023
+D2
+~
+~
+0 0 29019
+D3
+~
+~
+0 0 29008
+S
+#29018
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29008
+D1
+~
+~
+0 0 29013
+D2
+~
+~
+0 0 29016
+D3
+~
+~
+0 0 29026
+S
+#29019
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29013
+D1
+~
+~
+0 0 29026
+D2
+~
+~
+0 0 29016
+D3
+~
+~
+0 0 29008
+S
+#29020
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29008
+D1
+~
+~
+0 0 29013
+D2
+~
+~
+0 0 29017
+D3
+~
+~
+0 0 29016
+S
+#29021
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29019
+D1
+~
+~
+0 0 29024
+D2
+~
+~
+0 0 29027
+D3
+~
+~
+0 0 29026
+S
+#29022
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29008
+D1
+~
+~
+0 0 29006
+D2
+~
+~
+0 0 29027
+D3
+~
+~
+0 0 29019
+S
+#29023
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29030
+D1
+~
+~
+0 0 29008
+D2
+~
+~
+0 0 29026
+D3
+~
+~
+0 0 29019
+S
+#29024
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29027
+D1
+~
+~
+0 0 29016
+D2
+~
+~
+0 0 29029
+D3
+~
+~
+0 0 29008
+S
+#29025
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29013
+D1
+~
+~
+0 0 29028
+D2
+~
+~
+0 0 29026
+D3
+~
+~
+0 0 29018
+S
+#29026
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29013
+D1
+~
+~
+0 0 29013
+D2
+~
+~
+0 0 29008
+D3
+~
+~
+0 0 29027
+S
+#29027
+The Temporal Loop~
+~
+~
+You continue your journey through what seems like a different time
+period.  Once again, you are surrounded by magical barriers preventing you
+from going far into the current existence.  Instead, vortices stand before
+you, allowing to enter...  Or escape..  The present reality.  With each
+vortex you enter, a stronger magical force can be felt emanating from all
+around.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29008
+D1
+~
+~
+0 0 29026
+D2
+~
+~
+0 0 29019
+D3
+~
+~
+0 0 29016
+S
+#29028
+The Here and Now~
+~
+~
+The purplish-black haze saturates the area once again, obscuring the
+impressive landscape and skyscape that once surrounded you.  In place of the
+landscape and the vortices that once existed is a giant red gate extending
+far up into the sky.  The smell of blood permeates the air and powerful
+magic pulses through your body.  A message has been inscribed on the door in
+every language known in the present world.  Everything from dwarven to
+gnomish to lizard has been scrawled on the massive gate bearing the same
+message.  Upon closer inspection, it clearly reads "Be Warned: The blood of
+the present spills into the past and future."  The only other exit is the
+vortex to the west heading back into the loop.  
+~
+0 393216 0
+Rd     0
+D3
+~
+~
+0 0 29025
+S
+#29029
+A Window to the Past~
+~
+~
+The purplish-black haze saturates the area once again, obscuring the
+impressive landscape and skyscape that once surrounded you.  The only
+deviation from this suffocating haze is a silvery well sitting a couple of
+yards from your feet.  The well seems to be composed of a swirling silver
+liquid, constantly shifting and, on occasion, forming a random image. 
+Encircling the pool of silver are hundreds of fossils from what seems like a
+variety of animals.  The individual bones have been fused together to form
+one continuous ring around the silver well.  A vortex stands behind you
+heading back into the loop.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 29024
+S
+#29030
+A Glimpse of the Future~
+~
+~
+The purplish-black haze saturates the area once again, obscuring the
+landscape and sky that once surrounded you.  The only significant feature of
+this strange area is an enormous portal looming in the sky before you.  The
+portal is framed on all sides by a strange metallic material.  Strange
+symbols or writing have been etched into the frame and emanate an eerie
+glow.  A ramp made of the same metallic substance extends from ground level
+to the enormous portal.  The only other exit you can see is back into the
+loop.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 29023
+S
+#29031
+Antechamber of the Past~
+~
+~
+This chamber is dark and you seem to be floating among the black void. 
+In the distance and surrounding you are a number of stars.  But they do not
+appear to resemble any night sky that you have ever seen before.  Perhaps it
+is the heavens of the past?  Toward the center of the dark chamber is a
+enormous blue orb, glowing and pulsating with temporal energy.  Hovering
+over the orb is a old man wearing an earthen brown robe, his eyes fixated on
+the orb.  Two beams of light emanate from opposite sides of the orb,
+creating doorways to the east and west.  
+~
+0 131074 0
+Rd     0
+D3
+~
+~
+3 0 29032
+S
+#29032
+A Stone Sanctuary~
+~
+~
+This area is surrounded on almost all sides by high rock faces.  There is
+a small mountain pass to the west that is barely wide enough for a creature
+to move through without too much trouble.  Erosion and natural phenonmenon
+has taken its toll on the surrounding mountains, chipping off large and
+small chunks of rock and casting them to the ground, forming no particular
+pattern.  One particularly large boulder sits in the northeast corner of
+this sanctuary and sitting atop of the rock is a creature you have never
+seen before.  It is unusually quiet without even the whisper of wind to
+disturb the peace.  
+~
+0 393218 5
+Rd     0
+D3
+~
+~
+0 0 29033
+S
+#29033
+A Mountain Pass~
+~
+~
+Looking up, the mountains on either side of you extend toward the sky for
+several thousand feet.  The tops of the peaks are obscured by heavy clouds. 
+You can make out several creatures flying about at very high altitudes
+around the peak of the mountains.  The sides of the mountains are quite
+smooth and does not provide many crevices with which to climb.  A variety of
+bones lay on this narrow path between the mountains and some appear to have
+been around for quite a long time, having been obscured by layers of dirt. 
+There are sounds originating from the west that suggest some form of life
+exists.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 29032
+D3
+~
+~
+0 0 29034
+S
+#29034
+Edge of a Mountain Pass~
+~
+~
+The mountain pass widens substantially at this point and opens to the
+outskirts of a dense prehistoric forest.  The trees are enormous and reach
+for probably a few hundred feet toward the sky.  The dirt and gravel of the
+pass slowly disappear around you and vegetation begins to be much more
+abundant.  The ground slightly trembles ever so often, its origins unknown. 
+The temperature is rather cool and there is a slight breeze coming from
+within the mountain pass.  In the distance, you can make out some large
+moving forms, but cannot quite ascertain what type of creature resides here.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 29033
+D3
+~
+~
+0 0 29035
+S
+#29035
+Edge of a Dense Forest~
+~
+~
+The vegetation has subsided somewhat to allow the dirt and gravel and
+majestic peaks of a mountain range to settle in to the east.  A mountain
+pass has been formed by two towering peaks to the east.  Looking down the
+eastern pass, you are not able to see much as a dark haze seems to cloud
+your vision.  An enormous log has fallen into the river at this eastern
+point and allows you to cross to the north.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 29034
+D3
+~
+~
+0 0 29036
+S
+#29036
+A Riverside Path~
+~
+~
+A river cascades down from the mountains to the east and forms a small
+winding river in the middle of the dense forest.  It is a welcome break from
+the dense vegetation that otherwise exists in this area.  Creatures of all
+sizes approach the river to quench their thirst and take a break in the hot
+morning sun.  This river also appears to be some kind of dividing line as
+the north end of the forest exudes a dark ominous wave.  A much calmer and
+more relaxing feeling encompasses you on the southern banks of the river.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 29035
+D3
+~
+~
+0 0 29037
+S
+#29037
+Western End of the River~
+~
+~
+The river ends at this western point, creating a small lake for creatures
+to bathe and cool off during warm days.  Swooping down from high above are
+bird-like creatures attempting to catch prey in the river and feed their
+young.  The forest continues far beyond what you can see all around you. 
+Shadowy figures move slowly through the forest, once again making the ground
+tremble.  The dense forest continues to the west and the east.  The river
+continues its path to the east and the lake continues a little farther to
+the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29040
+D1
+~
+~
+0 0 29036
+D3
+~
+~
+0 0 29038
+S
+#29038
+Forest Hills~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 29039
+D1
+~
+~
+0 0 29037
+S
+#29039
+Forest Hills~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 29040
+D2
+~
+~
+0 0 29038
+S
+#29040
+Northwest End of a River~
+~
+~
+The river ends here, forming a very small lake at the western end.  In
+fact, the lake is so small, only one large creature is able to bathe at a
+time, creating a very hostile environment around here.  Bird-like creatures
+swoop down from high above to catch their daily food from the river at
+lightning fast speeds.  The forest appears to continue in all directions.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 29041
+D2
+~
+~
+0 0 29037
+D3
+~
+~
+0 0 29039
+S
+#29041
+A Riverside Path~
+~
+~
+The forest breaks to the south allowing just enough room for a river
+originating from the mountains to the east to run through unimpeded. 
+Several creatures stand at the banks of the rivers lapping up water to
+satisfy their thirst.  The water is a crystal blue and you are able to see
+the aquatic life very clearly.  You cannot see very much around you as the
+number and size of the trees limits the visibility significantly.  The
+ground continues to tremble occasionally, disturbing the calm flow of the
+clear blue water.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 29042
+D3
+~
+~
+0 0 29040
+S
+#29042
+Forest Edge~
+~
+~
+While the trees and other vegetations has not at all dissipated, the
+eastern edge of the forest is met by treacherous cliff faces.  Nature seems
+to be battling itself as tree roots extend into the cliff faces, fighting
+for more ground against the relentless mountains.  Small holes in the ground
+provide hiding places for tiny critters running around looking for food. 
+The edge of the forest continues north, but beyond that you can only go
+deeper into the forest toward the west. 
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 29041
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 29001 1 29001
+E 0 29002 0 20
+G 0 29001 0
+O 0 29029 0 29029
+O 0 29031 0 29031
+M 0 29031 1 29031
+E 0 29002 0 20
+M 0 29032 1 29032
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,1735 @@
+#AREADATA
+Name        None~
+Builders    Joke~
+VNUMs       10000 10100
+Security    100
+Recall      1
+Flags       272
+Version     107
+Creator     Joke~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#10000
+A Dark Dismal Tick Tock Guard~
+A Dark Dismal Tick Tock Guard Stands here~
+A Dark Dismal Tick Tock Guard Stands here
+~
+~
+3 234881152 0 131072 0 0 S
+50 1 50 50 0 3750d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#10001
+A Bounty hunter~
+A Bounty Hunter sits agianst the wall sobbing.~
+A Bounty Hunter sits agianst the wall sobbing.
+~
+~
+3 0 0 0 0 1000 S
+50 1 75 75 0 15400d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#10002
+A Time Punk~
+A Time Punk~
+A Time Punk Stands here looking for fights.
+~
+A Time punk with dark red eyes stands here searching for someone to fight with.
+He doesn't seem to friendly and he doesn't look like he really likes you at all.
+His face has a terrible slash on the side probly from a previous fight.
+~
+1 0 0 0 0 -100 S
+50 1 99 78 0 2500d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#10003
+A Time Wizard~
+A Time Wizard~
+A Time Wizard Rushes threw the busy Crowd trying to get to work.
+~
+A Time Wizard rushes to his work in what looks like a silk suit.
+He dodges left he dodges right fighting the crowds.
+He looks terribly stressed,He must be late for a meeting.
+~
+65 0 0 0 0 0 S
+50 1 75 75 0 5000d0+0 0d0+0
+200 0 0
+0 0 0
+0 0 0
+#10004
+A Small Child~
+Child Of Time~
+A Small Child Stands here playing with a time ball.
+~
+~
+1 0 0 0 0 1000 S
+50 1 55 43 0 1500d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#10005
+A Bounty Hunter ShopKeeper~
+A Bounty Hunter~
+A Tall Bounty Hunter stands here.
+~
+~
+3 128 0 0 1 0 S
+50 1 1000000 1000000 0 100000000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+#10006
+Time Enchanter~
+A Small Time Enchant~
+A Small Time Enchanter Fiddles with things.
+~
+~
+3 0 0 0 1 0 S
+50 1 1000 1000 0 1000000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#10007
+A Gnomish Inventor~
+A Gnomish Inventor~
+A Gnomish Inventor sits at his workbench fiddling with things.
+~
+~
+3 0 0 0 0 0 S
+50 1 100 97 0 7500d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+#10008
+Time Creatue~
+A Time Creature~
+A Time Creature Attacks You.
+~
+~
+35 0 0 0 0 -1000 S
+50 1 100 100 0 10000d0+0 0d0+0
+400 0 0
+0 0 0
+0 0 0
+#10009
+Time Enchantress~
+Time Enchantress~
+A Time Enchantress Stands here Welcoming you into her home.
+~
+~
+3 0 0 0 0 1000 S
+50 1 75 85 0 10000d0+0 0d0+0
+200 0 0
+0 0 0
+0 0 0
+#10010
+A Pink Pixie~
+A Pink Pixie~
+A Pink Pixie Welcome you into her home.
+~
+~
+3 128 0 0 0 0 S
+50 1 65 75 0 7500d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+#10011
+A Blue Pixie~
+A Blue Pixie~
+A Blue Pixie Welcomes You Into His home.
+~
+~
+3 128 0 0 0 0 S
+50 1 56 87 0 7500d0+0 0d0+0
+400 0 0
+0 0 1
+0 0 0
+#10012
+Time Keeper Of The Past~
+Time Keeper~
+The Time Keeper Of The Past.
+~
+~
+3 100663424 0 0 0 0 S
+100 1 200 200 0 35000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#10013
+Time Keeper Of The Future~
+Time Keeper~
+Time Keeper Of The Future
+~
+~
+3 167772288 0 0 0 0 S
+100 1 200 200 0 35000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#10014
+Master Time Keeper~
+Master Time Keeper~
+The Master Of All Time Stands Here
+~
+~
+3 234881152 0 131072 0 0 S
+105 1 200 200 0 60000d0+0 0d0+0
+1000 0 0
+0 0 2
+0 0 0
+#10015
+Little Time Girl~
+A Little Time Girl~
+A Little Time Girl Twirls here wand around.
+~
+~
+1 0 0 0 0 0 S
+50 1 50 50 0 3000d0+0 0d0+0
+20 0 0
+0 0 2
+0 0 0
+#10016
+Inn Keeper~
+An Inn Keeper~
+An Inn Keeper stands here waiting.
+~
+~
+3 0 0 0 1 0 S
+108 1 216 216 0 0d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#10017
+A Wandering Bounty Hunter~
+A Bounty Hunter~
+A Wandering Bounty Hunter wanders around.
+~
+A Sad wandering bounty hunter is here,Wandering around wasting his time nothing to do no one to find all is lost even his hope he just stands and stares into the void of the abyss.
+~
+1 0 0 0 0 -1000 S
+50 1 69 75 0 5000d0+0 0d0+0
+20 0 0
+0 0 1
+0 0 0
+#10018
+A Time Enchanter~
+A Time Enchanter~
+A Time Enchanter stands here smiling at you.
+~
+~
+1 0 0 0 0 0 S
+50 1 100 98 0 10000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#10030
+none~
+Bloody Fish~
+Non
+~
+~
+1 0 0 0 0 0 S
+5 1 100 100 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#10000
+Tick Tock Portal~
+tick Tock Portal Time~
+Tick Tock Time Portal~
+~
+29 771756483 0 0 0 0 0
+100 100
+10001~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10001
+Small Tick Tock Inn Key~
+Inn Key~
+Inn Key~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#10002
+Barrel Of Monkeys~
+Barrel Of Monkeys~
+Barrel Of Monkeys~
+~
+9 234881024 0 0 0 1048577 0
+100 100
+-150~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10004
+Tick Tock Fountain Of Time~
+Tick Tock Fountain Of Time~
+Tick Tock Fountain Of Time~
+~
+25 100663619 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10006
+Portal~
+portal~
+Portal~
+~
+29 67108864 0 0 0 0 1
+100 100
+904~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10007
+sword Of Time~
+sword Of Time~
+The Ancient Sword Of Time?~
+~
+5 0 0 0 0 0 0
+100 100
+0~ 76~ 255~ 11~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10008
+Knife Punk Time~
+a Time Knife~
+A Time Knife Rips its way threw time here~
+~
+5 167772160 0 0 0 8193 50
+100 100
+0~ 56~ 20~ 11~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#10009
+Wing Time Shoes~
+winged time Shoes~
+Winged time shoes lay here waiting to be worn.~
+~
+9 0 0 0 0 65 50
+100 100
+16~ 0~ 0~ 0~
+3 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#10010
+Time ball TickTock~
+a Small Time Ball.~
+A small time ball bounces around here~
+~
+8 2 0 0 0 0 50
+100 100
+0~ 0~ 0~ 0~
+3 2000 0
+5 0
+reserved~
+1 1
+0 0 0
+#10011
+Bounty Hunter Rifle~
+A Bounty Hunter Rifle~
+A Bounty Hunter Rifle~
+~
+32 100663296 8192 0 0 2097153 50
+100 100
+500~ 15~ 15~ particle beam bullet~
+5 4000 0
+0 0
+reserved~
+0 0
+10013 0 0
+#10012
+Clip magazine~
+A Clip For A Bounty Hunter Rifle~
+A Clip For A Bounty Hunter Rifle~
+~
+32 100663297 8192 0 0 1 50
+100 100
+500~ 15~ 15~ particle beam bullet~
+2 4000 0
+0 0
+reserved~
+0 0
+10013 0 0
+#10013
+Bounty Hunter Rifle~
+A Bounty Hunter Rifle (Full)~
+A Bounty Hunter Rifle (Full)~
+~
+32 100663296 8192 0 0 1 50
+100 100
+500~ 15~ 15~ particle beam bullet~
+0 1 0
+0 0
+reserved~
+0 0
+0 10011 10012
+#10014
+time remote~
+a Time Remote~
+A Time Remote Lies there freezing time.~
+~
+32 3 0 0 0 0 50
+100 100
+100~ 7~ 7~ freeze bullet~
+1 40000 0
+0 0
+reserved~
+0 0
+0 0 0
+#10015
+Bonty Hunter Bag~
+(no short description)~
+(no description)~
+~
+15 771752055 0 0 0 0 100
+100 100
+400~ 13~ 0~ 0~
+1 40000 0
+0 0
+reserved~
+0 0
+0 0 0
+#10020
+a BloodStained Couch~
+a BloodStained Couch~
+&R A BloodStainedCouch &rRests here covered in Blood.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10021
+A Small Fish Bowl~
+a magical fish bowl~
+&B Fish swim around inside a magical flass bowl.~
+~
+15 3 262144 0 0 0 0
+100 100
+200~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10022
+A Bleeding Fish~
+&R A Bleeding Fish~
+&R An Bleeding Fish.~
+~
+26 0 0 0 0 1 108
+100 100
+108~ sanctuary~ fireshield~ haste~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10023
+Strange Fish~
+&BA &GStrange &YFish~
+&BA &GStrange &YFish~
+~
+26 0 0 0 0 1 108
+100 100
+108~ chaos field~ shockshield~ iceshield~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10024
+Glass Nitroglycerin~
+&BA Glass Of &BNitroglycerin~
+&BA Glass Of &GNitroglycerin~
+~
+17 100679687 262144 0 0 1 0
+100 100
+9999999~ 9999999~ 9~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10025
+none~
+&RDrunken &BMunke &GImplant~
+&RDrunken &BMunke &GImplant~
+~
+13 0 0 0 0 0 108
+100 100
+0~ 0~ 0~ 0~
+1 4000000 0
+4 10025
+reserved~
+2 2
+0 0 0
+#10026
+Pocket watch time~
+a pocket watch.~
+A pocket watch lies here telling time~
+~
+9 0 0 0 0 16385 50
+100 100
+10~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+-99 2
+A
+4 3
+#10027
+Stiener Rifle Gun Immortal~
+A Stiener Auto-Soul Stealer 920Ar~
+A Stiener Auto-Soul Stealer 920Ar~
+~
+32 771752021 24576 528384 0 2097153 50
+100 100
+1000~ 50~ 50~ armour piercing bullet~
+1 200000 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#10000
+Tick Tock~
+~
+~
+A Portal in the shape of a clock stands here ticking away.  Everything
+around you seems to be slowly moving if not melting.  Ancient Runes Line the
+Clock Portal an engraving on the portal reads 'Time is fate spend your time
+wisely or your fate may like you parish.' There is a bit more witch you
+cannot make out do to a small blood splatter.  
+~
+0 4 0
+Rd     0
+S
+#10001
+Welcome To Tick Tock~
+~
+~
+The entrance to Tick Tock, The wonderful village of time. As you walk
+South you see people rushing back and forth to and fro not knowing where
+anyone is going. The whole city is set in what looks like gears and
+sprockets and other little bits and pieces of clocks. You can't believe
+Your eyes but you believe you see some kids on hover boards racing down a
+street of cogs...
+~
+0 0 1
+Rd     0
+D2
+~
+~
+0 0 10002
+S
+#10002
+Time Street~
+~
+~
+Time Street is the main street of Tick Tock. It has a black and gold
+Lining with little clock faces embedded into it...Showing various days and
+times. People greet you with a cheery "Hello" as you walk by them. 
+Everyone here seems to be wearing something dealing with time. Further
+South you see A Fountain of some sort, which you cannot make out from here to
+The west and east some small shops.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10001
+D1
+~
+~
+0 0 10007
+D2
+~
+~
+0 0 10011
+D3
+~
+~
+0 0 10003
+S
+#10003
+A Narrow Street Lined with time.~
+~
+~
+Walking down a narrow street lined with various objects dealing with time
+You spot a small shop further west.You decide to go a check it out
+Wondering what new and fascinating items they may have. On your way you
+Spot a Bounty Hunter, Who seems to be in a bad mood perhaps he lost a bounty?
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 10002
+D3
+~
+~
+0 0 10004
+S
+#10004
+A Narrow Street Lined with Time~
+~
+~
+Walking down a narrow street lined with various objects dealing with time
+you spot a small shop further west.You decide to go an check it out
+wondering what new and fascinating items they may have.On your way you
+spot a Bounty Hunter,Who seems to be in a bad mood perhaps he lost a bounty?
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 10003
+D2
+~
+~
+0 0 10005
+S
+#10005
+Before A Small Bounty Hunter's Shop.~
+~
+~
+You stand just outside a small Bounty Hunter's Shop. The shop from the
+outside is quite small...And beat up. Music begins to play from inside...
+Sounds of people drinking can be heard. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10004
+D3
+~
+~
+0 0 10006
+S
+#10006
+A Small Bounty Hunter's Shop.~
+~
+~
+A small shack, Larger on the inside then on the outside carrying various
+Items for bounty hunters...It seems pretty run down Threes a few tables
+And chairs on the left a counter in front of you and a bartender waiting to
+sell, buy and serve. Music seems to be playing from a jukebox in the corner
+And there's a pool table off to the right. Few people sit around playing
+Cards and one at the bar having a few drinks.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 10005
+S
+#10007
+Memory Lane~
+~
+~
+Walking down this narrow alleyway in time you begin to realize all things
+of your life. Nothing seems the same you remember it all so clearly now. 
+Yet all the questions... Hurting your brain driving you insane this must be
+Memory Lane! You seem to become more peaceful now memories are stranger. 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 10008
+D3
+~
+~
+0 0 10002
+S
+#10008
+Memory Lane~
+~
+~
+Walking down this narrow alleyway in time you begin to realize all things
+of your life. Nothing seems the same you remember it all so clearly now. 
+Yet all the questions... Hurting your brain driving you insane this must be
+Memory Lane! You seem to become more peaceful now memories are stranger. 
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 10009
+D3
+~
+~
+0 0 10007
+S
+#10009
+Approaching a Clock Shop~
+~
+~
+To your east you notice a small Clock shop they seem to be open for
+business. The lights are on and sounds of clocks and other items being made
+can be herd. Your curious what they sell but while pondering this
+you stumble into a homeless man with a top hat clock hat on. You
+Apologize and he replies "No Problem".
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10008
+D1
+~
+~
+0 0 10010
+S
+#10010
+A Small Clock Shop~
+~
+~
+In a small clock shop, Sounds of wizards making clocks come from
+everywhere.  A Short wizard in purple time robes stands behind a counter
+Tinkering with a time remote.  He notices you and quickly puts it into a
+Draw."  Hi Welcome To Tick Tock's Time Shop, How may I help you?" 
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 10009
+S
+#10011
+Time Street~
+~
+~
+Time Street Is the Main Street of Tick Tock.  It has a black and gold
+Lining With little clock faces embedded into it...  Showing various days and
+Times.  People greet you with a cheery "Hullo" as you walk by them. 
+Everyone here seems to be wearing something dealing with time.  Further
+South you see A Fountain of some sort which you cannot make out from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10002
+D2
+~
+~
+0 0 10012
+S
+#10012
+An Intersection in Time Street.~
+~
+~
+Time street intersection going all directions all leading to a different
+Place.  Like the rest of Time Street it has a black and gold lining with
+Little clock faces embedded into it...  Showing various days and times. 
+People greet you with a cheery "Hullo" as you walk by them.  Everyone here
+Seems to be wearing something dealing with time.  Further south you see A
+Fountain of some sort, which you cannot make out from here. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10011
+D1
+~
+~
+0 0 10022
+D2
+~
+~
+0 0 10031
+D3
+~
+~
+0 0 10013
+S
+#10013
+Tick Street~
+~
+~
+Tick Street, A residential area of a Tick Tock. Filled with house all
+Shapes and sizes, and warm friendly people. To the west you see a small
+Inn, The Tick Tock Inn a warm welcome to knew adventurers and the residence of
+Tick Tock.  There are a few houses south but not much more Tick Street is a
+Great street witch you come quickly to adore.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 10012
+D2
+~
+~
+0 0 10015
+D3
+~
+~
+3 0 10014
+S
+#10014
+Tick Tock Inn~
+~
+~
+A Small Clock inn. One of the greatest places for new adventurers.  Come
+In and eat, Drink, And sleep and discuss gossip with the local residence. 
+Cheery voices and laughter are heard from the tables people offering you
+Drinks.  It seems like a nice little place... Don't you think? 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 10013
+D4
+~
+~
+0 0 10047
+S
+#10015
+Tick Street~
+~
+~
+As you stroll down Tick Street you see many different shaped and sized
+Houses all over.Everyone seen is merrily trimming there garden, watering
+There lawn or doing other yard work...To the south you can see two small
+Homes.The wall to the west seems to have been bricked up hastily.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10013
+D2
+~
+~
+0 0 10016
+D3
+~
+~
+512 0 10018
+S
+#10016
+Tick Street~
+~
+~
+You stand before two homes a small home.As you peek threw the
+Window to the west you see a little Gnome working on a new invention.  He
+Notices you and pulls down the curtains... Must not be too friendly eh? 
+The house to your south looks vacant. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10015
+D2
+~
+~
+3 0 10037
+D3
+~
+~
+3 0 10017
+S
+#10017
+A Small Gnomish Inventor's Home~
+~
+~
+You stand in a small gnomish inventor's home... 
+Papers, parts, drawings, tool. Etc are piled against a wall...  Along with all
+Over the place.  The inventor doesn't seem to notice your entrance and sits
+At his workbench tinkering with things
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10046
+D1
+~
+~
+3 0 10016
+S
+#10018
+A Hidden Alleyway.~
+~
+~
+A Narrow little alleyway leading to older houses of Tick Tock...  Looks
+Like everything has bad side even Tick Tock.  You here noises, Sobs of
+Somebody you turn to look and they run away.  You dismiss this as nothing
+Really and continue on.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+512 0 10015
+D3
+~
+~
+0 0 10019
+S
+#10019
+Before Two Houses~
+~
+~
+You stand before two houses, one to your north and one to your south.  The
+Windows seem to be painted over on the northern house Door boarded up Looks
+Abandoned.  The Home to the south is a small Rusty Pocket watch home... 
+Falling apart bad owners you suppose.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 10020
+D1
+~
+~
+0 0 10018
+D2
+~
+~
+3 0 10021
+S
+#10020
+An Old Laboratory.~
+~
+~
+A Small Laboratory once was here.  Judging by the house keeping someone
+Left in a hurry.  Beakers and test tubes lie everywhere smashed and some
+Whole a few papers here and there mostly burnt A Table in the middle with a
+Note on it says "why I didn't Ask For This Please Someone Help Me;The Creature I made...  Has gone..."
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 10019
+D5
+~
+~
+0 0 10040
+S
+#10021
+A Rusty Old Pocketwatch~
+~
+~
+Inside this rusty old home seems that somebody never did have a good
+Housekeeping skills.  Rust is everywhere Just tons and tons of old garbage
+And such lying around doesn't look like its been used in years...  Besides
+For a few papers...
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 10019
+S
+#10022
+Tock Street~
+~
+~
+You've wondered into a larger part of Tick Tock. Tock Street, A large
+Residential area tons of people live here.  Everyone is kind and cheerful
+And invites you in a house to the east looks like it was constructed
+Completely out of watches.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 10023
+D2
+~
+~
+0 0 10024
+D3
+~
+~
+0 0 10012
+S
+#10023
+A Small Home Made of Clocks.~
+~
+~
+Ah Welcome To Tick Tock's most famous House, The house made entirely out
+of time.  You look around it is larger then most other houses, A Large bed
+And a stove are opposite of each other in far corners a table in the middle
+With a few chairs around it, Seems that everything has been fashioned out of
+Clocks.  The owners seem cheery and invite you in. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10053
+D1
+~
+~
+0 0 10054
+D3
+~
+~
+3 0 10022
+S
+#10024
+3 Way Intersection.~
+~
+~
+Walking along Tock Street you come across a three-way intersection.  To
+The south you can see a few houses and to the east your not sure.  The time
+seems to be shifting rapidly from night to day you have no idea what time of
+day it is!
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10022
+D1
+~
+~
+0 0 10027
+D2
+~
+~
+0 0 10025
+S
+#10025
+Before Two Houses~
+~
+~
+You stand before to cozy little cottages, One pink the other blue.There
+are flowers covering most of the area vines spread all over the blue cottage.
+While the pink one is in tiptop condition. No one seems to be home or
+maybe there is? 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10024
+D1
+~
+~
+3 0 10026
+D2
+~
+~
+3 0 10038
+S
+#10026
+A Pink House~
+~
+~
+A Cozy little pink home, kept clean and neat A Roaring fireplace stands in
+The back of the room a nice little bed is made in a corner and a few chairs
+And a table in the middle of the house.  There seems to be alot of plant
+Life in the house, A Pixie greets you and welcomes you in, She seems nice so
+You except.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 10025
+S
+#10027
+Tock Street~
+~
+~
+You've wondered into a larger part of Tick Tock.  Tock street, A large
+Residential area tons of people live here.  Everyone is kind and cheerful
+And invites you in a house.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 10028
+D3
+~
+~
+0 0 10024
+S
+#10028
+Before 2 large Houses.~
+~
+~
+You stand before two large houses, Both seem to be vacant at the time and
+both seem to be the same.  Strange everything about the one looks exactly as
+The other, you wonder if it is the same inside and decide to go investigate.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+3 0 10029
+D2
+~
+~
+3 0 10030
+D3
+~
+~
+0 0 10027
+S
+#10029
+Tick Tock Project House~
+~
+~
+A large home with a roaring fireplace in the back center a large couch a
+Small bar, a bed and a table and chairs sit scattered around the place, As if
+Someone got up in a hurry and left in one too. 
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 10028
+S
+#10030
+Tick Tock Project House~
+~
+~
+A large home with a roaring fireplace in the back center a large couch a
+Small bar, a bed and a table and chairs sit scattered around the place, As if
+Someone got up in a hurry and left in one too. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 10028
+S
+#10031
+Time Street~
+~
+~
+Time Street Is the Main Street of Tick Tock.  It has a black and gold
+Lining With little clock faces embedded into it...  Showing various days and
+Times.  People greet you with a cheery "Hullo" as you walk by them. 
+Everyone here seems to be wearing something dealing with time.  Further
+South you see A Fountain of some sort which you cannot make out from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10012
+D2
+~
+~
+0 0 10032
+S
+#10032
+Time Street~
+~
+~
+Time Street Is the Main Street of Tick Tock.  It has a black and gold
+Lining With little clock faces embedded into it...  Showing various days and
+Times.  People greet you with a cheery "Hullo" as you walk by them. 
+Everyone here seems to be wearing something dealing with time.  Further
+South you see A Fountain of some sort which you cannot make out from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10031
+D2
+~
+~
+0 0 10033
+S
+#10033
+Time Street~
+~
+~
+Time Street Is the Main Street of Tick Tock.It has a black and gold
+Lining With little clock faces embedded into it...Showing various days and
+Times.  People greet you with a cheery "Hullo" as you walk by them. 
+Everyone here seems to be wearing something dealing with time.Further
+South you see A Fountain of some sort which you cannot make out from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10032
+D2
+~
+~
+0 0 10034
+S
+#10034
+Fountain Of Time~
+~
+~
+You stand at The fountain of time, said to contain the very essence of a
+White hole.It spews for ages and ages of time.  Many come here to meet
+Their past and there future many come for advice and many come to speak. 
+The fountain is a cherished artifact of Tick Tock and will hopefully remain
+forever. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10033
+D1
+~
+~
+0 0 10036
+D2
+~
+~
+0 0 10039
+D3
+~
+~
+0 0 10035
+S
+#10035
+Time Keeper Of The Past.~
+~
+~
+Time stands not?  Time walks backwards here, The keeper of the past's
+Temple.  Always devolving never evolving, The Keeper of the past stands here
+In primitive Time Robes.  She troubles you not and allows you to explore her
+Mystic temple you wonder how it was all done but stand quiet
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 10034
+S
+#10036
+Time Keeper Of The Future~
+~
+~
+Time seems to fly as you enter the keeper of the future's temple. 
+Everything seems to be aging rapidly the wall are marked with future runes
+And mystic objects, which you do not dare, touch. One fascinates
+You a small pocket watch... Made of some unknown alloy.The Time Keeper of
+The Future stands here fascinated at you for she has never seen you before
+Or has she? 
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 10034
+S
+#10037
+A Small Vacant Living Room.~
+~
+~
+You walk into a cozy little vacant living room, A Fire place is on the
+West wall and a small desk is beside it a small couch sits opposite of it
+And seems to have not been used for awhile the dust seems to have built up
+On the mantle and the room looks quite retched and unused for awhile but
+For some reason the fire is still going. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 10016
+D2
+~
+~
+0 0 10044
+S
+#10038
+A Blue Home~
+~
+~
+A Small Cozy little cottage painted blue.  A warm fire roars in the
+fireplace in front of you.  A Small pixie invites you in for tea, He seems
+like a nice chap so you agree.  His bed seems to be nothing more then a
+Couch.  And the vines from outside seem to be crawling in.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 10025
+S
+#10039
+Master Of All Time~
+~
+~
+You stand in the master of all time's presence you quickly kneel to
+Her, As you enters.Her temple is filled with millions of crystals and
+Artifacts old new and recent, Everything seems to shatter stand still and
+Then take place again nothing you have seen is as weird as this you wonder
+What she might do to you for disturbing her.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10034
+S
+#10040
+UnderGround Lab~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 10041
+D4
+~
+~
+0 0 10020
+S
+#10041
+Underground Lab~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10042
+D1
+~
+~
+0 0 10040
+S
+#10042
+Underground Lab~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 10043
+D2
+~
+~
+0 0 10041
+S
+#10043
+A Terrible Mistake.~
+~
+~
+This room has blood everywhere.  You think you see some mad creature but
+You dismiss it as nothing.  You look twice and a large creature leaps out at
+You.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 10042
+S
+#10044
+A Small Kitchen~
+~
+~
+You enter a small kitchen
+the stove needs dusting the chairs have been
+Turned upside down on the table the sink looks like it has been rusting for
+Years and someone obviously didn't drink the water if they were here, The
+Tiles on the floor seem to be ripped or torn up here and there.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 10037
+D4
+~
+~
+0 0 10045
+S
+#10045
+A Small Bedroom~
+~
+~
+A wonderful little bedroom is here
+the bed looks like it was recently
+Used there are a few bits of clothing on the floor and judging by the overall
+Cleanliness of it, It was used recently if not today.  There seems to be no
+One around now a small desk lies on the west corner with a few pages on it. 
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 10044
+S
+#10046
+A small bedroom~
+~
+~
+A Small bedroom belonging to the gnomish inventor, A workbench stand at
+Far east corner of the room and a small bed to the right a fireplace that
+Seems to have never been used stands in the middle tools and various parts
+Are scattered on the ground.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 10017
+S
+#10047
+A Small Room~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+7 10001 10048
+D1
+~
+~
+7 10001 10052
+D2
+~
+~
+7 10001 10049
+D3
+~
+~
+7 10001 10051
+D5
+~
+~
+0 0 10014
+S
+#10048
+A Cozy Little Inn Room.~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+7 0 10047
+S
+#10049
+A Cozy Little Inn Room~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+7 0 10047
+S
+#10051
+A Cozy Little Inn Room.~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+7 0 10047
+S
+#10052
+A Cozy Little Inn Room~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+7 0 10047
+S
+#10053
+Entrance To A StairCase.~
+~
+~
+You stand at the entrance to a spiraling staircase the rooms is dimly
+Lit and the staircase as well is pitch black you cannot see anything but you
+Seem to be magically guided threw and up the staircase where it goes you'll
+soon find out.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 10023
+D4
+~
+~
+0 0 10055
+S
+#10054
+A Small Library.~
+~
+~
+A Small library filled with tons and tons of books that seem to be stored
+in time wholes. You millions and billions of book titles containing the
+word time, The physics of time, The Essence of time etc there is a small desk
+In the middle with a few papers on it. 
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 10023
+S
+#10055
+A Spiralling Staircase.~
+~
+~
+Climbing up a spiraling staircase you see nothing all is pitched black
+You think you here a mouse but dismiss it as a rat. Bats fly and monkeys in
+cages cry why oh why you wonder where youre going is it possibly snowing?  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 10056
+D5
+~
+~
+0 0 10053
+S
+#10056
+Climbing Higher And Higher.~
+~
+~
+Climbing up a spiraling staircase you see nothing all is pitched black
+You think you here a mouse but dismiss it as a rat.  Bats fly and monkeys in
+cages cry why oh why you wonder where youre going is it possibly snowing?  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 10057
+D5
+~
+~
+0 0 10055
+S
+#10057
+Non Existense~
+~
+~
+You've wondered directly into non-existence wow nice place huh nothing
+but void eternally dark pit of a world You see nothing for miles not one
+spec of dust and you soon begin to de-iterate good luck! 
+~
+0 4 0
+Rd     0
+S
+#10058
+Joke's Thinking Room~
+~
+~
+You enter into a dark and dismal room,the walls are covered with
+Bloodstains.There seems to be a coffee table in the middle Scattered with
+Various papers and plans,A blood stained couch on the left Wall,And A
+Large TV on the wall opposite to it.Seems quiet cozy Except for the fact
+The walls are beginning to bleed..
+~
+0 4 0
+Rd     0
+D4
+~
+~
+0 0 10059
+S
+#10059
+A Padded Cell~
+~
+~
+A dark dismal room,padded wall for wall.  Looks like someone has gone
+quiet mad here.  Blood stains here and there crystal shards of glass lay
+shattered everywhere Looks like a mad scientist went even madder.  Sounds of
+laughter are herd from a dark corner...  A woman wearing a lab jacket sits
+curled up in the dark corner peering out.  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 10058
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 10000 0 10000
+M 0 10000 1 10000
+E 0 10027 0 23
+M 0 10000 2 10001
+M 0 10000 3 10001
+E 0 10027 0 23
+E 0 10027 0 23
+M 0 10001 1 10003
+E 0 10011 0 23
+G 0 10012 0
+M 0 10002 1 10004
+E 0 10008 0 20
+M 0 10005 1 10006
+M 0 10016 1 10014
+E 0 10001 0 22
+M 0 10007 1 10017
+M 0 10007 1 10017
+M 0 10007 1 10017
+M 0 10009 1 10023
+M 0 10010 1 10026
+M 0 10011 1 10038
+M 0 10008 1 10043
+O 0 10020 0 10058
+O 0 10021 0 10058
+P 0 10022 0 10021
+P 0 10023 0 10021
+P 0 10024 0 10021
+S
+
+
+
+#SHOPS
+10005 0 9 5 0 0 30 20 0 23
+10006 0 9 5 0 0 20 30 0 23
+10016 0 0 0 0 0 25 35 0 23
+0
+
+
+
+#$

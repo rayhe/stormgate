@@ -1,0 +1,1267 @@
+#AREADATA
+Name        { 10-20} The Tar Pits~
+Builders    None~
+VNUMs       2450 2499
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Sparhawk~
+Llevel      0
+Ulevel      0
+Music       u3_combt.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#2451
+detached hand~
+a Detached Hand~
+A Detached Hand is here, letting its fingers do the walking.
+~
+This is probably one of the strangest things that you have ever seen, a
+hand that seems to be missing its body is walking around on its fingers
+here, sunlight glints off of a ring that is on its finger.  
+~
+3 0 0 0 0 0 S
+10 1 20 20 750 750d0+0 0d0+1
+100 0 0
+0 0 0
+0 0 0
+#2453
+undead tiger~
+an undead tiger~
+An Undead Tiger attacks you!
+~
+A large obviously dead cat is standing here, it has incredibly long teeth
+and it looks very, very angry.  This tiger has the look of something
+ancient.  
+~
+35 0 0 0 0 0 S
+20 1 40 40 2750 2750d0+0 0d0+2000
+200 0 0
+0 0 1
+0 0 0
+#2456
+Undead canine~
+a undead canine~
+An Undead Canine attacks you!
+~
+This strange creature seems to have crawled right out of the tar pits. 
+It attacks you as if it is compelled to do so.  At one time it seems to have
+been a rather large dog like animal.  
+~
+35 0 0 0 0 -500 S
+10 1 20 20 750 750d0+0 0d0+4000
+100 0 0
+0 0 0
+0 0 0
+#2458
+Giant Maggot~
+a Giant Maggot~
+A Giant Maggot looks very hungry.
+~
+This hugs maggot is probably one of the more sickening things that you
+have ever seen.  The only good thing about it being here is that there is
+only one of them.  
+~
+35 0 0 0 0 0 S
+10 1 20 20 750 750d0+0 0d0+1
+100 0 0
+0 0 0
+0 0 0
+#2461
+undead rat~
+an undead rat~
+An Undead Rat sees you and attacks!
+~
+This poor rat has been made to come back from death and serve another, it
+is almost co,pletly decayed away but still the magic that holds it to this
+world is too strong for it to escape back to death.  
+~
+35 0 0 0 0 0 S
+15 1 30 30 1500 1500d0+0 0d0+2000
+150 0 0
+0 0 1
+0 0 0
+#2462
+large tentacle~
+a Large tentacle~
+A Large Tentacle tries to pull you into the tar.
+~
+A large tar covered tentacle is coming out of the tar pits and is trying
+to pull you in.  It seems that it does not like to eat out, so it is trying
+to get some take home.  
+~
+35 0 0 0 0 0 S
+15 1 30 30 1500 1500d0+0 0d0+1
+150 0 0
+0 0 0
+0 0 0
+#2464
+carnivorous plant~
+a carnivorous plant~
+A Carniverous Plant attacks you!
+~
+This is not what you would call a friendly plant, after all most plants
+don't want to eat you.  It looks like it was well designed to do what it
+does, eat living things.  
+~
+35 0 0 0 0 -500 S
+15 1 30 30 1500 1500d0+0 0d0+5000
+150 0 0
+0 0 0
+0 0 0
+#2466
+Humaniod skeleton~
+a Humaniod skeleton~
+A Human Skeleton jumps up and swings its weapon at you!
+~
+This is another case of something that has apparently been pulled out of
+the tar pit.  Its movements are shambling and it seems to have only one
+goal.  Killing you!  
+~
+35 0 0 0 0 0 S
+10 1 20 20 750 750d0+0 0d0+1
+100 0 0
+0 0 0
+0 0 0
+#2468
+an undead dinosaur~
+an undead dinosaur~
+An Undead Dinosaur spots you and attacks!
+~
+This is probably the oldest thing that you have ever seen, it is so
+ancient that all of the skin has decayed off the bones leaving just a
+terrifing display of baones claws and teeth.  
+~
+35 0 0 0 0 0 S
+20 1 40 40 2750 2750d0+0 0d0+10000
+200 0 0
+0 0 0
+0 0 0
+#2469
+big rock~
+a big rock~
+A Big Rock sits here.
+~
+A very big rock is sitting in the path, it does not seem to be covered in
+tar like the rest of the rocks in the area.  It almost seems like something
+has dragged it across the pathbecause there seems to be impressions in the
+ground from it.  
+~
+3 0 0 0 0 0 S
+10 1 20 20 750 750d0+0 0d0+1
+100 0 0
+0 0 0
+0 0 0
+#2474
+rotting bear~
+a Rotting Bear~
+A Rotting Bear attacks you!
+~
+This once proud bear has been animated for someone elses purposes, its
+eyes seem to cry out against this entrappment, but it attacks you as it
+knows it must.  It has no choice.  
+~
+35 0 0 0 0 0 S
+10 1 20 20 750 750d0+0 0d0+1
+100 0 0
+0 0 1
+0 0 0
+#2475
+skeleton miner~
+a skeleton miner~
+A Skeleton Miner is digging in the tar
+~
+This once human skeleton is digging through the tar looking for the bones
+of the poor unfortunates who have slipped and fallen off of this part of the
+path into the tar pits.  
+~
+3 0 0 0 0 0 S
+20 1 40 40 2750 2750d0+0 0d0+1
+200 0 0
+0 0 0
+0 0 0
+#2477
+zombie~
+a Zombie~
+A Zombie shambles toward you to attack.
+~
+This poor creature is missing a foot, it must be the foot you saw to the
+north.  It moans as it walks forward to attack you.  Its gait is awkward
+from the missing foot.  
+~
+3 0 0 0 0 0 S
+15 1 30 30 1500 1500d0+0 0d0+2000
+150 0 0
+0 0 0
+0 0 0
+#2479
+small bone golem~
+a Small Bone Golem~
+A Small Bone Golem is standing here.
+~
+A creature that is completly made of bone is standing here, it is not
+moving and looks best left alone.  
+~
+3 128 0 0 0 0 S
+22 1 44 44 2500 2500d0+0 0d0+10000
+220 0 0
+0 0 0
+0 0 0
+#2482
+tar monster~
+a Tar Monster~
+A Tar Monster crreps along the ground here.
+~
+This creature looks like a slug but it seems formed out of the tar
+itself.  It moves along the ground very slowly, it seems to be peacefull.  
+~
+3 0 0 0 0 0 S
+15 1 30 30 1500 1500d0+0 0d0+2000
+150 0 0
+0 0 0
+0 0 0
+#2484
+Zombie Worker~
+a Zombie Worker~
+A Zombie Worker is shambling around the piles of bones.
+~
+This creature looks like it might have been an ogre when it was alive,
+now there is no real way to tell, seeing as the only noise it can make is a
+steady low moan.  
+~
+3 4096 0 0 0 0 S
+20 1 40 40 2750 2750d0+0 0d0+1000
+200 0 0
+0 0 0
+0 0 0
+#2485
+Vulture~
+a Vulture~
+A Vulture is eating a rotting corpse.
+~
+This is a very large bird, it must have good feeding grounds for it to
+have gotten this big.  It looks like it will leave you alone if you do not
+disturb its dinner.  
+~
+3 524288 0 0 0 0 S
+15 1 30 30 1500 1500d0+0 0d0+2000
+150 0 0
+0 0 0
+0 0 0
+#2487
+reanimated Raptor~
+a Reanimated Raptor~
+A Reanimated Raptor screams at your intrusion!
+~
+This is not a nice thing to look at, it has deep hollow eyes and that
+show absolutely no fear of you whatsoever.  It is cicling the room and is
+obviously there to deal with intuders.  
+~
+3 128 0 0 0 0 S
+22 1 44 44 2500 2500d0+0 0d0+10000
+220 0 0
+0 0 0
+0 0 0
+#2488
+The Necromancer~
+The Necromancer~
+The Necromancer does not look happy with your presence.
+~
+This man looks almost as desicated as some of his creations, his skin is
+taunt on his body as if doing what he has been doing is draining the very
+life out of him.  He has a strange sense of power about him though, and his
+frailness does not make him appear weak.  
+~
+3 16512 0 0 0 -500 S
+25 1 50 50 2500 2500d0+0 0d0+25000
+250 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say What are you doing here?!
+~
+|
+#0
+
+
+
+#OBJECTS
+#2450
+Vision Terminous trading card~
+a Vision Terminous Trading Card.~
+A trading card of Vision Terminous lies here, and in mint condition too!~
+~
+8 167772163 8192 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>get_prog 99~
+0
+mpechoat $n &WGood Idea! Better keep it, it just might be worth something some day.
+~
+|
+#2451
+bronze ring~
+bronze ring~
+A bronze ring sits on the ground.~
+~
+9 0 0 0 0 131 10
+100 100
+5~ 0~ 0~ 0~
+2 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+18 1
+A
+2 1
+A
+5 1
+#2461
+Wooden key~
+wooden key~
+A wooden key sits on the ground.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2466
+Bone Sword~
+bone sword~
+A bone sword sits on the ground.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 3~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+#2474
+skull shaped boulder~
+a skull shaped boulder~
+A skull shaped boulder~
+~
+15 0 0 0 0 0 0
+100 100
+0~ 1~ 0~ 0~
+200 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2479
+Bone House~
+Bone House~
+Bone House~
+~
+13 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2487
+Study key~
+a key sits on the ground.~
+Study Key~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2488
+desk~
+a large Desk~
+A large desk sits in the middle of the room.~
+~
+12 3 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2489
+cloak undead~
+cloak of the undead~
+A cloak sits here, crumpled up.~
+~
+9 3 0 0 0 1025 20
+100 100
+10~ 0~ 0~ 0~
+4 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+A
+13 20
+#2499
+potion skull~
+Potion Of the Skull~
+Potion Of the Skull~
+~
+10 268435456 0 0 0 1 10
+100 100
+100~ cure light~ cure light~ cure poison~
+2 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#2450
+A darkening path~
+~
+~
+The smell of tar is drifting at you from a northerly direction.  The path
+that you are walking on seems to sink down under your feet, this place has a
+feeling of death about it.  There appears to be nothing alive at all in this
+place.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2451
+D2
+~
+~
+0 0 17784
+S
+#2451
+A dark path~
+~
+~
+The odor of tar coming from the north is getting much stronger now, you
+hear a faint bubbling noise up ahead of you.  The absence of any living
+creature seems wrong.  You wonder what kind of place you are heading
+towards.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2452
+D2
+~
+~
+0 0 2450
+S
+#2452
+Approaching the tar pits~
+~
+~
+The odor of death and decay can be detected above the smell of tar now. 
+The sound of bubbling is much clearer, up ahead you can see steaming tar"
+pits.  This place has the look of death about it.  Upon looking north you
+see the partially decayed corpse of a large mammal.  
+l
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2456
+D2
+~
+~
+0 0 2451
+S
+#2453
+Path through the tar pits~
+~
+~
+To the south and west of you are impassable tar pits.  A large cat like
+corpse looks at you from the far side of the path, it snarls at you.  There
+are gnawed on bones on the side of the path here.  The steam here is
+drifting across the path.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2460
+D1
+~
+~
+0 0 2454
+S
+#2454
+Path through the tar pits~
+~
+~
+To the north and south of you are impassable tar pits.  Growling can be
+heard from here but now you can not tell what direction it is coming from. 
+Bones are piled to the side of the path here.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2455
+D3
+~
+~
+0 0 2453
+S
+#2455
+Path through the tar pits~
+~
+~
+To the south and east of you are impassable tar pits.  This is a desolate
+part of the path, there seems to be nothing moving whatsoever.  The steam
+from the tar stings your eyes when you look for any other details.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2462
+D3
+~
+~
+0 0 2454
+S
+#2456
+Path through the tar pits~
+~
+~
+A large mammilian animal was trapped in the tar pits quite a long time
+ago, even in its decayed state it seems ready to stand up and attack you. 
+To the north and west of you are impassable tar pits.  You hear the bubbling
+of tar all around you.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2457
+D2
+~
+~
+0 0 2452
+S
+#2457
+Path through the tar pits~
+~
+~
+To the north and south of you are impassable tar pits.  The unholy
+screams of some creature can be heard from somewhere to the west.  Steam
+coming off of the tar around you is making the area surrounding you look
+sureal.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2458
+D3
+~
+~
+0 0 2456
+S
+#2458
+Path through the tar pits~
+~
+~
+To the north and south of you are impassable tar pits.  There seems to be
+something moving in the tar right at your feet, it seems to be groaning. 
+The fog is getting much thicker here and your vision is becoming obscured.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2459
+D3
+~
+~
+0 0 2457
+S
+#2459
+Path through the tar pits~
+~
+~
+To the south and east of you are impassable tar pits.  Steam is getting
+into your eyes from the bubbling tar arround you.  Gut wrenching cries can
+be heard from all around you.  What kind of place could this be?  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2466
+D3
+~
+~
+0 0 2458
+S
+#2460
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  A dead tree
+partially blocks the path here, its branches have mostly fallen off but it
+appears something with very large claws has ripped the rest of them off.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2467
+D2
+~
+~
+0 0 2453
+S
+#2461
+The wrong turn~
+~
+~
+To the north, south and west of you are impassable tar pits.  The only
+way that you can go from this path is the way you just came.  You must have
+taken a wrong turn.  You might want to turn around and go back now.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2462
+S
+#2462
+Path through the tar pits~
+~
+~
+To the north of you is an impassable tar pit.  A broken sword lies on the
+ground here and signs of a recent stuggle are apparent in the dirt here.  In
+the dirt you can see where a body has been dragged down into the tar.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2463
+D2
+~
+~
+0 0 2455
+D3
+~
+~
+0 0 2461
+S
+#2463
+Path through the tar pits~
+~
+~
+To the north and south of you are impassable tar pits.  Steam from the
+tar burns your eyes, a bubbling sound is coming from behind you.  A few
+stones and bones are scattered on the path here.  
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 2464
+D3
+~
+~
+0 0 2462
+S
+#2464
+Path through the tar pits~
+~
+~
+To the north and south of you are impassable tar pits.  There is actually
+some small living vegetation here, a twisted savage looking plant that is
+all thorns and stump.  The plant almost looked like it smiled when you
+walked close to it.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2465
+D3
+~
+~
+0 0 2463
+S
+#2465
+Path through the tar pits~
+~
+~
+To the south and east of you are impassable tar pits.  Steam from the tar
+drifts across the path here, making it hard to see anything here.  Your
+boots are sinking into the ground here, it seems softer than the rest of the
+places you have been so far.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2469
+D3
+~
+~
+0 0 2464
+S
+#2466
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  Just to the right
+of you a decaying haumaniod form lies on the ground.  It semms that it is
+lying in wait for you.  Its sword glints wickedly in your light.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2470
+D2
+~
+~
+0 0 2459
+S
+#2467
+Path through the tar pits~
+~
+~
+To the north and west of you are impassable tar pits.  The trees here are
+also clawed to pieces, something has made it thier personal vendetta to
+destroy all of the remaining living trees here.  Large clawed prints are in
+the path here.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2468
+D2
+~
+~
+0 0 2460
+S
+#2468
+Path through the tar pits~
+~
+~
+To the south and east of you are impassable tar pits.  This part of the
+path has been completly destroyed, the devastation is unbelievable.  Steam
+from the tar makes it hard to see here but you can hear something moving
+around here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2472
+D3
+~
+~
+0 0 2467
+S
+#2469
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  Large rocks stick
+out of the ground at odd angles here, something must have done this because
+it does not look like a natuaral formation.  Tar bubbles and boils here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2473
+D2
+~
+~
+0 0 2465
+S
+#2470
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  An occasional loud
+popping sound comes from within the tar.  It is as if some magical force
+were churning it deep underground.  A feral growl can be heard from the
+north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2474
+D2
+~
+~
+0 0 2466
+S
+#2471
+Path through the tar pits~
+~
+~
+To the south and west of you are impassable tar pits.  The path is so
+narrow here it would be a miracle if you can get across without falling into
+the tarpit.  It is obvious that others have suffered this fate before you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2475
+D1
+~
+~
+0 0 2472
+S
+#2472
+Path through the tar pits~
+~
+~
+To the north and east of you are impassable tar pits.  The devastation on
+the path continues here.  Whatever has been doing this has no respect for
+living things at all.  You see the bodies from a group of adventurers that
+crossed its path some time ago.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2468
+D3
+~
+~
+0 0 2471
+S
+#2473
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  Bones are scattered
+all over the path here.  It looks like something died halfway in and out of
+the tar.  The smell of tar is overpowering here and the steam is burning
+your eyes.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2477
+D2
+~
+~
+0 0 2469
+S
+#2474
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  A large skull
+shaped boulder lies just to the left of you.  There are many, many clawed
+pawprints on the ground here.  Steam from the molten tar drifts across the
+path.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2478
+D2
+~
+~
+0 0 2470
+S
+#2475
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  Bones have been
+stacked high here most of the bones are of creatures that you have never
+seen.  It seems that someone has been mining the bones out of the tarpits.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2479
+D2
+~
+~
+0 0 2471
+S
+#2476
+In front of a huge door~
+~
+~
+To the south and west of you are impassable tar pits.  A heavy wooden
+door is to your east.  It appears that you have found your way out of the
+tar pits at last.  Multiple piles of bones are all around this large
+clearing.  You are in front of what looks like a sizable building.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2480
+D1
+~
+~
+7 2461 2487
+S
+#2477
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  Scraps of tar
+covered cloth are strewn on the ground here, rotting vegetation makes this
+part of the path seem even more dismal than the rest.  From somewhere in the
+distance you hear a mournful howling.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2481
+D2
+~
+~
+0 0 2473
+S
+#2478
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  Some time ago a
+large tree once proudly stood here, but now all that remains is a rotting
+stump and some dead branches sticking haphazardly out of the tar.  Stean
+from the tar clings to your flesh like a shroud.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2482
+D2
+~
+~
+0 0 2474
+S
+#2479
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  The piles of bones
+reach even higher into the skies here.  For same reason it looks as if some
+of them have been made into a house here.  What on earth could live in such
+a horrible place?  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2483
+D2
+~
+~
+0 0 2475
+S
+#2480
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  There seems to have
+been quite a few complete skeletons pulled out of the tar pits to this
+point, because this part of the path is full of complete skeletons also.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2484
+D2
+~
+~
+0 0 2476
+S
+#2481
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  Swamp gas rising
+off the tar pits is making you nauseous, not to mention the detached foot
+that lays in the middle of the path in front of you.  A low grumbling noise
+can be heard from the south of here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2485
+D2
+~
+~
+0 0 2477
+S
+#2482
+Path through the tar pits~
+~
+~
+To the east and west of you are impassable tar pits.  Small rocks are
+scattered about here, making travel extremly difficult.  Tar has splattered
+on the path here, it almost seems that something crawls in and out of the
+tar leaving this black trail.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2486
+D2
+~
+~
+0 0 2478
+S
+#2483
+Path through the tar pits~
+~
+~
+To the north and west of you are impassable tar pits.  More piles of
+bones are stacked here, they seem to be being sorted into the different
+creatures they originally came from.  It even looks like someone is trying
+to make new constructs to them.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2484
+D2
+~
+~
+0 0 2479
+S
+#2484
+Path through the tar pits~
+~
+~
+To the north and east of you are impassable tar pits.  On this section of
+path it seems that entire skeletons have been carefully stacked together. 
+They are loaded on wooden pallets and look like they are being made ready to
+be moved somewhere.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2480
+D3
+~
+~
+0 0 2483
+S
+#2485
+Path through the tar pits~
+~
+~
+To the north and west of you are impassable tar pits.  Buzzards are
+slowly cicling in the sky above you.  There is a corpse on the ground here
+that seems to be the object of their affections.  Steam is obscuring most of
+the corpse but there seems to be movement.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2486
+D2
+~
+~
+0 0 2481
+S
+#2486
+Path through the tar pits~
+~
+~
+To the north an east of you are impassable tar pits.  Steam from the tar
+stings your eys as it rises.  A large tree has fallen into the tar here, its
+skelatal branches rise out of the mist like bony fingers reaching for the
+skies.  To the west of you there are vultures in the sky.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2482
+D3
+~
+~
+0 0 2485
+S
+#2487
+Necromancers workshop~
+~
+~
+To the north and south of you are solid stone walls, just to the east of
+you is an ornately carved oaken door.  This room is full of huge vats with
+bones sticking out of them, rows and rows of bottles are all along the
+walls.  This appears to be some kind of demented workshop.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+7 2487 2488
+D3
+~
+~
+7 2461 2476
+S
+#2488
+Necromancers study~
+~
+~
+To the north, south and east of here are solid stone walls.  Books line
+the walls here, in the middle of the room is a desk.  Rows of bottles and
+open books with notes in them are on a smaller table to the west side of the
+room.  
+~
+0 4 0
+Rd     0
+D3
+~
+~
+7 2487 2487
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 2451 1 2451
+E 0 2451 0 13
+M 0 2453 1 2453
+M 0 2456 1 2456
+M 0 2458 1 2458
+M 0 2461 1 2461
+G 0 2461 0
+M 0 2462 1 2462
+M 0 2464 1 2464
+M 0 2466 1 2466
+E 0 2466 0 20
+M 0 2468 1 2468
+M 0 2469 1 2469
+O 0 2474 0 2474
+P 0 2499 0 2474
+M 0 2474 1 2474
+M 0 2475 1 2475
+M 0 2477 1 2477
+O 0 2479 0 2479
+M 0 2479 1 2479
+M 0 2482 1 2482
+M 0 2484 1 2484
+M 0 2485 2 2485
+M 0 2487 1 2487
+G 0 2487 0
+O 0 2488 0 2488
+M 0 2488 1 2488
+E 0 2489 0 16
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

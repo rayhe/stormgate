@@ -1,0 +1,25 @@
+Name   Immortal~
+Lvl    114
+User   (unknown)~
+Host   c-67-188-2-114.hsd1.ca.comcast.net~
+Last   Last on: Tue Aug  4 02:11:19 2009~
+Desc   (none)~
+Class  20
+Multi  20
+Name   Kaldon~
+Lvl    116
+User   rayhe~
+Host   localhost~
+Last   On since Wed Aug  5 16:58:51 2009~
+Desc   (none)~
+Class  3
+Multi  3
+Name   Keldon~
+Lvl    114
+User   (unknown)~
+Host   c-67-188-2-114.hsd1.ca.comcast.net~
+Last   Last on: Tue Aug  4 03:01:18 2009~
+Desc   (none)~
+Class  3
+Multi  3
+$

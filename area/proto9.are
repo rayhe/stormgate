@@ -1,0 +1,2327 @@
+#AREADATA
+Name        New area~
+Builders    Corum~
+VNUMs       9200 9299
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Corum~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#9201
+Guard~
+A Guard~
+Gate Guard of Ezmeltaran
+~
+A battle scarred warrior.  It looks as though he has been through hundreds of battles, with scars to prove it.
+He eyes you suspiciously as you walk by.
+~
+3 524480 21004304 16384 0 0 S
+115 1 100 100 0 30000d0+0 0d0+0
+1150 0 0
+0 0 1
+1 0 0
+>fight_prog 30~
+circle
+circle
+~
+>fight_prog 40~
+say Magic is not welcome within Ezmeltaran.
+slit $n
+~
+>rand_prog 30~
+weapon
+~
+>rand_prog 30~
+rage
+~
+>all_greet_prog 100~
+if class($n)==0 
+if ispc($n) == 1
+emote spits.
+say Greetings mage.
+say You must understand before you enter that the city-state of Ezmeltaran
+say is quite against the existance of magic, and its use by the likes of you disgusts us.
+say It is an abomination against nature itself.  Regrettably I must alow you into our city
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.
+emote clears his throat.
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime 
+say here, and violations of our law will not be tolerated.
+emote motions for you to enter the city.
+endif
+~
+>all_greet_prog 100~
+if class($n)==1 ;
+if ispc($n) == 1;
+emote spits.;
+say Greetings cleric.;
+say You must understand before you enter that the city-state of Ezmeltaran;
+say is quite against the existance of magic, and its use by the likes of you disgusts us.;
+say It is an abomination against nature itself.  Regrettably I must alow you into our city;
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.;
+emote clears his throat.;
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime ;
+say here, and violations of our law will not be tolerated.;
+emote motions for you to enter the city.;
+endif
+~
+>all_greet_prog 100~
+if class($n)==4 ;
+if ispc($n) == 1;
+emote spits.;
+say Greetings psionicist.;
+say You must understand before you enter that the city-state of Ezmeltaran;
+say is quite against the existance of magic, and its use by the likes of you disgusts us.;
+say It is an abomination against nature itself.  Regrettably I must alow you into our city;
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.;
+emote clears his throat.;
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime ;
+say here, and violations of our law will not be tolerated.;
+emote motions for you to enter the city.;
+endif
+~
+>all_greet_prog 100~
+if class($n)==5 ;
+if ispc($n) == 1;
+emote spits.;
+say Greetings druid.;
+say You must understand before you enter that the city-state of Ezmeltaran;
+say is quite against the existance of magic, and its use by the likes of you disgusts us.;
+say It is an abomination against nature itself.  Regrettably I must alow you into our city;
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.;
+emote clears his throat.;
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime ;
+say here, and violations of our law will not be tolerated.;
+emote motions for you to enter the city.;
+endif
+~
+>all_greet_prog 100~
+if class($n)==15 ;
+if ispc($n) == 1;
+emote spits.;
+say Greetings illusionist.;
+say You must understand before you enter that the city-state of Ezmeltaran;
+say is quite against the existance of magic, and its use by the likes of you disgusts us.;
+say It is an abomination against nature itself.  Regrettably I must alow you into our city;
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.;
+emote clears his throat.;
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime ;
+say here, and violations of our law will not be tolerated.;
+emote motions for you to enter the city.;
+endif
+~
+>all_greet_prog 100~
+if class($n)==16 ;
+if ispc($n) == 1;
+emote spits.;
+say Greetings necromancer.;
+say You must understand before you enter that the city-state of Ezmeltaran;
+say is quite against the existance of magic, and its use by the likes of you disgusts us.;
+say It is an abomination against nature itself.  Regrettably I must alow you into our city;
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.;
+emote clears his throat.;
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime ;
+say here, and violations of our law will not be tolerated.;
+emote motions for you to enter the city.;
+endif
+~
+>all_greet_prog 100~
+if class($n)==17 ;
+if ispc($n) == 1;
+emote spits.;
+say Greetings demonologist.;
+say You must understand before you enter that the city-state of Ezmeltaran;
+say is quite against the existance of magic, and its use by the likes of you disgusts us.;
+say It is an abomination against nature itself.  Regrettably I must alow you into our city;
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.;
+emote clears his throat.;
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime ;
+say here, and violations of our law will not be tolerated.;
+emote motions for you to enter the city.;
+endif
+~
+>all_greet_prog 100~
+if class($n)==19 ;
+if ispc($n) == 1;
+emote spits.;
+say Greetings darkpriest.;
+say You must understand before you enter that the city-state of Ezmeltaran;
+say is quite against the existance of magic, and its use by the likes of you disgusts us.;
+say It is an abomination against nature itself.  Regrettably I must alow you into our city;
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.;
+emote clears his throat.;
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime ;
+say here, and violations of our law will not be tolerated.;
+emote motions for you to enter the city.;
+endif
+~
+>all_greet_prog 100~
+if class($n)==19 ;
+if ispc($n) == 1;
+emote spits.;
+say Greetings mage.;
+say You must understand before you enter that the city-state of Ezmeltaran;
+say is quite against the existance of magic, and its use by the likes of you disgusts us.;
+say It is an abomination against nature itself.  Regrettably I must alow you into our city;
+say by the order of Sarra, High Priestess of the Temple.  But soon all that will change.;
+emote clears his throat.;
+say I've said enough.  Feel free to roam our city but remember, use of magic is a crime ;
+say here, and violations of our law will not be tolerated.;
+emote motions for you to enter the city.;
+endif
+~
+>all_greet_prog 100~
+if class($n) == 2
+or class($n) == 3
+or class($n) == 6
+or class($n) == 7
+or class($n) == 8
+or class($n) == 9
+or class($n) == 10
+or class($n) == 11
+or class($n) == 12
+or class($n) == 13
+or class($n) == 14
+or class($n) == 18
+if ispc($n) == 1
+emote slaps you on the back.
+say Greetings fellow warrior!
+say Welcome to Ezmeltaran city of the Mundane.  If you distain magic then you should feel
+say right at home here.  Magic is outlawed within these walls so i suggest that if you 
+say dabble in such things restrain yourself during your visit.
+emote clears his throat.
+say You look somewhat tired, I would suggest the Golden Candle Inn if you wish a good rest.
+emote smiles.
+say Enjoy your visit.
+unlock north
+open north
+endif
+~
+>speech_prog close~
+close north
+lock north
+~
+>fight_prog 20~
+emote points the Anti-Magic Blade at you
+say Try to use your spells now!
+c 'power leak'
+~
+>fight_prog 30~
+wear sword
+dual blade
+~
+>all_greet_prog 100~
+if isnpc($n) == 1
+if name($n) == beggar mage
+say You again!
+say This time you die!
+mpkill beggar
+endif
+endif
+~
+|
+#9202
+guard~
+A Guard~
+One of the Ezmeltaran Guard.
+~
+One of Ezmeltarans many guards roams the streets looking for illegal use of magic.
+~
+1 524480 4227088 16384 0 0 S
+115 1 200 200 0 20000d0+0 0d0+0
+1150 0 0
+0 0 1
+1 0 0
+>fight_prog 30~
+say Your magic is useless here.
+slit $n
+~
+>fight_prog 30~
+slam
+~
+>rand_prog 30~
+weapon
+~
+>act_prog 30~
+rage
+~
+>all_greet_prog 100~
+if isnpc($n) == 1
+if name($n) == beggar mage
+say You again!
+say This time you die!
+mpkill beggar
+endif
+endif
+~
+|
+#9203
+guard~
+A Guard~
+One of the Ezmeltaran Guard.
+~
+One of Ezmeltaran's many guards roams the streets on the lookout for lawbreakers
+~
+1 192 21004304 0 0 0 S
+115 1 200 200 0 20000d0+0 0d0+0
+1000 0 0
+0 0 1
+1 0 0
+>all_greet_prog 100~
+if class($n) == 0
+or class($n) == 1
+or class($n) == 4
+or class($n) == 5
+or class($n) == 15
+or class($n) == 16
+or class($n) == 17
+or class($n) == 19
+if ispc($n) == 1
+growl say I hate magic users like you... DIE!
+ass $n
+mpkill $n
+c web 
+else
+say Greetings friend. Enjoy your stay!
+wave
+endif
+~
+>fight_prog 30~
+gouge
+circle
+~
+>fight_prog 20~
+circle
+~
+>all_greet_prog 100~
+if isnpc($n) == 1
+if name($n) == beggar mage
+say You again!
+say This time you die!
+mpkill beggar
+endif
+endif
+~
+|
+#9204
+Squirrel~
+A squirrel~
+A squirrel nibbles on some nuts
+~
+A squirrel hugs its acorn close when you come close.
+~
+524291 16777216 0 0 1 0 S
+10 1 20 20 0 10d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+if name($n) == beggar mage
+mppurge beggar mage
+mpecho Magic flows back into the beggars body, restoring him to his original form.
+mptrans Belal
+mpforce belal say Thankyou very much!
+mpforce belal say You are a true friend to the world of magic.
+mpforce belal say Here take this as a token of my appreciation.
+mpforce belal mpoload 9205
+mpforce belal drop aura
+mpforce belal bow
+endif
+endif
+~
+|
+#9205
+Belal~
+Belal~
+A Powerful Mage stands before you.
+~
+A mage dressed in beautiful silks stands before you.
+~
+3 503316672 21528592 134244352 0 0 S
+120 1 300 300 0 20000d0+0 0d0+0
+1200 0 0
+0 0 0
+0 0 0
+>fight_prog 20~
+say Trying to hide behind your puny shields eh?
+c 'dispel magic' $n
+~
+>fight_prog 30~
+say Hmmm... lets see if this works
+c 'sunburst'
+~
+>fight_prog 20~
+c 'curse'
+~
+>fight_prog 20~
+say Think you're tough huh?
+c 'winters chill'
+~
+>fight_prog 20~
+say The Druids taught me this.
+c 'earthblast'
+~
+>fight_prog 20~
+c 'confusion'
+~
+>rand_prog 4~
+say Well I must go now... 
+emote waves goodbye.
+say I won't forget your kindness.
+mpecho &GBelal utters an incantation and a large gate forms.
+mpecho &GBelal enters the portal and is gone.
+mpgoto 9299
+~
+|
+#9206
+Squirrel~
+Squirrel~
+A cute little squirrel.
+~
+A cute little bitty woodland creature.
+~
+133 0 0 0 0 1000 S
+8 1 2 2 0 10d0+0 0d0+0
+0 12 0
+0 0 0
+0 0 0
+#9207
+Raccoon~
+A Raccoon~
+A masked little raccoon
+~
+A cute little woodland creature.
+~
+1 0 0 0 0 200 S
+10 1 20 20 0 10d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#9208
+Sawor~
+Sawor~
+A young man sits here at one with nature.
+~
+A man clothed in ragged animal skins, walks and talks with the animals.
+~
+3 302088384 16810000 1074282496 0 500 S
+115 1 250 250 0 20000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say Greetings friend.
+bow
+say So how are you enjoying your time here in Ezmeltaran
+emote pauses to pet a squirrel.
+say Well if not kick back and enjoy your time here, it is a welcome break from the hussle, 
+say and bussle of the city.  But please just be kind to my animal friends while you are here.
+endif
+~
+>fight_prog 20~
+emote howls like a fiend!
+slam $n
+~
+>fight_prog 30~
+cast 'dancing lights' $n
+~
+>fight_prog 20~
+emote claws at you with animal intensity.
+claw
+claw
+claw
+claw
+~
+>rand_prog 5~
+emote gets a determined look in his eyes.
+say I am the Wolf
+say I am the Tree
+say I am the Eagle
+emote raises his hand in triumph!
+say ANCIENT FORESTS FOREVER!
+~
+>fight_prog 20~
+c 'entangle'
+~
+>rand_prog 40~
+if isfight ($r)
+if ispc ($r)
+mpkill $r
+endif
+endif
+~
+|
+#9209
+wolf winter orlon~
+Orlon~
+The winter wolf companion of Sawor.
+~
+A wolf with fur of snow and fangs of ice...
+~
+3 201326784 20971536 0 0 0 S
+110 1 100 100 0 10000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>fight_prog 20~
+emote lunges with horrible ferocity!
+bite
+~
+>fight_prog 30~
+emote chills you to the very bone.
+c 'winters chill' 
+~
+>all_greet_prog 40~
+if ispc($n) == 1
+growl $n
+endif
+~
+>rand_prog 40~
+if isfight($r)
+if ispc($r)
+mpkill $r
+endif
+endif
+~
+>death_prog 100~
+mpoload 9213
+~
+|
+#9210
+rabbit bunny~
+Bunny~
+A rabbit frolics amoung the flowers
+~
+~
+1 0 0 0 0 0 S
+10 1 20 20 0 20d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#9243
+Latham~
+Latham~
+Latham stands here patiently
+~
+~
+3 168 32768 0 0 1000 S
+110 1 220 220 0 20000d0+0 0d0+0
+400 0 0
+0 0 1
+3 0 0
+#9244
+beggar mage~
+A Beggar~
+A smelly begger clothed in tattered mage robes
+~
+Once a powerful mage, this beggar finds it hard to get by in a city that hates magic.
+He wimpers and cowers when guards walk by.  His magic is weak, with lack of use.
+~
+524419 0 16 134217728 0 0 S
+104 1 150 150 0 7000d0+0 0d0+0
+0 1 0
+0 0 1
+67587 0 0
+>fight_prog 30~
+say This is all i have left.
+c 'colour spray' $n
+~
+>fight_prog 30~
+say Take this Fiend!
+c 'faerie fire' $n
+~
+>fight_prog 20~
+say I will destroy you with the last of my strength!
+c 'fireball' $n
+~
+>all_greet_prog 100~
+if isfollow($i) == 1
+break
+endif
+if class($n) == 0
+or class($n) == 1
+or class($n) == 4
+or class($n) == 5
+or class($n) == 15
+or class($n) == 16
+or class($n) == 17
+or class($n) == 19
+if ispc($n) == 1
+bow $n
+say Oh thank goodness!  A fellow mage!
+say As you can see I am down on my luck.
+emote points to his rags.
+say It is those guards that roam the street, because of them I fear to leave this ramshackle
+say building.  Could you do me a tremendous favour and escort me out of this horrible place?
+emote bends his knee and begs.
+else
+say Please don't hurt me!
+say Have you no mercy?
+:  
+emote looks for some means of escape.
+endif
+endif
+~
+>speech_prog yes~
+if isfight($n) == 1
+break
+endif
+if isfollow($i) == 1
+break
+endif
+if class($n) == 0
+or class($n) == 1
+or class($n) == 4
+or class($n) == 5
+or class($n) == 15
+or class($n) == 16
+or class($n) == 17
+or class($n) == 19
+if ispc($n) == 1
+say Thankyou Thankyou ... Please get me out of this Hell.
+follow $n
+endif
+~
+|
+#9256
+Johnny Black Man~
+Johnny~
+A man in black stands here... guitar in hand
+~
+A man in black stands here, guitar in hand.. singing of the pains of the world.
+~
+3 16448 21823664 16640 2 0 S
+115 1 200 200 0 20000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>rand_prog 3~
+say Here's an oldie, but a goodie..
+emote clears his throat.
+say You wonder why I always dress in black...
+say Why you never see bright colours on my back..
+say And why does my appearance seem to have a somber tone?
+say Well there's a reason for the things that I have on...
+~
+>rand_prog 2~
+emote strums his guitar.
+emote clears his throat.
+say I fell in to a burning ring of fire...
+say I went down, down, down... and the flames went higher
+say And it burned, burned, burned...
+say The ring of fire....
+~
+>rand_prog 3~
+emote sets up for his next song.
+say Love is a burning thing...
+say and it makes a fiery ring..
+say Bound by wild desire...
+say I fell into a ring of fire...
+~
+>rand_prog 3~
+say I keep a close watch on this heart of mine...
+say I keep my eyes wide open all the time..
+say I keep the ends out for the tie that binds...
+say Because your mine... I walk the line...
+~
+>rand_prog 3~
+emote takes some time to tune his guitar.
+say John Henry's Momma had about a dozen babies..
+say John Henry's Papa broke jail about a dozen times..
+say The babies all got sick and when the doctor wanted money..
+say He said I'll pay you a quarter at a time...
+say Thats the pay for a steel driver on his line..
+~
+>rand_prog 6~
+say Hey there pal.. would you mind walking over to the
+say bar and grabbing me another beer. I find myself quite
+say Parched... 
+~
+>give_prog beer~
+if ispc($n) == 1
+laugh
+say Thanks friend... 
+emote takes a long drink and smiles.
+say This next one is for you...
+endif
+~
+|
+#9257
+bartender John~
+John~
+The Bartender stands here cleaning mugs
+~
+An old bitter, grisled bartender stands here.  He has scars marking many
+a barfight, he seems capable of handling himself.  
+~
+3 192 21528592 0 0 0 S
+110 1 200 200 0 19000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+#9261
+priest Terep~
+Terep~
+A priest in pure white
+~
+A priest clothed in spottless white reignment.
+~
+3 167772352 16810000 16384 0 1000 S
+110 1 200 200 0 23000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>speech_prog heal~
+if ispc($n) == 1
+if isgood($n) == 1
+~
+|
+#0
+
+
+
+#OBJECTS
+#9201
+Guard Sword~
+sword of the Guards~
+A Sharp Broadsword~
+~
+5 1671170 5664 0 0 8193 104
+100 100
+0~ 60~ 100~ 3~
+5 8000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 35
+A
+19 35
+A
+1 5
+A
+24 -45
+#9202
+gate key~
+a key~
+A small key~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9203
+studded leather armor~
+studded Leather Armor~
+Leather armor covered in metal studs.~
+~
+9 0 0 0 0 9 104
+100 100
+40~ 0~ 0~ 0~
+10 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 29
+A
+19 29
+A
+24 -20
+A
+13 200
+#9204
+anti-magic blade~
+anti-Magic Blade~
+A sword which absorbs magic~
+~
+5 68780035 5664 0 0 8193 104
+100 100
+0~ 40~ 80~ 3~
+0 4000 0
+5 0
+power leak~
+3 3
+0 0 0
+A
+18 30
+A
+19 20
+A
+12 -1000
+A
+4 -10
+#9205
+aura of magic~
+Aura of Magic~
+Aura of Magic~
+~
+9 65404930 31 0 0 17 2
+100 100
+10~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 3
+A
+3 2
+#9206
+Hermetic Circles~
+hermetic Circle~
+A ring made of an unknown alloy.~
+~
+9 31850498 10271 0 0 3 104
+100 100
+2~ 0~ 0~ 0~
+2 4000 0
+5 0
+displacement~
+30 30
+0 0 0
+A
+18 10
+A
+19 10
+A
+12 300
+A
+23 -10
+A
+24 -10
+#9207
+Robe of Stars~
+a Robe of Stars~
+A beautiful silken robe worked with a pattern of stars~
+~
+9 15073282 10267 0 0 9 102
+100 100
+30~ 0~ 0~ 0~
+20 4000 0
+5 0
+mana~
+15 15
+0 0 0
+A
+18 20
+A
+19 20
+A
+3 5
+A
+1 -5
+A
+12 800
+A
+13 500
+A
+24 -30
+#9208
+spell book~
+spell Book~
+A book full of arcane writing lies here.~
+~
+9 21364738 10271 0 0 16385 102
+100 100
+20~ 0~ 0~ 0~
+5 4000 0
+5 0
+shockwave~
+4 4
+0 0 0
+A
+19 15
+A
+18 15
+A
+12 400
+A
+13 100
+#9209
+key~
+key to Abandoned Building~
+A small key~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9210
+gloves~
+worn leather gloves~
+Worn supple leather gloves~
+~
+9 1 0 262144 34357248 129 102
+100 100
+10~ 0~ 0~ 0~
+3 400 0
+0 0
+reserved~
+0 0
+9214 0 0
+A
+18 12
+A
+19 12
+A
+13 200
+A
+116 -1
+#9211
+loin cloth~
+&OA loin cloth~
+A tattered rag~
+~
+9 0 0 262144 34365440 2049 95
+100 100
+10~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 100
+A
+19 10
+A
+18 10
+#9212
+pelt wolf ice~
+a pelt~
+A pelt of snow and ice.~
+~
+9 134217729 0 0 0 1025 100
+100 100
+20~ 0~ 0~ 0~
+5 4000 0
+5 0
+solidify~
+20 20
+0 0 0
+A
+24 20
+A
+13 100
+A
+18 17
+A
+19 15
+#9213
+fang ice teeth~
+icy Fangs~
+Fangs of ice~
+~
+8 134217729 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 4000 0
+0 0
+reserved~
+0 0
+9214 0 0
+#9214
+glove icy~
+icy Gloves~
+A leather glove studded with icicles.~
+~
+5 134217729 0 262144 34349056 8193 104
+100 100
+0~ 30~ 100~ 5~
+2 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 50
+A
+19 40
+A
+13 200
+A
+26 100
+#9215
+guitar~
+a Guitar~
+An old six string~
+~
+4 33554437 0 256 0 16385 100
+100 100
+100~ 5~ 5~ create illusion~
+5 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 20
+A
+24 20
+A
+5 -4
+#9216
+black tunic~
+&zBlack Tunic~
+A black tunic~
+~
+9 33554437 0 256 0 9 100
+100 100
+10~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 25
+A
+13 100
+A
+24 -10
+A
+2 2
+A
+116 -1
+A
+100 -1
+#9217
+black boots~
+&zBlack Boots~
+A pair of black boots~
+~
+9 33554437 0 256 0 65 100
+100 100
+12~ 0~ 0~ 0~
+5 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+24 -10
+A
+13 100
+A
+19 13
+#9218
+black pants~
+&zBlack Pants~
+A pair of dark coloured pants~
+~
+9 33554437 0 256 0 33 100
+100 100
+20~ 0~ 0~ 0~
+4 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+A
+13 100
+A
+24 -10
+A
+12 100
+#9219
+knife fighting~
+a Fighting Knife~
+A well balanced knife made for fighting~
+~
+5 33554437 0 256 0 8193 100
+100 100
+0~ 50~ 100~ 11~
+1 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 40
+A
+19 15
+A
+13 100
+A
+24 -20
+A
+26 100
+#9220
+robes priest white~
+white Robes~
+White cerimonial robes~
+~
+9 0 0 2 302784512 9 102
+100 100
+30~ 0~ 0~ 0~
+10 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 35
+A
+13 200
+A
+12 200
+A
+24 -30
+A
+23 -30
+A
+4 3
+#9221
+white key~
+a Key~
+A white key~
+~
+18 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9222
+cudgel~
+&WA Cudgel~
+A steel-tipped club~
+~
+5 134217729 0 2 302784512 8193 102
+100 100
+0~ 70~ 90~ 8~
+3 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 15
+A
+19 55
+A
+13 100
+A
+26 150
+A
+4 4
+#9223
+black cowboy hat~
+&zA Black Cowboy Hat~
+A black cowboy hat~
+~
+9 33554437 0 0 0 17 102
+100 100
+10~ 0~ 0~ 0~
+2 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 5
+A
+24 -20
+#9224
+beer~
+beer~
+A brown long necked bottle~
+~
+17 0 0 0 0 1 19
+100 100
+5~ 5~ 4~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9225
+bar~
+the Bar~
+A long finely crafted bar, complete with brass railings, sits against the wall.~
+~
+12 1 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9243
+Long Sword~
+a Long Sword~
+A long extremely sharp blade.~
+~
+5 1671168 5664 0 0 8193 100
+100 100
+0~ 40~ 90~ 1~
+4 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 5
+A
+19 20
+A
+18 40
+#9244
+War Hammer~
+a Heavy War Hammer~
+A long handled war hammer lies here~
+~
+5 1671168 5632 0 0 8193 100
+100 100
+0~ 50~ 100~ 8~
+4 3200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 5
+A
+18 30
+A
+19 30
+#9245
+dirk~
+dirk~
+A short sharp blade~
+~
+5 1671168 5664 0 0 8193 100
+100 100
+0~ 50~ 60~ 11~
+2 2800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 4
+A
+19 20
+A
+18 40
+#0
+
+
+
+#ROOMDATA
+#9200
+Entrance to Ezmeltaran ~
+~
+~
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 9201
+S
+#9201
+Gates of Ezmeltaran~
+~
+~
+You stand before the main gates of the city of Ezmeltaran.  A city that
+has never fallen to invaders, and by the looks of it, probably never will. 
+The gates stand open, but a guard keeps close watch on the movements of the
+citzens.  
+~
+0 4333568 1
+Rd     0
+D0
+~
+~
+67 9202 9202
+D2
+~
+~
+0 0 9200
+S
+#9202
+Crossing of Main and Dragon~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9203
+D1
+~
+~
+0 0 9211
+D2
+~
+~
+67 0 9201
+D3
+~
+~
+0 0 9227
+S
+#9203
+Main Street~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9204
+D2
+~
+~
+0 0 9202
+S
+#9204
+Main Street~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9205
+D2
+~
+~
+0 0 9203
+S
+#9205
+Town Square~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9206
+D1
+~
+~
+0 0 9220
+D2
+~
+~
+0 0 9204
+D3
+~
+~
+0 0 9236
+S
+#9206
+Main Street~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9207
+D2
+~
+~
+0 0 9205
+S
+#9207
+Main Street~
+~
+~
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 9208
+D2
+~
+~
+0 0 9206
+S
+#9208
+Crossing of Main and Rawn~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9209
+D1
+~
+~
+0 0 9226
+D2
+~
+~
+0 0 9207
+D3
+~
+~
+0 0 9242
+S
+#9209
+Before the Temple~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9210
+D2
+~
+~
+0 0 9208
+S
+#9210
+Temple Gates~
+~
+~
+~
+0 139264 1
+Rd     0
+D2
+~
+~
+0 0 9209
+S
+#9211
+Dragon Street East~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9213
+D3
+~
+~
+0 0 9202
+S
+#9212
+Dragon Street East~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9213
+D3
+~
+~
+0 0 9211
+S
+#9213
+Dragon Street East~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9214
+D3
+~
+~
+0 0 9212
+S
+#9214
+Crossing of Dragon and Sun~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9215
+D3
+~
+~
+0 0 9213
+S
+#9215
+Sun Street South~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9216
+D2
+~
+~
+0 0 9214
+S
+#9216
+Sun Street South~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9217
+D2
+~
+~
+0 0 9215
+S
+#9217
+Intersection of Sun and Dorval~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9221
+D2
+~
+~
+0 0 9216
+D3
+~
+~
+0 0 9218
+S
+#9218
+Dorval Street East~
+~
+~
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 9217
+D3
+~
+~
+0 0 9219
+S
+#9219
+Dorval Street East~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9218
+D2
+~
+~
+87 9209 9244
+D3
+~
+~
+0 0 9220
+S
+#9220
+Dorval Street East~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9219
+D2
+~
+~
+0 0 9243
+D3
+~
+~
+0 0 9205
+S
+#9221
+Sun Street North~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9222
+D2
+~
+~
+0 0 9217
+S
+#9222
+Sun Street North~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9223
+D2
+~
+~
+0 0 9221
+S
+#9223
+Intersection of Sun and Rawn~
+~
+~
+~
+0 139264 1
+Rd     0
+D2
+~
+~
+0 0 9222
+D3
+~
+~
+0 0 9224
+S
+#9224
+Rawn Street East~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9223
+D3
+~
+~
+0 0 9225
+S
+#9225
+Rawn Street East~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9224
+D3
+~
+~
+0 0 9226
+S
+#9226
+Rawn Street East~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9225
+D3
+~
+~
+0 0 9208
+S
+#9227
+Dragon Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9202
+D3
+~
+~
+0 0 9228
+S
+#9228
+Dragon Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+3 0 9260
+D1
+~
+~
+0 0 9227
+D3
+~
+~
+0 0 9229
+S
+#9229
+Dragon Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9228
+D3
+~
+~
+0 0 9230
+S
+#9230
+Intersection of Dragon and Moon~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9231
+D1
+~
+~
+0 0 9229
+S
+#9231
+Moon Street South~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9232
+D2
+~
+~
+0 0 9230
+S
+#9232
+Moon Street South~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9233
+D2
+~
+~
+0 0 9231
+S
+#9233
+Intersection of Moon and Dorval~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9237
+D1
+~
+~
+0 0 9234
+D2
+~
+~
+0 0 9232
+S
+#9234
+Dorval Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9235
+D3
+~
+~
+0 0 9233
+S
+#9235
+Dorval Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+67 0 9254
+D1
+~
+~
+0 0 9236
+D3
+~
+~
+0 0 9234
+S
+#9236
+Dorval Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9205
+D3
+~
+~
+0 0 9235
+S
+#9237
+Moon Street North~
+~
+~
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 9238
+D2
+~
+~
+0 0 9233
+S
+#9238
+Moon Street North~
+~
+~
+~
+0 139264 1
+Rd     0
+D0
+~
+~
+0 0 9239
+D2
+~
+~
+0 0 9237
+S
+#9239
+Intersection of Moon and Rawn~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9240
+D2
+~
+~
+0 0 9238
+S
+#9240
+Rawn Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9241
+D3
+~
+~
+0 0 9239
+S
+#9241
+Rawn Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9242
+D3
+~
+~
+0 0 9240
+S
+#9242
+Rawn Street West~
+~
+~
+~
+0 139264 1
+Rd     0
+D1
+~
+~
+0 0 9208
+D3
+~
+~
+0 0 9241
+S
+#9243
+Latham's Weapon Shop~
+~
+~
+The smell of oil and cold hard stell dominate this small room. Weapons
+of all sorts adorn the walls. A small but hard looking man stands behind
+the counter watching your every move.
+~
+0 140296 0
+Rd     0
+D0
+~
+~
+0 0 9220
+S
+#9244
+Abandoned Building~
+~
+~
+You find yourself in an old burned out building.  Fire has gutted most of the inside.  A few beggars are using what is
+left as a shelter from the elements.
+~
+0 139272 0
+Rd     0
+D0
+~
+~
+87 9209 9219
+S
+#9250
+In the Park~
+~
+~
+~
+0 139264 3
+Rd     0
+D2
+~
+~
+0 0 9253
+D3
+~
+~
+0 0 9251
+S
+#9251
+In the Park~
+~
+~
+~
+0 139264 3
+Rd     0
+D1
+~
+~
+0 0 9250
+D2
+~
+~
+0 0 9254
+D3
+~
+~
+0 0 9252
+S
+#9252
+A Grove of Trees~
+~
+~
+~
+0 139264 3
+Rd     0
+D1
+~
+~
+0 0 9251
+D2
+~
+~
+0 0 9255
+S
+#9253
+In the Park~
+~
+~
+~
+0 139264 3
+Rd     0
+D0
+~
+~
+0 0 9250
+D3
+~
+~
+0 0 9254
+S
+#9254
+Entrance to the Park~
+~
+~
+~
+0 139264 3
+Rd     0
+D0
+~
+~
+0 0 9251
+D1
+~
+~
+0 0 9253
+D2
+~
+~
+67 0 9235
+D3
+~
+~
+0 0 9255
+S
+#9255
+In the Park~
+~
+~
+~
+0 139264 3
+Rd     0
+D0
+~
+~
+0 0 9252
+D1
+~
+~
+0 0 9254
+S
+#9256
+The Golden Candle Inn~
+~
+~
+In this corner of the bar sits a stage. It is usually occupied by the
+world famour bard Johnny Cash. He sings with a heavy heart about the
+problems with this earth. Listen closely, you may learn something
+~
+0 139264 0
+Rd     0
+D1
+~
+~
+0 0 9257
+D2
+~
+~
+0 0 9259
+S
+#9257
+The Golden Candle Inn~
+~
+~
+~
+0 139264 0
+Rd     0
+D1
+~
+~
+0 0 9258
+D2
+~
+~
+0 0 9260
+D3
+~
+~
+0 0 9256
+S
+#9258
+The Golden Candle Inn~
+~
+~
+~
+0 139264 0
+Rd     0
+D2
+~
+~
+0 0 9261
+D3
+~
+~
+0 0 9257
+S
+#9259
+The Golden Candle Inn~
+~
+~
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 9256
+D1
+~
+~
+0 0 9260
+S
+#9260
+The Golden Candle Inn~
+~
+~
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 9257
+D1
+~
+~
+0 0 9261
+D2
+~
+~
+3 0 9228
+D3
+~
+~
+0 0 9259
+S
+#9261
+Golden Candle Inn~
+~
+~
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 9258
+D3
+~
+~
+0 0 9260
+S
+#9299
+Void~
+~
+~
+A Void
+~
+0 402438 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 9204 1 9200
+M 0 9201 1 9201
+E 0 9201 0 20
+G 0 9202 0
+E 0 9203 0 5
+E 0 9204 0 21
+M 0 9202 1 9213
+E 0 9201 0 20
+E 0 9203 0 5
+E 0 9201 0 21
+M 0 9203 1 9225
+E 0 9245 0 20
+E 0 9203 0 5
+E 0 9201 0 21
+M 0 9202 1 9228
+E 0 9201 0 20
+E 0 9203 0 5
+E 0 9201 0 21
+M 0 9203 1 9235
+E 0 9201 0 21
+E 0 9203 0 5
+E 0 9245 0 20
+M 0 9202 1 9242
+E 0 9201 0 21
+E 0 9203 0 5
+E 0 9201 0 20
+M 0 9243 1 9243
+G 0 9243 0
+G 0 9244 0
+G 0 9245 0
+M 0 9244 1 9244
+O 0 9209 0 9244
+M 0 9207 1 9250
+M 0 9206 1 9251
+M 0 9210 1 9251
+M 0 9206 1 9252
+M 0 9207 1 9252
+M 0 9208 1 9252
+E 0 9210 0 13
+E 0 9211 0 17
+M 0 9209 1 9252
+E 0 9212 0 16
+M 0 9210 1 9253
+M 0 9210 1 9254
+M 0 9206 1 9255
+M 0 9210 1 9255
+M 0 9256 1 9256
+E 0 9215 0 22
+E 0 9216 0 5
+E 0 9217 0 12
+E 0 9218 0 11
+E 0 9219 0 20
+E 0 9223 0 6
+M 0 9257 1 9258
+O 0 9225 0 9258
+M 0 9261 1 9259
+E 0 9220 0 5
+G 0 9221 0
+E 0 9222 0 20
+M 0 9205 1 9299
+E 0 9207 0 5
+E 0 9206 0 1
+E 0 9206 0 2
+E 0 9208 0 22
+S
+
+
+
+#SHOPS
+9243 5 0 0 0 0 150 75 0 24
+0
+
+
+
+#$

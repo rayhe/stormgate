@@ -1,0 +1,29 @@
+
+[executer]
+RunInTerminal=true
+
+[Project State]
+clean before build=false
+
+[filelist]
+0=/home/ahsile/Projects/mud/src/t_prog.c
+
+[filenumbers]
+0=14
+
+[filemarkers]
+0=
+
+[File View]
+filter.file.unmatch=*.so *.o *.a *.la
+filter.file.ignore.hidden=0
+filter.dir.ignore.hidden=0
+
+[Project Tree]
+0=0
+
+[Symbol Tree]
+0=0
+
+[File Tree]
+0=0

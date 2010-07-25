@@ -1,0 +1,3045 @@
+#AREADATA
+Name        {  1-5 } LMD Temple~
+Builders    Mishval~
+VNUMs       31900 31999
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Mishval~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#31900
+guard deception~
+A guard~
+A guard of deception winks conspiratorily at you.
+~
+~
+1 256 0 0 0 -500 S
+6 1 3 9 0 100d0+0 0d0+0
+60 0 0
+0 0 0
+0 0 0
+#31901
+spirit terlikan~
+The Spirit of Terlikan~
+The spirit of Terlikan floats high above the statue emanating enormous power.
+~
+~
+11 402653312 0 131072 0 0 S
+300 1 600 600 0 0d0+0 0d0+0
+3000 0 0
+0 0 0
+0 0 0
+#31902
+abraham troll~
+Abraham~
+Abraham, the multilingual troll, sits behind his desk.
+~
+~
+65539 268435456 0 0 0 0 S
+108 1 216 216 0 0d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+#31903
+worshipper temple~
+A worshipper~
+A temple worshipper walks around chanting softly.
+~
+~
+1 0 0 0 0 0 S
+6 1 -20 -5 0 100d0+0 0d0+0
+60 1 0
+0 0 0
+0 0 0
+#31904
+newbie helper lmd~
+Newbie Helper of LMD~
+Say Help, if you need any.
+~
+~
+3 0 67141648 537403392 12293 0 S
+300 1 600 600 0 0d0+0 0d0+0
+3000 0 0
+0 0 0
+0 0 0
+>speech_prog help~
+smile
+say Hello $n! Welcome to the Adventures of Stormgate.
+say Many journeys will lie ahead of you.
+say Can I be of any assistance to you?
+~
+>speech_prog yes yeah yup ya yessir ~
+Say OK, Just say one of the following and I will help you with that topic.
+nod $n
+mpecho LEVEL EXP EXIT PKILL PEACEFUL TRAIN PRACTICE SCHOOL STATS
+~
+>speech_prog nope no never nopers shake~
+say Ok $n, You must really know what you are doing.
+wave $n
+~
+>speech_prog exit exits~
+say There are many auto commands that you can type:
+mpecho AUTOEXIT: Will show you all exits when you walk into a room.
+mpecho AUTOLOOT: Will take all the item in a MOB'S corpse after YOU have killed it.
+mpecho AUTOGOLD: Will take all gold from the corpse of a MOB YOU have killed.
+mpecho AUTOSAC: Will sacrifice a MOB'S corpse after you have killed it.
+~
+>speech_prog experience exp xp~
+say Experience is gained by killing mobs, for each 1000 experience points you earn you gain a level.
+mpecho CONSIDER <MOB>: shows you the chances that you will be able to kill the mob in question.
+mpecho KILL <MOB>: you attempt to kill a mob.
+mpecho WORTH: shows you how much experience you have and how much you need until your next level. Also it shows your modified stats.
+ 
+say for right now, you should stay in the Temple until level 5.
+~
+>speech_prog levels level lvl~
+say to raise levels, you must gain experience from killing mobs.
+mpecho AREA: shows you what level all the areas in the game are.
+say For the time being you should stay in the Temple until you reach level 5.
+~
+>speech_prog pk pkill~
+say PKill means that you wish to be able to fight and kill or die other pk players in the game. This will start at level 30 to give you some breathing room, remember it's a +/- 8 level range.
+~
+>speech_prog peaceful~
+say Peaceful means that you do not wish to kill other players. You cannot be attacked by them unless you wander into CLAN halls or the ARENA.
+~
+>speech_prog train trai tra~
+say To train, go two east, north, three east and north from here, to Serakis's Training Room.
+say Over there you can train your stats, by typing train <stat>. To see what stats you can train, just type train.
+~
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) < 2
+say Welcome to Adventures of Stormgate, $n!  I have a newbie guide for you to read.  To read it, type: READ CHAPTER, where chapter is a number.
+smile $n
+mpoload 156
+give newbie $n
+say If you need any other help, just say YES.
+else
+say You have outgrown your need for me, $n.  May you find adventure in all that you do!
+endif
+endif
+~
+>speech_prog stats statistics stat~
+say there are many stats. To see what your values are, type wo.
+mpecho STR: strength, this affects how much you can carry and how much.
+mpecho WIS: affects how many practices you get per level.
+mpecho INT: affects how many practices you need to become an adept at a skill or spell.
+mpecho DEX: affects how often you can dodge or parry an attack.
+mpecho CON: affects how many hit points you gain per level.
+say To increase your stats, go TRAIN them.
+~
+>speech_prog practice prac pract pra~
+say With each level you gain, you will get new spells and skills. To be able to use these, you must first practice them. Starting at level three, you can go two east, two north, two west
+say to Jokichi's Practice Room. Type Prac to see what spells/skills you can practice, and then Prac <skill> to practice it. Depending on your stats, you may have to practice more than once, to be an adept.
+~
+>speech_prog mud school ~
+say the mud school is where all new players should go to advance LEVELS. 
+say to go there, just go two east, north, east, and north again there will be instructions there.
+say Also remember to CON <mob>
+~
+|
+#31908
+Deceit's Nasty Adept~
+Deciets Nasty Adept ~
+Deciets Nasty Adept
+~
+He's just here to make sure you don't mess up.
+~
+67 419430400 0 8192 512 -1000 S
+108 1 216 216 0 1000000d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc ($n) => 3
+if level ($n) < 4
+say I cannot allow you to pass this point yet, as it is still too dangerous for
+say you,  young $n, go gain a few more levels. 
+mpecho The Adept utters a few words, you start to feel faint.
+mpecho The room spins, then sudden darkness comes. A light shines and you 
+mpecho find your self back at the top of the stairs.
+mptrans $n 31901
+else
+say You may pass but you have been forwarned!
+endif
+endif
+~
+|
+#31911
+Dubv~
+Dubv~
+As you enter the room, Dubv quickly turns and closes a bookshelf door and grins.
+~
+You see a man of slender proportion, not exactly a "strong guy" but you still shiver as he stares back at you and asks, "What do you want?"
+~
+786499 268435456 262144 0 0 0 S
+108 1 216 216 0 0d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say Hello, $n! I'm here to help you on your way!
+$n, To learn more about REMORTing and MULTICLASSING type help remort and help multiclassing.
+say $n, To learn more about REMORTing type help multiclassing.
+grin
+~
+|
+#31915
+Blargi~
+Blargi~
+Blargi the fountain operator stands here.
+~
+~
+3 134217728 0 0 1 0 S
+108 1 216 216 0 0d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+#31921
+slave worker construction~
+A construction slave~
+A construction slave cowers in the corner.
+~
+~
+3 0 0 0 0 0 S
+2 1 -1 4 0 12d0+0 0d0+0
+20 0 0
+0 0 1
+0 0 0
+>give_prog gem vortex~
+emote screams in pain as he is sucked into the gem.
+mpoload 31903
+drop gem
+mppurge self
+~
+>all_greet_prog 100~
+say Please help me. I don't want to be a slave anymore.
+say Please don't let them find me.
+emote begs you for mercy.
+~
+|
+#31923
+Brutus~
+Brutus~
+Brutus, slayer of Caesar, waits here for a meeting.
+~
+~
+3 128 0 0 0 0 S
+5 1 -5 -5 0 40d0+0 0d0+0
+50 0 0
+0 0 1
+0 0 0
+>greet_prog 60~
+if ispc($n) == 1
+sneer $n
+say What do you want?
+endif
+~
+|
+#31924
+Farnaz~
+Farnaz~
+Farnaz, the shopkeeper, lounges around here.
+~
+~
+3 0 0 131072 0 0 S
+108 1 216 216 0 0d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+#31926
+hawk mean~
+A hawk~
+A mean hawk swoops past your head.
+~
+~
+3 0 0 0 0 0 S
+5 1 3 3 0 44d0+0 0d0+0
+50 1 0
+0 0 0
+0 0 0
+#31927
+black wolf~
+A black wolf~
+A black wolf howls toward the moon.
+~
+~
+1 0 0 0 0 0 S
+4 1 -1 8 0 11d0+0 0d0+0
+40 1 0
+0 0 0
+0 0 0
+#31928
+anaconda large~
+An anaconda~
+A large anaconda is curled up here.
+~
+~
+1 0 0 0 0 0 S
+4 1 8 8 0 40d0+0 0d0+0
+40 1 0
+0 0 0
+0 0 0
+#31929
+rabid dog~
+A large dog~
+A large rabid dog runs around here.
+~
+~
+3 0 0 0 0 0 S
+4 1 8 8 0 35d0+0 0d0+0
+40 1 0
+0 0 1
+0 0 0
+#31930
+old man~
+An old man~
+An old man sits on a bench here resting.
+~
+~
+3 128 0 0 0 0 S
+11 1 18 15 0 55d0+0 0d0+0
+110 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if ispc($n) == 1
+say Well hello there $n.  If you want to leave this place, just say out.
+smile
+say Boy, what I would give to have my cane back!
+endif
+~
+>speech_prog out~
+say Sure thing.  See you later!
+mptransfer $n 31917
+mpechoat $n Come back and visit!
+~
+>give_prog sharp branch~
+if ispc($n) == 1
+say HA!  Who do you think you are trying to fool??
+say You don't think I know the difference between
+say a cane and a branch?
+slap $n
+give sharp $n
+endif
+~
+>give_prog crystal cane~
+say Thanks so much!!!
+emote digs deep into his pockets and pulls out a rusty key.
+say This is all I really have to reward you with.
+mppurge cane
+mpoload 31908
+give key $n
+~
+|
+#31936
+erlim~
+Erlim~
+A cloaked figure Erlim, sits here in a chair.
+~
+~
+3 256 1024 0 0 0 S
+6 1 -6 12 0 100d0+0 0d0+0
+60 0 0
+0 0 1
+0 0 0
+#31939
+lava troll~
+A lava troll~
+A lava troll walks from rock to rock
+~
+~
+1 0 0 0 0 0 S
+4 1 8 8 0 30d0+0 0d0+0
+40 1 0
+0 0 0
+0 0 0
+#31940
+slave lava~
+A lava slave~
+A slave works here, sweating like crazy.
+~
+~
+3 0 0 0 0 0 S
+6 1 12 12 0 100d0+0 0d0+0
+60 1 0
+0 0 0
+0 0 0
+#31941
+slave driver troll~
+A slave driver~
+A troll slave driver cracks a whip at the slaves.
+~
+~
+3 0 0 0 0 0 S
+10 1 10 10 0 55d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+#31942
+guard troll~
+A troll guard~
+A troll guard watches the security monitors here.
+~
+~
+3 0 0 0 0 0 S
+15 1 13 13 0 120d0+0 0d0+0
+150 0 0
+0 0 0
+0 0 0
+#31943
+patrol guard troll~
+A patrol guard~
+A troll patrol guard walks around checking for misconduct.
+~
+~
+1 0 0 0 0 0 S
+10 1 15 15 0 100d0+0 0d0+0
+100 1 0
+0 0 0
+0 0 0
+#31944
+Graxizz chief~
+Graxizz~
+Graxizz, the slave chief, sits on his throne watching the slaves.
+~
+~
+3 0 0 2048 0 0 S
+20 1 40 35 0 22d0+0 0d0+0
+200 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+if ispc($n) == 1
+say Well met $n.  I'm in a predicament here.  One of my slaves
+say is missing.  We were on a construction assignment and he
+say just never came back.  Think you can help me out? (yes or no)
+endif
+~
+>speech_prog yes~
+if ispc($n) == 1
+say Wonderful!  Take this.
+mpoload 31900
+give gem $n
+say Use that to capture the slave's soul and bring it right back to me!
+endif
+~
+>speech_prog no~
+if ispc($n) == 1
+say WHAT!?  You dare say NO to me??
+say One day, you will be one of my slaves!
+endif
+~
+>give_prog green soul gem~
+if ispc($n) == 1
+say Great job!!  I thought you would never find him!
+say Here's a small reward for your efforts!
+mppurge gem
+mpoload 31901
+give kit $n
+endif
+~
+|
+#31950
+jokichi dojo master~
+Jokichi~
+Jokichi, the Dojo master, stands before you.
+~
+~
+1027 0 32 0 0 0 S
+108 1 216 216 0 0d0+0 0d0+0
+1080 0 0
+0 0 1
+0 0 0
+#31954
+Serakis trainer~
+Serakis~
+Serakis the temple trainer watches everyone carefully.
+~
+~
+515 0 262144 2048 0 0 S
+108 1 216 216 0 0d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+#31955
+rattlesnake snake~
+A rattlesnake~
+A small rattlesnake slithers along here.
+~
+~
+1 0 0 0 0 0 S
+5 1 -2 10 0 16d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+#31958
+vulture black~
+A black vulture~
+A giant black vulture circles overhead.
+~
+~
+1 0 0 0 0 0 S
+2 1 1 1 0 20d0+0 0d0+0
+20 1 0
+0 0 0
+0 0 0
+#31959
+snake green small~
+A green snake~
+A small green snake slithers around on the ground.
+~
+~
+1 0 0 0 0 0 S
+4 1 -1 8 0 11d0+0 0d0+0
+40 1 0
+0 0 0
+0 0 0
+#31960
+wolf vicious~
+A vicious wolf~
+A small vicious wolf snarls at you.
+~
+~
+1 256 0 0 0 0 S
+4 1 -1 8 0 19d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#31961
+owl~
+A wicked owl~
+A wicked owl with glowing red eyes stands watching you here.
+~
+~
+1 0 0 0 0 0 S
+6 1 -1 12 0 11d0+0 0d0+0
+60 0 0
+0 0 0
+0 0 0
+#31964
+nasty old witch~
+An old witch~
+A nasty old witch hovers over the crystal sphere.
+~
+~
+3 0 0 0 0 0 S
+4 1 -2 8 0 35d0+0 0d0+0
+40 1 0
+0 0 0
+0 0 0
+#31967
+large tarantula~
+A large tarantula~
+A large scary-looking tarantula crawls along the dirt path.
+~
+~
+1 0 0 0 0 0 S
+4 1 -1 8 0 19d0+0 0d0+0
+40 1 0
+0 0 0
+0 0 0
+#31970
+trainer terrorist~
+A terrorist trainer~
+A terrorist trainer stands here barking commands.
+~
+~
+3 0 0 0 0 0 S
+6 1 1 2 0 40d0+0 0d0+0
+60 1 0
+0 0 0
+0 0 0
+#31971
+terrorist trainee~
+A trainee~
+A trainee stands here practicing combat moves.
+~
+~
+3 0 0 0 0 0 S
+5 1 1 2 0 35d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+#31972
+trainee terrorist~
+A trainee~
+A gun-toting trainee points at the target.
+~
+~
+3 0 0 0 0 0 S
+5 1 1 2 0 40d0+0 0d0+0
+50 1 0
+0 0 0
+0 0 0
+#31973
+sleeping trainee~
+A sleepy trainee~
+A trainee sleeps on the top bunk here.
+~
+~
+3 0 0 0 0 0 S
+6 1 1 2 0 15d0+0 0d0+0
+60 1 0
+0 0 1
+0 0 0
+#31974
+terrorist~
+A terrorist~
+A terrorist walks around checking around the cave.
+~
+~
+1 0 0 0 0 0 S
+6 1 7 8 0 40d0+0 0d0+0
+60 1 0
+0 0 0
+0 0 0
+#31975
+armory chief~
+An armory chief~
+The chief of the armory stands here looking over his records.
+~
+~
+3 0 0 0 0 0 S
+6 1 10 8 0 55d0+0 0d0+0
+60 1 0
+0 0 0
+0 0 0
+#31976
+terrorist guard~
+A terrorist guard~
+A terrorist guard stands protecting the cave from intruders.
+~
+~
+3 0 0 0 0 0 S
+6 1 7 9 0 42d0+0 0d0+0
+60 0 0
+0 0 1
+0 0 0
+#31977
+Ferret~
+A Ferret~
+A ferret searches for some food
+~
+~
+97 0 0 0 0 0 S
+5 1 4 4 0 9d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+flex $n
+say Are you brave enough $n?
+roar
+~
+|
+#0
+
+
+
+#OBJECTS
+#31900
+gem vortex~
+a vortex gem~
+A black gem sits on the ground.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31901
+kit deception~
+a kit of deception~
+A disguise kit of some sort lies here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+3 40 0
+0 0
+reserved~
+0 0
+31907 0 0
+#31902
+statue terlikan~
+a statue of Terlikan~
+A statue of Terlikan sits in the middle of the room.~
+~
+13 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31903
+green soul gem~
+a green soul gem~
+A glowing green soul gem catches your eye.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#31905
+steel waterfall~
+a steel waterfall~
+A steel waterfall spews forth black fluid here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31906
+sharp branch~
+a sharp branch~
+A branch with a pointy end lies on the ground.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+31907 0 0
+#31907
+crystal cane~
+a crystal cane~
+A cane made of shimmering crystal glimmers on the ground.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+5 40 0
+0 0
+reserved~
+0 0
+0 31901 31906
+#31908
+rusty key~
+a rusty key~
+A small key covered in rust sits on the ground.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#31909
+gate methidorial~
+a silvery gate~
+A silvery gate hovers in the air.~
+~
+29 0 0 0 0 0 0
+100 100
+25001~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31910
+portal~
+pulsing portal~
+A pulsing portal beckons you closer.~
+~
+29 2 0 0 0 0 0
+100 100
+31900~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31911
+mask~
+a mask of lies~
+A strange dark mask floats in mid-air.~
+~
+9 134234112 0 0 0 65541 10
+100 100
+0~ 0~ 0~ 0~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#31915
+flask liquid~
+a flask~
+A large flask of liquid sits on the floor.~
+~
+17 0 0 0 0 1 1
+100 100
+200~ 200~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#31917
+sign large~
+a large sign~
+A large fiery sign is planted on the ground here.~
+~
+13 33554432 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Welcome to the Hall of Indecision!
+ 
+EAST:  This will take you to a wonderous paradise.  After a grueling day in
+the temple, why not relax and take this route to a beautiful waterfall.
+ 
+SOUTH:  This door will lead you straight to Lord Brian's House in Methidorial.
+A great place to gain experience and the center of Stormgate life!
+ 
+WARNING:  These areas are for level 6 and higher.  Enter at your own risk.
+~
+#31920
+hole tunnel~
+large hole~
+A large hole in the rubble glows with a yellow light.~
+~
+29 1 0 0 0 0 0
+100 100
+31921~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31921
+hole~
+boulder hole~
+A hole in the pile of boulders leads upwards.~
+~
+29 1 0 0 0 0 0
+100 100
+31920~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31922
+donation box~
+a donation box~
+A donation box sits bolted to the ground.~
+~
+15 1 0 0 0 0 0
+100 100
+1000000000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31923
+slippers lies~
+Slippers of Lies~
+Slippers of Lies~
+~
+9 16400 0 0 0 65 3
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+5 0
+fly~
+0 -1
+0 0 0
+#31924
+loaf rotten bread~
+a loaf of bread~
+A loaf of rotten bread~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#31925
+large sign~
+a large sign~
+A large sign is stuck on the wall.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Welcome to the Temple of Lies, Manipulation and Deceipt.
+There are several things you should know before embarking on your adventure.
+ 
+First, to get help on channels type HELP CHANNEL.  Most people ask for help
+on OOC.  To talk on OOC, type 'ooc <message>'
+ 
+Next, you should make sure you type 'wear all' to wear all the equipment you
+have in your inventory.
+ 
+Third, to the north is a newbie combat area.  To enter, you must open the
+door: type 'open north'.  To attack a mob, type 'kill <mob name>'.  Be aware
+that some mobs maybe aggresive and attack you right off the bat.
+ 
+See the COMBAT section of the HELP menu for more information. (type HELP)
+~
+#31950
+Mishval's Helm~
+Mishval's Helm~
+Mishval's Helm~
+~
+9 536870915 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+10 100 0
+0 0
+reserved~
+0 0
+0 31951 31952
+A
+3 1
+#31951
+half mishval helm2~
+mishval's Glowing Helm~
+A glowing helm that looks like part of another helm. You wonder what this will JOIN with to make...~
+~
+9 1 0 0 0 17 0
+100 100
+0~ 0~ 0~ 0~
+4 0 0
+0 0
+reserved~
+0 0
+31950 0 0
+#31952
+half mishval helm1~
+mishval's Humming Helm~
+A humming helm that looks like part of another helm. You wonder what this will JOIN with to make...~
+~
+9 2 0 0 0 17 0
+100 100
+0~ 0~ 0~ 0~
+4 100 0
+0 0
+reserved~
+0 0
+31950 0 0
+#31964
+a Black Wand~
+a Black Wand~
+&z A Black Wand~
+~
+9 1 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+0 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+A
+19 3
+#31972
+Deciever Orbs~
+Deciever Orb~
+Deciever Orb~
+~
+9 67108865 0 0 0 32769 1
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#31977
+Sign~
+a Sign~
+A Sign Reads Follow the hall North to PRACTICE, and East to....~
+~
+12 603996160 0 0 0 0 105
+100 100
+0~ 0~ 0~ 0~
+3 100000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+42 -600
+A
+42 -200
+A
+18 60
+A
+19 60
+#31978
+sign~
+a Sign~
+A Sign with arrows points to the North for killing and to the East for TRAINING.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#31979
+sign~
+a Sign~
+A Sign points to the East for Healing and to the North for Adventure~
+~
+12 16384 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#31980
+sign~
+a Sign~
+&CA Sign is here showing you an EXIT towards the SOUTH.~
+~
+12 134217728 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#31981
+sign~
+a Sign~
+&GA Sign reads, to the WEST there is food and to the NORTH ye find beverage and Master Dubv.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#31900
+A Dark Underworld~
+~
+~
+You are in a dark underworld, surrounded by shadows, ruled by lies and
+survived through deceit.  There is an immediate sense that a hundred eyes
+are watching you from every direction and every corner.  The walls, ceilings
+and floors are a simple black, no decorations and no other coloring.  The only
+source of light are two torches stuck on the walls on either side of you.
+You can't shake this feeling that everything is not what it seems, that
+everything in this area has a deeper, darker story behind it.
+Type HELP CHANNELS to join channels and to ask for help on them.  Vulgar
+language is ONLY permitted on the mutter channel.
+~
+0 1028 0
+Rd     0
+D1
+~
+~
+0 0 31901
+S
+#31901
+Edge of a Cliff~
+~
+~
+As you enter, glancing around you, you almost miss the fact that the
+platform you are standing on suddenly drops off to what seems like a
+bottomless abyss.  All around you, you can hear a soft, but consistent
+cackling.  The platform you walk on is not rock, but smooth, cold steel
+plating.  As you walk around, you can definitely hear the small
+clitter-clatter of other footsteps around you but cannot determine their
+origin.  It is quite disconcerting.  To the east, although the platform has
+ended, a wood plank bridge connects over the abyss to the other side.  There
+is also a set of small stairs leading downward.  If you venture to the EAST
+you will fing The Spirit Of Terlkian ever so helpful.  If you venture 2 DOWN
+and go either NORTH or WEST you will find a couple of shops and the REMORT
+master Dubv.  
+For more information: Type HELP NEWBIE
+~
+0 1028 0
+Rd     0
+D1
+~
+~
+0 0 31902
+D3
+~
+~
+0 0 31900
+D5
+~
+~
+0 0 31908
+S
+#31902
+On a Wood Plank Bridge~
+~
+~
+You step on this bridge with a great deal of trepidation as you are unsure
+about the bridge's stability.  There is tremendous sway from right to left
+and every step feels like you might fall through the gaps between planks.
+A string of lights lines each plank, providing minimal lighting for you to
+realize the bridge path.  With every step you seem to get a little bit closer,
+yet there is still an eternity of bridge to cross.  Bright lights catch your
+eye on the other side.  You can either go back or keeping going forward.
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 31903
+D3
+~
+~
+0 0 31901
+S
+#31903
+Beginning of a Path~
+~
+~
+After a grueling adventure over the wood-plank bridge, you have finally
+reached the other side.  A path begins here, emphasized by the dark blue carpet
+extending to the east.  The room is unusual as it is extremely bright,
+accented by hundreds of fluorescent lights.  It exudes a feeling of clarity,
+truth and warmth.  Be very careful and recognize what this area is.  Nothing
+is what it seems around here and everything must be scrutinized with a
+watchful eye.  A steel ornament representing a cascading waterfall sits in 
+corner of the room.  A thick black fluid flows down the waterfall and it
+does not seem safe to touch.
+~
+0 394244 0
+Rd     0
+D0
+~
+~
+0 0 31947
+D1
+~
+~
+0 0 31904
+D3
+~
+~
+0 0 31902
+S
+#31904
+Forkroad in the Path of Deceit~
+~
+~
+It is clear you must exercise some of your decision making skills at this
+point.  The Path of Deceit has ended here and forks off to the east and to
+the south.  From the east, you can hear considerable commotion from a dimly
+lit room hidden behind shiny black beads.  The path to the south appear to
+end, but it is uncertain from this distance.  On the floor a large two-headed
+serpent has been painted, with one head pointing in either direction.  The
+head toward the east seems peaceful and non-threatening while the one to the
+south seems pre-occupied and trying to say something to you.
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+0 0 31905
+D2
+~
+~
+0 0 31906
+D3
+~
+~
+0 0 31903
+S
+#31905
+A Shady Refuge~
+~
+~
+While you feel you can safely rest in this dimly lit alcove, it is not
+possible to reach a state of complete relaxation.  Shadows cross the room
+from every direction although the source of these shadows are not always clear.
+A state of ebony carved in the likeness of Terlikan, a deity of Manipulation,
+stands over 5 feet tall in the middle of the room.  A small radius around
+the statue has been roped off, but a powerful magic reaches every corner and
+crack of this resting place.  People push each other out of the way to get
+a little closer to the statue, believing the closer you are, the stronger
+you can get.
+~
+0 134349830 0
+Rd     0
+D2
+~
+~
+0 0 31980
+D3
+~
+~
+0 0 31904
+S
+#31906
+Hall of Rumors~
+~
+~
+Entering this room, a sudden rush of voices and whispering overruns your
+ears.  The room is extremely windy and it only serves to carry the voices
+even further and amplifies them even louder.  The draft seems to be entering
+from a small manhole shaped opening in the ground.  There is no covering and
+a ladder has been placed against the opening leading downward.  Several large
+wolf pelts decorate the walls of this room.
+~
+0 1024 0
+Rd     0
+D0
+~
+~
+0 0 31904
+D5
+~
+~
+0 0 31907
+S
+#31907
+Pit of Whispers~
+~
+~
+This dank, dark pit reminds you more of a sewer than an actual room.  The
+pit is lighted by a few small incandescent bulbs.  Several uncomfortable
+looking steel chairs are positions surrounding a large rotting wooden desk.
+Behind the desk sits a large troll speaking hundreds of various languages to
+the students sitting in these chairs.  You may learn langauges here.  For
+further help, type HELP LEARN.
+~
+0 132098 0
+Rd     0
+D4
+~
+~
+0 0 31906
+S
+#31908
+Twisting Staircase~
+~
+~
+This staircase proceeds further downwards wrapping around a gigantic glass
+tube filled with water.  It seems to be an aquarium of sorts.  At this level
+you can see some of goldfish and pirahna's preying on the other tiny fish.
+Eels and stingrays float around battling for the top of the food chain.  The
+tubular aquarium has a blue glow originating from the bottom of the aquarium.
+~
+0 1028 0
+Rd     0
+D4
+~
+~
+0 0 31901
+D5
+~
+~
+0 0 31909
+S
+#31909
+Twisting Staircase~
+~
+~
+You have almost reached the bottom of the staircase.  The lights have become
+even brighter at this level, almost blinding you.  Adjusting to the bright
+lighting, you can see a hallway breaking off to the west.  A dark pool of water
+sits in a fountain and flows down into a drain in the floor.  The water from
+the fountain originates from a huge anaconda statuette mounted right above
+the pool of water.  Looking north, you see a small crawl space just large
+enough for someone to get through on their hands and knees.
+~
+0 1028 0
+Rd     0
+D0
+~
+~
+0 0 31910
+D3
+~
+~
+0 0 31918
+D4
+~
+~
+0 0 31908
+D5
+~
+~
+0 0 31916
+S
+#31910
+A Small Shaft~
+~
+~
+There is barely enough room for you to even breathe.  Any bigger and you would
+definitely be stuck in the shaft.  Fortunately, it seems that the shaft ends
+pretty soon, although you have to crawl through at least another segment to
+the west before you can get out.  The shaft is encased in a thick layer of
+dust, wreaking havoc on those with severe allergies.  Rats scurry about,
+crawling through your legs and right by you, not showing one bit of fear.
+You can make out the faint smell of food somewhere in the distance.
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 31909
+D3
+~
+~
+0 0 31912
+S
+#31911
+The office of Dubv, LMD's Remort Master.~
+~
+~
+You have entered the room of the Class Master Dubv. This room is rather odd as it is neither rectangular
+nor square. There is no feeling of comfort in this room especially when Dubv glances over you and grins.
+There is a bookshelf behind Dubv and there appears to be a little light comming from the crack where
+the door meets the actual case. You try not to look as you fear Dubv might notice and wonder if you
+would try something to take a peek.
+~
+0 134611972 0
+Rd     0
+D2
+~
+~
+0 0 31913
+S
+#31912
+End of the Shaft~
+~
+~
+So there is light at the end of the tunnel!  This appears to be the last
+segment of the shaft and to the west you can clearly make out a full sized
+room.  The smell of food and nourishment continues to get stronger and
+stronger, making your stomach rumble.  A small grill is right beneath you
+on the bottom of the shaft, but you cannot make out where the grill leads.
+Unfortunately, the grill is much too small for a small animal, much less you.
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 31910
+D3
+~
+~
+0 0 31913
+S
+#31913
+A Western Passage~
+~
+~
+After all that crawling, you are finally able to stand up straight and stretch
+your legs.  You almost fall over on yourself since your legs have forgotten how
+to walk straight.  This passage is extremely busy with people coming from
+the west and north.  Most people coming from the north look a little freaked,
+as if they were just scared senseless.  Others walking in from the west are chatty
+and holding some beverages in their hand.  It is going to be pretty hard
+going through that shaft with those drinks.
+~
+0 1024 0
+Rd     0
+D0
+~
+~
+0 0 31911
+D1
+~
+~
+0 0 31912
+D3
+~
+~
+0 0 31914
+S
+#31914
+A Dead End~
+~
+~
+This is the end of the passage way.  A large steel ladder reaches from bottom
+to top with openings at both ends.  The room is decorated with large arrows, 
+all of which point downward toward the opening.  There is a strange mist in
+this room and it seems to be coming from above.  Something up there must be
+moist enough and hot enough to cause such a tremendous mist to extend down
+the ladder. 
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 31913
+D4
+~
+~
+0 0 31915
+S
+#31915
+The Fountain Room~
+~
+~
+This place is called the fountain room for a very good reason: every corner,
+every wall has a fountain mounted on it.  Each fountain dispenses a different
+kind of beverage giving patrons something different to enjoy every time they
+come.  The fountain are flowing continuously, draining into several different
+holes in the ground.  The owner does not seem to be concerned about waste
+apparently.  The owner is so spirited in the selling of beverages, the counter
+is in a small wading pool of an unfamiliar liquid and the owner stands right
+behind it.  Type 'list' for some beverages to enjoy.
+~
+0 1024 0
+Rd     0
+D5
+~
+~
+0 0 31914
+S
+#31916
+Bottom of the Staircase~
+~
+~
+You have reached the bottom of the stairwell and from here you can see the
+blue spotlights shining up and into the aquarium.  On the bottom of the
+aquarium are watersnakes, preying upon smaller creaturs courageous enough to
+venture to the bottom.  There is only one other path to travel down and that is
+to the south.
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 31917
+D4
+~
+~
+0 0 31909
+S
+#31917
+Hall of Indecision~
+~
+~
+This room seems more like a cage than an actual room with bars covering every
+area of the walls except for the passage back to the north and two identical
+doors to the east and the south.  A strange looking man stands by the two
+doors wearing a pair of shades.  Looking past the bars, there is infinite
+darkness.  There really does not seem to be much out there and the only paths
+to take are the ones mentioned before.  Two statues stand by the two doors.
+One statue of a deity of deception and another of a deity of manipulation.
+Neither could bear good news for the paths behind the doors.  You must choose
+to either go back or prepare to make a choice that could have severe
+consequences.
+~
+0 131078 0
+Rd     0
+D0
+~
+~
+0 0 31916
+D1
+~
+~
+3 0 31937
+D2
+~
+~
+3 0 31925
+S
+#31918
+A Mirrored Hallway~
+~
+~
+A hallway begins here with walls and ceilings that are a complete continuous
+piece of reflective glass.  You notice the mirrors seem a bit odd and do not
+look like the regular mirrors you are used to.  They appear to have a dark tint
+to them.  You notice passer-by's who are just standing in front of a wall and
+staring into it intently.  They seem to have been there for a very long time.
+It probably would not be wise to disturb them.  Lighting is provided from the
+previous room and the light is merely reflected off the surfaces down 
+throughout the hallway.
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 31909
+D2
+~
+~
+0 0 31924
+D3
+~
+~
+0 0 31919
+S
+#31919
+A Mirrored Hallway~
+~
+~
+The mirrors seem endless and continue down to this room as well.  You can't
+help but stare a bit at your reflection.  In some angles you seem to be
+twenty times more attractive than normal and yet in others you appear to be
+fifty years older than you are.  What is going on here?  You realize now it
+is not hard to get lost in an attractive representation of yourself and lose
+track of time altogether.  This is one trap you must not fall into.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31918
+D3
+~
+~
+0 0 31920
+S
+#31920
+A Mirrored Hallway~
+~
+~
+The continuous row of mirrors finally ends in this room, giving way to
+the plain cold hard steel look that dominates the rest of this area.  Having
+the will to pull your gaze from the mirrors you notice a glass door to the
+south with a lady sitting behind a desk: a receptionist of some sort. 
+Further to the west lies some rubble as if construction was never completed
+here.  However, there is a hole just big enough for one person to craw
+through.  There would be no point to exploring this area except that there
+are lights coming from beyond the rubble.  You look DOWN and see something
+moving in the shadows.  
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 31919
+D2
+~
+~
+3 0 31922
+D5
+~
+~
+0 0 31921
+S
+#31921
+A Construction Site~
+~
+~
+It looks as if construction was supposed to occur hear, extending the
+hallway even further west.  However, something must have happened to
+collapse this end of the tunnel and shielding it from the rest of the area
+by a enormous pile of boulders.  This room appears to be forgotten about,
+but a singular construction flood light does give this room tons of
+lighting.  With all this lighting you can make out a figure hunched over in
+the corner.  Picks and other tools lie around this room and a large
+wheelbarrow has been knocked on its side.  You look HOLE to make sure your
+entrance here isn't blocked as you disturbed some rubble comming thru.  
+~
+0 134610948 0
+Rd     0
+S
+#31922
+A Lobby~
+~
+~
+A lobby is here for people to wait for meetings to close and pick up their
+respective parties from inside.  A receptionist sits before the doors, 
+controlling the flow of traffic and preventing intruders from entering in the
+midst of a meeting.  The doors seem to be currently open, indicating no
+meeting in session and therefore, anyone is free to just walk in and take a
+tour.  Two couches line either side of the room so that waiting is not done
+in discomfort.  The receptionist does not seem too happy and you feel its
+best not to trust what the receptionist tells you.  Merely observing whether
+or not a meeting seems to be in session would probably be the best way to
+go.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 31920
+D2
+~
+~
+0 0 31923
+S
+#31923
+A Meeting Chamber~
+~
+~
+This is an enormous meeting room with an ebony meeting table sitting in the
+center.  The table probably sits around 20 people with more chairs radiating
+from the middle.  These other chairs belong to assitants and other audience
+members whose interests maybe represented here.  It seems to be currently
+unoccupied and the janitorial service has kept it in great condition.  Large
+banners are strung across the walls displaying the emblem of the Lies,
+Manipulation and Deceit religion.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31922
+S
+#31924
+Wicked Food Emporium~
+~
+~
+This is where all the people come to purchase their food and chat when they
+have the opportunity and time.  This food store would fail a sanitation
+inspection miserably with hundreds of rats and mice crawling around the
+floors, the cabinets and the food showcases.  Fortunately there has been no
+reports of deaths or serious illnesses resulting from the food, or at least
+not yet.
+Type 'list' for items you may purchase.
+~
+0 132096 0
+Rd     0
+D0
+~
+~
+0 0 31918
+S
+#31925
+A Paved Road~
+~
+~
+Stepping in from the chosen door, you find yourself outside and in the middle
+of a park like area covered in dark black trees and plenty of bushes to add
+to the foliage.  Trees block your path to the east and west and the only
+path seems to be to the south.  Vines from the trees have grown onto the path
+and it will be no easy trek to the south.  The door from which you came has
+suddenly disappeared.  Oh well, guess you will have to find another way out of
+here.
+~
+0 131078 1
+Rd     0
+D2
+~
+~
+0 0 31926
+S
+#31926
+At a Crossroad~
+~
+~
+Walking along the path, you've reached a crossroads of sort.  There are 3
+paths leading from here.  One back toward the north, another to the east and
+yet another going west.  In the east-west direction, all you can see are
+tall trees with black leaves, blocking out the sun.  Bushes and ivies have
+grown onto the path and makes it very hard to travel. 
+~
+0 131074 1
+Rd     0
+D0
+~
+~
+0 0 31925
+D1
+~
+~
+0 0 31927
+D3
+~
+~
+0 0 31931
+S
+#31927
+Along a Forest Path~
+~
+~
+The path continues further east with trees still towering over you to the
+north and to the south.  However, a rusted unlatched gate stands at a break
+in the trees to the south.  Above the gate reads 'Shadowhaven Park'.  It is
+apparently a park of some sort and perhaps worthy of visiting.  Animals are
+scurrying about on the road, running for cover as you approach.  Crows fly
+overhead and some occasionally swoop right over you head almost running into
+your forehead.
+~
+0 131074 1
+Rd     0
+D1
+~
+~
+0 0 31928
+D2
+~
+~
+0 0 31929
+D3
+~
+~
+0 0 31926
+S
+#31928
+Along a Forest Path~
+~
+~
+The path looks exactly the same as the path you've just come from.  There are
+very few differences.  The only striking difference is that there is a dirty
+path leading north.  The trees that once stood in the path's place appear to
+have been cut down and now only stumps sit in their place.  The south is
+completely blocked, but the path extends toward the east.
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 31935
+D1
+~
+~
+0 0 31934
+D3
+~
+~
+0 0 31927
+S
+#31929
+A Small Park~
+~
+~
+This area barely fits the bill for the title of park.  There are a few benches,
+but most of them are falling apart and whats left of them are so littered
+with trash, not even a rat would dare sit on it.  The same thing goes for the
+paved roads: littered from east to west, north to south with empty popcorn
+containers and drink cups.  The road breaks off to the west and you seem to see
+a man actually sitting on one of those disgusting benches.
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 31927
+D3
+~
+~
+0 0 31930
+S
+#31930
+A Sitting Area~
+~
+~
+Benches are lined around what used to be a park fountain.  The fountain is
+now in complete disarray.  It has dried entirely and the sculpture that once
+capped the fountain has broken off and now sits at the bottom of the fountain
+pool.  Tall dark trees surround the sitting area providing shade, perhaps too
+much shade as there is absolutely no sunlight passing through.  There is one
+lone visitor of this park and that man sits humming to himself on a bench to
+the north.
+~
+0 393218 1
+Rd     0
+D1
+~
+~
+0 0 31929
+S
+#31931
+Corner of the Forest~
+~
+~
+The path that once existed is no more.  The west has been blocked off by
+a wall of bushes and ivies, not to mention the trees that line up behind them.
+There is, however, a break in the growth to the south.  It is pitch black in
+that direction so you cannot make out what you would expect going down that way.
+This area is apparently devoid of animal life, unlike the other side of the
+path.
+~
+0 131074 1
+Rd     0
+D1
+~
+~
+0 0 31926
+D2
+~
+~
+0 0 31932
+S
+#31932
+On a Wooden Platform~
+~
+~
+Still pulling out the sharp pricks of the bushes, you find yourself standing
+on a vast wooden platform that stretches out in all directions for as far
+as you can see.  Unfortunately, you can not see very far at all as a dense
+fog has rolled in and surrounded the area limiting visibility greatly.  Out
+of the corner of your eye you catch something of tremendous interest and
+curiosity.  A large door seems to be floating in thin air.  It is floating
+just low enough so that flight is not necessary to enter.  The door is a pale
+green color with reptiles of all sorts carved into it.  The break in the
+vegetation you came from is still visible and offers an exit if this proves
+to be too overwhelming.
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 31931
+D2
+~
+~
+7 31908 31933
+S
+#31933
+A Swirling Vortex~
+~
+~
+Rainbow colors swirl across the sky in the room without a floor.  You are
+basically walking on thin air, perhaps a layer of magical power provides the
+support.  The swirls make your head dizzy but you are still able to make out
+two enormous glowing gates floating randomly in the sky.  A sign also dances
+above the ground.  Looking back to the entrance, it is also just levitating
+in the air.
+~
+0 131078 0
+Rd     0
+S
+#31934
+End of the Path~
+~
+~
+You have run into the end of the forest path.  Trees and bushes now line the
+three remaining directions and there is no possible way to get past them.
+It appears maybe they were building a road somewhere, but the work has been
+halted for a long time.  The only way to go is back west.
+~
+0 131074 1
+Rd     0
+D3
+~
+~
+0 0 31928
+S
+#31935
+On a Side Path~
+~
+~
+Although the path is covered with roots and vines obstructing safe walking,
+you have managed to make it this far.  The path has come to and end and before
+you stands a small shack that is extremely rundown.  The roof looks as if it
+is almost ready to collapse in on itself.  The front door is merely a screen,
+but it is too dark inside for you to make anything out.  The trees have gotten
+smaller here, probably due to the building and lack of sunlight.  It would
+be hard to approach the shack quietly as it is almost impossible to take a
+step without crunching some leaves or brushing up against some bramble.
+~
+0 393218 1
+Rd     0
+D1
+~
+~
+3 0 31936
+D2
+~
+~
+0 0 31928
+S
+#31936
+An Ugly Shack~
+~
+~
+Corners of this shack are covered in cobwebs and large scary spiders crawl
+all over these areas.  Snakes have almost found their way into this shack and
+are making their way toward the kitchen to find something to eat.  Wicker
+furniture stand here, most having large holes in them, making them utterly
+useless.  The door is about to fall off its hinges, although it really makes
+no difference since the door doesn't shut all the way anyways.  The windows
+have been boarded up and the spare nails still sit on the floor, waiting to
+pierce someone's unprotected foot.  You try to cover your mouth and nose to
+prevent serious dust inhalation.  Some of the wood flooring has also given
+way to the natural ground, much like potholes in roads.
+~
+0 393218 0
+Rd     0
+D3
+~
+~
+3 0 31935
+S
+#31937
+A Lava Pit~
+~
+~
+What paradise is this??  You are *this* close to being burned by the lava
+rivers surrounding you.  You stand on a huge piece of rock surrounded by
+scorching lava and the only thing connecting these random pieces of rock
+are iron boards.  Needless to say the metal conducts the heat very well and
+could very well melt the soles of your footwear.  It is apparent now that the
+man before the doors had been lying.  Well, there is probably a lesson to be
+learned from this: distrust everything, trust nothing!
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31938
+D1
+~
+~
+0 0 31939
+D3
+~
+~
+3 0 31917
+S
+#31938
+An Empty Rock~
+~
+~
+There is probably a reason this particular rock platform has been connected
+to the rest of the island structure.  However, as of this moment there is
+absolutely nothing here.  From here you can see most of the lava pit and there
+seem to be workers across the rivers.  The extreme heat makes sweat flow
+down your head like a waterfall.  It does not help you are wearing such heavy
+equipment.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31937
+S
+#31939
+A Small Rock~
+~
+~
+This rock is much to small to build anything here or have any type of activity
+for that matter.  It seems to be just a middle step to get to the other large
+rocks in the area.  Looking up and to the east you can make out a figure
+sitting high atop a ledge.  You can not really make out much more than that.
+There is no relief from this tremendous heat except to shed more and more
+of your armor and clothes.  Every once in awhile you seem flames jump from
+the lava and onto the rock, charring little by little.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31940
+D2
+~
+~
+0 0 31943
+D3
+~
+~
+0 0 31937
+S
+#31940
+A Slave Camp~
+~
+~
+Immediately after you step onto this rock island, you can hear shouting,
+yelling and the cracking of whips.  As you take a look around you realize
+these men are hard at work as you saw from afar, but they are being forced.
+This is a slave camp!  The poor slaves are mining precious metals and doing
+some building as well.  It looks as if they are trying to divert some of the
+lava river flow so that island maybe crossed much more easily.  Axes and
+picks lie around the area.  Perhaps you should pick one up and help the slaves
+finish their work.  A ladder has been extended upwards to a ledge jutting
+out from one of the walls.  Another iron bridge connects this island to yet
+another large rock to the south.
+~
+0 393218 0
+Rd     0
+D2
+~
+~
+0 0 31941
+D3
+~
+~
+0 0 31939
+D4
+~
+~
+0 0 31944
+S
+#31941
+Another Slave Camp~
+~
+~
+Even after watching the slaves at work, you are still stunned as you see more
+slaves working in this area.  The slaves here seem to be using the hot lava
+to melt some kind of metal which is then transported to forges set up on this
+rock platform.  Blacksmiths sit at the forges making weapons from the material
+they receive.  Two large buckets sit in the corner.  One is marked 'Good', and
+the other is marked 'Bad'.  In each are a pile of weapons and armor.  A large
+wooden box sits on the floor in the middle with a sign reading 'To Temple'.
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31940
+D2
+~
+~
+0 0 31942
+S
+#31942
+The Slave Control Center~
+~
+~
+This is the heart of the slave encampment.  This is where security guards
+congregate to enforce the laws of the slave camps en masse.  Various types of
+armor and weapons hang from hooks around the room.  To the west is a large
+cell that is guarded by four large trolls.  Above the cell reads 'Maximum
+Security'.  Benches are also built into this room to allow for guards to take
+a break once in awhile.  To the south are security monitors and a security
+station encased in glass.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31941
+D2
+~
+~
+0 0 31946
+D3
+~
+~
+7 0 31945
+S
+#31943
+A Slave Prison~
+~
+~
+Surrounding you in almost every directions are prison cells.  These cells are
+probably the slaves homes when there is no work to be done.  As you walk
+along looking into the cells, the prisoners reach out to you for food and for
+help.  Stern guards walk through this area regularly, making sure the prisoners
+are behaving themselves.  The slaves are trapped on tiny rocks that surround
+this island.  It is really curious how this area became shaped in this
+manner.  For the prisoners, it is either die in the lava or sit on the rocks
+as they are told.
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 31939
+S
+#31944
+Slave Master's Quarters~
+~
+~
+This is the living area of the slave master.  From here he is able to sit in
+his great throne chair and look down upon his slaves and the work they are
+doing.  Lavish furniture decorate this ledge.  Gold statues of past slave
+drivers stand along the walls.  Ivory pots are planted with menancing venus
+fly traps that are much larger than the common variety.  Fiery red drapes hang
+on the rock faces with a strange emblem resembling fire.
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 31940
+S
+#31945
+Maximum Security Cell~
+~
+~
+The maximum security cell has four guards in the cell at all times, occupying
+the corners of the room.  There are then four armed guards on the outside as
+well in case the four in here can't handle the masses.  There is pretty much
+no rules or laws in the maximum security cell.  The guards actually get a 
+kick out of seeing bloody fights and even the occasional death.  It is just
+one less slave they have to be concerned with.  A cabinet of shackles and
+handcuffs are mounted in the backwall.  It is, of course, locked and requires
+one of the outside guards to provide a key.  The room is encased in solid
+steel, making air ventilation close to nonexistant not to mention the extreme
+temperatures due to the heat conductivity.
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+7 0 31942
+S
+#31946
+The Guard Station~
+~
+~
+Several monitors are hanging from the ceiling, each showing a different angle
+of the slave encampments you crossed getting here.  There is probably enough
+room in here for about 4 guards.  Three seats are positioned at the circular
+control panel and hundreds of lights are blinking and flashing at the same
+time.  It probably takes a minimum of three guards just to manage all of the
+different alerts.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31942
+S
+#31947
+A Domed Hall~
+~
+~
+This hall splits off from the main passage to the south.  The ceilings of this
+part of the temple is gorgeous.  The ceiling is a high rising dome, with
+paintings of vampires, bats and sorts of dark creatures.  You feel eyes
+watching you from above as you walk down the hall.  You can hear soft whispers
+all around you and the acoustics of this domed hallway help in carrying these
+voices.  The hallway continues on to the east, but there is also a smaller, less
+grand passage to the north.
+~
+0 394240 0
+Rd     0
+D0
+~
+~
+0 0 31948
+D1
+~
+~
+0 0 31951
+D2
+~
+~
+0 0 31903
+S
+#31948
+A Dim Hallway~
+~
+~
+A hallway begins here and continues far down to the west.  You are surrounded
+by steel plating and it feels more like walking down a submarine than a
+temple.  Flourescent lights run down the halls and gives the hallway an erie
+glow.
+~
+0 394240 0
+Rd     0
+D2
+~
+~
+0 0 31947
+D3
+~
+~
+0 0 31949
+S
+#31949
+A Dim Hallway~
+~
+~
+The hall continues but seems to end fairly soon.  The west is hidden by a 
+large cloth separating the hallway from probably a room.  As you see people
+walking in and out, all are chanting to themselves and making strange hand
+or feet movements, almost as if they are practicing something.  Everyone seems
+very preoccupied so they probably do not have the time t answer your
+questions about their actions.
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+0 0 31948
+D3
+~
+~
+0 0 31950
+S
+#31950
+Dojo of Deception~
+~
+~
+The practice area has been designed to imitate the ancient Japanese dojo's, or
+martial arts practice arenas.  The practice master, Jokichi seems to be of 
+japanese descent and wears a bandana across his forehead.  All the people who
+have arrived ahead of you stand in a long line waiting to absorb some of this
+great master's knowledge.  Mirrors line the back wall so that you can see
+your reflection very clearly while you practice your new skills.  A variety
+of mats have also been set out, ensuring the safety of the students.  To
+get more help on practicing skills type HELP PRAC.
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+0 0 31949
+S
+#31951
+A Domed Hall~
+~
+~
+The domed hall does not lose any of its magnificence as you continue down the
+hall.  The expanse of this hall impresses you further as it must have taken
+years to construct.  Rugs and carpets are draped along the walls, adding to the
+impressive decor of this hallway.  There is an archway to the north that leads
+to yet another area of this immense temple.
+~
+0 394240 0
+Rd     0
+D0
+~
+~
+0 0 31955
+D1
+~
+~
+0 0 31952
+D3
+~
+~
+0 0 31947
+S
+#31952
+A Domed Hall~
+~
+~
+The domed hallway slowly ends here, sloping downward til it reaches a height
+of about 5 feet above your head.  The ornate decorations of the hall have slwoly
+changed into war medals and grand weapons of battle.  To the east seems to be
+a lobby of some sort.
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+0 0 31953
+D3
+~
+~
+0 0 31951
+S
+#31953
+Entrance to a Training Hall~
+~
+~
+A variety of furniture adorns this room.  A bookshelf stands in the corner
+with a large number of different books to improve ones intelligence.  On the
+other side of the room are several racks of weights, probably to help a
+warriors strength.  These are joined by jump ropes, treadmills and parallel
+bars.  Men coming out from the north are dripping with sweat and have
+thoroughly soaked through their chainmail shirts and other armor.  You better
+be prepared for a workout!
+~
+0 394240 0
+Rd     0
+D0
+~
+~
+0 0 31954
+D3
+~
+~
+0 0 31952
+S
+#31954
+Training Hall of Trickery~
+~
+~
+The air here is saturated with the smell of sweat.  It is almost unbearable, 
+but you know it is a small price to pay for the gains that are possible in this
+gym.  After all, no pain, no gain.  The equipment found in the entrance are also
+sitting here.  The gym master welcomes you to use any equipment you need but
+signs on the wall ask that you be courteous to others.  The walls and floors 
+are cushioned with straw mats so there is not too much damage in the process
+of training.  A giant drum sits in the northeast corner, being played by a
+half-naked lizardman.  It provides a simple beat with which many of the
+adventurers train.
+To get further help on training, type HELP TRAIN.
+~
+0 394240 0
+Rd     0
+D2
+~
+~
+0 0 31953
+S
+#31955
+A Preparation Room~
+~
+~
+A stern faced guard stands by a pair of steel gates.  To the north lies the
+training battle grounds of this temple.  Once you enter, your life will be at
+risk as you battle to gain valuable experience in the ways of war.  Plenty of
+weapons have been gathered here and armor is also available for further
+protection.  Large murals of young warriors accomplishing tremendous feats
+provide a backdrop for this room of preparation.  Large bound manuals are
+sitting on pedestals, giving last minute guidelines and advice for the
+battleground you are about to enter.
+ 
+Type READ SIGN before you do anything else!
+~
+0 394244 0
+Rd     0
+D0
+~
+~
+3 0 31956
+D2
+~
+~
+0 0 31951
+S
+#31956
+An Ebony Path~
+~
+~
+You stand in front of a brick-like path, however the 'bricks' are made of the
+blackest ebony you have ever seen.  Large brick walls extend on either side of
+you as far as you can see.  The walls are probably 15 ft tall which is
+much too tall for you to see over.  A garden has been planted along the path,
+which is dominated by a rare black rose.  Vultures circle over head, making
+you think there is something dead or rotting somewhere close by.
+ 
+In the event you did not read the sign, you can escape battle by typing 'flee'.
+You should also type CON <mobname> to find out how difficult it would be to
+kill.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31957
+D2
+~
+~
+3 0 31955
+S
+#31957
+An Ebony Path~
+~
+~
+The current segment of the path is nearly identical to the previous one.  One
+noticeable difference is the large spikes that have been added to the top of
+the walls in this segment.  They seem to continue all the way down.  Perhaps
+the wall has not been fully completed.  The vultures are still above and they
+seem to be following you.  Do they know something you don't?
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31958
+D2
+~
+~
+0 0 31956
+S
+#31958
+An Ebony Path~
+~
+~
+The walls that once formed a corridor has now opened on the east side.  A
+chain link fence has been broken down and there is a large hole that is just
+big enough for someone to step through.  From the east you can hear loud
+explosions and angry shouting.  The ebony path still continues to the north.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31959
+D1
+~
+~
+0 0 31965
+D2
+~
+~
+0 0 31957
+S
+#31959
+An Ebony Path~
+~
+~
+Though the wall barricade has resumed on the eastern side, the west side now
+has a break in it and a large iron gate stands in its place.  The gate has
+ugly ivies and vines growing all over it and strangely, it stands open.
+Looking past the iron gate you see a large dark mansion.  The vegetation and
+garden in the front yard has all died and now naked trees and weeds makes
+the path to the mansion look extremely perilous and wicked.  In the distance
+to the north you see a tower extending up into the sky.  It too seems very
+dark and dangerous.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31960
+D2
+~
+~
+0 0 31958
+S
+#31960
+Drawbridge Before a Tower~
+~
+~
+You stand on a smooth onyx drawbridge overlooking a massive moat.  Looking down,
+you see some hideous creatures swimming about and some even jump out of the
+water at you.  The water is murky and smells of rotting flesh.  The vultures
+seem to have disappeared, not daring to come this close to this tower.
+Looking up, you see that the tower has no noticeable windows or any other
+type of entrances.  The tower is constructed of a smooth black metal making
+it impossible to scale.  A black mist flows out from the tower entrance, hiding
+your feet and your path.
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 31961
+D2
+~
+~
+0 0 31959
+S
+#31961
+In the Tower of Malevolence~
+~
+~
+You have entered a large circular tower and stand at the bottom floor.  The
+interior of the tower is made of the same material as the exterior but has not
+been polished to give it the same shine or smoothness.  A spiral staircase of
+bone extends up as far as the eye can see.  Several skeletons are hanging
+around the room by their arms which have been clamped in shackles.  Dark
+black owls with glowing red eyes sit on perches that have been constructed on
+the sides of the tower watching your ever move.
+~
+0 4 0
+Rd     0
+D2
+~
+~
+0 0 31960
+D4
+~
+~
+0 0 31962
+S
+#31962
+Up a Spiral Staircase~
+~
+~
+Climbing the stairs constructed of human bones, you hear tremendous cracking
+as your weight crushes some of the remains.  There are no handle bars on the
+sides of the stairs and therefore, you must be very cautious in your steps.
+The mist still follows you up the stairs, but have shallowed somewhat to allow
+you to make out your feet.  The owls have still kept their beady little eyes on
+you.
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31963
+D5
+~
+~
+0 0 31961
+S
+#31963
+Up a Spiral Staircase~
+~
+~
+As you get closer to the top of the tower, voices begin to fill your head and
+they seem to get louder with every step.  The stairs also seem to be shifting
+somewhat and you find it very difficult to maintain your balance.  The owls
+have disappeared but they have been replaced with large spikes.  A false move
+and you could find yourself as a new ornament on the walls of this tower.
+~
+0 4 0
+Rd     0
+D4
+~
+~
+0 0 31964
+D5
+~
+~
+0 0 31962
+S
+#31964
+Tower Overlook~
+~
+~
+From the top of the tower, you can see far across the horizon through a single
+window.  The window is protected by a transparent glass sheet, so that you don't
+mindlessly fall out of the window - it's a long way down.  A glass sphere stands
+in the middle of the room on top of a wooden pedestal.  The sphere is
+completely dark right now, showing absolutely nothing.  A throne sits against
+the backwall with a large black vulture perched on its arm.  Strange symbols
+are etched into the ground around the sphere giving you an ominous feeling.
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 31963
+S
+#31965
+A Dirt Road~
+~
+~
+Crawling through the hole in the fence, you arrive on a dirt road.  This area
+is devoid of plant life.  Everywhere you look is dirt and large rocks.  What
+seems like a path is merely patches of dirt that have been cleared of pebbles
+and rocks.  The explosions and the shouting has gotten significantly louder.
+Far off in the distance, you can actually see explosions going off.  The road
+continues on to the north and winds along for awhile.
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 31966
+D3
+~
+~
+0 0 31958
+S
+#31966
+A Winding Dirt Road~
+~
+~
+The dirt path continues.  Heavy winds blow across the dirt plains, creating
+large annoying dust clouds.  Looking closer at the ground, it appears there
+are large track marks from some form of vehicle.  Rocks and boulders are piled
+high to your north and south, preventing travel in those directions.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31967
+D2
+~
+~
+0 0 31965
+S
+#31967
+A Winding Dirt Road~
+~
+~
+The tracks continue here and they seem pretty fresh marks.  The ground shakes
+with every large explosing you hear.  Warning signs have been placed by the
+side of the road, warning of bodily harm.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31968
+D3
+~
+~
+0 0 31966
+S
+#31968
+A T-Junction~
+~
+~
+The road ends to the east, but now you are presented with a different choice.
+Should you take the path to the north or the path to the south.  At this point,
+you see the first signs of vegetation to the north.  Grass seems to have
+survived and is growing well in that direction.  A path also leads down a
+steep slope.  The tracks make the turn downward.  The east is blocked by barbed
+wire.
+~
+0 1028 0
+Rd     0
+D0
+~
+~
+0 0 31969
+D3
+~
+~
+0 0 31967
+D5
+~
+~
+0 0 31970
+S
+#31969
+A Grassy Field~
+~
+~
+This is the greenest grassiest field you have ever seen.  The grass here
+seems to almost be alive as it actually looks like it is breathing.  Nothing
+could live here as the grass is so thick it would sufficate anything.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31968
+S
+#31970
+A Training Field~
+~
+~
+You have arrived at a large training field where men dressed in military
+fatigue are practicing combat moves.  A training commander stands here barking
+at the trainees and beating them hard over the heads with weapons everytime
+they catch a mistake.  Mean dogs have also been chained up by the fence 
+making sure the trainees are not going to escape.  The explosions and 
+rumbling do not seem to phase any of the trainees or trainers.  The training
+fields extend to the west and the blasts that is causing so much raucus are
+coming from the east.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31972
+D2
+~
+~
+0 0 31974
+D3
+~
+~
+0 0 31971
+D4
+~
+~
+0 0 31968
+S
+#31971
+A Training Field~
+~
+~
+More trainees have been lined up in rows in this section of the field.  These
+trainees are working on different skills.  While the others were working on
+physical combat, these men have been equipped with weapons loaded with real live
+bullets.  The swords and blades these men are using are also the dull fake kind.
+One blow could knock your head right off.  A large tent sits on the southern
+field.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31970
+D2
+~
+~
+0 0 31973
+S
+#31972
+A Blast Field~
+~
+~
+BOOM!  You better run for cover.  Various armaments are being tested in this
+field.  Almost everyone here is wearing protective clothing as they set off
+some very powerful explosives.  Catapults are also situated here, firing fiery
+boulders.  This blast field has been strategically placed, with mountains
+protecting three sides.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31975
+D3
+~
+~
+0 0 31970
+S
+#31973
+A Terrorist Dwelling~
+~
+~
+These are the barracks that the trainee's come to after a long day of training.
+Of course, there are very few amenities.  The toilet is in the back of the
+room with no walls for protection.  There is no shower as there is a hose
+right outside.  There are bunk beads lining the room and they are placed as
+close to each other as possible to maximize the number of trainees able to
+live here.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31971
+S
+#31974
+A Mountain Path~
+~
+~
+You are out of breath as you make it to a level path on the mountainside.  The
+path is very narrow so it is necessary to plot your foot extremely carefully
+as you cross the mountain face.  Small birds fly around your head at this
+altitude and you must duck occasionally to avoid being an obstacle to their
+flight.  The flicker of torches is noticeable to the east.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31970
+D1
+~
+~
+0 0 31975
+S
+#31975
+Cave Entrance~
+~
+~
+The mountain has given way to a large cave.  Torches placed along the sides of
+the cave provide just enough illumination for you to make out a path.  The
+rock walls are extremely thick and provide magnificent protection for the cave
+dwellers.  Cave guards stand at the entrance, carefully scrutinizing all that
+enter the cave.  The path to the west follows along the mountain face and is
+extremely narrow.
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 31972
+D2
+~
+~
+0 0 31978
+D3
+~
+~
+0 0 31974
+S
+#31976
+A Cave Hideout~
+~
+~
+You stand in a corridor in the northern part of the cave.  Men stand in every
+corner of the corridor, watching every movement.  The cave is currently under
+renovations.  The renovations seem to be at a standstill probably due to the
+plans they are working on.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31977
+S
+#31977
+A Cave Armory~
+~
+~
+You've stepped into a massive storehouse of weapons and armor.  Blades, clubs
+and projectiles adorn the walls and sit on the many counters.  Armor hang in
+the many closets built into the cavern walls.  An armory chief stands in the
+room, assigning armor and weapons and making sure they are eventually 
+returned.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31976
+D3
+~
+~
+0 0 31978
+S
+#31978
+A Cave Hideout~
+~
+~
+As you walk along a hallway in this cave hideout, you notice several people
+scurrying about, studying and discussiong large stacks of documents.  All
+along the walls are maps, diagrams and other writing.  Large animal bones are
+sitting on the ground, most likely left over after some meal.  The floor is
+covered in thick animal hide, providing a comfortable walking medium.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31975
+D1
+~
+~
+0 0 31977
+D3
+~
+~
+0 0 31979
+S
+#31979
+A Cave Den~
+~
+~
+A stone table has been constructed and placed against of the cave walls.
+Plates and pots sit on the table, not cleaned after a large meal.  Large 
+boulders serve as seats and there is a small fire going in the middle of the
+room surrounded by stones.  Maps and other diagrams have been hung on the walls.
+It seems as if these cave dwellers are planning some kind of assault.  The
+maps look unfamiliar to you so you couldn't do anything even if you wanted to.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31978
+S
+#31980
+Before the Temple doors~
+~
+~
+The Doors for the Temple of LMD appears to be carved from gold.  The area
+appears to be beautiful, but upon further inspection , the vegitation is
+fake, the birds are fake, everything is fake, even the painted gold doors to
+the temple.  This is very Deceiving indeed.  
+~
+0 1028 0
+Rd     0
+D0
+~
+~
+0 0 31905
+D2
+~
+~
+0 0 31981
+S
+#31981
+A path of Lies~
+~
+~
+You are traveling on a Path of Lies, the whispers in the room fill your
+mind with lies.  The path north continues to the LMD temple while south
+takes you back to Methidoral.  
+~
+0 1028 0
+Rd     0
+D0
+~
+~
+0 0 31980
+D2
+~
+~
+0 0 25018
+S
+#0
+
+
+
+#SPECIALS
+M 31901 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 31904 1 31901
+O 0 31905 0 31903
+O 0 31979 0 31903
+M 0 31901 1 31905
+O 0 31902 0 31905
+M 0 31902 1 31907
+O 0 31981 0 31909
+M 0 31911 1 31911
+M 0 31915 1 31915
+G 0 31915 0
+M 0 31908 1 31916
+O 0 31917 0 31917
+M 0 31900 2 31917
+O 0 31921 0 31921
+M 0 31921 1 31921
+M 0 31923 1 31923
+E 0 31923 0 12
+M 0 31924 1 31924
+G 0 31924 0
+M 0 31928 1 31925
+M 0 31927 1 31927
+M 0 31928 1 31928
+M 0 31929 1 31929
+M 0 31930 1 31930
+M 0 31927 1 31931
+M 0 31926 1 31931
+O 0 31910 0 31933
+O 0 31911 0 31933
+M 0 31926 1 31934
+M 0 31936 1 31936
+G 0 31906 0
+M 0 31943 1 31937
+M 0 31939 1 31938
+M 0 31939 2 31939
+M 0 31940 2 31940
+M 0 31940 2 31940
+M 0 31941 1 31940
+M 0 31943 1 31940
+M 0 31940 2 31941
+M 0 31941 1 31941
+M 0 31943 2 31942
+M 0 31943 2 31942
+M 0 31943 1 31943
+M 0 31944 1 31944
+M 0 31943 2 31945
+M 0 31943 2 31945
+M 0 31942 1 31946
+M 0 31943 1 31946
+O 0 31977 0 31947
+M 0 31950 1 31950
+O 0 31978 0 31951
+M 0 31954 1 31954
+O 0 31922 0 31955
+O 0 31925 0 31955
+M 0 31958 1 31956
+M 0 31959 2 31956
+M 0 31960 1 31957
+M 0 31959 1 31957
+M 0 31959 1 31957
+O 0 31980 0 31958
+M 0 31977 1 31958
+M 0 31958 5 31958
+M 0 31959 1 31959
+M 0 31959 1 31959
+M 0 31959 1 31959
+M 0 31960 1 31960
+M 0 31961 2 31961
+M 0 31961 1 31961
+M 0 31961 1 31962
+M 0 31961 1 31962
+M 0 31961 2 31963
+M 0 31964 1 31964
+E 0 31964 0 22
+M 0 31959 3 31966
+M 0 31967 2 31967
+M 0 31955 3 31969
+M 0 31970 1 31970
+M 0 31970 1 31971
+M 0 31972 2 31971
+M 0 31971 2 31972
+E 0 31972 0 9
+M 0 31973 1 31973
+M 0 31976 1 31975
+M 0 31976 1 31975
+M 0 31976 2 31976
+E 0 31952 0 6
+M 0 31975 1 31977
+E 0 31951 0 6
+M 0 31974 1 31977
+M 0 31974 1 31978
+S
+
+
+
+#SHOPS
+31915 17 0 0 0 0 150 50 0 24
+31924 19 0 0 0 0 150 50 0 24
+0
+
+
+
+#$

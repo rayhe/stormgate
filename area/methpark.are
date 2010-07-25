@@ -1,0 +1,4159 @@
+#AREADATA
+Name        { 75-95} Meth City Park(F)~
+Builders    None~
+VNUMs       15301 15450
+Security    100
+Recall      26002
+Flags       64
+Version     107
+Creator     Manaux~
+Llevel      0
+Ulevel      0
+Sounds      Rap Music echoes from some unknown source.~
+Music       tiamat.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#15301
+mugger~
+a mugger~
+A muggers stands here waiting for someone to rob.
+~
+A long-haired, lanky punk wearing all black.  From the look of greed on
+his face, he doesn't have your good health in mind.  
+~
+33 33554440 65536 0 0 -100 S
+98 1 196 196 24000 24000d0+0 0d0+98000
+980 0 0
+0 0 0
+0 0 0
+>fight_prog 40~
+c 'power leak'
+~
+>fight_prog 20~
+slit
+~
+>fight_prog 15~
+emote dissappears suddenly.
+circle
+~
+|
+#15302
+paramedic medic nurse~
+The Medic~
+A paramedic stands here, healing those in need.
+~
+Wearing the latest fashion in white coveralls, the Medic smiles and
+points for you to take your place in one of the Handicap parking spots. 
+"I'll get to you as soon as I can, dearie", she says with a weary but
+soothing tone.  
+~
+11 0 17072160 540928 0 400 S
+120 1 240 240 40000 40000d0+0 0d0+3000
+1200 0 0
+0 0 2
+0 0 0
+#15303
+guy college student jason~
+Jason Downs~
+A college students stands over the fire, playing with his weiner.
+~
+~
+3 1280 1024 8192 0 -1000 S
+98 1 196 196 23000 23000d0+0 0d0+60000
+980 0 0
+0 0 1
+0 0 0
+>rand_prog 10~
+emote drinks some Tampico Juice.
+say I'm not feeling it.
+emote drinks some more Tampico Juice
+say OK, I'm frigging drunk, wow! This stuff
+say is great.
+~
+|
+#15304
+driver tow truck~
+the tow truck driver~
+The tow truck driver stands here, arguing with the woman.
+~
+This burly man is wearing overalls, and smells quite bad, not having
+showered or shaved in three or four days.  He moves a cigar from one side of
+his mouth to the other, obviously a nervous habit.  
+~
+3 0 0 0 0 -200 S
+89 1 178 178 27000 27000d0+0 0d0+89000
+890 0 0
+0 0 1
+0 0 0
+>speech_prog p my car four blocks!~
+emote looks annoyed.
+say well, listen here WoMaN,
+say One, it wasn't me who called you here!
+say Two, I don't set the prices, so GET OFF MY BACK!
+say Three, You seen really uptight, what's the matter,
+say your man not taking care of business?
+~
+|
+#15305
+woman~
+the woman driver~
+The woman is yelling at the tow truck driver extremely loudly!
+~
+A city-fied prissy woman dressed in a sharp cut grey pin-striped business
+suit.  Her brown hair is pulled back into a knot, making her eyes seem a bit
+witchy.  She is tapping her foot, obviously very irritated with something or
+someone.  
+~
+3 192 0 0 0 400 S
+84 1 168 168 26000 26000d0+0 0d0+84000
+840 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Hey, I don't care if you are the Only tow truck that works
+say on Saturday, I'm not going to spend 200 bucks to have you tow
+say my car four blocks!
+~
+>speech_prog p your man not taking care of business?~
+tap
+emote gets red with anger.
+say Listen here you, I don't have to take this crap from
+say a Stanky-ASS bastard like you!  Now unhook my car right now!
+~
+|
+#15306
+bum vagrant man sleeping~
+the bum~
+A smelly vagrant lies here, asleep.
+~
+Dirty shirt, filthy pants and raggedy shoes describes this 'thing'.  His
+hair is lank and pieces of leaves and stems are lodged all over him.  The
+bum's odor is enough to take your breath away.  
+~
+67 33685632 65536 0 0 100 S
+88 1 176 176 23000 23000d0+0 0d0+4
+880 0 0
+0 0 1
+2048 0 0
+#15307
+jogger man~
+the jogger~
+A jogger runs down the trail here.
+~
+A business man who has decided to shed his suit and tie for fashionable
+sweats and an expensive chrono piece on his fat wrist.  
+~
+65 128 0 0 0 300 S
+97 1 194 194 26000 26000d0+0 0d0+97000
+970 0 0
+0 0 0
+0 0 0
+#15308
+jogger woman female~
+a female jogger~
+A woman runs down the path here.
+~
+A sweaty, haughty house wife who has decided to get rid of her mid-age
+bulge by pounding it out on the footpaths in the Park.  She looks you over
+warily and sneers at what you wear.  
+~
+65 0 786432 0 0 500 S
+94 1 188 188 23500 23500d0+0 0d0+80000
+940 0 0
+0 0 0
+0 0 0
+#15309
+child~
+a child~
+A child plays in the grass here.
+~
+Little Janie smiles as you look at her.  She wears a grass stained white
+jumpsuit.  Her hair is pulled back into pig-tails, which bounce as she
+plays.  
+~
+65 0 262144 0 0 0 S
+85 1 170 170 16000 16000d0+0 0d0+0
+850 0 0
+0 0 2
+0 0 0
+#15310
+child~
+a child~
+A child chases a butterfly.
+~
+A hyperactive child, jittery with too much sugar and caffeine.  His face
+is smeared with chocolate.  
+~
+65 0 262144 0 0 200 S
+86 1 172 172 15600 15600d0+0 0d0+100
+860 0 0
+0 0 0
+0 0 0
+#15311
+mother~
+the mother~
+A mother looks after her children.
+~
+~
+65 0 262144 0 0 150 S
+90 1 180 180 20000 20000d0+0 0d0+0
+900 0 0
+0 0 2
+0 0 0
+#15312
+gardner man old~
+the gardner~
+A man wanders around here, tending to the plants.
+~
+~
+65 0 0 0 0 -200 S
+93 1 186 186 23000 23000d0+0 0d0+40000
+930 0 0
+0 0 1
+0 0 0
+#15313
+man drunken~
+A drunk~
+A drunken man stumbles around here.
+~
+~
+65 0 0 0 0 -400 S
+96 1 192 192 16000 16000d0+0 0d0+70000
+960 0 0
+0 0 0
+0 0 0
+#15314
+man toilet~
+the man~
+This man was urinating on the floor till you disturbed him.
+~
+One look tells you that this man is pissed, in more way than one!  He
+quickly fumbles and zips before turning around and attacking you.  He wears
+a gang jacket with funny green and gold colors.  
+~
+99 0 262160 0 0 -75 S
+92 1 184 184 22000 22000d0+0 0d0+0
+920 0 0
+0 0 1
+2048 0 0
+>fight_prog 10~
+say Pull my finger!
+emote lets a good one rip!
+cast stigeon
+~
+|
+#15315
+man puking drunk~
+the puking man~
+A drunk man is hunched over the toilet, puking his brains out.
+~
+From the smell and looks, he appears to be homeless, living here in the
+park.  He's dressed in shabby bell-bottom jeans, sandals, and a dirty
+t-shirt.  The drunk shudders and his face pales, not to mention the smell of
+alcohol that rolls off of him.  
+~
+67 128 0 0 0 0 S
+89 1 178 178 23000 23000d0+0 0d0+0
+890 0 0
+0 0 1
+0 0 0
+>rand_prog 3~
+say 'Damnimit, I'm not fealing sooo goood.
+puke
+say Oh god, not again...
+puke
+~
+>rand_prog 2~
+yell Oh god, why did i let myself get sooo drunnnk?
+emote leans closer to the toilet.
+~
+|
+#15316
+jenkins mr~
+Mr. Jenkins~
+Mr. Jenkins is enjoying a meal with his family.
+~
+~
+67 192 786432 0 0 400 S
+89 1 178 178 21000 21000d0+0 0d0+80000
+890 0 0
+0 0 1
+0 0 0
+#15317
+jenkins mrs~
+Mrs. Jenkins~
+Mrs. Jenkins looks after the family.
+~
+~
+67 0 786432 0 0 200 S
+87 1 174 174 26000 26000d0+0 0d0+60000
+870 0 0
+0 0 2
+0 0 0
+#15318
+billy jenkins~
+Billy Jenkins~
+Little Billy Jenkins plays here.
+~
+~
+65 0 0 0 0 50 S
+86 1 172 172 23000 23000d0+0 0d0+40000
+860 0 0
+0 0 1
+0 0 0
+#15319
+susy jenkins~
+Susy Jenkins~
+Susy Jenkins sits here sulking.
+~
+~
+65 128 262144 0 0 0 S
+89 1 178 178 24000 24000d0+0 0d0+0
+890 0 0
+0 0 2
+0 0 0
+#15320
+woman darla~
+Darla~
+You interrupt Darla as she's tidying up.
+~
+Darla is the half-baked cleaning lady for the city municiple park
+service.  She's not been known for playing with a full deck, hence Darla has
+gotten assigned to cleaning up the park's few public facilities.  
+~
+99 128 786432 0 0 200 S
+90 1 180 180 22000 22000d0+0 0d0+60000
+900 0 0
+0 0 2
+0 0 0
+>all_greet_prog 50~
+if ispc($n)
+if sex($n) != 2
+scream
+say Get Out!
+push $n w
+endif
+endif
+~
+|
+#15321
+garder snake~
+a garder snake~
+You catch a glimspe of something moving through the grass.
+~
+A slender brown and white striped garter snake.  It flicks its tongue at
+you as you pass, tasting your presence.  It tries to quickly slither out of
+your way.  
+~
+67 0 262144 0 0 10 S
+87 1 174 174 25000 25000d0+0 0d0+40000
+800 0 0
+0 0 0
+2048 0 0
+#15322
+old jogger man~
+an old jogger~
+An old man runs down the path here.
+~
+~
+65 0 262144 0 0 200 S
+87 1 174 174 0 16000d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#15323
+rabid rabbit~
+A Rabid Rabbit~
+A small furry rabbit foams at the mouth!
+~
+~
+65 0 786432 0 0 10 S
+80 1 30 30 0 18000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#15324
+fish goldfish~
+A large gold fish~
+A large goldfish swims close to the edge of the Pond.
+~
+~
+67 0 0 0 0 200 S
+86 1 172 172 0 21000d0+0 0d0+0
+600 20 0
+0 0 0
+0 0 0
+>speech_prog 2~
+say I'm a Fish, i turn on the area state two when you say "2"
+mpastatus 2
+mpastatus 3
+~
+|
+#15424
+fireant mound~
+a fireant mound~
+A gigantic fireant mound grows out of the ground.
+~
+An unearthly mound of red clay is before you.  Thousands upon thousands
+of red fireants swarm out of its hundred openings!  Run!  
+~
+71 33563136 67371024 0 2 150 S
+95 1 300 300 0 15000d0+0 0d0+0
+4 0 0
+0 0 2
+298675 0 0
+>rand_prog 3~
+c 'shadow plane'
+~
+|
+#0
+
+
+
+#OBJECTS
+#15301
+hunting knife~
+hunting knife~
+A knife used for hunting lies here.~
+~
+5 33554432 8192 0 0 8193 87
+100 100
+0~ 0~ 0~ 11~
+2 868 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+19 35
+A
+18 20
+#15302
+black leather pants~
+black leather pants~
+A pair of black leather pants has been tossed here~
+~
+9 536871424 0 0 0 33 90
+100 100
+0~ 0~ 0~ 0~
+3 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 90
+A
+18 8
+A
+19 10
+#15303
+brass knuckles~
+brass knuckles~
+A set of brass knuckles lies here.~
+~
+9 2621952 0 0 0 129 85
+100 100
+0~ 0~ 0~ 0~
+1 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 50
+A
+18 4
+A
+19 14
+#15304
+ski mask~
+black ski mask~
+A ski mask lies here.~
+~
+9 512 0 0 0 65537 85
+100 100
+0~ 0~ 0~ 0~
+1 848 0
+0 0
+thick skin~
+-1 -1
+0 0 0
+A
+19 8
+A
+18 10
+#15305
+jeans blue denim~
+a pair of blue jeans~
+A pair of blue jeans was tossed aside here.~
+~
+9 537139360 0 0 0 33 90
+100 100
+0~ 0~ 0~ 0~
+1 240 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+19 11
+A
+18 8
+A
+12 -1800
+#15306
+rock null magic~
+a rock of null magic~
+A large rock lies here.~
+~
+8 24750080 7718 0 0 1 90
+100 100
+0~ 0~ 0~ 0~
+13000 400 0
+5 0
+aura of anti-magic~
+1 1
+0 0 0
+#15307
+slacks kaki pants~
+&Oa pair of kaki pants~
+A pair of wrinkle free kaki pants has been dropped here.~
+~
+9 1024 0 0 0 33 85
+100 100
+0~ 0~ 0~ 0~
+2 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 9
+A
+115 -1
+#15308
+sock cotton white~
+a White Cotton Sock~
+A White Cotton Sock is here.~
+~
+9 537133056 520 0 0 1048577 80
+100 100
+0~ 0~ 0~ 0~
+1 160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 6
+A
+19 9
+A
+2 2
+A
+1 -1
+#15309
+shirt tee-shirt white~
+a White Tee-Shirt~
+A white tee-shirt lies here.~
+~
+9 3072 7714 0 0 9 86
+100 100
+0~ 0~ 0~ 0~
+4 860 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 27
+A
+13 75
+A
+19 25
+A
+113 -1
+#15310
+shirt tee-shirt black~
+&za Black Tee-Shirt~
+A black tee-shirt has been thrown aside here.~
+~
+9 812714496 4 0 0 9 86
+100 100
+0~ 0~ 0~ 0~
+4 860 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 22
+A
+18 30
+A
+24 -20
+#15311
+shirt tee-shirt red~
+a red tee-shirt~
+A blood red tee-shirt has been ripped off some poor soul and lies here.~
+~
+9 458752 8 0 0 9 86
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 40
+A
+24 -12
+A
+23 -12
+A
+25 20
+#15312
+watch rolex fake~
+&Ya Rolex Watch~
+A rolex watch glistens in the light.~
+~
+9 805306368 0 0 0 4097 85
+100 100
+0~ 0~ 0~ 0~
+1 200 0
+5 0
+awe~
+5 5
+0 0 0
+#15313
+wicker basket~
+a wicker basket~
+A wicker basket sits here.~
+~
+15 536870912 0 0 0 16385 80
+100 100
+200~ 5~ 0~ 0~
+3 800 0
+0 0
+reserved~
+0 0
+0 0 0
+#15380
+turkey leg~
+a turkey leg.~
+A warm turkey leg sits on a plate.~
+~
+19 0 0 0 0 1 1
+100 100
+100~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15401
+Sign~
+a sign~
+A Sign Depicting the Public use Area Rules stands here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+NO LITTERING
+NO CURSING
+NO MUGGING
+NO GAMBLING
+NO OLD PEOPLE
+NO PETS
+NO JOGGING
+NO HOT DOGS
+NO FIRES
+NO DRINKING
+NO KITES
+NO FIREARMS
+ 
+Violaters will be Prosecuted to the fullest extent 
+of the law.                -City of Methidoral
+~
+#15402
+Ambulance~
+anbulance~
+A Methidoral City Hospital Ambulance is parked here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15403
+picnic table north~
+picnic table~
+The north side of the picnic table is here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15404
+picnic table west~
+picnic table~
+The west end of the picnic table sticks out here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15405
+picnic table south~
+picnic table~
+The south edge of a picnic table is here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15406
+picnic table east~
+picnic table~
+The eastern edge of the picnic table sticks out here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15407
+fire pit barbeque~
+fire pit~
+A barbecue pits smolders slowly here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15408
+bench~
+A bench~
+A bench~
+~
+12 805306368 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+complete healing~
+100 100
+0 0 0
+#15409
+tow truck~
+tow truck~
+A tow truck sits here running.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15410
+car green~
+a green car~
+A green car is connected to the tow truck.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15411
+rotting tree trunk~
+tree trunk~
+A fallen tree trunk sits here, eminating null magic.~
+~
+15 67108864 16384 0 0 0 0
+100 100
+0~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15412
+pond~
+pond, you shouldn't be seeing this.~
+&BThe pond glistens in the sunlight.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15413
+pit toilet~
+pit toilet~
+A pit toilet sits in the middle of the floor.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15414
+vent air-vent~
+air vent~
+An air vent lets in some light.~
+~
+15 0 0 0 0 0 0
+100 100
+20~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15415
+vent air-vent~
+air vent~
+An air vent lets in some light.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15416
+porn magazine page porno~
+a page of porn~
+A page torn out of an adult magizine lies here.~
+~
+2 805339136 0 0 0 16384 89
+100 100
+100~ shockwave~ ego whip~ psychic drain~
+1 1 0
+5 0
+bio-acceleration~
+5 5
+0 0 0
+#15417
+key maintence~
+maintence key~
+A key lies here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15418
+sign~
+sign~
+A sign reading "Nature trail" stands here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#15419
+water faucet~
+faucet~
+A rusty faucet provides fresh water.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#15301
+In the Parking Lot~
+~
+~
+You are in the north east corner of the parking lot.  Here humans leave
+their cars and wander around in the woods for fun, though it's hard to
+imagine why you'd want to do that.  Directly to your west a man and woman
+are arguing over something, and it's probably related to the fact that the
+man has tied some sort of rope to the woman's car, as if to steal it.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15450
+D2
+~
+~
+0 0 15304
+D3
+~
+~
+0 0 15302
+S
+#15302
+In the Parking Lot~
+~
+~
+You find yourself in the northwest corner of the Parking Lot.  All about
+you, all you see is asphalt covered with white stripes and one in blue with
+a funny symbol in it.  To the south and east, all you see are vehicles and
+more parking spots.  Oil stains are everywhere, as well as broken glass and
+cigarette butts.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15301
+D2
+~
+~
+0 0 15303
+S
+#15303
+In the Parking Lot~
+~
+~
+Black asphalt stretches in all directions.  Among the sleek vehicles are
+bombed out abandoned cars; some burnt, some used as homes.  A few have been
+removed to appease the rich who want to park here safely.  Most here have
+had their hubcaps stolen and a few lack tires.  Shouts can be heard coming
+from the south, amidst some blacked Buicks and an occasional Ford.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15302
+D1
+~
+~
+0 0 15304
+D2
+~
+~
+0 0 15306
+S
+#15304
+In the Parking Lot~
+~
+~
+You are still in the Parking Lot of the city park.  Black asphalt goes in
+all directions, still striped to help stupid people park straight, but most
+don't pay attention to it.  More oil stains blot the pavement.  Under the
+security lights are piles of pigeon droppings.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15301
+D2
+~
+~
+0 0 15305
+D3
+~
+~
+0 0 15303
+S
+#15305
+In the Parking Lot~
+~
+~
+You are still in the Parking Lot of the city park.  Black asphalt goes in
+all directions, still striped and oil-stained.  Under the security lights
+are increasingly large piles of pigeon droppings and feathers.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15304
+D2
+~
+~
+0 0 15307
+D3
+~
+~
+0 0 15306
+S
+#15306
+In the Parking Lot~
+~
+~
+Amazingly, no vehicles are parked here except one!  The asphalt is clean
+and brightly marked with white lines as well as there being no oilstains or
+litter to be seen.  Birds fly through, whistling happily as well as an
+occasional lost pet showing up.  The Medic smiles and offers the use of his
+Ambulance for those who need emergency transportation.  
+~
+0 394244 2
+Rd     0
+D0
+~
+~
+0 0 15303
+D1
+~
+~
+0 0 15305
+D2
+~
+~
+0 0 15308
+S
+#15307
+In the Parking Lot~
+~
+~
+You find yourself in the very southeast corner of the Parking Lot.  And
+now you wish you hadn't.  The security lightpoles are bent almost double and
+the filth and stench are unbearable.  Piles of pigeon droppings are as high
+as your head.  Flies and gnats swarm everywhere, making small clouds that
+blot out the sun.  The asphalt underfoot is covered with litter and car
+parts as well as glowing feathers from some unknown creatures.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15305
+D3
+~
+~
+0 0 15308
+S
+#15308
+In the Parking Lot~
+~
+~
+You stand at the crossroads between the Park and the edge of the Parking
+Lot.  To your north is a mild glow and soothing hum.  To your east is more
+parking lot but much filthier.  To your west is the actual entrance to the
+Park and running trails.  Hopefully your stay will be an enjoyable one.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 15306
+D1
+~
+~
+0 0 15307
+D3
+~
+~
+0 0 15309
+S
+#15309
+Inside the Gates~
+~
+~
+You are standing directly west of the wrought iron gates that seperate
+the park from the rest of the city.  Their rusty bars provide a surprising
+amount of security during the night, as it would be quite difficult to climb
+over them and gain unlawful enterance.  The smells of roasting animal flesh
+and the laughter of children fill the air as families wander in and out of
+the park.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15308
+D3
+~
+~
+0 0 15310
+S
+#15310
+Following a Path through the Park~
+~
+~
+There is a large wooden sign here which describes the policies of the
+park.  A fresh coat of paint covers the sign, giving it a crispness in stark
+constrast to the dull maroon paint that covers just about every other man
+made item in the view.  The path continues deeper into the park to the west.
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15309
+D3
+~
+~
+0 0 15311
+S
+#15311
+Following a Path through the Park~
+~
+~
+There is a slight curve in the path here, as an enourmous oak tree was
+deemed either to valuable, or too difficult to dig out of the ground.  There
+are several names carved in it's gnarled bark, J.P.  J.D.  and J.G.  being
+among them, and several hearts baring the initials of lovers long gone from
+this park.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15310
+D2
+~
+~
+0 0 15312
+S
+#15312
+Following a Path through the Park~
+~
+~
+The path continues on to the west, still in the shade of that large oak
+tree.  There is the excrement of some small animal in the exact center of
+the path, adding a wonderful aroma to your immediate surroundings.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15311
+D3
+~
+~
+0 0 15313
+S
+#15313
+North of a Picnic Table~
+~
+~
+Here the path splits in two, with the southern route heading toward a
+picnic table.  Someone has thrown half-eaten food here quite some time ago,
+and, although it is partially decayed, it still might be edible.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15312
+D2
+~
+~
+0 0 15413
+D3
+~
+~
+0 0 15314
+S
+#15314
+Following a Path through the Park~
+~
+~
+The grass is well trimmed here, and families are having picnics, their
+children playing amongst themselves.  The breeze is steady and smells
+surprisingly good compared to the odor that the rest of Methidoral produces.
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15313
+D3
+~
+~
+0 0 15315
+S
+#15315
+Following a Path through the Park~
+~
+~
+The cries of laughter fill the air, bringing memories of you childhood
+back that you had forgotten.  They run around in circles, playing either
+some childrens game or participating in a satanic ritual.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15314
+D3
+~
+~
+0 0 15316
+S
+#15316
+Following a Path through the Park~
+~
+~
+Toward the north the public restrooms of the Park lie, providing both
+wonderful scenary and wonderful aromas.  However unsightly they seem, they
+provide an essential function.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15434
+D1
+~
+~
+0 0 15315
+D3
+~
+~
+0 0 15317
+S
+#15317
+Following a Path through the Park~
+~
+~
+The path continues through the park here, the wind swirling around your
+ankles carrying leaves as it goes.  The grass seems taller here, as if
+someone is not too careful about upkeep.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15316
+D3
+~
+~
+0 0 15318
+S
+#15318
+Following a Path through the Park~
+~
+~
+You are at a bend in the pathway through the park.  To your east leads
+to the parking lot, while to your south heads towards the jogging paths into
+the treeline.  The dead grass is choaked with weeds and doesn't look very
+well cared for.  Brown leaves blow across the path, making a faint sighing
+rustle.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15317
+D2
+~
+~
+0 0 15319
+S
+#15319
+Following a Path through the Park~
+~
+~
+You are at a bend in the pathway through the park.  To your north leads
+to the parking lot, while to your west heads towards the jogging paths.  The
+dead grass is longer here and even the weeds look browner.  More leaves blow
+across your path, making you feel a bit exposed.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 15318
+D3
+~
+~
+0 0 15320
+S
+#15320
+On the Path through the Park~
+~
+~
+You are still following the path through the park.  Leading south is the
+beginning of the Nature Trails, while east and west the pathway continues. 
+Small shrubs needing pruning and dead grass needing cutting border the dying
+trees.  The park pond is westwards but the trees are higher to your south.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+0 0 15319
+D2
+~
+~
+0 0 15365
+D3
+~
+~
+0 0 15321
+S
+#15321
+Following a Path through the Park~
+~
+~
+You're still on the Path through the park.  To the east is the trail
+going to the parking lot while to the west the pathway leads to the pond. 
+The shrubbery has seen nicer days, but is it still alive, although bearly.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15320
+D3
+~
+~
+0 0 15322
+S
+#15322
+Following a Path through the Park~
+~
+~
+You're still on the Path through the park.  To the east is the trail
+going to the parking lot while to the west the pathway leads towards the
+pond.  The shrubbery has seen better days, but it is still alive and even
+sprouting a few meager leaves.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15321
+D3
+~
+~
+0 0 15323
+S
+#15323
+Following a Path through the Park~
+~
+~
+You are still on the path through the park.  To the east, through the
+shrubs, is a pathway headed back to the parking lot.  To the west, through
+tall dead grass, the pathway wanders towards the park pond.  Small birds
+chirp in the trees above your head and you can hear a cricket or two.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15322
+D3
+~
+~
+0 0 15324
+S
+#15324
+Intersection in Path through the Park~
+~
+~
+Taller shrubs are here, flowering azelias and rhodiadendrums and even a
+waste basket for the picnic tables to the north.  The pathway leads on to
+the east and west while a small, paved footpath leads north.  It looks like
+a nice family area.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15420
+D1
+~
+~
+0 0 15323
+D3
+~
+~
+0 0 15325
+S
+#15325
+Following a Path through the Park~
+~
+~
+A sweet breeze blows past your cheek through the tall pines.  Small birds
+and cicadias can be heard from all directions except the northeast.  To your
+east leads back to the parking lots and westwards winds deeper into the
+park.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15324
+D3
+~
+~
+0 0 15326
+S
+#15326
+Following a Path through the Park~
+~
+~
+The pines get thicker to the north as the breeze lessens.  A chipmonk
+runs across the path in front of you, a blur of brown with racing stripes. 
+East leads to the picnic areas and westwards heads further into the woods.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15325
+D3
+~
+~
+0 0 15327
+S
+#15327
+Following a Path through the Park~
+~
+~
+The pines seem taller to the north and south of you.  The breeze has
+almost died out.  You think you spot a doe and her fawn in the distance as
+all thoughts of the city receed from your mind.  Eastwards winds towards the
+picnic areas and parking lot.  To your west, the pathway heads into the
+jogging trails.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15326
+D3
+~
+~
+0 0 15328
+S
+#15328
+Following a Path through the Park~
+~
+~
+The pathway has split here.  To the north is a picnic area and you can
+smell a heavenly aroma wafting through the still air.  Eastwards leads back
+towards the parking lots and to your south you can hear the sound of waves
+lapping against the sands.  The birds sing sweetly in the pines and aspens. 
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15427
+D1
+~
+~
+0 0 15327
+D2
+~
+~
+0 0 15329
+S
+#15329
+Following a Path through the Park~
+~
+~
+The pines to the east and west are unbroken woods.  The sound of waves
+lapping a shoreline come from your south and northwards is labeled picnic
+area.  Cool breezes gust up the pathway and it carries the scent of standing
+water.  It mingles with smoke from the north.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 15328
+D2
+~
+~
+0 0 15330
+S
+#15330
+Alongside the Pond~
+~
+~
+The northern end of the City pond.  Reflections of the sky, clouds and
+trees appear in its waters.  A goose slowly paddles by, on his way to do
+what, we don't know.  North of you is the pathway back to the picnic areas
+and eastwards and westwards is a beautiful path around the pond's edge.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15329
+D1
+~
+~
+0 0 15331
+D3
+~
+~
+0 0 15343
+S
+#15331
+Alongside the Pond~
+~
+~
+Reflections of sky, clouds and trees appear in the pond's waters.  Small
+lilypads and a few scattered cattails grow in the shallows, providing refuge
+to frogs.  The pathway runs east and west along the edge of the shoreline. 
+A bird rattles the shrubs, apparently oblivious to your approach.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15332
+D3
+~
+~
+0 0 15330
+S
+#15332
+Alongside the Pond~
+~
+~
+Small lilypads float lazily in the waves of the pond as the light
+sparkles through the trees from the north.  A group of swans swim by,
+hunting for pollywogs.  The pathway makes a turn to the south and west here,
+running around the edge of the pond.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 15333
+D3
+~
+~
+0 0 15331
+S
+#15333
+Alongside the Pond~
+~
+~
+The soft fragrance of wild roses hangs in the air, slightly scented with
+honeysuckle.  Small bees drone from flower to flower in their search for
+nectar.  The pathway runs north and south of you, along the water's edge.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15332
+D2
+~
+~
+0 0 15334
+S
+#15334
+Alongside the Pond~
+~
+~
+The pathway, leading north and south, is lined with blooming wild roses.
+Their fragrance slowly surrounds you, leaving a tranquil feeling in your
+mind.  The sparkle of light off the pond's lapping waves add to their
+affects.  A single blooming waterlily slowly floats on the water as honey
+bees drone in the distance.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15333
+D2
+~
+~
+0 0 15335
+S
+#15335
+Alongside the Pond~
+~
+~
+A slow, steady, soothing humm comes from over the shimmering waters of
+the pond.  A cadre of dragonflies hover about eye height in front of you, as
+if giving approval to your invasion of their domain.  A cooling breeze blows
+across the waters, rippling small waves among the cattails.  The pathway
+makes a turn to the north and west, disappearing around the shoreline.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15334
+D3
+~
+~
+0 0 15336
+S
+#15336
+Alongside the Pond~
+~
+~
+You hear peeping coming from the west, echoing across the sparkling
+waters.  Quiet, peaceful waves lap the shoreline near the path you are on. 
+Small waterskaters dive to the bottom to escape your notice and a dragonfly
+or two fly like tiny helicopters across the graveled pathway.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15335
+D3
+~
+~
+0 0 15337
+S
+#15337
+Alongside the Pond~
+~
+~
+A sandpiper wades through the cattails, searching for minnows and frogs.
+It wades a bit further from the shore as you walk through.  Another
+sandpiper runs across to join its mate, scattering small pebbles from the
+east-west pathway around the pond.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15336
+D3
+~
+~
+0 0 15338
+S
+#15338
+Alongside the Pond~
+~
+~
+Tiny bubbles break the surface as small frogs search for hiding places
+among the cattails.  A gosling honks as it backpeddles to hide alongside the
+frogs in the plants.  You can hear an answering call from your west.  The
+pathway leads on westwards as well as to the east.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15337
+D3
+~
+~
+0 0 15339
+S
+#15339
+Alongside the Pond~
+~
+~
+Tiny bubbles break the surface as small waterbugs skate past, hurrying
+somewheres.  A few cattails grow in the shallows of the clear waters of the
+pond.  A goose honks noisily as you walk down the pathway that stretches
+from north to south and breaks away eastwards.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15340
+D1
+~
+~
+0 0 15338
+D2
+~
+~
+0 0 15344
+S
+#15340
+Alongside the Pond~
+~
+~
+Light plays merrily across the waters as a cool breeze stirs the pond's
+surface.  Minnows play hide-n-seek from a goose floating among the lilypads.
+The pathway leads on to the north and south, winding through the flowering
+shrubs.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15341
+D2
+~
+~
+0 0 15339
+S
+#15341
+Alongside the Pond~
+~
+~
+Light plays merrily across the waters as a cool breeze stirs the pond's
+surface.  Minnows play hide-n-seek in the lilypads of the shallow waters. 
+The pathway leads on to the north and south, winding through flowering
+shrubs.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15342
+D2
+~
+~
+0 0 15340
+S
+#15342
+Alongside the Pond~
+~
+~
+The pathway makes a turn here.  Heading south and eastwards, it
+continues around the pond.  The sheen of sunlight off the waters momentarily
+blinds you with its reflection in the still waters.  Small frogs peep softly
+at your approach and dive for deeper waters.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15343
+D2
+~
+~
+0 0 15341
+S
+#15343
+Alongside the Pond~
+~
+~
+As the pathway leads around the glistening edge of the pond, a soft
+breeze caresses you from the waters.  Small fish swim near the surface as a
+goose slowly floats past, eyeing you warily.  Small flowering shrubs grow at
+the sides of the path, furthering the feeling of serenity.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15330
+D3
+~
+~
+0 0 15342
+S
+#15344
+Following the Nature Trail~
+~
+~
+Welcome to the Nature trails.  Northwards leads to the city park's pond
+and to the south stretches more trails.  The woods are thin here but get
+darker the further south one travels.  Tall, dreary pine and scraggly cedars
+close in on the pathway from the east and west, allowing for little light to
+filter through.  
+~
+0 4 3
+Rd     0
+D0
+~
+~
+0 0 15339
+D2
+~
+~
+0 0 15345
+S
+#15345
+Following the Nature Trail~
+~
+~
+The air stops moving as the dense trees close in about the pathway. 
+Small hairless creatures blink at you from the gloom as you pass.  The
+pathway stretches towards a lighter place to the north but southwards, it
+seems to be swallowed by the forest.  What was that noise you heard? 
+Footsteps?  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15344
+D2
+~
+~
+0 0 15346
+S
+#15346
+Following the Nature Trail~
+~
+~
+Dense, scraggly pines and cedars close in on the trail, almost stifling
+all the air around you.  You don't hear the sounds of insects, not even
+mosquitos.  Was that a footfall in the brush?  The pathway leads north to
+lighter surroundings and to the south, where darkness prevails.  A funny
+feeling trickles down your spine...  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15345
+D2
+~
+~
+0 0 15347
+S
+#15347
+Following the Nature Trail~
+~
+~
+Something has warped the cedars that not even the smell is right.  What
+few pines remain have holes in them as well as intricate carvings.  A small
+hairless "something" scurries across the bend in the pathway, which curves
+off to the north and east.  A crow calls forlornly high up and to the south
+through the dense darkness.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15346
+D1
+~
+~
+0 0 15348
+S
+#15348
+Following the Nature Trail~
+~
+~
+The trees have taken on a darker hue here on this part of the path. 
+Funny sounds can be heard but not distinguished off to the west.  To the
+east, the pathway lightens as well as the song of a few birds filter through
+the pines.  What was that?  Sounded like footsteps...  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15349
+D3
+~
+~
+0 0 15347
+S
+#15349
+Split in the Path~
+~
+~
+Here the path splits again, heading east, south, and west.  Which
+direction you chose seems to make no difference, as you could wander around
+here endlessly enjoying air fresher than the city can provide.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15350
+D2
+~
+~
+0 0 15396
+D3
+~
+~
+0 0 15348
+S
+#15350
+Following the Nature Trail~
+~
+~
+Other than the rotting tree trunk to your north, this part of the trail
+is just like all the others, worn path, trees, leaves, bugs and a light
+breeze.  You get the feeling that the tree is somehow disrupting the magic
+in this section of the trail, but you're not quite sure how.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15351
+D3
+~
+~
+0 0 15349
+S
+#15351
+Following the Nature Trail~
+~
+~
+The trail goes east and west there, and looks to crest a small hill just
+to the east.  This section of the forest is thick with walnut and hickory
+trees for no apparent reason.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15352
+D3
+~
+~
+0 0 15350
+S
+#15352
+Following the Nature Trail~
+~
+~
+You are standing on a small hill in the nature, providing only slightly
+better a view through the trees than before.  You can however see the
+outline of Methidoral off in the distance.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15353
+D3
+~
+~
+0 0 15351
+S
+#15353
+Following the Nature Trail~
+~
+~
+There is a small section off the trail here that looks to have been
+matted down, whether by some animal sleeping here, or two humans trying to
+procreate you can only guess.  There is a small piece of paper, silver on
+one side and baring the letters "ojan" on the other.  You consider picking
+it up, but then decide it is probably worthless, lest it had not been left
+here.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15354
+D3
+~
+~
+0 0 15352
+S
+#15354
+Split in the Path~
+~
+~
+There is yet another split in the trail here, going off towards the
+north, south, and west.  The trees are quit settling here, for some reason
+that you can't quite finger.  It would be hard to cause anyone harm in a
+place so beautiful.  
+~
+0 134251520 3
+Rd     0
+D0
+~
+~
+0 0 15355
+D2
+~
+~
+0 0 15410
+D3
+~
+~
+0 0 15353
+S
+#15355
+Following the Nature Trail~
+~
+~
+The pathway takes a turn to the south and east here.  Sparce elms and an
+occasional maple surround you as a softly scented breeze filters through
+with the light.  Tranquility seems to permeate the air here.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15356
+D2
+~
+~
+0 0 15354
+S
+#15356
+Split in the Path~
+~
+~
+The path splits again here, heading north, east and west.  Your decision
+doesn't seem to make much difference in that which every direction you
+chose, you'll still be in the middle of the trail.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15357
+D1
+~
+~
+0 0 15397
+D3
+~
+~
+0 0 15355
+S
+#15357
+Following the Nature Trail~
+~
+~
+The trail goes down a little dip here, with a large metal plate covering
+what looks like a sink hole.  Not only were these humans unattentive to
+mother nature, but mother earth as well.  Every boy you can think of knows
+better than to walk across a sink hole.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15358
+D2
+~
+~
+0 0 15356
+S
+#15358
+Following the Nature Trail~
+~
+~
+The path makes an abrupt turn here, going east in one direction, and
+directly south in another.  Here too, it would have seemed to be easier to
+go a different route, but nonetheless, nature is slowly conforming to the
+wishes of man, as trees start to sprout up in the sunlight filled vacant
+areas created by the decimation of old growth forests.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15359
+D2
+~
+~
+0 0 15357
+S
+#15359
+Following the Nature Trail~
+~
+~
+The nature trail runs east and west here in a surprisingly straight line
+that nature herself would not have afforded.  Only humans would make such a
+straight path at the time and expense of taking out several trees.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15361
+D3
+~
+~
+0 0 15358
+S
+#15361
+Split in the Path~
+~
+~
+Here is a three way intersection in the path, which leads off to the
+north, west, and east.  There is some blood on the ground here from some
+unknown source.  There is also an overflowing trashcan, which wreaks quite
+horribly of rotting food.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15362
+D1
+~
+~
+0 0 15366
+D3
+~
+~
+0 0 15359
+S
+#15362
+Walking along the Nature Trail~
+~
+~
+The leaves rustling in the wind, the same trees, oak, elm, maple, the
+same sunlight filtering through the canopy.  It's amazing that these future
+humans enjoy walking through a forest, considering how bland this one is.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15363
+D2
+~
+~
+0 0 15361
+S
+#15363
+Walking along the Nature Trail~
+~
+~
+An elm tree seems to have fallen over the trail, but it is small enough
+that it won't hamper your progress for long.  The air swirls around you ere,
+not quite coming from a particular direction, but from seemingly all
+directions at once.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15364
+D2
+~
+~
+0 0 15362
+S
+#15364
+Walking along the Nature Trail~
+~
+~
+A slight breeze blows through the trees, cooling your skin.  The leaves
+are rustling, because of the wind, or something else?  The path runs north
+and south here.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15365
+D2
+~
+~
+0 0 15363
+S
+#15365
+Entrance to the Nature Trail~
+~
+~
+The sigh of leaves on the tall trees blow across your skin.  You stand
+at the beginning of the manmade nature pathways through the park.  A pebbled
+trail leads to the south and northwards leads back to the main paths
+throughout the park.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15320
+D2
+~
+~
+0 0 15364
+S
+#15366
+Along the Nature trail~
+~
+~
+The trail runs east and west here, as if it was almost completely
+unplanned.  There are puddles of mud littering this section of the trail and
+avoiding them would be more trouble than it's worth.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15367
+D3
+~
+~
+0 0 15361
+S
+#15367
+Along the Nature Trail~
+~
+~
+More mud lines the trail here, and many footprints tell of at least
+several dozen people walking or jogging through this portion of the park. 
+The source of the mud doesn't seem to be rainfall however, it seems to be
+sewage seeping out of the ground here, not a very pleasant thought, but
+nonetheless, most likely true.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15368
+D3
+~
+~
+0 0 15366
+S
+#15368
+Following the Nature Trail~
+~
+~
+The trail is drier here than it is to the west, making travel easier by a
+significant amount.  A large elm tree seems to be suffering from some
+disease, and although it is an old growth tree, it is doubtful that it will
+last anymore than a year or so in it present condition.  
+~
+0 0 3
+Rd     0
+D2
+~
+~
+0 0 15369
+D3
+~
+~
+0 0 15367
+S
+#15369
+Following the Nature Trail ~
+~
+~
+The trail makes a sharp turn to both the east and north here, and it
+takes all the skill of a drunken goat to avoid slipping on the smooth hard
+packed dirt.  These humans don't seem very logical in that they find
+pleasure in running in what is essentially a big circle.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15368
+D1
+~
+~
+0 0 15370
+S
+#15370
+Following the Nature Trail~
+~
+~
+Traveling east and west here, the trail is rather bland.  Trees, rocks,
+grass, everything you would expect to find along a nature trail are here,
+but nothing that strikes you as unusual.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15371
+D3
+~
+~
+0 0 15369
+S
+#15371
+Following the Nature Trail~
+~
+~
+You almost trip as a branch that has fallen across the trail catches your
+leg.  Judging by the footprints, several other poor indivuals actually have
+fallen here in the past couple of days.  
+~
+0 0 3
+Rd     0
+D2
+~
+~
+0 0 15372
+D3
+~
+~
+0 0 15370
+S
+#15372
+Following the Nature Trail~
+~
+~
+Making another turn, the trail leads north and east.  The sun shines
+through the canopy here during good weather, and the trees here would
+provide very little protection from the rain during the bad.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15371
+D1
+~
+~
+0 0 15373
+S
+#15373
+Following the Nature Trail~
+~
+~
+There is a bench here for those who need to rest.  They don't appear to
+be used that often as they are covered in a moldy residue.  It's wood does
+still appear to be solid enough to support your weight, but then appearances
+can be deceiving.  
+~
+0 0 3
+Rd     0
+D2
+~
+~
+0 0 15374
+D3
+~
+~
+0 0 15372
+S
+#15374
+Following the Nature Trail~
+~
+~
+The trail weaves here significantly, but still mostly travels north and
+south.  You can smell the aroma of food, fresh baked bread, and roasted
+chicken among them.  The precise location of the wonderful smells alludes
+you, but surely you will come across it soon enough.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15373
+D2
+~
+~
+0 0 15375
+S
+#15375
+Split in the Path~
+~
+~
+Finally, a descision is to be made.  You are standing in the middle of a
+three-way intersection, traveling all four cardinal directions except for
+east.  To the north, light forests; west is shrub brush and south is fields.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15374
+D2
+~
+~
+0 0 15376
+D3
+~
+~
+0 0 15404
+S
+#15376
+Following the Nature Trail~
+~
+~
+This trail has wandered in amidst of rolling meadows covered with tall
+grasses that ripple with each gust of the wind.  A pathway leads on to the
+north and south.  In the far distance to the south stands a tall hill with
+interesting architectural designs on it.  Northwards, the fields are slowly
+turned into light forests.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15375
+D2
+~
+~
+0 0 15377
+S
+#15377
+Following the Nature Trail~
+~
+~
+Small sounds filter up through the grass as you walk by.  The pathway
+leads southwards towards a hill and northwards into the rolling meadows
+filled with wild rye and oats that ripple in the soft breeze.  Birds and a
+few insects hover in the air, looking you over.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15376
+D2
+~
+~
+0 0 15378
+S
+#15378
+Following the Nature Trail~
+~
+~
+To the west is a hilltop scenic reststop while to the north, the small
+path continues into rolling meadows.  Small birds and insects peep softly,
+hoping the passing jogger will leave their nests in peace.  A lazy mosquito
+hovers nearby as you can hear it buzzing.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15377
+D3
+~
+~
+0 0 15379
+S
+#15379
+Following the Nature Trail~
+~
+~
+Small shrubs are neatly trimmed back from the nature trail which runs
+from the east to the west.  Westwards is the start of the rise to the top of
+a small hill while to the east it winds into small rolling meadows. 
+Northwards there is the start of another forest and south is perfumed plains
+of flowers.  A small mosquito buzzes close to your ear.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 15378
+D3
+~
+~
+0 0 15380
+S
+#15380
+Following the Nature Trail~
+~
+~
+You stand atop a small hill in the city park, with acres upon acres
+stretching out before you.  To the south are countless fields of wildflowers
+on the nature trail while to the east, leading down the hill, is the start
+of rolling meadows.  A light breeze carries the scent of perfume with a
+touch of acrid smoke.  Small trees cover the rest of the scenery to the west
+and north.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 15379
+D2
+~
+~
+0 0 15381
+S
+#15381
+Following the Nature Trail~
+~
+~
+You stand at a bend in the trail, breaking to the north and away to the
+west.  A small rise in the pathway leads over a hill drowning in
+wildflowers.  Petite bluebonnets and bright sunflowers strike a contrast
+next to the flaming poppies and brilliant goldenrod.  A light breeze
+caresses you in perfumed air, with only the sound of honeybees and wafting
+butterflies to keep you company.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15380
+D3
+~
+~
+0 0 15382
+S
+#15382
+Following the Nature Trail~
+~
+~
+The nature trail runs east and west from you, meandering through
+countless acres of wildflowers.  Small narcisses and daffadils grow amidst
+crocus and iris.  Goldenrod and pin roses mingle with day lilies and
+dandylions.  To the north, a small forest starts but southwards is endless
+fields of poppies.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15381
+D3
+~
+~
+0 0 15383
+S
+#15383
+Following the Nature Trail~
+~
+~
+The pathway stretches west and east of you, running through open fields
+of endless colours.  Violets and purples, blues and silvers, reds and
+yellows and countless pinks and oranges.  Flowers of all size and shapes
+threaten to overcome the borders of the path, making walking an adventure.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15382
+D3
+~
+~
+0 0 15384
+S
+#15384
+Following the Nature Trail~
+~
+~
+The pathway stretches east and west of you, running through open fields
+of endless colours.  Purples and violets, blues and silvers, reds and
+yellows and countless oranges and pinks.  Flowers of all size and shapes
+threaten to overflow the borders of the path; their pungent perfumes make
+breathing the air almost intoxicating.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15383
+D3
+~
+~
+0 0 15385
+S
+#15385
+A Split in the Trail~
+~
+~
+Standing at a crossroads in the nature trails, you can either head north,
+east or west.  East and west of here are more wildflowers while northwards
+heads into light forests.  Wild wisteria grow across small trellis over each
+pathway.  Their clusters of purple, red and blue 'grapes' hang invitingly
+close to hand.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15407
+D1
+~
+~
+0 0 15384
+D3
+~
+~
+0 0 15386
+S
+#15386
+Following the Nature Trails~
+~
+~
+Dozens upon dozens of wildflowers colour the surroundings.  As far as the
+eye can see, queen Anne's lace and goldenrod mingle with bluebonnets and
+wild poppies.  Silver flowered wax-roses and fiery azaleas add their splash
+to the surroundings.  Large bell plants and deep orange trumpets live side
+by side with baby's breath and wild grapes that edge the east-west path of
+the nature trail.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15385
+D3
+~
+~
+0 0 15387
+S
+#15387
+Following the Nature Trail~
+~
+~
+You find yourself on an east-west pathway.  To the west is a split in the
+path, while eastwards is more wildflowers.  Black-eyed susans and daffadils
+as well as wild roses fill the air with a pungent aroma.  Soft dandylions
+set loose floating puffs of seeds from their cottonball flowers.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15386
+D3
+~
+~
+0 0 15388
+S
+#15388
+Split in the Path~
+~
+~
+You stand at a split in the pathway.  Northwards starts the forest nature
+trails while east and west keeps on the main pathway, winding through
+flowers and disappears out of sight.  Azaleas and rhododendroms of all hues
+and shape bloom brightly.  Hundreds of bees and butterflies fill the air,
+sipping nectar from all the various blooms.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15408
+D1
+~
+~
+0 0 15387
+D3
+~
+~
+0 0 15389
+S
+#15389
+Following the Nature Trail~
+~
+~
+The pathway winds through thinning fields of wildflowers.  Colours of
+all the rainbow are everywhere, as well as the drone of countless bees. 
+Goldenrod and poppies mix company with black-eyed Susans and daisies. 
+Masses of butterflies idly float in the breeze above the east-west path.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15388
+D3
+~
+~
+0 0 15390
+S
+#15390
+Following the Nature Trail~
+~
+~
+The pathway cuts through the remains of a wide field of bright red
+poppies.  A few marigolds and dashing blue flags as well as queen Ann's lace
+show through the scattered ash trees.  The path leads to the east and
+westwards towards more fields of wildflowers.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15389
+D3
+~
+~
+0 0 15391
+S
+#15391
+Following the Nature Trail~
+~
+~
+To the east, you can see a gigantic tree overshadowing the path.  To the
+west, more breezy scents of flowers and a dash of colour that would make a
+rainbow seem dim.  The sound of a multitude of bird calls fill the air and
+the faint drone of bees.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15390
+D3
+~
+~
+0 0 15392
+S
+#15392
+Following the Nature Trail~
+~
+~
+A gust of wind carries the scent of wildflowers from somewhere east. 
+Small mushrooms grow in the humus of old leaves under the shadow of an
+ancient oak tree.  Squirrels scold loudly from the overhanging limbs in this
+corner of the turning path that lead north and east.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15393
+D1
+~
+~
+0 0 15391
+S
+#15393
+Following the Nature Trail~
+~
+~
+A few chickadees peep as they hop about, hunting for grass seeds.  The
+hum of cicadias rise and fall as the winds cool the beautiful oaks and
+poplars.  The pathway takes a bend to the south and west, curving through
+patches of vivid wildflowers.  You get a whiff of smoke back to the west.  
+~
+0 0 3
+Rd     0
+D2
+~
+~
+0 0 15392
+D3
+~
+~
+0 0 15394
+S
+#15394
+Following the Nature Trail~
+~
+~
+The ground is worn hard here, from years of being walked over.  There is
+a bench here, as this is a logical resting place in the trail.  Cigarette
+butts litter the ground excessively, causing you to ponder why people out
+jogging for excercise would stop for a smoke...  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15395
+D1
+~
+~
+0 0 15393
+S
+#15395
+Following the Nature Trail~
+~
+~
+The wind blows softly across your face here, you can see the sunlight
+shining through the trees, casting seemingly random shadows through the
+leaves.  A chill runs up your spine for no apparent reason, causing you to
+shiver quickly, then all is calm once again.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15396
+D2
+~
+~
+0 0 15394
+S
+#15396
+Following the Nature Trail~
+~
+~
+The trees here are thinner than the rest of the forest, as if they were
+planted only a few years ago.  You can wrap your hands around them and
+connect your fingers, the youthful bark still being smooth.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15349
+D2
+~
+~
+0 0 15395
+S
+#15397
+Following the Nature Trail~
+~
+~
+The path meanders east and west of you, disappearing into the light
+forest of elms and maples.  An occasional dogwood blooms but adds no
+fragrance to the soft spring breezes.  Small rank dead weeds grow through
+cracks in the pathway.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15398
+D3
+~
+~
+0 0 15356
+S
+#15398
+Following the Nature Trail~
+~
+~
+The trail takes a sharp bend from west to southwards.  The dogwoods and
+elm trees make a striking contrast to the pines and cedars that spring from
+this new-growth forest.  Squirrels and birds, as well as a few raccoons,
+make their home in this segment of the city park.  They scold boldly from
+the trees, trying to make all feel unwelcome into their sanctuary.  
+~
+0 0 3
+Rd     0
+D2
+~
+~
+0 0 15399
+D3
+~
+~
+0 0 15397
+S
+#15399
+Split in the Path~
+~
+~
+You've reached a split in the nature trails.  The pathway runs north and
+south and breaks off to the east.  Birds and raccoons, as well as scolding
+squirrels and an occasional skunk have made this part of the new-growth
+forest into their home.  The breeze carries a hint of blooms and water from
+the south.  Small, stunted mosses grow on the path, making your footing seem
+a bit slippery.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15398
+D1
+~
+~
+0 0 15400
+D2
+~
+~
+0 0 15405
+S
+#15400
+Following the Nature Trail~
+~
+~
+The east-west pathway can barely be distinguished from the massive
+overgrowth of this new-growth forest.  White aspens and dark furs stand over
+40 feet, towering well enough to hid most of the sky.  A puffed breeze that
+has a stifled feeling, filters up through the boughs.  A deer raises its
+head as it searches for the scant blades of grass under the canopy.  Small
+squirrels are moreso embolded to scold as you walk by.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15401
+D3
+~
+~
+0 0 15399
+S
+#15401
+Following the Nature Trail~
+~
+~
+The willowy saplings here are well taller than your head, topping over 25
+feet.  The trail can barely be distinguished running east and west through
+the hiding branches.  Rancous birds calls are all about you and every now
+and then you can hear the scolding of a squirrel.  The sky overhead is
+darker but you can still feel a cooling breeze.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15402
+D3
+~
+~
+0 0 15400
+S
+#15402
+Following the Nature Trail~
+~
+~
+You find yourself in the midst of saplings and shrubs.  The trail leads
+east into more sunlight while to the westwards is taller trees.  It seems
+that the old growth forest had been cleared once and now allowed to grow
+back.  A few mockingbirds buzz your head, obviously upset that you've
+intruded into their territory.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15403
+D3
+~
+~
+0 0 15401
+S
+#15403
+Following the Nature Trail~
+~
+~
+The small shrubs to the north of the trail are filled with small grouse
+hens and pheasants.  The saplings that make up the new forest southwards
+close in on the path as if they were offended by it being there.  The nature
+trail winds east and west into more shrubs.  Quiet birdcalls filter up from
+the bushes.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15404
+D3
+~
+~
+0 0 15402
+S
+#15404
+Following the Nature Trail~
+~
+~
+Small birds chirp and hop through the small shrub brush directly to the
+north of the pathway.  The footpath leads eastwards and west, heading off
+into more of Nature's beauty.  To the south is a small, new forest with
+bright saplings.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15375
+D3
+~
+~
+0 0 15403
+S
+#15405
+Following the Nature Trail~
+~
+~
+Tall trees help to block the sky from view but they seem taller yet to
+the north along the trail.  Southwards, they seem to thin for a split in the
+path.  Oak and maple, as well as furs and pines crowd this north-south
+pathway that weaves merrily through.  Small birds and a few annoying insects
+hang in the slight breeze, each watching the other warily.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15399
+D2
+~
+~
+0 0 15406
+S
+#15406
+Split in the Path~
+~
+~
+It seems that the pathway has had a divergence.  The trail leads north
+into heavier forest.  Southwards, there is more sunlight and a lighter
+fragrance to the breeze.  To the west, a pungent odor permeates the air. 
+You can hear the sound of water bubbling and can tell the air is more humid
+down south of the split in the path.  Small rodents rustle the undergrowth
+and scurry back to the west.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15405
+D2
+~
+~
+0 0 15407
+D3
+~
+~
+0 0 15412
+S
+#15407
+Following the Nature Trail~
+~
+~
+Small sprouts of evergreens and a lone willow grow around a bubbling
+spring that has emerged from the middle of the pathway.  The trail runs
+northwards into taller trees while to the south, it heads into fragrant
+fields of wild flowers.  A chipmunk eeks and quickly skampers into the
+undergrowth, hoping to avoid attention.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15406
+D2
+~
+~
+0 0 15385
+S
+#15408
+Following the Nature Trail~
+~
+~
+The trees start to thicken to the north while to the south, you can see
+and smell a plethora of flowers.  Joggers and lovers wander aimlessly
+through, seeking solace in the comfort of the park's wilderness.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15409
+D2
+~
+~
+0 0 15388
+S
+#15409
+Split in the Path~
+~
+~
+Behold, yet another fork in the trail.  North, east, and south are your
+only options, yet, judging from the odor to the east, it should be the least
+likey choice.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15410
+D1
+~
+~
+0 0 15411
+D2
+~
+~
+0 0 15408
+S
+#15410
+Following the Nature Trail~
+~
+~
+More of the same, trees, small underbrush, slight wind rustling leaves,
+and a mud puddle that looks like it will be hard to avoid.  It doesn't
+appear to be very deep though, so traversing it won't be a problem.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 15354
+D2
+~
+~
+0 0 15409
+S
+#15411
+Clearing in the Nature Trail~
+~
+~
+The wild rye have taken over this small meadow.  A pathway to the east
+and west has been cut through for the enjoyment of all walkers.  A foul reek
+has permeated the whole area as local vagrants have decided this is a very
+nice place to reside in comfort.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15412
+D3
+~
+~
+0 0 15409
+S
+#15412
+Following the Nature Trail~
+~
+~
+The trail runs east and west of this small forest of maples and elms.  A
+tainted breeze blows from the west, carrying with it the reek of unwashed
+bodies and putrid filth.  The trees northward keep a barrier to which the
+air cannot pass, thus helping keep the air stagnant.  Small rodents scurry
+about in the dead undergrowth, obviously happy with their lot in life.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 15406
+D3
+~
+~
+0 0 15411
+S
+#15413
+Approaching the Picnic Table~
+~
+~
+There is a large metal container overflowing with trash that has been
+knocked over.  Given the amount of trash in the park, it seems that the
+people responsible for removing it are either underpaid, or are
+non-existant.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15313
+D2
+~
+~
+0 0 15414
+S
+#15414
+Near a Picnic Table~
+~
+~
+Yet another picnic table sits here, this one being made of some kind of
+stone that has been carved extremely smooth.  It is still cool to the touch,
+as it hasn't warmed up like the air around it.  There are pieces of wrapping
+material and a wicker basket sitting on the table.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15413
+D1
+~
+~
+0 0 15415
+D3
+~
+~
+0 0 15419
+S
+#15415
+Near a Picnic Table~
+~
+~
+A thin trail of ants winds across the table here, going from a pool of
+sticky dried soda to the ground Cigarette butts litter the ground, providing
+some white to the tones of brown that cover everything else.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 15416
+D3
+~
+~
+0 0 15414
+S
+#15416
+Near a Picnic Table~
+~
+~
+There is not much to note about this part of the picnic table, except
+that it is relatively clean of debris.  Well, mostly clean as some bird has
+left it's mark.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15415
+D3
+~
+~
+0 0 15417
+S
+#15417
+Near a Picnic Table~
+~
+~
+The dirt here is worn hard from people walking over it daily.  It is also
+free of rocks, being raked at some point in time.  The air smells clean
+here, as there are no trash bins directly upwind.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15416
+D3
+~
+~
+0 0 15418
+S
+#15418
+Near a Picnic Table~
+~
+~
+The stone bench of the picnic table is covered with clothes and a
+blanket.  A family in enjoying their meal until you arrived.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15419
+D1
+~
+~
+0 0 15417
+S
+#15419
+Near a Picnic Table~
+~
+~
+There is quite a bit of shade here.  The large limbs rustle in the wind,
+providing both shade and enough background noise to quiet out the rest of
+the busy city.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15414
+D2
+~
+~
+0 0 15418
+S
+#15420
+Approaching the Picnic Table~
+~
+~
+You find yourself on a small pathway, paved with smooth riverstones.  The
+path leads northwards through small flowering dogwoods towards the Picnic
+Tables.  To the south, through flowering azaleas, the path goes back to the
+main trail through the park.  You can hear faint sounds of laughter coming
+from the north.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 15421
+D2
+~
+~
+0 0 15324
+S
+#15421
+At the Picnic Table~
+~
+~
+You've reached another picnic area of the park.  Here is found the
+southern end of a huge concrete picnic table.  A few cigar butts and a dirty
+bottle are found on the ground as well as a steady flight of yellowjackets,
+hunting for sweets or any liquid.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15422
+D2
+~
+~
+0 0 15420
+D3
+~
+~
+0 0 15426
+S
+#15422
+At the Picnic Table~
+~
+~
+You are at the southeastern end of a humongous concrete picnic table. 
+It's surface has been cracked but not entirely broken.  Ants swarm over its
+filthy surface, searching for any morsel of food.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15423
+D3
+~
+~
+0 0 15421
+S
+#15423
+At the Picnic Table~
+~
+~
+You are at the northeastern end of a humongous concrete picnic table. 
+Its surface has been cracked and some of the crevices are starting to
+crumble the structure.  More ants are found here, picking through the rubble
+of the table as they search for any crumb of sustenance.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 15422
+D3
+~
+~
+0 0 15424
+S
+#15424
+At the Picnic Table~
+~
+~
+You've reached the north side of the picnic table.  The concrete
+structure has been built into the side of the largest fireant mound you've
+ever seen!  Red clay and fireants pour across the table, consuming and
+covering all in its path.  Bones of birds, squirrels and other such
+creatures litter the ground all abouts.  You get a funny feeling that
+'something' is watching...  And waiting...  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15423
+D3
+~
+~
+0 0 15425
+S
+#15425
+At the Picnic Table~
+~
+~
+You are at the northwest end of a humongous concrete picnic table.  Its
+surface has been cracked and some of the crevices are starting to crumble
+the structure.  More ants are found here, picking through the rubble of the
+table as they search for any crumb of sustenance.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 15424
+D2
+~
+~
+0 0 15426
+S
+#15426
+At the Picnic Table~
+~
+~
+You are at the southwestern end of a large slab-concrete table.  Its
+surface shows a few hairline cracks from years of abuse and use.  A lone red
+ant wanders by, carrying what looks like a shrew's foot.  Tall grasses and
+untrimmed shrubs close in this area.  Things don't look well tended and you
+get the sneaking suspicions that -something- IS watching.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15425
+D1
+~
+~
+0 0 15421
+S
+#15427
+Approaching the Picnic Table~
+~
+~
+The pine woods are thinning into aspens and a few maples.  To the north
+comes a wonderful smell of roasting 'something'.  Southwards leads back to
+the main pathway through the park.  You can hear the sound of flies and
+wasps from the overloaded trashcan beside the trail.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 15428
+D2
+~
+~
+0 0 15328
+S
+#15428
+At the Picnic Table~
+~
+~
+You've reached another of the picnic areas.  This one looks rarely used
+and is not cracked or chipped.  It's fairly clean.  Southwards leads to the
+trail that brought you here.  East and west will get you around the table. 
+The scent of burning meat permeates the air.  Something IS being cooked.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 15429
+D2
+~
+~
+0 0 15427
+D3
+~
+~
+0 0 15433
+S
+#15429
+At the Picnic Table~
+~
+~
+You stand at the southeastern end of a picnic table.  The scent of
+roasting flesh still hangs in the air, though not as heavily.  A slight
+breeze through the aspens and maples helps disperse the smell.  Northward
+and westwards are ways around this clean table.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 15430
+D3
+~
+~
+0 0 15428
+S
+#15430
+At the Picnic Table~
+~
+~
+You stand at the northeastern end of a picnic table area.  The scent of
+roasted flesh still hangs in the air, but not as strongly as before.  A
+slight breeze through the maples and aspens helps disperse the odor. 
+Westward and southwards are ways around this remote table.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 15429
+D3
+~
+~
+0 0 15431
+S
+#15431
+At the Picnic Table~
+~
+~
+A large, new picnic table is to your south.  It has a few utensils as
+well as condoments upon it.  Billows of smoke come from the west as well as
+the wrenching smell of burnt hotdogs.  The pathway around the table wind to
+the east and west.  A fly buzzes your ears in his attraction to the smell of
+flesh.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 15430
+D3
+~
+~
+0 0 15432
+S
+#15432
+At the Picnic Table~
+~
+~
+Billows of grey smoke fill the air above the pits.  Burnt and broken
+remains of weiners are on the ground, in the fire and still scattered on the
+grill.  The picnic table is covered with opened packages of hotdogs and
+sausages.  A few flies are on the food but most are afraid to land because
+of the smoke.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 15431
+D2
+~
+~
+0 0 15433
+S
+#15433
+At the Picnic Table~
+~
+~
+The aspen and maple forest closes in around this end of the picnic table.
+The stench of burnt meat hangs heavily in the air as billows of smoke come
+from the north.  The flies seem thicker here, attracted by the smell of raw
+flesh.  To the north and east are ways around the table.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 15432
+D1
+~
+~
+0 0 15428
+S
+#15434
+Heading towards the Public Restrooms~
+~
+~
+This small path leads north to the restrooms, and south back towards the
+main trail in the park.  Flies buzz about in a great swarm, providing more
+of an annoyance then anything.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15435
+D2
+~
+~
+0 0 15316
+S
+#15435
+Standing Before the Public Restrooms~
+~
+~
+You are standing directly south of the restrooms in the park.  This small
+brown building provides a very important function for the citizens of
+methidoral, though, there are ample trees and bushes that would provide the
+same service without the odor.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 15436
+D2
+~
+~
+0 0 15434
+S
+#15436
+Standing between the Restrooms~
+~
+~
+You are standing between the pit-toilets that the city was generous
+enough to provide for public usage.  Toward the west lies the mens room,
+toward the east, the ladies.  The smell here is quite bad, and reminds you
+of the open sewers of the past.  Toward the north is a locked door, with the
+words "Maintence, Keep Out" written across it.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+87 15417 15437
+D1
+~
+~
+3 0 15445
+D2
+~
+~
+0 0 15435
+D3
+~
+~
+3 0 15438
+S
+#15437
+Maintence Room~
+~
+~
+You are standing in a rather small maintence room, litered with various
+tools used to clean the restrooms, along with rakes, shovels, and other
+groundskeeping devices.  A faucet provides one of the few decent sources of
+water you've seen.  
+~
+0 9 0
+Rd     0
+D2
+~
+~
+87 0 15436
+S
+#15438
+Standing in the Mens Room~
+~
+~
+You are standing just inside the door to the Mens Room.  The odor is very
+strong, it's source being behind the three doors that lead to stalls.  There
+are little pieces of toilet paper blowing around at your feet, a testament
+to the fact that men are pigs.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 15443
+D1
+~
+~
+3 0 15436
+D2
+~
+~
+0 0 15439
+D3
+~
+~
+3 0 15441
+S
+#15439
+Southern end of the Mens Room~
+~
+~
+This is the southern end of the Mens Rooms.  There is graffiti on the
+walls depicting all sorts of crude sexual acts.  There are some empty bear
+cans stacked in a pyramid here, showing that whoever drank all that beer
+couldn't have been that drunk.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 15438
+D3
+~
+~
+3 0 15440
+S
+#15440
+In a Stall in the Mens Room~
+~
+~
+The stench is overwhelming!  Urine and feces make you gag and there is no
+toilet paper but there is the remains of a Playhouse magazine.  Cigarette
+butts and graffiti are all about, mainly gang symbols and warnings.  
+~
+0 268435456 0
+Rd     25
+D1
+~
+~
+3 0 15439
+S
+#15441
+In a Stall in the Mens Room~
+~
+~
+You are standing in a stall in the Mens Room.  Someone was wise enough to
+leave the lid down, so the odor isn't quite as bad as the other stalls.  You
+can see the corner of a piece of paper sticking out of an air vent above
+your head.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 15438
+S
+#15442
+In a Stall in the Mens Room~
+~
+~
+Standing here provides the worst odor that you've ever wanted to
+experience.  Light filters in through some vents above your head.  They do
+an inadequate job of providing fresh air, leaving you gasping for breath.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 15443
+S
+#15443
+North end of the Mens Room~
+~
+~
+To your west lies a stall, and it takes careful footing to avoid stepping
+in the stream of urine that flows out from under the door.  The only light
+filters in through a vent above your head.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 15438
+D3
+~
+~
+3 0 15442
+S
+#15444
+North end of the Ladies Room~
+~
+~
+You are standing at the north end of the ladies room, the walls are
+relatively clean, and spider webs cover the ceiling.  The door toward the
+east seems new.  Maybe it was recently replaced...  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 15449
+D2
+~
+~
+0 0 15445
+S
+#15445
+Standing in the Ladies Room~
+~
+~
+You are standing inside the ladies room, which doesn't seem very
+lady-like.  Beer cans litter the floor, and you wonder what kind of diseases
+lie here.  There are three doors lining the eastern wall which lead to
+stalls.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 15444
+D1
+~
+~
+3 0 15448
+D2
+~
+~
+0 0 15446
+D3
+~
+~
+3 0 15436
+S
+#15446
+South end of the Ladies Room~
+~
+~
+You stand within the Ladies' Restrooms, south of the entry way and in
+front of one of the many stalls.  The stench rolls across the floor in waves
+from the east.  Cigarette butts and broken beer bottles as well as other
+litter lie all around you.  
+~
+0 268435456 0
+Rd     5
+D0
+~
+~
+0 0 15445
+D1
+~
+~
+3 0 15447
+S
+#15447
+Inside a stall in the Ladies Room~
+~
+~
+What a stench!  It is enough to turn you stomach, let alone what you see.
+There are things on the floor and toilet that would make a roach gag. 
+Graffiti and brown stuff cover about every inch of surface here.  There is
+even a dead rat in the corner and the air is so foul that not even spiders
+are found in here.  
+~
+0 268435456 0
+Rd     25
+D3
+~
+~
+3 0 15446
+S
+#15448
+Inside a stall in the Ladies Room~
+~
+~
+This stall is noticalbly empty, which is no suprise considering the shape
+it is in.  The floor is covered with all sorts of unmentionable things, and
+the walls are just as bad.  
+~
+0 0 0
+Rd     10
+D3
+~
+~
+3 0 15445
+S
+#15449
+Inside a stall in the Ladies Room~
+~
+~
+This stall is fairly clean, there is no excrement or trash here.  The
+toilet is also remarkably clean compared to the other stalls.  The only
+thing out of place is the graffeti on the back of the door.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 15444
+S
+#15450
+Before the Parking Lot to the Park~
+~
+~
+You are standing before the Parking Lot of the Methidoral City Park. 
+There is litter here from passing motorists who decided that trash cans were
+for looks only.  The air seems cooler here, blowing off from the grass in
+the park.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 26015
+D3
+~
+~
+0 0 15301
+S
+#0
+
+
+
+#SPECIALS
+M 15302 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 15409 0 15303
+O 0 15410 0 15303
+M 0 15304 1 15303
+M 0 15305 1 15303
+O 0 15402 0 15306
+M 0 15302 1 15306
+O 0 15401 0 15310
+M 0 15309 2 15315
+M 0 15310 2 15315
+M 0 15321 1 15317
+M 0 15301 5 15320
+E 0 15301 0 20
+E 0 15301 0 21
+E 0 15302 0 11
+E 0 15303 0 13
+E 0 15304 0 8
+E 0 15310 0 5
+O 0 15412 0 15330
+M 0 15324 8 15330
+O 0 15412 0 15331
+O 0 15412 0 15332
+O 0 15412 0 15333
+M 0 15324 8 15333
+O 0 15412 0 15334
+O 0 15412 0 15335
+O 0 15412 0 15336
+O 0 15412 0 15337
+O 0 15412 0 15338
+O 0 15412 0 15339
+O 0 15412 0 15340
+M 0 15322 4 15340
+M 0 15324 8 15340
+O 0 15412 0 15341
+M 0 15324 8 15341
+O 0 15412 0 15342
+M 0 15324 8 15342
+O 0 15412 0 15343
+M 0 15308 5 15347
+O 0 15411 0 15350
+P 0 15306 0 15411
+M 0 15322 4 15351
+M 0 15308 5 15355
+M 0 15323 4 15363
+M 0 15323 4 15367
+M 0 15323 4 15371
+M 0 15323 4 15372
+M 0 15307 5 15389
+M 0 15307 5 15395
+M 0 15308 5 15395
+M 0 15301 5 15399
+E 0 15301 0 20
+M 0 15307 5 15400
+M 0 15306 1 15411
+O 0 15403 0 15414
+O 0 15313 0 15414
+O 0 15406 0 15415
+O 0 15406 0 15416
+M 0 15317 1 15416
+M 0 15318 1 15416
+O 0 15405 0 15417
+O 0 15404 0 15418
+M 0 15316 1 15418
+O 0 15404 0 15419
+O 0 15405 0 15421
+O 0 15406 0 15422
+O 0 15406 0 15423
+O 0 15403 0 15424
+M 0 15424 1 15424
+O 0 15404 0 15425
+O 0 15404 0 15426
+O 0 15405 0 15428
+O 0 15406 0 15429
+O 0 15406 0 15430
+O 0 15403 0 15431
+O 0 15404 0 15432
+O 0 15407 0 15432
+M 0 15303 1 15432
+E 0 15311 0 5
+O 0 15404 0 15433
+O 0 15419 0 15437
+O 0 15415 0 15438
+O 0 15415 0 15439
+O 0 15413 0 15440
+O 0 15415 0 15440
+M 0 15315 1 15440
+O 0 15413 0 15441
+O 0 15414 0 15441
+P 0 15416 0 15414
+O 0 15413 0 15442
+M 0 15314 1 15442
+O 0 15415 0 15442
+O 0 15415 0 15443
+O 0 15415 0 15447
+O 0 15415 0 15447
+O 0 15413 0 15447
+O 0 15413 0 15447
+O 0 15415 0 15447
+O 0 15413 0 15447
+O 0 15415 0 15447
+O 0 15413 0 15448
+O 0 15415 0 15448
+O 0 15415 0 15448
+O 0 15413 0 15448
+O 0 15413 0 15449
+M 0 15320 1 15449
+O 0 15415 0 15449
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

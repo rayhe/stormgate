@@ -1,0 +1,4450 @@
+#AREADATA
+Name        {80-105} Summerset Isle~
+Builders    Kitti~
+VNUMs       8601 8700
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Kitti~
+Llevel      0
+Ulevel      0
+Sounds      &wA loud roar reverberates in the air.~
+Music       u6_forst.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#8601
+abyssian cat~
+an abyssian cat~
+An abyssian cat is hunting for mice.
+~
+This pretty little cat is stalking the mice and rats of the ship, and
+trying her hardest to keep her captain's ship free of the nasty pests. 
+Unfortunately, the size of the rats on the ship rivals the size of this
+little thing as well.  
+~
+65 552 0 0 0 0 S
+10 1 40 20 0 750d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#8602
+seagulls flock~
+a flock of seagulls~
+A flock of seagulls is wreaking havok on the mast!
+~
+The seagulls stop their tender ministrations upon the mast of the ship
+and all look in your direction.  Their beady little eyes glitter and they
+screech as one as they attack!  
+~
+99 524288 0 0 2 0 S
+80 1 190 160 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#8605
+gryphon feline child~
+Gryphon~
+A feline child is fishing at the side of the dock.
+~
+Gryphon appears to have ditched out on whatever chores his family sent
+him to do because the grin he bears and the wink he flashes at you isn't
+something a working child would display.  
+~
+67 16936 0 0 0 0 S
+80 1 170 170 0 27000d0+0 0d0+0
+0 15 0
+0 0 1
+0 0 0
+>rand_prog 3~
+emote whistles a happy tune.
+~
+>rand_prog 2~
+mpecho &CSomething tugs at the end of Gryphon's line!
+emote reels the line in and proudly displays a large trout.
+mpoload 8687
+eat trout
+emote burps happily and returns to fishing.
+~
+|
+#8606
+captain jack~
+Captain Jack~
+The captain of the ship sighs at the woeful state of his vessel.
+~
+The face of this human sea captain has been permanently etched into a
+look of woe, defeat and resignation.  His ship has been stuck on this island
+for years and it doesn't look like he'll be leaving any time soon.  He seems
+to have found some comfort in the bottom of a bottle of good whiskey.  
+~
+67 67109056 0 0 2 0 S
+102 1 210 215 0 35000d0+0 0d0+0
+300 1 0
+0 0 1
+0 0 0
+#8608
+sura priestess~
+Sura~
+The High Priestess of the Cat Goddess is praying softly here.
+~
+The High Priestess, Sura, is a tall, beautiful lioness with fur that
+shines golden in the light.  Her green-gold eyes belie a wisdom far greater
+than her years.  The Cat Goddess has bestowed upon Sura Her favour as she
+watches and heals Her children.  She is clad in a simple gossamer robe in
+the colors of the Goddess; silver, lavender and turquoise.  
+~
+67 8832 32784 16384 2 1000 S
+107 1 214 214 40000 40000d0+0 0d0+0
+1070 15 0
+0 0 2
+4098 0 0
+>fight_prog 20~
+cast 'sunburst'
+~
+>fight_prog 25~
+cast 'dispel magic'
+~
+>rand_prog 5~
+cast 'complete healing'
+~
+>rand_prog 5~
+cast 'natures blessing'
+~
+>fight_prog 25~
+cast 'holy fires'
+~
+>fight_prog 25~
+cast 'soulstrike'
+~
+>fight_prog 20~
+cast 'nagaroms curse'
+~
+>fight_prog 25~
+cast 'blindness'
+~
+>fight_prog 25~
+cast 'thunder strike'
+~
+|
+#8609
+onali dockmaster~
+Onali~
+The dockmaster is puffing lazily upon an aromatic pipe.
+~
+Onali is a smaller feline than most of the other males upon Summerset
+Isle, but that smaller size makes him ideal for quick movment around ships
+and the dock.  That is, if he could move very quickly with that one lef of
+his that's been replaced by a peg.  
+~
+67 16936 0 0 2 0 S
+93 1 190 195 0 32000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#8611
+tyger clouded tiger feline~
+Tyger~
+A clouded tiger feline is watching the waves out on the ocean.
+~
+Tyger is one of the rare breeds of feline.  His silvery gray fur has the
+normal stripes of tigers, but patches of his fur are a dark grey cloud
+shape.  You wonder what nature was thinking when she created this
+coloration, but upon thinking about it, you'd bet he'd be hard to see in the
+dark in alleyways or streets.  
+~
+65 16936 0 0 2 0 S
+85 1 170 175 0 29350d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#8615
+panthra panther feline~
+Panthra~
+A panther feline appears to have lost her wares.
+~
+Panthra looks very distressed and the reason is quite obvious once you
+look around you.  All of her live bait has managed to get loose and is
+quickly disappearing through the cracks in the floorboards.  
+~
+67 16936 0 0 2 0 S
+98 1 201 190 0 35500d0+0 0d0+0
+240 15 0
+0 0 2
+0 0 0
+#8616
+mynx leopard snow~
+Mynx~
+A snow leopard tavern wench is here to take your order.
+~
+Mynx is a very lovely and buxom feline woman.  Her body is covered in a
+fine fur the color of snow leopard markings.  Her eyes are an entrancing
+pale blue that seem to sparkle at you as she decides how to handle her
+customers.  She is the twin sister to Manx, but is far from built like a
+warrior.  
+~
+524355 16794280 0 0 3 0 S
+107 1 214 214 0 100d0+0 0d0+0
+0 15 0
+0 0 2
+4099 0 0
+#8619
+miara serval feline~
+Miara~
+A serval feline is cooking all sorts of tasty fish.
+~
+Miara is a feline from the desert who decided to move to the island where
+her people originated from.  Now she is one of the best cooks on the island
+and by far the best seafood cook in the Storm Gate.  
+~
+524355 16794280 0 0 3 0 S
+107 1 214 214 0 500d0+0 0d0+0
+0 0 0
+0 0 2
+36867 0 0
+>give_prog spiced catfish filet~
+say Oh! Thank you $n!
+hug $n
+say It's so hard to get such good catfish nowadays and already prepared for me as well
+say Take these as my thanks. Fare thee well!
+mpoload 8641
+give earrings $n
+mppurge filet
+endif
+~
+>give_prog filet catfish~
+say Oh! Thank you $n!
+smile $n
+say It's so hard to get good catfish nowadays...
+say Take this as my thanks. Fare thee well!
+mpoload 8611
+give pelt $n
+mppurge filet
+endif
+~
+>rand_prog 3~
+sigh
+say I wish I had the time to restock my catfish supply.
+say The children in this town are so unreliable.
+~
+|
+#8622
+kirrar cheetah~
+Kirrar~
+A humanoid cheetah is dusting off her countertop and supplies.
+~
+Kirrar is a sleek, almost painfully thin feline woman with powerful leg
+muscles that indicate her probable speed in a foot race.  Her body is
+covered with tawny colored fur that is dotted with dark brown/black spots
+that allow her breed of feline to hide in savannah grasses almost invisibly.
+She is clad in nothing but an apron that has accumulated dust from her
+constant cleaning of her small shop.  
+~
+524355 16794280 16 0 3 0 S
+107 1 214 214 0 100d0+0 0d0+0
+0 15 0
+0 0 2
+36867 0 0
+>give_prog leopard pelt~
+say Ach! Ye've brought me the needed pelt!
+say Now if ye'll wait just a moment, I'll have a wonderful cloak made up for ye.
+emote spends a few moments with some scissors and cuts out a pattern in the pelt.
+emote does some mystical chants with special thread and a needle and begins to sew.
+say Ah, there we go. All finished.
+smile $n
+say Now ye have a one of a kind cloak. Enjoy it.
+mpoload 8605
+give cloak $n
+mppurge pelt
+endif
+~
+>all_greet_prog 100~
+if ispc($n)
+bow $n
+say Welcome to me shop, friend.
+say So many come here for me goods, but few seem to know about me special abilities.
+endif
+~
+>speech_prog special~
+mpechoat $n &WKirrar tells you 'Now, not many seem to remember this, but I used to run the furrier shop in town as well.'
+mpechoat $n &PThe cheetah sighs softly.
+mpechoat $n &WKirrar tells you 'Now I just sit all day in this shop and watch the cubs play.'
+~
+>speech_prog furrier~
+mpechoat $n &PKirrar nods at you.
+mpechoat $n &WKirrar tells you 'Aye, I used to be the best furrier around these parts.'
+mpechoat $n &WKirrar tells you 'Visitors from all around would come and buy me famous cloaks.'
+mpechoat $n &WKirrar tells you 'But since our time away from the rest of the world, I have been all but forgotten.'
+~
+>speech_prog cloaks~
+mpechoat $n &PKirrar grins at you.
+mpechoat $n &WKirrar tells you 'So ye be interested in me cloaks, eh?'
+mpechoat $n &WKirrar tells you 'I tell ye what. If ye bring me a leopard pelt, I'll make ye one to try out for yerself.'
+mpechoat $n &PKirrar goes back to dusting off her shelves.
+~
+|
+#8624
+lioness feline~
+a lioness~
+A lioness feline wonders where her cub has gotten to.
+~
+Soft golden fur covers the body of this humanoid lioness.  Her tawny mane
+tumbles to her waist in a golden braid that she absently tugs at as she
+looks about for her errant cub.  
+~
+65 16936 0 0 0 0 S
+90 1 200 175 0 31500d0+0 0d0+0
+100 15 0
+0 0 2
+0 0 0
+#8626
+rakkar cougar feline~
+Rakkar~
+A cougar feline is brewing potions in the back of his shop.
+~
+Rakkar is an old cougar feline who, despite his catty features, fits to a
+tee the descriptions of the stereotypical crotchety old wizard.  He wears a
+lopsided cone hat upon his head and a dark robe with little stars and runes
+etched along the hems.  He looks a bit perturbed at your disturbance of his
+shop, but the thought of incoming money is a wonderful thing.  
+~
+524355 16794280 16 0 3 0 S
+107 1 214 214 0 500d0+0 0d0+0
+0 15 0
+0 0 1
+36867 0 0
+>all_greet_prog 100~
+if ispc($n)
+nod $n
+say Greetings traveller
+endif
+~
+>speech_prog greetings~
+say Well now, it's been a long time since I've met a sociable stranger.
+say Glad to make your acquaintance.
+smile $n
+say If you're not too busy, perhaps you could do me a favor?
+~
+>speech_prog favor~
+say Well now, I thought that might catch your interest
+wink $n
+say In the jungles to the south of town there is rumored to be the remains of the old shaman's hut.
+say Within is an ingrediant I need for one of my brews. If you could bring it to me, I'd be in your debt.
+~
+>give_prog lynx paw shrunken~
+say My eternal thanks, traveller.
+say Take this as payment for your time.
+mpoload 8614
+give crystal $n
+mppurge paw
+~
+|
+#8631
+sahara sandy feline woman~
+Sahara~
+A sandy colored feline woman is staring longingly at the crib.
+~
+Sahara is an older feline woman of the sand tiger coloration.  She has
+sandy colored fur with slightly darker brow stripes that adorn her body. 
+She appears to be sad about something.  
+~
+67 16936 16 0 2 400 S
+90 1 180 185 0 31500d0+0 0d0+0
+60 15 0
+0 0 2
+3 0 0
+>rand_prog 3~
+say Oh poor sweet Tahki.
+emote sighs softly and sadly.
+~
+>speech_prog Tahki~
+say Tahki was my baby boy.
+sniff
+say He drowned in the pond many years ago.
+emote turns sad eyes upon you.
+say I miss him terribly.
+emote turns back to the crib.
+~
+>speech_prog tahki?~
+say Tahki was my baby boy.
+sniff
+say He drowned in the pond many years ago.
+emote turns sad eyes upon you.
+say I miss him terribly.
+emote turns back to the crib.
+~
+>give_prog crystal vision opaque~
+blink $n
+say You would give me something so valuable?
+say Why... with this I could look upon my Tahki as he was.
+emote bursts into tears!
+say My thanks, stranger. Take this for your kindness.
+mpoload 8615
+give ball $n
+mppurge crystal
+smile $n
+~
+|
+#8637
+seren panther~
+Seren~
+A handsome humanoid black panther is lounging here.
+~
+Dark as the night itself, Seren watches you closely with a pair of amber
+coloured eyes.  He is clad in a pair of tight leather breeches, a silver
+armband and a dark green-blue cloak.  He wears his mane tied back in a
+single ponytail that falls to the mid of his back.  He doesn't quite have
+the build of a warrior, but he definitely looks as if he knows a bit about
+fighting.  
+~
+67 49728 71303168 0 0 0 S
+100 1 200 200 29250 35000d0+0 0d0+10000
+1000 15 0
+0 0 1
+0 0 0
+#8641
+manx guard snow leopard~
+Manx~
+A snow leopard guard is protecting the village from intruders.
+~
+Manx is a very large male feline with light snow leopard markings and
+even lighter ice blue eyes which seem to miss nothing.  His job is what he
+considers the most important.  He protects the village from unwanted
+visitors such as canines and anyone else who might wish harm on the natives.
+He is the twin brother to Mynx, but built like a warrior rather than a shop
+owner.  
+~
+67 134267624 16 0 0 0 S
+103 1 200 200 0 33000d0+0 0d0+0
+600 15 0
+0 0 1
+3 0 0
+>fight_prog 25~
+disarm
+~
+|
+#8644
+bobcat~
+a bobcat~
+The family bobcat is guarding the house from unwanted guests.
+~
+This bobcat is larger than a mastiff and built just as heavily, thus
+making the perfect watchdog/cat.  He and his ancestors have guarded the
+Ki'Taye family for many generations and will continue to do so even after
+this one passes on.  
+~
+65 616 0 0 0 0 S
+80 1 160 165 0 28500d0+0 0d0+0
+20 15 0
+0 0 1
+0 0 0
+#8646
+leo lion~
+Leo~
+A golden lion with a black mane is staring out across the ocean.
+~
+Leo is the current mayor of the feline town on Summerset Isle.  He moves
+as one who is accustomed to fighting but carries the grace of an acrobat as
+well.  His golden fur shines in the lit room and contrasts with the dark
+black of his mane that he wears free about his head, neck and shoulders.  
+~
+67 17128 0 0 2 0 S
+102 1 210 210 0 35000d0+0 0d0+0
+1000 0 0
+0 0 1
+2 0 0
+#8649
+siamese cat~
+a siamese cat~
+A siamese cat gazes at you with disinterested eyes.
+~
+This dark cream colored cat glances at you with pale blue eyes and you
+could swear he sniffs in disdain.  He continues about his business as if
+your presence offends him.  
+~
+65 552 0 0 0 0 S
+10 1 20 20 0 750d0+0 0d0+0
+0 15 0
+0 0 1
+0 0 0
+#8650
+leopard feline~
+a leopard~
+A leopard feline is casually strolling about the town.
+~
+One of the many feline inhabitants of Summerset Isle, this leopard man
+seems to be taking his time enjoying the somnomulent heat that pervades the
+town.  He glances at you with half-lidded eyes and continues about his
+business.  
+~
+65 16936 0 0 0 0 S
+90 1 180 180 0 22500d0+0 0d0+0
+100 15 0
+0 0 1
+0 0 0
+#8651
+lion cub feline~
+a lion cub~
+A lion cub feline is chasing imaginary prey through the town.
+~
+This small feline cub is practicing his future hunting skills on
+imaginary prey and the adults' tails.  He doesn't seem to pay much attention
+to your presense.  Perhaps he hasn't noticed you?  
+~
+65 552 0 0 0 0 S
+70 1 20 20 0 25000d0+0 0d0+0
+20 15 0
+0 0 1
+0 0 0
+#8653
+whisper lynx feline~
+Whisper~
+A lynx feline is happily baking cakes and breads.
+~
+Soft, cloudy gray fur with white tufts and black points on ears, feet and
+face give Whisper a kind, non-threatening appearance.  She looks like she's
+in Seventh Heaven as she concocts new kinds of pastries for the town
+children to sample.  
+~
+67 16793768 0 0 3 0 S
+106 1 212 212 0 500d0+0 0d0+0
+0 15 0
+0 0 2
+2 0 0
+#8661
+kyttin ocelot feline~
+Kyttin~
+A lovely ocelot feline is enjoying the peace of the veranda.
+~
+A pair of pale gold-green eyes study you carefully as Kyttin notices you
+have disturbed her repose upon the veranda.  Long black hair is pulled
+loosely back from her face and falls to her waist in a dark cloud and
+matches well with her spotted tawny fur.  
+~
+67 16936 0 134217728 2 0 S
+103 1 250 250 0 35000d0+0 0d0+0
+200 15 0
+0 0 2
+2 0 0
+#8662
+catfish fish~
+a giant catfish~
+A giant catfish is swimming about the bottom of the pond.
+~
+Somehow this catfish has grown far larger than any other you've seen in
+your life.  It stretches from whiskered nose to tail about 6 feet and
+probably weighs more than most small ponies.  You'd bet it'd make for good
+eating.  
+~
+67 0 16777216 2 2 0 S
+105 1 275 275 0 50000d0+0 0d0+0
+100 0 0
+0 0 0
+131072 0 0
+#8663
+tigra tigress feline~
+Tigra~
+A tigress feline looks down her nose at you.
+~
+Tigra must be one of the "nobles" of the town, or at least her mannerisms
+indicate as such.  Her posture is perfect, her vocabulary (what you can
+understand of it) is formal, and she has this distressing habit of tilting
+her head a bit so she can look down he nose at you.  
+~
+524355 16794280 0 0 3 0 S
+107 1 214 214 0 500d0+0 0d0+0
+0 15 0
+0 0 0
+36867 0 0
+#8669
+sabbath leopard feline black~
+Sabbath~
+A black leopard feline is stalking the jungle for prey.
+~
+Sabbath is one of the more foul tempered of the felines on the small
+island they inhabit.  He is almost more rare with his fur coloration in
+which you can barely make out the black spots on his almost pure black fur. 
+He appears to be hunting for something in particular.  
+~
+97 268550848 4194320 32768 2 -650 S
+105 1 250 250 0 35000d0+0 0d0+0
+1050 15 0
+0 0 1
+2 0 0
+>fight_prog 2~
+fire crossbow
+~
+>fight_prog 1~
+slit
+~
+>fight_prog 20~
+disarm
+~
+|
+#8681
+cat shadowcat shadows~
+a shadow cat~
+The shadows seem to coalesce into the shape of a large cat.
+~
+You aren't quite sure if this feline creature is actually cat or shadows
+or perhaps both.  It constantly wavers between the shadows and the jungle
+growth so that you are able to discern that it is indeed at least the shape
+of a cat.  
+~
+65 115304 524288 0 0 0 S
+85 1 175 175 0 25000d0+0 0d0+0
+200 15 0
+0 0 1
+0 0 0
+#8685
+katara snow tiger feline~
+Katara~
+A snow tiger feline is praying at the jungle shrine.
+~
+Katara raises her head from praying to look at you with uncanny pale blue
+eyes.  She only pauses for a moment before returning to praying to her
+Goddess.  Her fur is completely white with no stripes adorning.  She sports
+a set of impressive looking canines reminiscent of a saber toothed cat's
+teeth.  
+~
+67 17064 0 0 2 0 S
+100 1 210 210 0 32400d0+0 0d0+0
+500 15 0
+0 0 2
+2 0 0
+#8688
+persian kitty~
+a persian kitty~
+A persian kitty is looking for something to pounce upon!
+~
+This pretty little white cat has an almost flat face with large blue eyes
+and a bright pink nose.  Her temper is sweet and almost prissy, but she
+definitely has a penache for playing!  
+~
+65 552 16 0 2 400 S
+10 1 5 5 0 750d0+0 0d0+0
+2 15 0
+0 0 2
+0 0 0
+>give_prog ball yarn colorful~
+say MEOW!!
+emote looks upon you with wide loving eyes.
+mpoload 8685
+give idol $n
+mppurge ball
+emote happily attacks the colorful ball of yarn.
+~
+|
+#8689
+bastet serval feline~
+Bastet~
+A black serval feline is searching for her love.
+~
+This slim, elegant looking feline is clad in soft night-black fur and an
+egyptian eodoric.  She seems to peer into your very soul with her large
+golden eyes before realizing that you're not who she's looking for.  
+~
+67 17128 16 0 2 650 S
+103 1 240 250 0 37000d0+0 0d0+0
+500 15 0
+0 0 2
+2 0 0
+>give_prog fire blossom fiery red~
+gasp
+say This... this could only have come from Darven!
+say Then you must have seen him!
+say Please, give this to him so he knows I look for him too
+mpoload 8609
+give locket $n
+mppurge blossom
+thank $n
+~
+>rand_prog 3~
+say Darven? Where are you?
+emote tries to look through the vines and leaves.
+~
+>rand_prog 3~
+emote gets a worried look upon her face.
+say I hope that nasty Sabbath didn't find him...
+~
+>death_prog 100~
+say NO! I must... find my love... Darven...
+say Curse you... to... the nine... hells!
+emote dies with a sad look to her beautiful features.
+~
+|
+#8691
+minx~
+a minx~
+An adorable little minx is snuffling the ground in search for truffles.
+~
+The minx is widely known for its abilities to find not just truffles, but
+the ever popular chocolate truffles.  The creatures looks like a cross
+between a kitten, a bunny and a puppy with all the cute qualities and none
+of the bad.  This sometimes renders the minx victim to raids of children who
+hunt for the hapless creature and warriors with no like for things that are
+"Uber Cute."  
+~
+65 0 16 0 0 0 S
+25 1 45 40 0 3750d0+0 0d0+0
+250 0 0
+0 0 2
+0 0 0
+>rand_prog 2~
+purr
+~
+>rand_prog 2~
+emote mews sweetly at you.
+~
+|
+#8692
+wildcat cat~
+a wildcat~
+A wildcat is prowling through the treetops.
+~
+A pair of pale amber eyes that are green around the pupil watch you with
+undisguised hunger.  This large jungle cat appears to be hunting for prey
+and doesn't care who's on the menu.  
+~
+97 16936 0 0 0 0 S
+87 1 175 175 0 32000d0+0 0d0+0
+20 15 0
+0 0 1
+0 0 0
+#8693
+jaguar~
+a jaguar~
+A spotted jaguar is hunting for prey.
+~
+The beautiful coloration of black spots upon a silken orange coat allows
+this huntress to blend in almost seamlessly into the canopy and underbrush
+of the jungle.  Few creatures are able to spot her before she makes the
+killing leap.
+~
+97 16936 0 0 0 0 S
+95 1 180 180 0 37500d0+0 0d0+0
+20 15 0
+0 0 2
+0 0 0
+#8694
+darven wolfen~
+Darven~
+A proud wolfen warrior is looking for his feline lover.
+~
+Darven is a handsome male of the canine race.  He appears to be of the
+timberwolf or gray wolf subspecies, but in either case he looks to be a very
+formiddable fighter.  He is looking for someone...  But who?  
+~
+67 335544872 20971536 0 2 0 S
+103 1 210 210 0 35000d0+0 0d0+0
+500 16 0
+0 0 1
+2 0 0
+>rand_prog 3~
+emote glances above him, on the look-out for predators.
+~
+>rand_prog 3~
+mpecho &zDarven calls out softly &W'Bastet? Are you there?'
+~
+>all_greet_prog 100~
+if ispc($n)
+look $n
+say Are you friend or foe?
+emote watches you warily.
+endif
+~
+>speech_prog friend~
+smile $n
+say That is good news, indeed.
+say Have you seen, perhaps, a beautiful feline named Bastet around here?
+~
+>speech_prog yes~
+say You have?!
+say Please, give this to her as a token of my love.
+say I've been trying to locate her, but that foul Sabbath seems intent on stopping me.
+mpoload 8602
+give blossom $n
+say This is a symbol of our burning love for one another.
+say She will know it was I who sent you.
+~
+>speech_prog foe~
+snarl $n
+say Then die like the swine you are!
+kill $n
+~
+>speech_prog no~
+sigh
+say It would appear the very jungle conspires against my love and I.
+~
+>fight_prog 10~
+disarm
+disarm
+~
+>give_prog locket cat-shaped cat silver~
+bow $n
+say My thanks for going out of your way to help us.
+say In appreciation, take this pendant to remember us by.
+mpoload 8610
+give pendant $n
+mppurge locket
+say May the Goddess light your way. Fare well, friend.
+~
+>fight_prog 5~
+bite
+~
+>fight_prog 10~
+kick
+~
+|
+#8695
+tabby cat~
+a tabby cat~
+A tabby cat is searching for lizards to torment.
+~
+This small house cat isn't one of the humanoid felines that dominate
+Summerset Isle, but it is definitely a cousin and so lives with the large
+cats as a friend, companion and pest control.  
+~
+65 552 0 0 0 0 S
+10 1 5 5 0 750d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#8696
+jaguar~
+a jaguar~
+A spotted jaguar is hunting for prey.
+~
+The beautiful coloration of black spots upon a silken orange coat allows
+this huntress to blend in almost seamlessly into the canopy and underbrush
+of the jungle.  Few creatures are able to spot her before she makes the
+killing leap.  
+~
+323 49704 0 0 0 0 S
+85 1 170 170 0 25000d0+0 0d0+0
+0 15 0
+0 0 2
+0 0 0
+#8697
+lion~
+a black lion~
+A black lion glares menacingly at you.
+~
+This impressive lion has the appearance of one who deserves to be known
+as "King of the Jungle" even though lions are usually found within the
+plains areas.  It seems he's just as happy to hunt his prey in the jungle
+lands as well as the plains.  Either way he is quite formidable.  
+~
+323 49704 0 0 0 0 S
+85 1 170 170 0 25000d0+0 0d0+0
+0 15 0
+0 0 1
+0 0 0
+#8698
+lynx~
+a lynx~
+A smokey gray lynx is stalking its prey.
+~
+Sometimes known as the ghost cat, this smokey gray beauty has the
+coloration of one who has been made for stalking within trees in the
+darkness without being seen and yet have no problems within the snow fields
+either.  
+~
+323 49704 0 0 0 0 S
+85 1 170 170 0 25000d0+0 0d0+0
+0 15 0
+0 0 1
+0 0 0
+#8699
+puma~
+a puma~
+A tawny colored puma is prowling about the area.
+~
+This beautiful wild cat is covered with soft, tawny colored fur with a
+black tail tip and black ears that are tipped with a tiny bit of white.  Her
+lovely face has a bit of white upon it that allows her to hide well within
+the trees or rocks rather than be seen as a solid colored cat shape.  
+~
+323 49704 0 0 0 0 S
+85 1 170 170 0 25000d0+0 0d0+0
+0 15 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#8601
+flowers crown circlet~
+a crown of flowers~
+A circlet of flowers is lying here.~
+~
+9 134218752 0 0 0 17 90
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+A
+18 20
+A
+304 -1
+A
+45 3
+A
+32 -2
+#8602
+fire blossom fiery red~
+a fire blossom~
+A small fiery red blossom is glowing brightly here.~
+~
+8 301989888 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8603
+gangplank ship merchant~
+gangplank~
+A gangplank leads on to a small merchant ship.~
+~
+29 0 0 0 0 0 0
+100 100
+8604~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+gangplank~
+&wJust &Renter gangplank &wto enter the ship.
+~
+E
+merchant~
+This is a small merchant ship that hasn't left the island of Summerset in
+ages.  Weather and the ocean have made their mark upon it, yet it still
+looks sturdy enough.  Perhaps if you entered the ship, you could get a
+better look around?  Try enter gangplank to get on the ship.  
+~
+E
+ship~
+This is a small merchant ship that hasn't left the island of Summerset in
+ages.  Weather and the ocean have made their mark upon it, yet it still
+looks sturdy enough.  Perhaps if you entered the ship, you could get a
+better look around?  Try enter gangplank to get on the ship.  
+~
+#8604
+gangplank dock~
+gangplank~
+A gangplank leads off of the ship and on to a dock.~
+~
+29 0 0 0 0 0 0
+100 100
+8603~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+gangplank~
+The gangplank looks like you can walk on it to get off of the ship.  Type
+enter gangplank to leave the ship.  
+~
+E
+dock~
+A long dock off of the island of Summerset extends next to the ship you
+are on.  If you wish to leave the ship, just enter the gangplank.  
+~
+#8605
+cloak leopard skin~
+a leopard skin cloak~
+A finely made leopard skin cloak has been dropped here.~
+~
+9 805306432 16 0 25427968 1025 102
+100 100
+0~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 120
+A
+19 20
+A
+1 2
+A
+36 -2
+A
+42 7
+#8606
+crossbow hunting~
+a hunting crossbow~
+A finely crafted hunting crossbow is waiting to be picked up.~
+~
+32 537952256 1568 0 77856768 2097153 103
+100 100
+103~ 6~ 6~ armour piercing bullet~
+7 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#8607
+quiver bolts crossbow~
+a quiver of crossbow bolts~
+A quiver of crossbow bolts has been carelessly dropped here.~
+~
+13 268435456 0 0 0 1 90
+100 100
+0~ 0~ 0~ 0~
+5 8000 0
+0 0
+reserved~
+0 0
+0 0 0
+#8608
+tigereye staff~
+a tigereye staff~
+A staff made of a single piece of tigereye is lying here.~
+~
+4 553649409 4626 0 16777216 16385 104
+100 100
+104~ 1~ 1~ summon tiger~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -24
+A
+13 120
+A
+12 120
+#8609
+locket cat-shaped cat silver~
+a cat-shaped locket~
+A beautiful silver locket in the shape of a cat has been lost here.~
+~
+8 268435457 0 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8610
+tigereyed wolf pendant silver~
+a tigereyed wolf pendant~
+A silver wolf pendant with tigereye stones for eyes has been lost here.~
+~
+9 536872257 0 0 0 5 80
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+5 0
+remove curse~
+5 5
+0 0 0
+A
+13 80
+A
+301 -1
+#8611
+leopard pelt~
+a leopard pelt~
+A beautiful leopard pelt has been abandoned here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+10 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#8612
+lynx paw shrunken~
+a shrunken lynx paw~
+A shrunken lynx paw appears to have lost its owner.~
+~
+13 536870912 0 0 0 16385 80
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 20
+#8613
+shortsword catseye eye~
+&wCat's Eye&G~
+A beautiful shortsword named "Cat's Eye" is glowing here.~
+~
+5 553649409 12818 0 25427972 8193 104
+100 100
+0~ 0~ 0~ 11~
+4 1 0
+0 0
+reserved~
+0 0
+8683 0 0
+A
+19 60
+A
+12 100
+A
+2 2
+A
+26 100
+A
+18 24
+#8614
+crystal vision opaque~
+a vision crystal~
+An opaque crystal is floating in the air.~
+~
+8 268435522 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+5 0
+scrye~
+1 1
+0 0 0
+#8615
+ball yarn colorful~
+a colorful ball of yarn~
+A colorful ball of yarn is slowly unraveling itself.~
+~
+9 268435456 0 0 0 32769 80
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -18
+A
+18 9
+#8616
+catnip tea~
+catnip tea~
+A minty smelling tea is steaming here.~
+~
+10 268435456 0 0 0 1 20
+100 100
+100~ detect invis~ detect magic~ detect hidden~
+2 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#8617
+ship~
+ship~
+A ship is here to take visitors back to the mainland.~
+~
+29 805306368 0 0 0 0 0
+100 100
+17597~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8618
+hookah~
+a hookah~
+&wAn intricately made hookah is &zsmoking&w with burning &gcatnip&w.&G~
+~
+12 301989888 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+100000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+hookah~
+This smoking device is actually quite beautiful as only one of the
+priestesses of the cat goddess is worthy of owning it.  A heady minty aroma
+comes from the smoke it gently emits and causes you to get a bit dizzy.  
+~
+#8619
+catfish blackened~
+blackened catfish~
+A plate of blackened catfish, cajun style, is sitting here.~
+~
+19 0 0 0 0 1 1
+100 100
+50~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#8620
+clam chowder bowl~
+a bowl of clam chowder~
+A bowl of thick clam chowder is steaming here.~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+1 28 0
+0 0
+reserved~
+0 0
+0 0 0
+#8621
+cabinet~
+a cabinet~
+&CA cabinet takes up the entire right wall of the kitchen.&w~
+~
+15 805306368 0 0 0 0 106
+100 100
+10~ 5~ 0~ 0~
+99999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8622
+backpack tigerskin~
+a tigerskin backpack~
+A backpack made of thick tigerskin has been dropped here.~
+~
+15 536870976 0 0 75759616 9 100
+100 100
+500~ 1~ 0~ 0~
+5 6000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+13 100
+#8623
+agate catseye eye~
+a cat's eye agate~
+A cat's eye agate is glowing brightly here.~
+~
+1 536870913 0 0 16777216 1 80
+100 100
+0~ 0~ -1~ 0~
+2 8000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -16
+A
+12 80
+A
+5 1
+A
+4 1
+#8624
+pina colada~
+a pina colada~
+A pina colada has been carelessly left here.~
+~
+17 0 0 0 0 1 20
+100 100
+10~ 10~ 8~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#8625
+fountain crystal~
+crystal fountain~
+A silver crystal fountain is flowing serenely here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+fountain~
+&wThe fountain seems to glow with a steady inner light as the silver
+crystal absorbes and refracts all light near the area.  Not even lamps are
+needed to see here as the brilliance is almost blinding.  In the center of
+the fountain is carved a figure of the Cat Goddess Herself.  She holds a
+delicate pink crystal horn from which the purest water spews forth.  
+~
+#8626
+potion turquoise~
+a turquoise potion~
+A turquoise potion is burbling here.~
+~
+10 268435456 0 0 0 1 80
+100 100
+80~ breathe water~ reserved~ reserved~
+5 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#8628
+crab legs~
+crab legs~
+Succulent crab legs are steaming in butter.~
+~
+19 0 0 0 0 1 1
+100 100
+40~ 0~ 0~ 0~
+2 32 0
+0 0
+reserved~
+0 0
+0 0 0
+#8631
+crib baby~
+baby crib~
+A beautiful wooden baby crib dominates the room.~
+~
+15 0 0 0 0 0 106
+100 100
+100~ 0~ 0~ 0~
+99999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+baby~
+The wood that makes up this crib has been sanded extra smooth so as there
+isn't a single splinter upon it and then polished to a beautiful finish. 
+Soft pastel colored blankets and a goose down mattress line the inside of
+the crib.
+~
+E
+crib~
+The wood that makes up this crib has been sanded extra smooth so as there
+isn't a single splinter upon it and then polished to a beautiful finish. 
+Soft pastel colored blankets and a goose down mattress line the inside of
+the crib.  
+~
+#8632
+blue orchid~
+an orchid~
+A blue orchid is growing in what light it can find.~
+~
+8 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8634
+rose silver~
+a silver rose~
+A beautiful silver rose has managed to be dropped here.~
+~
+8 536870912 0 0 0 16385 80
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 80
+A
+13 80
+E
+rose~
+&w      . -  - -,
+   &w.-_ . -  -.'-_-.
+   &w.----.    | {
+  &w'-- -. `      }&g.;
+       &g_&w`.__&g|`.&w-&g.{   &G          _ _ .-:
+        &g`---._ .|          &G.--  .--  }
+              &g\ \&O__     &G.-  .--   .-
+               &g\ \&O'     &G\ '_ _ --
+                &g`.`.    //
+    &G  . - - --.&g__`.`-.//
+  &G .--   . - -  }&g- - --.--.
+&G .' .--      .--      &O |/&g--.--.&O/|
+&G/_-_ _ . - -            &g     --.--._
+~
+#8637
+bench~
+bench~
+&WA curved white bench sits here to rest your weary bones upon.&w~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+bench~
+The bench is made of some unkown wood that has been sanded smooth and
+white-washed over.  It curves gently to fit the contours of the back and
+looks extremely comfortable.  
+~
+#8638
+broadsword serrated~
+a serrated broadsword~
+A wicked-looking serrated broadsword glitters dangerously.~
+~
+5 100679744 32784 0 92274688 8193 102
+100 100
+0~ 0~ 0~ 1~
+9 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+26 100
+A
+18 12
+A
+19 65
+#8641
+earrings catspaw paw tiny~
+tiny cat's paw earrings~
+A tiny pair of earrings in the shape of a cat's paw lie here.~
+~
+9 536870912 16 0 16777216 524289 101
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+A
+18 20
+A
+115 -1
+#8642
+tiger claw shortsword~
+&wTiger Claw&G~
+A beautiful shortsword named "Tiger Claw" has been dropped here.~
+~
+5 587203584 4626 0 4 8193 101
+100 100
+0~ 0~ 0~ 11~
+5 1 0
+0 0
+reserved~
+0 0
+8683 0 0
+A
+19 45
+A
+18 21
+A
+26 100
+A
+1 2
+#8643
+stiletto~
+a stiletto~
+A dangerous looking stiletto has been left here.~
+~
+5 16384 0 0 0 8193 90
+100 100
+0~ 0~ 0~ 11~
+2 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 50
+A
+19 4
+#8644
+tiger stuffed cuddly toy~
+a cuddly stuffed tiger~
+A child seems to have dropped their stuffed toy here.~
+~
+8 805306368 16 0 16777220 16385 2
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 -1
+A
+3 2
+#8650
+fountain marble~
+marble fountain~
+A blue and grey marble fountain is burbling merrily.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+fountain~
+&wYou closely examine the fountain and decide that it must have taken
+decades to carve it into the piece of perfection it currently is.  It was
+crafted from one solid piece of blue and grey marble.  In the center is a
+female puma holding a vase from which the water sprays into the surrounding
+pool.  
+~
+#8652
+glass lion figurine~
+a glass lion~
+A small glass lion figurine is glittering brightly.~
+~
+8 0 0 0 0 16385 80
+100 100
+0~ 0~ 0~ 0~
+5 10000 0
+5 0
+iceball~
+10 10
+0 0 0
+A
+23 -8
+A
+24 -8
+#8656
+wardrobe~
+wardrobe~
+A small empty wardrobe sits along the eastern wall of the room.~
+~
+15 0 0 0 0 0 106
+100 100
+700~ 5~ 0~ 0~
+100 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8658
+vase golden~
+golden vase~
+A golden vase sits upon an oval table at the end of the hall.~
+~
+15 805306368 0 0 0 0 106
+100 100
+200~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+table~
+This small curved wooden table has not been polished like the floors and
+the walls have been, but because of it, it glows warmly within the light in
+the hall.  Upon the table sits a vased filled to overflowing with orchids of
+many different colors.  
+~
+E
+vase~
+This well-crafted vase has been made of what appears to be gold, but is
+actually goldwashed silver.  The vase itself is brimming over with orchids
+of many different colors that can be picked in the jungle.  
+~
+E
+golden~
+This well-crafted vase has been made of what appears to be gold, but is
+actually goldwashed silver.  The vase itself is brimming over with orchids
+of many different colors that can be picked in the jungle.
+~
+#8659
+truffle chocolate~
+a truffle~
+A chocolate truffle is lying in the dirt.~
+~
+26 0 0 0 0 1 1
+100 100
+100~ bless~ change sex~ reserved~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#8661
+tiger lily~
+a tiger lily~
+A tiger lily is growing in the nearby light.~
+~
+3 0 0 0 0 16385 80
+100 100
+100~ 5~ 5~ create spring~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#8662
+filet catfish~
+a filet of catfish~
+An uncooked filet of catfish is starting to smell here.~
+~
+19 268435456 0 0 0 1 1
+100 100
+1~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+8696 0 0
+#8663
+tigereye necklace silver chain~
+a tigereye necklace~
+A large tigereye on a silver chain is lying forgotten here.~
+~
+8 536870914 0 0 25427968 5 90
+100 100
+0~ 0~ 0~ 0~
+1 8000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 -100
+A
+18 20
+A
+2 2
+A
+35 4
+A
+44 -1
+#8668
+ruins hut~
+ruins~
+The overgrown ruins of a thatched hut lie partially concealed.~
+~
+15 0 0 0 0 0 106
+100 100
+1000~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+ruins~
+Long, vicious looking claw marks still look livid upon the bits of wood
+and thatch that are still visible through the jungle growth that has
+attached itself upon the old home.  Whatever destroyed the hut was big and
+awfully mad.  
+~
+E
+hut~
+Long, vicious looking claw marks still look livid upon the bits of wood
+and thatch that are still visible through the jungle growth that has
+attached itself upon the old home.  Whatever destroyed the hut was big and
+awfully mad.
+~
+#8683
+saber claw sabre~
+&wSaber Claw&g~
+A wicked looking sabre is glowing brightly as it hovers nearby.~
+~
+5 838861825 8192 0 0 8193 105
+100 100
+0~ 0~ 0~ 3~
+5 40 0
+0 0
+reserved~
+0 0
+0 8613 8642
+A
+24 200
+A
+18 20
+A
+12 -300
+A
+13 150
+A
+26 100
+A
+19 70
+#8684
+statue goddess~
+a statue of the Cat Goddess~
+A statue of the Cat Goddess guards this jungle shrine.~
+~
+8 536870912 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+&wThe statue looks to be made of pure liquid silver but is cool and solid
+to the touch.  The Goddess seems to peer at you with light sapphire eyes
+that feel as if they peer into your very core.  She is clad in nothing but
+her fur and holds out a delicate paw to beckon you closer.  In her other paw
+she carries a small tiger cub that looks to be watching you as well.
+~
+E
+goddess~
+&wThe statue looks to be made of pure liquid silver but is cool and solid
+to the touch.  The Goddess seems to peer at you with light sapphire eyes
+that feel as if they peer into your very core.  She is clad in nothing but
+her fur and holds out a delicate paw to beckon you closer.  In her other paw
+she carries a small tiger cub that looks to be watching you as well.
+~
+#8685
+cat idol~
+a cat idol~
+An idol of the cat goddess is glowing with an inner light.~
+~
+1 822084865 5650 0 16777220 1 103
+100 100
+0~ 0~ 0~ 0~
+10 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 26
+A
+2 2
+A
+12 150
+A
+13 150
+#8686
+pipe~
+a pipe~
+A pipe full of cloves has been left here.~
+~
+9 33554560 0 0 0 16385 80
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 -10
+A
+18 -20
+#8687
+trout~
+a trout~
+A large rainbow colored trout is flopping about here.~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#8688
+fishing pole~
+a fishing pole~
+A long fishing pole is propped up here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 7~
+5 400 0
+1 8687
+reserved~
+50 50
+0 0 0
+A
+19 6
+#8689
+egyptian eodoric~
+an eodoric~
+A beautiful egyptian eodoric made of gold is lying here.~
+~
+9 536871937 5122 0 0 9 103
+100 100
+0~ 0~ 0~ 0~
+10 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -16
+A
+23 -16
+A
+12 160
+#8690
+bread sweet~
+sweet bread~
+A loaf of sweet bread is steaming here.~
+~
+19 0 0 0 0 1 1
+100 100
+15~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#8691
+hook~
+a hook~
+A nasty looking hook is glittering in the light.~
+~
+5 134217728 0 0 0 8193 100
+100 100
+0~ 0~ 0~ 5~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 100
+A
+19 30
+A
+18 30
+#8692
+cutlass~
+a cutlass~
+A well-made cutlass has been dropped here.~
+~
+5 1146944 13856 0 0 8193 101
+100 100
+0~ 0~ 0~ 1~
+5 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+19 46
+A
+18 20
+#8693
+whiskey bottle~
+a bottle of whiskey~
+A fine bottle of whiskey is waiting to be drunk.~
+~
+17 0 0 0 0 1 10
+100 100
+40~ 40~ 5~ 0~
+2 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#8696
+spiced catfish filet~
+a filet of spiced catfish~
+A filet of spiced catfish has been dropped here.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8697
+powder cajun~
+cajun powder~
+A small packet of cajun powder has been dropped here.~
+~
+19 268435456 0 0 0 1 80
+100 100
+1~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+8696 0 0
+#0
+
+
+
+#ROOMDATA
+#8601
+The Prow of a Ship~
+~
+~
+From here you can see stretches of dark blue ocean spreading out as far
+as the eye can see to the north and east.  Small white caps from incoming
+waves dot the water and seem to be the only break in all that blue.  When
+you peek over the edge you can see the figurehead of the ship.  It appears
+to be a lion-headed merman that guards the ship from oncoming rocks.  The
+wheel is behind you and above is the mast.  
+~
+0 131072 1
+Rd     0
+D2
+~
+~
+0 0 8604
+S
+#8602
+Up the Mast~
+wind4.wav V=100 L=1 P=50 T=Ambient~
+~
+You perch precariously on the small platform from which sailors can spy
+out for reefs, rocks and any landmasses.  A mass of nets spreads out below
+you and you think you could shimmy down them to the deck below when you are
+done looking around up here.  The sails are furled but look as if they're in
+need of serious repair before this ship goes out any time soon.  
+~
+0 131074 1
+Rd     0
+D5
+~
+~
+0 0 8604
+S
+#8603
+A Shipping Dock~
+~
+~
+You stand on a large wooden dock off of the northern coast of Summerset
+Isle.  The ocean stretches out before you to the north, east and west.  From
+where you are, you can see a village at the end of the dock and huge stands
+of tropical plants and trees that form the Summerset Jungle.  The smell of
+fish and brine is ripe in the air.  
+~
+0 131072 1
+Rd     0
+D2
+~
+~
+0 0 8605
+S
+#8604
+On the Deck of a Ship~
+~
+u7_sea.mid V=50 L=1 P=50 T=Background~
+Weather and the sea have caused the wood on this small ship to gray with
+age, yet it looks quite sea-worthy.  There doesn't seem to be any real cabin
+for the captain or crew to stay in.  There only seems to be the wheel to
+steer the ship, the mast, a fishing net and a cargo hold.  A gangplank leads
+off of the ship and on to a dock leading to the rest of Summerset Isle.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8601
+D2
+~
+~
+0 0 8606
+D4
+~
+~
+0 0 8602
+D5
+~
+~
+0 0 8607
+S
+#8605
+An Island Dock~
+~
+~
+The sharp smell of brine and fish permeate your senses as a soft breeze
+brings a cool mist of water off of the ocean.  You glance between the wooden
+planks at your feet and can see the large shapes of fish swimming beneath
+you.  To the north of you are two small ships and to the south is the rest
+of the island.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8603
+D2
+~
+~
+0 0 8610
+S
+#8606
+The Aft of a Ship~
+~
+~
+This is where the captain of the small ship shouts his orders at the crew
+and guides the ship through the treacherous waters beyond.  From here you
+can see every part of the ship, save for inside the hold.  Endless stretches
+of blue ocean lie out to the north and east and you spot the occasional
+dolphin jump from the water nearby.  Above you is the mast and to the north
+of you is the rest of the ship.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8604
+S
+#8607
+In the Cargo Hold~
+~
+~
+Normally this hold is packed full of crates of goods to ship between the
+island and the rest of the land.  However, with the ship in some disrepair,
+the cold currently is mostly empty, waiting for its crew to once again be on
+their way.  You notice that the hold is conspicuously devoid of any type of
+rodents.  But then again, being on an island of felines is enough to make
+any rat think twice.  
+~
+0 131080 0
+Rd     0
+D4
+~
+~
+0 0 8604
+S
+#8608
+The Altar~
+~
+u7_love.mid V=50 L=1 P=50 T=Background~
+Candles and a soft light from somewhere above illuminate this part of the
+temple with an unearthly ambiance.  An altar made of tigereye agate and
+covered with a soft lace cloth.  Prayers to the Goddess have been carved
+into the altar and candelabra and two small statues of sitting servals guard
+them.  Far above you, a stained glass window in the shape of a cat looks out
+into the ocean and lets in its rainbow colored light.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+0 0 8612
+S
+#8609
+The Dockmaster's Shack~
+~
+~
+Large gray planks make up this small shack.  The only decorations seem to
+be anchors, mounted fish, maps and charts.  A fishing net has been hung from
+some pegs in the corner of the room to form a comfortable looking hammock. 
+A desk littered with papers and rope sits near the door and an old rickety
+chair is propped up behind it.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 8610
+S
+#8610
+Summerset Pier~
+~
+~
+You are at the northern end of the pier where the docks start and shops
+end.  Large anchors and nets lie all around where the fishermen last left
+them.  It seems that thievery of these sorts of items isn't a large concern
+around these parts.  The pier continues to the south and the Dockmaster's
+shack is to the west.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8605
+D2
+~
+~
+0 0 8611
+D3
+~
+~
+0 0 8609
+S
+#8611
+Along the Pier~
+~
+~
+Large fishing nets full of fish, crabs and other sea creatures are lying
+in piles all over the place.  A few fishing poles lie propped up against a
+wooden hut to the east.  The pier continues to the north and to the south
+and an even stronger smell of fish comes from the hut to the east of you.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8610
+D1
+~
+~
+0 0 8615
+D2
+~
+~
+0 0 8620
+S
+#8612
+Temple to the Cat Goddess~
+~
+~
+Large, overstuffed silk pillows line the ashwood floor in this part of
+the temple.  Rainbow colored light filters in from a stained glass window to
+the north above the altar.  To the east is a curtained confessional and to
+the west is a white stone water basin for baptisms.  Tapestries of large
+jungle cats drapinig in trees line the walls and there is no doubt in your
+mind as to who this temple is to.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 8608
+D1
+~
+curtain~
+3 0 8613
+D3
+~
+~
+0 0 8614
+D5
+~
+~
+0 0 8617
+S
+#8613
+A Confessional Booth~
+~
+~
+This small booth is barely lit with only the light coming in from under
+the curtain to allow you to see.  A low, thin padded bench for the
+confessors to kneel upon has been provided, but that is all that shows any
+kind of comfort in here.  You notice that there is no place for a priest to
+hear the confessions.  It looks as if the worshippers confess to the Goddess
+Herself.  
+~
+0 131082 0
+Rd     0
+D3
+~
+curtain~
+3 0 8612
+S
+#8614
+A Baptismal Altar~
+~
+~
+Upon a short raised dais sits a white stone basin filled with what you
+assume to be holy water.  The strong aroma of catnip comes from within and
+after taking a closer look, you notice definite catnip leaves floating
+within.  To the east you can see large silk pillows for worshippers to rest
+upon and a staircase leading down.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 8612
+S
+#8615
+The Tackle Shop~
+~
+~
+Large jars of nightcrawlers, worms, sardines, and all sorts of different
+types of bait line the shelves and counters in this hut.  On some of the
+walls are brand new nets and finely made fishing poles.  In several
+different containers you can find repairing gear for nets, fishing line and
+a myriad other things.  This place looks to be the fisher's heaven.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 8611
+S
+#8616
+The Purring Pussycat~
+~
+u7_shady.mid V=50 L=1 P=50 T=Background~
+Unlike the other thatched huts in the town, this one seems to have been
+dug down deep into ground itself as you find that you must go down a few
+steps to reach the mainroom of this small tavern.  A long bar covers most of
+the western wall upon which are empty shot glasses and small pouches of
+catnip.  Above the bar and almost as long is a portrait depicting a leopard
+feline woman lounging on silken cushions.  A few tables sit in the room with
+their chairs left precariously pushed out.  No windows look out of the
+tavern room and the only exit appears to be out the door to the south.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+0 0 8623
+S
+#8617
+The Temple Foyer~
+~
+u7_love2.mid V=50 L=1 P=50 T=Background~
+The smell of catnip is thick in here and your eyes have a hard time
+adjusting to the contrasting light coming from outside and the warm darkness
+from within.  Soft melodic music is coming from somewhere nearby but it
+doesn't even remotely sound pious.  This must be a temple of hedons.  Along
+the walls are tapestries depciting jungle cats snoozing in branches, dancing
+and particpating in other hedonistic rituals that confirm your conclusion. 
+A staircase leads up into the main part of the temple and a small wooden
+door to the east look to be the entire building.  
+~
+0 131084 0
+Rd     0
+D1
+~
+~
+3 0 8618
+D2
+~
+~
+0 0 8625
+D4
+~
+~
+0 0 8612
+S
+#8618
+The Priestess's Chambers~
+~
+~
+This small room looks to have been furnished for a queen rather than a
+priest.  A large satin pillow that serves for a bed sits in one corner and a
+hookah filled with catnip dominates the center of the room.  A book shelf on
+a wall opposite the pillow is filled with books such as "The Katra Sutra",
+"Arabian Felines", "Playcat", "Pussycat Theater" and many other titles that
+would make your mother blush.  A small wooden door leads into the rest of
+the temple to the west.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+3 0 8617
+S
+#8619
+Seafood Palace~
+~
+u6_johne.mid V=50 L=1 P=50 T=Background~
+The mouth-watering aroma of fresh clam chowder, blackened catfish, fresh
+crab and many other seafood delights fills the air.  A long counter and
+stove lines the back wall for customers to watch their meals be prepared. 
+Red and white checked tablecloths cover a few small round tables that have
+been placed meticuously around the room.  Paintings of boats and fish line
+the walls and a large mounted swordfish is on a plaque above the door to the
+east.  
+~
+0 131080 0
+Rd     0
+E
+plaque~
+The one that didn't get away.
+~
+D1
+~
+~
+0 0 8620
+S
+#8620
+The Pier~
+~
+~
+The wooden planks are wet beneath you as the constant spray of waves hits
+the rocks beneath the pier.  Buckets full of oysters and mussels line the
+east side of the dock where their owners left them.  Greasy smoke is coming
+from a stove stack in the small shelter to the west of you and the strong
+smell of frying fish wafts towards you from the open door.  The pier
+continues to both the north and to the south.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8611
+D2
+~
+~
+0 0 8628
+D3
+~
+~
+0 0 8619
+S
+#8621
+A Cheery Kitchen~
+~
+~
+Large bright windows framed on the outside by dangling vines and jungle
+trees look out across the endless blue ocean to the north.  Windows in the
+west wall give a view of thick jungle and a cliff that drops off into the
+ocean below.  A large oven and counter dominates the north wall beneath and
+between the windows and kitchen cabinets completely fill the eastern wall. 
+A walnut table in the center of the room is covered in knives, bowls,
+chopped onions and many other preparatory items for a meal.  The only exit
+out is through a door in the south wall that leads into the dining room.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+3 0 8634
+S
+#8622
+The Provisioner~
+~
+u3_shop.mid V=50 L=1 P=50 T=Background~
+This small thatched hut is well stocked with backpacks, hunting
+equipment, food supplies and miscellaneous bits of gear.  Several large
+windows look out to the jungle and ocean beyond the shop and let in the
+sounds of raucous birds and other wild creatures that share the island with
+the felines.  The only apparent exit is in the east wall from which you can
+see the rest of the town plaza.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 8623
+S
+#8623
+Felis Plaza~
+~
+~
+The tightly packed earth of the plaza appears to be covered with a soft
+loam that shows plainly the paw prints of the natives of this island town. 
+The impressive size is enough to scare most of the tinier races of the known
+world.  Large palm fronds, underbrush and blooming flowers grow in planters
+and all along the sides of the plaza that aren't taken up by small huts that
+serve as shops and houses.  You can spot to the southeast a lovely white
+gazebo and a small manor house a bit of ways to the south.  To the north of
+you comes the sounds of steel being worked into something and to the west is
+a small shop.  The plaza continues to the east towards a temple and to the
+south.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 8616
+D1
+~
+~
+0 0 8624
+D2
+~
+~
+0 0 8636
+D3
+~
+~
+0 0 8622
+S
+#8624
+North Felis Plaza~
+~
+~
+The smell of slightly over-ripened fruits, blooming tropical flowers and
+catnip incense wafts in the air as you pause in this shaded part of the town
+plaza.  You are able to spot flashes of endless blue ocean between the thick
+trunks of the large jungle trees and heavy underbrush to the north.  Just to
+the east is a beautiful fountain in front of a small temple and directly to
+the south is a lovely white gazebo.  The plaza continues to both the east
+and west of you.  
+~
+0 131072 1
+Rd     0
+D1
+~
+~
+0 0 8625
+D2
+~
+~
+0 0 8637
+D3
+~
+~
+0 0 8623
+S
+#8625
+Felis Plaza~
+~
+~
+The faint smell of catnip fills this little corner of the plaza that was
+lucky enough to be in front of the town temple.  The temple looms to the
+north and appears to be made of silver and lavender marble with little
+flecks of turquoise throughout.  A beautiful silver crystal fountain burbles
+with fresh water that sounds almost out of place against the background of
+the sea waves you can hear to the north and east.  To the southwest is a
+lovely white gazebo in the center of the plaza and a large manor house a bit
+beyond that.  The plaza continues to the west and south.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 8617
+D2
+~
+~
+0 0 8638
+D3
+~
+~
+0 0 8624
+S
+#8626
+Ye Olde Magick Shoppe~
+~
+u3_shop.mid V=50 L=1 P=50 T=Background~
+Thin spirals of smoke waft through the air in this small hut and bring
+with them the soft scents of vanilla and jasmine incense.  Fetishes, amulets
+and other magical trinkets sit on shelves or hang from small pegs on the
+thatched walls.  There don't appear to be any windows that look outside to
+the beach that you are sure is to the north or the jungle that surrounds.  A
+thick black curtain hangs over the door to the south and blocks out any
+outside lights that would interfere with the magical lighting that gives the
+hut a mystic ambiance.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+0 0 8639
+S
+#8627
+Customs~
+~
+~
+This room doesn't seem to be very large in size, however what it lacks in
+space, it makes up for in style.  Portraits of many foreign lands hang on
+the wooden walls and bits of jewelry and clothing are displayed in some
+cases.  On a wooden desk in the back of the room are a few travel papers and
+shipping schedules.  It doesn't look like many ships are scheduled to leave
+or enter this island any time soon, though.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 8628
+S
+#8628
+The Island Pier~
+~
+~
+You stand at the southern end a long pier.  Sand and water cover the
+wooden planks beneath your feet and an occasional hermit crab darts between
+ropes and nets.  Seagulls seem to have found this place a delight as they
+squabble between themselves over tasty fish morsels.  The village road is to
+the south and the pier continues over the ocean to the north.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8620
+D1
+~
+~
+0 0 8629
+D2
+~
+~
+0 0 8641
+D3
+~
+~
+0 0 8627
+S
+#8629
+The Shipwright's Guild~
+~
+~
+Large rolled up charts and framed blueprints of all sorts of ships line
+the walls, desk and shelves of this hut.  Half-constructed masts and prows
+lie in the very back of the room, waiting to be put together in the ships
+they were designed for.  From the ceiling hangs several half-sewn masts that
+seem to be in excellent shape despite their obvious age.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 8628
+S
+#8630
+The Master Bedroom~
+~
+~
+A large overstuffed feather, four poster bed covered in a rose comforter
+dominates the center of this room.  Above the bed is a large moon shaped
+window that allows in the light from outside as well as allows you to see
+the weather changes and a superb view of the ocean stretching to the north. 
+The floor in here is polished hardwood but a small gray throwrug has been
+lain over to keep feet warm.  A large wardrobe and an oak vanity decorate
+the eastern and western walls with small portraits and tapestries hung
+nearby to hide the stark white of the walls.  The only exit out is through a
+door to the south.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+3 0 8643
+S
+#8631
+A Nursery~
+~
+u7_mscbx.mid V=50 L=1 P=50 T=Background~
+Light rose colored lace curtains dangle from moon shaped windows and let
+in a soft light into the nursery.  The walls are covered in light pink
+wallpaper that is decorated with pictures of kittens and wildcat cubs.  The
+carpet is beige with little flecks of amber that is soft beneath your feet. 
+A crib sits in the center of the room with little dangling toys hanging
+above it just within a child's reach.  The only exit out is through the door
+to the south.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+3 0 8644
+S
+#8632
+The Northern Staircase~
+~
+~
+Small circular windows covered in frosted glass let in the lights from
+outside and help the candles on nearby sconces illuminate the staircase.  No
+carpet hides the beauty of the polished wood that glows warmly in the light.
+An occasional small portrait is hung between the light sources and depict
+various felines who used to occupy this manor house.  The staircase descends
+to the rosewood hall below you and curves upwards to the west to meet up
+with the southern staircase to continue yet further up.  
+~
+0 131080 0
+Rd     0
+D4
+~
+~
+0 0 8645
+D5
+~
+~
+0 0 8633
+S
+#8633
+The Northern Staircase~
+~
+~
+You are at the foot of a grand staircase that gently curves into a
+semicircle upwards and to the west to meet up with the southern staircase
+whose base you can see just to the south of you.  No carpet covers the
+beauty of the polished hardwood that the stairs are composed of, thus
+causing each step to glow warmly in the candlelight from the sconces along
+the staircase walls.  You can go up the staircase or to the hall south of
+you.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+0 0 8647
+D4
+~
+~
+0 0 8632
+S
+#8634
+The Dining Room~
+~
+~
+A formal atmosphere fills the air as you enter this well-cleaned dining
+chamber.  A crystal chandelier hangs from the ceiling over a long oaken
+table covered with fine china plates, silver eating utensils and crystal
+goblets.  Everything looks ready for people to simply sit at the high backed
+padded chairs and be served.  A door in the north wall leads into the
+kitched and a door to the south leads out into the hall.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+3 0 8621
+D2
+~
+~
+3 0 8648
+S
+#8635
+A Cloak Room~
+~
+~
+This tiny room was made for the hanging of visitors' cloaks so as they
+don't clutter up the backs of chairs.  The walls are covered with small
+wooden pegs for the cloaks to hang from and small cubicles along the floor
+of the room are for handbags, shoes and any other personal belongings that
+visitors don't wish to carry around with them.  A tiny crescent moon shaped
+window high upon the eastern wall lets in the only light from the outside
+and a door in the south wall leads out into the foyer.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+3 0 8649
+S
+#8636
+West Felis Plaza~
+~
+~
+Feline cubs can be seen playing all about the plaza as they hide in the
+bushes and leap out at one another in practice of their future hunting
+skills.  How manages to have the patience to let their tails be attacked in
+that way you can't figure.  Directly to the east of you is a lovely white
+gazebo and a road leading out to the beach and docks just beyond that.  The
+plaza contiues to the north and to the south towards a small fountain and
+manor house.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8623
+D1
+~
+~
+0 0 8637
+D2
+~
+~
+0 0 8650
+S
+#8637
+The Gazebo~
+~
+~
+This lovely gazebo is made of white ashwood logs and surrounded by a
+trellis covered with climbing rosebushes.  From where you are at, you have a
+perfect view of the entire plaza.  To the northeast is a small temple.  To
+the northwest is the weapons shop and the provisioner.  To the southeast is
+the jewelry shop and bakery.  To the southwest is the only place you've seen
+so far that resembles a house.  To the east is a road leading out to the
+docks.  
+~
+0 131080 1
+Rd     0
+D0
+~
+~
+0 0 8624
+D1
+~
+~
+0 0 8638
+D2
+~
+~
+0 0 8651
+D3
+~
+~
+0 0 8636
+S
+#8638
+East Felis Plaza~
+~
+~
+Salty sea air manages to filter through the thick trees that complete
+surround this small town and intermingles with the blooming tropical plants
+and slightly over-ripened fruits.  There is a notable almost complete
+absense of birds this close to the natives of Summerset Isle, however you
+can still hear them in the jungles to the south.  A road leads east towards
+the docks and beach and to the west you can spot a lovely white gazebo.  The
+plaza continues to the north and to the south.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8625
+D1
+~
+~
+0 0 8639
+D2
+~
+~
+0 0 8652
+D3
+~
+~
+0 0 8637
+S
+#8639
+Keshta Road~
+~
+~
+The sounds of large wildcats can be heard in the underbrush of the large
+jungle growth that fills in the edges of the road to the south.  Large paws
+have imprinted themselves in the thickly packed earth of the road you are on
+from many years of constant use.  You can hear the sounds of the nearby
+ocean and the occasional twittering of tropical birds, but they seem almost
+absent here near the town.  From directly north of you comes the sharp scent
+of incense being burned and the salty ocean smell from beyond and to the
+east.  To the west you can see an open plaza in the town.  
+~
+0 131072 1
+Rd     0
+D0
+~
+~
+0 0 8626
+D1
+~
+~
+0 0 8640
+D3
+~
+~
+0 0 8638
+S
+#8640
+Keshta Road~
+~
+~
+The sounds of the nearby ocean lapping against the shore mingles with the
+songs of many jungle birds in the giant trees that loom overhead.  The road
+beneath you is tightly packed earth with the occasional dotting of sand that
+has been blown in by the wind.  Blooming tropical flowers and salty sea air
+make a heady perfume that is almost intoxicating.  The road continues to the
+east towards a beach and to the west into a small town.  To the south
+appears some kind of hut and to the northeast you can spot the top of a
+ship's mast.  
+~
+0 131072 1
+Rd     0
+D1
+~
+~
+0 0 8641
+D2
+~
+~
+0 0 8698
+D3
+~
+~
+0 0 8639
+S
+#8641
+Keshta Road~
+~
+~
+You are on a tightly packed earthen road that is strewn with with sand
+from from the beach to the east and the harbor to the north.  Large jungle
+trees loom above and provide a little bit of shelter from the heat overhead.
+The screeching of tropical birds comes to you from somewhere to the south,
+however they seem almost muted in the town you can spot to the west of you. 
+You spot the top of some kind of a temple a bit of ways to the west and can
+hear the sounds of the ocean to the east.  To the north you can see the mast
+of a ship.  
+~
+0 131076 1
+Rd     0
+D0
+~
+~
+0 0 8628
+D1
+~
+~
+0 0 8642
+D3
+~
+~
+0 0 8640
+S
+#8642
+A Sandy Path~
+~
+~
+Large black polished stones mark the path through the fine white sand
+that covers the beach up to the village.  Flocking seagulls dart along the
+waves as they try to catch their supper.  To the south and west is a thick
+jungle filled with the sounds of roaring felines and chattering monkies. 
+Most of the bird sounds seems to come from the seagulls only.  The path
+continues to the south along the beach and to the west towards the village
+and the docks.  
+~
+0 131072 10
+Rd     0
+D2
+~
+~
+0 0 8655
+D3
+~
+~
+0 0 8641
+S
+#8643
+An Amber Hall~
+~
+~
+A tall window high upon the eastern wall lets in the glow from outside to
+mingle with the warm, summer colored carpeting and pinewood walls to create
+an amber ambience.  A table below the window at the end of the hall is the
+only piece of furniture to be seen.  Atop it sits a golden vase filled with
+orchids from the jungle.  Doors open both to the north and to the south and
+the hall continues to the west towards a downward staircase.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+3 0 8630
+D2
+~
+~
+3 0 8656
+D3
+~
+~
+0 0 8644
+S
+#8644
+Top of the Staircase~
+~
+~
+Soft, beige colored carpet meets hardwood floor at the top of this split,
+winding staircase.  A wide oval window looks out to the west over the jungle
+treetops and out beyond to the endless blue ocean.  From here you can see
+down below past the staircase that winds to the north and to the west to the
+rosewood hall and the manor foyer.  The floor curves about the staircase and
+continues to the east.  There are doors to the north and to the south of you
+leading into bedrooms.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+3 0 8631
+D1
+~
+~
+0 0 8643
+D2
+~
+~
+3 0 8657
+D5
+~
+~
+0 0 8645
+S
+#8645
+A Landing on the Staircase~
+~
+~
+You pause on this large landing on the staircase and take in your
+immediate surroundings.  From up here you can look down on the rosewood hall
+below you and get a clear view of the foyer of the manor.  The bare hardwood
+floor panels that make up the staircase look slick and almost dangerous,
+however there are no skuff marks showing previously fallen travelers.  The
+staircase continues upwards and splits into to curves going down to the
+north and to the south of you to end in the hall far below.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 8632
+D2
+~
+~
+0 0 8658
+D4
+~
+~
+0 0 8644
+S
+#8646
+A Study~
+~
+~
+Upon entering this room, your eyes are immediately drawn to the huge
+window that makes up the entire western wall.  Looking through it you can
+see endless blue ocean far below you and the sheer white cliff between. 
+Flocks of tropical birds flit along the horizon and waves reach up as if the
+ocean was trying to pull the sky creatures into her watery depths.  A desk
+sits near the northern wall and above is a large portrait of a golden lion. 
+Several book shelves that contain official looking (and boring!) documents
+and a couch near a fireplace are what complete the decor of the room.  A
+door in the eastern wall leads out into the rest of the manor.  
+~
+0 131080 0
+Rd     0
+E
+portrait~
+Raw power is reflected within the build of the handsome golden lion that
+is depicted in the portrait.  He is clad in goldwashed chain mail and
+carries a large, wicked-looking sabre that has a tiger eye and a cat's eye
+agate in the pommel.  He appears to be looking out beyond the jungle and
+ocean to an unseen menace in the distance.  
+~
+D1
+~
+~
+3 0 8647
+S
+#8647
+A Rosewood Hall~
+~
+~
+Brightly polished wooden panels of dark rosewood make up the walls of
+this wide hallway.  A tapestry showing jungle cats dangling lazily from
+treebranches hangs on one of the walls.  Candelabra light the way where no
+windows let in light from the outside world.  To the west is a door leading
+into what you would guess is a study and the hallway continues to the east
+towards the front of the house.  To the north and to the south you can see
+the bottom of a curving stair that meets up in the middle to the west far
+above you.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 8633
+D1
+~
+~
+0 0 8648
+D2
+~
+~
+0 0 8659
+D3
+~
+~
+3 0 8646
+S
+#8648
+A Rosewood Hall~
+~
+~
+Dark rosewood panels line the walls in the hallway that continues to the
+west of you.  Portraits depicting what you would assume to be the relatives
+and ancestors of the mayor's family hang upon the fine walls.  A door in the
+north wall leads to what appears to be a dining room and a door in the south
+wall leads into the manor library.  The hall continues on to the west
+towards a large staricase and to the foyer east of your current location.  
+~
+0 131080 0
+Rd     0
+E
+portraits~
+You see pictures of felines of every sort.  Cheetahs, cougars, leopards,
+lions, tigers and every other sort of hominid cat you can think of.  One
+portrait in particular draws your eye.  It appears to be a beautiful white
+tigress clad in nothing but her fur and holding a small white tiger cub.  A
+name plate beneath it says "Our sister, Kitti, before she was stolen away to
+become our Goddess." 
+~
+D0
+~
+~
+3 0 8634
+D1
+~
+~
+0 0 8649
+D2
+~
+~
+3 0 8660
+D3
+~
+~
+0 0 8647
+S
+#8649
+Foyer of Ki'Taye Manor~
+~
+~
+You find yourself within a small airy room with porcelain tile floors and
+a cool breeze coming from a fan high above you.  A long beige colored sofa
+sits along the south wall where people can sit and enjoy the outside view
+without the direct heat that the jungle seems to constantly emit.  A door to
+the north leads to a cloak room and a hall leads to the west into the rest
+of the house.  A large double door in the east wall leads out into the town
+plaza where you can hear a small fountain burbling.  
+~
+0 131084 0
+Rd     0
+D0
+~
+~
+3 0 8635
+D1
+~
+~
+3 0 8650
+D3
+~
+~
+0 0 8648
+S
+#8650
+Felis Plaza~
+~
+~
+Giant palm fronds shade the plaza all hours of the day and night from the
+occasional bird that passes overhead with the intent of harassing the
+inhabitants of this small town.  A lovely blue and gray marble fountain
+dominates this corner of the plaza and the sounds of its happy burbling
+blend in well with the sounds of the surrounding jungle.  To the northeast
+you can see a white gazebo and a temple just beyond that.  A small manor
+house sits directly to the west of you and the plaza continues to the north
+and to the east.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 8636
+D1
+~
+~
+0 0 8651
+D3
+~
+~
+3 0 8649
+S
+#8651
+South Felis Plaza~
+~
+~
+Low growling from some of the more vicious of the islands natives fills
+your ears, yet the source remains unseen.  Rustling in the thick underbrush
+of the jungle to the south causes you to look around warily.  Large trees
+almost block out the sky above, yet you can still get glimpses of the
+heavens regardless.  To the north of you is a lovely white gazebo and just
+beyond that is a small temple.  The plaza continues to the west where you
+can spot a small fountain and manor house and to the east towards some small
+huts.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 8637
+D1
+~
+~
+0 0 8652
+D3
+~
+~
+0 0 8650
+S
+#8652
+Felis Plaza~
+~
+~
+The tangy smell of blooming tropical flowers and baking fruit pies and
+breads fill the air as you find yourself in the plaza next to the baker's
+hut.  The packed earth of the plaza is covered with a soft loam that makes
+it harder to hear the natives of this town move about and is pleasant on the
+feet.  There is a lovely white gazebo just to the northwest and you can spot
+a temple a bit further to the north.  To the east is the baker's hut and to
+the south is another hut of some sort.  The plaza continues to the north and
+to the west.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 8638
+D1
+~
+~
+0 0 8653
+D2
+~
+~
+0 0 8663
+D3
+~
+~
+0 0 8651
+S
+#8653
+The Baker's Oven~
+~
+u3_shop.mid V=50 L=1 P=50 T=Background~
+The mouth-watering aroma of baking breads, cakes, pies, muffins and
+pastries fills the air in this thatched hut.  The eastern wall is composed
+of a woodburning mud brick oven that must be magically sealed for it doesn't
+seem to generate any extra heat.  A small window in the south wall looks out
+into a thick jungle in which you can see the occasional flitting of birds
+followed closely by a large jungle cat.  A door in the west wall leads out
+to the town plaza.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 8652
+S
+#8654
+Empty for now~
+~
+~
+~
+0 12 0
+Rd     0
+S
+#8655
+A Sandy Beach Path~
+~
+~
+The gentle sound of waves rushing up to the shore and falling back to the
+ocean almost drowns out the sounds of seagulls squabbling over choice bits
+of crab and other sea creatures that have been washed ashore.  The briney
+air is lightly perfumed with blooming tropical flowers from the jungle to
+the south and west of you.  Large pawprints dot the sand as the natives of
+the island choose this lovely spot to catnap during the daylight hours.  The
+fine white sand looks like it would be soft to tender feet and be great for
+sunbathing upon.  The path leads to the north towards the docks and village
+and towards the southwest into the jungle.  
+~
+0 131072 10
+Rd     0
+D0
+~
+~
+0 0 8642
+D2
+~
+~
+0 0 8666
+S
+#8656
+A Bedroom~
+~
+~
+You find yourself within an almost painfully non-decorated room.  Beneath
+a large window looking out upon the jungle to the south is a simple bed
+covered in a light blue afghan.  Upon a nightstand next to the bed lies an
+open book of poetry and a quill.  A small wardrobe sits upon the eastern
+wall for guests to put their clothing and personal belongings within while
+they stay in the manor house.  Soft beige carpet covers the floor and flows
+out through a door in the northern wall to a warmer looking part of the
+home.  
+~
+0 131080 0
+Rd     0
+E
+poetry~
+Standing in the empty room
+my mind is faced with blankness
+words start to grow there
+-Zhyril Antares
+~
+E
+book~
+Standing in the empty room
+my mind is faced with blankness
+words start to grow there
+ 
+-Zhyril Antares
+~
+D0
+~
+~
+3 0 8643
+S
+#8657
+A Bedroom~
+~
+~
+A double-sized bed covered in a light blue down comforter sits in the
+center of the southern wall and takes up most of the room.  Above the bed is
+a large moon shaped window that looks out into the jungle to the south.  An
+oak dresser sits on the western wall and next to it is a wicker hamper.  The
+only apparent exit out is through a door to the north.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+3 0 8644
+S
+#8658
+The Southern Staircase~
+~
+~
+Small circular windows covered in frosted glass let in the lights from
+outside and help the candles on nearby sconces illuminate the staircase.  No
+carpet hides the beauty of the polished wood that glows warmly in the light.
+An occasional small portrait is hung between the light sources and depict
+various felines who used to occupy this manor house.  The staircase descends
+to the rosewood hall below you and curves upwards to the west to meet up
+with the northern staircase to continue yet further up.
+~
+0 131080 0
+Rd     0
+D4
+~
+~
+0 0 8645
+D5
+~
+~
+0 0 8659
+S
+#8659
+The Southern Staircase~
+~
+~
+You are at the foot of a grand staircase that gently curves into a
+semicircle upwards and to the west to meet up with the northern staircase
+whose base you can see just to the north of you.  No carpet covers the
+beauty of the polished hardwood that the stairs are composed of, thus
+causing each step to glow warmly in the candlelight from the sconces along
+the staircase walls.  You can go up the staircase or to the hall north of
+you.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 8647
+D4
+~
+~
+0 0 8658
+S
+#8660
+A Library~
+~
+~
+Shelves cover each and every nook of this room from floor to ceiling and
+all stocked with books of every title known.  A large oak desk in the center
+of the room is laden with writing utensils and blank parchment.  A soft
+green lounger sits near a short end table for someone to comfortably curl up
+and read whichever book they choose from the well-stocked shelves.  The bare
+floors seem to glow warmly from the soft candle light that keeps the library
+well-lit.  A glass door leads to the east onto a beautiful veranda and a
+door in the north wall leads out to the manor hall.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+3 0 8648
+D1
+~
+~
+3 0 8661
+S
+#8661
+A Veranda~
+~
+~
+The jungle trees grow closely all around this small veranda and
+completely block out all view of the town.  Thick palm fronds and large
+blooming flowers shade your view of the ground and dangling vines hide the
+rest of the sights of the jungle.  Lounge chairs are set around a small pond
+filled with lilies and brightly colored tropical fish.  A glass door leads
+west into the manor library and appears to be the only exit from this small
+piece of paradise.  
+~
+0 131072 1
+Rd     0
+D3
+~
+~
+3 0 8660
+D5
+~
+~
+0 0 8662
+S
+#8662
+In the Pond~
+water1.wav V=100 L=1 P=50 T=Ambient~
+~
+Brightly colored fish dart about as you swim in their small underwater
+home.  The bottom of the pond seems to be fine white sand and light blue
+colored pebbles.  The sides of the pond are steep shelves of limestone that
+house small water critters and delicate looking plants.  Catfish watch you
+from the bottom of the pond as they scrouge for sustenance.  Above you are
+the undersides of pond lilies and beyond them you can spot large jungle
+treetops and hanging vines.  It looks like the only exit out is up.  
+~
+0 131074 8
+Rd     0
+D4
+~
+~
+0 0 8661
+S
+#8663
+The Tiger's Eye~
+~
+u3_shop.mid V=50 L=1 P=50 T=Background~
+This thatched hut seems to be a bit more secure than the others you have
+spotted in the rest of the village.  A thick safe in the west wall appears
+to be guarded night and day.  In a village of a race that makes good
+thieves, you wonder if the safe is even worth the effort they put into it. 
+Or perhaps they're guarding against outsiders?  A door in the north wall
+leads out to the village plaza.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 8652
+S
+#8664
+A Curve in the Path~
+~
+~
+Several large jungle trees announce your arrival to the edge of the
+jungle where it meets the fine white sand of the beach.  Chattering monkies
+scream loudly at your intrusion and a flock of birds rise from the treetops
+only to land within their shelter again.  The path continues deeper into the
+jungle to the south and winds out to the beach north and east of you.  
+~
+0 131076 3
+Rd     0
+D1
+~
+~
+0 0 8665
+D2
+~
+~
+0 0 8667
+S
+#8665
+A Sandy Path~
+~
+~
+The sandy path is made of fine white sand and marked with polished black
+rocks that glitter from some light that appears to come in from the ocean. 
+The calling of seagulls and roaring of waves crashing up on large rocks far
+below you is almost drowned out by the loud screeching of nearby jungle
+birds.  The ocean stretches out endlessly to the east and south and the
+jungle looms to the west.  The path continues to the west into the jungle
+and to the north towards a small town.  
+~
+0 131072 10
+Rd     0
+D1
+~
+~
+0 0 8666
+D3
+~
+~
+0 0 8664
+S
+#8666
+A Bend in the Sandy Path~
+~
+~
+The alternating sweet and tangy smells of brine and over-ripened fruit
+dominates the air this close to the jungle.  The waves crash gently against
+several large rocks down the shore and you are occasionally sprayed with a
+fine mist of sea spray.  The fine white sand that makes up the path seems to
+be completely pebble free except for the polished black rocks that line and
+mark the sides.  The path continues to the north towards a dock and west
+further towards the jungle.  
+~
+0 131072 10
+Rd     0
+D0
+~
+~
+0 0 8655
+D3
+~
+~
+0 0 8665
+S
+#8667
+A Shaded Path~
+birds1.wav V=100 L=1 P=50 T=Ambient~
+~
+You wind your way along the sandy path as the trees of the jungle start
+to loom all about you, shading you from the elements above.  The underbrush
+isn't very thick here, so you can still see out towards the ocean that
+stretches out to the east and north.  However, although you can see a little
+ways to the west and south, the jungle growth quickly becomes too thick to
+be able to see very far.  The path continues to the northeast towards the
+beach and to the southwest deeper into the jungle.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8664
+D2
+~
+~
+0 0 8674
+S
+#8668
+Summerset Jungle~
+~
+~
+The ruins of an old thatched hut lie partially covered in vines, moss and
+a bit of stagnant water.  It looks as if some kind of creature attacked and
+destroyed the hut with its bare claws.  The trees around have old scar
+wounds of claw marks as well, but appear not really be any worse for the
+wear.  The jungle becomes too thick to continue to the north and west, but
+you can push your way through to the east and south.  
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 0 8669
+D2
+~
+~
+0 0 8676
+S
+#8669
+Summerset Jungle~
+~
+~
+The unmistakable sound of a woman's humming voice seems to be coming from
+nearby to the north, but heavy underbrush prevents you from getting a better
+look.  The fragrant smell of slightly over-ripened fruit and blooming
+tropical flowers wafts through the air, but doesn't quite cover up the scent
+of rotting plants and stagnant water.  There appears to be some kind of ruin
+to the west and jungle continues to the east and south.  
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 0 8670
+D2
+~
+~
+0 0 8677
+D3
+~
+~
+0 0 8668
+S
+#8670
+Summerset Jungle~
+cricket1.wav V=100 L=1 P=50 T=Ambient~
+~
+The trees of the island jungle seem to be unnaturally tall as if they
+were deliberately blocking out the sky and weather.  The natives of the
+island, however, appear to thrive within the heat and humidity, and the
+thick leafy branches make ideal routes for the hunters to stalk their prey. 
+The underbrush is too thick to allow passage to the north and east, but you
+can make out old animal trails to the west and south through the jungle.  
+~
+0 131072 3
+Rd     0
+D2
+~
+~
+0 0 8678
+D3
+~
+~
+0 0 8669
+S
+#8671
+Summerset Jungle~
+birds1.wav V=100 L=1 P=50 T=Ambient~
+~
+The sounds of the jungle are loud in your ears and the roaring of
+wildcats mingled with the squawks of tropical birds also makes the area
+uncanny.  Large blooming tropical flowers grow high in the trees and in the
+thick underbrush all about you.  The trees grow too thickly to be able to
+make any more progress to the north and to the west.  However, you think you
+can make out a path to the east and you can squeeze through the growth
+further into the jungle to the south.  
+~
+0 131072 0
+Rd     0
+D1
+~
+~
+0 0 8672
+D2
+~
+~
+0 0 8679
+S
+#8672
+A Turn in the Shaded Path~
+~
+~
+Tropical flowers bloom within the undergrowth and high up in several of
+the large jungle trees that line and shade the jungle path you find yourself
+upon.  The faint scent of salty ocean air comes from the east when it's able
+to break through the jungle smells.  The path continues to the east and
+deeper into the jungle to the south.  The underbrush is also lighter to the
+west where you can push your way into the jungle.  
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 0 8673
+D2
+~
+~
+0 0 8680
+D3
+~
+~
+0 0 8671
+S
+#8673
+A Shaded Path~
+birds2.wav V=100 L=1 P=50 T=Ambient~
+~
+The songs of many jungle birds sounds loud in the air making it almost
+hard to think.  However, it also seems to have the side affect of making
+sneaking much easier since the silly birds are covering up your approach. 
+The thick moss that pads the path also appears to help with moving quietly
+as well.  The path continues to the east and to the west or you can venture
+out into the jungle to the south.  
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 0 8674
+D2
+~
+~
+0 0 8681
+D3
+~
+~
+0 0 8672
+S
+#8674
+A Twist in the Shaded Path~
+~
+~
+Sand is strewn about this shaded jungle path and almost covers the spongy
+moss growth that makes up the path itself.  The underbrush grows heavily
+here but not enough to block out the flashes of blue from the ocean that
+lies to the east and north, but it does grow far too thick to be able to get
+a very good view into the jungle itself.  The path continues to the north
+out of the jungle and to the west deeper into the jungle.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8667
+D3
+~
+~
+0 0 8673
+S
+#8675
+Summerset Jungle~
+birds2.wav V=100 L=1 P=50 T=Ambient~
+~
+Your movements through the jungle are strenuous indeed.  Even flying
+visitors have problems dodging through the dangling vines, branches and
+mossy growth that insists on living in this humid area.  It almost seems
+impossible that the birds manage to get by as they do.  The jungle continues
+to the east and to the south, but passage to the north and west is blocked
+by trees that are too close together and heavy vines.  
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 0 8676
+D2
+~
+~
+0 0 8682
+S
+#8676
+Summerset Jungle~
+cricket1.wav V=100 L=1 P=50 T=Ambient~
+~
+You fervently wish that a breeze would blow through the area and cool
+down some of the humid heat or at least allow the smell of rotting fruits
+and decaying plantgrowth to leave the area.  Several of the dangling vines
+sport bright yellow and white flowers with a sickly sweet odors that
+attracts insects and doesn't help the situation any at all.  The jungle
+continues to stretch forever in all cardinal directions and you wonder if
+there is any end to the trees at all.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8668
+D1
+~
+~
+0 0 8677
+D2
+~
+~
+0 0 8683
+D3
+~
+~
+0 0 8675
+S
+#8677
+Summerset Jungle~
+birds3.wav V=100 L=1 P=50 T=Ambient~
+~
+The fallen leaves covering the mossy floor of the jungle rustle as
+lizards, bugs and other small life dart through their protective cover to
+get out of you approach.  The trees branches above house several large
+jungle birds who mercilessly screech their protests to the air.  If there
+was a hunter nearby, it now knows your exact position within the jungle. 
+You can continue on to the north, east or west but heavy underbrush blocks
+passage to the south.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 8669
+D1
+~
+~
+0 0 8678
+D3
+~
+~
+0 0 8676
+S
+#8678
+Summerset Jungle~
+~
+~
+The treetops far above you sway in the wind you know must be blowing
+above the island, but because of the thickness of the tree boughs, the
+leaves and the sheer number of trees about you, none of the cooling air
+reaches you.  The humidity on the island is almost intolerable and the
+smells of rotting plants is terrible.  The jungle continues to the north,
+east and west, but to the south you think you can make out a path.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8670
+D1
+~
+~
+0 0 8679
+D2
+~
+~
+0 0 8685
+D3
+~
+~
+0 0 8677
+S
+#8679
+Summerset Jungle~
+~
+~
+You wander about the jungle carefully, watching every shadow and flitting
+bird for any possible predator that may be (and probably is!) sneaking up
+upon you.  The thick underbrush rustles slightly with the smaller animals
+who inhabit them and the trees loom largely above you.  The jungle continues
+to the north and to the west and a path can be made out to the east and to
+the south.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8671
+D1
+~
+~
+0 0 8680
+D2
+~
+~
+0 0 8686
+D3
+~
+~
+0 0 8678
+S
+#8680
+A Shaded Path~
+~
+~
+The warm air about you is barely cooled down any by the shade offered
+from the huge tropical trees that loom all about you.  The humidity in the
+air is slightly over the comfortable level for most races but obviously not
+those who inhabit the island.  The mossy path continues on to the north and
+to the south and thick jungle can be entered to the east and to the west.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8672
+D1
+~
+~
+0 0 8681
+D2
+~
+~
+0 0 8687
+D3
+~
+~
+0 0 8679
+S
+#8681
+Summerset Jungle~
+cricket1.wav V=100 L=1 P=50 T=Ambient~
+~
+Creatures rustle within the underbrush that grows thick all about you and
+dangling vine mask the presence of large snakes.  Banana trees, rubber trees
+and many others of the tropical variety loom tall above you masking your
+view of the sky you know to be somewhere above.  As you glance upwards you
+catch a glimpse of something moving.  Was it bird?  Or was it some other
+creature?  The jungle continues to the south and you think you can make out
+a path to the north and to the west of you.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8673
+D2
+~
+~
+0 0 8688
+D3
+~
+~
+0 0 8680
+S
+#8682
+Summerset Jungle~
+~
+~
+Rotting fruit and decomposing leaves litter the ground and cover up much
+of the mossy earth.  Tracks are hard to make out here so you can't tell just
+how many of the island inhabitants come this way.  The trees grow tall above
+you, blocking out the sky but not the weather, thus trapping in the heat
+during both the day and the night.  The jungle continues on to the north,
+east and south and ocean sounds seem to come from the west.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8675
+D1
+~
+~
+0 0 8683
+D2
+~
+~
+0 0 8689
+S
+#8683
+Summerset Jungle~
+~
+~
+Tropical birds screech obscenities in their "fowl" bird tongue in your
+general direction causing your ears to redden with the imagined slights. 
+After going through this for several minutes with no end in sight, you can
+understand fully why the felines on the island do their best to exterminate
+the flying rats.  The jungle continues on in all directions except to the
+east where the bushes and trees are far too thick to push your way through. 
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8676
+D2
+~
+~
+0 0 8690
+D3
+~
+~
+0 0 8682
+S
+#8684
+A Shrine to the Cat Goddess~
+~
+u7_socom.mid V=50 L=1 P=50 T=Background~
+You find yourself in a very small clearing within the thick jungle of
+Summerset Isle.  The aura about is almost tranquil, but not enough to not
+keep you from looking over your shoulder for the source of the sounds coming
+from the underbrush and treetops.  In the center of the clearing is a statue
+upon a small marble platform that is surrounded by beautiful tropical
+flowers growing about the base.  The closeness of the trees and the
+thickness of the underbrush prevent you from going into the jungle from
+here, but you can follow a path out to the east into the jungle to escape.  
+~
+0 131084 3
+Rd     0
+D1
+~
+~
+0 0 8685
+S
+#8685
+A Shaded Path~
+~
+hero.mid V=50 L=1 P=50 T=Background~
+The jungle here seems a bit subdued and the air is almost palpatable with
+the feeling of some kind of power.  The few jungle birds that dare to live
+on this feline inhabited island are almost entirely absent from the
+immediate area.  The strange feeling appears to be stronger through the
+trees to the west of you and gets weaker along the path to the east.  The
+jungle itself continues to stretch out beyond you to the north and to the
+south.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8678
+D1
+~
+~
+0 0 8686
+D2
+~
+~
+0 0 8692
+D3
+~
+~
+0 0 8684
+S
+#8686
+A Shaded Path~
+cricket1.wav V=100 L=1 P=50 T=Ambient~
+~
+The ground beneath you is soft and spongy from the thick mosses and earth
+that make up the path that leads through the island jungle.  All about you
+loom tall tropical trees with underbrush growing thickly inbetween, making
+it nearly impossible to go anywhere but the path itself which continues to
+the east and to the west.  The jungle itself can be entered to the north and
+to the south of the path.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8679
+D1
+~
+~
+0 0 8687
+D2
+~
+~
+0 0 8693
+D3
+~
+~
+0 0 8685
+S
+#8687
+A Turn in the Shaded Path~
+~
+~
+The songs of tropical birds hiding in the treetops above you and the
+sounds of unseen crickets in the underbrush almost do a good enough job for
+you to not hear the approach of the jungle cats all about.  You feel a
+little safer here on the path rather than in the jungle itself, but it
+offers little enough protection.  The path twists on to the north and to the
+west.  The jungle can be entered to the east and to the south.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8680
+D1
+~
+~
+0 0 8688
+D2
+~
+~
+0 0 8694
+D3
+~
+~
+0 0 8686
+S
+#8688
+Summerset Jungle~
+birds3.wav V=100 L=1 P=50 T=Ambient~
+~
+You duck as a large jungle bird swoops from its haven upon a branch high
+above you.  It appears to call out bird-like curses or perhaps a warning. 
+The soft ground makes it hard to move very fast through the thick trees, but
+you can also make out the pawprints of a large predator within.  You can
+continue into the jungle to the north or you can attempt an escape to a path
+you barely make out to the west.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8681
+D3
+~
+~
+0 0 8687
+S
+#8689
+Summerset Jungle~
+cricket1.wav V=100 L=1 P=50 T=Ambient~
+~
+Thick vines covered with tropical flowers and large leaves dangle from
+the trees above making an almost perfect trysting spot sheltered from the
+view of the rest of the jungle.  The aroma from the flowers leave a fragrant
+perfume in the air, keeping out the smells of rotting fruit.  Heavy
+underbrush prevent passage to the west and to the south, but you think you
+may be able to make your way through to the east and to the north to venture
+about in other parts of the jungle.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8682
+D1
+~
+~
+0 0 8690
+S
+#8690
+Summerset Jungle~
+birds2.wav V=100 L=1 P=50 T=Ambient~
+~
+Large tropical trees loom high above you, blocking out any possible
+glimpse of the sky above.  Their intertwining branches are perfect for the
+natives of the island to hunt their prey from upon.  Birds, smaller animals,
+you...  Although the underbrush and leaves are thick upon the ground, they
+only provide cushioning for the land-bound and don't block your passage in
+any of the cardinal directions.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8683
+D1
+~
+~
+0 0 8691
+D2
+~
+~
+0 0 8695
+D3
+~
+~
+0 0 8689
+S
+#8691
+Summerset Jungle~
+~
+~
+Many large tropical birds call to eachother from far above you in the
+safety of the thick branches they make thier homes in.  The growling of
+hunting wildcats is far too close for comfort, so looking about you
+carefully you notice the jungle continues to the north, east and south. 
+However, a thick maze of underbrush, vines and blooming flowers blocks
+passage to the north.  
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 0 8692
+D2
+~
+~
+0 0 8696
+D3
+~
+~
+0 0 8690
+S
+#8692
+Summerset Jungle~
+~
+~
+Beating drums resound through the jungle in a steady, rythmic pulse that
+echoes about the trees eerily.  The plants rustle about you with the jungle
+wildlife that abounds on the isle and creepy crawlers glare at you from
+treetrunks.  The jungle seems to stretch out forever as you glance all about
+you, but you think you can hear music and see a path to the north.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8685
+D1
+~
+~
+0 0 8693
+D2
+~
+~
+0 0 8697
+D3
+~
+~
+0 0 8691
+S
+#8693
+Summerset Jungle~
+birds1.wav V=100 L=1 P=50 T=Ambient~
+~
+Thick dangingling vines drape all about you, making passage through the
+jungle nearly impossible.  One of the vines appears to be alive for a
+moment, but you realize quickly that it's only a snake.  The treetops block
+out your view of the sky above and trap in the humid, wild smell of the
+jungle.  You think you can make out a path to the north of you but to the
+east and west are nothing but more jungle.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8686
+D1
+~
+~
+0 0 8694
+D3
+~
+~
+0 0 8692
+S
+#8694
+Summerset Jungle~
+~
+~
+The nearby roar of a large jungle cat startles you for a moment and
+causes you to pause in your tromp through the vines and trees.  The mossy
+growth beneath you keeps the sounds of your passage and the passage of those
+creatures that live in the jungle muffled.  There's no telling just how
+close some of the nastier creatures are.  The jungle continues to the west
+and a path looks to be to the north of you.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 8687
+D3
+~
+~
+0 0 8693
+S
+#8695
+Summerset Jungle~
+~
+~
+Hot humid air mingle with decaying leaves and plants that have fallen
+into the underbrush and create a miasma that is almost too hard to breath
+in.  Lizards dart beneath leaves and bushes making little rustling noises
+that almost hide the sounds of the rustling in the trees above.  Since you'd
+probably not like to be on the menu for whatever jungle cat is prowling
+about up there, you could move further along into the jungle to the north or
+to the east.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8690
+D1
+~
+~
+0 0 8696
+S
+#8696
+Summerset Jungle~
+~
+~
+You gaze up in awe at the thick looming trees that tower high above you,
+effectively blocking out view of the sky you know to be somewhere above. 
+Vines and giant leafy growth prevent you from getting a really good view
+around you, but it appears that the jungle continues to the north, east and
+south.  The scent of salty ocean air manages to break through from the south
+and you guess the ocean cliffs to be in that direction.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 8691
+D1
+~
+~
+0 0 8697
+D3
+~
+~
+0 0 8695
+S
+#8697
+Summerset Jungle~
+~
+~
+Mosquitos have apparently found you to be a walking smorgasbord and have
+attached themselves almost permanently to your exposed flesh.  Tsetse flies,
+gnats and other annoying insects buzz about your ears and lap at the sweat
+your exhertion through the jungle worked up.  Thick underbrush blooming with
+tropical flowers blocks your path to the east and south, but you can shove
+your way through to the north and west.  
+~
+0 131076 3
+Rd     0
+D0
+~
+~
+0 0 8692
+D3
+~
+~
+0 0 8696
+S
+#8698
+The Hunter's Shack~
+~
+u3_shop.mid V=50 L=1 P=50 T=Background~
+Upon entering this thatched hut, you become slightly confused at the
+sight before you.  Large bows, spears and hunting supplies line the walls as
+well as stuffed macaws and mounted wolf head trophies.  A sign behind a
+counter on the east wall of the hut claims that this is a place to
+appropriate hunting cats to assist in huntin expeditions out in the jungle. 
+However, there are no cages where you would expect the beasts to be kept
+within.  Instead you notice branches up further along the roof of the hut
+where you can see the dangling tails of snoozing wildcats?!  You can see the
+jungle through a window in the south wall and a sheltered road out through a
+door to the north.  
+~
+0 135176 0
+Rd     0
+D0
+~
+~
+0 0 8640
+S
+#8699
+Where the Cats Are~
+~
+~
+This is where the pets for the petshop on Summerset Isle are kept.  It
+would be appreciated if you don't remove, kill or elsewise mess with the
+creatures found within here.  Likewise, do not bring in new creatures to
+this room.  Many thanks.  
+~
+0 136745998 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 8608 spec_cast_cleric
+M 8637 spec_thief
+M 8641 spec_guard
+M 8646 spec_cast_psionicist
+M 8661 spec_cast_mage
+M 8669 spec_thief
+M 8681 spec_fido
+M 8685 spec_thief
+M 8689 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 8601 1 8601
+M 0 8602 1 8602
+O 0 8603 0 8603
+O 0 8617 0 8603
+O 0 8604 0 8604
+M 0 8605 1 8605
+E 0 8688 0 20
+M 0 8606 1 8606
+E 0 8691 0 20
+E 0 8692 0 21
+G 0 8693 0
+M 0 8608 1 8608
+E 0 8608 0 22
+E 0 8613 0 20
+M 0 8609 1 8609
+E 0 8686 0 22
+M 0 8611 1 8611
+M 0 8615 1 8615
+M 0 8616 1 8616
+G 0 8616 0
+G 0 8624 0
+G 0 8693 0
+O 0 8618 0 8618
+M 0 8619 1 8619
+G 0 8619 0
+G 0 8620 0
+G 0 8628 0
+M 0 8695 5 8620
+O 0 8621 0 8621
+P 0 8697 0 8621
+M 0 8622 1 8622
+G 0 8622 0
+G 0 8623 0
+G 0 8607 0
+M 0 8651 2 8623
+M 0 8624 2 8624
+O 0 8625 0 8625
+M 0 8626 1 8626
+G 0 8626 0
+M 0 8650 3 8628
+O 0 8631 0 8631
+P 0 8644 0 8631
+M 0 8631 1 8631
+M 0 8688 1 8636
+O 0 8637 0 8637
+M 0 8637 1 8637
+E 0 8634 0 22
+E 0 8643 0 20
+M 0 8695 5 8638
+M 0 8650 3 8639
+M 0 8624 2 8640
+M 0 8641 1 8641
+E 0 8642 0 20
+M 0 8695 5 8642
+O 0 8658 0 8643
+P 0 8632 0 8658
+M 0 8644 1 8644
+M 0 8646 1 8646
+M 0 8649 1 8649
+O 0 8650 0 8650
+M 0 8650 3 8650
+M 0 8651 2 8651
+M 0 8653 1 8653
+G 0 8690 0
+O 0 8656 0 8656
+M 0 8661 1 8661
+E 0 8661 0 22
+M 0 8662 1 8662
+G 0 8662 0
+M 0 8663 1 8663
+G 0 8663 0
+G 0 8652 0
+O 0 8668 0 8668
+P 0 8612 0 8668
+M 0 8669 1 8669
+E 0 8606 0 23
+E 0 8638 0 20
+M 0 8693 3 8670
+M 0 8691 1 8676
+G 0 8659 0
+M 0 8692 2 8679
+M 0 8695 5 8681
+M 0 8681 2 8681
+M 0 8693 3 8682
+O 0 8684 0 8684
+M 0 8685 1 8684
+E 0 8601 0 6
+E 0 8643 0 20
+E 0 8643 0 21
+M 0 8689 1 8689
+E 0 8689 0 5
+M 0 8681 2 8691
+M 0 8693 3 8693
+M 0 8692 2 8696
+M 0 8694 1 8697
+E 0 8638 0 20
+M 0 8695 5 8698
+M 0 8699 1 8699
+M 0 8698 1 8699
+M 0 8697 1 8699
+M 0 8696 1 8699
+S
+
+
+
+#SHOPS
+8616 17 0 0 0 0 100 100 1 24
+8619 0 0 0 0 0 100 100 1 24
+8622 15 19 1 9 5 100 100 1 24
+8626 3 2 10 4 26 100 100 1 24
+8653 19 0 0 0 0 100 100 1 24
+8663 8 0 0 0 0 100 100 1 24
+0
+
+
+
+#$

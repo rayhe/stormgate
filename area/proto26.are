@@ -1,0 +1,1378 @@
+#AREADATA
+Name        New area~
+Builders    Leptar~
+VNUMs       31200 31299
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     Leptar~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#31200
+boo~
+boo~
+Boo
+~
+~
+1 0 0 0 1 0 S
+140 1 280 280 0 0d0+0 0d0+0
+1400 0 0
+0 0 0
+0 0 0
+#31202
+Skeletal Skeleton Zombie~
+A Skeleton Zombie~
+A Skeleton Zombie
+~
+~
+39 302006336 23855252 2048 2 -1000 S
+105 1 210 210 0 32404d0+0 0d0+0
+1050 0 0
+0 0 0
+0 0 0
+#31214
+ash~
+dude~
+Dude
+~
+~
+1 0 0 0 0 0 S
+999 1 1998 1998 0 100d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#31200
+portal~
+A Portal leading to the UNKNOWN~
+A Portal leading to the UNKNOWN~
+~
+29 134217729 0 0 0 0 500
+100 100
+31201~ 0~ 0~ 0~
+99999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31202
+no name~
+(no short description)~
+(no description)~
+~
+5 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#31214
+dagger CHEATER~
+A dagger~
+A dagger~
+~
+10 1040469632 15927 0 0 1 6000
+100 100
+0~ reserved~ reserved~ reserved~
+0 1 0
+5 0
+swiftness~
+-1 -1
+0 0 0
+A
+19 1000
+A
+18 1000
+A
+106 -1
+#31222
+joined sword slayer~
+The slayer sword~
+The slayer sword~
+~
+5 771776514 139264 0 0 8193 105
+100 100
+0~ 99~ 99~ 3~
+2 4000 0
+5 0
+mental block~
+-1 -1
+0 0 0
+A
+19 60
+A
+1 2
+A
+2 2
+A
+5 -2
+A
+13 150
+A
+42 3
+A
+12 -300
+A
+25 300
+A
+18 50
+A
+304 -1
+A
+36 1
+A
+39 1
+A
+46 1
+A
+30 1
+A
+23 -25
+A
+24 -25
+A
+9 -1
+#0
+
+
+
+#ROOMDATA
+#31200
+The Unknown Zone~
+~
+~
+This is another area that makes your neck hairs stand on edge.  You
+wonder why then stop and think 'maybe I better not go in there alone'.  The
+silence is really creepy, but you are very curious and debate about
+wandering in alone.  
+~
+0 134610951 11
+Rd     0
+S
+#31201
+A Safe Room.~
+~
+~
+This room has an feeling of silence, a calm feeling almost as if it knows
+that you are here.  
+~
+0 1028 0
+Rd     0
+D5
+~
+~
+0 0 31202
+S
+#31202
+A Dark Passage~
+~
+~
+You notice two holes in the tunnels walls, as you turn to climb down the
+passage, you notice two massive skeletons just standing there.  
+~
+0 403054595 0
+Rd     50
+D4
+~
+~
+0 0 31201
+D5
+~
+~
+0 0 31203
+S
+#31203
+King's Way~
+~
+~
+You notice a door to the east, some mumbling comes from the door.  Your
+spine tingles as you hear a scream come from the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 31210
+D3
+~
+~
+515 0 31209
+D4
+~
+~
+0 0 31202
+D5
+~
+~
+0 0 31204
+S
+#31204
+A Turning Point~
+~
+~
+The tunnel ends here with passages to the east and west.  One must
+becareful as to the direction he/she travels in.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 31211
+D3
+~
+~
+3 0 31205
+D4
+~
+~
+0 0 31203
+S
+#31205
+~
+~
+~
+2 aggro dmn asn **1 ANKLET** 
+done
+l
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 31204
+D3
+~
+~
+7 0 31206
+S
+#31206
+~
+~
+~
+corpse of a warrior valor shield in corpse
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31207
+D1
+~
+~
+7 0 31205
+S
+#31207
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31206
+D3
+~
+~
+3 0 31208
+S
+#31208
+~
+~
+~
+queen's tomb half key
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 31207
+S
+#31209
+~
+~
+~
+kings tomb half key in locked stone coffin
+~
+0 0 0
+Rd     0
+D1
+~
+~
+515 0 31203
+S
+#31210
+~
+~
+~
+6 non aggro's semi easy mobs
+done
+asave changed
+w
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 31203
+S
+#31211
+~
+~
+~
+tunnel
+tunnel
+~
+0 0 0
+Rd     0
+D1
+~
+~
+579 0 31253
+D3
+~
+~
+3 0 31204
+D5
+~
+~
+0 0 31212
+S
+#31212
+~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31211
+D5
+~
+~
+0 0 31213
+S
+#31213
+~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31212
+D5
+~
+~
+0 0 31214
+S
+#31214
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 31216
+D4
+~
+~
+0 0 31213
+D5
+~
+~
+0 0 31215
+S
+#31215
+~
+~
+~
+HAHA TRAP DONT YOU WISH YOU HAD FLY ON!!
+~
+0 0 0
+Rd     0
+D2
+~
+~
+71 0 31245
+D4
+~
+~
+0 0 31214
+S
+#31216
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31214
+D3
+~
+~
+0 0 31217
+S
+#31217
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31218
+D1
+~
+~
+0 0 31216
+D3
+~
+~
+0 0 31226
+S
+#31218
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31217
+D3
+~
+~
+0 0 31219
+S
+#31219
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31218
+D3
+~
+~
+0 0 31220
+S
+#31220
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31219
+D3
+~
+~
+0 0 31221
+S
+#31221
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31222
+D1
+~
+~
+0 0 31220
+S
+#31222
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 31223
+D2
+~
+~
+0 0 31221
+S
+#31223
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31222
+D3
+~
+~
+0 0 31224
+S
+#31224
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 31225
+D1
+~
+~
+0 0 31223
+S
+#31225
+~
+~
+~
+prince room
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 31224
+S
+#31226
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31217
+D3
+~
+~
+0 0 31227
+S
+#31227
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31226
+D3
+~
+~
+0 0 31228
+S
+#31228
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31227
+D2
+~
+~
+0 0 31229
+S
+#31229
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31228
+D2
+~
+~
+0 0 31232
+D3
+~
+~
+0 0 31230
+S
+#31230
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31229
+D2
+~
+~
+3 0 31231
+S
+#31231
+~
+~
+~
+2 evil wicked banshee's with staffs (INVENTORY) invokes of cone !!! EVIL
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 31230
+S
+#31232
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31229
+D1
+~
+~
+0 0 31233
+D2
+~
+~
+0 0 31235
+S
+#31233
+~
+~
+~
+warning to trap room errie sounds come from the south.. the horrid smell of rotting flesh... makes you want to vomit..
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 31234
+D3
+~
+~
+0 0 31232
+S
+#31234
+~
+~
+~
+TRAP ROOM 
+8 LEVEL 80 BARBARIC DRAGONS NOTHING FANCY JUST A GOOD ASS WHOOPING..
+NO EXIT
+NO QUIT
+NO RECALL
+NO OUT
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 31233
+S
+#31235
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31232
+D3
+~
+~
+0 0 31236
+S
+#31236
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31235
+D2
+~
+~
+0 0 31237
+S
+#31237
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31236
+D1
+~
+~
+0 0 31238
+S
+#31238
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31239
+D3
+~
+~
+0 0 31237
+S
+#31239
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31240
+D3
+~
+~
+0 0 31238
+S
+#31240
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31241
+D3
+~
+~
+0 0 31239
+S
+#31241
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31242
+D2
+~
+~
+0 0 31240
+S
+#31242
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31243
+D2
+~
+~
+0 0 31241
+S
+#31243
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31244
+D3
+~
+~
+0 0 31242
+S
+#31244
+~
+~
+~
+blue sentinel
+key
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 31245
+D3
+~
+~
+0 0 31243
+S
+#31245
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+71 0 31215
+D2
+~
+~
+3 0 31246
+D3
+~
+~
+3 0 31244
+S
+#31246
+~
+~
+~
+2 guards so so
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 31245
+D3
+~
+~
+0 0 31247
+S
+#31247
+~
+~
+~
+3 QUEEN GUARDS!!!
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31246
+D3
+~
+~
+0 0 31248
+S
+#31248
+~
+~
+~
+3 QUEEN GUARDS!!!!!!!!
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31247
+D2
+~
+~
+0 0 31249
+S
+#31249
+~
+~
+~
+4 guards and queen with third part key..
+done
+asave changed
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31248
+D1
+~
+~
+3 0 31250
+S
+#31250
+~
+~
+~
+3 guards
+king guards...
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31251
+D3
+~
+~
+3 0 31249
+S
+#31251
+~
+~
+~
+2 assassins
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31252
+D3
+~
+~
+0 0 31250
+S
+#31252
+~
+~
+~
+THE KING....
+good gold.
+nice crown and staff
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 31251
+S
+#31253
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31263
+D2
+~
+~
+0 0 31254
+D3
+~
+~
+0 0 31211
+S
+#31254
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31253
+D2
+~
+~
+0 0 31255
+S
+#31255
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31254
+D1
+~
+~
+0 0 31256
+S
+#31256
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31257
+D3
+~
+~
+0 0 31255
+S
+#31257
+~
+~
+~
+Sentinel 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31256
+D1
+~
+~
+515 0 31259
+D2
+~
+~
+7 0 31258
+S
+#31258
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+7 0 31257
+S
+#31259
+~
+~
+~
+first warning 
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31260
+D3
+~
+~
+515 0 31257
+S
+#31260
+~
+~
+~
+second warning
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31259
+D2
+~
+~
+0 0 31261
+S
+#31261
+~
+~
+~
+last warning
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31260
+D2
+~
+~
+0 0 31262
+S
+#31262
+~
+~
+~
+6 level 100 demonic ratlike creatures
+dual claw
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31261
+S
+#31263
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31264
+D2
+~
+~
+0 0 31253
+S
+#31264
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31265
+D3
+~
+~
+0 0 31263
+S
+#31265
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31266
+D2
+~
+~
+0 0 31264
+S
+#31266
+{{~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31267
+D3
+~
+~
+0 0 31265
+D4
+~
+~
+0 0 31271
+S
+#31267
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31266
+D2
+~
+~
+0 0 31268
+S
+#31268
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31267
+D2
+~
+~
+0 0 31269
+S
+#31269
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31268
+D3
+~
+~
+514 0 31270
+S
+#31270
+~
+~
+~
+ANGEL OF DEATH
+~
+0 0 0
+Rd     0
+D1
+~
+~
+514 0 31269
+S
+#31271
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+1 0 0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 31200 0 31200
+M 0 31202 1 31202
+M 0 31202 1 31202
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

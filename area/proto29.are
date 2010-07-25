@@ -1,0 +1,2584 @@
+#AREADATA
+Name        mishval~
+Builders    Mishval~
+VNUMs       31700 31799
+Security    1
+Recall      31760
+Flags       16
+Version     107
+Creator     Mishval~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#31700
+guard guardian~
+The Guardian~
+The Guardian of Truth, Honor and Chivalry stands guarding the Temple entrance.
+~
+~
+3 234881152 32800 0 2 1000 S
+150 1 300 400 0 35000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+say Welcome to the Temple of Truth, Honor and Chivalry.
+say Enjoy your stay, but be careful to follow the laws of this land.
+~
+|
+#31701
+lady truth~
+The Lady of Truth~
+The Lady of Truth, in a long flowing white robe, rests here.
+~
+~
+11 128 32768 0 0 0 S
+130 1 260 260 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+say Welcome $n.
+say Sit down and rest your weary soul.
+say I can heal many type of injuries.
+say Type HEAL for a list.
+smile $n
+~
+|
+#31702
+Gnoris bartender~
+Gnoris~
+Gnoris, the bartender and shop owner, welcomes you to his restaurant.
+~
+~
+3 0 0 0 0 0 S
+150 1 300 300 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 70~
+say Heya bub, how's it hanging?
+~
+>speech_prog fine~
+say That's good to hear.  Nowadays all you hear about are adventurers and battles.  Gruesome if you ask me!  Good to know someone is just fine.
+~
+>speech_prog bad~
+say Well, that is a good place to be.  That way things can always get better!
+smile
+~
+>speech_prog hello hi~
+say Welcome, my friend!
+say How ya doin today?
+~
+>speech_prog ok~
+say You doing ok, huh?
+say Better than some of the other guys drinking their lives away.
+~
+|
+#31703
+zernick wizard~
+Zernick the Wizard~
+Zernick the Wizard beams a smile at you as you enter.
+~
+~
+1 100663424 0 8192 0 0 S
+140 1 280 280 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31704
+thief~
+A thief~
+A thief is lurking in the darkness.
+~
+~
+3 0 0 0 0 -300 S
+3 1 3 1 0 25d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#31705
+toad ugly~
+An ugly toad~
+An ugly toad with tons of warts jumps away from you.
+~
+~
+1 0 0 0 0 0 S
+2 1 1 2 0 16d0+0 0d0+0
+20 0 0
+0 0 1
+0 0 0
+#31706
+woman~
+A tribeswoman~
+A woman of the tribe is here tending to the tribe's injuries.
+~
+~
+3 0 0 0 0 0 S
+10 1 18 20 0 310d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+#31707
+wolf vicious~
+A vicious wolf~
+A vicious wolf exposes his fangs at you.
+~
+~
+33 0 0 0 0 0 S
+3 1 1 6 0 25d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#31708
+rabbit small~
+A small rabbit~
+A small rabbit hops along, looking for food.
+~
+~
+1 0 0 0 0 0 S
+2 1 1 1 0 20d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#31709
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31710
+frog small~
+A small frog~
+A small frog practically lands on top of you.
+~
+~
+1 0 0 0 0 0 S
+3 1 1 1 0 18d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#31712
+butterfly beautiful~
+A beautiful butterfly~
+A gorgeous butterfly flies around your head.
+~
+~
+1 0 0 0 0 0 S
+3 1 2 1 0 26d0+0 0d0+0
+30 0 0
+0 0 1
+0 0 0
+#31713
+termite termites~
+Some termites~
+Some disgusting termites have infested the wood in the room.
+~
+~
+3 0 0 0 0 0 S
+4 1 2 1 0 30d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31714
+mad alchemist~
+A mad alchemist~
+A mad alchemist sits on a bench pouring mixtures into one another.
+~
+~
+3 0 0 0 0 0 S
+5 1 2 3 0 50d0+0 0d0+0
+50 1 0
+0 0 0
+0 0 0
+>greet_prog 100~
+say Ahh!  Someone has finally found the
+say time to visit me.  I've have many
+say secrets to share!
+say Would you like to know my secrets,
+say if you do, say secrets.
+~
+>speech_prog yes~
+say Ok, well I've finally found the formula for a potion
+say Nalendro, the old wizard of this Temple had been
+say researching for years.  I need to get word to him
+say ASAP!!  Nalendro went into seclusion a few years
+say back, but he did always say he wanted to live up
+say on a grassy hill.
+mpoload 31715
+give note $n
+say So please take that to him!
+~
+>give_prog Magical Seal Nalendro~
+say You found him!!  That is GREAT news.
+say I shall have to prepare for his
+say arrival.  He could pop up at any minute!
+emote starts to dust and clean.
+say Oh yes.. I should reward you shouldn't I.
+mpoload 31718
+say Well here's a little something.
+give varnish $n
+~
+>speech_prog secrets secret~
+say My secrets!?  Sure I'll tell tell you!
+~
+|
+#31716
+guard skinny~
+A skinny guard~
+A skinny guard has been put on duty here.
+~
+~
+3 0 0 0 0 0 S
+4 1 2 2 0 26d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#31717
+thief sneaky~
+A sneaky thief~
+A sneaky thief rummages around looking for treasures.
+~
+~
+1 0 0 0 0 0 S
+4 1 2 2 0 32d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#31719
+guard guardian well~
+The guardian~
+The guardian of the well keeps the well in tip-top shape.
+~
+~
+3 0 0 0 0 0 S
+9 1 20 17 0 220d0+0 0d0+0
+90 0 0
+0 0 1
+0 0 0
+#31720
+warrior child~
+A warrior child~
+A warrior's child plays here.
+~
+~
+3 0 0 0 0 0 S
+5 1 5 5 0 80d0+0 0d0+0
+50 0 0
+0 0 1
+0 0 0
+#31721
+brutus~
+Brutus~
+Brutus the Champion of the Arena stands here proudly.
+~
+~
+3 0 0 0 0 0 S
+18 1 30 25 0 750d0+0 0d0+0
+180 0 0
+0 0 0
+0 0 0
+#31722
+trainee warrior~
+Warrior trainee~
+A warrior trainee sits here watchin Brutus fight.
+~
+~
+3 0 0 0 0 0 S
+11 1 19 20 0 220d0+0 0d0+0
+110 0 0
+0 0 0
+0 0 0
+#31723
+round boulder~
+A boulder~
+A round boulder rolls around on the floor here.
+~
+~
+3 0 0 0 0 0 S
+12 1 25 23 0 132d0+0 0d0+0
+120 0 0
+0 0 0
+0 0 0
+#31725
+trainee warrior lost~
+A lost trainee~
+A lost warrior trainee stands here trying to find the arena.
+~
+~
+3 0 0 0 0 0 S
+9 1 16 14 0 180d0+0 0d0+0
+90 0 0
+0 0 1
+0 0 0
+#31726
+lamb~
+A sacrificial lamb~
+A lamb is bound to a post here awaiting the sacrificial ritual.
+~
+~
+3 0 0 0 0 0 S
+7 1 7 7 0 101d0+0 0d0+0
+70 0 0
+0 0 0
+0 0 0
+#31727
+worshipper shaman~
+A shaman worshipper~
+A shaman worshipper is deep in prayer.
+~
+~
+3 0 0 0 0 0 S
+8 1 10 10 0 130d0+0 0d0+0
+80 0 0
+0 0 1
+0 0 0
+#31728
+azalaku chief shaman~
+Chief Azalaku~
+Chief Azalaku looks up from his prayer book and smiles warmly.
+~
+~
+3 0 0 0 0 0 S
+23 1 47 41 0 1100d0+0 0d0+0
+230 0 0
+0 0 0
+0 0 0
+#31729
+shaman leader~
+A shaman prayer leader~
+A shaman prayer leader sits here cross-legged, chanting.
+~
+~
+3 0 0 0 0 0 S
+14 1 25 25 0 270d0+0 0d0+0
+140 0 0
+0 0 0
+0 0 0
+#31731
+tribal warlord~
+The tribal warlord~
+The tribal warlord stands here beating his chest.
+~
+~
+3 0 0 0 0 0 S
+18 1 38 35 0 800d0+0 0d0+0
+180 0 0
+0 0 0
+0 0 0
+#31732
+mean pebble little~
+A mean pebble~
+A mean little pebble bounces around here blocking travelers way.
+~
+~
+3 0 0 0 0 0 S
+7 1 10 12 0 130d0+0 0d0+0
+20 0 0
+0 0 1
+0 0 0
+#31733
+stone giant~
+The Stone Giant~
+The Stone Giant pounds his great fists against the walls and floor in frustration.
+~
+~
+3 0 0 0 0 0 S
+24 1 48 45 0 1200d0+0 0d0+0
+240 0 0
+0 0 0
+0 0 0
+#31735
+child~
+A tribal child~
+A tribal child sits here playing with small pieces of bone.
+~
+~
+3 0 0 0 0 0 S
+6 1 7 5 0 85d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#31738
+hedge hog hedgehog~
+A hedgehog~
+A hedgehog rolls around in the dirt here.
+~
+~
+3 0 0 0 0 0 S
+9 1 18 17 0 380d0+0 0d0+0
+90 0 0
+0 0 0
+0 0 0
+#31740
+wizard nalendro~
+Nalendro~
+Nalendro, wizard of old rests on a comfortable chair.
+~
+~
+3 128 0 0 0 0 S
+23 1 46 44 0 950d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 65~
+bah
+say If I wanted visitors, I would advertise
+say in town.  What do YOU want??
+~
+>give_prog Nalendro note~
+say WHAT!?!  He actually did it??? This is
+ say extraordinary news!!  I must pack up
+say and meet up with him at once!!
+emote starts looking for a luggage case.
+delay 2
+say Well here is something for your trouble.
+mpoload 31716
+give disc $n
+say And here, give this to my old friend to
+say let him know I'm on my way.
+mpoload 31717
+give seal $n
+~
+|
+#31743
+arthur professor~
+Professor Arthur~
+Arthur, Professor of Chivalry sits in an armchair here.
+~
+Arthur is an old man, probably in his late 100's.  His face is wrinkled and
+a beard has grown all the way down to his belly, yet he still has the energy
+to smile and read each and every day.  He reminds you of a famous knight and king.
+~
+3 0 32768 0 0 0 S
+150 1 550 500 0 37000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+emote whispers &W"Welcome to the library, $n.  Please don't be too loud, but do let me know if there is anything I can HELP you with."
+smile
+~
+>speech_prog help~
+emote whispers &W"Sure there are lots of things I can help you with!  What would you like to know about?  I have tons of information about RELIGIONS, CLANS and QUESTS!"
+~
+>speech_prog religions religion~
+emote whispers &W"Well, religions basically form a character's entire belief system and provides them with a set of values and morals.  For example, you are in the Truth, Honor and Chivalry religion's temple as we speak.  There are a total of 7."
+emote wipes some sweat from his forehead.
+mob delay 1
+emote whipsers &W"I'm not too up to datea bout the other religions, but I can offer you information about THC"
+~
+>speech_prog clans clan~
+emote whispers &W"Ahhh.. clans.  You basically dedicate your life, blood and soul to the clan you join.  Clans are a terrific way to ensure that someone will be there to help you when you get in a rut."
+emote drinks from a glass of water.
+mob delay 3
+emote whispers &W"There are currently 5 clans: Crynne Hiere, Freedemons, Vendetta, Unholy Plague and The Forgotten.  Each has a story and you should definitely read them using CLANINFO <CLAN #>.  If you are interested in joining a clan, type CLAN"
+emote whispers &W"Then contact the ruler of that clan.  Good luck you!  And for further clan assistance, type HELP CLAN."
+~
+>speech_prog quests quest~
+emote whispers &W"Quests are tasks set forth by the Quest Master, Gharzon.  Upon completion of these tasks, Gharzon will award you quest points.  Quest points are commensurate with your level.  Collect enough and you could get a cool prize!"
+emote whispers &W"Say hi to Gharzon for me if you see him."
+~
+|
+#31745
+dust wad dustball~
+A dustball~
+A big wad of dust floats around in the air.
+~
+~
+1 0 0 0 0 0 S
+14 1 27 28 0 570d0+0 0d0+0
+140 0 0
+0 0 0
+0 0 0
+#31749
+malikyn trainer~
+Malikyn the Trainer~
+Malikyn, the Trainer stands here with his arms crossed.
+~
+~
+515 33554432 32768 0 0 0 S
+150 1 300 300 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31750
+owner tavern~
+The owner~
+The Tavern owner stands here.
+~
+~
+3 0 0 0 0 0 S
+100 1 200 200 0 100000d0+0 0d0+0
+60 0 0
+0 0 1
+0 0 0
+#31753
+fat chef~
+The Fat Chef~
+The Fat Chef hustles around, tending to his store.
+~
+~
+3 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+say Yum yum!  Try a batch of my fresh baked brownies!
+~
+|
+#31754
+cookie~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31755
+von jurik vonjurik ~
+Vonjurik~
+Vonjurik is ready to teach you a new language.
+~
+~
+65539 128 0 8192 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#31758
+argat~
+Argat~
+Argat sits here eager to teach you new skills and spells.
+~
+~
+1027 0 0 0 0 0 S
+150 1 300 300 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31761
+nebrun~
+Nebrun~
+Nebrun, Captain of the Elite Guards stands here.
+~
+~
+3 167772288 0 0 0 1000 S
+130 1 260 260 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31762
+Sebrun~
+Sebrun~
+Sebrun, General of the Army of Valor stares at you menacingly.
+~
+~
+3 134217728 32800 0 0 0 S
+140 1 280 280 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#31763
+Birin manager bank~
+Birin~
+Birin the Bank Manager sits here counting the money.
+~
+~
+131075 134217856 0 0 0 0 S
+150 1 350 350 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#31766
+old sorcerer wizard~
+An old wizard~
+An old wizard stands behind the counter dusting the various jars.
+~
+~
+3 128 0 0 0 0 S
+110 1 220 220 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#31769
+Loricar~
+Loricar~
+Loricar, the man behind the ticket booth stands here.
+~
+~
+3 0 0 0 0 0 S
+150 1 300 300 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 80~
+say Hello.
+~
+>speech_prog hello hi~
+say Yea yea.. enough with the pleasantries.
+say What SHOW do you want at ticket for?
+~
+>speech_prog shows show~
+emote checks his movie listing.
+say Heh.. sorry nothing is showing today.  BYE!
+~
+|
+#31793
+trainee sleeping~
+A trainee~
+A sleeping trainee lies on a bunk.
+~
+~
+3 0 0 0 0 0 S
+9 1 15 15 0 130d0+0 0d0+0
+90 1 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#31700
+portal arch~
+a Golden Archway~
+A &Ygolden &Wshimmering &Carch &Gstands here.~
+~
+29 0 0 0 0 0 0
+100 100
+31719~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31701
+well portal~
+a swirling silvery well~
+A silvery, swirling well surrounded by stones is on the ground here.~
+~
+29 0 0 0 0 0 0
+100 100
+31744~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31703
+scroll identify~
+a scroll of identify~
+A scroll lies here.~
+~
+2 0 0 0 0 1 1
+100 100
+100~ identify~ reserved~ reserved~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#31704
+scroll tattered~
+a tattered scroll~
+A tattered scroll sits here blowing in the wind.~
+~
+2 0 0 0 0 1 1
+100 100
+100~ remove curse~ reserved~ reserved~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#31705
+box donation~
+a donation box~
+A box has been left here for donations.~
+~
+15 64 0 0 0 0 0
+100 100
+9999~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31706
+bracer truth~
+a bracer of Truth~
+A bracer has been left on the ground.~
+~
+9 0 0 0 0 257 1
+100 100
+1~ 0~ 0~ 0~
+10 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+18 1
+A
+5 1
+#31707
+medal honor~
+a medal of Honor~
+A small medal lies in the dirt.~
+~
+9 0 0 0 0 5 3
+100 100
+40~ 0~ 0~ 0~
+10 1 0
+40 0
+reserved~
+0 0
+0 31718 31716
+A
+1 1
+A
+4 1
+#31710
+fountain~
+a sparkling fountain~
+An ornately carved fountain sits in the middle of the room.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31711
+armor~
+a suit of armor~
+A highly decorated suit of armor sits on display.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31712
+arm chair armchair~
+an armchair~
+An extremely fluffy and comfortable looking armchair sits by a bookshelf.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31713
+anvil~
+an anvil~
+A huge black anvil sits behind the counter.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31715
+Nalendro note~
+a messy note~
+A note is curled up on the ground here.~
+~
+13 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31716
+disc black~
+a blackened disc~
+A badly charred disc sits on the ground.~
+~
+13 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+31707 0 0
+#31717
+Magical Seal Nalendro~
+nalendro's Seal~
+A magical emblem floats right above the ground here.~
+~
+13 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31718
+varnish jar~
+a jar of varnish~
+A jar filled with yellow liquid is sitting on the ground here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+31707 0 0
+#31744
+arch portal~
+an arch~
+&YA golden shimmering arch stands here.~
+~
+29 2 0 0 0 0 0
+100 100
+31719~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31750
+water skin waterskin~
+a waterskin~
+A waterskin is collecting dust here.~
+~
+17 0 0 0 0 1 1
+100 100
+140~ 140~ 0~ 0~
+10 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#31753
+brownie~
+a brownie~
+A dark fudge brownie sits on the floor.~
+~
+19 0 0 0 0 1 0
+100 100
+10~ 0~ 0~ 0~
+10 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#31754
+no name~
+a cookie~
+A chocolate-chip cookie lies on the ground.~
+~
+19 0 0 0 0 1 1
+100 100
+6~ 0~ 0~ 0~
+5 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#31766
+scroll identify~
+a scroll of identify~
+A scroll of identify~
+~
+13 0 0 0 0 1 10
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+5 0
+remove curse~
+1 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#31700
+Before Ivory White Gates~
+~
+~
+Before you are two large ivory white gates leading into an enormous temple
+pulsing with energy.  As you stand before these gates you sense tremendous 
+good within the magnificent structure.  The pyramid-shaped temple's exterior
+has been composed entirely of marble making it seemingly impenetrable.
+Sunlight bounces off the structure and into your eyes, practically blinding 
+you.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 31701
+S
+#31701
+A Marble Foyer~
+~
+~
+This room is completely white from the floor to the ceiling.  Accolades and 
+other honors past followers of THC line the walls.  A massive guard stands in
+the corner fully alert, welcoming and guarding those who enter.  Type 
+CHANNELS for a list of channels available.  The most popular channels are 
+generally OOC and CHAT (vulgar language is not allowed on those channels).
+Use those channels if you need assistance.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31702
+D2
+~
+~
+0 0 31700
+S
+#31702
+Hall of Truth~
+~
+~
+The marble theme continues into this hall.  This room has been dubbed the 
+Hall of Truth for it is told that a godly force has struck down those 
+adventurers of the past who have practiced deceit in this room.  Of course, 
+that is just a rumor.  Type HELP NEWBIE for further information.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31701
+D3
+~
+~
+0 0 31771
+D4
+~
+~
+0 0 31718
+S
+#31703
+Entrance to the Training Grounds~
+~
+~
+You stand before a pair of black doors marked "TRAINING".  You can hear 
+the clash of swords and explosions from spells from beyond the doors.  A rack
+of weapons and armors stands to one side of the wall, probably to equip all 
+those ready to train.  Remember before you go into combat to "WEAR ALL".  
+This area is mainly designed for level 1-3.
+ 
+Some mobs may attack you randomly, so please be prepared.  Again get help in
+the 'HELP' menus under COMBAT for further assistance or ask questions on the
+channel OOC by typing 'ooc <message>'.
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 31771
+D3
+~
+~
+3 0 31704
+S
+#31704
+A Dark Corner~
+~
+~
+You suddenly find yourself in a dark corner of a small field.  A small breeze
+passes through this area.  The door you entered through is to the east and
+you see through the darkness paths leading both north and west.
+ 
+To attack a mob, type 'kill <mob name>'.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31709
+D1
+~
+~
+3 0 31703
+D3
+~
+~
+0 0 31705
+S
+#31705
+Along a Narrow Path~
+~
+~
+A narrow path leads to the east, worn out from so many travelers.  A path
+also leads into the field to the north.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31708
+D1
+~
+~
+0 0 31704
+D3
+~
+~
+0 0 31706
+S
+#31706
+Along a Narrow Path~
+~
+~
+The path to the west has ended but turning the corner leads to another path
+to the north.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31707
+D1
+~
+~
+0 0 31705
+S
+#31707
+Along a Narrow Path~
+~
+~
+You continue on this narrow path.  It is still the dirt path you came from
+and it seems to continue further to the north and east.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31710
+D1
+~
+~
+0 0 31708
+D2
+~
+~
+0 0 31706
+S
+#31708
+A Small Field~
+~
+~
+You stand in the center of a small field.  The field is surrounded with small
+crops like tomatoes, cabbage and some corn.  The animals scurry around to
+find their share of the food.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31711
+D1
+~
+~
+0 0 31709
+D2
+~
+~
+0 0 31705
+D3
+~
+~
+0 0 31707
+S
+#31709
+A Dark Road~
+~
+~
+The road is completely dark and visibility is limited due to a rolling fog 
+coming into the area.  You can barely make out the road continuing to the 
+north.  You also see a side path to the west leading to the field.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 31712
+D2
+~
+~
+0 0 31704
+D3
+~
+~
+0 0 31708
+S
+#31710
+The Corner of the Road~
+~
+~
+The end of one road turns the corner and becomes another.  A path continues
+to the east and seems to have been created from continuous travel,
+wearing out the grass and vegetation.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31711
+D2
+~
+~
+0 0 31707
+S
+#31711
+A Well-Travelled Path~
+~
+~
+The road continues east, but you can see another worn path leading south.
+Ahead to the west you see light flickering and a structure of some sort.
+You can also make out a well-lit booth to the north.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31716
+D1
+~
+~
+0 0 31712
+D2
+~
+~
+0 0 31708
+D3
+~
+~
+0 0 31710
+S
+#31712
+Before a Small Hut~
+~
+~
+The road has ended abruptly and you have run into a small hut.  A torch has 
+been lit and is propped up against the side of the hut.  The door is shut but
+you can see it opening and closing slightly in the breeze.  You sense greater
+danger in the hut than anything you have faced thus far.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 31717
+D2
+~
+~
+0 0 31709
+D3
+~
+~
+0 0 31711
+S
+#31713
+Upstairs Hallway~
+~
+~
+A nondescript hallway cluttered with broken glass.  A foul smell emanates
+from the east.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+1 0 31714
+D3
+~
+~
+0 0 31715
+D5
+~
+~
+0 0 31717
+S
+#31714
+An Alchemist's Laboratory~
+~
+~
+There must be hundreds of beakers and glass tubes in this room.  The room is
+also lined with about 4 wooden tables each filled with different glass 
+contraptions.  Primitive burners have been lit and are heating the various 
+containers of liquid.  No wonder there is a foul smell in the hall and you 
+can't help but hold your nose as you shift through the room.  Sitting on a
+stool studying the bubbling potions is a strange old man.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+1 0 31713
+S
+#31715
+A Tiny Bedroom~
+~
+~
+The bedroom matches the entrance to the hall: it does not look like anyone
+has touched it for ages.  Dust has collected all over the bed and the small
+reading desk against the wall.  The fireplace contains a large pile of ash that needs to be cleaned.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31713
+S
+#31716
+A Guard Booth~
+~
+~
+It seems guards have set up a small booth here in case adventurers encounter
+dangers they are not able to handle alone.  The only exit is back from where
+you came.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31711
+S
+#31717
+A Small Hut~
+~
+~
+The inside of this old hut is covered in dust.  It does not seem like anyone
+has even touched anything for ages except for the blazing fire in the
+fireplace.  The dining table is piled with dishes and the sink has rusted
+over.  You notice a staircase leading upward.
+~
+0 4 0
+Rd     0
+D2
+~
+~
+3 0 31712
+D4
+~
+~
+0 0 31713
+S
+#31718
+Hall of Chivalry~
+~
+~
+The entire hallway is emblazoned with the teachings of chivalry: various
+rules and laws to live by.  There are a few benches on the side, for those
+tired and weary adventurers to rest on.  But remember to offer your seat
+to a lady should one arrive.  A large magnificent chandelier hangs from the
+ceiling providing a light that makes the decorations glow.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31744
+D3
+~
+~
+0 0 31742
+D4
+~
+~
+0 0 31746
+D5
+~
+~
+0 0 31702
+S
+#31719
+Entrance to Advanced Combat Arena~
+~
+~
+The training arena was design to aid new warriors and adventurers in learning
+the advanced combat arts.  The arena has also been designed to help new
+adventurers learn the art of mapping and finding their way around in unknown
+environments.  The arena contains many warriors and monsters that are
+significantly more challenging than the training grounds.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31727
+D2
+~
+~
+0 0 31720
+S
+#31720
+A Warrior's Path~
+~
+~
+Trees arch above the path on either side, creating an indoors feel, but the
+dirt and animals make sure you know you are still in the midst of nature.
+Warriors have paved this path for travelling and it is marked with battle
+symbols.  Children are often left here to play while their parents enjoy time
+alone.  You can hear war cries from the south.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31719
+D1
+~
+~
+0 0 31726
+D2
+~
+~
+0 0 31721
+S
+#31721
+Warrior Combat Training Area~
+~
+~
+You are only able to peek in from the outside of this large circle since there
+are many warriors surrounding the arena.  In the middle are two fierce
+warriors fighting and training, stopping only at first blood.  The war cries
+from the fighters are truly fearsome.  The winner of the combat actively
+taunts and challenges anyone who dares stand in his way.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31720
+D1
+~
+~
+0 0 31725
+S
+#31722
+Cave of Stone~
+~
+~
+This is a typical stone cave, quiet large in size with extremely smooth walls.
+The only thing that disturbs this perfection are ancient drawings and
+markings which line the wall.  Sitting in the middle of the cave is a 
+large pile of bones.  It is quite dark in this room, but there is no
+denying a presence in addition to your own.
+~
+0 0 5
+Rd     0
+D4
+~
+~
+3 0 31723
+S
+#31723
+A Pile of Boulders~
+~
+~
+There is practically no room to walk as the entire area is covered with
+boulders of all sizes.  As one looks around, there is really nothing much to
+investigate except one boulder which seems out of place.  You see markings
+around the boulder and notice that it is a door of some sorts.  From the
+unusual boulder, you can hear a faint tapping sound.
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 31733
+D5
+~
+~
+3 0 31722
+S
+#31724
+Stone Stairway~
+~
+~
+The stairway is extremely narrow with cliff faces on either side.  If you
+were any wider, you would probably be stuck right now.  There is no other
+path but to continue eastward toward on the staircase or go back the way
+you came.  Onward!
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 31732
+D4
+~
+~
+0 0 31725
+S
+#31725
+A Large Stone Platform~
+~
+~
+THe fields have suddenly ended and you now stand on a smooth level stone
+platform placed admist the field.  Toward the south is a stone staircase
+that leads downward.  As you look closer toward the staircase, an eerie
+silence emanates from below.  This is perhaps a reason to go further
+and explore.  There is also a path leading toward the east.
+~
+0 0 5
+Rd     0
+D0
+~
+~
+0 0 31726
+D1
+~
+~
+0 0 31731
+D3
+~
+~
+0 0 31721
+D5
+~
+~
+0 0 31724
+S
+#31726
+Sacrificial Field~
+~
+~
+Before you is a truely gruesome sight.  Blood has been splattered everywhere.
+The leaves of the trees around this area have stripes of blood.  A stone
+alter rests in the middle of the area.  The original color was probably grey
+but due to all the sacrifices, the altar has now become a deep dark crusty
+red.  Caracasses are strung up on spears and planted into the ground 
+surrounding the area.  The smell of blood permeates the air and practically
+chokes you.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31727
+D1
+~
+~
+0 0 31730
+D2
+~
+~
+0 0 31725
+D3
+~
+~
+0 0 31720
+S
+#31727
+A Field of Totems~
+~
+~
+The field is surrounded in a circular pattern by enormous totems reminiscent
+of the totems shaman's carry.  You sense strong magic in this area, more so
+than any of the challenging areas presented in the easier training grounds.
+As you listen to your surroundings, you hear soft chanting but cannot find
+the source.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31728
+D1
+~
+~
+0 0 31729
+D2
+~
+~
+0 0 31726
+D3
+~
+~
+0 0 31719
+S
+#31728
+Chief Shaman's Abode~
+~
+~
+The Chief Shaman Azalaku resides here and is often busy training his new
+shamans.  The shamans have mastered the arts of spiritual healing and have
+powerful spells to heal their brethren.  You now realize the chanting you
+heard before is coming from this room where Azalaku is always in meditation
+when he is not needed for training.  You feel at peace and can rest to
+regain your strength here.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31727
+S
+#31729
+Shaman Prayer Area~
+~
+~
+The shaman's and shaman-in-training come to rest and pray to their spirit
+gods.  By praying they hope to increase their power and connection with the
+spiritual plane.  Heavy incense fills the air and its kind of foggy due to the
+smoke from ritual pipes and candles.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 31727
+S
+#31730
+A Bloody Path~
+~
+~
+The dirt path continues in both the west and south directions.  It seems to
+be well-trabled.  Most notably are the large splotches of blood that cover
+the road.  The blood patches seem to get larger and larger toward the west.
+You can hear faint cries of desperation and horror from a distance.  Looking
+south, you can see the faint outline of small log houses.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31731
+D3
+~
+~
+0 0 31726
+S
+#31731
+A Row of Log Cabins~
+~
+~
+Several log cabins are here lined up in a very neat row.  In front of these
+cabins a string of animal furs and carcasses have been hung either to show
+off the accolades of the tribe or to dry for further use.  Tribe members
+and their children are out playing games and sharpening their knives.  The
+tribe does not seem to be friendly.  The bloody path seems to end here
+however more cabins continue to the east.  The cabins end on the western side
+giving way to what seems to be some stone structure.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 31730
+D1
+~
+~
+0 0 31735
+D3
+~
+~
+0 0 31725
+S
+#31732
+A Stone Platform~
+~
+~
+This is just a plain stone platform on the staircase.  You see that the
+staircase continues on downward.
+~
+0 0 5
+Rd     0
+D3
+~
+~
+0 0 31724
+D5
+~
+~
+0 0 31733
+S
+#31733
+A Junction~
+~
+~
+The T-junction offers three paths to continue travel, one of which is the
+the way you came.  To the west you see large boulders, to the east more rock
+and then there are the stone stairs leading upward.  It seems extremely
+quiet probably due to the stone surroundings.
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 31734
+D3
+~
+~
+0 0 31723
+D4
+~
+~
+0 0 31732
+S
+#31734
+A Dead-End~
+~
+~
+In front of you and surrounding you on either side are steep stone cliff
+faces.  THe insurmountable rock walls are daunting to say the least and
+seem to be almost endless as you try to see how high they rise.
+~
+0 0 5
+Rd     0
+D3
+~
+~
+0 0 31733
+S
+#31735
+A Few Log Cabins~
+~
+~
+A few more cabins are lined up in a row here with the same style of bloody
+carcasses and furs lined up in front of the abodes.  The women of the tribe
+seem to prefer this end of the row of cabins and keep themselves busy
+taking care of the children and preparing meals for their warriors.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 31736
+D3
+~
+~
+0 0 31731
+S
+#31736
+A Small Hill~
+~
+~
+The road turns a bit rougher covered with large rocks and pebbles.  The path
+climbs a small hill and continues upward toward the east.  The path also
+continues to the north downward and levelling out toward flatter plains.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 31737
+D2
+~
+~
+0 0 31735
+D4
+~
+~
+0 0 31738
+S
+#31737
+Middle of a Grassy Field~
+~
+~
+The field extends as far as the eye can see and there is really nowhere else
+to go except for back toward the hill.  This field is perfect for lying down
+on a clear day and just relaxing in the breeze.  The grass has grown long
+since no one really takes care of this area.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31736
+S
+#31738
+Up a Grassy Slope~
+~
+~
+The slope leading upward is especially steep and you are practically out of
+breath as you reach the top.  There is no consolation in the fact that the
+path continues even further to the south.  In the distance you can make out
+crackling noises.
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 31739
+D5
+~
+~
+0 0 31736
+S
+#31739
+A Dirt Trail~
+~
+~
+The grass has died along this area of the path and all you can see is the
+dirt.  To the west you observe a house constructed of wood planks.  Strange
+sounds come from the inside and you wonder what or who could be making all
+of that racket.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 31738
+D3
+~
+~
+3 0 31740
+S
+#31740
+The Wizard's Hideout~
+~
+~
+This is the home of the old wizard Nalendro.  After serving the nobility of
+his religion, he became a recluse and holed himself in this part of the temple.
+Nalendro sits at the table in the middle of the room looking as if he hasn't
+slept a wink in 20 years.  Charred sections of the wall are a sign that he
+has been quite active in creating new spells and mixing new potions.
+~
+0 131072 0
+Rd     0
+D1
+~
+~
+3 0 31739
+D5
+~
+~
+3 0 31745
+S
+#31741
+The Temple Armory~
+~
+~
+This place is a GIGANTIC storehouse of weapons, armors or anything combat
+related.  Several notable armors of famous warriors are sitting in glass
+cases for those rich enough to actually buy them.  Along the wall hang some
+truly magnificent blades.  While well organized, there are still a pile of
+boxes in the corner, probably armor that have not yet been sorted or that
+have just arrived at the Temple.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31742
+S
+#31742
+Hall of Chivalry~
+~
+~
+The decoration theme here is the same as in the previous hallway. Here marble
+statues line the walls.  The statues are busts of men and women who have
+been especially active in the chivalry movement and who have made signifcant
+contributions to it.  To the north is a doorway leading to the library, while
+to the south is the armory.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31743
+D1
+~
+~
+0 0 31718
+D2
+~
+~
+0 0 31741
+S
+#31743
+The Library of Chivalry~
+~
+~
+This is an enormous library that must have over a million volumes organized
+neatly on the library shelves.  You see hundreds of study tables and a few
+study rooms all around the library.  This is where knights and other
+adventurers come to study the ways of chivalry and learn the etiquette
+necessary to lead a life true to Truth, Honor and Chivalry.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31742
+S
+#31744
+A Golden Archway~
+~
+~
+This is a room filled with magical presence and power.  The only object you
+see is a huge shimmering and pulsing portal in the middle of the room leading
+you to yet another training area.  BEWARE:  THIS AREA IS FOR LEVELS 5 AND
+ABOVE.  
+ 
+To enter portals, type 'enter <portal name>'
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31718
+S
+#31745
+Storage Area~
+~
+~
+A huge storage down in the bowels of Nalendro's hideout stands before you.
+Everything from toad's tongue to bat's wings are here.  The shelves are
+completely filled and its a wonder Nalendro could ever find anything here.
+A couple of wands lie here and there with a thin layer of dust covering the
+exposed shelves.  Little bags of magic powder have been carelessly left
+open and are slowly draining to the ground.
+~
+0 0 0
+Rd     0
+D4
+~
+~
+3 0 31740
+S
+#31746
+A Three Hall Junction~
+~
+~
+Compared with the two lower levels, this is probably the floor with the least
+amount of decor.  The room is painted a deep red, highlighted by gold emblems
+representing truth, honor and chivalry.  Three halls join to meet at this
+singular point.  There are paths to the south, east and west.  From each of
+the halls comes a different distinct noise, piquing your curiosity and
+interest.  A sign standing here reads: WEST - Practice Center, EAST -
+Training Room, SOUTH - Learning Annex.  There is also a set of stairs
+continuing upwards.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31747
+D2
+~
+~
+0 0 31751
+D3
+~
+~
+0 0 31756
+D4
+~
+~
+0 0 31759
+D5
+~
+~
+0 0 31718
+S
+#31747
+The Eastern Hall~
+~
+~
+While the other two halls are fairly quiet with only hints of mumbling and
+talking, this hallway is particularly noisy.  You can hear the yelling and
+shouting of a deep-voice down toward the east.  The halls are constructed
+of jagged stone and there has been absolutely no effort to decorate or
+embellish the area.  A sign hangs on the wall: "Are you TOUGH ENOUGH!?".  The
+hall continues eastward and a small beverage store is located to the south. 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31748
+D2
+~
+~
+0 0 31750
+D3
+~
+~
+0 0 31746
+S
+#31748
+Through the Eastern Hall~
+~
+~
+You have finally found the source of the yelling and shouting and as you peek
+north you see a large angry man yelling at students and training them.  Ahh..
+this must be the Training Room where you can enhance your natural abilities
+and skills.  You are not sure if you should walk in, risking your life and
+limbs if you enter at the wrong moment.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31749
+D3
+~
+~
+0 0 31747
+S
+#31749
+The Training Room~
+~
+~
+Malikyn does not look happy at all.  Being the Training Instructor, he must
+make sure all his students train to their fullest potential, and this often
+requires him to yell and scream at them.  Several different training
+contraptions are strewn along the floor.  Some are designed to increase
+your strength, others to heighten your wisdom.  You sense that you better
+drop any attitude you have and play like a good little student.
+Type HELP TRAIN for further information on training.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31748
+S
+#31750
+Water and Bubbles Tavern~
+~
+~
+This is not really a tavern more like a small bar with limited room for
+people to sit and chat.  There are a variety of beverages available here,
+some being alcoholic.  The bartender does not look very happy at all and you
+feel as if you should make your decision quickly or else the bartender may
+become even more unhappy.  Type 'list'.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31747
+S
+#31751
+A Southern Hallway~
+~
+~
+The hallway to the south is cluttered with numerous signs and plaques all in
+different languages.  You can recognize some such as a dwarvish pledge of
+honor and a human sign dedicated to the pursuit of truth.  Listening devices
+are also left on the floor and tables here, probably from students learning
+various languages and not picking up after themselves.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31746
+D3
+~
+~
+0 0 31752
+S
+#31752
+Through the Southern Hall~
+~
+~
+As you enter this end of the hall, you find yourself suddenly drooling at the
+smell of warm bread and other delightful pastries to the west.  You were
+probably coming down this path to learn a new language but you can't help but
+take a detour to fill that growling stomach.  The jumble of voices and
+languages gets louder as you get closer to the learning annex.  The hallway
+continues to the south.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31751
+D2
+~
+~
+0 0 31754
+D3
+~
+~
+0 0 31753
+S
+#31753
+The Bakery of Truth, Honor, Chivalry~
+~
+~
+A picture is worth a thousand words, and the picture in the front of you
+probably contains twice as many varieties of food.  From apple pies to
+loaves of bread to french pastries, there are just so many options to choose
+from.  It really is unfortunate you cannot stay here longer to try all the
+different varieties this place has to offer.  Small dining tables fill the
+area allowing passer-by's to sit down for awhile and enjoy their snacks.  The
+baker sits behind the counter, getting up once in a while to check up on
+the cooks, assuring the quality of the products.  For a list of items you
+may purchase, type 'list'.
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 31752
+S
+#31754
+End of the Southern Hall~
+~
+~
+The hall ends at this point and the only exit besides continuing back through
+the hallway is the Learning Annex to the east.  A sign by the doorway reads:
+QUIET, Students trying to learn!!!  The study of languages requires absolute
+concentration and attention.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31752
+D1
+~
+~
+0 0 31755
+S
+#31755
+The Learning Annex~
+~
+~
+A couple students have arrived ahead of you and are sitting in language booths
+with the listening contraptions you found in the hallway.  The language master
+Vonjurik sits in the middle of a room with a french beret on his head, 
+looking very international.  On the wall are a list of languages that are
+taught and the prices for each lesson.  Better check your wallet to see if
+you have enough!
+Type HELP LEARN for more information.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 31754
+S
+#31756
+The Western Hallway~
+~
+~
+As you walk into this hall, the first thing you notice is the hundred of books
+resting on shelves all around you.  It looks more like a library than anything
+else.  The hall doesn't end here however, it continues on toward the north
+and you seem to hear distant talking and whispering.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31757
+D1
+~
+~
+0 0 31746
+S
+#31757
+Through the Western Hallway~
+~
+~
+The hallway continues ending to the west at the Practice Center.  Peering
+inside you can see several people studying and learning intently.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31756
+D3
+~
+~
+0 0 31758
+S
+#31758
+The Practice Center~
+~
+~
+A master of all skills and spells rests here in eternal meditation, teaching
+worthy followers his knowledge and expertise.  Learning such powerful skills
+and spells come with a tremendous responsibility and the master is always
+warning his pupils of possible corruption.  A large banner is strung in the
+background reading "Practice Makes Perfect".  Type PRAC to see the list of
+skill/spells you can practice.  Then type PRAC <Skill/Spell> to practice
+a particular one.  If you need more help type HELP PRAC.
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 31757
+S
+#31759
+Hall of Honor~
+~
+~
+This is the top floor of the temple, beginning with the Hall of Honor.  Here,
+crests and symbols of families and warriors decorate the walls as symbols
+of their honor.  The Book of Honorable Deeds sits on a crystal altar in the
+middle where adventurers may come and write their deeds down for all to
+see and admire.  An honor guard is always standing in the corner of this
+room watching all who pass by.  A northern corridor leads to the shrine.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31760
+D5
+~
+~
+0 0 31746
+S
+#31760
+The Shrine Intersection~
+~
+~
+The Hall of Honor has ended and merged into this intersection of paths.  Paths
+lead in all four directions.  To the north you see a magnificent display and
+recognize it as the Great Shrine of Truth, Honor and Chivalry, where
+adventurers go to heal their wounds and rest after a long journey.  Children
+are running up and down the corridor to the west, whereas to the east it
+seems much more quiet and solemn.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31761
+D1
+~
+~
+0 0 31762
+D2
+~
+~
+0 0 31759
+D3
+~
+~
+0 0 31764
+S
+#31761
+Before the Shrine~
+~
+~
+The entrance to the Great Shrine is heavily guarded by two soldiers present
+at all times, never leaving their posts.  All who enter are scrutinized by
+them before being allowed entrance.  The entrance is pyramid shaped, much
+like the temple itself and is completely made of crystal.  Even from outside
+you can sense a tremendous power pulsing and pulling at your soul from
+within the shrine.  As you step into this room, you feel somewhat rejeuvenated
+probably from the powerful healing from within.
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 31767
+D2
+~
+~
+0 0 31760
+S
+#31762
+Shrine Walk East~
+~
+~
+The marble has turned into a brick walkway leading toward the east.  As you
+enter from the west, you can hear the distinct sound of coins and many
+people talking.  As you look around some more, you see the bank sitting to
+your north and to your south is a small ticket booth.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31763
+D2
+~
+~
+0 0 31769
+D3
+~
+~
+0 0 31760
+S
+#31763
+The Bank of Honor~
+~
+~
+Heavily guarded at all times, the Bank of Honor serves everyone within the
+temple and keep their money in their large vault.  The guards are well armed
+and extremely well trained and eyes anyone and everyone with suspiciously.
+You sense it would be very dangerous to make any movements that could be
+construed as illegal.  The bank counters are casted from gold.  Large glass
+shields are erected in front of the tellers to prevent them from being
+attacked.  The tellers seem chatty and smile warmly toward all their patrons.
+The bank manager walks out from time to time checking on his bank.
+Type HELP BANK for further assistance.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31762
+S
+#31764
+Shrine Walk West~
+~
+~
+The western walkway is extremely busy filled with parents and their children
+carrying bags of all sizes.  So many people fill this path that their is
+virtually no room to maneuver.  With all the bags and commotion this must be
+some kind of shopping district in the temple.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31765
+D1
+~
+~
+0 0 31760
+D2
+~
+~
+0 0 31768
+S
+#31765
+A Court of Shops~
+~
+~
+You enter into a circular path of small shops.  The most noticeable shop is
+to the west.  With smoking cauldrons and bubbling potions in its window, The
+Magic Touch draws everyone's attention.  Furniture stores and clothing stores
+are also here but with much less pizzazz.  Many people come here to merely
+take a stroll since the skylight above the courtyard provides an abundance
+of sunlight.  The area is also decorated with trees and gardens to mimic
+natures appeal.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31764
+D3
+~
+~
+0 0 31766
+S
+#31766
+The Magic Touch~
+~
+~
+The Magic Touch is a storehouse of magic equipment.  Be it scrolls, potions
+or wands, this store has it all.  A long white-bearded man stands behind
+the counter decked out in traditional wizard wear.  Many of the itemsss here
+have DO NOT TOUCH signs on them as they may be hazardous to your health if
+you do not know what you are doing.  Jars of bat wing and eye of newt sit on
+the counter inviting you to try one.  Potions have been stored in large kegs
+and can be bought by the cup.  With all the different items in the store, it
+is a miracle that the shop owner can keep it stocked at all times.  Type
+'list' for item you can buy.
+~
+0 2098176 0
+Rd     0
+D1
+~
+~
+0 0 31765
+S
+#31767
+The Great Shrine of Truth, Honor and Chivalry~
+~
+~
+This shrine is truly a sight to behold.  Above you is a vast gold dome with a
+circular opening allowing a splendid beam of sunlight to pass through.
+Crystalline walls seem to glimmer and shine as theight hits it.  A small
+dais in the middle of the room emphasizes the importance of the one who
+rests on it, the Lady of Truth.  Healers rest by the dais awaiting anyone
+who enters and needing their help.  A constant chanting can be heard as
+continuous healing energies are set forth through the room.  Chimes and
+musical intruments play by themselves to provide a wonderous tune as you
+rest.
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 31761
+S
+#31768
+Dragon Slayer's Bar and Grill~
+~
+~
+Probably the only real restaurant in the temple, the Dragon Slayer's Bar and
+Grill serves all the warriors hungry for a good meal after their journey.  The
+bar is in the center of the room with bar stools all around for the lonely.
+There are also many tables and booths for parties to come and enjoy the
+fine cuisine of the bar and grill. Gnoris, the bartender and restaurant
+owner commands his employees to their various positions and tasks.
+Occasionally, one can see bursts of flames coming from the kitchen - hopefully
+no one got hurt.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31764
+S
+#31769
+In Front of the Theater~
+~
+~
+It seems the architects of the Temple did not want their people to get bored
+and thus built this magnificent theater to entertain its citizens.  A small
+ticket booth sits here selling tickets to all the theater enthusiasts.
+Another man stands right outside the theater door handing out programs and
+welcoming everyone to the show.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31762
+D5
+~
+~
+0 0 31770
+S
+#31770
+A Grand Theater~
+~
+~
+The theater is medium in size seating around a hundred people, maybe more if
+people crammed together.  The seats are wooden as is the stage.  A white
+curtain is currently drawn as there is no show right now.  Ushers are
+running up and down the aisles cleaning the seats and floors in preparation
+for the next show.  Small concession carts are placed strategically in the
+aisles for people to purchase beverages and snacks while watching today's
+entertainment.
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31769
+S
+#31771
+A Side Passage~
+~
+~
+The side passage seems to get dimmer and dimmer toward the west.  You sense
+some sort of danger in that direction.  The marble theme ends here with stone
+walls, floor and ceilings.
+ 
+You are about to enter the combat prepartion to the west.  Be sure to read
+the 'HELP' section on COMBAT
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31702
+D3
+~
+~
+0 0 31703
+S
+#0
+
+
+
+#SPECIALS
+M 31701 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 31700 1 31701
+O 0 31710 0 31702
+M 0 31704 1 31704
+M 0 31710 1 31705
+M 0 31705 1 31705
+M 0 31707 1 31707
+M 0 31705 1 31707
+M 0 31708 2 31708
+M 0 31708 1 31708
+M 0 31708 1 31708
+M 0 31710 2 31709
+M 0 31712 1 31709
+M 0 31710 1 31710
+M 0 31710 1 31710
+M 0 31712 1 31712
+M 0 31714 1 31714
+M 0 31713 2 31715
+M 0 31713 2 31715
+M 0 31716 2 31716
+O 0 31701 0 31719
+M 0 31719 1 31719
+M 0 31720 2 31720
+M 0 31720 2 31720
+M 0 31721 1 31721
+M 0 31722 1 31721
+M 0 31733 1 31722
+M 0 31723 1 31723
+M 0 31722 1 31725
+M 0 31725 1 31725
+M 0 31726 1 31726
+M 0 31727 1 31727
+M 0 31728 1 31728
+M 0 31729 1 31729
+M 0 31727 2 31729
+M 0 31731 1 31731
+M 0 31706 1 31731
+M 0 31732 1 31732
+M 0 31732 1 31732
+M 0 31735 2 31735
+M 0 31738 1 31738
+M 0 31740 1 31740
+O 0 31713 0 31741
+M 0 31743 1 31743
+O 0 31712 0 31743
+O 0 31744 0 31744
+M 0 31745 2 31745
+M 0 31749 1 31749
+M 0 31750 1 31750
+G 0 31750 0
+M 0 31753 1 31753
+G 0 31753 0
+G 0 31754 0
+M 0 31755 1 31755
+M 0 31758 1 31758
+O 0 31705 0 31760
+P 0 31706 0 31705
+P 0 31707 0 31705
+M 0 31761 1 31761
+M 0 31762 1 31761
+M 0 31763 1 31763
+M 0 31766 1 31766
+G 0 31703 0
+G 0 31704 0
+M 0 31701 1 31767
+M 0 31702 1 31768
+M 0 31769 1 31769
+O 0 31711 0 31771
+S
+
+
+
+#SHOPS
+31750 17 0 0 0 0 150 50 0 24
+31753 19 0 0 0 0 150 50 0 24
+31766 2 0 0 0 0 100 50 0 24
+0
+
+
+
+#$

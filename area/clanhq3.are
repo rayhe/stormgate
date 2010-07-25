@@ -1,0 +1,1999 @@
+#AREADATA
+Name        { CLAN } The Void HQ~
+Builders    Sirix~
+VNUMs       1601 1700
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Sirix~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#1601
+black wolf voidkaltor~
+&zThe Black Wolf~
+&zThe Black Wolf stares you down.
+~
+&zA large Black Wolf stands guard at the Lair of Kaltor Aldaroc.  
+~
+524291 172096 88080528 16384 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+2 0 0
+>all_greet_prog 100~
+if name($n) == Kaltor
+   bow kaltor
+   say Kaltor, my Liege, how may I serve you?
+else
+   if isclan($n) == 4
+      nod
+      say Greetings
+   else
+      yell $n! Begone from this place!
+   endif
+endif
+~
+>death_prog 100~
+~
+|
+#1602
+acolyte voidaurex~
+&can Acolyte~
+&cAn Acolyte of the Void watches over this place.
+~
+~
+524291 172096 88080528 16384 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+if name($n) == Aurex
+   bow aurex
+   say What would you have of me, Sensei?
+else
+   if isclan($n) == 4
+      nod
+      say Do you seek Master Aurex, $n?
+   else
+      yell You are an intruder here, $n!
+      emote enters a fighting stance.
+   endif
+endif
+~
+>death_prog 100~
+~
+|
+#1603
+ensign voidixion~
+&pan Ensign~
+&pAn Ensign of the Wheel of Fire stands at attention.
+~
+&pThe Standard-Bearer for Ixion Rosmerta stands here draped in purple livery.
+~
+524291 172096 88080528 16384 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+2 0 0
+>death_prog 100~
+~
+>all_greet_prog 100~
+if name($n) == Ixion
+   salute ixion
+   say General, what is thy command?
+else
+   if isclan($n) == 2
+      nod
+      say Greetings, Good My Lord.
+   else
+      yell $n has breached our halls! T'arms!
+   endif
+endif
+~
+|
+#1604
+monk nameless~
+The Nameless Monk~
+The Nameless Monk levitates in the center of the room, chanting.
+~
+&YDraped in yellow robes, the legendary Nameless Monk serves those who
+serve the Void.  His age is incalcuable and his face has been creased by
+countless aeons.  
+~
+2621443 663616 88899732 16386 16 0 S
+110 1 220 220 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>death_prog 100~
+mpmload 1604
+~
+>speech_prog away!~
+say As you will it.
+flee
+~
+>speech_prog north1~
+bow
+north
+~
+>speech_prog south1~
+bow
+south
+~
+|
+#1605
+Larcrum~
+Larcrum~
+Larcrum the Banker is seated in front of a large vault.
+~
+&wLarcrum is a fat, boring little man and well-suited to the task of
+organizing the funds of the members of the Void.  
+~
+655363 134234176 16777232 16384 2 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#1606
+Lamorde shopkeeper~
+Lamorde~
+An unassuming shopkeeper is here.
+~
+~
+524291 67108864 4718608 16384 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>act_prog p enters the area from the path to the Void.~
+if ispc($n)
+ if isclan($n) == 4
+  nod $n
+else
+yell Welcome to my humble shop, $n!
+ endif
+endif
+~
+|
+#1607
+laertes blacksmith~
+Laertes~
+Laertes the Blacksmith is hard at work.
+~
+&zLaertes is a hairy man of much girth and his skin has been toughened by
+years of work with the furnace and anvil.  
+~
+524291 64 16777232 134234368 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#1608
+larna swordmistress~
+Larna~
+Larna, the Swordmistress of the Void directs the training sessions.
+~
+&pLarna stands here, gripping the two swords at her waist, her sinewy
+muscles shining in the unnatural light surrounding her.  
+~
+525827 524352 20971536 1610629120 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+~
+|
+#1610
+bloodhound~
+&rThe Bloodhound~
+The Bloodhound sits here, snarling and snapping at the air
+~
+~
+524291 1073741825 88114324 0 4 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+4 0 0
+>death_prog 100~
+mpmload 1610
+~
+|
+#1611
+goodness~
+&WAn Essence of Goodness~
+&WAn Essence of Goodness is here.
+~
+~
+524355 524288 0 0 0 1000 S
+50 1 100 100 0 100d0+0 0d0+0
+0 0 0
+0 0 0
+1 0 0
+>death_prog 100~
+mpmload 1611
+~
+|
+#1612
+evil~
+&zAn Essence of Evil~
+&zAn Essence of Evil is here.
+~
+~
+524291 0 16 0 0 -1000 S
+50 1 100 100 0 100d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+mpmload 1612
+~
+|
+#1613
+whore babylon voidapollyon~
+&Rthe Whore of Babylon~
+&RThe Whore of Babylon lies here, waiting.
+~
+&ROn her forehead was written a name, which is a mystery, Babylon the
+great, the mother of harlots and of the abominations of the earth.  I saw
+that the woman was drunk on the blood of the holy ones and on the blood of
+the witnesses to Jesus.  When I saw her I was greatly amazed.  
+~
+524291 172096 88080528 16384 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+500 0 0
+0 0 2
+2 0 0
+>death_prog 100~
+~
+>all_greet_prog 100~
+if name($n) == Apollyon
+   m0an apollyon
+   say Oh, Master Apollyon!
+else
+   if isclan($n) == 2
+      eyebrow
+      say Looking for me?
+   else
+      yell Mmm...Looks like $n wants to be my next customer.
+   endif
+endif
+~
+|
+#1614
+Urobouros~
+The Urobouros~
+The Urobouros, Eschelon of Eternity, floats here, consuming and recreating itself.
+~
+~
+3 234881088 17563648 1610612736 36 0 S
+170 1 560 860 0 80000d0+0 0d0+0
+1700 0 0
+0 0 0
+7 0 0
+>all_greet_prog 100~
+mpecho &YYou feel a sense of sublime harmony upon entering the presence of the Urobouros.
+~
+>fight_prog 17~
+mpmload 1615
+mpecho &YThe Urobouros sends forth a magical entity to aid it in battle.
+~
+>fight_prog 40~
+mpecho &YThe air explodes into yellow flames!
+cast 'sunburst' $n
+mpecho &CThe flames solidify into crystals of ice!
+cast 'winters chill' $n
+~
+>fight_prog 40~
+mpecho &BA psionic shockwave tears through the room!
+cast 'ultrablast'
+cast 'ultrablast'
+~
+>fight_prog 20~
+mpecho &YThe Urobouros phases into reality.
+mpoload 1628
+wear aura
+~
+>fight_prog 20~
+mpecho &YThe Urobouros re-enters the astral plane.
+wear impression
+~
+|
+#1615
+A Silohuette~
+A Silohuette~
+A figure outlined in shadow is here
+~
+~
+3 67108992 524288 0 0 0 S
+105 1 560 500 0 10000d0+0 0d0+0
+1050 0 0
+0 0 0
+2 0 0
+>fight_prog 95~
+slit $n
+~
+>act_prog ~
+if isfight($n) == Urobouros
+rescue $n
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#1601
+portal clan void exit~
+A Portal~
+A Portal~
+~
+29 1 73728 0 0 0 0
+100 100
+1601~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1602
+continuum void 50~
+&zA Continuum~
+A glowing loop of energy lies here.~
+~
+9 67108865 196608 0 0 2049 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 50
+A
+18 10
+A
+19 10
+A
+1 2
+A
+24 -10
+#1603
+continuum void 75~
+&zA Continuum~
+A glowing loop of energy lies here.~
+~
+9 67108865 196608 0 0 2049 75
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+A
+18 15
+A
+1 2
+A
+24 -15
+A
+13 75
+A
+19 15
+#1604
+continuum belt void 100~
+&zA Continuum~
+A glowing loop of energy is lying on the ground.~
+~
+9 67108865 196608 0 0 2049 100
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+303 -1
+A
+12 100
+A
+18 20
+A
+19 20
+A
+13 100
+A
+26 100
+A
+24 -20
+A
+2 2
+A
+25 40
+#1605
+tincture void~
+A tincture~
+A tincture~
+~
+10 268435456 65536 0 0 1 30
+100 100
+100~ cure poison~ cure blindness~ remove curse~
+1 340 0
+0 0
+reserved~
+0 0
+0 0 0
+#1606
+ether void~
+an ether~
+An ether is here.~
+~
+10 268435456 65536 0 0 1 30
+100 100
+100~ mana~ mana~ mana~
+1 2100 0
+0 0
+reserved~
+0 0
+0 0 0
+#1607
+panacea void~
+a panacea~
+A panacea is here.~
+~
+10 268435456 65536 0 0 1 30
+100 100
+100~ cancellation~ cancellation~ cancellation~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#1608
+potion invisibility~
+Potion of invisibility~
+Potion of invisibility~
+~
+10 268435456 65536 0 0 1 30
+100 100
+100~ ectoplasmic form~ invis~ reserved~
+1 320 0
+0 0
+reserved~
+0 0
+0 0 0
+#1609
+potion strength~
+Potion of strength~
+Potion of strength~
+~
+10 268435456 65536 0 0 1 30
+100 100
+100~ giant strength~ reserved~ reserved~
+1 320 0
+0 0
+reserved~
+0 0
+0 0 0
+#1610
+scroll eye sight~
+a Vision Glyph~
+A glyph in the shape of an eye is here.~
+~
+2 268435456 65536 0 0 1 30
+100 100
+100~ detect magic~ detect invis~ detect hidden~
+1 300 0
+0 0
+reserved~
+0 0
+0 0 0
+#1611
+energizer~
+an Energizer~
+A potion of energy lies here.~
+~
+10 268435456 65536 0 0 1 30
+100 100
+100~ refresh~ refresh~ refresh~
+1 240 0
+0 0
+reserved~
+0 0
+0 0 0
+#1612
+scroll identification~
+Scroll of identification~
+Scroll of identification~
+~
+2 0 65536 0 0 1 30
+100 100
+100~ identify~ reserved~ reserved~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#1613
+black hole void~
+&zA Black Ho&wl&We&c~
+&zA tear in the fabric of spacetime floats here.~
+~
+15 536870912 196608 0 0 1 30
+100 100
+400~ 1~ 0~ 0~
+1 50000 0
+0 0
+reserved~
+0 0
+0 0 0
+#1614
+vitamin food crynn hiere~
+Vitamin~
+Vitamin~
+~
+19 0 65536 0 0 1 30
+100 100
+25~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#1615
+path unknown~
+A path to the unknown.~
+A path to the unknown.~
+~
+29 0 0 0 0 0 1
+100 100
+17948~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1616
+path clan void~
+path to the Void~
+A path to the Void. Please see HELP CLANS before entering.~
+~
+29 0 0 0 0 0 0
+100 100
+1601~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1617
+trap door~
+a trap door~
+A trap door leads back up to the shop.~
+~
+29 0 0 0 0 0 0
+100 100
+1601~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#1618
+nexus~
+&WGlowing Nexus~
+&WA Glowing Nexus floats here.~
+~
+29 1 8192 0 0 0 0
+100 100
+1603~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#1619
+nexus~
+&WGlowing Nexus~
+&WA Glowing Nexus floats here.~
+~
+29 1 8192 0 0 0 0
+100 100
+1602~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#1620
+throne bloodstained~
+&rthe bloodstained throne~
+&r(Blood-stained) &RA cracked granite throne stands here.~
+~
+12 0 0 0 0 0 105
+100 100
+0~ 0~ 0~ 0~
+5000 10000000 0
+0 0
+reserved~
+0 0
+0 0 0
+#1621
+trap door~
+the trap door~
+There is a trap door behind the counter~
+~
+29 0 0 0 0 0 1
+100 100
+1602~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1622
+stylized flame tapestry~
+&Rthe stylized flame tapestry~
+&rAn enormous tapestry of a stylized flame hangs from the rear wall.~
+~
+8 100663296 0 0 0 0 105
+100 100
+0~ 0~ 0~ 0~
+15 100000 0
+0 0
+reserved~
+0 0
+0 0 0
+#1623
+vine gate~
+&ga Vine Gate~
+&gA Gate made of Vines stands here.~
+~
+29 0 0 0 0 0 0
+100 100
+1612~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#1624
+vine gate~
+&ga Vine Gate~
+&gA Gate made of Vines stands here.~
+~
+29 0 0 0 0 0 0
+100 100
+1613~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#1625
+elliptical mirror~
+&wAn Elliptical Mirror~
+&wAn Elliptical Mirror floats here.~
+~
+12 1 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>look_prog 100~
+0
+mpechoat $n &wThe image in the mirror seems to be a reflection of all the evil in your soul.
+~
+|
+#1626
+pentagram~
+&YA Large Pentagram~
+&YA large, flaming Pentagram is drawn on the floor.~
+~
+12 100663296 1048576 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1627
+portal~
+&WPortal~
+&WA Shimmering Portal floats here.~
+~
+29 0 8192 0 0 0 0
+100 100
+1601~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#1628
+blah~
+Blah~
+Blah~
+~
+9 0 0 0 0 1 106
+100 100
+0~ 0~ 0~ 0~
+1 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#1629
+impression~
+an Impression of Auralself~
+Blah~
+~
+5 1 0 0 0 8193 105
+100 100
+0~ 26~ 80~ 0~
+10 15005 0
+0 0
+reserved~
+0 0
+0 0 0
+>drop_prog ~
+0
+~
+|
+#0
+
+
+
+#ROOMDATA
+#1601
+A Small Shop~
+~
+~
+You have entered what seems to be a small provisions shop.  You find the
+desolate placement of such a shop to be rather odd.  
+~
+0 537174030 0
+Rd     0
+S
+#1602
+Below the Shop~
+~
+~
+You find yourself in a dark, moldy cellar.  You can see nothing save for
+a strange nexus in the center of the room and a dim light from the trap door
+back to the shop.  
+~
+0 537321487 0
+Rd     0
+S
+#1603
+A Walkway in the Abyss~
+~
+~
+On the otherside of the nexus you find yourself on a narrow walkway
+suspended within an endless abyss.  Blue streaks of lightning split the
+blackness of the void.  The only object you can see other than this walkway
+is an immense pyramid in the distance.  
+~
+0 537321475 1
+Rd     0
+D0
+~
+~
+0 0 1604
+S
+#1604
+Path to the Great Pyramid~
+~
+~
+The suspended walkway toward the Great Pyramid twists and spirals in ways
+that appear counterintuitive to all known effects of gravity and physics. 
+You wonder what sort of strange magicks have converged to produce such a
+strange mirror of reality.  
+~
+0 537321474 1
+Rd     0
+D2
+~
+~
+0 0 1603
+D5
+~
+~
+0 0 1605
+S
+#1605
+Path to the Great Pyramid~
+~
+~
+The suspended walkway toward the Great Pyramid twists and spirals in ways
+that appear counterintuitive to all known effects of gravity and physics. 
+You wonder what sort of strange magicks have converged to produce such a
+strange mirror of reality.  
+~
+0 537305090 1
+Rd     0
+D1
+~
+~
+0 0 1606
+D4
+~
+~
+0 0 1604
+S
+#1606
+Path to the Great Pyramid~
+~
+~
+The suspended walkway toward the Great Pyramid twists and spirals in ways
+that appear counterintuitive to all known effects of gravity and physics. 
+You wonder what sort of strange magicks have converged to produce such a
+strange mirror of reality.  
+~
+0 537305090 1
+Rd     0
+D0
+~
+~
+0 0 1607
+D3
+~
+~
+0 0 1605
+S
+#1607
+Path to the Great Pyramid~
+~
+~
+The suspended walkway toward the Great Pyramid twists and spirals in ways
+that appear counterintuitive to all known effects of gravity and physics. 
+You wonder what sort of strange magicks have converged to produce such a
+strange mirror of reality.  
+~
+0 537305090 1
+Rd     0
+D2
+~
+~
+0 0 1606
+D3
+~
+~
+0 0 1608
+S
+#1608
+Path to the Great Pyramid~
+~
+~
+The suspended walkway toward the Great Pyramid twists and spirals in ways
+that appear counterintuitive to all known effects of gravity and physics. 
+You wonder what sort of strange magicks have converged to produce such a
+strange mirror of reality.  
+~
+0 537305090 1
+Rd     0
+D0
+~
+~
+0 0 1609
+D1
+~
+~
+0 0 1607
+S
+#1609
+Path to the Great Pyramid~
+~
+~
+The Great Pyramid suddenly appears much closer than it seemed moments
+before.  Another perception-trick of this strange place.  The path
+straightens itself out from here and you can see a gate close to the north. 
+~
+0 537305090 1
+Rd     0
+D0
+~
+~
+0 0 1610
+D2
+~
+~
+0 0 1608
+S
+#1610
+Before the Gate~
+~
+~
+You stand before an enormous gate of stone that leads into the Great
+Pyramid.  The stones emit an unnatural golden light that seems to come from
+within themselves.  
+~
+0 537305090 1
+Rd     0
+D0
+~
+~
+67 0 1611
+D2
+~
+~
+0 0 1609
+S
+#1611
+An Enormous Antechamber~
+~
+~
+Crossing the threshold of the ominous stone portal brings you to a
+leviathan antechamber laid with the same golden brown bricks which made up
+the outside of the pyramid.  Cyclopean onyx pillars are arranged in a
+semicircle around the outer wall of the chamber where you can see three
+large, black doors - each of which just as simple and unadorned as the last.
+There is a feeling of terrible dread permeating everything about this place.
+Each object seems to possess a knowledge of your presence here - and a
+senteince that is in no way benign.  But a force stronger than your will
+urges you to press forward.  
+~
+0 537272328 0
+Rd     0
+D0
+~
+~
+67 0 1622
+D1
+~
+~
+67 0 1612
+D2
+~
+~
+67 0 1610
+D3
+~
+~
+67 0 1617
+S
+#1612
+An Indoor Garden~
+~
+~
+You have entered what seems to be a large indoor garden, though it has
+become so rampantly overgrown one might more accurately describe it as a
+forest.  There is something alien and vaguely sinister about the plants here
+which struggle to reach the magically-lighted ceiling.  You resolve not to
+wander about here for too much longer.  You can barely make out a small,
+overgrown shed to the east.  
+~
+0 537272320 3
+Rd     0
+D1
+&gA Gate made of thick Vines stands here.
+~
+'&gvine gate'~
+67 0 1613
+D3
+~
+~
+67 0 1611
+S
+#1613
+An Indoor Garden~
+~
+~
+You have entered what seems to be a large indoor garden, though it has
+become so rampantly overgrown one might more accurately describe it as a
+forest.  There is something alien and vaguely sinister about the plants here
+which struggle to reach the magically-lighted ceiling.  There is a small
+shack to the east covered in thick vines and ivy, and a set of stairs emerge
+from the foliage and lead upward to unknown sections of the pyramid.  
+~
+0 537141250 3
+Rd     0
+D1
+~
+~
+67 0 1614
+D3
+&gYou see a Gate made of thick Vines.
+~
+'&gvine gate'~
+67 0 1612
+D4
+~
+~
+67 0 1615
+S
+#1614
+The Lair of Kaltor~
+~
+~
+You find yourself in the lair of the legendary dwarven werewolf known as
+Kaltor Aldaroc.  One glance at the ancient, blood-stained throne in the
+center of this ivy-laced chamber makes this apparent.  You are unsure
+whether the horrible stories you have heard of this bloodthirsty living
+legend are true - but you certainly don't wish to stay and find out.  
+~
+0 537305090 3
+Rd     0
+D3
+~
+~
+67 0 1613
+S
+#1615
+Within the Pyramid~
+~
+~
+You are thankful to have quit that foul garden below - though a
+malevolent feeling still hangs in the stale air of the pyramid.  There is a
+darkened corridor here leading west.  
+~
+0 537272330 0
+Rd     0
+D3
+~
+~
+0 0 1616
+D5
+~
+~
+67 0 1613
+S
+#1616
+A Corridor In the Pyramid~
+~
+~
+The corridor ends here at another large, black, unadorned chamber door. 
+You fear what might lie on the other side.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+0 0 1615
+D3
+~
+~
+67 0 1628
+S
+#1617
+A Crimson Hallway~
+~
+~
+The antechamber branches off here into a stately hallway with walls of a
+strange, translucent red stone.  The floor of the hall is carpeted in red
+velvet decorated with gold and black thread, but.  Your eyes are drawn to
+the large canvases which line the walls and depict epic and bloody scences
+demonic conquests.  The graphic nature of these etchings only adds to your
+feelings of dread about this place.  
+~
+0 537272328 0
+Rd     0
+D1
+~
+~
+67 0 1611
+D3
+~
+~
+0 0 1618
+S
+#1618
+&rA Crimson Hallway~
+~
+~
+The antechamber branches off here into a stately hallway with walls of a
+strange, translucent red stone.  The floor of the hall is carpeted in red
+velvet decorated with gold and black thread, but.  Your eyes are drawn to
+the large canvases which line the walls and depict epic and bloody scences
+demonic conquests.  The graphic nature of these etchings only adds to your
+feelings of dread about this place.  The hallway here leads to an
+iron-braced door branded with strange runes.  There is also a set of stairs
+leading up to unknown sections of the pyramid.  
+~
+0 537141258 0
+Rd     0
+D1
+~
+~
+0 0 1617
+D3
+~
+~
+67 0 1619
+D4
+~
+~
+67 0 1620
+S
+#1619
+The Private Chamber of Ixion~
+~
+~
+You have stumbled upon the private chamber of Ixion Rosmerta - the feared
+half-demon, half-drow warlord who arrogantly refers to himself as the Wheel
+of Fire.  Numerous blades of exotic shapes and lengths hang from the red
+stone walls and from what you can see, each of them has seen more than its
+fair share of the battlefield.  You do not doubt that Rosmerta himself
+likely wielded each one personally.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+67 0 1618
+S
+#1620
+Within the Pyramid~
+~
+~
+You have emerged from the crimson hallway below, but a malevolent feeling
+still hangs in the stale air.  There is a darkened corridor here leading to
+the east.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+0 0 1621
+D5
+~
+~
+67 0 1618
+S
+#1621
+A Corridor in the Pyramid~
+~
+~
+The corridor ends here at another large, black, unadorned chamber door. 
+You fear what might lie on the other side.  
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+67 0 1628
+D3
+~
+~
+0 0 1620
+S
+#1622
+The Secondary Chamber~
+~
+~
+This second chamber appears almost identical to the first.  An enormous
+round room walled with golden stones and line with those same foreboding
+onyx pillars.  Two black, unmarked doors stand impassively on either side of
+the chamber.  There is a feeling of terrible dread permeating everything
+about this place.  Each object seems to possess a knowledge of your presence
+here - and a senteince that is in no way benign.  But a force stronger than
+your will urges you to press forward.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+67 0 1623
+D2
+~
+~
+67 0 1611
+D3
+~
+~
+67 0 1629
+S
+#1623
+A Smouldering Corridor~
+~
+~
+The pungent odor of brimstone fills your nostrils as you enter this
+hallway of blasted volcanic rock.  This place seems to be a picture of Hell
+itself , the polished obsidian floor is beset by open pools of magma which
+spew noxious gases into the air and threaten to choke the breath from your
+lungs at each new step.  
+~
+0 537272328 0
+Rd     0
+D1
+~
+~
+0 0 1624
+D3
+~
+~
+67 0 1622
+S
+#1624
+A Smouldering Corridor~
+~
+~
+The pungent odor of brimstone fills your nostrils as you enter this
+hallway of blasted volcanic rock.  This place seems to be a picture of Hell
+itself , the polished obsidian floor is beset by open pools of magma which
+spew noxious gases into the air and threaten to choke the breath from your
+lungs at each new step.  A foreboding iron door stands directly to your
+east.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+67 0 1625
+D3
+~
+~
+0 0 1623
+D4
+~
+~
+67 0 1626
+S
+#1625
+The Altar of Apollyon~
+~
+~
+Fear sweeps through your bones as you realize you have stepped into the
+lair of Apollyon Ansat the unholy commander of demons.  The room is
+decorated with lavish tapestry depicting all sorts of depraved and
+debaucherous scenes letting you know just what sort of man (or devil) this
+Ansat truly is.  A large altar stands near the back of the chamber, likely
+for the purpose of demonic rituals and sacrifices and a large pentagram is
+burned into the floor.  
+~
+0 537272330 0
+Rd     0
+D3
+~
+~
+67 0 1624
+S
+#1626
+Within the Pyramid~
+~
+~
+You have emerged from the blasted hallway below, but a malevolent feeling
+still hangs in the stale air.  There is a darkened corridor here leading to
+the west.  
+~
+0 537272330 0
+Rd     0
+D3
+~
+~
+0 0 1627
+D5
+~
+~
+67 0 1624
+S
+#1627
+A Corridor In the Pyramid~
+~
+~
+The corridor ends here at another large, black, unadorned chamber door. 
+You fear what might lie on the other side.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+0 0 1626
+D2
+~
+~
+67 0 1628
+S
+#1628
+A Crossroads~
+~
+~
+This room appears to be a crossroads of sorts in the center of the
+Pyramid.  Doors lead in all directions and a spiral staircase extends to the
+upper-reaches.  
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+67 0 1627
+D1
+~
+~
+67 0 1616
+D2
+~
+~
+67 0 1621
+D3
+~
+~
+67 0 1633
+D4
+~
+~
+0 0 1634
+S
+#1629
+A Mist Shrouded Temple~
+~
+~
+You have entered what appears to be a darkened temple.  A strange blue
+mist surrounds your ankles and you sense unseen figures slipping through the
+shadows in between the white marble pillars that line the sides of the hall.
+Utter darkness extends past the pillars and into unknown and possibly
+unkowable regions beyond.  
+~
+0 537272328 0
+Rd     0
+D1
+~
+~
+67 0 1622
+D3
+~
+~
+0 0 1630
+S
+#1630
+A Mist Shrouded Temple~
+~
+~
+You have entered what appears to be a darkened temple.  A strange blue
+mist surrounds your ankles and you sense unseen figures slipping through the
+shadows in between the white marble pillars that line the sides of the hall.
+Utter darkness extends past the pillars and into unknown and possibly
+unkowable regions beyond.  A stairwell leads upward here and a short ways to
+the west you see a small abscess in the mist in the shape of a door.  You
+wonder whether it would be safe to enter.  
+~
+0 537272328 0
+Rd     0
+D1
+~
+~
+0 0 1629
+D3
+~
+~
+67 0 1631
+D4
+~
+~
+67 0 1632
+S
+#1631
+Aurex's Room of Meditation~
+~
+~
+You have reached the private meditation chamber of Aurex Vorshade the
+legendary monk, known to many as the Setting Sun.  His mastery of illusions
+has made him possibly the most lethal martial artist in the world and his
+knowledge of the esoteric mudra is a source for much awe and fear in his
+peers.  The chamber is like a hole in the fabric of time itself.  It is a
+black and endless void with nothing visible save for the blue swirling mists
+at your heels and a large elliptical mirror levitating above the floor.  
+~
+0 537272328 0
+Rd     0
+D1
+~
+~
+67 0 1630
+S
+#1632
+Within the Pyramid~
+~
+~
+You have emerged from the misty temple below, but a malevolent feeling
+still hangs in the stale air.  There is a darkened corridor here leading to
+the east.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+0 0 1633
+D5
+~
+~
+67 0 1630
+S
+#1633
+A Corridor In the Pyramid~
+~
+~
+The corridor ends here at another large, black, unadorned chamber door. 
+You fear what might lie on the other side.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+67 0 1628
+D3
+~
+~
+0 0 1632
+S
+#1634
+A Landing~
+~
+~
+The spiral staircase reaches a landing here but continues upward.  There
+are three rooms branching off from this chamber.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+0 0 1635
+D2
+~
+~
+0 0 1636
+D3
+~
+~
+0 0 1637
+D4
+~
+~
+0 0 1638
+D5
+~
+~
+0 0 1628
+S
+#1635
+The Bank~
+~
+~
+In this chamber is placed the vault in which the Void amasses their
+earnings and items collected in their many excursions into the outer world. 
+It is maintained by the servant Larcrum.  
+~
+0 537272330 0
+Rd     0
+D2
+~
+~
+0 0 1644
+D3
+~
+~
+0 0 1634
+S
+#1636
+A Wide Training Hall~
+~
+~
+This is the room in which the members of the Void perfect their skills. 
+The walls and pillars are battered from enduring powerful spells.  Larna
+organizes and directs the training sessions.  
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1634
+D1
+~
+~
+0 0 1644
+D3
+~
+~
+0 0 1645
+S
+#1637
+A Smithy~
+~
+~
+The sounds and smells of iron and steel fill the air here in the smithy
+where Laertes, the Void's blacksmith, shapes and repairs weapons and armor
+for the members of the clan.  
+~
+0 604381194 0
+Rd     0
+D1
+~
+~
+0 0 1634
+D2
+~
+~
+0 0 1645
+S
+#1638
+The Central Nexus~
+~
+~
+This chamber, nearest to the peak of the Great Pyramid is the point at
+which all the energies of the Void are drawn together.  It is a place of
+rest and of absolution.  A mysterious, yellow-robed monk floats here, his
+mystical aura mending the wounds (both physical and mental) of all who
+enter.  Not even the leaders of the Void know from where this nameless monk
+came or for what purpose.  
+~
+0 537288714 0
+Rd     0
+D0
+~
+~
+0 0 1639
+D1
+~
+~
+0 0 1641
+D3
+~
+~
+0 0 1640
+D5
+~
+~
+0 0 1634
+S
+#1639
+The Gate Room~
+~
+~
+This room holds a gate back to Lamorde's Shop.  
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+0 0 1643
+D2
+~
+~
+0 0 1638
+D3
+~
+~
+0 0 1642
+S
+#1640
+Covergence of Alignments~
+~
+none~
+The energies in this room allow for a person to change the nature of his
+own spirit.  
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1642
+D1
+~
+~
+0 0 1638
+S
+#1641
+Place of Feeding~
+~
+~
+In this room lurks a fearsome hound whose form is comprised of blood
+magically held in place.  An ideal victim for any user of blood points.  
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1643
+D3
+~
+~
+0 0 1638
+S
+#1642
+An Empty Hallway~
+~
+~
+~
+0 537272330 0
+Rd     0
+D1
+~
+~
+0 0 1639
+D2
+~
+~
+0 0 1640
+S
+#1643
+An Empty Hallway~
+~
+~
+~
+0 537272330 0
+Rd     0
+D2
+~
+~
+0 0 1641
+D3
+~
+~
+0 0 1639
+S
+#1644
+An Empty Hallway~
+~
+~
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1635
+D3
+~
+~
+0 0 1636
+S
+#1645
+An Empty Hallway~
+~
+~
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1637
+D1
+~
+~
+0 0 1636
+S
+#1646
+The Clan Store~
+~
+~
+Clan items are stored in the back of the shop where they are out of the
+way.  A carpet lies in the center of the room with a small woven patern of
+swords and coins around the ouside.  
+~
+0 537272330 0
+Rd     0
+D2
+~
+~
+0 0 1647
+S
+#1647
+The Clan Blacksmith~
+~
+~
+This is where clan memebers can get their weapons and armor repaired at a
+great price and the highest quality workmanship in the land.  Various
+weapons, armors and tools line the wall at the back of the shop.  The forge
+is glowing red hot ready for the blacksmith to begin his next repair job.  
+~
+0 604381194 0
+Rd     0
+D0
+~
+~
+0 0 1646
+S
+#1648
+The Feeding Place~
+~
+~
+~
+0 537272334 0
+Rd     0
+S
+#1649
+Good Align~
+~
+~
+Members, of a good alignment, come here to satisfy their religion.
+~
+0 537272334 0
+Rd     0
+S
+#1650
+Training and Practice Room~
+~
+~
+All manner of weapons and scholarly books are displayed on the walls
+around the room.  There is a mat in the center of the room where the
+training and practicing takes place.  
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1653
+S
+#1651
+At a Portal~
+~
+~
+~
+0 537272334 0
+Rd     0
+S
+#1652
+Evil Align~
+~
+~
+Members, of an evil alignment, come here to satisfy their religion.
+~
+0 537272334 0
+Rd     0
+S
+#1653
+The Bank~
+~
+~
+Metal bars seperate Timmy from his customers to prevent the accidents and
+misuderstandings that occur every now and then.  Timmy is fierce and
+protective about his customers and their money.  Nothing can get passed him
+into the vault at the back.  
+~
+0 537272330 0
+Rd     0
+D2
+~
+~
+0 0 1650
+S
+#1654
+The Tributary~
+~
+~
+You have entered the Tributary, where the Crynn Hiere's highest ranked
+members are tributed with a special room of their own.  Often these highly
+ranked members gather in the Ruler's throne room to discuss affairs and plan
+battle strategies.  There is no restriction on who may participate in these
+meetings or who may enter the Tributary.  Although, none, but a member of
+The Crynn Hiere, would enter these halls knowing that to do so could bring
+the unwanted attentions of the clan.  
+~
+0 537272330 0
+Rd     0
+D3
+~
+~
+3 0 1655
+S
+#1655
+Inside the Tributary~
+~
+~
+The inside of the Tributary is elaborately designed, with many designs
+and patterns decorating the walls, ceiling and floor.  The floor is made of
+black obsidion with the patterns lined with gold creating quite an
+eye-opener.  The ceiling and walls are a dark red with the patterns and
+designs lined with black obsidion.  The overall affect of the room is
+awesome and inspires more than a little fear in even the most callous of
+hearts.  
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1659
+D1
+~
+~
+3 0 1654
+D2
+~
+~
+0 0 1660
+D3
+~
+~
+0 0 1656
+S
+#1656
+Inside the Tributary~
+~
+~
+Looks the same as the last part of the tributary.  
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1658
+D1
+~
+~
+0 0 1655
+D2
+~
+~
+0 0 1657
+D3
+~
+~
+0 0 1661
+S
+#1657
+Council of The Crynn Hiere~
+~
+~
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1656
+S
+#1658
+Leader of The Crynn Hiere~
+~
+~
+~
+0 537272330 0
+Rd     0
+D2
+~
+~
+0 0 1656
+S
+#1659
+Centurion of The Crynn Hiere~
+~
+~
+~
+0 537272330 0
+Rd     0
+D2
+~
+~
+0 0 1655
+S
+#1660
+Champion of The Crynn Hiere~
+~
+~
+~
+0 537272330 0
+Rd     0
+D0
+~
+~
+0 0 1655
+S
+#1661
+Ruler of The Crynn Hiere~
+~
+~
+~
+0 537272322 0
+Rd     0
+D1
+~
+~
+0 0 1656
+S
+#0
+
+
+
+#SPECIALS
+M 1607 spec_repairman
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 1615 0 1601
+O 0 1621 0 1601
+M 0 1606 1 1601
+G 0 1605 0
+G 0 1606 0
+G 0 1607 0
+G 0 1608 0
+G 0 1609 0
+G 0 1610 0
+G 0 1611 0
+G 0 1612 0
+G 0 1613 0
+G 0 1614 0
+O 0 1617 0 1602
+O 0 1618 0 1602
+O 0 1619 0 1603
+M 0 1601 1 1612
+M 0 1601 1 1613
+O 0 1620 0 1614
+M 0 1603 1 1617
+O 0 1622 0 1619
+O 0 1622 0 1619
+M 0 1613 1 1623
+O 0 1626 0 1625
+M 0 1602 1 1629
+O 0 1625 0 1631
+P 0 1626 0 1625
+M 0 1605 1 1635
+M 0 1608 1 1636
+M 0 1607 1 1637
+M 0 1604 1 1638
+O 0 1627 0 1639
+M 0 1611 1 1640
+M 0 1612 1 1640
+M 0 1611 1 1640
+M 0 1612 1 1640
+M 0 1610 1 1641
+M 0 1606 1 1646
+G 0 1605 0
+G 0 1607 0
+G 0 1608 0
+G 0 1609 0
+G 0 1610 0
+G 0 1611 0
+G 0 1612 0
+G 0 1613 0
+G 0 1614 0
+M 0 1607 1 1647
+M 0 1612 1 1649
+M 0 1608 1 1650
+O 0 1601 0 1651
+M 0 1611 1 1652
+M 0 1605 1 1653
+S
+
+
+
+#SHOPS
+1606 15 10 2 19 0 100 100 0 24
+0
+
+
+
+#$

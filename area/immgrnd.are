@@ -1,0 +1,2321 @@
+#AREADATA
+Name        {  IMM } Immortal Grounds~
+Builders    None~
+VNUMs       70 99
+Security    0
+Recall      1
+Flags       288
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      &bThe rumble of thunder echos over your head, as the maniacal laughter of demons  can be heard seemingly from everywhere...~
+Music       u6_stone.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#70
+shopkeeper~
+a nimbus~
+A nimbus of pure energy is here.
+~
+~
+3 0 0 0 0 0 S
+110 1 220 220 5 5d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+#71
+dude~
+dude~
+A dude is here.
+~
+~
+67 0 0 0 0 0 S
+100 1 40 40 10 10d0+0 0d0+0
+400 0 0
+0 0 1
+0 0 0
+#73
+Skeleton Warrior~
+Skeleton warrior~
+A Skeleton Warrior stands here, guarding his master.
+~
+A Huge Skeleton stands here, with red glowing eyes, it watchs your every move. The huge bone sword in his hand is a a reminder not to venture to close.
+~
+1 167772352 89489460 157696 0 -1000 S
+75 1 150 150 50000 50000d0+0 0d0+0
+750 0 0
+0 0 0
+3 0 0
+#74
+Mat~
+The Door Mat~
+Mat the door man greets you warmly and offers to take your coat
+~
+The gentle door man Mat greets you and, smiling, takes your coat.
+~
+524291 0 0 0 0 500 S
+1 1 2 2 50 50d0+0 0d0+0
+10 0 0
+0 0 1
+0 0 0
+#75
+brazen woman~
+a brazen woman~
+A brazen women stands here, smiling seductively.
+~
+A gorgeous female specimen, with long flowing chestnut hair and
+mischievous icy blue eyes, winks at you flirtatiously, running one hand up
+her thigh enticingly.  
+~
+67 0 0 0 1 0 S
+99 1 198 198 0 0d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+>rand_prog 4~
+bounce
+~
+>speech_prog Tera~
+smile $n
+~
+>act_prog p hugs you~
+hug $n
+say Hi $n!
+~
+>act_prog p licks you~
+if ispc($n) == 1
+say Ohhh lord, do that some more, baby!
+mmm
+endif
+~
+|
+#76
+mob test~
+a test mob~
+A test mob stands here, ready to be tested on.
+~
+~
+323 16777216 0 0 0 -1000 S
+114 1 300 300 100000 100000d0+0 0d0+1000
+20 0 0
+0 0 2
+4 0 0
+>fight_prog 0~
+~
+>act_prog p smiles happily.~
+say don't smile at me!
+~
+>act_prog p smiles at you.~
+say DON'T SMILE AT ME!
+~
+>speech_prog p go for it~
+mpslay mogredius
+~
+|
+#77
+joe~
+Nikademus~
+Nikademus is here standing guard
+~
+~
+3 236478716 0 0 0 0 S
+7452800 1 14905600 14905600 7456954 7456954d0+0 0d0+-1137134592
+-22742690 0 0
+0 0 0
+524287 0 0
+>speech_prog clans~
+say So... you wanna know about clans eh?
+mpechoat $n &YTo get a list of current clan members for a clan &RSAY &PC&B##&PMEM&Y...
+mpechoat $n &B## &W= &G the number of the clan shown on the clans list.. &z(&OType; &pCLANS&z)
+smile $n
+~
+|
+#78
+blah~
+blah~
+Blah
+~
+~
+9 0 1048576 64 0 0 S
+100 1 200 200 1 1d0+0 0d0+0
+1000 0 0
+0 0 0
+0 0 0
+>fight_prog 35~
+c 'dancing lights' $n
+~
+>fight_prog 30~
+c 'unholy curse' $n
+~
+>fight_prog 20~
+c 'curse of nature' $n
+~
+>fight_prog 20~
+c 'bend light' $n
+~
+>fight_prog 20~
+c 'flash burn' $n
+~
+>fight_prog 20~
+c 'blind' $n
+~
+>fight_prog 20~
+c 'tortured soul' $n
+~
+>fight_prog 20~
+c age $n
+~
+|
+#79
+shadow~
+Selinar's Shadow~
+Selinar's Shadow hovers above you
+~
+Selinar's Shadow hovers over you, fangs bared.
+~
+67 301989952 65536 2048 0 -1000 S
+10000 1 20000 20000 150000 150000d0+0 0d0+1000000
+100000 0 0
+0 0 0
+0 0 0
+#80
+Aphrael~
+Aphrael The Child Like God~
+Aphrael The Child Like God is smiling at you.
+~
+Aphrael's feet have grass stains on them, she has a set of Pan Pipes in
+her hands and occasionally plays a playfull little trill on them.  As one of
+the council of the thousand she has powers beyond your dreams.  She looks
+childlike but to see her is to fall hopelessly in love, this indeed is how
+she gets her power.  
+~
+259 251674816 0 0 0 1000 S
+150 1 300 300 50000 50000d0+0 0d0+1
+1500 0 0
+0 0 0
+393183 0 0
+#81
+Wonder Woman~
+Wonder Woman~
+Wonder Woman stands here invincible.
+~
+~
+131139 503333056 90013744 157952 0 1000 S
+300 1 600 600 1000000 1000000d0+0 0d0+300000
+3000 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+   if name($n) == Mirabeau
+   or name($n) == Keirkan
+     smile
+     say Greetings!
+   else
+     mpechoat $n $I looks at you like you were the scum of the earth.
+     glare $n
+endif
+endif
+ 
+~
+|
+#82
+imp~
+the Imp~
+An Imp runs around here.
+~
+Quick, catch him!
+~
+1 72 16 8192 2 0 S
+99 1 198 198 0 1000d0+0 0d0+0
+990 0 0
+0 0 1
+0 0 0
+>all_greet_prog 50~
+gig
+push $n north
+~
+>fight_prog 50~
+flee
+~
+>speech_prog Dupre~
+say He's a drunkard!
+wink $n
+~
+>rand_prog 95~
+cast 'teleport'
+~
+|
+#83
+shapely wench~
+a shapely wench~
+A shapely wench stands here, brazenly flaunting her body.
+~
+Wow.  A bombshell in a short, TIGHT leather skirt, she's practically
+spilling out of her clothing.  One sultry eye winks at you, and you feel
+your temperature rise about 40 degrees.  
+~
+1 0 0 0 1 0 S
+100 1 200 200 2 2d0+0 0d0+0
+1000 0 0
+0 0 2
+0 0 0
+#84
+Oscar~
+Oscar~
+Oscar always has the runs so he never leaves here.
+~
+~
+1539 201343168 17399840 141632 0 0 S
+150 1 300 300 25000 25000d0+0 0d0+25002
+1500 0 0
+0 0 0
+416 0 0
+>fight_prog 30~
+c fireball $n
+~
+|
+#85
+gratz nazi~
+Gratz Nazi~
+The Gratz Nazi is here.
+~
+This is Klops. Beware.
+~
+1539 33570944 67141636 16640 0 333 S
+107 1 214 214 30000 30000d0+0 0d0+0
+1070 0 0
+0 0 0
+2051 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if name($n) == Eric
+say My Lord!
+worship $n
+say How may I serve you today?
+else
+say Welcome to Lord Eric's sanctum
+bow
+break
+endif
+endif
+~
+|
+#86
+Butler~
+Brey's Butler~
+Brey's Butler wants to kick yo ass.
+~
+~
+1 167772352 16809984 24576 0 -1000 S
+145 1 290 290 35000 35000d0+0 0d0+0
+1450 0 0
+0 0 0
+2432 0 0
+>fight_prog 15~
+c demonfire $n
+mpechoat $n You are attacked by pure evil.
+~
+>fight_prog 20~
+dim $n
+emote touches two fingers to your chest.
+~
+>fight_prog 25~
+emote attackes you with a flurry of claws
+claw
+claw
+claw
+claw
+~
+>all_greet_prog 100~
+if ispc($n) == 1
+if name($n) == Brey
+say Welcome back sir.  Out painting the town red again
+say have we?  Let me know if I can get you anything.
+emote salutes Brey
+else
+if name($n) == Deconce
+say Ahhh, it's Brey's good pal Deconce.  You are
+say always welcome here.  Make sure you wipe your
+say feet first tho.
+laugh
+else
+if name($n) == Tyrion
+say Well, if it isn't the big man himself.  What
+say brings you into our presence today?  Anyway,
+say be sure to enjoy yourself.
+shake $n
+else
+say You don not belong here...I would ask you to leave,
+say or i may have to get rough with you.
+stunner $n
+say There's plenty more where that came from.
+endif
+endif
+endif
+endif
+~
+|
+#87
+guard~
+a guard~
+One of Zhyril's personal guards patrols the complex.
+~
+A tall, strongly-built soldier.  He appears to take his job quite seriously.
+~
+524355 0 0 0 1 200 S
+99 1 198 198 0 30000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>speech_prog testing~
+if race($n) == 15
+bounce
+bounce
+bounce
+endif
+~
+|
+#88
+A Waiter~
+A Waiter~
+A waiter stands here talking about nada.
+~
+~
+1 0 0 0 0 0 S
+1 1 2 2 40000 40000d0+0 0d0+0
+10 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+say Hi, I'm here just talking about NADA....
+~
+>speech_prog hi hello~
+say Hi, I'm just here talking about NADA....
+~
+>speech_prog nada~
+The LIGHT is very bright and pleasant but the bar is unpolished.
+sa The &Ylight&C is very bright and pleasant but the bar is unpolished.
+~
+>speech_prog light~
+sa It was all a nothing and a man was nothing to.  It was only that and light was all it needed and a certain cleanness and order.
+sa Some lived in it and never felt it but he knew it all was nada y pues y nada y nada y pues nada. 
+sa Our nada who are in nada, nada be thy name thy kingdom nada thy will be nada in nada as it is in nada.
+sa Give us this nada our daily nada and nada us our nada as we nada our nada and nada us not into nada but deliver us from nada; pues nada.
+sa Hail nothing full of nothing, nothing is with thee.
+~
+|
+#89
+Thor guardian~
+Thor, the Guardian~
+Thor, the Guardian of Odin stands here watching you
+~
+~
+524363 0 0 0 0 0 S
+130 1 260 260 100000 100000d0+0 0d0+10
+1300 0 0
+0 0 0
+305167 0 0
+>all_greet_prog 100~
+say Hello!
+~
+|
+#90
+Astra~
+Astra~
+Astra is here.
+~
+Before you stands a statuesque blonde with the eyes of an angel and a
+body to die for.  Her clothing is almost nonexistent, consisting of a band of
+iron around one shapely arm and knee-high black leather boots.  A tiny strip
+of fabric is around her waist, and a narrow strip of leather is across her
+chest.  
+~
+3 8 0 0 0 0 S
+4000 1 8000 8000 300000 300000d0+0 0d0+0
+40000 0 0
+0 0 2
+0 0 0
+>speech_prog night~
+mpecho &WNight has fallen.
+mpecho &W       .                  .                      .
+mpecho &W               .                     .
+mpecho &W         .           .                       .         .
+mpecho &W    .                          .                 .
+mpecho &W             .             .            .
+mpecho &W       .           .                .        .
+~
+>speech_prog rain~
+mpecho It starts to rain.
+mpecho    '          '                         '
+mpecho        '         '           '
+mpecho  '   '       '          '           '
+mpecho  '     '       '             '
+~
+>speech_prog shimmer~
+mpecho &.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|
+mpecho &.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|
+mpecho &.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|
+mpecho &.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|
+mpecho &.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|&.|
+~
+>act_prog p kisses you~
+if name($n)==zhyril
+moan
+french zhyril
+break
+elseif
+slap $n
+say Touch me again and Zhyril will obliterate you!
+endif
+break
+~
+>speech_prog lightning~
+mpecho &. &WLightning crashes nearby!
+mpecho &.\
+mpecho  \
+mpecho  /
+mpecho  \
+mpecho   \
+mpecho    \
+mpecho    /
+mpecho    \
+mpecho   \/\/
+~
+|
+#91
+Cherry~
+Cherry the Centaur~
+A centaur woman is here to help you with whatever you need to buy.
+~
+~
+524291 0 0 0 3 0 S
+105 1 210 210 300000 300000d0+0 0d0+0
+1050 0 0
+0 0 0
+100 0 0
+>speech_prog tyrion~
+say Happy Birthday sexy!
+wink tyrion
+say My, 1500!  You don't look a day over 1470!
+wink tyrion
+say just kidding, sexy...come over here and give me some sugar
+french tyrion
+moan
+strip
+boogie
+melt tyrion
+~
+>act_prog ~
+~
+>act_prog looks at you~
+mpslay $n
+~
+|
+#92
+nereid beautiful~
+&Ca beautiful nereid~
+&CA beautiful nereid swims here.
+~
+Her face is lovely beyond belief, and silken blue hair cascades behind
+her back.  An irridescent slip of cloth is all that covers her nubile body,
+and her deep blue eyes gleam with unconcious majesty.  
+~
+3 16777216 0 0 0 1000 S
+30 1 60 60 200 200d0+0 0d0+0
+300 0 0
+0 0 2
+0 0 0
+>speech_prog thirsty~
+emote smiles coyly, then slips beneath the waves.
+mpoload 93
+mprecho She appears moments later, holding a coral flask.
+give flask $n
+wink $n
+~
+|
+#93
+storm dragon~
+an enormous black dragon~
+An enormous black riding dragon is here.
+~
+Before you is an enormous dragon with scales as black as midnight, and
+eyes that glow red with fury and power.  On his back is a large saddle of
+black leather, though you doubt any mere mortal would be able to ride it.  
+~
+3 524288 16 0 9 0 S
+110 1 220 220 50000 90000d0+0 0d0+0
+1100 5 0
+0 0 1
+0 0 0
+>act_prog p mounts an enormous black dragon.~
+if name($n) == Zhyril
+emote roars!
+emote spreads his mighty wings, and launches himself and his rider into the sky.
+break
+endif
+else
+emote snarls angrily and knocks $n off his back.
+mpforce $n dismount
+endif
+~
+|
+#94
+fish school~
+&Ra school of &Yb&Cr&ri&Bg&Yh&Rt&Cl&Oy &Rc&Yo&Cl&Oo&Wr&Re&Bd &Gf&Yi&Cs&Rh&C~
+&Ra school of &Yb&Cr&ri&Bg&Yh&Rt&Cl&Oy &Rc&Yo&Cl&Oo&Wr&Re&Bd &Gf&Yi&Cs&Rh &wswims around.
+~
+~
+3 0 0 0 1 0 S
+2147483647 1 99999 99999 2 2d0+0 0d0+0
+-10 0 0
+0 0 0
+0 0 0
+#95
+glasya succubis~
+Glasya~
+A beautiful seductive female guards her masters coffins.
+~
+~
+1 33570816 0 0 0 -1000 S
+100 1 200 200 25000 25000d0+0 0d0+0
+1000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+lick $n
+~
+>give_prog all~
+if number ($o) == 9656
+say A coffin is free...I'll be on the bottom if you'll join me.
+wink
+emote gets into the coffin.
+endif
+~
+|
+#96
+soldier~
+a mounted soldier~
+A soldier on horseback trots into the room.
+~
+A tall soldier in heavy steel armor.
+~
+259 0 16 0 0 0 S
+100 1 200 200 9999999 10000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#97
+Dick Wad~
+Dick Wad~
+&z
+~
+Is nothing but a dumb immortal who got deleted.
+~
+3 64 0 0 0 0 S
+300 1 600 600 100 100d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+>rand_prog 5~
+say Who u be?
+say I'll be back.
+laugh
+~
+>rand_prog 5~
+cry
+say Why i get deleted?
+~
+>rand_prog 7~
+say Blacklance is dumb.
+nod
+~
+>act_prog ~
+~
+>speech_prog 100~
+say NO!!! I rule.
+laugh $n
+~
+>death_prog 100~
+mpmload 97
+~
+>speech_prog done~
+mppurge $i
+~
+|
+#98
+cheese elemental~
+a cheese elemental~
+A cheese elemental stands here.
+~
+~
+3 64 0 0 0 -200 S
+1000000 1 2000000 2000000 99999 99999d0+0 0d0+0
+10000000 0 0
+0 0 0
+0 0 0
+#99
+Pegasus, The Winged Horse~
+Pegasus~
+Pegasus, The Winged Horse stands here with wings spread, ready to fly
+~
+Before you stands the mighty Pegasus, The Immortal Winged Horse.  He is
+Pure White, and his wings are spread ... ready to fly to the heavens.
+He is Aphrodite's pet, and friend. He accompanies her on many of her
+journeys, and often takes her upon his back.
+~
+259 34095616 0 0 0 1000 S
+300 1 600 600 0 0d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+>speech_prog follow~
+if name($n) == aphrodite
+follow aphrodite
+endif
+~
+>speech_prog follow~
+if name($n) == tyrion
+follow tyrion
+endif
+~
+>rand_prog 4~
+if ispc($r)
+thug $r
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#70
+book building rules~
+book of Building~
+A book of Building~
+~
+8 33554432 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+4 71
+reserved~
+-1 -1
+0 0 0
+E
+ten~
+General Rules:
+ 
+Mobs:
+- Hitroll and Damroll on mobs should not exceed twice their level.
+- If a mob is higher than level 30, it should NOT speak common.
+~
+E
+nine~
+Approval:
+ 
+You will not under any circumstances connect your area!
+ 
+Tyrion must first check the area, and fix any problems, THEN connect it!
+ 
+Isn't that simple?
+~
+E
+eight~
+Etiquette:
+ 
+The following are some simple rules and regulations regarding building 
+etiquette, the do's and dont's, etc
+ 
+If you are having trouble with something, ask someone, eventually someone will
+know what to do.
+ 
+If you are a clan deity, don't go into another deity's HQ without their
+permission.
+ 
+Don't directly copy someone elses work, builders don't like that.
+
+Do not overuse colour!  I can't emphasise this enough.
+ 
+More will be added if something is abused.
+~
+E
+seven~
+The Basic Commands:
+ 
+There are three main editors for the builder to use, REDIT, OEDIT and MEDIT.
+ 
+explanations of these three commands are available through the help files,
+help redit, help oedit, and help medit.
+ 
+Further Help:
+ 
+MEDIT:
+ 
+mplist: lists the mob_progs on the mobile
+mpedit <create|#>: creates or edits a mob_prog
+mpremove <#>: deletes a mob_prog
+ 
+immune: they don't work yet. :)
+~
+E
+six~
+The Basic Commands:
+ 
+There are three main editors for the builder to use, REDIT, OEDIT, and MEDIT.
+ 
+explanations of these three commands are available through the help files,
+help redit, help oedit, and help medit.
+ 
+Further Help:
+ 
+REDIT:
+ 
+oreset: allows you to reset objects, with no argument, gives help file.
+mreset: allows you to reset mobiles, with no argument, gives help file.
+rreset: resets the current room, also 'red reset'
+ 
+rdamage: sets how much damage you take per tick, if the damage flag is on
+ 
+rplist: lists the room_progs in the room
+rpedid <create|#>: create or edit a room_prog
+rpremove <#>: delete a room_prog
+ 
+eplist: lists the exit_progs in the room
+epedit <direction> <create|#>: create or edit a room_prog
+epremove <direction> <#>: delete a room_prog
+~
+E
+five~
+The Basic Commands:
+ 
+There are three main editors for the builder to use, REDIT, OEDIT and MEDIT.
+ 
+explanations of these three commands are available through the help files, 
+help redit, help oedit, and help medit.
+ 
+Further Help:
+ 
+OEDIT:
+ 
+ac_type: by itself, gives you a list of invoke types for an object.
+&B         with an argument, set the invoke type to that type.
+ac_v1: sets the current number of invokes on that item, -1 for unlimted.
+ac_v2: sets the maximum number of invokes on that item, -1 for unlimted.
+ac_setspell <valid spell name>: sets the spell to invoke.
+ 
+osepone <vnum>: the first of 2 objects this object will separate to
+oseptwo <vnum>: the second of 2 objects, not the same as osepone
+ojoin <vnum>: this object will join to form <vnum>
+ 
+oplist: list obj_progs on this object
+opedit <create|#> create or edit an obj_prog
+opremove <#>: delete an obj_prog
+ 
+ac_vnum: sets the vnum for morphing, loading, depending on ac_type:
+~
+E
+four~
+Equipment:
+ 
+No price of any piece of equipment should exceet its level * 10,
+unless it is type treasure, then it should not exceed it's level
+* 25.
+ 
+Mobiles:
+ 
+No mob should carry more than it's level * 20 in gold.  This would
+mean that a level 110 mob would carry about 2200 gold.  No mob
+should ever carry more than 2500 gold pieces.
+ 
+Rooms:
+ 
+Rooms should not have more than 5 gold lying around.
+~
+E
+three~
+This is the list of how many hitpoints a mob can have according to its level.
+ 
+100 - 40000
+95 - 37500
+90 - 35000
+85 - 32500
+80 - 30000
+75 - 27500
+70 - 25000
+65 - 21000
+60 - 17000
+55 - 13000
+45 - 10000
+40 - 7500
+35 - 6500
+30 - 5000
+25 - 3750
+20 - 2750
+15 - 1500
+10 - 750
+5 - 350
+1 - 10
+ 
+For each level above 100, add 2500 more hitpoints.
+ 
+For each shield, subtract 10% of current hp.
+ 
+These rules may change...
+~
+E
+two~
+Rooms
+ 
+Basically, use common sense here, and make everything make sense.
+ 
+Before making an area, its a REALLY good idea to plan it out on paper first.
+Make a map, make sure it doesn't overlap, label on the map where you want key
+things to go, etc.  
+ 
+Be creative!  Don't just remake an area that already exists, try to be
+original!
+ 
+Don't ask for way too many vnums then you are going to require, usually around
+100 is a good, fairsized area.  Although some can be much smaller, and some
+will be upwards of 1000.
+ 
+This section can change, if rules are needed.
+~
+E
+book~
+Type look one, look two, etc, to see each chapter. 
+ 
+one   - Equipment stat guidelines
+two   - Room
+three - Mob hitpoints and shields
+four  - Max prices of equipment, mobile money, other money related things
+five  - The Basic Editors: OEDIT
+six   - The Basic Editors: REDIT
+seven - The Basic Editors: MEDIT
+eight - Etiquette
+nine  - Getting an area approved
+ten   - General rules
+appendix - Guidelines for Resistances
+~
+E
+one~
+Equipment Guidelines:
+ 
+For the level 100+ equipment:
+
+                          :Lv100:Lv101:Lv102:Lv103:Lv104:Lv105
+--------------------------+-----+-----+-----+-----+-----+-----
+hitroll/damroll weap/body : 60  : 66  : 72  : 78  : 84  : 90
+hitroll/damroll for other : 20  : 22  : 24  : 26  : 28  : 30
+hitpoints                 : 100 : 120 : 140 : 160 : 180 : 200
+mana                      : 100 : 120 : 140 : 160 : 180 : 200
+blood                     : 33  : 40  : 60  : 70  : 80  : 90
+anti-disarm               : 100 : 100 : 100 : 100 : 100 : 100
+saving-breath/saving-spell: 20  : 24  : 28  : 32  : 36  : 40
+armour class              : 150 : 150 : 150 : 160 : 175 : 200
+
+2   stat raises, 2 points each
+spells and invokes use with caution
+ 
+For equipment lower than level 100, use scaling on the level 100 column.
+For example, a level 80 item would have 80% of the stats, a level 55 item
+would have 55% of the stats.
+
+I am known to make exceptions, and these rules can be changed...
+Splits for things such as hit/damroll should be approximately equal.  IE,
+30/30, or 40/20.
+ 
+Look APPENDIX to see limits on Resistances on equipment.
+ 
+No item may have more than 1 of the offensive weapon flags, 2 if the
+weapon is also flagged MAGIC.  The offensive flags are:
+Frosty, Flame, Sparking, Chaos, Dispel, Poisoned
+~
+E
+appendix~
+&B Resistance Guidelines:
+ 
+Resistances are now able to be added to equipment.  These should be used
+sparingly, as there are many spells/skills that give resistances.
+ 
+Body, Hold, Shield:
+Maximum of 2 Resistances, for a combined total of 15%.  These don't
+have to be evenly split, ie, 5% and 10% is fine.  You may not make
+items with -10 and +25 however. 
+ 
+Legs, Head, Hnads, About, Mask, Lense, Ears, Arms, Feet, Holster:
+Maximum of 1 resistance, up to 8%. 
+ 
+Finger, Neck, Orbit, Ankle, Wrist, Waist:
+Maximum of 1 resistance, up to 4%.
+ 
+You can get a listing of resistances along with all other applies
+available to be added to objects by typing "? applies" while in
+oedit.  Please note the following:
+    POSITIVE NUMBERS ARE GOOD
+    NEGATIVE NUMBERS ARE BAD
+You may NOT add resistances to items with saving-spell, you may NOT
+add resistances to weapons. 
+ 
+These rules may change at any time, so consult them frequently.
+~
+#71
+clan rules book~
+clan Rules and Regulations~
+A paper for immortal eyes lies here.~
+~
+8 1 65536 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+4 70
+reserved~
+-1 -1
+0 0 0
+E
+rules~
+&RThese are the rules of clans, read them, know them, or beware.
+They are divided into chapters, type read one, read two, etc.
+ 
+&WOne               Clan HQ
+Two               Clan Items
+Three             Clan Equip
+Four              Clan Mobs
+~
+E
+one~
+&RClan HQ Creation Rules
+ 
+&WHeadquarters may have the following rooms:
+- Blood/Alignment mob rooms
+- Bank
+- Stores
+- For basic clan eq
+- Training/Practice/School/Etc
+- Smithy
+- Exit to Your Overworld Link Point ONLY
+- Healers Room
+- Spellcasters Room
+- Food Store
+ 
+You may NOT have a questmaster, pet shop, or any other exit.
+If you are curious about a type of room that isn't mentioned, ASK.
+Doors that are Locked, hidden, obstructed, lockable, invisible, or in any other
+way hidden are not allowed.
+ 
+The area files will be distributed in 100 vnum lots.
+ 
+All rooms must be flagged "pkill".
+ 
+Mazes will be permitted if the links are logical.  There will be no
+overlap.
+~
+E
+two~
+&RClan Item Creation Rules
+ 
+&WHere are the spells that may be on potions and scrolls.
+The max spell level is 100.  Weight is 1.  Here is the list and
+cost of the spells, you may add them together to have multipurpose
+potions and scrolls, just add the prices.
+ 
+Cure Poison        2500      Remove Curse    3000
+Fly                3000      Giant Strength  5000
+Invis              4000      Identify        5000
+Ectoplasmic Form   4000      Detect Invis    2000
+Cure Blindness     3000      Detect Magic    3000
+Detect Hidden      2500      Cancellation    5000
+Refresh            3000      Mana           17500
+ 
+Those are all that are permitted.
+Basic clan items also include food, bags, lights etc.  No invokes
+on any of them.  Clan bags can have a max capacity of 400kg, and cost
+50,000.  Food is 100, same with drinking containers.  Lights
+are just that, lights, no addaffects.
+~
+E
+three~
+&RClan Equip Creation Rules
+ 
+&WClan equip cannot be any of the dual locations, orbit, ankle etc.
+Neither can it be body or weapon.  Stats are as follows.
+ 
+&Y--------------------------------------------------------
+| Addaffect            |    50   |      75  |    100     |
+--------------------------------------------------------
+| Hitroll/Damroll      |    10     |    15    |    20   |
+| Hp                   |    50     |    75    |    100  |
+| Mana/Blood           |   50/20   |   75/30  |  100/40 |
+| AC                   |   -50     |   -75    |   -100  |
+| Move                 |    50     |    75    |    100  |
+| Save-Spell/Breath    |   -10     |   -15    |   -20   |  *  (See bottom)
+| Anti-Disarm          |    50     |    75    |   100   |  
+_________________________________________________________
+ 
+* The two combine must not exceed the values entered.
+ 
+&WAlso, you can have two stats affects, each no more than a +2 mod.
+Two permanent spells set at -1 are allowed.  No shields.
+ 
+Level 100 EQ can have 7 addaffects, those grouped together count as 1.
+Like hitroll/damroll.
+Level 75 can have 6 addaffects.
+Level 50 can have 5 addaffects.
+~
+E
+four~
+&RClan Mob Creation Rules&W
+ 
+All mobs in the HQ are to be level 50, with no more that 24000hp.
+They may not have more than two shields.  The exception to
+this is the clan healer, which can be level 110, have
+30000 hp, and 5 shields.  No mobs are to have any
+mprogs with a few exceptions.  They are as follows:
+ 
+5 mobs that load in the hq can have the general yell
+   all greet prog.
+The clanhealer, and the alignment mobs may have the
+   regenerative death prog.
+ 
+All other progs are to be checked by Nexus.  They
+should not be anything more than perhaps a rand prog or
+all_greet_prog that makes the mob twitch, or something.
+Hitroll and Damroll of mobs are to be 100, and the Clanhealer
+is to have the CLANHEALER act flag.
+~
+#72
+plans~
+future Plans~
+Some plans lie on the ground.~
+~
+8 33554448 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+mage~
+~
+E
+barbarian~
+lvlSpells/Skill
+5. kick
+6. dodge
+7.dual
+8.disarm
+9.second attack
+10.enhanced hitenhanced damage
+11.gouge
+15.third attack
+17.enhanced damage two
+20.punch
+25. fourth attack
+29.bash door
+35.fifth attack
+43.SAVAGE
+47.stun
+52.berserk
+60.sixth attack
+80.BATTLE CHANT
+~
+E
+monk~
+lvlSpells/Skills
+ 
+3.kickcure light
+4.dodgeparry
+5.bless
+6. identifylocate object
+8.second attack
+10.enhanced damage
+12.enhanced hit
+20.cure critical
+25.sanctuary
+31.disarm
+33.heal
+37.dancing lights
+45.complet
+50.astral walk
+53.punch
+61.dispel magic
+62.CHANT
+63.iceshield
+75.HEADLOCK
+80.healing hands
+84.HOLY HANDS
+85.third attack
+90.golden armor
+95.enhanced reflexes
+~
+E
+illusionist~
+3.detect magic
+4.refresh
+6.magic missile
+9.dodge
+10.identify
+12.locate objectfaerie fire
+14.spectral wings
+17.second attack
+18.dancing lights
+20.word of recall
+21.phantasmal form
+24.ghost shield
+25.flying fist
+35.phantom fire
+37.astral walk
+42.true sight
+50.plague shield
+75.zone of despair
+80.blade of doom
+~
+E
+werewolf~
+6: enhanced damage
+ 7: second attack            dodge
+ 8: bite
+10: kick
+14: third attack
+20: enhanced hit             heighten senses
+26: METAMORPH                dual
+35: fourt
+46: DEVOUR
+52: disarm
+68: BLOODTHIRSTY
+75: HYPNOTISE                CAUSE PANIC
+81: enhanced damage two
+82: fifth attack
+91: adrenaline control
+~
+E
+plans~
+This list contains new slists, new plans, and a bunch of new stuff.
+ 
+asnlist - assassin skills/spells list
+barbarian - barbarian skills/spells list
+monk - monk skills/spells list
+illusionist - spells/skills list
+werewolf - skills/spells list
+~
+E
+asnlist~
+&B
+05 - dodge
+06 - hide
+07 - parry               detect hidden
+11 - backstab            detect invis                   second attack
+12 - disarm
+13 - enhanced damage
+15 - invis               detect magic
+18 - enhanced hit
+19 - poison              detect poison
+20 - sneak               identify
+24 - peak                TRIP
+25 - third attack
+29 - haste
+32 - BLIND FIGHTING
+39 - fourth attack
+45 - PARALYSE
+56 - poison weapon
+62 - astral walk         blindness(RAKE)
+66 - PLAGUE
+80 - word of recall
+82 - PLAGUE BLADE
+92 - DIM MAK
+~
+#73
+soul stone~
+a soul stone~
+A soul stone hovers at your waist.~
+~
+9 570425408 131072 0 0 32769 1
+100 100
+200~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+193 -1
+A
+2 50
+A
+3 50
+A
+1 50
+A
+4 50
+A
+5 50
+A
+19 200
+A
+18 200
+A
+200 -1
+A
+199 -1
+A
+201 -1
+A
+202 -1
+#74
+contact lense contacts lenses probe~
+contact Lenses~
+Contact Lenses sit on the ground.~
+~
+27 838860800 0 0 0 131073 100
+100 100
+0~ -1~ -1~ mind probe~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#75
+melpomene's Key~
+melpomene's Key~
+A large key lies here.~
+~
+9 0 0 0 0 17 106
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+3 94
+reserved~
+-1 -1
+0 0 0
+A
+24 -600
+#76
+Test object~
+Test object~
+Test object~
+~
+32 301989888 0 0 0 2097153 100
+100 100
+100~ 3~ 3~ fireball~
+1 8 0
+0 76
+haste~
+-1 -1
+0 0 0
+A
+13 20000
+A
+32 17
+A
+46 100
+A
+30 100
+A
+48 45
+A
+42 90
+>look_prog 100~
+0
+if ispc($n) == 1
+     mpechoat $n &RHot flames reach out and embrace you making you fall onto the hammock.
+endif
+~
+>get_prog ~
+0
+~
+|
+#77
+wooden table~
+a table~
+A sturdy wooden table stands here.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+300 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#78
+Wife Beater~
+wife beater~
+A stained and dirty wife beater lies crumpled here.~
+~
+9 0 0 0 0 9 106
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#79
+rift portal space~
+a Rift~
+A jagged rift in space floats here~
+~
+29 67108932 0 0 0 0 0
+100 100
+19914~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#80
+candle~
+a candle~
+A candle flickers dimly on a corner of the table.~
+~
+1 1 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#81
+magic golden lasso~
+the magic lasso~
+A long length of golden rope lies here on the ground.~
+~
+9 1 0 0 0 2097153 106
+100 100
+0~ 0~ 0~ 0~
+100 1060 0
+0 0
+reserved~
+0 0
+0 0 0
+>look_in_prog 100~
+0
+mpechoat $n You see an image of stability at the end of the vortex.
+~
+|
+#82
+personals board~
+a wink~
+A lascivious wink~
+~
+11 838860801 0 0 0 131073 106
+100 100
+0~ 0~ 0~ 0~
+3 1060 0
+0 0
+disintegrate~
+-1 -1
+0 0 0
+A
+120 -1
+A
+129 -1
+#83
+fountain love~
+aphrodite's Fountain of Love~
+&CA Fountain gushes forth pure love.~
+~
+25 671088640 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+fountain~
+&BYou see a fountain made of pink marble filled with the purest form of
+water.  When you drink it you are filled with love and you know that the
+world is a better place because of it.  
+~
+#84
+cake zhyril~
+a piece of chocolate cake baked by Zhyril~
+A piece of yummy cake is here.~
+~
+19 805306368 0 0 0 1 0
+100 100
+0~ 0~ 0~ 1~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#85
+gift basket~
+a gift basket~
+A gift basket is here.~
+~
+15 805306368 0 0 0 1 1
+100 100
+3~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#86
+pool sparkling water~
+a clear pool~
+A clear pool of sparkling water is here.~
+~
+29 0 0 0 0 0 0
+100 100
+90~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#87
+comfortable chair~
+a huge armchair~
+An incredibly comfortable-looking armchair stands near the window.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+400 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#88
+gleaming armor~
+gleaming steel armor~
+Armor lies here.~
+~
+9 0 0 0 0 9 50
+100 100
+5~ 0~ 0~ 0~
+20 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#89
+staff earthquake~
+a staff of earthquake~
+A staff is here.~
+~
+4 0 0 0 0 16385 1
+100 100
+100~ -1~ -1~ earthquake~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#90
+statue aphrodite ice sculpture~
+a life-sized ice sculpture of Aphrodite~
+A wet sculpture lies here.~
+~
+13 536870976 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+50 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+card~
+Number two in the "Immortals" series, it depicts Aphrodite.
+~
+#91
+bag fun~
+a bag full of free quest equipment~
+A bag full of free quest equipment lies here.~
+~
+15 64 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+1 8 0
+3 8
+reserved~
+0 0
+0 0 0
+>look_in_prog 100~
+0
+mpechoaround $n $n looks inside a bag.
+mpecho Suddenly, the bag writhes violently!
+mpechoat $n You are dragged into the bag, kicking and screaming in terror!
+mpechoaround $n $n is pulled, screaming, into the bag!
+mpforce $n drop bag
+mptrans $n 8
+mpecho The bag falls to the ground.
+~
+|
+#92
+pool water~
+&Cthe pool~
+&BA shimmering pool is here.~
+~
+29 0 0 0 0 8192 107
+100 100
+93~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#93
+portal~
+a portal of shifting mist~
+A portal of shifting mist hangs in mid-air.~
+~
+29 0 0 0 0 0 1
+100 100
+92~ 0~ 0~ 0~
+1 120 0
+1 699
+reserved~
+-1 -1
+0 0 0
+#94
+white mist portal~
+a portal of shifting mist~
+A portal of shifting white mist hangs in mid-air.~
+~
+29 0 0 0 0 0 111
+100 100
+92~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#95
+Coffin~
+a marble coffin~
+Coffins made from solid marble are here.~
+~
+13 536870976 0 0 0 16385 105
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+5 0
+mana~
+-1 -1
+0 0 0
+#96
+easy guide mobprograms~
+an easy guide to mob programs~
+A small booklet with nice, big letters lies here.~
+~
+8 0 0 0 0 1 106
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+guide~
+This guide is intended to get you started with mobprograms.  They're
+pretty easy to do, though if you work at them you can get them to do some
+really complex thing.  Please note that this is for the utter beginner; more
+experienced builders can probably get by with the help files (TYPE "HELP
+MPROG") OK, we're going to make a simple mobprog to demonstrate.  You start
+the mobprogram editor from within the mob editor.  From medit type "mpedit
+c".  That creates a new mobprogram.  
+It will give you a list of the mobprog attributes every time you press enter.  You change them
+the same way you change other attributes in the other editors.
+~
+#97
+list~
+a list~
+A list lies here.~
+~
+8 0 0 0 0 16384 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+list~
+From the Home Office in Wahoo, Nebraska, 
+it's the Top Ten List for July 17, 1997 
+Top Ten Signs You're at a Bad Camp
+10. Lifeguard is a mannequin with a whistle  
+9. Many of the counselors are still wearing their prison uniforms  
+8. At the end of the tetherball rope is a sun-bleached human skull  
+7. Bonfire fueled entirely by documents from old lawsuits  
+6. At meal time, they send you into the woods with a hunting knife and say, "Bon appetit, you little bastards!"  
+5. Baseball clinic is run by last place New York Mets  
+4. The strange-looking kid who keeps biting everyone turns out to be a giant mosquito  
+3. Dead horse + 1,000 volts = 8 seconds of horseback riding  
+2. They give you a special repellent to prevent bites by Mike Tyson  
+1. Camp motto: remember Waco  
+ 
+~
+E
+card~
+Emblazoned on the card is an insignia:
+ 
+&Y  ___
+&Y /   \
+&Y|    /
+&Y|    \
+&Y \___/
+ 
+You shiver as you recognize...the cheese wheel of justice!
+ 
+~
+#98
+atom cannon~
+nuclear atom gun!~
+A deadly weapon is forgotten here.~
+~
+32 536870912 0 0 0 2097153 106
+100 100
+10000~ -1~ 0~ flame thrower bullet~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#99
+sword darkness~
+the sword of darkness~
+A sword lies here.~
+~
+9 0 0 0 0 17 300
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#70
+Tyrion Soulstealer's Master Building Hall~
+~
+~
+You have entered a magnificant hall.  Its walls are massive, huge paintings
+everywhere. This is where you will find Tyrion at most times.  A note board
+sits in the middle of the room.
+~
+0 537264136 0
+Rd     0
+D0
+~
+~
+1 0 71
+S
+#71
+Tyrion's Room~
+~
+~
+You have entered a room where Warriors of Chaos, Beastmen, and other
+strange creatures hold sway, and where the mutating influence of the
+Warpstones may produce all manner of hideous new monsters.  It is in this
+room where the incursions of the Chaos Wastes have their origins, and every
+now and again the servants of Tyrion sweep down over adjacent territories,
+corrupting and altering all they touch.  An exit south leads to the builders
+lounge, where Tyrion and others may post vital information.  An exit east
+leads to Tyrion's private bedroom, while a ladder up leads to his clan's
+room.  The normal exit, down, leads to the Heirophant.  
+~
+0 405002 0
+Rd     0
+D1
+~
+~
+3 0 72
+D2
+~
+~
+1 0 70
+S
+#72
+Tyrion's Private Bedroom~
+~
+~
+You are in Tyrion's private bedroom.  It is very quiet here.
+~
+0 394252 0
+Rd     0
+D3
+~
+~
+3 0 71
+S
+#73
+Myrkul's Room - The Throne of Bone~
+~
+~
+Appearing in this room you see a throne upon a huge raised diaz.  The
+throne is constucted completely of bone.  Around the room you notice what
+looks like statues of various types of creatures in different forms of pain
+and agony.  The walls,ceiling and floor are made of a marble like substance
+with red veins shooting threw it.  In the far north corner of the room is a
+bone ladder leading up, this seems to be the only exit.  
+~
+0 131072 0
+Rd     0
+D4
+~
+~
+0 0 25000
+S
+#74
+Sanctuary of the Seven Eyed~
+~
+~
+The room is dimmly lit by a sparse scattering of candles.  All arround
+you, books and scrolls have been shuffled together into disorderly piles. 
+Neither of the simple work benches currently have any usable space available
+on them.  Ningauble is either a very busy man, or a very lazy one.  
+~
+0 401422 0
+Rd     0
+S
+#75
+Gorsha's Room~
+~
+~
+~
+0 138805772 0
+Rd     0
+S
+#76
+House of Manaux~
+~
+~
+~
+0 604373006 0
+Rd     0
+S
+>sleep_prog 100~
+0
+mpecho While you are sleeping, you have a strange vision...
+mpecho An image emerges from the lifeless statue of the hierophant.
+mpecho It looks at you, smiles, and then returns to its old form.
+mpecho A phrase keeps repeating in your head...
+mpecho "I must ease your pain...it is why i have been sent here."
+~
+|
+#77
+Makelith's Pad~
+~
+~
+You find yourself in a small, cozy bachelor pad.  Modestly furnished, and
+cluttered with odds, and ends..  In the middle of the room you see a HUGE
+waterbed.  On it are checkered flannel sheets.  On each side of the bed are
+two tall black lamps.  The light coming from them are dim.  
+~
+0 411148 0
+Rd     0
+E
+food~
+~
+S
+#78
+Paksenarrion's Office~
+~
+~
+Well, this used to be Paksenarrion's office, but it isn't anymore.  It is
+now Selinar's..  The imm who was lost (deleted), but now is found (remade)
+He is so influential that his office stretches over a whopping 2 - count 'em
+2 vnums.  To see a cooler room desc, go south, but watch out for the Shadow.
+It is known to be quite vicious to intruders.
+~
+0 4325388 0
+Rd     0
+D2
+~
+~
+0 0 79
+S
+#79
+House of Shadows~
+~
+~
+You stand in a large, high walled chamber.  Fifteen feet in the air you
+see two spheres of magelight illuminating the room in their soft glow.  The
+uneven granite walls cast flickering shadows over themselves, making the
+walls almost seem to move and breath.  Near one wall is a large, black oaken
+desk with stacks of papers and other writing instruments, as well as some
+small objects, their purpose you can only guess.  Behind the desk is a high
+backed black leather chair which has seen much use, and behind that you see
+a large map that is spread across the whole wall.  The map seems to depict
+everything in the Realms with minute accuracy, every tree, hill, mountain,
+town and plain are intricately drawn.  On another wall you see a weapons
+rack filled with every type of weapon you have encountered, as well as some
+you haven't.  Some are chipped, and others have smal;l bloodstains on their
+cold metal surfaces.  Sitting next to another wall is what seems to be a
+shimmering rip in the air, and as you look closer you actually look through
+the rip and see another room.  This doesn't look like a very inviting place,
+and maybe it's not a good idea for you to be here.  There is an exit to the
+South that leads back to the Hierophant.  
+~
+0 131078 0
+Rd     0
+D0
+~
+~
+0 0 78
+D2
+~
+~
+0 0 25000
+S
+#80
+Sparhawks Office~
+~
+~
+You are in a large study, shelves and shelves of books line the walls. 
+Candle sconces line the walls, lending thier cheerful light to the room. 
+Chairs of all shapes and sizes lead you to believe that your host entertains
+guests of all shapes and sizes.  
+~
+0 1028 0
+Rd     0
+S
+#81
+Bermuda Triangle~
+~
+~
+&BYou have entered the cool seemingly halcyon waters of the Bermuda.  But
+when you look into the surface you see turbulence waiting to pull you under.
+The volatile waters cause a melee within the oceanic community.  You see a
+vortex lying in wait for you.  It waits to consume you into its downward
+spiral into dark abyss.  
+~
+0 84288009 0
+Rd     0
+D1
+~
+~
+7 0 84
+S
+#82
+Azathoth's Void~
+~
+~
+&gAs you enter This void, you tremble with a &Pstrange&g and unusual
+feeling that is like nothing you've ever felt before.  There is darkness all
+around you.  The nothingness of the Void mixed with a feeling of pure
+&z&zevil&G&g.  Chaos swirls all around you in this inferal realm.  As you
+enter this Void, you tremble with a strange and unusual feeling that is like
+nothing you've ever felt before.  There is darkness all around you.  The
+nothingness of the Void mixed with a feeling of pure &zevil&g and &Cchaos&g.
+It is like the chaos swirls around you in this infernal realm.  Soon before
+you a pair of eyes wavers into sight.  The &Oglowing&g eyes hover there for
+a minute, and seem to &rburn&g &Rred&g like fire and give off the feeling of
+hatred and evil.  This is Master Azathoth, Lord of All.  "Azathoth is the
+'ultimate nuclear chaos', at 'the center of infinity'.  It is from the
+Throne of Azathoth that the aimless waves, 'whose chance combining gives
+each frail cosmos its eternal law', originate from."  Azathoth's eyes seem
+to shine a &Rbright red&g and as they fade back to their normal &rred&g,
+demons fill the Void with you.  
+~
+0 4 0
+Rd     0
+D5
+~
+~
+0 0 25000
+S
+#83
+Apok's lair~
+~
+~
+You have entered a very sacred place.  It is only by the grace of Apok
+that you still live and breathe here.  As you look around you can't help but
+wonder will i ever see the light of day again...  Be Afraid Be Very Afraid. 
+- - - - - - 
+~
+0 33563652 11
+Rd     0
+S
+#84
+Up Shit's Creek~
+~
+~
+TBA
+~
+0 402956 8
+Rd     0
+D3
+~
+~
+7 0 81
+D5
+~
+~
+0 0 25000
+S
+#85
+Gah~
+~
+~
+~
+0 401410 0
+Rd     0
+D5
+~
+~
+0 0 25000
+S
+#86
+Brey's Crib~
+~
+~
+You're in a nicely furnished room.  You see a couch along the far wall'
+along with a coffee table.  There are two cups of steaming coffee
+sitting on the table.  Uh oh.  No coasters.  That's gonna leave an
+ugly ring on the finish.  On the west wall there is a GIANT screen
+TV playing continuous episodes of the simpsons.
+In the southwest corner you see a small shrine dedicated to Shaft.
+~
+0 401422 0
+Rd     0
+D0
+~
+~
+0 0 97
+D5
+~
+~
+0 0 25000
+S
+#87
+Kalleel's Temple~
+~
+~
+You have entered a large well lit room.  It is obviously a temple of some kind
+for the goddess Kalleel.  On the wall to the south is attached a small
+basin of unholy water.  Many pictures align the walls depicting
+the great acts of destruction that Kalleel has brought unto the world.
+There is a large statue of an armored man carrying a large two-handed
+battle axe in the middle of the room.  On the northern side of the room
+is a huge gem encrusted throne where Kalleel watches over her loyal subjects.
+In the south eastern corner is a spiral staircase leading down, and a large 
+archway opens into a room to the east.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 89
+D5
+~
+~
+0 0 25000
+S
+#88
+A Clean, Well Lighted Place~
+~
+~
+You're standing inside a small rustic cafe.  An electric light blazes
+away outside, contrasting with the midnight sky.  Tables are scattered
+throughout the cafe as patrons come here to sit and wittle the hours away. 
+You feel heat coming from the fire at the end of the room.  
+~
+0 536870916 0
+Rd     0
+S
+#89
+Odins room~
+~
+~
+~
+0 136454663 0
+Rd     0
+D3
+~
+~
+0 0 87
+S
+#90
+Beneath the Surface~
+~
+~
+You are several feet below the surface of a clear pool of water.  All about you
+brightly-colored fish swim by, filling the water with swirls of brilliance.
+Below you the pool's floor is covered with pure white sand, while above you
+the torchlight glints off the surface.
+~
+0 268435464 8
+Rd     0
+D4
+~
+~
+0 0 25002
+S
+#91
+A Restaurant~
+~
+~
+You are in a large restaurant constructed of marble and stone.  Silken
+tablecloths cover the polished white tables, and verdant plants line the
+open windows, through which the night sky glistens like a thousand jewels. 
+A chamber orchestra plays on a raised dais; the notes of a Bach concerto
+float through the air.  Most of the tables are occupied, with silent couples
+staring into each others eyes while waiters gracefully carry platters of
+aromatic food and wine.  A single rose sits in a delicate marble vase on
+your table, and the warm summer air brings the fragrance of a thousand
+violets to you.  
+~
+0 131072 0
+Rd     0
+D2
+~
+door~
+3 0 92
+S
+#92
+Zhyril's Room~
+~
+u7_wisp.mid V=50 L=1 P=50 T=Background~
+You have entered a vast chamber built of white marble.  Colorful frescoes
+line the walls and ceilings, and great vaulted windows look out into the
+starry night sky.  The only furniture is a comfortable-looking divan and a
+marble table on which lies a golden carafe filled with wine.  The most
+prominent feature of the room is a huge pool filled with softly bubbling
+water.  
+~
+0 16777228 0
+Rd     0
+D0
+~
+~
+3 0 91
+D5
+~
+~
+0 0 12150
+S
+#93
+In the Jacuzzi~
+~
+~
+&BYou gently relax in the warm water, feeling totally at peace.  The
+water is faintly luminescent and throws sparkling gleams of light against
+the ceiling.  The bottom of the jacuzzi is covered with white and blue tiles
+which form an intricate pattern that reminds you of the ocean.  Though the
+air is calm, the water swirls gently around you, massaging your limbs with
+it's soothing warmth.  
+~
+0 136324616 0
+Rd     0
+D4
+~
+~
+0 0 92
+S
+>rand_prog 1~
+0
+mpmload 92
+mpecho Suddenly, you notice a shape gliding beneath the water!
+mpecho A beautiful face appears, framed by cascading blue hair.
+mpecho The nereid smiles at you shyly.
+~
+>rand_prog 10~
+0
+mpecho &BBubbles rise up from the pool.
+~
+|
+#94
+Melpomene's Room~
+~
+~
+You are in a small, cozy cabin deep in the woods.  In one wall is a lit
+brick fireplace which fills the room with warmth and a soft light.  On the
+cabin walls you notice a strange, yet moving sight; someone has written
+poetry in a flowing, graceful hand, and the runes seem to glow with a
+magical light.  A small, frost-covered window looks out into the snowy
+wilderness, where the temperatures have risen enough so that a soft, warm
+rain fills the air.  
+~
+0 393738 0
+Rd     0
+E
+window~
+You lean back in your chair and watch the rain come down.
+     &B                       ,                  ,
+ ,          ,         ,            ,        ,
+    ,            ,        ,            ,
+       ,      ,        ,        ,'
+,        ,         ,         ,            ,
+  ,         ,            ,          ,
+,    ,          ,    ,          ,
+        ,     ,          ,
+~
+D3
+~
+door~
+39 75 17793
+S
+#95
+&rMordred&G'&rs &BCrypt &Bof &bDarkness~
+~
+~
+You have entered a cold and silent chamber. The smell of death and decay
+surround you. Looking towards the center of this morbid room can be seen 
+two dark objects. Upon closer inspection you find they are actually coffins.
+Strange symbols are carved into the elaborate marble workings, depicting
+a man and woman living since the begining of time itself.
+~
+0 394760 0
+Rd     0
+D4
+~
+~
+0 0 25000
+S
+#96
+imm pet shop room~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#97
+Sirrus' Space~
+~
+~
+The room is completely dark and nothing is recognizable.  The only thing
+that catches your eye is a small light on the ceiling that sprkles like a
+star.  From this, Sirrus came forth.  Oh, and by the way....  Brey don't own
+me anymore 
+~
+0 131078 0
+Rd     0
+D2
+~
+~
+0 0 86
+D5
+~
+~
+0 0 25000
+S
+#99
+&r Aphrodite's Love Palace~
+~
+~
+&g|-<{&r@&g--'-<{&w@&g--'-<{&r@&g--'-<{&w@&g--'-<{&r@&g--'-<{&w@&O*&w@&g}>-,--&r@&g}>-,--&w@&g}>-,--&r@&g}>-,--&w@&g}>-,--&r@&g}>-|
+&wYou have entered a paradise filled with flowers. There are beautiful &rr&wo&rs&we&rs &wand
+lillies everywhere filling your head with a heady scent, seducing your senses.
+You feel an intoxication coming on and yet are powerless to stop it. You surrender
+to the euphoric sensations that fill your every pore.  As the feeling of euphoria
+begins to fade slightly, and you regain partial control of your senses, you wonder
+exactly how you arrived here.  Looking around you see there are no doors in this
+room.  Upon further investigation, your realize you are inside a giant scallop
+shell under the ocean.  It is made of pure gold, and encrusted with many diamonds.
+This is where Aphrodite enjoys spending time alone, but if you are very fortunate,
+perhaps you may spend a moment here with her.  To the EAST, you notice an exit to
+heirophant.  You notice an Arch leading DOWN to Tyrion's room, but know it is not
+for you to use.  
+&g|-<{&r@&g--'-<{&w@&g--'-<{&r@&g--'-<{&w@&g--'-<{&r@&g--'-<{&w@&O*&w@&g}>-,--&r@&g}>-,--&w@&g}>-,--&r@&g}>-,--&w@&g}>-,--&r@&g}>-|
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+3 0 25000
+D3
+~
+~
+3 0 101
+D5
+~
+~
+115 0 71
+S
+#0
+
+
+
+#SPECIALS
+M 78 spec_thief
+M 79 spec_breath_gas
+M 81 spec_kungfu_poison
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 71 0 70
+M 0 73 1 73
+O 0 80 0 74
+O 0 80 0 75
+O 0 76 0 76
+O 0 80 0 79
+O 0 79 0 79
+M 0 79 1 79
+O 0 80 0 80
+M 0 80 1 80
+M 0 81 1 81
+E 0 81 0 23
+M 0 85 1 85
+E 0 85 0 23
+M 0 86 1 86
+M 0 86 1 86
+M 0 86 1 86
+O 0 88 0 88
+M 0 88 1 88
+M 0 89 1 89
+O 0 92 0 92
+M 0 92 1 92
+M 0 92 1 92
+M 0 92 1 92
+M 0 92 1 92
+O 0 80 0 94
+O 0 77 0 94
+O 0 87 0 94
+M 0 93 1 94
+M 0 95 1 95
+O 0 95 0 95
+O 0 95 0 95
+O 0 95 0 95
+M 0 70 1 95
+M 0 96 1 96
+E 0 93 0 23
+E 0 88 0 5
+M 0 97 1 97
+M 0 99 1 99
+O 0 83 0 99
+E 0 99 0 6
+S
+
+
+
+#SHOPS
+70 0 0 0 0 0 100 100 1 24
+0
+
+
+
+#$

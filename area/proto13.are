@@ -1,0 +1,780 @@
+#AREADATA
+Name        New area~
+Builders    Dymond~
+VNUMs       11101 11200
+Security    100
+Recall      25001
+Flags       16
+End
+
+
+
+#MOBILES
+#11101
+Zelur sentry greeter~
+Zelur the Greeter~
+The immortal spirit of Zelur notes your approach.
+~
+A sense of immense power emanates from this spirit.  As insubstantial 
+as a light summer breeze, it is difficult to focus on Zelur but you sense
+a warm smile and a warm welcome.  Draped in glowing robes, he presents an
+impressive image.
+~
+524355 16777336 0 0 3 1000 S
+50 222 333 0 12000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+  if level($n) < 25
+   say Proceed at your own risk, $n.
+  else
+    if level($n) > 70
+        say There is no challenge for you here, $n.
+        say Leave my valley in peace, seeking adventure elsewhere.
+    else
+        say $n! Welcome to my valley.  May your journey here
+        say be pleasant...and productive.
+    endif
+  endif
+endif
+~
+|
+#11102
+oehe spearman guard~
+an O'ehe spearman~
+An O'ehe spearman guards the trail.
+~
+The spearman watches the trail, intent for intruders.  His scraggly
+topknot stirs in the wind but the rest of his appearance is without fault.
+Three pips sewn on his leggings show he is a veteran of several campaigns.
+His stance is erect and he is poised for action.
+~
+65 65728 0 0 0 556 S
+45 110 115 0 9696d0+0 0d0+0
+660 0 0
+0 0 1
+0 0 0
+#11103
+master spearman~
+a master spearman~
+A master spearman stands poised to strike.
+~
+This spearman is charged with maintaining discipline among the spearmen.
+His uniform is immaculate and he proudly wears the pendant of Zelur about
+his neck.  His topknot has been carefully cared for and stands as erect
+as he does.  His stare of disapproval at your appearance sends a shiver
+through your being.
+~
+67 33554626 0 24576 2 666 S
+65 190 123 0 19220d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+#11120
+robber fly~
+female robber fly~
+A female robber fly awaits her next victim.
+~
+Almost as large as a fully grown eagle, this fly fears little and will
+attack things twice her size.  A sharp, piercing proboscus extends far
+below the large, compound eyes.  A dense beard of bristles on the face and
+a deep depression between the eyes, enhance her sinister appearance.
+~
+99 24576 16777216 0 0 -666 S
+30 55 60 0 4523d0+0 0d0+0
+200 0 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#11101
+slimy key~
+a slimy green key~
+An old key, covered with a slimy mold.~
+~
+18 0 0 0 0 16385 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11102
+spear~
+short spear~
+A short, iron tipped, ebony spear lies here.~
+~
+5 0 0 0 0 8193 41
+0~ 15~ 35~ 2~
+10 132 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 7
+#11103
+Storage Locker~
+a sturdy storage locker~
+A sturdy wooden storage locker stands against the wall.~
+~
+15 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11104
+black bread loaf~
+loaf of Black Bread~
+A carefully wrapped loaf of black bread.~
+~
+19 0 0 0 0 16385 1
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11105
+hard white cheese~
+white Cheese~
+A hard block of delicous white cheese.~
+~
+19 256 0 32 0 16385 2
+12~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#11106
+flagon amber ale~
+flagon of ale~
+A flagon of amber ale.~
+~
+17 0 0 0 0 16385 2
+20~ 20~ 3~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#11107
+spear razor~
+a razor-sharp spear~
+A long spear with its steel tip honed to a razor sharp edge.~
+~
+5 134218752 0 0 0 8193 63
+0~ 15~ 30~ 2~
+15 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+18 20
+A
+26 25
+#0
+
+
+
+#ROOMDATA
+#11101
+Head of the Crater Trail~
+~
+~
+A narrow trail, barely wide enough to pass single file, winds its way
+down sheer cliffs to the bottom of the crater.  A thick mist blankets the
+crater floor, making it impossible to see the lay of the land.
+~
+0 1028 5
+Rd     0
+D5
+~
+~
+0 0 11102
+S
+#11102
+On the Crater Trail~
+~
+~
+The trail can be seen winding its way up and down the sheer crater
+walls.  Shrubs and grasses struggle to gain a foothold in the sides of
+the crater.  To the west, a fortified position guards the trail.  A strong
+wind threatens to sweep everything from the trail, fiercely lashing at
+all who are foolish enough to use the trail.  The mist begins to thin as
+the decent is made.
+~
+0 0 5
+Rd     0
+D3
+~
+~
+0 0 11103
+D4
+~
+~
+0 0 11101
+D5
+~
+~
+0 0 11104
+S
+#11103
+O'ehe Outpost~
+~
+~
+This cleverly camouflaged position allows a clear view of the trail in
+all directions while preventing anyone from seeing the guards.  It has
+been stocked with several weeks worth of food, drink, and other 
+necessities of life.  A small group of warriors could defend the trail
+indefinately.
+~
+0 134258689 5
+Rd     0
+D1
+~
+~
+0 0 11102
+S
+#11104
+Lower Crater Trail~
+~
+~
+The narrow, treacherous switchback trail climbs up from the crater.  It
+took decades for the O'ehe to hew the tail from the crater wall.  Sheer
+cliffs above and below the trail would mean certain death if one
+misstepped.  A refreshing breeze brings the fragrance of jungle flowers
+to the trail.  A few gnarled shrubs have gained a foothold in the 
+crater wall.
+~
+0 0 5
+Rd     0
+D4
+~
+~
+0 0 11102
+D5
+~
+~
+0 0 11105
+S
+#11105
+O'ehe Crater~
+~
+~
+A massive crater stretching to the north and east remains mute
+evidence of an extinct volcano.  Along the southern edge of the crater,
+unbroken, impassable black walls leap skyward.  A faint trail can be
+seen winding its way up the western side of the crater.  A trail leads
+northward through the old lava flows and an thick, impassable jungle
+lies to the east.
+~
+0 0 11
+Rd     0
+D0
+~
+~
+0 0 11106
+D4
+~
+~
+0 0 11104
+S
+#11106
+On The Lava Flow~
+~
+~
+Islands of green surrounded by sharp, jagged lava rock, glisten like
+jewels set in a black obsidian crown.  The crater wall blocks passage to
+the west and thick jungle lies to the east.  The trail continues northward
+through the forbidding landscape.
+~
+0 4 11
+Rd     0
+D0
+~
+~
+0 0 11107
+D2
+~
+~
+0 0 11105
+S
+#11107
+Along the Lava Trail~
+~
+~
+The tall, unbroken crater walls lie to the west.  Islands of green
+vegetation are slowly breaking down the jagged lava rock.  The trail
+splits here, a well travelled route leads east into a bamboo forest
+while a lesser travelled path leads north towards a chilling mist.
+~
+0 0 11
+Rd     0
+D0
+~
+~
+0 0 11108
+D1
+~
+~
+0 0 11118
+D2
+~
+~
+0 0 11106
+S
+#11108
+Outside Skull Cave~
+~
+~
+Painted and decorated skulls impaled on ebony lances flank a narrow
+trail leading north into the crater wall.  A strange, transparent mist
+blocks the way north and continues east, disappearing into the bamboo.
+The bottom edge of the mist touches the forest floor and the top edge
+rises to meet the clouds.  A small region of the mist covering the trail
+swirls rapidly.  The unbroken crater wall looms to the west.
+~
+0 0 3
+Rd     0
+D0
+~
+~
+631 11101 11109
+D2
+~
+~
+0 0 11107
+S
+#11109
+Entrance to Skull Cave~
+~
+~
+A faint scraping can be heard in the still air of the cave, as if the
+very walls were moving, closing in.  A mangled sconce rests on the
+northern wall.  Piles of crushed, broken bone lie scattered about.  A
+faint flickering is coming from a narrow vent on the western wall while
+a cold, damp wind flows from the east.
+~
+0 134610953 4
+Rd     0
+D1
+~
+~
+0 0 11113
+D2
+~
+~
+631 11101 11108
+D3
+~
+~
+0 0 11110
+S
+#11110
+Sparkling Brilliance~
+~
+~
+Millions of chips of mica reflect any light back in a blinding 
+blaze.  Even though the cavern rises far overhead, the roof of the dome
+can be clearly seen.  Subtle differences in coloration on the west wall
+weave the outline of a grinning skull.  Water seeps from many small
+cracks, falling to the floor with a steady drip, drip, drip.  The
+cavern floor is uneven, wet, and slick.  Narrow openings lie to the east,
+north, and south.
+~
+0 9 4
+Rd     0
+D0
+~
+~
+0 0 11112
+D1
+~
+~
+0 0 11109
+D2
+~
+~
+0 0 11111
+S
+#11111
+Quagmire~
+~
+~
+The thick, viscous mud pulls at the feet, making every step a 
+struggle.  Loud slurping sounds accompany every step taken.  Small
+balls of green bubble up through the mud, bursting with a small *pop*
+as they brush the ceiling, returning to the ooze as green slime that
+drips from above.  The rock walls are scarred and jagged, deeply etched
+from the constant action of the slime rising and falling.
+~
+0 268468233 4
+Rd     0
+D0
+~
+~
+0 0 11110
+S
+#11112
+Above a Dark Pit~
+~
+~
+A strange white mist curls up from between the cracks in the
+rotting boards covering a large pit.  Astride the pit stands a twisted,
+broken tower, its large winch cracked and rusted.  The tower's lone
+remaining pulley creaks and sways as if being pulled by the mist.  The
+top of a ladder can be seen protruding from the boards.  Nearby lie
+scattered remnants of mining helmets, lanterns, picks, and shovels.
+~
+0 9 4
+Rd     0
+D2
+~
+~
+0 0 11110
+D5
+A tangle of broken boards cover a pit.
+~
+cover~
+3 0 11116
+S
+#11113
+A Dark Passage~
+~
+~
+The black obsidian walls of this passage have been polished smooth.  Not
+a single imperfection can be seen in the mirrored surface.  That's odd...
+there are no reflections in the mirror!  A flickering light can be seen
+to the east.
+~
+0 134217737 4
+Rd     0
+D1
+~
+~
+0 0 11114
+D3
+~
+~
+0 0 11109
+S
+#11114
+Sacred Falls~
+~
+~
+A torrent of water flows down the northern wall spilling into a 
+crystal clear pool.  There is no apparent outlet to the pool.  The pool
+is surrounded by flickering torches planted in crystalline columns.  The
+walls here have also been polished smooth and a feeling of awe settles
+over everyone who enters.  A magnificently carved door stands open to 
+the south.
+~
+0 8 4
+Rd     0
+E
+columns~
+The columns have been carefully carved.  They are covered with
+arcane symbols and reflect and intensify the torchlight.
+~
+E
+door~
+The ebony door has been intricately carved with images of the moon
+and the stars.  Hundreds of precious gems have been embedded in the 
+wood.  It looks like the door opens and closes easily inspite of its
+immense size.
+~
+D2
+~
+~
+1 0 11115
+D3
+~
+~
+0 0 11113
+S
+#11115
+Inner Sanctum~
+~
+~
+The walls of this room are pure white.  Torches burn from sconces
+~
+0 8 4
+Rd     0
+D0
+~
+~
+1 0 11114
+S
+#11116
+A Misty Pit~
+~
+~
+The white tendrils of mist reach out to grab the unsuspecting.  An
+eerie glow from the walls does not add much light, just makes the blood
+run cold.  Many bones lie scattered about the floor, the skulls have
+been crushed and the other bones shattered.
+~
+0 4194313 4
+Rd     0
+D3
+~
+~
+0 0 11117
+D4
+A tangle of broken boards cover the opening.
+~
+cover~
+3 0 11112
+S
+#11117
+Abandoned Shaft~
+~
+~
+The white mist is thicker here, reaching out and choking.  It deadens
+all sound and sucks up the light.  The walls of the shaft are rough and
+jagged.  It looks like work was interrupted by something.
+~
+0 415268873 4
+Rd     0
+D1
+~
+~
+0 0 11116
+S
+#11118
+Bamboo Forest Trail~
+~
+~
+The trail has been worn smooth by the passage of many generations of
+O'ehe.  The O'ehe must be short...the clearance above the trail is only
+four feet!  The bamboo is quite dense through this area, but a glimpse of
+something white can be seen to the north.  Drums echo in the still air,
+quieting the birds and other small animals.
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 11119
+D1
+~
+~
+0 0 11121
+D2
+~
+~
+0 0 11120
+D3
+~
+~
+0 0 11107
+S
+#11119
+Tiger Bamboo~
+~
+~
+These tall, striped bamboo shoots partially block the view of the mist
+wall, but it appears the wall veers to the north.  The chill radiating
+from the mist seeps into the bones.  The bamboo starts to thin here, but
+passage to the east and west is not possible.  The trail can be seen to
+the south.
+~
+0 393216 3
+Rd     0
+D2
+~
+~
+0 0 11118
+S
+#11120
+Golden Bamboo~
+~
+~
+Tall, golden yellow shoots of bamboo soar skyward, contrasting against
+the black obsidian crater walls to the south.  Vision is obscured by the
+mass of bamboo and by a thick growth of saddle palms - the hiding place
+of preference for many insect species.  The air is filled with magnificently
+colored birds, all engaged in some type of courtship ritual.
+~
+0 4587520 3
+Rd     0
+D0
+~
+~
+0 0 11118
+D1
+~
+~
+0 0 11122
+S
+#11121
+On the Bamboo Trail~
+~
+~
+The sound of drums echos from the south east.  Monkey pod trees fight
+for a foothold among the bamboo growing here.  Several macaw are perched
+in the trees, their cries adding an eerie counterpoint to the incessant
+boom of the drums.  The thick growth prevents travel to the north.  To the
+south, water can be seen cascading down the crater wall.
+~
+0 393216 3
+Rd     0
+D1
+~
+~
+0 0 11123
+D2
+~
+~
+0 0 11122
+D3
+~
+~
+0 0 11118
+S
+#11122
+Jungle Pool~
+~
+~
+A stream of sparkling water rushes down the side of the crater, creating
+an inviting pool of water.  Lush, jungle vegetation and trees surround the
+pool.  A feeling of serenity permates this emeral grotto.  A profusion of
+anthuriums, plumaria, hibiscus and orchids add splashes of color.  A large
+rock lies on the north edge of the pool.  A stream flows east through
+a thicket of barbed palm.
+~
+0 1024 3
+Rd     0
+D0
+~
+~
+0 0 11121
+D3
+~
+~
+0 0 11120
+S
+#11123
+Eastern Bamboo Trail~
+~
+~
+The trail through the bamboo continues east and west.  The bamboo is so
+thick to the north and south that it is impossible to pass in those 
+directions.  The sound of drums grows louder from the south east.  Perhaps
+it is time to consider leaving the crater.
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 11124
+D3
+~
+~
+0 0 11121
+S
+#11124
+Bend in Trail~
+~
+~
+The trail runs west and south from here.  A wall of black granite blocks
+the way east and a narrow opening can be seen to the north.  The opening
+looks like it would tear the hide off anything trying to squeeze through.
+The sound of the drums are beginning to irritate you.  Can't they just be
+silent for a few moments?
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 11125
+D2
+~
+~
+0 0 11132
+D3
+~
+~
+0 0 11123
+S
+#11125
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 11124
+S
+#11132
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11124
+S
+#0
+
+
+
+#SPECIALS
+M 11102 spec_guard
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 11101 1 11101
+M 0 11102 4 11102
+E 0 11102 0 20
+M 0 11103 1 11103
+E 0 11107 0 21
+E 0 11102 0 20
+O 0 11103 0 11103
+P 0 11104 0 11103
+P 0 11105 0 11103
+P 0 11106 0 11103
+M 0 11103 2 11108
+E 0 11102 0 20
+E 0 11107 0 21
+M 0 11120 3 11120
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

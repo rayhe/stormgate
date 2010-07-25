@@ -1,0 +1,469 @@
+#AREADATA
+Name        {50-105} Carhain~
+Builders    Ningauble Archon~
+VNUMs       19800 19900
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Ningauble~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMDATA
+#19800
+A Lonely Road~
+~
+~
+~
+0 401415 3
+Rd     0
+S
+#19801
+A File Room~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19802
+A Large Corner Office~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19803
+Another Small Office~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19804
+A Glass Foyer~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19805
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#19806
+A Corner Office~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19807
+A File Room~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19808
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#19809
+South East Corner of the Lobby~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19810
+The Bank Lobby~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19811
+End of the Line~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19812
+Waiting in Line~
+~
+~
+~
+0 134619148 0
+Rd     0
+S
+#19813
+Head of the Line~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19814
+Another Small Office~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19815
+Another Small Office~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19816
+The First Till~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19817
+The Second Till~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19818
+The Third Till~
+~
+~
+~
+0 151396366 0
+Rd     0
+S
+#19819
+The Fourth Till~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19820
+The Lobby~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19821
+Another Small Office~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19822
+A Broom Closet~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19823
+A Hallway~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19824
+Behind the Counter~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19825
+Behind the Counter~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19826
+Behind the Counter~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19827
+Behind the Counter~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19828
+A File Room~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19829
+An Office~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19830
+Behind the Counter~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19831
+Behind the Counter~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19832
+Behind the Counter~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19833
+Behind the Counter~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19834
+A Hallway~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19835
+The Womens Washroom~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19836
+The Men's Room~
+~
+~
+~
+0 134619150 0
+Rd     0
+S
+#19837
+yeah...room~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#19838
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#19839
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#19840
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#19851
+A pulsing vortex.~
+~
+~
+A vortex stands here, pulsing in and out of existance.
+You assume you came through this magical walkway, and don't think you can go back through...
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 18953
+D3
+~
+~
+3 0 18950
+S
+#19892
+Before the Great Fortress~
+~
+~
+~
+0 401415 2
+Rd     0
+S
+#19893
+Nearing the Fortress~
+~
+~
+~
+0 401415 2
+Rd     0
+S
+#19894
+Nearing the Fortress~
+~
+~
+~
+0 401415 2
+Rd     0
+S
+#19895
+At a Rise~
+~
+~
+~
+0 401415 3
+Rd     0
+S
+#19896
+A Lonely Road~
+~
+~
+~
+0 401415 3
+Rd     0
+S
+#19897
+A Lonely Road~
+~
+~
+~
+0 401415 3
+Rd     0
+S
+#19898
+A Lonely Road~
+~
+~
+~
+0 401415 3
+Rd     0
+S
+#19899
+A Lonely Road~
+~
+~
+~
+0 401415 3
+Rd     0
+S
+#19900
+A Lonely Road~
+~
+~
+~
+0 401415 3
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

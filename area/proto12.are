@@ -1,0 +1,1782 @@
+#AREADATA
+Name        Draq's Music Fest~
+Builders    Draquema~
+VNUMs       11001 11100
+Security    100
+Recall      25001
+Flags       16
+End
+
+
+
+#MOBILES
+#11001
+Security Guard~
+big burly security guard~
+This is one big burly Security Guard!!
+~
+~
+3 100671488 128 0 0 0 S
+60 60 60 0 17000d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#11005
+Wannabe Superstar~
+Wannabe Superstar~
+A wannabe superstar is hogging the microphone.
+~
+Wannabe
+~
+3 2097152 65536 0 0 100 S
+50 35 35 0 11000d0+0 0d0+0
+200 0 0
+0 0 0
+0 0 0
+#11006
+Barf Crooks~
+Barf Crooks~
+Barf Crooks thinks he's sexy, but he's not.
+~
+Just when you though you had seen it all...  Along comes this bozo...  
+~
+1 2621696 0 0 0 -100 S
+50 30 30 0 12000d0+0 0d0+0
+2 0 0
+0 0 0
+0 0 0
+#11007
+Shannoya Twin~
+Shannoya Twin~
+Shannoya Twin is twanging her instrument and strutting her stuff.
+~
+A less than perfect copy of some famous country superstar is wrecking
+country music forever.  
+~
+3 136593408 0 0 0 -100 S
+45 10 20 0 10000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#11008
+Groovy Guy~
+very groovy guy~
+A groovy guy is going for a stroll.
+~
+Check out the body piercing on this dude, way cool.  And doncha wish you
+had a tattoo just like that??  
+~
+3 17039360 1024 0 0 0 S
+45 30 30 0 11000d0+0 0d0+0
+2 0 0
+0 0 1
+0 0 0
+#11009
+Music Lover~
+a music lover~
+A Music Lover who is only here for the tunes.
+~
+Hey is that a Nirvana shirt on that dude??  He must really dig smokin'
+tunes.  
+~
+3 19136640 1024 0 0 100 S
+50 25 35 0 14000d0+0 0d0+0
+120 0 0
+0 0 0
+0 0 0
+#11013
+Tough Woman~
+a tough woman~
+A tough looking brute of a woman is here looking like she owns the place.
+~
+She has iron-red hair, and she obviously doesn't shave her pits, WHOA
+MAMMA!!!  
+~
+35 302006272 0 0 0 -100 S
+50 25 45 0 11000d0+0 0d0+0
+200 0 0
+0 0 2
+0 0 0
+#11017
+Street Performer~
+a street performer~
+This street performer is playing a strange instrument.
+~
+The music this street performer plays is different, but it's interesting.  
+~
+3 17040000 32768 0 0 100 S
+55 34 40 0 13000d0+0 0d0+0
+10 0 0
+0 0 1
+0 0 0
+#11018
+Blues Picker~
+a pretty good blues picker~
+Hey, this Blues Picker is blind, but can sure pick up a storm!!
+~
+The dark shades are a dead giveaway that this guy can't see for looking. 
+Maybe that's why he's so good hey?  
+~
+3 17580033 295092 0 0 0 S
+55 20 30 0 13000d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#11019
+Accordian Player~
+a very talented Accordian Player~
+An Accordian Player who can really tickle those ivories.
+~
+Wow, look at this accordian player.  What a fine musician indeed!!  
+~
+35 335544640 16777248 134742016 0 -500 S
+60 40 65 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#11020
+Songwriter~
+a pretty good songwriter~
+This Songwriter is playing some pretty good originals.
+~
+The musician before you obviously loves what she's playing.  It's a
+little different than mainstream music, but that's okay because being
+different is what's most important in this life.  
+~
+3 17040000 67141776 540672 0 300 S
+60 40 50 0 17000d0+0 0d0+0
+280 0 0
+0 0 2
+0 0 0
+#11024
+Sexy Babe~
+a very sexy babe~
+Check out this sexy babe.
+~
+WOW, what an awesome pair of biceps.  Bedroom eyes and a pocket full of
+cash.  This sexy babe is too much!!  
+~
+3 17571968 32900 0 0 0 S
+60 45 45 0 17000d0+0 0d0+0
+300 0 0
+0 0 0
+0 0 0
+#11026
+Clerk~
+a clerk~
+Looky here, if it ain't a plain old run-of-the-mill "Clerk".
+~
+Looks like this clerk has had a few too much of whats being sold here.  
+~
+3 33562656 0 0 0 300 S
+60 45 50 0 17000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#11030
+Little Brat~
+a little brat~
+Look at the snot running out of this kids nose, GROSS!!
+~
+A blonde haired, blue eyed, filthy little brat is playing on the
+playground equipment.  
+~
+3 0 32772 0 0 100 S
+45 25 30 0 10000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#11031
+Big Kid~
+a big kid~
+A very big kid is hanging out at the playground.
+~
+This kid looks like he has had better days.  He looks like he could kill
+somebody.  
+~
+3 16448 0 0 0 -100 S
+55 45 35 0 13000d0+0 0d0+0
+100 0 0
+0 0 1
+0 0 0
+#11033
+Booze Hound~
+Booze Hound~
+A booze hound with a sobriety problem is protecting this area.
+~
+You are looking at one intoxicated dude.  He's one of those types who is
+lookin' (if you know what I mean).  Go ahead, make his day...  
+~
+99 268444672 16777216 0 0 0 S
+60 45 30 0 17000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#11034
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#11038
+Janis Joplin~
+Janis Joplin~
+The undead corpse of Janis Joplin is here.
+~
+She looks a whole lot better alive than she does dead, come to think of
+it, she didn't look that great alive either, but she could sure sing.  
+~
+8195 268961280 851968 133120 0 -500 S
+60 60 60 0 17000d0+0 0d0+0
+400 0 0
+0 0 2
+0 0 0
+#11039
+John Lennon~
+John Lennon~
+The undead corpse of John Lennon is hanging out.
+~
+WHOA John Lennon, the one and only.  You wonder if it's too late to get
+his autograph.  
+~
+8195 67911744 0 0 0 -300 S
+60 40 40 0 17000d0+0 0d0+0
+300 0 0
+0 0 1
+0 0 0
+#11040
+Jimmy Hendrix~
+Jimmy Hendrix~
+The undead corpse of Jimmy Hendrix is standing here looking groovy.
+~
+Just when you though you'd seen everything, out pops Jimmy Hendrix. 
+Looking as cool and groovy as ever.  
+~
+8195 0 67698688 2048 0 -200 S
+55 40 50 0 15000d0+0 0d0+0
+200 0 0
+0 0 0
+0 0 0
+#11041
+Kurt Cobain~
+Kurt Cobain~
+Kurt Cobain stands before you.
+~
+Kurt Cobain is fidgeting with something.  Wonder what it is?  
+~
+8195 101450752 8454176 0 0 -500 S
+60 50 55 0 0d0+0 0d0+0
+400 0 0
+0 0 1
+0 0 0
+#11042
+Hank Williams Sr.~
+Hank Williams Sr. is right here~
+Hank Williams Sr. is here checking out the joint.
+~
+The legend himself is standing here with a tear in his beer.  
+~
+8227 263232 328704 0 0 -100 S
+60 20 20 0 17000d0+0 0d0+0
+400 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#11001
+Fender Telecaster~
+a fender telecaster guitar~
+A sea-green colored Fender Telecaster guitar.~
+~
+5 33570823 0 0 0 8193 55
+0~ 20~ 50~ 10~
+5 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11002
+Water Fountain~
+a water fountain~
+This water fountain is shaped like a bass clef. How cool!!~
+~
+25 134217985 0 0 0 0 0
+0~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11003
+Tent~
+well used orange pup tent~
+A tattered and torn orange pup tent is half set up.~
+~
+15 0 0 0 0 1 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11004
+Army Boots~
+surplus army boots~
+A fine pair of surplus army boots from Winnipeg, Manitoba Canada.~
+~
+9 67108882 8192 0 0 65 60
+0~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11005
+microphone~
+microphone~
+An AKG 535 Microphone.~
+~
+1 33554433 0 0 0 16385 50
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11006
+sign~
+music by "The Puke Tones"~
+A sign~
+~
+5 100663299 0 0 0 8193 0
+0~ 0~ 0~ 0~
+100 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11007
+Nachos~
+fresh nachos~
+A bowl of fresh nacho chips.~
+~
+19 0 0 0 0 16385 0
+100~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11008
+Country Bumpkin Suit~
+a country bumpkin suit~
+A well worn country bumpkin outfit.~
+~
+9 16400 0 0 0 9 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11009
+new wineskin~
+brand new wineskin~
+A brand new suede leather wine skin.~
+~
+17 1 0 0 0 16385 50
+100~ 100~ 0~ 0~
+0 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11010
+Cubit Zircona Bracelet~
+a cubit zircona bracelet~
+A cubit zircona bracelet from a department store.~
+~
+9 33554450 8192 0 0 4097 50
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11011
+Bright Red Lipstick~
+bright red lipstick~
+A tube of bright red lipstick.~
+~
+5 33554448 0 0 0 8193 50
+0~ 0~ 0~ 6~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11012
+Hair Piece~
+a cheap hair piece~
+An inexpensive hair piece from the shopping network.~
+~
+9 134217729 0 0 0 17 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11013
+Red bandana~
+a red bandana~
+A red bandana that looks like it spent a few seasons around John Waynes neck,...~
+~
+9 33554448 0 0 0 17 50
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11014
+Cubit Zircona Ring~
+a cubit zircona ring~
+A cubit zircona ring from a second hand shop.~
+~
+9 33554448 8192 0 0 3 50
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11015
+A Black Vinyl Belt~
+a black vinyl belt~
+A shiny black vinyl belt that looks real cheap.~
+~
+9 33554448 8192 0 0 2049 50
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11016
+Takamine Guitar~
+a takamine acoustic guitar~
+A finely crafted Takamine Acoustic guitar.~
+~
+5 33554435 0 0 0 8193 50
+0~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11017
+Sitar~
+a sitar~
+A strange looking instrument called a "Sitar".~
+~
+5 1107296514 0 0 0 8193 50
+0~ 20~ 50~ 1~
+10 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11018
+Dark Shades~
+a pair of dark shades~
+A pair of pretty cool dark shades.~
+~
+9 33554498 8192 0 0 131073 55
+30~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11019
+Accordian~
+an accordian~
+A pearl white accordian with gold flake accents.~
+~
+13 0 0 0 0 16385 10
+0~ 0~ 0~ 0~
+100 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11020
+Bannock~
+bannock on the trail~
+Fresh bannock on the trail is best with real butter.~
+~
+19 0 0 0 0 16385 0
+100~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11021
+String Winder~
+a string winder~
+A string winder, used for changing guitar strings really fast.~
+~
+5 33554435 0 0 0 8193 0
+0~ 0~ 0~ 9~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11026
+Hot Dog~
+A hot dog~
+A hot dog~
+~
+19 0 0 0 0 16385 0
+100~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11027
+Cotton Candy~
+yummy cotton candy~
+Bright pink sticky gooey cotton candy.~
+~
+19 1 0 0 0 16385 0
+100~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11031
+Tye Dye Shirt~
+a tye dye shirt~
+A tye dye shirt that looks like it was beamed right out of 1967.~
+~
+9 33554435 8192 0 0 9 55
+0~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11042
+Heart Shaped Box~
+a heart shaped box that belongs to Kurt~
+A unique red heart shaped box that looks cool.~
+~
+15 33554451 0 0 0 17409 60
+1000000~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11044
+Spinning Stars~
+stars are spinning around and around~
+There are spinning starts racing around and around really really fast.~
+~
+9 100663297 8192 0 0 32769 60
+1000~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11052
+A Sign~
+this room is provided free of charge to entertainers courtesy of A.J. Ronjonlonski.~
+A pretty normal looking sign.~
+~
+13 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#11001
+Security Station~
+~
+~
+Ooooo, sure looks like there is some heavy duty secutry here; wonder
+what's up?  As you look through the gate you see people strolling through
+the grounds.  There is a somewhat annoying hum of what sounds like a dozen
+radio stations all playing at the same time.  Hmmm, wierd.  You can't
+control yourself any longer, you just gotta check it out man.  
+~
+0 8192 0
+Rd     0
+D0
+~
+gate~
+1 0 11002
+S
+#11002
+Grounds~
+~
+~
+To the east it looks like they have campground facilities for all you
+party animals.  If a picnic area is what you're after, you're headed in the
+right direction.  Travelling northwards brings you deeper into the music
+festival.  
+~
+0 4202496 2
+Rd     0
+D0
+~
+~
+0 0 11003
+D1
+~
+~
+0 0 11008
+D2
+~
+gate~
+1 0 11001
+S
+#11003
+An Important Intersection~
+~
+~
+The grass beneath your feet appears to be quite trampled.  As you make
+your way you can smell hotdogs, burgers, popcorn, and something sweet and
+pink.  To the east you can hear something akin to a Shania Twain song; west
+of here you just here some dude talking on a P.  A.  System.  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11015
+D1
+~
+~
+0 0 11006
+D2
+~
+~
+0 0 11002
+D3
+~
+~
+0 0 11004
+S
+#11004
+Karaoke Bar~
+~
+~
+Your WORST nightmare is coming true as you cautiously make your way
+through the small yet somewhat coherant crowd.  Apparently you have found
+your way to the middle of the line-up for Karaoke.  May the force be with
+you "brave traveller"...  Um...  Cause you are next!!  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 11003
+D3
+~
+~
+0 0 11005
+S
+#11005
+The Karaoke Stage~
+~
+~
+You're on the stage...  There's a "wannabe" with a microphone, who
+doesn't want to give it up.  Upon looking around you see lots of wannabe's
+out there.  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 11004
+S
+#11006
+The Cabaret~
+~
+~
+As you enter the room your ears are assaulted by the musical stylings of
+a very lame country duo.  Jeez do they ever suck.  In fact, if you look up
+"suck" in the dictionary, there is a picture of these guys!!  
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 11007
+D3
+~
+~
+0 0 11003
+S
+#11007
+The Band Stand~
+~
+~
+Well, here you are, face to face with a very lame country duo.  They
+think they are pretty good, but your ears are bleeding man.  Fingernails on
+chalkboard would be an improvement!!  
+~
+0 8192 0
+Rd     0
+D3
+~
+~
+0 0 11006
+S
+#11008
+Path to the Campground~
+~
+~
+The camping facilities are east of here.  Up ahead you notice a huge
+hill.  Oh great, that means you have to climb it, bummer...  
+~
+0 4202496 2
+Rd     0
+D1
+~
+~
+0 0 11009
+D3
+~
+~
+0 0 11002
+S
+#11009
+The Big Hill~
+~
+~
+The camping facility is just over these hills.  We put the campers there
+to block some of the inevitable noise you KNOW you're going to make.  Deal
+with it.  
+~
+0 8192 4
+Rd     0
+D1
+~
+~
+0 0 11010
+D3
+~
+~
+0 0 11008
+S
+#11010
+Picnic Area~
+~
+~
+Well, isn't this special??  You can get away from the crowds right here
+and have yourself a cute little picnic.  Doesn't that beat all!!  And how
+serene!!!  Birds chirping, squirrels hopping about, hope the gulls don't
+crap on your potato salad hey??  
+~
+0 8192 2
+Rd     0
+D1
+~
+~
+0 0 11011
+D3
+~
+~
+0 0 11009
+S
+#11011
+Stormgate Campground~
+~
+~
+Hey, check this place out!!!  Groovy baybee!!  You see tents, tent
+trailers, and the odd "Airstream" scattered about.  Better get a move on and
+get a spot before they fill up.  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11012
+D1
+~
+~
+0 0 11014
+D3
+~
+~
+0 0 11010
+S
+#11012
+Stormgate Campground~
+~
+~
+"Holy tents Batman"!!  There is litter scattered about, swirling smoke
+from various campfires, and acoustic guitar music with a warm hint of "voice
+de jour", (voice of the day).  You can hear kids playing to the east.  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11033
+D1
+~
+~
+0 0 11013
+D2
+~
+~
+0 0 11011
+S
+#11013
+OH GAWD not "A PLAYground"~
+~
+~
+There are kids, kids, and more kids.  Bet their parents are glad they
+could get rid of them hey?  There is more playground north and east; south
+takes you to more camping area.  
+~
+0 8192 11
+Rd     0
+D0
+~
+~
+0 0 11030
+D1
+~
+~
+0 0 11032
+D2
+~
+~
+0 0 11014
+D3
+~
+~
+0 0 11012
+S
+#11014
+Stormgate Campground~
+~
+~
+This camping area is for bigger units.  All those preppy you-know-whats
+who only want to get back to nature once a year.  West takes you back
+towards the music festival.  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11013
+D3
+~
+~
+0 0 11011
+S
+#11015
+A well-worn walkway~
+~
+~
+Laa Dee Daa, you are making your way into the festival...  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11016
+D2
+~
+~
+0 0 11003
+S
+#11016
+An Intersection~
+~
+~
+Hmmm, to the east is a side street.  You hear a mish-mash of acoustic
+music.  There is a yummy smell coming from the west, there must be some food
+booths there.  Hmm stomach or brain...  Stomach or brain??  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11029
+D1
+~
+~
+0 0 11017
+D2
+~
+~
+0 0 11015
+D3
+~
+~
+0 0 11021
+S
+#11017
+Side Street~
+~
+~
+Different street performers, or buskers are performing as you continue
+eastwards.  
+~
+0 8192 3
+Rd     0
+D1
+~
+~
+0 0 11018
+D3
+~
+~
+0 0 11016
+S
+#11018
+Side Street~
+~
+~
+You hear more music playing to the east.  You find yourself wondering,
+"Are there any accordian players at this festival?"  You're not sure why you
+just thought that, but you did...  Trust me.  
+~
+0 8192 2
+Rd     0
+D1
+~
+~
+0 0 11019
+D3
+~
+~
+0 0 11017
+S
+#11019
+Side Street~
+~
+~
+You just knew you'd see an accordian player at the festival!!  Right on
+dude!!  This has got to make your day.  Listen closely, I think this
+musician is playing "Yellow Bird".  
+~
+0 8192 11
+Rd     0
+D1
+~
+~
+0 0 11020
+D3
+~
+~
+0 0 11018
+S
+#11020
+Side Street~
+~
+~
+You have reached the end of this side street.  The songwriter before you
+must be the last of the street musician's you'll encounter.  
+~
+0 8192 11
+Rd     0
+D3
+~
+~
+0 0 11019
+S
+#11021
+The Food Court~
+~
+~
+As you make your way west, you see food booths to the north and south. 
+All kinds of yummy treats are for sale!  
+~
+0 8192 2
+Rd     0
+D1
+~
+~
+0 0 11016
+D3
+~
+~
+0 0 11022
+S
+#11022
+A Walkway~
+~
+~
+You smell hot dogs and cotton candy, north and south respectively.  More
+smells are drifting in from the west.  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11026
+D1
+~
+~
+0 0 11021
+D2
+~
+~
+0 0 11027
+D3
+~
+~
+0 0 11023
+S
+#11023
+A Walkway~
+~
+~
+There is more food west of here, you just know it.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 11022
+D3
+~
+~
+0 0 11024
+S
+#11024
+A Walkway~
+~
+~
+"Bannock On The Trail" is north of here, or if you prefer, get yourself
+some nacho's to the south.  Either way, your tummy will be happy happy.  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11025
+D1
+~
+~
+0 0 11023
+D2
+~
+~
+0 0 11028
+S
+#11025
+Bannock On The Trail~
+~
+~
+Your stomach is sure growling.  They are cooking fresh bannock here,
+smells great too.  Better get yourself some, and make sure you heap on the
+butter.  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 11024
+S
+#11026
+Hot Dog Stand~
+~
+~
+This here is a "Hot Dog Stand".  You can get yourself hot dogs.  Hot dogs
+with ketchup, hot dogs with relish, hot dogs with mustard, hot dogs with
+onions, hot dogs with sauerkraut, hot dogs with pickles, or any combination
+of the previous fore-mentioned.  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 11022
+S
+#11027
+Cotton Candy~
+~
+~
+Cotton Candy of all colors imaginable hangs from the ceiling.  Mmmmm, get
+some!!  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 11022
+S
+#11028
+The Nacho Pit~
+~
+~
+You see bowls and bowls of nacho chips ready for cheese sauce.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 11024
+S
+#11029
+A Path~
+~
+~
+There are many people wandering about the grounds.  You sense that there
+is something bigger and better up ahead.  
+~
+0 8192 3
+Rd     0
+D0
+~
+~
+0 0 11034
+D2
+~
+~
+0 0 11016
+S
+#11030
+Playground~
+~
+~
+The playground is busy with children.  The little brats appear to be
+having lots of fun.  
+~
+0 8192 11
+Rd     0
+D1
+~
+~
+0 0 11031
+D2
+~
+~
+0 0 11013
+S
+#11031
+Playground~
+~
+~
+You are knee deep in the middle of a playground zone.  Tell me, what are
+you doing here??  Shouldn't you be enjoying the music over at the music
+festival??  Do you like hanging out with little kids or what??  
+~
+0 8192 11
+Rd     0
+D2
+~
+~
+0 0 11032
+D3
+~
+~
+0 0 11030
+S
+#11032
+Playground~
+~
+~
+All these noisy kids have got to be making your head hurt...  Make them
+stop...  
+~
+0 8192 11
+Rd     0
+D0
+~
+~
+0 0 11031
+D3
+~
+~
+0 0 11013
+S
+#11033
+Stormgate Campground~
+~
+~
+Tenting.  What more can I say??  
+~
+0 8192 2
+Rd     0
+D2
+~
+~
+0 0 11012
+S
+#11034
+A Path~
+~
+~
+North of here you can hear more music playing, sounds like some pretty
+decent tunes too.  
+~
+0 8192 3
+Rd     0
+D0
+~
+~
+0 0 11037
+D1
+~
+~
+512 0 11035
+D2
+~
+~
+0 0 11029
+S
+#11035
+Dark Corridor~
+~
+~
+Upon entering this dark, dank corridor you are slapped with a stench you
+have not had the pleasure of smelling before, lucky you.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 11036
+D3
+~
+~
+512 0 11034
+S
+#11036
+Dark Corridor~
+~
+~
+The smell is definitely getting stronger.  Where could this lead?  Maybe
+you shouldn't be here.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 11038
+D3
+~
+~
+0 0 11035
+S
+#11037
+A Path~
+~
+~
+You can hear some groovin' tunes coming somewhere north west from here. 
+You're thinking you better go and check it out.  
+~
+0 8192 2
+Rd     0
+D0
+~
+~
+0 0 11045
+D2
+~
+~
+0 0 11034
+S
+#11038
+Dark Corridor~
+~
+~
+The smell is making your eyes water.  You wish you had a jar of "vicks"
+so you could smear some under your nose.  Anything would smell better than
+this.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 11039
+D2
+~
+~
+0 0 11036
+S
+#11039
+Dark Evil Corridor~
+~
+~
+You sense you are amongst something unnatural here in this place.  It's
+cold, and dirty.  Surely no one has passed through this hall in years.  You
+should smack yourself on the head for going this far, but you also realize
+that you are of a curious nature, and you just got to do what you got to do.
+So just do it.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 11040
+D3
+~
+~
+0 0 11038
+S
+#11040
+A Passage To HELL??~
+~
+~
+You can't believe you eyes.  How can this be??  You blink, then blink
+again until you realize you look strangely similar to that lady from the
+show "Bewitched" what was her name??  
+~
+0 4202497 0
+Rd     0
+D0
+~
+~
+0 0 11039
+D1
+~
+~
+0 0 11041
+S
+#11041
+A Strange Social Gathering~
+~
+~
+You really can't believe you eyes as you look around the room.  How can
+this be??  The last time you checked, all these people were dead.  Instantly
+the smell makes sense.  
+~
+0 4202497 0
+Rd     0
+D1
+~
+~
+0 0 11042
+D2
+~
+~
+0 0 11044
+D3
+~
+~
+0 0 11040
+S
+#11042
+A Strange Social Gathering~
+~
+~
+Making your way through this social gathering just gets more creepy with
+each step.  
+~
+0 4202497 0
+Rd     0
+D2
+~
+~
+0 0 11043
+D3
+~
+~
+0 0 11041
+S
+#11043
+A Social Gathering~
+~
+~
+This place sure is creepy.  Makes the hair on the back of your neck stand
+up.  
+~
+0 4202497 0
+Rd     0
+D0
+~
+~
+0 0 11042
+D3
+~
+~
+0 0 11044
+S
+#11044
+A Social Gathering~
+~
+~
+There are some pretty strange guests at this gathering.  Check out all
+the rooms around here cause it just keeps getting weirder.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 11041
+D1
+~
+~
+0 0 11043
+S
+#11045
+A Well Worn Path~
+~
+~
+North of here you can hear lots of noise.  Westwards is guarded by some
+bretty heavy duty security.  
+~
+0 8192 2
+Rd     0
+D2
+~
+~
+0 0 11037
+D3
+~
+~
+0 0 11046
+S
+#11046
+Security Station~
+~
+~
+You can see that this area is guarded quite heavily.  Perhaps this is
+where they keep all the cash from the ticket sales??  Upon closer inspection
+you see that it's really quite a regular looking hallway, maybe their are
+bathrooms down this way.  
+~
+0 8196 0
+Rd     0
+D1
+~
+~
+0 0 11045
+D3
+~
+~
+0 0 11047
+S
+#11047
+Brightly Lit Corridor~
+~
+~
+There are rooms north and south.  Look at the cute little gold star on
+each of the doors.  My goodness, isn't that special?  
+~
+0 8196 0
+Rd     0
+D0
+~
+~
+0 0 11048
+D1
+~
+~
+0 0 11046
+D2
+~
+~
+0 0 11049
+D3
+~
+~
+0 0 11050
+S
+#11048
+Change Room~
+~
+~
+There are clothes scattered about.  The room has a stank odour, kind of
+like stale sweat.  
+~
+0 8196 0
+Rd     0
+D2
+~
+~
+0 0 11047
+D3
+~
+~
+0 0 11049
+S
+#11049
+Change Room~
+~
+~
+Looks like this room has had a million people throwing their stuff about.
+There is a huge make-up mirror with lights all around it.  
+~
+0 8196 0
+Rd     0
+D0
+~
+~
+0 0 11047
+D1
+~
+~
+0 0 11048
+S
+#11050
+Brightly Lit Corridor~
+~
+~
+Nothing special about this corridor.  Has a floor, has lights.  There are
+more rooms west of here.  
+~
+0 4202500 0
+Rd     0
+D1
+~
+~
+0 0 11047
+D3
+~
+~
+0 0 11051
+S
+#11051
+Corridor~
+~
+~
+There is a room to the north, and a room to the south.  No bathrooms
+though; and you really did have to pee.  
+~
+0 8196 0
+Rd     0
+D0
+~
+~
+0 0 11052
+D1
+~
+~
+0 0 11050
+D2
+~
+~
+0 0 11053
+S
+#11052
+Changeroom~
+~
+~
+Yes siree, looks like another run-of-the-mill change room.  Nothing
+special here.  
+~
+0 8196 0
+Rd     0
+D2
+~
+~
+0 0 11051
+S
+#11053
+Changeroom~
+~
+~
+There is a rolled up sock in the corner of this room, wonder what it's
+for.  The smell in this room is a little sweet, a little earthy, with a
+"hint" of skunk.  Hmmmm.  
+~
+0 8196 0
+Rd     0
+D0
+~
+~
+0 0 11051
+S
+#11054
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#11055
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#11056
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#11057
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#11058
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#11059
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#11060
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 11001 1 11001
+M 0 11008 1 11003
+O 0 11002 0 11003
+M 0 11005 1 11004
+M 0 11005 1 11004
+M 0 11005 1 11004
+M 0 11005 1 11005
+E 0 11005 0 0
+M 0 11033 1 11006
+M 0 11006 1 11007
+M 0 11007 1 11007
+E 0 11021 0 20
+E 0 11015 0 17
+E 0 11014 0 2
+E 0 11014 0 1
+E 0 11012 0 6
+E 0 11008 0 5
+E 0 11010 0 19
+E 0 11010 0 18
+E 0 11011 0 20
+M 0 11008 1 11008
+M 0 11009 1 11009
+M 0 11001 1 11011
+M 0 11013 1 11013
+E 0 11013 0 6
+M 0 11030 1 11014
+M 0 11008 1 11016
+E 0 11004 0 12
+E 0 11031 0 5
+E 0 11018 0 7
+E 0 11044 0 9
+E 0 11013 0 6
+M 0 11017 1 11017
+E 0 11017 0 20
+M 0 11018 1 11018
+E 0 11018 0 7
+E 0 11001 0 20
+M 0 11019 1 11019
+E 0 11019 0 22
+M 0 11020 1 11020
+E 0 11016 0 20
+E 0 11031 0 5
+M 0 11013 1 11021
+M 0 11001 1 11023
+M 0 11024 1 11024
+M 0 11026 1 11025
+E 0 11020 0 22
+M 0 11026 1 11026
+E 0 11026 0 22
+M 0 11026 1 11027
+E 0 11027 0 22
+M 0 11026 1 11028
+E 0 11007 0 22
+M 0 11009 1 11029
+M 0 11030 1 11030
+M 0 11030 1 11030
+M 0 11031 1 11031
+E 0 11031 0 5
+M 0 11030 1 11032
+M 0 11033 1 11033
+O 0 11003 0 11033
+E 0 11009 0 22
+P 0 11004 0 11003
+M 0 11038 1 11040
+M 0 11039 1 11041
+M 0 11041 1 11042
+E 0 11042 0 16
+M 0 11040 1 11043
+M 0 11042 1 11044
+E 0 11044 0 9
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

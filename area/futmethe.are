@@ -1,0 +1,3190 @@
+#AREADATA
+Name        Future Methidoral Enterprises~
+Builders    Panacea~
+VNUMs       7800 7949
+Security    100
+Recall      26002
+Flags       16
+Version     107
+Creator     Panacea~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#7801
+very cute receptionist woman lady~
+A Cute Receptionist~
+A very cute receptionist sits behind her desk here.
+~
+~
+3 64 88375316 0 2 0 S
+92 1 185 185 0 25200d0+0 0d0+0
+920 1 0
+0 0 2
+0 0 0
+#7810
+young woman~
+A Young Woman~
+A young woman quickly stuffs her hands into her pockets upon your arrival.
+~
+~
+69 32960 88080404 34816 2 0 S
+93 1 200 200 0 25550d0+0 0d0+0
+930 8 0
+0 0 2
+0 0 0
+#7816
+young man~
+A Young Man~
+A young man quickly brushes off the area just below his nose, upon your arrival.
+~
+~
+69 33587392 88080404 32768 2 0 S
+93 1 200 200 0 25550d0+0 0d0+0
+930 8 0
+0 0 1
+0 0 0
+#7818
+guard~
+A Guard~
+A guard stands here, protecting the occupants of the building.
+~
+~
+3 369098816 73433108 16384 2 750 S
+97 1 245 245 0 22500d0+0 0d0+0
+970 8 0
+0 0 1
+0 0 0
+#7829
+male office worker~
+A Male Office Worker~
+A male office worker sits here dozing behind his cluttered desk.
+~
+~
+3 67174464 71335956 8448 2 0 S
+96 1 210 210 0 22800d0+0 0d0+0
+960 8 0
+0 0 1
+0 0 0
+#7831
+female office worker~
+A Female Office Worker~
+A female office worker sits here busily trying to type, file, and talk on the phone.
+~
+~
+3 268501184 71303220 134234112 2 0 S
+95 1 190 190 0 22500d0+0 0d0+0
+950 8 0
+0 0 2
+0 0 0
+#7835
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#7839
+disgruntled manager~
+A Disgruntled Manager~
+A disgruntled manager stands here, pondering his job.
+~
+~
+3 67649728 71827508 18432 2 0 S
+99 1 300 300 0 15800d0+0 0d0+0
+990 8 0
+0 0 1
+0 0 0
+#7846
+janitor~
+A Janitor~
+A very knowledgable janitor sweeps the floor in silence.
+~
+~
+69 524352 88178740 134367232 2 0 S
+97 1 194 194 0 11550d0+0 0d0+0
+970 8 0
+0 0 1
+0 0 0
+#7867
+evil corporate owner~
+An Evil Corporate Owner~
+An evil corporate owner counts his cash.
+~
+~
+3 524480 88637588 16384 2 -400 S
+100 1 350 350 0 24000d0+0 0d0+0
+1000 8 0
+0 0 1
+0 0 0
+#7880
+guard~
+A Guard~
+A guard stands here, protecting the occupants of the building.
+~
+~
+65 369098816 73433108 16384 2 750 S
+97 1 245 245 0 22500d0+0 0d0+0
+970 8 0
+0 0 1
+0 0 0
+#7882
+violent thug~
+A Violent Thug~
+A thug stands here, guarding the area beyond....
+~
+~
+3 167772352 88637460 49152 3 -1000 S
+110 1 220 220 0 20000d0+0 0d0+0
+0 8 0
+0 0 1
+0 0 0
+#7886
+aggressive looking thug~
+An Aggressive Looking Thug~
+A short, stocky thug lounges here looking for someone to pick on.
+~
+~
+97 269041856 90701844 8448 2 -750 S
+99 1 230 230 0 11850d0+0 0d0+0
+0 8 0
+0 0 1
+0 0 0
+#7905
+nerdy looking chemist~
+A Nerdy Looking Chemist~
+A tall, nerdy looking chemist is here mixing chemicals.
+~
+~
+3 81984 71335956 24576 2 -400 S
+98 1 355 355 0 27300d0+0 0d0+0
+980 8 0
+0 0 1
+0 0 0
+#7938
+sexy bodyguard guard~
+A Sexy Bodyguard~
+A sexy looking bodyguard stands here, protecting the entrance to her boss's office.
+~
+~
+3 606272 71303188 8192 2 -400 S
+100 1 425 425 0 32000d0+0 0d0+0
+1000 8 0
+0 0 2
+0 0 0
+#7939
+drug lord~
+A Drug Lord~
+A drug lord stands here, wondering why you have disturbed her.
+~
+~
+35 302514240 71335956 10240 2 -1000 S
+102 1 365 365 0 22500d0+0 0d0+0
+1020 8 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#7800
+ruby studded earring~
+a Ruby Studded Earring~
+The light glints off of a red earring.~
+~
+9 80 8192 0 0 524289 40
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 4
+A
+19 4
+A
+1 1
+A
+3 1
+#7801
+receptionist desk~
+a Reception Desk~
+Piles of papers and files, lay neatly arranged on a receptionist's desk.~
+~
+12 0 262144 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7804
+tile counter sink~
+bathroom sink~
+There is a long sparkling tile counter with 3 sinks here.~
+~
+25 0 262144 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7810
+thugs earring~
+a Thug's Earring~
+A thug's earring catches your eye, as it twinkles on the ground.~
+~
+9 56688641 2052 0 0 524289 90
+100 100
+0~ 0~ 0~ 0~
+2 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 9
+A
+19 9
+A
+12 90
+A
+24 -18
+A
+3 2
+#7811
+pencil shaft metal~
+an Easily Concealable, Pencil-Length, Shaft of Metal~
+A short, shaft of metal lies partly concealed in the shadows.~
+~
+5 138478112 0 0 135266304 8193 90
+100 100
+0~ 0~ 0~ 11~
+4 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 25
+A
+13 90
+A
+2 3
+#7814
+large white rock~
+a White Rock~
+A large white rock sits here.~
+~
+8 16464 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+5 20000 0
+0 0
+reserved~
+0 0
+0 0 0
+#7816
+clean toilet~
+a Toilet~
+A very clean toilet is here, waiting to be used.~
+~
+12 0 262144 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7818
+nite stick~
+a Nite Stick~
+A guard's nite stick lies here.~
+~
+5 553649218 12288 0 167772160 8193 90
+100 100
+0~ 0~ 0~ 7~
+4 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 45
+A
+13 80
+A
+1 2
+A
+2 -2
+A
+26 70
+#7819
+kevlar vest~
+a Kevlar Vest~
+A kevlar vest waits here in the corner, ready to protect you.~
+~
+9 553649218 12288 0 167772160 9 90
+100 100
+0~ 0~ 0~ 0~
+6 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 40
+A
+13 90
+A
+1 1
+#7825
+office desk cubicle work area~
+an Office Cubicle~
+In front of you is a large, lavish desk, complete with a top-of-the-line computer, tall file cabinets, and a comfy leather chair.~
+~
+12 0 262144 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7829
+basement key~
+a Key to the Basement~
+A key to the basement sits here, twinkling in the dim light.~
+~
+18 67108864 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7830
+closet key~
+a Key to Janitor's Closet~
+A key to a janitors closet is here.~
+~
+18 134217728 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7831
+restricted key~
+a Key to the Restricted Area~
+A key that says "Restricted Access" on it, is here.~
+~
+18 33554432 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7832
+safely guarded key~
+a Safely Guarded Key~
+A Safely Guarded Key is here.~
+~
+18 8352 131072 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7839
+management dagger~
+management dagger~
+Management's dagger of sin.~
+~
+5 8192 0 0 0 8193 102
+100 100
+0~ 0~ 0~ 11~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 8
+A
+1 8
+A
+19 20
+A
+18 20
+#7846
+deadly broom~
+a Deadly Broom~
+A deadly looking broom lies here, waiting to be used on some ungodly floor.~
+~
+9 67109072 0 753715 0 16385 82
+100 100
+0~ 0~ 0~ 0~
+3 820 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 8
+A
+19 8
+A
+12 80
+A
+24 -15
+A
+3 3
+A
+1 -2
+#7874
+leafy plant~
+a Leafy Plant~
+A tall, leafy potted plant sits against the back wall of the room.~
+~
+15 0 262144 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7893
+long counter~
+a Long Counter~
+A long counter is here, cluttered with vials of liquids and solids of every kind.~
+~
+12 0 262144 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7939
+shadow dagger~
+a Shadow Dagger~
+A dagger lies here, concealed by the shadows....~
+~
+5 47974438 8977 0 210763776 8193 90
+100 100
+0~ 0~ 0~ 11~
+1 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 18
+A
+19 40
+A
+24 -8
+A
+13 90
+A
+1 1
+A
+115 -1
+#7940
+machine pistol~
+a Machine Pistol~
+A synthetic polymer hyper-velocity machine pistol sits here, waiting to be put to use.~
+~
+5 33128514 48678 0 0 8193 90
+100 100
+0~ 0~ 0~ 6~
+8 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -5
+A
+19 70
+A
+26 110
+A
+13 200
+#0
+
+
+
+#ROOMDATA
+#7800
+Entrance to Future Methidoral Enterprises~
+~
+~
+Here you stand in front of an amazing dome-shaped structure.  You gaze
+upward, and see a sleek building with tiled walls and mirrored windows. 
+Whoever owns this building, spared no expense with the architecture.  As you
+prepare to enter the impressive structure through the gold-trimmed revolving
+door, you can only guess how much more dazzling the inside must be.  
+~
+0 0 0
+Rd     0
+D1
+~
+entrance~
+3 0 7801
+S
+#7801
+Lobby of Future Methidoral Enterprises~
+~
+~
+As you gaze around the vast lobby, you are stunned by the marble floors,
+the elaborate gold-trimmed crown molding, and the huge solid oak desk.  Most
+of all, you are stunned by the gorgeous brunette sitting behind the oak desk
+in front of you.  To the north, you can see a sign indicating the entrance
+to the women's bathroom.  To the south, a sign for the men's.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7802
+D1
+~
+~
+0 0 7818
+D2
+~
+~
+0 0 7811
+D3
+~
+~
+3 0 7800
+S
+#7802
+Entrance to Women's Bathroom~
+~
+~
+Before you lies the women's bathroom.  You hold your breath, as you
+prepare to enter, expecting nothing but the most lavish of lavoratories.  
+~
+0 0 0
+Rd     0
+D0
+~
+entrance women~
+3 0 7803
+D2
+~
+~
+0 0 7801
+S
+#7803
+Women's Bathroom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+stall door~
+3 0 7808
+D1
+~
+~
+0 0 7804
+D2
+~
+entrance women~
+3 0 7802
+S
+#7804
+Women's Bathroom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+stall door~
+3 0 7809
+D1
+~
+~
+0 0 7805
+D3
+~
+~
+0 0 7803
+S
+#7805
+Women's Bathroom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+stall door~
+3 0 7810
+D3
+~
+~
+0 0 7804
+S
+#7808
+Women's Bathroom Stall~
+~
+~
+Very clean, sparkling and immaculate, the stall almost glows white from
+cleanliness.  It would be a pleasure to sit on the thrown-like toilet and
+unroll toilet paper from the gold encrusted mold, which holds the toilet
+paper to the mother-of-pearl tile wall.  
+~
+0 0 0
+Rd     0
+D2
+~
+stall door~
+3 0 7803
+S
+#7809
+Women's Bathroom Stall~
+~
+~
+Very clean, sparkling and immaculate, the stall almost glows white from
+cleanliness.  It would be a pleasure to sit on the thrown-like toilet and
+unroll toilet paper from the gold encrusted mold, which holds the toilet
+paper to the mother-of-pearl tile wall.  
+~
+0 0 0
+Rd     0
+D2
+~
+stall door~
+3 0 7804
+S
+#7810
+Women's Bathroom Stall~
+~
+~
+Very clean, sparkling and immaculate, the stall almost glows white from
+cleanliness.  It would be a pleasure to sit on the thrown-like toilet and
+unroll toilet paper from the gold encrusted mold, which holds the toilet
+paper to the mother-of-pearl tile wall.  
+~
+0 0 0
+Rd     0
+D2
+~
+stall door~
+3 0 7805
+S
+#7811
+Entrance to Men's Bathroom~
+~
+~
+Before you lies the men's bathroom.  You hold your breath, as you prepare
+to enter, expecting nothing but the most lavish of lavoratories.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7801
+D2
+~
+entrance men~
+3 0 7812
+S
+#7812
+Men's Bathroom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+entrance men~
+3 0 7811
+D1
+~
+~
+0 0 7813
+D2
+~
+stall door~
+3 0 7815
+S
+#7813
+Men's Bathroom~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7814
+D2
+~
+stall door~
+3 0 7816
+D3
+~
+~
+0 0 7812
+S
+#7814
+Men's Bathroom~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+stall door~
+3 0 7817
+D3
+~
+~
+0 0 7813
+S
+#7815
+Men's Bathroom Stall~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+stall door~
+3 0 7812
+S
+#7816
+Men's Bathroom Stall~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+stall door~
+3 0 7813
+S
+#7817
+Men's Bathroom Stall~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+stall door~
+3 0 7814
+S
+#7818
+Lobby of Future Methidoral Enterprises/Entrance to Elevator~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+elevator door~
+3 0 7819
+D3
+~
+~
+0 0 7801
+S
+#7819
+Elevator: Up to Second Floor/Down to Basement~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+elevator door~
+3 0 7818
+D4
+~
+~
+0 0 7820
+D5
+~
+~
+119 7829 7876
+S
+#7820
+Elevator: Up to Third Floor/Down to Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+elevator door~
+3 0 7821
+D4
+~
+~
+0 0 7848
+D5
+~
+~
+0 0 7819
+S
+#7821
+Entrance to Elevator/First Floor Offices~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7822
+D1
+~
+office~
+3 0 7824
+D2
+~
+~
+0 0 7823
+D3
+~
+elevator door~
+3 0 7820
+S
+#7822
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7840
+D2
+~
+~
+0 0 7821
+S
+#7823
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7821
+D2
+~
+~
+0 0 7844
+S
+#7824
+Office Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7825
+D1
+~
+~
+0 0 7827
+D2
+~
+~
+0 0 7826
+D3
+~
+~
+3 0 7821
+S
+#7825
+Office Cubicle~
+~
+~
+~
+0 536870912 0
+Rd     0
+D2
+~
+~
+0 0 7824
+S
+#7826
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7824
+S
+#7827
+Office Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7828
+D1
+~
+~
+0 0 7830
+D2
+~
+~
+0 0 7829
+D3
+~
+~
+0 0 7824
+S
+#7828
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7827
+S
+#7829
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7827
+S
+#7830
+Office Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7831
+D1
+~
+~
+0 0 7833
+D2
+~
+~
+0 0 7832
+D3
+~
+~
+0 0 7827
+S
+#7831
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7830
+S
+#7832
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7830
+S
+#7833
+Office Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7834
+D1
+~
+hallway~
+3 0 7836
+D2
+~
+~
+0 0 7835
+D3
+~
+~
+0 0 7830
+S
+#7834
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7833
+S
+#7835
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7833
+S
+#7836
+Entrance to Manager's Office~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7837
+D1
+~
+manager~
+3 0 7839
+D2
+~
+~
+0 0 7838
+D3
+~
+office~
+3 0 7833
+S
+#7837
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7843
+D2
+~
+~
+0 0 7836
+S
+#7838
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7836
+D2
+~
+~
+0 0 7847
+S
+#7839
+Manager's Office~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+hallway~
+0 0 0
+D3
+~
+hallways~
+3 0 7836
+S
+#7840
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7841
+D3
+~
+~
+0 0 7822
+S
+#7841
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7842
+D3
+~
+~
+0 0 7840
+S
+#7842
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7843
+D3
+~
+~
+0 0 7841
+S
+#7843
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7837
+D3
+~
+~
+0 0 7842
+S
+#7844
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7845
+D3
+~
+~
+0 0 7823
+S
+#7845
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7846
+D3
+~
+~
+0 0 7844
+S
+#7846
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7847
+D3
+~
+~
+0 0 7845
+S
+#7847
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7838
+D3
+~
+~
+0 0 7846
+S
+#7848
+Elevator: Down to Second Floor~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+elevator door~
+3 0 7849
+D5
+~
+~
+0 0 7820
+S
+#7849
+Entrance to Elevator/Second Floor Offices~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7850
+D1
+~
+offices~
+3 0 7852
+D2
+~
+~
+0 0 7851
+D3
+~
+elevator door~
+3 0 7848
+S
+#7850
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7865
+D2
+~
+~
+0 0 7849
+S
+#7851
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7849
+D2
+~
+~
+0 0 7871
+S
+#7852
+Office Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7853
+D1
+~
+~
+0 0 7855
+D2
+~
+~
+0 0 7854
+D3
+~
+hallway~
+3 0 7849
+S
+#7853
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7852
+S
+#7854
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7852
+S
+#7855
+Office Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7856
+D1
+~
+~
+0 0 7858
+D2
+~
+~
+0 0 7857
+D3
+~
+~
+0 0 7852
+S
+#7856
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7855
+S
+#7857
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7855
+S
+#7858
+Office Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7859
+D1
+~
+~
+0 0 7861
+D2
+~
+~
+0 0 7860
+D3
+~
+~
+0 0 7855
+S
+#7859
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7858
+S
+#7860
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7858
+S
+#7861
+Office Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7862
+D1
+~
+hallway~
+0 0 7864
+D2
+~
+~
+0 0 7863
+D3
+~
+~
+0 0 7858
+S
+#7862
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7861
+S
+#7863
+Office Cubicle~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7861
+S
+#7864
+Entrance to Owner's Office~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+owner~
+3 0 7867
+D3
+~
+office~
+0 0 7861
+S
+#7865
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7866
+D3
+~
+~
+0 0 7850
+S
+#7866
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7868
+D3
+~
+~
+0 0 7865
+S
+#7867
+Owner's Office~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+hallway~
+3 0 7864
+S
+#7868
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7869
+D3
+~
+~
+0 0 7866
+S
+#7869
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+closet~
+119 7830 7870
+D3
+~
+~
+0 0 7868
+S
+#7870
+Janitor's Closet~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+hallway~
+119 0 7869
+S
+#7871
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7872
+D3
+~
+~
+0 0 7851
+S
+#7872
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7873
+D3
+~
+~
+0 0 7871
+S
+#7873
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7874
+D3
+~
+~
+0 0 7872
+S
+#7874
+Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+closet~
+579 0 7875
+D3
+~
+~
+0 0 7873
+S
+#7875
+SECRET Closet~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+hallway~
+579 0 7874
+S
+#7876
+Taking Elevator Down....~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+119 0 7819
+D5
+~
+~
+0 0 7877
+S
+#7877
+Taking Elevator Down....~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 7876
+D5
+~
+~
+0 0 7940
+S
+#7878
+Elevator: Basement Level, RESTRICTED ACCESS~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+restricted door~
+3 0 7879
+D4
+~
+~
+0 0 7940
+S
+#7879
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7880
+D2
+~
+restricted elevator door~
+3 0 7878
+S
+#7880
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7881
+D3
+~
+~
+0 0 7879
+S
+#7881
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+119 7831 7882
+D3
+~
+~
+0 0 7880
+S
+#7882
+Entrance to RESTRICTED AREA~
+~
+~
+~
+0 138543114 0
+Rd     0
+D1
+~
+lab door~
+119 7832 7883
+D3
+~
+door~
+119 7831 7881
+S
+#7883
+Secret Meth Lab~
+~
+~
+~
+0 134348810 0
+Rd     0
+D0
+~
+~
+0 0 7884
+D1
+~
+~
+0 0 7886
+D2
+~
+~
+0 0 7885
+D3
+~
+~
+119 0 7882
+S
+#7884
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7887
+D1
+~
+~
+0 0 7888
+D2
+~
+~
+0 0 7883
+S
+#7885
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7883
+D2
+~
+~
+0 0 7907
+S
+#7886
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7888
+D1
+~
+~
+0 0 7892
+D3
+~
+~
+0 0 7883
+S
+#7887
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7889
+D1
+~
+~
+0 0 7890
+D2
+~
+~
+0 0 7884
+S
+#7888
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7890
+D1
+~
+~
+0 0 7895
+D2
+~
+~
+0 0 7886
+D3
+~
+~
+0 0 7884
+S
+#7889
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7902
+D2
+~
+~
+0 0 7887
+S
+#7890
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 0
+D1
+~
+~
+0 0 7896
+D2
+~
+~
+0 0 7890
+D3
+~
+~
+0 0 7890
+S
+#7891
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#7892
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7895
+D1
+~
+~
+0 0 7894
+D2
+~
+~
+0 0 7893
+D3
+~
+~
+0 0 7886
+S
+#7893
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7892
+D1
+~
+~
+0 0 7905
+D2
+~
+~
+0 0 7904
+S
+#7894
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7897
+D1
+~
+~
+0 0 7910
+D2
+~
+~
+0 0 7905
+D3
+~
+~
+0 0 7892
+S
+#7895
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7896
+D1
+~
+~
+0 0 7897
+D2
+~
+~
+0 0 7892
+D3
+~
+~
+0 0 7888
+S
+#7896
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7898
+D1
+~
+~
+0 0 7899
+D2
+~
+~
+0 0 7895
+D3
+~
+~
+0 0 7890
+S
+#7897
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7899
+D1
+~
+~
+0 0 7911
+D2
+~
+~
+0 0 7894
+D3
+~
+~
+0 0 7895
+S
+#7898
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7900
+D1
+~
+~
+0 0 7901
+D2
+~
+~
+0 0 7896
+S
+#7899
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7901
+D1
+~
+~
+0 0 7912
+D2
+~
+~
+0 0 7897
+D3
+~
+~
+0 0 7896
+S
+#7900
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7903
+D2
+~
+~
+0 0 7898
+D3
+~
+~
+0 0 7902
+S
+#7901
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7903
+D1
+~
+~
+0 0 7913
+D2
+~
+~
+0 0 7899
+D3
+~
+~
+0 0 7898
+S
+#7902
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7900
+D3
+~
+~
+0 0 7889
+S
+#7903
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7914
+D2
+~
+~
+0 0 7901
+D3
+~
+~
+0 0 7900
+S
+#7904
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7893
+D1
+~
+~
+0 0 7906
+D3
+~
+~
+0 0 7907
+S
+#7905
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7894
+D1
+~
+~
+0 0 7909
+D2
+~
+~
+0 0 7906
+D3
+~
+~
+0 0 7893
+S
+#7906
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7905
+D1
+~
+~
+0 0 7908
+D3
+~
+~
+0 0 7904
+S
+#7907
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7904
+D3
+~
+~
+0 0 7885
+S
+#7908
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7909
+D1
+~
+~
+0 0 7915
+D3
+~
+~
+0 0 7906
+S
+#7909
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7910
+D1
+~
+~
+0 0 7916
+D2
+~
+~
+0 0 7908
+D3
+~
+~
+0 0 7905
+S
+#7910
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7911
+D1
+~
+~
+0 0 7917
+D2
+~
+~
+0 0 7909
+D3
+~
+~
+0 0 7894
+S
+#7911
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7912
+D1
+~
+~
+0 0 7918
+D2
+~
+~
+0 0 7910
+D3
+~
+~
+0 0 7897
+S
+#7912
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7913
+D1
+~
+~
+0 0 7919
+D2
+~
+~
+0 0 7911
+D3
+~
+~
+0 0 7899
+S
+#7913
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7914
+D1
+~
+~
+0 0 7920
+D2
+~
+~
+0 0 7912
+D3
+~
+~
+0 0 7901
+S
+#7914
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7921
+D2
+~
+~
+0 0 7913
+D3
+~
+~
+0 0 7903
+S
+#7915
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7916
+D1
+~
+~
+0 0 7922
+D3
+~
+~
+0 0 7908
+S
+#7916
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7917
+D1
+~
+~
+0 0 7923
+D2
+~
+~
+0 0 7915
+D3
+~
+~
+0 0 7909
+S
+#7917
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7918
+D1
+~
+~
+0 0 7924
+D2
+~
+~
+0 0 7916
+D3
+~
+~
+0 0 7910
+S
+#7918
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7919
+D1
+~
+~
+0 0 7925
+D2
+~
+~
+0 0 7917
+D3
+~
+~
+0 0 7911
+S
+#7919
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7920
+D1
+~
+~
+0 0 7926
+D2
+~
+~
+0 0 7918
+D3
+~
+~
+0 0 7912
+S
+#7920
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7921
+D1
+~
+~
+0 0 7927
+D2
+~
+~
+0 0 7919
+D3
+~
+~
+0 0 7913
+S
+#7921
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7928
+D2
+~
+~
+0 0 7920
+D3
+~
+~
+0 0 7914
+S
+#7922
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7923
+D1
+~
+~
+0 0 7929
+D3
+~
+~
+0 0 7915
+S
+#7923
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7924
+D2
+~
+~
+0 0 7922
+D3
+~
+~
+0 0 7916
+S
+#7924
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7925
+D1
+~
+~
+0 0 7930
+D2
+~
+~
+0 0 7923
+D3
+~
+~
+0 0 7917
+S
+#7925
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7926
+D1
+~
+~
+0 0 7931
+D2
+~
+~
+0 0 7924
+D3
+~
+~
+0 0 7918
+S
+#7926
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7927
+D1
+~
+~
+0 0 7932
+D2
+~
+~
+0 0 7925
+D3
+~
+~
+0 0 7919
+S
+#7927
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7928
+D2
+~
+~
+0 0 7926
+D3
+~
+~
+0 0 7920
+S
+#7928
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7933
+D2
+~
+~
+0 0 7927
+D3
+~
+~
+0 0 7921
+S
+#7929
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7934
+D3
+~
+~
+0 0 7922
+S
+#7930
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7930
+D1
+~
+~
+0 0 7930
+D3
+~
+~
+0 0 7924
+S
+#7931
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7932
+D1
+~
+~
+0 0 7936
+D2
+~
+~
+0 0 7930
+D3
+~
+~
+0 0 7925
+S
+#7932
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7937
+D2
+~
+~
+0 0 7931
+D3
+~
+~
+0 0 7926
+S
+#7933
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 7938
+D3
+~
+~
+0 0 7928
+S
+#7934
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7935
+D2
+~
+~
+0 0 7929
+S
+#7935
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7936
+D2
+~
+~
+0 0 7934
+D3
+~
+~
+0 0 7930
+S
+#7936
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7937
+D2
+~
+~
+0 0 7935
+D3
+~
+~
+0 0 7931
+S
+#7937
+~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7938
+D2
+~
+~
+0 0 7936
+D3
+~
+~
+0 0 7932
+S
+#7938
+Entrance to Drug Lord's Office~
+~
+~
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 7933
+D1
+~
+office door~
+3 0 7939
+D2
+~
+~
+0 0 7937
+S
+#7939
+Drug Lord's Office~
+~
+~
+~
+0 134381578 0
+Rd     0
+D3
+~
+office door~
+3 0 7938
+S
+#7940
+Taking Elevator Down....~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 7877
+D5
+~
+~
+0 0 7878
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 7801 0 7801
+M 0 7801 1 7801
+E 0 7811 0 20
+E 0 7800 0 24
+O 0 7804 0 7804
+O 0 7816 0 7808
+O 0 7816 0 7809
+M 0 7810 1 7810
+E 0 7810 0 24
+E 0 7811 0 20
+O 0 7816 0 7810
+O 0 7804 0 7813
+O 0 7816 0 7815
+M 0 7816 1 7816
+E 0 7811 0 20
+O 0 7816 0 7816
+G 0 7814 0
+O 0 7816 0 7817
+M 0 7818 1 7818
+E 0 7818 0 20
+E 0 7819 0 5
+O 0 7825 0 7825
+O 0 7825 0 7826
+O 0 7825 0 7828
+M 0 7829 2 7829
+O 0 7825 0 7829
+O 0 7825 0 7831
+M 0 7831 4 7831
+O 0 7825 0 7832
+O 0 7825 0 7834
+O 0 7825 0 7835
+M 0 7831 4 7835
+M 0 7839 1 7839
+E 0 7839 0 20
+M 0 7846 1 7846
+E 0 7846 0 22
+G 0 7830 0
+O 0 7825 0 7853
+O 0 7825 0 7854
+O 0 7825 0 7856
+M 0 7831 4 7856
+O 0 7825 0 7857
+O 0 7825 0 7859
+O 0 7825 0 7860
+M 0 7829 2 7860
+O 0 7825 0 7862
+M 0 7831 4 7862
+O 0 7825 0 7863
+M 0 7867 1 7867
+E 0 7839 0 20
+E 0 7839 0 21
+O 0 7874 0 7874
+M 0 7880 1 7880
+E 0 7818 0 20
+E 0 7819 0 5
+M 0 7882 1 7882
+G 0 7832 0
+M 0 7886 1 7886
+O 0 7893 0 7893
+O 0 7893 0 7898
+O 0 7893 0 7901
+M 0 7905 4 7901
+O 0 7893 0 7905
+M 0 7905 4 7905
+O 0 7893 0 7909
+O 0 7893 0 7913
+O 0 7893 0 7916
+M 0 7905 4 7916
+O 0 7893 0 7920
+O 0 7893 0 7923
+O 0 7893 0 7927
+M 0 7905 4 7927
+M 0 7938 1 7938
+M 0 7939 1 7939
+E 0 7939 0 20
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

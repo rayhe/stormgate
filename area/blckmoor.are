@@ -1,0 +1,1842 @@
+#AREADATA
+Name        { 100+ } Blackmoore's Hollow~
+Builders    Zhyril~
+VNUMs       30900 30999
+Security    1
+Recall      1
+Flags       256
+Version     107
+Creator     Zhyril~
+Llevel      0
+Ulevel      0
+Sounds      A low, mourning sound echoes through the mist.~
+Music       u3_wandr.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#30901
+a mist wraith~
+a mist wraith~
+A chilling figure coalesces out of the mist and attacks!
+~
+Grey and insubstantial, you are barely able to tell it apart from the mist.
+~
+33 142606400 327680 0 0 0 S
+100 1 180 200 0 23000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>fight_prog 40~
+slit
+~
+|
+#30903
+wanderer~
+a robed wanderer~
+A robed wanderer rests here.
+~
+A strange wanderer whose face is totally obscured by a dusty grey cloak. 
+He rests here, silently.  
+~
+67 0 0 0 1 0 S
+100 1 200 200 0 40000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say You are brave to enter the Hollow, stranger.
+look $n
+if level($n)<90
+say You will not survive.  Turn back, or meet your death.
+endif
+~
+|
+#30926
+villager~
+a villager~
+A villager is here.
+~
+Dressed in simple yet sturdy clothing, his walk betrays a stout courage. 
+Those who remain in the Hollow are not easily frightened.  
+~
+65 0 0 0 2 0 S
+50 1 100 100 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>speech_prog ward mist hollow creatures wraith~
+say Aye, the wards were set up by the great Hierophant of Methidoral many years ago.
+say Supposedly they keep out all creatures of darkness, even the Huntsman himself.
+~
+>speech_prog huntsman~
+say Aye, the huntsman wanders the moors, at the head of a pack of spectral creatures.
+say To travel the moors is to risk death, stranger -- be careful!
+~
+|
+#30929
+burly tavernkeep~
+a burly tavernkeep~
+A burly tavernkeep is here, serving drinks and foods.
+~
+A dour peasant with a huge black beard.  
+~
+3 0 16 0 0 0 S
+99 1 198 198 0 50000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+#30930
+sullen villager~
+a sullen villager~
+A sullen villager is here.
+~
+A thick-bodied man of indeterminate age, he seems to ignore your presence.  
+~
+1 0 0 0 1 0 S
+30 1 60 60 0 5000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>fight_prog 100~
+fume
+say Accursed bandits!
+emote suddenly kicks some dirt at you, blinding you temporarily.
+emote runs off.
+mpecho Your cowardly and unprovoked attack seems to have been in vain.
+mpecho He is nowhere to be seen.
+mppurge self
+~
+>speech_prog huntsman~
+say Aye, the huntsman wanders the moors at night.  Some say he is an evil spirit,
+say but I think he is the Dark King come back, as was foretold.
+~
+>speech_prog king~
+say Aye.  Once he ruled this entire land, until the army of Methidoral came
+say and overthrew him.  Nobody knows his fate; he was not found among his
+say army's slain, but some say he will come again.  I believe he HAS come
+say back, and searches the moors for the Anrach Stone.
+~
+>speech_prog anrach stone~
+say laugh if you will, but that terrible relic exists!  It's dark influence
+say causes the mist that blankets the Hollow!
+mpecho Suddenly off in the distance you hear a faint howling.
+mpecho The villager's face turns white.
+say I must be off!
+emote hurries away towards his home.
+mppurge self
+~
+|
+#30946
+spectral hound~
+a spectral hound~
+A spectral hound of the Wild Hunt lopes past.
+~
+A sleek grey figure, glowing with an unearthly light.  He sniffs the air,
+and his head spins towards you.  
+~
+1 192 262144 0 0 0 S
+100 1 100 100 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30950
+huntsman~
+the Huntsman~
+A terrible sight is before you; an enormous figure in black armor, with great antlers sprouting from his helm!
+~
+Thought only a legend by most, the Huntsman wanders the moors of
+Blackmoore's Hollow, seeking out -- what?  No mortal man knows, but those
+who meet him on the mist-shrouded plains are never seen again.  
+~
+3 167796944 21299204 1073766400 2 -900 S
+160 1 500 1000 0 60000d0+0 0d0+0
+0 20 0
+0 0 1
+4 0 0
+>all_greet_prog 100~
+mpecho A wave of darkness seems to slide over the earth.
+mpecho A cold, bitter wind assails you, and you pull your cloak against your body.
+mpecho Suddenly you notice a huge figure before you, and the cold that cut into your
+mpecho body now pierces your soul like a shard of ice.
+mpecho The Huntsman looks down on you silently.
+if level($n)<100
+mpecho You shriek involuntarily, as your courage runs out, and you flee!
+mptrans $n 30925
+mpat $n mpecho After running through the moors in a blind panic, you slow down and look around.
+mpat $n mpforce $n look
+endif
+if level($n)>99
+mpecho You muster every ounce of your will, and face the Huntsman without fleeing.
+endif
+~
+>fight_prog 30~
+emote suddenly spins his blade around, and slashes at $n's neck.
+slit
+~
+>fight_prog 20~
+emote raises one spectral hand, and his eyes blaze with a fearsome green light.
+cast 'dispel magic' $n
+~
+>fight_prog 60~
+emote raises his sword, and the sky erupts in flame!
+cast 'meteor swarm'
+~
+>fight_prog 30~
+emote raises his head to the sky in a soundless howl.
+cast 'wrath of god'
+~
+>fight_prog 40~
+cast 'web' $n
+~
+|
+#30965
+wight~
+a wight~
+An ancient figure rises up out of the gloom.
+~
+An ancient figure in rotting armor, his eyes gleam with a fearsome light.  
+~
+1 134217840 262272 0 0 -500 S
+105 1 120 120 0 15000d0+0 0d0+0
+1050 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+mpecho As his burial chamber is invaded, an ancient figure rises to his feet and attacks!
+cast 'curse' $n
+~
+|
+#0
+
+
+
+#OBJECTS
+#30905
+Blackmoore's Hollow~
+the road to Blackmoore's Hollow~
+An ancient road leads into a large, mist-shrouded hollow.~
+~
+29 0 0 0 0 0 0
+100 100
+30900~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30910
+holy symbol~
+a tarnished holy symbol~
+A tarnished holy symbol has been dropped here.~
+~
+8 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30929
+flagon mead~
+a flagon of mead~
+A flagon of sweet mead is here.~
+~
+17 0 0 0 0 16385 1
+100 100
+2~ 2~ 8~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30930
+hunk bread~
+a hunk of bread~
+A hunk of bread is here.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30936
+ward~
+a ward~
+A gold-embossed ward has been stuck in the ground here.~
+~
+8 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+20 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+ward~
+A holy symbol on a pike, it seems to have been set up to prevent the
+entry of mist-born horrors into the village.  
+~
+#30949
+ring ultimate power~
+the ring of ultimate power~
+A powerful ring is here.~
+~
+8 3 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+301 -1
+A
+107 -1
+A
+24 -400
+A
+303 -1
+A
+106 -1
+A
+19 400
+A
+18 400
+#30950
+sword huntsman~
+the Sword of the Huntsman~
+An enormous runed broadsword with an intricately carved hilt is embedded in the ground.~
+~
+5 704643075 929829 0 138545152 8193 105
+100 100
+0~ 0~ 0~ 3~
+3 400 0
+5 0
+summon pack~
+10 10
+0 0 0
+A
+26 -100
+A
+102 -1
+A
+25 90
+A
+12 50
+A
+5 -2
+A
+13 199
+A
+30 -5
+A
+9 2
+A
+1 2
+A
+19 65
+A
+46 5
+A
+18 45
+>wear_prog 100~
+0
+mpecho As $n wields the Sword of the Huntsman, you hear a savage howl off in the distance.
+~
+>get_prog 100~
+0
+mpecho As the sword is picked up it begins to glow with a green light.
+mpecho Far off in the distance you hear a drawn-out howl, and the wind suddenly seems colder here.
+~
+>drop_prog 100~
+0
+mpecho The Sword of the Huntsman falls, embedding itself blade first in the ground.
+mpecho A savage gust of wind comes out of nowhere and shrieks around you.
+~
+|
+#30952
+antlered helm~
+an antlered helm~
+A huge helm lies here.~
+~
+9 8192 0 0 0 17 107
+100 100
+50~ 0~ 0~ 0~
+5 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -1000
+A
+31 99
+A
+36 99
+#30953
+thorned armor~
+thorned armor~
+(no description)~
+~
+9 68 0 0 2048 9 100
+100 100
+20~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 10
+A
+12 20
+#30980
+cup espresso~
+a cup of espresso~
+A cup of espresso is here.~
+~
+10 268435456 0 0 0 1 1
+100 100
+90~ haste~ vibrate~ bio-acceleration~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#30900
+In the Mist~
+~
+~
+You are surrounded by a grey, clinging mist.  Beyond the hard rock
+underfoot you can make out nothing except greyness.  
+~
+0 393222 0
+Rd     0
+D0
+~
+~
+0 0 30900
+D1
+~
+~
+0 0 30901
+D2
+~
+~
+0 0 30980
+D3
+~
+~
+0 0 30903
+S
+#30901
+In the Mist~
+~
+~
+You stumble through the enveloping mist, as cold droplets of moisture form
+on your armor.  You seem to have lost your sense of direction; whatever path
+there was seems to have vanished.
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30902
+D1
+~
+~
+0 0 30900
+D2
+~
+~
+0 0 30901
+D3
+~
+~
+0 0 30900
+S
+#30902
+In the Mist~
+~
+~
+All about you is mist, only mist.  Far off in the distance you can hear a
+low, mournfull callwhich slowly vanishes, echoing through the mist.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30912
+D1
+~
+~
+0 0 30902
+D2
+~
+~
+0 0 30901
+D3
+~
+~
+0 0 30900
+S
+#30903
+In the Mist~
+~
+~
+The featureless wall of mist seems to thin out to the west, where you can
+make out strange shadows looming.  In all other directions is uninterrupted
+greyness.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30904
+D1
+~
+~
+0 0 30900
+D2
+~
+~
+0 0 30901
+D3
+~
+~
+0 0 30905
+S
+#30904
+In the Mist~
+~
+~
+Strange glowing lights float through the mist, always out of reach.  The
+ground is muddy, and the sparse vegetation is sickly and grey.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 30900
+D1
+~
+~
+0 0 30903
+D3
+~
+~
+0 0 30902
+S
+#30905
+Before the Stone Circle~
+~
+~
+To the west rises a circle of huge standing stones, their ancient faces
+worn smooth.  In the center is a large stone block of some sort.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 30903
+D3
+~
+~
+0 0 30906
+S
+#30906
+Inside the Stone Circle~
+~
+~
+You stand in the center of the stone circle, the grey monoliths looming
+above you on all sides.  Outside of the circle you can see only mist.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30902
+D1
+~
+~
+0 0 30905
+D3
+~
+~
+0 0 30907
+S
+#30907
+In the Mist~
+~
+~
+You stagger through the clinging mist, which is slightly less thick here.
+You can make out long-dead trees here and there, their branches raised like
+clawed hands towards the sky.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30902
+D1
+~
+~
+0 0 30906
+D2
+~
+~
+0 0 30908
+D3
+~
+~
+0 0 30908
+S
+#30908
+In the Mist~
+~
+~
+You travel through the mist, your journey interrupted only by the
+occasional dead tree or boulder.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30908
+D1
+~
+~
+0 0 30907
+D2
+~
+~
+0 0 30908
+D3
+~
+~
+0 0 30909
+S
+#30909
+In the Mist~
+~
+~
+The mist thins out slightly in this small clearing, to reveal an ancient
+stone church.  Most of the stones have fallen to the ground, leaving large
+stretches of wall open to the mist, and it appears that nobody has been here
+in many a year.  You can climb up a set of stone steps to enter it.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30912
+D1
+~
+~
+0 0 30908
+D2
+~
+~
+0 0 30909
+D3
+~
+~
+0 0 30904
+D4
+~
+~
+0 0 30910
+S
+#30910
+Inside the Ruined Church~
+~
+~
+You stand inside the ancient structure.  The mist has throughly
+infiltrated this place; every surface is damp, and grey moss grows on rotted
+wooden pews.  
+~
+0 394242 0
+Rd     0
+D5
+~
+~
+0 0 30909
+S
+#30911
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#30912
+In the Mist~
+~
+~
+The mist swirls around you, but it is not nearly as thick here as it is
+to the south.  To the north you see an ancient dirt road.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30913
+D1
+~
+~
+0 0 30902
+D2
+~
+~
+0 0 30909
+S
+#30913
+A Road~
+~
+~
+The road leads north and south through the mist.  To the east and west is
+impenetrable, mist-shrouded brush.
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30914
+D2
+~
+~
+0 0 30912
+S
+#30914
+A Road~
+~
+~
+The road runs north and south through the mist.  On either side is thick
+brush.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30915
+D1
+~
+~
+0 0 30917
+D2
+~
+~
+0 0 30913
+D3
+~
+~
+0 0 30908
+S
+#30915
+A Crossroads~
+~
+~
+You have reached a mist-shrouded crossroads.  The mist hangs thick and
+wet around you.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30969
+D1
+~
+~
+0 0 30922
+D2
+~
+~
+0 0 30914
+D3
+~
+~
+0 0 30916
+S
+#30916
+A Road~
+~
+~
+The road comes to a sudden end at a deep ravine.  You cannot go any
+farther this way; the only thing that remains is to head back to the
+crossroads.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 30915
+S
+#30917
+In the Mist~
+~
+~
+The grey mist is everywhere, and the smell of rotted vegetation assails
+your nostrils.
+~
+0 393222 0
+Rd     0
+D1
+~
+~
+0 0 30909
+S
+#30922
+A Road~
+~
+~
+This road runs through the mist-covered countryside.  To the north and
+south is impenetrable brush, while to the west is the crossroads.  To the
+east the road meanders out of sight.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 30923
+D3
+~
+~
+0 0 30915
+S
+#30923
+A Road~
+~
+~
+The road twists and turns through the forbidding countryside.  Scraggly
+brush stands stiffly on the sides, forcing you to keep to the dirt path.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30924
+D3
+~
+~
+0 0 30922
+S
+#30924
+A Road~
+~
+~
+The road turns here, heading east and south.  In all other directions is
+impenetrable brush.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 30925
+D2
+~
+~
+0 0 30923
+S
+#30925
+A Road~
+~
+u4_towns.mid~
+The country opens up into a dismal valley, filled with open fields upon
+which grows sparse and sickly wheat.  To the east you make out a surprising
+sight; a small town lies huddled in the mist.  
+~
+0 393222 0
+Rd     0
+D0
+~
+~
+0 0 30934
+D1
+~
+~
+0 0 30926
+D2
+~
+~
+0 0 30935
+D3
+~
+~
+0 0 30924
+S
+#30926
+A Tiny Village~
+~
+~
+This tiny village consists mainly of dirt streets and crude stone houses.
+A pall of darkness seems to hang here, yet it is still a welcome change from
+the mysterious mist outside.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30927
+D3
+~
+~
+0 0 30925
+S
+#30927
+A Street~
+~
+~
+This small street runs through the village.  To the north is what appears
+to be some sort of shop, while to the south is a run-down tavern with a sign
+depicting a faded boar over the door.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30928
+D1
+~
+~
+0 0 30930
+D2
+~
+~
+0 0 30929
+D3
+~
+~
+0 0 30926
+S
+#30928
+A Store~
+~
+~
+This small store is the only one in town, and thus sells all the
+villager's necessities.  Old equipment is piled onto ancient wooden tables,
+and battered farming implements hang from the walls.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 30927
+S
+#30929
+The Black Boar Tavern~
+~
+~
+While normally you might avoid such a run-down establishment as this,
+after your journey through the mist it is remarkably comforting.  A stone
+hearth houses a small, flickering fire, and men in rough peasant dress sit
+at tables, hunched over their drinks.  To the north you can exit to the
+street.  
+~
+0 132106 0
+Rd     0
+D0
+~
+~
+0 0 30927
+S
+#30930
+A Street~
+~
+~
+The dirt street runs east and west through the town.  To the south is a
+narrow alleyway, while your way north is blocked by a building.  
+~
+0 394242 0
+Rd     0
+D1
+~
+~
+0 0 30931
+D2
+~
+~
+0 0 30940
+D3
+~
+~
+0 0 30927
+S
+#30931
+A Street~
+~
+~
+The street turns north here, heading towards an ancient stone hut.  To
+the south and east are homes, their doors barred tight against your
+intrusion.  
+~
+0 394242 0
+Rd     0
+D0
+~
+~
+0 0 30932
+D3
+~
+~
+0 0 30930
+S
+#30932
+A Street~
+~
+~
+The street ends here at an ancient hut to the east.  To the north lies a
+field.  
+~
+0 394242 0
+Rd     0
+D0
+~
+~
+0 0 30937
+D1
+~
+~
+0 0 30933
+D2
+~
+~
+0 0 30931
+S
+#30933
+An Ancient Hut~
+~
+~
+This darkened stone hut seems to have been standing here since time
+began.  The only furniture is a sleeping mat and a low wooden table.  
+~
+0 394242 0
+Rd     0
+D3
+~
+~
+0 0 30932
+S
+#30934
+A Field~
+~
+~
+Dirt furrows run crookedly through this field, and a few stalks of wheat
+poke out from the ground.  To the east the field continues, while to the
+north and west your way is blocked by the walls of the valley.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 30937
+D2
+~
+~
+0 0 30925
+S
+#30935
+A Field~
+~
+~
+The soil looks poor and overly damp, but somehow the villagers manage to
+eke out an existence here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30925
+D1
+~
+~
+0 0 30936
+S
+#30936
+A Field~
+~
+~
+You stand in a field lying south of the town.  To the north is an
+alleyway leading between two buildings.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30940
+D3
+~
+~
+0 0 30935
+S
+#30937
+A Field~
+~
+~
+This field seems to have been planted with potatos, though they don't
+seem to have thrived in the hostile dirt.  To the south you can enter the
+village.  To the north is the beginning of a foggy moor.  
+~
+0 393222 0
+Rd     0
+D0
+~
+~
+0 0 30941
+D1
+~
+~
+0 0 30938
+D2
+~
+~
+0 0 30932
+D3
+~
+~
+0 0 30934
+S
+#30938
+A Field~
+~
+~
+A grey field that seems to have been recently harvested.  The air is
+thick and damp, and a grey mist hangs over everything.  
+~
+0 0 2
+Rd     0
+D3
+~
+~
+0 0 30937
+S
+#30940
+An Alleyway~
+~
+~
+This narrow dirt alleyway leads between two rough stone buildings.  To
+the north is the village's main street, while to the south lies a field.  
+~
+0 132098 0
+Rd     0
+D0
+~
+~
+0 0 30930
+D2
+~
+~
+0 0 30936
+S
+#30941
+The Beginning of the Moor~
+~
+~
+To the north a grey moor stretches into the thick mist.  You can barely
+see five feet in front of you.  To the south is what appears to be a small
+village.  
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 30942
+D2
+~
+~
+0 0 30937
+S
+#30942
+The Moors~
+~
+~
+The moors stretch out all around you.  The rocky ground here is damp and
+cold.  
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 30944
+D1
+~
+~
+0 0 30943
+D2
+~
+~
+0 0 30941
+D3
+~
+~
+0 0 30948
+S
+#30943
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30949
+D3
+~
+~
+0 0 30942
+S
+#30944
+The Moors~
+~
+~
+The ground is grey and wet, and covered with a sickly-looking moss.  The
+mist curls up around a stunted grey tree growing from a crack in the ground.
+~
+0 8790016 0
+Rd     0
+D0
+~
+~
+0 0 30945
+D2
+~
+~
+0 0 30942
+D3
+~
+~
+0 0 30946
+S
+#30945
+The Moors~
+~
+~
+You travel along the mist-shrouded moor.  All about you rise up strange
+shapes in the darkness.  
+~
+0 401412 0
+Rd     0
+D0
+~
+~
+0 0 30952
+D2
+~
+~
+0 0 30944
+D3
+~
+~
+0 0 30947
+S
+#30946
+The Moors~
+~
+~
+You stand on the mist-choked moors of Blackmoore's Hollow.  The grey
+ground is shrouded in blankets of dense fogs, reducing visibility to only a
+few feet.  The moors seem cold and lifeless.  
+~
+0 8790016 0
+Rd     0
+D0
+~
+~
+0 0 30947
+D1
+~
+~
+0 0 30944
+D2
+~
+~
+0 0 30948
+S
+#30947
+The Moors~
+~
+~
+You traverse the misty moor, cursing the thick fog which almost
+completely blinds you.  The ground is covered with a grey peat here, and
+your feet sink unpleasantly into the loamy floor.  
+~
+0 8790020 0
+Rd     0
+D0
+~
+~
+0 0 30950
+D1
+~
+~
+0 0 30945
+D2
+~
+~
+0 0 30946
+D3
+~
+~
+0 0 30953
+S
+#30948
+The Moors~
+~
+~
+All about you are the mist-shrouded moorlands of Blackmoore's Hollow. 
+Ghostly shapes seem to loom just out of sight in the mist, and you hear a
+far-off keening echoing through the air.  
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 30946
+D1
+~
+~
+0 0 30942
+S
+#30949
+The Moor~
+~
+~
+~
+0 401408 0
+Rd     0
+D2
+~
+~
+0 0 30943
+S
+#30950
+The Moors~
+~
+~
+Where are you?  The mist is everywhere, and every sound you make echoes
+weirdly though the darkness.  The most eerie thing is the total lack of
+wildlife; no birds, no rodents, not even insects seem to inhabit this place.
+~
+0 4587522 0
+Rd     0
+D0
+~
+~
+0 0 30954
+D1
+~
+~
+0 0 30952
+D2
+~
+~
+0 0 30947
+D3
+~
+~
+0 0 30951
+S
+#30951
+The Moors~
+~
+~
+The rocky grey moors continue on and on.  Cracked, moss-covered boulders
+have been scattered around here, as if they were the playthings of some
+giant's game.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 30950
+S
+#30952
+The Moors~
+~
+~
+The rough, uneven ground is covered with patches of grey, sickly-looking
+grasses and mossy boulders.  You have trouble telling which direction you're
+travelling in, as the grey blankness assails your senses from all sides.  
+~
+0 401408 0
+Rd     0
+D2
+~
+~
+0 0 30945
+D3
+~
+~
+0 0 30950
+S
+#30953
+The Moors~
+~
+~
+The bleak moors stretch ever onwards through the clinging grey mist.  The
+sound of your footsteps is strangely muffled by the unnatural fog, and your
+face is damp and cold.  
+~
+0 401408 0
+Rd     0
+D1
+~
+~
+0 0 30947
+S
+#30954
+The Moors~
+~
+~
+The ground rises steeply to the north, where you see a mist-shrouded
+cliff rise up.  To the south is only grey blankness.  
+~
+0 401412 0
+Rd     0
+D0
+~
+~
+0 0 30955
+D2
+~
+~
+0 0 30950
+S
+#30955
+Before a Hill~
+~
+~
+A smooth grey hill rises up steeply at this point.  To the south is a
+foggy moor, while to the east and west your way is blocked by steep ridges
+that rise suddenly from the ground.  
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 30957
+D2
+~
+~
+0 0 30954
+D4
+~
+~
+0 0 30956
+S
+#30956
+A Hill~
+~
+~
+The ground slopes gently upwards here towards a flat hilltop.  Oddly
+enough, there seems to be an ancient path here leading up, and you feel a
+strange prickling feeling in your skin.  
+~
+0 401408 0
+Rd     0
+D4
+~
+~
+0 0 30958
+D5
+~
+~
+0 0 30955
+S
+#30957
+At the Base of the Hill~
+~
+~
+You stand at the base of a weathered grey hill which rises up to the
+north.  The mist has abated somewhat, but is still thick.  
+~
+0 401408 0
+Rd     0
+D2
+~
+~
+0 0 30955
+S
+#30958
+A Hilltop~
+~
+~
+You stand on an ancient hilltop.  Down to the south stretches a vast
+mist-shrouded moor, while to the north your way is blocked by an enormous
+stone; strange, there seems to be some ancient marks on it.  
+~
+0 401410 0
+Rd     0
+E
+stone~
+They are extremely worn, but you think they're written in an ancient
+northern language, long since disappeared.  What they say is anyone's guess,
+but you think you recognize the ancient symbol of the Clan Marmorr.  
+~
+D0
+~
+boulder~
+515 0 30959
+D5
+~
+~
+0 0 30956
+S
+#30959
+The Barrow~
+~
+~
+Ancient tunnels have been bored deep into the earth here, to hold the
+remains of a long-dead folk.  Niches have been carved into the walls, and
+they hold shards of rusted weaponry.  You hear a strange rustling in the
+darkness.  
+~
+0 0 0
+Rd     0
+D2
+~
+boulder~
+515 0 30958
+D5
+~
+~
+0 0 30960
+S
+#30960
+The Barrow~
+~
+~
+You trudge into the ancient burial grounds.  All about you are twisting
+tunnels and dark chambers, and the air is strangely cold here.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 30961
+D4
+~
+~
+0 0 30959
+S
+#30961
+The Barrow~
+~
+~
+This tunnel leads north and south through the darkness.  The air is cold
+and damp.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 30962
+D2
+~
+~
+0 0 30960
+S
+#30962
+The Barrow~
+~
+~
+The tunnel splits here, heading east, south, and west.  A thick layer of
+dust lies about you, and the ground is moist and grey.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 30963
+D2
+~
+~
+0 0 30961
+D3
+~
+~
+0 0 30964
+S
+#30963
+The Barrow~
+~
+~
+The ancient tunnel ends at a massive stone barrow door to the east. 
+Strange scratching sounds seem to echo through the darkness.  
+~
+0 401419 0
+Rd     0
+D1
+~
+door~
+3 0 30966
+D3
+~
+~
+0 0 30962
+S
+#30964
+The Barrow~
+~
+~
+The barrow runs towards a chamber to the west, while to the east is an
+intersection.  A rivulet of water drips down from the ceiling here, landing
+in a pool of stagnant water.  
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 30962
+D3
+~
+~
+3 0 30965
+S
+#30965
+A Burial Chamber~
+~
+~
+This round chamber has been carved out of the hill to house the remains
+of an ancient nobleman of the Markmoore line.  He has been buried here, with
+his weapons and treasure.  
+~
+0 401417 0
+Rd     0
+D1
+~
+boulder~
+3 0 30964
+S
+#30966
+A Burial Chamber~
+~
+~
+You have entered a circular room deep in the earth.  An ancient bier has
+been erected here to hold the remains of a long-dead nobleman.  
+~
+0 393217 0
+Rd     0
+D3
+~
+door~
+3 0 30963
+S
+#30967
+An Ancient Keep~
+~
+~
+This ancient keep has been almost totally demolished by time and weather.
+You eye the hole-filled roof uneasily; it could cave in at any time it
+seems.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30968
+D2
+~
+~
+0 0 30970
+S
+#30968
+An Ancient Keep~
+~
+~
+This ancient keep has seen better days.  Only the skeleton of the great
+hall remains, and the roof and walls are filled with gaping holes.  The keep
+stretches to the north, or you can re-enter the mist to the south.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30972
+D2
+~
+~
+0 0 30967
+S
+#30969
+A Road~
+~
+~
+The ancient road ends to the north, at the rotting gates of a
+long-abandoned keep.  To the south is the crossroads.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30970
+D2
+~
+~
+0 0 30915
+S
+#30970
+A Road~
+~
+~
+The road ends here.  To the north is the stone shell of a long-abandoned
+keep; while it apparently used to be quite large, all that remains is the
+main hall, and that seems to be on the verge of collapse.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 30967
+D2
+~
+~
+0 0 30969
+S
+#30972
+An Ancient Keep~
+~
+~
+The hall ends here, at a partially collapsed wall.  The keep continues to
+the south, while in all other directions your way is blocked by rubble.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 30968
+S
+#30980
+Before the Hollow~
+~
+~
+The road disappears into a vast bank of mist to the north, while to the
+south you can escape this dreary place.  You have heard stories of
+Blackmoore's Hollow; how the ancient noble family who ruled this place fell
+under the sway of darkness, and how the everlasting mist holds creatures
+born out of that dark pact.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30900
+D2
+~
+~
+0 0 17561
+S
+#0
+
+
+
+#SPECIALS
+M 30901 spec_cast_undead
+M 30965 spec_cast_undead
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 30903 1 30900
+M 0 30901 2 30902
+M 0 30901 2 30902
+M 0 30901 2 30904
+M 0 30901 1 30905
+M 0 30901 2 30907
+M 0 30901 4 30908
+M 0 30901 1 30909
+O 0 30910 0 30910
+M 0 30901 4 30912
+M 0 30946 1 30916
+M 0 30901 2 30917
+O 0 30936 0 30925
+M 0 30926 2 30926
+M 0 30929 1 30929
+G 0 30930 0
+G 0 30929 0
+M 0 30930 1 30930
+M 0 30930 1 30931
+O 0 30936 0 30936
+O 0 30936 0 30937
+M 0 30946 1 30944
+M 0 30946 1 30945
+M 0 30946 1 30946
+M 0 30946 1 30948
+M 0 30950 1 30950
+E 0 30950 0 20
+E 0 30952 0 6
+E 0 30953 0 5
+M 0 30965 1 30965
+M 0 30965 1 30966
+S
+
+
+
+#SHOPS
+30929 17 19 0 0 0 0 100 12 23
+0
+
+
+
+#$

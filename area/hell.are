@@ -1,0 +1,2517 @@
+#AREADATA
+Name        {75-100} Pits of Hell~
+Builders    Telan~
+VNUMs       600 699
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Vampyre~
+Llevel      0
+Ulevel      0
+Sounds      Your nipples get hard as the gusty winds chill you to the bone.~
+Music       u7_kilr.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#600
+ticket seller demon~
+the ticket seller~
+A man stands here selling tickets to Hell
+~
+~
+67 503865480 0 0 0 0 S
+102 1 204 204 30000 30000d0+0 0d0+10000
+1020 0 0
+0 0 1
+186 0 0
+#601
+bully~
+a big bully~
+A big, mean looking kid demands your lunch money
+~
+~
+161 167805064 0 0 0 -750 S
+80 1 160 160 15000 15000d0+0 0d0+80000
+800 0 0
+0 0 1
+0 0 0
+#602
+nurse~
+the school nurse~
+The school nurse brandishes her medicine at you
+~
+~
+2051 201851016 0 0 0 -500 S
+90 1 180 180 17500 17500d0+0 0d0+15000
+900 0 0
+0 0 2
+0 0 0
+#603
+teacher arvid~
+Mr. Arvid~
+Mr. Arvid, the chemistry teacher, yells "You're late!"
+~
+~
+3 134766728 0 0 0 -1000 S
+85 1 170 170 18000 18000d0+0 0d0+10000
+850 0 0
+0 0 1
+0 0 0
+#604
+beasly teacher~
+Ms. Beasly~
+Ms. Beasly frowns at you
+~
+~
+3 403177600 0 0 0 -1000 S
+85 1 170 170 17500 17500d0+0 0d0+10000
+850 0 0
+0 0 2
+0 0 0
+#605
+teacher Cantlon~
+Mr. Cantlon~
+Mr. Cantlon is lecturing on protiens. He waves you to your seat.
+~
+~
+3 134799496 0 0 0 -1000 S
+90 1 180 180 19000 19000d0+0 0d0+10000
+900 0 0
+0 0 1
+0 0 0
+#606
+principal~
+the Principal~
+The principal of Hell Sr. High stands on the edge, ready to jump.
+~
+~
+3 470287496 16 0 0 -1000 S
+90 1 180 180 18500 18500d0+0 0d0+90000
+900 0 0
+0 0 1
+0 0 0
+>death_prog 100~
+if ispc ($n)
+tell $n You are EXPELLED!
+mptransfer $n bmoviestooge
+endif
+~
+|
+#607
+Morgan teacher~
+Mrs. Morgan~
+Mrs. Morgan looks up from rolling pie crusts and smiles at you.
+~
+~
+3 168304776 0 0 0 0 S
+85 1 170 170 18000 18000d0+0 0d0+85000
+850 0 0
+0 0 2
+0 0 0
+#608
+barney dinosaur~
+Barney the dinosaur~
+A seven foot purple dinosaur accosts you with an inane grin.
+~
+~
+3 436732040 0 0 0 0 S
+95 1 190 190 18000 18000d0+0 0d0+95000
+950 0 0
+0 0 0
+32786 0 0
+#609
+Hell Hound~
+the Hell Hound~
+A shadowy hound with flames for eyes leaps from the shadows and attacks!
+~
+~
+33 34185864 0 0 0 -1000 S
+80 1 160 160 8000 8000d0+0 0d0+25000
+800 0 0
+0 0 0
+0 0 0
+#610
+Demon Executive exec~
+the demon executive~
+An 8-foot, red-skinned demon sits alone in his barren ofice.
+~
+~
+3 67637376 0 0 0 0 S
+90 1 180 180 27000 27000d0+0 0d0+10
+900 0 0
+0 0 1
+0 0 0
+#611
+demon executive exec~
+the demon executive~
+An 8-foot, red-skinned demon sits alone in his barren office.
+~
+~
+3 67637376 0 0 0 0 S
+90 1 180 180 27000 27000d0+0 0d0+10
+900 0 0
+0 0 1
+0 0 0
+#612
+demon executive exec~
+the demon executive~
+An 8-foot, red-skinned demon sits alone in his barren office.
+~
+~
+3 67637376 0 0 0 0 S
+90 1 180 180 27000 27000d0+0 0d0+10
+900 0 0
+0 0 0
+0 0 0
+#613
+demon executive exec~
+the demon executive~
+An 8-foot, red-skinned demon sits alone in his barren office.
+~
+~
+1 67637376 0 0 0 0 S
+90 1 180 180 27000 27000d0+0 0d0+10
+900 0 0
+0 0 1
+0 0 0
+#614
+demon executive exec~
+the demon executive~
+An 8-foot, red-skinned demon sits alone in his barren office.
+~
+~
+3 67637376 0 0 0 0 S
+90 1 180 180 27000 27000d0+0 0d0+10
+900 0 0
+0 0 1
+0 0 0
+#615
+demon executive exec~
+the demon executive~
+An 8-foot, red-skinned demon sits alone in his barren office
+~
+~
+3 67637376 0 0 0 0 S
+90 1 180 180 27000 27000d0+0 0d0+10
+900 0 0
+0 0 1
+0 0 0
+#616
+demon receptionist~
+the demon receptionist~
+Satan's receptionist looks up from her paperwork and waves you to a seat
+~
+~
+3 369098880 0 0 0 -1000 S
+100 1 200 200 30000 30000d0+0 0d0+100000
+1000 0 0
+0 0 2
+22 0 0
+#617
+Lost Soul~
+a lost soul~
+A Lost Soul wails in fury and attacks!
+~
+~
+33 524424 0 0 0 0 S
+75 1 150 150 14500 14500d0+0 0d0+10000
+750 0 0
+0 0 0
+0 0 0
+#618
+teacher ketch~
+Mr. Ketch~
+(no long description)
+~
+~
+3 524288 0 0 0 0 S
+100 1 200 200 20000 20000d0+0 0d0+0
+1000 0 0
+0 0 0
+0 0 0
+#619
+student~
+The student~
+A student of Hell Sr. High wanders around here. He looks pissed.
+~
+~
+33 134750848 0 0 0 0 S
+70 1 140 140 12000 12000d0+0 0d0+10000
+700 0 0
+0 0 1
+0 0 0
+#620
+lag monster~
+The Lag Monster~
+The dreaded Lag Monster is here, drooling all over your link.
+~
+~
+2181 269058186 0 0 0 0 S
+65 1 130 130 5000 5000d0+0 0d0+25000
+650 0 0
+0 0 0
+0 0 0
+#621
+teacher dingle~
+Mr. Dingle~
+One of the original hippies, Mr. Dingle bids you peace
+~
+~
+3 532608 0 0 0 0 S
+80 1 160 160 17000 17000d0+0 0d0+80000
+800 0 0
+0 0 1
+18 0 0
+#622
+bmoviestooge~
+a little imp~
+A tiny imp scurries out from underfoot
+~
+~
+3 0 0 0 0 0 S
+1 1 2 2 1 1d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#623
+teacher streffan~
+Mr. Streffan~
+Mr. Streffan pokes you with his baton and asks where your instrument is
+~
+~
+3 34078856 0 0 0 0 S
+85 1 170 170 18500 18500d0+0 0d0+85000
+850 0 0
+0 0 1
+16386 0 0
+#624
+Ben Dover~
+Ben Dover~
+Mr. Dover is here, tossing a medicine ball
+~
+~
+3 402661504 0 0 0 0 S
+85 1 170 170 18500 18500d0+0 0d0+0
+850 0 0
+0 0 1
+33042 0 0
+#666
+Satan~
+Satan~
+Satan gazes calmly down at you from his 11-foot perspective
+~
+~
+7 235422344 0 0 0 -1000 S
+105 1 210 210 27000 27000d0+0 0d0+105000
+1050 0 0
+0 0 0
+2099 0 0
+>greet_prog 100~
+if isnpc($n)
+  break
+endif
+if isgood($n) != 1
+  say Welcome, $n, my child.  Do not disturb me.
+else
+  if isgood($n)
+    say Who has sent you, $n?
+    say What does it matter?  You will die anyway!
+    cackle
+    mpkill $n
+  else
+    growl $n
+    say You are not welcome here, $n!
+  endif
+endif
+~
+>fight_prog 45~
+cackle
+cast 'faerie fire'
+cast 'burning hands'
+cast 'flamestrike'
+cast 'fireball'
+cast 'fire breath'
+~
+>hitprcnt_prog 25~
+emote screams 'POWER WAVE!'
+cast 'lightning bolt'
+cast 'fireball'
+cast 'icestorm'
+cast 'poison'
+cast 'acid blast'
+cast 'gas breath'
+cast 'earthquake'
+cast 'ultrablast'
+cast 'psionic blast'
+cast 'death field'
+~
+|
+#699
+child~
+a Child of Barney~
+I hate you, you hate me. Let's hang that dino from a treee...
+~
+~
+33 4718721 0 0 0 0 S
+50 1 100 100 750 750d0+0 0d0+5
+500 0 0
+0 0 0
+1664 0 0
+#0
+
+
+
+#OBJECTS
+#600
+ticket stub~
+a ticket stub~
+A stiff piece of paper lies here.~
+~
+18 8192 1 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 40000 0
+0 0
+reserved~
+0 0
+0 0 0
+#601
+lumber paddle~
+a wooden paddle~
+A hefty chunk of lumber drilled through with many holes hangs on the wall~
+~
+5 0 0 0 0 8193 75
+100 100
+0~ 6~ 12~ 6~
+10 748 0
+0 0
+reserved~
+0 0
+0 0 0
+#602
+bottle medicine~
+a bottle of medicine~
+A bottle of vile-smelling liquid sits here~
+~
+10 268435522 0 0 0 1 75
+100 100
+0~ cure poison~ cure blindness~ remove curse~
+1 748 0
+0 0
+reserved~
+0 0
+0 0 0
+#603
+ruler~
+a wicked-looking ruler~
+A wicked-looking ruler sits here~
+~
+5 0 0 0 0 8193 75
+100 100
+0~ 0~ 0~ 0~
+0 748 0
+0 0
+reserved~
+0 0
+0 0 0
+#604
+acid beaker~
+a beaker of acid~
+A beaker full of acid sits here~
+~
+4 0 16384 0 0 1 75
+100 100
+100~ 25~ 25~ acid blast~
+2 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#605
+scalpel~
+a scalpel~
+An extremely sharp scalpel glints from the ground~
+~
+5 0 0 0 0 8194 90
+100 100
+0~ 0~ 0~ 1~
+2 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+A
+14 -50
+#606
+shoes sneakers nikes~
+a pair of black Nike high-tops~
+A pair of smelly Nikes lie in the corner~
+~
+9 36 64 0 0 65 75
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 50
+#607
+rolling pin~
+a rolling pin~
+A flour-covered rolling pin sits here~
+~
+5 0 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 7~
+5 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 15
+A
+19 15
+#608
+dark key~
+a dark, shimmering key~
+A dark, shimmering key lies here~
+~
+18 67 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#609
+blue key~
+a blue key~
+A blue key sits here~
+~
+18 163 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#610
+antacid pill pink~
+a pink antacid pill~
+A pink antacid tablet floats in the air~
+~
+26 66 0 0 0 32769 50
+100 100
+66~ sanctuary~  ~  ~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 25
+#611
+cup coffee java~
+a cup of coffee~
+A steaming hot cup of java sits here~
+~
+17 0 16384 0 0 1 75
+100 100
+100~ 100~ 12~ 0~
+2 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 70
+A
+2 1
+#612
+desk~
+a desk~
+A cheap metal desk takes up half of this little office~
+~
+15 0 0 0 0 0 0
+100 100
+1000~ 4~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#613
+pitchfork fork~
+a large pitchfork~
+A rather large pitchfork sticks in the dirt here~
+~
+5 16930 0 0 0 8193 99
+100 100
+0~ 10~ 15~ 11~
+10 988 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 115
+A
+18 25
+A
+26 100
+A
+12 100
+A
+25 10
+A
+19 35
+#614
+desk~
+a red metal desk~
+A Huge red metal desk sits here~
+~
+15 65 0 0 0 0 0
+100 100
+5~ 15~ 616~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#615
+black key~
+a shimmering black key~
+A shimmering black key glints from the ground~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#616
+red key~
+a red metal key~
+A red metal key lies on the ground~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#617
+horns satan~
+satan's horns~
+A pair of extremely sharp horns attached to a piece of crimson flesh lie here~
+~
+9 3754564 21 0 0 17 85
+100 100
+0~ 0~ 0~ 0~
+5 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+1 2
+A
+25 10
+A
+2 -2
+A
+23 -10
+A
+24 -10
+A
+18 6
+#618
+flame cape~
+a cape of flame~
+A cape of flame flickers on the ground here~
+~
+9 2672 1024 0 0 1025 90
+100 100
+0~ 0~ 0~ 0~
+5 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -50
+A
+24 -25
+#619
+swarm horseflies flies~
+a swarm of horseflies~
+A swarm of horseflies buzzes around the room.~
+~
+9 595 0 0 0 32769 70
+100 100
+0~ 0~ 0~ 0~
+1 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 7
+A
+19 10
+A
+23 -32
+A
+25 25
+A
+1 2
+#620
+cloak shadow~
+a shadow cloak~
+A shadow cloak lies on the ground~
+~
+9 67 0 0 0 5 75
+100 100
+0~ 0~ 0~ 0~
+5 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 50
+A
+23 -25
+#621
+drinking fountain water~
+the water fountain~
+A water fountain in the shape of an elephant stands here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#622
+black leather jacket~
+a black leather jacket~
+A worn leather jacket lies piled in the corner.~
+~
+9 2576 0 0 0 9 75
+100 100
+0~ 0~ 0~ 0~
+8 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 10
+A
+2 -1
+A
+14 -25
+#623
+switch switchblade blade comb~
+a switchblade comb~
+A novelty comb in the shape of a switchblade sits here.~
+~
+5 2642 0 0 0 8193 60
+100 100
+0~ 0~ 0~ 11~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 -10
+A
+18 50
+#624
+cardboard box~
+a box~
+A cardboard box labelled "Surgical Gloves" sits on a shelf.~
+~
+15 0 0 0 0 0 0
+100 100
+10~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#625
+rubber sugical gloves~
+a pair of surgical gloves~
+A rubber glove sits here.~
+~
+9 0 128 0 0 129 70
+100 100
+0~ 0~ 0~ 0~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+#626
+logic probe~
+a logic probe~
+A logic probe blinks on the ground~
+~
+5 22235 0 0 0 8193 99
+100 100
+0~ 0~ 0~ 9~
+10 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 15
+A
+13 500
+A
+2 -2
+#627
+flaming key~
+a flaming key~
+A flaming key lies here~
+~
+18 0 0 0 0 1 75
+100 100
+0~ 0~ 0~ 0~
+1 748 0
+0 0
+reserved~
+0 0
+0 0 0
+#628
+scroll earth earthquake~
+satan's horns~
+A pair of horns attached to a section of crimson flesh lie here.~
+~
+9 3246672 36 0 0 33 0
+100 100
+0~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+4 2
+A
+24 -10
+A
+23 -10
+A
+18 7
+#629
+bracelet circlet platinum~
+a platinum bracelet~
+A plain, platinum circlet lies here~
+~
+9 19857473 4105 0 0 4097 75
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -10
+A
+12 75
+A
+13 -50
+A
+24 -10
+A
+23 -6
+#630
+stick oak cane~
+an oak cane~
+A walking-sitck made of oak leans against the wall here~
+~
+5 7929927 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 0~
+5 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 25
+A
+23 -15
+A
+24 -15
+A
+12 50
+A
+18 10
+#631
+glasses~
+horn-rimmed glasses~
+A pair of horn-rimmed glasses sit here~
+~
+9 67 0 0 0 75 75
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+24 -13
+A
+12 50
+A
+23 -5
+#632
+musty scroll animate dead~
+a scroll of animate dead~
+A musty scroll rolls around the floor~
+~
+2 64 0 0 0 75 75
+100 100
+100~ animate dead~ reserved~ reserved~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#633
+history book~
+a massive history book~
+The definitive work on world history lies here~
+~
+5 64 16384 0 0 8193 80
+100 100
+0~ 0~ 0~ 7~
+20 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+14 -100
+A
+24 -50
+#634
+gold golden peace sign~
+a peace sign~
+A golden peace sign sits here~
+~
+9 23462210 7 0 0 75 75
+100 100
+0~ 0~ 0~ 0~
+3 400 0
+5 0
+displacement~
+10 10
+0 0 0
+A
+4 1
+A
+24 -10
+A
+12 50
+A
+14 25
+#635
+baton stick~
+a white hot conductor's baton~
+Streams of smoke and steam rise from a conductors baton~
+~
+5 4099 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 11~
+1 480 0
+5 0
+awe~
+1 1
+0 0 0
+A
+2 2
+A
+18 40
+A
+14 -75
+#640
+studded leather bra~
+studded black leather bra~
+(no description)~
+~
+9 273678848 0 0 0 9 100
+100 100
+0~ 0~ 0~ 0~
+2 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#641
+studded leather thong~
+studded black leather thong~
+(no description)~
+~
+9 273678848 0 0 0 33 100
+100 100
+0~ 0~ 0~ 0~
+2 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#642
+vampy pop~
+vampy pop~
+(no description)~
+~
+19 256 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#643
+null~
+null~
+Null~
+~
+5 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 4~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#645
+null~
+null~
+Null~
+~
+13 0 1048576 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#652
+null~
+null~
+Null~
+~
+13 0 64 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#653
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#654
+null~
+null~
+Null~
+~
+9 0 256 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#655
+null~
+null~
+Null~
+~
+13 33554432 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#678
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#686
+rug bearskin~
+a bearskin rug~
+A massive bearskin covers the floor~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#695
+bucket blood~
+a bucket of blood~
+A bucket oozes blood across the floor.~
+~
+28 268435524 0 0 0 0 0
+100 100
+100~ 100~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#698
+doobie joint spliff~
+&g(Blazing) &w(Smoking)&c Spliff~
+Someone dropped a joint! ~
+~
+1 339 0 0 0 1 0
+100 100
+0~ 0~ -1~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 -2
+#699
+beer bottle~
+a bottle of beer~
+Someone dropped a beer here!~
+~
+17 0 0 0 0 1 0
+100 100
+199~ 199~ 1~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#600
+First Gate~
+~
+~
+You stand at the northern end of a large clearing.  The sun is shining,
+there is a nice cool breeze blowing, and colorful banners decorate a huge
+white gate to the north.  A rather cheerful scene, considering that this is
+the entrance to Hell...  
+There is a large gate leading north.
+~
+0 5 0
+Rd     0
+D0
+~
+Gate~
+119 600 601
+S
+#601
+Playground Entrance~
+~
+~
+You stand in what appears to be an inner-city elementary school
+playground.  The walls are covered in graffiti depicting the cruelty that is
+sometimes displayed by children.  A dark figure recurs often in the murals,
+menacing the smaller weaker children.  A chill wind whistles through the
+deserted playground.  There is a faint odor of decaying leaves, and you get
+a feeling that something sinister lurks in the shadows.  Maybe there, behind
+the slide, or over there...  There are exits to the north, east, and west. 
+A rusty iron gate bars the way south.  
+~
+0 401409 0
+Rd     0
+D0
+~
+~
+0 0 605
+D1
+~
+~
+0 0 602
+D2
+~
+~
+119 600 600
+D3
+~
+~
+0 0 603
+S
+#602
+Playground~
+~
+~
+The wind whistles through the barbed-wire capping the stone wall
+enclosing the playground.  A lone streetlamp sheds a dim spotlight on a
+child's sandbox.  Inside is what appears to be a dark, rich soil, rather
+than the sand you would normally expect.  Peppering the dirt are some rather
+odd-shaped stones.  Upon closer inspection, they appear to be tiny
+headstones...  
+There are exits to the north and west.
+~
+0 925697 0
+Rd     0
+D0
+~
+~
+0 0 606
+D3
+~
+~
+0 0 601
+S
+#603
+Playground~
+~
+~
+A basketball court of sorts is over here.  Near the wall is a basket. 
+The rusted, bent rim has no net, and the pole supporting it is a mass of
+rust.  The whole affair leans at a steep angle, resembling a gallows, more
+than anything else.  
+There are exits to the north and east.
+~
+0 401409 0
+Rd     0
+D0
+~
+~
+0 0 604
+D1
+~
+~
+0 0 601
+S
+#604
+Playground~
+~
+~
+Here in the northwest corner of the playground, all is silent save a
+shrill but soft shrieking, as of metal on metal.  Looking closer you notice
+that despite there being no wind, one seat swings on a rusted swingset
+decomposing in the corner.  
+There are exits to the east and south.
+~
+0 401409 0
+Rd     0
+D1
+~
+~
+0 0 605
+D2
+~
+~
+0 0 603
+S
+#605
+Playground~
+~
+~
+Here the cold wind blows fiercely, making you squint up at the building
+towering above you.  A massive black stone building towers above you to the
+north.  Most of the windows are broken but light still streams from a few of
+them, and figures moving within cast crazy shadows on the ground.  Shielding
+your eyes from the wind, you can see engraved above the doors: 
+                      HELL SENIOR HIGH SCHOOL
+There are exits to the east, west and south. A pair of double-doors stand north.
+~
+0 401409 0
+Rd     0
+D0
+~
+~
+3 0 607
+D1
+~
+~
+0 0 606
+D2
+~
+~
+0 0 601
+D3
+~
+~
+0 0 604
+S
+#606
+Playground~
+~
+~
+Standing in the northeast corner of the playground, the ever-present wind
+seems to murmur in the darkness.  You can't make out any words, but you get
+an overpowering feeling of fear and anger.  A mini-tornado of leaves twirls
+round and round, almost hypnotizing in it's dance about the area.  
+There are exits to the west and south.
+~
+0 401409 0
+Rd     0
+D2
+~
+~
+0 0 602
+D3
+~
+~
+0 0 605
+S
+#607
+School Foyer~
+~
+~
+A thick grey mist rolls along the floor, and wet noises as of dripping
+water come from the shadows.  You hear murmuring voices and detect a faint
+odor of damp sweatsocks and Clearasil.  The doors south lead back out to the
+playground, and north you see row upon row of lockers fading into the
+distance down the hallway.  
+~
+0 401421 0
+Rd     0
+D0
+~
+~
+0 0 608
+D2
+~
+~
+3 0 605
+S
+#608
+School Hallway~
+~
+~
+The flickering of the florescent lights overhead lends a nightmare
+quality to the cold mist swirling about your legs.  To the west an open door
+leads into an apparently empty room, and a faint whiff of rubbing alcohol
+drifts in from the east.  
+There are doors to the east and west, and the hallway continues north.
+South is the school foyer, and a set of stairs lead up to the second floor.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 611
+D1
+~
+~
+0 0 610
+D2
+~
+~
+0 0 607
+D3
+~
+~
+0 0 609
+D4
+~
+~
+0 0 617
+D5
+~
+~
+3 0 624
+S
+#609
+Pricipal's Office~
+~
+~
+A thick layer of dust lies over everything in the room.  Scrawled in
+blood on the floor, next to the marks made by students heels as they are
+dragged in by their hair, are the words: "Ichiban wuz here alot.  :)" 
+The only exit is east.
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 608
+S
+#610
+Nurse's Office~
+~
+~
+You are forced to shield your eyes from the glare as you enter this room.
+The overhead lights burn as bright as the sun, and the place is sparkling
+clean.  There is an examining table here, and it seems to be occupied by a
+figure covered in a pristine white sheet.  Stainless steel cabinets with
+glass doors hold a variety of things from tongue depressors and band-aids to
+Flintstone chewable vitamins.  
+The only exit is west.
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+0 0 608
+S
+#611
+School Hallway~
+~
+~
+The mist on the floor gets thicker here, rising almost to your waist. 
+You hear voices from the east and west, both droning on in dull monotones. 
+Lockers line the walls, 2 rows on each side, one on top of the other. 
+Something about them catches your eye, and you notice that all bear the same
+number...  
+There are doors to the east and west, and the hallway continues south.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 614
+D1
+~
+~
+0 0 613
+D2
+~
+~
+0 0 608
+D3
+~
+~
+0 0 612
+S
+#612
+English Class~
+~
+~
+The odor of chalk and old ladies assaults you as you enter this room.  A
+decrepit old woman stalks the aisles between the rows of desks carrying a
+ruler measuring at least 2 feet long.  Carved into a broken desk is the
+legend "Wratha was here" 
+The only exit is east.
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 611
+S
+#613
+Chemistry Class~
+~
+~
+Slate-topped tables equipped with gleaming chrome fixtures stand in rows
+in this room, flanked by high metal stools.  Each table has a sink, outlets
+for electrical, and other less readily identifiable bits sticking out at odd
+angles.  The room is lit only by the flickering of the bunsen burners
+scattered around the tables.  Racks of beakers and test tubes line the
+walls, and a smallish man wanders the room muttering to himself.  He looks
+up as you enter...  
+The only exit is west.
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+0 0 611
+S
+#614
+School Hallway~
+~
+~
+The ever-present mist now enfolds you completely, obscuring your vision,
+and seems to emanate from the room to the east.  A foul odor seeps into the
+hallway from the west.  You wonder what could be causing it...  
+There are exits to the east and west, and the hallway continues south.
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 616
+D2
+~
+~
+0 0 611
+D3
+~
+~
+0 0 615
+S
+#615
+Biology Class~
+~
+~
+The odor of formaldehyde and rotting flesh assaults you as you enter this
+class, making you retch uncontrollably.  The broken down tables and desks
+are littered with rotting corpses of varying sizes and shapes, many
+unrecognizable.  A disheveled man runs around the room prodding at them
+seemingly at random with a very sharp looking scalpel..  
+The only exit is east.
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 614
+S
+#616
+Home Economics Class~
+~
+~
+A bank of ovens along one wall of this room glow red, making it
+uncomfortably hot in here.  A white dust fills the air, and the source seems
+to be a plump lady at a long stainless steel table running the length of the
+room.  She seems to be throwing flour about wildly , and making what appear
+to be pies.  
+The only exit is west.
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+0 0 614
+S
+#617
+School Hallway~
+~
+~
+A chill wind whistles through this hallway from the broken windows to the
+south.  Sinister rustlings and faint whispers can be heard coming from the
+east.  Darkness emanates from the doorway to the west.  
+The hallway continues north, and a short set of stairs lead down
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 620
+D1
+~
+~
+0 0 619
+D3
+~
+~
+0 0 618
+D5
+~
+~
+0 0 608
+S
+#618
+History Class~
+~
+~
+This is history.  A pair of lace panties with "Elektra" embroidered in
+them hang from the pencil sharpener 
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 617
+S
+#619
+Music Class~
+~
+~
+You cover your ears as you enter the room, because this is the HIGH
+SCHOOL BAND FROM HELL!  The horrific din blasting at you chills your blood
+and sets your teeth on edge.  A skeletal figure towers above the podium,
+brandishing a pulsating wand of flame.  
+Your only escape from the cacophany is west.
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+0 0 617
+S
+#620
+School Hallway~
+~
+~
+Clouds of choking white dust billow out of the doorway east, and you can
+make out a faint scrathcing noise along with intermittent, ear-piercing
+squeaks.  From the west come sounds of battle, screams of agony, and inhuman
+noises shaking the building with their power.  The hallway continues north
+and south.  
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 622
+D2
+~
+~
+0 0 617
+D3
+~
+~
+0 0 621
+D4
+~
+~
+0 0 623
+S
+#621
+Physical Education Class~
+~
+~
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 620
+S
+#622
+Calculus Class~
+~
+~
+A thick haze of chalk dust is thrown up by the maddened figure at the
+blackboard.  The creature has four arms, and all of them are windmilling
+furiously.  Three hold sticks of white chalk, while one holds an eraser. 
+Scribbling almost faster than the eye can follow, erasing as fast as this
+unlikely creature can write, one combination of symbols recurs: Calculus +
+Kadyr = Confusion. The only exit is west into the hallway.  
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+0 0 620
+S
+#623
+School Roof~
+~
+~
+There's a door north. ;>
+~
+0 401417 0
+Rd     0
+E
+north~
+To the north you see the Second Gate to Hell
+~
+E
+n~
+To the north you see the Second Gate to Hell.
+~
+D0
+~
+Gate~
+119 608 641
+D5
+~
+~
+0 0 620
+S
+#624
+Boiler Room~
+~
+~
+You've found a nasty, dirty, smelly boiler room.  Huge machines hiss and
+clank in the background, giving off noxious fumes and tremendous heat.  As
+you walk across the room, you notice that the only footprints in the dust
+are yoursT his place doesn't look like it gets visited very often, so it may
+be a good place to rest...  
+The only exit is through the trapdoor up.
+~
+0 402445 0
+Rd     0
+D4
+~
+trapdoor~
+3 0 608
+S
+#625
+Shimmering Hallway~
+~
+~
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 628
+D1
+~
+~
+3 0 627
+D2
+~
+~
+119 609 656
+D3
+~
+~
+3 0 626
+S
+#626
+an Office~
+~
+~
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+3 0 625
+S
+#627
+an Office~
+~
+~
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+3 0 625
+S
+#628
+Shimering Hallway~
+~
+~
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 631
+D1
+~
+~
+3 0 630
+D2
+~
+~
+0 0 625
+D3
+~
+~
+3 0 629
+S
+#629
+an Office~
+~
+~
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+3 0 628
+S
+#630
+an Office~
+~
+~
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+3 0 628
+S
+#631
+Shimmering Hallway~
+~
+~
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+3 0 634
+D1
+~
+~
+3 0 633
+D2
+~
+~
+0 0 628
+D3
+~
+~
+3 0 632
+S
+#632
+an Office~
+~
+~
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+3 0 631
+S
+#633
+an Office~
+~
+~
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+3 0 631
+S
+#634
+Reception Area~
+~
+~
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+119 615 666
+D2
+~
+~
+3 0 631
+S
+#641
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 646
+D1
+~
+~
+0 0 642
+D2
+~
+~
+119 0 650
+D3
+~
+~
+0 0 647
+S
+#642
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 649
+D1
+~
+~
+0 0 644
+D2
+~
+~
+0 0 650
+D3
+~
+~
+0 0 648
+S
+#643
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 651
+D1
+~
+~
+0 0 642
+D2
+~
+~
+0 0 653
+D3
+~
+~
+0 0 641
+S
+#644
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 650
+D1
+~
+~
+0 0 649
+D2
+~
+~
+0 0 643
+D3
+~
+~
+0 0 651
+S
+#645
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 653
+D1
+~
+~
+0 0 651
+D2
+~
+~
+0 0 654
+D3
+~
+~
+0 0 652
+S
+#646
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 641
+D1
+~
+~
+0 0 645
+D2
+~
+~
+0 0 642
+D3
+~
+~
+0 0 650
+S
+#647
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 654
+D1
+~
+~
+0 0 652
+D2
+~
+~
+0 0 655
+D3
+~
+~
+0 0 643
+S
+#648
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 647
+D1
+~
+~
+0 0 653
+D2
+~
+~
+0 0 651
+D3
+~
+~
+0 0 654
+S
+#649
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 645
+D1
+~
+~
+0 0 643
+D2
+~
+~
+0 0 641
+D3
+~
+~
+0 0 650
+S
+#650
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 642
+D1
+~
+~
+0 0 641
+D2
+~
+~
+0 0 648
+D3
+~
+~
+0 0 646
+S
+#651
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 649
+D1
+~
+~
+0 0 648
+D2
+~
+~
+0 0 652
+D3
+~
+~
+0 0 655
+S
+#652
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 653
+D1
+~
+~
+0 0 654
+D2
+~
+~
+0 0 647
+D3
+~
+~
+0 0 644
+S
+#653
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 656
+D1
+~
+~
+0 0 646
+D2
+~
+~
+0 0 644
+D3
+~
+~
+0 0 655
+S
+#654
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 645
+D1
+~
+~
+0 0 655
+D2
+~
+~
+0 0 652
+D3
+~
+~
+0 0 647
+S
+#655
+Pits of Hell~
+~
+~
+You wander hopelessly through the Pits of Hell. Gouts of fire belch forth from
+gaping fissures in the charred earth, giving a ruddy red glow to the landscape.
+The roar of the flames assaults your ears while the incredible heat leaves you
+drenched with sweat.
+There are exits in all cardinal directions.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 649
+D1
+~
+~
+0 0 644
+D2
+~
+~
+0 0 646
+D3
+~
+~
+0 0 643
+S
+#656
+Third Gate~
+~
+~
+You have reached an area of calm in the maze.  Before you stands a huge
+blue-glowing gate.  Unfortunately, it's locked.  Looks like you might have
+to convince the guardian to give you the key somehow.  
+The only way out is through the gate to the north.
+~
+0 401421 0
+Rd     0
+D0
+~
+~
+119 609 625
+D4
+~
+~
+0 0 650
+D5
+~
+~
+0 0 642
+S
+#666
+Satan's Throne Room~
+~
+~
+It's judgement day, and here stands the judge. Prepare to meet your doom.
+~
+0 401423 0
+Rd     0
+D4
+~
+trapdoor~
+119 627 25000
+S
+#686
+Vamp's shack of Ill Repute~
+~
+~
+Just a little shanty Vampyre has where he can cut loose.  Looking through
+the hole in the floor, you see Lucretia 
+~
+0 131592 0
+Rd     0
+D5
+~
+~
+0 0 25001
+S
+#696
+Aditu's bedchamber~
+~
+~
+Aditu is not feeling very creative right now.
+~
+0 1542 0
+Rd     0
+S
+#697
+Aditu's laboratory~
+~
+~
+~
+0 8710 0
+Rd     0
+S
+#698
+Silence~
+~
+~
+~
+0 8791044 0
+Rd     0
+S
+#699
+Vampyre's Office~
+~
+~
+~
+0 16908300 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 600 spec_guard
+M 602 spec_healer
+M 608 spec_nosferatu_mob
+M 609 spec_breath_fire
+M 619 spec_cast_adept
+M 620 spec_wanderer
+M 624 spec_executioner
+M 666 spec_breath_lightning
+M 699 spec_poison
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 600 1 600
+G 0 600 0
+M 0 620 1 600
+E 0 626 0 20
+E 0 626 0 21
+M 0 601 1 601
+E 0 606 0 12
+O 0 621 0 601
+E 0 622 0 5
+E 0 623 0 20
+M 0 619 8 608
+O 0 601 0 609
+M 0 602 1 610
+O 0 624 0 610
+P 0 625 0 624
+P 0 625 0 624
+P 0 625 0 624
+P 0 625 0 624
+P 0 625 0 624
+P 0 625 0 624
+P 0 625 0 624
+P 0 625 0 624
+P 0 625 0 624
+P 0 625 0 624
+M 0 604 1 612
+E 0 603 0 20
+M 0 603 1 613
+M 0 605 1 615
+E 0 605 0 20
+M 0 607 1 616
+E 0 607 0 20
+M 0 621 1 618
+E 0 633 0 22
+E 0 634 0 3
+E 0 698 0 0
+M 0 623 1 619
+E 0 635 0 22
+M 0 624 1 621
+M 0 606 1 623
+O 0 612 0 626
+M 0 611 1 626
+E 0 610 0 9
+E 0 610 0 10
+E 0 611 0 22
+M 0 610 1 627
+E 0 610 0 9
+E 0 610 0 10
+E 0 611 0 22
+O 0 612 0 627
+M 0 612 1 629
+E 0 610 0 9
+E 0 610 0 10
+E 0 611 0 22
+O 0 612 0 629
+M 0 613 1 630
+O 0 612 0 630
+E 0 610 0 9
+E 0 610 0 10
+E 0 611 0 22
+M 0 614 1 632
+O 0 612 0 632
+E 0 610 0 9
+E 0 610 0 10
+E 0 611 0 22
+M 0 615 1 633
+O 0 612 0 633
+E 0 610 0 9
+E 0 610 0 10
+E 0 611 0 22
+O 0 614 0 634
+M 0 616 1 634
+G 0 616 0
+P 0 615 0 614
+E 0 629 0 19
+E 0 629 0 18
+E 0 630 0 20
+E 0 631 0 7
+M 0 617 6 634
+G 0 632 0
+E 0 620 0 3
+E 0 620 0 4
+M 0 622 1 641
+M 0 609 8 647
+E 0 619 0 9
+M 0 608 1 656
+G 0 609 0
+M 0 666 1 666
+E 0 613 0 20
+E 0 617 0 6
+E 0 618 0 16
+G 0 627 0
+O 0 686 0 686
+O 0 621 0 686
+S
+
+
+
+#SHOPS
+600 18 0 0 0 0 100 100 0 23
+0
+
+
+
+#$

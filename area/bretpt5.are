@@ -1,0 +1,10360 @@
+#AREADATA
+Name        {90-105} Bretonnian Dungeons~
+Builders    Zhartus~
+VNUMs       13201 13750
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      &rYou feel the presense of a spirit, but it vanishes before you can identify its source.~
+SoundsA     spell8.wav V=100 L=1 P=50 T=Background~
+Music       u4_dungn.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#13201
+school pirhana~
+a school of Pirhana~
+A school of Pirhana swims here.
+~
+~
+101 168296640 16 2 2 -500 S
+95 1 190 190 0 14000d0+0 0d0+0
+800 0 0
+0 0 0
+131072 0 0
+>fight_prog 60~
+use bite
+~
+|
+#13202
+hammerhead shark~
+a hammerhead shark~
+A hammerhead shark swims here.
+~
+~
+97 232 0 258 2 0 S
+95 1 190 190 0 14200d0+0 0d0+0
+800 0 0
+0 0 0
+131072 0 0
+>fight_prog 10~
+emote rams you with its head, attempting to destroy your equipment!
+cast shatter
+~
+>fight_prog 50~
+cast 'iceball'
+~
+|
+#13203
+deathknight hatred knight hate~
+the Death Knight of Hatred~
+The Death Knight of Hatred is here, gazing into your soul.
+~
+The Death Knight is here.  He defies description.  Everything that is
+evil is embodied in his form.  
+~
+524359 32768 16 2 3 -1000 S
+95 1 190 190 0 30000d0+0 0d0+0
+950 25 0
+0 0 1
+131074 0 0
+>all_greet_prog 100~
+say Ah, you've made it this far.  Perhaps there is indeed hope for this world.
+~
+>speech_prog hope~
+say Yes, a pitiful thing to cling to.  Of course there is no hope!  You shall all perish at the hands of the one true master!
+~
+>speech_prog master~
+Yes, the master Zhakarius!  He will live again!
+~
+>speech_prog zargon~
+say What?  My name?  How did you know my name?  You must pay for your insolence!
+mpmload 13215
+mpforce trueknight cast 'dispel magic' $n
+mpforce trueknight cast 'dispel magic' $n
+mpforce trueknight cast 'dispel magic' $n
+mpforce trueknight cast 'dancing lights' $n
+mpforce trueknight cast 'bend light' $n
+mpforce trueknight mpoload 13231
+mpforce trueknight wield hammer
+mpoload 13201
+unlock west
+open west
+west
+close east
+lock east
+mptrans $i 1
+~
+>fight_prog 100~
+say I can not be killed by you, pathetic fool!
+cast 'dispel magic'
+cast 'demonfire'
+~
+|
+#13204
+liquid ice~
+the Liquid Ice~
+A strange formation of ice is here.  It appears to be liquid.
+~
+It does not appear to have any discernable body, head or face.  It is
+very strange.  
+~
+4194401 201851072 16 16386 514 -1000 S
+100 1 200 200 0 27000d0+0 0d0+0
+1000 0 0
+0 0 0
+133123 0 0
+>fight_prog 20~
+cast ultrablast
+~
+>fight_prog 20~
+cast blindness
+~
+>fight_prog 20~
+cast 'bend light'
+~
+>fight_prog 20~
+cast 'dancing lights'
+~
+>fight_prog 50~
+cast 'dispel magic'
+~
+|
+#13205
+blue whale~
+a blue whale~
+A blue whale is here, floating along the northerly passageway.
+~
+A beautiful, giant blue whale, in all its glory.  It is enormous, at
+least 30 meters in length.  
+~
+201 151519232 16 16386 6 1000 S
+100 1 200 200 0 32400d0+0 0d0+0
+1000 24 0
+0 0 0
+131074 0 0
+>all_greet_prog 100~
+say Greetings, little one.  Are you well?
+~
+>speech_prog yes~
+say Good, glad to hear it.  You should probably stay away from the east end of this Shrine.
+~
+>speech_prog no~
+say Aww, that's too bad.  You should probably stay away from the east end of this Shrine.
+~
+>speech_prog shrine~
+say Yes, the Ocean Shrine is one of the Death Knight lairs!
+~
+>speech_prog east end~
+say The east end is very, very cold.  Your frail body can not stand it, and it will
+surely hurt you the longer you stay there.
+~
+>speech_prog death knight~
+say Yes, the Death Knight of Hate lives here.  He is most vile!
+~
+>speech_prog vile~
+say Yes, the Death Knight is most vile!  I'm glad you agree with me.
+~
+>speech_prog hate~
+say He can only be harmed if you first learn his true name.
+~
+>speech_prog true name~
+say I do not know it, sorry.  But I'm sure someone does!
+~
+>fight_prog 25~
+cast 'dispel magic'
+~
+>fight_prog 25~
+say Please, leave me alone!
+flee
+~
+>rand_prog 5~
+emote sways gently in the water.
+~
+>rand_prog 5~
+emote looks at you with a very large eye
+~
+|
+#13206
+hatred minion~
+a hatred minion~
+A hatred minion is here.
+~
+~
+99 34078720 16 1610614784 2 -1000 S
+100 1 200 200 0 26250d0+0 0d0+0
+1000 23 0
+0 0 0
+131074 0 0
+>fight_prog 20~
+say Die...
+cast hellfire
+~
+>fight_prog 20~
+say I obey...
+cast 'dispel magic'
+~
+>fight_prog 15~
+say Yes, master...
+mpoload 13218
+give potion hate
+give potion hate
+mpforce hate quaf potion
+mpjunk all
+~
+|
+#13207
+giant squid~
+a giant squid~
+An enormous, giant squid is here, lashing its tentacles.
+~
+~
+67 134758464 327696 1073741826 2 -500 S
+105 1 420 420 0 26575d0+0 0d0+0
+1050 0 0
+0 0 0
+131074 0 0
+>rand_prog 5~
+emote darts to another location quite quickly
+~
+>rand_prog 5~
+emote looks to be ready to spray some ink
+~
+>fight_prog 40~
+emote sprays its ink at you!
+cast 'unholy curse'
+~
+>fight_prog 20~
+emote lashes at you with its tentacles!
+cast 'cone of frost'
+~
+>rand_prog 20~
+take all
+mpjunk all
+~
+>fight_prog 20~
+take all
+mpjunk all
+~
+>death_prog 120~
+mpoload 13216
+~
+|
+#13208
+guardian circle~
+the Guardian of the Circle~
+The Guardian of the Circle is here.
+~
+The beast is immense.  He is at complete contrast with the rest of the
+room, with his skin being red.  He is the spitting image of the Dark Lord
+himself.  
+~
+4194371 34078720 144 1610639618 6 -1000 S
+120 1 600 600 0 43100d0+0 0d0+0
+1200 23 0
+0 0 1
+131074 0 0
+>all_greet_prog 100~
+say Greetings, mortal.  You will never find the master.
+say And even if you did, he can not be harmed by a pathetic peon such as yourself!
+laugh
+~
+>speech_prog master~
+say Yes, my master.  The one who dwells in this Shrine.
+~
+>speech_prog shrine~
+say Why, tis the Ocean Shrine.  Do you know what this shrine used to represent?
+~
+>speech_prog yes~
+say Good, then speak no more of it, or face the consequences.
+~
+>speech_prog no~
+say It used to be the Shrine of Love.  Now speak no more of it, or face the consequences.
+~
+>speech_prog love~
+say You were warned, peon!
+cast 'dispel magic' $n
+cast 'dispel magic' $n
+cast 'dispel magic' $n
+cast 'dispel magic' $n
+cast 'dispel magic' $n
+~
+>fight_prog 40~
+say You must perish!
+cast 'dispel magic'
+cast 'dancing lights'
+cast 'bend light'
+~
+>fight_prog 50~
+say You will rot in hell!
+cast 'tomb rot'
+cast 'tortured soul'
+cast 'faerie fire'
+cast 'fire breath'
+~
+>fight_prog 20~
+say You will face my wrath, pathetic one!
+cast 'demonfire'
+cast 'stigeon mists'
+cast 'meteor swarm'
+mpoload 13218
+quaf potion
+~
+>death_prog 120~
+mpoload 13228
+drop horns
+emote turns into a pile of ash
+mpoload 13229
+~
+|
+#13209
+ghost pirate~
+a Ghost Pirate~
+The ghost of a pirate is here, floating aimlessly.
+~
+~
+4194403 34078784 4194320 536873216 0 0 S
+100 1 200 200 0 26200d0+0 0d0+0
+0 0 0
+0 0 0
+131074 0 0
+>fight_prog 25~
+emote does some fancy footwork!
+use 'back kick'
+~
+>fight_prog 15~
+emote gets behind you!
+use circle
+~
+>fight_prog 20~
+cast 'entangle'
+~
+>death_prog 120~
+mpoload 13213
+mpecho $i dissipates into thin air.
+drop sword
+~
+|
+#13210
+captain ghost mage~
+a Ghost Mage~
+A Ghost mage is here, the captain of the ship!
+~
+It is quite see through, but solid enough to know that it will hurt you!  
+~
+4194407 134742144 4292624 8192 2 -500 S
+110 1 220 220 0 38380d0+0 0d0+0
+1100 19 0
+0 0 0
+131074 0 0
+>fight_prog 15~
+say Die, pathetic being!
+cast 'sunburst'
+~
+>fight_prog 20~
+say Heal me, brothers!
+mpoload 13218
+quaf potion
+mpjunk all
+~
+>fight_prog 25~
+say Begone with your magic!
+cast 'dispel magic'
+~
+>death_prog 5~
+mpoload 13214
+mpoload 13215
+mpoload 13216
+mpoload 13217
+drop all
+~
+>death_prog 120~
+mpjunk all
+mpoload 13202
+mpecho $i dissipates into thin air!
+drop all
+drop 1500 coins
+mpjunk all
+~
+|
+#13211
+ship ghost~
+a Ghost Ship~
+A ghost ship is here, floating gently in the water before you.
+~
+The ghost ship is immense.  It has many gunports along both sides, two
+masts, tattered sails, plus that haunting feeling that comes with all
+ghosts.  
+~
+5767235 201867328 4292656 24576 2 0 S
+105 1 350 350 0 31000d0+0 0d0+0
+1050 0 0
+0 0 0
+131074 0 0
+>fight_prog 25~
+emote attempts to repair itself!
+cast 'cure serious' $i
+~
+>fight_prog 30~
+mpecho You hear some voices screaming aboard the ship.
+emote fires the freeze cannons!
+cast 'freeze bullet'
+~
+>fight_prog 15~
+emote readies it's naptha balls!
+cast 'fire breath'
+~
+>death_prog 120~
+mpecho $i begins to break apart, and it's crew unloads and attacks!
+mpmload 13209
+mpforce pirate mpoload 13213
+mpforce pirate mpoload 13214
+mpforce pirate wear all
+mpmload 13209
+mpforce pirate mpoload 13213
+mpforce pirate mpoload 13214
+mpforce pirate wear all
+mpmload 13210
+mpforce captain mpoload 13214
+mpforce captain mpoload 13215
+mpforce captain mpoload 13216
+mpforce captain mpoload 13217
+mpforce captain mpoload 13213
+mpforce captain wear all
+drop 2000 coins
+mptrans self 1
+~
+>fight_prog 75~
+emote fires its broadside cannons!
+cast 'armour piercing bullet'
+~
+>rand_prog 22~
+emote floats aimlessly about the room.
+~
+>rand_prog 10~
+emote makes wailing noises.
+~
+>rand_prog 12~
+mpecho You hear noises, maybe voices, coming from the ships deck.
+~
+|
+#13212
+tentacled apparition~
+a Tentacled Apparition~
+A strange, spherical beast is here, seemingly made up completely of tentacles
+~
+You can not discern any body.  The Tentacles seem to come from everywhere.
+~
+4194369 201343104 16 16386 18 -1000 S
+120 1 240 240 0 53150d0+0 0d0+0
+1200 0 0
+0 0 0
+131074 0 0
+>fight_prog 20~
+emote lashes you with its razor sharp tentacles!
+use slit
+~
+>fight_prog 30~
+emote makes some patterns in the air with its tentacles
+cast 'dispel magic'
+~
+>fight_prog 30~
+mpecho $n slices off a tentacle, and it attacks!
+mpmload 13227
+~
+>death_prog 120~
+mpoload 13225
+mpoload 13225
+mpoload 13226
+mpoload 13227
+drop all
+emote shrivels up.
+mpoload 13228
+~
+|
+#13213
+demi-lord hate~
+the Demi-Lord of Hate~
+The Demi-Lord of Hate is here.
+~
+The Demi-Lord of Hate stands before you, dripping with blood.  His skin,
+what little of it you can see, is almost completely decayed and black as
+night.  He smells of death itself.  
+~
+99 34078786 17301524 537020672 2 0 S
+125 1 500 500 0 49025d0+0 0d0+0
+1250 23 0
+0 0 0
+131074 0 0
+>fight_prog 10~
+say Your eyes shall burn out of their sockets!
+cast 'flash burn'
+~
+>fight_prog 20~
+say Your armor is pathetic!
+cast 'dancing lights'
+~
+>fight_prog 15~
+say Come my minions, Assist me!
+mpmload 13206
+mpforce minion mpkill $n
+~
+>fight_prog 100~
+say May the demons ravage your soul!
+cast demonfire
+~
+>death_prog 120~
+say Arghhh!!  No!!!  I am defeated!!  You shall never defeat my master, the Death Knight!
+~
+>all_greet_prog 100~
+say Welcome to Death, Mortal!
+cast 'dispel magic' $n
+~
+>rand_prog 15~
+mppurge
+~
+|
+#13214
+gazer~
+the Gazer~
+A gazer is here, floating through the water.
+~
+A gazer is here.  It has a spherical body, and many eye stalks, topped
+upon a larger central eye.  It has a gigantic mouth underneath its body.  
+~
+97 201850944 4259888 24576 6 -1000 S
+125 1 500 500 0 49025d0+0 0d0+0
+1250 0 0
+0 0 0
+131074 0 0
+>fight_prog 30~
+say Become cold...like the frozen north...
+cast 'winters chill'
+~
+>fight_prog 20~
+say 'May your blood boil...as the surface of the sun...'
+cast sunburst
+~
+>fight_prog 20~
+say Die...a thousand deaths...
+cast 'dancing lights'
+~
+>all_greet_prog 100~
+say Welcome... to your frozen grave...
+cast 'cloud of cold'
+~
+>fight_prog 20~
+say What once was yours... is now mine...
+take all
+~
+>fight_prog 25~
+say I am become death... I am become life...
+mpoload 13218
+mpoload 13218
+quaf potion
+quaf potion
+quaf potion
+~
+>fight_prog 100~
+say Your are not magical... You will become death...
+cast 'dispel magic'
+~
+|
+#13215
+deathknight hatred knight hate trueknight~
+The Death Knight of Hatred~
+The Death Knight of Hatred is here.
+~
+The Death Knight is here.  He defies description.  Everything that is
+evil is embodied in his form
+~
+99 100663360 16777236 536897794 6 -1000 S
+145 1 700 700 0 65650d0+0 0d0+0
+1450 25 0
+0 0 1
+133122 0 0
+>fight_prog 30~
+say You will perish a thousand deaths!
+cast 'dispel magic'
+cast 'bend light'
+use slit
+~
+>fight_prog 40~
+say Feel my wrath!
+cast 'fire breath'
+cast 'lightning breath'
+cast 'gas breath'
+~
+>fight_prog 40~
+say Feel my wrath!
+cast 'frost breath'
+cast 'acid breath'
+cast 'lightning breath'
+~
+>fight_prog 45~
+say Become a cripple!
+cast 'dispel magic'
+cast 'bend light'
+cast 'nagaroms curse'
+~
+>fight_prog 30~
+say I will restore myself!
+mpoload 13218
+quaf potion
+~
+>fight_prog 50~
+say Feel my true power!
+cast demonfire
+cast 'winters chill'
+use slam
+~
+>fight_prog 100~
+say I hate all things!
+cast demonfire
+~
+>death_prog 25~
+mpoload 13230
+drop all
+~
+|
+#13216
+high cleric~
+The High Cleric~
+The High Cleric stands here, a peaceful look in his eyes.
+~
+Something is different about him.  It's as if he's not really here.
+~
+67 201343168 0 0 1 0 S
+1 1 2 2 0 0d0+0 0d0+0
+10 19 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+say Greetings!  I see you have found the Ocean Shrine.  I hope you have the key!
+~
+>speech_prog key~
+say Yes, I have the key.  See my true form, and I'll give it to you!
+~
+>speech_prog shrine~
+say Yes, I have the key.  See my true form, and I'll give it to you!
+~
+>speech_prog ocean~
+say Yes, I have the key.  See my true form, and I'll give it to you!
+~
+>speech_prog home~
+say I am in my home, at the Forest Shrine.
+~
+>speech_prog true~
+say Yes, my true form is in its home.
+~
+>speech_prog form~
+say Yes, my true form is in its home.
+say Make sure you give me the password, or you won't get the key!
+~
+>speech_prog password~
+tell $n The password is vilis!
+~
+>speech_prog hi hello~
+say Greetings, $n!  Do you have the key?
+~
+>speech_prog job~
+say It is my job to keep watch over the shrine.
+~
+>speech_prog bye~
+say Farewell!
+~
+|
+#13227
+tentacle~
+a tentacle~
+A sliced of tentacle is here.
+~
+This is a sliced off tentacle from the main Tentacle Apparition.
+~
+97 134742144 16 2 18 -1000 S
+75 1 150 150 0 0d0+0 0d0+0
+750 0 0
+0 0 0
+0 0 0
+>fight_prog 20~
+emote use slams into $n!
+slam
+~
+|
+#13501
+high cleric~
+The High Cleric~
+The High Cleric stands here, a peaceful look in his eyes.
+~
+Something is different about him.  It's as if he's not really here.
+~
+67 201343168 0 0 1 0 S
+1 1 2 2 0 0d0+0 0d0+0
+10 19 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+say You are brave to come this far into the depths of the volcano.  Do you have the key?
+~
+>speech_prog volcano~
+say You are in the volcano now.  Do you have the key to gain entrance?
+~
+>speech_prog key~
+say Yes, I have the key.  See my true form, and I'll give it to you!
+~
+>speech_prog true~
+say Yes, my true form is in its home.
+~
+>speech_prog form~
+say Yes, my true form is in its home.
+~
+>speech_prog home~
+say I am in my home, at the Forest Shrine.  Make sure you give me the password, or you won't get the key!
+~
+>speech_prog password~
+tell $n The password is inflamus!
+~
+>speech_prog hi hello~
+say Greetings, $n!
+~
+>speech_prog job~
+say I am watching over this volcano.
+~
+>speech_prog bye~
+say Farewell, $n!
+~
+|
+#0
+
+
+
+#OBJECTS
+#13201
+key cleric~
+the key of the Cleric~
+A key sits here.~
+~
+18 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+13203 0 0
+E
+key~
+There is a slot on the key.  It looks like something fits in that slot.
+~
+E
+cleric~
+There is a slot on the key.  It looks like something fits in that slot.
+~
+#13202
+key pirate~
+a pirate key~
+An old key sits here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+13203 0 0
+E
+key~
+There is a prong on the key.  It looks like it fits in a slot.
+~
+E
+pirate~
+There is a prong on the key.  It looks like it fits in a slot.
+~
+#13203
+key joined~
+a joined key~
+A joined key sits here~
+~
+18 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 13201 13202
+E
+key~
+It is a key made from two other keys.  It could probably be separated.
+~
+E
+joined~
+It is a key made from two other keys.  It could probably be separated.
+~
+#13204
+dark key~
+a dark key~
+A dark key rests here.~
+~
+18 22 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+key~
+It is very dark, and it hums.  It radiates evil.
+~
+E
+dark~
+It is very dark, and it hums.  It radiates evil.
+~
+#13205
+key gazer~
+a key~
+An odd looking key sits here.~
+~
+18 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+13207 0 0
+E
+key~
+The key has a single eye carved into it, with the pupil missing.
+~
+E
+gazer~
+The key has a single eye carved into it, with the pupil missing.
+~
+#13206
+key gazer~
+a key~
+An odd looking key sits here.~
+~
+18 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+13207 0 0
+E
+key~
+The key has a single eye carved into it, with only the pupil having detail.
+~
+E
+gazer~
+The key has a single eye carved into it, with only the pupil having detail.
+~
+#13207
+guardian key~
+a guardian key~
+The key to a great power sits here.~
+~
+18 23 0 0 0 1 95
+100 100
+0~ 0~ 0~ 0~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#13208
+water pools~
+water~
+Pools of water have formed here, flowing towards the slant eastward.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+5000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#13209
+water trickle~
+a trickle of water~
+A trickle of water flows down the stairs.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+5000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#13210
+water~
+water~
+There is water everywhere here, well over your head.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+5000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#13211
+cannon~
+a series of broadside cannons~
+A bunch of cannons are here.~
+~
+5 0 0 0 0 8192 106
+100 100
+0~ 0~ 0~ 6~
+750 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 40
+#13212
+armor armour plating~
+armor plating~
+A ships armour plating is here.~
+~
+9 0 0 0 0 8 105
+100 100
+0~ 0~ 0~ 0~
+1400 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 15
+A
+2 15
+#13213
+ghost sword~
+a Ghost Sword~
+A sword sits here on the ground, humming.~
+~
+5 134236226 0 0 0 8193 100
+100 100
+0~ 0~ 0~ 1~
+14 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 100
+A
+26 75
+A
+19 35
+A
+18 25
+A
+13 100
+#13214
+ghost armor~
+a suit of Ghost Armor~
+A suit of ghost armor is here.~
+~
+9 268451842 0 0 0 9 100
+100 100
+0~ 0~ 0~ 0~
+45 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 25
+A
+18 35
+A
+24 -10
+A
+14 50
+#13215
+skull ring~
+a Skull ring~
+A ring made from a tiny skull sits here.~
+~
+9 37814784 0 0 0 3 95
+100 100
+0~ 0~ 0~ 0~
+2 1080 0
+5 0
+entangle~
+25 25
+0 0 0
+A
+13 80
+A
+19 10
+A
+18 9
+#13216
+bejeweled necklace~
+a bejeweled necklace~
+A bejeweled necklace has been discarded here.~
+~
+9 2049 0 0 0 5 99
+100 100
+0~ 0~ 0~ 0~
+5 3960 0
+5 0
+dancing lights~
+2 2
+0 0 0
+A
+13 40
+A
+19 10
+A
+18 10
+#13217
+staff skulls~
+the Staff of Skulls~
+The Staff of Skulls sits here.~
+~
+4 33554499 0 0 0 16385 103
+100 100
+103~ 5~ 1~ haste~
+5 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 150
+A
+12 150
+A
+19 14
+A
+18 12
+#13218
+potion healing~
+a potion~
+A healing potion is here.~
+~
+10 268435456 0 0 0 1 106
+100 100
+0~ complete healing~ complete healing~ cancellation~
+10 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#13219
+oceanic helm~
+oceanic helm~
+A helmet is here, covered in shells.~
+~
+9 2048 12 0 8388608 17 100
+100 100
+0~ 0~ 0~ 0~
+2 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+32 5
+A
+48 10
+A
+2 1
+A
+12 50
+A
+13 100
+A
+24 -20
+A
+19 10
+A
+18 10
+#13220
+oceanic armor armour~
+oceanic armor~
+A suit of armor is here, covered in shells.~
+~
+9 2048 12 0 8388608 9 100
+100 100
+0~ 0~ 0~ 0~
+6 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+32 5
+A
+48 15
+A
+19 32
+A
+18 28
+A
+13 100
+A
+14 -50
+A
+24 -10
+A
+2 1
+#13221
+oceanic leggings~
+oceanic leggings~
+A set of leggings are here, covered in water designs.~
+~
+9 2048 12 0 8388608 33 101
+100 100
+0~ 0~ 0~ 0~
+4 1050 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+48 5
+A
+19 11
+A
+18 11
+A
+13 100
+A
+14 -25
+A
+24 -5
+A
+2 1
+#13222
+oceanic armguards~
+oceanic armguards~
+A set of armguards are here.  They look wet.~
+~
+9 2048 12 0 8388608 257 101
+100 100
+0~ 0~ 0~ 0~
+2 1050 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+48 10
+A
+19 10
+A
+18 12
+A
+13 110
+A
+24 -10
+A
+2 1
+#13223
+oceanic gauntlets~
+oceanic gauntlets~
+A pair of gauntlets are here, seemingly generating their own water.~
+~
+9 2048 12 0 8388608 129 101
+100 100
+0~ 0~ 0~ 0~
+2 1050 0
+5 0
+create spring~
+15 15
+0 0 0
+A
+46 5
+A
+48 5
+A
+19 12
+A
+18 10
+A
+13 90
+A
+24 -12
+A
+2 1
+#13224
+ethereal sword~
+etheral sword~
+A sword is here, its blade shifting in and out of existance.~
+~
+5 67109456 16396 0 8388608 8193 102
+100 100
+0~ 0~ 0~ 3~
+3 1200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+A
+26 40
+A
+25 50
+A
+12 150
+A
+13 120
+A
+19 42
+A
+18 30
+#13225
+diamond~
+a diamond~
+A glittering diamond is here.~
+~
+8 0 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+4 10000 0
+0 0
+reserved~
+0 0
+0 0 0
+#13226
+tentacled belt~
+a tentacle~
+A tentacle is here.  It seems to be able to be worn as a belt.~
+~
+9 64 12 0 8388608 2049 105
+100 100
+0~ 0~ 0~ 0~
+5 1000 0
+5 0
+breathe water~
+-1 -1
+0 0 0
+A
+13 200
+A
+12 200
+A
+25 90
+A
+18 12
+A
+19 18
+A
+2 -2
+A
+48 5
+A
+14 -50
+#13227
+hilt sword zhakarius~
+a hilt~
+A hilt of a sword is here.  It seems to be irradiating evil.~
+~
+5 16 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+4 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#13228
+horns guardian~
+the horns of the guardian~
+The Horns of a Guardian of the Blue Circle lie here, glowing.~
+~
+9 66049 4096 0 0 17 104
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 13
+A
+13 150
+A
+25 80
+A
+26 50
+A
+14 -25
+A
+3 2
+A
+4 2
+A
+29 10
+A
+48 -20
+A
+32 10
+A
+19 15
+A
+2 -2
+#13229
+pile ash~
+a pile of ash~
+A pile of ash is here.~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+10 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#13230
+circle love~
+the Circle of Love~
+A shield is here, glowing blue.  It is the Circle of Love.~
+~
+9 536870977 0 0 0 513 105
+100 100
+0~ 0~ 0~ 0~
+5 1500 0
+5 0
+circle of love~
+-1 -1
+0 0 0
+A
+46 -10
+A
+18 20
+A
+19 20
+A
+12 200
+A
+25 200
+A
+30 10
+A
+32 10
+A
+39 -10
+A
+13 200
+A
+43 10
+A
+14 100
+A
+4 5
+A
+1 -5
+#13231
+hammer hatred~
+the hammer of hatred~
+The Hammer of Hatred is here.~
+~
+5 33554432 32796 0 0 8193 105
+100 100
+0~ 0~ 0~ 7~
+8 1050 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+46 -10
+A
+30 20
+A
+24 -40
+A
+26 50
+A
+12 150
+A
+13 200
+A
+19 90
+A
+18 90
+A
+14 -50
+>wear_prog 100~
+0
+mpecho As $n wields the Hammer of Hatred, the sky above darkens.
+~
+|
+#13501
+charred key~
+a charred key~
+A key, charred with volcanic ash, sits here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 10 0
+0 0
+reserved~
+0 0
+0 0 0
+#13507
+sign~
+a sign~
+A charred sign is hanging here on a post.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+10000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+After brushing away some ash and soot, you can make out the following
+message: 
+ 
+BEWARE: The Dragon Army of Zhakarius Resides Here.  Turn Back If
+You Value Your Life!
+~
+#0
+
+
+
+#ROOMDATA
+#13201
+At the Base of the Stairs~
+water1.wav T=Background P=50 V=100 L=1~
+~
+You have reached the bottom of the slope, and are now submersed in
+water.  The underwater tunnels that stretch to the north and south are
+square in nature, with the walls indenting slightly in an arc, causing an
+odd shape in the halls.  
+~
+0 401423 8
+Rd     0
+D0
+~
+~
+0 0 13215
+D2
+~
+~
+0 0 13203
+D3
+~
+~
+0 0 13202
+S
+#13202
+At the Base of the Stairs~
+water1.wav T=Background P=50 V=100 L=1~
+~
+You have decended a long flight of stairs into the depths of the Ocean
+Shrine.  The floor slants quite steeply downward to the east, into an area
+full of water!  It appears this section is underwater.  You had best obtain
+a way of breathing underwater before you continue in that direction.  The
+stairs exit the area back to the surface.  
+~
+0 402443 0
+Rd     0
+D1
+~
+~
+0 0 13201
+D4
+~
+~
+0 0 13266
+S
+#13203
+Underwater Tunnel~
+~
+~
+You are floating through an underwater tunnel.  The convex walls are
+slightly disorienting, but nothing to get worried about.  This portion of
+the hall goes north or south.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13201
+D2
+~
+~
+0 0 13204
+S
+#13204
+Underwater Tunnel~
+~
+~
+You arrive at a corner in the underwater hallway.  You see small bits of
+moss and other such underwater life floating here and there, disturbed
+slightly by the current shifts that you create.  You can go north or east
+from here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13203
+D1
+~
+~
+0 0 13205
+S
+#13205
+Underwater Tunnel~
+~
+~
+You are floating through a very large underwater tunnel.  You can see the
+tunnel turn sharply north in either direction.  Its taking some time for you
+to get used to swimming instead of your normal mode of transportation.  A
+second tunnel also branches off to the south here.  
+~
+0 401931 8
+Rd     0
+D1
+~
+~
+0 0 13206
+D2
+~
+~
+0 0 13252
+D3
+~
+~
+0 0 13204
+S
+#13206
+Underwater Tunnel~
+~
+~
+You are swimming through an underwater tunnel.  The lack of current
+supports your theory that there is no drainage lake, but that also means
+that there is no source of water.  The hallway continues east or west 
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13207
+D3
+~
+~
+0 0 13205
+S
+#13207
+Underwater Tunnel~
+~
+~
+You are at a corner in the tunnel.  You notice that the water is rather
+stale tasting, but suprisingly clean.  You can see several different ways to
+go to the north, or you can go to the west.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13208
+D3
+~
+~
+0 0 13206
+S
+#13208
+Underwater Tunnel~
+~
+~
+You are moving through a very large underwater tunnel.  A second tunnel,
+great in length, stretches deeper into the shrine to the east.  You can also
+go north or south from here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13209
+D1
+~
+~
+0 0 13248
+D2
+~
+~
+0 0 13207
+S
+#13209
+Underwater Tunnel~
+wind1.wav V=100 P=75 L=1 T=Background~
+~
+You are floating along the main hallway in the Ocean Shrine.  A very
+large piece of art hangs on the west wall.  It depicts two large tenticles
+grasping each other from opposite ends of the painting, with a blinding
+flash eminating from where they touch.  The hallway continues north or
+south.  
+~
+0 401423 8
+Rd     0
+D0
+~
+~
+0 0 13210
+D2
+~
+~
+0 0 13208
+D3
+~
+~
+599 13203 13264
+S
+#13210
+Underwater Tunnel~
+None~
+~
+You are floating through the underwater tunnels of the Ocean Shrine.  A
+second hallway leaves off this main one to the east, and it is rather long. 
+The hallway continues to the north and south of here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13211
+D1
+~
+~
+0 0 13216
+D2
+~
+~
+0 0 13209
+S
+#13211
+Underwater Tunnel~
+~
+~
+You arrive at a corner in the hallway.  You can see several branches
+eastward to the south from here.  Small bits of moss and plankton float by,
+minding their own business.  You can go south or west from here.  
+~
+0 401419 8
+Rd     0
+D2
+~
+~
+0 0 13210
+D3
+~
+~
+0 0 13212
+S
+#13212
+Underwater Tunnel~
+~
+~
+You are swimming down a short hallway.  The immense size of the halls
+themselves amazes you.  The water stirs slightly as you pass, but other than
+that, there is virtually no current.  
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13211
+D3
+~
+~
+0 0 13213
+S
+#13213
+Underwater Tunnel~
+~
+~
+You are floating gently through an underwater tunnel system.  Small fish
+dart to and fro about you, seeming to be suprised by your appearance.  You
+discern that it is not often that these small creatures play host to
+visitors.  You can't help but feel something of a greater power watching
+you.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13249
+D1
+~
+~
+0 0 13212
+D3
+~
+~
+0 0 13214
+S
+#13214
+Underwater Tunnel~
+~
+~
+You calmly make your way to a bend in the hallway.  The distinct
+brickwork in the halls depict massive flowing scenes, huge waves crashing
+upon the shores of a great continent.  The hallway continues to the east or
+south.  
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13213
+D2
+~
+~
+0 0 13215
+S
+#13215
+Underwater Tunnel~
+~
+~
+You are floating through an approximately twenty foot by twenty foot
+hallway under the great ocean surrounding bretonnia.  Small bits of moss
+sway lazily as you disturb the current near them.  Oddly, the water does not
+have any natural current whatsoever.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13214
+D2
+~
+~
+0 0 13201
+S
+#13216
+Underwater Tunnel~
+~
+~
+You are floating through an underwater tunnel.  You can sense that the
+temperature of the water declines the further east you travel.  You can go
+east or west from here.  
+~
+0 401423 8
+Rd     0
+D1
+~
+~
+0 0 13217
+D3
+~
+~
+0 0 13210
+S
+#13217
+Underwater Tunnel~
+~
+~
+You are swimming through a tunnel.  A smaller tunnel branches off to the
+north of here, and a T-Junction can be seen to the west.  You can also
+travel in the eastern direction, where the water seems to be colder than
+here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13218
+D1
+~
+~
+0 0 13222
+D3
+~
+~
+0 0 13216
+S
+#13218
+Underwater Tunnel~
+~
+~
+You are swimming through a smaller tunnel.  The stonework here is not as
+well defined as in the larger hallway, but there is still quite an amount of
+detail.  You can go north or south.  
+~
+0 401423 8
+Rd     0
+D0
+~
+~
+0 0 13219
+D2
+~
+~
+0 0 13217
+S
+#13219
+Underwater Tunnel~
+~
+~
+You are swimming through a small underwater tunnel.  It bends to the east
+here, where you can see it ends at an iron door.  You can go south from
+here, into a larger tunnel, or to the east to the door.  
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13220
+D2
+~
+~
+0 0 13218
+S
+#13220
+Underwater Tunnel~
+~
+~
+You are swimming through an underwater tunnel, which ends at a door on
+the east wall.  The door is made of iron, and is circular.  A carving of a
+sword has been placed in the exact centre of the door.  You can go east
+through it, or west.  
+~
+0 401423 8
+Rd     0
+D1
+~
+~
+119 13202 13221
+D3
+~
+~
+0 0 13219
+S
+#13221
+Underwater Tunnel~
+~
+~
+You are in a small underwater room.  There is a tunnel to the west,
+through a circular iron door.  This room is totally empty, save for some odd
+looking black marks on the walls.  The room is spherical, confusing your
+sense of direction.  
+~
+0 401419 8
+Rd     0
+D3
+~
+~
+119 13202 13220
+S
+#13222
+Underwater Tunnel~
+~
+~
+You are making your way through an underwater tunnel.  The rounded walls
+are crafted by the hand of someone adept in their craft.  Spiral designs
+cover most of the walls.  You can go east or west from here.  
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13223
+D3
+~
+~
+0 0 13217
+S
+#13223
+Underwater Tunnel~
+~
+~
+You are swimming through an underwater tunnel.  A large hallway can be
+seen to the east of here, where the temperature of the water seems to be
+getting cooler.  You can also go west from here.  
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13224
+D3
+~
+~
+0 0 13222
+S
+#13224
+Underwater Tunnel~
+~
+~
+You are making your way through an underwater tunnel.  The stonework is
+layed out in a spiral pattern, making a repeating, hypnotic pattern.  You
+notice that the temperature of the water gets colder the farther east you
+travel.  You can move east or west from here.  
+~
+0 401423 8
+Rd     0
+D1
+~
+~
+0 0 13225
+D3
+~
+~
+0 0 13223
+S
+#13225
+Underwater Tunnel~
+spellon1.wav V=100 P=75 L=1 T=Background~
+~
+You have reached a crossroads in the tunnels.  Two smaller tunnels, one
+leading north, the other south, branch off from here.  A bright white light
+can be seen occasionally shooting down north/south "hallway".  You can go in
+any of the four major compass directions.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13253
+D1
+~
+~
+0 0 13226
+D2
+~
+~
+0 0 13260
+D3
+~
+~
+0 0 13224
+S
+#13226
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through a dark, cold tunnel.  It is definately much
+colder here than to the west.  The extreme cold is starting to take its toll
+on your body, slowing your movement and thinking.  A demonic chant can be
+heard, its source unknown.  You can go east or west from here.  
+~
+0 268836879 8
+Rd     100
+D1
+~
+~
+0 0 13227
+D3
+~
+~
+0 0 13225
+S
+#13227
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are moving through an underwater passageway.  The tunnel turns here,
+leading off on a ninety degree angle.  The water is definately getting
+colder the farther east you travel.  You can go north or west from here.  
+~
+0 268836875 8
+Rd     100
+D0
+~
+~
+0 0 13228
+D3
+~
+~
+0 0 13226
+S
+#13228
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through an underwater tunnel, and have come to a bend. 
+You can hear the voices of what sounds like a demonic cult, but you can't
+make out the words.  You can go east or south from here.  
+~
+0 268836875 8
+Rd     100
+D1
+~
+~
+0 0 13229
+D2
+~
+~
+0 0 13227
+S
+#13229
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are moving through an underwater tunnel.  The tunnel ends abruptly to
+the east of here, while the continuous sounds of chanting can be heard all
+around.  The tunnel goes east or west.  
+~
+0 268836875 8
+Rd     100
+D1
+~
+~
+0 0 13230
+D3
+~
+~
+0 0 13228
+S
+#13230
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You have reached a corner in the tunnel.  A large, circular steel door
+lies in the centre of the eastern while, its hinges rusted to the core.  The
+temperature here has dropped sharply, chilling you even further.  It is
+definately colder to the south.  
+~
+0 268836879 8
+Rd     250
+D1
+~
+~
+119 13204 13263
+D2
+~
+~
+0 0 13231
+D3
+~
+~
+0 0 13229
+S
+#13231
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through an underwater tunnel.  The water here is almost
+a gel, the ice crystals impeding your movement greatly, especially in the
+southern direction.  You can go south, barely, or north.  
+~
+0 268836875 8
+Rd     250
+D0
+~
+~
+0 0 13230
+D2
+~
+~
+0 0 13232
+S
+#13232
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through an underwater tunnel.  An enormous set of double
+doors lies on the east wall, their surface curved to match that of the
+tunnel.  A great evil can be felt from behind the door.  The tunnel
+stretches north and south from here.  
+~
+0 268836879 8
+Rd     250
+D0
+~
+~
+0 0 13231
+D1
+~
+~
+631 13207 13259
+D2
+~
+~
+0 0 13233
+S
+#13233
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through a very cold underwater tunnel.  This tunnel,
+oval in nature, is different than the rest of the shrine.  Perhaps its the
+extreme cold here, but it is as though the water itself is trying to impede
+any northern progress.  
+~
+0 268836875 8
+Rd     250
+D0
+~
+~
+0 0 13232
+D2
+~
+~
+0 0 13234
+S
+#13234
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You have reached a corner in the tunnel.  A large, circular steel door
+rests on the centre of the east wall, its hinges rusted to the core.  The
+temperature here has dropped drastically, and it seems to be lowering to the
+north.  
+~
+0 268836879 8
+Rd     250
+D0
+~
+~
+0 0 13233
+D1
+~
+~
+119 13204 13262
+D3
+~
+~
+0 0 13235
+S
+#13235
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through an underwater tunnel.  The extreme cold here is
+starting to get to you, its effects becoming accumulative with the lack of
+oxygen.  You can go east or west from here.  
+~
+0 268836875 8
+Rd     100
+D1
+~
+~
+0 0 13234
+D3
+~
+~
+0 0 13236
+S
+#13236
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through an underwater tunnel.  The extreme cold here has
+caused the walls of the tunnel to ice over.  You sense a great evil to the
+east.  The tunnel stretches to the north and east from here.  
+~
+0 268836875 8
+Rd     100
+D0
+~
+~
+0 0 13237
+D1
+~
+~
+0 0 13235
+S
+#13237
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through an underwater tunnel.  You can hear the sounds
+of mystical chanting coming from all around.  You can go south or west from
+here.  
+~
+0 268836875 8
+Rd     100
+D2
+~
+~
+0 0 13236
+D3
+~
+~
+0 0 13238
+S
+#13238
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are swimming through a dark, cold tunnel.  It is definately much
+colder here than to the west.  The extreme chill is damaging to your body. 
+You can go east or west.  
+~
+0 268836879 8
+Rd     100
+D1
+~
+~
+0 0 13237
+D3
+~
+~
+0 0 13239
+S
+#13239
+Underwater Tunnel~
+spellon1.wav V=100 P=75 L=1 T=Background~
+~
+You have reached a crossroads in the tunnels.  Two smaller tunnels, one
+leading north, the other south, branch off from here.  A bright white light
+can be seen occasionally shooting down north/south "hallway".  You can go in
+any of the four cardinal directions.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13260
+D1
+~
+~
+0 0 13238
+D2
+~
+~
+0 0 13258
+D3
+~
+~
+0 0 13240
+S
+#13240
+Underwater Tunnel~
+~
+~
+You are making your way through an underwater tunnel.  The brickwork is
+drawn in a spiral pattern, making a repeating, hypnotic pattern.  The
+farther east you travel, the colder it gets.  You can move towards the cold,
+or to the west.  
+~
+0 401423 8
+Rd     0
+D1
+~
+~
+0 0 13239
+D3
+~
+~
+0 0 13241
+S
+#13241
+Underwater Tunnel~
+~
+~
+You are swimming through an enormous underwater tunnel.  To the east, you
+can see a smaller tunnel branch off to the north and south.  It appears to
+be colder in that direction.  You can go east or west from here.  
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13240
+D3
+~
+~
+0 0 13242
+S
+#13242
+Underwater Tunnel~
+~
+~
+You are floating through a cold tunnel.  The brickwork all throughout the
+tunnel is very distinct, as if it was magically formed.  The patterns are
+spiral in nature, and have a hypnotic effect.  Of course, it could just be
+the water playing tricks with your eyes.  You can go east or west from here.
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13241
+D3
+~
+~
+0 0 13243
+S
+#13243
+Underwater Tunnel~
+~
+~
+You are floating through an underwater tunnel.  The curved surface splits
+off to the south here, leading away in another long stretch.  You can go
+that way, east or west from here.  
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+0 0 13242
+D2
+~
+~
+0 0 13244
+D3
+~
+~
+0 0 13248
+S
+#13244
+Underwater Tunnel~
+~
+~
+You are moving through an underwater tunnel.  The tunnel rapidly narrows
+to the south, where you can see that it bends sharply to the east.  The
+water is very cold in that direction.  You can go north or south from here. 
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13243
+D2
+~
+~
+0 0 13245
+S
+#13245
+Underwater Tunnel~
+~
+~
+You are swimming through a narrowing tunnel, at a corner.  The water is
+most definately colder to the east of here, where you can see some sort of
+door.  You can go in that direction, or north.  
+~
+0 401423 8
+Rd     0
+D0
+~
+~
+0 0 13244
+D1
+~
+~
+0 0 13246
+S
+#13246
+Underwater Tunnel~
+~
+~
+You are swimming through an underwater tunnel.  There is a large wooden
+set of double doors on the east wall that open inward.  A large keyhole sits
+in the centre of door.  You can go east or west from here.  
+~
+0 401423 8
+Rd     0
+D1
+~
+~
+119 13201 13247
+D3
+~
+~
+0 0 13245
+S
+#13247
+Underwater Tunnel~
+~
+~
+You are in what appears to be a ships graveyard.  The hulls of many ships
+lie in various states of decay, some resting comfortably on the floor, while
+others float in an eerie, swaying pattern.  A large set of double doors lies
+on the west wall, and that appears to be the only exit.  
+~
+0 401419 8
+Rd     0
+D3
+~
+~
+119 13201 13246
+S
+#13248
+Underwater Tunnel~
+~
+~
+You are floating through a large underwater tunnel.  The water
+temperature is definately on the decline the farther east you travel.  You
+can go east or west from here.  
+~
+0 401423 8
+Rd     0
+D1
+~
+~
+0 0 13243
+D3
+~
+~
+0 0 13208
+S
+#13249
+Underwater Tunnel~
+~
+~
+You are swimming through a very large hallway.  Small amounts of
+plantlife can be seen lining the cracks in the walls, but nothing to worry
+yourself about.  You can go north or south from here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13250
+D2
+~
+~
+0 0 13213
+S
+#13250
+Underwater Tunnel~
+~
+~
+You are floating through a very large underwater tunnel.  You notice that
+there is no current whatsoever, save that which you are creating by your
+movements.  You can go north or south from here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13251
+D2
+~
+~
+0 0 13249
+S
+#13251
+Underwater Tunnel~
+~
+~
+You are swimming through an underwater tunnel.  You can somehow sense a
+greater power watching over you, trying to determine what you are about to
+do.  You can follow the hallway to the north or to the south from here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13252
+D2
+~
+~
+0 0 13250
+S
+#13252
+Underwater Tunnel~
+~
+~
+You are floating through a rather large tunnel.  To the immediate north,
+a T-Junction can be seen, while the hallway stretches out towards the south
+for quite some distance.  A sudden chill rides through your body as you
+realize how cold the water is.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13205
+D2
+~
+~
+0 0 13251
+S
+#13253
+Underwater Tunnel~
+spellon1.wav T=Background P=50 V=100 L=1~
+~
+You are moving through an underwater tunnel.  You can feel a cold stream
+coming from the south.  An incredibly bright light flashes past you, to the
+south, every so often.  Otherwise, the water is extraordinarily still.  You
+can go north or south from here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13254
+D2
+~
+~
+0 0 13225
+S
+#13254
+Underwater Tunnel~
+spellon1.wav T=Background P=50 V=100 L=1~
+~
+You are swimming through an underwater tunnel.  The water is incredibly
+still, only moving to allow your own motion.  You can go north or south from
+here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13255
+D2
+~
+~
+0 0 13253
+S
+#13255
+Underwater Tunnel~
+spellon1.wav T=Background P=50 V=100 L=1~
+~
+You are swimming through a tunnel filled with water.  The brickwork is
+set into a spiral pattern, almost hypnotic in nature.  You can go north or
+south from here.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13256
+D2
+~
+~
+0 0 13254
+S
+#13256
+Underwater Tunnel~
+spellon1.wav T=Background P=50 V=100 L=1~
+~
+You are moving through an underwater tunnel.  A bright flash, travelling
+north to south, zips by you every once in a while.  It seems to be a ward of
+some kind.  You can go north or south.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13257
+D2
+~
+~
+0 0 13255
+S
+#13257
+Underwater Tunnel~
+spellon1.wav T=Background P=50 V=100 L=1~
+~
+You are swimming through an underwater tunnel.  The tunnel opens into a
+much larger one to the north of here.  You can also move to the south.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13258
+D2
+~
+~
+0 0 13256
+S
+#13258
+Underwater Tunnel~
+spellon1.wav T=Background P=50 V=100 L=1~
+~
+You are wandering through an underwater tunnel.  A march larger tunnel,
+travelling east to west, can be seen directly north of here.  Every so often
+a white flash of light zips past you to the south.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13239
+D2
+~
+~
+0 0 13257
+S
+#13259
+Underwater Tunnel~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You are standing in a throne room.  A huge circle, made of blue light,
+rings the room.  There appears to be only one exit, to the west.  You see a
+large throne pressed against the north and south walls.  As with all other
+rooms in this shrine, the room itself is spherical.  
+~
+0 273031183 8
+Rd     400
+D1
+~
+~
+119 13201 13261
+D3
+~
+~
+631 13207 13232
+S
+#13260
+Underwater Tunnel~
+spellon1.wav T=Background P=50 V=100 L=1~
+~
+You are swimming through a small underwater tunnel.  A bright white
+light, similar to a lightning bolt, occasionally shoots past you, to the
+south.  You can see many branches from the tunnel in either the north or
+south.  
+~
+0 401419 8
+Rd     0
+D0
+~
+~
+0 0 13225
+D2
+~
+~
+0 0 13239
+S
+#13261
+The Void~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You have entered a void.  There are no discernable markings here
+whatsoever.  There is a "hole" in the void, leading to the west.  At least,
+you think it's west.  
+~
+0 268836875 8
+Rd     400
+D3
+~
+~
+119 13201 13259
+S
+#13262
+Gazer's Lair~
+chant2.wav V=100 P=50 L=1 T=Background~
+~
+You have entered a round room.  There is a spherical enclosure in the
+centre of the room, and a round door lies on the west.  The water here is
+extremely cold, and will damage you if you stay here much longer.  
+~
+0 268836875 8
+Rd     250
+D3
+~
+~
+119 13204 13234
+S
+#13263
+Underwater Lair~
+~
+~
+You have entered a round room.  There is a spherical enclosure in the
+centre of the room, and a round door lies on the west wall.  The water here
+is extremely cold, and will damage you if you stay here much longer.  
+~
+0 268836875 8
+Rd     250
+D3
+~
+~
+119 13204 13230
+S
+#13264
+Underwater Tunnel~
+chant3.wav V=100 P=50 L=1 T=Background~
+off~
+You have arrived in a room adjacent to the underwater tunnel.  It is very
+dark here, much darker than the rest of the tunnels.  A huge throne rests
+against the west wall.  You can only go in the direction you came.  
+~
+0 401419 8
+Rd     0
+D1
+~
+~
+599 13203 13209
+S
+#13265
+The Entrance to the Ocean Shrine~
+water1.wav P=50 V=100 L=1 T=Background~
+~
+You are at the entrance to the Ocean Shrine.  A huge stairwell leads up
+and out, back to the Bretonnia surface, or you can descend the stairwell
+into the shrine proper.  
+~
+0 401419 0
+Rd     0
+D4
+~
+~
+0 0 21487
+D5
+~
+~
+0 0 13266
+S
+#13266
+A Stairwell~
+water1.wav P=50 V=100 L=1 T=Background~
+~
+You are walking along a very large set of stairs.  It is definately
+darker here than above.  You can hear water below you.  You can go up or
+down from here.  
+~
+0 401419 0
+Rd     0
+D4
+~
+~
+0 0 13265
+D5
+~
+~
+0 0 13202
+S
+#13267
+Temp Room~
+~
+~
+This room is for resets only.
+~
+0 2491399 0
+Rd     0
+S
+#13268
+Temp Room~
+~
+~
+This room is for resets only.
+~
+0 2491399 0
+Rd     0
+S
+#13269
+Temp Room~
+~
+~
+This room is for resets only.
+~
+0 2491399 0
+Rd     0
+S
+#13270
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13271
+D3
+~
+~
+0 0 13399
+S
+#13271
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13272
+D2
+~
+~
+0 0 13273
+D3
+~
+~
+0 0 13270
+S
+#13272
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+0 0 13271
+S
+#13273
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13271
+D2
+~
+~
+0 0 13274
+S
+#13274
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13273
+D1
+~
+~
+0 0 13275
+D2
+~
+~
+0 0 13276
+S
+#13275
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+0 0 13274
+S
+#13276
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13274
+D2
+~
+~
+0 0 13277
+S
+#13277
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13276
+D1
+~
+~
+0 0 13278
+D3
+~
+~
+0 0 13280
+S
+#13278
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13279
+D3
+~
+~
+0 0 13277
+S
+#13279
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13278
+S
+#13280
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13277
+D3
+~
+~
+0 0 13281
+S
+#13281
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13282
+D1
+~
+~
+0 0 13280
+D3
+~
+~
+0 0 13284
+S
+#13282
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13283
+D2
+~
+~
+0 0 13281
+S
+#13283
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13282
+S
+#13284
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13281
+D3
+~
+~
+0 0 13285
+S
+#13285
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13284
+D2
+~
+~
+0 0 13286
+S
+#13286
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13285
+S
+#13290
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13599
+D3
+~
+~
+0 0 13291
+S
+#13291
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13290
+D3
+~
+~
+0 0 13292
+S
+#13292
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13291
+D5
+~
+~
+0 0 13495
+S
+#13293
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D3
+~
+~
+0 0 13294
+D4
+~
+~
+0 0 13591
+S
+#13294
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13293
+D3
+~
+~
+0 0 13295
+S
+#13295
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13294
+D4
+~
+~
+0 0 13577
+S
+#13296
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D5
+~
+~
+0 0 13297
+S
+#13297
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13298
+D4
+~
+~
+0 0 13296
+S
+#13298
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13299
+D2
+~
+~
+0 0 13297
+S
+#13299
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13491
+D2
+~
+~
+0 0 13298
+S
+#13301
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13302
+S
+#13302
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13328
+D2
+~
+~
+0 0 13301
+D3
+~
+~
+0 0 13303
+S
+#13303
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13302
+D3
+~
+~
+0 0 13304
+S
+#13304
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13305
+D1
+~
+~
+0 0 13303
+S
+#13305
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13306
+D2
+~
+~
+0 0 13304
+S
+#13306
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13307
+D2
+~
+~
+0 0 13305
+S
+#13307
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13308
+D2
+~
+~
+0 0 13306
+S
+#13308
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13309
+D2
+~
+~
+0 0 13307
+S
+#13309
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13310
+D3
+~
+~
+0 0 13308
+S
+#13310
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13311
+D3
+~
+~
+0 0 13309
+S
+#13311
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13310
+D1
+~
+~
+0 0 13313
+D2
+~
+~
+0 0 13312
+S
+#13312
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13311
+D5
+~
+~
+0 0 13332
+S
+#13313
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13314
+D3
+~
+~
+0 0 13311
+S
+#13314
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13315
+D2
+~
+~
+0 0 13331
+D3
+~
+~
+0 0 13313
+S
+#13315
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13316
+D2
+~
+~
+0 0 13314
+S
+#13316
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13317
+D3
+~
+~
+0 0 13315
+S
+#13317
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13318
+D3
+~
+~
+0 0 13316
+S
+#13318
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13319
+D3
+~
+~
+0 0 13317
+S
+#13319
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13318
+D2
+~
+~
+0 0 13320
+S
+#13320
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13319
+D2
+~
+~
+0 0 13321
+S
+#13321
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13320
+D2
+~
+~
+0 0 13322
+S
+#13322
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13321
+D2
+~
+~
+0 0 13323
+S
+#13323
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13322
+D3
+~
+~
+0 0 13324
+S
+#13324
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13323
+D3
+~
+~
+0 0 13325
+S
+#13325
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13326
+D1
+~
+~
+0 0 13324
+S
+#13326
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13329
+D2
+~
+~
+0 0 13325
+D3
+~
+~
+0 0 13327
+S
+#13327
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13326
+D3
+~
+~
+0 0 13328
+S
+#13328
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13327
+D3
+~
+~
+0 0 13302
+S
+#13329
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13330
+D2
+~
+~
+0 0 13326
+S
+#13330
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13329
+D3
+~
+~
+0 0 13331
+S
+#13331
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13314
+D1
+~
+~
+0 0 13330
+S
+#13332
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13350
+D3
+~
+~
+0 0 13333
+D4
+~
+~
+0 0 13312
+S
+#13333
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13352
+D3
+~
+~
+0 0 13334
+S
+#13334
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13333
+D3
+~
+~
+0 0 13335
+S
+#13335
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13334
+D3
+~
+~
+0 0 13336
+S
+#13336
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13335
+D3
+~
+~
+0 0 13337
+S
+#13337
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13336
+D3
+~
+~
+0 0 13338
+S
+#13338
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13337
+D3
+~
+~
+0 0 13339
+S
+#13339
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13338
+D2
+~
+~
+0 0 13340
+S
+#13340
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13339
+D2
+~
+~
+0 0 13341
+S
+#13341
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13340
+D2
+~
+~
+0 0 13342
+S
+#13342
+Dungeon Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 13341
+D1
+~
+~
+0 0 13351
+D2
+~
+~
+0 0 13343
+S
+#13343
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13342
+D2
+~
+~
+0 0 13344
+S
+#13344
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13343
+D1
+~
+~
+0 0 13345
+S
+#13345
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13346
+D3
+~
+~
+0 0 13344
+S
+#13346
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13347
+D3
+~
+~
+0 0 13345
+S
+#13347
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13348
+D3
+~
+~
+0 0 13346
+S
+#13348
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13349
+D2
+~
+~
+0 0 13347
+S
+#13349
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13348
+D3
+~
+~
+0 0 13350
+S
+#13350
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13332
+D1
+~
+~
+0 0 13349
+D3
+~
+~
+0 0 13351
+S
+#13351
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13350
+D3
+~
+~
+0 0 13342
+S
+#13352
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+0 0 13333
+D5
+~
+~
+0 0 13377
+S
+#13353
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13358
+D5
+~
+~
+0 0 13360
+S
+#13354
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13355
+D2
+~
+~
+0 0 13359
+S
+#13355
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13356
+D2
+~
+~
+0 0 13354
+S
+#13356
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13355
+D3
+~
+~
+0 0 13357
+S
+#13357
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13356
+D3
+~
+~
+0 0 13358
+S
+#13358
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13357
+D2
+~
+~
+0 0 13353
+S
+#13359
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13354
+D5
+~
+~
+0 0 13380
+S
+#13360
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13373
+D3
+~
+~
+0 0 13361
+D4
+~
+~
+0 0 13353
+S
+#13361
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13360
+D3
+~
+~
+0 0 13362
+S
+#13362
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13367
+D1
+~
+~
+0 0 13361
+D3
+~
+~
+0 0 13363
+S
+#13363
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13362
+D3
+~
+~
+0 0 13364
+S
+#13364
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13365
+D1
+~
+~
+0 0 13363
+S
+#13365
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13364
+D3
+~
+~
+0 0 13366
+S
+#13366
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13365
+S
+#13367
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13368
+D2
+~
+~
+0 0 13362
+S
+#13368
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13369
+D2
+~
+~
+0 0 13367
+S
+#13369
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13368
+D3
+~
+~
+0 0 13370
+S
+#13370
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13369
+D3
+~
+~
+0 0 13371
+S
+#13371
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13370
+D3
+~
+~
+0 0 13372
+S
+#13372
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13371
+S
+#13373
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13374
+D2
+~
+~
+0 0 13360
+S
+#13374
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13375
+D2
+~
+~
+0 0 13373
+S
+#13375
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13376
+D2
+~
+~
+0 0 13374
+S
+#13376
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13377
+D3
+~
+~
+0 0 13375
+S
+#13377
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+0 0 13376
+D4
+~
+~
+0 0 13352
+S
+#13379
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 13380
+S
+#13380
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13379
+D3
+~
+~
+0 0 13381
+D4
+~
+~
+0 0 13359
+S
+#13381
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13380
+D3
+~
+~
+0 0 13382
+S
+#13382
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13381
+D3
+~
+~
+0 0 13383
+S
+#13383
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13382
+D3
+~
+~
+0 0 13384
+S
+#13384
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13383
+D3
+~
+~
+0 0 13385
+S
+#13385
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13384
+D3
+~
+~
+0 0 13386
+S
+#13386
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13385
+D3
+~
+~
+0 0 13387
+S
+#13387
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13386
+D5
+~
+~
+0 0 13397
+S
+#13388
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13389
+S
+#13389
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13390
+D3
+~
+~
+0 0 13388
+S
+#13390
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13398
+D2
+~
+~
+0 0 13391
+D3
+~
+~
+0 0 13389
+S
+#13391
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13390
+D2
+~
+~
+0 0 13392
+S
+#13392
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13391
+D3
+~
+~
+0 0 13393
+S
+#13393
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13392
+D3
+~
+~
+0 0 13394
+S
+#13394
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13393
+D2
+~
+~
+0 0 13395
+S
+#13395
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13394
+D2
+~
+~
+0 0 13396
+S
+#13396
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13395
+D2
+~
+~
+0 0 13397
+S
+#13397
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 13396
+D4
+~
+~
+0 0 13387
+S
+#13398
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13399
+D3
+~
+~
+0 0 13390
+S
+#13399
+Dungeon Hallway~
+~
+~
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 13270
+D3
+~
+~
+0 0 13398
+S
+#13400
+Secret Hallway~
+~
+~
+~
+0 403467 1
+Rd     0
+D4
+~
+~
+0 0 13475
+D5
+~
+~
+0 0 13459
+S
+#13401
+Before the Castle Entrance~
+~
+~
+~
+0 401422 1
+Rd     0
+D1
+~
+~
+0 0 13402
+S
+#13402
+Castle Entrance~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13403
+D2
+~
+~
+0 0 13425
+D3
+~
+~
+0 0 13401
+S
+#13403
+Main Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13404
+D2
+~
+~
+0 0 13402
+S
+#13404
+Main Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13405
+D2
+~
+~
+0 0 13403
+S
+#13405
+Northwest Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13406
+D2
+~
+~
+0 0 13404
+D5
+~
+~
+0 0 13433
+S
+#13406
+North Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13407
+D3
+~
+~
+0 0 13405
+S
+#13407
+North Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13408
+D2
+~
+~
+0 0 13426
+D3
+~
+~
+0 0 13406
+S
+#13408
+North Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13409
+D3
+~
+~
+0 0 13407
+S
+#13409
+North Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13410
+D3
+~
+~
+0 0 13408
+S
+#13410
+North Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13411
+D3
+~
+~
+0 0 13409
+S
+#13411
+Northeast Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D2
+~
+~
+0 0 13412
+D3
+~
+~
+0 0 13410
+D5
+~
+~
+0 0 13439
+S
+#13412
+East Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13411
+D2
+~
+~
+0 0 13413
+S
+#13413
+East Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13412
+D2
+~
+~
+0 0 13414
+D3
+~
+~
+0 0 13430
+S
+#13414
+East Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13413
+D2
+~
+~
+0 0 13415
+S
+#13415
+East Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13414
+D2
+~
+~
+0 0 13416
+S
+#13416
+East Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13415
+D2
+~
+~
+0 0 13417
+S
+#13417
+Southeast Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13416
+D3
+~
+~
+0 0 13418
+D5
+~
+~
+0 0 13445
+S
+#13418
+South Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13417
+D3
+~
+~
+0 0 13419
+S
+#13419
+South Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13418
+D3
+~
+~
+0 0 13420
+S
+#13420
+South Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13419
+D3
+~
+~
+0 0 13421
+S
+#13421
+South Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13432
+D1
+~
+~
+0 0 13420
+D3
+~
+~
+0 0 13422
+S
+#13422
+South Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13421
+D3
+~
+~
+0 0 13423
+S
+#13423
+Southwest Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13424
+D1
+~
+~
+0 0 13422
+D5
+~
+~
+0 0 13451
+S
+#13424
+Main Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13425
+D2
+~
+~
+0 0 13423
+S
+#13425
+Main Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13402
+D2
+~
+~
+0 0 13424
+S
+#13426
+Servants Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13407
+D2
+~
+~
+0 0 13427
+S
+#13427
+Servants Hallway~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13426
+D1
+~
+~
+0 0 13429
+D2
+~
+~
+0 0 13428
+S
+#13428
+Servants Quarters~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13427
+S
+#13429
+Servants Quarters~
+~
+~
+~
+0 401419 1
+Rd     0
+D3
+~
+~
+0 0 13427
+S
+#13430
+Storage ROom~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13413
+S
+#13432
+Storage Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D2
+~
+~
+0 0 13421
+S
+#13433
+Northwest Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13434
+D2
+~
+~
+0 0 13466
+D4
+~
+~
+0 0 13405
+S
+#13434
+Hall of Kings~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13435
+D3
+~
+~
+0 0 13433
+S
+#13435
+Hall of Kings~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13436
+D3
+~
+~
+0 0 13434
+S
+#13436
+Hall of Kings~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13437
+D3
+~
+~
+0 0 13435
+S
+#13437
+Hall of Kings~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13438
+D3
+~
+~
+0 0 13436
+S
+#13438
+Hall of Kings~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13439
+D3
+~
+~
+0 0 13437
+S
+#13439
+Northeast Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D2
+~
+~
+0 0 13440
+D3
+~
+~
+0 0 13438
+D4
+~
+~
+0 0 13411
+S
+#13440
+Hall of Princes~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13439
+D2
+~
+~
+0 0 13441
+S
+#13441
+Hall of Princes~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 13440
+D2
+~
+~
+0 0 13442
+S
+#13442
+Hall of Princes~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13441
+D2
+~
+~
+0 0 13443
+S
+#13443
+Hall of Princes~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13442
+D2
+~
+~
+0 0 13444
+S
+#13444
+Hall of Princes~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13443
+D2
+~
+~
+0 0 13445
+S
+#13445
+Southeast Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13444
+D3
+~
+~
+0 0 13446
+D4
+~
+~
+0 0 13417
+S
+#13446
+Hall of Queens~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13445
+D3
+~
+~
+0 0 13447
+S
+#13447
+Hall of Queens~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13446
+D3
+~
+~
+0 0 13448
+S
+#13448
+Hall of Queens~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13447
+D3
+~
+~
+0 0 13449
+S
+#13449
+Hall of Queens~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13448
+D3
+~
+~
+0 0 13450
+S
+#13450
+Hall of Queens~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13449
+D3
+~
+~
+0 0 13451
+S
+#13451
+Southwest Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13452
+D1
+~
+~
+0 0 13450
+D4
+~
+~
+0 0 13423
+S
+#13452
+Hall of Royalty~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13453
+D2
+~
+~
+0 0 13451
+S
+#13453
+Hall of Royalty~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13454
+D2
+~
+~
+0 0 13452
+S
+#13454
+Hall of Royalty~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13465
+D1
+~
+~
+0 0 13455
+D2
+~
+~
+0 0 13453
+S
+#13455
+Before the Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13456
+D3
+~
+~
+0 0 13454
+S
+#13456
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13463
+D1
+~
+~
+0 0 13464
+D2
+~
+~
+0 0 13457
+D3
+~
+~
+0 0 13455
+S
+#13457
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13456
+D1
+~
+~
+0 0 13458
+S
+#13458
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13464
+D1
+~
+~
+0 0 13459
+D3
+~
+~
+0 0 13457
+S
+#13459
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13460
+D3
+~
+~
+0 0 13458
+D4
+~
+~
+0 0 13400
+S
+#13460
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13461
+D2
+~
+~
+0 0 13459
+D3
+~
+~
+0 0 13464
+S
+#13461
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D2
+~
+~
+0 0 13460
+D3
+~
+~
+0 0 13462
+S
+#13462
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13461
+D2
+~
+~
+0 0 13464
+D3
+~
+~
+0 0 13463
+S
+#13463
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13462
+D2
+~
+~
+0 0 13456
+S
+#13464
+The Throne Room~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13462
+D1
+~
+~
+0 0 13460
+D2
+~
+~
+0 0 13458
+D3
+~
+~
+0 0 13456
+S
+#13465
+Hall of Royalty~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13466
+D2
+~
+~
+0 0 13454
+S
+#13466
+Hall of Royalty~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13433
+D2
+~
+~
+0 0 13465
+S
+#13467
+Main Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13468
+D2
+~
+~
+0 0 13470
+S
+#13468
+Main Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D1
+~
+~
+0 0 13469
+D2
+~
+~
+0 0 13471
+D3
+~
+~
+0 0 13467
+S
+#13469
+Main Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D2
+~
+~
+0 0 13472
+D3
+~
+~
+0 0 13468
+S
+#13470
+Main Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13467
+D1
+~
+~
+0 0 13471
+D2
+~
+~
+0 0 13473
+S
+#13471
+Main Tower~
+~
+~
+~
+0 401418 1
+Rd     0
+D0
+~
+~
+0 0 13468
+D1
+~
+~
+0 0 13472
+D2
+~
+~
+0 0 13474
+D3
+~
+~
+0 0 13470
+D4
+~
+~
+0 0 13480
+S
+#13472
+Main Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13469
+D2
+~
+~
+0 0 13475
+D3
+~
+~
+0 0 13471
+S
+#13473
+Main Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13470
+D1
+~
+~
+0 0 13474
+S
+#13474
+Main Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13471
+D1
+~
+~
+0 0 13475
+D3
+~
+~
+0 0 13473
+S
+#13475
+Main Tower~
+~
+~
+~
+0 401419 1
+Rd     0
+D0
+~
+~
+0 0 13472
+D3
+~
+~
+0 0 13474
+D5
+~
+~
+0 0 13400
+S
+#13476
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D1
+~
+~
+0 0 13477
+D2
+~
+~
+0 0 13479
+S
+#13477
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D1
+~
+~
+0 0 13478
+D2
+~
+~
+0 0 13480
+D3
+~
+~
+0 0 13476
+S
+#13478
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D2
+~
+~
+0 0 13481
+D3
+~
+~
+0 0 13477
+S
+#13479
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D0
+~
+~
+0 0 13476
+D1
+~
+~
+0 0 13480
+D2
+~
+~
+0 0 13482
+S
+#13480
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D0
+~
+~
+0 0 13477
+D1
+~
+~
+0 0 13481
+D2
+~
+~
+0 0 13483
+D3
+~
+~
+0 0 13479
+D5
+~
+~
+0 0 13471
+S
+#13481
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D0
+~
+~
+0 0 13478
+D2
+~
+~
+0 0 13484
+D3
+~
+~
+0 0 13480
+S
+#13482
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D0
+~
+~
+0 0 13479
+D1
+~
+~
+0 0 13483
+S
+#13483
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D0
+~
+~
+0 0 13480
+D1
+~
+~
+0 0 13484
+D3
+~
+~
+0 0 13482
+S
+#13484
+Roof~
+~
+~
+~
+0 401418 1
+Rd     0
+D0
+~
+~
+0 0 13481
+D3
+~
+~
+0 0 13483
+S
+#13485
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13486
+D2
+~
+~
+0 0 13488
+S
+#13486
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13487
+D2
+~
+~
+0 0 13489
+D3
+~
+~
+0 0 13485
+S
+#13487
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D2
+~
+~
+0 0 13490
+D3
+~
+~
+0 0 13486
+S
+#13488
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13485
+D1
+~
+~
+0 0 13489
+D2
+~
+~
+0 0 13491
+S
+#13489
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13486
+D1
+~
+~
+0 0 13490
+D2
+~
+~
+0 0 13492
+D3
+~
+~
+0 0 13488
+S
+#13490
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13487
+D2
+~
+~
+0 0 13493
+D3
+~
+~
+0 0 13489
+S
+#13491
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13488
+D1
+~
+~
+0 0 13492
+D3
+~
+~
+0 0 13299
+S
+#13492
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13489
+D1
+~
+~
+0 0 13493
+D2
+~
+~
+0 0 13494
+D3
+~
+~
+0 0 13491
+S
+#13493
+Throne Room~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13490
+D1
+~
+~
+0 0 13496
+D3
+~
+~
+0 0 13492
+S
+#13494
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13492
+D2
+~
+~
+0 0 13495
+S
+#13495
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13494
+D4
+~
+~
+0 0 13292
+S
+#13496
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D2
+~
+~
+0 0 13497
+D3
+~
+~
+0 0 13493
+S
+#13497
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13496
+D2
+~
+~
+0 0 13498
+S
+#13498
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13497
+S
+#13501
+Volcanic Path~
+~
+~
+You have arrived at the end of a path leading into a volcano.  The path
+opens up to the south on the inner edge of the volcano.  To the north, a
+slope leads down to the mountain path.  
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13502
+S
+#13502
+Volcanic Path~
+~
+~
+You are walking around the mouth of a volcano.  The path leads off
+counter-clockwise, with a slight downward slope, to the west.  The path
+looks well trodden.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13501
+D3
+~
+~
+0 0 13503
+S
+#13503
+Volcanic Path~
+~
+~
+You are moving along the path around the inner rim of a volcano.  The
+path looks very well trodden, as though a formidably sized force recently
+marched this way.  You can look across the deep lava pit and see the path on
+the other side.  You can go east or west from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13502
+D3
+~
+~
+0 0 13504
+S
+#13504
+Volcanic Path~
+~
+~
+You are walking along the inner rim of a volcano.  The path slowly
+narrows and descends to the south, leading down into the depths of the
+volcano.  You can also go to the east from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13503
+D2
+~
+~
+0 0 13505
+S
+#13505
+Volcanic Path~
+~
+~
+You are walking along a path descending into a volcano.  The path narrows
+the farther you descend into the volcano, in addition to sudden bursts of
+intense heat.  You can continue north or south from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13504
+D2
+~
+~
+0 0 13506
+S
+#13506
+Volcanic Path~
+~
+~
+You are walking along a volcanic path.  The blasts of heat occurr at
+regular intervals now, as if the volcano itself is breathing.  You can go
+north or south from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13505
+D2
+~
+~
+0 0 13507
+S
+#13507
+Volcanic Path~
+~
+~
+The path dips down rather abruptly to the south of here, the ground
+having given way to a landslide many years ago.  You can go north or south
+from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13506
+D2
+~
+~
+0 0 13508
+S
+#13508
+Volcanic Path~
+~
+~
+You are walking along a path deep in a volcano.  Geysers of molten rock
+constantly erupt below you, their noxious fumes almost reaching your
+position.  The path goes north, or down into the depths of the volcano, to
+the east.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13507
+D1
+~
+~
+0 0 13509
+S
+#13509
+Volcanic Path~
+~
+~
+You are walking along a path deep within a volcano.  The farther
+counter-clockwise you travel, the deeper into the volcano you go.  You can
+go east or west from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13510
+D3
+~
+~
+0 0 13508
+S
+#13510
+Volcanic Path~
+~
+~
+You are navigating a narrow path along the inside of a volcano spout.  To
+the west, the path climbs up and eventually widens to a very large distance.
+You can vaguely make out a small building far below you.  You can go east or
+west from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13511
+D3
+~
+~
+0 0 13509
+S
+#13511
+Volcanic Path~
+~
+~
+You are walking along a volanic path deep within the spout of a volcano. 
+You can hear the lava below you, bubbling and churning over itself
+constantly.  You can go east or west from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13512
+D3
+~
+~
+0 0 13510
+S
+#13512
+Volcanic Path~
+~
+~
+You have arrived at the bottom of a volcano spout.  The lava fields
+stretch off in all directions, but a very narrow bridge leads over it to the
+north.  You can see a building to the northwest through the haze.  You can
+go that way, or start climbing out of the volcano to the west.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13513
+D3
+~
+~
+0 0 13511
+S
+#13513
+Volcanic Path~
+~
+~
+You are walking along a bridge deep within a volcano over a lava flow. 
+The bridge is made of some sort of black stone, charred from years of
+constant attention from the lava below.  You can go north or south from
+here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13514
+D2
+~
+~
+0 0 13512
+S
+#13514
+Volcanic Path~
+~
+~
+You are moving along a jet black bridge over lava.  The bridge turns
+sharply here, leading off to the east and south.  A huge dragon skull is
+embedded into the volcano wall to the northeast.  
+~
+0 268836875 11
+Rd     50
+E
+skull~
+It is gigantic, one of the largest skulls you have ever seen.  You had no
+idea that dragons could get this large.  
+~
+D2
+~
+~
+0 0 13513
+D3
+~
+~
+0 0 13515
+S
+#13515
+Volcanic Path~
+~
+~
+You are at the end of a bridge.  A large building lies to the west,
+through an enormous door.  You can't help but wonder who or what would build
+a structure at the base, and apparently centre, of a volcano.  The door are
+over thirty feet tall, and made of the same black material as the bridge.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13514
+D3
+~
+~
+119 13501 13516
+S
+#13516
+Garrison~
+~
+~
+You are inside an enormous building, with a huge door lying on the east
+wall.  The walls are jet black, the same material that the bridge outside is
+made of.  A lava tube that does not appear to be intentonally part of the
+architecture leads down into the volcano.  The entire northwest corner of
+this building has been blown apart from an eruption.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+119 13501 13515
+D5
+~
+~
+0 0 13528
+S
+#13517
+Volcanic Crevice~
+~
+~
+You have arrived in a small crevice, carved into the rock by a lava flow.
+The main tube is below you here.  There is a small ledge on the east wall,
+with several skulls piled at one end.  The only exit is down.  
+~
+0 302391307 11
+Rd     50
+D5
+~
+~
+0 0 13531
+S
+#13518
+Volcanic Path~
+~
+~
+You are moving through a small lava tube deep inside a volcano.  Below
+you, several metres, is another lava tube.  The small tube leads off to the
+south.  
+~
+0 302391307 11
+Rd     50
+D2
+~
+~
+0 0 13519
+D5
+~
+~
+0 0 13534
+S
+#13519
+Volcanic Path~
+~
+~
+You are moving through a small lava tube.  It is almost perfectly round
+here, and you can see that it drops off suddenly to the north.  The tube
+leads off to the south.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13518
+D2
+~
+~
+0 0 13520
+S
+#13520
+Volcanic Path~
+~
+~
+You are walking along a small lava tube inside a volcano.  The tube
+inclines slightly to the south, and you can see an abrupt drop a little ways
+to the north.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13519
+D2
+~
+~
+0 0 13521
+S
+#13521
+Volcanic Path~
+~
+~
+You are walking through a narrow lava tube.  The tube has a slight
+decline to the north, and of course, a slight incline to the south.  The
+blasts of heat are not getting any weaker.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13520
+D2
+~
+~
+0 0 13522
+S
+#13522
+Volcanic Path~
+~
+~
+You have arrived at a sharp bend in the tube.  The outer wall is made
+from a polished, black material.  The lava's effect on it is strange indeed
+- It is almost a perfect mirror.  You can go north or east from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13521
+D1
+~
+~
+0 0 13523
+S
+#13523
+Volcanic Path~
+~
+~
+You are walking through a small vent.  The floor here is soft, obviously
+not cooled enough since the flow was still active.  You can go east or west
+from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13524
+D3
+~
+~
+0 0 13522
+S
+#13524
+Volcanic Path~
+~
+~
+You are moving through a small tube.  The ground is rough, and as usual,
+warm to the touch.  Every so often small vents of steam jet out to block
+your path, but they quickly dissipate.  You can go east or west from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13525
+D3
+~
+~
+0 0 13523
+S
+#13525
+Volcanic Path~
+~
+~
+You are moving through a smaller lava tube, and have arrived at a bend. 
+The tube bends sharply here, it's paths leading off to the north and west. 
+A huge black rock lies on the west wall, obviously the cause of such a sharp
+turn.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13526
+D3
+~
+~
+0 0 13524
+S
+#13526
+Volcanic Path~
+~
+~
+You are walking through a smaller lava tube.  The tube opens up to the
+main tube directly to the north.  This tube is much rounder than the main
+tube, as if the lava moved through here very quickly.  You can go north or
+south from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13527
+D2
+~
+~
+0 0 13525
+S
+#13527
+Volcanic Path~
+~
+~
+You are walking along a lava tube.  The large eruption tube leads off to
+the east, while a much smaller tube stretches to the south.  The main tube
+goes up to the west of here, to the point where it breaches the surface.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13529
+D2
+~
+~
+0 0 13526
+D3
+~
+~
+0 0 13528
+S
+#13528
+Volcanic Path~
+~
+~
+You are below a building inside a volcano, inside a lava tube.  An
+eruption caused the tube to go up violently from here.  You can clearly see
+the hole in the building, far above you, that the lava spued forth from. 
+The tube leads to the east.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13527
+D4
+~
+~
+0 0 13516
+S
+#13529
+Volcanic Path~
+~
+~
+You are walking along the main eruption tube.  The ground is fairly
+smooth, but it is very, very warm.  You can't help but sweat constantly. 
+Sharp pains riddle your body as the volcano regularly belches hot bursts of
+steam from the walls.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13530
+D3
+~
+~
+0 0 13527
+S
+#13530
+Volcanic Path~
+~
+~
+You are moving through the main eruption tube in a volcano.  The tube
+itself is only vaguely circular, as if the lava that once flowed through
+here was in too much of a hurry to escape.  You can go north or south from
+here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13531
+D2
+~
+~
+0 0 13529
+S
+#13531
+Volcanic Path~
+~
+~
+You are moving through the main flow tube of the volcano.  A much smaller
+tube leads up to what appears to be a small room, while the main tube leads
+down into the depths.  
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13530
+D4
+~
+~
+0 0 13517
+D5
+~
+~
+0 0 13547
+S
+#13532
+Hallway~
+~
+~
+You have arrived at the top of a ladder, and are in a small room. 
+Several shelves are stacked against the west wall, with thick layers of dust
+covering them.  The only exist is down the ladder.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+630 0 13533
+D5
+~
+~
+0 0 13548
+S
+#13533
+Outlook~
+~
+~
+You have arrived on a small plateau.  You are outside, but there are very
+high walls that are impassable.  The only exit is through the false wall to
+the south.  
+~
+0 401419 11
+Rd     0
+D2
+~
+~
+630 0 13532
+S
+#13534
+Volcanic Path~
+~
+~
+You are moving through a small lava tube.  The northern wall curves up
+here, opening to a path above you.  There walls are quite smooth, and you
+don't see any place to get a foothold.  You can go south, or up from here.  
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13535
+D4
+~
+~
+0 0 13518
+S
+#13535
+Volcanic Path~
+~
+~
+You are walking through a small tube.  A bend in the tube can be seen to
+the immediate south, while the tube appears to come to an end to the north. 
+You can go in either of those two directions from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13534
+D2
+~
+~
+0 0 13536
+S
+#13536
+Volcanic Path~
+~
+~
+You are moving through a small, hot lava tube.  The deeper into this
+volcano you go, the warmer it gets.  You can hear the ground rumbling far
+below you.  You can go north or east from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13535
+D1
+~
+~
+0 0 13537
+S
+#13537
+Volcanic Path~
+~
+~
+You are moving through a small, oval lava tube.  The tube narrows
+slightly to the east, where you can see a sharp bend in the path.  The lava
+that once forced its way through here can still be smelled, its ash-like
+scent easily identified.  You can go east or west.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13538
+D3
+~
+~
+0 0 13536
+S
+#13538
+Volcanic Path~
+~
+~
+You are moving through a small lava tube.  The tube widens to the west
+and to the south.  Steam leaks from the wall here, near the ceiling,
+dissipating into the air as it rises.  
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13539
+D3
+~
+~
+0 0 13537
+S
+#13539
+Volcanic Path~
+~
+~
+A small lava tube leads off to the north and the south from here.  The
+tube seems to get wider to the south, where you can see a sharp bend.  To
+the north, the tube gets smaller.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13538
+D2
+~
+~
+0 0 13540
+S
+#13540
+Volcanic Path~
+~
+~
+You are moving through a volcanic path.  The lava tube takes a sharp bend
+here, leading to the north and east.  A second tube, slightly smaller than
+even this small path, leads to the west.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13539
+D1
+~
+~
+0 0 13543
+D3
+~
+~
+0 0 13541
+S
+#13541
+Volcanic Path~
+~
+~
+You are walking through a very small lava tube.  The tube gets much
+smaller to the west, probably only able to fit one or two people at a time. 
+You can go that way, or to the slightly larger tube to the east.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13540
+D3
+~
+~
+0 0 13542
+S
+#13542
+Volcanic Path~
+~
+~
+The tube stops suddenly here, with a sharp turn down.  You can see steam
+shooting through the vent below you, jetting from the walls with great
+force.  You can go that way, or to the east.  
+~
+0 302391819 11
+Rd     50
+D1
+~
+~
+0 0 13541
+D5
+~
+~
+0 0 13560
+S
+#13543
+Volcanic Path~
+~
+~
+You are moving through a small lava tube in a volcano.  The tube
+gradually gets smaller to the west, and conversely, larger to the east.  You
+can go in either of those directions from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13544
+D3
+~
+~
+0 0 13540
+S
+#13544
+Volcanic Path~
+~
+~
+The lava tube ends suddenly here.  A small hole leads down from here,
+down into the dark depths below.  The path, which narrows slightly as you
+travel, leads to the west.  
+~
+0 302391307 11
+Rd     50
+D3
+~
+~
+0 0 13543
+D5
+~
+~
+0 0 13561
+S
+#13545
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13546
+D5
+~
+~
+0 0 13555
+S
+#13546
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13547
+D2
+~
+~
+0 0 13545
+S
+#13547
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13546
+D4
+~
+~
+0 0 13531
+S
+#13548
+Hallway~
+~
+~
+You have reached a landing in a vertical shaft.  There is a ladder on the
+west wall, leading down into the depths, and a ladder on the east wall,
+leading up.  
+~
+0 268836875 11
+Rd     50
+D4
+~
+~
+0 0 13532
+D5
+~
+~
+0 0 13558
+S
+#13549
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13550
+D5
+~
+~
+0 0 13562
+S
+#13550
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13549
+D2
+~
+~
+0 0 13551
+S
+#13551
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13550
+D1
+~
+~
+0 0 13552
+S
+#13552
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13553
+D3
+~
+~
+0 0 13551
+S
+#13553
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13554
+D2
+~
+~
+0 0 13556
+D3
+~
+~
+0 0 13552
+S
+#13554
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13555
+D3
+~
+~
+0 0 13553
+S
+#13555
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D3
+~
+~
+0 0 13554
+D4
+~
+~
+0 0 13545
+S
+#13556
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13553
+D2
+~
+~
+0 0 13557
+S
+#13557
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13556
+S
+#13558
+Hallway~
+~
+~
+You are at a landing, in a shaft, deep within a volcano.  The ladder,
+attached to the west wall, goes down and up.  The landing is covered in
+dust, as though nothing has touched it in decades.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+631 0 13559
+D4
+~
+~
+0 0 13548
+D5
+~
+~
+0 0 13571
+S
+#13559
+Alcove~
+~
+~
+You are in a small alcove.  The walls here are polished smooth and you
+can discern no cracks or bricks of any kind.  The only exit is to the west,
+through the illusionary door that you came from.  
+~
+0 268836875 11
+Rd     50
+D3
+~
+~
+631 0 13558
+S
+#13560
+Volcanic Shaft~
+~
+~
+You are in a vertical shaft deep within a volcano.  Jets of steam fire
+off from the walls here, in an almost rhythmic fashion.  The shaft stops
+above you, and continues down.  
+~
+0 302391307 11
+Rd     50
+D4
+~
+~
+0 0 13542
+D5
+~
+~
+0 0 13576
+S
+#13561
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D4
+~
+~
+0 0 13544
+D5
+~
+~
+0 0 13570
+S
+#13562
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13563
+D4
+~
+~
+0 0 13549
+S
+#13563
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13562
+D2
+~
+~
+0 0 13564
+S
+#13564
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13563
+D1
+~
+~
+0 0 13565
+S
+#13565
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13566
+D3
+~
+~
+0 0 13564
+S
+#13566
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13567
+D3
+~
+~
+0 0 13565
+D5
+~
+~
+0 0 13591
+S
+#13567
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13566
+D2
+~
+~
+0 0 13568
+S
+#13568
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13567
+D1
+~
+~
+0 0 13569
+S
+#13569
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13570
+D3
+~
+~
+0 0 13568
+S
+#13570
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D3
+~
+~
+0 0 13569
+D4
+~
+~
+0 0 13561
+S
+#13571
+Hallway~
+~
+~
+You are moving along a narrow hallway deep within a firery volcano.  The
+hallway ends with a circular wall, with a ladder pressed up against the west
+wall.  You can go that way, or to the east, where the hallway widens.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13572
+D4
+~
+~
+0 0 13558
+S
+#13572
+Hallway~
+~
+~
+You are walking along a hallway.  You can see a corner to the east, where
+the hallway widens slightly.  To the west, the hallway narrows enough that
+creatures larger than man-sized would have a hard time getting through.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13573
+D3
+~
+~
+0 0 13571
+S
+#13573
+Hallway~
+~
+~
+You are at a bend in the hallway.  The hallway widens to the south, and
+narrows to the west.  The brickwork, as with the rest of the hallway, is
+flawless.  
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13574
+D3
+~
+~
+0 0 13572
+S
+#13574
+Hallway~
+~
+~
+You are moving along an underground hallway.  To the north, you can see a
+bend in the hallway.  The walls get closer together the farther north you
+travel, although that appears to be by design.  You can go north or south
+from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13573
+D2
+~
+~
+0 0 13575
+S
+#13575
+Hallway~
+~
+~
+You are moving along a subterranean hallway.  At the south wall is a very
+steep staircase, leading down into the depths.  The hallway continues north,
+where the walls seem to narrow.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13574
+D5
+~
+~
+0 0 13584
+S
+#13576
+Volcanic Shaft~
+~
+~
+You are moving through a vertical shaft deep inside a volcano.  The walls
+crumble at your touch, easily disturbed by your hands.  Jets of steam can be
+heard above you, screaming as they enter the shaft.  You can go up or down
+from here.  
+~
+0 302391307 11
+Rd     50
+D4
+~
+~
+0 0 13560
+D5
+~
+~
+0 0 13590
+S
+#13577
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13578
+D5
+~
+~
+0 0 13295
+S
+#13578
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13579
+D2
+~
+~
+0 0 13577
+S
+#13579
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13580
+D2
+~
+~
+0 0 13578
+S
+#13580
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13581
+D3
+~
+~
+0 0 13579
+S
+#13581
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13582
+D3
+~
+~
+0 0 13580
+S
+#13582
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13583
+D3
+~
+~
+0 0 13581
+S
+#13583
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D3
+~
+~
+0 0 13582
+D5
+~
+~
+0 0 13596
+S
+#13584
+Hallway~
+~
+~
+You are moving through a hallway inside a volcano.  You can see a large
+flight of stairs here, leading up, at an extremely steep incline.  You can
+go that way, or to the south.  
+~
+0 268836875 11
+Rd     50
+D2
+~
+~
+0 0 13585
+D4
+~
+~
+0 0 13575
+S
+#13585
+Hallway~
+~
+~
+You are walking down a hallway beneath the surface.  The hallways has
+been constructed in a perfect manner.  The corners of the walls are exactly
+right, and the stones fit together with absolute precision.  You can go
+north or south from here.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13584
+D2
+~
+~
+0 0 13586
+S
+#13586
+Hallway~
+~
+~
+You are in a hallway within a volcano, deep below the surface of
+Bretonnia.  The hallway is hot, like the rest of the volcano, but
+nonetheless it is definately man-made.  The brickwork reminds you of the
+buildings scattered around the surface.  You can go north from here, or
+through the door on the west wall.  
+~
+0 268836875 11
+Rd     50
+D0
+~
+~
+0 0 13585
+D3
+~
+~
+3 0 13587
+S
+#13587
+Volcanic Path~
+~
+~
+You have arrived at the end of a volcanic shaft, where a door lies on the
+east wall.  The natural walls surrounding it are as black as the midnight
+sky.  The source of the lava tube leading to the west appears to be below
+your feet.  You can go through the door, or to the west.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+3 0 13586
+D3
+~
+~
+0 0 13588
+S
+#13588
+Volcanic Path~
+~
+~
+You are moving along a volcanic path, far below the surface.  The walls
+gradually become darker the farther east you travel.  You can go in that
+direction, or to the west.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13587
+D3
+~
+~
+0 0 13589
+S
+#13589
+Volcanic Path~
+~
+~
+You are walking along an underground path in the depths of a volcano. 
+The walls here are extra rough, as though the lava was forced through here
+at a great rate of speed.  It is as if some magical force caused this
+volcano to form, as opposed to a natural occurrance.  You can go east or
+west from here.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13588
+D3
+~
+~
+0 0 13590
+S
+#13590
+Volcanic Path~
+~
+~
+You are at the bottom of a vertical shaft, deep within a massive volcano.
+You can hear jets of steam coming from far above, while the path leads off
+to the east.  
+~
+0 268836875 11
+Rd     50
+D1
+~
+~
+0 0 13589
+D4
+~
+~
+0 0 13576
+S
+#13591
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     50
+D4
+~
+~
+0 0 13566
+D5
+~
+~
+0 0 13293
+S
+#13592
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13593
+S
+#13593
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13594
+D3
+~
+~
+0 0 13592
+S
+#13594
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13595
+D3
+~
+~
+0 0 13593
+S
+#13595
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D1
+~
+~
+0 0 13596
+D3
+~
+~
+0 0 13594
+S
+#13596
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D2
+~
+~
+0 0 13597
+D3
+~
+~
+0 0 13595
+D4
+~
+~
+0 0 13583
+S
+#13597
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13596
+D2
+~
+~
+0 0 13598
+S
+#13598
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13597
+D2
+~
+~
+0 0 13599
+S
+#13599
+Volcanic Path~
+~
+~
+~
+0 268836875 11
+Rd     100
+D0
+~
+~
+0 0 13598
+D2
+~
+~
+0 0 13290
+S
+#13601
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13602
+S
+#13602
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13603
+D2
+~
+~
+0 0 13601
+S
+#13603
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13604
+D3
+~
+~
+0 0 13602
+S
+#13604
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13605
+D3
+~
+~
+0 0 13603
+S
+#13605
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13606
+D3
+~
+~
+0 0 13604
+S
+#13606
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13607
+D2
+~
+~
+0 0 13605
+S
+#13607
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13616
+D2
+~
+~
+0 0 13606
+D3
+~
+~
+0 0 13608
+S
+#13608
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13607
+D3
+~
+~
+0 0 13609
+S
+#13609
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13610
+D1
+~
+~
+0 0 13608
+S
+#13610
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13611
+D2
+~
+~
+0 0 13609
+S
+#13611
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13612
+D2
+~
+~
+0 0 13610
+S
+#13612
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13613
+D3
+~
+~
+0 0 13611
+S
+#13613
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13614
+D3
+~
+~
+0 0 13612
+S
+#13614
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D2
+~
+~
+0 0 13615
+D3
+~
+~
+0 0 13613
+S
+#13615
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13614
+D1
+~
+~
+0 0 13617
+D2
+~
+~
+0 0 13616
+S
+#13616
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13615
+D3
+~
+~
+0 0 13607
+S
+#13617
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13618
+D3
+~
+~
+0 0 13615
+S
+#13618
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D1
+~
+~
+0 0 13619
+D3
+~
+~
+0 0 13617
+S
+#13619
+Forest Path~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13620
+D3
+~
+~
+0 0 13618
+S
+#13620
+Before the Chrystal Tower~
+~
+~
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 13621
+D2
+~
+~
+0 0 13619
+S
+#13621
+The Chrystal Tower Entrance~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13628
+D2
+~
+~
+0 0 13620
+D3
+~
+~
+0 0 13622
+S
+#13622
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13623
+D1
+~
+~
+0 0 13621
+S
+#13623
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13624
+D2
+~
+~
+0 0 13622
+S
+#13624
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13625
+D2
+~
+~
+0 0 13623
+S
+#13625
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13626
+D3
+~
+~
+0 0 13624
+D4
+~
+~
+0 0 13630
+S
+#13626
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D2
+~
+~
+0 0 13627
+D3
+~
+~
+0 0 13625
+S
+#13627
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13626
+D2
+~
+~
+0 0 13628
+S
+#13628
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13627
+D3
+~
+~
+0 0 13621
+S
+#13629
+The Chrystal Tower~
+~
+~
+~
+0 302391307 0
+Rd     100
+D4
+~
+~
+0 0 13719
+D5
+~
+~
+0 0 13692
+S
+#13630
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D3
+~
+~
+0 0 13631
+D5
+~
+~
+0 0 13625
+S
+#13631
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13630
+D2
+~
+~
+0 0 13632
+S
+#13632
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13631
+D2
+~
+~
+0 0 13633
+S
+#13633
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13632
+D1
+~
+~
+0 0 13634
+S
+#13634
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13635
+D3
+~
+~
+0 0 13633
+S
+#13635
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13636
+D3
+~
+~
+0 0 13634
+S
+#13636
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13637
+D2
+~
+~
+0 0 13635
+S
+#13637
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D2
+~
+~
+0 0 13636
+D4
+~
+~
+0 0 13638
+S
+#13638
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D3
+~
+~
+0 0 13639
+D5
+~
+~
+0 0 13637
+S
+#13639
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13638
+D3
+~
+~
+0 0 13640
+S
+#13640
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13639
+D2
+~
+~
+0 0 13641
+S
+#13641
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13640
+D2
+~
+~
+0 0 13642
+S
+#13642
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13641
+D1
+~
+~
+0 0 13643
+S
+#13643
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13644
+D3
+~
+~
+0 0 13642
+S
+#13644
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13645
+D3
+~
+~
+0 0 13643
+S
+#13645
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D2
+~
+~
+0 0 13644
+D4
+~
+~
+0 0 13647
+S
+#13646
+The Chrystal Tower~
+~
+~
+~
+0 302391307 0
+Rd     100
+D4
+~
+~
+0 0 13655
+D5
+~
+~
+0 0 13719
+S
+#13647
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13648
+D5
+~
+~
+0 0 13645
+S
+#13648
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D2
+~
+~
+0 0 13647
+D3
+~
+~
+0 0 13649
+S
+#13649
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13648
+D3
+~
+~
+0 0 13650
+S
+#13650
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13649
+D2
+~
+~
+0 0 13651
+S
+#13651
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13650
+D2
+~
+~
+0 0 13652
+S
+#13652
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13651
+D1
+~
+~
+0 0 13653
+S
+#13653
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13654
+D3
+~
+~
+0 0 13652
+S
+#13654
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D3
+~
+~
+0 0 13653
+D4
+~
+~
+0 0 13656
+S
+#13655
+The Chrystal Tower~
+~
+~
+~
+0 302391307 0
+Rd     100
+D4
+~
+~
+0 0 13664
+D5
+~
+~
+0 0 13646
+S
+#13656
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13657
+D5
+~
+~
+0 0 13654
+S
+#13657
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13658
+D2
+~
+~
+0 0 13656
+S
+#13658
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D2
+~
+~
+0 0 13657
+D3
+~
+~
+0 0 13659
+S
+#13659
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13658
+D3
+~
+~
+0 0 13660
+S
+#13660
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13659
+D2
+~
+~
+0 0 13661
+S
+#13661
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13660
+D2
+~
+~
+0 0 13662
+S
+#13662
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13661
+D1
+~
+~
+0 0 13663
+S
+#13663
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D3
+~
+~
+0 0 13662
+D4
+~
+~
+0 0 13665
+S
+#13664
+The Chrystal Tower~
+~
+~
+~
+0 302391307 0
+Rd     100
+D4
+~
+~
+0 0 13673
+D5
+~
+~
+0 0 13655
+S
+#13665
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13666
+D5
+~
+~
+0 0 13663
+S
+#13666
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13667
+D3
+~
+~
+0 0 13665
+S
+#13667
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13668
+D2
+~
+~
+0 0 13666
+S
+#13668
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D2
+~
+~
+0 0 13667
+D3
+~
+~
+0 0 13669
+S
+#13669
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13668
+D3
+~
+~
+0 0 13670
+S
+#13670
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13669
+D2
+~
+~
+0 0 13671
+S
+#13671
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13670
+D2
+~
+~
+0 0 13672
+S
+#13672
+The Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13671
+D4
+~
+~
+0 0 13680
+S
+#13673
+The Chrystal Tower~
+~
+~
+~
+0 302391307 0
+Rd     100
+D4
+~
+~
+0 0 13674
+D5
+~
+~
+0 0 13664
+S
+#13674
+The Chrystal Tower Roof~
+~
+~
+~
+0 302391307 0
+Rd     100
+D0
+~
+~
+0 0 13677
+D1
+~
+~
+0 0 13675
+D2
+~
+~
+0 0 13681
+D3
+~
+~
+0 0 13679
+D5
+~
+~
+0 0 13673
+S
+#13675
+The Chrystal Tower Roof~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13676
+D2
+~
+~
+0 0 13682
+D3
+~
+~
+0 0 13674
+S
+#13676
+The Chrystal Tower Roof~
+~
+~
+~
+0 268836875 0
+Rd     100
+D2
+~
+~
+0 0 13675
+D3
+~
+~
+0 0 13677
+S
+#13677
+The Chrystal Tower Roof~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13676
+D2
+~
+~
+0 0 13674
+D3
+~
+~
+0 0 13678
+S
+#13678
+The Chrystal Tower Roof~
+~
+~
+~
+0 268836875 0
+Rd     100
+D1
+~
+~
+0 0 13677
+D2
+~
+~
+0 0 13679
+S
+#13679
+The Chrystal Tower Roof~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13678
+D1
+~
+~
+0 0 13674
+D2
+~
+~
+0 0 13680
+S
+#13680
+The Chrystal Tower Roof~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13679
+D1
+~
+~
+0 0 13681
+D5
+~
+~
+0 0 13672
+S
+#13681
+The Chrystal Tower Roof~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13674
+D1
+~
+~
+0 0 13682
+D3
+~
+~
+0 0 13680
+S
+#13682
+The Chrystal Tower Roof~
+~
+~
+~
+0 268836875 0
+Rd     100
+D0
+~
+~
+0 0 13675
+D3
+~
+~
+0 0 13681
+S
+#13683
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D1
+~
+~
+0 0 13684
+D2
+~
+~
+0 0 13686
+S
+#13684
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D1
+~
+~
+0 0 13685
+D2
+~
+~
+0 0 13687
+D3
+~
+~
+0 0 13683
+S
+#13685
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D2
+~
+~
+0 0 13688
+D3
+~
+~
+0 0 13684
+S
+#13686
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13683
+D1
+~
+~
+0 0 13687
+D2
+~
+~
+0 0 13689
+S
+#13687
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13684
+D1
+~
+~
+0 0 13688
+D2
+~
+~
+0 0 13690
+D3
+~
+~
+0 0 13686
+D5
+~
+~
+0 0 13711
+S
+#13688
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13685
+D2
+~
+~
+0 0 13691
+D3
+~
+~
+0 0 13687
+S
+#13689
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13686
+D1
+~
+~
+0 0 13690
+S
+#13690
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13687
+D1
+~
+~
+0 0 13691
+D3
+~
+~
+0 0 13689
+S
+#13691
+Above the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13688
+D3
+~
+~
+0 0 13690
+S
+#13692
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D2
+~
+~
+0 0 13693
+D4
+~
+~
+0 0 13705
+S
+#13693
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13692
+D2
+~
+~
+0 0 13694
+S
+#13694
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13693
+D2
+~
+~
+0 0 13696
+S
+#13695
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D1
+~
+~
+0 0 13696
+D2
+~
+~
+0 0 13698
+S
+#13696
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13694
+D1
+~
+~
+0 0 13697
+D2
+~
+~
+0 0 13699
+D3
+~
+~
+0 0 13695
+S
+#13697
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D2
+~
+~
+0 0 13701
+D3
+~
+~
+0 0 13696
+S
+#13698
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13695
+D1
+~
+~
+0 0 13699
+D2
+~
+~
+0 0 13702
+S
+#13699
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13696
+D1
+~
+~
+0 0 13701
+D2
+~
+~
+0 0 13703
+D3
+~
+~
+0 0 13698
+S
+#13701
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13697
+D2
+~
+~
+0 0 13704
+D3
+~
+~
+0 0 13699
+S
+#13702
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13698
+D1
+~
+~
+0 0 13703
+S
+#13703
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13699
+D1
+~
+~
+0 0 13704
+D3
+~
+~
+0 0 13702
+S
+#13704
+Below the Chrystal Tower~
+~
+~
+~
+0 268836875 0
+Rd     150
+D0
+~
+~
+0 0 13701
+D3
+~
+~
+0 0 13703
+S
+#13705
+The Dark Shaft~
+~
+~
+~
+0 302391307 0
+Rd     150
+D4
+~
+~
+0 0 13706
+D5
+~
+~
+0 0 13692
+S
+#13706
+The Dark Shaft~
+~
+~
+~
+0 302391307 0
+Rd     150
+D4
+~
+~
+0 0 13707
+D5
+~
+~
+0 0 13705
+S
+#13707
+The Dark Shaft~
+~
+~
+~
+0 302391307 0
+Rd     150
+D4
+~
+~
+0 0 13708
+D5
+~
+~
+0 0 13706
+S
+#13708
+The Dark Shaft~
+~
+~
+~
+0 302391307 0
+Rd     150
+D4
+~
+~
+0 0 13709
+D5
+~
+~
+0 0 13707
+S
+#13709
+The Dark Shaft~
+~
+~
+~
+0 302391307 0
+Rd     150
+D4
+~
+~
+0 0 13710
+D5
+~
+~
+0 0 13708
+S
+#13710
+The Dark Shaft~
+~
+~
+~
+0 302391307 0
+Rd     150
+D4
+~
+~
+0 0 13687
+D5
+~
+~
+0 0 13709
+S
+#13711
+The Dark Shaft~
+~
+~
+~
+0 268836875 0
+Rd     150
+D4
+~
+~
+0 0 13687
+D5
+~
+~
+0 0 13712
+S
+#13712
+The Dark Shaft~
+~
+~
+~
+0 268836875 0
+Rd     150
+D4
+~
+~
+0 0 13711
+D5
+~
+~
+0 0 13713
+S
+#13713
+The Dark Shaft~
+~
+~
+~
+0 268836875 0
+Rd     150
+D4
+~
+~
+0 0 13712
+D5
+~
+~
+0 0 13714
+S
+#13714
+The Dark Shaft~
+~
+~
+~
+0 268836875 0
+Rd     150
+D4
+~
+~
+0 0 13713
+D5
+~
+~
+0 0 13715
+S
+#13715
+The Dark Shaft~
+~
+~
+~
+0 0 0
+Rd     150
+D4
+~
+~
+0 0 13714
+D5
+~
+~
+0 0 13716
+S
+#13716
+The Dark Shaft~
+~
+~
+~
+0 268836875 0
+Rd     150
+D2
+~
+~
+0 0 13621
+D4
+~
+~
+0 0 13715
+S
+#13719
+The Chrystal Tower~
+~
+~
+~
+0 302391307 0
+Rd     100
+D4
+~
+~
+0 0 13646
+D5
+~
+~
+0 0 13629
+S
+#0
+
+
+
+#SPECIALS
+M 13204 spec_breath_lightning
+M 13208 spec_cast_mage
+M 13209 spec_cast_ghost
+M 13210 spec_cast_ghost
+M 13211 spec_cast_mage
+M 13214 spec_breath_any
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 13210 0 13201
+O 0 13208 0 13202
+M 0 13216 1 13202
+M 0 13201 2 13203
+M 0 13201 2 13215
+M 0 13207 1 13221
+M 0 13202 1 13223
+M 0 13204 1 13227
+M 0 13212 1 13237
+E 0 13226 0 17
+M 0 13202 1 13241
+M 0 13211 1 13247
+E 0 13211 0 20
+E 0 13212 0 5
+M 0 13208 1 13259
+E 0 13228 0 6
+E 0 13224 0 20
+E 0 13224 0 21
+M 0 13205 1 13260
+M 0 13203 1 13261
+M 0 13214 1 13262
+G 0 13205 0
+M 0 13214 2 13263
+G 0 13206 0
+M 0 13213 1 13264
+E 0 13219 0 6
+E 0 13220 0 5
+E 0 13221 0 11
+E 0 13222 0 14
+E 0 13223 0 13
+E 0 13224 0 20
+G 0 13204 0
+O 0 13209 0 13265
+O 0 13209 0 13266
+M 0 13209 3 13267
+E 0 13213 0 20
+E 0 13213 0 21
+E 0 13214 0 5
+O 0 13507 0 13507
+M 0 13501 1 13515
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

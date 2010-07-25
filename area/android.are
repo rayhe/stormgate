@@ -1,0 +1,1081 @@
+#AREADATA
+Name        { 50-65} The Andriod Place~
+Builders    Leptar Narath~
+VNUMs       900 999
+Security    100
+Recall      26001
+Flags       80
+Version     107
+Creator     Leptar~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#900
+Jabberwock~
+Jabberwock Jabberwocky~
+A Jabberwock looks at you expectantly... Did you bring the Vorpal Blades?
+~
+It seems to be a Jabberwock... and you without your Vorpal Blades. What a shame...
+~
+1 0 0 0 0 -1000 S
+108 1 216 216 0 1000000d0+0 0d0+0
+1080 5 0
+0 0 1
+128 0 0
+>death_prog 100~
+mpoload 903
+mpecho As the beast takes its final breath, you notice a blade jammed into its hide...
+say Spiffy!
+~
+>fight_prog 50~
+em roars with displeasure.
+cast sunburst
+em snickers
+~
+|
+#901
+Shopkeep Shop Owner~
+a short shopkeeper~
+A shopkeeper stands here, selling his odd creations
+~
+~
+3 520110080 67108880 0 0 0 S
+50 1 300 200 0 50000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+>act_prog ~
+~
+>all_greet_prog ~
+~
+|
+#902
+Fishfood Vendor~
+a Fishfood vendor~
+A Fishfood wendor stands here
+~
+He hawks various types of fishfood silently
+~
+1 0 0 0 0 0 S
+105 1 210 210 0 2000000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>act_prog 100~
+$n looks into a magical Fish Bowl
+mpoload 2961 bowl
+~
+|
+#903
+nux~
+Nux~
+Nux is gay...!?!
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#910
+Guard Stone Wall~
+A guard~
+A powerful, well-armored guard stands here, ignoring all he sees.
+~
+The guard stands here in front of the nondescript stone wall, glaring at
+you but otherwise paying you no heed.  You notice that he has an insignia on
+his breastplate, as with all of his other equipment, and think it might pay
+off to ask about it.  
+~
+1 251945152 67469360 1208117248 1 0 S
+105 1 500 500 0 100000d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+>act_prog 100~
+~
+|
+#952
+silver knight~
+A Silver Knight~
+A giant Silver Knight approaches you!
+~
+~
+67 301990080 67108864 0 2 -1000 S
+65 1 200 200 0 17000d0+0 0d0+0
+650 1 0
+0 0 0
+0 0 0
+#954
+robot android~
+a broken android~
+A broken android
+~
+~
+1 192 32768 131328 0 0 S
+55 1 500 350 0 7600d0+0 0d0+0
+550 1 0
+0 0 0
+0 0 0
+#998
+Placeholder~
+Placeholder the Necromancer~
+Placeholder the Necromancer reclines luxioursly.
+~
+As you peer at Placeholder, you notice an odd, almost undead twinge to his skin. As you attempt to inspect his equipment, he notices you looking and orders you to back off. As he draws his razor-sharp daggers, you recoil in terror and forget about checking what he wears.
+~
+1 0 0 0 0 -1000 S
+105 1 250 250 0 250000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#900
+Blob Gooey Goo Entangle *Toy*~
+a Blob of Gooey Goo~
+A blob of Goeey Goo lies here on the floor~
+~
+28 0 0 0 0 65537 1
+100 100
+1000~ 1000~ 0~ 0~
+2 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#901
+Vorpal Blades Snicker Snack~
+vorpal Blades~
+A pair of Vorpal Blades lies here... You hear a faint Snicker-Snack sound as you walk by.~
+~
+5 3 0 0 0 8193 20
+100 100
+0~ 950~ 1000~ 3~
+3 1 0
+5 0
+disintegrate~
+1 1
+0 0 0
+A
+42 10
+A
+103 -1
+A
+23 -200
+A
+4 20
+#902
+Vorpal Blade~
+a Vorpal Blade~
+A Vorpal Blade lies here, ready to be paired~
+~
+5 134234119 0 0 0 8193 105
+100 100
+0~ 100~ 200~ 3~
+1 8000 0
+5 0
+timequake~
+10 10
+904 0 0
+#903
+Vorpal Blade~
+a Vorpal Blade~
+A Vorpal Blade lies here, ready to be paired~
+~
+5 33554689 0 0 0 8193 108
+100 100
+0~ 20~ 50~ 3~
+1 8000 0
+5 0
+cure light~
+2 2
+904 0 0
+A
+18 30
+A
+19 30
+#904
+Vorpal Blades Pair~
+a Pair of Vorpal Blades~
+A pair of Vorpal Blades lies here. You see that the blades complement each other and enhance their powers~
+~
+5 771752039 8448 0 0 24577 108
+100 100
+0~ 150~ 200~ 3~
+1 1 0
+5 0
+complete healing~
+10 10
+0 902 903
+A
+18 100
+A
+19 100
+#906
+Portal to Flamey-type Pits~
+portal to the Flamey-type Pit Things~
+A Portal to the Pits lies here...~
+~
+29 234881347 40960 0 0 0 0
+100 100
+904~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#907
+Jabberwock Key~
+a small key~
+A small key lies here~
+~
+18 0 0 0 0 524289 12
+100 100
+0~ 0~ 0~ 0~
+2 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#908
+Bookshelf Shelf *Toy*~
+a Bookshelf~
+One of the many bookshelves here lies along the east wall~
+~
+15 80 0 0 4 0 10000
+100 100
+1000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+chapterone~
+You pick up the book and thumb through it. It appears to be a list of unrelated numbers. Among them you see 30 to 39, 43, 44, 46, 7290, and 10350. There is strange scribbling under all of them. Checking the next page, you once again find cryptic scribbles and numbers. The list is:
+~
+E
+reminders~
+You see Narath's personal reminders list here.  It's quite long.  The
+items are as follows: Arcadia --- What about it?  Permanent Haste...  How
+and where?  Check up with Kallem about the webpage.  Ask Gorsha about
+Mprogs, need examples Continue working on Rooms 910-999.  
+New Reminders since last visit: Rooms 950 to 960 are Leptars and therefore unusable. Usable Oedit numbers start at approximately 925 to 927. Use those for now. Rooms 900-907 are mine. Objects 900 to 91x are mine.
+~
+#909
+Transport to Books *Toy*~
+transport to Home~
+A Transport device is here~
+~
+35 67108899 256 0 0 1025 108
+100 100
+108~ 2~ 2~  ~
+10 1 0
+3 906
+reserved~
+0 0
+0 0 0
+#910
+Chair Comfy *Toy*~
+an ethereal chair~
+A comfy chair, made out of ethereal materials, sits here.~
+~
+12 0 0 0 0 16384 108
+100 100
+0~ 0~ 0~ 0~
+100 168 0
+5 0
+healing hands~
+0 0
+0 0 0
+#911
+Monument~
+monument Honor~
+A Momument to the Victims of 9/11/01. Terror is fleeting, but the shadows remain to be banished once and for all~
+~
+8 1351 262144 0 0 0 200
+100 100
+0~ 0~ 0~ 0~
+911 40000000 0
+0 0
+reserved~
+0 0
+0 0 0
+#912
+Bowl Fishbowl *Toy*~
+a magical Fish Bowl~
+Fish swim around inside a magical glass-like bowl.~
+~
+15 3 262144 0 4 0 0
+100 100
+200~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>rand_prog 1~
+0
+mpecho A fish briefly materializes in the bowl
+oload 913
+oload 914
+oload 915
+~
+>look_in_prog 100~
+0
+mpecho $n looks into a fishbowl.
+mpecho &G$n put fishfood in the bowl!
+~
+|
+#913
+Floppy Fish *Toy*~
+&wa &Ofloppy &wfish~
+A fish flops around in and out of the water~
+~
+26 0 0 0 0 1 108
+100 100
+108~ iceshield~ shockshield~ acidshield~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#914
+a Slimy Fish *Toy*~
+a Slimy Fish~
+A Slimy fish slides around~
+~
+26 0 0 0 0 1 1
+100 100
+150~ sanctuary~ golden armor~ holy protection~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#915
+Shiny Fish *Toy*~
+a very shiny fish~
+An extremely bright fish is here, glowing brightly~
+~
+26 0 0 0 0 1 1
+100 100
+150~ bio-acceleration~ holy enchantment~ unholy enchantment~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#916
+Glass Acid Drink *Toy*~
+a glass of Acid~
+A Glass of Acid rests, fizzing quietly~
+~
+17 67125287 256 0 0 49153 108
+100 100
+20000~ 20000~ 15~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#917
+Fusion Engine Implant *Toy*~
+a Fusion Plant Implant~
+A Fusion Powerplant, neatly designed to be implanted, lies here~
+~
+35 1040195907 131072 0 0 4194305 106
+100 100
+100~ 2~ 2~  ~
+1 2000 0
+4 917
+reserved~
+2 2
+0 0 0
+A
+4 35
+A
+5 35
+A
+2 35
+A
+1 35
+A
+3 35
+A
+14 10000
+A
+13 5000
+A
+23 250
+A
+24 250
+A
+42 100
+A
+18 500
+A
+19 500
+#918
+Fusion Sword Blade *Toy*~
+a Fusion Blade~
+A Fusion Blade, the most refined melee weapon ever, lies here~
+~
+5 872431652 418048 0 0 8193 105
+100 100
+0~ 0~ 0~ 1~
+5 80000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -500
+A
+24 -500
+A
+42 200
+A
+18 200
+A
+19 200
+#919
+Plasma Pistol *Toy*~
+a Plasma Pistol~
+A Plasma Weapon lies here, fueled by the Fusion implant~
+~
+32 0 0 0 0 2097153 108
+100 100
+150~ -1~ 0~ nuclear bullet~
+10 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+33 500
+#920
+a Glimmering Sword~
+a Glimmering Sword~
+A Glimmering Sword fades out of reality, returning randomly to disappear again. You notice a skull insignia carved in the hilt~
+~
+5 234889297 8192 0 0 8193 105
+100 100
+0~ 75~ 100~ 3~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 600
+A
+18 160
+A
+19 160
+#921
+a Glimmering Breastplate~
+a Glimmering Breastplate~
+A Glimmering Breastplate phases in and out of reality. You notice a skull insignia on the back of it.~
+~
+9 83 0 0 0 9 105
+100 100
+-600~ 0~ 0~ 0~
+20 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#922
+a Sword of Judgment~
+a Sword of Judgment~
+As you inspect the Sword of Judgment, you notice signs of recent wear. Perhaps those who judge have been busy lately~
+~
+5 771760391 8448 0 4 8193 106
+100 100
+0~ 100~ 250~ 8~
+20 20000 0
+5 0
+pestilence~
+20 20
+0 0 0
+>rand_prog 10~
+0
+echo A Sword of Judgment flashes as it is unholstered and wielded. You pray it is not yourself that is the target of this furious justice.
+~
+|
+#923
+a Special Rune~
+a Large Rune~
+A Large Rune sits here, solid in form~
+~
+33 0 0 0 0 1 105
+100 100
+0~ 0~ 0~ 0~
+5 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#924
+A Potion of Clarity~
+a Potion of Clarity~
+(no description)~
+~
+10 268435458 0 0 0 1 106
+100 100
+106~ cancellation~ cancellation~ cancellation~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#925
+Globe World Whole~
+globe~
+The World Globe~
+~
+29 3585 0 0 0 0 108
+100 100
+25002~ 0~ 0~ 0~
+1 0 0
+3 900
+reserved~
+0 0
+0 0 0
+#926
+Globe World Spin~
+~
+~
+~
+8 8192 0 0 0 1 106
+100 100
+0~ 0~ 0~ 0~
+100 200000 0
+0 0
+timequake~
+0 0
+0 0 0
+#950
+a portal that is waiting for you to enter rest's here.~
+a portal that is waiting for you to enter rest's here.~
+A portal shimmers with bright lights almost as if there was something better on the other side~
+~
+29 134217729 24576 0 0 0 65
+100 100
+951~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#951
+ashortsword~
+ashortsword~
+A chaotic short sword~
+~
+5 67125314 0 0 0 8193 60
+100 100
+0~ 25~ 60~ 11~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 35
+A
+18 35
+A
+1 4
+A
+4 -2
+A
+3 -2
+#952
+1 eyed mask~
+a One Eyed Mask~
+A beautiful One Eyed Mask.. wait a minuite how am i supposed to wear that?~
+~
+8 3 0 0 0 65537 60
+100 100
+0~ 0~ 0~ 0~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+1 3
+A
+2 -5
+A
+13 40
+A
+12 -40
+A
+25 30
+#954
+metal cylinder~
+a metal arm~
+A metal arm~
+~
+5 234889248 24576 0 0 8193 50
+100 100
+0~ 40~ 80~ 8~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 50
+A
+2 50
+#955
+flask~
+a flask of anti-magic~
+A flask of anti-magic~
+~
+10 268435569 147456 0 0 1 0
+100 100
+999~ energy containment~ bless~ mental barrier~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#956
+flask~
+a flask of pure hitting~
+A flask lies here humming..~
+~
+10 268435523 0 0 0 1 0
+100 100
+999~ haste~ combat mind~ chant~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#998
+Razor-Honed Dagger~
+a dagger with a razor-honed edge~
+The Dagger's edge has been honed to razor-sharpness, and it drips with a fluid you're not entirely sure about....~
+~
+5 67133440 0 65536 0 8193 105
+100 100
+0~ 50~ 75~ 11~
+2 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 40
+A
+18 40
+#0
+
+
+
+#ROOMDATA
+#900
+Room Test~
+~
+~
+Test Area Number One
+Coming soon: Actual content!
+Now Updated! Finally doing some work.
+Well, that was delayed. Three. Full years. I'm still happy with the momument, and may have artistic inspiration help soon. I remain committed to actually having this *be* something in the future.
+~
+0 1036 0
+Rd     0
+D1
+~
+~
+0 0 903
+D2
+~
+~
+0 0 901
+D3
+~
+Portal~
+39 907 905
+S
+#901
+Room Two of Test~
+~
+~
+This is Room Two. Very nice, isn't it?
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 900
+D1
+~
+~
+0 0 902
+S
+#902
+Room Three~
+~
+~
+You aree in Room Three now! There is a breathtaking view of the endless void that roils incessantly around you.
+As you watch, mesmerized, something that appears to be a brick materializes out of the chaos and flows off to another region
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 903
+D3
+~
+~
+0 0 901
+S
+#903
+Room Four~
+~
+~
+Room Four! Hard work and effort have paid off at last with this truly magnificent (and also empty) room.
+You see an ornately carved opening to the west, and an opening of shattered granite to the south.
+You begin to wonder about the area creator's sanity, or at least artistic sense.
+You see a new addition to the room to the north. You think it odd, as it was not here previously, yet shows signs of great age.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 910
+D2
+~
+~
+0 0 902
+D3
+~
+~
+0 0 900
+D5
+~
+~
+0 0 904
+S
+#904
+Flame-y Type Pit Things~
+~
+~
+This room is the test Pit room. It doesn't have much, but trust me, I'm usually more creative
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 903
+S
+#905
+The room of the Jabberwock~
+~
+~
+The Jabberwock lies here in wait for the next adventurer.
+You see it eyeing you with an expression of... amusment in its eyes.
+Will you flee now, or bravely fight and risk becoming a snack for this hideous creature??
+~
+0 0 0
+Rd     0
+D1
+~
+Portal~
+39 907 900
+S
+#906
+Narath's Reading Room~
+~
+~
+Shelves full of books stretch on every wall of the room. It's well lighted, and climate-controlled, too!
+You grab an interesting looking book, and go to sit down, but notice there are no chairs. Odd.
+As you give up and sit down on the floor, a chair materializes beneath you. Strange, but very comfortable.
+~
+0 12 0
+Rd     0
+D4
+~
+~
+0 0 919
+S
+#907
+The World~
+~
+~
+As you enter the room, you notice something troubling: Your feet don't
+touch the ground at all, and you seem to be swept towards the middle of the
+room. Which would be a perfectly acceptable way of business, except that none
+of your other magic is functioning in this room and your wings are flat
+against your back.  As the room pulls you closer to the center, you see what
+force is overcoming your protections: A globe.  A very, very detailed globe.
+You inspect the globe carefully, wary that it may be a trap, but it pulls
+you no closer than viewing distance.  It's a very well-made globe, and
+includes more detail than any you have seen in your (un)-life.  Seemingly
+every city, continent, and even forest is represented.  You spin the globe
+idly along it's axis, to get a different view..  As you do this, the entire
+room trembles violently and only the strange attracting force of the globe
+keeps you on your feet.  The ground buckles and sways as the globe spins. 
+It is only when the globe has ground to a halt that you realize why exactly
+that happened, and just what it means...  
+~
+0 138969088 9
+Rd     0
+D5
+~
+~
+0 0 919
+S
+#910
+The Entrance to the Castle~
+~
+~
+You see a castle far ahead. There is a path ending abrubtly at a stone wall with two guards waiting, and nothing else. The castle appears to be illuminated by some great evil, for it shimmers and disappears from time to time
+~
+0 136445955 0
+Rd     0
+D0
+~
+~
+0 0 911
+D2
+~
+~
+0 0 903
+S
+#911
+The Stone Wall~
+~
+~
+You finally reach the plain stone wall blocking the road.  The two guards
+standing nearby pay you no attention.  Examining the wall closer, you find
+red stains scattered about.  You hope these are not remainders of previous
+visitors.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 910
+S
+#919
+Narath's Idling Room~
+~
+~
+This is Narath's Idling Room.  As he spends quite a lot of his time on
+Bport experimenting, reading, and idling, he created rooms designed for
+each.  Here, there are (will be?)  Some random OProgs or MProgs to keep him
+amused while he's pondering 
+~
+0 4 0
+Rd     0
+D4
+~
+~
+0 0 907
+D5
+~
+~
+0 0 906
+S
+#950
+A New Experience~
+~
+~
+You notice a portal not too plain not to extravagent.  Temptation tell
+you to step in..  But from past experience you know better.  But hey..  You
+think..  Whom am i kidding here..  Time to explore, right?  
+~
+0 4 0
+Rd     0
+S
+#951
+Welcome to RoBo world..~
+~
+~
+You arive at a place thats dark and dirty..  But hey..  It's no worse
+then where you came from,,or is it?  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 952
+S
+#952
+INTRUDER ALERT....!!!!! CALL FOR BACKUP~
+~
+~
+You are in AWE of what just happened...  Bright lights gleaming at you
+from every angle...  Flashes of reds and blues...  Some yellow too..  You
+start to wonder what these silver Knights want with you..  You understand
+them but...  You just dont know how to answer them....  think think..  What
+do i say?  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 951
+D5
+~
+~
+0 0 953
+S
+#953
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 954
+D4
+~
+~
+0 0 952
+D5
+~
+~
+0 0 955
+S
+#954
+The Rejected Grounds ROBO scrapyard~
+~
+~
+Here you see 8 of the most funkiest pieces of junk ever!!!  Upon futher
+inspection you notice that these are battle torn robots!  You accidently
+flipped the switched and powered them back up.  OhOh...  You start to
+think...  But wait..  They are missing hands..  You laugh ...  This is going
+to be easy..  You say to yourself...  Note to leptar make 6 vampire robots
+with crush ability or have arms without hands flagged inventory 
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 953
+S
+#955
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+west~
+3 0 956
+D4
+~
+~
+0 0 953
+S
+#956
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 955
+S
+#999
+The Room of Placeholder~
+~
+~
+Placeholder rests here, reclining on a throne of almost-living corpses.
+"What do you want? Why have the guards let you into my inner lair? Perhaps you have something I want?"
+Placeholder peers at you intently.... You become uneasy
+~
+0 136708103 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 952 spec_guard
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 911 0 900
+M 0 901 1 904
+G 0 907 0
+M 0 900 1 905
+O 0 906 0 905
+G 0 902 0
+O 0 906 0 906
+O 0 908 0 906
+O 0 910 0 906
+O 0 925 0 907
+M 0 910 1 911
+E 0 920 0 20
+E 0 920 0 21
+E 0 921 0 5
+O 0 912 0 919
+P 0 913 0 912
+P 0 914 0 912
+P 0 915 0 912
+P 0 916 0 912
+O 0 950 0 950
+M 0 952 3 952
+E 0 951 0 21
+E 0 951 0 20
+E 0 952 0 8
+M 0 954 5 954
+E 0 954 0 20
+E 0 954 0 21
+M 0 998 1 999
+E 0 998 0 20
+S
+
+
+
+#SHOPS
+901 0 10 18 0 0 100 100 0 2359
+0
+
+
+
+#$

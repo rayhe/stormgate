@@ -1,0 +1,55 @@
+#AREADATA
+Name        {  ALL } Quest Area       Manaux~
+Builders    None~
+VNUMs       10501 11000
+Security    0
+Recall      25001
+Flags       16
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMDATA
+#10802
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

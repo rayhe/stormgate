@@ -1,0 +1,2217 @@
+#AREADATA
+Name        { 10-20} The Serf Village~
+Builders    None~
+VNUMs       21000 21099
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Derk~
+Llevel      0
+Ulevel      0
+Sounds      The sounds of a child crying can be heard in the distance~
+Music       u7_shady.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#21001
+serf~
+A nameless serf~
+Some poor serf stands around here looking lost.
+~
+This poor serf has lost all hope in the world and just wanders around his
+village in a slight daze.  
+~
+65 0 0 0 0 0 S
+11 1 22 22 220 220d0+0 0d0+5
+110 0 0
+0 0 1
+0 0 0
+#21002
+father~
+A father~
+A father looks around for his child.
+~
+This man is wandering around looking for one of his lost children.  He
+may not have much in this world but his children are everything to him.  
+~
+65 0 0 0 0 0 S
+12 1 24 24 250 250d0+0 0d0+50
+120 0 0
+0 0 1
+0 0 0
+#21003
+mother~
+A mother~
+A mother sighs and yells for her child to be quiet.
+~
+This young woman is at her wits end, she never gets any peace from the
+constant energy of her children, and her husband is either always in the
+field or always at the tavern drinking.  
+~
+65 0 0 0 0 700 S
+10 1 20 20 200 200d0+0 0d0+10
+100 0 0
+0 0 2
+0 0 0
+#21004
+child~
+A small child~
+A small child runs around here screaming.
+~
+This small child obviously belongs to one of the serfs around here from
+the manner of his dress.  He runs around screaming and you begin to wonder
+that even if you were to take his head off if he wouldn't continue to
+scream.  
+~
+65 0 0 0 0 0 S
+9 1 18 18 175 175d0+0 0d0+0
+90 0 0
+0 0 1
+0 0 0
+#21005
+dying man~
+A dying man~
+This man lies here dying.
+~
+This man is really in dire straits.  He seems to have some horrible
+malady and is coughing up blood badly.  You wonder if there's anyone around
+to take care of him or if he's been left for fate to take care of.  
+~
+67 4096 0 0 0 0 S
+10 1 20 20 200 200d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+#21006
+patient~
+A patient~
+A sick patient rests on the ground here.
+~
+This poor soul is so sick he can barely summon enough strength to plead
+from mercy from you as you pass.  The flies swarm around his head getting
+ready to feast and lay their eggs when he passes on.  His eye beg you for
+mercy as you look away.  
+~
+67 4096 0 0 0 0 S
+11 1 22 22 220 220d0+0 0d0+0
+110 0 0
+0 0 1
+0 0 0
+#21007
+nurse~
+The nurse~
+The nurse hides here avoiding her duties to the sick.
+~
+This nurse is even more pathetic that the poor souls outside.  While
+she's not physically sick her sould is in danger.  It's her job to be taking
+care of these poor people but instead she hides in here hoping she doesn't
+catch whatever it is they have.  
+~
+67 0 0 0 0 -100 S
+15 1 30 30 400 400d0+0 0d0+200
+150 0 0
+0 0 2
+0 0 0
+#21008
+choir boy~
+The choir boy~
+A boy in the choir is here singing.
+~
+This small boy is dressed in a flowing silk robe and holds a hymnal in
+his hands as he lifts his voice up to the heavens.  
+~
+65 0 0 0 0 350 S
+14 1 28 28 375 375d0+0 0d0+0
+140 0 0
+0 0 1
+0 0 0
+#21009
+member congregation woman~
+The congregation member~
+This young woman stands here waiting her chance to meet the priest.
+~
+A young woman stands here holding all her worldly wealth with her.  She's
+brought it to the chapel in the hopes that she can donate it all and receive
+the blessing of the priest.  
+~
+65 0 0 0 0 250 S
+16 1 32 32 425 425d0+0 0d0+350
+160 0 0
+0 0 2
+0 0 0
+#21010
+preacher priest~
+The preacher~
+The preacher stands here giving out blessings.
+~
+The priest while an older man is still a robust one.  He fills out his
+robes and smiles benignly at the poor folk that have come to him in hopes of
+receiving a blessing.  
+~
+67 8192 0 0 0 750 S
+18 1 36 36 440 440d0+0 0d0+0
+180 0 0
+0 0 1
+0 0 0
+#21011
+creature lemur~
+The lemur~
+A small furry creature chitters madly at you.
+~
+You notice for the first time this funny looking furry creature with the
+oversized eye staring at you.  It starts to chatter at you insanely as it
+continues to pierce you with it's gaze.  It's starting to become a little
+annoying.  
+~
+67 512 0 0 0 -150 S
+13 1 26 26 250 250d0+0 0d0+10
+130 0 0
+0 0 0
+0 0 0
+#21012
+hawk~
+The hawk~
+A hawk screeches at you.
+~
+At a sudden screeching sound you look up to see probably the largest hawk
+you've ever witnessed come racing out of the sky at you.  She begins to
+slash at you with her talons as you invade her nest.  
+~
+99 524800 0 0 0 0 S
+17 1 34 34 500 500d0+0 0d0+50
+170 0 0
+0 0 2
+0 0 0
+#21013
+leaf leafy golem~
+The leafy golem~
+A strange looking golem stares at you from within the leaves.
+~
+As you watch in amazement the eyes become a body composed entirely of
+branches, twigs, and leaves.  It must be a golem of some sort for you've
+never seen or heard of such a creature in nature as the one that now
+confronts you.  
+~
+67 0 0 0 0 0 S
+19 1 38 38 575 575d0+0 0d0+35
+190 0 0
+0 0 0
+0 0 0
+#21014
+frog tree~
+The tree frog~
+A frog leaps from the surround leaves and croaks at you.
+~
+This is obviously an abnormally large specimen of the species, the branch
+can hardly contain the weight of you and this frog combined.  While you
+watch in amazement the frog's tongue zips out and smacks up against the bark
+of the tree obviously catching some unsuspecting insect for dinner.  The
+frog then returns it's gaze to you.  
+~
+67 0 0 0 0 0 S
+18 1 36 36 525 525d0+0 0d0+0
+180 0 0
+0 0 0
+0 0 0
+#21015
+wizened old man~
+The wizened old man~
+An old man sits here staring at you.
+~
+You stare in bafflement at this old man staring back at you through
+cracked spectacles.  You begin to consider asking him what he's doing
+sitting up here all alone the consider better seeing as you are also up
+here.  
+~
+67 128 0 0 0 300 S
+20 1 40 40 450 450d0+0 0d0+1500
+200 0 0
+0 0 1
+0 0 0
+#21016
+porcupine~
+The porcupine~
+A prickly porcupine watches you carefully.
+~
+This porcupine isn't very happy about you being here in it's lair and
+wishes to show you it's affection and it's quills very closely.  
+~
+99 0 0 0 0 0 S
+16 1 32 32 425 425d0+0 0d0+200
+160 0 0
+0 0 0
+0 0 0
+#21017
+foreman chief leader~
+The village foreman~
+The man in charge of keeping the village running stands here.
+~
+The village foreman notices you enter and waits for you to tell him what
+you're doing in his home.  
+~
+67 0 0 0 0 100 S
+21 1 42 42 625 625d0+0 0d0+150
+210 0 0
+0 0 1
+0 0 0
+#21018
+tavernkeeper elmo~
+Elmo the tavernkeeper~
+Elmo stands behind the bar waiting on your order.
+~
+Elmo has to be on of the ugliest looking individuals you've ever seen in
+your life.  He doesn't look like he's taken a bath in months, and his tavern
+looks about the same as him.  
+~
+67 0 0 0 0 0 S
+25 1 50 50 1000 1000d0+0 0d0+0
+250 0 0
+0 0 1
+0 0 0
+#21019
+talnor merchant~
+Talnor the merchant~
+Talnor stands behind his counter waiting to fill your order.
+~
+Talnor is a well groomed man.  Though from the cut of his clothes you can
+tell that business has not been good.  He looks like a man who's worn the
+same clothes a few too many years in a row.  
+~
+67 0 0 0 0 0 S
+25 1 50 50 1000 1000d0+0 0d0+0
+250 0 0
+0 0 1
+0 0 0
+#21020
+witch woman~
+The witch woman~
+The witch woman cackles at you as you enter the hut.
+~
+This woman looks just like you would expect any witch woman to.  She has
+bones from various creatures strewn through her hair and her choice of
+clothes leaves much to be desired.  Her bathing habits are at best an
+anually affair and some strange smoke seems to fill the air in the hut and
+leaves her with an unusual fragrance to say the least.  
+~
+67 128 0 0 0 0 S
+25 1 50 50 1000 1000d0+0 0d0+0
+250 0 0
+0 0 2
+0 0 0
+#21021
+choir boy~
+The choir boy~
+A boy in the choir is here singing.
+~
+This small boy is dressed in a flowing silk robe and holds a hymnal in
+his hands as he lifts his voice up to the heavens.  
+~
+65 0 0 0 0 350 S
+14 1 28 28 375 375d0+0 0d0+0
+140 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#21001
+rattle toy~
+a childs toy rattle~
+Some child has lost their toy rattle here.~
+~
+5 0 0 0 0 8193 8
+100 100
+0~ 0~ 0~ 7~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21002
+sharp knife~
+a sharp knife~
+Someone has honed this knife to a razor sharpness.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 3~
+3 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 2
+#21003
+leather jerkin~
+leather jerkin~
+This leather jerkin has seen much abuse and use.~
+~
+9 0 0 0 0 9 10
+100 100
+0~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#21004
+copper ring~
+a copper ring~
+A tarnished copper ring lies forgotten in the dirt.~
+~
+9 0 0 0 0 3 10
+100 100
+0~ 0~ 0~ 0~
+2 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+#21005
+swarm fly flies~
+a swarm of flies~
+A large group of flies is swarming here.~
+~
+9 2 0 0 0 32769 10
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+#21006
+blue pill~
+a dark blue pill~
+A pill of some unknown dark blue substance lies here.~
+~
+26 0 0 0 0 1 13
+100 100
+0~ cure blindness~ remove curse~ cure poison~
+2 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#21007
+hymnal book~
+a hymnal~
+A book with a large holy symbol emblazoned on the front is here.~
+~
+12 1281 16384 0 0 1 13
+100 100
+0~ 0~ 0~ 0~
+5 1 0
+5 0
+bless~
+5 5
+0 0 0
+A
+18 2
+#21008
+chalice holy water~
+a chalice of holy water~
+This gem encrusted chalice contains water that has been bless by a priest.~
+~
+17 0 0 0 0 1 100
+100 100
+0~ 100~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21009
+white collar~
+a white collar~
+This starched white collar once belonged to a priest.~
+~
+9 1280 0 0 0 5 15
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 10
+#21010
+lemur skin~
+a lemur's skin~
+This skin has been taken from some unfortunate lemur.~
+~
+9 0 1024 0 0 1025 12
+100 100
+0~ 0~ 0~ 0~
+10 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+#21011
+talon hawk~
+a hawk's talon~
+This sharp talon was lost by a hawk at sometime.~
+~
+5 0 0 0 0 8193 15
+100 100
+0~ 0~ 0~ 5~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+A
+18 2
+#21012
+hawk feather~
+a hawk's feather~
+A feather of a hawk floats gently on the breeze.~
+~
+9 64 0 0 0 16385 14
+100 100
+0~ 0~ 0~ 0~
+2 28 0
+5 0
+fly~
+5 5
+0 0 0
+#21013
+wood wooden bracer~
+a wooden bracer~
+This band of wood seems to fit perfectly to your wrist.~
+~
+9 0 0 0 0 4097 17
+100 100
+0~ 0~ 0~ 0~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21014
+frog frogskin belt~
+a frogskin belt~
+Someone has skinned a frog and made a belt out of the skin.~
+~
+9 0 2048 0 0 2049 16
+100 100
+0~ 0~ 0~ 0~
+5 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 5
+A
+19 2
+#21015
+staff ashwood~
+an ashwood staff~
+An ancient staff of ashwood with many carvings.~
+~
+4 64 0 0 0 16385 20
+100 100
+0~ 10~ 10~ shocking grasp~
+7 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#21016
+cracked spectacles~
+some cracked spectacles~
+This pair of spectacles show signs of much abuse.~
+~
+9 0 0 0 0 131073 0
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 10
+A
+4 1
+#21017
+quill porcupine~
+a porcupine's quill~
+A porcupine's long, sharp quill lies here.~
+~
+5 0 0 0 0 8193 15
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 3
+A
+19 3
+#21018
+plain shortsword~
+a plain shortsword~
+A slightly used shortsword of very plain, functional design.~
+~
+5 0 0 0 0 8193 20
+100 100
+0~ 0~ 0~ 3~
+6 28 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 5
+#21019
+shirt ringmail~
+a ringmail shirt~
+This ringmail shirt provides some manner of protection for you.~
+~
+9 0 0 0 0 9 20
+100 100
+0~ 0~ 0~ 0~
+10 32 0
+0 0
+reserved~
+0 0
+0 0 0
+#21020
+pot helm~
+a pot helm~
+This helm looks like someone took a pot and pounded two eyeholes into it to make it a helmet.~
+~
+9 0 0 0 0 17 20
+100 100
+0~ 0~ 0~ 0~
+6 24 0
+0 0
+reserved~
+0 0
+0 0 0
+#21021
+mug nasty ale~
+a mug of nasty ale~
+Looking at your ale you expect something to crawl out of it at any time.~
+~
+17 0 0 0 0 1 15
+100 100
+0~ 15~ 3~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21022
+beef haunch~
+a haunch of beef~
+This steaming haunch of beef looks delicious.~
+~
+19 0 0 0 0 1 25
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21023
+vial health~
+a vial of health~
+A vial of some bubbling liquid that looks none too tasty.~
+~
+10 268435457 0 0 0 1 13
+100 100
+0~ cure blindness~ cure poison~ remove curse~
+2 28 0
+0 0
+reserved~
+0 0
+0 0 0
+#21024
+witch witches charm~
+the witches charm~
+A small medallion with strange inscriptions on it.~
+~
+9 0 0 0 0 5 16
+100 100
+0~ 0~ 0~ 0~
+3 40 0
+5 0
+armor~
+5 5
+0 0 0
+#21025
+sandals~
+a pair of sandals~
+These sandals show many signs of wear.~
+~
+9 0 64 0 0 65 10
+100 100
+0~ 0~ 0~ 0~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+14 8
+#21026
+brew true sight~
+brew of true sight~
+A bottle of some strange drink that smells awful.~
+~
+10 268435456 16384 0 0 1 10
+100 100
+0~ detect invis~ detect hidden~ reserved~
+2 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#21027
+philtre cure cures~
+a philtre of cures~
+A small flask of some awful looking liquid.~
+~
+10 268435456 16384 0 0 1 12
+100 100
+0~ remove curse~ cure poison~ protection evil~
+2 24 0
+0 0
+reserved~
+0 0
+0 0 0
+#21028
+cloth sack~
+a cloth sack~
+A plain sack of some unknown cloth.~
+~
+15 0 0 0 0 1 10
+100 100
+75~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21029
+torch~
+a torch~
+Some wood wrapped with cloth all dipped in a some flammable solution.~
+~
+1 256 0 0 0 1 10
+100 100
+0~ 0~ 100~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21030
+iron ration rations~
+iron rations~
+Some hard bread and beefed jerky.~
+~
+19 0 0 0 0 1 10
+100 100
+35~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21031
+water flask~
+a water flask~
+A small flask with a stopper that contains water.~
+~
+17 0 0 0 0 1 10
+100 100
+100~ 100~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21032
+well~
+the well~
+A well is situated here in the center of the square.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21033
+altar~
+altar~
+A massive marble altar sit here, consecrated to some unknown deity.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21034
+donation box~
+donation box~
+A small donation box sits here.~
+~
+15 0 0 0 0 0 0
+100 100
+10000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#21000
+Davian's New Area~
+~
+~
+Vnum 21000 - 21099
+~
+0 401420 0
+Rd     0
+S
+#21001
+The path to the village~
+~
+~
+You continue to follow the path towards what looks to be some sort of
+village to the south.  Farther ahead you can see the path starts to widen
+out and become a road.  On either side of you trees line the path hemming
+you in and allowing no other directions to follow.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 17814
+D2
+~
+~
+0 0 21002
+S
+#21002
+Entering the village~
+~
+~
+Here the path starts to widen out and become more of a contemporary road
+than it was previously.  Looking down at the newly formed road you can see
+many tracks all overlapping each other in it.  Seems that this road is one
+that is widely and commonly used.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21001
+D2
+~
+~
+0 0 21003
+S
+#21003
+The branching of the street~
+~
+~
+Here the road comes to a small square and braches off in many directions.
+Off to the east and the west you can see many hut which apparently house
+people.  To the south the road continues farther into the village, while
+directly in front of you a well stands friendly and inviting.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21002
+D1
+~
+~
+0 0 21006
+D2
+~
+~
+0 0 21005
+D3
+~
+~
+0 0 21007
+S
+#21005
+Continuing along the road~
+~
+~
+You continue to follow the road south, deeper into the village wondering
+what to expect.  Looking around you it seems to be that this village belongs
+to a number of serfs that work the fields for the lord of the large fortress
+located off somewhere to the east.  All around you the hustle and bustle of
+children and their mothers trying to control them continues.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21003
+D2
+~
+~
+0 0 21020
+S
+#21006
+Off on a sidestreet~
+~
+~
+You take a small sidestreet to the east towards the numerous huts that
+seem to house the serfs that live in the village.  Looking around you wonder
+how these people can live in such horrible conditions.  A number of the huts
+are almost to the point of falling apart.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 21008
+D3
+~
+~
+0 0 21003
+S
+#21007
+Following a sidestreet~
+~
+~
+You continue along this sidestreet to the west.  Looking around you
+figure that this is where all the serfs live.  You can see numerous huts
+around you all in various states of disrepair.  Far off to the west you can
+see one hut that is in a bit better condition than the others and actually
+has a real door.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 21003
+D3
+~
+~
+0 0 21009
+S
+#21008
+The eastern sidestreet~
+~
+~
+You continue to follow the sidestreet east.  To both the north and south
+a hut stands with nothing but some loose cloth tied over the doorway to keep
+out the wind.  A number of children run screaming through the street looking
+very happy, though you wonder how they could be living under these
+conditions.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21010
+D1
+~
+~
+0 0 21014
+D2
+~
+~
+0 0 21012
+D3
+~
+~
+0 0 21006
+S
+#21009
+Following a sidestreet~
+~
+~
+You tramp through the mud while following this small street.  To your
+north and south a pair of miserable looking little huts stand as mute
+testimonials to how poor these serfs really are.  A few children run by you
+screaming and shouting and looking like they're having a good time.  
+~
+0 0 0
+Rd     21011
+D0
+~
+~
+0 0 21011
+D1
+~
+~
+0 0 21007
+D2
+~
+~
+0 0 21013
+D3
+~
+~
+0 0 21015
+S
+#21010
+A hut~
+~
+~
+You have entered one of the number of huts located on this small
+sidestreet.  It has to be one of the most pathetic things you have ever
+seen.  A few pieces of cloth on the floor evidently serve as beds, and a
+chest that looks to be falling apart seems to serve as a table.  There are a
+number of rocks with a small fire inside them that evidently serves for
+cooking and for heat.  Smoke fills the air even though quite a bit of it
+escapes through the holes in the roof.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21008
+S
+#21011
+A hut~
+~
+~
+You have entered probably one of the most destroyed buildings you have
+ever had the pleasure of visiting.  It's amazing that this place is still
+standing.  There's puddles of water all over the floor which used to be dirt
+but is now just a mud pit.  A small fire in the middle of the room fills the
+place up with smoke almost making you choke.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21009
+S
+#21012
+Inside one of the huts~
+~
+~
+Looking around at the inside of this hut, you wonder how anyone could
+live like this.  The holes in the roof certainly were not by design, while
+the pieces of cloth on the floor acting as beds cannot be comfortable.  And
+the large piece of wood set up on rocks to serve as a table tilts so
+dangerously it's a wonder that anything put on it doesn't fall off.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21008
+S
+#21013
+A hut~
+~
+~
+This hut it much like the others in that it is barely capable of shield
+it's occupants from the forces of nature.  The holes in the roof are mostly
+taken upt by well placed birds nests helping to keep out the rain, but the
+breeze from the doorway is constant and annoying.  Its a wonder anyone could
+sleep or work in such as this.  A few measly rags stuffed up against one
+corner seem to serve as a bed for the occupants.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21009
+S
+#21014
+Following the sidestreet~
+~
+~
+You continue along the sidestreet appalled at the misery these people are
+forced to live in.  To the north and south another set of pathetic huts
+stand in mute testimony to the harsh taxes of the aristocracy.  To the east
+a hut much like the others stands, but outside it a number of herbs and such
+are hanging.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21016
+D1
+~
+~
+0 0 21028
+D2
+~
+~
+0 0 21018
+D3
+~
+~
+0 0 21008
+S
+#21015
+A western sidestreet~
+~
+~
+You follow this small sidestreet west, tramping through the mud as you
+do.  To your north and south a pair of squalid huts stand with only
+draperies over their doorways to provide any privacy.  To your west stand a
+hut in slightly better repair than all the others around you, it even has a
+real door which is closed.  Off to the east you can hear a mother calling
+for her children to come home.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21017
+D1
+~
+~
+0 0 21009
+D2
+~
+~
+0 0 21019
+D3
+~
+door~
+3 0 21058
+S
+#21016
+A miserable hut~
+~
+~
+You enter this hut and are appalled at the way these people are forced to
+live.  There a so many holes in the roof you wonder if these people aren't
+flooded out in a light rain, while the few pieces of furniture sitting
+around the place are in such horrible condition it's a wonder they're still
+in one piece.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21014
+S
+#21017
+A squallid hut~
+~
+~
+You marvel at the capacity for these people to survive under such
+conditions as these.  They are exposed to the elements at all times and from
+what you can see of their cupboards they are sorely lacking in proper
+nourishment for themselves and their children.  In the middle of the room a
+small fire is banked low so as not to catch any of the bedding on the floor
+on fire.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21015
+S
+#21018
+Yet another appalling hut~
+~
+~
+By now you've become accustomed to the horrible conditions under which
+these people must live.  Though it still galls you to think of the
+aristocrats living high and fat while these people are made to suffer in
+such abject misery.  This hut is much like the others with inadequate
+roofing, pathetic pieces of furniture, and only a small campfire in the
+middle of the room for cooking and warmth.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21014
+S
+#21019
+A miserable hut~
+~
+~
+Yet again you look upon a scene of misery.  A hut that you wouldn't deign
+to house your worst enemy in.  All around you are the signs of the poverty
+of these people scream out at you and beg you to try to do something to
+alleviate these peoples suffering.  You think that one day visiting the
+nobles that own this village might not be a bad idea.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21015
+S
+#21020
+Following the roadway~
+~
+~
+You continue to slog through the mud following the road to the south. 
+Off to your east you see a small dwelling with a sign out front.  As your
+gaze wanders southwards you can see some large building farther along and
+wonder what it might be.  
+~
+0 0 0
+Rd     0
+E
+sign~
+Talnor's Dried Goods
+~
+D0
+~
+~
+0 0 21005
+D1
+~
+~
+0 0 21024
+D2
+~
+~
+0 0 21021
+S
+#21021
+Continuing along the road~
+~
+~
+Following the path of the road you get more and more depressed as you
+make your way through this miserable place.  Off to the south the large
+building grows a bit bigger while to your west is a medium sized building
+with a large sign outside it.  Closer to the south the sounds of coughing
+and hacking can be heard, you wonder what's making them.  
+~
+0 0 0
+Rd     0
+E
+sign~
+The Tavern of Lost Hope
+~
+D0
+~
+~
+0 0 21020
+D2
+~
+~
+0 0 21022
+D3
+~
+~
+0 0 21025
+S
+#21022
+The muddy roadway~
+~
+~
+Following the road you can see that the building located to the south is
+a chapel of some type.  And it's a very well built chapel too.  You wonder
+how people that barely have enough to live on can afford to have a chapel of
+such rich proportions about.  Off to the east the coughing and hacking
+noises become louder and you wonder again what is over there making those
+noises.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21021
+D1
+~
+~
+0 0 21029
+D2
+~
+~
+0 0 21023
+S
+#21023
+The roadway~
+~
+~
+The road seems to broaden out even more here as if it was designed to
+handle a large amount of traffic all at the same time.  Off to your south
+the chapel towers above you and you can see a pair of huge doors that
+probably lead into it.  While off to your west a small path leads into the
+underbrush towards a large tree that tops all the others in the area.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21022
+D2
+~
+~
+0 0 21036
+D3
+~
+~
+0 0 21048
+S
+#21024
+A small shop~
+~
+~
+You have entered the shop of the local merchant.  He has obviously
+converted his own hut to serve as his shop and it is in the same state of
+disrepair as all the huts in this place.  You wonder what items this
+merchant could possibly have to sell to people so poor, maybe if you asked
+him he'd tell you.  
+~
+0 1024 0
+Rd     0
+D3
+~
+~
+0 0 21020
+S
+#21025
+The Tavern of Lost Hope~
+~
+~
+You have entered the commone room of probably one of the worst looking
+taverns you have ever had the misfortune of gracing.  The floor is covered
+with mud and debris while the people here aren't much better.  The
+tavernkeeper off to the west behind the bar doesn't look as if he's ever
+heard of the concept called a bath.  While to the north you can see a
+smaller room which you think might be better you reaccess your opinion as
+you see a rat scurry across the floor.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21026
+D1
+~
+~
+0 0 21021
+D3
+~
+~
+0 0 21027
+S
+#21026
+A small backroom~
+~
+~
+This room is as dirty and disgusting as the common room it turns out.  A
+small table is set up here for those people that might wish to be alone
+while considering their fate of eating in a place like this.  As a cockroach
+the size of a small rat crawls across your boot you decide to be very
+careful of anything you might eat or drink in this place.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21025
+S
+#21027
+The bar~
+~
+~
+You've come upon the bar.  Standing behind it Elmo, the owner of this
+place smiles a toothless grin at you and ask you what your poison is.  Upon
+hearing his words you can't help but chuckle and consider that if you were
+to order anything in here it would probably be poison.  The bar shows signs
+of heavy use and abuse and the glasses Elmo uses are so dirty you're not
+even sure they're glass.  You begin to think that coming in here wasn't a
+really great idea.  
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 21025
+S
+#21028
+The WiseWoman's hut~
+~
+~
+This hut is much like the others in that it is only a one room building,
+other than that it differs greatly.  There are no holes in the roof, there
+is a real bed over in the corner with a chest sitting at the end of it. 
+Instead of a fire surrounded by rocks a small iron stove is located in the
+center of the room.  Also there is a real wood table, not just some wood or
+a falling apart chest.  It seems that either the villagers love and revere
+this woman and give the best to her, or the fear her greatly and refuse to
+cross her.  
+~
+0 1024 0
+Rd     0
+D3
+~
+~
+0 0 21014
+S
+#21029
+A small path~
+~
+~
+You've taken a small path off to the east of the main road through the
+village.  Looking around you you can tell by certain signs like overgrown
+shrubbery and such that this path is used very little and even seems to be
+shunned by the villagers.  You wonder what could be so bad down this way
+that all the people avoid it like the plague.  
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 21030
+D3
+~
+~
+0 0 21022
+S
+#21030
+The sick camp~
+~
+~
+Ack!  It seems that the people of the village avoid this place like the
+plague cause it is in fact the plague.  All around you are sick people in
+the act of dying or in some cases already dead.  The camp continues to the
+south and the east.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 21032
+D2
+~
+~
+0 0 21033
+D3
+~
+~
+0 0 21029
+S
+#21032
+The sick camp~
+~
+~
+All around you the sounds and sights of the sick and dying assault your
+senses.  You thought the village itself was bad but this place is worse. 
+The more you see of it the more you want to leave and never return.  Back to
+the west is the path you came in and your way out, while to the east stands
+a small hovel with a closed door.  
+~
+0 0 0
+Rd     0
+D1
+~
+door~
+3 0 21035
+D2
+~
+~
+0 0 21034
+D3
+~
+~
+0 0 21030
+S
+#21033
+The sick camp~
+~
+~
+Gods what an awful place this is.  You begin to wonder what you are doing
+here,.  This place is only filled with sick and dying people, if you stay
+much longer you yourself could very well catch whatever disease these people
+have.  Off to the east even more of the camp can be seen as well as more
+coughing.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21030
+D1
+~
+~
+0 0 21034
+S
+#21034
+The sick camp~
+~
+~
+This place is thoroughly miserable.  Over to one side there's a man
+coughing up blood while standing right next to you a woman is loosing the
+contents of her last meal onto your boots.  If you stay here much longer you
+could very well catch some deadly malady and yourself be consigned to this
+retched place to stay here till you die and then have your body carted away
+to be burned.  North the camp continues while west lead back the way you
+came and seems like a good way to go.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21032
+D3
+~
+~
+0 0 21033
+S
+#21035
+The nurses hut~
+~
+~
+This is the hut belonging to the nurse who is supposed to be helping the
+people outside.  But it seems that she's hiding in here instead, hoping that
+in time they will all die and that she won't catch whatever disease each of
+those people are carrying around with them.  
+~
+0 0 0
+Rd     0
+D3
+~
+door~
+3 0 21032
+S
+#21036
+Steps up to the chapel~
+~
+~
+You follow the road and start climbing the steps leading up to the
+chapel's two great doors.  You just can't believe how massive the chapel is
+and how new it's construction looks.  You wonder how if these people live in
+such squallor they can afford to have this chapel.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 21023
+D2
+~
+~
+0 0 21037
+S
+#21037
+Entrance to the chapel~
+~
+~
+Passing through the great doors you enter into the chapel proper and are
+amazed at the wealth shown here.  From the expensive chandeliers to the
+plush carpet, this place fairly reeks of money, yet the people have none. 
+The only thing you can think of is that they give all their money to the
+church.  To either side of you pews are lined up in neat rows.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 21036
+D1
+~
+~
+0 0 21039
+D2
+~
+~
+0 0 21038
+D3
+~
+~
+0 0 21043
+S
+#21038
+Following the aisle~
+~
+~
+You follow the plush red carpet down the center aisle.  Up ahead of you
+you can see a large altar dedicated to some god unknown to you.  On either
+side more pews are lined up.  While from up above you can hear soft sound of
+a hymn being sung.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 21037
+D1
+~
+~
+0 0 21042
+D2
+~
+~
+0 0 21047
+D3
+~
+~
+0 0 21046
+S
+#21039
+Among the pews~
+~
+~
+You are among the many pews that line the sides of the chapel.  Their
+seats are lined with plush linen cushions and hymnals sit in holders on the
+backs of the pews in front of you.  In the back corner of the room a small
+set of steps can be seen leading up to where the choir is.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 21042
+D3
+~
+~
+0 0 21037
+D4
+~
+~
+0 0 21040
+S
+#21040
+The choir loft~
+~
+~
+You've entered the choir loft.  All around you the choir sings softly as
+an organ somewhere plays a hymn for them to follow.  Candles on the wall
+provide just enough light for them to see their hymnals while seats with
+plush cushions are here for them to sit in if they get tired.  You can
+continue to follow the loft to the south or go back down from where you
+came.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21041
+D5
+~
+~
+0 0 21039
+S
+#21041
+The choir loft~
+~
+~
+Up here in the choir loft the faint sound of an organ can be heard as the
+choir softly follows it's lead in an ancient hymn.  A few seats are around
+you for the choir to use when they're not singing.  Candles holders on the
+wall provide light for the choir to see by.  You can follow the loft north
+or go back down into the pews.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21040
+D5
+~
+~
+0 0 21042
+S
+#21042
+Among the pews~
+~
+~
+You are among the pews that line the sides of the chapel.  They are lined
+with plush linen cushions for those that wish to come and worship.  Along
+the wall are large brass candle holders with candles blazing brightly.  On
+the wall in front of you holders hold the hymnals that are used during
+services.  And in the corner a small set of stairs leads up to the upper
+balcony where the choir is.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 21039
+D3
+~
+~
+0 0 21038
+D4
+~
+~
+0 0 21041
+S
+#21043
+Among the pews~
+~
+~
+You are among the pews lining the walls where the congregation sits
+during services.  Rich looking satin cushions are on the seats while holders
+line the back of the pews in front of you for the hymnals.  In the back
+corner of the chapel a small set of stairs leads up to the balcony where the
+choir is.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 21037
+D2
+~
+~
+0 0 21046
+D4
+~
+~
+0 0 21044
+S
+#21044
+The choir loft~
+~
+~
+You are up in the choir loft.  Around you can be seen people dressed in
+flowing robes who are singing softly and folowing the tune lead by an organ
+somewhere.  A set of candle holders give forth light so those singing can
+see their hymnals.  The loft continues to the south and stairs lead back
+down.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 21045
+D5
+~
+~
+0 0 21043
+S
+#21045
+The choir loft~
+~
+~
+Up here in the choir loft there a few pews for the choir to sit in when
+their not singing.  All around you the choir can be heard to softly keeping
+tune with an organ that is playing somwhere.  Candle holders along the wall
+provide light so the choir can see their hymnals.  You can follow the loft
+to the north or go back down among the pews.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 21044
+D5
+~
+~
+0 0 21046
+S
+#21046
+Among the pews~
+~
+~
+You are among the pews that line the walls where the congregation sits
+when services are in session.  Rich looking cushions are set on the pews for
+those of the congregation.  While against the far wall holders hold the
+hymnals used when it's time to sing.  In a small corner a set up stairs lead
+up to the balcony where the choir is.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 21043
+D1
+~
+~
+0 0 21038
+D4
+~
+~
+0 0 21045
+S
+#21047
+The altar~
+~
+~
+You climb the steps up to the massive marble altar.  The priest stands
+here handing out blessing to all who come before him.  Off to one side a
+small donation box lies open for people to put money to be donated to the
+chapels continuing construction in.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 21038
+S
+#21048
+A small path through the underbrush~
+~
+~
+You follow the small path managing to get yourself scratched up by the
+bushes to either side of you quite nicely.  The path seems to continue west
+to some sort of clearing from what you can tell.  The bushes on either side
+of the path leave no room for deviation, so you can only continue foward or
+back out.  
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 21023
+D3
+~
+~
+0 0 21049
+S
+#21049
+The clearing~
+~
+~
+The path lead directly to this small clearing among a a group of trees. 
+Directly before you stand a magificent oak thats obviously very old.  It
+stands quite a bit taller that all the other trees around it and has an air
+of stately grace about it.  Looking up at it you think that if you try hard
+enough you can reach the lowest most branches and climb up into it.  While
+looking around you notice a small hole in the ground near the base of the
+tree, probably belonging to some small forest creature.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 21048
+D4
+~
+~
+0 0 21050
+D5
+~
+~
+0 0 21061
+S
+#21050
+Among the branches~
+~
+~
+You manage to climb up into the branches picking up a few bumps and
+bruises for good measure.  Looking around you you can see some small bit of
+the surrounding area.  Off to the south you can see the spires of the chapel
+rising into the sky, while to the north the town is prominent.  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 21051
+D5
+~
+~
+0 0 21049
+S
+#21051
+Among the branches~
+~
+~
+You've seemed to have reached a sort of clearing among the branches of
+this great oak.  All about you other branches can be seen radiating out from
+the trunk almost like roads.  The wind whistles through your hair as you
+take in the spectacular view afforded by being so high up.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21054
+D1
+~
+~
+0 0 21052
+D2
+~
+~
+0 0 21057
+D3
+~
+~
+0 0 21056
+D4
+~
+~
+0 0 21060
+D5
+~
+~
+0 0 21050
+S
+#21052
+Out along a branch~
+~
+~
+You follow the branch out to the east as it narrows a bit making
+travelling on it slightly dangerous.  The view from here is breathtaking as
+the leaves begin to thin you can see the surrounding contryside in all it's
+splendor.  The branch continues farther out and from ahead you can hear some
+chittering noises.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 21053
+D3
+~
+~
+0 0 21051
+S
+#21053
+The end of the branch~
+~
+~
+You've come to the end of the branch, it narrows even more making it hard
+to keep your balance.  The leaves are considerably thinner here showing you
+an amazing view of the landscape.  A chittering sound attracts your
+attention and for the first time you notice a small furry animal with large
+eyes staring at you and chittering insanely.  Looking at it for a moment you
+begin to wonder if that fur could be valuable...  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 21052
+S
+#21054
+Along the branch~
+~
+~
+Following the branch off to the north the leaves begin to thin and you
+can see the landscape all around you.  Looking down you can see that the
+ground is quite a ways down and decide that falling would not be a really
+good idea.  All around out birds fly and make noises.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21055
+D2
+~
+~
+0 0 21051
+S
+#21055
+The nest~
+~
+~
+The branch ends here in what is probably the biggest birds nest you've
+ever seen in your life.  As you begin to examine it you hear a loud screech
+and the flapping of wings.  Looking around you see a hawk of awsome
+proportions and can understand now why the nest is so big.  The hawk looks
+at you with beady eyes and you wonder if you can get past it and make your
+way out of here before it attacks you.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21054
+S
+#21056
+The short stubby branch~
+~
+~
+You step out on to a short, stubby branch and see leaves all about you. 
+As you take stock of yourself and look around you see a pair of what looks
+to be eyes staring out of the leaves at you.  You wonder if now might not be
+a good time to withdraw quietly before whatever is hiding in the branches
+decided you look like a meal.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 21051
+S
+#21057
+The southern branch~
+~
+~
+As you follow this branch south it begins to widen out.  Looking around
+you you notice that the leaves are getting thicker than they were and wonder
+what sorts of things may be hiding in them.  The branch has a crook in it
+and continues to the east from which a strange croaking sound can be heard. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21051
+D1
+~
+~
+0 0 21059
+S
+#21058
+The foreman's hut~
+~
+~
+This hut is in slightly better repair than all the others, and obviously
+belongs to the foreman of this village.  But as you look around you notice
+that even this hut is in a pathetic state of affairs and doesn't reach high
+above those that the people this man resides over live in.  You wonder how
+it can be that this village is so poor that even the foreman lives in
+squallor.  
+~
+0 0 0
+Rd     0
+D1
+~
+door~
+3 0 21015
+S
+#21059
+Bushy branch~
+~
+~
+The leaves are so thick here that you can hardly see anything around you
+other than the branch itself.  From somewhere inside the leaves the croaking
+sound gets louder, then all of a sudden a large tree frog leaps onto the
+branch directly in front of you and croaks at you as you invade it's
+territory.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 21057
+S
+#21060
+The top of the tree~
+~
+~
+You have reached the top of the tree and the view is absolutely amazing,
+looking around you can see almost forever.  All of a sudden you notice a
+wizened old man sitting in and among the branches staring at you silently. 
+You wonder what he could be up to sitting up all alone in this tree.  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 21051
+S
+#21061
+A small burrow~
+~
+~
+You crawl downwards through the small hole into what looks to be the
+burrow of some creature.  This place is so small that you can barely fit in
+it, you wonder what made you decide to come down here?  Off to the south a
+sort of snuffling sound can be heard and you begin to wonder if this hole is
+inhabited.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21062
+D4
+~
+~
+0 0 21049
+S
+#21062
+The back of the burrow~
+~
+~
+Yep, this hole is definately has a resident.  You look down on the
+enraged porcupine and wonder why you would crawl down into its den and
+bother it?  As you look around you begin to wonder if there's enough room to
+fight, cause it seems the porcupine has just that in mind as it rolls up
+into a ball and throws itself at you!  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21061
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 21032 0 21003
+M 0 21002 3 21010
+E 0 21002 0 20
+E 0 21025 0 12
+M 0 21004 3 21013
+E 0 21001 0 20
+M 0 21001 3 21017
+E 0 21002 0 20
+E 0 21003 0 5
+E 0 21025 0 12
+M 0 21003 3 21018
+E 0 21004 0 2
+E 0 21003 0 5
+M 0 21019 1 21024
+E 0 21002 0 20
+E 0 21003 0 5
+E 0 21025 0 12
+G 0 21028 0
+G 0 21029 0
+G 0 21030 0
+G 0 21031 0
+M 0 21018 1 21027
+E 0 21002 0 20
+G 0 21021 0
+G 0 21022 0
+M 0 21020 1 21028
+M 0 21006 1 21032
+E 0 21005 0 9
+M 0 21006 1 21032
+E 0 21005 0 9
+M 0 21005 1 21033
+E 0 21005 0 9
+M 0 21005 1 21033
+M 0 21007 1 21035
+G 0 21006 0
+G 0 21006 0
+M 0 21009 3 21038
+M 0 21021 1 21041
+E 0 21007 0 22
+M 0 21008 1 21044
+E 0 21007 0 22
+M 0 21010 1 21047
+G 0 21008 0
+E 0 21009 0 3
+O 0 21033 0 21047
+O 0 21034 0 21047
+M 0 21011 1 21053
+E 0 21010 0 16
+M 0 21012 1 21055
+E 0 21012 0 22
+E 0 21011 0 20
+M 0 21013 1 21056
+E 0 21013 0 19
+M 0 21017 1 21058
+E 0 21018 0 20
+E 0 21019 0 5
+E 0 21020 0 6
+M 0 21014 1 21059
+E 0 21014 0 17
+M 0 21015 1 21060
+E 0 21016 0 7
+E 0 21015 0 22
+M 0 21016 1 21062
+E 0 21017 0 20
+S
+
+
+
+#SHOPS
+21018 19 17 0 0 0 100 100 0 24
+21019 1 15 19 17 0 125 75 7 21
+21020 10 0 0 0 0 125 75 7 21
+0
+
+
+
+#$

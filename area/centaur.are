@@ -1,0 +1,1469 @@
+#AREADATA
+Name        { 30-50} Centaur Village~
+Builders    Kitti~
+VNUMs       28900 28949
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Kitti~
+Llevel      0
+Ulevel      0
+Sounds      &wThe sounds of hooves clattering and children playing surrounds you.~
+Music       u7_courg.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#28900
+cat calico~
+a calico cat~
+A calico cat rubs up against your legs.
+~
+This is a large and fluffy cat is covered in black, orange and white
+spots.  She looks up at you with her large green eyes and purrs softly.
+She's rather large for a cat so you decide not to her small stature for
+granted.
+~
+65 0 0 0 0 0 S
+25 1 50 50 1050 1050d0+0 0d0+100
+250 0 0
+0 0 2
+0 0 0
+#28902
+centaur shaman~
+the centaur shaman~
+A centaur shaman is here singing strange chants over a black cauldron.
+~
+This shaman is covered with paint and feathers, so you're not sure what
+color it actually is under all of that, but he seems to be a bit smaller
+than the warriors and other centaurs of the village.
+~
+67 33554432 0 0 0 0 S
+50 1 100 100 3840 3840d0+0 0d0+25000
+500 0 0
+0 0 1
+0 0 0
+#28903
+chieftain centaur woman~
+the centaur chieftain~
+The centaur chieftain looks over at you with a raised eyebrow.
+~
+The centaur chieftain seems to be the largest of all the centaurs in the
+village.  Her muscles ripple under her black coat and her grim face shows
+the wear of time and hardship.  You think she won't be incredibly pleased if
+you cause trouble in her home.
+~
+67 128 0 0 0 0 S
+50 1 100 100 4800 4800d0+0 0d0+50000
+500 0 0
+0 0 2
+0 0 0
+#28904
+centaur child~
+a centaur child~
+A centaur child trots around playing games.
+~
+A small child with the hind end of a horse smiles at you mischievously.
+She seems to find it amusing that she's a tad larger than you at her young
+age.
+~
+65 0 0 0 0 0 S
+40 1 80 80 2500 2500d0+0 0d0+5000
+400 0 0
+0 0 2
+0 0 0
+#28905
+centaur mother~
+a centaur mother~
+A centaur mother is here watching over her children.
+~
+A tired looking mother smiles softly at you as she keeps a close eye on
+her playing children.  You could almost forget that she's not a human with
+how she acts.
+~
+67 0 0 0 0 0 S
+43 1 86 86 3000 3000d0+0 0d0+15000
+430 0 0
+0 0 2
+0 0 0
+#28906
+centaur woman~
+a centaur woman~
+A centaur woman beams you a smile and continues on her way.
+~
+This is a pretty young centaur woman.  Probably only the equivalent of 20
+human years of age, she's been fighting off the flirtations of the young
+centaur men as they look for a young wife to make their own.
+~
+65 0 0 0 0 0 S
+43 1 86 86 3000 3000d0+0 0d0+17500
+430 0 0
+0 0 2
+0 0 0
+#28907
+centaur blacksmith smith~
+the blacksmith~
+A large centaur blacksmith is here working over a hot forge.
+~
+This is a darkly tanned man.  His skin and hair are almost the same color
+from years of working over the forge.  His arms are huge from pounding metal
+into shape.
+~
+67 0 0 0 0 0 S
+47 1 94 94 5000 5000d0+0 0d0+20000
+470 0 0
+0 0 1
+0 0 0
+#28908
+cherry centaur woman~
+Cherry the centaur~
+A centaur woman is here to help you with whatever you need to buy.
+~
+Cherry is an almost red colored centaur (hence how she got her name) with
+sparkling blue eyes and a stunning smile.  She is proud of her store and
+seems happy to see customers.
+~
+67 0 0 0 1 0 S
+110 1 2 2 99999 99999d0+0 0d0+0
+20 0 0
+0 0 2
+4099 0 0
+#28909
+centaur gardener~
+a centaur gardener~
+A centaur is here tending to his garden.
+~
+This older centaur seems almost fanatic in keeping his garden free of
+weeds and other pests such as yourself.  You wonder if you should brave his
+reaction to your tramping around in his plants.
+~
+67 0 0 0 0 0 S
+43 1 86 86 3000 3000d0+0 0d0+0
+430 0 0
+0 0 1
+0 0 0
+#28910
+centaur man~
+a centaur man~
+A centaur man nods in your direction as you walk on by.
+~
+This young man seems to be preoccupied with something else and doesn't do
+much more than nod in your direction as acknowldgement ot your presense.
+~
+65 0 0 0 0 0 S
+45 1 90 90 4250 4250d0+0 0d0+15000
+450 0 0
+0 0 1
+0 0 0
+#28911
+centaur woman baker~
+the centaur baker~
+A portly centaur woman smiles at you and offers you one of many baked goods.
+~
+You're not sure if you've ever seen an overweight centaur before, but now
+you know you have.  Her constant smile makes her look very attractive, tho
+and you can almost forget that she'd break you if you tried anything
+romantic with her.
+~
+67 0 0 0 0 0 S
+1 1 2 2 99999 99999d0+0 0d0+0
+10 0 0
+0 0 2
+4099 0 0
+#28912
+warrior centaur~
+a centaur warrior~
+A large centaur warrior stands here guarding the gates.
+~
+A large centaur warrior stands before you.  The horse half of him is roan
+and his hair and tail are black.  He keeps a close eye on you with his steel
+colored eyes.
+~
+67 128 0 0 0 0 S
+45 1 90 90 3500 3500d0+0 0d0+10000
+450 0 0
+0 0 1
+0 0 0
+#28915
+crow bird~
+the crow~
+A large crow is here feasting on fallen corn.
+~
+This is a beautiful bird with ebony feathers.  It looks to be a fat bird
+too from eating so much of the gardener's corn.
+~
+67 0 0 0 0 0 S
+35 1 70 70 2000 2000d0+0 0d0+500
+350 0 0
+0 0 0
+0 0 0
+#28921
+rabbit jack jackrabbit~
+a jack rabbit~
+A small jackrabbit leaps out of your path.
+~
+Lean and lanky, this is a rabbit with incredibly huge hind legs and feet.
+It's built for speed and you have no doubt you couldn't keep up with it if
+it ran from you.
+~
+65 0 0 0 0 0 S
+35 1 70 70 2000 2000d0+0 0d0+600
+350 0 0
+0 0 0
+0 0 0
+#28923
+gazelle~
+a gazelle~
+A gazelle nibbles here on the long grasses.
+~
+This is a type of deer found on wide grassy plains.  It has long, pointy
+horns that would probably hurt if it chose to ram you.
+~
+65 0 0 0 0 0 S
+37 1 74 74 2150 2150d0+0 0d0+1000
+370 0 0
+0 0 0
+0 0 0
+#28924
+dingo dog wild-dog~
+the dingo~
+A wild dog looks hungrily in your direction.
+~
+This brown and black dog seems to have misplaced the rest of its pack as
+it is alone out on the plains.  It growls lowly at you, showing its long
+white fangs, but unless you make a move towards it, it probably won't
+attack.
+~
+65 0 0 0 0 0 S
+40 1 80 80 4250 4250d0+0 0d0+1500
+400 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#28900
+collar silver belled~
+a silver belled collar~
+A small collar with a silver bell is lying here.~
+~
+9 0 0 0 0 5 25
+100 100
+0~ 0~ 0~ 0~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#28901
+well granite~
+granite well~
+A tall granite well has been dug here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28902
+carrot~
+a carrot~
+A large carrot is growing here.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28903
+corn~
+some corn~
+Some corn has fallen to the ground here.~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#28904
+bow centaur centaur-bow~
+a centaur bow~
+A bow made of bent wood and horse hair is lying here.~
+~
+5 0 32768 0 0 8193 45
+100 100
+1~ 0~ 0~ 15~
+4 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 10
+#28906
+hoe~
+a hoe~
+A gardener's hoe has been propped up here.~
+~
+5 0 0 0 0 8193 40
+100 100
+0~ 0~ 0~ 8~
+3 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+#28907
+hat wide-brimmed~
+a wide-brimmed hat~
+A wide-brimmed hat is lying on the ground.~
+~
+9 0 0 0 0 17 40
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28908
+spear feathered~
+a feathered spear~
+A spear with many long feathers tied to its shaft is resting here.~
+~
+5 33554432 0 0 0 8193 50
+100 100
+0~ 30~ 50~ 11~
+2 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 15
+A
+26 20
+#28909
+dagger ebony~
+an ebony dagger~
+A sharp ebony dagger glitters wickedly on the ground.~
+~
+5 16384 0 0 0 8193 50
+100 100
+0~ 0~ 0~ 11~
+2 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+#28910
+ring horse hair~
+a horse hair ring~
+A small ring of braided horse hair is lying here.~
+~
+9 0 0 0 0 3 50
+100 100
+0~ 0~ 0~ 0~
+1 300 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+A
+4 2
+#28911
+oatcake cake honey~
+a honey oatcake~
+A small cake of honey and oats is lying in the dirt.~
+~
+19 0 0 0 0 1 1
+100 100
+30~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#28912
+canteen leather~
+a leather canteen~
+A leather canteen is lying here in a puddle of water.~
+~
+17 0 0 0 0 1 15
+100 100
+500~ 500~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#28913
+torch bone leg~
+a bone torch~
+The leg bone of some animal is lying here.~
+~
+1 536870912 0 0 0 1 30
+100 100
+0~ 0~ -1~ 0~
+2 300 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+5 1
+#28914
+antler crystal white~
+a crystal antler~
+A white crystal antler is lying on the ground.~
+~
+3 0 0 0 0 16385 50
+100 100
+50~ 15~ 15~ detect evil~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#28915
+bracers hide~
+hide bracers~
+Thick bracers made of animal hide have been left on the ground.~
+~
+9 0 0 0 0 4097 45
+100 100
+0~ 0~ 0~ 0~
+3 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+42 4
+#0
+
+
+
+#ROOMDATA
+#28900
+On the Path Through the Plains~
+~
+~
+You are travelling along a packed dirt road through a field of tall
+grasses.  The sounds of small creatures running around in the underbrush
+reaches your ears and you find that you can't quite identify what they might
+be.  The road continues to the north and south.  
+~
+0 4 2
+Rd     0
+S
+#28901
+Travelling Along the Plains Road~
+~
+~
+The packed earth seems to radiate heat no matter what time of the day or
+weather and you wipe your sweaty brow with a sleeve.  The sounds of crickets
+and other insects buzzing loudly almost deafens you and you catch sight of
+an occasional grasshopper as it leaps through the air to another blade of
+grass.  The road continues along to the north and south. 
+~
+0 4 2
+Rd     0
+S
+#28902
+A Turn on the Road Near the Village~
+~
+~
+You walk along this winding road and wonder if it leads to the village
+you spot to the northwest of you.  The packed earth makes for smooth
+travelling, but it's hard on your feet and you wonder how many equines have
+travelled along this road to have caused it to be so.  The road continues
+north and west of you.
+~
+0 4 2
+Rd     0
+S
+#28903
+The Dirt Road Near a Village~
+~
+~
+Grasshoppers jump out of your way as you walk along the dirt road.  You
+see in the ground all around you the recent hoofprints of horses as they
+have travelled through here also.  The grasses block your way to the north
+and south, but you can travel east or west along the dirt road.
+~
+0 4 2
+Rd     0
+S
+#28904
+On the Road to the Centaur Village~
+~
+~
+You stand in the center of a dirt road winding through the grassy plains.
+Not much is around you except for tall grasses and the road.  As you scan
+around taking in your surroundings, you see that you can travel west towards
+a village or east towards the plains.
+~
+0 4 2
+Rd     0
+S
+#28905
+A Turn on the Road Near the Village~
+~
+~
+You stand on a sharp turn on the dirt road.  The packed earth radiates
+stored heat at you and you wish for some respite from the constant sweating.
+Around you is nothing but waving golden grasses, but you see out in the
+distance an occasional tree.  You can follow the road north towards the
+village or east to the plains.
+~
+0 4 2
+Rd     0
+S
+#28906
+A Turn on the Dirt Road~
+~
+~
+The road comes to a turn here.  You are almost completely surrounded by
+tall waving grasses that seem to stretch out endlessly to the north and east
+of you.  The road turns west to some sort of village and also continues to
+the south.
+~
+0 4 2
+Rd     0
+S
+#28907
+On the Road Through the Plains~
+~
+~
+You walk along a packed earth road surrounded by the tall waving grasses
+of a plains.  The road doesn't seem to be exceptionally wide and the
+wildlife in the area doesn't seem to fear you as you walk amongst them.  You
+think you can spot a village of some sort the the northwest of you.  The
+plains stretches out to the northeast and you think you can follow along the
+road east or west. 
+~
+0 4 2
+Rd     0
+S
+#28908
+In the Center of the Plains Road~
+~
+~
+You walk in the center of this hard packed dirt road.  All around you are
+waving, golden grasses that you decide not to take a venture out into.  To
+the west of you, you think you see some kind of village, but you'd have to
+get closer to be sure.  You can follow the road east or west.
+~
+0 0 2
+Rd     0
+D3
+~
+~
+0 0 28909
+S
+#28909
+On the Plains Road Approaching the Village~
+~
+~
+You stand on the dirt road on the plains and spot a village of tents to
+the northwest of you and you also see smoke coming from somewhere on the far
+side of it.  The plains itself stretches out to the north and south of you
+and the road continues to the east and west.
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 28908
+S
+#28910
+A Sharp Turn on the Plains Road~
+~
+~
+The road here turns sharply to the south instead of leading up to the
+village as it looks to have been doing before.  Perhaps it only winds around
+to the other side for you to enter its gates.  Large golden grasses block
+movement to the north of you, but you can travel along the road to the east
+or south.
+~
+0 4 2
+Rd     0
+S
+#28911
+A Corn Row~
+~
+~
+A row of corn reaches higher than you are tall.  An odd looking scarecrow
+has been placed here in an attempt to keep the crows away, but it doesn't
+seem to be working very well.  The dark earth has been tilled to a fine
+texture so you can see the tracks little crow feet have left as they go
+after fallen ears of ripe corn.  You can see to the north and to the west of
+you more vegetable rows.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 28915
+D3
+~
+~
+0 0 28912
+S
+#28912
+The Carrot Patch~
+~
+~
+You stand in a large patch of carrots.  Their wispy green tops grow
+brightly above the ground and you can see some large orange roots poke out a
+little above the dark earth.  East of you is a large row of corn and north
+is a small vegetable garden.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 28916
+D1
+~
+~
+0 0 28911
+S
+#28913
+The Road Before the Centaur Village~
+~
+~
+You stand before the gates to the centaur village.  They stand wide open,
+seemingly inviting you to explore this village of half horse-half humans.
+If anything, you can at least attempt to escape from the heat of the road
+through the plains.  You can enter the village to the north or walk along
+the dirt road to the south of you.
+~
+0 4 1
+Rd     0
+D0
+~
+~
+0 0 28917
+D2
+~
+~
+0 0 17298
+S
+#28914
+A Centaur's Tent~
+~
+~
+You enter into a tent that has been divided in two by a large curtain.
+The cooking and family gathering area is in the front of the tent and the
+sleeping area is in the back of the tent on the other side of the curtain.
+The only obvious exit is north of you back to the road.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28921
+S
+#28915
+A Tomato Patch~
+~
+~
+Small green bushes with a tangy scent grow in sveral rows here.  You take
+a closer look and see large, juicy ripe tomatoes growing in abundance and
+realise that that's where the scent is coming from.  A gardener was recently
+here, for you can see his hoofprints in between the rows of freshly tilled
+earth.  West of you is another part of the garden and south is a corn row. 
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 28911
+D3
+~
+~
+0 0 28916
+S
+#28916
+A Small Vegetable Garden~
+~
+~
+You step into a small garden, carefully walking between the rows of
+vegetables so that you don't damage the growing plants.  Radishes, potatoes,
+and other veggies have been carefully planted here and lovingly taken care
+of.  You see no weeds growing anywhere in the precious food supply.  To the
+east and south of you are more plants growing and the village road is to the
+west.
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 28915
+D2
+~
+~
+0 0 28912
+D3
+~
+~
+0 0 28917
+S
+#28917
+The Centaur Gates~
+~
+~
+You stand just inside the village entrance and the scent of horseflesh is
+strong.  The sounds of children playing reaches your ears as well as the
+occasional fly buzzing nearby.  North of you is a large well and the gates
+are to the south.  West of you is the smell of something baking.  You peer
+to the east and see some kind of garden growing.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 28924
+D1
+~
+~
+0 0 28916
+D2
+~
+~
+0 0 28913
+D3
+~
+~
+0 0 28918
+S
+#28918
+Oats 'n Groats~
+~
+~
+You stand in a large burlap tent.  All around you are sacks of grains and
+barrels of vegetables.  A large board has been set upon two barrels as a
+counter and behind the counter are various types of sweets.  A black iron
+stove seems to have some kind of pastries and other edibles cooking in it
+and you notice a display case of the products for you to buy.  You can leave
+the tent by going east.
+~
+0 2098184 0
+Rd     0
+E
+case~
+Type LIST to see what you can buy.
+~
+D1
+~
+~
+0 0 28917
+S
+#28919
+A Centaur's Tent~
+~
+~
+You walk into this tent are are greeted by cooler air than outside.  The
+small pool in front of you probably contributes to that.  You wander about
+the tent looking in the various curtained areas and come to the conclusion
+that a well-off family must live in here.  The only exit out is to the north
+of you.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28926
+S
+#28920
+A Centaur's Tent~
+~
+~
+You enter into a spacious and cool tent.  It consists of only a couple
+rooms divided by large, thick curtains, but they all are large and very nice
+looking.  You discover a cooking area, a bathing area and several sleeping
+areas, none of which seem to be occupied at the moment.  The only exit seems
+to be to the north of you.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28927
+S
+#28921
+Savannah Way~
+~
+~
+You stand in a packed dirt culdesac before two centaur family tents.
+Small children seem to have been recently here for they've left their toys
+lying about on the ground and you have to be careful not to trip on them.
+You can enter the tents to the north and south of you or walk along the road
+to the west back to the rest of the village.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 28928
+D2
+~
+~
+0 0 28914
+D3
+~
+~
+0 0 28922
+S
+#28922
+Savannah Way~
+~
+~
+You are walking along a dirt road that leads east and west.  Generations
+of hooves have packed the earth down to a hardness.  Your shoes manage to
+kick an occasional rock and there are several weeds growing along the sides
+of the road, but other than that, there's not much to see here.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 28921
+D3
+~
+~
+0 0 28923
+S
+#28923
+Savannah Way~
+~
+~
+You walk along a dirt road that winds in and out of tall golden grasses.
+The sounds of children playing and people working permeate the area.  South
+of you is some kind of vegetable garden.  East of you the road continues and
+west of you is the village well.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 28922
+D3
+~
+~
+0 0 28924
+S
+#28924
+A Granite Well~
+~
+~
+A medium sized granite well has been dug deep into the ground.  Wooden
+poles have been set around and on it with a rope tied to it to lower a large
+bucket down into the well and bring up the ice cold water.  There's a lid on
+top of the well itself too keep dust and other foreign objects from falling
+into the water below.  Exits are east and west down lanes with small centaur
+children playing on them.  You can also go north to the village square or
+south to the village gates.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 28931
+D1
+~
+~
+0 0 28923
+D2
+~
+~
+0 0 28917
+D3
+~
+~
+0 0 28925
+S
+#28925
+Baobob Lane~
+~
+~
+You walk along a gravelly road lined with golden plains grasses and
+baobob trees.  The road winds between the trees and several empty looking
+tents that don't really look worth investigating.  You can go east to the
+well or west along the road.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 28924
+D3
+~
+~
+0 0 28926
+S
+#28926
+Baobob Lane~
+~
+~
+You find yourself walking along a nice part of this gravelly road.  The
+surrounding baobob trees add some cover from the elements and add shade from
+the sun during the day.  Around you are some well-kept large tents.  You can
+follow the road east and west or you can enter one of the tents to the
+south.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 28925
+D2
+~
+~
+0 0 28919
+D3
+~
+~
+0 0 28927
+S
+#28927
+Baobob Lane~
+~
+~
+You stand at the western end of Baobob Lane.  Large baobob trees block
+you from going to the north or west.  You can travel along the gravel road
+to the east or you can enter a large, nice looking tent to the south of you.
+Small flower gardens have been planted on either side of the tent entrance.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 28926
+D2
+~
+~
+0 0 28920
+S
+#28928
+A Centaur's Tent~
+~
+~
+You enter into this large, one-room tent and see all around you the signs
+of a family living in here.  In one corner of the room is a small firepit
+with a smoke hatch above it for cooking.  Bedmats lie on the other side of
+the room where the family sleeps.  The only obvious exit is to the south of
+you.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 28921
+S
+#28929
+Snowmane Lane~
+~
+~
+You walk along a white gravel path.  You seem to be in a merchant zone
+because you hear the sounds of a register chiming and the aroma of saddle
+soap reaches your nose.  North of you is some kind of store or you can walk
+along the road to the west.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 28934
+D3
+~
+~
+0 0 28930
+S
+#28930
+Snowmane Lane~
+~
+~
+You are walking along a white gravel road.  Golden grasses grown on
+either side of you and occaisionally you find several wildflowers growing on
+either side of the road.  You can go west to the square or east on the road.
+North of you is impenatrable bushes.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 28929
+D3
+~
+~
+0 0 28931
+S
+#28931
+Maple Square~
+~
+~
+You've reached a junction of roads in the village.  An incredibly large
+maple tree is growing in the center of the square.  It's as if the village
+was built around the tree instead of the tree being planted after.  A small
+circle of grass grows around the tree looking ideal for resting your tired
+bones on.  Roads continue to the north, east and west of you or you can go
+south to the village well.
+~
+0 0 1
+Rd     0
+E
+tree~
+You stand beneath the branches of an ancient maple tree.
+ 
+               &G  _-_
+             &G /--   --\
+          &G /--         --\
+          &G{               }
+          &G \  _-     -_  /
+            &G-- &O \\ //&G  --
+                &O | |
+                &O | |
+               &O // \\&w
+~
+D0
+~
+~
+0 0 28935
+D1
+~
+~
+0 0 28930
+D2
+~
+~
+0 0 28924
+D3
+~
+~
+0 0 28932
+S
+#28932
+Ebonhoof Way~
+~
+~
+Your feet crunch loudly on this black, volcanic rock road.  Unlike in
+other parts of the village you find no plants other than the plains grass
+growing nearby.  The heat here is almost unbearable and you smell sulphur
+coming from the northwest of you.  You can travel along the road to the west
+or you can go to the square to the east of you.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 28931
+D3
+~
+~
+0 0 28933
+S
+#28933
+Ebonhoof Way~
+~
+~
+You are on the black gravel road in front of a large stone building.  The
+sounds of metal clanging on eachother comes to you from the building and
+waves of heat come from the entrance.  The road continues to the east or you
+can enter the smithy to the north.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 28936
+D1
+~
+~
+0 0 28932
+S
+#28934
+Cherry's General Supplies~
+~
+~
+This is a large tent with very wide isles to make sure that the centaur
+inhabitants have no problems getting around in the store.  General supplies
+of all kinds are packed onto shelves and in barrels.  A cool breeze blows
+through the tent causing the tent walls to shake slightly.  The only exit is
+south of you.
+~
+0 2098184 0
+Rd     0
+D2
+~
+~
+0 0 28929
+S
+#28935
+Sunfire Way~
+~
+~
+You find it hard to forget that you're in a plains area as the golden
+grasses grow tall on either side of you as you walk along this north-south
+road.  The road itself has been laid with cobblestones and has been very
+well kept.  You wonder what lies along the road to have warranted the better
+upkeep than in the rest of the village.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 28938
+D2
+~
+~
+0 0 28931
+S
+#28936
+Blacksmith and Shoe Repair~
+~
+~
+You wipe your sweating brow as you enter into the village smithy.  This
+seems to be the only nontent building in the entire village.  The reasons
+are obvious as you look at the large flaming forge before you.  Weapons,
+armor and horseshoes line the walls and shelves on the far end of the
+building.  The only exit seems to be to the south.
+~
+0 67108872 0
+Rd     0
+D2
+~
+~
+0 0 28933
+S
+#28937
+The Temple to Grygor~
+~
+~
+You have entered into the holiest of places in the village.  This is the
+temple to the Centaur God.  You find no pews in here but large cushions lie
+on the floor all around you.  To the east is an altar to Grygor and a
+portrait of the god Himself has been hung above it.  The exits are north and
+west of you.
+~
+0 8 0
+Rd     0
+E
+cushions~
+These are large fluffy cushion that the centaurs use to kneel on when
+they attend mass or pray to their god.
+~
+E
+altar~
+Carved out of ivory, this small altar must be priceless.  Small scenes of
+centaurs hunting out in the fields, gathering food and celebrating have been
+very beautifully carved into the sides leaving the top flat for offerings.
+~
+E
+portrait~
+A snowy white centaur of large stature is depicted here.  He is facing to
+the side but has turned to look at you.  You're sure you feel those ice blue
+eyes looking into your very soul.  You almost see the muscles of his upper
+body ripple as he holds his spear before him.  
+~
+D0
+~
+~
+0 0 28939
+D3
+~
+~
+0 0 28938
+S
+#28938
+Sunfire Way~
+~
+~
+You are at the northern end of this golden road.  The cobblestones lead
+up to one very large tent to the north and east of you.  Both entrances are
+open and when you peek inside you see a meeting hall of some type to the
+north of you and an altar of some sort to the east of you.  You can also
+follow the road south to the rest of the village.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 28940
+D1
+~
+~
+0 0 28937
+D2
+~
+~
+0 0 28935
+S
+#28939
+The Shaman's Tent~
+~
+~
+You enter the room and instantly fear for your safety.  Sharp objects and
+large jars of unknown contents are balanced precariously all over the place.
+The scent of strange herbs simmering in a black cauldron reaches your nose
+causing you to involuntarily grimace in disgust.  This is the shaman's
+quarters and he probably wouldn't be too happy with you grubbing around in
+his things.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 28937
+D3
+~
+~
+0 0 28940
+S
+#28940
+The Meeting Room~
+~
+~
+You are in a huge gathering area within the tents.  A podium has been
+placed on the west end of the room from which someone can stand and hold
+meetings.  Several cushions are lying on the floor, but mostly the earth is
+packed enough that you assume the centaurs just stand during meetings.
+North and east of you are more rooms within the tent or you can go back
+outside to the south.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28941
+D1
+~
+~
+0 0 28939
+D2
+~
+~
+0 0 28938
+S
+#28941
+The Chieftain's Quarters~
+~
+~
+This room is almost bare except for a large pad on the floor for the
+chieftain to sleep on and a crate with several clothing items in it.  Two
+crossed spears are hung on the wall in ceremonial manner.  Above the door
+flap to the south is some kind of charm.  You're not sure what it's for, but
+you assume that it's to ward evil spirits from entering.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 28940
+S
+#28942
+A Light Forest Road~
+~
+~
+You stand west of an arch of trees.  The road winds through some thinning
+woods and it looks like to the far west you can see a sea of gold.  Nothing
+of interest catches your eyes to the north or south so your only option is
+to follow the road east or west.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+0 0 9595
+D3
+~
+~
+0 0 28943
+S
+#28943
+A Thinning Forest Road~
+~
+~
+The trees about you are all but completely gone as the plains to the west
+of you spreads enlessly on.  A wave of heat hits you from time to time.  It
+doesn't seem that the weather or the time of day and night can save you from
+the sweltering heat.  You can travel along the road to the east into forest
+or west into the plains.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+0 0 28942
+S
+#28944
+A Turn in the Road~
+~
+~
+You stand inbetween the beginnings of a forest that spreads out to the
+east and a large plains that looks like it stretches endlessly to the west. 
+Every once in a while a timid deer steps from the forest to nibble on the
+golden grasses but as it notices you looking at it, it darts back into the
+forest.  Your only options seem to be to travel along the road east or to
+the south.  
+~
+0 4 2
+Rd     0
+S
+#28945
+A Twist in the Plains Road~
+~
+~
+You take a deep pull of you wanter container as the heat out here causes
+you to sweat unbearably.  Glancing about all you can seem to catch are the
+sights of small lizards darting to and from rocks and across the road as you
+disturb their heat-bathing.  It's times like these you wish you were one of
+the silly warm-blooded creatures.  The road turns to the north and west
+towards some kind've village.  
+~
+0 4 2
+Rd     0
+S
+#28946
+A Dirt Road on the Plains~
+~
+~
+You carefully examine your surroundings and notice hoofprints marking the
+road as if a huge number of equines have come this way lately.  You ponder
+if this might be the way to the centaur village that has been recently
+discovered.  If it is, perhaps you should be extra careful as the creatures
+in this area may very well destroy you if you're not powerful enough!  The
+road twists to the north and to the east of you.  
+~
+0 4 2
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 28900 spec_fido
+M 28902 spec_cast_mage
+M 28907 spec_repairman
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 28915 1 28911
+O 0 28903 0 28911
+O 0 28902 0 28912
+M 0 28912 2 28913
+E 0 28915 0 18
+E 0 28915 0 19
+E 0 28904 0 20
+M 0 28912 2 28913
+E 0 28904 0 20
+E 0 28915 0 18
+E 0 28915 0 19
+M 0 28910 3 28914
+M 0 28909 1 28915
+E 0 28907 0 6
+E 0 28906 0 20
+M 0 28900 1 28917
+E 0 28900 0 3
+M 0 28911 1 28918
+G 0 28911 0
+M 0 28906 2 28919
+M 0 28905 2 28920
+M 0 28904 3 28920
+M 0 28904 3 28923
+O 0 28901 0 28924
+M 0 28910 3 28924
+M 0 28905 2 28928
+M 0 28904 3 28928
+M 0 28906 2 28930
+M 0 28910 3 28932
+M 0 28908 1 28934
+G 0 28913 0
+G 0 28912 0
+M 0 28907 1 28936
+M 0 28902 1 28939
+E 0 28909 0 20
+E 0 28914 0 22
+M 0 28903 1 28941
+E 0 28908 0 20
+E 0 28910 0 1
+E 0 28915 0 18
+S
+
+
+
+#SHOPS
+28908 1 15 9 17 0 100 100 0 24
+28911 19 0 0 0 0 100 100 0 24
+0
+
+
+
+#$

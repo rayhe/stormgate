@@ -1,0 +1,1738 @@
+#AREADATA
+Name        { 45-50} Viking Ship~
+Builders    None~
+VNUMs       1101 1150
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Freya~
+Llevel      0
+Ulevel      0
+Music       u6_johne.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#1107
+The young water boy~
+The young water boy~
+A young boy walks about offering water to the oarsmen.
+~
+~
+67 128 0 0 0 1000 S
+40 1 80 80 1900 1900d0+0 0d0+5000
+400 0 0
+0 0 1
+0 0 0
+#1111
+prisoner saxon man~
+A Saxon Prisoner~
+A Saxon man is chained to the wall.
+~
+The young man, seemingly of Saxon origin, looks rather frightened and
+battered.  He looks warrily at the guards and sighs.  His eyes move to the
+chains around his ankles and wrists.  
+~
+3 0 0 0 0 700 S
+35 1 70 70 1800 1800d0+0 0d0+0
+350 0 0
+0 0 1
+0 0 0
+#1112
+viking guard~
+A Viking Guard~
+A large Viking is guarding this area.
+~
+A large man stands here, he has a rather plain shield and wields a short
+handled axe.  His long blond braids and beard reach well down to his waist. 
+He stares at you intently and waits for you to decide to leave.  
+~
+65 0 0 0 0 0 S
+45 1 90 90 4250 4250d0+0 0d0+10000
+450 0 0
+0 0 1
+2 0 0
+#1113
+viking drunk drunken~
+A drunken Viking~
+A Viking sits here draining another tankard of ale.
+~
+A large man with blond hair and an unkept blond beard sits in front of
+you.  He smells of stale ale and looks to have finished off a keg of the
+stuff all on his own.  He winks at you and grins drunkenly.  
+~
+2051 0 0 0 0 0 S
+47 1 94 94 5000 5000d0+0 0d0+20000
+470 0 0
+0 0 1
+0 0 0
+#1114
+sleeping viking man~
+A sleeping Viking~
+A large man sleeps here, his snores echo off the walls.
+~
+A large man snores loudly from his bedroll.  All his blond hair and beard
+cover his face.  You may want to leave this sleeping Viking lie.  
+~
+3 0 0 0 0 -200 S
+46 1 92 92 4600 4600d0+0 0d0+5000
+460 0 0
+0 0 1
+0 0 0
+#1115
+sleeping man viking~
+A sleeping Viking~
+A large man sleeps here, his snores echo off the walls.
+~
+A large man snores loudly from his bedroll.  All of his blond hair and
+beard cover his face.  You may want to leave this sleeping Viking lie.  
+~
+3 0 0 0 0 -200 S
+46 1 92 92 4600 4600d0+0 0d0+5000
+460 0 0
+0 0 1
+0 0 0
+#1116
+viking oarsman oar man~
+A Viking Oarman~
+A man sits here, oar in hand, rowing to the beat of the drum.
+~
+The man's muscles give testament to the many hours he has sat manning the
+oars of the ship.  There is a tired look in his eyes and sweat pours off his
+body.  He looks at you without missing a beat and returns to his task.  
+~
+3 0 0 0 0 200 S
+46 1 92 92 4600 4600d0+0 0d0+10000
+460 0 0
+0 0 1
+0 0 0
+#1117
+viking oarsman oar man~
+A Viking Oarman~
+A man sits here, oar in hand, rowing to the beat of the drum.
+~
+This man's muscles give testament to the many hours he has sat manning
+the oars of this ship.  There is a tired look in his eyes and sweat pours
+off his body.  He looks at you without missing a beat and returns to his
+task.  
+~
+3 0 0 0 0 200 S
+46 1 92 92 4600 4600d0+0 0d0+10000
+460 0 0
+0 0 1
+0 0 0
+#1118
+pacesetter viking pace setter~
+The Pacesetter~
+A man sits here beating on a drum setting the pace.
+~
+The man looks towards you with clear blue eyes, though his rhythm on the
+drum never falters.  He seems to be rather relaxed and you realize that he
+sizing you up, you had better move along unless you'd like to try your hand
+at rowing.  
+~
+3 0 0 0 0 -100 S
+47 1 94 94 5000 5000d0+0 0d0+20000
+470 0 0
+0 0 1
+0 0 0
+#1119
+viking warrior sven~
+Sven, the Warrior~
+A massive warrior named Sven stands here.
+~
+One of the largest men you have ever seen stands in front of you.  His
+eyes are a blue that matches the sea he looks onto.  His blond hair flows in
+the wind and he holds a spear that looks to have seen many a battle.  
+~
+3 0 0 0 0 -400 S
+49 1 98 98 5700 5700d0+0 0d0+25000
+490 0 0
+0 0 1
+2 0 0
+#1120
+erik viking berserk~
+Erik the Viking Berserker~
+Erik the Beserker stands here foaming at the mouth.
+~
+Erik, thought not the largest man you have seen, is the most frightening
+human being you have ever laid eyes on.  He is foaming at the mouth, and his
+eyes have a wild look in them.  In his hand is a MASSIVE battle axe that
+looks like it has made many people literally lose their minds.  
+~
+3 0 0 0 0 0 S
+49 1 98 98 5650 5650d0+0 0d0+1000
+490 0 0
+0 0 1
+0 0 0
+#1121
+wulf captain viking~
+Wulf, the Viking ship Captain~
+Wulf, the Captain of this ship stands here overseeing everything.
+~
+By far the largest man you have seen in your life.  Wulf towers over even
+Erik and Sven!  His muscles are HUGE!  As is his amazing warhammer, boy
+would you like to get a hold of that!!  
+~
+3 0 0 0 0 600 S
+50 1 100 100 6000 6000d0+0 0d0+30000
+500 0 0
+0 0 1
+3 0 0
+#1122
+dragon figure head~
+A Dragon Figure Head~
+A stylized dragon figure head is here.
+~
+The figure head of the ship looks almost alive.  It's eyes seem to burn
+with fire and seem to follow your movements.  You could swear you can hear
+it breathing, and hear a slight growl emitted from it's mouth.  
+~
+3 0 0 0 0 -1000 S
+50 1 100 100 5700 5700d0+0 0d0+20000
+500 0 0
+0 0 0
+196611 0 0
+#1123
+valkyrie woman~
+A Valkyrie~
+A Valkyrie flies around.
+~
+A beautiful woman flies above the ship.  You have never seen such an
+attractive woman, it is evident she is not a mortal.  You can barely take
+your eyes off her.  You notice her breastplate is without buckles, straps or
+seams.  
+~
+65 0 0 0 0 0 S
+49 1 98 98 5650 5650d0+0 0d0+30000
+490 0 0
+0 0 2
+3 0 0
+#1124
+sea hawk~
+A sea hawk~
+A sea hawk flies above you.
+~
+A beautiful hawk flies overhead.  It flies effortlessly and screeches in
+greeting.  
+~
+65 0 0 0 0 0 S
+45 1 90 90 4250 4250d0+0 0d0+1000
+450 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#1107
+water pot~
+a pot of water~
+A pot of water lies here.~
+~
+17 0 0 0 0 16385 0
+100 100
+15~ 10~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1111
+iron shackles~
+iron shackles~
+A pair of iron shackles lies here.~
+~
+9 0 256 0 0 257 35
+100 100
+0~ 0~ 0~ 0~
+25 348 0
+0 0
+reserved~
+0 0
+0 0 0
+#1112
+viking round~
+a Viking round shield~
+A plain round shield inscribed with Viking runes lies here.~
+~
+9 0 512 0 0 513 45
+100 100
+0~ 0~ 0~ 0~
+20 448 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+A
+18 4
+A
+13 20
+#1113
+axe short viking~
+a short handled axe~
+A short handled Viking axe lies here.~
+~
+5 0 0 0 0 8193 45
+100 100
+0~ 0~ 0~ 13~
+15 448 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 15
+#1114
+tankard ale~
+an Ale Tankard~
+A tankard of ale lies here.~
+~
+17 0 0 0 0 16385 45
+100 100
+15~ 15~ 3~ 0~
+5 448 0
+0 0
+reserved~
+0 0
+0 0 0
+#1115
+bedroll bed~
+a bedroll~
+A bedroll lies here.~
+~
+12 0 0 0 0 1 47
+100 100
+0~ 0~ 0~ 0~
+15 52 0
+5 0
+sleep~
+5 5
+0 0 0
+#1116
+oar~
+an Oar~
+A worn oar lies here on the ground.~
+~
+5 0 0 0 0 8193 46
+100 100
+0~ 0~ 0~ 7~
+20 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 16
+A
+18 10
+A
+1 1
+#1117
+drum~
+a worn drum~
+A worn drum sits here.~
+~
+12 0 0 0 0 1 45
+100 100
+0~ 0~ 0~ 0~
+5 448 0
+5 0
+charm person~
+10 10
+0 0 0
+#1118
+drumstick stick~
+a wooden drumstick~
+A sturdy wooden drumstick lies on the ground.~
+~
+1 0 0 0 0 16385 47
+100 100
+0~ 0~ 100~ 0~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 4
+#1119
+spear viking~
+a Viking Spear~
+A spear incribed with Viking runes lies here.~
+~
+5 0 0 0 0 8193 49
+100 100
+0~ 0~ 0~ 2~
+20 488 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 5
+#1120
+boots leather hard~
+hard Leather Boots~
+A finely crafter pair of hard leather boots lies here.~
+~
+9 0 64 0 0 65 49
+100 100
+0~ 0~ 0~ 0~
+5 400 0
+5 0
+cure light~
+1 1
+0 0 0
+A
+2 1
+A
+19 4
+A
+18 3
+#1121
+axe battleaxe~
+a Massive Viking Battleaxe~
+A Massive Battleaxe once belonging to a Viking Berserker lies here.~
+~
+5 0 0 0 0 8193 49
+100 100
+0~ 0~ 0~ 13~
+15 488 0
+0 0
+berserk~
+0 0
+0 0 0
+A
+18 9
+A
+13 30
+A
+19 20
+A
+5 1
+A
+1 2
+#1122
+bear hide cloak~
+a bear hide cloak~
+A cloak made of bear hide lies here.~
+~
+9 0 0 0 0 1025 49
+100 100
+0~ 0~ 0~ 0~
+20 488 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 8
+#1123
+warhammer hammer~
+a Viking Warhammer~
+A large warhammer inscribed with Viking runes lies here.~
+~
+5 0 0 0 0 8193 50
+100 100
+0~ 0~ 0~ 7~
+13 500 0
+5 0
+giant strength~
+10 15
+0 0 0
+A
+19 20
+A
+5 1
+A
+1 2
+A
+26 -25
+A
+13 25
+A
+18 10
+#1124
+helm viking helmet~
+a Viking Helm~
+A helm inscribed with Viking runes lies here.~
+~
+9 0 0 0 0 17 50
+100 100
+0~ 0~ 0~ 0~
+5 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#1125
+eye dragon ruby~
+a Dragon's Eye~
+A ruby lies here on the ground.~
+~
+8 0 0 0 0 32769 50
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+5 0
+infravision~
+15 20
+0 0 0
+A
+19 5
+A
+18 5
+#1126
+breastplate~
+a shimmering Breastplate~
+A breastplate shimmers in the sun.~
+~
+9 0 0 0 0 9 49
+100 100
+0~ 0~ 0~ 0~
+25 488 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 9
+A
+19 20
+A
+13 19
+#1127
+nothing~
+nothing~
+Nothing~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+detect invis~
+0 -1
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#1101
+Open Port Hole~
+~
+~
+You enter an open porthole and find yourself inside an empty alcove.  You
+are behind 2 barrels and cannot be seen.  From the north you hear the sounds
+of many men, and the rhythmic beating of a drum.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 1105
+D5
+~
+~
+0 0 2131
+S
+#1102
+Front of the Galley~
+~
+~
+You are at the front of the ship, looking back you can see all the tired
+men who are manning the oars.  Beside you is a rather large man beating on a
+drum, his pace is even and the oarsmen are keeping perfect time.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1103
+S
+#1103
+Galley~
+~
+~
+You are at nearing the front of the ship, the benches stop ahead and you
+see a man beating on a drum ahead of you.  There is an empty bench here,
+you'd best hurry unless you too would like to spend your life rowing a
+longship!  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1104
+D3
+~
+~
+0 0 1102
+S
+#1104
+Galley~
+~
+~
+You are nearing the middle of the ship.  The benches continue, and the
+sound of a drum beating becomes louder.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1105
+D3
+~
+~
+0 0 1103
+S
+#1105
+Galley~
+~
+~
+You are near the rear of the ship, there are benches on either side of
+you and you see a line of oarsmen working unbelieveably hard to move the
+ship along the ocean.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1106
+D2
+~
+~
+0 0 1101
+D3
+~
+~
+0 0 1104
+S
+#1106
+Ladder~
+~
+~
+You are half-way up the ladder, looking up you can see the blue sky and
+clouds, the beating of a drum seems to come from the west and the sounds of
+laughter waft up from the bottom of the ladder.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 1105
+D4
+~
+~
+0 0 1121
+D5
+~
+~
+0 0 1107
+S
+#1107
+Bottom of the Ladder~
+~
+~
+You stand at the bottom of the ladder, the sound of snoring and drunken
+laughter fills your ears.  You are at the lowest level of the ship.  There
+is a door to the west and you can climb back up the ladder as well.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 1108
+D4
+~
+~
+0 0 1106
+S
+#1108
+Meeting Hall~
+~
+~
+This room smells terrible of stale ale and sweaty men.  There are tables
+scattered around and there is a line of ale kegs along the wall.  You can
+tell that many a victory has been celebrated in this room, and many injuries
+have been nursed by the ale here as well.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1107
+D2
+~
+~
+0 0 1115
+D3
+~
+~
+0 0 1109
+S
+#1109
+Sleeping Quarters~
+~
+~
+Bed Rolls are strewn all about the floor in this room.  Several large men
+are still sleeping and you would swear their snores could wake the dead. 
+There are doors to the south, west and back to the east.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1108
+D2
+~
+~
+0 0 1114
+D3
+~
+~
+0 0 1110
+S
+#1110
+Store Room~
+~
+~
+This room is filled with all the supplies needed for a long sea voyage. 
+Bags of food, as well as materials to mend clothing are neatly distributed
+around the room.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1109
+D2
+~
+~
+0 0 1113
+D3
+~
+~
+0 0 1111
+S
+#1111
+Prisoner's Cell~
+~
+~
+This dark chamber is the smallest you've seen on the ship and you wonder
+how a person could survive in here.  The chains on the wall seem to imply
+that nobody stays here by choice.  The scent of sweat and dried blood fills
+the room 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1110
+D2
+~
+~
+0 0 1112
+S
+#1112
+Treasure Room~
+~
+~
+This room is filled with the prizes of this voyage's battles.  You can
+guess that these men have been the victors on this trip and will return home
+being heralded as nothing less than heros.  Gems, cutlery and precious items
+are all around you, however the guard's stare disuades you from helping
+yourself to the wealth.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1111
+D1
+~
+~
+0 0 1113
+S
+#1113
+Store Room~
+~
+~
+This room is filled with all the supplies needed for a long sea voyage. 
+Bags of food, as well as materials to mend clothing are neatly distrubuted
+around the room.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1110
+D1
+~
+~
+0 0 1114
+D3
+~
+~
+0 0 1112
+S
+#1114
+Weapon and Armor Storage Room~
+~
+~
+The walls of this room are covered in a bevy of axes and hammers, there
+are also some swords but they look relatively unused.  The floor is covered
+with all kinds of armor, from leather to all kinds of hide.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1109
+D1
+~
+~
+0 0 1115
+D3
+~
+~
+0 0 1113
+S
+#1115
+Sleeping Quarters~
+~
+~
+Bed rolls are strewn all about the floor in this room.  Several large men
+are still sleeping and you could swear their snores could wake the dead. 
+There is a door to the north to the meeting hall, and west to the weapon and
+armor room.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1108
+D3
+~
+~
+0 0 1114
+S
+#1116
+Figure Head~
+~
+~
+You are at the front of the ship looking at the massive figure head.  The
+wind hits your face and you realize just how quickly the ship is moving. 
+The eyes of the Dragon seem to follow you and watch you carefully.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 1117
+S
+#1117
+Main Deck~
+~
+~
+You are right at the front of the ship before the figure head.  You
+notice you can move a little bit forward to get a closer look at the figure
+head.  After looking at the whole ship, you take a moment and realize just
+how large this vessel really is.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 1118
+D3
+~
+~
+0 0 1116
+S
+#1118
+Main Deck~
+~
+~
+You are at the center of the ship on the main deck.  Men bustle around
+you getting work done to keep the ship in order.  You hear the screech of a
+hawk above you and seem to see something else shimmer in the air above.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 1119
+D3
+~
+~
+0 0 1117
+S
+#1119
+Beside the Forward Mast~
+~
+~
+You are standing beside the forward mast of the ship.  As with the rear
+mast you think that you could climb up and get a better look at the area. 
+You are at the middle of the main deck and can go either east or west.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 1120
+D3
+~
+~
+0 0 1118
+D4
+~
+~
+0 0 1123
+S
+#1120
+Main Deck~
+~
+~
+As you move along the main deck, you can feel more keenly the rocking of
+the ship.  Up ahead you see the figure head of the massive ship and and the
+forward mast of the ship.  You notice there are many birds in the air above
+the ship.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 1121
+D3
+~
+~
+0 0 1119
+S
+#1121
+Beside the Rear Mast~
+~
+~
+You are on the main deck of the ship, the ocean stretches off to the
+horizon on both sides of you.  Above you birds fly around and the sky is
+filled with white clouds.  Men are bustling around the deck ensuring the
+voyage proceeds smoothly.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 1122
+D3
+~
+~
+0 0 1120
+D4
+~
+~
+0 0 1124
+D5
+~
+~
+0 0 1106
+S
+#1122
+Rear Lookout~
+~
+~
+You are at the rear of the ship, you can see the wake the ship creating. 
+The sea extends to the horizon and land is no where in sight.  You think you
+see a fish jump out of the water a distance from the ship.  
+~
+0 0 4
+Rd     0
+D3
+~
+~
+0 0 1121
+S
+#1123
+Climbing up the Forward Mast~
+~
+~
+You are on the mast climbing up, you can climb up a little farther.  If
+you could fly you could go over to the rear mast, or up to visit the hawks. 
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 1149
+D4
+~
+~
+0 0 1125
+D5
+~
+~
+0 0 1119
+S
+#1124
+Climbing the Rear Mast~
+~
+~
+You are climbing the rear mast of the ship.  You can proceed up a little
+farther.  If you could fly, you could reach the forward mast or go up and
+visit the hawks.  
+~
+0 0 5
+Rd     0
+D3
+~
+~
+0 0 1149
+D4
+~
+~
+0 0 1126
+D5
+~
+~
+0 0 1121
+S
+#1125
+At the top of the Forward Mast~
+~
+~
+You are at the top of the forward mast.  Above you see hawks and
+something else shimmering in the light.  Maybe you should go see what it is.
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 1150
+D4
+~
+~
+0 0 1127
+D5
+~
+~
+0 0 1123
+S
+#1126
+Top of the Rear Mast~
+~
+~
+You are at the top of the Rear Mast.  You can see birds flying in the sky
+and have an urge to go fly with them.  
+~
+0 0 5
+Rd     0
+D3
+~
+~
+0 0 1150
+D4
+~
+~
+0 0 1128
+D5
+~
+~
+0 0 1124
+S
+#1127
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 4 9
+Rd     0
+D0
+~
+~
+0 0 1130
+D5
+~
+~
+0 0 1125
+S
+#1128
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 4 9
+Rd     0
+D0
+~
+~
+0 0 1132
+D5
+~
+~
+0 0 1126
+S
+#1129
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1134
+D1
+~
+~
+0 0 1130
+D4
+~
+~
+0 0 1139
+S
+#1130
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1135
+D1
+~
+~
+0 0 1131
+D2
+~
+~
+0 0 1127
+D3
+~
+~
+0 0 1129
+D4
+~
+~
+0 0 1140
+S
+#1131
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1136
+D1
+~
+~
+0 0 1132
+D3
+~
+~
+0 0 1130
+D4
+~
+~
+0 0 1141
+S
+#1132
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1137
+D1
+~
+~
+0 0 1133
+D2
+~
+~
+0 0 1128
+D3
+~
+~
+0 0 1131
+D4
+~
+~
+0 0 1142
+S
+#1133
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1138
+D3
+~
+~
+0 0 1132
+D4
+~
+~
+0 0 1143
+S
+#1134
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 1135
+D2
+~
+~
+0 0 1129
+D4
+~
+~
+0 0 1144
+S
+#1135
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 1136
+D2
+~
+~
+0 0 1130
+D3
+~
+~
+0 0 1134
+D4
+~
+~
+0 0 1145
+S
+#1136
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 1137
+D2
+~
+~
+0 0 1131
+D3
+~
+~
+0 0 1135
+D4
+~
+~
+0 0 1146
+S
+#1137
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 1138
+D2
+~
+~
+0 0 1132
+D3
+~
+~
+0 0 1136
+D4
+~
+~
+0 0 1147
+S
+#1138
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D2
+~
+~
+0 0 1133
+D3
+~
+~
+0 0 1137
+D4
+~
+~
+0 0 1148
+S
+#1139
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1144
+D1
+~
+~
+0 0 1140
+D5
+~
+~
+0 0 1129
+S
+#1140
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1145
+D1
+~
+~
+0 0 1141
+D3
+~
+~
+0 0 1139
+D5
+~
+~
+0 0 1130
+S
+#1141
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1146
+D1
+~
+~
+0 0 1142
+D3
+~
+~
+0 0 1140
+D5
+~
+~
+0 0 1131
+S
+#1142
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1147
+D1
+~
+~
+0 0 1143
+D3
+~
+~
+0 0 1141
+D5
+~
+~
+0 0 1132
+S
+#1143
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D0
+~
+~
+0 0 1148
+D3
+~
+~
+0 0 1142
+D5
+~
+~
+0 0 1133
+S
+#1144
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 1145
+D2
+~
+~
+0 0 1139
+D5
+~
+~
+0 0 1134
+S
+#1145
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 1146
+D2
+~
+~
+0 0 1140
+D3
+~
+~
+0 0 1144
+D5
+~
+~
+0 0 1135
+S
+#1146
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 1147
+D2
+~
+~
+0 0 1141
+D3
+~
+~
+0 0 1145
+D5
+~
+~
+0 0 1136
+S
+#1147
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 1148
+D2
+~
+~
+0 0 1142
+D3
+~
+~
+0 0 1146
+D5
+~
+~
+0 0 1137
+S
+#1148
+In the Air~
+~
+~
+You are flying in the air.  There are sparse clouds up here but you can
+see for miles in all directions.  Below you is the Viking ship swarming with
+Viking Warriors.  
+~
+0 0 9
+Rd     0
+D2
+~
+~
+0 0 1143
+D3
+~
+~
+0 0 1147
+D5
+~
+~
+0 0 1138
+S
+#1149
+Between the Masts~
+~
+~
+You are between the masts directly above the main deck.  From here you
+can see Sven standing looking up at you.  
+~
+0 4 9
+Rd     0
+D1
+~
+~
+0 0 1124
+D3
+~
+~
+0 0 1123
+D4
+~
+~
+0 0 1150
+S
+#1150
+Between the Top of the Masts~
+~
+~
+You are between the masts in the air.  Below you can see the main deck of
+the ship.  You realize now how many men are on the ship.  
+~
+0 4 9
+Rd     0
+D1
+~
+~
+0 0 1126
+D3
+~
+~
+0 0 1125
+D5
+~
+~
+0 0 1149
+S
+#0
+
+
+
+#SPECIALS
+M 1122 spec_breath_any
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 1118 1 1102
+G 0 1117 0
+E 0 1118 0 0
+M 0 1116 1 1103
+E 0 1116 0 20
+M 0 1107 1 1104
+E 0 1107 0 22
+M 0 1117 1 1105
+E 0 1116 0 20
+M 0 1113 1 1108
+G 0 1114 0
+M 0 1115 1 1109
+G 0 1115 0
+M 0 1111 1 1111
+M 0 1112 1 1111
+E 0 1111 0 14
+M 0 1112 4 1112
+E 0 1112 0 15
+E 0 1113 0 20
+M 0 1112 1 1114
+E 0 1113 0 20
+E 0 1112 0 15
+M 0 1114 1 1115
+G 0 1115 0
+M 0 1122 1 1116
+G 0 1125 0
+M 0 1121 1 1117
+E 0 1123 0 20
+E 0 1124 0 6
+M 0 1120 1 1118
+E 0 1121 0 20
+E 0 1122 0 16
+M 0 1119 1 1120
+E 0 1119 0 20
+E 0 1120 0 12
+M 0 1124 5 1134
+M 0 1123 5 1148
+E 0 1126 0 5
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

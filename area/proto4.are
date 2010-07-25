@@ -1,0 +1,2351 @@
+#AREADATA
+Name        New area~
+Builders    Lavedie~
+VNUMs       5800 5869
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     Lavedie~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#5803
+spider black widow~
+A Black Widow Spider~
+A Large Spider is here trying to wrap it's web on you!
+~
+You can't get a very good look at the creature, it has
+moved out of the light, and is busy preparing you for DINNER!!  
+~
+8295 65832 0 0 0 -1000 S
+45 1 90 90 4200 10000d0+0 0d0+3000
+450 0 0
+0 0 0
+0 0 0
+#5807
+harpy woman vicious~
+a vicious harpy~
+A bird with a woman's head tries to claw out your eyes...
+~
+This bird seems all feathers and claws, as it gazez at you from its
+beautiful head.  It is not happy to see you, or maybe they are, they look
+pretty hungry...  
+~
+97 524352 0 0 0 -800 S
+35 1 70 70 2501 3000d0+0 0d0+5000
+350 0 0
+0 0 0
+0 0 0
+#5808
+harpy woman vicious~
+a vicious harpy~
+A bird with a woman's head tries to claw out your eyes...
+~
+The unmerciful gaze this flying fury fixes on you leaves you chilled to
+the bones.  She does not look happy to see you, or maybe she is because
+there doesn't seem to be much to eat up here...  
+~
+97 524352 0 0 0 -600 S
+35 1 70 70 2501 2501d0+0 0d0+5000
+350 0 0
+0 0 2
+0 0 0
+#5809
+harpy bird woman~
+a vicious harpy~
+A bird with a woman's head tries to claw out your eyes...
+~
+These birds seem to be all feathers and claws, as they glare at you from
+their beautiful heads.  They are not happy to see you, or maybe they are
+because they look pretty hungry...  
+~
+97 524352 0 0 0 -600 S
+40 1 70 70 3000 5000d0+0 0d0+5000
+400 0 0
+0 0 2
+0 0 0
+#5810
+cow~
+A Cow~
+A cow is wandering about looking for its young
+~
+In this village, it seems unlikely that a cow would survive.  However,
+this one is wandering about freely, though it doesn't seem in the best
+shape.  There is a small pouch wrapped around its neck.  
+~
+129 128 0 0 0 300 S
+35 1 70 70 0 4000d0+0 0d0+500
+350 0 0
+0 0 2
+0 0 0
+#5811
+calf~
+a calf~
+A calf is here looking for it's mother
+~
+You almost feel bad for this poor creature, but yet you feel the urge to
+kill it..  Must be your stomach talking again 
+~
+133 0 0 0 0 500 S
+39 1 110 110 0 5000d0+0 0d0+0
+390 0 0
+0 0 0
+0 0 0
+#5823
+bug caterpillar~
+A Caterpillar~
+A Caterpillar looks for leaves to eat
+~
+This is some caterpillar it is about 14 feet in length and it also has the largest set of fang you have ever seen
+it seems to be drooling this really icky green goo that has the most obnixious smell to it
+you say to yourself, I either run or kill this horrid beast
+f
+~
+11 184565892 83918868 24576 2 0 S
+50 1 100 100 0 7000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+#5824
+ox~
+An OX~
+An OX wanders around looking for food.
+~
+The ox is here looking for food.  As it looks upon you, you almost hear
+it talk 
+~
+69 40 0 0 0 1000 S
+42 1 145 150 2500 4500d0+0 0d0+5000
+420 0 0
+0 0 1
+0 0 0
+#5825
+mother woman~
+Jacks mother~
+Jack's mother paces around waiting for Jack to come home with the milk.
+~
+You look upon Jack's mother and you see a worried look in her face her
+son hasn't come back yet with the milk and it's been hours now 
+~
+67 16576 0 0 0 1000 S
+38 1 76 76 2600 2600d0+0 0d0+5000
+380 0 0
+0 0 2
+0 0 0
+#5834
+Patrol Officer Storm Guard~
+A Patrol Officer~
+A Stormguard on patrol walks the castle
+~
+This guard is on patrol, he is constantly moving, and carries a little
+more equipment than the other guards.  He has a horn to summon help if
+attacked, and is wearing an officer's badge so the other men will stay
+awake.  
+~
+65 0 0 0 0 400 S
+40 1 80 80 3800 3800d0+0 0d0+40000
+400 0 0
+0 0 1
+0 0 0
+#5840
+tall woman~
+A tall woman~
+A tall woman stands here
+~
+A tall woman is here looking for humans to cook 
+~
+67 0 0 0 0 300 S
+48 1 80 80 0 3000d0+0 0d0+0
+480 7 0
+0 0 2
+0 0 0
+#5843
+giant king~
+the giant~
+A huge giant is here looking for something...
+~
+Oh no!  What a huge man!!  And he's packing quite a whallop with that
+hammer of his...  
+~
+67 16576 16 0 2 -500 S
+50 1 90 90 4400 4400d0+0 0d0+45000
+500 0 0
+0 0 1
+0 0 0
+>rand_prog 15~
+say Fe, Fie, Fo, Fum!!!
+peer
+say I smell the blood of a little one!
+peer
+~
+>all_greet_prog 100~
+say WHO GOES THERE?
+say THIEVES!  I AM SURROUNDED BY THIEVES!
+say That accursed little man stole my harp!
+say And without it the goose won't lay the eggs!
+roar
+~
+|
+#5844
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#5847
+eel moray monster~
+A Monstrous Eel~
+A moray eel snaps at you from out of the kelp...
+~
+Since you have entered his domain' and are much slower than he, you are a
+good meal for the eel, used to dining on smaller frys.  Your corpse would
+last him a long time, though.  
+~
+99 67108864 0 0 0 0 S
+44 1 88 88 4200 9000d0+0 0d0+30000
+440 0 0
+0 0 0
+0 0 0
+#5855
+accursed ghol moldy white~
+An Accursed~
+A strange creature with long limbs and an attitude glares your way.
+~
+Though he is very moldy and also a bit pink from flesh, you can tell that
+this creature's base color is white.  He looks rather hungry for some fresh
+meat...  
+~
+67 0 -99452928 0 0 0 S
+40 1 80 80 4000 4000d0+0 0d0+10000
+400 0 0
+0 0 1
+0 0 0
+#5856
+accursed ghol moldy white~
+An Accursed~
+A strange creature with long limbs and an attitude glares at you
+~
+Though he is a bit moldy and bloodstained from flesh, this creature is
+obviously basicly a milky white.  He looks hungry for some fresh meat...  
+~
+65 0 0 0 0 0 S
+40 1 80 80 4000 4000d0+0 0d0+10000
+400 0 0
+0 0 1
+0 0 0
+#5857
+creature white accursed ghol~
+An Accursed~
+A white creature with long arms lurches around here
+~
+This creature carries a crude weapon resembling a dull razor.  His skin
+is a moldy white, and covered in bits of rotting flesh and some sparse
+hairs.  He gives a dull growl at noticing you, and peers at you with beady
+eyes.  
+~
+65 64 0 0 0 -600 S
+40 1 80 80 4000 4000d0+0 0d0+10000
+400 0 0
+0 0 1
+0 0 0
+#5865
+jack boy~
+Jack~
+A clever-looking boy is here, smirking.
+~
+A roguish fellow, he is carrying a bulging sack.  He smiles insolently at
+your scrutiny.  
+~
+7 98408 0 0 0 -600 S
+40 1 80 80 0 7500d0+0 0d0+0
+400 0 0
+0 0 1
+0 0 0
+>speech_prog giant~
+laugh
+say A creature of great size, but small intellect.
+smirk
+say I wager he'll be a mite poorer when I leave this place.
+~
+>speech_prog goose~
+frown
+say Too bad he always keeps the bird near, else I would be rich.
+~
+>speech_prog harp~
+say You want the harp, eh?
+say Over my dead body!
+emote grips his sword easily.
+look $n
+if level($n)>70
+emote looks a little worried.
+say You appear to be well-versed with your weapons.
+say I think I'd rather not fight; if you want the harp, you can have it!
+mpoload 5836
+emote pulls a golden harp out of his sack.
+give harp $n
+say Good day.
+mpecho Suddenly, Jack sweeps your legs out from under you, and runs off.
+mpforce $n sit
+mpecho His mocking laughter echos through the halls.
+mppurge jack
+endif
+if level($n><71
+say Ha, if you want the harp, then try and get it!
+emote swings his sword through the air, and lunges at $n.
+murder $n
+endif
+~
+>death_prog 100~
+emote collapses in disbelief.
+mpecho His sack hits the ground, and a golden harp tumbles out!
+mpoload 5836
+drop harp
+~
+|
+#5868
+creature pumpkin~
+A pumpkin shaped creature~
+A dark blue pumpkin shaped creature is controling the flames here.
+~
+With a strange cucumber-like head and pumpkin-shaped body, this creature
+is strange indeed.  He uses many vine like appendages to feed the fire and
+move the shutter, all at once.  It barely looks up to acknowledge your
+presence.  
+~
+67 100663488 280 0 0 0 S
+50 1 200 200 3500 10000d0+0 0d0+6000
+500 0 0
+0 0 1
+0 0 0
+#5869
+accursed creature blue hogo~
+An Accursed~
+A dark blue pumpkin shaped creature is controlling the flames here
+~
+This large creature has a cucumber shaped head, and a blue body shaped
+like a pumpkin with orange veins coursing over it.  It is using many
+vine-like appendages all at once, to feed the fire and open the lighthouse
+shutter.  It hardly acknowledges you presence before going back to work.  
+~
+67 0 0 0 0 0 S
+38 1 76 76 3500 3500d0+0 0d0+6000
+380 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#5800
+Crusty Bed~
+a crusty bed~
+A nasty, bug ridden bed is here, getting nastier by the minute.~
+~
+12 0 0 0 0 0 100
+100 100
+0~ 0~ 0~ 0~
+20 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5801
+pouch~
+a pouch~
+A dingy pouch~
+~
+15 0 0 0 0 5 35
+100 100
+20~ 5~ 0~ 0~
+1 4 0
+5 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+#5803
+beans pod ~
+&gGreen &Gbeans~
+A small pile of green pods is lying here~
+~
+8 0 0 0 0 1 35
+100 100
+0~ 0~ 0~ 0~
+1 200 0
+3 5804
+reserved~
+1 1
+0 0 0
+#5804
+portal bean stalk ~
+beanstalk~
+A huge green plant rises from the ground~
+~
+29 3 0 0 0 0 35
+100 100
+0~ 0~ 0~ 0~
+10 120 0
+0 0
+reserved~
+0 0
+0 0 0
+#5806
+dagger~
+A pro_thief dagger~
+A pro_thief dagger~
+~
+5 0 0 4 0 8193 10
+100 100
+0~ 10~ 40~ 11~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5814
+corpse little boy~
+the corpse of a boy~
+&g The corpse of a boy that was eaten the day before lies here.~
+~
+15 3 0 0 0 0 50
+100 100
+500~ 15~ 5834~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5815
+shield valor~
+Shield of Valor~
+Shield of Valor~
+~
+8 603996162 532480 0 0 513 50
+100 100
+0~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+A
+1 2
+A
+19 14
+A
+18 12
+A
+2 -3
+A
+20 10
+A
+24 -10
+#5823
+dark fang black~
+&zA Dark Fang~
+&zA Dark Fang~
+~
+5 234905600 24576 0 0 8193 1
+100 100
+0~ 60~ 90~ 13~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 75
+A
+1 50
+A
+2 50
+A
+4 50
+A
+3 50
+A
+18 200
+A
+24 -300
+A
+23 -300
+A
+303 -1
+#5824
+armor storm plate stormguard~
+stormGuard Armor~
+Blue and yellow armor is lying here, waiting for use.~
+~
+9 1 0 0 0 9 39
+100 100
+25~ 0~ 0~ 0~
+5 388 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 16
+A
+18 10
+#5825
+sword lightning bright~
+a Blade of Lightning~
+A strange blade is here, emitting static electricity~
+~
+5 0 8192 0 0 8193 39
+100 100
+0~ 15~ 23~ 3~
+3 388 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 13
+A
+18 13
+#5826
+blue helm yellow~
+blue and yellow Stormguard Helm~
+An interesting helm lies here~
+~
+9 2 0 0 0 17 39
+100 100
+20~ 0~ 0~ 0~
+2 388 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 9
+A
+3 1
+A
+24 -10
+#5833
+pool water death~
+a poisoned pool~
+Inviting liquid is here, flowing slowly~
+~
+29 0 0 0 0 0 35
+100 100
+5869~ 0~ 0~ 0~
+5 348 0
+0 0
+reserved~
+0 0
+0 0 0
+#5834
+peapod key~
+a PeaPod~
+A Key in the shape of a PeaPod.~
+~
+18 1 0 0 0 16385 50
+100 100
+0~ 0~ 0~ 0~
+3 360 0
+0 0
+reserved~
+0 0
+0 0 0
+#5835
+badge officer ~
+officer's Badge~
+The badge of an officer lies here~
+~
+9 1 0 0 0 5 40
+100 100
+10~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+18 3
+A
+2 1
+#5836
+golden harp~
+the Golden Harp~
+A harp is here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+3 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#5843
+Crown giant king ~
+the &bCrown &wof &rGiants~
+A huge, Fiery crown lies here~
+~
+9 33554432 8192 0 0 17 45
+100 100
+-20~ 0~ 0~ 0~
+5 448 0
+5 0
+breathe water~
+1 1
+0 0 0
+A
+19 5
+A
+3 1
+A
+18 5
+#5844
+Giant hammer~
+&RGiant's &GHammer~
+An enourmous hammer is here, putting cracks in the ground~
+~
+5 1 0 0 0 8193 45
+100 100
+0~ 15~ 28~ 8~
+10 448 0
+5 0
+giant strength~
+4 4
+0 0 0
+A
+18 10
+A
+19 11
+A
+24 -15
+#5847
+Test me~
+this is a test object~
+A teset object lies here~
+~
+1 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+5 0
+bless~
+3 3
+0 0 0
+#5848
+Kelp~
+green Kelp~
+Some kelp grows here, swaying in the current.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5855
+cleaver crude weapon~
+a crude cleaver~
+A semi-dull weapon lies here, perfect if you want to take a while to kill something...~
+~
+5 0 0 0 0 8193 40
+100 100
+0~ 10~ 21~ 13~
+2 400 0
+0 0
+reserved~
+0 0
+5856 0 0
+A
+18 -3
+A
+19 5
+#5856
+cleaver cruder weapon~
+a cruder cleaver~
+(no description)~
+~
+5 0 0 0 0 8193 40
+100 100
+0~ 12~ 23~ 13~
+4 400 0
+0 0
+reserved~
+0 0
+5857 5855 5855
+#5857
+cleaver crudest weapon~
+the crudest cleaver~
+(no description)~
+~
+5 0 0 0 0 8193 40
+100 100
+0~ 14~ 25~ 13~
+7 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#5859
+stones monument monolith~
+&wgray &WMonoliths~
+&wA pile of large pieces of unworked stone lie here~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+34 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5860
+stone bane glowing~
+a &wBane&Wstone~
+&WA stone different from the rest lies here~
+~
+8 2 0 0 0 1 45
+100 100
+0~ 0~ 0~ 0~
+5 1800 0
+5 0
+death field~
+1 1
+0 0 0
+#5863
+key silver~
+silver key~
+A silver key is lying here, for what purpose?~
+~
+18 33554432 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5868
+flames fire lamps light~
+&RThe Ligh&rthouse &RLamps~
+&R A large lamp burns creating a blinding light.~
+~
+1 570425347 0 0 0 1 50
+100 100
+0~ 0~ -1~ 0~
+3 448 0
+5 0
+flash burn~
+-1 -1
+0 0 0
+A
+19 13
+A
+24 -15
+A
+2 3
+A
+18 13
+#5869
+bag sack goodies~
+&WSac &Oo' &PGoodies~
+A bag o' kewl stuff lies here~
+~
+15 134217729 0 0 0 257 105
+100 100
+1000~ 1~ 0~ 0~
+1 1048 0
+5 0
+earthquake~
+-1 -1
+0 0 0
+A
+115 -1
+#0
+
+
+
+#ROOMDATA
+#5800
+In Front of Jack's House~
+~
+~
+Here you are in front of a small, run-down hut, just about as bad as the
+others.  A huge plant is growing here, with strange pods on it.  You can
+head south to get into the house, or enter the stalk from here.  
+~
+0 0 1
+Rd     0
+D2
+~
+~
+0 0 5801
+D4
+~
+~
+0 0 5804
+S
+#5801
+Inside Jack's House~
+~
+~
+This appears to be the kitchen area of the tiny hut.  A small depression
+filled with ashes is dug into the ground here, and a bit of wood lies to the
+side.  Otherwise there is not much in here, you can go to the east or the
+west, where you feel a draft.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5800
+D1
+~
+~
+0 0 5802
+D3
+~
+~
+0 0 5803
+S
+#5802
+Bedroom~
+~
+~
+There is not much to see here, a crusty, bug-filled bed lies in one
+corner and a makeshift lopsided box holds the few valuables of the family. 
+Somehow you dont think it would be worth your time to look inside of it.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 5801
+S
+#5803
+Jack's Room~
+~
+~
+This is where Jack stays, but it doesn't look like anyone is home.  There
+is a large hole in the wall letting in a breeze, and nothing else of
+interest.  Where could everyone be?
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 5801
+S
+#5804
+The Beanstalk~
+~
+~
+Yep, definitly a beanstalk.  If you're into veggies you could live here
+forever, massive pods grow from the stem, full of beans.  Looking down, you
+can see some villagers watching you, but they don't dare follow.  Above the
+plant continues into the clouds.  
+~
+0 4 0
+Rd     0
+D4
+~
+~
+0 0 5805
+D5
+~
+~
+0 0 5800
+S
+#5805
+The Beanstalk~
+~
+~
+Uh-Oh, it seems some of the high flying wildlife has noticed you!  Huge
+bird-like creatures are flying your way, and they don't look very friendly. 
+The beanstalk still continues up, but you think you can make out an end.  
+~
+0 132096 0
+Rd     0
+D4
+~
+~
+0 0 5806
+D5
+~
+~
+0 0 5804
+S
+#5806
+Top of the Beanstalk~
+~
+~
+The Harpies are all around you, waiting to nab a piece of your flesh. 
+Here is the top of the stalk, it seems to lead up into a cloud.  Perhaps you
+can find some respite from the Harpies?  Hmm.  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 5807
+D5
+~
+~
+0 0 5805
+S
+#5807
+On the Clouds~
+~
+~
+Climbing up from the stem you see a magnificent sight.  A huge white
+castle is glowing, to the north.  The walls are bright, and the turrets have
+pennants of every color streaming from them in the breeze.  The cloud
+stretches away in all directions except the south, where it drops off
+suddenly, and looking back you almost lose your balance.  The new stretch
+also lets you see that the harpies haven't forgotten you.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 5814
+D1
+~
+~
+0 0 5809
+D3
+~
+~
+0 0 5810
+D5
+~
+~
+0 0 5806
+S
+#5808
+In Front of the Cloud Castle~
+~
+~
+You are in the very southeast corner of the cloud, way down you can see
+the village, with other adventurers exploring.  Several Harpies have taken
+an interest, and are seeking to corner you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5816
+D3
+~
+~
+0 0 5809
+S
+#5809
+In Front of the Cloud Castle~
+~
+~
+A bit east of the vine you can see that the cloud is pretty much even
+all along the southern edge.  Waaay below you spy Jack's hut and some serfs
+at their work.  You can also see a large tree and the run-down chapel.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5815
+D1
+~
+~
+0 0 5808
+D3
+~
+~
+0 0 5807
+S
+#5810
+In Front of the Cloud Castle~
+~
+~
+The Cloud Castle is an object of mystery so far.  What could it's
+purpose be so high up in the air?  Only more exploration can reveal its
+intent.  There seem to be harpies everywhere, and they are not very
+pleasent.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5813
+D1
+~
+~
+0 0 5807
+D3
+~
+~
+0 0 5811
+S
+#5811
+In Front of the Cloud Castle~
+~
+~
+You can go no further west here, or south for that matter, the cloud
+has ended.  However the castle is very nice looking, though a fine mist
+rises from the cloud and partially covers it.  Despite this you can still
+tell it is very large.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5812
+D1
+~
+~
+0 0 5810
+S
+#5812
+In Front of the Cloud Castle~
+~
+~
+Still on the cloud, you can tell that you're a little closer to the
+castle than before.  Harpies are everywhere, and the wall begins to loom up
+as you walk towards it.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5821
+D1
+~
+~
+0 0 5813
+D2
+~
+~
+0 0 5811
+S
+#5813
+In Front of the Cloud Castle~
+~
+~
+This place is rather unpleasent, harpies are everywhere.  You begin to
+ponder why they are in front of the castle, maybe they keep visitors out? 
+Perhaps the castle has much loot to be won inside.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5820
+D1
+~
+~
+0 0 5814
+D2
+~
+~
+0 0 5810
+D3
+~
+~
+0 0 5812
+S
+#5814
+In Front of the Cloud Castle~
+~
+~
+From here you can see the enterance to the castle, the portcullis is
+raised, and you think you can see a drawbridge from here, lowered across the
+moat.  Harpies are advancing from every side, so it's probably not wise to
+stay here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5819
+D1
+~
+~
+0 0 5815
+D2
+~
+~
+0 0 5807
+D3
+~
+~
+0 0 5813
+S
+#5815
+In Front of the Cloud Castle~
+~
+~
+There seems to be no end to the birds.  They attack from everywhere,
+clawing at your head in two's and three's.  You cannot see any flying above
+the castle, however, and you can make out from here archer's holes.  Are
+there arrows pointing at you?  No on is around to answer that though.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5818
+D1
+~
+~
+0 0 5816
+D2
+~
+~
+0 0 5809
+D3
+~
+~
+0 0 5814
+S
+#5816
+In Front of the Cloud Castle~
+~
+~
+You teeter on the edge of death, in more than one way.  The harpies are
+intense, and now you are on the very edge of the cloud, it seems a bit less
+substantial here.  To the north the mist is a bit clearer, and you can see
+the walls better.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5817
+D2
+~
+~
+0 0 5808
+D3
+~
+~
+0 0 5815
+S
+#5817
+In Front of the Cloud Castle~
+~
+~
+You have come as close as possible to the wall without getting wet. 
+You can see that it seems to be made out of ivory or marble.  The clear moat
+is very nice looking.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 5816
+D3
+~
+~
+0 0 5818
+S
+#5818
+In Front of the Cloud Castle~
+~
+~
+The moat seems very inviting since there are harpies all around.  To
+the west you see the drawbridge, down so that you can get in.  Could it be
+down on purpose?  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 5817
+D2
+~
+~
+0 0 5815
+D3
+~
+~
+0 0 5819
+S
+#5819
+The Drawbridge~
+~
+~
+You are right next to the drawbridge, and many of the harpies are
+avoiding this area.  Up on the wall you think you spy bows pointed in your
+direction.  You hear a twang, but the arrow buries itself into a nearby
+harpy, and it falls dead.  Maybe this castle is happy you're here after all.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5822
+D1
+~
+~
+0 0 5818
+D2
+~
+~
+0 0 5814
+D3
+~
+~
+0 0 5820
+S
+#5820
+In Front of the Cloud Castle~
+~
+~
+To the east you see the drawbridge, lowered.  A high marble wall rises
+up, and you can tell it is purely ornamental because any siege engine could
+easily fell it.  But there is almost no chance that such a weapon could get
+within a firing range.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 5819
+D2
+~
+~
+0 0 5813
+D3
+~
+~
+0 0 5821
+S
+#5821
+In Front of the Cloud Castle~
+~
+~
+This is the far west corner of the wall, you can see that it heads
+north for quite a way, but the cloud it is supported by is not wide enough
+for you to travel on.  A huge tower is here, you might have seen a glimmer
+off someone's armor but you can't be sure.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 5820
+D2
+~
+~
+0 0 5812
+S
+#5822
+Under the Portcullis~
+~
+~
+The sun shines between these two portculli, and you see a few guards
+watching as you enter.  The gates seem to be made of a strange blackish
+stone, perhaps obsidian.  No one approaches as you enter.  Nor is any weapon
+raised in threat.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 5823
+D2
+~
+~
+0 0 5819
+S
+#5823
+Entering the Castle~
+~
+~
+The castle is huge!  Golden sunbeams are shining down from above,
+and you can see in many directions.  Way down the grand hall you see a
+throne shrouded with light.  A few curious guards look your way but none
+approach.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5831
+D1
+~
+~
+0 0 5832
+D2
+~
+~
+0 0 5822
+D3
+~
+~
+0 0 5824
+S
+#5824
+A guard post~
+~
+~
+You stand in a large guard post.  A wooden table covered with the remains
+of a meal is in one corner, and stone benches line the walls.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5830
+D1
+~
+~
+0 0 5823
+D3
+~
+~
+0 0 5825
+S
+#5825
+Corner~
+~
+~
+You can go no further here, and only one guard seems to be here.  He
+watches you, then nods, however he dosn't say a thing.  The sun also shines
+in here from a crack in the wall.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5829
+D1
+~
+~
+0 0 5824
+D3
+~
+~
+3 0 5826
+S
+#5826
+Secret Passage~
+~
+~
+This passage is dripping with water, and the floor seems a bit crusty. 
+Something skitters across your foot, but not much else of interest happens. 
+You can go north from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5827
+D1
+~
+~
+3 0 5825
+S
+#5827
+Secret Passage~
+~
+~
+This area is full of something very nasty.  Spiderwebs are everywhere,
+and your light drips something into a shadowy pool of some unknown yet
+reeking liquid.  A soft scratching sound can be heard to the north, and you
+can make out a soft looking material that is moving.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5828
+D2
+~
+~
+0 0 5826
+S
+#5828
+End of the Passage~
+~
+~
+Rubble and stones have fallen here, blocking any more thru traffic. 
+Looking around, you see that the strange white material that is making the
+scratching noise actually has a rat in it!  And you feel something grasp you
+from behind.  It starts wrapping you up before you can even move, and
+luckily you free your sword arm before its done.  Time for a battle!  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 5827
+S
+#5829
+The Grand Hall~
+~
+~
+Huge pillars covered with intricate carvings are supporting this
+massive hall, at least 50 feet tall.  You can tell that it isn't just large
+for ornamental reasons, the person living here must be big also.  There
+aren't any guards in this area, however.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5837
+D1
+~
+~
+0 0 5830
+D2
+~
+~
+0 0 5825
+S
+#5830
+Grand Hall~
+~
+~
+To your south is a small group of guards, barely interested in your
+progress.  Above you can see that a skylight is letting in a bunch of
+sunlight through a stained glass roof.  The owner of this castle probably
+never had anything to fear from attack.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5836
+D1
+~
+~
+0 0 5831
+D2
+~
+~
+0 0 5824
+D3
+~
+~
+0 0 5829
+S
+#5831
+Grand Hall~
+~
+~
+Huge amounts of light pour down from above.  Colorful stained
+glass depicted in intricate patterns, and showing scenes out of ancient
+stories line the ceiling.  There is also a pool of dark blue water to
+your east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5835
+D1
+~
+~
+0 0 5833
+D2
+~
+~
+0 0 5823
+D3
+~
+~
+0 0 5830
+S
+#5832
+Corner~
+~
+~
+A huge crack in the wall is letting in light, briefly stopping the glow
+of the rest of the castle.  It seems strange that these cracks were not
+visible from the outside.  To your north you spy a pool of inviting dark
+blue water.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5833
+D3
+~
+~
+0 0 5823
+S
+#5833
+The Clear Pool~
+~
+~
+The water here is an inviting color, but before taking a dip, you peer
+inside.  The pool is not all it seem!  A faint blue glow comes from the
+bottom.  You cannot see much else except for that, but you think that is
+probably the reflextion of the light you have seen comming from the north. 
+Should you step in?  Or wait for other signs of safety 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5834
+D2
+~
+~
+0 0 5832
+D3
+~
+~
+0 0 5831
+S
+#5834
+Rays of Light~
+~
+~
+North of the pool, you can see that the hall ends just a bit more
+north.  Also, you can see the huge golden throne!  It is a masterpiece, you
+can tell that even from here.  A pillar stands here, depicting a scene of
+several men wearing blue, one carrying a key and opening a strange
+lighthouse.  What could that mean?  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5844
+D2
+~
+~
+0 0 5833
+D3
+~
+~
+0 0 5835
+S
+#5835
+Before the throne~
+~
+~
+The throne is huge, and a beautiful work.  You cannot tell what
+material it is made of, surely gold is not this shiny!  Whoever rules in
+this building is also of massive proportions, or they enjoy having furniture
+bigger than themselves, becase it is at least 3 times bigger than a regular
+human.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5838
+D1
+~
+~
+0 0 5834
+D2
+~
+~
+0 0 5831
+D3
+~
+~
+0 0 5836
+S
+#5836
+End of the Grand Hall~
+~
+~
+This is the end of the huge hallway, and to your west you can see that
+it heads off in another direction.  A bit to the east is the huge throne,
+and south is the portcullis of the castle.  There is not much of interest
+here, a few small colored windows let in light but there are no pillars
+here.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 5835
+D2
+~
+~
+0 0 5830
+D3
+~
+~
+0 0 5837
+S
+#5837
+Side Hall to the Kitchens~
+~
+~
+The hall's bright lights are behind you now, and you can see the
+entrance to a plain-looking wooden hall.  Smells of food and other good
+things are coming from there, and your belly rumbles.  Heading in wouldn't
+be half bad , it does smell good!  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 5836
+D2
+~
+~
+0 0 5829
+D3
+~
+~
+0 0 5839
+S
+#5838
+The Golden Throne~
+~
+~
+The throne is very large, and a huge skylight is letting in the light
+so it shines even more.  It is covered with beautiful carvings of mythical
+beasts, and heroes long gone.  Laying a hand on it, you discover that
+instead of the cool of metal, it is warm!  You might have even detected a
+shudder, but that couldn't be!  This castle seems more mysterious by the
+step...  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 5835
+S
+#5839
+Wooden Hall~
+~
+~
+You have entered a hallway of highly polished mahogany, and the smells of
+food get stronger.  It is also likely that the guestrooms are here, since
+you didn't see any other corridors in the grand hall.  Perhaps the treasure
+trove is also around!  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 5837
+D3
+~
+~
+0 0 5840
+S
+#5840
+Mahogany Corridor~
+~
+~
+You can see that this is indeed a small corridor, the guest rooms are to
+the north and south of here.  Straight down the hall you glimpse a huge
+furnace with a fire burning in it.  The scent of good food is hard to pass
+up.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 5841
+D1
+~
+~
+0 0 5839
+D2
+~
+~
+3 0 5842
+D3
+~
+~
+0 0 5843
+S
+#5841
+Purple Room~
+~
+~
+This room is resplendent with the color of Royal Purple!  Velvet
+drapes hang from the ceiling, and the huge bed is a deep Purple.  The
+host or hostess doesn't seem to have much of an interior decorator.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 5840
+S
+#5842
+Blue Room~
+~
+~
+The room is a dark color of navy blue.  The drapes are nearly
+black, it is a bit depressing, but you can tell anyone who stayed here would
+live in comfort.  The bed is at least fourteen feet long, 7 feet wide.  It
+looks incredible plush.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 5840
+S
+#5843
+The Kitchen~
+~
+~
+Uh oh!!  Looks like you aren't the only one looking for food!!  A huge
+giant moves into view, but she's not looking in your direction, yet.  She
+seems to be searching for something very small, and is mumbling about fe's,
+fei's, foe's, fum's, and bone bread.  Maybe you outta leave...  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 5840
+S
+#5844
+Alcove~
+~
+~
+This is a small alcove east of the throne.  There is only one guard
+standing here, and he is not to interested in you.  The blinding light still
+permeates the area though.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 5834
+S
+#5845
+Under the Tiles~
+~
+~
+Somehow, you managed to find a way out of the deadly water, but it is
+still flooded here.  You can see that the tunnel heads off, and it might be
+a good idea to swim on and find a way out, since you don't want to go back
+to the pool.  
+~
+0 172032 8
+Rd     0
+D0
+~
+~
+0 0 5846
+D4
+~
+~
+3 0 5869
+S
+#5846
+Under the Tiles~
+~
+~
+Small green plants are growing here, maybe alge?  Also you spy a few
+animals who seem to be swimming quickly in the opposite direction.  What
+could that mean?  Up ahead the tunnel branches off.  
+~
+0 172032 8
+Rd     0
+D0
+~
+~
+0 0 5847
+D2
+~
+~
+0 0 5845
+S
+#5847
+Intersection in the Tunnel~
+~
+~
+Though dark, the water is quite clear and you can see that it is very
+clean, maybe drinkable.  Here a large amount of underwater plants like kelp
+and seaweed are growing.  Suddenly, out of the weeds comes a large creature,
+built for aquatic life.  It snaps at you and a battle begins.  
+~
+0 139264 8
+Rd     0
+D1
+~
+~
+0 0 5848
+D2
+~
+~
+0 0 5846
+D3
+~
+~
+0 0 5849
+S
+#5848
+Dead End~
+~
+~
+You have reached a dead end in the tunnel, perhaps west is the way to
+go.  
+~
+0 139264 8
+Rd     0
+D3
+~
+~
+0 0 5847
+S
+#5849
+Under the Tiles~
+~
+~
+You think you can see the water getting lighter further north, perhaps
+there is a place to escape the water ahead.  Small fish and plants are
+abundant here.  
+~
+0 139264 8
+Rd     0
+D0
+~
+~
+0 0 5850
+D1
+~
+~
+0 0 5847
+S
+#5850
+Closer to the End~
+~
+~
+The water is a bit lighter, directly ahead you see that it goes up into
+some sort of underground area.  But how could that be, since you were over a
+cloud previously?  The plants grow thickly in the light here.  
+~
+0 139264 8
+Rd     0
+D0
+~
+~
+0 0 5851
+D2
+~
+~
+0 0 5849
+S
+#5851
+The Secret Cave~
+~
+~
+Defying all logic, above you is a huge cavern.  This seems to be some
+sort of access point from the Storm Castle.  You also notice quite a few
+bones lying in the water, some still have bits of meat attached...  
+~
+0 139264 8
+Rd     0
+D2
+~
+~
+0 0 5850
+D4
+~
+~
+0 0 5852
+S
+#5852
+The Giant Cavern~
+~
+~
+The cavern is almost as tall as the Grand Hall in the castle, and light
+flickers from many torches lining the walls.  There seems to be some sort of
+ring of dirt around the place that tugs at the back of your head.  A snarl
+behind you alerts that you are not alone here.  
+~
+0 131076 0
+Rd     0
+D0
+~
+~
+0 0 5853
+D1
+~
+~
+0 0 5859
+D2
+~
+~
+0 0 5857
+D3
+~
+~
+0 0 5855
+D5
+~
+~
+0 0 5851
+S
+#5853
+Northern wall~
+~
+~
+You can see that the ring of dirt and debris is quite a bit taller than
+you, extending nearly to the top of the cavern.  A squishing around your
+boots shows that at sometime, the place has water in it making it muddy.  
+~
+0 131072 0
+Rd     0
+D1
+~
+~
+0 0 5860
+D2
+~
+~
+0 0 5852
+D3
+~
+~
+0 0 5854
+S
+#5854
+Tunnel~
+~
+~
+You have reached the mouth of a tunnel leading out.  The wind is howling
+somewhere on the other end.  It is a chill wind, that makes you think of
+being back in the cavern that partially blocks it out.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 5861
+D1
+~
+~
+0 0 5853
+D2
+~
+~
+0 0 5855
+S
+#5855
+Viscera Pile~
+~
+~
+Despite the terrible smell and rot, there are no flies or any kind of
+bugs on this rotting pile of flesh and viscera.  There are some soft spots
+where you sink in up to the shins when you step on the pile.  There is
+evidence of an animal having been here recently, and a rusty piece of metal
+that used to be a blade lies half buried in the sludge.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 5854
+D1
+~
+~
+0 0 5852
+D2
+~
+~
+0 0 5856
+S
+#5856
+Southern Corner~
+~
+~
+Many bones lie here, probably thrown from the stinking pile of carcasses
+to the north.  There is not much of interest here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 5855
+D1
+~
+~
+0 0 5857
+S
+#5857
+Southern Wall~
+~
+~
+You can hear the wind blowing quite loudly through the whole cavern from
+here, and you can also see a tunnel a bit to the northwest, but nothing else
+of interest.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 5852
+D1
+~
+~
+0 0 5858
+D3
+~
+~
+0 0 5856
+S
+#5858
+Empty Corner~
+~
+~
+Nothing is here that is very interesting. 
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 5859
+D3
+~
+~
+0 0 5857
+S
+#5859
+East Wall~
+~
+~
+Piled up here are some large stones, in front of them area many skeletons
+that are whole, meaning probably that the creature who lives here at least
+has a basic religion.  They seem to be sacrifces of some sort...  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 5860
+D2
+~
+~
+0 0 5858
+D3
+~
+~
+0 0 5852
+S
+#5860
+Sacrifical Pit~
+~
+~
+It seems to be empty now, but you can guess that this is where the animal
+or whatever keeps its sacrificial victims.  But where they come from, you
+can only guess.  
+~
+0 131072 0
+Rd     0
+D2
+~
+~
+0 0 5859
+D3
+~
+~
+0 0 5853
+S
+#5861
+The Tunnel~
+~
+~
+It is windier here, and the tunnel only continues on for a little bit
+more.  However, it curves and you cannot see the end of it or what might be
+outside.  The ring is also absent from this area.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 5862
+D2
+~
+~
+0 0 5854
+S
+#5862
+Mouth of the Tunnel~
+~
+~
+You can see that the tunnel ends here, and the cloud begins!  Once more
+this place has a suprise for you.  And you can just catch the base of
+something, if you continue out you can see it all.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 5863
+D2
+~
+~
+0 0 5861
+S
+#5863
+On the Cloud~
+~
+~
+Once again you find yourself in fresh air.  However the cloud is only
+big enough for you and this..  Lighthouse?!?  Yes indeed, to you east lies a
+large lighthouse that seems to be made of ivory bricks.  As you try the
+door, you realise it is locked.  Now, where could that key be?  
+~
+0 131072 0
+Rd     0
+D1
+~
+~
+119 5863 5864
+D2
+~
+~
+0 0 5862
+S
+#5864
+Inside the Lighthouse~
+~
+~
+The wind has stopped, and on the walls you can see many navigational
+charts, and graphs, of an unknown origon.  Several paintings of strange
+flying ships and odd landscapes cover the wall.  
+~
+0 131072 0
+Rd     0
+D3
+~
+~
+119 0 5863
+D4
+~
+~
+0 0 5865
+S
+#5865
+Ascending the Stairs~
+~
+~
+As you climb higher, you begin to see that the tower is not very tall, it
+only extends a few more turns upward.  What could be at the top?  And what
+is a lighthouse doing on a cloud?  
+~
+0 131072 0
+Rd     0
+D4
+~
+~
+0 0 5866
+D5
+~
+~
+0 0 5864
+S
+#5866
+The Second Turn~
+~
+~
+You have climbed another full turn on the steps.  Here there is a window
+facing to the north, but you cannot see anything of interest, except that
+the landscape looks similar to one on a painting you saw below.  You can
+also barely make out Methidoral, and a bit of the tall mountain to the north
+of it.  
+~
+0 131072 0
+Rd     0
+D4
+~
+~
+0 0 5867
+D5
+~
+~
+0 0 5865
+S
+#5867
+Third Turn~
+~
+~
+From here you can tell that, on a cloudy day, any ship similar to the
+ones you saw in the paintings would be completely invisible to anyone on the
+ground.  What strange sort of commuting goes on, here in the sky?  How could
+the giant be completely unknown to anyone, even in the smallest of myts?  
+~
+0 131072 0
+Rd     0
+D4
+~
+~
+0 0 5868
+D5
+~
+~
+0 0 5866
+S
+#5868
+The Lighthouse ~
+~
+~
+Here, you see just what controls the lighthouse.  A third creature,
+similar only to the others in that it looks like it has been altered in some
+form, is tending the fires and lamps that create a large beam of light.  You
+can see all around from here, past Troll Mountain, perhaps even into Dragon
+Valley.  The creature tending the fires pays no attention to your intrusion.
+~
+0 131072 0
+Rd     0
+D5
+~
+~
+0 0 5867
+S
+#5869
+The Pool~
+~
+~
+You are inside of the pool, drowning, it seems.  The water seems to be
+preventing you from casting any spells, it is nasty indeed.  You can see
+that the armor does contain the skeleton of the guard who wore it.  Your
+vision begins to cloud, and it is becoming harder to
+breathe.  You are choking!!  
+~
+0 411344900 8
+Rd     0
+D5
+~
+~
+3 0 5845
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 5810 1 5800
+E 0 5801 0 3
+M 0 5825 1 5801
+O 0 5800 0 5802
+M 0 5823 1 5805
+E 0 5823 0 20
+E 0 5823 0 21
+M 0 5808 1 5808
+M 0 5824 3 5808
+M 0 5809 1 5809
+M 0 5807 1 5809
+M 0 5811 3 5811
+O 0 5814 0 5814
+P 0 5815 0 5814
+M 0 5809 1 5815
+M 0 5803 1 5828
+M 0 5865 1 5829
+O 0 5833 0 5833
+M 0 5843 1 5838
+G 0 5863 0
+M 0 5840 1 5843
+M 0 5824 1 5844
+E 0 5824 0 5
+E 0 5825 0 20
+M 0 5847 1 5847
+O 0 5848 0 5848
+M 0 5856 2 5855
+E 0 5855 0 20
+M 0 5857 1 5855
+E 0 5855 0 20
+O 0 5859 0 5859
+O 0 5860 0 5859
+M 0 5868 1 5868
+E 0 5868 0 0
+G 0 5834 0
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,1893 @@
+#AREADATA
+Name        {90-100} The Forest Shrine~
+Builders    None~
+VNUMs       4501 4550
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      &BThe Vortex below the branches rubles with thunder.~
+Music       u5_grysn.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#4501
+high cleric~
+The High Cleric~
+The High Cleric stands, a peaceful look in his eyes.
+~
+~
+67 201343228 16 0 0 800 S
+110 1 220 220 30000 30000d0+0 0d0+110000
+1100 19 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say I see you have finally reached the Time Nexus.  Your
+say quest to destroy the Zhakarius begins at this time,
+say but you must first destroy his four Death Knights.
+say I know the names of each of them, just ask which
+say one, and I shall tell you the name.  You must speak
+say the name of each Death Knight to enter their place of
+say hiding.
+~
+>speech_prog hate hatred~
+say The Death Knight of Hate's name is Zargon.
+~
+>speech_prog greed~
+say The Death Knight of Greed's name is Calumnus.
+~
+>speech_prog cowardice~
+say The Death Knight of Cowardice's name is Khaquon.
+~
+>speech_prog falsehood~
+say The Death Knight of Falsehood's name is Lycanthus.
+~
+>fight_prog 30~
+cast 'dispel magic' $n
+~
+>fight_prog 40~
+cast 'fireball' $n
+~
+>fight_prog 75~
+cast 'heal' self
+~
+>speech_prog vilis~
+mpoload 13201
+give key $n
+say Best of luck in the Ocean Shrine, $n!
+drop all
+~
+>speech_prog inflamus~
+mpoload 13501
+give key $n
+say Best of luck in the Volcano, $n!
+drop all
+~
+>speech_prog hi hello~
+say Hello, $n!
+~
+>speech_prog job~
+say I watch over all things that are good.
+~
+>speech_prog bye~
+say Farewell, $n!
+~
+|
+#4502
+druid priest~
+The Druidic Priest~
+A Druidic Priest walks around quietly.
+~
+~
+65 201326756 0 0 0 500 S
+90 1 180 180 12000 12000d0+0 0d0+90000
+900 19 0
+0 0 1
+0 0 0
+>fight_prog 75~
+cast 'heal' self
+~
+|
+#4503
+druid warrior priest~
+The Warrior Priest~
+A Warrior Priest walks around peacefully.
+~
+~
+65 100663424 0 0 0 500 S
+93 1 186 186 12000 12000d0+0 0d0+93000
+930 19 0
+0 0 1
+0 0 0
+>fight_prog 10~
+cast 'fireball' $n
+~
+>fight_prog 40~
+cast 'heal' self
+~
+|
+#4504
+sprite~
+The Tree Sprite~
+A Tree Sprite flies around, annoying people.
+~
+~
+65 34095296 0 0 0 100 S
+85 1 170 170 10000 10000d0+0 0d0+75000
+850 10 0
+0 0 0
+0 0 0
+>fight_prog 20~
+soulstrike
+~
+>fight_prog 30~
+stun
+~
+|
+#4505
+treant~
+The Treant~
+A Treant is rooted to the ground here.
+~
+~
+67 469762048 0 0 0 -200 S
+90 1 180 180 12000 12000d0+0 0d0+75000
+900 9 0
+0 0 0
+0 0 0
+>fight_prog 80~
+cast 'earthquake'
+~
+|
+#4506
+paladin highlord~
+The Paladin Highlord~
+A Paladin Highlord is here.
+~
+~
+67 234881152 0 0 0 800 S
+98 1 196 196 24400 24400d0+0 0d0+98000
+980 17 0
+0 0 1
+0 0 0
+>fight_prog 10~
+cast 'dispel magic' $n
+~
+>fight_prog 30~
+stun
+~
+>fight_prog 50~
+cast 'holy fires' $n
+~
+>fight_prog 75~
+cast 'heal' self
+~
+>all_greet_prog 100~
+if ispc($n)
+ say Greetings.  Rest, and I will heal you.  Speak of
+ say the tests if you wish to try them.
+endif
+~
+>speech_prog tests~
+say Yes, the four tests will grant you the ability to
+say speak with the High Cleric, should you succeed.
+say Enter the portal should you wish to try them.
+~
+>speech_prog bye~
+say Fare the well, $n.
+~
+|
+#4507
+high paladin~
+The High Paladin~
+The High Paladin guards the altar.
+~
+~
+67 234881152 0 0 0 500 S
+95 1 190 190 15000 15000d0+0 0d0+95000
+950 0 0
+0 0 1
+0 0 0
+>fight_prog 10~
+stun
+~
+>all_greet_prog 100~
+if ispc($n)
+  say You should speak to the Paladin Highlord.
+endif
+~
+>speech_prog bye~
+say Fare thee well!
+~
+>fight_prog 50~
+casy 'heal' self
+~
+|
+#4508
+paladin~
+The Paladin~
+A Paladin walks around, minding his own business.
+~
+~
+65 201343104 0 0 0 500 S
+90 1 180 180 11000 11000d0+0 0d0+90000
+900 17 0
+0 0 1
+0 0 0
+>fight_prog 5~
+stun
+~
+>fight_prog 40~
+cast 'heal' self'
+~
+|
+#4509
+air elemental~
+The Air Elemental~
+An Air Elemental is here.
+~
+~
+99 33571456 0 0 0 0 S
+90 1 180 180 12000 12000d0+0 0d0+90000
+900 6 0
+0 0 0
+0 0 0
+>fight_prog 10~
+cast 'icestorm' $n
+~
+>fight_prog 20~
+cast 'dispel magic' $n
+~
+>fight_prog 40~
+cast 'weaken' $n
+~
+|
+#4510
+daemon~
+The Daemon of Air~
+A Daemon of Air is not happy to see you.
+~
+~
+99 167772864 0 0 0 -500 S
+92 1 184 184 15000 15000d0+0 0d0+92000
+920 6 0
+0 0 0
+0 0 0
+>fight_prog 5~
+cast 'dispel magic' $n
+~
+>fight_prog 20~
+cast 'lightning bolt' $n
+~
+>fight_prog 40~
+cast 'chain lightning' $n
+~
+|
+#4511
+paladin anti-paladin~
+The Anti-Paladin~
+The Anti-Paladin attacks when you enter.
+~
+~
+99 335560896 0 0 0 -800 S
+94 1 188 188 15500 15500d0+0 0d0+94000
+940 6 0
+0 0 1
+0 0 0
+>fight_prog 10~
+cast 'gate'
+~
+>fight_prog 20~
+cast 'drain life' $n
+~
+>fight_prog 40~
+cast 'fireball' $n
+~
+|
+#4512
+balron~
+The Balron~
+A Winged Balron is here, and it attacks!
+~
+~
+99 335560896 0 0 0 -800 S
+96 1 192 192 18000 18000d0+0 0d0+96000
+960 6 0
+0 0 0
+0 0 0
+>fight_prog 20~
+cast 'gate'
+~
+|
+#0
+
+
+
+#OBJECTS
+#4501
+holy mace~
+a Holy Mace~
+A mace sits on the ground, glowing.~
+~
+5 33555457 2 0 0 8193 100
+100 100
+0~ 0~ 0~ 8~
+4 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+13 150
+A
+12 100
+A
+1 2
+A
+19 40
+#4502
+cloak righteousness~
+a Cloak of Righteousness~
+A cloak sits neatly on the ground.~
+~
+9 1025 0 0 0 1025 90
+100 100
+0~ 0~ 0~ 0~
+2 900 0
+5 0
+bio-acceleration~
+4 4
+0 0 0
+A
+19 9
+A
+13 100
+A
+18 8
+A
+24 -15
+A
+12 100
+#4503
+platinum field breastplate~
+a platinum field breastplate~
+A platinum field breastplate lies on the ground.~
+~
+9 1 0 0 0 9 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+18 30
+#4504
+platinum field helm~
+a platinum field helm~
+A platinum field helm sits on the ground.~
+~
+9 1 0 0 0 17 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+#4505
+platinum field fieldplate face guard~
+a platinum fieldplate face guard~
+A platinum fieldplate face guard sits here.~
+~
+9 1 0 0 0 65537 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#4506
+platinum field fieldplate leggings~
+a pair of platinum fieldplate leggings~
+A pair of platinum leggings sits here.~
+~
+9 1 0 0 0 33 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#4507
+platinum field fieldplate boots~
+a pair of platinum fieldplate boots~
+A pair of platinum boots sits here.~
+~
+9 1 64 0 0 65 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#4508
+platinum field fieldplate gauntlets~
+a pair of platinum fieldplate gauntlets~
+A pair of platinum gauntlets sits here.~
+~
+9 1 128 0 0 129 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#4509
+platinum field fieldplate armguards~
+a pair of platinum fieldplate armguards~
+A pair of platinum armguards sits here.~
+~
+9 1 0 0 0 257 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#4510
+platinum shield~
+a platinum shield~
+A platinum shield sits on the ground before you.~
+~
+9 1 0 0 0 513 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#4511
+platinum sword longsword~
+a platinum longsword~
+A platinum longsword sits here.~
+~
+5 1 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 3~
+8 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 26
+A
+19 20
+#4512
+platinum bastard sword~
+a platinum bastard sword~
+A bastard sword made of platinum sits here.~
+~
+5 1 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 3~
+10 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 40
+A
+19 24
+A
+18 30
+#4513
+holysword sword~
+the Holysword of the High Order~
+A sword pulses with power.~
+~
+5 50859009 6 0 0 8193 99
+100 100
+0~ 0~ 0~ 3~
+2 988 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 130
+A
+12 50
+A
+19 45
+A
+18 10
+A
+24 -10
+#4514
+staff~
+a druidic priests staff~
+A staff sits here, pulsing.~
+~
+5 1 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+5 0
+cure poison~
+15 15
+0 0 0
+A
+19 15
+A
+18 15
+A
+4 1
+A
+2 1
+A
+13 35
+#4515
+key first~
+the first key~
+A key sits here.~
+~
+18 2 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4516
+key second~
+the second key~
+A key sits here.~
+~
+18 2 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4517
+key third~
+the third key~
+A key sits here.~
+~
+18 2 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4518
+key fourth~
+the fourth key~
+A key sits here.~
+~
+18 2 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4519
+sword~
+a priests sword~
+A priests sword sits on the ground in front of you.~
+~
+5 1 0 0 0 8193 75
+100 100
+0~ 0~ 0~ 3~
+10 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 26
+A
+18 15
+A
+13 35
+A
+2 1
+A
+1 2
+#4520
+ring~
+a sprites ring~
+A sprites ring has been discarded here.~
+~
+9 65 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+A
+5 1
+#4521
+aquablade blade~
+the Aquablade~
+A glowing blade lies on the ground.~
+~
+5 536870913 0 0 0 8193 92
+100 100
+0~ 0~ 0~ 3~
+5 920 0
+5 0
+icestorm~
+12 12
+0 0 0
+A
+19 33
+A
+12 90
+A
+13 90
+A
+18 23
+#4522
+sword elemental air~
+the Elemental Sword of Air~
+An elemental sword lies here.~
+~
+5 2049 0 0 0 8193 90
+100 100
+0~ 0~ 0~ 3~
+20 900 0
+5 0
+death field~
+2 2
+0 0 0
+A
+19 30
+A
+12 100
+A
+25 50
+A
+18 15
+A
+13 100
+#4523
+altar~
+an altar~
+An altar sits here, permanently attached to the ground.~
+~
+8 1 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+bless~
+-1 -1
+0 0 0
+#4524
+deathsword sword~
+the Deathsword~
+A deep purple sword seems to suck up the light.~
+~
+5 22 0 0 0 8193 94
+100 100
+0~ 0~ 0~ 3~
+4 940 0
+5 0
+death field~
+5 5
+0 0 0
+A
+19 35
+A
+18 20
+A
+26 20
+A
+12 50
+A
+13 100
+A
+25 50
+#4525
+portal~
+a portal~
+A huge shimmering portal is here.~
+~
+29 1 0 0 0 0 1
+100 100
+4534~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4526
+portal~
+a portal~
+A huge shimmering portal is here.~
+~
+29 1 0 0 0 1 1
+100 100
+4533~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4527
+ring time~
+the Ring of Time~
+A Ring appears and reappears with the Time here.~
+~
+9 33554497 0 0 0 3 100
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+5 0
+word of recall~
+40 40
+0 0 0
+A
+13 150
+A
+12 125
+A
+24 -10
+A
+19 15
+A
+18 5
+#4528
+unholy sword~
+the Unholy Sword~
+A sword of untold evil hovers at your knees.~
+~
+5 4194837 0 0 0 8193 96
+100 100
+0~ 0~ 0~ 3~
+4 960 0
+5 0
+blindness~
+5 5
+0 0 0
+A
+18 22
+A
+19 36
+A
+26 30
+A
+12 -100
+A
+13 100
+A
+25 20
+#4529
+wing~
+a wing of a balron~
+A wing of some great demon sits here.~
+~
+9 33556481 0 0 0 5 90
+100 100
+0~ 0~ 0~ 0~
+8 900 0
+0 0
+reserved~
+0 0
+4530 0 0
+A
+119 -1
+A
+13 50
+A
+12 50
+A
+19 9
+A
+18 7
+#4530
+wings~
+the wings of a balron~
+The wings of a great demon are here.~
+~
+9 100663297 0 0 0 5 95
+100 100
+0~ 0~ 0~ 0~
+6 948 0
+5 0
+fly~
+25 25
+0 0 0
+A
+119 -1
+A
+23 -10
+A
+24 -10
+A
+14 -75
+A
+12 -40
+A
+13 90
+A
+19 11
+A
+18 7
+#4531
+wing~
+a wing of a balron~
+A wing of some great demon sits here.~
+~
+9 33556481 0 0 0 5 90
+100 100
+0~ 0~ 0~ 0~
+8 900 0
+0 0
+reserved~
+0 0
+4530 0 0
+A
+119 -1
+A
+18 7
+A
+19 9
+A
+12 50
+A
+13 50
+#0
+
+
+
+#ROOMDATA
+#4501
+Atop the Trees~
+~
+~
+You have arrived at the top of the trees, and have discovered wooden bridges
+leading to the north, where incredibly large trees are.  You take a look
+around you, never being this high in your life, and realize that you seem to
+have gone into another dimension, for the sky is no longer the blue you are
+used to.  It has changed to purple!  The only exits are north, or back down
+this immense tree, into the foggy haze.
+~
+0 33693700 0
+Rd     0
+D0
+~
+~
+0 0 4502
+D5
+~
+~
+0 0 4542
+S
+#4502
+Intersection of Branches~
+~
+~
+You are at an intersection of branches.  A rope bridge stretches to the south,
+where you can easily climb down from this tree.  A very long branch leads off
+to the north, east and west from here.  You can't help but notice the purple
+sky, it is very strange.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4503
+D1
+~
+~
+0 0 4519
+D2
+~
+~
+0 0 4501
+D3
+~
+~
+0 0 4509
+S
+#4503
+Northern Branch~
+~
+~
+You are walking along the northern branch.  The leaves surrounding you on
+either side sway gently in the breeze, making rustling noises.  The branch
+itself is about fifteen feet wide, and looks as though it could support an
+army.  It continues to the north and the south.
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 4504
+D2
+~
+~
+0 0 4502
+S
+#4504
+Northern Branch~
+~
+~
+You are walking along a large branch.  The surface of the branch has been
+carved into what looks like a road, flattened for easy travel.  It is very
+peaceful and tranquil here.  You may continue north or south.
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 4505
+D2
+~
+~
+0 0 4503
+S
+#4505
+Northern Branch~
+~
+~
+You are walking along the northern branch of a giant, mystical tree.  It does
+not appear to get any thinner or weaker the further north you travel.  You can
+go to the north or the south from here.
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 4506
+D2
+~
+~
+0 0 4504
+S
+#4506
+Northern Branch~
+~
+~
+You are walking along a northern branch.  You can feel a source of holy
+magic to the north, getting stronger the further you travel.  You can go in
+that direction, or to the south.
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 4507
+D2
+~
+~
+0 0 4505
+S
+#4507
+Northern Branch~
+~
+~
+You are walking along a northern branch, and have stepped into a holy circle.
+The sheer power of holy magic is overwhelming, almost making you faint.  You
+may travel to the north or to the south from here.
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 4508
+D2
+~
+~
+0 0 4506
+S
+#4508
+Northern Branch~
+~
+~
+You have arrived at the altar.  The branch obviously continues to the north,
+but it is totally covered in bushes and leaves, and is thus unpassable.
+Several pillows are set up around the altar, used for kneeling and praying.
+The only exit back the way you came, to the south.
+~
+0 401412 0
+Rd     0
+D2
+~
+~
+0 0 4507
+S
+#4509
+Western Branch~
+~
+~
+You are walking along the western branch.  It is about fifteen feet wide, and
+seems strong enough to support several buildings.  This path seems to grow a
+little darker to the west however, the peaceful surroundings being interrupted
+and decayed.
+~
+0 139268 0
+Rd     0
+D1
+~
+~
+0 0 4502
+D3
+~
+~
+0 0 4510
+S
+#4510
+Western Branch~
+~
+~
+The branch continues in a northwestern direction from here, twisting and
+turning as it goes.  The leaves around you don't seem to be as healthy as
+to the east, as though something in the opposite direction is erroding the
+trees themselves.  You may travel to the north or the east from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4511
+D1
+~
+~
+0 0 4509
+S
+#4511
+Western Branch~
+~
+~
+You are walking along the western branch, which twists and turns as you go.
+A little ways ahead you can see that this branch stops very abruptly at a
+cliffside, seeming to grow into the rock.  You can either go in that direction,
+or to the south.
+~
+0 139264 0
+Rd     0
+D2
+~
+~
+0 0 4510
+D3
+~
+~
+0 0 4512
+S
+#4512
+Western Branch~
+~
+~
+You are walking along the top of a very large branch.  The wood of the
+branch is very strong still, not seeming to be touched by the darkness that
+lies to the north.  The leaves surrounding you however, are either dying
+or very sickly looking.  You may also travel to the east from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4513
+D1
+~
+~
+0 0 4511
+S
+#4513
+Western Branch~
+~
+~
+You have reached a place where the branch and cliffside meet.  A fairly small
+plateau lies to the north, its ground made of gravel and soil.  The western
+branch lies to the south.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4514
+D2
+~
+~
+0 0 4512
+S
+#4514
+Western Plateau~
+~
+~
+You are walking along the top of a very high cliff.  You do not remember
+seeing this from the base of the tree however, and conclude that you are in
+fact in another dimension.  The ground has some rather large circular prints
+in it, measuring about one foot in diameter.  You can travel to the north and
+west, to explore this small plateau, or to the south, onto a large branch.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4517
+D2
+~
+~
+0 0 4513
+D3
+~
+~
+0 0 4515
+S
+#4515
+Western Plateau~
+~
+~
+You are walking along a plateau high in a mountain.  The walls of the cliffs
+prevent you from going any further up, and they seem to stretch forever in
+that direction.  You can go to the east or north from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4516
+D1
+~
+~
+0 0 4514
+S
+#4516
+Western Plateau~
+~
+~
+You are walking through a rather small plateau.  A small niche can be seen
+a little ways to the east.  You can go in that direction or to the south from
+here.
+~
+0 139264 0
+Rd     0
+D1
+~
+~
+0 0 4517
+D2
+~
+~
+0 0 4515
+S
+#4517
+Western Plateau~
+~
+~
+You are walking along the top of a rather large plateau.  The great walls of
+the mountain give way to the east, revealing a small niche.  You can go into
+it from here, or to the south and west.
+~
+0 139264 0
+Rd     0
+D1
+~
+~
+0 0 4518
+D2
+~
+~
+0 0 4514
+D3
+~
+~
+0 0 4516
+S
+#4518
+Western Plateau~
+~
+~
+You have entered a small niche that has been carved into the mountain.  A
+very small bed sits against the east wall.  There is nothing else of note here.
+The only exit is back to the west, the way you came.
+~
+0 139264 0
+Rd     0
+D3
+~
+~
+0 0 4517
+S
+#4519
+Eastern Branch~
+~
+~
+You are walking along the eastern branch.  It is around fifteen feet wide, and
+totally solid.  The main cross junction of the branches is to the west of here,
+you can also go to the east.
+~
+0 139264 0
+Rd     0
+D1
+~
+~
+0 0 4520
+D3
+~
+~
+0 0 4502
+S
+#4520
+Eastern Branch~
+~
+~
+You are walking along a very wide twisted path.  The branches on either side
+of you sway in the breeze, their leaves rustling gently.  The path goes to the
+north and west of here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4521
+D3
+~
+~
+0 0 4519
+S
+#4521
+Eastern Branch~
+~
+~
+You are walking on top of a long, twisting branch.  You can see the branch stop
+suddenly to the northeast, seeming to travel into the side of a cliff.  The
+plateau on top of it is easily accessable.  Perhaps it was actually designed to
+be this way.  You can go east and south from here.
+~
+0 139264 0
+Rd     0
+D1
+~
+~
+0 0 4522
+D2
+~
+~
+0 0 4520
+S
+#4522
+Eastern Branch~
+~
+~
+You walking along the top of a twisting, winding branch.  You can see a plateau
+a little ways to the north.  The only exits from here are in that direction
+or to the west.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4524
+D3
+~
+~
+0 0 4521
+S
+#4523
+Eastern Branch~
+~
+~
+You have arrived where the branch meets the cliffside.  You decide to take a
+look over the side of the branch, down to where the ground should be.  To
+your suprise, the only thing you can see is a massive, swirling purple
+vortex, with a very dark, almost black, centre.  You can go to the north from
+here, to explore the plateau, or to the south.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4525
+D2
+~
+~
+0 0 4524
+S
+#4524
+Eastern Branch~
+~
+~
+You are walking along a very thick branch.  You can see a large plateau to
+the north, and the branch winds to the southeast.  Those are the only
+directions you can go from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4523
+D2
+~
+~
+0 0 4522
+S
+#4525
+Eastern Plateau~
+~
+~
+You are at the entry point to the eastern plateau.  There is an immense source
+of power to the north, but you cannot tell what is in that direction.  You
+can travel in all four cardinal directions from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4533
+D1
+~
+~
+0 0 4526
+D2
+~
+~
+0 0 4523
+D3
+~
+~
+0 0 4532
+S
+#4526
+Eastern Plateau~
+~
+~
+You are walking along the eastern plateau.  There is an immense source of
+power to the northwest, but you cannot tell what is in that direction.  You can
+travel to the north or to the west from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4527
+D3
+~
+~
+0 0 4525
+S
+#4527
+Eastern Plateau~
+~
+~
+You are walking along the eastern plateau.  There is an immense source of power
+to the west, but you cannot tell what is in that direction.  You can travel
+to the north, south or west from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4528
+D2
+~
+~
+0 0 4526
+D3
+~
+~
+0 0 4533
+S
+#4528
+Eastern Plateau~
+~
+~
+You are walking along the eastern plateau.  There is an immense source of
+power to the southwest, but you cannot tell what is in that direction.  You can
+travel to the west and south from here.
+~
+0 139264 0
+Rd     0
+D2
+~
+~
+0 0 4527
+D3
+~
+~
+0 0 4529
+S
+#4529
+Eastern Plateau~
+~
+~
+You are walking along the eastern plateau.  There is an immense source of power
+to the south, but you cannot tell what is in that direction.  You can travel to
+the south, east and west from here.
+~
+0 139264 0
+Rd     0
+D1
+~
+~
+0 0 4528
+D2
+~
+~
+0 0 4533
+D3
+~
+~
+0 0 4530
+S
+#4530
+Eastern Plateau~
+~
+~
+You are walking along the eastern plateau.  There is an immense source of power
+to the southeast, but you cannot tell what is in that direction.  You can
+travel to the east or south from here.
+~
+0 139264 0
+Rd     0
+D1
+~
+~
+0 0 4529
+D2
+~
+~
+0 0 4531
+S
+#4531
+Eastern Plateau~
+~
+~
+You are walking along the eastern plateau.  There is an immense source of power
+to the east, but you cannot tell what is in that direction.  You can travel to
+the north, east and south from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4530
+D1
+~
+~
+0 0 4533
+D2
+~
+~
+0 0 4532
+S
+#4532
+Eastern Plateau~
+~
+~
+You are walking along the eastern plateau.  There is an immense source of power
+to the northeast, but you cannot tell what is in that direction. You can travel
+to the north and east from here.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4531
+D1
+~
+~
+0 0 4525
+S
+#4533
+The Third Circle~
+~
+~
+You have come across a great circle carved into the ground.  A magical glow
+eminates from this circle, the pentacle drawn within spinning slowly.  This
+must be the source of power you felt.  You can exit in all the cardinal
+directions.
+~
+0 139264 0
+Rd     0
+D0
+~
+~
+0 0 4529
+D1
+~
+~
+0 0 4527
+D2
+~
+~
+0 0 4525
+D3
+~
+~
+0 0 4531
+S
+#4534
+Before the First Test~
+~
+~
+You find yourself in a long, dark hallway.  You cannot help but wonder what
+these tests are going to be about, for they cannot be anything easy.  The
+hallway continues to the south, where the first test lies.
+~
+0 401417 0
+Rd     0
+D2
+~
+~
+0 0 4535
+S
+#4535
+The First Test~
+~
+~
+You are at the first test.  There is a door on the south wall, and a passage
+leading to the north.  Other than that, the walls, floor and ceiling are
+completely unmarked.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 4534
+D2
+~
+~
+103 4515 4536
+S
+#4536
+Before the Second Test~
+~
+~
+You have made it by the first test.  This room is set up as a resting place
+for the second test, which lies to the south.  A door lies on the north wall
+as well.
+~
+0 401421 0
+Rd     0
+D0
+~
+~
+103 4515 4535
+D2
+~
+~
+0 0 4537
+S
+#4537
+The Second Test~
+~
+~
+You are at the second test.  There is a door on the south wall, and a passage
+leading to the north.  Other than that, the walls, floor and ceiling are
+completely unmarked.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 4536
+D2
+~
+~
+119 4516 4538
+S
+#4538
+Before the Third Test~
+~
+~
+You have made it by the second test.  This room is set up as a resting place
+for the third test, which lies to the south.  A door lies on the north wall
+as well.  You feel a source of power getting stronger to the south.
+~
+0 401421 0
+Rd     0
+D0
+~
+~
+119 4516 4537
+D2
+~
+~
+0 0 4539
+S
+#4539
+The Third Test~
+~
+~
+You are at the third test.  There is a door on the south wall, and a passage
+leading to the north.  Other than that, the walls, floor and ceiling are
+completely unmarked.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 4538
+D2
+~
+~
+119 4517 4540
+S
+#4540
+Before the Fourth Test~
+~
+~
+You have made it by the third test.  This room is set up as a resting place
+for the fourth and final test, which lies to the south.  A door lies on the
+north wall as well.  The feeling you have been getting is even stronger to
+the south.
+~
+0 401421 0
+Rd     0
+D0
+~
+~
+119 4517 4539
+D2
+~
+~
+0 0 4541
+S
+#4541
+The Fourth Test~
+~
+~
+You are at the fourth test.  There is a door on the south wall, and a passage
+leading to the north.  Other than that, the walls, floor and ceiling are
+completely unmarked.
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 4540
+D2
+~
+~
+119 4518 4544
+S
+#4542
+Climbing the Tree~
+~
+~
+You are about two thirds the way up a tree, and have entered a very dense fog.
+It is so thick you are almost choking on it, your vision is totally blurred.
+You can either go up the tree, or down it.
+~
+0 33693696 0
+Rd     0
+D4
+~
+~
+0 0 4501
+D5
+~
+~
+0 0 4543
+S
+#4543
+Climbing the Tree~
+~
+~
+You are about one third up the tree.  Your vision is becoming blurred the
+higher you go, as if reality is changing somehow.  You can see a very dense fog
+above you.
+~
+0 139264 0
+Rd     0
+D4
+~
+~
+0 0 4542
+D5
+~
+~
+0 0 21590
+S
+#4544
+In a Time Nexus~
+~
+~
+You have entered some strange room.  There is a floor, but it does not appear
+to be there.  The sky is rapidly changing colours, the coulds zooming by at
+unbelievable speeds.  Your surrounds are ever changing, strange plantlife
+popping up all over the place, and immediately polymorphing into something
+new.
+~
+0 393230 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 4501 spec_cast_psionicist
+M 4502 spec_cast_mage
+M 4506 spec_healer
+M 4507 spec_cast_mage
+M 4508 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 4503 2 4505
+E 0 4503 0 5
+E 0 4506 0 11
+E 0 4507 0 12
+E 0 4508 0 13
+E 0 4509 0 14
+E 0 4510 0 15
+E 0 4519 0 20
+O 0 4523 0 4508
+M 0 4507 1 4508
+E 0 4503 0 5
+E 0 4504 0 6
+E 0 4505 0 8
+E 0 4506 0 11
+E 0 4507 0 12
+E 0 4508 0 13
+E 0 4509 0 14
+E 0 4512 0 20
+E 0 4510 0 15
+E 0 4502 0 16
+M 0 4505 2 4515
+M 0 4505 1 4517
+M 0 4504 2 4518
+E 0 4520 0 1
+M 0 4502 2 4519
+E 0 4503 0 5
+E 0 4506 0 11
+E 0 4509 0 14
+E 0 4514 0 20
+M 0 4508 2 4523
+E 0 4503 0 5
+E 0 4505 0 8
+E 0 4504 0 6
+E 0 4506 0 11
+E 0 4507 0 12
+E 0 4508 0 13
+E 0 4509 0 14
+E 0 4510 0 15
+E 0 4511 0 20
+O 0 4525 0 4533
+M 0 4506 1 4533
+E 0 4503 0 5
+E 0 4504 0 6
+E 0 4505 0 8
+E 0 4506 0 11
+E 0 4507 0 12
+E 0 4508 0 13
+E 0 4509 0 14
+E 0 4510 0 15
+E 0 4513 0 20
+E 0 4502 0 16
+M 0 4509 1 4535
+E 0 4522 0 20
+E 0 4522 0 21
+G 0 4515 0
+M 0 4510 1 4537
+E 0 4521 0 20
+E 0 4521 0 21
+G 0 4516 0
+M 0 4511 1 4539
+E 0 4503 0 5
+E 0 4524 0 20
+E 0 4524 0 21
+G 0 4517 0
+M 0 4512 1 4541
+E 0 4528 0 20
+E 0 4528 0 21
+E 0 4529 0 3
+E 0 4531 0 4
+G 0 4518 0
+M 0 4501 1 4544
+E 0 4501 0 20
+E 0 4502 0 16
+E 0 4503 0 5
+E 0 4527 0 1
+E 0 4527 0 2
+E 0 4506 0 11
+E 0 4507 0 12
+E 0 4508 0 13
+E 0 4509 0 14
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

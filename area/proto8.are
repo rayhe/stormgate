@@ -1,0 +1,172 @@
+#AREADATA
+Name        New area~
+Builders    Sebastion~
+VNUMs       7600 7649
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Sebastian~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#7600
+orc guard~
+Orcin Guard~
+An Orcin Guard stands before the entrance.
+~
+~
+3 0 16777344 134217728 0 -500 S
+50 1 80 80 0 10000d0+0 0d0+0
+2 18 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if class($n) == elf
+say Ahh! Another Victim to add to the mashed elf brain pie!
+mpkill $n
+else
+say To view this slaughterhouse, you must give me gold!
+mpforce $n give $N 1 coin
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#7600
+sign orc enrty entrance~
+a bloody sign~
+A bloodied sign sticks out of the ground~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+99999999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Welcome to the Elvish house of Horrors. If you are elven, BEWARE.
+All others are welcome. Please enjoy your stay.
+ 
+-Sebastion
+~
+#0
+
+
+
+#ROOMDATA
+#7600
+Elven Slaughter House~
+~
+~
+You now stand before the Elven Slaughterhouse.  Thousands of elves die
+here each month.  Their death creates food for many needy and homeless Orc
+Kindred.  A small signpost is in front of the two wooden doors.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 7601
+S
+#7601
+Front Hallway~
+~
+~
+The floor here is covered in a beautiful tanned leather patchwork.  The
+walls are all glossed over with a reddish-brown tint, hinting towards a
+blood red color.  Small pictures and poems also line the walls, here and
+there.  
+~
+0 0 0
+Rd     0
+E
+poem~
+One elf, Two elf
+Dead elf, Blue elf
+ 
+-- Anonymous Orc Poet
+~
+D2
+~
+~
+3 0 7600
+D3
+~
+~
+0 0 7602
+S
+#7602
+Front Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7601
+D3
+~
+~
+0 0 7603
+S
+#7603
+Front Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7602
+S
+#7604
+Torture Room~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 7600 0 7600
+M 0 7600 1 7600
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

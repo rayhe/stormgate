@@ -1,0 +1,2722 @@
+#AREADATA
+Name        TaF Temple~
+Builders    Kaine~
+VNUMs       22101 22200
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Kaine~
+Llevel      0
+Ulevel      0
+Sounds      &BEchos of chanting and battle cries flood the halls.~
+End
+
+
+
+#MOBILES
+#22101
+The Adept of Time~
+The Adept of Time~
+The Adept of Time is here to heal your wounds.
+~
+~
+75 167772352 16 0 0 0 S
+300 1 600 600 75000 75000d0+0 0d0+0
+3000 0 0
+0 0 0
+98319 0 0
+>all_greet_prog 100~
+if name($n) == Kaine
+worship $n
+'Hello master, you grace us with your presence
+else
+'Greetings loyal follower of Kaine, please rest here while i heal your wounds
+wounds
+bow $n
+endif
+~
+>act_prog ~
+~
+|
+#22102
+Bane~
+Bane~
+Bane stands here selling combat items.
+~
+~
+67 67108992 16 0 0 0 S
+100 1 200 200 75000 75000d0+0 0d0+100000
+1000 0 0
+0 0 0
+0 0 0
+#22103
+Massmune~
+Massmune~
+Massmune sits here writing scrolls.
+~
+~
+67 33554560 16 0 0 0 S
+100 1 200 200 70000 70000d0+0 0d0+10000
+1000 0 0
+0 0 1
+0 0 0
+#22104
+A Young Woman~
+A Beautiful Young Woman~
+A beautiful young woman asks you for your order.
+~
+~
+67 67108992 0 0 0 0 S
+108 1 216 216 75000 75000d0+0 0d0+100000
+1080 0 0
+0 0 2
+0 0 0
+#22105
+Blade~
+Blade~
+Blade is here to supply you with equipment for your journey.
+~
+~
+67 33554560 0 0 0 0 S
+108 1 216 216 75000 75000d0+0 0d0+100000
+1080 0 0
+0 0 1
+0 0 0
+#22106
+Speaker of many tounges~
+The Speaker of Many Tounges~
+The Speaker of Many Tounges sits here.
+~
+~
+65539 134217856 0 0 0 0 S
+108 1 216 216 75000 75000d0+0 0d0+10000
+1080 0 0
+0 0 0
+0 0 0
+#22107
+Lore~
+Lore~
+Lore, trainer of strengths is here.
+~
+~
+515 0 262176 0 0 0 S
+108 1 216 216 75000 75000d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+#22108
+Karn~
+Karn~
+Karn, the master of spells and skills is here.
+~
+~
+1027 33554560 0 0 0 0 S
+108 1 216 216 75000 75000d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+#22109
+Fire Warrior~
+A Fire Warrior~
+A warrior of the fire is here.
+~
+~
+67 0 0 0 0 0 S
+1 1 2 2 9 9d0+0 0d0+120
+10 0 0
+0 0 1
+0 0 0
+#22110
+Fire Mage~
+A Fire Mage~
+A Fire Mage hovers above the ground here.
+~
+~
+3 524288 0 0 0 0 S
+5 1 10 10 12 12d0+0 0d0+200
+50 0 0
+0 0 2
+0 0 0
+#22111
+Scorpion~
+A Scorpion~
+A Scorpion crawls around the ground here.
+~
+~
+3 0 0 0 0 0 S
+1 1 2 2 13 13d0+0 0d0+200
+10 0 0
+0 0 0
+0 0 0
+#22112
+Black Raven~
+A black raven~
+A Black Raven sits here perched on the top of the wall.
+~
+~
+3 524288 0 0 0 0 S
+1 1 2 2 11 11d0+0 0d0+150
+10 0 0
+0 0 0
+0 0 0
+#22113
+A sneaky thief~
+A sneaky thief~
+A sneaky thief lurks around here.
+~
+~
+3 0 0 0 0 0 S
+1 1 2 2 13 13d0+0 0d0+300
+10 0 0
+0 0 1
+0 0 0
+#22114
+Fire Lizard~
+A Fire Lizard~
+A Fire Lizard crawls up and down the walls here.
+~
+~
+3 0 0 0 0 0 S
+1 1 2 2 12 12d0+0 0d0+150
+10 0 0
+0 0 0
+0 0 0
+#22115
+barbarian~
+A barbarian~
+A barbarian attacks you!!
+~
+~
+35 0 0 0 0 0 S
+2 1 4 4 25 25d0+0 0d0+300
+20 0 0
+0 0 0
+0 0 0
+#22116
+assassin~
+A stealthy assassin~
+A stealthy assassin hides here in the corner.
+~
+~
+3 65536 0 0 0 0 S
+2 1 4 4 25 25d0+0 0d0+400
+20 0 0
+0 0 1
+0 0 0
+#22117
+illusionist~
+Illusionist~
+An illusionist hovers here above the ground.
+~
+~
+3 0 0 0 0 0 S
+2 1 4 4 25 25d0+0 0d0+400
+20 0 0
+0 0 0
+0 0 0
+#22118
+Fire Efreet~
+An Efreet~
+An Efreet claws at you.
+~
+~
+3 524288 0 0 0 0 S
+2 1 4 4 30 30d0+0 0d0+300
+20 0 0
+0 0 0
+0 0 0
+#22119
+Suq'Ata Firewalker~
+A Suq'Ata Firewalker~
+A Suq'Ata Firewalker stands here on red hot embers.
+~
+~
+67 0 0 0 0 0 S
+2 1 4 4 27 27d0+0 0d0+400
+20 0 0
+0 0 0
+0 0 0
+#22120
+Fire Dragon~
+A Fire Dragon~
+A dragon made of fire flies around here.
+~
+~
+3 524288 0 0 0 0 S
+2 1 4 4 28 28d0+0 0d0+400
+20 0 0
+0 0 0
+0 0 0
+#22121
+Flaming Djinn~
+A Flaming Djinn~
+A flaming djinn conjures up mischif here.
+~
+~
+3 524288 0 0 0 0 S
+2 1 4 4 30 30d0+0 0d0+400
+20 0 0
+0 0 0
+0 0 0
+#22122
+Elite Guardian~
+An Elite Guardian~
+An Elite Guardian sits here polishing his sword.
+~
+~
+3 0 0 0 0 0 S
+2 1 6 6 100 100d0+0 0d0+500
+20 0 0
+0 0 0
+0 0 0
+#22123
+Elite Sorceress~
+An Elite Sorceress~
+An Elite Sorceress studies an arcane tome here.
+~
+~
+3 524288 0 0 0 0 S
+2 1 6 6 90 90d0+0 0d0+0
+20 0 0
+0 0 2
+0 0 0
+#22124
+Elite Thief~
+An Elite Thief~
+An Elite Thief practices martial arts here.
+~
+~
+3 65536 0 0 0 0 S
+3 1 6 6 100 100d0+0 0d0+500
+30 0 0
+0 0 2
+0 0 0
+#22125
+Elite Assassin~
+An Elite Assassin~
+An Elite Assassin is here, hidden from the naked eye.
+~
+~
+3 65536 0 0 0 0 S
+2 1 8 8 170 170d0+0 0d0+0
+20 0 0
+0 0 2
+0 0 0
+#22126
+Elite Warrior~
+An Elite Warrior~
+An Elite Warrior charges toward you!!
+~
+~
+35 0 0 0 0 0 S
+3 1 8 8 150 150d0+0 0d0+1000
+30 0 0
+0 0 1
+0 0 0
+#22127
+Warriors Dog~
+The Warriors Dog~
+The Warriors Dog eats food off of the table here.
+~
+~
+3 0 0 0 0 0 S
+3 1 8 8 75 75d0+0 0d0+0
+30 0 0
+0 0 1
+0 0 0
+#22128
+Guardian of Time and Fate~
+The Guardian of Time and Fate~
+The Guardian of Time and Fate stands here.
+~
+~
+524291 234897536 0 16384 0 0 S
+105 1 210 210 17000 17000d0+0 0d0+0
+1050 0 0
+0 0 1
+0 0 0
+#22129
+Fortune Teller~
+A Fortune Teller~
+A Fortune Teller sits here, forseeing your fates.
+~
+~
+524291 83902592 0 0 0 0 S
+100 1 200 200 1000000 1000000d0+0 0d0+0
+1000 0 0
+0 0 2
+0 0 0
+>rand_prog 5~
+emote gazes deeply into her crystal ball
+~
+>greet_prog 100~
+say Welcome to the temple of Time and Fate child, please, sit.
+mpecho Say "tell me my fortune" to have your fortune told.
+~
+>speech_prog fortune~
+if rand(50)
+say You will soon be crushed by the cold hand of Fate.
+say But remember child, the only Fate is what you make.
+break
+else
+say The hand of Fate is with you child.
+endif
+~
+|
+#22130
+Mage Kane Kain~
+The Protector of Time and Fate~
+The Protector of Time and Fate floats above the ground here.
+~
+~
+524291 100663296 32816 0 2 0 S
+105 1 210 210 30000 30000d0+0 0d0+0
+1050 0 0
+0 0 0
+0 0 0
+>hitprcnt_prog 30~
+mpecho A Hooded Mage yells, Betrayer!!
+mpecho A Hooded Mage yells, You will die impudent mortal!
+dim
+~
+>fight_prog 50~
+Say I call forth the Hand of Time!
+mpecho A Bright ball of light appears in the hand of A Hooded Mage.
+mpecho A Hooded mage throws the ball of light at you.
+c 'age' $n
+~
+>fight_prog 50~
+if rand(50)
+mpecho A Hooded Mage calls on the Hand of Fate to Judge You!
+c 'dispel magic' $n
+break
+else
+mpecho A Hooded Mage calls on the Hand of Fate to Judge You!
+mpecho The Hand of Fate has mercy on your soul.
+endif
+~
+>fight_prog 50~
+mpecho A Hooded Mage concentrates his powers and freezes you in time!
+stun $n
+~
+>fight_prog 50~
+mpecho A Hooded Mage calls for the hand of Fate to grasp you firmly at the throat.
+strangle $n
+~
+>speech_prog thirsty drink~
+if name($n) == Kaine
+'As you wish
+mpoload 22135
+give drink $n
+smirk $n
+else
+'Get it yourself!
+mpecho &RThe Hooded Mages eyes glow bright red as he glares at $n
+endif
+~
+>speech_prog food~
+if name($n) == Kaine
+'As you wish
+mpoload 22103
+give feast $n
+smile $n
+else
+'Get it yourself!
+mpecho &RThe Hooded Mages eyes glow bright red as he glares at $n
+endif
+~
+>death_prog 100~
+cack $n
+mpmload 22130
+'Foolish infidel, you cannot kill me
+smirk
+~
+|
+#22131
+Loyal Follower~
+Loyal Follower~
+One of Time and Fates Loyal followers chant here.
+~
+~
+3 84410496 0 0 0 0 S
+104 1 208 208 9500 9500d0+0 0d0+0
+1040 0 0
+0 0 2
+0 0 0
+#22132
+Frog~
+A Frog~
+A Frog looks at you curiously.
+~
+~
+3 0 0 0 0 0 S
+2 1 4 4 30 30d0+0 0d0+1000
+20 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+' Ribbit...Ribbit
+emote swims around in the pool
+~
+|
+#22133
+Zombie Hand~
+A Zombie Hand~
+A zombie hand grabs your leg and will not let go.
+~
+~
+3 0 0 0 0 0 S
+2 1 4 4 30 30d0+0 0d0+1
+20 0 0
+0 0 0
+0 0 0
+#22134
+Vampire Bat~
+A Vampire Bat~
+A Vampire Bat flys around you.
+~
+~
+1 524288 0 0 0 0 S
+2 1 4 4 30 30d0+0 0d0+500
+20 0 0
+0 0 0
+0 0 0
+#22135
+Huge Python~
+A Huge Python~
+A Huge Python coils up and strikes at you.
+~
+~
+35 0 0 0 0 0 S
+3 1 6 6 40 40d0+0 0d0+1000
+30 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#22101
+scroll recall~
+scroll of recall~
+A Scroll of Recall sits here.~
+~
+2 8192 0 0 0 1 1
+100 100
+100~ word of recall~  ~  ~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#22102
+field Rations~
+field Rations~
+You see a pack of Field Rations here~
+~
+19 8192 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22103
+a Warriors Feast~
+a Warriors Feast~
+A Warriors Feast sets here.~
+~
+19 8192 0 0 0 1 5
+100 100
+36~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22104
+Titanium Flask~
+a Titanium Flask~
+A Titanium Flask sits here.~
+~
+17 8192 0 0 0 1 1
+100 100
+12~ 12~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22105
+Wrist light~
+a Wrist Light~
+You see a light with leather straps on it here.~
+~
+1 8192 0 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22106
+backpack~
+a Backpack of Times Past~
+You see a Backpack here.~
+~
+15 8192 0 0 0 16385 1
+100 100
+25~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22107
+Titanium Crossbow~
+a &wTitanium Crossbow~
+You see a Titanium Crossbow.~
+~
+5 0 0 0 0 8193 5
+100 100
+0~ 10~ 11~ 11~
+4 48 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+A
+18 2
+#22108
+Titanium Anklets~
+&wTitanium Anklet~
+You see a Titanium Anklet here.~
+~
+9 0 0 0 0 1048577 1
+100 100
+5~ 0~ 0~ 0~
+1 4 0
+0 0
+war chant~
+0 0
+0 0 0
+#22109
+Wishing Well~
+wishing well~
+You see the Wishing Well of Fate.~
+~
+25 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22110
+Entrance Arch to the Tower~
+arch~
+A Huge Archway sits here.~
+~
+13 134217728 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22111
+Noteboard~
+a Noteboard~
+A Noteboard sits here.~
+~
+11 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22112
+Sacrifical Altar~
+a sacrifical altar~
+An Altar of Sacrifices sits here.~
+~
+13 33554432 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22113
+titanium Ring~
+titanium Ring~
+On the floor, covered in dust sits a shiny ring.~
+~
+9 0 0 0 0 3 1
+100 100
+2~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#22114
+Titanium Short Sword~
+a Titanium Short Sword~
+A Titanium Short Sword lyes here on the ground.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 3~ 6~ 3~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#22115
+Titanium Breastplate~
+titanium Platemail~
+A set of Titanium Platemail sits here on the floor.~
+~
+9 0 0 0 0 9 1
+100 100
+8~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#22116
+Titanium Link Belt~
+a Titanium Link Belt~
+A shiny belt lays here on the floor.~
+~
+9 0 0 0 0 2049 2
+100 100
+8~ 0~ 0~ 0~
+2 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 7
+#22117
+Wizards Staff~
+a Wizards Staff~
+A crooked staff stands up against the wall here.~
+~
+4 0 0 0 0 16385 3
+100 100
+5~ 5~ 5~ magic missile~
+4 28 0
+0 0
+reserved~
+0 0
+0 0 0
+#22118
+Hooded Cloak~
+a Hooded Cloak~
+A Hooded Cloak hangs here.~
+~
+9 0 0 0 0 1025 2
+100 100
+0~ 0~ 0~ 0~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 5
+#22119
+Titanium Bracers~
+a pair of Titanium Bracers~
+A pair of Titanium Bracers glow in the darkness.~
+~
+9 1 0 0 0 257 1
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#22120
+Titanium Leggings~
+a Pair of Titanium Leggings~
+A Pair of Titanium Leggings lay in a pile on the floor.~
+~
+9 0 0 0 0 33 1
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#22121
+Titanium Talisman~
+a Titanium Talisman~
+A Titanium Talisman glows here in the darkness.~
+~
+9 0 0 0 0 5 1
+100 100
+8~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#22122
+Titanium Septer~
+a Titanium Septer~
+A Titanium Septer sits on the floor here.~
+~
+4 0 0 0 0 16385 3
+100 100
+3~ 5~ 5~ fly~
+2 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#22123
+Time Vortex~
+a Time Vortex~
+A Time Vortex is here.~
+~
+29 33554432 0 0 0 0 0
+100 100
+22101~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22124
+Titanium Helmet~
+a Titanium Helmet~
+A Titanium Helmet lays here in the dust.~
+~
+9 0 0 0 0 17 2
+100 100
+8~ 0~ 0~ 0~
+3 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 7
+#22125
+Titanium Shield~
+a Titanium Shield~
+A Titanium Shield shines in the darkness here.~
+~
+9 0 0 0 0 512 1
+100 100
+9~ 0~ 0~ 0~
+0 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#22126
+etherial Abyss~
+etherial Abyss~
+An Etherial Abyss sourounds you.~
+~
+13 0 8192 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22127
+Pendulum of Time~
+the Pendulum of Time~
+The Pendulum of Time swings over the altar table here.~
+~
+13 33554432 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22128
+Throne~
+deitys Throne~
+The Deitys Golden Throne sits atop of the stairs here.~
+~
+12 1 16384 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22129
+Newbie Sign~
+newbie Plaque~
+A Newbie Plaque is nailed to the wall here, type read sign to see it.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Ok, here are a few tips on this mud, there is pretty much a help file for
+everything, so if you need help on somthing, just type help subject.  Next,
+to see who is on the mud, their level, and religon type "who".  If you need
+any extra help,on something find an immortal, to do this, type "who imm". 
+However, they can not help you with anything in the MUD, only questions
+about it, rules or bugs you might find in the game.  And last, but not
+least, yourself.  To find out how many experience you need to gain a level
+type worth or just wo.  And it will tell you.  To see any other informatino
+about yourself, type score, this will tell you information about your pkill
+score, health points, move points, magic points and etc...  
+~
+E
+sign~
+~
+E
+sign~
+Welcome to Stormgate Newcomer. This is the temple of Time and Fate. Here you may train by going to the trainer, wich is 2 east of here and typing train, this will give you a list of things to train such as wis, dex, con, etc.  I recomend you train all your wis first, it helps out alot in the long run. to the west is the practice room, where you may practice your fighting skills at level 3. Go th
+~
+E
+sign~
+Welcome to Stormgate Newcomer.  This is the temple of Time and Fate. 
+Here you may train by going to the trainer, wich is 2 west of here and
+typing train, this will give you a list of things to train such as wis, dex,
+con, etc.  I recomend you train all your wis first, it helps out alot in the
+long run.  To the east is the practice room, where you may practice your
+fighting skills at level 3.  Go there and type prac to see what you can
+practice.  Above you is the fighting chamber, you may go there and fight the
+mobs (monsters) to gain experience, once you gain 1000xp you will gain a
+level, use wo to see how many experience till your next level.  But
+remember, before you fight a monster, type CON (monster) to see if you can
+beat it or not.  
+ 
+Kaine D'Avenant, Ruler of Time and Fate
+~
+#22130
+Titanium Key~
+a Titanium Key~
+A Titanium Key sits here.~
+~
+18 8192 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22131
+Coins~
+a pile of gold.~
+A pile of golden coins sit here.~
+~
+20 0 0 0 0 1 0
+100 100
+500~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22132
+Stream~
+stream~
+A Crooked Stream flows here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22133
+Vortex~
+a Vortex~
+A Vortex burns here in the dark.~
+~
+29 33554432 0 0 0 0 0
+100 100
+22101~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22134
+Bola Snare~
+a Bola Snare~
+A Bola Snare lays here on the ground.~
+~
+32 1 0 0 0 2097153 5
+100 100
+50~ 5~ 5~ entangle~
+2 24 0
+0 0
+reserved~
+0 0
+0 0 0
+#22135
+Drink Mug Water~
+a Frosty Mug of Ice Cold Water~
+A frosty mug of cold water sits here on the ground.~
+~
+17 134217728 0 0 0 1 0
+100 100
+500~ 500~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#22136
+donation box~
+a donation box.~
+A Donation Box with the insignia of Time and Fate sits on the altar here.~
+~
+15 0 0 0 0 0 0
+100 100
+-1~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#22101
+The Entrance to the Temple of Time and Fate~
+~
+~
+As you walk to the arch leading into the tower, sounds of chanting and
+battle cries surround you.  And the faith in time and fate fills your soul. 
+Join us, for we are the chosen, the keepers of time and fate itself, and the
+followers of Time and Fate.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 22102
+S
+#22102
+The Pathway to the Adept of Time~
+~
+~
+As you hear the casting of arcane spells, chanting and battle cries
+faintly echo from some far away place, you see shops up ahead.  Some filled
+with food and some filled with other various objects like weapons and armor.
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 22103
+D1
+~
+~
+0 0 22111
+D2
+~
+~
+0 0 22101
+D3
+~
+~
+0 0 22110
+S
+#22103
+The Chambers of the Adept of Time~
+~
+~
+Here stands one of the few chosen to exist outside of time, unaged and
+unchanged by his fate.  His only purpose, to serve you, to guide you on your
+path of fate.  He will heal your wounds and aid you if you need help.  So
+just rest a while until the Adept can help you.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 22104
+D1
+~
+~
+0 0 22108
+D2
+~
+~
+0 0 22102
+D3
+~
+~
+0 0 22106
+D4
+~
+~
+0 0 22114
+S
+#22104
+Path to the Wishing Well of Fate~
+~
+~
+To your north you hear the soothing sounds of trickeling water, it almost
+makes all sounds of battle and chanting die out.  The mear thought of the
+well makes you suddenly thirsty.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 22105
+D1
+~
+~
+0 0 22113
+D2
+~
+~
+0 0 22103
+D3
+~
+~
+0 0 22112
+S
+#22105
+The Wishing Well of Fate~
+~
+~
+Here lyes the famous wishing well of fate.  This single well has granted
+the wishes of millions of people and aided them on there path of destiny. 
+But for now, you take a cool refreshing drink.  Before leaving something
+tells you to toss in a coin, and make a wish 
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 22104
+S
+#22106
+Pathway to the Note room~
+~
+~
+Trying to get away from the noise,chanting,and battle cries of the world,
+you walk towards a room filled with silence .  Magic keeping out all sounds
+near it...  Now you can finaly get some peace and quiet, and get away from
+the outside world.  
+~
+0 8537102 0
+Rd     0
+D1
+~
+~
+0 0 22103
+D3
+~
+~
+0 0 22107
+S
+#22107
+The Note room~
+~
+~
+Finaly peace and quiet!  Here you can write your notes, recupirate from
+battles, or just lye around and waste time.  No sound will bother you here
+you are totaly safe from any danger 
+~
+0 10634254 0
+Rd     0
+D1
+~
+~
+0 0 22106
+S
+#22108
+The Walkway to the Altar of Sacrifices~
+~
+~
+Going towards the altar of fate, you see it is covered in blood and guts.
+Ahead is the sacrificial altar of Kaine, you may go to this room to
+sacrifice your goods and other items to him in appreciation.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 22109
+D3
+~
+~
+0 0 22103
+S
+#22109
+The Altar of Time and Fate~
+~
+~
+This is where you may drop your items and sacrifice them to Kronos to show
+your appreciation.  Looking around you see a huge altar with blood all over
+it, and a beautiful virgin chained to the wall in the corner, cowering.  For
+she is about to be sacrificed to the Deity.
+~
+0 1032 0
+Rd     0
+D3
+~
+~
+0 0 22108
+S
+#22110
+Revikas' Resturant~
+~
+~
+As you enter this room you smell the food being cooked in the back, your
+mouth waters.  All around you, you see long round tables,window booths, and
+chairs.  A beautiful young woman walks up to you and asks for your order.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22102
+S
+#22111
+Blades Item Shop~
+~
+~
+Entering this room you see an enormous selection of items, ranging from
+backpacks to drink containers.  As you look around through the items a tall
+man watches you carefuly from behind the counter.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 22102
+S
+#22112
+Banes' Weapon and Armor shop~
+~
+~
+Here you see incredible weapons on the walls, honed to perfection,
+shining in the darkest corner of the room.  On the other side of the room
+you see breastplates,tunics,boots, and other equipment.  An extremly strong
+looking man watches you closely from behind the counter.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 22104
+S
+#22113
+Massmunes' Scroll shop~
+~
+~
+Looking around the room you see archaic scrolls sorounding you, as you
+look around trying to decypher the meanings to these scrolls you see a man
+in a dark robe chanting and levitating above the ground.  The mear sight of
+this man makes you afraid to go near him.  
+~
+0 1032 0
+Rd     0
+D3
+~
+~
+0 0 22104
+S
+#22114
+Preparing for Your Destiny~
+~
+~
+On this level you will find a variety of places you can learn, practice,
+and train to be your best.  To the north is the Hall of languages where you
+can learn all the different languages of the mud.  To the west is the Hall
+of Training, where you can work to train your physical requirements.  To the
+east is the Hall of practice where you can train your skills and magical
+spells.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22148
+D1
+~
+~
+0 0 22117
+D3
+~
+~
+0 0 22115
+D4
+~
+~
+0 0 22119
+D5
+~
+~
+0 0 22103
+S
+#22115
+Towards the Hall of Training~
+~
+~
+Walking towards the training area you hear metal clashing together, and
+grunts of men lifting weights.  You also hear other people working out in
+the distance and the casting of ancient spells.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22114
+D3
+~
+~
+0 0 22116
+S
+#22116
+The Hall of Training~
+~
+~
+As you look around you, you see a place that looks simalar to a gym.  All
+around you are weights, barbells, and other exersize machines.  At the other
+side of the room you notice scrolls and practice dumbies to cast on.  Type
+train to see a list of commands 
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22115
+S
+#22117
+Towards the Hall of Practice~
+~
+~
+As you walk towards the halls of practice you hear instructors yelling
+commands to their students and spells being cast.  Anxious to practice your
+spells and skills you rush towards the halls of practice, looking fowards
+you see a huge man waiting to help you hone the finest of your skills 
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22118
+D3
+~
+~
+0 0 22114
+S
+#22118
+The Hall of Practice~
+~
+~
+Prepairing to practice yourself in the art of Warfare you see there are
+many narrow bookshelves with read tables between each set of shelves.  There
+are Holy Books, Books of the Arcane Magics, Books of Hand-to-Hand Combat,
+Books of Battle Tactics, and Books on the Techniques of Spying.  Rich
+tapestries depicting victorious battles hang from the ceiling.  There is a
+large slate board upon one wall with notes and hastily drawn diagrams of
+battlefield techniques.  The sounds of the chanting calmly drift through the
+pathway.  Type PRAC to see a list of commands.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 22117
+S
+#22119
+Entrance to the Lake of Fire~
+~
+~
+Here in the arena, you see all around you people jousting, fenceing, and
+engauging in hand-to-hand combat.  From here, you are on your own.  Aquire
+weapons,armor, and gold from the ones you have deafeated in battle.  Here
+you will learn how to survive and gain experience in combat.  Remember to
+type CON <opponent> to determine weather you can deafeat your foes.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22129
+D1
+~
+~
+0 0 22123
+D3
+~
+~
+0 0 22120
+D5
+~
+~
+0 0 22114
+S
+#22120
+At the Edge of the Arena on the Lake~
+~
+~
+You find yourself backed up against a huge cold stone wall covered in
+blood stains.  Resting for a moment, and regaining your strength, you look
+out into the battle arena and realize that you have almost cleared out most
+of your foes and grin at what you have accomplished.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22130
+D1
+~
+~
+0 0 22119
+D3
+~
+~
+0 0 22121
+S
+#22121
+At the Edge of the Arena~
+~
+~
+Still on the edge of the arena you look over the ledge.  You see huge
+spikes protruding out of the lava with human and monster skeletons caught on
+them.  Being afraid of falling off or getting pushed off yourself, you back
+away from the ledge carefuly 
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22131
+D1
+~
+~
+0 0 22120
+D3
+~
+~
+0 0 22122
+S
+#22122
+At the Edge of the Arena~
+~
+~
+Looking around the edges of the arena you look on the polished marble
+floor and see fingers that were cut off long ago.  These must be the only
+remains of the people who were knocked over the edges, there fingers cut off
+because they would not let go.  Fate was certainly not with these warriors.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22132
+D1
+~
+~
+0 0 22121
+S
+#22123
+At the Edges of the Arena~
+~
+~
+Looking around you see an enormus warrior coming toward you with a sword
+in his hand and a shield in the other.  As you look up at his face you see
+grim smirk...  This can not be a good sign for you.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22128
+D1
+~
+~
+0 0 22124
+D3
+~
+~
+0 0 22119
+S
+#22124
+At the Edges of the Arena~
+~
+~
+Still on the edges of the arena you get a little cocky with walking on
+the edge and almost slip off.  Your pulse rushing and adrenaline pumping,
+you pray in thankfullness that fate was on your side 
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22127
+D1
+~
+~
+0 0 22125
+D3
+~
+~
+0 0 22123
+S
+#22125
+At the Edges of the Arena~
+~
+~
+Begining to tire of fighting you stop to catch a breath and take a rest. 
+All this fighting and the hot flames from the lake have worked you up a good
+thirst.  Reaching in your backpack you grab your water bottle and take a
+drink, then move on.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22126
+D3
+~
+~
+0 0 22124
+S
+#22126
+Still on the Edges of the Arena~
+~
+~
+After your short rest you are ready for battle again and look around for
+new opponents.  Hiding here in the corner lurks a hidden assassin that
+attacks you for no apparent reason.  Prepare for battle.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22134
+D2
+~
+~
+0 0 22125
+D3
+~
+~
+0 0 22127
+S
+#22127
+In the Arena of Fire~
+~
+~
+Looking down below you, you see a polished, marble floor.  All around
+you, you hear people casting spells against each other and fighting with
+weapons and battling in hand-to-hand combat trying to deafeat each other by
+pushing them into the flames.  As you look up to watch, you see cloaked
+mages casting spells of arcane magic, Huge warriors and barbarians battling
+with various weapons of combat 
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22126
+D2
+~
+~
+0 0 22124
+D3
+~
+~
+0 0 22128
+S
+#22128
+Nearing the Center of the Arena~
+~
+~
+Nearing the center of the arena you become hotter and hotter from the
+firey lake below.  Steping around the holes in the floor where many have
+been pushed in, you see a huge barbarian ahead awaiting your challenge. 
+Fate be with you if you decide to challenge him.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22135
+D1
+~
+~
+0 0 22127
+D2
+~
+~
+0 0 22123
+D3
+~
+~
+0 0 22129
+S
+#22129
+Nearing the Center of the Arena~
+~
+~
+As you feel the intense heat of the fire and fighting.  You start to
+sweat and need something to cool you off.  Reaching into your backpack you
+take a sip out of your flask.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22128
+D2
+~
+~
+0 0 22119
+D3
+~
+~
+0 0 22130
+S
+#22130
+Looking for a Fight!~
+~
+~
+Finding you now have some experience in the arts of combat, you look for
+more challengers, so far you have seen assassins,barbarians, and warriors. 
+Wandering where all the mages are, you look around, then back in front of
+you and *poof* a mage appears out of nowhere and challenges you to a battle.
+Accepting his challenge you engauge in combat.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22129
+D2
+~
+~
+0 0 22120
+D3
+~
+~
+0 0 22131
+S
+#22131
+In the Arena~
+~
+~
+Growing seriously tired of battle you start to turn back.  But the hand
+of fate desides otherwise and pulls you back to your destonation.  Takeing a
+big sigh you turn and go at it again.  Gaining more experience from battle
+than before you deside that the forces of fate work for you, not against
+you.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22130
+D2
+~
+~
+0 0 22121
+D3
+~
+~
+0 0 22132
+S
+#22132
+At the Edge of the Arena~
+~
+~
+Here again, at the edges of the arena you decide you have worn out your
+talents on this floor, and descide to look for the advancement to the next. 
+Hopefully there you will gain more experience in battling others that have
+the potential to deafeat you.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22133
+D1
+~
+~
+0 0 22131
+D2
+~
+~
+0 0 22122
+S
+#22133
+The Stairs to the Chambers of Time~
+~
+~
+Finally, you have reached the advancement to higher levels.  Feel proud,
+Fate has leaned in your direction.  With high hopes you deside to go up the
+marble stairs and try the challengers ahead.  WARNING:the area above has
+level two and three mobs if you are not near these levels do not advance, or
+fate may not be so easy on you.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 22132
+D4
+~
+~
+0 0 22139
+S
+#22134
+The Stairs to the Chambers of Time~
+~
+~
+Finally, you have reached the advancement to higher levels.  Feel proud,
+Fate has leaned in your direction.  With high hopes you deside to go up the
+marble stairs and try the challengers ahead.  WARNING:the area above has
+level 3-4 mobs if you are not near these levels do not advance, or fate may
+not be so easy on you.  Finally, you have reached the advancement to higher
+levels.  Feel proud, Fate has leaned in your direction.  With high hopes you
+deside to go up the marble stairs and try the challengers ahead. 
+WARNING:the area above has level two and three mobs if you are not near
+these levels do not advance, or fate may not be so easy on you.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 22126
+D4
+~
+~
+0 0 22136
+S
+#22135
+The Safe Haven of the Lake of Fire~
+~
+~
+Finally, some peace!  After all this fighting you have a chance to rest
+and relax in peace.  You can even go to sleep if you want to, and will not
+be harmed in this room.  It is protected by magical forces and no violence
+may take place here.  
+~
+0 1036 0
+Rd     0
+D0
+~
+~
+71 22130 22167
+D2
+~
+~
+0 0 22128
+S
+#22136
+In the Chambers of Time~
+~
+~
+Looking around in this room, you see that it is amazingly clean, and very
+cold.  The walls are even covered with a small sheet of ice.  You think
+since this is above a lake of fire this should not be possible.  The forces
+of time truely do work in strange ways 
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 22137
+D5
+~
+~
+0 0 22134
+S
+#22137
+Walking through the Chambers of Time~
+~
+~
+In this room, you see it is amazingly dark, and the only thing that
+lights this room are two candles that sit on a wizards table.  In between
+these candles, you see huge tome, with strange and ancient writings and
+symbols.  Better leave quickly, before the mage who works here comes back.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22141
+D1
+~
+~
+0 0 22136
+D3
+~
+~
+0 0 22138
+S
+#22138
+Walking through the Chambers of time~
+~
+~
+Looking around in this room, you find many weapons on the wall.  All
+ranging from battle axes and swords, to staffs and crossbows.  Reaching up
+to take these weapons, you receive a shock that blows you across the room! 
+You must be dealing with powerful magic here.  From now on you deside to be
+a little more carefull about stealing.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22140
+D1
+~
+~
+0 0 22137
+D3
+~
+~
+0 0 22139
+S
+#22139
+In the Chambers of Time~
+~
+~
+Looking around in this room, you see that it is amazingly clean, and very
+cold.  The walls are even covered with a small sheet of ice.  You think
+since this is above a lake of fire this should not be possible.  The forces
+of time truely do work in strange ways.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22138
+D5
+~
+~
+0 0 22133
+S
+#22140
+The Study of the Elite~
+~
+~
+Looking all around you, you see book shelves filled with tomes, scrolls,
+and books.  Also you see huge beds, posters depicting the arts of hand to
+hand combat, wands,staves, and other miscilanious weapons scattered about. 
+The mages and warriors yell for you to leave there rooms.  But you stay, and
+challenge them all, for you are the best in combat here.  The chanting you
+have heard ever since you have come here seems to be getting louder, and you
+become even more anxious to find its source.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22143
+D1
+~
+~
+0 0 22141
+D2
+~
+~
+0 0 22138
+S
+#22141
+The Practice Room of Magic~
+~
+~
+In the mages room, you find magical artifacts setting around shimmering
+in the dim light.  In the corner you see blown-up dumbies, singed dumbies,
+and many more dumbies that have been used for practice.  Wishing not to be
+one of these, you deside to get out quickly before you end up in the corner.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22142
+D2
+~
+~
+0 0 22137
+D3
+~
+~
+0 0 22140
+S
+#22142
+The Practice Room of Martial Arts~
+~
+~
+In the Study of the Elite, you find this room, a room filled with
+assassins, warriors and thiefs, you feel right at home.  Looking at the
+stabs in the dumbies backs, the heads cut off some, and ones filled with
+bells for practicing stealing.  You find only the best challengers here.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22146
+D2
+~
+~
+0 0 22141
+D3
+~
+~
+0 0 22143
+S
+#22143
+The Practice Room of Stealth~
+~
+~
+Looking around you see a room filled with absolutely nothing, except a
+few books and posters depicting spells and positions to help you remain
+unseen by the naked eye.  Wandering where everyone else went to, you walk
+out of the room and are struck to the ground.  Jumping back up to see what
+happened, you find nothing.  Then 5 figures appear out of nowhere and laugh
+at your misfortune.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22144
+D1
+~
+~
+0 0 22142
+D2
+~
+~
+0 0 22140
+S
+#22144
+In the Living Quarters of the Elite~
+~
+~
+Here in the living quarters, you find many beds, a couch, and a shelf
+filled with many books of forgotten lore.  Seeing noone is around you take a
+nap on one of the beds.  Suddenly waken from your nap by a blow to the head,
+an angry warrior yells at you in a strange tounge.  This must have been his
+bed.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22146
+D2
+~
+~
+0 0 22143
+D3
+~
+~
+0 0 22145
+S
+#22145
+Leaving the Quarters of the Elite~
+~
+~
+As you exit the chamers of time you feel relived that you are done with
+your training, now it is time to set out on your own and explore the MUD and
+become wise in its ways.  From here you may enter the Portal back to the
+Healer, of seek out the Deity in the Temple of Time and Fate.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22144
+D4
+~
+~
+0 0 22149
+S
+#22146
+In the Living Quarters of the Elite~
+~
+~
+In this section of the living quarters, you find a table in the middle of
+the room, covered in food, and surrounded by chairs.  This must be the
+dinning room, well..  Seeing as how you have killed off everyone here.  You
+think to yourself they have no use for this food, and go try to take a
+little.  But the cold of this room freezes you and your tracks.  This is not
+a tolarable act of the belivers in neutrality.  You must not steal, leave
+the food be.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22147
+D2
+~
+~
+0 0 22142
+D3
+~
+~
+0 0 22144
+S
+#22147
+Leaving the Quarters of the Elite~
+~
+~
+As you exit the chamers of time you feel relived that you are done with
+your training, now it is time to set out on your own and explore the MUD and
+become wise in its ways.  From here you may enter the Portal back to the
+Healer, of seek out the Deity in the Temple of Time and Fate.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 22146
+D4
+~
+~
+0 0 22151
+S
+#22148
+The Hall of Languages~
+~
+~
+Here in the Hall of Languages the teacher comes in and asks you your name
+in a strange language.  After spending large amounts of time learning these
+languages you start to speak very fluently in many tounges.  Type learn for
+a list of commands.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 22114
+S
+#22149
+Floating in the Etherial Mists~
+~
+~
+As you float around carelessly in these mists you feel raw power
+shimmering around you.  Looking far off into the distance you see a bright
+light.  This must be the temple of time and fate.  You feel all affects of
+time slip away from you and only the hand of fate guides you to the temple 
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22150
+D5
+~
+~
+0 0 22145
+S
+#22150
+Floating in the Etherial Mists~
+~
+~
+Still floating around in these mists you see nothing but the dark clouds
+shooting lightning bolts all around you, and the bright light that guides
+you towards the temple of time and fate.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22152
+D1
+~
+~
+0 0 22151
+D3
+~
+~
+0 0 22149
+S
+#22151
+Floating in the Etherial Mists~
+~
+~
+Drifting closer to the temple of time and fate you almost get hit buy one
+of the many electrical bolts that fly by your head.  It is only the sheer
+will power of the Deity himself that prevents you from getting hit and
+haveing a safe passage.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 22150
+D5
+~
+~
+0 0 22147
+S
+#22152
+Floating Closer to the Temple of Time and Fate~
+~
+~
+Now you can see the outter edges of the temple, you see the followers of
+Kaine walking up the polished marble stairs.  This whole temple seems to be
+eminating its own light while surrounded in darkness.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22153
+D2
+~
+~
+0 0 22150
+S
+#22153
+At the Entrance to the Temple~
+~
+~
+Now you are at the polished marble stairs leading up to the temple,
+looking around you are the followers of Time and Fate and the Guardians of
+Time and Fate it self.  You also hear chanting coming from the inside of the
+temple.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 22152
+D4
+~
+~
+0 0 22154
+S
+#22154
+The Stairs Leading into the Temple~
+~
+~
+Looking around, you see the polished green marble stairs leading up to
+the tempel.  All around you are the followers of Time and Fate wearing dark
+black hooded robes, you try to get a look at their faces but the shadows
+from the hoods block your view.  You start to get the strange feeling that
+these people are not even real, however you proceed on your path.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22155
+D5
+~
+~
+0 0 22153
+S
+#22155
+The Entrance to the Temple of Time and Fate~
+~
+~
+Looking around, you see two massive doors at least fifty feet high
+leading into the temple wide open, at one door stands a guardian of fate, at
+the other stands a guardian of time, these are two men you do not want to
+cross.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22156
+D2
+~
+~
+0 0 22154
+S
+#22156
+Inside the Temple~
+~
+~
+Looking around this room, you see that the marble floor under you has
+metal shackles attached to chains on it.  This is where the Deity listens to
+his foes plea for there lifes.  Looking down, under the shackles you see a
+dark abyss of nothingness, a fate worse than death to the enemies.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22157
+D1
+~
+~
+0 0 22164
+D2
+~
+~
+0 0 22155
+D3
+~
+~
+0 0 22159
+S
+#22157
+On the Red Carpet Leading to the Throne~
+~
+~
+As you step foward to the throne, under your feet lies a clean red carpet
+lined with golden thread and tassles on each corner.  This must have cost a
+fortune.  Also the dirt that rubs off on the carpet from your boots seems to
+just fade away.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22158
+D1
+~
+~
+0 0 22163
+D2
+~
+~
+0 0 22156
+D3
+~
+~
+0 0 22160
+S
+#22158
+The Throne Room~
+~
+~
+Here in the throne room, you see that at the end of the red carpet lies
+ivory stairs leading up to the golden throne.  On each side levitates a
+small color shifting orb lighting the whole temple.  Beside the orbs, at the
+bottom of the stairs stand a mage of time and fate hovering off of the
+ground, protecting the temple from intruders.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22162
+D2
+~
+~
+0 0 22157
+D3
+~
+~
+0 0 22161
+S
+#22159
+Wandering around in the Temple~
+~
+~
+Walking around in this temple, you bump into one of the hooded figures
+you meet before you ask him to remove his hood.  The stranged figure nods
+and throws his robe to the floor leaving absolutely nothing.  You see that
+there was really noone under the robe at all.  Or was there.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22160
+D1
+~
+~
+0 0 22156
+S
+#22160
+Before the Pendulum of Fate~
+~
+~
+Before you swings a huge bladed pendulum over a solid stone table. 
+Wandering what it is for, you approach the altar trying to find what the
+purpose of this contraption is.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 22161
+D1
+~
+~
+0 0 22157
+D2
+~
+~
+0 0 22159
+S
+#22161
+At the Pendulum of Time~
+~
+~
+This, the pendulum of time is where the deity of Time and Fate has all of
+his enemies put out of their misery.  The altar is covered in blood and has
+metal shackles at all corners to hold Kaines victims down while they get
+chopped in half.  Above the altar swings a bladed pendulum which gets closer
+to the altar with every swing.  This must be a very painful way of execution
+to see your body cut in half before you die.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 22158
+D2
+~
+~
+0 0 22160
+S
+#22162
+At the Fortune Teller of Fate~
+~
+~
+Here stands the one person who the Deity has granted the sight of fate,
+the ability to predicts what happens in the past, present, and future.  This
+woman needs no crystal ball,tarot cards, or any other means of false
+prediction.  Fate alone shows her what is,was, and will be.  
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 22163
+D3
+~
+~
+0 0 22158
+S
+#22163
+Approaching the Teller of Fates~
+~
+~
+Before you lies the famous fortune teller of fates.  Many come here to
+have her forsee what will happen in there futures, if it be good or bad. 
+But no matter what, you may not avoid your fate.  And only fools will try.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22162
+D2
+~
+~
+0 0 22164
+D3
+~
+~
+0 0 22157
+S
+#22164
+Wandering in the Temple~
+~
+~
+As the chanting continues, you find yourself repeating the chant over and
+over, as you do, your mind slowly slips away from reality and you receive
+visions of the future,past, and present.  The powers of time and fate prove
+to be very powerful.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22163
+D3
+~
+~
+0 0 22156
+S
+#22165
+On Top of the Tower~
+~
+~
+This is where Kaine comes just to get away from it all.  Here on top of
+the tower of time and fate you look out and see almost the whole mud. 
+Looking down below you, you see the clouds and the people running around
+below.  Up here, all your problems and all of your cares just slip away.  
+~
+0 33554436 0
+Rd     0
+S
+#22166
+The Begining of Your Path in Time~
+~
+~
+All around you is the mist of creation, you see nothing but a dense fog
+all around you.  The only way out is up, slowly you float your way up. 
+Above you, chanting and noisy crowds can be heard.  Curious to find its
+source, you begin your journey through the paths of time and fate.  
+~
+0 1032 0
+Rd     0
+D4
+~
+~
+0 0 22103
+S
+#22167
+Falling Down!!!~
+~
+~
+As you enter this room, you see a treasure across from you.  As you walk
+over to pick it up, you hear a cracking sound.  Looking down to see what it
+is, you find the floor is crumbling under your feet and you fall through.  
+~
+0 33554444 0
+Rd     0
+D2
+~
+~
+71 22130 22135
+D5
+~
+~
+0 0 22168
+S
+#22168
+Splash Down~
+~
+~
+After a long drop you have splashed down into a pool.  Across the room is
+a spring that must fuel the wishing well.  Under it are many coins that
+people have thrown into the well.  Also there is an overgrown frog swimming
+at your feet.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 22169
+D4
+~
+~
+0 0 22167
+S
+#22169
+Following the Stream~
+~
+~
+As you follow the stream leading away from the well.  You hear the
+trickling sound of water dripping off of the cavern walls, and strange
+shouts of some animals.  Hoping not to run into one of these animals, you
+look around and are convinced you are alone.  Then out of the ground a hand
+pops up and graps your ankle.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22168
+D3
+~
+~
+0 0 22170
+S
+#22170
+Following the Crooked Stream~
+~
+~
+Taking a curve down the twisting path of the stream, every sound echos
+off of the walls.  Screaching noises fill the room and you are surounded by
+bats!.  They cling to you and bite at your skin, sucking the blood out of
+your veins.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 22169
+D2
+~
+~
+0 0 22171
+S
+#22171
+Nearing the End of the Stream~
+~
+~
+Following the stream south a little more, you find that the dangers grow
+worse with every step.  More monsters attack at every turn, you are being
+tested to see if you have what it takes to make it outside of the school of
+Time and Fate.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22170
+D1
+~
+~
+0 0 22172
+S
+#22172
+Nearing the End of the Stream~
+~
+~
+This is your final test, You have stumbled upon some large eggs, and a
+huge python hisses at you, then coils up to strike and protect its young. 
+Better watch your back before the snake does.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 22173
+D3
+~
+~
+0 0 22171
+S
+#22173
+The End of the Tests~
+~
+~
+If you have made it this far, you are ready to go on your own now. 
+Venture out into the world and explore the mud.  Remember to always watch
+your back and help other people in Time and Fate if they need it.  May fate
+be with you.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 22172
+S
+#0
+
+
+
+#SPECIALS
+M 22101 spec_healer
+M 22113 spec_thief
+M 22129 spec_cast_psionicist
+M 22130 spec_guard
+M 22135 spec_poison
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 22110 0 22101
+M 0 22101 1 22103
+O 0 22136 0 22103
+O 0 22109 0 22105
+O 0 22111 0 22107
+O 0 22112 0 22109
+M 0 22104 1 22110
+G 0 22103 0
+G 0 22102 0
+M 0 22105 1 22111
+G 0 22104 0
+G 0 22105 0
+G 0 22106 0
+M 0 22102 1 22112
+G 0 22107 0
+G 0 22108 0
+M 0 22103 1 22113
+G 0 22101 0
+O 0 22129 0 22114
+M 0 22107 1 22116
+M 0 22108 1 22118
+E 0 22113 0 2
+E 0 22113 0 1
+M 0 22111 2 22120
+M 0 22113 1 22121
+M 0 22112 1 22122
+M 0 22109 1 22123
+E 0 22114 0 20
+E 0 22119 0 14
+M 0 22114 2 22124
+M 0 22110 1 22125
+E 0 22117 0 22
+E 0 22118 0 16
+M 0 22115 1 22126
+E 0 22115 0 5
+M 0 22116 1 22127
+E 0 22120 0 11
+M 0 22117 1 22128
+E 0 22122 0 22
+G 0 22130 0
+M 0 22113 1 22129
+M 0 22118 1 22129
+E 0 22121 0 3
+E 0 22121 0 4
+M 0 22119 1 22130
+G 0 22104 0
+E 0 22124 0 6
+M 0 22120 2 22131
+E 0 22125 0 15
+M 0 22121 2 22132
+M 0 22122 1 22140
+M 0 22122 1 22140
+E 0 22125 0 15
+E 0 22114 0 20
+E 0 22114 0 20
+E 0 22125 0 15
+M 0 22123 1 22141
+E 0 22118 0 16
+M 0 22124 1 22142
+E 0 22134 0 23
+M 0 22125 1 22143
+E 0 22107 0 20
+M 0 22126 1 22144
+O 0 22123 0 22145
+M 0 22127 1 22146
+O 0 22123 0 22147
+M 0 22106 1 22148
+O 0 22126 0 22149
+O 0 22126 0 22150
+O 0 22126 0 22151
+O 0 22126 0 22152
+O 0 22126 0 22153
+M 0 22128 1 22155
+O 0 22126 0 22156
+M 0 22131 1 22157
+O 0 22128 0 22158
+M 0 22130 1 22158
+M 0 22131 1 22159
+O 0 22127 0 22161
+M 0 22129 1 22162
+M 0 22131 1 22164
+M 0 22132 1 22168
+O 0 22131 0 22168
+O 0 22132 0 22168
+O 0 22132 0 22169
+M 0 22133 2 22169
+O 0 22132 0 22170
+M 0 22134 3 22170
+M 0 22134 3 22170
+M 0 22134 3 22170
+O 0 22132 0 22171
+O 0 22132 0 22172
+M 0 22135 1 22172
+O 0 22133 0 22173
+S
+
+
+
+#SHOPS
+22102 0 0 0 0 0 100 80 0 24
+22103 0 0 0 0 0 100 80 0 24
+22104 0 0 0 0 0 100 80 0 24
+22105 0 0 0 0 0 100 80 0 24
+0
+
+
+
+#$

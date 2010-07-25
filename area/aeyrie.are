@@ -1,0 +1,1894 @@
+#AREADATA
+Name        { 10-20} Harpy Aeyrie~
+Builders    Kitti~
+VNUMs       3800 3849
+Security    100
+Recall      1
+Flags       0
+Version     107
+Creator     Kitti~
+Llevel      0
+Ulevel      0
+Music       u7_theme.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#3801
+gnome prisoner~
+a gnome prisoner~
+A gnome prisoner is dangling from some shackles on the wall.
+~
+Gnarled hands grasp out towards the sound of your entrance feebly as the
+little gnome prisoner tries to get your attention.  Her eyes have been gouge
+out of their sockets and a line of beetles have infested where they once
+were.  
+~
+67 1 0 0 0 0 S
+10 1 20 21 0 750d0+0 0d0+0
+0 4 0
+0 0 2
+0 0 0
+#3802
+elven prisoner~
+an elven prisoner~
+An elven prisoner is lying near unconsciousness.
+~
+The once beautiful face of this elven man is now twisted into a mask of
+fear, pain and hopelessness.  His thin arms are covered in whip marks, blood
+and tiny insects that have decided to feast upon him.  He doesn't seem to
+notice your presence at all.  
+~
+67 2097152 0 0 0 0 S
+10 1 23 23 0 750d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#3803
+halfdwarf prisoner~
+a halfdwarf prisoner~
+A halfdwarf prisoner is struggling against his bonds.
+~
+The halfdwarf seems to be a relatively new prisoner to this nasty place
+as he still has energy, spunk and a lot of life left.  He spits at your feet
+when you don't immediately help him free and then promptly lets loose with
+an impressive line of dwarven cursing.  
+~
+67 0 0 0 0 0 S
+10 1 19 20 0 750d0+0 0d0+0
+0 2 0
+0 0 1
+0 0 0
+#3804
+harpy~
+a decrepit harpy~
+An ancient harpy is spitting curses and fouling her nest.
+~
+This nasty old bird-woman is covered completely in her own filth and dirt
+from who-knows-where.  Her voice is like steel nails on a chalkboard and the
+utter filth that spews from her lips as she swears in your direction is
+enough to make any sailor blush.  
+~
+67 0 0 0 0 -1000 S
+15 1 30 31 0 1500d0+0 0d0+0
+14 0 0
+0 0 2
+0 0 0
+#3805
+mefat orc~
+Mefat~
+An overweight orc is cooking something vile over the fire.
+~
+Too much eating of one's own cooking tends to do to you what has happened
+to this orc.  That and all the liquor that appears to be going into the pot
+along with the bits of...  Is that an eyeball?!  Come to think of it, you
+think you see a humanoid leg in there as well.  No wonder it stinks so badly
+over here.  
+~
+67 0 0 0 0 -750 S
+12 1 27 29 0 915d0+0 0d0+0
+8 18 0
+0 0 1
+0 0 0
+#3806
+queen harpy~
+the Harpy Queen~
+The Queen of the Harpies is about to tear your throat out!
+~
+The Harpy Queen appears to be the largest, strongest and one of the
+youngest of the harpies you've seen so far.  It appears that lineage has
+nothing to do with who rules the harpies at all; rather, whomever can beat
+the others and keep the crown runs it all.  However, she doesn't seem
+interested in your musings and looks prepared to add you to her meal list.  
+~
+99 524288 0 0 0 -1000 S
+20 1 40 40 0 2750d0+0 0d0+0
+50 0 0
+0 0 2
+0 0 0
+#3807
+harpy~
+a harpy~
+A harpy screeches and launches herself towards you!
+~
+You look at this filthy creature and wonder if harpies were created like
+this or are they the mating of a human and a roc?  This being appears to be
+some sort of enormous bird with a woman's head (although that is subjective
+to being a hag's head).  She is completely covered in filth; her own and
+whatever else she's managed to find.  Her feathers appear to have a razor's
+edge and her taloned bird feet look like they could either punch you really
+hard with a fly-by or claw your face off!  
+~
+65 524288 0 0 0 -1000 S
+18 1 35 35 0 2450d0+0 0d0+0
+40 0 0
+0 0 2
+0 0 0
+#3808
+harpy~
+a harpy~
+A filthy harpy swoops viciously towards you.
+~
+None of the harpies within the volcanic walls of their aeyrie have
+appeared weak, but this one seems to be at least along the bottom rung of
+the "totem pole" as her musculature isn't as impressive.  Perhaps it's her
+age, but this filthy bird with the head of an ugly woman still seems to be
+quite vile in appearance.  At least her odor is quite strong and
+over-powering!  
+~
+65 524288 0 0 0 -1000 S
+17 1 30 30 0 1800d0+0 0d0+0
+28 0 0
+0 0 2
+0 0 0
+#3809
+krushr ogre executioner~
+Krushr~
+An ogre executioner is waiting for the next prisoner to be butchered.
+~
+Krushr looks to be a large, grey jovial fellow.  His job seems to please
+him immensely for every time he glances at his axe and the bladed pole, his
+lips pull back in a huge grin showing his yellowed teeth.  That grin gets
+wider when he notices you skulking about.  
+~
+67 0 0 0 0 -875 S
+16 1 30 30 0 1675d0+0 0d0+0
+30 7 0
+0 0 1
+0 0 0
+#3811
+numskul ogre~
+Numskul~
+A mean-looking ogre holding a whip is grinning in your direction.
+~
+Beady yellow eyes watch you from behind the palid gray-green face of this
+brute of an ogre.  The hair on his head is patchy at best and kind of
+appears as if it were made of thin black wire.  He wears naught but a
+loincloth and a chest belt and wields a very nasty-looking whip in his
+hands.  His small eyes gleam with wicked glee as he notes your presence.  
+~
+67 0 0 0 0 -500 S
+13 1 10 25 0 1000d0+0 0d0+0
+4 7 0
+0 0 1
+0 0 0
+#3813
+gruntr orc~
+Gruntr~
+An orc is preparing the rack for its next victim.
+~
+You think this orc is female, but it's hard to tell with the hard leather
+jerkin she's wearing.  But whether she is or not makes no difference in her
+ability for cruelty, for you notice the bloody tongs and ropes she wears at
+her hips.  She seems to take pleasure in the torment of her victims, or at
+least that gleam in her eye as she notices you says so...  
+~
+67 0 0 0 0 -750 S
+12 1 25 30 0 900d0+0 0d0+0
+10 18 0
+0 0 2
+0 0 0
+#3817
+slime blood intestine~
+a blood slime~
+Various bits of intestine and blood seems to be moving about.
+~
+When you take a closer look at the movement upon the floor, you notice
+that it actually seems to be some sort of slime that is absorbing the blood
+and guts that are thrown into the pit.  
+~
+67 0 0 0 0 -750 S
+11 1 23 23 0 825d0+0 0d0+0
+2 0 0
+0 0 0
+131072 0 0
+#0
+
+
+
+#OBJECTS
+#3801
+whip-knife whipknife~
+a whip-knife~
+A nasty whip with a sharp knife on the end is coiled here.~
+~
+5 0 0 0 0 8193 14
+100 100
+0~ 0~ 0~ 4~
+3 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+#3802
+cudgel~
+a cudgel~
+A large cudgel is leaving a dent in the ground.~
+~
+5 131072 8 0 0 8193 13
+100 100
+0~ 0~ 0~ 7~
+6 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -1
+A
+19 7
+#3803
+bowl hobbit stew~
+a bowl of hobbit stew~
+A bowl of what appears to be hobbit stew is steaming here.~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3804
+harpy pinion~
+a harpy pinion~
+A long, filthy harpy pinion is lying in some muck.~
+~
+13 0 0 0 0 1 10
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+5 0
+fly~
+1 1
+0 0 0
+#3805
+bone throne~
+throne of bone~
+A crude throne of bone rather than a nest dominates the room.~
+~
+12 268435456 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+9999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+bone~
+This large throne looks to have been shaped especially for harpy hind-end
+and is made of bones from all races that exist as well as cattle, horses and
+other beasts.  Some of the bones still appear to have flesh decaying on
+them.  
+~
+E
+throne~
+This large throne looks to have been shaped especially for harpy hind-end
+and is made of bones from all races that exist as well as cattle, horses and
+other beasts.  Some of the bones still appear to have flesh decaying on
+them.
+~
+#3806
+crown thorns~
+a crown of thorns~
+A crown of thorns, the crown of the harpies, has been dropped here.~
+~
+9 4260352 0 0 0 17 20
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+30 1
+#3807
+axe double bladed~
+a double bladed axe~
+A double bladed axe has been left behind here.~
+~
+5 1277952 5664 0 0 8193 15
+100 100
+0~ 0~ 0~ 13~
+7 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -1
+A
+19 9
+A
+5 1
+A
+2 -1
+#3808
+jewelry box~
+jewelry box~
+A jewelry box lies hidden behind the throne of bone.~
+~
+15 268435456 256 0 0 0 1
+100 100
+2~ 13~ 3809~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3809
+iron key~
+an iron key~
+An iron key lies long forgotten in the dust.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3810
+cord satin red~
+a red satin cord~
+A red satin cord is lying in a small coil.~
+~
+9 64 0 0 0 2049 15
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+34 1
+A
+18 4
+A
+19 3
+#3811
+post whipping~
+a whipping post~
+A whipping post complete with shackles and chains is here.~
+~
+13 536870912 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3812
+slave armbands~
+rusted slave armbands~
+A rusting pair of armbands worn by slaves has been dropped here.~
+~
+9 4096 0 0 0 257 10
+100 100
+0~ 0~ 0~ 0~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 -1
+#3813
+gauntlets elf-hide hide~
+elf-hide gauntlets~
+A pair of gauntlets made from elven skin are lying here.~
+~
+9 512 0 0 0 129 10
+100 100
+0~ 0~ 0~ 0~
+2 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+#3814
+nest~
+a foul nest~
+A foul nest of bone, feather and guano makes up most of the aeyrie.~
+~
+12 536870912 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+9999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+nest~
+This nasty-looking nest is composed of bones, trash and feathers and is
+kept all together with a very generous helping of thick harpy guano which
+seems to work as both a cement and a cushion.  The nest also seems to smell
+as bad as it looks 
+~
+#0
+
+
+
+#ROOMDATA
+#3800
+A Harpy Aeyrie~
+~
+~
+Mixed blood and harpy guano coat the walls of this aeyrie and make for an
+overpowering stench that almost causes the gag reflex.  Gnawed on bones and
+trash have been gathered together to create a nest for harpy and is being
+held together with more of the harpy dung.  Searching the actual nest might
+turn up something hidden within it, but that would mean getting the dung in
+your hands and that stench doesn't seem to want to come off whatever it
+touches.  The screeching of harpies is quit loud to the east which appears
+to also be the only exit from this place.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 3846
+S
+#3801
+A Crack in the Mountain~
+~
+~
+The mountains rise high above you making for cliffs that are too steep to
+climb and too narrow for all but an emaciated pixie to be able to fly
+through.  The only apparent exits out is through a crack in the walls to the
+west from which an awful stench emits and a narrow path to the east.  Either
+choice seems preferable to this claustrophobic nightmare that you find
+yourself within at the moment.  
+~
+0 4 5
+Rd     0
+D1
+~
+~
+0 0 17439
+D3
+~
+~
+0 0 3804
+S
+#3802
+A Dank Cave~
+~
+~
+Thick tendrils of moss dangle from the ceiling of this sulphuric cave and
+manage to reach the floor, blocking most of your view of this foul place. 
+In between them you spot manacles and chains connected to the walls along
+with the cliche skeletons of long-forgotten prisoners.  Small critters that
+you guess to be beetles of some sort crawl along the mossy tendrils and
+ceiling, looking for another free meal.  
+~
+0 13 0
+Rd     0
+D2
+~
+~
+0 0 3803
+S
+#3803
+Bottom of the Bone Pile~
+~
+~
+A large pile of bones takes up almost the entire northeastern section of
+this extinct volcano.  Within you can see that no one particular race has
+contributed their bits as you spot the tiny bones of pixies, the large bones
+of giants, the slender bones of elves and drow, and sets of gnawed on bones
+from every other race you can think of.  The pile continues high above your
+head and almost reaches one of the many ledges above you.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 3802
+D2
+~
+~
+0 0 3804
+D3
+~
+~
+0 0 3807
+D4
+~
+~
+0 0 3818
+S
+#3804
+The Harpy Grounds~
+~
+~
+Waves of heat emanate back and fourth from the stone walls causing there
+to be a slight breeze which brings to you the scent of harpy dung and
+rotting corpses.  Gravel, bones, blood and guano make up the ground in here
+and, you would guess, makes sneaking about more difficult than usual.  The
+walls tower high above you from which you can see the outline of harpies
+flying in and out of.  A crack in the walls to the east appears to be some
+sort of escape from here.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 3803
+D1
+~
+~
+0 0 3801
+D2
+~
+~
+0 0 3805
+D3
+~
+~
+0 0 3808
+D4
+~
+~
+0 0 3819
+S
+#3805
+A Cook Fire~
+~
+~
+Thick, greasy smoke rises from this large, badly made cook fire and
+nearly chokes you as it fills your lungs.  A metal triad sits above with a
+large black cauldron dangling from it above the fire.  A noxious odor comes
+from within and you can't decide whether they're washing dirty laundry or
+cooking some vile supper.  Several large tree trunks lie around the fire for
+the humanoid inhabitants and guards to sit around as they eat, get drunk and
+sleep.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 3804
+D3
+~
+~
+0 0 3809
+D4
+~
+~
+0 0 3820
+S
+#3806
+A Stone Stairway~
+~
+~
+Broken bottles, bone chips and other rubbish litter the rugged stone
+steps that lead upwards into the walls of the cauldera.  Thick spider webs
+cling to whatever surface is available but none block the actual pathway up.
+A foul odor is coming from above along with the screeches of something
+female(?) and unhappy.  An exit to the south leads out into the center of
+the extinct volcano.  
+~
+0 12 0
+Rd     0
+D2
+~
+~
+0 0 3807
+D4
+~
+~
+0 0 3822
+S
+#3807
+The Harpy Grounds~
+~
+~
+Bone dry gravel and volcanic rock make up the ground at your feet,
+crackling with each step that's taken upon them.  Shadows of low-flying
+harpies occasionally block out light from above and you instinctively duck
+and cover your head from whatever they may drop upon you.  The cauldera
+itself isn't overly large, but the walls extend high above you and end in a
+series of caves somewhere at the top.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 3806
+D1
+~
+~
+0 0 3803
+D2
+~
+~
+0 0 3808
+D3
+~
+~
+0 0 3811
+D4
+~
+~
+0 0 3823
+S
+#3808
+A Platform~
+~
+~
+A large wooden platform makes up the center of the long extinct volcano
+as if it were some kind of stage.  A large wooden pole rises from one side
+of the platform and has long, sharp metal spikes and knives protruding from
+it.  Chains and shackles are attached to the center of the pole and allow
+whomever is attached to it to be dangled over a hole in the center of the
+platform.  Putting all the pieces together, you come to the conclusion that
+this is some sort of disembowelment device.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 3807
+D1
+~
+~
+0 0 3804
+D2
+~
+~
+0 0 3809
+D3
+~
+~
+0 0 3812
+D4
+~
+~
+0 0 3824
+D5
+~
+~
+0 0 3817
+S
+#3809
+The Harpy Grounds~
+~
+~
+A thick layer of gravel and bones make up the ground of this long extinct
+volcano.  Sneaking around in here would be next to impossible except for the
+pasty white substance that holds it all together.  Upon closer examination,
+you realise that the inhabitants of this place care not where they leave
+their guano.  The volcanic walls rise high above you and end in dark caves
+towards the top.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 3808
+D1
+~
+~
+0 0 3805
+D2
+~
+~
+0 0 3810
+D3
+~
+~
+0 0 3813
+D4
+~
+~
+0 0 3825
+S
+#3810
+A Stone Stairway~
+~
+~
+Rough stone steps leading upwards have been hewn in the volcanic rock
+walls of this cave.  Debris, trash and other filth make the footing
+treacherous and the foul odor that wafts from above gives most people second
+thoughts about traveling in that direction.  The only other exit appears to
+be to the north into the old volcano itself.  
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 3809
+D4
+~
+~
+0 0 3826
+S
+#3811
+The Whipping Post~
+~
+~
+A lone, thick post with a several sets of manacles and chains dangling
+from it dominates this corner of the cauldera.  Speckles of blood mar the
+walls and post leaving no doubts in your mind of this being a place of
+torment and possibly even "meat tenderization."  The gravel at your feet
+hides bits of bone chips and clumps of long dried blood that trail out from
+the cave to the west.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+0 0 3807
+D2
+~
+~
+0 0 3812
+D3
+~
+~
+0 0 3815
+D4
+~
+~
+0 0 3828
+S
+#3812
+The Harpy Grounds~
+~
+~
+A falling rock from high above you echos hollowly in this extinct volcano
+as it bounces from outcrop to outcrop and finally hits the ground at your
+feet.  Upon closer examination, you notice that it is in actuality a bit of
+bone that someone has tossed from upon high.  Peering up you can make out
+the outlines of harpies flying from cave to cave.  You also notice one see
+you and grin.  Perhaps it would be a good idea to leave before she "bombs"
+you?  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 3811
+D1
+~
+~
+0 0 3808
+D2
+~
+~
+0 0 3813
+D3
+~
+~
+0 0 3816
+D4
+~
+~
+0 0 3829
+S
+#3813
+The Rack~
+~
+~
+A large wooden rack made of young felled scrub trees and barbed metal
+ropes and wires sits at the southwestern side of the extinct volcano.  Bits
+of rotting flesh and dried blood lie within any surface of the rack that
+could possibly have once had a victim upon.  Cruel looking barbed manacles
+lie upon piles of chains at the foot where more than one victim can watch
+while their friends are gutted before them.  
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 3812
+D1
+~
+~
+0 0 3809
+D2
+~
+~
+0 0 3814
+D4
+~
+~
+0 0 3830
+S
+#3814
+A Dank Cave~
+~
+~
+Long strings of moss and lichen dangle from the ceilings of this damp,
+dank cave.  Tiny lines of insects run across the sandy floor and into the
+decaying skeletal bodies of long-forgotten prisoners.  Thick manacles hang
+from the walls and lie in heavy heaps on the ground.  You can barely make
+out an exit from this place to the north.  
+~
+0 13 0
+Rd     0
+D0
+~
+~
+0 0 3813
+S
+#3815
+A Dank Cave~
+~
+~
+The smell of this dank cave is far different from the other smells of the
+ancient volcano, but it is no better.  Damp sulphur, moss and infected flesh
+mingle to make for a very nasty scent.  A trail of insects is crawling down
+the wall onto one set of the many manacles and chains that are attached to
+it.  They completely cover an old skeleton and they infest a bloody set of
+recently abandoned shackles.  
+~
+0 13 0
+Rd     0
+D1
+~
+~
+0 0 3811
+S
+#3816
+A Stone Stairway~
+~
+~
+A warm breeze from above brings with it the odiferous stench of trash,
+dung and filth.  Fruit rinds, half eaten body parts and rock litter the
+jagged stone steps that lead upwards into the offending smell.  To the east
+the stench doesn't appear to be as bad, but the body hanging in the center
+of the cauldera doesn't appear too promising.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 3812
+D4
+~
+~
+0 0 3831
+S
+#3817
+The Refuse Pit~
+~
+~
+You're not sure whether letting your feet touch the bottom of this pit is
+a good thing or a bad thing.  Innards such as intestines, spleens and livers
+rot on the bottom and make footing slippery at best.  You duck just in time
+for another bit of organ to barely miss your head as it is tossed into the
+pit.  You go to take a closer look and notice that the floor itself appears
+to be moving.  
+~
+0 4 2
+Rd     0
+D4
+~
+~
+0 0 3808
+S
+#3818
+Top of the Bone Pile~
+~
+~
+Thousands upon thousands of bones have made their way into this tower of
+a bone pile where the harpies, ogres and orcs who live here have tossed them
+when done gnawing upon them.  The footing looks treacherous and several
+bones poke out in dangerously sharp points.  You get a good view of the
+cauldera from here but the sight is just as depressing as it is from below
+and far above.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 3819
+D3
+~
+~
+0 0 3823
+D4
+~
+~
+0 0 3834
+D5
+~
+~
+0 0 3803
+S
+#3819
+In the Air~
+~
+~
+You find yourself floating about fifty feet from the bottom of the
+extinct volcano and find that the air circluation, altho better than what it
+looks to be below, makes for things smelling really bad.  Swooping harpies
+screech insults at you for entering their domain and look as if they're
+ticked enough to attack.  Then again, they would probably attack even in the
+best of moods.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3818
+D2
+~
+~
+0 0 3820
+D3
+~
+~
+0 0 3824
+D4
+~
+~
+0 0 3835
+D5
+~
+~
+0 0 3804
+S
+#3820
+Above the Firepit~
+~
+~
+You find it hard to see through the brown greasy smoke that emits from
+the fire and stew that is cooking below.  You think you can spot some kind
+of cave opening to the south, or is it to the east?  And you certainly can't
+see much of the ground below, much less that harpy who seems to have noticed
+you and is heading your way!  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3819
+D2
+~
+~
+0 0 3821
+D3
+~
+~
+0 0 3825
+D4
+~
+~
+0 0 3836
+D5
+~
+~
+0 0 3805
+S
+#3821
+A Harpy Aeyrie~
+~
+~
+A thick white paste thoroughly coats the walls and floor of this nasty
+little nest.  Bits of bones, feathers and other rubbage stick out at odd
+angles and seem to be larger in one corner of the room where you guess the
+nest is.  Bits of razor sharp harpy down floats through the air as if
+someone was recently in here making quite the feathery mess.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3820
+D3
+~
+~
+0 0 3826
+S
+#3822
+A Foul Cave~
+~
+~
+Dusty cobwebs, rotting cabbage and bones litter this passageway and make
+it almost impossible to get around.  A stone stairwell has been cut into the
+rock for the ogre and orc servants to be able to traverse into the caves of
+the harpies too old to fly and get their own meals.  A horrid stench comes
+from the west and a cave mouth leads out to the south.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 3823
+D3
+~
+~
+0 0 3827
+D5
+~
+~
+0 0 3806
+S
+#3823
+In the Air~
+~
+~
+The volcanic walls of this harpy home seem to have bits of some thick,
+pasty white stuff stuck to it as if someone or something hurled it there in
+a bad choice of decoration.  The odor that comes from it identifies it as
+dung, probably of harpy origin.  Some of the harpies you see flying about
+appear to be hurling the stuff in your direction and at eachother.  Higher
+above you can see more caves than the ones close by.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3822
+D1
+~
+~
+0 0 3818
+D2
+~
+~
+0 0 3824
+D3
+~
+~
+0 0 3828
+D4
+~
+~
+0 0 3839
+D5
+~
+~
+0 0 3807
+S
+#3824
+Above the Platform~
+~
+~
+You hover but inches above the large spiked pole that protrudes from the
+wooden platform far below you.  From here you can see down into the circle
+cut into the center and realise that it really wasn't worth any effort as
+all you can see is a pit full of body bits.  To the northeast of you is the
+top of a large bone pile and south of that rises thick greasy smoke from a
+fire.  To the northwest and south comes cries of pain from tormented
+prisoners.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3823
+D1
+~
+~
+0 0 3819
+D2
+~
+~
+0 0 3825
+D3
+~
+~
+0 0 3829
+D4
+~
+~
+0 0 3840
+D5
+~
+~
+0 0 3808
+S
+#3825
+In the Air~
+~
+~
+Harpies dart all about you, swooping dangerously close to your position
+and then climb higher to do it all again.  You find yourself having to dodge
+guano bombs and other nasty flung projectiles which make the ground seem not
+much safer than the air itself.  You coud fly higher to try to avoid it all,
+or land and hide under something or you could try dodging into the cave to
+the south.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3824
+D1
+~
+~
+0 0 3820
+D2
+~
+~
+0 0 3826
+D3
+~
+~
+0 0 3830
+D4
+~
+~
+0 0 3841
+D5
+~
+~
+0 0 3809
+S
+#3826
+A Foul Cave~
+~
+~
+Passage through this smell cave becomes hard once you look around and
+notice the rubble and broken bones that block most directions.  Everywhere
+else lies rotting flesh bits and the wall to the west is coated with a
+thick, smelly white paste as if someone from the east had thrown it there. 
+You think you can make your way down the rough stone steps down or you can
+leap out of the cave mouth to the north.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3825
+D1
+~
+~
+0 0 3821
+D5
+~
+~
+0 0 3810
+S
+#3827
+A Harpy Aeyrie~
+~
+~
+The overpower stench of harpy dung almost is enough to drive you back out
+of this nasty cave.  The thick, pastey white guano coats everything in the
+room, but seems most concentrated around the nest of bone and feathers in
+the back of the cave.  Razor thin down floats about and make sight almost
+impossible in here.  If one wasn't careful, they might fall out of the
+aeyrie into the rest of the cauldera to the south.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3822
+D2
+~
+~
+0 0 3828
+S
+#3828
+Above the Whipping Post~
+~
+~
+The sounds of a whip cracking echoes back and forth off of the igneous
+rock walls of this long-dead volcano.  A thick wooden post down below
+appears to be where prisoners are taken for punishment and...  Fun? 
+Spackles of blood from the game down below appear to have made their way
+even up here and the thought of how hard the whip would have had to hit to
+cause that brings a shiver to your spine.  You can spy to the far southeast
+greasy smoke rising from some kind of fire and to the east is a large bone
+pile.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3827
+D1
+~
+~
+0 0 3823
+D2
+~
+~
+0 0 3829
+D4
+~
+~
+0 0 3844
+D5
+~
+~
+0 0 3811
+S
+#3829
+In the Air~
+~
+~
+Hovering in the air, you take in your surroundings and notice that you're
+in the perfect location to watch the proceedings going on at the whipping
+post to the north and below, the rack to the south and below and the
+platform to the east and below.  It seems several of the harpy inhabitants
+like this view as well for they seem to be converging upon your location.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3828
+D1
+~
+~
+0 0 3824
+D2
+~
+~
+0 0 3830
+D3
+~
+~
+0 0 3831
+D4
+~
+~
+0 0 3845
+D5
+~
+~
+0 0 3812
+S
+#3830
+Above the Rack~
+~
+~
+From here you get an excellent view of the proceedings that go on with
+the rack down below you.  From the trails of blood, it seems prisoners are
+dragged from the post to the north to the rack below.  Then the orc in
+charge seems to do something painful to them as you can see from the pools
+of blood.  They are then dragged to the platform to the northeast and from
+there you can tell nothing else.  You'll have to get a closer look.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3829
+D1
+~
+~
+0 0 3825
+D3
+~
+~
+0 0 3832
+D4
+~
+~
+0 0 3846
+D5
+~
+~
+0 0 3813
+S
+#3831
+A Foul Cave~
+~
+~
+Rotten garbage litters the floor of this large cave and manages to tumble
+down the carved stone stairs that leads to the bottom of the old volcano. 
+Thick cobwebs, bones and other debris almost block any passage to the south
+from which you can see feathers drifting.  You can also leap off the edge of
+the cave mouth to the east for a quicker way out.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3829
+D2
+~
+~
+0 0 3832
+D5
+~
+~
+0 0 3816
+S
+#3832
+A Harpy Aeyrie~
+~
+~
+The air is choked with filthty harpy feathers and the stench of the thick
+white guano that coats the walls of this cave.  Towards the back is a nest
+made of bone, body parts and feathers all kept together with another thick
+coat of dung.  You wonder to yourself how anything could stand to live in
+such a place.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3831
+D1
+~
+~
+0 0 3830
+S
+#3833
+A Harpy Aeyrie~
+~
+~
+Filth coats this entire cave that serves as an aeyrie to one of the bird
+women who infests this ancient volcano.  Rubbish and bones with the fleshy
+bits still rotting upon them has been gathered into a large pile near the
+center of the room and held together with thick, pasty harpy dung to serve
+as a nest for the foul creature.  The only escape seems to be to the south. 
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 3834
+S
+#3834
+Above the Bone Pile~
+~
+~
+Floating above the bone pile and looking down, you notice that were you
+to fall from this height, it might be more dangerous landing upon the spiked
+bone protrusions rather than the gravel of the rocky ground even further
+below.  With that in mind, a harpy and her sister appear to have decided
+that trying to cause that very occurance and are swooping in your direction
+flinging insults and dung.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3833
+D2
+~
+~
+0 0 3835
+D3
+~
+~
+0 0 3839
+D5
+~
+~
+0 0 3818
+S
+#3835
+High in the Air~
+~
+~
+You find yourself floating about a hundred feet off of the ground in the
+air with a myriad of foul-mouthed, ticked-off harpies and wonder again how
+you got yourself in this situation.  The walls offer no protection as
+they're completely coated in thrown guano making their sides slippery and
+going up is not an option as several harpies gather to keep you in the
+cauldera.  You might be able to hide from their wrath in the cloud of greasy
+smoke to the east, but then again, maybe it'll just keep you from seeing
+them as they tear you apart.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3834
+D2
+~
+~
+0 0 3836
+D3
+~
+~
+0 0 3840
+D5
+~
+~
+0 0 3819
+S
+#3836
+High Above the Firepit~
+~
+~
+Hot air from the fire far down below you gives you a little more lift and
+makes flying and floating about easier, but the thick greasy smoke that
+emits from the fire and whatever is in the large cauldron make seeing next
+to impossible.  Harpies and caves lie all around you, and going into the
+wrong one and the wrong time could prove to be a fatal error.  Perhaps the
+only safe exit direction is down...  But are you sure you know which way
+that is?  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3835
+D2
+~
+~
+0 0 3837
+D3
+~
+~
+0 0 3841
+D5
+~
+~
+0 0 3820
+S
+#3837
+A Harpy Aeyrie~
+~
+~
+Mixed blood and harpy guano coat the walls of this aeyrie and make for an
+overpowering stench that almost causes the gag reflex.  Gnawed on bones and
+trash have been gathered together to create a nest for harpy and is being
+held together with more of the harpy dung.  Searching the actual nest might
+turn up something hidden within it, but that would mean getting the dung in
+your hands and that stench doesn't seem to want to come off whatever it
+touches.  Thick, greasy brown smoke blows into the aeyrie from the north
+making it hard to see as well.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3836
+S
+#3838
+A Harpy Aeyrie~
+~
+~
+A thick cloud of razor sharp feathers floats in the air as if someone was
+recently making a large fuss.  Bits of the feather brush past you, leaving
+tiny nicks and cuts that, in themselves, aren't dangerous but when you
+notice the filth and dung coating them, disease and poison becomes a
+concern.  Through the cloud of feathers you can see a nest of some sort in
+the center and escape from this place to the south.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 3839
+S
+#3839
+High in the Air~
+~
+~
+You duck just in time for nasty smelling projectile to barely miss your
+head and splat wetly on the volcanic wall next to you.  Looking about, you
+notice that harpies fly all about you, screeching obscenities with your name
+in them (wait, how did they know your name?) and hurling balls of entrails
+and dung along with it.  Flying any higher to escape their heckling is
+impossible as they get in the way to block you.  You could try to dart into
+the cave to the north of you or keep flying in the air and dodge their
+attacks.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3838
+D1
+~
+~
+0 0 3834
+D2
+~
+~
+0 0 3840
+D3
+~
+~
+0 0 3844
+D5
+~
+~
+0 0 3823
+S
+#3840
+High Above the Platform~
+~
+~
+Here you find yourself in the very center of the volcano and harpy
+aeyries and discover you have a perfect view of almost everything that is
+happening within the igneous walls.  Neary one hundred feet below you is a
+spiked pole upon which a body is being dismembered and some of the bits
+thrown into the pit just beneath it.  A large pile of discarded bone towers
+to the northeast, but doesn't quite reach this height and to the southeast
+is a thick column of greasy smoke.  Caves line the walls all about you from
+which you can see harpies launching themselves as you become the center of
+attention.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3839
+D1
+~
+~
+0 0 3835
+D2
+~
+~
+0 0 3841
+D3
+~
+~
+0 0 3845
+D5
+~
+~
+0 0 3824
+S
+#3841
+High in the Air~
+~
+~
+Volcanic walls covered in harpy dung and intestinal blood and juices rise
+high above you on the southern lip of this long-dead volcano and you can
+tell which side it last erupted upon.  The northern end of the cauldera is
+still fairly tall but you can see over the lip to the rest of the world
+outside.  Until, that is, a swarm of harpies blocks your vision and swoops
+in your direction with a wicked gleam in their eyes.  
+~
+0 8 9
+Rd     0
+D0
+~
+~
+0 0 3840
+D1
+~
+~
+0 0 3836
+D2
+~
+~
+0 0 3842
+D3
+~
+~
+0 0 3846
+D5
+~
+~
+0 0 3825
+S
+#3842
+A Harpy Aeyrie~
+~
+~
+A thick cloud of razor sharp feathers floats in the air as if someone was
+recently making a large fuss.  Bits of the feather brush past you, leaving
+tiny nicks and cuts that, in themselves, aren't dangerous but when you
+notice the filth and dung coating them, disease and poison becomes a
+concern.  Through the cloud of feathers you can see a nest of some sort in
+the center and escape from this place to the north.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3841
+S
+#3843
+A Harpy Aeyrie~
+~
+~
+Mixed blood and harpy guano coat the walls of this aeyrie and make for an
+overpowering stench that almost causes the gag reflex.  Gnawed on bones and
+trash have been gathered together to create a nest for harpy and is being
+held together with more of the harpy dung.  Searching the actual nest might
+turn up something hidden within it, but that would mean getting the dung in
+your hands and that stench doesn't seem to want to come off whatever it
+touches.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 3844
+S
+#3844
+High Above the Whipping Post~
+~
+~
+A hot wind manages to find its way over the rim of the volcano a bit of a
+way above you, but doesn't seem to alleviate the nasty smell that saturates
+the air.  Unwashed bodies and feathers that have been coated in their own
+filth seems to be an odor that's not easily gotten rid of.  All about you
+angry, screeching harpies dart just out of your reach whilst some choose to
+take the initiative and attack you now!  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3843
+D1
+~
+~
+0 0 3839
+D2
+~
+~
+0 0 3845
+D3
+~
+~
+0 0 3848
+D5
+~
+~
+0 0 3828
+S
+#3845
+High in the Air~
+~
+~
+The walls of the long-dead volcano stretch only about twenty feet above
+you and caves serving as aeyrie line the walls up here.  The ground itself
+is nearly a hundred feet below making even the ogres look like dwarves.  You
+get a good feel of the actual size of this place and realise that altho it
+doesn't seem that large, the caves may hide more space than the eye sees. 
+Going up any further looks to be impossible as harpies insist upon keeping
+you within their domain for their own sport.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3844
+D1
+~
+~
+0 0 3840
+D2
+~
+~
+0 0 3846
+D3
+~
+~
+0 0 3849
+D5
+~
+~
+0 0 3829
+S
+#3846
+High Above the Rack~
+~
+~
+You float a hundred feet or so above the rack upon which you see someone
+currently being tortured.  The view isn't so good from here and the harpies
+that insist upon watching as well constantly obstruct your view.  That is,
+until they notice your presence and decide that tearing you apart would be
+much more entertaining than the disembowelment of a prisoner.  
+~
+0 33554432 9
+Rd     0
+D0
+~
+~
+0 0 3845
+D1
+~
+~
+0 0 3841
+D2
+~
+~
+0 0 3847
+D3
+~
+~
+0 0 3800
+D5
+~
+~
+0 0 3830
+S
+#3847
+A Harpy Aeyrie~
+~
+~
+Filth coats this entire cave that serves as an aeyrie to one of the bird
+women who infests this ancient volcano.  Rubbish and bones with the fleshy
+bits still rotting upon them has been gathered into a large pile near the
+center of the room and held together with thick, pasty harpy dung to serve
+as a nest for the foul creature.  You think it might be a good idea to
+simply escape from the foul cave and into the air to the north.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3846
+S
+#3848
+A Harpy Aeyrie~
+~
+~
+Filth coats this entire cave that serves as an aeyrie to one of the bird
+women who infests this ancient volcano.  Rubbish and bones with the fleshy
+bits still rotting upon them has been gathered into a large pile near the
+center of the room and held together with thick, pasty harpy dung to serve
+as a nest for the foul creature.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3844
+S
+#3849
+Lair of the Harpy Queen~
+~
+~
+This particular aeyrie seems to be the largest, and by far the most vile
+of the other caves you've seen here.  Half-eaten corpses lie strewn about
+the room while body parts and grinning, fleshy skulls dangle from intestines
+that somehow have stayed attached to the ceiling.  In the center of it all
+stands a large throne of bone from where the Queen of the Harpies oversees
+her sisters.  The only escape from here seems to be the east out into the
+air.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 3845
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 3814 0 3800
+M 0 3803 1 3802
+E 0 3812 0 14
+M 0 3805 1 3805
+G 0 3803 0
+E 0 3813 0 13
+M 0 3809 1 3808
+E 0 3807 0 20
+M 0 3811 1 3811
+O 0 3811 0 3811
+E 0 3801 0 20
+M 0 3813 1 3813
+E 0 3802 0 20
+M 0 3801 1 3814
+E 0 3812 0 14
+M 0 3802 1 3815
+E 0 3812 0 14
+M 0 3817 1 3817
+M 0 3808 3 3820
+M 0 3804 3 3821
+O 0 3804 0 3821
+M 0 3808 3 3823
+M 0 3804 3 3827
+O 0 3804 0 3827
+G 0 3804 0
+M 0 3808 3 3829
+M 0 3804 1 3832
+M 0 3804 3 3832
+O 0 3804 0 3832
+O 0 3814 0 3833
+M 0 3807 5 3834
+M 0 3807 5 3835
+O 0 3814 0 3837
+O 0 3814 0 3838
+M 0 3807 5 3841
+O 0 3814 0 3842
+O 0 3814 0 3843
+M 0 3807 5 3844
+M 0 3807 5 3846
+O 0 3814 0 3847
+O 0 3814 0 3848
+O 0 3805 0 3849
+M 0 3806 1 3849
+E 0 3806 0 6
+O 0 3808 0 3849
+G 0 3809 0
+P 0 3810 0 3808
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

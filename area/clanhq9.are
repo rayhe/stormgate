@@ -1,0 +1,1371 @@
+#AREADATA
+Name        { CLAN } The Midgaard HQ~
+Builders    Attila~
+VNUMs       19901 19999
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Attila~
+Llevel      0
+Ulevel      0
+Sounds      &cA cold gust of wind blows through the village.~
+SoundsA     ~
+Music       ~
+End
+
+
+
+#MOBILES
+#19901
+Ulfrun~
+Ulfrun~
+Ulfrun the Viking Guard stands here guarding the village
+~
+Ulfrun is a hulk of a man with the skins of many dead animals hanging off of him
+you wonder if you could be the next addition to his wardrobe.
+~
+524291 576 71303316 16384 38 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+500 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+if isclan ($n) == 2
+say Welcome brother $n, enjoy your stay.
+else
+say You are a stranger to our village $n, please leave at once!
+yell $n has approached the village gates!
+endif
+~
+>death_prog 100~
+~
+|
+#19902
+Solunn~
+Solunn~
+Solunn, the Busty Brunette Bartender stands behind the bar.
+~
+~
+524291 67109416 67141632 0 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+500 0 0
+0 0 2
+0 0 0
+#19903
+Brazz~
+Brazz~
+Brazz stands here watching over the land
+~
+~
+524291 0 0 0 96 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#19904
+Odin~
+Odin~
+Odin stands here to heal your wounds.
+~
+~
+2621443 16777792 67371024 1074282496 2148 0 S
+110 1 220 220 0 30000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+mpmload 19904
+~
+|
+#19905
+Giu Ram~
+Giu~
+Giu a Ram of Good Intentions wanders the streets.
+~
+~
+524293 0 0 0 1024 10000 S
+5 1 10 10 0 1000d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+#19906
+Ziu Ram~
+Ziu~
+Ziu a Ram of Evil Intentions wanders the streets.
+~
+~
+524293 0 0 2048 0 -10000 S
+5 1 10 10 0 1000d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+#19907
+Jodak Banker~
+Jodak the Banker~
+Jodak the Banker stands here guarding the vault.
+~
+~
+655363 512 4194320 671088640 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+#19908
+Hratli~
+Hratli the Master of Swords~
+Hratli, Master of Swords, awaits to train another pupil.
+~
+~
+591363 640 4718608 0 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+#19909
+Drunken Viking~
+A drunken viking~
+A drunken viking stumbles along your path.
+~
+~
+524289 0 0 0 0 0 S
+20 1 40 40 0 5000d0+0 0d0+0
+200 0 0
+0 0 0
+0 0 0
+>greet_prog 30~
+~
+>all_greet_prog 30~
+say Excuse me $n , which way to the Tavern?
+~
+>greet_prog 0~
+~
+|
+#19910
+Epok Guard Dog Bulldog Two-Headed~
+Epok the Two-Headed Guard Dog~
+Epok the Two-Headed Bulldog stands guard here.
+~
+~
+524291 66112 88080528 134791168 2064 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+500 0 0
+0 0 0
+2 0 0
+>all_greet_prog 100~
+~
+>all_greet_prog 100~
+if isclan($n) == 2
+emote licks his owner and begs for a treat.
+else
+emote starts barking at your presence!
+yell Intruder! $n has entered the chamber!
+endif
+~
+|
+#19911
+Taziki Voodoo Herbalist~
+Taziki~
+Taziki the Voodoo Herbalist busily mixes some herbs into a pill.
+~
+~
+524291 576 4194320 1073741824 64 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+#19912
+Test Mob~
+Cyrano~
+Cyrano is here
+~
+~
+1 128 0 1073741824 96 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#19901
+viking Axe of the Midgaard~
+viking Axe of the Midgaard~
+A gigantic viking axe lies here~
+~
+5 67108867 0 0 0 8193 50
+100 100
+0~ 20~ 40~ 13~
+12 120 0
+0 0
+reserved~
+0 0
+0 0 0
+#19902
+Stone Fountain~
+stone fountain~
+A fountain of water surrounds the statue.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19903
+Statue of The Berserker~
+a stone statue~
+&zA stone statue of a great viking Berserker towers over you.~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19904
+16 oz T-Bone Steak~
+a 16oz T-Bone Steak~
+A grizzly piece of sirloin lies here~
+~
+19 0 0 0 0 1 1
+100 100
+40~ 0~ 0~ 0~
+16 25 0
+0 0
+reserved~
+0 0
+0 0 0
+#19905
+Giant Mug of Midgaard Ale~
+a Giant Mug of Midgaard Ale~
+A large mug of Viking Ale has been left here.~
+~
+17 134217728 0 0 0 1 1
+100 100
+50~ 50~ 4~ 0~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#19906
+A telescope~
+a telescope~
+A telescope trained at the horizon rests on a tripod.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19907
+altar passage~
+a huge stone altar~
+&WA massive altar constructed of white marble sits in the Temple's center.~
+~
+29 1 0 0 0 0 0
+100 100
+19929~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19908
+Hole Stone Wall Staircase~
+a hole in the stone wall~
+&z A hole in the stone wall reveals a staircase.~
+~
+29 67108864 0 0 0 0 0
+100 100
+19909~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19909
+Cabinet Herbs Spices~
+a cabinet of herbs~
+&OA cabinet full of herbs and spices covers the wall.~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19910
+Polar Bear Pouch Midgaard~
+a Polar Bear Pouch~
+A pouch made of bear skin lies here.~
+~
+15 671088640 196608 0 0 1 30
+100 100
+400~ 1~ 0~ 0~
+1 50000 0
+0 0
+reserved~
+0 0
+0 0 0
+#19911
+Some Pixie Mojo Mana~
+some Pixie Mojo~
+The essence of a pixie hovers in a mist~
+~
+26 0 0 0 0 1 30
+100 100
+100~ mana~ mana~ mana~
+1 2100 0
+0 0
+reserved~
+0 0
+0 0 0
+#19912
+Herb Remedy Poison Blindness Curse~
+an Herb of Remedy~
+A magical root has been forgotten here.~
+~
+26 0 0 0 0 1 30
+100 100
+100~ cure poison~ cure blindness~ remove curse~
+0 340 0
+0 0
+reserved~
+0 0
+0 0 0
+#19913
+Pill Clear Thought Cancellation~
+a Pill of Clear Thought~
+A pill of mystical thought lies here.~
+~
+26 0 0 0 0 1 30
+100 100
+100~ cancellation~ cancellation~ cancellation~
+0 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#19914
+Scythe Blade Wall Ball Metal~
+a bloody scythe blade~
+&r(Bloody) &zA scythe blade attached to a chain with a metal ball lies here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19915
+Giant Oak Table~
+a giant oak table~
+A giant dining table made of oak is here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19916
+Enormous Roast of Boar~
+an enormous roast of boar.~
+&OAn enormous roast of boar rests on the table.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19917
+A Tree Stump~
+a tree stump~
+&OA giant redwood tree stump is here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19918
+Onyx Axe~
+an Onyx Axe~
+&wan Onyx Axe is stuck in the tree stump.~
+~
+12 201326592 8192 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19919
+Bone Throne~
+a bone chair~
+&WA grand chair made of rhinoceros bone seats Torfi.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19920
+Bush Everburning Tree~
+an everburning bush~
+&gAn everburning bush heats the room.~
+~
+1 33554432 0 0 0 0 0
+100 100
+0~ 0~ -1~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19921
+clan Earring Crystal Hammer Tiny~
+a Tiny Crystal Hammer~
+A small earring made of crystal lies here.~
+~
+9 536870912 204800 0 0 524289 100
+100 100
+50~ 0~ 0~ 0~
+2 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+2 2
+A
+12 100
+A
+18 20
+A
+19 20
+A
+13 100
+A
+26 100
+A
+24 -20
+A
+303 -1
+#19922
+Wall Illusions~
+a wall of illusion~
+&wA wall of illusions swirls around you.~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19923
+purple cloud smoke~
+a purple cloud of smoke~
+&pA purple cloud of smoke creates a seat for Raknar.~
+~
+12 0 8192 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19924
+Chain Dog Leash~
+a steel chain~
+&wA steel chain keeps Epok under control.~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19925
+the Tail of Satan~
+the Tail of Satan~
+The cut off tail of satan lies here.~
+~
+5 33554433 256 0 0 8193 107
+100 100
+0~ 100~ 200~ 4~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 222222
+A
+18 222222
+#19926
+clan earring crystal hammer tiny~
+a Tiny Crystal Hammer~
+A small earring made of crystal lies here.~
+~
+9 536870912 204800 0 0 524289 75
+100 100
+0~ 0~ 0~ 0~
+2 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -15
+A
+25 30
+A
+12 75
+A
+13 75
+A
+19 15
+A
+18 15
+A
+23 -15
+#19927
+clan earring crystal tiny hammer~
+a Tiny Crystal Hammer~
+A small earring made of crystal lies here.~
+~
+9 536870912 204800 0 0 524289 50
+100 100
+0~ 0~ 0~ 0~
+2 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 20
+A
+12 50
+A
+19 10
+A
+18 10
+#19928
+Bookcase~
+A Mystical Bookcase~
+A Mystical Bookcase~
+~
+12 167772160 8192 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19929
+a Magic Rainbow~
+a Magic Rainbow~
+&Wa &RM&Ya&Gg&Pi&Cc &RR&Ya&Gi&Pn&Cb&Ro&Yw &Wbrightens the room.~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19930
+Black Torch Midgaard~
+a Black Torch of the Midgaard~
+A torch from the village of the Midgaard lies here.~
+~
+1 33554433 0 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#19931
+pathway portal overworld safety~
+portal to the overworld~
+A pathway that leads back to the safety of the overworld~
+~
+29 0 0 0 0 0 0
+100 100
+17581~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#19932
+path midgaard portal hq~
+a portal.~
+The path to The Midgaard HQ, please see HELP CLANS before entering~
+~
+29 0 0 0 0 0 30
+100 100
+19901~ 0~ 0~ 0~
+2893847 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#19901
+A pathway to the village of The Midgaard~
+~
+~
+You have ventured into a vast field of wheat. A gentle breeze blows through the
+field creating ripples in the wheat. To the North you find a well traveled path
+leading to a small village.
+~
+0 537272326 2
+Rd     0
+D0
+~
+~
+0 0 19902
+S
+#19902
+The path before the village~
+~
+~
+You are on a well traveled path, which many warriors have traveled before. 
+Footprints in this dirt path seem to be alot larger than that of your own,
+causing you to fear then men who have wondered this path before you.
+~
+0 537272326 2
+Rd     0
+D0
+~
+~
+0 0 19903
+D2
+~
+~
+0 0 19901
+S
+#19903
+Before the Wooden Gate~
+~
+none~
+You are at the gate to the village of the Midgaard a guard stands here
+to protect the village from intruders. From outside the gate you can hear
+the sound of several drunken vikings within these city walls.
+~
+0 537272326 2
+Rd     0
+D0
+~
+~
+67 0 19904
+D2
+~
+~
+0 0 19902
+S
+#19904
+Within the Village Gates~
+~
+~
+This village is buzzing with activity there are shopkeeps and burly vikings
+all over the village streets. To the north many vikings appear to be having
+a good time amongst one of the local taverns.
+~
+0 537272322 1
+Rd     0
+D0
+~
+~
+0 0 19905
+D1
+~
+~
+0 0 19910
+D2
+~
+~
+67 0 19903
+D3
+~
+~
+0 0 19913
+S
+#19905
+Tower of the Midgaard~
+~
+~
+You have entered an giant wooden structure resembling a tower.  There is
+a staircase that leads to a local tavern above you.  Within this tower is a
+wonderful fountain of a large Viking Warrior.  You cannot read the name of
+this warrior as the plaque is quite worn.  Many of the local vikings come
+here to rub this statue for luck.  
+~
+0 537272322 1
+Rd     0
+D0
+~
+~
+0 0 19907
+D2
+~
+~
+0 0 19904
+D4
+~
+~
+0 0 19906
+S
+#19906
+The Midgaard Tavern~
+~
+~
+Infront of you is the local taver. Many of the townsfolk seem to visit here quite
+often. Some of the larger viking's make long stays here drinking many beers.
+It may not be just the beer that keep the vikings in here, Solunn the bartender
+is a beautiful sight for many travelers through this village
+~
+0 537272332 0
+Rd     0
+D4
+~
+~
+0 0 19908
+D5
+~
+~
+0 0 19905
+S
+#19907
+An Intersection of Streets~
+~
+~
+The streets are filled with goats, pigs, and travelers from far off cities. Many
+shops are set up along these streets selling many goods. To the north is the temple
+of Odin, and to the south is the mighty tower of the Midgaard keeping an ever 
+watchful eye over the village streets.
+~
+0 537272322 1
+Rd     0
+D0
+~
+~
+0 0 19909
+D1
+~
+~
+0 0 19912
+D2
+~
+~
+0 0 19905
+D3
+~
+~
+0 0 19915
+S
+#19908
+The ever watchful eye of the Midgaard~
+~
+~
+You have reached the top of the tower where a Viking named Brazz keeps a watchful eye
+for intruders to his great village. Brazz is looking through a telescope to watch 
+the fields. When an intruder is spotted it appears he rings this mighty bell that
+is made of pure copper.
+~
+0 604373006 0
+Rd     0
+D5
+~
+~
+0 0 19906
+S
+#19909
+Temple of Odin~
+~
+~
+Before you stands the mighty leader of the viking horde. Lord Odin presides over all
+of viking origin. He stands here now in his temple accepting offerings. He is the creator
+of all in the viking world. Odin lives in his temple healing the citizens of the 
+village and curing them of illness.
+~
+0 537272326 0
+Rd     0
+D2
+~
+~
+0 0 19907
+S
+#19910
+The Southeast Corner of the Village~
+~
+~
+Streets go west and north of you. People are busily going about their daily lives and
+shopkeeps abound trying to earn another dollar. Warriors pass by on horseback and 
+local viking children gaze at them with amazement. Several of the village children 
+are gathered in the corner playing some sort of viking game.
+~
+0 537272322 1
+Rd     0
+D0
+~
+~
+0 0 19911
+D3
+~
+~
+0 0 19904
+S
+#19911
+Along an Eastern Sidestreet~
+~
+~
+The crowd of people is not as thick here away from the temple. A practice and
+training facility has been set up to your east to aid the berserkers that protect
+the village. Some young vikings appear to be waiting there turn to be trained. Many
+of these young lads dream of one day joining the group of elite warriors known as 
+the Midgaard.
+~
+0 537272322 1
+Rd     0
+D0
+~
+~
+0 0 19912
+D1
+~
+~
+0 0 19917
+D2
+~
+~
+0 0 19910
+S
+#19912
+The Northeast Corner of the Village~
+~
+~
+Streets go west and south of you. The dirt streets are churning up dust that
+seemingly clings to everything. Your entire woredrobe is brown with the dry dusty
+air that swirls around you. Something doesn't seem right about this village. Everything
+seems to peaceful for your liking. Peering closer into the dirt you can identify some 
+dried blood.
+~
+0 537272322 1
+Rd     0
+D2
+~
+~
+0 0 19911
+D3
+~
+~
+0 0 19907
+S
+#19913
+The Southwest Corner of the Village~
+~
+~
+Streets go east and north of you. People are busily going about their daily lives and
+shopkeeps abound trying to earn another dollar. Warriors pass by on horseback and
+local viking children gaze at them with amazement. Several of the village children
+are gathered in the corner playing some sort of viking game.
+~
+0 537272322 1
+Rd     0
+D0
+~
+~
+0 0 19914
+D1
+~
+~
+0 0 19904
+S
+#19914
+Along an Western Sidestreet~
+~
+~
+The crowd of people is not as thick here away from the temple. A Bank of the
+has been set up to your east to aid the villagers that roam the streets. Some 
+villagers are going in with alot of gold in sacks of elk hide where as others are 
+carrying in all their gold in the palms of their hands.
+~
+0 537272322 1
+Rd     0
+D0
+~
+~
+0 0 19915
+D2
+~
+~
+0 0 19913
+D3
+~
+~
+0 0 19916
+S
+#19915
+The Northwest Corner of the Village~
+~
+~
+Streets go east and south of you. The dirt streets are churning up dust that
+seemingly clings to everything. Your entire woredrobe is brown with the dry dusty
+air that swirls around you. Something doesn't seem right about this village. Everything
+seems to peaceful for your liking. Peering closer into the dirt you can identify some
+dried blood.
+~
+0 537272322 1
+Rd     0
+D1
+~
+~
+0 0 19907
+D2
+~
+~
+0 0 19914
+S
+#19916
+The Vault of the Midgaard~
+~
+~
+This is the bank where the local merchants and travelers deposit their hard earned
+money. All trust is with the banker named Jodak . By the looks of him , he is quite
+capable of defending the bank from any sort of threat. You guess that is why so many
+a man trusts his earnings with Jodak and the mighty vault.
+~
+0 537272326 0
+Rd     0
+D1
+~
+~
+0 0 19914
+S
+#19917
+Warrior Academy of the Midgaard~
+~
+~
+This is the place where all training and practicing of strength, skill and magic
+can be done. Hratli stands here to teach all who ask. He stands as a beastly man in 
+his sixties that must of been a mighty warrior at one time for the Midgaard. This man
+has trained many a warrior in his past and is talked about throughout the land as
+the best there is , when it comes to teaching combat.
+~
+0 537272326 0
+Rd     0
+D3
+~
+~
+0 0 19911
+S
+#19918
+Entrance to the Council~
+~
+~
+The passage has led you to secret area where it appears the noble council of vikings
+come to discuss war plans. Several vikings can be heard to the north and the aroma
+of wonderful food envelops you. Epok is chained to the wall here barking at intruders
+to this secret hide-away of the Midgaard.
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+0 0 19919
+D2
+~
+~
+0 0 19929
+S
+#19919
+The Great Feast Hall~
+~
+~
+In this room the mighty warriors and mercenaries of the Midgaard come to
+feast and talk about their plans of war.  Food is always plentiful as cooks
+bustle in and out of this hall to feed the massive warriors.  It is here the
+Midgaard join each other in triumph as a true force of power.  
+~
+0 537010178 0
+Rd     0
+D0
+~
+~
+0 0 19924
+D1
+~
+~
+67 0 19920
+D2
+~
+~
+0 0 19918
+D3
+~
+~
+67 0 19927
+D4
+~
+~
+0 0 19930
+S
+#19920
+A Room of Bizarre Weaponry~
+~
+~
+In this room lie dozens of racks of foreign looking weaponry. Strange diamond shaped
+ knives with short handles, thin sheets of metal cut into the shape of stars,
+and a multitude of oddly curved thin blades. Some of these tools appear to be soaked
+with fresh blood. Whether the blood is animal or human is unkown but the outcome would
+have been the same.
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+1 0 19921
+D3
+~
+~
+67 0 19919
+S
+#19921
+Kunai's Enveloping Darkness~
+~
+~
+You see absolutely nothing around you, save the enveloping darkness which seems
+ to become tangible the more you stare into it. Shuddering at the thought of the 
+being whose heart is as black as this room you decide to keep your eyes closed, 
+making it seem less dark.
+~
+0 537272326 0
+Rd     0
+D2
+~
+~
+1 0 19920
+S
+#19922
+A Cavern of Vines~
+~
+~
+A cave of moss and heavy vegetation grows before you.  The walls have
+vines weaving in and out of themselves creating an endless web of foliage. 
+A tree stump is here in the center of the room with Torfi Magnusson's giant
+Onyx axe stuck in it.  Only a warrior of his poroprtion would wver be able
+to lift such an axe out of its current home 
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+1 0 19923
+D3
+~
+~
+3 0 19930
+S
+#19923
+The Den of Torfi Magnusson~
+~
+~
+This magnificent cave is covered with the hides of mythical beasts from
+all known parts of the overworld.  Blood is fresh on some of these creatures
+and in your heart you can feel the enormous pain these beasts must have gone
+through when their lives were taken.  In the center of the room is a throne
+made of Rhinoceros bones.  It is covered with the skins of elk and caribou. 
+In the corner of the room an everburning bush lights this cave its heat
+giving warmth to all those around it.  
+~
+0 537272326 0
+Rd     0
+D2
+~
+~
+1 0 19922
+S
+#19924
+A Darkened Hallway~
+~
+~
+You have entered a dim lit hallway with shields and swords decorating most of the
+walls. To the north you can hear the sounds of battle and swordsmanship. A staircase
+can be seen to take you downstairs where foul smelling odors eminate. To the south
+cheers and grunts can be heard from the warriors who appear to be enjoying their 
+wonderful feast.
+~
+0 537272322 0
+Rd     0
+D0
+~
+~
+67 0 19925
+D2
+~
+~
+0 0 19919
+D5
+~
+~
+0 0 19926
+S
+#19925
+Battle Arena of the Midgaard~
+~
+~
+The elite warriors of this village seem to gather in this room for battle. The walls
+are filled with portraits of warriors past , and weapons that these once great
+warriors used during there prolific battles. Markings can be seen on the floor
+of the room which appear to be starting points for battles. Many legendary battles
+have taken place here.
+~
+0 537305090 0
+Rd     0
+D2
+~
+~
+67 0 19924
+S
+#19926
+The Herbalist~
+~
+~
+The stairwell has led you to an insane man who does not seem to fit in well with
+the vikings that inhabit this area. The story is that this twisted man was brought
+here by the vikings as an herbalist to heal the Midgaard from there battles. Cabinets
+along the back wall have roots and shavings of things you have never heard of. How
+can powdered deer penis actually help anyone.
+~
+0 537272330 0
+Rd     0
+D4
+~
+~
+0 0 19924
+S
+#19927
+Cavern of Souls~
+~
+~
+This rooms walls are covered with the souls of past kings. Faces eminate through
+the walls and cry for help. They appear to be trapped by some mythical force. The
+great illusionist warrior Raknar has been known to wonder these parts. As it was him
+who has trapped these souls for eternity.
+~
+0 537272322 0
+Rd     0
+D0
+~
+~
+1 0 19928
+D1
+~
+~
+67 0 19919
+S
+#19928
+The Mystical Void of Raknar~
+~
+~
+A rift in time and space, the walls are nothing more than a grey mist. This
+mist swirls about you causing you to choke as the air is very thin here. The master
+illusionist Raknar hovers on a cloud of purple smoke. This cloud is thicker than the
+swirling mist and seems to clear the area around Raknar.
+~
+0 537272322 0
+Rd     0
+D2
+~
+~
+1 0 19927
+S
+#19929
+Bottom of a Staircase~
+~
+~
+The passage has led you downward though a twised stairwell covered in dust and
+smelling of rotten flesh. The passage is lit by torchlight and seems eerily quiet.
+For a hidden passage it does seem well travelled and perhaps contains some hidden
+treasures.
+~
+0 537272322 0
+Rd     0
+D0
+~
+~
+0 0 19918
+S
+#19930
+The Balcony Above the Feast Hall~
+~
+~
+You have climbed the stairs to the balcony whick overlooks the hall. Doors lead to the
+east and west. They appear to be chambers to some of the Midgaards mighty warriors.
+Choose your fate wisely as this decision could be your last. Smells rise to the rafters
+of the great boar that has been placed on the table below.
+~
+0 537272322 0
+Rd     0
+D1
+~
+~
+3 0 19922
+D3
+~
+~
+3 0 19931
+D5
+~
+~
+0 0 19919
+S
+#19931
+A Rainbow Room~
+~
+~
+This room has four walls each of its own color. Red for fire, Yellow for lighting, 
+and Blue for ice. The proud mage Morak is known to inhabit this area. His elemental 
+magic is feared throughout. In the center of this room is a rainbow created by the
+elementalist himself.
+~
+0 537272322 0
+Rd     0
+D0
+~
+~
+1 0 19932
+D1
+~
+~
+3 0 19930
+S
+#19932
+The Elemental Nexus of Morak Xygar~
+~
+~
+You have entered into a great room of mystical powers. The three major elements fire,
+ice and lightning have converged here to magnificent room of magic. This nexus is said
+to be home of the feared mage Morak. His elemental powers are strike fear in your heart.
+A mystical bookcase is here containing spells known only by the great elementalist.
+~
+0 537272322 0
+Rd     0
+D2
+~
+~
+1 0 19931
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 19931 0 19901
+M 0 19901 1 19903
+E 0 19901 0 20
+M 0 19909 1 19904
+O 0 19902 0 19905
+O 0 19903 0 19905
+M 0 19902 1 19906
+G 0 19904 0
+G 0 19905 0
+M 0 19905 1 19907
+M 0 19906 1 19907
+O 0 19906 0 19908
+M 0 19903 1 19908
+M 0 19904 1 19909
+O 0 19907 0 19909
+M 0 19907 1 19916
+M 0 19908 1 19917
+M 0 19910 1 19918
+O 0 19924 0 19918
+O 0 19915 0 19919
+O 0 19916 0 19919
+O 0 19914 0 19920
+O 0 19918 0 19922
+O 0 19917 0 19922
+O 0 19920 0 19923
+O 0 19919 0 19923
+M 0 19911 1 19926
+O 0 19909 0 19926
+G 0 19930 0
+G 0 19913 0
+G 0 19912 0
+G 0 19911 0
+G 0 19910 0
+O 0 19922 0 19927
+O 0 19923 0 19928
+O 0 19908 0 19929
+O 0 19929 0 19931
+O 0 19928 0 19932
+S
+
+
+
+#SHOPS
+19902 0 17 0 0 0 100 100 0 24
+19911 0 0 0 0 0 100 100 0 24
+0
+
+
+
+#$

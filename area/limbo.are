@@ -1,0 +1,1924 @@
+#AREADATA
+Name        { None } Limbo~
+Builders    None~
+VNUMs       1 69
+Security    100
+Recall      1
+Flags       32
+Version     107
+Creator     Diku~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#1
+Puff~
+Puff~
+Puff the Peyote Dragon is here, contemplating a higher reality.
+~
+~
+1 0 0 0 8 0 S
+115 1 230 230 300000 300000d0+0 0d0+0
+1150 0 0
+0 0 2
+0 0 0
+#2
+darkside~
+The Mighty Darkside~
+Here floats a god so evil, you cannot bear to look at it.
+~
+It has a large central eye that projects an anti-magic ray and ten
+eyestalks atop the round body which can do anything from charm you
+to disintegrate you.  Beholders are not known for their personality.
+~
+163 8 0 0 0 0 S
+23 1 46 46 0 0d0+0 0d0+0
+230 0 0
+0 0 0
+0 0 0
+#3
+corpse zombie reanimated~
+Corpse of %s~
+The reanimated corpse of %s lumbers around here.
+~
+~
+1 8192 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#4
+Demon guardian~
+a guardian Demon~
+A huge guardian demon towers above you here.
+~
+The demon does not look happy about being summoned to this plane.  He
+stands about twelve feet tall and his eyes glow with an inner light that
+seems to make what he looks at darker, not brighter.  
+~
+33 33554432 0 0 0 -100 S
+50 1 100 100 7500 7500d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#5
+demon~
+a demon~
+A demon from the abyss is here.
+~
+~
+1 38273576 0 0 0 -1000 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#6
+swarm insects~
+a swarm of insects~
+A swarm of insects are here.
+~
+~
+1 4194304 0 0 0 0 S
+10 1 20 20 100 100d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+#7
+SuperMob box 7~
+Box~
+Pandora's box is here.
+~
+~
+1 0 0 0 0 0 S
+100 1 200 200 32000 32000d0+0 0d0+0
+1000 0 0
+0 0 0
+0 0 0
+#8
+pack wolves~
+a pack of wolves~
+A pack of wolves are here.
+~
+~
+1 4203168 0 0 0 0 S
+10 1 20 20 100 100d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+#9
+angel holy~
+An angel~
+A huge angel has been brought here from above.
+~
+~
+1 4735144 0 0 0 1000 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#10
+shadow shade~
+A shadow~
+A shadow flickers in and out of reality here.
+~
+The shadow blends into the surrounding area, looking like nothing more
+than it's namesake.  It is however quite twisted in shape.
+~
+1 4268162 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#11
+beast woodland~
+A %s~
+A %s is here defending %s.
+~
+~
+1 4194344 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#12
+tree trent~
+A trent~
+A massive trent stands here, solid as a tree.
+~
+~
+1 4202504 16 0 96 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#13
+greater demon~
+A Greater Demon~
+A Greater Demon has been summoned from the depths of hell.
+~
+~
+1 373817448 0 0 0 -1000 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>fight_prog 10~
+cast 'demonfire' $n
+~
+|
+#14
+wolf~
+a wolf~
+A wolf is here.
+~
+~
+1 4194336 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#15
+hawk~
+a hawk~
+A hawk flies about the area.
+~
+~
+1 4735144 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#16
+tiger~
+a tiger~
+A tiger is here.
+~
+~
+1 138412064 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#20
+Tyson Mike~
+Mike Tyson~
+Mike Tyson stands here.
+~
+~
+524353 0 0 0 8 -1000 S
+99 1 198 198 70000 70000d0+0 0d0+0
+990 0 0
+0 0 1
+0 0 0
+#25
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#26
+Store Manager~
+A Store Manager~
+A Store Manager talks to customers.
+~
+~
+67 192 0 0 0 400 S
+57 1 114 114 15500 15500d0+0 0d0+57000
+570 0 0
+0 0 0
+3 0 0
+#30
+none~
+non~
+Non
+~
+~
+3 8 0 0 0 0 S
+1 1 2 2 0 0d0+0 0d0+0
+10 0 0
+0 0 1
+0 0 0
+#31
+sammael wizard~
+Sammael~
+Sammael the evil wizard is here
+~
+~
+3 188 0 0 0 0 S
+50 1 100 100 0 0d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#32
+paperboy boy paper~
+Lucid's Paperboy~
+Lucid's Paperboy says "Type BUY QUESTOR for a free paper!"
+~
+~
+3 524348 0 0 0 0 S
+100 1 200 200 0 0d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+#35
+vermin horde~
+a horde of vermin~
+A horde of vermin is here, infesting the trash.
+~
+A seething horde of disgusting creatures.
+~
+524355 98306 4096 0 0 0 S
+1 1 2 2 1000 1000d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>act_prog drops~
+mppurge $o
+~
+|
+#40
+Tortured Soul~
+A Tortured Soul~
+A burning soul that must endure endless torture is here.
+~
+~
+1 33554432 0 0 0 -1000 S
+1 1 2 2 5000 5000d0+0 0d0+0
+10 0 0
+0 0 0
+128 0 0
+#43
+none~
+(no short description)~
+Hiermon is here, preparing a scroll
+~
+~
+3 8200 0 0 0 0 S
+55 1 110 110 0 0d0+0 0d0+0
+550 0 0
+0 0 1
+0 0 0
+#50
+air elemental~
+An Air Elemental~
+An Air Elemental has been called forth from the elemental plane.
+~
+~
+1 71827624 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#51
+earth elemental~
+An Earth Elemental~
+An Earth Elemental has been called forth from the elemental plane.
+~
+~
+1 272629928 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#52
+water elemental~
+A Water Elemental~
+A Water Elemental has been called forth from the elemental plane.
+~
+~
+1 138412200 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#53
+fire elemental~
+A Fire Elemental~
+A Fire Elemental has been called forth from the elemental plane.
+~
+~
+1 37748904 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#54
+dust elemental~
+A Dust Elemental~
+A Dust Elemental has been called forth from the elemental plane.
+~
+~
+1 273154216 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#55
+ice elemental~
+An Ice Elemental~
+An Ice Elemental has been called forth from the elemental plane.
+~
+~
+1 138428456 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#56
+dragon~
+A Dragon~
+A Dragon is here, looking fearful!
+~
+~
+1 306200616 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#59
+drunken leprechaun~
+a drunken leprechaun~
+A little man dressed in green is here, stumbling around.
+~
+A comical little man, who seems to have had a bit too much to drink...
+~
+1 262248 32768 0 0 0 S
+20 1 40 40 3000 3000d0+0 0d0+100000
+200 0 0
+0 0 1
+0 0 0
+#62
+demon executive~
+the harried executive~
+A Demon Executive sits alone in his barren office
+~
+~
+3 4224 0 0 0 0 S
+1 1 2 2 0 0d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#65
+Dionysus bartender~
+Dionysus the Bartender~
+The god of wine, Dionysus, serves as bartender.
+~
+A portly, friendly-looking immortal with wild unkempt hair and a crown of
+ever fresh laurel leaves.  He roars with laughter as he distributes liquor
+to the gods who throng his tavern.  
+~
+3 0 0 0 1 200 S
+107 1 214 214 30000 30000d0+0 0d0+1000
+1070 0 0
+0 0 1
+0 0 0
+>speech_prog hello hi~
+look $n
+beam
+if name($n)==zhyril
+say Ah, Zhyril!  Welcome, welcome!, welcome! Your usual table?
+say try not to break up my bar again though!
+emote roars with laughter.
+endif
+if name($n)==eric
+grin
+say Ah, Eric! Well met!
+say Have a seat...and leave my waitresses alone this time!
+wink $n
+endif
+if name($n)==terawyn
+leer
+say Ah, Terawyn, my dear, welcome!
+endif
+if name($n)==tyrion
+say Ah, Tyrion.
+say Come in, come in.
+frown
+say You know, the immortals of Stormgate have been running up quite a tab...
+endif
+if name($n)==ahsile
+say Hello, Ahsile.
+say I have a perfect seat for you, right in the middle of the action!
+emote beckons to a waitress and whispers to her:
+mpecho 'Give him a table behind the plants 
+endif
+ 
+if name($n)==leahana
+say ah, the beauteous Leahana...
+say welcome, welcome!
+grin leahana
+endif
+~
+|
+#69
+Holyone~
+Holyone~
+The great cleric warrior, Holyone, stands guard.
+~
+The most powerful cleric warrior stands guard over Darkone's domain,
+knowing Darkone will return.  
+~
+2059 503316648 17924112 4349952 0 0 S
+150 1 200000 200000 0 100000d0+0 0d0+10000000
+5000 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if name($n) == Darkone
+  say Hello Darkone.  Your realm is safe.
+  bow $n
+  break
+endif
+if isnpc($n)
+  growl $n
+  mpforce $n enter
+else
+  say Welcome to Darkone's domain, $n.
+  if isimmort($n)
+    say I will notify him of your entrance if I can find him.
+  else
+    say I will notify him of your intrusion if I can find him.
+  endif
+endif
+tell darkone $n has entered your domain.
+ 
+~
+>fight_prog 20~
+,screams 'Come to me, my child!'
+mpmload 28058
+mpforce time mpkill $n
+~
+>death_prog 100~
+cackle
+mpmload 69
+mpgoto 1
+~
+>rand_prog 100~
+mpat 1 mppurge
+~
+|
+#0
+
+
+
+#OBJECTS
+#1
+dummy object~
+a dummy object~
+Dummy object is used for loading non-existant objects~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+~
+0 0
+0 0 0
+#2
+coin gold~
+a gold coin~
+One miserable gold coin.~
+~
+20 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+~
+0 0
+0 0 0
+#3
+coins gold~
+some gold coins~
+A pile of gold coins.~
+~
+20 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+~
+0 0
+0 0 0
+#4
+trash junk broken~
+mangled junk~
+The remains of %s lie here in a heap.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5
+blade doom~
+the Blade of Doom~
+A blade lies here, it looks as if it is not of this world.~
+~
+5 973095104 24576 0 0 8193 80
+100 100
+0~ 0~ 0~ 3~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 60
+A
+18 60
+A
+13 200
+A
+12 200
+A
+26 50
+#6
+paper~
+a piece of paper~
+A piece of paper has been taped to the wall here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+paper~
+"Signs You've Got it Easy in Jail"
+   As presented on the 12/27/94 broadcast of LATE SHOW with DAVID
+   LETTERMAN
+   10. Every night there's a mint on your pillow.
+   9. Bars of your cell are rusty from Jacuzzi-steam.
+   8. Guards meet with you to help plan your escape.
+   7. They replaced your regular coffee with Folgers crystals. In the
+   resulting riot, ten died.
+   6. You share a cell with one of Heidi Fleiss' girls.
+   5. You get frequent flier miles for good behavior.
+   4. You have a summer cell in the Hamptons.
+   3. Every day around 4:00 -- pony rides!
+   2. Other inmates refer to your cell as "Margaritaville."
+   1. You call the warden "daddy."
+~
+#7
+newbie pill eat me~
+newbie Pill [Eat Me for Cool Spells]~
+A newbie pill is here. Pick me up and eat me.~
+~
+26 0 0 0 0 1 1
+100 100
+0~ sanctuary~ reserved~ reserved~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#9
+spiritual hammer~
+a Spiritual Hammer~
+A Spritual Hammer lies here, it looks as though it is not of this world~
+~
+5 973079744 30274 0 33554432 8193 95
+100 100
+0~ 0~ 0~ 8~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 25
+A
+12 250
+A
+13 250
+A
+19 75
+A
+18 75
+#10
+corpse~
+corpse of %s~
+The corpse of %s is lying here.~
+~
+23 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 1~
+100 1 0
+0 0
+~
+0 0
+0 0 0
+#11
+corpse pccorpse~
+corpse of %s~
+The corpse of %s is lying here.~
+~
+24 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 1~
+5 1 0
+0 0
+~
+0 0
+0 0 0
+#12
+head~
+head of %s~
+The severed head of %s is lying here.~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+5 1 0
+0 0
+~
+0 0
+0 0 0
+#13
+heart~
+heart of %s~
+The torn-out heart of %s is lying here.~
+~
+19 0 0 0 0 1 1
+100 100
+16~ 0~ 0~ 0~
+2 1 0
+0 0
+~
+0 0
+0 0 0
+#14
+arm~
+arm of %s~
+The sliced-off arm of %s is lying here.~
+~
+19 0 0 0 0 1 1
+100 100
+20~ 0~ 0~ 0~
+5 1 0
+0 0
+~
+0 0
+0 0 0
+#15
+leg~
+leg of %s~
+The sliced-off leg of %s is lying here.~
+~
+19 0 0 0 0 1 1
+100 100
+20~ 0~ 0~ 0~
+5 1 0
+0 0
+~
+0 0
+0 0 0
+#16
+blood puddle~
+a blood puddle~
+Blood covers the ground here.~
+~
+28 0 0 0 0 0 1
+100 100
+5~ 5~ 0~ 0~
+0 1 0
+0 0
+~
+0 0
+0 0 0
+#17
+portal~
+portal~
+A huge shimmering portal stands here.~
+~
+29 64 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#18
+doll~
+a doll in the likeness of %s~
+A ragged doll lies here.~
+~
+30 64 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+slay~
+0 -1
+0 0 0
+#19
+berry good goodberry~
+a goodberry~
+A shiny red berry lies here on the ground.~
+~
+31 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20
+steak juicy thick~
+a thick and juicy steak~
+A thick juicy steak is here.~
+~
+19 0 0 0 0 1 1
+100 100
+15~ 0~ 0~ 0~
+1 1 0
+0 0
+~
+0 0
+0 0 0
+#21
+ball light~
+a bright ball of light~
+A bright ball of light shimmers in the air.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+1 1 0
+0 0
+~
+0 0
+0 0 0
+#22
+spring~
+a magical spring~
+A magical spring flows from the ground here.~
+~
+25 64 0 0 0 0 100000
+100 100
+0~ 100000~ 0~ 0~
+5000 1 0
+0 0
+~
+0 0
+0 0 0
+#23
+walkway vines portal~
+walkway~
+A walkway of vines stands here.~
+~
+29 64 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#24
+some food~
+some food~
+Some food lies on the ground~
+~
+19 0 0 0 0 1 1
+100 100
+15~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25
+some water~
+some water~
+Some water flows from the ground.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26
+wreck corpse~
+wreck of %s~
+A wreck of %s is lying here.~
+~
+23 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+100 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27
+ring abraxyz quest object~
+the Ring of Abraxyz~
+The Ring of Abraxyz, a very powerful quest item, is here.~
+~
+9 536870977 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+5 0
+haste~
+-1 -1
+0 0 0
+A
+18 10
+A
+19 16
+A
+42 5
+A
+13 200
+A
+12 200
+A
+25 100
+#29
+titan strength potion quest item~
+a titan strength potion~
+A potion of titan strength sits on the ground.~
+~
+10 268435459 0 0 0 1 1
+100 100
+100~ titan strength~ reserved~ reserved~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#30
+ankh decay quest item~
+the ankh of decay~
+A magical treasure lies here.~
+~
+18 268435523 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31
+skull ancient warrior quest item~
+a skull of an ancient warrior~
+A magical treasure lies here.~
+~
+18 268435523 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#32
+crown ages quest item~
+the crown of the ages~
+A piece of very valuable treasure is here.~
+~
+18 268435459 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#33
+tablet untold power quest item~
+the tablet of untold power~
+A valuable treasure lies here.~
+~
+18 268435523 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#34
+axe destruction quest item~
+the axe of destruction~
+A valuable piece of treasure sits here.~
+~
+18 402653184 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#35
+shield abraxyz quest item~
+the shield of abraxyz~
+A legendary shield is here.~
+~
+9 671088705 0 0 0 513 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 25
+A
+18 25
+A
+25 66
+A
+12 200
+A
+13 200
+#36
+contacts lenses quest item~
+contact lenses~
+A pair of contact lenses sits here.~
+~
+27 570425409 0 0 0 131073 1
+100 100
+100~ -1~ -1~ identify~
+1 8 0
+0 0
+reserved~
+9 -1
+0 0 0
+A
+19 30
+A
+18 30
+A
+25 66
+A
+12 200
+A
+13 200
+#37
+potion godlike strength quest item~
+a potion of godlike strength~
+A potion of unbelievable power rests on the ground.~
+~
+10 805306435 0 0 0 1 1
+100 100
+100~ bio-acceleration~ unholy enchantment~ holy enchantment~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#38
+parchment immortals quest item~
+the parchment of immortals~
+A magical scroll lies on the ground.~
+~
+2 603979841 0 0 0 1 1
+100 100
+100~ shockshield~ ghost shield~ circle of fire~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#39
+staff power quest item~
+the staff of power~
+A staff of incredible power sits here.~
+~
+4 939524160 0 0 0 16385 1
+100 100
+100~ 25~ 25~ sanctuary~
+1 8 0
+0 0
+iceshield~
+0 0
+0 0 0
+A
+25 85
+A
+13 250
+A
+12 250
+A
+19 50
+A
+18 25
+#40
+Soul Gem~
+a Soul Gem~
+A gem that literally draws light into its darkness lies here.~
+~
+18 33554516 0 0 0 16385 105
+100 100
+0~ 0~ 0~ 0~
+1 1048 0
+2 40
+reserved~
+1 1
+0 0 0
+#41
+vortex~
+a vortex~
+A huge pulsing vortex is here.~
+~
+29 64 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#42
+vortex~
+a vortex~
+A huge pulsing vortex fades in and out of existance.~
+~
+13 64 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#43
+eye gardith quest item~
+the Eye of Gardith~
+The Eye of Gardith is here, containing the powers of Tyrion and Walius.~
+~
+27 536870913 0 0 0 131073 1
+100 100
+100~ -1~ -1~ identify~
+1 8 0
+5 0
+scry~
+-1 -1
+0 0 0
+A
+18 30
+A
+19 30
+A
+24 -15
+A
+23 -15
+A
+115 -1
+A
+13 300
+A
+12 300
+A
+25 100
+E
+eye~
+The eye itself glows with immense power.  Its purple and blue swirls
+seemingly form an entire world, encased within a blood red gem.  It only
+covers one eye.  
+~
+#44
+black potion quest item~
+a black potion~
+A black potion rests on the ground here.~
+~
+10 268435459 0 0 0 1 1
+100 100
+100~ complete healing~ complete healing~ refresh~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#45
+recall rune~
+a recall rune~
+A recall rune is here.~
+~
+33 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#46
+storm lantern unholy plague quest item~
+the Storm Lantern of Unholy Plague~
+The Storm Lantern of Unholy Plague rests here, eminating power.~
+~
+1 805306433 0 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+50 1 0
+5 0
+true sight~
+-1 -1
+0 0 0
+A
+24 -20
+A
+25 50
+A
+12 150
+A
+13 150
+A
+119 -1
+A
+18 20
+A
+19 20
+#47
+sword abraxyz quest item~
+the Sword of Abraxyz~
+A legendary sword is here~
+~
+5 536870977 16384 0 0 8193 1
+100 100
+0~ 0~ 0~ 3~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 500
+A
+18 50
+A
+19 50
+A
+24 -25
+A
+23 -25
+A
+307 -1
+#48
+potion luck quest item~
+a potion of luck~
+A luck potion is here.~
+~
+10 268435521 0 0 0 1 1
+100 100
+0~ luck shield~ reserved~ reserved~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#49
+book gods quest item~
+a Book of the Gods.~
+A Book of the Gods is here.~
+~
+40 65 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+5 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#50
+grepper~
+a grepper~
+A little grepper lies here.~
+~
+5 0 0 0 0 8193 100
+100 100
+0~ 1~ 2~ 9~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#51
+amulet lost quest item~
+the Amulet of the Lost~
+The Amulet of the Lost sits on the ground, pulsing with immense power.~
+~
+9 805306432 8192 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+75 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -10
+A
+13 250
+A
+12 250
+A
+25 83
+A
+24 -10
+A
+19 20
+A
+18 20
+#52
+gauntlets archaic strength~
+the Gauntlets of Archaic Strength~
+A set of incredibly powered gauntlets lies on the ground here.~
+~
+13 268435521 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+75 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -20
+A
+19 20
+A
+18 15
+A
+25 75
+A
+12 200
+A
+13 200
+#53
+wine bottle red~
+a bottle of red wine~
+A bottle of wine lies here.~
+~
+10 268435456 0 0 0 1 1
+100 100
+99~ cancellation~ stone skin~ infravision~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#54
+bottle wine white~
+a bottle of white wine~
+A bottle lies here.~
+~
+10 268435456 0 0 0 1 1
+100 100
+99~ invis~ detect evil~ sanctuary~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#55
+bottle wine old~
+an old bottle of wine~
+A bottle of wine lies here.~
+~
+8 268435456 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+2 59
+reserved~
+0 0
+0 0 0
+#56
+bottle wine half-empty~
+a half-empty bottle of wine~
+A bottle of wine lies here.~
+~
+17 0 0 0 0 1 1
+100 100
+100~ 100~ 2~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#57
+bottle wine dusty~
+a dusty bottle of wine~
+A bottle of wine lies here.~
+~
+8 268435456 0 0 0 1025 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#58
+bottle wine strange~
+a strange bottle of wine~
+A bottle of wine lies here.~
+~
+10 268435456 0 0 0 1 1
+100 100
+99~ change sex~ reserved~ reserved~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#59
+bottle fine wine~
+a bottle of fine wine~
+A bottle of wine lies here.~
+~
+8 268435456 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 12000 0
+0 0
+reserved~
+0 0
+0 0 0
+#60
+diamond engagement ring~
+a diamond engagement ring~
+A diamond engagement ring sits here.~
+~
+9 536870915 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 100
+A
+12 100
+A
+25 33
+A
+18 8
+A
+19 8
+A
+24 -8
+A
+23 -8
+#61
+diamond wedding ring~
+a diamond wedding ring~
+A diamond wedding ring sits on the ground.~
+~
+9 536870915 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 150
+A
+12 150
+A
+25 50
+A
+18 10
+A
+19 10
+A
+23 -10
+A
+24 -10
+#62
+roll leather skin~
+%d yards of %s leather~
+A roll of %s looking leather has been discarded.~
+~
+36 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#63
+name~
+%s's Leather %s of %s~
+A piece of leather armor has been left upon the ground, forgotten.~
+~
+9 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#64
+needle~
+a long needle and coarse thread~
+A long needle has been lost upon the ground.~
+~
+41 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#65
+excalibur~
+excalibur~
+The legendary blade, Excalibur, is embedded in a gleaming granite slab.~
+~
+5 65 0 0 0 8192 1
+100 100
+0~ 100~ 500~ 3~
+5 40000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 200
+A
+18 200
+A
+107 -1
+A
+106 -1
+A
+301 -1
+#66
+tissue~
+a tissue~
+A tissue is here.~
+~
+19 0 0 0 0 1 107
+100 100
+1~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#67
+box tissues~
+a box of tissues~
+A box of tissues is here.~
+~
+13 0 0 0 0 1 107
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+1 66
+reserved~
+0 -1
+0 0 0
+#68
+Wedding Altar~
+the Chapel's Altar~
+An altar sits at the north end of the room.~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#69
+gate safety~
+gate to Safety~
+A large gate stands before you, the gate to safety.~
+~
+29 0 0 0 0 0 1
+100 100
+25001~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#1
+The Void~
+~
+~
+You are floating in nothing.
+~
+0 393228 1
+Rd     0
+S
+#2
+Limbo~
+~
+~
+You are floating in a formless void, detached from all sensation of
+physical matter, surrounded by swirling, glowing light, which fades into the
+relative darkness around you without any trace of edges or shadow.  There is
+a "No Tipping" notice pinned to the darkness.  
+There is also a "No Wagering" notice pinned too, but that don't count.
+~
+0 131084 1
+Rd     0
+S
+#3
+&zHell Hole~
+~
+~
+~
+0 1208360972 0
+Rd     0
+S
+#4
+Coder's Room~
+~
+~
+Mwhuahaha, this room *isn't* going to get turned into 1 over and over.
+So there!!! Hah!... Prepare to die ninny!
+~
+0 1207960068 0
+Rd     0
+D1
+~
+~
+0 0 4
+D5
+~
+~
+0 0 25000
+S
+#5
+Wedding Chapel~
+~
+~
+You are in a cozy little wedding chapel.  Looking around, you see very
+comfortable benches for the guests, and a podium at the front of the chapel
+where the wedding takes place.  You see that the only exit is to the south,
+towards Methidoral.  
+~
+0 263180 0
+Rd     0
+D2
+~
+~
+0 0 25001
+S
+#6
+&RHell~
+~
+~
+&RUh oh!  The immortals finally decided to punish you, and have cast you
+into the deepest pits of Hell!  You stand in the center of an enormous
+cavern lit by the reddish glow of huge, steaming fissures that lie on the
+ground.  The cavern is so large that you can barely make out the walls
+through the thick black smoke that fills the air with an acrid stench. 
+Flames lick randomly along the ground, and the heat is undescribably
+oppressive.  You hear a shuffling sound behind you; turning, you behold a
+fearsome daemon.  Standing 12 feet tall, with huge muscles rippling horribly
+under bright red skin, he is the most frightening thing you have ever seen. 
+He speaks to you in a booming, terrible voice: "For your crimes, mortal, the
+worst punishment possible has been ordained!  Gaze upon this, and tremble!" 
+With that, he makes a motion and a chair materializes.  You feel compelled
+to sit on it, after which thick metal bands wrap around your arms and legs. 
+A video screen appears, as well as a slide projector.  As the first screams
+of agony rip from your throat the daemon begins to speak: "Now THIS is when
+we visited the cheese factory in Wisconsin.  There's Uncle Roy waving at the
+camera...  And look at the cow!  And another one!  Here's when the car broke
+down and we had to wait for a tow truck.  Here we are, still waiting......" 
+~
+0 8840204 0
+Rd     0
+S
+#7
+Jalen's room~
+~
+~
+This is Jalen's Room
+~
+0 4 0
+Rd     0
+S
+#8
+&rHell~
+~
+~
+&RHere you find yourself in a plane of eternal fire.  Flames lick and
+dance at your hands and feet, and peer intently at your eyes, just on the
+verge of being able to taste you.  You wonder what you could have possibly
+done to end up here...  Perhaps you should rethink your actions of the past,
+you believe it is punishment.  &w 
+~
+0 145155084 0
+Rd     0
+E
+plaque~
+~
+S
+#10
+The Trashyard~
+~
+~
+This huge yard is filled with massive piles of assorted trash and junk. 
+Assorted heaps of rotting food lie next to piles of discarded weapons and
+equipment, and rats, mice, insects, and other assorted vermin scamper
+around.  You get the feeling that if you dropped something here, it would be
+impossible to find again.  
+~
+0 394244 0
+Rd     0
+S
+#20
+none~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#22
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#26
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#27
+none~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#30
+Limbo~
+~
+~
+~
+0 8388620 0
+Rd     0
+S
+#31
+Limbo~
+~
+~
+~
+0 132108 0
+Rd     0
+D2
+~
+~
+0 0 0
+S
+#32
+Limbo~
+~
+~
+~
+0 435212 0
+Rd     0
+S
+#33
+Nowhere~
+~
+~
+You are nowhere...therefore you see nothing!
+~
+0 131084 0
+Rd     0
+S
+#37
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#50
+The Immortal Bar~
+~
+~
+You stand in the legendary Immortal's Bar, the drinking establishment of
+the gods.  Beautiful nymph waitresses carry foaming tankards of ale to the
+various tables, around which are grouped the deities of a hundred different
+pantheons.  The massive arched ceiling is covered with frescos which depict
+the mighty works the gods have performed, and a beautiful stained glass
+window shoots a shaft of multicolored light into the center of the bar. 
+Various immortal entities are constantly materializing and dematerializing
+as they pop in for a quick beer before returning to their home plane.  
+~
+0 393222 0
+Rd     0
+S
+#51
+The House of Aurious~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#55
+Inside the Bottle~
+~
+~
+By some bizarre twist of fate, you have been shrunk to a fraction of your
+original size, and now stand ankle-deep in wine.  The world outside the
+bottle is distorted and strange, and already the fumes are beginning to make
+you feel dizzy...  
+~
+0 393216 0
+Rd     0
+D2
+~
+~
+0 0 21027
+S
+#57
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 57
+S
+#58
+a rume~
+~
+~
+U r in a big rume their r maney monstres and dragins hear and u r scaired
+o no 1 of the monsters eats you all up u r ded 
+~
+0 4 0
+Rd     0
+S
+#66
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#67
+The Immortal Shower Room~
+~
+~
+You have entered a large room full of steam.  Through the mist you see
+the bronzed forms of various gods and goddesses as they writhe beneath the
+showers of warm water (and at times each other's touch).  
+~
+0 268435468 0
+Rd     0
+S
+#69
+Frag's Hovel~
+~
+~
+You are in a small, miserable, dwelling (for those of you nincompoops who
+don't know what a HOVEL is).  It's dark, dank, and cold.  At one end of the
+room you see a sorry excuse of a rusty, squeaky bunkbed.  Obviously, neither
+of the beds are made.  A dirty, ragtorn teddy bear sleeps heavily on the
+lower bunk.  You see, to your dismay, TWO clock radios, both of which are
+ringing, which shows that this room was made for TWO people to sleep in,
+although it's barely 10 X 12 feet.  Papers, books, and laundry are thrown
+everywhere, with two computers astrally linked to the world of Envy.
+~
+0 393230 1
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 5 spec_cast_mage
+M 6 spec_cast_adept
+M 8 spec_fido
+M 9 spec_cast_psionicist
+M 10 spec_cast_cleric
+M 13 spec_cast_mage
+M 31 spec_cast_mage
+M 69 spec_breath_any
+S
+
+
+
+#GAMES
+M 69 game_high_dice~ 5000 100 0
+S
+
+
+
+#RESETS
+M 0 1 1 2
+O 0 69 0 3
+O 0 68 0 5
+O 0 6 0 8
+M 0 35 1 10
+M 0 65 1 50
+S
+
+
+
+#SHOPS
+32 13 0 0 0 0 100 100 0 24
+43 2 10 3 4 0 100 45 9 23
+65 0 0 0 0 0 100 100 0 2400
+0
+
+
+
+#$

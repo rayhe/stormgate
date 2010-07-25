@@ -1,0 +1,1211 @@
+#AREADATA
+Name        {  5-10} The Goblin Fortress~
+Builders    None~
+VNUMs       11951 12000
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Zhyril~
+Llevel      0
+Ulevel      0
+Sounds      You hear guttural shouting in the distance.~
+Music       u6_melee.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#11951
+goblin sentry~
+the goblin sentry~
+A goblin sentry leaps to the attack!
+~
+A small but muscular figure garbed in tattered leather armor.  He peers
+at you with a malevolent gaze.  
+~
+35 40 0 0 0 -600 S
+2 1 4 4 20 20d0+0 0d0+30
+20 0 0
+0 0 1
+0 0 0
+>act_prog ~
+~
+>greet_prog 100~
+if ispc($n) then
+  yell Intruders!  To the gate!
+  mpecho You hear shouts and cries from within the castle!
+else emote snarls a greeting.
+endif
+~
+|
+#11952
+goblin vicious~
+a vicious-looking goblin~
+A vicious-looking goblin snarls at you.
+~
+A wretched creature, with glowing red eyes.  
+~
+35 0 0 0 0 -700 S
+3 1 6 6 70 70d0+0 0d0+40
+30 0 0
+0 0 0
+0 0 0
+#11953
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#11954
+goblin~
+a goblin~
+A nasty little goblin leaps at you.
+~
+~
+1 0 0 0 0 -400 S
+6 1 12 12 120 120d0+0 0d0+50
+60 0 0
+0 0 0
+0 0 0
+#11955
+cook goblin vile~
+a vile-looking goblin cook~
+A goblin cook stirs a pot of unidentifiable liquid.
+~
+You don't think you'd like to eat anything he prepared...
+~
+3 0 0 0 0 -500 S
+6 1 12 12 120 120d0+0 0d0+0
+60 0 0
+0 0 1
+0 0 0
+#11956
+goblin large~
+a large goblin~
+A large goblin sneers evilly at you.
+~
+A large, powerfully-built goblin warrior, with grey skin and green hair.  
+~
+3 0 0 0 0 -600 S
+6 1 12 12 100 100d0+0 0d0+40
+60 0 0
+0 0 0
+0 0 0
+#11957
+wolf cave cavewolf~
+a cave-wolf~
+A cave-wolf stares at you with glowing green eyes.
+~
+A large, repulsive-looking creature used by the goblins as mounts, beasts
+of burdens, and in times of hardship, food.  It doesn't look very friendly. 
+~
+3 520 0 0 0 -700 S
+6 1 12 12 120 120d0+0 0d0+0
+60 0 0
+0 0 0
+0 0 0
+#11958
+goblin~
+an ugly goblin~
+A particularly gruesome-looking goblin is here.
+~
+Not very beautiful, even by goblin standards.
+~
+1 0 0 0 0 0 S
+4 1 8 8 60 60d0+0 0d0+20
+40 0 0
+0 0 0
+0 0 0
+#11959
+goblin bodyguard~
+a goblin bodyguard~
+A large goblin bodyguard glowers at you.
+~
+A larger-than-average goblin, dedicated to protecting Grumkull from the
+likes of you.  
+~
+35 0 0 0 0 -500 S
+8 1 16 16 160 160d0+0 0d0+40
+80 0 0
+0 0 1
+0 0 0
+#11960
+Grumkull Bonebreaker goblin chief~
+Grumkull~
+Grumkull snarls at you, enraged.
+~
+A short, though well-muscled goblin, Grumkull glares at you furiously. 
+He is garbed in tattered finery, most likely captured from some poor
+traveller.  His gut protrudes out at you, and his oily hair falls in front
+of glowing red eyes which glare from above a mouth filled with pointed
+teeth.  A cowardly, though crafty leader, he rose to the position of chief
+not by force of arms but by murdering his rivals in their sleep.  At his
+side is a delicately-crafted short sword, the hilt of which he toys with
+relentlessly.  His temper is rotten, his stench pungent, and his tremendous
+greed is surpassed only by his manic paranoia.  Any misstep by his
+underlings he considers treachery, and the punishment is invariably death.  
+~
+35 0 0 0 0 -900 S
+10 1 20 20 200 200d0+0 0d0+1000
+100 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+emote screams 'kill them!'
+else
+snarl $n
+endif
+~
+|
+#11961
+goblin large sleeping~
+a large goblin~
+A large goblin is on his back here, snoring.
+~
+His snores seem to echo across the countryside, and one hand still
+clutches a spilled wineskin.  You notice him wearing a key on his belt... 
+Perhaps you can get it without disturbing him.  
+~
+3 131072 0 0 0 -300 S
+9 1 18 18 190 190d0+0 0d0+20
+90 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#11951
+hatchet rusty~
+a rusty hatchet~
+A rusty hatchet lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 1~ 7~ 13~
+4 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11952
+short sword crude iron~
+a crude iron short sword~
+A black short sword lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 2~ 8~ 3~
+6 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11953
+jerkin leather crude~
+a crude leather jerkin~
+A jerkin lies here.~
+~
+9 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+9 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11954
+helm leather~
+a leather helm~
+A leather helm lies here.~
+~
+9 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11955
+spear short~
+a short, broad-bladed spear~
+A short spear lies here.~
+~
+5 0 0 0 0 8193 5
+100 100
+0~ 2~ 10~ 11~
+7 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#11956
+truncheon iron~
+an iron truncheon~
+A cruel-looking iron truncheon lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 2~ 6~ 7~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11957
+dagger long~
+a long dagger~
+A long dagger lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 2~ 7~ 11~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11958
+pot~
+a boiling pot~
+A large iron pot boils here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+40 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11959
+mace crude iron~
+a crude iron mace~
+A crude mace lies here.~
+~
+5 0 0 0 0 8193 3
+100 100
+0~ 3~ 9~ 8~
+14 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11961
+Silverfang short sword silver fang~
+a shortsword named "Silverfang"~
+A gleaming shortsword lies here.~
+~
+5 65 0 0 0 8193 5
+100 100
+0~ 2~ 9~ 3~
+5 48 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 2
+#11963
+chest wooden~
+a large wooden chest~
+A large wooden chest sits here.~
+~
+15 0 0 0 0 1 1
+100 100
+100~ 5~ 0~ 0~
+100 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11964
+gold trinket cheap~
+a cheap gold trinket~
+A cheap trinket lies here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#11965
+gold pile coins~
+a pile of coins~
+A pile of coins lie here.~
+~
+20 0 0 0 0 1 1
+100 100
+200~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#11966
+cape satin~
+a fine satin cape~
+A fine satin cape has been flung here.~
+~
+9 0 1024 0 0 1025 2
+100 100
+0~ 0~ 0~ 0~
+2 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#11967
+key rusty~
+a rusty key~
+A rusty key lies here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#11951
+A small path~
+~
+~
+This small path leads north from the abandoned road, twisting through the
+underbrush.  You notice many sets of footprints in the ground here, and
+tattered bits of cloth and metal are strewn on the ground.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 11952
+D2
+~
+~
+0 0 11986
+S
+#11952
+A small path~
+~
+~
+The narrow path struggles on through the thick bushes.  To the south lies
+the abandoned road, while to the north is more brush.  The terrain is hard
+to navigate; it appears that the path was made by creatures smaller than
+you.  
+~
+0 0 4
+Rd     0
+D0
+~
+~
+0 0 11953
+D2
+~
+~
+0 0 11951
+S
+#11953
+A small path~
+~
+~
+The thick brush seems to come to an end to the north, where you think you
+can make out some sort of grey structure beyond the wall of brambles.  You
+think you can make out strange, high-pitched voices in the wind, and you
+grip your weapon tighter as you see the footprints in the dirt have become
+newer and more noticeable.  
+~
+0 0 4
+Rd     0
+D0
+~
+~
+0 0 11954
+D2
+~
+~
+0 0 11952
+S
+#11954
+Before the Fortress~
+~
+~
+You stand in a small clearing cut against the side of a large hill.
+Before you is a small stone fortress, it's stones chipped and worn
+away with age.  A rotted wooden drawbridge stretches over an empty
+moat, giving you access to a large, rusty gate.  To the south an
+overgrown path cuts through the thick underbrush, while to the east
+and west the vegetation is too thick to pass.  You think you can hear
+voices coming from the fortress.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 11955
+D2
+~
+~
+0 0 11953
+S
+#11955
+On the Drawbridge~
+~
+~
+You stand on a rotted wooden drawbridge, it's aged planks creaking under
+your weight.  Before you to the north is a large, rusty gate; it seems to be
+unlocked.  The strange voices are more noticeable here, and there is no
+longer any doubt in your mind that the place is occupied.  
+~
+0 4 1
+Rd     0
+D0
+~
+gate~
+1 0 11956
+D2
+~
+~
+0 0 11954
+S
+#11956
+Inside the Fortress~
+~
+~
+You stand just inside the small fortress.  To the south a large, rusty gate
+leads back into the countryside, while to the east and west small passages
+run around the fortress.  To the north is a large oaken door.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 11972
+D1
+~
+~
+0 0 11957
+D2
+~
+gate~
+1 0 11955
+D3
+~
+~
+0 0 11963
+S
+#11957
+A passageway~
+~
+~
+This narrow passageway runs east and west through the fortress.  Arrow
+slits in the wall provide an avenue for archers to attack their enemies,
+though it seems as though this fortress hasn't faced a siege in many a year.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 11958
+D3
+~
+~
+0 0 11956
+S
+#11958
+A passageway~
+~
+~
+This passageway runs east and west through the fortress.  To the north is
+a doorway into a darkened room; whatever door once covered the doorway has
+rotted away.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 11959
+D1
+~
+~
+0 0 11960
+D3
+~
+~
+0 0 11957
+S
+#11959
+A small room~
+~
+~
+This darkened room seems to serve as a sleeping room for the vile goblin
+bandits who inhabit the fortress.  Flea-ridden sleeping pallets and tattered
+clothing lie on the floor.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 11958
+S
+#11960
+A passageway~
+~
+~
+This passageway runs east and west through the fortress.  To the east an
+empty doorway leads into a small, dark room.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 11961
+D3
+~
+~
+0 0 11958
+S
+#11961
+A watchtower~
+~
+~
+This small tower rises out of the castle, providing a partial view of the
+surrounding countryside.  A rickety wooden ladder leads up, to the top of
+the tower.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 11960
+D4
+~
+~
+0 0 11962
+S
+#11962
+The top of the tower~
+~
+~
+You stand at the top of the watchtower, surrounded by stone crenallations
+dulled by age and weather.  To the south is a vast area of shrub; beyond it
+you think you can make out a road.  To the north a large hill blocks your
+view.  A pile of rocks lies here, ready to be rained down on unsuspecting
+foes.  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 11961
+S
+#11963
+A passageway~
+~
+~
+This narrow passageway runs west from the fortress gate.  The walls are
+lined with rotting tapestries, and empty torch sconces.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 11956
+D3
+~
+~
+0 0 11964
+S
+#11964
+A passageway~
+~
+~
+The passageway runs east and west through the small fortress.  To the
+north is a small wooden door; strange smells emanate from behind it.  You
+hear gutteral voices echoing through the corridor.  
+~
+0 8 0
+Rd     0
+D0
+~
+door~
+3 0 11966
+D1
+~
+~
+0 0 11963
+D3
+~
+~
+0 0 11965
+S
+#11965
+A passageway~
+~
+~
+The passageway ends at a doorway to the west.  To the east it runs
+towards the fortress' main gate, passing by tapestries and other reminders
+of the place's former glory.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 11964
+D3
+~
+~
+0 0 11971
+S
+#11966
+The kitchen~
+~
+~
+Perhaps this room once produced fine meals for the lord of the fortress. 
+Now it serves as the goblin's cookroom.  Pots of vile-smelling liquid bubble
+over as they sit on large cookfires, and unidentifiable slabs of meat are
+strewn about the floor.  To the north, a curtain-covered doorway opens up
+into another corridor, while a trapdoor in the floor leads down.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 11969
+D2
+~
+door~
+3 0 11964
+D5
+~
+trapdoor~
+1 0 11968
+S
+#11968
+The cellar~
+~
+~
+This dark, musty cellar is home to several large boxes and kegs.  Opening
+them reveals half-rotted food and rancid water that you wouldn't serve to
+your worst enemy.  A crude passageway leads west into another room, while a
+trapdoor in the ceiling gives you access to the main floor of the fortress. 
+~
+0 9 0
+Rd     0
+D3
+~
+~
+0 0 11970
+D4
+~
+trapdoor~
+1 0 11966
+S
+#11969
+A small corridor~
+~
+~
+This small corridor connects the kitchen to the south to the great hall
+to the north.  Foul-smelling smoke drifts through the corridor, filling your
+lungs.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 11975
+D2
+~
+~
+0 0 11966
+S
+#11970
+A filthy cave~
+~
+~
+This cave has been crudely hacked out of the bedrock that holds up the
+fortress.  Animal carcasses cover the floor, and the stench in here is
+incredible.  It seems the goblins board some sort of disgusting creature
+here.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 11968
+S
+#11971
+A watchtower~
+~
+~
+You stand on the bottom floor of a stone watchtower jutting up from the
+fortress.  A wooden ladder once led up to the top floor, but only it's frame
+survives.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 11965
+S
+#11972
+A wide hallway~
+~
+~
+This hallway runs from the entrance of the fortress, north to a wide
+stairway leading up.  To the east is a large door.  On the ground is a
+rotting carpet, it's once-beautiful pattern warped by the years.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11974
+D1
+~
+~
+0 0 11973
+D2
+~
+~
+0 0 11956
+S
+#11973
+A room~
+~
+~
+This large room seems to be the favorite hang-out of the goblin bandits. 
+Rusty weapons are stacked haphazardly against the wall, and the fly-ridden
+remains of former dinners are spilled on the ground.  Against one wall is
+the statue of a noble-looking lord, arrayed for battle; the goblins seem to
+use him as a place to hang their clothing.  A portrait of a woman on another
+wall is stuck full of throwing knives.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 11972
+S
+#11974
+A wide hallway~
+~
+~
+The hallway continues north-south through the heart of the fortress.  To
+the north a wide stairway leads up into the gloom, while to the west is a
+huge carved wooden door.  Faded portraits stare at you from the walls.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11976
+D2
+~
+~
+0 0 11972
+D3
+~
+door~
+1 11967 11975
+S
+#11975
+The Great Hall~
+~
+~
+You are standing in what was once the great hall of the fortress, but now
+serves as the throne room for the gruesome chief of the goblin bandits; the
+feared Grumkull Bonebreaker.  The room is a mess, filled with the splintered
+remains of furniture, puddles of foul goblin ale, and the ill stench of
+goblin bodies.  The only remaining piece of furniture, a huge wooden chair
+once used by the lord of the fortress now serves as Grumkull's throne, where
+he passes judgement down on his cowering underlings.  To the east is a large
+door leading out into the main hall of the fortress, while to the north an
+empty doorway leads into a small room.  To the south is a small corridor,
+emitting an awful rancid stench.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 11985
+D1
+~
+door~
+1 11967 11974
+D2
+~
+~
+0 0 11969
+S
+#11976
+The staircase~
+~
+~
+This wide stone staircase ascends to the second floor of the fortress. 
+The steps are cracked and stained with a strange ichor, and you tread
+carefully.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 11974
+D4
+~
+~
+0 0 11977
+S
+#11977
+The upstairs landing~
+~
+~
+You stand at the top of a wideflight of stone steps.  To the west and
+east are small passages which curve around to the south.  The upstairs of
+the fortress isn't quite as run-down as the main floor; some of the
+tapestries are almost legible.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 11978
+D3
+~
+~
+0 0 11979
+D5
+~
+~
+0 0 11976
+S
+#11978
+A small corridor~
+~
+~
+This small corridor runs past a large staircase to the west, and turns to
+the south here.  In the east wall is a sturdy wooden door.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+7 11967 11981
+D2
+~
+~
+0 0 11980
+D3
+~
+~
+0 0 11977
+S
+#11979
+A small corridor~
+~
+~
+This small corridor runs east and west past a large stone stairway, and
+curves south towards an large opening through which you can see the 
+sky.  To the west is a wooden door, surprisingly sturdy considering the
+age of the fortress.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11977
+D2
+~
+~
+0 0 11982
+D3
+~
+door~
+1 0 11983
+S
+#11980
+The balcony~
+~
+~
+This large stone balcony juts out from the main body of the fortress. 
+Over the crenellations to the south the countryside unfolds before you; the
+breathtaking beauty is diminished, somehow, by the foul goblin stench in the
+air.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11978
+D3
+~
+~
+0 0 11984
+S
+#11981
+The treasure room~
+~
+~
+A small room, overflowing with the goblin's "treasure".  This consists
+mainly of cheap metal trinkets and broken weapons, though you may be able to
+find something of value if you sift through the junk.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+7 11967 11978
+S
+#11982
+The balcony~
+~
+~
+You stand on a large stone balcony, overlooking the fortress; To the
+south are large stone crenellations, beyond which you can make out the
+terrain.  Thick brush almost completely covers an abandoned road that runs
+south from the fortress.  You think you can make out the city of Methidoral
+in the distance.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11979
+D1
+~
+~
+0 0 11984
+S
+#11983
+A storage room~
+~
+~
+This small room is being used to store all manner of junk.  The broken
+remains of wooden boxes are scattered on the floor, and piles of crude
+goblin clothing litter the room.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+1 0 11979
+S
+#11984
+The balcony~
+~
+~
+This large stone balcony protrudes from the top of the fortress. 
+Protected by crenellations, it gives a bird's eye view of the surrounding
+countryside.  Several wineskins are scattered here, and a sleeping pallet is
+pulled against the wall.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11980
+D3
+~
+~
+0 0 11982
+S
+#11985
+Grumkull's bedroom~
+~
+~
+A large, filthy room, ankle-deep in soiled bedclothes and spoiled food. 
+A large bed is against the wall, it's rotting mattress sagging in the
+middle.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 11975
+S
+#11986
+An abandoned road~
+~
+~
+This abandoned road runs north and south through the countryside.  On
+both sides of you are large thickets, far too thick to enter.  The road is
+potted and scarred, and looks like it hasn't been used in years.  To the
+north the road crumbles, becoming instead an overgrown path.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 11951
+D2
+~
+~
+0 0 11987
+S
+#11987
+An abandoned road~
+~
+~
+You are walking along an ill-kept road that stretches north and south
+between large thickets.  Weeds grow from between cracks in the road, and
+constant weathering has made the cobblestones smooth.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 11986
+D2
+~
+~
+0 0 11988
+S
+#11988
+An abandoned road~
+~
+~
+This abandoned road looks as if it was a thriving thoroughfare at one
+time, but now it is pitted and gutted.  On either side of you is thick
+brush, far too dense to enter.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 11987
+D2
+~
+~
+0 0 11989
+S
+#11989
+An abandoned road~
+~
+~
+You stand on a once-mighty road stretching through the countryside.  For
+some reason. travellers abandoned it's use ages ago, and it now lies
+pockmarked with holes where weeds poke out.  To the north the road goes on,
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 11988
+D2
+~
+~
+0 0 18118
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 11951 1 11956
+E 0 11951 0 20
+M 0 11954 1 11961
+M 0 11956 1 11962
+E 0 11955 0 20
+M 0 11955 2 11966
+O 0 11958 0 11966
+M 0 11954 2 11969
+M 0 11957 3 11970
+M 0 11958 1 11971
+E 0 11954 0 6
+M 0 11954 1 11972
+M 0 11956 2 11973
+E 0 11952 0 20
+M 0 11954 1 11975
+E 0 11956 0 20
+M 0 11960 1 11975
+E 0 11961 0 20
+M 0 11959 2 11975
+M 0 11959 2 11975
+E 0 11959 0 20
+M 0 11959 1 11975
+M 0 11960 1 11975
+M 0 11960 1 11975
+M 0 11952 1 11975
+E 0 11953 0 5
+O 0 11963 0 11981
+P 0 11964 0 11963
+P 0 11965 0 11963
+P 0 11966 0 11963
+M 0 11952 1 11982
+E 0 11956 0 20
+M 0 11954 1 11983
+M 0 11961 1 11984
+G 0 11967 0
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,3008 @@
+#AREADATA
+Name        { 75-90} The Black Tower~
+Builders    Zhyril~
+VNUMs       3300 3399
+Security    100
+Recall      3343
+Flags       288
+Version     107
+Creator     Zhyril~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#3300
+guard robed black~
+&za black-robed guardsman&w~
+&zA black-robed guardsman stands here, motionless.
+~
+A tall, menacing figure in black armor, his face totally covered by his
+dark cowl.  Gleaming red eyes stare at you, and his fingers tighten around
+his pike as he notices your scrutiny.  
+~
+3 142606464 0 0 0 0 S
+75 1 150 150 25000 25000d0+0 0d0+0
+750 0 0
+0 0 1
+0 0 0
+#3301
+spirit guardian~
+a guardian spirit~
+A guardian spirit wafts quietly by.
+~
+A grim-looking spectre, with eyes of cold fire.
+~
+8257 8486914 0 0 0 0 S
+80 1 160 160 30000 30000d0+0 0d0+0
+800 0 0
+0 0 0
+0 0 0
+#3303
+master mage ~
+a master of the Black Tower~
+A master mage is here, conducting experiments.
+~
+An ancient, though powerful-looking wizard.  His withered face tenses in
+concentration as he deftly manipulates bubbling elixirs and carefully notes
+down on papyrus his results.  Perhaps you shouldn't bother him...
+~
+3 67117064 0 0 0 -700 S
+85 1 170 170 30000 30000d0+0 0d0+1000
+850 0 0
+0 0 1
+0 0 0
+#3304
+adept tower black~
+an adept of the Black Tower~
+A black-robed adept brushes past you.
+~
+A tall, slight youth dressed in simple black robes.  Despite his young age,
+his eyes gleam with a measure of power and mastery.
+~
+65 8200 0 0 0 -500 S
+80 1 160 160 28000 28000d0+0 0d0+1000
+800 0 0
+0 0 1
+0 0 0
+#3305
+cloaked gatekeeper~
+a cloaked gatekeeper~
+A cloaked gatekeeper stands here.
+~
+You can't make out his features, cloaked as he is.  Around his neck hangs
+a large silver key.  
+~
+67 40 0 0 0 0 S
+60 1 120 120 90000 90000d0+0 0d0+0
+600 0 0
+0 0 0
+12 0 0
+>greet_prog 100~
+say What is the sign?
+~
+>speech_prog sign~
+emote looks impatient.
+say Yes, you must tell me the sign of our order if you want to enter.
+say Prove you know our ethos.
+say Do you need a hint?
+emote sarcastically looks you over.
+~
+>speech_prog hint yes~
+sigh
+say Very well...
+say Think....entropy.
+~
+>speech_prog chaos~
+say Enter, then.
+unlock door north
+emote ushers in the newest guests of the Tower.
+open door north
+mpforce $n north
+close door north
+lock door north
+~
+|
+#3306
+cook~
+a black-garbed cook~
+A surly-looking cook prepares food here.
+~
+A short, thick-bodied man whose face is darkened with soot and grease.
+~
+3 0 0 0 0 0 S
+70 1 140 140 15000 15000d0+0 0d0+1000
+700 0 0
+0 0 1
+0 0 0
+#3307
+Darhek mad mage~
+Darhek the Mad~
+A strange-looking mage stands here, smiling.
+~
+Once a master of the Black Tower, Darhek's mind was changed when he sustained
+a psionic backlash during an experiment.  His fellow magi were forced to lock
+him here after one of his more violent outbursts resulted in the deaths of
+several adepts and guardsmen.  Once a dour, stern man of little personal
+charm, Darhek is now a jolly, likeable chap whose only flaw is his tendency
+to disintegrate those around him when riled.
+~
+1 0 0 0 0 0 S
+85 1 170 170 30000 30000d0+0 0d0+0
+850 0 0
+0 0 1
+0 0 0
+>speech_prog hello hi greetings yo~
+say Greetings, my young friend!
+emote beams.
+~
+>speech_prog mad crazy insane~
+say Mad?  Of course I'm not mad.
+emote laughs heartily.
+say I'm as sane as the next man.
+~
+>speech_prog ~
+~
+|
+#3309
+guard guardsman~
+a guardsman~
+A guardsman sleeps here.
+~
+Obviously a lower-echelon member of the Tower.
+~
+3 131072 0 0 0 0 S
+40 1 80 80 0 0d0+0 0d0+100
+400 0 0
+0 0 1
+0 0 0
+#3310
+prisonkeep jharoush~
+Jharoush the Prisonkeep~
+Jharoush the Prisonkeep bars your way.
+~
+A big, powerful-looking man, whose shirtless torso glistens repulsively
+in the torchlight.  His skin is an unhealthy pallor, and his greasy hair
+hangs down in oily ringlets.  He grunts when he sees you.  
+~
+67 56 0 0 0 -600 S
+70 1 140 140 30000 30000d0+0 0d0+10
+700 0 0
+0 0 1
+32786 0 0
+#3311
+warrior elite black tower~
+an elite warrior of the Black Tower~
+An elite warrior of the Black Tower stands here.
+~
+A large, bulky figure armored all in black.  
+~
+3 234881024 0 0 0 -500 S
+70 1 140 140 35000 35000d0+0 0d0+0
+700 0 0
+0 0 1
+0 0 0
+#3313
+archmaster tower black mage~
+the Archmaster of the Black Tower~
+The Archmaster of the Black Tower turns to face you, his eyes blazing with fury!
+~
+Before you stands the Archmaster, a mage of incredible age and power.  A
+black cloak of velvet, adorned with silver runes hangs from his frail body,
+and his hands clutch a staff of power.  A feeling of tremendous power
+emanates from his slight form, and your skin tingles from the magical forces
+that have been unleashed in this room. 
+~
+3 167772168 0 0 0 -1000 S
+99 1 198 198 50000 50000d0+0 0d0+1000
+990 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say You dare trespass on my sanctum?!
+say Then feel my wrath!
+cast 'stigeon mists'
+~
+|
+#3324
+necromancer mage~
+a necromancer of the Black Tower~
+A black-robed necromancer conducts experiments.
+~
+A cadaverous-looking man with cold, cruel eyes.
+~
+3 0 0 0 0 -900 S
+90 1 180 180 20000 20000d0+0 0d0+100
+900 0 0
+0 0 1
+0 0 0
+#3325
+adept black tower~
+an adept of the Black Tower~
+An adept stands here, assisting in an experiment.
+~
+He's intent on his work.
+~
+3 0 0 0 0 -200 S
+50 1 100 100 20000 20000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#3330
+rat~
+a rat~
+A rat scampers past you.
+~
+~
+3 0 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>death_prog 20~
+mpecho Rats continue to swarm around your feet.
+mpmload 3331
+~
+|
+#3331
+rat~
+a rat~
+A nasty-looking rat glares at you balefully.
+~
+A vicious little creature.
+~
+3 0 0 0 0 0 S
+1 1 2 2 5 5d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>death_prog 20~
+mpecho Another rat drops from the ceiling onto your shoulder, and falls to the ground.
+mpmload 3330
+~
+|
+#3332
+rat~
+a rat~
+A large rat runs acros your foot.
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 10 10d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+>death_prog 25~
+mpmload 3333
+mpecho Rats continue to pour through holes in the wall.
+mpmload 3330
+~
+|
+#3333
+rat~
+a rat~
+Rats swarm across the floor.
+~
+~
+3 0 0 0 0 0 S
+1 1 2 2 5 5d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#3335
+hound huge black~
+a huge black hound~
+A huge black hound sleeps here.
+~
+A huge beast, with fragments of flesh hanging from his teeth.
+~
+3 131072 0 0 0 0 S
+20 1 40 40 2000 2000d0+0 0d0+0
+200 0 0
+0 0 0
+0 0 0
+#3340
+mage tower black~
+a mage of the Black Tower~
+A black-robed mage sits here, studying.
+~
+A narrow-faced man whose attention is solely dedicated to the book before
+him.  
+~
+3 0 0 0 0 -300 S
+85 1 170 170 30000 30000d0+0 0d0+0
+850 0 0
+0 0 1
+0 0 0
+#3341
+adept mage black tower~
+an adept of the Black Tower~
+An adept sits here, studying.
+~
+He looks like he's been here for a while; his glassy-eyed stare is
+riveted on the book before him.  
+~
+3 0 0 0 0 -200 S
+75 1 150 150 25000 25000d0+0 0d0+100
+750 0 0
+0 0 1
+0 0 0
+#3345
+sorcerer black tower~
+a sorcerer of the Black Tower~
+A mighty sorcerer of the Black Tower is here, struggling to contain the demon!
+~
+A tall, imposing man dressed all in black.  At the moment he is chanting
+powerful words of magic in an attempt to control the demon he has summoned. 
+~
+3 0 16 0 0 0 S
+90 1 180 180 30000 30000d0+0 0d0+0
+900 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+mpecho A fearful sight greets your entry!  Several black-robed mages
+mpecho are trying to contain a huge demon of fearful countenance which they
+mpecho have summoned!  At your entry the chief sorcerer turns to face you!
+growl
+say Intruders!
+mpecho One of the mages loses his concentration, and the demon breaks loose!
+ 
+mpecho &Ran enormous, slavering demon's punch deals GODLIKE DAMAGE to an adept!
+mpecho an adept is DEAD!!
+mpecho You hear an adept's death cry.
+mpecho &Ran enormous, slavering demon &wgets &wthe corpse of an adept.
+mpecho &Ran enormous, slavering demon &weats &wthe corpse of an adept.
+mpecho &Ran enormous, slavering demon &w turns to face you!
+mpforce demon mpkill $n
+~
+|
+#3346
+adept black tower~
+an adept of the Black Tower~
+An adept frantically tries to cast protective spells.
+~
+He looks worried.
+~
+3 0 0 0 0 -200 S
+50 1 100 100 25000 25000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#3360
+demon slavering huge~
+&Ran enormous, slavering demon~
+&RAn enormous demon is here, screaming with rage!
+~
+It's a HUGE creature with a nasty-looking set of appendages, and a set of
+slavering fangs which turn you white with fear.  
+~
+35 8 16 0 0 -1000 S
+95 1 190 190 40000 40000d0+0 0d0+0
+950 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+mpecho &PAn adept is here, striving to hold the demon in check.
+mpecho &Ran enormous demon roars in anger!&w
+~
+>death_prog 100~
+mpecho a sorcerer of the Black Tower glares at you angrily.
+mpecho a sorcerer of the Black Tower says 'You will pay for your meddling!'
+mpforce sorcerer mpkill $n
+mpforce mage mpkill $n
+~
+|
+#3361
+mage tower~
+a mage of the Black Tower~
+A mage of the Black Tower is here, striving with the demon.
+~
+A fierce-looking man.
+~
+3 0 0 0 0 -400 S
+70 1 140 140 0 0d0+0 0d0+0
+700 0 0
+0 0 1
+0 0 0
+>death_prog 100~
+mpecho An adept quietly slips out of the room.
+mppurge adept
+mpat 3342 mpmload 3369
+mpat 3342 mpmload 3371
+mpat 3342 mpmload 3371
+~
+|
+#3369
+sentinel high black tower~
+a high sentinel of the Black Tower~
+A high sentinel stands here, armored in black.
+~
+A tall, powerfully-built man in black armor.
+~
+35 167772168 0 0 0 -500 S
+80 1 160 160 30000 30000d0+0 0d0+100
+800 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n)== 1
+mpecho An adept points at you.  "The intruders!"
+say You shall die, stranger!
+kill $n
+mpmload 3304
+mpforce adept cast 'earthquake'
+endif
+~
+|
+#3370
+answering machine~
+an answering machine~
+An answering machine is here.  SAY PLAY TO HEAR MESSAGE.
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>speech_prog play~
+say Ok, I'm REALLY going to bed this time :)
+hug mirab
+say see ya later, sweetie
+~
+|
+#3371
+guardsman guard~
+a Black Tower guard~
+A guard leaps to the attack!
+~
+~
+33 0 0 0 0 -500 S
+60 1 120 120 25000 25000d0+0 0d0+0
+600 0 0
+0 0 1
+0 0 0
+>act_prog ~
+~
+|
+#3372
+Archimedes sage~
+Archimedes the Sage~
+Archimedes the Sage breaks into a smile at your entry.
+~
+A tall, elderly man with twinkling eyes and a scraggly beard.  He is a
+renowned mage and explorer.  
+~
+3 0 0 0 0 0 S
+99 1 198 198 30000 30000d0+0 0d0+0
+990 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Ah!  A rescue, methinks!
+say Greetings, brave adventurers, and you have my thanks for providing me
+say with a way out of this vile prison...this pesky anti-magic field
+say foils my spells, don't you know.
+emote winks at you.
+say I think a reward is definitely in order...hrrmmm...let me think.
+emote appears to be lost in thought.
+say Ah, of course!
+emote snaps his fingers.
+emote takes off his spectacles.
+You might find this useful in your journeys...
+give glasses $n
+mpecho Archimedes leaves to the west, summons a portal, and enters it!
+mpat 3370 mpoload 3398
+mpgoto 3399
+~
+|
+#3378
+imp~
+an imp~
+An imp scampers around you.
+~
+~
+1 262144 0 0 0 -400 S
+5 1 10 10 50 50d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+#3380
+no name~
+a statue~
+A statue reaches towards you!
+~
+It's made of some hard black substance...looks impervious to force!
+~
+35 0 0 0 0 0 S
+40 1 80 80 30000 30000d0+0 0d0+0
+400 0 0
+0 0 0
+8 0 0
+#3383
+golem huge~
+a huge golem~
+A huge, motionless shape stands here.
+~
+This bulky humanoid shape stands almost 10 feet tall and looks to be made
+of some stone-like substance.  The featureless face is devoid of eyes, but
+you get the eerie feeling that it can see you.  
+~
+67 0 0 0 0 0 S
+70 1 140 140 60000 60000d0+0 0d0+0
+700 0 0
+0 0 0
+164020 0 0
+#3390
+monolith~
+a statue~
+A statue stands here.
+~
+~
+3 0 0 0 0 0 S
+10 1 20 20 1000 1000d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+>speech_prog time~
+say Correct.
+unlock north
+open north
+~
+|
+#3395
+shadowlord cowardice nosfentor~
+a Shadowlord~
+A Shadowlord hovers before you.
+~
+~
+3 9437280 0 0 0 -1000 S
+99 1 198 198 90000 90000d0+0 0d0+0
+990 0 0
+0 0 0
+34816 0 0
+>act_prog shouts 'Nosfentor'~
+mpgoto $n
+mpemote fades into existence.
+~
+|
+#3396
+customer bank~
+a bank customer~
+A bank customer waits on line.
+~
+~
+3 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#3397
+radio~
+a symphony orchestra~
+A waterproof radio floats here.
+~
+~
+3 16777216 0 0 0 0 S
+99 1 198 198 0 0d0+0 0d0+0
+990 0 0
+0 0 0
+0 0 0
+>speech_prog bach~
+emote starts playing the opening to the first Brandenburg Concerto.
+~
+>rand_prog 50~
+recho The radio starts playing another Barry White song...
+~
+>speech_prog maestro~
+recho The conductor turns expectantly to $n.
+~
+>speech_prog sotto~
+recho The conductor lowers his baton, and the orchestra's playing becomes quieter.
+~
+>speech_prog mozart~
+emote breaks into the overture from Mozart's Marriage of Figaro.
+~
+>speech_prog beethoven~
+emote starts playing Beethoven's Fifth Symphony.
+~
+>speech_prog mussorgsky~
+emote starts playing Mussorgsky's Pictures at an Exhibition.
+~
+>speech_prog ~
+~
+>speech_prog copeland~
+emote starts playing Rodeo.
+~
+>speech_prog handel~
+emote starts playing Handel's Messiah.
+~
+>speech_prog orff~
+recho Suddenly, a choir shuffles in and stands behind the musicians.
+recho With the orchestra accompanying, the choir starts singing the Carmina Burana.
+~
+>speech_prog vivaldi~
+emote starts playing 'Spring' from the Four Seasons.
+~
+>speech_prog chopin~
+emote starts playing an orchestral rendition of Polyneices.
+~
+>speech_prog mirabeau~
+emote starts playing Chopin's Etudes.
+~
+|
+#3398
+guard sabrina woman~
+Sabrina the Guardswoman~
+A tall, incredibly beautiful woman in chainmail stands here.
+~
+A tall, statuesque redhead with the face of an angel and a body to die
+for.  She notices your attention, and glances at you with a smile that turns
+your knees to water.  
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if ispc($n)==1
+look $n
+smile $n
+~
+|
+#3399
+warrior dark~
+the Dark Warrior~
+Before you looms the legendary Dark Warrior, an entity of near limitless power.
+~
+He stands 10 feet tall, and is powerfully muscled.  Dressed all in black
+armor, and wielding a blade of legendary power, the Dark Warrior is known
+throughout the multiverse as a creature that cannot be defeated in battle.  
+~
+3 234906360 84508704 4874240 0 -1000 S
+900 1 1800 1800 90000 90000d0+0 0d0+0
+9000 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#3300
+metal cylinder~
+a metal cylinder~
+A cylinder lies here.~
+~
+8 0 0 0 0 2097153 106
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+4 3301
+reserved~
+0 0
+0 0 0
+>invoke_prog 100~
+0
+mpforce $n wield lightsaber
+~
+|
+#3301
+lightsaber light saber lightsabre~
+a lightsaber~
+A metal cylinder lies here.~
+~
+5 268435459 147456 0 0 8193 106
+100 100
+0~ 400~ 500~ 11~
+0 1 0
+4 3300
+reserved~
+0 0
+0 0 0
+A
+18 4500
+A
+19 9999
+A
+129 -1
+A
+120 -1
+A
+304 -1
+A
+115 -1
+A
+104 -1
+A
+103 -1
+A
+201 -1
+A
+202 -1
+A
+199 -1
+A
+200 -1
+A
+102 -1
+>invoke_prog 100~
+0
+mpforce $n wear cylinder
+~
+|
+#3302
+meat chunk~
+a chunk of meat~
+A greasy-looking chunk of meat lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+4~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3305
+key iron large~
+a large iron key~
+A large iron key lies here.~
+~
+18 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#3310
+heavy iron key~
+a heavy iron key~
+A heavy iron key lies here.~
+~
+18 0 0 0 0 18433 1
+100 100
+0~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3311
+cruel leather whip~
+a cruel leather whip~
+A whip lies here.~
+~
+5 0 0 0 0 8193 60
+100 100
+0~ 10~ 40~ 4~
+0 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 40
+A
+18 18
+A
+19 18
+#3313
+staff archmagi~
+the Staff of the Archmagi~
+A powerful-looking staff lies here, topped with a glowing orb.~
+~
+4 65 0 0 0 16385 80
+100 100
+90~ 20~ 20~ fireball~
+7 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -5
+A
+12 40
+>get_prog 100~
+0
+emote pulses with power.
+~
+>wear_prog 100~
+0
+emote sizzles with energy.
+~
+|
+#3314
+vial boiling~
+a boiling vial~
+A flask full of boiling liquid lies here.~
+~
+10 301989952 0 0 0 1 60
+100 100
+2~ fireshield~ reserved~ reserved~
+3 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#3315
+earplugs plugs ear~
+a pair of earplugs~
+A pair of earplugs lies here.~
+~
+9 0 0 0 0 524289 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+#3316
+tablet black~
+&za black tablet&w~
+(no description)~
+~
+26 0 0 0 0 0 0
+100 100
+30~ bless~ armor~ reserved~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3319
+mirror~
+&Wa mirror&w~
+&WA beautiful mirror stands here.~
+~
+29 0 0 0 0 0 0
+100 100
+18463~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3324
+scroll divination~
+a scroll of Divination~
+A scroll lies here.~
+~
+2 0 0 0 0 1 5
+100 100
+30~ detect evil~  ~  ~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#3325
+key brass~
+&Oa brass key&w~
+&OA brass key lies here.&w~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#3326
+key silver~
+&Wa silver key&w~
+&WA silver key lies here.&w~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#3327
+key gold~
+&Ya gold key&w~
+&YA gold key lies here.&w~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3329
+horn plenty~
+a horn of plenty~
+A horn lies here.~
+~
+4 0 0 0 0 16385 60
+100 100
+20~ 5~ 5~ create food~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+>use_prog 100~
+0
+mpecho As the horn is blown, smoke erupts from the end and fills the area.
+mpecho When it clears, a magnificent feast has been set before you!
+mpat $n mpoload 3339
+mpat $n mpoload 3336
+mpat $n mpoload 3337
+mpat $n mpoload 3338
+mpat $n mpoload 3335
+drop all
+~
+|
+#3330
+sword black~
+a black sword~
+A black sword lies here.~
+~
+5 536870976 0 0 0 8193 60
+100 100
+0~ 10~ 20~ 3~
+7 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+18 15
+#3331
+cloak black~
+a black cloak~
+A dark cloak lies here.~
+~
+9 0 0 0 0 1025 40
+100 100
+3~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3333
+key~
+a key~
+A key lies here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3335
+haunch roast lamb~
+a haunch of roast lamb~
+A haunch of roast lamb sits here on a platter.~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3336
+wine pitcher~
+a pitcher of wine~
+&RA pitcher of wine sits here.&w~
+~
+17 0 0 0 0 16385 1
+100 100
+40~ 40~ 2~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3337
+bread freshly baked~
+a freshly-baked load of bread~
+A loaf of freshly-baked bread lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+12~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3338
+pastry~
+a delicately flaky pastry~
+A delicious-looking pastry lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+2~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3339
+table~
+a table~
+A wooden table covered with food is here.~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+30 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+table~
+A sturdy table.
+~
+#3340
+robe black~
+a black robe~
+A robe lies here.~
+~
+9 64 0 0 0 1025 50
+100 100
+2~ 0~ 0~ 0~
+4 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+A
+12 75
+#3341
+book strange~
+a strange book~
+A book lies here.~
+~
+13 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+book~
+"Zanaric thoun shal tagath zar Bendal fourn.  Quethar?  Quethain send
+tash to grobbin Belezar!  Belezar shand oureth!  Zanan filour koum gefrathi
+stoun..."  
+~
+#3342
+scroll warding~
+a scroll of Warding~
+A scroll lies here.~
+~
+2 64 0 0 0 1 50
+100 100
+50~ shield~ turn undead~ protection evil~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3345
+silver key~
+a silver key~
+A key lies here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3350
+pike long~
+a long pike~
+A pike lies here.~
+~
+5 0 0 0 0 8193 50
+100 100
+0~ 4~ 30~ 11~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 20
+#3360
+staff summoning~
+a staff of Summoning~
+A powerful-looking staff lies here.~
+~
+4 536870976 0 0 0 17408 50
+100 100
+3~ 3~ 3~ ghost shield~
+0 1 0
+5 0
+summon wolf~
+0 0
+0 0 0
+A
+12 10
+#3370
+machine answering~
+(no short description)~
+An answering machine lies here.  SAY PLAY TO HEAR MESSAGE.~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3376
+singing sword~
+a singing sword~
+A musical-looking sword lies here.~
+~
+5 64 0 0 0 8193 20
+100 100
+0~ 10~ 20~ 3~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 20
+A
+13 20
+A
+18 3
+A
+19 10
+>get_prog 100~
+0
+emote sings 'Take me home tonight'
+~
+>wear_prog 100~
+0
+emote sings 'I wanna hold your hand'
+~
+>get_prog ~
+0
+~
+>get_prog ~
+0
+~
+|
+#3380
+statue~
+a statue~
+A large black statue stands here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>look_prog 100~
+0
+mpecho Suddenly, the statue comes to life!
+mppurge statue
+mpmload 3380
+~
+|
+#3384
+key obsidian~
+&zan obsidian key&w~
+&zA black key lies here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3389
+statue~
+a statue~
+&YIt seems the only way to go is south.&w~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+20 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+A large, gloomy statue of a man made out of black stone.  As you stare at
+it, the statue begins to speak!  
+~
+>look_prog 100~
+0
+say I turn rivers to dust,
+say Mountains to sand,
+say Iron to rust,
+say In the end, all fall to my hand.
+say What am I?
+~
+|
+#3390
+book magic~
+a book of magic~
+A leather-wrapped tome lies here.~
+~
+4 0 0 0 0 0 50
+100 100
+50~ 15~ 15~ detect magic~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3391
+archimedes spectacle glasses~
+&WArchimedes' spectacles&w~
+A pair of gold wire-rimmed spectacles lies here.~
+~
+27 257 0 0 0 131073 50
+100 100
+50~ 50~ 50~ identify~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#3392
+vial~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3394
+some cheese~
+some cheese~
+Some cheese lies here.~
+~
+19 0 0 0 0 16385 1
+100 100
+2~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3395
+doombringer~
+an enormous black sword called 'Doombringer'~
+A sword lies here.~
+~
+5 603979845 0 0 0 8193 200
+100 100
+0~ 100~ 900~ 6~
+10 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#3396
+staff crystal~
+a crystal-topped staff~
+A powerful-looking staff lies here.~
+~
+5 536871233 393216 0 0 8193 110
+100 100
+0~ 10~ 80~ 6~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3397
+beer implant~
+a cheese gun~
+A gun lies here.~
+~
+35 536870976 0 0 0 2097153 3
+100 100
+0~ 0~ 0~ reserved~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#3398
+portal glowing~
+&Ca glowing portal&w~
+&CA glowing portal stands here.&w~
+~
+29 0 0 0 0 0 0
+100 100
+3391~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3399
+jewel~
+a mystic jewel embedded in his forehead~
+A strange jewel is here.~
+~
+35 448 0 0 0 4194305 100
+100 100
+0~ 0~ 0~ reserved~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+4 1
+#0
+
+
+
+#ROOMDATA
+#3300
+Path to the Tower~
+~
+~
+You are standing on a broken stone path.  Above you to the north looms a
+huge Black Tower, whose few windows blaze red with flame.  You hear a
+strange rushing sound far in the distant, and a cold breeze cuts at your
+soul.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 3301
+D2
+~
+~
+0 0 17903
+S
+#3301
+Before the Tower~
+~
+~
+You stand at the base of enormous black tower, it's impressive bulk
+reaching hundreds of feet into the sky.  Only a few small windows dot the
+tower's surface at irregular intervals, and the ancient structure radiates
+an aura of great age and gloom.  To the north a massive iron gate allows
+entrance to the tower's base.  
+~
+0 32772 0
+Rd     0
+D0
+~
+door~
+7 3345 3302
+D2
+~
+~
+0 0 3300
+S
+#3302
+Inside the Tower~
+~
+~
+You have entered a dark entrance hall that runs north through the tower's
+base.  Thick black-red carpeting lies beneath your feet, and the walls are
+lined with tattered tapestries.  You hear skittering sounds coming from the
+shadows; apparently this place is infested with assorted vermin.  You notice
+that the entrance you came in through has disappeared.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3303
+S
+#3303
+The Entrance Hall~
+~
+~
+The dark entrance hall continues north and south through the gloom.  To
+the east and west are empty doorways which lead into darkness.  To the north
+the corridor lightens to a small extent, and you think you can make out the
+flickering of torches.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 3306
+D1
+~
+~
+0 0 3304
+D2
+~
+~
+0 0 3302
+D3
+~
+~
+0 0 3305
+S
+#3304
+The guardpost~
+~
+~
+This small room seems to serve as a guardpost.  Racks of spears and other
+assorted weaponry hang on the walls, and a small opening in the wall allows
+a view of the front of the tower.  You can re-enter the entrance corridor to
+the west.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 3303
+S
+#3305
+The guardpost~
+~
+~
+This small room seems to serve as a guardpost.  Racks of spears and other
+assorted weaponry hangs on the walls, and a small opening in the wall allows
+a view of the front of the tower.  You can re-enter the entrance corridor to
+the east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3303
+S
+#3306
+The Entrance Hall~
+~
+~
+The entrance hall terminates here, at a huge oak door set in the wall to
+the north.  To the south the hall heads towards the entrance gate to the
+keep.  
+~
+0 8 0
+Rd     0
+D0
+~
+door~
+3 0 3307
+D2
+~
+~
+0 0 3303
+S
+#3307
+The Main Hall~
+~
+~
+This large hall runs north and south through the base of the tower.  
+Flickering torches line the walls, casting strange shadows on the carpeted
+ground.  To the south is a large oak door, while to the north the hall runs
+towards a massive stone staircase.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3308
+D2
+~
+door~
+3 0 3306
+S
+#3308
+The Main Hall~
+~
+~
+The main hall runs north to the base of a set of enormous stone stairs,
+and south towards the keep's entrance.  To the east and west are large
+wooden doors.  The dust here is thick, and the only light is cast by faintly
+glowing torches on the wall.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3309
+D1
+~
+door~
+1 0 3329
+D2
+~
+~
+0 0 3307
+D3
+~
+door~
+1 0 3330
+S
+#3309
+At the foot of the stairs~
+~
+~
+You stand at the base of a set of an enormous circular staircase which
+spirals it's way up through the tower.  The steps are worn bare with age,
+and strange symbols adorn the weathered stone.  The light here is very dim;
+above you is only darkness.  
+~
+0 12 0
+Rd     0
+D2
+~
+~
+0 0 3308
+D4
+~
+~
+0 0 3310
+S
+#3310
+On the stairs~
+~
+~
+The stairway continues up through the darkness.  The walls around you are
+covered with tattered velvet wall hangings and cobwebs, and the dust is
+thick and smothering.  To the north is a large landing.  
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 3342
+D4
+~
+~
+0 0 3311
+D5
+~
+~
+0 0 3309
+S
+#3311
+On the stairs~
+~
+~
+The gloomy staircase spirals upwards silently.  You seem to sense dim
+moaning sounds on the periphery of your hearing, and the hairs on your neck
+stand up on end.  To the west lies a door.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+3 0 3338
+D4
+~
+~
+0 0 3312
+D5
+~
+~
+0 0 3310
+S
+#3312
+On the stairs~
+~
+~
+The dark stairway continues upwards.  You feel like you have been climbing
+for hours through the gloom, and still the staircase continues.  A slight
+humming sound seems to come from above you.
+~
+0 9 0
+Rd     0
+D4
+~
+~
+0 0 3313
+D5
+~
+~
+0 0 3311
+S
+#3313
+On the stairs~
+~
+~
+You have reached a small landing, where a stone door in the north wall has
+been placed.  The walls here are scorched and blackened, and you can make out
+the faint smell of sulfur in the air.  Above you the dark staircase continues.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3315
+D4
+~
+~
+0 0 3321
+D5
+~
+~
+0 0 3312
+S
+#3315
+A small corridor~
+~
+~
+This small corridor runs north and south through the tower.  To the south
+is a large spiral staircase, while to the north the hall runs past several
+doors.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3317
+D2
+~
+~
+0 0 3313
+S
+#3317
+A small corridor~
+~
+~
+This small corridor runs north and south past open doorways which lead into
+darkened rooms.  Smoky torches line the walls, and the air is damp and cold.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3380
+D1
+~
+~
+0 0 3319
+D2
+~
+~
+0 0 3315
+D3
+~
+~
+0 0 3318
+S
+#3318
+The barracks~
+~
+~
+This small room houses several bunks, some of them occupied by the
+sleeping forms of the denizens of the tower.  To the east you can re-enter
+the hallway.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3317
+S
+#3319
+A mess hall~
+~
+~
+This smoky mess hall serves the lower echelon soldiers and adepts of the
+Tower.  The floor is littered with the remains of past meals, and the
+tables are chipped and scratched from heavy use.  To the east you can enter
+the kitchen through a low doorway, while to the west is the corridor.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3320
+D3
+~
+~
+0 0 3317
+S
+#3320
+The kitchen~
+~
+~
+This dingy kitchen serves the lesser servants of the Black Tower.  The
+smell of grease is thick in the air, and large cauldrons bubble on 
+cookfires.  You don't think you'd enjoy eating anything produced in here.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 3319
+S
+#3321
+On the stairs~
+~
+~
+The stairway continues inexorably upwards.  A small arrow slit in the
+wall let's you see out into the countryside; you are VERY high up.  The
+stone steps here are dusty from lack of use, and you wonder what is kept at
+the top of this accursed tower.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 3322
+D5
+~
+~
+0 0 3313
+S
+#3322
+On the stairs~
+~
+~
+The tower is narrowing slightly as you climb upwards, but it is still quite
+thick at this point.  A small landing here gives access to a doorway in the
+east wall.
+~
+0 0 0
+Rd     0
+D1
+~
+door~
+1 0 3323
+D4
+~
+~
+0 0 3324
+D5
+~
+~
+0 0 3321
+S
+#3323
+A large room~
+~
+~
+You have entered a huge room high in the tower.  It seems to serve as some
+sort of laboratory; beakers are scattered among a large table in the center,
+and esoteric charts line the walls.  A strange haze fills the room, and you
+feel curiously cold--perhaps some magical experiments are being conducted
+right now...
+~
+0 24584 0
+Rd     0
+D3
+~
+door~
+1 0 3322
+S
+#3324
+On the stairs~
+~
+~
+You stop for a moment to catch your breath, and marvel at the distance you've
+come.  The tower has definitely narrowed, and you believe you are approaching
+the top.
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 3325
+D5
+~
+~
+0 0 3322
+S
+#3325
+On the stairs~
+~
+~
+Your way upwards is blocked by a grating on which a large, brass padlock
+sits.  A strange mist has filled the stairwell, and you sense great power
+above you.
+~
+0 8 0
+Rd     0
+D4
+~
+Gate~
+39 3325 3326
+D5
+~
+~
+0 0 3324
+S
+#3326
+Almost at the top~
+~
+~
+Again your way is blocked by a grating, this one with a lock of silver.  The
+feeling of magic is strong, and the air crackles with electricity.
+~
+0 0 0
+Rd     0
+D4
+~
+Gate~
+39 3326 3327
+D5
+~
+~
+39 0 3325
+S
+#3327
+Almost at the top~
+~
+~
+Before is you is yet another grate, this one held closed by a lock of
+gold.  Even the most mundane mortal can sense the great power emanating from
+above, as minor elementals flicker around you, and colored lights dance in
+the air.  
+~
+0 8 0
+Rd     0
+D4
+~
+Gate~
+39 3327 3328
+D5
+~
+~
+39 0 3326
+S
+#3328
+At the top of the Tower~
+~
+~
+You have emerged into a large room at the top of the Black Tower.  Huge
+windows give an unimpeded view of the countryside, and you feel a sense of
+vertigo as you get a glimpse of the realm spread about you.  The room
+itself is sumptously decorated, with silken wall hangings and golden
+furniture.  The floor is covered entirely with a thick, red carpet which
+muffles the sound of your footsteps.  Despite the luxurious surroundings,
+you sense a great power at work here, and even the most innocous items in
+the room gleam with a magical aura.
+~
+0 8200 0
+Rd     0
+D5
+~
+~
+39 0 3327
+S
+#3329
+A large dining hall~
+~
+~
+This dusty room once served as the dining hall of the tower, but now is only
+the dwelling place of assorted rats and other vermin.  The tower is obviously
+occupied; you wonder why it's inhabitants chose to leave this room in such
+disarray.  To the north is a wide passage, while to the west lies the entrance
+hall.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3331
+D3
+~
+door~
+1 0 3308
+S
+#3330
+A ballroom~
+~
+~
+In ages past this enormous room must have served as a ballroom.  Now it
+is filled with rubble, debris, and the torch-thrown shadows of thousands of
+rats.  The squeaking fills the chamber to eerie effect.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+1 0 3308
+S
+#3331
+A wide passage~
+~
+~
+This passage connects the kitchen to the north with the dining hall to the
+south.  The walls here are lined with burned-out torches and ripped tapestries.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3332
+D2
+~
+~
+0 0 3329
+S
+#3332
+The kitchen~
+~
+~
+This large kitchen appears to have been abandoned some time ago.  Huge
+iron cauldrons have been tipped over and cracked, and the floor is covered
+with dust that is marred only by the tracks of rats and mice.  The huge
+cellar door in the corner seems sturdy enough, however.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 3331
+D5
+~
+cellar door~
+3 0 3333
+S
+#3333
+A dark cellar~
+~
+~
+This gloomy cellar seems to have once served as a wine cellar and pantry,
+but now is empty and ruined.  The only piece of furniture not destroyed is
+a huge wooden shelf set against the north wall.  Oddly enough, it is free
+of the dust and cobwebs which blanket the rest of the cellar.
+~
+0 9 0
+Rd     0
+D0
+~
+shelf~
+7 0 3334
+D4
+~
+cellar door~
+3 0 3332
+S
+#3334
+A hidden tunnel~
+~
+~
+This narrow tunnel runs north and south through the earth.  From the north,
+a cold draft comes.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 3335
+D2
+~
+~
+7 0 3333
+S
+#3335
+A strange room~
+~
+~
+This room is decorated with obscure symbols painted on the wall and the
+floor.  In the center of the room a dark hole leads down; if you go down it,
+you might not be able to get back up.  
+~
+0 9 0
+Rd     0
+D2
+~
+~
+0 0 3334
+D5
+~
+~
+0 0 3336
+S
+#3336
+Falling down a hole~
+~
+~
+A
+ a
+  a
+   a
+    a
+     a
+      a
+       a
+        a
+         a
+          a
+           h
+            !
+ 
+You fall through the darkness, your hands vainly trying to grab onto the
+sides of the shaft!
+~
+0 33554440 0
+Rd     0
+D5
+~
+~
+0 0 3337
+S
+#3337
+At the bottom of the shaft~
+~
+~
+You stand at the bottom of a deep shaft in the earth; there is no way you
+can get up through this way. Peering around you see labyrinthine passageways
+stretching out through the darkness, and your stomach feels cold.  You think
+your day just got a lot worse.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3350
+D1
+~
+~
+0 0 3356
+D2
+~
+~
+0 0 3355
+D3
+~
+~
+0 0 3353
+S
+#3338
+A corridor~
+~
+~
+This corridor runs east and west through the tower.  The floor is covered
+with dust, and cobwebs collect on the walls.
+~
+0 8 0
+Rd     0
+D1
+~
+dor~
+3 0 3311
+D3
+~
+~
+0 0 3339
+S
+#3339
+A corridor~
+~
+~
+The corridor runs east and west through the tower.  To the north and south
+lie empty doorways that lead into darkness.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3340
+D1
+~
+~
+0 0 3338
+D2
+~
+~
+0 0 3341
+D3
+~
+~
+0 0 3343
+S
+#3340
+A library~
+~
+~
+This huge room is filled with row upon row of mouldering books.  The air
+is quite musty, and you think that this room is seldom used.  
+~
+0 8 0
+Rd     0
+E
+books~
+Most of them are in obscure languages that you don't understand.
+~
+D2
+~
+~
+0 0 3339
+S
+#3341
+A study~
+~
+~
+This large room is filled with desks and chairs.  Obviously a study area
+for the strange mages who inhabit the Tower, it seems in slightly better
+shape than the rest of the edifice.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3339
+S
+#3342
+A landing~
+~
+~
+This wide antechamber branches off from the main part of the tower to the
+south.  To the north, east, and west other passages branch off.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3388
+D1
+~
+~
+0 0 3344
+D2
+~
+~
+0 0 3310
+D3
+~
+~
+0 0 3347
+S
+#3343
+A strange room~
+~
+~
+You have entered a small room lit by ivory torches.  A large circle of
+summoning lies on the ground; it appears that this room is used for casting
+translocation spells.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3339
+S
+#3344
+A wide corridor~
+~
+~
+This wide corridor runs east and west through the tower.  To the west is
+a large open area, while to the east the corridor narrows and you see the
+flickering of lights in that direction.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3345
+D3
+~
+~
+0 0 3342
+S
+#3345
+Before the Brass Door~
+~
+~
+You stand before an enormous brass door engraved with strange images of
+unearthly creatures.  Unlike the rest of the Tower, the door seems quite
+new, or at least well-maintained, and you feel the presence of protective
+magic in the air.  
+~
+0 12 0
+Rd     0
+D1
+~
+door~
+3 0 3346
+D3
+~
+~
+0 0 3344
+S
+#3346
+The Summoning Chamber~
+~
+~
+The dominant feature of this huge chamber is a red circle of summoning
+which has been inscribed on the ground.  Magical energy crackles in the air,
+and the room is well-lit by golden torches that line the walls.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+3 0 3345
+S
+#3347
+A corridor~
+~
+~
+As you walk along this corridor, you smell the stench of death in the
+air, and a cold tingling rushes over your skin.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3342
+D3
+~
+~
+0 0 3348
+S
+#3348
+Chamber of Necromancy~
+~
+~
+This gruesome room seems dedicated to the study of the necromantic arts. 
+Stone tables with chained cadavers atop them, strange magical apparatus, and
+bubbling beakers abound, while extremely graphic charts line the walls.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3347
+S
+#3350
+In the labyrinth~
+~
+~
+You stumble through a maze of gloomy passages, cobwebs clutching at your
+clothes and the damp darkness closing in on you like a moldy cloak.
+~
+0 8201 0
+Rd     0
+D0
+~
+~
+0 0 3351
+S
+#3351
+In the labyrinth~
+~
+~
+The maze continues on through the darkness; you stumble around frantically,
+trying to find an exit.
+~
+0 8201 0
+Rd     0
+D1
+~
+~
+0 0 3352
+D2
+~
+~
+0 0 3350
+D3
+~
+~
+0 0 3350
+S
+#3352
+In the labyrinth~
+~
+~
+You scream with frustration as what you thought to be an exit turns out to
+be a dead-end.  The maze's tendrils reach all around you in the darkness.
+~
+0 8201 0
+Rd     0
+D0
+~
+~
+0 0 3362
+D3
+~
+~
+0 0 3360
+D5
+~
+~
+0 0 3353
+S
+#3353
+In the labyrinth~
+~
+~
+Strange sounds echo through the darkness, and you feel your hackles rise.
+There seems no end to the maze.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 3351
+D3
+~
+~
+0 0 3354
+D4
+~
+~
+0 0 3352
+S
+#3354
+In the labyrinth~
+~
+~
+Passages open up in a bewildering array, confusing you.  There MUST be an end
+to this maze, but where?
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 3355
+D1
+~
+~
+0 0 3353
+D5
+~
+~
+0 0 3352
+S
+#3355
+In the labyrinth~
+~
+~
+You trudge through the labyrinth, your spirits dampened by the unremitting
+gloom.
+~
+0 9 0
+Rd     0
+D2
+~
+~
+0 0 3354
+D3
+~
+~
+0 0 3356
+S
+#3356
+In the labyrinth~
+~
+~
+The maze twists and turns through the darkness.  Here the floor is littered
+with pieces of bone.
+~
+0 8201 0
+Rd     0
+D2
+~
+~
+0 0 3353
+S
+#3357
+In the labyrinth~
+~
+~
+This section of the maze serves as the final resting place of one of it's
+captives.  A skeleton lies here, dressed in the rotting robes of a cleric.
+Apparently he had time before he died to engrave a symbol of one of the
+gods of Light on the wall; seeing it cheers you up, and the gloom seems to
+press less heavily on your soul here.
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 3360
+D2
+~
+~
+0 0 3362
+D3
+~
+~
+0 0 3356
+S
+#3360
+In the labyrinth~
+~
+~
+Is there no end to this accursed maze?!  The passages twist and turn through
+the darkness, looping back onto each other.
+~
+0 8200 0
+Rd     0
+D0
+~
+~
+0 0 3352
+D1
+~
+~
+0 0 3362
+S
+#3362
+In the labyrinth~
+~
+~
+The maze continues on.  And on.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 3357
+D3
+~
+~
+0 0 3350
+S
+#3363
+In the labyrinth~
+~
+~
+The maze twists and turns around you in the darkness.
+~
+0 8201 0
+Rd     0
+D0
+~
+~
+0 0 3364
+S
+#3364
+Freedom!~
+~
+~
+This tunnel has continued straight for too long to be part of the labyrinth!
+You must be free of the horrible maze...But now where are you?  The tunnel
+continues on to the north, while to the south you can re-enter the maze if
+you so choose.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3365
+D2
+~
+~
+0 0 3363
+S
+#3365
+Before the iron door~
+~
+~
+The tunnel ends at a mammoth iron door set into the wall.  To the south
+the tunnel runs back towards the labyrinth, and you wonder which is worse,
+the hellish maze or whatever lies behind this door.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3366
+D2
+~
+~
+0 0 3364
+S
+#3366
+The prison~
+~
+~
+You have entered a large, ill-kept dungeon that reeks of death and decay.
+Fearsome-looking implements line the walls, and the skeletons chained to
+the floor fill you with dread.  The prison continues to the north, while
+to the south is a large iron door.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3367
+D2
+~
+~
+0 0 3365
+S
+#3367
+The prison~
+~
+~
+The prison continues north and south, with cell doors to the east and
+west of you.  A low moaning sound fills the air and the scent of death fills
+your nostrils.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 3370
+D1
+~
+cell~
+39 3305 3369
+D2
+~
+~
+0 0 3366
+D3
+~
+cell~
+39 3305 3368
+S
+#3368
+A cell~
+~
+~
+A tiny, damp cell filled with straw and fragments of bone.  It appears to be
+uninhabited at this time.
+~
+0 8 0
+Rd     0
+D1
+~
+cell~
+39 3305 3367
+S
+#3369
+A cell~
+~
+~
+You stand in a dingy cell that has been carved into solid rock.  The
+floor is covered with hay, and the only furniture in the room is a small
+sleeping pallet.  This cell appears to be occupied...  
+~
+0 32768 0
+Rd     0
+D3
+~
+cell~
+39 3305 3367
+S
+#3370
+The prison~
+~
+~
+The prison ends here, with cells to the east and west of you.  The
+torches that line the walls here are flickering for some reason.  
+~
+0 0 0
+Rd     0
+D1
+~
+cell~
+39 3305 3372
+D2
+~
+~
+0 0 3367
+D3
+~
+cell~
+39 3305 3371
+S
+#3371
+A cell~
+~
+~
+This small cell seems to be abandoned.  Oddly enough, the air seems
+slightly fresher here than elsewhere in the dungeon.  
+~
+0 0 0
+Rd     0
+D1
+~
+cell~
+39 0 3370
+S
+#3372
+A cell~
+~
+~
+This small cell is tidy and well-organized; the straw has been neatly
+piled in the corner, and there aren't quite as many insects as the rest of
+the dungeon.  There is a strange tingling in the air, and you sense that
+whatever magic you possess is useless in here.  
+~
+0 32776 0
+Rd     0
+D3
+~
+~
+39 0 3370
+S
+#3380
+A branching corridor~
+~
+~
+You have reached an intersection; passages lead east, west and south
+through the gloom.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3381
+D2
+~
+~
+0 0 3317
+D3
+~
+~
+0 0 3385
+S
+#3381
+A corridor~
+~
+~
+This narrow corridor runs east and west through the torchlit gloom. 
+Cobwebs abound on the walls and ceilings, and a musty odor pervades the air.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3382
+D3
+~
+~
+0 0 3380
+S
+#3382
+A corridor~
+~
+~
+The corridor ends here.  To the north is a heavy oak door, while to the
+south is a smaller door made of what appears to be obsidian.  
+~
+0 8 0
+Rd     0
+D0
+~
+door~
+3 0 3383
+D2
+~
+~
+6 0 3384
+D3
+~
+~
+0 0 3381
+S
+#3383
+A large room~
+~
+~
+This large room is filled with debris and the shattered remnants of metal
+and wood.  The dust hangs thickly in the cobwebs that line the ceiling, and
+you get the feeling that nobody has disturbed this room for many years.  
+~
+0 8 0
+Rd     0
+D2
+~
+door~
+3 0 3382
+S
+#3384
+The Portal room~
+~
+~
+The main feature in this room is a large portal set into the floor,
+bordered by the stone carvings of demonic shapes.  You hear a strange
+whistling fill the room, and the air seems hot and filled with electrical
+current.  
+~
+0 134356992 0
+Rd     0
+D0
+~
+door~
+6 0 3382
+S
+#3385
+A long corridor~
+~
+~
+This corridor branches off from an intersection to the east, and runs for
+what seems to be a long while into the darkness.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 3380
+D3
+~
+~
+0 0 3386
+S
+#3386
+A long corridor~
+~
+~
+This long corridor runs east and west through the darnkess.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3385
+D3
+~
+~
+0 0 3387
+S
+#3387
+A long corridor~
+~
+~
+This long corridor runs east and west through the darkness.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3386
+D3
+~
+~
+0 0 3387
+S
+#3388
+A corridor~
+~
+~
+This corridor runs north and south through the tower.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3389
+D2
+~
+~
+0 0 3342
+S
+#3389
+The statue~
+~
+~
+The corridor has come to a sudden end here, before a large tapestry
+depictinga forest scene.  To one side of the tapestry is a large statue that
+seems to stare at you.  You feel extremely uncomfortable here.  
+~
+0 8 0
+Rd     0
+D0
+~
+tapestry~
+39 3333 3390
+D2
+~
+~
+0 0 3388
+S
+#3390
+The mirror room~
+~
+~
+The centerpiece of this enormous changer is a large silvered mirror bound
+in a golden frame.  As you look at it, you notice something remarkable! 
+Though it reflects your image, it does not reflect the rest of the chamber. 
+Instead your image in the mirror is flanked by a woodland scene!  You feel a
+warm breeze on your face, and you hear the faint cry of birdsong in the
+background.  The image is so realistic you feel as if you could step right
+into it...  
+~
+0 4 0
+Rd     0
+S
+#3391
+A shadowy demi-plane~
+~
+~
+You are walking through a thick mist which obscures visions in all
+directions.  The ground beneath your feet is strangely moist, yet firm. 
+Occasional flashes echo through the mist, and you hear strange noises in the
+distance.  
+~
+0 407281679 0
+Rd     0
+S
+#3399
+Inside the Dragon's Stomach!~
+~
+~
+OH NO!  The Dragon has eaten you!  You stand in it's enormous stomach,
+the stench of rotting meat filling your nostrils!  You might be able to
+climb up it's throat, if you move really fast....  
+~
+0 393222 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 3304 spec_cast_adept
+M 3313 spec_cast_psionicist
+M 3324 spec_cast_mage
+M 3325 spec_cast_mage
+M 3340 spec_cast_mage
+M 3345 spec_cast_mage
+M 3346 spec_cast_mage
+M 3360 spec_breath_gas
+M 3361 spec_cast_mage
+M 3371 spec_guard
+M 3399 spec_cast_psionicist
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 3305 1 3301
+G 0 3345 0
+M 0 3300 2 3304
+M 0 3300 2 3305
+M 0 3301 1 3310
+M 0 3304 2 3312
+M 0 3309 1 3318
+M 0 3306 1 3320
+M 0 3301 1 3323
+M 0 3303 1 3323
+G 0 3326 0
+G 0 3329 0
+M 0 3313 1 3328
+E 0 3313 0 22
+G 0 3314 0
+M 0 3330 2 3330
+M 0 3331 1 3330
+M 0 3333 1 3330
+M 0 3332 1 3330
+M 0 3335 1 3332
+M 0 3340 1 3340
+E 0 3340 0 16
+E 0 3341 0 22
+M 0 3341 1 3341
+M 0 3345 1 3346
+E 0 3360 0 22
+E 0 3340 0 16
+M 0 3360 1 3346
+M 0 3346 1 3346
+M 0 3361 1 3346
+E 0 3340 0 16
+M 0 3310 1 3366
+E 0 3310 0 17
+E 0 3311 0 20
+M 0 3307 1 3369
+M 0 3372 1 3372
+E 0 3391 0 7
+G 0 3391 0
+M 0 3311 1 3380
+E 0 3331 0 16
+E 0 3330 0 20
+G 0 3325 0
+M 0 3383 1 3383
+O 0 3389 0 3389
+M 0 3390 1 3389
+G 0 3333 0
+O 0 3389 0 3389
+O 0 3319 0 3390
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

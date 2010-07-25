@@ -1,0 +1,1793 @@
+#AREADATA
+Name        { 30-40} The Academy~
+Builders    Gorsha~
+VNUMs       201 250
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Gorsha~
+Llevel      0
+Ulevel      0
+Sounds      &YVarious means of artistic expression can be heard throughout the Academy.~
+Music       hero.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#201
+Frieden~
+Frieden~
+Another board memeber, Frieden, looks over some papers.
+~
+Frieden stands calmly reading the latest business of the Academy.  He is
+famous for his ability to stay calm in the worst of situations.  There is
+not a wrinkly on his face even though he is said to be well over fifty.  He
+slowly goes about his business without losing stride.  You guess one would
+have to be this way to run such a gigantic undertaking such as the Academy. 
+~
+67 176 0 0 0 0 S
+45 3 90 90 0 6000d0+0 0d0+0
+450 0 0
+0 0 1
+0 0 0
+>speech_prog p problems~
+if ispc($n)
+say Ahh, I see Schickeria has mentioned some
+say of our problems. Yes, locked underneath the
+say school is a massive force of negative energy.
+say It always causes trouble when we can least
+say afford it. I would love to get my hands on a
+say piece of that fiend.
+endif
+~
+>give_prog Void Darkness~
+if ispc($n)
+say Wow! You brought back part of the negative
+say energy force! You can't use it like that
+say thought. Let me see what I can do with it.
+mpjunk void
+mpoload 207
+give spirit $n
+say That should help you out more than that
+say darkness.
+endif
+~
+|
+#202
+Schickeria~
+Schickeria~
+One of the board members, Schickeria, stands here.
+~
+Here stands one of the most beautiful women in the entire world.  She has
+hair as gold as sunrays.  She wears the Academy standard robe except her
+robe has a golden trim and has an aura radiating from it.  She stands
+against a staff to help support her weight while completing Academy
+business.  
+~
+67 16408 0 0 0 0 S
+45 3 90 90 0 6000d0+0 0d0+0
+450 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Welcome!
+say How may I help you?
+endif
+~
+>speech_prog hi hello hey whatsup whatup howdy~
+if ispc($n)
+say Just ask anything you want. I'm sorry
+say if we can't be much help. The ACADEMY
+say is going through some rough times right
+say now.
+endif
+~
+>speech_prog p academy~
+if ispc($n)
+say Well, we have had some problems concerning
+say what is underneath the school.
+shake
+say I guess we didn't do as good of a job
+say as we thought.
+emote whispers to you, "If you want to know more, ask Frieden about our problems."
+endif
+~
+|
+#203
+Academy Guard~
+An Academy Guard~
+A guard stands at attention.
+~
+The guard isn't covered in the normal guard armor.  This one seems to be
+covered in a loose shirt with an even looser pair of pants.  The extra
+fabric hangs off the sides of the guard's legs.  A mask covers the face so
+nobody can see any expression.  The guard stands perfectly still while
+watching you through the slit in the mask.  
+~
+67 40 262144 0 0 0 S
+40 3 80 80 0 5000d0+0 0d0+0
+400 0 0
+0 0 0
+0 0 0
+#204
+Receptionist~
+the receptionist~
+The receptionist stands ready to greet any visitors.
+~
+The receptionist is a small and lanky man.  He is dressed in a blue robe
+that looks like the one on the guards.  He holds a board with a list in one
+of his hands.  
+~
+67 56 4194304 0 0 0 S
+38 3 76 76 0 4750d0+0 0d0+0
+380 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Welcome! You're in luck. Two board members are in now.
+say Go on to the north.
+endif
+~
+|
+#205
+Female Singer~
+a female singer~
+A young woman is singing on stage.
+~
+A woman in her early twenties dances around on stage while singing her
+song.  She seems to have the audience under her spell with the song.  
+~
+67 0 0 0 0 0 S
+35 3 70 70 0 4500d0+0 0d0+0
+350 1 0
+0 0 2
+0 0 0
+#206
+Alyana~
+Alyana~
+Alyana sings a soothing song with her lute.
+~
+Alyana sits on a pillow holding her lute in her lap.  She slowly plucks
+the strings making a sweet melody.  Everyone around is captured by her
+beautiful voice.  She has the most soothing voice you have ever heard, and
+you don't feel the same urge to fight anymore.  As you listen to her sing,
+you become more relaxed.  There is a bowl sitting in her lap filled with
+several VIP passes.  
+~
+67 0 16 0 0 0 S
+38 3 76 76 0 4750d0+0 0d0+0
+380 0 0
+0 0 2
+0 0 0
+>give_prog VIP Pass~
+if ispc($n)
+say Thank you, kind soul.
+say Hopefully this may help you on your adventures.
+mpjunk pass
+cast 'combat mind' $n
+endif
+~
+|
+#207
+Speaker~
+a speaker~
+A speaker stands behind a pulpit giving a speech.
+~
+An elderly woman speaks about the politics surrounding the Academy.  She
+is constantly pumping her fists in the air trying to illustrate her point.  
+~
+67 0 0 0 0 0 S
+38 3 76 76 0 4850d0+0 0d0+0
+380 0 0
+0 0 0
+0 0 0
+#208
+Small Halfling~
+a small halfling~
+A small halfling sits on a stoll awaiting your answer.
+~
+The halfling's grin starts to waver as he sits awaiting your answer.  He
+starts to spin around on his chair whistling an annoying tune.  
+~
+67 40 16 0 0 0 S
+33 2 66 66 0 3800d0+0 0d0+0
+330 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Welcome to the Academy of Enlightenment!
+say Would you like one of our VIP passes?
+endif
+~
+>speech_prog no nope nadda nah~
+if ispc($n)
+frown
+say Oh..thats too bad. Enjoy yourself anyway.
+endif
+~
+>speech_prog yes yah yup alright ok okay~
+if ispc($n)
+say Our special VIP passes are only 10000 gold coins.
+endif
+~
+>bribe_prog 10000~
+if ispc($n)
+say Thank you! Here you go, Enjoy!
+mpoload 205
+give VIP $n
+endif
+~
+|
+#209
+Metinni~
+Metinni~
+The famous sculptor, Metinni, cowers in the corner.
+~
+Metinni looks to be in his late forties.  A slight beard has started to
+take shape on his face.  He seems to be very frightened of something as he
+is shaking in the corner.  A blank look is on his face as he looks off to
+the east.  
+~
+67 0 0 0 0 0 S
+34 3 68 68 0 4000d0+0 0d0+0
+340 0 0
+0 0 0
+0 0 0
+#210
+Student Painter~
+an amateur painter~
+A young painter is closely observing everyone around.
+~
+Fresh paint drips from the hands of this young artist.  There is a
+collection of white canvas under his arm.  He must have just bought some new
+supplies.  
+~
+65 0 0 0 0 0 S
+33 2 66 66 0 4000d0+0 0d0+0
+330 0 0
+0 0 0
+0 0 0
+#211
+Student Orator~
+a student~
+A student wanders around passing out pamphlets and brochures.
+~
+The student is dressed in a long toga.  He is walking around passing out
+little pamphlets to everyone that passes by.  
+~
+65 0 0 0 0 0 S
+38 3 76 76 0 4100d0+0 0d0+0
+380 0 0
+0 0 0
+0 0 0
+#212
+Amateur Sculptor~
+an amateur sculptor~
+An amateur sculptor walks around aimlessly.
+~
+A young man is wearing a dirty apron.  He walks around with a blank stare.  
+~
+65 0 0 0 0 0 S
+33 3 66 66 0 4000d0+0 0d0+0
+330 0 0
+0 0 0
+0 0 0
+#213
+Begger~
+a begger~
+A humble begger sits to the side of the door.
+~
+Flies have made themselves at home around this man.  The rags covering
+this man are barely holding on anymore.  He sits here with a small tin cup
+sitting next to him.  
+~
+67 8 0 0 0 1000 S
+31 2 62 62 0 3750d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say How ya doing there, adventurer? Mind sparing a few coins?
+endif
+~
+>bribe_prog 10~
+smile
+say Thank you, kind soul! May you find what you seek.
+~
+|
+#214
+Fire Elemental~
+a fire elemental~
+A massive flame spurts out of the furnace.
+~
+A large flame is coming out of the furnace.  The heat is almost too much
+to handle.  Smaller flames are flying out from the body of the fire, and
+they are starting to get closer to your clothing.  
+~
+67 33554432 4 0 0 0 S
+42 4 84 84 0 4900d0+0 0d0+0
+420 0 0
+0 0 0
+0 0 0
+#215
+Water Elemental~
+a water elemental~
+A massive wave of water comes flying out of the sink.
+~
+Large particles of water have combined into a tidal wave.  All you can
+see is a large wave of water coming down on you.  
+~
+99 0 4 0 0 0 S
+42 4 84 84 0 4900d0+0 0d0+0
+420 0 0
+0 0 0
+0 0 0
+#216
+Tornado~
+a tornado~
+A swirl of air has increased into a tornado.
+~
+A small tornado has started to take shape.  Tiny particles of dirt and
+debris from the room are being thrown in all directions.  
+~
+99 16384 4 0 0 0 S
+46 3 92 92 0 5100d0+0 0d0+0
+460 0 0
+0 0 0
+0 0 0
+#217
+Earth Elemental~
+an earth elemental~
+The earth has combined into one being.
+~
+The floor of this room starts to come up into the air.  After a second,
+they all start to combine together into a moving and sentient being.  But
+more important is that it is coming right for you.  
+~
+67 0 16777216 0 0 0 S
+46 1 92 92 0 5100d0+0 0d0+0
+460 0 0
+0 0 0
+0 0 0
+#218
+Verneinung~
+Verneinung~
+An aura of negative energy fills the room.
+~
+~
+97 335544320 4194324 0 0 -1000 S
+50 3 100 100 0 5500d0+0 0d0+0
+500 19 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#201
+Table~
+a table~
+A table stands in the middle of the room.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#202
+Sink~
+a sink~
+A sink has been installed against the wall.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#203
+Furnace~
+a furnace~
+The furnace has been left wide open.~
+~
+12 33554432 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#204
+Rift~
+a rift~
+A rift appears in the pattern of colors.~
+~
+29 0 0 0 0 0 1
+100 100
+227~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#205
+VIP Pass~
+a VIP pass for the Academy of Enlightenment~
+A gold covered ticket sits on the ground.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#206
+Void Darkness~
+a Void of Darkness~
+&w~
+~
+9 84 0 0 0 1025 40
+100 100
+0~ 0~ 0~ 0~
+1 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 6
+A
+100 -1
+A
+115 -1
+#207
+Lighted Spirit~
+a Lighted Spirit~
+A small light dances above your head.~
+~
+1 805306433 0 0 0 1 40
+100 100
+0~ 0~ -1~ 0~
+1 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 40
+A
+3 1
+A
+19 3
+A
+18 5
+#208
+Nice Breeze~
+a nice breeze~
+A nice breeze flows right by.~
+~
+9 2 0 0 0 1025 37
+100 100
+0~ 0~ 0~ 0~
+5 1480 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 37
+A
+18 8
+A
+14 37
+#209
+Moisturizer Lotion~
+some moisturizer~
+Some lotion has been smeared on the ground.~
+~
+9 0 0 0 0 129 35
+100 100
+0~ 0~ 0~ 0~
+1 1400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 35
+A
+19 6
+A
+2 1
+#210
+Tiny Spark~
+a tiny spark~
+&rA tiny spark has fallen off a passing flame.~
+~
+9 33554432 0 0 0 32769 35
+100 100
+0~ 0~ 0~ 0~
+2 1400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+1 1
+A
+13 35
+#211
+Stone Plate~
+a stone plate~
+A stone plate lies forgotten.~
+~
+9 536870976 0 0 0 9 37
+100 100
+0~ 0~ 0~ 0~
+40 1480 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 19
+A
+18 5
+#212
+Loose Shirt~
+a loose shirt~
+A shirt flaps is being carried on a strong gust of wind.~
+~
+9 0 0 0 0 9 32
+100 100
+0~ 0~ 0~ 0~
+1 1280 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 11
+A
+13 32
+A
+12 32
+#213
+Guardian Mask~
+a Guardian mask~
+A piece of cloth has two slits cut into it.~
+~
+9 0 0 0 0 65537 31
+100 100
+0~ 0~ 0~ 0~
+1 1240 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+304 -1
+A
+2 1
+#214
+Light Staff~
+a Light Staff~
+A staff is made from a light type of wood.~
+~
+5 33554464 8192 0 0 8193 33
+100 100
+0~ 0~ 0~ 7~
+2 1320 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 8
+A
+18 12
+A
+2 1
+A
+1 1
+#215
+Academy Robe~
+the Academy Robe~
+A long gold embroidered robe lies crumpled on the ground.~
+~
+9 2 0 0 0 9 38
+100 100
+0~ 0~ 0~ 0~
+10 1520 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 38
+A
+13 38
+A
+18 21
+#216
+Fresh Dew~
+fresh dew~
+&CFresh dew glistens in the light.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+218 0 0
+#217
+Bag Cool Air~
+a bag of cool air~
+A bag fills with air as some wind passes.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+218 0 0
+#218
+Ice Cubes~
+ice cubes~
+Some ice cubes are beginning to melt.~
+~
+8 134217728 0 0 0 1 2
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+222 216 217
+#219
+Metal Deposit~
+a deposit of metal~
+A deposit of metal sticks out of the ground.~
+~
+8 536870912 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+221 0 0
+#220
+Hot Coals~
+some hot coals~
+Some hot coals are still slightly burning.~
+~
+8 33554432 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+221 0 0
+#221
+Red Hot Piece Metal~
+a red hot piece of metal~
+A piece of metal is glowing a bright orangish red.~
+~
+8 33554432 0 0 0 1 2
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+222 219 220
+#222
+Iron Bar~
+an iron bar~
+An iron bar sits on the ground.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 221 218
+#223
+Rift~
+a rift~
+A rift is constantly changing colors.~
+~
+29 0 0 0 0 0 1
+100 100
+211~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#201
+The Stairway~
+~
+~
+A set of marble stairs are embedded into the ground.  They climb up the
+slight hill that has appeared before you.  Up ahead, you can see pillars
+reaching up into the sky.  There seems to be not one speck of dirt upon any
+of the marble.  The sound of voices and music can be heard coming over the
+hill.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 202
+D2
+~
+~
+0 0 18180
+S
+#202
+The Academy Entrance~
+~
+~
+The stairs come to a halt at the top of the hill.  A marble walkway
+continues on towards a doorway to what seems to be one of the largest
+buildings ever seen on this land.  The voices heard earlier can be heard
+again from within the doors.  There seems to be SIGN posted to the side of
+the door.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+3 0 224
+D2
+~
+~
+0 0 201
+S
+#203
+In the Board Room~
+~
+~
+A large round table is standing in the middle of the room.  Twelve chairs
+are placed around the table.  Many great tapestries and paintings adorn the
+walls.  Each showing a story of epic adventure or of true love.  Maybe if
+one is lucky, they can catch a board member in this room.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 204
+S
+#204
+Before the Boardroom Entrance~
+~
+~
+Many guards are standing at attention along the walls.  A large engraving
+of the Academy's Coat of Arms is engraved in the floor.  A bright red carpet
+has been rolled out on the floor splitting into two paths around the Coat of
+Arms before becoming one again.  The boardroom can be seen only a short
+distance ahead.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 203
+D2
+~
+~
+0 0 207
+S
+#205
+Behind the Stage~
+~
+~
+Many nervous musicians are crowded around behind the stage.  Some are
+tuning their instruments while others are busy finding the right pitch for
+their next song.  People are quickly moving around trying to get organized
+before their time on stage.  There is one specific person in the back who
+seems to have gathered quite a crowd before herself.  A set of stairs can
+also be seen behind one of the instrument cabinets.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 206
+D5
+~
+~
+0 0 229
+S
+#206
+At the Main Stage~
+~
+~
+The music is overwhelming as the band continues to play.  The crowd seems
+to be really getting into the music.  Several people have started to dance
+along the stage.  There is a slight path going west to east but it keeps
+filling with dancing people.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 207
+D2
+~
+~
+0 0 210
+D3
+~
+~
+0 0 205
+S
+#207
+At the Waiting Area~
+~
+~
+Many people are standing in line behind a desk.  There is a row of guards
+blocking passage to the north.  A lanky man is standing to the side with a
+clipboard watching all that come into the room.  This must be the reception
+area for the board of the Academy.  A lovely CARPET is rolled out here to
+make everyone's stay comfortable.  The heat from the bonfire to the south
+makes the atomsphere quite nice while people wait.  
+~
+0 12 0
+Rd     0
+E
+tear~
+The carpet has been frayed from the exposure to the bonfire.  You notice
+a trapdoor peeking out from under the carpet.  If only you had something
+that could pry open the door...  
+~
+E
+carpet~
+A lovely carpet is spread out over the floor.  There seems to be a slight
+tear in it near the pit.  
+~
+D0
+~
+~
+0 0 204
+D1
+~
+~
+0 0 208
+D2
+~
+~
+7 222 211
+D3
+~
+~
+0 0 206
+S
+#208
+Before the Pulpit~
+~
+~
+This is the famous Pulpit of Individuality.  This is the place where all
+the philosophers come to debate spirituality, morality, and other issues. 
+In fact, there is a speaker this very minute putting the crowd into a trance
+with his ideas.  Everyone is pushing around trying to get closer to hear
+better.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 209
+D2
+~
+~
+0 0 212
+D3
+~
+~
+0 0 207
+S
+#209
+Behind the Stage~
+~
+~
+All the different philosophers are gathered in this back room discussing
+their views on a wide range of topics.  A rack of fine wines sits against
+the back wall.  Many of the people are making it a priority to try out the
+wine.  There is a descending ramp leading down to the cellar.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 208
+D5
+~
+~
+0 0 231
+S
+#210
+In the Bench Rows~
+~
+~
+The music is becoming louder as you approach the stage.  The crowds start
+to become larger as well.  Little children are on the shoulders of their
+fathers trying to get a better view of the show.  Other musicians are
+walking around trying to grab the attention of the passers-by.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 206
+D2
+~
+~
+0 0 213
+S
+#211
+Inside Oblivion~
+~
+~
+All the noises from the other parts of the Academy disappear as you walk
+through the doorway.  An odd silence takes over your senses.  The walls are
+constantly changing colors, making it hard to understand anything.  There
+seems to be a slight difference of the pattern in the corner of the room.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+7 222 207
+S
+#212
+In the Middle of the Crowd~
+~
+~
+People seem to be getting more anxious.  The voice is getting louder here
+than before.  More people are becoming annoyed with each other as they all
+compete for the best spots to listen.  Many philosophers are walking around
+giving everyone pamphlets and brochures.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 208
+D2
+~
+~
+0 0 215
+S
+#213
+Near the Last Row of Benches~
+~
+~
+The stage can be seen in front of the benches.  This last row seems to be
+empty as everyone has crowded the first few to get closer to the band.  You
+can hear the soft sounds of the lute player from here.  The gentle high
+notes of the singer echo off the walls of the Academy.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 210
+D1
+~
+~
+0 0 214
+D2
+~
+~
+0 0 216
+S
+#214
+Along the Main Hallway~
+~
+~
+The walkway comes to a halt before a great pit.  A great bonfire has been
+built inside this pit.  The heat from the fire must be what keeps the entire
+Academy warm.  The sounds of musicians can be heard from the west, and the
+voices of orators are heard booming from the east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 215
+D2
+~
+~
+0 0 217
+D3
+~
+~
+0 0 213
+S
+#215
+At the End of the Crowd~
+~
+~
+All that can be seen are the backs of hundreds of people.  They all seem
+to be looking up ahead to the northeast.  All you can hear is a voice giving
+a speech.  It must be an important person to attract such a crowd.  There is
+a slight path northwards moving through the crowd.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 212
+D2
+~
+~
+0 0 218
+D3
+~
+~
+0 0 214
+S
+#216
+At the Sculpture Display~
+~
+~
+Many different sculptures can be seen on display here.  Cases surround
+you with all the different pieces that can be seen.  Students walk around
+looking within each case for their studies.  There are several groups of
+students discussing the different sculptures.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 213
+D1
+~
+~
+0 0 217
+D2
+~
+~
+0 0 219
+S
+#217
+Along the Main Walkway~
+~
+~
+As the walkway continues, there seems to be less physical artwork, but
+more of the mental and spiritual kind.  The sounds of different musicians
+can be heard mixing with the orators.  Great arguments can be heard taking
+place further down the hall.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 214
+D1
+~
+~
+0 0 218
+D2
+~
+~
+0 0 220
+D3
+~
+~
+0 0 216
+S
+#218
+At the Paint Display~
+~
+~
+There are several paintings hanging on the wall.  Many of the most
+beautiful works on canvas hang on the Academy's walls.  A student studies
+one of the paintings as she takes notes in a small journal.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 215
+D2
+~
+~
+0 0 221
+D3
+~
+~
+0 0 217
+S
+#219
+At the Sculpture Display~
+~
+~
+Many different sculptures can be seen on display here.  Cases surround
+you with all the different pieces collected by the Academy.  Students walk
+around looking within each case for their studies.  There are several groups
+of students discussing the different sculptures.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 216
+D1
+~
+~
+0 0 220
+D2
+~
+~
+0 0 223
+S
+#220
+In the Main Walkway~
+~
+~
+This is the main walkway of the Academy.  It runs straight down the
+center of the building.  Many different types of people walk around you. 
+There are displays of sculptures to the left and paintings to the right.  Up
+ahead on can see the entryway to the boardroom.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 217
+D1
+~
+~
+0 0 221
+D2
+~
+~
+0 0 224
+D3
+~
+~
+0 0 219
+S
+#221
+Paint Display~
+~
+~
+There are several paintings hanging on the wall.  Many of the most
+beautiful works on canvas can be seen hung on the wall.  A couple of the
+paintings have a small plaque with the artists name attached to the wall
+below the painting.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 218
+D2
+~
+~
+0 0 225
+D3
+~
+~
+0 0 220
+S
+#222
+At the Rear Display~
+~
+~
+There are more sculptures on display in this room.  These are the
+masterpieces of the Academy's grand collection.  The famous sculptor,
+Metinni, has several pieces on display including Simon's Rec.  The heat from
+the furnaces can be felt coming up through the stairwell in the corner.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 223
+D5
+~
+~
+0 0 245
+S
+#223
+At the Sculpture Display~
+~
+~
+Many different sculptures can be seen on display here.  Cases surround
+you with all the different pieces collected by the Academy.  Students walk
+around looking within each case for their studies.  There are several groups
+of students discussing the different sculptures.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 219
+D1
+~
+~
+0 0 224
+D3
+~
+~
+0 0 222
+S
+#224
+At the Check-In Desk~
+~
+~
+As you walk into the Academy, you are suddenly hit with waves of light,
+music, speeches, and many other typical noises of an Academy.  People of all
+kinds can be seen walking to and from the different parts of the Academy. 
+Also, there seems to be some kind of counter to your side.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 220
+D1
+~
+~
+0 0 225
+D2
+~
+~
+3 0 202
+D3
+~
+~
+0 0 223
+S
+#225
+At the Painting Display~
+~
+~
+There are several paintings hung on the wall.  There is one PAINTING that
+catches your eye.  Almost all the paintings have a positive, colorful motif,
+but this one is in severe contrast with the rest.  
+~
+0 8 0
+Rd     0
+E
+painting~
+As you look at the painting, you feel yourself being drawn into it.  You
+feel a raging battle between good and evil within yourself.  You feel your
+energy being sucked away more and more the longer you stare at the painting.
+You feel yourself about to collapse when a strong burst of negativity flies
+through you breaking your focus on the painting.  
+~
+D0
+~
+~
+0 0 221
+D1
+~
+~
+0 0 226
+D3
+~
+~
+0 0 224
+S
+#226
+At the Rear Painting Display~
+~
+~
+Here lies the greatest collection of paintings in the land.  All the
+famous artists send their pieces to be displayed here.  Even Schickeria has
+put her greatest piece on display here.  Her OIL PAINTING of the epic battle
+between good and evil is probably the most famous piece of art in the known
+world.  
+~
+0 8 0
+Rd     0
+E
+painting~
+You notice the battle between Good and Evil in the painting.  The four
+elements are being brought together by both sides as weapons against each
+other.  You sit back in confusion at the thought of this.  
+~
+E
+oil~
+You notice the battle between Good and Evil in the painting.  The four
+elements are being brought together by both sides as weapons against each
+other.  You sit back in confusion at the thought of this.  
+~
+D3
+~
+~
+0 0 225
+D5
+~
+~
+0 0 246
+S
+#227
+Pain and Suffering~
+~
+~
+&zYou find yourself encased in a wall of nothingness.  There is nothing
+here as you seemingly float and your own breathing seems loud.  
+~
+0 12 0
+Rd     0
+D2
+~
+~
+0 0 228
+S
+#228
+Inside a Black Void~
+~
+~
+&zYou find yourself encased in a wall of nothingness.  There is nothing
+here as you seemingly float and your own breathing seems loud.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 227
+D2
+~
+~
+0 0 230
+S
+#229
+Inside the Green Room~
+~
+~
+The walls are completely covered in green velvet, which sends a weird
+sensation down your spine everytime you brush against it.  All the people
+waiting to take the stage are green in the face.  This scene makes you
+wonder if this is called the Green Room because of the walls or the faces.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 232
+D4
+~
+~
+0 0 205
+S
+#230
+Inside a Black Void~
+~
+~
+&zYou find yourself encased in a wall of nothingness.  There is nothing
+here as you seemingly float and your own breathing seems loud.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 228
+D2
+~
+~
+0 0 234
+S
+#231
+Inside a Dressing Room~
+~
+~
+This is the entrance to the dressing rooms.  Many booths have been built
+along the walls.  Many people are hurrying about trying to get dressed and
+prepared before they take the stage.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 236
+D4
+~
+~
+0 0 209
+S
+#232
+Inside a Storage Room~
+~
+~
+Many different types of instruments adorn the walls and cabinets of this
+room.  Several musicians are sitting on stools attempting to tune their
+instrument.  You have never seen so many tools of music in your life.  Also,
+there is a group of young men and women trying to work out the words to one
+of their songs.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 229
+D1
+~
+~
+0 0 233
+S
+#233
+Inside the Repair Shop~
+~
+~
+A large desk covered with tools stands along the east wall.  This must be
+where the instruments are repaired after being damaged.  As of this minute,
+there are no instruments being repaired.  Every other minute you could swear
+that you feel a slight rumbling beneath your feet.  
+~
+0 12 0
+Rd     0
+D3
+~
+~
+0 0 232
+S
+#234
+Inside a Black Void~
+~
+~
+&zYou find yourself encased in a wall of nothingness.  There is nothing
+here as you seemingly float and your own breathing seems loud.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 230
+D2
+~
+~
+0 0 237
+S
+#235
+In an Empty Room~
+~
+~
+You have walked into a completely empty room.  The room is spotless. 
+There is not one speck of dust anywhere.  The only thing in this room is a
+rather loud wind blast that keeps whipping by your head.  You can feel an
+intense wind sweep the room.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 236
+S
+#236
+Inside a Dressing Room~
+~
+~
+There are several stalls here that allow the speakers to dress in
+privacy.  This must be where the Academy keeps the props for their plays
+because there are several dressers full of clothing.  A walk-in closet
+filled with different stage props also stands against the wall.  A huge gust
+of wind comes sweeping in from the west.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 231
+D3
+~
+~
+0 0 235
+S
+#237
+Inside a Black Void~
+~
+~
+&zYou find yourself encased in a wall of nothingness.  There is nothing
+here as you seemingly float and your own breathing seems loud.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 234
+D2
+~
+~
+0 0 239
+S
+#238
+Inside a Black Void~
+~
+~
+&zYou find yourself encased in a wall of nothingness.  There is nothing
+here as you seemingly float and your own breathing seems loud.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 239
+S
+#239
+Inside a Black Void~
+~
+~
+&zYou find yourself encased in a wall of nothingness.  There is nothing
+here as you seemingly float and your own breathing seems loud.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 237
+D1
+~
+~
+0 0 240
+D3
+~
+~
+0 0 238
+S
+#240
+Inside a Black Void~
+~
+~
+&zYou find yourself encased in a wall of nothingness.  There is nothing
+here as you seemingly float and your own breathing seems loud.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 239
+S
+#241
+In a Workroom~
+~
+~
+You have entered the workroom of the Academy's sculpturers.  There are
+chunks and pieces of materials spread around the floor.  A huge table sits
+against the north wall.  By the look of the table, it must be where they do
+their work.  Pieces of a statue are spread all over as if there was some
+kind of accident here.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 242
+D2
+~
+~
+0 0 245
+S
+#242
+Before a Furnace~
+~
+~
+A massive metal contraption is standing against the far wall.  This must
+be the furnace.  Flames are bellowing out of the door, sending off a
+blistering attack of heat.  The furnace is shaking as if its about to burst.
+There is an eerie vibe flowing from within the furnace.  
+~
+0 12 0
+Rd     0
+D3
+~
+~
+0 0 241
+S
+#243
+At a Cleaning Area~
+~
+~
+You have entered the cleaning area.  A long sink has been installed here
+so that the artists may wash themselves off.  The sink is overflowing with
+water, and it is starting to fill the room.  Already the water is up above
+your ankles.  There is water dripping off the ceiling as well.  What could
+have made such a mess?  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+3 0 244
+S
+#244
+At Color 101~
+~
+~
+There are finished and unfinished paintings scattered about.  Many of
+them have been torn apart.  You can't believe your eyes at the amount of
+damage that has been done.  Many young artists are huddled in the corner
+pointing and screaming at something to the west.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 246
+D3
+~
+~
+3 0 243
+S
+#245
+In a Supply Room~
+~
+~
+There are crates stacked against the walls.  There is an intense heat
+coming from the north.  You must be getting closer to the furnace.  Also,
+you can hear someone moving about to the north.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 241
+D4
+~
+~
+0 0 222
+S
+#246
+In a Supply Room~
+~
+~
+There are cartons of paints sitting along the walls.  Canvases and paper
+can be seen on top of the cabinets.  The floors are quite sticky from all
+the paints that have been spilled.  The room is colorful for it seems that
+the painters must use the walls for practice.  The walls are covered with
+small portraits or landscapes.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 244
+D4
+~
+~
+0 0 226
+S
+#0
+
+
+
+#SPECIALS
+M 202 spec_cast_cleric
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 213 1 202
+M 0 201 1 203
+E 0 215 0 5
+M 0 202 1 203
+E 0 215 0 5
+O 0 201 0 203
+M 0 203 3 204
+E 0 212 0 5
+E 0 213 0 8
+E 0 214 0 20
+M 0 206 1 205
+M 0 205 1 206
+M 0 203 3 207
+E 0 212 0 5
+E 0 213 0 8
+E 0 214 0 20
+M 0 207 1 208
+O 0 204 0 211
+M 0 211 3 215
+M 0 212 3 223
+M 0 208 1 224
+M 0 210 3 225
+O 0 223 0 227
+M 0 217 1 233
+G 0 219 0
+E 0 211 0 5
+M 0 216 1 235
+E 0 208 0 16
+G 0 217 0
+M 0 218 1 239
+E 0 206 0 16
+G 0 222 0
+M 0 209 1 241
+M 0 214 1 242
+E 0 210 0 9
+G 0 220 0
+O 0 203 0 242
+M 0 215 1 243
+E 0 209 0 13
+G 0 216 0
+O 0 202 0 243
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,156 @@
+#AREADATA
+Name        New area~
+Builders    Carny~
+VNUMs       32400 32499
+Security    1
+Recall      25001
+Flags       16
+End
+
+
+
+#MOBILES
+#32400
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 268451968 0 0 0 450 S
+110 220 220 0 8000d0+0 0d0+0
+110000 0 0
+0 0 0
+0 0 0
+#32403
+Sethroth~
+Sethroth~
+Sethroth, The Runaway
+~
+~
+3 301990018 0 0 3 0 S
+120 240 240 0 0d0+0 0d0+0
+120000 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#32400
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#32401
+bucket~
+a bucket~
+An old bucket~
+~
+15 32 262144 0 0 0 0
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#32404
+A dirty fountain~
+A dirty fountain~
+A dirty fountain~
+~
+25 16385 0 0 0 0 1
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#32401
+A dark ally~
+~
+~
+Nothing is visible not even your hand in front of your face 
+~
+0 8 0
+Rd     0
+D1
+~
+~
+515 0 32402
+D3
+~
+~
+0 0 32402
+S
+#32402
+A dark ally~
+~
+~
+There is no signs of light any were
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 32403
+D1
+~
+~
+0 0 32401
+D3
+~
+~
+0 0 32401
+S
+#32403
+A crevice in the ally~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 32402
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 32403 1 32403
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

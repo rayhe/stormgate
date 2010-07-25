@@ -1,0 +1,3296 @@
+#AREADATA
+Name        { 50-70} StoneGate Castle~
+Builders    None~
+VNUMs       4100 4399
+Security    100
+Recall      4102
+Flags       256
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      You hear the sound of magic pulsing.~
+Music       u5_mnrch.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#4101
+squirrel~
+The squirrel~
+A squirrel skitters about the room.
+~
+~
+65 0 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>rand_prog 25~
+emote wrinkles its nose at you.
+~
+>rand_prog 25~
+emote digs at the ground playfully.
+~
+|
+#4102
+chipmunk~
+The Chipmunk~
+A chipmunk scampers around.
+~
+~
+65 0 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>rand_prog 25~
+emote looks around nervously.
+~
+>rand_prog 25~
+emote looks for a tree to climb
+~
+|
+#4103
+sparrow~
+The Sparrow~
+A sparrow sits on the ground.
+~
+~
+65 0 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>rand_prog 25~
+emote Flutters its wings, and little bits of watter flies off.
+~
+>rand_prog 25~
+emote flutters its wings, and lands on the ground near to you.
+~
+|
+#4104
+mouse~
+The Mouse~
+A cute little mouse runs around on the ground.
+~
+~
+65 0 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>rand_prog 25~
+emote skitters around your feet, playing.
+~
+>rand_prog 25~
+emote digs at the ground happily.
+~
+|
+#4105
+guard~
+The Guard~
+The Guard keeps an eye on things.
+~
+~
+65 33554560 0 0 0 0 S
+50 1 100 100 3000 3000d0+0 0d0+20000
+500 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote looks around the room
+~
+|
+#4106
+guard~
+The Guard~
+The Guard keeps an eye on things.
+~
+~
+65 33554560 0 0 0 0 S
+50 1 100 100 3000 3000d0+0 0d0+20000
+500 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote looks around the room
+~
+|
+#4107
+guard~
+The Guard~
+The Guard keeps an eye on things.
+~
+~
+65 33554560 0 0 0 0 S
+50 1 100 100 3000 3000d0+0 0d0+20000
+500 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote looks around the room
+~
+|
+#4108
+guard~
+The Guard~
+The Guard keeps an eye on things.
+~
+~
+65 33554560 0 0 0 0 S
+50 1 100 100 3000 3000d0+0 0d0+20000
+500 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote looks around the room
+~
+|
+#4109
+guard~
+The Guard~
+The Guard keeps an eye on things.
+~
+~
+67 33554560 0 0 0 0 S
+50 1 100 100 3000 3000d0+0 0d0+20000
+500 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote looks around the room
+~
+|
+#4110
+guard~
+The Guard~
+The Guard keeps an eye on things.
+~
+~
+67 33554560 0 0 0 0 S
+50 1 100 100 3000 3000d0+0 0d0+20000
+500 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote looks around the room
+~
+|
+#4111
+Delrick~
+Delrick~
+Delrick is here, tending his shoppe.
+~
+~
+67 0 0 0 0 0 S
+110 1 220 220 50000 50000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+smile $n
+say Welcome to my humble establishment.  Type LIST to see my wares.
+~
+|
+#4112
+koras~
+Koras~
+Koras is here, ready to take your order.
+~
+~
+67 0 0 0 0 0 S
+110 1 220 220 50000 50000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Hello there, and welcome to my restaurant!
+say Type LIST to see what I have.
+~
+>rand_prog 8~
+mpecho People can be heard eating, laughing, and having a good time.
+~
+|
+#4113
+gwennith~
+Gwennith~
+Gwennith, the waitress, is here.
+~
+~
+67 128 0 0 0 200 S
+50 1 100 100 5000 5000d0+0 0d0+45000
+500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Hey sugar!
+~
+>rand_prog 5~
+emote looks busy waiting tables.
+~
+>speech_prog hi hello~
+say Hello there!  Can I help ya?
+~
+>fight_prog 25~
+cast fireball $n
+~
+|
+#4114
+eliase~
+elias~
+Elias is here, tending his bar.
+~
+~
+67 0 0 0 0 0 S
+110 1 220 220 50000 50000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Hi there!  Welcome to my bar!
+~
+>speech_prog hi hello~
+say Hi there.
+say I heard a rumour the other day.
+~
+>speech_prog rumour~
+say Yeah, I heard that Time Travel can be done through this castle!
+~
+>speech_prog time travel~
+nod
+say Yup.  Ask the king about it!
+~
+|
+#4115
+ashe~
+Ashe~
+Ashe is here, tending tables.
+~
+~
+67 128 0 0 0 200 S
+50 1 100 100 5000 5000d0+0 0d0+42000
+500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Hey there, sexy.
+~
+>fight_prog 25~
+cast fireball $n
+~
+|
+#4116
+seng~
+Seng~
+Seng is here, standing behind a counter.
+~
+~
+131139 0 0 0 0 0 S
+110 1 220 220 50000 50000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Welcome to the world bank.  Type BANK for a list of commands.
+~
+|
+#4117
+sornak~
+Sornak~
+Sornak is here, sitting behind the table.
+~
+~
+67 0 0 0 0 0 S
+110 1 220 220 50000 50000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Welcome to the adventurers guild.
+~
+|
+#4118
+yurian~
+Yurian~
+Yurian is here, watching over his Inn.
+~
+~
+67 0 0 0 0 0 S
+110 1 220 220 50000 50000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say Welcome to the Inn.  There are 3 rooms, take your pick.
+~
+|
+#4119
+time keeper~
+The Time Keeper~
+The Time Keeper is here.
+~
+~
+1 234881152 16 0 0 0 S
+500 1 1000 1000 1000000 1000000d0+0 0d0+0
+5000 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Good luck on your travels.
+endif
+~
+|
+#4120
+time keeper~
+The Time Keeper~
+The Time Keeper is here.
+~
+~
+3 234881152 16 0 0 0 S
+500 1 1000 1000 1000000 1000000d0+0 0d0+0
+5000 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Good luck on your travels.
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#4101
+fountain~
+fountain~
+A fountain bubbles quietly in the street.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4102
+fountain~
+fountain~
+A large pearl fountain rests against the east wall.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4103
+statue~
+statue~
+A magnificant statue of a swordsman is here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+swordsman~
+It is a swordsman clad in platemail, wielding a great two handed sword.  
+~
+#4104
+altar~
+altar~
+An altar sits in the centre of the floor.~
+~
+8 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+altar~
+It is covered with intricate carvings of the dead.
+~
+#4105
+chestnut~
+a chestnut~
+A chestnut sits on the ground.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4106
+rock~
+a rock~
+A rock sits on the ground.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+rock~
+It is made of onyx.
+~
+#4107
+miniskirt skirt~
+a sexy black miniskirt~
+A black skirt sits on the ground.~
+~
+9 0 0 0 0 33 50
+100 100
+0~ 0~ 0~ 0~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 40
+A
+18 5
+A
+19 3
+#4108
+shirt~
+a lacey white shirt~
+A white shirt sits on the ground.~
+~
+9 0 0 0 0 9 50
+100 100
+0~ 0~ 0~ 0~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 50
+A
+13 25
+A
+19 5
+A
+18 5
+#4109
+hat~
+a hat~
+A hat sits on the ground.~
+~
+9 0 0 0 0 17 50
+100 100
+0~ 0~ 0~ 0~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 8
+A
+13 40
+#4110
+chain coif~
+a chain coif~
+A chain coif sits on the ground.~
+~
+9 0 0 0 0 17 60
+100 100
+0~ 0~ 0~ 0~
+2 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 50
+A
+19 6
+A
+18 5
+#4111
+chain body armour~
+chain body armour~
+A set of chain armour sits here.~
+~
+9 0 0 0 0 9 60
+100 100
+0~ 0~ 0~ 0~
+4 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 40
+A
+19 15
+A
+18 10
+#4112
+chain leggings~
+chain leggings~
+A set of chain leggings sits here.~
+~
+9 0 0 0 0 33 60
+100 100
+0~ 0~ 0~ 0~
+3 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 8
+A
+19 3
+#4113
+leather boots~
+a pair of leather boots~
+A pair of boots sits on the ground.~
+~
+9 0 0 0 0 65 60
+100 100
+0~ 0~ 0~ 0~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 3
+A
+12 30
+A
+13 20
+#4114
+glasses~
+a pair of glasses~
+A pair of glasses sits here.~
+~
+27 1 0 0 0 131073 65
+100 100
+100~ 100~ 100~ identify~
+1 648 0
+0 0
+reserved~
+0 0
+0 0 0
+#4115
+robe~
+a long robe~
+A robe sits here, crumpled up.~
+~
+9 3 0 0 0 1025 65
+100 100
+0~ 0~ 0~ 0~
+2 648 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+A
+18 6
+A
+12 100
+#4116
+lobster dinner~
+a lobster dinner~
+A lobster dinner sits on the ground.~
+~
+19 0 0 0 0 1 1
+100 100
+40~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4117
+steak dinner~
+a steak dinner~
+A steak dinner sits on the ground.~
+~
+19 0 0 0 0 1 1
+100 100
+40~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4118
+bacon eggs~
+bacon and eggs~
+A bacon and eggs breaksfast sits here.~
+~
+19 0 0 0 0 1 1
+100 100
+30~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4119
+bowl cereal~
+a bowl of cereal~
+A bowl of cereal sits here.~
+~
+19 0 0 0 0 513 1
+100 100
+25~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4120
+milk~
+a glass of milk~
+A tall glass of milk is here.~
+~
+17 0 0 0 0 1 1
+100 100
+10~ 10~ 10~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4121
+beer bottle~
+a bottle of beer~
+A bottle of beer rests here.~
+~
+17 0 0 0 0 1 1
+100 100
+10~ 10~ 1~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4122
+bowl pretzels~
+bowl of pretzels~
+A bowl of pretzels sits here.~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4123
+glass white wine~
+a glass of sparkling white wine~
+A glass of wine sits here.~
+~
+17 0 0 0 0 1 1
+100 100
+15~ 15~ 2~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4124
+mug ale~
+a mug of ale~
+A mug of ale sits on the ground.~
+~
+17 0 0 0 0 1 1
+100 100
+12~ 12~ 3~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4125
+iron longsword~
+an iron longsword~
+A longsword sits on the ground.~
+~
+5 134217728 0 0 0 8193 60
+100 100
+0~ 0~ 0~ 3~
+5 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 50
+A
+19 22
+A
+18 10
+#4126
+sandles~
+a pair of sandles~
+A pair of sandles sits here.~
+~
+9 1 0 0 0 65 65
+100 100
+0~ 0~ 0~ 0~
+1 648 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 10
+A
+2 1
+A
+12 100
+#4127
+gold ring~
+a gold ring~
+A gold ring sits here.~
+~
+8 1 0 0 0 3 70
+100 100
+0~ 0~ 0~ 0~
+1 2800 0
+5 0
+flesh armor~
+3 3
+0 0 0
+A
+13 70
+A
+18 3
+A
+19 3
+#4128
+ruby pendant~
+a ruby pendant~
+A pendant sits here, on a chain.~
+~
+18 33554432 0 0 0 5 20
+100 100
+0~ 0~ 0~ 0~
+1 200 0
+5 0
+word of recall~
+3 3
+0 0 0
+A
+12 75
+#4129
+table~
+table~
+A table sits in the middle of the room.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4130
+Board~
+board~
+A note board hangs on the wall.~
+~
+11 0 0 0 0 0 0
+100 100
+0~ 1~ 1~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+board~
+It is a board used by the Adventurer's Guild.
+~
+#4131
+donation box~
+donation box~
+A box used for donations hangs on the south wall.~
+~
+15 0 0 0 0 0 0
+100 100
+500~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4132
+hooded lantern~
+a hooded lantern~
+A lantern sits on the ground.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ 500~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4133
+iron rations~
+iron rations~
+Some rations are here in a pile.~
+~
+19 0 0 0 0 1 1
+100 100
+100~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#4134
+backpack~
+a backpack~
+A backpack sits here.~
+~
+15 0 0 0 0 1 1
+100 100
+150~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+18 2
+#4135
+knife~
+a knife~
+A knife sits here.~
+~
+5 16384 0 0 0 8193 50
+100 100
+0~ 0~ 0~ 11~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 40
+A
+19 18
+A
+18 12
+#4136
+key~
+a key~
+A key sits on the ground.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4137
+a time key~
+a Time key~
+A key sits here.~
+~
+13 64 0 0 0 16385 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+1 1
+0 0 0
+#4140
+time crystal~
+a Time Crystal~
+A Crystal radiating all colors of the rainbow lies here.~
+~
+8 67 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+5 0
+astral walk~
+1 1
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#4101
+On the Drawbridge~
+~
+~
+You are on the drawbridge before a magnificant castle.  The porticulis,
+forever raised in a welcoming fashion, lies directly to the north.  The
+waters in the moat are on either side of you, and the path from whence you
+came lies to the south.  StoneGate Castle is indeed magnificant, its black
+walls having no markings whatsoever, seeming to radiate magic.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4102
+D2
+~
+~
+0 0 4189
+S
+#4102
+StoneGate Main Entrance~
+~
+~
+You are at the StoneGate main entrance.  The porticullis, raised, is on
+the south wall, hanging over the entrance.  Large, lavish hallways lead off
+to the north, east and west, with a sign over the northern hallway reading
+COMMERCE.  Four large white pillars stretch from floor to ceiling, a direct
+contrast of the black walls, floor and ceiling.  
+~
+0 393228 0
+Rd     0
+D0
+~
+~
+0 0 4103
+D1
+~
+~
+0 0 4131
+D2
+~
+~
+0 0 4101
+D3
+~
+~
+0 0 4162
+S
+#4103
+Commerce Corridor~
+~
+~
+You are standing in the short corridor before the commerce area, which is
+to the north.  Two large paintings, one on the east wall, one on the west,
+capture your eye.  The east one is a portrayal of an epic battle, demons and
+angels fighting for power.  The west painting seems to be the same thing,
+but a large rip in the painting, seems to bring it new life.  It is as if it
+has been torn by something, but by itself at the same time.  
+~
+0 393228 0
+Rd     0
+D0
+~
+~
+0 0 4104
+D2
+~
+~
+0 0 4102
+S
+#4104
+Commerce Road~
+~
+~
+You are standing on commerce road, a well travelled road stretching east
+and west.  The main entrance of the castle can be seen a little ways to the
+south.  Shops line the streets, east and west, while an alley leads off to
+the north.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4105
+D1
+~
+~
+0 0 4125
+D2
+~
+~
+0 0 4103
+D3
+~
+~
+0 0 4115
+S
+#4105
+An Alley~
+~
+~
+You are in a small alley between two buildings.  An open space can be seen
+to the north, while Commerce Road lies to the south.  You notice that the
+street is unusally clean for an alleyway.
+~
+0 393220 0
+Rd     0
+D0
+~
+~
+0 0 4106
+D2
+~
+~
+0 0 4104
+S
+#4106
+An Alley~
+~
+~
+You are walking through an alley, and have entered a small opening behind all
+the stores.  A large building lies to the west, with a door facing you.  Its
+black walls are indeed ominous.
+~
+0 393216 0
+Rd     0
+D2
+~
+~
+0 0 4105
+D3
+~
+~
+71 4136 4107
+S
+#4107
+Before the Temple~
+~
+~
+You have entered a temple.  A large brass door lies on the east wall, and
+it is the only exit.  A small carpet leads in the western direction, deeper
+into the temple.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+71 0 4106
+D3
+~
+~
+0 0 4108
+S
+#4108
+The Temple~
+~
+~
+You are now inside the temple.  A large altar can be seen to the west,
+while several places meant for worship sit here.  Large pillars stretch from
+floor to ceiling, giving the illusion that this room is larger than it
+really is.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 4107
+D3
+~
+~
+0 0 4109
+S
+#4109
+Altar of Zhakarius~
+~
+~
+You are standing before an abandoned altar.  It is to a vile sorcerer named
+Zhakarius, the great and powerful grand Sage who conquered the Bretonnian
+Islands. According to the history that you remember, Zhakarius is yet to
+take over those islands.  This is indeed a very strange place.  The only
+exit is to the east.
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 4108
+S
+#4110
+Restaurant Dining Room~
+~
+~
+You are in the dining hall.  Several large tables are in the room, each with
+four chairs situated around them.  The odd work of art hangs on the wall,
+nothing to fantastic.  The only exit is to the east.
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4111
+S
+#4111
+Restaurant~
+~
+~
+You are standing at the reception area of the restaurant.  A small
+kitchen can easily be seen on the northern side of this room, and the main
+dining room is to the west.  
+~
+0 394248 0
+Rd     0
+D2
+~
+~
+0 0 4114
+D3
+~
+~
+0 0 4110
+S
+#4112
+The Bank~
+~
+~
+The bank is a very boring building.  Its long, slender counter lines the
+north wall, its featureless walls very bland to look at.  The only exit is
+to the north, from whence you came.  
+~
+0 17171464 0
+Rd     0
+D0
+~
+~
+0 0 4115
+S
+#4113
+Commerce Road~
+~
+~
+You have come to the end of commerce road, and have found a flight of stairs
+that leads up to the Rampart.  The windows of a bar can easily be seen to the
+south, and a rather quaint restaurant can be seen to the north.  The Rampart
+has been closed for repairs.
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4114
+S
+#4114
+Commerce Road~
+~
+~
+You are walking along commerce road.  A large building lies to the north,
+its aroma leaking into the street, obviously a restaurant.  To the south,
+the familiar rowdiness of a bar can be heard.  The street travels to the
+east and west.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4111
+D1
+~
+~
+0 0 4115
+D2
+~
+~
+0 0 4117
+D3
+~
+~
+0 0 4113
+S
+#4115
+Commerce Road~
+~
+~
+You are walking along Commerce Road.  To the north and south are two
+buildings, while the road continues to the east and to the west.  The Bank
+can be seen to the south, while a general store can be seen to the north.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4118
+D1
+~
+~
+0 0 4104
+D2
+~
+~
+0 0 4112
+D3
+~
+~
+0 0 4114
+S
+#4116
+The Velvet Frog Tavern~
+~
+~
+You are in the western side of the Tavern.  This section, slightly lower
+than the main bar, is darker than the rest of the tavern, but there is still
+plenty of light.  Tables are packed together here and there, and there is
+the odd overturned chair.  The only exit is to the east, back into the main
+section of the bar.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4117
+S
+#4117
+The Velvet Frog Tavern~
+~
+~
+You are inside the greatest bar known to mankind.  It is a mammoth of a
+place, divided into two sections.  The eastern section has the actual bar,
+while the western section is full of tables.  This is definately a place for
+those who like the taste of alcohol.  The only exit from the bar is to the
+north.  
+~
+0 394248 0
+Rd     0
+D0
+~
+~
+0 0 4114
+D3
+~
+~
+0 0 4116
+S
+#4118
+General Store~
+~
+~
+You are standing within the General Store.  Here you may purchase the
+supplies that you would require on your travels.  The only exit is through
+the archway on the south wall.  
+~
+0 394248 0
+Rd     0
+D2
+~
+~
+0 0 4115
+S
+#4119
+Room One~
+~
+~
+A modest room, complete with 3 beds, table, nightstand, and welcome mat. 
+A rather large painting lies on the north wall, depicting a great sorcerer. 
+The door out of this room lies to the south, and it is the only exit.  
+~
+0 393224 0
+Rd     0
+D2
+~
+~
+3 0 4122
+S
+#4120
+Room Two~
+~
+~
+You have entered room two of the Inn.  It is by far the largest of the
+three rooms, easily containing several people for the night.  A second
+sleeping area to the east can be seen, while this area has a rather large
+table, with six chairs situated around it.  The exit door lies to the south.
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4121
+D2
+~
+~
+3 0 4123
+S
+#4121
+Room Two~
+~
+~
+You have entered the sleeping quarters of Room Two.  Six beds lie here, three
+on the north wall and three on the south wall.  The main section of the room
+lies to the west.
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 4120
+S
+#4122
+The Inn~
+~
+~
+You have entered the Inn.  A makeshift tavern can be seen here, but if
+you want a meal, your best bet would be going to the Restaurant.  A hallway
+leads to the east, to rooms two and three, while room one can be seen to the
+north of this room.  The exit lies to the south.  
+~
+0 394248 0
+Rd     0
+D0
+~
+~
+3 0 4119
+D1
+~
+~
+0 0 4123
+D2
+~
+~
+0 0 4125
+S
+#4123
+The Inn~
+~
+~
+You are standing in the hallway connecting to the Inn rooms.  The door on
+the north has the number two on it, while the door on the east has the
+number three.  The hallway goes back to the west, where the main reception
+is.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+3 0 4120
+D1
+~
+~
+3 0 4124
+D3
+~
+~
+0 0 4122
+S
+#4124
+Room Three~
+~
+~
+You have entered room number three.  This is a private room, and the
+magic seals automatically turn on when you enter.  There is a rather large
+bed here, and a nightstand, plus all the usual comforts you would find in a
+bedroom.  A small desk is here, complete with chair, if you want to do any
+studying.  The only exit is the door to the west.  
+~
+0 393730 0
+Rd     0
+D3
+~
+~
+3 0 4123
+S
+#4125
+Commerce Road~
+~
+~
+You are walking along comerce road.  The royal Inn can be seen to the
+north, and one of the walls of the adventurers guild can be seen to the
+south.  The road continues to the east and west.  
+~
+0 394240 0
+Rd     0
+D0
+~
+~
+0 0 4122
+D1
+~
+~
+0 0 4126
+D3
+~
+~
+0 0 4104
+S
+#4126
+Commerce Road~
+~
+~
+You are walking along commerce road.  An Inn can be seen to the north,
+while the main entrance to the Adventurer's Guild can be seen to the south. 
+The road continues to the east and west.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4127
+D2
+~
+~
+0 0 4129
+D3
+~
+~
+0 0 4125
+S
+#4127
+Commerce Road~
+~
+~
+You have come to the end of commerce road, and have found a flight of
+stairs that leads up to the Rampart.  The windows of the Adventurer's guild
+can easily be seen to the south, and the Inn lies to the north.  The Rampart
+is temporarily closed.
+~
+0 393216 0
+Rd     0
+D3
+~
+~
+0 0 4126
+S
+#4128
+Adventurer's Guild~
+~
+~
+You have entered the note room of the Adventurer's Guild.  A large board,
+forever affixed to the west wall, takes up most of the space.  It is here
+that the goings on of the Castle are posted.  You should probably frequent
+this room to check up on it.  The only exit is to the east.  
+~
+0 8781824 0
+Rd     0
+D1
+~
+~
+0 0 4129
+S
+#4129
+Adventurer's Guild~
+~
+~
+You are at the magnificant entrance to the Adventurer's Guild.  An
+archway lies on the east and west walls, leading to the other two rooms of
+this great guild.  The exit is to the north.  
+~
+0 394248 0
+Rd     0
+D0
+~
+~
+0 0 4126
+D1
+~
+~
+0 0 4130
+D3
+~
+~
+0 0 4128
+S
+#4130
+Adventurer's Lounge~
+~
+~
+You have entered the lounge.  There are several armchairs, a couch,
+several benches, and any number of games.  It is here that people come to
+rest when they need to relax.  The only exit is west.  
+~
+0 393216 0
+Rd     0
+D3
+~
+~
+0 0 4129
+S
+#4131
+Southern Hallway~
+~
+~
+You are walking along the southern hallway of the Castle.  The outer
+walls have no windows, and no markings.  All the walls are solid black,
+their faces totally featureless.  The hallway continues to the east and
+west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4132
+D3
+~
+~
+0 0 4102
+S
+#4132
+Southern hallway~
+~
+~
+You are walking along the southern hallway.  The red carpet that you walk
+on dulls your footsteps, and you make virtually no noise while walking.  The
+occasional breeze flutters through your hair as you walk.  The hallway
+continues to the east or west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4133
+D3
+~
+~
+0 0 4131
+S
+#4133
+Southern Hallway~
+~
+~
+You are walking along the southern hallway.  The black walls, seeming to
+suck in the light, are made of some substance you have never seen before. 
+You can't seem to figure out where the light is coming from either, for
+there are no windows, no torches on the walls, yet everything is lit.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4134
+D3
+~
+~
+0 0 4132
+S
+#4134
+Southeast Tower~
+~
+~
+You are standing on the main floor of the southeast tower.  A large
+winding stairwell leads up to the top of the tower, while the eastern and
+southern hallways lead off to the north and west.  This room is fairly
+non-descript, there is nothing of note here.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4135
+D3
+~
+~
+0 0 4133
+D4
+~
+~
+0 0 4163
+S
+#4135
+Eastern Hallway~
+~
+~
+You are walking down the eastern hallway.  A huge mural lines the western
+wall, stretching for the entire length of the hallway.  This section depicts
+the dawn of time, the very beginnings of life, and the birth of magic.  The
+hallway continues to the north or south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4136
+D2
+~
+~
+0 0 4134
+S
+#4136
+Eastern Hallway~
+~
+~
+You are walking along the eastern hallway.  This section of the mural
+depicts the arrival of a stranger to this land, a great and powerful Sage,
+accompanied by several demons.  On the opposite side, a powerful Cleric can
+be seen, bringing angels and paladins.  The hallway continues north and
+south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4137
+D2
+~
+~
+0 0 4135
+S
+#4137
+Eastern hallway~
+~
+~
+You are walking along the eastern hallway.  This portion of the mural
+shows a titanic battle of good versus evil, giant machines of war slaying
+the largest of beasts, each side suffering many casualties.  The hallway
+continues to the north or south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4138
+D2
+~
+~
+0 0 4136
+S
+#4138
+Eastern Hallway~
+~
+~
+You are walking along the eastern hallway in StoneGate Castle.  This section
+of the mural shows the angellic forces conquering the vile forces of darkness,
+all but one lone sorcerer, who covers himself in blood to mislead the clerics
+of the opposing army.  The hallway continues north and south.
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4139
+D2
+~
+~
+0 0 4137
+S
+#4139
+Eastern Hallway~
+~
+~
+You are walking along the eastern hallway.  This section of the mural
+shows the sorcerer living in a wasteland, in a great tower, searching for
+the right time to strike.  There are words written at the bottom that read,
+"I am Zhakarius.  I will destroy the High Cleric, and all that he may bring.
+Once and for all my forces will capture the four circles of power, and we
+will rule supreme".  The hallway continues to the north and south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4140
+D2
+~
+~
+0 0 4138
+S
+#4140
+Eastern Hallway~
+~
+~
+You are walking along the eastern hallway.  This section of the mural
+shows a great rift, tearing through a large country, sucking everything into
+it.  The same maniacle sorcerer stands in the background, laughing at the
+thousands of slain angels at his feet.  More words are listed at the bottom
+of the mural, "Now I master Time itself!  You will be destroyed, and I will
+rule for all eternity!"
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4141
+D2
+~
+~
+0 0 4139
+S
+#4141
+Eastern Hallway~
+~
+~
+You are walking along the eastern hallway.  A huge mural lines the
+western wall, stretching for the entire length of the hallway.  Perhaps you
+should go to the south end of the mural and look at it from there, for that
+is the start, and this is the end.  This section shows a strange
+world, with giant buildings, huge structures, metal objects with wheels and
+people inside them, strange clothing, and all manner of oddities.  Zhakarius
+is shown standing atop a huge building, smiling over what seems to be his
+Empire.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4142
+D2
+~
+~
+0 0 4140
+S
+#4142
+Northeast Tower~
+~
+~
+You are standing on the main floor of the northeast tower.  A large
+winding staircase leads up to the top of the tower, while the northern and
+eastern hallways lead off to the west and south.  This room is fairly
+non-descript.  
+~
+0 393224 0
+Rd     0
+D2
+~
+~
+0 0 4141
+D3
+~
+~
+0 0 4143
+D4
+~
+~
+0 0 4164
+D5
+~
+~
+0 0 4204
+S
+#4143
+Northern Hallway~
+~
+~
+You are walking through the northern hallway.  The northeast tower lies
+directly to the east of here.  A large statue lies against the northern wall,
+it is a statue of a knight.  The hallway continues to the east and west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4142
+D3
+~
+~
+0 0 4144
+S
+#4144
+Northern Hallway~
+~
+~
+You are walking along the northern hallway.  The carpet that rests in the
+centre of the hallway is a brilliant red against the jet black walls.  The
+hallway continues to the east and west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4143
+D3
+~
+~
+0 0 4145
+S
+#4145
+Northern Hallway~
+~
+~
+You are walking along the northern hallway.  A large painting hangs on
+the southern wall, depicting a large garden.  The hallway continues to the
+east or west 
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4144
+D3
+~
+~
+0 0 4146
+S
+#4146
+Northern Entrance~
+~
+~
+You are walking along the northern hallway.  The rear exit to the castle
+lies on the north wall, it is currently closed.  A large door lies on the
+south wall, leading to the Mystic Garden.  A large carving of a dove is in
+the centre of the door.  The hallway continues east and west.  
+~
+0 393228 0
+Rd     0
+D1
+~
+~
+0 0 4145
+D2
+~
+~
+3 0 4169
+D3
+~
+~
+0 0 4147
+S
+#4147
+Northern Hallway~
+~
+~
+You are walking along the northern hallway.  A large painting of a garden
+hangs on the southern wall, radiating a magical energy.  The hallway
+continues to the east and west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4146
+D3
+~
+~
+0 0 4148
+S
+#4148
+Northern Hallway~
+~
+~
+You are walking along the northern hallway.  The black walls, forever
+ominous, loom over your head.  There seems to be a magical glow giving
+light, but you can not distinguish its source.  The hallway continues east
+or west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4147
+D3
+~
+~
+0 0 4149
+S
+#4149
+Northern Hallway~
+~
+~
+You are walking through the northern hallway.  The northwest tower lies
+directly to the west of here, and a large statue lies against the northern
+wall.  The statue is that of a fierce warrior, wielding a large battle axe. 
+The hallway continues to the east or west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4148
+D3
+~
+~
+0 0 4150
+S
+#4150
+Norhtwest Tower~
+~
+~
+You are standing on the main floor of the northwest tower.  A large,
+spiral staircase leads up to the top of the tower, while the northern and
+western hallways lead off to the east and south.  This room is bland, and
+has no distinguishable features.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4149
+D2
+~
+~
+0 0 4151
+D4
+~
+~
+0 0 4165
+D5
+~
+~
+0 0 4196
+S
+#4151
+Western Hallway~
+~
+~
+You are walking along the western hallway.  A huge mural lines the
+eastern wall, stretching for the entire length of the hallway.  Perhaps you
+should go to the south end of the mural and look at it from there, for that
+is the start, and this is the end.  This section of the mural shows a
+strange occurance on the plant.  The giant purple cloud can be seen turning
+into lines of power, causing vast openings on the surface.  The black castle
+has rested high atop a mountain, awaiting visitors.  The land itself seems
+to be unstable, and the Blood God can be seen laughing.  The hallway
+continues north and south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4150
+D2
+~
+~
+0 0 4152
+S
+#4152
+Western Hallway~
+~
+~
+You are walking along the western hallway.  A large mural hangs on the
+east wall depicting a planet.  A large purple cloud approaches from one
+side, on a collision course with the planet.  A large figure can be seen in
+the background of the mural, done in a haze effect, like an overlay.  It is
+of the same Blood God depicted in the other sections.  The hallway continues
+north and south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4151
+D2
+~
+~
+0 0 4153
+S
+#4153
+Western Hallway~
+~
+~
+You are walking along the western hallway.  This section of the mural
+shows the Blood God standing in an open field, looking over a new land.  Its
+people seemingly unaware of his presence at first, but they will soon know
+his power.  He rests in a small building, prepairing for his spell.  The
+hallway continues to the north and south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4152
+D2
+~
+~
+0 0 4154
+S
+#4154
+Western Hallway~
+~
+~
+You are walking along the western hallway.  This section of the mural
+depicts the same black castle, floating through time and space, seemingly
+void of all life.  The purple starfield behind it twingles slightly.  The
+hallway continues north and south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4153
+D2
+~
+~
+0 0 4155
+S
+#4155
+Western Hallway~
+~
+~
+You are walking along the western hallway.  A giant stormcloud has
+covered the castle, huge lightning bolts streak towards the ground,
+destroying everything in its wake.  The castle, seemingly indestructable,
+appears to have no damage thus far.  Up in the sky, this Blood God can be
+seen chanting some words, causing a purple Vortex to appear behind the
+castle.  The artwork is truly amazing.  The hallway continues to the north
+or south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4154
+D2
+~
+~
+0 0 4156
+S
+#4156
+Western Hallway~
+~
+~
+You are walking along the western hallway.  This section of the mural
+shows a giant castle, rising from the ground.  Its four towers looming high
+in the sky, the porticulis on the front already in the raised position.  A
+large, deep blue moat surrounding the castle prevents intruders from
+entering.  You immediate recognize it as this castle.  The hallway continues
+to the north and south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4155
+D2
+~
+~
+0 0 4157
+S
+#4157
+Western Hallway~
+~
+~
+You are walking through the western hallway.  A huge mural rests on the
+eastern wall, stretching the entire length of the hallway.  This first
+section of the mural depicts a God, standing atop a high mountain, surveying
+the land.  His suit of armour, covered in what appears to be dried blood, is
+jet black.  It is made of the same material as the walls of the castle.  The
+hallway continues to the north and the south.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4156
+D2
+~
+~
+0 0 4158
+S
+#4158
+Southwest Tower~
+~
+~
+You are standing on the main floor of the southwest tower.  A large
+spiral stairwell leads up to the top of the tower, while the western and
+southern hallways stretch to the north and east.  This room is empty.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 4157
+D1
+~
+~
+0 0 4159
+D4
+~
+~
+0 0 4161
+S
+#4159
+Southern Hallway~
+~
+~
+You are walking through the southern hallway.  The black walls, seeming
+to destroy the light, are made of some substance you have never seen before.
+You can't seem to figure out where the light is coming from either, perhaps
+the ceiling or the floor.  The hallway continues to the east or west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4160
+D3
+~
+~
+0 0 4158
+S
+#4160
+Southern Hallway~
+~
+~
+You are walking along the southern hallway.  The red carpet that you trod
+upon does not move when you step on it, and you realize that you are making
+virtually no noise when you walk.  This is indeed a magical place.  The
+hallway continues east and west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4162
+D3
+~
+~
+0 0 4159
+S
+#4161
+Northwest Tower~
+~
+~
+You are at the top of the Southwest Tower, overlooking the surrounding
+area.  A very dense fog prevents you from seeing outside the walls of the
+castle, but the inside of the walls are easily seen.  The rooftops of the
+commerce area can be seen, as well as the rampart slightly below you.  You
+can see a large garden in the northern side of the castle, within the walls.
+A stairwell leads down to the main floor of the castle.  
+~
+0 393216 0
+Rd     0
+D5
+~
+~
+0 0 4158
+S
+#4162
+Southern Hallway~
+~
+~
+You are walking along the southern hallway.  The dense, black walls seem
+to be totally void of light, even sucking some of it in.  But at the same
+time, an aura of light eminates from somewhere, perhaps it is the air
+itself.  The hallway continues to the east or west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4102
+D3
+~
+~
+0 0 4160
+S
+#4163
+Southeast Tower~
+~
+~
+You are at the top of the Southeast Tower, overlooking the surrounding
+area.  A very dense fog prevents you from seeing outside of the castle
+perimeter, but the inside of the castle can be seen easily.  You can see the
+rooftops of buildings inside the walls, you can see the rampart slightly
+below you, and you can see the garden in the northern half of the castle.  A
+stairwell leads back down into the castle.  
+~
+0 393216 0
+Rd     0
+D5
+~
+~
+0 0 4134
+S
+#4164
+Northeast Tower~
+~
+~
+You are at the top of the Northeast Tower.  A very dense fog prevents you from
+seeing outside the main walls of the castle, but the interior rooftops can
+easily be seen.  A large garden lies almost directly below you.  The only exit
+is the staircase that you came up.
+~
+0 393216 0
+Rd     0
+D5
+~
+~
+0 0 4142
+S
+#4165
+Northwest Tower~
+~
+~
+You are at the top of the Northwest Tower.  A very dense fog prevents you
+from seeing outside the main walls of the castle, but the interior rooftops
+can easily be seen.  A large garden lies almost directly below you, while
+the roofs of the commerce area can be seen to the south.  You can see what
+looks like a small temple tucked behind the main restaurant.  The only exit
+is down.  
+~
+0 393216 0
+Rd     0
+D5
+~
+~
+0 0 4150
+S
+#4166
+The Garden~
+~
+~
+You are walking along the paths through the garden.  The northern end of
+a small lake can be seen here.  The path leads to the east, or to the south,
+following the lakeside.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4167
+D2
+~
+~
+0 0 4173
+S
+#4167
+The Garden~
+~
+~
+You are walking through the garden.  A large tree stands in the centre of
+where the path should go, but it just winds around it.  The paths continue
+to the east, south or west.  
+~
+0 393216 0
+Rd     0
+E
+tree~
+It is a maple tree.  There is nothing special about it.
+~
+D1
+~
+~
+0 0 4178
+D2
+~
+~
+0 0 4174
+D3
+~
+~
+0 0 4166
+S
+#4168
+The Garden~
+~
+~
+You are walking along the garden paths.  A large circular bench is here,
+made entirely of black pine.  The centre of the bench holds a large
+birdbath.  Paths lead away from the bench in all directions.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4171
+D1
+~
+~
+0 0 4179
+D2
+~
+~
+0 0 4185
+D3
+~
+~
+0 0 4177
+S
+#4169
+The Garden Entrance~
+~
+~
+You are standing at the entrance to the garden.  You are amazed at the
+sheer beauty of this place, the grass ever so green and healthy.  A path
+leads to the east, south, and west.  A large door rests against the wall to
+the north.  
+~
+0 393220 0
+Rd     0
+D0
+~
+~
+3 0 4146
+D1
+~
+~
+0 0 4170
+D2
+~
+~
+0 0 4176
+D3
+~
+~
+0 0 4178
+S
+#4170
+The Garden~
+~
+~
+You are walking along the garden paths.  Several bushes catch your eye
+here, they have been sculpted in the shape of a sword and shield.  The paths
+continue to the east, south and west.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4171
+D3
+~
+~
+0 0 4169
+S
+#4171
+The Garden~
+~
+~
+You are walking through the garden.  A very large display of flowers is
+here, forming the letters S and G.  You take a moment to smell them, and are
+pleased by the fragrance.  The paths continue to the east, south and west.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4172
+D2
+~
+~
+0 0 4168
+D3
+~
+~
+0 0 4170
+S
+#4172
+The Garden~
+~
+~
+You are walking through the garden paths.  This corner of the garden is
+rather damp, the ground is slightly mushy.  Perhaps there is water near
+here.  The paths continue to the south or west.  
+~
+0 393216 0
+Rd     0
+D2
+~
+~
+0 0 4179
+D3
+~
+~
+0 0 4171
+S
+#4173
+The Garden~
+~
+~
+You are walking along a path in the garden, along a lakeside.  It is more
+of a pond than a lake, for it is not very large.  Its calm waters stretch to
+the south, then turning east.  The paths continue to the north, east or
+south from here.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4166
+D1
+~
+~
+0 0 4174
+D2
+~
+~
+0 0 4180
+S
+#4174
+The Garden~
+~
+~
+You are walking along the garden paths, and have come to a bench.  This
+bench overlooks the pond located to the south and west of here.  Small
+flowers grow here and there, while the quiet of nature is all that is heard.
+The paths go in all directions from here.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4167
+D1
+~
+~
+0 0 4175
+D2
+~
+~
+0 0 4181
+D3
+~
+~
+0 0 4173
+S
+#4175
+The Garden~
+~
+~
+You are walking through the garden paths.  You can hear the occasional
+bird chirping above you, but when you look, they aren't there.  Perhaps this
+serene atmosphere is just a facade.  Just as you think to decide that, a
+small bird flutters as it lands on the ground.  You stop a moment, to watch,
+but it just flys off in a hurry.  The paths go in all directions.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4178
+D1
+~
+~
+0 0 4176
+D2
+~
+~
+0 0 4182
+D3
+~
+~
+0 0 4174
+S
+#4176
+The Garden~
+~
+~
+You are walking along the garden paths.  A huge tree is here, complete
+with berries.  Its branches stretch high above your head, providing shade. 
+A bench er the tree.  The paths lead away in all directions.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4169
+D1
+~
+~
+0 0 4177
+D2
+~
+~
+0 0 4183
+D3
+~
+~
+0 0 4175
+S
+#4177
+The Garden~
+~
+~
+You are walking through the garden.  Small animals scurry at your feet,
+trying to get a glimpse of what you look like.  You get the impression that
+not many people come in this garden.  You can go in all directions from
+here.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4168
+D2
+~
+~
+0 0 4184
+D3
+~
+~
+0 0 4176
+S
+#4178
+The Garden~
+~
+~
+You are walking along the paths of the garden.  The normally black walls
+of the castle, now covered with foliage, loom high over your head.  The odd
+bit of shrubbery can be seen here and there, giving this garden a very
+pleasant atmosphere.  The garden paths lead to the east, south or west.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4169
+D2
+~
+~
+0 0 4175
+D3
+~
+~
+0 0 4167
+S
+#4179
+The Garden~
+~
+~
+You are walking through the garden, and you hapen upon a rather large
+fountain.  Its large spout spues forth water into a basin, slightly spilling
+over the sides.  The paths continue to the north, south or west.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4172
+D2
+~
+~
+0 0 4186
+D3
+~
+~
+0 0 4168
+S
+#4180
+The Garden~
+~
+~
+You are standing on the largest section of the pond.  Its gentle waters
+splash playfully against the walls of the castle, in a rhythmic pattern.  The
+paths continue to the north or east.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4173
+D1
+~
+~
+0 0 4181
+S
+>sleep_prog 100~
+0
+mpechoat $n When you go to sleep, you are startled by a vision.
+mpechoat $n A beautiful lady rises out of the lake and kneels before you.
+mpechoat $n She holds her arms out, and an empty scabbard made of brass appears.
+mpechoat $n She looks at you, smiles, and takes the scabbard.
+mpechoat $n She then slowly sinks back into the water.
+~
+|
+#4181
+The Garden~
+~
+~
+You are walking along the paths through the garden.  A large lake lies to
+the south of you, gently splashing against the walls of the castle.  You can
+see small fish swimming in the lake, causing it to ripple now and again. 
+The paths go north, east and west.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4174
+D1
+~
+~
+0 0 4182
+D3
+~
+~
+0 0 4180
+S
+#4182
+The Garden~
+~
+~
+You are walking along a path by the shore.  The pond stops here, leaving
+the dry land to the east and north.  The water splashes gently against the
+walls of the castle to the south.  The paths continue to the west along the
+shore, or to the north and east.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4175
+D1
+~
+~
+0 0 4183
+D3
+~
+~
+0 0 4181
+S
+#4183
+The Garden~
+~
+~
+You are walking along the paths of the garden.  The large walls of the
+castle can be seen to the south, covered in foliage.  The paths lead to the
+north, east and west.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4176
+D1
+~
+~
+0 0 4184
+D3
+~
+~
+0 0 4182
+S
+#4184
+The Garden~
+~
+~
+You are walking through the garden paths.  The tall, black wall of the
+castle lies to the south of here.  Large vines crawl up the walls, covering
+most of it, but the void of a wall can still be felt.  The paths lead off to
+the north, east and west.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4177
+D1
+~
+~
+0 0 4185
+D3
+~
+~
+0 0 4183
+S
+#4185
+The Garden~
+~
+~
+You are walking through the garden.  You can't help but sense an
+extremely powerful source of magic directly east of here.  The paths
+continue to the north, east and west.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4168
+D1
+~
+~
+0 0 4186
+D3
+~
+~
+0 0 4184
+S
+#4186
+The Garden~
+~
+~
+You are walking through the garden, when the path abruptly ends.  A
+circle of stones rests on the ground, but one of the seems to be missing. 
+There are seven stones layed out, and the place for an eigth stone can
+easily be distinguished.  A path leads off to the north, and to the west.  
+~
+0 393216 0
+Rd     0
+E
+stones~
+They are made of onyx.
+~
+D0
+~
+~
+0 0 4179
+D3
+~
+~
+0 0 4185
+S
+#4189
+Path~
+~
+~
+You are walking along a path through the desert.  You can see a very
+large castle a little ways to the north, and a drawbridge directly to the
+north.  A path goes south.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4101
+D2
+~
+~
+0 0 4190
+S
+#4190
+Path~
+~
+~
+You are walking along a path through the mountains.  Small rocks sit here
+and there, and dust blows in the wind.  The path continues north and east
+from here.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 4189
+D3
+~
+~
+0 0 17017
+S
+#4191
+Path~
+~
+~
+You are walking along a path through the mountains.  The large peaks are
+high above your head, forever towering, keeping you in awe.  The path
+continues east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 4192
+S
+#4192
+Path~
+~
+~
+You are walking along a mountainous path.  Small swirls of dust move
+swiftly along the ground as you walk, and you happen to glance to the west. 
+You see an extremely large black castle.  The path continues to the east or
+west.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4193
+D3
+~
+~
+0 0 4191
+S
+#4193
+Path~
+~
+~
+You are walking along a long path.  It makes several twists and turns,
+but still travels in the east/west directions.  Those are the only exits. 
+You can feel some sort of great power to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 4194
+D3
+~
+~
+0 0 4192
+S
+#4194
+Path~
+~
+~
+You are walking along a path through the mountains.  There was at one
+point a rather large cavein to the east of here, but it is now cleared.  The
+path continues to the east or west.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 4195
+D3
+~
+~
+0 0 4193
+S
+#4195
+Cave In~
+~
+~
+You are standing within a small opening in the side of a mountain.  This
+used to be a solid rock face, but it has now crumbled away revealing the
+path located on the west side.  You can travel east or west from here.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 700
+D3
+~
+~
+0 0 4194
+S
+#4196
+Northwest Tower~
+~
+~
+You are on the lower floor of the Northwest Tower.  A large stairway
+leads up to the main floor, while the Kings Hallway stretches out to the
+east.  The walls pulse with power.  
+~
+0 393228 0
+Rd     0
+D1
+~
+~
+0 0 4197
+D4
+~
+~
+0 0 4150
+S
+#4197
+Kings Hallway~
+~
+~
+You are walking along the Kings Hallway, on a plush red carpet.  Its
+beauty is almost unfathomable.  The walls seem to glow and pulse with a
+rhythmic beat.  The hallway continues easy or west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4198
+D3
+~
+~
+0 0 4196
+S
+#4198
+Kings Hallway~
+~
+~
+You are walking along the Kings Hallway.  A large oaken door is on the
+south wall.  The beautiful artwork on the door depicts a bright light, with
+someone stepping through it.  The hallway continues east or west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4199
+D2
+~
+~
+115 0 4205
+D3
+~
+~
+0 0 4197
+S
+#4199
+Kings Hallway~
+~
+~
+You are walking along the Kings Hallway.  There is a large statue of a
+knight on the north wall.  It stands, looking ominous, holding a huge battle
+axe.  The hallway continues east and west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4200
+D3
+~
+~
+0 0 4198
+S
+#4200
+Kings Hallway~
+~
+~
+You are walking along the Kings Hallway.  A huge sealed door lies on the
+south wall, with the markings of royalty carved into it.  A large eye has
+been painted on the north wall, forever watching the door.  The hallway
+continues east and west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4201
+D3
+~
+~
+0 0 4199
+S
+#4201
+Kings Hallway~
+~
+~
+You are walking along the Kings Hallway.  A large statue of a Knight lies
+against the north wall.  It is wielding a huge battleaxe.  The hallway
+continues to the east and west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4202
+D3
+~
+~
+0 0 4200
+S
+#4202
+Kings Hallway~
+~
+~
+You are walking along the Kings Hallway.  A plush carpet, made of red
+silk, squishes beneath your feet.  The walls seem to hum to a melodic tune,
+but you can't quite place it.  The hallway stretchest east and west, while a
+large oak door is on the south wall.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4203
+D2
+~
+~
+115 0 4206
+D3
+~
+~
+0 0 4201
+S
+#4203
+Kings Hallway~
+~
+~
+You are walking along the Kings Hallway of StoneGate Castle.  The black
+walls pulse with a blue glow.  A small room can be seen directly to the
+east, while the hallway continues to the west.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 4204
+D3
+~
+~
+0 0 4202
+S
+#4204
+Northeast Tower~
+~
+~
+You are on the lower floor of the Northeast Tower.  A large stairway
+leads up to the main floor, while the Kings Hallway stretches out to the
+west.  The walls pulse with power.  
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 4203
+D4
+~
+~
+0 0 4142
+S
+#4205
+Timegate~
+~
+~
+You have entered a void.  Huge purple clouds surround you, pulsing with
+lightning, while the ground you stand on seems to shimmer in and out of
+existance.  There appears to be an exit in every direction.  Upon closer
+look, you can see strange objects, small huts, giant animals, and things
+that are extremely old.  Perhaps it is the dawn of time itself.  You wonder
+what you should do?  
+~
+0 143041550 0
+Rd     0
+D0
+~
+~
+115 0 4001
+D1
+~
+~
+115 0 4001
+D2
+~
+~
+115 0 4001
+D3
+~
+~
+115 0 4001
+D4
+~
+~
+115 0 4001
+D5
+~
+~
+115 0 4001
+S
+#4206
+Timegate~
+~
+~
+You have entered a void.  Huge purple clouds surround you, pulsing with
+lightning, while the ground you stand on seems to shimmer in and out of
+existance.  There appears to be an exit in every direction.  Upon closer
+look, you can see strange metal objects with wheels, strange items that
+fire, and mammoth structures, all fading in and out of existance.  You
+wonder what to do?  
+~
+0 143041550 0
+Rd     0
+D0
+~
+~
+115 0 26159
+D1
+~
+~
+115 0 26159
+D2
+~
+~
+115 0 26159
+D3
+~
+~
+115 0 26159
+D4
+~
+~
+115 0 26159
+D5
+~
+~
+115 0 26159
+S
+#0
+
+
+
+#SPECIALS
+M 4113 spec_cast_mage
+M 4115 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 4109 1 4102
+E 0 4110 0 6
+E 0 4111 0 5
+E 0 4112 0 11
+E 0 4125 0 20
+O 0 4103 0 4104
+O 0 4104 0 4109
+M 0 4113 1 4110
+E 0 4109 0 6
+E 0 4107 0 11
+E 0 4108 0 5
+E 0 4135 0 20
+E 0 4127 0 1
+M 0 4112 1 4111
+G 0 4116 0
+G 0 4117 0
+G 0 4118 0
+G 0 4119 0
+G 0 4120 0
+G 0 4121 0
+M 0 4116 1 4112
+O 0 4101 0 4114
+M 0 4115 1 4116
+E 0 4107 0 11
+E 0 4108 0 5
+E 0 4109 0 6
+E 0 4135 0 20
+E 0 4128 0 3
+M 0 4114 1 4117
+G 0 4121 0
+G 0 4122 0
+G 0 4123 0
+G 0 4124 0
+M 0 4111 1 4118
+G 0 4132 0
+G 0 4133 0
+G 0 4134 0
+M 0 4118 1 4122
+G 0 4121 0
+G 0 4118 0
+O 0 4101 0 4126
+O 0 4130 0 4128
+O 0 4131 0 4129
+O 0 4129 0 4129
+M 0 4117 1 4129
+M 0 4105 1 4142
+E 0 4110 0 6
+E 0 4111 0 5
+E 0 4113 0 12
+E 0 4125 0 20
+E 0 4112 0 11
+M 0 4106 1 4158
+E 0 4110 0 6
+E 0 4111 0 5
+E 0 4112 0 11
+E 0 4113 0 12
+E 0 4125 0 20
+M 0 4103 1 4166
+M 0 4104 1 4169
+M 0 4102 1 4171
+M 0 4102 1 4174
+M 0 4103 1 4177
+O 0 4102 0 4179
+M 0 4101 1 4182
+G 0 4105 0
+M 0 4104 1 4183
+M 0 4101 1 4186
+G 0 4105 0
+M 0 4119 1 4205
+M 0 4120 1 4206
+S
+
+
+
+#SHOPS
+4111 12 13 15 19 1 120 75 0 23
+4112 0 0 0 0 0 100 100 0 23
+4114 17 19 0 0 0 120 75 0 23
+4118 0 0 0 0 0 120 75 0 23
+0
+
+
+
+#$

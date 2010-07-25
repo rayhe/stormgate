@@ -1,0 +1,3739 @@
+#AREADATA
+Name        { CLAN } Unholy Plague HQ~
+Builders    None~
+VNUMs       8501 8600
+Security    100
+Recall      1
+Flags       304
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      &rThe Demons of Unholy Plague awaken, searching for your soul.~
+End
+
+
+
+#MOBILES
+#8501
+torturer incorruptus~
+Incorruptus~
+Incorruptus, the Torturer, is here to help you train and practice.
+~
+Incorruptus is here for you to practice your skills and train your attributes.
+~
+853571 33554560 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+>death_prog 99~
+mpecho $i looks around, blinks, and vanishes without a trace.
+mptrans $i 1
+~
+|
+#8502
+immotus~
+Immotus~
+Immotus is here to sell you things.
+~
+Immotus is a rather old wizard.  He looks as though he has been here for a very
+long time, and has been working day and night for the good of the clan.  He
+will sell you anything he has, and periodically will obtain new goods.
+~
+524355 33554560 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+mpecho $i disappears.
+mptrans $i 1
+~
+>speech_prog truesight~
+if ispc($n)
+ if isclan($n) == 8
+  bow $n
+  cast 'true sight'
+ endif
+endif
+~
+|
+#8503
+seternus healer~
+Seternus~
+Seternus will heal your wounds.
+~
+~
+524355 33554560 16 0 0 0 S
+110 1 220 220 24000 24000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>death_prog 99~
+mpecho $i looks to the sky, howls, and vanishes!
+mptrans $i 1
+~
+|
+#8504
+sanguine~
+Sanguine~
+Sanguine is here.
+~
+This being is a huge black mass.  It can shape any form, any size, or any color
+of its choice.  It somehow has psychic abilities to know what exactly you fear
+most.  You feel very angry towards it and ponder flinging a few fireballs at it
+just for kicks.  He is here for vampires to feed on.
+~
+525379 1 16 0 0 1000 S
+1 1 2 2 50000 50000d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+mpecho $i looks to the bowels of the realm, and screams!
+mptrans $i 1
+~
+|
+#8505
+sacire repairman~
+Sacire~
+Sacire the Repairman is here, waiting to serve.
+~
+~
+524355 33554560 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+>death_prog 99~
+mpecho $i looks to the sky and explodes!
+mptrans $i 1
+~
+|
+#8506
+costos guardian first~
+Costos~
+Costos, the First Guardian is here.
+~
+This is the first creation by Tyrion, he has been put here to guard against
+all intruders.
+~
+524355 336093308 16 0 0 0 S
+50 1 100 100 15000 15000d0+0 0d0+0
+500 0 0
+0 0 1
+15 0 0
+>death_prog 99~
+mpecho $i looks to the heavens, screams, and vanishes!
+mptrans $i 1
+~
+|
+#8507
+defendire guardian second~
+Defendire~
+Defendire, the Second Guardian, is here.
+~
+This is the second creation by Tyrion, who has been put here to guard against
+all intruders.
+~
+524355 336093308 16 0 0 0 S
+50 1 100 100 15000 15000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+mpecho $i looks to the skies, and explodes!
+mptrans $i 1
+~
+|
+#8508
+grunnitus third guardian adsfkhjbs~
+Grunnitus~
+Grunnitus, the Third Guardian, is here.
+~
+This third creation by Tyrion has been placed here to guard against all
+intruders.
+~
+524355 336093308 16 0 0 0 S
+50 1 100 100 15000 15000d0+0 0d0+0
+500 0 0
+0 0 0
+15 0 0
+>death_prog 99~
+mpecho $i looks to the skies, and vanishes.
+mptrans $i 1
+~
+|
+#8509
+claustrum barkeep~
+Claustrum~
+Claustrum is here, ready to serve you.
+~
+~
+524355 33554560 16 0 0 0 S
+50 1 100 100 30000 30000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+mpecho $i looks to the heavens, and howls in agony!
+mptrans $i 1
+~
+|
+#8510
+nebuchadnezzar zhakarius deathknight~
+Nebuchadnezzar~
+Nebuchadnezzar, Tyrion's personal Wizard, is here.
+~
+~
+2621507 369639616 16 0 0 1000 S
+110 1 220 220 30000 30001d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+ if isclan($n) == 8 
+  say Welcome, $n
+  bow $n
+  say It is my duty to serve thee.
+  else
+ mpat 8509 note to all
+ mpat 8509 note subject Code 1
+ mpat 8509 note + Reporting Unauthorized Presense in the HQ
+ mpat 8509 note + name ($n)
+ mpat 8509 note post
+ mptrans $i 8510
+ emote does not appear to notice you.
+ endif
+endif
+~
+>speech_prog jail~
+if ispc($n)
+ if isclan($n) == 8
+  say The key for the jail is yours.
+  mpoload 8532
+  give key $n
+ endif
+endif
+~
+>speech_prog cell~
+if ispc($n)
+ if isclan($n) == 8
+  say The cell door key is yours.
+  mpoload 8531
+  give key $n
+ endif
+endif
+~
+>speech_prog bow~
+if ispc($n) == 1
+if isclan($n) == 8
+bow $n
+endif
+endif
+~
+>all_greet_prog 100~
+if ispc($n)
+ if level($n) > 39
+  break
+ else
+  tell $n Sorry, but you are not advanced enough to see this room.
+  mptrans $i 8509
+  say I have escorted $n out of the Hall of Power.
+  mpecho &P$n arrives from the north.
+  mptrans $n 8509
+  moechoat $n &bYou have been forced south.
+  mptrans $i 8510
+  say I have escorted $n out of the Hall of Power.
+  break
+ endif
+endif
+~
+>speech_prog code~
+if ispc($n)
+ if isclan($n) == 8
+  say The noteboard decryption tool is yours.
+  mpoload 8537
+  give tool $n
+ endif
+endif
+~
+>speech_prog purge~
+if ispc($n)
+ if isclan($n) == 8
+  say I will destroy all that is before me.
+  bow
+  mppurge
+ endif
+endif
+~
+>speech_prog commands com list~
+if ispc($n)
+if isclan($n) == 8
+mpechoat $n Commands List:
+mpechoat $n =============
+mpechoat $n jail       - Receive entrance key.
+mpechoat $n cell       - Receive cell door key.
+mpechoat $n code       - Receive decoder
+mpechoat $n purge      - Destroy immediate surroundings
+mpechoat $n commands   - This menu
+mpechoat $n recall     - Trans to unclanned recall
+mpechoat $n rcharter   - Receive the clan charter
+mpechoat $n leadkey    - Receive the leaders key
+mpechoat $n champkey   - Receive the champions key
+mpechoat $n councilkey - Receive the champions key
+mpechoat $n centkey    - Receive the centurions key
+mpechoat $n hellkey    - Receive the clan hell key
+endif
+endif
+~
+>speech_prog dump~
+if ispc($n)
+ if isclan($n) == 8
+  say I have now cleaned out my inventory.
+  bow $n
+  mpjunk all
+mpoload 8553
+wear armor
+endif
+endif
+~
+>speech_prog charter~
+if ispc($n)
+ if isclan($n) == 8
+  mpechoat $n &rThe Incarnate Charter:
+  mpechoat $n &w---------------------
+  mpechoat $n &r  1)&w Death is the only thing
+  mpechoat $n &r  2)&w We are not the hunted, we are the hunters
+  mpechoat $n &r  3)&w Ignore all threats from rival clans.  Should it persist,
+  mpechoat $n &w     report the problem immediately to Tyrion Soulstealer
+  mpechoat $n &r  4)&w Keep broadcasts on open channels to a minimum
+  mpechoat $n &r  5)&w All members will follow the Mud rules
+  mpechoat $n &r  6)&w Listen and obey your Leader's decisions
+  mpechoat $n &r  7)&w Outcast, for any reason, results in your death and full
+  mpechoat $n &r     &wloot
+  mpechoat $n &r  8)&w There will be no inductions before level 50
+  mpechoat $n &r  9)&w Do not give away or sell any items to non Incarnate members
+  mpechoat $n &r 10)&w Tyrion Soulstealer has the final say in all clan matters
+  mpechoat $n
+  mpechoat $n The room east of the Cross Junction also has the charter.
+ endif
+endif
+~
+>speech_prog rcharter~
+if ispc($n)
+ if isclan($n) == 8
+  mpoload 8539
+  say Take this charter, use it wisely.
+  give charter $n
+  bow $n
+ endif
+endif
+~
+>speech_prog leadkey~
+if ispc($n)
+ if isclan($n) == 8
+  mpoload 8543
+  give key $n
+  bow $n
+ endif
+endif
+~
+>speech_prog champkey~
+if ispc($n)
+ if isclan($n) == 8
+  mpoload 8544
+  give key $n
+  bow $n
+ endif
+endif
+~
+>speech_prog councilkey~
+if ispc($n)
+ if isclan($n) == 8
+  mpoload 8545
+  give key $n
+  bow $n
+ endif
+endif
+~
+>speech_prog centkey~
+if ispc($n)
+ if isclan($n) == 8
+  mpoload 8546
+  give key $n
+  bow $n
+ endif
+endif
+~
+>speech_prog hellkey~
+if ispc($n)
+ if isclan($n) == 8
+  mpoload 8547
+  mptrans $i 8509
+  not to all
+  note subject Hell Key
+  note + name($n)
+  note post
+  mptrans $i 8510
+  give key $n
+  say The Hell Key is yours, use it wisely.
+ endif
+endif
+~
+>speech_prog help hi hello~
+if ispc($n) == 1
+say Hello.
+if isclan($n) == 8
+mpechoat $n Say the word COMMANDS or LIST and I will give you a list of what
+mpechoat $n can be done.  The command TRUESIGHT makes it so that Nebuchadnezzar
+mpechoat $n can cast spells on phased, or similar effect, persons.
+endif
+endif
+~
+>speech_prog truesight~
+if ispc($n)
+ if isclan($n) == 8
+  say I can now see the phased.
+  cast 'true sight'
+ endif
+endif
+~
+>death_prog 99~
+shout AAAARRRRHHHH!!!!!!  I am DEFEATED!!!
+shout Incarnate's secrets are out!!!
+mpoload 8517
+mpoload 8531
+mpoload 8532
+mpoload 8543
+mpjunk armor
+mpoload 8544
+mpoload 8545
+mpoload 8546
+mpoload 8547
+mpoload 8548
+~
+>fight_prog 50~
+cast 'dispel magic' $n
+~
+>fight_prog 40~
+cast 'demonfire'
+~
+>fight_prog 30~
+mpoload 25019
+mpoload 25019
+quaf blue
+quaf blue
+mpoload 25019
+mpoload 25019
+quaf blue
+quaf blue
+~
+>fight_prog 20~
+slit
+~
+>fight_prog 10~
+say I'll get you!
+~
+>speech_prog south~
+if ispc($n) == 1
+if isclan($n) == 8
+south
+endif
+endif
+~
+>speech_prog north~
+if ispc($n) == 1
+if isclan($n) == 8
+north
+endif
+endif
+~
+>speech_prog south2~
+if ispc($n) == 1
+if isclan($n) == 8
+south
+south
+endif
+endif
+~
+>speech_prog north2~
+if ispc($n) == 1
+if isclan($n) == 8
+north
+north
+endif
+endif
+~
+>speech_prog west~
+if ispc($n) == 1
+if isclan($n) == 8
+west
+endif
+endif
+~
+>speech_prog east~
+if ispc($n) == 1
+if isclan($n) == 8
+east
+endif
+endif
+~
+>speech_prog up~
+if ispc($n) == 1
+if isclan($n) == 8
+up
+endif
+endif
+~
+>speech_prog down~
+if ispc($n) == 1
+if isclan($n) == 8
+down
+endif
+endif
+~
+>death_prog 99~
+mptrans $i 1
+~
+|
+#8511
+argentarius banker~
+Argentarius~
+Argentarius the Banker is here, ready to serve.
+~
+~
+655427 33554560 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+>death_prog 99~
+$i looks to the sky, and vanishes without a trace!
+mptrans $i 1
+~
+|
+#8512
+qirus~
+The Creator~
+The Creator, the Fourth Guardian, is here.
+~
+~
+524355 0 16 0 0 0 S
+110 1 220 220 10 10d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>speech_prog recall~
+if ispc($n)
+ if isclan($n) == 8
+mpat 8510 mpecho $n arrives with a puff of smoke.
+mptrans $n 8510
+mpecho $n disappears in a mushroom cloud.
+tell $n you are now in front of Nebuchadnezzar.
+endif
+endif
+~
+>speech_prog truesight~
+cast 'true sight'
+~
+>death_prog 99~
+mpecho $i looks to the skies, and vanishes!
+mptrans $i 1
+if ispc($n) == 1
+if isclan($n) == 8
+mpat 8536 mpmload 8512
+endif
+endif
+~
+|
+#8513
+Morr~
+Morr~
+Morr is here.
+~
+~
+524355 33554560 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+mpecho $i looks to the heavens, and disappears without a trace!
+mptrans $i 1
+~
+|
+#8514
+tormentum~
+Tormentum~
+Tormentum is here, tending his shoppe.
+~
+~
+524355 33554560 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>speech_prog truesight~
+if ispc($n) == 1
+if isclan($n) == 8
+say I can now see the phased.
+cast 'true sight'
+endif
+endif
+~
+>death_prog 99~
+mpecho $i looks to the heavens, and screams in agony!
+mptrans $i 1
+~
+|
+#8515
+sacrum~
+Sacrum~
+Sacrum is here, eternally worshipping Lord Tyrion.
+~
+~
+524355 33554560 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+mpecho $i looks to the skies, screams, and vanishes!
+mptrans $i 1
+~
+>rand_prog 10~
+emote mumbles some chant.
+~
+>rand_prog 10~
+emote gets a glazed look over his face.
+~
+|
+#8516
+unholy Soul~
+The Unholy Soul~
+The Unholy Soul sits here, awating your slaughter.
+~
+~
+524355 0 16 0 0 -1000 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+if ispc($n) == 1
+if isclan($n) == 8
+mptrans $i 1
+mpat 8545 mpmload 8516
+mpat 8545 mpecho $i reforms from the very air itself!
+endif
+endif
+~
+|
+#8517
+holy soul~
+The Holy Soul~
+The Holy Soul rests here, innocently.
+~
+~
+524355 0 16 0 0 1000 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+if ispc($n) == 1
+if isclan($n) == 8
+mptrans $i 1
+mpat 8545 mpmload 8517
+mpat 8545 mpecho $i reforms from the very air itself!
+endif
+endif
+ 
+~
+|
+#8518
+temptaire~
+Temptaire~
+Temptaire is here, seducing you.
+~
+~
+524355 33554624 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 2
+0 0 0
+>death_prog 99~
+mpecho $i looks to the sky, screams, and implodes!
+mptrans $i 1
+~
+|
+#8520
+shadows neverending~
+The Neverending Shadows~
+A Chaotic Malformation of Neverending Shadows is all around you.
+~
+~
+524355 336076924 16 0 0 0 S
+50 1 100 100 20000 20000d0+0 0d0+0
+500 0 0
+0 0 0
+15 0 0
+#8521
+creation unholy plague~
+A Creation of the Unholy Plague~
+A Creation of the Unholy Plague, risen from the depths of hell, is here.
+~
+~
+67 33554560 16 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say You must speak the nature of Unholy Plague to open this door.
+~
+>speech_prog death~
+mpoload 8550
+unlock down
+open down
+yell The Entrance door is now open.
+mpjunk all
+~
+|
+#8526
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#8535
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#8501
+tattoo skull unholy plague~
+a Tattoo of a Flaming Skull~
+A Tattoo sits on the ground.~
+~
+9 838860864 458752 0 0 1115137 100
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+0 0
+holy strength~
+0 0
+0 0 0
+A
+19 20
+A
+18 20
+A
+13 100
+A
+25 40
+A
+12 100
+A
+24 -20
+A
+2 2
+A
+115 -1
+A
+129 -1
+#8502
+tattoo skull unholy plague~
+a Tattoo of a Flaming Skull~
+A Tattoo sits on the ground here.~
+~
+9 805306432 466944 0 0 65537 75
+100 100
+0~ 0~ 0~ 0~
+1 748 0
+0 0
+giant strength~
+0 0
+0 0 0
+A
+19 15
+A
+18 15
+A
+13 75
+A
+24 -15
+A
+12 75
+A
+25 25
+A
+2 2
+A
+115 -1
+#8503
+tattoo skull unholy plague~
+a Tattoo of a Flaming Skull~
+A tattoo sits on the ground.~
+~
+9 939524160 458752 0 0 65537 50
+100 100
+0~ 0~ 0~ 0~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 10
+A
+13 50
+A
+2 2
+A
+12 50
+A
+25 15
+A
+115 -1
+#8504
+souls victims~
+souls~
+The souls of Unholy Plague's victims howl about the room.~
+~
+8 838860884 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 8505
+reserved~
+-1 -1
+0 0 0
+E
+souls~
+Those who have fallen to the wrath of Incarnate are forever trapped in this
+room, circling in a tormented prison.
+~
+#8505
+souls deaths~
+soul~
+The souls of those among us who have fallen scream in pain.~
+~
+8 805306453 16384 0 0 107 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+dark blessing~
+0 0
+0 0 0
+E
+souls~
+Those among us who have fallen to enemy clans have their souls forever trapped
+in this room, circling in a tormented prison.
+~
+#8506
+altar~
+altar~
+An altar sits on the ground, burning with power.~
+~
+8 838860864 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+Altar~
+It is covered with ancient runes, you can not decipher them.
+~
+#8507
+sword~
+a demon sword~
+Costos's demon sword sits at your feet.~
+~
+5 905969728 0 0 0 8193 100
+100 100
+0~ 0~ 0~ 0~
+5 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 20
+#8508
+Tattoo Symbol Zagoula UNHOLY PLAGUE~
+a tattoo of the symbol of Zagoula &r<UnHoLY &bPLaGUE>~
+A level 100 piece of equipment of UNHOLY PLAGUE is here.~
+~
+9 637534740 1048576 0 0 1048577 106
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+A
+24 -20
+A
+26 100
+A
+13 100
+A
+19 12
+A
+304 -1
+#8509
+storm lantern unholy plague~
+the Storm Lantern of Unholy Plague~
+The Storm Lantern of Unholy Plague rests here, eminating power.~
+~
+1 805306433 0 0 0 1025 106
+100 100
+0~ 0~ -1~ 0~
+100 1060 0
+5 0
+aura of peace~
+-1 -1
+0 0 0
+A
+24 -20
+A
+25 40
+A
+18 20
+A
+19 20
+A
+12 150
+A
+13 150
+A
+119 -1
+#8510
+maderi potion~
+a Maderi potion~
+A Maderi Potion lies on the ground.~
+~
+10 838860864 0 0 0 1 50
+100 100
+100~ heal~ heal~ refresh~
+2 1200 0
+0 0
+reserved~
+0 0
+0 0 0
+#8511
+numen potion~
+a Numen potion~
+A Numen Potion lies on the ground here~
+~
+10 838860864 0 0 0 1 50
+100 100
+100~ mana~ mana~  ~
+1 1200 0
+0 0
+reserved~
+0 0
+0 0 0
+#8512
+saccus~
+saccus~
+A bag has been discarded here~
+~
+15 838860864 131072 0 0 1 50
+100 100
+400~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#8513
+return scroll~
+a Scroll of Return~
+A Scroll of Return lies on the ground~
+~
+2 838860864 0 0 0 1 50
+100 100
+100~ word of recall~ word of recall~ word of recall~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#8514
+scroll malum amovere remove curse~
+a Malum Amovere scroll~
+A Malum Amovere scroll lies on the ground~
+~
+2 838860864 0 0 0 1 50
+100 100
+100~ remove curse~ remove curse~ remove curse~
+1 360 0
+0 0
+reserved~
+0 0
+0 0 0
+#8515
+potion obitus~
+an Obitus potion~
+An Obitus potion lies here.~
+~
+10 838860864 0 0 0 1 50
+100 100
+100~ cure poison~ cure blindness~ refresh~
+1 340 0
+0 0
+reserved~
+0 0
+0 0 0
+#8516
+scroll identify id~
+a Scroll of Identify~
+A Scroll of Identify has been discarded here.~
+~
+2 838860864 0 0 0 1 50
+100 100
+100~ identify~ reserved~ reserved~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#8517
+key tyrion~
+a burning key~
+A burning key is here.~
+~
+18 838860864 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8518
+scroll cancellation dispel~
+a Scroll of Cancellation~
+A Scroll of Cancellation has been left here.~
+~
+2 838860864 0 0 0 1 50
+100 100
+100~ cancellation~ cancellation~ cancellation~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#8519
+scroll detection~
+a Scroll of Detection~
+A scroll sits on the ground here.~
+~
+2 838860864 0 0 0 1 50
+100 100
+100~ detect hidden~ detect magic~ detect invis~
+1 300 0
+0 0
+reserved~
+0 0
+0 0 0
+#8520
+cow pattie~
+a cow pattie~
+A Cow Pattie stinks in the corner.~
+~
+19 805306368 0 0 0 1 50
+100 100
+20~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#8521
+pack iron rations~
+a pack of iron rations~
+A Pack of Iron Rations has been discarded here.~
+~
+19 805306368 0 0 0 1 50
+100 100
+40~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#8522
+gumbo~
+gumbo~
+Some gumbo lies on the ground.~
+~
+19 805306368 0 0 0 1 50
+100 100
+60~ 0~ 0~ 0~
+1 16 0
+0 0
+reserved~
+0 0
+0 0 0
+#8523
+canteen water~
+a canteen of water~
+A Canteen lies at your feet.~
+~
+17 805306368 0 0 0 1 50
+100 100
+50~ 50~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#8524
+beer skin~
+a skin of beer~
+A skin filled with beer lies on the ground.~
+~
+17 268435456 0 0 0 1 50
+100 100
+20~ 20~ 1~ 0~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#8525
+bottle wine~
+a bottle of fine wine~
+A bottle of wine rests at your feet.~
+~
+17 805306368 0 0 0 1 50
+100 100
+30~ 30~ 2~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#8526
+gargle blaster pangalactic galactic gargleblaster~
+a Pangalactic Gargleblaster~
+Some wierd drink is here.~
+~
+17 805306368 0 0 0 1 50
+100 100
+40~ 40~ 7~ 0~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#8527
+fountain souls~
+fountain~
+The Fountain of Haunted Souls is here.~
+~
+25 838860864 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8528
+donation box~
+donation Box~
+The Incarnate Box of Donations is here.~
+~
+15 838860864 0 0 0 0 50
+100 100
+9999~ 1~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8529
+note board~
+note board~
+A note board is here.  Read it often.~
+~
+11 838860864 0 0 0 0 50
+100 100
+8537~ 50~ 50~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8530
+sign~
+sign arena~
+The sign showing the arena rules is here.~
+~
+11 838860864 0 0 0 0 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+The rules are not done yet.
+~
+#8531
+key cell doors~
+a key to the cell doors~
+A key lies on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8532
+key jail entrance~
+a key to the jail entrance~
+A key lies on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8533
+potion enhancement~
+a Potion of Enhancement~
+A potion lies on the ground here.~
+~
+10 838860864 0 0 0 1 50
+100 100
+100~ giant strength~ ectoplasmic form~ fly~
+1 480 0
+0 0
+reserved~
+0 0
+0 0 0
+#8534
+burning portal east~
+a Burning Portal~
+A Burning Portal lies against the east wall.~
+~
+29 838860864 0 0 0 0 50
+100 100
+10211~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#8535
+portal chaotic chaos west~
+a Chaotic portal~
+A Chaotic Portal lies against the west wall.~
+~
+29 872415296 0 0 0 0 50
+100 100
+20237~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#8536
+sign~
+sign members~
+A sign is posted here, containing a list of members.~
+~
+13 838860864 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+&rMemebrs of Incarnate:
+&w--------------------
+ 
+     &RDeity:&w Tyrion Soulstealer, the Blood God
+ 
+    &rLeader:&w x
+ 
+&rCouncil/#1:&w x
+ 
+  &rCent./#2:&w x
+ 
+  &rChampion:&w x
+ 
+   &rMembers:&w x
+~
+#8537
+tool decryption wand~
+a wand of decryption~
+A Wand of Decryption lies here.~
+~
+8 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8538
+sign~
+sign charter~
+A sign is posted here, containing the clan charter.~
+~
+13 838860864 0 0 0 1024 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+&RThe Unholy Plague Charter&w:
+-------------------------
+ 
+&r 1)&w Death is the only thing
+ 
+&r 2)&w We are not the hunted, we are the hunters
+ 
+&r 3)&w Ignore all threats from rival clans.  Should it persist, report the
+    problem immediately to Dumax the Dreaded
+ 
+&r 4)&w Keep broadcasts on open channels to a minimum
+ 
+&r 5)&w All members will follow the Mud rules
+ 
+&r 6)&w Listen and obey your Leader's decisions
+ 
+&r 7)&w Outcast, for any reason, results in your death and full loot
+ 
+&r 8)&w There will be no inductions before level 50
+ 
+&r 9)&w Do not give away or sell any items to non Unholy Plague members
+ 
+&r10)&w Dumax the Dreaded has the final say in all clan matters
+ 
+This is your charter, remember it.
+~
+#8539
+charter unholy plague~
+the Charter of Unholy Plague~
+A piece of paper lies on the ground, pulsing with power.~
+~
+8 838860864 0 0 0 1025 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+charter~
+&rThe Incarnate Charter:
+&w---------------------
+ 
+&r 1)&w Death is the only thing
+ 
+&r 2)&w We are not the hunted, we are the hunters
+ 
+&r 3)&w Ignore all threats from rival clans.  Should it persist, report the
+    problem immediately to Tyrion Soulstealer
+ 
+&r 4)&w Keep all broadcasts on open channels to a minimum
+ 
+&r 5)&w All members will follow the Mud rules
+ 
+&r 6)&w Listen and obey the Leader's decisions
+ 
+&r 7)&w Outcast, for any reason, results in your death and full loot
+ 
+&r 8)&w There will be no inductions before level 50
+ 
+&r 9)&w Do not give away or sell any items to non Incarnate members
+ 
+&r10)&w Tyrion Soulstealer has the final say in all clan matters
+~
+E
+paper~
+It is the Incarnate charter.  Look charter to read it.
+~
+#8540
+paper rules book~
+a piece of paper showing clan equipment creation rules~
+A piece of paper lies here.~
+~
+8 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+4 70
+reserved~
+-1 -1
+0 0 0
+E
+six~
+Mob Creation Rules:
+&W
+All mobs in the HQ must be level 50, with no more than 24000 hp, and no more than
+2 shields.
+ 
+The mob that you have to cast spells on players, or your healer mob, may be
+level 110, with 30000 HP, and 5 shields.
+There will be NO aggressive mobs, and NO mprogs that cause the mob to attack
+a player.
+Mobs may ony trans or push members of YOUR clan.
+~
+E
+four~
+All clans are raidable.
+ 
+All mobs must be level 50, with 24000 hp, and 2 shields.
+ 
+You may have one mob that is level 110, with 5 shields.
+This is the mob used for the healer.
+ 
+All mobs must have the NO_EXP flag.
+No room in the HQ can be SAFE.
+ 
+All mobs must have the NO_EXP flag.
+NO aggressive mobs.
+~
+E
+three~
+&RP&Bo&Rt&Bi&Ro&Bn&Rs
+ 
+&WOk here are the rules for clan potions.
+First:
+     &RNO&W (and I repeat &RNO&W) healing or mana potions, &RAT ALL&W
+ 
+Now that we have that taken care of....
+Here is a list of spells you &Bcan&W put on your potions/scrolls.
+ 
+Cure Poison - 2500
+Remove Curse - 3000
+Fly - 3000
+Giant Strength - 5000
+Invis - 4000
+Identify - 5000
+Ectoplasmic Form - 4000
+Detect Invis - 2000
+Cure Blindness - 3000
+Detect Magic - 3000
+Detect Hidden - 2500
+Cancellation - 5000
+Refresh - 3000
+ 
+Those are &RALL&W the spells you may have on your potions/scrolls.
+ 
+You may mix and match the spells, but just add the prices together.
+ 
+For example, a potion with 2 cancellation spells, and a refresh.
+Would cost 13k.  That is pretty simple, so if you can't figure it out... well....
+ 
+If you want another spell on a potion, go talk to Andromeda, Tyrion, or Ahsile.  
+Maybe something can be worked out.
+ 
+Potion Weight = 1
+ 
+***  Same applys to scrolls
+******Spell level of potions and such is to be no greater than 100.
+~
+E
+paper~
+Type look one, look two, etc. to read all chapters.  There are currently 9
+of them.
+~
+E
+rules~
+Type look one, look two, etc. to read all chapters.  There are currently 9
+of them.
+~
+E
+one~
+Alright, the following is with respect to the level 100 item for the clan.
+ 
+None of the clan equipment can be armor (body), or weapon.
+None of the clan equipment can be any dual-location, IE, orbit, ankle etc.
+ 
+Max Hitroll and Damroll is 20/20
+Max Hp is 100
+Max Mana/blood is 100/40
+Max AC -100
+Max Move 100
+Max Saving-Spell and Saving Breath TOTAL is -20
+Max Anti-Disarm 100
+Max 2 Stats...each stat no more than +2
+Two permanent spell such as "fly -1" is allowed, no shields
+Permanent lights are allowed.
+ 
+Your clan equipment is levels 100, 65 and 30 if your induction level is set
+at level 30, or levels 100, 75 and 50 if your induction level is set at 50.
+ 
+ 
+Level 100 EQ may have 7 addaffects, maximums listed above.
+ 
+Level 65/75 EQ is 75% strength of the the level 100 object, 6 addaffects.
+ 
+Level 30/50 EQ is 50% strength of the level 100 object, 5 addaffects.
+ 
+ 
+NO invokes.
+ 
+~
+E
+two~
+The spell can *NOT* be any of the following spell:
+ - Sanctuary
+ - Shockshield
+ - Vibrate
+ - Chaos Field
+ - Fireshield
+ - Iceshield
+ - Biofeedback
+ - Blade Barrier
+ - Any shield I forgot
+ - Any offensive spell (fireball, enchanted song, etc)
+ - Phase Shift
+ - Aura of Peace
+ - Haste
+ - Any HP adding, or damroll adding spells
+ 
+This list might be added to, if some spells are found to be too unbalancing.
+~
+E
+five~
+&GClan Healers
+ 
+Clan healers can have special spells to cast on people.  This new
+feature has been TOTALLY rewritten and HARDCODED.  To make a mob in your HQ
+give these spells, give it the ACT flag of CLANHEALER.
+ 
+You can NOT have ANY spells castable via mprogs.
+~
+E
+seven~
+&RHQ Creation Rules
+&W
+Headquarters may have the following rooms:
+ - Blood/Alignment mob rooms
+ - Bank
+ - Stores
+ -- For basic clan eq
+ - Training/Practice/School/Etc
+ - Smithy
+ - Exit to Your Overworld Link Point ONLY
+ - Healers Room
+ - Spellcasters Room
+ - Food Store
+ 
+You may NOT have a questmaster, pet shop, or any other exit
+ 
+Not mentioned rooms, or if you are unsure, ASK.
+~
+E
+eight~
+&RBasic Clan EQ
+ 
+&WAlright basic clan EQ which is like bags, and food.  NO invokes on any of them
+they're just normalish EQ.  Clan bags can only have a max capacity of 400kg and cost 50K
+Food (whatever you wanna call it) will cost no less than 100 gold, same with drinking
+containers.
+~
+E
+nine~
+&RClan Conduct
+ 
+&WSummoning to HQ is legal.
+ 
+If one of your characters are clanned the rest can only join that clan, or be unclanned.
+ 
+~
+#8541
+table~
+table~
+A table stretches across the room, surrounded by several chairs.~
+~
+12 838860864 0 0 0 0 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+enchanted song~
+0 0
+0 0 0
+#8542
+spirits damned~
+portal~
+A portal rests on the floor.~
+~
+29 838860864 0 0 0 0 0
+100 100
+25000~ 0~ 0~ 0~
+1 1 0
+0 0
+faerie fog~
+-1 -1
+0 0 0
+#8543
+key leader~
+the leader's office key~
+A key sits on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8544
+key champion~
+the champion's office key~
+A key sits on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8545
+key council~
+the council's office key~
+A key sits on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8546
+key centurion~
+the centurion's office key~
+A key sits on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8547
+key hell~
+a Key to the Incarnate Hell~
+A key sits on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8548
+key evil~
+an evil key~
+An evil key sits on the ground.~
+~
+18 838860884 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8549
+key~
+a key~
+A key sits on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8550
+key~
+a key~
+A key sits on the ground.~
+~
+18 838860864 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8551
+parchment scroll blank scroll scroll scroll~
+a scroll of ghost shield, improved invis, shadow plane~
+A piece of blank parchment lies here.~
+~
+2 268435476 0 0 0 1 104
+100 100
+104~ ghost shield~ improved invis~ shadow plane~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8552
+parchment scroll blank scroll scroll scroll~
+a scroll of fireshield, iceshield, satanic caress~
+A piece of blank parchment lies here.~
+~
+2 268435476 0 0 0 1 104
+100 100
+104~ fireshield~ iceshield~ satanic caress~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8553
+armor unholy plague~
+the Armor of Ancients~
+The Armor of Ancients sits here.~
+~
+9 301989908 0 0 0 9 106
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 150
+A
+19 150
+#8554
+soul anval~
+soul anval~
+The Screaming and Tortured Soul of Anval, slain three times~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8555
+soul riva~
+soul riva~
+The Screaming and Tortured Soul of Riva, slain twice~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8556
+soul kolbarus~
+soul kolbarus~
+The Screaming and Tortured Soul of Kolbarus, slain six times~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8557
+soul carnage~
+soul carnage~
+The Screaming and Tortured Soul of Carnage, slain three times~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8558
+soul trent~
+soul trent~
+The Screaming and Tortured Soul of Trent, slain three times~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8559
+soul galad~
+soul galad~
+The Screaming and Tortured Soul of Galad, slain once~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8560
+soul lone~
+soul lone~
+The Screaming and Tortured Soul of Lone, slain once~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8561
+soul moloch~
+soul moloch~
+The Screaming and Tortured Soul of Moloch, slain four times~
+~
+13 301989908 1024 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8562
+soul merdak~
+soul merdak~
+The Screaming and Tortured Soul of Merdak, slain once~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8563
+soul efloren~
+soul efloren~
+The Screaming and Tortured Soul of Efloren, slain twice~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8564
+soul malhavoc~
+soul malhavoc~
+The Screaming and Tortured Soul of Malhavoc, slain once~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8565
+soul andor~
+soul andor~
+The Screaming and Tortured Soul of Andor, slain four times~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8566
+soul vampyrice~
+soul vampyrice~
+The Screaming and Tortured Soul of Vampyrice, slain once~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8567
+soul aglovale~
+soul aglovale~
+The Screaming and Tortured Soul of Aglovale, slain four times~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8568
+soul narcissa~
+soul narcissa~
+The Screaming and Tortured Soul of Narcissa, slain once~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8569
+soul darken~
+soul darken~
+The Soul of Darken, slain once by Moloch~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8570
+soul jacen~
+soul jacen~
+The Soul of Jacen, slain once by Narcissa~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8571
+soul moloch~
+soul moloch~
+The Screaming and Tortured Soul of Moloch, slain once~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8572
+soul jacen~
+corpse jacen~
+The Soul of Jacen, slain once by Insane~
+~
+13 301989908 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8590
+portal overworld~
+portal to the Overworld~
+A portal is here, leading to the Overworld.~
+~
+29 33554432 0 0 0 0 1
+100 100
+18636~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8591
+sword~
+A sword~
+A sword~
+~
+5 0 8 0 0 8193 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8592
+two handed sword~
+two handed sword~
+A two handed sword is here.~
+~
+5 33554433 32768 0 0 8193 99
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+A
+12 50
+A
+13 130
+A
+18 20
+A
+19 90
+#8594
+muscle replacements~
+muscle replacements~
+A magical implant sits here, glowing.~
+~
+35 65 0 0 0 4194305 20
+100 100
+0~ 0~ 0~ reserved~
+5 1 0
+5 0
+giant strength~
+-1 -1
+0 0 0
+A
+1 5
+#8595
+freeze ray~
+a freeze ray~
+A freeze ray sits on the ground.~
+~
+32 134217728 0 0 0 2097153 15
+100 100
+85~ 10~ 10~ solidify~
+5 148 0
+0 0
+reserved~
+0 0
+0 0 0
+#8596
+proton cannon~
+a Proton Cannon~
+A huge cannon sits on the ground.~
+~
+32 3 0 0 0 2097153 107
+100 100
+1000~ 100~ 100~ particle beam bullet~
+75 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8597
+infinite vortex cube~
+an infinite vortex cube~
+A vortex cube is here, pulsing.~
+~
+8 268435458 0 0 0 16385 105
+100 100
+0~ 0~ 0~ 0~
+5 5000 0
+5 0
+vortex~
+-1 -1
+0 0 0
+#8598
+list werewolf~
+the Werewolf Skills and Spells list~
+A list is here.~
+~
+8 301989888 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+list~
+&BLv           Skill/Spell
+ 
+ 6: enhanced damage
+ 7: second attack            dodge
+ 8: bite
+10: kick
+14: third attack
+20: enhanced hit             heighten senses
+26: METAMORPH                dual
+35: fourth attack            CLAW
+46: DEVOUR
+52: disarm
+68: BLOODTHIRSTY
+75: HYPNOTISE                CAUSE PANIC
+81: enhanced damage two
+82: fifth attack
+91: adrenaline control
+~
+E
+werewolf~
+Type look list to read it.
+~
+#8599
+list anti-paladin anti paladin~
+the Anti-Paladin Skills and Spells list~
+A list is here.~
+~
+8 301989888 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#8501
+Unholy Plague Grand Entrance~
+~
+~
+You have entered the halls of the Unholy Plague.  Its massive black walls
+stretch up farther than you can see.  The light seems to eminate from the
+air itself.  The only exit is further into this immense structure, to the
+north.  
+~
+0 134357002 0
+Rd     0
+D0
+~
+~
+0 0 8535
+S
+#8502
+Hall of Donations~
+~
+~
+You are in a grand hallway leading north and south.  To the north you can see
+a cross junction, while to the south is a shimmering light.  This magnificant
+hall is quite large, carpeted wall to wall, with a pedestal in the centre of
+the room.  Here you may drop off items for other clan members to use, or to
+just get rid of them all.
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 8503
+D2
+~
+~
+0 0 8535
+S
+#8503
+Cross Junction~
+~
+~
+You are in a rather large room which has exits leading off in the four
+cardinal directions.  A large fountain rests here in the centre of the room,
+its waters continually flowing and clean.  To the north you can see a rather
+long hallway, to the west you can see what looks like a bar, and to the east
+is a damp gloomy place.  A magical stairway leads up into what looks like a
+void of nothing.  
+~
+0 134619150 0
+Rd     0
+D0
+~
+~
+0 0 8504
+D1
+~
+~
+0 0 8513
+D2
+~
+~
+0 0 8502
+D3
+~
+~
+0 0 8511
+D4
+~
+~
+0 0 8534
+D5
+~
+~
+115 8532 8521
+S
+#8504
+Hall of the Cleric~
+~
+~
+You are in the hall of the cleric.  A large padded mat lies against the east
+wall here, a place for Seternus to sit.  This is a humble room, very peaceful,
+used to sit and relax, and to regain lost health.
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 8505
+D2
+~
+~
+0 0 8503
+S
+#8505
+Hall of the Blacksmith~
+~
+~
+This room has a rather large forge off to one side, and is obviously used
+for repairs.  A monster of a man, Sacire, is constantly at work, repairing
+all of Tyrion's treasure horde.  "Repair all" will cause him to stop working
+and fix your armour.  A flight of stairs leads up into the Centurion of
+Unholy Plague's office, while you can see another flight of stairs leading
+downward.  
+~
+0 201728010 0
+Rd     0
+D0
+~
+~
+0 0 8506
+D2
+~
+~
+0 0 8504
+D4
+~
+~
+51 8546 8519
+D5
+~
+~
+51 0 8549
+S
+#8506
+Hall of Torture~
+~
+~
+This room is covered in pieces of machinery that you wouldn't even care
+to guess at what they are for.  Incorruptus, the Torturer, is here for you
+to practice your skills, train your attributes, and learn new languages.  A
+stairwell leads up into the Champion of Unholy Plague's office, and a second
+stairwell leads downward.  
+~
+0 134619146 0
+Rd     0
+E
+sign~
+Incarnate Bank Commands
+ 
+ACCOUNT: Display your account status.
+WITHDRAW <amount>, DEPOSIT <amount>: Withdraw and Deposit an amount.
+STORE <item>: Store an item.
+RETRIEVE <item>: Retrieve a stored item.
+~
+D0
+~
+~
+0 0 8507
+D2
+~
+~
+0 0 8505
+D4
+~
+~
+51 8544 8518
+D5
+~
+~
+51 0 8544
+S
+#8507
+Hall of Justice~
+~
+~
+This room is kept very tidy and orderly.  A large counter rests against
+the west wall, while some chairs lie against the east wall.  A sign hangs
+over the counter.  A flight of stairs leads up into the Council of
+Unholy Plague's office.  A second flight of stairs leads downward.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 8508
+D2
+~
+~
+0 0 8506
+D4
+~
+~
+51 8545 8516
+D5
+~
+~
+35 0 8548
+S
+#8508
+Hall of the Mage~
+~
+~
+The air in this room tingles your bones with magical energies.  It is
+amazing how much power that Unholy Plague holds within its walls, and it seems
+to be getting stronger the further north you travel down this hallway. 
+Immotus, the second wizard of Tyrion, sells you things for use in your
+travels.  A staircase leads up into the Leader of Unholy Plague's office.  There
+is a second stairwell leading downward.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 8509
+D2
+~
+~
+0 0 8507
+D4
+~
+~
+51 8543 8517
+D5
+~
+~
+51 0 8539
+S
+#8509
+Hall of Scriptures~
+~
+~
+The power of magic is felt very strongly here, and is more powerful the
+further north you go.  This room has a note board in it, used for Unholy
+Plague information and ideas.  Read it often, for it sometimes has vital
+clan information that all will have to be made aware of, such as alliances,
+or prisoners, or clan artifacts and equipment.  A decaying stairway leads
+down into the Hall of Shame, and a sturdier staircase leads up to the Hall
+of Death.  
+~
+0 134619150 0
+Rd     0
+D0
+~
+~
+0 0 8510
+D2
+~
+~
+0 0 8508
+D4
+~
+~
+51 0 8515
+D5
+~
+~
+51 0 8537
+S
+#8510
+Hall of Power~
+~
+~
+This room has incredible power.  A throne sits against the norhtern wall,
+where Nebuchadnezzar, Tyrion's first and personal wizard, sits.  His power
+is so strong that you are almost blown away by being in his mere presense. 
+This power he possesses is nothing compared with the power of Incarnate. 
+Two unique stairwells lead up and down from here, and a burning door lies on
+the north wall.  The main hallway stretches off to the south.  
+~
+0 138813450 0
+Rd     0
+D2
+~
+~
+0 0 8509
+D4
+~
+~
+51 0 8547
+D5
+~
+~
+51 0 8538
+S
+#8511
+Hall of the Warrior~
+~
+~
+You are walking along the hall of the warrior.  To the east you can see a
+cross junction, while a bar lies directly to the west.  The aroma of fresh
+food and hard liquor is strong here.  Perhaps a drink or two won't hurt.
+The walls here are lined with that of a warrior, weapons and armour of all
+kinds.  Unfortunately for you, they are a part of the wall, only here for
+decoration.
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 8503
+D3
+~
+~
+0 0 8512
+S
+#8512
+Incarnate Tavern~
+~
+~
+You have come to visit the Incarnate tavern.  Claustrum is here to serve you,
+he works just like any other shop.  A long bar stretches across the entire west
+wall. The hallway continues to the east and west.
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 8511
+D3
+~
+~
+0 0 8546
+S
+#8513
+Hall of the Vampire~
+~
+~
+This room is very gloomy.  Decayed walls, dirty floors, drooping ceilings, and
+other signs of battle.  To the east you can hear the screams of souls thought
+to be brave warriors, but have fallen at the hands of Incarnate.  This room
+can be used to fight in.  To the west is the cross junction.
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 8514
+D3
+~
+~
+0 0 8503
+S
+#8514
+Incarnate Battle Grounds~
+~
+~
+This room is used for vampires to feed on.  A creature by the name of Sanguine
+lives here, and is used to regain blood points.  The walls here are covered in
+mold, slime and other such disgusting substances.  This place is not for the
+weak. The hallway continues to the east and west.
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 8545
+D3
+~
+~
+0 0 8513
+S
+#8515
+Hall of Death~
+~
+~
+You are within the walls of the Hall of Death.  Here, the souls of Incarnate's
+victims haunt eternally, a reminder of the true power of the clan.  A stairwell
+leads down into the Headquarters.
+~
+0 134357006 0
+Rd     0
+D5
+~
+~
+51 0 8509
+S
+#8516
+Council's Office~
+~
+~
+The face of Unholy Plague:
+ 
+                               ...----....
+                         ..-:"''         ''"-..
+                      .-'                      '-.
+                    .'              .     .       '.
+                  .'   .          .    .      .    .''.
+                .'  .    .       .   .   .     .   . ..:.
+              .' .   . .  .       .   .   ..  .   . ....::.
+             ..   .   .      .  .    .     .  ..  . ....:IA.
+            .:  .   .    .    .  .  .    .. .  .. .. ....:IA.
+           .: .   .   ..   .    .     . . .. . ... ....:.:VHA.
+           '..  .  .. .   .       .  . .. . .. . .....:.::IHHB.
+           .: .   .   ..   .    .     . . .. . ... ....:.:VHA.
+           '..  .  .. .   .       .  . .. . .. . .....:.::IHHB.
+          .:. .  . .  . .   .  .  . . . ...:.:... .......:HIHMM.
+         .:.... .   . ."::"'.. .   .  . .:.:.:II;,. .. ..:IHIMMA
+         ':.:..  ..::IHHHHHI::. . .  ...:.::::.,,,. . ....VIMMHM
+        .:::I. .AHHHHHHHHHHAI::. .:...,:IIHHHHHHMMMHHL:. . VMMMM
+       .:.:V.:IVHHHHHHHMHMHHH::..:" .:HIHHHHHHHHHHHHHMHHA. .VMMM.
+       :..V.:IVHHHHHMMHHHHHHHB... . .:VPHHMHHHMMHHHHHHHHHAI.:VMMI
+       ::V..:VIHHHHHHMMMHHHHHH. .   .I":IIMHHMMHHHHHHHHHHHAPI:WMM
+       ::". .:.HHHHHHHHMMHHHHHI.  . .:..I:MHMMHHHHHHHHHMHV:':H:WM
+       :: . :.::IIHHHHHHMMHHHHV  .ABA.:.:IMHMHMMMHMHHHHV:'. .IHWW
+       '.  ..:..:.:IHHHHHMMHV" .AVMHMA.:.'VHMMMMHHHHHV:' .  :IHWV
+       '.  ..:..:.:IHHHHHMMHV" .AVMHMA.:.'VHMMMMHHHHHV: :IHWV
+        :.  .:...:".:.:TPP"   .AVMMHMMA.:. "VMMHHHP.:... .. :IVAI
+       .:.   '... .:"'   .   ..HMMMHMMMA::. ."VHHI:::....  .:IHW'
+       ...  .  . ..:IIPPIH: ..HMMMI.MMMV:I:.  .:ILLH:.. ...:I:IM
+     : .   .'"' .:.V". .. .  :HMMM:IMMMI::I. ..:HHIIPPHI::'.P:HM.
+     :.  .  .  .. ..:.. .    :AMMM IMMMM..:...:IV":T::I::.".:IHIMA
+     'V:.. .. . .. .  .  .   'VMMV..VMMV :....:V:.:..:....::IHHHMH
+       "IHH:.II:.. .:. .  . . . " :HB"" . . ..PI:.::.:::..:IHHMMV"
+        :IP""HHII:.  .  .    . . .'V:. . . ..:IH:.:.::IHIHHMMMMM"
+       "IHH:.II:.. .:. .  . . . " :HB"" . . ..PI:.::.:::..:IHHMMV"
+        :IP""HHII:.  .  .    . . .'V:. . . ..:IH:.:.::IHIHHMMMMM"
+        :V:. VIMA:I..  .     .  . .. . .  .:.I:I:..:IHHHHMMHHMMM
+        :"VI:.VWMA::. .:      .   .. .:. ..:.I::.:IVHHHMMMHMMMMI
+        :."VIIHHMMA:.  .   .   .:  .:.. . .:.II:I:AMMMMMMHMMMMMI
+        :..VIHIHMMMI...::.,:.,:!"I:!"I!"I!"V:AI:VAMMMMMMHMMMMMM'
+        ':.:HIHIMHHA:"!!"I.:AXXXVVXXXXXXXA:."HPHIMMMMHHMHMMMMMV
+          V:H:I:MA:W'I :AXXXIXII:IIIISSSSSSXXA.I.VMMMHMHMMMMMM
+            'I::IVA ASSSSXSSSSBBSBMBSSSSSSBBMMMBS.VVMMHIMM'"'
+             I:: VPAIMSSSSSSSSSBSSSMMBSSSBBMMMMXXI:MMHIMMI
+            .I::. "H:XIIXBBMMMMMMMMMMMMMMMMMBXIXXMMPHIIMM'
+            :::I.  ':XSSXXIIIIXSSBMBSSXXXIIIXXSMMAMI:.IMM
+            :::I:.  .VSSSSSISISISSSBII:ISSSSBMMB:MI:..:MM
+            ::.I:.  ':"SSSSSSSISISSXIIXSSSSBMMB:AHI:..MMM.
+            ::.I:. . ..:"BBSSSSSSSSSSSSBBBMMMB:AHHI::.HMMI
+            :..::.  . ..::":BBBBBSSBBBMMMB:MMMMHHII::IHHMI
+            ':.I:... ....IHHHHHMMMMMMMMMMMMMMMHHIIIIHMMV"
+              "V:. ..:...:.IHHHMMMMMMMMMMMMMMMMHHHMHHMHP'
+                ':. .:::.:.::III::IHHHHMMMMMHMHMMHHHHM"
+                 "::....::.:::..:..::IIIIIHHHHMMMHHMV"
+                ':. .:::.:.::III::IHHHHMMMMMHMHMMHHHHM"
+                 "::....::.:::..:..::IIIIIHHHHMMMHHMV"
+                   "::.::.. .. .  ...:::IIHHMMMMHMV"
+                     "V::... . .I::IHHMMV"'
+~
+0 134619146 0
+Rd     0
+D5
+~
+~
+51 8545 8507
+S
+#8517
+Leader's Office~
+~
+~
+You have entered the Leader of Uholy Plague's office.  A stairwell leads down into
+Incarnate HQ.
+ 
+                                &g/ \
+                               |\_/|
+                               |---|
+                               |   |
+                               |   |
+                             _ |=-=| _
+                         _  / \|   |/ \
+                        / \|   |   |   ||\
+                       |   |   |   |   | \>
+                       |   |   |   |   |   \
+                       | -   -   -   - |)   )
+                       |                   /
+                        \ &. Unholy Plague&g    /
+                         \     &.Rules&.!&g    /
+                          \             /
+                           \           /
+                            |         |
+                            |         |
+                            |         |
+~
+0 134619146 0
+Rd     0
+D5
+~
+~
+51 8543 8508
+S
+#8518
+Champion's Office~
+~
+~
+~
+0 134619146 0
+Rd     0
+D5
+~
+~
+51 8544 8506
+S
+#8519
+Centurion's Office~
+~
+~
+~
+0 134619146 0
+Rd     0
+D5
+~
+~
+51 8546 8505
+S
+#8520
+Before Dumax the Dreaded's Throne Room~
+~
+~
+You have entered a room just before Dumax the Deraded's throne room.  A 
+massive burning doorway lies on the northern wall, leading to his immense
+brass throne.  An archway leads to the south, with a magical door between its
+frame.
+~
+0 138813454 0
+Rd     0
+D0
+~
+~
+99 8517 8540
+D2
+~
+~
+51 0 8547
+S
+#8521
+Incarnate Prison~
+~
+~
+You are at the junction of the Incarnate prison.  There is a cell door in all
+of the cardinal compass directions, as well as a ladder leading up into the
+Incarnate headquarters.  This is not the place to be, for Defendire is rather
+edgy at times, and is known to attack people when in a foul mood.
+~
+0 671358986 0
+Rd     0
+D0
+~
+~
+115 8531 8522
+D1
+~
+~
+115 8531 8523
+D2
+~
+~
+115 8531 8524
+D3
+~
+~
+115 8531 8525
+D4
+~
+~
+115 8532 8503
+S
+#8522
+In a Cell~
+~
+~
+You are in a prison cell.  May your stay here be lengthy.
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+115 8531 8521
+S
+#8523
+In a Cell~
+~
+~
+You are in a prison cell.  May your stay here be lengthy.
+~
+0 134619144 0
+Rd     0
+D3
+~
+~
+115 8531 8521
+S
+#8524
+In a Cell~
+~
+~
+You are in a prison cell.  May your stay here be lengthy.
+~
+0 134619144 0
+Rd     0
+D0
+~
+~
+115 8531 8521
+S
+#8525
+In a Cell~
+~
+~
+You are in a prison cell.  May your stay here be lengthy.
+~
+0 134619144 0
+Rd     0
+D1
+~
+~
+115 8531 8521
+S
+#8526
+Incarnate Hell~
+~
+~
+You have found yourself surrounded by immense columns of fire.  The
+flames lick at your feet, the lost souls of Incarnate's Victims swirling
+about your head, moaning, peering into your eyes.  You wonder how long your
+stay in this godforsaken place will be, perhaps Tyrion Soulstealer will
+allow you to leave in the near future.  
+~
+0 4597254 0
+Rd     0
+D0
+~
+~
+119 8547 8501
+S
+#8527
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.  Perhaps you should exit
+to the south.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8528
+D1
+~
+~
+0 0 8527
+D2
+~
+~
+0 0 25000
+D3
+~
+~
+0 0 8527
+S
+#8528
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8529
+D1
+~
+~
+0 0 8527
+D2
+~
+~
+0 0 8527
+D3
+~
+~
+0 0 8527
+S
+#8529
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8527
+D1
+~
+~
+0 0 8527
+D2
+~
+~
+0 0 8530
+D3
+~
+~
+0 0 8527
+S
+#8530
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8527
+D1
+~
+~
+0 0 8531
+D2
+~
+~
+0 0 8527
+D3
+~
+~
+0 0 8527
+S
+#8531
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8527
+D1
+~
+~
+0 0 8527
+D2
+~
+~
+0 0 8532
+D3
+~
+~
+0 0 8527
+S
+#8532
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8533
+D1
+~
+~
+0 0 8530
+D2
+~
+~
+0 0 8527
+D3
+~
+~
+0 0 8527
+S
+#8533
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8527
+D1
+~
+~
+0 0 8528
+D2
+~
+~
+0 0 8541
+D3
+~
+~
+0 0 8527
+S
+#8534
+Hall of Portals~
+~
+~
+You have entered a room that has no light, apparently no walls, no floor, and
+no markings of any kind.  It is a tuly awe inspiring sight.  Look in west, look
+in east to see the destinations.
+~
+0 167911435 0
+Rd     0
+D5
+~
+~
+0 0 8503
+S
+#8535
+Hall of the Guardian~
+~
+~
+You find yourself within the walls of Incarnate Headquarters!  To the north a
+little ways you can see a cross junction, while the exit is to the south.  This
+room is covered in dried blood of those who have tried to invade in the past.
+~
+0 4628490 0
+Rd     0
+D0
+~
+~
+0 0 8502
+D2
+~
+~
+0 0 8501
+S
+#8536
+Hall of the Creator~
+~
+~
+You have entered the back door to Incarnate Headquarters.  A huge flaming
+door on the north wall leads into it.  Another exit, to the south, seems to
+go into a void.
+~
+0 134479882 0
+Rd     0
+D0
+~
+~
+119 8548 8535
+D2
+~
+~
+0 0 25001
+S
+#8537
+Hall of Shame~
+~
+~
+You have entered the hall of shame.  A dark, decaying staircase winds up the
+centre of the room, and is the only exit.  Just being in this room gives you
+the chills.  This room is a reminder that you are not immortal, and that even
+the unstoppable juggernaut known as Incarnate can be slowed, temporarily.  The
+souls of your own misdoings circle this room, howling in pain, forever trapped
+by Tyrion Soulstealer in this room.
+~
+0 134619146 0
+Rd     0
+D4
+~
+~
+51 0 8509
+S
+#8538
+Hall of Silence~
+~
+~
+You have entered a room completely void of anything.  The walls, or lack
+thereof, are seemingly void of substance.  You are not sure what you are
+standing on, for there does not appear to be a floor.  The exit, you are
+forced to assume, is up, for that is the way you came.  This room is designed
+to be totally silent.
+~
+0 143024142 0
+Rd     0
+D4
+~
+~
+51 0 8510
+S
+#8539
+Hall of Decay~
+~
+~
+You have arrived in the Hall of Decay.  Here you can drop unwanted items,
+leave corpses, dispose of anything you want, it will rot here for eternity. 
+The only exit is back up the stairs.  
+~
+0 134619146 0
+Rd     0
+D4
+~
+~
+51 0 8508
+S
+#8540
+Throne Room of Dumax~
+~
+~
+You are standing within the royal throne room of Dumax the Dreaded, the
+ruler of Unholy Plague.  A throne made entirely of brass rests upon a huge
+pile of bones against the northern wall.  The sounds of Unholy Plague's
+victims can be heard all around, seeming to echo from everywhere.  A large
+burning door lies on the southern wall, and is the only exit.  
+~
+0 134619148 0
+Rd     0
+D2
+~
+~
+99 8517 8520
+S
+#8541
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though somone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8527
+D1
+~
+~
+0 0 8527
+D2
+~
+~
+0 0 8527
+D3
+~
+~
+0 0 8542
+S
+#8542
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8543
+D1
+~
+~
+0 0 8527
+D2
+~
+~
+0 0 8527
+D3
+~
+~
+0 0 8527
+S
+#8543
+In the Maze~
+~
+~
+You find yourself walking through an incredibly dense forest.  The trees seem
+to allow passage in all directions however.  You feel a sense of foreboding
+evil, as though someone or something is watching you.  This feeling grows
+stronger with each passing moment you remain here.
+~
+0 134651906 0
+Rd     0
+D0
+~
+~
+0 0 8527
+D1
+~
+~
+0 0 8528
+D2
+~
+~
+0 0 8527
+D3
+~
+~
+0 0 8527
+S
+#8544
+Meeting Room~
+~
+~
+This room has large drawings on all the walls, which depict battle
+strategies.  This room is a meeting room, and is used for meetings of the
+clan.  The only exit is up the flight of stairs from which you came.  
+~
+0 134619146 0
+Rd     0
+D4
+~
+~
+51 0 8506
+S
+#8545
+Hall of Fervor~
+~
+~
+You have entered a hall filled with blood and the stench of decaying flesh. 
+This room is obviously for killing.  The only exit is back the way you came,
+to the west.
+~
+0 134619146 0
+Rd     0
+D3
+~
+~
+0 0 8514
+S
+#8546
+Hall of the Artificer~
+~
+~
+You have entered the Hall of the Artificer.  Tormentum, named because of
+the hellish torment he is put through in his existance, sits here for
+eternity, doing as Tyrion says.  The only exit is to the east.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 8512
+S
+#8547
+Hall of Torment~
+~
+~
+You have entered the Hall of Torment, Unholy Plague's room of worship. 
+Large candelabras line the walls, providing light, while four huge
+cauldrons, set up about the room, provide some additional light.  Some mats
+lie on the floor, most likely for kneeling.  A spiraling stairwell leads
+down to Nebuchadnezzar, while a huge archway on the north wall leads to
+Dumax the Dreaded's office.  
+~
+0 134619150 0
+Rd     0
+D0
+~
+~
+51 0 8520
+D5
+~
+~
+51 0 8510
+S
+#8548
+Hall of Combat~
+~
+~
+You have entered the main entrance to the Unholy Plague Grand Arena.  It
+is currently closed.  The only exit is up the stairwell from whence you
+came.  
+~
+0 134619146 0
+Rd     0
+D4
+~
+~
+35 0 8507
+S
+#8549
+Hall of Lust~
+~
+~
+You are standing in the Hall of Lust.  The smell of sex is a pungent
+aroma all around you.  There is no escaping it.  You are finding it hard to
+control your sexual desires.  The only exit is the stairway up.  
+~
+0 134619146 0
+Rd     0
+D4
+~
+~
+51 0 8505
+S
+#8550
+Atop a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Incarnate HQ.
+~
+0 168206338 0
+Rd     0
+D2
+~
+~
+0 0 8543
+D4
+~
+~
+3 0 8551
+D5
+~
+~
+0 0 8527
+S
+#8551
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8527
+D5
+~
+~
+0 0 8552
+S
+#8552
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8551
+D5
+~
+~
+0 0 8553
+S
+#8553
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8552
+D5
+~
+~
+0 0 8554
+S
+#8554
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8553
+D5
+~
+~
+0 0 8555
+S
+#8555
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8554
+D5
+~
+~
+0 0 8556
+S
+#8556
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8555
+D5
+~
+~
+0 0 8557
+S
+#8557
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8556
+D5
+~
+~
+0 0 8558
+S
+#8558
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8557
+D5
+~
+~
+0 0 8559
+S
+#8559
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8558
+D5
+~
+~
+0 0 8560
+S
+#8560
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8559
+D5
+~
+~
+0 0 8561
+S
+#8561
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8560
+D5
+~
+~
+0 0 8562
+S
+#8562
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8561
+D5
+~
+~
+0 0 8563
+S
+#8563
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8562
+D5
+~
+~
+0 0 8564
+S
+#8564
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8563
+D5
+~
+~
+0 0 8565
+S
+#8565
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8564
+D5
+~
+~
+0 0 8566
+S
+#8566
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8565
+D5
+~
+~
+0 0 8567
+S
+#8567
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8566
+D5
+~
+~
+0 0 8568
+S
+#8568
+In a Huge Shaft~
+~
+~
+You are in a Huge Shaft above Unholy Plague HQ.
+~
+0 168206338 0
+Rd     0
+D4
+~
+~
+0 0 8567
+D5
+~
+~
+0 0 8569
+S
+#8569
+In a Huge Shaft~
+~
+~
+You are at the bottom of a huge shaft in Unholy Plague HQ.  A door sits
+on the floor. 
+~
+0 134651906 0
+Rd     0
+D4
+~
+~
+0 0 8568
+D5
+~
+~
+119 8550 8535
+S
+#0
+
+
+
+#SPECIALS
+M 8503 spec_healer
+M 8505 spec_repairman
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 8590 0 8501
+O 0 8528 0 8502
+O 0 8527 0 8503
+M 0 8503 1 8504
+M 0 8505 1 8505
+M 0 8501 1 8506
+M 0 8511 1 8507
+M 0 8502 1 8508
+G 0 8512 0
+G 0 8513 0
+G 0 8514 0
+G 0 8515 0
+G 0 8516 0
+G 0 8518 0
+G 0 8519 0
+G 0 8533 0
+G 0 8511 0
+O 0 8529 0 8509
+M 0 8520 1 8509
+M 0 8510 1 8510
+E 0 8553 0 5
+O 0 8536 0 8511
+M 0 8509 1 8512
+G 0 8526 0
+G 0 8525 0
+G 0 8524 0
+G 0 8523 0
+G 0 8522 0
+G 0 8521 0
+G 0 8520 0
+O 0 8538 0 8513
+M 0 8504 3 8514
+O 0 8554 0 8515
+O 0 8555 0 8515
+O 0 8556 0 8515
+O 0 8557 0 8515
+O 0 8558 0 8515
+O 0 8559 0 8515
+O 0 8560 0 8515
+O 0 8561 0 8515
+O 0 8562 0 8515
+O 0 8563 0 8515
+O 0 8564 0 8515
+O 0 8565 0 8515
+O 0 8566 0 8515
+O 0 8567 0 8515
+O 0 8568 0 8515
+O 0 8571 0 8515
+M 0 8508 1 8520
+O 0 8590 0 8534
+M 0 8506 1 8535
+M 0 8512 1 8536
+O 0 8541 0 8544
+M 0 8516 1 8545
+M 0 8517 1 8545
+M 0 8514 1 8546
+M 0 8514 1 8547
+O 0 8506 0 8547
+M 0 8515 1 8547
+M 0 8513 1 8548
+O 0 8530 0 8548
+M 0 8518 1 8549
+M 0 8521 1 8569
+S
+
+
+
+#SHOPS
+8502 10 2 15 3 4 100 100 0 24
+8509 17 19 0 0 0 100 100 0 24
+8510 9 5 8 27 15 100 100 0 24
+8514 18 0 0 0 0 100 100 0 23
+8515 18 0 0 0 0 100 100 0 23
+0
+
+
+
+#$

@@ -1,0 +1,703 @@
+#AREADATA
+Name        Corum HQ~
+Builders    Corum~
+VNUMs       1701 1800
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Corum~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#1709
+nathan~
+Nathan~
+Noodle is here to make a sale.
+~
+A young man in a baseball cap and glasses...
+~
+3 134217920 4194320 0 0 500 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>all_greet_prog 80~
+emote straightens up his wares.
+say Hey glad you came by.
+say Man have I got some deals for you.
+emote points to his table.
+~
+|
+#1712
+miguel~
+Miguel~
+Miguel 'the de-virginator' Pacheco is cookin'
+~
+A portugese youth well tanned from many hours in the sun..
+~
+2097155 100663360 20971540 0 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>rand_prog 5~
+say Los Huevos Eston Escondivos 
+emote looks around for eggs
+~
+>all_greet_prog 80~
+if ispc($n) == 1
+emote swats at a mosquito.
+say Hi!
+say My name is Miguel can I be of service to you?
+endif
+~
+|
+#1713
+mike~
+Mike~
+Nailers best man stands amoung the ferns
+~
+A young man with hard hat and reflective vest...
+~
+3 268435520 4194320 256 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>rand_prog 5~
+emote gathers some soil.. 
+~
+>rand_prog 5~
+smoke
+~
+>all_greet_prog 80~
+say Hi I am Mike.  I fix your stuff at a price.
+say Time is money you know.
+smoke
+~
+>rand_prog 5~
+emote begins to hum a Johnny Cash tune.
+~
+|
+#0
+
+
+
+#OBJECTS
+#1702
+playing card~
+A playing card~
+A playing card~
+~
+9 771768631 483328 0 0 524289 45
+100 100
+10000~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+151 -1
+A
+115 -1
+A
+3 2
+A
+1 2
+A
+24 -10
+A
+26 50
+A
+13 50
+A
+19 10
+A
+18 10
+#1703
+playing card~
+A playing card~
+A playing card~
+~
+9 771768631 483328 0 0 524289 75
+100 100
+10000~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+115 -1
+A
+151 -1
+A
+3 2
+A
+1 2
+A
+24 -15
+A
+13 75
+A
+19 15
+A
+18 15
+#1704
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1709
+glasses~
+glasses~
+A pair of glasses~
+~
+9 0 0 0 0 131073 105
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1710
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1713
+reflective vest~
+&YReflective Vest~
+A reflective vest~
+~
+9 100663296 0 0 0 1025 105
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1714
+hard hat~
+&WA Hard Hat~
+A hard hat~
+~
+9 0 0 0 0 17 105
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1715
+denim cutoffs~
+&cDenim Cutoffs~
+A pair of denim jeans cut off at the knees~
+~
+9 0 0 0 0 33 105
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#1701
+Entrance to the -<suicide kings>- Clan Headquarters~
+~
+~
+~
+0 537272320 3
+Rd     0
+D0
+~
+~
+0 0 1702
+D1
+~
+~
+0 0 1714
+D2
+~
+~
+0 0 1710
+D3
+~
+~
+0 0 1706
+S
+#1702
+Hallway~
+~
+~
+The noise of the party dies down a little in this side hallway.
+~
+0 537272320 0
+Rd     0
+D0
+~
+~
+0 0 1703
+D2
+~
+~
+0 0 1701
+S
+#1703
+North Intersection~
+~
+~
+You have reached the northern intersection of hallways.  The evil
+alignment mob is to the east and the good alignment mob is to the west.  But
+you probably won't need these directions if you talked to our greeter.  
+~
+0 537272320 0
+Rd     0
+D1
+~
+~
+3 0 1705
+D2
+~
+~
+0 0 1702
+D3
+~
+~
+3 0 1704
+S
+#1704
+Good Aligned Room~
+~
+~
+Here sits a mob you can kill in order to become good aligned.  You know
+he wants it.  Give it to him.  
+~
+0 537272320 0
+Rd     0
+D1
+~
+~
+3 0 1703
+S
+#1705
+Evil Aligned Room~
+~
+~
+Here is a mob you can kill to become evil aligned.  Slap him around. 
+It'll be great!  
+~
+0 537272320 0
+Rd     0
+D3
+~
+~
+3 0 1703
+S
+#1706
+A Sandy Path~
+~
+~
+The chirping of various rare insects and birds accompanies you on your
+walk down this western path.  The island's bank and general store are right
+up ahead.  
+~
+0 537272320 3
+Rd     0
+D1
+~
+~
+0 0 1701
+D3
+~
+~
+0 0 1707
+S
+#1707
+The Beach~
+~
+~
+The western side of the island is not about fun, it is about commerce. 
+This rocky shore has two establishments, to the north a bank to the south a
+shop.  
+~
+0 537272320 2
+Rd     0
+D0
+~
+~
+0 0 1708
+D1
+~
+~
+0 0 1706
+D2
+~
+~
+0 0 1709
+S
+#1708
+The Bank~
+~
+~
+This is the bank.  Security cameras watch your every move, so no funny
+stuff mister!  
+~
+0 537272320 0
+Rd     0
+D2
+~
+~
+0 0 1707
+S
+#1709
+The General Store~
+~
+~
+A wooden stand sits here in the sand.  A crudely drawn sign says:
+&CThe General Store - For All Your General Non-Specific Needs
+&wManning the station is a quiet young man with glasses.
+~
+0 537272320 0
+Rd     0
+D0
+~
+~
+0 0 1707
+S
+#1710
+A Sandy Path~
+~
+~
+The tropical breezes brush past your face as you follow a path to the
+southern part of the island.  The sound of steel drums can be heard in the
+distance.  
+~
+0 537272320 3
+Rd     0
+D0
+~
+~
+0 0 1701
+D2
+~
+~
+0 0 1711
+S
+#1711
+Southern Intersection ~
+~
+~
+Two rough sandy paths intersect here on the beach.  Waves crash against
+the shore with a soothing regularity, this truely is paradise.  
+~
+0 537264128 2
+Rd     0
+D0
+~
+~
+0 0 1710
+D1
+~
+~
+0 0 1713
+D3
+~
+~
+0 0 1712
+S
+#1712
+The Beach~
+~
+~
+You have reached the fire pits.  This is where all the cooking takes
+place on the island.  Miguel is frying up some tasty desert island treats. 
+Also with his wiccan heritage he can heal your wounds.  Great combo eh?  
+~
+0 537272320 2
+Rd     0
+D1
+~
+~
+0 0 1711
+S
+#1713
+The Beach~
+~
+~
+Here is the mechanically inclined Mike, taking soil samples.  His testing
+will determine where the next hut, or bathhouse will be.  If you have
+anything in need of repair this is the man to see.  
+~
+0 604381184 2
+Rd     0
+D3
+~
+~
+0 0 1711
+S
+#1714
+Hallway~
+~
+~
+The noise of the party dies down a little in this side hallway.
+~
+0 537272320 0
+Rd     0
+D1
+~
+~
+0 0 1715
+D3
+~
+~
+0 0 1701
+S
+#1715
+Eastern Intersection~
+~
+~
+To the north is a mob with lots of hitpoints and a very low level..  Can
+you guess what it is for?  To the south is the bar, please go refresh
+yourself.  
+~
+0 537272320 0
+Rd     0
+D0
+~
+~
+3 0 1716
+D2
+~
+~
+3 0 1717
+D3
+~
+~
+0 0 1714
+S
+#1716
+Blood Room~
+~
+~
+A man sits here, relaxing amoung boxes of pizza and large handguns.  
+~
+0 537272320 0
+Rd     0
+D2
+~
+~
+3 0 1715
+S
+#1717
+The Bar~
+~
+~
+A swanky bartender is here to meet all you drinking needs.
+~
+0 537272320 0
+Rd     0
+D0
+~
+~
+3 0 1715
+S
+#1718
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1719
+D1
+~
+~
+0 0 1723
+D2
+~
+~
+0 0 1725
+D3
+~
+~
+0 0 1721
+S
+#1719
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1729
+D2
+~
+~
+0 0 1718
+S
+#1721
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1718
+D3
+~
+~
+0 0 1722
+S
+#1722
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1721
+S
+#1723
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1724
+D3
+~
+~
+0 0 1718
+S
+#1724
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 1723
+S
+#1725
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1718
+D2
+~
+~
+0 0 1726
+S
+#1726
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1725
+S
+#1729
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 1719
+S
+#0
+
+
+
+#SPECIALS
+M 1713 spec_repairman
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 1709 1 1709
+E 0 1709 0 7
+M 0 1712 1 1712
+M 0 1713 1 1713
+E 0 1713 0 16
+E 0 1714 0 6
+E 0 1715 0 11
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

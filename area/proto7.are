@@ -1,0 +1,3100 @@
+#AREADATA
+Name        New area~
+Builders    Dullahan~
+VNUMs       7300 7449
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Dullahan~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#7300
+cloudis bank teller~
+The Bank Teller~
+The Cloudis bank teller asks 'would you like to make a transaction?'
+~
+She sits here behind a desk waiting for your response...  
+~
+3 0 0 0 0 0 S
+40 1 2 2 10000 10000d0+0 0d0+10
+0 0 0
+0 0 2
+0 0 0
+#7301
+Information Woman~
+The Informationalist~
+The Information woman is sitting down here.
+~
+A short woman with red hair is sitting here.
+~
+1 0 0 0 0 0 S
+40 1 80 80 10000 10000d0+0 0d0+0
+400 0 0
+0 0 2
+0 0 0
+#7302
+cloudis guard~
+A Cloudis Guard~
+A Cloudis guard is sitting here playing poker...
+~
+~
+1 134217856 0 0 0 1000 S
+70 1 140 140 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#7303
+jonas general store clerk~
+Jonas~
+The General Store clerk stands here behind a desk.
+~
+A young man in about his twenties stands here behind the desk waiting for your order.
+~
+3 134217856 0 0 0 1000 S
+106 1 80 80 10000 10000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#7304
+akuro weaponsmith~
+Akuro~
+A middle aged man appears to be the weaponsmith here.
+~
+~
+3 33554560 0 0 0 1000 S
+106 1 212 212 0 10000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#7305
+elite cloudis guard~
+A Cloudis Elite Guard~
+One of Cloudis' Elite Guards stands guard.
+~
+A solitary young soldier, who is exceptional in the arts of combat.  He
+looks like he could put up a good fight.  
+~
+3 134217856 0 0 0 250 S
+80 1 120 120 0 22225d0+0 0d0+0
+120 0 0
+0 0 1
+0 0 0
+#7306
+thin man elevator~
+A thin elevator man~
+A rather thin man stands here over a control panel....
+~
+A thin man you would guess in his thirties apparently is paid or
+something to stay here and operate the elevator controls for others.  
+~
+524291 168 16 0 0 1000 S
+106 1 212 212 0 55000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>speech_prog up~
+mpecho The thin man nods in your direction and presses a few buttons..
+mpecho The elevator begins to move up slowly
+mptransfer $n 7361
+pecho $n The elevator stops abruptly and a pair of sliding doors open
+~
+>all_greet_prog 100~
+emote shuffles to his feet and straightens his posture.
+say Ummm, Hi, I suppose you want to go up, no?
+say Well, just say up and I will activate the elevator for ya, ok?
+~
+|
+#7307
+cloudis patrol officer~
+Cloudis Patrol Officer~
+A cloudis patrol officer is walking through the halls
+~
+A young soldier for the Cloudis army, he looks fairly built, but not much
+of a problem if you were to fight him.  
+ 
+~
+1 134283392 0 0 0 250 S
+70 1 140 140 0 20250d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#7308
+mayor receptionist lady young~
+The Mayors Receptionist~
+A young lady, the mayors receptionist, sits at a desk here
+~
+A young lady about in her twenties, sits here at her desk, typing away. 
+Her black hair falls back behind her and her brown eyes look up at you as
+you enter.  She seems to double as both a receptionst and a secretary for
+the mayor.  
+~
+3 134217856 16 0 0 150 S
+60 1 120 120 0 13770d0+0 0d0+0
+600 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+emote looks up at you
+smile
+say Hello, have you come to see the mayor?
+emote goes back to typing, waiting for a response
+~
+|
+#7309
+mayor lucas~
+Mayor Lucas~
+The mayor of Cloudis, Mayor Lucas is sitting here in a meditative state
+~
+Mayor Lucas seems to be meditating or something, because he is not
+responding to anything.  His black hair falls over his eyes and he is not
+wearing a traditional buisness suit, but more of a battle suit......for what
+reason, is unknown.  
+~
+3 67125376 0 0 0 0 S
+80 1 160 160 0 21870d0+0 0d0+0
+0 0 0
+0 0 1
+32770 0 0
+>fight_prog 10~
+mpecho &CMayor Lucas unleashes a wave of psychic energy!
+cast 'ultrablast'
+~
+>fight_prog 40~
+mpecho &YInvading thoughts enter your mind...
+cast 'confusion'
+~
+>rand_prog 10~
+mpecho &BMayor Lucas' aura shimmers brightly
+weap
+~
+>fight_prog 50~
+mpecho &C Mayor Lucas assaults your mind
+c 'psionic blast'
+~
+|
+#7310
+cloudis soldier~
+A Cloudis Soldier~
+A young member of Cloudis' royal army paces around here
+~
+~
+3 234881024 16 0 0 250 S
+75 1 150 150 0 20048d0+0 0d0+0
+750 0 0
+0 0 1
+0 0 0
+>fight_prog 50~
+mpecho &BA Cloudis Soldier utters the words 'Heaven Thunder'
+cast 'lightning bolt'
+~
+>fight_prog 60~
+emote crouches down and performs a somersault kick!
+bk
+~
+>rand_prog 10~
+emote gets ready to fight
+weaponmaster
+~
+|
+#7311
+molon martial artist~
+Molon, the Trainer~
+A well-built man trains the soldiers here
+~
+This guys is HUGE!  His muscles are bulging off his arms, his arms look
+like the size of tree trunks, and he looks like he could take quite a
+beating before being knocked out.  Definately not one to mess with.  
+~
+1547 16384 32816 0 0 500 S
+80 1 160 160 0 21900d0+0 0d0+0
+160 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+bow $n
+say Greetings $n, have you come to seek training from me?
+~
+>speech_prog yes~
+say Well then, lets get to it.  Type TRAIN or PRACTICE to recieve a list
+say of what you can train or practice.
+~
+>rand_prog 1~
+stretch
+emote kicks a few times at the air
+emote cracks his knuckles
+weap
+~
+>fight_prog 70~
+mpecho &CHoly flames engulf you
+c 'holy fires'
+~
+>fight_prog 50~
+say Why do you do this puny one?
+emote slams his foot into your face!
+bk
+~
+>hitprcnt_prog 10~
+scream
+emote goes into a berserker fury!
+berserk
+~
+>act_prog looks at you~
+~
+|
+#7312
+cloudis citizen man~
+A Cloudis Citizen~
+One of the citizens of Cloudis strolls through the halls
+~
+~
+1 128 32 0 0 250 S
+60 1 120 120 0 17000d0+0 0d0+0
+600 0 0
+0 0 1
+0 0 0
+>hitprcnt_prog 20~
+yell Someone, please help me!!!!
+say ummm alright...uhhmmm..like this??
+c 'confusion'
+~
+>fight_prog 50~
+mpecho &BEnergy gathers at the Citizen of Cloudis' hand....
+c 'fireball'
+~
+|
+#7313
+cloudis citizen woman~
+A Cloudis Citizen~
+A young woman walks around here
+~
+~
+1 16512 0 0 0 250 S
+60 1 120 120 0 13770d0+0 0d0+0
+600 0 0
+0 0 2
+0 0 0
+>fight_prog 70~
+mpecho &CA chunk of ice flys toward you!
+c 'iceball'
+~
+|
+#7314
+child boy~
+A Little Boy~
+A little boy skips around in the hallway
+~
+A small innocent looking little boy, his brown hair bounces up and down
+as he skips by you.  
+~
+1 16384 32 0 0 500 S
+60 1 120 120 0 13770d0+0 0d0+0
+400 0 0
+0 0 1
+0 0 0
+>fight_prog 30~
+mpecho &BThe little boy shuts his eyes and gathers energy
+mpecho &CThe energy explodes on the boy!
+c 'iceball' self
+~
+|
+#7315
+cloudis soldier~
+A Cloudis Soldier~
+A soldier of Cloudis' royal army sits here
+~
+~
+3 16512 48 0 0 250 S
+75 1 150 150 0 20049d0+0 0d0+0
+750 0 0
+0 0 1
+0 0 0
+>hitprcnt_prog 50~
+mpecho &CThe magic around you fades...
+cast 'dispel magic'
+~
+>fight_prog 50~
+mpecho &RYour body is engulfed in flames!
+cast 'fireball'
+~
+>rand_prog 10~
+emote gets ready to fight
+weaponmaster
+~
+|
+#7316
+cloudis robot guardian~
+The Guardian Robot~
+A huge robot watches over the area
+~
+This 'Type-1 Guardian Robot' stands at roughly nine to ten feet tall, but
+you can guess at very best.  It is a large mass of metal that appears to
+speak through some sort of magic for it has no mouth.  Large green orbs are
+its eyes, they are very large and have little numbers and lines appearing
+within them every so often.  A large hollow pole or something of that sort
+is attatched to it's right arm, and it appears to have only that as it's
+means of defense, but it in no way looks like an easy kill.  
+~
+3 67125376 32768 8192 0 1000 S
+90 1 180 180 0 21325d0+0 0d0+0
+0 0 0
+0 0 0
+32770 0 0
+>all_greet_prog 100~
+~
+>fight_prog 40~
+emote beeps a few times
+say Fire!
+mpecho &WA large net of webs flys at you!
+c web
+~
+>hitprcnt_prog 20~
+mpecho &YThe Robot grabs you and slams you into the ground!!
+slam
+~
+>fight_prog 50~
+mpecho &YThe Guardian Robot fires off a fire round.
+quickburst fireball
+quickburst fireball
+~
+>speech_prog Lucas~
+~
+|
+#7317
+teenager boy~
+A Teenage Boy~
+A young teenage boy sits on his bed here
+~
+~
+3 0 0 0 0 250 S
+70 1 140 140 0 25000d0+0 0d0+0
+700 0 0
+0 0 1
+0 0 0
+>speech_prog dad~
+say huh?
+say Oh, him.
+roll
+say Dad is to busy working to even say hello to me
+~
+>speech_prog hello~
+sniff
+say Thanks....
+say if only my dad would spend the time to say hello
+~
+|
+#7318
+scientist father man~
+A Father~
+A scientist is sitting at a desk writing here
+~
+~
+3 0 0 0 0 0 S
+70 1 140 140 0 25000d0+0 0d0+0
+700 0 0
+0 0 1
+0 0 0
+>greet_prog 50~
+say Bah, what do you want?
+say I'm trying to do work, beat it!
+~
+>fight_prog 40~
+say Eaagghh!!!!
+punch
+punch
+~
+>speech_prog work~
+say Oh, this?
+say Let's see....this is plans for a new type of weapon
+say It is only half finished however
+frown
+~
+|
+#7319
+mechanic man~
+A Mechanic~
+A young man is leaning over a piece of machinery
+~
+~
+3 67108992 0 0 0 0 S
+75 1 150 150 0 22000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#7320
+cloudis robot guardian~
+Cloudis Guardian Robot~
+A Cloudis Guardian Robot Type-3
+~
+~
+1 67108864 32768 8192 0 500 S
+85 1 170 170 0 23693d0+0 0d0+0
+850 0 0
+0 0 0
+32770 0 0
+>all_greet_prog 100~
+emote turns and looks at you
+nod
+say Hopefully you are having a good day
+~
+>fight_prog 40~
+mpecho &RWARNING! WARNING!
+emote beeps a few times as gadgets inside it begin to activate.
+say Executing Program 1.2!
+cast web
+~
+>fight_prog 50~
+mpecho &RWARNING! WARNING!
+say Executing Program 2.0!
+quickburst fireball
+quickburst 'lightning bolt'
+~
+>rand_prog 5~
+say Running Weapons Program 1
+weapon
+~
+|
+#7321
+installation guard man~
+The Installation Guard~
+A man looks at you coldly as you approach
+~
+A very mean looking man, he has a short cut beard and looks VERY bored at
+standing here.  Perhaps you could give him something to do?  
+~
+3 16384 32816 0 0 250 S
+85 1 170 170 0 23693d0+0 0d0+0
+850 0 0
+0 0 1
+0 0 0
+>fight_prog 50~
+mpecho &RThe Installation Guard's body flares brilliantly with a red light
+cast sunburst
+~
+>fight_prog 40~
+emote slams into you!!
+stun
+~
+>greet_prog 100~
+if ispc($n) == 1
+say What do you think you are doing here?
+say Get out before I will be forced to rip you apart
+emote pokes your stomach
+laugh
+endif
+endif
+~
+|
+#7322
+scientist cloudis man~
+A Scientist~
+A scientist is sitting down under a light working on something
+~
+The man before you is fairly old, almost bald and leaning over some form of metal.
+~
+3 0 0 0 0 250 S
+75 1 150 150 0 27500d0+0 0d0+0
+750 0 0
+0 0 1
+0 0 0
+>fight_prog 50~
+mpecho &CThe Scientist pulls a slip of paper from his coat
+mpoload 7320
+recite word
+~
+>fight_prog 60~
+mpecho The Scientist blasts the magic from around you!
+quickburst 'dispel magic'
+~
+>hitprcnt_prog 10~
+say You will never get the secret!!!
+berserk
+~
+|
+#0
+
+
+
+#OBJECTS
+#7300
+desk computer~
+A desk is here with a large computer mounted on top.~
+A desk is here with a large computer mounted on top.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7301
+Pizza Slice~
+a thick slice of &RPizza~
+A large slice of pizza sits here waiting to be eaten.~
+~
+19 0 0 0 0 1 1
+100 100
+20~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#7302
+Crystal Lantern~
+a &WCrystal &CLantern~
+A lantern made of pure crystal is waiting to be lit.~
+~
+1 3 0 0 0 1 50
+100 100
+0~ 0~ -1~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 50
+A
+18 10
+A
+3 4
+#7303
+Gold Passcard~
+&YGold Passcard~
+A small golden passcard has been thrown on the ground...~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7304
+pulsar sabre blade light~
+&BPulsar Sabre~
+A long blade of blue light lays here...~
+~
+5 1 8192 0 0 8193 70
+100 100
+0~ 21~ 56~ 3~
+0 400 0
+5 0
+lightning bolt~
+1 1
+0 0 0
+A
+19 32
+A
+18 10
+>wear_prog $n wield~
+0
+pecho $n &BThe Pulsar Sabre glows responsively.
+~
+|
+#7305
+field plate armor~
+field Plate Armor~
+A shimmering field plate armor lays here...~
+~
+9 671088641 0 0 0 9 70
+100 100
+18~ 0~ 0~ 0~
+9 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 10
+#7306
+northwind fist legend~
+&wThe Northwind Fist~
+The legendary glove, 'The Northwind Fist' hovers above the ground~
+~
+5 704774145 1024 0 33554432 8193 80
+100 100
+0~ 26~ 64~ 6~
+5 1 0
+0 0
+reserved~
+0 0
+7309 0 0
+A
+19 20
+A
+2 2
+A
+18 28
+#7307
+key mayor~
+the key to the mayor's office~
+A key decorated with celestial lights lies here~
+~
+18 1 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7308
+southern cross legend~
+&wThe Southern Cross~
+The legendary glove, 'The Southern Cross' hovers above the ground~
+~
+5 134348801 9216 0 33554432 8193 80
+100 100
+0~ 26~ 64~ 6~
+5 1 0
+0 0
+reserved~
+0 0
+7309 0 0
+A
+18 20
+A
+19 28
+A
+1 2
+#7309
+crosswind fist legend~
+&wThe Crosswind Fist~
+The legendary glove, 'The Crosswind Fist' hovers above the ground~
+~
+5 167772480 139264 0 0 8193 85
+100 100
+0~ 28~ 66~ 6~
+5 1 0
+0 0
+reserved~
+0 0
+0 7306 7308
+A
+2 2
+A
+1 2
+A
+19 30
+A
+18 21
+#7310
+martial arts suit~
+martial Arts Suit~
+A worn martial arts suit lays here waiting for its new master~
+~
+9 134217729 0 0 0 8 80
+100 100
+20~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 18
+A
+26 25
+#7311
+aura energy~
+&wAn Aura of Bright Energy~
+The magical aura of some being floats here~
+~
+9 671101121 131072 0 0 32769 80
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+18 20
+#7312
+armor robot~
+magic Robot Armor~
+The body of a robot lays on the ground in a heap~
+~
+9 134230145 131072 0 0 8 108
+100 100
+20~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7313
+fist robot giant~
+&wRobot Combat Fist~
+A robot's fist lays here on the ground....~
+~
+5 3 8192 0 0 8193 90
+100 100
+0~ 24~ 70~ 6~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 18
+A
+19 36
+A
+2 -2
+A
+1 2
+A
+5 1
+A
+26 50
+#7314
+Dragon Satelite~
+a Dragon Satelite~
+One of the Legendary Dragon Satelites floats here~
+~
+9 134230145 131072 0 0 32768 108
+100 100
+10~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 200
+A
+18 10
+A
+19 5
+#7315
+pulse laser arm~
+arm Pulse Laser~
+(no description)~
+~
+32 12416 131072 0 0 2097153 108
+100 100
+200~ 10~ 10~ laser beam bullet~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7316
+desk~
+a large desk rests against the south wall.~
+A large desk lies against the southern wall, covered with paper.~
+~
+15 0 0 0 0 0 0
+100 100
+1000~ 15~ 7317~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7317
+grey key~
+a small gray key~
+A very small grey key lies on the ground~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7318
+toilet~
+a Large Toilet~
+A large white toilet sits in the corner of the room~
+~
+15 1 0 0 0 0 0
+100 100
+700~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7319
+model weapon~
+model Weapon~
+An un-powered weapon lays here.~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+50 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7320
+word shields secret scroll~
+word of Shields~
+A long forgotten scroll lies under some dust~
+~
+2 1006641281 131072 0 0 1 1
+100 100
+80~ sanctuary~ golden armor~ vibrate~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7321
+white lab coat~
+a White lab coat~
+A white lab coat has been left on the ground~
+~
+9 0 0 0 0 1025 75
+100 100
+20~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 -1
+A
+5 -1
+A
+4 2
+A
+3 2
+A
+18 20
+#0
+
+
+
+#ROOMDATA
+#7300
+Entrance to Cloudis~
+~
+~
+Well you realize you are finally here, at the floating city Cloudis.  Not
+as impressive as the stories say, but impressive in it's own way.  The walls
+glow with a soft blue light and the constant humming is getting annoying. 
+You begin to think that coming here was not such a great idea after all. 
+You can go north from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7301
+S
+#7301
+Entrance hallway~
+~
+~
+You realize that everything is silent, all but the humming seemingly
+emitted by the walls which is getting louder now.  The hallway leads in two
+directions north and south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7302
+D2
+~
+~
+0 0 7300
+S
+#7302
+Central Intersection~
+~
+~
+You have reached the central intersection of Cloudis, paths lead north,
+south, east and west.  Now the silence is broken and is replaced by the
+sound of talking and footsteps throughout the halls.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+119 7303 7303
+D1
+~
+~
+0 0 7322
+D2
+~
+~
+0 0 7301
+D3
+~
+~
+0 0 7321
+S
+#7303
+An Elevator~
+~
+~
+You're in a dark shaft, well, dark compared to the previous hallway at
+least.  What you stand upon seems to be some sort of panel which would seem
+to require a pulley system of some sort, but none is in sight.  
+~
+0 134644736 0
+Rd     0
+D2
+~
+~
+119 7303 7302
+S
+#7304
+Cloudis General Store~
+~
+~
+As your eyes readjust to the lighting in this room you notice a the
+walls, ceiling and floor are all a plain white the only thing colored in
+this room is probably Jonas, you and the list showing what he is selling.  
+~
+0 394240 0
+Rd     0
+D0
+~
+~
+0 0 7305
+S
+#7305
+Hallway Intersection~
+~
+~
+Another intersection leading north, south, east and west.  To the east is
+the Cloudis city bank and to the west is an arms dealer office and to the
+south is the General store.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7308
+D1
+~
+~
+0 0 7306
+D2
+~
+~
+0 0 7304
+D3
+~
+~
+0 0 7307
+S
+#7306
+Cloudis City Bank~
+~
+~
+Your footsteps echo about in this large dark blue room, the room is
+fairly simple : a desk a bank teller and a large vault behind the desk.  You
+are suprised to see that there are no guards here considering this is where
+Cloudis keeps all their money.  
+~
+0 17212416 0
+Rd     0
+D3
+~
+~
+0 0 7305
+S
+#7307
+Akuro's Arms Dealership~
+~
+~
+The smell of metal and iron fills this room, weapons and armor hang upon
+the walls, and a middle-aged man sits in the back of the room sharpening
+something.  The lighting is quite bad in this room and pieces of metal and
+iron lay about the room.  The only exit is back to the east.  
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+0 0 7305
+S
+#7308
+Hallway Intersection~
+~
+~
+This intersection also leads in all directions, to the north the
+elevators leading to the East and West wings, the east and west to the
+eastern and western hallways and to the south another intersection.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7309
+D1
+~
+~
+0 0 7330
+D2
+~
+~
+0 0 7305
+D3
+~
+~
+0 0 7313
+S
+#7309
+Common Hallway~
+~
+~
+The humming has becoming louder now and noise can be heard to the north. 
+Lights along the east and west part of the floor flash showing direction to
+the north.  Exits are north and south of your location.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7310
+D2
+~
+~
+0 0 7308
+S
+#7310
+Wing Intersection~
+~
+~
+The humming is even louder now, you dont know if you can take much more
+of this but you realize you must go on.  There are two doors here
+to the east and west of you, above the east door reads 'To Eastern Wing' and
+above the west 'To Western Wing'.  Exits are the two doors east,
+and west and the hallway to the south.  
+~
+0 0 0
+Rd     0
+D1
+~
+door~
+3 0 7312
+D2
+~
+~
+0 0 7309
+D3
+~
+door~
+3 0 7311
+S
+#7311
+Bottom of the Staircase~
+~
+~
+A rather plain staircase leads upwards to the west wing of Cloudis.  The
+walls are still blue however, and that humming is still getting to you.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 7310
+D4
+~
+~
+0 0 7374
+S
+#7312
+Bottom of the Staircase~
+~
+~
+A rather plain staircase leads upwards to the east wing of Cloudis.  The
+walls are still blue however, and that humming is still getting to you.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 7310
+D4
+~
+~
+0 0 7335
+S
+#7313
+Northern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7308
+D3
+~
+~
+0 0 7314
+S
+#7314
+Northern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7313
+D3
+~
+~
+0 0 7315
+S
+#7315
+Hallway Turn~
+~
+~
+The blue tint in the hallways are getting to you, however this place is
+not glowing, it is just plain blue.  Exits lead south and east.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7314
+D2
+~
+~
+0 0 7316
+S
+#7316
+Western Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  You
+seem to hear some talking coming from the east.  Exits lead north, south and
+east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7315
+D1
+~
+~
+0 0 7331
+D2
+~
+~
+0 0 7317
+S
+#7317
+Western Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  You
+seem to hear some talking coming from the east.  Exits lead north, south and
+east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7316
+D1
+~
+~
+0 0 7332
+D2
+~
+~
+0 0 7318
+S
+#7318
+Western Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading north and south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7317
+D2
+~
+~
+0 0 7319
+S
+#7319
+Hallway Turn~
+~
+~
+The blue tint in the hallways are getting to you, however this place is
+not glowing, it is just plain blue.  Exits lead north and east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7318
+D1
+~
+~
+0 0 7320
+S
+#7320
+Southern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7321
+D3
+~
+~
+0 0 7319
+S
+#7321
+Southern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7302
+D3
+~
+~
+0 0 7320
+S
+#7322
+Southern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7323
+D3
+~
+~
+0 0 7302
+S
+#7323
+Southern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7324
+D3
+~
+~
+0 0 7322
+S
+#7324
+Hallway Turn~
+~
+~
+The blue tint in the hallways are getting to you, however this place is
+not glowing, it is just plain blue.  Exits lead north and west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7325
+D3
+~
+~
+0 0 7323
+S
+#7325
+Eastern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading to the north and the south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7326
+D2
+~
+~
+0 0 7324
+S
+#7326
+Eastern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  You
+seem to hear some talking to the west.  Exits leading to the north, south
+and west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7327
+D2
+~
+~
+0 0 7325
+D3
+~
+~
+0 0 7334
+S
+#7327
+Eastern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  You
+seem to hear some talking to the west.  Exits leading to the north, south
+and west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7328
+D2
+~
+~
+0 0 7326
+D3
+~
+~
+0 0 7333
+S
+#7328
+Hallway Turn~
+~
+~
+The blue tint in the hallways are getting to you, however this place is
+not glowing, it is just plain blue.  Exits lead south and west.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7327
+D3
+~
+~
+0 0 7329
+S
+#7329
+Northern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7328
+D3
+~
+~
+0 0 7330
+S
+#7330
+Northern Hallway~
+~
+~
+This like many of the other hallways are glowing blue, there seems to be
+little noise here other than the humming being emitted by the walls.  Exits
+leading east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7329
+D3
+~
+~
+0 0 7308
+S
+#7331
+Guard Outpost~
+~
+~
+This is a guards outpost, two guards are sitting down playing a game of
+poker.  A single bunk rests on the northern wall opposite of where the two
+guards play their game.  The only exit is to the west.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 7316
+S
+#7332
+Guard Outpost~
+~
+~
+This is a guards outpost, two guards are sitting down playing a game of
+poker.  A single bunk rests on the northern wall opposite of where the two
+guards play their game.  The only exit is to the west.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 7317
+S
+#7333
+Guard Outpost~
+~
+~
+This is a guards outpost, two guards are sitting down playing a game of
+poker.  A single bunk rests on the northern wall opposite of where the two
+guards play their game.  The only exit is to the east.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7327
+S
+#7334
+Guard Outpost~
+~
+~
+This is a guards outpost, two guards are sitting down playing a game of
+poker.  A single bunk rests on the northern wall opposite of where the two
+guards play their game.  The only exit is to the east.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7326
+S
+#7335
+Top of the Staircase~
+~
+~
+You arrive on the landing to the East wing, the humming has faded away,
+but the walls are still blue.  You can go back down, or through the door.  
+~
+0 0 0
+Rd     0
+D1
+~
+Elevator~
+3 0 7336
+D5
+~
+~
+0 0 7312
+S
+#7336
+Entrance to East Wing~
+~
+~
+The scenery has dramaticly changed!  The walls are now white instead of
+blue.  Oh great now even more of a pain to look at.  A single guard stands
+against the wall watching you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7337
+D2
+~
+~
+0 0 7371
+D3
+~
+Elevator~
+3 0 7335
+S
+#7337
+White Hallway~
+~
+~
+The white hallway stretches on the floor seems to be much like steel
+plates rather than tile.  This part looks much like a military section of
+Cloudis.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7338
+D2
+~
+~
+0 0 7336
+S
+#7338
+White Hallway~
+~
+~
+The hallway continues on, the noise of fighting echoes throught these
+halls.  Seeing as this is a military section you wonder where are all the
+soldiers?  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7339
+D2
+~
+~
+0 0 7337
+S
+#7339
+Hallway Turn~
+~
+~
+The hallway comes to a turn here and the fighting noises are getting
+louder.  Perhaps coming to this place was a bad idea.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7340
+D2
+~
+~
+0 0 7338
+S
+#7340
+White Hallway~
+~
+~
+You have found the source of the fighting, to your south is a practice
+room.  Several knights and guards are battling in there raising their combat
+prowess.  You might also be able to learn a thing or two.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7342
+D2
+~
+~
+0 0 7341
+D3
+~
+~
+0 0 7339
+S
+#7341
+Military Arena~
+~
+~
+The room is lined with racks holding weapons upon them, several soldiers
+are battling , scattered about the room.  A single man waits at the back
+ready to help you prepare for battle.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7340
+S
+#7342
+White Hallway~
+~
+~
+Some fighting can be heard to the west, other than that there is no
+noise.  To the south a sign reads 'Armory' and you guessed it there is armor
+and weapons there.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7344
+D2
+~
+~
+0 0 7343
+D3
+~
+~
+0 0 7340
+S
+#7343
+Military Armory~
+~
+~
+Weapons hang upon racks on the walls, while armor on long iron stands against the south, east, and west walls.  A man stands behind a desk inspecting a sword.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7342
+S
+#7344
+White Hallway~
+~
+~
+The hallway has become quiet in fact deadly quiet but this is supposed to
+be a peaceful city...  Supposed to at least.  To the south you can see what
+seems to be a place of worship where the soldiers pray before going into
+battle.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7346
+D2
+~
+~
+0 0 7345
+D3
+~
+~
+0 0 7342
+S
+#7345
+Temple Altar~
+~
+~
+Rows of marble pillars line the east and west walls, and stained glass
+behind them.  This reminds you much of Churches that many religious orders
+use.  At the far south of the room a large statue of a man stands carved
+completely out of marble.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7344
+S
+#7346
+White Hallway~
+~
+~
+The hallway still continues...  And to the south is a place of training
+where soldiers well, train.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7348
+D2
+~
+~
+0 0 7347
+D3
+~
+~
+0 0 7344
+S
+#7347
+Training Centre~
+~
+~
+You stand in the middle of an arena-style training area, several soldiers
+train with each other throughout the room while the master here waits.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 7346
+S
+#7348
+Hallway Turn~
+~
+~
+The hallway bends towards the south now leading to the next part of
+Cloudis.  Some red letters can be seen upon the wall reading '&RSEC -
+&R7348&w' what does it mean?  Who knows, and at the moment, who cares??  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7349
+D3
+~
+~
+0 0 7346
+S
+#7349
+White Hallway~
+~
+~
+The white hallway continues, you can now hear voices and footsteps
+throughout the halls.  Occasionally a soldier is seen patrolling the halls. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7348
+D2
+~
+~
+0 0 7350
+S
+#7350
+White Hallway~
+~
+~
+The white hallway somewhat reminds you of a hospital of some sort, well
+the white walls, celing and floor do, at least.  On occasion a soldier walks
+by, patrolling the halls.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7349
+D2
+~
+~
+0 0 7351
+S
+#7351
+Intersection~
+~
+~
+The white hallway now leads in all four of the cardinal directions.  Some
+noise can be heard in the westward direction.  A sign reading 'Mayor's
+Office' can be seen above an eastern doorway.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7350
+D1
+~
+~
+0 0 7372
+D2
+~
+~
+0 0 7362
+D3
+~
+~
+0 0 7352
+S
+#7352
+Barrack Intersection~
+~
+~
+You enter the entrance to the Barracks, fairly large signs hang above the
+doors, they seem to indicate a room number, much like that of an inn. 
+Barrack rooms lie to the north and south while the hallway continues east
+and west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7356
+D1
+~
+~
+0 0 7351
+D2
+~
+~
+0 0 7357
+D3
+~
+~
+0 0 7353
+S
+#7353
+Barrack Intersection~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7358
+D1
+~
+~
+0 0 7352
+D2
+~
+~
+0 0 7359
+D3
+~
+~
+0 0 7354
+S
+#7354
+Barrack Intersection~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7360
+D1
+~
+~
+0 0 7353
+D3
+~
+~
+0 0 7355
+S
+#7355
+Barrack Intersection~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7354
+S
+#7356
+Barrack Room~
+~
+~
+You have arrived in one of the barrack rooms, this one has only one bed
+with a soldier sitting atop it.  
+~
+0 393216 0
+Rd     0
+D2
+~
+~
+0 0 7352
+S
+#7357
+Barrack Room~
+~
+~
+This is room is similar to the others, a bunk-bed, a table, and two
+chairs.  The two soldiers here are busy sharpening their weapons.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 7352
+S
+#7358
+Barrack Room~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7353
+S
+#7359
+Barrack Room~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7353
+S
+#7360
+Barrack Room~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7354
+S
+#7361
+An elevator~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#7362
+White Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7351
+D2
+~
+~
+0 0 7363
+S
+#7363
+White Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7362
+D2
+~
+~
+0 0 7364
+S
+#7364
+Hallway Turn~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7363
+D3
+~
+~
+0 0 7365
+S
+#7365
+White Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7364
+D3
+~
+~
+0 0 7366
+S
+#7366
+White Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7365
+D3
+~
+~
+0 0 7367
+S
+#7367
+White Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7366
+D3
+~
+~
+0 0 7368
+S
+#7368
+White Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7367
+D3
+~
+~
+0 0 7369
+S
+#7369
+Hallway Turn~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7370
+D1
+~
+~
+0 0 7368
+S
+#7370
+White Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7371
+D2
+~
+~
+0 0 7369
+S
+#7371
+White Hallway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7336
+D2
+~
+~
+0 0 7370
+S
+#7372
+Receptionist's Office~
+~
+~
+You stand in a cool air-conditioned, white-walled room.  Several pictures
+hang on the wall, some portraits, others depicting events in Cloudis'
+history.  A nice looking desk sits near the door, behind the desk is a young
+lady who is typing something for the mayor.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+53 0 7373
+D3
+~
+~
+0 0 7351
+S
+#7373
+Mayor's Office~
+~
+~
+You arrive in a fairly quiet room, as the one before, this room is also
+air-conditioned, and the walls are white.  Bookshelves line the east and
+west walls, while the mayors desk is against the north wall.  The mayor
+seems to be in some sort of meditation; it would be best to leave him alone.
+~
+0 393216 0
+Rd     0
+D2
+~
+~
+53 7307 7372
+S
+#7374
+Entrance to West Wing~
+~
+~
+You stand upon a white, tile floor, which stretches out to the door and
+stops, where a beautiful green lawn can be seen through.  The walls of this
+room are white and there is no ceiling but instead a transparent layer of
+some sort of matter.  This "screen" appears to form a type of dome over the
+"West Wing".  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 7375
+D5
+~
+~
+0 0 7311
+S
+#7375
+Intersection in Residential Sector~
+~
+~
+The tile floor is no more, but replaced with green grass that stretches
+out farther then you can tell.  Looking up, it appears that there is some
+sort of translucent shield that forms a dome around the west wing, which now
+resembles more of a large platform then a part of a building.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7382
+D1
+~
+~
+0 0 7374
+D2
+~
+~
+0 0 7376
+D3
+~
+~
+0 0 7378
+S
+#7376
+Eastern Wall~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7375
+D3
+~
+~
+0 0 7380
+S
+#7377
+House, First Floor~
+~
+~
+This is a very simple, one-room home, it appears that a single person
+lives here, because there is one bed ad not alot of room to move around at
+all in the house.  Most of the room is taken up by various machines and
+robots, the person who lives here is most likely a mechanic 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 7380
+S
+#7378
+Centre Road~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7381
+D1
+~
+~
+0 0 7375
+D2
+~
+~
+0 0 7380
+D3
+~
+~
+0 0 7379
+S
+#7379
+Centre Road~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7378
+D3
+~
+~
+0 0 7387
+S
+#7380
+Side Path~
+~
+~
+The green grass stretches in all directions but stops as it meets a
+white, dome-like house to the south.  A few windows can be seen on this
+house and people walking by and the occaisonal robot guard.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7378
+D1
+~
+~
+0 0 7376
+D2
+~
+~
+3 0 7377
+S
+#7381
+Side Path~
+~
+~
+The green grass stretches in all directions but stops as it meets a
+white, dome-like house to the north.  A few windows can be seen on this
+house and people walking by and the occaisonal robot guard.  
+~
+0 0 0
+Rd     0
+D0
+~
+door~
+3 0 7383
+D1
+~
+~
+0 0 7382
+D2
+~
+~
+0 0 7378
+S
+#7382
+Eastern Wall~
+~
+~
+The green grass stops at this part of the quasi-invisible barrier that
+covers the West Wing of Cloudis.  Off the side of the plaform you view the
+clouds below and the sun floating overhead.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7375
+D3
+~
+~
+0 0 7381
+S
+#7383
+House, First Floor~
+~
+~
+The dome-shaped house is actually bigger than it looks from the outside. 
+There is not much in this house however, an oven, a door to another room and
+stairs leading above.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7384
+D2
+~
+~
+3 0 7381
+D3
+~
+~
+0 0 7386
+D4
+~
+~
+0 0 7385
+S
+#7384
+Bedroom~
+~
+~
+This appears to be the parent's bedroom, there is a large bed against the
+eastern wall, and a desk against the southern wall.  A large carpet with
+several odd designs lays upon most of the floor.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 7383
+S
+#7385
+Second Floor Bedroom~
+~
+~
+This room appears to be a teenagers room, several posters line the north
+wall, the room is not at all tidy, and the teenager is sitting down on the
+bed.  There are four windows visible, above you, and to the east, south, and
+west, through them you have a great view of the rest of this part of
+Cloudis.  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 7383
+S
+#7386
+Bathroom~
+~
+~
+You have entered the families bathroom.  Why?  Well, only you can answer
+that.  Anyway, it is nothing special, white walls, white ceiling and a big
+white toilet.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7383
+S
+#7387
+Crossing of Centre and Sky~
+~
+~
+The central path continues on and now offers paths north and south as well as the main path.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7388
+D1
+~
+~
+0 0 7379
+D2
+~
+~
+0 0 7389
+D3
+~
+~
+0 0 7392
+S
+#7388
+Sky Road North~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7391
+D2
+~
+~
+0 0 7387
+S
+#7389
+Sky Road South~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7387
+D2
+~
+~
+0 0 7390
+S
+#7390
+Sky Road South~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7389
+S
+#7391
+Sky Road North~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7388
+S
+#7392
+Centre Path~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7387
+D3
+~
+~
+0 0 7394
+S
+#7394
+Centre Path~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7392
+D3
+~
+~
+0 0 7395
+S
+#7395
+Crossing of Central and Solar~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7396
+D1
+~
+~
+0 0 7394
+D2
+~
+~
+0 0 7399
+D3
+~
+~
+0 0 7402
+S
+#7396
+Solar Road North~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7397
+D2
+~
+~
+0 0 7395
+S
+#7397
+Solar Road North~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7398
+D2
+~
+~
+0 0 7396
+S
+#7398
+Solar Road North~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 7397
+S
+#7399
+Solar Road South~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7395
+D2
+~
+~
+0 0 7400
+S
+#7400
+Solar Road South~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7399
+D2
+~
+~
+0 0 7401
+S
+#7401
+Solar Road South~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7400
+S
+#7402
+Centre Path~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7395
+D3
+~
+~
+0 0 7403
+S
+#7403
+End of the Road~
+~
+~
+You have finally reached the end of the road, well, nothing much was
+gained from this however so you are feeling a tad foolish but, you can go
+through the large gate to the west.  Where it leads, you will have to find
+out.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7402
+D3
+~
+~
+119 0 7404
+S
+#7404
+Front Entrance~
+~
+~
+You now stand upon a paved road that leads up to a large dome shaped
+building with very little windows and a fairly small door on the nearest
+wall.  In front of the door is a guard, who is making sure no unauthorized
+people just walk in.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+119 0 7403
+D3
+~
+~
+0 0 7405
+S
+#7405
+Before the Door~
+~
+~
+A large white dome-shaped building towers above you while a single man
+stand between you and the inside of the installation.  The grass on the
+sides of the road seems to have been cut recently and directly above the top
+of the dome appears to be some sort of moveable part of the translucent
+barrier.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7404
+D3
+~
+~
+7 0 7406
+S
+#7406
+Entrance to the Installation~
+~
+~
+You walk through the door, it closes behind you and you arrive in a very
+large metal room.  Scientists and Technicians walk between several large
+objects which appear to be vehicles of some sort.  No body pays much
+attention to you, or even acknoledges your entrance in any way, they just
+continue their working like robots or something...  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7407
+D1
+~
+~
+7 0 7405
+D2
+~
+~
+0 0 7408
+D3
+~
+~
+0 0 7411
+S
+#7407
+Northeast Corner~
+~
+~
+This corner of the installation is empty compared to the rest, a few
+boxes lay about and metal arm-like things moving far above you.  A few
+people walk in and out of a large opened doorway where some tools and
+materials are stored.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7410
+D2
+~
+~
+0 0 7406
+D3
+~
+~
+0 0 7409
+S
+#7408
+Southeast Corner~
+~
+~
+You arrive in the rather large southeast corner of the Installation, a
+VERY large project seems to be under construction here, you guess somewhere
+between twenty to thirty people are working on that disgustingly large
+thing.  The large room continues north and west from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7406
+D3
+~
+~
+0 0 7412
+S
+#7409
+North Wall~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7407
+D2
+~
+~
+0 0 7411
+D3
+~
+~
+0 0 7414
+S
+#7410
+Storage Room~
+~
+~
+This appears to be some sort of warehouse-like storage room, boxes and
+other items lay upon large shelves that stretch far to the back of the room.
+Each shelf is labeled with a little sign saying what type of items are in
+that row.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 7407
+S
+#7411
+Centre of the Installation~
+~
+~
+You stand upon a large platform marked with yellow paint at the very ends
+of the platform, this platform appears to be used to raise things to the top
+of the dome.  From here you can see in all directions and from the looks of
+it, this is just some sort of factory to make large machines.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7409
+D1
+~
+~
+0 0 7406
+D2
+~
+~
+0 0 7412
+D3
+~
+~
+0 0 7413
+S
+#7412
+South Wall~
+~
+~
+A very large bird like machine stretches out across the area here, it
+appears to be very long as it is suspended over the work areas to the east
+and west as well.  Several people are working on a large cylinder at what
+you guess is the rear of the machine and others are working on the large
+metal "wings".  From here you may go north, east, or west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7411
+D1
+~
+~
+0 0 7408
+D3
+~
+~
+0 0 7415
+S
+#7413
+West Wall~
+~
+~
+Along the west wall appears to be some sort of laboratory, several
+scientists scuttle about and mess with different things.  One in particular
+is sitting alone under a light studying a strange metal object.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7414
+D1
+~
+~
+0 0 7411
+D2
+~
+~
+0 0 7415
+S
+#7414
+Northwestern Corner~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7409
+D2
+~
+~
+0 0 7413
+S
+#7415
+Southwestern Corner~
+~
+~
+Several men sit around a large table and are discussing and writing up
+plans for something.  Others are reviewing older plans or walking back and
+forth between other machines.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7413
+D1
+~
+~
+0 0 7412
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 7303 1 7304
+M 0 7300 1 7306
+O 0 7300 0 7306
+M 0 7304 1 7307
+M 0 7304 1 7307
+M 0 7311 1 7347
+M 0 7311 1 7347
+M 0 7315 1 7356
+E 0 7304 0 20
+E 0 7305 0 5
+M 0 7310 2 7357
+E 0 7304 0 20
+E 0 7305 0 5
+M 0 7310 2 7357
+E 0 7305 0 5
+E 0 7304 0 20
+O 0 7300 0 7372
+M 0 7308 1 7372
+M 0 7309 1 7373
+E 0 7306 0 20
+E 0 7306 0 21
+E 0 7310 0 5
+E 0 7311 0 9
+E 0 7311 0 10
+M 0 7316 1 7375
+E 0 7312 0 5
+E 0 7313 0 20
+E 0 7313 0 21
+E 0 7314 0 9
+E 0 7314 0 10
+P 0 7317 0 7318
+E 0 7315 0 23
+M 0 7320 1 7380
+E 0 7312 0 5
+E 0 7315 0 23
+E 0 7313 0 20
+E 0 7313 0 21
+O 0 7316 0 7384
+P 0 7319 0 7316
+O 0 7318 0 7386
+P 0 7317 0 7318
+M 0 7322 1 7413
+E 0 7321 0 16
+S
+
+
+
+#SHOPS
+7303 0 9 5 0 0 100 50 8 20
+7304 0 5 0 0 0 100 50 8 20
+0
+
+
+
+#$

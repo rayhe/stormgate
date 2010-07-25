@@ -1,0 +1,1540 @@
+#AREADATA
+Name        { CLAN } Vendetta Hideout    Leptar~
+Builders    Khaos Leptar~
+VNUMs       4801 4900
+Security    100
+Recall      1
+Flags       288
+End
+
+
+
+#MOBILES
+#4801
+bandit scout~
+the bandit scout~
+A bandit scout leans against the wall.
+~
+This nasty man seems to be missing all of his teeth, probably lost in a
+brawl within the caves.  He is quick to alert Vendetta of your intrusion
+upon the grounds.  
+~
+524359 8 0 131072 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+nod $n
+say I would assume you know the way
+else
+nod $n
+yell I'll show you the way through!  Follow me, $n!
+endif
+~
+>fight_prog 20~
+cast 'stigeon mists'
+~
+>fight_prog 10~
+cast curse $n
+~
+>fight_prog 10~
+yell $n is attacking me!
+stun
+slit
+~
+|
+#4802
+chained man~
+the chained man~
+This scruffy man has been chained to the wall for quite some time.
+~
+It doesn't look like he has been fed for quite a while.  You can easily
+trace the route of his bones beneath his skin.  His eyes project a vacant
+stare as you pass by.  It may be best to leave this one be.  
+~
+524295 8 65536 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+if isclan($n) == 6
+cackle $n
+else
+cackle $n
+yell $n, you appear lost!
+endif
+~
+|
+#4803
+hidden assassin~
+the hidden assassin~
+An assassin hides in a lookout tree.
+~
+This man is dressed in mottled green and brown from head to toe.  An his
+breast is a small emblem you have never seen before.  He stares at your from
+behind a tree, then quickly vanishes into the darkening woods.  
+~
+524359 8 32768 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+nod $n
+else
+yell Alert!  $n is approaching!
+endif
+~
+>fight_prog 20~
+stun
+trip
+paralyze
+~
+>fight_prog 10~
+cast 'bend light' $n
+~
+>fight_prog 0~
+~
+|
+#4804
+bandit captain~
+the Bandit Captain~
+The Bandit Captain stands guard here, accosting intruders.
+~
+This old, grizzled warrior has a patch over one eye and a pegged leg.  As
+you approach, he snarls and spits a large wad of slimy juice at your feet. 
+He blabbers something strange about secret doors and then abruptly turns
+away to seek out easier prey.  
+~
+524359 67108872 0 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+salue $n
+else
+snarl $n
+yell Begone $n!  Before I have you arrested!
+endif
+~
+|
+#4805
+bandit~
+Western Patrol Bandit~
+A bandit stands here, patrolling the west.
+~
+~
+524295 8 262144 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+if isclan($n) == 6
+salute $n
+else
+point $n
+yell $n at the Western Front!
+endif
+~
+|
+#4806
+tracker~
+the Tracker~
+An animal tracker examines a strange trail on the floor.
+~
+~
+524295 8 0 2048 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+say I think I found the way!
+else
+yell $n has found the way through!  RUN!
+endif
+~
+|
+#4807
+harlet~
+the Harlet~
+A shady Harlet leans against the wall.
+~
+This frail looking woman stares at you intently, searching you up and
+down for a full pouch of gold or other riches.  
+~
+524295 134217736 0 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if isclan($n) == 6
+smile $n
+say Hello again, $n
+else
+scream
+yell $n is going to rape me!
+endif
+~
+|
+#4808
+kolo~
+Kolo~
+Kolo, the bandit seargent stands here at ready.
+~
+~
+524295 8 0 134217728 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+emote stands up straight and salutes
+else
+laugh $n
+yell $n will never find the way in!  What fun!
+endif
+~
+|
+#4809
+final warning~
+Final Warning~
+The Final Warning for the Vendetta Bandits lies here.
+~
+~
+524291 8 4194304 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+say Enter peacefull, $n
+else
+yell $n
+endif
+~
+|
+#4810
+bloodhound~
+Bloodhound~
+A wiry bandit named Bloodhound sits here picking his teeth.
+~
+This funny looking man is short and squat, with a round face and coppery
+hair.  His front teeth protrude over his bottom lip, and he talks with a
+slight whistle in his ominous tones.  
+~
+524295 8 32768 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if isclan($n) == 6
+say Right this way, $n
+else
+say so, you've finally found it!
+yell $n is here with me, we'll sit and chat for a while!
+endif
+~
+|
+#4811
+druid slave~
+the slaving druid~
+A leafy Druid has been enslaved to service Vendetta
+~
+This skinny tree-hugger deserves to live out the rest of his life serving
+Vendetta.  We caught him relocating a tree that we need for firewood!  
+~
+2621443 128 294928 16384 0 0 S
+110 220 220 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+cry
+say I cannot take much more of this!
+say $n, put me out of this misery!
+else
+yell $n is coming to save me!  Death to Vendetta!
+endif
+~
+|
+#4812
+essefer~
+the Essefer~
+An elderly Essefer hobbles about, dusting his wares.
+~
+~
+722435 8 262144 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+say Buy this and that!
+else
+yell $n is stealing all of my goods!  ATTACK!
+endif
+~
+|
+#4813
+blood doll~
+the blood doll~
+A vile looking Blood Doll hangs from the wall.
+~
+~
+524355 8 0 0 0 0 S
+50 0 0 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isclan($n) == 6
+emote drops to its knees
+else
+scream
+yell $n!
+endif
+~
+>death_prog 100~
+emote brings another doll up from the fodder
+mpmload 4813
+~
+|
+#4814
+evil~
+Evil~
+Evil awaits your slaughter
+~
+~
+524355 0 0 0 0 -1000 S
+2 0 0 0 2d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>death_prog 100~
+emote can never die forever!
+mpmload 4814
+~
+|
+#4815
+good~
+Good~
+The Good awaits another death.
+~
+~
+524355 0 0 0 0 1000 S
+1 0 0 0 2d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>death_prog 100~
+emote will not die today!
+mpmload 4815
+~
+|
+#4816
+Joe Mollicone~
+Joe Mollicone, trusted banker.~
+Joe Mollicone, the trusted banker stands here.
+~
+~
+524289 134217736 0 0 0 0 S
+50 0 0 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#4801
+stream~
+the bubbling stream~
+A bubbling stream flows swiftly at the bottom of the gorge~
+~
+25 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4802
+waterfall cave~
+cave behind the waterfall~
+Behind the frothy waterfall you notice a small cave~
+~
+29 0 0 0 0 0 0
+4804~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4803
+pile trash~
+pile of trash~
+A stinking pile of trash covers the floor up to your knees.~
+~
+29 0 0 0 0 0 0
+4831~ 0~ 0~ 0~
+4035345 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4804
+crack~
+crack in the ceiling~
+You notice a small crack in the ceiling.~
+~
+29 0 0 0 0 0 0
+4812~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4805
+looking glass~
+looking glass~
+A tall looking-glass hangs from the wall.~
+~
+29 0 0 0 0 0 0
+4838~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4806
+healing pit~
+healing pit~
+A blanketed healing pit looks very inviting.~
+~
+29 0 0 0 0 0 0
+4801~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4807
+portal~
+shimmering portal~
+A shimmering portal leads outside.~
+~
+29 0 0 0 0 0 0
+4803~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4808
+passage~
+passage~
+The secret passage back to the caves.~
+~
+29 0 0 0 0 0 0
+4808~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4809
+path overworld~
+path~
+Here lies the path to the Overworld.~
+~
+29 0 0 0 0 0 0
+17468~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4810
+potion wellness~
+vendetta's Potion of Wellness~
+A small potion, marked "PROPERTY OF VENDETTA" lies here.~
+~
+10 805306368 131072 0 0 1 30
+100~ remove curse~ cure poison~ cure blindness~
+1 340 0
+0 0
+reserved~
+0 0
+0 0 0
+#4811
+tube blue cancellation~
+a blue translucent tube~
+A blue translucent tube of viscous liquid lies here.~
+~
+10 805306368 131072 0 0 1 30
+100~ cancellation~ cancellation~ cancellation~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#4812
+backpack vendetta~
+a backpack with the Vendetta crest~
+A backpack bearing the crest of Vendetta lies here bulging with equipment!~
+~
+15 671088644 131072 0 0 1 30
+400~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#4813
+white decanter recall~
+a white decanter~
+A strange white decanter lies here.~
+~
+10 939524096 131072 0 0 1 30
+100~ remove curse~ word of recall~ word of recall~
+1 136 0
+0 0
+reserved~
+0 0
+0 0 0
+#4814
+decanter mana~
+a decanter of mana~
+A glowing decanter of mana floats here.~
+~
+10 805306368 131072 0 0 1 30
+100~ mana~ mana~ reserved~
+1 1200 0
+0 0
+reserved~
+0 0
+0 0 0
+#4815
+potion necessity~
+vendetta's Potion of Necessity~
+The members of Vendetta can't live without this potion!~
+~
+10 805306368 131072 0 0 1 30
+100~ fly~ enhanced strength~ giant strength~
+1 480 0
+0 0
+reserved~
+0 0
+0 0 0
+#4816
+vendetta cobra light~
+vendetta's Cobra Light~
+Vendetta's secret to seeing in the dark floats here.~
+~
+1 0 0 0 0 1 30
+0~ 0~ -1~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4817
+vendetta clan shorts curbing~
+vendetta shorts of Curbing~
+A smelly pair of shorts lie here.~
+~
+9 536870912 73728 0 0 33 75
+0~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 15
+A
+19 15
+A
+24 -15
+A
+3 2
+A
+1 2
+A
+26 75
+#4819
+flesh enemy~
+the flesh of the enemy~
+The tattered flesh of Vendetta's enemy lies here~
+~
+19 0 0 0 0 1 30
+500~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4820
+milk bladder~
+a milk-bladder~
+Vendetta's favorite drink lies here.~
+~
+17 536870912 131072 0 0 1 30
+100~ 100~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4821
+path clan Vendetta~
+a path to the Vendetta~
+A path to the Vendetta. Please see HELP CLANS before entering.~
+~
+29 0 0 0 0 0 0
+4801~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4830
+portal methidoral~
+a portal to Methidoral~
+A portal is here, offering access to Methidoral.~
+~
+29 0 0 0 0 0 0
+25000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4875
+vendetta groping clan pants~
+the Vendetta pants of Groping.~
+A pair of pants HUM as they lay here on the ground.~
+~
+9 637534210 458752 0 0 33 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+2 2
+A
+19 20
+A
+18 20
+A
+24 -20
+A
+13 100
+A
+303 -1
+A
+304 -1
+#4876
+empty~
+None~
+None~
+~
+9 100663296 393216 0 0 0 0
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#4877
+vendetta clan skirt~
+a Vendetta Skirt.~
+A skirt lays here in a pile of coins.~
+~
+9 570425344 458752 0 0 33 50
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+2 2
+A
+24 -10
+A
+18 10
+A
+19 10
+A
+26 50
+#4878
+Empty~
+NONE~
+NONE~
+~
+9 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#4879
+Empty~
+NONE~
+NONE~
+~
+9 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#4801
+A thin broken trail~
+~
+~
+Winding through the forest floor is a small trail, overgrown with bushes
+and strewn with rocks.  Its seems to have last been used many years ago. 
+The air is ominously still, no birds are calling, no squirrels are
+chattering.  Something sinister is about these woods.  Your mind flashes
+back to your childhood, to stories of bandits and muggers stalking these
+woods.  Could the stories be true?  Could Vendetta still lurk within the
+darkness of this grove?  
+~
+0 537272327 3
+Rd     0
+D1
+~
+~
+0 0 4802
+S
+#4802
+A thin broken trail~
+~
+~
+You follow the trail deeper into the grove, alongside a small stream.  It
+leads into a narrow gorge surrounded by trees of many types and colors.  The
+depth of the stream seems to grow, and the speed of the water begins to
+churn.  You must ford the stream to pass any further.  To the east, you hear
+the echoing sounds of falling water, and the whistle of mist through the
+trees.  
+~
+0 537010183 3
+Rd     0
+D1
+~
+~
+512 0 4803
+D3
+~
+~
+0 0 4801
+S
+#4803
+Beside a small waterfall~
+~
+~
+You are standing beneath a large waterfall.  The mists from the falls
+envelops you in a cool cloud of haze.  Behind the waterfall, you notice
+small specks of light, torches!  There must be something behind the falls! 
+As you turn to approach, an arrow zings out from the trees and lands with a
+deep thunk at your feet.  You are being watched, and Vendetta knows you are
+here.  
+~
+0 537010182 3
+Rd     0
+D3
+~
+~
+512 0 4802
+S
+#4804
+A small cave~
+~
+~
+The small cave is only a feet meters high, and perilously slick.  Bright
+torches line the wall, smoldering up into the ceiling, coating it with a
+thick layer of black soot.  The smells of sweat and rotten food well up from
+below.  Your sense are repulsed by this foul place, what manner of person
+would actually choose to reside in such filth?  
+~
+0 537272327 0
+Rd     0
+D1
+~
+~
+0 0 4805
+S
+#4805
+An arched corridoor~
+~
+~
+Deeper into the cave, the ground slopes sharply downward.  You follow a
+ways into a large arched corridor, carved from the rock.  The ground is
+noticeably less slippery, as the dripping water channels its way down to the
+left and right of the main walkway.  The corridor leads farther down to the
+east.  
+~
+0 537305095 0
+Rd     0
+D0
+~
+~
+0 0 4806
+D3
+~
+~
+0 0 4804
+S
+#4806
+An arched corridor~
+~
+~
+You have come to a small turn in the corridor.  The distance between the
+torches is growing, and the light around you is beginning to fade.  To the
+north, you hear the faint merry voices singing and carrolling many different
+verses and tunes.  You are nearing the center of the hideout, this could be
+your chance to bring home a few bandit scalps to mother.  Wouldn't she just
+be so proud?  
+~
+0 537305095 0
+Rd     0
+D0
+~
+~
+0 0 4807
+D2
+~
+~
+0 0 4805
+S
+#4807
+An intersection of hallways~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+0 0 4810
+D1
+~
+~
+0 0 4808
+D2
+~
+~
+0 0 4806
+D3
+~
+~
+0 0 4809
+D4
+~
+~
+0 0 4811
+D5
+~
+~
+0 0 4812
+S
+#4808
+Standing Before a Grand Archway~
+~
+~
+~
+0 537305094 0
+Rd     0
+D3
+~
+~
+0 0 4807
+S
+#4809
+A dank corner of the cave~
+~
+~
+~
+0 537305094 0
+Rd     0
+D1
+~
+~
+0 0 4807
+S
+#4810
+A darkened hallway~
+~
+~
+~
+0 537272327 0
+Rd     0
+D2
+~
+~
+0 0 4807
+D4
+~
+~
+0 0 4813
+S
+#4811
+An open-aired chamber above the intersection~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+0 0 4813
+D1
+~
+~
+0 0 4816
+D2
+~
+~
+515 0 4814
+D3
+~
+~
+0 0 4815
+D5
+~
+~
+0 0 4807
+S
+#4812
+A trash pit~
+~
+~
+~
+0 537272326 0
+Rd     0
+D4
+~
+~
+0 0 4807
+S
+#4813
+A darkened Hallway~
+~
+~
+~
+0 537272327 0
+Rd     0
+D2
+~
+~
+0 0 4811
+D5
+~
+~
+0 0 4810
+S
+#4814
+The Lookout Tower~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+515 0 4811
+S
+#4815
+Western Patrol Tower~
+~
+~
+~
+0 537272326 0
+Rd     0
+D1
+~
+~
+0 0 4811
+S
+#4816
+A suspicious looking dead-end~
+~
+~
+~
+0 537272326 0
+Rd     0
+D3
+~
+~
+0 0 4811
+D4
+~
+~
+515 0 4817
+S
+#4817
+Deeper into the Vendetta Hideout~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+515 0 4818
+D5
+~
+~
+515 0 4816
+S
+#4818
+Within a rock-hewn corridor~
+~
+~
+~
+0 537272326 0
+Rd     0
+D1
+~
+~
+515 0 4819
+D2
+~
+~
+515 0 4817
+S
+#4819
+The Vendetta Hideout~
+~
+~
+~
+0 537272326 0
+Rd     0
+D3
+~
+~
+515 0 4818
+D4
+~
+~
+515 0 4820
+S
+#4820
+A narrow twisting passage~
+~
+~
+~
+0 537272326 0
+Rd     0
+D2
+~
+~
+0 0 4821
+D5
+~
+~
+515 0 4819
+S
+#4821
+A T-Intersection~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+0 0 4820
+D1
+~
+~
+0 0 4822
+D2
+~
+~
+515 0 4830
+D3
+~
+~
+3 0 4828
+S
+#4822
+A narrow hallway~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+515 0 4823
+D3
+~
+~
+0 0 4821
+S
+#4823
+A narrow Hallway~
+~
+~
+~
+0 537305094 0
+Rd     0
+D1
+~
+~
+515 0 4824
+D2
+~
+~
+515 0 4822
+S
+#4824
+~
+~
+~
+~
+0 537272327 0
+Rd     0
+D2
+~
+~
+3 0 4825
+D3
+~
+~
+515 0 4823
+S
+#4825
+Atop a Bottomless Ravine~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+3 0 4824
+D5
+~
+~
+515 0 4826
+S
+#4826
+~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+515 0 4827
+D4
+~
+~
+515 0 4825
+S
+#4827
+Dead End~
+~
+~
+~
+0 537272326 0
+Rd     0
+D2
+~
+~
+515 0 4826
+D4
+~
+~
+515 0 4832
+S
+#4828
+~
+~
+~
+~
+0 537272326 0
+Rd     0
+D1
+~
+~
+3 0 4821
+D2
+~
+~
+512 0 4829
+S
+#4829
+~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+512 0 4828
+D1
+~
+~
+515 0 4830
+S
+#4830
+~
+~
+~
+~
+0 537264132 0
+Rd     0
+D0
+~
+~
+515 0 4821
+D1
+~
+~
+515 0 4831
+D3
+~
+~
+515 0 4829
+S
+#4831
+~
+~
+~
+~
+0 40962 0
+Rd     0
+D3
+~
+~
+515 0 4830
+S
+#4832
+Within the Vendetta Hideout~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+515 0 4834
+D1
+~
+~
+515 0 4835
+D3
+~
+~
+515 0 4833
+D5
+~
+~
+515 0 4827
+S
+#4833
+Within the Vendetta Hideout~
+~
+~
+~
+0 537272326 0
+Rd     0
+D1
+~
+~
+515 0 4832
+S
+#4834
+Within the Vendetta Hideout~
+~
+~
+~
+0 537272326 0
+Rd     0
+D2
+~
+~
+515 0 4832
+S
+#4835
+Vendetta's Hideout~
+~
+~
+~
+0 537305094 0
+Rd     0
+D3
+~
+~
+515 0 4832
+D5
+~
+~
+515 0 4836
+S
+#4836
+Vendetta Hideout~
+~
+~
+~
+0 537305094 0
+Rd     0
+D2
+~
+~
+515 0 4837
+D4
+~
+~
+515 0 4835
+S
+#4837
+Vendetta Hideout~
+~
+~
+~
+0 537305094 0
+Rd     0
+D0
+~
+~
+515 0 4836
+D4
+~
+~
+515 0 4838
+S
+#4838
+Vendetta's Commons~
+~
+~
+~
+0 545660934 0
+Rd     0
+D1
+~
+~
+0 0 4841
+D3
+~
+~
+0 0 4842
+D5
+~
+~
+515 0 4837
+S
+#4839
+The Quick Escape~
+~
+~
+If you are being pursued, be a good Vendetta, and run for your life.
+ 
+Enter portal to visit the beautiful waterfall.
+Enter passage to pay homage to the Bandit Captain.
+~
+0 537272326 0
+Rd     0
+D1
+~
+~
+0 0 4840
+D2
+~
+~
+515 0 4845
+S
+#4840
+Vendetta's Cage Room~
+~
+~
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+0 0 4841
+D3
+~
+~
+0 0 4839
+S
+#4841
+Vendetta's Place of Rest~
+~
+~
+~
+0 545660938 0
+Rd     0
+D2
+~
+~
+0 0 4840
+D3
+~
+~
+0 0 4838
+S
+#4842
+Vendetta's Hall of Commerce~
+~
+~
+~
+0 612769798 0
+Rd     0
+D0
+~
+~
+3 0 4843
+D1
+~
+~
+0 0 4838
+S
+#4843
+A strange abode~
+~
+~
+~
+0 554049542 0
+Rd     0
+D1
+~
+~
+512 0 4844
+D2
+~
+~
+3 0 4842
+S
+#4844
+The Scrying Room~
+~
+~
+~
+0 537272326 0
+Rd     0
+D3
+~
+~
+512 0 4843
+S
+#4845
+Vendetta's Hidey Hole  (NYAH NYAH)~
+~
+~
+This is where all of the wimpy members of Vendetta come to hide and talk trash.
+~
+0 537272326 0
+Rd     0
+D0
+~
+~
+515 0 4839
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 4801 0 4801
+O 0 4809 0 4801
+O 0 4801 0 4802
+O 0 4802 0 4803
+M 0 4803 1 4803
+M 0 4801 1 4805
+M 0 4804 1 4808
+M 0 4802 1 4809
+O 0 4803 0 4812
+M 0 4805 1 4815
+M 0 4806 1 4821
+M 0 4808 1 4825
+M 0 4809 1 4827
+M 0 4807 1 4830
+O 0 4804 0 4831
+M 0 4810 1 4837
+M 0 4811 1 4838
+O 0 4807 0 4839
+O 0 4808 0 4839
+M 0 4813 1 4840
+M 0 4814 1 4840
+M 0 4815 1 4840
+O 0 4806 0 4841
+M 0 4812 1 4842
+G 0 4810 0
+G 0 4811 0
+G 0 4812 0
+G 0 4813 0
+G 0 4815 0
+G 0 4816 0
+G 0 4819 0
+G 0 4820 0
+O 0 4805 0 4844
+S
+
+
+
+#SHOPS
+4812 0 0 0 0 0 100 100 0 23
+0
+
+
+
+#$

@@ -1,0 +1,4543 @@
+#AREADATA
+Name        { 70-90} Daemonic Keep~
+Builders    None~
+VNUMs       15701 15800
+Security    50
+Recall      1
+Flags       256
+Version     107
+Creator     Gorsha~
+Llevel      0
+Ulevel      0
+Sounds      The wind blows carrying the cries of the dead.~
+Music       u4_dungn.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#15701
+Dungeon Knight Guard Henry~
+a Spectre of a Knight~
+The spectre of a &wKnight&P stands guard within the dungeon.
+~
+&wYou gaze upon the ghost on an ancient Knight.  His spectre has a waving
+motion as he phases in and out of this reality.  He still stands with back
+straight and a proud stare.  Even this vision of his being is brillant.  The
+battlearmor is a brillant shiny silver that shines with a bright light even
+from the realm of the dead.  This spectre of his former self hovers off the
+ground.  You can only imagine what a sight he must have been in life.  
+~
+8259 622722 48 0 0 250 S
+95 1 190 190 27000 27000d0+0 0d0+95000
+950 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if sex($n) == 2
+bow $n
+say How are you, m'lady?
+emote gently kisses your hand.
+else
+bow $n
+endif
+endif
+~
+>speech_prog Gunther~
+if ispc($n)
+say Please don't mention that name! Gunther was destroyed
+say that fateful night. His body and mind may have
+say survived but his spirit was corrupted and killed by
+say that demon.
+endif
+~
+>speech_prog Fateful Night~
+if ispc($n)
+say The night he burned his castle to gain favor of
+say that foul demon.  He even attempted to kill his family
+say in that fire. Poor lil' Katy. Kathryn was only
+say 3 years old.
+endif
+~
+>speech_prog fire~
+if ispc($n)
+say He poored alcohol all over the throne room and
+say the main hallway. The fire quickly ravaged the
+say majority of the castle. His family was trapped
+say upstairs in their rooms. If Sarah wouldn't have
+say showed up, then his wife Natasha and son Thomas
+say would not have survived.
+endif
+~
+>speech_prog demon~
+if ispc($n)
+say A demon named Gier. I know not much about this foul
+say creature. But I do know that m'lord would have never
+say done such cruel acts before he began to worship him.
+endif
+~
+>speech_prog Kathryn Katy~
+if ispc($n)
+say Oh God, what did he do!!  Katy was only 3 years
+say of age.  Sarah never made it back up to save her.
+say Katy died in her room in the fire.
+cry
+say Why didn't I see the signs of change in him and
+say stop him before all this happened.
+endif
+~
+>speech_prog change~
+if ispc($n)
+say M'lord Gunther started to become greedy and selfish.
+say To the point of blocking out everyone around him.
+endif
+~
+>speech_prog Sarah~
+if ispc($n)
+say She was Natasha's stable hand. When she heard the
+say fire, she took off into the castle. She got
+say Natasha and Thomas out but was capture by m'lord before
+say she could get Katy. Gunther threw her into a cell
+say here in the dungeon.
+endif
+~
+>speech_prog cell dungeon~
+if ispc($n)
+say Gunther told everyone that Sarah started the fire. He
+say tossed her down here to rot till death. He bound me by
+say Knight's Oath to never release her until his death.
+endif
+~
+>speech_prog Knight Oath~
+if ispc($n)
+say I am bound for life to uphold my word. It is unbreakable
+say even in death.
+endif
+~
+>speech_prog treasure~
+if ispc($n)
+say Gunther never told me where lies the castle treasury.
+say I do know that only two other people know of the room.
+say Dashel, the guard at the castle doors, helped Gunther
+say move the treasure that survived the fire. And Sarah
+say who told me during her imprisonment, that she ran into
+say it while trying to escape Gunther.
+endif
+~
+>fight_prog 35~
+stun $n
+~
+>speech_prog Gier~
+if ispc($n)
+say I do not know anything of this demon except that it is evil.
+endif
+~
+>speech_prog act acts~
+if ispc($n)
+say Such as burning his family. He let his daughter die
+say in that fire. When he captured Sarah with Natasha and
+say Thomas, he threw his wife and son into the stables and
+say finished what he started. I can still hear their cries in
+say my sleep.
+endif
+~
+>speech_prog hi hey whatup whatsup hello~
+if ispc($n)
+if sex($n) == 1
+say Hi! How are you today, m'lord?
+else
+break;
+if sex($n) == 2
+say How are you today, m'lady?
+bow $n
+else
+break;
+eyebrow $n
+say Not male or female?
+say We did not have ones such as you in my day.
+say But I hope thee a fare day.
+endif
+endif
+endif
+~
+>speech_prog Natasha Thomas~
+if ispc($n)
+say Please, don't! Their memory haunts for eternity.
+say Just let them rest in peace, there is no need
+say bring them up.
+endif
+~
+>speech_prog fine good ok okay alright~
+if ispc($n)
+say Thats great!
+endif
+~
+>speech_prog bad pitiful crappy~
+if ispc($n)
+say Thats too bad.
+comfort $n
+endif
+~
+>death_prog 99~
+say Thank you for setting my soul to rest.
+mpecho A spirit leaves the body and vanishes.
+mpoload 15717
+~
+>fight_prog 80~
+if isaffected($n)& 6
+hump $n
+endif
+~
+|
+#15702
+Dungeon Knight Guard Dashel~
+a Spectre of a Knight~
+The spectre of a &wKnight&P stands guard by the castle doors.
+~
+&wYou gaze upon the ghost of an ancient Knight.  His spectre has a waving
+motion as he phases in and out of this reality.  He still stands with his
+back straight and a proud stare.  Even this vision of his being is brillant.
+The battlearmor is a brillant shiny silver that shines with a bright light
+even from the realm of the dead.  This spectre of his former self hovers off
+the ground.  You can only imagine what a sight he must have been in life.  
+~
+8259 623274 32 0 0 250 S
+95 1 190 190 27000 27000d0+0 0d0+95000
+950 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if sex($n) == 2
+bow $n
+say How are you, m'lady?
+emote gently kisses your hand.
+else
+bow $n
+endif
+endif
+~
+>speech_prog hi hey whatup whatsup hello~
+if ispc($n)
+if sex($n) == 1
+say Hi! How are you today, m'lord?
+else
+break;
+if sex($n) == 2
+say How are you today, m'lady?
+bow $n
+else
+break;
+eyebrow $n
+say You are not a male or female?
+say How can this be?
+say Hmmm, either way, I bid thee a good day.
+endif
+endif
+endif
+~
+>speech_prog fine good ok okay alright~
+if ispc($n)
+say Thats great!
+endif
+~
+>speech_prog bad pitiful crappy~
+if ispc($n)
+say Thats too bad.
+comfort $n
+endif
+~
+>speech_prog treasure treasury~
+if ispc($n)
+say Yes, I do know the location of the treasury. It in
+say a room hidden deep beneath the castle. There are
+say only two ways in. Gunther knew a spell that teleported
+say himself and anyone with him to the room.  And 
+say Sarah found another while trying to escape. Where it
+say is, I do not know. The secret died with her.
+endif
+~
+>speech_prog Gier demon~
+if ispc($n)
+say I know a little of this demon. He comes from some
+say other realm which is filled with evil. It all started
+say after m'lord found some old tome during his travels.
+say Gier heard of Gunther's worship and started to slowly
+say infect him with greed. I know not a way to stop this
+say demon or how to even slow him down. Once he broke
+say through to this world, he destroyed all of us
+say who were left in the castle.  Even Gunther was killed
+say once the demon needed no longer.
+endif
+~
+>speech_prog Katy Kathryn~
+if ispc($n)
+say She was a lovely child. It is a great shame upon
+say us all who let her die that night.
+endif
+~
+>speech_prog Gunther~
+if ispc($n)
+say He was once a great Knight of the realm. But that
+say blasted book changed everything. Before that, he
+say was known by everyone in the castle and village as
+say a protector of all that is good and right.
+emote stares off to the distance for a second.
+say I miss those days.
+endif
+~
+>speech_prog book tome~
+if ispc($n)
+say An ancient and vile book that must have been written
+say by the evil demon itself. I know nothing of it's origins
+say or what is written within it's pages but I do warn
+say thee to burn it if you happen to find it.
+endif
+~
+>speech_prog Natasha wife~
+if ispc($n)
+say She was definitely the finest beauty of the land. Women
+say would always try to copy her hair or fashion so that they too
+say could be like her. Out of everything in this world, she
+say loved horses. Used to always ride them in the forest.
+endif
+~
+>speech_prog Thomas son boy~
+if ispc($n)
+say Thomas was just like his father. Always full of energy
+say and willing all those in need. He used to play in
+say this very courtyard with his toy soldiers. I do
+say believe that he would have make a great Knight.
+endif
+~
+>speech_prog Knight Oath~
+if ispc($n)
+say I was deemed a Knight of the land by Gunther himself.
+say One must show brillance during battle and a capable mind 
+say in and out of war. We are bound by our Knight Oath
+say to uphold all that is right and to follow orders till
+say death.
+endif
+~
+>fight_prog 35~
+stun $n
+~
+>speech_prog fire~
+if ispc($n)
+say Gunther covered the main hallway and the throne room
+say with alcohol and then started the fire. The fire
+say quickly destroyed the majority of the castle.
+say Poor Kathryn died in those flames.
+endif
+~
+>speech_prog Sarah~
+if ispc($n)
+say All I know of her is that she used to work as
+say Natasha's stable hand. Gunther blamed her for
+say the fire and threw her in the dungeon.
+endif
+~
+>speech_prog dungeon~
+if ispc($n)
+say The dungeon is under the castle. I bound by my Oath
+say not to tell you anymore of the castle layout in fear
+say of treachery.
+endif
+~
+|
+#15703
+Prison Guard~
+a Guard~
+A guard continues it's duty in the prison halls.
+~
+This undead form of one of the castle's guard is still continues it's
+duties.  It is now almost a walking skeleton after age has rotted away most
+of it's armor.  A couple pieces of cloth still flap off it's shoulder.  As
+it turns to look at you, a dim glow comes from it's eye sockets.  
+~
+8257 269058730 0 0 0 333 S
+90 1 180 180 25000 25000d0+0 0d0+90000
+900 0 0
+0 0 1
+3 0 0
+>entry_prog 100~
+mpecho The air has suddenly become much colder.
+~
+>fight_prog 20~
+if ispc($n)
+emote starts to use one hand to poke your eyes.
+gouge $n
+endif
+~
+|
+#15704
+Prisoner Ghost~
+a Ghost~
+&cThe ghost of a prisoner still haunts this cell.
+~
+The form is too unstable and the vision fluxuates between life and death.  
+~
+8259 639658 0 0 0 0 S
+95 1 190 190 27000 27000d0+0 0d0+95000
+950 0 0
+0 0 0
+3 0 0
+#15705
+Servant~
+a Servant~
+&WA servant looks to be wandering aimlessly.
+~
+The servant is wrapped in a white rope that reaches down to the ground. 
+The skin of this creature has long since decayed so that only the white bone
+can be seen inside the robe.  The servant appears lost as it randomly
+changed direction and sometimes bumps into a wall before changing it's
+route.  
+~
+8257 558720 0 0 0 0 S
+95 1 190 190 23150 23150d0+0 0d0+95000
+950 0 0
+0 0 0
+3 0 0
+>fight_prog 35~
+emote starts to flail it's arms about randomly.
+~
+|
+#15706
+Knight General Gunther~
+Gunther~
+&bGunther stands ready to battle any who oppose him.
+~
+Gunther stands ready with his blade in his hands.  A black cape hangs
+from his shoulders almost reaching the ground.  His armor looks to have been
+at one time in magnificant shape.  There are burn and scratch marks all over
+his armor.  The breastplate is severely dented and damaged.  As you look up
+into his face, you grimace in disgust as half his face has been savagely
+burned.  His face is full of rage and he starts to look upon you with
+impatience.  
+~
+67 369721986 16 0 0 -1000 S
+98 1 196 196 14800 14800d0+0 0d0+98000
+980 0 0
+0 0 1
+3 0 0
+>fight_prog 35~
+stun $n
+~
+>fight_prog 25~
+bk $n
+~
+>all_greet_prog 100~
+if ispc($n)
+say You think you can beat me?
+cackle
+mpecho Suddenly Gunther's body twitches....
+say Help me! Please help me escape this hell.
+mpecho Gunther's face becomes rigid as his body twitches again.
+endif
+~
+>speech_prog hell~
+if ispc($n)
+mpecho A change comes over Gunther's face.
+say The demon, it is inside me. I can feel it.
+say Hopefully my family rests in peace. If you see them
+say give them this.
+mpoload 15732
+give emblem $n
+mpecho A dim red glow comes over his eyes as the demon
+mpecho takes over again.
+mpkill $n
+endif
+~
+>death_prog 100~
+mpecho Gunther falls back hard against the door.
+mpecho You hear a loud crack as his body hits the door.
+mpasound A loud crash echos throughout the castle.
+mpoload 15733
+~
+>speech_prog here~
+if number($n) == 15749
+mpoload 15702
+mpoload 15705
+mpoload 15708
+mpoload 15709
+wear all
+endif
+~
+|
+#15707
+Natasha~
+Natasha~
+&CNatasha holds a little boy close to her side.
+~
+A young woman is dressed in a beautiful, soft dress.  The edges of the
+dress have become dirty and tattered from sliding across the ground.  She
+looks extremely tired as she brushed her hair out of her face.  A little boy
+stands at her side holding to her dress.  He looks frightened and tries to
+hide behind his mother when you approach.  She only pats his head and gives
+you a small smile.  
+~
+8259 590338 32784 524288 0 1000 S
+91 1 182 182 25400 25400d0+0 0d0+91000
+910 0 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+mpecho Thomas moves closer to his mother.
+smile $n
+endif
+~
+>speech_prog daddy~
+if ispc($n)
+say Sir Gunther von Berg, Knight of this land. He is,
+say or should say was, the greatest Knight of the land.
+say That was until things changed. His behavior,
+say attitude, everything. He was such a good man. Why
+say did he change?
+endif
+~
+>speech_prog change~
+if ispc($n)
+say I have no idea. Maybe Henry would know. Henry was the
+say dungeon supervisor during times of peace and
+say Gunther's closest friend. He may know more than I.
+mpforce thomas say Daddy!
+say Daddy is gone, Thomas.
+emote moves back to the corner and straightens Thomas' hair.
+endif
+~
+>speech_prog sarah~
+if ispc($n)
+say Sarah was always so sweet to me and the kids. She
+say helped get Thomas and I out of the castle. Gunther
+say caught us in the courtyard. He tossed us in here
+say then set fire to the stables. What happened to Sarah
+say I have no idea.
+endif
+~
+>speech_prog dungeon cell~
+if ispc($n)
+say He locked her up in there? How horrible. That means
+say poor Katy never made it out.
+cry
+say Hopefully her spirit is at rest.
+endif
+~
+>speech_prog dollhouse~
+if ispc($n)
+say The light is still on? Her spirit must be hiding within.
+say Please, help her find peace. She used to love flowers
+say if that can help any.
+endif
+~
+>speech_prog dashel~
+if ispc($n)
+say He used to guard the castle doors. I didn't know
+say him very well.
+endif
+~
+>speech_prog henry~
+if ispc($n)
+say He used to supervisor the dungeon during times of
+say peace. During war, he was Gunther's advisor.
+say They were best of friends.
+endif
+~
+>speech_prog Katy Kathryn~
+if ispc($n)
+say She is my little baby. She was only 3 years old.
+say She had this beautiful teddy bear that she carried
+say everywhere.
+sniff
+endif
+~
+>give_prog Emblem Coat Arms~
+if ispc($n)
+say This is Gunther's. Have you seen him? Oh, I am so
+say happy. This must mean the demon hasn't completely
+say taken control. Here maybe this can help.
+mpmload 15748
+mpforce $n say wow
+say Once my husband was good, now that good
+say shall help you.
+mpjunk emblem
+endif
+~
+>give_prog Teddy Bear~
+if ispc($n)
+say I hope her spirit has now found peace.
+mpoload 15748
+give tear $n
+endif
+~
+|
+#15708
+Thomas~
+Thomas~
+Thomas stays near his mother.
+~
+Thomas is dressed in tathered rags.  Much of his clothes have been burned
+and so torn off.  His pants have been ripped off right below the knee to
+create a pair of shorts.  His shirt clings to his skin since it is so dirty.
+Dirt covers Thomas' face with only small lines of cleanliness from tracks of
+tears.  
+~
+8259 131072 16 0 0 1000 S
+90 1 180 180 18000 18000d0+0 0d0+90000
+900 0 0
+0 0 1
+3 0 0
+>rand_prog 20~
+emote starts to tug at his mother's dress.
+~
+|
+#15709
+Kathryn Katy~
+Katy~
+&WKathryn is playing with her hair.
+~
+Katy is wearing a white dress with colorful flowers around the sleeves. 
+She beams an inner radiance that you have rarely seen.  She giggles as she
+starts to pet her teddy bear's head.  
+~
+67 67633896 0 0 0 1000 S
+90 1 180 180 17500 17500d0+0 0d0+90000
+900 0 0
+0 0 2
+3 0 0
+>rand_prog 20~
+giggle
+~
+>rand_prog 10~
+mpgoto 15748
+mpecho The vision of Katy starts to vanish.
+mppurge $i
+~
+>give_prog Flower Tulip~
+if ispc($n)
+mpecho Katy's eyes get larger as a smile comes across her face.
+mpoload 15741
+drop teddy
+mpecho &WThe vision of Katy starts to vanish.
+mppurge $i
+endif
+~
+|
+#15710
+Sarah Young Woman~
+Sarah~
+&WA vision of a young woman fluxuates in front of you.
+~
+A girl who appears to have been in her twenties when she died.  She has
+her hair back in a single braid which reaches down the middle of her back. 
+From the look in her face, Sarah looks extremely tired.  A deep scar lines
+the right side of her face from ear to jaw.  Every few minutes she looks
+back over her shoulder and grimaces yet you don't see anything behind. 
+Tears start to form in the corner of her eyes.  
+~
+8259 524480 48 0 0 1000 S
+97 1 194 194 20200 20200d0+0 0d0+97000
+970 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+curtsey $n
+say I am glad to hear the lock click. It has been
+say too long since I've seen daylight. Did Gunther
+say finally realize his mistake and sign my release?
+endif
+~
+>speech_prog mistake release~
+if ispc($n)
+say I still don't understand why I was locked up.
+say He accused me of trying to kill his family.
+say He was acting mighty strange that day.
+say He must have been really tired because his
+say eyes had a dim red glow. Must have been
+say the worst case of bloodshot eyes that I've
+say ever seen.
+endif
+~
+>speech_prog strange~
+if ispc($n)
+say Those last couple weeks leading up to that day were
+say really strange. M'lord was edgy and mean. He had
+say cut the pay of his staff by more than half.
+say He was hoarding his treasure in his treasury. And
+say he began to become very mean spirited towards
+say everyone.
+endif
+~
+>speech_prog family~
+if ispc($n)
+say Gunther, Natasha, Thomas, and Kathryn were the
+say perfect family. They were almost always together.
+say They would go riding in the forest every Saturday.
+say They were just lovely.
+endif
+~
+>speech_prog Gunther~
+if ispc($n)
+say Gunther was the greatest Knight of the land.
+say The people of the surrounding area loved him for his fair
+say and just leadership. I still don't know why he had
+say such a swift switch in moods.
+endif
+~
+>speech_prog Natasha~
+if ispc($n)
+say Natasha love horses. That is how I met her.
+say She would come to the stables for her horse almost
+say daily. She invited me out for every ride. We
+say would talk of the latest fashions or trend.
+say One of the most gentle spirits I've ever known.
+endif
+~
+>speech_prog Thomas~
+if ispc($n)
+say Thomas is only 5 years old. He looked up to his 
+say father so much. Thomas has a toy soldier for everyone
+say of his father's Knights. I was barely able to get
+say him of his room during that fire. I'm glad his
+say mother was there to talk him out of his fear.
+endif
+~
+>speech_prog Katy Kathryn~
+if ispc($n)
+say Katy looks just like her mother. She has the cutest
+say curls in her hair. After Gunther found Nat, Thom,
+say and I in the courtyard, he said that he would go
+say take care of Katy. Hopefully he got her out
+say of the fire.
+endif
+~
+>speech_prog fire~
+if ispc($n)
+say The fire did what? There isn't anyone around?
+say That can't be. I'm sure Gunther just got everyone
+say out of the castle in case the fire spread.
+say He wouldn't let his family burn in the flames.
+say He isn't that kind of person.
+emote begins to look really nervous.
+endif
+~
+>speech_prog dollhouse~
+if ispc($n)
+say Oh my! Katy died in the fire?
+cry
+cry
+say She loved that dollhouse. Sometimes a spirit
+say will stay in it's place of death until it
+say can be released from it's curse.
+say If you can find a way to release her spirit
+say from this world, everything will be as it should.
+mpgoto 15748
+mpmload 15709
+mpgoto 15710
+endif
+~
+|
+#15711
+Demon Gier~
+Gier~
+&rThe demon Gier glares at you for trespassing.
+~
+A brillant light shines from the being in front of you.  A form which
+looks to be that close to a human stands within the light.  The light sends
+out an intense heat into the room.  As you move further into the room, you
+can make out more of the demon.  It may have been human at one time but now
+is only a faint image of one.  The face has been wiped clean of skin and is
+just the skull.  A dark redish glow comes from within the sockets.  The rest
+of the body is twisted and distorted with insects seeping out cuts in the
+skin.  As it moves to intersect you, pieces of flesh and a couple insects
+fall from it to only be burnt from the light.  
+~
+67 436207744 32784 2048 2 -1000 S
+102 1 204 204 15086 15086d0+0 0d0+102000
+1020 0 0
+0 0 0
+3 0 0
+>death_prog 100~
+if rand(80)
+mpgoto 15738
+mppurge crack
+mpgoto 15740
+mpoload 15747
+else
+mpecho &rThe remains of the demon start to swirl around and
+mpecho start to compact into an object.
+mpecho An object drops to the ground.
+mpoload 15747
+mpoload 15745
+drop coin
+mpgoto 15738
+mppurge crack
+mpgoto 15740
+endif
+~
+>fight_prog 35~
+stun
+~
+>fight_prog 10~
+dim
+~
+>fight_prog 5~
+cast 'fire breath' $n
+~
+|
+#15712
+Antikan Man~
+Antikan~
+A man works on the village walkway.
+~
+Beads of sweat form along the brow of this repairman.  He continues to
+pound down on some nails in the walkway.  When he is done with one plank, he
+grabs another off the stack to the side and moves along the walkway.  His
+short brown hair sticks to his head as he starts to sweat more.  The sleeves
+of his shirt are rolled up above his elbows and streaks of dirt line his
+arms.  
+~
+67 128 32 0 0 1000 S
+88 1 176 176 27500 27500d0+0 0d0+88000
+880 0 0
+0 0 1
+3 0 0
+>speech_prog curse~
+if ispc($n)
+say How do you know of the curse? Anyway, just leave while
+say you can. Nobody ever returns from the castle.
+endif
+~
+>speech_prog castle~
+if ispc($n)
+say What castle?
+chuckle
+say The cursed one to the north. Sir Gunther's home at
+say one time. That has been a deserted fortress for a long
+say time.
+endif
+~
+>speech_prog Gunther~
+if ispc($n)
+say He was one of the purest and greatest Knights to
+say ever live. My father used to tell me stories of his deeds.
+endif
+~
+>speech_prog father~
+if ispc($n)
+say My father was a good man. He told me stories of
+say exciting adventure when I was just a lad. A relative
+say of mine was a Knight under Gunther centuries ago.
+say The stories have been passed down over the years.
+endif
+~
+>speech_prog story stories~
+if ispc($n)
+say They were wonderful stories of Gunther and his travels.
+say Course Gwen always tries to ruin my spirit with her lies.
+endif
+~
+>speech_prog Gwen~
+if ispc($n)
+say She sells armor on the west side of the village. She
+say and I play cards every once in awhile.
+endif
+~
+>speech_prog cards~
+if ispc($n)
+eyebrow $n
+say If you don't know what cards are, then you are
+say beyond my help.
+snicker
+endif
+~
+>speech_prog lies lie~
+if ispc($n)
+say She says that Gunther is the reason for the curse.
+say But she just does it to irritate me.
+endif
+~
+>speech_prog Jonathan~
+if ispc($n)
+say Jonathan sells weapons and such over near Gwen.
+endif
+~
+>speech_prog Kanin~
+if ispc($n)
+rofl
+say Kanin is a riot. He is always clowning around whenever
+say possible. Its too bad he always reaks of the foul
+say cauldron of his.
+endif
+~
+>speech_prog Briag Mayor~
+if ispc($n)
+say Briag does a decent job as mayor of this village.
+say I wish he wouldn't play off these people's fears
+say of the forest for his own gain. Sometimes he
+say spooks me. Especially when he is around the
+say Loremaster.
+endif
+~
+>speech_prog Loremaster~
+if ispc($n)
+say I know nothing of him. He has been in the village
+say for a few years. He seems honest enough. Spends
+say too much in that book of his though. Surprised
+say he hasn't gone blind from squinting so much.
+endif
+~
+>speech_prog forest~
+if ispc($n)
+say The forest is below this village. You probably
+say came through it to get here. I don't go down there
+say for long, just long enough to get to another part
+say of the village.
+endif
+~
+>all_greet_prog 100~
+if ispc($n)
+mpecho Antikan pauses from his work for a second to take
+mpecho a look at you before continuing.
+endif
+~
+|
+#15713
+Jonathan~
+Jonathan~
+Jonathan inspects one of his blades.
+~
+Jonathan is wearing a casual shirt which is untucked.  His baggy, green
+pants flap from the wind as you enter the shop.  He is a man of enormous
+size as his biceps are the size of large melons.  You can sense the spirit
+of a warrior within this body and should try not to invoke his wrath.  
+~
+67 128 32 0 0 0 S
+88 1 176 176 27500 27500d0+0 0d0+88000
+880 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Type &RLIST&W to see if there is anything you like.
+endif
+~
+>speech_prog Gwen~
+if ispc($n)
+say Gwen is a sweet girl. I just hope she doesn't have
+say to learn the hard way that throwing yourself head
+say first into a situation is not always the best way.
+endif
+~
+>speech_prog Briag~
+if ispc($n)
+say I've met him once but don't know much about him.
+endif
+~
+>speech_prog loremaster~
+if ispc($n)
+say When he first arrived in the village, we used to
+say talk about things. Mostly the forest and castle.
+say He has this book bout a demon, demons, some such
+say nonsense. Haven't spent any time with him lately.
+say If you want to see him, you can find him in the
+say Council Chambers.
+endif
+~
+>speech_prog Antikan~
+if ispc($n)
+say He is probably around town doing repairs.
+endif
+~
+>speech_prog kanin~
+if ispc($n)
+chuckle
+say Just the sight of that guy makes me chuckle.
+endif
+~
+>speech_prog castle~
+if ispc($n)
+say The castle is north of the forest. I've never gone up
+say there so couldn't tell you anything.
+endif
+~
+>speech_prog curse~
+if ispc($n)
+say I never used to believe in curses but this place....
+endif
+~
+|
+#15714
+Gwen~
+Gwen~
+Gwen stands behind the glass counter.
+~
+Gwen is wearing half a set of leather armor.  Her leather leggings look
+really worn from many battles.  Several scars have been left upon her arms
+as reminders of close calls.  She is wearing a large blue robe which hangs
+down to her ankles covering most her body.  She gives you a look to either
+get a move on it or leave.  
+~
+67 192 16 256 0 0 S
+88 1 176 176 27500 27500d0+0 0d0+88000
+880 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+say How may I help you today?
+say Type &RLIST&W to see what I have in stock.
+else
+say Sorry, your order hasn't come in yet.
+push $n south
+endif
+~
+>speech_prog Antikan~
+if ispc($n)
+say We play cards on my days off from work. He isn't too
+say bad. He has these grand notions of all that is
+say good. I just tell him what I've heard. Rumors spread
+say fast and usually are based in some truth.
+endif
+~
+>speech_prog rumors~
+if ispc($n)
+say I've heard that Gunther was responsible for the curse.
+say Stories of huge armies, suicide, demons, magic, and
+say a dozen others. If any of them are true, I wouldn't
+say know. All I know is that nobody in this village knows.
+say Everyone is too scared to get even close to the castle.
+say The Loremaster in the Council Chambers would be a
+say better person to ask.
+endif
+~
+>speech_prog jonathan~
+if ispc($n)
+say Jonathan is next door to the west. He tries to
+say act tough but he's just a softie once you get to
+say know him.
+wink $n
+endif
+~
+>speech_prog kanin~
+if ispc($n)
+say He has come to the card games a couple times.
+say I really don't know much about him but he is good
+say for a laugh every so often.
+endif
+~
+>speech_prog loremaster~
+if ispc($n)
+say He seems real knowledgable bout the ways of the
+say world. We don't have much in common so we don't
+say talk much. He is too much into some book of his.
+say He can usually be found in the Council Chambers.
+endif
+~
+>speech_prog Briag mayor~
+if ispc($n)
+say I'd rather not speak of him. We don't get along
+say very well. He likes to use words and fear to hold
+say his power. I hold much more respect to those who
+say earn it with their steel and blood.
+endif
+~
+>speech_prog castle~
+if ispc($n)
+say I went up the front gate once. Couldn't get in though.
+shrug
+say Maybe someday I'll close the shop up for a day and
+say look to see what the fuss is about.
+endif
+~
+>speech_prog curse~
+if ispc($n)
+say I don't care for curses. I don't like things
+say I can't fight.
+endif
+~
+|
+#15715
+Kanin Man~
+Kanin~
+A man stirs the cauldron behind the booth.
+~
+A tall, pointy hat rests on his head.  The hat shades the face from view.
+Of course, the splotchy polka dots around the hat make it hard to
+concentrate on his face.  He is wearing purple robe that comes as far as his
+knees.  In his one hand he holds a book while stirring the cauldron with his
+other hand.  You can hear him muttering to himself, "What page was that
+recipe on....."  
+~
+67 128 524304 0 0 0 S
+89 1 178 178 27900 27900d0+0 0d0+89000
+890 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+smirk
+say How are you today? I have all one needs to
+say survive this forest.
+else
+emote almost drops his book into the cauldron.
+swear
+point $n
+say What are you doing? Can't you see I'm busy.
+endif
+~
+>speech_prog forest~
+if ispc($n)
+laugh
+say The forest? You don't know about the forest? Hmmm,
+say the mayor does try to hide everything. Well,
+say it is cursed, AND of course to survive, you need
+say to buy one of my concoctions.
+grin
+endif
+~
+>speech_prog Briag mayor~
+if ispc($n)
+say He plays on the fears of the villagers to stay in power.
+say Don't care for the tactic myself.
+shrug
+endif
+~
+>speech_prog curse~
+if ispc($n)
+say Ever since the destruction of the castle, the
+say forest has been cursed. That is why the village
+say is in the trees now. Antikan might know more.
+endif
+~
+>speech_prog Antikan~
+if ispc($n)
+say He is the lone relative of any of the castle guards.
+say He's the village repairman. You can probably
+say find him working somewhere.
+endif
+~
+>speech_prog castle~
+if ispc($n)
+say It is north of the forest.
+endif
+~
+>speech_prog Gwen~
+if ispc($n)
+say She runs the local armory. A lil' headstrong
+say but sweet lass.
+endif
+~
+>speech_prog Jonathan~
+if ispc($n)
+say Jonathan is in the weapon shop next door to Gwen.
+say One of the fiercest fighters I've ever seen
+say but lacking a bit upstairs, if ya get my drift.
+emote makes a twirling motion with his finger next to his head.
+endif
+~
+>speech_prog Loremaster~
+if ispc($n)
+say Ahh, a reclusive figure. Or at least to me he is.
+say He just arrived here not long ago so I haven't
+say really gotten a chance to know him.
+endif
+~
+|
+#15716
+Briag Mayor~
+Briag~
+Briag walks around shaking everyone's hands.
+~
+The mayor of the village is of medium build.  He has gotten a nice tan
+from being up here above the trees.  Other than that, you would think he
+does not get out much.  There are no scars of any kind on his body and there
+are no premature signs of aging on his face.  
+~
+65 128 262160 0 0 0 S
+85 1 170 170 26300 26300d0+0 0d0+85000
+850 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+shake $n
+say Welcome to our village!
+say We don't get many visitors.
+else
+shake $n
+endif
+~
+>speech_prog village~
+if ispc($n)
+say This is one of the few villages of the world built
+say on the treetops.
+endif
+~
+>speech_prog visitor visitors~
+if ispc($n)
+say Oh! Uhh..
+emote looks around uncomfortably.
+say They just don't come through the forest anymore.
+say Ya know, what can ya do?
+emote gives you a sly grin.
+endif
+~
+>speech_prog forest~
+if ispc($n)
+say Uhh, must be the grass. It can get real itchy.
+say We don't get down often to keep it cut. Anyway,
+say welcome and I hope you enjoy your stay.
+endif
+~
+>speech_prog Gwen Antikan Jonathan Kanin~
+if ispc($n)
+say Who? Not sure.
+shrug
+say You can understand, all these people. It can
+say be hard to keep track of names.
+emote moves off to shake hands with a passer-by.
+endif
+~
+>speech_prog Loremaster~
+if ispc($n)
+say A real fascinating guy. He knows a lot
+say bout ancient lore and such. Especially demons
+say and such.
+endif
+~
+|
+#15717
+Boy~
+a boy~
+A boy runs around the village.
+~
+A young boy who must be around 10 years old.  His clothes are coated in
+dirt from playing.  You try your hardest to find a clean spot on the kid but
+it is nearly impossible.  
+~
+65 0 0 0 0 0 S
+84 1 168 168 32000 32000d0+0 0d0+84000
+840 0 0
+0 0 1
+3 0 0
+#15718
+Girl~
+A girl~
+A girl skips down the walkway.
+~
+A little girl in a light pink dress skips along the edge of the walkway.  
+~
+65 0 0 0 0 0 S
+84 1 168 168 32000 32000d0+0 0d0+84000
+840 0 0
+0 0 2
+3 0 0
+#15741
+Citizen~
+a Citizen~
+One of the village's citizen strolls along.
+~
+A citizen easily strolls along the walkway looking at the scenery.  
+~
+65 0 0 0 0 0 S
+87 1 174 174 33500 33500d0+0 0d0+87000
+870 0 0
+0 0 0
+3 0 0
+#15742
+Squirrel~
+a Squirrel~
+A squirrel runs up the side of a tree.
+~
+A squirrel with a short coat of brown fur.  It's claws are very tiny and
+look no bigger than a fingernail.  It's big brown eyes scan the area before
+it darts up the tree.  
+~
+65 0 0 0 0 0 S
+82 1 164 164 31000 31000d0+0 0d0+82000
+820 0 0
+0 0 0
+3 0 0
+#15743
+Raven~
+a Raven~
+A raven has perched itself in a tree.
+~
+&zA raven with dark, slick black feathers.  It's yellow beak is even
+faded and doesn't help brighten the bird up.  As it sits there, it lets out
+a high pitched call.  
+~
+65 524288 0 0 0 0 S
+83 1 166 166 31500 31500d0+0 0d0+83000
+830 0 0
+0 0 0
+3 0 0
+#15746
+Loremaster~
+the Loremaster~
+&pThe loremaster walks aimlessly with his head in a book.
+~
+The loremaster is drapped in long, dark robes that drag on the floor
+behind him.  The edges of the sleeves are stained in ink.  As he reads more
+and more, he is bound to dip his robe into a wet ink spot.  
+~
+65 67108992 0 0 0 0 S
+85 1 170 170 26000 26000d0+0 0d0+85000
+850 0 0
+0 0 1
+3 0 0
+>speech_prog curse~
+if ispc($n)
+say The castle to the north is indeed cursed. From what
+say I've been able to find out, Gunther and some demon
+say are responsible. I am still reading a book I found
+say in some castle wreckage decades ago.
+endif
+~
+>speech_prog book~
+if ispc($n)
+say Not sure what it is but it talks of some demon
+say and ways to bring him to this world. Really
+say strange stuff. Only the castle knows the truth nowadays.
+endif
+~
+>speech_prog castle~
+if ispc($n)
+say It is to the north of the forest.
+say Nobody has ever returned.
+endif
+~
+>speech_prog Gunther~
+if ispc($n)
+say A Knight of old. He was the last resident
+say of the nearby castle.
+endif
+~
+>speech_prog Gwen Jonathan Antikan Kanin~
+if ispc($n)
+think
+say That name sounds familiar but I do not
+say remember from where. Perhaps one of the villagers.
+endif
+~
+>speech_prog Briag Mayor~
+if ispc($n)
+say Briag is a good mayor. He keeps the citizens
+say from doing anything rash. Plus he lets me
+say have first glance at anything that comes
+say from the castle, forest, or even the village.
+endif
+~
+>give_prog Demon Coin~
+if ispc($n)
+if rand(90)
+say Wow! Where did you ever find this?
+say Nevermind, I don't want to know. Thank you!!
+bow $n
+mpjunk coin
+else
+say Wow! Where did you ever find this?
+say Nevermind, I don't want to know. Thank you!!
+say I've looked through this many times and have
+say found all that I need. You can have it now.
+mpjunk coin
+mpoload 15746
+give tome $n
+endif
+endif
+~
+|
+#15747
+Deer~
+a deer~
+&OA deer nibbles on a bush.
+~
+A brown deer with several white spots on it's coat.  It is currently
+chewing some leaves from one of the bushes.  
+~
+65 0 0 0 0 0 S
+83 1 166 166 31500 31500d0+0 0d0+83000
+830 0 0
+0 0 0
+3 0 0
+#15748
+Gunther Soul~
+the Soul of Gunther~
+The soul of Gunther examines the world around him.
+~
+&WGunther's soul was once the epitomy of good.  Since you have helped
+ease his pain, even the demon's corruption couldn't fully take over his
+soul.  
+~
+65 128 16 0 0 1000 S
+100 1 200 200 30000 30000d0+0 0d0+100000
+1000 0 0
+0 0 1
+1 0 0
+>death_prog 50~
+if ispc($n)
+if inroom($n) == 15738
+mpechoat $n Through me the way opens.
+mptrans $n 15741
+else
+say If it is my death you want, so be it.
+say The path does not start here.
+say Your fault is in your impatience.
+endif
+endif
+~
+>speech_prog wow~
+if ispc($n)
+bow $n
+follow $n
+endif
+~
+|
+#15749
+Gunther~
+Gunther~
+&bGunther stands ready for battle.
+~
+Gunther stands ready with his blade in his hands.  A black cape hangs
+from his shoulders almost reaching the ground.  His armor looks to have been
+at one time in magnificant shape.  There are burn and scratch marks all over
+his armor.  The breastplate is severly dented and damaged.  As you look up
+into his face, you grimace in disgust as half his face has been savagely
+burned.  His face is full of rage and he starts to look upon you with
+impatience.  
+~
+67 128 16842752 0 0 -1000 S
+92 1 184 184 25522 25522d0+0 0d0+92000
+920 0 0
+0 0 1
+3 0 0
+>death_prog 100~
+say Mortal, you can't beat me so easily.
+mpecho A spirit raises from the corpse and flys away.
+mpgoto 15738
+mpmload 15706
+say here
+mpgoto 15747
+~
+|
+#0
+
+
+
+#OBJECTS
+#15701
+steel Polearm~
+steel polearm~
+A steel polearm, lies on the ground.~
+~
+5 33554496 40960 0 0 8193 85
+100 100
+0~ 0~ 0~ 1~
+5 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 80
+A
+13 80
+A
+19 20
+A
+18 30
+#15702
+steel Breastplate~
+steel breastplate~
+A steel breastplate, has been dropped here.~
+~
+9 0 8192 0 0 9 85
+100 100
+0~ 0~ 0~ 0~
+10 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -15
+A
+19 30
+A
+18 21
+#15703
+Barbed Whip~
+a barbed whip~
+A whip, with a barbed end; is coiled here.~
+~
+5 0 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 4~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 80
+A
+19 24
+A
+18 24
+#15704
+Guard Visor~
+a guard's visor~
+A guard has left his visor here.~
+~
+9 0 0 0 0 65537 80
+100 100
+0~ 0~ 0~ 0~
+2 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+104 -1
+A
+19 5
+A
+18 5
+#15705
+dual Blade Battleaxe~
+a Dual Blade Battleaxe~
+This double-blade battle-axe, has been left to rest 'gainst the wall.~
+~
+5 67125760 32768 0 0 8193 90
+100 100
+0~ 0~ 0~ 13~
+5 900 0
+0 0
+reserved~
+0 0
+0 15706 15707
+A
+18 48
+A
+19 60
+A
+24 -20
+A
+12 75
+A
+13 80
+#15706
+bloodstained Axe~
+&ra Bloodstained Axe~
+&rThis axe is covered in dried blood.~
+~
+5 0 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 3~
+2 800 0
+0 0
+reserved~
+0 0
+15744 0 0
+A
+19 20
+A
+18 20
+#15707
+bloodstained Axe~
+&rBloodstained Axe~
+&RThis axe, is covered in dried blood.~
+~
+5 0 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 3~
+2 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+18 20
+#15708
+steel Leggings~
+steel leggings~
+A pair of steel leggings, lay here.~
+~
+9 0 8192 0 0 33 85
+100 100
+0~ 0~ 0~ 0~
+2 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 8
+#15709
+steel Armplates~
+steel armplates~
+A set of steel armplates, rest here.~
+~
+9 0 8192 0 0 257 85
+100 100
+0~ 0~ 0~ 0~
+2 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 85
+A
+13 85
+A
+19 9
+A
+18 8
+#15710
+Servant Anklet~
+servant's anklet~
+This anklet, was left behind by a careless servant.~
+~
+9 0 0 0 0 1048577 80
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -8
+A
+19 8
+A
+18 8
+#15711
+Prisoner Shackles~
+prisoner's shackles~
+These shackles, are used to bind prisoners.~
+~
+9 268439680 0 0 0 129 81
+100 100
+0~ 0~ 0~ 0~
+15 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 -2
+A
+1 -2
+#15712
+hemp Belt~
+hemp belt~
+This hemp belt, has been left behind.~
+~
+9 0 0 0 0 2049 90
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 80
+A
+13 90
+A
+19 9
+A
+18 9
+#15713
+White Halo~
+a white halo~
+&wA white halo, floats in the air, glowing softly.~
+~
+9 1345 0 0 0 32769 80
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+5 0
+summon angel~
+5 5
+15743 0 0
+#15714
+Dark Aura~
+&za dark aura~
+&zAn aura darkness hovers in front of you.~
+~
+9 532 0 0 0 32769 80
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+5 0
+summon greater demon~
+5 5
+15743 0 0
+#15715
+Crowbar~
+a crowbar~
+A crowbar has been left behind.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15716
+Grey Gate Key~
+a grey key~
+A grey key, lies here - forgotten~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15717
+Prison Key~
+the prison key~
+The key to the prison is here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15718
+Undead Aura Pulse~
+aura of the undead~
+A pulse of the undead life-force, hovers before your eyes.~
+~
+9 67108864 0 0 0 32769 90
+100 100
+0~ 0~ 0~ 0~
+2 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+A
+24 -10
+A
+19 7
+A
+18 8
+#15719
+Black Ring~
+a black ring~
+A ring emits an inner darkness.~
+~
+9 4 0 0 0 3 90
+100 100
+0~ 0~ 0~ 0~
+1 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+13 50
+A
+19 7
+A
+18 7
+#15720
+Cloak Transparency~
+a Cloak of Transparency~
+This cloak, is phasing in and out of reality.~
+~
+9 32 0 0 0 1025 90
+100 100
+0~ 0~ 0~ 0~
+1 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+151 -1
+A
+13 80
+A
+19 9
+A
+18 9
+A
+12 -30
+#15721
+Potion Removal~
+potion of removal~
+A potion of removal is here.~
+~
+10 335544320 0 0 0 1 70
+100 100
+70~ remove curse~ cancellation~ cancellation~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#15722
+potion of Detection~
+potion of detection~
+A potion of detection is here.~
+~
+10 268435456 0 0 0 1 70
+100 100
+70~ detect magic~ detect good~ detect evil~
+1 680 0
+0 0
+reserved~
+0 0
+0 0 0
+#15723
+wood Shield~
+a Wood Shield~
+A fine oaken shield, rest on the floor here.~
+~
+9 0 0 0 0 513 70
+100 100
+0~ 0~ 0~ 0~
+0 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 50
+A
+19 5
+A
+18 5
+#15724
+wood Bracer~
+a Wood Bracer~
+This strong oaken bracer, lays here.~
+~
+9 0 0 0 0 4097 70
+100 100
+0~ 0~ 0~ 0~
+1 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 70
+A
+13 70
+A
+19 6
+A
+18 6
+#15725
+Petrified Wood Dagger~
+a Dagger of Petrified Wood~
+A Wooden Dagger, lies here.~
+~
+5 0 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 11~
+1 700 0
+0 0
+reserved~
+0 0
+0 0 0
+#15726
+wood Mace~
+a wood mace~
+A mace, made of dense, strong wood; lies here.~
+~
+5 0 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 8~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+#15727
+leafy Glove~
+&GLeafy Glove~
+A glove, covered with leaves, lie here.~
+~
+9 0 0 0 0 129 75
+100 100
+0~ 0~ 0~ 0~
+1 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+13 70
+A
+19 10
+A
+18 4
+#15728
+Polka Dot Hat~
+&RP&Wo&Rl&Wk&Ra &WD&Ro&Wt &RH&Wa&Rt&z~
+&pA hat covered with polka-dots, rests here.~
+~
+9 0 0 0 0 17 75
+100 100
+0~ 0~ 0~ 0~
+1 748 0
+5 0
+teleport~
+15 15
+0 0 0
+#15729
+Loremaster Robe~
+&pThe Loremaster's Robe&w~
+&pA large, purple robe is starting to collect dust on the ground.~
+~
+9 0 0 0 0 9 75
+100 100
+0~ 0~ 0~ 0~
+3 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 4
+A
+12 75
+A
+5 -1
+#15730
+Measuring Stick~
+a Measuring Stick~
+A measuring stick lies next to your feet.~
+~
+9 0 0 0 0 16385 76
+100 100
+0~ 0~ 0~ 0~
+2 760 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+A
+13 75
+A
+129 -1
+#15731
+Pocket Knife~
+a pocket knife~
+Someone left behind a pocket knife.~
+~
+9 67108864 0 0 0 2097153 90
+100 100
+0~ 0~ 0~ 0~
+3 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 6
+A
+13 85
+A
+12 60
+#15732
+Emblem Coat Arms~
+&wGunther's Coat of Arms~
+On the wall is a beautiful emblem, emblazoned with A Coat of Arms.~
+~
+8 0 0 0 0 1 70
+100 100
+0~ 0~ 0~ 0~
+5 2800 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+coat~
+&wTwo crossed swords over a shield.
+~
+E
+emblem~
+&wTwo crossed swords over a shield.
+~
+E
+arms~
+&wTwo crossed swords over a shield.
+~
+#15733
+Crack Door~
+a crack in the door~
+&zThe door has a large crack from the battle.~
+~
+29 67108864 8192 0 0 0 1
+100 100
+15740~ 0~ 0~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15734
+marble Fountain~
+marble fountain~
+A marble fountain; which has been constructed into a Dragon~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15735
+bush~
+bush~
+&GA bush with some berries growing off it's branches.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15736
+Blue Berry~
+a blue berry~
+A blue berry glistens in the light.~
+~
+19 0 0 0 0 1 1
+100 100
+12~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15737
+peach Tree~
+peach Tree~
+&OA peach tree grows next to the castle wall.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15738
+Flower Tulip~
+&RA tulip~
+&RA beautiful tulip grows up from the ground.~
+~
+8 0 0 0 0 1 70
+100 100
+0~ 0~ 0~ 0~
+1 2800 0
+0 0
+reserved~
+0 0
+0 0 0
+#15739
+Child Playset~
+a child's playset~
+&OA child's playset has been badly damaged.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15740
+Dollhouse~
+a dollhouse~
+&BA dollhouse sits to the side of the stairs.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15741
+Teddy Bear~
+a teddy bear~
+A child has left behind their teddy bear.~
+~
+9 0 0 0 0 16385 80
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 2
+A
+3 2
+A
+1 -1
+A
+2 -2
+#15742
+Priceless Paintings~
+&YA collection of priceless paintings.~
+&YA collection of priceless paintings stand against the walls.~
+~
+20 0 0 0 0 1 70
+100 100
+0~ 0~ 0~ 0~
+5 700 0
+0 0
+reserved~
+0 0
+0 0 0
+#15743
+Fusion Magic~
+&Wa Fusion of Magic~
+&zMagic converges to a single spot.~
+~
+9 234881024 8192 0 0 32769 85
+100 100
+0~ 0~ 0~ 0~
+1 848 0
+5 0
+dispel magic~
+5 5
+15744 0 0
+#15744
+Screaming Axe~
+a Screaming Axe~
+&zAn axe emits a low hum.~
+~
+5 402788352 139272 0 0 8193 90
+100 100
+0~ 0~ 0~ 13~
+2 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+A
+13 100
+A
+24 -16
+A
+19 30
+A
+18 20
+#15745
+Demon Coin~
+&rA Demon Coin~
+&rA coin with the face of a Demon, spins here.~
+~
+8 0 0 0 0 1 90
+100 100
+0~ 0~ 0~ 0~
+1 3600 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+coin~
+&rThe face of a growling demon appears on one side of the coin.  On the
+other is a picture of a demon chewing up a victim.  
+~
+E
+demon~
+&rThe face of a growling demon appears on one side of the coin.  On the
+other is a picture of a demon chewing up a victim.  
+~
+#15746
+Demon Tome~
+&rTome of the Demon~
+&rA book with the face of a demon.~
+~
+2 939524096 0 0 0 1 90
+100 100
+90~ sanctuary~ solidify~ disrupt~
+1 900 0
+0 0
+cone of frost~
+0 0
+0 0 0
+#15747
+Swirling Blood~
+swirling blood~
+&RBlood swirls around within a vortex.~
+~
+29 67108864 0 0 0 0 1
+100 100
+15747~ 0~ 0~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#15748
+Mask Tears~
+a Mask of Tears~
+A track of tears lines the ground.~
+~
+9 0 0 0 0 65537 90
+100 100
+0~ 0~ 0~ 0~
+1 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 12
+A
+24 -10
+A
+13 85
+A
+12 85
+#15749
+Spring~
+a spring~
+A spring showers the forest with water.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#15701
+Dungeon Hallway~
+~
+~
+You have walked into another corner in the dungeon.  The rock lining the
+walls of the dungeon are very cold to the touch.  The air is damp and musty
+from the centuries of being closed up.  The ground has an inch thick layer
+of dust which do not show any tracks of movement.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 15702
+D2
+~
+~
+0 0 15706
+S
+#15702
+Under a Manhole~
+~
+~
+The old stone dungeon has come to an end.  A small ray of light breaks
+through the dungeon's darkness from a small hole in the ceiling.  As you
+look up, you notice that the small hole is from an iron manhole.  Fresh air
+hits you in the face as you try to get a closer look at the &rmanhole&w.  
+~
+0 401423 0
+Rd     0
+E
+manhole~
+A rusted manhole covers the exit up.  A couple of small holes allows some
+light and air to get through.  There looks as if there is a lock on the one
+side of the manhole.  If there was only a way to unlock or break that lock. 
+~
+D3
+~
+~
+0 0 15701
+D4
+~
+henry~
+119 15715 15721
+S
+#15703
+Prison Cell~
+~
+~
+Several rusty and dirty chains hang from all the walls.  A couple of the
+chains have rusted all the way through and now lie on the floor.  The walls
+are otherwise completely barren.  This cell must have been used to hold many
+criminals from the amount of chains inside.  
+~
+0 401423 0
+Rd     0
+D2
+~
+~
+115 0 15708
+S
+#15704
+Dungeon Hallway~
+~
+~
+The ancient hallway turns to the east and south.  Two old iron doors are
+hinged into the walls.  The iron has since rusted and hangs only on the top
+hinge.  The cells behind the doors are empty as the wooded benches rotted
+away over the centuries.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 15705
+D2
+~
+~
+0 0 15709
+S
+#15705
+Dungeon Hallway~
+~
+~
+The rocks used to build this dungeon must have been of legendary quality.
+Almost none of the stones show any sign of age except for the inch thick
+layer of dust covering everything.  You can only stand aside and wonder when
+the last time someone walked these halls.  A large iron door is built into
+the wall to the south.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+631 15717 15710
+D3
+~
+~
+0 0 15704
+S
+#15706
+Dungeon Hallway~
+~
+~
+The old, dark stones continue along the dungeon.  Every few minutes, you
+swear that you hear screams for help.  Whenever you look around, all you see
+is emptiness thoughout the halls.  The hallway splits off to the north,
+south, and east.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15701
+D1
+~
+~
+0 0 15707
+D2
+~
+~
+0 0 15711
+S
+#15707
+Dungeon Hallway~
+~
+~
+The longer you walk through these dungeon halls, the more you think you
+hear eerie noises in the distance.  You turn around to look back but see
+nothing.  As soon as you turn though another sound echos behind you.  At
+every turn is a new noise yet nothing is ever seen.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 15708
+D3
+~
+~
+0 0 15706
+S
+#15708
+Dungeon Hallway~
+~
+~
+Your every breath saturates the already stank air even more.  It has been
+centuries since life has walked these halls.  The temperature is colder than
+usual for an underground environment.  Every particle of dust and you breath
+can be seen in front of your face.  You feel a brush across you skin as you
+pass through the space before you.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+115 0 15703
+D1
+~
+~
+0 0 15709
+D3
+~
+~
+0 0 15707
+S
+#15709
+Dungeon Hallway~
+~
+~
+The silent stone walls of this dungeon have stood the test of time.  You
+stalk these halls with their continously lifeless stare watching all who
+pass.  The stories that these walls could tell are probably some of the most
+gruesome ever told.  The hallway splits off to the north, south, and west.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15704
+D2
+~
+~
+0 0 15714
+D3
+~
+~
+0 0 15708
+S
+#15710
+Prison Cell~
+~
+~
+This is a dark, empty cell.  The remements of a wooden bed still hang
+from rusty chains stuck in one of the walls.  On the back wall, there are
+two sets of chains bolted into the stone.  The chains appear to have been
+used lately because they lack the dust that the rest of the cell has.  Along
+the floor, there does not appear to be any tracks.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+631 0 15705
+S
+#15711
+Dungeon Hallway~
+~
+~
+The cracks in the stones have over the years filled with scum and dust. 
+As you walk these ancient halls, you can feel the musty air on your skin and
+in your lungs.  Several torch holders hang on the hallway but not been used
+in years.  The dust on the ground does not appear to have been disturbed.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15706
+D1
+~
+~
+0 0 15712
+D2
+~
+~
+115 0 15716
+S
+#15712
+Dungeon Hallway~
+~
+~
+The dungeon hallway turns to the west and south.  On the northern wall, a
+large emblem has been embedded into the stone.  The emblem consists of two
+swords crossed over each other bout three quarters the way up.  A circle
+painted in red is on the top of the cross.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 15717
+D3
+~
+~
+0 0 15711
+S
+#15713
+Dungeon Hallway~
+~
+~
+This ancient dungeon starts to take a turn to the east and south.  The
+dust on the ground does not appear to have been disturbed for centuries. 
+The silence of a hundred years is now broken by your intrudence upon these
+grounds.  Not a sound can be heard within these halls.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 15714
+D2
+~
+~
+0 0 15718
+S
+#15714
+Dungeon Hallway~
+~
+~
+The hallways of this underground prison intersect at this point.  The
+halls move off in all directions.  A couple old metal torch holders still
+cling to the the walls.  The torches have long since burned their last
+breath but you can still see small wood bits in the metal holders.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15709
+D1
+~
+~
+0 0 15715
+D2
+~
+~
+0 0 15719
+D3
+~
+~
+0 0 15713
+S
+#15715
+Dungeon Hallway~
+~
+~
+The hall makes a turn off to the west and south.  A long metal rack sits
+along the east wall.  This must have held weapons at one time.  The rack is
+extremely eroded and broken but still holds a couple weapons.  The weapons
+are useless since most of them lack blades, hilts, or are just too old.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 15720
+D3
+~
+~
+0 0 15714
+S
+#15716
+Prison Cell~
+~
+~
+Two iron chains hang off the western wall and dangle at this time.  A
+long wooden board is on the ground and looks as if at one time was connected
+to the chains perhaps as a bed.  There are a few shackles on the north and
+east walls.  This must have been a cell in this prison.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+115 0 15711
+S
+#15717
+Dungeon Hallway~
+~
+~
+The stank of hundreds of years has collected in the air.  The saturation
+of dirt and scum takes a bit to get used to.  From the lack of cleaning done
+in the halls, the ground is covered by an inch of dust.  The dark stones
+feel really cold to the touch and almost feel as if they could cause
+frostbite.  The hallway goes off to the east and north.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15712
+D1
+~
+~
+0 0 15718
+S
+#15718
+Servant's Entrance~
+~
+~
+As you enter this dungeon, you start to cough from the amount of dust in
+the air.  There is a wooden sign on the wall.  A broken metal cart lies on
+the ground in a heap.  The words, "Servant's Cart" is engraved on the side. 
+These halls appear to be very old and not used in years possibly centuries. 
+The hall moves off to the western and northern directions.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15713
+D2
+~
+&zExit~
+115 0 15788
+D3
+~
+~
+0 0 15717
+S
+#15719
+Dungeon Hallway~
+~
+~
+The hall makes a turn off to the east and north.  An iron shelf hangs on
+the southern wall.  Several hooks have been bolted into the bottom of the
+shelf.  The shelf looks to be in good condition even after all these years. 
+A sign above the shelf reads, "Please don't leave valuable belongings here."
+Only dirt sits on the shelf now.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15714
+D1
+~
+~
+0 0 15720
+S
+#15720
+Guard Post~
+~
+~
+A small table stands in the center of the room.  On each side of the
+table sits a chair but one has fallen apart.  It's pieces lie around under
+the table.  A sign lies on the floor underneath two drilled holes on the
+south wall.  Another table stands against the east wall with some empty
+trays and plates still resting on top.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15715
+D3
+~
+~
+0 0 15719
+S
+#15721
+Marble Fountain~
+~
+~
+A fountain has been built in the center of the courtyard.  The fountain
+is a marble construct of a dragon.  A sprout can be seen in the dragon's
+mouth where water must have poured at one time.  The wings spread out over
+the sides of the fountain as the dragon is raising his claws to the sky. 
+The fountain has long been dried up and a manhole can now be seen near one
+of the claws.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15730
+D1
+~
+~
+0 0 15727
+D2
+~
+~
+0 0 15722
+D3
+~
+~
+0 0 15725
+D5
+~
+manhole~
+119 15715 15702
+S
+#15722
+Before the Portcullis~
+~
+~
+A portcullis is in the dropped position at the castle entrance.  On the
+other side, a rock slide has covered the gate making it impossible to leave
+or enter.  A courtyard stretches out to the north.  A small path circles
+itself around the entire courtyard.  A castle stands on the northern side of
+the yard.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15721
+D1
+~
+~
+0 0 15723
+D3
+~
+~
+0 0 15726
+S
+#15723
+Courtyard~
+~
+~
+The path encircling the castle courtyard has come around into the
+southeastern corner.  A peach tree still grows in the garden that is planted
+in the corner.  The branches and leaves spurt out in all directions since
+nobody has been around to keep it trimmed.  Peaches are plentiful on the
+tree's branches.  The grass and weeds in the garden now reach as high as
+some of the lower branches.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15727
+D3
+~
+~
+0 0 15722
+S
+#15724
+Abandoned Smithy~
+~
+~
+The walls of this room are covered with a variety of tools.  Hammers,
+axes, wrenches, and other tools hang on hooks on the walls or lie on the
+ground.  An anvil stands in the room's center with an uncompleted blade
+rusting away on top.  A few other swords and polearms lie uncompleted on a
+shelf.  An empty oven was built into the back wall and the heavy metal door
+stands open.  
+~
+0 393219 0
+Rd     0
+D1
+~
+~
+1 0 15725
+S
+#15725
+Courtyard~
+~
+~
+The pathway that makes it's way around the yard consists of marble slabs.
+The white marble brightens up the gloomy courtyard.  The lack of life has
+caused the entire yard to become dull and dingy.  A door swings on it's
+hinges on a building to the west.  A symbol with two crossed swords over a
+shield is printed to the side of the door.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15729
+D1
+~
+~
+0 0 15721
+D2
+~
+~
+0 0 15726
+D3
+~
+~
+1 0 15724
+S
+#15726
+Courtyard~
+~
+~
+The walls of the castle reach up what looks like three stories.  Strands
+of ivy have grown it's way over the walls and stretch all the way back down
+to the courtyard.  A crop of berry bushes grow in the corner.  Spots of blue
+and red shine out from the green leaves where the berries grow.  The grass
+under the bushes has grown to reach the same height as the bushes since the
+residents last walked the yard.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15725
+D1
+~
+~
+0 0 15722
+S
+#15727
+Courtyard~
+~
+~
+The grass on the sides of the courtyard path has overgrown to enormous
+heights.  The grass is as high as three feet in some places.  The stables
+are to the east.  A large open window is on the side but you can't see
+anything within the darkness.  The doors to the stables are locked up with
+thick chains looped around the door handles.  A small lock dangles from the
+chains.  
+~
+0 393218 1
+Rd     0
+E
+lock~
+A dim glow radiates from inside the lock.
+~
+D0
+~
+~
+0 0 15731
+D1
+~
+~
+119 15715 15728
+D2
+~
+~
+0 0 15723
+D3
+~
+~
+0 0 15721
+S
+#15728
+Stables~
+~
+~
+The inside of the stables are filled with burnt furniture.  Metal tables
+and carts lie about with black scorch marks covering their entirety.  The
+walls are painted black from smoke.  Burn marks cover every spot of the
+floor and walls.  Behind a knocked over table is a pile of bones and from
+the size, the pile consists of more than one person.  
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+119 15715 15727
+S
+#15729
+Courtyard~
+~
+~
+A children's playset is built in the northwestern corner.  It has been a
+long time since it was useful.  Many of the parts have been burned to
+pieces.  The walls behind the set are also charred black.  As a breeze blows
+across the courtyard, you swear that you can hear the flickering of flame
+and the screams of children.  
+~
+0 393218 1
+Rd     0
+D1
+~
+~
+0 0 15730
+D2
+~
+~
+0 0 15725
+S
+#15730
+Stairs to the Front Door~
+~
+~
+A set of four steps runs up to the front door of the castle.  Two large
+wooden doors stand closed before you.  Scorch marks can be seen around the
+hinges.  It appears that someone has tried to clean the doors but couldn't
+get the scum and smoke completely off.  An emblem of two crossed swords on a
+shield is imprinted on the left door.  
+~
+0 393227 1
+Rd     0
+D0
+~
+~
+87 15716 15732
+D1
+~
+~
+0 0 15731
+D2
+~
+~
+0 0 15721
+D3
+~
+~
+0 0 15729
+S
+#15731
+Courtyard~
+~
+~
+The end of the stables is next to the castle.  The stone blocks of the
+main keep are about four feet wide and tall.  It forms a corner with the red
+wood planks of the stables.  The shingled rooftop of the stables slopes down
+to only a few feet from your head.  A triangular patch of grass is in the
+corner of the castle and stables.  
+~
+0 393218 1
+Rd     0
+D2
+~
+~
+0 0 15727
+D3
+~
+~
+0 0 15730
+S
+#15732
+Main Hallway~
+~
+~
+The long hallway stretches down to the north.  To the south, two wooden
+doors stand between you and the courtyard outside.  Remenents of a couple of
+tapestries hang down against the walls.  The bottoms of the tapestries have
+been burnt.  The material only drops about halfway down the walls.  The red
+and yellow coloring of the cloth is faded to near nonexistance.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15734
+D2
+~
+~
+87 15716 15730
+S
+#15733
+Spiral Staircase~
+~
+~
+The walls of this alcove have black scorch marks scattered all over.  A
+staircase spirals upward to another floor of the castle.  On the sides of
+the stairs, bears and lions are carved out of the marble.  Each animal is
+carved with it's mouth open and pointed towards the hallway to the east.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 15734
+D4
+~
+~
+0 0 15743
+S
+#15734
+Main Hallway~
+~
+~
+The remains of an old carpet still covers the floor.  The walls and floor
+appear to have survived a horrifying fire.  Smoke still fills the cracks
+within the marble stones used to build the castle.  The main hallway goes
+off to the north and south.  Two alcoves were built on the eastern and
+western sides of the hall.  There looks to be stairs within both alcoves.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15736
+D1
+~
+~
+0 0 15735
+D2
+~
+~
+0 0 15732
+D3
+~
+~
+0 0 15733
+S
+#15735
+Spiral Staircase~
+~
+~
+The walls of this alcove have been badly burned from a fire.  A staircase
+spirals upward to another floor of the castle.  Engraved upon the sides of
+the stairs are flowers and trees.  The flowers have been magically dyed in a
+variety of colors.  A hallway can be seen to the west.  
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+0 0 15734
+D4
+~
+~
+0 0 15744
+S
+#15736
+Main Hallway~
+~
+~
+This ancient hallway is built further to the south and north.  The signs
+of battle can be seen all over the walls.  Chips and scratches almost cover
+every inch of wall space.  Many of the chips are filled with smog and smoke
+from a fire.  It must have been a horrible fire to cause such destruction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 15738
+D2
+~
+~
+0 0 15734
+S
+#15737
+Spiral Staircase~
+~
+~
+The walls of this alcove have black scorch marks scattered all over.  A
+staircase spirals upward to another floor of the castle.  On the sides of
+the stairs, bears and lions are carved out of the marble.  Each animal is
+carved with it's mouth open and pointed towards the hallway to the east.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 15738
+D4
+~
+~
+0 0 15746
+S
+#15738
+Before the Throne Room~
+~
+~
+The marble archways built on the east and west exits from the hall tower
+above you.  The entire hallway is built out of the purest marble.  One thick
+oak door is in the northern wall.  A large emblem of two crossing swords
+over a shield has been altered slightly.  A golden coin has been implanted
+into the wood over the middle of the shield.  You feel a horrible shock go
+up your spin as you try to get closer to the door.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+119 0 15740
+D1
+~
+~
+0 0 15739
+D2
+~
+~
+0 0 15736
+D3
+~
+~
+0 0 15737
+S
+#15739
+Spiral Staircase~
+~
+~
+The walls of this alcove have been badly burned from a fire.  A staircase
+spirals upward to another floor of the castle.  Engraved upon the sides of
+the stairs are flowers and trees.  The flowers have been magically dyed in a
+variety of colors.  A hallway can be seen to the west.  
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+0 0 15738
+D4
+~
+~
+0 0 15748
+S
+#15740
+Throne Room~
+~
+~
+Upon entering the throne room, a massive engraving of a coat of arms is
+under your feet.  In the center of the symbol, a giant gold coin is welded
+into the marble.  A few steps north of the coin, five stairs reach up to the
+thrones.  The wife's throne has been ravaged by flames and is barely holding
+together.  Strangely, the Knight's throne shows no damage and has been
+covered in gold.  
+~
+0 138805259 0
+Rd     0
+D2
+~
+~
+119 0 15738
+S
+#15741
+Treasury~
+~
+~
+You stand in the middle of a dark, windowless room.  Large, beautiful
+paintings cover the walls.  In each of the four cornes are stands with a
+gold statue on top.  Each of the statues is a gold sculpture of each member
+of the Knight's family.  A chandelier hangs from the ceiling but does not
+look as if it's been used in centuries.  The diamond prisms and gold arms
+has a thick layer of dust.  
+~
+0 393231 0
+Rd     0
+S
+#15742
+Thomas' Room~
+~
+~
+The torches have long burned out in this room.  A tiny bedpost stands
+against the wall in the back corner.  The post is all that remains of a bed.
+A toychest lies underneath the western window.  The chest has been ransacked
+and a few of the toys littering the floor.  Extensive burn damage covers the
+walls and floor.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 15743
+S
+#15743
+Thomas' Playroom~
+~
+~
+A blackened metal table is all that remains standing in this room.  A
+couple of toy soldiers stand at arms near the top of a stairway.  The light
+coming through the window to the west glints off the soldiers.  The scorched
+stairway spirals down to a lower floor.  
+~
+0 401418 0
+Rd     0
+D3
+~
+~
+0 0 15742
+D5
+~
+~
+0 0 15733
+S
+#15744
+Dressing Room~
+~
+~
+The railing at the top of a stairway is coated with a silver paint.  The
+paint shines bright within the dark room.  A faded dress lies forgotten on
+the ground to the side of the stairs.  The dress has been ripped in many
+places.  The dust of a skeleton surrounds the dress.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 15745
+D5
+~
+~
+0 0 15735
+S
+#15745
+Natasha's Room~
+~
+~
+Several rotting wood dressers are knocked over.  They have fallen on top
+of each other.  Wood splinters cover the floor causing sharp, snaps to occur
+with every step.  Many of the drawers have been tossed aside and broken to
+bits.  A large, circular mirror hangs from ceiling to floor on the southern
+wall.  
+~
+0 401418 0
+Rd     0
+D3
+~
+~
+0 0 15744
+S
+#15746
+Dressing Room~
+~
+~
+Gunther's changing room consists of several dressers and shelves.  This
+room is unlike the rest of the castle because there are no signs of damage. 
+The dressers are still in perfect condition with their fine finish and
+golden knobs.  The floor is covered in a lovely blue carpet from wall to
+wall.  A family portrait hangs on the eastern wall.  
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+0 0 15747
+D5
+~
+~
+0 0 15737
+S
+#15747
+Master Bedroom~
+~
+~
+The main bedroom has been left completely intact.  A king size bed stands
+underneath the west window.  The window has been boarded up shutting out all
+light.  The bed has been made and is covered with rich and comfortable
+sheets and quilt.  A mirror has been placed on the ceiling directly over the
+bed.  The rest of the walls is adorned with priceless paintings.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 15746
+S
+#15748
+Playroom~
+~
+~
+Kathryn's playroom has an intricate dollhouse built in the center of the
+room.  The dollhouse is painted in a bright blue with white lining.  A mini
+torch is one of the dollhouse's rooms is still on.  The flame lightens up
+the flourescent drawings on the pink walls.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 15749
+D5
+~
+~
+0 0 15739
+S
+#15749
+Kathryn's Room~
+~
+~
+This bedroom has been savagely torn apart.  All the wood furniture is
+ripped into splinters that now lie scattered all over the floor.  The pink
+paint on the wall is flaking and peeling right off the planks.  The ceiling
+has a two inch thick coat of smoke.  The marks of flames are all over the
+floor and walls.  A fire must have completely ripped through this room.  
+~
+0 401419 0
+Rd     0
+D3
+~
+~
+0 0 15748
+S
+#15750
+Cursed Forest~
+~
+~
+A massive oak tree reaches up to the sky.  Branches stretch out in all
+directions intertwining to form a tight canopy above you.  The grass has
+grown to be about two feet high and does not appear to be well kept.  At
+closer inspection of the oak, someone or something has carved tiny niches
+that lead up into the canopy.  
+~
+0 5 3
+Rd     0
+D2
+~
+~
+0 0 15752
+D4
+~
+~
+0 0 15765
+S
+#15751
+Cursed Forest~
+~
+~
+As you tredge through the high grass, the blades brush up against your
+skin.  With each touch, you feel a slight scratch.  The grass has been
+allowed to grow and now you ground is covered with tall, thick blades.  The
+trees create a thick and tight canopy that covers the grassy floor in
+darkness.  
+~
+0 1 3
+Rd     0
+D0
+~
+~
+0 0 17249
+D1
+~
+~
+0 0 15752
+D2
+~
+~
+0 0 15755
+S
+#15752
+Cursed Forest~
+~
+~
+A variety of creatures can be heard scurrying about in the grass.  Since
+the large, thick grass has grown to such heights, you can't make out what is
+in the grass.  Movement can be felt with almost every step taken.  A deep
+howl booms from the forest around you.  Several trees surround with most of
+them being thick oaks.  
+~
+0 1 3
+Rd     0
+D0
+~
+~
+0 0 15750
+D1
+~
+~
+0 0 15753
+D2
+~
+~
+0 0 15756
+D3
+~
+~
+0 0 15751
+S
+#15753
+Cursed Forest~
+~
+~
+Some bushes have formed into a semicircle slightly to the northeast of
+where you stand.  The bushes are glowing from small points at the ends of
+their branches.  As you get a closer look at the bushes, you notice that the
+bright spots are really white berries.  The berries look full and moist as a
+drop of dew is still sitting on top.  
+~
+0 1 3
+Rd     0
+D2
+~
+~
+0 0 15757
+D3
+~
+~
+0 0 15752
+S
+#15754
+Cursed Forest~
+~
+~
+A dark forbidding tree looms high above you.  The branches of all the
+trees intertwine together forming a close knit cover.  Starting from just a
+step above the grass, niches have been carved into the bark of one of the
+trees.  The niches have the appearance of being in a set pattern as they
+make their way up the side of the tree.  A hint of laughing can be heard
+from above.  
+~
+0 5 3
+Rd     0
+D1
+~
+~
+0 0 15755
+D4
+~
+~
+0 0 15773
+S
+#15755
+Cursed Forest~
+~
+~
+The grass sways gently as a delicate breeze flows through the forest. 
+The long blades strike against each other creating a soft tapping noise. 
+Also, a low pitched hum is made from the breeze blowing through the grass. 
+A whistle from the leaves and branches breaks the low sound from the grass. 
+The forest calms back down after the wind leaves.  
+~
+0 1 3
+Rd     0
+D0
+~
+~
+0 0 15751
+D1
+~
+~
+0 0 15756
+D2
+~
+~
+0 0 15759
+D3
+~
+~
+0 0 15754
+S
+#15756
+Cursed Forest~
+~
+~
+A spring erupts from the ground showering the forest with water.  A wood
+fountain collects water at the base of the spring.  The collected water
+forms into a shallow pool.  The spring shoots up through the forest canopy. 
+Several animals can be heard moving through the grass to and from the pool. 
+Many of them are unseen until their heads pop out in order to take a drink
+from the pool.  
+~
+0 1 3
+Rd     0
+D0
+~
+~
+0 0 15752
+D1
+~
+~
+0 0 15757
+D2
+~
+~
+0 0 15760
+D3
+~
+~
+0 0 15755
+S
+#15757
+Cursed Forest~
+~
+~
+A nearby tree has a few branches sticking out from the canopy.  On the
+end of one of the branches, a bird has built a nest out of twigs and leaves.
+The sound of chirping is coming from within the nest.  From the screeching
+pierce of the chirping, they must only be babies inside the nest. 
+Unfortunately, the nest is too high for you to get a look inside.  
+~
+0 1 3
+Rd     0
+D0
+~
+~
+0 0 15753
+D1
+~
+~
+0 0 15758
+D2
+~
+~
+0 0 15761
+D3
+~
+~
+0 0 15756
+S
+#15758
+Cursed Forest~
+~
+~
+From the darkness between the trees, an owl's hoot breaks the silence. 
+One of the larger oaks stands proud in the center of a crop of trees.  A
+rope ladder hangs down from the treetops.  The bottom is not staked down and
+the ladder sways back and forth.  This part of the forest contains giant
+rocks along the ground.  A trail of these rocks move off to the north.  
+~
+0 5 3
+Rd     0
+D0
+~
+~
+0 0 15796
+D3
+~
+~
+0 0 15757
+D4
+~
+~
+0 0 15777
+S
+#15759
+Cursed Forest~
+~
+~
+The canopy of branches and leaves over the forest cover the woods in
+darkness.  Without a lot of light shining about, it is difficult to make out
+any real detail.  An eerie moaning liek that of a ghost comes from the wind
+blowing through the grass.  Trees grow close together throughout the forest.
+The trees are making it hard to move but it is possible to go north and
+east.  
+~
+0 1 3
+Rd     0
+D0
+~
+~
+0 0 15755
+D1
+~
+~
+0 0 15760
+S
+#15760
+Cursed Forest~
+~
+~
+Making out any exact details of the landscape is complicated with the
+severe lack of lighting.  You can feel numerous rocks and branches on the
+forest floor as you proceed through the darkness.  Animals, large and small,
+dart around under the cover of the grass and dark.  The tips of the grass
+blades cause a slight itching on your skin.  
+~
+0 1 3
+Rd     0
+D0
+~
+~
+0 0 15756
+D1
+~
+~
+0 0 15761
+D2
+~
+~
+0 0 15762
+D3
+~
+~
+0 0 15759
+S
+#15761
+Cursed Forest~
+~
+~
+A pile of broken branches, rocks, and leaves sit in a heap to the south
+and east.  An odor is coming from the pile.  The closer you come to the
+pile, the more your stomach turns.  The hairs in your nostrils are burning
+from the horrible stench being emitted from the mound.  What could possibly
+be causing this horrendous smell.  
+~
+0 1 3
+Rd     0
+D0
+~
+~
+0 0 15757
+D3
+~
+~
+0 0 15760
+S
+#15762
+Cursed Forest~
+~
+~
+From above the tree tops, you hear what sounds like people talking.  The
+noise strikes you as moving around and consisting of more than two people. 
+Next to one of the trees at your side hangs a rope ladder.  The rope is
+tightly wrapped around wood poles to make the ladder.  It hangs from above
+and dangles down to reach a little ways off the ground.  
+~
+0 5 3
+Rd     0
+D0
+~
+~
+0 0 15760
+D4
+~
+~
+0 0 15785
+S
+#15763
+Council Chamber~
+~
+~
+The wood boards creak under your weight.  A dried goo has been placed
+into the gaps between boards in order to keep everything together.  Old,
+faded paintings hang from the walls.  The majority of the paintings are of a
+magnificant castle at sunrise.  The color has long since lost it's
+brightness and clarity.  The frame looks to be of recent design and well
+taken care of.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 15764
+D2
+~
+~
+0 0 15768
+S
+#15764
+Council Chamber~
+~
+~
+Along the northern wall stands an intricately constructed wooden rack. 
+Many scrolls are currently sitting on the shelves of the rack.  Each scroll
+is sealed in a dark green stamp.  The rack is almost completely filled but
+still has room for a few more.  A small sign hangs from a nail above the
+scroll rack.  
+~
+0 393226 0
+Rd     0
+E
+sign~
+&gAncient Scrolls of Dunthal
+~
+D2
+~
+~
+0 0 15769
+D3
+~
+~
+0 0 15763
+S
+#15765
+School Entrance~
+~
+~
+A trapdoor is built into the bottom of the building.  A chalkboard has
+been put on the western wall and stretches south.  Written on this end of
+the chalkboard is the homework assignment for a class.  Chalk dust fills the
+bottom of the board and also covers the ground beneath the board.  There is
+not any chalk left near the board.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 15766
+D2
+~
+~
+0 0 15770
+D5
+~
+~
+0 0 15750
+S
+#15766
+Student's Desks~
+~
+~
+Desks have been arranged into four rows with five desks in each row.  The
+desks are all painted brown with white used for the board across the top.  A
+rack was built underneath each desk so that students could store books.  All
+the desks are placed facing west toward a chalkboard.  The boards used in
+the floor look worn from all the traffic of children.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 15767
+D2
+~
+~
+0 0 15771
+D3
+~
+~
+0 0 15765
+S
+#15767
+Back of the Class~
+~
+~
+A dark, red wood board is bolted into the back eastern wall.  Tiny metal
+hooks hang from the bottom of the shelf.  Currently, the shelf is empty and
+nothing hangs from any of the hooks.  There are quite a few dents in the
+planks under the shelf.  The east wall was once painted green but all that
+remains of the color are a few patches here and there.  
+~
+0 393226 0
+Rd     0
+D2
+~
+~
+0 0 15772
+D3
+~
+~
+0 0 15766
+S
+#15768
+Council Library~
+~
+~
+Five rows of tall pine shelves stand with one side against the western
+wall.  A small area to walk in is on the eastern side of the room.  Each of
+the shelves is stocked with books of all subjects.  Massive tomes are placed
+next to tiny books.  They seem to be catergorized according to subject with
+botony and horniculture having a whole two shelves to themselves.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 15763
+D2
+~
+~
+0 0 15773
+S
+#15769
+Meeting Room~
+~
+~
+This must be the main chamber for the village council.  A long,
+rectangular table stands in the middle of the room.  Around the table sit
+thirteen chairs.  Each of the chairs are of ordinary design without any
+decorations.  A chandelier hangs from the ceiling illimunating the room. 
+You can hear the soft flickering of the mini torches inside the chandelier. 
+A symbol has been engraved into the center of the table.  
+~
+0 393226 0
+Rd     0
+E
+symbol~
+Two swords crossed over the top of a shield.
+~
+D0
+~
+~
+0 0 15764
+D2
+~
+~
+0 0 15774
+S
+#15770
+Front Desk~
+~
+~
+A chalkboard adorns the entire western wall.  On this side of the board,
+there are a couple of names written.  A desk sits in the corner forming a
+triangle with the walls.  On the top of the desk are several stacks of
+papers that do not look to be in any order.  Some of the papers have
+letters, such as, A, B, or F written in large, bold print at the top.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 15765
+D1
+~
+~
+0 0 15771
+S
+#15771
+Student's Desks~
+~
+~
+Desks have been arranged into four rows with five desks in each row.  The
+desks are all painted brown with white used for the board across the top.  A
+rack was built underneath each desk so that students could store books.  All
+the desks are placed facing west toward a chalkboard.  The boards used in
+the floor look worn from all the traffic of children.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 15766
+D1
+~
+~
+0 0 15772
+D3
+~
+~
+0 0 15770
+S
+#15772
+Back of the Class~
+~
+~
+A dark, red wood board is bolted into the back eastern wall.  Tiny metal
+hooks hang from the bottom of the shelf.  Currently, the shelf is empty and
+nothing hangs from any of the hooks.  There are quite a few dents in the
+planks under the shelf.  The east wall was once painted green but all that
+remains of the color are a few patches here and there.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 15767
+D3
+~
+~
+0 0 15771
+S
+#15773
+Council Entrance~
+~
+~
+This room is spotless and looks as if it takes a lot of work to keep it
+so.  The smell of magic burns the hairs in your nose and on the back of your
+hand.  A thick, fuzzy blue carpet welcomes you into the Council Chambers. 
+The carpet is clean but shows the signs of wear and tear.  Bright and
+colorful paintings adorn all the walls.  A tree sticks up in the
+southeastern corner with tiny niches carved in it's side.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 15768
+D1
+~
+~
+0 0 15774
+D5
+~
+~
+0 0 15754
+S
+#15774
+Chamber of Speaking~
+~
+~
+The speaking room of the council's chamber is neatly kept but does not
+have a lot of furnishings.  There is a pulpit standing in the southeastern
+corner.  It must only be dragged into the open when someone wishes to speak
+since there are drag marks on the floor.  Beside the pulpit, the only other
+thing in the room is a crystal ball sitting inside an alcove in the southern
+wall.  
+~
+0 393226 0
+Rd     0
+E
+ball~
+As you look into the crystal ball, a vision comes into view inside.  The
+sight of people screaming as they run around within a castle.  They are all
+on fire and screaming in agony.  The screams start to get louder and LOUDER
+and you must pull away before it becomes too much.  
+~
+E
+crystal~
+As you look into the crystal ball, a vision comes into view inside.  The
+sight of people screaming as they run around within a castle.  They are all
+on fire and screaming in agony.  The screams start to get louder and LOUDER
+and you must pull away before it becomes too much.  
+~
+D0
+~
+~
+0 0 15769
+D3
+~
+~
+0 0 15773
+S
+#15775
+Village Fountain~
+~
+~
+Shooting up from beneath the canopy is a spring.  The water sprays upward
+into the air.  Some of the water falls back down into the forest below while
+the rest is collected by wood gutters surrounding the spring.  The gutters
+are connected to an intricate pipe system that disperses water throughout
+the village.  This must be the main gathering area because many people stop
+here for drinks and talk with friends and family.  Little children splash in
+the puddles as older ones flirt with each other.  
+~
+0 425986 1
+Rd     0
+D2
+~
+~
+0 0 15780
+S
+#15776
+Treetop Walkway~
+~
+~
+The main walkway is crowded as villagers rush back and forth.  Houses
+have been built along the walkway on both sides.  Families mingle together
+in front of their homes.  You hear talk of the weather from an elderly
+couple strolling by.  The walkway continues towards the east and south.  
+~
+0 393218 1
+Rd     0
+D1
+~
+~
+0 0 15777
+D2
+~
+~
+0 0 15781
+S
+#15777
+Treetop Walkway~
+~
+~
+The walkway has become slightly unstable as it sways back and forth.  The
+wood planks look to be firmly in place yet the path still moves quite a bit.
+The planks look extremely worn down and appear to be in need of repair.  The
+path takes a turn towards the west and south.  Also, a rope ladder hangs off
+the side of the path down into the forest.  
+~
+0 393218 1
+Rd     0
+D2
+~
+~
+0 0 15782
+D3
+~
+~
+0 0 15776
+D5
+~
+~
+0 0 15758
+S
+#15778
+Village Store~
+~
+~
+You have entered what looks to be a weapon shop.  Shelves line the back
+wall.  Weapons of all varieties hang from nails or sit on shelves.  A barrel
+full of swords stands behind a counter which sits in the middle of the room.
+Along the top of the counter are many different daggers and knives.  Each of
+the weapons look to be of the finest craftsmenship and in excellent
+condition.  
+~
+0 401422 0
+Rd     0
+D2
+~
+~
+0 0 15783
+S
+#15779
+Village Store~
+~
+~
+There is not very much space to move within this store.  Wood mannequins
+dressed in different types of armor stand around the shop.  Several more
+hang from a rack along the back wall which is blocked by a glass counter. 
+The counter seems oddly out of place within this shop.  As you step closer
+to get a better look at the back wall, you accidently hit the counter. 
+Instead of it breaking, a sharp pain shoots up your leg.  Maybe it isn't so
+out of place after all.  
+~
+0 401422 0
+Rd     0
+D2
+~
+~
+0 0 15784
+S
+#15780
+Treetop Walkway~
+~
+~
+The traffic of people has only gotten worse.  People walk in every
+direction along the treetop pathway.  Children run between everyone while
+they play a game of tag.  One of the mothers yells for them to be quiet but
+naturally the kids aren't paying attention.  Their giggles and footsteps are
+heard as they run off to another part of the village.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15775
+D1
+~
+~
+0 0 15781
+D2
+~
+~
+0 0 15785
+S
+#15781
+Treetop Walkway~
+~
+~
+The wood walkway splits off the north, south, and west.  As you look
+west, you see villagers walking around doing errands or just talking to
+people passing by.  The stomping of feet can be heard from all around as
+people make their way about.  A ball bounces by and is quickly followed by a
+group of screaming children.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15776
+D2
+~
+~
+0 0 15786
+D3
+~
+~
+0 0 15780
+S
+#15782
+Treetop Walkway~
+~
+~
+The wood path is really worn and holes are beginning to pop up
+everywhere.  Villagers just take extra care as they proceed normally along
+the path.  Plans must be in order for repairs from the stacks of wood put to
+the side.  Tools rest on the top of the stacks ready for use.  The village
+is built high enough in the trees so that you see the top of trees when
+looking through the holes.  
+~
+0 67502082 1
+Rd     0
+D0
+~
+~
+0 0 15777
+D2
+~
+~
+0 0 15787
+S
+#15783
+Treetop Walkway~
+~
+~
+The houses along the southern and western edges of the path are large
+then the rest of the village.  The doors and windows are lined in bright,
+colorful runes and emblems.  Each of which has their own glow that shines
+out to the walkway.  The houses are painted in bright yellows and greens. 
+Bright colors must be a sign of importance among the villagers.  A sign of
+two crossed swords hangs from the northern building.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15778
+D1
+~
+~
+0 0 15784
+S
+#15784
+Treetop Walkway~
+~
+~
+You have come across something different in the village.  Instead of
+buildings lining the entire street, the south is empty.  You have a clear
+view of the forest from here.  The green of the trees brightens up the
+atomsphere.  Couples stand against the southern ropes either staring out to
+the surroundings or into each other's eyes.  The only building here is the
+one to the north.  A shield is printed into the building next to the door.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15779
+D1
+~
+~
+0 0 15785
+D3
+~
+~
+0 0 15783
+S
+#15785
+Treetop Walkway~
+~
+~
+The path gently rocks back and forth in the tree tops.  A branch or two
+stick out over the rope railing.  Two kids stand next to them and flick them
+at people passing by.  This continues until an adult finally chases them
+off.  Buildings line the eastern side of the path.  You can see people
+walking by the windows.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15780
+D3
+~
+~
+0 0 15784
+D5
+~
+~
+0 0 15762
+S
+#15786
+Treetop Walkway~
+~
+~
+There are buildings on all sides of the path.  Torches can be seen
+flickering within a couple of the windows.  As you walk down the path, the
+smell of fresh rolls and bread reach your nose.  With all the open windows,
+it is impossible to narrow down where every sound or smell is coming from. 
+The pathway turns off to the north and east.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15781
+D1
+~
+~
+0 0 15787
+S
+#15787
+Treetop Walkway~
+~
+~
+This is the southeastern corner of the village.  In this corner, a booth
+has been erected.  An umbrella covers the booth with shade.  The umbrella is
+a real ugly thing with different color polka dots.  The booth underneath is
+covered with potions of a variety of sizes.  A cauldron is behind the booth
+spewing a horrible odor into the air.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 15782
+D3
+~
+~
+0 0 15786
+S
+#15788
+Back Door~
+~
+~
+The side of the castle blocks you way to the west.  The castle was built
+on a rocky foundation.  The actual dwelling does not start for about seven
+to eight feet above you.  A small wooden door is built into the rocky wall
+before you.  To the side of the door is a sign barely hanging from a nail. 
+It says, "Servant's Entrance."  
+~
+0 393218 2
+Rd     0
+D1
+~
+~
+0 0 15789
+D3
+~
+&zentrance~
+115 0 15718
+S
+#15789
+Forgotten Trail~
+~
+~
+You stand on top of a rocky surface that looks out over the forest.  The
+tops of a village can be seen in the tree tops far to the south.  Boulders
+sit around and many of them have deep, dark scorch marks.  The thin trail
+takes a turn toward a castle to the west and to a forest in the south.  
+~
+0 393218 2
+Rd     0
+D2
+~
+~
+0 0 15791
+D3
+~
+~
+0 0 15788
+S
+#15790
+Before a Castle~
+~
+~
+A wide and smooth brick trail leads up the front of a castle.  As you
+come closer, the portcullis has been covered in a rock slide.  Large
+boulders block the castle entrance.  The entire area is oddly quiet.  Not a
+sound is coming from anywhere.  The castle walls have been overtaken by long
+strands of ivy over the centuries.  The path heads back to the south.  
+~
+0 393218 2
+Rd     0
+D2
+~
+~
+0 0 15792
+S
+#15791
+Forgotten Trail~
+~
+~
+The ground is sloping downward the more you move to the north.  The trees
+on the side of this trail are beginning to be more sparse as the soil
+becomes rockier.  Weeds and grass have broken through the trail which ruins
+it's perfection.  The path which you are currently on continues on towards
+the north and south.  
+~
+0 393218 2
+Rd     0
+D0
+~
+~
+0 0 15789
+D2
+~
+~
+0 0 15794
+S
+#15792
+Brick Path~
+~
+~
+The brick path is quickly starting to increase in slope.  Even though the
+landscape around the trail has not been kept up, the brick path is in really
+good condition.  The bricks are still evenly placed with no chips or cracks.
+Not a single weed has broken through the path.  The terrain is becoming more
+rocky the further you go along the path.  As you look to the north, you
+see a castle a little way up.  The path also goes to the east.  
+~
+0 393218 2
+Rd     0
+D0
+~
+~
+0 0 15790
+D1
+~
+~
+0 0 15793
+S
+#15793
+Brick Path~
+~
+~
+This path comes to the foot of a small mountain.  Along the side of the
+path are bushes and trees.  They come up to edge of the brick path but none
+come over, not even their branches.  Upon closer inspection, some of the
+bushes look a little peculier as an odd glow comes from them.  The brick
+path makes a turn to the west and south.  
+~
+0 393218 2
+Rd     0
+E
+bush~
+The bushes emit an eerie glow.  Also, they appear to be a different type
+of bush than what you've seen normally in these parts.  
+~
+D1
+~
+bush~
+547 0 15794
+D2
+~
+~
+0 0 15795
+D3
+~
+~
+0 0 15792
+S
+#15794
+Forgotten Trail~
+~
+~
+The bushes spread out more as you make your way through.  Unlike the
+brick path which was going up, this small trail is sloping downward.  Also,
+this trail has been covered in dirt.  The grass on the sides has grown to
+enormous heights.  The forest starts to turn into a more rockier environment
+to the north.  A patch of oddly glowing bushes are growing to the west.  
+~
+0 393218 2
+Rd     0
+D0
+~
+~
+0 0 15791
+D3
+~
+bush~
+547 0 15793
+S
+#15795
+Start of a Brick Path~
+~
+~
+The grass is not growing to the heights previously seen in the forest. 
+From underneath the grass, a brick path can be seen.  This path appears to
+be in perfect condition.  It moves off to the north.  Large and lush trees
+block the horizon from view to the south.  From their appearance, one should
+be able to move through the grass to the south.  
+~
+0 393218 2
+Rd     0
+D0
+~
+~
+0 0 15793
+D2
+~
+~
+0 0 15796
+S
+#15796
+Overgrown Trail~
+~
+~
+There is a line of giant rocks moving from north to south.  They lie
+within the confines of the grassy ground.  Lush trees sprout up all about
+covering the ground in shade.  The grass is tall as it reaches up to your
+knees.  The ground underneath the grass feels harder than just dirt but not
+bumpy like rock.  
+~
+0 393218 3
+Rd     0
+D0
+~
+~
+0 0 15795
+D2
+~
+~
+0 0 15758
+S
+#0
+
+
+
+#SPECIALS
+M 15701 spec_guard
+M 15702 spec_guard
+M 15703 spec_guard
+M 15704 spec_cast_ghost
+M 15706 spec_cast_cleric
+M 15707 spec_cast_cleric
+M 15711 spec_nosferatu_mob
+M 15712 spec_repairman
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 15701 1 15702
+E 0 15701 0 20
+E 0 15702 0 5
+M 0 15704 1 15703
+G 0 15715 0
+E 0 15711 0 13
+M 0 15703 4 15706
+E 0 15704 0 8
+E 0 15703 0 20
+M 0 15703 4 15709
+E 0 15704 0 8
+E 0 15703 0 20
+M 0 15710 1 15710
+M 0 15703 4 15711
+E 0 15704 0 8
+E 0 15703 0 20
+M 0 15703 4 15714
+E 0 15704 0 8
+E 0 15703 0 20
+M 0 15704 1 15716
+E 0 15711 0 13
+O 0 15734 0 15721
+O 0 15738 0 15723
+O 0 15737 0 15723
+O 0 15736 0 15726
+O 0 15735 0 15726
+M 0 15708 1 15728
+M 0 15707 1 15728
+O 0 15739 0 15729
+M 0 15702 1 15730
+E 0 15701 0 20
+E 0 15702 0 5
+G 0 15716 0
+M 0 15705 4 15733
+E 0 15712 0 17
+E 0 15710 0 26
+M 0 15705 4 15735
+E 0 15712 0 17
+E 0 15710 0 26
+M 0 15705 4 15737
+E 0 15710 0 26
+E 0 15712 0 17
+M 0 15705 4 15739
+E 0 15712 0 17
+E 0 15710 0 26
+M 0 15711 1 15740
+E 0 15718 0 9
+E 0 15719 0 2
+E 0 15719 0 1
+E 0 15720 0 16
+O 0 15713 0 15741
+O 0 15714 0 15741
+O 0 15742 0 15741
+M 0 15749 1 15747
+O 0 15740 0 15748
+M 0 15742 4 15751
+M 0 15743 4 15753
+O 0 15749 0 15756
+M 0 15747 4 15760
+M 0 15717 3 15767
+M 0 15718 3 15767
+M 0 15746 1 15769
+E 0 15729 0 5
+M 0 15718 3 15776
+M 0 15713 1 15778
+G 0 15726 0
+G 0 15725 0
+M 0 15714 1 15779
+G 0 15723 0
+G 0 15724 0
+M 0 15716 1 15780
+E 0 15727 0 13
+M 0 15712 1 15782
+G 0 15731 0
+E 0 15730 0 22
+M 0 15717 3 15783
+M 0 15718 3 15784
+M 0 15741 3 15785
+M 0 15717 3 15786
+M 0 15715 1 15787
+E 0 15728 0 6
+G 0 15721 0
+G 0 15722 0
+S
+
+
+
+#SHOPS
+15713 5 4 3 32 0 100 100 0 23
+15714 9 1 27 8 0 100 100 0 23
+15715 2 10 19 26 0 100 100 0 23
+0
+
+
+
+#$

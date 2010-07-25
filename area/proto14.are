@@ -1,0 +1,1881 @@
+#AREADATA
+Name        New area~
+Builders    Keirkan~
+VNUMs       14001 14100
+Security    100
+Recall      17809
+Flags       16
+End
+
+
+
+#MOBILES
+#14001
+Fate Fiobe Incarnation~
+Fiobe~
+The Incarnation of Fate awaits your arrival
+~
+Fate's gaze falls upon you as if she is trying to decide what string of yours
+she should pull next. It irks you to know that she has complete control over
+your destiny and could send you digging graveyards for the rest of your life.
+Perhaps its time you did something about that!
+~
+1 0 0 0 0 0 S
+0 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#14002
+soul~
+A Soul~
+A soul wanders around Purgatory awaiting judgement
+~
+This poor soul has been deemed neither excessively evil nor excessively good.
+The souls like these must await for some mortal to pray to God to forgive
+their sins for they are incapable of praying for their own forgiveness.
+~
+1 0 0 0 0 0 S
+0 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>act_prog ~
+~
+|
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMDATA
+#14001
+Entrance to Purgatory~
+~
+~
+You have entered into what seems to be the beginning of the afterlife.
+Although it is possible for mortals to enter into this realm, it is hardly a
+place for them to be. The way of the ethereal is treacherous indeed and can
+be hazardous for any mortals life, for the dead look upon your life with
+contempt as they realize what they have lost. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14002
+S
+#14002
+A Hallway in Purgatory~
+~
+~
+Purgatory, the realm of waiting for judgement is not a pretty place. Tormented
+souls wait to be either admitted into heaven or passed down into hell. Being
+that such a decision last an eternity it is obvious why the people here seem
+so agitated. All around you people wander mindless around talking to nobody
+in particular and everybody at the same time.
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14004
+D2
+~
+~
+0 0 14001
+S
+#14003
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14006
+D1
+~
+~
+0 0 14004
+S
+#14004
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14007
+D1
+~
+~
+0 0 14005
+D2
+~
+~
+0 0 14002
+D3
+~
+~
+0 0 14003
+S
+#14005
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14008
+D3
+~
+~
+0 0 14004
+S
+#14006
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14009
+D1
+~
+~
+0 0 14007
+D2
+~
+~
+0 0 14003
+D3
+~
+~
+0 0 14014
+S
+#14007
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14010
+D1
+~
+~
+0 0 14008
+D2
+~
+~
+0 0 14004
+D3
+~
+~
+0 0 14006
+S
+#14008
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14011
+D1
+~
+~
+0 0 14012
+D2
+~
+~
+0 0 14005
+D3
+~
+~
+0 0 14007
+S
+#14009
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14010
+D2
+~
+~
+0 0 14006
+S
+#14010
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14022
+D1
+~
+~
+0 0 14011
+D2
+~
+~
+0 0 14007
+D3
+~
+~
+0 0 14009
+S
+#14011
+Wandering Purgatory~
+~
+~
+You continue to explore Purgatory to get a general feel of the place.
+Although it is not really a 'bad' place, something here just does not
+feel right...its as though something is missing. Around you the
+resident souls wander lostly, for they shall be stuck in this place
+for eternity or until some poor mortal prays for their sins. Indeed
+it is not very hopeful for these people and yet still a faint flicker
+of hope remains in their eyes.
+ 
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14008
+D3
+~
+~
+0 0 14010
+S
+#14012
+A Small Store~
+~
+~
+A small store lies off to the side of Purgatory. It seems even the souls here
+must eat something to sustain themselves, although the shop really doesn't
+look that busy. Hmm...perhaps its just because all they sell is bread and
+water. Who would wanna eat that for eternity...?
+ 
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14008
+D5
+~
+~
+0 0 14013
+S
+#14013
+The Cellar of the Store~
+~
+~
+You have entered into the underground cellar of Cleatus' shop. It seems that
+Cleatus has set up some kind of illegal trades in this room and it surely
+would not go well with the boys upstairs if they ever heard about this!
+Quivering, Cleatus offers his wares to you pleading for your mercy. Surely
+this is an advantage that does not come along very often!
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 14012
+S
+#14014
+The Corridor of Death~
+~
+~
+You have ventured upon a strange path on the edges of Purgatory. All life
+seems to have withered away and you feel something strange tugging on your
+soul leading in that direction. Perhaps it would be safer just to forget this
+trail and head back, although it would be interesting to see what lies ahead!
+ 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14006
+D3
+~
+~
+0 0 14015
+S
+#14015
+The Corridor of Death~
+~
+~
+Further down the hallway you go and it seems even deader then the previous
+room. You stop and think to yourself whether continuing down this path would
+be beneficial to YOUR health. It certainly seems like nothing else has been
+able to survive it...
+ 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14014
+D3
+~
+~
+0 0 14016
+S
+#14016
+Entrance to the Death Trials~
+~
+~
+You have found your way to the Death Trials, a fearsome set of monsters that
+defend the Incarnation of Death, Thanatos. If you think yourself worthy to
+face Death himself continue onwards for surely this is the right direction,
+however if you feel yourself to be no match for the very person who could rip
+your soul from your body with no thought at all, perhaps it would be best
+to head back.
+ 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14015
+D5
+~
+~
+0 0 14017
+S
+#14017
+The First Horseman~
+~
+~
+The first of the four horsemen who defend Thanatos resides here. The Horseman
+of War is an undead warrior who thrives on war, butchery, pillage and plunder!
+Specializing on the brute force of his axe, his opponents fear and un-nerving
+tactics, War is a very intimidating foe!
+ 
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 14018
+S
+#14018
+The Second Horseman~
+~
+~
+The second defender, the Horseman of Famine, is a disgusting site indeed. As
+thin a stick and as frail as a elderly woman you are sure that this should be
+no problem at all. However, you cannot help but feel like wretching at the
+very site of this opponent and you have this strange feeling that perhaps this
+will not be as easy as it looks.
+ 
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 14019
+S
+#14019
+name The Third Horseman~
+~
+~
+The third defender, the Horseman of Pestilence, thrives on weakness and
+disease. Decaying and rotting flesh peal of his disgusting body as swarms of
+flies, bugs and maggots crawl around his appendages eating their way to his
+very bones. A toothless grin, Pestilence advances towards you piece by piece...
+ 
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 14020
+S
+#14020
+The Fourth Horseman~
+~
+~
+The final defender of Thanatos and and the Incarnations right hand man, the
+Horseman of Death calmly awaits your approach. You feel fear wrap tightly
+around your heart and begin to squeeze the life out of you. It seems that you
+had better finish off this opponent fast or being in its mere presence may
+kill you alone!
+ 
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14021
+S
+#14021
+The Incarnation of Death~
+~
+~
+The Incarnation of Death, Thanatos, at last!  Unfortunately for you, if
+you thought the horseman were hard, it would not comfort you to hear how
+Thanatos gained their loyalty.  A black scythe in hand a hood as dark as
+night, Thanatos advances towards you to claim your soul...  
+ 
+~
+0 4 0
+Rd     0
+S
+#14022
+Base of the Stairway to Heaven~
+~
+~
+The base of the grand stairway to heaven lies in front of you. The stairway
+itself is a spectacle that few could match, the glistening white marble, the
+solid gold railings and the majestic climb into the heavens! It shall be a
+pity when the blood from your veins spills all over the nice white steps!
+ 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14023
+D2
+~
+~
+0 0 14010
+S
+#14023
+The Stairway to Heaven~
+~
+~
+You have reached the foot of the Stairway to Heaven, a trial of divine nature.
+Before you stands Mars, the Incarnation of War, the first of your three trials
+on your quest to meet God. The stairway seems made of slick white marble with
+golden rails, its beauty and majesty is almost enough to make you weep.
+Slowly, you begin to make your way forward to meet your first challenge.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14022
+D4
+~
+~
+0 0 14024
+S
+#14024
+The Stairway to Heaven~
+~
+~
+You continue your climb towards the top of the stairway.  You have
+defeated one of the three Incarnations protecting the stairway and only Evil
+and Nature remain.  Surely they can be no harder then the Incarnation of War
+himself!  Then again...  We shall surely see soon enough!  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 14025
+D5
+~
+~
+0 0 14023
+S
+#14025
+The Stairway to Heaven~
+~
+~
+You have come across the Incarnation known as Lucifer, the Incarnation of
+Evil!  When you look at his small stature, you almost believe that this
+fight will be a cake-walk.  However the look in Lucifer's eyes tell you a
+different story!  In fact, if you could, it would probably be in your best
+interest just to sell your soul to the devil for assuredly it is as good as
+his if you sit here and fight him!  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 14026
+D5
+~
+~
+0 0 14024
+S
+#14026
+The Stairway to Heaven~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 14027
+D5
+~
+~
+0 0 14025
+S
+#14027
+The Stairway to Heaven~
+~
+~
+You have reached the final set of stairs and the final defender of the
+stairway to heaven.  Gaea looks at you cooly and calmly as if she is sizing
+up how formidable a warrior you could be.  You look upon her lightly green
+skin and her wise face and wonder if you could ever harm such a magnificant
+creature!  She could be no more harmful then a bug under your boot by the
+looks of it, however you are much more clever then that to underestimate an
+Incarnation!  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14028
+D5
+~
+~
+0 0 14026
+S
+#14028
+The Gateway to Heaven~
+~
+~
+The gigantic, ethereal gateway to heaven lies right before your eyes. 
+Its magnificant design would bring tears to any warriors eyes and the bright
+light beyond beckons you to come forward.  Before the gate stands the
+gatekeeper, Saint Peter.  He shall decide whether you are allowed to enter
+into Heaven so be nice!  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14030
+D2
+~
+~
+0 0 14027
+S
+#14029
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. 
+This realm of heaven is reserved for the normal, everyday, good christian
+souls.  Although there is nothing spectacular about this place, the place
+exudes a sense of contentment, happiness and fulfillment.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14032
+D1
+~
+~
+0 0 14030
+S
+#14030
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. 
+This realm of heaven is reserved for the normal, everyday, good christian
+souls.  Although there is nothing spectacular about this place, the place
+exudes a sense of contentment, happiness and fulfillment.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14033
+D1
+~
+~
+0 0 14031
+D2
+~
+~
+0 0 14028
+D3
+~
+~
+0 0 14029
+S
+#14031
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14034
+D3
+~
+~
+0 0 14030
+S
+#14032
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14035
+D1
+~
+~
+0 0 14033
+D2
+~
+~
+0 0 14029
+S
+#14033
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. 
+This realm of heaven is reserved for the normal, everyday, good christian
+souls.  Although there is nothing spectacular about this place, the place
+exudes a sense of contentment, happiness and fulfillment.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14036
+D1
+~
+~
+0 0 14034
+D2
+~
+~
+0 0 14030
+D3
+~
+~
+0 0 14032
+S
+#14034
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14037
+D2
+~
+~
+0 0 14031
+D3
+~
+~
+0 0 14033
+S
+#14035
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14038
+D1
+~
+~
+0 0 14036
+D2
+~
+~
+0 0 14032
+S
+#14036
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14039
+D1
+~
+~
+0 0 14037
+D2
+~
+~
+0 0 14033
+D3
+~
+~
+0 0 14035
+D4
+~
+~
+0 0 14042
+S
+#14037
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14040
+D2
+~
+~
+0 0 14034
+D3
+~
+~
+0 0 14036
+S
+#14038
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14039
+D2
+~
+~
+0 0 14035
+S
+#14039
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14040
+D2
+~
+~
+0 0 14036
+D3
+~
+~
+0 0 14038
+S
+#14040
+The Lower Level of Heaven~
+~
+~
+You continue to explore the great white vastness that is lower heaven. This
+realm of heaven is reserved for the normal, everyday, good christian souls.
+Although there is nothing spectacular about this place, the place exudes a
+sense of contentment, happiness and fulfillment.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14037
+D3
+~
+~
+0 0 14039
+S
+#14041
+The Hallway of Saints~
+~
+~
+The hallway of saints is a sanctuary for those mortals of earth whose faith
+in God was so strong that they became saintly. Their paradise consists
+mostly of praying to God and thanking Him for what He has given them.
+Lost unto their own little world, many of the saints have forgotten about
+the world that is and have abandoned the mortals unto their own doings.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14043
+D1
+~
+~
+0 0 14042
+S
+#14042
+The Hallway of Saints~
+~
+~
+The hallway of saints is a sanctuary for those mortals of earth whose faith
+in God was so strong that they became saintly. Their paradise consists
+mostly of praying to God and thanking Him for what He has given them.
+Lost unto their own little world, many of the saints have forgotten about
+the world that is and have abandoned the mortals unto their own doings.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14044
+D3
+~
+~
+0 0 14041
+D5
+~
+~
+0 0 14036
+S
+#14043
+The Hallway of Saints~
+~
+~
+The hallway of saints is a sanctuary for those mortals of earth whose faith
+in God was so strong that they became saintly. Their paradise consists
+mostly of praying to God and thanking Him for what He has given them.
+Lost unto their own little world, many of the saints have forgotten about
+the world that is and have abandoned the mortals unto their own doings.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14045
+D1
+~
+~
+0 0 14044
+D2
+~
+~
+0 0 14041
+S
+#14044
+The Hallway of Saints~
+~
+~
+The hallway of saints is a sanctuary for those mortals of earth whose faith
+in God was so strong that they became saintly. Their paradise consists
+mostly of praying to God and thanking Him for what He has given them.
+Lost unto their own little world, many of the saints have forgotten about
+the world that is and have abandoned the mortals unto their own doings.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14046
+D2
+~
+~
+0 0 14042
+D3
+~
+~
+0 0 14043
+S
+#14045
+The Hallway of Saints~
+~
+~
+The hallway of saints is a sanctuary for those mortals of earth whose faith
+in God was so strong that they became saintly. Their paradise consists
+mostly of praying to God and thanking Him for what He has given them.
+Lost unto their own little world, many of the saints have forgotten about
+the world that is and have abandoned the mortals unto their own doings.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14047
+D1
+~
+~
+0 0 14046
+D2
+~
+~
+0 0 14043
+S
+#14046
+The Hallway of Saints~
+~
+~
+The hallway of saints is a sanctuary for those mortals of earth whose faith
+in God was so strong that they became saintly. Their paradise consists
+mostly of praying to God and thanking Him for what He has given them.
+Lost unto their own little world, many of the saints have forgotten about
+the world that is and have abandoned the mortals unto their own doings.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14048
+D2
+~
+~
+0 0 14044
+D3
+~
+~
+0 0 14045
+S
+#14047
+The Hallway of Saints~
+~
+~
+The hallway of saints is a sanctuary for those mortals of earth whose faith
+in God was so strong that they became saintly. Their paradise consists
+mostly of praying to God and thanking Him for what He has given them.
+Lost unto their own little world, many of the saints have forgotten about
+the world that is and have abandoned the mortals unto their own doings.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14048
+D2
+~
+~
+0 0 14045
+S
+#14048
+The Hallway of Saints~
+~
+~
+The hallway of saints is a sanctuary for those mortals of earth whose faith
+in God was so strong that they became saintly. Their paradise consists
+mostly of praying to God and thanking Him for what He has given them.
+Lost unto their own little world, many of the saints have forgotten about
+the world that is and have abandoned the mortals unto their own doings.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14046
+D3
+~
+~
+0 0 14047
+D4
+~
+~
+0 0 14049
+S
+#14049
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14051
+D5
+~
+~
+0 0 14048
+S
+#14050
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14054
+D1
+~
+~
+0 0 14051
+S
+#14051
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14055
+D1
+~
+~
+0 0 14052
+D2
+~
+~
+0 0 14049
+D3
+~
+~
+0 0 14050
+S
+#14052
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14056
+D3
+~
+~
+0 0 14051
+S
+#14053
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14060
+D1
+~
+~
+0 0 14054
+S
+#14054
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14061
+D1
+~
+~
+0 0 14055
+D2
+~
+~
+0 0 14050
+D3
+~
+~
+0 0 14053
+S
+#14055
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14062
+D1
+~
+~
+0 0 14056
+D2
+~
+~
+0 0 14051
+D3
+~
+~
+0 0 14054
+S
+#14056
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14063
+D1
+~
+~
+0 0 14057
+D2
+~
+~
+0 0 14052
+D3
+~
+~
+0 0 14055
+S
+#14057
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14064
+D3
+~
+~
+0 0 14056
+S
+#14058
+The Realm of Angels~
+~
+~
+You have entered a side hallway in the realm of angels. A feeling a great
+power vibrates along the walls beckoning you forward. The corridor itself
+is extremely bright, moreso then any other area of heaven that you have
+seen so far!
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14070
+D1
+~
+~
+0 0 14059
+S
+#14059
+The Realm of Angels~
+~
+~
+You have entered a side hallway in the realm of angels. A feeling a great
+power vibrates along the walls beckoning you forward. The corridor itself
+is extremely bright, moreso then any other area of heaven that you have
+seen so far!
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14060
+D3
+~
+~
+0 0 14058
+S
+#14060
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14061
+D2
+~
+~
+0 0 14053
+D3
+~
+~
+0 0 14059
+S
+#14061
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14073
+D1
+~
+~
+0 0 14062
+D2
+~
+~
+0 0 14054
+D3
+~
+~
+0 0 14060
+S
+#14062
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14074
+D1
+~
+~
+0 0 14063
+D2
+~
+~
+0 0 14055
+D3
+~
+~
+0 0 14061
+S
+#14063
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14075
+D1
+~
+~
+0 0 14064
+D2
+~
+~
+0 0 14056
+D3
+~
+~
+0 0 14062
+S
+#14064
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14065
+D2
+~
+~
+0 0 14057
+D3
+~
+~
+0 0 14063
+S
+#14065
+The Realm of Angels~
+~
+~
+You have entered a side hallway in the realm of angels. A feeling a great
+power vibrates along the walls beckoning you forward. The corridor itself
+is extremely bright, moreso then any other area of heaven that you have
+seen so far!
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14066
+D3
+~
+~
+0 0 14064
+S
+#14066
+The Realm of Angels~
+~
+~
+You have entered a side hallway in the realm of angels. A feeling a great
+power vibrates along the walls beckoning you forward. The corridor itself
+is extremely bright, moreso then any other area of heaven that you have
+seen so far!
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14067
+D3
+~
+~
+0 0 14065
+S
+#14067
+The Realm of Angels~
+~
+~
+You have entered a side hallway in the realm of angels. A feeling a great
+power vibrates along the walls beckoning you forward. The corridor itself
+is extremely bright, moreso then any other area of heaven that you have
+seen so far!
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14068
+D2
+~
+~
+0 0 14066
+S
+#14068
+The Realm of Angels~
+~
+~
+You have entered a side hallway in the realm of angels. A feeling a great
+power vibrates along the walls beckoning you forward. The corridor itself
+is extremely bright, moreso then any other area of heaven that you have
+seen so far!
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14069
+D3
+~
+~
+0 0 14067
+S
+#14069
+Arch-Angel Gabriel's Home~
+~
+~
+The home of Gabriel is very neat and particular as everything has its
+proper place.  The label 'the executioner' has been put on this angel for
+the very fact that he is God's own angel of death!  Tread carefully mortals
+for the very breath from Gabriel's mouth means death!  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14068
+S
+#14070
+The Realm of Angels~
+~
+~
+You have entered a side hallway in the realm of angels. A feeling a great
+power vibrates along the walls beckoning you forward. The corridor itself
+is extremely bright, moreso then any other area of heaven that you have
+seen so far!
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14058
+D3
+~
+~
+0 0 14071
+S
+#14071
+The Realm of Angels~
+~
+~
+You have entered a side hallway in the realm of angels. A feeling a great
+power vibrates along the walls beckoning you forward. The corridor itself
+is extremely bright, moreso then any other area of heaven that you have
+seen so far!
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14070
+D3
+~
+~
+0 0 14072
+S
+#14072
+The Abode of the Arch-Angel Michael~
+~
+~
+The home of Michael is cluttered with papers and other administration
+utensils.  Michael's job is a very tedious one as he must oversee all the
+lesser angels activities, where they shall preach The Word, what miracles to
+perform and where, ecetera.  You are very lucky that Michael doesn't just
+ignore you completely!  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14071
+S
+#14073
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14074
+D2
+~
+~
+0 0 14061
+S
+#14074
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14076
+D1
+~
+~
+0 0 14075
+D2
+~
+~
+0 0 14062
+D3
+~
+~
+0 0 14073
+S
+#14075
+The Realm of Angels~
+~
+~
+As you wander the realm of angels you hear the glorious sings and hymn
+chanting from the flocks of angels that are around every corner. Feelings
+of warmth and comfort exude from this place, as if total serenity has
+been reached here. You can feel that your quest for God is drawing
+nearer to an end.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14063
+D3
+~
+~
+0 0 14074
+S
+#14076
+Before The Office of Good~
+~
+~
+The room above is the domain of the Incarnation of Good.  She has been
+charged by God to rule the realm of Heaven and keep it the way He had made
+it.  Much of her time goes to administrative duties, however, she is also
+responsible for keeping the balance of Good and Evil in the mortal realms.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14074
+D4
+~
+~
+0 0 14077
+S
+#14077
+The Office of the Incarnation of Good~
+~
+~
+The Incarnatin of Good looks confused at your unexpected visit.  Being
+stuck in her office all the time doesn't allow her many visitors or a lot of
+free time.  She is a good looking woman who looks no older then perhaps 25
+years and has long golden hair down to her waist.  The office is littered
+with small trinkets and a large blazing fire is set into the wall.  
+~
+0 536870912 0
+Rd     0
+D5
+~
+~
+0 0 14076
+S
+#14079
+The Hallway Before God~
+~
+~
+You have been transported to the hallway before God!  Wondering where the
+rest of your companions could be you prepare yourself to meet your maker. 
+You wonder what sort of fate lies beyond the next room as it quivers with
+some kind of divinely power.  Nonetheless your fate lies in that direction
+and you have no choice except to take it.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14080
+S
+#14080
+The Throne of Judgement~
+~
+~
+You have reached the place of judgement; a vast chamber of arching marble
+columns.  A huge horde of souls stand here patiently, waiting for their
+chance to stand before Zorich, the Judger of Souls.  From there the
+fortunate are transported to to the realm of their gods.  Shimmering figures
+are appearing and reappearing; you see a Valkyrie appear to collect the
+spirit of a fallen barbarian warrior, and a horrid shambling orcish demigod
+come to transport an orcish soldier to the feasting halls of Grash'Thok. 
+You get the feeling that perhaps you'd rather pass on the afterlife; your
+equipment is still on your corpse, after all...  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14079
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,776 @@
+#AREADATA
+Name        The Graveyard Shift~
+Builders    Doomshifter~
+VNUMs       6500 6599
+Security    100
+Recall      6501
+Flags       16
+Version     107
+Creator     Doomshifter~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#6501
+gatekeeper~
+the Gatekeeper~
+A crazy old man paces back and forth before the gates.
+~
+This long-haired, grizzled old man has watched over the cemetary for
+years.  The recent occurences within have driven him from all logical
+thought.  Keeping with his family tradition, he will oversee the cemetary
+gates until he passes on.  He has a strange mark upon his left wrist, it
+appears to be a scarab.  
+~
+131079 128 0 0 0 350 S
+15 1 30 30 0 500d0+0 0d0+0
+150 0 0
+0 0 1
+1 0 0
+>greet_prog 100~
+emote peers at you intently.
+say This really isn't the place you want to be right now!
+say I can assure you!
+say Go back where you came from!
+~
+>speech_prog mark~
+say What mark?
+~
+>speech_prog wrist~
+say Who's wrist?
+~
+>speech_prog scarab~
+say Oh!  This?
+say I got this way back when I served in the Lord's Navy!  Yes
+emote scratches at the strange marking...
+say Its always been there, I think
+~
+|
+#6502
+wispy shade~
+a wispy shade~
+A wispy shade reaches out to you with icy hands!
+~
+An incorpereal form seems to float lazily towards you.  You are able to
+make out vague humanoid features...  Hands.  They seem to be coated in a
+thick frost!  
+~
+37 524288 0 0 0 0 S
+15 1 25 25 0 475d0+0 0d0+0
+150 0 0
+0 0 0
+1 0 0
+#6503
+ectoplasmic hand~
+the ectoplasmic hand~
+&wA creepy ectoplasmic hand reaches out for your soul!
+~
+A strange apparition of a four-fingered hand grasps for your throat!
+~
+35 1048576 0 2 0 0 S
+25 1 50 50 0 700d0+0 0d0+0
+250 0 0
+0 0 0
+3 0 0
+#6504
+restless hound~
+a restless hound~
+A restless hound silently patrols the grounds.
+~
+This large hound seems to come from a tough family of Mastiffs, bred by
+the lords of Hammerheim.  It thoughtlessly guards the graveyard from tomb
+robbers.  
+~
+39 65536 0 0 0 0 S
+20 1 40 40 0 500d0+0 0d0+0
+200 0 0
+0 0 0
+3 0 0
+#6505
+shimmering visage~
+the shimmering visage~
+&zA horrific shimmering visage of death reaches out for you!
+~
+~
+35 0 0 0 0 0 S
+29 1 60 50 0 780d0+0 0d0+0
+290 0 0
+0 0 0
+0 0 0
+#6506
+phantom watchman~
+the phantom watchman~
+The phantom watchman never leaves his post.
+~
+~
+3 1146882 0 0 0 100 S
+27 1 60 60 0 700d0+0 0d0+0
+270 0 0
+0 0 0
+3 0 0
+#6507
+ghostly gentleman~
+the ghostly gentleman~
+A ghostly gentleman tips his hat to you.
+~
+~
+7 1048578 0 0 0 0 S
+21 1 50 60 0 580d0+0 0d0+0
+0 0 0
+0 0 1
+2 0 0
+#6508
+spectral knight~
+the spectral knight~
+A Spectral Knight polishes his mangled and dented armor.
+~
+~
+7 1114112 0 0 0 0 S
+30 1 45 45 0 1100d0+0 0d0+0
+14 0 0
+0 0 0
+3 0 0
+#6509
+misty warhorse horse~
+a misty warhorse~
+A misty warhorse fades in and out of the darkness.
+~
+~
+35 1048706 0 0 0 0 S
+30 1 10 50 0 900d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+emote rears onto its hind legs and charges toward you!
+~
+|
+#6510
+bert gorda~
+Old Bert Gorda~
+Old Bert Gorda searches for his head here.
+~
+Bert Gorda lost his head while leaning out of a carriage window despite
+the carriage driver's repeated warnings.  
+~
+7 1048576 0 0 0 0 S
+25 1 50 50 0 700d0+0 0d0+0
+4 0 0
+0 0 1
+34 0 0
+#6511
+sheila gorda~
+Sheila Gorda~
+The old witch Sheila Gorda staggers about blindly.
+~
+Sheila Gorda had her eyes gouged out for heresy and witchcraft.  She
+never "saw" any justice in that.  
+~
+7 1048577 0 0 0 0 S
+29 1 50 50 0 900d0+0 0d0+0
+0 0 0
+0 0 2
+3 0 0
+#0
+
+
+
+#OBJECTS
+#6501
+sign~
+an old wooden sign~
+An old wooden sign has been standing here for centuries.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+This area was designed with care for the upcoming character.  If you
+below the 15th level of experience, please turn back.  If you are above the
+16th level of experience, or are extremely brave (and/or foolish), do
+continue on If you above the level of 35, you will not find the graveyard
+difficult enough, so please leave the gravedigging to your lessers.  
+ 
+Sincerely yours,
+Aglovale
+1999
+~
+#6502
+nasty club~
+a nasty looking club~
+A nasty looking club rests here innocently.~
+~
+5 64 0 0 0 8193 15
+100 100
+0~ 0~ 0~ 7~
+7 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+#6503
+pile bones~
+a pile of bones~
+&WA pile of sun-bleached bones lies here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+12 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#6504
+ring king navy~
+ring of the King's Navy~
+A ring of the Royal Navy lies here.~
+~
+9 0 0 0 0 3 15
+100 100
+15~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+3 1
+#6505
+pewter bracelet~
+a pewter bracelet~
+A dented pewter bracelet has been left here.~
+~
+9 0 0 0 0 4097 25
+100 100
+10~ 0~ 0~ 0~
+2 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+1 2
+A
+13 20
+#6506
+leather girth~
+a broad leather girth~
+A broad leather girth is lying here in the mud.~
+~
+9 64 0 0 0 2049 25
+100 100
+8~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+A
+2 1
+A
+13 5
+#6507
+spiked mace~
+a spiked mace~
+A dangerous-looking spiked mace lies here.~
+~
+5 32768 544 0 0 8193 25
+100 100
+0~ 0~ 0~ 7~
+4 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+13 15
+A
+26 25
+A
+18 5
+A
+19 7
+#6508
+monocle~
+a monocle~
+A cracked monocle lies here.~
+~
+9 64 0 0 0 131073 25
+100 100
+2~ 0~ 0~ 0~
+2 1 0
+5 0
+scry~
+3 3
+0 0 0
+A
+3 2
+A
+2 -2
+A
+12 10
+A
+25 5
+#6509
+morbid story book~
+a morbid storybook~
+A spooky looking storybook lies here on the road.~
+~
+2 0 0 0 0 16385 20
+100 100
+20~ word of recall~ detect evil~ detect hidden~
+6 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#6510
+light horseman lance~
+a light horseman's lance~
+A light horseman's lance has been thrust into the ground.~
+~
+5 65600 36864 0 0 8193 30
+100 100
+0~ 0~ 0~ 0~
+0 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+2 -3
+A
+18 15
+A
+19 15
+#6511
+heavy shield~
+a heavy horseman's shield~
+A heavy iron horseman's shield lies here.~
+~
+9 0 0 0 0 513 30
+100 100
+2~ 0~ 0~ 0~
+12 28 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 3
+A
+19 3
+A
+13 30
+A
+12 30
+A
+25 10
+A
+26 30
+A
+24 -10
+A
+23 -10
+#6512
+chain barding~
+heavy chain barding~
+A suit of heavy chain barding lies here.~
+~
+9 536875008 0 0 0 33 30
+100 100
+5~ 0~ 0~ 0~
+30 360 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -5
+A
+19 -5
+A
+2 -2
+#0
+
+
+
+#ROOMDATA
+#6501
+A path to the graveyard~
+~
+~
+As you follow this winding and twisted path towards the graveyard, your
+senses are assaulted by many foul odors and screams.  Something definitely
+is not right inside the old cemetary.  Rumors and legends persist that dead
+are extremely restless within the plots.  To the south, strange lights
+flicker ominously in the dense fog, and a shrill cackle pierces the air. 
+Beside you, a small crooked sign wavers in the wind.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 6502
+S
+#6502
+A path to the graveyard~
+~
+~
+Following the path closer and closer to the graveyard, you noticed that
+the once grand gateway, has fallen away and lies in a pile of rubble.  The
+sun begins to dip behind the horizon, casting long shadows behind you. 
+Screeches and howls of bloodlust echo through the deserted valley.  Perhaps
+this evening was not the best to go out graverobbing!  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 6501
+D2
+~
+~
+0 0 6503
+S
+#6503
+Standing before the Grand Gateway~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 6502
+D2
+~
+~
+0 0 6504
+S
+#6504
+Cemetary Lane~
+~
+~
+~
+0 4 2
+Rd     0
+D0
+~
+~
+0 0 6503
+D2
+~
+~
+0 0 6506
+D3
+~
+~
+0 0 6505
+S
+#6505
+A burial plot~
+~
+~
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 6504
+S
+#6506
+Cemetary Lane North~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 6504
+D2
+~
+~
+0 0 6507
+D3
+~
+~
+0 0 6550
+S
+#6507
+Cemetary Lane North~
+~
+~
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 6506
+D2
+~
+~
+0 0 6508
+S
+#6508
+The Main Cemetary Intersection~
+~
+~
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 6507
+D3
+~
+~
+0 0 6509
+S
+#6509
+~
+~
+~
+~
+0 1024 0
+Rd     0
+D0
+~
+~
+0 0 6552
+D1
+~
+~
+0 0 6508
+D2
+~
+~
+0 0 6553
+D3
+~
+~
+0 0 6510
+S
+#6510
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 6511
+D1
+~
+~
+0 0 6509
+S
+#6511
+Chrysanthemum Row~
+~
+~
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 6512
+D2
+~
+~
+0 0 6510
+D3
+~
+~
+0 0 6554
+S
+#6512
+Chrysanthemum Row~
+~
+~
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 6513
+D2
+~
+~
+0 0 6511
+D3
+~
+~
+0 0 6555
+S
+#6513
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 6512
+S
+#6550
+Standing beside an open grave~
+~
+~
+~
+0 33554432 0
+Rd     0
+D1
+~
+~
+0 0 6506
+D5
+~
+~
+0 0 6551
+S
+#6551
+Bottom of the grave~
+~
+~
+~
+0 0 8
+Rd     0
+D4
+~
+~
+0 0 6550
+S
+#6552
+A small coul-de-sac~
+~
+~
+~
+0 32768 2
+Rd     0
+D2
+~
+~
+0 0 6509
+S
+#6553
+A Glorious Knight's Tomb~
+~
+~
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 6509
+S
+#6554
+The Gorda Family Resting Place~
+~
+~
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 6511
+S
+#6555
+Shiela Gorda's Final Resting Place~
+~
+~
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 6512
+S
+#0
+
+
+
+#SPECIALS
+M 6507 spec_thief
+M 6511 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 6501 0 6501
+M 0 6501 1 6503
+E 0 6502 0 20
+E 0 6504 0 1
+O 0 6503 0 6505
+M 0 6502 2 6506
+M 0 6505 1 6508
+M 0 6506 1 6509
+E 0 6506 0 17
+E 0 6507 0 20
+M 0 6503 1 6551
+G 0 6505 0
+M 0 6507 1 6552
+E 0 6508 0 7
+E 0 6509 0 22
+M 0 6508 1 6553
+E 0 6510 0 20
+E 0 6511 0 15
+M 0 6509 1 6553
+E 0 6512 0 11
+M 0 6510 1 6554
+M 0 6511 1 6555
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

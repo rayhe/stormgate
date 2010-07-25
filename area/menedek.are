@@ -1,0 +1,5746 @@
+#AREADATA
+Name        { 50-70} Menedek~
+Builders    Gorsha~
+VNUMs       6000 6199
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Gorsha~
+Llevel      0
+Ulevel      0
+Sounds      Suddenly the air becomes extremely still.~
+Music       loth.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#6000
+Small Boy~
+a small boy~
+A small boy runs through the crowd.
+~
+The little boy is wearing a pair of overalls.  The overalls look a little
+too big as the one strap keeps sliding off his shoulder.  
+~
+65 0 0 0 2 1000 S
+55 1 110 110 0 13000d0+0 0d0+0
+550 0 0
+0 0 1
+1 0 0
+#6001
+Little Girl~
+a little girl~
+A little girl skips down the street.
+~
+The little girl has an expression of happiness on her face.  She does not
+seem to care what is going on around her as she goes on her way.  
+~
+65 0 0 0 2 0 S
+55 1 110 110 0 13000d0+0 0d0+0
+550 0 0
+0 0 2
+1 0 0
+#6002
+Guard Menedek~
+a Guard of Menedek~
+A guard patrols the streets of the city.
+~
+The guards of Menedek are only armored with standard leather gear.  The
+casually walk the streets since there hasn't been trouble in years.  
+~
+65 168 0 0 2 1000 S
+65 1 130 130 0 18900d0+0 0d0+0
+650 0 0
+0 0 0
+1 0 0
+#6003
+Male Citizen Menedek~
+a Citizen of Menedek~
+A citizen of the city waves at friends across the street.
+~
+This citizen is wearing a common pair of pants.  His long shirt isn't
+tucked into his pants as it flaps in a gentle breeze.  He sees an old friend
+and starts to wave in his direction.  
+~
+65 0 0 0 2 1000 S
+60 1 120 120 0 17000d0+0 0d0+0
+0 0 0
+0 0 1
+1 0 0
+#6004
+Female Citizen Menedek~
+a Citizen of Menedek~
+A citizen of Menedek walks down the street with a shopping bag.
+~
+This citizen must have just finished her shopping.  The bags in her hands
+are full of new clothes and accessories.  
+~
+65 0 0 0 2 1000 S
+60 1 120 120 0 17000d0+0 0d0+0
+0 0 0
+0 0 2
+1 0 0
+#6005
+Katianna~
+Katianna~
+Katianna looks over the crowd within her Inn.
+~
+Katianna isn't the most attractive women in the world.  She looks rather
+plain.  The large clothes she wears hides the plump body underneath.  Her
+apron is dirty from all the grease and sweat on the tables.  
+~
+75 262336 71303188 0 2 1000 S
+107 1 214 214 0 51750d0+0 0d0+0
+1070 0 0
+0 0 0
+1 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Welcome to the Inn of Pure Heart!
+say Stay and have something to eat at Growel's.
+endif
+~
+>speech_prog drunk dwarf~
+if ispc($n)
+say Oh, don't worry about him.
+say He always rants and raves about nonsense.
+endif
+~
+>speech_prog evil magician magicians magic~
+if ispc($n)
+emote looks disappointed in you.
+say Don't tell me that you believe the words of a drunk.
+say Thats just an old story told to kids to keep
+say them from misbehaving. Pay it no attention.
+endif
+~
+|
+#6006
+Growel~
+Growel~
+Growel awaits the next order.
+~
+Growel is an elderly dwarf.  His beard is covered with grease and soot
+from the stove.  You can hear his hardy voice from anywhere as he yells out
+an order.  
+~
+67 0 16 0 3 1000 S
+50 1 100 100 0 11500d0+0 0d0+0
+0 0 0
+0 0 1
+1 0 0
+>all_greet_prog 75~
+if ispc($n)
+say I'm glad you've come to my lil counter.
+say I have the best food in all of Menedek!
+say Type LIST to see my grand recipes.
+endif
+~
+>speech_prog drunk dwarf~
+if ispc($n)
+say That old drunk talks nonsense.
+say He is just trying to get a free drink.
+say Now don't you fall for it.
+endif
+~
+>speech_prog evil magic magician magicians~
+if ispc($n)
+say Oh hogwash! Thats just a story to scare lil kids.
+endif
+~
+|
+#6007
+Tyrel~
+Tyrel~
+Tyrel is feeding a pair of hawks.
+~
+Tyrel wears a set of green-dyed leathers.  Along his belt are little
+pouches filled with different seeds.  He has beady little eyes that remind
+you of the hawks that is feeding.  
+~
+67 0 16 0 3 1000 S
+50 1 100 100 0 11500d0+0 0d0+0
+0 0 0
+0 0 1
+1 0 0
+>all_greet_prog 100~
+if ispc($n)
+emote turns from his hawks to look at you.
+say What can I do you for on this fine day?
+endif
+~
+|
+#6008
+Zoan~
+Zoan~
+Zoan stands in the back with a long blade in his hands.
+~
+Zoan is large, muscular man.  The sleeves on his shirt appear to be
+nearing bursting point.  He has a sharpening stone out as he sharpens the
+blade in his hands.  
+~
+67 128 16 0 3 1000 S
+50 1 100 100 0 10350d0+0 0d0+0
+0 0 0
+0 0 1
+1 0 0
+>all_greet_prog 100~
+if ispc($n)
+bow $n
+say Type LIST to see my master craftmenship.
+endif
+~
+|
+#6009
+Duan~
+Duan~
+Duan is placings pieces of armor on one of the racks.
+~
+Duan is a small and skinny man.  He only wears a small cloth pants and a
+cotton shirt.  He must take pride in his appearance because he takes time to
+brush back his hair after every burst of wind that enters the shop.  
+~
+67 128 16 0 3 1000 S
+50 1 100 100 0 10350d0+0 0d0+0
+0 0 0
+0 0 1
+1 0 0
+>all_greet_prog 100~
+if ispc($n)
+nod $n
+say Please look around my shop.
+say Type LIST to see if we have anything you want.
+endif
+~
+|
+#6010
+Lyzar~
+Lyzar~
+Lyzar stands near the bubbling cauldron.
+~
+Lyzar is stirring the cauldron with a large spoon.  There are stains all
+over his red robe from where he has spilled before.  He looks at you with a
+heartwarming smile as you enter his shop.  
+~
+67 67108864 16 0 3 1000 S
+50 1 100 100 0 10350d0+0 0d0+0
+0 0 0
+0 0 1
+1 0 0
+>all_greet_prog 100~
+if ispc($n)
+smile $n
+say I am glad you have come.
+say Look, look at my wonderful creation.
+emote points quickly at the cauldron.
+say I am so happy that I'm almost finished with this brew.
+say Type LIST to see the other brews that I have created.
+endif
+~
+|
+#6011
+Large Rat~
+a Large Rat~
+A large rat scurries through the sewers.
+~
+It's large, hairy rat.
+~
+69 40 0 0 2 0 S
+57 1 175 175 0 14600d0+0 0d0+0
+0 0 0
+0 0 0
+1 0 0
+#6012
+Bat~
+a Bat~
+A bat brushes by your face.
+~
+A small bat flies in the sewers.  You can see a glint off the water on
+its claws.  You can hear more bats in the distance.  
+~
+65 524840 0 0 2 0 S
+61 1 180 180 0 17800d0+0 0d0+0
+0 0 0
+0 0 0
+1 0 0
+#6013
+Oversized Roach~
+an Oversized Roach~
+An oversized roach crawls through the sewage.
+~
+This overgrown insect slowly makes its way through the sewage.  Its
+feelers probe in your direction as it tries to find out what is around.  
+~
+65 8 0 0 2 0 S
+63 1 190 190 0 19400d0+0 0d0+0
+0 0 0
+0 0 0
+1 0 0
+#6014
+Obsidian Golem~
+an Obsidian Golem~
+An obsidian golem walks through the caves.
+~
+A large piece of obsidian has been magicially molded into a walking
+creature.  There is no life in its eyes as it mindlessly walks its routes.  
+~
+97 268435456 16 0 2 -1000 S
+65 1 150 150 0 18900d0+0 0d0+0
+650 0 0
+0 0 0
+1 0 0
+#6015
+Fiery Hound~
+a Fiery Hound~
+A hound is engulfed in flame.
+~
+It looks to be a wolf and dog hybrid.  There is an oily substance on its
+fur that has been set on fire.  There must be some magic involved because
+the hound does not seem to notice the flames.  
+~
+69 33554496 16 0 2 -1000 S
+67 1 155 155 0 20340d0+0 0d0+0
+670 0 0
+0 0 0
+1 0 0
+#6016
+Mage Red Order~
+a Mage of the Red Order~
+A mage wears a set of long red robes.
+~
+You can't get a good look into the hood of this mage.  All you can see is
+the flowing red robes around it.  
+~
+65 192 16 0 2 -1000 S
+71 1 150 150 0 22420d0+0 0d0+0
+710 0 0
+0 0 0
+1 0 0
+>fight_prog 20~
+if ispc($n)
+cast 'dispel magic'
+endif
+~
+|
+#6017
+Lesser Demon~
+a Lesser Demon~
+A small demon stalks the Keep's hallways.
+~
+This is a small demon.  It has two long arms with one sharp claw for a
+hand.  It moves along the ground on two feet.  It doesn't appear to really
+walk but it slides along the ground.  As it sees you, drool starts to pour
+of its mouth in anticipation.  
+~
+65 0 16 0 2 -1000 S
+69 1 138 138 0 24200d0+0 0d0+0
+690 0 0
+0 0 0
+1 0 0
+#6018
+Arena Master~
+the Arena Master~
+The Arena Master searches the top of his desk.
+~
+The Arena Master is decorated in a set of beautiful, red robes.  He has
+his hood resting upon his back at the moment.  He looks at you with a calm
+and steady stare.  The look within his eyes isn't one of evil but one of
+curiousity.  He brushes the hair from his face as he stretches his hand
+towards you.  
+~
+67 192 4194320 2048 2 -1000 S
+73 1 170 190 0 21920d0+0 0d0+0
+730 0 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Why have you come to visit my office?
+say I know you haven't come to take part in the Arena.
+endif
+~
+>speech_prog arena~
+if ispc($n)
+say The Arena is for the true warriors and magicians.
+say All one needs to participate is a mage token.
+endif
+~
+>speech_prog p mage token~
+if ispc($n)
+say I am not one to give this information.
+say You can ask around. I'm sure someone would be
+say willing to talk.
+endif
+~
+>give_prog Mage Token~
+if ispc($n)
+say So you want to try your hand at real combat?
+say Ok, then you shall.
+mptrans $n 6134
+tell $n You shall have three trials.
+tell $n Here is your first....
+mpjunk token
+else
+say If you can't give me the token yourself,
+say then you shall not have a chance at all.
+mpjunk token
+endif
+~
+|
+#6019
+Dark One~
+the Dark One~
+The Dark One sips blood from one of the pools.
+~
+You can sense a presence standing before you but can't quite make out
+what it is.  All your mind can see is a large void of light in front of you.
+~
+67 268992704 90177684 34816 2 -1000 S
+78 1 156 156 0 20930d0+0 0d0+0
+780 0 0
+0 0 0
+3 0 0
+>fight_prog 20~
+if level($n) > 80
+mental
+else
+c 'unholy wrath'
+endif
+~
+>hitprcnt_prog 10~
+if level($n) > 80
+break
+else
+c 'flash burn'
+endif
+~
+|
+#6020
+Mage Halluncination~
+the Mage of Halluncination~
+The Mage of Halluncination is mixing two vials together.
+~
+This mage is dressed in long, grey robes.  The robes drag along behind
+him for a couple feet.  His movements seem awfully quick for a mage.  His
+hands are moving lightning quick over the table as he grabs for herbs and
+vials.  He does't seem to notice your arrival.  
+~
+67 192 4259856 0 2 -1000 S
+75 1 200 200 0 22000d0+0 0d0+0
+750 0 0
+0 0 0
+1 0 0
+>fight_prog 35~
+slit
+~
+>fight_prog 20~
+c fireball
+~
+|
+#6021
+Shady Thief~
+a Shady Thief~
+A shady thief rests near a stack of barrels.
+~
+A lanky man stands near the barrels.  He has a long, thin noise that
+comes almost to a point.  His eyes remind you of those of a rat.  He has a
+crooked grin that makes you think that he isn't telling you everything.  
+~
+67 64 85983376 32768 2 -1000 S
+70 1 140 140 0 25000d0+0 0d0+0
+700 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+eyebrow $n
+say So you found my little hideaway....
+say What can I do for you?
+endif
+~
+>act_prog p salutes you.~
+if ispc($n)
+emote looks you over more closely.
+say I like someone who shows a little respect.
+say Let me show you my private stock of goodies.
+mptrans $n 6135
+mpat $n mpforce $n bow thief2
+endif
+~
+>speech_prog p mage token~
+if ispc($n)
+say I'm impressed that you have found out about
+say the mage token. The mages of the Red Order
+say use them as currency while inside their Keep.
+say I don't have one to give or sell you.
+say And the mages will take their tokens to
+say the Netherworld before giving them up.
+say Sometimes a mage will get lost in the Obsidian
+say caves and end up losing their life.
+say Finding one within the caves is probably
+say your only hope.
+endif
+~
+>rand_prog 10~
+emote mumbles to himself.
+say I can't believe I'm stuck hiding in the cellar.
+say I used to be an important soldier in an important army.
+say It used to feel so good when someone would salute me.
+grumble
+~
+|
+#6022
+Petty Thief~
+a Petty Thief~
+A petty thief is trying to pick a fight.
+~
+~
+67 0 16 0 2 0 S
+55 1 110 110 0 13000d0+0 0d0+0
+500 0 0
+0 0 1
+1 0 0
+>death_prog 100~
+if level($n) < 55
+say You have passed your first trial.
+say Yet you are not strong enough to continue.
+say Come back when you have gained in power.
+mptrans $n 6132
+else
+say You have passed your first trial.
+say Lets see if you have what it takes to go further.
+mpmload 6023
+mpforce demon mpkill $n
+mpgoto 1
+endif
+~
+>fight_prog 30~
+if level($n) > 80
+say You are much too strong to be here.
+c disrupt
+else
+kick
+endif
+~
+>fight_prog 20~
+say You are a harder opponent than I expected.
+~
+|
+#6023
+Greater Demon~
+a Greater Demon~
+A greater demon awaits combat with you.
+~
+~
+67 64 16777232 0 2 0 S
+65 1 130 130 0 21000d0+0 0d0+0
+650 0 0
+0 0 0
+1 0 0
+>death_prog 100~
+if level($n) < 65
+say You have passed your second trial.
+say Yet you are not strong enough to continue.
+say Come back when you have gained in power.
+mptrans $n 6132
+mpat $n mpforce $n look
+else
+say You have passed your second trial.
+say Lets see if you have what it takes to continue.
+mpmload 6024
+mpforce knight mpkill $n
+mpgoto 1
+endif
+~
+>fight_prog 30~
+if level($n) > 80
+say Do you think you can bully your way around?
+c demonfire
+else
+c fireball
+endif
+~
+>fight_prog 20~
+if level($n) > 80
+say You must think that you are special.
+c 'bend light'
+else
+gorge
+endif
+~
+|
+#6024
+Death Knight~
+a Death Knight~
+A Death Knight stares at you with its lifeless eyes.
+~
+~
+67 192 21004304 2048 2 -1000 S
+75 1 150 150 0 20930d0+0 0d0+0
+750 0 0
+0 0 0
+3 0 0
+>fight_prog 20~
+if level($n) > 80
+say I hope to bring you one step closer to death.
+c 'cone of frost'
+else
+c 'unholy fires'
+endif
+~
+>hitprcnt_prog 10~
+c 'power leak'
+~
+>death_prog 100~
+say You have defeated the three trials.
+say This shall be your reward.
+mpoload 6032
+give bloom $n
+say Now you shall be returned to the Red Order.
+mptrans $n 6132
+mpat $n mpforce $n look
+~
+|
+#6025
+Shady Thief2~
+a Shady Thief~
+A shady thief rests near a stack of barrels.
+~
+A lanky man stands near the barrels.  He has a long, thin nose that comes
+to a point.  His eyes remind you of those of a rat.  He has a crooked grin
+that makes you think that he isn't telling you everything.  
+~
+67 64 85983376 32768 2 -1000 S
+70 1 140 140 0 25000d0+0 0d0+0
+700 0 0
+0 0 1
+3 0 0
+>act_prog p bows before you.~
+if ispc($n)
+grin
+say So you want to see my special items?
+say Type LIST to see if anything interests you...
+say Just say 'I'm finished!' and I'll show you out.
+endif
+~
+>speech_prog p I'm finished!~
+if ispc($n)
+mpecho The thief leads you back around the barrels.
+mptrans $n 6133
+mpat $n mpforce $n look
+endif
+~
+|
+#6026
+River Demon~
+A river demon~
+A demon floats above the river of blood.
+~
+A liquid form hovers above the river.  Little waves cascade down its body
+to its tail.  As the waves get to the end of the tail, tiny drops of blood
+fall into the river.  There are two black swirls near the top of the demon
+which must be its eyes.  It continues to look at you as it hovers in place. 
+~
+67 64 4194320 131072 2 -1000 S
+50 1 100 100 0 13200d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+say You should not go any further.
+say The Red Obsidian are not to be taken lightly.
+say Turn back now or face the consquences.
+emote points back towards the caves.
+endif
+~
+>speech_prog red obsidian~
+if ispc($n)
+say The Red Obsidian are an ancient clan of magicians.
+say They have become more than magicians over time as
+say they practiced physical combat while trapped.
+say If you really wish to take your chances then
+say you will need to pay a river passage fee.
+endif
+~
+>speech_prog passage fee~
+if ispc($n)
+say Give me 250 coins of gold and
+say I shall take you across the River.
+endif
+~
+>bribe_prog 250~
+if ispc($n)
+say I have warned you.
+mptrans $n 6124
+mpat $n mpforce $n look
+endif
+~
+|
+#6027
+Drunk Dwarf~
+A drunk dwarf~
+A dwarf screams out his stories to anyone nearby.
+~
+A dwarf sits at one of the Inn's tables.  He is enjoying a large mug of
+ale as he tells his tales of heroics.  There are several empty mugs on the
+table in front of him.  
+~
+67 0 1024 0 2 0 S
+52 1 104 104 0 12200d0+0 0d0+0
+500 0 0
+0 0 0
+3 0 0
+>rand_prog 10~
+say Oh man, do I have a story for you.
+say One of ancient evil and magic.
+say Hey you there, you want to hear my story.
+emote points towards you with his mug of ale.
+~
+>speech_prog story yes yeah sure yah ya~
+if ispc($n)
+emote pounds back the rest of his ale.
+emote yells to a maid to bring him another.
+say Nobody talks about it but there used
+say to be an order of evil magicians around here.
+say They used to have their stronghold on the
+say same land that Menedek sits on right now.
+say Supposedly the magicians were destroyed but
+say I saw some wierd things in them caves.
+endif
+~
+>speech_prog caves magicians magician magic evil~
+if ispc($n)
+say The caves the are under this city.
+say The walls are made out of a shiny black rock.
+say I left the Inn one night and wandered around town.
+say I'm usually of sound footing but that night I
+say slipped and fell through an open manhole.
+say I spent all night lost in the sewers.
+endif
+~
+>speech_prog sewers sewer~
+if ispc($n)
+say The sewers are inhabited by rats and other annoying creatures.
+say After many hours of being lost, I came upon a crevice.
+say I regret it now but I decided to drop down
+say through the crevice.
+endif
+~
+>speech_prog crevice~
+if ispc($n)
+say I dropped down into a complex set of caves.
+say The walls are made of a shiny black rock.
+say There were horrible creatures within those caves.
+say Large rocky creatures stalked my every move.
+say I ran for hours until I heard the sound of rushing water.
+say So I ran in that direction.
+say But what I came upon is too odd to tell.
+say It was the oddest creature I've ever seen.
+say Only an ancient magic could create or control
+say such a creature.
+endif
+~
+>speech_prog odd creature~
+if ispc($n)
+say I will say no more about this.
+say I would like to forget the whole incident.
+endif
+~
+|
+#6028
+Helpless Prisoner~
+a helpless prisoner~
+A helpless prisoner is tied to the wall.
+~
+~
+67 0 0 0 2 1000 S
+10 1 20 20 0 500d0+0 0d0+0
+0 0 0
+0 0 0
+3 0 0
+>death_prog 99~
+mpecho A large swirl surrounds the body.
+mpecho The swirl collapes in on itself and disappears.
+mpecho A servant chains another prisoner to the wall.
+mpmload 6028
+mpgoto 1
+~
+|
+#6029
+Sneaky Man~
+a Sneaky Man~
+A man is sneaking around on the deck of the Inn.
+~
+~
+67 0 4194320 0 2 -1000 S
+10 1 20 20 0 500d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>death_prog 100~
+mpecho The man falls over the railing of the Inn.
+mpecho You hear the sound of his body hit the ground.
+mpecho Another man from inside the Inn begins
+mpecho to snoop around the deck.
+mpmload 6029
+mpgoto 1
+~
+|
+#6030
+Cocker Spaniel~
+A cocker spaniel~
+A black cocker spaniel sniffs along the edge of the street.
+~
+~
+257 56 4194304 0 0 0 S
+50 1 100 100 0 11500d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#6031
+Bulldog~
+a Bulldog~
+A bulldog looks around with its alert eyes.
+~
+~
+257 184 4194304 0 0 0 S
+60 1 120 120 0 15300d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#6032
+White Wolf~
+A white wolf~
+A beautiful white wolf quietly walks its route.
+~
+~
+257 16576 16 0 0 0 S
+70 1 140 140 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#6000
+Red Ribbon~
+a Red Ribbon~
+A red ribbon floats in the wind.~
+~
+9 0 0 0 0 17 50
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 16
+A
+12 50
+A
+13 50
+#6001
+Leather Coif~
+a Leather Coif~
+A leather cap lies in the dirt.~
+~
+9 0 0 0 0 17 50
+100 100
+0~ 0~ 0~ 0~
+2 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+5 1
+#6002
+Handful Flowers~
+a Handful of Flowers~
+A handful of flowers will die if they stay on the ground.~
+~
+9 0 0 0 0 16385 53
+100 100
+0~ 0~ 0~ 0~
+1 2100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+13 53
+#6003
+Leather Shoes~
+a pair of leather shoes~
+Someone has forgetten their pair of leather shoes.~
+~
+9 0 0 0 0 65 52
+100 100
+0~ 0~ 0~ 0~
+4 2080 0
+5 0
+refresh~
+5 5
+0 0 0
+A
+14 75
+A
+2 1
+#6004
+Silk Sash~
+a Silk Sash~
+A silk sash flaps in the wind.~
+~
+9 0 0 0 0 2049 56
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+A
+4 2
+#6005
+Glowing Staff~
+a Glowing Staff~
+A staff radiates a soft glow.~
+~
+1 0 0 0 0 1 56
+100 100
+0~ 0~ -1~ 0~
+10 2400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+3 2
+#6006
+Leather Leggings~
+a pair of leather leggings~
+Someone has left behind a pair of leggings.~
+~
+9 0 0 0 0 33 58
+100 100
+0~ 0~ 0~ 0~
+1 2320 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+18 6
+#6007
+Small Knife~
+a small knife~
+A small knife needs to be sharpened.~
+~
+5 0 0 0 11280384 8193 57
+100 100
+0~ 0~ 0~ 11~
+2 2320 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+19 17
+A
+18 17
+#6008
+Breastplate Menedek~
+a Breastplate of Menedek~
+A guard of Menedek has left behind his breastplate.~
+~
+9 0 0 0 0 9 60
+100 100
+0~ 0~ 0~ 0~
+10 2600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+18 16
+#6009
+Leather Whip~
+a Leather Whip~
+A whip has been constructed out of leather.~
+~
+5 0 0 0 0 8193 60
+100 100
+0~ 0~ 0~ 4~
+1 2400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 70
+A
+19 11
+A
+18 25
+#6010
+Manhole~
+a manhole~
+A manhole is in the ground near the marble wall.~
+~
+29 0 0 0 0 0 1
+100 100
+6065~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#6011
+Roach Legs~
+some roach legs~
+A roach has had its legs cut off.~
+~
+9 0 0 0 0 33 57
+100 100
+0~ 0~ 0~ 0~
+1 1800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+#6012
+Leather Gloves~
+a pair of leather gloves~
+A pair of gloves is made out of the finest leather.~
+~
+9 0 0 0 0 129 60
+100 100
+0~ 0~ 0~ 0~
+1 2448 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 60
+A
+2 2
+#6013
+Bat Wings~
+a pair of bat wings~
+A bat had its wings chopped off.~
+~
+9 0 0 0 0 1025 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+5 0
+fly~
+5 5
+0 0 0
+A
+109 -1
+A
+25 10
+#6014
+Pierce Darkness~
+the Pierce of Darkness~
+The darkness pierces through the light.~
+~
+5 201326656 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 11~
+1 2800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+A
+13 82
+A
+19 20
+A
+18 22
+#6015
+Obsidian Breastplate~
+an Obsidian Breastplate~
+A breastplate has been made from obsidian.~
+~
+9 536870912 0 0 0 9 70
+100 100
+0~ 0~ 0~ 0~
+10 2820 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 80
+A
+19 30
+A
+18 12
+A
+14 -50
+#6016
+Eyes Dark One~
+the Eyes of the Dark One~
+A pair of black eyes are rolling on the ground.~
+~
+9 805322752 0 0 0 131073 70
+100 100
+0~ 0~ 0~ 0~
+1 3000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+19 8
+A
+18 6
+#6017
+Red Satin Pants~
+a pair of Red Satin Pants~
+A pair of pants has been made from red satin.~
+~
+9 33554512 0 0 0 33 66
+100 100
+0~ 0~ 0~ 0~
+2 2624 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 66
+A
+19 7
+A
+18 6
+#6018
+red Satin Sleeves~
+red Satin Sleeves~
+A couple pieces of satin flap in the wind.~
+~
+9 33554512 0 0 0 257 65
+100 100
+0~ 0~ 0~ 0~
+3 2580 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 65
+A
+19 6
+A
+18 7
+#6019
+Sickle Red Order~
+a Sickle of the Red Order~
+A bloodstained sickle lies forgotten on the ground.~
+~
+5 33554512 0 0 0 8193 66
+100 100
+0~ 0~ 0~ 1~
+5 2200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+A
+1 1
+A
+19 14
+A
+18 25
+#6020
+Necklace Red Obsidian~
+a Necklace of Red Obsidian~
+A necklace is made out of a red and shiny rock.~
+~
+9 33554432 0 0 0 5 62
+100 100
+0~ 0~ 0~ 0~
+1 2720 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 20
+A
+12 60
+A
+13 40
+#6021
+Red Bracer~
+a Red Bracer~
+A red bracer lies on the ground.~
+~
+9 33554512 0 0 0 4097 68
+100 100
+0~ 0~ 0~ 0~
+5 2800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 40
+A
+19 7
+A
+18 7
+#6022
+Mask Hallucination~
+the Mask of Hallucination~
+A mask blends into the surroundings quite well.~
+~
+9 16496 0 0 0 65537 68
+100 100
+0~ 0~ 0~ 0~
+1 3000 0
+5 0
+invis~
+5 5
+0 0 0
+A
+2 2
+A
+19 7
+A
+18 7
+A
+13 68
+#6023
+Mace Illusion~
+the Mace of Illusion~
+A mace shimmers in the light.~
+~
+5 131152 8216 0 0 8193 67
+100 100
+0~ 0~ 0~ 8~
+5 2600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 80
+A
+1 1
+A
+19 25
+A
+18 20
+#6024
+Chip Obsidian~
+a chip of obsidian~
+A chip of obsidian lies on the floor of the cave.~
+~
+8 68 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+10 1800 0
+0 0
+reserved~
+0 0
+6027 0 0
+#6025
+Manhole~
+a manhole~
+A manhole is in the ground near the marble wall.~
+~
+29 0 0 0 0 0 1
+100 100
+6079~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#6026
+Chipped Mage Token~
+a chipped mage token~
+A mage token has a chip missing from it.~
+~
+8 64 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1400 0
+0 0
+reserved~
+0 0
+6027 0 0
+#6027
+Mage Token~
+a Mage Token~
+A small token sparkles in the light.~
+~
+8 84 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 2200 0
+5 0
+fumble~
+2 2
+0 0 0
+#6028
+Circular Fountain~
+a circular fountain~
+A circular fountain is in the center of the intersection.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#6029
+Scroll Torment~
+a Scroll of Torment~
+A dark scroll rolls on the ground.~
+~
+2 68 131072 0 0 1 50
+100 100
+70~ curse~ poison~ blindness~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+#6030
+Rod Frost~
+a Rod of Frost~
+A dark rod is covered in ice.~
+~
+3 134217796 0 0 0 16385 50
+100 100
+70~ 9~ 9~ iceball~
+5 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#6031
+Metallic Staff~
+a Metallic Staff~
+A long metallic staff lies in the corner.~
+~
+4 68 139264 0 0 16385 50
+100 100
+70~ 10~ 10~ psionic blast~
+9 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#6032
+Cotton Bloomers~
+a pair of cotton bloomers~
+Someone has dropped a pair of cotton bloomers.~
+~
+9 64 0 0 0 33 1
+100 100
+0~ 0~ 0~ 0~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+5 1
+#6033
+Half1 Bone Key~
+a half of a bone key~
+A bone key has broken into two pieces.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+6035 0 0
+#6034
+Half2 Bone Key~
+a part of a broken bone key~
+A bone key has been broken.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+6035 0 0
+#6035
+Bone Key~
+the Key of Bone~
+A piece of bone is carved into a small key.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#6036
+Light Dagger~
+a light dagger~
+A small dagger is on the ground.~
+~
+5 0 0 0 0 8193 50
+100 100
+0~ 0~ 0~ 11~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 12
+A
+18 12
+#6037
+Short Sword~
+a short sword~
+A short sword glints in the sunlight.~
+~
+5 0 0 0 0 8193 60
+100 100
+0~ 0~ 0~ 3~
+3 2400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 16
+A
+18 16
+#6038
+Iron Hammer~
+an iron hammer~
+An iron hammer rests on the ground.~
+~
+5 0 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 8~
+10 2800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+18 20
+#6039
+Small Shield~
+a small shield~
+A small metal shield lies on the ground.~
+~
+9 0 0 0 0 513 50
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#6040
+Leather Shield~
+a leather shield~
+A shield has been covered with a piece of leather.~
+~
+9 0 0 0 0 513 60
+100 100
+0~ 0~ 0~ 0~
+5 2400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+18 6
+#6041
+Spiked Shield~
+a spiked shield~
+A shield is covered in long and sharp spikes.~
+~
+9 0 0 0 0 513 70
+100 100
+0~ 0~ 0~ 0~
+10 2800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+A
+18 7
+#6042
+Scroll Home~
+scroll to Home~
+A white scroll with a picture of a house on it.~
+~
+2 0 0 0 0 1 50
+100 100
+70~ word of recall~ reserved~ reserved~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#6043
+Potion Detection~
+potion of Detection~
+A small vial is filled with a greed liquid.~
+~
+10 268435456 0 0 0 1 50
+100 100
+70~ detect invis~ detect hidden~ detect magic~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#6044
+Chocolate Cake~
+a piece of chocolate cake~
+Someone forgot to eat the last piece of chocolate cake.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#6045
+Meat Potatoes~
+some meat and potatoes~
+A bowl of meat and potatoes sits here.~
+~
+19 0 0 0 0 1 10
+100 100
+10~ 0~ 0~ 0~
+1 28 0
+0 0
+reserved~
+0 0
+0 0 0
+#6046
+Shot Whisky~
+a shot of whisky~
+A shot glass is full of whisky.~
+~
+17 0 0 0 0 1 1
+100 100
+5~ 5~ 5~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#6047
+Mug Ale~
+a mug of ale~
+A mug is full of a dark ale.~
+~
+17 0 0 0 0 1 1
+100 100
+10~ 10~ 3~ 0~
+1 60 0
+0 0
+reserved~
+0 0
+0 0 0
+#6048
+Thief Bag~
+the Bag of a Thief~
+A small bag is tied tightly with leather straps.~
+~
+15 536870912 139264 0 0 1 50
+100 100
+150~ 1~ 0~ 0~
+5 160000 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#6000
+Laclede Street~
+~
+~
+The marble path of Laclede Street continues to the north and south.  The
+wall to the east stands high above the city.  A couple guards can be seen
+walking along the top of the wall.  This city must be well protected with
+the guards as well as the marble wall.  The citizens of this city do not
+seem to realize the work put into keeping them so safe.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6017
+D2
+~
+~
+0 0 6031
+S
+#6001
+Corner of Barthes and Lindell~
+~
+~
+The paths of the two streets come to form a corner here.  The marble
+slabs look quite worn from the constant traffic.  People all around stop to
+talk amongst themselves.  The high walls which guard the northern and
+western borders are constructed from the finest marble.  The walls stand at
+least the height of ten humans.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6002
+D2
+~
+~
+0 0 6008
+S
+#6002
+Barthes Street~
+~
+~
+The path of Barthes Street continues towards the east and west.  Movement
+is slow but continous as people weave in and out of each other.  The
+conversations of travelers can be heard as they pass by but fade away as
+quickly as they came.  A large and thick marble wall blocks the north from
+attack.  Along the southern side of the street is a line of houses. 
+Children toss a small ball around in the front yard.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6003
+D3
+~
+~
+0 0 6001
+S
+#6003
+Barthes Street~
+~
+~
+Barthes street travels off to the east and west.  The sun reflects off
+the top of the high marble wall to the north.  The citizens raise their arms
+to shield their eyes from the sun.  An elderly halfling is walking up to one
+of the houses to the south.  A circle of daises grow in one of the yards to
+the south.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6004
+D3
+~
+~
+0 0 6002
+S
+#6004
+Intersection of Barthes and Grand~
+~
+~
+The paths of Grand and Barthes meet at this intersection.  People of all
+sorts walk around.  A family of humans walk off to the south.  You can see
+people moving in all directions.  When you look north, you notice that
+mostly those of a professional nature are going north.  A large sign sticks
+out of the ground to the side of the small wood path.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6044
+D1
+~
+~
+0 0 6005
+D2
+~
+~
+0 0 6009
+D3
+~
+~
+0 0 6003
+S
+#6005
+Barthes Street~
+~
+~
+The marble of Barthes Street moves in the eastern and western directions.
+A cat-like creature is sweeping the marble path.  It moves around people as
+it tries to dust the dirt and garbage from the street.  It sweeps all the
+trash into a bag that it carries on it's back.  A grassy park is to the
+south of the street.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6006
+D3
+~
+~
+0 0 6004
+S
+#6006
+Barthes Street~
+~
+~
+A pack of trolls stand huddled against one of the buildings to the south.
+You can hear their grunts over the other noises of those who pass.  The
+buildings all appear to be houses for a variety of races.  One door is
+decorated in the rich and beautiful art of the Western Elves.  Others show
+the metalwork of dwarves, the bonework of ogres and trolls, and the work of
+many other races.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6007
+D3
+~
+~
+0 0 6005
+S
+#6007
+Corner of Barthes and Laclede~
+~
+~
+You have come to the northeastern corner of the city.  Some travelers
+walk to the west on Barthes Street, and others move south along Laclede
+Street.  The marble wall towers above the northern and eastern sides of the
+city.  The noise of a creaky cart can be heard over the voices of those
+nearby.  You can see a stocky dwarf bumping into people as he rushes to the
+south.  
+~
+0 0 1
+Rd     0
+D2
+~
+~
+0 0 6010
+D3
+~
+~
+0 0 6006
+S
+#6008
+Lindell Boulevard~
+~
+~
+The marble path of Lindell Boulevard goes to the south and north.  Along
+the western side of town, a high marble wall protects the city from
+invaders.  Several posters advertising upcoming events hangs on the wall.  A
+group of three children jump up and down at the poster of an upcoming
+concert.  The poster is of a group called, Light Winds, which will play the
+city in the coming weeks.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6001
+D2
+~
+~
+0 0 6011
+S
+#6009
+Grand Avenue~
+~
+~
+Citizens and travelers walk upon Grand Avenue.  Many families leave for
+the park off the eastern side of Grand.  The smell of freshly cut grass is
+carried in the air.  A child pickpocket lifts a wallet and takes off down
+the street.  The mom yells and fumes about the thief before giving up and
+leaving.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6004
+D2
+~
+~
+0 0 6014
+S
+#6010
+Laclede Street~
+~
+~
+The path of Laclede Street travels off to the north and south.  Off the
+western side of Laclede is the city park.  The edge of the street is lined
+with fresh, red tulips.  An elven child sits in the grass smelling the
+tulips as her parents watch from behind.  All the people in the city walk
+about without noticing what is going on around them.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6007
+D2
+~
+~
+0 0 6017
+S
+#6011
+Intersection of Taklas and Lindell~
+~
+~
+The wind sweeps down through the city streets.  On the top of the breeze
+is a collection of aromas.  The smells of freshly baked goods, smoke, and
+sweat bombard your nose as you look at the surrounding scenes.  A bumbling
+magician stands against the city wall performing simple tricks for meager
+coins.  Lindell Boulevard goes north and south while Taklas Street goes off
+to the east.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6008
+D1
+~
+~
+0 0 6012
+D2
+~
+~
+0 0 6018
+S
+#6012
+Taklas Street~
+~
+~
+The sounds of the city echo through your ears as you walk upon the marble
+street.  Children run around in the streets much to the frustration of the
+adults.  Their parents hang out from windows of the houses along the
+northern side of Taklas.  Dark and thick smoke bellows out from the windows
+to the south.  You can hear the sound of striking metal.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6013
+D3
+~
+~
+0 0 6011
+S
+#6013
+Taklas Street~
+~
+~
+Taklas Street continues to the west and east.  A pile of wood is stacked
+in front of a house to the north.  The house is severely run down and needs
+repairing.  A man currently stands on a ladder looking at the window lining
+of the second floor.  Several other men are talking while painting at
+different parts of the house.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6014
+D3
+~
+~
+0 0 6012
+S
+#6014
+Intersection of Taklas and Grand~
+~
+~
+You have entered the busy intersection of Taklas and Grand.  People are
+body-to-body as they try to move through the intersection.  The repugnent
+smell of blood and sweat saturates the air.  You can feel the sweat of those
+around you as you try to move on your way.  The cry of a baby can be heard
+from somewhere in the crowd of people in the intersection.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6009
+D1
+~
+~
+0 0 6015
+D2
+~
+~
+0 0 6021
+D3
+~
+~
+0 0 6013
+S
+#6015
+Taklas Street~
+~
+~
+The marble path of Taklas continues towards the east and west.  Puffs of
+smoke filter through the cracks in one of the buildings to the south.  A
+large group of homeless sit or lie against the building.  Several of them
+have tin cups resting before them.  Some of the cups have a few gold pieces
+in them but clearly not enough as they still look thin and hungry.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6016
+D3
+~
+~
+0 0 6014
+S
+#6016
+Taklas Street~
+~
+~
+As you look around, you can see that this street only goes east and west
+from here.  To the north of you is the city park.  You can see people
+running around while playing all sorts of games.  Little children snicker
+and giggle as they tell each other stories.  Several dogs play tug of war
+with a rope near the street.  A few trees along the edge of the park provide
+shade for the park and street.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6017
+D3
+~
+~
+0 0 6015
+S
+#6017
+Intersection of Taklas and Laclede~
+~
+~
+The marble path goes west on Taklas as well as north and south on
+Laclede.  This intersection seems strangely empty.  There are very few
+people walking about at this point.  There is an iron gate within the marble
+wall to the east.  An armed guard stands to the side of the gate.  The guard
+stands perfectly still and does not react to any of the distractions around
+him.  You can't make out what is through the gate.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6010
+D1
+~
+~
+115 0 6043
+D2
+~
+~
+0 0 6000
+D3
+~
+~
+0 0 6016
+S
+#6018
+Lindell Boulevard~
+~
+~
+Lindell Boulevard moves to the north and south.  Posters adorn the guard
+wall to the west.  The posters advertise different events that are coming to
+the city.  The street has trash starting to collect against the wall and the
+nearby buildings.  People just seem to drop their trash without disposing of
+it properly.  The sounds of the city can be heard from all directions.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6011
+D2
+~
+~
+0 0 6025
+S
+#6019
+Weapon Store~
+~
+~
+A wide variety of weapons hang from the walls of the store.  A counter
+near the back of the shop has more weapons sitting on top.  The shop is kept
+dark with the oven as the only light.  The noises of the city come through
+the door everytime it opens.  
+~
+0 12 0
+Rd     0
+D2
+~
+~
+0 0 6026
+S
+#6020
+Armor Store~
+~
+~
+As you pass the threshold, the smell of leather and oil hit your senses. 
+The walls are layered with shelves.  The shelves are covered with different
+armors.  Four stands hold the full battle armors.  The quality of these
+pieces look to be superior than most.  There do not appear to be any flaws. 
+~
+0 12 0
+Rd     0
+D2
+~
+~
+0 0 6027
+S
+#6021
+Grand Avenue~
+~
+~
+Grand Avenue continues to the north and south.  People of all races
+casually pass by one the street.  A large minotaur exchanges grunts with an
+ogre off the side of the street.  They seem to be enjoying a joke as they
+start to laugh loudly as you move by.  There is a lot of noise coming from
+the south.  Over all the racket, you think you can hear the sound of running
+water.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6014
+D2
+~
+~
+0 0 6028
+S
+#6022
+Lyzar's Magic Shop~
+~
+~
+A strong aroma hits you in the face as you enter through the door.  In
+the middle of the room is a white cauldron.  A large wood spoon lies across
+the top of the cauldron.  An unknown liquid is brewing inside the pot.  A
+variety of scrolls and potions sit on the shelves.  Several wands hang from
+hooks in the ceiling.  The wood walls and floor are stained in many places
+which are probably from the cauldron.  
+~
+0 12 0
+Rd     0
+D2
+~
+~
+0 0 6029
+S
+#6023
+Tyrel's Exotic Animals~
+~
+~
+As you enter the shop, you notice the floor is covered with straw. 
+Curled up in the corners are animals of many breeds.  A petite woman is
+currently feeding small pieces of meat to a pair of hawks perched on a
+stand.  A wildabeast thrashes about inside a cage.  To the side of the cage
+is a devoured carcass which has many bite marks across its bone.  
+~
+0 4108 0
+Rd     0
+D2
+~
+~
+0 0 6030
+S
+#6024
+Pet Cages~
+~
+~
+This be the cages for the Pet Store.  If you can read this, then you
+shouldn't be here.  GET OUT!!!  
+~
+0 134651918 1
+Rd     0
+S
+#6025
+Intersection of Himfor and Lindell~
+~
+~
+The streets of Lindell and Himfor come to form an intersection.  As you
+look east, you see hundreds of people walking around.  This must be the most
+popular street in the city.  The types of people milling about is diverse
+and a wonder.  It is amazing that so many races are able to get along within
+the city walls.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6018
+D1
+~
+~
+0 0 6026
+D2
+~
+~
+0 0 6032
+S
+#6026
+Himfor Street~
+~
+~
+The marble used for the streets has become extremely worn after all these
+years.  Most of the people on the street are carrying bags of newly acquired
+objects.  There is a wood sign with metallic lettering hanging from the
+building to the north.  The sound of clashing metal is coming from within.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6019
+D1
+~
+~
+0 0 6027
+D3
+~
+~
+0 0 6025
+S
+#6027
+Himfor Street~
+~
+~
+The noise of stomping boots is very loud on this part of the street. 
+Almost every person coming from the north are wearing new, shiny pieces of
+armor.  A metal shield hangs to the side of the opened door.  The sounds of
+singing and running water comes from the east.  Many of the people here are
+making their way in that direction.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6020
+D1
+~
+~
+0 0 6028
+D3
+~
+~
+0 0 6026
+S
+#6028
+The Town Square~
+~
+~
+The town square is the intersection of Grand and Himfor.  A circular
+fountain was constructed in the center of the intersection.  Small children
+splash playfully within its waters as travelers stop to rest on its edge.  A
+choir of elves sing a lovely tune as people walk around the fountain.  The
+retail street of Himfor stretches to the east and west.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6021
+D1
+~
+~
+0 0 6029
+D2
+~
+~
+0 0 6033
+D3
+~
+~
+0 0 6027
+S
+#6029
+Himfor Street~
+~
+~
+The street of Himfor stretches off to the west and east.  A horrible
+stench is filtering out from an open window to the north.  A small wood sign
+has been nailed underneath the window.  Running water can be heard coming
+from the west.  Most of the young children are running in the western
+direction.  A lovely song can be heard coming from the west as well.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6022
+D1
+~
+~
+0 0 6030
+D3
+~
+~
+0 0 6028
+S
+#6030
+Himfor Street~
+~
+~
+A little girl sits on the ground petting a kitten.  The kitten is softly
+purring in her lap as she strokes its back.  The stench of feces comes from
+the door to the north.  You gather that this must be the pet shop of the
+city.  The street travels to the east and west.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6023
+D1
+~
+~
+0 0 6031
+D3
+~
+~
+0 0 6029
+S
+#6031
+Intersection of Himfor and Laclede~
+~
+~
+The towering wall to the east lets you know that you have come to the
+eastern side of the city.  The street of Himfor goes off to the west while
+Laclede goes to the north and south.  The marble path is only slightly
+littered with trash.  The eastern side of the marble wall is also spotless
+as guards continue their watch from the top.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6000
+D2
+~
+~
+0 0 6034
+D3
+~
+~
+0 0 6030
+S
+#6032
+Lindell Boulevard~
+~
+~
+The path before you continues towards the north and south.  There is a
+dark opening in the building to the east.  You can see a couple sparks fly
+out through the opening.  To the south, you can see the end of the street
+turning off.  As you proceed to move along, you see more sparks fly out the
+opening.  The sun is really bright on this street as it seems to be
+reflecting off more than usual.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6025
+D2
+~
+~
+0 0 6035
+S
+#6033
+Grand Avenue~
+~
+~
+The marble pathway of Grand Avenue goes in the northern and southern
+directions.  A sweet, pretty song is on the breeze sweeping in from the
+north.  Also, you can make out a fountain in the square north of you.  Many
+buildings tower the street from both sides.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6028
+D2
+~
+~
+0 0 6038
+S
+#6034
+Laclede Street~
+~
+~
+Laclede Street continues on towards the north and south.  The people are
+beginning to wear finer cloaks and leather as you look further south.  The
+conversations change between daily activities and business deals along this
+section of Laclede.  The street is much cleaner and appears to be buffed
+more often then the northern streets.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6031
+D2
+~
+~
+0 0 6041
+S
+#6035
+Corner of Amagine and Lindell~
+~
+~
+This is the southwestern corner of the city.  The streets of Amagine and
+Lindell come to form a corner intersection.  The southern wall curves around
+the city to travel along the side of Lindell Boulevard.  Travel has become
+easier as their are less people about.  The people that are here walk on as
+they go about their business within the city.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6032
+D1
+~
+~
+0 0 6036
+S
+#6036
+Amagine Street~
+~
+~
+This is the business district of the city for the buildings have turned
+into strong, tall towers.  Many of the towers seem to reach as high as the
+clouds.  The people you see here are most likely the ones who really run
+this city.  The dress of these men and women consist of the finest leather
+leggings and silk shirts and blouses.  Many of them seem to walk with their
+nose held high in the air.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6037
+D3
+~
+~
+0 0 6035
+S
+#6037
+Amagine Street~
+~
+~
+The high, intimidating towers continue to line the northern edge of
+Amagine.  Many business types walk in and out of the many towers.  A couple
+of the businessmen are escorted by troll or ogre bodyguards.  It looks
+slightly comical to see an ogre dressed up in oversized leather.  The sight
+of you seems to faze these people more than the fancy ogres and trolls.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6038
+D3
+~
+~
+0 0 6036
+S
+#6038
+Intersection of Amagine and Grand~
+~
+~
+Amagine and Grand come to an intersection at the southern edge of the
+city.  A large gate is built into the southern part of the wall.  There is a
+large wood sign hung up to side of the gate.  You can see a couple visitors
+being checked over as they enter the city.  You can't make out anything as
+you try to look through the bars.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6033
+D1
+~
+~
+0 0 6039
+D2
+~
+~
+115 0 6042
+D3
+~
+~
+0 0 6037
+S
+#6039
+Amagine Street~
+~
+~
+The street of Amagine continues towards the east and west.  The street is
+kept very clean as you can see a janitor right now.  The janitor is sweeping
+up any trash as soon as it hits the ground.  Many of the creatures walking
+around pay no attention to the amount of work needed to keep their city
+clean.  Many towers are to the north of the street.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6040
+D3
+~
+~
+0 0 6038
+S
+#6040
+Amagine Street~
+~
+~
+The path before you continues to th east and west.  Many of the citizens
+rush by as they go off on their business.  Their eyes are glowing in
+anticipation of their next deal as they run off.  On the northern edge of
+the streets is an extremely high tower.  The entire tower is a dark red
+shade.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 6041
+D3
+~
+~
+0 0 6039
+S
+#6041
+Corner of Amagine and Laclede~
+~
+~
+This is the southeastern corner of the city.  Several men and women
+dressed in fine silks talk amongst themselves.  The southern and eastern
+parts of the marble wall come together in a curve.  Some guards patrol the
+top of the tower.  The street of Amagine goes westward and Laclede goes
+north.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 6034
+D3
+~
+~
+0 0 6040
+S
+#6042
+Main Gate of Menedek~
+~
+~
+The marble wall of Menedek towers high above you.  A path of marble
+stones begin a few yards from the gate.  The gate is made from magically
+enforced iron.  It has been said that these gates have withstood the power
+of multiple battling rams.  To the side of the gate is a guard post which is
+also constructed from marble.  Guards can be seen patrolling the top of the
+wall.  
+~
+0 0 2
+Rd     0
+D0
+~
+gate~
+115 0 6038
+D2
+~
+~
+0 0 17604
+S
+#6043
+Eastern Gate of Menedek~
+~
+~
+You have come upon the eastern gate into the city of Menedek.  A guard
+post is to the side of the gate.  Travelers are let through the gates in a
+casual manner so not to have any riots or troublemakers.  A trough is setup
+near the gate to allow horses a chance to rest as their owners await passage
+into the city.  
+~
+0 0 2
+Rd     0
+D3
+~
+gate~
+115 0 6017
+S
+#6044
+Bottom of a Large Tree~
+~
+~
+The marble path runs up to the bottom of a large oak tree.  The tree is
+exceptionally thick and looks to be as round as one of the city buildings. 
+The roots are approximately the same size as grown bulls.  The tree reaches
+high into the sky with the top seeming to touch the clouds.  A few notches
+are carved into the side of the tree.  The notches lead up into the
+branches.  
+~
+0 4 2
+Rd     0
+D2
+~
+~
+0 0 6004
+D4
+~
+~
+0 0 6045
+S
+#6045
+Inn of Pure Heart~
+~
+~
+A trapdoor near the north wall leads to a ladder.  A mat is placed by the
+trapdoor for visitors to wipe their feet.  The sounds of laughter and
+conversation fill the Inn of Pure Heart.  This is a place for people to
+relax and share stories.  The aroma of fresh bread is coming from the east. 
+~
+0 2490380 0
+Rd     0
+D1
+~
+~
+0 0 6047
+D2
+~
+~
+0 0 6049
+D3
+~
+~
+0 0 6046
+D5
+~
+~
+0 0 6044
+S
+#6046
+Inn of Pure Heart~
+~
+~
+The closely intertwined branches form a solid and stable floor for the
+inn.  Tables are setup in this corner of the inn.  Only a couple of the
+tables are currently empty.  A group of gnomes sit at one table with a large
+book opened before them.  They look very intent on reading the book and do
+not notice anything around them.  Two orcs are sharing laughs at the table
+in the corner.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 6045
+D2
+~
+~
+0 0 6048
+S
+#6047
+Inn of Pure Heart~
+~
+~
+Many patrons are huddled around the counter near the east wall.  A large
+menu above the counter lists the items available for sell.  A little girl
+runs around with her face covered in chocolate icing.  She is singing aboue
+how the cake tastes good, and she wants more.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 6050
+D3
+~
+~
+0 0 6045
+S
+#6048
+Inn of Pure Heart~
+~
+~
+The tight, intertwined branches of the oak form a solid deck overlooking
+the city.  The deck is furnished with several tables.  The tables are
+equiped with an umbrella bolted to the center.  The umbrella folds out to
+cover the table in case of rain.  Along the edge of the deck is a thick
+railing.  The view from the deck is extraordinary.  The skyline of Menedek
+is one of the most beautiful sites in the realm.  The lights and sounds of
+the city almost make one hold their breath.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6046
+D1
+~
+~
+0 0 6049
+S
+#6049
+Inn of Pure Heart~
+~
+~
+This is the game room of the Inn of Pure Heart.  Against the back wall,
+there are three boards hanging from the wall.  A couple patrons are throwing
+tiny darts at one of the boards.  They laugh and yell as one of them hits
+the bullseye.  Two wood tables are covered in cloth and sit off the side of
+the boards.  Six holes lie at the corners and sides of the table.  A man is
+hitting stone balls into the holes with a long stick.  The room is filled
+with smoke as some dwarves puff heavily on their pipes.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6045
+D1
+~
+~
+0 0 6050
+D3
+~
+~
+0 0 6048
+S
+#6050
+Inn of Pure Heart~
+~
+~
+There are more tables spread around in this corner of the inn.  The air
+is filled with smoke as most of the smokers are sitting here.  The many
+voices are interupted by a fit of coughing every few minutes.  An opened
+window is trying to help filter out the smoke.  A magic spell on the window
+helps pull the smoke out the window.  
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 6047
+D3
+~
+~
+0 0 6049
+S
+#6051
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131087 0
+Rd     0
+D0
+~
+~
+0 0 6069
+D1
+~
+~
+0 0 6076
+D2
+~
+~
+0 0 6082
+D3
+~
+~
+0 0 6075
+S
+#6052
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6053
+D2
+~
+~
+0 0 6059
+S
+#6053
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  The
+sewage continues its journey to the bowels of the planet as it seeps through
+a couple holes in the ground.  
+~
+0 131083 0
+Rd     0
+D3
+~
+~
+0 0 6052
+D5
+~
+chasm~
+576 0 6196
+S
+#6054
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6055
+D2
+~
+~
+0 0 6061
+S
+#6055
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6056
+D2
+~
+~
+0 0 6062
+D3
+~
+~
+0 0 6054
+S
+#6056
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D2
+~
+~
+0 0 6063
+D3
+~
+~
+0 0 6055
+S
+#6057
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6058
+D2
+~
+~
+0 0 6064
+S
+#6058
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  The
+sewage continues its journey to the bowels of the planet as it seeps through
+the holes at the end of the tunnel.  
+~
+0 131083 0
+Rd     0
+D3
+~
+~
+0 0 6057
+S
+#6059
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6052
+D1
+~
+~
+0 0 6060
+S
+#6060
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6061
+D2
+~
+~
+0 0 6067
+D3
+~
+~
+0 0 6059
+S
+#6061
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6054
+D2
+~
+~
+0 0 6068
+D3
+~
+~
+0 0 6060
+S
+#6062
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6055
+D2
+~
+~
+0 0 6069
+S
+#6063
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6056
+D1
+~
+~
+0 0 6064
+D2
+~
+~
+0 0 6070
+S
+#6064
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6057
+D3
+~
+~
+0 0 6063
+S
+#6065
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  The
+sewage continues its journey to the bowels of the planet as it seeps through
+the holes at the end of the tunnel.  
+~
+0 131087 0
+Rd     0
+D2
+~
+~
+0 0 6072
+D4
+~
+manhole~
+115 0 6010
+S
+#6066
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6067
+D2
+~
+~
+0 0 6073
+S
+#6067
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6060
+D3
+~
+~
+0 0 6066
+S
+#6068
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6061
+D2
+~
+~
+0 0 6075
+S
+#6069
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6062
+D1
+~
+~
+0 0 6070
+D2
+~
+~
+0 0 6051
+S
+#6070
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6063
+D2
+~
+~
+0 0 6076
+D3
+~
+~
+0 0 6069
+S
+#6071
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  The
+sewage continues it journey to the bowels of the planet as it seeps through
+the holes at the end of the tunnel.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6072
+S
+#6072
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6065
+D2
+~
+~
+0 0 6078
+D3
+~
+~
+0 0 6071
+S
+#6073
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6066
+D1
+~
+~
+0 0 6074
+S
+#6074
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D2
+~
+~
+0 0 6080
+D3
+~
+~
+0 0 6073
+S
+#6075
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6068
+D1
+~
+~
+0 0 6051
+S
+#6076
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6070
+D1
+~
+~
+0 0 6077
+D3
+~
+~
+0 0 6051
+S
+#6077
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6078
+D2
+~
+~
+0 0 6084
+D3
+~
+~
+0 0 6076
+S
+#6078
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6072
+D2
+~
+~
+0 0 6085
+D3
+~
+~
+0 0 6077
+S
+#6079
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  The
+sewage continues its journey to the bowels of the planet as it seeps through
+the holes at the end of the tunnel.  
+~
+0 131087 0
+Rd     0
+D2
+~
+~
+0 0 6086
+D4
+~
+manhole~
+115 0 6025
+S
+#6080
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6074
+D1
+~
+~
+0 0 6081
+D2
+~
+~
+0 0 6087
+S
+#6081
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  The
+sewage continues its journey to the bowels of the planet as it seeps through
+the holes at the end of the tunnel.  
+~
+0 131083 0
+Rd     0
+D3
+~
+~
+0 0 6080
+S
+#6082
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6051
+D2
+~
+~
+0 0 6089
+S
+#6083
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  The
+sewage continues its journey to the bowels of the planet as it seeps through
+the holes at the end of the tunnel.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6084
+S
+#6084
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6077
+D2
+~
+~
+0 0 6091
+D3
+~
+~
+0 0 6083
+S
+#6085
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6078
+D2
+~
+~
+0 0 6092
+S
+#6086
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6079
+D1
+~
+~
+0 0 6087
+D2
+~
+~
+0 0 6093
+S
+#6087
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6080
+D1
+~
+~
+0 0 6088
+D3
+~
+~
+0 0 6086
+S
+#6088
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6089
+D3
+~
+~
+0 0 6087
+S
+#6089
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6082
+D1
+~
+~
+0 0 6090
+D2
+~
+~
+0 0 6096
+D3
+~
+~
+0 0 6088
+S
+#6090
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6091
+D3
+~
+~
+0 0 6089
+S
+#6091
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6084
+D1
+~
+~
+0 0 6092
+D3
+~
+~
+0 0 6090
+S
+#6092
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6085
+D2
+~
+~
+0 0 6099
+D3
+~
+~
+0 0 6091
+S
+#6093
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6086
+D1
+~
+~
+0 0 6094
+S
+#6094
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6095
+D3
+~
+~
+0 0 6093
+S
+#6095
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6096
+D3
+~
+~
+0 0 6094
+S
+#6096
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6089
+D1
+~
+~
+0 0 6097
+D3
+~
+~
+0 0 6095
+S
+#6097
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6098
+D3
+~
+~
+0 0 6096
+S
+#6098
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D1
+~
+~
+0 0 6099
+D3
+~
+~
+0 0 6097
+S
+#6099
+Sewers of Menedek~
+~
+~
+The wind can be heard screeching through the dark tunnels of the sewers. 
+This sewer system appears to be gigantic in proportions.  The tunnels seem
+to go on endlessly in all directions.  Screaming and moaning can be heard
+echoing off the walls.  The stench of the city's sewage is in the air.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 6092
+D3
+~
+~
+0 0 6098
+S
+#6100
+River of Blood~
+~
+~
+The obsidian has given away to regular, cold rock.  There is a glint of
+obsidian from above but none down here.  The rock has formed into a small
+ledge that hangs out over a river.  The river is flowing with a red liquid. 
+Upon closer inspection, the red liquid is really blood.  A river of blood
+flows beneath the caves of obsidian.  The river flows evenly without
+anything stopping its travel.  There is a pole attached to the end of the
+ledge.  It appears that a boat was tied here at one time.  
+~
+0 401422 0
+Rd     0
+D4
+~
+~
+0 0 6154
+S
+#6101
+Hallway of Obsidian~
+~
+~
+The hallway of obsidian turns to the east and south.  Several torches
+flicker along the walls.  The light glints off the obsidian used in the
+construction of the Keep.  A set of stairs climbs up into another level of
+the Keep.  Screams of pain followed by laughter booms out from the second
+floor.  The crisp noise of new magic echos through the halls.  
+~
+0 134610954 0
+Rd     0
+D1
+~
+~
+0 0 6102
+D2
+~
+~
+0 0 6107
+D4
+~
+~
+0 0 6129
+S
+#6102
+Hallway of Obsidian~
+~
+~
+The obsidian hall continues to move along to the east and west.  Blood is
+splattered over most of the hall.  The blood is still thick and fresh as it
+slowly crawls down the wall.  Small chuncks of bone lie stuck in the flow of
+blood.  There are dried blood spots all over the walls as well.  The stench
+is testing your tolerance as this place must be like this all the time.  
+~
+0 134610954 0
+Rd     0
+D1
+~
+~
+0 0 6103
+D3
+~
+~
+0 0 6101
+S
+#6103
+Before the Flaming Emblem~
+~
+~
+Two hallways come to an intersection before two large doors.  The two
+doors are made from pure bone and stand between you and the throne room.  An
+emblem has been engraved into the bone and set on fire.  The flames make it
+extremely hot as you stand before the doors.  The hallway goes off to the
+east, south, and west.  
+~
+0 403046410 0
+Rd     1
+D0
+~
+~
+119 6035 6106
+D1
+~
+~
+0 0 6104
+D2
+~
+~
+0 0 6108
+D3
+~
+~
+0 0 6102
+S
+#6104
+Hallway of Obsidian~
+~
+~
+The outer hallway of the obsidian keep continues its way east and west. 
+A tile mosaic is built into the northern wall.  The mosaic depicts a scene
+with a mage of the Red Order standing on a hill.  The mage overlooks a
+battlefield engulfed in flame.  The mosaic is very detailed to the point
+that you can see the extreme pain on the faces of his victims.  
+~
+0 134610954 0
+Rd     0
+D1
+~
+~
+0 0 6105
+D3
+~
+~
+0 0 6103
+S
+#6105
+Hallway of Obsidian~
+~
+~
+The hallway of obsidian turns to the south and west.  A set of stairs
+spirals up to the second floor of the Keep.  The sounds of bubbling liquid
+echos from up above.  From somewhere else in the Keep, the screams of
+anguish and despair travel through the halls.  The slick surface of the
+obsidian creates a mirror which reflects your image.  The images look
+unlimited as the walls on both sides reflect the image.  
+~
+0 134610954 0
+Rd     0
+D2
+~
+~
+0 0 6109
+D3
+~
+~
+0 0 6104
+D4
+~
+~
+0 0 6130
+S
+#6106
+The Skull Throne~
+~
+~
+The throne room of the Obsidian Keep stretches far back underneath the
+arches above you.  A throne constructed from bone rests against the back
+wall.  Two skulls are at the front of the armrests.  The eye sockets emit a
+dark, red glow that appears to follow your every move.  Slaves are chained
+against the walls with large obsidian clamps placed over their mouths. 
+Small tubes and nozzles stick out of the slaves as the tubes drain their
+blood.  The blood flows into two large pools with one on each side of the
+room.  The lives of these poor souls is slowly being poured into these pools
+of blood.  
+~
+0 134610959 0
+Rd     0
+D2
+~
+~
+119 6035 6103
+S
+#6107
+Hallway of Obsidian~
+~
+~
+The hallway of the Keep goes to the north and south.  A small, thin
+stream of blood flows along the edge of the wall.  Maggots and other insects
+crawl or float through the blood.  The stench of the death comes from all
+over just as small organs float by.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6101
+D2
+~
+~
+0 0 6110
+S
+#6108
+Hallway of Obsidian~
+~
+~
+This hallway within the interior of the Keep moves to the south and
+north.  Several torches line the walls which illuminate the hall.  The dim
+lighting creates shadows on the walls behind you.  The darkness of the
+obsidian hides the existance of your shadow well.  A couple of white doors
+can be seen from a little ways north.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6103
+D2
+~
+~
+0 0 6112
+S
+#6109
+Hallway of Obsidian~
+~
+~
+The dark hallway continues in the southern and northern directions.  The
+many sounds of the Keep echo from everywhere.  Screams, laughter, and voices
+can be heard.  This obsidian must allow noice to travel easily because the
+sounds are loud no matter where one stands.  A torch quietly flickers in the
+hallway.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6105
+D2
+~
+~
+0 0 6114
+S
+#6110
+Hallway of Obsidian~
+~
+~
+You have come upon an intersection in the halls of the Keep.  A hallway
+goes north and south while another breaks off to the east.  Torches continue
+to line the walls in all directions.  A tiny stream of blood flows along the
+bottom of the wall.  Insects float along the stream.  An ungodly smell comes
+from the flow of blood.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6107
+D1
+~
+~
+0 0 6111
+D2
+~
+~
+0 0 6115
+S
+#6111
+Hallway of Obsidian~
+~
+~
+The interior hallway goes to the east and west.  The stomping of your
+boots boom with your every step on the smooth surface.  As you proceed
+through the Keep, your reflection on the wall seems to be taking a life of
+its own.  From the corner of your eye, it looks to be mocking you but seems
+normal when you turn to look.  
+~
+0 134610954 0
+Rd     0
+D1
+~
+~
+0 0 6112
+D3
+~
+~
+0 0 6110
+S
+#6112
+Center of the Keep~
+~
+~
+You have come upon the center of the Keep.  There are four halls that
+break off in the four cardinal directions.  The screams of death bombard you
+from each hallway.  A bone ladder is attached to the corner of two walls. 
+The ladder goes up through a small opening in the ceiling.  Puffs of smoke
+filter through the opening every so often.  The only light is coming from
+this opening.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6108
+D1
+~
+~
+0 0 6113
+D2
+~
+~
+0 0 6116
+D3
+~
+~
+0 0 6111
+D4
+~
+~
+0 0 6132
+S
+#6113
+Hallway of Obsidian~
+~
+~
+The interior hallway continues to the east and west.  The smell of decay
+filles the air.  This stench burns the inside of your nose as you seek to
+find an escape.  The origin of the smell is impossible to find.  The best
+bet is to continue on your way and hope the smell disappears.  
+~
+0 134610954 0
+Rd     0
+D1
+~
+~
+0 0 6114
+D3
+~
+~
+0 0 6112
+S
+#6114
+Hallway of Obsidian~
+~
+~
+The exterior hallway continues to move north and south with another hall
+breaking off westward.  A single torch sticks out of the wall which brings a
+little light to this dark hall.  A tiny window is placed into the obsidian
+wall.  The window looks out over the river of blood which surrounds the
+Keep.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6109
+D2
+~
+~
+0 0 6117
+D3
+~
+~
+0 0 6113
+S
+#6115
+Hallway of Obsidian~
+~
+~
+The hall travels to the north and south.  A stream of blood flows against
+the wall.  Many insects crawl over tiny objects that float down the stream. 
+The blood flows into a drain in the floor.  Upon closer inspection, the
+drain flows directly into the river of blood underneath the Keep.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6110
+D2
+~
+~
+0 0 6118
+S
+#6116
+Hallway of Obsidian~
+~
+~
+The main hall goes to the north and south.  A large tapestry hangs from
+one of the walls.  The tapestry is made from a dark threads.  The design
+emits an aura of hate and loathing into the surroundings.  The cloth looks
+to have a life of its own.  The other wall is bland but not showing a
+reflection of the tapestry.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6112
+D2
+~
+~
+0 0 6120
+S
+#6117
+Hallway of Obsidian~
+~
+~
+The exterior hallway continues to the north and south.  The two torches
+hanging on the wall are getting near the end.  The lighting is very dim.  A
+large window is in the outer wall.  A gust of wind blows in from the
+outside.  The river of blood flows underneath the Keep.  Nothing can be seen
+except for the river.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6114
+D2
+~
+~
+0 0 6122
+S
+#6118
+Hallway of Obsidian~
+~
+~
+The hall of the Obsidian Keep turns to the east and north.  Chirps and
+screeches come from the deep, dark shadows along the ceiling.  Creatures in
+flight can be heard above your head.  The torch's light fails to break
+through the darkness.  The dim light projects the shadows upon the obsidian
+which then stretches them to mortifying proportions.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6115
+D1
+~
+~
+0 0 6119
+D5
+~
+trapdoor~
+627 0 6133
+S
+>rand_prog 10~
+0
+mpecho The light glints off a handle of a trapdoor in the floor.
+~
+|
+#6119
+Hallway of Obsidian~
+~
+~
+The hallway reaches to the east and west.  A multitude of chains hang
+from the walls.  There are a couple of prisoners still hanging from the
+chains.  They look at you with their hopeless eyes.  Their bodies have grown
+strained and tired since giving into their captivity.  The smell of decay
+comes from a couple of bodies which have passed into death.  
+~
+0 134610954 0
+Rd     0
+D1
+~
+~
+0 0 6120
+D3
+~
+~
+0 0 6118
+S
+#6120
+Entrance of the Obsidian Keep~
+~
+~
+The gate of the Keep is located to the south.  The Keep is formed from
+obsidian which has been magically molded into this dwelling.  The screams of
+the tormented reverberate through the obsidian halls.  Along the extensive
+noice is a horrendous stench.  The Keep is rumored to be home to some of the
+most horrifying experiments known to man.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6116
+D1
+~
+~
+0 0 6121
+D2
+~
+~
+3 0 6123
+D3
+~
+~
+0 0 6119
+S
+#6121
+Hallway of Obsidian~
+~
+~
+The hallway moves around the exterior wings of the Keep.  This hall goes
+to the west and east from here.  Prisoners are chained along the hallway. 
+Some of the bodies are limp as they just dangle from their chains.  The
+metal is slowly eating away at the wrists of the dead.  The flesh is being
+knawed through by the metal.  The aroma is almost unbearable.  
+~
+0 134610954 0
+Rd     0
+D1
+~
+~
+0 0 6122
+D3
+~
+~
+0 0 6120
+S
+#6122
+Hallway of Obsidian~
+~
+~
+The hallway makes a turn to the north and west.  A torch is attached to
+the corner of the walls.  The torch spreads its light gently into the
+darkness.  The shadows are ever present along the obsidian.  The shadows
+appear to dance along the walls by themselves.  The snapping of the torch's
+flickering is heard between the fits of yelling that erupt in the Keep.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 6117
+D3
+~
+~
+0 0 6121
+S
+#6123
+At the Gate of the Keep~
+~
+~
+You stand before the Obsidian Keep.  Inside this Keep is the home of the
+Red Order of Magic.  They are better known as Red Obsidian.  Their fortress
+home was formed from a piece of obsidian that was pulled from the underbelly
+of the land.  A shard of obsidian just from the Keep over the river of
+blood.  The shard goes south to the end of the Keep's dock.  
+~
+0 134610950 0
+Rd     0
+D0
+~
+~
+3 0 6120
+D2
+~
+~
+0 0 6125
+S
+#6124
+At the End of the Dock~
+~
+~
+A dock hovers above the Blood River allowing boats to land.  AA pole juts
+out of the obsidian dock.  The pole has a long, thick rope tied to it.  The
+obsidian dock goes off to the north towards the Obsidian Keep.  The river
+continues to flow to oblivion.  Only the river can be seen in all
+directions.  
+~
+0 134610946 0
+Rd     0
+D0
+~
+~
+0 0 6125
+S
+#6125
+On the Dock~
+~
+~
+The obsidian dock stretches north and south.  To the north is the
+infamous dwelling of the Red Order of Magic.  The dark, deathly construction
+of obsidian sticks out above the savage flow of the Blood River.  The dock
+hovers above the river allowing people to walk from the dock to the
+fortress.  The screams of torture pierce the air as the Order torments their
+prisoners.  
+~
+0 134610946 0
+Rd     0
+D0
+~
+~
+0 0 6123
+D2
+~
+~
+0 0 6124
+S
+#6126
+At the Bar~
+~
+~
+A bar has been formed from the obsidian of the Keep.  A variety of
+alcohol sits on the top of the bar.  Members walk up to the bar to fix
+themselves a drink whenever they're empty.  Some stools sit in the front of
+the bar.  The stools are topped with a red satin material.  The rest of the
+lounge extends to the east and south.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 6127
+D2
+~
+~
+0 0 6128
+S
+#6127
+Part of a Lounge~
+~
+~
+Large, plush sofas lie around the lounge.  Mages and warriors of the Red
+Order walk around mingling with others.  Sometimes the people sit down to
+rest their legs.  The plush sofas emit a cool breeze to those who sit upon
+them.  The walls of the lounge are covered with famous masterpieces.  
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 6129
+D3
+~
+~
+0 0 6126
+S
+#6128
+Near a Large Wheel~
+~
+~
+A large wheel is attached to the wall of the lounge.  Some mages are
+gathered around the wheel.  Their laughter can be heard throughout the room.
+As you get a peek of the wheel, you see what they are laughing at.  A
+prisoner is tied to the wheel as someone spins it.  Someone tries to
+mentally thrown knives at the wheel.  The crowd laughs loudly whenever the
+prisoner is hit with a knife.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 6126
+D1
+~
+~
+0 0 6129
+S
+#6129
+Part of  Lounge~
+~
+~
+A set of stairs runs into the lounge.  The lounge consists of sofas,
+chairs, and a bar in the far corner.  The members of the Order come here to
+relax between their adventures or experiments.  The sounds of laughter and
+conversation resound from all corners of the room.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 6127
+D3
+~
+~
+0 0 6128
+D5
+~
+~
+0 0 6101
+S
+#6130
+Stairs to the Lab~
+~
+~
+A bunch of spiraling stairs go down into the halls of the Keep.  This
+room is almost entirely filled with smoke.  The smoke is coming from the
+many bottles spread out on the tables.  The Red Order performs their
+experiments in this smoke filled lab.  Bottles of specimems and mixtures are
+spread on shelves and tables all over the area.  
+~
+0 134619150 0
+Rd     0
+D1
+~
+~
+0 0 6131
+D5
+~
+~
+0 0 6105
+S
+#6131
+Back of the Lab~
+~
+~
+The tables from the rest of the lab stop a few feet short from the back
+wall.  Along the wall, prisoners are kept chained.  Some have limbs missing
+from the experiments performed upon them.  Scorch marks adorn the wall
+behind them.  Even a coule of the prisoners have limbs or head from
+different animals.  What kind of inhumane practices go on here?  
+~
+0 134619146 0
+Rd     0
+D3
+~
+~
+0 0 6130
+S
+#6132
+Office of the Arena Master~
+~
+~
+You have entered a normal looking office.  The obsidan walls are adorned
+with paintings of everyday occurances.  One picture is of a beautiful sunset
+over a mountain range.  Underneath this painting is a large obsidian desk. 
+The desk is covered with papers and books.  A large oval mirror is attached
+to the wall.  The mirror does not show any reflections but instead is filled
+with swirling colors.  
+~
+0 134610958 0
+Rd     0
+D5
+~
+~
+0 0 6112
+S
+#6133
+The Cellar~
+~
+~
+Barrels are stacked on each other along the walls of the cellar.  One
+barrel is tapped and ready for use by the Order.  A small puddle of ale has
+formed under the tapped barrel as it drips slowly.  The air is stale and
+damp within the cellar.  The noise from above does not penetrate into the
+cellar.  The musty air must muffle the sound a little.  
+~
+0 143024142 0
+Rd     0
+D4
+~
+trapdoor~
+627 0 6118
+S
+#6134
+The Arena~
+~
+~
+Since the beginning of time, magic has existed.  With the experimentation
+in magic, there will be mishaps.  Over time there have been mistakes that
+have ripped through the essence of time itself.  Through their own mistakes,
+the Red Order accidently created this point where time has no meaning.  This
+is the battle arena of the Red Order.  
+~
+0 401422 0
+Rd     0
+S
+#6135
+Behind the Barrels~
+~
+~
+The lanky thief has taken you behind a stack of barrels.  He carefully
+places himself between you and a small door in the floor.  
+~
+0 134619151 0
+Rd     0
+S
+#6151
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610959 0
+Rd     0
+D2
+~
+~
+0 0 6158
+S
+#6152
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D2
+~
+~
+0 0 6159
+S
+#6153
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D2
+~
+~
+0 0 6160
+S
+#6154
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  There is a crack in the obsidian ground.  The
+sound of running water is heard through the crack.  
+~
+0 134610955 0
+Rd     0
+D2
+~
+~
+0 0 6161
+D5
+~
+~
+0 0 6100
+S
+#6155
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6156
+D2
+~
+~
+0 0 6162
+S
+#6156
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6157
+D2
+~
+~
+0 0 6163
+D3
+~
+~
+0 0 6155
+S
+#6157
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D2
+~
+~
+0 0 6164
+D3
+~
+~
+0 0 6156
+S
+#6158
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6151
+D1
+~
+~
+0 0 6159
+D2
+~
+~
+0 0 6165
+S
+#6159
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6152
+D1
+~
+~
+0 0 6160
+D2
+~
+~
+0 0 6166
+D3
+~
+~
+0 0 6158
+S
+#6160
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6153
+D1
+~
+~
+0 0 6161
+D2
+~
+~
+0 0 6167
+D3
+~
+~
+0 0 6159
+S
+#6161
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6154
+D3
+~
+~
+0 0 6160
+S
+#6162
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6155
+S
+#6163
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6156
+D1
+~
+~
+0 0 6164
+S
+#6164
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6157
+D2
+~
+~
+0 0 6171
+D3
+~
+~
+0 0 6163
+S
+#6165
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6158
+S
+#6166
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6159
+D2
+~
+~
+0 0 6173
+S
+#6167
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6160
+S
+#6168
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6169
+D2
+~
+~
+0 0 6175
+S
+#6169
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D2
+~
+~
+0 0 6176
+D3
+~
+~
+0 0 6168
+S
+#6170
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6171
+S
+#6171
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6164
+D2
+~
+~
+0 0 6178
+D3
+~
+~
+0 0 6170
+S
+#6172
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6173
+D2
+~
+~
+0 0 6179
+S
+#6173
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6166
+D1
+~
+~
+0 0 6174
+D2
+~
+~
+0 0 6180
+D3
+~
+~
+0 0 6172
+S
+#6174
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D3
+~
+~
+0 0 6173
+S
+#6175
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610959 0
+Rd     0
+D0
+~
+~
+0 0 6168
+S
+#6176
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6169
+D1
+~
+~
+0 0 6177
+D2
+~
+~
+0 0 6183
+S
+#6177
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D3
+~
+~
+0 0 6176
+S
+#6178
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6171
+D2
+~
+~
+0 0 6185
+S
+#6179
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6172
+S
+#6180
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6173
+D2
+~
+~
+0 0 6187
+S
+#6181
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6182
+D2
+~
+~
+0 0 6188
+S
+#6182
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D3
+~
+~
+0 0 6181
+S
+#6183
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6176
+D1
+~
+~
+0 0 6184
+S
+#6184
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6185
+D2
+~
+~
+0 0 6191
+D3
+~
+~
+0 0 6183
+S
+#6185
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6178
+D3
+~
+~
+0 0 6184
+S
+#6186
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6187
+D2
+~
+~
+0 0 6193
+S
+#6187
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6180
+D3
+~
+~
+0 0 6186
+S
+#6188
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6181
+D1
+~
+~
+0 0 6189
+S
+#6189
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D2
+~
+~
+0 0 6196
+D3
+~
+~
+0 0 6188
+S
+#6190
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6191
+D2
+~
+~
+0 0 6197
+S
+#6191
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6184
+D2
+~
+~
+0 0 6198
+D3
+~
+~
+0 0 6190
+S
+#6193
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6186
+D1
+~
+~
+0 0 6194
+S
+#6194
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6195
+D3
+~
+~
+0 0 6193
+S
+#6195
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D1
+~
+~
+0 0 6196
+D3
+~
+~
+0 0 6194
+S
+#6196
+Caves of Obsidian~
+~
+~
+The light from the world above reflects off the walls of the cave.  The
+caves stretch off in every direction.  You can feel your feet slip a little
+on the cave's surface.  As you look around, the caves are created out of
+pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6189
+D1
+~
+~
+0 0 6197
+D3
+~
+~
+0 0 6195
+D4
+~
+chasm~
+576 0 6053
+S
+#6197
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6190
+D3
+~
+~
+0 0 6196
+S
+#6198
+Caves of Obsidian~
+~
+~
+The caves stretch off in every direction.  You can feel your feet slip a
+little on the cave's surface.  As you look around, the caves are created out
+of pure obsidian.  The shiny, slick surface makes movement slow as you make
+sure not to lose balance.  An aura of uncertainty fills these caves as they
+appear to shift in position.  
+~
+0 134610955 0
+Rd     0
+D0
+~
+~
+0 0 6191
+S
+#0
+
+
+
+#SPECIALS
+M 6002 spec_guard
+M 6005 spec_healer
+M 6016 spec_cast_mage
+M 6017 spec_guard
+M 6018 spec_cast_mage
+M 6019 spec_assassin
+M 6020 spec_cast_psionicist
+M 6021 spec_thief
+M 6024 spec_cast_undead
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 6002 5 6004
+E 0 6008 0 5
+E 0 6009 0 20
+E 0 6012 0 13
+O 0 6010 0 6010
+M 0 6000 5 6011
+E 0 6001 0 6
+E 0 6003 0 12
+M 0 6004 5 6014
+E 0 6004 0 17
+E 0 6006 0 11
+M 0 6001 5 6017
+E 0 6000 0 6
+E 0 6002 0 22
+E 0 6003 0 12
+M 0 6008 1 6019
+G 0 6036 0
+G 0 6037 0
+G 0 6038 0
+M 0 6009 1 6020
+G 0 6039 0
+G 0 6040 0
+G 0 6041 0
+M 0 6010 1 6022
+G 0 6042 0
+G 0 6043 0
+M 0 6007 1 6023
+M 0 6030 1 6024
+M 0 6031 1 6024
+M 0 6032 1 6024
+O 0 6025 0 6025
+M 0 6003 5 6025
+E 0 6005 0 0
+E 0 6006 0 11
+E 0 6007 0 20
+M 0 6004 5 6028
+E 0 6004 0 17
+E 0 6006 0 11
+M 0 6002 5 6028
+E 0 6008 0 5
+E 0 6009 0 20
+E 0 6012 0 13
+O 0 6028 0 6028
+M 0 6003 5 6031
+E 0 6005 0 0
+E 0 6006 0 11
+E 0 6007 0 20
+M 0 6002 5 6038
+E 0 6008 0 5
+E 0 6009 0 20
+E 0 6012 0 13
+M 0 6005 1 6045
+M 0 6006 1 6047
+G 0 6047 0
+G 0 6046 0
+G 0 6045 0
+G 0 6044 0
+M 0 6029 1 6048
+M 0 6027 1 6050
+M 0 6013 5 6051
+E 0 6011 0 11
+M 0 6013 5 6055
+E 0 6011 0 11
+M 0 6012 5 6060
+E 0 6013 0 16
+M 0 6012 5 6063
+E 0 6013 0 16
+M 0 6011 8 6072
+M 0 6011 8 6093
+M 0 6011 8 6099
+M 0 6026 1 6100
+M 0 6017 4 6101
+M 0 6017 4 6105
+M 0 6019 1 6106
+E 0 6014 0 20
+E 0 6015 0 5
+E 0 6016 0 7
+O 0 6035 0 6106
+M 0 6016 5 6107
+E 0 6020 0 3
+M 0 6016 5 6109
+E 0 6020 0 3
+M 0 6016 5 6115
+E 0 6020 0 3
+M 0 6016 5 6117
+E 0 6020 0 3
+M 0 6017 4 6118
+M 0 6017 4 6122
+M 0 6016 5 6126
+E 0 6020 0 3
+M 0 6020 1 6130
+E 0 6023 0 20
+E 0 6022 0 8
+E 0 6021 0 19
+G 0 6033 0
+M 0 6028 1 6131
+M 0 6018 1 6132
+E 0 6017 0 11
+E 0 6018 0 14
+E 0 6019 0 20
+G 0 6034 0
+M 0 6021 1 6133
+M 0 6022 1 6134
+M 0 6025 1 6135
+G 0 6048 0
+G 0 6029 0
+G 0 6030 0
+G 0 6031 0
+O 0 6024 0 6151
+M 0 6014 9 6166
+M 0 6015 9 6166
+M 0 6014 9 6168
+M 0 6015 9 6168
+O 0 6026 0 6175
+M 0 6014 9 6198
+M 0 6015 9 6198
+S
+
+
+
+#SHOPS
+6006 19 17 0 0 0 100 85 9 17
+6008 5 4 3 0 0 100 85 9 17
+6009 9 1 35 0 0 100 85 9 17
+6010 10 2 0 0 0 100 85 9 17
+6025 2 4 3 5 9 100 45 0 23
+0
+
+
+
+#$

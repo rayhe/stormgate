@@ -1,0 +1,1051 @@
+#AREADATA
+Name        New area~
+Builders    Trucido~
+VNUMs       6200 6299
+Security    100
+Recall      25001
+Flags       17
+End
+
+
+
+#MOBILES
+#6200
+security officer guard~
+The Security Officer~
+A man wearing a black uniform stands here, guarding.
+~
+~
+67 67108992 0 0 0 0 S
+75 150 150 0 0d0+0 0d0+0
+1500 0 0
+0 0 0
+0 0 0
+>greet_prog 50~
+peer $n
+'Welcome...
+glare $n
+~
+|
+#6201
+magic golem creature~
+A Golem of Magic~
+You've summoned a golem of magic through your foolish use of magic
+~
+~
+3 268435456 32768 0 4 0 S
+20 40 40 0 8000d0+0 0d0+0
+400 0 0
+0 0 0
+4 0 0
+>fight_prog 20~
+glare $n
+'Silly fool!  How dare you create me!
+c 'energy drain' $n
+~
+|
+#6202
+ormenis hermit man~
+Ormenis, the normal guy~
+An odd looking guy sits in his chair, reading.
+~
+~
+3 335544320 32768 0 4 0 S
+90 180 180 0 0d0+0 0d0+0
+90000 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+smile $n
+say Hello $n, what brings you to my home?
+~
+>speech_prog ship airship~
+' Huh, what are you talking about?
+emote taps his foot on the floor.
+' I assure you that I live on the solid earth.
+~
+|
+#6203
+jar ooze gooey~
+&wGooey, the Janitor~
+A mass of some sort of &wgray Ooze &Pbubbles here
+~
+~
+1 128 0 1073741824 0 0 S
+100 200 200 0 0d0+0 0d0+0
+100000 0 0
+0 0 0
+0 0 0
+>rand_prog 30~
+emote gurgles and bubbles
+~
+>fight_prog 30~
+emote bubbles and splatters you
+c acid
+~
+>greet_prog 100~
+' Welcome to the airship $n,
+' Please, make yourself at home but,
+' I ask you not to make a mess.
+~
+|
+#6205
+Thain~
+Thain~
+Thain stands here awaiting your order.
+~
+Thain stand here ready to sell you goods.
+~
+524355 128 32768 0 0 0 S
+50 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+1 0 0
+>all_greet_prog $n~
+~
+|
+#0
+
+
+
+#OBJECTS
+#6200
+ring binding~
+a Ring of Binding~
+A ring that a ghostly figure swirls within lays here~
+~
+9 0 0 0 0 3 106
+0~ 0~ 0~ 0~
+1 1 0
+5 0
+wrath of god~
+1 1
+0 0 0
+#6201
+ladder~
+a wooden ladder~
+A ladder to the deck of the ship~
+~
+12 0 0 0 0 0 1
+0~ 0~ 0~ 0~
+100 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#6202
+portal reactor~
+the entrance to the Reactor~
+The Entrance to the Reactor is here, shimmering brightly~
+~
+29 0 0 0 0 0 0
+6236~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#6203
+marker~
+a Rune Marker~
+The legendary rune marker lays here~
+~
+3 0 0 0 0 16385 50
+100~ 3~ 3~ mark~
+2 10000 0
+0 0
+reserved~
+0 0
+0 0 0
+#6204
+activator~
+a Rune Activator~
+The legendary rune activator lays her~
+~
+3 0 0 0 0 16385 50
+100~ 3~ 3~ rune recall~
+2 10000 0
+0 0
+reserved~
+0 0
+0 0 0
+#6222
+Itty Bitty Poker~
+an itty bitty poker~
+An itty bitty poker is here~
+~
+5 503333315 24576 1048576 0 8193 108
+0~ 9999999~ 9999999~ 11~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 500000
+A
+18 500000
+#0
+
+
+
+#ROOMDATA
+#6200
+Shadow of the Airship~
+~
+~
+You're standing on solid ground in the shadow of a giant....  Something
+vaguely ship-like.  You try to crane your neck to get a better look at it
+and almost fall backwards.  The best way to figure this out would be to go
+up and look around.  
+~
+0 4 2
+Rd     0
+D4
+~
+~
+0 0 6201
+S
+#6201
+Halfway Up~
+~
+~
+You are floating quite high above the ground.  Above you is the ship. 
+Looking up you realise that the ship is gigantic.  You wonder if it's the
+smartest idea to go up there.  
+~
+0 33685504 2
+Rd     0
+D4
+~
+~
+0 0 6202
+D5
+~
+~
+0 0 6200
+S
+#6202
+Beside the Ship~
+~
+~
+Here you are beside the ship.  It's a massive construct of metal and
+wood.  You wonder how something of this size could stay in the air, you
+quickly dismiss it as a giant dragon soars above you.  You see that there is
+a ladder that leads to the deck of the ship.  
+~
+0 33685504 2
+Rd     0
+D4
+~
+~
+0 0 6203
+D5
+~
+~
+0 0 6201
+S
+#6203
+On the Main Deck~
+~
+~
+This is the middle of the upper most deck of the Airship.  This isn't
+like any ship you've seen before, there are no masts, no sails...  And oddly
+enough, no sailors.  Well, none that you can see here anyway.  The only way
+to the solid ground below is the ladder.  
+~
+0 537272322 0
+Rd     0
+D0
+~
+~
+0 0 6204
+D1
+~
+~
+0 0 6202
+D2
+~
+~
+0 0 6206
+D3
+~
+~
+0 0 6202
+D5
+~
+~
+0 0 6202
+S
+#6204
+Toward the Bow~
+~
+~
+To the north you can see the bow of the airship.  No one seems to be on
+this deck at the moment.  Also there seems to be no helm on this part of the
+ship.  This makes you wonder how the navigator knows where to go, or how the
+helmsmen steer.  
+~
+0 536870912 0
+Rd     0
+D0
+~
+~
+0 0 6205
+D1
+~
+~
+0 0 6202
+D2
+~
+~
+0 0 6203
+D3
+~
+~
+0 0 6202
+S
+#6205
+The Bow~
+~
+~
+This is the front part of the ship.  This seems to be just a place to
+stand and look at the world below you.  The wind whips past you even though
+the ship isn't currently moving.  You conclude that it must only be an
+effect of the altitude of the ship.  
+~
+0 537264130 0
+Rd     0
+D1
+~
+~
+0 0 6202
+D2
+~
+~
+0 0 6204
+D3
+~
+~
+0 0 6202
+S
+#6206
+Toward the Stern~
+~
+~
+You are close to the rear or stern of this large airship.  You look over
+the sides still semi-amazed that this construction of metal and wood can
+stay up this high 
+~
+0 536870912 0
+Rd     0
+D0
+~
+~
+0 0 6203
+D1
+~
+~
+0 0 6202
+D2
+~
+~
+0 0 6207
+D3
+~
+~
+0 0 6202
+S
+#6207
+Before the Stern~
+~
+~
+You're almost to the stern of the ship.  Still no one anywhere on this
+deck so far.  You decide to start looking for a way down to the lower decks.
+In the back of your mind you hope it is abandoned.  Who wouldn't want a
+flying ship?  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 6206
+D1
+~
+~
+0 0 6202
+D2
+~
+~
+0 0 6208
+D3
+~
+~
+0 0 6202
+S
+#6208
+The Stern~
+~
+~
+This is the rear of the boat.  It seems that this is another area for
+looking at the ground below.  Also there seems to be a ladder here allowing
+you to get to inside the ship.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 6207
+D1
+~
+~
+0 0 6202
+D3
+~
+~
+0 0 6202
+D5
+~
+~
+0 0 6209
+S
+#6209
+Stern Sleeping Quarters~
+~
+~
+This is where the people who live and work on the ship sleep.  The
+average sized metalic bunk beds are lined up neatly down here.  You hope you
+get to see what the people on this ship look like.  To the far north looks
+like there is a closed door, you wonder what's behind it.  The ladder
+continues down from here, you think you smell something food like somewhere
+down there.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6210
+D4
+~
+~
+0 0 6208
+D5
+~
+~
+0 0 6228
+S
+#6210
+Sleeping Quarters~
+~
+~
+This is where everone on the ship sleeps.  The room is filled with bunk
+beds of every size and shape.  There are also a few large glass containers
+filled with some kind of gray ooze.  You sure hope you don't run across what
+sleeps in that environment.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6211
+D2
+~
+~
+0 0 6209
+S
+#6211
+Sleeping Quarters~
+~
+~
+This room is huge.  So many beds.  You start to wonder where everyone
+that is supposed to sleep here currenty are.  Too bad though, you really
+would like a guided tour to figure out what everything here does and why the
+ship is here in the first place.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6212
+D2
+~
+~
+0 0 6210
+S
+#6212
+Sleeping Quarters~
+~
+~
+More beds.  There seem to be a lot of them.  You realise though that it
+must take a lot of work to keep this place up.  With all these beds you hope
+you don't stumble into too many if they decide they don't want you here.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6213
+D2
+~
+~
+0 0 6211
+S
+#6213
+End of the Sleeping Quarters~
+~
+~
+This is the front most part of the sleeping quarters.  There is a metalic
+door to the north, where it leads you're quite unsure.  You certainly hope
+that it's not the captain's quarters...  Most captains hate having their
+personal quarters entered without notice, or permission.  
+~
+0 536870920 0
+Rd     0
+D0
+~
+~
+3 0 6214
+D2
+~
+~
+0 0 6212
+S
+#6214
+The Bridge~
+~
+~
+There are many dials, buttons, controls and seats here.  You come to the
+conclusion this is where the ship is steered.  Now, after seeing the large
+window in the front of the room, you understand how the helmsmen know where
+the ship is going.  
+~
+0 536870920 0
+Rd     0
+D2
+~
+~
+3 0 6213
+S
+#6215
+Passage To the Engine Room~
+~
+~
+~
+0 8 0
+Rd     0
+D2
+~
+~
+3 0 6216
+D5
+~
+~
+0 0 6231
+S
+#6216
+The Galley~
+~
+~
+You've reached the far end of the galley.  To the north there is a door
+that reads "Do Not Enter".  But when have you ever cared what a sign said. 
+The door is closed currently but not locked.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 6215
+D1
+~
+~
+0 0 6218
+D2
+~
+~
+0 0 6219
+D3
+~
+~
+0 0 6217
+S
+#6217
+The Galley~
+~
+~
+This is the north end of the galley.  Chairs and tables are here too. 
+You imagine that you could sit a lot of people in this room.  That's it
+maybe this is a meeting room as well.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 6216
+D2
+~
+~
+0 0 6220
+S
+#6218
+The Galley~
+~
+~
+This is the north end of the galley.  Chairs and tables are here too. 
+You imagine that you could sit a lot of people in this room.  You realise
+that this room may double as a meeting hall as well.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 6221
+D3
+~
+~
+0 0 6216
+S
+#6219
+The Galley~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6216
+D1
+~
+~
+0 0 6221
+D2
+~
+~
+0 0 6222
+D3
+~
+~
+0 0 6220
+S
+#6220
+The Galley~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 6217
+D1
+~
+~
+0 0 6219
+D2
+~
+~
+0 0 6223
+S
+#6221
+The Galley~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6218
+D2
+~
+~
+0 0 6224
+D3
+~
+~
+0 0 6219
+S
+#6222
+The Galley~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6219
+D1
+~
+~
+0 0 6224
+D2
+~
+~
+0 0 6225
+D3
+~
+~
+0 0 6223
+S
+#6223
+The Galley~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6220
+D1
+~
+~
+0 0 6222
+D2
+~
+~
+0 0 6226
+S
+#6224
+The Galley~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6221
+D2
+~
+~
+0 0 6227
+D3
+~
+~
+0 0 6222
+S
+#6225
+The Galley~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6222
+D1
+~
+~
+0 0 6227
+D2
+~
+~
+0 0 6228
+D3
+~
+~
+0 0 6226
+S
+#6226
+The Galley~
+~
+~
+This is the Galley.  As in the place on a ship where the food is created
+and served.  This is where most of the people that live on the ship are
+currently.  Everyone has to eat sometime.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6223
+D1
+~
+~
+0 0 6225
+D2
+~
+~
+0 0 6229
+S
+#6227
+The Galley~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6224
+D2
+~
+~
+0 0 6230
+D3
+~
+~
+0 0 6225
+S
+#6228
+The Galley~
+~
+~
+This is where all the people on the airship go to eat.  The tables here
+are numerous enough to fill the whole room with only enough space to walk
+between the tables.  There are tables her some full, some empty, some only
+have one or two people.  This looks like an ideal place to rest when the
+ship is on standby 
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6225
+D1
+~
+~
+0 0 6230
+D3
+~
+~
+0 0 6229
+D4
+~
+~
+0 0 6209
+S
+#6229
+The Galley~
+~
+~
+This is the southern wall of the galley.  Chairs and tables are
+everwhere.  The air smells of food which causes your stomach to grumble a
+bit.  You wonder how long it's been since you've had a real home cooked
+meal.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6226
+D1
+~
+~
+0 0 6228
+S
+#6230
+The Galley~
+~
+~
+This is still part of the southern wall of the galley.  Ahead of you you
+can see where they're serving the food...  You really can't tell exactly
+what it is but you know that it smells good 
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6227
+D3
+~
+~
+0 0 6228
+S
+#6231
+Engine Room~
+~
+~
+This is the start of the engine room.  Up is the galley which is where
+you were before you came down here.  The smell of food still wafts this far.
+To the south the reactor glows and pulses with power.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 6232
+D4
+~
+~
+0 0 6215
+S
+#6232
+Engine Room~
+~
+~
+This is the engine room.  This is where the engines are that keep the
+ship in the air are.  It is where the power is generated for everything from
+the lights to the ovens in the galley above.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6231
+D2
+~
+~
+0 0 6233
+S
+#6233
+Main Reactor ~
+~
+~
+This is where the ship gets it's energy, a large pulsing reactor.  The
+reactor humms with power.  You start to wonder what exactly is fueling the
+reactor.  The reactor door is open slightly you think you see a shadowy
+figure inside.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6232
+D2
+~
+~
+0 0 6234
+S
+#6234
+Engine Room~
+~
+~
+Ah, the engine room.  You can feel the energy of the reactor to the north
+surge through your body.  Every hair on your body feels like it's sticking
+up on it's own accord 
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6233
+D2
+~
+~
+0 0 6235
+S
+#6235
+Engine Room~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 6234
+S
+#6236
+Inside the Reactor~
+~
+~
+This is the inside of the reactor.  Energy pulses through the very walls
+that surround you.  Everything glows brightly and you must squint to see
+anything at all.  You hear sounds comming from deeper within the reactor.  
+~
+0 268435464 0
+Rd     0
+D1
+~
+~
+0 0 6233
+D3
+~
+~
+0 0 6237
+S
+#6237
+Inside the Reactor~
+~
+~
+This chamber leads off to the north as well as back to the east.  From
+the northern direction you can swear that you hear something almost like
+voices.  The energy in the reactor seems to be intensifying 
+~
+0 268435464 0
+Rd     0
+D0
+~
+~
+0 0 6238
+D1
+~
+~
+0 0 6236
+S
+#6238
+Main Reactor Chamber~
+~
+~
+This is where the source of energy that powers the ship is.  Looking
+around the room is littered with strange gems that are moulded into the
+floor, walls and ceiling.  The gems seem to only amplify the magic that the
+power source generates 
+~
+0 268435464 0
+Rd     0
+D2
+~
+~
+0 0 6237
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 6201 0 6202
+M 0 6203 1 6210
+M 0 6200 1 6213
+O 0 6202 0 6233
+M 0 6202 1 6238
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

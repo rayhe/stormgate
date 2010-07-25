@@ -1,0 +1,2490 @@
+#AREADATA
+Name        {  1-5 } DaD Temple~
+Builders    None~
+VNUMs       23201 23300
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      Some small insects buzz around your head.~
+SoundsA     (None)~
+Music       u6_creat.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#23201
+priest~
+A Priest~
+A Priest of Death and Decay is here to help you.
+~
+The priest looks exactly like you.  How odd.
+~
+524875 0 0 537004032 0 -1000 S
+108 1 216 216 0 50000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) < 2
+say Welcome to Adventures of Stormgate, $n!  I have a newbie guide for you to read.  To read it, type: READ CHAPTER, where chapter is a number.
+smile $n
+mpoload 156
+give newbie $n
+say If you need any other help, just say YES.
+else
+say You have outgrown your need for me, $n.  May you find adventure in all that you do!
+endif
+endif
+~
+>speech_prog help~
+say Hello $n! Welcome to Adventures of Stormgate, where many journeys lie ahead of you!
+say Can I be of assistance to you in any way?
+~
+>speech_prog yes yeah yep ya yessir yup yuppers~
+say OK..just say one of the following, and i will help you with that topic.
+smile $n.
+mpecho LEVEL EXP EXIT PKILL PEACEFUL TRAIN PRACTICE SCHOOL STATS
+~
+>speech_prog no nope nosir nopers~
+say Then begon, I have no time for you.
+~
+>speech_prog exit~
+say There are many auto commands that you can type:
+mpecho AUTOEXIT: will show all exits when you walk in the room.
+mpecho AUTOLOOT: will take all items in the corpse
+mpecho AUTOGOLD: will take all gold in a corpse
+mpecho AUTOSAC: will sacrifice corpses after you kill a mob
+~
+>speech_prog level~
+say to raise levels, you must gain experience from killing mobs.
+mpecho AREA: shows you what level all the areas in the game are.
+say For the time being you should stay at the mud school until you reach level 5.
+~
+>speech_prog peaceful~
+say Peaceful means that you do not wish to kill other players. You cannot be attacked by them, no matter what level you are. Conversely, you also cannt attack them.
+~
+>speech_prog practice~
+say You may train your attributes right now, or later, you can find the training hall.  To practice your skills, you must first attain level three, and find a practicioner.
+~
+>speech_prog stats~
+say there are many stats. To see what your values are, type wo.
+mpecho STR: strength, this affects how much you can carry and how much.
+mpecho WIS: affects how many practices you get per level.
+mpecho INT: affects how many practices you need to become an adept at a skill or spell.
+mpecho DEX: affects how often you can dodge or parry an attack.
+mpecho CON: affects how many hit points you gain per level.
+say To increase your stats, go TRAIN them.
+~
+>speech_prog school~
+say You are in the school now.
+~
+>speech_prog train~
+say You may train your attributes right now, or later, you can find the training hall.  To practice your skills, you must first attain level three, and find a practicioner.
+~
+>speech_prog exp~
+Say Experience is gained by killing mobs. You must gain 1000 experience for each level.
+mpecho CONSIDER <MOB>: shows you the chances that you will be able to kill the mob in question.
+mpecho KILL <MOB>: you attempt to kill a mob.
+mpecho WORTH: shows you how much experience you have and how much you need until your next level. Also it shows your modified stats.
+say for right now, you should stay in the mud school until level 5.
+~
+>speech_prog pkill~
+say Pkill means that you wish to be able to fight and kill other players in the game. This will start at level 30, and you can only attack other players with a pkill flag.
+~
+>speech_prog hi hello~
+say Hello!
+~
+>speech_prog bye~
+say Goodbye!
+~
+>speech_prog job~
+say It is my job to help you.
+~
+|
+#23202
+goldfish~
+a goldfish~
+A jumbo goldfish splashes in the pond.
+~
+~
+67 0 0 2 0 1000 S
+1 1 2 2 0 0d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23203
+tadpole~
+a tadpole~
+An overgrown tadpole is here, splashing in some water.
+~
+~
+67 0 0 2 0 1000 S
+1 1 2 2 0 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23204
+frog~
+a frog~
+An overgrown frog is here, hopping about.
+~
+~
+67 0 0 0 0 1000 S
+1 1 2 2 0 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23205
+tortoise~
+a tortoise~
+A tortoise, minding its own business, is here.
+~
+~
+65 0 0 0 0 1000 S
+1 1 2 2 0 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23206
+crab~
+a crab~
+A crab with sharp pincers is here.
+~
+~
+65 0 0 0 0 1000 S
+1 1 2 2 0 20d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23207
+venus flytrap~
+a venus flytrap~
+A venus flytrap is here, growing from the floor.
+~
+~
+67 0 0 0 0 1000 S
+1 1 2 2 0 20d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23208
+giant cricket~
+a giant cricket~
+A giant cricket is here, chirping.
+~
+~
+99 0 0 0 0 1000 S
+1 1 2 2 0 15d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23209
+garden snake~
+a garden snake~
+A garden snake is here.
+~
+~
+99 0 0 0 0 1000 S
+1 1 2 2 0 20d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23210
+toad~
+a toad~
+A frightened toad is here.
+~
+~
+99 0 0 0 0 1000 S
+1 1 2 2 0 20d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23211
+baby alligator~
+a baby alligator~
+An irritated baby alligator is here.
+~
+~
+97 0 0 0 0 1000 S
+3 1 6 6 0 35d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#23212
+slime~
+a slime~
+An oozing slime is here.
+~
+~
+65 0 0 0 0 1000 S
+2 1 4 4 0 25d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#23213
+mouse~
+a mouse~
+A cute little mouse nibbles your feet.
+~
+~
+65 0 0 0 0 1000 S
+1 1 2 2 0 5d0+0 0d0+0
+5 0 0
+0 0 0
+0 0 0
+#23214
+otter~
+an otter~
+An otter scrits around your feet
+~
+~
+65 0 0 0 0 1000 S
+2 1 4 4 0 25d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#23215
+bat~
+a bat~
+A bat flaps around.
+~
+~
+65 524288 0 0 0 1000 S
+3 1 6 6 0 25d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#23216
+dragonfly~
+a dragonfly~
+A dragonfly hovers in front of you.
+~
+~
+65 524288 0 0 0 1000 S
+2 1 4 4 0 20d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#23217
+muskrat~
+a muskrat~
+A fat muskrat waddles around.
+~
+~
+65 0 0 0 0 1000 S
+2 1 4 4 0 30d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#23218
+salamander~
+a salamander~
+A salamander slithers on the ground.
+~
+~
+65 0 0 0 0 1000 S
+3 1 6 6 0 40d0+0 0d0+0
+5 0 0
+0 0 0
+0 0 0
+#23219
+owl~
+an owl~
+An owl flaps around, looking for food.
+~
+~
+65 524288 0 0 0 1000 S
+3 1 6 6 0 35d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#23220
+kingfisher~
+a kingfisher~
+A kingfisher flaps around here.
+~
+~
+65 0 0 0 0 1000 S
+3 1 6 6 0 30d0+0 0d0+0
+25 0 0
+0 0 0
+0 0 0
+#23221
+Agneisz~
+Agneisz~
+Agneisz is here minding her own business
+~
+Agneisz is a bit of an oddity.  It is as if she is a ghost, but not.  She
+possesses no qualities of a typical ghost, yet she is translucent.  Her eyes
+glows a deep blue.  
+~
+524867 0 0 537004032 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+nod $n
+~
+>speech_prog hi hello~
+say Hello
+~
+>speech_prog job~
+say I train
+~
+>speech_prog train~
+say Type "train" to see what attribute you can train
+~
+>speech_prog bye~
+say Fare thee well
+~
+|
+#23222
+Iolia~
+Iolia~
+Iolia is here to help you practice your skills and spells.
+~
+Iolia is a very tall woman, towering over every woman you have ever met. 
+You are unsure of her race, as her skin appears to be featureless, save for
+piercing, glowing blue eyes.  
+~
+525379 0 0 537004032 0 -150 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Good day, $n
+~
+>speech_prog hi hello~
+say Good day, $n
+~
+>speech_prog job~
+say It is my job to help you practice your skills and spells.  Type PRAC to see what I can do
+~
+>speech_prog bye~
+say Safe travels, $n
+~
+|
+#23223
+juxtaria~
+Juxtaria~
+Juxtaria is here to teach you languages.
+~
+Her face is cloaked, but you think you can see a beautiful woman beneath
+her hood.  Upon closer examination, you can see through the illusion, and
+she is apparently a living skeleton.  
+~
+589891 0 0 537004032 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Greetings!  I can teach you languages.  Type "LEARN" to see what you can learn, and how much it costs.
+~
+>speech_prog hi hello~
+say Greetings, $n!  May your journeys be long and lively.
+~
+>speech_prog job~
+say I am here to teach you languages.  Type "HELP LANGUAGE" for more information.
+~
+>speech_prog bye~
+say Farewell, $n.
+~
+|
+#23224
+Jharvin~
+Jharvin~
+Jharvin, the master of classes, is here.
+~
+Jharvin's flesh appears to be dripping from his bones at a constant rate.
+Some sort of magical energy seems to reconstruct him as fast as he falls
+apart.  He does not show any discomfort.  
+~
+786499 0 0 537004032 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+emote moans slightly as $n enters the room
+~
+>speech_prog hi hello~
+nod $n
+~
+>speech_prog job~
+emote mumbles something, but you can make out "Help Remort"
+~
+>speech_prog bye~
+emote waves goodbye
+~
+|
+#23225
+herzog~
+Herzog~
+Herzog the shopkeep is here.
+~
+You think Herzog was a dwarf.  He appears to be assembled from parts of
+many different beings, most of which were dwarves.  He appears happy to see
+you.  
+~
+524355 0 0 537001984 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Hello, $n!  I can sell you things.  Type "LIST" to see what I have for sale.
+~
+>speech_prog hi hello~
+say Hello, $n!  Lovely day today, isn't it?
+~
+>speech_prog job~
+say I can sell you things.  Type "LIST" to see what I have for sale
+~
+>speech_prog bye~
+say Good travels
+~
+|
+#23226
+warrior priest~
+a warrior priest~
+A warrior priest is here, watching you carefully.
+~
+He appears to be a dark cloaked humanoid, void of all features, save for his blue glowing eyes.
+~
+524353 0 0 131072 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 50~
+if isgood($n) == 1 then
+say I'm watching you, $n
+else
+say Be well, $n
+endif
+~
+>speech_prog hi hello~
+say Hello
+~
+>speech_prog job~
+say It is my duty to patrol these halls
+~
+>speech_prog patrol halls~
+say Yes, that's right
+~
+>speech_prog bye~
+nod $n
+~
+|
+#23227
+Jarthaxas~
+Jarthaxas~
+Jarthaxas is here, watching over his temple.
+~
+Jarthaxas' body is shrouded in a light mist, and his form seems to shift
+when you try to focus on him.  
+~
+524363 0 262144 537004032 0 -1000 S
+108 1 216 216 0 100000d0+0 0d0+0
+1080 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Welcome.  Rest, I will heal you
+~
+>speech_prog hi hello~
+say Welcome, $n
+~
+>speech_prog job~
+say My job is to heal you, and to watch over the temple
+~
+>speech_prog bye~
+say Good bye, $n.  Safe travels
+~
+>speech_prog heal~
+say Type "HEAL" to see the list of things that I can do
+~
+>speech_prog temple~
+say You are in the temple now.  Methidoral is up the stairs to the surface.
+~
+|
+#23228
+worshipper~
+a worshipper~
+A worshipper is here, chanting.
+~
+He is chained to the ground, forever bowed in worship to Death and Decay.
+~
+524355 0 0 0 0 -1000 S
+108 1 216 216 0 100000d0+0 0d0+0
+1080 0 0
+0 0 1
+0 0 0
+#23229
+zwei~
+Zwei~
+Zwei, the bartender, is here.
+~
+Zwei seems to be a demon, but he is missing his wings.  It appears as
+though a great force tore them from his body, and this action somehow bound
+him to this very store.  His eyes glow a dark blue.  
+~
+524355 0 0 537001984 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Oh, good.  Another customer
+~
+>speech_prog hi hello~
+emote stops what he's doing
+say Yes?
+~
+>speech_prog job~
+say I'll sell you my wares.  Type LIST to see what I have.
+~
+>speech_prog bye~
+say Mmm hmm
+~
+|
+#0
+
+
+
+#OBJECTS
+#23201
+sign~
+a sign~
+The FIRST SIGN of many is hanging on a wall.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Welcome to Adventures of Stormgate.  May your journey here be.... 
+Adventurous.  This is the first sign of the Mud School.  Be sure to LOOK
+SIGN or L SIGN wherever you might find one.  Also, keep an eye out for
+keywords in descriptions, as there may be other keywords for objects to be
+looked at.  Be brave, and you shall be rewarded.  
+~
+#23202
+sign~
+a sign~
+A sign is here, stuck on the floor.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+A lot of NPC's can communicate.  If they are able, all will respond to
+Trigger Words.  Common to all of these NPCs are the trigger words HI, JOB
+and BYE.  Simply say these words in their presence, and they will say
+something back.  If you wish to continue talking to them, try to discern the
+next trigger word of the conversation by what they say.
+~
+#23203
+sign~
+a sign~
+A sign sits here, Perhaps you should READ SIGN.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+10000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Congratulations, you have passed the first test!  This is the Second
+Test.  Here you will fight aggressive mobs, and multiple mobs at the same
+time.  Perhaps even multiple aggressive mobs!  Best be on your guard! 
+~
+#23204
+bone armor~
+bone armor~
+An armor made of bone lies on the ground.~
+~
+9 0 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 5
+A
+13 5
+#23205
+bone leggings~
+bone leggings~
+A pair of bone leggings is here.~
+~
+9 0 0 0 0 33 1
+100 100
+0~ 0~ 0~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 1
+#23206
+bone boots~
+bone boots~
+A pair of bone boots rests here.~
+~
+9 0 0 0 0 65 1
+100 100
+0~ 0~ 0~ 0~
+1 10 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 5
+A
+13 1
+#23207
+bone belt~
+a bone belt~
+A belt, made of many bones, lies here.~
+~
+9 0 0 0 0 513 1
+100 100
+0~ 0~ 0~ 0~
+1 10 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 2
+#23208
+bone shield~
+a bone shield~
+A wicked looking bone shield is here.~
+~
+9 0 0 0 0 513 1
+100 100
+0~ 0~ 0~ 0~
+1 10 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 3
+#23209
+bone ring~
+a bone ring~
+A small bone ring has been discarded here.~
+~
+9 0 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 15 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 2
+A
+25 2
+A
+12 2
+A
+13 2
+#23210
+flesh necklace~
+a necklace of flesh~
+A necklace, made of stitched together bits of flesh, is here.~
+~
+9 0 0 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+1 10 0
+0 0
+reserved~
+0 0
+0 0 0
+#23211
+bone helm~
+a bone helm~
+A helm made of bone sits here.~
+~
+9 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 5
+A
+12 5
+A
+13 1
+#23212
+bone bracer~
+a bone bracer~
+A bracer made of bone sits here.~
+~
+9 0 0 0 0 257 1
+100 100
+0~ 0~ 0~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+#23213
+flesh bracelet~
+a bracelet of flesh~
+A bracelet stitched together from dead flesh is here.~
+~
+9 0 0 0 0 4097 1
+100 100
+0~ 0~ 0~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+#23214
+service station key~
+a service station key~
+A small key sits on the ground, rusting.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+#23215
+access pipe key~
+an access pipe key~
+A small iron key sits on the ground.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 2 0
+0 0
+reserved~
+0 0
+0 0 0
+#23216
+sacrifice key~
+a key of sacrifice~
+A key sits here, looking like it is made of liquid blood.~
+~
+18 64 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 15 0
+0 0
+reserved~
+0 0
+0 0 0
+#23217
+statue~
+a statue~
+A statue, dedicated to all things dead, sits here on a huge rock.~
+~
+15 0 0 0 0 0 1
+100 100
+1~ 5~ 0~ 0~
+10000 10000 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+The statue is of a great, hooded being, carrying a very large, red sword.
+You assume this being to be one of the gods of Death and Decay.  The statue
+itself looks like it is a container, and it can probably be opened.  
+~
+#23218
+statue~
+a statue~
+A statue, dedicated to all things decaying, sits here on a huge rock.~
+~
+15 0 0 0 0 0 1
+100 100
+1~ 5~ 0~ 0~
+10000 10000 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+The statue is of a great, hooded being, carrying a very large, red sicle.
+You assume this being to be one of the gods of Death and Decay.  The statue
+itself looks like it is a container, and can probably be opened.  
+~
+#23219
+fountain death~
+fountain of death~
+A fountain, dedicated to the discipline of Death, is here.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+10000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+fountain~
+A large statue of a hooded being, carrying a very large red sickle, juts
+up from the centre of the fountain.  
+~
+#23220
+fountain decay~
+fountain of decay~
+A fountain, dedicated to the discipline of Decay, is here.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+10000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+fountain~
+A large statue of a hooded being, carrying a very large red sword, juts
+up from the centre of the fountain.  
+~
+#23221
+blood fountain~
+a blood fountain~
+A fountain, dripping in blood, is here.~
+~
+28 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+10000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+fountain~
+It has two statues in its centre, one with a blood red sickle pointed
+northeast, and the other, with a blood red sword, pointing southwest.  
+~
+#23222
+maggots~
+some maggots~
+Some maggots are squirming here.~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23223
+water filled stomach~
+water filled stomach~
+A stomach, used for holding water, is here.~
+~
+17 0 0 0 0 1 1
+100 100
+12~ 12~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23224
+roadkill~
+roadkill~
+A chunk of roadkill is here.~
+~
+19 0 0 0 0 1 1
+100 100
+50~ 0~ 0~ 0~
+2 2 0
+0 0
+reserved~
+0 0
+0 0 0
+#23225
+table scraps~
+table scraps~
+There are some table scraps here.~
+~
+19 0 0 0 0 1 1
+100 100
+40~ 0~ 0~ 0~
+1 2 0
+0 0
+reserved~
+0 0
+0 0 0
+#23226
+animal carcass pack~
+an animal carcass pack~
+An animal carcass, used for storing items, is here.~
+~
+15 0 0 0 0 1 1
+100 100
+25~ 0~ 0~ 0~
+1 2 0
+0 0
+reserved~
+0 0
+0 0 0
+#23227
+zombie arm torch~
+a zombie arm torch~
+A zombie arm has been discarded here.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ 50~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 5
+#23228
+foaming skull drink~
+a foaming skull drink~
+~
+~
+17 0 0 0 0 1 1
+100 100
+75~ 75~ 7~ 0~
+2 25 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#23201
+The School of Death and Decay~
+~
+~
+You awaken in a pool of bile and filth.  You are deep below the temple of
+Death and Decay in the halls of the school of learning.  Glancing at your
+surroundings reveals that you are at the bottom of an old sewar system.  The
+floors and walls are wet, with miscellaneous weeds and plants growing over
+everything.  The air is almost dripping with moisture.  The only exit is to
+the east.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23202
+S
+#23202
+The Sewer Beneath The Temple~
+~
+~
+You are in a sewer pipe deep below the temple of Death and Decay.  There
+is a sign hanging on the wall here, completely void of all vegetation. 
+Someone must routinely clean it.  You can READ SIGN to see what it says. 
+The obvious exits are to the east and to the west.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23203
+D3
+~
+~
+0 0 23201
+S
+#23203
+The Sewer Beneath The Temple~
+~
+~
+You are walking along a large sewer pipe, covered in mould and slime.  At
+times it feels as though the floor is going to give out and vanish beneath
+your feet.  There is a circle of clean, polished floor here, with an iron
+ring attached, most likely to keep something, or someone, from leaving this
+area.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 23204
+D3
+~
+~
+0 0 23202
+S
+#23204
+The Sewer Beneath The Temple~
+~
+~
+You have reached the end of this pipe.  A ladder leads up to a second
+pipe above you.  The smell here is vile, easily one of the worst smells you
+have ever had the pleasure of witnessing.  You can go west, or up the
+ladder.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23203
+D4
+~
+~
+0 0 23205
+S
+#23205
+The Sewer Beneath The Temple~
+~
+~
+You are at the end of a sewer pipe.  A ladder leads down through the
+floor to the lowest level of this system.  The pipe extends off to the west.
+There is a small pool of water here.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23206
+D5
+~
+~
+0 0 23204
+S
+#23206
+The Sewer Beneath The Temple~
+~
+~
+You are trudging along a sewage pipe beneath the temple of Death and
+Decay.  It has all the usual things you'd find in an abandoned sewer system.
+Small animal corpses in various state of decay litter the ground.  You can
+go east or west from here.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 23205
+D3
+~
+~
+0 0 23207
+S
+#23207
+The Sewer Beneath The Temple~
+~
+~
+You are walking along a pipe, deep underground.  A ladder leads up
+through the ceiling into what looks like another pipe.  You can also leave
+this room to the east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23206
+D4
+~
+~
+0 0 23208
+S
+#23208
+The Sewer Beneath The Temple~
+~
+~
+You are at the end of a short pipe.  A ladder leads down through the
+floor to a larger pipe below.  A structure made of brick lies to the east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23209
+D5
+~
+~
+0 0 23207
+S
+#23209
+A Service Room~
+~
+~
+You are standing inside a service room.  An round, iron door lies on the
+east wall, with a large round dial on its centre, most likely a lock. 
+Looking through the iron bars, you can see a pipe beyond that curves sharply
+upward.  A smaller pipe leads off to the west.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+7 23214 23210
+D3
+~
+~
+0 0 23208
+S
+#23210
+The Sewer Beneath The Temple~
+~
+~
+You are standing in a pipe.  The pipe ends abruptly to the west, at an
+iron door.  The pipe curves sharply upward here, but you think you can jump
+up to the next level.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+7 23114 23209
+D4
+~
+~
+0 0 23211
+S
+#23211
+The Sewer Beneath The Temple~
+~
+~
+You are at the top of a curve in the pipe.  It slopes down quite abruptly
+here on the slippery floor.  The pipe goes off to the west, where you can
+see it slope up again, out of your line of sight.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23212
+D5
+~
+~
+0 0 23210
+S
+#23212
+The Sewer Beneath The Temple~
+~
+~
+The pipe narrows by quite a bit to the west.  The ground here is covered
+in scratches, as if something was clawing at the ground.  There is a large
+brown stain covering the ceiling.  The pipe continues to the east.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 23211
+D3
+~
+~
+0 0 23213
+S
+#23213
+The Sewer Beneath The Temple~
+~
+~
+You have come to a small, sharp curve in the sewer pipe.  The curve
+slopes upwards, but you think you can make it.  The pipe increases in
+diameter to the east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23212
+D4
+~
+~
+0 0 23214
+S
+#23214
+The Sewer Beneath The Temple~
+~
+~
+The pipe you are standing in curves down sharply at this point.  A small
+pipe, lined with slippery mosses, exits to the east.  The light in these
+pipes seems to come from everywhere at once.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23215
+D5
+~
+~
+0 0 23213
+S
+#23215
+The Sewer Beneath The Temple~
+~
+~
+You are moving through a rather slippery, small pipe.  A gate lies to the
+east.  Beyond this gate is a rather large room.  You can also go to the
+west, where it appears that the pipe drops off deeper into the ground.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+39 23215 23216
+D3
+~
+~
+0 0 23214
+S
+#23216
+The Sewer Beneath The Temple~
+~
+~
+You are standing in an enormous room.  A spiral staircase, with a groove
+down the centre of the steps for running water, leads up into the ceiling. 
+The walls are adorned with all kinds of carvings of long dead beings.  A
+small pipe leads off to the west.  
+~
+0 12 0
+Rd     0
+D3
+~
+~
+39 23215 23215
+D4
+~
+~
+0 0 23217
+S
+#23217
+The Chamber of Sacrifice~
+~
+~
+You are in an enormous room above what seems to be an abandoned sewer.  A
+huge altar, made of a single enormous skull, sits in the centre of the room.
+The skull is shaped in such a way that a being can be strapped to its
+forehead, and its blood would drain from the jaw down a flight of stairs
+located in the centre of the skull.  An ornate hallway leads off to the
+west.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23218
+D5
+~
+~
+0 0 23216
+S
+#23218
+Beneath the Temple~
+~
+~
+You are standing in a hallway beneath the temple, above the abandoned
+sewers.  An enormous room lies to the east.  The floor is littered with
+bones and animal carcasses.  A door lies at the end of the hallway to the
+west.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23217
+D3
+~
+~
+119 23216 23219
+S
+#23219
+Beneath the Temple~
+~
+~
+You have arrived at the entrance to the Chamber of Sacrifice.  An ornate
+door lies on the east wall, its frame surrounded by flowing blood.  When you
+try to touch the blood, your hands goes right through, as if it's not
+actually there.  An ornate staircase leads up through a hole in the centre
+of the ceiling.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+119 23216 23218
+D4
+~
+~
+0 0 23220
+S
+#23220
+The Nexus of Death and Decay~
+~
+~
+You are at the main worship centre for Death and Decay.  An altar lies in
+the centre of the room, with places for kneeling surrounding it in three
+layers.  A hallway leaves in all four cardinal directions.  A stairway lies
+against the wall leading down, through a hole, to the School.  An enormous
+staircase made of humanoid skulls leads up, to where you don't know, as you
+can't see the top.  To the north and south, through long hallways, you will
+find the various places to practice your skills, train your attributes, buy
+supplies, and other such facilities.  The short hallway leading to the east
+leads to the graveyards, while an underground swamp lies to the west.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23253
+D1
+~
+~
+0 0 23237
+D2
+~
+~
+0 0 23259
+D3
+~
+~
+0 0 23221
+D4
+~
+~
+0 0 23265
+D5
+~
+~
+0 0 23219
+S
+#23221
+The West Entrance~
+~
+~
+You are standing on a raised platform.  To the west is a lies a very
+large swamp.  You can hear the sounds of insects coming from that direction.
+The platform drops off suddenly to the west, as if its constructors just
+vanished without completing their task.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 23220
+D3
+~
+~
+0 0 23222
+S
+#23222
+The Swamp~
+~
+~
+You are walking along a path through a large swamp.  The Temple of Death
+and Decay lies to the east, its west entrance clearly visible from here to
+the east.  A massive stone wall lies to the west, while the swamp stretches
+out to the north and south.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23223
+D1
+~
+~
+0 0 23221
+D2
+~
+~
+0 0 23230
+S
+#23223
+The Swamp~
+~
+~
+You are walking along a path through the swamp.  The swamp opens up to a
+more open area to the west of here.  The swamp appears to be located inside
+a pit, surrounded on all sides by a great rock wall.  
+~
+0 0 11
+Rd     0
+D2
+~
+~
+0 0 23222
+D3
+~
+~
+0 0 23224
+S
+#23224
+The Swamp~
+~
+~
+A path leading out of the swamp leads off to the east, while the swamp
+itself stretches to the north and west.  The walls stretch up so high, you
+have to remind yourself that you are still underground, and not next to a
+mountain.  
+~
+0 0 11
+Rd     0
+D0
+~
+~
+0 0 23229
+D1
+~
+~
+0 0 23223
+D3
+~
+~
+0 0 23225
+S
+#23225
+The Swamp~
+~
+~
+You are trudging through the swamp.  It is impossible to walk here
+without getting your feet wet.  It appears that the valley this swamp lies
+in is natural.  You can go to the north or to the east from here.  
+~
+0 0 11
+Rd     0
+D0
+~
+~
+0 0 23226
+D1
+~
+~
+0 0 23224
+S
+#23226
+The Swamp~
+~
+~
+You are sloshing your way through a swamp.  There is light all around
+you, although there does not appear to be any discernable source.  You can
+go north, east or south from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23227
+D1
+~
+~
+0 0 23229
+D2
+~
+~
+0 0 23225
+S
+#23227
+The Swamp~
+~
+~
+You are trudging through the swamp.  A large rock juts out of the ground
+here, with a huge statue resting on top of it.  The swamp, as usual, runs
+right up to the mountainous rock walls.  You can go east or west from here. 
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23228
+D2
+~
+~
+0 0 23226
+S
+#23228
+The Swamp~
+~
+~
+You are walking along a dank, underground swamp.  Huge rock walls line
+the swamp, leading so far up, you can't see any sort of ceiling.  The swamp
+itself is full of various animal corpses in varying states of decay.  You
+can go west or south from here.  
+~
+0 8 11
+Rd     0
+D2
+~
+~
+0 0 23229
+D3
+~
+~
+0 0 23227
+S
+#23229
+The Swamp~
+~
+~
+You are walking through a very large swamp.  You can see a path to the
+south, which leads to the southern half of the swamp, and back to the Temple
+of Death and Decay.  You can also go north or west from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23228
+D2
+~
+~
+0 0 23224
+D3
+~
+~
+0 0 23226
+S
+#23230
+The Swamp~
+~
+~
+You are walking along a path through the swamp.  The swamp opens up to an
+area just west of here.  The swamp appears to be located inside a large pit,
+just as its northern counterpart, and is surrounded on all sides by a great
+rock wall.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23222
+D3
+~
+~
+0 0 23231
+S
+#23231
+The Swamp~
+~
+~
+You are walking through a swamp.  The walls here are almost vertical,
+stretching up farther than the eye can see.  The subterannean cavern that
+the Temple was constructed in is very deep.  You can go east, south or west
+from here.  
+~
+0 8 11
+Rd     0
+D1
+~
+~
+0 0 23230
+D2
+~
+~
+0 0 23236
+D3
+~
+~
+0 0 23232
+S
+#23232
+The Swamp~
+~
+~
+You are walking through a subterranean swamp.  The ground here is very
+wet and pliable.  It is impossible to put your foot down and not have it
+become soaked.  You can go east or south from here.  
+~
+0 8 11
+Rd     0
+D1
+~
+~
+0 0 23231
+D2
+~
+~
+0 0 23233
+S
+#23233
+The Swamp~
+~
+~
+You are walking through an underground swamp.  The walls, near vertical
+in nature, stretch farther up than your eyesight can detect.  You can go
+north, east or south from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23232
+D1
+~
+~
+0 0 23236
+D2
+~
+~
+0 0 23234
+S
+#23234
+The Swamp~
+~
+~
+You are trudging through a swamp near the Temple of Death and Decay.  A
+large rock juts out of the ground here, with a gigantic statue resting on
+it.  The swamp, as usual, runs right up to the cliff-like walls.  You can go
+north or east from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23233
+D1
+~
+~
+0 0 23235
+S
+#23235
+The Swamp~
+~
+~
+You are walking through a deep swamp.  The ground, what little of it
+there is, is stained red with the blood of innocence.  You can go north or
+west from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23236
+D3
+~
+~
+0 0 23234
+S
+#23236
+The Swamp~
+~
+~
+You are trudging through an underground swamp.  The water ripples with
+each of your steps, breaking on things that you didn't even realize were
+under your feet.  Upon closer inspection, you realize that you are walking
+over the bones of dead animals.  You can go north, south or west from here. 
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23231
+D2
+~
+~
+0 0 23235
+D3
+~
+~
+0 0 23233
+S
+#23237
+The East Entrance~
+~
+~
+You are standing on a raised platform, on the eastern side of the Temple.
+To the east lies an enormous graveyard.  You can hear the clinking of bones,
+probably skulls, coming from that direction.  The platform suddenly drops
+off, as of its constructors vanished without completing their task.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 23238
+D3
+~
+~
+0 0 23220
+S
+#23238
+The Graveyard~
+~
+~
+You are on a cobblestone path leading to the graveyard.  To the west lies
+the eastern entrance to the Temple of Death and Decay.  The path leads to
+the north and south.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23239
+D2
+~
+~
+0 0 23246
+D3
+~
+~
+0 0 23237
+S
+#23239
+The Graveyard~
+~
+~
+You are walking along a cobblestone path, which ends abruptly.  One of
+the two cemetaries lies to the east.  The ground has been overrun with
+weeds.  The path leads to the south, where you can see a T-junction.  
+~
+0 8 11
+Rd     0
+D1
+~
+~
+0 0 23240
+D2
+~
+~
+0 0 23238
+S
+#23240
+The Graveyard~
+~
+~
+You are walking through the graveyard.  The gravestones are of varying
+shapes and sizes, all written in a long lost language.  Huge cliff walls
+reach up farther than the eye can see, reminding you that you are deep
+underground.  You can go north, east or west from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23245
+D1
+~
+~
+0 0 23241
+D3
+~
+~
+0 0 23239
+S
+#23241
+The Graveyard~
+~
+~
+You are walking amongst gravestones.  Your footsteps echo up the cliffs
+as you walk, reminding you how deep you are.  You can go north or west from
+here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23242
+D3
+~
+~
+0 0 23240
+S
+#23242
+The Graveyard~
+~
+~
+You are walking along the graveyard to the east of the Temple of Death
+and Decay.  The ground is uneven, as some of the graves are not completely
+filled in.  You can go north, south or west from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23243
+D2
+~
+~
+0 0 23241
+D3
+~
+~
+0 0 23245
+S
+#23243
+The Graveyard~
+~
+~
+You are at the northeast corner of the graveyard.  The ground dips down
+slightly to the west.  Many of the graves are broken, their messages long
+since destroyed.  You can go east or south from here.  
+~
+0 8 11
+Rd     0
+D2
+~
+~
+0 0 23242
+D3
+~
+~
+0 0 23244
+S
+#23244
+The Graveyard~
+~
+~
+This area of the graveyard has a thin layer of water covering the
+surface.  You find it odd that the ground hasn't absorbed the water.  You
+can go east or south from here.  
+~
+0 8 11
+Rd     0
+D1
+~
+~
+0 0 23243
+D2
+~
+~
+0 0 23245
+S
+#23245
+The Graveyard~
+~
+~
+You are walking along bare earth amongst the graves of the fallen.  The
+cliff walls are rough, as if this pit was gouged out of the ground by a
+great claw.  You can go north, east or south from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23244
+D1
+~
+~
+0 0 23242
+D2
+~
+~
+0 0 23240
+S
+#23246
+The Graveyard~
+~
+~
+You are walking along a cobblestone path leading to the southern
+graveyard.  The path ends abruptly here, but an opening leads off to the
+east.  The ground has been overrun with weeds.  You can also go north, along
+the path, where you can see a T-junction.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23238
+D1
+~
+~
+0 0 23247
+S
+#23247
+The Graveyard~
+~
+~
+You have arrived at the entrance to the southern graveyard.  Two large
+pillars line the entrance on the west side, while the graveyard itself
+stretches to the east and south.  
+~
+0 8 11
+Rd     0
+D1
+~
+~
+0 0 23248
+D2
+~
+~
+0 0 23252
+D3
+~
+~
+0 0 23246
+S
+#23248
+The Graveyard~
+~
+~
+You are walking along the graveyard.  The almost vertical walls form a
+slight overhang here, preventing you from looking straight up.  This would
+make a great home for something, as it provides shelter.  You can go south
+or west from here.  
+~
+0 8 11
+Rd     0
+D2
+~
+~
+0 0 23249
+D3
+~
+~
+0 0 23247
+S
+#23249
+The Graveyard~
+~
+~
+You are moving amongst the graves east of the Temple of Death and Decay. 
+The gravestones are fairly large here, but obviously not taken care of, as
+they are in various states of disrepair.  You can go north, south or west
+from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23248
+D2
+~
+~
+0 0 23250
+D3
+~
+~
+0 0 23252
+S
+#23250
+The Graveyard~
+~
+~
+You are at the southeast corner of the graveyard.  A large rock sits in
+the centre of this location, with a large statue seated on top of it.  You
+can go north or east from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23249
+D3
+~
+~
+0 0 23251
+S
+#23251
+The Graveyard~
+~
+~
+You are walking through the graveyard.  The walls are very rough, with
+cracks and holes appearing everywhere along its edges.  You can go north or
+east from this location.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23252
+D1
+~
+~
+0 0 23250
+S
+#23252
+The Graveyard~
+~
+~
+You are walking through the graveyard near the Temple of Death and Decay.
+The graveyard lies at the bottom of a great pit, its walls rough and full of
+cracks.  You can go north, east or south from here.  
+~
+0 8 11
+Rd     0
+D0
+~
+~
+0 0 23247
+D1
+~
+~
+0 0 23249
+D2
+~
+~
+0 0 23251
+S
+#23253
+Hall of Death~
+~
+~
+You are walking down a black hallway.  Symbols of death are drawn all
+over the walls, seemingly flowing with blood.  They all centre around a
+great being, dressed in a black robe, carrying a blood red sicle.  His eyes
+seem to pierce your very soul.  You can go north or south from here.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23254
+D2
+~
+~
+0 0 23220
+S
+#23254
+Hall of Death~
+~
+~
+You are walking along a black hallway.  The walls appear to me made of
+pouring blood, but they are solid to the touch.  You can go north or south
+from here.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23255
+D2
+~
+~
+0 0 23253
+S
+#23255
+Hallway of Death~
+~
+~
+You have arrived at the end of the Hallway of Death.  To the north you
+will find the teacher, where you learn languages.  To the west, the trainer,
+to whip you into shape.  You can practice your skills in the shoppe to the
+east.  
+~
+0 1036 0
+Rd     0
+D0
+~
+~
+0 0 23256
+D1
+~
+~
+0 0 23257
+D2
+~
+~
+0 0 23254
+D3
+~
+~
+0 0 23258
+S
+#23256
+The Teacher~
+~
+~
+Here you may learn languages.  Simply type "LEARN" to see a list of
+languages that are available to you.  The only exit from is is the way you
+came in, to the south.  
+~
+0 1036 0
+Rd     0
+D2
+~
+~
+0 0 23255
+S
+#23257
+The Practicioner~
+~
+~
+Here, you may practice any spells or skills available to you.  You have
+to be at least level three in order to do this.  Type "PRACTICE" to see what
+you can study at this time.  You can type "PRACTICE" in any room to see what
+you have currently practiced.  The only exit is to the west.  
+~
+0 1036 0
+Rd     0
+D3
+~
+~
+0 0 23255
+S
+#23258
+The Trainer~
+~
+~
+Here you may train your attributes.  Simply type "TRAIN" to see a list of
+what you can train at any given time.  The only exit from this room is back
+the way you came, to the east.  
+~
+0 1036 0
+Rd     0
+D1
+~
+~
+0 0 23255
+S
+#23259
+Hallway of Decay~
+~
+~
+You are walking along the Hallway of Decay.  The walls are covered in
+pictures of all the races, each one in various states of decay.  When you
+focus on one of them, they appear normal.  In your peripheral vision
+however, their skin drips off, revealing the rotting bones and muscles
+underneath.  You can go north or south from here.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23220
+D2
+~
+~
+0 0 23260
+S
+#23260
+Hallway of Decay~
+~
+~
+You are walking down the Hallway of Decay.  The walls here seem to drip
+into the floor, the ceiling forever lowering.  When you focus on the
+offending pieces, all seems normal.  It is quite a convincing illusion.  You
+can go north or south from here.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23259
+D2
+~
+~
+0 0 23261
+S
+#23261
+Hallway of Decay~
+~
+~
+You have arrived at the end of the Hallway of Decay.  To the south, you
+will find the classmaster, where you can use the REMORT command.  A supply
+shoppe lies to the east, while a pub lies to the west.  
+~
+0 1036 0
+Rd     0
+D0
+~
+~
+0 0 23260
+D1
+~
+~
+0 0 23262
+D2
+~
+~
+0 0 23263
+D3
+~
+~
+0 0 23264
+S
+#23262
+Supply Shoppe~
+~
+~
+You are standing inside the Supply Shoppe.  Type "LIST" to see a list of
+items that you can purchase.  The only exit from this shop is the way you
+came in, to the west.  
+~
+0 1032 0
+Rd     0
+D3
+~
+~
+0 0 23261
+S
+#23263
+The Classmaster's Office~
+~
+~
+You have entered the office of the Classmaster.  For help on this
+subject, type "HELP REMORT".  The only exit to the north, the way you came. 
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23261
+S
+#23264
+The Pub~
+~
+~
+You have arrived at what's left of a pub.  A large bar, or rather what's
+left of one, lines the west wall.  Wooden tables, rotten to the core, dot
+the floor.  You can type "LIST" to see what to buy.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23261
+S
+#23265
+Stairway to the Temple of Death and Decay~
+~
+~
+You are walking along a very long stairway to the temple of Death and
+Decay.  The surface lies quite a ways above you, while the temple lies
+directly below.  
+~
+0 12 0
+Rd     0
+D4
+~
+~
+0 0 23266
+D5
+~
+~
+0 0 23220
+S
+#23266
+Stairway to the Temple of Death and Decay~
+~
+~
+You are walking along the stairway to the Temple.  The stairway is
+lighted by torches on either side.  The stairway is built into the cliff
+walls, winding down to the temple far below.  It is as if a great fist
+punched a hole, and the temple was built at the bottom.  You can go up, to
+Methidoral, or down, to the Temple.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 23267
+D5
+~
+~
+0 0 23265
+S
+#23267
+Stairway to the Temple of Death and Decay~
+~
+~
+You are standing in a room with bloody walls.  A large stairway leads
+down through the centre of the floor, leading to the Temple of Death and
+Decay.  The only other exit from this room is towards the town of
+Methidoral.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 25040
+D5
+~
+~
+0 0 23266
+S
+#0
+
+
+
+#SPECIALS
+M 23201 spec_healer
+M 23227 spec_healer
+M 23228 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 23201 0 23202
+M 0 23201 1 23202
+O 0 23202 0 23203
+M 0 23203 1 23204
+G 0 23213 0
+M 0 23202 1 23205
+M 0 23204 1 23206
+G 0 23209 0
+M 0 23205 1 23208
+G 0 23214 0
+M 0 23206 1 23210
+G 0 23214 0
+G 0 23206 0
+M 0 23207 1 23211
+O 0 23203 0 23211
+M 0 23208 1 23212
+M 0 23209 1 23213
+G 0 23210 0
+M 0 23211 1 23214
+M 0 23210 2 23215
+G 0 23215 0
+M 0 23213 1 23217
+G 0 23216 0
+G 0 23215 0
+O 0 23221 0 23220
+M 0 23227 1 23220
+M 0 23228 1 23220
+M 0 23217 3 23223
+M 0 23211 1 23225
+G 0 23212 0
+O 0 23217 0 23227
+P 0 23216 0 23217
+M 0 23212 3 23228
+M 0 23214 3 23233
+G 0 23205 0
+O 0 23217 0 23234
+P 0 23216 0 23217
+M 0 23220 1 23235
+G 0 23204 0
+M 0 23218 3 23239
+G 0 23204 0
+O 0 23218 0 23243
+P 0 23216 0 23218
+M 0 23216 3 23244
+M 0 23215 3 23248
+G 0 23207 0
+O 0 23218 0 23250
+P 0 23216 0 23218
+M 0 23219 3 23251
+G 0 23211 0
+M 0 23226 1 23254
+O 0 23219 0 23255
+M 0 23223 1 23256
+M 0 23222 1 23257
+M 0 23221 1 23258
+O 0 23220 0 23261
+M 0 23225 1 23262
+G 0 23208 0
+G 0 23211 0
+G 0 23204 0
+G 0 23226 0
+G 0 23227 0
+M 0 23224 1 23263
+M 0 23229 1 23264
+G 0 23228 0
+G 0 23222 0
+G 0 23223 0
+G 0 23224 0
+G 0 23225 0
+S
+
+
+
+#SHOPS
+23225 15 1 9 5 0 120 80 0 24
+23228 8 18 0 0 0 120 80 0 24
+23229 17 19 0 0 0 120 80 0 24
+0
+
+
+
+#$

@@ -1,0 +1,908 @@
+#AREADATA
+Name        New area~
+Builders    Daenerys Ryanne Maros~
+VNUMs       24300 24599
+Security    100
+Recall      25001
+Flags       16
+End
+
+
+
+#MOBILES
+#24300
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#24301
+Lemminkainen~
+Lemminkainen~
+A tall, well-built young man lounges around here, smiling at everyone.
+~
+Lemminkainen is a big youth with shoulder-length blond hair.  His blue
+eyes are always twinkling, and he is always ready with a smile to brighten
+up your day.  
+~
+3 134217856 0 0 0 600 S
+97 192 194 0 30780d0+0 0d0+0
+600 1 0
+0 0 1
+0 0 0
+>speech_prog Hello Hello. Hello! Hi. Hi Hi!~
+Say Hi! Welcome to Kalevala.
+say My name is Lemminkainen.
+~
+>speech_prog Kalevala? Kalevala Kalevala. Kalevala!~
+say Yes, this is the road to Kalevala.
+say Didn't you know? Oh well. Just follow this
+say path north-east, and you'll get there. Just
+say make sure that you don't go too far north!
+~
+>speech_prog north? north north.~
+shudder
+say To the north of Kalevala is Pohjola.
+say It's not a good place, like Kalevala is.
+say I wouldn't go there if I were you!
+~
+>speech_prog Pohjola? Pohjola. Pohjola~
+blink $n
+say Why on earth do you want to go there?
+say There are very bad people and creatures in
+say Pohjola.  It's horrible.  If you want to go
+say somewhere new, you should try Tapiola
+say or, if you're really brave, Ahtola.
+~
+>speech_prog Tapiola? Tapiola. Tapiola~
+smile
+say Ah, yes. Tapiola is a nice place, not
+say quite as nice as Kalevala, but...
+say Tapiola is a forest kingdom, ruled by
+say the God Tapio. It's to the north-west
+say of Kalevala. Many animals live there.
+~
+>speech_prog Ahtola? Ahtola. Ahtola~
+beam $n
+say I knew you were the brave type!  Ahtola
+say is to the north-east of Kalevala.  It's
+say a sea kingdom, ruled by the God Ahti.
+say Be careful there, though.  There are
+say rumors of monsters that roam the shore!
+~
+>speech_prog Lemmy! Lemmy Lemmy. Lemmy?~
+if level($n)>104
+say Oh, alright, you can call me that..
+say But I don't like it!
+else
+say Where do you get off, calling me Lemmy?!
+say I'll have you know that my name is Lemminkainen!!
+endif
+~
+>speech_prog Sampo? Sampo. Sampo! Sampo~
+peer
+say I...can't tell you anything about that.
+say You'll have to talk to Vainamoinen.
+say He's probably sleeping under a tree
+say as usual.
+~
+>speech_prog Vainamoinen. Vainamoinen? Vainamoinen! Vainamoinen~
+roll
+say For "the best magician in Kalevala"
+say Vainamoinen sure does spend a lot
+say of time just resting under trees
+say and doing nothing at all.
+~
+>speech_prog Ahti? Ahti. Ahti  Tapio. Tapio? Tapio~
+say He is one of our Gods. Ahti is
+say the god of the sea, and Tapio
+say is the god of the forest. However,
+say they both accept Ilmarinen
+say as their leader.
+~
+>speech_prog Ilmarinen? Ilmarinen. Ilmarinen~
+bow
+say Ilmarinen is the Blacksmith God.
+say In the beginning of the world, he
+say forged the earth and shaped the
+say oceans and heavens on his
+say mighty forge. He is the leader
+say of the Gods.
+~
+>speech_prog forge? forge. forge Blacksmith? Blacksmith. blacksmith~
+say Ilmarinen, the Blacksmith God
+say has His forge in the clouds
+say above us.
+emote points upwards.
+say Seppo knows more about him
+say than I do.
+~
+>speech_prog Seppo? Seppo. Seppo~
+say Seppo is a master smith. It is said
+say that he gets his skill from the blessings
+say of Ilmarinen, his patron. He is always
+say working in his forge, unlike that
+say lazy Vainamoinen.
+~
+>fight_prog 50~
+cast icestorm $n
+~
+>fight_prog 25~
+cast "winters chill" $n
+~
+>fight_prog 10~
+say Please, Gods!
+c "wrath of god" $n
+~
+|
+#24305
+Annika~
+Annika~
+A pretty girl skips about happily here.
+~
+Annika is tall for a girl, with pretty china-blue eyes.  Her long blonde
+hair is pulled back into two braids that fall to her waist when she is
+standing still.  However, they are usually flying out wide as she dances by
+herself on the grass.  
+~
+65 134217856 0 0 0 600 S
+101 200 200 0 34420d0+0 0d0+0
+1800 1 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if ispc ($n)
+smile $n
+endif
+~
+>speech_prog hello~
+p $n says hello
+if isgood ($n)
+Say Hi!
+else
+glare $n
+endif
+~
+|
+#24310
+Tommen~
+Tommen~
+A young man runs around here, trying to impress the girls.
+~
+Tommen is a handsome young man with deep brown eyes and longish blond
+hair pulled back into a ponytail held with a leather strap.  His muscles are
+apparent through the tunic he wears, and he makes the most of them when
+trying to attract the girls.  
+~
+65 134217856 0 0 0 600 S
+101 140 150 0 34400d0+0 0d0+0
+1200 1 0
+0 0 1
+0 0 0
+#24314
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+5 50 5 0 50d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#24318
+woman mother Aliia~
+Aliia~
+A woman holds her child as she rocks here.
+~
+~
+65 0 0 0 0 0 S
+0 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#24300
+Plain wool tunic~
+a plain woolen tunic~
+A warm-looking long woolen tunic lies here.~
+~
+9 0 0 0 0 9 70
+11~ 0~ 0~ 0~
+6 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 10
+A
+13 40
+A
+4 -1
+#24301
+Wolf Long Sword~
+a Wolf-pommeled Longsword~
+A longsword with a white wolf for a pommel is sticking into the ground here~
+~
+5 1 0 0 0 8193 90
+0~ 27~ 75~ 3~
+5 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+13 50
+A
+5 2
+A
+18 19
+#24305
+Green wool dress~
+&wA &gGreen&w woolen dress~
+A dress made of green wool has been left here.~
+~
+9 0 0 0 0 9 95
+0~ 0~ 0~ 0~
+9 160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 36
+A
+18 30
+A
+13 120
+A
+1 1
+#24308
+Beautiful Flower~
+&WA &Y(Beautiful) &C(Scented) &RFlower~
+&WA &Y(Beautiful) &C(Scented) &RFlower~
+~
+25 0 0 0 0 16384 1
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#24311
+Tree~
+an oak tree~
+A huge oak tree grows here, serving as a signpost.~
+~
+12 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+signpost~
+The signpost points north and south-east.  On the north side, the
+scrawled lettering reads "Pohjola".  On the southern board, it reads
+"Kalevala".  
+~
+#24314
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#24300
+On a Path~
+~
+~
+When you turn onto the path, the first thing you notice is the rush of
+cool air that comes up to meet you.  The breeze relaxes you and makes the
+day seem much better.  To the north and south of the path are tall pine
+trees, their crushed needles covering the ground and scenting the air.  The
+grass and pine needles are verdant green, but in the deepest shadows of the
+trees, you can see a little bit of snow.  The interlocking branches of the
+trees to north and south prevent exits in those directions.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+0 0 24301
+S
+#24301
+On a Path~
+~
+~
+The shaded, well-trodden path continues here, going north and west.  An
+immense fallen pine lies to the south of the path, its branches broken and
+sticking halfway into the roadway, so that you have to walk around them.  A
+young man is sitting on the trunk, tapping his heels against it.  He smiles
+and nods when he sees you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 24302
+D3
+~
+~
+0 0 24300
+S
+#24302
+On a Path~
+~
+~
+Pine needles crunch under your feet, sending up waves of spicy scent. 
+When you glance upwards, you see that the tall trees around you nearly block
+out the sky, letting down only faint, mottled sunlight.  The narrow path
+that you are following seems to widen to the east, and from the south a
+faint drumming noise can be heard.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 24303
+D2
+~
+~
+0 0 24301
+S
+#24303
+The Path to Kalevala~
+~
+~
+The path from the south widens appreciably here.  The trees on the sides
+of the road are spaced further apart, yet still too close together to
+comfortably shove your way through them.  To the east, the trees fade away
+into a huge, gently rolling plain.  You can hear faint voices coming from
+this direction as well.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+0 0 24304
+D3
+~
+~
+0 0 24302
+S
+#24304
+Just Into Kalevala~
+~
+~
+The trees in every direction but north have stopped, and you emerge into
+a wide-open space filled with green grass, sky, and only a few trees dotted
+throughout.  You can faintly see people wandering about in the distance.  To
+the west is the path out, and to the east and south Kalevala's grassy
+expanses stretch out before you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 24308
+D2
+~
+~
+0 0 24305
+D3
+~
+~
+0 0 24303
+S
+#24305
+Kalevala~
+~
+~
+Birds sing melodiously in the trees to your south and west, making the
+dark pine forest in those directions seem much less menacing.  There is
+still some snow in the deepest shadows, but out in the sunlight it seems
+much warmer.  Today is the kind of day to run and dance on the sun-dappled
+grass.  From the sounds of laughter nearby, it seems like some people have
+come to the same conclusion and are doing just that.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 24304
+D1
+~
+~
+0 0 24307
+S
+#24306
+Southwestern Edge of Kalevala~
+~
+~
+The dark, cold forest stretches along to your south and west, providing a
+sharp contrast to the warmth and sun that you feel here in Kalevala.  You
+revel in the feel of the soft grass under your feet and the faint scent of
+pine.  The skies are blue, the grass is green, people are laughing and
+dancing nearby, and it's a wonderful day to be alive.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 24307
+S
+#24307
+Kalevala~
+~
+~
+A beautiful, delicate butterfly floats across your path as you walk
+through Kalevala.  Its wings catch the air and it hovers about before flying
+away into the sky.  The sight only reinforces your wonder at the beauty of
+this land.  The grassy ways spread in all directions from here, though going
+west will take you back out to the path.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 24308
+D2
+~
+~
+0 0 24306
+D3
+~
+~
+0 0 24305
+S
+#24308
+Kalevala~
+~
+~
+A few flowers are growing here, bright splotches of color against the
+green grass.  You stop to smell one, and it is better than any flower you
+have ever smelled before.  The flowers are as big as your hand, and seem
+nearly large enough to drink from.  They seem to thrive in this warmth, and
+you feel sad that they will all die when winter comes.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24309
+D2
+~
+~
+0 0 24307
+D3
+~
+~
+0 0 24304
+S
+#24309
+Western Edge of Kalevala~
+~
+~
+The tall pine trees fade up again to your west, towering into the sky and
+forming an impassible barrier.  Looking at their incredible heights sends a
+shiver down your spine as you inadvertantly contemplate how huge the drop
+would be if you fell out of one.  However, when you turn your back on them
+and look out onto the gently rolling hills of Kalevala, all your
+insecurities melt away.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 24310
+D1
+~
+~
+0 0 24312
+D2
+~
+~
+0 0 24308
+S
+#24310
+Western edge of Kalevala~
+~
+~
+You stop in your explorations of Kalevala for a moment to simply enjoy
+the sunwarmed grass under your feet, the cool breezes that wash over you,
+and the pure, innocent laughter of the youths running and playing all
+around.  The trees that stretch to the west of you have curled around and
+now block your way to the north, but you have accepted them by now as
+contrasts to the land around you.  If there were no ugly things, how could
+there be beautiful ones?  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 24311
+D2
+~
+~
+0 0 24309
+S
+#24311
+Up Against the Northern Forest~
+~
+~
+A great oak tree has erupted from the earth here, its broad leafy
+branches shading the ground and giving you a cool place to rest.  Nailed
+firmly onto the sides of the oak are two white boards with faint lettering
+on them.  All ways are open to passage save the north, where the cold forest
+still bars your way.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 24312
+D3
+~
+~
+0 0 24310
+S
+#24312
+~
+~
+~
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 24311
+D3
+~
+~
+0 0 24309
+S
+#24313
+At the forest's edge~
+~
+~
+To the north, the forest seems to thin out, patches of the glare of light
+hitting water are becoming visible.  From where you're standing, you can
+hear the faint sound of water lapping upon dry land 
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 24314
+S
+#24314
+The lake shore~
+~
+~
+The ground here is sandy, the breeze that blows from the water swirling
+the grit around you.  To either side the shore continues.  The lake meets
+the shore to the north and to the south, the forest streaches, blocking the
+view of what's beyond.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 24313
+S
+#24315
+In Front of the White Tower~
+~
+~
+The door to the white tower rests to the east.  From this close the tower
+looks like it's constructed of one large piece of stone, but surely, that's
+not possible.  The door is large enough to accommodate even the largest of
+people.  The polished oak surface seems to clash with the white stone it's
+surrounded by.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+3 0 24316
+S
+#24316
+Inside The White Tower~
+~
+~
+Even the inside of the tower is white and is made out of the same stone
+as the outside.  Smokeless torches line the walls, their light reflecting on
+down the hall, destroying all shadows in the room.  Every sound seems
+amplified in the near silence, broken only by your movements.  After a
+moment you hear the 'swish' of robes and you realize that you're not alone
+in the tower.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 24317
+D3
+~
+~
+3 0 24315
+S
+#24317
+Inside the White Tower~
+~
+~
+A peaceful, almost lulling feeling surrounds the tower, almost as if the
+stones themselves were making it.  To the west is a door, and the hallway
+continues to the north and to the south.  The door is not as large, or as
+rich as the one leading into the tower, but it still seems out of place. 
+Behind it you hear a soft humming, as if a mother is crooning to a child.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24319
+D2
+~
+~
+0 0 24316
+D3
+~
+~
+3 0 24318
+S
+#24318
+A Small Bedroom~
+~
+~
+This seems to be a small guest bedroom.  A twin-sized bed rests in the
+corner of the room, a light blue quilt resting upon it neatly.  The walls
+are lined with curtains of the same color as the bedspread, keeping out the
+chill.  A nightstand and dresser make the room seem less bare.  In the
+middle of the room a woman rocks, cradling a baby in her arms, oblivious of
+your intrusion into her room.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 24317
+S
+#24319
+Inside the White Tower~
+~
+~
+The torchlight wavers, tossing shadows into the corners of the hallway. 
+To the west is a wooden door, unremarkable other than the fact that it seems
+like it's inlaid in gold...  But surely your eyes must be deceiving you. 
+The hallway continues to the east and to the south, the north being covered
+by a large mural of what looks like a representation of a battle between
+good and evil.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24320
+D2
+~
+~
+0 0 24317
+D3
+~
+~
+0 0 24321
+S
+#24320
+Down a White Hallway~
+~
+~
+The hallway branches off in all four directions here, to the north being
+a door.  From where you are standing, you can hear the noises of people in
+robes moving around, and of voices.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 24322
+D3
+~
+~
+0 0 24319
+S
+#24321
+An Empty Room~
+~
+~
+It seems that this room has no use, being totally empty.  Well, empty
+except for the rats that scampered away into their holes when you appeared. 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24319
+S
+#24322
+Inside the White Tower~
+~
+~
+A lot of people seem to travel through this room, judging by the worn
+state of the rugs and the warmth of the room.  More of the strange smokeless
+torches line the room, their light reflecting off the bare walls.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 24320
+D3
+~
+~
+0 0 24323
+S
+#24323
+The Spiral Staircase~
+~
+~
+It seems like the whole room is just one large staircase.  Made of white
+marble, the staircase spirals up through the ceiling, upto the floors above.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24322
+D4
+~
+~
+0 0 24324
+S
+#24324
+The Spiral Staircase~
+~
+~
+This seems to be the second floor of the tower.  The staircase goes up
+further, as well as down to the floor below.  A door is to the east,
+probably leading out to the rest of the second floor.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24325
+D5
+~
+~
+0 0 24323
+S
+#24325
+On the Second Floor~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 24324
+S
+#24326
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#24327
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#24328
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#24329
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 24301 1 24301
+E 0 24301 0 20
+E 0 24300 0 5
+M 0 24305 1 24305
+E 0 24305 0 5
+O 0 24308 0 24308
+M 0 24310 1 24310
+E 0 24300 0 5
+O 0 24311 0 24311
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,2729 @@
+#AREADATA
+Name        { CLAN } Nono Uno HQ~
+Builders    none~
+VNUMs       1401 1500
+Security    100
+Recall      1
+Flags       272
+Version     107
+Creator     Gorsha~
+Llevel      0
+Ulevel      0
+Sounds      &PThe music of Barbara Streisand echos through the caves.~
+End
+
+
+
+#MOBILES
+#1401
+Village People~
+The Village People~
+The Village People stand in the fountain singing their greatest hits.
+~
+~
+2621507 167772352 71335952 40960 0 0 S
+110 1 220 220 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+7 0 0
+>death_prog 100~
+taunt $n
+mpmload 1401
+mpgoto 1
+~
+>all_greet_prog 100~
+if isclan($n) == 1
+goose $n
+say Oh $n! Welcome back, sweetie.
+endif
+if isclan($n) != 1
+if sex($n) == 1
+bkiss $n
+yell Oh my goodness! $n is sthuch a Macho Man!
+yell Come here, you macho, macho man!
+endif
+endif
+if isclan($n) != 1
+if sex($n) == 2
+yell OH MY! $n keeps winking at us!
+yell I'm afraid you ain't got the goods to keep us satisfied!
+endif
+endif
+if isclan($n) != 1
+if sex($n) == 0
+caress $n
+yell We don't know what $n is but we've got a skirt you'd LOVE!
+endif
+endif
+~
+|
+#1402
+Katianna~
+Katianna~
+Katianna stands with her large battlehammer resting on her shoulder.
+~
+~
+525891 589888 72089616 32768 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 2
+7 0 0
+#1403
+Jezharra~
+Jezharra~
+Jezharra sits her bottom on the large chest.
+~
+~
+655427 64 71565312 1073774592 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 2
+7 0 0
+#1404
+Jorie~
+Jorie~
+Jorie stands in the corner with a small ruler in his hand.
+~
+~
+524355 0 4195344 0 1 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+7 0 0
+>speech_prog p spank me~
+mpecho Jorie rubs his bottom as he pulls up pants.
+mpmload 1404
+mppurge self
+~
+>fight_prog 10~
+emote motions for you to spank his bottom.
+say Say &Pspank me&W when you're done with me!
+~
+|
+#1405
+Good White Light~
+white light~
+&WA white light hovers near the ceiling.
+~
+Kill me to BECOME SATANIC!
+~
+524355 0 4194320 0 0 1000 S
+50 1 100 100 0 1d0+0 0d0+0
+0 0 0
+0 0 0
+7 0 0
+>death_prog 100~
+mpecho &WThe white light instantly reappears.
+mpmload 1405
+mpgoto 1
+~
+|
+#1406
+Evil Black Light~
+black light~
+&zA black light hovers near the ceiling.
+~
+Kill me to BECOME ANGELIC.
+~
+524355 0 4194320 0 0 -1000 S
+50 1 100 100 0 1d0+0 0d0+0
+0 0 0
+0 0 0
+7 0 0
+>death_prog 100~
+mpecho &zThe black light instantly reappears.
+mpmload 1406
+mpgoto 1
+~
+|
+#1407
+Rat~
+a rat~
+&z
+~
+~
+524357 32832 71303184 32768 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+7 0 0
+#1408
+KD Lang~
+KD Lang~
+A woman sits on a rock stringing her guitar.
+~
+~
+524355 8256 88080400 32768 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 2
+7 0 0
+>all_greet_prog 100~
+if isclan($n) == 1
+say Hey $n, I'm working on a new song to lift our spirits in battle.
+else
+yell $n has come to disturb our gentle community!
+tongue $n
+endif
+~
+|
+#1409
+Barbara Streisand~
+Barbara Streisand~
+Barbara is rehearsing for another big show.
+~
+~
+524355 16576 71303184 32768 0 -1000 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 2
+7 0 0
+>all_greet_prog 100~
+if isclan($n) == 1
+curtsey $n
+say My new songs are going to be loved by millions!
+else
+glare $n
+yell $n is showing no respect to a TRUE DIVA!
+mpat 1404 note to pierga baluga imm
+mpat 1404 note subject $n
+mpat 1404 note + $n has entered our lovely community.
+mpat 1404 note post
+endif
+~
+|
+#1410
+Elton John~
+Elton John~
+Elton is looking over the decor of the incline.
+~
+~
+524355 67633216 71303184 134250496 0 1000 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+7 0 0
+>all_greet_prog 100~
+if isclan($n) == 1
+curtsey $n
+say These dresses are TO DIE FOR!
+giggle
+else
+say You think you're a bigger Queen than I?!
+emote waves you off with a flick of his wrist.
+endif
+~
+|
+#1411
+Rat~
+A rat~
+&g
+~
+~
+524359 64 4194320 0 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+7 0 0
+>all_greet_prog 100~
+if isclan($n) != 1
+yell Hey Bailey, $n is about to find $s way back to you.
+endif
+~
+|
+#1424
+centurion doom~
+the Doom Centurion~
+A Centurion of Doom watches over the halls, standing ever vigilant.
+~
+This visage is all that is left of an ancient race of warrior long since
+extinct.  Existing only the memories and trepidation, the Centurion watches
+over the Halls of Doom.  He remains eerily silent as you pass, respectful of
+your company.  He wears upon his body a suit of darkened platemail, and a
+mesh hauberk of glittering silver and mithril.  A small bronzed shortsword
+rests at his side.  He wears a plumed coronet upon his head, studded with
+emeralds.  He bears the colors of Doom in his left hand, upon a tall staff
+of aged mahogany.  He is the silent and sad testament to the honor and
+courage possessed by those once known as Doom 
+~
+524359 40 65552 1073741824 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+7 0 0
+>all_greet_prog 100~
+if isclan($n) == 1
+emote snaps to attention and salutes.
+say Hail $n!  Be at peace in the Halls of Doom.
+say My Master will be at hand shortly.
+else
+emote snaps to attention.
+yell $n has desecrated the Halls!
+yell &RMurder this Intruder!
+yell &YTo Arms!  To Arms!  &PDOOM FOREVER!
+emote draws his shortsword in vain.
+endif
+~
+>act_prog 100~
+~
+|
+#0
+
+
+
+#OBJECTS
+#1401
+Box Animal Crackers~
+animal crackers~
+A box of animal crackers hasn't been finished.~
+~
+19 536870912 196608 0 0 1 1
+100 100
+25~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#1402
+Cup Tea~
+a Cup of Tea~
+A cup of tea has been served.~
+~
+17 536870912 196608 0 0 1 1
+100 100
+-1~ -1~ 11~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#1403
+Pink Purse~
+a pink purse~
+&PA pink purse has been left behind.~
+~
+15 536870912 196608 0 0 1 1
+100 100
+400~ 1~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#1404
+Potion Common Remedies~
+a Potion of Common Remedies~
+A potion has been left behind.~
+~
+10 805306368 196608 0 0 1 1
+100 100
+100~ cure poison~ cure blindness~ remove curse~
+1 340 0
+0 0
+reserved~
+0 0
+0 0 0
+#1405
+Potion Simple Spells~
+a Potion of Simple Spells~
+A potion has been left behind here.~
+~
+10 805306368 196608 0 0 1 1
+100 100
+100~ giant strength~ ectoplasmic form~ fly~
+1 480 0
+0 0
+reserved~
+0 0
+0 0 0
+#1406
+Potion Cancellation~
+a Potion of Cancellation~
+A potion has been left behind.~
+~
+10 805306368 196608 0 0 1 1
+100 100
+100~ cancellation~ cancellation~ cancellation~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#1407
+Potion of Detection~
+a Potion of Detection~
+A potion has been left behind.~
+~
+10 805306368 196608 0 0 1 1
+100 100
+100~ detect invis~ detect magic~ detect hidden~
+1 300 0
+0 0
+reserved~
+0 0
+0 0 0
+#1408
+Torch~
+a torch~
+A torch lies forgotten on the ground.~
+~
+1 536870912 196608 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#1409
+Pool Blood~
+pool of blood~
+&g~
+~
+29 536870912 196608 0 0 0 1
+100 100
+1401~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1410
+Spring Fountain~
+spring~
+A spring shoots fresh water into the air.~
+~
+25 536870912 196608 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1411
+Chronicles Time~
+the Chronicles of Time~
+&WThe Chronicles of Time rest in a tiny alcove within the rock.~
+~
+11 536870912 196608 0 0 0 1
+100 100
+0~ 100~ 50~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#1412
+Potion Mana~
+a Potion of Mana~
+A potion has been left behind.~
+~
+10 805306368 196608 0 0 1 1
+100 100
+100~ mana~ mana~ mana~
+1 2100 0
+0 0
+reserved~
+0 0
+0 0 0
+#1413
+Rosy Palm clan NoNo Uno~
+two Rosy Palms~
+A set of rosy palms has been left behind.~
+~
+9 536870977 458752 0 0 129 50
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+18 10
+A
+19 10
+A
+13 50
+A
+26 50
+A
+115 -1
+#1414
+Rosy Palms clan NoNo Uno~
+two Rosy Palms~
+A set of rosy palms has been left behind.~
+~
+9 671088704 458752 0 0 129 75
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+25 30
+A
+12 75
+A
+13 75
+A
+19 15
+A
+18 15
+A
+24 -15
+A
+2 2
+#1415
+Rosy Palms clan NoNo Uno~
+two REALLY Hairy Palms~
+A set of hairy palms has been left behind.~
+~
+9 536870976 409600 0 0 129 100
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+303 -1
+A
+25 40
+A
+12 100
+A
+13 100
+A
+19 20
+A
+18 20
+A
+24 -10
+A
+23 -10
+A
+2 2
+#1416
+path clan NoNo Uno~
+a path to NoNo Uno~
+A path to NoNo Uno. Please read HELP CLANS before entering.~
+~
+29 0 0 0 0 0 0
+100 100
+1408~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1417
+path~
+A path to the unknown.~
+A path to the unknown.~
+~
+29 0 0 0 0 0 1
+100 100
+17336~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#1401
+Spiraling Cavern~
+~
+~
+The smaller caves lead into a enormous cavern.  A small path spirals
+around the outside of the cavern.  It leads to a spring in the center.  The
+spring spurts up a fountain of fresh water which splashes on the floor.  The
+water drains into the cracks in the ground.  As the water falls through the
+cracks, one hears a light hissing from below.  It is followed by a rumbling
+of deep breathing.  
+~
+0 671490058 0
+Rd     0
+D0
+~
+~
+0 0 1458
+D1
+~
+~
+0 0 1403
+D2
+~
+~
+0 0 1405
+D3
+~
+~
+0 0 1402
+D5
+~
+~
+0 0 1406
+S
+#1402
+Cave of Scars~
+~
+~
+The walls show signs of battle.  The rock of this cave has been chipped
+and broken through quite a number of fights.  A single lantern hangs from
+the ceiling.  Its light illuminates enough of the room to allow training.  
+~
+0 671490058 0
+Rd     0
+D1
+~
+~
+0 0 1401
+S
+#1403
+Supply Depot~
+~
+~
+A large and bright torch is attached to each of the three walls.  The
+light glints off a huge chest near the back of the cave.  The wood has shiny
+metal hinges which reflect the light.  There is a lot of space in this cave
+as the rest of the floor is bare.  
+~
+0 755376138 0
+Rd     0
+D3
+~
+~
+0 0 1401
+S
+#1404
+Jagged Cave~
+~
+~
+The rocky walls of the cave have not been rubbed down to remove any of
+the jagged edges.  The ground has become slightly more smooth from some form
+of movement that must take place.  A set of stairs goes up through a hole in
+the ceiling.  The light increases to the south.  
+~
+0 671490058 0
+Rd     0
+D2
+~
+~
+0 0 1458
+D4
+~
+~
+67 0 1407
+S
+#1405
+Cave of Retribution~
+~
+~
+This cave is kept in near complete darkness.  A thin stand holds a candle
+near the entrance.  The candle is almost burned its last.  It is hard to
+make out much in this darkness.  It is almost unreal.  The sound of groaning
+comes from somewhere else in the cave.  
+~
+0 671490058 0
+Rd     0
+D0
+~
+~
+0 0 1401
+S
+#1406
+Cave of No-Return~
+~
+~
+This cave is much tighter than any of the others.  Sharp rocks jut out
+from the walls making it difficult to move.  A thick pool of blood has
+formed underneath one of the larger rocks.  Drops of water fall through
+cracks in the ceiling.  The sound of deep breathing comes up through the
+holes in the ground.  
+~
+0 675684366 0
+Rd     0
+D5
+~
+~
+83 0 1481
+S
+#1407
+Bottom of the Pit~
+~
+~
+The thick stone of this mountain stops the pit from going any further. 
+The smooth surface is slick, and the pebbles have a hard time staying still.
+A set of stairs goes down through a hole near one of the walls. 
+Indistinguishable noises echo through the hole.  
+~
+0 671522826 0
+Rd     0
+D4
+~
+~
+0 0 1408
+D5
+~
+~
+67 0 1404
+S
+#1408
+Path through the Rubble~
+~
+~
+A narrow walkway has been cleared out from some of the fallen rubble. 
+Some of the rocks fall to the ground as you brush against them.  The
+remenents of footprints can be seen printed into the dirt.  The light is
+becoming dimmer as you move farther into the unknown cave.  
+~
+0 671490062 0
+Rd     0
+D5
+~
+~
+0 0 1419
+S
+#1409
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1410
+D2
+~
+~
+0 0 1419
+S
+#1410
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1411
+D3
+~
+~
+0 0 1409
+S
+#1411
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1421
+D3
+~
+~
+0 0 1410
+S
+#1412
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1413
+S
+#1413
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1414
+D2
+~
+~
+0 0 1423
+D3
+~
+~
+0 0 1412
+S
+#1414
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D3
+~
+~
+0 0 1413
+S
+#1415
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1416
+D2
+~
+~
+0 0 1425
+S
+#1416
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1417
+D2
+~
+~
+0 0 1426
+D3
+~
+~
+0 0 1415
+S
+#1417
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1427
+D3
+~
+~
+0 0 1416
+S
+#1418
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1419
+D2
+~
+~
+0 0 1428
+S
+#1419
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490063 0
+Rd     0
+D0
+~
+~
+0 0 1409
+D1
+~
+~
+0 0 1420
+D2
+~
+~
+0 0 1429
+D3
+~
+~
+0 0 1418
+D4
+~
+~
+0 0 1408
+S
+#1420
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1430
+D3
+~
+~
+0 0 1419
+S
+#1421
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1411
+D1
+~
+~
+0 0 1422
+S
+#1422
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1423
+D3
+~
+~
+0 0 1421
+S
+#1423
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1413
+D2
+~
+~
+0 0 1433
+D3
+~
+~
+0 0 1422
+S
+#1424
+Memories of Doom~
+~
+~
+You stands in a great hall carved from solid onyx.  It stretches many
+yards back into the ground, and still lies as still as it was thousands of
+years ago.  The floor has been polished to a deep black luster.  A fine
+layer of dust covers the hall, no prints are to be seen anywhere.  The walls
+have been carefully sanded by many hands, and remain shiny and luminous to
+this day.  The ceiling soars into an arch above you, and is covered in
+stained glass memoires of a day long past.  The images depict scenes of
+Battle and Justice, Death and Grief.  The forms of the ancient gods of Doom
+are forever immortalized upon these rampant pictures.  Upon the walls hang
+the many flags of war and conquest, gently swaying in an unfelt breeze.  The
+echoes of great councils, and greater warriors dance through your thoughts. 
+You do not feel afraid in this hall.  The profound fear and respect heaped
+upon this place comfort you.  Your senses are left in awe, knowing there is
+peace after death, and honor with battle.  At the end of the hall stands a
+raised dais, several feet above the floor.  Upon the dais sits a great
+throne of obsidian, emerald, and ruby.  This throne does not appear to be
+made for a man-sized warrior.  Perhaps the avatar of some great god once sat
+here.  The throne itself has been hewn from the rock itself, and sits
+affixed to the floor.  The back of the throne reaches some 10 feet into the
+air, and has been wrapped in fine red velvet and brown leather.  The massive
+armrests are encrusted in rubies and emeralds.  On the lower left side of
+the throne are the enscribed initials, 'AUP.  ' You feel compelled not to
+sit upon this great throne, perhaps some sense of morality and respect have
+starved your reasoning.  Looking down into the hall, you feel renewed
+respect for the forefathers of combat, a glimpse into the paradise once
+known as Doom.  
+ 
+-< Ave gratia plena dominus tecum >-
+~
+0 671490058 0
+Rd     0
+D5
+~
+~
+67 0 1458
+S
+#1425
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1415
+S
+#1426
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1416
+D1
+~
+~
+0 0 1427
+D2
+~
+~
+0 0 1436
+S
+#1427
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1417
+D2
+~
+~
+0 0 1437
+D3
+~
+~
+0 0 1426
+S
+#1428
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1418
+D2
+~
+~
+0 0 1438
+S
+#1429
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1419
+D2
+~
+~
+0 0 1439
+S
+#1430
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1420
+D2
+~
+~
+0 0 1440
+S
+#1431
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1432
+S
+#1432
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1442
+D3
+~
+~
+0 0 1431
+S
+#1433
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1423
+D1
+~
+~
+0 0 1434
+S
+#1434
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1435
+D3
+~
+~
+0 0 1433
+S
+#1435
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1436
+D3
+~
+~
+0 0 1434
+S
+#1436
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1426
+D1
+~
+~
+0 0 1437
+D3
+~
+~
+0 0 1435
+S
+#1437
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1427
+D2
+~
+~
+0 0 1447
+D3
+~
+~
+0 0 1436
+S
+#1438
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1428
+D1
+~
+~
+0 0 1439
+S
+#1439
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1429
+D2
+~
+~
+0 0 1449
+D3
+~
+~
+0 0 1438
+S
+#1440
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1430
+D1
+~
+~
+0 0 1441
+S
+#1441
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1442
+D2
+~
+~
+0 0 1451
+D3
+~
+~
+0 0 1440
+S
+#1442
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1432
+D1
+~
+~
+0 0 1443
+D3
+~
+~
+0 0 1441
+S
+#1443
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1453
+D3
+~
+~
+0 0 1442
+S
+#1444
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1445
+D2
+~
+~
+0 0 1454
+S
+#1445
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1455
+D3
+~
+~
+0 0 1444
+S
+#1446
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1447
+S
+#1447
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1437
+D2
+~
+~
+0 0 1457
+D3
+~
+~
+0 0 1446
+S
+#1448
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1449
+S
+#1449
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1439
+D3
+~
+~
+0 0 1448
+S
+#1450
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1451
+S
+#1451
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1441
+D3
+~
+~
+0 0 1450
+S
+#1452
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1462
+S
+#1453
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1443
+D1
+~
+~
+0 0 1454
+S
+#1454
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1444
+D3
+~
+~
+0 0 1453
+S
+#1455
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1445
+D2
+~
+~
+0 0 1465
+S
+#1456
+The Rainbow Coalition~
+~
+~
+The dark and drab atomsphere of the cavern has been left behind as you
+enter this place.  The floor of the room has been painted with a bright
+rainbow.  A large rack of clothes hangs from one of the walls.  You can see
+Baluga's buttless chaps, his leather catwoman outfit, a pair of skintight
+'80s Wrangler jeans, and a long pink boa.  Most of the outfits appear to
+have been recently cleaned from their STIFF and starch appearance.  Another
+wall is lined with several shelves of wigs.  Some of the wigs are of bright
+colors while others are long and dark.  The top shelf is covered with
+celebrity wigs, such as: Marilyn Monroe, Diana Ross, and Pauly Shore.  The
+back wall of the cave is covered with framed certificates, awards, and a
+large rainbow colored flag.  Several of the awards are for fashion design
+and hair styling.  The flag is the centerpiece of the back wall with
+everything stationed around it.  Baluga must really stand behind the
+symbolism of this flag...  Wonder what that is?  
+~
+0 675684363 0
+Rd     0
+D4
+~
+~
+0 0 1458
+S
+#1457
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1447
+S
+#1458
+A Rocky Incline~
+~
+~
+The path through the caves starts to slowly incline towards a large
+cavern to the south.  The walls of the incline are covered in an eerie dark
+moss.  The light is being curved towards the moss creating a blur of vision
+within the cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1404
+D2
+~
+~
+0 0 1401
+D4
+~
+~
+67 0 1424
+D5
+~
+~
+0 0 1456
+S
+#1459
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1469
+S
+#1460
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1461
+S
+#1461
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1462
+D3
+~
+~
+0 0 1460
+S
+#1462
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1452
+D1
+~
+~
+0 0 1463
+D2
+~
+~
+0 0 1472
+D3
+~
+~
+0 0 1461
+S
+#1463
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1464
+D3
+~
+~
+0 0 1462
+S
+#1464
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1474
+D3
+~
+~
+0 0 1463
+S
+#1465
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1455
+D1
+~
+~
+0 0 1466
+S
+#1466
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1476
+D3
+~
+~
+0 0 1465
+S
+#1467
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D2
+~
+~
+0 0 1477
+S
+#1468
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1469
+S
+#1469
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490063 0
+Rd     0
+D0
+~
+~
+0 0 1459
+D1
+~
+~
+0 0 1470
+D2
+~
+~
+0 0 1479
+D3
+~
+~
+0 0 1468
+S
+#1470
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1471
+D2
+~
+~
+0 0 1480
+D3
+~
+~
+0 0 1469
+S
+#1471
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1472
+D3
+~
+~
+0 0 1470
+S
+#1472
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1462
+D2
+~
+~
+0 0 1482
+D3
+~
+~
+0 0 1471
+S
+#1473
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1474
+D2
+~
+~
+0 0 1483
+S
+#1474
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1464
+D1
+~
+~
+0 0 1475
+D3
+~
+~
+0 0 1473
+S
+#1475
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D3
+~
+~
+0 0 1474
+S
+#1476
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1466
+D1
+~
+~
+0 0 1477
+S
+#1477
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1467
+D2
+~
+~
+0 0 1487
+D3
+~
+~
+0 0 1476
+S
+#1478
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1479
+D5
+~
+~
+0 0 1488
+S
+#1479
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1469
+D3
+~
+~
+0 0 1478
+S
+#1480
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1470
+S
+#1481
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1482
+S
+#1482
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1472
+D3
+~
+~
+0 0 1481
+S
+#1483
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1473
+D1
+~
+~
+0 0 1484
+S
+#1484
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1485
+D3
+~
+~
+0 0 1483
+S
+#1485
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1486
+D3
+~
+~
+0 0 1484
+S
+#1486
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D1
+~
+~
+0 0 1487
+D3
+~
+~
+0 0 1485
+S
+#1487
+Some Twisting Caves~
+~
+~
+The walls of the cave are covered in a slick dark moss.  The moss seems
+to absorb the light.  It is extremely difficult to make out the twists and
+turns of the caves.  A mist has formed at your feet which does not help with
+visibility.  The mist follows along the random turns and inclines of the
+cave.  
+~
+0 671490059 0
+Rd     0
+D0
+~
+~
+0 0 1477
+D3
+~
+~
+0 0 1486
+S
+#1488
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D5
+~
+~
+0 0 1489
+S
+#1489
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1488
+D5
+~
+~
+0 0 1490
+S
+#1490
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1489
+D5
+~
+~
+0 0 1491
+S
+#1491
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1490
+D5
+~
+~
+0 0 1492
+S
+#1492
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1491
+D5
+~
+~
+0 0 1493
+S
+#1493
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1492
+D5
+~
+~
+0 0 1494
+S
+#1494
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1493
+D5
+~
+~
+0 0 1495
+S
+#1495
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1494
+D5
+~
+~
+0 0 1496
+S
+#1496
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1495
+D5
+~
+~
+0 0 1497
+S
+#1497
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1496
+D5
+~
+~
+0 0 1498
+S
+#1498
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1497
+D5
+~
+~
+0 0 1499
+S
+#1499
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 705044491 8
+Rd     0
+D4
+~
+~
+0 0 1498
+D5
+~
+~
+0 0 1500
+S
+#1500
+A Deep Pit~
+~
+~
+A deep pit drops deep beneath the surface.  The sides of the pit are
+covered in a slick moss which provides absolutely no grip.  The bottom of
+the pit is still beyond your sight.  The sound of breathing gets louder as
+you go deeper within the pit.  
+~
+0 671522827 8
+Rd     0
+D4
+~
+~
+0 0 1499
+D5
+~
+~
+0 0 1407
+S
+#0
+
+
+
+#SPECIALS
+M 1401 spec_cast_mage
+M 1402 spec_thief
+M 1407 spec_janitor
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 1401 1 1401
+O 0 1410 0 1401
+M 0 1402 1 1402
+M 0 1403 1 1403
+G 0 1412 0
+G 0 1403 0
+G 0 1406 0
+G 0 1405 0
+G 0 1404 0
+G 0 1407 0
+G 0 1408 0
+G 0 1402 0
+G 0 1401 0
+O 0 1411 0 1404
+M 0 1404 1 1405
+M 0 1405 1 1405
+M 0 1406 1 1405
+O 0 1409 0 1406
+M 0 1409 1 1407
+O 0 1417 0 1408
+M 0 1408 1 1419
+M 0 1407 8 1423
+M 0 1424 1 1424
+M 0 1407 8 1439
+M 0 1407 8 1444
+M 0 1410 1 1456
+M 0 1407 8 1457
+M 0 1411 1 1469
+S
+
+
+
+#SHOPS
+1403 9 5 8 1 10 100 85 1 24
+0
+
+
+
+#$

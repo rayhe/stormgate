@@ -1,0 +1,2862 @@
+#AREADATA
+Name        { 35-45} Misty Mountains~
+Builders    Aule~
+VNUMs       8701 8850
+Security    100
+Recall      1
+Flags       272
+Version     107
+Creator     Aule~
+Llevel      0
+Ulevel      0
+Sounds      Rough laughter and the crack of whips echo down the tunnels.~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#8701
+Justice~
+sword of Justice~
+A long sword, sparkling brilliantly.~
+~
+5 704644352 401408 0 0 8193 107
+100 100
+0~ 1000~ 3000~ 1~
+10 40000 0
+0 0
+reserved~
+0 0
+0 0 0
+#8744
+daily roster sheet~
+the daily roster sheet~
+The daily roster~
+~
+18 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+roster~
+A grubby roster sheet of some kind of skin.
+ 
+Gorlak, tunnel A.  We wanna 40 foot mind!
+Aklard, cole mines.  6teen tuns is what u'll get!
+Throg, tunnel C.  Shor up fer the Kings visit, now!
+Kroke, get yer lazy maggots to clean up or elz!
+~
+E
+sheet~
+This is a copy of the roster, scrawled on some sort of skin.
+ 
+Gorlak, dig on tunnl A.  We want 40 foot done.
+Throg, cole mines!  16 tun is what ull get.
+Kroke, get yer maggots on clen-up detale, now!
+Azlug, tunnl C.  Get suports in fer Kings viset!
+~
+>look_prog 100~
+0
+~
+|
+#0
+
+
+
+#ROOMDATA
+#8701
+Trail into the Misty Mountains~
+~
+~
+Winding northwards into aspen forests sprinkled with cedars, a small path
+leads towards the infamous Mountains of Mist.  Deer wander across, barely
+noting your passage.  A cool breeze flows down the trail, carrying the scent
+of snow and stone, ancient beyond all reckoning.  
+~
+0 0 4
+Rd     0
+D0
+~
+~
+0 0 8702
+S
+#8702
+Foothills of the Misty Mountains~
+~
+~
+Old, crumbling stoneworks form a wall to the west of this pathway into
+the foothills of the Misty Mountains.  The ways lead up into a climb,
+heading higher into the cloud-shrouded peaks as well as down through the
+fogs of the woods below.  There is a narrow trail heading east and west of
+here.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 8704
+D2
+~
+~
+0 0 8701
+D3
+~
+~
+0 0 8703
+D4
+~
+~
+0 0 8705
+S
+#8703
+Cliff-side into the Foothills~
+~
+~
+Far landscapes can be viewed, spreading like a blanket before you.  The
+peaks of the massive mountain range are to your north but dark woods and
+broad rivers can be seen stretching from west and south.  At your feet is a
+massive drop upon sheer rocks.  The only exit is back up the trail to the
+east.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 8702
+S
+#8704
+Bluff against a Ravine~
+~
+~
+Crumbling rocks form a suicide bluff to the east and north of you,
+butted against the side of this mount.  Old stonework from ages past depict
+the idea of a guardhouse or waystation for weary travelers.  Small animals
+have made a den within the shelter of these ruins.  To the south is the
+mouth of a weathered ravine and the only trail is back to the west, from
+which you came.  
+~
+0 0 4
+Rd     0
+D3
+~
+~
+0 0 8702
+S
+#8705
+High into the Misty Mountains~
+~
+~
+Rumbling thunder comes from the pass to the west while to the east is the
+promise of shelter from the raging thunderstorm that threatens the peaks. 
+There is a trail leading up and falling back downwards.  Common sense
+dictates that you get under cover from the lightning.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 8707
+D3
+~
+~
+0 0 8706
+D4
+~
+~
+0 0 8708
+D5
+~
+~
+0 0 8702
+S
+#8706
+Plateau in the Misty Mountains~
+~
+~
+Fierce winds contend with flying boulders and shattering rock as this is
+the playground of mountain giants.  The caves and overhangs of this flat
+plateau are the homes for numerous families of these brutes.  The only way
+off is back to the trail to the east.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 8705
+S
+#8707
+Shallow-dug Cavemouth~
+~
+~
+A large overhang and water worn cliff makes this a nice hidy-hole of a
+cave.  The winds rarely touch in here, having to break around a small lip of
+stone.  Limestone stalagtites form jagged teeth from the ceiling and time
+has worn a smaller, darker hole towards the east, further back in the
+overhang.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+627 0 8712
+D3
+~
+~
+0 0 8705
+S
+#8708
+Peaks of the Misty Mountains~
+~
+~
+You are at the peaks of the Misty Mountains, but which way from here? 
+The blinding snow and thunder and lighting confuse you as you easily lose
+your way.  You can't even hear yourself think in this blizzard!  
+~
+0 276865025 5
+Rd     10
+D1
+~
+~
+0 0 8709
+D3
+~
+~
+0 0 8710
+D4
+~
+~
+0 0 8711
+D5
+~
+~
+0 0 8705
+S
+#8709
+Peaks of the Misty Mountains~
+~
+~
+You are at the peaks of the Misty Mountains, but which way from here? 
+The blinding snow and thunder and lightning confuse you as you easily lose
+your way.  You can't even hear yourself think in this blizzard!  
+~
+0 276865025 5
+Rd     10
+D1
+~
+~
+0 0 8710
+D3
+~
+~
+0 0 8708
+D4
+~
+~
+0 0 8711
+D5
+~
+~
+0 0 8709
+S
+#8710
+Peaks of the Misty Mountains~
+~
+~
+You are at the peaks of the Misty Mountains, but which way from here? 
+The blinding snow and thunder and lightning confuse you as you easily lose
+your way.  You can't even hear yourself think in this blizzard!  
+~
+0 276865025 5
+Rd     10
+D1
+~
+~
+0 0 8708
+D3
+~
+~
+0 0 8709
+D4
+~
+~
+0 0 8711
+D5
+~
+~
+0 0 8709
+S
+#8711
+Peaks of the Misty Mountains~
+~
+~
+You are at the peaks of the Misty Mountains, but which way from here? 
+The blinding snow and thunder and lightning confuse you as you easily lose
+your way.  You can't even hear yourself think in this blizzard!  
+~
+0 813735937 5
+Rd     10
+D1
+~
+~
+0 0 8709
+D3
+~
+~
+0 0 8710
+D4
+~
+~
+0 0 8711
+D5
+~
+~
+0 0 8708
+S
+#8712
+Front Porch~
+~
+~
+You've stumbled into a shallow landing, where west is leading out and
+there is narrow, rough stairs leading down into darkness.  There are crude
+symbols carved into the sides of this hollow.  Faint pinging of metal on
+stone can be distinguished from the trickle of water that endlessly drips.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+627 0 8707
+D5
+~
+~
+0 0 8713
+S
+#8713
+Landing~
+~
+~
+A faint breeze can be felt brushing past as it comes down the stairs that
+lead upwards.  To the east and south are nature passages that time has
+eroded into the limestone.  There are crude runes scratched into the cavern
+walls.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 8714
+D2
+~
+~
+0 0 8717
+D4
+~
+~
+0 0 8712
+S
+#8714
+High Cavern~
+~
+~
+Crude runes have been scratched into this cavern's walls.  Tunnels lead
+off in what seems all directions, weaving between stalagmites.  This
+cavern's floor shows traces of water and small pools still reflect your
+light.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8715
+D1
+~
+~
+0 0 8716
+D2
+~
+~
+0 0 8718
+D3
+~
+~
+0 0 8713
+S
+#8715
+Collapsed Tunnel~
+~
+~
+Broken limestone and shattered rock block the passage that used to lead
+northwards.  The only exit seems to be the way you came.  
+~
+0 1 0
+Rd     0
+D2
+~
+~
+0 0 8714
+S
+#8716
+Cavernous Tunnel~
+~
+~
+Large stalagmites and stalagtites fill this bend in the natural tunnel. 
+A small *ping* of sound echos from the south but it seems to be brighter to
+the west.  Crude runes have been scratched on the wall between damp spots of
+darker color.  
+~
+0 1 0
+Rd     0
+D2
+~
+~
+0 0 8719
+D3
+~
+~
+0 0 8714
+S
+#8717
+Old Riverbed~
+~
+~
+There is a trickling stream of water flowing down the west wall, hitting
+the floor and meandering to the south.  To the north, there are faint
+ringings of metal hitting stone.  The limestone walls have been smoothed by
+the hands of time but the floor is scuffed from the passage of iron shod
+feet.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8713
+D2
+~
+~
+0 0 8722
+S
+#8718
+High Cavern~
+~
+~
+Tall stalagmites rise from the floor of this intersection.  Passages lead
+to the east, north and south.  Small drips fall like a drizzle from the
+limestone ceiling, causing puddles to form around your feet.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8714
+D1
+~
+~
+0 0 8719
+D2
+~
+~
+0 0 8723
+S
+#8719
+High Cavern~
+~
+~
+Long, sharp stalagmites and stalagtites stand like teeth in the midst of
+this cavern.  Tunnels lead off in all directions; north, south, east and
+west.  Small, crude symbols have been scratched into the walls and the faint
+-ping- of metal on stone can be heard echoing from the east.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8716
+D1
+~
+~
+0 0 8720
+D2
+~
+~
+0 0 8724
+D3
+~
+~
+0 0 8718
+S
+#8720
+Old Riverbed~
+~
+~
+The smooth floor of this ancient river has small pools formed around
+minute stalagmites.  The walls and ceiling are very moist as water
+continuously trickles down them.  The stream flows from south to north and
+has a mild current that makes footing treacherous.  A small tunnel breaks
+in, about midways up the western wall.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8721
+D2
+~
+~
+0 0 8725
+D3
+~
+~
+0 0 8719
+S
+#8721
+Old Riverbed~
+~
+~
+The smooth floor of this ancient riverbed has been clogged with all sorts
+of things.  Sticks, logs, rocks, pebbles, bones, cloth, clinging ropes,
+weapons and what appears to be rusted armours.  You get the feeling that you
+are being watched as you try swimming in this hodgepodge of a dam.  The only
+exit is back to the south, as the north is blocked!  
+~
+0 1 0
+Rd     0
+D2
+~
+~
+0 0 8720
+S
+#8722
+Old Riverbed~
+~
+~
+It is darker here than further north and looks even gloomier to the east.
+On the floor of this smoothed passage is a widening stream of water, being
+enlarged by the passing trickles of water coming down the walls.  Small
+chitters can be heard above your head and there are white dots everywhere
+the stream has not washed the stone clean.  A few small bones can be seen
+littering some of the stalagmites.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8717
+D1
+~
+~
+0 0 8723
+S
+#8723
+Old Riverbed~
+~
+~
+A broken tunnel wall leads to the north, but the dried riverbed flows
+from west to south.  The white dots speckle the floor of this passageway. 
+Faint pinging of metal upon stone echo from the north.  A stream flows down
+the center of the cavern, traveling from west to south.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8718
+D2
+~
+~
+0 0 8726
+D3
+~
+~
+0 0 8722
+S
+#8724
+Collapsed Tunnel~
+~
+~
+Broken limestone and shattered rock block the passage that used to lead
+southward.  The only exit seems to be the way you came.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8719
+S
+#8725
+Old Riverbed~
+~
+~
+The smooth floor of this ancient river has small pools formed around
+minature stalagmites.  The walls and ceiling are quite moist as water
+continues to trickle down them.  The stream flows from south to north and
+has picked up a bit of a current that makes your footing treacherous.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8720
+D2
+~
+~
+0 0 8732
+S
+#8726
+Old Riverbed~
+~
+~
+You find yourself in a long dried riverbed with but a stream trickling
+through.  Small drops from the walls and ceiling add to the flow that comes
+from the north, heading around the bend of this tunnel to the west.  Small
+white dots are splattered about on the stones.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8723
+D3
+~
+~
+0 0 8727
+S
+#8727
+Old Riverbed~
+~
+~
+A steady slow stream of water flows down the floor, from the east and
+disappearing to the south.  The tunnel is quite damp and small white dots
+appear to be everywhere, even on you.  
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 8726
+D2
+~
+~
+0 0 8728
+S
+#8728
+Old Riverbed~
+~
+~
+The smooth floor of this ancient river has small pools formed around
+minature stalagmites, newly grown.  The walls and ceiling are quite moist
+and small white dots are everywhere the water has not carried them off.  You
+can hear faint squeaks around you.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8727
+D1
+~
+~
+0 0 8729
+S
+#8729
+Old Riverbed~
+~
+~
+The smooth floor of this ancient river has small pools formed around
+minature stalagmites, newly grown.  The walls and ceiling are quite moist
+and small white dots are everywhere the water has not carried them off.  You
+can hear faint squeaks around you.  
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 8730
+D3
+~
+~
+0 0 8728
+S
+#8730
+Old Riverbed~
+~
+~
+The smooth floor of this ancient river has small pools formed around
+minature stalagmites, newly grown.  The walls and ceiling are quite moist
+and fewer white dots are found.  The stream continues to flow from west to
+north but a new passage comes into this cavern from the east.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8731
+D1
+~
+~
+0 0 8733
+D3
+~
+~
+0 0 8729
+S
+#8731
+Old Riverbed~
+~
+~
+The smooth floor of this ancient river has small pools formed around
+minature stalagmites, newly grown.  The walls and ceiling are quite moist as
+water trickles periodically.  The stream continues to flow from south to
+east, growing slowly but steadily.  
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 8732
+D2
+~
+~
+0 0 8730
+S
+#8732
+Old Riverbed~
+~
+~
+The smooth floor of this ancient river has small pools formed around
+minature stalagmites, newly grown.  The walls and ceiling are quite moist as
+water continues to trickle down them.  The stream continues to flow from
+west to north but a new passageway breaks into this cavern from the south.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8725
+D2
+~
+~
+0 0 8733
+D3
+~
+~
+0 0 8731
+S
+#8733
+High Cavern~
+~
+~
+Long, sharp stalagmites and stalagtites are everywhere, making the center
+of this large cavern look like a hungry mouth.  There are crude symbols
+carved into the walls of this cave and there is a faint -ping- to be heard
+coming from the southern of the three exits.  The sounds of running water
+can be heard from the north and west.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8732
+D2
+~
+~
+0 0 8734
+D3
+~
+~
+0 0 8730
+S
+#8734
+Cavernous Tunnel~
+~
+~
+Faint sounds of metal on stone echo from the west and to the north, water
+can be heard trickling.  There are crude symbols carved upon the walls of
+this monstrous tunnel and the floor seems to have been scraped by the
+passage of many feet over centuries of use.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8733
+D3
+~
+~
+0 0 8735
+S
+#8735
+High Cavern~
+~
+~
+Crude symbols decorate the walls of this huge cavern.  Stalagtites and
+stalagmites alike have been cut down as far as a hand could reach.  The
+floor has seen heavy use, as if items have been drug across them for
+centuries.  The faint -ping- of metal on stone can be heard echoing from the
+western passage.  Funny...  There seems to be light coming from the southern
+wall.  
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 8734
+D2
+~
+~
+595 0 8736
+D3
+~
+~
+0 0 8737
+S
+#8736
+Collapsed Tunnel~
+~
+~
+Broken limestone and shattered rock block the passage that used to lead
+southward.  The only exit seems to be the way you came.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+595 0 8735
+S
+#8737
+Cavernous Tunnel~
+~
+~
+Crude symbols decorate the walls of this huge passage.  The stumps of
+stalagmites and stalagtites can be seen on both the ceiling and sandy floor.
+There are scars of drug items and slings of sand from countless feet over
+ages gone.  There is a faint -ping- of metal on stone coming from the west. 
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 8735
+D3
+~
+~
+0 0 8738
+S
+#8738
+Cavernous Tunnel~
+~
+~
+Hideous symbols decorate the walls of this huge passage.  The stumps of
+former stalagmites and tites can be seen through the sandy floor and the
+high ceiling in the dark.  There are scars of countless years upon the
+floor, too.  The -ping- of metal on stone is louder, along with echos of
+faint, rough laughter, all coming from the south.  
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 8737
+D2
+~
+~
+0 0 8739
+S
+#8739
+Guard Station~
+~
+~
+You've discovered a hideously carved cavern with large stone benches cut
+out of stalagmites.  There are stairs cut into a passage leading down and to
+the north, another exit disappears into darkness.  Rough laughter and the
+crack of whips and the faint sound of chains come from below.  Ugly guards
+spring to attention with your approach, bearing teeth and challenging you.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8738
+D5
+~
+~
+0 0 8740
+S
+#8740
+Entrance to Mines~
+~
+~
+Harsh laughter and the distant cries of slaves greet your ears.  There is
+a sharp report of cracking whips on flesh and the sounds of metal on stone
+increase with each one.  The floor has been sanded to cover blood as well as
+to help in dragging large bundles.  The walls and ceiling of this mine are
+quite expansive, as if they are for a meeting hall.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 8741
+D4
+~
+~
+0 0 8739
+S
+#8741
+Mining Hall~
+~
+~
+The expansive, carved cavern is enormous!  You can move freely in all
+directions but south, where a collosal stalagmite-tite has made a pillar of
+immense size.  The walls have been smoothed all around you and the floor has
+been sanded.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8740
+D1
+~
+~
+0 0 8743
+D3
+~
+~
+0 0 8742
+S
+#8742
+Mining Hall~
+~
+~
+The expansive, carved cavern is enormous!  You can move freely in all
+directions but where a collosal stalagmite-tite has made a pillar of immense
+size.  The walls have been smoothed all around you and the floor has been
+sanded.  The hall expands to the east and south.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 8741
+D2
+~
+~
+0 0 8745
+S
+#8743
+Mining Hall~
+~
+~
+The expansive, carved cavern is enormous!  You can move freely in all
+directions but where a collosal stalagmite-tite has made a pillar of immense
+size.  The walls have been smoothed all around you and the floor has been
+sanded.  The hall expands to the west and south.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 8747
+D3
+~
+~
+0 0 8741
+S
+#8744
+Mine Entrance~
+~
+~
+---------< ABANDON HOPE ALL THAT ENTER HERE, YE MAGGOTS!!  >---------
+quotes the sign above the stairwell.  There are roster sheets posted on the
+stairs lead down into deeper darkness.  You can clearly hear the sound of
+metal on stone and the scrape of shovels, coming from the darkness of the
+stairs.  There is a fetid air flowing from the south.  
+~
+0 1 0
+Rd     0
+D2
+~
+~
+0 0 8748
+D5
+~
+~
+0 0 8761
+S
+#8745
+Mining Hall~
+~
+~
+The expansive, carved cavern is enormous!  You can move freely in all
+directions but where a collosal stalagmite-tite has made a pillar of immense
+size.  The walls have been smoothed all around you and the floor has been
+sanded.  The hall expands to the east and north.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8742
+D1
+~
+~
+0 0 8746
+S
+#8746
+Mining Hall~
+~
+~
+The expansive, carved cavern is enormous!  You can move freely in all
+directions but north, where a collosal stalagmite-tite has made a pillar of
+immense size.  The walls have been smoothed all around you and the floor has
+been sanded.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 8747
+D2
+~
+~
+0 0 8750
+D3
+~
+~
+0 0 8745
+S
+#8747
+Mining Hall~
+~
+~
+The expansive, carved cavern is enormous!  You can move freely in all
+directions but where a collosal stalagmite-tite has made a pillar of immense
+size.  The walls have been smoothed all around you and the floor has been
+sanded.  The hall expands to the west and north.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8743
+D3
+~
+~
+0 0 8746
+S
+#8748
+Mine Shaft~
+~
+~
+This shaft runs two directions.  The floor gets steeper and rougher to
+the north.  The walls are carved with obscene runes and the ceiling has
+risen considerably.  Beams of stone are ever present, making the tunnel more
+secure the further into the mountain you go.  The echo of metal on stone is
+still present, though the odor of death lingers.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8744
+D2
+~
+~
+0 0 8752
+S
+#8749
+Slaves' Quarters~
+~
+~
+The floor in here is littered with moldy hay and the stench of sweat and
+unwashed bodies.  The walls are carved with symbols from every known
+language, all depicting a life of misery.  The only exit is the way you
+came.  
+~
+0 3 0
+Rd     0
+D2
+~
+~
+0 0 8753
+S
+#8750
+Guard Post~
+~
+~
+This small hovel of a room supports crude iron filed bars across half
+it's length.  It looks like the entrance to a prison.  Whips, chains and
+dulled tools line one wall while the rusty gate stands half open.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8746
+D2
+~
+~
+0 0 8754
+S
+#8751
+Slaves' Quarters~
+~
+~
+The floor in here is littered with moldy hay and the stench of sweat and
+unwashed bodies.  The walls are carved with symbols from every known
+language, all depicting a life of misery.  The only exit is the way you
+came.  
+~
+0 3 0
+Rd     0
+D2
+~
+~
+0 0 8755
+S
+#8752
+Mine Shaft~
+~
+~
+This shaft runs two directions.  The ceiling is not as low but the floor
+has started to run at an angle, leading downwards.  Beams of stone and wood
+help support the walls and you can hear the sound of metal on stone coming
+from the north.  Crude symbols are carved into the walls and beams.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8748
+D2
+~
+~
+0 0 8756
+S
+#8753
+Mine Shaft~
+~
+~
+This shaft runs three directions.  The ceiling is low and supported by
+beams of stone and wood, making it treacherous to stand fully.  The floor
+has been sanded to cover bloodstains.  On the walls are crude symbols. 
+Snores come from the north and south.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8749
+D1
+~
+~
+0 0 8754
+D2
+~
+~
+0 0 8757
+S
+#8754
+Slave Barracks~
+~
+~
+This is a corridor that leads from a guard post to the slave quarters to
+deeper into the mines.  The floor is sanded and the walls have stone and
+wood beams holding up braces on the low ceiling.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8750
+D2
+~
+~
+0 0 8758
+D3
+~
+~
+0 0 8753
+S
+#8755
+Mine Shaft~
+~
+~
+This shaft runs three directions.  The ceiling is low and supported by
+beams of stone and wood, making it treacherous to stand fully.  The floor
+has been sanded to cover the bloodstains.  On the walls are crude symbols. 
+Snores can be heard from the north.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8751
+D1
+~
+~
+0 0 8756
+D2
+~
+~
+0 0 8759
+S
+#8756
+Mine Shaft~
+~
+~
+This shaft runs three directions.  The ceiling is low and supported by
+beams of wood and stone, making it treacherous to stand fully.  The floor
+has been sanded to cover bloodstains.  On the walls are crude symbols. 
+Snores can be heard from the south.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8752
+D2
+~
+~
+0 0 8760
+D3
+~
+~
+0 0 8755
+S
+#8757
+Slaves' Quarters~
+~
+~
+The floor in here is littered with moldy hay and the stench of sweat and
+unwashed bodies.  The walls are carved with symbols from every known
+language, all depicting a life of misery.  The only exit is the way you
+came.  
+~
+0 3 0
+Rd     0
+D0
+~
+~
+0 0 8753
+S
+#8758
+Mine Shaft~
+~
+~
+This shaft runs two directions.  The ceiling is low and supported by
+beams of stone and wood, making it treacherous to stand fully.  The floor
+has been sanded to cover bloodstains.  On the walls are crude symbols.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8754
+D1
+~
+~
+0 0 8759
+S
+#8759
+Mine Shaft~
+~
+~
+This shaft runs two directions.  The ceiling is low and supported by
+beams of wood and stone, making it treacherous to stand fully.  The floor
+has been sanded to cover bloodstains.  On the walls are crude symbols.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8755
+D3
+~
+~
+0 0 8758
+S
+#8760
+Slaves' Quarters~
+~
+~
+The floor in here is littered with moldy hay and the stench of sweat and
+unwashed bodies.  The walls are carved with symbols from every known
+language, all depicting a life of misery.  The only exit is the way you
+came.  
+~
+0 3 0
+Rd     0
+D0
+~
+~
+0 0 8756
+S
+#8761
+Mine Landing~
+~
+~
+Small rodents scurry into the cracks as you approach.  The walls and
+ceiling are barely held by rotten beams of wood and the floor is covered
+with trash, rubble and pieces of black coal.  There is a fetid air of sweat
+and death that lingers like bad breath.  Curses, cries of pain and the sound
+of whips echo from the south.  Crude symbols and warnings are scrawled on
+the wall next to the stairs leading upwards.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 8762
+D4
+~
+~
+0 0 8744
+S
+#8762
+Bending Shaft~
+~
+~
+Hunks of coal and pieces of rock are scattered about, making walking a
+task.  The ceiling is low and the spaces between the overhead beams are
+crumbling.  Both walls are carved from the stone of the mountains and are
+braced with more rotten wood.  This tunnel bends back to the north and west,
+where the majority of noise is coming from.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8761
+D3
+~
+~
+0 0 8763
+S
+#8763
+Intersecting Tunnels~
+~
+~
+This is a huge intersection of four passages.  They lead off in all
+directions , and the echos are hard to discern.  There is bits of coal,
+rubble, blood, and broken tools lying about.  In the corner between two
+tunnels is a mummified corpse.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8764
+D1
+~
+~
+0 0 8762
+D2
+~
+~
+0 0 8771
+D3
+~
+~
+0 0 8765
+S
+#8764
+Tunnel "A"~
+~
+~
+A newer tunnel, there are signs of fresh chips and scrapes on the rock. 
+The ceiling is higher and the beams along the walls and ceiling are newer
+and show very little rot.  The floor has a fresh blood stain, still bright
+red.  The only exit appears to be back the way you came.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 8763
+S
+#8765
+Coal Mines Entrance~
+~
+~
+There is more coal on the floor and black dust coats about everything. 
+To the north is a forgotten shaft while to the west is a shiny blackened
+sign, labeled Kole Mine.  There is another tunnel leading to the east. 
+Curses, whips and chains can be heard from the west as well as the scream
+and chink of metal on soft stone.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8766
+D1
+~
+~
+0 0 8763
+D3
+~
+~
+0 0 8767
+S
+#8766
+Collapsed Tunnel~
+~
+~
+Filthy black dust coats every surface and the fine coal powder makes you
+cough.  This is a dead end, as the coal petered out into hard granite,
+making tunneling almost impossible.  The only exit appears to be the way you
+came in.  
+~
+0 8197 0
+Rd     0
+D2
+~
+~
+0 0 8765
+S
+#8767
+Coal Mine~
+~
+~
+Black powder stirs as you move into this massive coal tunnel.  There
+appears to be a collapsed portion of the wall to the north.  The main
+passages lead to the south and east, following tracks in the dust.  There is
+a foul, dank smell to the air as if gasses are present.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 8765
+D2
+~
+~
+0 0 8769
+S
+#8768
+Hidden Passage~
+~
+~
+Wow!  That tunnel has dropped you into a room full of dust.  The only
+exit appears to be to the south, but where have you been dropped?  The walls
+are carved smooth and they don't appear to be of goblin design.  There are
+no stalagtites and mites here and all appearances given is that this is not
+natural.  
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 8767
+S
+#8769
+Coal Mine~
+~
+~
+Black powder stirs as you move into this massive coal tunnel.  There
+appears to not be much air in here as stench of underground gasses have
+collected, making flames dangerous.  The main passages lead to the north and
+east, following tracks in the dust.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8767
+D1
+~
+~
+0 0 8770
+S
+#8770
+Intersecting Tunnels~
+~
+~
+Three tunnels converge here, making for a few choices.  To the west,
+everything is coated with fine, black powder, from ceiling to floor.  To the
+east, chinks of metal on stone as well as the crack of whips echo.  To the
+south comes a faint, fetid smell, as if filthy wild animals have made it
+their lair.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 8771
+D2
+~
+~
+0 0 8774
+D3
+~
+~
+0 0 8769
+S
+#8771
+Bending Shaft~
+~
+~
+This cavern has exits leading to the north and west, both disappearing
+into darkness.  The floor has been roughly leveled but stalagtites makes it
+dangerous for tall folk to pass easily.  There are crude runes of every
+language cut into the walls, all warning of trespassing.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8763
+D3
+~
+~
+0 0 8770
+S
+#8772
+Stairwell~
+~
+~
+Polished stone floors and scrubbed walls make this room stand out.  The
+ceiling rises over twenty feet above your head, with crude lanterns
+suspended from iron chains.  There is a door to the south and a stairwell
+disappearing down into darkness.  
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+7 0 8776
+D5
+~
+~
+0 0 8802
+S
+#8773
+Bending Shaft~
+~
+~
+Rancid air meets your nostrals when you walk in.  There is faint snoring
+from the tunnel to the south, but the air seems fresher back to the east. 
+Dirty rags and soured straw are stored in this room, making a rats' nest of
+filth.  The walls are rough hewn and the low ceiling only makes the smell
+worse.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 8774
+D2
+~
+~
+0 0 8777
+S
+#8774
+Tunnel "C"~
+~
+~
+Faints sounds of snoring echo from the western tunnel leading into this
+massive cavern.  The filth of coal dust blackens the exit to the north but
+there appears to be new excavations to the south.  Massive pillars of stone
+hold the ceiling and the floor is a bit smoother and cleaner than you've
+encountered before.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8770
+D2
+~
+~
+0 0 8778
+D3
+~
+~
+0 0 8773
+S
+#8775
+Old Tunnel~
+~
+~
+Monstrous dark pillars hold the high ceiling well above the floors. 
+Cobwebs fill the spaces between the spans, dusty and slowly wafting in the
+breeze.  The sounds of small rodents can be heard scurrying in the darkness.
+The sounds of whips and cries of injured echo from the south.  The only
+other exit is to the east.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+3 0 8776
+D2
+~
+~
+0 0 8779
+S
+#8776
+Intersecting Tunnels~
+~
+~
+You have walked into a guard station.  There are goblins here, and when
+you enter, they jump to attention.  There are two closed doors; one north
+and one west.  The other exit is to the south.  The crack of whips and
+screams come from the west.  High ceiling beams support crude lanterns and
+the walls have been scrubbed clean.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+7 0 8772
+D2
+~
+~
+0 0 8780
+D3
+~
+~
+3 0 8775
+S
+#8777
+Sleeping Chamber~
+~
+~
+This squared, stone room is piled with filth!  Rank sweat and acrid urine
+stain the rotting cots and sleeping pallets.  The air of death lingers,
+making even the strongest stomach rebel.  Shredded rags and mouldy straw are
+piled deep, evidently to make some sort of comfort for what little rest
+these slaves of the goblins can find.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8773
+S
+#8778
+New Tunnel~
+~
+~
+Newly opened tunnels head off to the north and south of this grubby
+cavern.  The floors have been shoveled clean and the ceiling is a bit higher
+than normal.  You can hear the sound of whips to the south but to the north,
+black dust still filters in.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8774
+D2
+~
+~
+0 0 8782
+S
+#8779
+Collapsed Tunnel~
+~
+~
+A small group of slaves have been bedded here to be kept at hand for
+work.  There was once a tunnel to the west, but it has long been collapsed
+when the new tunnel was dug.  The smell of urine, sweat, and fear permeate
+the air.  The slaves cringe as you enter, thinking you another 'master'. 
+The only exit is back north.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8775
+S
+#8780
+New Tunnel~
+~
+~
+This cavern still has that 'newly carved' smell to it.  There is no
+stench of blood or death in the air.  The stone chips and dust have been
+swept in a pile towards the west wall.  New braces hold the ceiling lanterns
+and the walls have been scrubbed clean.  There are exits to the north and
+south.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8776
+D2
+~
+~
+0 0 8784
+S
+#8781
+New Tunnel~
+~
+~
+Small pieces of rocks and stone dust cover the floor in this new cavern. 
+There are tunnels leading off to the east and south, heading to more
+delvings.  The walls are clean, attributing to newness of this area.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 8782
+D2
+~
+~
+0 0 8785
+S
+#8782
+Intersecting Tunnels~
+~
+~
+This cave is the intersection of three tunnels heading north, east and
+west.  There is little rubble on the floor and the walls haven't been
+scribbled on so you can assume the goblins haven't gotten bored yet.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8778
+D1
+~
+~
+0 0 8783
+D3
+~
+~
+0 0 8781
+S
+#8783
+Intersecting Tunnels~
+~
+~
+This cave is the intersection of three tunnels, leading west, east and
+south.  Small pieces of rubble can be found on the floor, but not much.  The
+walls and ceiling have that "newly chipped" feel and the air is a bit
+cleaner.  
+~
+0 8193 0
+Rd     0
+D1
+~
+~
+0 0 8784
+D2
+~
+~
+0 0 8786
+D3
+~
+~
+0 0 8782
+S
+#8784
+New Tunnel~
+~
+~
+This cavern still has that 'newly carved' smell to it.  There is no
+stench of blood or death to the air.  The stone chips and dust have been
+swept in a pile in one of the corners.  New braces hold the ceiling lanterns
+and the walls haven't been scribbled upon.  There are exits to the north and
+west.  
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8780
+D3
+~
+~
+0 0 8783
+S
+#8785
+Stairwell~
+~
+~
+Small pieces of rock and stone dust cover the floor on this landing. 
+There are steps leading down into darkness and a passage that heads north. 
+Do you try your luck?  The sound of whips and scrape of shovels come from
+the north.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8781
+D5
+~
+~
+0 0 8815
+S
+#8786
+Stairwell~
+~
+~
+Small pieces of rock and stone dust cover the floor on this landing. 
+There are steps leading down into the darkness and a passage that heads
+north.  Do you try your luck?  The sound of whips and scrape of shovels come
+from the north.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8783
+D5
+~
+~
+0 0 8816
+S
+#8787
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 8788
+D2
+~
+~
+0 0 8791
+S
+#8788
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 8792
+D3
+~
+~
+0 0 8787
+S
+#8789
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 8790
+D2
+~
+~
+0 0 8793
+S
+#8790
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 8794
+D3
+~
+~
+0 0 8789
+S
+#8791
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8787
+D1
+~
+~
+0 0 8792
+D2
+~
+~
+0 0 8799
+S
+#8792
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8788
+D2
+~
+~
+0 0 8796
+D3
+~
+~
+0 0 8791
+S
+#8793
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8789
+D2
+~
+~
+0 0 8797
+S
+#8794
+~
+~
+~
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 8790
+S
+#8795
+~
+~
+~
+~
+0 8197 0
+Rd     0
+D1
+~
+~
+0 0 8796
+S
+#8796
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8792
+D2
+~
+~
+0 0 8800
+D3
+~
+~
+0 0 8795
+S
+#8797
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8793
+D2
+~
+~
+0 0 8801
+S
+#8798
+~
+~
+~
+~
+0 8193 0
+Rd     0
+D2
+~
+~
+0 0 8802
+S
+#8799
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8791
+D2
+~
+~
+0 0 8803
+S
+#8800
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8796
+D2
+~
+~
+0 0 8804
+S
+#8801
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8797
+D1
+~
+~
+0 0 8802
+D2
+~
+~
+0 0 8805
+D3
+~
+~
+519 0 8800
+S
+#8802
+Landing~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8798
+D2
+~
+~
+0 0 8806
+D3
+~
+~
+0 0 8801
+D4
+~
+~
+0 0 8772
+S
+#8803
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8799
+D1
+~
+~
+0 0 8804
+D2
+~
+~
+0 0 8807
+S
+#8804
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8800
+D3
+~
+~
+0 0 8803
+S
+#8805
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8801
+D2
+~
+~
+0 0 8809
+S
+#8806
+~
+~
+~
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8802
+S
+#8807
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8803
+D1
+~
+~
+0 0 8808
+S
+#8808
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 8812
+D3
+~
+~
+0 0 8807
+S
+#8809
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8805
+D1
+~
+~
+0 0 8810
+S
+#8810
+~
+~
+~
+~
+0 8193 0
+Rd     0
+D3
+~
+~
+0 0 8809
+S
+#8811
+Collapsed Tunnel~
+~
+~
+Small squeaks echo as you enter.  Smaller feet scramble as rodents of all
+size scurry to hiding.  The floor is covered with bones and scraps of
+clothing and leather.  The smell of rat flesh assault your nostrals.  
+~
+0 1 0
+Rd     0
+D2
+~
+~
+0 0 8815
+S
+#8812
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8808
+D1
+~
+~
+0 0 8813
+S
+#8813
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D1
+~
+~
+0 0 8814
+D3
+~
+~
+0 0 8812
+S
+#8814
+~
+~
+~
+~
+0 8192 0
+Rd     0
+D2
+~
+~
+0 0 8817
+D3
+~
+~
+0 0 8813
+S
+#8815
+Abandoned Cavern~
+~
+~
+This cavern is small and dusty with black soot everywhere.  The high
+ceiling is shrouded in darkness that not even your light can reach.  You get
+the feeling that this room hasn't been traversed often.  A feeling of dread
+comes over you.  There are exits leading up and east and north.  
+~
+0 8193 0
+Rd     0
+D0
+~
+~
+0 0 8811
+D1
+~
+~
+0 0 8816
+D4
+~
+~
+0 0 8785
+S
+#8816
+Abandoned Cavern~
+~
+~
+This cavern is small and dusty with black soot everywhere.  The high
+ceiling is shrouded in darkness that not even your light can reach.  You get
+the feeling that this room hasn't been traversed often.  A feeling of dread
+comes over you.  There are exits leading up and west.  
+~
+0 8193 0
+Rd     0
+D3
+~
+~
+0 0 8815
+D4
+~
+~
+0 0 8786
+S
+#8817
+Tunnelfall~
+~
+~
+~
+0 8192 0
+Rd     0
+D0
+~
+~
+0 0 8814
+D5
+~
+~
+0 0 8818
+S
+#8818
+Gollum's Lair~
+~
+~
+~
+0 1 0
+Rd     0
+D2
+~
+~
+0 0 8820
+D4
+~
+~
+0 0 8817
+S
+#8819
+Stairwell~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 8768
+S
+#8820
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 8821
+D2
+~
+~
+0 0 8823
+D3
+~
+~
+515 0 8819
+S
+#8821
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 8820
+S
+#8822
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 8825
+S
+#8823
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8820
+D1
+~
+~
+0 0 8824
+D2
+~
+~
+0 0 8826
+S
+#8824
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 8823
+S
+#8825
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8822
+D1
+~
+~
+0 0 8826
+S
+#8826
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8823
+D1
+~
+~
+0 0 8827
+D2
+~
+~
+0 0 8829
+D3
+~
+~
+0 0 8825
+S
+#8827
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 8830
+D3
+~
+~
+0 0 8826
+S
+#8828
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 8829
+D2
+~
+~
+0 0 8831
+S
+#8829
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8826
+D2
+~
+~
+0 0 8832
+D3
+~
+~
+0 0 8828
+S
+#8830
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8827
+D2
+~
+~
+0 0 8833
+S
+#8831
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8828
+D2
+~
+~
+512 0 8834
+S
+#8832
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8829
+D1
+~
+~
+0 0 8833
+S
+#8833
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8830
+D3
+~
+~
+0 0 8832
+S
+#8834
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 8835
+D2
+~
+~
+0 0 8837
+S
+#8835
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 8838
+D3
+~
+~
+0 0 8834
+S
+#8836
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8833
+D2
+~
+~
+7 0 8839
+S
+#8837
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8834
+D1
+~
+~
+0 0 8838
+D2
+~
+~
+0 0 8840
+S
+#8838
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8835
+D1
+~
+~
+0 0 8839
+D2
+~
+~
+0 0 8841
+D3
+~
+~
+0 0 8837
+S
+#8839
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+7 0 8836
+D2
+~
+~
+0 0 8842
+D3
+~
+~
+0 0 8838
+S
+#8840
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8837
+D1
+~
+~
+0 0 8841
+S
+#8841
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8838
+D1
+~
+~
+0 0 8842
+D3
+~
+~
+0 0 8840
+S
+#8842
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8839
+D3
+~
+~
+0 0 8841
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 8744 0 8744
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

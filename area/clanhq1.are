@@ -1,0 +1,649 @@
+#AREADATA
+Name        { CLAN } The Forgotten~
+Builders    None~
+VNUMs       800 899
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Deconce~
+Llevel      0
+Ulevel      0
+Sounds      &RAn ancient war chant is heard throughout the hall.~
+End
+
+
+
+#MOBILES
+#800
+Guardian~
+A guardian~
+An ancient looking man
+~
+~
+524291 0 32784 0 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if isclan($n) == 10
+say Welcome master $n, you are now under my protection.
+else
+yell An intruder by the name of $n has come to bother us.
+endif
+~
+|
+#807
+Lapoisson~
+Lapoisson~
+The healer of the Forgotten.
+~
+This ancient mortal has long been a healer to the fighters of old, thus
+he continues his work even today.  
+~
+2621441 134217856 16810000 0 0 0 S
+110 1 220 220 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if isclan($n) == 10
+say Welcome master $n, be at peace here.
+else
+say $n, you do not belong here.  Begone before I must call in the keepers of the forgotten.
+say Too late fool.
+yell $n has disgraced our beloved keep, slay this monster before it can get lose!
+endif
+~
+|
+#808
+puppet good~
+A Puppet of Good intentions~
+A Puppet of Good intentions.
+~
+~
+524291 0 0 0 0 1000 S
+50 1 100 100 0 200d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+mpmload 808
+~
+|
+#809
+Byreem~
+Byreem~
+Byreem the thrifty is here.
+~
+Buy, sell, it doesn't matter.  He's all about business.
+~
+656899 0 16 134217728 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+if isclan($n) == 10
+say Master $n, please come in, I will help you with anything you'd like.
+else
+say $n, you filthy animal, get the hell out of my shop!
+yell $n is in my shop, please escort him out.
+endif
+~
+>fight_prog 20~
+say Oh, do stop this foolish fight!
+~
+>fight_prog 10~
+yell A little help please!
+~
+|
+#810
+Puppet evil~
+A Puppet of Evil intentions~
+A Puppet of Evil intentions.
+~
+~
+524291 0 0 0 0 -1000 S
+50 1 100 100 0 200d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+mpmload 810
+~
+|
+#811
+puppet feed feeding~
+A Puppet of Feeding~
+A Puppet of Feeding.
+~
+~
+524291 0 0 0 0 0 S
+1 1 2 2 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 99~
+mpmload 811
+~
+|
+#0
+
+
+
+#OBJECTS
+#801
+statue rydic~
+a statue~
+A huge statue of Rydic sits before you.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+2147483647 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#802
+statue hellspawn~
+a statue~
+A huge statue of Hellspawn sits before you.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+239083498 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#803
+statue mazrim~
+a statue~
+A huge statue of Mazrim sits before you.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+2147483647 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#804
+statue dumax~
+a statue~
+A huge statue of Dumax sits before you.~
+~
+29 0 0 0 0 0 0
+100 100
+811~ 0~ 0~ 0~
+238902345 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#805
+statue aglovale~
+a statue~
+A huge statue of Aglovale sits before you.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+2147483647 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#806
+statue shifting constantly~
+a statue~
+A huge statue of constantly shifting faces sits before you.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+23893498 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#810
+forgotten bag~
+a bag of forgotten things~
+A bag containing various forgotten things lays here.~
+~
+15 536870912 131072 0 0 1 30
+100 100
+400~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#811
+potion recall fleeing flee~
+a potion of quick fleeing~
+A potion to escape a battle lies here.~
+~
+10 268435456 0 0 0 1 30
+100 100
+100~ remove curse~ remove curse~ word of recall~
+1 136 0
+0 0
+reserved~
+0 0
+0 0 0
+#812
+potion removal~
+a potion of removal~
+A potion to remove ill effects lies here.~
+~
+10 268435456 0 0 0 1 30
+100 100
+100~ remove curse~ cure poison~ cure blindness~
+1 340 0
+0 0
+reserved~
+0 0
+0 0 0
+#813
+potion cancel cancellation~
+a potion of cancellation~
+A potion to cancel ill effects lies here~
+~
+10 268435456 0 0 0 1 30
+100 100
+100~ cancellation~ cancellation~ cancellation~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#814
+portal overworld exit ow~
+a portal~
+A portal sits here back to the safety of the Overworld.~
+~
+29 0 0 0 0 0 0
+100 100
+17229~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#815
+path forgotten entrance~
+a portal~
+The path to The Forgotten HQ, please see HELP CLANS before entering.~
+~
+29 0 0 0 0 0 0
+100 100
+810~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#816
+dumax statue~
+a statue~
+A huge statue of Dumax sits before you.~
+~
+29 0 0 0 0 0 0
+100 100
+804~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#820
+forgotten boots~
+a pair of Forgotten boots~
+A pair of boots forgotten by time sit here.~
+~
+9 536870976 466944 0 0 65 30
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+A
+24 -10
+A
+13 50
+A
+1 2
+A
+115 -1
+#821
+forgotten boots~
+a pair of Forgotten boots~
+A pair of boots forgotten by time sit here.~
+~
+9 536870976 466944 0 0 65 65
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 15
+A
+19 15
+A
+13 75
+A
+12 75
+A
+25 30
+A
+24 -15
+A
+120 -1
+A
+3 2
+#822
+boots forgotten~
+a pair of Forgotten boots~
+A pair of boots forgotten by time sit here.~
+~
+9 536870976 466944 0 0 65 100
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 20
+A
+13 100
+A
+12 100
+A
+25 40
+A
+24 -20
+A
+120 -1
+A
+3 2
+#0
+
+
+
+#ROOMDATA
+#800
+Entrance to the clan of The Forgotten~
+~
+~
+Welcome to the halls of The Forgotten, here we worship the things of old,
+the people of old, those things that have been forgotten by most.  But not
+by us, we are the keepers of lives.  
+~
+0 537272334 0
+Rd     0
+D0
+~
+~
+0 0 801
+D2
+~
+~
+0 0 810
+S
+#801
+Rydic's room~
+~
+~
+In this room is a huge statue of a long forgotten pkill fighter named
+Rydic.  Rydic, once the most feared pkiller on the mud has become all but
+forgotten.  
+~
+0 537272334 0
+Rd     0
+D0
+~
+~
+0 0 802
+D2
+~
+~
+0 0 800
+S
+#802
+Hellspawn's room~
+~
+~
+In this room stands a huge statue of Hellspawn.  Hellspawn once a
+ruthless killer of the masses has long since faded from almost everyones
+memory.  
+~
+0 537272334 0
+Rd     0
+D0
+~
+~
+0 0 803
+D2
+~
+~
+0 0 801
+S
+#803
+Mazrim's room~
+~
+~
+In this room stands a massive statue of the great wizard Mazrim.  In a
+time where fighters ruled all, Mazrim was the balance.  He has long since
+been left in the past, he also has been forgotten.  
+~
+0 537272334 0
+Rd     0
+D0
+~
+~
+0 0 804
+D2
+~
+~
+0 0 802
+S
+#804
+Dumax's room~
+~
+~
+In this room yet another large statue sits, this one of the mighty Dumax
+Widowmaker.  Although Dumax is still around, many have forgotten his ability
+and strength.  He may be forgotten by most, but he is remembered by the
+Forgotten.  
+~
+0 537272334 0
+Rd     0
+D0
+~
+~
+0 0 805
+D2
+~
+~
+0 0 803
+S
+#805
+Aglovale's room~
+~
+~
+In this room stands a statue of Aglovale.  In old times Aglovale was the
+warrior emulated by all, and feared by the world.  Now faded from memory he
+abides here forever.  
+~
+0 537272334 0
+Rd     0
+D0
+~
+~
+0 0 806
+D2
+~
+~
+0 0 804
+S
+#806
+The room for those beyond memory, and of the future~
+~
+~
+In this room stands a statue that has no face, and has many faces.  This
+statue was made to represent all those that are beyond memory, who are still
+very much active, and who may come in the future.  
+~
+0 537272334 0
+Rd     0
+D0
+~
+~
+0 0 807
+D2
+~
+~
+0 0 805
+S
+#807
+Healers Chamber~
+~
+~
+In this room a healer towers over you, a healer of such might, and
+gentleness that you hold your breath in awe.  Here he gives out his own
+unique brand of healing to his clan members.  
+~
+0 537272334 0
+Rd     0
+D1
+~
+~
+0 0 809
+D2
+~
+~
+0 0 806
+D3
+~
+~
+0 0 808
+S
+#808
+Room of Chaos~
+~
+~
+In this room stands three puppets, for your various needs.
+~
+0 537272334 0
+Rd     0
+D1
+~
+~
+0 0 807
+S
+#809
+Room of many things~
+~
+~
+In this room you can do various things, such as do banking, shopping,
+practicing, and training.  
+~
+0 537272334 0
+Rd     0
+D3
+~
+~
+0 0 807
+S
+#810
+Prayer Area~
+~
+~
+Before entering the halls of the forgotten, one must pray to those who
+have faded from memory before entering.  It is said that someone who has not
+prayed to these memories will suffer the wrath of the past.  Tred carefully,
+for you are nothing to those of the past.  
+~
+0 537272334 0
+Rd     0
+D0
+~
+~
+0 0 800
+S
+#811
+Dumax's room~
+~
+~
+In this room yet another large statue sits, this one of the mighty Dumax
+Widowmaker.  Although Dumax is still around, many have forgotten his ability
+and strength.  He may be forgotten by most, but he is remembered by the
+Forgotten.  
+~
+0 537272334 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 800 1 800
+O 0 801 0 801
+O 0 802 0 802
+O 0 803 0 803
+O 0 804 0 804
+O 0 805 0 805
+O 0 806 0 806
+M 0 807 1 807
+M 0 808 1 808
+M 0 810 1 808
+M 0 811 1 808
+M 0 809 1 809
+G 0 810 0
+G 0 811 0
+G 0 812 0
+G 0 813 0
+O 0 814 0 810
+O 0 816 0 811
+S
+
+
+
+#SHOPS
+809 15 10 5 9 0 100 200 0 24
+0
+
+
+
+#$

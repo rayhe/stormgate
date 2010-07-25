@@ -1,0 +1,801 @@
+#AREADATA
+Name        Pkill Area~
+Builders    Doomshifter Joke~
+VNUMs       30400 30499
+Security    40
+Recall      1
+Flags       16
+Version     107
+Creator     Doomshifter~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#30400
+pkill mob~
+pkill mob~
+Pkill mob is here
+~
+~
+1 0 0 0 0 0 S
+120 1 240 240 0 50000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30401
+A Dark Time Guard~
+A Dark Time Guard~
+A Dark Time Guard Stand here guarding The Time Gate.
+~
+~
+1 234881152 0 131072 0 -1000 S
+25 1 50 50 0 3500d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#30404
+A Small Gate Guard.~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#30400
+A Clock Shaped Time Portal~
+A Clock Shaped Time Portal~
+A Clock Shaped Time Portal~
+~
+29 771756096 0 0 0 0 1000
+100 100
+30401~ 0~ 0~ 0~
+20000 1 0
+0 0
+true sight~
+-1 -1
+0 0 0
+#30401
+&.A Jester's Blood~
+A Jester's Blood~
+A Jester's Blood~
+~
+5 234881091 0 0 0 8193 108
+100 100
+0~ 500~ 10000~ 11~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30402
+barbarian test weapon~
+a barbarian test weapon~
+(no description)~
+~
+5 0 0 0 0 8193 0
+100 100
+0~ 0~ 0~ 7~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30404
+Barrel Of Monkeys~
+Barrel Of Monkeys~
+Barrel Of Monkeys~
+~
+9 234881347 0 0 0 1048577 108
+100 100
+100~ 0~ 0~ 0~
+1 4 0
+1 30404
+reserved~
+0 0
+0 0 0
+A
+4 50
+A
+19 500
+A
+18 500
+A
+5 50
+A
+1 50
+A
+3 50
+A
+13 10000
+#0
+
+
+
+#ROOMDATA
+#30400
+Time Street.~
+~
+~
+Time Street Is The Main Street Of Tick Tock.  It has a black and gold
+lining With little clock faces embedded into it...  Showing various days and
+times.  People greet you with a cheery "Hullo" as you walk by them. 
+Everyone here seems to be wearing something dealing with time.  Further
+south you see A Fountain of some sort wich you cannot make out from here to
+the west and east some small shops.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 30401
+D1
+~
+~
+0 0 30403
+D2
+~
+~
+0 0 30405
+D3
+~
+~
+0 0 30404
+S
+#30401
+Welcome to Tick Tock~
+~
+~
+The Entrance to Tick Tock,The wonderfull Village of time.  As you walk
+south you see people rushing back and forth to and fro not knowing where
+anyone is going.  The whole city is set in what looks like gears and
+sprockets and other little bits and pieces of clocks.  You can't believe
+your eyes but you believe you see some kids on hoverboards racing down a
+street of cogs...  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 30400
+S
+#30402
+Tick Tock Portal~
+~
+~
+A Portal in the shape of a clock stands here ticking away.  Everything
+around you seems to be slowly moving if not melting.  Ancient Runes Lign The
+Clock Portal an engraving on the portal reads 'Time is fate spend your time
+wisely or your fate may like you parish.  ' There is a bit more witch you
+cannot make out do to a small blood splatter.  
+~
+0 4 0
+Rd     0
+S
+#30403
+Memory Lain~
+~
+~
+Walking down this narrow alleyway in time you begin to realize all things
+of your life.  Nothing seems the same you remember it all so clearly now. 
+Yet all the questions...  Herting your brain driving you insane this must be
+Memory Lain!  You seem to become more peacefull now memories are stranger.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30414
+D3
+~
+~
+0 0 30400
+S
+#30404
+A Narrow Street Lined with time.~
+~
+~
+Walking down a narrow street lined with various objects dealing with time
+you spot a small shop further west.  You decide to go an check it out
+wondering what new and fascinating items they may have.  On your way you
+spot a Bounty Hunter,Who seems to be in a bad mood perhaps he lost a bounty?
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30400
+D3
+~
+~
+0 0 30411
+S
+#30405
+Time Street~
+~
+~
+Time Street Is The Main Street Of Tick Tock.  It has a black and gold
+lining With little clock faces embedded into it...  Showing various days and
+times.  People greet you with a cheery "Hullo" as you walk by them. 
+Everyone here seems to be wearing something dealing with time.  Further
+south you see A Fountain of some sort wich you cannot make out from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30400
+D2
+~
+~
+0 0 30406
+S
+#30406
+An Intersection in Time Street.~
+~
+~
+Time street intersection going all directions all leading to a different
+place.  Like the rest of Time Street It has a black and gold lining With
+little clock faces embedded into it...  Showing various days and times. 
+People greet you with a cheery "Hullo" as you walk by them.  Everyone here
+seems to be wearing something dealing with time.  Further south you see A
+Fountain of some sort wich you cannot make out from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30405
+D1
+~
+~
+0 0 30418
+D2
+~
+~
+0 0 30407
+D3
+~
+~
+0 0 30417
+S
+#30407
+Tick Tock 5~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30406
+D2
+~
+~
+0 0 30408
+S
+#30408
+Tick Tock 6~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30407
+D2
+~
+~
+0 0 30409
+S
+#30409
+Tick Tock 7~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30408
+D1
+~
+~
+0 0 30428
+D2
+~
+~
+0 0 30410
+D3
+~
+~
+0 0 30427
+S
+#30410
+Tick Tock 8~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30409
+S
+#30411
+A Narrow Street Lined with Time~
+~
+~
+Walking down a narrow street lined with various objects dealing with time
+you spot a small shop a bit south.  You decide to go an check it out
+wondering what new and fascinating items they may have.  On your way you
+spot a Bounty Hunter,Who seems to be in a bad mood perhaps he lost a bounty?
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30404
+D2
+~
+~
+0 0 30413
+S
+#30412
+A Small Bounty Hunter's Shop.~
+~
+~
+A small shak,Larger on the inside then on the outside carrying various
+items for bounty hunters...  It seems pretty run down Theres a few tables
+and chairs on the left a counter infront of you and a bartender waiting to
+sell buy and serve.  Music seems to be playing from a juke box in the corner
+and theres a pool table off to the right.  Few people sit around playing
+cards and one at the bar having a few drinks.  
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 30413
+S
+#30413
+Before A Small Bounty Hunter's Shop.~
+~
+~
+You stand just outside a small Bounty Hunter's Shop.  The shop from the
+outside is quite small...  And beat up.  Music begins to play from inside...
+Sounds of people drinking can be herd.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30411
+D3
+~
+~
+0 0 30412
+S
+#30414
+Memory Lain~
+~
+~
+Walking down this narrow alleyway in time you begin to realize all things
+of your life.  Nothing seems the same you remember it all so clearly now. 
+Yet all the questions...  Herting your brain driving you insane this must be
+Memory Lain!  You seem to become more peacefull now memories are stranger.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 30415
+D3
+~
+~
+0 0 30403
+S
+#30415
+Approaching a Clock Shop~
+~
+~
+To your east you notice a small Clock shop they seem to be open for
+business the lights are on and sounds of clocks and other items being made
+can be herd Your curious what they sell but while walking and pondering this
+you stumble into a homeless man with a top hat with a clock on it.  You
+appologize and he replies "No Problem" 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30414
+D1
+~
+~
+0 0 30416
+S
+#30416
+A Small Clock Shop~
+~
+~
+Im a small clock shop,Sounds of wizards making clocks come from
+everywhere.  A Short wizard in purple time robes stands behind a counter
+tinkering with a time remote.  He notices you and quickly puts it into a
+draw."  Hi Welcome To Tick Tock's Time Shop,How may i help you?"  He says 
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 30415
+S
+#30417
+Tick Tock Clock Homes~
+~
+~
+Tick Tock Clock Homes,Best apartments In Town....  Theres a Restraunt/Inn
+to the west.  The streets are now lined with small little pocket watches
+wich also dangle everywhere.  It seems they have no hands but no one seems
+to notice.  To the south are Residents Of Tick Tock's homes 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30406
+D2
+~
+~
+0 0 30420
+D3
+~
+~
+3 0 30419
+S
+#30418
+Tick Tock 22~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 30423
+D2
+~
+~
+0 0 30424
+D3
+~
+~
+0 0 30406
+S
+#30419
+A Small Clock Inn.~
+~
+~
+A Small Clock inn.  One of the greatest places for new adventurers.  Come
+in and eat,Drink,And sleep and discuss gossip with the local residence. 
+Cheery voices and laughter are herd from the tables people offering you
+drinks.  It seems like a nice little place...  Don't you think?  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 30417
+S
+#30420
+PocketWatch Way.~
+~
+~
+PocketWatch way..  Filled with millions of small pocketwatches and
+everyone you seem to pass has one.  Strange?  Nah this is tick tock
+PocketWatch way is famous for the people that live in here.  Everyone from
+Time And Space has lived on PocketWatch Way.  And many still find the cozy
+Pocketwatch shaped homes a joy to live in.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30417
+D2
+~
+~
+0 0 30421
+D3
+~
+~
+0 0 30429
+S
+#30421
+Tick Tock 20~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30420
+D3
+~
+~
+3 0 30422
+S
+#30422
+Tick Tock 21~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 30421
+S
+#30423
+Tick Tock 23~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 30418
+S
+#30424
+Tick Tock 24~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30418
+D1
+~
+~
+0 0 30433
+D2
+~
+~
+0 0 30425
+S
+#30425
+Tick Tock 25~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30424
+D1
+~
+~
+3 0 30426
+S
+#30426
+Tick Tock 26~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 30425
+S
+#30427
+Tick Tock 28~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30409
+S
+#30428
+Tick Tock 27~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 30409
+S
+#30429
+Tick Tock 35~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30420
+D3
+~
+~
+0 0 30430
+S
+#30430
+Tick Tock 33~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 30431
+D1
+~
+~
+0 0 30429
+D2
+~
+~
+3 0 30432
+S
+#30431
+Tick Tock 32~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 30430
+S
+#30432
+Tick Tock 34~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 30430
+S
+#30433
+Tick Tock 36~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30434
+D3
+~
+~
+0 0 30424
+S
+#30434
+Tick Tock 30~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 30436
+D2
+~
+~
+3 0 30435
+D3
+~
+~
+0 0 30433
+S
+#30435
+Tick Talk 31~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 30434
+S
+#30436
+Tick Tock 29~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 30434
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

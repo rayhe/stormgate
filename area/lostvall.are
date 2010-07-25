@@ -1,0 +1,2100 @@
+#AREADATA
+Name        {95-100} Lost Valley (P)~
+Builders    None~
+VNUMs       1301 1400
+Security    100
+Recall      4006
+Flags       128
+Version     107
+Creator     Sethric~
+Llevel      0
+Ulevel      0
+Sounds      The roar of some strange creature can be heard in the distance~
+Music       mount.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#1301
+man wizard lobar~
+The wizard Lobar~
+A old wizard stands here.
+~
+This wisard has a long white beard, wears normal traveling clothes.
+~
+3 100663528 0 0 0 0 S
+100 1 200 200 21675 21675d0+0 0d0+30000
+1000 0 0
+0 0 1
+2099 0 0
+>fight_prog 60~
+yell How dare you attack me $n!
+c 'dispel magic' $n
+c 'dispel magic' $n
+c 'entangle' $n
+c 'blind' $n
+~
+|
+#1302
+death thing~
+The Death Thing~
+A thing of death come for you.
+~
+A thing of pure darkness, death incarnate. Cold emits from it, the coldness
+of death.
+~
+35 369107112 0 0 0 -1000 S
+105 1 210 210 24000 24000d0+0 0d0+0
+1050 0 0
+0 0 0
+100743 0 0
+>death_prog 100~
+~
+>fight_prog 30~
+cast fireball $n
+~
+|
+#1303
+minion~
+evil minion of death~
+Minion of Death grins.
+~
+A little splotch of darkness floating in the air. Its red eyes mocking you.
+~
+3 369098888 0 0 0 -1000 S
+100 1 200 200 20000 20000d0+0 0d0+0
+1000 0 0
+0 0 0
+7 0 0
+>fight_prog 50~
+cast fireball $n
+~
+|
+#1304
+mist~
+A Mist thing~
+A floating thing of Mist.
+~
+A thick floating splotch of mist floats around here.
+~
+3 270024840 0 0 0 0 S
+95 1 190 190 20000 20000d0+0 0d0+0
+950 0 0
+0 0 0
+120 0 0
+>fight_prog 50~
+cast fireball $n
+~
+|
+#1305
+insane joe man~
+Joe the Insane man~
+A drooling insane man is here.
+~
+With long string like hair, eyes bulging eyes, this man looks quite insane.
+~
+3 335560936 0 0 0 0 S
+95 1 190 190 17000 17000d0+0 0d0+95000
+950 0 0
+0 0 1
+0 0 0
+>rand_prog 10~
+giggle
+~
+>all_greet_prog 100~
+laugh
+dance
+say Tee Hee! Welcome, welcome indeed!
+dance
+say I have seen you around, would you wish to leave the valley??
+giggle
+~
+>speech_prog yes~
+if ispc($n)
+say Goodie says I.
+say I do, yes I do have the power to take you from here.
+say Random it will be yes random, bring me my precious, bring it to me.
+think
+fart
+giggle
+endif
+~
+>give_prog teddy bear~
+if ispc($n)
+say Wee, you found my precious!
+smile
+giggle
+say How nice of you.
+say For being so nice I will send you on your way.
+mpoload 1301
+give scroll $n
+smile
+wave $n
+mppurge bear
+endif
+~
+|
+#1306
+dino dinosaur~
+A dinosaur~
+A big Dinosaur wanders around.
+~
+Looking something like a large lizard, this dionsaur walks around on all
+fours, and has a long scaley tail.
+~
+193 16777376 0 0 0 0 S
+95 1 190 190 22000 22000d0+0 0d0+10000
+950 0 0
+0 0 1
+354 0 0
+>fight_prog 50~
+bash
+~
+|
+#1307
+dino dinosaur~
+A dinosaur~
+A big Dinosaur wanders around.
+~
+Looking something like a large lizard, this dinosaur walks around on all
+fours, and has a long scaley tail.
+~
+193 16777376 0 0 0 0 S
+95 1 190 190 22000 22000d0+0 0d0+10000
+950 0 0
+0 0 2
+354 0 0
+>fight_prog 50~
+bash
+~
+|
+#1308
+bunny~
+A small bunny~
+A small bunny hops around.
+~
+This is a small furry white bunny, its ears point up as it examins you.
+~
+65 0 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+100
+10 0 0
+0 0 0
+0 0 0
+#1309
+adventurer mike~
+Mike the adventurer~
+A lost adventurer walks around.
+~
+This man wears tattered clothing and looks extreamly tired, he obviously
+has been wandering around this valley for a long time.
+~
+1 16512 0 0 0 300 S
+95 1 190 190 20000 20000d0+0 0d0+50000
+950 0 0
+0 0 1
+1 0 0
+>fight_prog 40~
+cast heal self
+~
+>fight_prog 20~
+cast 'dispel magic' $n
+~
+|
+#1310
+god thorax~
+Thorax the god of Order~
+Thorax the God of Order.
+~
+You can not describe what you see!!
+~
+3 235430124 0 0 0 1000 S
+105 1 210 210 30000 30000d0+0 0d0+105000
+1050 0 0
+0 0 1
+76167 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Welcome, be at peace here $n.
+smile
+endif
+~
+>fight_prog 20~
+cast 'dispel magic' $n
+~
+|
+#1313
+tyranosaurus rex~
+a large tyranosaurus~
+A very big Tyranosaurus Rex.
+~
+Standing 40 feet high and bearing large sword like teeth, this dinosaur
+looks very mean.
+~
+3 128 0 0 0 0 S
+100 1 200 200 24000 24000d0+0 0d0+0
+1000 0 0
+0 0 0
+112 0 0
+>fight_prog 50~
+bash
+~
+|
+#1327
+water monster~
+a Water Monster~
+A Monster made of water swims in the lake.
+~
+Examining this monster you see it is made from the water itself. You can
+see right through this beast and you shudder as it looks at you.
+~
+3 17842376 0 0 0 0 S
+100 1 200 200 24000 24000d0+0 0d0+0
+1000 0 0
+0 0 0
+163960 0 0
+>fight_prog 50~
+cast iceball $n
+~
+|
+#1360
+titan~
+a large titan~
+A mean looking Titan.
+~
+~
+3 16584 0 0 0 -200 S
+105 1 210 210 24000 24000d0+0 0d0+105000
+1050 0 0
+0 0 1
+19 0 0
+>fight_prog 20~
+cast sunburst $n
+~
+|
+#0
+
+
+
+#OBJECTS
+#1301
+scroll zebzeb~
+joe's special scroll~
+Joe's special scroll.~
+~
+2 0 0 0 0 16385 1
+100 100
+100~ teleport~ reserved~ reserved~
+1 1 0
+0 0
+teleport~
+0 0
+0 0 0
+#1302
+sword demon Chz'ook~
+chz'ook, the Demon sword~
+A black bastard sword floats here.~
+~
+5 743000642 2068 0 0 8193 100
+100 100
+0~ 0~ 0~ 3~
+3 1000 0
+5 0
+teleport~
+20 20
+0 0 0
+A
+13 150
+A
+12 150
+A
+25 50
+A
+1 2
+A
+26 30
+A
+19 45
+A
+18 15
+A
+24 -30
+#1303
+blood~
+blood of the Dark Thing~
+Some blood of the Dark Thing bubbles here.~
+~
+13 16388 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+1305 0 0
+#1304
+juice brain~
+some of the titan's brain juice~
+Some icky Titan brain juice is here.~
+~
+13 0 0 0 0 1 95
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+1305 0 0
+#1305
+goo~
+some black goo~
+A puddle of black goo.~
+~
+13 16400 0 0 0 1 95
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+1302 0 0
+#1306
+sword~
+an old rusty sword~
+A long rusty sword was left here.~
+~
+5 0 0 0 0 8193 95
+100 100
+0~ 0~ 0~ 1~
+3 4 0
+0 0
+reserved~
+0 0
+1302 0 0
+#1307
+eye~
+a Titan's Eye~
+A Titan's eye lyes here.~
+~
+9 8323136 16411 0 0 16385 100
+100 100
+0~ 0~ 0~ 0~
+5 1000 0
+5 0
+scry~
+20 20
+0 0 0
+A
+19 8
+A
+18 12
+A
+12 100
+A
+3 2
+A
+24 -60
+#1308
+robes~
+magi Robes~
+Long flowing robes.~
+~
+9 25100352 2073 0 0 1025 100
+100 100
+0~ 0~ 0~ 0~
+4 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 11
+A
+3 2
+A
+12 100
+A
+19 9
+A
+24 -20
+#1309
+teddy bear~
+a teddy bear~
+A stuffed teddy bear.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1310
+staff awe~
+a wooden staff~
+A wierd looking wooden staff~
+~
+4 560922688 27 0 0 16385 100
+100 100
+100~ 20~ 20~ awe~
+3 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#1311
+poop~
+a pile of poop~
+A big steaming pile of poop.~
+~
+19 0 0 0 0 1 5
+100 100
+5~ 0~ 0~ 1~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1312
+mace ~
+a platinum mace~
+A really big mace lies here.~
+~
+5 164864 42 0 0 8193 100
+100 100
+0~ 0~ 0~ 7~
+6 1000 0
+5 0
+dispel evil~
+0 -1
+0 0 0
+A
+18 20
+A
+19 30
+A
+23 -30
+A
+12 100
+A
+13 100
+#1313
+belt~
+a vine like belt~
+Some vines lie here.~
+~
+9 0 0 0 0 2049 95
+100 100
+0~ 0~ 0~ 0~
+2 948 0
+5 0
+entangle~
+5 5
+0 0 0
+A
+12 30
+A
+13 30
+#1314
+boots~
+boots of speed~
+Some nice looking boots have been left here.~
+~
+9 3 1088 0 0 65 95
+100 100
+0~ 0~ 0~ 0~
+2 948 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+2 2
+A
+19 5
+#1315
+suit godlike armor~
+a suit of god-like armor~
+A suit of real nice armor floats here.~
+~
+9 545950723 11 0 0 9 100
+100 100
+0~ 0~ 0~ 0~
+10 1000 0
+5 0
+sanctuary~
+10 10
+0 0 0
+A
+19 40
+A
+13 100
+A
+12 100
+#1316
+Void~
+a dark void~
+A big dark void floats here.~
+~
+29 0 0 0 0 0 1
+100 100
+1334~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1317
+void~
+a dark void~
+A dark void floats in the air.~
+~
+29 0 0 0 0 0 1
+100 100
+1329~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1318
+skin~
+skin of Death~
+A black pile of skin.~
+~
+9 4194836 1024 0 0 1025 100
+100 100
+0~ 0~ 0~ 0~
+2 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 11
+A
+13 30
+A
+18 9
+#1319
+stone~
+sleep-eye stone~
+A stone that looks like an eye floats here.~
+~
+9 67 2049 0 0 33793 100
+100 100
+0~ 0~ 0~ 0~
+2 1000 0
+5 0
+poison~
+0 -1
+0 0 0
+A
+13 10
+A
+12 100
+A
+23 -10
+A
+24 -10
+A
+18 9
+A
+19 10
+>look_prog 100~
+0
+mpechoat $n You feel really tired for some reason.
+mpechoat $n you fall asleep.
+mpforce $n sleep
+~
+|
+#1320
+hole~
+a small hole~
+A small black hole is here.~
+~
+29 0 1 0 0 95 25001
+100 100
+0~ 0~ 0~ 0~
+2 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#1325
+path druid keep portal~
+a path to the keep~
+A Path to the Druid's Keep stands before you.~
+~
+29 67108864 0 0 0 0 1
+100 100
+4551~ 0~ 0~ 0~
+1000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#1327
+lake~
+glistening lake~
+A glistening lake.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#1301
+Mountain Pass~
+~
+~
+You are standing in a very small pass the leads through the mountains.
+Looking up, you see the walls of this pass rise up into the clouds. Here
+the silence is pounding on you, the only sound you hear is that of your
+breath and of your heartbeat. Looking through the misty air to the west
+you only see the endless path that you know follow. Looking back to the
+east you wonder if you should turn around and return to your warm house.
+~
+0 134619140 5
+Rd     0
+D1
+~
+~
+0 0 26397
+D3
+~
+~
+0 0 1302
+S
+#1302
+Mountain Pass~
+~
+~
+Upon reaching this bend in the mountain pass, the mist which to this point
+has been a light fog in the air now has deepened making it hard to see.
+Your shoulders scrape along the sides of the pass as you slowly try to make
+your way to the other side. The coldness of the air stings your lungs as you
+try to breath in this thin atmosphere.
+~
+0 134619136 5
+Rd     0
+D1
+~
+~
+0 0 1301
+D2
+~
+~
+0 0 1303
+S
+#1303
+Mountain Pass~
+~
+~
+Standing here, attempting to look through this strange mist that keeps getting
+more and more thicker the further you go through the pass, you barely make
+out the sides of the pass which happen to be touching your shoulders.
+Noticing the pass continues to get smaller, you are forced to walk sideways
+in order to continue forward. in the distance you think you can hear something
+for the first time since you have been in here.
+~
+0 134619136 5
+Rd     0
+D0
+~
+~
+0 0 1302
+D3
+~
+~
+0 0 1304
+S
+>enter_prog 100~
+0
+mpecho WARNING! If you do not wish to enter the Lost Valley for levels 95-100, turn back now! If you do proceed, be warned that immortals will not help you get out. You have been warned.
+~
+|
+#1304
+Mist~
+~
+~
+You panic! The mist has just closed around you and now you have no idea
+where what direction takes you. Try as you might you can not see through
+this grey mist, it is so thick you can not even see your own hand in
+front of your face, sounds that you heard before have vanished. Your only
+hope is to walk randomly and hope you get somewhere.
+~
+0 134619136 0
+Rd     0
+D0
+~
+~
+0 0 1305
+D1
+~
+~
+0 0 1305
+D2
+~
+~
+0 0 1305
+D3
+~
+~
+0 0 1305
+D4
+~
+~
+0 0 1305
+D5
+~
+~
+0 0 1305
+S
+#1305
+Valley Entrance~
+~
+~
+You are standing on a ledge high upon a mountain overlooking the Valley of
+The Lost. Untouched by man's presence for thousands of years this valley
+is just like the rest of the world would have been today if left untouched.
+The sounds of some type of animal fills the air, giving this valley a
+prehistoric aura. Looking around you see this valley has mountains that
+reach up into the clouds on all sides, no wonder this valley has never been
+found before.
+~
+0 134619136 5
+Rd     0
+D0
+~
+~
+0 0 1304
+D5
+~
+~
+0 0 1306
+S
+#1306
+Mountain Side~
+~
+~
+Climbing on the side of the mountain fills you with an excitment you never
+really felt before. A strong wind blows at you without mercy, you feel at
+any moment you might be blown off this mountain and fall to your death.
+Looking down you can see your way up on the mountain, and you take care that
+the wind does not blow you off.
+~
+0 134619140 5
+Rd     0
+D4
+~
+~
+0 0 1305
+D5
+~
+~
+0 0 1307
+S
+#1307
+Mountain Side~
+~
+~
+As you climb on the mountain's side you notice how far from the ground
+you are, you see the green of the forest and little things moving in the
+trees, though you are sure once you got to the bottom they wouldnt be so
+little. When you look up into the sky the sun shines brightly down into
+the valley, misty like fog surround the tops of the mountains.
+~
+0 134619136 5
+Rd     0
+D4
+~
+~
+0 0 1306
+D5
+~
+~
+0 0 1308
+S
+#1308
+Bottom of Mountain~
+~
+~
+You are standing at the base of one of the many great mountains that surround
+the valley. Look at the mountain you can see it rises into the clouds and
+beyond. Looking closely you can see that this part of the mountain may be
+climbable. Looking around you see you are in a small clearing in the
+valley, past the clearing is a forest. Looking into the forest you can
+barely make out some trail that you might be able to follow.
+~
+0 134619136 5
+Rd     0
+D2
+~
+~
+0 0 1309
+D3
+~
+~
+0 0 1312
+D4
+~
+~
+0 0 1307
+S
+#1309
+Path~
+~
+~
+As you walk in the valley's thick forest, you marvel at how moist and dark it
+has gotten. Sounds of nature fill the air, some sounds you never heard before
+and you think to yourself you might not want to meet what makes some of the
+sounds. Bugs bite you at every turn, attempting to look deeper into the forest
+to see if you can see anything, you think you see some animals moving about
+but you are not sure. Everything looks the same to you.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1311
+D2
+~
+~
+0 0 1313
+D3
+~
+~
+0 0 1311
+S
+#1310
+Path~
+~
+~
+As you walk in the valley's thick forest, you marvel at how moist and dark it
+has gotten. Sounds of nature fill the air, some sounds you never heard before
+and you think to yourself you might not want to meet what makes some of the
+sounds. Bugs bite you at every turn, attempting to look deeper into the forest
+to see if you can see anything, you think you see some animals moving about
+but you are not sure. Everything looks the same to you.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1308
+D2
+~
+~
+0 0 1312
+D3
+~
+~
+0 0 1311
+S
+#1311
+Path~
+~
+~
+As you walk in the valley's thick forest, you marvel at how moist and dark it
+has gotten. Sounds of nature fill the air, some sounds you never heard before
+and you think to yourself you might not want to meet what makes some of the
+sounds. Bugs bite you at every turn, atempting to look deeper into the forest
+to see if you can see anything, you think you see some animals moving about
+but you are not sure. Everything look the same to you.
+~
+0 134619136 3
+Rd     0
+D1
+~
+~
+0 0 1309
+D2
+~
+~
+0 0 1310
+D3
+~
+~
+0 0 1311
+S
+#1312
+Path~
+~
+~
+As you walk in the valley's thick forest' you marvel at how moist and dark it
+has gotten. Sounds of nature fill the air, some sounds you never heard before
+and you think to yourself you might not want to meet what makes some of the
+sounds. Bugs bite you at every turn. You attempt to look deeper into the forest
+to see if you can see anything, you think you see some animals moving about
+but you are not sure. Everything look the same to you.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1309
+D1
+~
+~
+0 0 1308
+D2
+~
+~
+0 0 1309
+D3
+~
+~
+0 0 1312
+S
+#1313
+Path~
+~
+~
+As you walk in the valley's thick forest you marvel at how moist and dark it
+has gotten. Sounds of nature fill the air, some sounds you never heard before
+and you think to yourself you might not want to meet what makes some of the
+sounds. Bugs bite you at every turn. You attempt to look deepr into the forest
+to see if you can see anything, you think you see some animals moving about
+but you are not sure. Everything looks the same to you.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1316
+D1
+~
+~
+0 0 1314
+D2
+~
+~
+0 0 1310
+D3
+~
+~
+0 0 1311
+S
+#1314
+Path~
+~
+~
+As you walk in the valley's thick forest ou marvel at how moist and dark it
+has gotten. Sounds of nature fill the ait, some sounds you never heard before
+and you think to yourself you might not want to meet what makes some if the
+sounds. Bugs bite you at every turn. You attempt to look deeper into the forest
+to see if you can see anything, you think you see some animals moving about
+but you are not sure. Everything looks the same to you.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1317
+D1
+~
+~
+0 0 1313
+D2
+~
+~
+0 0 1312
+D3
+~
+~
+0 0 1318
+S
+#1315
+Path~
+~
+~
+As you walk in the valley's thick forest you marvel at how moist and dark it
+has gotten. Sounds of nature fill the air, some sounds you never heard before
+and you think to yourself you might not want to meet what makes some of the
+sounds. Bugs bite you at every turn. You attempt to look deeper onto the forest
+to see if you can see anything, you think you see some animals moving about
+but you are not sure. Everything looks the same to you.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1311
+D1
+~
+~
+0 0 1314
+D2
+~
+~
+0 0 1315
+D3
+~
+~
+0 0 1313
+S
+#1316
+Path~
+~
+~
+As you walk in the valley's thick forest you marvel at how moist and dark it
+has gotten. Sounds of nature fill the air, some sounds you never heard before
+and you think to yourself you might not want to meet what makes some of the
+sounds. Bugs bite you at every turn. You attempt to look deeper into the forest
+to see if you can see anything, you think you see some animals moving about
+but you are not sure. Everything looks the same to you.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1310
+D1
+~
+~
+0 0 1308
+D2
+~
+~
+0 0 1319
+S
+#1317
+Cave Passage~
+~
+~
+You stand in the entrance of a small cave passage. This passage looks like
+its big enough for a man to fit through, if at a tight fit. Listening
+carefuly you can hear the constant dripping of water that finds its way
+through the mountain, you also think you hear another noise, but your not
+sure.
+~
+0 134619140 0
+Rd     0
+D1
+~
+~
+0 0 1323
+D2
+~
+~
+0 0 1314
+S
+#1318
+Light Forest~
+~
+~
+You stand on a small path. The sounds of animals fills the air, and now and
+then you even hear noises that belong something that makes your hairs on
+the back of your neck stand up. Looking to the east you notice how the
+forest gets thicker, while to the other directions the forest seems to
+thin out.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1343
+D1
+~
+~
+0 0 1314
+D2
+~
+~
+0 0 1322
+D3
+~
+~
+0 0 1341
+S
+#1319
+Light Forest~
+~
+~
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1316
+D1
+~
+~
+0 0 1320
+D2
+~
+~
+0 0 1325
+D3
+~
+~
+0 0 1326
+S
+#1320
+Light Forest~
+~
+~
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1313
+D1
+~
+~
+0 0 1321
+D2
+~
+~
+0 0 1327
+D3
+~
+~
+0 0 1319
+S
+#1321
+Light Forest~
+~
+~
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1310
+D2
+~
+~
+0 0 1328
+D3
+~
+~
+0 0 1320
+S
+#1322
+Light Forest~
+~
+~
+You wander around, the trees there seem to get more numerous towards the
+east while in other directions the forest seems to thin out. It seems to
+be dryer here than the main part of the valley, a sign that the sun can
+actually get through to the ground.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1318
+D1
+~
+~
+0 0 1315
+D3
+~
+~
+0 0 1340
+S
+#1323
+Cave Passage~
+~
+~
+As you walk along this small cave passage you feel the weight of the
+mountain pressing down all about you, just waiting to collapse and crush
+you. Your footsteps echo as the scrap against the rocks on the ground, you
+hope nothing hears your aproach as this would be a terrible defensive
+position.
+~
+0 134619136 0
+Rd     0
+D0
+~
+~
+0 0 1324
+D3
+~
+~
+0 0 1317
+S
+#1324
+Large Cave~
+~
+~
+Sounds echo of the walls of this rather large cave. A small fire burns in the
+centre of the cave sending shadows dancing onto the walls. You hear the
+silent chuckling then a horrid laughter echo all about which turns into
+a gurgling fit.
+~
+0 134619138 0
+Rd     0
+D2
+~
+~
+0 0 1323
+S
+#1325
+Light Forest~
+~
+~
+As you walk along a path in this lightly forested area, you admire the small
+animals that you never have seen before. Taking a deep breath you smell the
+heavy scent of trees and wildlife. Small twigs snap under your feet causing
+animals to bolt into the underbrush.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1319
+D1
+~
+~
+0 0 1327
+D2
+~
+~
+0 0 1333
+S
+#1326
+Small Pass~
+~
+~
+The walls of the this mountain pass rise up on each side of you into the
+clouds. You feel traped by the walls of this pass as you slowly continue
+walking. Your shoulders scrape along the sides of the mountain, and a low
+mist has gathered on the ground, in the distance you hear the noises of
+animals.
+~
+0 134619136 0
+Rd     0
+D1
+~
+~
+0 0 1319
+D3
+~
+~
+0 0 1346
+S
+#1327
+Lake~
+~
+~
+You stand on the shore by a great lake. The sun glistens off of its crustal
+blue surface. Looking closely you can see fish swimming around. A few birds
+float ontop of the lake searching for some food. The water looks so tastey
+you think about taking a drink.
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 1320
+D1
+~
+~
+0 0 1328
+D3
+~
+~
+0 0 1325
+S
+#1328
+Mountain Base~
+~
+~
+As you stand near the base of this great mountain, you are impressed
+with the sheer size of it. You can not even see the tops of it as it
+dissapears into the clouds. Looking about you can see paths leading in
+other directions into a light forest.
+~
+0 134619136 4
+Rd     0
+D0
+~
+~
+0 0 1321
+D2
+~
+~
+0 0 1330
+D3
+~
+~
+0 0 1327
+S
+#1329
+Dark Cave~
+~
+~
+You enter a very old passage. Looking closer you can see there are antient
+ruins on the wall, even though you can not read them you surmise that they
+mean something imortant. A large black void sits in mid-air here.
+~
+0 134619140 5
+Rd     0
+D3
+~
+~
+3 0 1355
+S
+#1330
+Mountain Base~
+~
+~
+As you wander through the light forest you come upon the base of a great
+mountain. The sounds of gusting winds can be heard here, looking up you
+see some sort of gas like thing floating up high on the mountain, what it
+is you do not know. A slight tremor gives you a moments shock, you realize
+maybe this valley dont have that much longer to exist.
+~
+0 134619136 4
+Rd     0
+D0
+~
+~
+0 0 1328
+D3
+~
+~
+0 0 1331
+S
+#1331
+Mountain Base~
+~
+~
+You come upon a large rock path leading up into the mountain side. There
+seems to be no life here, no trees nor animals seem to want to live near
+hear. Large depressions have been left in the ground, looking closely
+you can see they are odly shaped, like feet.
+~
+0 134619136 4
+Rd     0
+D1
+~
+~
+0 0 1330
+D3
+~
+~
+0 0 1333
+D4
+~
+~
+0 0 1332
+S
+#1332
+Mountain Side~
+~
+~
+As you climb up this mountain you look down and get sick, then quickly
+look back up.  You reach a very large cave, easily 5 times as big as you
+have climbed.  You notice have quiet it is up here.  You think this might be
+a good place to retire (voluntarily of course).  
+~
+0 134619140 5
+Rd     0
+D2
+~
+~
+0 0 1337
+D5
+~
+~
+0 0 1331
+S
+#1333
+Mountain Base~
+~
+~
+You step out of the forest to only almost run into a side of a mountain
+with sharp rocmks pertruding forth. You stop and look at your other choices
+you can either continue north or back east. Looking back upon the this forest
+you can see how easily someone could get lost in it.
+~
+0 134619136 4
+Rd     0
+D0
+~
+~
+0 0 1325
+D1
+~
+~
+0 0 1331
+S
+#1334
+Great Hall~
+~
+~
+You stand in a great hall, so great in fact you can't even see the walls.
+The floor and what you can make out of the ceiling appear to be made from
+gold. A large throne sits in front of you and in this throne sits Thorax
+a Great god of legend.
+~
+0 134619142 5
+Rd     0
+S
+#1335
+NOT USED~
+~
+~
+~
+0 134619140 5
+Rd     0
+S
+#1336
+NOT USED~
+~
+~
+~
+0 134619140 5
+Rd     0
+S
+#1337
+Large Cave~
+~
+~
+You are in a large cave. You look around at this cave entrace wondering
+what in the world a cave this large is doing here, and what is making use
+of it. The ceiling is about two hundred feet high and its about one
+thousand feet from wall to wall. Near the south end of this cave a large
+tunnel goes down while a big path leads to another large opening up.
+~
+0 134619136 5
+Rd     0
+D0
+~
+~
+0 0 1332
+D4
+~
+~
+0 0 1357
+D5
+~
+~
+0 0 1338
+S
+#1338
+Pit~
+~
+~
+You enter a very large pit. Bones of many things lie here, by examing the bones
+you notice that they were brought here and not killed here. You see that the
+bones are of many big beasts, you wonder what could have killed them, then
+moved their bones to this place.
+~
+0 134619136 5
+Rd     0
+D4
+~
+~
+0 0 1337
+S
+#1339
+Cave~
+~
+~
+~
+0 134619140 5
+Rd     0
+S
+#1340
+Light Forest~
+~
+~
+This forest seems to be less imposing than the rest of the valley, you can
+actually keep track of which way your going. Small animals scurry from
+your path, and the songs of birds fill the air.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1341
+D1
+~
+~
+0 0 1322
+S
+#1341
+Light Forest~
+~
+~
+You continue your search through the valley, weaving your way between trees
+and bushes. Droplets of dew drip in your face as you move some branches so
+you can see where your going. The howl of a wolf echos in the distance.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1342
+D1
+~
+~
+0 0 1318
+D2
+~
+~
+0 0 1340
+S
+#1342
+Light Forest~
+~
+~
+You walk around in the valley's forest, you smell the scent of pine in this
+area. A cool wind blows from the east causing the sweat on your back to
+evaporate making a chill go down your spine. Something about the forest
+seems stange here, you have no word to describe it.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1344
+D1
+~
+~
+0 0 1343
+D2
+~
+~
+0 0 1341
+S
+#1343
+Light Forest~
+~
+~
+Dry twigs snap under your feet as you walk causing small echos in the air.
+Pausing you listen carefully and hear a strange noise that makes the hairs
+on your body stand up. Droplets of sweat gather upon your forehead.
+~
+0 134619136 3
+Rd     0
+D0
+~
+~
+0 0 1345
+D2
+~
+~
+0 0 1318
+D3
+~
+~
+0 0 1342
+S
+#1344
+Rotted Forest~
+~
+~
+You enter a part of the forest which is completly rotten. Once great trees
+are now old dead husks. Leafless bushes are scattered around. Stinking
+mud lines the ground, looking closer you see there are also bones in the
+mud. In the centre of this place is a large hole in the ground, a feeling
+of death comes forth from it, you heart races, you start to panic, what
+should you do?
+~
+0 134619136 3
+Rd     0
+D1
+~
+~
+0 0 1345
+D2
+~
+~
+0 0 1342
+D5
+~
+~
+0 0 1361
+S
+#1345
+Light Forest~
+~
+~
+Walking along you notice that the noises of the forest have stoped, the only
+things you hear is the wind blowing against the leafs. You strain to hear
+anything else, an animal, the running of water but you dont hear anything.
+You get a feeling of dred, you think that there is something out there,
+something horrible.
+~
+0 134619136 3
+Rd     0
+D2
+~
+~
+0 0 1343
+D3
+~
+~
+0 0 1344
+S
+#1346
+Small Pass~
+~
+~
+Standing in this turning point of the pass you admire the height of the
+walls.  Peering as far as you can you can only see where the mountain
+disappears into the clouds.  
+~
+0 134619140 0
+Rd     0
+D1
+~
+~
+0 0 1326
+D2
+~
+~
+0 0 1347
+S
+#1347
+Small Pass~
+~
+~
+As you walk along this pass you notice how the moisture of the mist on the
+ground collects on your boots. A cry of a eagle echos in the distance.
+You wonder what it would be like if the mountain sides decided to collapse
+in on this small path, you shudder.
+~
+0 134619136 5
+Rd     0
+D0
+~
+~
+0 0 1346
+D2
+~
+~
+0 0 1348
+S
+#1348
+Light Forest~
+~
+~
+You stand at the northern part of this small clearing. Small animals move
+about indicating that this part of the clearing is isolated from the
+rest of the valley, otherwise they would be targeted for food. The sounds
+of a small stream come from the south.
+~
+0 134619136 0
+Rd     0
+D0
+~
+~
+0 0 1347
+D1
+~
+~
+0 0 1351
+D2
+~
+~
+0 0 1350
+D3
+~
+~
+0 0 1349
+S
+#1349
+Light Forest~
+~
+~
+You have reached the Northwestern part of this small valley. The trees here
+thinned out a bit so you can see above them. High in the sky you see a thick
+layer of fog or mist that blocks out alot of the sunlight. You wonder how
+the trees manage to grow.
+~
+0 134619136 0
+Rd     0
+D1
+~
+~
+0 0 1348
+D2
+~
+~
+0 0 1352
+S
+#1350
+Small Clearing~
+~
+~
+You stand in a small clearing, trees have been cut away so that a encampment
+could be put here. A tent some supply boxes and a small streem are here.
+You wonder to yourself if the person who lives here is home, and if so
+is he in a good mood?
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 1348
+D1
+~
+~
+0 0 1353
+D2
+~
+~
+0 0 1354
+D3
+~
+~
+0 0 1352
+S
+#1351
+Light Forest~
+~
+~
+Walking along in this small forest, you think to yourself this would be
+a nice place to retired to and maybe when you finnish your adventuring
+you might come back here to spen the rest of your life, that is if you
+make it back out of course. Bringing your attention back to the present
+you realize you better continue moving if you hope to survive.
+~
+0 134619136 0
+Rd     0
+D2
+~
+~
+0 0 1353
+D3
+~
+~
+0 0 1348
+S
+#1352
+Light Forest~
+~
+~
+The trees here thin out and you make your way to the western side of this
+small part of the valley. The mountain side rises high above the forest
+to effectivly make any further passage west impossable. You turn around and
+try to decide which way to go now.
+~
+0 134619136 0
+Rd     0
+D0
+~
+~
+0 0 1349
+D1
+~
+~
+0 0 1350
+D2
+~
+~
+0 0 1356
+S
+#1353
+Light Forest~
+~
+~
+The sounds of birds echo in the distance, looking up to try and see them
+you see only the branches of trees. Your steps make slight sounds as they
+crack small twigs and make small squishes in the moist ground. The wind
+blows softly on your face, making a cooling affect as the sweat of your
+face evaporates.
+~
+0 134619136 0
+Rd     0
+D0
+~
+~
+0 0 1351
+D2
+~
+~
+0 0 1355
+D3
+~
+~
+0 0 1350
+S
+#1354
+Light Forest~
+~
+~
+You have reached the southern part of this small valley, the sides of the
+mountains rise before you to block any further passage to the south.
+Some birds circle above you, waiting for you to die or just out for a daily
+flight you do not know.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1350
+D1
+~
+~
+0 0 1355
+D3
+~
+~
+0 0 1356
+S
+#1355
+Light Forest~
+~
+~
+You make your way through the light forest only to run into the impassable
+rock face of a mountain. you look around trying to decide what direction
+you should take, All directions look the same to you.
+~
+0 134619136 0
+Rd     0
+D0
+~
+~
+0 0 1353
+D1
+As you look upon this fake-wall you notice it can be opened.
+~
+fake-wall~
+3 0 1329
+D3
+~
+~
+0 0 1354
+S
+#1356
+Light Forest~
+~
+~
+You ake your way through this light forest only to run into the impassable
+rock face of a mountain. You look around trying to decide what direction
+you should take, but all directions look the same to you.
+~
+0 134619136 0
+Rd     0
+D0
+~
+~
+0 0 1352
+D1
+~
+~
+0 0 1354
+S
+#1357
+Tunnel~
+~
+~
+You listen to the water slowly drip, drop after drop. Shadows dance from you
+light . A strange noise, like the high piercing sound of a strong wind being
+forced through a small opening catches your ears.
+~
+0 134619136 5
+Rd     0
+D2
+~
+~
+0 0 1358
+D5
+~
+~
+0 0 1337
+S
+#1358
+Tunnel~
+~
+~
+As you walk along in this large tunnel your mind starts to drift to thoughts
+of this size of this mountain you are in and what would happen if the
+mountain decided that it was too heavy for this cave. you turn your thoughts
+back to what you are doing. You almost trip and fall in some sort of hole,
+when you turn to continue you notice that its not just a hole but a very large
+foot print.
+~
+0 134619136 5
+Rd     0
+D0
+~
+~
+0 0 1357
+D5
+~
+~
+0 0 1359
+S
+#1359
+Tunnel~
+~
+~
+In this part of the tunnel you feel some warmth, and the air doesnt seem as
+moist. It appears that some of the wall towards the southern end have been
+soothed off. To the south you see a rather large opening with some light.
+The constant dripping of water that you come to be used to, is not to be heard
+giving you a sense of panic. Things are not as they should be.
+~
+0 134619136 5
+Rd     0
+D2
+~
+~
+0 0 1360
+D4
+~
+~
+0 0 1358
+S
+#1360
+Large Cave~
+~
+~
+You enter a large cave.  Lights in small globes hang in all parts of this
+cave.  You see that there are rather large pieces of furniture set up and
+the foot prints of something very large.  A big club lies in the one corner
+(with some blood stains).  You hear a deep heavy breathing coming from
+behind a corner, then you get to see whats making the breathing when a huge
+titan steps out and glares at you.  As he steps towards you he says... 
+&RWhat are you doing here?!  Imputant mortal, i shall crush you and then use
+your remains as gum!!  &G &YHe grabs his club and starts towards you.  
+~
+0 134619138 5
+Rd     0
+D0
+~
+~
+0 0 1359
+S
+#1361
+Hole~
+~
+~
+You enter a big hole in the ground, you slide many, many feet before comming
+to the bottom. Quickly looking around you are horrified to see bones piled
+on the floor everywhere. The stench of decay fills the air, you quickly
+bend down and start to vomit. Your head aches, and the world spins as
+you feel faint. You feel the cold hand of death upon you, or rather its
+eyes you manage to look up in time to see a thing, a horrible thing rise
+from the ground, its gleaming red eyes trained on you. You feel your chest
+tighten, a dull pulsing pain that quickly turns into a sharp piercing one.
+And the thing advances towards you....
+~
+0 403054594 0
+Rd     50
+D4
+~
+~
+0 0 1344
+S
+#1362
+~
+~
+~
+~
+0 131076 0
+Rd     0
+D0
+~
+~
+0 0 4006
+S
+#0
+
+
+
+#SPECIALS
+M 1301 spec_cast_mage
+M 1302 spec_breath_any
+M 1306 spec_fido
+M 1307 spec_fido
+M 1309 spec_cast_adept
+M 1310 spec_healer
+M 1313 spec_cast_adept
+M 1327 spec_cast_psionicist
+M 1360 spec_cast_adept
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 1325 0 1301
+M 0 1304 1 1304
+M 0 1306 1 1308
+M 0 1306 1 1308
+M 0 1306 1 1308
+M 0 1306 1 1308
+M 0 1306 1 1308
+M 0 1309 1 1311
+E 0 1314 0 12
+E 0 1313 0 17
+E 0 1312 0 20
+M 0 1313 1 1313
+M 0 1307 1 1319
+M 0 1305 1 1324
+G 0 1311 0
+O 0 1327 0 1327
+M 0 1327 1 1327
+G 0 1309 0
+O 0 1316 0 1329
+M 0 1308 1 1330
+O 0 1317 0 1334
+M 0 1310 1 1334
+E 0 1315 0 5
+M 0 1301 1 1350
+G 0 1306 0
+E 0 1308 0 16
+E 0 1310 0 22
+E 0 1319 0 9
+E 0 1319 0 10
+M 0 1360 1 1360
+G 0 1304 0
+G 0 1307 0
+M 0 1302 1 1361
+G 0 1303 0
+G 0 1318 0
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,125 @@
+#AREADATA
+Name        Silver Castle Ruins~
+Builders    Leilya~
+VNUMs       31000 31099
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     Leilya~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMDATA
+#31000
+Before the ruins of the Silver Castle~
+~
+~
+Here stands the ruins of what was once Silver Castle.  The deep moat
+surrounding the keep is green and smelly.  To the east the tower fell to the
+ground while the one to the west seems to be rather well kept.  
+~
+0 4 0
+Rd     0
+D2
+~
+~
+0 0 31001
+S
+#31001
+Upon a rotting drawbridge~
+~
+~
+Here stands what was once a well-made drawbridge.  It is now shaky and
+crumbling.  The murky water swirling under the bridge is unnaturally thick
+and an awful smell of dead and rotting fish drifts from it.  From times to
+times, sounds of small rocks falling into the water can be heard.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31000
+D2
+~
+~
+0 0 31002
+S
+#31002
+Former entrance to the Castle of the Silver Knights~
+~
+~
+All there is left standing here, is a piece of crumbling wall.  The
+Sentry Posts that used to stands on each side of the entrance are now
+nothing more than a heap of crumbling cement and pieces of broken bricks.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31001
+D2
+~
+~
+0 0 31003
+S
+#31003
+A path between the crumbling heaps~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31002
+S
+#31099
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

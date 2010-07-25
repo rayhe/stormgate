@@ -1,0 +1,172 @@
+#AREADATA
+Name        Revelstone~
+Builders    Covenant~
+VNUMs       8851 8999
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Covenant~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMDATA
+#8851
+&BForest Path~
+~
+~
+As you walk through the forest path you begin to wonder where this goes.
+The further you walk it seems this path has been used ocasionally. 
+When you look ahead it just seems more trees and a path are laying ahead. 
+~
+0 6 3
+Rd     0
+D0
+~
+Branches~
+1 0 8852
+S
+#8852
+&BForest Path~
+~
+~
+Walking down the path everything reminds you of other memories of forests. 
+The path tends to get rougher down the way but isn't all that bad compared to other things you probaly have seen before.
+You stop thinking for a bit to concentrate on walking.
+~
+0 3 3
+Rd     0
+D0
+~
+~
+0 0 8853
+D2
+~
+~
+1 0 8851
+S
+#8853
+&BCurve in Path ~
+~
+~
+Along the path it seems that there is more dense forest up ahead, you hear some animal activities but its mostly bird songs you hear.
+The songs of the birds are quite relaxing because its better than talking to your self when you get bored. 
+Still on the path, you hope that you might be able to see something up ahead.
+~
+0 3 3
+Rd     0
+D2
+~
+~
+0 0 8852
+D3
+~
+~
+0 0 8854
+S
+#8854
+&BForest Path~
+~
+~
+Still walking through the forest things seem to change off and on, some how you hope theres gonna be some food or water up ahead.
+The forest it self seems to creep up on you but oh well as long as it doesn't get in your way.
+The sent of the forest is quite strange but what the heck its a forest what else do you exspect.
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 8855
+D1
+~
+~
+0 0 8853
+S
+#8855
+&BForest Path~
+~
+~
+When you start moving on again things still remain the same as you hope it is. Your not quite sure if this path is ever used at all but what the hell nothing seems to bother you as you walk through. You see some thorn bush's but you avoid that area most likely. 
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 8856
+D2
+~
+~
+0 0 8854
+S
+#8856
+&BForest Path~
+~
+~
+Still walking down the path this place seems quite beautful in ways you have never thought of, you just love the life of the forest. Some things are quite odd to you but they look natural so oh well you are too fascinated on whats around you. 
+~
+0 401411 3
+Rd     0
+D0
+~
+~
+0 0 8857
+D2
+~
+~
+0 0 8855
+S
+#8857
+&BForest Path~
+~
+~
+Looking forward among the forest things seem to get quite intense.
+Althought the sun is out its not as hot as you would expect it to be.
+Your hungry alittle but that doesn't bug you at all.
+~
+0 401411 3
+Rd     0
+D2
+~
+~
+0 0 8856
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

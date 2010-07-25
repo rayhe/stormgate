@@ -1,0 +1,2646 @@
+#AREADATA
+Name        { 60-70} Daemonling Lair~
+Builders    Kadence~
+VNUMs       7200 7299
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Kadence~
+Llevel      0
+Ulevel      0
+Sounds      &RThe agonizing screams of men can be heard from all directions.~
+Music       u3_wandr.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#7230
+Lesser Daemon~
+a lesser daemon~
+A lesser daemon is here.
+~
+~
+67 16512 67108912 0 0 -250 S
+75 1 150 150 20000 20000d0+0 0d0+70000
+750 0 0
+0 0 0
+0 0 0
+#7231
+lesser daemon ice~
+the lesser daemon of ice~
+A lesser daemon of ice is here.
+~
+~
+67 134217856 48 0 0 -250 S
+75 1 150 150 20000 20000d0+0 0d0+70000
+750 0 0
+0 0 0
+0 0 0
+>fight_prog 40~
+emote wraps his arms around himself
+sa Lord Winter, aid me in dispursing this being!
+emote jumps back and throws his arms towards you.
+cast 'cone of frost'
+~
+|
+#7233
+lesser daemon lightning~
+The lesser daemon of lightning~
+A lesser daemon of lightning is here.
+~
+~
+67 67108992 48 0 0 -250 S
+75 1 150 150 20000 20000d0+0 0d0+70000
+750 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+sa You have earned your way out.
+emote waves his hands in the air
+mpoload 7280
+emote dies
+~
+>fight_prog 40~
+emote rolls his eyes back into his head
+sa I command you skies to aid me in smiting my enemy!!!
+emote throws his arms out towards you as they spark of lightning
+cast 'thunder strike'
+~
+|
+#7240
+daemonling skeleton~
+Daemonling skeleton~
+A Daemonling skeleton carries itself around.
+~
+~
+8289 40 0 0 0 -500 S
+73 1 146 146 25000 25000d0+0 0d0+0
+730 0 0
+0 0 0
+0 0 0
+#7241
+daemonling skeleton~
+Daemonling skeleton~
+A Daemonling skeleton carries itself around.
+~
+~
+8289 40 0 0 0 -500 S
+73 1 146 146 25000 25000d0+0 0d0+0
+730 0 0
+0 0 0
+0 0 0
+#7242
+daemonling skeleton~
+Daemonling skeleton~
+A Daemonling skeleton carries itself around.
+~
+~
+8289 40 0 0 0 -500 S
+73 1 146 146 25000 25000d0+0 0d0+0
+730 0 0
+0 0 0
+0 0 0
+#7243
+Kazbrine lesser daemon death decay~
+Kazbrine~
+Kazbrine looks up from his work, not pleased to see you.
+~
+~
+67 268959872 67141808 0 2 -750 S
+75 1 150 150 16500 16500d0+0 0d0+75000
+750 0 0
+0 0 1
+256 0 0
+>fight_prog 50~
+c 'dispel magic'
+~
+>fight_prog 35~
+cast 'unholy fires'
+~
+>fight_prog 35~
+cast 'shockwave'
+~
+>fight_prog 15~
+cast 'malignify'
+~
+>fight_prog 30~
+cast icaball
+~
+|
+#7244
+daemonling skeleton~
+Daemonling skeleton~
+A daemonling skeleton carries itself around
+~
+~
+8289 40 16 0 0 -500 S
+73 1 146 146 25000 25000d0+0 0d0+0
+730 0 0
+0 0 0
+0 0 0
+#7250
+Daemonling Child~
+a daemonling child~
+A Daemonling child runs about.
+~
+~
+69 32768 67108880 0 0 -250 S
+65 1 130 130 15000 15000d0+0 0d0+0
+650 0 0
+0 0 1
+0 0 0
+#7251
+Daemonling child~
+a daemonling child~
+A Daemonling child bounces around doing kicks and punches.
+~
+~
+69 32768 67108880 0 0 -250 S
+65 1 130 130 15000 15000d0+0 0d0+0
+650 0 0
+0 0 1
+0 0 0
+#7252
+daemonling child~
+a daemonling child~
+This Daemonling child looks like she is looking for someone important to her.
+~
+~
+69 32768 67108880 0 0 -250 S
+65 1 130 130 15000 15000d0+0 0d0+0
+650 0 0
+0 0 2
+0 0 0
+#7253
+daemonling mother~
+a daemonling mother~
+A Daemonling mother appears to be looking for something or someone.
+~
+~
+69 32768 67108880 0 0 -250 S
+68 1 136 136 18000 18000d0+0 0d0+10000
+680 0 0
+0 0 2
+0 0 0
+#7254
+daemonling father~
+a daemonling father~
+A Daemonling father is looking at you very sternly.
+~
+~
+65 32896 67108880 0 0 -250 S
+70 1 140 140 20000 20000d0+0 0d0+25000
+700 0 0
+0 0 1
+0 0 0
+#7255
+daemonling knight~
+a daemonling knight~
+A Daemonling knight patrols the area.
+~
+~
+65 49344 67108880 0 0 -250 S
+70 1 140 140 20000 20000d0+0 0d0+0
+700 0 0
+0 0 0
+0 0 0
+#7256
+daemonling knight~
+a daemonling knight~
+A Daemonling knight stands fast.
+~
+~
+99 49344 67108880 0 0 -250 S
+70 1 140 140 20000 20000d0+0 0d0+0
+700 0 0
+0 0 0
+0 0 0
+#7257
+daemonling knight~
+a daemonling knight~
+A Daemonling knight patrols the area.
+~
+~
+65 49344 67108880 0 0 -250 S
+70 1 140 140 20000 20000d0+0 0d0+25000
+700 0 0
+0 0 0
+0 0 0
+#7258
+daemonling knight~
+a daemonling knight~
+A Daemonling knight patrols the area.
+~
+~
+65 49344 67108880 0 0 -250 S
+70 1 140 140 20000 20000d0+0 0d0+25000
+700 0 0
+0 0 0
+0 0 0
+#7259
+Malerrisi~
+Malerrisi~
+Malerrisi, the lesser daemon and ruler of the Daemonlings.
+~
+~
+67 33554624 16 133120 0 -1000 S
+75 1 150 150 18000 18000d0+0 0d0+75000
+750 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+sa So $n, you have come to challenge me?
+~
+>rand_prog 5~
+sa Are you going to fight me or not, weakling?
+~
+>fight_prog 35~
+c 'dispel magic'
+~
+>fight_prog 20~
+sa You have brought this upon yourself trying
+sa to defeat my minions and I!!!
+emote chants very quickly
+c 'fireball'
+~
+|
+#7260
+daemonling knight~
+a daemonling knight~
+A Daemonling knight patrols the area.
+~
+~
+65 49344 67108880 0 0 -250 S
+70 1 140 140 20000 20000d0+0 0d0+25000
+700 0 0
+0 0 0
+0 0 0
+#7261
+daemonling knight~
+a daemonling knight~
+A Daemonling knight patrols the area.
+~
+~
+65 49344 67108880 0 0 -250 S
+70 1 140 140 20000 20000d0+0 0d0+25000
+700 0 0
+0 0 0
+0 0 0
+#7262
+daemonling knight~
+a daemonling knight~
+A Daemonling knight patrols the area.
+~
+~
+99 49344 67108880 0 0 -250 S
+70 1 140 140 20000 20000d0+0 0d0+25000
+700 0 0
+0 0 0
+0 0 0
+#7263
+daemonling guardian~
+a daemonling guardian~
+A Daemonling guardian stands guard.
+~
+~
+67 33603776 67108880 0 0 -250 S
+73 1 146 146 23000 23000d0+0 0d0+25000
+730 0 0
+0 0 0
+0 0 0
+>fight_prog 30~
+kick $n
+~
+|
+#7264
+daemonling guardian~
+a daemonling guardian~
+A Daemonling guardian stands guard.
+~
+~
+67 33603776 67108880 0 0 -250 S
+73 1 146 146 23000 23000d0+0 0d0+25000
+730 0 0
+0 0 0
+0 0 0
+>fight_prog 30~
+kick $n
+~
+|
+#7265
+daemonling guardian~
+a daemonling guardian~
+A Daemonling guardian stands guard.
+~
+~
+67 33603776 67108880 0 0 -250 S
+73 1 146 146 23000 23000d0+0 0d0+25000
+730 0 0
+0 0 0
+0 0 0
+>fight_prog 30~
+kick $n
+~
+|
+#7266
+daemonling guardian~
+a daemonling guardian~
+A Daemonling guardian stands guard.
+~
+~
+67 33603776 67108880 0 0 -250 S
+73 1 146 146 23000 23000d0+0 0d0+25000
+730 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+if isgood($n)
+   sa You do not belong here, bringer of good!
+   mpkill $n
+else
+endif
+~
+>fight_prog 5~
+yell AID ME GUARDIANS!!!
+mpmload 7267
+mpforce guard mpkill $n
+~
+>fight_prog 35~
+rake $n
+~
+>fight_prog 25~
+cast 'dancing lights'
+~
+>fight_prog 35~
+slam $n
+~
+|
+#7267
+daemonling guardian~
+a daemonling guardian~
+A Daemonling guardian stands guard.
+~
+~
+67 33603776 67108880 0 0 -250 S
+73 1 146 146 23000 23000d0+0 0d0+25000
+730 0 0
+0 0 0
+0 0 0
+>fight_prog 30~
+kick $n
+~
+|
+#7273
+lesser daemon fire~
+The lesser daemon of fire~
+A lesser daemon of fire is here.
+~
+~
+67 33554560 48 0 0 -250 S
+75 1 150 150 20000 20000d0+0 0d0+70000
+750 0 0
+0 0 0
+0 0 0
+>fight_prog 40~
+emote raises his hands to the sky
+sa I call forth the showers of the sky!
+emote lowers his fists rapidly towards you.
+cast 'meteor swarm'
+~
+|
+#7299
+Tom's Mount named Toby~
+&zToby~
+&zA large panther named, Toby
+~
+~
+1 0 852016 0 9 0 S
+110 1 220 220 0 1d0+0 0d0+0
+1100 15 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#7200
+key~
+a translucent key~
+You barely notice a translucent key that lays here.~
+~
+18 805306402 256 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7201
+key~
+a key~
+A key with a thin coat of ice lays here.~
+~
+18 671088640 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7202
+key~
+a key~
+A key with of fire burns brightly on the ground.~
+~
+18 570425344 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7203
+key~
+a key~
+A key of living lightning sparks on the ground.~
+~
+18 536870912 8192 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7204
+ripple~
+ripple~
+There is a shimmering ripple that seems to enter the back wall of the room.~
+~
+29 0 0 0 0 0 1
+100 100
+7261~ 0~ 0~ 0~
+9000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7250
+Daemon Claw~
+a Daemon Claw~
+A large claw shudders on the ground.~
+~
+5 134234176 8192 0 0 8193 70
+100 100
+0~ 0~ 0~ 5~
+8 120 0
+0 0
+reserved~
+0 0
+7252 0 0
+A
+5 1
+A
+4 -3
+A
+1 1
+A
+19 20
+A
+18 20
+#7251
+Daemon Heart~
+a Daemon Heart~
+A still beating heart lays here pumping it's undying blood.~
+~
+9 33570881 0 0 0 32769 70
+100 100
+0~ 0~ 0~ 0~
+4 160 0
+0 0
+fireball~
+0 0
+0 0 0
+A
+25 50
+A
+3 -1
+A
+19 7
+A
+18 7
+#7252
+cresent Moon Dagger of the Daemonlings~
+cresent Moon Dagger of the Daemonlings~
+A dagger in the shape of a cresent moon lays here shimmering on the ground.~
+~
+5 570425408 8192 0 0 8193 70
+100 100
+0~ 0~ 0~ 11~
+3 1800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 -1
+A
+5 -1
+A
+19 42
+#7253
+Daemonling Claw~
+a Daemonling Claw~
+A small claw lays here.~
+~
+5 33554497 0 0 0 8193 60
+100 100
+0~ 0~ 0~ 5~
+2 100 0
+0 0
+reserved~
+0 0
+7252 0 0
+A
+18 16
+A
+19 16
+A
+12 30
+#7254
+Daemonling Ring~
+ring of the Daemonlings~
+A ring shimmers and shines on the ground.~
+~
+9 0 0 0 0 3 60
+100 100
+0~ 0~ 0~ 0~
+2 160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 6
+A
+19 6
+A
+2 1
+#7255
+Daemonling Pendant~
+pendant of the Daemonlings~
+A pendant sits on the ground.~
+~
+9 0 0 0 0 5 60
+100 100
+0~ 0~ 0~ 0~
+2 160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 7
+A
+12 60
+A
+13 20
+#7256
+Daemonling Ankle Brace~
+daemonling ankle brace~
+A small brace of some sort lays here.~
+~
+9 0 0 0 0 1048577 70
+100 100
+0~ 0~ 0~ 0~
+2 160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 7
+A
+19 7
+A
+2 1
+A
+14 50
+#7257
+mask of ice~
+a mask of ice~
+A mask of ice lays here.~
+~
+9 134217728 0 0 0 65537 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+7259 0 0
+#7258
+mask fire~
+a mask of fire~
+A mask of fire lays here.~
+~
+9 0 0 0 0 65537 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+7259 0 0
+#7259
+melting mask~
+a melting mask~
+A melting mask lays here.~
+~
+9 0 0 0 0 65537 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+7260 0 0
+#7260
+mask elements~
+daemonling mask of the elements~
+A ask of the elements lays here.~
+~
+9 167772160 8192 0 0 65537 70
+100 100
+0~ 0~ 0~ 0~
+3 1800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 -200
+A
+5 2
+A
+3 2
+A
+18 7
+A
+19 7
+#7261
+lightning mask~
+a mask of lightning~
+A ask of lightning lays here.~
+~
+9 0 8192 0 0 65537 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+7260 0 0
+#7280
+portal~
+a portal~
+A portal stands here.~
+~
+29 1 0 0 0 0 0
+100 100
+25002~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7287
+daemonling bracer~
+daemonling Bracer~
+A wrist brace lays here~
+~
+9 201326657 0 0 0 4097 70
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 7
+A
+19 7
+A
+3 2
+A
+4 2
+A
+1 -2
+#7288
+portal Overworld~
+shimmering portal ~
+A portal to the Overworld stands tall before you.~
+~
+29 1 0 0 0 0 0
+100 100
+17460~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7290
+eye gartdith quest item~
+the Eye of Gardith~
+The Eye of Gardith is here, containing the powers of Tyrion and Walius.~
+~
+9 1 0 0 0 131073 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7297
+beer~
+beer~
+Kadence has a beer sitting on his end table.~
+~
+13 134217728 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7298
+endtable~
+end table~
+There is an end table next to Kadence's chair with a large ashtray on it.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7299
+Kadence's Malignance~
+a large chair~
+A large, black leather chair that Kadence sits in~
+~
+12 0 0 0 0 0 108
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#7200
+Inside a cavern~
+~
+~
+You have entered a cavern that has a reddish tint in the walls.  There is
+the entrance to the cavern to the north.  There is a dark path leading to
+the south.  You can hear only two things right now, the wind and the beating
+of your heart.  
+~
+0 262153 0
+Rd     0
+D2
+~
+~
+0 0 7201
+D3
+~
+~
+0 0 17460
+S
+#7201
+A hole in the floor~
+~
+~
+You are in a room with a hole in the floor.  Looking at the hole, you can
+see no bottom.  Should you just go in?  There is no sound now.  One room from
+the entrance and all sound has ceased.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7200
+D5
+~
+~
+0 0 7202
+S
+#7202
+Inside a cavern~
+~
+~
+You are in a cavern with reddish walls.  Looking closer to the walls with
+your light, you see that these walls are hand made.  There is an exit to the
+south and up.  You smell a faint scent of dust.  
+~
+0 262153 0
+Rd     0
+D2
+~
+~
+0 0 7203
+D4
+~
+~
+0 0 7201
+S
+#7203
+A hole in the floor~
+~
+~
+There is a hole in the floor right in front of you.  Dropping a stone
+that is next to you into the hole, you don't hear it hit bottom.  Either
+there is some form of magic preventing the sound or the bottom is so far
+down, the sound never returned.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7202
+D5
+~
+~
+0 0 7204
+S
+#7204
+In a cavern~
+~
+~
+You are in a room where there is a hole above you with a rope leading up
+and an exit to the south.  The walls here are a combination of smoothed out
+rock and what appears to be some sort of glaze over it, making it a deep
+shade of violet.  
+~
+0 262153 0
+Rd     0
+D2
+~
+~
+0 0 7205
+D4
+~
+~
+0 0 7203
+S
+#7205
+A bend in the cavern~
+~
+~
+There is an exit to the north and east of this part of the hallway. 
+There is no way this cavern can be natural by the looks of the walls.  There
+is no sign of flaws either in the creation of these walls.  Whoever made
+this cavern must have been a perfectionist.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7204
+D1
+~
+~
+0 0 7206
+S
+#7206
+A hole in the floor~
+~
+~
+You have reached another hole that leads even further down in these
+caverns.  Looking into it, you can see that off to the east is a bit of
+light but it hard to tell if it is natural or from a flame.  You ask
+yourself whether or not you should continue...  
+~
+0 262153 0
+Rd     0
+D3
+~
+~
+0 0 7205
+D5
+~
+~
+0 0 7207
+S
+#7207
+Inside a cavern~
+~
+~
+You have entered a brilliant violet hallway with exits up and south.  The
+floor seems to be encrusted with violet colored gems the size of a head. 
+Looking around, you try to see if there is anyway to release them and
+realize there isn't.  
+~
+0 262153 0
+Rd     0
+D2
+~
+~
+0 0 7208
+D4
+~
+~
+0 0 7206
+S
+#7208
+Inside a cavern~
+~
+~
+Walking through the shimmering violet carvern, there is no sound, no
+breeze, and no indication of an end.  There is an exit to the north and
+south of this section of the cavern, one leads out, maybe the other one does
+too.  Do you want out?  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7207
+D2
+~
+~
+0 0 7209
+S
+#7209
+Inside a cavern~
+~
+~
+Suddenly there are noises coming from all directions even though there
+appears to only be exits to the north and south.  The noises sound like a
+scurrying of rodents.  There also seems to be a faint smell coming from the
+south...  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7208
+D2
+~
+~
+0 0 7210
+S
+#7210
+A bend in the cavern~
+~
+~
+There is a bend in the violet cavern to the west.  It almost seems you
+are going around in circles.  Where is the exit?  Is it to the west or the
+north from here?  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7209
+D3
+~
+~
+0 0 7211
+S
+#7211
+Inside a cavern~
+~
+~
+The colors of the cavern has changed.  Now the walls and floor are made
+of large gold nuggets.  Who ever built these caverns must not know what
+riches they lie on, either that or are flaunting it.  
+~
+0 262153 0
+Rd     0
+D1
+~
+~
+0 0 7210
+D3
+~
+~
+0 0 7212
+S
+#7212
+A bend in the cavern~
+~
+~
+The golden cavern continues here from the east around a bend to the
+south.  The scurrying that you heard earlier has subsided into a faint
+scratching noise.  You can smell what you think is meat cooking coming from
+somewhere to the south.  
+~
+0 262153 0
+Rd     0
+D1
+~
+~
+0 0 7211
+D2
+~
+~
+0 0 7213
+S
+#7213
+Inside a cavern~
+~
+~
+There are now exits to the north and south of you.  The gold on the walls
+seems to appears tainted and tarnished from what one would assume to be age.
+Maybe the tarnishing has been caused by the aroma of what you now can
+believe to be the smell of roasting meats.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7212
+D2
+~
+~
+0 0 7214
+S
+#7214
+A bend in the cavern~
+~
+~
+The golden walls here are more of a green.  There is an exit to the
+north as well as to the east.  This tarnish does not seem all to natural. 
+Could this gold be poisoned?  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7213
+D1
+~
+~
+0 0 7215
+S
+#7215
+A stairway down~
+~
+~
+There is a hole in the ground.  Besides that, there is also an exit to
+the west.  The walls don't even appear gold anymore.  Maybe it is even
+possible that this gold is poisoned by evil.  Can an evil be that
+destructive?  
+~
+0 262153 0
+Rd     0
+D3
+~
+~
+0 0 7214
+D5
+~
+~
+0 0 7216
+S
+#7216
+Before a village~
+~
+~
+You are in front of a very bright area to your east.  Next to you is a
+large village of what seems to be very small, goblin like creatures. 
+Actually, the remind you more of the mythical daemons that have popped up in
+many late night tavern stories.  
+~
+0 262157 0
+Rd     0
+D1
+~
+~
+0 0 7217
+D4
+~
+~
+0 0 7215
+S
+#7217
+A fork in the road~
+~
+~
+You have entered a bustling town of small daemon like creatures.  They
+are of all shapes and sizes but none taller than about three and a half feet
+tall.  There are exits to the north, south and to the west.  There are
+sounds of laughter as well as arguements coming from each direction and
+smells that make your mouth water.  
+~
+0 262152 0
+Rd     0
+D0
+~
+~
+0 0 7227
+D2
+~
+~
+0 0 7218
+D3
+~
+~
+0 0 7216
+S
+#7218
+A path in the town~
+~
+~
+You are in the south side of town of these daemon like creatures.  They
+don't seem to have noticed you, either that or they are not worried about
+an outsider.  There is an exit to the north and east of you. 
+~
+0 262152 0
+Rd     0
+D0
+~
+~
+0 0 7217
+D1
+~
+~
+0 0 7219
+S
+#7219
+A path in the town~
+~
+~
+You are in front of what appears to be a store.  With exits to the west,
+south and east, there are many options for you to travel.  Finally looking
+around, you see that the ceiling of this area must be about 200 feet over
+you.  
+~
+0 262152 0
+Rd     0
+D1
+~
+~
+0 0 7221
+D2
+~
+~
+0 0 7220
+D3
+~
+~
+0 0 7218
+S
+#7220
+In a room~
+~
+~
+This room is empty.  The dust upon the room seems as if it has not been
+disturbed for a while now.  There is an exit to the north.  
+~
+0 262152 0
+Rd     0
+D0
+~
+~
+0 0 7219
+S
+#7221
+A path in the town~
+~
+~
+There is an exit to the west as well as the east in this alley of
+buildings.  Being nosy, you take a look into the window on the north side of
+the alley and spot something you shouldn't have.  It appears that a couple
+of those daemonling things are making love...  
+~
+0 262152 0
+Rd     0
+D1
+~
+~
+0 0 7222
+D3
+~
+~
+0 0 7219
+S
+#7222
+A path in the town~
+~
+~
+Continuing along the alley way in the southern side of town, there is an
+exit to the west, south and east.  There is a scent of some form of meat
+coming from the south of you.  Is it possible to get some of that?  
+~
+0 262152 0
+Rd     0
+D1
+~
+~
+0 0 7224
+D2
+~
+~
+0 0 7223
+D3
+~
+~
+0 0 7221
+S
+#7223
+In a room~
+~
+~
+This room is empty.  The dust upon the room seems as if it has not been
+disturbed for a while now.  There is an exit to the north.  
+~
+0 262152 0
+Rd     0
+D0
+~
+~
+0 0 7222
+S
+#7224
+A path in the town~
+~
+~
+Peering in through the windows to the north and south of this area of the
+alley, you can't see a thing.  The windows appear to be covered with layers
+of dust.  From here, there is an exit to the west and the east.  
+~
+0 262152 0
+Rd     0
+D1
+~
+~
+0 0 7225
+D3
+~
+~
+0 0 7222
+S
+#7225
+A path in the town~
+~
+~
+It looks like you have come to the end of this alley except for the exits
+to the west and south.  Looking at the open door to the south, it looks like
+there is some sort of writing above the door but you can't make it out.  
+~
+0 262152 0
+Rd     0
+D2
+~
+~
+0 0 7226
+D3
+~
+~
+0 0 7224
+S
+#7226
+In a room~
+~
+~
+This room is empty.  The dust upon the room seems as if it has not been
+disturbed for a while now.  There is an exit to the north.  
+~
+0 262152 0
+Rd     0
+D0
+~
+~
+0 0 7225
+S
+#7227
+A path in the town~
+~
+~
+You have entered the northern part of this daemonling lair.  It seems
+like the road here is extremely worn.  The road leads to the south as well
+as the east where sounds of laughter and cheer echo.  
+~
+0 262152 0
+Rd     0
+D1
+~
+~
+0 0 7228
+D2
+~
+~
+0 0 7217
+S
+#7228
+A path in the town~
+~
+~
+There is a building with it's door open to the north as well as exits to
+the west and east of where you stand.  The sign next to the door to the
+north is not quite clear to you and it doesn't seem like there is much noise
+coming from in there.  
+~
+0 262152 0
+Rd     0
+D0
+~
+~
+0 0 7229
+D1
+~
+~
+0 0 7230
+D3
+~
+~
+0 0 7227
+S
+#7229
+In a room~
+~
+~
+This room is empty.  The dust upon the room seems as if it has not been
+disturbed for a while now.  There is an exit to the south.
+~
+0 262152 0
+Rd     0
+D2
+~
+~
+0 0 7228
+S
+#7230
+A path in the town~
+~
+~
+Travelling along, there are exits to the west and east of this exact
+spot.  There is a large poster on the wall to the south, it has a picture of
+a larger version of the creatures running around in the town.  Trying to
+decipher the language is starting to make your head ache so you decide it is
+best not to try anymore.  
+~
+0 262152 0
+Rd     0
+D1
+~
+~
+0 0 7231
+D3
+~
+~
+0 0 7228
+S
+#7231
+A path in the town~
+~
+~
+There are sounds of cheer and laughter coming from the east.  It sounds
+quite close but you are not sure of whether or not the cheers are of a
+jovial nature or not.  Not knowing anything about this new found race has
+left many questions to be answered.  
+~
+0 262152 0
+Rd     0
+D0
+~
+~
+0 0 7232
+D1
+~
+~
+0 0 7233
+D3
+~
+~
+0 0 7230
+S
+#7232
+In a room~
+~
+~
+This room is empty.  The dust upon the room seems as if it has not been
+disturbed for a while now.  There is an exit to the south.  
+~
+0 262152 0
+Rd     0
+D2
+~
+~
+0 0 7231
+S
+#7233
+A path leading out of town~
+~
+~
+The road here has changed from a gravel path that leads to the west into
+a yellow brick road that leads to the east.  There is a lot of noise coming
+from the east and it is hard to discern what is going on.  Maybe if you get
+closer, you can find out.  
+~
+0 262152 0
+Rd     0
+D1
+~
+~
+0 0 7234
+D3
+~
+~
+0 0 7231
+S
+#7234
+Dark tunnel in the cavern~
+~
+~
+Standing atop a yellow brick road, it leads to the north and the west. 
+The walls on this side of town are a dark, impenatrable, jet black.  Looking
+at it closer, it seems that it is nothing but a void that cannot be
+entered.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7235
+D3
+~
+~
+0 0 7233
+S
+#7235
+Dark tunnel in the cavern~
+~
+~
+There is an exit to both the north and south of where you are standing. 
+The walls bring no comfort by not being able to see in either of the other
+directions.  Not to mention this cavern represents a void, a nothingness,
+death...  
+~
+0 262157 0
+Rd     0
+D0
+~
+~
+0 0 7236
+D2
+~
+~
+0 0 7234
+S
+#7236
+Dark tunnel in the cavern~
+~
+~
+There are exits to the east and south of where you stand.  Looking
+around, the room is a little more ornate than most of the rooms that you
+have seen since you have been in here.  There is, what appears to be,
+paintings on the wall.  
+~
+0 262153 0
+Rd     0
+D1
+~
+~
+0 0 7237
+D2
+~
+~
+0 0 7235
+S
+#7237
+Dark tunnel in the cavern~
+~
+~
+Taking a close look around, the wall to the south seems like what you
+would expect a castle to be made of...  There are exits to the west and
+east.  There are many loud noises coming from all directions, so it is hard
+to tell what is going on let alone where...  
+~
+0 262153 0
+Rd     0
+D1
+~
+~
+0 0 7238
+D3
+~
+~
+0 0 7236
+S
+#7238
+Dark tunnel in the cavern~
+~
+~
+There are exits to the east and west of where you stand.  Looking about
+the room, you see that there is fresh blood in the form of a trail leading
+to the east.  Maybe another traveller was down here and not welcome.  
+~
+0 262153 0
+Rd     0
+D1
+~
+~
+0 0 7239
+D3
+~
+~
+0 0 7237
+S
+#7239
+Dark tunnel in the cavern~
+~
+~
+To the east, west and south there are exits.  There is a blood trail that
+comes from the west and leads to the south, or is it the other way around. 
+On closer inspection, you see that there are many claw prints leading in
+every direction.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+579 0 7272
+D1
+~
+~
+0 0 7240
+D2
+~
+~
+0 0 7242
+D3
+~
+~
+0 0 7238
+S
+#7240
+Dark tunnel in the cavern~
+~
+~
+The room you have entered can best be described as eerie.  Every sound you
+hear seems to come from thousands of feet away and echos louder where you
+stand.  You can see that there are exits to the east and west.  
+~
+0 262153 0
+Rd     0
+D1
+~
+~
+0 0 7241
+D3
+~
+~
+0 0 7239
+S
+#7241
+Dark tunnel in the cavern~
+~
+~
+This is a dead end.  The only exit is to the west.  If you want to
+continue through the tunnels, there is only one way for you to go.  
+~
+0 262153 0
+Rd     0
+D3
+~
+~
+0 0 7240
+S
+#7242
+Decorated cavern~
+~
+~
+Looking around, the room you stand in is unlike any other room you have
+been in yet in this cavern.  The walls are decorated with jewels and
+paintings that one would assume a rich man would own.  There are exits to
+the north, east, and south.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7239
+D1
+~
+~
+0 0 7243
+D2
+~
+~
+0 0 7244
+S
+#7243
+Lots of small bunks~
+~
+~
+There is nothing but a lot of 4 foot long beds in this room.  At a
+glance, you would have to guess that there are about 10 of them.  What would
+they be doing just east of such a decorated hallway?  The only exit is to
+the west.  
+~
+0 262153 0
+Rd     0
+D3
+~
+~
+0 0 7242
+S
+#7244
+Decorated cavern~
+~
+~
+There are exits to the north, west and south of where you stand.  On the
+wall to the east, there is a painting of what looks like a lot of small
+demon like creatures dancing around a large fire.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7242
+D2
+~
+~
+0 0 7246
+D3
+~
+~
+0 0 7245
+S
+#7245
+Lots of small bunks~
+~
+~
+There are about 15 bunks sitting around the room.  Most of them unmade. 
+Whoever lives in here is quite the slob.  There is an exit to the east and
+there are foot prints marked in blood leading from the door the nearest bunk
+where the marks stop.  
+~
+0 262157 0
+Rd     0
+D1
+~
+~
+0 0 7244
+S
+#7246
+Decorated cavern~
+~
+~
+Looking around the room, there are exits to the north and south.  You can
+hear the scurrying of tiny feet all around you.  The stench of the air grows
+the deeper you go into the caverns even though this castle shimmers with
+gold.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7244
+D2
+~
+~
+0 0 7247
+S
+#7247
+Decorated cavern~
+~
+~
+You are in a cavern decorated with gold, silver, platinum and jewels of
+all colors.  There are exits to the north, west and south.  By the looks of
+it, there is a trail of foot prints that lead to and from the west.  
+~
+0 262153 0
+Rd     0
+D0
+~
+~
+0 0 7246
+D2
+~
+~
+0 0 7249
+D3
+~
+~
+0 0 7248
+S
+#7248
+A lot of bunks~
+~
+~
+You are in a room full of bunks.  There is an exit to the east of where
+you stand.  Looking at these beds, you would say at least 10 or 20 of these
+small creatures could sleep here at one time.  
+~
+0 262153 0
+Rd     0
+D1
+~
+~
+0 0 7247
+S
+#7249
+Decorated cavern~
+~
+~
+You see that there are exits to the north, east, and south of where you
+stand.  The room that you are currently in is colorful, yet has an odour of
+what can only be described as death.  Glancing at the ceiling, you see some
+sort of weird etching.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 7247
+D1
+~
+~
+0 0 7250
+D2
+~
+~
+0 0 7251
+S
+#7250
+An empty room~
+~
+~
+You have entered a room that seems completely barren.  The only exit is
+where you came from, to the west.  For some reason unknown to you, this room
+does not make a sound.  
+~
+0 262153 0
+Rd     0
+D3
+~
+~
+0 0 7249
+S
+#7251
+Just before a hallway~
+~
+~
+You have entered yet another well decorated room.  There is an exit to
+the south as well as to the north.  To the south seems to be an area that
+opens right up into a glamourous hallway.  
+~
+0 262157 0
+Rd     0
+D0
+~
+~
+0 0 7249
+D2
+~
+~
+0 0 7252
+S
+#7252
+Inside a glamourous hallway~
+~
+~
+You have entered a room with a giant painting on the western wall.  To
+the north and south are exits.  The painting is of a large daemon and the
+word or possibly name, Malerrisi is written below it.  
+~
+0 393225 0
+Rd     0
+D0
+~
+~
+0 0 7251
+D2
+~
+~
+0 0 7253
+S
+#7253
+Inside a glamourous hallway~
+~
+~
+You have entered a large portion of a hallway.  There are exits to the
+north, east, south, and west.  From both the east and west, you hear a
+clatter of armor.  
+~
+0 393225 0
+Rd     0
+D0
+~
+~
+0 0 7252
+D1
+~
+~
+0 0 7255
+D2
+~
+~
+0 0 7256
+D3
+~
+~
+0 0 7254
+S
+#7254
+A guard's quarters~
+~
+~
+You have entered a very large room.  The only exit out is to the east. 
+Also, there are guards here, not very tall ones but they seem pretty fierce.
+They may not match you in size but their numbers could be overwhelming.  
+~
+0 393225 0
+Rd     0
+D1
+~
+~
+0 0 7253
+S
+#7255
+A guard's quarters~
+~
+~
+You have entered a very large room.  The only exit out is to the west. 
+Also, there are guards here, not very tall ones but they seem pretty fierce.
+They may not match you in size but their numbers could be overwhelming.  
+~
+0 393225 0
+Rd     0
+D3
+~
+~
+0 0 7253
+S
+#7256
+Inside a glamourous hallway~
+~
+~
+You are in a very large hallway.  To the north, east, south, and west,
+there are exits.  Looking up at the ceiling, there is what looks like a very
+large pentagram engraved in it.  
+~
+0 393225 0
+Rd     0
+D0
+~
+~
+0 0 7253
+D1
+~
+~
+0 0 7258
+D2
+~
+~
+0 0 7259
+D3
+~
+~
+0 0 7257
+S
+#7257
+A guard's quarters~
+~
+~
+You have entered a very large room.  The only exit out is to the east. 
+Also, there are guards here, not very tall ones but they seem pretty fierce.
+They may not match you in size but their numbers could be overwhelming.  
+~
+0 393225 0
+Rd     0
+D1
+~
+~
+0 0 7256
+S
+#7258
+A guard's quarters~
+~
+~
+You have entered a very large room.  The only exit out is to the west. 
+Also, there are guards here, not very tall ones but they seem pretty fierce.
+They may not match you in size but their numbers could be overwhelming.  
+~
+0 393225 0
+Rd     0
+D3
+~
+~
+0 0 7256
+S
+#7259
+Malerrisi's Chamber~
+~
+~
+You have entered a very large room that is made up of insignias of what
+can only be considered evil.  There are pentagrams and inverted crucifixes
+everywhere you look.  A religious man would cringe at the sight of this evil
+if not decide that the thing responsible for it must be destroyed.  With
+only an exit to the north and a closed door to the south, there are only two
+ways out, fleeing like a dog to the north or making your way through what
+appears to be Malerrisi.  
+~
+0 4325385 0
+Rd     0
+D0
+~
+~
+0 0 7256
+D2
+~
+~
+39 7200 7260
+S
+#7260
+Behind Malerrisi's Chamber~
+~
+~
+This room swirls into the ripple before you.  There is only the door to
+the north as an alternate exit.  Do you take your chances entering the
+ripple or back to the north?  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+39 7200 7259
+S
+#7261
+Halls of the High Council~
+~
+~
+You have entered the Halls of the Daemonling High Council.  There is an
+exit to the west of where you are currently standing.  Looking around, you
+see no sign of the ripple that you used to enter this area.  
+~
+0 393225 0
+Rd     0
+D3
+~
+~
+0 0 7262
+S
+#7262
+Halls of the High Council~
+~
+~
+You are in a hallway in the Hall of the High Council.  There is a door to
+the north of you, and exits to the east and west.  Looking at the door to
+the north, there is a weird symbol that you cannot identify from your own
+knowledge.  
+~
+0 393225 0
+Rd     0
+D0
+~
+~
+39 7203 7263
+D1
+~
+~
+0 0 7261
+D3
+~
+~
+0 0 7264
+S
+#7263
+Chamber of the Lesser Daemon of Lightning~
+~
+~
+You are in a room that appears to be made of nothing but lightning. 
+Amazingly, the lightning that you walk upon does not seem to be painful at
+all.  The only way out of this room appears to be to the southern door.  
+~
+0 393225 0
+Rd     0
+D2
+~
+~
+39 7203 7262
+S
+#7264
+Halls of the High Council~
+~
+~
+You are in a very large hallway.  The only exits that you can see are the
+ones to the east and west.  Looking around, you see nothing special about
+the area that you are in at all.  
+~
+0 393225 0
+Rd     0
+D1
+~
+~
+0 0 7262
+D3
+~
+~
+0 0 7265
+S
+#7265
+Halls of the High Council~
+~
+~
+You are in a hallway in the Hall of the High Council.  There is a door to
+the south of you, and exits to the east and west.  Looking at the door to
+the south, there is a weird symbol that you cannot identify from your own
+knowledge.  
+~
+0 393225 0
+Rd     0
+D1
+~
+~
+0 0 7264
+D2
+~
+~
+39 7201 7266
+D3
+~
+~
+0 0 7267
+S
+#7266
+Chamber of the Lesser Daemon of Ice~
+~
+~
+This room is made up completely of ice.  Walking in this room, you feel
+no cold and you notice that you do not slip.  Either there is a magical
+force at work here or the gods are protecting you...  
+~
+0 393225 0
+Rd     0
+D0
+~
+~
+39 7201 7265
+S
+#7267
+Halls of the High Council~
+~
+~
+You are in a very large hallway.  The only exits that you can see are the
+ones to the east and west.  Looking around, you see nothing special about
+the area that you are in at all.  
+~
+0 393225 0
+Rd     0
+D1
+~
+~
+0 0 7265
+D3
+~
+~
+0 0 7268
+S
+#7268
+Halls of the High Council~
+~
+~
+You are in a hallway in the Hall of the High Council.  There is a door to
+the north of you, and exits to the east and west.  Looking at the door to
+the north, there is a weird symbol that you cannot identify from your own
+knowledge.  
+~
+0 393225 0
+Rd     0
+D0
+~
+~
+3 7202 7269
+D1
+~
+~
+0 0 7267
+D3
+~
+~
+0 0 7270
+S
+#7269
+Chamber of a Lesser Daemon~
+~
+~
+You are in a room that has no significant markings or anything that would
+strike you as interesting.  The only thing important about this room is the
+occupant, a very large Daemon.  The only way out of this room is the door to
+the south.  
+~
+0 393225 0
+Rd     0
+D2
+~
+~
+3 7202 7268
+S
+#7270
+Halls of the High Council~
+~
+~
+You have reached the end of the hallway.  There is an exit to the east
+and a closed door to the west.  The door to the west has a symbol that you
+are not quite sure of from your own knowledge.  
+~
+0 393225 0
+Rd     0
+D1
+~
+~
+0 0 7268
+D3
+~
+~
+39 7202 7271
+S
+#7271
+Chamber of the Lesser Daemon of Fire~
+~
+~
+There are flames jumping all around you.  Oddly, these flames are not
+bothering you at all, you do not feel any heat from them or fall into them
+since you walk upon them.  There is a door to the east.  
+~
+0 393225 0
+Rd     0
+D1
+~
+~
+39 0 7270
+D3
+~
+~
+0 7202 0
+S
+#7272
+Hidden passage~
+~
+~
+You have entered a secret passage in the wall.  There is an exit to the
+north.  Looking around, there is nothing to catch your eye right away. 
+There does seem to be the sound of very heavy breathing echoing in the area.
+~
+0 134610958 0
+Rd     0
+D0
+~
+~
+0 0 7273
+D2
+~
+wall~
+579 0 7239
+S
+#7273
+Hidden passage~
+~
+~
+You have entered a room where the walls, ceiling and ground are all of a
+gravel like substance.  There is an exit to the west, east, and south of
+you.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 7279
+D2
+~
+~
+0 0 7272
+D3
+~
+~
+0 0 7274
+S
+#7274
+Hidden passage~
+~
+~
+You follow the path of the hidden passage.  The walls are a gravel type
+of substance that looks like it is ready to crumble.  There is an exit to
+the north and east of where you stand.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 7275
+D1
+~
+~
+0 0 7273
+S
+#7275
+Hidden passage~
+~
+~
+To the north and south are exits in this passage.  The gravel substance
+that the passage is made up of seems to be building up on in piles from age
+and decay.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 7276
+D2
+~
+~
+0 0 7274
+S
+#7276
+Hidden passage~
+~
+~
+There are large piles of loose gravel sitting about the area.  With every
+step you take, there is dust that falls from the ceiling, making the air a
+touch thick.  There is an exit to the north and south.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 7277
+D2
+~
+~
+0 0 7275
+S
+#7277
+Hidden passage~
+~
+~
+This area of the passage looks like it has been well taken care of.  The
+gravel that the passage seems to be carved out of seems to almost be
+reinforced but an unknown substance.  There is an exit to the east as well
+as south of you.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 7278
+D2
+~
+~
+0 0 7276
+S
+#7278
+Hidden passage~
+~
+~
+Where you stand, there is very little gravel left as support for the
+walls.  What seems to be used now looks like black onyx.  Glancing about,
+you realize that the only exits are to the east and west.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 7282
+D3
+~
+~
+0 0 7277
+S
+#7279
+Hidden passage~
+~
+~
+Where you stand, there is very little gravel left as support for the
+walls.  What seems to be used now looks like black onyx.  Glancing about,
+you realize that the only exits are to the north and west.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 7280
+D3
+~
+~
+0 0 7273
+S
+#7280
+Hidden passage~
+~
+~
+Walking along, your footsteps seem to echo in the room.  The walls look
+as if they shimmer with every movement you make.  Your opportunities for
+exiting this room are to the north and south.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 7281
+D2
+~
+~
+0 0 7279
+S
+#7281
+Hidden passage~
+~
+~
+The black onyx of the walls appear to reflect your appearance.  Whether
+this is possible or not of this material, you are unsure of.  All you know
+is that there is an exit to the north and south of where you are.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 7282
+D2
+~
+~
+0 0 7280
+S
+#7282
+Hidden passage~
+~
+~
+The black onyx of the room shines a deep green in a few places.  It
+appears that the onyx may be mixed with some jade.  There is an exit to the
+west, east, as well as south of here.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 7283
+D2
+~
+~
+0 0 7281
+D3
+~
+~
+0 0 7278
+S
+#7283
+Hidden passage~
+~
+~
+You are in a passage of jade right now.  The change from the onyx walls
+to the jade is done so well that it is hardly noticable besides the color. 
+The exits that await you are to the west and east.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 7284
+D3
+~
+~
+0 0 7282
+S
+#7284
+Hidden passage~
+~
+~
+There are exits to the east and west of here.  Looking about, there are
+signs of recent work done on the jade walls.  It is hard to tell if the work
+was a polishing or of any other sort of work...  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 7285
+D3
+~
+~
+0 0 7283
+S
+#7285
+Hidden passage~
+~
+~
+It appears that the hall has gotten very thin suddenly.  The jade of the
+walls cannot mask the difference in space that was available in the last
+room compared to this one.  There is an exit to the east as well as west of
+here.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 7286
+D3
+~
+~
+0 0 7284
+S
+#7286
+Hidden passage~
+~
+~
+The jade passage has come to an end.  All that is here is an old
+wooden board that is laying on the floor.  Stepping on it, you feel it is
+about to give way.  There must be a passage or hole of some sort underneath
+it.  Besides that, there is an exit to the west.  
+~
+0 393230 0
+Rd     0
+D3
+~
+~
+0 0 7285
+D5
+~
+wood~
+67 0 7287
+S
+#7287
+Hidden passage~
+~
+~
+You are in the chambers of Kazbrine, the lesser daemon of Death and
+Decay.  All about his chambers are pieces of bone and flesh that appears to
+have been sitting here for years on end.  
+~
+0 393226 0
+Rd     0
+D4
+~
+~
+67 0 7286
+S
+#7299
+Kadence's room of solitude~
+~
+~
+Here is where Kadence sits back to reflect on life.  What has happened,
+what can happen and what will never happen.  You notice that there is a
+small fridge in the corner that is ALWAYS stocked with beer and fresh
+cigarettes.  Looking around, you see that there is a garbage that is
+overflowing with old cigarette butts and beer bottle caps.  In the dim
+light, you try to see if you can make out Kadence in the room.  
+~
+0 2098188 0
+Rd     0
+D5
+~
+~
+0 0 25002
+S
+#0
+
+
+
+#SPECIALS
+M 7243 spec_cast_undead
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 7252 3 7217
+M 0 7251 3 7219
+M 0 7253 2 7222
+M 0 7254 2 7230
+M 0 7250 3 7231
+M 0 7255 1 7239
+E 0 7254 0 2
+E 0 7255 0 3
+E 0 7253 0 20
+M 0 7257 1 7239
+E 0 7254 0 2
+E 0 7255 0 3
+E 0 7253 0 20
+M 0 7258 1 7239
+E 0 7254 0 2
+E 0 7255 0 3
+E 0 7253 0 20
+M 0 7260 1 7239
+E 0 7254 0 2
+E 0 7255 0 3
+E 0 7253 0 20
+M 0 7261 1 7239
+E 0 7254 0 2
+E 0 7255 0 3
+E 0 7253 0 20
+M 0 7256 1 7251
+E 0 7254 0 2
+E 0 7255 0 3
+E 0 7253 0 20
+M 0 7262 1 7251
+E 0 7254 0 2
+E 0 7255 0 3
+E 0 7253 0 20
+M 0 7263 1 7254
+E 0 7253 0 20
+E 0 7256 0 26
+M 0 7264 1 7255
+E 0 7253 0 20
+E 0 7256 0 26
+M 0 7266 1 7256
+E 0 7253 0 20
+E 0 7256 0 26
+M 0 7265 1 7257
+E 0 7253 0 20
+E 0 7256 0 26
+M 0 7259 1 7259
+G 0 7200 0
+E 0 7250 0 20
+E 0 7251 0 10
+O 0 7204 0 7260
+O 0 7200 0 7260
+O 0 7203 0 7263
+M 0 7233 1 7263
+E 0 7261 0 8
+O 0 7201 0 7266
+M 0 7231 1 7266
+G 0 7202 0
+E 0 7257 0 8
+M 0 7230 1 7269
+G 0 7201 0
+M 0 7273 1 7271
+G 0 7203 0
+E 0 7258 0 8
+O 0 7202 0 7271
+M 0 7240 2 7275
+M 0 7241 2 7281
+M 0 7242 2 7283
+M 0 7243 1 7287
+E 0 7254 0 1
+E 0 7255 0 3
+E 0 7256 0 26
+E 0 7250 0 20
+E 0 7251 0 9
+E 0 7287 0 19
+O 0 7297 0 7299
+O 0 7298 0 7299
+O 0 7299 0 7299
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

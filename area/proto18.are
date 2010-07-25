@@ -1,0 +1,2263 @@
+#AREADATA
+Name        New area~
+Builders    Khaos~
+VNUMs       21601 21700
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Khaos~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#21601
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#21601
+The marsh~
+~
+~
+The water is thick and muggy as mist floats only a few feet above it;
+bugs of all sorts skim across the water as ugly fish break the surface to
+feed.  You hear a splash and watch as an alligator makes his way towards
+some drift wood, only to dive into the murky depths and disappear without a
+sound.  Pushing weeds and grass out of your way, staring hard into the black
+liquid, you wonder if it's worth crossing.  
+~
+0 393730 6
+Rd     0
+D0
+~
+~
+0 0 21602
+D3
+~
+~
+0 0 21616
+S
+#21602
+The marsh~
+~
+~
+The thickness starts to fade, the blackness begins to clear, the weeds
+start to thin and the bugs are just as bad as before.  Two crocodiles swim
+by, watching you with their small eyeballs, before diving into the muddy
+depths below; eels slither atop the surface, like sidewinders in the desert;
+snakes hang and slither from one dead tree to another, constantly looking
+for a snack.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21603
+D2
+~
+~
+0 0 21601
+D3
+~
+~
+0 0 21615
+S
+#21603
+The marsh~
+~
+~
+Standing in the mist, stiff as a board your skin begins to crawl as a
+snake like creature wiggles its way through the water at lightning speed. 
+On the shore, a rather large alligator sits by its nest, guarding the young
+ones; a snake slowly lowers itself closer and closer to the young
+alligators, ready to strike; a splash in the distant startles you, as you
+stand there motionless-a snap from the alligator was all that was needed to
+put an end to the snake.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21604
+D2
+~
+~
+0 0 21602
+D3
+~
+~
+0 0 21614
+S
+#21604
+The marsh~
+~
+~
+Each step now requires more strength as the mud grabs and creates a
+suction cup around your foot.  Bugs become thicker as fish leap for their
+dinner-a crocodile snags one out of mid air and starts to chomp away,
+grinding the flesh from the bones, then swallowing whole.  An alligator
+wiggles its way around some old logs, watching you closely, making sure you
+don't make any sudden moves.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21605
+D2
+~
+~
+0 0 21603
+D3
+~
+~
+0 0 21613
+S
+#21605
+The marsh~
+~
+~
+You begin to realize that at one point in time, this was a lucious
+forest, blooming with life: oversized trees, flowers, thick grass, small
+shrubs, mushrooms, and home to many different animals; that was before the
+flood.  Standing in the midst of many dead trees, you watch as snakes slide,
+crawl, drop, and slither from tree to tree.  Watching closely, a large snake
+drops down with ever so suprise, that the young alligator didn't even see
+death coming.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21606
+D2
+~
+~
+0 0 21604
+D3
+~
+~
+0 0 21612
+S
+#21606
+The marsh~
+~
+~
+The mist is getting thicker and thicker, as you march on.  You take more
+time to look around, check the water and make sure nothing is going to come
+as a surprise.  Standing, waiting, listening, you move on, slowly wading
+wateru p to your waist now.  Passing a tree, you reach up and snap a branch
+off, to help you find solid ground under the waters surface.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21607
+D2
+~
+~
+0 0 21605
+D3
+~
+~
+0 0 21617
+S
+#21607
+The marsh~
+~
+~
+Probing the ground, making sure there is no sudden drop off, you find
+some where the water is only ankle deep.  Jogging now, sloshing like a mad
+man, you stop, duck, and scramble for the nearest tree.  Peering around, a
+large beast is slowly walking by; looking on the other side of the tree, it
+looks as if the beast is walking on water.  Blinking a couple times to get a
+clearer picture, you do not believe your eyes...  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21608
+D2
+~
+~
+0 0 21606
+D3
+~
+~
+0 0 21611
+S
+#21608
+The marsh~
+~
+~
+Running now, swinging your head from left to right, desperately looking
+for a way out of here, you trip, and go face first into the shallow water,
+swallowing a mouth full of mud.  Standing, you wipe yourself down, and spit
+a few times to remove the nasty, gritty feel from your mouth; grabbing your
+jug of water, you swish your mouth out, spit, and continue on.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21609
+D2
+~
+~
+0 0 21607
+D3
+~
+~
+0 0 21610
+S
+#21609
+The marsh~
+~
+~
+The water turns into mud, then into solid ground; the mist starts to lift
+and fade away; the trees start to thin; grass covers the ground at your feet
+and you can make out a small town to the north.  You sit and rest after the
+long adventure through that swamp, never wanting to return. 
+~
+0 393218 6
+Rd     0
+D2
+~
+~
+0 0 21608
+D3
+~
+~
+0 0 21618
+S
+#21610
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21618
+D1
+~
+~
+0 0 21608
+D2
+~
+~
+0 0 21611
+D3
+~
+~
+0 0 21626
+S
+#21611
+The marsh~
+~
+~
+Probing the ground, making sure there is no sudden drop off, you find
+some where the water is only ankle deep.  Jogging now, sloshing like a mad
+man, you stop, duck, and scramble for the nearest tree.  Peering around, a
+large beast is slowly walking by; looking on the other side of the tree, it
+looks as if the beast is walking on water.  Blinking a couple times to get a
+clearer picture, you do not believe your eyes...  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21610
+D1
+~
+~
+0 0 21607
+D2
+~
+~
+0 0 21617
+D3
+~
+~
+0 0 21625
+S
+#21612
+The marsh~
+~
+~
+Probing the ground, making sure there is no sudden drop off, you find
+some where the water is only ankle deep.  Jogging now, sloshing like a mad
+man, you stop, duck, and scramble for the nearest tree.  Peering around, a
+large beast is slowly walking by; looking on the other side of the tree, it
+looks as if the beast is walking on water.  Blinking a couple times to get a
+clearer picture, you do not believe your eyes.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21617
+D1
+~
+~
+0 0 21605
+D2
+~
+~
+0 0 21613
+D3
+~
+~
+0 0 21623
+S
+#21613
+The marsh~
+~
+~
+You begin to realize that at one point in time, this was a lucious
+forest, blooming with life: oversized trees, flowers, thick grass, small
+shrubs, mushrooms, and home to many different animals; that was before the
+flood.  Standing in the midst of many dead trees, you watch as snakes slide,
+crawl, drop, and slither from tree to tree.  Watching closely, a large snake
+drops down with ever so suprise, that the young alligator didn't even see
+death coming.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21612
+D1
+~
+~
+0 0 21604
+D2
+~
+~
+0 0 21614
+D3
+~
+~
+0 0 21622
+S
+#21614
+The marsh~
+~
+~
+Each step now requires more strength as the mud grabs and creates a
+suction cup around your foot.  Bugs become thicker as fish leap for their
+dinner-a crocodile snags one out of mid air and starts to chomp away,
+grinding the flesh from the bones, then swallowing whole.  An alligator
+wiggles its way around some old logs, watching you closely, making sure you
+don't make any sudden moves.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21613
+D1
+~
+~
+0 0 21603
+D2
+~
+~
+0 0 21615
+D3
+~
+~
+0 0 21621
+S
+#21615
+The marsh~
+~
+~
+Standing in the mist, stiff as a board your skin begins to crawl as a
+snake like creature wiggles its way through the water at lightning speed. 
+On the shore, a rather large alligator sits by its nest, guarding the young
+ones; a snake slowly lowers itself closer and closer to the young
+alligators, ready to strike; a splash in the distant startles you, as you
+stand there motionless-a snap from the alligator was all that was needed to
+put an end to the snake.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21614
+D1
+~
+~
+0 0 21602
+D2
+~
+~
+0 0 21616
+D3
+~
+~
+0 0 21620
+S
+#21616
+The marsh~
+~
+~
+The thickness starts to fade, the blackness begins to clear, the weeds
+start to thin and the bugs are just as bad as before.  Two crocodiles swim
+by, watching you with their small eyeballs, before diving into the muddy
+depths below; eels slither atop the surface, like sidewinders in the desert;
+snakes hang and slither from one dead tree to another, constantly looking
+for a snack.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21615
+D1
+~
+~
+0 0 21601
+D3
+~
+~
+0 0 21619
+S
+#21617
+The marsh~
+~
+~
+The mist is getting thicker and thicker, as you march on.  You take more
+time to look around, check the water and make sure nothing is going to come
+as a surprise.  Standing, waiting, listening, you move on, slowly wading
+water up to your waist now.  Passing a tree, you reach up and snap a branch
+off to help you find solid ground under the waters surface.  
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21611
+D1
+~
+~
+0 0 21606
+D2
+~
+~
+0 0 21612
+D3
+~
+~
+0 0 21624
+S
+#21618
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D1
+~
+~
+0 0 21609
+D2
+~
+~
+0 0 21610
+D3
+~
+~
+0 0 21627
+S
+#21619
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21620
+D1
+~
+~
+0 0 21616
+D3
+~
+~
+0 0 21628
+S
+#21620
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21621
+D1
+~
+~
+0 0 21615
+D2
+~
+~
+0 0 21619
+D3
+~
+~
+0 0 21629
+S
+#21621
+The marsh~
+~
+~
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 21622
+D1
+~
+~
+0 0 21614
+D2
+~
+~
+0 0 21620
+D3
+~
+~
+0 0 21630
+S
+#21622
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21623
+D1
+~
+~
+0 0 21613
+D2
+~
+~
+0 0 21621
+D3
+~
+~
+0 0 21631
+S
+#21623
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21624
+D1
+~
+~
+0 0 21612
+D2
+~
+~
+0 0 21622
+D3
+~
+~
+0 0 21632
+S
+#21624
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21625
+D1
+~
+~
+0 0 21617
+D2
+~
+~
+0 0 21623
+D3
+~
+~
+0 0 21633
+S
+#21625
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21626
+D1
+~
+~
+0 0 21611
+D2
+~
+~
+0 0 21624
+D3
+~
+~
+0 0 21634
+S
+#21626
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21627
+D1
+~
+~
+0 0 21610
+D2
+~
+~
+0 0 21625
+D3
+~
+~
+0 0 21635
+S
+#21627
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D1
+~
+~
+0 0 21618
+D2
+~
+~
+0 0 21626
+D3
+~
+~
+0 0 21636
+S
+#21628
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21629
+D1
+~
+~
+0 0 21619
+D3
+~
+~
+0 0 21637
+S
+#21629
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21630
+D1
+~
+~
+0 0 21620
+D2
+~
+~
+0 0 21628
+D3
+~
+~
+0 0 21638
+S
+#21630
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21631
+D1
+~
+~
+0 0 21621
+D2
+~
+~
+0 0 21629
+D3
+~
+~
+0 0 21639
+S
+#21631
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21632
+D1
+~
+~
+0 0 21622
+D2
+~
+~
+0 0 21630
+D3
+~
+~
+0 0 21640
+S
+#21632
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21633
+D1
+~
+~
+0 0 21623
+D2
+~
+~
+0 0 21631
+D3
+~
+~
+0 0 21641
+S
+#21633
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21634
+D1
+~
+~
+0 0 21624
+D2
+~
+~
+0 0 21632
+D3
+~
+~
+0 0 21642
+S
+#21634
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21635
+D1
+~
+~
+0 0 21625
+D2
+~
+~
+0 0 21633
+D3
+~
+~
+0 0 21643
+S
+#21635
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21636
+D1
+~
+~
+0 0 21626
+D2
+~
+~
+0 0 21634
+D3
+~
+~
+0 0 21644
+S
+#21636
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D1
+~
+~
+0 0 21627
+D2
+~
+~
+0 0 21635
+D3
+~
+~
+0 0 21645
+S
+#21637
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21638
+D1
+~
+~
+0 0 21628
+D3
+~
+~
+0 0 21646
+S
+#21638
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21639
+D1
+~
+~
+0 0 21629
+D2
+~
+~
+0 0 21637
+D3
+~
+~
+0 0 21647
+S
+#21639
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21640
+D1
+~
+~
+0 0 21630
+D2
+~
+~
+0 0 21638
+D3
+~
+~
+0 0 21648
+S
+#21640
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21641
+D1
+~
+~
+0 0 21631
+D2
+~
+~
+0 0 21639
+D3
+~
+~
+0 0 21649
+S
+#21641
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21642
+D1
+~
+~
+0 0 21632
+D2
+~
+~
+0 0 21640
+D3
+~
+~
+0 0 21650
+S
+#21642
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21643
+D1
+~
+~
+0 0 21633
+D2
+~
+~
+0 0 21641
+D3
+~
+~
+0 0 21651
+S
+#21643
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21644
+D1
+~
+~
+0 0 21634
+D2
+~
+~
+0 0 21642
+D3
+~
+~
+0 0 21652
+S
+#21644
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21645
+D1
+~
+~
+0 0 21635
+D2
+~
+~
+0 0 21643
+D3
+~
+~
+0 0 21653
+S
+#21645
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21682
+D1
+~
+~
+0 0 21636
+D2
+~
+~
+0 0 21644
+D3
+~
+~
+0 0 21654
+S
+#21646
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21647
+D1
+~
+~
+0 0 21637
+D3
+~
+~
+0 0 21655
+S
+#21647
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21648
+D1
+~
+~
+0 0 21638
+D2
+~
+~
+0 0 21646
+D3
+~
+~
+0 0 21656
+S
+#21648
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21649
+D1
+~
+~
+0 0 21639
+D2
+~
+~
+0 0 21647
+D3
+~
+~
+0 0 21657
+S
+#21649
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21650
+D1
+~
+~
+0 0 21640
+D2
+~
+~
+0 0 21648
+D3
+~
+~
+0 0 21658
+S
+#21650
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21651
+D1
+~
+~
+0 0 21641
+D2
+~
+~
+0 0 21649
+D3
+~
+~
+0 0 21659
+S
+#21651
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21652
+D1
+~
+~
+0 0 21642
+D2
+~
+~
+0 0 21650
+D3
+~
+~
+0 0 21660
+S
+#21652
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21653
+D1
+~
+~
+0 0 21643
+D2
+~
+~
+0 0 21651
+D3
+~
+~
+0 0 21661
+S
+#21653
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21654
+D1
+~
+~
+0 0 21644
+D2
+~
+~
+0 0 21652
+D3
+~
+~
+0 0 21662
+S
+#21654
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D1
+~
+~
+0 0 21645
+D2
+~
+~
+0 0 21653
+D3
+~
+~
+0 0 21663
+S
+#21655
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21656
+D1
+~
+~
+0 0 21646
+D3
+~
+~
+0 0 21664
+S
+#21656
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21657
+D1
+~
+~
+0 0 21647
+D2
+~
+~
+0 0 21655
+D3
+~
+~
+0 0 21665
+S
+#21657
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21658
+D1
+~
+~
+0 0 21648
+D2
+~
+~
+0 0 21656
+D3
+~
+~
+0 0 21666
+S
+#21658
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21659
+D1
+~
+~
+0 0 21649
+D2
+~
+~
+0 0 21657
+D3
+~
+~
+0 0 21667
+S
+#21659
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21660
+D1
+~
+~
+0 0 21650
+D2
+~
+~
+0 0 21658
+D3
+~
+~
+0 0 21668
+S
+#21660
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21661
+D1
+~
+~
+0 0 21651
+D2
+~
+~
+0 0 21659
+D3
+~
+~
+0 0 21669
+S
+#21661
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21662
+D1
+~
+~
+0 0 21652
+D2
+~
+~
+0 0 21660
+D3
+~
+~
+0 0 21670
+S
+#21662
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21663
+D1
+~
+~
+0 0 21653
+D2
+~
+~
+0 0 21661
+D3
+~
+~
+0 0 21671
+S
+#21663
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D1
+~
+~
+0 0 21654
+D2
+~
+~
+0 0 21662
+D3
+~
+~
+0 0 21672
+S
+#21664
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21665
+D1
+~
+~
+0 0 21655
+D3
+~
+~
+0 0 21674
+S
+#21665
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21666
+D1
+~
+~
+0 0 21656
+D2
+~
+~
+0 0 21664
+D3
+~
+~
+0 0 21675
+S
+#21666
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21667
+D1
+~
+~
+0 0 21657
+D2
+~
+~
+0 0 21665
+D3
+~
+~
+0 0 21676
+S
+#21667
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21668
+D1
+~
+~
+0 0 21658
+D2
+~
+~
+0 0 21666
+D3
+~
+~
+0 0 21677
+S
+#21668
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21669
+D1
+~
+~
+0 0 21659
+D2
+~
+~
+0 0 21667
+D3
+~
+~
+0 0 21678
+S
+#21669
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21670
+D1
+~
+~
+0 0 21660
+D2
+~
+~
+0 0 21668
+D3
+~
+~
+0 0 21679
+S
+#21670
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21671
+D1
+~
+~
+0 0 21661
+D2
+~
+~
+0 0 21669
+D3
+~
+~
+0 0 21680
+S
+#21671
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21672
+D1
+~
+~
+0 0 21662
+D2
+~
+~
+0 0 21670
+D3
+~
+~
+0 0 21681
+S
+#21672
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D1
+~
+~
+0 0 21663
+D2
+~
+~
+0 0 21671
+D3
+~
+~
+0 0 21673
+S
+#21673
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D1
+~
+~
+0 0 21672
+D2
+~
+~
+0 0 21681
+S
+#21674
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21675
+D1
+~
+~
+0 0 21664
+S
+#21675
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21676
+D1
+~
+~
+0 0 21665
+D2
+~
+~
+0 0 21674
+S
+#21676
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21677
+D1
+~
+~
+0 0 21666
+D2
+~
+~
+0 0 21675
+S
+#21677
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21678
+D1
+~
+~
+0 0 21667
+D2
+~
+~
+0 0 21676
+S
+#21678
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21679
+D1
+~
+~
+0 0 21668
+D2
+~
+~
+0 0 21677
+S
+#21679
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21680
+D1
+~
+~
+0 0 21669
+D2
+~
+~
+0 0 21678
+S
+#21680
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21681
+D1
+~
+~
+0 0 21670
+D2
+~
+~
+0 0 21679
+S
+#21681
+The marsh~
+~
+~
+~
+0 393218 6
+Rd     0
+D0
+~
+~
+0 0 21673
+D1
+~
+~
+0 0 21671
+D2
+~
+~
+0 0 21680
+S
+#21682
+City Dump~
+~
+~
+Trash.  Trash.  Trash.  Trash.  All you see is trash, littered all over
+the place.  And the smell, it's horrifying, you can hardly stand it.  Making
+your way through the piles, you begin to see a town uphead.  Looking back,
+you tell yourself you never want to cross that swamp again.   
+~
+0 393734 11
+Rd     0
+D0
+~
+~
+0 0 21683
+D2
+~
+~
+0 0 21645
+S
+#21683
+Market Square~
+~
+~
+This is the center of town, where it all started from.  A large fountain
+sits in the middle, with a large statue of a young man standing aloft in the
+fountain; children run around the ring of the fountain chasing each other,
+trying not to fall into the crystal clear water.  Looking south, you are
+reminded of the that nasty stench and turn away quickly.  To north you see a
+large castle in the distance and looking east and west, you see shops of all
+sorts.  
+~
+0 393218 1
+Rd     0
+D1
+~
+~
+0 0 21691
+D2
+~
+~
+0 0 21682
+D3
+~
+~
+0 0 21684
+S
+#21684
+Market Street~
+~
+~
+A wide coble street stretches from east to west, with people running
+about, talking and yelling at each other, buying and trading amoungst
+themselves.  The smells of fresh baked foods linger from the north, as young
+men arrive from the south with new weapons.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 21689
+D1
+~
+~
+0 0 21683
+D2
+~
+~
+0 0 21690
+D3
+~
+~
+0 0 21685
+S
+#21685
+Market Street~
+~
+~
+A wide coble street stretches from east to west, with people running
+about, talking and yelling at each other, buying and trading amoungst
+themselves.  To the south, you hear the singing of people in harmony, as
+well as prayers to help the sick.  To the north you read a sign that says
+"Armor Shop".  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 21688
+D1
+~
+~
+0 0 21684
+D2
+~
+~
+0 0 21686
+S
+#21686
+The Church~
+~
+~
+On the south wall, is a large glass stained with Jesus lowering his hand
+to the sinners, trying to help them; it's beautiful!  People sit at the
+wooden benches placed throughout the church, some are on the hands and knees
+praying, while others stand in line to admit to their sins.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 21685
+D2
+~
+~
+0 0 21687
+S
+#21687
+Hypo's Room~
+~
+~
+A small room, with bare walls, and a small bed with just a pillow and a
+single sheet.  A rather tiny man sits on the edge of the bed, reading a book
+not even taking his eye off the pages to glance in your direction.  On the
+other side of the room, sits a small two drawer end table that has a single
+picture frame as well as a few personal belongings sitting on it.  
+~
+0 393230 0
+Rd     0
+S
+#21688
+Armor Shop~
+~
+~
+Armor of all kinds line the walls.  There are even some mannequins
+wearing some armor as well.  You look at the fine detail that has been put
+into each piece.  You size up a breastplate and realize that it's too large.
+Moving on, you find one your size.  
+~
+0 393226 0
+Rd     0
+D2
+~
+~
+0 0 21685
+S
+#21689
+The Bakery~
+~
+~
+The aromas that came from this little building could be smelled from
+almost anywhere in town.  It practically beckoned you here.  There are tons
+of treats, from pasteries to fresh baked bagels.  You can't even believe
+your eyes, there are so many to choose from.  
+~
+0 393230 0
+Rd     0
+D2
+~
+~
+0 0 21684
+S
+#21690
+Weapon Shop~
+~
+~
+Along the west wall is an assortment of very nice weapons.  On the south
+wall it looks like all the best weapons hang there.  Grabbing one off it's
+perchment, you notice the time spent making this sword, it's crap!  Putting
+it back, you look at others.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 21684
+S
+#21691
+~
+~
+~
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 21692
+D1
+~
+~
+0 0 21694
+D2
+~
+~
+0 0 21693
+D3
+~
+~
+0 0 21683
+S
+#21692
+Mavericks Inn~
+~
+~
+Upon walking in, you notice that this place is one large room, that
+leads off to other smaller rooms.  It has vaulted ceilings, open
+architecture, and a second floor that runs around the whole wall, leading
+off to about twelve more rooms.  You watch as little kids run about, chasing
+each other up and done the stairs, around the railing, before one tags the
+other, and they do it again, only reversed.  A man standing behind a counter
+only a few feet in front of you, waits there, patiently, for you.  
+~
+0 393226 0
+Rd     0
+D2
+~
+~
+0 0 21691
+S
+#21693
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21691
+S
+#21694
+...~
+~
+~
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 21695
+D2
+~
+~
+0 0 21696
+D3
+~
+~
+0 0 21691
+S
+#21695
+Potion Shop~
+~
+~
+Bottles of liquid filled with just about every color line the shelves
+from floor to ceiling.  Labels attached to each bottle tell you what the
+contents are and give a brief description of what they do as well, but you
+ponder paying the high price.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 21694
+S
+#21696
+An Old Tavern~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 21694
+D1
+~
+~
+0 0 21697
+S
+#21697
+Back Room~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 21696
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

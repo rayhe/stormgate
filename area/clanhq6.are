@@ -1,0 +1,298 @@
+#AREADATA
+Name        Uknowns HQ~
+Builders    Senpai~
+VNUMs       1901 1999
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     Senpai~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#1910
+Guardian of Doom~
+Guardian of Doom~
+A man standing here looking down on you mocking your strenth
+~
+~
+1 268435456 32768 0 0 0 S
+50 1 100 100 0 24000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>act_prog %1 arrives from below.~
+say Hello how are you today i hope you are ready to die painfully.
+~
+|
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMDATA
+#1901
+Gate Entrance~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1902
+S
+#1902
+Dark Moist Path~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1903
+D2
+~
+~
+0 0 1901
+S
+#1903
+Gate's To Unknown~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+595 0 1904
+D2
+~
+~
+0 0 1902
+S
+#1904
+Befor The Gates~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1905
+D2
+~
+~
+595 0 1903
+S
+#1905
+Path Of The Great~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 1904
+D3
+~
+~
+0 0 1906
+S
+#1906
+Bigging of Death!~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1905
+D3
+~
+~
+48 0 1907
+S
+#1907
+Bottom Of the Tower of Doom~
+~
+~
+~
+0 4 0
+Rd     0
+D1
+~
+~
+579 0 1906
+D4
+~
+~
+579 0 1908
+S
+#1908
+Path Up the Tower~
+~
+~
+~
+0 4 0
+Rd     0
+D4
+~
+~
+579 0 1909
+D5
+~
+~
+579 0 1907
+S
+#1909
+Path Up The Tower~
+~
+~
+~
+0 4 0
+Rd     0
+D4
+~
+~
+579 0 1910
+D5
+~
+~
+579 0 1908
+S
+#1910
+Tower Of Doom~
+~
+~
+~
+0 4 0
+Rd     0
+D5
+~
+~
+579 0 1909
+S
+#1911
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1912
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1913
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1914
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1915
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1916
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1917
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1918
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1919
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#1920
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

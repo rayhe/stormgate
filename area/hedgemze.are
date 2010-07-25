@@ -1,0 +1,1453 @@
+#AREADATA
+Name        {  1-10} The Hedge Maze~
+Builders    None~
+VNUMs       1151 1200
+Security    1
+Recall      1
+Flags       256
+Version     107
+Creator     Reorx~
+Llevel      0
+Ulevel      0
+Sounds      The chirping of birds can be heard from the hedges~
+Music       u6_dungn.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#1152
+sparrow bird chirpping~
+A Tiny Sparrow~
+A Tiny sparrow chirps happily at the rising sun.
+~
+This bird is an average sparrow, the sight of the tiny creature fills
+your heart with joy, and, the mere thought of killing such a cute little
+creature makes you sick.  
+~
+65 524288 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#1155
+gardener old crusty~
+The Crusty Old Gardener~
+An old gardener stands here trimming the hedges and picking up garbage.
+~
+An old coot of a Gardener stands here trimming this hedge maze, as he has
+done for a very long time.  He is muttering about the leaves that have
+fallen all about the ground.  You notice he carries a pair of rusty old
+gardening sheers; Now, those might come in handy...  
+~
+5 0 0 0 0 0 S
+4 1 8 8 73 73d0+0 0d0+300
+40 0 0
+0 0 0
+0 0 0
+#1163
+woman love love-struck~
+The Love-Struck Woman~
+A woman sits here patiently, waiting for her true love.
+~
+A beautiful woman sits her, on a bench.  She stares at the dawn sky,
+seemingly awestruck.  She seems to notice you for a second, but then gos
+back to her pondering.  
+~
+67 0 0 0 0 0 S
+3 1 6 6 52 52d0+0 0d0+2000
+30 0 0
+0 0 2
+0 0 0
+#1165
+chipmunk tiny cute little~
+A Cute Little Chipmunk.~
+A tiny little chipmunk sits her, nibbling an acorn.
+~
+A tiny chipmunk looks curiously at you from the hedges.  It is so cute
+you almost decide not to kill it...  Almost.  
+~
+65 64 0 0 0 0 S
+2 1 4 4 31 31d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#1167
+man love love-struck~
+The Love-Struck Man~
+A man wanders around the maze aimlessly, looking for his true love.
+~
+A man dressed dressed in royal clothing wanders her.  He mentions
+something about his true love, and walks, aimlessly, back into the maze.  
+~
+65 0 0 0 0 0 S
+5 1 10 10 81 81d0+0 0d0+5000
+50 0 0
+0 0 1
+0 0 0
+#1175
+The Labrinth Minotaur~
+A Bull-Headed Minotaur~
+A large minotaur stands here, gazing at you mightily.
+~
+This grotesque creature has the body of a huge human, and the head of a
+bull.  He looks impossibly strong, and he carries a massive hammer.  Maybe
+you should think twice before attacking this monstrosity.  
+~
+65 8389632 0 0 0 -300 S
+7 1 14 14 136 136d0+0 0d0+300
+70 0 0
+0 0 0
+2 0 0
+#1180
+The Labrinth Troll~
+A disgusting Troll~
+A Hideous-looking Labrinth Troll.
+~
+A pitiful looking little creature looks up at you.  His arms are far to
+large for his body, and his eyes are also overly large, and bulbous.  
+~
+5 0 0 0 0 -1000 S
+6 1 12 12 115 115d0+0 0d0+300
+60 0 0
+0 0 0
+0 0 0
+#1182
+man deranged~
+A Deranged Man.~
+A Man babbles here, obviously in this maze far too long.
+~
+The man has been in this maze for far too long.  His beard grows far down
+his chest, and his eyes dart about as if he is being chased...  He mutters
+something about Gormak, the unrelenting....  
+~
+65 0 0 0 0 0 S
+8 1 16 16 157 157d0+0 0d0+100
+80 0 0
+0 0 1
+0 0 0
+#1190
+gorlak unrelenting~
+Gorlak, The Unrelenting~
+Gorlak, the Ogre stands here
+~
+You find it hard to believe a noble minotaur would follow a monster such
+as this!  His face is covered, in what appears to be a crude attempt to hide
+his own hidiousness.  In his hands he wields a huge club, and you can't help
+but notice that the minotaurs almost constantly stare at it...  
+~
+35 0 0 0 0 -1000 S
+10 1 20 20 200 200d0+0 0d0+0
+100 0 0
+0 0 1
+0 0 0
+#1200
+betsey~
+Betsey, the Cow-Headed Minotaur~
+Betsey, the often ridiculed, yet incredably stong minotaur sits here.
+~
+The Largest minotaur you have seen yet, she towers over 8 feet tall;
+however, her most amazing feature is not her amazing girth, it is her cow
+head.  The only known female of her race, she is an oddity; for, she has the
+head of your standard milk-bearing cow...  She by NO means looks harmless
+however....  
+~
+1 128 0 0 0 300 S
+9 1 18 18 150 150d0+0 0d0+200
+90 0 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#1155
+sheers key rusty~
+a rusty old pair of gardening sheers~
+A Pair of sheers lies here, ideal for trimming away annoying hedges...~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1156
+fountain water stone~
+a Simple Stone Fountain.~
+A simple fountain sprays water down its stone sides.~
+~
+25 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1157
+overalls grass grass-stained~
+grass-Stained overalls~
+A pair of grass-stained overalls lie here.~
+~
+9 0 0 0 0 9 4
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+A
+1 2
+A
+4 -5
+#1163
+pink silk hankerchief~
+a Pink Silk Hankerchief~
+A frilly, pink, silk hankerchief lies here looking pretty.~
+~
+9 0 16384 0 0 16385 3
+100 100
+0~ 0~ 0~ 0~
+1 28 0
+5 0
+charm person~
+5 5
+0 0 0
+#1165
+acorn tiny edible~
+a Tiny, Edible Acorn~
+A tiny, edible looking acorn lies here in the dirt.~
+~
+26 0 0 0 0 1 2
+100 100
+10~ cure blindness~ cure poison~ remove curse~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1166
+Family Crest~
+a Bejewelled Family Crest~
+An expensive looking family crest lies here~
+~
+8 0 0 0 0 1 5
+100 100
+0~ 0~ 0~ 0~
+0 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#1167
+small jewelled flute~
+a Small Jewelled Flute~
+A small jewelled flute lies here, gently humming.~
+~
+5 322 0 0 0 8193 5
+100 100
+0~ 0~ 0~ 6~
+3 48 0
+5 0
+web~
+3 3
+0 0 0
+#1172
+gorlok opal earring~
+gorlok's opal earring~
+Gorlok must be dead, for his prized opal earring is here in the dirt.~
+~
+9 1 0 0 0 524289 10
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+5 0
+curse~
+10 10
+0 0 0
+A
+1 2
+A
+13 10
+#1173
+mask gorlak~
+gorlak's Mask~
+A mask to cover Gorlak's hideous face is here.~
+~
+9 0 0 0 0 65537 10
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+18 1
+#1174
+club mighty gorlak~
+gorlaks Mighty Club~
+Gorlaks club is here, maybe this is how he controlled the minotaurs??!~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 0~
+10 12 0
+2 1175
+reserved~
+2 5
+0 0 0
+A
+25 5
+A
+13 5
+A
+19 2
+A
+4 -2
+#1175
+hammer maul huge massive~
+a Huge Maul~
+A massive hammer lies here, looking lethal~
+~
+5 0 0 0 0 8193 7
+100 100
+0~ 0~ 0~ 8~
+20 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 3
+A
+19 1
+A
+1 1
+#1180
+rags pile filthy~
+some Filthy Rags.~
+A pile of filthy, stinking, rags lies here.~
+~
+9 0 1024 0 0 1025 6
+100 100
+0~ 0~ 0~ 0~
+6 1 0
+5 0
+poison~
+5 5
+0 0 0
+#1181
+nothing~
+nothing~
+Nothing~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+chaos field~
+0 -1
+0 0 0
+#1182
+box small oak~
+a Small Oak Box~
+A small oak box lies here, who knows what it contains?~
+~
+15 0 0 0 0 1 4
+100 100
+4~ 13~ 1187~ 0~
+10 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#1183
+ruby ioun stone~
+a Ruby Ioun Stone~
+A ruby lies here, looking magical.~
+~
+9 1 0 0 0 32769 6
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+5 0
+detect invis~
+10 10
+0 0 0
+A
+1 1
+A
+5 1
+#1184
+sapphire ioun stone~
+a Sapphire Ioun Stone~
+A magical looking sapphire sits here.~
+~
+9 2 0 0 0 32769 6
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+5 0
+detect magic~
+10 10
+0 0 0
+A
+4 1
+A
+3 1
+#1185
+onyx ioun stone~
+an Onyx Ioun Stone~
+An Onyx lies here, looking magical.~
+~
+9 0 0 0 0 32769 6
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+5 0
+detect evil~
+10 10
+0 0 0
+A
+13 6
+#1186
+emerald ioun stone~
+an Emerald Ioun Stone~
+An emerald lies here, looking magical.~
+~
+9 0 0 0 0 32769 6
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+5 0
+detect hidden~
+10 10
+0 0 0
+A
+12 6
+#1187
+tiny gold key~
+a Tiny Gold Key~
+A rather dull looking gold key lies here.~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1190
+nothing~
+nothing~
+Nothing~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1200
+udder infamous betsey~
+betsey's Infamous Udder~
+The source of Betseys triumph, and her downfall... Her udder, lies here.~
+~
+9 4096 0 0 0 9 9
+100 100
+0~ 0~ 0~ 0~
+15 1 0
+5 0
+sanctuary~
+1 1
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#1151
+The Hedge Maze~
+~
+~
+You are standing at the entrance of a large hedge maze, you wonder if you
+should venture inside, and then chastise yourself.  After all, what could be
+dangerous in a simple hedge maze?  A brass plate is transfixed to the
+ground.  
+~
+0 4 2
+Rd     0
+E
+plate~
+The Hedge Maze
+for the enjoyment of those level 1 - 10
+Reorx
+~
+D0
+~
+~
+0 0 1152
+D2
+~
+~
+3 0 19674
+S
+#1152
+The Hedge Maze~
+~
+~
+You are now within the hedge maze, exits lead off in various directions. 
+None of the exits look very different, or very dangerous, so you decide to
+pick one at random, and head in that direction.  Maybe this could turn out
+to be a relaxing day?  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 1151
+D3
+~
+~
+0 0 1153
+S
+#1153
+The Hedge Maze~
+~
+~
+You've come to your first real choice in this simple maze.  Again neither
+seems especially exciting, nor threatening.  Maybe you should just take a
+nap, and forget this whole adventure?  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1156
+D1
+~
+~
+0 0 1152
+D3
+~
+~
+0 0 1154
+S
+#1154
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said much about.  You decide to continue on...  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1153
+D3
+~
+~
+0 0 1155
+S
+#1155
+The Hedge Maze~
+~
+~
+You appear to have reached a dead end...  ALREADY?!  Maybe you should
+just go home, and play with your little sister.  If you choose to continue
+on, you decide East would be your best bet.  (Unless of course banging your
+head against the west hedges sounds fun to you?)  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1154
+S
+#1156
+The Center of the Hedge Maze~
+~
+~
+You stand, at what appears to be, the center of this Hedge Maze.  That is
+quite odd however, because it looked MUCH larger from the outside.  Maybe
+there is another section of it you aren't seeing?  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1157
+D2
+~
+~
+0 0 1153
+D3
+~
+~
+0 0 1164
+S
+#1157
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1158
+D3
+~
+~
+0 0 1156
+S
+#1158
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1159
+D3
+~
+~
+0 0 1157
+S
+#1159
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1160
+D3
+~
+~
+0 0 1158
+S
+#1160
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 1161
+D3
+~
+~
+0 0 1159
+S
+#1161
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1160
+D3
+~
+~
+0 0 1162
+S
+#1162
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+0 0 1161
+D3
+~
+~
+0 0 1163
+S
+#1163
+The Gazebo~
+~
+~
+You've come to a dead end.  This side of the Hedge Maze ends in a simple
+white gazebo.  There is a bench in the gazebo, it appears to be made for
+two, however it is only currently seating one person, A beautiful woman.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1162
+S
+#1164
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1156
+D3
+~
+~
+0 0 1165
+S
+#1165
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1166
+D1
+~
+~
+0 0 1164
+S
+#1166
+The Hedge Maze~
+~
+~
+You are in a plain section of Hedge Maze; however, you hear odd sounds
+and grunts to the east.  You try to look through the Hedges to see what is
+making all that noise, but they have grown in too thick, Maybe if you could
+find something to clear away the hedges...  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1167
+D1
+~
+~
+7 1155 1174
+D2
+~
+~
+0 0 1165
+S
+#1167
+The Hedge Maze~
+~
+~
+This is a plain section of Hedge Maze, of which nothing truely exciting
+can be said.  You decide to continue on.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 1166
+S
+#1168
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1169
+S
+#1169
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1173
+D1
+~
+~
+0 0 1170
+D3
+~
+~
+0 0 1168
+S
+#1170
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 1171
+D3
+~
+~
+0 0 1169
+S
+#1171
+The Labrinth~
+~
+~
+You appear to be nearing the end to this maze.  To the west you hear odd
+noises, and the occasional scream.  You decide to think twice before heading
+west.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1170
+D3
+~
+~
+0 0 1172
+S
+#1172
+The End of the Labrinth~
+~
+~
+You've reached Gorlak's Den; The End of the Labrinth.  In the center of
+the den a massive ogre stands.  He eyes you suspiciously, his hate being
+very poorly veiled.  You can see by the sneer on his face that he does, by
+no means, consider you a threat; and, by the piles of human corpses that
+litter the floor, you think he may be right.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1171
+S
+#1173
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1198
+D2
+~
+~
+0 0 1169
+S
+#1174
+The Labrinth~
+~
+~
+You stand at the entrance to an ominous stone Labrinth.  This place seems
+Much more dangerous then the hedge maze.  You are sure things will not be so
+easy to conquer here.  You long for the comforts of home.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1175
+D3
+~
+~
+7 1155 1166
+S
+#1175
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1176
+D3
+~
+~
+0 0 1174
+S
+#1176
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1183
+D1
+~
+~
+0 0 1177
+D3
+~
+~
+0 0 1175
+S
+#1177
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1178
+D3
+~
+~
+0 0 1176
+S
+#1178
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1179
+D3
+~
+~
+0 0 1177
+S
+#1179
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1180
+D3
+~
+~
+0 0 1178
+S
+#1180
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 1179
+D3
+~
+~
+0 0 1181
+S
+#1181
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1180
+D3
+~
+~
+0 0 1182
+S
+#1182
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1181
+S
+#1183
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1184
+D2
+~
+~
+0 0 1176
+S
+#1184
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1185
+D2
+~
+~
+0 0 1183
+S
+#1185
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1186
+D3
+~
+~
+0 0 1184
+S
+#1186
+The labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1190
+D1
+~
+~
+0 0 1187
+D3
+~
+~
+0 0 1185
+S
+#1187
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1188
+D3
+~
+~
+0 0 1186
+S
+#1188
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1189
+D2
+~
+~
+0 0 1187
+S
+#1189
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 4 2
+Rd     0
+D2
+~
+~
+0 0 1188
+S
+#1190
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1194
+D2
+~
+~
+0 0 1186
+D3
+~
+~
+0 0 1191
+S
+#1191
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1190
+D3
+~
+~
+0 0 1192
+S
+#1192
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1191
+D3
+~
+~
+0 0 1193
+S
+#1193
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1192
+S
+#1194
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 1190
+D3
+~
+~
+0 0 1195
+S
+#1195
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1194
+D3
+~
+~
+0 0 1196
+S
+#1196
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1195
+D3
+~
+~
+0 0 1197
+S
+#1197
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1196
+D3
+~
+~
+0 0 1198
+S
+#1198
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1197
+D2
+~
+~
+0 0 1173
+D3
+~
+~
+0 0 1199
+S
+#1199
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1198
+D2
+~
+~
+0 0 1200
+S
+#1200
+The Labrinth~
+~
+~
+You are in a dark stone labrinth.  You are begining to feel lost.  You'd
+better find your way out soon, before something finds you.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1199
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 1152 3 1152
+M 0 1155 1 1155
+G 0 1155 0
+E 0 1157 0 5
+O 0 1156 0 1156
+M 0 1165 3 1160
+G 0 1165 0
+M 0 1163 1 1163
+E 0 1163 0 22
+M 0 1167 1 1167
+G 0 1166 0
+M 0 1190 1 1172
+E 0 1172 0 23
+E 0 1173 0 8
+E 0 1174 0 20
+M 0 1175 3 1175
+E 0 1175 0 20
+M 0 1182 1 1182
+G 0 1187 0
+O 0 1182 0 1189
+P 0 1183 0 1182
+P 0 1184 0 1182
+P 0 1185 0 1182
+P 0 1186 0 1182
+M 0 1180 3 1196
+E 0 1180 0 16
+M 0 1200 1 1200
+E 0 1200 0 5
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,3210 @@
+Tue Aug  4 01:43:56 2009
+: OmegmaMud is ready to rock on port 2345.
+Tue Aug  4 01:44:36 2009
+: (Unknown): yes
+Tue Aug  4 01:44:39 2009
+: (Unknown): Kaldon
+Tue Aug  4 01:44:41 2009
+: Kaldon: y
+Tue Aug  4 01:44:44 2009
+: Kaldon: sithlord
+Tue Aug  4 01:44:47 2009
+: Kaldon: sithlord
+Tue Aug  4 01:44:48 2009
+: Kaldon:  
+Tue Aug  4 01:44:57 2009
+: Kaldon: Gargoyle
+Tue Aug  4 01:44:59 2009
+: Kaldon: y
+Tue Aug  4 01:45:01 2009
+: Kaldon: m
+Tue Aug  4 01:45:02 2009
+: Kaldon:  
+Tue Aug  4 01:45:08 2009
+: Kaldon: mage
+Tue Aug  4 01:45:10 2009
+: Kaldon: y
+Tue Aug  4 01:45:13 2009
+: Kaldon: n
+Tue Aug  4 01:45:14 2009
+: Kaldon:  
+Tue Aug  4 01:45:19 2009
+: Kaldon: G
+Tue Aug  4 01:45:21 2009
+: Kaldon: y
+Tue Aug  4 01:45:22 2009
+: Kaldon:  
+Tue Aug  4 01:45:59 2009
+: Kaldon: D
+Tue Aug  4 01:46:01 2009
+: Kaldon: y
+Tue Aug  4 01:46:03 2009
+: Kaldon: y
+Tue Aug  4 01:46:05 2009
+: Kaldon: y
+Tue Aug  4 01:46:07 2009
+: Kaldon:  
+Tue Aug  4 01:46:08 2009
+: Kaldon: who
+Tue Aug  4 01:46:12 2009
+: Kaldon: quit
+Tue Aug  4 01:46:21 2009
+: (Unknown): yes
+Tue Aug  4 01:46:22 2009
+: (Unknown): Kaldon
+Tue Aug  4 01:46:32 2009
+: (Unknown): yes
+Tue Aug  4 01:46:34 2009
+: (Unknown): Kaldon
+Tue Aug  4 01:46:36 2009
+: Kaldon: y
+Tue Aug  4 01:46:38 2009
+: Kaldon: sithlord
+Tue Aug  4 01:46:40 2009
+: Kaldon: sithlord
+Tue Aug  4 01:46:41 2009
+: Kaldon:  
+Tue Aug  4 01:46:45 2009
+: Kaldon:  
+Tue Aug  4 01:46:45 2009
+: Kaldon:  
+Tue Aug  4 01:46:46 2009
+: Kaldon:  
+Tue Aug  4 01:46:46 2009
+: Kaldon:  
+Tue Aug  4 01:46:49 2009
+: Kaldon: Human
+Tue Aug  4 01:46:50 2009
+: Kaldon: y
+Tue Aug  4 01:46:52 2009
+: Kaldon: M
+Tue Aug  4 01:46:53 2009
+: Kaldon: y
+Tue Aug  4 01:46:54 2009
+: Kaldon:  
+Tue Aug  4 01:46:55 2009
+: Kaldon: y
+Tue Aug  4 01:46:57 2009
+: Kaldon: n
+Tue Aug  4 01:46:58 2009
+: Kaldon:  
+Tue Aug  4 01:46:59 2009
+: Kaldon: A
+Tue Aug  4 01:47:01 2009
+: Kaldon: y
+Tue Aug  4 01:47:02 2009
+: Kaldon:  
+Tue Aug  4 01:47:03 2009
+: Kaldon: A
+Tue Aug  4 01:47:04 2009
+: Kaldon: y
+Tue Aug  4 01:47:06 2009
+: Kaldon: n
+Tue Aug  4 01:47:08 2009
+: Kaldon:  
+Tue Aug  4 01:47:09 2009
+: Kaldon: y
+Tue Aug  4 01:47:10 2009
+: Kaldon: y
+Tue Aug  4 01:47:11 2009
+: Kaldon:  
+Tue Aug  4 01:47:14 2009
+: Kaldon: who
+Tue Aug  4 01:47:18 2009
+: Kaldon: save
+Tue Aug  4 01:48:35 2009
+: Kaldon:  
+Tue Aug  4 01:48:36 2009
+: Kaldon: who
+Tue Aug  4 01:48:38 2009
+: Kaldon: s
+Tue Aug  4 01:48:39 2009
+: Kaldon: d
+Tue Aug  4 01:48:41 2009
+: Kaldon: n
+Tue Aug  4 01:48:43 2009
+: Kaldon: open norht
+Tue Aug  4 01:48:43 2009
+: Kaldon: n
+Tue Aug  4 01:48:46 2009
+: Kaldon: open n
+Tue Aug  4 01:48:47 2009
+: Kaldon: n
+Tue Aug  4 01:48:49 2009
+: Kaldon: open north
+Tue Aug  4 01:48:49 2009
+: Kaldon: n
+Tue Aug  4 01:48:51 2009
+: Kaldon: n
+Tue Aug  4 01:48:53 2009
+: Kaldon: k leech
+Tue Aug  4 01:49:08 2009
+: Kaldon: who
+Tue Aug  4 01:49:10 2009
+: Kaldon: eq
+Tue Aug  4 01:49:12 2009
+: Kaldon: sc
+Tue Aug  4 01:49:22 2009
+: Kaldon: prac
+Tue Aug  4 01:49:25 2009
+: Kaldon: stand
+Tue Aug  4 01:49:26 2009
+: Kaldon: prac
+Tue Aug  4 01:49:28 2009
+: Kaldon: exit
+Tue Aug  4 01:49:31 2009
+: Kaldon: quit
+Tue Aug  4 01:49:38 2009
+: (Unknown): yes
+Tue Aug  4 01:49:40 2009
+: (Unknown): Immortal
+Tue Aug  4 01:49:41 2009
+: Immortal:  
+Tue Aug  4 01:50:25 2009
+: (Unknown): yes
+Tue Aug  4 01:50:27 2009
+: (Unknown): Immortal
+Tue Aug  4 01:50:29 2009
+: Immortal: immortal
+Tue Aug  4 01:54:05 2009
+: (Unknown): yes
+Tue Aug  4 01:54:07 2009
+: (Unknown): Kaldon
+Tue Aug  4 01:54:08 2009
+: Kaldon: y
+Tue Aug  4 01:54:11 2009
+: Kaldon: sithlord
+Tue Aug  4 01:54:13 2009
+: Kaldon: sithlord
+Tue Aug  4 01:54:14 2009
+: Kaldon:  
+Tue Aug  4 01:54:17 2009
+: Kaldon: Gargoyle
+Tue Aug  4 01:54:18 2009
+: Kaldon: y
+Tue Aug  4 01:54:20 2009
+: Kaldon: M
+Tue Aug  4 01:54:21 2009
+: Kaldon:  
+Tue Aug  4 01:54:23 2009
+: Kaldon: Mage
+Tue Aug  4 01:54:25 2009
+: Kaldon: y
+Tue Aug  4 01:54:26 2009
+: Kaldon: n
+Tue Aug  4 01:54:28 2009
+: Kaldon:  
+Tue Aug  4 01:54:30 2009
+: Kaldon: A
+Tue Aug  4 01:54:31 2009
+: Kaldon: y
+Tue Aug  4 01:54:32 2009
+: Kaldon:  
+Tue Aug  4 01:54:34 2009
+: Kaldon: A
+Tue Aug  4 01:54:35 2009
+: Kaldon: y
+Tue Aug  4 01:54:36 2009
+: Kaldon: y
+Tue Aug  4 01:54:38 2009
+: Kaldon: n
+Tue Aug  4 01:54:39 2009
+: Kaldon: n
+Tue Aug  4 01:54:40 2009
+: Kaldon: y
+Tue Aug  4 01:54:41 2009
+: Kaldon:  
+Tue Aug  4 01:54:42 2009
+: Kaldon: who
+Tue Aug  4 01:54:43 2009
+: Kaldon: save
+Tue Aug  4 01:54:59 2009
+: Kaldon: ls
+Tue Aug  4 01:55:01 2009
+: Kaldon: l
+Tue Aug  4 01:55:02 2009
+: Kaldon: d
+Tue Aug  4 01:55:06 2009
+: Kaldon: s
+Tue Aug  4 01:55:07 2009
+: Kaldon: n
+Tue Aug  4 01:55:08 2009
+: Kaldon: say yes
+Tue Aug  4 01:55:11 2009
+: Kaldon: s
+Tue Aug  4 01:55:12 2009
+: Kaldon: w
+Tue Aug  4 01:55:12 2009
+: Kaldon: w
+Tue Aug  4 01:55:13 2009
+: Kaldon: save
+Tue Aug  4 01:55:14 2009
+: Kaldon: help save
+Tue Aug  4 01:55:17 2009
+: Kaldon:  
+Tue Aug  4 01:55:35 2009
+: Kaldon: l
+Tue Aug  4 01:55:38 2009
+: Kaldon: prac
+Tue Aug  4 01:55:39 2009
+: Kaldon: e
+Tue Aug  4 01:55:39 2009
+: Kaldon: e
+Tue Aug  4 01:55:40 2009
+: Kaldon: e
+Tue Aug  4 01:55:40 2009
+: Kaldon: e
+Tue Aug  4 01:55:41 2009
+: Kaldon: e
+Tue Aug  4 01:55:41 2009
+: Kaldon: e
+Tue Aug  4 01:55:41 2009
+: Kaldon: e
+Tue Aug  4 01:55:41 2009
+: Kaldon: train
+Tue Aug  4 01:55:48 2009
+: Kaldon: train str
+Tue Aug  4 01:55:50 2009
+: Kaldon: train str
+Tue Aug  4 01:55:54 2009
+: Kaldon: prac
+Tue Aug  4 01:55:55 2009
+: Kaldon: train
+Tue Aug  4 01:55:58 2009
+: Kaldon: train str
+Tue Aug  4 01:55:59 2009
+: Kaldon: train str
+Tue Aug  4 01:56:00 2009
+: Kaldon: train
+Tue Aug  4 01:56:01 2009
+: Kaldon: sc
+Tue Aug  4 01:56:04 2009
+: Kaldon: w
+Tue Aug  4 01:56:04 2009
+: Kaldon: w
+Tue Aug  4 01:56:05 2009
+: Kaldon: n
+Tue Aug  4 01:56:06 2009
+: Kaldon: n
+Tue Aug  4 01:56:06 2009
+: Kaldon: n
+Tue Aug  4 01:56:08 2009
+: Kaldon: open door
+Tue Aug  4 01:56:09 2009
+: Kaldon: n
+Tue Aug  4 01:56:11 2009
+: Kaldon: open north
+Tue Aug  4 01:56:11 2009
+: Kaldon: n
+Tue Aug  4 01:56:12 2009
+: Kaldon: n
+Tue Aug  4 01:56:14 2009
+: Kaldon: n
+Tue Aug  4 01:56:17 2009
+: Kaldon: k bug
+Tue Aug  4 01:56:24 2009
+: Kaldon: c 'fireball'
+Tue Aug  4 01:56:32 2009
+: Kaldon: who
+Tue Aug  4 01:56:38 2009
+: Kaldon: save
+Tue Aug  4 01:56:39 2009
+: Kaldon: s
+Tue Aug  4 01:56:41 2009
+: Kaldon: stand
+Tue Aug  4 01:56:43 2009
+: Kaldon: ls
+Tue Aug  4 01:56:45 2009
+: Kaldon: s
+Tue Aug  4 01:56:47 2009
+: Kaldon: s
+Tue Aug  4 01:56:48 2009
+: Kaldon: s
+Tue Aug  4 01:56:49 2009
+: Kaldon: s
+Tue Aug  4 01:56:50 2009
+: Kaldon: s
+Tue Aug  4 01:56:52 2009
+: Kaldon: say help
+Tue Aug  4 01:56:58 2009
+: Kaldon: say fireshield
+Tue Aug  4 01:57:00 2009
+: Kaldon: n
+Tue Aug  4 01:57:01 2009
+: Kaldon: say fire
+Tue Aug  4 01:57:01 2009
+: Kaldon: say hi
+Tue Aug  4 01:57:03 2009
+: Kaldon: say help me
+Tue Aug  4 01:57:05 2009
+: Kaldon: helpme
+Tue Aug  4 01:57:07 2009
+: Kaldon: ls
+Tue Aug  4 01:57:09 2009
+: Kaldon: l mage
+Tue Aug  4 01:57:12 2009
+: Kaldon: n
+Tue Aug  4 01:57:14 2009
+: Kaldon: n
+Tue Aug  4 01:57:15 2009
+: Kaldon: fly
+Tue Aug  4 01:57:18 2009
+: Kaldon: n
+Tue Aug  4 01:57:21 2009
+: Kaldon: quit
+Tue Aug  4 01:57:34 2009
+: (Unknown): yes
+Tue Aug  4 01:57:36 2009
+: (Unknown): Kaldon
+Tue Aug  4 01:57:37 2009
+: Kaldon: y
+Tue Aug  4 01:57:39 2009
+: Kaldon: sithlord
+Tue Aug  4 01:57:41 2009
+: Kaldon: sithlord
+Tue Aug  4 01:57:42 2009
+: Kaldon:  
+Tue Aug  4 01:57:46 2009
+: Kaldon: human
+Tue Aug  4 01:57:47 2009
+: Kaldon: y
+Tue Aug  4 01:57:48 2009
+: Kaldon: m
+Tue Aug  4 01:57:49 2009
+: Kaldon:  
+Tue Aug  4 01:57:52 2009
+: Kaldon: Warrior
+Tue Aug  4 01:57:54 2009
+: Kaldon: y
+Tue Aug  4 01:57:56 2009
+: Kaldon: n
+Tue Aug  4 01:57:57 2009
+: Kaldon:  
+Tue Aug  4 01:57:58 2009
+: Kaldon: a
+Tue Aug  4 01:57:59 2009
+: Kaldon: y
+Tue Aug  4 01:58:00 2009
+: Kaldon:  
+Tue Aug  4 01:58:04 2009
+: Kaldon: a
+Tue Aug  4 01:58:06 2009
+: Kaldon: y
+Tue Aug  4 01:58:08 2009
+: Kaldon: n
+Tue Aug  4 01:58:09 2009
+: Kaldon: y
+Tue Aug  4 01:58:10 2009
+: Kaldon:  
+Tue Aug  4 01:58:11 2009
+: Kaldon: d
+Tue Aug  4 01:58:14 2009
+: Kaldon: open north
+Tue Aug  4 01:58:15 2009
+: Kaldon: n
+Tue Aug  4 01:58:16 2009
+: Kaldon: eq
+Tue Aug  4 01:58:17 2009
+: Kaldon: s
+Tue Aug  4 01:58:19 2009
+: Kaldon: s
+Tue Aug  4 01:58:21 2009
+: Kaldon: n
+Tue Aug  4 01:58:23 2009
+: Kaldon: con mag
+Tue Aug  4 01:58:26 2009
+: Kaldon: w
+Tue Aug  4 01:58:27 2009
+: Kaldon: s
+Tue Aug  4 01:58:30 2009
+: Kaldon: con chi
+Tue Aug  4 01:58:32 2009
+: Kaldon: con bug
+Tue Aug  4 01:58:33 2009
+: Kaldon: s
+Tue Aug  4 01:58:34 2009
+: Kaldon: l
+Tue Aug  4 01:58:35 2009
+: Kaldon: e
+Tue Aug  4 01:58:37 2009
+: Kaldon: con bug
+Tue Aug  4 01:58:38 2009
+: Kaldon: con heap
+Tue Aug  4 01:58:39 2009
+: Kaldon: e
+Tue Aug  4 01:58:41 2009
+: Kaldon: con bug
+Tue Aug  4 01:58:42 2009
+: Kaldon: k bug
+Tue Aug  4 01:58:51 2009
+: Kaldon: fle
+Tue Aug  4 01:58:53 2009
+: Kaldon: sc
+Tue Aug  4 01:59:00 2009
+: Kaldon: up
+Tue Aug  4 01:59:01 2009
+: Kaldon: up
+Tue Aug  4 01:59:08 2009
+: Kaldon: north
+Tue Aug  4 01:59:09 2009
+: Kaldon: north
+Tue Aug  4 01:59:59 2009
+: Kaldon: s
+Tue Aug  4 02:00:01 2009
+: Kaldon: n
+Tue Aug  4 02:00:02 2009
+: Kaldon: heal
+Tue Aug  4 02:00:08 2009
+: Kaldon: s
+Tue Aug  4 02:00:09 2009
+: Kaldon: u
+Tue Aug  4 02:00:10 2009
+: Kaldon: u
+Tue Aug  4 02:00:12 2009
+: Kaldon: n
+Tue Aug  4 02:00:14 2009
+: Kaldon: open door
+Tue Aug  4 02:00:14 2009
+: Kaldon: s
+Tue Aug  4 02:00:15 2009
+: Kaldon: d
+Tue Aug  4 02:00:17 2009
+: Kaldon: train
+Tue Aug  4 02:00:18 2009
+: Kaldon: learn
+Tue Aug  4 02:00:21 2009
+: Kaldon: u
+Tue Aug  4 02:00:21 2009
+: Kaldon: e
+Tue Aug  4 02:00:22 2009
+: Kaldon: e
+Tue Aug  4 02:00:23 2009
+: Kaldon: train
+Tue Aug  4 02:00:27 2009
+: Kaldon: speak common
+Tue Aug  4 02:00:28 2009
+: Kaldon: s
+Tue Aug  4 02:00:29 2009
+: Kaldon: w
+Tue Aug  4 02:00:30 2009
+: Kaldon: w
+Tue Aug  4 02:00:31 2009
+: Kaldon: n
+Tue Aug  4 02:00:32 2009
+: Kaldon: d
+Tue Aug  4 02:00:33 2009
+: Kaldon: s
+Tue Aug  4 02:00:34 2009
+: Kaldon: s
+Tue Aug  4 02:00:34 2009
+: Kaldon: s
+Tue Aug  4 02:00:35 2009
+: Kaldon: s
+Tue Aug  4 02:00:38 2009
+: Kaldon: n
+Tue Aug  4 02:00:38 2009
+: Kaldon: w
+Tue Aug  4 02:00:41 2009
+: Kaldon: say elp
+Tue Aug  4 02:00:42 2009
+: Kaldon: say help
+Tue Aug  4 02:00:45 2009
+: Kaldon: speak human
+Tue Aug  4 02:00:47 2009
+: Kaldon: say help
+Tue Aug  4 02:00:49 2009
+: Kaldon: l
+Tue Aug  4 02:00:50 2009
+: Kaldon: l mage
+Tue Aug  4 02:00:54 2009
+: Kaldon: e
+Tue Aug  4 02:00:55 2009
+: Kaldon: e
+Tue Aug  4 02:00:56 2009
+: Kaldon: e
+Tue Aug  4 02:00:57 2009
+: Kaldon: sc
+Tue Aug  4 02:00:59 2009
+: Kaldon: w
+Tue Aug  4 02:01:00 2009
+: Kaldon: w
+Tue Aug  4 02:01:01 2009
+: Kaldon: w
+Tue Aug  4 02:01:03 2009
+: Kaldon: w
+Tue Aug  4 02:01:04 2009
+: Kaldon: e
+Tue Aug  4 02:01:04 2009
+: Kaldon: e
+Tue Aug  4 02:01:05 2009
+: Kaldon:  
+Tue Aug  4 02:01:05 2009
+: Kaldon: e
+Tue Aug  4 02:01:06 2009
+: Kaldon: e
+Tue Aug  4 02:01:08 2009
+: Kaldon: e
+Tue Aug  4 02:01:09 2009
+: Kaldon: e
+Tue Aug  4 02:01:10 2009
+: Kaldon: e
+Tue Aug  4 02:01:12 2009
+: Kaldon: e
+Tue Aug  4 02:01:13 2009
+: Kaldon: w
+Tue Aug  4 02:01:13 2009
+: Kaldon: w
+Tue Aug  4 02:01:14 2009
+: Kaldon: w
+Tue Aug  4 02:01:15 2009
+: Kaldon: w
+Tue Aug  4 02:01:16 2009
+: Kaldon: w
+Tue Aug  4 02:01:17 2009
+: Kaldon: n
+Tue Aug  4 02:01:18 2009
+: Kaldon: n
+Tue Aug  4 02:01:19 2009
+: Kaldon: n
+Tue Aug  4 02:01:21 2009
+: Kaldon: s
+Tue Aug  4 02:01:23 2009
+: Kaldon: drink fountain
+Tue Aug  4 02:01:25 2009
+: Kaldon: l wave
+Tue Aug  4 02:01:27 2009
+: Kaldon: l grave
+Tue Aug  4 02:01:34 2009
+: Kaldon: n
+Tue Aug  4 02:01:37 2009
+: Kaldon: save
+Tue Aug  4 02:01:39 2009
+: Kaldon: commands
+Tue Aug  4 02:01:41 2009
+: Kaldon:  
+Tue Aug  4 02:02:34 2009
+: Kaldon:  
+Tue Aug  4 02:02:35 2009
+: Kaldon: who
+Tue Aug  4 02:02:39 2009
+: Kaldon: who Immortal
+Tue Aug  4 02:02:43 2009
+: Kaldon: last Immortal
+Tue Aug  4 02:02:45 2009
+: Kaldon: last Kaldon
+Tue Aug  4 02:02:46 2009
+: Kaldon: l
+Tue Aug  4 02:02:52 2009
+: Kaldon: l Lucretia
+Tue Aug  4 02:04:04 2009
+: Kaldon:  
+Tue Aug  4 02:04:05 2009
+: Kaldon: l
+Tue Aug  4 02:04:17 2009
+: Kaldon: u
+Tue Aug  4 02:04:19 2009
+: Kaldon: s
+Tue Aug  4 02:04:21 2009
+: Kaldon: e
+Tue Aug  4 02:04:22 2009
+: Kaldon: e
+Tue Aug  4 02:04:23 2009
+: Kaldon: train
+Tue Aug  4 02:04:24 2009
+: Kaldon: sc
+Tue Aug  4 02:04:26 2009
+: Kaldon: train str
+Tue Aug  4 02:04:28 2009
+: Kaldon: train str
+Tue Aug  4 02:04:30 2009
+: Kaldon: train
+Tue Aug  4 02:04:31 2009
+: Kaldon: train str
+Tue Aug  4 02:04:33 2009
+: Kaldon: train
+Tue Aug  4 02:04:34 2009
+: Kaldon: sc
+Tue Aug  4 02:04:36 2009
+: Kaldon: train str
+Tue Aug  4 02:04:37 2009
+: Kaldon: train str
+Tue Aug  4 02:04:40 2009
+: Kaldon: train
+Tue Aug  4 02:04:45 2009
+: Kaldon: train str
+Tue Aug  4 02:04:46 2009
+: Kaldon: sc
+Tue Aug  4 02:04:48 2009
+: Kaldon: train
+Tue Aug  4 02:04:49 2009
+: Kaldon: train str
+Tue Aug  4 02:04:50 2009
+: Kaldon: train
+Tue Aug  4 02:04:52 2009
+: Kaldon: sc
+Tue Aug  4 02:04:53 2009
+: Kaldon: w
+Tue Aug  4 02:04:54 2009
+: Kaldon: w
+Tue Aug  4 02:04:55 2009
+: Kaldon: n
+Tue Aug  4 02:04:56 2009
+: Kaldon: n
+Tue Aug  4 02:04:59 2009
+: Kaldon: read sign
+Tue Aug  4 02:05:07 2009
+: Kaldon: s
+Tue Aug  4 02:05:08 2009
+: Kaldon: s
+Tue Aug  4 02:05:08 2009
+: Kaldon: s
+Tue Aug  4 02:05:10 2009
+: Kaldon: s
+Tue Aug  4 02:05:12 2009
+: Kaldon: s
+Tue Aug  4 02:05:12 2009
+: Kaldon: s
+Tue Aug  4 02:05:13 2009
+: Kaldon: s
+Tue Aug  4 02:05:14 2009
+: Kaldon: e
+Tue Aug  4 02:05:17 2009
+: Kaldon: e
+Tue Aug  4 02:05:19 2009
+: Kaldon: d
+Tue Aug  4 02:05:21 2009
+: Kaldon: n
+Tue Aug  4 02:05:23 2009
+: Kaldon: con blob
+Tue Aug  4 02:05:24 2009
+: Kaldon: k blob
+Tue Aug  4 02:05:28 2009
+: Kaldon: s
+Tue Aug  4 02:05:29 2009
+: Kaldon: w
+Tue Aug  4 02:05:31 2009
+: Kaldon: k mon
+Tue Aug  4 02:05:37 2009
+: Kaldon: wear all
+Tue Aug  4 02:05:39 2009
+: Kaldon: autolooot
+Tue Aug  4 02:05:42 2009
+: Kaldon: autoloot
+Tue Aug  4 02:05:43 2009
+: Kaldon: e
+Tue Aug  4 02:05:44 2009
+: Kaldon: l
+Tue Aug  4 02:05:45 2009
+: Kaldon: s
+Tue Aug  4 02:05:46 2009
+: Kaldon: n
+Tue Aug  4 02:05:47 2009
+: Kaldon: u
+Tue Aug  4 02:05:49 2009
+: Kaldon: d
+Tue Aug  4 02:05:50 2009
+: Kaldon: d
+Tue Aug  4 02:05:53 2009
+: Kaldon: kill rat
+Tue Aug  4 02:05:56 2009
+: Kaldon: get all cor
+Tue Aug  4 02:05:57 2009
+: Kaldon: wear all
+Tue Aug  4 02:05:59 2009
+: Kaldon: l
+Tue Aug  4 02:06:00 2009
+: Kaldon: autosac
+Tue Aug  4 02:06:03 2009
+: Kaldon: open north
+Tue Aug  4 02:06:04 2009
+: Kaldon: n
+Tue Aug  4 02:06:05 2009
+: Kaldon: n
+Tue Aug  4 02:06:07 2009
+: Kaldon: w
+Tue Aug  4 02:06:09 2009
+: Kaldon: k mutt
+Tue Aug  4 02:06:12 2009
+: Kaldon: s
+Tue Aug  4 02:06:14 2009
+: Kaldon: e
+Tue Aug  4 02:06:15 2009
+: Kaldon: e
+Tue Aug  4 02:06:29 2009
+: Kaldon: w
+Tue Aug  4 02:06:29 2009
+: Kaldon: save
+Tue Aug  4 02:06:31 2009
+: Kaldon: save
+Tue Aug  4 02:06:34 2009
+: Kaldon: quit
+Tue Aug  4 02:07:58 2009
+: (Unknown): yes
+Tue Aug  4 02:08:00 2009
+: (Unknown): Immortal
+Tue Aug  4 02:08:01 2009
+: Immortal: Immortal
+Tue Aug  4 02:10:07 2009
+: (Unknown): yes
+Tue Aug  4 02:10:09 2009
+: (Unknown): Immortal
+Tue Aug  4 02:10:10 2009
+: Immortal: password
+Tue Aug  4 02:10:11 2009
+: Immortal:  
+Tue Aug  4 02:10:13 2009
+: Immortal: who
+Tue Aug  4 02:10:18 2009
+: Immortal: l
+Tue Aug  4 02:10:20 2009
+: Immortal: wizlist
+Tue Aug  4 02:10:25 2009
+: Immortal: help level
+Tue Aug  4 02:10:33 2009
+: Immortal:  
+Tue Aug  4 02:10:34 2009
+: Immortal: sc
+Tue Aug  4 02:10:38 2009
+: Immortal: levels
+Tue Aug  4 02:10:40 2009
+: Immortal: eq
+Tue Aug  4 02:10:52 2009
+: Immortal: ls
+Tue Aug  4 02:10:54 2009
+: Immortal: who
+Tue Aug  4 02:10:56 2009
+: Immortal: color on
+Tue Aug  4 02:10:59 2009
+: Immortal: color
+Tue Aug  4 02:11:00 2009
+: Immortal: s
+Tue Aug  4 02:11:02 2009
+: Immortal: who
+Tue Aug  4 02:11:05 2009
+: Immortal: d
+Tue Aug  4 02:11:11 2009
+: Immortal: goto lucretia
+Tue Aug  4 02:11:13 2009
+: Immortal: who
+Tue Aug  4 02:11:15 2009
+: Immortal: help color
+Tue Aug  4 02:11:18 2009
+: Immortal: color full
+Tue Aug  4 02:11:19 2009
+: Immortal: quit
+Tue Aug  4 02:11:32 2009
+: (Unknown): yes
+Tue Aug  4 02:11:33 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:11:35 2009
+: Kaldon: sithlord
+Tue Aug  4 02:11:36 2009
+: Kaldon:  
+Tue Aug  4 02:11:37 2009
+: Kaldon: who
+Tue Aug  4 02:11:47 2009
+: Kaldon: sc
+Tue Aug  4 02:11:48 2009
+: Kaldon: aff
+Tue Aug  4 02:12:05 2009
+: Kaldon: prac
+Tue Aug  4 02:12:09 2009
+: Kaldon:  
+Tue Aug  4 02:12:09 2009
+: Kaldon:  
+Tue Aug  4 02:12:11 2009
+: Kaldon: goto 1
+Tue Aug  4 02:12:12 2009
+: Kaldon: l
+Tue Aug  4 02:12:15 2009
+: Kaldon: goto 2
+Tue Aug  4 02:12:17 2009
+: Kaldon: goto tiana
+Tue Aug  4 02:12:19 2009
+: Kaldon: l tiana
+Tue Aug  4 02:12:26 2009
+: Kaldon: stat tiana
+Tue Aug  4 02:12:45 2009
+: Kaldon: k tiana
+Tue Aug  4 02:13:09 2009
+: Kaldon: cc 'god'
+Tue Aug  4 02:13:12 2009
+: Kaldon: c 'wrath of god'
+Tue Aug  4 02:13:20 2009
+: Kaldon: c 'metero swarm'
+Tue Aug  4 02:13:23 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:13:29 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:13:34 2009
+: Kaldon: quickbust 'meteor'
+Tue Aug  4 02:13:36 2009
+: Kaldon: quickbust 'meteor'
+Tue Aug  4 02:13:37 2009
+: Kaldon: quickbust 'meteor'
+Tue Aug  4 02:13:42 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:13:47 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:13:52 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:13:57 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:14:03 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:14:08 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:14:13 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:14:18 2009
+: Kaldon: c  'meteor'
+Tue Aug  4 02:14:24 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:14:27 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:14:29 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:14:32 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:14:35 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:14:38 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:14:41 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:14:43 2009
+: Kaldon: qb 'meteor'
+Tue Aug  4 02:14:46 2009
+: Kaldon: eq
+Tue Aug  4 02:14:46 2009
+: Kaldon: l tiana
+Tue Aug  4 02:14:46 2009
+: Kaldon: load azul
+Tue Aug  4 02:14:47 2009
+: Kaldon: wield azul
+Tue Aug  4 02:14:47 2009
+: Kaldon: goto 1
+Tue Aug  4 02:14:47 2009
+: Kaldon: goto 1
+Tue Aug  4 02:14:48 2009
+: Kaldon: goto 1
+Tue Aug  4 02:14:51 2009
+: Kaldon: load
+Tue Aug  4 02:14:55 2009
+: Kaldon: help load
+Tue Aug  4 02:14:58 2009
+: Kaldon: eq
+Tue Aug  4 02:15:04 2009
+: Kaldon: goto tiana
+Tue Aug  4 02:15:04 2009
+: Kaldon: l
+Tue Aug  4 02:15:11 2009
+: Kaldon: slay tiana
+Tue Aug  4 02:15:19 2009
+: Kaldon: l in cor
+Tue Aug  4 02:15:22 2009
+: Kaldon: get all cor
+Tue Aug  4 02:15:23 2009
+: Kaldon: wear all
+Tue Aug  4 02:15:27 2009
+: Kaldon: get azul
+Tue Aug  4 02:15:30 2009
+: Kaldon: stat self
+Tue Aug  4 02:15:37 2009
+: Kaldon: stat azul
+Tue Aug  4 02:15:41 2009
+: Kaldon: c 'sanc'
+Tue Aug  4 02:15:45 2009
+: Kaldon: c 'golden armor'
+Tue Aug  4 02:15:48 2009
+: Kaldon: sc
+Tue Aug  4 02:15:49 2009
+: Kaldon: aff
+Tue Aug  4 02:15:58 2009
+: Kaldon: c 'fireshield'
+Tue Aug  4 02:16:01 2009
+: Kaldon: c 'iceshield'
+Tue Aug  4 02:16:05 2009
+: Kaldon: c 'shockshield'
+Tue Aug  4 02:16:08 2009
+: Kaldon: sc
+Tue Aug  4 02:16:10 2009
+: Kaldon: aff
+Tue Aug  4 02:16:16 2009
+: Kaldon: c 'cancel'
+Tue Aug  4 02:16:21 2009
+: Kaldon: c 'cancel'
+Tue Aug  4 02:16:26 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 02:16:30 2009
+: Kaldon: aff
+Tue Aug  4 02:16:32 2009
+: Kaldon: c 'aura'
+Tue Aug  4 02:16:36 2009
+: Kaldon: aff
+Tue Aug  4 02:16:40 2009
+: Kaldon: c 'aura-of-anti'
+Tue Aug  4 02:16:44 2009
+: Kaldon: c 'aura of anti'
+Tue Aug  4 02:16:47 2009
+: Kaldon: aff
+Tue Aug  4 02:16:59 2009
+: Kaldon: c 'dancing blade'
+Tue Aug  4 02:17:03 2009
+: Kaldon: c 'dancing'
+Tue Aug  4 02:17:05 2009
+: Kaldon: help dancing
+Tue Aug  4 02:17:12 2009
+: Kaldon: help 'swords
+Tue Aug  4 02:17:14 2009
+: Kaldon: help 'swords'
+Tue Aug  4 02:17:17 2009
+: Kaldon: c 'armor of swords'
+Tue Aug  4 02:17:22 2009
+: Kaldon: spells
+Tue Aug  4 02:17:51 2009
+: Kaldon: c 'improved invis'
+Tue Aug  4 02:17:54 2009
+: Kaldon: ls
+Tue Aug  4 02:17:55 2009
+: Kaldon: aff
+Tue Aug  4 02:18:15 2009
+: Kaldon: help shield
+Tue Aug  4 02:18:19 2009
+: Kaldon: c 'shield'
+Tue Aug  4 02:18:25 2009
+: Kaldon: help iceshield
+Tue Aug  4 02:18:30 2009
+: Kaldon: c 'blade barrier'
+Tue Aug  4 02:18:34 2009
+: Kaldon: aff
+Tue Aug  4 02:18:40 2009
+: Kaldon: l
+Tue Aug  4 02:18:43 2009
+: Kaldon: get armor
+Tue Aug  4 02:18:46 2009
+: Kaldon: wear armor
+Tue Aug  4 02:18:48 2009
+: Kaldon: get armor
+Tue Aug  4 02:18:49 2009
+: Kaldon: open down
+Tue Aug  4 02:18:50 2009
+: Kaldon: d
+Tue Aug  4 02:18:52 2009
+: Kaldon: down
+Tue Aug  4 02:18:55 2009
+: Kaldon: c 'pass door'
+Tue Aug  4 02:18:58 2009
+: Kaldon: d
+Tue Aug  4 02:19:01 2009
+: Kaldon: l
+Tue Aug  4 02:19:03 2009
+: Kaldon: unlock down
+Tue Aug  4 02:19:04 2009
+: Kaldon: get key
+Tue Aug  4 02:19:06 2009
+: Kaldon: get key
+Tue Aug  4 02:19:07 2009
+: Kaldon: unlock down
+Tue Aug  4 02:19:10 2009
+: Kaldon: open down
+Tue Aug  4 02:19:11 2009
+: Kaldon: ls
+Tue Aug  4 02:19:12 2009
+: Kaldon: down
+Tue Aug  4 02:19:15 2009
+: Kaldon: k golem
+Tue Aug  4 02:19:35 2009
+: Kaldon: aff
+Tue Aug  4 02:19:46 2009
+: Kaldon: c 'flamestrike'
+Tue Aug  4 02:19:53 2009
+: Kaldon: set
+Tue Aug  4 02:20:02 2009
+: Kaldon: c 'dispel'
+Tue Aug  4 02:20:07 2009
+: Kaldon: aff
+Tue Aug  4 02:20:15 2009
+: Kaldon: aff
+Tue Aug  4 02:20:17 2009
+: Kaldon: af
+Tue Aug  4 02:20:20 2009
+: Kaldon: slay golem
+Tue Aug  4 02:20:28 2009
+: Kaldon: l
+Tue Aug  4 02:20:32 2009
+: Kaldon: l in cor
+Tue Aug  4 02:20:36 2009
+: Kaldon: get al cor
+Tue Aug  4 02:20:36 2009
+: Kaldon: goto 1
+Tue Aug  4 02:20:47 2009
+: Kaldon: goto hierophant
+Tue Aug  4 02:20:56 2009
+: Kaldon: at self l
+Tue Aug  4 02:20:58 2009
+: Kaldon: c 'vibrate'
+Tue Aug  4 02:21:02 2009
+: Kaldon: aff
+Tue Aug  4 02:21:07 2009
+: Kaldon: c 'iceshield'
+Tue Aug  4 02:21:12 2009
+: Kaldon: c 'golden armor'
+Tue Aug  4 02:21:15 2009
+: Kaldon: aff
+Tue Aug  4 02:21:19 2009
+: Kaldon: c 'golden armor'
+Tue Aug  4 02:21:23 2009
+: Kaldon: aff
+Tue Aug  4 02:21:25 2009
+: Kaldon: c 'fireshield'
+Tue Aug  4 02:21:29 2009
+: Kaldon: c 'shockshield'
+Tue Aug  4 02:21:32 2009
+: Kaldon: c 
+Tue Aug  4 02:21:34 2009
+: Kaldon: c 'blade barrier'
+Tue Aug  4 02:21:38 2009
+: Kaldon: who
+Tue Aug  4 02:21:38 2009
+: Kaldon: s
+Tue Aug  4 02:21:39 2009
+: Kaldon: color
+Tue Aug  4 02:21:43 2009
+: Kaldon: save
+Tue Aug  4 02:21:44 2009
+: Kaldon: quit
+Tue Aug  4 02:24:14 2009
+: (Unknown): yes
+Tue Aug  4 02:24:15 2009
+: (Unknown): Keldon
+Tue Aug  4 02:24:16 2009
+: Keldon: sithlord
+Tue Aug  4 02:24:39 2009
+: (Unknown): yes
+Tue Aug  4 02:24:41 2009
+: (Unknown): Keldon
+Tue Aug  4 02:24:42 2009
+: Keldon: sithlord
+Tue Aug  4 02:25:02 2009
+: (Unknown): yes
+Tue Aug  4 02:25:04 2009
+: (Unknown): Keldon
+Tue Aug  4 02:25:05 2009
+: Keldon: sithlord
+Tue Aug  4 02:25:07 2009
+: Keldon:  
+Tue Aug  4 02:25:08 2009
+: Keldon: who
+Tue Aug  4 02:25:10 2009
+: Keldon: eq
+Tue Aug  4 02:25:11 2009
+: Keldon: inv
+Tue Aug  4 02:25:21 2009
+: Keldon: quoi
+Tue Aug  4 02:25:23 2009
+: Keldon: im
+Tue Aug  4 02:25:32 2009
+: Keldon: eq
+Tue Aug  4 02:25:33 2009
+: Keldon: inv
+Tue Aug  4 02:25:37 2009
+: Keldon: l
+Tue Aug  4 02:25:41 2009
+: Keldon: l self
+Tue Aug  4 02:25:43 2009
+: Keldon: aff
+Tue Aug  4 02:25:44 2009
+: Keldon: prac
+Tue Aug  4 02:26:16 2009
+: Keldon: quit
+Tue Aug  4 02:26:22 2009
+: (Unknown): yes
+Tue Aug  4 02:26:23 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:26:25 2009
+: Kaldon: sithlord
+Tue Aug  4 02:26:26 2009
+: Kaldon:  
+Tue Aug  4 02:26:27 2009
+: Kaldon: who
+Tue Aug  4 02:26:33 2009
+: Kaldon: restore elf
+Tue Aug  4 02:27:08 2009
+: Kaldon: prompt
+Tue Aug  4 02:27:10 2009
+: Kaldon: prompt
+Tue Aug  4 02:27:39 2009
+: Kaldon: quit
+Tue Aug  4 02:29:42 2009
+: (Unknown): yes
+Tue Aug  4 02:29:43 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:29:45 2009
+: Kaldon: sithlord
+Tue Aug  4 02:29:46 2009
+: Kaldon:  
+Tue Aug  4 02:29:47 2009
+: Kaldon: who
+Tue Aug  4 02:31:31 2009
+: Kaldon: quit
+Tue Aug  4 02:31:37 2009
+: (Unknown): yes
+Tue Aug  4 02:32:15 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:32:17 2009
+: Kaldon: sithlord
+Tue Aug  4 02:32:19 2009
+: Kaldon:  
+Tue Aug  4 02:32:20 2009
+: Kaldon: who
+Tue Aug  4 02:32:27 2009
+: Kaldon: set
+Tue Aug  4 02:32:30 2009
+: Kaldon: set self
+Tue Aug  4 02:32:34 2009
+: Kaldon: set self level 116
+Tue Aug  4 02:32:35 2009
+: Kaldon: who
+Tue Aug  4 02:32:39 2009
+: Kaldon: stat self
+Tue Aug  4 02:35:23 2009
+: Kaldon: quit
+Tue Aug  4 02:35:36 2009
+: (Unknown): Yes
+Tue Aug  4 02:35:38 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:35:40 2009
+: Kaldon: sithlord
+Tue Aug  4 02:35:41 2009
+: Kaldon:  
+Tue Aug  4 02:35:42 2009
+: Kaldon: ansi
+Tue Aug  4 02:35:45 2009
+: Kaldon: help ansi
+Tue Aug  4 02:35:49 2009
+: Kaldon: help ansi
+Tue Aug  4 02:35:51 2009
+: Kaldon: ansi
+Tue Aug  4 02:35:53 2009
+: Kaldon: tty
+Tue Aug  4 02:35:59 2009
+: Kaldon: sy &zhi
+Tue Aug  4 02:36:02 2009
+: Kaldon: say &zhi
+Tue Aug  4 02:36:26 2009
+: Kaldon: help colour
+Tue Aug  4 02:36:29 2009
+: Kaldon: help colors
+Tue Aug  4 02:36:31 2009
+: Kaldon: help color
+Tue Aug  4 02:36:35 2009
+: Kaldon: ansi
+Tue Aug  4 02:36:37 2009
+: Kaldon: set
+Tue Aug  4 02:36:39 2009
+: Kaldon: eq
+Tue Aug  4 02:36:42 2009
+: Kaldon: show
+Tue Aug  4 02:36:44 2009
+: Kaldon: prompt
+Tue Aug  4 02:36:46 2009
+: Kaldon: prompt color
+Tue Aug  4 02:36:48 2009
+: Kaldon: who
+Tue Aug  4 02:36:49 2009
+: Kaldon: prompt
+Tue Aug  4 02:36:50 2009
+: Kaldon:  
+Tue Aug  4 02:36:51 2009
+: Kaldon:  
+Tue Aug  4 02:36:51 2009
+: Kaldon:  
+Tue Aug  4 02:36:51 2009
+: Kaldon:  
+Tue Aug  4 02:36:52 2009
+: Kaldon:  
+Tue Aug  4 02:36:54 2009
+: Kaldon: quit
+Tue Aug  4 02:37:01 2009
+: (Unknown): yes
+Tue Aug  4 02:37:03 2009
+: (Unknown): Keldon
+Tue Aug  4 02:37:04 2009
+: Keldon: sithlord
+Tue Aug  4 02:37:05 2009
+: Keldon:  
+Tue Aug  4 02:37:06 2009
+: Keldon: who
+Tue Aug  4 02:37:19 2009
+: Keldon:  
+Tue Aug  4 02:37:20 2009
+: Keldon: wizlist
+Tue Aug  4 02:37:23 2009
+: Keldon: imm
+Tue Aug  4 02:37:24 2009
+: Keldon: immortals
+Tue Aug  4 02:37:26 2009
+: Keldon: immlist
+Tue Aug  4 02:37:41 2009
+: Keldon: w
+Tue Aug  4 02:37:43 2009
+: Keldon: e
+Tue Aug  4 02:37:44 2009
+: Keldon: w
+Tue Aug  4 02:37:45 2009
+: Keldon: k mutt
+Tue Aug  4 02:37:51 2009
+: Keldon: goto 100
+Tue Aug  4 02:37:52 2009
+: Keldon: l
+Tue Aug  4 02:37:55 2009
+: Keldon: stat Guildenstern's
+Tue Aug  4 02:37:57 2009
+: Keldon: stat Guild
+Tue Aug  4 02:38:03 2009
+: Keldon: leash
+Tue Aug  4 02:38:04 2009
+: Keldon: ls
+Tue Aug  4 02:38:09 2009
+: Keldon: goto 1
+Tue Aug  4 02:38:10 2009
+: Keldon: who
+Tue Aug  4 02:38:11 2009
+: Keldon: goto 2
+Tue Aug  4 02:38:14 2009
+: Keldon: goto 3
+Tue Aug  4 02:38:15 2009
+: Keldon: goto 4
+Tue Aug  4 02:38:23 2009
+: Keldon: e
+Tue Aug  4 02:38:25 2009
+: Keldon: d
+Tue Aug  4 02:38:32 2009
+: Keldon: s
+Tue Aug  4 02:38:33 2009
+: Keldon: s
+Tue Aug  4 02:38:34 2009
+: Keldon: s
+Tue Aug  4 02:38:34 2009
+: Keldon: s
+Tue Aug  4 02:38:35 2009
+: Keldon:  
+Tue Aug  4 02:38:36 2009
+: Keldon: s
+Tue Aug  4 02:38:37 2009
+: Keldon: s
+Tue Aug  4 02:38:38 2009
+: Keldon: s
+Tue Aug  4 02:38:38 2009
+: Keldon: s
+Tue Aug  4 02:39:24 2009
+: Keldon: quit
+Tue Aug  4 02:43:11 2009
+: (Unknown): yes
+Tue Aug  4 02:43:13 2009
+: (Unknown): Keldon
+Tue Aug  4 02:43:15 2009
+: Keldon: sithlord
+Tue Aug  4 02:43:16 2009
+: Keldon:  
+Tue Aug  4 02:43:17 2009
+: Keldon: who
+Tue Aug  4 02:43:44 2009
+: Keldon: quit
+Tue Aug  4 02:43:49 2009
+: (Unknown): yes
+Tue Aug  4 02:43:50 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:43:52 2009
+: Kaldon: sithlord
+Tue Aug  4 02:43:53 2009
+: Kaldon:  
+Tue Aug  4 02:43:54 2009
+: Kaldon: quit
+Tue Aug  4 02:44:58 2009
+: (Unknown): yes
+Tue Aug  4 02:44:59 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:45:01 2009
+: Kaldon: sithlord
+Tue Aug  4 02:45:02 2009
+: Kaldon:  
+Tue Aug  4 02:45:03 2009
+: Kaldon: quit
+Tue Aug  4 02:47:40 2009
+: (Unknown): yes
+Tue Aug  4 02:47:41 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:47:43 2009
+: Kaldon: sithlord
+Tue Aug  4 02:47:44 2009
+: Kaldon:  
+Tue Aug  4 02:47:45 2009
+: Kaldon: who
+Tue Aug  4 02:47:46 2009
+: Kaldon: act
+Tue Aug  4 02:47:53 2009
+: Kaldon: ls
+Tue Aug  4 02:47:55 2009
+: Kaldon: set
+Tue Aug  4 02:47:57 2009
+: Kaldon: who
+Tue Aug  4 02:48:01 2009
+: Kaldon: goto 223
+Tue Aug  4 02:48:03 2009
+: Kaldon: n
+Tue Aug  4 02:48:04 2009
+: Kaldon: zone
+Tue Aug  4 02:48:06 2009
+: Kaldon: zlist
+Tue Aug  4 02:48:10 2009
+: Kaldon: zonelist
+Tue Aug  4 02:48:11 2009
+: Kaldon: help zone
+Tue Aug  4 02:48:14 2009
+: Kaldon: help zones
+Tue Aug  4 02:48:15 2009
+: Kaldon: imm
+Tue Aug  4 02:48:16 2009
+: Kaldon: wizlist
+Tue Aug  4 02:48:18 2009
+: Kaldon: wiz
+Tue Aug  4 02:48:30 2009
+: Kaldon: users
+Tue Aug  4 02:48:45 2009
+: Kaldon: showcorrupt
+Tue Aug  4 02:48:58 2009
+: Kaldon: deny
+Tue Aug  4 02:49:00 2009
+: Kaldon: help deny
+Tue Aug  4 02:49:14 2009
+: Kaldon: help pload
+Tue Aug  4 02:49:18 2009
+: Kaldon: pload keldon
+Tue Aug  4 02:49:21 2009
+: Kaldon: l
+Tue Aug  4 02:49:25 2009
+: Kaldon: stat Keldon
+Tue Aug  4 02:49:31 2009
+: Kaldon: set Keldon level
+Tue Aug  4 02:49:34 2009
+: Kaldon: set Keldon level 115
+Tue Aug  4 02:49:37 2009
+: Kaldon: who
+Tue Aug  4 02:49:38 2009
+: Kaldon: stat Keldon
+Tue Aug  4 02:49:54 2009
+: Kaldon: l
+Tue Aug  4 02:49:56 2009
+: Kaldon: set keldon
+Tue Aug  4 02:49:57 2009
+: Kaldon: set
+Tue Aug  4 02:49:59 2009
+: Kaldon: help set
+Tue Aug  4 02:50:02 2009
+: Kaldon: wiz
+Tue Aug  4 02:50:06 2009
+: Kaldon: pset
+Tue Aug  4 02:50:13 2009
+: Kaldon: demigod
+Tue Aug  4 02:50:16 2009
+: Kaldon: demigod oi
+Tue Aug  4 02:50:32 2009
+: Kaldon: help marry
+Tue Aug  4 02:50:49 2009
+: Kaldon: prac
+Tue Aug  4 02:50:55 2009
+: Kaldon: help newring
+Tue Aug  4 02:51:01 2009
+: Kaldon: prac
+Tue Aug  4 02:51:05 2009
+: Kaldon: wiz
+Tue Aug  4 02:51:17 2009
+: Kaldon: help timequake
+Tue Aug  4 02:51:23 2009
+: Kaldon: c 'timequake'
+Tue Aug  4 02:51:28 2009
+: Kaldon: goto 1
+Tue Aug  4 02:51:31 2009
+: Kaldon: goto keldon
+Tue Aug  4 02:51:37 2009
+: Kaldon: n
+Tue Aug  4 02:51:38 2009
+: Kaldon: n
+Tue Aug  4 02:51:39 2009
+: Kaldon: n
+Tue Aug  4 02:51:40 2009
+: Kaldon: n
+Tue Aug  4 02:51:44 2009
+: Kaldon: w
+Tue Aug  4 02:51:45 2009
+: Kaldon: d
+Tue Aug  4 02:51:47 2009
+: Kaldon: goto hier
+Tue Aug  4 02:51:49 2009
+: Kaldon: s
+Tue Aug  4 02:51:52 2009
+: Kaldon: l self
+Tue Aug  4 02:51:52 2009
+: Kaldon: aff
+Tue Aug  4 02:51:55 2009
+: Kaldon: c 'chaos'
+Tue Aug  4 02:52:01 2009
+: Kaldon: c 'chaos blade'
+Tue Aug  4 02:52:06 2009
+: Kaldon: stat prot
+Tue Aug  4 02:52:09 2009
+: Kaldon: stat protec
+Tue Aug  4 02:52:13 2009
+: Kaldon: stat protector
+Tue Aug  4 02:52:21 2009
+: Kaldon: c 'chaos field'
+Tue Aug  4 02:52:25 2009
+: Kaldon: c 'chaos field
+Tue Aug  4 02:52:26 2009
+: Kaldon: chaos
+Tue Aug  4 02:52:28 2009
+: Kaldon: field
+Tue Aug  4 02:52:30 2009
+: Kaldon: help 'chaos field'
+Tue Aug  4 02:52:31 2009
+: Kaldon: s
+Tue Aug  4 02:52:33 2009
+: Kaldon: c 'chaos'
+Tue Aug  4 02:52:37 2009
+: Kaldon: aff
+Tue Aug  4 02:52:54 2009
+: Kaldon: who
+Tue Aug  4 02:52:59 2009
+: Kaldon: l
+Tue Aug  4 02:53:03 2009
+: Kaldon: s
+Tue Aug  4 02:53:03 2009
+: Kaldon: s
+Tue Aug  4 02:53:04 2009
+: Kaldon: s
+Tue Aug  4 02:53:05 2009
+: Kaldon: s
+Tue Aug  4 02:53:07 2009
+: Kaldon: restore self
+Tue Aug  4 02:53:11 2009
+: Kaldon: stat police
+Tue Aug  4 02:53:13 2009
+: Kaldon: mstat police
+Tue Aug  4 02:53:22 2009
+: Kaldon: spec
+Tue Aug  4 02:53:24 2009
+: Kaldon: wiz
+Tue Aug  4 02:53:37 2009
+: Kaldon: mstat officer
+Tue Aug  4 02:53:47 2009
+: Kaldon: medit 26027
+Tue Aug  4 02:53:57 2009
+: Kaldon: l
+Tue Aug  4 02:54:00 2009
+: Kaldon: look
+Tue Aug  4 02:54:01 2009
+: Kaldon: level
+Tue Aug  4 02:54:02 2009
+: Kaldon: level 2
+Tue Aug  4 02:54:07 2009
+: Kaldon: level
+Tue Aug  4 02:54:09 2009
+: Kaldon: sc
+Tue Aug  4 02:54:16 2009
+: Kaldon: level
+Tue Aug  4 02:54:18 2009
+: Kaldon: help level
+Tue Aug  4 02:54:24 2009
+: Kaldon: ls
+Tue Aug  4 02:54:26 2009
+: Kaldon: ls
+Tue Aug  4 02:54:27 2009
+: Kaldon: l
+Tue Aug  4 02:54:30 2009
+: Kaldon: look
+Tue Aug  4 02:54:32 2009
+: Kaldon: n
+Tue Aug  4 02:54:36 2009
+: Kaldon: level
+Tue Aug  4 02:54:39 2009
+: Kaldon: level 115
+Tue Aug  4 02:54:46 2009
+: (Unknown): yes
+Tue Aug  4 02:54:47 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:54:49 2009
+: Kaldon: sithlord
+Tue Aug  4 02:54:51 2009
+: Kaldon: l
+Tue Aug  4 02:54:55 2009
+: Kaldon: medit 26027
+Tue Aug  4 02:54:56 2009
+: Kaldon: quit
+Tue Aug  4 02:55:14 2009
+: (Unknown): yes
+Tue Aug  4 02:55:15 2009
+: (Unknown): Kaldon
+Tue Aug  4 02:55:16 2009
+: Kaldon: sithlord
+Tue Aug  4 02:55:17 2009
+: Kaldon:  
+Tue Aug  4 02:55:19 2009
+: Kaldon: w
+Tue Aug  4 02:55:21 2009
+: Kaldon: who
+Tue Aug  4 02:55:24 2009
+: Kaldon: goto 1123
+Tue Aug  4 02:55:27 2009
+: Kaldon: u
+Tue Aug  4 02:55:28 2009
+: Kaldon: u
+Tue Aug  4 02:55:30 2009
+: Kaldon: fly
+Tue Aug  4 02:55:34 2009
+: Kaldon: c 'fly'
+Tue Aug  4 02:55:39 2009
+: Kaldon: aff
+Tue Aug  4 02:55:41 2009
+: Kaldon: u
+Tue Aug  4 02:55:43 2009
+: Kaldon: n
+Tue Aug  4 02:55:44 2009
+: Kaldon: d
+Tue Aug  4 02:55:44 2009
+: Kaldon: d
+Tue Aug  4 02:55:45 2009
+: Kaldon: d
+Tue Aug  4 02:55:47 2009
+: Kaldon: s
+Tue Aug  4 02:55:47 2009
+: Kaldon: d
+Tue Aug  4 02:55:48 2009
+: Kaldon: d
+Tue Aug  4 02:55:49 2009
+: Kaldon: d
+Tue Aug  4 02:55:51 2009
+: Kaldon: e
+Tue Aug  4 02:55:53 2009
+: Kaldon: l sven
+Tue Aug  4 02:55:59 2009
+: Kaldon: goto hiero
+Tue Aug  4 02:56:02 2009
+: Kaldon: goto 2.hiero
+Tue Aug  4 02:56:21 2009
+: Kaldon: s
+Tue Aug  4 02:56:21 2009
+: Kaldon: s
+Tue Aug  4 02:56:22 2009
+: Kaldon: s
+Tue Aug  4 02:56:26 2009
+: Kaldon: s
+Tue Aug  4 02:56:27 2009
+: Kaldon: s
+Tue Aug  4 02:56:27 2009
+: Kaldon: s
+Tue Aug  4 02:56:28 2009
+: Kaldon: s
+Tue Aug  4 02:56:29 2009
+: Kaldon: s
+Tue Aug  4 02:56:30 2009
+: Kaldon: s
+Tue Aug  4 02:56:31 2009
+: Kaldon: s
+Tue Aug  4 02:56:31 2009
+: Kaldon: s
+Tue Aug  4 02:56:32 2009
+: Kaldon: s
+Tue Aug  4 02:56:33 2009
+: Kaldon: s
+Tue Aug  4 02:56:34 2009
+: Kaldon: s
+Tue Aug  4 02:56:35 2009
+: Kaldon: s
+Tue Aug  4 02:56:39 2009
+: Kaldon: c 'pass door'
+Tue Aug  4 02:56:43 2009
+: Kaldon: s
+Tue Aug  4 02:56:44 2009
+: Kaldon: comlog
+Tue Aug  4 02:56:46 2009
+: Kaldon: l
+Tue Aug  4 02:56:47 2009
+: Kaldon: w
+Tue Aug  4 02:56:48 2009
+: Kaldon: e
+Tue Aug  4 02:56:49 2009
+: Kaldon: e
+Tue Aug  4 02:56:49 2009
+: Kaldon: e
+Tue Aug  4 02:56:50 2009
+: Kaldon: e
+Tue Aug  4 02:56:51 2009
+: Kaldon:  
+Tue Aug  4 02:56:52 2009
+: Kaldon: en
+Tue Aug  4 02:56:53 2009
+: Kaldon: n
+Tue Aug  4 02:56:54 2009
+: Kaldon: e
+Tue Aug  4 02:56:55 2009
+: Kaldon: e
+Tue Aug  4 02:56:56 2009
+: Kaldon: e
+Tue Aug  4 02:56:57 2009
+: Kaldon: e
+Tue Aug  4 02:56:57 2009
+: Kaldon: n
+Tue Aug  4 02:56:58 2009
+: Kaldon: n
+Tue Aug  4 02:56:59 2009
+: Kaldon: n
+Tue Aug  4 02:57:00 2009
+: Kaldon: e
+Tue Aug  4 02:57:01 2009
+: Kaldon: e
+Tue Aug  4 02:57:02 2009
+: Kaldon: w
+Tue Aug  4 02:57:05 2009
+: Kaldon: enter outpost
+Tue Aug  4 02:57:07 2009
+: Kaldon: restore self
+Tue Aug  4 02:57:11 2009
+: Kaldon: set self mv 150
+Tue Aug  4 02:57:12 2009
+: Kaldon: eq
+Tue Aug  4 02:57:13 2009
+: Kaldon: sc
+Tue Aug  4 02:57:17 2009
+: Kaldon: set self mvp
+Tue Aug  4 02:57:20 2009
+: Kaldon: help set
+Tue Aug  4 02:57:22 2009
+: Kaldon: help pset
+Tue Aug  4 02:57:24 2009
+: Kaldon: help mset
+Tue Aug  4 02:58:04 2009
+: Kaldon: sset self mv 1000
+Tue Aug  4 02:58:11 2009
+: Kaldon: sset self move 1000
+Tue Aug  4 02:58:21 2009
+: Kaldon: l
+Tue Aug  4 02:58:23 2009
+: Kaldon: c 'fly'
+Tue Aug  4 02:58:28 2009
+: Kaldon: e
+Tue Aug  4 02:58:30 2009
+: Kaldon: e
+Tue Aug  4 02:58:31 2009
+: Kaldon: e
+Tue Aug  4 02:58:32 2009
+: Kaldon: e
+Tue Aug  4 02:58:33 2009
+: Kaldon: e
+Tue Aug  4 02:58:34 2009
+: Kaldon: e
+Tue Aug  4 02:58:35 2009
+: Kaldon: e
+Tue Aug  4 02:58:35 2009
+: Kaldon: e
+Tue Aug  4 02:58:36 2009
+: Kaldon: e
+Tue Aug  4 02:58:39 2009
+: Kaldon: w
+Tue Aug  4 02:58:42 2009
+: Kaldon: l in corpse
+Tue Aug  4 02:58:45 2009
+: Kaldon: l corpse
+Tue Aug  4 02:58:48 2009
+: Kaldon: goto hiero
+Tue Aug  4 02:58:50 2009
+: Kaldon: goto 3.hiero
+Tue Aug  4 02:58:52 2009
+: Kaldon: goto 2.hiero
+Tue Aug  4 02:58:53 2009
+: Kaldon: s
+Tue Aug  4 02:58:54 2009
+: Kaldon: s
+Tue Aug  4 02:58:55 2009
+: Kaldon: s
+Tue Aug  4 02:58:55 2009
+: Kaldon: s
+Tue Aug  4 02:58:56 2009
+: Kaldon: w
+Tue Aug  4 02:58:57 2009
+: Kaldon: e
+Tue Aug  4 02:58:58 2009
+: Kaldon: s
+Tue Aug  4 02:58:58 2009
+: Kaldon: s
+Tue Aug  4 02:58:59 2009
+: Kaldon: w
+Tue Aug  4 02:59:00 2009
+: Kaldon: s
+Tue Aug  4 02:59:01 2009
+: Kaldon: w
+Tue Aug  4 02:59:02 2009
+: Kaldon: s
+Tue Aug  4 02:59:05 2009
+: Kaldon: n
+Tue Aug  4 02:59:05 2009
+: Kaldon: w
+Tue Aug  4 02:59:06 2009
+: Kaldon: s
+Tue Aug  4 02:59:09 2009
+: Kaldon: n
+Tue Aug  4 02:59:10 2009
+: Kaldon: w
+Tue Aug  4 02:59:11 2009
+: Kaldon: s
+Tue Aug  4 02:59:12 2009
+: Kaldon: n
+Tue Aug  4 02:59:13 2009
+: Kaldon: w
+Tue Aug  4 02:59:14 2009
+: Kaldon: s
+Tue Aug  4 02:59:16 2009
+: Kaldon: quest
+Tue Aug  4 02:59:19 2009
+: Kaldon: quest info
+Tue Aug  4 02:59:21 2009
+: Kaldon: quest points
+Tue Aug  4 02:59:23 2009
+: Kaldon: quest list
+Tue Aug  4 02:59:35 2009
+: Kaldon: quest list
+Tue Aug  4 02:59:52 2009
+: Kaldon: quest buy 8
+Tue Aug  4 02:59:55 2009
+: Kaldon: quest buy 7
+Tue Aug  4 02:59:58 2009
+: Kaldon: quest buy 6
+Tue Aug  4 03:00:01 2009
+: Kaldon: quest buy 7
+Tue Aug  4 03:00:07 2009
+: Kaldon: quest buy 9
+Tue Aug  4 03:00:09 2009
+: Kaldon: quest buy 10
+Tue Aug  4 03:00:11 2009
+: Kaldon: quest buy 10
+Tue Aug  4 03:00:12 2009
+: Kaldon: eq
+Tue Aug  4 03:00:13 2009
+: Kaldon: inv
+Tue Aug  4 03:00:16 2009
+: Kaldon: wear ring
+Tue Aug  4 03:00:17 2009
+: Kaldon: wear ring
+Tue Aug  4 03:00:19 2009
+: Kaldon: stat ring
+Tue Aug  4 03:00:41 2009
+: Kaldon: eq
+Tue Aug  4 03:00:43 2009
+: Kaldon: inv
+Tue Aug  4 03:00:46 2009
+: Kaldon: stat sword
+Tue Aug  4 03:00:53 2009
+: Kaldon: wield sword
+Tue Aug  4 03:00:57 2009
+: Kaldon: l sword
+Tue Aug  4 03:01:01 2009
+: Kaldon: c 'identify' sword
+Tue Aug  4 03:01:08 2009
+: Kaldon: wear eye
+Tue Aug  4 03:01:10 2009
+: Kaldon: stare sword
+Tue Aug  4 03:01:16 2009
+: Kaldon: stare eye
+Tue Aug  4 03:01:26 2009
+: Kaldon: invoke sword norht
+Tue Aug  4 03:01:32 2009
+: Kaldon: invoke eye north
+Tue Aug  4 03:01:35 2009
+: Kaldon: invoke eye
+Tue Aug  4 03:01:41 2009
+: Kaldon: l north
+Tue Aug  4 03:01:42 2009
+: Kaldon: inv
+Tue Aug  4 03:01:47 2009
+: Kaldon: stare lantern
+Tue Aug  4 03:01:54 2009
+: Kaldon: stare amulet
+Tue Aug  4 03:02:01 2009
+: Kaldon: wear amulet
+Tue Aug  4 03:02:02 2009
+: Kaldon: wear amulet
+Tue Aug  4 03:02:02 2009
+: Kaldon: wear lantern
+Tue Aug  4 03:02:04 2009
+: Kaldon: eq
+Tue Aug  4 03:02:11 2009
+: Kaldon: stare coronet
+Tue Aug  4 03:02:18 2009
+: Kaldon: l
+Tue Aug  4 03:02:18 2009
+: Kaldon: quest list
+Tue Aug  4 03:02:45 2009
+: Kaldon: quest buy 9
+Tue Aug  4 03:02:48 2009
+: Kaldon: dual sword
+Tue Aug  4 03:02:49 2009
+: Kaldon: eq
+Tue Aug  4 03:02:51 2009
+: Kaldon: n
+Tue Aug  4 03:02:55 2009
+: Kaldon: e
+Tue Aug  4 03:02:56 2009
+: Kaldon: e
+Tue Aug  4 03:02:57 2009
+: Kaldon: aff
+Tue Aug  4 03:02:59 2009
+: Kaldon: n
+Tue Aug  4 03:03:04 2009
+: Kaldon: goto trin
+Tue Aug  4 03:03:09 2009
+: Kaldon: l trinn
+Tue Aug  4 03:03:13 2009
+: Kaldon: k trinn
+Tue Aug  4 03:03:19 2009
+: Kaldon: disarm
+Tue Aug  4 03:03:22 2009
+: Kaldon: disarm
+Tue Aug  4 03:03:23 2009
+: Kaldon: dis
+Tue Aug  4 03:03:26 2009
+: Kaldon: circle
+Tue Aug  4 03:03:27 2009
+: Kaldon: circle
+Tue Aug  4 03:03:28 2009
+: Kaldon: circ
+Tue Aug  4 03:03:36 2009
+: Kaldon: bash
+Tue Aug  4 03:03:39 2009
+: Kaldon: circle
+Tue Aug  4 03:03:41 2009
+: Kaldon: help circle
+Tue Aug  4 03:03:44 2009
+: Kaldon: c 'remoe poison'
+Tue Aug  4 03:03:48 2009
+: Kaldon: c 'remove poison'
+Tue Aug  4 03:03:52 2009
+: Kaldon: c 'cure poison'
+Tue Aug  4 03:03:55 2009
+: Kaldon: sc
+Tue Aug  4 03:03:58 2009
+: Kaldon: help bash
+Tue Aug  4 03:04:04 2009
+: Kaldon: help circle
+Tue Aug  4 03:04:05 2009
+: Kaldon: bash
+Tue Aug  4 03:04:09 2009
+: Kaldon: 'circle
+Tue Aug  4 03:04:11 2009
+: Kaldon: circle
+Tue Aug  4 03:04:13 2009
+: Kaldon: l
+Tue Aug  4 03:04:15 2009
+: Kaldon: dbs
+Tue Aug  4 03:04:16 2009
+: Kaldon: double
+Tue Aug  4 03:04:17 2009
+: Kaldon: bs
+Tue Aug  4 03:04:22 2009
+: Kaldon: l in corpse
+Tue Aug  4 03:04:27 2009
+: Kaldon: stare flamberge
+Tue Aug  4 03:04:29 2009
+: Kaldon: eq
+Tue Aug  4 03:04:32 2009
+: Kaldon: rm sword
+Tue Aug  4 03:04:35 2009
+: Kaldon: rm sword
+Tue Aug  4 03:04:36 2009
+: Kaldon: rem sword
+Tue Aug  4 03:04:39 2009
+: Kaldon: poisoin sword
+Tue Aug  4 03:04:42 2009
+: Kaldon: poison sword
+Tue Aug  4 03:04:46 2009
+: Kaldon: help poisoin
+Tue Aug  4 03:04:48 2009
+: Kaldon: help poison
+Tue Aug  4 03:04:53 2009
+: Kaldon: c 'poison' sword
+Tue Aug  4 03:04:58 2009
+: Kaldon: c 'poison weapon' sword
+Tue Aug  4 03:05:03 2009
+: Kaldon: poison 
+Tue Aug  4 03:05:05 2009
+: Kaldon: help poison
+Tue Aug  4 03:05:13 2009
+: Kaldon: help 'poison weapon'
+Tue Aug  4 03:05:14 2009
+: Kaldon: use
+Tue Aug  4 03:05:19 2009
+: Kaldon: use poisoin
+Tue Aug  4 03:05:22 2009
+: Kaldon: use poison
+Tue Aug  4 03:05:29 2009
+: Kaldon: use poison
+Tue Aug  4 03:05:36 2009
+: Kaldon: use 'poison weapon' sword
+Tue Aug  4 03:05:39 2009
+: Kaldon: inv
+Tue Aug  4 03:05:47 2009
+: Kaldon: use 'strip'
+Tue Aug  4 03:05:51 2009
+: Kaldon: use 'bs'
+Tue Aug  4 03:05:54 2009
+: Kaldon: use 'backstab'
+Tue Aug  4 03:05:56 2009
+: Kaldon: l
+Tue Aug  4 03:06:00 2009
+: Kaldon: e
+Tue Aug  4 03:06:02 2009
+: Kaldon: n
+Tue Aug  4 03:06:03 2009
+: Kaldon:  
+Tue Aug  4 03:06:03 2009
+: Kaldon: n
+Tue Aug  4 03:06:10 2009
+: Kaldon: use 'circle' loran
+Tue Aug  4 03:06:15 2009
+: Kaldon: use 'circle' loran
+Tue Aug  4 03:06:18 2009
+: Kaldon: use 'circle' loran
+Tue Aug  4 03:06:20 2009
+: Kaldon: use 'circle' loran
+Tue Aug  4 03:06:21 2009
+: Kaldon: use 'back kick'
+Tue Aug  4 03:06:24 2009
+: Kaldon: use 'back kick'
+Tue Aug  4 03:06:29 2009
+: Kaldon: use 'back kick'
+Tue Aug  4 03:06:34 2009
+: Kaldon: use 'back kick'
+Tue Aug  4 03:06:38 2009
+: Kaldon: c 'wrath of god' loran
+Tue Aug  4 03:06:45 2009
+: Kaldon: dim
+Tue Aug  4 03:06:47 2009
+: Kaldon: use 'dim mak'
+Tue Aug  4 03:06:49 2009
+: Kaldon: l
+Tue Aug  4 03:06:55 2009
+: Kaldon: use 'dim mak' kyel
+Tue Aug  4 03:07:04 2009
+: Kaldon: use 'dim mak' kyel
+Tue Aug  4 03:07:10 2009
+: Kaldon: use 'dim mak' kyel
+Tue Aug  4 03:07:10 2009
+: Kaldon: use 'dim mak' kyel
+Tue Aug  4 03:07:13 2009
+: Kaldon: use 'dim mak' kyel
+Tue Aug  4 03:07:22 2009
+: Kaldon: eq
+Tue Aug  4 03:07:29 2009
+: Kaldon: restore self
+Tue Aug  4 03:07:30 2009
+: Kaldon: inv
+Tue Aug  4 03:07:31 2009
+: Kaldon: eq
+Tue Aug  4 03:07:34 2009
+: Kaldon: c 'restore sight'
+Tue Aug  4 03:07:35 2009
+: Kaldon: af
+Tue Aug  4 03:07:40 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:07:45 2009
+: Kaldon: eq
+Tue Aug  4 03:07:45 2009
+: Kaldon: inv
+Tue Aug  4 03:07:59 2009
+: Kaldon: help iceblade
+Tue Aug  4 03:08:02 2009
+: Kaldon: help ice
+Tue Aug  4 03:08:05 2009
+: Kaldon: prac
+Tue Aug  4 03:08:16 2009
+: Kaldon:  
+Tue Aug  4 03:08:40 2009
+: Kaldon: inv
+Tue Aug  4 03:08:41 2009
+: Kaldon: save
+Tue Aug  4 03:08:42 2009
+: Kaldon: eq
+Tue Aug  4 03:08:45 2009
+: Kaldon: rm sword
+Tue Aug  4 03:08:49 2009
+: Kaldon: rem sword
+Tue Aug  4 03:08:53 2009
+: Kaldon: use 'poison' sword
+Tue Aug  4 03:08:55 2009
+: Kaldon: inv
+Tue Aug  4 03:09:01 2009
+: Kaldon: use 'poison weapon' sword
+Tue Aug  4 03:09:06 2009
+: Kaldon: use 'poison weapon' 2.sword
+Tue Aug  4 03:09:09 2009
+: Kaldon: inv
+Tue Aug  4 03:09:12 2009
+: Kaldon: c 'chaos blade' sword
+Tue Aug  4 03:09:19 2009
+: Kaldon: use 'unpoison' sword
+Tue Aug  4 03:09:23 2009
+: Kaldon: stat sword
+Tue Aug  4 03:09:32 2009
+: Kaldon: use 'strip poison' sword
+Tue Aug  4 03:09:37 2009
+: Kaldon: help 'poison weapon'
+Tue Aug  4 03:09:42 2009
+: Kaldon: help 'strip poison'
+Tue Aug  4 03:09:43 2009
+: Kaldon: prac
+Tue Aug  4 03:10:06 2009
+: Kaldon: eq
+Tue Aug  4 03:10:07 2009
+: Kaldon: inv
+Tue Aug  4 03:10:11 2009
+: Kaldon: use 'depoison weapon' sword
+Tue Aug  4 03:10:15 2009
+: Kaldon: use 'depoison weapon' 2.sword
+Tue Aug  4 03:10:19 2009
+: Kaldon: inv
+Tue Aug  4 03:10:23 2009
+: Kaldon: inv
+Tue Aug  4 03:10:26 2009
+: Kaldon: help 'chaos blade'
+Tue Aug  4 03:10:32 2009
+: Kaldon: spells pal
+Tue Aug  4 03:10:35 2009
+: Kaldon: spells
+Tue Aug  4 03:10:40 2009
+: Kaldon: skills
+Tue Aug  4 03:10:43 2009
+: Kaldon: spells
+Tue Aug  4 03:10:49 2009
+: Kaldon: c
+Tue Aug  4 03:10:52 2009
+: Kaldon: c 'fly'
+Tue Aug  4 03:10:59 2009
+: Kaldon: slist pal
+Tue Aug  4 03:11:09 2009
+: Kaldon: help 'holy sword'
+Tue Aug  4 03:11:13 2009
+: Kaldon: help 'holy sword'
+Tue Aug  4 03:11:18 2009
+: Kaldon: slist nec
+Tue Aug  4 03:11:36 2009
+: Kaldon: slist mag
+Tue Aug  4 03:11:52 2009
+: Kaldon: slist pal
+Tue Aug  4 03:11:58 2009
+: Kaldon: inv
+Tue Aug  4 03:12:06 2009
+: Kaldon: c 'ice blade' sword
+Tue Aug  4 03:12:10 2009
+: Kaldon: c 'ice blade
+Tue Aug  4 03:12:13 2009
+: Kaldon: c 'frost blade' sword
+Tue Aug  4 03:12:21 2009
+: Kaldon: c 'chaos blade' sword
+Tue Aug  4 03:12:28 2009
+: Kaldon: poision sword
+Tue Aug  4 03:12:30 2009
+: Kaldon: use 'poison weapon' sword
+Tue Aug  4 03:12:34 2009
+: Kaldon: use 'poison weapon' 2.sword
+Tue Aug  4 03:12:37 2009
+: Kaldon: wield sworddual sword
+Tue Aug  4 03:12:41 2009
+: Kaldon: dual sword
+Tue Aug  4 03:12:42 2009
+: Kaldon: eq
+Tue Aug  4 03:12:44 2009
+: Kaldon: wield sword
+Tue Aug  4 03:12:45 2009
+: Kaldon: l
+Tue Aug  4 03:12:47 2009
+: Kaldon: s
+Tue Aug  4 03:12:55 2009
+: Kaldon: use 'assassinate' sarna
+Tue Aug  4 03:13:08 2009
+: Kaldon: l
+Tue Aug  4 03:13:24 2009
+: Kaldon: c c 'fireball'
+Tue Aug  4 03:13:30 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:13:34 2009
+: Kaldon: n
+Tue Aug  4 03:13:38 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:13:42 2009
+: Kaldon: blindfold
+Tue Aug  4 03:13:44 2009
+: Kaldon: use 'blindfold'
+Tue Aug  4 03:13:46 2009
+: Kaldon: s
+Tue Aug  4 03:13:47 2009
+: Kaldon: l
+Tue Aug  4 03:13:48 2009
+: Kaldon: eq
+Tue Aug  4 03:13:49 2009
+: Kaldon: aff
+Tue Aug  4 03:13:56 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:14:00 2009
+: Kaldon: restore self
+Tue Aug  4 03:14:01 2009
+: Kaldon: goto hierophant
+Tue Aug  4 03:14:04 2009
+: Kaldon: goto hiero
+Tue Aug  4 03:14:08 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:14:13 2009
+: Kaldon: l
+Tue Aug  4 03:14:16 2009
+: Kaldon: blindfold
+Tue Aug  4 03:14:18 2009
+: Kaldon: help blindfold
+Tue Aug  4 03:14:26 2009
+: Kaldon: eq
+Tue Aug  4 03:14:29 2009
+: Kaldon: aff
+Tue Aug  4 03:14:34 2009
+: Kaldon: use 'cloak'
+Tue Aug  4 03:14:37 2009
+: Kaldon: eq
+Tue Aug  4 03:14:40 2009
+: Kaldon: l self
+Tue Aug  4 03:14:44 2009
+: Kaldon: goto 1223
+Tue Aug  4 03:14:46 2009
+: Kaldon: goto 100
+Tue Aug  4 03:14:47 2009
+: Kaldon: l
+Tue Aug  4 03:14:49 2009
+: Kaldon: goto 1000
+Tue Aug  4 03:14:51 2009
+: Kaldon: goto 69
+Tue Aug  4 03:14:55 2009
+: Kaldon: goto 234234
+Tue Aug  4 03:14:57 2009
+: Kaldon: goto 12332
+Tue Aug  4 03:15:01 2009
+: Kaldon: goto 32432
+Tue Aug  4 03:15:03 2009
+: Kaldon: goto 3000
+Tue Aug  4 03:15:04 2009
+: Kaldon: l
+Tue Aug  4 03:15:06 2009
+: Kaldon: goto 4000
+Tue Aug  4 03:15:06 2009
+: Kaldon: l
+Tue Aug  4 03:15:08 2009
+: Kaldon: goto 1000
+Tue Aug  4 03:15:10 2009
+: Kaldon: goto 20
+Tue Aug  4 03:15:13 2009
+: Kaldon: got hiero
+Tue Aug  4 03:15:14 2009
+: Kaldon: l
+Tue Aug  4 03:15:16 2009
+: Kaldon: stat room
+Tue Aug  4 03:15:24 2009
+: Kaldon: got 2600
+Tue Aug  4 03:15:26 2009
+: Kaldon: got 26000
+Tue Aug  4 03:15:28 2009
+: Kaldon: l
+Tue Aug  4 03:15:31 2009
+: Kaldon: goto 27000
+Tue Aug  4 03:15:33 2009
+: Kaldon: rlist
+Tue Aug  4 03:15:34 2009
+: Kaldon: zone
+Tue Aug  4 03:15:36 2009
+: Kaldon: z
+Tue Aug  4 03:15:37 2009
+: Kaldon: imm
+Tue Aug  4 03:15:39 2009
+: Kaldon: imm
+Tue Aug  4 03:15:40 2009
+: Kaldon: wiz
+Tue Aug  4 03:16:03 2009
+: Kaldon: help return
+Tue Aug  4 03:16:07 2009
+: Kaldon: help iscore
+Tue Aug  4 03:16:12 2009
+: Kaldon: help advance
+Tue Aug  4 03:16:28 2009
+: Kaldon: who
+Tue Aug  4 03:16:35 2009
+: Kaldon: advance kaldon 116
+Tue Aug  4 03:16:39 2009
+: Kaldon: who
+Tue Aug  4 03:16:45 2009
+: Kaldon: advance kaldon 117
+Tue Aug  4 03:16:47 2009
+: Kaldon: who
+Tue Aug  4 03:16:51 2009
+: Kaldon: l
+Tue Aug  4 03:16:54 2009
+: Kaldon: wiz
+Tue Aug  4 03:17:02 2009
+: Kaldon: help guard
+Tue Aug  4 03:17:06 2009
+: Kaldon: guard
+Tue Aug  4 03:17:08 2009
+: Kaldon: stormlord
+Tue Aug  4 03:17:11 2009
+: Kaldon: timelord
+Tue Aug  4 03:17:12 2009
+: Kaldon: who
+Tue Aug  4 03:17:18 2009
+: Kaldon: rings
+Tue Aug  4 03:17:20 2009
+: Kaldon: inv
+Tue Aug  4 03:17:23 2009
+: Kaldon: prac
+Tue Aug  4 03:17:29 2009
+: Kaldon: wizlist
+Tue Aug  4 03:17:37 2009
+: Kaldon: wiz
+Tue Aug  4 03:17:39 2009
+: Kaldon:  
+Tue Aug  4 03:17:39 2009
+: Kaldon: hi
+Tue Aug  4 03:17:44 2009
+: Kaldon: :hi
+Tue Aug  4 03:17:53 2009
+: Kaldon: holylight
+Tue Aug  4 03:17:56 2009
+: Kaldon: help holylight
+Tue Aug  4 03:18:09 2009
+: Kaldon: who
+Tue Aug  4 03:18:11 2009
+: Kaldon: l
+Tue Aug  4 03:18:14 2009
+: Kaldon: wiz
+Tue Aug  4 03:18:22 2009
+: Kaldon: help wizify
+Tue Aug  4 03:18:32 2009
+: Kaldon: help makelegend
+Tue Aug  4 03:18:35 2009
+: Kaldon: makelegend
+Tue Aug  4 03:18:41 2009
+: Kaldon: makelegend kaldon
+Tue Aug  4 03:18:48 2009
+: Kaldon: who
+Tue Aug  4 03:19:31 2009
+: Kaldon: l
+Tue Aug  4 03:19:33 2009
+: Kaldon: l
+Tue Aug  4 03:19:35 2009
+: Kaldon: stat room
+Tue Aug  4 03:19:41 2009
+: Kaldon: fle
+Tue Aug  4 03:19:43 2009
+: Kaldon: retreat
+Tue Aug  4 03:19:46 2009
+: Kaldon: help retreat
+Tue Aug  4 03:19:48 2009
+: Kaldon: use 'retreat'
+Tue Aug  4 03:19:51 2009
+: Kaldon: s
+Tue Aug  4 03:19:52 2009
+: Kaldon: s
+Tue Aug  4 03:19:52 2009
+: Kaldon: s
+Tue Aug  4 03:19:54 2009
+: Kaldon: w
+Tue Aug  4 03:19:56 2009
+: Kaldon: who
+Tue Aug  4 03:20:01 2009
+: Kaldon: goto 2324
+Tue Aug  4 03:20:05 2009
+: Kaldon: goto tiana
+Tue Aug  4 03:20:06 2009
+: Kaldon: l
+Tue Aug  4 03:20:09 2009
+: Kaldon: down
+Tue Aug  4 03:20:11 2009
+: Kaldon: pass
+Tue Aug  4 03:20:14 2009
+: Kaldon: passdoor
+Tue Aug  4 03:20:15 2009
+: Kaldon: d
+Tue Aug  4 03:20:16 2009
+: Kaldon: wiz
+Tue Aug  4 03:20:37 2009
+: Kaldon: alist
+Tue Aug  4 03:22:25 2009
+: Kaldon: qoload
+Tue Aug  4 03:22:26 2009
+: Kaldon: oload
+Tue Aug  4 03:22:29 2009
+: Kaldon: load
+Tue Aug  4 03:22:30 2009
+: Kaldon: olist
+Tue Aug  4 03:22:33 2009
+: Kaldon: osearch
+Tue Aug  4 03:22:34 2009
+: Kaldon: ofind
+Tue Aug  4 03:22:38 2009
+: Kaldon: l
+Tue Aug  4 03:22:43 2009
+: Kaldon: stat room
+Tue Aug  4 03:22:47 2009
+: Kaldon: goto 5100
+Tue Aug  4 03:22:48 2009
+: Kaldon: l
+Tue Aug  4 03:22:51 2009
+: Kaldon: got 5101
+Tue Aug  4 03:22:53 2009
+: Kaldon: s
+Tue Aug  4 03:22:55 2009
+: Kaldon: e
+Tue Aug  4 03:22:55 2009
+: Kaldon: e
+Tue Aug  4 03:22:56 2009
+: Kaldon: n
+Tue Aug  4 03:22:57 2009
+: Kaldon: w
+Tue Aug  4 03:22:58 2009
+: Kaldon: s
+Tue Aug  4 03:22:59 2009
+: Kaldon: n
+Tue Aug  4 03:23:00 2009
+: Kaldon: e
+Tue Aug  4 03:23:01 2009
+: Kaldon: e
+Tue Aug  4 03:23:05 2009
+: Kaldon: enter portal
+Tue Aug  4 03:23:09 2009
+: Kaldon: u
+Tue Aug  4 03:23:13 2009
+: Kaldon: d
+Tue Aug  4 03:23:16 2009
+: Kaldon: open east
+Tue Aug  4 03:23:17 2009
+: Kaldon: e
+Tue Aug  4 03:23:29 2009
+: Kaldon: say riddles
+Tue Aug  4 03:23:32 2009
+: Kaldon: say riddle
+Tue Aug  4 03:23:58 2009
+: Kaldon: say riddle
+Tue Aug  4 03:24:25 2009
+: Kaldon: say 20
+Tue Aug  4 03:24:28 2009
+: Kaldon: w
+Tue Aug  4 03:24:29 2009
+: Kaldon: l
+Tue Aug  4 03:24:31 2009
+: Kaldon: enter portal
+Tue Aug  4 03:24:32 2009
+: Kaldon: l
+Tue Aug  4 03:24:33 2009
+: Kaldon: w
+Tue Aug  4 03:24:34 2009
+: Kaldon: w
+Tue Aug  4 03:24:36 2009
+: Kaldon: s
+Tue Aug  4 03:24:37 2009
+: Kaldon: w
+Tue Aug  4 03:24:39 2009
+: Kaldon: n
+Tue Aug  4 03:24:40 2009
+: Kaldon: w
+Tue Aug  4 03:24:45 2009
+: Kaldon: unlock north
+Tue Aug  4 03:24:46 2009
+: Kaldon: w
+Tue Aug  4 03:24:49 2009
+: Kaldon: open north
+Tue Aug  4 03:24:50 2009
+: Kaldon: north
+Tue Aug  4 03:24:56 2009
+: Kaldon: s
+Tue Aug  4 03:24:58 2009
+: Kaldon: e
+Tue Aug  4 03:24:59 2009
+: Kaldon: s
+Tue Aug  4 03:25:00 2009
+: Kaldon: e
+Tue Aug  4 03:25:01 2009
+: Kaldon: s
+Tue Aug  4 03:25:02 2009
+: Kaldon: n
+Tue Aug  4 03:25:03 2009
+: Kaldon: e
+Tue Aug  4 03:25:04 2009
+: Kaldon: e
+Tue Aug  4 03:25:04 2009
+: Kaldon: e
+Tue Aug  4 03:25:06 2009
+: Kaldon: enter portal
+Tue Aug  4 03:25:07 2009
+: Kaldon: l
+Tue Aug  4 03:25:08 2009
+: Kaldon: u
+Tue Aug  4 03:25:09 2009
+: Kaldon: u
+Tue Aug  4 03:25:10 2009
+: Kaldon: u
+Tue Aug  4 03:25:14 2009
+: Kaldon: n
+Tue Aug  4 03:25:20 2009
+: Kaldon: unlock north
+Tue Aug  4 03:25:23 2009
+: Kaldon: open north
+Tue Aug  4 03:25:26 2009
+: Kaldon: l gate
+Tue Aug  4 03:25:30 2009
+: Kaldon: say open
+Tue Aug  4 03:25:32 2009
+: Kaldon: l
+Tue Aug  4 03:25:33 2009
+: Kaldon: inv
+Tue Aug  4 03:25:35 2009
+: Kaldon: give pass guard
+Tue Aug  4 03:25:41 2009
+: Kaldon: k guard
+Tue Aug  4 03:25:46 2009
+: Kaldon: use 'rake'
+Tue Aug  4 03:25:56 2009
+: Kaldon: restore self
+Tue Aug  4 03:25:58 2009
+: Kaldon: use 'rake'
+Tue Aug  4 03:26:04 2009
+: Kaldon: use 'rake'
+Tue Aug  4 03:26:09 2009
+: Kaldon: use 'rake'
+Tue Aug  4 03:26:12 2009
+: Kaldon: use 'rake'
+Tue Aug  4 03:26:15 2009
+: Kaldon: aff
+Tue Aug  4 03:26:19 2009
+: Kaldon: aff
+Tue Aug  4 03:26:22 2009
+: Kaldon: aff
+Tue Aug  4 03:26:26 2009
+: Kaldon: slay guard
+Tue Aug  4 03:26:29 2009
+: Kaldon: l
+Tue Aug  4 03:26:30 2009
+: Kaldon: restore self
+Tue Aug  4 03:26:32 2009
+: Kaldon: aff
+Tue Aug  4 03:26:41 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:26:47 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:26:52 2009
+: Kaldon: l in corpose
+Tue Aug  4 03:26:54 2009
+: Kaldon: l in corpse
+Tue Aug  4 03:26:57 2009
+: Kaldon: get all corpse
+Tue Aug  4 03:26:59 2009
+: Kaldon: wear all
+Tue Aug  4 03:27:01 2009
+: Kaldon: l
+Tue Aug  4 03:27:03 2009
+: Kaldon: get all
+Tue Aug  4 03:27:04 2009
+: Kaldon: l
+Tue Aug  4 03:27:07 2009
+: Kaldon: dorp ocrpse
+Tue Aug  4 03:27:09 2009
+: Kaldon: drop corpse
+Tue Aug  4 03:27:11 2009
+: Kaldon: sac corpse
+Tue Aug  4 03:27:12 2009
+: Kaldon: n
+Tue Aug  4 03:27:29 2009
+: Kaldon: say highlords
+Tue Aug  4 03:27:34 2009
+: Kaldon: say highlords of arum
+Tue Aug  4 03:27:37 2009
+: Kaldon: say help
+Tue Aug  4 03:27:38 2009
+: Kaldon: l
+Tue Aug  4 03:27:41 2009
+: Kaldon: l keeper
+Tue Aug  4 03:27:45 2009
+: Kaldon: l
+Tue Aug  4 03:27:46 2009
+: Kaldon: w
+Tue Aug  4 03:27:47 2009
+: Kaldon: n
+Tue Aug  4 03:27:49 2009
+: Kaldon: w
+Tue Aug  4 03:27:50 2009
+: Kaldon: w
+Tue Aug  4 03:27:52 2009
+: Kaldon: n
+Tue Aug  4 03:27:54 2009
+: Kaldon: nohas
+Tue Aug  4 03:27:56 2009
+: Kaldon: nohassle
+Tue Aug  4 03:27:57 2009
+: Kaldon: l
+Tue Aug  4 03:27:58 2009
+: Kaldon: n
+Tue Aug  4 03:27:59 2009
+: Kaldon: w
+Tue Aug  4 03:28:00 2009
+: Kaldon: n
+Tue Aug  4 03:28:01 2009
+: Kaldon: n
+Tue Aug  4 03:28:05 2009
+: Kaldon: slay guard
+Tue Aug  4 03:28:07 2009
+: Kaldon: l
+Tue Aug  4 03:28:11 2009
+: Kaldon: n
+Tue Aug  4 03:28:17 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:28:21 2009
+: Kaldon: l
+Tue Aug  4 03:28:24 2009
+: Kaldon: c 'aura of peace'
+Tue Aug  4 03:28:28 2009
+: Kaldon: l
+Tue Aug  4 03:28:28 2009
+: Kaldon: s
+Tue Aug  4 03:28:33 2009
+: Kaldon: c 'cancellation'
+Tue Aug  4 03:28:38 2009
+: Kaldon: s
+Tue Aug  4 03:28:39 2009
+: Kaldon: s
+Tue Aug  4 03:28:40 2009
+: Kaldon: e
+Tue Aug  4 03:28:40 2009
+: Kaldon: e
+Tue Aug  4 03:28:42 2009
+: Kaldon: n
+Tue Aug  4 03:28:43 2009
+: Kaldon: n
+Tue Aug  4 03:28:44 2009
+: Kaldon: n
+Tue Aug  4 03:28:45 2009
+: Kaldon: n
+Tue Aug  4 03:28:48 2009
+: Kaldon: n
+Tue Aug  4 03:28:50 2009
+: Kaldon: w
+Tue Aug  4 03:28:51 2009
+: Kaldon: n
+Tue Aug  4 03:28:54 2009
+: Kaldon: n
+Tue Aug  4 03:28:55 2009
+: Kaldon: w
+Tue Aug  4 03:28:56 2009
+: Kaldon: l
+Tue Aug  4 03:28:58 2009
+: Kaldon: open north
+Tue Aug  4 03:28:59 2009
+: Kaldon: n
+Tue Aug  4 03:29:01 2009
+: Kaldon: u
+Tue Aug  4 03:29:08 2009
+: Kaldon: stat gariol
+Tue Aug  4 03:29:22 2009
+: Kaldon: blindfold
+Tue Aug  4 03:29:25 2009
+: Kaldon: blindfold
+Tue Aug  4 03:29:27 2009
+: Kaldon: use 'blindfold'
+Tue Aug  4 03:29:57 2009
+: Kaldon: ls
+Tue Aug  4 03:29:59 2009
+: Kaldon: who
+Tue Aug  4 03:30:04 2009
+: Kaldon: who
+Tue Aug  4 03:30:04 2009
+: Kaldon: l
+Tue Aug  4 03:30:06 2009
+: Kaldon: down
+Tue Aug  4 03:30:08 2009
+: Kaldon: sc
+Tue Aug  4 03:30:18 2009
+: Kaldon: c 'summon' zombie
+Tue Aug  4 03:30:22 2009
+: Kaldon: c 'summon' zombie
+Tue Aug  4 03:30:26 2009
+: Kaldon: c 'summon' 2.zombie
+Tue Aug  4 03:30:30 2009
+: Kaldon: c 'summon' sieg
+Tue Aug  4 03:30:34 2009
+: Kaldon: c 'summon' siegfr
+Tue Aug  4 03:30:37 2009
+: Kaldon: l
+Tue Aug  4 03:30:39 2009
+: Kaldon: s
+Tue Aug  4 03:30:42 2009
+: Kaldon: s
+Tue Aug  4 03:30:44 2009
+: Kaldon: s
+Tue Aug  4 03:30:46 2009
+: Kaldon: s
+Tue Aug  4 03:30:47 2009
+: Kaldon: s
+Tue Aug  4 03:30:50 2009
+: Kaldon: e
+Tue Aug  4 03:30:52 2009
+: Kaldon: n
+Tue Aug  4 03:30:57 2009
+: Kaldon: stat gariol
+Tue Aug  4 03:31:06 2009
+: Kaldon: mstat 5114
+Tue Aug  4 03:31:12 2009
+: Kaldon: mload 5114
+Tue Aug  4 03:31:14 2009
+: Kaldon: l
+Tue Aug  4 03:31:19 2009
+: Kaldon: mload 5113
+Tue Aug  4 03:31:23 2009
+: Kaldon: mload 5115
+Tue Aug  4 03:31:24 2009
+: Kaldon: l
+Tue Aug  4 03:31:29 2009
+: Kaldon: mload 5116
+Tue Aug  4 03:31:30 2009
+: Kaldon: l
+Tue Aug  4 03:31:34 2009
+: Kaldon: mload 5117
+Tue Aug  4 03:31:36 2009
+: Kaldon: stat rawn
+Tue Aug  4 03:31:39 2009
+: Kaldon: l
+Tue Aug  4 03:31:51 2009
+: Kaldon: stat tiana
+Tue Aug  4 03:31:57 2009
+: Kaldon:  
+Tue Aug  4 03:32:02 2009
+: Kaldon: l
+Tue Aug  4 03:32:34 2009
+: Kaldon: l
+Tue Aug  4 03:32:35 2009
+: Kaldon: who
+Tue Aug  4 03:32:44 2009
+: Kaldon: purge
+Tue Aug  4 03:32:45 2009
+: Kaldon: l
+Tue Aug  4 03:32:49 2009
+: Kaldon: stat wire
+Tue Aug  4 03:32:52 2009
+: Kaldon: at wire
+Tue Aug  4 03:32:54 2009
+: Kaldon: at wire l
+Tue Aug  4 03:33:01 2009
+: Kaldon: goto vaevictus
+Tue Aug  4 03:33:03 2009
+: Kaldon: l
+Tue Aug  4 03:33:09 2009
+: Kaldon: stat room
+Tue Aug  4 03:33:16 2009
+: Kaldon: l
+Tue Aug  4 03:33:18 2009
+: Kaldon: l delse
+Tue Aug  4 03:33:22 2009
+: Kaldon: l mayor
+Tue Aug  4 03:33:25 2009
+: Kaldon: n
+Tue Aug  4 03:33:26 2009
+: Kaldon: e
+Tue Aug  4 03:33:28 2009
+: Kaldon: e
+Tue Aug  4 03:33:29 2009
+: Kaldon: s
+Tue Aug  4 03:33:31 2009
+: Kaldon: w
+Tue Aug  4 03:33:31 2009
+: Kaldon: w
+Tue Aug  4 03:33:32 2009
+: Kaldon: w
+Tue Aug  4 03:33:33 2009
+: Kaldon: e
+Tue Aug  4 03:33:34 2009
+: Kaldon: n
+Tue Aug  4 03:33:35 2009
+: Kaldon: n
+Tue Aug  4 03:33:36 2009
+: Kaldon: n
+Tue Aug  4 03:33:42 2009
+: Kaldon: l down
+Tue Aug  4 03:33:44 2009
+: Kaldon: open down
+Tue Aug  4 03:33:45 2009
+: Kaldon: down
+Tue Aug  4 03:33:51 2009
+: Kaldon: open north
+Tue Aug  4 03:33:53 2009
+: Kaldon: norht
+Tue Aug  4 03:33:54 2009
+: Kaldon: l
+Tue Aug  4 03:33:56 2009
+: Kaldon: pick north
+Tue Aug  4 03:33:59 2009
+: Kaldon: north
+Tue Aug  4 03:34:03 2009
+: Kaldon: c 'pass door'
+Tue Aug  4 03:34:07 2009
+: Kaldon: north
+Tue Aug  4 03:34:08 2009
+: Kaldon: l
+Tue Aug  4 03:34:11 2009
+: Kaldon: stat room
+Tue Aug  4 03:34:16 2009
+: Kaldon: goto 9152
+Tue Aug  4 03:34:23 2009
+: Kaldon: stat room
+Tue Aug  4 03:34:27 2009
+: Kaldon: goto 9153
+Tue Aug  4 03:34:30 2009
+: Kaldon: goto 9154
+Tue Aug  4 03:34:33 2009
+: Kaldon: goto 9155
+Tue Aug  4 03:34:34 2009
+: Kaldon: goto 9156
+Tue Aug  4 03:34:36 2009
+: Kaldon: goto 9157
+Tue Aug  4 03:34:39 2009
+: Kaldon: goto 9158
+Tue Aug  4 03:34:42 2009
+: Kaldon: goto 9159
+Tue Aug  4 03:34:46 2009
+: Kaldon: goto 5157
+Tue Aug  4 03:34:48 2009
+: Kaldon: open north
+Tue Aug  4 03:34:52 2009
+: Kaldon: goto 9157
+Tue Aug  4 03:34:53 2009
+: Kaldon: l
+Tue Aug  4 03:34:54 2009
+: Kaldon: open north
+Tue Aug  4 03:34:57 2009
+: Kaldon: north
+Tue Aug  4 03:34:59 2009
+: Kaldon: stat room
+Tue Aug  4 03:35:04 2009
+: Kaldon: goto 9156
+Tue Aug  4 03:35:04 2009
+: Kaldon: l
+Tue Aug  4 03:35:08 2009
+: Kaldon: e
+Tue Aug  4 03:35:09 2009
+: Kaldon: w
+Tue Aug  4 03:35:10 2009
+: Kaldon: e
+Tue Aug  4 03:35:10 2009
+: Kaldon: e
+Tue Aug  4 03:35:12 2009
+: Kaldon: open east
+Tue Aug  4 03:35:13 2009
+: Kaldon: e
+Tue Aug  4 03:35:17 2009
+: Kaldon: stat room
+Tue Aug  4 03:35:21 2009
+: Kaldon: goto 9158
+Tue Aug  4 03:35:24 2009
+: Kaldon: goto 9159
+Tue Aug  4 03:35:26 2009
+: Kaldon: goto 9160
+Tue Aug  4 03:35:28 2009
+: Kaldon: goto 9161
+Tue Aug  4 03:35:29 2009
+: Kaldon: goto 9162
+Tue Aug  4 03:35:30 2009
+: Kaldon: goto 9163
+Tue Aug  4 03:35:31 2009
+: Kaldon: goto 9164
+Tue Aug  4 03:35:33 2009
+: Kaldon: goto 9165
+Tue Aug  4 03:35:34 2009
+: Kaldon: goto 9166
+Tue Aug  4 03:35:35 2009
+: Kaldon: goto 9167
+Tue Aug  4 03:35:40 2009
+: Kaldon: goto 9150
+Tue Aug  4 03:35:44 2009
+: Kaldon: d
+Tue Aug  4 03:35:47 2009
+: Kaldon: n
+Tue Aug  4 03:35:50 2009
+: Kaldon: open east
+Tue Aug  4 03:35:51 2009
+: Kaldon: e
+Tue Aug  4 03:35:53 2009
+: Kaldon: w
+Tue Aug  4 03:35:54 2009
+: Kaldon: n
+Tue Aug  4 03:35:56 2009
+: Kaldon: n
+Tue Aug  4 03:35:58 2009
+: Kaldon: e
+Tue Aug  4 03:35:58 2009
+: Kaldon: w
+Tue Aug  4 03:35:59 2009
+: Kaldon: n
+Tue Aug  4 03:36:06 2009
+: Kaldon: l tuknir
+Tue Aug  4 03:36:08 2009
+: Kaldon: s
+Tue Aug  4 03:36:09 2009
+: Kaldon: s
+Tue Aug  4 03:36:10 2009
+: Kaldon: e
+Tue Aug  4 03:36:12 2009
+: Kaldon: e
+Tue Aug  4 03:36:14 2009
+: Kaldon: e
+Tue Aug  4 03:36:14 2009
+: Kaldon: s
+Tue Aug  4 03:36:16 2009
+: Kaldon: e
+Tue Aug  4 03:36:18 2009
+: Kaldon: w
+Tue Aug  4 03:36:18 2009
+: Kaldon: s
+Tue Aug  4 03:36:19 2009
+: Kaldon: s
+Tue Aug  4 03:36:20 2009
+: Kaldon: s
+Tue Aug  4 03:36:21 2009
+: Kaldon: s
+Tue Aug  4 03:36:23 2009
+: Kaldon: n
+Tue Aug  4 03:36:23 2009
+: Kaldon: e
+Tue Aug  4 03:36:24 2009
+: Kaldon:  
+Tue Aug  4 03:36:25 2009
+: Kaldon: e
+Tue Aug  4 03:36:25 2009
+: Kaldon: n
+Tue Aug  4 03:36:26 2009
+: Kaldon: n
+Tue Aug  4 03:36:32 2009
+: Kaldon: e
+Tue Aug  4 03:36:33 2009
+: Kaldon: w
+Tue Aug  4 03:36:34 2009
+: Kaldon: n
+Tue Aug  4 03:36:35 2009
+: Kaldon: e
+Tue Aug  4 03:36:37 2009
+: Kaldon: e
+Tue Aug  4 03:36:38 2009
+: Kaldon: n
+Tue Aug  4 03:36:39 2009
+: Kaldon: e
+Tue Aug  4 03:36:39 2009
+: Kaldon: d
+Tue Aug  4 03:36:40 2009
+: Kaldon: u
+Tue Aug  4 03:36:40 2009
+: Kaldon: w
+Tue Aug  4 03:36:41 2009
+: Kaldon: n
+Tue Aug  4 03:36:42 2009
+: Kaldon: e
+Tue Aug  4 03:36:42 2009
+: Kaldon: e
+Tue Aug  4 03:36:43 2009
+: Kaldon: e
+Tue Aug  4 03:36:43 2009
+: Kaldon: e
+Tue Aug  4 03:36:43 2009
+: Kaldon: e
+Tue Aug  4 03:36:45 2009
+: Kaldon: epick east
+Tue Aug  4 03:36:46 2009
+: Kaldon: search
+Tue Aug  4 03:36:53 2009
+: Kaldon: l
+Tue Aug  4 03:36:53 2009
+: Kaldon: search east
+Tue Aug  4 03:37:00 2009
+: Kaldon: stat room
+Tue Aug  4 03:37:10 2009
+: Kaldon: gogot 9126
+Tue Aug  4 03:37:11 2009
+: Kaldon: l
+Tue Aug  4 03:37:13 2009
+: Kaldon: goto 9126
+Tue Aug  4 03:37:14 2009
+: Kaldon: l
+Tue Aug  4 03:37:16 2009
+: Kaldon: e
+Tue Aug  4 03:37:18 2009
+: Kaldon: stat room
+Tue Aug  4 03:37:20 2009
+: Kaldon: w
+Tue Aug  4 03:37:21 2009
+: Kaldon: n
+Tue Aug  4 03:37:22 2009
+: Kaldon: n
+Tue Aug  4 03:37:22 2009
+: Kaldon: n
+Tue Aug  4 03:37:23 2009
+: Kaldon: n
+Tue Aug  4 03:37:24 2009
+: Kaldon: stat room
+Tue Aug  4 03:37:27 2009
+: Kaldon: w
+Tue Aug  4 03:37:28 2009
+: Kaldon: e
+Tue Aug  4 03:37:29 2009
+: Kaldon: s
+Tue Aug  4 03:37:30 2009
+: Kaldon: e
+Tue Aug  4 03:37:32 2009
+: Kaldon: e
+Tue Aug  4 03:37:32 2009
+: Kaldon: e
+Tue Aug  4 03:37:33 2009
+: Kaldon: e
+Tue Aug  4 03:37:34 2009
+: Kaldon: n
+Tue Aug  4 03:37:36 2009
+: Kaldon: olist chaos
+Tue Aug  4 03:37:39 2009
+: Kaldon: ofind chaos
+Tue Aug  4 03:37:54 2009
+: Kaldon: ostat 9144
+Tue Aug  4 03:37:57 2009
+: Kaldon: ostat 9144
+Tue Aug  4 03:37:59 2009
+: Kaldon: oload 9144
+Tue Aug  4 03:38:02 2009
+: Kaldon: oload 9147
+Tue Aug  4 03:38:04 2009
+: Kaldon: ostat 9144
+Tue Aug  4 03:38:06 2009
+: Kaldon: stat orb
+Tue Aug  4 03:38:08 2009
+: Kaldon: stat 2.orb
+Tue Aug  4 03:38:35 2009
+: Kaldon: inv
+Tue Aug  4 03:38:39 2009
+: Kaldon: drop orb
+Tue Aug  4 03:38:41 2009
+: Kaldon: drop orb
+Tue Aug  4 03:38:42 2009
+: Kaldon: sac orb
+Tue Aug  4 03:38:43 2009
+: Kaldon: sac orb
+Tue Aug  4 03:38:50 2009
+: Kaldon: oload 9144
+Tue Aug  4 03:38:52 2009
+: Kaldon: oload 9144
+Tue Aug  4 03:38:53 2009
+: Kaldon: stat orb
+Tue Aug  4 03:38:56 2009
+: Kaldon: join orb 2.orb
+Tue Aug  4 03:38:58 2009
+: Kaldon: inv
+Tue Aug  4 03:38:59 2009
+: Kaldon: rm orb
+Tue Aug  4 03:39:03 2009
+: Kaldon: drop orb
+Tue Aug  4 03:39:04 2009
+: Kaldon: sac orb
+Tue Aug  4 03:39:05 2009
+: Kaldon: stat orb
+Tue Aug  4 03:39:12 2009
+: Kaldon: stat 9145
+Tue Aug  4 03:39:16 2009
+: Kaldon: ostat 9145
+Tue Aug  4 03:39:22 2009
+: Kaldon: olist 9140 9145
+Tue Aug  4 03:39:24 2009
+: Kaldon: ofind
+Tue Aug  4 03:39:28 2009
+: Kaldon: wiz
+Tue Aug  4 03:39:33 2009
+: Kaldon: owhere
+Tue Aug  4 03:39:36 2009
+: Kaldon: owhere chaos
+Tue Aug  4 03:39:57 2009
+: Kaldon: inv
+Tue Aug  4 03:40:00 2009
+: Kaldon: stat orb
+Tue Aug  4 03:40:22 2009
+: Kaldon: load 9145
+Tue Aug  4 03:40:23 2009
+: Kaldon: inv
+Tue Aug  4 03:40:25 2009
+: Kaldon: oload 9145
+Tue Aug  4 03:40:26 2009
+: Kaldon: inv
+Tue Aug  4 03:40:31 2009
+: Kaldon: oload 9146
+Tue Aug  4 03:40:32 2009
+: Kaldon: inv
+Tue Aug  4 03:40:38 2009
+: Kaldon: l
+Tue Aug  4 03:40:42 2009
+: Kaldon: l none
+Tue Aug  4 03:40:43 2009
+: Kaldon: stat none
+Tue Aug  4 03:40:46 2009
+: Kaldon: sac none
+Tue Aug  4 03:40:48 2009
+: Kaldon: goto none
+Tue Aug  4 03:40:50 2009
+: Kaldon: l
+Tue Aug  4 03:40:51 2009
+: Kaldon: inv
+Tue Aug  4 03:40:54 2009
+: Kaldon: join claw orb
+Tue Aug  4 03:40:55 2009
+: Kaldon: inv
+Tue Aug  4 03:40:57 2009
+: Kaldon: stat orb
+Tue Aug  4 03:41:05 2009
+: Kaldon: stat 9146
+Tue Aug  4 03:41:12 2009
+: Kaldon: oload 9146
+Tue Aug  4 03:41:14 2009
+: Kaldon: l
+Tue Aug  4 03:41:15 2009
+: Kaldon: owhere claw
+Tue Aug  4 03:41:21 2009
+: Kaldon: stat claw
+Tue Aug  4 03:41:32 2009
+: Kaldon: l claws
+Tue Aug  4 03:41:33 2009
+: Kaldon: l claw
+Tue Aug  4 03:41:35 2009
+: Kaldon: l a claw
+Tue Aug  4 03:41:38 2009
+: Kaldon: l 'a claw'
+Tue Aug  4 03:41:40 2009
+: Kaldon: inv
+Tue Aug  4 03:41:42 2009
+: Kaldon: l claw
+Tue Aug  4 03:41:45 2009
+: Kaldon: inv
+Tue Aug  4 03:41:45 2009
+: Kaldon: l
+Tue Aug  4 03:41:48 2009
+: Kaldon: w
+Tue Aug  4 03:41:48 2009
+: Kaldon: s
+Tue Aug  4 03:41:51 2009
+: Kaldon: load 9146
+Tue Aug  4 03:41:53 2009
+: Kaldon: n
+Tue Aug  4 03:41:53 2009
+: Kaldon: purge
+Tue Aug  4 03:41:56 2009
+: Kaldon: load claw
+Tue Aug  4 03:41:59 2009
+: Kaldon: oload 9146
+Tue Aug  4 03:41:59 2009
+: Kaldon: inv
+Tue Aug  4 03:42:01 2009
+: Kaldon: l
+Tue Aug  4 03:42:05 2009
+: Kaldon: purge
+Tue Aug  4 03:42:06 2009
+: Kaldon: oload 9145
+Tue Aug  4 03:42:07 2009
+: Kaldon: inv
+Tue Aug  4 03:42:09 2009
+: Kaldon: stat claw
+Tue Aug  4 03:42:16 2009
+: Kaldon: ofind claw
+Tue Aug  4 03:42:23 2009
+: Kaldon: owhere claw
+Tue Aug  4 03:42:46 2009
+: Kaldon: goto 9140
+Tue Aug  4 03:42:46 2009
+: Kaldon: l
+Tue Aug  4 03:42:48 2009
+: Kaldon: l shund
+Tue Aug  4 03:42:56 2009
+: Kaldon: say claw
+Tue Aug  4 03:42:58 2009
+: Kaldon: l in plant
+Tue Aug  4 03:43:00 2009
+: Kaldon: stat shund
+Tue Aug  4 03:43:06 2009
+: Kaldon: w
+Tue Aug  4 03:43:16 2009
+: Kaldon: ofind everful
+Tue Aug  4 03:43:21 2009
+: Kaldon: owhere overfull
+Tue Aug  4 03:43:25 2009
+: Kaldon: owhere everfull
+Tue Aug  4 03:43:30 2009
+: Kaldon: owhere everful
+Tue Aug  4 03:43:35 2009
+: Kaldon: owhere berries
+Tue Aug  4 03:43:38 2009
+: Kaldon: owhere berr
+Tue Aug  4 03:43:42 2009
+: Kaldon: goto 9127
+Tue Aug  4 03:43:44 2009
+: Kaldon: l guard
+Tue Aug  4 03:43:55 2009
+: Kaldon: stat everful
+Tue Aug  4 03:44:26 2009
+: Kaldon: ostat 9129
+Tue Aug  4 03:44:28 2009
+: Kaldon: oedit 9129
+Tue Aug  4 03:44:30 2009
+: Kaldon: q
+Tue Aug  4 03:44:32 2009
+: Kaldon: done
+Tue Aug  4 03:44:34 2009
+: Kaldon: l
+Tue Aug  4 03:44:38 2009
+: Kaldon: oedit 9129
+Tue Aug  4 03:44:39 2009
+: Kaldon: done
+Tue Aug  4 17:10:31 2009
+: (Unknown): yes
+Tue Aug  4 17:10:33 2009
+: (Unknown): Kaldon
+Tue Aug  4 17:10:34 2009
+: Kaldon: sithlord
+Tue Aug  4 17:10:35 2009
+: Kaldon:  
+Tue Aug  4 17:10:37 2009
+: Kaldon: who
+Tue Aug  4 17:10:39 2009
+: Kaldon: goto 100
+Tue Aug  4 17:10:40 2009
+: Kaldon: who
+Tue Aug  4 17:10:43 2009
+: Kaldon: goto 1000
+Wed Aug  5 16:58:45 2009
+: (Unknown): yes
+Wed Aug  5 16:58:47 2009
+: (Unknown): Kaldon
+Wed Aug  5 16:58:49 2009
+: Kaldon: sithlord
+Wed Aug  5 16:58:51 2009
+: Kaldon:  
+Wed Aug  5 16:58:54 2009
+: Kaldon: who
+Wed Aug  5 16:58:56 2009
+: Kaldon: goto hiero
+Wed Aug  5 17:00:41 2009
+: Kaldon: who
+Wed Aug  5 17:16:49 2009
+: Kaldon: eq
+Wed Aug  5 17:16:53 2009
+: Kaldon: c 'mana shield'
+Wed Aug  5 17:16:58 2009
+: Kaldon: aff
+Wed Aug  5 17:17:00 2009
+: Kaldon: sc

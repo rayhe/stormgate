@@ -1,0 +1,2468 @@
+#AREADATA
+Name        Kitti's Area~
+Builders    Kitti~
+VNUMs       1501 1600
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Kitti~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#1503
+mai lin woman~
+Mai Lin~
+Mai Lin is here singing with her nightingale companion.
+~
+Mai Lin is a beautiful young woman who appears to be in her late teens,
+but her eyes betray age and knowledge most teens never know.  Her black silk
+hair is piled onto her head in an elaborate headdress.  She smiles softly
+and goes back to singing with her nightingale.
+~
+67 0 0 0 0 0 S
+78 1 156 156 0 26100d0+0 0d0+0
+780 1 0
+0 0 2
+0 0 0
+#1504
+hou phat mayor~
+Hou Phat~
+The mayor of Shou Lung is here greeting visitors.
+~
+Hou Phat is a large oriental man with a Foo Man Chu mustache that he's
+very proud of.  He is garbed in fine silks and his long hair is pulled up
+into a topknot that denotes honor amongst his people.
+~
+67 128 0 0 0 0 S
+80 1 160 160 0 27000d0+0 0d0+0
+800 1 0
+0 0 1
+0 0 0
+#1505
+peacock cock bird~
+a peacock~
+A peacock is here strutting his stuff.
+~
+This beautiful bird's tail feathers are spread in a large fan shape of
+many colors.  The feathers have small black dots on them that look as if a
+million eyes are watching you.
+~
+67 0 0 0 0 0 S
+60 1 120 120 0 17000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#1511
+dancer wind spirit air~
+the wind dancer~
+An air spirit dances madly about in the air before you.
+~
+A tiny woman with wispy wings and white silken hair, she doesn't seem to
+notice you as she dances about in the space before you.  This one's
+movements sound like someone whispering and you decide to call her that.
+~
+67 524288 262144 0 0 100 S
+70 1 140 140 0 22500d0+0 0d0+0
+20 19 0
+0 0 2
+0 0 0
+#1512
+monk~
+a monk~
+A monk is training with a bo-staff.
+~
+Wealth is apparently not an issue with the monks of the temple as they
+wear naught but a simple robe.  Their training staves are barely more than
+well-whittled sticks, yet they appear to be very deadly in the hands of
+those proficient with them.
+~
+67 128 0 0 0 0 S
+75 1 150 150 0 24750d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#1506
+bath~
+large bath~
+&BA large sunken bath looks very warm and inviting.&w~
+~
+29 536870912 0 0 0 0 0
+100 100
+1600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1507
+towel bath~
+bath towel~
+&wA bath towel is here to step into when you're done in the bath.~
+~
+29 536870912 0 0 0 0 0
+100 100
+1541~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#1508
+kimono silken~
+a silken kimono~
+A kimono crafted of silk is lying in a pile on the floor.~
+~
+9 64 0 0 0 9 78
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -15
+#1509
+necklace jade elegant~
+an elegant jade necklace~
+An elegant necklace made of jade is lying in the dust.~
+~
+8 536870912 0 0 0 5 75
+100 100
+0~ 0~ 0~ 0~
+2 2800 0
+0 0
+reserved~
+0 0
+0 0 0
+#1510
+nightingale~
+a nightingale~
+A nightingale is singing it sweet song here.~
+~
+8 536870912 0 0 0 32769 75
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+5 0
+fly~
+10 10
+0 0 0
+A
+12 75
+A
+24 -15
+#1515
+earrings feather colored~
+feather earrings~
+A pair of brightly colored feather earrings are lying here.~
+~
+9 64 0 0 0 524289 70
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+119 -1
+A
+4 1
+A
+18 10
+#1516
+bo-staff staff~
+a bo-staff~
+A bo-staff is lying here.~
+~
+5 33554496 0 0 0 8193 75
+100 100
+0~ 0~ 0~ 7~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 45
+A
+26 75
+#0
+
+
+
+#ROOMDATA
+#1501
+Nearing a Large Village~
+~
+~
+You are just outside a small town that seems to have been surrounded in
+cherry trees and weeping willows.  How they are protecting the town from the
+ravages of the desert, much less grow in the desert at all, is beyond your
+thinking.  The desert spreads out to the north, east and west, but the road
+only continues to the north and into the town to the south.
+~
+0 0 2
+Rd     0
+D2
+~
+~
+0 0 1502
+S
+#1502
+Outside a Guardhouse~
+~
+~
+You are at the northern entrance to the town of Shou Lung.  A guardhouse
+to the east houses the samurai who watch and keep out predators from
+entering and harming the citizens.  The air around you fluctuates from the
+harshness of the desert just to the north of you and the sweetness of cherry
+blossoms in the town to the southwest.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1501
+D1
+~
+~
+0 0 1589
+D3
+~
+~
+0 0 1503
+S
+#1503
+The Road to Shou Lung~
+~
+~
+On either side of the road thick groves of cherry trees and weeping
+willows are growing.  They seem to be keeping out the ravages of the desert,
+but you're not quite sure how.  You can't get a very good view of the town
+through the trees, but you can make out the roof of a tall warehouse not far
+to the southwest.  The road continues to the east and to the west.
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1502
+D3
+~
+~
+0 0 1504
+S
+#1504
+The Road to Shou Lung~
+~
+~
+You are on a slightly sandy road just north of the town of Shou Lung. 
+Cherry blossoms swirl in the air about you, borne upon a barely felt breeze
+from the south.  Just to the southwest is a large building with a
+firecracker painted on an outside wall.  Farther to the south is the rest of
+the town.  You can follow the road south into the town or east towards the
+desert.
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1503
+D2
+~
+~
+0 0 1505
+S
+#1505
+Koryaz Road~
+~
+~
+A large fireworks factory rises up next to the road to the west and towers
+above the surrounding trees.  The stench of sulphur wafts out of the factory
+from an open door.  To the east is a small clothing shop through whose door
+you can see manaquins covered with the merchandise.  The road becomes more
+of a path to the north and continues through the town to the south.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1504
+D1
+~
+~
+0 0 1506
+D2
+~
+~
+0 0 1513
+D3
+~
+~
+0 0 1507
+S
+#1506
+Kun Chau's Clothing Shop~
+~
+~
+Bolts of cloth, spinning wheels and looms fill this shop to nearly
+bursting with all the items needed to make clothing of all sorts.  Manaquins
+display the completed bits of clothing and a glass counter displays shoes
+and accessories.  Everything has been made in the finest qualities and most
+are of the softest silk.  A door to the west leads out to the road outside.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 1505
+S
+#1507
+The Fireworks Factory~
+~
+~
+Crates packed to the ceiling fill this factory making it look more like a
+warehouse rather than a place where gunpowder is transformed into fireworks.
+The scent of sulphur is quite strong in here and even the rats stop to
+sneeze every once in a while.  There is a sign on the wall bearing the
+legend &BDo NOT light matches in here!&w  There are no windows and the only
+exit looks to be through a door to the east.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1505
+D5
+~
+~
+515 0 1508
+S
+#1508
+A Dark Cellar~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 1509
+D3
+~
+~
+0 0 1511
+D4
+~
+~
+515 0 1507
+S
+#1509
+A Dark Cellar~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1508
+D3
+~
+~
+0 0 1510
+S
+#1510
+A Dark Cellar~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1511
+D1
+~
+~
+0 0 1509
+S
+#1511
+A Dark Cellar~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 1508
+D2
+~
+~
+0 0 1510
+S
+#1512
+Exotic Goods and Jewelry~
+~
+~
+Bright light from man colourful lanterns fills this small shop and almost
+blinds the customers.  Crates of imported goods fill the back of the room
+and in the front are many little items and knick-knacks that are perfect for
+souveneirs.  The only exit out of the shop seems to be through a door to the
+east.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1513
+S
+#1513
+Koryaz Road~
+~
+~
+Colourful paper lanterns hang from the branches of the cherry trees and
+weeping willows, lighting the road with a festive glow.  They continue along
+the road towards the fountain to the town square to the south.  The road
+continues north and to the west is an expensive looking shop.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1505
+D2
+~
+~
+0 0 1522
+D3
+~
+~
+0 0 1512
+S
+#1514
+Miyu Ling's Weaponry~
+~
+~
+All sorts of weaponry line the walls and cases in the shop of fighting
+implements.  The light glitters off of all the finely made steel and even
+the most peaceful of people can't help but admire their craftsmanship,
+regardless of the killing edge on most of them.  A window looks out to the
+north, but you can't see anything other than the branches of a weeping
+willow.  A low door to the south leads out to Kozakura road.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 1523
+S
+#1515
+Ikiryo's Place of Armor~
+~
+~
+Headless manaqins line the floor and tables along the walls, displaying
+large sets of oriental type armor.  Scale, leather, bamboo and pieces you
+can't identify make quite the exotic look.  There are no windows in here for
+you to see your surroundings, but there is a door leading south that seems
+to meet with Kozakura road.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 1524
+S
+#1516
+A Small Fishpond~
+~
+~
+As you take in your surroundings, you can't help but feel as if you're
+being watched.  The feeling disticinctly comes from directly below you under
+the surface of the waters.  You can dive down to investigate or you can
+explore the pond to the east and south.  Thick reeds and cattails prevent
+you from leaving the pond to the north or west.
+~
+0 0 8
+Rd     0
+D1
+~
+~
+0 0 1517
+D2
+~
+~
+0 0 1526
+D5
+~
+~
+0 0 1592
+S
+#1517
+A Small Fishpond~
+~
+~
+The pond is quite tranquil here as bits of light glitter off of the
+rippling waters and reflect back at you almost hypnotically.  The lapping
+water stops to the north at a clump of cattails which also prevent you from
+leaving in that direction.  Beautiful white waterlilies float gently on the
+surface of the pond, but you think you can easily get past them and dive
+down if you so wished.  A few cherry blossoms float in from the southeast
+where you can spot a large cherry tree in bloom.
+~
+0 0 8
+Rd     0
+D1
+~
+~
+0 0 1518
+D2
+~
+~
+0 0 1527
+D3
+~
+~
+0 0 1516
+D5
+~
+~
+0 0 1593
+S
+#1518
+A Small Fishpond~
+~
+~
+The scent of cherry blossoms is quite strong here, but that is probably
+due to the large tree growing on a small island to the southeast.  Small
+petals from the blossoms float upon the surface of the pond and almost block
+your view of the waters below.  You can dive deeper into the pond or
+continue exploring to the south or west.
+~
+0 0 8
+Rd     0
+D2
+~
+~
+0 0 1528
+D3
+~
+~
+0 0 1517
+D5
+~
+~
+0 0 1594
+S
+#1519
+Fenghsintzu Road~
+~
+~
+You wander along the road that connects the temple monastary to the rest
+of the town of Shou Lung.  Blooming cherry trees and thick weeping willow
+trees block all view of the desert that must lie to the northwest.  How this
+can be, you can't be sure.  Perhaps some magicks protect this town.  The
+road continues to the east towards the town fountain and to the south
+towards the temple monastary.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 1520
+D2
+~
+~
+0 0 1532
+S
+#1520
+Fenghsintzu Road~
+~
+~
+One would never guess that just beyond the cherry trees to the northwest
+lie the ravages of the harsh desert.  All the plants within the town are
+green and there doesn't seem to be a lack of water.  Colourful paper
+lanterns light the road as it continues to the east towards the town
+fountain.  To the west the road turns south towards the temple monastary. 
+Directly to the south is a small rice paper and wood shop.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 1521
+D2
+~
+~
+0 0 1533
+D3
+~
+~
+0 0 1519
+S
+#1521
+Fenghsintzu Road~
+~
+~
+You amble along the road that connect the temple monastary a bit of a
+ways to the southwest to the rest of the town that's east and south.  Cherry
+trees fill in the gaps between the buildings you spot around you.  The side
+of the fireworks factory is directly to the north and to the south is a
+small flower stand.  The road continues to the west and a large jade
+fountain is in the town center to the east.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 1522
+D2
+~
+~
+0 0 1534
+D3
+~
+~
+0 0 1520
+S
+#1522
+The Village Square~
+~
+~
+Cherry trees in full bloom completely surround the small town plaza and
+lend a bit of protection from the weather.  Colourful paper lanterns hang
+from the trees adding a festive aura to the otherwise peaceful scene.  Small
+chiming bells come ring softly each time a slight breeze comes through and
+you could swear it came from the jade fountain in the center of the plaza. 
+Looking about and listening more closely, you discover that the chiming is
+actually coming from high above the fountain.  Koryaz road is to the north
+and Kozakura road is to the east.  To the west is Fenghsintzu road and to
+the south is Hungsete road.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1513
+D1
+~
+~
+0 0 1523
+D2
+~
+~
+0 0 1535
+D3
+~
+~
+0 0 1521
+D4
+~
+~
+0 0 1599
+S
+#1523
+Kozakura Road~
+~
+~
+You find yourself on Kozakura road, just east of the small town's
+fountain.  Thick groves of cherry trees in bloom grow all about the road,
+filling the air with their heady perfume.  From looking around here, you
+would never guess that just outside the town's borders lies the ravages of
+the desert.  The road continues to the east and a fountain is to the west. 
+To the north is a short flight of steps leading up into a small building.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1514
+D1
+~
+~
+0 0 1524
+D3
+~
+~
+0 0 1522
+S
+#1524
+Kozakura Road~
+~
+~
+The green of new grass and pinkish-white of cherry blossoms fills every
+bit of your vision as you pause to look around.  Although the seasons
+change, it seems this town is locked in a forever spring state.  Soft
+chanting is coming from a small building south of you and a short flight of
+steps leads into a doorway in the building north of you.  The road continues
+to the east and to the west.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1515
+D1
+~
+~
+0 0 1525
+D3
+~
+~
+0 0 1523
+S
+#1525
+Kozakura Road~
+~
+~
+Colorful paper lanterns hang from the cherry trees around you, glowing
+softly with a magical light.  Tiny snow drop flowers grow around the bases
+of the trees, encircling each one in a heady aroma.  Although the trees
+don't grow too thickly together, you can't seem to make out what lies beyond
+the trees and road to the north.  You simply must continue along the road to
+find out by going west or south.
+~
+0 0 1
+Rd     0
+D2
+~
+~
+0 0 1538
+D3
+~
+~
+0 0 1524
+S
+#1526
+A Small Fishpond~
+~
+~
+Soft white waterlilies float delicately upon bright green pads and
+shelter the occasional fish that swims by.  The reeds grow tall to the south
+and west preventing you from leaving the pond in those directions.  The
+water is crystal clear and so you can almost see the bottom far below you. 
+Cherry blossom petals float in from the east and to the north the pond
+continues.
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 1516
+D1
+~
+~
+0 0 1527
+D5
+~
+~
+0 0 1595
+S
+#1527
+A Small Fish Pond~
+~
+~
+The small fishpond extends out all around you, doing a good job of
+surrounding this end of the house to the southeast.  The rippling of the
+water is loud as it goes into the house to the east and leaves the house to
+the south.  You think you can dive into the waters below, and far to the
+east you can make out a beautiful cherry blossom tree.
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 1517
+D1
+~
+~
+0 0 1528
+D2
+~
+~
+0 0 1540
+D3
+~
+~
+0 0 1526
+D5
+~
+~
+0 0 1596
+S
+#1528
+A Small Fishpond~
+~
+~
+The surface of the pond is a snowy pink as the blossoms fall from the
+branches of a cherry tree extending above.  The beautiful sounds of music
+being played on a set of pipes is coming from the east, right under the
+tree.  You can attempt to dive into the mess of blossoms below, or you can
+explore the surface of the pond to the north and to the west.  To the south,
+water seems to enter the building and leave somewhere to the southwest.
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 1518
+D1
+~
+~
+0 0 1529
+D3
+~
+~
+0 0 1527
+D5
+~
+~
+0 0 1597
+S
+#1529
+A Cherry Blossom Tree~
+~
+~
+In the center of a small island is a large cherry tree.  Its branches are
+completely covered with cherry blossoms.  An unseen musician plays a soft
+melody on reed pipes.  You feel yourself nodding off as the music and the
+fragrance of the cherry blossoms work at putting you into a nice, relaxing
+slumber.  A small fish pond lies to the west.
+~
+0 0 2
+Rd     0
+D3
+~
+~
+0 0 1528
+S
+#1530
+Chamber of Meditation~
+~
+~
+This chamber is empty of everything including tapestries, murals, windows
+and tables.  It is devoid of all the niceties so that the monks who enter
+may relax their minds, clear them of outside thoughts and focus upon their
+tasks and serve their masters and mistresses better.  The only break in the
+monotony is a door to the south.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 1543
+S
+#1531
+Akane's Magic Shop~
+~
+~
+This dark room is barely lit up by the black candles and crystal balls
+that decorate it.  Dark blue curtains hang all about, covering walls and any
+doors that might be hidden beneath them.  Magic is thick in the air and even
+the most mundane can feel it.  Strange spices fill the air and leave the
+space in front of you looking a bit hazy.  The only obvious exit out is
+through a door to the east.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1532
+S
+#1532
+Fenghsintzu Road~
+~
+~
+The cherry trees and weeping willow grow thick here, as if sheltering the
+monastary to the south from prying eyes.  The calming sounds of nightingales
+and other song birds fills the air and chanting from the temple compliments
+their efforts.  To the west is a dark magic shop and to the south is a
+temple monastary.  The road continues along to the north.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1519
+D2
+~
+~
+0 0 1545
+D3
+~
+~
+0 0 1531
+S
+#1533
+Teng Lou's Dry Goods~
+~
+~
+Shelves and barrels of all sorts of goods and equipment line the walls
+all around you.  You spot candies, foods, lanterns and many other items that
+look different from what you usually find in a store.  Windows in all four
+walls give you a view of the rest of the town, but only only a door in the
+north wall leads out to the road.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 1520
+S
+#1534
+Chae Lee's Flower Stand~
+~
+~
+One would never guess that just beyond the cherry trees to the northwest
+lie the ravages of the harsh desert.  All the plants within the town are
+green and there doesn't seem to be a lack of water.  Colourful paper
+lanterns light the road as it continues to the east towards the town
+fountain.  To the west the road turns south towards the temple monastary. 
+Directly to the south is a small rice paper and wood shop.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1521
+S
+#1535
+Hungsete Road~
+~
+~
+A variety of scents fills the senses as you pause at the northern end of
+Hungsete Road.  To the east of you is the town forge from which the smell of
+coal and burning wood is coming.  To the west is the sides of a bamboo
+flower stand from which one can smell the floral fragrances of its wares. 
+From the north and from the south comes the smell of cherry blossoms.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1522
+D1
+~
+~
+0 0 1536
+D2
+~
+~
+0 0 1548
+S
+#1536
+The Village Smity~
+~
+~
+The sweltering heat from the many forges placed about this brick building
+is visible in the heat waves rising to the air.  This is where all the fine
+steel weapons and armor is created for the samurai, bushi and even the shop
+keepers.  Merchants from all throughout the land send apprentices here to
+try to fathom the secrets of the incredible steel here, but no gaijin has
+managed to make off with the knowledge.  A wide open door to the west leads
+to the road outside.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 1535
+S
+#1537
+The Shrine of Mercy~
+~
+~
+An overwhelming feeling of peace comes over you as you pause at this
+small shrine to the Goddess of Mercy.  Branches covered in cherry blossoms,
+fresh fruits and fragrant lotus flowers have been left here as offerings to
+the Goddess in hopes that she continues to protect the town from the evils
+of Lukin Wan.  There are no real walls about you, but a trellis covered in
+clinging vines shelters you from the elements outside.  An opening to the
+east leads out to Kozakura Road.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1538
+S
+#1538
+Kozakura Road~
+~
+~
+A few cherry blossom petals float in the air across the road brought in
+upon a breeze coming off of a small pond to the east.  The sounds of singing
+birds fills the air around you, complimenting the beauty of the weeping
+willow trees along the sides of the road.  A strong calming aura is coming
+from a small shrine to the west.  The road continues along to the north and
+to the south.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1525
+D2
+~
+~
+0 0 1551
+D3
+~
+~
+0 0 1537
+S
+#1539
+A Small Fish Pond~
+~
+~
+The pond is almost more of a small stream here as this shallow area
+twists from the east to the south towards a low red bridge that spans across
+it.  Brightly coloured fish swim all about, looking for any bits of food
+they can find.  Reeds and waterlilies grow all about, lending to a very wild
+scene.  A few cherry blossom petals float in the water and you can spy more
+of them to the east.
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1540
+D2
+~
+~
+0 0 1552
+S
+#1540
+A Small Fish Pond~
+~
+~
+The waters here seem to have a strong undercurrent that flows in from
+under the house to the east.  Cherry blossom petals swirl in small
+whirlpools caused by the currents, but some manage to float along the pond
+to the west.  Several colourful shapes dart about you and continue about
+their ways but you vaguely got the hint that they were fish-shaped.  The
+pond continues to the west and looks deeper to the north.
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 1527
+D3
+~
+~
+0 0 1539
+S
+#1541
+A Bathing Chamber~
+~
+~
+You stand within a large bathing chamber.  Towels, silken robes, spices
+and oils line the large tub in the center of the room.  It looks deep enough
+to relaxe within and be thoroughly cleansing.  A small window overlooks the
+pond outside to the north of you and you can see cherry blossoms float by
+the window.  It looks as if the bath is continually cleaning itself as the
+water flows in and out from a grate that you assume is directly connected to
+the small pond.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 1554
+S
+#1542
+Living Quarters~
+~
+~
+A few rows of simple cots with bedrolls upon them make up the living
+quarters of the temple monks.  A footlocker at the end of each cot contains
+their belongings but taking a peek within reveals nothing worth looting.  A
+few tiny windows near the ceiling look out to the world outside, but you
+can't see anything through the cherry tree branches.  A door in the east
+wall exits out to the temple altar.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 1543
+S
+#1543
+Temple Altar~
+~
+~
+Unlike the altars to evil, this place is not covered in blood or living
+sacrifices.  Rather, lit candles and soft chanting fill the room causing
+emotions rather than death.  All at once you can FEEL the happiness, love,
+fear, death, chaos...  Whether the Gods and Goddesses prefer this kind of
+offering or not is up for debate, but it definitely is very unique.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1530
+D1
+~
+~
+0 0 1544
+D2
+~
+~
+0 0 1557
+D3
+~
+~
+3 0 1542
+S
+#1544
+The Temple Foyer~
+~
+~
+You are in the entrance to a small temple devoted to all the gods. 
+Murals on the walls depict each and every god and goddess of the time the
+monastary was created.  To the east is the courtyard where many of the monks
+living here train and to the west is the main part of the temple.  There is
+a palpatible feeling of peace and well-being here.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1545
+D3
+~
+~
+0 0 1543
+S
+#1545
+The Temple Courtyard~
+~
+~
+You find yourself in a well-swept earthen courtyard.  No rocks litter the
+ground and no weeds dare to grow here.  The surrounding cherry trees create
+a serene and private area for the resident monks to practice their martial
+arts undisturbed.  The courtyard continues to the east and south.  A road
+leads to the rest of the town and a set of steps leads up to the monastary
+to the west.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1532
+D1
+~
+~
+0 0 1546
+D2
+~
+~
+0 0 1558
+D3
+~
+~
+0 0 1544
+S
+#1546
+The Temple Training Grounds~
+~
+~
+Long poles are strewn about the training ground where those who were
+using them last dropped them in haste.  Scuffled foot marks upon the bare
+earth show that a great many monks were recently here practicing their
+martial styles with pole weapons.  The training grounds continue to he south
+and to the west is the monastary and courtyard.
+~
+0 0 1
+Rd     0
+D2
+~
+~
+0 0 1559
+D3
+~
+~
+0 0 1545
+S
+#1547
+T'ien Lung Inn~
+~
+~
+You stand in the hall of the T'ien Lung Inn.  Parchment tapestries on
+the walls depict dragons fighting some dark, evil force.  Others show young
+girls kneeling beside ferocious tigers.  The scent of jasmine is thick in
+the air and you can spot small incense burners hanging above you.  The
+entrance to the inn is north of you and the hall continues to the east.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1549
+D1
+~
+~
+0 0 1563
+S
+#1548
+Hungsete Road~
+~
+~
+Butterflies dart about in the air before you as if they were chasing the
+cherry blossoms swirling in the breeze.  You can spot a monastary a ways to
+the west through the thick trees.  A door to the east of you leads into the
+town inn.  The road to the north is lined with colourful paper lanterns and
+continues to the south.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1535
+D1
+~
+~
+3 0 1549
+D2
+~
+~
+0 0 1562
+S
+#1549
+T'ien Lung Inn~
+~
+~
+You stand at the entrance to the T'ien Lung Inn.  Completely covering the
+northern wall (so that people entering may see it) is a large mural of a
+celestial dragon (the t'ien lung).  A counter that is also along the north
+wall has a small bell and a guestbook lying upon it.  The rooms are down the
+hall to the south and east, or you can leave out to the road through the
+door to the west.  The smells of cooking food is coming through an open door
+to the east of you.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1550
+D2
+~
+~
+0 0 1547
+D3
+~
+~
+3 0 1548
+S
+#1550
+A Large Kitchen~
+~
+~
+This large kitchen is filled with the sounds of many different kinds of
+foods being cooked.  Everything from chow mein to shiskabob fills the ovens
+and stoves.  Hanging on walls are many types of ginsu knives and lying on a
+central table is a huge butcher knife lying next to a carved duck.  Seasons
+you have never head of before line spice racks.  An open window lets in a
+breeze from outside and looks out towards a pond to the east.  A door in the
+west wall leads into the rest of the inn.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 1549
+S
+#1551
+Kozakura Road~
+~
+~
+You are at the south end of Kozakura road.  Being more of a lane, it is
+surrounded on each side by weeping willows and cherry trees that seem to be
+eternally in bloom.  To the east is an expensive looking house on the other
+side of a small red bridge.  The road continues through the trees to the
+north where you can spot a small shrine of some sort.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1538
+D1
+~
+~
+0 0 1552
+S
+#1552
+A Small Bridge~
+~
+~
+The bridge is made of fine wooden planks that have been painted a bright
+cherry red.  The rails on either side are set low and can easily be gotten
+over if you wish to enter the pond.  Below you are many colourful fish that
+dart through the grasses at the bottom of the pond.  A door to the east
+leads into the mayor's house and a road to the west leads out to the town of
+Shou Lung.
+~
+0 4 1
+Rd     0
+D0
+~
+~
+0 0 1539
+D1
+~
+~
+3 0 1553
+D2
+~
+~
+0 0 1564
+D3
+~
+~
+0 0 1551
+S
+#1553
+The Mayor's Home~
+~
+~
+The entrance to the Mayor's home is almost divided in two by a short
+sunken tiled area by the door (where guests and residents remove their shoes
+when entering or put them back on when leaving) and a raised wood floor
+leading into the rest of the house.  There are a few pegs on the walls to
+hang cloaks upon but that looks to be the only decoration in here.  You can
+wander into the rest of Shou Lung via the door to the west, or you may
+explore the mayor's home to the east.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1554
+D3
+~
+~
+3 0 1552
+S
+#1554
+The Receiving Room~
+~
+~
+In the center of the room is a long table set into a small pit in the
+floor.  Silk cushions all along the sides of it suggest that the inhabitants
+sit on the floor rather than on chairs.  A few banzai trees decorate the
+table and corners of the room and beautiful paintings of cherry blossom
+trees done on parchment hang on the walls.  To the north looks to be a
+bathing chamber and to the south is a short hallway.  To the east is the tea
+room and the entrance to the house is to the west.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1541
+D1
+~
+~
+0 0 1555
+D2
+~
+~
+0 0 1566
+D3
+~
+~
+0 0 1553
+S
+#1555
+A Tea Room~
+~
+~
+You stand within a small room adorned only with a small table that sits
+low to the ground.  It is in here where the mayor and his guests all sit
+around the table and perform the tea ceremony that holds so much importance
+to this village.  It doesn't look as if one is being held at the moment so
+it seems safe to look around.  A door leads out to the east and you can the
+sounds of pots being hit together coming from the south.  Or you may go to
+the reception area to the west of you.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 1556
+D2
+~
+~
+0 0 1567
+D3
+~
+~
+0 0 1554
+S
+#1556
+The Aviary~
+~
+~
+You take in your surroundings and smile in content.  You'd never think
+that here, in the middle of the desert, you'd find so many trees and birds
+in once place.  Peacocks, nightingales, canaries and a multitude of other
+birds create a loud cacophany of noise.  Whomever owns this aviary obviously
+cares for it quite a bit.  The only obvious exit seems to be through a rice
+paper door to the west.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 1555
+S
+#1557
+Temple Library~
+~
+~
+Bookshelves reaching high to the ceiling are packed full of books of all
+sorts.  There are books on magic, anatomy, geography, history, theology and
+more subjects than you could shake a stick at.  A table in the center of the
+room is surrounded by a few simple wood chairs for the readers to sit and
+enjoy their books.  An archway to the north heads out to the temple altar.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1543
+S
+#1558
+The Temple Training Grounds~
+~
+~
+You are at the southwest corner of the temple training grounds where the
+least experienced of the monks are learning their martial art forms.  The
+ground is bare earth that has been swept clean of rocks and debris so that
+bare feet don't get hurt.  The grounds extend to the east and the temple
+courtyard is to the north.  Thick groves of cherry trees and weeping willows
+prevent passage to the south or west.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1545
+D1
+~
+~
+0 0 1559
+S
+#1559
+The Temple Training Grounds~
+~
+~
+Tall poles in the ground are here for the training monks to climb and
+practice their martial forms in mid-air.  The ground itself is bare earth
+that has been cleared of rocks, weeds and other stray debris.  To the north
+and west of you are more training areas and the monastary is a short
+distance to the west.  Through the trees to the south you can spot the
+residential area of the town and to the east you see the back of the pet
+shop.  Both directions are blocked by foliage.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1546
+D3
+~
+~
+0 0 1558
+S
+#1560
+Shan Sao's Pet Shop~
+~
+~
+Bamboo cages filled with many different kinds of animals fill every
+corner of this room.  There are monkies, a nightingale, a tiger and even a
+cricket!  All of the pets look rather content instead of abused and there is
+no doubt that the choices here are all of top quality!  A door to the east
+leads out to the road.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1562
+S
+#1561
+Pet Storage~
+~
+~
+~
+0 131078 0
+Rd     0
+S
+#1562
+Hungsete Road~
+~
+~
+Chiming bells and whispering wind through the treetops aren't quite
+enough to drown out the sounds of dogs barking and goats bleating.  You even
+manage to hear a tiger roar in the building to the west of you.  A sign (and
+the smell coming from within) point out that the building is the town pet
+shop.  The road continues to both the north and to the south.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1548
+D2
+~
+~
+0 0 1571
+D3
+~
+~
+0 0 1560
+S
+#1563
+An Inn Hall~
+~
+~
+This inn seems to be one of the few places in town that isn't composed of
+rice paper and wood.  The walls are brick, but radiate warmth in winter and
+coolness in summer.  The walls are decorate in many oriental poems, haikus
+and calenders.  The floor is polished bare wood and leads to the south
+towards some closed doors and west towards the entrance.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 1573
+D3
+~
+~
+0 0 1547
+S
+#1564
+A Small Fish Pond~
+~
+~
+The water laps rythmicly against the house to the east of you, just under
+a small window.  Reeds grow thickly here and prevent passage in any
+direction except north towards a small bridge.  Dragonflies hover just above
+the water's surface and tease the fish that swim below as they dart out of
+the reach of gaping mouths seeking food.
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 1552
+S
+#1565
+Hou Phat's Chambers~
+~
+~
+The strong scent of jasmine incense fills your senses as you take in the
+surroundings of this room.  A small flat cushion lies on floor of the room
+and a banzai tree sits in the southwest corner.  A small wardrobe in the
+north wall is just about it for decorations in here.  You look through the
+window in the west wall and can see the rest of the Shou Lung town.  A door
+to the east leads out of the room.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 1566
+S
+#1566
+A Small Hall~
+~
+~
+The house extends a bit here to enter the living area of the residents. 
+A tiny waterclock sits on the east wall and can be seen from either of the
+doorways to the west and south.  Jasmine incense is coming from the room to
+the west and a waft of honeysuckle comes from the room to the south.  A
+receiving room is at the end of the hall to the north.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1554
+D2
+~
+~
+0 0 1598
+D3
+~
+~
+0 0 1565
+S
+#1567
+A Kitchen~
+~
+~
+You are within a bright, cheery room filled the bubbling sounds of
+noodles cooking and tea boiling.  The spicey smell of a szechuan chicken
+dish being cooked fills your nostrils and almost causes you to sneeze from
+all the spices.  A small counter laden with bits of fish, onions, carrots
+and a myriad other vegetables looks recently abandoned.  The branches of a
+willow tree outside prevents you from seeing very far through the window in
+the east wall.  A sliding rice paper door in the north wall is the only exit
+out.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1555
+S
+#1568
+Chukei Road~
+~
+~
+You are at the western end of the residential area of the town of Shou
+Lung.  Blossoming cherry trees completely surround the area, but don't quite
+block out your view of a lage monastary to the north of you.  Rice paper
+houses line the road on the south side and a few weeping willow trees grow
+just to your west.  The road continues to the east, or you can enter one of
+the houses to the south.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 1569
+D2
+~
+~
+0 0 1575
+S
+#1569
+Chukei Road~
+~
+~
+Cherry blossom petals drift across your path, borne on a soft breeze that
+comes from the north.  The blooming cherry trees all around you lend for a
+beautiful scene and a heady perfume.  The residential area of Shou Lung is
+one of the loveliest areas in town you've scene so far.  Rice paper houses
+line the road to the south and you can enter one directly south of you.  The
+road also continues along to the east and west.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 1570
+D2
+~
+~
+0 0 1576
+D3
+~
+~
+0 0 1568
+S
+#1570
+Chukei Road~
+~
+~
+You are in the residential area of Shou Lung.  Beautiful rice paper
+houses line he southern side of the road.  Well manicured rock gardens and
+banzai trees decorate each house.  Blooming cherry trees line the road to
+the north, but through them you can make out a monastary to the northwest. 
+The road continues to the west, or you can rejoin the main road to the east.
+To the south is the entrance of one of the homes.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 1571
+D2
+~
+~
+0 0 1577
+D3
+~
+~
+0 0 1569
+S
+#1571
+Hungsete Road~
+~
+~
+You are at a junction in Hungsete Road where the residential area, Chukei
+Road, meets and leads off to the west.  Glancing in that direction you see
+more cherry trees and rice paper houses that are surrounded in small rock
+gardens and tiny ponds.  Just beyond it and a little bit to the north, you
+can spot bits and pieces of the temple monastary.  Hungsete Road continues
+to the north towards the center of town and south towards the southern exit.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1562
+D2
+~
+~
+0 0 1578
+D3
+~
+~
+0 0 1570
+S
+#1572
+The Red Room~
+~
+~
+&RYou stand in a room with rice paper walls and red painted wood.  The
+wardrobe and chest of drawers have been stained to a deep red, matching the
+crimson curtains on the window that adorns the west wall.  The bed is
+dressed in red velvet bed covers and pink silk sheets.  The only obvious
+exit out is through a door to the east.&w
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 1573
+S
+#1573
+An Inn Hall~
+~
+~
+You find yourself at the southern end of the T'ien Lung Inn where the
+rooms seem to be located.  In contrast to the rest of the inn, this section
+is quite colourful and almost alien.  It looks as if the owner of the inn
+tries to make its foreign guests not feel so out of place.  To the east is a
+dark green door and to the south is a soft blue door.  To the west is a
+bright red door with a 'do not disturb' sign hanging from the knob.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1563
+D1
+~
+~
+3 0 1574
+D2
+~
+~
+3 0 1580
+D3
+~
+~
+3 0 1572
+S
+#1574
+The Green Room~
+~
+~
+&gYou take in your surroundings and almost feel as if you were in a dark
+forest or grassy field.  The walls are paneled in dark green wood and the
+curtains on the eastern window are of a slightly lighter shade of green. 
+The lone bed is covered in an olive blanket with lime colored sheets.  The
+only thing not green in here is the wardobe on the south wall where guests
+may hang their clothes and belongings.  A door to the west leads out of the
+room.&w
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 1573
+S
+#1575
+A Rice Paper House~
+~
+~
+This house doesn't seem to have a family living in it rather than a
+single male.  For although the single room isn't exactly a pig sty, it's not
+as clean as the other houses and buildings you have explored so far.  There
+is also a huge lack of any kind of decoration other than a single low table
+in the center of the floor and a sleeping mat at one side of the room.  A
+door in the north end of the house leads to the outside.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1568
+S
+#1576
+A Rice Paper House~
+~
+~
+A low table set in the center of the room and surrounded by soft cushions
+looks to have been recently abandoned as there is still steaming food and
+tea on the table.  The rice paper room dividers have been pushed against the
+walls and the sleeping mats rolled away.  No windows adorn the walls, but a
+door to the north looks out amongst the cherry trees lining the road
+outside.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1569
+S
+#1577
+A Rice Paper House~
+~
+~
+This one room house is divided into little sections by way of moveable
+rice paper and wood walls.  Privacy is next to non-existant, but families
+are close-knit and find nothing wrong with this.  The barewood floors are
+surprisingly comfortable beneath your feet.  They must have been sanded a
+lot to be so perfectly smooth.  A door to the north leads out to the road.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1570
+S
+#1578
+Hungsete Road~
+~
+~
+Music and laughter is coming from the pavillion just to the east of you. 
+A painting on the wall depicts dancers in battle armor.  You guess that this
+must be Shou Lung's version of a theater.  Slightly to the northwest is a
+residential road and farther to the north is the town's center.  The road
+also continues to the south and west towards the southern exit of town.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1571
+D1
+~
+~
+3 0 1585
+D2
+~
+~
+0 0 1579
+S
+#1579
+Hungsete Road~
+~
+~
+The ravages of the desert are far from thought while wandering through
+the streets of Shou Lung.  Somehow, the eternally blooming cherry trees are
+keeping out the extreme heat and dryness for this is far more than just a
+simple oasis town.  One can even smell fish coming from the shop just to the
+south, but where they got those from is a mystery.  The road twists on to
+the north and to the west.
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 1578
+D2
+~
+~
+0 0 1591
+D3
+~
+~
+0 0 1581
+S
+#1580
+The Blue Room~
+~
+~
+desc
+c
+&BThe soft blue walls of this room seem to be some kind of dyed wood that
+doesn't weather.  The curtains are a cyan color and the carpet is the color
+of seafoam.  The midnight blue blankets on the bed cover soft turquoise
+sheets.  The overall feeling in this room was as if you were surrounded by
+endless waves of water.  A door to the north leads out into the hall.&w
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 1573
+S
+#1581
+Hungsete Road~
+~
+~
+You find yourself just inside the southeastern gate of the town of Shou
+Lung.  A small guardhouse (more of a shack, really) sits just to the
+southwest of where you currently are.  You can't see much of the town from
+here for the blooming cherry trees and elegant weeping willows grow too
+thickly to view any of the buildings.  The road twists towards the north
+just to the east of you and continues out of the town towards the west.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 1579
+D3
+~
+~
+0 0 1582
+S
+#1582
+Outside a Guardhouse~
+~
+~
+You are at the southern edge of the town of Shou Lung.  Thick cherry
+trees and weeping willows seem to have popped up from nowhere in the desert
+and are hiding a small town within their grove.  Magic is thick in the air
+and you're guessing that there's more to this town than meets the eye.  A
+small guardhouse to the south contains the town samurai who guard the
+citizens from the desert monsters.  The road continues east into the town
+and leaves to the west.
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 1581
+D2
+~
+~
+0 0 1590
+D3
+~
+~
+0 0 1583
+S
+#1583
+The Road to Shou Lung~
+~
+~
+You are on a slightly sandy road that leads into the town of Shou Lung. 
+You scan about and spot a guardhouse to the southeast but can't make out
+anything of the town it guards.  You think you can see...  Trees?  But you
+can't be quite sure for that many trees can't grow in the desert without a
+large water source.  And then it wouldn't even be the desert anymore, would
+it?  You can enter the town to the east or follow the road to the south.
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 1582
+D2
+~
+~
+0 0 1584
+S
+#1584
+The Road to Shou Lung~
+~
+~
+The heat of the desert is almost unbearable even tho those who are native
+to this kind of punishment.  However, to the north and east, a cool breeze
+brings the scent of cherry blossoms with it.  You try taking a closer look
+but can only spot a haziness that could just as well be a mirage.  The
+desert continues to stretch out to the south and west and the road you are
+on continues to the northeast.
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 1583
+S
+#1585
+Entrance to the Dancer's Pavillion~
+~
+~
+You are at the entrance of a large pavillion in which plays are acted out
+through dance and music.  To some, the music may seem strange and unnerving,
+but it eventually becomes familiar and lends to the air of mystery as the
+story progresses.  To the south are many rows of benches facing a stage to
+their east.  To the west is a door leading out to the road.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 1586
+D3
+~
+~
+3 0 1578
+S
+#1586
+The Audience~
+~
+~
+You find yourself amidst many low wooden benches that have been covered
+in silk pillows.  They have all been set facing east towards a stage where
+you can see a few dancers in bright white makeup and armor dancing out a
+mock battle to strange music.  A short flight of steps leads on to the stage
+so that you can visit with the dancers or you can leave the pavillion
+through the entrance to the northwest.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1585
+D1
+~
+~
+0 0 1587
+S
+#1587
+The Stage~
+~
+~
+You stand upon a large wooden stage.  Red silk curtains look like they
+lead to some kind of room to the east of you and to the west of you you can
+see rows of logs for people to sit on as they watch the shows.  Small cubby
+holes are to the north and south of you for actors and dancers to wait for
+their cue to go on stage.  Wooden katanas and other fake weapons lie strewn
+about waiting for their owners to pick them up and resume their mock
+battles.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 1588
+D3
+~
+~
+0 0 1586
+S
+#1588
+The Dressing Room~
+~
+~
+You find yourself within the dressing rooms of the dancers' pavillion. 
+Costumes of all sorts are hanging from pegs and from the backs of chairs. 
+Props for many different performances rest within the wardrobes standing
+along the wall and small instruments sit within their cases.  A counter with
+a large mirror is lined with make-up and perfumes.  The only obvious exit is
+through a curtain to the west.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 1587
+S
+#1589
+A Small Guardhouse~
+~
+~
+This small guardhouse is where the local samurai stand watch to protect
+the citizens of Shou Lung from the monstrocities that live in the desert and
+to keep an eye on incoming visitors.  The house is a single room, really,
+rather than a real house and is bare of all furniture except for a single
+cot and and a footlocker for belongings.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 1502
+S
+#1590
+A Small Guardhouse~
+~
+~
+This small guardhouse is composed of a single room that contains only a
+single bed a footlocker for the guard's weapons and armor.  The samurai
+guard the town of Shou Lung from the outside ravages, monsters and
+not-so-pleasant visitors.  The only exit is through a door to the north.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1582
+S
+#1591
+The Fish Market~
+~
+~
+The smell of fish is incredibly strong here and the aroma almost hits
+like a brick wall.  Crates and counters filled with trout, red snapper,
+salmon, squid and many other types of fish are packed to their tops.  This
+seems to be a sushi lover's heaven.  A thought briefly flashes to mind.. 
+Where did they get all these fish if this town is in the middle of a desert?
+Perhaps the Goddess provides as well as protects.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1579
+S
+#1592
+In the Fishpond~
+~
+~
+Thick reeds, roots of floating lilypads, cherry blossoms and sediment
+from the bottom of the pond cloud the water making this corner of the pond
+the most difficult for vision.  Sound is very distorted from all the life
+and movement in the surrounding waters causing the other sense to not be
+very reliable.  It's very difficult to tell which way is up, but it can be
+surmised that the bank is nearby as passage to the north and west is blocked
+by rock and earth.
+~
+0 0 8
+Rd     0
+D1
+~
+~
+0 0 1593
+D2
+~
+~
+0 0 1595
+D4
+~
+~
+0 0 1516
+S
+#1593
+In the Fishpond~
+~
+~
+You pause for a moment in your swimming to take in your surroundings. 
+Although the water is almost crystal clear, your vision is still a bit
+blurry and so when you look to the west and see a small demonic shape, you
+decide you must investigate it closer for surely you couldn't be correct. 
+You think you hear a deep laughter in the water, but that could also be the
+sounds of your heart beating and water rushing in your ears.  You can swim
+to the south, east and west, or you may swim up to the surface above.
+~
+0 0 8
+Rd     0
+D1
+~
+~
+0 0 1594
+D2
+~
+~
+0 0 1596
+D3
+~
+~
+0 0 1592
+D4
+~
+~
+0 0 1517
+S
+#1594
+In the Fishpond~
+~
+~
+Small bits of sediment float in the water around you, stirred up by the
+movements of your passing.  Fish dart through the waving grasses and cattail
+roots and brush along your legs.  You hold out a hand a one nibbles gently
+at your fingers causing them to tickle.  You hope it's not just taking a
+taste to see if you're worth the effort.  The surface of the pond is just
+above you, or you can continue swimming below to the south and to the west.
+~
+0 0 8
+Rd     0
+D2
+~
+~
+0 0 1597
+D3
+~
+~
+0 0 1593
+D4
+~
+~
+0 0 1518
+S
+#1595
+In the Fishpond~
+~
+~
+The underwater grasses wave slowly in time to the small currents of your
+passing.  A few bubbles of air escape your lips and blur your sight for a
+moment.  When you can see again, you can swear you saw a dark shape dart to
+the north.  You can swim to the surface above or continue your explorations
+in the pond to the north or to the east.
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 1592
+D1
+~
+~
+0 0 1596
+D4
+~
+~
+0 0 1526
+S
+#1596
+In the Fishpond~
+~
+~
+The floor of the pond seems to be of fine sand and a thin layer of bright
+green mosses.  The occasional rock hides small fish that could either be
+baby carp or unlucky guppies for the larger fish seem to be preying upon
+them.  You can continue to swim underwater to the north, east and west, or
+you can push up to the surface and take a breath of fresh air.
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 1593
+D1
+~
+~
+0 0 1597
+D3
+~
+~
+0 0 1595
+D4
+~
+~
+0 0 1527
+S
+#1597
+In the Fishpond~
+~
+~
+You are almost choked by cherry blossoms that have fallen into the water
+from a tree far above you.  Your vision is next to nothing here and you
+figure this would be a good place for some underwater nasty to attack
+without notice.  You can be free of most of the blossoms by swimming to the
+north or to the west, or you can dive to the surface above to try to find
+the tree itself.
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 1594
+D3
+~
+~
+0 0 1596
+D4
+~
+~
+0 0 1528
+S
+#1598
+Mai Lin's Chambers~
+~
+~
+The wonderful aroma of honeysuckle and vanilla waft in the air and bring
+a feeling of contentment.  Long parchents covered in a strange script of
+characters you can't read run along some of the walls and are only broken by
+the occasional picture of a stalking tiger, singing nightingale or cherry
+blossom tree.  There is no bed in here except for a flat cushion lying in
+the center of the floor.  The only door out is to the north.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 1566
+S
+#1599
+Above the Town Fountain~
+~
+~
+The view from here is breathtaking as the trees and buildings all melt
+away and give an unobstructed view of the surrounding area.  A little ways
+to the west is a shaolin temple and courtyard where the local monks can be
+seen training dilligently.  To the north is a fireworks factory and a road
+that twists off further in that direction.  To the east is a large manor
+home and small pond.  To the south is a small theater, and inn and the
+residential area.  The most spectacular thing to see, however, is the desert
+that completely surrounds the village, yet is somehow kept at bay.
+~
+0 33554432 9
+Rd     0
+D5
+~
+~
+0 0 1522
+S
+#1600
+In the Bath~
+~
+~
+&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\
+&WYou sink low into the tub, letting the warm waters soothe away
+all your aches and pains.  No worries trouble you as you splash
+about. Along the edges of the tub are various oils and spices
+to add to the water for your choice of aromatherapy. Now if you
+only had someone to wash your back to get those places you have
+a hard time reaching for yourself...
+&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&C/&B\&w
+~
+0 12 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 1503 spec_cast_adept
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 1506 0 1541
+M 0 1512 3 1546
+E 0 1516 0 20
+M 0 1504 1 1554
+M 0 1503 1 1556
+E 0 1509 0 3
+E 0 1508 0 5
+E 0 1510 0 9
+M 0 1505 1 1556
+M 0 1512 3 1558
+E 0 1516 0 20
+M 0 1512 3 1559
+E 0 1516 0 20
+M 0 1511 1 1599
+E 0 1515 0 24
+O 0 1507 0 1600
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

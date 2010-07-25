@@ -1,0 +1,1800 @@
+#AREADATA
+Name        {  5-10} The Ziggurat~
+Builders    Sarbadon~
+VNUMs       24000 24099
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Sarbadon~
+Llevel      0
+Ulevel      0
+Music       u6_creat.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#24000
+Zarea~
+Zarea~
+Zarea stands here waiting to sell you something.
+~
+~
+524355 50332160 16 133376 0 0 S
+110 1 220 220 1000 1000d0+0 0d0+0
+1100 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Hello there!
+endif
+~
+|
+#24001
+sparrow~
+a sparrow~
+A sparrow is flapping around in the tree.
+~
+This is just another bird flying around in the tree.  You are tempted to
+kill it and will more than likely succeed.  
+~
+3 0 0 0 0 0 S
+3 1 6 6 10 10d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#24002
+sparrow~
+a sparrow~
+A sparrow is flapping around in the tree.
+~
+This is just another bird flying around in the tree.  You are tempted to
+kill it and will more than likely succeed.  
+~
+3 0 0 0 0 0 S
+3 1 6 6 10 10d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#24003
+chipmunk~
+A small chipmunk~
+A small chipmunk scurries about here.
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 10 10d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#24004
+chipmunk~
+A small chipmunk~
+A small chipmunk scurries about here.
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 10 10d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#24005
+chipmunk~
+A small chipmunk~
+A small chipmunk scurries about here.
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 10 10d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#24006
+chipmunk~
+A small chipmunk~
+A small chipmunk scurries about here.
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 10 10d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#24007
+squirrel~
+a squirrel~
+A squirrel is wandering around gathering nuts.
+~
+~
+1 0 0 0 0 0 S
+4 1 8 8 15 15d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24008
+squirrel~
+a squirrel~
+A squirrel is wandering around gathering nuts.
+~
+~
+1 0 0 0 0 0 S
+4 1 8 8 15 15d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24009
+a squirrel~
+a squirrel~
+A squirrel is wandering around gathering nuts.
+~
+~
+1 0 0 0 0 0 S
+4 1 8 8 15 15d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24010
+squirrel~
+a squirrel~
+A squirrel is wandering around gathering nuts.
+~
+~
+1 0 0 0 0 0 S
+4 1 8 8 15 15d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24011
+fish~
+A fish~
+A fish is here swimming close to the surface.
+~
+It's a fish alright!
+~
+3 0 0 0 0 0 S
+4 1 8 8 20 20d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24012
+fish~
+A fish~
+A fish is here swimming close to the surface.
+~
+It's a fish alright!
+~
+3 0 0 0 0 0 S
+4 1 8 8 20 20d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24013
+fish~
+A fish~
+A fish is here swimming close to the surface.
+~
+It's a fish alright!
+~
+3 0 0 0 0 0 S
+4 1 8 8 20 20d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24014
+fish~
+A fish~
+A fish is here swimming close to the surface.
+~
+It's a fish alright!
+~
+3 0 0 0 0 0 S
+4 1 8 8 20 20d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24015
+duck~
+A duck~
+A duck is here resting in the water.
+~
+It's a duck alright!
+~
+1 0 0 0 0 0 S
+4 1 8 8 20 20d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24016
+duck~
+A duck~
+A duck is here resting in the water.
+~
+It's a duck alright!
+~
+1 0 0 0 0 0 S
+4 1 8 8 20 20d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#24017
+sparrow~
+a sparrow~
+A sparrow is flapping around in the tree.
+~
+This is just another bird flying around in the tree.  You are tempted to
+kill it and will more than likely succeed.  
+~
+3 0 0 0 0 0 S
+3 1 6 6 10 10d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#24018
+sparrow~
+a sparrow~
+A sparrow is flapping around in the tree.
+~
+This is just another bird flying around in the tree.  You are tempted to
+kill it and will more than likely succeed.  
+~
+3 0 0 0 0 0 S
+3 1 6 6 10 10d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#24019
+sparrow~
+a sparrow~
+A sparrow is flapping around in the tree.
+~
+This is just another bird flying around in the tree.  You are tempted to
+kill it and will more than likely succeed.  
+~
+3 0 0 0 0 0 S
+3 1 6 6 10 10d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#24020
+sparrow~
+a sparrow~
+A sparrow is flapping around in the tree.
+~
+This is just another bird flying around in the tree.  You are tempted to
+kill it and will more than likely succeed.  
+~
+3 0 0 0 0 0 S
+3 1 6 6 10 10d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#24021
+Healer~
+the healer~
+The Healer stands here waiting to mend your wounds.
+~
+~
+75 50331648 16 133376 2 0 S
+130 1 260 260 20000 20000d0+0 0d0+0
+0 0 0
+0 0 2
+3 0 0
+>speech_prog heal~
+if level($n) < 6
+tell $n Ahhh, you are still low of level...
+tell $n For this reason, I shall grant you extended help.
+c 'healing hands' $n
+endif
+~
+>all_greet_prog 100~
+if level($n) < 6
+say You are still young.
+say Say heal in order to receive some help.
+say If you are need of more information about
+say this mud, try the homepage at
+say http://members.rogers.com/stormgate
+endif
+~
+|
+#24022
+Sencil~
+sencil~
+Sencil stands here waiting to train you.
+~
+~
+579 33555080 16 0 0 0 S
+110 1 220 220 20000 20000d0+0 0d0+0
+1100 0 0
+0 0 1
+1 0 0
+>greet_prog 100~
+if ispc($n)
+grin $n
+say So you've come to train with me?
+endif
+~
+|
+#24023
+Cyntro~
+Cyntro~
+Cyntro stands here waiting to practice your spells and skills.
+~
+~
+1091 33555080 16 0 0 0 S
+110 1 220 220 0 2750d0+0 0d0+0
+1100 0 0
+0 0 1
+1 0 0
+>greet_prog 100~
+if ispc($n)
+say Welcome $n.
+say I can take care of all of your practicing needs.
+endif
+~
+|
+#24024
+Azier~
+Azier~
+Azier sits here waiting to teach you some new languages.
+~
+~
+589891 33555080 16 0 0 0 S
+110 1 220 220 20000 30000d0+0 0d0+0
+1100 0 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if ispc($n)
+,nods silently.
+say I can teach you the tongues and whispers of the world.
+say Learning them will get you far, out there.
+endif
+~
+|
+#24025
+Altren~
+Altren~
+Altren stands here waiting to take your order.
+~
+~
+3 33554568 0 0 0 0 S
+106 1 212 212 20000 20000d0+0 0d0+0
+1060 0 0
+0 0 0
+0 0 0
+#24026
+Newbie Helper~
+Newbie Helper~
+Newbie Helper
+~
+~
+3 251674816 65568 147456 0 0 S
+106 1 212 212 20000 20000d0+0 0d0+0
+1060 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+Greetings! Welcome to Stonegate!
+~
+>act_prog ~
+mpoload 156
+give book ($n)
+~
+>greet_prog 100~
+say Greetings! Welcome to Stonegate!
+mpoload 156
+give book $n
+~
+|
+#24027
+liar little~
+the little liar~
+A little liar runs about the cathedral.
+~
+This kid LIES!
+~
+65 0 0 0 0 -250 S
+5 1 10 10 30 350d0+0 0d0+1000
+50 0 0
+0 0 1
+0 0 0
+>rand_prog 6~
+gasp
+'I didn't do it!
+'I swear!
+,giggles behind his hands.
+~
+>rand_prog 4~
+'I told you I didn't do it!
+,tries to run away.
+~
+|
+#24028
+Liar~
+the little liar~
+A little liar runs about the cathedral.
+~
+This kid LIES!
+~
+1 0 0 0 0 0 S
+5 1 10 10 30 30d0+0 0d0+1000
+50 0 0
+0 0 1
+0 0 0
+#24029
+short worshipper~
+the worshipper~
+A worshipper of the cathedral prays here.
+~
+A short man, this worshipper seems like he is kneeling but he is standing.  
+~
+65 0 0 0 0 250 S
+6 1 12 12 50 39d0+0 0d0+1000
+60 0 0
+0 0 1
+0 0 0
+#24030
+worshipper~
+the worshipper~
+A worshipper of the cathedral prays here.
+~
+A young man with a chaste disposition, this worshipper prays to the high
+heavens in hopes of eternal life.  
+~
+65 0 0 0 0 250 S
+6 1 12 12 50 390d0+0 0d0+1000
+60 0 0
+0 0 1
+0 0 0
+>rand_prog 5~
+,makes the sign of the cross.
+~
+>rand_prog 5~
+,bows his head low and prays.
+~
+|
+#24031
+Kaltinerak~
+Kaltinerak~
+Kaltinerak stands here guarding the ziggurat.
+~
+This massive human towers above any mortal.  He exudes confidence.
+~
+524355 301989888 32784 139264 2 0 S
+106 1 212 212 20000 20000d0+0 0d0+106000
+0 0 0
+0 0 1
+3 0 0
+#0
+
+
+
+#OBJECTS
+#24000
+breastplate plate evisceration~
+the breastplate of Evisceration~
+A grungy looking breastplate~
+~
+9 64 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#24001
+box~
+donation Box~
+A box has been left here for donations.~
+~
+15 0 0 0 0 0 0
+100 100
+50~ 0~ 0~ 0~
+100000000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#24002
+Fountain~
+fountain~
+A huge marble fountain sprays clear water into the air.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+1000 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#24003
+duck roasted~
+a roasted duck~
+A roasted duck gleams with melted butter.~
+~
+19 0 0 0 0 1 1
+100 100
+25~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#24004
+A fruit salad~
+A fruit salad~
+A fruit salad~
+~
+19 0 0 0 0 1 1
+100 100
+50~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#24005
+torch~
+a torch~
+A torch burns brightly here.~
+~
+1 1 0 0 0 1 1
+100 100
+0~ 0~ 10~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#24006
+bag~
+a bag~
+A bag lies here on the ground.~
+~
+15 0 0 0 0 16385 1
+100 100
+30~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#24007
+canteen lemonade~
+a canteen~
+A canteen is here.~
+~
+17 0 0 0 0 1 1
+100 100
+50~ 50~ 6~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#24009
+scroll recall~
+a scroll of recall~
+A scroll lies here.~
+~
+2 0 0 0 0 1 1
+100 100
+10~ word of recall~ reserved~ reserved~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#24010
+Iron Dagger~
+an iron dagger~
+An iron dagger has been left behind.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 0~ 0~ 11~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 2
+#24011
+Iron Ring~
+an iron ring~
+An iron ring has been left behind.~
+~
+9 0 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#24012
+Iron Leggings~
+iron leggings~
+A pair of iron leggings has been left behind.~
+~
+9 0 0 0 0 33 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#24013
+Cloth Sleeves~
+cloth sleeves~
+A pair of cloth sleeves has been left behind.~
+~
+9 0 0 0 0 257 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 3
+#24014
+Iron Bracer~
+an iron bracer~
+An iron bracer has been left behind.~
+~
+9 0 0 0 0 4097 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#24000
+A Massive Obsidian Ziggurat~
+~
+~
+As you travel off the main path, you come across a vestiginous black
+ziggurat.  This enormous step pyramid rises to three times the height of the
+surrounding trees.  Broad steps lead east and up to an arching entrance
+approximately twenty feet above the ground.  
+~
+0 402436 0
+Rd     0
+D1
+~
+~
+0 0 24001
+D3
+~
+~
+0 0 17135
+S
+#24001
+The Main Foyer of the Ziggurat~
+~
+~
+The walls and ceiling are made of solid black marble, while the floor is
+covered with a highly decorated rug.  Three small candle stands provide a
+dim illumination to the foyer, and seem to burn with a magical fire as none
+of the candles are spent.  A hallway leads north, and a cathedral is to the
+east.  
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 24013
+D1
+~
+~
+0 0 24002
+D3
+~
+~
+0 0 24000
+S
+#24002
+The Hallway to the Cathedral~
+~
+~
+Fine woven tapestries hang freely upon the cold black marble walls of the
+cathedral.  Each of the intricate specimens contain a scene of some
+religious significance.  Just below, resting upon a table of three legs, are
+a multitude of burning candles.  The light shed by the slender wax is enough
+to illuminate the entire hall.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 24003
+D1
+~
+~
+0 0 24005
+D2
+~
+~
+0 0 24004
+D3
+~
+~
+0 0 24001
+S
+#24003
+In an Aisle Behind Some Wooden Pews~
+~
+~
+An aisle way here runs from the south directly behind a set of finely
+carved pews.  Small niches hae been cut into the walls here and within each
+is a small golden figure.  The figure holds out its hands, clasping them
+together as if it is performing an act of prayer.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 24002
+S
+#24004
+In an Aisle Behind Some Wooden Pews~
+~
+~
+An aisle way here runs from the north directly behind a set of finely
+carved pews.  Small niches hae been cut into the walls here and within each
+is a small golden figure.  The figure holds out its hands, clasping them
+together as if it is performing an act of prayer.  To the south is a small
+corridor.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 24002
+D2
+~
+~
+0 0 24009
+S
+#24005
+The Center Aisle of the Cathedral~
+~
+~
+All around you, are many rows of pews, each uniquely carved from black
+marble.  Large stained glass windows rise high above the pews.  Around the
+windows of brilliant glass are ropes of silver, forming a spectacular frame.
+You can see a multitude of dazzling rainbows filtering their way through
+these fine works of art.  Pews are to your north and south, while the alter
+is directly east.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 24007
+D1
+~
+~
+0 0 24006
+D2
+~
+~
+0 0 24008
+D3
+~
+~
+0 0 24002
+S
+#24006
+At the Altar of Manipulation~
+~
+~
+You stand at the main altar of the Cathedral.  Black stone columns rise
+up over you, and you hear the quiet chanting of worshippers at prayer.  The
+altar is plain and black, and you see no statues or holy symbols that might
+give a hint as to whom the worshippers are actually praying to.  Truly, this
+ziggurat is mysterious indeed.  
+~
+0 12 0
+Rd     0
+D3
+~
+~
+0 0 24005
+S
+#24007
+In a Row of Wooden Pews~
+~
+~
+Large and slender benches have been erected here, each cushioned with a
+thin pillow of goose down.  The marble pews contain depictions of some
+religious significance.  The back of the pew in front of you contains a
+small shelf for holding scriptures.  Upon the shelf are a few pieces of
+paper, and a bottle of scribing ink.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 24005
+S
+#24008
+In a Row of Wooden Pews~
+~
+~
+Large and slender benches have been erected here, each cushioned with a
+thin pillow of goose down.  The marble pews contain depictions of some
+religious significance.  The back of the pew in front of you contains a
+small shelf for holding scriptures.  Upon the shelf are a few pieces of
+paper, and a bottle of scribing ink.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 24005
+S
+#24009
+The Corridor of Confession Booths~
+~
+~
+Torches flutter furiously against the walls of cold black marble which
+make up this narrow corridor.  You can see a magnificant display of colors
+dancing in from the north.  The floor is covered with a purple rug that
+continues to the east.  Directly south of you is a small confession booth.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 24004
+D1
+~
+~
+0 0 24011
+D2
+~
+~
+0 0 24010
+S
+#24010
+In a Confession Booth~
+~
+~
+This is a small wooden chamber, barely space enough for one human.  A
+quick spin around reveals nothing more than a solemn wooden bench built into
+the side of an intricaltly carved panel.  A window of mesh sits center in
+the wooden panel through which nothing can be seen.  
+~
+0 13 0
+Rd     0
+D0
+~
+~
+0 0 24009
+S
+#24011
+The Corridor of Confession Booths~
+~
+~
+Torches flutter furiously against the walls of cold black marble which
+make up this narrow corridor.  The floor is covered with a purple rug that
+continues to the west.  Directly south of you is a small confession booth.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 24012
+D3
+~
+~
+0 0 24009
+S
+#24012
+In a Confession Booth~
+~
+~
+This is a small wooden chamber, barely space enough for one human.  A
+quick spin around reveals nothing more than a solemn wooden bench built into
+the side of an intricaltly carved panel.  A window of mesh sits center in
+the wooden panel through which nothing can be seen.  
+~
+0 13 0
+Rd     0
+D0
+~
+~
+0 0 24011
+S
+#24013
+A Peaceful Hall~
+~
+~
+This hallway, which extends northward, is about thirty feet long.  The
+walls and ceiling are solid black marble, while the floor is covered with a
+highly decorated rug running the halls entire length.  Twelve small candle
+stands provide a dim illumination to the hall, and seem to burn with a
+magical fire as none of the candles are spent.  The hallway continues north
+of here, and the foyer is to the south.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 24014
+D2
+~
+~
+0 0 24001
+S
+#24014
+A Bend in a Peaceful Hall~
+~
+~
+Reaching the bend in the hallway, which extends to the east and south,
+you notice the marble walls contain no windows.  All the light in the hall
+comes from that of twelve small candle stands.  The highly decorated rug
+continues in each direction.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 24015
+D2
+~
+~
+0 0 24013
+S
+#24015
+A Peaceful Hall~
+~
+~
+This hallway, which extends from the west, is about fifteen feet long. 
+The walls and ceiling are solid black marble, while the floor is covered
+with a highly decorated rug running the halls entire length.  Twelve small
+candle stands provide a dim illumination to the hall, and seem to burn with
+a magical fire as none of the candles are spent.  The hallway continues to
+the east, and to the west where it makes a slight bend.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 24016
+D3
+~
+~
+0 0 24014
+S
+#24016
+The Entrance to the Training Academy~
+~
+~
+Two stone gargoyle sentinels flank the entry way to the academy.  Light
+from a nearby candle dances off the reflection of the polished marble floor.
+Intricate marble pillars reach some seventy feet to the painted ceiling. 
+You can see a healer inside the academy to the EAST.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 24017
+D3
+~
+~
+0 0 24015
+S
+#24017
+Within the Training Academy~
+~
+~
+Oak and marble furniture is precisely placed so as to enhance the rooms
+decor.  On one wall is a huge oval mirror framed in silver leaf.  Hanging
+from the ceiling is an elaborate chandelier.  The candles of the chandelier
+are of a blood red hue, and completely illuminate the room.  The room has a
+huge black mantle, upon which are many books.  To the north is the chamber
+of training, while to the south is the chamber of practicing.  Type HEAL to
+see what spells Healer has to offer for you.  
+~
+0 2499592 0
+Rd     0
+D0
+~
+~
+0 0 24020
+D1
+~
+~
+0 0 24018
+D2
+~
+~
+0 0 24019
+D3
+~
+~
+0 0 24016
+D5
+~
+~
+0 0 24021
+S
+#24018
+The Bazaar~
+~
+~
+This open area, probably about fifty feet square, lies between the supply
+store and the restaurant of the ziggurat.  A huge fountain sits here,
+sprouting water upwards into the air, forming elegent patterns that dazzle
+the mind.  The training academy is to the west, the supply store to the
+north, a fine restaurant to the south, and the east leads to a roughly
+carved tunnel.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24022
+D1
+~
+~
+0 0 24025
+D2
+~
+~
+0 0 24023
+D3
+~
+~
+0 0 24017
+D5
+~
+~
+0 0 24024
+S
+#24019
+Cyntro's Practicing Chamber~
+~
+~
+The air is thick and humid due to the sweat of everyone in training. 
+Along the walls are many candles burning brightly.  Clashing steel and
+strenuous grunts can be heard echoing off the cold marble walls.  The glow
+from the candles cast human like shadows which engage each other in combat. 
+Along the floor are weapons of training, wooden swords and daggers made of
+straw.  Type PRACTICE to see what skills/spells you can learn.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 24017
+S
+#24020
+Sencil's Training Chamber~
+~
+~
+This high circular chamber is almost fifty feet around in diameter and
+twenty feet high.  A mammoth rug covers the floor here, decorated with
+thousands of unique and wild designs.  A dozen or more ornate candle stands
+line the walls here, spraying the room with hundreds of tiny flames.  The
+ceiling is covered with designs and symbols, resembling the night sky in
+many respects.  The training academy is to the south.  Type TRAIN to see a
+list of attributes you can increase.  
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 24017
+S
+#24021
+Azier's Foriegn Language Chamber~
+~
+~
+This is the room of learning new languages, and Azier is the master of
+all of them.  A quick inspection of the room reveals many mystical sights. 
+There is a yellow mist which blankets the marble floor, spouting
+mysteriously from a mouse hole in the wall.  Flashes of light and fiery
+sparks emerge from behind the book cases.  A quick glance at the ceiling
+reveals a startling collection of human skulls.  The sockets of each of
+these ancestral beings gleam with a supernatural presence of knowledge.  An
+old and withered looking figure rests behind the desk.  Type LEARN to see
+how much it costs to learn a new language.  
+~
+0 1032 0
+Rd     0
+D4
+~
+~
+0 0 24017
+S
+#24022
+Zarea's Bargain Supplies and Scrolls~
+~
+~
+This sizable store contains several tables and shelves that hold
+literally thousands of different and obscure goods.  Only a few of these
+items would be worth anything, as most of them just look like a huge
+collection of oddities from many far off lands.  The thick smells of incense
+fill the air with a strong odor, giving the shop a mysterious appearance. 
+The candlelight illuminating this room flickers and dances in the slight
+breezes coming from the bazaar.  Type LIST to see what you supplies or
+scrolls you can buy.  
+~
+0 2098184 0
+Rd     0
+D2
+~
+~
+0 0 24018
+S
+#24023
+Altren's Tavern~
+~
+~
+Dozens of large tables fill this fine tavern, which is decorated with
+plants and assorted artwork.  Music is being played nearby, and the
+aroma of incense sits heavily upon the air.  You notice the accommodations
+here are excellent, and the food is delicious as well.  Type LIST to see
+what you can buy to eat.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 24018
+S
+#24024
+Within the Sacrificial Chamber~
+~
+~
+Burning in the center of this room is a massive pit filled with the
+corpses of many Methidoral residents.  The pit is lined with femurs, skulls,
+and other human bones.  A thick cloud of black stench rise forth from the
+hot coals of the pit.  Stacked into one corner are bodies waiting to be
+cremated.  A donation box sits askew from the pit.  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 24018
+S
+#24025
+Tunnel Leading Outside~
+~
+~
+This roughly carved out tunnel is about twenty feet in diameter and
+approximately seven feet high.  There are two exits to the tunnel.  The one
+east leads to the outside and the one west to the bazaar.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24026
+D3
+~
+~
+0 0 24018
+S
+#24026
+Behind the Ziggurat~
+~
+~
+You now stand behind the vestiginous black ziggurat.  This enourmous step
+pyramid rises to three times the height of the surrounding trees.  A wide
+path leads to the south where a beautiful park rests.  To the west is the
+small tunnel back into the ziggurat.  
+~
+0 4 0
+Rd     0
+D2
+~
+~
+0 0 24027
+D3
+~
+~
+0 0 24025
+S
+#24027
+Entrance to the Park~
+~
+~
+This wide walkway passes through an open gate about fifteen feet wide,
+probably intented to keep the animals in the park from wandering out into
+the rest of the city.  The pathway is grass covered, starting at the base of
+the ziggurat and running straight through the park, where a single willow
+tree can be seen off in the distance to the south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24026
+D2
+~
+~
+0 0 24029
+S
+#24028
+Atop the Massive Ziggurat~
+~
+~
+You are standing on a cloud-shrouded platform at the top of what appears
+to be a huge ziggurat towering high above the ground.  It seems strangely
+dark and misty here, and strange sounds echo through the gloom.  Strange
+images seem to hover at the corner of your eyes, and it seems almost as if
+otherworldly creatures lurked around you, just beyond your range of vision. 
+The only way you can go is down.  As you stand here, wondering what you
+should do, a hysteric laugh echoes through the air.  
+~
+0 4 0
+Rd     0
+D5
+~
+~
+0 0 24048
+S
+#24029
+Center of the Park~
+~
+~
+This beautiful park extends at least a hundred feet in both directoins,
+filled with tall trees and lush grass.  A place of natural beauty, it is
+kept pristine, cleaned regularly of of trash and other debris.  The air here
+seems more fresh and clean than you have ever imagined possible.  The park
+continues to the east, west, and south.  The park entrance is immediately to
+the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24027
+D1
+~
+~
+0 0 24032
+D2
+~
+~
+0 0 24035
+D3
+~
+~
+0 0 24030
+S
+#24030
+Western Path Through the Park~
+~
+~
+A small pathway winds it's way through the park here, continuing to east,
+west, and south.  The refreshing smells of flowers drift along on the air,
+bringing a sense of peace and calm to the area.  The path continues to the
+west, and a shaded area can be to the south.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24029
+D2
+~
+~
+0 0 24034
+D3
+~
+~
+0 0 24031
+S
+#24031
+Western Tip of the Park~
+~
+~
+A small pathway winds it's way through the park from the east here.  The
+refreshing smells of flowers drift along on the air, bringing a sense of
+peace and calm to the area.  You have reached the western tip of the park,
+and you can see the massive ziggurat in the distance to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24030
+S
+#24032
+Eastern Path Through a Park~
+~
+~
+A small pathway winds it's way through the park here, continuing to east,
+west, and south.  The refreshing smells of flowers drift along on the air,
+bringing a sense of peace and calm to the area.  The path continues to the
+east, and a shaded area can be seen to the south.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24033
+D2
+~
+~
+0 0 24036
+D3
+~
+~
+0 0 24029
+S
+#24033
+Eastern Tip of the Park~
+~
+~
+A small pathway winds it's way through the park from the west here.  The
+refreshing smells of flowers drift along on the air, bringing a sense of
+peace and calm to the area.  You have reached the eastern tip of the park.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 24032
+S
+#24034
+Shady Path Through the Park~
+~
+~
+Hundreds of thin drooping branches of a huge willow tree blanket the
+pathway through here, almost completely enclosing the area.  The air is
+fresh and filled with the smells of flowers and grass, giving the entire
+area a very relaxing atmosphere.  The path continues to the north and east
+of here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24030
+D1
+~
+~
+0 0 24035
+S
+#24035
+Center of the Park~
+~
+~
+This beautiful park extends at least a hundred feet in all directions,
+filled with tall trees and lush grass.  This place of natural beauty is kept
+pristine, cleaned regularly of trash and other debris.  The air here even
+seems more fresh and clean than you could ever imagine.  The park continues
+to the north, east, and west, while to the south is a huge tree.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24029
+D1
+~
+~
+0 0 24036
+D2
+~
+~
+0 0 24037
+D3
+~
+~
+0 0 24034
+S
+#24036
+Shady Path Through the Park~
+~
+~
+Hundreds of thin drooping branches of a huge willow tree blanket the
+pathway through here, almost completely enclosing the area.  The air is
+fresh and filled with the smells of flowers and grass, giving the entire
+area a very relaxing atmosphere.  The path continues to the north and west
+of here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24032
+D3
+~
+~
+0 0 24035
+S
+#24037
+Base of a Huge Willow Tree~
+~
+~
+A small pathway of fallen leaves winds it's way through the park here,
+continuing to the north.  The refreshing smells of flowers drift along the
+air, bringing a sense of peace and calm to the area.  The base of a huge
+willow tree is directly in front of you.  To the south is a small pond.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 24035
+D2
+~
+~
+0 0 24044
+D4
+~
+~
+0 0 24038
+S
+#24038
+In the Willow Tree~
+~
+~
+The sounds of many animals can be heard here in this wind chime of life. The leaves here are covered a light coating of dew. A breeze blows through the tree, making it rattle the leaves all around. The air around here is fresh and crisp. The tree continues upwards.
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 24040
+D5
+~
+~
+0 0 24037
+S
+#24039
+Top of a Willow Tree~
+~
+~
+The view from this height is stunning.  The park, a hundred feet below,
+looks somewhat small from this distance up.  The wind blows softly through
+the tree, making a gentle swishing sound among the leaves, and sending their
+relaxing fragrance through the air.  The base of the tree is far below here.
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 24041
+S
+#24040
+In the Willow Tree~
+~
+~
+The sounds of many animals can be heard here in this wind chime of life. The leaves here are covered a light coating of dew. A breeze blows through the tree, making it rattle the leaves all around. The air around here is fresh and crisp. The center of the tree is directly above you.
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 24041
+D5
+~
+~
+0 0 24038
+S
+#24041
+In the Willow Tree~
+~
+~
+The sounds of many animals can be heard here in this wind chime of life. The leaves here are covered a light coating of dew. A breeze blows through the tree, making it rattle the leaves all around. The air around here is fresh and crisp. Branches continue to the east and west, while the top of the tree is directly above you.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24042
+D3
+~
+~
+0 0 24043
+D4
+~
+~
+0 0 24039
+D5
+~
+~
+0 0 24040
+S
+#24042
+Branches of the Willow Tree~
+~
+~
+The sounds of many animals can be heard here in this wind chime of life. The leaves here are covered a light coating of dew. A breeze blows through the tree, making it rattle the leaves all around. The air around here is fresh and crisp. To the west is the center of the tree.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 24041
+S
+#24043
+Branches of the Willow Tree~
+~
+~
+The sounds of many animals can be heard here in this wind chime of life. The leaves here are covered a light coating of dew. A breeze blows through the tree, making it rattle the leaves all around. The air around here is fresh and crisp. To the east is the center of the tree.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24041
+S
+#24044
+A Shallow Pond~
+~
+~
+This shallow pond is about fifty feet around in diameter, filled with
+clear inviting waters, clean enough to drink from.  The air here is clean
+and crisp, filled with the smells of grass and trees and flowers, all very
+relaxing.  The pond is near the base of a huge willow tree.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24037
+D2
+~
+~
+0 0 24046
+D3
+~
+~
+0 0 24045
+S
+#24045
+A Shallow Pond~
+~
+~
+This shallow pond is about fifty feet around in diameter, filled with
+clear inviting waters, clean enough to drink from.  The air here is clean
+and crisp, filled with the smells of grass and trees and flowers, all very
+relaxing.  The pond is near the base of a huge willow tree.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 24044
+D2
+~
+~
+0 0 24047
+S
+#24046
+A Shallow Pond~
+~
+~
+This shallow pond is about fifty feet around in diameter, filled with
+clear inviting waters, clean enough to drink from.  The air here is clean
+and crisp, filled with the smells of grass and trees and flowers, all very
+relaxing.  The pond is near the base of a huge willow tree.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24044
+D3
+~
+~
+0 0 24047
+S
+#24047
+A Shallow Pond~
+~
+~
+This shallow pond is about fifty feet around in diameter, filled with
+clear inviting waters, clean enough to drink from.  The air here is clean
+and crisp, filled with the smells of grass and trees and flowers, all very
+relaxing.  The pond is near the base of a huge willow tree.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 24045
+D1
+~
+~
+0 0 24046
+S
+#24048
+Room of the Newbie Helper~
+~
+~
+Now you have been given a Book of Knowledge.  If you are new to the mud,
+this book will aid you in your travels.  The staircase continues downward,
+where you can hear the voices of many people.  That hysteric laughter
+continues through the air, but much less irritating.  
+~
+0 1024 0
+Rd     0
+D5
+~
+~
+0 0 24017
+S
+#24077
+LMD Description~
+~
+~
+Regardless of whether you are part of it, or fear it, this Religion of
+Lies, Manipulation, and Deceit, you must admint that it's intensity and
+prolific output are quite admirable.  This Religion is a ceasless fount of
+challenging new ideas that continues to push the limits of every medium in
+which it encounters.  Though the Diety, Sarbadon, is often shadowed by
+others on the MUD, he is an excellent God who often reveals a laser-sharp
+wit and well-honed mind while leading his followers to their greatest
+potential.  If you choose this mud, may it be well to you.  
+~
+0 4 0
+Rd     0
+S
+#24078
+The Beginning of a Lie~
+~
+~
+Welcome to Stormgate!  If you have any questions, use the chat channel to
+express yourself.  You should proceed DOWN to start your wonderful adventure
+in this realm.  
+~
+0 2498570 0
+Rd     0
+D5
+~
+~
+0 0 24017
+S
+#0
+
+
+
+#SPECIALS
+M 24021 spec_healer
+M 24024 spec_teacher
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 24031 1 24000
+M 0 24030 1 24002
+M 0 24029 1 24005
+M 0 24027 1 24005
+M 0 24021 1 24017
+O 0 24002 0 24018
+M 0 24023 1 24019
+M 0 24022 1 24020
+M 0 24024 1 24021
+M 0 24000 1 24022
+E 0 24000 0 5
+G 0 24005 0
+G 0 24006 0
+G 0 24007 0
+G 0 24009 0
+M 0 24025 1 24023
+G 0 24004 0
+G 0 24003 0
+O 0 24001 0 24024
+M 0 24003 4 24027
+G 0 24011 0
+M 0 24010 1 24027
+G 0 24012 0
+G 0 24010 0
+M 0 24009 3 24029
+G 0 24013 0
+M 0 24004 2 24029
+G 0 24014 0
+M 0 24005 1 24029
+M 0 24006 1 24029
+M 0 24007 1 24029
+M 0 24008 1 24029
+M 0 24009 1 24029
+M 0 24002 4 24030
+M 0 24005 1 24035
+M 0 24006 1 24035
+M 0 24008 1 24035
+M 0 24007 1 24036
+M 0 24010 1 24037
+M 0 24020 2 24038
+M 0 24002 2 24039
+M 0 24001 2 24039
+M 0 24019 2 24040
+M 0 24017 2 24041
+M 0 24018 2 24041
+M 0 24018 2 24043
+M 0 24014 1 24044
+M 0 24013 1 24045
+M 0 24016 1 24045
+M 0 24012 1 24046
+M 0 24015 1 24046
+M 0 24011 1 24047
+M 0 24025 1 24048
+M 0 24026 1 24048
+M 0 24026 1 24048
+M 0 24026 1 24048
+M 0 24026 1 24048
+S
+
+
+
+#SHOPS
+24000 9 15 17 0 0 100 60 0 24
+24025 19 0 0 0 0 100 100 0 24
+0
+
+
+
+#$

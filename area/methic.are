@@ -1,0 +1,2714 @@
+#AREADATA
+Name        { 40-75} Methic Dorat (P)~
+Builders    Balthazar~
+VNUMs       4000 4099
+Security    1
+Recall      4006
+Flags       128
+Version     107
+Creator     Balthazar~
+Llevel      0
+Ulevel      0
+Sounds      The bonechilling cold is everywhere around you.~
+Music       u7_theme.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#4001
+Neandrathal Witch Doctor~
+Neandrathal Witch Doctor~
+A Neandrathal Witch Doctor is here casting spells
+~
+~
+67 503316712 0 0 0 0 S
+107 1 214 214 25000 25000d0+0 0d0+0
+1070 0 0
+0 0 1
+3 0 0
+#4002
+Hunter Neandrathal~
+A Neandrathal Hunter~
+A Neandrathal Hunter readies his spear for an attack
+~
+~
+65 98496 0 0 0 0 S
+46 1 92 92 10750 10750d0+0 0d0+0
+460 0 0
+0 0 1
+387 0 0
+#4003
+Male Neandrathal~
+A Neandrathal Male~
+A Neandrathal Male is here, looking you over
+~
+~
+65 192 0 0 0 0 S
+44 1 88 88 9750 9750d0+0 0d0+0
+440 0 0
+0 0 1
+385 0 0
+#4004
+Woman Neandrathal~
+A Neandrathal Woman~
+A Neandrathal Woman waits here hoping the males come back with food...
+~
+~
+65 192 0 0 0 0 S
+42 1 84 84 8500 8500d0+0 0d0+0
+420 0 0
+0 0 2
+385 0 0
+#4005
+Child Neandrathal~
+A Neandrathal Child~
+A Neandrathal Child plays with some loose rocks on the ground
+~
+~
+65 192 0 0 0 250 S
+39 1 78 78 7750 7750d0+0 0d0+0
+390 0 0
+0 0 1
+385 0 0
+#4006
+Neandrathal Leader~
+The Neandrathal Leader~
+The Neandrathal Leader sits and contemplates what to do with you
+~
+~
+67 236 0 0 0 0 S
+50 1 100 100 11070 11070d0+0 0d0+0
+500 0 0
+0 0 1
+387 0 0
+#4007
+Dying Neandrathal~
+A Dying Neandrathal~
+A Dying Neandrathal Hunter lies here, moaning in agony
+~
+~
+67 192 0 0 0 0 S
+25 1 50 50 3750 3750d0+0 0d0+0
+250 0 0
+0 0 1
+385 0 0
+#4008
+Neandrathal Firewatcher~
+A Neandrathal Firewatcher~
+A Firewatcher stands here, making sure the fire doesn't burn out
+~
+~
+67 33554624 0 0 0 0 S
+45 1 90 90 10250 10250d0+0 0d0+0
+450 0 0
+0 0 1
+385 0 0
+#4009
+Neandrathal Weapon Seller~
+A Neandrathal Weapon Seller~
+A Neandrathal waits to sell you weapons
+~
+~
+67 232 0 0 0 0 S
+120 1 240 240 50000 50000d0+0 0d0+0
+1200 0 0
+0 0 1
+397 0 0
+#4010
+Neandrathal Armor Seller~
+A Neandrathal Armor Seller~
+A Neandrathal waits to sell you armor
+~
+~
+67 232 0 0 0 0 S
+120 1 240 240 50000 50000d0+0 0d0+0
+1200 0 0
+0 0 1
+397 0 0
+#4025
+Great Bear~
+A Great Bear~
+A Great Bear raises ten feet in the air on its hind legs!
+~
+~
+65 134217864 0 0 0 0 S
+60 1 120 120 16500 16500d0+0 0d0+0
+600 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I menacingly looks at you.
+snarl 
+~
+>rand_prog 5~
+mpecho $I does not seem to want your presence here.
+growl
+~
+>act_prog ~
+~
+|
+#4026
+Sabre-Toothed Tiger~
+A Sabre-Toothed Tiger~
+A Sabre-Toothed Tiger stares at you with glowing green eyes.
+~
+~
+65 98538 0 0 0 0 S
+55 1 110 110 13000 13000d0+0 0d0+0
+550 0 0
+0 0 0
+259 0 0
+>rand_prog 5~
+mpecho $I silently stalks towards you, its six inch fangs readied for attack.
+~
+>rand_prog 5~
+mpecho $I pounces on you, seemingly from out of nowhere!
+~
+>all_greet_prog 100~
+if isnpc($n) == 1
+if level($n) < 55
+mpecho $I charges at $n!
+mpkill $n
+else
+snarl
+mpecho $I wisely decides to go in search of easier prey.
+endif
+endif
+~
+|
+#4027
+Wooly Mammoth~
+A Wooly Mammoth~
+A Wooly Mammoth seems to be at home in the cold and ice.
+~
+~
+65 134217864 0 0 0 0 S
+58 1 116 116 15650 15650d0+0 0d0+0
+580 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I throws its head back and trumpets loudly.
+~
+>rand_prog 5~
+mpecho $I looks for food among the wintry forest.
+~
+|
+#4028
+Great Wolf~
+A Great Wolf~
+A Great Wolf wanders the forest, looking for prey.
+~
+~
+65 136 0 0 0 0 S
+51 1 102 102 11570 11570d0+0 0d0+0
+510 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I throws its head back and howls at the moon.
+howl
+~
+>rand_prog 5~
+mpecho $I sniffs the air, trying to pick up a scent.
+~
+|
+#4029
+Great Elk~
+A Great Elk~
+A Great Elk majestically stands here.
+~
+~
+65 134217864 0 0 0 0 S
+57 1 114 114 15500 15500d0+0 0d0+0
+570 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I lowers its seven foot antlers in defense.
+~
+>rand_prog 5~
+mpecho $I looks for green grass to eat among the snow.
+~
+|
+#4030
+Auroch~
+An Auroch~
+An Auroch wanders through the forest.
+~
+~
+65 136 0 0 0 0 S
+60 1 120 120 17000 17000d0+0 0d0+0
+600 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I slowly walks away from you.
+~
+>rand_prog 5~
+mpecho $I lowers its head and charges at you!
+~
+|
+#4031
+Baluchitherium~
+A Baluchitherium~
+A Baluchitherium quietly grazes for food.
+~
+~
+65 136 0 0 0 0 S
+58 1 116 116 16500 16500d0+0 0d0+0
+580 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I grunts as you it senses your presence.
+~
+>rand_prog 5~
+mpecho $I raises its head and looks around, checking for signs of danger.
+~
+|
+#4032
+Equitarius~
+An Equitarius~
+An Equitarius neighs loudly.
+~
+~
+65 200 0 0 0 0 S
+47 1 94 94 10790 10790d0+0 0d0+0
+470 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I is startled and gallopw away.
+~
+>rand_prog 5~
+mpecho $I looks you over carefully before continuing on.
+~
+|
+#4033
+Possum~
+A Possum~
+A Possum hangs down from a low branch.
+~
+~
+65 200 0 0 0 0 S
+40 1 80 80 7500 7500d0+0 0d0+0
+400 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I scampers down the tree to search for food.
+~
+>rand_prog 5~
+mpecho $I huddles against the tree looking for shelter.
+~
+|
+#4034
+Pteradactyl~
+A Pteradactyl~
+A Pteradactyl runs along a branch before spreading its wings and taking to the air.
+~
+~
+65 524424 0 0 0 0 S
+45 1 90 90 10000 10000d0+0 0d0+0
+450 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I swoops down from the sky and attacks!
+~
+>rand_prog 5~
+mpecho $I screeches as it flies overhead.
+~
+|
+#4035
+Wooly Spider~
+A Wooly Spider~
+A Wooly Spider waits in its web for prey to be trapped.
+~
+~
+65 33000 0 0 0 0 S
+43 1 86 86 9300 9300d0+0 0d0+0
+430 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I crawls along the ground clumsily.
+~
+>rand_prog 5~
+mpecho $I attempts to bite you with its poisonous fangs!
+~
+|
+#4036
+Cyanodictis~
+A Cyanodictis~
+A Cyanodictis barks loudly at you for entering its territory.
+~
+~
+65 200 0 0 0 0 S
+43 1 86 86 8300 8300d0+0 0d0+0
+430 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I chases its tail around in circles.
+~
+>rand_prog 5~
+mpecho $I cautiously approaches you.
+~
+|
+#4037
+Mesohippus~
+A Mesohippus~
+A Mesohippus trots along the ice.
+~
+~
+65 200 0 0 0 0 S
+46 1 92 92 10200 10200d0+0 0d0+0
+460 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I forages for food among the windblown landscape.
+~
+>rand_prog 5~
+mpecho $I looks around nervously as you approach.
+~
+|
+#4038
+Yeti~
+A Yeti~
+A Yeti carries its massive bulk through the cold and ice, looking at home.
+~
+~
+65 134283496 0 0 0 0 S
+67 1 134 134 22000 22000d0+0 0d0+0
+670 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I lets out a shrill, piercing scream that unnerves you.
+~
+>rand_prog 5~
+mpecho $I catches a glimpse of you and runs back into the brush.
+~
+|
+#4039
+Living Ice Monster~
+A Living Ice Monster~
+A Living Ice Monster stumbles about.
+~
+~
+65 134217960 0 0 0 0 S
+69 1 138 138 24000 24000d0+0 0d0+0
+690 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mepcho $I tries to blend in with its surroundings.
+hide
+~
+>rand_prog 5~
+mpecho $I appears to be impervious to your presence.
+~
+|
+#4040
+Ancient Ice Dragon~
+An Ancient Ice Dragon~
+An Ancient Ice Dragon calmly looks you over.
+~
+~
+67 403177724 0 0 0 750 S
+75 1 150 150 26300 26300d0+0 0d0+24300
+750 0 0
+0 0 0
+259 0 0
+>rand_prog 5~
+mpecho $I loses interest with you, and decides you are not a threat.
+yawn
+sleep
+~
+>rand_prog 5~
+wake
+mpecho $I is not pleased to find you in its lair!
+~
+|
+#4041
+Great Wolf~
+A Great Wolf~
+A Great Wolf wanders the forest, looking for prey.
+~
+~
+65 136 0 0 0 0 S
+51 1 102 102 11570 11570d0+0 0d0+0
+510 0 0
+0 0 0
+3 0 0
+>rand_prog 5~
+mpecho $I throws its head back and howls at the moon
+howl
+~
+>rand_prog 5~
+mpecho $I sniffs the air, trying to pick up a scent.
+~
+|
+#4042
+Great Wolf~
+A Great Wolf~
+A Great Wolf wanders the forest, looking for prey.
+~
+~
+65 136 0 0 0 0 S
+51 1 102 102 11570 11570d0+0 0d0+0
+510 0 0
+0 0 0
+257 0 0
+>rand_prog 5~
+mpecho $I throws its head back and howls at the moon.
+howl
+~
+>rand_prog 5~
+mpecho $I sniffs the air, trying to pick up a scent.
+~
+|
+#4043
+Great Wolf~
+A Great Wolf~
+A Great Wolf wanders the forest, looking for prey.
+~
+~
+65 136 0 0 0 0 S
+51 1 102 102 11570 11570d0+0 0d0+0
+510 0 0
+0 0 0
+257 0 0
+#0
+
+
+
+#OBJECTS
+#4001
+mirror~
+mirror~
+A mirror is here.~
+~
+29 0 0 0 0 8192 1
+100 100
+25002~ 0~ 0~ 0~
+5 220 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 13
+A
+19 16
+A
+13 10
+A
+1 1
+A
+3 -1
+A
+4 -1
+E
+mirror~
+It is rather large, with its surface almost liquid.
+~
+#4002
+Neandrathal Club~
+a Neandrathal Club~
+A club made from wood awaits someone's use~
+~
+5 0 0 0 0 8193 42
+100 100
+0~ 0~ 0~ 7~
+6 188 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 12
+A
+19 12
+A
+1 1
+A
+3 -1
+A
+4 -1
+#4003
+Neandrathal Leader Bone CLub~
+the Neandrathal Leader's Bone Club~
+A club made from some type of animal bone lies here~
+~
+5 134217728 0 0 0 8193 50
+100 100
+0~ 0~ 0~ 7~
+8 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+18 16
+A
+19 18
+A
+13 25
+A
+3 -1
+#4004
+Flint Spear~
+a Flint Spear~
+A long wooden spear with a very sharp point lies here~
+~
+5 0 0 0 0 8193 44
+100 100
+0~ 0~ 0~ 11~
+4 440 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 14
+A
+18 15
+#4005
+Great Bear Pelt~
+a Great Bear Pelt~
+A thickly furred animal skin lies on the ground here~
+~
+9 0 0 0 0 9 46
+100 100
+0~ 0~ 0~ 0~
+3 460 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+1 1
+A
+18 18
+A
+19 19
+#4006
+Burning Spear~
+a Burning Spear~
+A poorly crafted spear lies here, on fire~
+~
+5 33554432 0 0 0 8193 45
+100 100
+0~ 0~ 0~ 11~
+3 448 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+18 15
+A
+19 12
+#4007
+Saber-Tooth Necklace~
+a Saber-Tooth Necklace~
+A necklace made from extremely long, sharp fangs lies here~
+~
+9 1 0 0 0 5 50
+100 100
+0~ 0~ 0~ 0~
+3 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 25
+A
+12 25
+A
+13 -15
+A
+19 4
+A
+18 7
+A
+4 -1
+A
+5 1
+#4008
+Saber Tooth Tiger Pelt~
+a Saber-Toothed Tiger Pelt~
+A tannish colored animal skin lies on the ground here~
+~
+9 0 0 0 0 9 42
+100 100
+0~ 0~ 0~ 0~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -5
+A
+13 55
+A
+19 12
+A
+18 25
+#4009
+Possum Pelt~
+a Possum Pelt~
+A very thinly furred skin lies on the ground here~
+~
+9 0 0 0 0 9 39
+100 100
+0~ 0~ 0~ 0~
+0 388 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 4
+A
+19 2
+A
+1 1
+A
+4 -1
+#4010
+Redwood Club~
+a Redwood Club~
+A very strong looking piece of wood lies here~
+~
+5 0 0 0 0 8193 42
+100 100
+0~ 0~ 0~ 7~
+7 420 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 12
+A
+18 16
+#4011
+Slingshot~
+a Slingshot~
+Two sticks with a piece of animal skin between it lies here~
+~
+5 0 0 0 0 8193 40
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 3
+#4012
+Bearskin Bracelet~
+a Bearskin Bracelet~
+An animal skin bracelet lies here~
+~
+9 0 0 0 0 4097 45
+100 100
+0~ 0~ 0~ 0~
+3 448 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 4
+A
+18 3
+A
+5 1
+A
+2 -1
+A
+13 35
+#4013
+Wooly Mammoth Hide~
+a Wooly Mammoth Hide~
+A dark brown animal hide lies here.~
+~
+9 0 0 0 0 9 55
+100 100
+0~ 0~ 0~ 0~
+8 548 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 -1
+A
+3 -1
+A
+19 16
+A
+18 13
+#4014
+neandrathal Boots~
+neandrathal Boots~
+Very thickly furred boots lie here~
+~
+9 0 0 0 0 65 55
+100 100
+0~ 0~ 0~ 0~
+6 548 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 8
+A
+18 6
+A
+14 50
+A
+13 50
+A
+24 -5
+#0
+
+
+
+#ROOMDATA
+#4001
+Entrance to Methic Dorat~
+~
+~
+You find yourself standing at the entrance to a cave dwelling.  Looking
+around, you have a hard time believing that this is where the future city of
+Methidoral lies.  Thick forests surround this area, and not a living being
+is in sight.  You have traveled 15,000 years into the past to be standing
+here right now.  
+~
+0 13 0
+Rd     0
+D0
+~
+~
+0 0 4007
+D1
+~
+~
+0 0 4004
+D2
+~
+~
+0 0 4022
+D3
+~
+~
+0 0 4002
+S
+#4002
+A Dark, Damp Passageway~
+~
+~
+You have stumbled upon a small, dark passageway.  It is very hard to see
+even with your light source.  Shadows constantly flicker along the walls,
+and you wonder if someone or something is watching.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 4001
+D3
+~
+~
+0 0 4003
+S
+#4003
+A Dead End~
+~
+~
+The passage ends abruptly in a dead end here.  Although it is extremely
+hard to see, you can make out some animal bones and what looks like some
+type of clothing made from animal fur.  It is of very poor craftsmanship,
+and you decide it is of little use.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 4002
+S
+#4004
+Eastern Passageway~
+~
+~
+Although this passage is just as dark as the ones to the west, you see a
+faint light coming from further down the hall.  You wonder how people could
+have survived the ice age in such primitive conditions to allow Methidoral
+to develop into the flourishing city it is today.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 4005
+D3
+~
+~
+0 0 4001
+S
+#4005
+A Flickering Passageway~
+~
+~
+The light is getting stronger as you follow the passage, which takes a
+sharp turn to the north.  You can only make out shadows in this room, but
+you are certain it is a human life form making them.  Along the walls are
+various battle scenes, depicting creatures that you have never laid eyes on
+before.  It appears that a band of the tribe's hunters have surprised a
+large creature that looks like a hairy elephant, and attack it with spears,
+killing it and bringing it back for food.  You feel a little uneasy
+confronting these barbarians, thinking they might do the same to you...  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 4006
+D3
+~
+~
+0 0 4004
+S
+#4006
+Methic Dorat Witch Doctor~
+~
+~
+You have entered the room of the Witch Doctor of Methic Dorat.  Perhaps
+the most powerful person in the tribe, even the leader fears him, for he has
+magic which they cannot understand.  As you enter, the witch doctor seems
+stunned as he looks over your clothing and begins to speak in a very excited
+combination of grunts and whistles that you cannot understand.  He seems to
+sense that you mean no harm, and eventually calms down enough for you to
+draw closer...  
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 4005
+S
+#4007
+Main Passageway~
+~
+~
+You are in the main passage through the cave.  Cave paintings line the
+walls, many of which you have a hard time understanding.  Most are hunting
+scenes, containing animals that you have never seen before.  Looking at the
+ground, you notice a long trail of blood on the ground, as if a large animal
+was dragged through here.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 4008
+D2
+~
+~
+0 0 4001
+S
+#4008
+Main Passageway~
+~
+~
+You are startled to hear noises coming from the rooms to the east and the
+west.  To the west, it sounds as if rocks are being banged together to make
+primitive weapons.  To the east, a variety of grunts are heard, signifying
+more than one person is in the room.  The trail of blood continues north and
+south, and you feel compelled to investigate where it will lead.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 4011
+D1
+~
+~
+0 0 4010
+D2
+~
+~
+0 0 4007
+D3
+~
+~
+0 0 4009
+S
+#4009
+A Primitive Weaponry~
+~
+~
+Entering the room, you startle two neandrathals sitting on animal skin
+rugs.  Looking you over the neandrathals cannot seem to figure out what you
+want with them.  They reach for their spears, but seem to understand that
+you mean no harm as you put your palms face up towards them.  Pulling out
+some gold, they begin grunting very excitedly, and show you what they are
+making.  You get the idea that they would like to trade their weapons for
+some of your shiny coins, which they have never laid eyes on before.  
+~
+0 1033 0
+Rd     0
+D1
+~
+~
+0 0 4008
+S
+#4010
+A Primitive Armoury~
+~
+~
+Animal skins lie all over this room, as you see three neandrathal women
+preparing them for use against their main enemy---the bitter cold.  They
+look at you, then at each other, and then back at you, wondering what you
+want.  Pulling gold coins from your pocket, they become very excited and try
+to steal them from you.  You realize that they have never seen money before,
+and point at their animal hides, and then back at the coins.  They seem to
+understand, and bring you a pile of their modified clothing for you to
+inspect.  
+~
+0 1033 0
+Rd     0
+D3
+~
+~
+0 0 4008
+S
+#4011
+Main Passageway~
+~
+~
+The main hallway continues, as does the trail of blood.  More paintings
+line the walls, and you begin to not take as much notice of them as you
+first did.  You wonder how these neandrathals survive here.  Although it
+provides shelter from the wind and elements, it is still bitterly cold.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 4012
+D2
+~
+~
+0 0 4008
+S
+#4012
+A Turn in the Passageway~
+~
+~
+The passage takes a sharp turn to the west here.  The trail of blood
+continues, and it appears that it is fresher here than in the rooms to the
+south.  Perhaps this leads to the eating area of the neandrathals.  
+~
+0 9 0
+Rd     0
+D2
+~
+~
+0 0 4011
+D3
+~
+~
+0 0 4013
+S
+#4013
+Main Passageway~
+~
+~
+The trail of blood is getting fresher and fresher as you continue down
+this passage.  You can feel a slight warming of the temperature as heat
+begins to slowly radiate down the hall from the west.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 4012
+D3
+~
+~
+0 0 4014
+S
+#4014
+Another Turn in the Passage~
+~
+~
+The passageway again turns to the north, as the trail of blood continues
+on.  To the north, you can see a faint light flickering, but can't make out
+any shadows.  Off in the distance, you hear muffled grunts and can feel a
+stronger source of heat.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 4015
+D1
+~
+~
+0 0 4013
+S
+#4015
+The Main Passageway~
+~
+~
+The passage continues, and brancches out to the west here.  This room has
+a faint glow to it, and is fairly warm compared to rest of the cave. 
+Brighter light and stronger voices are coming from the west also, as the
+trail of blood continues on to this room.  Sensing that they are gathered
+for a meal, you wonder if it would be a good idea to interrupt them.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 4019
+D2
+~
+~
+0 0 4014
+D3
+~
+~
+0 0 4016
+S
+#4016
+The Room of Paintings~
+~
+~
+Upon entering this room, you are astounded at what you see.  Almost every
+possible surface on the wall is covered with cave paintings, each depicting
+its own story.  The voices and light are coming from the room to the west,
+which must be the gathering place for the neandrathals.  The blood trail
+leads directly into the room.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 4015
+D3
+~
+~
+0 0 4017
+S
+#4017
+The Neandrathal's Gathering Place~
+~
+~
+When you enter this room, your arrival is met with loud grunts and
+ferocious pointing.  The males in the group rush to get their spears which
+are standing in the corner of the room.  The women grab the children and
+cower in fear.  A small fire burns in the room, and the trail of blood ends
+here as you see a large animal being cooked on a spit.  The neandrathals
+begin pointing at you, and then toward the south.  However, all you see is a
+rug hanging there.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 4016
+D2
+~
+rug~
+3 0 4018
+S
+#4018
+The Neandrathal Leader~
+~
+~
+Entering the hidden passage, you realize that you are now standing in
+front of the leader of these people.  Feeling much bolder, the other
+Neandrathals gather around and begin to converse in a series of hushes
+grunts.  The leader barks out a command and all of the others become silent.
+Looking you over, he obviously deosn't know what to make of you.  He motions
+for you to sit down, and offers you a chunk of undercooked meat that he had
+been eating.  The language barrier is something that will be difficult to
+overcome though.  
+~
+0 8 0
+Rd     0
+D0
+~
+rug~
+1 0 4017
+D2
+~
+~
+2 0 0
+S
+#4019
+The Main Passageway~
+~
+~
+The main passage continues, but this part of it does not look very well
+travelled.  It is dark and damp, and you want to leave as soon as possible. 
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 4020
+D2
+~
+~
+0 0 4015
+S
+#4020
+A Turn in the Passage~
+~
+~
+The passage turns again, but this time you hear the awful moaning of one
+of the Neandrathals.  While the Neandrathals are barbaric, they do tend for
+the weak and the sick.  While there is little that they can do, they show
+much compassion in dealing with death, as they know it can come at any time,
+for any one.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 4021
+D2
+~
+~
+0 0 4019
+S
+#4021
+The Dying Room~
+~
+~
+Entering the room, you see one of the neandrathals lying on a animal skin
+rug.  He is apparently in much pain, and is moaning loudly.  Upon closer
+inspection of him, you see that he has been hurt very badly, probably in one
+of the hunts.  With their lack of medicine, he will surely die, although the
+women of the tribe are doing as much as they can to help him.  The sight of
+him just laying there waiting to die is a very saddening one for you, but it
+is the law of nature that only the strong will survive.  
+~
+0 9 0
+Rd     0
+D3
+~
+~
+0 0 4020
+S
+#4022
+The Fire~
+~
+~
+A Large fire is burning here, keeping the neandrathals safe from
+predatory animals that abound.  However, it must be tended day and night by
+two people to make sure it does not burn out.  It is extremely hot in here,
+and it would be a good idea to get out as soon as possible.  
+~
+0 268435460 3
+Rd     0
+D0
+~
+~
+0 0 4001
+D2
+~
+~
+0 0 4023
+S
+#4023
+Forest Surrounding Methic Dorat~
+~
+~
+After a few steps into the forest, Methic Dorat is completely hidden from
+view.  The thick foliage of trees and plants almost completely block out the
+sunlight.  It is extemely difficult to see in here, and perhaps the only
+evidence of other creatures is the snapping of twigs and branches that can
+be heard from time to time.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4022
+D1
+~
+~
+0 0 4052
+D3
+~
+~
+0 0 4024
+S
+#4024
+Forest Surrounding Methic Dorat~
+~
+~
+The forest looks like a sea of white.  Snow covers all the branches, as a
+howling wind whips through the tress.  You try and stay as warm as possible,
+but your attempts are futile.  Better hope you find some shelter soon, or
+you will surely perish.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4023
+D2
+~
+~
+0 0 26309
+D3
+~
+~
+0 0 4025
+S
+#4025
+Forest Surrounding Methic Dorat~
+~
+~
+The forest continues on here.  The vast amount of area that this covers
+is unimaginable.  Getting lost in here is very easy, as landmarks can all
+appear the same.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4024
+D3
+~
+~
+0 0 4026
+S
+#4026
+Forest Surrounding Methic Dorat~
+~
+~
+The forest branches out in all directions in front of you.  While Methic
+Dorat cannot be seen, you can still see the plumes of smoke rising high into
+the air from the fire that is kept.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4027
+D1
+~
+~
+0 0 4025
+D2
+~
+~
+0 0 26321
+S
+#4027
+Forest Surrounding Methic Dorat~
+~
+~
+You stop abruptly, as you hear noises coming from behind a large tree. 
+Standing very still for what seems like hours, you neither see nor hear
+anything else.  You begin to wonder whether wandering around here for this
+long has begun to affect your senses.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4028
+D2
+~
+~
+0 0 4026
+S
+#4028
+Forest Surrounding Methic Dorat~
+~
+~
+The forest continues here.  Animal tracks can be seen in the snow, and
+you are not sure whether to follow them or not.  They lead to the west.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4029
+D2
+~
+~
+0 0 4027
+S
+#4029
+Forest Surrounding Methic Dorat~
+~
+~
+Looking around here, there is not a lot here that differs from the other
+parts of the forest.  Snow covers everything and besides for the animals,
+everything looks pretty much the same.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4030
+D2
+~
+~
+0 0 4028
+S
+#4030
+Forest Surrounding Methic Dorat~
+~
+~
+Looking high in one of the trees, you can barely make out a cat-like
+form, lying flat against the branch.  Although usually its tawny colored
+coat blends in with its surroundings, it looks very out of place in this
+world of white.  
+~
+0 134488069 3
+Rd     0
+D0
+~
+~
+0 0 4031
+D2
+~
+~
+0 0 4029
+S
+#4031
+Forest Surrounding Methic Dorat~
+~
+~
+The forest seems to thin out a little here, but it still is fairly thick
+coverage.  Looking around, you are becoming afraid that you are getting
+lost, as you cannot recognize and landmarks.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4032
+D2
+~
+~
+0 0 4030
+S
+#4032
+Forest Surrounding Methic Dorat~
+~
+~
+The forest continues on.  Animal tracks appear and then disappear again
+in the snow.  An extremely tall tree stands out from all the others.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4033
+D2
+~
+~
+0 0 4031
+S
+#4033
+Forest Surrounding Methic Dorat~
+~
+~
+The winter cold is starting to numb you.  It becomes harder and harder
+for you to concentrate.  Getting lost here would not be a good idea.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4034
+D2
+~
+~
+0 0 4032
+S
+#4034
+Forest Surrounding Methic Dorat~
+~
+~
+The trees that are in this forest you have never seen before.  They have
+extremely wide leaves to catch the few rays of sun that they get.  There is
+plenty of vegetation to support the many forms of wildlife here.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4035
+D2
+~
+~
+0 0 4033
+S
+#4035
+Forest Surrounding Methic Dorat~
+~
+~
+Walking through here, you have the feeling that something is watching
+you.  Glancing to you left, you see a pair of glowing eyes staring at you. 
+It would be wise to leave as soon as possible.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4036
+D2
+~
+~
+0 0 4034
+S
+#4036
+Forest Surrounding Methic Dorat~
+~
+~
+The utter darkness of this forest gives it a foreboding feel of evil. 
+However, you really do not feel threatened.  It is more of a feel of
+coldness.  The kind of coldness that goes through to your bones.  Shelter is
+of the utmost importance here, for without it, you have no hope of survival.
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4037
+D3
+~
+~
+0 0 4035
+S
+#4037
+Forest Surrounding Methic Dorat~
+~
+~
+The forest continues on here, obscuring your view of the cave.  You
+wonder how long it will be before you have a run in with the neandrathal
+hunters.  It would be a good idea to plan what course of action you will
+take, for they will surely outnumber you.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4038
+D3
+~
+~
+0 0 4036
+S
+#4038
+Forest Surrounding Methic Dorat~
+~
+~
+The forest here is HUGE.  It seems like you could wander for days and
+days and still not reach the end of it.  It would be extremely easy to get
+lost here.  Better leave something to mark your way, or your death will be
+imminent.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4039
+D3
+~
+~
+0 0 4037
+S
+#4039
+Forest Surrounding Methic Dorat~
+~
+~
+Trying to peer through the dense cover of foliage to see where Methic
+Dorat is, you can barely make out what looks like the back of the cave.  It
+is very hard to get a clear look, as no matter where you stand, trees block
+your sight.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4040
+D3
+~
+~
+0 0 4038
+S
+#4040
+Forest Surrounding Methic Dorat~
+~
+~
+The forest seems to get a little thinner here, but as you look closely,
+you can see why.  A few large trees have been literally uprooted.  You
+wonder what animal could be strong enough to do such a thing.  Loud
+trumpeting can be heard off in the distance, and while slightly differnt,
+reminds you of the type of noise that elephants make.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4041
+D3
+~
+~
+0 0 4039
+S
+#4041
+Forest Surrounding Methic Dorat~
+~
+~
+Nothing special here, just another part of the forest that appears very
+had.  Perhaps you are not ready for the hardships they endured.  Similar to
+all the other parts.  The hardships these people must have faced are mind
+boggling.  You wonder how our race has survived through all this.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26395
+D1
+~
+~
+0 0 26398
+D2
+~
+~
+0 0 4042
+D3
+~
+~
+0 0 4040
+S
+#4042
+Forest Surrounding Methic Dorat~
+~
+~
+The forest continues here.  It surpirses you that there are so many
+animals that could have survived this time period.  The cold and the howling
+winds cause extremely bitter wind chills that will cause death in a matter
+of minutes.  The neandrathals are well aware of these facts of life.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4041
+D2
+~
+~
+0 0 4043
+S
+#4043
+Forest Surrounding Methic Dorat~
+~
+~
+The snow gets deeper here, appearing as it has drifted higher in this
+area.  Looking at the snow, you can make out a few old footprints, but of
+what animal you cannot be sure.  The blowing and drifting snow has all but
+covered them up, and only the outer shells remain.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4042
+D2
+~
+~
+0 0 4044
+S
+#4044
+Forest Surrounding Methic Dorat~
+~
+~
+It amazes you that the vegetation here could survive this type of
+extended freeze for very long.  There are really no winters or summers.  It
+is cold all year round, and the earth here is in a state of prepetual frost.
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4043
+D2
+~
+~
+0 0 4045
+S
+#4045
+Forest Surrounding Methic Dorat~
+~
+~
+The endless forest continues on.  It is becoming an increasingly
+difficult chore to walk through the snow.  Every step feels like you have
+lead weights attached to your feet.  However, you should keep going.  You
+MUST keep going.  There is no shelter in sight.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4044
+D2
+~
+~
+0 0 4046
+S
+#4046
+Forest Surrounding Methic Dorat~
+~
+~
+There is a break in the forest growth here, and a path leads off to the
+east.  It is a trail that doesn't appear to be used much.  Otherwise, the
+forest continues to the north and south.  
+~
+0 134488069 3
+Rd     0
+D0
+~
+~
+0 0 4045
+D1
+~
+~
+0 0 26403
+D2
+~
+~
+0 0 4047
+S
+#4047
+Forest Surrounding Methic Dorat~
+~
+~
+The dark forest continues on, oblivious to your intrusion.  The cold is
+almost too much to bear, but you push on, knowing death is imminent if you
+stop.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4046
+D2
+~
+~
+0 0 4048
+S
+#4048
+Forest Surrounding Methic Dorat~
+~
+~
+It is hard to imagine anyone being able to hunt in such a thickly woodede
+area, but apparently, the Neandrathals are able to use their knowledge of
+their surroundings to provide themselves with enough food for survival.  It
+is a shame that the people of these times were too busy surviving to be
+living.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4047
+D2
+~
+~
+0 0 4049
+S
+#4049
+Forest Surrounding Methic Dorat~
+~
+~
+The forest continues on here.  Although you can't actually see Methic
+Dorat, you can see the smoke rising off not too far in the distance to the
+west.  It provides you with little comfort, other than you having the
+knowledge that other life forms are in the area.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4048
+D1
+~
+~
+0 0 26406
+D2
+~
+~
+0 0 4050
+S
+#4050
+Forest Surrounding Methic Dorat~
+~
+~
+There is nothing to mark your way, and it is inevitable that if you keep
+wandering around in here, that you will become lost.  Hopefully you can
+think of something to prevent this from happeneing.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4049
+D2
+~
+~
+0 0 4090
+D3
+~
+~
+0 0 4051
+S
+#4051
+Forest Surrounding Methic Dorat~
+~
+~
+The plumes of smoke rising become larger and larger as you continue west.
+You have the sense that you are approaching Methic Dorat, much to your
+relief.  Although it is by no means what you are used to, it will provide
+needed relief from the cold and the animals that hide in the wilderness. 
+You hope that the Neandrathals are more civilized than the animals they
+hunt.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4050
+D3
+~
+~
+0 0 4052
+S
+#4052
+Forest Surrounding Methic Dorat~
+~
+~
+Looking to the west, you can see the fire burning brightly, marking the
+entrance to the cave city of Methic Dorat.  The coldness of the ice age isa
+cold unlike any you have ever faced.  There is no escape from it, no matter
+how many layers of clothing you wear.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4051
+D2
+~
+~
+0 0 4053
+D3
+~
+~
+0 0 4023
+S
+#4053
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4052
+D2
+~
+~
+0 0 4054
+S
+#4054
+Deeper into the Forest~
+~
+~
+~
+0 134488065 0
+Rd     0
+D0
+~
+~
+0 0 4053
+D2
+~
+~
+0 0 4055
+S
+#4055
+~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4054
+D3
+~
+~
+0 0 4056
+S
+#4056
+Deeper into the Forest~
+~
+~
+~
+0 134488065 0
+Rd     0
+D1
+~
+~
+0 0 4055
+D2
+~
+~
+0 0 4057
+S
+#4057
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4056
+D2
+~
+~
+0 0 4058
+S
+#4058
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4057
+D1
+~
+~
+0 0 4059
+S
+#4059
+Deeper into the Forest~
+~
+~
+~
+0 270337 0
+Rd     0
+D1
+~
+~
+0 0 4060
+D3
+~
+~
+0 0 4058
+S
+#4060
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4061
+D3
+~
+~
+0 0 4059
+S
+#4061
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 4062
+D3
+~
+~
+0 0 4060
+S
+#4062
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4061
+D2
+~
+~
+0 0 4063
+S
+#4063
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4062
+D1
+~
+~
+0 0 4064
+D2
+~
+~
+0 0 4065
+S
+#4064
+Dead End~
+~
+~
+An enormously large tree blocks the path to the east.  Your only way out
+is back to the west.  
+~
+0 134488065 3
+Rd     0
+D3
+~
+~
+0 0 4063
+S
+#4065
+Deeper into the Forest~
+~
+~
+~
+0 134479873 3
+Rd     0
+D0
+~
+~
+0 0 4063
+D3
+~
+~
+0 0 4066
+S
+#4066
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4067
+D1
+~
+~
+0 0 4065
+S
+#4067
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 4066
+D3
+~
+~
+0 0 4068
+S
+#4068
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4067
+D3
+~
+~
+0 0 4069
+S
+#4069
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4068
+D2
+~
+~
+0 0 4070
+S
+#4070
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4069
+D2
+~
+~
+0 0 4074
+D3
+~
+~
+0 0 4071
+S
+#4071
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4072
+D1
+~
+~
+0 0 4070
+S
+#4072
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4073
+D2
+~
+~
+0 0 4071
+S
+#4073
+Dead End~
+~
+~
+The trees and brush become too thick and are unpassable.  The only way
+out is to go back the way you came in.  
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 4072
+S
+#4074
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4070
+D2
+~
+~
+0 0 4075
+S
+#4075
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4074
+D1
+~
+~
+0 0 4076
+S
+#4076
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4077
+D2
+~
+~
+0 0 4086
+D3
+~
+~
+0 0 4075
+S
+#4077
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4078
+D3
+~
+~
+0 0 4076
+S
+#4078
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 4079
+D3
+~
+~
+0 0 4077
+S
+#4079
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4078
+D1
+~
+~
+0 0 4080
+D2
+~
+~
+0 0 4081
+S
+#4080
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 4082
+D3
+~
+~
+0 0 4079
+S
+#4081
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4079
+D1
+~
+~
+0 0 4082
+S
+#4082
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4080
+D1
+~
+~
+0 0 4083
+D3
+~
+~
+0 0 4081
+S
+#4083
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 4084
+D3
+~
+~
+0 0 4082
+S
+#4084
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4083
+D1
+~
+~
+0 0 4085
+S
+#4085
+Connection point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D3
+~
+~
+0 0 4084
+S
+#4086
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4076
+D2
+~
+~
+0 0 4087
+S
+#4087
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4086
+D2
+~
+~
+0 0 4088
+S
+#4088
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4087
+D3
+~
+~
+0 0 4089
+S
+#4089
+Dead End~
+~
+~
+The snow drifts to the west have become so high, that passage is
+impossible.  You see the half buried bodies of animals who attempted to
+cross over the drifts, and it would be wise not to attempt it, lest you
+become like they are.  
+~
+0 134488069 3
+Rd     0
+D1
+~
+~
+0 0 4088
+S
+#4090
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4050
+D1
+~
+~
+0 0 26414
+D2
+~
+~
+0 0 4091
+S
+#4091
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4090
+D2
+~
+~
+0 0 4092
+S
+#4092
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4091
+D1
+~
+~
+0 0 4093
+S
+#4093
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4094
+D3
+~
+~
+0 0 4092
+S
+#4094
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 4095
+D3
+~
+~
+0 0 4093
+S
+#4095
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4094
+D2
+~
+~
+0 0 4096
+S
+#4096
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4095
+D3
+~
+~
+0 0 4097
+S
+#4097
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4096
+D2
+~
+~
+0 0 4099
+D3
+~
+~
+0 0 4098
+S
+#4098
+Dead End~
+~
+~
+Once again the forest becomes impassable here, as the trres and brush are
+too dense even for a single person to pass through.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 4097
+S
+#4099
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4097
+D2
+~
+~
+0 0 26301
+S
+#0
+
+
+
+#SPECIALS
+M 4001 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 4001 0 4001
+M 0 4001 1 4006
+M 0 4009 1 4009
+G 0 4004 0
+G 0 4010 0
+G 0 4011 0
+M 0 4010 1 4010
+G 0 4012 0
+G 0 4013 0
+G 0 4014 0
+M 0 4003 4 4017
+E 0 4008 0 5
+E 0 4002 0 20
+E 0 4002 0 21
+M 0 4004 4 4017
+E 0 4008 0 5
+M 0 4005 3 4017
+E 0 4009 0 5
+M 0 4006 1 4018
+E 0 4003 0 20
+E 0 4007 0 3
+E 0 4003 0 21
+M 0 4007 1 4021
+M 0 4008 2 4022
+E 0 4006 0 20
+E 0 4008 0 5
+E 0 4006 0 21
+M 0 4026 5 4098
+E 0 4008 0 5
+S
+
+
+
+#SHOPS
+4009 5 0 0 0 0 110 85 0 24
+4010 9 0 0 0 0 110 90 0 23
+0
+
+
+
+#$

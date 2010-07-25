@@ -1,0 +1,2289 @@
+#AREADATA
+Name        {70-100} Arctic Wasteland~
+Builders    None~
+VNUMs       20000 20199
+Security    100
+Recall      10210
+Flags       256
+Version     107
+Creator     Nosferatu~
+Llevel      0
+Ulevel      0
+Sounds      &WThe arctic winds are howling all around you...~
+Music       u7_dangr.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#20010
+Ice Devil~
+An Ice Devil~
+An Ice Devil flies above you, mocking your bad fortune...
+~
+The Ice Devil is Satan's cold variety of the common demon. The Lord of  
+Darkness has created this species to extend his rule into the arctic areas
+of Storm where other demons way perish due to the lack of fire.
+The Ice Devil is not really aggressive, but his constant mocking is really
+getting to you...
+~
+67 403186216 0 0 0 -333 S
+80 1 160 160 4000 4000d0+0 0d0+80000
+800 0 0
+0 0 0
+258 0 0
+#20011
+Polar Fox~
+A Polar Fox~
+A Polar Fox striving through the snow for food...
+~
+A small white fox with a beautiful bushy tail is running just past you.
+It has probably been near you for a while, exspecting you to die very soon.
+~
+133 134226472 0 0 0 0 S
+50 1 100 100 3000 3000d0+0 0d0+1
+500 0 0
+0 0 0
+256 0 0
+#20012
+Snowflake~
+A Snowflake~
+A living Snowflake floats through the cold air...
+~
+Its just a snowflake, no? Hmm..on second thought, this flake seems to be 
+alive, or is it?
+~
+129 134783528 0 0 0 0 S
+20 1 40 40 500 500d0+0 0d0+0
+200 0 0
+0 0 0
+256 0 0
+#20013
+Polar Bear~
+A Polar Bear~
+A huge Polar Bear attacks you!!
+~
+This big white bear is either upset that you have intruded in his territory
+or he is very hungry...or both. In any case, as soon as he notices you,
+he attacks viciously!
+~
+33 134226472 0 0 0 0 S
+70 1 140 140 6000 6000d0+0 0d0+1
+700 0 0
+0 0 0
+258 0 0
+#20014
+Ice Faerie~
+An Ice Faerie~
+An Ice Faerie tries to hide from you...
+~
+You see a small humanoid woman who reminds you of the pixies you have seen
+in other parts of the realm. However, this ice faerie is very shy and tries
+to hide from you.
+~
+67 134815874 0 0 0 500 S
+50 1 100 100 2000 2000d0+0 0d0+50000
+500 0 0
+0 0 2
+258 0 0
+#20015
+Schnee~
+Schnee~
+Schnee guards Lord Winter's Castle!
+~
+Schnee is about 6 meters tall. He has four arms and 2 legs. His entire body
+seems to be craved out of a single giant block of ice. He does not appear
+to have any internal organs, you can practically see right through him.
+However, seeing through him and getting past him are two differnent things!
+~
+99 201335464 0 0 0 -333 S
+95 1 190 190 20000 20000d0+0 0d0+95000
+950 0 0
+0 0 1
+258 0 0
+#20016
+Yeti~
+The Yeti~
+The Yeti eyes you curiously...
+~
+You have found the legendary Yeti! He is big, humanoid and has white, shaggy
+fur all over his body. He moves slowly, almost timedly, towards you. 
+Although he looks like a formidable opponent, he does not seem to be hostile
+at all...just curious.
+~
+67 134242984 0 0 0 500 S
+72 1 144 144 5250 5250d0+0 0d0+72000
+720 0 0
+0 0 1
+258 0 0
+#20017
+Ice Drake~
+The Ice Drake~
+The Ice Drake bares his horrible fangs!
+~
+The Ice Drake is almost a mature dragon. He looks much like his mother, the
+White Dragon Lord, but is still a little smaller. To grow to her size, he
+must eat plenty...and you look just about right for a snack!
+~
+99 403186344 0 0 0 -333 S
+75 1 150 150 5500 5500d0+0 0d0+75000
+750 0 0
+0 0 1
+258 0 0
+#20018
+North Star~
+The North Star~
+The North Star shines brightly...
+~
+&RYour eyes cannot bear the intense light of the being in front of you!
+~
+67 470295208 0 8448 0 500 S
+105 1 210 210 18714 18714d0+0 0d0+105000
+1050 0 0
+0 0 0
+2306 0 0
+#20019
+Light Piece~
+A Piece of Light~
+A Piece of Light strikes at you!
+~
+&RFlashes of light are burning the retina of your eyes!!
+  
+~
+35 134218280 0 0 0 0 S
+50 1 100 100 750 750d0+0 0d0+1
+500 0 0
+0 0 0
+258 0 0
+#20020
+Frost Giant~
+The Frost Giant~
+The Frost Giant likes to crush mortals!
+~
+The Frost Giant is ancient, huge and mean! He does not care for visitors,
+especially not for mortal ones like you!
+~
+99 201335464 0 0 0 -333 S
+90 1 180 180 12000 12000d0+0 0d0+90000
+900 0 0
+0 0 1
+258 0 0
+#20021
+Storm Giant~
+The Storm Giant~
+The Storm Giant is in a rage!
+~
+The Storm Giant is a tremendous-sized woman with a really bad temper! She
+is enraged to see you here and immediately attacks!
+~
+99 201335464 0 0 0 -333 S
+90 1 180 180 12000 12000d0+0 0d0+90000
+900 0 0
+0 0 2
+258 0 0
+#20022
+Winter~
+Lord Winter~
+Lord Winter is resting here until his time comes...
+~
+Lord Winter is as old as this world! He has seen countless mortals being
+born, growing up, aging and dying. He was here when the "Great Wipe" almost
+eradicated the world....and he will be here long after your bones have
+turned to dust.
+~
+71 469770920 0 0 0 0 S
+101 1 202 202 18000 18000d0+0 0d0+101000
+1010 0 0
+0 0 1
+2306 0 0
+#20197
+Dracula~
+Count Dracula~
+Count Dracula rises from his crypt!
+~
+~
+99 369697450 0 0 0 -1000 S
+105 1 210 210 25000 25000d0+0 0d0+100000
+1050 0 0
+0 0 1
+2050 0 0
+#20198
+Vlad~
+Vlad, the Impaler~
+Vlad stands here, eager for your blood!
+~
+~
+99 336143018 0 0 0 -1000 S
+101 1 202 202 20000 20000d0+0 0d0+100000
+1010 0 0
+0 0 1
+2 0 0
+#20199
+Nosferatu~
+Nosferatu~
+Nosferatu, Lord of the Rats...
+~
+Its Nosferatu, Lord of the Rats...and he is pretty cranky tonight!
+~
+67 337142462 0 0 0 -1000 S
+107 1 214 214 40000 40000d0+0 0d0+100000
+1070 0 0
+0 0 1
+2 0 0
+#0
+
+
+
+#OBJECTS
+#20000
+Sign One~
+sign One~
+Sign One...type read/look One to read.~
+~
+12 0 0 0 0 0 200
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+one~
+Greetings all!
+  
+First of all, I am your temporary Clan Administrator until another 
+Council Member has the time and desire to take this job.
+  
+Okay, first thing...the rules for clan equipment:
+There are 3 pieces of clan-equipment, level 30, 65, 100.
+You can have two versions of each piece, one for mana, one for blood.
+The Mana/Blood ration is about 3/1.
+The lvl 30 and lvl 60 items follow the Item Creation rules (note 2).
+None of the clan items can be an armor (body) or a weapon.
+None of the clan items can brandish, invoke, morph or have any permanent
+shield spells on it (ie..addaffect sanctuary -1).
+None of the clan items can have more than 6 (six) addaffects.
+For the creation of the champion (100) level items we have agreed to the
+following terms:
+Max Damroll and Hitroll is 12/12
+Max Hp is 100
+Max Mana/blood is 60/20
+Max AC -100
+Max Move 100
+Max Saving-Spell or Saving-Breath or a combo is -20 
+Max Anti-disarm 100
+Max 2 Stats...each stat no more then +2
+One permanent spell such as "fly -1" is allowed.
+Permanent lights are also allowed.
+You may add any 6 of the listed addaffects to your 100-level clan item.
+The permanent spell counts as an addaffect, the light does not.
+  
+Nosferatu!
+ 
+Note: To clarify the above rule regarding brandish, invoke..etc
+      no clan eq can have the capability to invoke,brandish,morph
+      Permanent shields are also prohibited.
+          --- KaLourin (tech chief)
+~
+#20001
+TWO~
+sign Two~
+Sign Two...type read/look Two to read.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+two~
+Okay, more rules on clans:
+  
+1) No unclanned mortal character may posses any clan equipment whatsoever.
+2) Trading of clan equipment is not allowed until we decide otherwise.
+3) All clan equipment has to have the name of the clan set with name.
+   That way, we can easily ofind and owhere all clan equipment.
+   This does not apply to clan containers or potions.
+4) Clan HQs can have more then one exit. However, all exits must lead to
+   either Bethaven or Hammerheim.
+5) No portals leading out of the HQs are allowed.
+6) No blood, hp or mana fountains are allowed in HQs.
+7) No Clan equipment under level 30 is allowed.
+8) No Clan can give out more then 3 clan items per mortal.
+9) Shops, Smithy, Bank, Bloodmob, Water fountains, Healers, Trainers,
+   Libraries, Offices for the leaders, Donation boxes, etc are all allowed
+   in the HQs.
+10) Leveling Mobs or armor/weapon items that can only be obtained in the
+    HQs are STRICTLY prohibited!
+ 
+~
+#20003
+portal~
+portal~
+A portal is here, leading to an unknown destination.~
+~
+29 134217728 0 0 0 0 0
+100 100
+1000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20010
+Icy Gem~
+an Icy Gem~
+A large, sparkling gemstone...~
+~
+8 1 0 0 0 1 20
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+#20011
+Polar Pelt~
+a Polar Bear's Pelt~
+A white pelt made from the hide of a polar bear...~
+~
+9 268435458 1024 0 0 1025 70
+100 100
+20~ 0~ 0~ 0~
+3 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 7
+A
+19 7
+A
+25 10
+A
+12 20
+A
+13 50
+#20012
+Mirror~
+mirror~
+A huge polished scale stands here...~
+~
+29 3 0 0 0 0 200
+100 100
+10193~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20013
+Polar Light~
+the Polar Light~
+&WThe &pP&Bo&Gl&Ra&Yr &WLight~
+~
+29 33554529 0 0 0 0 200
+100 100
+10210~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20014
+Icy Drink~
+the Icy Drink~
+A flask, filled with an ice cold magical fluid...~
+~
+10 268435681 0 0 0 1 90
+100 100
+49~ sanctuary~ poison~ refresh~
+2 900 0
+0 0
+reserved~
+0 0
+0 0 0
+#20015
+Icicle~
+an Icicle~
+A giant, glowing icicle...~
+~
+9 268435521 0 0 0 16385 95
+100 100
+15~ 0~ 0~ 0~
+2 948 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -10
+A
+18 7
+A
+19 7
+A
+14 -50
+A
+12 -50
+A
+13 50
+#20016
+Ice Key~
+the Ice Key~
+A cold, icy key...~
+~
+18 129 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#20017
+Yeti Fur~
+a Piece of Yeti Fur~
+A small piece of white, shaggy fur...~
+~
+9 1090 1048576 0 0 1048577 70
+100 100
+20~ 0~ 0~ 0~
+2 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+18 2
+A
+13 50
+#20018
+Ice Tube~
+the Ice Tube~
+A cylindrical container crafted from magical ice...~
+~
+15 335544388 0 0 0 1 80
+100 100
+152~ 5~ 0~ 0~
+2 800 0
+0 0
+reserved~
+0 0
+0 0 0
+#20019
+Ice gloves~
+the Ice Gloves~
+Icy gloves radiating with raw chaos...~
+~
+9 67110912 128 0 0 129 75
+100 100
+20~ 0~ 0~ 0~
+2 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -10
+A
+18 7
+A
+19 7
+A
+13 50
+#20020
+Ice Rear Claws~
+the Icy Rear Claws~
+Boots, made from the rear claws of the Ice Drake...~
+~
+9 67110912 64 0 0 65 75
+100 100
+0~ 0~ 0~ 0~
+5 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 -1
+A
+18 7
+A
+19 7
+A
+13 40
+#20021
+Frost Earring~
+the Frost Earring~
+A powerful looking earring...~
+~
+9 34817 0 0 0 524289 90
+100 100
+20~ 0~ 0~ 0~
+1 900 0
+5 0
+frost breath~
+12 12
+0 0 0
+A
+13 25
+A
+24 -15
+A
+25 30
+A
+19 4
+#20022
+Storm Earring~
+the Storm Earring~
+A powerful looking earring...~
+~
+9 17172481 0 0 0 524289 90
+100 100
+20~ 0~ 0~ 0~
+1 900 0
+5 0
+icestorm~
+12 12
+0 0 0
+A
+13 25
+A
+24 -15
+A
+12 90
+A
+19 4
+#20023
+Sword North Star~
+the North Star Sword~
+An incredibily powerful sword in the right hands...~
+~
+5 134219072 0 0 0 8193 100
+100 100
+0~ 50~ 50~ 1~
+10 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+13 125
+A
+24 -25
+A
+19 40
+A
+12 75
+A
+26 100
+#20024
+Bracers Knowledge~
+the Bracers of Knowledge~
+Ancient bracers that radiate with the essence of wisdom...~
+~
+9 50334784 4098 0 0 4097 100
+100 100
+0~ 0~ 0~ 0~
+3 1000 0
+5 0
+know alignment~
+-1 -1
+0 0 0
+A
+24 -10
+A
+12 30
+A
+13 30
+A
+19 10
+A
+18 10
+A
+14 -120
+#20025
+Ring Light~
+the Ring of Light~
+A ring of great power radiates here...~
+~
+9 50332928 2 0 0 3 100
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+5 0
+continual light~
+25 25
+0 0 0
+A
+13 75
+A
+19 10
+A
+18 10
+#20026
+Key Light~
+the Key of Light~
+A strange, flaming key...yet it feels soo cold!?~
+~
+18 301990016 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#20027
+Chunk Ice~
+&WA Huge Chunk of Ice~
+A trememdous chunk of ice...~
+~
+5 64 0 0 0 8193 90
+100 100
+0~ 50~ 50~ 8~
+100 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 100
+A
+13 -1000
+A
+25 -1000
+A
+12 -1000
+A
+14 -2000
+A
+1 -10
+#20028
+Sphere Light~
+&WThe Light of the North~
+A glowing sphere of icy, white light...~
+~
+1 536873025 0 0 0 1 100
+100 100
+0~ 0~ -1~ 0~
+2 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+A
+23 -10
+A
+18 10
+A
+19 10
+A
+13 50
+#20029
+Amulet Winter~
+the Amulet of Winter~
+An icy amulet that once belonged to Lord Winter...~
+~
+9 6145 0 0 0 5 95
+100 100
+0~ 0~ 0~ 0~
+1 948 0
+5 0
+detect hidden~
+50 50
+0 0 0
+A
+18 9
+A
+13 50
+A
+19 8
+A
+23 -15
+A
+24 -15
+#20188
+null~
+null~
+Null~
+~
+13 0 1048576 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20189
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20190
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20191
+nll~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20192
+null~
+null~
+Null~
+~
+13 0 1024 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20193
+null~
+null~
+Null~
+~
+13 3 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20194
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20195
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20196
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+108 -1
+A
+121 -1
+#20197
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20198
+null~
+null~
+Null~
+~
+13 0 4096 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#20199
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#20000
+Clan Administration~
+~
+~
+This Room will serve as the Clan Adminstration Building.
+The Clans Gods can discuss their business here in private.
+I will also post the most important rules here...Look One, Two, ect..
+ 
+Nosferatu
+~
+0 394252 0
+Rd     0
+S
+#20001
+Nos' New Area~
+~
+~
+Vnums 20001 - 20199
+~
+0 12979212 0
+Rd     0
+S
+#20002
+Nosferatu's Crypt~
+~
+~
+~
+0 4595720 0
+Rd     0
+D0
+~
+~
+0 0 20003
+S
+#20003
+Circular Room~
+~
+~
+~
+0 67510280 0
+Rd     0
+D0
+~
+~
+0 0 20006
+D1
+~
+~
+0 0 20004
+D2
+~
+~
+0 0 20002
+D3
+~
+~
+0 0 20005
+D5
+~
+~
+0 0 25001
+S
+#20004
+Vlad's Crypt~
+~
+~
+~
+0 4595720 0
+Rd     0
+D3
+~
+~
+0 0 20003
+S
+#20005
+Dracula's Crypt~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 20003
+S
+#20006
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 20003
+S
+#20010
+A Frozen Trail~
+~
+~
+You are travelling further north following a thin, snow covered trail.
+The temperature is now well below zero, and the chilling wind is tearing
+mercilessly on your clothes and armor. To the south, you can make out the 
+icy portal.
+~
+0 401412 4
+Rd     0
+D0
+~
+~
+0 0 20011
+D2
+~
+~
+0 0 18483
+S
+#20011
+A Frozen Trail~
+~
+~
+The cold is really starting to get to you. Your fingers, ears and nose are
+red and half-frozen. The trail is getting so vaguely outlined that it 
+becomes very difficult to follow. Only because of your keen, well-trained
+senses, you are able to follow the trail eastward.
+~
+0 401412 11
+Rd     0
+D1
+~
+~
+0 0 20012
+D2
+~
+~
+0 0 20010
+S
+#20012
+Losing the Trail~
+~
+~
+The trail, or what was left of it, has ended. No matter how hard you search,
+it just has disappeared under all the snow and ice.
+East of you, you can see an endless frozen wasteland that does not look 
+very inviting....and on top of all, it still seems to get colder!
+~
+0 401408 11
+Rd     0
+D1
+~
+~
+0 0 20013
+D3
+~
+~
+0 0 20011
+S
+#20013
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836864 11
+Rd     1
+D1
+~
+~
+0 0 20014
+D3
+~
+~
+0 0 20012
+S
+#20014
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20024
+D1
+~
+~
+0 0 20015
+D2
+~
+~
+0 0 20057
+D3
+~
+~
+0 0 20013
+S
+#20015
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20023
+D1
+~
+~
+0 0 20016
+D2
+~
+~
+0 0 20056
+D3
+~
+~
+0 0 20014
+S
+#20016
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20022
+D1
+~
+~
+0 0 20017
+D2
+~
+~
+0 0 20055
+D3
+~
+~
+0 0 20015
+S
+#20017
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20018
+D3
+~
+~
+0 0 20016
+S
+#20018
+A Lost Trail~
+~
+~
+In the midst of all the snow and ice here, you make out a very faint trail 
+leading to the east. West of here, the trail is completely burried under
+several meters of snow and ice.
+~
+0 401408 11
+Rd     0
+D1
+~
+~
+0 0 20019
+D3
+~
+~
+0 0 20017
+S
+#20019
+A Lost Trail~
+~
+~
+This trail is very faint! It takes all your concentration to follow it.
+The chilling winds and the extremely cold temperature make this all the more
+difficult. The trail appears to lead to the south and west from here.
+~
+0 401408 11
+Rd     0
+D2
+~
+~
+0 0 20020
+D3
+~
+~
+0 0 20018
+S
+#20020
+A Dead End (for now)~
+~
+~
+Connect here to one of the north-eastern areas of Bethaven!
+~
+0 401412 11
+Rd     0
+D0
+~
+~
+0 0 20019
+S
+#20021
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20021
+D3
+~
+~
+0 0 20022
+S
+#20022
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20031
+D1
+~
+~
+0 0 20021
+D2
+~
+~
+0 0 20016
+D3
+~
+~
+0 0 20023
+S
+#20023
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20030
+D1
+~
+~
+0 0 20022
+D2
+~
+~
+0 0 20015
+D3
+~
+~
+0 0 20024
+S
+#20024
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20029
+D1
+~
+~
+0 0 20023
+D2
+~
+~
+0 0 20014
+D3
+~
+~
+0 0 20025
+S
+#20025
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20024
+D3
+~
+~
+0 0 20025
+S
+#20026
+The Yeti's Hideout~
+~
+~
+You were wandering the arctic wasteland for so long before you found this
+cave! Your eyes are still somewhat snow blind and you have no feeling in 
+most of your body parts. Inside this cavern, the temperature seems to be
+significantly higher than out in the open tundra...a good place to rest!
+But then you hear some grunting from the far corner of the shelter. You 
+see a large, shaggy creature resting there...the legendary Yeti!
+~
+0 401421 0
+Rd     0
+D1
+~
+Cave~
+3 0 20027
+S
+#20027
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20027
+D1
+~
+~
+0 0 20028
+D2
+~
+~
+0 0 20027
+D3
+~
+Cave~
+3 0 20026
+S
+#20028
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20029
+D3
+~
+~
+0 0 20027
+S
+#20029
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20036
+D1
+~
+~
+0 0 20030
+D2
+~
+~
+0 0 20024
+D3
+~
+~
+0 0 20028
+S
+#20030
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20035
+D1
+~
+~
+0 0 20031
+D2
+~
+~
+0 0 20023
+D3
+~
+~
+0 0 20029
+S
+#20031
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20034
+D1
+~
+~
+0 0 20032
+D2
+~
+~
+0 0 20022
+D3
+~
+~
+0 0 20030
+S
+#20032
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+Frostgate~
+3 0 20050
+D3
+~
+~
+0 0 20031
+S
+#20033
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20033
+D3
+~
+~
+0 0 20034
+S
+#20034
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20041
+D1
+~
+~
+0 0 20033
+D2
+~
+~
+0 0 20031
+D3
+~
+~
+0 0 20035
+S
+#20035
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20040
+D1
+~
+~
+0 0 20034
+D2
+~
+~
+0 0 20030
+D3
+~
+~
+0 0 20036
+S
+#20036
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20039
+D1
+~
+~
+0 0 20035
+D2
+~
+~
+0 0 20029
+D3
+~
+~
+0 0 20037
+S
+#20037
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20036
+D3
+~
+~
+0 0 20037
+S
+#20038
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20039
+D3
+~
+~
+0 0 20061
+S
+#20039
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20048
+D1
+~
+~
+0 0 20040
+D2
+~
+~
+0 0 20036
+D3
+~
+~
+0 0 20038
+S
+#20040
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20045
+D1
+~
+~
+0 0 20041
+D2
+~
+~
+0 0 20035
+D3
+~
+~
+0 0 20039
+S
+#20041
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20043
+D1
+~
+~
+0 0 20042
+D2
+~
+~
+0 0 20034
+D3
+~
+~
+0 0 20040
+S
+#20042
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20060
+D3
+~
+~
+0 0 20041
+S
+#20043
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+Cavern~
+3 0 20044
+D2
+~
+~
+0 0 20041
+S
+#20044
+Storm Giant's Cave~
+~
+~
+You have found a huge cave carved into the ice that must be eons old. The
+cavern is so big, that you cannot make out the surrounding walls clearly.
+Strangely enough, the blizzard seems to be even worse in here than it has
+been out in the open wasteland...
+~
+0 268836877 0
+Rd     2
+D2
+~
+Cavern~
+3 0 20043
+S
+#20045
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20046
+D2
+~
+~
+0 0 20040
+S
+#20046
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+Cavern~
+119 20026 20047
+D2
+~
+~
+0 0 20045
+S
+#20047
+North Star~
+~
+~
+You must have reached the north pole of the Storm world! Much in contrast
+to the frozen inferno that rages outside, this cavern is of eerie silence.
+It seems to be less cold in here as well. Near the north wall shines an 
+extremely bright light, pulsating quietly....is this light alive?
+~
+0 4595724 0
+Rd     0
+D2
+~
+Cavern~
+119 20026 20046
+S
+#20048
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+Cavern~
+3 0 20049
+D2
+~
+~
+0 0 20039
+S
+#20049
+Frost Giant's Cave~
+~
+~
+You have found a huge cave carved into the ice that must be eons old. The
+cavern is so big, that you cannot make out the surrounding walls clearly.
+The storm has been calmed down to a slight breeze, but the temperature has
+dropped even further. It seems, much of the floor is covered with dry ice,
+steaming, whenever you step on it...
+~
+0 268836877 0
+Rd     3
+D2
+~
+Cavern~
+3 0 20048
+S
+#20050
+Entrance to a Frozen Castle~
+~
+~
+Through the Frostgate, you have entered a frozen, translucent castle. The
+winds have calmed down and the cold is a little less biting. However, now
+you have come face to face with Schnee, the guardian of this strange place!
+~
+0 4464649 0
+Rd     0
+D1
+~
+Icedoor~
+119 20016 20051
+D3
+~
+Frostgate~
+3 0 20032
+S
+#20051
+An Icy Hallway~
+~
+~
+You are in a glistening hallway. All the icy walls around you sparkle in the
+light of your torch. To the west lies the castle entrance, south and east of
+you are icy catacombs. To the north, you see a large hall with a huge throne
+in its center...
+~
+0 401421 0
+Rd     0
+D0
+~
+~
+0 0 20052
+D1
+~
+~
+0 0 20054
+D2
+~
+~
+0 0 20053
+D3
+~
+Icedoor~
+119 20016 20050
+S
+#20052
+Winter's Throne Room~
+~
+~
+You have entered a long hall with a wide ceiling. In the center of the hall
+stands a throne entirely made from ice. The throne is carved with many 
+familiar winter images and seems to be fused to the icy floor. Upon this
+throne sits Winter himself, his icy stare solemly fixed upon you.
+~
+0 273031179 0
+Rd     10
+D2
+~
+~
+0 0 20051
+S
+#20053
+A Cold Cavern~
+~
+~
+You have entered a very cold cavern. It is very silent in here, and you
+feel somewhat like being in a cathedral. The room is otherwise completely
+empty...or is it?
+~
+0 401421 0
+Rd     0
+D0
+~
+~
+0 0 20051
+S
+#20054
+A Cold Cavern~
+~
+~
+You have entered a very cold cavern. It is very silent in here, and you
+feel somewhat like being in a cathedral. The room is otherwise completely
+empty...or is it?
+~
+0 139277 0
+Rd     0
+D3
+~
+~
+0 0 20051
+S
+#20055
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20016
+D1
+~
+~
+0 0 20055
+D2
+~
+~
+0 0 20055
+D3
+~
+~
+0 0 20056
+S
+#20056
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20015
+D1
+~
+~
+0 0 20055
+D2
+~
+~
+0 0 20058
+D3
+~
+~
+0 0 20057
+S
+#20057
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20014
+D1
+~
+~
+0 0 20056
+D2
+~
+~
+0 0 20057
+D3
+~
+~
+0 0 20057
+S
+#20058
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20056
+D2
+~
+Lair~
+3 0 20059
+S
+#20059
+Ice Drake's Lair~
+~
+~
+In your search for shelter from the cold, you have stumbled into a large
+icy cave. The chilling winds have ceased and you are just going to make
+yourself comfortable here when you notice something big, white and nasty
+moving towards you...it seems to be very hungry!
+~
+0 401421 0
+Rd     0
+D0
+~
+Lair~
+3 0 20058
+S
+#20060
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20025
+D3
+~
+~
+0 0 20042
+S
+#20061
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D1
+~
+~
+0 0 20038
+D3
+~
+~
+0 0 20062
+S
+#20062
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20062
+D1
+~
+~
+0 0 20061
+D2
+~
+~
+0 0 20063
+D3
+~
+~
+0 0 20062
+D5
+~
+~
+0 0 20064
+S
+#20063
+Arctic Wasteland~
+~
+~
+You are blinded by the snow and ice around you! You are slipping
+and stumbling over the frozen land. All your senses are useless
+due to the raging blizzard. With every step your body loses a
+little more warmth and energy to the merciless elements.
+~
+0 268836873 11
+Rd     1
+D0
+~
+~
+0 0 20062
+S
+#20064
+Breaking Ice!!~
+~
+~
+You are wandering around aimlessly when suddenly the ice gives it!!!
+   
+   
+  
+                       AAAAHHHHHHHRRRRRRGGG!!
+  
+  
+ 
+You fall a few meters, then you hit water....SPLASH!!
+  
+The icy water trenches you completely. There is no way to climb onto the 
+solid ice again...you better use magic to get out here...fast!!
+~
+0 277217293 11
+Rd     300
+S
+#0
+
+
+
+#SPECIALS
+M 20010 spec_breath_frost
+M 20011 spec_fido
+M 20012 spec_healer
+M 20015 spec_cast_judge
+M 20016 spec_cast_adept
+M 20017 spec_breath_frost
+M 20018 spec_nosferatu_new
+M 20019 spec_breath_lightning
+M 20020 spec_breath_frost
+M 20021 spec_breath_lightning
+M 20022 spec_breath_frost
+M 20197 spec_breath_gas
+M 20198 spec_breath_gas
+M 20199 spec_nosferatu_mob
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 20000 0 20000
+O 0 20001 0 20000
+M 0 20012 3 20015
+G 0 20010 0
+M 0 20011 5 20023
+M 0 20016 1 20026
+E 0 20017 0 25
+E 0 20017 0 24
+M 0 20013 3 20035
+E 0 20011 0 16
+M 0 20021 1 20044
+E 0 20022 0 23
+G 0 20026 0
+E 0 20027 0 20
+M 0 20018 1 20047
+E 0 20023 0 20
+E 0 20024 0 18
+E 0 20024 0 19
+E 0 20025 0 2
+G 0 20026 0
+M 0 20020 1 20049
+E 0 20021 0 23
+G 0 20026 0
+E 0 20027 0 20
+M 0 20015 1 20050
+E 0 20015 0 22
+G 0 20016 0
+E 0 20027 0 20
+M 0 20022 1 20052
+E 0 20028 0 0
+E 0 20029 0 3
+E 0 20029 0 4
+E 0 20027 0 20
+M 0 20014 1 20053
+G 0 20014 0
+O 0 20013 0 20054
+O 0 20012 0 20059
+M 0 20017 1 20059
+E 0 20019 0 13
+E 0 20020 0 12
+M 0 20010 1 20064
+G 0 20018 0
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

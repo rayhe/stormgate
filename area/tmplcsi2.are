@@ -1,0 +1,3418 @@
+#AREADATA
+Name        {     } CSI Temple~
+Builders    Zhyril~
+VNUMs       23101 23200
+Security    100
+Recall      17809
+Flags       16
+Sounds      A long, drawn-out laugh filled with insane mirth echos through the area.~
+End
+
+
+
+#MOBILES
+#23102
+guardian elemental~
+a guardian elemental~
+An enormous guardian elemental constructed of earth, ice, and fire looms here.
+~
+Created to prevent unbelievers from entering the Temple's environs, this
+huge elemental looks unstoppable.  
+~
+1 436207744 16810004 0 0 0 S
+110 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#23110
+warhound~
+a warhound~
+A fierce warhound patrols the hall.
+~
+An enormous wolf-like creature.
+~
+1 0 0 0 0 -300 S
+3 0 0 0 30d0+0 0d0+0
+0 16 0
+0 0 0
+0 0 0
+#23114
+temple slave~
+a Temple slave~
+A Temple slave walks by.
+~
+One of the many luckless people enslaved by the cruel masters of the
+Temple to serve their needs.  
+~
+1 0 0 0 0 700 S
+3 0 0 0 40d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>death_prog 100~
+mpecho A passing worshipper snickers at the sight.
+mpecho Apparently, life in the Temple is an uncertain one.
+~
+|
+#23115
+temple guard~
+a Temple guard~
+A Temple guard patrols the area.
+~
+A tough-looking soldier in black armor.
+~
+1 0 0 0 0 0 S
+4 0 0 0 50d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+mpecho You snicker.
+mpecho Once again, strife has erupted in the halls of the Temple, and the faithful
+mpecho turn on each other in a frenzy of blood.
+~
+|
+#23117
+mercenary~
+a mercenary~
+A mercenary hireling swaggers through the halls.
+~
+An uncouth-looking thug, his arrogance is unseemly for a lowly hireling. 
+Perhaps you should teach him a lesson...  
+~
+1 0 0 0 0 0 S
+2 0 0 0 40d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+#23119
+Gorodar Kreesh~
+Gorodar Kreesh~
+Gorodar Kreesh, Quartermaster of the Temple, is here.
+~
+A huge, burly man dressed in once-fine clothing, Kreesh is responsible
+for arming the followers of Chaos, Strife, and Injustice.  Feared throughout
+the land for his quick temper and brutality, he is 
+~
+3 0 0 0 0 0 S
+90 0 0 0 0d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+#23121
+instructor~
+an instructor~
+A brutal-looking instructor strides about, screaming at the recruits.
+~
+A thorougly evil-looking man in black armor, he wields his instructor's
+baton with brutality and skill.  
+~
+67 0 0 0 0 -500 S
+5 5 0 0 100d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>fight_prog 5~
+say Back, scum!
+kick $n
+~
+>greet_prog 100~
+if level($n)>5
+say New recruits only!
+push $n west
+break
+else
+say Grab a weapon and get into line, cretin!
+snicker $n
+break
+~
+|
+#23122
+new recruit~
+a new recruit~
+A new recruit is here, training with sword and shield.
+~
+A large, brutish-looking youth.
+~
+1 0 0 0 0 -400 S
+1 0 0 0 15d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>death_prog 100~
+mpecho He begins to move slightly; apparently you didn't kill him.
+mpecho Instructors walk over and drag him off.
+mpecho The Master of Training nods in your direction.
+mpgoto 1
+~
+|
+#23123
+training master~
+the Master of Training~
+The Master of Training stands here, surveying the recruits.
+~
+A tall, burly man with many scars, he looks quite dangerous.  
+~
+515 64 0 0 0 0 S
+110 50 1000 0 90000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>fight_prog 30~
+dim
+~
+|
+#23125
+azrik high priest~
+Azrik, the High Priest~
+The high priest of the Temple is here.
+~
+A tall, evil-looking man with a scarred face and eyes that seem able to
+flay the soul from your body.   
+~
+75 301998272 327696 0 0 -500 S
+110 0 0 0 40000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>fight_prog 20~
+cast 'ultrablast'
+~
+>fight_prog 10~
+cast 'blindness' $n
+~
+|
+#23133
+acolyte~
+an acolyte~
+A robed acolyte walks through the temple.
+~
+A cruel-looking young cleric, he contemptuously eyes you then continues on.
+~
+1 0 0 0 0 0 S
+10 0 0 0 200d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#23135
+chaos priest~
+a Chaos priest~
+A Chaos priest lurks in the shadows.
+~
+A thoroughly evil-looking man.
+~
+3 16777272 2097232 0 3 -800 S
+109 0 0 0 10000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if level($n)<3
+say Thou art not ready!
+say Return to your training, and try again later.
+push $n west
+break
+endif
+smirk
+say Welcome, recruit.
+close west
+lock west
+~
+|
+#23143
+bone guardian~
+a bone guardian~
+A horrible creature made of bone launches itself at you.
+~
+Fused with magic, this horrible creature was made only to kill.  
+~
+35 8388608 16 0 0 0 S
+5 0 0 0 100d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#23152
+a rat~
+a rat~
+A vicious-looking rat scuttles through the darkness.
+~
+It has razor-sharp teeth and vicious red eyes.
+~
+1 0 0 0 0 0 S
+4 0 0 0 20d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#23153
+elf maiden~
+a beautiful elf maiden~
+A beautiful elf maiden is here.
+~
+A beautiful vision, her eyes glow with goodness.
+~
+67 0 0 0 3 0 S
+110 0 0 0 1000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+>greet_prog 100~
+say Welcome, young adventurer.
+smile $n
+say Come swim in the pool with me.  You won't need all of that...
+say Take off your armor and remove your weapons...
+mpecho You can't seem to resist her commands.
+mpforce $n rem all
+say Place it on the grass.
+mpforce $n drop all
+say I'll...safeguard it for you.
+take all
+mpat 23199 drop all
+say Now enter the pool.
+smile
+~
+>speech_prog equipment stuff hey no give~
+smile
+say Don't worry, I'll watch over your possessions.
+~
+>fight_prog 100~
+grin
+say Attacking a poor innocent maiden...
+laugh
+say I think you need to cool off a little.
+emote suddenly ducks under your swing, and pushes you into the water!
+mptrans $n 23154
+~
+|
+#23154
+horrible tentacled creature~
+a horrible tentacled creature~
+A horrible tentacled creature has grabbed onto your ankle.
+~
+Aiiieeee!
+~
+35 0 16 0 0 0 S
+3 0 0 0 40d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+mpecho $n has dealt a mortal blow to the creature!  Blood fills the water.
+mpecho Suddenly, the water begins to churn violently; you desperately swim to the surface!
+mptrans $n 23155
+mpmload 23154
+~
+|
+#23159
+chaos demon~
+a Chaos Demon~
+A huge, muscled red creature is here.
+~
+~
+67 40 16 0 1 0 S
+110 0 0 0 300d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+mpecho The whole world seems strange, like you're in a dream.
+if sex($n)==2
+say Quickly, the ball is about to begin!  Put this on!
+mpoload 23160
+give gown $n
+say and you'd better take this!
+mpoload 23161
+give rapier $n
+say Put them on! Quickly!
+mpforce $n wear gown
+say Now wake up, before it's too late!
+cackle
+mptrans $n 23160
+break
+endif
+say Quickly, put this on!
+mpoload 23162
+give doublet $n
+mpoload 23163
+give hat $n
+say oh, and you might need this.
+grin
+mpoload 23161
+give rapier $n
+say Quickly, put them on!
+mpforce $n wear doublet
+say Now wake up!
+cackle
+mpecho The world seems to writhe about you.
+mptrans $n 23160
+break
+ 
+ 
+~
+|
+#23163
+man black~
+The man in black~
+The man in black stands here, his rapier at the ready.
+~
+You have finally caught up to this strange figure.  Wordlessly he faces you,
+his rapier held in an at guard position; apparently you have no choice but
+to fight him.
+~
+3 8388608 0 0 0 0 S
+10 0 0 0 100d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+look $n
+emote stands here silently.
+n
+w
+~
+>death_prog 100~
+emote falls silently to the ground.
+mpgoto 23170
+mptrans $n
+mpat 23163 mload 23163
+~
+|
+#23175
+master training~
+the Master of Training~
+The Training Master is here.
+~
+A high-ranking priest of the Temple, he is here to provide instruction in
+spells and skills to the faithful.  
+~
+1027 0 0 0 0 -400 S
+105 0 0 0 3000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#23176
+language master~
+the Master of Languages~
+The language master is here.
+~
+An older, but still powerful priest.
+~
+65539 0 0 0 0 0 S
+100 0 0 0 3000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+say Deceit is impossible if you cannot speak your victim's language.
+smirk
+~
+|
+#23179
+chaos demon~
+a chaos demon~
+The Chaos Demon stands here.
+~
+He stands 12 feet tall, with rippling muscles.  Raw chaos plays along his
+body, and his eyes gleam with an unholy light.  
+~
+3 268435456 0 0 1 -999 S
+110 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+grin
+say Welcome, mortal!  I see you have made it this far.  Perhaps you will be
+say a fit servant for us.
+say Long ago the people of this city served us.  But their faith grew weak.
+say We had to destroy them and lay waste to their proud city.
+say Now you wish to serve us?  We reward faithfulness well, but punish
+say those who stray.  Now answer us well.  Will you serve faithfully?
+~
+>speech_prog yes~
+emote grins evilly.
+say Very well.  Go and serve:
+say But remember the price of failure!
+emote laughs insanely.
+say Take this as a token of your servitude.
+mpoload 23199
+give shield $n
+say You'll certainly need it, if you're to prove worthy of serving us!
+say in fact, why not put it into use right now!
+emote laughs mockingly, and waves one taloned arm.
+mpecho A glow fills the room, and when it fades you stand in an arena!
+mpecho All about you battle rages.
+say Fight bravely, $n.
+say Those who are weak are weeded out.
+mptrans $n 23198
+mpat $n cast 'fireshield' $n
+~
+>speech_prog no~
+snicker
+say Too late.  If you will not serve us as a soldier, you will serve us as
+say a slave.
+mptrans $n 23198
+~
+|
+#23180
+inquisitor~
+an inquisitor~
+An inquisitor is here, shrouded in darkness.
+~
+A cloaked form shrouded in darkness.
+~
+1 0 0 0 0 -700 S
+8 0 0 0 200d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+#23181
+prisoner~
+a prisoner~
+A prisoner is chained to the wall here.
+~
+He seems oblivious to your presence.  
+~
+3 8388608 0 0 0 300 S
+2 0 0 0 2d0+0 0d0+0
+0 1 0
+0 0 0
+0 0 0
+#23182
+Mogredius~
+Mogredius~
+Mogredius is here.
+~
+~
+1 0 0 0 0 -1000 S
+1 0 0 0 1d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>death_prog 100~
+emote is helpless before the assault.
+mpecho There is a brilliant flash of light, and when it clears
+mpecho Mogredius has been annihilated.
+mpecho All that remains is a pile of dust and his robes.
+mpecho The mage smirks, waves his hand, and disappears.
+mptrans captive 23168
+~
+|
+#23183
+a dungeon guard~
+a dungeon guard~
+A dungeon guard blocks the door.
+~
+A grim, humorless soldier who glares at you meanly.  
+~
+67 0 0 0 0 -400 S
+8 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#23184
+mogredius high inquisitor~
+Mogredius, the High Inquisitor~
+The High Inquisitor, Mogredius, sits here.
+~
+A tall, angular man draped in black robes, Mogredius radiates evil and
+cruelty.  
+~
+3 0 0 0 1 -800 S
+140 5 5 0 1000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+glare $n
+say Let the candidates step forward.
+say How do you plead, innocent or guilty?
+~
+>speech_prog innocent guilty~
+say All are guilty.
+if level($n)<5
+say Take $n to the dungeons!
+~
+|
+#23185
+executioner~
+an executioner~
+An executioner stands here.
+~
+~
+35 0 0 0 0 -100 S
+10 0 0 0 500d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>death_prog ~
+mpecho The High Inquisitor stands up.
+say You shall pay for this outrage!
+~
+|
+#23186
+captive mage prisoner~
+a captive mage~
+A prisoner sits cross-legged on the floor here.
+~
+His beard is dirty and matted, and his robes show many holes.  A golden
+collar is around his neck, and his eyes show hopelessness.  
+~
+67 0 0 0 1 500 S
+120 0 0 0 3000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>greet_prog 100~
+sigh
+say Another one comes to torment me.
+glare $n
+say Someday I shall escape, follower of Chaos.
+~
+>give_prog goldenkey~
+emote looks amazed.
+say Is this some trick?
+emote unlocks the collar with the key; it comes off.
+say Finally! Freedom!
+smile $n
+say My thanks, adventurer.
+say Now, to extract vengeance from Mogredius!
+say Let us go!
+emote waves his arms, and smoke fills the room.  When it clears, you are somewhere else.
+mpgoto mogredius
+mptrans $n
+say Now you shall pay, evil one!
+mpforce mogredius say No!  Impossible, how did you escape?
+mpforce mogredius emote looks fearful.
+emote raises his hand, and a bolt of energy slams into Mogredius, knocking him down.
+say And now you shall meet your maker!
+mpecho Beams of energy lance from the mage's hands, and envelop the screaming Mogredius.
+mpecho There is a flash of light, and Mogredius disappears; only a pile of dust, and
+mpecho his slightly-singed robes remain.
+mpoload 23185
+drop robes
+emote picks up the robes.
+emote laughs.  "You seem to have lost some weight, Mogredius..."
+drop robes
+mpoload 23189
+say My thanks again.
+smile $n
+wave
+emote vanishes.
+mpgoto 23189
+~
+>act_prog flames~
+cast 'sanctuary' $n
+~
+|
+#23187
+Master of the Arena~
+the Arena Master~
+The Master of the Arena is here, overseeing the fights.
+~
+A huge, burly man with an enormous red beard.
+~
+67 0 0 0 0 -400 S
+99 0 0 0 30000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if level($n)<5
+say Go away, recruit!
+snicker
+push $n west
+break
+endif
+~
+|
+#23193
+surly cook~
+a surly cook~
+A cook stands here selling food.
+~
+Not a very pleasant-looking fellow.
+~
+3 0 0 0 0 -400 S
+30 0 0 0 3000d0+0 0d0+0
+2 0 0
+0 0 0
+0 0 0
+#23195
+orc gladiator~
+an orc gladiator~
+A huge orc gladiator lunges at you.
+~
+A huge, burly fighter.
+~
+1 0 0 0 0 -400 S
+5 2 2 0 300d0+0 0d0+0
+0 18 0
+0 0 1
+0 0 0
+>fight_prog 20~
+mpecho The crowd roars.
+~
+>death_prog 100~
+mpecho The crowd roars with approval athe orc dies.
+mpecho The sound of chanting fills the air: $n! $n!
+~
+|
+#23196
+mighty ogre warrior~
+a mighty ogre warrior~
+A HUGE ogre warrior grins at you evilly.
+~
+An enormous creature, heavily muscled and wielding a large axe.
+~
+1 0 16 0 0 -200 S
+15 0 0 0 1500d0+0 0d0+0
+0 7 0
+0 0 1
+0 0 0
+>fight_prog 20~
+mpecho The crowd roars with excitement!
+~
+>rand_prog 10~
+if ispc($r)
+emote roars and leaps to the attack!
+kill $r
+break
+else
+snarl $r
+break
+~
+|
+#23197
+drow fighter~
+a drow fighter~
+A drow fighter lurks here.
+~
+A quick-moving figure armed with an evil-looking sword.  
+~
+1 0 0 0 0 -800 S
+9 0 0 0 700d0+0 0d0+0
+0 8 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#23110
+cruel iron mace~
+a cruel iron mace~
+A mace lies here.~
+~
+5 0 32768 0 0 8193 1
+0~ 0~ 0~ 8~
+8 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 2
+#23111
+scourge~
+a scourge~
+A vicious scourge lies here.~
+~
+5 0 0 0 0 8193 2
+0~ 0~ 0~ 4~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23112
+double edged war axe~
+a double-edged waraxe~
+An axe lies here.~
+~
+5 0 0 0 0 8193 5
+0~ 0~ 0~ 5~
+5 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+#23113
+black leather hauberk~
+a black leather hauberk~
+A hauberk lies here.~
+~
+9 0 0 0 0 9 1
+3~ 0~ 0~ 0~
+5 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#23115
+spiked shield~
+a spiked shield~
+A spiked shield lies here.~
+~
+9 0 0 0 0 513 5
+3~ 0~ 0~ 0~
+10 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+#23117
+spiked gauntlets~
+a pair of spiked gauntlets~
+Gauntlets lie here.~
+~
+9 0 0 0 0 129 5
+1~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+#23122
+training sword~
+a dulled practice sword~
+A dull-ooking sword lies here.~
+~
+5 0 0 0 0 8193 1
+0~ 0~ 0~ 13~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -1
+#23125
+runed robe~
+a runed robe~
+A robe lies here.~
+~
+9 71303744 0 0 1050624 1025 105
+5~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 100
+A
+18 15
+A
+19 15
+A
+13 100
+A
+25 10
+A
+3 1
+A
+4 1
+A
+12 20
+#23129
+round wooden shield~
+a round wooden shield~
+A shield lies here.~
+~
+9 0 0 0 0 513 5
+1~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23130
+halberd~
+a halberd~
+A halberd lies here.~
+~
+5 0 32768 0 0 8193 5
+0~ 0~ 0~ 13~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23135
+black key~
+a black key~
+A black key lies here.~
+~
+18 67108864 0 0 0 1 1
+0~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23139
+huge two-handed axe~
+a huge two-handed axe~
+A huge axe lies here.~
+~
+5 0 32768 16384 0 8193 15
+0~ 0~ 0~ 6~
+15 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 -10
+A
+19 10
+A
+18 4
+#23140
+skeleton~
+a skeleton~
+A skeleton is chained to the wall.~
+~
+15 0 0 0 0 0 0
+5~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+skeleton~
+A grisly sight.
+~
+#23141
+bone key~
+a bone key~
+A small bone key lies here.~
+~
+18 0 0 0 0 1 1
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23142
+crate~
+a crate~
+A crate lies here.~
+~
+15 0 0 0 0 0 0
+40~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23143
+portal~
+a portal~
+A glowing portal set in a gold frame is on the western wall.~
+~
+29 0 0 0 0 0 0
+23150~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23144
+serpentine blade~
+a serpentine sword~
+(no description)~
+~
+5 64 512 0 0 8192 10
+0~ 0~ 0~ 3~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+18 3
+A
+19 3
+#23145
+black leather leggings~
+black leather leggings~
+Black leather leggings lie here.~
+~
+9 0 0 0 0 33 1
+3~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23146
+black steel armguards~
+black steel armguards~
+Black steel armguards lie here.~
+~
+9 0 0 0 0 257 1
+3~ 0~ 0~ 0~
+4 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#23147
+black spiked neckguard~
+a black spiked neckguard~
+A black spiked neckguard lies here.~
+~
+9 0 0 0 0 5 1
+2~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23148
+black steel warmask~
+a black steel warmask~
+A black warmask lies here.~
+~
+9 536870976 0 0 0 65537 1
+3~ 0~ 0~ 0~
+2 1 0
+5 0
+protection good~
+2 2
+0 0 0
+#23149
+black horned helmet~
+a black horned helmet~
+A black helmet lies here.~
+~
+9 4 0 0 0 17 0
+4~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23150
+tunic~
+a tunic~
+A tunic lies here.~
+~
+9 0 0 0 0 9 1
+2~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23151
+wooden staff~
+a wooden staff~
+A staff lies here.~
+~
+5 0 32768 0 0 8193 0
+0~ 0~ 0~ 7~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23152
+leather breeches~
+leather breeches~
+A pair of leather breeches lies here.~
+~
+9 0 0 0 0 33 1
+1~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23153
+pool waterfall~
+a pool~
+The waterfall forms a clear pool here.~
+~
+29 0 0 0 0 0 0
+23154~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23155
+leather backpack~
+a leather backpack~
+A leather backpack lies here.~
+~
+15 0 0 0 0 1025 1
+20~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23160
+gown~
+a lovely dress gown~
+A lovely gown lies here.~
+~
+9 0 0 0 0 9 1
+3~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23161
+rapier~
+a rapier~
+A rapier lies here.~
+~
+5 0 0 0 0 8193 1
+0~ 0~ 0~ 11~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23162
+doublet~
+a doublet~
+A rich doublet lies here.~
+~
+9 0 0 0 0 9 1
+2~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23163
+feathered hat~
+a feathered hat~
+A hat lies here.~
+~
+9 0 0 0 0 17 1
+1~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23164
+black mask~
+a black mask~
+A mask lies here.~
+~
+9 64 0 0 0 65537 3
+2~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+A
+103 -1
+#23165
+black cloak~
+a black cloak~
+A large black cloak is here.~
+~
+9 0 0 0 0 1025 3
+2~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23166
+black tunic~
+a black tunic~
+A tunic lies here.~
+~
+9 0 0 0 0 9 3
+2~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23167
+black boots~
+a pair of black boots~
+A pair of boots lies here.~
+~
+9 0 0 0 0 64 3
+1~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23168
+black breeches~
+black breeches~
+A pair of breeches lies here.~
+~
+9 0 0 0 0 33 3
+1~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23182
+nimbus energy~
+a nimbus of pure energy~
+Fireball lies here.~
+~
+5 64 0 0 0 8193 115
+0~ 0~ 0~ 6~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 100
+A
+19 100
+#23184
+black key~
+a black key~
+A black key lies here.~
+~
+18 0 0 0 0 16385 1
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23185
+inquisitor's robes~
+inquisitor's robes~
+Robes lie here.~
+~
+9 576 0 0 0 1025 15
+2~ 0~ 0~ 0~
+3 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 2
+A
+3 1
+A
+102 -1
+#23186
+golden collar~
+a golden collar~
+A collar lies here.~
+~
+8 4289 16384 0 0 5 1
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 -100
+#23187
+tattered robes~
+tattered robes~
+Robes lie here.~
+~
+13 0 0 0 0 9 1
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23188
+goldenkey~
+a goldenkey~
+A golden key lies here.~
+~
+18 0 0 0 0 5 1
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23189
+pile dust~
+a pile of dust~
+A pile of dust lies here.~
+~
+13 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23190
+dark robe~
+a dark robe~
+A dark robe is here.~
+~
+9 0 0 0 0 9 5
+1~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23192
+cistern~
+a cistern~
+A stone cistern in the wall provides a stream of gushing water.~
+~
+25 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23193
+hard bread~
+a piece of hard bread~
+A piece of hard bread.~
+~
+19 0 0 0 0 1 1
+4~ 0~ 0~ 0~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23194
+strip meat~
+a strip of meat~
+A piece of meat lies here.~
+~
+19 0 0 0 0 1 1
+7~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23195
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23196
+pile coins~
+a pile of coins~
+A pile of coins.~
+~
+20 0 0 0 0 1 1
+5~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23197
+donation box~
+a donation box~
+A donation box hangs next to the door.~
+~
+15 0 0 0 0 0 0
+5~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23199
+shield chaos~
+the shield of Chaos~
+A shield lies here.~
+~
+9 67108928 0 0 0 513 5
+5~ 0~ 0~ 0~
+9 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 2
+A
+1 1
+#0
+
+
+
+#ROOMDATA
+#23101
+Before the Temple of Chaos, Strife, and Injustice~
+~
+~
+You stand before the entrance to an enormous walled compound.  Imposing
+stone walls tower hundreds of feet into the air, and you can see the cloaked
+forms of guards patrolling the crenellations.  Blood red flags hang from the
+battlements, and an aura of gloom and violence hangs heavy in the air.  To
+the east a long, narrow drawbridge spans a deep chasm, in the bottom of
+which runs a dark stream of water.  
+~
+0 131078 0
+Rd     0
+D1
+~
+~
+0 0 23102
+D2
+~
+~
+0 0 17095
+S
+#23102
+The Drawbridge~
+~
+~
+You carefully traverse the narrow wooden drawbridge.  There are no
+handrails, and on either side of the wooden planks is a steep drop into the
+moat.  To the east is an open portcullis leading into the temple complex.  
+~
+0 131074 0
+Rd     0
+D1
+~
+~
+0 0 23103
+D3
+~
+~
+0 0 23101
+S
+#23103
+The Portcullis~
+~
+~
+You stand at the entrance to the huge Temple.  To the east stretches a
+long hallway, while to the north and south lie guardrooms.  You can exit the
+temple to the west.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 23104
+D1
+~
+~
+0 0 23106
+D2
+~
+~
+0 0 23105
+D3
+~
+~
+0 0 23102
+S
+#23104
+A Guard Room~
+~
+~
+A large guardroom constructed of solid stone.  Weapons racks line the
+walls, and arrow slits grant a view of the drawbridge area.  To the south is
+the only exit.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 23103
+S
+#23105
+A Guard Room~
+~
+~
+A large guardroom with arrow slits granting view of the outdoors. 
+Apparently this temple has been built to withstand attacks by large forces
+of men.  To the north lies the entrance to the temple proper.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 23103
+S
+#23106
+The Entry Hall~
+~
+~
+This large stone hallway leads east and west through the temple complex. 
+Crimson banners line the walls, and a feeling of violence emanates from the
+cold stone.  From the east east comes the sound of chanting.  You hear the
+sound of clashing metal from afar; violence is quick to interrupt in the
+Temple, and the gods of Chaos, Strife, and Injustice encourage their
+followers to war incessantly with each other.  
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 23107
+D3
+~
+~
+0 0 23103
+S
+#23107
+The Entry Hall~
+~
+~
+The hall continues east and west through the darkness.  To the west lies
+the entrance to the Temple, while to the east the corridor runs towards a
+large open space.  From the latter direction comes the sound of chanting.  
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 23108
+D3
+~
+~
+0 0 23106
+S
+#23108
+Before the Great Doors~
+~
+~
+You have reached a set of massive bronze doors to the east.  To the north
+and south run slightly smaller corridors, while to the west you can leave
+the Temple.  The sound of chanting comes from the east.  
+~
+0 131086 0
+Rd     0
+D0
+~
+~
+0 0 23111
+D1
+~
+~
+0 0 23109
+D2
+~
+~
+0 0 23110
+D3
+~
+~
+0 0 23107
+S
+#23109
+The Temple Hall~
+~
+~
+You stand at the west end of a massive chamber.  To the east lies a
+massive altar, while to the west you can exit the room.  Hard stone benches
+are lined up here, providing seats for the faithful.  
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 23116
+D3
+~
+~
+0 0 23108
+S
+#23110
+A Hallway~
+~
+~
+The hallway runs south past a series of doors.  To the north is a
+corridor junction before a pair of huge bronze chairs.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23108
+D2
+~
+~
+0 0 23117
+S
+#23111
+A Hallway~
+~
+~
+This hallway runs north from the main temple hall towards a series of
+rooms.  Guttering torches line the walls, filling the place with an evil,
+smoky light.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23112
+D2
+~
+~
+0 0 23108
+S
+#23112
+An Intersection~
+~
+~
+The corridor splits here, heading east, south, and west.  Torches on the
+wall glow with an evil light, and you hear chanting coming from the south.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 23114
+D2
+~
+~
+0 0 23111
+D3
+~
+~
+0 0 23113
+S
+#23113
+A Hallway~
+~
+~
+The hallway ends here at a door to the west.  To the east is a meeting of
+corridors, and beyond that a large stone staircase.  To the north is a large
+tapestry that rustles strangely despite the stillness of the air.  Maybe it
+is hiding something...  
+~
+0 393226 0
+Rd     0
+D0
+~
+tapestry~
+515 0 23188
+D1
+~
+~
+0 0 23112
+D3
+~
+~
+3 0 23126
+S
+#23114
+A Hallway~
+~
+~
+This wide hallway leads east to a stairway and west towards what appears
+to be a barracks.  The decor is macabre; tapestries depict violent battles
+and bizarre rituals, and the symbol of Chaos is prominent.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 23115
+D3
+~
+~
+0 0 23112
+S
+#23115
+The Stairway~
+~
+~
+This wide stone stairway leads up and down.  Priceless paintings hang on
+the wall, and torches in gold sconces provide light.  
+~
+0 393230 0
+Rd     0
+D3
+~
+~
+0 0 23114
+D4
+~
+~
+0 0 23129
+D5
+~
+~
+0 0 23127
+S
+#23116
+Before the Altar~
+~
+~
+You stand before a massive bronze altar decorated with carvings depicting
+war and terror.  A huge red banner with the symbol of Chaos hangs on the
+east wall, and huge braziers cast the chamber into smoky brightness.  A
+small set of stone steps leads up to the dais on which the altar sits.  
+~
+0 393230 0
+Rd     0
+D3
+~
+~
+0 0 23109
+D4
+~
+~
+0 0 23125
+S
+#23117
+A Hallway~
+~
+~
+The hallway runs north and south through the temple.  To the west is a
+large oak door, while to the south you can see a series of other doors.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 23110
+D2
+~
+~
+0 0 23118
+S
+#23118
+A Hallway~
+~
+~
+The hallway continues north and south.  To the west is a large room of
+some sort.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 23117
+D2
+~
+~
+0 0 23120
+D3
+~
+~
+0 0 23119
+S
+#23119
+The Armoury~
+~
+~
+This large room is filled with weapons of cruel aspect.  Here the
+faithful of the Temple may purchase weapons to wield on their quest to bring
+disorder and strife into the world.  
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 23118
+S
+#23120
+A Hallway~
+~
+~
+The hallway continues north and south.  To the east is an open doorway
+leading into the yard, through which you see soldiers drilling.  To the west
+is another room.  
+~
+0 393230 0
+Rd     0
+D0
+~
+~
+0 0 23118
+D1
+~
+~
+0 0 23121
+D3
+~
+~
+0 0 23193
+S
+#23121
+A Training Yard~
+~
+~
+You have entered a large training yard in the temple complex.  Lines of
+recruits are sparring with each other under the watchful eye of instructors,
+who reward each error with a brutal clubbing from their batons.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 23122
+D1
+~
+~
+0 0 23124
+D2
+~
+~
+0 0 23166
+D3
+~
+~
+0 0 23120
+S
+#23122
+A Training Yard~
+~
+~
+You are in the northwest corner of the training yard.  Here bales of hay
+are lined up against the wall, covered with arrows, while intrepid archers
+strive to master the bow.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 23123
+D2
+~
+~
+0 0 23121
+S
+#23123
+The Training Yard~
+~
+~
+You are in the northeast corner of the yard.  A vicious melee has broken
+out among the recruits, who strive to batter each other with practice
+weapons while instructors wade through them, gleefully laying about with
+their batons.  
+~
+0 393218 0
+Rd     0
+D2
+~
+~
+0 0 23124
+D3
+~
+~
+0 0 23122
+S
+#23124
+A Training Yard~
+~
+~
+You are walking through a large training yard in the center of the temple
+complex.  Above you is the open sky, while on all sides are imposing stone
+walls.  New recruits to the cause are being trained here; brutal instructors
+walk about, screaming and smiting about them seemingly at random.  The yard
+stretches to the north and west, while to the east is a stout doorway.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23123
+D1
+~
+door~
+3 23135 23135
+D2
+~
+~
+0 0 23167
+D3
+~
+~
+0 0 23121
+S
+#23125
+The Altar of the Temple of Chaos, Strife, and Injustice~
+~
+~
+You stand on a raised platform in the center of a vast chamber.  Hooded
+forms genuflect to the altar, while macabre chanting fills the air.  A huge
+banner emblazoned with the sign of chaos hangs on the east wall, while
+sulphurous torches fill the room with smoke and a heavy smell of death.  
+~
+0 393226 0
+Rd     0
+D5
+~
+~
+0 0 23116
+S
+#23126
+Barracks~
+~
+~
+This room is filled with rows of cots, and appears to be where the
+soldiers who make up the Temple guard stay.  At the bottom of each bunk are
+stone footlockers; they all seem to be locked shut.  
+~
+0 537264138 0
+Rd     0
+D1
+~
+~
+3 0 23113
+S
+#23127
+Beneath the Temple~
+~
+~
+You stand at the bottom of a stone stairway.  Upwards is the Temple
+proper, while to the north is an area which has been carved out of the
+earth.  
+~
+0 393230 0
+Rd     0
+D0
+~
+~
+0 0 23128
+D4
+~
+~
+0 0 23115
+S
+#23128
+The Dungeon~
+~
+~
+You have entered the feared dungeons of the Temple of Chaos, Strife, and
+Injustice.  Ruled by the insane Inquisitors, the enemies of the faith are
+brought here to meet their end.  The area is dimly lit by torch and brazier,
+and the air is strangely cold.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23180
+D2
+~
+~
+0 0 23127
+S
+#23129
+Top of the Stairs~
+~
+~
+You stand at the top of a large stone staircase.  To the west the
+corridor leads to another, smaller stairway leading up, while to the east it
+makes a turn to the south.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 23131
+D3
+~
+~
+0 0 23130
+D5
+~
+~
+0 0 23115
+S
+#23130
+A Small Stairway~
+~
+~
+A small stone stairway leads up at this point.  To the east the corridor
+leads to the main stairway down.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 23129
+D4
+~
+~
+0 0 23190
+S
+#23131
+A Hallway~
+~
+~
+The hall turns here, heading west and south.  To the west is a large
+stone staircase, leading down.  Occasional shouts echo through the corridors
+as the faithful fight each other for their gods favor.  
+~
+0 393226 0
+Rd     0
+D2
+~
+~
+0 0 23132
+D3
+~
+~
+0 0 23129
+S
+#23132
+A Hallway~
+~
+~
+This hallway runs north and south through the upper floor of the Temple. 
+To the south are a few doors, while to the north the corridor turns left.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 23131
+D2
+~
+~
+0 0 23133
+S
+#23133
+A Hallway~
+~
+~
+The hallway continues north and south.  Garish tapestries line the walls,
+depicting scenes of violence and chaos.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23132
+D2
+~
+~
+0 0 23134
+S
+#23134
+A Hallway~
+~
+~
+You've reached the end of the hallway.  To the east and west are large
+wooden doors.  To the south hangs a huge red tapestry depicting the symbol
+of Chaos.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23133
+D1
+~
+~
+0 0 23176
+D3
+~
+~
+0 0 23175
+S
+#23135
+A Dark Stairway~
+~
+~
+You have entered a dark stairway that leads down into the gloom.  An evil
+stench drifts upward, and the air is cold and dank.  
+~
+0 393742 0
+Rd     0
+D3
+~
+door~
+3 23135 23124
+D5
+~
+~
+0 0 23136
+S
+#23136
+A Staircase~
+~
+~
+The stairway descends into darkness.  You hear a loud clanging sound echo
+from below, and the cold air wafting upwards whispers along the stone walls.
+~
+0 393230 0
+Rd     0
+D5
+~
+~
+0 0 23137
+S
+#23137
+The Bottom of the Stairway~
+~
+~
+You have reached the bottom of the stairs.  An evil-looking corridor
+leads north, while a faint light upwards beckons you; perhaps you should
+ascend to the surface before it is too late...  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23138
+D4
+~
+~
+0 0 23136
+S
+#23138
+A Corridor~
+~
+~
+You are walking through a north-south corridor deep below the surface. 
+The sound of rats skittering through the darkness assails your ears, and a
+fetid stench drifts through the air.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 23139
+D2
+~
+~
+0 0 23137
+S
+#23139
+A Corridor~
+~
+~
+The corridor continues north and south.  In the eastern wall is a small
+alcove.
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 23141
+D1
+~
+~
+0 0 23140
+D2
+~
+~
+0 0 23138
+S
+#23140
+An Alcove~
+~
+~
+This small stone alcove is shrouded in darkness.  Chained to the wall is
+a horrid sight.  
+~
+0 393227 0
+Rd     0
+D3
+~
+~
+0 0 23139
+S
+#23141
+A Turn in the Corridor~
+~
+~
+The corridor turns here, heading west and south.  The darkness is almost
+palpable, and you hear a low, mournful sound echo through the passages.  
+~
+0 393225 0
+Rd     0
+D2
+~
+~
+0 0 23139
+D3
+~
+~
+0 0 23142
+S
+#23142
+Before the Bone Door~
+~
+~
+You stand before a large door constructed out of what appears to be bone.
+On the door are indecipherable runes in gold, and you sense strange magicks
+in the air.  
+~
+0 393231 0
+Rd     0
+D1
+~
+~
+0 0 23141
+D3
+~
+bonedoor~
+87 23141 23143
+S
+#23143
+A Dark Chamber~
+~
+~
+This large chamber is shrouded in darkness.  To the east is an imposing
+door constructed out of what appears to be bone, while to the north is a
+small side passage.  
+~
+0 393227 0
+Rd     0
+D0
+~
+~
+0 0 23144
+D1
+~
+bonedoor~
+87 0 23142
+S
+#23144
+A Hallway~
+~
+~
+This small side passage runs north and south through the darkness.
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23145
+D2
+~
+~
+0 0 23143
+S
+#23145
+A Hallway~
+~
+~
+The hallway suddenly comes to an end at a stone wall.  The dust is thick
+on the floor, and it looks like nobody has been here in years.  
+~
+0 393218 0
+Rd     0
+D2
+~
+~
+0 0 23144
+S
+#23146
+A Chamber of Echoes~
+~
+~
+This large chamber is full of the babble of voices which echo off the
+stone walls.  This room, unlike the first two, is not shielded from the
+communications channels.  Type CHANNELS to see what methods you can use to
+communicate with other players on the MUD.  
+ 
+CHAT is used for general conversation about the MUD.  Type "chat 
+hello" to see how it works.
+ 
+OOC stands for out-of-character chat, and is used to talk about
+non-MUD related things.
+ 
+ASK is used, predictably, to ask questions.  Feel free to use it
+if you run into trouble, and the help files don't help you.
+ 
+You can see what the other channels do by typing HELP CHANNELS.
+ 
+When you are done experimenting with channels, head north.
+~
+0 425986 0
+Rd     0
+D0
+~
+~
+0 0 23147
+D2
+~
+~
+0 0 23194
+S
+#23147
+The Room of Equipment~
+~
+~
+Your character in the game won't get very far without equipment.  You
+should have started with some, type "i" to see what you're carrying ("i"
+being short for inventory).  
+ 
+By typing "eq" (for equipment) you can see what you're actually using.
+ 
+To equip an item in your inventory, type "wear <itemname>".  Note that
+a lot of equipment has level restrictions, and can't be used if you're under
+a certain level.
+ 
+There are several pieces of equipment in the crate here (that is, if
+someone hasn't taken it already).
+ 
+Type "look in crate" to see what's there, then "take <itemname> crate"
+to get it.  If the object was just lying on the ground, you'd type
+"take object" without specificying a container.
+ 
+You can also use "get" instead of "take".  To continue on, go north.
+~
+0 427010 0
+Rd     0
+D0
+~
+~
+0 0 23148
+D2
+~
+~
+0 0 23146
+S
+#23148
+Skills and Spells~
+~
+~
+Type "practice".  This shows you what skills and spells you already know,
+and how many practice sessions you have (practice sessions are used to "buy"
+proficiency in a skill).  You shouldn't have any skills yet, as you have to
+find a teacher first.  You gain practice sessions every time you gain
+experience levels, and access to better skills and spells.  Increased
+experience levels also mean you get more hit points (which means how much
+damage you can take), movement points (how far you can move without stopping
+to rest), and mana (the magical energy you use to cast spells).  
+ 
+Type slist to see what skills and spells you can eventually gain.
+~
+0 425986 0
+Rd     0
+D0
+~
+~
+0 0 23149
+D2
+~
+~
+0 0 23147
+S
+#23149
+Room of Information~
+~
+~
+Type "score" to see your character's characteristics.
+ 
+Type "worth" to see how much experience you need for next level.
+ 
+Type "who" to see who's playing on the MUD.
+ 
+Type "areas" to see what areas are in the game.
+ 
+Type "wizlist" to see the list of game immortals (administrators/builders).
+ 
+And finally, type "weather" to see what the weather's like in the game.
+ 
+Go north for the final instructions.
+~
+0 425992 0
+Rd     0
+D0
+~
+~
+0 0 23173
+D2
+~
+~
+0 0 23148
+S
+#23150
+A Dark Chamber~
+~
+~
+This large chamber is shrouded in darkness.  To the east is an imposing
+door constructed out of what appears to be bone, while to the north is a
+small side passage.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23152
+D1
+~
+bonedoor~
+1 0 23151
+S
+#23151
+A Sunlit Glade~
+~
+~
+What the hell?  Suddenly, you are standing in a beautiful green glade
+deep in a forest.  Trees rise up on all sides of you, while from the east
+you hear the sound of bubbling water.  Birds flit from tree to tree, singing
+happily.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 23153
+S
+#23152
+A Hallway~
+~
+~
+This small passage runs north and south through the darkness.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23152
+D2
+~
+~
+0 0 23150
+S
+#23153
+A Beautiful Waterfall~
+~
+~
+You stand in a small meadow deep in the forest.  A cascade of crystal
+water falls from a stone outcropping, filling the air with soft music.  
+~
+0 393218 0
+Rd     0
+D3
+~
+~
+0 0 23151
+S
+#23154
+Beneath the Pool~
+scream2.wav~
+~
+You enter the pool and sink like a stone .  As you look up at the surface
+you see a beautiful elven face looking down at you, contorted in an evil
+grin.  Suddenly, you feel something grasp your ankle, and you realize with
+horror that you are not alone here.  
+~
+0 268435460 8
+Rd     0
+D4
+~
+~
+0 0 23155
+S
+#23155
+Beneath the Storm~
+~
+~
+You desperately tread water at the surface of a seemingly endless sea. 
+How did you get here?  No time to figure it out; you frantically try to stay
+afloat as a savage storm lashes you with wind and rain.  The hungry sea
+threatens to drag you down.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23156
+D1
+~
+~
+0 0 23157
+D2
+~
+~
+0 0 23157
+D3
+~
+~
+0 0 23156
+S
+#23156
+Beneath the Storm~
+~
+~
+Desperately you hold your head above water as the storm savagely rages. 
+A wave slaps into your face, and water begins to fill your lungs.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23155
+D1
+~
+~
+0 0 23155
+D2
+~
+~
+0 0 23157
+D3
+~
+~
+0 0 23156
+S
+#23157
+Beneath the Storm~
+~
+~
+Your limbs feel like lead, and you suddenly have the urge to sink beneath
+the waves and give in.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23156
+D1
+~
+~
+0 0 23156
+D2
+~
+~
+0 0 23158
+D3
+~
+~
+0 0 23155
+S
+#23158
+Beneath the Storm~
+~
+~
+Frantically you strive to keep your head above the waves as the storm
+lashes you.  Suddnely, you notice a light hanging above the water to the
+east.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23157
+D1
+~
+~
+0 0 23159
+D2
+~
+~
+0 0 23157
+D3
+~
+~
+0 0 23156
+S
+#23159
+A Light~
+~
+~
+You awake with a start.  You are lying on the grass of a courtyard, next
+to a fountain.  Some spray has been hitting you in the face; did that create
+the nightmare of the storm?  Wait!  How did you get here?  Last thing you
+know you were beneath the Temple.  And where did you get these clothes?  
+~
+0 393222 0
+Rd     0
+S
+#23160
+A Light~
+~
+~
+You awake with a start.  You are lying on the grass of a courtyard, next
+to a fountain.  Some spray has been hitting you in the face; did that create
+the nightmare of the storm?  Wait!  How did you get here?  Last thing you
+know you were beneath the Temple.  And where did you get these clothes?
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 23161
+S
+#23161
+A Courtyard~
+~
+~
+You stand in a lovely courtyard.  To the west is a fountain, while a path
+leads north towards a door.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23162
+D3
+~
+~
+0 0 23160
+S
+#23162
+A Courtyard~
+~
+~
+The path ends here at a large, open doorway.  Through it you see a large
+stone ballroom filled with people.  A lovely garden stands by the path,
+filling the air with warm fragrance.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23163
+D2
+~
+~
+0 0 23161
+S
+#23163
+A Ballroom ~
+~
+~
+This large ballroom is filled with colorfully-dressed revellers, dancing
+to the strangely frantic music that pulsates throughout the chamber.  The
+dancers ignore you completely, intent on their dance, and a sense of
+unreality pervades the room.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23164
+D2
+~
+~
+0 0 23162
+S
+#23164
+The Ballroom~
+~
+~
+At the northern end of the ballroom the action is a bit more subdued. 
+Tall, ethereal-looking figures in fancy dress whirl about to the music, and
+the tapestries on the wall seem to glow with an unearthly light.  There is a
+small side room to the west.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 23163
+D3
+~
+~
+0 0 23165
+S
+#23165
+A Stone Chamber~
+~
+~
+What?  You turn around to find the way you came in blocked by a granite
+wall.  The room is strangely cold, and the stone bricks are crude and aged. 
+You seem to be in a totally new place.  
+~
+0 393230 0
+Rd     0
+S
+#23166
+A Training Yard~
+~
+~
+This is the southwestern corner of the training yard.  All about you are
+new recruits, battling to win a position with the troops of the temple. 
+Well-hacked training dummies hang on the south wall.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 23121
+D1
+~
+~
+0 0 23167
+S
+#23167
+A Training Yard~
+~
+~
+This is the southeastern corner of the training yard.  Here a set of
+wooden targets have been set up, bristling with the arrows, spears, and
+throwing knives of the recruits.  To the north the yard runs past a door.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23124
+D3
+~
+~
+0 0 23166
+S
+#23168
+Secret Chamber~
+~
+~
+You stand in a plushly furnished chamber.  
+~
+0 434694 0
+Rd     0
+S
+#23170
+A dark alleyway~
+~
+~
+Again you have been brought somewhere else without your knowledge.  You
+stand in a dark alley; to the west is what appears to be a street.  
+~
+0 393218 0
+Rd     0
+D3
+~
+~
+0 0 23171
+S
+#23171
+A Street~
+~
+~
+You stand on a barren, windswept street.  Large stone buildings stand on
+all sides looming over you.  Apparently this city has been deserted for many
+years.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23172
+S
+#23172
+A Street~
+~
+~
+The barren, windswept street continues north and south through the empty
+city.  Vacant windows look down at the street, and the only sound is the
+wind through the empty buildings.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23178
+D2
+~
+~
+0 0 23171
+S
+#23173
+Halls of Combat~
+~
+~
+You actually gain experience through combat.  Some mobs (mobiles, or
+monsters) will attack you right away, some you can attack (by typing "kill
+<mobname>" or "attack <mobname>".  While in combat you can use various
+combat skills and spells to conquer your enemy.  
+ 
+Combat's too big a topic to go into here, so you should read the help
+files carefully.  Type "help" then look under the COMBAT section.
+ 
+Alright, you're ready to begin the game.
+ 
+From now on you'll officially be in the game, and room descriptions
+will actually describe the room rather than give you gameplay instructions.
+ 
+Remember to use the help files, and don't be shy about asking other
+players if you're confused about something.
+ 
+Finally, most commands can be abbreviated, so you don't have to type
+out everything in full everytime you use it.  Experiment.
+ 
+Go down now to enter the combat training area of the Temple of Chaos,
+Strife and Injustice.  And have fun.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 23149
+D5
+~
+~
+0 0 23121
+S
+#23175
+The Training Master~
+~
+~
+This large chamber holds the Temple's training center.  Esoteric books
+line the walls, and cloaked acolytes sit at stone tables, studying.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 23134
+S
+#23176
+The Library~
+~
+~
+In this huge room are several thousand books in all manners of languages.
+You may also learn from the language master.  
+~
+0 393226 0
+Rd     0
+D3
+~
+~
+0 0 23134
+S
+#23178
+Before the Temple~
+~
+~
+The street ends here, before a huge, vacant temple marked with the sign
+of Chaos.  The wind blows through the city with a mourning howl, and you
+feel a great sadness weighing you down.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23179
+D2
+~
+~
+0 0 23172
+S
+#23179
+The Temple of Chaos, Strife and Injustice~
+~
+~
+You stand in the enormous abandoned Temple.  Rubble is strewn about the
+floor, and anything of value has been looted long before.  The only thing
+remaining is a huge bronze altar, far too heavy to carry away, and before it
+stands a frightening sight.  
+~
+0 132100 0
+Rd     0
+S
+#23180
+The Dungeon~
+~
+~
+The dungeon complex stretches out on all sides.  Implements of torture
+hang from the walls, along with empty, red-stained shackles.  From the north
+are the sounds of clanging, and the occasional shout rips through the air.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 23183
+D1
+~
+~
+0 0 23182
+D2
+~
+~
+0 0 23128
+D3
+~
+~
+0 0 23181
+S
+#23181
+The Dungeon~
+~
+~
+Iron manacles are bolted into the walls.  Some are occupied: by rotting
+skeletons.  Falling into the hands of the Inquisitor of the Temple usually
+means a death sentence.  You can enter the main dungeon complex to the east.
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 23180
+S
+#23182
+The Dungeon~
+~
+~
+Vicious-looking implements hang from the walls, and red-hot braziers are
+strewn about.  To the west the dungeon continues, while to the east your way
+is blocked by a cell door.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+7 23188 23186
+D3
+~
+~
+0 0 23180
+S
+#23183
+Before a Black Door~
+~
+~
+You stand before a black door set into the stone wall.  The feeling of
+evil is overpowering here, and the stench of death is heavy in the air.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+39 23184 23184
+D2
+~
+~
+0 0 23180
+S
+#23184
+The Inquisitor's Court~
+~
+~
+You stand in a place of great evil and injustice.  In this dark chamber
+the High Inquisitor of the Temple judges those brought before him with
+cruelty and caprice.  
+~
+0 393226 0
+Rd     0
+D2
+~
+~
+39 23184 23183
+S
+#23185
+The Preparation Room~
+~
+~
+You stand in a large, empty stone chamber deep beneath the Temple of
+Chaos, Strife, and Injustice.  You have come here to dedicate your life to
+those fell principles, so prepare yourself for battle.  
+ 
+If you've never played on a MUD before, or want to learn more about
+StormGate in particular, head north.  If you've played before, and want
+to jump right in, head down.
+ 
+In either case, you should definitely check out our web page in order
+to get the supporting materials (the game map, sound files, etc.)
+ 
+You can find it at http://members.rogers.com/stormgate
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 23194
+D5
+~
+~
+0 0 23121
+S
+#23186
+A cell~
+~
+~
+This large cell is more ornate than the rest of the dungeon.  A heap of
+straw provides a bed for the occupant, while a rusty bowl in the corner
+provides water.  A strange glow illuminates the cell, and you sense strange
+magicks in the air.  
+~
+0 393226 0
+Rd     0
+D3
+~
+~
+7 0 23182
+S
+#23187
+The Entrance Hall~
+~
+~
+The floor of this large room is covered with sand.  From a hallway to the
+east you hear the sounds of grunts and clashing metal.  
+~
+0 393230 0
+Rd     0
+D1
+~
+~
+0 0 23197
+D3
+~
+~
+0 0 23188
+S
+#23188
+A Stairway~
+~
+~
+This tiny dark chamber holds only a narrow staircase leading up into the
+darkness.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 23187
+D2
+~
+~
+515 0 23113
+D4
+~
+~
+0 0 23189
+S
+#23189
+A Secret Room~
+~
+~
+A small stone stairway leads downwards.  To the south is the secret door
+through which you came in.  
+~
+0 393218 0
+Rd     0
+D5
+~
+~
+0 0 23188
+S
+#23190
+Top of the Stairs~
+~
+~
+You have reached the top of a narrow flight of stone stairs.  To the
+north a small corridor slants upward.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 23191
+D5
+~
+~
+0 0 23130
+S
+#23191
+A small corridor~
+~
+~
+The small corridor runs south towards the stairway and east into the
+tower.  The floor seems to be slanted upwards.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 23192
+D2
+~
+~
+0 0 23190
+S
+#23192
+The Tower~
+~
+~
+This small tower juts out of the top of the Temple, providing a view of
+the barren countryside.  The stones are worn down with age, and whatever
+glass filled the window panes was lost long ago.  The wind cuts through the
+room like a knife.  
+~
+0 393226 0
+Rd     0
+D3
+~
+~
+0 0 23191
+S
+#23193
+A Dining Hall~
+~
+~
+This large room is filled with stone tables and benches, and seems to be
+dedicated to serving the dining needs of the faithful.  The food doesn't
+appear too appetizing.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 23120
+S
+#23194
+A Stone Passage~
+~
+~
+The most important command to know in the beginning is HELP.  Type help
+to get a list of possible help topics, then help <topicname> to access that
+particular help file.  You can head north when you're done experimenting
+with help.  
+~
+0 8814602 0
+Rd     0
+D0
+~
+~
+0 0 23146
+D2
+~
+~
+0 0 23185
+S
+#23195
+The Arena~
+~
+~
+The arena stretches around you.  The sound of fighting fills the air as
+dark forms struggle against each other in the shadowy torchlight.  
+~
+0 537264138 0
+Rd     0
+D1
+~
+~
+0 0 23196
+D2
+~
+~
+0 0 23197
+S
+#23196
+The Arena~
+~
+~
+The spectators look down up on you impassively as you struggle for your
+life here.  The arena floor is churned sand mixed with blood.  
+~
+0 537264138 0
+Rd     0
+D2
+~
+~
+0 0 23198
+D3
+~
+~
+0 0 23195
+S
+#23197
+The Arena~
+~
+~
+You are in the massive arena that lies beneath the Temple.  All about you
+are brawling combatants, while above you are stands holding the spectators. 
+In here there is only one rule: kill or be killed.  
+~
+0 537264138 0
+Rd     0
+D0
+~
+~
+0 0 23195
+D1
+~
+~
+0 0 23198
+D3
+~
+~
+0 0 23187
+S
+#23198
+The Arena~
+~
+~
+You stand in the southeast corner of the arena.  Scattered bits and
+pieces of broken weapons lie in the sand; the combat here is fierce and
+unrelenting.  
+~
+0 537264138 0
+Rd     0
+D0
+~
+~
+0 0 23196
+D3
+~
+~
+0 0 23197
+S
+#23199
+A Secret Armoury~
+~
+~
+This large room is decorated with tapestries depicting the symbol of
+Chaos.  Racks of weapons and armor line the walls, and various pieces of
+equipment are scattered about.  Some of it looks familiar...  
+To the north is a carefully hidden door.
+~
+0 425998 0
+Rd     0
+D0
+~
+tapestry~
+3 0 23134
+S
+#0
+
+
+
+#SPECIALS
+M 23125 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 23115 1 23104
+E 0 23110 0 20
+M 0 23110 2 23106
+M 0 23114 1 23107
+M 0 23114 2 23107
+O 0 23197 0 23109
+P 0 23196 0 23197
+M 0 23114 1 23110
+M 0 23117 1 23110
+E 0 23112 0 20
+M 0 23110 2 23110
+M 0 23110 1 23110
+M 0 23114 1 23112
+M 0 23133 2 23116
+M 0 23133 1 23116
+M 0 23133 1 23117
+E 0 23190 0 5
+E 0 23117 0 13
+M 0 23119 1 23119
+G 0 23110 0
+G 0 23111 0
+G 0 23112 0
+G 0 23113 0
+G 0 23113 0
+G 0 23115 0
+G 0 23117 0
+M 0 23117 1 23120
+E 0 23117 0 13
+M 0 23121 1 23121
+M 0 23122 1 23122
+E 0 23115 0 15
+E 0 23122 0 20
+M 0 23122 1 23122
+E 0 23122 0 20
+E 0 23125 0 16
+E 0 23122 0 20
+M 0 23122 1 23122
+M 0 23123 1 23123
+M 0 23122 1 23123
+E 0 23115 0 15
+E 0 23122 0 20
+M 0 23122 1 23123
+E 0 23122 0 20
+M 0 23122 1 23124
+E 0 23122 0 20
+E 0 23115 0 15
+M 0 23122 1 23124
+E 0 23129 0 15
+E 0 23122 0 20
+M 0 23125 1 23125
+E 0 23125 0 16
+M 0 23114 1 23129
+M 0 23117 1 23129
+E 0 23130 0 20
+M 0 23115 1 23131
+E 0 23130 0 20
+M 0 23114 1 23133
+M 0 23135 1 23135
+G 0 23135 0
+M 0 23152 2 23138
+M 0 23152 2 23138
+O 0 23140 0 23140
+P 0 23141 0 23140
+M 0 23152 1 23140
+M 0 23152 1 23140
+M 0 23152 1 23141
+M 0 23152 2 23142
+M 0 23143 1 23143
+O 0 23143 0 23143
+O 0 23142 0 23147
+P 0 23150 0 23142
+P 0 23151 0 23142
+P 0 23152 0 23142
+P 0 23155 0 23142
+O 0 23153 0 23153
+M 0 23153 1 23153
+M 0 23154 1 23154
+M 0 23159 1 23159
+M 0 23163 1 23163
+E 0 23166 0 5
+E 0 23164 0 8
+E 0 23165 0 16
+E 0 23167 0 12
+E 0 23161 0 20
+M 0 23122 1 23166
+E 0 23129 0 15
+E 0 23122 0 20
+M 0 23122 1 23167
+E 0 23122 0 20
+E 0 23187 0 5
+M 0 23175 1 23175
+M 0 23176 1 23176
+M 0 23179 1 23179
+M 0 23181 2 23181
+M 0 23183 1 23183
+E 0 23130 0 20
+E 0 23113 0 5
+G 0 23184 0
+G 0 23188 0
+M 0 23184 1 23184
+E 0 23185 0 16
+M 0 23180 1 23184
+E 0 23190 0 5
+M 0 23186 1 23186
+E 0 23187 0 5
+E 0 23186 0 3
+M 0 23187 1 23187
+M 0 23115 1 23190
+E 0 23112 0 20
+M 0 23115 2 23192
+E 0 23130 0 20
+E 0 23113 0 5
+M 0 23114 1 23192
+O 0 23192 0 23193
+M 0 23193 1 23193
+G 0 23193 0
+G 0 23194 0
+M 0 23195 2 23195
+E 0 23145 0 11
+M 0 23197 1 23196
+E 0 23144 0 20
+M 0 23196 1 23197
+E 0 23139 0 20
+E 0 23146 0 14
+M 0 23197 1 23198
+E 0 23144 0 20
+E 0 23148 0 8
+M 0 23195 1 23198
+E 0 23149 0 6
+S
+
+
+
+#SHOPS
+23119 5 9 0 0 0 120 70 8 23
+23193 0 0 0 0 0 100 100 7 20
+0
+
+
+
+#$

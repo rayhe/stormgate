@@ -1,0 +1,2355 @@
+#AREADATA
+Name        { GUILD} Virtue Guildhouse~
+Builders    None~
+VNUMs       16001 16200
+Security    100
+Recall      16002
+Flags       272
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      &BThe Guildhouse belltower rings in the distance.~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#16001
+sign~
+a sign~
+A sign is planted here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Virtue Guildhouse, still under construction.  Feel free to wander.
+~
+#16145
+null~
+Null~
+Null~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#16001
+Virtue Guildhouse Entrance~
+~
+~
+You have entered the magnificant front hall of the Virtue Guildhouse,
+owned by Dumax.  This immense hall has 4 black pillars stretching from floor
+to ceiling.  They have several artworks carved into each of them, depicting
+great battles or other such heroic acts.  A door lies on the northern wall,
+leading deeper into the Guildhouse, and a second door lies on the south
+wall, leading outside.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 16002
+D2
+~
+~
+3 0 25019
+S
+#16002
+Entrance Hallway~
+~
+~
+You have entered the main hallway.  It can be seen leading to the east or
+west.  A door lies on the south wall, leading to the entrance.  A large
+archway leads off to the north, opening into a rather large room.  The
+stonework of this keep is quite well done, most likely by the finest of
+dwarves.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 16018
+D1
+~
+~
+0 0 16003
+D2
+~
+~
+3 0 16001
+D3
+~
+~
+0 0 16017
+S
+#16003
+Entrance Hallway~
+~
+~
+You are walking along the southern hallway, under its tall ceiling.  The
+elaborate designs built into the walls show the true patients that goes into
+building such a masterpiece of this is truly remarkable.  A window lies in
+the north wall, with a humble view of the garden.  The hallway continues to
+the east and to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16004
+D3
+~
+~
+0 0 16002
+S
+#16004
+Entrance Hallway~
+~
+~
+You are walking in the Virtue Guildhouse main hallway, and have come to a
+corner.  The hallway north ends a short ways away, leading to the outside. 
+Small windows on the inside of the corner show the beautiful garden
+contained within.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16005
+D3
+~
+~
+0 0 16003
+S
+#16005
+Entrance Hallway~
+~
+~
+You are walking along the entrance hallway in Virtue Guildhouse.  The
+beautiful artwork hanging on its walls depicts a serene scene.  The west
+side shows a before shot of the grounds, while the east side shows an
+aftershot.  You can go north or south from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16006
+D2
+~
+~
+0 0 16004
+S
+#16006
+Entrance Hallway~
+~
+~
+You have come to the entrance to a hallway, which lies to the south
+through an archway.  To the north, a massive structure sits on the ground. 
+Its immense two story walls are menacing looking in this serene setting. 
+The garden can be seen to the west, but it is unaccessable from here due to
+foliage.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16007
+D2
+~
+~
+0 0 16005
+S
+#16007
+Entrance Path~
+~
+~
+You are walking along a light path.  You can see twin drawbridges to the
+north and northwest, which lead to the Virtue Guildhouse.  A hallway can be
+seen to the south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16008
+D2
+~
+~
+0 0 16006
+S
+#16008
+Entrance Path~
+~
+~
+You are walking along a path.  A small stone wall lies to the south,
+blocking in the garden.  A wooden drawbridge lies to the north of here,
+leading to the Guildhouse.  Dumax has spared no expense in creating this
+elaborate structure.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16029
+D2
+~
+~
+0 0 16007
+D3
+~
+~
+0 0 16009
+S
+#16009
+Entrance Path~
+~
+~
+You are walking along the main path which leads to the Guildhouse.  A
+small garden lies to the south, its smells and sounds blissfully echoing
+through your ears.  A large moat lies to the north, with the massive
+Guildhouse resting on the other side.  This path continues east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16008
+D3
+~
+~
+0 0 16010
+S
+#16010
+Entrance Path~
+~
+~
+You are walking along the main pathway of the keep.  Small dustclouds
+whisk at your feet as you walk, while the sounds of the moat can be heard to
+the north.  The path continues to the east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16009
+D3
+~
+~
+0 0 16011
+S
+#16011
+Entrance Path~
+~
+~
+You are walking along the entrance path.  A small wall blocks your way
+into the garden to the south, but you can see its beautiful nature in full
+force.  The moat churns away to the north.  The path continues to the east
+or west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16010
+D3
+~
+~
+0 0 16012
+S
+#16012
+Entrance Path~
+~
+~
+You are walking along a path.  A very thick wooden drawbridge rests to
+the north, imbedded in the ground with its weight.  A path leads to the
+east, following the moat and small garden wall, while the same path also
+leads south, to an archway.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16027
+D1
+~
+~
+0 0 16011
+D2
+~
+~
+0 0 16013
+S
+#16013
+Entrance Path~
+~
+~
+You are walking along the entrance path.  A small hallway can be seen to the
+south, while one of the main drawbridges can be seen to the north.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16012
+D2
+~
+~
+0 0 16014
+S
+#16014
+Entrance Hallway~
+~
+~
+You are walking along the main hallway.  Two archways are here, one
+leading west and down a slope.  The other leads north, also outside, towards
+the main guildhouse.  The hallway stretches south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16013
+D2
+~
+~
+0 0 16015
+D3
+~
+~
+0 0 16055
+S
+#16015
+Entrance Hallway~
+~
+~
+You are walking through the main entrance hallway of the Virtue
+Guildhouse.  A large painting hangs on the west wall, depicting the
+legendary Amulet of the Lost.  The hallway continues to the north and south.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16014
+D2
+~
+~
+0 0 16016
+S
+#16016
+Entrance Hallway~
+~
+~
+You are walking along the main entrance hallway of the guildhouse.  Its
+large walls shining brilliantly under the light.  The garden can be seen to
+the northeast, through a window.  The hallway continues north and east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16015
+D1
+~
+~
+0 0 16017
+S
+#16017
+Entrance Hallway~
+~
+~
+You are walking through the entrance hallway.  The main entrance can be
+seen directly to the east of you, the twin doors forever open.  The hallway
+continues east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16002
+D3
+~
+~
+0 0 16016
+S
+#16018
+The Garden~
+~
+~
+You have entered the garden.  A small winding path twists and turns
+through the garden, with small flowers scenting the air.  Large trees,
+bushes, shrubs, and all manor of small creatures habit this garden.  The
+path goes in every direction, while south exits the garden.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16026
+D1
+~
+~
+0 0 16019
+D2
+~
+~
+0 0 16002
+D3
+~
+~
+0 0 16025
+S
+#16019
+The Garden~
+~
+~
+You are walking through the garden.  Small birds tweet at above your
+head, as they whistle quietly in their nests.  Tiny insects scurry about,
+minding their own business.  The path leads to the north and west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16020
+D3
+~
+~
+0 0 16018
+S
+#16020
+The Garden~
+~
+~
+You are walking through the tranquil garden.  You can hear the bubbling
+of water to the west of here.  The bright and vibrant colours of the flowers
+catch your eye as you walk.  The path continues to the north, south and
+west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16021
+D2
+~
+~
+0 0 16019
+D3
+~
+~
+0 0 16026
+S
+#16021
+The Garden~
+~
+~
+You are at the northeast corner of a beautiful garden.  You can see a
+small wall to the north, separating the garden and the entrance path. 
+Sounds of small animals can be heard seemingly from every direction.  You
+can travel south or west from here.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16020
+D3
+~
+~
+0 0 16022
+S
+#16022
+The Garden~
+~
+~
+You are walking through the garden.  A small wall rests on the ground to
+the north, keeping the garden contained.  The sounds and smells of this
+garden are magnificant, and very relaxing.  The path continues to the east,
+south and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16021
+D2
+~
+~
+0 0 16026
+D3
+~
+~
+0 0 16023
+S
+#16023
+The Garden~
+~
+~
+You are at the northwest corner of the garden.  A large tree is here, its
+leaves rustling gently in the breeze.  The path continues to the east or
+south.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16022
+D2
+~
+~
+0 0 16024
+S
+#16024
+The Garden~
+~
+~
+You are walking through the garden of Virtue.  Water can be heard
+bubbling quietly to the east, while the path winds slowly to the north, east
+and south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16023
+D1
+~
+~
+0 0 16026
+D2
+~
+~
+0 0 16025
+S
+#16025
+The Garden~
+~
+~
+You are walking through the garden in the Virtue Guildhouse.  The path
+twists and turns ever so slightly through the bushes, trees and brush.  It
+leads to the north and east from here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16024
+D1
+~
+~
+0 0 16018
+S
+#16026
+The Garden Fountain~
+~
+~
+You have arrived at the garden fountain.  Four benches rest against the
+walls of the fountain, one facing each cardinal direction.  The fountain
+itself is shaped like a white rose, made of solid ivory.  Such a beautiful
+sight.  The paths lead off in every direction.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16022
+D1
+~
+~
+0 0 16020
+D2
+~
+~
+0 0 16018
+D3
+~
+~
+0 0 16024
+S
+#16027
+On The Drawbridge~
+~
+~
+You are walking along the western drawbridge.  Looking over the side you can see the water
+only a foot below the bridge.  Its waters churn restlessly, but not violently.  The immense
+structure of the Guildhouse lies to the north, across this huge drawbridge.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16028
+D2
+~
+~
+0 0 16012
+S
+#16028
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16032
+D2
+~
+~
+0 0 16027
+S
+#16029
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16030
+D2
+~
+~
+0 0 16008
+S
+#16030
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16036
+D2
+~
+~
+0 0 16029
+S
+#16031
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16054
+D1
+~
+~
+0 0 16032
+S
+#16032
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16033
+D2
+~
+~
+3 0 16028
+D3
+~
+~
+0 0 16031
+S
+#16033
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16034
+D3
+~
+~
+0 0 16032
+S
+#16034
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16035
+D3
+~
+~
+0 0 16033
+S
+#16035
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16094
+D1
+~
+~
+0 0 16036
+D3
+~
+~
+0 0 16034
+S
+#16036
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16037
+D2
+~
+~
+3 0 16030
+D3
+~
+~
+0 0 16035
+S
+#16037
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16038
+D3
+~
+~
+0 0 16036
+S
+#16038
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16039
+D2
+~
+~
+0 0 16037
+S
+#16039
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16040
+D2
+~
+~
+0 0 16038
+S
+#16040
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16041
+D2
+~
+~
+0 0 16039
+S
+#16041
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16042
+D2
+~
+~
+0 0 16040
+S
+#16042
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16043
+D2
+~
+~
+0 0 16041
+S
+#16043
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16042
+D3
+~
+~
+0 0 16044
+S
+#16044
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16043
+D3
+~
+~
+0 0 16045
+S
+#16045
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16044
+D2
+~
+~
+3 0 16082
+D3
+~
+~
+0 0 16046
+S
+#16046
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16045
+D3
+~
+~
+0 0 16047
+S
+#16047
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16046
+D2
+~
+~
+3 0 16072
+D3
+~
+~
+0 0 16048
+S
+#16048
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16047
+D3
+~
+~
+0 0 16049
+S
+#16049
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16048
+D2
+~
+~
+0 0 16050
+D4
+~
+~
+0 0 16096
+S
+#16050
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16049
+D2
+~
+~
+0 0 16051
+S
+#16051
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16050
+D2
+~
+~
+0 0 16052
+S
+#16052
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16051
+D2
+~
+~
+0 0 16053
+S
+#16053
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16052
+D2
+~
+~
+0 0 16054
+S
+#16054
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16053
+D1
+~
+~
+3 0 16079
+D2
+~
+~
+0 0 16031
+S
+#16055
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16014
+D3
+~
+~
+0 0 16056
+S
+#16056
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16055
+D3
+~
+~
+0 0 16057
+S
+#16057
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16056
+D3
+~
+~
+0 0 16058
+S
+#16058
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16065
+D1
+~
+~
+0 0 16057
+D2
+~
+~
+0 0 16061
+D3
+~
+~
+0 0 16059
+S
+#16059
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16064
+D1
+~
+~
+0 0 16058
+D2
+~
+~
+0 0 16067
+D3
+~
+~
+0 0 16060
+S
+#16060
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16063
+D1
+~
+~
+0 0 16059
+D3
+~
+~
+0 0 16066
+S
+#16061
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16058
+D1
+~
+~
+0 0 16068
+D2
+~
+~
+0 0 16062
+S
+#16062
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16061
+D2
+~
+~
+0 0 16070
+D3
+~
+~
+0 0 16069
+S
+#16063
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16060
+S
+#16064
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16059
+S
+#16065
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16058
+S
+#16066
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16060
+S
+#16067
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16059
+S
+#16068
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 16061
+S
+#16069
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16062
+S
+#16070
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16062
+S
+#16071
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16072
+D2
+~
+~
+0 0 16073
+S
+#16072
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16047
+D2
+~
+~
+0 0 16074
+D3
+~
+~
+0 0 16071
+S
+#16073
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16071
+D1
+~
+~
+0 0 16074
+D2
+~
+~
+0 0 16075
+S
+#16074
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16072
+D2
+~
+~
+0 0 16076
+D3
+~
+~
+0 0 16073
+S
+#16075
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16073
+D1
+~
+~
+0 0 16076
+S
+#16076
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16074
+D2
+~
+~
+3 0 16078
+D3
+~
+~
+0 0 16075
+S
+#16077
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16078
+S
+#16078
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16076
+D2
+~
+~
+3 0 16080
+D3
+~
+~
+0 0 16077
+S
+#16079
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16080
+D3
+~
+~
+3 0 16054
+S
+#16080
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16078
+D1
+~
+~
+3 0 16093
+D3
+~
+~
+0 0 16079
+S
+#16081
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16082
+D2
+~
+~
+0 0 16084
+S
+#16082
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16045
+D1
+~
+~
+0 0 16083
+D2
+~
+~
+0 0 16085
+D3
+~
+~
+0 0 16081
+S
+#16083
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16086
+D3
+~
+~
+0 0 16082
+S
+#16084
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16081
+D1
+~
+~
+0 0 16085
+D2
+~
+~
+0 0 16087
+S
+#16085
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16082
+D1
+~
+~
+0 0 16086
+D2
+~
+~
+0 0 16088
+D3
+~
+~
+0 0 16084
+S
+#16086
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16083
+D2
+~
+~
+0 0 16089
+D3
+~
+~
+0 0 16085
+S
+#16087
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16084
+D1
+~
+~
+0 0 16088
+D2
+~
+~
+0 0 16090
+S
+#16088
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16085
+D1
+~
+~
+0 0 16089
+D2
+~
+~
+0 0 16091
+D3
+~
+~
+0 0 16087
+S
+#16089
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16086
+D2
+~
+~
+0 0 16092
+D3
+~
+~
+0 0 16088
+S
+#16090
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16087
+D1
+~
+~
+0 0 16091
+D2
+~
+~
+0 0 16093
+S
+#16091
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16088
+D1
+~
+~
+0 0 16092
+D2
+~
+~
+0 0 16094
+D3
+~
+~
+0 0 16090
+S
+#16092
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16089
+D2
+~
+~
+0 0 16095
+D3
+~
+~
+0 0 16091
+S
+#16093
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16090
+D1
+~
+~
+0 0 16094
+D3
+~
+~
+3 0 16080
+S
+#16094
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16091
+D1
+~
+~
+0 0 16095
+D2
+~
+~
+3 0 16035
+D3
+~
+~
+0 0 16093
+S
+#16095
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16092
+D3
+~
+~
+0 0 16094
+S
+#16096
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16097
+D2
+~
+~
+0 0 16119
+D5
+~
+~
+0 0 16049
+S
+#16097
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16098
+D3
+~
+~
+0 0 16096
+S
+#16098
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16099
+D3
+~
+~
+0 0 16097
+S
+#16099
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16100
+D3
+~
+~
+0 0 16098
+S
+#16100
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16101
+D3
+~
+~
+0 0 16099
+S
+#16101
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16102
+D3
+~
+~
+0 0 16100
+S
+#16102
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16103
+D3
+~
+~
+0 0 16101
+S
+#16103
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16102
+D2
+~
+~
+0 0 16105
+S
+#16105
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16103
+D2
+~
+~
+0 0 16106
+S
+#16106
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16105
+D2
+~
+~
+0 0 16107
+D3
+~
+~
+3 0 16124
+S
+#16107
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16106
+D2
+~
+~
+0 0 16108
+S
+#16108
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16107
+D3
+~
+~
+0 0 16109
+S
+#16109
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16108
+D3
+~
+~
+0 0 16110
+S
+#16110
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16109
+D3
+~
+~
+0 0 16111
+S
+#16111
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16110
+D3
+~
+~
+0 0 16112
+S
+#16112
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16111
+D3
+~
+~
+0 0 16113
+S
+#16113
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16112
+D3
+~
+~
+0 0 16114
+S
+#16114
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16115
+D1
+~
+~
+0 0 16113
+S
+#16115
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16116
+D2
+~
+~
+0 0 16114
+S
+#16116
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16117
+D1
+~
+~
+3 0 16120
+D2
+~
+~
+0 0 16115
+S
+#16117
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16118
+D2
+~
+~
+0 0 16116
+S
+#16118
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16119
+D2
+~
+~
+0 0 16117
+S
+#16119
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16096
+D2
+~
+~
+0 0 16118
+S
+#16120
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16121
+D3
+~
+~
+3 0 16116
+S
+#16121
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16122
+D2
+~
+~
+3 0 16125
+D3
+~
+~
+0 0 16120
+S
+#16122
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 16123
+S
+#16123
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16124
+D2
+~
+~
+3 0 16126
+S
+#16124
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 16106
+D3
+~
+~
+0 0 16123
+S
+#16125
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16121
+S
+#16126
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 16123
+S
+#16200
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 16001 0 16001
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

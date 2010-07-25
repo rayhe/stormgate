@@ -1,0 +1,4309 @@
+#AREADATA
+Name        { ALL }  LOJ Temple         Ningauble~
+Builders    Ningauble Boraxus~
+VNUMs       23001 23100
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     Ningauble~
+Llevel      0
+Ulevel      0
+Sounds      The temple's halls ring with the happy voices of the gathered masses.~
+End
+
+
+
+#MOBILES
+#23001
+advocate lauren cartwright~
+The High Advocate~
+High Advocate Lauren Cartwright stands here greeting visitors.
+~
+The High Advocate is tall and fair.  She is quick to smile, and her laugh
+brightens the room.  Long blond hair frames her face and cascades over her
+shoulders.  As your gaze moves to take in Lauren's eyes, you mark that they
+are not only stunningly beatuiful, but beyond that they are intelligent, and
+hard.  You can see from those eyes, this is not a woman to be taken lightly.
+~
+3 16793728 262164 0 3 1000 S
+110 1 220 220 30001 30001d0+0 0d0+0
+1100 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+nod $n
+say Hail and well met $n!  Welcome to the Temple
+say of Law, Order and Justice.
+if level($n) < 6
+say You look to be new around here $n so I'll 
+say give you a few pointers.  If this is your very 
+say first adventure here you may want to type 
+say HELP to get a list of topics you can get help 
+say with.  A great deal of information and advice 
+say can be had by typing HELP <TOPIC>.  I can 
+say offer you some help as well.  Say HELP and 
+say I'll see what I can do.
+smile
+endif
+endif
+~
+>speech_prog help~
+if ispc($n)
+if level($n) < 6
+nod
+say Now you've got it $n.
+say Lots of people here will talk to you if you 
+say know the right things to say.  To make it 
+say easy for you, we in the temple will let you 
+say know what words we'll respond to by saying 
+say them in BOLD letters.
+smile
+say I, for example, have more I can tell you about 
+say the TEMPLE, our RELIGION and the PEOPLE 
+say you might like to meet while you're visiting us.
+endif
+if level($n) > 6
+shake
+say I don't think that there's much I can tell you at 
+say this point which would help you.
+endif
+endif
+~
+>speech_prog temple~
+if ispc($n)
+say The temple was constructed long ago as a tribute 
+say to our Lord, VANCERIL.  Donations poured in
+say from every land, for the people knew the valor of 
+say our Lord.  The finest masons toiled for well over 
+say a century, using only the finest of marbles.  In 
+say the end, I think they managed a fitting trubute. 
+say Wouldn't you agree?
+endif
+~
+>speech_prog greetings hail hi hello~
+if ispc($n)
+say Greetings $n.  If you have any questions 
+say about the TEMPLE, the PEOPLE here, or our 
+say RELIGION, just ask.
+Endif
+~
+>speech_prog halls hall~
+if ispc($n)
+say The TEMPLE is divided into a series of HALLS.  
+Say We are in The HALL of WELCOME, where 
+Say visitors to the temple are greeted.  At the western
+Say end of this HALL lies The HALL of LAWS.  At the 
+Say eastern end of this HALL lies The HALL of JUSTICE.
+say North of where we're standing is The HALL of ORDER.
+say Beyond those, in the heart of the TEMPLE lies the 
+say HALL of WORSHIP, where the people receive 
+say VANCERIL's BLESSINGS.  If you climb the stairs 
+say either east of west of here you will come to the 
+say HALL of PEACE.  The HALL of PEACE is where 
+say initiates can receive TRAINING, PRACTICE their 
+say SKILLS, and purchase some of the things they will 
+say need to stay safe in their travels.
+Endif
+~
+>speech_prog no~
+if ispc($n)
+eyebrow $n
+endif
+~
+>speech_prog where movement moving move north south east west up down areas~
+If ispc($n)
+If level($n) < 5
+Say You can travel in any of the four basic cardinal 
+Say directions by typing their name, or their initial.
+Say For example, if you wish to travel NORTH, type
+Say NORTH or N.  You may also move UP or DOWN
+Say using the same commands.
+Endif
+Say To the EAST lies the HALL of JUSTICE.
+Say To the WEST you can find the HALL of LAWS.
+Say NORTH of here lies the HALL of ORDER.
+Say Farther NORTH lies the HALL of WORSHIP
+Say UP the stairs east and west of here is the HALL of
+Say PEACE.  If you can find your way to the KITCHEN
+Say Master CAMPBELL will show you the way
+Say DOWN to the CELLARS.
+Endif
+~
+>speech_prog thanks thank~
+if ispc($n)
+smile $n
+say You're welcome.  It was my pleasure.
+endif
+~
+>speech_prog law~
+if ispc($n)
+say LAW is one of the three basic TENNANTS upon
+say which our RELIGION is founded.  We believe that
+say through the proper codification of our LAWS, we
+say can bring about a happy, ordered and just society.
+Say The HALL of LAW can be found by going north
+Say from the western end of The HALL of WELCOME.
+Endif
+~
+>speech_prog laws rules~
+if ispc($n) == 1
+mpforce $n pagelength 60
+mpforce $n help rules
+smile $n
+say You can always check the rules of Stormgate
+say by typing 'HELP RULES'.
+endif
+~
+>speech_prog order~
+If ispc($n)
+Say ORDER is one of the three basic TENNANTS
+Say upon which our RELIGION is founded.  We 
+Say believe that a structured lifestyle leads to 
+Say structured society, and that a structured society 
+Say is a happier society for all.
+Say The HALL of ORDER can be found directly
+Say north of your current location.
+Endif
+~
+>speech_prog justice~
+if ispc($n)
+say JUSTICE is one of the three basic TENNANTS upon
+say which our RELIGION is founded.  We understand
+say that despite our best efforts, on occasion our laws
+say do not provide cut and dried solutions to matters.
+Say In such cases we trust our strong moral background
+Say to guide us to the solution which is fairest to all
+Say The HALL of JUSTICE can be found by going north
+Say at the eastern end of The HALL of Welcome.
+Endif
+~
+>speech_prog friezes frieze~
+if ispc($n)
+say The FRIEZES which top the columns throughout the
+say temple depict scenes of the struggles and glory of
+say our earliest HEROES.  They serve as a constant
+say reminder that not everyone believes as we do, and
+say that if our way of life is to be preserved, we must
+say be ever vigilant in our struggles.
+Endif
+~
+>speech_prog religions religion~
+if ispc($n)
+say There's a lot to be told about RELIGION.  Our
+say RELIGION and RELIGION in general.  If you
+say want to know more about our RELIGION I'd
+say suggest you visit the Grand JUSTICIAR's 
+say office at the northern end of the HALL of PEACE.
+Say He'll tell you anything you want to know about
+Say LAW, ORDER, and JUSTICE.
+Say A list of the RELIGIONs can be had by typing
+Say 'RELIGION'.  There is some interesting
+Say information available there about how each
+Say RELIGION fairs in its struggles as well.  If it's
+Say specific information about other RELIGIONs
+Say that you're after, you'll have to find their 
+Say TEMPLEs and ask them.  I'm not sure where
+Say they're all located, so I'm sorry, but I can't
+Say help you to find them.
+Endif
+~
+>speech_prog bold~
+if ispc($n)
+say I am when I have to be $n
+blush
+endif
+if level($n) < 5
+say Or did you mean BOLD lettering?
+Say As I mentioned, the words in the TEMPLE that
+Say are in BOLD letters are things that we have
+Say more to say about.  Once you leave the temple
+Say people won't be so obvious about what they
+Say will talk to you about.  You'll have to pay
+Say attention to what they're saying and try to pick
+Say out key words that they might respond to.
+Endif
+~
+>speech_prog kitchens kitchen~
+if ispc($n)
+say To get to the KITCHEN, head straight north of here
+say until you reach the back HALL.  From there just
+say go through the western door and you're there.
+Endif
+If level($n) < 5
+Say Make sure you buy some food and water from
+Say Master CAMPBELL before you set out on 
+Say your travels.  HUNGER and THIRST are not
+Say pleasant to endure. 
+endif
+~
+>speech_prog cellars cellar~
+If ispc($n)
+If level($n) > 5
+Say I don't imagine the cellars would hold much of
+Say interest to you.  
+Endif
+If level($n) < 6
+Say Master CAMPBELL, the KITCHEN master,
+Say occasionally hires young people, such as yourself,
+Say to keep the vermin down in the CELLARS.  There's
+Say not much glory in it, but it's a decent place to
+Say learn to handle a weapon against some opponents
+Say who aren't likely to take a serious chunk out of
+Say your hide.  Head NORTH to the back HALL, then 
+Say through the western door to the KITCHEN.  Master
+Say CAMPBELL will tell you exactly what he needs doing.
+Endif
+Endif
+~
+>speech_prog worship~
+if ispc($n)
+say This TEMPLE is the main center of WORSHIP for the
+say followers of LAW, ORDER, and JUSTICE.  The HALL
+say of WORSHIP, where Lord VANCERIL's IDOL is
+say situated is the main congregation hall.  Pilgrims 
+say from every land journey here to revel in the glory
+say of Lord VANCERIL.
+Say If you walk directly north of here you will come to
+Say the HALL of WORSHIP, and eventually to stand
+Say before Lord VANCERIL's IDOL.
+Endif
+~
+>speech_prog tennants tennant~
+if ispc($n)
+say The TEMPLE and our RELIGION bear the names of 
+say our three basic TENNANTS:  LAW, ORDER, and 
+say JUSTICE.  If you ask me about them individually I 
+say can talk to you about them in a bit more detail.
+Endif
+~
+|
+#23002
+idol vanceril lord statue god law order justice~
+Lord Vanceril~
+Lord Vanceril's Idol towers above you.
+~
+&WLord Vanceril's Idol is easily the most stunning display of artistic
+ability to be found within the temple.  From the detailed representation of
+crest of his shield, to his broad youthful face, and the razor edge of his
+sword thrust toward the heavens, every minute detail has been rendered
+flawlessly from the black veined, white marble.  What truly brings gasps of
+awe from pilgrims however, is the ethereal glow which envelopes the statue. 
+It is said the light began to glimmer within moments of the statue's
+completion, the strange radiance giving the impression of wings upon the
+statue's back.  Though no one from the temple has ever officially proclaimed
+it a miracle, no one would deny that the presence of Lord Vanceril has been
+felt in this room ever since.  
+~
+8388619 16777344 32784 8192 1027 1000 S
+200 1 400 400 12000 30000d0+0 0d0+0
+2000 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+if level($n) > 5
+mpechoat $n &BThe voice of Lord Vanceril enters your mind.
+Mpechoat $n &zLord Vanceril's disembodied voice says &W'Welcome $n, I will heal any who need it.'
+Mpechoat $n &zLord Vanceril's disembodied voice says &W'Type HEAL to know what I can do for you.'
+Mpechoat $n &BLord Vanceril's presence lifts from your mind.
+endif
+if level($n) < 5
+mpechoat $n &BThe voice of Lord Vanceril enters your mind.
+Mpechoat $n &zLord Vanceril's disembodied voice says &W'Your journey has just begun.'
+Mpechoat $n &zLord Vanceril's disembodied voice says &W'No need of a tithe today.  Say HEAL and I will.'
+Mpechoat $n &BLord Vanceril's presence lifts from your mind.
+endif
+~
+>speech_prog heal~
+if ispc($n)
+if level($n) < 5
+c 'healing hands' $n
+endif
+endif
+~
+|
+#23003
+master campbell cook chef~
+Master Campbell~
+Master Campbell scuttles about the kitchen making sure all is as it should be.
+~
+~
+3 16777216 16 0 3 1000 S
+50 1 100 100 11000 11000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 0~
+~
+|
+#23004
+grand justicar tyden answith~
+The Grand Justicar~
+The Grand Justicar, Tyden Answith is here.
+~
+~
+3 218103936 786448 0 7 1000 S
+210 1 420 420 13000 65000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 0~
+~
+|
+#23005
+canin durant shopkeeper shop keeper man~
+Canin Durant~
+The shopkeeper Canin Durant waits to take your order.
+~
+Tall and muscular, Canin's frame shows the results of keeping one's store
+upon the second floor of a building.  He is quick with a smile for patrons,
+though it is sometimes missed behind his thick red beard.  His gentle, jolly
+laugh is never missed however, and seems to be brought about by the
+slightest jest.  
+~
+3 167772288 16 0 1 1000 S
+150 1 300 300 800 35000d0+0 0d0+15
+1500 0 0
+0 0 1
+0 0 0
+#23006
+rachel mystrim lady apothecary~
+Rachel Mystrim~
+The Apothecary, Rachel Mystrim, waits for your order.
+~
+Rachel's features are delicate and refined, causing her to appear almost
+frail at first glance.  Closer inspection reveals a healthy young woman,
+possibly with elven blood somewhere in her ancestry.  Rachel's fine robes
+and amulet bear witness to her high station at the temple.  Her pleasant
+smile and disarming demeanor however, suggest she does not see herself as
+greater than the humble masses.  
+~
+3 167772288 0 0 1 1000 S
+150 1 300 300 0 30000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+#23007
+master marc haldwin man~
+Master Haldwin~
+Master Marc Haldwin stands here, ready to instruct you.
+~
+Master Haldwin is a spry, older gentleman.  His graying hair however,
+seems to be about the only thing which gives away his age.  Master Haldwin
+is spry and agile.  His lean, muscled frame suggests both dexterity and
+strength.  When watching him demonstrate techniques to his students, it is
+hard not to wonder if there is anything that this man cannot do.  
+~
+1027 167772288 0 0 1 1000 S
+150 1 300 300 0 50000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+#23008
+master arthur drebun man~
+Master Drebun~
+Master Arthur Drebun stands here, waiting to train you.
+~
+Master Drebun may once have been a great warrior, but it would appear
+those days are long behind him.  The gray hair, slumped shoulders and pot
+belly do little to inspire those who do not know him.  Those who do however,
+those who have trained with him before, know Master Drebun to be amongst the
+finest trainers in all the lands.  He is a powerful task master, and is well
+versed in all the latest training regimens.  
+~
+515 167772288 0 0 1 1000 S
+150 1 300 300 0 55000d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+#23009
+master david leuwan man librarian~
+Master Leuwan~
+The librarian, Master David Leuwan, stands before you.
+~
+David Leuwan is a young man of perhaps 25 years.  He is vibrant and
+excitable when speaking about his texts.  An astounding scholar, there are
+few who speak as many languages fluently as does Master Leuwan.  His boyish
+good looks and easy charm with the ladies have lead to some suggestion that
+reading, is perhaps not all that goes on amongst his stacks.  
+~
+65539 134217856 16 0 1 1000 S
+110 1 220 220 0 45000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+#23010
+laura neemer banker bank lady~
+Laura Neemer~
+The banker, Laura Neemer, stands ready to assist you.
+~
+Employed not only for her accounting skills, but also for her
+unparalleled swordsmanship, Laura Neemer is not your average banker. 
+Slender, but muscled, she is not your average woman either.  Standing nearly
+six feet tall and adorned in gleaming piecemeal armor, her air is that of
+the ultimate professional.  Laura's face bears scares earned earlier in
+life, but her pleasant smile is enough to keep anyone from calling her ugly.
+Her long auburn hair, flowing forward over her shoulders is usually enough
+to hide her missing left ear.  She is noticeably self conscious about it,
+regularly checking to make sure her hair remains in place.  
+~
+131075 234881152 0 8192 4 1000 S
+160 1 320 320 0 100000d0+0 0d0+0
+1000 0 0
+0 0 2
+0 0 0
+#23011
+advocate ailween fisher woman healer~
+Advocate Fisher~
+Advocate Ailween Fisher is here, passing the collection plate.
+~
+Ailween Fisher is a woman of average charm, and little tact.  She is
+middle aged and portly, but lacking somewhat in the jovial nature which
+makes the stout beloved.  Her attire is exceedingly prim and proper, high
+necked robes of loose cut, well pressed and starched, and her eyes are
+cunning and sharp.  She passes the collection plate amongst the
+parishioners, and seeing a miserly tither will provide them with what urging
+she feels they need in order to make a donation worthy of their temple.  
+~
+1 184549504 0 0 1 500 S
+75 1 150 150 0 20000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#23012
+Gerhardt servant scullery man~
+Gerhardt the Scullery~
+A servant leans against the boxes here.
+~
+~
+3 0 0 0 0 650 S
+5 1 10 10 0 45d0+0 0d0+0
+2 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+If ispc($n) == 1
+Emote seems to wake with a start.
+Say I wasn't sleepin', honest!
+Say You won't tell Master Campbell will you?
+If level($n) < 6
+Say Oh  wait.  You're new here right?
+Say I'm Gerhardt, and you're probably here to take
+say care of the rats.  Try to SEARCH here.  I think
+say there's a way through to the south.  That seems
+say to be where most of those pests keep commin'
+say from.
+Smile $n
+Endif
+Endif
+~
+>speech_prog search~
+If ispc($n) == 1
+If level($n) < 6
+Say Just type the word search and go to it.
+Say If you don't find it on your first try you
+Say can always try again.  I'm sure there's
+Say a way through there.
+Endif
+Endif
+~
+|
+#23013
+lost idol holy knight lord abalane statue~
+Lord Abalane's Idol~
+The lost idol of the Holy Knight, Lord Abalane, graces this small room.
+~
+~
+3 128 32768 8192 1024 1000 S
+210 1 420 420 0 50000d0+0 0d0+0
+2100 0 0
+0 0 1
+0 0 0
+#23019
+the guard Merideth~
+Merideth~
+The Temple Guard Merideth
+~
+Merideth is a battle hardened warrior who has chosen guard duty with the temple of Law Order and Justice as worthy of her defence.
+~
+524291 167772160 32784 16384 2 998 S
+52 1 104 104 57500 57500d0+0 0d0+3500
+520 0 0
+0 0 2
+0 0 0
+#23026
+Cedric~
+Cedric~
+The Temple Guard Cedric, her partner
+~
+An experienced soldier, Cedric has decided to give up the chaos of the battle field in favor of the clarity which guarding the temple affords him.
+~
+524291 167772288 16 16384 2 1000 S
+50 1 100 100 54000 54000d0+0 0d0+1500
+500 0 0
+0 0 1
+0 0 0
+#23027
+Lady Morgyn~
+Lady Morgyn~
+Lady Morgyn stands before you.
+~
+~
+524291 167772288 32768 16384 2 1000 S
+88 1 176 176 25000 25000d0+0 0d0+33000
+880 1 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say Welcome to the Gauntlet.
+say This section incorporates all that
+say you have learned so far, plus some
+say locked doors.
+say You should also use the command
+say consider to check to see if
+say you can handle the mobs before you
+say fight them.
+say Good luck.
+emote smiles
+endif
+~
+|
+#23028
+serf gerrald~
+Gerrald~
+Sir Gerrald stands before you.
+~
+~
+3 0 0 0 0 0 S
+7 1 14 14 125 30d0+0 0d0+500
+70 0 0
+0 0 1
+0 0 0
+#23029
+knight sir horrace~
+Sir Horrace~
+The Knight Sir Horrace stands before you.
+~
+~
+3 0 0 0 0 0 S
+7 1 14 14 90 30d0+0 0d0+350
+70 0 0
+0 0 1
+0 0 0
+#23030
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#23031
+lady marina~
+Lady Marina~
+The young warrior Lady Marina stands before you.
+~
+~
+3 0 0 0 0 0 S
+5 1 20 20 500 35d0+0 0d0+1500
+50 0 0
+0 0 2
+0 0 0
+#23032
+kallista~
+Kallista~
+Kallista adjusts her armor in preparation for battle.
+~
+~
+3 0 0 0 0 0 S
+6 1 12 12 210 35d0+0 0d0+250
+60 0 0
+0 0 2
+0 0 0
+#23034
+knight sir sochan~
+Sochan~
+Sir Sochan stands before you.
+~
+~
+3 0 0 0 0 0 S
+6 1 16 16 130 26d0+0 0d0+300
+60 0 0
+0 0 1
+0 0 0
+#23035
+Lady Pareve~
+Lady Pareve~
+Lady Pareve stares at you intently.
+~
+~
+3 0 0 0 0 0 S
+7 1 14 14 250 30d0+0 0d0+500
+70 0 0
+0 0 2
+0 0 0
+#23037
+knight sir tantraus~
+Sir Tantraus~
+Sir Tantraus raises an eyebrow in your direction
+~
+~
+3 0 0 0 0 0 S
+5 1 10 10 100 25d0+0 0d0+500
+50 0 0
+0 0 1
+0 0 0
+#23038
+Sevit~
+Sevit~
+General Sevit fingers the hilt of his sword.
+~
+~
+3 0 0 0 0 0 S
+6 1 12 12 135 38d0+0 0d0+0
+60 0 0
+0 0 1
+0 0 0
+#23040
+knight sir elik~
+Elik~
+Sir Elik stands ready for your challenge
+~
+~
+3 0 0 0 0 0 S
+6 1 12 12 175 30d0+0 0d0+1000
+60 0 0
+0 0 1
+0 0 0
+#23041
+lady amber~
+Amber~
+Lady Amber stares at you through her face plate.
+~
+~
+3 0 0 0 0 0 S
+7 1 14 14 200 40d0+0 0d0+650
+70 0 0
+0 0 2
+0 0 0
+#23042
+Zoey~
+Zoey~
+Lady Zoey, champion of Law, smiles at you.
+~
+~
+3 0 0 0 0 0 S
+12 1 24 24 750 175d0+0 0d0+3500
+120 0 0
+0 0 2
+0 0 0
+#23043
+knight sir galward~
+Sir Galward~
+Sir Galward looks down at you.
+~
+~
+524291 167772288 32784 16384 2 1000 S
+95 1 190 190 33000 33000d0+0 0d0+75000
+950 1 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say Hello $n.  This is the third section of
+say the Gauntlet.  The Hall of Unwritten 
+say Rules is full of secret doors and hidden
+say items.  Be sure to look around carefully,
+say and if you suspect that there may be a 
+say secret door in a room, be sure to SEARCH
+say the room throughly.  Sometimes things won't
+say appear to you after just a cursory exam.
+bow $n
+say Good luck.
+endif
+~
+|
+#23044
+warrior gannis~
+Gannis~
+The warrior Gannis eyes you intently.
+~
+Young and strong, gannis is everything a new adventurer could hope to be.
+~
+3 0 0 0 0 0 S
+7 1 14 14 300 45d0+0 0d0+4000
+70 0 0
+0 0 1
+0 0 0
+#23045
+cleric shmender~
+Shmender~
+The cleric Shmender smiles.
+~
+Sporting fine, silver plate mail armor, Shmender appears to be a force to be reconed with.
+~
+3 0 0 0 0 0 S
+6 1 12 12 350 35d0+0 0d0+4500
+60 0 0
+0 0 1
+0 0 0
+#23047
+bertrand ~
+Bertrand~
+A young man with sword in hand, Bertrand, looks at you.
+~
+Bertrand looks a little ragged around the edges, but his sword looks as
+sharp as any you've ever seen.  
+~
+3 0 0 0 0 0 S
+7 1 14 14 400 45d0+0 0d0+5000
+70 0 0
+0 0 1
+0 0 0
+#23048
+Herin warrior~
+Herin~
+The beautiful warrior Herin rests her hand on the hilt of her sword
+~
+Herin's face is one of the few features which aren't masked by her armor,
+but it's beauty is legendary.  
+~
+3 0 0 0 0 0 S
+7 1 14 14 0 35d0+0 0d0+7000
+70 0 0
+0 0 2
+0 0 0
+#23050
+kilted warrior~
+The warrior~
+A kilted warrior growls at you.
+~
+Wearing nothing but a kilt and a snarling grin this warrior prepares to
+do battle, using the biggest sword you've ever seen.  
+~
+3 0 0 0 0 0 S
+8 1 16 16 500 30d0+0 0d0+7500
+80 0 0
+0 0 1
+0 0 0
+#23051
+Renir~
+Renir~
+Dressed in his finest clothes, Renir seems hardly concerned by your presence
+~
+Renir is obviously a gentleman...  He looks strangely out of place in
+this setting.  
+~
+3 0 0 0 0 0 S
+6 1 12 12 450 45d0+0 0d0+4000
+60 0 0
+0 0 1
+0 0 0
+#23052
+small girl child~
+The girl child~
+A sweet little girl sits playing with her doll in the sand.
+~
+This small girl couldn't be more than six or seven years old.  With curly
+golden locks and pale, refined features, she looks almost as fragile as the
+porceline doll she plays with.  
+~
+3 16777216 0 0 1 0 S
+9 1 18 18 900 900d0+0 0d0+0
+90 0 0
+0 0 2
+0 0 0
+#23053
+big bad bovine bull~
+The Big Bad Bovine~
+The Big Bad Bovine stares you down.
+~
+You look at this behemoth of a bovine in awe.  The fact that anyone could create such a twisted animal is beyond your wildest imagination.
+~
+3 503317224 0 0 0 0 S
+110 1 220 220 32476 32476d0+0 0d0+110000
+1100 0 0
+0 0 1
+2 0 0
+#23054
+Baldrik mighty warrior~
+Baldrik~
+The Mighty Warrior Baldrik scowls at you from behind stealy eyes
+~
+Baldrik stands nearly 7 feet tall.  Bulging muscles are his most
+pronounced feature.  His glinting sword is also an eye catcher.  
+~
+3 0 0 0 0 0 S
+10 1 20 20 200 25d0+0 0d0+4000
+100 0 0
+0 0 1
+0 0 0
+#23056
+clemson cleric~
+Clemson~
+The cleric Clemson eyes you warily.
+~
+Cleric Clemson is a man of the cloth.  Always with a bible under his arm,
+he is the epitomy of devoutness.  
+~
+3 0 0 0 0 0 S
+7 1 14 14 650 60d0+0 0d0+7000
+70 0 0
+0 0 1
+0 0 0
+#23057
+sister verna~
+Verna~
+A pleasant woman who appears to be in her fourties stands before you.
+~
+Verna is a sweet, plump woman..but beware, she can pack quite a punch.
+~
+3 0 0 0 0 0 S
+8 1 16 16 750 55d0+0 0d0+8000
+80 0 0
+0 0 2
+0 0 0
+#23058
+Gex~
+Gex~
+Gex the one eyed warrior snarls at you.
+~
+Gex, a grizzled old ogre who lost his eye in battle wears no armor.  His
+grimy body stinks so much you can barely stand to be in the same room as
+him.  
+~
+3 0 0 0 0 0 S
+10 1 20 20 650 650d0+0 0d0+8000
+100 0 0
+0 0 1
+0 0 0
+#23059
+knight sir howard~
+Sir Howard~
+Sir Howard smiles as you enter the room
+~
+~
+524291 167772288 32784 16384 2 1000 S
+75 1 150 150 23000 23000d0+0 0d0+44000
+750 1 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) < 6
+say Why hello there $n.  Welcome to the
+say gauntlet.  This is where all of our
+say warriors come to train together.  Here
+say are a few things to remember as you go
+say through...  First, doors are marked by
+say [] around a direction.  To open a door
+say you must type OPEN <DIRECTION>.  Then
+say you will be able to pass.  Secondly,
+say you should type "look in corpse" after
+say you best each of your foes, as their
+say corpses may contain equipment you can 
+say take and wear by typing:
+say Wear all, or, wear <equipment name>
+say Now, off you go...and good luck!
+emote smiles
+else 
+smile $n
+say You already know more than I could
+say possibly teach you.  I am glad to see
+say that you have become such a powerful
+say warrior for LOJ
+emote smiles
+endif
+endif
+~
+|
+#23060
+young knight~
+A Knight~
+A Young Knight stands here, preparing for battle.
+~
+A Young Knight, not unlike yourself, prepares for the duel to come.
+~
+3 0 0 0 0 0 S
+5 1 2 4 35 15d0+0 0d0+100
+50 0 0
+0 0 1
+0 0 0
+#23061
+young knight~
+A Knight~
+A Young Knight stands here preparing for the battle to come.
+~
+~
+3 0 0 0 0 0 S
+5 1 3 2 35 15d0+0 0d0+100
+50 0 0
+0 0 1
+0 0 0
+#23063
+young warrior~
+The Warrior~
+A Young Warrior adjusts her armor and stares at you expectantly.
+~
+~
+3 0 0 0 0 0 S
+5 1 4 3 40 15d0+0 0d0+150
+50 0 0
+0 0 0
+0 0 0
+#23064
+young warrior~
+The Warrior~
+A Young Warrior adjusts her armor and stares at you expectantly.
+~
+~
+3 0 0 0 0 0 S
+5 1 3 3 0 15d0+0 0d0+150
+50 0 0
+0 0 2
+0 0 0
+#23066
+cleric~
+A Cleric~
+An armored cleric awaits your challenge.
+~
+~
+3 0 0 0 0 0 S
+5 1 3 3 65 17d0+0 0d0+200
+50 0 0
+0 0 1
+0 0 0
+#23067
+cleric~
+A Cleric~
+An armored cleric awaits your challenge.
+~
+~
+3 0 0 0 0 0 S
+5 1 2 2 65 17d0+0 0d0+200
+50 0 0
+0 0 1
+0 0 0
+#23069
+young warrior~
+A Warrior~
+A young warrior stands here preparing for a duel.
+~
+~
+3 0 0 0 0 0 S
+5 1 3 4 50 12d0+0 0d0+200
+50 0 0
+0 0 1
+0 0 0
+#23070
+young warrior~
+A Warrior~
+A young warrior stands here preparing for a duel.
+~
+~
+3 0 0 0 0 0 S
+5 1 6 2 50 12d0+0 0d0+200
+50 0 0
+0 0 1
+0 0 0
+#23071
+knight sir howard~
+Sir Howard~
+Sir Howard smiles as you enter the room
+~
+~
+524291 167772288 32784 16384 2 1000 S
+75 1 10 10 24000 24000d0+0 0d0+44000
+750 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say You have made it to the end of the
+say hall of symetry.  Congratulations.
+say Sir Guellin waits for you behind that
+say door.
+emote points west
+endif
+~
+|
+#23072
+cadet soldier young~
+The Cadet~
+A young soldier, probably a new recruit stands here.
+~
+~
+3 0 0 0 0 0 S
+5 1 4 3 75 14d0+0 0d0+150
+50 0 0
+0 0 2
+0 0 0
+#23073
+cadet soldier young~
+A Cadet~
+A young soldier, probably a new recruit stands here.
+~
+~
+3 0 0 0 0 0 S
+5 1 4 6 75 14d0+0 0d0+150
+50 0 0
+0 0 2
+0 0 0
+#23074
+Guellin knight sir~
+Sir Guellin~
+A veteren of LOJ's army, Sir Guellin prepares to meet your challenge.
+~
+~
+3 0 0 0 0 0 S
+7 1 5 6 0 45d0+0 0d0+750
+70 0 0
+0 0 1
+0 0 0
+#23075
+knight lady wendy~
+Lady Wendy~
+Lady Wendy greets you with a warm and gentle smile.
+~
+~
+524291 167772288 32768 16384 2 1000 S
+100 1 200 200 34000 34000d0+0 0d0+100000
+1000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say Well, hello $n.  Welcome to the Halls
+say of Conformity.  Many of the items contained
+say within this hall can be joined with one
+say another to form more powerful items.
+say Try typing join <object> <object> and 
+say see what happens.
+smile $n
+endif
+~
+>act_prog ~
+~
+|
+#23076
+Darnel~
+Darnel~
+A young farmer, Darnel fingers the prong of his pitchfork.
+~
+A young man of no outstanding characteristics, Darnel is a typical god fearing man.
+~
+3 0 0 0 0 0 S
+7 1 14 14 0 40d0+0 0d0+7000
+70 0 0
+0 0 1
+0 0 0
+#23077
+Kirian~
+Kirian~
+The maid Kirian smiles at you.
+~
+Dressed in simple garments, Kirian's beauty is not diminished by her understated garb.
+~
+3 0 0 0 0 0 S
+6 1 12 12 500 50d0+0 0d0+6000
+60 0 0
+0 0 2
+0 0 0
+#23079
+Lorithan~
+Lorithan~
+Lorithan, an aspiring sorcerer bows before you.
+~
+Simple and straight forward, Lorithan is a kind and gentle man.  His calm
+demeanor, however, conceals the chaos within.  
+~
+3 0 0 0 0 0 S
+9 1 18 18 750 75d0+0 0d0+9000
+90 0 0
+0 0 1
+0 0 0
+#23080
+Moriak~
+Moriak~
+Moriak the demonologist glares at you with firey eyes.
+~
+Dressed in black robes from head to foot, the only colour you can see on
+Moriak comes from his gleeming red eyes.  
+~
+3 0 0 0 0 0 S
+8 1 16 16 700 65d0+0 0d0+8000
+80 0 0
+0 0 1
+0 0 0
+#23082
+Cleetus~
+Cleetus~
+The village idiot, Cleetus grins at you.
+~
+Cleetus is the village idiot, and shows it.  Always smiling, especially
+when things are going wrong, most people find him very hard to tolerate.  
+~
+3 0 0 0 0 0 S
+6 1 12 12 440 44d0+0 0d0+0
+60 0 0
+0 0 1
+0 0 0
+#23083
+Grealdeen~
+Grealdeen~
+The wench Grealdeen smiles a crooked smile at you.
+~
+Grealdeen is not the kind of girl you'd take home to mother.  She is
+known to most of the men who frequent bars around this area in a carnal way.
+~
+3 0 0 0 0 0 S
+8 1 16 16 650 65d0+0 0d0+8000
+80 0 0
+0 0 2
+0 0 0
+#23085
+Norsyth~
+Norsyth~
+The young fighter Norsyth bows before you.
+~
+Raven black hair falls down Norsyth's back from beneith her gleaming
+helm.  A subdued beauty befits her personality.  She sees beauty only in
+combat.  
+~
+3 0 0 0 0 0 S
+9 1 18 18 800 70d0+0 0d0+9000
+90 0 0
+0 0 2
+0 0 0
+#23087
+Eriol~
+Eriol~
+Eriol the cleric is kneeling in the sand, praying.
+~
+A devout follower of Law Order and Justice, Eriol is kind and gentle,
+both in word and touch.  
+~
+3 0 0 0 0 0 S
+9 1 18 18 800 55d0+0 0d0+9000
+90 0 0
+0 0 2
+0 0 0
+#23088
+Demin Nass~
+Demin Nass~
+Big and brawny, Demin Nass strikes fear into young hearts.
+~
+Despite his rugged, handsome features, Demin Nass is not a beautiful man.
+~
+3 0 0 0 0 0 S
+10 1 20 20 1300 75d0+0 0d0+10000
+100 0 0
+0 0 1
+0 0 0
+#23089
+Grath~
+Grath~
+The canine Grath growls at you.
+~
+A typical canine, Grath is hardly beautiful, even amongst his own kind,
+however, he does have a certain charm...  When he's not licking himself.  
+~
+3 64 16777216 0 0 0 S
+8 1 16 16 700 70d0+0 0d0+8000
+80 0 0
+0 0 1
+0 0 0
+#23090
+Jinaltus~
+Jinaltus~
+The blademaster Jinaltus bows before you, and draws his swords.
+~
+A long time blademaster and teacher in the temple, Jinaltus will be your
+greatest opponent.  
+~
+3 64 0 0 0 0 S
+12 1 24 24 1100 1100d0+0 0d0+12000
+120 0 0
+0 0 1
+0 0 0
+#23091
+Prelate Annalina~
+Prelate Annalina~
+Prelate Annalina looks up as you enter the room.
+~
+The prelate is an elderly woman of perhaps sixty years.  Her pleasant
+smile warms you as she greets you and offers you a seat.  An almost
+grandmotherly figure she quickly puts your heart at ease.  
+~
+786435 128 294912 16384 2 5000 S
+105 1 600 600 0 100000d0+0 0d0+0
+200 0 0
+0 0 2
+2050 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+emote looks up from her paperwork.
+smile $n
+say Why hello $n.
+say Welcome to my study.  What can I help
+say you with today?
+emote waits patiently for your response.
+endif
+~
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) > 99
+say One of my champions!
+say If you have not remortalized yet
+say type help remortalize to see what
+say I can do for you.
+endif
+endif
+~
+>speech_prog help~
+if ispc($n) == 1
+if level($n) < 100
+smile
+say There is little I can do for you yet.
+say Come speak to me when you are a champion.
+emote smiles warmly.
+break
+else
+smile
+say Simply type 'help remortalize'.  That
+say will tell you all you need to know about
+say what I can do to help you.
+emote smiles warmly.
+endif
+endif
+~
+|
+#23092
+Rector Caer' Bannon~
+Caer' Bannon~
+The Rector Caer' Bannon looks up from his reading
+~
+An unremarkable, middle aged man sits here reading quietly.
+~
+524291 16512 0 0 2 2000 S
+50 1 60 70 0 25000d0+0 0d0+0
+0 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say Welcome to my study.  You're welcome to
+say stay if you remain quiet and do not 
+say disturb me.  If you need scrolls of recall
+say you may buy them from me.
+emote turns back to his reading
+endif
+~
+|
+#23094
+Abbot McMurray~
+McMurray~
+Abbot McMurray grins at you when you enter the room
+~
+Built like a brick with fiery red hair, it's surprising to many that the
+abbot chose a life of devotion rather than a life of battle and glory.  
+~
+524291 67108992 0 0 2 0 S
+50 1 3 30 0 25000d0+0 0d0+0
+0 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+emote looks up from his books.
+say Hello child.
+say Welcome to my study.  You are 
+say free to stay as long as you like.
+say Also, if you're in need of potions
+say I have several for sale.
+emote smiles and turns a page to continue his reading.
+endif
+~
+|
+#23097
+bell of LOJ~
+&G The Bell of Law Order and Justice~
+Bell
+~
+U
+~
+524291 0 0 0 2 0 S
+1 1 2 2 0 1d0+0 0d0+0
+0 0 0
+0 0 0
+2 0 0
+#0
+
+
+
+#OBJECTS
+#23001
+box donation container~
+the donation box~
+A simple box sits here to hold your donations.~
+~
+15 1 524288 0 0 0 0
+100 100
+10000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23002
+preserves dried food ~
+some dried preserves~
+Some dried preserves lie here.~
+~
+19 0 0 0 0 1 1
+100 100
+100~ 0~ 0~ 0~
+1 100 0
+0 0
+bless~
+0 0
+0 0 0
+#23003
+loaf bread cheese hunk~
+some bread and cheese~
+A load of bread and hunk of cheese lie here.~
+~
+19 0 0 0 0 1 1
+100 100
+30~ 0~ 0~ 0~
+1 25 0
+0 0
+bless~
+0 0
+0 0 0
+#23004
+water skin~
+a water skin~
+A sheep's stomach filled with water lies here.~
+~
+17 0 0 0 0 1 1
+100 100
+100~ 100~ 0~ 0~
+10 30 0
+0 0
+reserved~
+0 0
+0 0 0
+#23005
+flask wine~
+a flask of wine~
+A flask of wine sits here unattended.~
+~
+17 0 0 0 0 1 1
+100 100
+50~ 50~ 2~ 0~
+1 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#23006
+marble statue brice~
+&WA statue of Lord Brice~
+&WThe image of Lord Brice stands before you, captured perfectly in white marble.~
+~
+8 0 64 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1500 50000 0
+0 0
+reserved~
+0 0
+0 0 0
+#23007
+marble statue grimsage~
+&wA statue of Grimsage~
+&wA white marble statue of Lord Grimsage graces the hall here.~
+~
+8 0 0 0 0 0 105
+100 100
+0~ 0~ 0~ 0~
+10000 250000 0
+0 0
+reserved~
+0 0
+0 0 0
+#23008
+marble statue rhoon~
+&wA statue of Rhoon~
+&wLord Rhoon has been captured here in white marble, striking a proud pose for all time.~
+~
+8 0 0 0 0 0 105
+100 100
+0~ 0~ 0~ 0~
+10000 250000 0
+0 0
+reserved~
+0 0
+0 0 0
+#23009
+platemail armguards LOJ~
+&WThe platemail armguards of LOJ~
+The platemail armguards of LOJ~
+~
+9 0 0 0 0 257 1
+100 100
+5~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#23010
+shield order~
+&WThe Shield of Order~
+The Shield of Order~
+~
+9 0 0 0 0 513 1
+100 100
+10~ 0~ 0~ 0~
+5 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#23011
+cape flowing white~
+a flowing white cape~
+A flowing white cape~
+~
+9 0 0 0 0 1025 1
+100 100
+3~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23012
+belt gold white~
+a belt of white gold~
+A belt of white gold~
+~
+9 0 0 0 0 2049 1
+100 100
+2~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#23013
+bracelet white gold~
+a white gold bracelet~
+A white gold bracelet~
+~
+9 0 0 0 0 4097 1
+100 100
+1~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#23014
+mace greate white~
+a great white mace~
+A great white mace~
+~
+5 1 0 0 0 8193 0
+100 100
+0~ 1~ 6~ 7~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23015
+law book~
+&WA Book of Law~
+A book of law~
+~
+9 0 0 0 0 16385 2
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+#23016
+lense contact~
+&WBlind Justice~
+A pair of contact lenses~
+~
+27 0 0 0 0 131073 1
+100 100
+100~ 10~ 10~ identify~
+1 4 0
+0 0
+reserved~
+0 0
+0 23031 23032
+#23017
+order~
+&WOrder~
+Order in a solid form rests here.~
+~
+9 1 0 0 0 32769 1
+100 100
+5~ 0~ 0~ 0~
+0 8 0
+5 0
+armor~
+10 10
+0 0 0
+#23018
+mask somber expression~
+a silver mask~
+A mask bearing a somber expression~
+~
+9 0 0 0 0 65537 1
+100 100
+3~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#23019
+earring pearl~
+&WA Pearl Earring~
+A pearl stud~
+~
+9 0 0 0 0 524289 1
+100 100
+1~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#23020
+anklet gold white~
+an anklet of white gold~
+An anklet made of white gold~
+~
+9 0 0 0 0 1048577 1
+100 100
+1~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#23021
+gavel~
+&WA Gavel~
+&WA Gavel~
+~
+9 1 0 0 0 2097153 50
+100 100
+15~ 0~ 0~ 0~
+5 3000 0
+5 0
+summon angel~
+20 20
+0 0 0
+#23022
+pure soul~
+&WA Pure Soul~
+A lost soul~
+~
+35 3073 0 0 0 4194305 30
+100 100
+100~ -1~ -1~ sanctuary~
+5 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 4
+A
+5 4
+#23023
+bastard sword~
+a bastard sword~
+A simple bastard sword~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 1~ 6~ 3~
+3 4 0
+0 0
+reserved~
+0 0
+23029 23024 0
+#23024
+notched bastard sword~
+a notched bastard sword~
+A bastard sword which looks as though it may support some sort of attachment~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 1~ 4~ 3~
+5 4 0
+0 0
+reserved~
+0 0
+23029 0 23023
+#23025
+axe broad~
+a broad axe~
+An inornate axe~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 2~ 8~ 13~
+8 4 0
+0 0
+reserved~
+0 0
+23030 0 0
+#23026
+military pick~
+a military pick~
+A military pick with a strange handle~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 1~ 4~ 11~
+3 4 0
+0 0
+reserved~
+0 0
+23030 0 0
+#23027
+coin LOJ~
+a coin of the LOJ mint~
+A coin featuring the insignia of LOJ~
+~
+8 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+23002 0 0
+#23028
+gold ring~
+a golden ring~
+A gold ring with space to mount a stone or other precious object.~
+~
+9 0 0 0 0 3 1
+100 100
+2~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+23002 0 0
+#23029
+great broad sword~
+the Great Sword~
+A great broad sword~
+~
+5 256 0 0 0 8193 5
+100 100
+0~ 5~ 15~ 3~
+10 48 0
+0 0
+reserved~
+0 0
+0 23023 23024
+A
+19 6
+A
+18 5
+#23030
+great axe pick~
+&WThe Great Axe~
+A massive axe with a pick opposite the main blade.~
+~
+5 0 0 0 0 8193 5
+100 100
+0~ 5~ 15~ 13~
+12 40 0
+0 0
+reserved~
+0 0
+0 23025 23026
+A
+18 6
+A
+19 5
+#23031
+lenses contact~
+a pair of contacts~
+Two glassen hemispheres~
+~
+27 0 0 0 0 131073 1
+100 100
+0~ 0~ 0~ reserved~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#23032
+cloth rag blindfold~
+a blindfold~
+A cloth rag~
+~
+27 0 0 0 0 131073 1
+100 100
+0~ 0~ 0~  ~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23033
+key~
+a black key~
+A black key~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23034
+Key~
+a small dainty key~
+A small dainty key~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23035
+glass trinket~
+a small glass trinket~
+A small glass trinket~
+~
+8 0 256 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#23036
+potion detect hidden~
+a potion of detection~
+A thick, inky blue vial of liquid~
+~
+10 268435456 0 0 0 1 1
+100 100
+30~ detect hidden~  ~  ~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#23037
+gold trinket~
+a small gold trinket~
+A small trinket made of gold~
+~
+8 1 256 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#23038
+wand witching~
+a witching wand~
+A short, forked stick lies here.~
+~
+3 2 256 0 0 16385 1
+100 100
+50~ 20~ 20~ divining~
+2 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#23039
+staff protection~
+a staff of protection~
+A simple wooden staff~
+~
+4 1 256 0 0 16385 15
+100 100
+50~ 5~ 5~ protection evil~
+5 1000 0
+5 0
+protection evil~
+5 5
+0 0 0
+#23040
+doll~
+a dollie baby~
+A doll in the image of a small child~
+~
+13 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23041
+Potion of Purity glowing~
+a Potion of Purity~
+A glowing potion~
+~
+10 268435457 0 0 0 1 1
+100 100
+50~ cure poison~ reserved~ reserved~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#23042
+Potion of Atonment wine blessed~
+a Potion of Atonment~
+A blessed wine~
+~
+10 268435712 0 0 0 1 1
+100 100
+100~ remove curse~ reserved~ reserved~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#23050
+visa card~
+a Visa Card~
+A Visa Card~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23053
+horn bovine~
+big Bad Bovine Horns~
+The horns of the Big Bad Bovine.~
+~
+5 167772163 0 0 0 8193 105
+100 100
+0~ 40~ 60~ 2~
+50 1048 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 90
+A
+19 90
+A
+12 200
+A
+25 90
+A
+23 20
+A
+24 20
+#23075
+A folding Chair~
+a folding chair sits here, cold and inviting.~
+A folding chair sits here, cold and inviting.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23097
+&GThe Bell of Law, Order, and Justice hangs here.~
+&GThe Bell of Law, Order, and Justice hangs here.~
+&GThe Bell of &WLaw, Order, and Justice &Ghangs here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#23099
+Miller Lite Light~
+miller Lite~
+A frosty Miller Lite~
+~
+1 134217728 0 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23100
+exit doors great door entry arch portal port~
+&Gtemple doors~
+&BThe Great Doors to the Temple of Law, Order and Justice stand open to the south.~
+~
+29 1 0 0 0 0 0
+100 100
+18571~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#23001
+The Grand Entry~
+~
+~
+You stand at the entry to the TEMPLE of LAW, ORDER, and JUSTICE.  The
+tall fluted columns of white marble which surround you are a source of
+inspiration to the devoted.  To the east and west the HALL of WELCOME
+stretches on, adorned by elegant statues and benches.  The FRIEZES set atop
+the capitals of the vaulting columns depict scenes of great struggle and
+triumph by those of the religion.  To the NORTH lies the HALL of ORDER. 
+EAST of here in the distance you can see the entrance to the HALL of
+JUSTICE.  To the WEST you can see the entrance to the HALL of LAW.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23005
+D1
+~
+~
+0 0 23002
+D3
+~
+~
+0 0 23059
+S
+#23002
+The Hall of Welcome~
+~
+~
+You stand in the Hall of Welcome, east of the entrance to the Temple of
+Law, Order, and Justice.  The architecture is astoundingly beautiful.  The
+eastern leg of an awe inspiring curved staircase ascends to the temple's
+second level from here.  The polished marble banister and spindles serve as
+a strong contrast for the plush red carpet which runs along the rise of the
+stairs.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23003
+D3
+~
+~
+0 0 23001
+D4
+~
+~
+0 0 23027
+S
+#23003
+The Hall of Welcome~
+~
+~
+You stand at the eastern end of the Hall of Welcome.  To the north, the
+Hall of Justice leads to the halls of Worship and Gathering.  To the west,
+the Hall of Welcome leads to the temple entrance.  A tall, elegantly arched
+window is set into the eastern wall here, looking out over the temple's ever
+blooming gardens.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23006
+D3
+~
+~
+0 0 23002
+S
+#23004
+The Hall of Law~
+~
+~
+The Hall of Law is decorated with rich black carpeting and draperies
+fringed with gold.  At regular intervals, between the beautiful bay windows,
+stand proud statues of the greatest heroes of Law.  The arrow straight,
+white marble support pillars for the vaulted ceiling above are said to be
+representative of the morality of the guidance offered by temple law.  The
+black and white dcor is a reminder of the stricture with which templars are
+urged to follow the tenants of the religion.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23007
+D2
+~
+~
+0 0 23062
+S
+#23005
+The Hall of Order~
+~
+~
+The Hall of Order is decorated with rich blue carpeting and draperies
+fringed with gold.  At regular intervals, between the beautiful bay windows,
+stand proud statues of the greatest heroes of Order.  The perfect symmetry
+of the hall's construction is said to evoke a sense of Order's ultimate
+goal.  The high, vaulted ceilings and picture windows, it is said, remind us
+that there is a greater world beyond, and that our individual desires are
+dwarfed in the face of the majesty that is Order.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23008
+D2
+~
+~
+0 0 23001
+S
+#23006
+The Hall of Justice~
+~
+~
+The Hall of Justice is decorated with rich gray carpeting and draperies
+fringed with gold.  At regular intervals, between the beautiful bay windows,
+stand proud statues of the greatest heroes of Justice.  The high, vaulted
+ceilings of the hall are said to represent the heights to which man must
+strive, and the gray dcor serves as a reminder that in issues of Justice,
+things are not always black and white.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23009
+D2
+~
+~
+0 0 23003
+S
+#23007
+The Hall of Law~
+~
+~
+The Hall of Law is decorated with rich black carpeting and draperies
+fringed with gold.  At regular intervals, between the beautiful bay windows,
+stand proud statues of the greatest heroes of Law.  The arrow straight,
+white marble support pillars for the vaulted ceiling above are said to be
+representative of the morality of the guidance offered by temple law.  The
+black and white dcor is a reminder of the stricture with which templars are
+urged to follow the tenants of the religion.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23010
+D2
+~
+~
+0 0 23004
+S
+#23008
+The Hall of Order~
+~
+~
+The Hall of Order is decorated with rich blue carpeting and draperies
+fringed with gold.  At regular intervals, between the beautiful bay windows,
+stand proud statues of the greatest heroes of Order.  The perfect symmetry
+of the hall's construction is said to evoke a sense of Order's ultimate
+goal.  The high, vaulted ceilings and picture windows, it is said, remind us
+that there is a greater world beyond, and that our individual desires are
+dwarfed in the face of the majesty that is Order.  
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 23012
+D2
+~
+~
+0 0 23005
+S
+#23009
+The Hall of Justice~
+~
+~
+The Hall of Justice is decorated with rich gray carpeting and draperies
+fringed with gold.  At regular intervals, between the beautiful bay windows,
+stand proud statues of the greatest heroes of Justice.  The high, vaulted
+ceilings of the hall are said to represent the heights to which man must
+strive, and the gray dcor serves as a reminder that in issues of Justice,
+things are not always black and white.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23014
+D2
+~
+~
+0 0 23006
+S
+#23010
+A Place of Rest~
+~
+~
+Here at the meeting of the Hall of Laws and the Hall of Worship lies a
+place of rest and contemplation.  The deep sills of the grand picture
+windows set in the northern and western walls provide a comfortable,
+relaxing environment in which templars can unwind by reading a book or
+simply gazing out upon the beautiful temple grounds.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 23011
+D2
+~
+~
+0 0 23007
+S
+#23011
+The Hall of Worship~
+~
+~
+You stand in the south western portion of the Hall of Worship.  The hall
+is a massive, circular room with a domed ceiling.  The hall is perhaps sixty
+feet across and just as high at its center.  Here, as most everywhere in the
+temple, the architecture is marked by the monolithic pillars and vaulting
+arches which form the supports for the hall.  Ten rows of cherry wood pews
+encircle a dais at the center of the hall, atop which stands a fifty foot
+representation of Lord Vanceril, Deity of Law, Order, and Justice. 
+Decoration here is minimal so as not do detract attention from the splendor
+of Lord Vanceril.  
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 23015
+D1
+~
+~
+0 0 23012
+D3
+~
+~
+0 0 23010
+S
+#23012
+The Hall of Worship~
+~
+~
+You stand in the southern portion of the Hall of Worship.  The hall is a
+massive, circular room with a domed ceiling.  The hall is perhaps sixty feet
+across and just as high at its center.  Here, as most everywhere in the
+temple, the architecture is marked by the monolithic pillars and vaulting
+arches which form the supports for the hall.  Ten rows of cherry wood pews
+encircle a dais at the center of the hall, atop which stands a fifty foot
+representation of Lord Vanceril, Deity of Law, Order, and Justice. 
+Decoration here is minimal so as not do detract attention from the splendor
+of Lord Vanceril.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23016
+D1
+~
+~
+0 0 23013
+D2
+~
+~
+0 0 23008
+D3
+~
+~
+0 0 23011
+S
+#23013
+The Hall of Worship~
+~
+~
+You stand in the south eastern portion of the Hall of Worship.  The hall
+is a massive, circular room with a domed ceiling.  The hall is perhaps sixty
+feet across and just as high at its center.  Here, as most everywhere in the
+temple, the architecture is marked by the monolithic pillars and vaulting
+arches which form the supports for the hall.  Ten rows of cherry wood pews
+encircle a dais at the center of the hall, atop which stands a fifty foot
+representation of Lord Vanceril, Deity of Law, Order, and Justice. 
+Decoration here is minimal so as not do detract attention from the splendor
+of Lord Vanceril.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23017
+D1
+~
+~
+0 0 23014
+D3
+~
+~
+0 0 23012
+S
+#23014
+A Place of Rest~
+~
+~
+Here at the meeting of the Hall of Justice and the Hall of Worship lies a
+place of rest and contemplation.  The deep sills of the grand picture
+windows set in the northern and eastern walls provide a comfortable,
+relaxing environment in which templars can unwind by reading a book or
+simply gazing out upon the beautiful temple grounds.  
+~
+0 12 0
+Rd     0
+D2
+~
+~
+0 0 23009
+D3
+~
+~
+0 0 23013
+S
+#23015
+The Hall of Worship~
+~
+~
+You stand in the western portion of the Hall of Worship.  The hall is a
+massive, circular room with a domed ceiling.  The hall is perhaps sixty feet
+across and just as high at its center.  Here, as most everywhere in the
+temple, the architecture is marked by the monolithic pillars and vaulting
+arches which form the supports for the hall.  Ten rows of cherry wood pews
+encircle a dais at the center of the hall, atop which stands a fifty foot
+representation of Lord Vanceril, Deity of Law, Order, and Justice. 
+Decoration here is minimal so as not do detract attention from the splendor
+of Lord Vanceril.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23018
+D1
+~
+~
+0 0 23016
+D2
+~
+~
+0 0 23011
+S
+#23016
+Before Lord Vanceril's Idol~
+~
+~
+You stand at the base of Lord Vanceril's idol.  The fifty foot statue
+erected in celebration of His glory is a masterwork among the masterworks
+which adorn the temple.  An ethereal light, which seems to emanate from
+somewhere over the idol's shoulders leaves little doubt of the presence of
+divinity.  The statue stands atop a raised dais, its base surrounded by silk
+draperies and flowers.  A donation box has been placed at the base of Lord
+Vanceril's idol where tithes may be placed, and the strong may donate used
+equipment to the needy.  
+~
+0 1036 0
+Rd     0
+D0
+~
+~
+0 0 23019
+D1
+~
+~
+0 0 23017
+D2
+~
+~
+0 0 23012
+D3
+~
+~
+0 0 23015
+S
+#23017
+The Hall of Worship~
+~
+~
+You stand in the eastern portion of the Hall of Worship.  The hall is a
+massive, circular room with a domed ceiling.  The hall is perhaps sixty feet
+across and just as high at its center.  Here, as most everywhere in the
+temple, the architecture is marked by the monolithic pillars and vaulting
+arches which form the supports for the hall.  Ten rows of cherry wood pews
+encircle a dais at the center of the hall, atop which stands a fifty foot
+representation of Lord Vanceril, Deity of Law, Order, and Justice. 
+Decoration here is minimal so as not do detract attention from the splendor
+of Lord Vanceril.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23020
+D2
+~
+~
+0 0 23013
+D3
+~
+~
+0 0 23016
+S
+#23018
+The Hall of Worship~
+~
+~
+You stand in the north western portion of the Hall of Worship.  The hall
+is a massive, circular room with a domed ceiling.  The hall is perhaps sixty
+feet across and just as high at its center.  Here, as most everywhere in the
+temple, the architecture is marked by the monolithic pillars and vaulting
+arches which form the supports for the hall.  Ten rows of cherry wood pews
+encircle a dais at the center of the hall, atop which stands a fifty foot
+representation of Lord Vanceril, Deity of Law, Order, and Justice. 
+Decoration here is minimal so as not do detract attention from the splendor
+of Lord Vanceril.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23019
+D2
+~
+~
+0 0 23015
+S
+#23019
+The Hall of Worship~
+~
+~
+You stand in the northern portion of the Hall of Worship.  The hall is a
+massive, circular room with a domed ceiling.  The hall is perhaps sixty feet
+across and just as high at its center.  Here, as most everywhere in the
+temple, the architecture is marked by the monolithic pillars and vaulting
+arches which form the supports for the hall.  Ten rows of cherry wood pews
+encircle a dais at the center of the hall, atop which stands a fifty foot
+representation of Lord Vanceril, Deity of Law, Order, and Justice. 
+Decoration here is minimal so as not do detract attention from the splendor
+of Lord Vanceril.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23022
+D1
+~
+~
+0 0 23020
+D2
+~
+~
+0 0 23016
+D3
+~
+~
+0 0 23018
+S
+#23020
+The Hall of Worship~
+~
+~
+You stand in the north eastern portion of the Hall of Worship.  The hall
+is a massive, circular room with a domed ceiling.  The hall is perhaps sixty
+feet across and just as high at its center.  Here, as most everywhere in the
+temple, the architecture is marked by the monolithic pillars and vaulting
+arches which form the supports for the hall.  Ten rows of cherry wood pews
+encircle a dais at the center of the hall, atop which stands a fifty foot
+representation of Lord Vanceril, Deity of Law, Order, and Justice. 
+Decoration here is minimal so as not do detract attention from the splendor
+of Lord Vanceril.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23017
+D3
+~
+~
+0 0 23019
+S
+#23021
+The Kitchens~
+~
+~
+The kitchen appears to be one of the busiest rooms in the temple.  All
+around you chefs, sous chefs and sculleries go about their business, all but
+ignoring you completely.  Construction here is similar to that everywhere
+else in the temple with the exception of the predominance of the chimneys,
+which line the walls where you might have expected to see windows.  The
+wooden tables and work benches, which take up most of the room, are covered
+with a mix of cookware and food stuff.  Wood for the fires and mutton for
+the spits seems to be coming up from the cellars through and entrance in the
+floor of the room's south eastern corner.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23022
+D5
+~
+~
+3 0 23052
+S
+#23022
+The Back Hall~
+~
+~
+The back hall leads from the Hall of Worship to the banquet hall at the
+northern end of the temple.  From the west, the smell of cooking drifts into
+the hall.  From the east, the smell of the midden.  
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 23024
+D1
+~
+~
+0 0 23023
+D2
+~
+~
+0 0 23019
+D3
+~
+~
+0 0 23021
+S
+#23023
+The Lav~
+~
+~
+The temple's lavatory is a fairly small room.  There are two private
+holes above the midden, and a wash basin where you can clean up.  The room
+is exceptionally neat and tidy considering its purpose.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23022
+S
+#23024
+The Banquet Hall~
+~
+~
+The banquet hall is a place of ostentatious beauty.  A great array of
+finely crafted tables and chairs fill the majority of the room.  Upon the
+tables are sets of the finest linen and services of the finest silver and
+porcelains.  Stunning floral arrangements serve as centerpieces for each
+table.  Along the northern wall, upon a raised dais, sits the head table. 
+The richness and rarity of everything upon it seems increased tenfold over
+what rests upon the other tables.  The skirting which encircles it appears
+to have been woven from the finest white silks, slashed through with gold. 
+The centerpiece is composed of the rarest of orchids.  Below the head table
+is an open area for talking or dancing, while behind it the temple's crest
+is emblazoned upon the wall.  Here, as everywhere in the temple, the
+architecture features towering pillars and a vaulted ceiling, all
+constructed of the finest white marble.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23022
+S
+#23025
+Atop the Staircase~
+~
+~
+You stand at the top of a marvelous marble staircase which winds its way
+up from the Hall of Welcome below.  From here, the view out the front
+windows of the temple is marvelous as it overlooks the forested countryside
+to the south.  The view of The Hall of Welcome is likewise a glorious sight
+to behold.  The towering, fluted, white marble columns rise well above your
+head, even here on the second floor.  The beautifully worked statues and the
+friezes which top the columns' capitals add richness to the already opulent
+hall.  From here, the landing you stand upon leads east, to The Hall of
+Peace, or you can take the stairs back down to the first floor.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 23026
+D5
+~
+~
+0 0 23059
+S
+#23026
+The Landing~
+~
+~
+The view through the towering paladin windows which line the south face
+of the temple is truly beautiful.  Beyond a stretch of towering conifers to
+the south, the glimmer of light upon water can be seen.  Light on the water
+of the great inland sea shimmers and dances upon the waves.  The view of The
+Hall of Welcome is likewise a glorious sight to behold.  The towering,
+fluted, white marble columns rise well above your head, even here on the
+second floor.  The beautifully worked statues and the friezes which top the
+columns' capitals add richness to the already opulent hall.  North of you
+lies The Hall of Peace.  East and west of here the grand staircases curve
+down to the temple's ground floor.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23028
+D1
+~
+~
+0 0 23027
+D3
+~
+~
+0 0 23025
+S
+#23027
+Atop the Staircase~
+~
+~
+You stand at the top of a marvelous marble staircase which winds its way
+up from the Hall of Welcome below.  From here, the view out the front
+windows of the temple is marvelous as it overlooks the forested countryside
+to the south.  The view of The Hall of Welcome is likewise a glorious sight
+to behold.  The towering, fluted, white marble columns rise well above your
+head, even here on the second floor.  The beautifully worked statues and the
+friezes which top the columns' capitals add richness to the already opulent
+hall.  From here, the landing you stand upon leads west, to The Hall of
+Peace, or you can take the stairs back down to the first floor.  
+~
+0 12 0
+Rd     0
+D3
+~
+~
+0 0 23026
+D5
+~
+~
+0 0 23002
+S
+#23028
+The Hall of Peace~
+~
+~
+The Hall of Peace is a quiet hallway, off of which lie the offices of
+many of the temple's most important members.  Along this hall can be found
+magic and supply shops, training and practice areas, as well as a library,
+and the temple's vault.  At the north most end of the hall lies the office
+of the Grand Justiciar, the most revered of the temple's staff.  The dcor
+here is similar to that found in the halls of Law, Order, and Justice, on
+the first level.  Tall, fluted columns and vaulted ceilings make you feel as
+though you walk through halls intended to accommodate giants.  Here, unlike
+the hallways below, there are no windows.  The space has instead been
+devoted to portraits of past Grand Justiciars, and others of standing
+amongst the temple's elite.  Lamps light the hall at regular intervals,
+their reflectors angling their light towards the paintings.  The effect is
+such that the hallway is lit only dimly and portraits are cast into even
+greater prominence than their six by eight foot canvas already did.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23030
+D2
+~
+~
+0 0 23026
+S
+#23029
+Durant's Shoppe~
+~
+~
+Durant's Shoppe is a neat and well kept store of items, useful to
+intrepid adventurers.  Very little is left out on display, but Canin is
+always happy to provide his customers with a list of items he carries.  Type
+LIST to see a list of his wares.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23030
+S
+#23030
+The Hall of Peace~
+~
+~
+You stand in The Hall of Order, between a pair of shops.  To the WEST is
+DURANT's SHOPPE, to the EAST, MYSTRIM's APOTHECARY.  From above the door to
+each, a great portrait of the shops' keepers looks down upon you.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23032
+D1
+~
+~
+0 0 23031
+D2
+~
+~
+0 0 23028
+D3
+~
+~
+0 0 23029
+S
+#23031
+Mystrim's Apothecary~
+~
+~
+Mystrim's Apothecary is a bright and cheery store of balms and tinctures,
+scrolls and potions.  The room is neat and tidy, her wares kept neatly on
+shelves behind her counter.  Type LIST for a list of what she might sell
+you.  
+~
+0 1032 0
+Rd     0
+D3
+~
+~
+0 0 23030
+S
+#23032
+The Hall of Peace~
+~
+~
+The Hall of Peace is a quiet hallway, off of which lie the offices of
+many of the temple's most important members.  Along this hall can be found
+magic and supply shops, training and practice areas, as well as a library,
+and the temple's vault.  At the north most end of the hall lies the office
+of the Grand Justiciar, the most revered of the temple's staff.  The dcor
+here is similar to that found in the halls of Law, Order, and Justice, on
+the first level.  Tall, fluted columns and vaulted ceilings make you feel as
+though you walk through halls intended to accommodate giants.  Here, unlike
+the hallways below, there are no windows.  The space has instead been
+devoted to portraits of past Grand Justiciars, and others of standing
+amongst the temple's elite.  Lamps light the hall at regular intervals,
+their reflectors angling their light towards the paintings.  The effect is
+such that the hallway is lit only dimly and portraits are cast into even
+greater prominence than their six by eight foot canvas already did.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23034
+D2
+~
+~
+0 0 23030
+S
+#23033
+The Practice Hall~
+~
+~
+The practice hall is a truly astonishing place.  All manner of strange
+devices and contraptions have been set up at various points around the room.
+It is here that the temple's warriors come to learn new skills from a
+master.  Type PRACTICE for a list of things you can brush up on.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23034
+S
+#23034
+The Hall of Peace~
+~
+~
+You stand in The Hall of Order, between The Halls of PRACTICE and
+TRAINING.  To the WEST is HALDWIN will help you PRACTICE your skills, to the
+EAST, DREBUN waits to TRAIN you.  Above the door to each hall, a great
+portrait of its master looks down upon you.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23036
+D1
+~
+~
+0 0 23035
+D2
+~
+~
+0 0 23032
+D3
+~
+~
+0 0 23033
+S
+#23035
+The Training Hall~
+~
+~
+The Training Hall contains a strange series of training tools, from
+weight sets to finger puzzles, jig-saw puzzles to high wires.  Anything and
+everything one might wish to use while training their body can be found
+here.  Type TRAIN to see what you can brush up on.  
+~
+0 1032 0
+Rd     0
+D3
+~
+~
+0 0 23034
+S
+#23036
+The Hall of Peace~
+~
+~
+The Hall of Peace is a quiet hallway, off of which lie the offices of
+many of the temple's most important members.  Along this hall can be found
+magic and supply shops, training and practice areas, as well as a library,
+and the temple's vault.  At the north most end of the hall lies the office
+of the Grand Justiciar, the most revered of the temple's staff.  The dcor
+here is similar to that found in the halls of Law, Order, and Justice, on
+the first level.  Tall, fluted columns and vaulted ceilings make you feel as
+though you walk through halls intended to accommodate giants.  Here, unlike
+the hallways below, there are no windows.  The space has instead been
+devoted to portraits of past Grand Justiciars, and others of standing
+amongst the temple's elite.  Lamps light the hall at regular intervals,
+their reflectors angling their light towards the paintings.  The effect is
+such that the hallway is lit only dimly and portraits are cast into even
+greater prominence than their six by eight foot canvas already did.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23038
+D2
+~
+~
+0 0 23034
+S
+#23037
+The Library~
+~
+~
+The temple's library contains a formidable collection of works from all
+across the known world.  The histories and cultures of every major race are
+represented here, if not all as well as they should be.  The library
+contains a great many tomes written in different tongues as well, and can be
+an invaluable resource when trying to learn other languages.  Type LEARN to
+see which languages you might try to pick up.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23038
+S
+#23038
+The Hall of Peace~
+~
+~
+You stand at the northern most end of the Hall of Peace.  North of you,
+the Sanctuary of the Grand Justiciar stands open before you.  To the east,
+the temple's vast library is open, the head librarian, Master LEUWAN is said
+to teach those who wish to LEARN other LANGUAGES for a small tutoring fee. 
+West of you lies the temple VAULTS.  Master NEEMER keeps a careful eye on
+the temple's ledgers from that room, and may be willing to help you manage
+your own money should you come into any.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23040
+D1
+~
+~
+0 0 23039
+D2
+~
+~
+0 0 23036
+D3
+~
+~
+0 0 23037
+S
+#23039
+The Vault~
+~
+~
+The temple's vault stands closed behind the counter before you.  The room
+you stand in is quite small compared to the rest of those on this level,
+presumably to leave more room available for stocks of gold and valuables
+within the vault itself.  The room's dcor is modest but tasteful and,
+considering the fervor with which the temple has been known to defend it's
+assets, remarkably friendly.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23038
+S
+#23040
+The Grand Justiciar's Study~
+~
+~
+The Grand Justiciar's study is a cozy nook, set at the northern end of
+the Hall of Peace, and snugged up against the southern wall of the towering
+Hall of Worship.  The dcor is soft, featuring an abundance of rugs and
+tapestries, the lighting soft and warm.  At the center of the study, a
+sturdy maple desk and chair set provide a work space for the Justiciar when
+he's here.  A pair of chairs, similar to the one behind the desk, stand in
+front of it, presumably for use by guests and petitioners.  A large book
+case stands behind the desk, helping to lend the person who sits before it a
+wizened air.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23038
+S
+#23041
+The End of the Road~
+~
+~
+You stand at the northern end of the supply road leading to the store
+rooms beneath the temple of Law, Order, and Justice.  The air is crisp and
+clean, smelling of the fragrant spruce which lines the road, mixed with a
+hint of water from somewhere in the distance.  This is a humble point from
+which to begin one's adventuring career, and yet, the atmosphere seems full
+of promise.  How many of the realm's greatest heroes have begun their
+careers from this very point?  
+~
+0 4 3
+Rd     0
+D2
+~
+~
+0 0 23042
+S
+#23042
+Before the Service Doors~
+~
+~
+You stand before the great service doors at the base of the temple of
+Law, Order, and Justice.  The air here is crisp and clean, scented by the
+spruce forest which stretches out before you to the north.  Now and again
+supply wagons, pulled by plodding mules, amble by making deliveries of
+supplies to the temple.  The sturdy, oaken doors, lavishly carved with the
+ancient symbols of the faith, are a testament to the attention to detail,
+and incredible wealth which was poured into the construction of the temple. 
+Even here, where none but porters and merchants might see, the temple still
+reminds all comers of the glory of her devotion.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 23041
+D2
+~
+~
+3 0 23043
+S
+#23043
+At the Receiving Doors~
+~
+~
+You stand inside the great receiving doors set within the cellars of the
+Temple of Law, Order and Justice.  The doors, standing fifteen, or perhaps
+even twenty feet tall, are beautifully carved with the ancient symbols of
+the faith.  The area appears to be kept neat and clear of obstructions,
+except when deliveries are being made, and the many torches bracketed along
+the walls, provide excellent light when the receiving doors are closed The
+enormous storage cellar stretches out before you to the south and east.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 23042
+D1
+~
+~
+0 0 23044
+D2
+~
+~
+0 0 23046
+S
+#23044
+The Cellar's Northern End~
+~
+~
+You stand at the northern end of the storage cellar in the Temple of Law,
+Order, and Justice, between two towering rows of shelves.  The shelves house
+countless bottles and jars, filled with fine wines, jams and preserves.  The
+rows on rows of items are a dizzying sight, teeming with colour and a
+multitude of form.  It is difficult to conceive of the logistics required to
+keep the temple properly supplied, and al of the essentials in proper order.
+From the number of servants about, it is easy at least, to see that it is by
+no means an easy task.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23045
+D2
+~
+~
+0 0 23047
+D3
+~
+~
+0 0 23043
+S
+#23045
+A Corner in the Cellar~
+~
+~
+You find yourself in the north eastern corner of the storage cellars
+beneath the Temple of Law, Order, and Justice.  To the south of you, the
+impressive array of wines which the temple keeps at hand for special
+occasions stretches out before you.  Row upon row of the finest vintages
+rest in the shadows of the cellar, waiting for the perfect occasion To the
+west, in the distance, you can see the huge service doors by which produce
+is brought into the temple.  The light here is dim, out of respect for the
+wine, but the area is neat, and well organized.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23048
+D3
+~
+~
+0 0 23044
+S
+#23046
+The Western Aisle~
+~
+~
+The western aisle of the cellars is populated mainly with the staples of
+every day life.  Meat, cheese, eggs and flour.  The selection which is to be
+found here is quite impressive.  Soft and hard cheeses, golden, white, even
+blue in colour stand next to smoked quail, pheasant, pike and herring, deer
+and steer, rabbit and mutton.  Flour and grain of every imaginable variety
+fill the bottom shelves, ready to be put to use in making flour, or as side
+dishes to accompany the main fare.  Everything is neat and well kept for the
+most part, though from time to time, the astute observer might discover a
+hint that these halls are not completely free of rodent life.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23043
+D2
+~
+~
+0 0 23049
+S
+#23047
+Between the Shelves~
+~
+~
+The cellar's center aisle is reserved for preserves, jellies, jams,
+pickles and confectionaries.  A truly inspiring selection greets you as you
+move along the shelves.  From dill and sweet pickles to salted eggs and
+jellied fruit, from deer testicles preserved in oil, to canned suckers,
+there seems to be no end to the delicacies being stored here.  Each type of
+preserve is stored neatly together, named with a tag affixed to the shelf
+upon which it sits, apparently in alphabetical order.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23044
+D2
+~
+~
+0 0 23050
+S
+#23048
+The Eastern Aisle~
+~
+~
+The eastern aisle of the cellar is inhabited by exquisite array of wines
+which the temple keeps at hand for special occasions.  Row upon row of the
+finest vintages rest in the shadows of the cellar, waiting for the perfect
+occasion.  It is remarkably quiet, and peaceful here.  The sounds of men
+moving goods rarely drifts to this aisle.  The dusky quiet, and ancient
+bottles combine to give you a feeling of walking thought time.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23045
+D2
+~
+~
+0 0 23051
+S
+#23049
+The Western Aisle~
+~
+~
+The western aisle of the cellars is populated mainly with the staples of
+every day life.  Meat, cheese, eggs and flour.  The selection which is to be
+found here is quite impressive.  Soft and hard cheeses, golden, white, even
+blue in colour stand next to smoked quail, pheasant, pike and herring, deer
+and steer, rabbit and mutton.  Flour and grain of every imaginable variety
+fill the bottom shelves, ready to be put to use in making flour, or as side
+dishes to accompany the main fare.  Everything is neat and well kept for the
+most part, though from time to time, the astute observer might discover a
+hint that these halls are not completely free of rodent life.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23046
+D2
+~
+~
+0 0 23052
+S
+#23050
+Between the Shelves~
+~
+~
+The cellar's center aisle is reserved for preserves, jellies, jams,
+pickles and confectionaries.  A truly inspiring selection greets you as you
+move along the shelves.  From dill and sweet pickles to salted eggs and
+jellied fruit, from deer testicles preserved in oil, to canned suckers,
+there seems to be no end to the delicacies being stored here.  Each type of
+preserve is stored neatly together, named with a tag affixed to the shelf
+upon which it sits, apparently in alphabetical order.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23047
+D2
+~
+~
+0 0 23053
+S
+#23051
+The Eastern Aisle~
+~
+~
+The eastern aisle of the cellar is inhabited by exquisite array of wines
+which the temple keeps at hand for special occasions.  Row upon row of the
+finest vintages rest in the shadows of the cellar, waiting for the perfect
+occasion.  It is remarkably quiet, and peaceful here.  The sounds of men
+moving goods rarely drifts to this aisle.  The dusky quiet, and ancient
+bottles combine to give you a feeling of walking thought time.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23048
+D2
+~
+~
+0 0 23054
+S
+#23052
+Below the Kitchen~
+~
+~
+The cellars are alive with activity directly below the temple's kitchen. 
+Sculleries and stock boys rush about, in search of one item or another which
+Master Campbell's kitchen crew requires.  The air is pleasant, kept
+temperate by the heat from the ovens above mixing with the fresh air from
+the receiving doors north set within the cellar's northern wall.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23049
+D1
+~
+~
+0 0 23053
+D4
+~
+~
+3 0 23021
+S
+#23053
+East of the Stairs~
+~
+~
+You stand in the cellars of the temple of Law, Order and Justice, to the
+east of a set of stairs which rise to the temple's kitchens above.  The air
+here is pleasantly warm, and filled with the aromas of cooking meats and
+breads.  South of you, crates standing tall as a man, and stacked nearly to
+the floor boards above, form an effective wall, barring you from moving any
+farther in that direction.  To the north, between sets of enormous shelves,
+a passage leads away towards the back of the temple, and the receiving
+doors.  East of you, it appears there may be room for you to squeeze between
+crates and travel farther south if you should so desire.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23050
+D1
+~
+~
+0 0 23054
+D3
+~
+~
+0 0 23052
+S
+#23054
+A Crack in the Wall~
+~
+~
+You stand in the south eastern corner of the main storage area beneath
+the temple of Law, Order, and Justice.  It would appear that considerable
+effort is put into keeping the area neat, dry and well lit.  The stone floor
+appears to have been recently washed, as do the walls, which show no signs
+of dirt, even directly above the chimneys of the lanterns which provide
+light here.  To the west, at that far side of the store room, a set of
+stairs leads up to the kitchens above.  To the north, an impressive wine
+rack stretches on into the distance.  South of you, crates have been piled
+nearly to the rafters, effectively forming a wall.  The crates are less
+organized here than in other areas.  It appears you may be able to find a
+way through if you SEARCH for one.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23051
+D2
+~
+~
+512 0 23055
+D3
+~
+~
+0 0 23053
+S
+#23055
+Behind the Crates~
+~
+~
+You stand in a dusty passage, concealed from the main storage space by a
+towering wall of crates to your north.  You're certain that there's a
+passage here which you can use to return to the main space, but even as you
+turned about upon entering, the proper path seemed to have occluded itself. 
+Great arrays of furniture, and decorative sculpture have been stored here. 
+In the dim light, the faces of statues and ornately carved legs of long
+abandoned tables and chairs form gruesome monsters in your mind.  Once
+undoubtedly beautiful, these works of art have taken on a sinister aspect,
+which reinforces itself when considered in relation to their location, and
+the marvels which populate the rest of the temple.  The stark contrast of
+this place, and the rest of the temple, is slightly unnerving.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+512 0 23054
+D2
+~
+~
+0 0 23057
+S
+#23056
+At the Base of the Crates~
+~
+~
+You stand at the foot of a mountainous stack of wooden crates which
+reaches nearly to the floorboards above you.  Encroaching upon the small
+path in which you're currently standing is a forest of old tables, stacks of
+chairs and wardrobes which have been piled together to your north.  You can
+pick out a sort of stair case created by the uneven positioning of the
+crates to your south, which appears to lead all the way to the top of the
+pile.  Rustling noises and the odd squeak seem to suggest that the vermin
+which populate this portion of the temple have found such lofty heights
+hospitable.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23057
+D4
+~
+~
+0 0 23064
+S
+#23057
+A Crampped Passage~
+~
+~
+You stand at a cross roads of sorts, intersecting passages between
+towering stacks of stored goods within the cellars of the temple of Law,
+Order and Justice.  On three sides, tall stacks of ornate furnishings
+stretch towards the rafters overhead.  To the southwest however, crates
+similar to those you had to traverse to reach this area have been stacked
+high above your head.  Dust and grime are prevalent here.  It would seem
+that few venture here, into what has now become primarily the domain of rats
+and similar vermin.  It is difficult not to feel a sense of embarrassment
+when considering how much wealth sits neglected and decaying in this part of
+the temple.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23055
+D1
+~
+~
+0 0 23058
+D2
+~
+~
+0 0 23060
+D3
+~
+~
+0 0 23056
+S
+#23058
+Before the Eastern Wall~
+~
+~
+You have forced your way through the twisted passage between abandoned
+chairs, desks, wardrobes and vanities, to the exterior wall of the temple. 
+All around, the skeletons of long abandoned beauty haunt you as you creep
+amongst them.  The tragic ends of so many things of beauty is heart
+wrenching and senseless.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23057
+S
+#23059
+The Hall of Welcome~
+~
+~
+You stand in the Hall of Welcome, west of the entrance to the Temple of
+Law, Order, and Justice.  The architecture is astoundingly beautiful.  The
+western leg of an awe inspiring curved staircase ascends to the temple's
+second level from here.  The polished marble banister and spindles serve as
+a strong contrast for the plush red carpet which runs along the rise of the
+stairs.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23001
+D3
+~
+~
+0 0 23062
+D4
+~
+~
+0 0 23025
+S
+#23060
+Before the Southern Wall~
+~
+~
+You stand in a cramped walk way, enclosed by abandoned cabinetry and
+chairs, which lean out at frightening angles above the path.  More than in
+other areas within this cramped storage area at the back of the cellars,
+there is some extra space here, as though at some point someone removed a
+considerable amount of stored goods from this location.  To the south, you
+can barely make out between the legs of chairs and oddly angled tables, a
+door, set within the southern wall.  It seems unlikely that anyone has used
+it recently, given the amount of debris blocking your path, yet you feel
+strangely drawn to it as you peer through the skeletons of opulence.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23057
+D2
+~
+~
+579 0 23061
+S
+#23061
+Chamber of the Lost Idol~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+579 0 23060
+S
+#23062
+The Hall of Welcome~
+~
+~
+You stand at the western end of the Hall of Welcome.  In fair weather the
+sun shines beautifully through the vaulting windows along the southern wall,
+casting a warm glow about the room.  To the east the hall continues towards
+The Grand Entry.  To the north, the Hall of Laws stands open to you.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23004
+D1
+~
+~
+0 0 23059
+S
+#23063
+Atop the Crates~
+~
+~
+The top of the crates is dusty, dirty and cramped.  There is actually a
+fair bit more room between them and the floor boards than you might have
+guessed from below.  Your supposition about the vermin population has proven
+to be well founded as well.  They are so thick here it is all but impossible
+to avoid stepping on either them or their nests.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23064
+D2
+~
+~
+0 0 23065
+S
+#23064
+Atop the Crates~
+~
+~
+The top of the crates is dusty, dirty and cramped.  There is actually a
+fair bit more room between them and the floor boards than you might have
+guessed from below.  Your supposition about the vermin population has proven
+to be well founded as well.  They are so thick here it is all but impossible
+to avoid stepping on either them or their nests.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23066
+D3
+~
+~
+0 0 23063
+D5
+~
+~
+0 0 23056
+S
+#23065
+Atop the Crates~
+~
+~
+The top of the crates is dusty, dirty and cramped.  There is actually a
+fair bit more room between them and the floor boards than you might have
+guessed from below.  Your supposition about the vermin population has proven
+to be well founded as well.  They are so thick here it is all but impossible
+to avoid stepping on either them or their nests.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23063
+D1
+~
+~
+0 0 23066
+D2
+~
+~
+0 0 23067
+S
+#23066
+Atop the Crates~
+~
+~
+The top of the crates is dusty, dirty and cramped.  There is actually a
+fair bit more room between them and the floor boards than you might have
+guessed from below.  Your supposition about the vermin population has proven
+to be well founded as well.  They are so thick here it is all but impossible
+to avoid stepping on either them or their nests.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23064
+D2
+~
+~
+0 0 23068
+D3
+~
+~
+0 0 23065
+S
+#23067
+Atop the Crates~
+~
+~
+The top of the crates is dusty, dirty and cramped.  There is actually a
+fair bit more room between them and the floor boards than you might have
+guessed from below.  Your supposition about the vermin population has proven
+to be well founded as well.  They are so thick here it is all but impossible
+to avoid stepping on either them or their nests.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23065
+D1
+~
+~
+0 0 23068
+S
+#23068
+Atop the Crates~
+~
+~
+The top of the crates is dusty, dirty and cramped.  There is actually a
+fair bit more room between them and the floor boards than you might have
+guessed from below.  Your supposition about the vermin population has proven
+to be well founded as well.  They are so thick here it is all but impossible
+to avoid stepping on either them or their nests.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23066
+D3
+~
+~
+0 0 23067
+S
+#23069
+The Gauntlet~
+~
+~
+~
+0 12 0
+Rd     0
+S
+#23070
+The Gauntlet~
+~
+~
+~
+0 12 0
+Rd     0
+S
+#23071
+The Halls of Symmetry~
+~
+~
+This hall has been built so that each of it's sides mirrors the one
+opposite it.  Like the rest of the temple, it's walls have been constructed
+of cold, grey stone and your footsteps echo eerily as you walk along it. 
+Before you stands a kindly looking old man who you recognize as Sir Howard,
+the man who greeted you upon entering the halls.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23072
+D2
+~
+~
+0 0 23073
+D3
+~
+~
+3 0 23074
+S
+#23072
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23071
+S
+#23073
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23071
+S
+#23074
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 23071
+S
+#23075
+The Halls of Conformity~
+~
+~
+The construction of this hall seems to conform with the basic
+construction techniques used in the rest of the temple: solid wooden doors
+set in simple grey stone.  The torches seem to cast a cool, sterile light
+along it's entire length.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23076
+D2
+~
+~
+0 0 23077
+D3
+~
+~
+0 0 23078
+S
+#23076
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23075
+S
+#23077
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23075
+S
+#23078
+The Halls of Conformity~
+~
+~
+The construction of this hall seems to conform with the basic
+construction techniques used in the rest of the temple: solid wooden doors
+set in simple grey stone.  The torches seem to cast a cool, sterile light
+along it's entire length.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23079
+D1
+~
+~
+0 0 23075
+D2
+~
+~
+0 0 23080
+D3
+~
+~
+0 0 23081
+S
+#23079
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23078
+S
+#23080
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23078
+S
+#23081
+The Halls of Conformity~
+~
+~
+The construction of this hall seems to conform with the basic
+construction techniques used in the rest of the temple: solid wooden doors
+set in simple grey stone.  The torches seem to cast a cool, sterile light
+along it's entire length.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23082
+D1
+~
+~
+0 0 23078
+D2
+~
+~
+0 0 23083
+D3
+~
+~
+0 0 23084
+S
+#23082
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23081
+S
+#23083
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23081
+S
+#23084
+The Halls of Conformity~
+~
+~
+The construction of this hall seems to conform with the basic
+construction techniques used in the rest of the temple: solid wooden doors
+set in simple grey stone.  The torches seem to cast a cool, sterile light
+along it's entire length.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23085
+D1
+~
+~
+0 0 23081
+D2
+~
+~
+0 0 23086
+D3
+~
+~
+0 0 23087
+S
+#23085
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23084
+S
+#23086
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23084
+S
+#23087
+The Halls of Conformity~
+~
+~
+The construction of this hall seems to conform with the basic
+construction techniques used in the rest of the temple: solid wooden doors
+set in simple grey stone.  The torches seem to cast a cool, sterile light
+along it's entire length.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23088
+D1
+~
+~
+0 0 23084
+D2
+~
+~
+0 0 23089
+D3
+~
+~
+0 0 23090
+S
+#23088
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23087
+S
+#23089
+The Gauntlet~
+~
+~
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23087
+S
+#23090
+The Gauntlet~
+~
+~
+You stand in a simple, square, grey stone room.  The floor is covered in
+a thin layer of shimmering white sand, which you asume was put here to
+cushion the falls of the vanquished.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23087
+S
+#23091
+The Prelate's Study~
+~
+~
+Hidden behind the beautiful pipe organ lies the study of our Prelate. 
+It's simple elegance is striking and one can't help but admire the decor. 
+An elegant rug covers the simple stone floor atop which a simple wooden desk
+with a dark stain has been placed.  A matching chair sits behind the desk
+which is immaculatly clean while maintaing the air of having been worked at
+recently.  The walls are lined with religious tomes stacked neatly upon
+servicable shelves.  The lone window which graces the north wall has been
+covered with thick burgundy drapes.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+512 0 23093
+S
+#23092
+The Rector's Reading Room~
+~
+~
+The reading room is tastefully funrnished with a simple wooden desk and a
+comfortable looking chair as well as several large book shelves which you
+assume have been lined with religious tomes.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23093
+S
+#23093
+The Chapel~
+~
+~
+The Chapel is one of the few places in the temple of Law Order and
+Justice which sports any ornamentation.  The floor is covered with a
+beautiful, plush, red carpet and a massive pipe organ sits against the north
+wall.  Two aisles of pews run the length of the room and an altar,
+intricatly carved from a single slab of pure, white marble sits at the apex
+of the room.  Over head, the roof has been constructed of stained glass, a
+massive pictoral display of this ordered sanctuary and the chaos which
+surrounds which filters and dims the light of the sun, shining with it's
+brilliance during the day, while catching and reflecting the flicker of
+torch light at night.  To the east lies the Abbot's reading room and to the
+west the Rector's.  To the south a hallway leads to the steeple.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+512 0 23091
+D1
+~
+~
+0 0 23094
+D2
+~
+~
+0 0 23095
+D3
+~
+~
+0 0 23092
+S
+#23094
+The Abbots Reading Room~
+~
+~
+The reading room is tastefully furnished with a simple wooden desk and a
+comfortable chair, as well as several large book shelves which you
+assume have been lined with religious tomes.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23093
+S
+#23095
+A Hallway~
+~
+~
+You stand in the simple stone hallway which runs between the Chapel and
+Steeple.  A slight draft chills you as it drifts in from the south.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23093
+D2
+~
+~
+0 0 23096
+S
+#23096
+The Steeple~
+~
+~
+You stand at the base of the steeple tower.  A large hemp rope hangs
+limply before you through a small opening in the ceiling.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23095
+D4
+~
+~
+512 0 23097
+S
+#23097
+The Bell Tower~
+~
+~
+This is the top of the bell tower.  All of the gears and mechanisms which
+make the bell toll when the rope is pulled are housed up here, along with
+what is perhaps the largest bell you've ever seen.  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+512 0 23096
+S
+#23098
+Ordered Space~
+~
+~
+~
+0 393226 0
+Rd     0
+D4
+~
+~
+512 0 23011
+S
+#23099
+The Lord's Domain~
+~
+~
+This is where the Lord of Law Order and Justice meets with mortals whom he feels are worthy of his time.  If you are here you are truly blessed amongst his followers.
+~
+0 393226 0
+Rd     0
+D5
+~
+~
+0 0 23093
+S
+#23100
+None~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 23001 1 23001
+O 0 23100 0 23001
+O 0 23007 0 23007
+O 0 23006 0 23008
+O 0 23008 0 23009
+M 0 23011 1 23012
+M 0 23002 1 23016
+O 0 23001 0 23016
+M 0 23003 1 23021
+G 0 23002 0
+G 0 23003 0
+G 0 23004 0
+G 0 23005 0
+M 0 23005 1 23029
+M 0 23006 1 23031
+M 0 23007 1 23033
+M 0 23008 1 23035
+M 0 23009 1 23037
+M 0 23010 1 23039
+M 0 23004 1 23040
+M 0 23012 1 23054
+M 0 23013 1 23061
+M 0 23069 1 23069
+E 0 23028 0 1
+E 0 23008 0 13
+E 0 23014 0 20
+G 0 23027 0
+M 0 23070 1 23070
+E 0 23010 0 15
+E 0 23031 0 7
+E 0 23024 0 20
+E 0 23005 0 6
+M 0 23071 1 23071
+M 0 23072 1 23072
+E 0 23003 0 3
+E 0 23019 0 24
+E 0 23026 0 20
+M 0 23073 1 23073
+E 0 23005 0 6
+E 0 23015 0 22
+E 0 23024 0 20
+M 0 23074 1 23074
+E 0 23018 0 8
+E 0 23017 0 9
+E 0 23017 0 10
+E 0 23025 0 20
+M 0 23075 1 23075
+M 0 23076 1 23076
+E 0 23023 0 20
+E 0 23032 0 7
+E 0 23003 0 3
+E 0 23015 0 22
+M 0 23077 1 23077
+E 0 23012 0 17
+E 0 23019 0 24
+E 0 23004 0 5
+E 0 23013 0 18
+M 0 23079 1 23079
+E 0 23011 0 16
+E 0 23018 0 8
+E 0 23028 0 1
+E 0 23028 0 2
+M 0 23080 1 23080
+E 0 23013 0 18
+E 0 23013 0 19
+E 0 23011 0 16
+G 0 23027 0
+M 0 23082 1 23082
+G 0 23035 0
+M 0 23083 1 23083
+E 0 23020 0 25
+G 0 23037 0
+G 0 23002 0
+M 0 23085 1 23085
+E 0 23004 0 5
+E 0 23009 0 14
+E 0 23003 0 3
+E 0 23026 0 20
+M 0 23087 1 23086
+E 0 23003 0 3
+E 0 23010 0 15
+E 0 23014 0 20
+E 0 23017 0 9
+M 0 23088 1 23088
+E 0 23023 0 20
+E 0 23024 0 21
+E 0 23004 0 5
+E 0 23011 0 16
+M 0 23089 1 23089
+M 0 23090 1 23090
+E 0 23029 0 20
+E 0 23029 0 21
+E 0 23004 0 5
+E 0 23006 0 11
+E 0 23011 0 16
+M 0 23091 1 23091
+M 0 23092 1 23092
+M 0 23094 1 23094
+G 0 23041 0
+G 0 23042 0
+O 0 23097 0 23097
+S
+
+
+
+#SHOPS
+23003 0 0 0 0 0 100 50 6 22
+23092 0 0 0 0 0 80 100 8 20
+23094 0 0 0 0 0 80 100 8 20
+0
+
+
+
+#$

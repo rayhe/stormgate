@@ -1,0 +1,4049 @@
+#AREADATA
+Name        {  1-6 } Mud School~
+Builders    None~
+VNUMs       100 200
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Rosencran~
+Llevel      0
+Ulevel      0
+Music       ao.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#100
+gui guildenstern~
+guildenstern~
+Guildenstern awaits your slaying.
+~
+Guildenstern where's the max amount of damroll per obj
+If you want to get higher damroll... that same eq must have a BIG BIG BIG
+- affect on it... ie) +35 damroll -35 damroll
+ 
+~
+3 100663424 0 0 0 0 S
+101 1 202 202 100000 100000d0+0 0d0+101000
+1010 0 0
+0 0 0
+0 0 0
+#101
+adept healer~
+the adept~
+An adept of Morkgoth stands here, healing your wounds.
+~
+This adept is one of the many healers with in this new world.  It is
+most important that you find one of these healers whenever your blood
+starts to flow onto the ground.  We don't want to have a pile of corpses
+with in the storm.
+~
+524291 8320 0 0 0 0 S
+110 3 220 220 30000 30000d0+0 0d0+0
+1100 0 0
+0 0 1
+3 0 0
+#102
+portia~
+Portia~
+Portia tells Furey of your arrival.
+~
+A wonderful lady whom watches over the Master Furey's office.
+She is protected by a strange mist of magic.
+~
+3 128 0 0 0 0 S
+1 3 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 2
+1 0 0
+#103
+furey~
+Furey~
+Furey stands here waiting in complete silence to train you.
+~
+Furey will train anything for you.  Just type TRAIN to see what needs to
+be trained 
+~
+524867 67109032 0 0 0 0 S
+150 1 300 300 100000 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+3 0 0
+#104
+bridget~
+Bridget~
+Bridget tells Hatchet of your arrival.
+~
+A fine younge lady, at your service.
+~
+67 136 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+0
+10 0 0
+0 0 2
+1 0 0
+#105
+hatchet~
+Hatchet~
+Hatchet will help you practice your skills and spells.
+~
+Hatchet is more or less a big ball of energy.  All powerful, that's for
+sure.
+~
+525315 33554600 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+0
+1500 0 0
+0 0 1
+1 0 0
+#106
+Zornak~
+Zornak~
+Zornak is a master of magically items and is willing to sell you some.
+~
+~
+524291 168 0 0 0 0 S
+150 1 300 300 100000 100000d0+0 0d0+150000
+1500 0 0
+0 0 1
+1 0 0
+>speech_prog Scrolls scroll recall recalling recalls~
+say Recall Scrolls allow you to come back to the temple by reciting a scroll. To be able to do this, you must first practice the SCROLLS skill.
+~
+>all_greet_prog 100~
+say Welcome $n! This is the finest magic shop in the land. We sell recall scrolls here!
+if ispc($n) == 1
+if level($n) < 10
+tell $n You need to practice the proper skill, SCROLLS, before you can use them though.
+endif
+endif
+~
+|
+#107
+Mohia~
+mohia~
+Mohia is here to sell you many baked goods.
+~
+~
+524355 136 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 1
+1 0 0
+#108
+Phino~
+Phino~
+Phino is here to prepare you for a fine adventure.
+~
+~
+524355 168 0 0 0 0 S
+150 1 300 300 100000 100000d0+0 0d0+100000
+1500 0 0
+0 0 0
+1 0 0
+#109
+sign maker~
+the Sign Maker~
+The Sign Maker is completely unaware of your presence.
+~
+An elderly man stands bitterly before you.  He has missed out on many
+promotions, making his job nearly untolerable.
+~
+67 0 0 0 0 0 S
+5 1 10 10 101 101d0+0 0d0+1000
+50 0 0
+0 0 1
+0 0 0
+#110
+adept healer~
+the adept~
+The adept is here to heal your wounds.
+~
+Always smiling, even when your wounds splatter blood onto his white
+clothes.
+~
+524291 232 0 0 0 0 S
+300 1 600 600 100000 100000d0+0 0d0+0
+3000 0 0
+0 0 1
+1 0 0
+#111
+Rat~
+the rat~
+A tiny little rat scurries around here.
+~
+Anyone can kill this rat, unless there are too afraid!  Do not let
+coward be thy name!
+~
+67 0 0 0 0 0 S
+1 1 2 2 8 8d0+0 0d0+22
+10 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+if ispc($n) == 1
+if level($n) < 2 
+tell $n pssst...read the sign!
+say You're way over your head!
+say don't say I didn't warn you!
+cackle
+endif
+endif
+~
+|
+#112
+shy monster~
+the shy monster~
+An incredible shy monster awaits your killing.
+~
+To shy for the real world, this monster has been placed here for your
+own killing pleasures.  So... kill him!
+~
+67 0 0 0 0 0 S
+1 1 2 2 12 12d0+0 0d0+34
+10 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+look $n
+,turns beet red and looks at the floor.
+~
+|
+#113
+blob~
+the blob~
+A blob not unlike any other blob in the world.
+~
+Just an ordinary blob, nothing special.
+~
+67 0 0 0 0 0 S
+1 1 2 2 8 8d0+0 0d0+150
+10 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+,blubbers and shakes like jello all over the place.
+~
+|
+#114
+ygre monster~
+Ygre~
+The dreaded Ygre is here.
+~
+Ygre, a very nasty and vulgar creature, hath been banned to this tiny little
+cage due to his own arrogance.  Strange thing is, he actually LIKES it here!
+~
+99 0 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+1
+10 0 0
+0 0 1
+0 0 0
+#115
+Zoar god~
+Zoar~
+Zoar the demoted god has gone mad!
+~
+A bitter bitter man.  Zoar spent many hours creating many areas, then one day
+he SNAPPED, getting himself demoted.  He loves it when you kill him over and
+over.  He is a nihilist and a saddist.
+~
+99 0 0 0 0 0 S
+1 1 2 2 8 8d0+0 0d0+110
+10 0 0
+0 0 1
+0 0 0
+#116
+trimek~
+Trimek~
+Trimek the mutant dragon breathes on you.
+~
+Weighing in at 3 pounds, this little dragon couldn't hurt a flea!  His
+firebreath is no more hot that the first of January in Canada.  He acts tough
+though, but is no match for anyone with a blade of any kind.
+~
+99 0 0 0 0 0 S
+1 1 2 2 9 9d0+0 0d0+120
+10 0 0
+0 0 0
+0 0 0
+#117
+xacier~
+Xacier~
+Xacier just wants to be left alone
+~
+A tall gaunt looking adventurer, who hath been sentenced fifteen years in this
+cage for violating the rules of the land.  He's very bitter.
+~
+99 0 0 0 0 0 S
+1 1 2 2 10 10d0+0 0d0+183
+10 0 0
+0 0 1
+0 0 0
+#118
+flea~
+the flea~
+A flea scratches at your feet.
+~
+They said you couldn't hurt a flea, well here's your chance to prove them
+wrong!
+~
+99 0 0 0 0 0 S
+1 1 2 2 6 6d0+0 0d0+12
+10 0 0
+0 0 0
+0 0 0
+#119
+don juan sorcerer~
+don Juan~
+Don Juan the great sorcerer stands here to commend your success.
+~
+A man of great power, don Juan teaches us to be calm in all situations.
+He is here to commend you on your success, and to invoke happiness into
+your heart.
+~
+67 40 0 0 0 0 S
+2 1 4 4 25 25d0+0 0d0+501
+20 0 0
+0 0 1
+0 0 0
+#120
+bouncing creature~
+the bouncing creature~
+A creature bounces all around you here.
+~
+BOUNCE BOUNCE BOUNCE!!!  What a happy little key creature.
+~
+67 0 0 0 0 0 S
+2 1 4 4 18 18d0+0 0d0+300
+20 0 0
+0 0 0
+0 0 0
+#121
+maggot mag~
+the maggot~
+A maggot chews on rotting flesh here.
+~
+The maggot seems to enjoy chewing on rotting flesh.  Hopefully it's not your
+rotting flesh it chooses to chew on next.
+~
+193 0 0 0 0 -1000 S
+3 1 6 6 33 33d0+0 0d0+20
+30 0 0
+0 0 0
+0 0 0
+#122
+trash heap~
+trash heap~
+The all-knowing trash heap is here.
+~
+Made from limbs of the dead, and bodily fluids from the living the trash
+squirms about with the upmost divinity.  Truely a work of art!
+~
+67 0 0 0 0 1000 S
+7 1 14 14 73 73d0+0 0d0+211
+70 0 0
+0 0 0
+0 0 0
+#123
+leech~
+the leech~
+A leech is here sucking blood.
+~
+About six inches long, the leech isn't a real threat to anyone.  In the
+strictest sense of the word, the leech sucks.
+~
+65 0 0 0 0 1000 S
+5 1 10 10 40 40d0+0 0d0+111
+50 0 0
+0 0 0
+0 0 0
+#124
+big gross bug~
+the big gross bug~
+A big gross bug crawls in a disgusting fashion around you!
+~
+It's big, it's gross, it's a BUG!
+~
+65 0 0 0 0 -1000 S
+4 1 8 8 51 51d0+0 0d0+112
+40 0 0
+0 0 0
+0 0 0
+#125
+chicken~
+the chicken~
+For some strange and twisted reason a chicken is here!?!
+~
+Yuppers, definately a chicken.  *PECK* *PECK*
+~
+65 0 0 0 0 1000 S
+5 1 10 10 65 65d0+0 0d0+154
+50 0 0
+0 0 0
+0 0 0
+#126
+healer~
+A Healer~
+This Healer is here to treat your wounds and render aide.
+~
+~
+75 134234792 0 0 0 1000 S
+120 1 240 240 30000 30000d0+0 0d0+120000
+1200 0 0
+0 0 2
+3 0 0
+#127
+methidoral guard~
+A Methidoral Guard~
+One of the numerous guards of Methidoral prowls about here.
+~
+~
+65 235987644 16 0 0 1000 S
+100 1 200 200 32000 32000d0+0 0d0+0
+1000 0 0
+0 0 1
+523999 0 0
+>fight_prog 25~
+say Your death shall come soon, $n... be peaceful in that fact.
+c 'fireball' $n
+c 'fireball' $n
+~
+>fight_prog 5~
+c 'weaken' $n
+c 'faerie fire' $n
+~
+|
+#128
+canth~
+Canth~
+Canth sits here, ready to help you learn.
+~
+~
+589891 33554560 0 0 0 0 S
+200 1 400 400 10000 10000d0+0 0d0+0
+2000 0 0
+0 0 0
+1 0 0
+#129
+The Newbie Helper~
+The Newbie Helper~
+Say HELP if you need any.
+~
+~
+524355 503316672 16 0 0 0 S
+200 1 400 400 500000 500000d0+0 0d0+0
+2000 0 0
+0 0 0
+12 0 0
+>speech_prog help ~
+smile
+say Hello $n! Welcome to Adventures of Stormgate, where many journeys lie ahead of you!
+say Can I be of assistance to you in any way?
+~
+>speech_prog yes yeah yep ya yessir yup yuppers yippers yip~
+say OK..just say one of the following, and i will help you with that topic.
+smile $n.
+mpecho LEVEL EXP EXIT PKILL PEACEFUL TRAIN PRACTICE SCHOOL STATS
+~
+>speech_prog nope no never nopers shake ~
+smile
+say Wow, $n. You must really know what you are doing! 
+~
+>speech_prog exits exit~
+say There are many auto commands that you can type:
+mpecho AUTOEXIT: will show all exits when you walk in the room.
+mpecho AUTOLOOT: will take all items in the corpse
+mpecho AUTOGOLD: will take all gold in a corpse
+mpecho AUTOSAC: will sacrifice corpses after you kill a mob
+~
+>speech_prog experience exp xp~
+say Experience is gained by killing mobs. You must gain 1000 experience for eac level.
+mpecho CONSIDER <MOB>: shows you the chances that you will be able to kill the mob in question.
+mpecho KILL <MOB>: you attempt to kill a mob.
+mpecho WORTH: shows you how much experience you have and how much you need until your next level. Also it shows your modified stats.
+ 
+say for right now, you should stay in the mud school until level 5.
+~
+>speech_prog levels level lvl~
+say to raise levels, you must gain experience from killing mobs.
+mpecho AREA: shows you what level all the areas in the game are.
+say For the time being you should stay at the mud school until you reach level 5.
+~
+>speech_prog Pkill ~
+say Pkill means that you wish to be able to fight and kill other players in the game. This will start at level 30, and you can only attack other players with a pkill flag.
+~
+>speech_prog Peaceful~
+say Peaceful means that you do not wish to kill other players. You cannot be attacked by them, no matter what level you are. Conversely, you also cannt attack them.
+~
+>speech_prog training train trai tra~
+say To train, go one south and two east from here, to Furey's Training Room.
+say there, you can train your stats, by typing train <Stat>. To see what stats you can train, just type train.
+~
+>speech_prog Practice prac pract pra~
+say With each level you gain, you will get new spells and skills. To be able to use these, you must first practice them. Starting at level three, you can go south and then two west
+say to Hatchet's Practice Room. Type Prac to see what spells/skills you can practice, and then Prac <skill> to practice it. Depending on your stats, you may have to practice more than once, to be an adept.
+~
+>speech_prog Stats statistics stat~
+say there are many stats. To see what your values are, type wo.
+mpecho STR: strength, this affects how much you can carry and how much.
+mpecho WIS: affects how many practices you get per level.
+mpecho INT: affects how many practices you need to become an adept at a skill or spell.
+mpecho DEX: affects how often you can dodge or parry an attack.
+mpecho CON: affects how many hit points you gain per level.
+say To increase your stats, go TRAIN them.
+~
+>speech_prog mud school~
+say the mud school is where all new players should go to advance LEVELS. To go there, go all south, all east and then down.
+~
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) < 2
+say Welcome to Adventures of Stormgate, $n!  I have a newbie guide for you to read.  To read it, type: READ CHAPTER, where chapter is a number.
+smile $n
+mpoload 156
+give newbie $n
+say If you need any other help, just say YES.
+else
+say You have outgrown your need for me, $n.  May you find adventure in all that you do!
+endif
+endif
+~
+|
+#130
+mangy mutt~
+The mangy mutt~
+&wA poor mutt is tied up here forgotten by its master.
+~
+~
+67 0 0 0 0 200 S
+2 1 4 4 15 15d0+0 0d0+150
+20 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+,barks one last time.
+~
+>greet_prog 100~
+,comes up wagging its tail.
+,chokes on the short leash and starts to wimper.
+~
+|
+#131
+cat~
+A black cat~
+&zA black cat with &Ggreen eyes &zlicks its paws.
+~
+&zBlack as midnight the cat moves lithely and stealthily around blending
+in with the night.  
+~
+99 0 0 0 0 -200 S
+3 1 6 6 30 30d0+0 0d0+200
+30 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+look $n
+,hisses and tries to claw at you.
+~
+|
+#132
+spider~
+A huge spider~
+&gA hairy green spider spins its huge web here.
+~
+The hairy 'thing' in front of you is too big to be a spider and yet it
+is.  You wonder if being locked away in the basement has made it mutate into
+something strange.  It stand five feet tall with long legs.  
+~
+99 0 0 0 0 -200 S
+3 1 6 6 33 33d0+0 0d0+150
+30 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+mpechoaround $n The spider's web's entangle $n as it scurries towards $n.
+~
+>death_prog 100~
+,falls flat as its legs give away. SPLAT!
+mpoload 149
+~
+|
+#133
+cockroach~
+A cockroach~
+&OA disgusting cockroach crawls on the wall here.
+~
+&OOne of the most despised creatures to the humans, the cockroach but for
+you maybe you would like it for a tasty morsel.  
+~
+67 0 0 0 0 -100 S
+3 1 6 6 36 36d0+0 0d0+200
+30 0 0
+0 0 0
+0 0 0
+>fight_prog 15~
+,moves its antennaes furiously.
+~
+|
+#134
+fly~
+The fly~
+&GA huge tropical fly buzzes around here.
+~
+A huge fly with bulbous &Yyellow eyes &Gflies around here.  You can feel
+the wind from the wings as it buzzes around.  Watch out!  It can pick you up
+and never bring you back again!  
+~
+67 0 0 0 0 -200 S
+3 1 6 6 30 30d0+0 0d0+300
+30 0 0
+0 0 0
+0 0 0
+>rand_prog 20~
+,lands on yet another spot and poops.
+~
+|
+#135
+kobold~
+A kobold~
+&BA wiry kobold is seated here playing a flute.
+~
+&BSmall in size and yet seemingly filled with strength the Kobold sits
+hear oblivious to your presence.  The flute it holds in its hands is a piece
+to behold.  You wonder how it got into this room.  
+~
+67 0 0 0 0 200 S
+3 1 6 6 36 36d0+0 0d0+250
+30 0 0
+0 0 1
+0 0 0
+>fight_prog 10~
+say How DARE you interrupt my music!!!
+,whaps you over the head with the flute.
+mpechoat $n You think you may see stars.
+stun $n
+~
+|
+#136
+centipede~
+A centipede~
+A disgusting centipede crawls around here.
+~
+Out of all the crawly things you have seen this has to be one that makes
+your skin crawl.  It's many legs move busily as it moves around from place
+to place.  Its length is about fifteen feet long.  
+~
+65 0 0 0 0 0 S
+3 1 6 6 34 34d0+0 0d0+150
+30 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+,twitches all of its legs.
+mpoload 151
+~
+|
+#137
+brownie~
+A brownie~
+&OA small brownie is sitting here thinking mischief.
+~
+A small brownie is walking around here.  It is so small you have to stoop
+to take a look and realize it's not a mouse.  It is wearing a small brown
+cloak.  It looks upset at you looking at it.  
+~
+99 0 0 0 0 0 S
+2 1 4 4 20 20d0+0 0d0+150
+20 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+,gasps and squeals 'Stop looking at me! You scare me!'
+~
+|
+#138
+Witch Hazel~
+The witch~
+Hazel sits here brewing her smelly concoctions.
+~
+Hazel is a witch whom no one would accept for her brews always smelled
+really bad!  She had been exiled to the MUD school attic to spend her years
+in solitude when once she stank up the Princess' wedding.  
+~
+67 0 0 0 0 0 S
+2 1 4 4 20 20d0+0 0d0+250
+20 0 0
+0 0 2
+0 0 0
+>rand_prog 10~
+,waves her hands around muttering and &w*&WPOOF&w* &Pnothing happens!
+~
+|
+#139
+ghost~
+The ghost~
+The ghost of a soldier flies around.
+~
+Once a brave soldier now is condemned to wander purgatory searching for
+an exit.  He is translucent and still wearing his uniform and is blood
+stained.  
+~
+65 1572864 0 0 0 0 S
+2 1 4 4 20 20d0+0 0d0+200
+20 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+mpecho &wChains of death rattle announcing the presence of the ghost.
+~
+|
+#140
+Beetle~
+The Beetle~
+A little brown beetle crawls around here.
+~
+This small, but not conventional sized, one foot beetle crawls around
+trying to get out of the attic but as we all know, all who are here are
+exiled.  
+~
+67 0 0 0 0 0 S
+2 1 4 4 20 20d0+0 0d0+200
+20 0 0
+0 0 0
+0 0 0
+#141
+moth~
+The moth~
+&gA gigantic green moth flutters around looking for a light.
+~
+This isn't your ordinary moth.  It has wings the size of your head.  It
+has pretty orange designs on it but when it flutters its dust makes you
+sneeze.  
+~
+193 524288 0 0 0 0 S
+2 1 4 4 20 20d0+0 0d0+150
+20 0 0
+0 0 0
+0 0 0
+#142
+termite~
+The termite~
+&wA huge termite which looks more like a maggot chews the attic floor.
+~
+&wLarge for a termite as is everything in these parts, it is white and
+gooey looking.  You wonder how much longer it will be before it eats all of
+the MUD school.  This termite looks like it can chew through ANYthing.  
+~
+193 0 0 0 0 0 S
+2 1 4 4 20 20d0+0 0d0+150
+20 0 0
+0 0 0
+0 0 0
+#143
+Malthius~
+Malthius~
+Malthius is here, seated behind a desk.
+~
+~
+786499 134217856 0 0 0 10 S
+110 1 220 220 1000000 1000000d0+0 0d0+0
+1100 0 0
+0 0 0
+1 0 0
+>all_greet_prog 100~
+say Greetings, I am the Class Master.  See the help on MULTICLASSING
+say for more information.
+~
+|
+#0
+
+
+
+#OBJECTS
+#100
+pill happy~
+happy pill~
+A happy happy pill is here.~
+~
+26 0 0 0 0 1 1
+100 100
+100~ sanctuary~ fireshield~ shockshield~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#101
+light~
+light of lights~
+A light~
+~
+1 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 7
+A
+4 7
+#102
+ring~
+a ring~
+A ring~
+~
+9 0 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#103
+helm~
+helm~
+Helm~
+~
+9 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#104
+plate~
+plate~
+Breastplate of plateheads~
+~
+9 0 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#105
+shroud~
+shroud of bung~
+A shroud of bung lies here~
+~
+9 0 0 0 0 1025 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#106
+mask~
+mask~
+A mask lies here~
+~
+9 0 0 0 0 65537 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#107
+bracer~
+bracer bracer bracer~
+A bracer~
+~
+9 0 0 0 0 4097 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#108
+boots~
+boots fer kickin'~
+Boots~
+~
+9 0 64 0 0 65 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#109
+legs~
+legs~
+Legs legs legs~
+~
+9 0 0 0 0 33 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#110
+arms~
+arms~
+Arms arms~
+~
+9 0 0 0 0 257 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#111
+lens len lense~
+lens of bung~
+Lense ... bung~
+~
+27 0 0 0 0 131073 1
+100 100
+0~ -1~ -1~ identify~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#112
+neck~
+neck~
+Neck~
+~
+9 0 0 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#113
+belt~
+belt~
+Belt~
+~
+9 0 2048 0 0 2049 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#114
+gloves~
+gloves~
+Gloves~
+~
+9 0 128 0 0 129 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#115
+pitchfork~
+pitchfork~
+Pitchfork...~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 0~ 0~ 3~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#116
+death~
+pillow death~
+A pill that should never be eaten lies here.~
+~
+13 0 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#117
+orange potion~
+orange potion~
+You see an orange potion of healings here.~
+~
+10 268435776 0 0 0 1 1
+100 100
+50~ cure light~ bless~ reserved~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#118
+recall~
+a scroll of recall~
+You see a scroll of recall lying here.~
+~
+2 64 0 0 0 1 1
+100 100
+100~ word of recall~ reserved~ reserved~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#119
+pie big pot~
+a big pot pie~
+You see a big pot pie~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#120
+waterskin skin water~
+waterskin~
+You see a waterskin lying here~
+~
+17 0 0 0 0 1 1
+100 100
+12~ 12~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#121
+bag~
+a bag~
+You see a bag here.~
+~
+15 0 0 0 0 1 1
+100 100
+20~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#122
+light torch~
+a torch~
+You see a torch here.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ 50~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 1
+#123
+box donation~
+a box o' donations~
+A box of donations is here.~
+~
+15 0 0 0 0 0 1
+100 100
+10000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#124
+staff of flamestrike~
+staff of flamestrike~
+A staff of flamestrike lies here.~
+~
+8 0 0 0 0 16385 0
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+5 0
+flamestrike~
+3 3
+0 0 0
+#125
+fountain~
+fountain~
+A fountain lies here, for your drinking pleasures.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#126
+orange ring~
+an orange ring~
+An orange ring lies here, blazing in the darkness.~
+~
+9 64 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#127
+necklace orange~
+an orange necklace~
+An wonderful looking orange necklace lies here.~
+~
+9 0 0 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 1
+#128
+boots boot orange~
+orange boots~
+A lovely pair of orange boots lie here.~
+~
+9 0 64 0 0 65 1
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#129
+bracer orange~
+orange bracer~
+You see a marvelous orange bracer lying here.~
+~
+9 0 0 0 0 4097 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 3
+#130
+helm orange~
+an orange helm~
+You see an orange helm here.~
+~
+9 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 2
+#131
+orange leg legs legging leggings~
+orange leggings~
+You see a pair of orange leggings here.~
+~
+9 0 0 0 0 33 1
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#132
+key~
+a key~
+You see a key here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#133
+orange belt~
+orange belt~
+You see an orange belt lying here.~
+~
+9 64 2048 0 0 2049 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 5
+#134
+diploma inner sanctum~
+diploma of inner sanctum~
+You see a diploma lying here.~
+~
+9 0 0 0 0 16385 2
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+4 1
+#135
+war banner~
+a war banner~
+A war banner glows on the ground here.~
+~
+1 64 0 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#136
+orange breastplate plate~
+orange breastplate~
+A wonderfully coloured orange breastplate lies here.~
+~
+9 64 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#137
+nerf mace~
+a nerf mace~
+An orange nerf mace lies here, waiting for usage.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 3~ 5~ 7~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#138
+orange dagger~
+orange dagger~
+A marvelous orange dagger awaits your usage here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 3~ 6~ 11~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 2
+#139
+orange wooden sword~
+wooden sword~
+An orange wooden sword lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 4~ 6~ 3~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#140
+shield orange~
+orange shield~
+You see an orange shield here.~
+~
+9 64 512 0 0 513 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#141
+orange sleeves~
+orange sleeves~
+You see a pair of orange sleeves here.~
+~
+9 64 256 0 0 257 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#142
+shroud orange~
+an orange shroud~
+You see an orange shroud here.~
+~
+9 0 0 0 0 1025 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#143
+Sign~
+sign 1~
+The FIRST SIGN of many is hanging from the wall here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Welcome to Adventures of Stormgate.  May your journey here be.... 
+Adventurous.  This is the first sign of the Mud School.  Be sure to LOOK
+SIGN or L SIGN wherever you might find one.  Also, keep an eye out for
+keywords in descriptions, as there may be other keywords for objects to be
+looked at.  Be brave, and you shall be rewarded.  
+~
+#144
+Orange Light~
+an orange light~
+A brightly glowing orange light is floating just above the ground here.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#145
+orange club~
+orange club~
+A marvelous orange club awaits your usage here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 3~ 6~ 8~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#146
+orange shield~
+orange shield~
+A marvelous orange shield rests here.~
+~
+9 0 0 0 0 513 1
+100 100
+5~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#147
+orange sword~
+orange sword~
+A marvelous orange sword awaits your usage.~
+~
+5 0 0 0 0 8193 0
+100 100
+0~ 3~ 6~ 3~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#148
+orange mace~
+orange mace~
+A marvelous orange mace awaits usage.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 3~ 6~ 8~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#149
+web deceit~
+the web of deceit~
+&rA complex shroud of silken webs lies here.~
+~
+9 64 0 0 0 1025 2
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+5 0
+web~
+1 1
+0 0 0
+A
+13 2
+#150
+silver flute~
+a silver flute~
+A magnificent silver flute lies here glimmering mysteriously.~
+~
+9 1 16 0 0 16385 5
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+#151
+crystal marble~
+a crystal marble~
+&CA crystal marble glows here.~
+~
+9 512 0 0 0 32769 10
+100 100
+0~ 0~ 0~ 0~
+1 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+#152
+sign~
+sign~
+&wA sign is posted on the door.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+The basement is filled with many scary creatures.  Many brave newbies
+have died in these parts.  If you are &RLEVEL 1 &Gproceed with caution.  
+~
+#153
+wand~
+a crystal wand~
+&wA clear crystal wand lies here.~
+~
+3 64 0 0 0 16385 2
+100 100
+5~ 2~ 2~ fly~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+#154
+chains~
+steel chains~
+&wEerily glowing chains are discarded here.~
+~
+9 0 0 0 0 5 2
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+#155
+loin cloth~
+&OA brown loin cloth~
+&OA brown loin cloth lies discarded here.~
+~
+9 0 0 0 0 33 2
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 2
+#156
+Newbie Book~
+the Book of Knowledge~
+A Book bound with gold threads sits here.~
+~
+8 536870913 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+ten~
+&W*&RTHE ENDING&W*
+ 
+&wI hope this book contains all that you need to know. If there is something
+that's not in here HEY YOU CAN'T LEARN EVERYTHING FROM A BOOK!!! =)
+Live and learn. (Or die and learn rather) Happy Mudding!
+&WCiao!
+ 
+&PM&pi&Or&Pa&Rb&pe&Oa&Pu
+ 
+&PPS &w=&W=&z{&CTHE END&z}&W=&w= (for now)
+~
+E
+nine~
+&W*&RMUD school map&W*
+ 
+&wHere is a map to start you on your way. You must explore further but 
+in this floor of the MUD school is everything to get you started. 
+ 
+                          [0]
+                          \\
+                          [1]
+                           ||
+                  [3]=[4]=[5]=[2]=[6]
+                    down //||
+                       [20][7]
+                           ||
+                       [8] [9]
+                        \\ ||
+                     [10]=[11]=[12]
+                           ||\\
+                          [13][14]
+                           ||
+                          [15]=[16]=[17]
+                                \\   \\
+                                [18]  [19]
+ 
+&W* &WThe map looks a little screwy but hey it's a map. =)
+Here are the rooms and what's in the rooms.
+&W[&B0&W] &w= Judgement Pass: North of here is the town healer
+and south of it is the town itself.
+&W[&B1&W] &w= Entrance to the Mudschool is down from Judgement Pass.
+Here you will find a very helpful Mob. Ask him almost anything except where
+you lost your lunch money.
+&W[&B3&W] &w= Hatchet's Room of Practice: where you can practice your skills
+as explained in chapter five.
+&W[&B6&W] &w= Furey's Room of Training: where you can train as explained in
+chapter four.
+&W[&B20&W] &w=Down from number 5, this is where you can learn how to speak
+a new language. You are defaulted to learn the class/race that you chose.
+The rest you have to pay to learn. You will get 5 learns to start out with.
+To speak a language type speak <language>. Most of us speak common. (the common thread so to speak)
+&W[&B12&W] &w=Mohia's Bakery: She sells stuff to stave off your hunger. mmMMmmMM
+&W[&B10&W] &w=General Store: He sells very basic items; skins/lanterns etc.
+ 
+&W[&B8&W] &w=Up from 11, Zoar's room of scrolls: He sells scrolls.
+You may not want to leave home without some.
+&W[&B14&W] &w=Down from 11, Donation Antechamber: Where people leave stuff
+they've outgrown. You can leave stuff here too for newbies. Also the town
+healer has a donation box which is frequented by all.
+&W[&B18&w] &w=Down from 16, this may be the first mob you encounter.
+Remember to consider your mobs first before you fight them. Unless of 
+course they attacked you first and you had no choice.
+&W[&B19&W] &w=The MUD school healer and entrance to the cage rooms: This
+is the turning point of your MUD lives. Here is where you will achieve level
+2. And practice your combat skills.
+~
+E
+eight~
+&W*&RMore useful commands PT3&W*
+ 
+&P*&wsave = very important to do every so often. This updates your pfile
+Do this especially after every level or CR (Corpse retrieval) or any 
+other significant moment in your MUD life.
+ 
+&P*&wnote = will let you read the notes that are posted. Type help notes
+to see all the note commands available. 
+ 
+&P*&wdesc = will let you set a description for yourself so when someone
+looks at you, they can the desc you set. This will put you in the writing
+editor. While in editor type .h on a new line to see all the options. 
+Type @  to exit the editor.
+ 
+&CAll of the above are listed in help files so for more info use them.
+other ones that may be useful which you may type to see what it does:
+ 
+&wlook (target or by itself), kill, murder(to attack players or charmed mobs), 
+sell, buy, enter(as in a portal type obj), eat <obj>, drink, get, drop, stare, 
+wear, sac, consider, etc.
+ 
+&YFinal notes about commands
+&wA.
+&wType commands to see all the commands available. Yep there are many out 
+there. A lot you can use no matter who you are, some you need special 
+qualifications to use. Most of these commands need a target.
+ 
+B.
+You may use short forms for these commands such as k will suffice
+for kill. But it will not suffice for kick. Nor will b suffice for bite. 
+in = inventory
+eq = equipment
+ex = exits
+wo = worth
+repo = report
+rep = repair
+b = buy
+o = order
+k = kill
+d = down
+n = north
+s = south
+etc.
+~
+E
+seven~
+&W*&RMore useful commands PT2&W*
+ 
+&P*&wFlee/wimpy = type help wimpy to see. In a nutshell it sets you to autoflee
+when a specific number. This mind you does not always work. You 
+may be in a no_flee room or your damage is too high to flee in time. To set a 
+specific number type wimpy <number>. Or typing wimpy will autoset a number 
+for you to match your hp. If you type flee while in battle you will attempt 
+to flee at any time regardless of your hp. Of course fleeing isnt without its 
+consequences. 
+ 
+&P*&wFill =  a command which is hardly used but useful is fill. You can fill any 
+type of water container such as your skin. You need to be in a room with 
+some sort of fountain/well, body of water and it wont become empty 
+and disappear.
+Syntax: fill <obj name>
+ 
+&P*&wchannels = show the channels which you may use to communicate.
+chat/music/auction/info/question/answer/yell/shout/hero/tell
+Most of these may be turned off. Type channel -name to turn off.
+ 
+&P*&wlist = you can do this in a shop/restaurant/armory/jewelry/weaponry. 
+Then you buy <item>
+ 
+&P*&wrepair = You can repair damaged armor at the smithy. 
+Type repair all to repair all. You need money to do this.
+Cost of labor wasnt cheap back then either.
+ 
+&P*&wequipment(eq) = shows you what you are wearing: armor, weapons,
+shield.
+ 
+&P*&winventory(inv) = shows you what you are carrying on you, not wearing.
+ 
+&P*&wexamine = will let you look in a bag or at a sign/book. For signs also 
+read is a useful command. 
+ 
+&P*&wrecite/zap = commands to use scrolls and staves/wands.
+syntax for scrolls: recite <name of scroll>
+syntax for wands: (first hold the wand) the zap <target>
+ 
+&P*&wsleep/rest = will regenerate hp mana move faster. Type help sleep/rest
+ 
+&P*&wwake = will make a resting, sleeping person wake up and/or stand up.
+You can wake another player up also. But if theyre sleeping, chances are
+they wont like being woken up. Unless of course its your spouse. =)
+ 
+&YMore on commands in Chapter Eight
+~
+E
+six~
+&W*&RMore useful commands&W*
+ 
+&wThis is not in any particular order. 
+ 
+&P*&whelp command = There is a help file for virtually everything. Some 
+files are in the making so just ask around if you can't find a help
+file. Two important help files are: &Rhelp rules and help PK
+ 
+&P*&w! = repeats the last command.
+note: If you repeat too many of the same command, you may get disconnected.
+Called spamming. So type save after every few of the command to vary it.
+ 
+&P*&wworth = will show you the present state of your attribute, how many
+xp you need to level and how much money you have on you and not the
+bank at a glance.
+ 
+&P*&wscore = will show you most everything about you as in a resume.
+ 
+&P*&waffects = will show you all the spells you are affected by. The healer in town
+and most other healers will only give you bless/armor/shield. Usually the 
+more spells you are affected by, the better but not all spells are good to
+have on you such as poison/meteor swarm.
+ 
+&P*&wreport = shows the present status or your hp/mana/mv plus your maximum
+status and how many xp you have scored. (xp meaning experience points)  
+Plus announces to everyone in the same room this also.
+So if you report 1/2000 hp 0/3000 mana 1/300 mv 34500 xp,
+everyone in the room will sympathize or throw free heals at you!! *GRIN*
+ 
+&P*&wemote/socials = are fun and easy. Type socials to see the current default 
+ones.You can also customize them by using emote then the string.
+Ex> emote hits you over the head with a pillow.
+Will show as "&PMirabeau hits you over the head with a pillow,&w" to everyone 
+in the room. Warning: Some emotes on mobs(and players too) may launch a 
+fight. Such as bonk and slap. This is after all not a nice thing to do is it? 
+ 
+&P*&wpush/drag = push is just that push. Syntax: push <mob/person> direction.
+This will get the mob/player out of the room to the direction of the other
+room. The reason for this is(in case you cant see the obvious), you cant 
+attack someone/thing cause theyre in a safe/no_offensive room or the mob 
+will attack YOU if you attack something else such as a guard. Push is for 
+those standing and drag is for those who are resting/sleeping/fighting.
+ 
+ 
+&YMore in the next chapter on commands
+~
+E
+five~
+&W*&Rpractices: SKILLS/SPELLS&W*
+ 
+&wNow that you know all there is to know about train, lets move onto
+the thing that individuates all of us, our spells and skills!
+ 
+a. First to see all the spells/skills that you may practice at some point in 
+your character`s career (life), type slist. This shows you the spells/skills
+and at what level you may practice them. 
+ 
+b. Then type spells to see how much energy it takes to use them,
+such as mana and bp.
+ 
+c. To practice a skill/spell you must be in a room with a mob that will
+help you practice. Type practice and the skill. Ex.> practice faerie fire
+Then practice it till you become adept at the spell/skill. Most skills
+(depending on your INT level) will take about 2-4 practice sessions.
+ 
+d. You can type practice anywhere to see the spells/skills you
+have thus far practiced. But if you do it in the room of practice,
+it will also show you all the spells you MAY practice but didnt.
+e. To see what each skill/spell will do for you or to the mob, use the
+help files. If you still arent sure ask around nicely.
+ 
+f. Wand/Staves are usually reserved for spell casting classes. So unless 
+you practice these skills you may not use wand/stave type objects. 
+Scrolls is a different story. All classes have this skill. You need to 
+practice scrolls skills in able to make the scroll work. 
+ 
+~
+E
+four~
+&W*&RTraining and Attributes&W*
+ 
+&WTraining:
+&wIn the start you begin with 21 practices. Both Train and Practices use up
+the same practice sessions. Training your attributes first to the max is
+important. Each Attribute costs 5 practice. To train an attribute you must
+be in a room where the mob is a trainer. Type train to see what you can train.
+ 
+&WAttributes:
+&wYou can see your present attributes status by typing score or worth.
+Type help class to see all the classes available and type help 
+<name of the class> to see the pros and cons of each class.
+ 
+&W[&BWisdom&W] = &wThis attribute affects how many practice session you 
+get per level. Therefore higher the WIS = More practices YAY! 
+ 
+&W[&BConstitution&W] = &wThis is the next best thing on there you might want
+to hurry up and train. Constitution affects how many hp you gain per 
+level. Therefore the higher your CON = The more HP you get WOOWOO!
+ 
+&W[&BIntelligence&W] = &wOtherwise known as IQ, this affects how easily you 
+can practice a spell or skill in a practice room. For example if your INT
+ is high you only need 2 practice sessions to become adept at a skill or a 
+spell so that means you can go out and kick some BUTT using that skill/spell. 
+But if your INT is low you need to use up 3-4 practices to gain the 
+knowledge at a high enough percentage to use it effectively. Therefore the 
+higher you INT = the faster you get out of the practice room. OH YEAH!
+ 
+&W[&Bdexterity&W] = &wThis att means speed. It affects a lot of skills. Meaning 
+some skills need a minimum Dex. If your dexterity is high youll attack more 
+per round. So what took Mike Tyson 10 rounds you will do in 5. 
+(You can do math right? ;))
+ 
+&W[&Bstrength&W] = &wThis affects how many items you can carry plus weight. 
+The higher your strength = the more items you can carry. Who needs UHAUL? ;)
+ 
+OK thats all the available attributes you can train. (At the moment)
+To type an attribute type train <name of att>.
+You can also train HP (hitpoints), mana and movement.
+a. &RHP &wis the lifeforce in you. You want to keep that at max all the time.
+b. &Rmana &wis the inner energy needed to perform out of this world tricks.
+c. &Rbp &wis like mana but not quite. Vamps and Antipaladins need them.
+   Type help blood points.
+d. &Rmv(movement) &wis what keeps you moving. If it gets low you cant 
+walk because you are too exhausted. BUMMER!
+ 
+&Wnote: &wThere are some spells that help hp/mana/mv. 
+You will learn of these as you play.
+~
+E
+three~
+&W*&RMore Configurations&W*
+ 
+&wMost of the important ones have been covered. 
+Review:
+a> to see the options type config
+b> to add a config type name of the config. i.e. autoexit.
+   or type config +name:  ex] config +keep
+c> to remove a config, type name of the config again ex] autoexit
+   or type config -name: ex] config -keep
+d> test the various options and use the help files on prompt/ANSI/colors
+   etc.
+ 
+Two other config option that might be useful will be explained below.
+ 
+&R[COMBAT] You see all combat scroll. (or not)
+&wThis is an obvious one you want to see especially if you plan to fight
+and on Stone Gates who doesn't? type config -combat to remove.
+ 
+&R[BRIEF] You don't see the descriptions. (or do) 
+&wThis is something that you may want to keep on especially if you're a
+newbie or are entering a new area for the descriptions often hold
+helpful hints as to hidden exits or warnings of what may lay ahead.
+To enable type brief. To disable type it again.
+ 
+That is about it for the obvious needful config. The rest are superfluous
+and up to you to explore and set. Same syntax to set.
+~
+E
+two~
+&W*&Rconfigurations&W*
+ 
+&wOk type config to see all the options available and where they're at.
+A + in front and capitol letters means they're on.
+A - and lower case letters means they're off.
+ 
+&R[AUTOEXIT] You automatically see exits. (or not)
+&wThis means when you enter a room the obvious exits are visible to you.
+To get into make this possible type autoexit. Not all exits that are
+available to you are visible. To do this type autoexit.
+ 
+&R[AUTOGOLD] You automatically get gold from corpses. (or not)
+&wThis means if the mob has money on it you automatically get the money from
+its body under normal conditions that is. To enable type autogold.
+ 
+&R[AUTOLOOT] You automatically loot corpses. (or not)
+&wThis means you will loot the corpse of all its earthly possesions. I
+mean it certainly doesn't need it anymore. NOTE: This is an often changed
+config for different reasons that you will learn about. To enable type autoloot.
+ 
+&R[AUTOSAC] You will automatically sacrifice the corpses. (or not)
+&wThis means you will automatically sacrifice the corpses after a kill.
+And the appropriate IMM will give you a reward for an acceptable sacrfice.
+This is another config that may not be wanted on for higher levels. syntax: autoloot.
+ 
+&R[ANSI] You have ansi color enabled. (or not)
+&wType help colors to see all the wonderful colors available for the 
+terminals that can use it. If on it enables you to see colors. If you
+choose to be colorblind going -ANSI is the way. config +ANSI to enable ANSI.
+ 
+&R[KEEP] You keep the same title when leveling. (or not)
+&wThe MUD has a default title for different classes as they level.
+You can keep your own title by typing config +keep.
+To set a title type title and string. ex> title Dark Fiend will show as:
+&W&W[ IMMORTAL ] &GMirabeau Dark Fiend.
+ 
+&R[PROMPT] You have a prompt. (or not)
+&wPrompt is something you can personalize. Add colors/designs to them also.
+type help prompt. Typing prompt will enable prompt to show every time
+you enter a command. The default prompt shows you present hp/mana/bp/mv.
+You can set it to look like this:
+<20/20 hp 100/100 mana 200/200 mv>
+Or to add color and design
+&w[&R20/20 = hp &B100/100 = mana &C200/200 = movement: &wroom = Temple &W]
+Psst &YHint: &w%r prompt will help you in case you are blinded.
+ 
+&YThis will be continued in Three. Type look three.
+~
+E
+one~
+&W*&RIntroduction&W*
+ 
+&wThis is the book for newbies. A specific guide for players who have 
+never played a MUD or has never played THIS mud. Type look <chapter>
+to read the various chapters. This book is for you.
+ 
+&BMirabeau
+~
+E
+book~
+&wTable of contents
+ 
+&YOne &RIntroduction
+&YTwo &RConfigurations
+&YThree &R&RMore Configurations
+&YFour &R&RTraining and Attributes
+&YFive &RPractices: skills/spells
+&YSix &RMore useful commands.
+&YSeven &RMore useful commands PT2
+&YEight &RMore useful commands PT3
+&YNine &RMUD School Map
+&YTen &RThe Ending
+~
+#157
+coconut cream pie~
+a coconut cream pie~
+A coconut cream pie sits on the ground.~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#158
+note paper~
+&YVERY IMPORTANT: TYPE READ NOTE~
+A scrap of paper lies here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+note~
+&zFor your information.  The command "note" has been restricted until level 10 for now.
+I'm not sure how long this is going to be in implementation, but until you reach that
+level, you will be unable to use the command.  I simply wanted you to be aware that this
+mud is equiped with the note command.
+~
+#199
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#100
+BUNG~
+~
+~
+BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG
+BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG
+BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG
+BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG BUNG
+And the turtle was here.
+~
+0 402438 0
+Rd     0
+S
+#101
+The Mist Above the Storm~
+~
+~
+The air here is stale and you find it hard to catch your breathe. 
+Looking down to the ground, you notice to your amazement that there is no
+floor here, and you are floating!  Below you hear voices of fellow
+adventurers calling your name.  Perhaps, if you dare, the journey down could
+lead to the adventure of a life time.  On the other hand, perhaps this
+strange new land is a death trap awaiting your demise.  Are you prepared to
+weather the storm?  
+~
+0 402446 0
+Rd     0
+D5
+~
+~
+0 0 102
+S
+#102
+The School of Inner Sanctum~
+~
+~
+As you plant your feet firmly on the floor of the school, you begin to
+orient yourself.  Torches cast a magnificent spectrum of colour all about
+you, and create a warm sensation with in your body.  The place seems normal,
+it feels safe, however your confusion and curiousity that got you here in
+the first place seem to drive you onward to see what's around the next
+corner.  A large set of stairs lead down from here, filtering into what
+looks to be a town.  Perhaps you best relieve your confusion with in the
+walls of the school before adventuring into that town below.  To the north
+you hear, for a brief second, screams of combat.  A door blocks off the
+screams which you assume come from a place called "The Pit of Decay", which
+contrary to the present surroundings seems to be rather far fetched, however
+that's what is written in blood apon that door.  To the south seems to be
+your best bet right now.  You can't help but notice the sign here.  It's a
+good idea to 'READ SIGN' now.
+~
+0 1073742856 0
+Rd     0
+E
+sign~
++----------------------------------------------------------+
+|  WELCOME ADVENTURER!!  There are a few things that you   |
+| may want to do before going any further.                 |
+| The first is CONFIG +AUTOEXIT which will allow you to    |
+| to see all obvious exits.  The second is CONFIG +ANSI to |
+| recieve those wonderful colours.  The third is to CONFIG |
+| +AUTOGOLD which will allow you to get gold from corpses  |
+| automatically.                                           |
+| If you have never played here before then I suggest you  |
+| READ ALL THE SIGNS IN THE MUD SCHOOL!  They will all be  |
+| numbered in order, so as you don't get lost.             |
+| THIS IS SIGN #1                                        |
+|                                                          |
+|                      - Sign Maker                        |
++----------------------------------------------------------+
+~
+D0
+~
+~
+3 0 147
+D2
+~
+~
+0 0 103
+D5
+~
+~
+0 0 25001
+S
+#103
+Halls of Sanctum~
+~
+~
+You are in the Hall of Inner Sanctum.  You sense a feeling of peace and
+well being extend over you.  The decour of the room somehow reminds you of
+your home.  The walls are done in a soft ivory white with cherry wood beams
+stretching across the ceiling.  This is just the beginning of the mud
+school, there are still many more adventures in store for you, both in the
+school and outside and beyond, traveler/adventurer.  Go east to train now
+<optional>, and west to practice after level 3.  Travel down if you wish to
+learn new languages, or up if you wish to see the Class Master.  
+~
+0 1075840008 0
+Rd     0
+D0
+~
+~
+0 0 102
+D1
+~
+~
+0 0 104
+D2
+~
+~
+0 0 108
+D3
+~
+~
+0 0 106
+D4
+~
+~
+0 0 189
+D5
+~
+~
+0 0 153
+S
+#104
+Furey's Waiting Room~
+~
+~
+You are in a hallway made of stones.  It is dark and cold.  You see a
+light coming from the east.  You can go east or west.  To the east is the
+room of training where you go to train your attributes.  
+~
+0 1073742856 0
+Rd     0
+D1
+~
+~
+0 0 105
+D3
+~
+~
+0 0 103
+S
+#105
+Furey's Room of Training~
+~
+~
+This is where you train.  Type train to see what attributes you can train.
+~
+0 1073742856 0
+Rd     0
+D3
+~
+~
+0 0 104
+S
+#106
+Hatchet's Waiting Room~
+~
+~
+Bridget, Hatchet's secretary is here.  You hear next door the sounds of
+people practicing.  
+~
+0 1073742856 0
+Rd     0
+D1
+~
+~
+0 0 103
+D3
+~
+~
+0 0 107
+S
+#107
+Hatchet's Room of Practice~
+~
+~
+You are in Hatchet's practice room.  You notice that the walls are singed
+from the mages practices.  Type prac to see what you can practice.  
+~
+0 1073742856 0
+Rd     0
+D1
+~
+~
+0 0 106
+S
+#108
+Hallway in School~
+~
+~
+Before you stretches a pretty uniform hallway.  Nothing special, white
+walls, white tile, and white lights.  But to the north you can see the
+entrance to the mud school.  To the south, the hallway stretches on.  
+~
+0 1073741832 0
+Rd     0
+D0
+~
+~
+0 0 103
+D2
+~
+~
+0 0 109
+S
+#109
+Hallway in School~
+~
+~
+You are in a hallway, you can go north or south.  The hallway looks pretty
+uniform.  This hallway looks pretty much like the one North of it.  Here
+are a few commands that you may want to know.  Type inv to see what items you
+have in your inventory.  Type eq to see what equipment you're wearing where.
+Type sc to see your character's score and statistics.  To the south you hear
+the noise of stores and shops.
+~
+0 1073741832 0
+Rd     0
+D0
+~
+~
+0 0 108
+D2
+~
+~
+0 0 110
+S
+#110
+Inbetween the Stores~
+~
+~
+Around you, are all types of different stores.  Up you can hear the faint
+bubbling sounds of the magic shop.  Maybe the wizard is up to mixing more
+potions.  Down is the donation pit, where the charitable adventurers offer
+help to others.  From the east the heavenly aroma of fresh baked bread comes
+to you, to the east is naturally, the bakery.  To the west, you hear the
+faint jingling of coins, there is the adventure supplies store.  You hear a
+hammer and the sound of curses and fighting, coming from the south.  
+~
+0 1073741832 0
+Rd     0
+D0
+~
+~
+0 0 109
+D1
+~
+~
+0 0 111
+D2
+~
+~
+0 0 115
+D3
+~
+~
+0 0 112
+D4
+~
+~
+0 0 114
+D5
+~
+~
+0 0 113
+S
+#111
+Mohia's Bakery~
+~
+~
+The aroma of fresh baked bread hits you like a hammer.  Suddenly you feel your
+mouth watering, and you can't help gazing yearningly at the loaves of bread.
+You notice there seems to be a few other things you can buy that are on
+display.  Type list to see a list of things you can buy.
+~
+0 1073742856 0
+Rd     0
+D3
+~
+~
+0 0 110
+S
+#112
+Phino's Adventuring Supplies~
+~
+~
+The smell of charred wood, old leather, and other such things come to you as
+you enter this room.  You notice that the shelves along behind the store
+keeper are lined with torches, bags, and waterskins.  You wonder how old
+that water really is.  To see a list of items you can buy, type list.
+~
+0 1075840008 0
+Rd     0
+D1
+~
+~
+0 0 110
+S
+#113
+Pit of Sacrifices~
+~
+~
+Here is where you put items that you no longer need, or get items that
+you can't find.  Type get item box to get something from the box and type
+put item box to get something from the box.  
+~
+0 1073741824 0
+Rd     0
+D4
+~
+~
+0 0 110
+S
+#114
+Zornak's Magic Shop~
+~
+~
+You look around the room and notice that there are walls upon walls of
+bottles, flasks, scrolls, and other things.  You wonder how Zornak can possibly
+keep everything organized!  But when you but things, he seems to find it
+speedily enough.  Type list to see a list of items you can buy.
+~
+0 1073742856 0
+Rd     0
+D5
+~
+~
+0 0 110
+S
+#115
+Hallway in School~
+~
+~
+You notice that the sounds of the hammer and now, you can make out swearing,
+are louder then the fighting.  The noise of the stores to the north however,
+are quite present.  You wonder how anyone can live through all this noise.
+~
+0 1073741832 0
+Rd     0
+D0
+~
+~
+0 0 110
+D2
+~
+~
+0 0 116
+S
+#116
+A Bend in the Way~
+~
+~
+Here there's a bend in the hallway.  You can hear the sounds of the hammer
+and the cursing very near by now.  The fighting however still sounds distantly
+off to the east.
+~
+0 1073741832 0
+Rd     0
+D0
+~
+~
+0 0 115
+D1
+~
+~
+0 0 117
+S
+#117
+Hallway Above Sign Maker's~
+~
+~
+You are above the Sign Maker's workshop.  Below are the hammering sounds and
+the swearing you hear earlier.  It makes you curious to see what's going on
+down there.  The fighting you heard off to the east has decidedly gotten
+louder.  Maybe it requires investigation.  Or a little curiousity.
+~
+0 1073741832 0
+Rd     0
+D1
+~
+~
+0 0 119
+D3
+~
+~
+0 0 116
+D5
+~
+~
+0 0 118
+S
+#118
+The Sign Maker's Residence~
+~
+~
+The room here seems to be rather cluttered with half made signs.  You notice
+the man here glare at you as he continues to mutter to himself.  It sounded
+something like "stress," you're not sure though.  The floor is covered with
+paint, and the only clear place seems to be a table near you covered with
+papers.  They seem to be orders for signs.  Quite a few papers are on the
+table, no wonder the poor Sign Maker is stressing.  You realize that the
+hammer sounds are coming from the Sign Maker as are the curses, as he
+attempts to adjust the side of a sign.
+~
+0 1073741832 0
+Rd     0
+D4
+~
+~
+0 0 117
+S
+#119
+Last Point~
+~
+~
+This is the last place you will be able to rest peacefully.  If resting to th
+sounds of fighting below can be called peaceful.  There are a few things you
+should know before you start.  If you get hurt while fighting, type rest or
+sleep.  Sleep regenerates your hit points faster, however it makes you less
+aware of things that are happening around you as rest would.  To attack the
+monsters/critters that you'll find down there, type kill <monster> then when
+the monster is dead, type get all corpse to get all the goodies from the
+corpse.  After this, type sac corpse to sacrifice the corpse to your god.
+Your god will reward you for this.  Remember, type con <monster> before you
+try to kill a monster!  It could save your life!
+~
+0 1073741836 0
+Rd     0
+D3
+~
+~
+0 0 117
+D5
+~
+~
+0 0 120
+S
+#120
+Middle of Cage Room~
+~
+~
+You notice that there are screams of combat all around you.  Except the
+ones off to the east seem to be farther away.  Beyond there lies the hall
+of aggression.  Somewhere that you can go after you've gained a few levels.
+The adept here is to help you, so do NOT attack the adept!
+~
+0 1075840012 0
+Rd     0
+D0
+~
+~
+0 0 121
+D1
+~
+~
+0 0 124
+D2
+~
+~
+0 0 131
+D3
+~
+~
+0 0 122
+D4
+~
+~
+0 0 119
+D5
+~
+~
+0 0 123
+S
+#121
+Blob Cage~
+~
+~
+In this cage, you see remains of the blob splattered all over the wall.  There
+are quite a few remains of other adventurers here.  Maybe it'd be best to
+consider this blob before attacking it.  Your only exit is south.
+~
+0 1073741832 0
+Rd     0
+D2
+~
+~
+0 0 120
+S
+#122
+Cage of Decimation~
+~
+~
+You notice as you look around the cage that there are few remains that look
+human, yet many that are from the monster.  The cage seems to be moderately
+kept, but there is blood on the floor.  The only exit is east.
+~
+0 1073741832 0
+Rd     0
+D1
+~
+~
+0 0 120
+S
+#123
+The Basement~
+~
+~
+The room you are in is dark and danky and smells of fetid mold and rot. 
+It is too dim to really see cleary.  You hear scurrying noises coming from
+the corner.  To the north you see an old &Gdoor&Y &z&walmost falling off of
+its hinges with decay.  To the west there is a huge &Gcrate&Y &z&wof some
+sort blocking the passage like a wall.  To the east &Gboxes&Y &z&w are piled
+high.  The south seems to obscured by more &Gjunk.  
+~
+0 1073741836 0
+Rd     0
+D0
+~
+door~
+3 0 154
+D1
+~
+boxes~
+3 0 166
+D2
+~
+junk~
+3 0 162
+D3
+~
+crate~
+3 0 158
+D4
+~
+~
+0 0 120
+S
+#124
+State of Inbetween~
+~
+~
+You are between the Hall of Aggression and the Cage Room.  To the east
+are aggressive creatures that will attack you.  Here at least, is momentary
+peace from all the fighting in the other room.  You see a creaky unstable
+looking staircase leading up.  
+~
+0 1073741836 0
+Rd     0
+D1
+~
+~
+0 0 125
+D3
+~
+~
+0 0 120
+D4
+~
+~
+0 0 171
+S
+#125
+Hall of Aggression~
+~
+~
+You are in the Hall of Aggression.  Around you there are the sounds of
+creatures rattling around in their cages.  You notice that the screams
+seem to fit with a scene from a psycho movie.  This room actually seems to be
+rather quiet.  The tiling is a nice brown color with little black dots. Oops,
+those black spots are blood, not part of the tile....
+~
+0 1073741832 0
+Rd     0
+D0
+~
+~
+0 0 126
+D1
+~
+~
+0 0 127
+D2
+~
+~
+0 0 128
+D3
+~
+~
+0 0 124
+D4
+~
+~
+0 0 130
+D5
+~
+~
+0 0 129
+S
+#126
+Ygre's Cage of Insanity~
+~
+~
+You notice that the cage is a mess.  It seems Ygre is too arrogant to even
+clean the cage he's been exiled too.
+~
+0 1073741832 0
+Rd     0
+D2
+~
+~
+0 0 125
+S
+#127
+Room of Bugs~
+~
+~
+This cage seems to make your skin crawl.  Then you realize, it's not your
+skin.  There's actually bugs all over your skin!  You're covered with fleas!
+Hope you have enough blood to stay alive while fighting here....
+~
+0 1073741824 0
+Rd     0
+D3
+~
+~
+0 0 125
+S
+#128
+The Cage of Demoted Gods~
+~
+~
+Here, Zoar has been exiled for turning into a snapped creator.  You notice
+that there are however, various implements around the room that you really
+don't want to take a close look at.
+~
+0 1073741832 0
+Rd     0
+D0
+~
+~
+0 0 125
+S
+#129
+Trimek's Dungeon~
+~
+~
+You notice this room seems rather big.  Then you realize why, the dragon
+seems small.  Still, there are scorch marks along the walls, and claw marks
+in the wall.  Maybe this dragon isn't so weak, or maybe it's predecessor was
+different.  
+~
+0 1073741824 0
+Rd     0
+D4
+~
+~
+0 0 125
+S
+#130
+Xacier's Cage~
+~
+~
+As you enter the first thing you notice is the spit on the ground.  The second
+is all the ranting and raving of Xacier about how unfair the justice of the
+land is.  You come to the conclusion that just for his mouth, he should have
+15 years.  Maybe you better kill him before he wakes up something bigger.
+~
+0 1073741824 0
+Rd     0
+D5
+~
+~
+0 0 125
+S
+#131
+Dark Hallway~
+~
+~
+This dark hallway leads to the north to the adept. South of here is a strange
+room. You are not quite sure if you should explore there yet, but you gather
+your courage and proceed southwards...
+~
+0 1073741828 0
+Rd     0
+D0
+~
+~
+0 0 120
+D2
+~
+~
+0 0 132
+S
+#132
+Where are you?~
+~
+~
+You seem to notice that this room doesn't have any obvious exits.  Perhaps
+it's time for you to learn how to find your own exits here.  You're almost
+done with the mud school if you're ready to go through here.  If you haven't
+gone through all the cage rooms yet, go back!!!  G'luck finding your exit.
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 131
+D1
+You see a huge door that's LOCKED, better find the key if you plan to get
+through it.
+~
+door~
+7 132 135
+D3
+This door is not locked, just closed.  You don't need a key to get through
+just open it.
+~
+door~
+3 0 133
+S
+#133
+A Small Tunnel~
+~
+~
+You notice that you've suddenly found yourself in a small tunnel.  What could
+have possibly made a small tunnel in the mud school?!  Then you hear a slight
+bouncing noise off to the west.  Bouncey?....
+~
+0 1073741824 0
+Rd     0
+D1
+~
+~
+3 0 132
+D3
+~
+~
+0 0 134
+S
+#134
+Key Creature's Den~
+~
+~
+You've stumbled into a rather comfortable looking den.  Then you notice a
+hyper little cuddly creature bouncing all over it.  It must be the resident of
+this den.  Isn't it just so cute that it gives you heartburn?  (Warm Fuzzies)
+~
+0 1073741824 0
+Rd     0
+D1
+~
+~
+0 0 133
+S
+#135
+Don Juan's Study~
+~
+~
+In this cozy study, you find a smiling man.  He gazes at you with almost
+paternal warmth.  Then you realize, he IS your final test!  Ooops!  Oh well,
+everyone hates their father, after all....you notice a door off to the
+south.
+~
+0 1073741824 0
+Rd     0
+D2
+~
+~
+3 0 136
+D3
+~
+~
+7 0 132
+S
+#136
+Entry into the Pit~
+~
+~
+This is the entry into the pit area following the mud school.  As you
+gaze across the pit you should be able to see various animals to use to hone
+your skills even further.  
+~
+0 1073741828 0
+Rd     0
+D0
+~
+~
+3 0 135
+D1
+~
+~
+0 0 137
+D2
+~
+~
+0 0 149
+D3
+~
+~
+0 0 151
+D4
+~
+~
+0 0 152
+S
+#137
+North East Corner~
+~
+~
+You're in the North East corner of the Pit of Decay.  You notice that there is
+a small neat little pile of bones that have been left here.  Then you notice
+that something about it still seems to be moving.  You realize that it's snakes
+crawling through the bones.  Ick!  The stench here seems to be unconquerable
+as you go through this pit, trying to find somewhere that you can enjoy your
+lunch!
+~
+0 1073741824 0
+Rd     0
+D2
+~
+~
+0 0 144
+D3
+~
+~
+0 0 136
+D4
+~
+~
+0 0 152
+S
+#138
+Maggot Room~
+~
+~
+You enter a room that seems to be filled with maggots.  The floor is absolutely
+covered with them!  You notice that there's a small pile off to one side that
+the maggots seem to be crawling all over.  You don't want to know what poor
+unfortunate soul that was.
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 146
+D1
+~
+~
+0 0 140
+D2
+~
+~
+0 0 139
+D3
+~
+~
+0 0 141
+D4
+~
+~
+0 0 152
+S
+#139
+Along the South Wall~
+~
+~
+Along this wall, you notice there's a huge heap of trash that's collected
+here.  Maybe that's a good thing.  It shows that perhaps someone's cleaning up
+here after all.  Then you realize, the trash heap is moving.  Maybe it's not
+such a good thing after all....
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 138
+D1
+~
+~
+0 0 142
+D3
+~
+~
+0 0 143
+D4
+~
+~
+0 0 152
+S
+#140
+Along the East Wall~
+~
+~
+The ground is covered in what appears to be some undesirable mix of
+garbage and left over segmants of various other...  Things...  Maybe this is
+where that stench is coming from.  Looking for a quick exit, you spot a
+roiling mass of something or other off to the west.  Maybe that's people in
+danger, or maybe they're just more of those wonderfully disgusting features
+of this pit.  
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 145
+D2
+~
+~
+0 0 142
+D3
+~
+~
+0 0 138
+D4
+~
+~
+0 0 152
+S
+#141
+Along the West Wall~
+~
+~
+The heat of this place is unbearable!  Why is this such a hot house?  Then you
+see another bug crawl by.  Oh, the bugs, that's right.  You almost forgot
+about them, didn't you?  Well, they haven't forgotten you!  Nor have those
+other wonderful leeches, maggots, chickens, oh what a wonderful scene.  Then
+you glance down and realize, oops, you're treading on someone's toes,
+literally.
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 147
+D1
+~
+~
+0 0 138
+D2
+~
+~
+0 0 143
+D4
+~
+~
+0 0 152
+S
+#142
+South East Corner~
+~
+~
+In this corner of the pit, you notice that written in blood is an odd
+message.  "Omni was here" has been scrawled by some delinquent!  Oh no!
+However, before you can report this, you find your footing slipping, carrying
+you away to another room.  Maybe you should watch your footing?
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 140
+D3
+~
+~
+0 0 139
+D4
+~
+~
+0 0 152
+S
+#143
+South West Corner~
+~
+~
+Crawling into this corner, you find a teensy tiny little draft that must
+be seeping through the cracks in the wall.  You wonder, where did all this
+ooze come from?!  Who created all this?!  Is there no end to it all?  With
+weary resignation, you continue to plod on in this pit.  Oh wait, you can
+just go up to escape all this.  
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 141
+D1
+~
+~
+0 0 139
+D4
+~
+~
+0 0 152
+S
+#144
+Along the East Wall~
+~
+~
+You find yourself needing rest.  But looking down, you can't bring yourself
+to set yourself down in all the ooze around you.  You begin to feel faint, then
+realize, it's not you.  It's all the bugs crawling around here, they're moving
+you!
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 137
+D2
+~
+~
+0 0 145
+D3
+~
+~
+0 0 149
+D4
+~
+~
+0 0 152
+S
+#145
+Along the East Wall~
+~
+~
+You look around and glance at the near by wall.  Someone has scrawled there in
+some unidentifiable substance the words, "This place is the pits!"  You also
+notice that there are some minute looking bugs, eating away at whatever the
+message was written in.  Perhaps it's not so good to anger these bugs.
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 144
+D2
+~
+~
+0 0 140
+D3
+~
+~
+0 0 146
+D4
+~
+~
+0 0 152
+S
+#146
+Safe Haven of the Pit~
+~
+~
+Looking down in surprise, you realize, you're standing on moderately clean
+ground!  The only ooze on this floor is that from the previous pairs of feet
+that have tracked it through.  Then, another surprise comes, there's no bugs
+here to pester you.  A general aura of peace extends from the healer.  Maybe
+you've finally found that nice spot to have your lunch.  Still hungry?
+~
+0 1073742852 0
+Rd     0
+D0
+~
+~
+0 0 149
+D1
+~
+~
+0 0 145
+D2
+~
+~
+0 0 138
+D3
+~
+~
+0 0 147
+D4
+~
+~
+0 0 152
+S
+#147
+Along the West Wall~
+~
+~
+Crawling through all this ooze has really helped you work up an appetite.
+Too bad there only seems to be ooze, ooze, and more ooze.  Oh wait, what's that
+to the east?  Maybe there's hope of some sanctuary after all!  Not to mention
+a place to eat your lunch!
+~
+0 1074143246 0
+Rd     0
+D0
+~
+~
+0 0 148
+D1
+~
+~
+0 0 146
+D2
+~
+~
+0 0 141
+D4
+~
+~
+0 0 152
+S
+#148
+Along the West Wall~
+~
+~
+Lying under a pile of the strange ooze of the pit, lies what looks like some
+type of mound.  At a closer glance however, you realize that the ooze is
+actually covering the remains of some poor adventurer.  But, the ooze is
+beginning to eat away at the remains!  Ick, maybe it does serve a purpose
+after all.  You wonder if it waits for you to die, first.
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 151
+D1
+~
+~
+0 0 149
+D2
+~
+~
+0 0 147
+D4
+~
+~
+0 0 152
+S
+#149
+The Pit of Decay~
+~
+~
+You find yourself in the actual pit, itself.  The ground is covered with a
+thick ooze that looks slimy.  You hope you don't fall into it!  Around you a
+horrid stench rises and makes you reel.  Altogether, you're looking forward to
+getting out of this place sometime soon!  Oh look, there's a finger lying in
+the ooze.
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 136
+D1
+~
+~
+0 0 144
+D2
+~
+~
+0 0 146
+D3
+~
+~
+0 0 148
+D4
+~
+~
+0 0 152
+S
+#150
+~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 152
+S
+#151
+North West Corner~
+~
+~
+This corner is surrounded by a strange ooze that is unlike other places.
+Then you realize why, it's pulsating a faint orange!  Uhg, and now it's
+moving!  Oh no!  Oh wait, now it's not, and it's not glowing either.  It's just
+a rotting orange and banana peel being carried off by a chicken.  You realize
+that you're now beginning to sweat, too bad there's no wind in here.  It just
+might have improved the smell!
+~
+0 1073741824 0
+Rd     0
+D1
+~
+~
+0 0 136
+D2
+~
+~
+0 0 148
+D4
+~
+~
+0 0 152
+S
+#152
+Safe Room~
+~
+~
+Here you find yourself in a small, quiet room which is seperate from the
+pit below.  You have a strange feeling of peace and safety here which wasn't 
+apparent to you in the area below.
+~
+0 1075840004 0
+Rd     0
+D4
+~
+~
+0 0 25001
+S
+#153
+Canth's Language Study Hall~
+~
+~
+This is where you learn languages.  Type learn to see what languages you can
+learn.
+~
+0 1032 0
+Rd     0
+D4
+~
+~
+0 0 103
+S
+#154
+A Room in the Basement~
+~
+~
+The hallway continues north and south.  The mustiness pervails throughout
+the whole basement and the smells get into your hair and clothes and assail
+your nostrils with an unpleasant scent.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 155
+D2
+~
+~
+3 0 123
+S
+#155
+A Room in the Basement~
+~
+~
+You have come to the end of the hallway.  You see that there are rooms to
+your west and east.  You can smell the dust and cold and damp all at once. 
+There are cobwebs hanging in your face and you have to wonder what creature
+lives in these parts.  Or how they can at all.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 157
+D2
+~
+~
+0 0 154
+D3
+~
+~
+0 0 156
+S
+#156
+A Room in the Basement~
+~
+~
+There is a fireplace that has long been put out of its misery in this
+room.  In front of the fireplace is a box with a bowl in front of it with a
+small bone in it.  The walls are wooded and the floor is covered with dirt. 
+The only way out is to the east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 155
+S
+#157
+A Room in the Basement~
+~
+~
+This room has a small window in the corner but you cannot see out for the
+windows are tinted black.  There are shelves placed here and old books
+stored here.  In the corner is a small faded cushion.  The only exit is to
+the west.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 155
+S
+#158
+A Room in the Basement~
+~
+~
+You are standing in a hallway in the basement.  It is dark and damp and
+smells musty, none too good.  You can hear the wind coming in from some
+opening in some window.  The hallway continues to the west.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 123
+D3
+~
+~
+0 0 159
+S
+#159
+A Room in the Basement~
+~
+~
+The hallway diverges to the west and east from here.  The hallways is
+dimly lit and water drips from the ceiling on to your head.  The color of
+the water is black.  You can go east back down the hallway or go west or
+east.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 160
+D1
+~
+~
+0 0 158
+D2
+~
+~
+0 0 161
+S
+#160
+A Room in the Basement~
+~
+~
+This room seems to have gotten the attention of all the spiders of the
+realm.  One web catches your eye as it seems to be not of a normal sized
+spider.  As a matter of fact it looks like a hammock cause it is so big.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 159
+S
+#161
+A Room in the Basement~
+~
+~
+This room is where some food had been stored from ages ago.  But it
+seemed to have attracted all sorts of bugs.  There is rotting food in a
+small crate and here and there roaches crawl around.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 159
+S
+#162
+A Room in the Basement~
+~
+~
+This room is dimly lit, and you can see a candle lying on the ground,
+dripping wax on the floor.  You also see the remains of a small creature,
+that must have died a while ago.  Exits lead north and south.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 123
+D2
+~
+~
+0 0 163
+S
+#163
+A Room in the Basement~
+~
+~
+The sound of dripping water can be heard, and upon further inspection,
+you discover a leak in the ceiling.  Carefully avoiding it, you manage to
+stay dry.  Exits lead to the north, east and west.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 162
+D1
+~
+~
+0 0 165
+D3
+~
+~
+0 0 164
+S
+#164
+A Room in the Basement~
+~
+~
+Nothing of much significance in here.  Just a few cobwebs that are
+hanging from the ceiling causes there to be something to look at.  Nothing
+to look at except for a lot of fly feces smeared all over petrifying. 
+From the size of the feces you know it's not from a small fly.  The only
+exit is to the east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 163
+S
+#165
+A Room in the Basement~
+~
+~
+The musty smell here is very difficult to stand.  Without any sort of
+ventilation, it is not easy to breath the air without wheezing and coughing.
+An exit leads to the west.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 163
+S
+#166
+A Room in the Basement~
+~
+~
+The eerie feeling of the basement causes you to get goosebumps all over
+your body.  You can only hope that it is not as scary as it looks down here.
+Exits lead to the east and west.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 167
+D3
+~
+~
+3 0 123
+S
+#167
+A Room in the Basement~
+~
+~
+You have entered a room which has exits leading in all directions. 
+Confused which way to go, it might be a good idea to choose soon.  A
+scratching noise can be heard coming from the west.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 169
+D1
+~
+~
+0 0 170
+D2
+~
+~
+0 0 168
+D3
+~
+~
+0 0 166
+S
+#168
+A Room in the Basement~
+~
+~
+You hear a noise in the far corner of the room, which startles you. 
+Looking around, you see a shadow running for cover.  Unnerved but unharmed,
+you carry on.  Exits lead to the north.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 167
+S
+#169
+A Room in the Basement~
+~
+~
+This room looks very similar to the rest of the basement.  Paint chips
+are flaking off the walls here, and a musty odor prevails.  An exit leads to
+the south.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 167
+S
+#170
+A Room in the Basement~
+~
+~
+Looking around here, you see a wall that has many cracks in it and has
+spiders crawling on it.  It frightens you, and you take a step back in fear.
+The only exit is to your west 
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 167
+S
+#171
+Entrance to the Mud School Attic~
+~
+~
+You have entered the attic of the mud school.  The creaking staircase
+leading down does not look too safe, and in fact, has a few broken stairs. 
+Being careful seems to be a good thing. &RExits lead north and down.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 172
+D5
+~
+~
+0 0 124
+S
+#172
+Mud School Attic~
+~
+~
+The sun shines through a crack in the roof, hitting you in the face. 
+While not making the room bright, it does allow you to see better.  The room
+is very dusty and stuffy, as there are no windows here.  
+&RExits lead in all directions but up and down.
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 181
+D1
+~
+~
+0 0 173
+D2
+~
+~
+0 0 171
+D3
+~
+~
+0 0 177
+S
+#173
+Mud School Attic~
+~
+~
+Walking through here stirs up a tremendous amount of dust, causing you to
+cough.  There is not a whole lot that is of interest in this particular
+room, other than small footprints in the dust.  
+&RExits lead to the east and west.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 174
+D3
+~
+~
+0 0 172
+S
+#174
+Mud School Attic~
+~
+~
+This room seems to be a little bit darker than the other ones.  It also
+reeks of decay, as if something may have died here a long time ago.  
+&RExits lead north south and west.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 175
+D2
+~
+~
+0 0 176
+D3
+~
+~
+0 0 173
+S
+#175
+Mud School Attic~
+~
+~
+The room is cluttered with leftover junk that is piled in a corner. 
+Everything you could possibly imagine is here, most of it worthless.  
+&RAn exit leads south.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 174
+S
+#176
+Mud School Attic~
+~
+~
+This part of the attic has a few relics that are gathering dust, but
+other than that it is completely empty.  Looking around, you see nothing of
+interest.  
+&RAn exit leads to the north.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 174
+S
+#177
+Mud School Attic~
+~
+~
+For some reason, this room is extremely clean.  There is no dust and it
+appears that it is well taken care of.  For what reason, and by whom, you
+cannot say.  
+&RExits lead to the west and east.
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 172
+D3
+~
+~
+0 0 178
+S
+#178
+Mud School Attic~
+~
+~
+A single window lies on the western wall here, but it is so dirty, that
+you cannot even see out of it.  Boxes lie piled in the corner, filled with
+clothes.  
+&RExits lead north east and south.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 180
+D1
+~
+~
+0 0 177
+D2
+~
+~
+0 0 179
+S
+#179
+Mud School Attic~
+~
+~
+Looking around, you notice something scurrying into the corner.  Upon
+further inspection, you discover a small mouse hiding among the trash.  You
+decide it is not worth your trouble to bother it.  
+&RAn exit leads to the north.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 178
+S
+#180
+Mud School Attic~
+~
+~
+With every step, the dust gets worse and worse.  This appears to be a
+room that noone ever comes into, and for good reason.  Lying in the midlle
+of the room is a coffin.  You decide not to check to see if it is occupied
+or not.  
+&RThe only exit is south.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 178
+S
+#181
+Mud School Attic~
+~
+~
+This room is extremely hot and stuffy feeling.  You do not feel
+comfortable at all in here, and decide you should head elsewhere.  
+&RExits lead north and south.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 182
+D2
+~
+~
+0 0 172
+S
+#182
+Mud School Attic~
+~
+~
+Walking through here, you find nothing of any significance, other than
+some cobwebs hanging from the wooden posts in the ceiling.  You wonder where
+all the spiders went to.
+&RExits lead in all directions but up and down.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 185
+D1
+~
+~
+0 0 184
+D2
+~
+~
+0 0 181
+D3
+~
+~
+0 0 183
+S
+#183
+Mud School Attic~
+~
+~
+The only thing of note in here, is a chair that is covered with a white
+sheet.  Or is that a ghost!?  
+&RAn exit leads east.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 182
+S
+#184
+Mud School Attic~
+~
+~
+There is a stain on the floor here, but it is difficult to tell what it
+is from.  Perhaps it is blood, in which case, you better be careful of what
+is lurking.  
+&RAn exit leads west.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 182
+S
+#185
+Mud School Attic~
+~
+~
+This room is very well lit, and a candle burns brightly in the middle of
+the room.  Then a strong breeze comes through and blows it out.  You hear
+snickering in coming from somewhere.  
+&RExits lead north and south.
+~
+0 12 0
+Rd     0
+D0
+~
+~
+0 0 186
+D2
+~
+~
+0 0 182
+S
+#186
+Mud School Attic~
+~
+~
+Another window lies on the south wall here, but the grime that covers it
+doesn't allow you to get a view of what is outside.  Noone has cleaned the
+window for a good ten years or more.  
+&RThe attic continues east, south or west.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 188
+D2
+~
+~
+0 0 185
+D3
+~
+~
+0 0 187
+S
+#187
+Mud School Attic~
+~
+~
+Walking into this room, something grabs your attention.  You can't
+pinpoint what it is, but you are on your guard for any suprises that could
+pop up.  
+&RThe only exit is east.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 186
+S
+#188
+Mud School Attic~
+~
+~
+The floor creaks as you put pressure on the old wooden boards.  The floor
+looks as if it could collapse at anytime, which could be very dangerous.  It
+might be a good idea to leave now.  
+&RWest is the only exit.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 186
+S
+#189
+Malthius' Office~
+~
+~
+You have entered Malthius' office.  It is a circular room, with a long
+table stretching along the wall.  A desk sits in the centre of the room with
+a chair situated behind it.  This is the Class Masters office, and it is
+always open.  
+~
+0 394240 0
+Rd     0
+D5
+~
+~
+0 0 103
+S
+#0
+
+
+
+#SPECIALS
+M 108 spec_cast_undead
+M 110 spec_healer
+M 126 spec_healer
+M 128 spec_teacher
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 100 1 100
+O 0 143 0 102
+M 0 129 1 102
+M 0 101 1 103
+M 0 102 1 104
+M 0 103 1 105
+M 0 104 1 106
+M 0 105 1 107
+M 0 107 1 111
+G 0 119 0
+G 0 157 0
+M 0 108 1 112
+G 0 120 0
+G 0 121 0
+G 0 122 0
+O 0 123 0 113
+P 0 121 0 123
+P 0 120 0 123
+P 0 119 0 123
+P 0 135 0 123
+P 0 136 0 123
+P 0 137 0 123
+P 0 138 0 123
+P 0 139 0 123
+P 0 140 0 123
+M 0 106 1 114
+G 0 118 0
+M 0 109 1 118
+E 0 124 0 22
+M 0 110 1 120
+M 0 113 1 121
+E 0 128 0 12
+G 0 138 0
+M 0 112 1 122
+E 0 127 0 3
+E 0 127 0 4
+M 0 111 1 123
+E 0 126 0 1
+E 0 126 0 2
+O 0 152 0 123
+O 0 125 0 124
+M 0 114 1 126
+M 0 118 1 127
+E 0 141 0 14
+M 0 115 1 128
+E 0 129 0 18
+E 0 129 0 19
+M 0 116 1 129
+E 0 130 0 6
+M 0 117 1 130
+E 0 131 0 11
+M 0 120 1 134
+E 0 132 0 22
+E 0 133 0 17
+M 0 119 1 135
+E 0 134 0 22
+M 0 121 5 138
+M 0 122 1 139
+M 0 110 1 144
+M 0 125 5 145
+E 0 142 0 16
+M 0 126 1 146
+M 0 124 5 147
+M 0 123 6 148
+M 0 128 1 153
+M 0 130 1 156
+M 0 131 1 157
+M 0 132 1 160
+M 0 133 1 161
+M 0 134 1 164
+M 0 135 1 165
+E 0 150 0 22
+M 0 136 2 168
+M 0 136 2 169
+M 0 138 1 172
+E 0 153 0 22
+M 0 137 2 175
+E 0 155 0 11
+M 0 137 2 176
+E 0 155 0 11
+M 0 140 1 179
+M 0 141 1 180
+M 0 139 2 183
+E 0 154 0 3
+M 0 142 2 187
+M 0 142 2 188
+M 0 143 1 189
+S
+
+
+
+#SHOPS
+106 4 10 2 0 0 100 100 0 24
+107 19 0 0 0 0 120 80 0 24
+108 15 1 17 0 0 110 80 0 24
+0
+
+
+
+#$

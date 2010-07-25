@@ -1,0 +1,2355 @@
+#AREADATA
+Name        { 35-50} Ruins of Ashakar~
+Builders    Zhyril~
+VNUMs       30700 30799
+Security    1
+Recall      1
+Flags       256
+Version     107
+Creator     Zhyril~
+Llevel      0
+Ulevel      0
+Sounds      The wind whistles eerily through the ruins.~
+Music       u3_live.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#30701
+minstrel~
+a minstrel~
+A minstrel is here.
+~
+~
+1 0 0 0 1 0 S
+200 1 400 400 0 0d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>act_prog p has fled!~
+music Brave Sir $n ran away,
+music Bravely ran away, away!
+music When danger reared its ugly head,
+music $e bravely turned $s tail and fled,
+music Yes, brave Sir $n turned about
+music And gallantly $e chickened out.
+music Bravely taking to $s feet
+music $e beat a very brave retreat,
+music Bravest of the brave, Sir $n!
+~
+|
+#30709
+vulture~
+a vulture~
+A vulture stands here, eyeing you placidly.
+~
+He seems to be waiting for you to become dinner.
+~
+1 524288 0 0 0 0 S
+5 1 10 10 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30710
+whirling cloud dust elemental~
+a dust elemental~
+A whirling cloud of dust buffets you with debris.
+~
+Just a cloud of dust.  Are those eyes?  Hmmmm...
+~
+1 540672 262144 0 0 0 S
+35 1 70 70 0 5000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30711
+giant scorpion~
+a giant scorpion~
+A huge scorpion, fully five feet in length, scuttles towards you.
+~
+A deadly-looking creature, with claws like steel blades and a tail that
+drips a poisonous ichor.  
+~
+1 8388672 0 0 0 0 S
+30 1 60 60 0 4000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30715
+skeletal warrior~
+a skeletal warrior~
+A skeletal warrior advances on you.
+~
+A long-dead figure in rotted armor.
+~
+1 8 65536 0 0 0 S
+35 1 70 70 0 3000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30724
+a giant jackal~
+a giant jackal~
+A huge jackal, almost eight feet tall at the shoulder, glares at you hungrily.
+~
+It looks extremely hungry.
+~
+1 64 0 0 0 0 S
+40 1 4 2 0 4000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>fight_prog 40~
+bite
+~
+|
+#30729
+brass golem~
+a brass golem~
+An enormous brass golem suddenly comes alive!
+~
+A huge creature crafted out of gleaming brass, his eyes burn with magical
+fire.  
+~
+35 8256 32788 524288 2 0 S
+50 1 100 100 0 10000d0+0 0d0+0
+0 19 0
+0 0 0
+0 0 0
+#30730
+python~
+a desert python~
+A huge snake covered with brown and green mottled scales lies coiled here.
+~
+It's easily 20 feet long, and it's eyes dance with maliciousness.
+~
+3 131136 16777220 32768 0 0 S
+0 1 0 0 0 7000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30732
+manticore~
+a manticore~
+A huge manticore lies here, napping in the sun.
+~
+A fearsome beast, with the body of a lion and the tail of a scorpion.  
+~
+3 655488 32784 0 0 0 S
+40 1 80 80 0 5000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30733
+packrat~
+a packrat~
+A packrat scuttles about here.
+~
+An evil little creature with red eyes.
+~
+1 65600 8388608 0 0 -20 S
+25 1 10 50 0 2500d0+0 0d0+0
+0 20 0
+0 0 0
+4 0 0
+>fight_prog 25~
+claw
+~
+>act_prog 25~
+bite
+~
+|
+#30746
+crazed hermit~
+the crazed hermit~
+A wiry old man, his skin darkened by the sun, sits here grinning to himself.
+~
+Hazy blue eyes look out from over a long, grey beard, and he's dressed in
+tattered grey robes.  
+~
+67 0 0 0 1 0 S
+99 1 198 198 0 99999d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Oh!  Hello!
+grin $n
+~
+>speech_prog hello~
+say So how do you like Ashakar so far?
+gig
+~
+>speech_prog ashakar~
+say Yes, 'tis a fine city.
+say A little run down at the moment.
+say But once it was grand!
+say Time brings all down, don't you know...
+say The last Ashakarian king died over four thousand years ago.
+say You should say hi to him if you have a chance!  He's downstairs.
+gig
+~
+>speech_prog king~
+emote looks at you owlishly.
+say Yes, he's sleeping at the moment.
+say But he isn't hard to wake!
+emote thinks a moment.
+say You'll need a scarab!
+gig
+~
+>speech_prog scarab~
+say Indeed, indeed!
+say Silver frames and golden carapaces, mashed together!
+say Boom!  There they go!
+laugh
+mpecho The old hermit seems to be getting less coherent.
+say And don't forget poor Akhmet!
+~
+>speech_prog akhmet~
+say Oh old Akhmet was a priest so wise,
+say That nobody else could devise
+say Traps so clever, or runes so perilous,
+say Why do you look so querolous?
+cackle
+mpecho Suddenly, a gust of wind blows sand against your face.
+mpecho You shield your eyes; when you look up again the old hermit is gone.
+mpgoto 30782
+mpmload 30747
+mppurge self
+~
+|
+#30747
+crazed hermit~
+the crazed hermit~
+A wiry old man, his skin darkened by the sun, sits here grinning to himself.
+~
+His face lights up when he sees you.
+~
+67 0 0 0 1 0 S
+99 1 198 198 0 99999d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Welcome, welcome, friends, Methidorans, countrymen!
+cackle
+~
+>speech_prog hello~
+say Why, hello again!
+say It's my old friend $n!
+say Seeny any efreeti?
+cackle
+~
+>speech_prog efreet efreeti~
+say They're new neighbors.
+frown
+say Not the most pleasant folks, though.
+say But fun to toy with nonetheless!
+gig
+say Better than the scorpions!
+~
+>speech_prog scorpions~
+say Ugly brutes, aren't they!
+say But tasty!
+emote licks his lips.
+say I'm a bit hungry...going to go get something to eat.
+say Now you kids be careful!
+mpecho A large crash echos through the temple, and you turn in alarm.
+mpecho When you look back, the hermit is gone.
+mpgoto 30799
+mpmload 30748
+mppurge self
+~
+|
+#30748
+crazed hermit~
+the crazed hermit~
+The old hermit is here, sitting on the battlements.
+~
+His grins at you mischievously.
+~
+1 0 0 0 0 0 S
+99 1 198 198 0 999999d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Took you long enough!
+cackle
+say Having enough fun?
+say Good!
+gig
+say Azhur certainly had it right,
+say HE stayed indoors at night!
+gig
+~
+>speech_prog azhur~
+say Ahh, I miss him.
+say He was almost as much fun as you.
+say But he ran afoul of the Dark One.
+sigh
+~
+>speech_prog dark~
+emote suddenly looks serious.
+say Be cautious, my friends--when he comes the world will feel it.
+say Speak not his name aloud.
+~
+>speech_prog name~
+say I will not say; even it's sound may draw his attention.
+say And even I am not prepared to face him alone.
+emote stands.
+grin
+say And now I must say--adieu!
+emote leaps off the battlements!
+mpecho Horrified, you peer over the edge, but you cannot see any trace of him.
+mpgoto 30746
+mpmload 30746
+mppurge self
+~
+|
+#30750
+spectral guardian~
+a spectral guardian~
+A spectral form hovers here.
+~
+A faint image hovers in the air here.
+~
+1 557186 589840 32768 0 -400 S
+40 1 80 80 0 3000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say You dare enter our resting place?
+say Leave, unbeliever, before you meet your death!
+mpgoto 30751
+mpmload 30752
+mppurge self
+~
+|
+#30752
+spectral guardian~
+a spectral guardian~
+A spectral guardian hovers here.
+~
+~
+1 0 16 0 0 -400 S
+35 1 70 70 0 5000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say So, you refuse to take heed of my warning?
+say Very well!  You shall rue this day, unbeliever!
+say Rise, guardians!  Rise and fall upon the intruder!
+mpecho The sound of stone crashing echoes throughout the corridors.
+mppurge self
+~
+|
+#30766
+mighty skeletal warrior~
+a mighty skeletal warrior~
+A huge skeletal warrior, dressed in the garb of royalty, advances towards you.
+~
+A huge figure in once-fine clothing, his eyes burn with hatred for all
+things living.  
+~
+3 128 98320 256 0 -400 S
+50 1 20 20 0 10000d0+0 0d0+0
+500 20 0
+0 0 1
+0 0 0
+#30780
+skeletal priest~
+the skeletal remains of a priest~
+A skeletal figure dressed in rotting robes is here.
+~
+He now guards the catacombs he once maintained.
+~
+3 0 0 0 0 0 S
+30 1 60 60 0 2000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30786
+fire elemental~
+a fire elemental~
+A figure made of living flame looms before you.
+~
+The only feature you can make out are it's eyes, which blaze even
+brighter than the rest of it's body.  
+~
+1 33554432 0 0 0 0 S
+35 1 70 70 0 4000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#30790
+monkey~
+a monkey~
+A monkey dances around here.
+~
+~
+1 104 0 0 1 0 S
+9999999 1 19999998 19999998 0 1000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>speech_prog attack Leptar!~
+murder leptar
+~
+>speech_prog attack Khaos!~
+salute zhyril
+murder khaos
+~
+>speech_prog attack Deconce!~
+salute zhyril
+murder deconce
+~
+>act_prog p slays you in~
+mload 30790
+~
+|
+#30792
+efreet~
+an efreet~
+A huge red figure stands here, his heavily-muscled limbs burning with fire.
+~
+Standing nearly 8 feet tall, and heavily muscled, the efreeti are a
+particularly intimidating race of beings.  This one does not seem happy.  
+~
+1 34078720 148 256 2 -500 S
+40 1 80 80 0 7000d0+0 0d0+0
+0 19 0
+0 0 1
+0 0 0
+#30793
+efreeti noble~
+an efreeti noble~
+A huge efreet dressed in blazing gold-and-red finery stands here.
+~
+His clothing and haughty bearing seem to indicate he is an entity of some
+status among his people.  
+~
+1 33554432 16 0 0 0 S
+45 1 90 90 0 3000d0+0 0d0+0
+450 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#30701
+bottle implementor wine~
+a bottle of the Implementors' wine~
+A bottle of glowing red liquid is here.~
+~
+10 268435456 0 0 0 1 1
+100 100
+300~ golden armor~ acidshield~ natures blessing~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30713
+ancient stone fountain~
+an ancient stone fountain~
+An ancient stone fountain stands here.  What water once flowed from it has long since disappeared.~
+~
+17 0 0 0 0 0 0
+100 100
+3000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30716
+khopesh sword~
+a khopesh sword~
+A heavy blade lies here.~
+~
+5 0 0 0 0 8193 30
+100 100
+0~ 0~ 0~ 3~
+7 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30728
+brass key~
+a brass key~
+A key lies here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30732
+golden jewel~
+a golden jewel~
+A golden jewel lies here.~
+~
+8 65 0 0 0 16385 30
+100 100
+0~ 0~ 0~ 0~
+2 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+#30742
+bronze plate~
+an enormous bronze plate~
+An enormous bronze plate is set into a stone base.  It appears to be a signalling device.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+plate~
+It looks as if the city's guardians used it to communicate with the other
+guardtowers.
+~
+#30745
+tattered robes~
+tattered robes~
+Robes lie here.~
+~
+13 0 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30746
+ancient stone fountain~
+an ancient stone fountain~
+An ancient stone fountain sits here, empty.~
+~
+17 0 0 0 0 0 0
+100 100
+100~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30762
+stone key~
+a stone key~
+A large stone key lies here.~
+~
+18 0 0 0 0 16385 0
+100 100
+0~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30763
+golden carapace~
+a golden carapace~
+A golden carapace lies here.~
+~
+13 65 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+30765 0 0
+E
+carapace~
+The bottom of it is grooved, almost as if it were piece of another object.
+~
+#30764
+silver frame~
+a silver frame~
+A strange silver frame lies here.~
+~
+8 64 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 200 0
+0 0
+reserved~
+0 0
+30765 0 0
+E
+frame~
+It is small oval frame with odd protrusions on each side.  There is a ridge
+in the center, almost as if it connected with something else...
+~
+#30765
+a golden scarab~
+a golden scarab~
+A golden beetle-shaped piece of jewelry lies here.~
+~
+18 65 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+3 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+#30766
+sword ashakarian kings~
+the sword of the Ashakarian kings~
+An enormous sword lies here.~
+~
+5 268435459 657941 0 67110912 8193 50
+100 100
+0~ 0~ 0~ 3~
+12 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 15
+A
+1 1
+A
+12 50
+A
+26 50
+#30767
+decayed robes~
+decaying robes~
+Decaying robes lie here.~
+~
+9 0 0 0 0 1025 1
+100 100
+1~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30768
+ancient crown~
+an ancient crown~
+An ancient crown, made of gold lies here.~
+~
+8 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+3 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+#30769
+golden torc~
+a golden torc~
+A golden torc lies here.~
+~
+8 0 0 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+5 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#30770
+ancient bronze breastplate~
+an ancient bronze breastplate~
+An ancient breastplate lies here.~
+~
+9 0 0 0 0 9 30
+100 100
+8~ 0~ 0~ 0~
+20 120 0
+0 0
+reserved~
+0 0
+0 0 0
+#30780
+obsidian amulet~
+an obsidian amulet~
+An obsidian amulet lies here.~
+~
+8 0 0 0 0 5 30
+100 100
+0~ 0~ 0~ 0~
+2 120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 20
+#30781
+ibis headed statue~
+an ibis-headed statue~
+A huge statue of an ibis-headed god is here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30782
+snake headed statue~
+a statue of a snake-headed god is here~
+A statue depicting a god with the head of a snake stands here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30783
+bull headed statue~
+a statue of a bull-headed god~
+A huge statue of some sort of bull-headed god is here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30790
+barrel monkeys~
+a barrel of monkeys~
+A barrel is here, full of monkeys.~
+~
+8 0 0 0 0 1 107
+100 100
+0~ 0~ 0~ 0~
+20 1 0
+2 30790
+reserved~
+-1 -1
+0 0 0
+#30792
+golden scimitar~
+a golden scimitar~
+A scimitar lies here.~
+~
+5 64 0 0 0 8193 40
+100 100
+0~ 0~ 0~ 3~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+#30793
+gold red robe~
+a gold and red robe~
+A gold and red robe is here.~
+~
+9 0 0 0 0 9 40
+100 100
+5~ 0~ 0~ 0~
+3 1200 0
+5 0
+fireshield~
+1 1
+0 0 0
+#30797
+red gold vest~
+a red and gold vest~
+(no description)~
+~
+9 64 0 537001985 32 9 40
+100 100
+5~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 20
+A
+19 2
+A
+18 2
+#30798
+silken pants~
+red silk pants~
+Puffy red pants made of silk lie here.~
+~
+9 64 0 0 0 32 40
+100 100
+2~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 7
+A
+12 40
+A
+19 5
+A
+18 5
+#30799
+red silken sash~
+a red silken sash~
+A sash lies here.~
+~
+9 64 0 0 0 2049 40
+100 100
+2~ 0~ 0~ 0~
+2 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 40
+A
+13 40
+A
+24 8
+A
+104 1
+A
+25 5
+A
+19 4
+A
+18 4
+#0
+
+
+
+#ROOMDATA
+#30700
+Before the Gates~
+~
+~
+You stand before the mammoth gates of an ancient city that rises suddenly
+from the desert floor.  The city walls tower 50 feet into the air, and are
+scarred and pitted from countless sandstorms.  An ancient street leads east
+into the heart of the city.  
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 30701
+D3
+~
+~
+0 0 17032
+S
+#30701
+An Ancient Street~
+~
+~
+You stand just inside the gates of the city.  To the east stretches a
+wide street, while to the west the cruel desert beckons.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30702
+D3
+~
+~
+0 0 30700
+S
+#30702
+An Ancient Street~
+~
+~
+The wide stone thoroughfare is covered with ankle deep sand, blown in by
+the desert wind which even now whips against you.  Huge stone buildings
+loom on all sides; to the south and ancient doorway grants access to one
+of them.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30703
+D2
+~
+~
+0 0 30745
+D3
+~
+~
+0 0 30701
+S
+#30703
+An Ancient Street~
+~
+~
+The wide stone street is covered with sand blown in from the desert.  On
+all sides loom abandoned buildings, and the wind whistles eerily through the
+city.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30704
+D3
+~
+~
+0 0 30702
+S
+#30704
+An Ancient Street~
+~
+~
+You have reached an intersection.  The main street of the city turns to
+the south, while a slightly narrower one runs north towards the city wall. 
+The only sound is of the desert wind moaning through the buildings.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30719
+D2
+~
+~
+0 0 30705
+D3
+~
+~
+0 0 30703
+S
+#30705
+An Ancient Street~
+~
+~
+The street turns to the east here, while a narrow alley leads south.  The
+sand seems to be everywhere...  Your eyes, your clothing, your throat...  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30704
+D1
+~
+~
+0 0 30707
+D2
+~
+~
+0 0 30706
+S
+#30706
+An Alley~
+~
+~
+The darkened alley continues to the south, while to the north you can
+enter the main city thoroughfare.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30705
+D2
+~
+~
+0 0 30730
+S
+#30707
+An Ancient Street~
+~
+~
+The street runs east and south.  The remorseless desert wind has piled up
+huge piles of sand in strange shapes here; the effect is almost hypnotic. 
+To the south a small passage leads to another east-west street.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30708
+D2
+~
+~
+0 0 30732
+D3
+~
+~
+0 0 30705
+S
+#30708
+An Ancient Street~
+~
+~
+The street turns here, heading north and west.  To the south an empty
+doorway allows access to one of the ancient buildings.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30709
+D2
+~
+~
+0 0 30721
+D3
+~
+~
+0 0 30707
+S
+#30709
+An Ancient Street~
+~
+~
+The street turns here, heading east and south.  To the east you can make
+out what appears to be the center of the city, and the buildings in that
+direction seem especially imposing.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30710
+D2
+~
+~
+0 0 30708
+S
+#30710
+An Ancient Street~
+~
+~
+The wide stone thoroughfare runs east and west through the city.  On all
+sides rise empty stone buildings.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30711
+D3
+~
+~
+0 0 30709
+S
+#30711
+A Plaza~
+~
+~
+You have entered a large stone square in the heart of the city.  Ancient
+stone buildings rise on all sides of you, and the desert wind sings
+mournfully through the streets.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30713
+D1
+~
+~
+0 0 30712
+D2
+~
+~
+0 0 30723
+D3
+~
+~
+0 0 30710
+S
+#30712
+A Plaza~
+~
+~
+This is the southeastern corner of the plaza.  To the east rises an
+imposing stone building; you can enter through an enormous bronze gate that
+hangs halfway off it's hinges.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30714
+D1
+~
+~
+0 0 30780
+D3
+~
+~
+0 0 30711
+S
+#30713
+A Plaza~
+~
+~
+The windswept plaza continues to the east and south.  The ground beneath
+your feet is covered with sand.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30714
+D2
+~
+~
+0 0 30711
+S
+#30714
+A Plaza~
+~
+~
+This is the northeastern section of the plaza.  To the north is another
+street, while to the west you can make out a large stone fountain.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30715
+D2
+~
+~
+0 0 30712
+D3
+~
+~
+0 0 30713
+S
+#30715
+A Street~
+~
+~
+This street connects to the city plaza to the south, and the wall road to
+the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30716
+D2
+~
+~
+0 0 30714
+S
+#30716
+Along the Wall~
+~
+~
+The street runs east and west against the wall.  To the south lies
+another street.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30718
+D2
+~
+~
+0 0 30715
+D3
+~
+~
+0 0 30717
+S
+#30717
+Along the Wall~
+~
+~
+The street continues to the east and west.  A low moaning sound echos through
+the buildings, and the ceaseless desert wind whips sand against your legs.
+You can enter a small stone dwelling to the south.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30716
+D2
+~
+~
+0 0 30764
+D3
+~
+~
+0 0 30720
+S
+#30718
+Along the Wall~
+~
+~
+The narrow street continues east and west.  Strange skittering sounds echo
+from the shadows cast by the massive stone buildings.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30722
+D3
+~
+~
+0 0 30716
+S
+#30719
+An Ancient Street~
+~
+~
+This narrow street runs north and south through the city.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30720
+D2
+~
+~
+0 0 30704
+S
+#30720
+Along the Wall~
+~
+~
+This narrow street runs east-west along the northern wall of the city.
+Ruined buildings tower above you, and the sand is thick on the street.
+To the south is another street.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30717
+D2
+~
+~
+0 0 30719
+D3
+~
+~
+0 0 30740
+S
+#30721
+An Abandoned Shop~
+~
+~
+This seems to have once been a thriving shop, but it has been abandoned
+for centuries.  The shattered remains of a stone counter and other assorted
+debris is all that is left.  To the south is a darkened doorway.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 30708
+D2
+~
+~
+0 0 30733
+S
+#30722
+The Northeast Corner~
+~
+~
+You stand at the northeastern corner of the city.  To the south is a high
+stone tower.  To the east stands the gutted remains of a guardtower.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 30725
+D3
+~
+~
+0 0 30718
+S
+#30723
+A Street~
+~
+~
+The street runs north towards a wide plaza and south towards the southern
+wall.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30711
+D2
+~
+~
+0 0 30724
+S
+#30724
+A Street~
+~
+~
+The street turns here, heading north and west.  To the east your way is
+blocked by impenetrable rubble.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30723
+D3
+~
+~
+0 0 30731
+S
+#30725
+An Antechamber~
+~
+~
+This small room lies between the street and a large stone staircase to the
+south.  The sand is thick in here, though you have escaped from the intense
+wind outside.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30722
+D2
+~
+~
+0 0 30726
+S
+#30726
+At the Base of the Stairs~
+~
+~
+You stand at the bottom of a circular stone staircase that twists upwards
+into the darkness.  To the north you can enter the street.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30725
+D4
+~
+~
+0 0 30727
+S
+#30727
+A Circular Stairway~
+~
+~
+You carefully climb the stairs, which are made of chipped and crumbling
+stone.  Outside you hear the harsh desert wind impact on the stone walls.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 30728
+D5
+~
+~
+0 0 30726
+S
+#30728
+Before a Brass Door~
+~
+~
+You have reached the top landing of the tower.  To the east lies a
+gleaming brass door, it's intricate designs unworn by age.  
+~
+0 8 0
+Rd     0
+D1
+~
+brass door~
+39 0 30729
+D5
+~
+~
+0 0 30727
+S
+#30729
+The Top of the Tower~
+~
+~
+You have reached a large chamber that lies at the top of the strange
+tower.  This was once apparently a sorcerer's abode; mystical symbols line
+the ground, and smashed stone vials lay scattered about.  
+~
+0 393226 0
+Rd     0
+D3
+An enormous brass door.
+~
+brass door~
+39 30728 30728
+S
+#30730
+A Dead End~
+~
+~
+The alley stops at a dead end.  The ground here is covered with debris,
+and several stones have fallen from the surrounding buildings to be smashed
+on the ground here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30706
+S
+#30731
+A Street~
+~
+~
+This narrow street runs east and west along the southern wall of the
+city.  Featureless stone buildings look down upon you, casting strange
+shadows on the sandy streets.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30724
+D3
+~
+~
+0 0 30732
+S
+#30732
+A Street~
+~
+~
+This small street runs east and and north.  To the west is a large
+guardtower built into the city wall.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30707
+D1
+~
+~
+0 0 30731
+D3
+~
+~
+0 0 30798
+S
+#30733
+A Room~
+~
+~
+You have entered what appeared to have once been a storage room for the
+store.  Crashed bits of pottery lie all around you, as well as various odds
+and ends.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30721
+S
+#30740
+Along the Wall~
+~
+~
+The street ends to the west at a massive guardtower.  Ancient stone steps
+lead up to the top, where you can make out some strange metallic shape.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30720
+D3
+~
+~
+0 0 30741
+S
+#30741
+A Guardtower~
+~
+~
+You stand on the bottom floor of a guard tower.  Upwards a stone
+staircase leads to the top of the tower; you can exit to the street to the
+east.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 30740
+D4
+~
+~
+0 0 30742
+S
+#30742
+At the Top of a Guardtower~
+~
+~
+You stand at the top of a guardtower.  A stone roof once sat above your
+head, but most of it has fallen down.  You can see across the vast desert
+from here, the heat waves rising in a pulsating rhythm.  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 30741
+S
+#30745
+A Building~
+~
+~
+You have entered an ancient stone building.  Bare of any furnishings, the
+desert sand has heaped up inside.  To the south is another doorway.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30702
+D2
+~
+~
+0 0 30746
+S
+#30746
+An Ancient Garden~
+~
+~
+This small walled garden has long been abandoned.  Sand is heaped up in
+huge piles, and the wind blows mournfully across the walls.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30745
+S
+#30750
+The Catacombs~
+~
+~
+You stand in a large stone tunnel beneath the city.  On all sides are
+stone tombs engraved with indecipherable symbols.  Above you are the remains
+of a staircase; the only way you could possibly reach it is by flying.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 30751
+D4
+~
+~
+0 0 30797
+S
+#30751
+The Catacombs~
+~
+~
+The stone catacombs continue in all directions.  You think you hear a
+faint moaning sound in the darkness, but you could be mistaken.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 30752
+D2
+~
+~
+0 0 30750
+S
+#30752
+The Catacombs~
+~
+~
+Tunnels stretch out on every side of you.  The dust is thick on the
+ground, but it appears to have been disturbed very recently...  
+~
+0 13 0
+Rd     0
+D0
+~
+~
+0 0 30761
+D1
+~
+~
+0 0 30755
+D2
+~
+~
+0 0 30751
+D3
+~
+~
+0 0 30753
+S
+#30753
+The Catacombs~
+~
+~
+The tunnel turns east and north here.  The dust is thick on the ground,
+and you make out strange booted footprints on the ground...
+To the west is a large stone doorway, marked with strange symbols.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30754
+D1
+~
+~
+0 0 30752
+D3
+~
+door~
+7 30762 30765
+S
+#30754
+The Catacombs~
+~
+~
+The tunnel comes to an end here, at a featureless stone wall.  On all
+sides are stone caskets containing the remains of those who once inhabited
+the city above.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 30753
+S
+#30755
+The Catacombs~
+~
+~
+On all sides of you are ancient stone shelves piled high with bones.  The
+dust is thick, but marked by bootprints, and you think you can make out a
+skittering sound echoing far off in the darkness.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 30756
+D3
+~
+~
+0 0 30752
+S
+#30756
+The Catacombs~
+~
+~
+The dark catacombs twist and turn around you, and the air is silent and
+cold.  
+~
+0 393225 0
+Rd     0
+D1
+~
+~
+0 0 30757
+D2
+~
+~
+0 0 30755
+S
+#30757
+The Catacombs~
+~
+~
+The ancient stone passages split here, heading to the north, south, and
+west.  All about you are stone shelves containing the millenia-old remains
+of the city's past inhabitants.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30758
+D2
+~
+~
+0 0 30759
+D3
+~
+~
+0 0 30756
+S
+#30758
+The Catacombs~
+~
+~
+The corridor ends here, at a featureless stone wall.  Dust hangs thick in
+the air, and it is strangely cold.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+515 0 30762
+D2
+~
+~
+0 0 30757
+S
+#30759
+The Catacombs~
+~
+~
+The catacombs twist and turn, heading north and west.  To the east is a
+large empty doorway leading into a large chamber.
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 30757
+D1
+~
+~
+0 0 30760
+S
+#30760
+A Funerary Chamber~
+~
+~
+This large chamber seems to have been dedicated to preparing the deceased
+for burial.  Large stone slabs, large enough for a full-grown man to lie on
+stand in the center of the room, while the rusted remains of metal
+instruments line the walls.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 30759
+S
+#30761
+The Catacombs~
+~
+~
+A long dusty passage ends here at a blank wall.  All about you are heaps
+of sand and shards of pottery.  
+~
+0 401408 0
+Rd     0
+D2
+~
+~
+0 0 30752
+S
+#30762
+A Secret Chamber~
+~
+~
+This may have once served as a storage cellar, but all that remains now
+are smashed jars and bowls.
+~
+0 0 0
+Rd     0
+D2
+~
+hidden door~
+515 0 30758
+D4
+~
+~
+0 0 30763
+S
+#30763
+A Kitchen~
+~
+~
+Smashed and empty bowls lay scattered about, and a simple wooden hearth
+lies in the southern wall.  The only other feature of the room is a hole in
+the floor, which you can descend into by means of a stone ladder.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30764
+D5
+~
+~
+0 0 30762
+S
+#30764
+A Small Home~
+~
+~
+This small dwelling is long-abandoned, containing only the shattered
+remains of a stone table and sand.  To the south is what appears to be a
+kitchen.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30717
+D2
+~
+~
+0 0 30763
+S
+#30765
+The Hall of Kings~
+~
+~
+This vast cavern has been carved out of the living rock in order to house
+the bones of the city's rulers.  Shadowy alcoves contain stone statues
+depicting ancient kings which gaze down upon you with seeming disapproval. 
+To the west is an even larger door, carved with stone symbols.  
+~
+0 0 0
+Rd     0
+D1
+~
+door~
+7 30762 30753
+D3
+~
+~
+0 0 30766
+S
+#30766
+Before the Ancient Door~
+~
+~
+The hall ends here, at a massive stone door.  In the center of the door
+is a large impression shaped like a beetle.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 30765
+D3
+~
+stone door~
+119 30765 30767
+S
+#30767
+The Chamber of Kings~
+~
+~
+You stand in a large chamber deep beneath the city.  The smooth stone
+walls are covered with ancient glyphs, and ancient vases with funeral
+offerings line the chamber.  An ancient stone bier rests in the western
+wall, currently empty.  
+~
+0 8 0
+Rd     0
+D1
+~
+stone door~
+119 30765 30766
+S
+#30780
+Inside the Ruined Temple~
+~
+~
+You stand in a vast chamber with a domed ceiling.  It appears as if the
+residents of the city once came here in droves to perform their rites,
+though it has been many centuries since anyone stood in here.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+0 0 30781
+D3
+~
+~
+0 0 30712
+S
+#30781
+The Center of the Temple~
+~
+~
+You stand in the center of the vast temple.  To the north, west and south
+the temple stretches on, while to the east is a doorway leading to a set of
+stone steps.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30782
+D1
+~
+~
+0 0 30784
+D2
+~
+~
+0 0 30783
+D3
+~
+~
+0 0 30780
+S
+#30782
+The Temple~
+~
+~
+The northern arm of the temple is filled with rubble and sand.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 30781
+S
+#30783
+The Temple~
+~
+~
+The southern arm of the temple contains a large statue.  On the worn
+stone walls you think you can make out ancient glyphs.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30781
+S
+#30784
+A Stone Chamber~
+~
+~
+This stone chamber contains a set of ancient stone steps leading upwards
+into darkness.  There is also an open doorway in the northern wall.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30795
+D3
+~
+~
+0 0 30781
+D4
+~
+~
+0 0 30785
+S
+#30785
+A Temple Hall~
+~
+~
+You have reached the top level of the temple.  A corridor runs north and
+south from here, and the stone floor is worn and chipped.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30786
+D2
+~
+~
+0 0 30789
+D5
+~
+~
+0 0 30784
+S
+#30786
+A Temple Hall~
+~
+~
+This temple hallway runs north and south.  The sand on the ground here is
+almost glassy in some places, as if some great heat fused it into glass.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30787
+D2
+~
+~
+0 0 30785
+S
+#30787
+A Temple Hall~
+~
+~
+The hall ends here, at a stone wall.  To the east stands a large stone
+door, covered with runes worn down by time.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+3 0 30788
+D2
+~
+~
+0 0 30786
+S
+#30788
+An Ancient Chamber~
+~
+~
+This ancient stone chamber has been in disuse for centuries.  It contains
+only dust and cobwebs.  
+~
+0 8 0
+Rd     0
+D3
+~
+door~
+3 0 30787
+S
+#30789
+A Temple Corridor~
+~
+~
+This long stone corridor runs north and south through the upper levels of
+the temple.  Numerous doorways have been sealed with rubble, and debris
+litters the ground.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30785
+D2
+~
+~
+0 0 30790
+S
+#30790
+A Temple Corridor~
+~
+~
+The corridor twists here, heading west towards a huge brass door.  The
+ubiquitous sand that fills the rest of the temple is strangely absent here;
+instead the hall is filled with black ash.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30789
+D3
+~
+~
+0 0 30791
+S
+#30791
+Before a Brass Door~
+~
+~
+The corridor ends here, at an imposing brass door.  The wind seems to
+have died down, and the air is strangely still.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 30790
+D3
+~
+~
+7 0 30792
+S
+#30792
+A Large Chamber~
+~
+~
+You have entered a huge stone chamber in the upper levels of the temple. 
+Strange symbols are carved into the walls, and a large stone statue stands
+in the center of the room, it's features rendered indistinguishable by age. 
+~
+0 8 0
+Rd     0
+D1
+~
+brass door~
+7 0 30791
+S
+#30795
+A Narrow Hallway~
+~
+~
+This narrow hallway runs north from the temple's central stairway.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 30796
+D2
+~
+~
+0 0 30784
+S
+#30796
+A Stairway~
+~
+~
+A narrow set of stone steps leads down into darkness here.  Despite the
+heat you feel a strange shiver run up your spine.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 30795
+D5
+~
+~
+0 0 30797
+S
+#30797
+The Stone Steps~
+~
+~
+The stairway crumbles beneath you, and you lose your footing!
+~
+0 33554441 0
+Rd     0
+E
+stairs~
+The stairs are worn and chipped.
+~
+D4
+~
+~
+0 0 30796
+D5
+~
+~
+0 0 30750
+S
+#30798
+A Guardtower~
+~
+~
+You stand on the first floor of the guardtower.  A stone ladder leads upwards.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30732
+D4
+~
+~
+0 0 30799
+S
+#30799
+A Guardtower~
+~
+~
+You stand at the top of a guardtower.  To the northeast the city
+stretches out, the grim remains of a once-proud civilization.  You can make
+out several structures of note; a large temple complex in the middle of the
+city, and a high stone tower near the northeastern corner.  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 30798
+S
+#0
+
+
+
+#SPECIALS
+M 30780 spec_cast_cleric
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 30713 0 30713
+M 0 30711 1 30714
+M 0 30711 1 30716
+M 0 30710 1 30717
+M 0 30711 2 30720
+M 0 30711 2 30720
+M 0 30724 1 30720
+M 0 30724 1 30724
+M 0 30730 1 30730
+M 0 30724 1 30732
+M 0 30733 1 30733
+G 0 30728 0
+G 0 30764 0
+M 0 30732 1 30742
+O 0 30742 0 30742
+O 0 30746 0 30746
+M 0 30715 1 30752
+E 0 30770 0 5
+E 0 30716 0 20
+M 0 30715 1 30753
+E 0 30770 0 5
+E 0 30716 0 20
+M 0 30715 1 30754
+E 0 30716 0 20
+E 0 30770 0 5
+G 0 30762 0
+M 0 30715 1 30756
+E 0 30716 0 20
+E 0 30770 0 5
+M 0 30780 1 30760
+E 0 30780 0 3
+E 0 30767 0 16
+M 0 30766 1 30767
+E 0 30768 0 6
+E 0 30767 0 16
+E 0 30766 0 20
+E 0 30769 0 3
+O 0 30781 0 30781
+O 0 30783 0 30783
+M 0 30792 2 30785
+E 0 30792 0 20
+M 0 30786 1 30787
+M 0 30786 1 30790
+M 0 30793 1 30792
+E 0 30793 0 5
+G 0 30763 0
+M 0 30792 1 30797
+E 0 30797 0 5
+E 0 30798 0 11
+E 0 30799 0 17
+O 0 30742 0 30799
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,2392 @@
+#AREADATA
+Name        {  1-5 } CSI Temple~
+Builders    None~
+VNUMs       23101 23200
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      You feel a slight disturbance in the air.~
+SoundsA     (None)~
+Music       u6_creat.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#23101
+~
+~
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#23102
+priest~
+A Priest~
+A Priest of Chaos, Strife and Injustice is here to help you.
+~
+The priest looks exactly like you.  How odd.
+~
+524875 268435584 0 1073741824 0 -1000 S
+108 1 216 216 0 50000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) < 2
+say Welcome to Adventures of Stormgate, $n!  I have a newbie guide for you to read.  To read it, type: READ CHAPTER, where chapter is a number.
+smile $n
+mpoload 156
+give newbie $n
+say If you need any other help, just say YES.
+else
+say You have outgrown your need for me, $n.  May you find adventure in all that you do!
+endif
+endif
+~
+>speech_prog help~
+smile
+say Hello $n! Welcome to Adventures of Stormgate, where many journeys lie ahead of you!
+say Can I be of assistance to you in any way?
+~
+>speech_prog yes yeah yep ya yessir yup yuppers~
+say OK..just say one of the following, and i will help you with that topic.
+smile $n.
+mpecho LEVEL EXP EXIT PKILL PEACEFUL TRAIN PRACTICE SCHOOL STATS
+~
+>speech_prog no nope nosir nopers~
+say Then begon, I have no time for you.
+~
+>speech_prog exit exits~
+say There are many auto commands that you can type:
+mpecho AUTOEXIT: will show all exits when you walk in the room.
+mpecho AUTOLOOT: will take all items in the corpse
+mpecho AUTOGOLD: will take all gold in a corpse
+mpecho AUTOSAC: will sacrifice corpses after you kill a mob
+~
+>speech_prog levels level lvl~
+say to raise levels, you must gain experience from killing mobs.
+mpecho AREA: shows you what level all the areas in the game are.
+say For the time being you should stay at the mud school until you reach level 5.
+~
+>speech_prog peaceful~
+say Peaceful means that you do not wish to kill other players. You cannot be attacked by them, no matter what level you are. Conversely, you also cannt attack them.
+~
+>speech_prog practice prac~
+say You may train your attributes right now, or later, you can find the training hall.  To practice your skills, you must first attain level three, and find a practicioner.
+~
+>speech_prog stats statistics attributes~
+say there are many stats. To see what your values are, type wo.
+mpecho STR: strength, this affects how much you can carry and how much.
+mpecho WIS: affects how many practices you get per level.
+mpecho INT: affects how many practices you need to become an adept at a skill or spell.
+mpecho DEX: affects how often you can dodge or parry an attack.
+mpecho CON: affects how many hit points you gain per level.
+say To increase your stats, go TRAIN them.
+~
+>speech_prog school~
+say You are in the school now.
+~
+>speech_prog train~
+say To train, find someone to train your attributes, such as myself.  If you type "TRAIN", you can see what you can train.  Most people train their wisdom first, as it helps you gain more pracs per level.
+smile
+~
+>speech_prog exp~
+Say Experience is gained by killing mobs. You must gain 1000 experience for eac level.
+mpecho CONSIDER <MOB>: shows you the chances that you will be able to kill the mob in question.
+mpecho KILL <MOB>: you attempt to kill a mob.
+mpecho WORTH: shows you how much experience you have and how much you need until your next level. Also it shows your modified stats.
+say for right now, you should stay in the mud school until level 5.
+~
+>speech_prog Pkill~
+say Pkill means that you wish to be able to fight and kill other players in the game. This will start at level 30, and you can only attack other players with a pkill flag.
+~
+|
+#23105
+child boy~
+A Child~
+A small, innocent boy is here.
+~
+It is a small child.  His eyes are hollow.
+~
+65 0 0 0 0 1000 S
+1 1 2 2 0 10d0+0 0d0+0
+10 0 0
+0 0 1
+0 0 0
+#23106
+child girl~
+A Child~
+A small, innocent girl is here.
+~
+It is a small child.  Her eyes are hollow.
+~
+65 0 0 0 0 1000 S
+1 1 2 2 0 10d0+0 0d0+0
+10 0 0
+0 0 2
+0 0 0
+#23107
+kitten~
+A Kitten~
+A kitten is here, looking cute.
+~
+It is a kitten.  Her eyes are hollow.
+~
+65 0 0 0 0 1000 S
+1 1 2 2 0 12d0+0 0d0+0
+10 0 0
+0 0 2
+0 0 0
+#23108
+puppy~
+A Puppy~
+A puppy is here, looking cute.
+~
+It is a puppy.  His eyes are hollow.
+~
+65 0 0 0 0 1000 S
+1 1 2 2 0 12d0+0 0d0+0
+10 0 0
+0 0 1
+0 0 0
+#23109
+prisoner~
+A Prisoner~
+A prisoner is here, chained to the wall.
+~
+He is a prisoner.  His arms are weak, and his clothes are tattered.
+~
+67 0 0 0 0 1000 S
+1 1 2 2 0 15d0+0 0d0+0
+10 0 0
+0 0 1
+0 0 0
+#23110
+adult prisoner~
+An Adult Prisoner~
+An adult prisoner is here, chained to the wall.
+~
+He is a broken man.
+~
+67 0 0 0 0 1000 S
+2 1 4 4 0 20d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Thank the gods you are here!  Please, let me out, I'll give you everything I own!
+~
+|
+#23111
+duck~
+a duck~
+A duck waddles around the room, quacking.
+~
+It's a duck.
+~
+65 0 0 0 0 1000 S
+3 1 6 6 0 40d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#23112
+mother~
+a mother~
+A mother of a lost soul wanders around quietly sobbing.
+~
+She is in dire straights, and looks as though she has been tortured.
+~
+65 0 0 0 0 1000 S
+4 1 8 8 0 50d0+0 0d0+0
+40 0 0
+0 0 2
+0 0 0
+#23113
+father~
+a father~
+A father of a child is here.
+~
+He is in dire straights, and looks as though he has been tortured.
+~
+65 0 0 0 0 1000 S
+4 1 8 8 0 50d0+0 0d0+0
+40 0 0
+0 0 1
+0 0 0
+#23114
+soldier~
+a soldier~
+A soldier of a forgotten religion is here.
+~
+He looks weathered.
+~
+65 0 0 0 0 1000 S
+5 1 10 10 0 65d0+0 0d0+0
+50 0 0
+0 0 1
+0 0 0
+#23115
+hamster~
+a hamster~
+A hamster wanders around quietly.
+~
+It is much larger than a normal hamster, mutated hideously
+~
+65 0 0 0 0 1000 S
+3 1 6 6 0 40d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#23116
+sheep~
+a sheep~
+A sheep searches desperately for food.
+~
+It's a sheep.
+~
+65 0 0 0 0 1000 S
+1 1 2 2 0 20d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23117
+lost soul~
+a lost soul~
+A lost soul is here, wandering slowly.
+~
+It is partially ethereal, and appears to be a ghost of some kind.
+~
+65 0 0 0 0 1000 S
+2 1 4 4 0 40d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+moan
+say I have the key.  Just say KEY and I will drop it.
+~
+>rand_prog 10~
+moan
+~
+>speech_prog key~
+moan
+mpoload 23117
+drop key
+moan
+~
+|
+#23120
+priest injustice~
+a priest of injustice~
+A Priest of Injustice is here.
+~
+He used to be human, but has since decayed into a shell of his former self.
+~
+75 268435456 16 1073741824 0 -1000 S
+108 1 216 216 0 50000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say You are safe here.  Rest, sleep, and heal.
+~
+>speech_prog hi hello~
+say Greetings, $n.
+~
+>speech_prog job~
+say My job?  Why, to heal of course.
+~
+>speech_prog bye~
+say Safe travels.
+~
+|
+#23121
+slither trainer~
+Slither~
+Slither is here to train you.
+~
+Slither is here, his body contorting every which way at the same time. 
+He appears not to notice, or at the very minimum it causes him no
+discomfort.  
+~
+524867 268435584 16 1073741824 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say What do you want, $n?
+~
+>speech_prog hi hello~
+grumble
+say I said, what do you want?  I don't have all day.
+~
+>speech_prog bye~
+say Fine!  Leave!  See if I care!
+~
+>speech_prog job~
+say It is my job to train you.  Type TRAIN to see what I can do.
+~
+|
+#23122
+withyr practicioner~
+Withyr~
+Withyr is here to help you practice your skills and spells.
+~
+Withyr was once a man, but the warpstones of chaos have changed his body
+into something else.  He doesn't seem to mind, though.  Done 
+~
+525379 268435584 16 1073741824 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if level($n) < 3
+say Greetings.  Remember, you must be at least level 3 to practice skills and spells.
+else
+say Greetings.  Type PRACTICE to see what you can learn at this time.
+endif
+~
+>speech_prog hi hello~
+say Greetings $n, I hope all is well.
+~
+>speech_prog bye~
+say Fare thee well, $n!
+~
+>speech_prog job~
+say It is my job to help you practice your spells and skills.  Type PRACTICE to see what I can do.
+~
+|
+#23123
+khyryllyx teacher~
+Khyryllyx~
+Khyryllyx is here to teach you languages.
+~
+Her bone structure suggest that she was once a beautiful elf.  Now,
+however, she is a twisted version of her former self.  She does not appear
+to be in any discomfort, though.  
+~
+589891 268435584 16 1073741824 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Hello, $n. I can teach you languages.
+~
+>speech_prog hi hello~
+say Hello, $n. I can teach you languages.
+~
+>speech_prog bye~
+say Farewell, $n.  Come back any time.
+~
+>speech_prog languages language~
+say There are many languages.  Type LEARN to see what ones you know, and what ones are available.  
+say The common language is special, in that you can not speak it, but you can understand it.
+~
+|
+#23124
+injudicator classmaster~
+Injudicator~
+Injudicator is here to aid you.
+~
+She is completely translucent, seeming to fade in and out of reality at a
+constant rate.  
+~
+786499 268435584 16 1073741824 0 -1000 S
+150 1 300 300 0 100000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Greetings, $n.
+~
+>speech_prog hi hello~
+say Greetings, $n.
+~
+>speech_prog bye~
+say Farewell, $n.
+~
+>speech_prog job~
+say It is best for you to type HELP REMORT for an explanation.
+~
+|
+#23125
+high priest~
+The High Priest~
+The High Priest is here, chanting.
+~
+The high priest does not seem to have a face.  When you look there, your
+eyes are forced to look away by some unseen force.  
+~
+524363 268435584 16 1610612736 512 -1000 S
+108 1 216 216 0 100000d0+0 0d0+0
+1080 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isgood($n)
+glare $n
+else
+say Welcome, $n.  Rest, Sleep, and be well.  You may type HEAL to see what services I offer.
+endif
+~
+>speech_prog hi hello bye~
+nod $n
+~
+>speech_prog job~
+emote chants
+~
+|
+#23126
+likjam bartender~
+Likjam~
+Likjam the bartender is here.
+~
+~
+524355 0 16 0 0 -1000 S
+150 1 300 300 0 30000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>speech_prog hi hello~
+say Hello.  Can I help you?  Type LIST to see my wares.
+~
+>speech_prog bye~
+say Safe journeys, $n!
+~
+>speech_prog job~
+say I am a shopkeep.  Type LIST to see my wares.  Pay no attention to the wench.
+~
+|
+#23127
+alexis barmaid~
+Alexis~
+Alexis the barmaid is here, serving drinks.
+~
+She is always concentrated on her task, but she may offer some information.
+~
+67 0 16 0 0 -1000 S
+150 1 300 300 0 30000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Oh, another visitor.  Greetings, $n!  Just type "LIST" to see what is served here.
+emote mumbles something about a key, and goes back to work.
+~
+>speech_prog key~
+say Key?  Yes, I know about the two part key.  It locks the chest!
+mpforce likjam say Quiet, Alexis!  Get back to work!
+~
+>speech_prog chest~
+say There is a chest on the top floor of this temple containing treasure!
+mpforce likjam slap alexis
+mpforce likjam say I said get back to work, wench!
+~
+>speech_prog temple treasure~
+tell $n I heard there is a secret door up there.  You may have to SEARCH for it!
+~
+|
+#23128
+grizwyld~
+Grizwyld~
+Grizwyld is here.
+~
+~
+524355 0 16 0 0 -1000 S
+150 1 300 300 0 30000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+emote looks up from his counter.
+say Yes?
+~
+>speech_prog hi hello~
+say Yes?
+~
+>speech_prog bye~
+emote returns to his duties at the counter.
+~
+>speech_prog job~
+say My job is to sell you things.  Type LIST to see what I have for sale.
+~
+|
+#23129
+guard~
+a guard~
+A guard is here, ever vigilant.
+~
+~
+65 0 0 0 0 -1000 S
+10 1 20 20 0 200d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isgood($n)
+glare $n
+endif
+~
+>speech_prog hi hello~
+emote stands at attention.
+~
+>speech_prog bye~
+if isgood($n)
+bird $n
+else
+salute $n
+endif
+~
+>speech_prog job~
+emote stands at attention
+~
+|
+#23130
+squirrel~
+a squirrel~
+A squirrel scurries about.
+~
+It is a squirrel with a fluffy tail.
+~
+67 0 0 0 0 1000 S
+1 1 2 2 0 35d0+0 0d0+0
+5 0 0
+0 0 0
+0 0 0
+#23131
+chipmunk~
+a chipmunk~
+A chipmunk scurries about.
+~
+A cute little chipmunk with puffy cheeks.  
+~
+67 0 0 0 0 1000 S
+1 1 2 2 0 30d0+0 0d0+0
+5 0 0
+0 0 0
+0 0 0
+#23132
+rabbit~
+a rabbit~
+A rabbit is here, foaming at the mouth.
+~
+It's got teeth like!  And claws like!  And eyes like!
+~
+99 0 0 0 0 1000 S
+1 1 2 2 0 45d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23133
+gerbil~
+a gerbil~
+A gerbil nibbles at your feet.
+~
+It is a cute little gerbil, it wouldn't hurt a fly.
+~
+67 0 0 0 0 1000 S
+1 1 2 2 0 40d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23134
+rabid ferret~
+a ferret~
+A rabid ferret looks crazed.
+~
+It's a ferret, and it looks angry.
+~
+99 0 0 0 0 1000 S
+1 1 2 2 0 35d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23135
+bloodthirsty chinchilla~
+a bloodthirsty chinchilla~
+A bloodthirsty chinchilla growls at nothing in particular.
+~
+It is grey, and covered in sores.
+~
+99 0 0 0 0 1000 S
+1 1 2 2 0 40d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23136
+psycho pigeon~
+a psycho pigeon~
+A psycho pigeon flaps around your head.
+~
+It's a pigeon, but jet black, with blood red eyes.
+~
+99 0 0 0 0 1000 S
+1 1 2 2 0 25d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#23137
+swan~
+a swan~
+A lovely swan pecks at the ground.
+~
+It is a beautiful white swan.
+~
+67 0 0 0 0 1000 S
+3 1 6 6 0 75d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#23138
+priest~
+a Priest~
+A priest is here, ready to heal you.
+~
+He is quite powerful.
+~
+67 128 0 1610612736 512 -1000 S
+300 1 600 600 0 30000d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if level($n) == 1
+say You are not strong enough to enter the Temple Proper.  Come back when you advance.
+push $n east
+else
+say Greetings, $n.  You may advance.
+endif
+~
+>speech_prog hi hello~
+say Hello, $n.  Rest, I will heal you.
+~
+>speech_prog bye~
+say Fare thee well, $n.
+~
+>speech_prog job~
+say It is my job to ensure pupils pass the tests.
+~
+>speech_prog tests~
+Yes, the upper 3 floors of the temples are the tests!
+~
+|
+#0
+
+
+
+#OBJECTS
+#23101
+sign~
+a sign~
+A sign is hanging on the wall.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+A lot of NPC's can communicate.  If they are able, all will respond to
+Trigger Words.  Common to all of these NPCs are the trigger words HI, JOB
+and BYE.  Simply say these words in their presence, and they will say
+something back.  If you wish to continue talking to them, try to discern the
+next trigger word of the conversation by what they say.  
+~
+#23102
+sign~
+a sign~
+The FIRST SIGN of many is hanging on the wall here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Welcome to Adventures of Stormgate.  May your journey here be.... 
+Adventurous.  This is the first sign of the Mud School.  Be sure to LOOK
+SIGN or L SIGN wherever you might find one.  Also, keep an eye out for
+keywords in descriptions, as there may be other keywords for objects to be
+looked at.  Be brave, and you shall be rewarded.  
+~
+#23103
+tattered pants~
+tattered pants~
+A pair of tattered pants is here.~
+~
+9 0 0 0 0 33 1
+100 100
+0~ 0~ 0~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 1
+#23104
+tattered shirt~
+a tattered shirt~
+A tattered shirt sits here.~
+~
+9 0 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+A
+19 1
+#23105
+tattered key~
+a tattered key~
+A key sits on the ground here, rusting.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+0 2 0
+0 0
+reserved~
+0 0
+0 0 0
+#23106
+tattered boots~
+tattered boots~
+A pair of tattered boots sits in a pile.~
+~
+9 0 0 0 0 65 1
+100 100
+0~ 0~ 0~ 0~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 5
+#23107
+tattered belt~
+a tattered belt~
+An old, tattered belt rests here.~
+~
+9 0 0 0 0 2049 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 5
+A
+12 5
+#23108
+tattered shield~
+a tattered shield~
+A tattered shield, almost broken, rests here.~
+~
+9 0 0 0 0 513 1
+100 100
+0~ 0~ 0~ 0~
+2 5 0
+0 0
+reserved~
+0 0
+0 0 0
+#23109
+copper ring~
+a copper ring~
+An old copper ring is here.~
+~
+9 0 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 10 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 3
+#23110
+copper necklace~
+a copper necklace~
+A copper necklace has been discarded here.~
+~
+9 0 0 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+1 10 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 5
+#23111
+tattered helm~
+a tattered helm~
+A tattered helm rests here.~
+~
+9 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+1 3 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 5
+A
+25 5
+#23112
+tattered bracer~
+a pair of tattered bracers~
+A tattered pair of bracers is here.~
+~
+9 0 0 0 0 257 1
+100 100
+0~ 0~ 0~ 0~
+1 6 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 4
+#23113
+copper bracelet~
+a copper bracelet~
+A copper bracelet is here.~
+~
+9 0 0 0 0 4097 1
+100 100
+0~ 0~ 0~ 0~
+1 15 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+#23114
+bone key~
+a bone key~
+A key made of bone sits here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23115
+bone chest~
+a bone chest~
+A chest, made entirely of bone, sits here.~
+~
+15 2 0 0 0 0 0
+100 100
+1~ 15~ 23119~ 0~
+25000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#23116
+ball chaos~
+a ball of chaos~
+A strange glowing ball hovers slightly off the ground here.~
+~
+9 3 0 0 0 32769 3
+100 100
+0~ 0~ 0~ 0~
+1 2500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 5
+A
+5 1
+#23117
+copper key piece~
+a copper key piece~
+A copper key sits here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+23119 0 0
+E
+piece~
+It appears to have a slot where you can attach something.
+~
+E
+copper~
+It appears to have a slot where you can attach something.
+~
+E
+key~
+It appears to have a slot where you can attach something.
+~
+#23118
+bone key piece~
+a bone key piece~
+A bone key sits here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+23119 0 0
+E
+piece~
+It appears to have a slot where you can attach something.
+~
+E
+bone~
+It appears to have a slot where you can attach something.
+~
+E
+piece~
+It appears to have a slot where you can attach something.
+~
+#23119
+bone copper key~
+a bone and copper key~
+A key, made from 2 parts, is here.~
+~
+18 0 0 0 0 1 3
+100 100
+0~ 0~ 0~ 0~
+2 5 0
+0 0
+reserved~
+0 0
+0 23118 0
+#23120
+blood~
+blood~
+A pool of blood is here.~
+~
+28 0 0 0 0 0 1
+100 100
+-1~ -1~ 0~ 0~
+25000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#23121
+altar injustice~
+an altar~
+The Altar of Injustice is here.~
+~
+15 0 0 0 0 0 1
+100 100
+1~ 5~ 0~ 0~
+0 25000 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+lid~
+Yes, it can be opened.  Perhaps you should open it?
+~
+E
+injustice~
+It appears to have a lid.  Maybe it can be opened.
+~
+E
+altar~
+It appears to have a lid.  Maybe it can be opened.
+~
+#23130
+fountain~
+a fountain~
+A fountain is here, adorned with the symbols of Chaos, Strife and Injustice.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+5000 250000 0
+0 0
+reserved~
+0 0
+0 0 0
+#23131
+chaos steak~
+a chaos steak~
+A nice steak dinner is here.~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23132
+strifeburger~
+a strifeburger~
+A strifeburger is here.~
+~
+19 0 0 0 0 1 1
+100 100
+20~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23133
+injustice shake~
+injustice shake~
+A shake is here, bubbling quietly.~
+~
+17 0 0 0 0 1 1
+100 100
+100~ 100~ 8~ 0~
+2 2 0
+0 0
+reserved~
+0 0
+0 0 0
+#23134
+waterskin skin~
+waterskin~
+You see a waterskin lying here.~
+~
+17 0 0 0 0 1 1
+100 100
+12~ 12~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23135
+iron rations~
+iron rations~
+Some rations are here in a pile.~
+~
+19 0 0 0 0 1 1
+100 100
+100~ 0~ 0~ 0~
+1 10 0
+0 0
+reserved~
+0 0
+0 0 0
+#23136
+backpack~
+a backpack~
+You see a backpack here.~
+~
+15 0 0 0 0 1 1
+100 100
+20~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#23137
+lantern~
+a lantern~
+A lantern sits on the ground here.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ 95~ 0~
+1 2 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 2
+#23138
+sign~
+a sign~
+A sign hangs on the west wall.  Perhaps you should READ SIGN.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Congratulations, you have passed the first test!  This is the Second
+Test.  Here you will fight aggressive mobs, and multiple mobs at the same
+time.  Perhaps even multiple aggressive mobs!  Best be on your guard!  
+~
+#0
+
+
+
+#ROOMDATA
+#23101
+The School of Chaos, Strife and Injustice~
+~
+~
+As you plant your feet firmly on the floor of the school, you can't help
+but feel a sense of gloom and dread.  The signs of chaos are everywhere, the
+very walls seem to shimmer and change shape before your eyes.  You realize
+that you are above the temple, in the school of learning.  From here, you
+may travel to the west, which is the only exit.  
+~
+0 402446 0
+Rd     0
+D3
+~
+~
+0 0 23102
+S
+#23102
+The School of Chaos, Strife and Injustice~
+~
+~
+You are in a room on the upper floor of the Chaos, Strife and Injustice
+Temple.  There is a sign in this room, and you can READ SIGN to see what it
+says.  The obvious exits are to the east, or to the west.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23101
+D3
+~
+~
+0 0 23103
+S
+#23103
+A Hallway~
+~
+~
+You are standing in a room that does not appear to contain anything.  The
+walls are black and void of any features whatsoever.  You can travel to the
+east or west from here.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23102
+D3
+~
+~
+0 0 23104
+S
+#23104
+Before the Tests~
+~
+~
+You are standing in a hallway.  You can see a large room to the west. 
+There appears to be many small creatures there.  You can go in that
+direction, or travel to the east.  
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 23103
+D3
+~
+~
+0 0 23105
+S
+#23105
+The Tests~
+~
+~
+You are in a room with a dirt floor.  To the east, a looming jet-black
+hallway leads off into the distance.  There is a hallway going to the north
+and south from here.  The dirt floor has many sized footprints, most of
+which seem to congregate around the west wall.  There is a door in the floor
+here that leads to the Temple below.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23106
+D1
+~
+~
+0 0 23104
+D2
+~
+~
+0 0 23108
+D3
+~
+~
+631 23114 23110
+D5
+~
+~
+119 23114 23146
+S
+#23106
+Before the North Door~
+~
+~
+You are before the north door.  A large door is on the north wall, made
+of the same black material as the hallway.  The ground is covered in dirt. 
+You can't seem to pinpoint where the light is coming from, as you don't see
+any source of it.  You can go north, through the door, or south from here.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 23107
+D2
+~
+~
+0 0 23105
+S
+#23107
+The North Torture Chamber~
+~
+~
+You are standing in a room that is used for torture.  There are many
+devices lining the walls, including some rather nasty looking shackles.  You
+don't see any other exits other than the one leading to the south.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+3 0 23106
+S
+#23108
+Before the South Door~
+~
+~
+You are before the south door.  A large door is on the south wall, made
+of the same black material as the hallway.  The ground is covered in dirt. 
+You can't seem to pinpoint where the light is coming from, but you can see
+light around the cracks of the door.  You can go north, or south through the
+door.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23105
+D2
+~
+~
+119 23105 23109
+S
+#23109
+The South Torture Chamber~
+~
+~
+You are standing inside the southern torture chamber.  There are many
+devices lining the walls, and a small ball of light circles the ceiling in a
+hypnotising fashion.  The only exit is through the door to the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+119 23105 23108
+S
+#23110
+Secret Room~
+spell8.wav V=100 P=50 L=1 T=Background~
+~
+You have found a hidden treasure room!  But do you have the proper key
+for the chest?  
+~
+0 1036 0
+Rd     0
+D1
+~
+~
+0 0 23105
+S
+#23111
+Behind the Temple~
+~
+~
+You are behind a door to the temple.  To the west, you can hear the
+screams of innocents, as beings cower in fear for their lives.  It is there
+that you can continue to train your skills.  To the east, you can see the
+temple proper.  A stairway, made entirely of bone, leads to the mud school. 
+~
+0 12 0
+Rd     0
+D1
+~
+~
+3 0 23127
+D3
+~
+~
+0 0 23112
+D4
+~
+~
+0 0 23155
+S
+#23112
+The Injustice Chamber~
+~
+~
+You are standing inside the Injustice Chamber.  A large altar can be seen
+immediately to the west, while the room expands beyond it, as well as to the
+north and south.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23113
+D1
+~
+~
+0 0 23111
+D2
+~
+~
+0 0 23123
+D3
+~
+~
+0 0 23125
+S
+#23113
+The Injustice Chamber~
+~
+~
+You are walking along the eastern wall of the Injustice Chamber.  You can
+see the entance to this chamber to the south, or you can explore the room by
+going north or west.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23114
+D2
+~
+~
+0 0 23112
+D3
+~
+~
+0 0 23126
+S
+#23114
+The Injustice Chamber~
+~
+~
+You are standing in the northeast corner of the Injustice Chamber.  This
+huge room is occasionally used by the Priests for summary executions.  You
+can go south or west from here.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23113
+D3
+~
+~
+0 0 23115
+S
+#23115
+The Injustice Chamber~
+~
+~
+You are walking along the north wall of the Injustice Chamber.  This huge
+room is stained with the blood of the many thousands of innocent lives that
+have been taken.  You can go east, south or west from here.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23114
+D2
+~
+~
+0 0 23126
+D3
+~
+~
+0 0 23116
+S
+#23116
+The Injustice Chamber~
+~
+~
+You are at the northwest corner of the Injustice Chamber, a very large
+room used for killing innocents.  You can explore the rest of this very
+large room by going east or south.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23115
+D2
+~
+~
+0 0 23117
+S
+#23117
+The Injustice Chamber~
+~
+~
+You are walking along the eastern wall.  The walls are made of the same
+black material that the upper floors are made of, and seem to shift their
+appearance depending on the angle that you look at them.  You can travel
+north, east or south from here.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23116
+D1
+~
+~
+0 0 23126
+D2
+~
+~
+0 0 23118
+S
+#23118
+The Injustice Chamber~
+~
+~
+You are walking along the western wall of the Injustice Chamber.  You can
+see an altar directly to the east, or you can continue along the wall to the
+north or south.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23117
+D1
+~
+~
+0 0 23125
+D2
+~
+~
+0 0 23119
+S
+#23119
+The Injustice Chamber~
+~
+~
+You are walking along the western wall of the Injustice Chamber.  The
+ground here is moist with the blood of those who have died.  You can go
+north or south along the wall, or into the room to the east.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23118
+D1
+~
+~
+0 0 23124
+D2
+~
+~
+0 0 23120
+S
+#23120
+The Injustice Chamber~
+~
+~
+You are standing at the southwestern corner of the Injustice Chamber. 
+You can hear the sounds of the dead in the distance and up close, but you
+can see no discernable source for the noise.  You can go north or east from
+here.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23119
+D1
+~
+~
+0 0 23121
+S
+#23121
+The Injustice Chamber~
+~
+~
+You are standing in the centre of the southernmost wall of the Injustice
+Chamber.  A large circle has been drawn onto the southern wall here. 
+Perhaps you should LOOK CIRCLE to see more!  You can go east or west from
+here.  
+~
+0 8 0
+Rd     0
+E
+circle~
+Inside the circle is a key, that seems to be made of two smaller keys.
+~
+D0
+~
+~
+0 0 23124
+D1
+~
+~
+0 0 23122
+D3
+~
+~
+0 0 23120
+S
+#23122
+The Injustice Chamber~
+~
+~
+You are in the southeast corner of the Injustice Chamber.  The ground
+here is moist with something, but you can't tell the substance.  You can
+travel to the north or west.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23123
+D3
+~
+~
+0 0 23121
+S
+#23123
+The Injustice Chamber~
+~
+~
+You are walking along the eastern wall of the Injustice Chamber.  To the
+north, you can see the main entrance to the room.  You can also go south or
+west from here.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23112
+D2
+~
+~
+0 0 23122
+D3
+~
+~
+0 0 23124
+S
+#23124
+The Injustice Chamber~
+~
+~
+You are standing just to the south of the Injustice Chamber altar.  The
+smell in this room is quite vile, and you are having a hard time keeping
+concentration.  You can travel in any of the four cardinal directions from
+here.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23125
+D1
+~
+~
+0 0 23123
+D2
+~
+~
+0 0 23121
+D3
+~
+~
+0 0 23119
+S
+#23125
+The Injustice Chamber Altar~
+~
+~
+You are at the base of the altar of Injustice.  It is covered in
+shackles, meant for all sizes of beings, and stained a deep brown with the
+blood of innocents.  Many beings have been slaughtered here.  You can go
+north, south, east or west.  East leads to the entrance of this great hall. 
+~
+0 1036 0
+Rd     0
+D0
+~
+~
+0 0 23126
+D1
+~
+~
+0 0 23112
+D2
+~
+~
+0 0 23124
+D3
+~
+~
+0 0 23118
+S
+#23126
+The Injustice Chamber~
+~
+~
+You are near the centre of the Injustice Chamber.  You can see a large
+altar directly south, or you can explore the room in any of the four
+cardinal directions.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23115
+D1
+~
+~
+0 0 23113
+D2
+~
+~
+0 0 23125
+D3
+~
+~
+0 0 23117
+S
+#23127
+The Temple Proper~
+~
+~
+This rather large room is used for meditation.  The High Priest sits here
+for all eternity, serving the followers of Chaos, Strife and Injustice. 
+There is a small room located to the north and south, while a hallway
+extends to the east.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23128
+D1
+~
+~
+0 0 23131
+D2
+~
+~
+0 0 23129
+D3
+~
+~
+3 0 23111
+S
+#23128
+Waiting Room~
+~
+~
+You are in a waiting room.  This room is smaller than the room to the
+south, and is protected by the gods.  The only exit is the way you came, to
+the south.  A magical silence is in this room, preventing noise from the
+outside getting in.  
+~
+0 8389640 0
+Rd     0
+D2
+~
+~
+0 0 23127
+S
+#23129
+Waiting Room~
+~
+~
+This room is larger than its northern counterpart, and is not protected
+by any silence spells.  It is similar to the Temple Proper, but without the
+intrusion of a priest.  The only exit is the way you came, to the north.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23127
+S
+#23130
+In Between the Stores~
+~
+~
+You are at a crossroads.  To the north lies the Trainer, Practicioner,
+and Teacher.  To the south, the stores for purchasing equipment, food and
+drink, as well as the office of the Classmaster can be found.  The exit of
+the temple lies to the east.  As always, the everpresent dark, shifting
+walls can be seen.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23132
+D1
+~
+~
+0 0 23144
+D2
+~
+~
+0 0 23138
+D3
+~
+~
+0 0 23131
+S
+#23131
+Leading to The Temple Proper~
+~
+~
+You are walking along a large, black hallway.  To the west lies the
+Temple Proper.  The High Priest, eternal in his vigilance, watches over all
+in his presence.  You can see the exit of the temple some distance to the
+east.  
+~
+0 1036 0
+Rd     0
+D1
+~
+~
+0 0 23130
+D3
+~
+~
+0 0 23127
+S
+#23132
+Northern Hallway~
+~
+~
+You are walking along the Northern Hallway.  You can see three doors a
+little ways to the north.  The floor here is squeaky clean, almost to the
+point where you can clearly see your reflection.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23133
+D2
+~
+~
+0 0 23130
+S
+#23133
+Northern Hallway~
+~
+~
+You are walking along the Northern Hallway.  The main Temple is located
+to the south of here.  The hallway continues to the north and south.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23134
+D2
+~
+~
+0 0 23132
+S
+#23134
+The Room of Learning~
+~
+~
+You have arrived at the Room of Learning.  Three doors, one to each
+direction but south, remain forever open.  They lead to the Trainer to the
+west, the Teacher to the north, and the Practicioner to the east.  You can
+also head back to the Temple by going south.  
+~
+0 1036 0
+Rd     0
+D0
+~
+~
+0 0 23136
+D1
+~
+~
+0 0 23137
+D2
+~
+~
+0 0 23133
+D3
+~
+~
+0 0 23135
+S
+#23135
+The Trainer~
+~
+~
+Here you may train your attributes.  Simply type "TRAIN" to see a list of
+what you can train at this time.  The only exit from here is back the way
+you came, to the east.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23134
+S
+#23136
+The Teacher~
+~
+~
+Here you may learn languages.  Simply type "LEARN" to see a list of
+langauges that are available to you.  The only exit from here is to the
+south.  
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 23134
+S
+#23137
+The Practicioner~
+~
+~
+Here is where you may practice your skills and spells.  Note that you
+have to be at least level three in order to do this.  Simply type "PRACTICE"
+to see what you can study at this time.  The only exit is to the west.  
+~
+0 1032 0
+Rd     0
+D3
+~
+~
+0 0 23134
+S
+#23138
+Southern Hallway~
+~
+~
+You are walking along the Southern Hallway.  You can see three doors a
+little ways to the south.  The floor here is squeaky clean, almost to the
+point where you can see your reflection.  You can go north or south from
+here.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23130
+D2
+~
+~
+0 0 23139
+S
+#23139
+Southern Hallway~
+~
+~
+You are walking along the Southern Hallway.  It continues to the north or
+south.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23138
+D2
+~
+~
+0 0 23140
+S
+#23140
+The Room of Purchasing~
+~
+~
+You have arrived at the Room of Purchasing.  Three doors, one to each
+direction but north, remain forever open.  They lead to the store to the
+west, the equipment shop to the east, and to the Classmaster to the south. 
+You can also head back to the Temple by going north.  
+~
+0 1036 0
+Rd     0
+D0
+~
+~
+0 0 23139
+D1
+~
+~
+0 0 23142
+D2
+~
+~
+0 0 23143
+D3
+~
+~
+0 0 23141
+S
+#23141
+General Store~
+~
+~
+You are standing in the General Store and Bar.  Type "LIST" to see a list
+of items that you may purchase.  The onl exit is to the east.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 23140
+S
+#23142
+Equipment Shop~
+~
+~
+You are standing inside the Equipment Shop.  Type "LIST" to see a list of
+items that you may purchase.  The only exit is to the west.  
+~
+0 1032 0
+Rd     0
+D3
+~
+~
+0 0 23140
+S
+#23143
+The Classmaster's Office~
+~
+~
+You have entered the office of the Classmaster.  For help on this
+subject, type "HELP REMORT".  The only exit is to the north.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 23140
+S
+#23144
+Temple Entrance~
+~
+~
+You stand before the great Temple of Chaos, Strife and Injustice.  Its
+dark hallways seem to stretch forever into the distance, to the west.  
+~
+0 1036 0
+Rd     0
+D1
+~
+~
+0 0 23145
+D3
+~
+~
+0 0 23130
+S
+#23145
+Before the Temple of Chaos, Strife and Injustice~
+~
+~
+To the west, you can see the temple and school for Chaos, Strife and
+Injustice.  If you do not belong to this religion, your presence may not be
+appreciated.  To continue deeper into the temple, go west.  
+~
+0 1028 0
+Rd     0
+D1
+~
+~
+0 0 25046
+D3
+~
+~
+0 0 23144
+S
+#23146
+The Second Test~
+~
+~
+You are in a room that has a spiral staircase, made of bone, leading up
+to the top floor of the Temple.  The black walls are the same here as the
+rest of the temple.  The hallway extends to the east.  
+~
+0 1036 0
+Rd     0
+D1
+~
+~
+0 0 23147
+D4
+~
+~
+119 23114 23105
+S
+#23147
+The Second Test~
+~
+~
+You are walking along a black hallway.  The walls are smooth to the
+touch, but rough to look at.  It is a very strange illusion.  You can go
+east or west from here.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23148
+D3
+~
+~
+0 0 23146
+S
+#23148
+The Second Test~
+~
+~
+You are walking along a dark hallway.  There is a light coming from
+somewhere, but you are not sure of its source.  You can go east or west from
+here, or you can go north or south into small rooms.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 23149
+D1
+~
+~
+0 0 23151
+D2
+~
+~
+0 0 23150
+D3
+~
+~
+0 0 23147
+S
+#23149
+The Second Test~
+~
+~
+You have entered a small room off the main path.  This rooms walls are
+different than the rest, as if the constructors decided to stop
+construction.  You don't know why.  The only exit is back the way you came,
+to the south.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 23148
+S
+#23150
+The Second Test Balcony~
+~
+~
+You are standing on a balcony.  You can see the town of Methidoral below.
+The balcony is made of the same material as the rest of this temple, the
+strange black shifting rock.  The only exit is to the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 23148
+S
+#23151
+The Second Test~
+~
+~
+You are at the top of a flight of stairs, made entirely of bone.  You can
+travel west, or down the stairs.  The walls continue to shift under your
+gaze.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23148
+D5
+~
+~
+0 0 23152
+S
+#23152
+The Second Test~
+~
+~
+You are walking along a hallway.  A spiral staircase, made entirely of
+bone, leads up to the next floor.  The ground here is very polished, and a
+red carpet leads off to the west.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 23153
+D4
+~
+~
+0 0 23151
+S
+#23153
+The Second Test~
+~
+~
+You are walking along a hallway inside the Temple.  A plush, red carpet
+is here, centred on the carpet floor.  It leads to the east, to a staircase,
+or to the west.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23152
+D3
+~
+~
+0 0 23154
+S
+#23154
+The Second Test~
+~
+~
+You are walking along a black hallway inside the Temple.  A red carpet is
+under your feet, leading to the east or west.  The walls continuously move
+and shift under your gaze.  You don't know what magic binds this place, but
+it is definately powerful.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 23153
+D3
+~
+~
+0 0 23155
+S
+#23155
+The Second Test~
+~
+~
+You arrive at the top of a bone stairway, leading down to the Temple
+Proper.  There is a dais here, carved out of some sort of black wood.  A
+plush red carpet leads off to the east.
+~
+0 1036 0
+Rd     0
+D1
+~
+~
+0 0 23154
+D5
+~
+~
+0 0 23111
+S
+#0
+
+
+
+#SPECIALS
+M 23102 spec_healer
+M 23120 spec_healer
+M 23125 spec_healer
+M 23138 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 23102 0 23102
+M 0 23102 1 23102
+O 0 23101 0 23103
+M 0 23105 1 23105
+M 0 23106 1 23105
+M 0 23107 1 23106
+M 0 23109 1 23107
+G 0 23105 0
+E 0 23103 0 11
+E 0 23104 0 5
+M 0 23110 1 23109
+E 0 23106 0 12
+E 0 23109 0 1
+G 0 23114 0
+O 0 23115 0 23110
+P 0 23116 0 23115
+M 0 23114 1 23113
+E 0 23108 0 15
+M 0 23113 1 23114
+E 0 23107 0 17
+M 0 23112 1 23115
+E 0 23106 0 12
+M 0 23111 2 23116
+M 0 23116 1 23117
+E 0 23110 0 3
+M 0 23112 3 23118
+E 0 23112 0 14
+O 0 23120 0 23119
+M 0 23105 1 23123
+E 0 23111 0 6
+M 0 23117 1 23124
+E 0 23113 0 18
+O 0 23121 0 23125
+P 0 23118 0 23121
+M 0 23120 1 23125
+M 0 23115 5 23126
+M 0 23125 1 23127
+O 0 23130 0 23130
+M 0 23129 2 23133
+M 0 23121 1 23135
+M 0 23123 1 23136
+M 0 23122 1 23137
+M 0 23126 1 23141
+G 0 23131 0
+G 0 23132 0
+G 0 23133 0
+M 0 23127 1 23141
+M 0 23128 1 23142
+G 0 23135 0
+G 0 23136 0
+G 0 23137 0
+G 0 23134 0
+G 0 23114 0
+M 0 23124 1 23143
+O 0 23138 0 23146
+M 0 23131 1 23147
+M 0 23130 1 23148
+M 0 23134 1 23149
+M 0 23132 1 23150
+M 0 23133 2 23151
+M 0 23135 2 23152
+M 0 23136 3 23153
+M 0 23137 1 23154
+M 0 23138 1 23155
+S
+
+
+
+#SHOPS
+23126 17 19 0 0 0 120 80 0 24
+23128 17 19 15 1 9 120 80 0 24
+0
+
+
+
+#$

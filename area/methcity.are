@@ -1,0 +1,5271 @@
+#AREADATA
+Name        {  ALL } Methidoral~
+Builders    None~
+VNUMs       25000 25200
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Milantha~
+Llevel      0
+Ulevel      0
+Sounds      The sounds of the bustling crowd can be heard throughout the city.~
+Music       u4_towns.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#25000
+Hierophant~
+The Hierophant of Methidoral~
+The eternal Hierophant of Methidoral towers overhead.
+~
+The Hierophant looks to have been here a long time, and looks as though he is
+ready to stand here just as long.  
+
+~
+11 8876 32784 8192 1 1000 S
+108 1 216 216 30000 30000d0+0 0d0+0
+1080 0 0
+0 0 0
+4 0 0
+>greet_prog 60~
+smile $n
+say Welcome $n, please be at rest, and feel safe here.
+say Simply type the word Heal; to know what I may do to aid you.
+~
+>speech_prog heal hurt dying pain~
+if level($n) < 6
+  t $n Ahhh, you are still low of level...
+  t $n For this reason, I shall grant you extended help.
+  c 'healing hands' $n
+endif
+~
+|
+#25001
+Lucretia Lady~
+Lucretia~
+Lucretia is here protecting the good citizens of Methidoral.
+~
+Lucretia is a striking woman, with raven black hair and piercing brown
+eyes.  She is Methidorals Judge, Jury and Executioner and even the most
+hardened of criminals cringe at the very mention of her name.  She looks by
+no mean to be an easy kill.  
+~
+3 469787180 0 0 0 1000 S
+150 1 300 300 30000 30000d0+0 0d0+1
+1500 0 0
+0 0 2
+33007 0 0
+>greet_prog 100~
+if isimmort($n) == 1
+if sex($n) == 1
+say Greetings Lord $n
+bow $n
+break
+else
+if sex($n) == 2
+say Greetings Lady $n
+curtsey $n
+break
+endif
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+smile $n
+say Enjoy your stay in Methidoral $n.
+break
+else
+glare $n
+say Watch thine step $n
+break
+endif
+endif
+~
+>hitprcnt_prog 99~
+say You shall die for your dishonor, $n...
+yell Guards!  Bring eternal damnation upon this fool named $n!
+mpmload 127
+mpforce guard mpkill $n
+~
+>fight_prog 10~
+yell Alas, $n breeds dishonor... it is time for $m to die!
+c 'fireball' $n
+c 'fireball' $n
+c 'fireball' $n
+~
+|
+#25002
+postal worker disgruntled~
+Disgruntled postal worker~
+A disgruntled postal worker walks around highstrung.
+~
+~
+65 0 0 0 0 -1000 S
+5 1 10 10 50 50d0+0 0d0+76
+50 0 0
+0 0 0
+0 0 0
+#25003
+Sansibar alchemist~
+Sansibar~
+Sansibar the alchemist is here selling potions and pills.
+~
+Sansibar stands about five foot four, and is very scrawny and meek looking. 
+But upon further examination you can see a light of power burning brightly
+in his wise old eyes.  He looks like one who holds the knowledge of the
+universe in his hands.  
+~
+67 8872 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+100000
+3000 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+look $n
+if ispc($n) == 1
+   if isgood($n) == 1
+      say Welcome to my humble shop $n.
+      smile $n
+   else
+      say I've got my eye on you $n!
+      glare $n
+   endif
+else
+    mpforce $n east
+  break
+endif
+~
+|
+#25004
+Gunthar armourer~
+Gunthar~
+Gunthar is here pounding metal into suits of armour.
+~
+Gunthar stands about six foot two, and he is built like a tank. He
+glances at you with eyes that have seen many a battle, and know how to
+escape death during them.  He looks to know everything there is to know
+about protection during combat, and you feel that you could trust his armour
+to stand up to the worst.  
+~
+3 8872 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+100000
+3000 0 0
+0 0 2
+0 0 0
+#25005
+Liam~
+Liam, the shop owner~
+The furniture dealer stands here waiting to sell you furniture.
+~
+~
+67 8328 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 0
+0 0 0
+#25006
+Ursus~
+Ursus~
+A large man with glowing red hair is here forging metal to blade.
+~
+Ursus is a big ugly fellow, his hair long and red. He grins sadistically at
+you, but as the whole town knows, his wife beats him up regularly.   
+~
+3 8872 0 0 0 1000 S
+3000 1 6000 6000 30000 30000d0+0 0d0+100000
+30000 0 0
+0 0 2
+0 0 0
+#25007
+Heidi~
+Heidi~
+A beautiful women stands here selling finely wrought jewelery.
+~
+Heidi stands over the cases of jewellery which line the walls of this
+building.  She is in her mid 30's but doesn't look a day over 20.  Her
+flowing golden locks rival even the glittering of the golden trinkets which
+she sells.  
+~
+3 8360 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 2
+0 0 0
+#25008
+Santiago scribe~
+Santiago~
+A scholar in flowing black robes is here scribing spells to scrolls.
+~
+~
+3 8360 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+t $n Welcome to my store, type &Rlist&W to see what I sell.
+-
+~
+|
+#25009
+Doren~
+Doren~
+A woman in a flowing red gown is here to sell you magical oddities.
+~
+~
+3 8360 0 0 0 100 S
+300 1 600 600 30000 30000d0+0 0d0+100000
+3000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Welcome $n, type LIST to see what I can sell you.
+~
+|
+#25010
+Juttey~
+Juttey~
+A woman in a flowing white gown stands here waiting to outfit the lovers of Methidoral.
+~
+~
+3 8320 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+0
+3000 0 0
+0 0 2
+0 0 0
+#25011
+Locust thief~
+Locust~
+A small man eyes you suspiciously.
+~
+~
+3 8360 0 0 0 -1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 0
+0 0 0
+#25012
+Nevir~
+Nevir~
+A pious looking man blesses you as you enter.
+~
+~
+3 8328 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#25013
+Torom~
+Torom~
+Torom, the storekeeper is here waiting to sell you what you need.
+~
+~
+3 8328 0 0 0 200 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#25014
+Merf baker~
+Merf~
+A rather robust man stands here wiping flour from an ever smiling face.
+~
+~
+3 8328 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#25015
+Uuk barkeep~
+Uuk~
+A small bearded man stands here selling beer and smoking cigars.
+~
+~
+3 8328 0 0 0 1000 S
+30 1 60 60 30000 30000d0+0 0d0+1000
+300 0 0
+0 0 1
+0 0 0
+#25016
+Hortus leather worker~
+Hortus~
+A small man is here making leather and sinue into tough armour.
+~
+~
+3 8328 0 0 0 500 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#25017
+Pantor~
+Pantor~
+Pantor, the storekeeper of the pet shop stands here selling animals.
+~
+~
+3 8328 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 2
+0 0 0
+#25018
+Nerrk, headmaster~
+Nerrk, the headmaster~
+A well armoured man stands here hiring out his mercenaries.
+~
+~
+3 33562760 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#25019
+puppy dog~
+A puppy~
+A small puppy wags his tail happily here.
+~
+~
+257 0 0 0 0 0 S
+3 1 6 6 15 15d0+0 0d0+0
+30 0 0
+0 0 1
+0 0 0
+>rand_prog 30~
+if ispc($r)
+  ,pees on $r's shoes.
+endif
+~
+|
+#25020
+Pit bull dog pitbull~
+A pitbull~
+A rather large pitbull growls ominously.
+~
+~
+257 8 0 0 0 0 S
+8 1 16 16 80 80d0+0 0d0+0
+80 0 0
+0 0 2
+0 0 0
+#25021
+kitten cat~
+A kitten~
+A small kitten purrs happily at you.
+~
+~
+257 512 0 0 0 0 S
+2 1 4 4 15 15d0+0 0d0+0
+20 0 0
+0 0 2
+0 0 0
+#25022
+hawk bird~
+A hawk~
+A beautiful hawk perches here.
+~
+~
+257 524296 0 0 0 100 S
+5 1 10 10 50 50d0+0 0d0+0
+50 0 0
+0 0 2
+0 0 0
+#25023
+Wolf dog~
+A wolf~
+A magnificant grey wolf stalks around here.
+~
+~
+257 8 0 0 0 -100 S
+12 1 24 24 130 130d0+0 0d0+0
+120 0 0
+0 0 1
+0 0 0
+#25024
+mage mercenary~
+A mage~
+A stately mage stands here.
+~
+~
+257 524296 0 0 0 400 S
+15 1 30 30 1000 1000d0+0 0d0+0
+150 0 0
+0 0 0
+0 0 0
+#25025
+warrior barbarian~
+A barbarian~
+A well muscled barbarian stands here.
+~
+~
+257 0 0 0 0 100 S
+20 1 40 40 2000 2000d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#25026
+cleric priest~
+A priest~
+A priest in flowing white robes stands here.
+~
+~
+257 8 0 0 0 1000 S
+20 1 40 40 1400 1400d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#25027
+guard~
+A guard~
+One of Methidorals many guards wanders the street in search of crime.
+~
+The guard looks weary, but still very alert.  He watches the streets and
+corners for any sign of crime or beligerence.  You don't think it would be
+wise to upset him.  
+~
+65 8 0 0 0 1000 S
+20 1 40 40 700 700d0+0 0d0+4000
+200 0 0
+0 0 0
+0 0 0
+#25028
+guard gate~
+A guard~
+One of Methidorals many guards stands post over the gates.
+~
+The guard watches you as you approach the gates of the mighty city of
+Methidoral.  You know that he is waiting for you to do something wrong.  He
+looks very stressed out.  
+~
+67 8 0 0 0 1000 S
+20 1 40 40 700 700d0+0 0d0+6000
+200 0 0
+0 0 1
+0 0 0
+#25029
+gate guard~
+A guard~
+One of Methidoral's many guards stands post over the gates.
+~
+The guard watches you carefully as you approach the gate.  
+~
+67 0 0 0 0 1000 S
+20 1 40 40 700 700d0+0 0d0+6000
+200 0 0
+0 0 1
+0 0 0
+#25030
+guard gate~
+A guard~
+One of Methidoral's many guards stands here guarding the Southern gate.
+~
+The guard is huge and burly, you know you wouldn't wanna mess with him. 
+He watches you suspiciously as you approach the gate to the mighty city of
+Methidoral.  
+~
+67 8 0 0 0 0 S
+20 1 40 40 700 700d0+0 0d0+6000
+200 0 0
+0 0 1
+0 0 0
+#25031
+vagabond~
+A vagabond~
+A scrawny vagabond roams the streets of Methidoral.
+~
+~
+65 40 0 0 0 -500 S
+10 1 20 20 250 250d0+0 0d0+50
+100 0 0
+0 0 1
+0 0 0
+#25032
+child Methidoral~
+A child~
+One of Methidoral's children plays in the streets here.
+~
+This child is a young boy of an apparent age of about 15.  From his clothing,
+he appears to already be following in the footsteps of his father or mother
+as an adventurer.
+~
+65 0 0 0 0 999 S
+5 1 10 10 35 35d0+0 0d0+1
+50 0 0
+0 0 1
+0 0 0
+#25033
+citizen Methidoral~
+A citizen of Methidoral~
+A citizen of Methidoral strolls through the town looking for things to buy.
+~
+~
+65 0 0 0 0 100 S
+12 1 24 24 325 325d0+0 0d0+60
+120 0 0
+0 0 2
+0 0 0
+#25034
+citizen Methidoral~
+A citizen of Methidoral~
+A citizen of Methidoral is wandering the streets here.
+~
+~
+65 0 0 0 0 500 S
+14 1 28 28 490 490d0+0 0d0+40
+140 0 0
+0 0 1
+0 0 0
+#25035
+Janitor Methidoral~
+A janitor~
+A janitor cleans up after the messy citizens.
+~
+~
+65 0 0 0 0 100 S
+10 1 20 20 230 230d0+0 0d0+10
+100 0 0
+0 0 1
+0 0 0
+#25036
+dog hound scavenger~
+A hound~
+A hound roams the streets sniffing through rubbish.
+~
+~
+193 8 0 0 0 0 S
+5 1 10 10 100 100d0+0 0d0+0
+50 0 0
+0 0 1
+0 0 0
+#25037
+cat alley~
+An alley cat~
+An alley cat prowls the street in search of mice.
+~
+This cat is obviously on its own from the look of its hair, but it appears
+to be eating quite well from its size; you would assume there are plenty of
+people who favor cats in this city.
+~
+65 520 0 0 0 -1000 S
+4 1 8 8 40 40d0+0 0d0+0
+40 0 0
+0 0 2
+0 0 0
+#25038
+beggar bum~
+A beggar~
+A beggar hobbles about the streets here.
+~
+~
+69 8192 0 0 0 100 S
+7 1 14 14 90 90d0+0 0d0+1
+70 0 0
+0 0 1
+0 0 0
+>greet_prog 20~
+if sex($n) == 1
+  say spare some gold good sir?
+    break
+else
+    say spare some gold m'lady?
+    break
+endif
+~
+>act_prog p looks at you~
+emote smiles toothlessly at you in hopes of a coin.
+~
+>bribe_prog 1000~
+mpoload 25048
+say THANK YOU!!! My GOD!!!
+give cloak $n
+say A gift for your generousity!
+~
+|
+#25039
+wizard Methidoral mage~
+A mage of Methidoral~
+One of Methidoral's mages wanders the street here.
+~
+This mage is appears to be a female in her early twenties, but then, with
+magic there is no way to be sure of her real age.  Her clothing matches that of her profession.
+~
+65 33554472 16 0 0 100 S
+20 1 40 40 600 600d0+0 0d0+7500
+200 0 0
+0 0 2
+0 0 0
+>speech_prog p ouch! I could REALLY use a fireshield~
+if rand(80)
+  if ispc($n)
+    if level($n) < 30
+      smile $n
+      say Well, I guess i can supply you with a shield if its needed that badly.
+      cast 'fireshield' $n
+      break
+    endif
+  endif
+endif
+mpecho &B$I places a finger to the sky and disappears!
+mpteleport
+mpecho &B$I steps out of the shadows.
+~
+>speech_prog p HASTE MY ASS~
+say Your will is my command.
+cast haste $n
+~
+|
+#25040
+warrior veteran~
+A veteran~
+A veteran of Methidoral's army is here.
+~
+~
+65 0 0 0 0 100 S
+16 1 32 32 400 400d0+0 0d0+2000
+160 0 0
+0 0 1
+0 0 0
+#25041
+keeper lost found~
+the keeper~
+The Keeper of Methidoral's Lost and Found whistles away as you rumage around.
+~
+A tall slender man, standing nearly six and a half feet.  He looks almost
+asleep, but I wouldn't let that fool you - the keeper is built like a TANK! 
+~
+3 100663424 0 0 0 1000 S
+150 1 300 300 30000 30000d0+0 0d0+1000
+1500 0 0
+0 0 1
+0 0 0
+#25042
+Igor man smith~
+Igor~
+Igor looms over his forge repairing the items brought for him.
+~
+~
+67 100687872 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 0
+39 0 0
+#25043
+Thug ~
+A Thug~
+A thug strolls through the streets...
+~
+A seedy looking individual with a broken nose and a few teeth missing. Just
+by his appearance and his behavior, you know this guy is up to no good!
+~
+69 0 0 0 0 -1000 S
+18 1 36 36 550 550d0+0 0d0+10000
+180 0 0
+0 0 1
+0 0 0
+#25044
+lady beautiful woman~
+A beautiful Woman~
+A beautiful woman leans on the citywalls...
+~
+This Lady is giving you her best smile! She tries to hide in the shadows
+of the citywall, and you ponder why she does that....hmmm.
+~
+195 2 0 0 0 200 S
+12 1 24 24 500 500d0+0 0d0+12000
+120 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+ifispc ($n)
+ifsex ($n) ==1
+say Lookin for a warm body.
+smile $n
+break
+else
+endif
+endif
+~
+|
+#25045
+draco dragon~
+Draco~
+Draco, KING of the true DRAGONS!
+~
+~
+1 404243172 0 0 0 1000 S
+200 1 400 400 30000 30000d0+0 0d0+200000
+2000 0 0
+0 0 1
+3495 0 0
+#25046
+gharzon~
+Gharzon~
+Gharzon the Questmaster sits at his desk.
+~
+~
+67 134217856 0 0 0 0 S
+300 1 600 600 10000 10000d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+#25047
+iolo~
+Iolo~
+Iolo, an old and friendly bard, sits at his desk.
+~
+He is an old man, having spent his years telling countless stories.
+~
+67 128 0 0 0 0 S
+300 1 600 600 0 10000d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say Greetings!  Welcome to Iolo's Bows!
+~
+>speech_prog hi hello~
+say Why, hello there!
+smile
+~
+>speech_prog job~
+say My job is that of a bowyer and fletcher.  I make bows and arrows.
+~
+>speech_prog bowyer fletcher bows arrows~
+say Aye, it's a hard job, but I enjoy it.
+~
+>speech_prog bye~
+say Come again, $n!
+~
+|
+#25066
+woody~
+Woody~
+The ghost of Woody, Tyrion's Siberian Hamster is here.
+~
+Woody is beige in colour, and only 2 inches long.  He has a black "racing
+stripe" that runs down the centre of his back, and no tail whatsoever.  His
+eyes are totally black.  He is just about the cutest little creature you
+have ever seen.  
+~
+4194373 2 20 0 3 0 S
+1 1 2 2 0 10d0+0 0d0+0
+0 24 0
+0 0 1
+0 0 0
+>rand_prog 12~
+emote looks at you with his cute face.
+~
+>rand_prog 10~
+emote twitches his nose.
+~
+>rand_prog 10~
+emote crawls around on the ground
+~
+>all_greet_prog 100~
+emote scampers out of the way of $n as they enter the room.
+if name($n)==Tyrion
+say Tyrion!  I missed you!
+snuggle tyrion
+smile tyrion
+endif
+~
+>rand_prog 8~
+say I'm sure Tyrion misses me.
+~
+>speech_prog tyrion~
+say Yes, he was my owner.  I passed away on January 11, 2004.
+~
+>speech_prog misses~
+sigh
+say Yes, 'tis true.  Perhaps he'll adopt a new one and name him after me!
+~
+>speech_prog adopt~
+say Perhaps you should tell Tyrion that you're sorry that his pet died?  I'm sure he'd appreciate it.
+~
+>act_prog pats~
+snuggle $n
+~
+>speech_prog hi hello~
+say Hello!  I talk, you know.
+~
+>speech_prog bye~
+say Bye!  I have a secret you know!
+~
+>speech_prog secret~
+say Yes, I can cast a spell on you
+smile
+~
+>speech_prog spell~
+say Yes, it is the Tongues spell!
+~
+>speech_prog tongues~
+say Ok, but don't tell anyone!
+cast tongues $n
+~
+>speech_prog pass passed~
+say I passed away in my sleep.  Happily, in my food dish.
+smile
+~
+>act_prog heartily.~
+say You're welcome, $n!
+~
+|
+#25099
+Alan banker~
+Alan~
+Alan the Banker waits patiently for your money
+~
+~
+131075 128 0 0 0 0 S
+150 1 300 300 300000 300000d0+0 0d0+0
+1500 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+  if level($n) < 100
+    if isgood($n) == 1
+      say Welcome to my humble bank $n
+      bow $n
+      break
+    else
+      say Tread carefully here $n, as I have little patience for evil.
+      frown $n
+      break
+    endif
+  endif
+  if sex($n) == 2
+    say Greetings M'lady $n!
+    grovel $n
+    mpforce $n cackle
+    break
+  else 
+    say Greetings M'lord $n!
+    grovel $n
+    mpforce $n cackle
+    break
+  endif
+endif
+~
+>rand_prog 5~
+mpecho Alan glances around towards the vault without thinking, quietly
+mpecho reassuring himself that it is still secure.~
+>give_prog "all"~
+mpecho Alan looks carefully at the $o for a few seconds.
+give $o $n
+say The $o is very interesting, $n 
+~
+>speech_prog information knowledge help money~
+mpechoat $n $i begins whispering to you as he hears something you say.
+mpechoat $n 'Ye be interested in help eh? Perhaps you should try asking
+mpechoat $n champions' he says.
+mpechoaround $n $i whispers quietly to $n, you wonder what about.
+~
+|
+#25149
+snake~
+a snake~
+A snake attacks you!
+~
+~
+3 0 16 0 0 0 S
+1 1 2 2 0 1d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+murder $n
+~
+|
+#25200
+Shaya~
+Shaya~
+The beautiful Shaya is here, sitting behind her desk.
+~
+Sitting behind her desk, Shaya looks up at you with gorgeous blue eyes as
+you enter.  She smiles at you-revealing a perfect set of teeth.  She would
+be considered the most beautiful woman alive by many who laid eyes on her. 
+She leans back in her chair after she directs you over to the &Rregistration
+board&G.  
+~
+3 134217856 262160 0 3 0 S
+120 1 240 240 50000 50000d0+0 0d0+0
+1200 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+ if sex($n) == 1
+  smile $n
+ endif
+ if sex($n) == 2
+  nod $n
+ endif
+ if sex($n) == 0
+  peer $n
+ endif
+break
+endif
+if ispc($n) == 1
+ if sex($n) == 1
+  smile $n
+  say Well, hello there $n!
+  emote looks you up and down, and bites her lower lip as she meets your eyes.
+  emote points to the registration board.
+  say The Stormgate Pkill Academy registration is there.
+ endif
+ if sex($n) == 2
+  nod $n
+  say Welcome to the Stormgate Pkill Academy, $n.
+  say It's good to see that more women like us are
+  say out there.
+  emote points to the registration board.
+  say You can sign up on that.
+ endif
+ if sex($n) == 0
+  peer $n
+  say Uhh... hi, $n
+  say don't be offended...but are you male or female?
+  blush
+  emote points to the registration board.
+  say which ever you are... sign up there for lessons.
+ endif
+ mpechoat $n Type `say help' for assistance.
+endif
+~
+>speech_prog Help~
+mpechoat $n &WHelp Menu
+mpechoat $n &R---------
+mpechoat $n &W1.&CHow To Register.
+mpechoat $n &W2.&CClasses.
+mpechoat $n &W3.&CTeaching.
+mpechoat $n &R---------
+mpechoat $n &WTo get help on either of the above topic, simply type `&Ysay #&W', where # is 1, 2, or 3.
+~
+>act_prog ~
+~
+>speech_prog 1~
+mpechoat $n &WHelp: &CRegistration
+mpechoat $n &R------------------
+mpechoat $n &WTo register for a Stormgate PKill Academy class, simply write a
+mpechoat $n &Wnote while standing in this room. When you post the note in this
+mpechoat $n &Wroom it will be added to the note board. When it looks like there
+mpechoat $n &Ware enough names for a lesson, a teacher will decide when and 
+mpechoat $n &Wwhere a lesson will be held. All details will be posted on the
+mpechoat $n &Wnote board. To read them, simply type `note read' while inside
+mpechoat $n &Wthis room.
+~
+>speech_prog 2~
+mpechoat $n &WHelp: &CClasses
+mpechoat $n &R--------------
+mpechoat $n &WAll information dealing with time and date of upcoming classes
+mpechoat $n &Wwill be found on the note board. Teachers will decide weither
+mpechoat $n &Whis/her class will be a one on one tutoring session or a large
+mpechoat $n &Wlecture. Classes will more than likely be held in the forest
+mpechoat $n &Wto the north of Methidoral on the Overworld, although the
+mpechoat $n &Wteacher may decide otherwise if so desired. 
+mpechoat $n Also see Registration for details on registering for class.
+~
+>speech_prog 3~
+mpechoat $n &WHelp: &CTeaching
+mpechoat $n &R--------------
+mpechoat $n &WAs a teacher you will have the right to decide how, when and where
+mpechoat $n &Wyour lessons will be taught. The recommendation for a location for
+mpechoat $n &Wyour lesson would be in the forest north of Methidoral, just off
+mpechoat $n &Wthe main path. When you feel there are enough people for a lesson,
+mpechoat $n &Wwrite a note to the registration board with the names of the ones
+mpechoat $n &Wincluded in the lesson, and the projected time and date.
+mpechoat $n &RSpecial thanks to all those who would teach!
+~
+|
+#0
+
+
+
+#OBJECTS
+#25000
+hammer Methidoral silver~
+hammer of Methidoral~
+The great silver hammer of Methidoral lies here.~
+~
+5 3137 0 0 0 8193 108
+100 100
+0~ 0~ 0~ 7~
+30 1080 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+18 30
+A
+24 -20
+A
+1 5
+#25001
+box donation~
+a donation box~
+A box has been left here for donations.~
+~
+15 64 0 0 0 0 100000
+100 100
+9999~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25002
+fountain~
+fountain~
+A huge marble fountain sprays clear water into the air.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+3000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>rand_prog 20~
+0
+mpecho &BThe fountain sprays clear water into the air.
+~
+>rand_prog 10~
+0
+mpecho &BWater droplets from the fountain cause circles to form in the fountain's base.
+~
+|
+#25003
+hauberk chainmail chain~
+chain hauberk~
+A chain hauberk lies here in the dust.~
+~
+9 0 0 0 0 17 12
+100 100
+0~ 0~ 0~ 0~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#25004
+vest chain link~
+chain link vest~
+A chain vest lies forgotten here.~
+~
+9 0 0 0 0 9 10
+100 100
+0~ 0~ 0~ 0~
+6 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+#25005
+chain leggings~
+chain leggings~
+A pair of chain leggings has been left here.~
+~
+9 0 0 0 0 33 12
+100 100
+0~ 0~ 0~ 0~
+4 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#25006
+sword broad broadsword~
+broadsword~
+A broadsword has been forgotten here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 3~
+6 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 2
+#25007
+leather pants~
+leather pants~
+A pair of leather pants have been left here.~
+~
+9 0 0 0 0 33 10
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 10
+A
+2 1
+#25008
+jerkin leather~
+leather jerkin~
+A leather jerkin has been left here.~
+~
+9 0 0 0 0 9 10
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#25009
+rusty sword longsword~
+rusty longsword~
+A rusty blade has been forgotten here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 1~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#25010
+leather helmet~
+leather helmet~
+A leather helmet has been left here.~
+~
+9 0 0 0 0 17 10
+100 100
+0~ 0~ 0~ 0~
+1 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#25011
+cloak brown wool~
+brown woolen cloak~
+A brown woolen cloak lies here in a pile.~
+~
+9 0 0 0 0 1025 10
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 10
+A
+13 50
+#25012
+boots leather~
+leather boots~
+A pair of comfortable leather boots have been forgotten here.~
+~
+9 0 64 0 0 65 10
+100 100
+0~ 0~ 0~ 0~
+2 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#25013
+gloves silk~
+silken gloves~
+A pair of delicate silk gloves have been left here.~
+~
+9 64 128 0 0 129 10
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+#25014
+necklace bead~
+bead necklace~
+A bead necklace has been left here.~
+~
+9 0 0 0 0 5 10
+100 100
+0~ 0~ 0~ 0~
+2 100 0
+5 0
+detect invis~
+2 2
+0 0 0
+A
+14 25
+#25015
+robe purple~
+purple robes~
+A pile of purple cloth lies here.~
+~
+9 0 0 0 0 1025 10
+100 100
+0~ 0~ 0~ 0~
+5 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 10
+A
+12 50
+#25016
+staff oaken~
+gnarled oaken staff~
+A gnarled oaken staff lies here.~
+~
+4 64 0 0 0 16385 14
+100 100
+20~ 5~ 5~ fly~
+3 40 0
+0 0
+fly~
+5 5
+0 0 0
+#25017
+leather bracers~
+leather bracers~
+A pair of strong leather bracers has been left here.~
+~
+9 0 0 0 0 4097 10
+100 100
+0~ 0~ 0~ 0~
+2 24 0
+5 0
+giant strength~
+3 3
+0 0 0
+#25018
+mace steel~
+steel mace~
+A huge steel mace has been left here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 8~
+8 48 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+#25019
+potion blue~
+blue potion~
+A blue potion of healing has been left here.~
+~
+10 268435520 0 0 0 1 8
+100 100
+100~ heal~ cure light~ reserved~
+2 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#25020
+white mana potion~
+white potion~
+A white mana potion has been left here.~
+~
+10 268435520 0 0 0 1 1
+100 100
+100~ mana~ mana~ reserved~
+2 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+#25021
+pill orange protection~
+orange pill~
+An orange pill of protection has been left here.~
+~
+26 268435456 0 0 0 1 8
+100 100
+20~ armor~ bless~ reserved~
+2 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#25022
+yellow potion~
+yellow potion~
+A yellow potion of detect invis lies here.~
+~
+10 268435456 0 0 0 1 8
+100 100
+50~ detect invis~ detect hidden~ reserved~
+2 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#25023
+scroll recall~
+scroll of recall~
+A scroll of recall has been forgotten here.~
+~
+2 0 0 0 0 1 1
+100 100
+100~ word of recall~ reserved~ reserved~
+1 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#25024
+scroll tattered~
+tattered scroll~
+A tattered scroll has been left here.~
+~
+2 0 0 0 0 1 1
+100 100
+100~ remove curse~ reserved~ reserved~
+2 250 0
+0 0
+reserved~
+0 0
+0 0 0
+#25025
+scroll ident identify~
+scroll of identify~
+A scroll of identify has been left here.~
+~
+2 0 0 0 0 1 10
+100 100
+100~ identify~ reserved~ reserved~
+2 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#25026
+pot pie~
+big pot pie~
+A big pot pie has been left here in the dirt.~
+~
+19 0 0 0 0 1 1
+100 100
+6~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25027
+bread loaf~
+loaf of bread~
+A loaf of bread has been left here.~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25028
+cake chocolate~
+chocolate cake~
+A chocolate cake sits here on the ground.~
+~
+19 0 0 0 0 1 1
+100 100
+2~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25029
+cheesecake slice~
+slice of cheesecake~
+A delicious looking slice of cheesecake has been left here.~
+~
+19 0 0 0 0 1 1
+100 100
+2~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25030
+sack cloth~
+cloth sack~
+A cloth sack has been left here.~
+~
+15 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25031
+pouch belt~
+belt pouch~
+A leather belt pouch has been left here.~
+~
+15 0 2048 0 0 2049 1
+100 100
+10~ 1~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25032
+skin water bloated~
+bloated water skin~
+A bloated water skin lies on the ground here.~
+~
+17 0 0 0 0 1 1
+100 100
+100~ 100~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25033
+dried beef~
+dried beef~
+A chunk of dried beef has been left here.~
+~
+19 0 0 0 0 1 1
+100 100
+7~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25034
+lantern~
+covered lantern~
+A covered lantern has been tossed aside here.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ 25~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25035
+wand missle~
+wand of missiles~
+A small maple wand lies on the ground here.~
+~
+3 64 0 0 0 16385 8
+100 100
+20~ 15~ 15~ magic missile~
+4 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#25036
+dagger copper~
+copper dagger~
+A copper dagger has been left here.~
+~
+5 0 0 0 0 8193 18
+100 100
+0~ 0~ 0~ 11~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+A
+18 2
+#25037
+mace copper~
+copper mace~
+A copper mace has been left here.~
+~
+5 0 0 0 0 8193 18
+100 100
+0~ 0~ 0~ 8~
+3 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+A
+18 2
+#25038
+plate mail vest~
+copper plate vest~
+A plate mail vest make of copper has been left here.~
+~
+9 0 0 0 0 9 18
+100 100
+0~ 0~ 0~ 0~
+9 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 10
+#25039
+copper leggings~
+copper leggings~
+A pair of copper leggings have been left here.~
+~
+9 0 0 0 0 33 18
+100 100
+0~ 0~ 0~ 0~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 5
+#25040
+copper vambraces~
+copper vambraces~
+A pair of copper vambraces have been tossed aside here.~
+~
+9 0 0 0 0 257 18
+100 100
+0~ 0~ 0~ 0~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+#25041
+copper helmet~
+copper helmet~
+A copper helmet has been left here.~
+~
+9 0 0 0 0 17 18
+100 100
+0~ 0~ 0~ 0~
+3 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+#25042
+gauntlets copper~
+copper gauntlets~
+A pair of shiny copper gauntlets have been left here.~
+~
+9 0 128 0 0 129 18
+100 100
+0~ 0~ 0~ 0~
+2 52 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+19 1
+#25043
+faceplate copper~
+copper faceplate~
+A copper faceplate has been left here.~
+~
+9 0 0 0 0 65537 18
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#25044
+beer bottle~
+bottle of beer~
+A bottle of beer has been left here.~
+~
+17 0 0 0 0 1 1
+100 100
+10~ 10~ 1~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25045
+bottle whiskey~
+a bottle of whiskey~
+A bottle of whiskey sits here~
+~
+17 0 0 0 0 1 1
+100 100
+20~ 20~ 5~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25046
+cigar~
+smelly cigar~
+A smelly cigar has been tossed aside here.~
+~
+13 0 0 0 0 1 5
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25047
+pretzel salty~
+salty pretzels~
+A bunch of salty pretzels have been tossed to the ground here.~
+~
+19 0 0 0 0 1 1
+100 100
+2~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25048
+cloak invisibility~
+cloak of invisibility~
+Something shimmers on the ground here.~
+~
+9 64 0 0 0 1025 15
+100 100
+0~ 0~ 0~ 0~
+1 148 0
+5 0
+mass invis~
+10 10
+0 0 0
+A
+116 -1
+A
+100 -1
+A
+115 -1
+A
+304 -1
+A
+19 7
+#25049
+bracelet leather~
+a Leather Bracelet~
+A stylish leather bracelet...~
+~
+9 4 0 0 0 4097 10
+100 100
+0~ 0~ 0~ 0~
+1 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+1 1
+#25050
+parchment scroll blank~
+blank parchment~
+A piece of blank parchment lies here.~
+~
+2 64 0 0 0 1 1
+100 100
+0~ reserved~ reserved~ reserved~
+1 250 0
+0 0
+reserved~
+0 0
+0 0 0
+#25051
+quill magical~
+magical quill~
+A feather quill has been left here.~
+~
+42 65 16384 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+4 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#25052
+potion flask~
+empty flask~
+An empty flask has been left here.~
+~
+10 268435520 0 0 0 1 1
+100 100
+0~ reserved~ reserved~ reserved~
+3 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#25053
+cauldron~
+iron cauldron~
+A large iron cauldron has been left here.~
+~
+8 2 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+20 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#25054
+fire magic magical~
+magical fire~
+&RA magical fire roars on the ground here.~
+~
+1 64 0 0 0 1 50
+100 100
+0~ 0~ -1~ 0~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#25055
+ink magical~
+magical ink~
+A bottle of magical ink has been left here.~
+~
+13 64 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 240 0
+0 0
+reserved~
+0 0
+0 0 0
+#25056
+gallows~
+a gallows~
+A gallows stands here, noose swinging slightly.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>invoke_prog 100~
+0
+~
+|
+#25057
+green pill~
+a green pill~
+A green pill sits here.~
+~
+26 0 0 0 0 1 8
+100 100
+50~ cure poison~ reserved~ reserved~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#25058
+desk~
+desk~
+A desk lines the southern wall.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25059
+dress wedding white satin~
+a white wedding dress~
+A white sating wedding dress is lying crumpled on the floor.~
+~
+9 0 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+5 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#25060
+wedding ring golden~
+a golden wedding ring~
+A golden wedding ring seems to have been dropped here.~
+~
+9 536870912 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#25061
+wedding ring diamond~
+a diamond wedding ring~
+A diamond wedding ring has been left here.~
+~
+9 536870912 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#25062
+tuxedo black~
+a black tuxedo~
+A black tuxedo fit for a groom has been dropped here.~
+~
+9 0 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+5 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#25063
+bouquet roses~
+a bouquet of roses~
+A bridal bouquet of roses has been tossed here.~
+~
+8 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+3 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#25064
+wedding veil white~
+a white wedding veil~
+A white wedding veil has been abandoned here.~
+~
+13 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+1 60 0
+0 0
+reserved~
+0 0
+0 0 0
+#25065
+great marble altar~
+&Wthe altar~
+&WA massive altar constructed of white marble sits in the Temple's center.~
+~
+13 64 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+altar~
+This great white table is constructed of a brilliant white marbe, and is
+inlaid with gold filigreed runes.  There is a palpable aura of tranquility
+emanating from it's beautiful surface; truly this is a sacred place.  
+~
+#25066
+gravestone~
+gravestone~
+A gravestone is here.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+gravestone~
+Here lies Woody, Tyrion's beloved pet Siberian Hamster.  It is rumoured
+that his ghost wanders the streets of Methidoral, and that he can talk!  
+~
+#25067
+short bow~
+a shortbow~
+A shortbow as been discarded here.~
+~
+5 0 32768 0 0 8193 1
+100 100
+1~ 0~ 0~ 15~
+2 10 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 5
+A
+18 2
+#25068
+longbow bow~
+a longbow~
+One of Iolo's finest longbows sits here.~
+~
+5 0 32768 0 0 8193 20
+100 100
+1~ 0~ 0~ 15~
+2 500 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 3
+A
+13 15
+A
+19 10
+#25069
+arrows~
+a stack of wooden arrows~
+A stack of arrows sits here.~
+~
+37 0 0 0 0 1 1
+100 100
+250~ 0~ 5~ 10~
+1 50 0
+0 0
+reserved~
+0 0
+0 0 0
+#25070
+mortar and pestle~
+a mortar and pestle~
+A mortar and pestle has been left here.~
+~
+44 65 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#25099
+sign informative~
+an informative sign~
+An informative sign rests here~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Methidoral City Vault
+ 
+Type the word BANK for a list of commands.
+~
+#25100
+oracle methidoral~
+oracle of methidoral~
+The Oracle of Methidoral is here, towering over your head.~
+~
+8 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+25000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+oracle~
+This oracle looks identical to Walius in every way.  He has been forever
+immortalized by the citizens of Stormgate in this twenty foot, solid diamond
+statue.  
+~
+#25101
+sign~
+a sign for the Engraving Shoppe~
+A sign featuring prices and terms of service demands your attention.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+&B-Engraving Shoppe-
+ 
+&YYou can have pieces of equipment engraved for 
+personalization. Engravable equipment includes 
+weapons, any and all armor including quest equipment, 
+lights, shields, and bags. When you have an item 
+engraved, it's name changes. For example, if you
+engraved your orange dagger it would no longer read
+"orange dagger" but instead "&zDeathblade&Y" or
+whatever else you choose to name it.
+ 
+Terawyn runs the engraving shoppe. She is the only
+immortal providing this service, so do not bother
+asking another immortal to rename your equipment.
+If she is not available, you'll have to wait. Also,
+if you are having your entire set of equipment
+engraved, please note Terawyn ahead of time to
+schedule, as this process takes a few moments.
+ 
+&B-Prices-
+ 
+&YThe cost for engraving a single piece of equipment
+is one million gold coins. To have your entire set
+engraved (if you schedule ahead) including bags,
+the current cost is &R25 million gold coins&Y.
+ 
+&B-Colour-
+ 
+&YYou are allowed to have one to two colors on any
+piece of equipment without any additional pricing.
+For example, you could name your weapon something
+like "&zDeath&rblood&Y" at regular price. More
+colors will cost an additional 250000. However, be
+advised Terawyn will not make any pieces with
+excessive color. This means you cannot rename an
+item to "&RR&Ba&Gi&Yn&Cb&Po&Rw &BBlade&Y" or any such nonsense.
+~
+#25126
+sign~
+a sign~
+A sign stands here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+South -> Deadly Clans
+North -> Peaceful Clans
+~
+#25142
+Gallows Noose Town~
+noose~
+The Town Gallows.  Its three nooses swing silently with the wind.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25198
+Class suggestion board~
+class suggestion board~
+This board is for class/race suggestions.~
+~
+11 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25199
+Registration board~
+the registration board~
+The Stormgate PKill Academy Registration Board.~
+~
+11 67108867 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#25200
+shiny brass drain sewer~
+drain~
+The water runs into a shiny brass drain on the ground.~
+~
+29 0 0 0 0 0 1
+100 100
+19701~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#25000
+Temple of Methidoral~
+~
+~
+You stand in the center of a vast chamber constructed of marble and gold.
+The Temple of Methidoral must surely be a vision of paradise; the
+crystalline walls arch hundres of feet into the air, meeting at the domed
+ceiling.  Colorful frescos line the walls, depicting the epic struggles of
+gods and men, and both the joys and hardships that this world contains. 
+Robed acolytes kneel at the great altar, chanting softly in an ancient
+language, their soft murmur punctuated by the melody of prayer bells
+swinging in the breeze.  
+~
+0 263180 0
+Rd     0
+E
+sign~
+Methidoral:
+Descriptions by Milantha
+Floorplan by Ichiban
+Most MOBs by Nosferatu
+~
+D2
+~
+~
+0 0 25001
+S
+#25001
+Judgement Pass~
+~
+~
+Judgement pass stands just outside of the mighty temple of Methidoral. 
+It is here that the greatest warrior in the land stands her post, protecting
+the citizens of Methidoral from the evil that dwells in every heart.  It is
+here that judgement is dealt, swift and without mercy.  There is a set of
+stairs leading upwards into the academy, where newcomers to the realm can
+learn to survive in the harsh and rugged land.  
+~
+0 2098188 0
+Rd     0
+D0
+~
+~
+0 0 25000
+D2
+~
+~
+0 0 25002
+D4
+~
+~
+0 0 102
+D5
+~
+~
+0 0 25143
+S
+#25002
+Fountain Plaza~
+~
+~
+A large fountain stands in the middle of the plaza and offers a drink to
+any passing traveler.  The water is clear and cool, and the fountain itself
+is large and carved out of marble.  Adventurers from across the realm gather
+here to replenish their drinking supply and to exchange gossip and tales of
+the wild lands beyond the Methidoral gates.
+~
+0 132100 1
+Rd     0
+D0
+~
+~
+0 0 25001
+D1
+~
+~
+0 0 25021
+D2
+~
+~
+0 0 25003
+D3
+~
+~
+0 0 25020
+S
+#25003
+Main Street~
+~
+None~
+The main street of Methidoral is a very wide cobblestone street. 
+Adventurers of all races and occupations can be seen walking up and down the
+street.  Common citizens of Methidoral can also be seen going about their
+daily activities.  The occasional cityguard insures that peace and justice
+will be upheld in this fine city, although the thugs and ruffians do present
+a minor crime problem.  
+~
+0 0 1
+Rd     0
+D0
+~
+~
+0 0 25002
+D2
+~
+~
+0 0 25004
+S
+#25004
+Crossing of Main and Astral~
+~
+~
+The crossing of Astral and Main is busy, but the throng of people is still
+bearable.  Every now and then, a fight erupts between an arrogant mage and
+an equally arrogant adventurer.  Pyrotechnics, hacks, slashes, and screams
+of pain fill the air.  Few people take notice of these actions because they
+have grown accustomed to open feuding in the streets.  The cityguards pay
+little heed also, only stepping in when they believe the fight is
+unjustified.  
+~
+0 33554432 0
+Rd     0
+D0
+~
+~
+0 0 25003
+D1
+~
+~
+0 0 25033
+D2
+~
+~
+0 0 25005
+D3
+~
+~
+0 0 25052
+S
+#25005
+Main Street~
+~
+~
+The continual stream of people on Main is no different here.  Clerics
+clutch their holy books, Mages seem absorbed in scholarly thought, and
+Warriors tote around their swords, blaring out curses at passerbys who
+accidently run into them.  The cobblestones of the street are well-worn by
+the many hundreds of feet which pass over them every day, and the buildings
+which line the street are very stout and seem prepared for any blow, natural
+or unnatural.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25004
+D2
+~
+~
+0 0 25006
+S
+#25006
+Main Street~
+~
+~
+A throng of people enter Main Street from the south, and you can hear the
+chattering and bartering of people at a market.  Your pace is slowed down by
+the continual flow of people, and the odor coming from the tightly packed
+people is very intense.  Blending in with their odor are the varied smells
+coming from the market.  You think you can detect the smell of food and
+various potion-making herbs, and possibly even the smell of pet animals. 
+You push forward against the crowd, eager to see what the merchants have for
+sale.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25005
+D2
+~
+~
+0 0 25007
+S
+#25007
+Market Square~
+~
+~
+The market square is arguably the busiest intersection in all of
+Methidoral.  Street vendors hawking illegal wares try to escape notice by the
+cityguards, adventurers run from one store to another collecting supplies
+for journeys outside the town, and common citizens meander down the streets.
+The whole intersection is a swirling vortex of colors, odors, and sounds. 
+Clutching your head, you attempt to find a quieter place in the city.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25006
+D1
+~
+~
+0 0 25061
+D2
+~
+~
+0 0 25008
+D3
+~
+~
+0 0 25060
+S
+#25008
+Main Street~
+~
+~
+Crowds of people swarm out of the market square to the north, jostling
+each other as they vie for a good position in the crowd.  A small child
+meanders out into the middle of the street and gets cut off from its mother.
+The wailing from the child and the answering shrieks of terror from the
+panicked mother give you a headache.  To the south, Main street appears to
+be less busy.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25007
+D2
+~
+~
+0 0 25009
+S
+#25009
+Main Street~
+~
+~
+The crowds have thinned out here, and you find the traveling manageable. 
+The occasional gruff adventurer shoves you out of his way, and beggars
+approach you for a few coins.  Overall, though, the journey is enjoyable. 
+Your feet make sharp clattering noises which echo off of the buildings
+surrounding Main street.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25008
+D2
+~
+~
+0 0 25010
+S
+#25010
+Crossing of Main and Turret~
+~
+~
+Main street intersects with Turret street here.  Turret is aptly named for
+the twin lookout Turrets which extend far above you to the east and west. 
+The cobblestones do not fit as nicely here, and the buildings surrounding
+the intersection look old and run-down.  Compared to the world outside the
+city gates, Methidoral is very safe.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25009
+D1
+~
+~
+0 0 25070
+D2
+~
+~
+0 0 25011
+D3
+~
+~
+0 0 25069
+S
+#25011
+Main Street~
+~
+~
+Main street is deserted here except for the occasional rough character
+lurking in the bulidings along the street.  Off in the distance, you hear
+the scream of some poor sould who is being beaten up by a ruffian.  The few
+people you meet on the street avoid eye contact and look around nervously.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25010
+D2
+~
+~
+0 0 25012
+S
+#25012
+Main Street~
+~
+~
+More seedy individuals prowl the streets here.  Occasional bands of ruffians
+and thieves can be seen slinking through the back alleys, and you see
+people eyeing your belongings with dark and greedy eyes.  It smells acrid
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25011
+D2
+~
+~
+0 0 25013
+S
+#25013
+Crossing of Main and Kragar~
+~
+~
+The crossing of Kragar and Main is pretty deserted, except for the
+occasional drunk or adventurer.  Most of the city's inhabitants stay closer
+to the central town because the outer edges of the city tend to be more
+dangerous and attract seedy individuals.  To the south, you can make out the
+edges of the city gates.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25012
+D1
+~
+~
+0 0 25079
+D2
+~
+~
+0 0 25014
+D3
+~
+~
+0 0 25078
+S
+#25014
+Southern gate of Methidoral~
+~
+~
+The southern gate of Methidoral is heavily guarded, and people seeking
+entry and exit must give an extensive report to the guards.  Traveling
+papers must be in order, or dire consequences can result.  The gates
+themselves are very large and made out of polished oak.  They are barred
+against invasion from the outside, and have never been penetrated.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 25013
+D2
+~
+Gate~
+3 0 17809
+S
+#25015
+Western gate of Methidoral~
+~
+~
+The western gate of Methidoral is heavily guarded, and the gates are
+sturdily barred.  The threat from an outside invasion is always present, and
+Methidoral, with its great riches, is a prime target of raids.  The cityguards
+look at you sternly, and question what business you have in the city.  In
+the distance you can hear wagon wheels crunching over the road leading up to
+the gate.  
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 25016
+D3
+~
+Gate~
+3 0 17809
+S
+#25016
+Corner of Onyx and Magnolia~
+~
+~
+The corner of Onyx and Magnolia is rather unspectacular.  The buildings
+which line the streets are simple dwellings made out of wood and native
+stone.  The roofs are thatched with marsh grasses, and the outside of the
+buildings are whitewashed.  The streets are made of fine cobbles which are
+well-fitted by talented craftsmen.  Overall, the city of Methidoral appears to
+be well taken care of, and the people seem to be wanting for little.  
+To the north, you see the mighty northern gates of Methidoral.
+~
+0 0 0
+Rd     0
+D0
+~
+Gate~
+3 0 25122
+D1
+~
+~
+0 0 25017
+D2
+~
+~
+0 0 25038
+D3
+~
+~
+0 0 25015
+S
+#25017
+Onyx Street West~
+~
+~
+As you walk along Onyx Street, you come across the occasional holy man
+or women who is deeply lost in religious ponderings.  The other travelers
+are diverse and come from all of the corners of the realm.  The variation in
+dress is remarkable, as are the differences in size and color of the people.
+Just because there are so many different people does not mean they live
+together in harmony, however.  The occasional scuffle between rival clans
+keeps the blood flowing in the streets of Methidoral.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25018
+D3
+~
+~
+0 0 25016
+S
+#25018
+Onyx Street West~
+~
+~
+The mix of people here on Onyx Street is fascinating.  Tiny pixies dance
+and dart between the crowds as they avoid being squished, their eyes
+sparkling with excitement.  Great demons hulk over everyone, their piercing
+and fiery gazes sending pangs of fear into the most seasoned warrior. 
+Occasionally, an even rarer humanoid is seen, like the slender and graceful
+elves of the forest, who cast a disdainful look upon all they meet. 
+Overall, the mix of exotic peoples is astounding.  To the north lies the
+temple of Lies, Manipulation and Deceit.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31981
+D1
+~
+~
+0 0 25019
+D3
+~
+~
+0 0 25017
+S
+#25019
+Onyx Street West~
+~
+~
+The crowds are noticeably thicker here, closer to the heart of the city. 
+People from various walks of life and various lands come to Methidoral for
+many reasons.  Some are refugees which seek shelter, and others are
+adventurers looking to tell their tales of glory.  Still others are pilgrims
+seeking holy enlightenment, and there are scholars seeking the knowledge of
+the sages.  The Virtue Guildhouse can be seen through a door to the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+119 0 0
+D1
+~
+~
+0 0 25020
+D3
+~
+~
+0 0 25018
+S
+#25020
+Onyx Street West~
+~
+~
+A significant crowd of people here is impeding traffic.  Ahead is the
+fountain plaza of Methidoral, which is a place of respite for road-weary
+travelers and is on the road to the temple of Methidoral.  Among the throng of
+people are a significant number of the sick and the dying.  They are
+probably being taken to the famed Hierophant of Methidoral in the hope that a
+miracle can be performed.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 25002
+D3
+~
+~
+0 0 25019
+S
+#25021
+Onyx Street East~
+~
+~
+To the west, you can see the fountain plaza and the many people which
+gather there.  Coming out of the plaza can be seen many of the most devout
+religious men and women of the city.  Covering their heads and refusing to
+speak with anyone, these religious fanatics speak only with their gods.  The
+stench of the animals they sacrifice and burn is repugnant, and it clings to
+their clothes like a baby clings to its mother.  
+~
+0 0 1
+Rd     0
+D1
+~
+~
+0 0 25022
+D3
+~
+~
+0 0 25002
+S
+#25022
+Onyx Street East~
+~
+~
+The peaceful tranquility of Onyx Street is exploded in an instant as a
+fight breaks out between an adventurer of one clan and an adventurer of
+another.  The citizens of Methidoral watch this development with bored
+disinterest; their only concern is staying out of the crossfire.  These
+fights between clan members are usually to the death, and the open warfare
+between the clans is mostly ignored by the city, as long as none of its
+citizens get pulled into the frays.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25023
+D3
+~
+~
+0 0 25021
+S
+#25023
+Onyx Street East~
+~
+~
+Onyx Street is peaceful here, and the crowds are thin enough that
+movement is easily accomplished.  Here and there a loose cobble trips you up
+as you walk along, betraying the age of the street.  Founded over a hundered
+years ago, Methidoral was originally a small dwelling of peasants who gathered
+together for protection against raiding bands.  Since that time, it has
+grown into the incredible city that stands today.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25024
+D3
+~
+~
+0 0 25022
+S
+#25024
+Onyx Street East~
+~
+~
+The number of people on Onyx Street is bearable here.  The crowds can
+be streaming in from the city gates to the east and from the fountain plaza
+to the west.  The incredible number of people which visit Methidoral each day
+is astounding.  It should not be too surprising, though, for Methidoral is the
+center for commerce in the entire realm.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25025
+D3
+~
+~
+0 0 25023
+S
+#25025
+Corner of Onyx and Styx~
+~
+~
+The corner of Onyx and Styx is ordinary in appearance.  The
+cobblestone streets resound with the sharp footsteps of the many travelers,
+and the utilitarian buildings which edge the street look warm and inviting. 
+The economic diversity of the people living in Methidoral is striking.  Women
+wearing expensive jewelry and splendid clothing are just as common as the
+beggars wearing rags and looking for their next meal.  
+You notice a small rusty gate blocking a barren path leading northwards...
+~
+0 0 0
+Rd     0
+D0
+~
+Gate~
+3 0 25121
+D1
+~
+~
+0 0 25026
+D2
+~
+~
+0 0 25027
+D3
+~
+~
+0 0 25024
+S
+#25026
+Eastern gate of Methidoral~
+~
+~
+The eastern gate of Methidoral is carefully guarded, and the gates are
+heavily barred.  The city walls are at least 10 meters high and are made of
+solid stone dragged in from the cliffs near the city.  The gates are equally
+solid looking, and are made of the hardest oak.  The cityguards look at you
+suspiciously, but they allow you to pass without any hardship.  
+~
+0 4 0
+Rd     0
+D1
+~
+Gate~
+3 0 17809
+D3
+~
+~
+0 0 25025
+S
+#25027
+Styx Street North~
+~
+~
+Styx street is the beginning of one of the biggest residential areas
+in Methidoral.  The houses here are made out of thick river stone and solid
+wood from the nearby forest.  The roofs are thatched with tough marsh
+grasses, and the entire structure is whitewashed.  Here and there, simple
+touches made by the inhabitants have distinguished the otherwise identical
+houses from each other.  Off in an alley, you hear the hiss of a stray cat. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25025
+D2
+~
+~
+0 0 25028
+S
+#25028
+Intersection of Styx and Astral~
+~
+~
+Very few people can be seen here on Styx street, which is not
+surprising.  The only thing which can be found on this street are
+nondescript residences of the city's inhabitants.  From the building on your
+right, you hear the squall of a young child.  The answering slap can be
+heard shortly afterward.  
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 25027
+D2
+~
+~
+0 0 25029
+D3
+~
+~
+0 0 25036
+S
+#25029
+Styx Street North~
+~
+~
+More of the simple thatch-roofed houses can be seen along the street.  A
+group of boys are playing a game in a nearby alley, and a shy little girl
+watches on, wishing she could join them.  By the looks of her, though, her
+family is destitute and needs all the help they can get.  A voice can be
+heard yelling for her, and she turns around reluctantly and slinks away.  
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 25028
+D2
+~
+~
+0 0 25030
+S
+#25030
+Styx Street North~
+~
+~
+The number of houses are thinning out here, gradually being replaced by
+business which cannot afford the rent on a shop on Market street.  To the
+east, the smell of baked goods wafts out onto the street.  The few houses
+which line the street here are more run-down than the others you have seen
+in Methidoral.  Most of these people depend on back-breaking labor in the
+mines to support themselves.  
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 25029
+D1
+~
+~
+0 0 25089
+D2
+~
+~
+0 0 25031
+S
+#25031
+Intersection of Styx and Market~
+~
+~
+The mainly residential Styx street meets up with Market street at
+this intersection.  The crowds are heavy on Market, but they seem to be
+thinned out on this end of the street.  The store to the east is an
+exception.  Adventurers can be seen going in and out of this store on a
+regular basis.  
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 25030
+D1
+~
+~
+0 0 25090
+D2
+~
+~
+0 0 25032
+D3
+~
+~
+0 0 25064
+S
+#25032
+Styx Street South~
+~
+~
+The bustle of Market street to the north makes you appreciate the
+relative quietness of this residential section of Methidoral.  The houses
+lining the streets look extremely decrepit here, and you feel a pull at your
+heart as you see a dirty and malnourished child sitting quietly in the
+street.  Too tired to spend any energy crying about the pains in its belly,
+it just looks at you with its haunting eyes.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25031
+D2
+~
+~
+0 0 25053
+S
+#25033
+Astral Street East~
+~
+~
+Astral street, an important residential avenue, stretches to the east
+here, and to the west it intersects with Main Street.  Retired warriors and
+heroes of the Astral relax here and enjoy the fruits of their wild younger
+days.  In time of great need, they also provide a strong arm for the defense
+of the city.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25034
+D3
+~
+~
+0 0 25004
+S
+#25034
+Astral Street East~
+~
+~
+Astral street is fairly deserted.  The only business which might bring you
+to this area of the city would be an attempt to employ a veteran of the
+land.  The amount of money needed to persuade one of these heroes to aid you
+in your travels is astronomical, and only the wealthiest of adventurers
+could possibly persuade anyone to help them.  On occasion, a burly man can
+be seen entering one of the dwellings, or a child can be seen peeking out of
+a window.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25035
+D2
+~
+~
+0 0 11936
+D3
+~
+~
+0 0 25033
+S
+#25035
+Astral Street East~
+~
+~
+A group of strapping young boys can be seen playing a rough game of some
+sort on the edges of the street.  More than just a game, this activity
+prepares the boys for the rough life they will face ahead.  Following in the
+footsteps of their fathers, they will become brave warriors who will either
+find their calling as cityguards or as adventurers.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25036
+D3
+~
+~
+0 0 25034
+S
+#25036
+Astral Street East~
+~
+~
+A pretty and buxom young woman stares dejectedly out the window.  Her
+beauty is stunning, and you wonder what could possibly upset her so.  From
+the inside of the house, you hear someone yelling at her.  She rolls her
+eyes, sighs, and walks away.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25028
+D3
+~
+~
+0 0 25035
+S
+#25037
+Corner of Styx and Kragar~
+~
+~
+You stand at the corner of Styx and Kragar, in the southeast section of
+Methidoral.  The people you meet in this area are rather seedy-looking, and
+it is no wonder.  This is a rather baudy section of the city, complete with
+a popular tavern and an equally popular leather shop.  The buildings here
+are new, but the constant abuse by unsavory characters make them look as old
+as the city itself.  The path to the Temple of Life and Nature lies to the
+east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25056
+D1
+~
+~
+0 0 9464
+D3
+~
+~
+0 0 25082
+S
+#25038
+Magnolia Street North~
+~
+~
+The magnificent houses found along Magnolia street here obviously belong
+to the well-off of Methidoral; mostly mages and clerics.  Mages are in
+constant demand by the common people which request magical aids including
+hexes and magical enchancements on weapons.  Clerics are paid well for their
+spiritual guidance, and even receive money in exchange for prayers and
+sacrifices to the gods.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25016
+D2
+~
+~
+0 0 25039
+S
+#25039
+Intersection of Magnolia and Astral~
+~
+~
+More dwelling places of the affluent line the crossing of Magnolia and
+Astral.  More than their size, the uniqueness of these houses sets them apart
+from the dwellings of common folk.  Intricate runes of protection and
+ordinary designs decorate the outsides of these houses, and exotic flora
+from across the realm can be found in special gardens of the wealthy
+homeowners.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25038
+D1
+~
+~
+0 0 25049
+D2
+~
+~
+0 0 25040
+S
+#25040
+Magnolia Street North~
+~
+~
+A rich child runs out into the street and stares at you.  His fine blond
+hair is freshly washed and cut short, and his clothing appears to be brand
+new.  Apparently, he is the son of a powerful mage, which is evident by the
+small fireballs he sends flying at your feet.  If the consequences were not
+so harsh, you might consider teaching this child a lesson.  Harming even a
+hair on his head would get you a one-way trip to the executioner, though. 
+To the west lies the entrance to the Temple of Death and Decay.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25039
+D2
+~
+~
+0 0 25041
+D3
+~
+~
+0 0 23267
+S
+#25041
+Magnolia Street North~
+~
+~
+An awful smell and clatter is coming out of the building to the west. 
+Sansibar's famous Magic Emporium is located in this small and bright
+building.  Famous throughout the land for quality healing potions, Sansibar
+has amassed quite a fortune for himself.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25040
+D2
+~
+~
+0 0 25042
+D3
+~
+~
+0 0 25087
+S
+#25042
+Intersection of Magnolia and Market~
+~
+~
+Magnolia street intersects with Market Street here.  The throng of people
+is almost impenetrable, and a great deal of pushing and shoving occurs as
+people try to get their business done.  Gunthar's armoury is to the west,
+and you can hear the clanging of the hammer against the anvil out here on
+the street.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25041
+D1
+~
+~
+0 0 25057
+D2
+~
+~
+0 0 25043
+D3
+~
+~
+0 0 25088
+S
+#25043
+Magnolia Street South~
+~
+~
+To the north, Magnolia street meets with Market Street.  You can see
+the throngs of people shopping for various goods of Market from here. 
+Only the occasional cityguard and vagrant can be found here on Magnolia. 
+The only other people on this street are adventurers looking for help from
+the Mercenary's guild.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25042
+D2
+~
+~
+0 0 25044
+S
+#25044
+Magnolia Street South~
+~
+~
+The clinking sound made by your boots on the cobblestones of Magnolia
+Street seem eerie in the silence that pervades this area.  The street is
+completely deserted, and the only sounds you hear are from the barking dogs
+and screeching cats hunting for prey in the back alleys.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25043
+D2
+~
+~
+0 0 25045
+S
+#25045
+Magnolia Street South~
+~
+~
+The dark building to the west is the famed Mercenary's Guild of Methidoral.
+Adventurers seeking help on a dangerous quest or simply seeking
+companionship can find it for a price there.  A few muscle-bound warriors
+can be seen bringing out a mage, and some of the weaker adventurers are
+renting out strong warriors.  Except for these people, however, the street
+is deserted.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25044
+D2
+~
+~
+0 0 25046
+D3
+~
+~
+0 0 25117
+S
+#25046
+Magnolia Street South~
+~
+~
+The few people you meet here on southern Magnolia street are most likely
+residents of Methidoral.  There really isn't much reason for an adventurer
+to be in this section of town, and the looks the residents give you are very
+suspicious.  One woman in particular looks mistrustful, and she grabs her
+child and runs with him into the nearest building.  The temple of Chaos,
+Strife and Injustice lies to the west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25045
+D2
+~
+~
+0 0 25047
+D3
+~
+~
+0 0 23145
+S
+#25047
+Magnolia Street South~
+~
+~
+The buildings on Magnolia street here appear to be more run down than
+they are further to the north.  Apparently, a crowd of unsavory individuals
+have taken over the southern section of the city.  Although not as dangerous
+as the world outside the city gates, it is nonetheless a very unpopular
+place to live.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25046
+D2
+~
+~
+0 0 25048
+S
+#25048
+Corner of Magnolia and Kragar~
+~
+~
+Here at the corner of Magnolia and Kragar, the people you meet appear to
+be rather seedy.  Unkempt drunks which appear to have been in the tavern all
+night long stagger around on their way to their homes, and heavily- painted
+women call to you from the shadows.  A piercing scream in the distance
+attests to the frightening nature of the people who frequent this place. 
+There is a gate to the west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25047
+D1
+~
+~
+0 0 25075
+D3
+~
+Gate~
+3 0 17809
+S
+#25049
+Astral Street West~
+~
+~
+Astral street crosses through one of the more affluent regions of
+Methidoral.  Almost all of the people living on this street are retired
+heroes of the realm.  Rich off the spoils of their many adventures, they are
+now seeking a peaceful life in the most prosperous cities in the realm.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25050
+D3
+~
+~
+0 0 25039
+S
+#25050
+Astral Street West~
+~
+~
+The occasional man you see in the street greets you with a solemn nod,
+and the women stare at you from the doorway of their houses.  The
+neighborhood is happy, and crime is not a problem.  It is a well-known fact
+that the majority of people living on Astral street are powerful adventurers.
+This is enough information to keep most criminals away.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25051
+D3
+~
+~
+0 0 25049
+S
+#25051
+Astral Street West~
+~
+~
+Astral street is all but deserted.  A few people coming from their houses
+or going to them greet you solemnly on the street.  Everyone you meet is in
+astounding physical shape, probably because they are all ex-warriors.  Their
+children, too, are of astounding physical strength and are incredibly
+healthy and vigorous.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 0
+D1
+~
+~
+0 0 25052
+D3
+~
+~
+0 0 25050
+S
+#25052
+Astral Street West~
+~
+~
+The occasional child or animal looks your way, apparently perturbed by
+your presence.  Visitors are seldom here on Astral street, and strangers are
+looked upon as a curiosity.  A bird screeches at you from an overhead
+branch, offended that you have intruded on her territory.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25004
+D3
+~
+~
+0 0 25051
+S
+#25053
+Styx Street South~
+~
+~
+The poverty-stricken families of Styx street watch you from doorways
+as you go by.  From dawn to dusk, these people work in order to scrape up
+enough money to get by.  Without any sort of aid from the city of Methidoral,
+they must depend on the handouts of others to supplement their meager
+income.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25032
+D2
+~
+~
+0 0 25054
+S
+#25054
+Styx Street South~
+~
+~
+The houses which line Styx street are well-kept here.  Bordering on
+some poorer areas to the north, these people seem to be doing well enough to
+provide for the basics in life.  The pet store to the east would indicate
+that they are doing well enough to support a small pet to keep them company,
+as well.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25053
+D1
+~
+~
+0 0 25115
+D2
+~
+~
+0 0 25055
+S
+#25055
+Styx Street South~
+~
+~
+Some children are playing a complicated-looking game with all manner of
+stones out in the street.  They are so engrossed in their game, they hardly
+pay you any attention at all.  The clattering of your feet on the
+cobblestones is strangely calming, and you whistle a tune as you walk along.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25054
+D2
+~
+~
+0 0 25056
+S
+#25056
+Styx Street South~
+~
+~
+Still more houses line Styx street here.  Methidoral is definitely one
+of the more populated places in the realm, and it is no wonder.  A city with
+every possible store, a magnificent temple, and the protection of cityguards
+provide its citizens with many comforts.  Still, this life isn't for just
+anyone.  Many adventurers would cringe at the thought of settling down in
+one of these confining little houses.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25055
+D2
+~
+~
+0 0 25037
+S
+#25057
+Market Street West~
+~
+~
+Market street is overrun with people.  The major market center in all
+of the realm, the finest goods can be found in Methidoral.  To the north, a
+furniture shop attracts many local individuals.  Market street continues
+to the east and to the west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25091
+D1
+~
+~
+0 0 25058
+D2
+~
+~
+0 0 25124
+D3
+~
+~
+0 0 25042
+S
+#25058
+Intersection of Market and Turret~
+~
+~
+To the north is a weapon shop and smithy, and to the south Turret street
+leads off.  The incessant babble of people at the market is really annoying,
+and the close press of so many bodies creates an awful stench.  Here and
+there, you can see minor dispute erupt between people, and constant
+bartering with street vendors goes on.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25092
+D1
+~
+~
+0 0 25059
+D2
+~
+~
+0 0 25065
+D3
+~
+~
+0 0 25057
+S
+#25059
+Market Street West~
+~
+~
+Market street continues to the east and west here.  To the north, a
+very heavily guarded shop stands almost empty.  The sparkling jewels inside
+indicate why.  Only the wealthiest members of the land, or adventurers
+wishing to sell booty need bother with this store.  The common people of
+Methidoral can only look and dream.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25093
+D1
+~
+~
+0 0 25060
+D2
+~
+~
+0 0 25150
+D3
+~
+~
+0 0 25058
+S
+#25060
+Market Street West~
+~
+~
+This section of Market street is especially busy.  To the north, the
+scribe shop sells all manner of scrolls and magical wards.  Heading toward
+the south are various members of the realm which are clutching vast sums of
+money to their chests.  The iron bars in the window and the heavily armed
+guards indicate that you are before the Bank of Methidoral.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25094
+D1
+~
+~
+0 0 25007
+D2
+~
+~
+0 0 25099
+D3
+~
+~
+0 0 25059
+S
+#25061
+Market Street East~
+~
+~
+Many warrior types can be seen entering the store to the north.  Offering
+magical devices for those who are unable to cast spells, the shop is a great
+aid for the brawny adventurer.  A few loose cobblestones can be seen in the
+heavily traveled Market Street.  Apparently, all of the traffic has caused
+them to come loose.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25095
+D1
+~
+~
+0 0 25062
+D2
+~
+~
+0 0 25123
+D3
+~
+~
+0 0 25007
+S
+#25062
+Market Street East~
+~
+~
+Happy couples and families shopping for bridal gifts enter and leave the
+store to the north.  A unique concept, Juttey offers everything a new bride
+could possibly need.  This is a relief for the family of the bride who would
+have to make the dress and veil in years past.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25096
+D1
+~
+~
+0 0 25063
+D2
+~
+~
+0 0 25151
+D3
+~
+~
+0 0 25061
+S
+#25063
+Intersection of Market and Turret~
+~
+~
+A seedy looking store can be seen to the north, and Turret street leads
+off to the south of Market street.  A fight erupts out on the street
+between a vendor and a customer who believes they were cheated.  At the
+approach of the cityguards, the vendor hastily grabs his products and flees.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25097
+D1
+~
+~
+0 0 25064
+D2
+~
+~
+0 0 25074
+D3
+~
+~
+0 0 25062
+S
+#25064
+Market Street East~
+~
+~
+A store selling holy items can be seen to the north, and Market the end
+of Market street can be seen to the east.  The street is littered with
+items dropped by careless shoppers, and the whole street has a worn
+appearance to it.  Street cleaners can be seen trying to keep the streets
+clean, but the sheer number of people are too many for the cleaner to keep
+up with.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25098
+D1
+~
+~
+0 0 25031
+D3
+~
+~
+0 0 25063
+S
+#25065
+Turret Street~
+~
+~
+Turret street, aptly named for the twin lookout Turrets in the southern
+city, contains the main city defenses.  Always fearful of attack from the
+south, veteran soldiers of the Methidoral army are on constant duty here.  Any
+person entering this area should have a very sound reason why they are doing
+so.  The army has much more important things to deal with than nosy
+adventurers.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25058
+D2
+~
+~
+0 0 25066
+S
+#25066
+Turret Street~
+~
+~
+Army officers and regular enlisted men can be seen patrolling this area. 
+Only the sharpest and best warriors may apply for enlistment in the Methidoral
+army, and many fine men are turned down.  Of the men who make it into the
+ranks, the best of these are then chosen to be the officers of the army.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25065
+D2
+~
+~
+0 0 25067
+S
+#25067
+A bend in Turret Street~
+~
+~
+Turret street makes a sharp turn here, following the city walls.  These
+walls provide the first line of the defense for the city, and are at least
+10 meters high and two meters thick.  Stone from the distant mountains were
+brought in by mule train to build the walls, and they are legendary in the
+realm.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25066
+D1
+~
+~
+0 0 25068
+S
+#25068
+Turret Street~
+~
+~
+The western Turret can be seen to the north, and Turret street stretches to
+the east and to the west from here.  An armed patrol passes by, giving you
+suspicious glances.  The wisdom of staying in this highly guarded area is
+questionable, especially since you are obviously an outsider.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25083
+D1
+~
+~
+0 0 25069
+D3
+~
+~
+0 0 25067
+S
+#25069
+Turret Street~
+~
+~
+Turret street stretches along the city wall to the west and intersects
+Main street to the east.  The occasional army officer can be seen staggering
+into the compound from a night out on the town.  If anyone in Methidoral
+deserves a drink at the bar, it's these men.  The incredible stress of their
+position can really wear at them.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25010
+D3
+~
+~
+0 0 25068
+S
+#25070
+Turret Street~
+~
+~
+Turret street stretches along the city wall to the east, and to the west
+it intersects Main Street.  The muscle-bound warriors which comprise the
+Methidoral army are very dedicated and disciplined.  Not a single on-duty
+member is napping at their post.  All are alert and ready for battle at a
+moment's notice.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25071
+D3
+~
+~
+0 0 25010
+S
+#25071
+Turret Street~
+~
+~
+The eastern Turret is to the north, and Turret street itself makes a sharp
+turn to the north directly east of here.  Jutting out from the rest of the
+city, the square-shaped military compound serves as a planning center for
+raids into other cities and also for a city defense.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25084
+D1
+~
+~
+0 0 25072
+D3
+~
+~
+0 0 25070
+S
+#25072
+Corner of Turret Street~
+~
+~
+Turret street bends sharply here at the corner of the city walls.  Built
+high enough to keep out any danger, the city walls are made of very thick
+stone.  In times of war, defending champions of the city can rush up on the
+walls to send volleys of arrows or cauldrons of oil down upon the heads of
+the attacking army.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25073
+D3
+~
+~
+0 0 25071
+S
+#25073
+Turret Street~
+~
+~
+Turret street continues to the north and south here.  The occasional sharp
+glance of the city's defense guard makes you feel a bit uneasy.  Although
+you are up to nothing insidious, you nonetheless feel like you do not belong
+here.  The wisdom of remaining any longer is questionable.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25074
+D2
+~
+~
+0 0 25072
+S
+#25074
+Turret Street~
+~
+~
+Turret street intersects with Market street to the north, and it
+continues along the city wall to the south.  Armed members of the Methidoral
+army patrol this area regularly, looking for any possible infiltration
+attempt by enemies.  The guards give you a suspicious look but let you pass.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25063
+D2
+~
+~
+0 0 25073
+S
+#25075
+Kragar Street West~
+~
+~
+A suspicious man begins to approach you from behind.  Spinning around
+rapidly, you take him off-guard and he flees back into the shadows. 
+Clearly, this is not a very safe corner of Methidoral.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25076
+D3
+~
+~
+0 0 25048
+S
+#25076
+Kragar Street West~
+~
+~
+From the edge of the street, you hear a woman's voice calling at you. 
+She offers you companionship for the night in exchange for some money or
+food.  On close scrutiny, she appears to be very sick and very thin.  You
+wonder what happened that caused her to end up on the street as you continue
+on your way.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25200
+D1
+~
+~
+0 0 25077
+D3
+~
+~
+0 0 25075
+S
+#25077
+Kragar Street West~
+~
+~
+Merc's bar can be seen to the north of here.  Since it is the only bar in
+Methidoral, it has many customers despite the neighborhood.  Located
+conveniently close to the guards on Turret street, Merc pulls in a steady
+business.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25085
+D1
+~
+~
+0 0 25078
+D3
+~
+~
+0 0 25076
+S
+#25078
+Kragar Street West~
+~
+~
+To the east, you can see the intersection of Kragar and Main.  The
+area still looks rather shady, but not nearly as bad as it does to the west.
+The cityguard still patrol this area, but the crime is so bad they cannot
+keep up.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25013
+D3
+~
+~
+0 0 25077
+S
+#25079
+Kragar Street East~
+~
+~
+A cold breeze sends a chill up your spine and makes you look uneasily
+over your shoulder.  The street is dark and the people you pass by are
+unwholesome looking.  The cityguards do their best to keep down on the
+crime, but the occasional murder still slips through their grasp.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25080
+D3
+~
+~
+0 0 25013
+S
+#25080
+Kragar Street East~
+~
+~
+Customers coming out of the store to the north generally either look very
+embarassed or have a wicked gleam in their eyes.  The leather shop, although
+it does make practical equipment, also makes interesting toys for the
+sadistically inclined.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25086
+D1
+~
+~
+0 0 25081
+D3
+~
+~
+0 0 25079
+S
+#25081
+Kragar Street East~
+~
+~
+A gang of young punks eyes you from a back alley.  Seeing your build and
+your obvious lack of fear, they pass you by and look for a new target.  Like
+all large cities, Methidoral has its share of crime despite attempts to keep
+it safe.  The institution of an executioner is helping to crack down on many
+of the worst criminals, however.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25082
+D3
+~
+~
+0 0 25080
+S
+#25082
+Kragar Street East~
+~
+~
+A brightly painted building to the north looks out of place in this
+dismal section of town.  A solemn reminder of what this part of the town
+used to look like, its windows and doors are boarded up, and vagrants
+inhabit the building.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25037
+D3
+~
+~
+0 0 25081
+S
+#25083
+Entrance to the Western Turret~
+~
+~
+You stand before one of the massive lookout Turrets of Methidoral.  Made of
+solid stone pieced together carefully by the realm's finest masons, the
+Turrets serve a very important purpose for the city of Methidoral.  Not only do
+they provide a view from which to detect approaching invaders, they also
+provide an excellent vantage point from which to launch a counter-attack.  
+~
+0 536870912 0
+Rd     0
+D2
+~
+~
+0 0 25068
+S
+#25084
+Entrance to the Eastern Turret~
+~
+~
+You stand before one of the massive lookout Turrets of Methidoral.  Made of
+solid stone pieced together carefully by the realm's finest masons, the
+Turrets serve a very important purpose for the city of Methidoral.  Not only do
+they provide a view from which to detect approaching invaders, they also
+provide an excellent vantage point from which to launch a counter-attack.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 25071
+S
+#25085
+Uuk's Old Time Tavern~
+~
+~
+You are standing in a smokey tavern.  There are great wooden benches and
+tables filling the room.  Upon the tables you see large tankards of ale and
+beer.  Uuk is well known for his beverages.  
+~
+0 8406020 0
+Rd     0
+D2
+~
+~
+0 0 25077
+S
+#25086
+Hortus the Leather Worker~
+~
+~
+This shop smells strongly of freshly tanned hides.  The leather worker
+looks up at you briefly, then continues on with his work.  Various pieces of
+finished armor hang on the walls, as well as interesting-looking items whose
+purpose you can only guess.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 25080
+S
+#25087
+Sansibar's Magic Emporium~
+~
+~
+A horrendous smell assaults your nostrils as you enter Sansibar's Magic
+Emporium.  The counters in this shop are filled with potions and pills, and
+in the back of the shop you can see a complete laboratory.  Something black
+and viscous is bulbbing in a distillation apparatus back there, and you
+guess that this is where the hideous smell is coming from.  
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 25041
+S
+#25088
+Gunthar's Armoury~
+~
+~
+The walls of Gunthar's Armoury are covered with pieces of armor for every
+part of the body.  The styles are varied, as Gunthar accepts trade-ins for
+purchase of new armor.  The armor which he gets for trade is either
+refurbished and sold, or it is melted down to use in new pieces of armor. 
+The quality of the armor is rumored to be the best in the realm, but this
+quality comes at a price.  
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 25042
+S
+#25089
+Merf's Bakery~
+~
+~
+The comforting smell of bread baking greets you as you walk into this
+building.  All manner of pastries and breads fill racks upon racks in this
+store.  Everything is bright and cheery, and the place is kept spotlessly
+clean.  Frem beams a smile at you as he places another tray of pastries into
+the brick oven.  
+~
+0 1073742848 0
+Rd     0
+D3
+~
+~
+0 0 25030
+S
+#25090
+General Store~
+~
+~
+The Methidoral general store offers goods necessary for the well-prepared
+adventurer.  Stocks of dried meat, light sources, and storage containers are
+just the beginning of the list of items carried here.  The prices are
+reasonable, and the quality of the equipment is good.  Although you could
+find the items for less money elsewhere, you would not dare trust the
+average street vendor's items.  The quality of equipment is a matter of life
+or death.  
+~
+0 1024 0
+Rd     0
+D3
+~
+~
+0 0 25031
+S
+#25091
+Furniture Shop~
+~
+~
+The furniture shop has a wide variety of furnishings for the average
+homemaker.  A nice table and chair set made of cherry is just one example of
+the fine craftsmanship which goes into these pieces.  
+~
+0 134480900 0
+Rd     0
+D2
+~
+~
+0 0 25057
+S
+#25092
+Ursus' Weapon Smithy~
+~
+~
+As you enter this store, you are immediately astonihed by the large
+number and variety of weapons hanging on the walls.  More than that, though,
+you are taken aback by the incredible quality and workmanship exhibited in
+these weapons.  Ursus, who you can see working the forge in the back of the
+store, has impeccable taste in weapons.  He is willing to take weapons in
+trade, but they must be of exceptional make, or he melts them down for raw
+materials.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 25058
+S
+#25093
+Heidi's Jewelry~
+~
+~
+Your eyes gleam and your fingers twitch as you enter this store.  In vast
+glass cases, every piece of jewelry imaginable glimmers under the bright
+lamplight.  Glimmering most of all, however, is the jeweler.  Her business
+turns a handsome penny, and she herself is very beautiful.  The thought of
+stealing a small trinket quickly flees your mind as you take one look at the
+stocky bodyguards.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 25059
+S
+#25094
+Santiago's Scribe Shop~
+~
+~
+The smells of ink and old parchment assail your nostrils as you enter
+this store.  Varied scrolls are on display in the shop, and each appear to
+be in a different magical language.  In order to stay in business, the
+scrolls are specially treated to disappear once they have been recited.  As
+a result, the wise adventurer should buy multiple copies or risk being
+hopelessly lost or torn to bits by vicious creatures.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 25060
+S
+#25095
+Doren's Emporium~
+~
+~
+Doren's Emporium is arguably the best magic store in all the realm.  A
+powerful mage and even more powerful merchant, Doren's prices are steep, but
+her goods are high quality.  If you are looking for a hex or a powerful
+magical aid, you have come to the right place.  Doren herself comes to the
+counter to greet you and display her wares.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 25061
+S
+#25096
+Juttey's Bridal Shoppe~
+~
+~
+Wedding gowns in all styles and shades of white can be seen displayed on
+manniquens throughout the shop.  Pretty veils and other accessories are also
+on display, and a variety of gifts for the betrothed couple are available
+for purchase.  Juttey appears from behind the counter carrying a tape
+measure and a mouth full of pins, ready to make alterations to any dress in
+the store.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 25062
+S
+#25097
+Locust's Thieving Utilities~
+~
+~
+Locust's thieving supplies has items to offer for the novice burglar as
+well as the most skilled thief.  Keys, lockpicks, and other useful items
+fill the shelves of this store.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 25063
+S
+#25098
+Nevir's Clergy Utilities~
+~
+~
+Nevir's clerical supply store has every holy item imaginable.  Totems
+containing spirits of the dead, and holy water are just a few of the many
+items which are available for purchase.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 25064
+S
+#25099
+Methidoral City Vault~
+~
+~
+You are standing in a large metallic room.  This is where the citizens of
+Methidoral may do all of their financial transactions.  The room is glowing
+with a faint blue protective aura, keeping all of the money safe and secure.
+~
+0 33792 0
+Rd     0
+D0
+~
+~
+0 0 25060
+S
+#25100
+Gabriel's Rubber Room.~
+~
+~
+You're standing in what seems to be a room covered completely
+in rubber.  Kinky, huh.  There are garish paintings depicting
+and barney videos.  On one wall, you notice a picture of a 
+gigantically disgusting man, subtitled only "Thalador".  Whoever
+got close eough to paint that horrendous monster was a brave
+soul, you think to yourself.  Other than a few whips and chains
+in the corner, this room is otherwise quite normal.
+~
+0 1028 0
+Rd     0
+S
+#25101
+Engraving Shoppe~
+~
+~
+&wMassive steel doors have been propped open, allowing steam and stuffy,
+hot air to escape into the Methidoral streets.  Various tools line the
+walls, but none of them really appear to have taken much use.  An ivory
+plaque with the name "Terawyn" on it hangs on one wall.  
+~
+0 12 0
+Rd     0
+S
+#25115
+Pet Shop~
+~
+~
+As you enter this store, various animal smells come to your attention. 
+The little animals in their tiny cages perk up as you walk by them, and the
+pathetic begging looks in their eyes tug at your heart.  Enough food and
+water is provided, and their cages are kept clean, but you feel sorry for
+them nonetheless.  A hawk screeches at you in defiance, and a little kitten
+mews for attention.  The bored-looking storekeeper watches these
+interactions with disinterest.  
+~
+0 5120 0
+Rd     0
+D3
+~
+~
+0 0 25054
+S
+#25116
+Where the pets are~
+~
+~
+These pets are waiting to be sold in the Methidoral pet shop.
+~
+0 132108 0
+Rd     0
+S
+#25117
+Mercenary Guild~
+~
+~
+The famed Mercenary's Guild of Methidoral has able men and women of all
+classes and races to rent as companions on dangerous adventures.  The cost
+is not cheap, but the service is well worth any cost.  These mercenaries are
+willing to lay down their lives for the person who rents their services. 
+They have little choice, for failing a client means a lifetime of indentured
+servitude for the Mercenary's Guild.  
+~
+0 5120 0
+Rd     0
+D1
+~
+~
+0 0 25045
+S
+#25118
+Where the mercenaries Are~
+~
+~
+The mercenaries of Methidoral are waiting here to be hired out to customers.
+~
+0 164878 0
+Rd     0
+S
+#25119
+Donation Room~
+~
+~
+As you enter, or rather swim into this room filled with an assortment of
+lost, or rather forgotten, goods, you can't help but notice a man covered in
+dust, and nearly asleep on a pile of junk.  All around you a fair variety of
+lost items have been placed, in no particular order, which only leads to the
+feeling you are trapped in a dump of some sort.  
+~
+0 132108 0
+Rd     0
+D1
+~
+~
+0 0 25000
+S
+#25120
+Note Room~
+~
+~
+As you enter this room, you begin to feel rather scholarly.  The room has
+an air of the finest intellects around, and you cannot help but get caught
+up in the nostalgia.  A huge note board covers the wall.  It is remarkably
+quiet in here.  
+~
+0 8569868 0
+Rd     0
+D3
+~
+~
+0 0 25000
+S
+#25121
+A Barren Path~
+~
+~
+You are just inside the rusty gate. The land to the north looks barren and
+desolate. A chilling wind blows from the hills nearby. To the south are the
+familiar buildings of Methidoral.
+The barren path continues eastwards along the city walls...
+~
+0 4 11
+Rd     0
+D0
+~
+~
+0 0 17809
+D2
+~
+Gate~
+3 0 25025
+S
+#25122
+Outside the Northern Gates~
+~
+~
+As you step out this northern gate, you notice immediately that this is
+going to be a tough trip.  This area appears to be well travelled, yet
+deserted at the same time.  It suddenly comes to you that though the path is
+well marked, you don't think that many of the travellers have come back this
+way.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 17809
+D2
+~
+~
+3 0 25016
+S
+#25123
+Igor's Smithy~
+~
+~
+Igor's Smithy is swelteringly hot.  Sparks fly as Igor pounds out metal
+on an anvil.  His sweat-soaked body ripples with muscles, and he looks up as
+you walk in.  Igor's prices are reasonable, and it is very much more
+affordable to fix an item than to risk life and limb in replacing a broken
+item.  
+~
+0 67109888 0
+Rd     0
+D0
+~
+~
+0 0 25061
+S
+#25124
+Quest Central~
+~
+~
+You enter a rather comfortable feeling room.  Several large sofas lie
+against the walls, and a large archway dominates the northern wall.  A
+massive stone statue sits on the southeast corner.  The only exit is through
+the archway to the north.  
+~
+0 132108 0
+Rd     0
+D0
+~
+~
+0 0 25057
+S
+#25125
+Path outside the Gate~
+~
+~
+You have entered a small path outside the southwest gate.  The path makes
+an immediate turn to the south here, where you can see some kind of booth. 
+The walls of Methidoral lie to the east.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 0
+S
+#25126
+Hallway of Clans~
+~
+~
+You have entered into the fabled hallway of clans.  All around
+you are relics of history and glory.  Statues of the warriors of
+old watch you, wondering if perhaps you will join their ranks 
+among the walking legends.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25134
+D2
+~
+~
+0 0 25127
+S
+#25127
+Entrance to Ragnarok HQ~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25126
+D2
+~
+~
+0 0 25128
+S
+#25128
+Entrance to Cabal HQ~
+~
+~
+Deep in the desert city of Bassorah in the mystical land of Arabia, the
+clan Cabal was formed by honourable fighters and spellcasters who know the
+meaning of the word honour and live, fight and die by the word.  Together
+they fight for justice and what is truth in this microcosm of despair and
+darkness to seek out light and enlightenment.  
+ 
+Be us... Join us as one of the many fragments of light to colour this
+existence in the plane of eternity.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25127
+D2
+~
+~
+0 0 25129
+S
+#25129
+Entrance to Armageddon HQ~
+~
+~
+In these dark times of the earth, when evil infests the land, when
+goodness is exchanged for gold, and when innocence is traded for tears, the
+angels cometh.  
+ 
+The time has come for purification, and rebirth in the name of the Gods.
+Time for a resurrection.  Time for the Armageddon.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25128
+D2
+~
+~
+0 0 25131
+S
+#25130
+Entrance to Legion HQ~
+~
+~
+Long ages has the Dreadlord slumbered.  But now he is stirring again, His
+power stirring again, his power building to new heights, dimming the very
+sun, waking legends to walk the land.  Raising an army of ruthless,
+sadistic, adept killers to smite the unworthy foes.  They who would stand in
+His righteous path shall fall.  With the completion of their blessed city,
+he invites all people who are worthy to join his cause.  With the army of
+Legion, he will rule in righteous tyranny and bring prosperity to the land. 
+ 
+Join the cause, the only cause.
+ 
+Clan Motto: We Are Right!
+~
+0 4 0
+Rd     0
+S
+#25131
+Entrance to Dwarf Militia HQ~
+~
+~
+Since the beginning of time, the dwarves have waited, and watched as the
+other races squandered their resources and talents.  The decision has been
+made that now is the time to take action.  No longer will the dwarves be
+content to wait for the other races to reactify their wasteful ways, the
+dwarves have surfaced, and are going to fix the situation.  The Dwarven
+Militia is the lead force of the dwarves, and is open to any dwarf, and
+anyone who has the attitude of a dwarf.  Also, it is required that all
+members of the Dwarven Militia enjoy a good dwarven mead.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25129
+D2
+~
+~
+0 0 25132
+S
+#25132
+Entrance to Doom HQ~
+~
+~
+Motto: Ave gratia plena dominus tecum.
+ 
+We are the Children of Doom.
+Called forth to defend the Realm from Evil,
+And rid he land of pestilence and tyranny.
+The Disciples of Doom seek the truth and justice in all.
+We fight to end the suffering of the weak and innocent,
+And destroy all that is Dark at its very roots.
+ 
+We are the Saviors.  We are the Blessed.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25131
+D2
+~
+~
+0 0 25133
+D5
+~
+~
+0 0 0
+S
+#25133
+Entrance to Unholy Plague HQ~
+~
+~
+The members of Unholy Plague have payed 100 million gold for the entrance
+to be moved elsewhere.  It is located to the west of this city.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25132
+S
+#25134
+Entrance to Millenium X HQ~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 25135
+D2
+~
+~
+0 0 25126
+D4
+~
+~
+0 0 0
+S
+#25135
+Entrance to Clockwork HQ~
+~
+~
+TBA
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 25134
+S
+#25140
+Trial 1~
+~
+~
+You have entered the first of three trials.  Good luck and if you
+wish you may flee at any time...but know that you can not 
+re-enter the quest at any time
+~
+0 131076 0
+Rd     0
+S
+#25141
+Trial 2~
+~
+~
+The second trial awaits...good luck.
+~
+0 131076 0
+Rd     0
+S
+#25142
+Final Test~
+~
+~
+Holy shit...have fun :>
+~
+0 131076 0
+Rd     0
+S
+#25143
+A Passage~
+~
+~
+You've entered a narrow passage below the city of Methidoral.  From above
+you hear the sounds of the bustling city, muffled somewhat by the thick
+stone.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25144
+D4
+~
+~
+0 0 25001
+S
+#25144
+A Passage~
+~
+~
+The passage continues east and west between ancient stone walls.  Torches
+have been placed in the wall every few feet, and the fact that they are
+still burning indicates that this corridor is well-maintained.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25145
+D3
+~
+~
+0 0 25143
+S
+#25145
+A Passage~
+~
+~
+The passage contines to the east; the air seems to be lighter there.  The
+bustling sounds of the city are getting fainter at this point.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25146
+D3
+~
+~
+0 0 25144
+S
+#25146
+An Old Gate~
+~
+~
+The corridor ends here, at a small, but well-used gate to the east. 
+Though of ancient design, it seems to have been recently regilded in silver.
+Through it you see a grassy meadow.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 25147
+D3
+~
+~
+0 0 25145
+S
+#25147
+A Small Valley~
+~
+~
+You have emerged into a grassy valley.  To the west rise the massive
+stone walls of Methidoral.  You wonder why you've never seen this place
+before, then realize that the mountains block it from the main roads that
+run to the city.  To the north is the beginning of a well-travelled stone
+highway.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2701
+D3
+~
+~
+0 0 25146
+S
+#25148
+Falling Down a Pit~
+~
+~
+Ahhhh!  Where on EARTH did this pit come from?  You scream in terror as
+the sides of the shaft streak past...  
+~
+0 33554432 0
+Rd     0
+D5
+~
+~
+0 0 25149
+S
+#25149
+The Bottom of the Pit~
+~
+~
+You have reached the bottom of the pit.  As you stand up and brush
+yourself up, you realize that you are ankle deep in snakes.  
+~
+0 4 0
+Rd     0
+D4
+~
+~
+0 0 25000
+S
+#25150
+Iolo's Bows~
+~
+~
+You enter a room that smells of freshly cut wood.  Bows of all shapes and
+sizes line the walls, in addition to a rather large selection of arrows. 
+The only exit is through the archway to the north.  
+~
+0 132108 0
+Rd     0
+D0
+~
+~
+0 0 25059
+S
+#25151
+Methidoral Tannery~
+~
+~
+Hides of all types hang on racks drying out in this section of town.  The
+population is quite sparse.  The smell of the unguents and agents used in
+the tanning of leather keeps most people away.  If you are skilled at
+leather working, you may try to create your own piece of armor here.  
+~
+0 1044 0
+Rd     0
+D0
+~
+~
+0 0 25062
+S
+#25200
+PKill School Registration~
+~
+~
+You find yourself in a richly decorated building.  Young aspiring
+pkillers from around the MUD flock to Methidoral and this very building in
+hopes that they will be allowed to train with the best.  In the center of
+the room is a large wooden desk.  Seated behind the desk is thin-waisted
+extremely attractive young lady.  She directs you to the &Rregistration
+board&w over to your right.  
+~
+0 394252 0
+Rd     0
+D2
+~
+~
+0 0 25076
+S
+#0
+
+
+
+#SPECIALS
+M 25000 spec_healer
+M 25001 spec_executioner
+M 25015 spec_drunk
+M 25024 spec_cast_mage
+M 25026 spec_cast_adept
+M 25027 spec_guard
+M 25028 spec_guard
+M 25031 spec_thief
+M 25035 spec_janitor
+M 25036 spec_fido
+M 25039 spec_cast_mage
+M 25046 spec_questmaster
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 25000 1 25000
+O 0 25001 0 25000
+O 0 25100 0 25000
+O 0 25065 0 25000
+M 0 25001 1 25001
+E 0 25000 0 20
+E 0 25000 0 21
+O 0 25198 0 25001
+O 0 25200 0 25002
+O 0 25002 0 25002
+O 0 25066 0 25002
+M 0 25027 8 25007
+E 0 25003 0 6
+E 0 25004 0 5
+E 0 25005 0 11
+E 0 25006 0 20
+M 0 25039 3 25010
+E 0 25013 0 13
+E 0 25014 0 3
+E 0 25015 0 5
+E 0 25012 0 12
+E 0 25016 0 22
+M 0 25030 2 25014
+E 0 25003 0 6
+E 0 25004 0 5
+E 0 25005 0 11
+E 0 25006 0 20
+M 0 25028 2 25015
+E 0 25003 0 6
+E 0 25004 0 5
+E 0 25005 0 11
+E 0 25006 0 20
+M 0 25029 2 25026
+E 0 25003 0 6
+E 0 25004 0 5
+E 0 25005 0 11
+E 0 25006 0 20
+M 0 25032 4 25027
+M 0 25031 4 25034
+E 0 25007 0 11
+E 0 25008 0 5
+E 0 25009 0 20
+E 0 25010 0 6
+M 0 25036 3 25035
+M 0 25032 4 25038
+M 0 25037 6 25041
+M 0 25033 3 25044
+E 0 25011 0 16
+E 0 25007 0 11
+E 0 25008 0 5
+E 0 25012 0 12
+M 0 25040 3 25046
+E 0 25018 0 20
+E 0 25017 0 14
+E 0 25012 0 12
+E 0 25010 0 6
+M 0 25036 2 25050
+M 0 25038 3 25078
+M 0 25043 3 25079
+E 0 25007 0 11
+G 0 25044 0
+E 0 25036 0 20
+M 0 25044 1 25080
+E 0 25049 0 19
+E 0 25049 0 18
+M 0 25034 2 25081
+E 0 25007 0 11
+E 0 25008 0 5
+E 0 25011 0 16
+E 0 25012 0 12
+M 0 25015 1 25085
+G 0 25044 0
+G 0 25045 0
+G 0 25046 0
+G 0 25047 0
+E 0 25046 0 22
+M 0 25016 1 25086
+G 0 25049 0
+M 0 25003 1 25087
+G 0 25021 0
+G 0 25022 0
+G 0 25057 0
+G 0 25020 0
+M 0 25004 1 25088
+G 0 25003 0
+G 0 25038 0
+G 0 25039 0
+G 0 25040 0
+G 0 25041 0
+G 0 25042 0
+G 0 25043 0
+M 0 25014 1 25089
+G 0 25026 0
+G 0 25027 0
+G 0 25028 0
+G 0 25029 0
+M 0 25013 1 25090
+G 0 25030 0
+G 0 25031 0
+G 0 25032 0
+G 0 25033 0
+G 0 25034 0
+M 0 25005 1 25091
+M 0 25006 1 25092
+G 0 25009 0
+G 0 25036 0
+G 0 25037 0
+M 0 25007 1 25093
+M 0 25008 1 25094
+G 0 25023 0
+G 0 25024 0
+G 0 25025 0
+G 0 25050 0
+M 0 25009 1 25095
+G 0 25016 0
+G 0 25035 0
+M 0 25010 1 25096
+G 0 25059 0
+G 0 25060 0
+G 0 25061 0
+G 0 25062 0
+G 0 25063 0
+G 0 25064 0
+M 0 25011 1 25097
+M 0 25012 1 25098
+G 0 25052 0
+O 0 25099 0 25099
+M 0 25099 1 25099
+O 0 25101 0 25101
+M 0 25017 1 25115
+M 0 25019 1 25116
+M 0 25020 1 25116
+M 0 25021 1 25116
+M 0 25022 1 25116
+M 0 25023 1 25116
+M 0 25018 1 25117
+M 0 25024 1 25118
+M 0 25025 1 25118
+M 0 25026 1 25118
+M 0 25041 1 25119
+O 0 25198 0 25120
+M 0 25042 1 25123
+M 0 25046 1 25124
+O 0 25058 0 25124
+O 0 25126 0 25126
+M 0 25149 1 25149
+M 0 25149 1 25149
+M 0 25149 1 25149
+M 0 25149 1 25149
+M 0 25149 1 25149
+M 0 25149 1 25149
+O 0 25058 0 25150
+M 0 25047 1 25150
+G 0 25067 0
+G 0 25068 0
+G 0 25069 0
+O 0 25199 0 25200
+M 0 25200 1 25200
+S
+
+
+
+#SHOPS
+25003 10 26 31 0 0 100 75 0 24
+25004 9 0 0 0 0 120 75 0 24
+25005 12 0 0 0 0 130 60 9 20
+25006 5 0 0 0 0 110 70 0 24
+25007 8 13 0 0 0 140 90 9 20
+25008 2 13 0 0 0 110 90 0 24
+25009 3 4 27 29 0 125 70 0 24
+25010 13 0 0 0 0 120 80 9 18
+25011 5 9 13 0 0 120 80 9 18
+25012 13 9 3 10 0 100 100 9 18
+25013 1 15 17 19 0 110 90 0 24
+25014 19 0 0 0 0 105 90 0 24
+25015 17 19 13 0 0 120 100 0 24
+25016 9 0 0 0 0 110 90 0 16
+25047 5 39 38 37 0 120 80 1 24
+0
+
+
+
+#$

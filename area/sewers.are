@@ -1,0 +1,2377 @@
+#AREADATA
+Name        { 5-35 } The Sewers~
+Builders    None~
+VNUMs       19700 19799
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Lucid~
+Llevel      0
+Ulevel      0
+Music       tortr.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#19701
+man toff toffsman~
+a Toffsman~
+A Toffsman stands here poking through the garbage
+~
+~
+69 512 0 0 0 250 S
+15 1 30 30 400 400d0+0 0d0+4
+150 0 0
+0 0 1
+0 0 0
+#19702
+large hairy sewer rat~
+a Large Hairy Sewer Rat~
+A Large Hairy Sewer Rat scurries at your feet
+~
+~
+97 512 0 0 0 -50 S
+7 1 14 14 160 160d0+0 0d0+1500
+70 0 0
+0 0 2
+0 0 0
+#19703
+black leathery bat~
+a Black Leathery Bat~
+A Black Leathery Bat swoops at your head.
+~
+~
+97 524800 0 0 0 -100 S
+5 1 10 10 105 105d0+0 0d0+1000
+50 0 0
+0 0 2
+0 0 0
+#19704
+slimy sewer slug~
+A Slimy Sewer Slug~
+A Slimy Sewer Slug slithers slowly near you
+~
+~
+65 512 0 0 0 0 S
+6 1 12 12 120 120d0+0 0d0+800
+60 0 0
+0 0 0
+0 0 0
+#19705
+hairy spider~
+a Hairy Spider~
+A Large Hairy Spider stands here looking at you
+~
+~
+3 512 0 0 0 0 S
+12 1 24 24 300 300d0+0 0d0+2000
+120 0 0
+0 0 2
+0 0 0
+#19706
+rolf dog boy leader~
+Rolf, the Dog Boy~
+Rolf, the Dog Boy, Leader of the Exhiles is here
+~
+~
+65 512 0 0 0 300 S
+25 1 50 50 1050 1050d0+0 0d0+10000
+250 0 0
+0 0 1
+0 0 0
+#19707
+polly bird girl~
+Polly, the Bird Girl~
+Polly, the Bird Girl eyes you nervously
+~
+~
+65 524800 0 0 0 300 S
+15 1 30 30 400 400d0+0 0d0+8000
+150 0 0
+0 0 2
+0 0 0
+#19708
+tony old tiger tigerman~
+Tony, the Old Tigerman~
+Tony, the Old Tigerman eyes you warily
+~
+~
+65 512 0 0 0 300 S
+22 1 44 44 1200 1200d0+0 0d0+9000
+220 0 0
+0 0 1
+0 0 0
+#19709
+andy insect insectman~
+Andy, the Insectman~
+Andy, the Insectman hovers near your head
+~
+~
+65 524800 0 0 0 300 S
+17 1 34 34 900 900d0+0 0d0+10000
+170 0 0
+0 0 1
+0 0 0
+#19710
+reba rat ratwoman~
+Reba, the Ratwoman~
+Reba, the Ratwoman stares at you with beady little eyes
+~
+~
+3 640 0 0 0 300 S
+30 1 60 60 30000 30000d0+0 0d0+9000
+300 0 0
+0 0 2
+2 0 0
+#19711
+sammy slug slugman~
+Sammy, the Slugman~
+Sammy, the Slugman is ready to sell you food
+~
+~
+3 640 0 0 0 300 S
+20 1 40 40 600 600d0+0 0d0+10000
+200 0 0
+0 0 1
+0 0 0
+#19712
+bandit leader~
+the Bandit Leader~
+The Bandit Leader watches you with contempt
+~
+~
+3 512 0 0 0 -250 S
+20 1 40 40 600 600d0+0 0d0+20000
+200 0 0
+0 0 1
+0 0 0
+#19713
+bandit sneaky ~
+the Bandit~
+A sneaky Bandit hides within the shadows
+~
+~
+65 98816 0 0 0 -250 S
+15 1 30 30 400 400d0+0 0d0+15000
+150 0 0
+0 0 1
+0 0 0
+#19714
+muscular thug~
+a Muscular Thug~
+A Muscular Thug keeps his eye on you
+~
+~
+65 512 0 0 0 -200 S
+18 1 36 36 500 500d0+0 0d0+15000
+180 0 0
+0 0 1
+0 0 0
+#19715
+old vampire grey haired gray~
+an Old Vampire~
+A Grey Haired Vampire hangs from the ceiling
+~
+~
+8195 524800 0 0 0 -100 S
+25 1 50 50 1050 1050d0+0 0d0+25000
+250 0 0
+0 0 1
+0 0 0
+#19716
+werewolf guardian were wolf~
+a Werewolf Guardian~
+A Werewolf Guardian stands watch over his master
+~
+~
+8227 512 0 0 0 -300 S
+22 1 44 44 1200 1200d0+0 0d0+0
+220 0 0
+0 0 1
+0 0 0
+#19717
+pale girl bright red sexy vampire~
+a Sexy Vampire~
+A pale girl with bright red lipstick stares at you longingly
+~
+~
+8257 524800 0 0 0 -100 S
+20 1 40 40 600 600d0+0 0d0+10000
+200 0 0
+0 0 2
+0 0 0
+#19718
+man man-sized worker ant~
+the Worker Ant~
+A Man-sized Worker Ant is busy at work
+~
+~
+65 512 0 0 0 150 S
+25 1 50 50 1050 1050d0+0 0d0+0
+250 0 0
+0 0 1
+0 0 0
+#19719
+man man-sized guardian ant~
+the Guardian Ant~
+A Man-sized Guardian Ant is going guard duty here
+~
+~
+65 512 0 0 0 100 S
+28 1 56 56 1400 1400d0+0 0d0+0
+280 0 0
+0 0 1
+0 0 0
+#19720
+ant queen~
+the Ant Queen~
+The Ant Queen stands about looking important
+~
+~
+3 512 0 0 0 200 S
+30 1 60 60 1500 1500d0+0 0d0+30000
+300 0 0
+0 0 2
+0 0 0
+#19721
+larvae mass writhing~
+the Larvae~
+A Writhing Mass of Larvae sits here
+~
+~
+3 512 0 0 0 0 S
+1 1 2 2 1 1d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#19722
+slimy green troll~
+the Slimy Green Troll~
+A Slimy Green Troll stands here
+~
+~
+3 512 0 0 0 -200 S
+33 1 66 66 1700 1700d0+0 0d0+33000
+330 0 0
+0 0 1
+0 0 0
+#19723
+energy guardian~
+the Energy Guardian~
+The Guardian to the Realm of Energy stands here
+~
+~
+99 67108924 0 0 0 0 S
+35 1 70 70 2000 2000d0+0 0d0+0
+350 0 0
+0 0 0
+0 0 0
+#19724
+black leach slithers~
+the Black Leach~
+A repulsive Black Leach slithers near you
+~
+~
+3 16777728 0 0 0 -50 S
+10 1 20 20 200 200d0+0 0d0+0
+100 0 0
+0 0 2
+0 0 0
+#19725
+cuddly baby rat~
+a Cuddly Baby Rat whines in fear~
+A cuddly baby rat whines in fear
+~
+~
+1 512 0 0 0 100 S
+5 1 10 10 50 50d0+0 0d0+2500
+50 0 0
+0 0 1
+0 0 0
+#19726
+mother rat squeals~
+the Mother Rat~
+A big fat Mother Rat squeals at your presence
+~
+~
+97 512 0 0 0 -100 S
+15 1 30 30 400 400d0+0 0d0+0
+150 0 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#19701
+toff pile~
+a pile of toff~
+A pile of toff lies here~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19702
+stick toff~
+a Toff Stick~
+A Toff Stick lies here~
+~
+5 0 0 0 0 8193 5
+100 100
+0~ 0~ 0~ 8~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#19703
+grimy pile assorted trinkets~
+assorted Trinkets~
+A Grimy Pile of Assorted Trinkets lie here~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19704
+shiny collar~
+a Shiny Collar~
+A Shiny Collar sits upon the ground~
+~
+9 0 0 0 0 5 25
+100 100
+0~ 0~ 0~ 0~
+2 248 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+#19705
+feathery mini skirt miniskirt~
+a Feathery Miniskirt~
+A Feathery Miniskirt lies here~
+~
+9 0 0 0 0 33 15
+100 100
+0~ 0~ 0~ 0~
+2 148 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 50
+#19706
+tiger skin vest~
+a Tiger Skin Vest~
+A Tiger Skin Vest lies here~
+~
+9 64 0 0 0 9 22
+100 100
+0~ 0~ 0~ 0~
+2 220 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+#19707
+antenna antennae~
+a pair of Antennae~
+A pair of Antennae lie here~
+~
+9 0 0 0 0 17 17
+100 100
+0~ 0~ 0~ 0~
+1 168 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+#19708
+dagger bone crafted carefully~
+a Carefully Crafted Bone Dagger~
+A Carefully Crafted Bone Dagger lies here~
+~
+5 0 0 0 0 8193 20
+100 100
+0~ 0~ 0~ 2~
+2 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#19709
+carefully crafted bone scalemail~
+a set of Carefully Crafted Bone Scalemail~
+A set of Carefully Crafted Bone Scalemail lies here~
+~
+9 0 0 0 0 9 22
+100 100
+0~ 0~ 0~ 0~
+25 220 0
+0 0
+reserved~
+0 0
+0 0 0
+#19710
+small torch~
+a small Torch~
+A small Torch lies here~
+~
+1 0 0 0 0 1 22
+100 100
+0~ 0~ 500~ 0~
+1 220 0
+0 0
+reserved~
+0 0
+0 0 0
+#19711
+bowl food scavenger stew~
+a bowl of Scavenger Stew~
+A bowl of Scavenger Stew lies here~
+~
+19 0 0 0 0 1 1
+100 100
+15~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#19712
+load bread ground insect~
+a loaf of Ground Insect Bread~
+A loaf of Ground Insect Bread lies here~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19713
+lethal rapier~
+a Lethal Rapier~
+A Letha Rapier lies here~
+~
+5 0 0 0 0 8193 20
+100 100
+0~ 0~ 0~ 11~
+2 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+18 4
+#19714
+concealing black mask~
+a Concealing Black Bandits's Mask ~
+A Concealing Black Bandits's Mask lies here~
+~
+9 0 0 0 0 65537 15
+100 100
+0~ 0~ 0~ 0~
+2 148 0
+5 0
+invis~
+1 1
+0 0 0
+#19715
+pile gold~
+a pile of gold~
+A pile of gold lies here~
+~
+20 0 0 0 0 1 1
+100 100
+25000~ 0~ 0~ 0~
+0 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#19716
+wooden chest~
+a Wooden Chest~
+A Wooden Chest lies here~
+~
+15 0 0 0 0 1 1
+100 100
+100~ 13~ 19717~ 0~
+150 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#19717
+small brass key~
+a Small Brass Key~
+A Small Brass Key lies here~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19718
+sturdy looking black blackjack jack~
+a Sturdy Looking Blackjack~
+A Sturdy Looking Blackjack lies here~
+~
+5 0 0 0 0 8193 18
+100 100
+0~ 0~ 0~ 7~
+5 180 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+19 3
+#19719
+long red black silk cape~
+a Long Red and Black Silk Cape~
+A Long Red and Black Silk Cape lies here~
+~
+9 0 0 0 0 5 25
+100 100
+0~ 0~ 0~ 0~
+3 248 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 25
+#19720
+ripped white pants~
+a pair of Ripped White Pants~
+A pair of Ripped White Pants lie here~
+~
+9 0 0 0 0 33 22
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19721
+scandalous silk teddy~
+a scandalous silk teddy~
+A Scandelous Silk Teddy lies here~
+~
+9 0 0 0 0 9 20
+100 100
+0~ 0~ 0~ 0~
+2 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#19722
+hard insectile shield~
+a Hard Insectile Shield~
+A Hard Insectile Shield lies here~
+~
+9 0 512 0 0 513 25
+100 100
+0~ 0~ 0~ 0~
+20 248 0
+0 0
+reserved~
+0 0
+0 0 0
+#19723
+pair hard insectile arm armplates~
+a pair of Hard Insectile Armplates~
+A pair of Hard Insectile Armplates lie here~
+~
+9 0 0 0 0 257 28
+100 100
+0~ 0~ 0~ 0~
+5 280 0
+0 0
+reserved~
+0 0
+0 0 0
+#19724
+ant queen sceptre~
+the Ant Queen's Sceptre~
+The Ant Queen's Sceptre lies here~
+~
+1 0 0 0 0 1 25
+100 100
+0~ 0~ -1~ 0~
+3 248 0
+5 0
+cure poison~
+5 5
+0 0 0
+#19725
+ant queen crown queen's~
+the Ant Queen's Crown~
+The Ant Queen's Crown sits here~
+~
+9 0 0 0 0 17 30
+100 100
+0~ 0~ 0~ 0~
+3 300 0
+0 0
+reserved~
+0 0
+0 0 0
+#19726
+ant queen queen's robe~
+the Ant Queen's Robe~
+The Ant Queen's Robe lies here~
+~
+9 0 0 0 0 9 30
+100 100
+0~ 0~ 0~ 0~
+2 300 0
+0 0
+reserved~
+0 0
+0 0 0
+#19727
+tear space time space-time continuem~
+a Tear in the Space-Time Continuem~
+A Tear in the Space-Time Continuem spews forth energy ~
+~
+29 1 0 0 0 0 1
+100 100
+19722~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19728
+tear space time space-time continuem~
+a Tear in the Space-Time Continuem~
+A Tear in the Space-Time Continuem spews forth energy~
+~
+29 65 0 0 0 0 1
+100 100
+19767~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19729
+nimbus energy sparkeling~
+a Nimbus of Sparkeling Energy~
+A Nimbus of Sparkeling Energy lies here~
+~
+9 1 0 0 0 32769 35
+100 100
+0~ 0~ 0~ 0~
+1 348 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 35
+#19730
+nimbus sparkeling energy~
+a Nimbus of Sparkeling Energy~
+A Nimbus of Sparkeling Energy lies here~
+~
+9 1 0 0 0 9 35
+100 100
+0~ 0~ 0~ 0~
+1 348 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+#19731
+sewer water~
+the sewer water~
+The sewer water flows around you.~
+~
+17 0 0 0 0 0 0
+100 100
+1000000~ 1000000~ 9~ 1~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19732
+throne~
+the Ant Queen's throne~
+The Ant Queen's throne sits here~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#19733
+pair sharp troll troll's claw claw~
+a pair of Sharp Troll's Claws~
+A pair of Sharp Troll's Claws lie here~
+~
+9 0 128 0 0 129 33
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 2
+#19734
+shiny gold ring~
+a Shiny Gold Ring~
+A Shiny Gold Ring lies here~
+~
+8 0 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+ring~
+You look at the ring, expecting some magical properties of invisibily,
+but to your amazement, find none.  Hey!  This ain't Tolkein!
+~
+E
+shiny~
+You look at the ring, expecting some magical properties of invisibily,
+but to your amazement, find none.  Hey!  This ain't Tolkein!  
+~
+#0
+
+
+
+#ROOMDATA
+#19700
+Lucid's Standing Spot~
+~
+~
+This is where Lucid stood when he created the Bethaven City Sewers!
+~
+0 4 0
+Rd     0
+S
+#19701
+In the Methidoral Fountain~
+~
+~
+You are wading in knee deep water inside the fountain.  Water is constantly 
+trickling onto you from the fountain, looking down you can see a small pipe 
+leading the water away into the Sewers of Methidoral. 
+~
+0 13 0
+Rd     0
+D4
+~
+~
+0 0 25002
+D5
+~
+~
+0 0 19702
+S
+#19702
+In the Methidoral Drain~
+~
+~
+You are clinging to a ladder which is fastened to the side of a drainage
+tunnel.  Water is falling over you, and down into the darkness below.  This
+is the main drain, catching all of the spillage from the fountain.
+~
+0 9 0
+Rd     0
+D4
+~
+~
+0 0 19701
+D5
+~
+~
+0 0 19703
+S
+#19703
+The Grand Conjunction of Drainage Pipes~
+~
+~
+You are clinging to a ladder which is fastened to the side of the wall, all 
+around you are small pipes which are draining water from the streets of
+Methidoral.  Some of the pipes look large enough to crawl into.
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 19711
+D4
+~
+~
+0 0 19702
+D5
+~
+~
+0 0 19709
+S
+#19704
+Directly Below the Hierophant~
+~
+~
+You are standing in knee deep water, just like the rest of the sewer, but
+the walls here appear to be glowing with a strange light.  Using your
+directional sence, you guess yourself to be directly under the hierophant.. 
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19705
+D2
+~
+~
+0 0 19706
+S
+#19705
+Swirrelling Whirlpool~
+~
+~
+The water here flows down into a large pipe.  The pipe seems to be large
+enough for you to journey down into it if you wish.  You begin to wonder
+where all of this water could possibly be draining to.
+~
+0 9 0
+Rd     0
+D3
+~
+~
+0 0 19704
+D5
+~
+~
+0 0 19714
+S
+#19706
+Large Drainage Tunnel~
+~
+~
+You are standing in knee deep water.  The water appears to bend around a
+corner to the north, you begin to step a little more carefully.  It would be
+sure death if you took a wrong step, and got stuck half underwater in one of
+these pipes.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19704
+D2
+~
+~
+0 0 19707
+S
+#19707
+Large Drainage Tunnel~
+~
+~
+You are standing in knee deep water.  You look upon the tunnel walls, and
+notice that craftsman must have spent many hours creating these pipes.  So
+much water flows through here daily, that you shudder to think what would
+happen to Methidoral if these pipes were somehow clogged.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19706
+D2
+~
+~
+0 0 19708
+S
+#19708
+Large Drainage Tunnel~
+~
+~
+You are standing in a knee deep water.  The water seems to be flowing quickly
+to the north.  To the east, a tunnel slopes upward and out of sight.  There
+is no water coming through it, it must be the tunnel which drains the poor
+quarter of Methidoral, it clogged, and nobody is bothering to fix it.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19707
+D2
+~
+~
+0 0 19709
+D4
+~
+~
+0 0 19770
+S
+#19709
+Large Drainage Tunnel~
+~
+~
+You are standing in a large drainage tunnel.  Large amounts of garbage strewn
+water is splashing about you, flowing from the tunnel above.  The sloping
+tunnel carries the water to the north, but a small pool seems to have
+gathered to the east of you.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19708
+D3
+~
+~
+0 0 19710
+D4
+~
+~
+0 0 19703
+S
+#19710
+Stagnet Pool of Sewerwater~
+~
+~
+You are standing in chest deep water.  You try not to breath, as the stench
+is nearly unbarable.  Brown squishy things float by you, it seems that these
+tunnels also serve as a desposal system for human waste as well.
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 19709
+S
+#19711
+Very Large Street Drainage Pipe~
+~
+~
+You are standing in a water up to your knees.  A constant trickle of water
+is coming from the west.  In the water you can see bits of garbage, called
+toff, floating in from the streets.
+~
+0 13 0
+Rd     0
+D1
+~
+~
+0 0 19712
+D3
+~
+~
+0 0 19703
+S
+#19712
+A Large Toff Filled Pipe~
+~
+~
+You are standing in a water up to your knees.  The garbage toff floating
+through the waters look as though it has been broken apart.  Many of
+Bethavens less fortunate citizens come down here to sort through the garbage
+which has been washed from the streets above.
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 19713
+D3
+~
+~
+0 0 19711
+S
+#19713
+Toffsman's Sleeping Pallet~
+~
+~
+You are standing on a small dry ledge.  Water is falling through a street
+drain above you.  You can hear the occasion voice of a passerby as they walk
+over the grating.  There is a small sleeping pallet on the ground.  It seems
+that the toffsman has made a small home for himself here.
+~
+0 9 0
+Rd     0
+D3
+~
+~
+0 0 19712
+S
+#19714
+In the Midst of Constantly Splashing Water~
+~
+~
+You are standing under a waterfall of sewer water.  The water falls from the
+pipe above you, and drains to the east.  Lumps of garbage and animal waste
+splatter upon your head and shoulders, you try to keep your mouth closed as
+much as you can.
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 19715
+D4
+~
+~
+0 0 19705
+S
+#19715
+Bend in the Flowing Sewerwater~
+~
+~
+You are standing in thigh deep water.  The water appears to be moving to the
+south, but it appears that a stagnet pool of water has accumulated to the
+north.  Above you, and to the east is another tunnel.  You think that you
+could probably jump up and climb into it.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19717
+D1
+~
+~
+0 0 19768
+D2
+~
+~
+0 0 19716
+D3
+~
+~
+0 0 19714
+S
+#19716
+In the Widst of a Rapidly Spinning Whirlpool~
+~
+~
+You are standing in a swirrelling mass of murky water.  There is a large
+drain below you where the water is going.  The drain is significantly smaller
+than the one that you are currently standing in.  Again you become nervous
+of the enclosed space.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19715
+D5
+~
+~
+0 0 19724
+S
+#19717
+Large and Stagnet Tunnel of Water~
+~
+~
+You are standing in a large pool of water.  The water has a yellowish head
+upon it, and slimy things brush against your legs.  The smell here is nearly
+unbarable, and floating on the water is the corpse of a dead cat.
+~
+0 13 0
+Rd     0
+D0
+~
+~
+0 0 19718
+D2
+~
+~
+0 0 19715
+S
+#19718
+Large and Stagnet Pool of Water~
+~
+~
+You are standing chest deep in a large pool of water.  The water has a yellow
+foam upon it that smells terrible.  Floating in the water are fish bones, and
+other garbage.  Looking up, you see a rung of ladders leading out of the pool.
+~
+0 13 0
+Rd     0
+D2
+~
+~
+0 0 19717
+D4
+~
+~
+0 0 19719
+S
+#19719
+Entrance to a Bandits Lair~
+~
+~
+You are standing at the top of a small ladder.  Below you smells of the
+sewer waft upwards.  There is a table and chairs sitting here, with a deck
+of cards upon it.  It would seem that this is a watchpost to the bandits
+hideout.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19720
+D5
+~
+~
+0 0 19718
+S
+#19720
+Sleeping Quarters for the Bandits~
+~
+~
+You are standing amongst a bunch of sleeping pallets.  They appear to be lice
+and vermin ridden.  This is where the bandits rest during the day, before
+going up to Bethaven to burglarize it's honest citizens.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19721
+D3
+~
+~
+0 0 19719
+S
+#19721
+Small Kitchen and Dining Area~
+~
+~
+You see before you a crude counter and a small blazing fire.  This is where
+the bandits fix there meals.  It appears that they have little need for
+cleaness, because there are dirty pots and plates scattered all about.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19722
+D2
+~
+~
+0 0 19720
+S
+#19722
+A Small and Cluttered Desk~
+~
+~
+You see a small desk, upon it is many papers.  This is where the bandit
+leader writes ransom notes and counts his booty.  To the north is a barred
+cell, that is where the theives hold any prisoners that they later ransom
+back to their families for large sums of money.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 19723
+D2
+~
+~
+0 0 19721
+S
+#19723
+Within the Holding Cell~
+~
+~
+You see that their is a small lice ridden pallet, and a mangy wooden chair
+in this room.  Upon the floor is a chamber pot, and a pewter pitcher full
+of murky water.  The bandits have little love for the people they hold for
+ransom, seeing them as a means to money, instead of human beings.
+~
+0 131081 0
+Rd     0
+D2
+~
+~
+3 0 19722
+S
+#19724
+Under a Waterfall of Murky Water~
+~
+~
+You are standing in water up to your chest.  You nervously see evidence of
+a rodent population.  Squeeling can be heard to the west of you, as though
+many rats are becoming excited by your presence. 
+~
+0 13 0
+Rd     0
+D3
+~
+~
+0 0 19725
+D4
+~
+~
+0 0 19716
+S
+#19725
+Within the Rat Infested Sewers~
+~
+~
+You are standing in water up to your chest.  You see rat dropping floating
+in the water with you.  Along the walls you can see many small normal size 
+rodents scurrying upon the scant ledges.  What worries you is the rumours of
+larger, man sized rats, that supposedly infest these pipes.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 19724
+D3
+~
+~
+0 0 19726
+S
+#19726
+Upon a Large Grate~
+~
+~
+You are standing in fast moving water.  The water is pouring into an easily
+accessable drain below you.  To your north is a widened ledge.  Looking
+carefully at the narrow outcropping, you notice that it appears as though
+the rock had been dug out, by sharp little claws.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19727
+D1
+~
+~
+0 0 19725
+D5
+~
+~
+0 0 19728
+S
+#19727
+Glowing Rat Warren~
+~
+~
+You are standing on a ledge, the ledge seems to have been carved out by many
+sharp little claws.  The walls are glowing with a strange and unnatural light,
+again you realize that this room is directly below the Great Oracle of
+Bethaven.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 19726
+S
+#19728
+Sloping and Splashing Tunnel~
+~
+~
+You are standing below a constant spray of water, the water is coming through
+a large grate above you.  You see that the water flows to the south, in a
+swift and sure manner.  Looking at the walls, you realize that these are the
+drain pipes of Old Methidoral.  The ones that existed before the Battle of the
+Enraged Gods.
+~
+0 13 0
+Rd     0
+D2
+~
+~
+0 0 19729
+D4
+~
+~
+0 0 19726
+S
+#19729
+In the Middle of the Old Sewer Tunnels~
+~
+~
+You are standing in a large cavern full of water.  You see that the walls
+are made from large blocks of granite and limestone.  These tunnels were
+dug before Old Methidoral was even made.  Although the tunnels above here are
+new, it seems that the workers were lazy in there digging and only connected
+the new pipes to these older ones.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19728
+D2
+~
+~
+0 0 19730
+S
+#19730
+Top of an Emptying Pipe~
+~
+~
+You are standing in a large and ancient pipe.  It is draining into an even
+larger pipe below.  You see that small rungs have been fastened into the
+sides of the wall to allow passage into the larger drain below.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19729
+D5
+~
+~
+0 0 19739
+S
+#19731
+Crude and Ancient Stairway~
+~
+~
+You are standing on a crudely made flight of stairs.  They rise out of the
+sewer water to the east, and form a small platform.  To the north is an old
+wooden door.  You notice that the hinges on the door seem well oiled, as
+though someone, or something, still uses it.
+~
+0 13 0
+Rd     0
+D0
+~
+~
+3 0 19737
+D1
+~
+~
+0 0 19739
+S
+#19732
+The Lounge of the Misfits~
+~
+~
+You are standing in a large room, there are chairs and couches scattered
+about.  This is where the misfits come to enjoy the company of each other.
+Having been outcasted from society, they find the need for social gathering
+very stong.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 19734
+S
+#19733
+The Misfits General Store~
+~
+~
+You are standing in a small hut, there are tables and cupboards displaying
+common day items.  It appears that the propetier of this store has made the
+items of this store himself, from refuse found in the sewers.
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 19734
+S
+#19734
+Market Square of the Town of Misfits~
+~
+~
+You are standing in a large plaza, which could only be taken to be a large
+market place.  There are many vendors hawking there wares, which all seem to
+be made from things scavenged in the sewers.  There are only two permanent
+stores in this town, and they are to the east and west.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19732
+D1
+~
+~
+0 0 19735
+D2
+~
+~
+0 0 19737
+D3
+~
+~
+0 0 19733
+S
+#19735
+The Misfits Bakery~
+~
+~
+You are standing in a hot little hut.  The smells in this room smell good,
+but looking at the wares that the strange creature has to offer, you wonder
+how this could be so.  For even the food that the misfits eat, is refuse
+from the sewers around them.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 19734
+S
+#19736
+Living Quarters for the Outcasts~
+~
+~
+You are standing in the midst of a strange assortment of sleeping pallets,
+there appears to be pearches on the wall, and large cat boxs on the floor.
+The citizens of this small city are very strange and exotic indeed.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19737
+S
+#19737
+Entrance to the Outcasts of Old Bethaven~
+~
+~
+You are standing in a large open cavern.  You appear to be in a small village,
+there are torches all about casting light upon your surroundings.  This is
+where those who are misfits of Bethaven come to live.  Passersby watch you
+nervously, for strangers are very uncommon.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19734
+D1
+~
+~
+0 0 19738
+D2
+~
+~
+3 0 19731
+D3
+~
+~
+0 0 19736
+S
+#19738
+Living Quarters for the Outcasts~
+~
+~
+You are standing among a large number of bunks.  There are sleeping pallets
+and beds all over the floor, as well as strange coffin like boxes for those
+who prefer to sleep in enclosed areas.  This town of misfits caters to the
+needs of even the most exotic races.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 19737
+S
+#19739
+Under the Waterfall of an Emptying Pipe~
+~
+~
+You are standing in the midst of a splashing waterfall.  Large amounts of 
+water splash about you from the pipes above.  To the west appears to be
+steps leading up, and out of the water.  To the east the water flows onward.
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 19740
+D3
+~
+~
+0 0 19731
+D4
+~
+~
+0 0 19730
+S
+#19740
+At the Top of a Funnel of Water~
+~
+~
+You are standing in water of to your waist.  There is a grate below you, and
+the water is swirrelling into the darkness below.  The grate is quite large,
+since so much water passes through here daily.
+~
+0 9 0
+Rd     0
+D3
+~
+~
+0 0 19739
+D5
+~
+~
+0 0 19741
+S
+#19741
+Under the Constant Spray of Water~
+~
+~
+You are standing under a waterfall of sewer water.  You see that the water
+has become very murky, from flowing through these dirty tunnels.  The current
+flows to the south, and to the north a strange pile of stones is piled.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19743
+D2
+~
+~
+0 0 19742
+D4
+~
+~
+0 0 19740
+S
+#19742
+Standing Within a Rapidly Swirrelling Whirlpool~
+~
+~
+You are standing over a large grate.  The sewer water is pouring into the
+tunnels below at a rapid speed.  You have to fight to keep your foot on the
+fast moving waters.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19741
+D5
+~
+~
+0 0 19748
+S
+#19743
+Upon the Ruins of a Mortared Wall~
+~
+~
+You are standing on the ruins of a wall.  Looking at the sides of the tunnel
+you determine that the wall was made from a different material as the rest
+of the sewers.  In it's prime, you guess that this ruined wall would have
+disguised the passageway that leads to the west.
+~
+0 9 0
+Rd     0
+D2
+~
+~
+0 0 19741
+D3
+~
+~
+0 0 19744
+S
+#19744
+Within a Formerly Hidden Passage~
+~
+~
+You are standing in an old passageway.  Looking to the north you see a great
+door with many old and faded magics upon it.  You wonder what sort of
+creature would go so far out of it's way to hide itself into these sewers.
+~
+0 13 0
+Rd     0
+D0
+~
+~
+3 0 19745
+D1
+~
+~
+0 0 19743
+S
+#19745
+Standing in an Ancient Vampires Hideout~
+~
+~
+You are standing in a dark cavern.  Judging from the smell, you would guess
+that undead have made this their home.  You remember pieces of history saying
+that in the past, vampires were outcast from society.  This may have once
+been the hideout for one such vampire.
+~
+0 9 0
+Rd     0
+D2
+~
+~
+3 0 19744
+D3
+~
+~
+0 0 19746
+S
+#19746
+Standing Before a Great Crypt~
+~
+~
+You are standing in an old hideout made by one of the very first vampires to
+enter the storm.  To the north stands a great coffin, so large that it could
+only rightfully be called a crypt.  You wonder as to the hate and racism that
+Old Bethaven had, to force such creatures so far into the bowels of the earth.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+3 0 19747
+D1
+~
+~
+0 0 19745
+S
+#19747
+Standing Within A Great Crypt~
+~
+~
+You are standing in great crypt.  You notice that the walls are glowing with
+supernatural powers.  Again, you realize, that this cave would be directly
+under the Bethaven Oracle.  You see signs that indicate that there has been
+recent movement in this cave.
+~
+0 8 0
+Rd     0
+D2
+~
+~
+3 0 19746
+S
+#19748
+Standing Before a Large Crevice~
+~
+~
+You are standing under a waterfall of sewer water, the water pours south,
+and down into a great crack in the floor.  Looking across the crack you can
+see the continuation of the pipe.
+~
+0 9 0
+Rd     0
+D2
+~
+~
+0 0 19749
+D4
+~
+~
+0 0 19742
+S
+#19749
+Floating Above the Large Crack~
+~
+~
+You are assailed by vertigo as you look down into the gaping maw of a large
+open fissure in the rock.  You are unable to make out anything in the gloom
+below because of the falling water blocking your vision.
+~
+0 13 9
+Rd     0
+D0
+~
+~
+0 0 19748
+D2
+~
+~
+0 0 19750
+D5
+~
+~
+0 0 19759
+S
+#19750
+In the Collapsed Tunnel of the Old Sewers~
+~
+~
+You are standing in the dry collapsed tunnel of the old sewers.  You see that
+the sewer was  originally intended to continue south towards some unknown
+destination, but whatever caused the large crack to the north to appear, must
+have caved in the ceiling of this tunnel as well.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 19749
+S
+#19751
+In the Living Quarters of the Slimy Green Troll~
+~
+~
+You are standing in a small hut, this is apparently where the Slimy Green
+Troll lives.  There is a crude table, chairs, and sleeping pallet on the
+ground.  You see fish bones scattered about, the owner of the house isn't
+a very tidy creature.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 19754
+D5
+~
+Floorboard~
+3 0 19765
+S
+#19752
+Before a Large Wall in an Underground Lake~
+~
+~
+You are in the deep and murky waters of a subterrainean lake.  To the
+north the end of the cavern can be seen.  The cavern walls reach high above
+you and meet at the ceiling that is out of sight.  You ponder the fact that
+someday this cavern will be full, and Methidoral may be washed away.  Upon
+further inspection, you notice a crack in the black rocky wall.  Just wide
+enough for you to squeeze through...  
+~
+0 0 6
+Rd     0
+D0
+~
+~
+0 0 19773
+D2
+~
+~
+0 0 19753
+S
+#19753
+The North End of a Small Island in and Underground Lake~
+~
+~
+You are standing on the shore of a small rocky island.  The murky waters lie
+to the north of the island.  To the south, you can see a small hut with a
+thatched roof.  The island is bare of any organic matter.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19752
+D2
+~
+~
+0 0 19754
+S
+#19754
+In a Small Hut~
+~
+~
+You are standing in a small little hut.  The occupant of the hut is obviously
+not to worried about cleanliness, as there are fish bones scattered about
+the floor.  To the west you can see a small door.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19753
+D2
+~
+~
+0 0 19755
+D3
+~
+~
+3 0 19751
+S
+#19755
+On an Island in the Middle of a Subterrainean Lake~
+~
+~
+You are standing on a stone island.  The soil is bare of any vegetation due
+to the lack of light in the cavern.  Looking to the north, you can see a
+small hut with a thatched roof.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 19754
+D2
+~
+~
+0 0 19756
+S
+#19756
+On the Shore of a Small Island~
+~
+~
+You are standing on the rocky shore of a small island.  There is no organic
+matter of any type upon the island, this is due to the fact that the soil
+has never seen a drop of sunlight in it's life.
+~
+0 8 2
+Rd     0
+D0
+~
+~
+0 0 19755
+D2
+~
+~
+0 0 19757
+S
+#19757
+In the Middle of an Underground Lake~
+~
+~
+You are in the deep murky waters.  Looking north and south, you are unable
+to see land.  You marvel that such an expance of water could be sitting here
+relatively unknown of, to the majority of Bethavens citizens.
+~
+0 9 6
+Rd     0
+D0
+~
+~
+0 0 19756
+D2
+~
+~
+0 0 19758
+S
+#19758
+In the Middle of an Underground Lake~
+~
+~
+You are in the deep murky waters, looking down, you realize that you are
+unable to see the bottom of the lake.  The water is cold and crisp, and it
+feels surprisingly clean, considering that it is the accumulation of many
+years of sewer water.
+~
+0 9 6
+Rd     0
+D0
+~
+~
+0 0 19757
+D2
+~
+~
+0 0 19759
+S
+#19759
+At the Base of a Huge Underground Waterfall~
+~
+~
+You are standing under an enormous waterfall.  Water cascades through the sky
+before landing around you.  Looking north you can see a large underground
+pool has accumulated, to the south, you can see a small sandy hole.
+~
+0 13 0
+Rd     0
+D0
+~
+~
+0 0 19758
+D2
+~
+~
+0 0 19760
+D4
+~
+~
+0 0 19749
+S
+#19760
+Entrance to the Ant-Peoples Realm~
+~
+~
+You are standing in a great archway of sand.  There are thousands of
+footprints all over the ground.  Judging from the size of the marks, you
+would guess that the Ant-People are about four feet high.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19759
+D2
+~
+~
+0 0 19761
+S
+#19761
+Entrance to the Ant People's Realm~
+~
+~
+You are standing in a small sandy hole.  This is the entrance to the home of
+the Ant People.  The Ant People look like common ants, except that they are
+four five feet high.  Nobody knows whether they are natural beings, or the
+victems of some magical experiment.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19760
+D2
+~
+~
+0 0 19763
+S
+#19762
+The Ant Queen's Royale Chamber~
+~
+~
+You are standing in a large chamber.  This is where the Ant Queen does her
+royal duties.  As the sole leader of the Ant People, it is her job to make
+all of the governing decisions.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 19763
+S
+#19763
+Main Corridor of the Ant People's Home~
+~
+~
+You are standing in a large sandy corridor.  There are small foot prints all
+over the ground from the passage of thousands of ants.  You see dozens of
+small holes fill with sand at your entry, the common citizens' are afraid of
+all other races, and will hide in deep tunnels till you leave.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 19761
+D1
+~
+~
+0 0 19764
+D3
+~
+~
+0 0 19762
+S
+#19764
+Large Pit of Larvae~
+~
+~
+You are standing in a large sandy pit.  This tunnel is the main breeding
+grounds for the Ant People, there young are dropped upon the floor here at
+birth, and are then raised by the entire community.  Although the children
+don't have any one set of parents to love, they do have many loving ants and
+uncles.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 19763
+S
+#19765
+Under the Small Hut~
+~
+~
+You are standing in a expertly carved corridor.  This tunnel is much more
+ancient then the hut above, apparently the maker of the hut built it upon
+this tunnel.  To the west is a small, delicately carved door.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 19766
+D4
+~
+~
+3 0 19751
+S
+#19766
+Standing Upon the Energy Grid~
+~
+~
+You are standing in a brightyly glowing field of energy.  This is the
+infamous magical energy grid, where mages draw their power from.  You
+realize that you are directly below where the Hierophant stands.  This poses
+the problem, does the Hierophant stand upon the energy field, or did the
+energy field form around the Hierophant.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 19765
+D5
+~
+~
+0 0 19767
+S
+#19767
+Within the Vortex of the Energy Grid~
+~
+~
+You are blinded by brilliant bursts of energy.  There is so much electrical
+charge running through this room, that your hair stands on end.  Due to the
+mass amounts of energy released, a tear in the space-time continuem has torn
+an entrance into the Realm of Energy.
+~
+0 12 0
+Rd     0
+D4
+~
+~
+0 0 19766
+S
+#19768
+Dry Drainage Pipe~
+~
+~
+You are standing on a ledge of a dry drainage pipe.  To the west and below
+you, sounds of constant splashing can be heard.  You notice for the first
+time, that there are many spider webs covering the ceiling of this tunnel.
+~
+0 13 0
+Rd     0
+D1
+~
+~
+0 0 19769
+D3
+~
+~
+0 0 19715
+S
+#19769
+Caught in a Mass of Spider Webs~
+~
+~
+You find yourself battling with many thick and sticky webs.  The webs form a
+very large spider net here, you shudder to think of the size of spider it
+would take to make such a large nest.
+~
+0 9 0
+Rd     0
+D3
+~
+~
+0 0 19768
+S
+#19770
+Sloping Drainage Tunnel~
+~
+~
+You are standing in a sloping tunnel.  The tunnel is dry, as though it has
+been clogged up.  Using your innate direction sence, you guess that this
+leads to the poor quarters of the city.  The mayor hasn't bothered to get it
+unclogged it yet, since he has more urgent business to do.
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 19771
+D5
+~
+~
+0 0 19708
+S
+#19771
+Clogged Drainage Tunnel~
+~
+~
+You are standing before a great clog in a dry drainage tunnel.  You see
+countless pieces of garbage, and several corpses of rats and dogs in the
+the clog to the east.  It looks as though it has become really packed in
+tight by time.
+~
+0 9 0
+Rd     0
+D3
+~
+~
+0 0 19770
+S
+#19772
+Blinded by a Surge of Energy!~
+~
+~
+You are unable to see anything, the mass amounts of energy have blinded you
+so badly.  Your hair is beginning to singe from the massive powers being
+unleashed around you.  Perhaps someday this surge will tone down, and allow
+mortals to enter into the Realm of Energy.
+~
+0 12 0
+Rd     0
+S
+#19773
+A black Cavern~
+~
+~
+You have entered a dark cavern. Strange black rocks are all around you.
+To the south, you notice the narrow crack that leads back to the underground
+lake, while to the north, you see a small, rocky path.
+~
+0 393221 11
+Rd     0
+D0
+~
+~
+0 0 11602
+D2
+~
+~
+0 0 19752
+S
+#19789
+The prairie~
+~
+~
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 17973
+D1
+~
+~
+0 0 17990
+D3
+~
+~
+0 0 17977
+S
+#0
+
+
+
+#SPECIALS
+M 19705 spec_poison
+M 19706 spec_guard
+M 19709 spec_poison
+M 19712 spec_thief
+M 19713 spec_thief
+M 19714 spec_guard
+M 19716 spec_guard
+M 19719 spec_guard
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 19702 2 19703
+O 0 19731 0 19704
+O 0 19731 0 19705
+O 0 19731 0 19706
+O 0 19731 0 19707
+O 0 19731 0 19708
+O 0 19731 0 19709
+M 0 19724 1 19710
+O 0 19731 0 19710
+O 0 19731 0 19711
+O 0 19701 0 19712
+O 0 19731 0 19712
+M 0 19701 1 19713
+G 0 19701 0
+E 0 19702 0 20
+G 0 19703 0
+O 0 19731 0 19713
+O 0 19731 0 19714
+O 0 19731 0 19715
+M 0 19704 2 19716
+O 0 19731 0 19716
+M 0 19724 1 19717
+O 0 19731 0 19717
+O 0 19731 0 19718
+M 0 19714 1 19719
+E 0 19718 0 20
+E 0 19714 0 8
+M 0 19713 2 19720
+E 0 19714 0 8
+M 0 19712 1 19722
+E 0 19713 0 20
+E 0 19714 0 8
+G 0 19717 0
+O 0 19716 0 19722
+P 0 19715 0 19716
+O 0 19731 0 19724
+M 0 19702 1 19725
+M 0 19725 2 19725
+O 0 19731 0 19725
+O 0 19731 0 19726
+O 0 19731 0 19727
+O 0 19731 0 19728
+O 0 19731 0 19729
+O 0 19731 0 19730
+M 0 19706 1 19732
+E 0 19704 0 3
+M 0 19710 1 19733
+G 0 19708 0
+G 0 19709 0
+G 0 19710 0
+M 0 19707 1 19734
+E 0 19705 0 11
+M 0 19708 1 19734
+E 0 19706 0 5
+M 0 19711 1 19735
+G 0 19711 0
+G 0 19712 0
+M 0 19709 1 19737
+E 0 19707 0 6
+M 0 19704 1 19739
+O 0 19731 0 19739
+O 0 19731 0 19740
+O 0 19731 0 19741
+O 0 19731 0 19742
+M 0 19703 1 19743
+M 0 19716 1 19745
+E 0 19720 0 11
+M 0 19717 1 19746
+E 0 19721 0 5
+M 0 19715 1 19747
+E 0 19719 0 3
+M 0 19703 1 19748
+O 0 19731 0 19748
+O 0 19731 0 19752
+M 0 19722 1 19754
+E 0 19733 0 13
+E 0 19734 0 1
+O 0 19731 0 19757
+O 0 19731 0 19758
+O 0 19731 0 19759
+M 0 19720 1 19762
+E 0 19724 0 0
+E 0 19725 0 6
+E 0 19726 0 5
+O 0 19732 0 19762
+M 0 19719 1 19763
+E 0 19723 0 14
+M 0 19718 1 19763
+E 0 19722 0 15
+M 0 19721 1 19764
+O 0 19727 0 19767
+O 0 19727 0 19767
+M 0 19723 1 19767
+E 0 19729 0 9
+E 0 19730 0 5
+M 0 19705 1 19769
+O 0 19728 0 19772
+O 0 19728 0 19772
+S
+
+
+
+#SHOPS
+19710 5 9 1 0 0 100 60 0 24
+19711 19 0 0 0 0 60 100 0 24
+0
+
+
+
+#$

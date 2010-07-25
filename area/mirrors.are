@@ -1,0 +1,1673 @@
+#AREADATA
+Name        { 20-35} The Hall of Mirrors~
+Builders    Sparhawk~
+VNUMs       14600 14699
+Security    100
+Recall      1
+Flags       272
+Version     107
+Creator     Sparhawk~
+Llevel      0
+Ulevel      0
+Sounds      Images dance in the mirrors surrounding you~
+End
+
+
+
+#MOBILES
+#14600
+&WWavering Reflection~
+A Wavering Reflection~
+A Wavering Image stands here.
+~
+It seems what you see before you might not really be there at all.  Yet
+the wavering image seems to be welcoming you to come into the mirror maze.  
+~
+67 128 0 0 0 -1000 S
+20 1 40 40 800 800d0+0 0d0+4000
+200 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say "Greetings to the Mirror Maze, please do try not to get yourself killed.
+smile
+endif
+~
+|
+#14604
+&WMirror Washer~
+&WA Mirror Washer~
+&WA Mirror Washer is wandering around unhappily.
+~
+&WA mirror washer stands here, a pathetic soul who is so unskilled that
+this is the only job he could get.  Or is it?  
+~
+69 136 0 0 0 -1000 S
+20 1 40 40 800 800d0+0 0d0+4000
+200 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say "Please try to keep your fingers off of my mirrors, i just finished washing them.
+growl $n
+endif
+~
+|
+#14629
+mirror image~
+&WA Mirror Image~
+&WYour Mirror Image is suprised to see you.
+~
+&WYou see yourself in front of you, and you look quite pissed.  It seems
+that your image has been captured and put here to put an end to you.  
+~
+65 192 0 0 0 -1000 S
+40 1 80 80 4000 4000d0+0 0d0+15000
+400 0 0
+0 0 0
+0 0 0
+#14630
+captured image~
+&WA Captured Image~
+&WA Captured Image stands ready to shred your soul.
+~
+&WWhat appears to be a soul captured in a mirror stands here.  It has a
+tortured look on it's face,and appears to have gone quite mad.  
+~
+65 128 0 0 0 -1000 S
+25 1 50 50 1800 1800d0+0 0d0+5000
+250 0 0
+0 0 0
+0 0 0
+#14631
+tortured image~
+&WA Tortured Image~
+&WA Tortured Image stands ready to fight.
+~
+&WA tortured image stands here.  It seems that it's long imprisonment has
+snapped it's mind.  It appears to flicker before your eyes.  
+~
+65 128 0 0 0 -1000 S
+35 1 70 70 2500 2500d0+0 0d0+10000
+350 0 0
+0 0 0
+0 0 0
+#14632
+lost reflection~
+&WA Lost Reflection~
+&WA Lost Reflection is ready to strike.
+~
+&WA lost reflection stands here, it seems to be looking for something
+that it has lost.  It has a tortured look on it's face, and seems to have
+lost it's touch with reality.  
+~
+65 128 0 0 0 -1000 S
+35 1 70 70 2500 2500d0+0 0d0+10000
+350 0 0
+0 0 0
+0 0 0
+#14633
+prismatic being~
+&WA Prismatic Being~
+&WA Prismatic Being is not happy to see you.
+~
+&WThe light is cascading off of this prismatic being in rainbow colors. 
+It seems to have been here for a long time and is itching for a fight.  
+~
+65 128 0 0 0 -1000 S
+40 1 80 80 3000 3000d0+0 0d0+15000
+400 0 0
+0 0 0
+0 0 0
+#14634
+RWCrystal Golem~
+A Crystal Golem~
+A Crstal Golem stands ready to attack.
+~
+A being that seems to be made completely out of crystal stands here. 
+It does not look happy to see you.  His body has a highly prismatic look.  
+~
+1 128 0 0 0 -1000 S
+25 1 50 50 1800 1800d0+0 0d0+5000
+250 0 0
+0 0 0
+0 0 0
+#14635
+&WCaptured Image~
+&WCaptured Image~
+&WA Captured Image stands ready to shred your soul.
+~
+&WWhat appears to be a soul captured in a mirror stands here.  It has a
+tortured look on it's face, and appears to have gone quite mad.  
+~
+65 128 0 0 0 -1000 S
+25 1 50 50 1800 1800d0+0 0d0+5000
+250 0 0
+0 0 0
+0 0 0
+#14636
+tortured image~
+&WA Tortured Image~
+&WA Tortured Image stands ready to fight.
+~
+&WA tortured image stands here.  It seems that it's long imprisonment has
+snapped it's mind.  It appears to flicker before your eyes.  
+~
+65 128 0 0 0 -1000 S
+35 1 70 70 2500 2500d0+0 0d0+10000
+350 0 0
+0 0 0
+0 0 0
+#14637
+lost reflection~
+&WA Lost Reflection~
+&WA Lost Reflection is ready to strike.
+~
+&WA lost reflection stands here,it seems to be looking for something that
+it has lost.  It has a tortured look on it's face, and seems to have lost
+it's touch with reality.  
+~
+65 128 0 0 0 -1000 S
+35 1 70 70 2000 2000d0+0 0d0+10000
+350 0 0
+0 0 0
+0 0 0
+#14638
+crystal golem~
+&WA Crystal Golem~
+&WA Crystal Golem Stands ready to attack.
+~
+&WA being that seems to be made completely out of crystal stands here. 
+He does not look happy to see you.  His body has a highly prismatic look.  
+~
+65 128 0 0 0 -1000 S
+25 1 50 50 1800 1800d0+0 0d0+5000
+250 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#14600
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14601
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14602
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14603
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14604
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14605
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14606
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14607
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14608
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14611
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14635~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14612
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14630~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14613
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14634~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14614
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14636~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14615
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14632~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14616
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14637~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14617
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14633~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14618
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14638~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14619
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14631~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14620
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14621
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14622
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14623
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14624
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14625
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14626
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14627
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14628
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 0
+100 100
+14600~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14629
+sword mirrors~
+sword of Mirrors~
+A sword made fashioned from a single mirror floats here.~
+~
+5 67108931 0 0 0 8193 30
+100 100
+0~ 0~ 0~ 3~
+3 300 0
+5 0
+shadow image~
+3 3
+0 0 0
+A
+18 10
+A
+1 2
+A
+2 2
+A
+19 10
+A
+25 50
+>wear_prog 100~
+0
+mpecho The Sword of Mirrors Shines with an Inner Light.
+~
+|
+#14630
+earrings reflection~
+&REarrings Of &YReflection~
+&REarrings made of mirrors lay here.~
+~
+9 67 0 0 0 524289 25
+100 100
+0~ 0~ 0~ 0~
+1 248 0
+0 0
+reserved~
+0 0
+14643 0 0
+A
+13 20
+A
+18 2
+A
+19 2
+#14631
+armor reflection~
+armor of Reflection~
+A suit of armor made of mirrors lays here.~
+~
+9 67 0 0 0 9 25
+100 100
+20~ 0~ 0~ 0~
+5 248 0
+0 0
+reserved~
+0 0
+14644 0 0
+A
+18 5
+A
+19 5
+A
+13 20
+#14632
+gauntlets reflection~
+&RGauntlets Of &YReflection~
+&RGuantlets made of mirrors lay here.~
+~
+9 67 0 0 0 129 25
+100 100
+0~ 0~ 0~ 0~
+2 248 0
+0 0
+reserved~
+0 0
+14644 0 0
+A
+13 20
+A
+19 2
+A
+18 2
+#14633
+gem reflection~
+&RGem Of &YReflection~
+&RA highly reflective gem floats here.~
+~
+9 67 0 0 0 32769 25
+100 100
+0~ 0~ 0~ 0~
+0 248 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 20
+A
+18 2
+A
+19 2
+#14634
+helm of reflection~
+&RHelm Of &YReflection~
+&YAn intracately made helm of wood and mirrors lies here.~
+~
+9 67 0 0 0 17 25
+100 100
+0~ 0~ 0~ 0~
+1 248 0
+0 0
+reserved~
+0 0
+14641 0 0
+A
+13 20
+A
+18 2
+A
+19 2
+#14635
+bracer reflection~
+&RBracer Of &YReflection~
+&WA bracer of wood and mirrors lies here.~
+~
+9 67 0 0 0 4097 25
+100 100
+0~ 0~ 0~ 0~
+2 248 0
+0 0
+reserved~
+0 0
+14641 0 0
+A
+13 20
+A
+18 2
+A
+19 2
+#14636
+ring reflection~
+&RRing Of &YReflection~
+&RA ring of wood and mirrors lies here.~
+~
+9 67 0 0 0 3 25
+100 100
+0~ 0~ 0~ 0~
+1 248 0
+0 0
+reserved~
+0 0
+14642 0 0
+A
+13 20
+A
+19 2
+A
+18 2
+#14637
+anklet reflection~
+&RAnklet Of &YReflection~
+&RAn anklet of wood and mirrors lies here.~
+~
+9 67 0 0 0 1048577 25
+100 100
+0~ 0~ 0~ 0~
+2 248 0
+0 0
+reserved~
+0 0
+14642 0 0
+A
+13 20
+A
+18 2
+A
+19 2
+#14638
+mask reflection~
+&RMask Of &YReflection~
+&RA mask made of mirrors lies here.~
+~
+9 67 0 0 0 65537 25
+100 100
+0~ 0~ 0~ 0~
+2 248 0
+0 0
+reserved~
+0 0
+14643 0 0
+A
+13 20
+A
+18 2
+A
+19 2
+#14639
+mirror~
+&RA Large Mirror~
+&RA Large Mirror~
+~
+29 0 0 0 0 0 1
+100 100
+14600~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14640
+huge shimmering portal~
+&BA Huge &YShimmering &BPortal~
+&BA Huge &YShimmering &YPortal stands before you.~
+~
+29 0 0 0 0 0 0
+100 100
+14629~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#14641
+black wooden support~
+&RA Black Wooden Support~
+&RA black wooden support lays here.~
+~
+12 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+14645 0 0
+#14642
+brown wooden support~
+&RA Brown Wooden Support~
+&RA brown wooden support lays here.~
+~
+12 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+14645 0 0
+#14643
+large piece mirror~
+&RA Large Piece Of Mirror~
+&RA piece of mirror lays here.~
+~
+12 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+14646 0 0
+#14644
+large mirror fragment~
+&RA Large Mirror Fragment~
+&RA fragment of mirror lays here.~
+~
+12 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+14646 0 0
+#14645
+large wooden stand~
+&RA Large Wooden Stand~
+&RA wooden stand lays here.~
+~
+12 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+14640 0 0
+#14646
+&RA Huge Mirror~
+&RA Huge Mirror~
+&RA huge mirror lays here.~
+~
+12 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+14640 0 0
+#0
+
+
+
+#ROOMDATA
+#14600
+A Mirrored Entryway~
+~
+~
+You have found the entryway to what appears to be a hall of mirrors. 
+To the north of you all you can see are rows and rows of shining mirrors. 
+Your image within them seems to be flickering in each one, as if some force
+were pulling you in.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 14601
+D2
+~
+~
+0 0 0
+S
+#14601
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 14602
+D1
+~
+~
+0 0 14601
+D2
+~
+~
+0 0 14600
+D3
+~
+~
+0 0 14601
+S
+#14602
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 14603
+D1
+~
+~
+0 0 14602
+D2
+~
+~
+0 0 14601
+D3
+~
+~
+0 0 14602
+S
+#14603
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 14604
+D1
+~
+~
+0 0 14603
+D2
+~
+~
+0 0 14602
+D3
+~
+~
+0 0 14603
+S
+#14604
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 14605
+D1
+~
+~
+0 0 14610
+D2
+~
+~
+0 0 14603
+D3
+~
+~
+0 0 14609
+S
+#14605
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 14606
+D1
+~
+~
+0 0 14605
+D2
+~
+~
+0 0 14604
+D3
+~
+~
+0 0 14605
+S
+#14606
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 14607
+D1
+~
+~
+0 0 14606
+D2
+~
+~
+0 0 14605
+D3
+~
+~
+0 0 14606
+S
+#14607
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+0 0 14608
+D1
+~
+~
+0 0 14607
+D2
+~
+~
+0 0 14606
+D3
+~
+~
+0 0 14607
+S
+#14608
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 14608
+D2
+~
+~
+0 0 14607
+D3
+~
+~
+0 0 14608
+S
+#14609
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 14604
+D3
+~
+~
+0 0 14619
+S
+#14610
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 14611
+D3
+~
+~
+0 0 14604
+S
+#14611
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+mirror~
+3 0 14627
+D1
+~
+~
+0 0 14612
+D3
+~
+~
+0 0 14610
+S
+#14612
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 14613
+D2
+~
+mirror~
+3 0 14623
+D3
+~
+~
+0 0 14611
+S
+#14613
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are oviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+mirror~
+3 0 14628
+D1
+~
+~
+0 0 14618
+D3
+~
+~
+0 0 14612
+S
+#14614
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+mirror~
+3 0 14626
+D1
+~
+~
+0 0 14619
+D3
+~
+~
+0 0 14615
+S
+#14615
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 14614
+D2
+~
+mirror~
+3 0 14621
+D3
+~
+~
+0 0 14616
+S
+#14616
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fancifull images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+mirror~
+3 0 14625
+D1
+~
+~
+0 0 14615
+D3
+~
+~
+0 0 14617
+S
+#14617
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes linr these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 14616
+D2
+~
+mirror~
+3 0 14620
+D3
+~
+~
+0 0 14618
+S
+#14618
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D0
+~
+mirror~
+3 0 14624
+D1
+~
+~
+0 0 14617
+D3
+~
+~
+0 0 14613
+S
+#14619
+A Corridor Of Mirrors~
+~
+~
+Mirrors of all shapes and sizes line these walls.  Images are floating
+on these highly reflective surfaces.  The strange pulling sensation is
+getting stronger here.  Fanciful images flicker in the mirrors, of beings
+that are obviously not in the room.  
+~
+0 401410 0
+Rd     0
+D1
+~
+~
+0 0 14609
+D2
+~
+mirror~
+3 0 14622
+D3
+~
+~
+0 0 14614
+S
+#14620
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 401410 0
+Rd     0
+D0
+~
+mirror~
+3 0 14617
+S
+#14621
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 401410 0
+Rd     0
+D0
+~
+mirror~
+3 0 14615
+S
+#14622
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 0 0
+Rd     0
+D0
+~
+mirror~
+3 0 14619
+S
+#14623
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 401410 0
+Rd     0
+D0
+~
+mirror~
+3 0 14612
+S
+#14624
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 401410 0
+Rd     0
+D2
+~
+mirror~
+3 0 14618
+S
+#14625
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 401410 0
+Rd     0
+D2
+~
+mirror~
+3 0 14616
+S
+#14626
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 401410 0
+Rd     0
+D2
+~
+mirror~
+3 0 14614
+S
+#14627
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 401410 0
+Rd     0
+D2
+~
+mirror~
+3 0 14611
+S
+#14628
+A Turning Of The Way~
+~
+~
+You have entered a room of mirrors.  There are two mirrors standing in
+the middle of the room.  Strange images float in the mirrors surounding you.
+The pulling sensation is much stronger here.  
+~
+0 401410 0
+Rd     0
+D2
+~
+mirror~
+3 0 14613
+S
+#14629
+Mazes End~
+~
+~
+This room is of immence proportions.  There is a large mirror in the
+center of the room.  There is a sign on the wall that reads &Y"Those that
+enter here will die by thier own hands!"  
+~
+0 401422 0
+Rd     0
+S
+#14630
+Portal Room A~
+~
+~
+This room is full of mirrors, a large mirror stands in the middle of
+the room.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed room.  
+~
+0 401414 0
+Rd     0
+S
+#14631
+Portal Room B~
+~
+~
+This room is full of mirrors, a large mirror stands in the middle of
+the room.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed room.  
+~
+0 401414 0
+Rd     0
+S
+#14632
+Portal Room C~
+~
+~
+This room is full of mirrors, a large mirror stands in the middle of
+the room.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed room.  
+~
+0 401414 0
+Rd     0
+S
+#14633
+Portal Room D~
+~
+~
+This room is full of mirrors, a large mirror stands in the middle of
+the room.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed room.  
+~
+0 401414 0
+Rd     0
+S
+#14634
+Portal Room E~
+~
+~
+This room is full of mirrors, a large mirror stands in the middle of
+the floor.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed room.  
+~
+0 401414 0
+Rd     0
+S
+#14635
+Portal Room F~
+~
+~
+This room is full of mirrors, a large mirror stands in the middle of
+the room.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed room.  
+~
+0 401414 0
+Rd     0
+S
+#14636
+Portal Room G~
+~
+~
+This room is full of mirrors, a large mirror stands in the middle of
+the room.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed area.  
+~
+0 401414 0
+Rd     0
+S
+#14637
+Portal Room H~
+~
+~
+This room is full of mirrors, a large mirror stands in the middle of
+the room.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed room.  
+~
+0 401414 0
+Rd     0
+S
+#14638
+Portal Room I~
+~
+~
+This room is full of mirrors, a large mirrors stands in the middle of
+the room.  Shards of broken mirrors are laying on the floor here.  It is
+much cooler here in this enclosed room.  
+~
+0 401414 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 14600 1 14600
+M 0 14604 6 14604
+O 0 14620 0 14620
+O 0 14617 0 14620
+O 0 14615 0 14621
+O 0 14621 0 14621
+O 0 14622 0 14622
+O 0 14619 0 14622
+O 0 14612 0 14623
+O 0 14623 0 14623
+O 0 14624 0 14624
+O 0 14618 0 14624
+O 0 14616 0 14625
+O 0 14625 0 14625
+O 0 14626 0 14626
+O 0 14614 0 14626
+O 0 14611 0 14627
+O 0 14627 0 14627
+O 0 14628 0 14628
+O 0 14613 0 14628
+O 0 14639 0 14629
+M 0 14629 1 14629
+E 0 14629 0 20
+M 0 14630 1 14630
+E 0 14630 0 24
+O 0 14600 0 14630
+M 0 14631 1 14631
+E 0 14631 0 5
+O 0 14601 0 14631
+M 0 14632 1 14632
+E 0 14632 0 13
+O 0 14602 0 14632
+M 0 14633 1 14633
+E 0 14633 0 9
+E 0 14633 0 10
+O 0 14603 0 14633
+M 0 14634 1 14634
+E 0 14634 0 6
+O 0 14604 0 14634
+M 0 14635 1 14635
+E 0 14635 0 18
+E 0 14635 0 19
+O 0 14605 0 14635
+M 0 14636 1 14636
+E 0 14636 0 1
+E 0 14636 0 2
+O 0 14606 0 14636
+M 0 14637 1 14637
+E 0 14637 0 25
+E 0 14637 0 26
+O 0 14607 0 14637
+M 0 14638 1 14638
+E 0 14638 0 8
+O 0 14608 0 14638
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

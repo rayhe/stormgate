@@ -1,0 +1,2241 @@
+#AREADATA
+Name        { 60-80} The Temple~
+Builders    None~
+VNUMs       30000 30099
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Hayt~
+Llevel      0
+Ulevel      0
+Sounds      Prayers and Screams Mingle in your Mind~
+Music       u4_shrine.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#30000
+Spider~
+Giant Spider~
+A Giant Spider 
+~
+~
+99 16456 16777216 0 0 -150 S
+63 1 126 126 5000 5000d0+0 0d0+5000
+630 0 0
+0 0 0
+66 0 0
+>all_greet_prog 100~
+mpecho You are covered in sticky webbing.
+c 'web' $n
+~
+>fight_prog 30~
+bite $n
+~
+|
+#30005
+Acolyte Druidess Ryleth'tinilith~
+Ryleth'tinilith~
+Ryleth'tinith
+~
+This lovely spirit appears to be still in her teens.  A touch of pity
+enters your heart.  So young and to die so violently.  
+~
+8259 134226048 786560 0 2 1000 S
+63 1 126 126 9000 9000d0+0 0d0+0
+630 0 0
+0 0 2
+131 0 0
+>rand_prog 10~
+cast 'natures blessing' $i
+~
+>fight_prog 50~
+emote cast her most powerful spell!
+c 'holy fires' $n
+~
+>all_greet_prog 100~
+emote raises her delicate arms to the sky!
+say Look upon one who is at peace, and will heal the World
+~
+>act_prog 'looks at you.'~
+if inroom($i)==30005
+smile $n
+say Welcome to Peace.
+cast 'healing hands' $n
+endif
+~
+>speech_prog heal~
+if inroom($i)!=30005
+say I am sorry. I am too far from my grove.
+break
+endif
+if goldamt ($n) > 250000
+mpforce $n give 250000 coins ryleth
+say Thank you
+cast 'healing hands' $n
+break
+else
+say I cannot help you
+endif
+~
+>speech_prog mana~
+if inroom($i)!=30005
+say I am sorry. I am too far from my grove.
+break
+endif
+if goldamt ($n) >250000
+mpforce $n give 250000 coins ryleth
+say Thank-you
+cast mana $n
+break
+else
+say I cannot help you
+endif
+~
+|
+#30006
+Druid Spirit~
+Drow Druidess~
+A Spirit Druidess stands here praying
+~
+Wrapped in a gown of silk.  This Ghost was and is enchanting and lovely:
+with skin of onyx and hair of silver-white, her beauty even in death is pure
+and breath-taking.  
+~
+8259 134226048 65664 0 0 777 S
+75 1 150 150 7777 7777d0+0 0d0+0
+750 0 0
+0 0 2
+67970 0 0
+>rand_prog 15~
+c 'armor' $i
+~
+>rand_prog 15~
+cast 'bark skin' $i
+~
+>rand_prog 15~
+c 'shield' $i
+~
+>rand_prog 15~
+c 'flseh armor' $i
+~
+>rand_prog 8~
+cast 'natures blessing' $i
+~
+>fight_prog 50~
+glare $n
+cast 'thunder strike'
+~
+|
+#30007
+Trapdoor Spider~
+Trapdoor Spider~
+Trapdoor Spider
+~
+~
+67 16448 16777216 0 0 -159 S
+63 1 126 126 8000 8000d0+0 0d0+45000
+630 0 0
+0 0 0
+1 0 0
+>all_greet_prog 100~
+emote comes at you out of nowhere!
+c 'web' $n
+~
+>fight_prog 40~
+bite $n
+~
+|
+#30008
+Worshiper~
+Worshiper~
+This Spirit is kneeling here: In Prayer to her Goddess
+~
+~
+8259 128 851968 0 0 800 S
+70 1 140 140 10000 10000d0+0 0d0+0
+700 0 0
+0 0 1
+65538 0 0
+>rand_prog 15~
+c 'shield' $i
+~
+>fight_prog 50~
+emote passes her hand through your body.
+drain $r
+~
+>rand_prog 20~
+c 'armor'
+~
+>rand_prog 16 ~
+~
+>rand_prog 20~
+c 'flesh armor' $i
+~
+|
+#30012
+Spirit Worshiper~
+Worshiper~
+The Spirit of a Worshiper is here Praying to Laelle'shiiva
+~
+~
+8259 128 851968 0 0 800 S
+60 1 120 120 9000 9000d0+0 0d0+0
+600 0 0
+0 0 2
+3 0 0
+>fight_prog 50~
+emote passes his hand through you.
+drain $r
+~
+|
+#30015
+Drow Druiddess spirit~
+Drow Druidess~
+A Drow Spirit is standing here Praying to her Goddess
+~
+Wrapped in a gown of silk.  This Ghost was and is enchanting and lovely;
+with skin of onyx and hair of silver-white, her beauty - even in death is
+pure and breath-taking.  
+~
+8259 134217856 327680 0 0 777 S
+75 1 150 150 11000 11000d0+0 0d0+0
+750 0 0
+0 0 2
+67970 0 0
+>rand_prog 10~
+cast 'natures blessing' $i
+~
+>rand_prog 10~
+c 'shield' $i
+cast 'bark skin' $i
+~
+>rand_prog 10~
+cast 'holy strength' $i
+~
+>fight_prog 50~
+cast 'dispel evil' $n
+~
+|
+#30019
+Raven~
+Black Raven~
+A Black Raven
+~
+~
+99 549056 786560 0 0 -200 S
+80 1 160 160 13000 13000d0+0 0d0+20000
+800 0 0
+0 0 0
+3 0 0
+>fight_prog 50~
+mpecho You feel the Raven's Claws at your Throat.
+claw $n
+~
+>all_greet_prog 100~
+cast 'confusion' $r
+~
+>fight_prog 40~
+disarm $r
+~
+>fight_prog 40~
+slit $r
+~
+|
+#30023
+Dragahazar Shar'eesk~
+Shar'eesk~
+Ra'ke's Pet Drago'hazar flies towards you
+~
+~
+99 34078720 0 2304 0 -800 S
+70 1 140 140 10000 10000d0+0 0d0+0
+700 0 0
+0 0 1
+130 0 0
+>all_greet_prog 100~
+emote greets you warmly.
+c 'fire breath' $n
+~
+|
+#30026
+Aun'Rae Druidess High~
+Aun'Rae~
+The High-Druidess of Laelle'shivva
+~
+Tall and radiantly beautiful.  Dressed in a gown of silk.  Aun'Rae seems
+almost a goddess herself.  
+~
+67 128 71335940 0 0 1000 S
+85 1 170 170 10021 10021d0+0 0d0+0
+850 0 0
+0 0 2
+896 0 0
+>fight_prog 40~
+c 'complete healing' $i
+~
+>fight_prog 50~
+if isgood($n) == 1
+say Why are you Doing This?
+cause
+break
+else
+say I feel no Pity for you.
+say Nor will I show you Mercy!
+cast 'holy fires' $n
+endif
+endif
+~
+>all_greet_prog 100~
+say Greetings stranger, be at rest here.
+say It must have been terrible below.
+say My flock, all dead.
+say And my Goddess's Temple Destroyed.
+sigh
+say Are you here to help us?
+emote looks into you, Heart and Soul.
+say Or to finish Ra'ke's Work?
+~
+>speech_prog Ra'ke~
+say You have never heard of Ra'ke?
+nod
+say I wouldn't imagine.
+say Most who know of him are either fleeing in terror from him.
+say or are having their throats Slit.
+say As you may have guessed by the decour' we are not followers of the Spider Queen.
+say We broke away from the horror of that life.
+say We came to the surface, called by the Elven Goddess...
+say Laelle'shiiva, she gave our race a second chance.
+say Those below, the Drow High-Priestesses learned of our
+say Blasphemy...our Freedom.
+say They sent Ra'ke...it is said Llolth herself sent him;
+say To slaughter all of us.
+smile
+say He succeeded.
+say If you wish to help me, to help us.
+say I can show the Way to Ra'ke...Simply ask the Way.
+~
+>speech_prog help yes ~
+say This Temple was to the Elven goddess Laelle'shiiva.
+say When we broke from Llolth and came to the surface.
+say She gave it to us, and we gave her our love.
+say It was not long before Ra'ke came.
+say He came in shadow and slaughtered us all!
+say Though before he could complete the sacrifice,
+say I cursed him.
+say As his Elg'hiir, his Blade of Life Draining, entered me;
+say I cursed him!
+grin
+say He is Alive down among our Dead.
+say And his Spirit is tied like mine to this Temple.
+say His in Life Mine in death.
+say If you truely wish to help.
+say Ask the Way...
+~
+>speech_prog Way~
+hand $n
+say May Laelle'shiiva's Blessing keep you safe always.
+say Be warned $n!
+say The Temple is Alive with him and I.
+say But where he is, his will is the Stronger.
+say Once you go...there is no way back, until Ra'ke is dead.
+say And even I may in some way stand against you, I do not know.
+say If you truely wish to go.
+Say Say my name and I will send you.
+say I cannot force you.
+~
+>speech_prog Aun'rae~
+if ispc($n) == 1
+   nod
+   say Then go with all the blessings I can give!
+   mptrans $n 30090
+   mpat 30090 cast 'healing hands' $n
+endif
+~
+>rand_prog 20~
+say Oh Laelle'shiiva give me your Divine Love
+cast 'holy strength' $i
+~
+>rand_prog 10~
+mpat 1 cast 'natures blessing' $i
+~
+|
+#30027
+Termites~
+Termites~
+Termites
+~
+~
+67 0 16 0 2 0 S
+1 1 2 2 1000000000 100000d0+0 0d0+0
+10 0 0
+0 0 0
+2 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+mpecho Thanks to the termites the floors is very weak!
+mpecho It gives way and you fall!
+mptrans $n 30038
+endif
+~
+|
+#30039
+Ghost of a Worshiper~
+Dead Worshiper~
+This Spirit knows why you are here, and is not happy with you
+~
+~
+8291 134217896 98304 0 0 500 S
+80 1 160 160 7900 7900d0+0 0d0+0
+800 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+mpecho As soon as you enter the room, a ghost rises out of the Cairn and.
+cast 'earthblast' $r
+~
+>fight_prog 90~
+drain $r
+~
+|
+#30040
+Defiled Spirit~
+Defiled Spirit~
+A very angry Spirit attacks you!
+~
+~
+99 40 851968 0 0 400 S
+78 1 156 156 9000 9000d0+0 0d0+0
+780 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+mpecho When you walk into the Room; a spirit forms before you.
+say Leave My Home.
+c 'psychic quake' 
+~
+>fight_prog 50~
+drain $r
+~
+|
+#30041
+bloody spirit~
+A Blood Covered Spirit~
+A Blood Covered Ghost is raging at you!
+~
+~
+99 128 360448 131072 0 600 S
+76 1 152 152 9900 9900d0+0 0d0+0
+760 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+mpecho As you enter the room it grows deathly cold.  A ghostly form appears before you.
+say Die Defiler!
+say Die Ra'ke!
+c 'shatter' $n
+~
+>fight_prog 50~
+emote rakes your soul.
+drain $r
+~
+|
+#30042
+Drow Banshee~
+Drow Banshee~
+A Cursed Drow Female wanders the Catacombs, looking for life.
+~
+~
+8289 1152 67960832 131072 0 -1000 S
+80 1 160 160 13000 13000d0+0 0d0+0
+800 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+emote sings her perverted; evil song.
+c 'dispel magic' $n
+~
+>fight_prog 50~
+emote keens
+cast 'psychic quake'
+~
+>fight_prog 30~
+emote reaches out her ghostly hand and touches your soul.
+life
+~
+|
+#30043
+Termites~
+Termites~
+Termites
+~
+~
+67 0 0 0 0 0 S
+78 1 156 156 9000 9000d0+0 0d0+0
+780 0 0
+0 0 0
+0 0 0
+>fight_prog 98~
+bite $r
+~
+|
+#30093
+Spider~
+Large Spider~
+Large Spider
+~
+~
+65 16384 0 0 0 0 S
+80 1 160 160 10000 10000d0+0 0d0+0
+800 0 0
+0 0 0
+0 0 0
+>fight_prog 40~
+bite $n
+~
+>fight_prog 40~
+~
+>fight_prog 40~
+~
+|
+#30094
+Mummy of Aun'rae~
+Mummy of Aun'rae~
+Corspe of the High Priestess
+~
+~
+8291 134234112 98304 0 0 0 S
+85 1 170 170 8500 8500d0+0 0d0+0
+850 0 0
+0 0 2
+0 0 0
+>fight_prog 50~
+emote grabs hold of you...
+slam $r
+~
+>all_greet_prog 100~
+emote rises from her crypt, and lumbers towards you!
+cast 'tomb rot' $r
+~
+|
+#30095
+Ra'ke~
+Ra'ke~
+Ra'ke: The Mad Assassin, has been here a very long time.
+~
+~
+99 192 67895344 133120 2 -900 S
+85 1 170 170 17500 17500d0+0 0d0+0
+850 0 0
+0 0 1
+2051 0 0
+>all_greet_prog 100~
+say Those Whores sent you to Torment Me!
+say Didn't they!
+emote begins his Dance of Death.
+double $n
+~
+>fight_prog 40~
+say I wont let you Torment Me!
+say You will Die!
+say As the traitors of Llolth Did!
+slit
+~
+>rand_prog 14~
+weaponmaster
+~
+>fight_prog 40~
+say Do you know what those Traitorous Women did to Me!
+say Before they Died...they Cursed Me!
+say Never to Sleep!
+curse
+say Never to Die!
+circle $n
+~
+>rand_prog 12~
+cast 'combat mind'
+~
+>rand_prog 13~
+cast 'chant'
+~
+>rand_prog 15~
+rage
+~
+>rand_prog 10~
+quickness
+~
+>rand_prog 16~
+cast 'satanic caress' $i
+~
+>fight_prog 40~
+disarm $r
+~
+|
+#30096
+The Room~
+The Room~
+Eath
+~
+~
+65 0 0 0 0 0 S
+110 1 220 220 10 10d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+cast earthquake
+~
+|
+#30097
+Hidden Catacombs~
+Hidden Catacombs~
+Hidden Catacombs
+~
+~
+67 0 0 0 0 1000 S
+500 1 1000 1000 7000 7000d0+0 0d0+0
+5000 0 0
+0 0 0
+0 0 0
+>rand_prog 70~
+mpat 30092 cast 'heal' $n
+~
+|
+#30098
+Manifistation of Agony~
+The Manifistation of Agony~
+&zAn undefinable horror floats before you....don't look at it!
+~
+This creature is the sum total of all the violence and blood of this
+place.  It is a horror: surrounded by screaming spirits, covered in blood;
+and wailing like nothing you will ever know, it is vile.  Changing ever
+changing it is a living testament to the suffering of the Druid's who made
+this Temple.  It fills you with visions that make you want to blind
+yourself...  End this!  
+~
+8259 0 327696 131072 0 0 S
+86 1 172 172 23000 23000d0+0 0d0+0
+860 0 0
+0 0 0
+0 0 0
+>rand_prog 20~
+mpecho &.Kill It &.Kill It &.Kill It   &.Kill it    &.Kill   &.Kill
+~
+>all_greet_prog 100~
+mpecho &.Death  &RBlood  &zPain    &.Vision of Vomit and bile.
+emote invades your mind
+mpecho Spurting &RBlood  &wTorn Flesh Hatred!
+mpecho Ra'ke   Aun'Rae!  &rBlood  &zPutrid
+~
+>rand_prog 20~
+mpecho Ra'ke the Slayer
+mpecho Aun'rae the beloved of all.
+mpecho &zDeath
+mpecho Assassin of Llolth
+&zDeath
+mpecho ALL DEAD!
+~
+>fight_prog 70~
+cast 'psychic quake'
+~
+>rand_prog 10 ~
+cast 'psychic quake' 
+~
+|
+#0
+
+
+
+#OBJECTS
+#30001
+Dark Mist~
+&zEnveloping Mist~
+&zA Cloud of Mist Floats where the Wind takes it~
+~
+9 4259840 0 0 0 1025 80
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+5 0
+displacement~
+2 2
+0 0 0
+A
+116 -1
+A
+18 7
+A
+19 7
+#30002
+Spatters of Dried Blood~
+blood~
+Blood has been smeared over everything here.~
+~
+28 16 0 0 0 0 60
+100 100
+2~ 2~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30004
+Elg'hiir~
+&zElg'hiir~
+A dagger of the purest black sits here.~
+~
+5 67125268 0 0 0 8193 75
+100 100
+0~ 0~ 0~ 11~
+3 748 0
+0 0
+power leak~
+0 0
+0 0 0
+A
+19 23
+A
+18 23
+A
+4 -6
+A
+2 5
+#30005
+Wild Rose Anklets~
+&PWild Rose~
+&CA Ring of Wild &g-&O'&g-{&R@ &Clies here.~
+~
+9 1 0 0 0 1048577 65
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+5 0
+continual light~
+5 5
+0 0 0
+A
+301 -1
+A
+13 65
+#30006
+timeless Flower~
+timeless Flower~
+A small circlet of wild flowers is here.~
+~
+9 1027 0 0 0 4097 70
+100 100
+0~ 0~ 0~ 0~
+1 100 0
+5 0
+dispel evil~
+10 10
+0 0 0
+A
+19 15
+A
+26 15
+A
+18 10
+A
+301 -1
+#30007
+Shield ~
+petrified Shield~
+A pollished wood shield is here.~
+~
+9 2 9 0 0 513 75
+100 100
+0~ 0~ 0~ 0~
+2 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 10
+A
+13 80
+#30015
+Wood Rod~
+petrified Rod~
+A petrified piece of wood is here, in the shape of a rod.~
+~
+5 1091 8200 0 0 8193 75
+100 100
+0~ 0~ 0~ 8~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 22
+A
+26 75
+A
+18 9
+>open_prog 100~
+0
+~
+|
+#30026
+Fillament Silk Gown~
+a silken fillament gown~
+A green silk gown is here.~
+~
+9 257 0 0 0 9 75
+100 100
+0~ 0~ 0~ 0~
+1 748 0
+0 0
+awe~
+0 0
+0 0 0
+A
+19 22
+A
+18 15
+#30027
+Magical Vestment~
+vestment of Natures Magic~
+A Gown: Woven out of Natures Energy, drifts here.~
+~
+9 16909315 4616 0 0 9 80
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+5 0
+natures blessing~
+3 3
+0 0 0
+A
+19 25
+A
+18 25
+A
+23 -10
+A
+24 -10
+A
+113 -1
+#30039
+Vine Covered Cairn~
+cairn~
+A vine covered cairn is here.~
+~
+15 0 0 0 0 0 1
+100 100
+0~ 5~ 0~ 0~
+30 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30040
+wand of Spiders~
+wand of Spiders~
+A black wand with carved webs, made of silver, is here.~
+~
+8 16406 0 0 0 16385 75
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+2 30093
+reserved~
+1 1
+0 0 0
+#30041
+mace of Laelle'shiiva~
+mace of Laelle'shiiva~
+A mace made of true silver is here.~
+~
+5 570819841 9 0 0 8193 85
+100 100
+0~ 0~ 0~ 8~
+3 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 80
+A
+113 -1
+A
+301 -1
+A
+18 10
+A
+19 30
+#30042
+Circlet ~
+silver Circlet~
+A circlet of silver sits here.~
+~
+9 257 0 0 0 17 83
+100 100
+0~ 0~ 0~ 0~
+2 828 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 40
+A
+12 40
+A
+18 10
+A
+109 -1
+#30043
+shield laelle'shiiva~
+shield of Laelle'shiiva~
+A Silver Shield lies here.~
+~
+9 1282 0 0 0 513 85
+100 100
+0~ 0~ 0~ 0~
+5 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 20
+A
+113 -1
+A
+23 15
+#30044
+Hope Chest~
+a Hope Chest~
+A hope chest sits here.~
+~
+15 4 0 0 0 0 10
+100 100
+1000~ 13~ 30046~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30045
+Stone Philosophers~
+philosopher's Stone~
+A pale blue stone sits here.~
+~
+9 257 0 0 0 32769 76
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+5 0
+mana~
+5 5
+0 0 0
+A
+19 10
+A
+18 7
+A
+4 2
+A
+3 2
+A
+12 55
+#30046
+silver Key~
+silver Key~
+A silver key is here.~
+~
+18 2 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#30047
+Blessing~
+blessing of Laelle'shiiva~
+Not for you~
+~
+35 8192 0 0 0 4194305 106
+100 100
+0~ 0~ 0~ reserved~
+2000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 200
+A
+19 200
+#30090
+Hand Crossbow~
+a drow hand crossbow~
+A hand-sized crossbow is here.~
+~
+32 538001414 1 0 0 2097153 80
+100 100
+100~ 5~ 5~ sleep~
+5 800 0
+0 0
+reserved~
+0 0
+0 0 0
+>wear_prog 100~
+0
+mpechoat $n You set a Web Pellet, and lock it in place
+mpechoaround $n $n loads a small Crossbow, with a small pellet.
+~
+|
+#30091
+drow Chain~
+drow Chain~
+A girt of finely woven black chain is here.~
+~
+9 134283782 0 0 0 9 80
+100 100
+0~ 0~ 0~ 0~
+2 800 0
+5 0
+displacement~
+20 20
+0 0 0
+A
+19 34
+A
+13 80
+A
+25 50
+A
+2 4
+A
+4 -4
+#30092
+khazid'hea~
+khazid'hea~
+A wicked looking blade lies here.~
+~
+5 269537430 512 0 0 8193 80
+100 100
+0~ 0~ 0~ 11~
+3 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 25
+A
+18 22
+A
+304 -1
+A
+2 3
+A
+5 -3
+#30093
+Bracers Blinding Strike~
+bracers of the blinding strike~
+A pair of black leather armbands with mithril rings are ready to wear.~
+~
+9 537985030 0 0 0 257 80
+100 100
+0~ 0~ 0~ 0~
+2 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+26 13
+A
+2 5
+A
+3 -5
+#30094
+portable Hole~
+portable Hole~
+A black, black hole is here.~
+~
+15 67108870 0 0 0 1 70
+100 100
+500~ 0~ 0~ 0~
+5 700 0
+5 18261
+vine travel~
+5 5
+0 0 0
+#30095
+Holy Symbol~
+holy Symbol of Laelle'shiiva~
+An emerald leaf on a silver chain is here.~
+~
+9 16909568 7720 0 0 5 65
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+5 0
+dispel evil~
+1 1
+0 0 0
+A
+301 -1
+A
+113 -1
+A
+12 60
+#30096
+Old Wood Chest~
+an Old Wood Chest~
+An old wooden chest is here.~
+~
+15 16384 0 0 0 0 1
+100 100
+10000~ 5~ 0~ 0~
+100000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30097
+Trove Treasure Gold Gems~
+treasure Trove~
+A chest full of gold and gems is here.~
+~
+8 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+20 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#30099
+Symbol of Llolth~
+unholy Symbol of Llolth~
+A black chain with a spider symbol is here.~
+~
+9 13746708 33 0 0 5 80
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+5 0
+stigeon mists~
+1 1
+0 0 0
+A
+19 8
+A
+18 8
+A
+113 -1
+#0
+
+
+
+#ROOMDATA
+#30000
+Beyond the Temple Doors~
+~
+~
+You were successful in forcing the doors to this Temple.  Dust, disturbed
+by your entrance, floats about you in moats.  After your eyes adjust to the
+gloom, you take a look about.  You see a huge open Church, lines of kneeling
+stands lead up to a large Central Altar, which you can't quite see from
+here.  You do not feel fear or foreboding, only a sense of sadness and loss.
+This place was once a place of Magic.  
+~
+0 131084 0
+Rd     0
+D0
+~
+~
+0 0 30001
+S
+#30001
+Grand Walkway~
+~
+~
+The walkway between the kneeling pews, is covered by a once plush, soft
+carpet of forest greens; now it is muted and grey, crunching underfoot as
+you walk.  You think you can hear chanting and low singing coming from all
+about you; but you can't find its location.  On both sides and behind is a
+balcony.  The Altar is still obscured by the twilight darkness.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 30002
+D1
+~
+~
+0 0 30010
+D2
+~
+~
+0 0 30000
+D3
+~
+~
+0 0 30011
+S
+#30002
+Grand Walkway~
+~
+~
+Crunch...  Crunch.  No matter how soft your tread the carpet crunches,
+like the sound of leaves in fall.  To your left and right are the pews and
+the balconies, also to your left is an arch-way in the wall.  The Altar
+itself is quite large, with a central pulpit.  High above the Altar is some
+sort of Bas-relief that glows with a pale radiance.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 30003
+D1
+~
+~
+0 0 30009
+D2
+~
+~
+0 0 30001
+D3
+~
+~
+0 0 30012
+S
+#30003
+Grand Walkway~
+~
+~
+You stand underneath a beautiful stain-glass Skylight.  Looking closer
+you see it has been shattered through the off-center.  Through the break you
+can just make out something, some form passing back and forth.  The Altar is
+just ahead of you, there is debris all over the place.  Two door-ways are
+also visible in the back wall.  The relief style mural is of the Sky.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 30004
+D1
+~
+~
+0 0 30008
+D2
+~
+~
+0 0 30002
+D3
+~
+~
+0 0 30013
+D4
+~
+~
+0 0 30022
+S
+#30004
+On the Step~
+~
+~
+&GYou stand before the Alatar of an unknown Deity, you think probably of
+Nature or something akin.  In its time it must have been lovely.  Your eyes
+are drawn up to the relief on the wall.  To the sides are annother set of
+Arch-ways, one to the left one right.  Again your eyes drift to the
+&YRelief.  
+~
+0 131080 0
+Rd     0
+E
+relief~
+As your eyes and strangly enough all of your senses grow attuned the
+Relief, its Magic takes hold of you.  You are outside in the Forest again,
+but it seems different; no longer dark and sombre ; but warm and inviting. 
+Your body feels warm again - waves of Peace calm your body , and ease your
+soul.  You watch it seems for hours as the night passes.  Stars wink at you,
+and fall to the earth, the moon rises and glows silver-white upon your face.
+Then the sun.  Elation Ecstasy of a kind never felt before, fills you as the
+sun rises, bathing the forest in light.  You feel as if you have seen green
+for the very first time.  And then the spell fades.  
+~
+D0
+~
+~
+0 0 30005
+D1
+~
+~
+0 0 30007
+D2
+~
+~
+0 0 30003
+D3
+~
+~
+0 0 30014
+S
+#30005
+The Altar ~
+~
+~
+This ancient Altar has been here for a long time; possibly even longer
+than the Temple that surrounds it.  When you Enter the room a wave of Peace
+fills your body.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 30006
+D2
+~
+~
+0 0 30004
+D3
+~
+~
+0 0 30015
+S
+#30006
+The Eastern Altar~
+~
+~
+Trash and Rubble are strewn about the Carpet.  There is a cracked and
+brittle statue of a Dark Skinned Elven Female here.  A Drow!....  But that's
+impossible!  This Drow is wreathed in Flowers and has a look of
+bennevolence, and Love on her face.  This is very strange.  An Arch-way
+leads into a flight of stairs, that lead down.  
+~
+0 131074 0
+Rd     0
+D0
+~
+Shimmering-Curtain~
+3 0 30029
+D2
+~
+~
+0 0 30007
+D3
+~
+~
+0 0 30005
+S
+#30007
+A Row of Kneelers~
+~
+~
+There are Rows of Kneelers from the Altar all the way to the back of the
+Temple.  These kneelers were used of course for prayer.  Made of soft
+leather, the feather stuffing of them is sticking out hither and thither.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 30006
+D2
+~
+~
+0 0 30008
+D3
+~
+~
+0 0 30004
+S
+#30008
+Rows of Prayer~
+~
+~
+Stepping over more kneelers you look about you.  This Temple was once Lovely.  Now it is all gone to Decay.
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 30007
+D2
+~
+~
+0 0 30009
+D3
+~
+~
+0 0 30003
+S
+#30009
+Row of Kneelers~
+~
+~
+Old Leather and old feathers; dust and grime.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 30008
+D1
+~
+~
+0 0 30027
+D2
+~
+~
+0 0 30010
+D3
+~
+~
+0 0 30002
+S
+#30010
+Among the Kneelers~
+~
+~
+You walk among the rotting Leather prayer kneelers.  They go row by row,
+to the Altar.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 30009
+D3
+~
+~
+0 0 30001
+S
+#30011
+Shattered Corner~
+~
+~
+The constant earth tremors have shattered the masonary of the temple
+walls.  You can see outside into the forest.  You still wonder at the sheer
+amount of violent earthquakes in this area.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 30012
+D1
+~
+~
+0 0 30001
+D3
+~
+~
+0 0 593
+S
+#30012
+Row of Kneelers~
+~
+~
+Passing through the kneelers you see a staircasr leading up to the
+Balcony.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 30013
+D1
+~
+~
+0 0 30002
+D2
+~
+~
+0 0 30011
+D3
+~
+~
+0 0 30016
+S
+#30013
+Kneelers~
+~
+~
+You are feeling very uneasy, very uneasy.  Whispers are at the edge of
+you awareness.  Something terrible occured here.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 30014
+D1
+~
+~
+0 0 30003
+D2
+~
+~
+0 0 30012
+S
+#30014
+The Room of Pain~
+~
+~
+The carpet and kneelers are stained brown with ancient blood.  Suddenly
+you are wracked with intense pain...  Your head feels ready to Explode with
+the Agony.  
+~
+0 805437450 0
+Rd     300
+D0
+~
+~
+0 0 30015
+D1
+~
+~
+0 0 30004
+D2
+~
+~
+0 0 30013
+S
+#30015
+Western Alter~
+~
+~
+The western portion of the Altar contains the remanance of a garden.  You
+can just imagine the beauty of the colourful flowers and plants.  Dried,
+dead ivy hangs from the wall here.  There is an Archway leading behind the
+Altar.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 30024
+D1
+~
+~
+0 0 30005
+D2
+~
+~
+0 0 30014
+S
+#30016
+Stairwell~
+~
+~
+This stone stair leads up to the Balcony that circumnavigates the Temple,
+giving those who wished a better view of the services (whatever they were). 
+~
+0 131074 0
+Rd     0
+D1
+~
+~
+0 0 30012
+D4
+~
+~
+0 0 30017
+S
+#30017
+Balcony~
+~
+~
+A row of kneelers is here for prayer.  The windows along this whole
+balcony have been shattered - from the outside?.....  Stranger and Stranger.
+Outside is the Dark Forest.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 30019
+D2
+~
+~
+0 0 30018
+D5
+~
+~
+0 0 30016
+S
+#30018
+Balcony~
+~
+~
+Looking down you see the ancient Temple and the spirits that reside in it.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 30017
+S
+#30019
+Balcony~
+~
+~
+Glass crunches under your feet as you walk along the Balcony.  The boards
+under you seem very unstable.....  Hope it doesn't break.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 30020
+D2
+~
+~
+0 0 30017
+S
+#30020
+Balcony~
+~
+~
+The boards creek under your feet as you walk.  You place your hand on the
+banister, and it breaks!  You almost fall to the floor below.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 30021
+D2
+~
+~
+0 0 30019
+S
+#30021
+Balcony~
+~
+~
+From up here you have a fantastic view of the Altar Below.  And all of a
+sudden you feel the urge to rub your eyes in astonishment!  There are four
+robed figures standing on the Altar.  Suddenly you can hear soft beautiful
+chanting coming from the four Priestesses, four Drow Priestesses?  They are
+all robed in forest greens, browns and yellows; and you swear to your Deity
+they are performing a Ritual of Natural Order?  
+~
+0 131082 0
+Rd     0
+D2
+~
+~
+0 0 30020
+S
+#30022
+Up to the Sky-light~
+~
+~
+You fly up towards the Sky-light.  There is something flying back and
+forth out there.  
+~
+0 131074 9
+Rd     0
+D4
+~
+~
+0 0 30023
+D5
+~
+~
+0 0 30003
+S
+>exit_prog 100~
+0
+mpecho Whoooshhh...
+~
+|
+#30023
+Through the Sky-light~
+~
+~
+You pass through the broken Sky-light and back into the Dark Forest.  To
+The North you think you can see huge mountains.  
+~
+0 131074 9
+Rd     0
+D5
+~
+~
+0 0 30022
+S
+#30024
+Disc of Light~
+~
+~
+~
+0 131086 0
+Rd     0
+D2
+~
+~
+0 0 30015
+D4
+~
+~
+0 0 30025
+S
+#30025
+The Observation Room of the High Druidess~
+~
+~
+This Tower is Open to the Sky.  It has been built all of Black Marble. 
+It was here that the Druidess's of Laelle'shiiva would come to see the Glory
+of the Sky they and their kind had forgotten for so long.  
+~
+0 131082 0
+Rd     0
+D2
+~
+~
+0 0 30026
+D5
+~
+~
+0 0 30024
+S
+#30026
+Garden of Timeless Beauty~
+~
+~
+Time seems to have done this room no harm.  Flowers grow everywhere.  The
+carpet is of green grass, the walls of ivy.  And the Sky!  Oh the Sky.  The
+sun is just begining to rise, but not enough to hide the beauty of the
+Stars.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 30025
+S
+#30027
+Stairs to the Balcony~
+~
+~
+Rotted wood stairs lead up to the Eastern Balcony.  Rather large, well
+fed, termites are in abundance; here and everywhere.  
+~
+0 131082 0
+Rd     0
+D3
+~
+~
+0 0 30009
+D4
+~
+~
+0 0 30028
+S
+#30028
+Eastern Balcony~
+~
+~
+~
+0 134225930 0
+Rd     0
+D5
+~
+~
+0 0 30027
+S
+#30029
+Stone Stair~
+~
+~
+This room is made of unremarkable stone.  There is a Stairway leading
+down into the dark; a musty smell wafts up from down below 
+~
+0 131082 0
+Rd     0
+D2
+~
+Shimmering-Curtain~
+3 0 30006
+D5
+~
+~
+0 0 30030
+S
+#30030
+Stone Stairwell~
+~
+~
+~
+0 131086 0
+Rd     0
+D0
+~
+Wall~
+3 0 30040
+D4
+~
+~
+0 0 30029
+D5
+~
+~
+0 0 30031
+S
+#30031
+Catacombs~
+~
+~
+The stairwell ends; and a long winding stone hallway begins.  Dust and
+spider webs are everywhere.  Torch-stands are positioned every few yards;
+but none are lit, or able to be so.  
+~
+0 131082 0
+Rd     0
+D2
+~
+~
+0 0 30032
+D4
+~
+~
+0 0 30030
+S
+#30032
+Catacombs~
+~
+~
+You wonder to yourself, just how deep under the earth you are.  These
+catacombs go on and on.  After checking your light you continue.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 30031
+D2
+~
+~
+0 0 30033
+S
+#30033
+Catacombs~
+~
+~
+Dry, dusty stone.  To the left and right; up and down.  So far you have
+seen, nor been able to detect any doors.  The passage turns here.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 30032
+D1
+~
+~
+0 0 30034
+D3
+~
+Wall~
+3 0 30041
+S
+#30034
+Catacombs~
+~
+~
+One sharp turn, and then annother.  These caverns seem to have been here
+for ages.  The walls were smoothed somewhat when the Followers of
+Laelle'shiiva came here.  You wonder how far these catacombs go.  
+~
+0 131083 0
+Rd     0
+D2
+~
+~
+0 0 30035
+D3
+~
+~
+0 0 30033
+S
+#30035
+Catacombs~
+~
+~
+These catcombs twist and turn.  The air is stale and musty.  Chips and
+breaks in the stone walls can be seen from time to time.  
+~
+0 131083 0
+Rd     0
+D0
+~
+~
+0 0 30034
+D1
+~
+~
+0 0 30036
+D2
+~
+Wall~
+3 0 30039
+S
+#30036
+Catacombs~
+~
+~
+This is getting rather dull, and tiresome.  Mile after mile of Cavern.  
+~
+0 131083 0
+Rd     0
+D2
+~
+~
+0 0 30037
+D3
+~
+~
+0 0 30035
+S
+#30037
+Catacombs~
+~
+~
+The catacombs, after what seemed like miles, has ended.  After a thorough
+search you find nothing, with the exception of a few scratches on the wall. 
+~
+0 131083 0
+Rd     0
+E
+scratches~
+^
+                  |
+                 /
+                [
+                ]-
+                |
+                 \
+                    /
+                =--
+              -=|
+~
+D0
+~
+~
+0 0 30036
+D4
+~
+Trapdoor~
+3 0 9549
+S
+#30038
+Tomb~
+~
+~
+You have fallen into a tomb of some sort.  Raising your light you gaze
+around in wonderment.  All about you are beautiful murals and Glyphs;
+depicting the Goddess Laelle'shiiva, and the Natural World she stands for.  
+~
+0 131083 0
+Rd     0
+D4
+~
+~
+0 0 30042
+S
+#30039
+Tomb~
+~
+~
+You have broken into annother Tomb.  Glyphs and Holly cover the Walls;
+and annother Cairn stands here.  
+~
+0 131083 0
+Rd     0
+D0
+~
+Wall~
+3 0 30035
+S
+#30040
+Tomb~
+~
+~
+This hidden chamber seems to have never been disturbed by tomb robbers. 
+You may be the first living person to enter this room in several hundred
+years.  And what a Room!  Every inch of the Walls are painted with Glyphs. 
+Each corner of the room is lined with Ivy that somehow still grows. 
+Pedastals of Marble stand next to the Stone Cairn in the Center of the room.
+~
+0 131083 0
+Rd     0
+D2
+~
+Wall~
+3 0 30030
+S
+#30041
+Tomb~
+~
+~
+You have found a hidden tomb.  A place where those who died in the
+Service of Laelle'shiiva are laid to rest.  A rather large stone Cairn rests
+in the center of the room; vines and dead flowers cover its entire surface. 
+~
+0 131082 0
+Rd     0
+D1
+~
+Wall~
+3 0 30033
+S
+#30042
+Eastern Balcony~
+~
+~
+~
+0 131082 0
+Rd     0
+D5
+~
+~
+0 0 30027
+S
+#30090
+Hidden Catacomb~
+~
+~
+As your senses clear, you study your surroundings carefuly.  You are in a
+catacomb of unkown size or depth.  The only light source is the one you
+carry with you.  It is incredibly dry and dusty.  Centuries of it has been
+disturbed by your arrival, and is now dancing around you.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 30091
+S
+#30091
+Hidden Catacomb~
+~
+~
+As you continue down the corridore, kicking up more and more dust as you
+go; you wonder where or if Ra'ke is here.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 30092
+D2
+~
+~
+0 0 30090
+S
+#30092
+Hidden Catacombs~
+~
+~
+There is a presence here something terrible, something evil - Something
+that Hates You.  There are scratches on the floor here.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 30093
+D1
+~
+Wall~
+3 0 30094
+D2
+~
+~
+0 0 30091
+S
+#30093
+Hidden Catacomb~
+~
+~
+The catacomb has finaly come to an end.  At a dead-end.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+3 0 30095
+D2
+~
+~
+0 0 30092
+S
+#30094
+Crypt~
+~
+~
+Upon finding and opening this Secret Way, you find yourself in a dusty;
+but luxuriant Crypt.  About you are Dozens upon Dozens of dried dead vases
+of flowers.  Every inch of the walls, ceilling and floor are covered in ivy.
+One giant Stone Tomb lies in the centre of the Crypt.  
+~
+0 401418 0
+Rd     0
+D3
+~
+Wall~
+3 0 30092
+S
+#30095
+Prison of Ra'ke~
+~
+~
+~
+0 131078 0
+Rd     0
+S
+#30096
+Special Effects~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#30099
+Room~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 30000 1 30000
+M 0 30005 1 30005
+E 0 30015 0 20
+E 0 30007 0 15
+E 0 30095 0 3
+M 0 30006 1 30006
+E 0 30006 0 18
+E 0 30006 0 19
+E 0 30015 0 20
+E 0 30007 0 15
+E 0 30095 0 3
+E 0 30005 0 26
+E 0 30005 0 25
+E 0 30026 0 5
+M 0 30007 1 30007
+M 0 30008 2 30008
+E 0 30095 0 3
+M 0 30012 2 30012
+E 0 30095 0 3
+O 0 30002 0 30013
+M 0 30098 1 30014
+M 0 30015 1 30015
+E 0 30006 0 18
+E 0 30006 0 19
+E 0 30015 0 20
+E 0 30007 0 15
+E 0 30095 0 3
+E 0 30005 0 25
+E 0 30005 0 26
+E 0 30026 0 5
+M 0 30019 1 30019
+M 0 30023 1 30023
+M 0 30026 1 30026
+E 0 30041 0 20
+E 0 30027 0 5
+E 0 30043 0 15
+E 0 30006 0 18
+E 0 30006 0 19
+G 0 30094 0
+E 0 30047 0 27
+E 0 30042 0 6
+E 0 30095 0 3
+E 0 30045 0 9
+E 0 30045 0 10
+M 0 30027 1 30028
+M 0 30042 1 30033
+E 0 30001 0 16
+O 0 30096 0 30038
+P 0 30097 0 30096
+O 0 30039 0 30039
+M 0 30039 1 30039
+E 0 30095 0 3
+O 0 30039 0 30040
+M 0 30040 1 30040
+E 0 30095 0 3
+O 0 30039 0 30041
+M 0 30041 1 30041
+E 0 30095 0 3
+M 0 30043 1 30042
+M 0 30094 1 30094
+O 0 30039 0 30094
+M 0 30095 1 30095
+E 0 30004 0 20
+E 0 30091 0 5
+E 0 30093 0 14
+E 0 30092 0 21
+G 0 30090 0
+E 0 30099 0 3
+M 0 30096 1 30096
+M 0 30097 1 30099
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

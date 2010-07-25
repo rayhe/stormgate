@@ -1,0 +1,3438 @@
+#AREADATA
+Name        { 90-105 } Shangil~
+Builders    Nemecis~
+VNUMs       7650 7799
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Nemecis~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#7650
+Learha~
+Learha, Banker of Shangil~
+Learha stands behind the till ready to handle your money
+~
+~
+131075 524288 16 133120 2 100 S
+100 1 200 200 0 32400d0+0 0d0+0
+1000 1 0
+0 0 2
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say AAAAAHHHHHHH!!! I HATE YOUR KIND!!! DIE!!!
+c 'unholy curse' $n
+else
+say greetings, $n, what may i do for you?
+endif
+endif
+~
+|
+#7651
+Randal~
+Randal the Blacksmith of Shangil~
+Randal is here repairing weapons and armor
+~
+~
+3 67108864 4259856 0 2 100 S
+100 1 200 200 0 32400d0+0 0d0+0
+1000 1 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isgood($n)
+puke $n
+say DIE SCUM!!! DIE AND ROT!!!
+c 'cone of frost'
+else
+glance $n
+say greetings, $n, wadda'ya want?
+endif
+endif
+~
+|
+#7652
+Hagar~
+Hagar The Equipment Dealer~
+Hagar is here waiting for you to make a purchase
+~
+~
+3 268451840 16 0 2 100 S
+100 1 200 200 0 32400d0+0 0d0+0
+1000 1 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isgood($n)
+puke $n
+say FOOL!! YOU ARE NOT WANTED HERE!! 
+c 'bend light' $n
+else
+nod $n
+say greetings Sir $n, what are you looking for?
+endif
+endif
+~
+|
+#7653
+Citizen~
+A citizen of Shangil~
+A citizen is here going about theid business
+~
+~
+1 0 65552 2048 0 100 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isgood($n)
+scream
+roar $n
+c 'curse of nature' $n
+else
+cackle
+endif
+endif
+~
+|
+#7654
+Guard~
+A City Guard~
+A guard is here looking for someone to pick on
+~
+~
+1 134332416 18907280 131072 2 100 S
+95 1 190 190 0 24600d0+0 0d0+0
+950 1 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if isgood($n)
+snarl $n
+c 'bend light' $n
+else
+eye
+endif
+endif
+~
+|
+#7655
+Cut Throat~
+An ugly looking cut-throat~
+An ugly cut-throat looking for his next murder
+~
+~
+33 268500992 16 131072 2 200 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 1
+1 0 0
+#7656
+Garil~
+Garil ~
+Garil is here selling you his scrolls
+~
+~
+3 0 65552 256 2 100 S
+100 1 200 200 0 32400d0+0 0d0+0
+1000 1 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isgood($n)
+laugh $n
+c 'blood omen' $n
+else
+say The days greeting to you my Lord $n, how may i help you?
+endif
+endif
+~
+|
+#7657
+Cath~
+Cath~
+Cath is here mixing potions for her customers
+~
+~
+3 16384 16 131072 2 100 S
+100 1 200 200 0 32400d0+0 0d0+0
+1000 1 0
+0 0 2
+3 0 0
+>greet_prog 100~
+if isgood($n)
+moon $n
+say YOU'RE NOT WELCOME HERE!!!
+c 'cone' 
+else
+say Well? What'll it be dear?
+endif
+endif
+~
+|
+#7658
+Mantree~
+Mantree~
+Mantree is here waiting for you to make the right choice
+~
+~
+3 0 786448 0 2 100 S
+100 1 200 200 0 32400d0+0 0d0+0
+2 0 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isgood($n)
+bird $n
+say &rGet the fu*k outta my shop!
+c 'meteor' 
+else
+say What do you want?
+endif
+endif
+~
+|
+#7659
+Traveller~
+Traveller~
+A Traveller from another land
+~
+~
+1 268451840 16 256 2 100 S
+95 1 180 180 0 23700d0+0 0d0+0
+950 1 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say better be careful in this city...they don't like people like you...
+grin
+snicker
+endif
+~
+|
+#7660
+Gatekeeper~
+The Gatekeeper~
+The Gatekeeper watches over the mob of travellers entering and leaving the city
+~
+~
+3 436224064 16777232 131072 0 250 S
+105 1 200 200 0 31000d0+0 0d0+0
+1050 1 0
+0 0 2
+3 0 0
+>greet_prog 100~
+say Keep going! Don't stop! You're holding up traffic!
+push $n north
+~
+|
+#7661
+City Guard~
+A Guard of Shangil City~
+A guard is here looking for trouble
+~
+~
+1 335560704 16 0 2 200 S
+95 1 190 190 0 27300d0+0 0d0+0
+950 1 0
+0 0 2
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say HAHAHAHA!
+c 'bend light'
+else
+eye
+endif
+endif
+~
+|
+#7662
+City Guard~
+A Guard of Shangil City~
+A guard is here looking for trouble
+~
+~
+1 335560704 16 0 2 200 S
+95 1 190 190 0 27300d0+0 0d0+0
+950 1 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say HAHAHAHA!
+c 'bend light'
+else
+eye
+endif
+endif
+~
+|
+#7663
+City Guard~
+A Guard of Shangil City~
+A guard is here looking for trouble
+~
+~
+1 335560704 16 0 2 200 S
+95 1 190 190 0 27300d0+0 0d0+0
+950 1 0
+0 0 1
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say HAHAHAHA!
+c 'bend light'
+else
+eye
+endif
+endif
+~
+|
+#7664
+citizen~
+Citizen of Shangil~
+A citizen of Shangil
+~
+~
+1 0 65552 2048 2 100 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say YOU!
+bird &n
+say DIE!!
+c 'curse of nature' $n
+else
+cackle
+endif
+endif
+~
+|
+#7665
+Citizen~
+Citizen of Shangil~
+A citizen of Shangil
+~
+~
+1 0 65552 2048 2 100 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say YOU!
+bird &n
+say DIE!!
+c 'curse of nature' $n
+else
+cackle
+endif
+endif
+~
+|
+#7666
+Citizen~
+Citizen of Shangil~
+A citizen of Shangil
+~
+~
+1 0 65552 2048 2 100 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say YOU!
+bird &n
+say DIE!!
+c 'curse of nature' $n
+else
+cackle
+endif
+endif
+~
+|
+#7667
+Citizen~
+Citizen of Shangil~
+A citizen of Shangil
+~
+~
+1 0 65552 2048 2 100 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say YOU!
+bird &n
+say DIE!!
+c 'curse of nature' $n
+else
+cackle
+endif
+endif
+~
+|
+#7668
+Citizen~
+Citizen of Shangil~
+A citizen of Shangil
+~
+~
+1 0 65552 2048 2 100 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 0
+3 0 0
+>greet_prog 100~
+if isgood($n)
+say YOU!
+bird &n
+say DIE!!
+c 'curse of nature' $n
+else
+cackle
+endif
+endif
+~
+|
+#7669
+Cut-Throat~
+An Ugly looking cut-throat~
+An uglier than hell cut-throat
+~
+~
+1 268435456 16 131072 2 200 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 1
+3 0 0
+#7670
+Cut-Throat~
+And ugly cut-throat~
+An uglier than hell cut-throat
+~
+~
+1 268435456 16 131072 2 200 S
+90 1 180 180 0 28350d0+0 0d0+0
+900 1 0
+0 0 2
+3 0 0
+#7671
+Citizen~
+Traveller~
+A Traveller visiting Shangil
+~
+~
+1 268451840 16 256 2 100 S
+95 1 190 190 0 27300d0+0 0d0+0
+950 1 0
+0 0 2
+3 0 0
+>greet_prog 100~
+if isgood($n)
+poke &n
+say Ya'd better be careful here, they don't like people like you...
+else
+snicker
+bow &n
+endif
+endif
+~
+|
+#7672
+Traveller~
+Traveller~
+A Traveller visiting Shangil
+~
+~
+1 268451840 16 256 2 100 S
+95 1 190 190 0 27300d0+0 0d0+0
+950 1 0
+0 0 2
+3 0 0
+>greet_prog 100~
+if isgood($n)
+poke &n
+say Ya'd better be careful here, they don't like people like you...
+else
+snicker
+bow &n
+endif
+endif
+~
+|
+#7673
+Sabil~
+Sabil~
+Sabil stands poised on the brink of extreme violence
+~
+~
+3 235512448 90210452 134269184 2 1000 S
+110 1 220 220 0 30000d0+0 0d0+0
+1100 0 0
+0 0 1
+3 0 0
+>act_prog Fourth~
+say It's about time someone has come to challenge me.
+bow
+say I hope you're ready because if you aren't I will kill you.
+snicker
+say I'll most likely kill you anyways.
+say Ready whenever you are.  I'll let you have first shot.  You'll need it.
+~
+>fight_prog 30~
+c cone
+~
+>fight_prog 30~
+c disrupt
+~
+>fight_prog 10~
+dim
+~
+>fight_prog 25~
+c curse
+~
+>fight_prog 30~
+c 'sonic boom'
+~
+>death_prog 35~
+say &cAAAAAHHHHHH! $n, you've earned this reward!
+mpoload 7790
+~
+>rand_prog 10~
+rage
+~
+>rand_prog 10~
+primalscream
+~
+>rand_prog 10~
+weaponmaster
+~
+|
+#7674
+green warrior~
+a green warrior~
+A warrior all in green stands here.
+~
+Dressed totally in green, this warrior looks like a formidable foe.
+~
+33 524480 65552 0 2 1000 S
+101 1 200 200 0 40000d0+0 0d0+0
+1010 0 0
+0 0 0
+65537 0 0
+>greet_prog 100~
+if isgood($n)
+growl
+say I'm to stop your kind from entering this place.  Now die!
+c 'blood omen' $n
+else
+nod $n
+say You may leave this place through the portal if you do not wish to continue.
+endif
+endif
+~
+>death_prog 100~
+mptransfer $n 7796
+mpat 7796 laugh
+~
+|
+#7675
+blue warrior~
+a blue warrior~
+A warrior dressed in blue is here.
+~
+A strange-looking warrior, armored totally in blue.  
+~
+1 590016 48 256 2 0 S
+102 1 205 205 0 41000d0+0 0d0+0
+1020 0 0
+0 0 0
+65537 0 0
+>death_prog 100~
+mptransfer $n 7797
+mpat 7797 sigh
+~
+>act_prog First~
+nod
+say Leave through the portal at anytime.
+~
+|
+#7676
+red warrior~
+a red warrior~
+A warrior dressed all in red is here.
+~
+This warrior's armor is completely red.
+~
+1 192 16777264 2304 2 100 S
+103 1 205 205 0 40000d0+0 0d0+0
+1030 0 0
+0 0 0
+65537 0 0
+>act_prog Second~
+say You may leave through the portal at anytime
+~
+>death_prog 100~
+say Well Done! On to the final Test!
+mptransfer $n 7798
+mpat 7798 laugh
+~
+|
+#7677
+gold warrior~
+a gold warrior~
+A warrior armored in gleaming gold platemail is here.
+~
+This warrior is covered in gleaming gold armor, with a long golden cloak.  
+~
+1 192 16810000 134234368 2 100 S
+105 1 210 210 0 40000d0+0 0d0+0
+1050 0 0
+0 0 0
+65539 0 0
+>death_prog 100~
+mptransfer $n 7799
+mpat 7799 gasp
+~
+>act_prog Third~
+say Well then.  Welcome, I am the final test before Sabil.
+say You may of course leave through the portal at anytime.
+~
+|
+#7678
+door guard~
+Door Guard~
+The Door Guard is here keeping an eye on strangers
+~
+~
+67 134758400 4227088 256 2 200 S
+105 1 200 200 0 34446d0+0 0d0+0
+1050 1 0
+0 0 0
+1 0 0
+>greet_prog 100~
+endif
+if isgood($n)
+spit $n
+c 'blood omen' $n
+else
+say Hey there.  Don't be disturbing any of the classes in progress.  You might make the teachers mad.
+wink $n
+emote picks his teeth with the needle like point of his short sword.
+endif
+endif
+~
+|
+#7679
+Reccar~
+Reccar Aran'Vaeh Har~
+Reccar Aran'Vaeh Har: The Shadows' Caress
+~
+~
+5 236486784 90210324 32768 2 0 S
+105 1 210 210 0 35000d0+0 0d0+0
+1050 1 0
+0 0 0
+67587 0 0
+>rand_prog 3~
+mpecho Reccar Aran'Vaeh Har gathers the shadows around himself and vanishes.
+mptrans $i 7724
+mpecho Reccar Aran'Vaeh Har steps forth from the shadows that surrounded him.
+~
+>rand_prog 3~
+mpecho Reccar Aran'Vaeh Har gathers the shadows around himself and vanishes.
+mptrans $i 7652
+mpecho Reccar Aran'Vaeh Har steps forth from the shadows that surrounded him.
+~
+>rand_prog 3~
+mpecho Reccar Aran'Vaeh Har gathers the shadows around himself and vanishes.
+mptrans $i 7693
+mpecho Reccar Aran'Vaeh Har steps forth from the shadows that surrounded him.
+~
+>rand_prog 3~
+mpecho Reccar Aran'Vaeh Har gathers the shadows around himself and vanishes.
+mptrans $i 7671
+mpecho Reccar Aran'Vaeh Har steps forth from the shadows that surrounded him.
+~
+>rand_prog 3~
+mpecho Reccar Aran'Vaeh Har gathers the shadows around himself and vanishes.
+mptrans $i 7658
+mpecho Reccar Aran'Vaeh Har steps forth from the shadows that surrounded him.
+~
+>rand_prog 5~
+mpecho Reccar Aran'Vaeh Har gathers the shadows around himself and vanishes.
+mptrans $i 7702
+mpecho Reccar Aran'Vaeh Har steps forth from the shadows that surrounded him.
+~
+>fight_prog 35~
+leer $n
+say &rYou won't defeat me!  You aren't good enough!
+snarl $n
+mpecho &pReccar gathers his shadows to force you away from him!
+mpforce $n flee
+mptrans $i 7702
+c 'complete healing'
+~
+>fight_prog 25~
+mpecho &RReccar uses the shadows against you!
+c 'bend light'
+~
+>fight_prog 50~
+mpecho &rReccar casts a spell!
+c demonfire
+~
+>fight_prog 25~
+slit
+~
+|
+#7711
+master academy~
+the master of the academy~
+A brutal-looking old warrior is here.
+~
+One of the foremost swordsmen in the land, he controls the Academy with
+an iron fist.  
+~
+3 128 32 0 0 -500 S
+105 1 210 210 0 40000d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+>act_prog ~
+say You wish to enroll?
+look $n
+snicker
+say You would not last 10 minutes here, outlander.
+ 
+~
+>fight_prog 20~
+punch
+~
+>fight_prog 50~
+kick
+~
+|
+#7712
+no name~
+the Academy quartermaster~
+The Academy quartermaster is here.
+~
+A burly, unshaven man.  
+~
+3 0 32 0 0 0 S
+100 1 200 200 0 35000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>fight_prog 20~
+kick
+~
+|
+#7737
+masseuse~
+a masseuse~
+A beautiful young woman is here, ready to give massages.
+~
+You suddenly have an urge to enroll...
+~
+3 0 0 0 0 0 S
+130 1 260 260 0 4000d0+0 0d0+0
+0 1 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+smile $n
+say Why don't you lie down.
+massage $n
+~
+|
+#7764
+Servant~
+Servant of Sabil~
+A servant created by Sabil to serve his purposes.
+~
+~
+3 5416 37748752 4096 2 100 S
+90 1 210 210 0 35000d0+0 0d0+0
+900 19 0
+0 0 0
+3 0 0
+>all_greet_prog 105~
+slobber
+howl
+c 'blood omen' &n
+~
+>fight_prog 50~
+slit
+~
+>fight_prog 50~
+c 'curse of nature'
+~
+>fight_prog 50~
+c 'unholy curse'
+~
+>fight_prog 50~
+c 'flash burn'
+~
+>rand_prog 50~
+c 'complete healing'
+~
+|
+#7780
+nobody~
+nobody~
+Nobody is here.
+~
+~
+1 134226048 16 0 0 100 S
+80 1 160 160 0 24300d0+0 0d0+0
+200 1 0
+0 0 0
+3 0 0
+>rand_prog 3~
+emote attempts to use his most recently learned skill.
+weaponmaster
+~
+|
+#7781
+student~
+a student of the academy~
+A rough-looking student walks by.
+~
+A young, battle-scarred man.  He has a smirk on his lips as he looks you
+over contemptously; only the most able warriors in the city and surrounding
+lands are accepted into this school.  
+~
+1 134226048 16777216 0 0 -500 S
+80 1 160 170 0 24301d0+0 0d0+0
+200 1 0
+0 0 1
+0 0 0
+#7782
+aspiring combatant~
+an aspiring combatant~
+An aspiring combatant snickers at you.
+~
+A powerfully-built man in his mid-20's, he's come to the Academy to
+improve his already formidable skills.  He has a vicious scar across his
+face, which does little to improve his looks.  
+~
+1 128 16777264 0 0 0 S
+85 1 160 170 0 26000d0+0 0d0+0
+20 0 0
+0 0 1
+0 0 0
+#7783
+graduate~
+an academy graduate~
+A graduate of the academy is here, drinking wine.
+~
+A powerfully-built warrior, he has finished the 5 years of training
+demanded.  He remains, however, until he is recruited for the Arena, or
+offered a commission in the town guard.  
+~
+1 33554560 48 0 0 0 S
+90 1 150 150 0 27000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>fight_prog 40~
+punch
+~
+>fight_prog 20~
+kick
+~
+>rand_prog 10~
+weapon
+~
+|
+#7784
+trainer~
+a trainer~
+A burly trainer strides by.
+~
+A master warrior of formidable skills, he has come to the Academy to
+teach.  He is heavily-scarred, and extremely powerful-looking.  
+~
+1 8384 32 0 0 0 S
+100 1 200 200 0 35000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#7785
+instructor~
+an instructor~
+An instructor is here, screaming at his students.
+~
+A thoroughly evil-looking man, his muscular arms are criss-crossed with
+scars.  He screams at his students, every once in a while pummeling them
+with a thick wooden training rod.  
+~
+515 134217856 160 0 0 0 S
+100 1 200 200 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#7786
+student~
+a student~
+A student is here, training.
+~
+A skilled-looking combatant, training here to improve his already
+formidable skills.  
+~
+67 128 32 0 0 -400 S
+80 1 130 160 0 24000d0+0 0d0+0
+200 1 0
+0 0 1
+0 0 0
+#7796
+hand key~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#7799
+Granduer~
+Granduer, The Healer of Shangil~
+Granduer, Ancient Healer of Shangil
+~
+~
+524299 218628816 32784 133120 3 0 S
+200 1 400 400 0 10d0+0 0d0+0
+0 0 0
+0 0 2
+7 0 0
+>greet_prog 100~
+say Hello there, $n.  I am here to provide assisstance to those seeking the key to this tower.
+say If you need help in any way just ask me.
+smile
+~
+>speech_prog help~
+nod
+say What do you seek help in Sir $n?
+say &RYou say...(say the number)
+say 1.Where do I find the key to this tower?
+say 2.What will I face in this tower?
+~
+>speech_prog 1~
+wink $n
+say Well now I'm only allowed to tell you so much you know.  If I say too much Lord Sabil may become cross with me and I definitly do not want that.
+shudder
+say No I certainly don't...
+say Anyways, about the keys...What I am allowed to tell you is that the key to this tower is actually formed by the combining of three other keys.
+say And these items are held by the Masters of Combat.
+say Somewhere in the Combat School is hidden a door and that door leads to a maze.  
+say You must find your way through this maze to the Masters of Combat.
+say Defeat a Master in combat and you will receive their key.  
+say I hope that helps becuase you won't get anymore clues from me or anyone else in the city.  Lord Sabil forbids them to help you.
+say Sabil only allows people to challenge him one-on-one.  So you will have no help in defeating him so be careful, be very careful.
+say Well then that's all I can say.
+say Good luck to you then.
+~
+>speech_prog 2~
+shrug
+say If you manage to find the keys you can unlock the doorway to the rest of the tower.
+say After that you will be tested in combat by creatures created by the Master.
+say If you pass those tests you may challenge Master Sabil in combat.
+wink $n
+say And that's it.  If you beat him you will receive a mighty reward.  If you die...well no need to go there, is there?
+~
+|
+#0
+
+
+
+#OBJECTS
+#7650
+half dagger~
+half-dagger~
+Looks like half a dagger~
+~
+5 4260563 8448 0 0 8193 80
+100 100
+0~ 30~ 80~ 11~
+3 800 0
+0 0
+reserved~
+0 0
+7792 0 0
+A
+18 20
+A
+1 2
+A
+5 -2
+A
+4 -2
+A
+19 25
+#7651
+bulb light glowing bright~
+glow Bulb~
+The light used by the High Priest of Shangil lies here~
+~
+1 37814801 0 0 1048576 1 90
+100 100
+0~ 0~ -1~ 0~
+2 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 90
+A
+24 -15
+A
+19 10
+A
+18 7
+#7652
+dual Blade~
+dual Blade~
+The Dual Blade lies here~
+~
+5 205734419 264 0 1048576 8193 100
+100 100
+0~ 30~ 85~ 3~
+3 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+4 -1
+A
+12 100
+A
+13 100
+A
+19 35
+A
+18 25
+#7653
+helm fair flight archer~
+the Helm of Fair Flight~
+The archer's favored helm lies here~
+~
+9 38077009 1 2097152 0 17 90
+100 100
+30~ 0~ 0~ 0~
+1 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+1 2
+A
+13 90
+A
+24 -10
+A
+19 10
+A
+18 8
+#7654
+combat glove~
+combat Glove ~
+Glove worn in hand-to-hand combat training~
+~
+9 67108864 16384 0 0 129 90
+100 100
+0~ 0~ 0~ 0~
+1 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 90
+A
+18 9
+A
+19 9
+A
+12 -50
+A
+24 -5
+#7655
+combat mask~
+combat Mask~
+A Mask designed for combat~
+~
+9 37814834 256 0 0 65537 80
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+A
+18 8
+A
+19 8
+#7656
+Saber Shangil~
+saber of Shangil~
+Saber made in Shangil~
+~
+5 239157777 0 0 1048576 8193 80
+100 100
+0~ 0~ 0~ 1~
+2 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 -2
+A
+13 80
+A
+2 2
+A
+1 2
+A
+18 18
+A
+19 30
+#7657
+skull ring~
+&zThe Skull Ring~
+A hideous ring in the shape of a skull~
+~
+9 205586944 0 0 0 3 80
+100 100
+0~ 0~ 0~ 0~
+1 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 50
+A
+13 50
+A
+24 -5
+A
+18 7
+A
+19 7
+A
+5 -1
+#7658
+steel ankle brace~
+steel Ankle Brace~
+A damned fine ankle brace~
+~
+9 33554435 0 0 0 1048577 90
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 -1
+A
+24 -15
+A
+5 -2
+A
+2 1
+A
+13 25
+A
+19 9
+A
+18 9
+#7659
+shiny chain leggings~
+shiny chain leggings~
+A comfortable pair of shiny chain leggings~
+~
+9 4260353 0 0 0 33 100
+100 100
+0~ 0~ 0~ 0~
+3 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+A
+19 10
+A
+18 10
+#7660
+scroll combat~
+scroll of combat~
+A scroll~
+~
+2 0 0 0 0 1 80
+100 100
+105~ chant~ reserved~ reserved~
+0 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#7661
+scroll of shadows~
+scroll of shadows~
+A shadowy scroll~
+~
+2 0 0 0 0 1 80
+100 100
+105~ shadow image~ phantom form~ reserved~
+0 1800 0
+0 0
+reserved~
+0 0
+0 0 0
+#7662
+herb visions~
+herb of visions~
+A blue-green-orange colored herb~
+~
+26 0 0 0 0 1 80
+100 100
+105~ detect hidden~ detect invis~ detect magic~
+0 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#7663
+herb protection~
+Herb of protection~
+Herb of protection~
+~
+26 0 0 0 0 1 80
+100 100
+105~ sanctuary~ spectral armor~ reserved~
+0 3600 0
+0 0
+reserved~
+0 0
+0 0 0
+#7664
+herb vitamin~
+a vitamin~
+A vitamin to fight illnesses~
+~
+26 0 0 0 0 1 80
+100 100
+105~ cure poison~ reserved~ reserved~
+0 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#7665
+racing shoes~
+&RA Pair of Racing Shoes~
+The most amazing pair of racing shoes you'll ever come across~
+~
+9 33554433 0 0 0 65 80
+100 100
+0~ 0~ 0~ 0~
+2 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+24 -16
+#7667
+potion ~
+potion of..(?)~
+A potion~
+~
+10 272695812 0 0 1048576 1 80
+100 100
+0~ reserved~ reserved~ reserved~
+1 8000 0
+5 0
+swiftness~
+-1 -1
+0 0 0
+#7668
+Fountain~
+&GA marble fountain with a statue carving of a raven eating a rabbit.~
+&GA marble fountain with a statue carving of a raven eating a rabbit.~
+~
+25 134217728 0 0 0 0 106
+100 100
+0~ 0~ 0~ 0~
+500 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7669
+wood wooden club~
+a club~
+A wooden club used to dish out beatings~
+~
+5 67108864 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 7~
+5 3200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+18 15
+A
+1 2
+#7670
+thin short sword~
+short Sword~
+A very thin short sword~
+~
+5 33554946 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 1~
+2 3200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+4 -2
+A
+19 30
+A
+18 10
+#7671
+cape rahl~
+&zCape of Rahl~
+A long flowing cape that blends in with it's surroundings~
+~
+9 67108866 0 0 0 1025 80
+100 100
+0~ 0~ 0~ 0~
+2 820 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 6
+A
+19 10
+A
+24 -15
+#7672
+bracelet rahl~
+&bBracelet of Rahl~
+A bracelet made of magical elements~
+~
+9 3 0 0 0 4097 80
+100 100
+0~ 0~ 0~ 0~
+1 820 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+A
+18 8
+A
+19 8
+A
+3 -2
+#7777
+Portal~
+portal~
+A portal~
+~
+29 3 256 0 0 0 0
+100 100
+7794~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7778
+glowing portal~
+glowing portal~
+A glowing portal~
+~
+29 67108865 16384 0 0 0 0
+100 100
+25002~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#7790
+shangil twist staff~
+shangil's Twist~
+Twisted staff with a key hole shape on it~
+~
+4 33554432 0 0 0 1 1
+100 100
+0~ 0~ 0~  ~
+1 8 0
+5 0
+curse~
+-1 -1
+7791 0 0
+#7791
+twisted half dagger~
+twisted half-dagger~
+Seems to be a twisted half of a dagger..~
+~
+5 37831184 0 0 0 8193 80
+100 100
+0~ 0~ 0~ 11~
+3 9000 0
+0 0
+reserved~
+0 0
+7792 0 0
+A
+3 -1
+A
+19 30
+A
+18 20
+#7792
+dagger shangil~
+&rDagger of Shangil~
+A sharp, deadly dagger~
+~
+5 675611265 8449 0 0 8193 80
+100 100
+0~ 0~ 0~ 11~
+1 8200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+24 -20
+A
+13 50
+A
+19 30
+A
+18 25
+#7795
+Sword key~
+Sword key~
+Sword key~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+7799 0 0
+#7796
+hand key~
+hand Key~
+A key that looks like a hand~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+7798 0 0
+#7797
+Arrow key~
+arrow key~
+Arrow key~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+7798 0 0
+#7798
+joined key~
+a key created by joing 2 other~
+A key~
+~
+18 134217728 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+7799 0 0
+#7799
+shangil key~
+shangil Key~
+Key to the tower of Shangil~
+~
+18 33554432 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+7791 7798 7795
+#0
+
+
+
+#ROOMDATA
+#7650
+Path to Shangil City~
+~
+~
+Ahead of you in the distance you see the huge gates of the city.  The sun
+pounds on your head relentlessly. 
+~
+0 0 10
+Rd     0
+D0
+~
+~
+0 0 7651
+S
+#7651
+Before the Open Gates of Shangil City~
+~
+~
+The massive gates of Shangil city stand open allowing merchants and
+tourists from foreign lands to enter the city without harassment.  The
+people of Shangil rely heavily on imports from other cities as their land
+isn't very fertile.  There is almost no law governing the people of Shangil,
+and only the stupid enter without being prepared.  There is deep seeded
+hatred in Shangil for those who are lawful, those who are good and those who
+are weak.  The people of Shangil love fighting and the citizens of the city
+are all trained in different forms of combat.  The Ruler of the city even
+encourages people to seek the keys to his tower and engage him in combat. 
+There are very great rewards offered to those who can beat him.  None have
+beaten him.  
+~
+0 0 10
+Rd     0
+D0
+~
+~
+0 0 7652
+D2
+~
+~
+0 0 7650
+S
+#7652
+Inside the City~
+~
+~
+The city is not really large but it is just packed with houses and
+people.  The street to the north is the city's Main Street, one of only two
+streets that are cobbled.  The houses are mundane, redundant and mainly
+utilitarian; the citizens care not much for what they live in and are more
+concerned with honing their fighting skills.  They do not care for one
+another and rarely show much affection for spouse and children.  Further up
+the Main Street you see The Tower of Shangil where the High Priest resides. 
+The combat school resides beyond the Tower of Shangil.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7676
+D1
+~
+~
+0 0 7653
+D2
+~
+~
+1 0 7651
+D3
+~
+~
+0 0 7675
+S
+#7653
+Following the Dirt Path Along the South-East Wall~
+~
+~
+There is nothing more than dirt paths between the houses here and the
+houses are all crowded together.  They are very simple houses.  There is a
+thick dust cloud on the street from people walking to and from their
+destinations.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7682
+D1
+~
+~
+0 0 7654
+D3
+~
+~
+0 0 7652
+S
+#7654
+A Dirt Path Along the South-East Wall~
+~
+~
+The houses are built close together and there is no room for back yards
+so there are no domesticated animals in this city.  The people would have no
+time to take care of the animals, even if they cared enough to do so.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7683
+D1
+~
+~
+0 0 7655
+D3
+~
+~
+0 0 7653
+S
+#7655
+At the South-East Corner of the City~
+~
+~
+The tall, grey-stone wall of the city turns north here forcing the road
+to turn north as well.  The houses are built right against the wall here and
+aren't in very good shape.  It almost looks as if whoever built them forgot
+parts of them.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7656
+D3
+~
+~
+0 0 7654
+S
+#7656
+A Dirt Path Along the East-South Wal~
+~
+~
+The wall has begun to crack and crumble in places and there are mortar
+tools siting at the base of the wall.  The tools are rusted, appearing not
+to have been used in a few years.  The houses here are ratty and run down
+looking but the people crowding the path appear to be well dressed
+otherwise, giving you an impression that there is a lack of attention to the
+condition of the houses rather than the people being poor.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7657
+D2
+~
+~
+0 0 7655
+S
+#7657
+Following a Dirt Path Along the East-South Wall~
+~
+~
+The sandy path here is wet with blood but there is no corpse to be seen
+anywhere.  The people walking around you pay no attention to the blood
+soaked ground and continue on as if nothing has happened.  Dwelling any
+longer on the blood could draw unwanted attention to you, and unwanted
+attention in this city usually means violence.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7658
+D2
+~
+~
+0 0 7656
+S
+#7658
+Eastern City Gate~
+~
+~
+The Main Street of the city ends at the wall here.  The cobblestones are
+well maintained and you see workers fixing and replacing stones for the
+street at various places around you.  There is a great number of people
+foreign to this city traveling on the Main Street.  The gate here is not
+guarded and doesn't see as much traffic as the main gate to the south.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7659
+D2
+~
+~
+0 0 7657
+D3
+~
+~
+0 0 7685
+S
+#7659
+Following the Dirt Path Along the East-North Wall~
+~
+~
+The path here is much less crowded than Main Street but still there is a
+large number of people walking around here.  You can see the huge throng of
+people pushing their way down Main Street to the south of you.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7660
+D2
+~
+~
+0 0 7658
+S
+#7660
+A Dirt Path Along the East-North Wall~
+~
+~
+Things are much the same in this part of town as they are anywhere else. 
+Run down houses, garbage strewn about the path and uncaring citizens
+noticing nothing wrong.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7661
+D2
+~
+~
+0 0 7659
+S
+#7661
+At the North-East Corner of the City~
+~
+~
+Broken stones from the crumbling wall crunch under your feet here.  The
+houses are in serious need of repair with holes gaping in the roofs and
+windows boarded up.  There are still many many people living here and the
+run down houses matter little to them.  
+~
+0 393216 1
+Rd     0
+D2
+~
+~
+0 0 7660
+D3
+~
+~
+0 0 7662
+S
+#7662
+Along the North-East Wall~
+~
+~
+The dirt path has bits and pieces of garbage strewn about it and no one
+cares to clean it.  The people living here are not starving but instead are
+quite healthy spending most of their money on things other than there
+houses.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7661
+D2
+~
+~
+0 0 7687
+D3
+~
+~
+0 0 7663
+S
+#7663
+Following the Dirt Path Along the North-East Wall~
+~
+~
+The street has turned into nothing more than a dirt path here following
+the wall.  Houses are built right against the wall, looking run down and
+very ratty.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7662
+D2
+~
+~
+0 0 7678
+D3
+~
+~
+0 0 7664
+S
+#7664
+Northern City Gate~
+~
+~
+Standing before the city gate the path leads east along the wall
+surrounding the city, north to the Combat School and back to the south.  The
+street's not as crowded this close to the Combat School as very few people
+have any reasons to be there.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+3 0 7701
+D1
+~
+~
+0 0 7663
+D2
+~
+~
+0 0 7665
+S
+#7665
+Northern Main Street~
+~
+~
+People crowd the street thickly everywhere you look, pushing and shoving
+and yelling theie way to wherever they are going.  Ahead of you the Combat
+School stands magnificently.  Many people look at it but few enter without a
+good reason.  The students and teachers often will attack strangers and the
+principal lurks the halls ready to destroy anyone he dislikes.  Most people
+stay away.  People push you out of their way as they try to make it into the
+extremely over crowded Market District to the west.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7664
+D2
+~
+~
+0 0 7666
+D3
+~
+~
+0 0 7692
+S
+#7666
+Northern Main Street~
+~
+~
+The houses here are just as shabby as all the rest, the street is crowded
+and there is an overpowering smell of unwashed bodies.  The tower, to the
+south, seems to follow you where ever you go, you just can't seem to get
+away from it.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7665
+D2
+~
+~
+0 0 7667
+S
+#7667
+The Central Plaza~
+~
+~
+You stand in the center of the city where the two main streets meet. 
+There is a beautiful marble fountain with a carving of a huge Raven eating
+the corpse of a rabbit.  The presence of the Tower of Shangil chills you to
+the bones, offering both sanctuary and the promise of suffering and pain. 
+The street here is not so crowded as all the others.  The houses are built a
+ways away and people do not linger long in the shadow of the terrible, dark
+tower despite the knowledge that there is sanctuary within.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7666
+D1
+~
+~
+0 0 7680
+D2
+~
+~
+0 0 7677
+D3
+~
+~
+0 0 7668
+D4
+~
+~
+0 0 7794
+S
+#7668
+Western Main Street~
+~
+~
+To the east is a large square, while to the west the street runs towards
+a gate.  Large buildings loom up on either side of you.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7667
+D3
+~
+~
+0 0 7669
+S
+#7669
+Western Main Street~
+~
+~
+The main street runs east and west through a relatively nasty-looking
+section of town.  On the other hand, most of the town is pretty bad-looking,
+but the citizens don't seem to mind.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7668
+D3
+~
+~
+0 0 7670
+S
+#7670
+Western City Gate~
+~
+~
+You are at the western gate of the city.  It is much smaller than the
+main gate you entered by but there is still a fair number of travellers
+comign and going through this gate.  There are no guards at this gate.  Main
+Street continues back to the east and there is a small path to the south
+that follows the wall of the city.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7669
+D2
+~
+~
+0 0 7671
+S
+#7671
+Along the South-West Wall~
+~
+~
+Broken stones from the crumbling wall crunch under your feet here.  The
+houses are in serious need of repair with holes gaping in the roofs and
+windows boarded up.  There are still many many people living here and the
+run down houses matter little to them.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7670
+D1
+~
+~
+0 0 7688
+D2
+~
+~
+0 0 7672
+S
+#7672
+A Dirt Path Along the South-West Wall~
+~
+~
+The dirt path has bits and pieces of garbage strewn about it and no one
+cares to clean it.  The people living here are not starving but instead are
+quite healthy, spending most of their money on things other than their
+homes.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7671
+D1
+~
+~
+0 0 7690
+D2
+~
+~
+0 0 7673
+S
+#7673
+At the South-West Corner of the City~
+~
+~
+Things are much the same in this part of town as they are anywhere else. 
+Run down houses, garbage strewn about the path and uncaring citizens
+noticing nothing wrong.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7672
+D1
+~
+~
+0 0 7674
+S
+#7674
+Along the South-West Wall ~
+~
+~
+Things are much the same in this part of town as they are anywhere else. 
+Run down houses, garbage strewn about the path and uncaring citizens
+noticing nothing wrong.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7675
+D3
+~
+~
+0 0 7673
+S
+#7675
+A Dirt Path Along the South-West Wall~
+~
+~
+The sandy path here is wet with blood but there is no corpse to be seen
+anywhere.  The people walking around you pay no attention to the blood
+soaked ground and continue on as if nothing has happened.  Dwelling any
+longer on the blood could draw unwanted attention to you, and unwanted
+attention in this city usually means violence.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7652
+D3
+~
+~
+0 0 7674
+S
+#7676
+Southern Main Street~
+~
+~
+The street is crowded one side to the other, there is hardly room for a
+person to move.  High over head you can clearly make out the vast, dark
+Tower of Shangil.  The stares from the people are cold and cruel, not one
+person caring enough to walk around you, they push and shove each other to
+get where they are going, yelling and cursing all the way.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7677
+D2
+~
+~
+0 0 7652
+D3
+~
+~
+0 0 7691
+S
+#7677
+Southern Main Street~
+~
+~
+The crowd of people thins out as you approach the Tower of Shangil and
+the Central Plaza.  People turn off side streets to go around and avoid it,
+even the citizens of the city are uncomfortable in the presence of the
+tower.  The power of Sabil is unspeakable, his presence can be felt
+throughout the city, and it just get stronger closer to the tower.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7667
+D2
+~
+~
+0 0 7676
+D3
+~
+~
+0 0 7689
+S
+#7678
+A Dirt Path~
+~
+~
+There is nothing more than dirt paths between the houses here and the
+houses are all crowded together.  They are very simple houses.  There is a
+thick dust cloud on the street from people walking to and from their
+destinations.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7663
+D2
+~
+~
+0 0 7679
+S
+#7679
+A Narrow Dirt Path~
+~
+~
+The dirt path has bits and pieces of garbage strewn about it and no one
+cares to clean it.  The people living here are not starving but instead are
+quite healthy spending most of their money on things other than there
+houses.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7678
+D2
+~
+~
+0 0 7680
+S
+#7680
+Eastern Main Street~
+~
+~
+The people crowding the street pay little attention to each other.  Every
+person trying to get wherever it is they are going.  The noise of the crowd
+is loud enough that you have to shout just to hear your own voice.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7679
+D1
+~
+~
+0 0 7685
+D2
+~
+~
+0 0 7681
+D3
+~
+~
+0 0 7667
+S
+#7681
+A Dirt Path~
+~
+~
+Things are much the same in this part of town as they are anywhere else. 
+Run down houses, garbage strewn about the path and uncaring citizens
+noticing nothing wrong.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7680
+D2
+~
+~
+0 0 7682
+S
+#7682
+Following a Dirt Path~
+~
+~
+The smell of decaying garbage catches your noise as you are walking. 
+People are yelling out of windows at neighbors and dogs can be heard barking
+at the yelling.  The houses are in rough shape, not surprising given the
+state of the houses everywhere else here.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7681
+D2
+~
+~
+0 0 7653
+S
+#7683
+A Garbage Filled Street~
+~
+~
+The dirt path has bits and pieces of garbage strewn about it and no one
+cares to clean it.  The people living here are not starving but instead are
+quite healthy spending most of their money on things other than there
+houses.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7684
+D2
+~
+~
+0 0 7654
+S
+#7684
+A Dirty Street~
+~
+~
+The smell of decaying garbage catches your noise as you are walking. 
+People are yelling out of windows at neighbors and dogs can be heard barking
+at the yelling.  The houses are in rough shape, not surprising given the
+state of the houses everywhere else here.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7685
+D2
+~
+~
+0 0 7683
+S
+#7685
+Eastern Main Street~
+~
+~
+People crowd the main street trying to get from one end of the city to
+the other.  It hard going to move and many people curse at you as you
+accidently bump into them.  The smell of unwashed bodies fills the air.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7686
+D1
+~
+~
+0 0 7658
+D2
+~
+~
+0 0 7684
+D3
+~
+~
+0 0 7680
+S
+#7686
+A Dirt Path~
+~
+~
+There is nothing more than dirt paths between the houses here and the
+houses are all crowded together.  They are very simple houses.  There is a
+thick dust cloud on the street from people walking to and from their
+destinations.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7687
+D2
+~
+~
+0 0 7685
+S
+#7687
+A Small Dirt Path~
+~
+~
+The sandy path here is wet with blood but there is no corpse to be seen
+anywhere.  The people walking around you pay no attention to the blood
+soaked ground and continue on as if nothing has happened.  Dwelling any
+longer on the blood could draw unwanted attention to you, and unwanted
+attention in this city usually means violence.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 7662
+D2
+~
+~
+0 0 7686
+S
+#7688
+A Dirt Path~
+~
+~
+Things are much the same in this part of town as they are anywhere else. 
+Run down houses, garbage strewn about the path and uncaring citizens
+noticing nothing wrong.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7689
+D3
+~
+~
+0 0 7671
+S
+#7689
+A Dirt Path~
+~
+~
+The path continues to the west heading towards the wall.  Back to the
+east you can still see the mob of people flooding the main street.  The
+houses here seem to be hanging over the street making the street seem even
+smaller and even shabbier.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7677
+D3
+~
+~
+0 0 7688
+S
+#7690
+A Dirt Path~
+~
+~
+The sandy path here is wet with blood but there is no corpse to be seen
+anywhere.  The people walking around you pay no attention to the blood
+soaked ground and continue on as if nothing has happened.  Dwelling any
+longer on the blood could draw unwanted attention to you, and unwanted
+attention in this city usually means violence.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7691
+D3
+~
+~
+0 0 7672
+S
+#7691
+A Dirt Path~
+~
+~
+Things are much the same in this part of town as they are anywhere else. 
+Run down houses, garbage strewn about the path and uncaring citizens
+noticing nothing wrong.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 7676
+D3
+~
+~
+0 0 7690
+S
+#7692
+The Market District~
+~
+~
+You have entered the Market District.  This is where most of all the
+business in Shangil is done.  Travelling merchants cry their wares
+everwhere.  There is dust everywhere, people are yelling, arguing, haggling
+and trying to cheat one another.  The street here is much wider than even
+the Main Streets and yet is even more crowded with more people and even more
+noisy.  The smithy is to the north and the weapons and armor dealer is to
+the south.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7699
+D1
+~
+~
+0 0 7665
+D2
+~
+~
+0 0 7700
+D3
+~
+~
+0 0 7693
+S
+#7693
+The Busy Market District~
+~
+~
+The mob of people continues everywhere you look, from one end to the
+other of the area.  A large potion shop is set up south of you and The Bank
+of Shangil is to the north 
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7698
+D1
+~
+~
+0 0 7692
+D2
+~
+~
+0 0 7697
+D3
+~
+~
+0 0 7694
+S
+#7694
+The Market District~
+~
+~
+The Market District comes up against the city wall here and ends.  The
+street is still jammed with people, travelling merchants and the shops of
+citizens.  There's a scroll shop to the north and the herbal pharmacy is to
+the south.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 7695
+D1
+~
+~
+0 0 7693
+D2
+~
+~
+0 0 7696
+S
+#7695
+Garil's Scroll Shop~
+~
+~
+There are stacks up stacks of scrolls stacked against the far back wall. 
+A dusty, moldy smells fills the room, evidence that the cob web filled
+windows in the room have seldom been opened, if at all.  
+~
+0 393228 0
+Rd     0
+D2
+~
+~
+0 0 7694
+S
+#7696
+Mantree's Herbal Pharmacy~
+~
+~
+All sorts of herbs are hung from the ceiling drying and being readied for
+sale.  Live herbs fill a small greenhouse at the back of the shop giving
+Mantree a constant supply of herbs for sale.  
+~
+0 393228 0
+Rd     0
+D0
+~
+~
+0 0 7694
+S
+#7697
+Cath's Potion Shop~
+~
+~
+There are 5 rows of shelves behing Cath, each shelf is packed with
+potions for her customers.  Each potion has some kidn of label on it and
+there are many groups of the same potions.  
+~
+0 393228 0
+Rd     0
+D0
+~
+~
+0 0 7693
+S
+#7698
+The Bank of Shangil~
+~
+~
+Learha started the bank in Shangil nearly ten years ago.  It's the only
+bank in the city and so sees tons of business.  Travelling merchants open up
+accounts here because of the convenience of having a supply of money in each
+town they travell in is great.  Almost all the citizens have an account as
+well.  The vault in the back is massive, made of pure steel and protected by
+the magic of Master Sabil himself.  No thief will ever penetrate that vault.
+~
+0 17170444 0
+Rd     0
+D2
+~
+~
+0 0 7693
+S
+#7699
+Randal's Smithy~
+~
+~
+Randal's smithy is wide open allowing you to see everything in the
+cramped spece here.  He's got rusty swords, gauntlets, breastplates, leggins
+and all manner of equipment sitting around the room.  He's got a larger
+stack of equipment that's shining and looks brand new on the opposite side
+of the room, the stuff he's repaired.  He must have a lot of customers that
+just come buy drop off their stuff and leave it for him to do later.  He's
+able to do most repairs on the spot though.  
+~
+0 67502092 0
+Rd     0
+D2
+~
+~
+0 0 7692
+S
+#7700
+Hagar's Weapon and Armor Shop~
+~
+~
+Hagar's shop is very neat and orderly.  He buys and sells weapons here. 
+He has a few items he's made himself and they are very popular with the
+customers.  Display cases behind the counter display some of the goods he
+has for sale.  Further in the back though are more goods for sale.  If the
+customer can't find what he need in the dispaly cases at the from Hagar will
+bring them to the back and show them what other goods he has 
+~
+0 393228 0
+Rd     0
+D0
+~
+~
+0 0 7692
+S
+#7701
+A Straight and Narrow Path~
+~
+~
+This winding past leads north to what appears to be a large school of
+some sort.  The sounds of the city have abated somewhat.  
+~
+0 262144 2
+Rd     0
+D0
+~
+~
+0 0 7702
+D2
+~
+~
+3 0 7664
+S
+#7702
+A Straight and Narrow Path~
+~
+~
+The path continues northward, and the sounds of the city become faint
+indeed.  The road isn't particularly well-travelled, but you do notice a few
+people walking around; they seem to be students.  
+~
+0 262144 2
+Rd     0
+D0
+~
+~
+0 0 7703
+D2
+~
+~
+0 0 7701
+S
+#7703
+Before a huge, ornate, silver door~
+~
+~
+You stand before the entrance to the Warrior's Academy of Shangil. 
+Rough-looking students walk by, and you hear the sound of clashing swords
+coming from inside the building.  
+~
+0 262144 2
+Rd     0
+D0
+~
+~
+3 0 7704
+D2
+~
+~
+0 0 7702
+S
+#7704
+Foyer of the Combat Academy~
+~
+~
+You have entered the Foyer of the Combat School.  The room has an
+extremely high ceiling and a huge sky light at the very top.  The room is
+not ornate but it is far from what you would call grubby.  It's just a
+plain, well kept, clean room.  There is a sign above you.  It says "Offices"
+and an arrow points to the west.  More exits are to the north and east.  And
+of course south, the way you came in.  
+~
+0 393220 0
+Rd     0
+D0
+~
+~
+0 0 7726
+D2
+~
+~
+3 0 7703
+D3
+~
+~
+0 0 7705
+S
+#7705
+A White Hallway~
+~
+~
+This hallway leads west to a large staircase.  Ceremonial weapons and
+armor line the walls, and large tapestries depict scenes of warfare.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 7704
+D3
+~
+~
+0 0 7706
+S
+#7706
+Before a Set of Stairs~
+~
+~
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 7705
+D4
+~
+~
+0 0 7707
+S
+#7707
+Top of the Stairs~
+~
+~
+~
+0 393216 0
+Rd     0
+D3
+~
+~
+0 0 7708
+D5
+~
+~
+0 0 7706
+S
+#7708
+A Corridor~
+~
+~
+The corridor continues on, seemingly endlessly.  There are a couple of
+doors here.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 7707
+D2
+~
+~
+3 0 7709
+D3
+~
+~
+0 0 7716
+S
+#7709
+An Instruction Room~
+~
+~
+This large room is filled with practice mats on the floor.  Some of them
+are stained with a rusty brown liquid of some sort...  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7708
+S
+#7710
+A Passage~
+~
+~
+This passage runs through the top floor of the academy, connecting the
+trainers' offices.  Far off you hear the clashing of metal on metal.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 7709
+D1
+~
+~
+3 0 7711
+D2
+~
+~
+3 0 7714
+D3
+~
+~
+3 0 7712
+S
+#7711
+The Master's Office~
+~
+~
+This large, luxurious office contains touches of luxury unusual for such
+a hard place.  Velvet curtains are draped across the windows, and a statue
+of some warrior god is ensconced in one wall.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 7710
+S
+#7712
+Quartermaster's Office~
+~
+~
+This large, dingy room houses the Academy's quartermaster.  Large boxes
+are piled around, and sheafs of paper have been scattered about detailing
+weapons and armor distribution.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 7713
+D1
+~
+~
+3 0 7710
+S
+#7713
+Armory~
+~
+~
+This room contains case upon case of gleaming, nasty-looking weapons. 
+While some of them are intended for practice, many are obviously meant to be
+used in real combat.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 7712
+S
+#7714
+A Training Room~
+~
+~
+This large room appears to be dedicated to the arts of unarmed combat.  A
+practice ring has been set up, and cruel-looking spiked boxing gauntlets are
+in a case on the south wall.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 7710
+S
+#7715
+Hallway~
+~
+~
+The corridor ends here, at a stairway leading up.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7718
+D4
+~
+~
+0 0 7716
+S
+#7716
+A Corridor~
+~
+~
+You are travelling through the maze of passages which run through the
+Academy.  You hear the sound of metal on metal, and screams of rage and pain
+in the distance.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 7717
+D1
+~
+~
+0 0 7708
+D5
+~
+~
+0 0 7715
+S
+#7717
+A Holding Cell~
+~
+~
+This room has been set aside for disobedient students.  A pillory is in
+one corner, and another one holds a large cage; apparently they administer
+punishment strictly here.  
+~
+0 16384 0
+Rd     0
+D2
+~
+~
+3 0 7716
+S
+#7718
+A Corridor~
+~
+~
+The corridor twists and turns through the top of the Academy.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7719
+D2
+~
+~
+0 0 7715
+D3
+~
+~
+3 0 7730
+S
+#7719
+Hallway in School~
+~
+~
+The hallway turns here, heading south and east.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7720
+D2
+~
+~
+0 0 7718
+S
+#7720
+Hallway~
+~
+~
+The hallway continues on past several doors.  Far away you hear the
+clashing of weapons.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+71 0 7727
+D1
+~
+~
+0 0 7721
+D3
+~
+~
+0 0 7719
+S
+#7721
+A Hallway~
+~
+~
+The hallway continues east and west.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7722
+D3
+~
+~
+0 0 7720
+S
+#7722
+A Hallway~
+~
+~
+A narrow, twisting hallway that runs through the top floor of the Academy.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 7728
+D2
+~
+~
+0 0 7723
+D3
+~
+~
+0 0 7721
+S
+#7723
+Wide Hallway~
+~
+~
+The corridor climbs steeply upwards to the north, while from the south
+you hear the clashing of weapons.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7722
+D1
+~
+~
+0 0 7724
+S
+#7724
+A Corridor~
+~
+~
+The corridor continues east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 7725
+D3
+~
+~
+0 0 7723
+S
+#7725
+A Corridor~
+~
+~
+The corridor continues east and west, while a marble doorway leads north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 7737
+D1
+~
+~
+0 0 7726
+D3
+~
+~
+0 0 7724
+S
+#7726
+An Intersection~
+~
+~
+To the north heavy marble doors mark the entrance to the training yard. 
+From that direction you hear the sound of clashing weapons, and screams of
+anger.  To the east is a shrine, while to the west is a long corridor.  
+~
+0 0 0
+Rd     0
+D0
+~
+marble door~
+1 0 7738
+D2
+~
+~
+0 0 7704
+D3
+~
+~
+0 0 7725
+S
+#7727
+An Old, Unused Room~
+~
+~
+The dust is thick on all surfaces here; apparently nobody comes in here
+anymore.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+71 0 7720
+S
+#7728
+Supply Room~
+~
+~
+A nondescript room used to store supplies.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 7722
+D5
+~
+~
+0 0 7729
+S
+#7729
+Supply Room~
+~
+~
+A small room filled with tools and boxes.  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 7728
+S
+#7730
+A Corridor~
+~
+~
+The corridor continues, running past several training rooms.  The floor
+is smudged and dirty from the tramp of many feet.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 7731
+D1
+~
+~
+3 0 7718
+D2
+~
+~
+0 0 7732
+S
+#7731
+A Training Room~
+~
+~
+This room has been set aside for instruction in the combat arts.  The
+remains of wooden training swords arescattered across the floor.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 7730
+S
+#7732
+A Training Room~
+~
+~
+A large room filled with practice mats and training dummies.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 7730
+S
+#7737
+A Washroom~
+~
+~
+A large marble chamber, filled with hot baths.  It seems that this is one
+of the few places the students can come to relax.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+3 0 7725
+S
+#7738
+A Training Yard~
+~
+~
+A large yard open to the sky, this is the principle training area for the
+Academy.  Racks of practice weapons line the walls, and heavy straw mats
+have been placed on the ground for traction (and to soak up blood).  
+~
+0 0 0
+Rd     0
+D2
+~
+marble door~
+1 0 7726
+S
+#7794
+Tower of Shangil~
+~
+~
+This is the only place in all of Shangil that does not allow violence. 
+For many many years this has been a sanctuary for wary travellers seeking
+rest from their travels.  It is also a place where the warriors seeking to
+gain access to Sabil may regain energy and heal their many wounds.
+The room is very beautiful.  The cealing is vaulted, painted with abstract
+pictures with the floor made of marble tiles.  There is a solid, gold pillar
+in the middle of the room with very small, intricately carved swords
+spiraling upwards to the top of the pillar.  There are benches and pillows
+off to either side of the room for people to rest in.
+~
+0 136717326 0
+Rd     0
+D4
+~
+~
+55 7799 7795
+D5
+~
+~
+0 0 7667
+S
+#7795
+First Test~
+~
+~
+You have entered a chamber the walls of which are green.  Green tiles are
+underfoot, and even the ceiling is constructed of green stone.  
+~
+0 4595726 0
+Rd     0
+S
+#7796
+Second Test~
+~
+~
+This room is totally blue; every wall, as well as the floor and ceiling.
+~
+0 4595726 0
+Rd     0
+S
+#7797
+Third Test~
+~
+~
+This room is painted entirely in red.
+~
+0 4595726 0
+Rd     0
+S
+#7798
+Final Test~
+~
+~
+~
+0 4595718 0
+Rd     0
+S
+#7799
+At the Top of the Tower~
+~
+~
+Looking around the you room you see that there are no walls, no ceiling
+and only a chair in the middle of the room.  You can look over the entire
+city far below you and you can see lands far beyond this one on the horizon.
+Looking at the city it seems millions and millions of ants crowd tiny
+pathways below you.  Looking back at the chair you see two massive dual
+bladed swords standing against it.  Behind the chair Sabil stands ready.  
+~
+0 134619150 9
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 7799 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 7660 1 7651
+E 0 7658 0 25
+E 0 7659 0 11
+E 0 7669 0 20
+M 0 7661 1 7652
+M 0 7667 1 7658
+M 0 7666 1 7661
+M 0 7670 1 7662
+M 0 7664 1 7663
+M 0 7665 1 7664
+M 0 7654 1 7666
+E 0 7650 0 20
+E 0 7650 0 21
+O 0 7668 0 7667
+M 0 7671 1 7670
+M 0 7659 1 7676
+M 0 7653 1 7677
+M 0 7672 1 7680
+M 0 7669 1 7683
+M 0 7663 1 7684
+M 0 7668 1 7689
+M 0 7655 1 7690
+M 0 7662 1 7691
+M 0 7656 1 7695
+G 0 7661 0
+G 0 7660 0
+M 0 7658 1 7696
+G 0 7662 0
+G 0 7663 0
+G 0 7664 0
+M 0 7657 1 7697
+M 0 7650 1 7698
+M 0 7651 1 7699
+M 0 7652 1 7700
+G 0 7656 0
+G 0 7657 0
+M 0 7679 1 7702
+E 0 7665 0 12
+E 0 7671 0 16
+E 0 7672 0 19
+E 0 7650 0 20
+E 0 7670 0 21
+M 0 7678 1 7703
+E 0 7670 0 20
+M 0 7781 1 7709
+M 0 7786 1 7709
+M 0 7786 1 7709
+M 0 7785 1 7709
+M 0 7711 1 7711
+M 0 7784 1 7719
+M 0 7782 1 7720
+M 0 7781 2 7721
+M 0 7737 1 7737
+M 0 7785 1 7738
+M 0 7786 1 7738
+M 0 7786 1 7738
+M 0 7786 1 7738
+M 0 7799 1 7794
+O 0 7778 0 7794
+O 0 7777 0 7795
+M 0 7674 1 7795
+O 0 7777 0 7796
+M 0 7675 1 7796
+O 0 7777 0 7797
+M 0 7676 1 7797
+O 0 7777 0 7798
+M 0 7677 1 7798
+M 0 7673 1 7799
+E 0 7651 0 0
+E 0 7652 0 20
+E 0 7652 0 21
+O 0 7777 0 7799
+S
+
+
+
+#SHOPS
+7652 5 9 1 0 0 75 100 6 20
+7656 2 0 0 0 0 60 80 6 20
+7658 26 0 0 0 0 60 85 7 19
+0
+
+
+
+#$

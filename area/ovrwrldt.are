@@ -1,0 +1,6331 @@
+#AREADATA
+Name        {  1-20} The Overworld Towns~
+Builders    Zhyril Tyrion Mishval~
+VNUMs       16301 16899
+Security    1
+Recall      1
+Flags       256
+Version     107
+Creator     All~
+Llevel      0
+Ulevel      0
+Music       u4_towns.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#16301
+elder~
+An Elder~
+An Elder is here, strolling through the town.
+~
+A tall, slender man of apparent great age, he walks calmly but
+confidently by.  
+~
+65 0 0 0 0 500 S
+50 1 100 100 10000 10000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#16304
+eladriel wise~
+Eladriel the Wise~
+The Priestess of the Temple, Eladriel, is here.
+~
+A tall, stately woman of indeterminable age, Eladriel is known across the
+land for her wisdom and compassion.  Even now she offers succor to any who
+are ill, regardless of their race or creed.  
+~
+75 16777344 32784 0 0 900 S
+150 1 300 300 80000 80000d0+0 0d0+0
+1500 0 0
+0 0 2
+4 0 0
+#16305
+elder scholar~
+an Elder scholar~
+An Elder scholar sits here, poring through ancient tomes.
+~
+An ancient sage, wise in the ways of magic.
+~
+65539 16777216 0 0 0 500 S
+70 1 140 140 30000 30000d0+0 0d0+0
+700 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+emote murmurs over the parchments, 'Ah, this is an ancient form of Elvish.'
+ponder
+say 'Then these runes must have been written in the time of King Aradiel...'
+emote looks up.
+say ah, welcome my young friends.  New at the Academy?
+say I am the language teacher.
+smile
+say now what can I do for you?
+~
+|
+#16306
+elder woman~
+an Elder woman~
+A graceful Elder woman walks by.
+~
+An eternally beautiful face framed by silver hair, this woman smiles
+gently at you as she notices your attention.  
+~
+1 0 0 0 0 800 S
+50 1 100 100 10000 10000d0+0 0d0+0
+500 0 0
+0 0 2
+0 0 0
+#16318
+eldest~
+The Eldest~
+The Eldest is here, teaching his lore.
+~
+Known only as The Eldest, this mighty Elder mage is probably the most
+powerful practitioner of magic alive today.  Dressed in simple white robes,
+his seemingly unintimidating appearance is belied by the power and wisdom
+that gleams in his eyes.  
+~
+65539 192 294912 8192 0 500 S
+200 1 400 400 100000 150000d0+0 0d0+0
+0 0 0
+0 0 1
+4 0 0
+#16319
+Sadranil~
+Sadranil~
+The legendary Elder warrior, Sadranil, is here.
+~
+Before you is Sadranil, legendary for his courage and skill.  Though a
+member of a race of spellcasters, Sadranil chose to devote his life to the
+martial arts, and now trains the young of his race in physical and mental
+disciplines.  
+~
+515 251658368 0 0 0 500 S
+105 1 210 210 70000 70000d0+0 0d0+2000
+1050 0 0
+0 0 1
+0 0 0
+#16320
+storekeeper reagent seller~
+the storekeeper~
+An Elder is here, selling mystical reagents and equipment.
+~
+A tall, slender Elder steeped in ancient lore.
+~
+3 0 0 0 1 0 S
+300 1 198 198 30000 90000d0+0 0d0+0
+1980 0 0
+0 0 1
+0 0 0
+#16321
+teacher~
+An Elder teacher~
+An Elder teacher stands here, ready to chart your progress.
+~
+A wise-looking Elder, whose job is to guide the young initiates as they
+face the Tests.  
+~
+11 16777216 0 0 0 500 S
+110 1 220 220 30000 30000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if level($n)>5
+say I'm sorry, the Tests are for initiates only.
+emote waves his hand, and a glow envelops $n.
+mptrans $n 16318
+elseif
+say Welcome to the Tests, initiate!
+say Face the challenges to the north; you can return for healing at any time.
+endif
+~
+|
+#16325
+doppleganger~
+a doppleganger~
+A constantly morphing creature snickers at you.
+~
+It's an orc, no it's a dragon, wait it's a hound now...  
+~
+3 0 0 0 0 0 S
+5 1 10 10 60 60d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+>rand_prog 20~
+emote suddenly morphs into a dragon!
+A Dragon leers at you.
+~
+>rand_prog 20~
+mpecho Suddenly the sun rises over the valley.
+~
+>rand_prog 20~
+emote suddenly turns to glass and shatters into a million pieces!
+~
+>rand_prog 20~
+emote suddenly morphs, forming an exact duplicate of $r!
+mpech $r smiles happily.
+~
+>rand_prog 20~
+mpecho A doppleganger's features shift and change.
+emote suddenly looks a lot like your grandfather...
+~
+>rand_prog 20~
+mpecho A flock of dragons flies by overhead.
+~
+|
+#16326
+conjured creature~
+a conjured creature~
+A conjured creature growls as it advances on you.
+~
+A small, malformed beast with blazing red eyes.  
+~
+3 0 0 0 0 0 S
+4 1 8 8 20 20d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#16328
+guardian demon~
+a guardian demon~
+A guardian demon stands in the circle, growling softly.
+~
+A large, well-muscled creature with scaled skin and enormous wings. 
+You'll have to beat him to leave this place, it appears.  
+~
+3 0 0 0 0 0 S
+7 1 14 14 105 105d0+0 0d0+0
+70 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+emote growls softly.
+say crosss the circle young ssssorceror...
+~
+>death_prog 100~
+mpecho You hear the voice of the Elder teacher whispering in the air.
+mpecho "Invoke the power of the gem."
+~
+|
+#16329
+flame elemental~
+a flame elemental~
+A flame elemental burns angrily as it's flames lick the floor.
+~
+It's almost too bright to look at...
+~
+3 0 0 0 0 0 S
+4 1 8 8 40 40d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#16334
+King Norgaard~
+King Norgaard~
+The largest giant you have ever seen sits at the head of the table.
+~
+Towering over everyone else in the room, King Norgaard is an imposing
+sight indeed.  Dressed in chain mail and furs, blazing grey eyes look out
+from over a bushy beard.  He is currently raising a flagon of ale as large
+as a dwarf.  
+~
+3 192 0 8192 0 0 S
+110 1 240 240 140000 140000d0+0 0d0+0
+1100 0 0
+0 0 1
+4 0 0
+>greet_prog 100~
+if class($n)==14
+look $n
+say Ha! Welcome, young $n!
+say Sit down and have something to drink!
+else
+look $n
+emote roars with laughter.
+say Who let these little ones into my hall?
+say Ah, well, nevermind.  Come in and enjoy our hospitality!
+say Just try not to get stepped on!
+emote roars with laughter.
+mpecho The other giants at the table join in the laughter.
+endif
+~
+|
+#16335
+giant~
+a Giant~
+A Giant sits at the table, drinking.
+~
+A large, uncouth Giant who seems to live his life perpetually drunk.  
+~
+3 0 0 0 0 0 S
+100 1 200 200 50000 50000d0+0 0d0+100
+1000 0 0
+0 0 1
+0 0 0
+>rand_prog 5~
+emote knocks back another flagon of ale.
+~
+>rand_prog 5~
+mpecho Suddenly the table erupts with uproarious laughter.
+~
+>rand_prog 5~
+mpecho A female Giant walks over and tosses a platter of beef onto the table.
+~
+>rand_prog 5~
+mpecho The wolves start fighting over a piece of beef that fell from the table.
+~
+|
+#16337
+young giant~
+a young Giant~
+A young Giant is here, training.
+~
+This young Giant is striving hard to be recognized as a warrior by his
+clan.  
+~
+3 0 0 0 0 0 S
+10 1 20 20 2000 2000d0+0 0d0+0
+100 0 0
+0 0 1
+0 0 0
+#16339
+Bjorheim smith~
+Bjorheim the Smith~
+Bjorheim stands here, forging a new weapon.
+~
+Standing head and shoulders over most giants, Bjorheim is thought by some
+to be the strongest of his race.  His arms are breathtaking in their girth,
+and the muscles writhe impressively as he brings his mighty hammer down on
+the weapon he's working on, sending showers of sparks into the air.  His
+hair is mostly grey, but even at his advanced age Bjorheim is someone whom
+you do not wish to cross.  
+~
+3 0 0 0 0 0 S
+190 1 380 380 90000 90000d0+0 0d0+0
+1900 0 0
+0 0 1
+0 0 0
+>rand_prog 5~
+Emote slams his hammer onto the anvil, sending sparks into the air.  
+~
+>greet_prog 100~
+emote nods in greeting.
+~
+|
+#16345
+bruni wrestler~
+Bruni~
+The mighty Giant wrestler, Bruni, is here training new recruits.
+~
+Short and stocky by Giant standards, Bruni is known for his wrestling
+skills.  Retiring from active battle, he now trains young Giants both
+physically and mentally.  
+~
+515 0 0 0 1 0 S
+120 1 240 240 0 0d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+#16346
+Taridar~
+Taridar~
+Taridar, the trader, is here.
+~
+A taciturn halfdwarf dressed all in furs, Taridar sells all sorts of
+staples to the inhabitants of Cutter's Scarp.  
+~
+3 0 0 0 1 200 S
+120 1 240 240 0 10000d0+0 0d0+1000
+1200 0 0
+0 0 1
+0 0 0
+#16347
+Giantess female Giant~
+a Giantess~
+A Giantess walks around here.
+~
+A tall, buxom Giant woman.  
+~
+1 0 0 0 0 0 S
+90 1 180 180 50000 50000d0+0 0d0+0
+900 0 0
+0 0 2
+0 0 0
+#16349
+Thorgaard~
+Thorgaard~
+The high priest, Thorgaard, holds services for the devout.
+~
+A large, broad-shouldered Giant, Thorgaard is known for his ferocious
+temper.  
+~
+11 134217856 16 0 1 0 S
+130 1 260 260 30000 30000d0+0 0d0+100
+1300 0 0
+0 0 1
+0 0 0
+#16350
+Brugi weapons master~
+Brugi~
+Brugi stands here, training recruits.
+~
+The brother of the legendary wrestler, Bruni, Brugi is known more for his
+amazing skills in weapons.  He trains young Giants in weapons use and other
+skills necessary to barbarians.  
+~
+1027 0 0 0 1 0 S
+120 1 240 240 0 0d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+#16351
+giant~
+a young Giant~
+A young Giant spars with practice weapons.
+~
+Looking good...
+~
+3 0 0 0 0 0 S
+10 1 20 20 500 500d0+0 0d0+0
+100 0 0
+0 0 1
+0 0 0
+#16355
+giant warrior~
+a Giant warrior~
+A Giant warrior stands here, guarding the Hall.
+~
+A large, bored-looking guard.
+~
+3 0 0 0 0 0 S
+15 1 30 30 500 500d0+0 0d0+0
+150 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+look $n
+say Ah, $n, going to go wolf hunting?
+say Just be careful, things can get nasty if there's a lot of them.
+~
+|
+#16356
+Giant~
+a Giant~
+A mighty Giant warrior strides through the hall.
+~
+A large, strong-looking Giant warrior.
+~
+1 0 0 0 0 0 S
+90 1 180 180 60000 60000d0+0 0d0+0
+900 0 0
+0 0 1
+0 0 0
+#16357
+white wolf~
+a white wolf~
+A white wolf stalks through the snow.
+~
+A vicious creature with a beautiful white coat.
+~
+1 0 0 0 0 0 S
+5 1 10 10 50 50d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+#16358
+Giant youth~
+a Giant youth~
+A Giant youth is here.
+~
+Not having grown fully, this Giant youth only stands 8 feet or so.
+~
+1 0 0 0 0 0 S
+7 1 14 14 300 300d0+0 0d0+0
+70 0 0
+0 0 1
+0 0 0
+#16391
+gnomeflinger operator~
+The Gnomeflinger Operator~
+The operator of the Gnomeflinger stands ready.
+~
+The operator of the gnomeflinger stands at it's side with his hand on the
+lever.  He is a fairly middle-sized gnome of a young age.  He is a quite
+talkative and energetic fellow to say the least.  As you approach him he
+readily begins to explain the gear ratios of the catapult and how to adjust
+them to get you to the different levels of the village safely.  
+~
+524355 268435584 16 0 3 0 S
+150 1 300 300 100000 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+ smile $n
+ say HulloIamtheoperatorofthegnomeflinger!
+ say Whichfloorwouldyouliketogoto?
+ emote grips the lever on the catapult firmly.
+mpechoat $n &RTwo &B- &WFor players level 1 to 4
+ mpechoat $n &RThree &B- &WFor players level 5-12
+ mpechoat $n &WType &Rsay <floor number> &Wto go there.
+ mpechoaround $n &wThe operator explains the catapult to $n.
+endif
+~
+>speech_prog two~
+if ispc($n) == 1
+ emote helps you into the basket of the gnomeflinger.
+ say Nextstop,floornumbertwo! Enjoyyourstay!
+ emote jerks the lever flinging you upwards
+ yell Headsup! Oneflungtoleveltwo!
+ mpechoat $n &CA rush of cool wind floods your senses.
+ mptrans $n 16401
+ mpechoat $n &YYou land with a loud THUD!
+ mpat $n mpforce $n look
+endif
+~
+>speech_prog three~
+if ispc($n) == 1
+ emote helps you into the basket of the gnomeflinger.
+ say Nextstop,floornumberthree! Enjoyyourstay!
+ emote jerks the lever flinging you upwards
+ yell Headsup! Oneflungtolevelthree!
+ mpechoat $n &CA rush of cool wind floods your senses.
+ mptrans $n  16411
+ mpechoat $n &YYou land with a loud THUD!
+ mpat $n mpforce $n look
+endif
+~
+|
+#16392
+Goodkind and Sciora~
+Goodkind, the banker, and Sciora, the merchant.~
+Goodkind, the banker, and the merchant Sciora are here to help you.
+~
+~
+655427 128 327696 0 2 0 S
+150 1 300 300 40000 40000d0+0 0d0+10000
+1500 0 0
+0 0 1
+0 0 0
+#16397
+gnimsh the wise~
+Gnimsh The Wise~
+Gnimsh The Wise is here relating tales from many linquistic backgrounds.
+~
+Gnimsh The Wise is a faily aged gnome.  His long wispy white hair and
+beard shimmer in the breeze as he tells the tales of races long forgotten. 
+He has a great deal of travel experience and can even help you learn the
+languages of other races so that you may interect with them effectively.  
+~
+589891 268435584 262160 0 3 0 S
+150 1 300 300 100000 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+ say Ahh,hullothere! $nisit? Perhapsyouwouldliketo&Rlearn&Walanguage?
+ smile $n
+endif
+~
+|
+#16398
+gnorsh~
+Gnorsh~
+Gnorsh, the trainer, is here to aid you.
+~
+~
+524867 301990016 16 0 3 0 S
+150 1 300 300 75000 75000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n)==1
+ grin $n
+ say Hullo! Howareyoudoing? Me? I'mgreat!
+ say Whatshallwe&Rpractice&Wtoday?
+endif
+~
+|
+#16399
+Grizdish~
+Grizdish~
+The head of the Center of Training, Grizdish, is here to aid you.
+~
+~
+524867 402653312 16 0 3 0 S
+150 1 300 300 75000 75000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n)==1
+ grin $n
+ say Welcomewelcomethere... $n!
+ say Ifyouarelookingto&Rtrain&Wyou'vecometotherightplace!
+endif
+~
+|
+#16400
+Tika gnomish healer~
+Tika, the Gnomish Healer~
+Tika, the Gnomish Healer is here diligently healing those in need.
+~
+~
+524363 335544448 16 0 3 0 S
+150 1 300 300 75000 75000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n)==1
+ smile $n
+ say Hullothere, $n! MakeyourselfcomfortablewhileI&Rheal&Wyou!
+endif
+~
+|
+#16401
+gnomeflinger operator~
+The Gnomeflinger Operator~
+The operator of the Gnomeflinger stands ready.
+~
+~
+524355 268435584 16 0 3 0 S
+150 1 300 300 100000 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+ smile $n
+ say HulloIamtheoperatorofthegnomeflinger!
+ say Whichfloorwouldyouliketogoto?
+ emote grips the lever on the catapult firmly.
+ mpechoat $n &ROne &B- &WFor players of all levels
+ mpechoat $n &RThree &B- &WFor players level 5-12
+ mpechoat $n &WType &Rsay <floor number> &Wto go there.
+ mpechoaround $n &wThe operator explains the catapult to $n.
+endif
+~
+>speech_prog one~
+if ispc($n) == 1
+ emote helps you into the basket of the gnomeflinger.
+ say Nextstop,floornumberone! Enjoyyourstay!
+ emote jerks the lever flinging you upwards
+ yell Headsup! Oneflungtolevelone!
+ mpechoat $n &CA rush of cool wind floods your senses.
+ mptrans $n 16391
+ mpechoat $n &YYou land with a loud THUD!
+ mpat $n mpforce $n look
+endif
+~
+>speech_prog three~
+if ispc($n) == 1
+ emote helps you into the basket of the gnomeflinger.
+ say Nextstop,floornumberthree! Enjoyyourstay!
+ emote jerks the lever flinging you upwards
+ yell Headsup! Oneflungtolevelthree!
+ mpechoat $n &CA rush of cool wind floods your senses.
+ mptrans $n  16411
+ mpechoat $n &YYou land with a loud THUD!
+ mpat $n mpforce $n look
+endif
+~
+|
+#16402
+hyperactive young gnome~
+A hyperactive young gnome~
+A hyperactive young gnome runs about chittering gibberish.
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 20 20d0+0 0d0+200
+20 0 0
+0 0 1
+0 0 0
+#16403
+hyperactive young gnome~
+A hyperactive young gnome~
+A hyperactive young gnomish female prances about.
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 20 20d0+0 0d0+200
+20 0 0
+0 0 2
+0 0 0
+#16405
+shouting gnome~
+A shouting gnome~
+An older looking gnome sits here shouting at the children.
+~
+~
+3 0 0 0 0 0 S
+3 1 6 6 75 75d0+0 0d0+500
+30 0 0
+0 0 1
+0 0 0
+#16406
+singing gnome~
+A singing gnome~
+A female gnome walks about singing merrily.
+~
+~
+1 0 0 0 0 0 S
+3 1 6 6 75 75d0+0 0d0+750
+30 0 0
+0 0 2
+0 0 0
+#16407
+offkey gnome~
+An offkey gnome~
+A gnome wanders around here singing offkey.
+~
+~
+1 0 0 0 0 0 S
+3 1 6 6 75 75d0+0 0d0+750
+30 0 0
+0 0 1
+0 0 0
+#16408
+musician gnome~
+The musician gnome~
+A gnome sits on a large rock playing on a lute.
+~
+~
+3 0 0 0 0 0 S
+5 1 10 10 350 350d0+0 0d0+1000
+50 0 0
+0 0 1
+0 0 0
+#16409
+worker gnome~
+A worker gnome~
+A gnome is here working on extending the tunnel.
+~
+~
+1 0 0 0 0 0 S
+5 1 10 10 350 350d0+0 0d0+2000
+50 0 0
+0 0 1
+0 0 0
+#16410
+worker gnome~
+A worker gnome~
+A gnome is here taking a quick break from his work.
+~
+~
+1 0 0 0 0 0 S
+5 1 10 10 350 350d0+0 0d0+2000
+50 0 0
+0 0 1
+0 0 0
+#16411
+gnomeflinger operator~
+The Gnomeflinger Operator~
+The operator of the Gnomeflinger stands ready.
+~
+~
+524355 268435584 16 0 3 0 S
+150 1 300 300 100000 100000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+ smile $n
+ say HulloIamtheoperatorofthegnomeflinger!
+ say Whichfloorwouldyouliketogoto?
+ emote grips the lever on the catapult firmly.
+ mpechoat $n &ROne &B- &WFor players of all levels
+ mpechoat $n &RTwo &B- &WFor players level 1-5
+ mpechoat $n &WType &Rsay <floor number> &Wto go there.
+ mpechoaround $n &wThe operator explains the catapult to $n.
+endif
+~
+>speech_prog one~
+if ispc($n) == 1
+ emote helps you into the basket of the gnomeflinger.
+ say Nextstop,floornumberone! Enjoyyourstay!
+ emote jerks the lever flinging you upwards
+ yell Headsup! Oneflungtolevelone!
+ mpechoat $n &CA rush of cool wind floods your senses.
+ mptrans $n 16391
+ mpechoat $n &YYou land with a loud THUD!
+ mpat $n mpforce $n look
+endif
+~
+>speech_prog two~
+if ispc($n) == 1
+ emote helps you into the basket of the gnomeflinger.
+ say Nextstop,floornumbertwo! Enjoyyourstay!
+ emote jerks the lever flinging you upwards
+ yell Headsup! Oneflungtoleveltwo!
+ mpechoat $n &CA rush of cool wind floods your senses.
+ mptrans $n  16401
+ mpechoat $n &YYou land with a loud THUD!
+ mpat $n mpforce $n look
+endif
+~
+|
+#16420
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#16421
+halfdwarf~
+a Halfdwarf~
+A Halfdwarf sits here, drinking.
+~
+He seems to be enjoying his ale.
+~
+3 0 0 0 0 200 S
+10 1 20 20 500 500d0+0 0d0+0
+100 0 0
+0 0 1
+0 0 0
+#16425
+elven ranger~
+an Elven ranger~
+An Elven ranger sits here, drinking.
+~
+He looks far more grizzled than most Elves you've seen.
+~
+3 0 0 0 0 200 S
+30 1 60 60 1500 5000d0+0 0d0+0
+300 0 0
+0 0 1
+0 0 0
+>rand_prog ~
+emote stares into the fire pensively.
+~
+|
+#16429
+master trainer ranger~
+the master trainer~
+A tough-looking ranger directs the training.
+~
+A hard-bitten old ranger with muscles like iron.  He looks over you
+appraisingly.  
+~
+515 0 0 0 1 0 S
+120 1 240 240 4000 4000d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+#16430
+borik~
+Borik~
+A burly dwarf barkeep is here, serving ale.
+~
+A tough-looking halfdwarf with one eye, Borik has seen it all in his
+years in Cutter's Scarp.  
+~
+11 0 0 0 1 0 S
+120 1 240 240 0 0d0+0 0d0+1000
+1200 0 0
+0 0 1
+0 0 0
+>rand_prog 10~
+mpecho A table of trappers suddenly bursts into rough laughter.
+~
+>rand_prog 5~
+mpecho A Halfdwarf ranger tramps into the inn.
+~
+|
+#16434
+randolphus priest~
+Randolphus~
+Randolphus, a human priest, is here.
+~
+A young man in white robes, Randolphus has travelled here to preach to
+the faithful.  Good-natured and eager, the dour Halfdwarves of the town
+tolerate him and his often overeager attempts at conversion.  
+~
+11 0 0 0 1 500 S
+120 1 240 240 70000 70000d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+>act_prog ~
+~
+|
+#16435
+Grobler ranger~
+Grobler~
+The old ranger, Grobler, is here.
+~
+A short, burly old halfdwarf with snow white beard.  
+~
+1027 0 0 0 1 0 S
+120 1 240 240 0 0d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+say Eh? Come to learn the ways of the wilderness, eh?
+grin $n
+~
+|
+#16437
+halfdwarf ranger~
+a Halfdwarf ranger~
+A fur-clad Halfdwarf trudges through the snow.
+~
+A dour-looking fellow.  
+~
+1 0 0 0 0 300 S
+20 1 40 40 1000 1000d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#16446
+Taridar trader~
+Taridar~
+The trader, Taridar, is here.
+~
+A taciturn halfdwarf dressed in furs.
+~
+3 0 0 0 1 0 S
+120 1 240 240 0 0d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+#16447
+snowbeast~
+a snowbeast~
+A vicious snowbeast crouches here, preparing to spring.
+~
+A nasty-looking creature with burning yellow eyes, white fur, and long,
+sharp claws.  It seems to have climbed the palisade wall, and now makes it's
+lair here.  
+~
+67 0 0 0 0 0 S
+8 1 16 16 30 30d0+0 0d0+0
+80 0 0
+0 0 0
+0 0 0
+#16530
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#16551
+conjured imp~
+an imp~
+An imp, conjured from the nether regions, grins at you evilly.
+~
+A vile little creature summoned by its master to perform simple tasks.  
+~
+1 0 0 0 0 0 S
+1 1 2 2 9 9d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#16552
+young minotaur~
+a young Minotaur~
+A young Minotaur glares at you as he walks by.
+~
+A young Minotaur, eager to prove his worth.
+~
+1 0 0 0 0 -400 S
+10 1 20 20 400 400d0+0 0d0+0
+100 0 0
+0 0 1
+0 0 0
+#16553
+minotaur~
+a Minotaur~
+A Minotaur strides by, paying no attention to you.
+~
+A tall, arrogant-looking Minotaur.
+~
+1 0 0 0 0 -500 S
+20 1 40 40 2000 2000d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#16554
+minotaur guard temple minos~
+a Temple guard~
+A huge Minotaur in red armor stands here.
+~
+A large, powerful-looking Minotaur, he serves the high priest of the
+Temple, and patrols the Temple grounds.  
+~
+3 234881216 32 24576 0 -500 S
+115 1 240 500 0 50000d0+0 0d0+100
+1150 12 0
+0 0 1
+2 0 0
+#16555
+lesser demon~
+a lesser demon~
+A small demon skulks through the darkness.
+~
+A small winged demon, green and scaly.
+~
+1 0 0 0 0 -500 S
+3 1 6 6 30 30d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+#16560
+gash-tarr trainer~
+Gash-Tarr~
+The Minotaur trainer, Gash-Tarr, is here.
+~
+A heavily-muscled Minotaur warrior, Gash-Tarr has been appointed trainer
+of the young Minotaurs of the town.  
+~
+3 0 0 0 1 -100 S
+120 1 240 240 30000 30000d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+emote snorts at $n.
+look $n
+if race($n)==15
+say Welcome, $n.
+say Wish you to train?
+endif
+if race($n)<16
+growl
+say Your kind is not welcome here!
+push $n south
+endif
+~
+|
+#16573
+summoned spirit~
+a summoned spirit~
+A summoned spirit lurks here.
+~
+A vicious little spirit, summoned by the Minotaurs to ensnare outsiders,
+making them lose their way in the labyrinth.  
+~
+3 65536 2097152 0 0 0 S
+50 1 100 100 5000 5000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>all_greet_prog 10~
+if ispc($n)
+mpecho The labyrinth twists and turns maddingly.
+mptrans $n 16555
+mpechoat $n The Labyrinth twists and turns maddingly, and you reel in drunken confusion.
+mptrans $n 16555
+endif
+~
+|
+#16576
+Sorgath~
+Sorgath~
+The Minotaur spell-peddler, Sorgath, sits here.
+~
+A tall, lean minotaur of dubious reputation, Sorgath is known for his
+deviousness, extreme by even minotaur standards.  He sits here selling goods
+stolen, traded, and swindled.  
+~
+524291 0 0 0 1 -400 S
+120 1 240 240 1 1d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+#16577
+gor-thal provisioner minotaur~
+Gor-Thal~
+A large minotaur is here, selling various objects.
+~
+A large minotaur with chipped horns and many scars, Thal-Mok has retired
+from raiding to sell provisions to the inhabitants of Thara-Gor.
+~
+3 0 0 0 1 -400 S
+120 1 240 240 10000 10000d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+#16578
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#16579
+Charon-Thael~
+Charon-Thael~
+The mighty Minotaur archconjurer, Charon-Thael, looms before you.
+~
+A towering figure dressed all in crimson, Charon-Thael rules Khara-Gor
+with an iron fist.  A demonologist of extraordinary powers, he can bind even
+the mightiest demon to his will.   
+~
+1091 503316672 65536 2048 2 -700 S
+105 1 210 210 90000 90000d0+0 0d0+0
+1050 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+mpecho You hear a deep rumbling coming from Charon-Thael's throat.
+if level($n)>107
+say Welcome, Mighty One.
+bow $n
+break
+endif
+if race($n)==minotaur
+say Ah, young $n.  Shall I teach you the ways of our people?
+break
+endif
+say Begone, $n!
+say You are not welcome here!
+emote gestures, and a glowing red nimbus envelops $n.
+mptrans $n 16551
+break
+endif
+~
+|
+#16580
+Thal-Mok minotaur priest~
+Thal-Mok~
+The high priest of the temple, Thal-Mok, stands before you.
+~
+An ancient minotaur dressed in crimson and gold, Thal-Mok is one of the
+most powerful spellcasters in Khara-Gor.  His horns are ivory with age, and
+many scars crisscross his stooped body, but his eyes gleam with venomous
+power.  Though never managing to achieve the rulership of Khara-Gor, he is
+feared by most of the town's residents.  Considering that minotaurs are
+extremely hard to frighten, you think maybe you should show respect to the
+aged cleric; even the mighty Charon-Thael will not cross Thal-Mok lightly.  
+~
+75 33554560 0 0 1 -800 S
+130 1 260 260 10000 10000d0+0 0d0+0
+1300 0 0
+0 0 1
+2 0 0
+>act_prog p enters the area from the temple doors.~
+if level($n)>108
+say Who enters my temple?
+look $n
+emote suddenly looks frightened.
+say Forgive me, Mighty One.
+bow $n
+break
+endif
+if race($n)==minotaur
+say Welcome, $n.
+break
+endif
+say Who dares invade the sacred Temple?  Leave, outsider, you are not welcome!
+say Guards!  Expulse $n!
+mpforce minos push $n south
+break
+endif
+~
+|
+#16590
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#16595
+surly drow innkeeper~
+a surly drow innkeeper~
+A surly drow innkeeper is here.
+~
+A unkempt drow in stained clothing, he looks at you with a look of
+scarcely concealed contempt.  
+~
+67 0 0 0 0 0 S
+50 1 100 100 0 50000d0+0 0d0+0
+0 8 0
+0 0 1
+0 0 0
+#16596
+drow~
+a drow~
+A cloaked drow moves through the shadows.
+~
+An unfriendly-looking fellow.
+~
+65 0 0 0 0 -500 S
+30 1 5 60 0 5000d0+0 0d0+0
+6 8 0
+0 0 0
+0 0 0
+>greet_prog 100~
+if race($n)==drow
+emote nods coldly.
+break
+endif
+say Outsiders are not welcome here!
+glare $n
+break
+endif
+~
+|
+#16599
+drow cut throat~
+a drow cut-throat~
+A Drow cut-throat skulks through the shadows.
+~
+A dangerous-looking Drow dressed all in black.  
+~
+65 0 0 0 0 -800 S
+60 1 5 15 0 17000d0+0 0d0+0
+0 8 0
+0 0 1
+0 0 0
+#16600
+drow apprentice assassin~
+a Drow apprentice assassin~
+An apprentice assassin is training here.
+~
+An evil-looking drow youth.
+~
+3 0 0 0 0 -600 S
+4 1 8 8 0 50d0+0 0d0+0
+2 0 0
+0 0 0
+0 0 0
+#16601
+mizenraich drow assassin~
+Mizenraich~
+An ancient drow sits here, cloaked in black.
+~
+Before you sits the legendary Master of Assassins, Mizenraich.  Cold,
+white eyes blaze from a face obscured by a black hood, and raspy breathing
+echos through the chamber.  
+~
+3 234881088 4980912 139264 2 -1000 S
+110 1 40 40 0 50000d0+0 0d0+0
+1000 8 0
+0 0 1
+2 0 0
+#16602
+Drow guard~
+a Drow guard~
+A powerful-looking Drow warrior stands here, guarding the master.
+~
+~
+1 64 0 0 0 0 S
+98 1 196 196 0 40000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#16605
+chiral drow queen~
+Chiral~
+Chiral, Queen of the Drow sits here.
+~
+A breathtakingly beautiful drow woman with silver hair and skin as black
+as night.  Her voluptous body is clothed with a flimsy silk robe open at the
+front, and a flimsy silk square around her waist.  Her eyes flash with
+cruelty and lust, and her blood-red lips open in a cat-like smile.  
+~
+67 201326784 0 0 0 -1000 S
+104 1 10 10 0 70000d0+0 0d0+0
+0 8 0
+0 0 2
+0 0 0
+>greet_prog 100~
+emote looks at $n with sultry eyes.
+say What do you wish, $n?
+if sex($n)==1
+look $n
+emote murmurs 'what a fine specimen.'
+break
+endif
+elseif sex($n)==2
+say You are indeed a lovely creature.
+emote eyes roam over $n's nubile body.
+grin
+endif
+~
+|
+#16609
+drow handmaiden~
+a drow handmaiden~
+A lovely young handmaiden sits at her queen's feet.
+~
+Dressed 
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#16301
+town~
+town~
+A town sits on its banks.~
+~
+29 0 0 0 0 0 0
+100 100
+16301~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16302
+runed wand~
+a runed wand~
+A wand lies here.~
+~
+3 1024 0 0 0 16385 50
+100 100
+50~ 1~ 1~ lightning bolt~
+2 56 0
+0 0
+reserved~
+0 0
+0 0 0
+#16303
+fountain~
+a marble fountain~
+A beautiful marble fountain is here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16305
+gleaming silver longsword~
+a gleaming silver longsword~
+A gleaming sword lies here.~
+~
+5 0 0 0 0 8193 103
+100 100
+0~ 40~ 90~ 1~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 25
+A
+18 25
+#16306
+white marble box~
+a white marble box~
+A large box constructed of white marble is here.~
+~
+15 0 0 0 0 0 0
+100 100
+200~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16307
+leather breastplate~
+a leather breastplate~
+A breastplate lies here.~
+~
+9 0 0 0 0 9 1
+100 100
+5~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16308
+oaken club~
+an oaken club~
+A staff lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 1~ 7~ 8~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 2
+#16309
+white robe~
+a white robe~
+A robe is here.~
+~
+9 0 0 0 0 1025 1
+100 100
+3~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16310
+clove garlic~
+a clove of garlic~
+Some garlic lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+2~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+16312 16310 16311
+#16311
+ginseng~
+some ginseng~
+A strange root lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+1~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+16312 16310 0
+#16312
+herb packet~
+an herb packet~
+A packet lies here.~
+~
+26 0 0 0 0 1 1
+100 100
+99~ cure poison~ reserved~ reserved~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16313
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16314
+essence wormswort~
+essence of wormswort~
+An herb lies here.~
+~
+26 0 0 0 0 1 50
+100 100
+10~ cure light~ reserved~ reserved~
+1 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#16315
+vial cleardew~
+a vial of cleardew~
+A small vial lies here.~
+~
+10 268435456 0 0 0 1 10
+100 100
+2~ detect poison~ reserved~ reserved~
+1 28 0
+0 0
+reserved~
+0 0
+0 0 0
+#16316
+spell book spellbook~
+a spellbook~
+A small book lies here.~
+~
+8 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+2 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+12 70
+E
+book~
+A small book filled with arcane spells and mystical equations.
+~
+#16317
+ancient scroll~
+an ancient scroll~
+A yellowing scroll lies here.~
+~
+2 0 0 0 0 1 50
+100 100
+50~ protection evil~ reserved~ reserved~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16318
+wooden staff~
+a simple wooden staff~
+A staff lies here.~
+~
+5 805307456 163840 0 0 8193 100
+100 100
+0~ 40~ 100~ 6~
+4 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 100
+A
+18 50
+A
+19 50
+#16319
+simple white robe~
+a simple white robe~
+A white robe lies here.~
+~
+9 0 0 0 0 9 1
+100 100
+1~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16320
+brightly glowing orb~
+a brightly glowing orb~
+An orb hovers here.~
+~
+9 0 0 0 0 32769 1
+100 100
+1~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+A
+19 1
+#16321
+ivory torch~
+an ivory torch~
+An ivory torch is here.~
+~
+1 0 0 0 0 16385 1
+100 100
+0~ 0~ -1~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16324
+illusionist staff~
+an illusionist's staff~
+A staff lies here.~
+~
+4 65 0 0 0 16385 0
+100 100
+10~ 1~ 1~ colour spray~
+2 1 0
+4 16325
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+4 1
+A
+12 20
+#16325
+wooden rod~
+a short wooden rod~
+A short wooden rod lies here.~
+~
+13 0 0 0 0 16385 5
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+4 16324
+reserved~
+0 0
+0 0 0
+#16327
+silver gold key~
+a silver and gold key~
+A key lies here.~
+~
+18 64 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16328
+mystic gem~
+a mystic gem~
+A gem lies here.~
+~
+8 64 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+0 4 0
+3 16318
+reserved~
+0 0
+0 0 0
+#16329
+ball light~
+a ball of light~
+A ball of light lies here.~
+~
+9 64 0 0 0 32769 1
+100 100
+1~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+18 1
+#16330
+two handed axe~
+a two-handed axe~
+A large axe lies here.~
+~
+5 0 32768 0 0 8193 10
+100 100
+0~ 10~ 20~ 1~
+5 28 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+#16331
+opening mountain cave giant~
+opening~
+There is a huge opening carved into the mountain here.~
+~
+29 0 0 0 0 0 0
+100 100
+16330~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16332
+salted herring~
+a salted herring~
+A salted herring lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+3~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16333
+large fur cape~
+a large fur cape~
+A cape lies here.~
+~
+9 0 0 0 0 1025 104
+100 100
+9~ 0~ 0~ 0~
+15 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#16334
+mighty axe~
+a mighty two-handed axe~
+A huge axe lies here.~
+~
+5 0 32768 0 0 8193 104
+100 100
+0~ 0~ 0~ 1~
+20 4000 0
+5 0
+word of recall~
+-1 -1
+0 0 0
+A
+25 100
+A
+12 250
+A
+13 250
+A
+18 100
+A
+19 85
+#16335
+chain mail hauberk~
+a chain mail hauberk~
+A hauberk lies here.~
+~
+9 0 0 0 0 9 104
+100 100
+17~ 0~ 0~ 0~
+100 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#16336
+leather apron~
+a leather apron~
+An apron lies here.~
+~
+9 0 0 0 0 9 100
+100 100
+10~ 0~ 0~ 0~
+10 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16337
+iron broadsword~
+an iron broadsword~
+A sword lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 1~ 10~ 1~
+5 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+18 1
+#16338
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16339
+huge hammer~
+a huge hammer~
+A hammer lies here.~
+~
+5 192 0 0 0 1 130
+100 100
+0~ 50~ 150~ 6~
+50 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 300
+A
+26 100
+#16340
+roasted boar~
+a roasted boar~
+A boar roasts on the spit.~
+~
+19 0 0 0 0 1 1
+100 100
+12~ 0~ 0~ 0~
+100 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16341
+ring mail vest~
+a ring mail vest~
+A vest lies here.~
+~
+9 0 0 0 0 9 1
+100 100
+4~ 0~ 0~ 0~
+20 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#16342
+no name~
+a chain mail vest~
+A vest lies here.~
+~
+9 0 0 0 0 9 10
+100 100
+5~ 0~ 0~ 0~
+20 36 0
+0 0
+reserved~
+0 0
+0 0 0
+#16343
+barrel~
+a barrel~
+A large barrel is here.~
+~
+15 0 0 0 0 0 0
+100 100
+300~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16344
+massive two-headed axe~
+a massive two-headed axe~
+A huge axe is here.~
+~
+5 0 32768 0 0 1 100
+100 100
+0~ 20~ 100~ 6~
+20 360 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 50
+A
+18 10
+A
+-99 2
+A
+26 -40
+#16345
+iron breastplate~
+a massive iron breastplate~
+A breastplate lies here.~
+~
+9 0 0 0 0 9 100
+100 100
+20~ 0~ 0~ 0~
+70 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#16346
+bearskin coat~
+a bearskin coat~
+A coat lies here.~
+~
+9 0 0 0 0 1025 1
+100 100
+2~ 0~ 0~ 0~
+4 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#16347
+water barrel~
+water barrel~
+A huge water barrel is here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16348
+statue allfather~
+a statue of the Allfather~
+A towering statue is here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+It portrays the Giants' chief god, the Allfather, portrayed as a huge,
+one-handed warrior.  A huge stone axe is held in his hand, while a stone
+raven perches on one broad shoulder.  
+~
+#16349
+huge stone altar~
+a huge stone altar~
+A huge stone altar is here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16350
+iron shod mace~
+an iron-shod mace~
+A huge mace is here.~
+~
+5 64 0 0 0 8193 100
+100 100
+0~ 0~ 0~ 8~
+15 92 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+18 20
+A
+19 40
+#16351
+large wooden box~
+a large wooden box~
+A large wooden box has been placed here.~
+~
+15 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16352
+iron mace~
+an iron mace~
+An iron mace lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 1~ 20~ 7~
+15 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+A
+19 1
+#16354
+wooden shield~
+a wooden shield~
+A shield lies here.~
+~
+9 0 0 0 0 513 1
+100 100
+3~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16355
+wolfskin cloak~
+a wolfskin cloak~
+A white cloak lies here.~
+~
+9 0 0 0 0 1025 1
+100 100
+3~ 0~ 0~ 0~
+4 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16356
+torch~
+a torch~
+A torch lies here.~
+~
+1 0 0 0 0 16385 1
+100 100
+0~ 0~ 10~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16391
+gnomeflinger catapult~
+the Gnomeflinger~
+A large catapult dubbed "The Gnomeflinger" sits here.~
+~
+12 2 270336 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>rand_prog 10~
+0
+recho &YThe Gnomeflinger shudders briefly as a blast of steam erupts from one of it's sides.
+~
+|
+#16397
+rock fountain~
+rock fountain~
+A circular fountain made of rock sits in the middle of the plaza.~
+~
+25 1 262144 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16402
+worn travelling cloak~
+a Worn Cloak~
+A worn out travelling cloak is here.~
+~
+9 0 0 0 0 1025 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#16403
+worn travelling hood~
+a Worn Hood~
+A worn out travelling hood is here.~
+~
+9 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#16405
+walking stick~
+a Walking Stick~
+A walking stick carved from sturdy wood is here.~
+~
+9 0 0 0 0 16385 2
+100 100
+0~ 0~ 0~ 0~
+1 28 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+A
+5 1
+#16406
+name onyx ring~
+an Onyx Ring~
+A ring carved from onyx is here.~
+~
+9 0 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16408
+lute~
+a Lute~
+A finely tuned, wooden lute is here.~
+~
+5 2 0 0 0 8193 5
+100 100
+0~ 0~ 0~ 0~
+2 48 0
+0 0
+reserved~
+0 0
+0 0 0
+#16409
+sturdy boots~
+sturdy Boots~
+A pair of sturdy boots are here.~
+~
+9 536870912 0 0 0 65 3
+100 100
+0~ 0~ 0~ 0~
+2 16 0
+0 0
+reserved~
+0 0
+0 0 0
+#16421
+cutter's scarp town~
+cutter's Scarp~
+The small walled town of Cutter's Scarp huddles against the mountain.~
+~
+29 0 0 0 0 0 0
+100 100
+16421~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16425
+cistern water~
+a cistern~
+Melted snow pours off the inn roof into a cistern.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16430
+bottle dwarven whiskey~
+a bottle of Dwarven whiskey~
+A bottle lies here.~
+~
+17 0 0 0 0 1 1
+100 100
+2~ 2~ 5~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16431
+mug ale~
+a mug of ale~
+A clay mug lies here.~
+~
+17 0 0 0 0 1 1
+100 100
+2~ 2~ 3~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16432
+leg mutton~
+a leg of mutton~
+A leg of mutton is here.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16433
+bread~
+a hunk of bread~
+A piece of bread lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+4~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16434
+hunting spear~
+a hunting spear~
+A spear is here.~
+~
+5 0 32768 0 0 8193 20
+100 100
+0~ 1~ 5~ 2~
+4 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 10
+#16435
+furs~
+some furs~
+Some furs lie here.~
+~
+9 0 0 0 0 9 100
+100 100
+6~ 0~ 0~ 0~
+4 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16436
+hunting bow~
+a hunting bow~
+A bow lies here.~
+~
+5 0 32768 0 0 8193 1
+100 100
+1~ 0~ 0~ 15~
+1 1 0
+5 0
+magic missile~
+5 5
+0 0 0
+#16437
+fur boots~
+a pair of fur boots~
+A pair of boots lies here.~
+~
+9 0 0 0 0 8257 20
+100 100
+5~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16443
+snow covered bin~
+a snow-covered bin~
+A snow-covered bin is here, filled with refuse.~
+~
+15 0 0 0 0 0 1
+100 100
+30~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16444
+wooden cudgel~
+a wooden cudgel~
+A sturdy wooden cudgel lies here.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 1~ 5~ 7~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16446
+bearskin coat~
+a bearskin coat~
+A coat lies here.~
+~
+9 0 0 0 0 1025 1
+100 100
+2~ 0~ 0~ 0~
+4 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#16447
+hunting knife~
+a hunting knife~
+A broad hunting knife is here.~
+~
+5 0 0 0 0 1 1
+100 100
+0~ 1~ 5~ 2~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#16448
+warm blanket~
+a warm blanket~
+A warm blanket is here.~
+~
+13 0 0 0 0 1025 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16449
+piece dried beef~
+a piece of dried beef~
+A piece of dried beef lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16450
+leather satchel~
+a leather satchel~
+A satchel lies here.~
+~
+15 0 0 0 0 16385 1
+100 100
+40~ 0~ 0~ 0~
+5 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16451
+waterskin~
+a waterskin~
+A waterskin lies here.~
+~
+17 0 0 0 0 1 1
+100 100
+3~ 3~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16550
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16551
+opening town khara gor~
+entrance~
+A large opening has been carved in the cliff face.~
+~
+29 0 0 0 0 0 0
+100 100
+16550~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16554
+fountain~
+a stone fountain~
+A large fountain constructed out of dark stone is here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16555
+skull-topped staff~
+a skull-topped staff~
+A skull-topped staff lies here.~
+~
+13 0 0 0 0 16385 20
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+2 16555
+reserved~
+1 1
+0 0 0
+#16556
+red battle armor~
+red battle armor~
+A suit of armor lies here.~
+~
+9 0 0 0 0 9 100
+100 100
+10~ 0~ 0~ 0~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 10
+#16557
+glaive~
+a bronze glaive~
+A glaive lies here.~
+~
+5 33554432 32768 0 0 8193 100
+100 100
+0~ 10~ 50~ 1~
+10 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 10
+#16560
+hunk raw meat~
+a hunk of raw meat~
+Some meat lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16561
+leather sack~
+a leather sack~
+A leather sack lies here.~
+~
+15 0 0 0 0 16385 1
+100 100
+40~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16562
+black Drow meshmail~
+a hauberk of black Drow meshmail~
+A mail shirt lies here.~
+~
+9 576 0 4100 2048 9 100
+100 100
+5~ 0~ 0~ 0~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+A
+19 30
+A
+18 30
+A
+1 1
+#16563
+black broadsword soulreaver~
+a black broadsword named "Soulreaver"~
+A deadly-looking sword lies here.~
+~
+5 81 0 0 0 8193 100
+100 100
+0~ 10~ 50~ 3~
+4 1600 0
+5 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+1 1
+A
+18 20
+A
+19 40
+A
+12 50
+A
+26 100
+#16570
+bronze dagger~
+a bronze dagger~
+A dagger lies here.~
+~
+5 0 0 0 0 8193 5
+100 100
+0~ 1~ 10~ 11~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+18 1
+#16571
+amulet bronze~
+a bronze amulet~
+An amulet lies here.~
+~
+8 0 0 0 0 5 5
+100 100
+0~ 0~ 0~ 0~
+2 360 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+12 5
+#16573
+glowstone~
+a glowstone~
+A glowing stone lies here.~
+~
+1 0 0 0 0 16385 1
+100 100
+0~ 0~ -1~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16576
+vicious looking cudgel club~
+a vicious-looking cudgel~
+A club lies here.~
+~
+5 0 0 0 0 8193 100
+100 100
+0~ 0~ 0~ 8~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16577
+crimson robes~
+crimson robes~
+Crimson robes lie here.~
+~
+9 0 0 0 0 9 1
+100 100
+2~ 0~ 0~ 0~
+2 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#16578
+red leather vest~
+a red leather vest~
+A leather vest lies here.~
+~
+9 0 0 0 0 9 50
+100 100
+4~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16579
+leather breeches~
+a pair of leather breeches~
+A pair of breeches lies here.~
+~
+9 0 0 0 0 33 50
+100 100
+2~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16580
+temple underdark~
+temple doors~
+A small temple carved in the shape of a skull stands here.~
+~
+29 0 0 0 0 0 0
+100 100
+16580~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16587
+drow city morrinmarch~
+the Gates of Morrinmarch~
+A small walled city stands on the banks of the river.~
+~
+29 0 0 0 0 0 0
+100 100
+16588~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16590
+fountain~
+a grey stone fountain~
+The grey stone fountain gurgles quietly.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16595
+bottle wine~
+a bottle of wine~
+A bottle of wine lies here.~
+~
+17 0 0 0 0 1 1
+100 100
+2~ 2~ 2~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16596
+dark cloak~
+a dark cloak~
+A dark cloak lies here.~
+~
+9 0 0 0 0 1025 1
+100 100
+4~ 0~ 0~ 0~
+4 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#16599
+skull-topped dagger~
+a skull-topped dagger~
+A dagger with a skull-shaped pommel is here.~
+~
+5 64 0 0 0 8193 20
+100 100
+0~ 1~ 20~ 2~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 5
+#16601
+black dagger~
+a black dagger~
+A black dagger lies here.~
+~
+5 578 0 0 0 8193 95
+100 100
+0~ 0~ 0~ 2~
+3 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+5 1
+A
+25 10
+A
+18 20
+A
+19 20
+#16602
+bloodstone amulet~
+a bloodstone amulet~
+An amulet lies here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#16603
+bloodstone amulet~
+a bloodstone amulet~
+An amulet lies here.~
+~
+8 65 0 0 0 5 100
+100 100
+0~ 0~ 0~ 0~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 50
+A
+25 30
+A
+12 100
+A
+18 5
+A
+19 5
+#0
+
+
+
+#ROOMDATA
+#16301
+A White Granite Walkway~
+~
+~
+This gleaming white pathway leads north, into the center of a collection
+of marble buildings.  The grass on either side of the path is immaculately
+cut, and you feel an aura of order and peace permeating the air.  
+~
+0 6 0
+Rd     0
+D0
+~
+~
+0 0 16302
+D2
+~
+~
+0 0 18142
+S
+#16302
+A White Granite Walkway~
+~
+~
+The path leads north to the center of the village and south towards the
+village entrance.  The buildings around you are constructed of gleaming
+white marble seemingly unweathered by the passage of time.  The air is
+quiet; only the sound of birds whistling in the breeze can be heard.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16303
+D2
+~
+~
+0 0 16301
+S
+#16303
+The Town Square~
+~
+~
+You stand in the center of the small town.  All around you rise one and
+two-story buildings constructed of white marble, surrounded by geometrically
+perfect fields of grass.  To the east and west stretch wide roadways, while
+to the north is some sort of temple.  To the south a road leads to the town
+entrance.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16304
+D1
+~
+~
+0 0 16307
+D2
+~
+~
+0 0 16302
+D3
+~
+~
+0 0 16305
+S
+#16304
+The Temple of the Magi~
+~
+~
+This large open building serves as the focal point of the magical
+energies of those who live in the town.  Beautiful stained glass windows are
+set into the otherwise spartan marble walls, casting a rosy glow onto the
+rows of benches facing the altar.  To the south lies a large open doorway
+leading back to the Town Square.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16303
+S
+#16305
+A Wide Roadway~
+~
+~
+The white path leads west towards a large building, and east to the Town
+Square.  To the north is a high marble wall, while to the south a doorway
+gives access to a small marble dwelling.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16303
+D2
+~
+~
+0 0 16319
+D3
+~
+~
+0 0 16306
+S
+#16306
+A Wide Roadway~
+~
+~
+The road comes to an end here, at the entrance to a large marble
+building.  To the north and south are featureless marble walls, while to the
+east the road heads towards the center of town.  You feel a prickling
+sensation on your skin; apparently powerful Magicks are being practiced
+nearby.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16305
+D3
+~
+~
+0 0 16316
+S
+#16307
+A Wide Roadway~
+~
+~
+This wide white path leads east and west through the town.  To the west
+lies the Town Square, while to the east the road continues on past an
+assortment of buildings.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16308
+D3
+~
+~
+0 0 16303
+S
+#16308
+A Wide Roadway~
+~
+~
+The road continues east and west through the peaceful town.  To the north
+lies a stately marble home, while to the south your way is blocked by a high
+wall.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16315
+D1
+~
+~
+0 0 16309
+D3
+~
+~
+0 0 16307
+S
+#16309
+An Intersection~
+~
+~
+The road splits here, heading north, south, and west.  To the east is a
+small building from which a strange scent floats out into the air.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16310
+D1
+~
+~
+0 0 16320
+D2
+~
+~
+0 0 16313
+D3
+~
+~
+0 0 16308
+S
+#16310
+A Street~
+~
+~
+This quiet street runs through a residential part of town.  On either
+side of you are white marble dwellings, beautiful in their simplicity.  To
+the south is an intersection, while to the north the street ends at what
+appears to be a public garden.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16311
+D2
+~
+~
+0 0 16309
+S
+#16311
+A Street~
+~
+~
+The street ends to the north, at the gates of a small public garden.  On
+either side of you are multi-story residential buildings, though there seems
+to be no entrances on this side of them.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16312
+D2
+~
+~
+0 0 16310
+S
+#16312
+A Garden~
+~
+~
+In this public garden are arranged rows of beautiful flowers and
+exquisitely shaped bushes cut into complex geometrical forms.  To the south
+is a quiet street, while on all other sides your way is blocked by high
+white walls.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16311
+S
+#16313
+A Street~
+~
+~
+This narrow street runs north and south through the town.  On either side
+of you are high marble walls.  To the south the road runs for a bit before
+stopping at one of the town's outer walls.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16309
+D2
+~
+~
+0 0 16314
+S
+#16314
+A Dead End~
+~
+~
+The street ends here, at the town's outer wall.  To the east and west are
+half-finished buildings; it looks as if construction is still going on.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16313
+S
+#16315
+A Home~
+~
+~
+You are in a large home, simply yet beautifully constructed.  The walls
+are devoid of decoration, and the only furniture seems to extend out of the
+floor, constructed of the same white marble.
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16308
+S
+#16316
+The Academy~
+~
+~
+In this, the largest building in the town, the Elders learn and refine
+their magical abilities.  Like all of the town's buildings, the Academy is
+constructed of marble, and the lack of decoration gives it an aura of
+cleanliness and order.  To the west is a large archway leading into the
+inner chamber of the Academy, while to the north is the library.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16317
+D1
+~
+~
+0 0 16306
+D3
+~
+~
+0 0 16318
+S
+#16317
+The Library~
+~
+~
+Row upon row of learned texts greet your eyes as you enter this room,
+while magical torches on the walls glow with a steady, undying light.  To
+the south is the Academy entrance.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16316
+S
+#16318
+The Inner Sanctum~
+~
+~
+In this large chamber the mightiest magics are summoned to serve the
+Elders.  For the first time you notice decoration; in this case a huge
+crimson tapestry hangs on the eastern wall, depicting arcane symbols written
+in gold thread.  To the east is the Academy proper.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 16316
+D5
+~
+~
+0 0 16321
+S
+#16319
+The Warrior's House~
+~
+~
+You have entered a small, one-room dwelling.  The decoration is simple
+and spartan, and the walls are unadorned.  To the north is the town's main
+throroughfare.  
+~
+0 14 0
+Rd     0
+D0
+~
+~
+0 0 16305
+S
+#16320
+The Mage's Store~
+~
+~
+This shop is devoted to selling reagents, spell components, and mystical
+herbs.  As this is, for the most part, a town of mages, this shop does a
+brisk business.  
+~
+0 32780 0
+Rd     0
+D3
+~
+~
+0 0 16309
+S
+#16321
+The Tests~
+~
+~
+You stand at the beginning of the corridor for the Tests, used to
+determine if young Elder magi have truly earned the right to use their
+magic.  To the north the corridor runs past several doors, and strange
+lights fill the gloomy hall.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16322
+S
+#16322
+A Corridor~
+~
+~
+The corridor continues to the north.  To the east is a doorway leading
+into a dark room.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16323
+D1
+~
+~
+0 0 16326
+D2
+~
+~
+0 0 16321
+S
+#16323
+A Corridor~
+~
+~
+The corridor continues north and south through the earth.  To the west is
+another doorway, through which you see a strange orange glow.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16324
+D2
+~
+~
+0 0 16322
+D3
+~
+~
+0 0 16329
+S
+#16324
+A Corridor~
+~
+~
+The corridor continues north and south through the earth.  To the east is
+another doorway, through which you see strange colored lights.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16327
+D1
+~
+~
+0 0 16325
+D2
+~
+~
+0 0 16323
+S
+#16325
+The Test of Mind~
+~
+~
+As you enter this room your senses are assailed by strange colors
+pulsating in the air, and constantly changing smells and sounds.  One second
+it looks like you're outside in a field, the next the surroundings change to
+a dark cave.  You try to compose your mind and resist the constant barrage
+of illusions.  
+~
+0 10 0
+Rd     0
+D3
+~
+~
+0 0 16324
+S
+#16326
+The Test of Magic~
+~
+~
+You have reached the first test.  As you peer into this dark room you
+notice shadows starting to move, and a low growl fills the air...  
+~
+0 393226 0
+Rd     0
+D3
+~
+~
+0 0 16322
+S
+#16327
+Before the Final Test~
+~
+~
+The corridor ends at a huge metal door, constructed of silver and gold. 
+You sense magic at work behind the door, magic more powerful than any you
+have encountered here.  
+~
+0 0 0
+Rd     0
+D0
+A huge door constructed of silver and gold.
+~
+door~
+119 16327 16328
+D2
+~
+~
+0 0 16324
+S
+#16328
+The Final Test~
+~
+~
+In this small chamber is the final test for the Academy's students.  On
+the ground is a great golden circle embossed into the floor and glowing with
+protective magic.  Swirling colors fill the air, and you feel a strange
+itching on your skin.  
+~
+0 14 0
+Rd     0
+S
+#16329
+The Test of Fire~
+~
+~
+You have entered a large room, the floors charred and blackened from some
+conlagration.  In the center of the room is a large flame that seemingly
+erupts from the stone, and blasts you with heat and the smell of sulfur.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16323
+S
+#16330
+At the Entrance to Nordheim~
+~
+~
+You stand just inside of the entrance to the enormous cave that holds the
+ancestral home of the Giants.  A huge tunnel, several hundred feet in
+diameter, runs north into the darkness, while to the south you can re-enter
+the wilderness.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16331
+D2
+~
+~
+0 0 18473
+S
+#16331
+The Entrance Hall~
+~
+~
+You stand in a huge hall hewn into the mountain.  To the north you see
+the flicker of torches in the distance, while to the south is the exit. 
+Mammoth torches are set into sconces on the stone wall.  
+~
+0 14 1
+Rd     0
+D0
+~
+~
+0 0 16332
+D2
+~
+~
+0 0 16330
+S
+#16332
+The Entrance Hall~
+~
+~
+The mighty Hall continues north and south through the darkness.  On all
+sides the cave floor has been trampled by huge, booted feet.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16333
+D2
+~
+~
+0 0 16331
+S
+#16333
+Before the Feasting Hall~
+~
+~
+The tunnel ends here, at the entrance to an enormous feasting Hall, the
+legendary Hall of King Urgaard.  Carousing giants quaff enormous cups of
+mead, while huge wolves prowl about for table scraps.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16334
+D2
+~
+~
+0 0 16332
+S
+#16334
+The Feasting Hall~
+~
+~
+You have entered an enormous chamber that has been carved out of the
+heart of the mountain.  Enormous braziers stand at all four corners, filling
+the room with smoke and heat, and an enormous wooden table stands in the
+center of the room.  All around it are Giants, drinking and carousing. 
+There are exits in all four cardinal directions.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16340
+D1
+~
+~
+0 0 16335
+D2
+~
+~
+0 0 16333
+D3
+~
+~
+0 0 16337
+S
+#16335
+A Hallway~
+~
+~
+This corridor runs east off the feasting hall into darkness.  The few
+torches here cast a flickering light against the floor.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16336
+D3
+~
+~
+0 0 16334
+S
+#16336
+A Hallway~
+~
+~
+The corridor continues east and west through the mountain.  To the south
+are an open set of massive bronze doors, through which you see what appears
+to be a temple.  To the north is another, smaller doorway.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16350
+D1
+~
+~
+0 0 16343
+D2
+~
+~
+0 0 16349
+D3
+~
+~
+0 0 16335
+S
+#16337
+A Hallway~
+~
+~
+This hallway runs east and west through the Giant warrens.  To the east
+is a huge chamber, lit by torches.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16334
+D3
+~
+~
+0 0 16338
+S
+#16338
+A Hallway~
+~
+~
+The hallway ends here, with rooms to the north and south.  From the north
+you hear a loud clanking sound, while from the room to the south you hear
+strange grunts and shouts.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16339
+D1
+~
+~
+0 0 16337
+D2
+~
+~
+0 0 16345
+S
+#16339
+Bjorheim's Smithy~
+~
+~
+The legendary Giant ironsmith, Bjorheim, labors here, making weapons and
+armor for his bloodthirsty kinsmen.  All about you are stacked armor and
+weapons of truly intimidating size.  In the center of the room is a mammoth
+iron anvil the size of a large bull.  
+~
+0 67108874 0
+Rd     0
+D2
+~
+~
+0 0 16338
+S
+#16340
+A Hallway~
+~
+~
+This short hallway connects the kitchen to the north with the feasting
+hall to the south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16341
+D2
+~
+~
+0 0 16334
+S
+#16341
+The Kitchens~
+~
+~
+You have entered a huge kitchen.  Over an enormous firepit a boar is being
+roasted on a spit; the smoke escapes through a hole in the wall.  Various
+iron pots and pans hang from hooks driven into the stone wall, while a
+pungent smell escapes from the small pantry to the east.  Enormous female
+Giants walk about, carrying kegs of mead and platters of food.
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16342
+D2
+~
+~
+0 0 16340
+S
+#16342
+The Pantry~
+~
+~
+The pantry is filled to overflowing with kegs of mead and barrels of
+salted fish and pork.  The carcasses of slain boars hang from hooks in the
+ceiling, and the floor is wet with blood.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 16341
+S
+#16343
+A Hallway~
+~
+~
+The hallway turns here, heading north and west.  The crudely cut walls of
+the hallway loom all around you, and the darkness presses in oppressively.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16344
+D3
+~
+~
+0 0 16336
+S
+#16344
+An Intersection~
+~
+~
+You have reached an intersection.  Hallways lead east, north, and south
+through the mountain.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16351
+D1
+~
+~
+0 0 16352
+D2
+~
+~
+0 0 16343
+S
+#16345
+The Training Room~
+~
+~
+In this large room are set up various mats, upon which Giant
+warriors-in-training practice their skills.  Dried bloodstains on the floor
+imply that the training excercises can get a little intense.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16338
+S
+#16346
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#16349
+Temple of the Allfather~
+~
+~
+You stand in a large, arched room carved into the mountain.  In the
+center of the room is a stone altar, while all about ceremonial torches set
+into the wall cast strange shadows on the wall faces.  To the north is a
+corridor.  
+~
+0 32778 0
+Rd     0
+D0
+~
+~
+0 0 16336
+S
+#16350
+The Weapons Master~
+~
+~
+This large room is filled with training mats and paraphernalia.  You can
+re-enter the hall through a doorway to the south.  
+~
+0 2 0
+Rd     0
+D2
+~
+~
+0 0 16336
+S
+#16351
+The End of the Hallway~
+~
+~
+The hallway ends here, at a stone wall.  You can return to the south, or
+climb a set of stairs which lead upwards.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16344
+D4
+~
+~
+0 0 16354
+S
+#16352
+A Hallway~
+~
+~
+This corridor branches off to the east, passing several doors on the
+north and south walls.  This section of the Hall seems to serve as the
+living quarters of its inhabitants.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16353
+D3
+~
+~
+0 0 16344
+S
+#16353
+A Hallway~
+~
+~
+You are travelling through a residential section of the Hall.  Giantesses
+and their young walk idly by, while the occasional Giant warrior strides
+drunkenly by.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 16352
+S
+#16354
+An Overhang~
+~
+~
+You stand under a large overhang of rock that juts out from the mountain.
+To the east lies a snow-covered valley, while a set of stairs leads
+downwards into the mountain.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16355
+D5
+~
+~
+0 0 16351
+S
+#16355
+A Small Valley~
+~
+~
+You have stepped out into a small valley lying deep in the mountains.  On
+all sides of you rise mighty peaks, while to the east stands a small
+evergreen forest.  
+~
+0 6 0
+Rd     0
+D1
+~
+~
+0 0 16356
+D3
+~
+~
+0 0 16354
+S
+#16356
+A Small Valley~
+~
+~
+As you walk through the evergreen forest you hear a strange howling in
+the distance.  On the ground are several sets of footprints, of both animal
+and humanoid.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16357
+D1
+~
+~
+0 0 16359
+D2
+~
+~
+0 0 16358
+D3
+~
+~
+0 0 16355
+S
+#16357
+A Small Valley~
+~
+~
+You walk through the bright snow, as pine needles brush at your face. 
+You hear strange snarls in the distance.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16356
+D2
+~
+~
+0 0 16356
+S
+#16358
+A Small Valley~
+~
+~
+This small valley is totally cut off from the outside world it seems. 
+Large evergreen trees tower over you, and you notice the footprints of some
+sort of creature in the snow about you.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16356
+D1
+~
+~
+0 0 16359
+S
+#16359
+A Small Valley~
+~
+~
+You stalk through the forest, weapons held firmly as the baying of wolves
+gets closer.  All that you can see is snow and trees, and the cold is
+starting to infiltrate your clothing.  
+~
+0 2 0
+Rd     0
+D3
+~
+~
+0 0 16358
+S
+#16361
+Minoc Entrance~
+~
+~
+You have reached the mining town of Minoc.  It is a bustling dwarf town,
+training its citizens to be strong.  The main street leads to the north,
+while the surrounding rocky countryside is to the south.  
+~
+0 6 1
+Rd     0
+D0
+~
+~
+0 0 16362
+S
+#16362
+Main Street~
+~
+~
+You are walking down the main street of Minoc.  A small building lies
+immediately to the west, housing a general store.  The roads are paved with
+excellent craftsmanship, but are covered with dirt.  The road goes in a
+straight line in a north/south direction.  
+~
+0 2 1
+Rd     0
+D0
+~
+~
+0 0 16363
+D2
+~
+~
+0 0 16361
+D3
+~
+~
+0 0 16374
+S
+#16363
+Main Street~
+~
+~
+You are walking down main street, just south of the public fountain.  The
+streets are lined with houses of a varying size.  Minoc is one of the larger
+towns that dot the countryside, complete with training arena for its great
+warriors.  The road continues north or south.  
+~
+0 2 1
+Rd     0
+D0
+~
+~
+0 0 16364
+D2
+~
+~
+0 0 16362
+S
+#16364
+Public Fountain~
+~
+~
+You are have arrived at the public fountain of Minoc.  The main street
+leads off to the south, while a small temple lies to the north.  The cross
+street, called Geoffry's Way, runs to the east and west.  The warrior's
+training hall lies to the east, while the city's Grand Inn is to the west.  
+~
+0 2 1
+Rd     0
+D0
+~
+~
+0 0 16389
+D1
+~
+~
+0 0 16365
+D2
+~
+~
+0 0 16363
+D3
+~
+~
+0 0 16367
+S
+#16365
+Geoffry's Way~
+~
+~
+~
+0 2 1
+Rd     0
+D3
+~
+~
+0 0 16364
+S
+#16367
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16364
+S
+#16374
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16362
+S
+#16389
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16364
+S
+#16391
+Inside The Gnomish Village~
+~
+~
+You stand at the entrance to the gnomish village.  The underground tunnel
+has opened up into a large chamber extending farther upwards than you can
+make out with your keen eyesight.  The chittering voices of the gnomes can
+be heard coming from all around, pierced by an occasional scream of a gnome
+flung to other levels of the cavern by the Gnomeflinger.  
+~
+0 14 0
+Rd     0
+D1
+~
+~
+0 0 16392
+S
+#16392
+Merchant Square~
+~
+~
+The Merchant Square is buslting with activity.  Gnomes run to and fro
+chittering amongst each other to barter their goods.  Amongst the merchants
+booths are set up around the edges of the intersection.  Each booth houses a
+gnomish bard relating legend and lore to young and old alike.  These bards
+have travelled the lands with their talkative nature bringing fame to the
+ability of the gnome in the entertainment business.  
+~
+0 1034 0
+Rd     0
+D0
+~
+~
+0 0 16393
+D1
+~
+~
+0 0 16397
+D2
+~
+~
+0 0 16395
+D3
+~
+~
+0 0 16391
+S
+#16393
+A Bustling Side Street~
+~
+~
+The side street branches off from Merchant Square into a chaotically
+organized residential area of town.  The houses line both edges of the
+roadway, and are also packed one atop another.  The density begins to lessen
+as you continue northward where a great deal of construction is underway.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16394
+D2
+~
+~
+0 0 16392
+S
+#16394
+End Of The Side Street~
+~
+~
+You have reached the end of this side street.  A great deal of
+residential construction is taking place here with many more lots to be
+filled in.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16393
+S
+#16395
+A Bustling Side Street~
+~
+~
+The side street branches off from Merchant Square into a chaotically
+organized residential area of town.  The houses line both edges of the
+roadway, and are also packed one atop another.  The density begins to lessen
+as you continue southward where a great deal of construction is underway.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16392
+D2
+~
+~
+0 0 16396
+S
+#16396
+End Of The Side Street~
+~
+~
+You have reached the end of this side street.  A great deal of
+residential construction is taking place here with many more lots to be
+filled in.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16395
+S
+#16397
+Fountain Plaza~
+~
+~
+The path has lead you to a large fountain carved into the surface of the
+cavern.  At the edge of the fountain stands a well aged gnome of some great
+local reknown.  A small crowd has gathered around him to hear his tales from
+abroad.  He smiles at you as you come closer and beckons for you to sit and
+learn as well.  
+~
+0 394254 0
+Rd     0
+D0
+~
+~
+0 0 16398
+D1
+~
+~
+0 0 16400
+D2
+~
+~
+0 0 16399
+D3
+~
+~
+0 0 16392
+S
+#16398
+The Center of Learning~
+~
+~
+You enter a larger building carved into the stone of the mountian.  The
+Center of Learning is quite busy with several gnomes studying deeply the
+various skills they will need to be able to survive in the world.  
+~
+0 394254 0
+Rd     0
+D2
+~
+~
+0 0 16397
+S
+#16399
+The Center of Training~
+~
+~
+You enter The Center of Training and find yourself within the ranks of
+swarms of gnomes refining their personal attributes.  The center is divided
+up into sections for increasing one's physical strength and also
+intellectual ability.  Grizdish, the head of the center, wanders about
+advising other gnomes on the proper techniques to improve themselves.  
+~
+0 394254 0
+Rd     0
+D0
+~
+~
+0 0 16397
+S
+#16400
+The Gnomish Temple~
+~
+~
+The Gnomish Temple is very quiet aside from the rest of the town.  The
+only gnomes here are ones in varying degrees of pain or sickness.  Tika, a
+gnomish priest weaves her way from gnome to gnome healing them from their
+pains.  
+~
+0 394254 0
+Rd     0
+D3
+~
+~
+0 0 16397
+S
+#16401
+Level Two~
+~
+~
+Standing at the entrance of the second level of the gnome village, you
+can hear the voices of many young gnomes to the east.  Here they compete to
+graduate from newbie adventurers into gnomish heroes and heroins.  The
+Gnomeflinger Operator chatters on to you, telling you to pick up and use the
+equipment you win off others, so that you may better defend yourself.  
+~
+0 14 0
+Rd     0
+D1
+~
+~
+0 0 16402
+S
+#16402
+Level Two~
+~
+~
+As you enter the low level learning area other young gnomes flood about
+you chattering of their first adventures.  Others attempt to bully you
+around, hoping to get the jump on you, so that they may be allowed to enter
+the ranks of adventuring first.  After a brief chatter session most of the
+gnomes part, leaving you to your business.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16403
+D3
+~
+~
+0 0 16401
+S
+#16403
+Level Two~
+~
+~
+The path branches into several directions at this point, leading to the
+various locations of the learning area.  To the north you can hear faint
+sounds of music coming from bards of minor skill.  The delight filled shouts
+of gnomes using the gnomeflinger can still be heard from the west.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16405
+D2
+~
+~
+0 0 16404
+D3
+~
+~
+0 0 16402
+S
+#16404
+Level Two~
+~
+~
+This path comes to an abrupt ending at a small crevass in the rocks. 
+Warm air rushes up to greet you, and continues up through the crack above
+you.  You realize that this is a ventilation shaft, used to keep air
+circulating inside the mountain for the gnomes to breathe.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16403
+S
+#16405
+Level Two~
+~
+~
+You come to a bend in the path.  An elderly gnome sits on a rock off to
+the side, scolding any of the young gnomes who get carried away.  Others
+gather around the wise one to hear his stories, hoping to pick up a trick or
+two.  The sound of music, coming from the east, is now a little more
+prominent.  
+~
+0 14 0
+Rd     0
+D1
+~
+~
+0 0 16406
+D2
+~
+~
+0 0 16403
+S
+#16406
+Level Two~
+~
+~
+A small path to the north branches off from the main walk.  Singing
+gnomes, some good, others not, walk around here reciting lyrics to the sound
+of a lute which floods in from the east.  To the west you can make out what
+seems like a gruff voice (by gnomish standards) scolding young gnomes.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16407
+D1
+~
+~
+0 0 16408
+D3
+~
+~
+0 0 16405
+S
+#16407
+Level Two~
+~
+~
+The path you are on comes to an end at the edge of one of the ventilation
+shafts, leaving you with the choice to head back south as your only one. 
+The voices of the gnomes practicing their singing erupts in a cresendo
+drowning out any other noises.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16406
+S
+#16408
+Level Two~
+~
+~
+At the edge of the path, near the bend, sits a large rock.  Gnomes
+practice their instrumental talents, ignoring each other.  Occasionally they
+come to blows when one gnome hits a sour note, thus breaking the
+concentration of another gnome.  
+~
+0 14 0
+Rd     0
+D2
+~
+~
+0 0 16409
+D3
+~
+~
+0 0 16406
+S
+#16409
+Level Two~
+~
+~
+This section is under construction, with worker gnomes scurring about
+using their inventions to smash up the rocks to extend the tunnels.  Various
+working tunes escape the mouths of the gnomes as they continue to labour
+about.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16408
+D1
+~
+~
+0 0 16410
+S
+#16410
+Level Two~
+~
+~
+The tunnel comes to an end at this point.  Scaffolding lines the walls as
+gnomes work at extending the tunnel in various directions.  One gnome,
+seemingly out of nowhere, appears at your side and begins to explain the
+wonders of his steam-powered rock smashing and piling device which he has
+labelled "The Tunnel Drill XT150."  
+~
+0 10 0
+Rd     0
+D3
+~
+~
+0 0 16409
+S
+#16411
+Level Three~
+~
+~
+You stand at the entrance of the third level of the subterrainian gnome
+city.  Many more levels stretch high above, but due to the lack of noticible
+activity, they seem uninteresting.  The operator of this gnomeflinger is
+talking rapidly to each gnome as they land, instructing them on how the
+catapult works.  
+~
+0 14 0
+Rd     0
+D1
+~
+~
+0 0 16412
+S
+#16412
+Level Three~
+~
+~
+You are standing at the start of a long line of gnomes that weaves it's
+way to whatver building you can make out in the distance.  Sounds of music
+and chatter fill the air, humming vibrantly in your ears.  Slowly the line
+is creeping forward in the direction of the music.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16413
+D3
+~
+~
+0 0 16411
+S
+#16413
+Level Three~
+~
+~
+The lineup winds around a corner on the path, approaching the sound of
+music and laughter.  The gnomes talk amongst each other about "the show" in
+high spirits.  To the north a small group of gnomes stand in a pack arguing
+over a heated topic, easily heard from your vantage point.  
+~
+0 14 0
+Rd     0
+D0
+~
+~
+0 0 16414
+D3
+~
+~
+0 0 16412
+S
+#16414
+Level Three~
+~
+~
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16415
+D1
+~
+~
+0 0 16416
+D2
+~
+~
+0 0 16413
+S
+#16415
+Level Three~
+~
+~
+~
+0 14 0
+Rd     0
+D2
+~
+~
+0 0 16414
+S
+#16416
+Level Three~
+~
+~
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16417
+D3
+~
+~
+0 0 16414
+S
+#16417
+Level Three~
+~
+~
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16418
+D2
+~
+~
+0 0 16420
+D3
+~
+~
+0 0 16416
+S
+#16418
+Level Three~
+~
+~
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16419
+D3
+~
+~
+0 0 16417
+S
+#16419
+Level Three~
+~
+~
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16418
+D3
+~
+~
+0 0 16420
+S
+#16420
+Level Three~
+~
+~
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16417
+D1
+~
+~
+0 0 16419
+S
+#16421
+Before the Gates of Cutter's Scarp~
+~
+~
+You stand before the town of Cutter's Scarp.  A road leads north in
+between snow-covered wooden buildings, while to the south you can re-enter
+the foothills.  
+~
+0 2 0
+Rd     0
+D0
+~
+gates~
+3 0 16422
+D2
+~
+~
+0 0 17957
+S
+#16422
+The Main Street~
+~
+~
+You stand in the main street of the frontier town of Cutter's Scarp. 
+Founded originally by a small band of human settlers from the south, years
+of interbreeding with local Dwarven communities have resulted in the average
+citizen being of Human-Dwarven stock.  Shunned by both Dwarves and Humans,
+the Halfdwarves of Cutter's Scarp are a proud, tough group, well-versed in
+the ways of the harsh northlands.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16423
+D2
+~
+gates~
+3 0 16421
+S
+#16423
+The Main Street~
+~
+~
+The snow-covered road leads north and south through the town.  On either
+side of you rise large wooden buildings, their windows dark and cold.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16424
+D2
+~
+~
+0 0 16422
+D3
+~
+~
+103 0 16449
+S
+#16424
+The Main Street~
+~
+~
+The road continues north, to what might be called the town square, and
+south towards the entrance to the settlement.  To the east is a small
+chapel, it's door open.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16425
+D1
+~
+~
+0 0 16434
+D2
+~
+~
+0 0 16423
+S
+#16425
+The Town Center~
+~
+~
+You stand in the center of the town.  To the south the main road
+stretches towards the town's entrance, while to the east and west are
+smaller sidestreets.  To the north stands a massive inn, it's windows
+lighted with warmth.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16430
+D1
+~
+~
+0 0 16427
+D2
+~
+~
+0 0 16424
+D3
+~
+~
+0 0 16426
+S
+#16426
+A Street~
+~
+~
+This small sidestreet runs west off the town's center.  All around you
+snow is softly falling, and the temperature is bitterly low.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16425
+D3
+~
+~
+0 0 16428
+S
+#16427
+A Street~
+~
+~
+This street runs east and west through Cutter's Scarp.  All around you
+are sturdy wooden buildings.  To the west is what seems to be the town's
+center.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16431
+D3
+~
+~
+0 0 16425
+S
+#16428
+A Street~
+~
+~
+The snow-covered street is strangely quiet.  To the north is a large
+building, while to the west the street runs past a collection of wooden
+buildings.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16429
+D1
+~
+~
+0 0 16426
+D3
+~
+~
+0 0 16437
+S
+#16429
+The Trainer~
+~
+~
+You have entered a large log building.  Weapons racks line the walls, and
+large practice mats made of straw lie on the ground.  Apparently this is
+where the young rangers of the town practice.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16428
+S
+#16430
+The Broken Bow~
+~
+~
+You have entered a large, busy tavern.  Grim-faced servitors carry large
+trays full of ale and food to the patrons, who are as a motley group as
+you've ever seen.  Though most of the people in here are of the town's
+typical human-dwarf stock, there are also goblins, half-elves, trolls, and
+even a lizardman or two in the crowd.  The main feature in the room is the
+enormous stone fireplace, which fills the room with a welcome warmth.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16425
+S
+#16431
+A Street~
+~
+~
+The street continues east and west through the softly falling snow.  It
+is extremely cold.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16432
+D3
+~
+~
+0 0 16427
+S
+#16432
+A Street~
+~
+~
+You trudge on through the bitter cold.  To the south is what appears to
+be a store.  To the east the street appears to end.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16433
+D2
+~
+~
+0 0 16436
+D3
+~
+~
+0 0 16431
+S
+#16433
+End of the Street~
+~
+~
+The street ends at the palisade wall.  To the north is a small, cozy
+home, while to the west lies there rest of the town.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16435
+D3
+~
+~
+0 0 16432
+S
+#16434
+The Chapel~
+~
+~
+This small, warm chapel is a welcome change to the bitter cold outside. 
+Unlike most churches and temple's you've been in, this one is unadorned. 
+Constructed with crude wooden logs, the walls and floors are rough to the
+touch.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 16424
+S
+#16435
+Grobler's House~
+~
+~
+You have entered the house of the old ranger Grobler, a legend in these
+parts.  Old hunting trophies line the wall while a small fireplace provides
+warmth and light.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16433
+S
+#16436
+The Trader~
+~
+~
+You have entered a small trading post in Cutter's Scarp.  Assorted boxes
+and racks are scattered about haphazardly, and a small brazier provides some
+degree of warmth.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16432
+S
+#16437
+A Street~
+~
+~
+The street runs east and west through the dark, snowclad town.  On all
+sides rise up sturdy buildings constructed of logs, and your footprints are
+slowly disappearing under the constantly falling snow.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16428
+D3
+~
+~
+0 0 16438
+S
+#16438
+A Street~
+~
+~
+The snow covered street continues east and west.  There are very few
+travellers about at this time, and the howling wind creates a lonely song in
+the air.  Small buildings lie to the north and south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+39 0 16440
+D1
+~
+~
+0 0 16437
+D2
+~
+~
+7 0 16439
+D3
+~
+~
+0 0 16441
+S
+#16439
+A House~
+~
+~
+You have entered a large home.  The last vestiges of a fire is dying in
+the stone hearth, and the air is starting to chill.  Perhaps you should
+leave before the homeowner comes back; the Halfdwarves of Cutter's Scarp are
+a tough bunch, and you wouldn't want a miscommunication to lead to violence.
+~
+0 10 0
+Rd     0
+D0
+~
+~
+7 0 16438
+S
+#16440
+An Empty House~
+~
+~
+You've managed to force open the iced door and enter the house.  It seems
+to have been abandoned some time ago; there is no furniture or personal
+effects.  Being here, however, is a welcome escape from the cold arctic wind
+that rages outside.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+39 0 16438
+S
+#16441
+A Street~
+~
+~
+The snow-covered street runs east and west throught the town.  To the
+west looms the western wall of the town, a tall palisade made of logs, while
+to the east the street runs towards the center of town.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16438
+D3
+~
+~
+0 0 16442
+S
+#16442
+A Street~
+~
+~
+The street ends at the wooden palisade here.  To the north is a narrow
+alleyway, covered with snow.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16443
+D1
+~
+~
+0 0 16441
+S
+#16443
+A Snow-Covered Alley~
+~
+~
+This small alley runs north off the main street, along the palisade wall.
+It seems to be little-travelled; the snow is unmarred.  
+~
+0 6 0
+Rd     0
+D0
+~
+~
+0 0 16444
+D2
+~
+~
+0 0 16442
+S
+#16444
+A Snow-Covered Alley~
+~
+~
+The alley continues north and south between the palisade wall to the west
+and a windowless building wall to the east.  You are ankle-deep in snow.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16445
+D2
+~
+~
+0 0 16443
+S
+#16445
+A Snow-Covered Alley~
+~
+~
+You have reached the corner of the palisade wall.  To the south the alley
+runs towards the street, while to the east it turns into darkness.  You hear
+a strange scuttling sound coming from the east.  
+~
+0 2 0
+Rd     0
+D1
+~
+~
+0 0 16446
+D2
+~
+~
+0 0 16444
+S
+#16446
+The End of the Alley~
+~
+~
+You have reached the darkened end of the alley.  Piles of wood have been
+abandoned here, and the snow is knee-deep.  You also notice several sets of
+tracks.  Clawed tracks.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 16445
+S
+#16449
+A House~
+~
+~
+You have entered a large house made of wood.  A bearskin rug lies on the
+floor, while a large brick fireplace fills the north wall.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+103 0 16423
+S
+#16550
+At the Entrance to a Tunnel~
+~
+~
+You stand on the threshold of Khara-Gor, ancestral home of the Minotaurs.
+The tunnel walls are constructed of crudely cut stone blocks overgrown with
+lichen and the dust of centuries.  To the south is the outside world, while
+to the north the tunnel slopes down into the inky blackness.  Known for
+their rapacious nature, Minotaurs are shunned by most races.  Fearsome
+warriors, many Minotaurs have made pacts with demons and other
+extradimensional entities, and have strange and deadly powers; Minotaurs are
+said to know more about these creatures than any other races (save Demons
+themselves, of course).  
+~
+0 14 0
+Rd     0
+D0
+~
+~
+0 0 16551
+D2
+~
+~
+0 0 17002
+S
+#16551
+A Tunnel~
+~
+~
+The tunnel runs north and south through the mountain.  From the south you
+feel a cool draft, while to the north the corridor slopes down into
+darkness.  You feel a moist, cold chill in the air.  
+~
+0 14 0
+Rd     0
+D0
+~
+~
+0 0 16552
+D2
+~
+~
+0 0 16550
+S
+#16552
+A Tunnel~
+~
+~
+You continue on through the wide, dark tunnel.  The moss that lines the
+walls and ceiling glows with a strange blue light, illuminating your way
+eerily.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16553
+D2
+~
+~
+0 0 16551
+S
+#16553
+A Tunnel~
+~
+~
+At this point the tunnel approaches a lighted area to the north.  To the
+south is only blackness.  Strange shadows twist throught the darkness at the
+edge of your vision.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16554
+D2
+~
+~
+0 0 16552
+S
+#16554
+The Center of the Labyrinth~
+~
+~
+You stand at the center of the labyrinthine town of Khara-Gor, in a huge
+open cavern deep within the earth.  Torches line the wall, glowing with a
+steady light, but seem insignificant compared to the darkness that permeates
+the cavern.  To the east a wide tunnel leads into the darkness, while to the
+north it enters a strange chamber.  To the west is another, smaller,
+corridor, and the entrance to the labyrinth lies to the south.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16557
+D1
+~
+~
+0 0 16555
+D2
+~
+~
+0 0 16553
+D3
+~
+~
+0 0 16567
+S
+#16555
+A Twisting Path~
+~
+~
+The tunnel twists and turns unexpectedly, making you lose your bearings. 
+It seems to be a rather well-travelled part of the town, and you see the
+tall, dark shadows of Minotaurs gliding through the darkness.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16556
+D1
+~
+~
+0 0 16556
+D3
+~
+~
+0 0 16554
+S
+#16556
+A Twisting Path~
+~
+~
+The constantly twisting corridors and hall which make up Khara-Gor have
+seemingly been built without plan.  Corridors meet then divide at random
+intervals; anyone except a Minotaur would find themselves quickly lost in
+such a place.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16566
+D2
+~
+~
+0 0 16555
+D3
+~
+~
+0 0 16555
+S
+#16557
+A Tunnel~
+~
+~
+The tunnel turns here, heading south and west.  To the south is what
+appears to be a large open cavern, while to the east the tunnel twists and
+turns in the darkness.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16554
+D3
+~
+~
+0 0 16558
+S
+#16558
+A Tunnel~
+~
+~
+The tunnel twists and turns maddeningly, and you concentrate mightily to
+prevent yourself from getting around.  The stones are strangely warm, and
+you hear a strange pulsing coming from deep within the earth.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+0 0 16557
+D2
+~
+~
+0 0 16554
+D3
+~
+~
+0 0 16559
+S
+#16559
+A Tunnel~
+~
+~
+The tunnel ends here, at an opening carved to look like a looped snake,
+eating it's own tail.  From the north you hear the sounds of struggle.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16560
+D1
+~
+~
+0 0 16558
+S
+#16560
+The Place of Training~
+~
+~
+This large chamber has been set aside as a training place for young
+Minotaurs.  Four massive braziers in each corner of the room fill the room
+with heat, and the smoke sears your lungs.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16559
+S
+#16561
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16556
+D1
+~
+~
+0 0 16562
+S
+#16562
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 16561
+S
+#16566
+A Small Chamber~
+~
+~
+You have entered a small chamber deep in the mountain.  To the west is a
+twisting corridor, while a narrow wooden ladder leads upwards into an open
+hatch in the ceiling.  
+~
+0 393218 0
+Rd     0
+D3
+~
+~
+0 0 16556
+D4
+~
+~
+0 0 16568
+S
+#16567
+A Tunnel~
+~
+~
+The tunnel continues on east and west through the darkness.  All around
+you are the sounds of tiny clawed feet scuttling across the stone floor, and
+gleaming red eyes stare at you from the darkness.  
+~
+0 14 0
+Rd     0
+D1
+~
+~
+0 0 16554
+D3
+~
+~
+0 0 16575
+S
+#16568
+An Antechamber~
+~
+~
+You have entered a small antechamber deep within the earth.  To the west
+is a larger room, while a narrow wooden ladder leads down through a hatch in
+the floor.  
+~
+0 393218 0
+Rd     0
+D3
+~
+~
+0 0 16569
+D5
+~
+~
+0 0 16566
+S
+#16569
+A Passage~
+~
+~
+This stone passageway twists unexpectedly, heading north and east.  The
+darkness here is palpable, and the walls glisten with moisture.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16570
+D1
+~
+~
+0 0 16568
+S
+#16570
+A Corridor~
+~
+~
+The passageway twists here, heading west and south.  Far off in the
+distance you hear a loud, low roar echoing.  
+~
+0 393218 0
+Rd     0
+D2
+~
+~
+0 0 16569
+D3
+~
+~
+0 0 16571
+S
+#16571
+A Corridor~
+~
+~
+You stalk through the corridors which make up Khara-Gor.  This section of
+the labyrinth-town seems to consist of living quarters.  The are passages in
+all directions except south.  
+~
+0 2 0
+Rd     0
+D0
+~
+~
+0 0 16572
+D1
+~
+~
+0 0 16570
+D3
+~
+~
+275 0 16573
+S
+#16572
+A Corridor~
+~
+~
+The passageway continues to the north, while to the south it turns east. 
+On either side of you are what appear to have once been passages; they have
+been bricked over.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16574
+D2
+~
+~
+0 0 16571
+S
+#16573
+A Chamber~
+~
+~
+This large chamber seems to serve as the living quarters of some
+Minotaur.  Crimson pillows lie about, and a large brazier provides light.  
+~
+0 10 0
+Rd     0
+D1
+~
+~
+275 0 16571
+S
+#16574
+At the Bottom of the Stairs~
+~
+~
+You have entered a small stone chamber, and now stand at the foot of a
+flight of narrow stone steps that spiral upwards into darkness.  The air
+shimmers with protective Magicks; whoever inhabits this tower must truly be
+a magic-wielder of considerable power.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16572
+D4
+~
+~
+0 0 16578
+S
+#16575
+A Tunnel~
+~
+~
+The corridor comes to an end at a stone wall.  To the north and south are
+what appear to be stores of some kind, while to the east lies the center of
+the labyrinth.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16577
+D1
+~
+~
+0 0 16567
+D2
+~
+~
+0 0 16576
+S
+#16576
+A Large Chamber~
+~
+~
+You have entered a large chamber decorated with the spoils of years of
+pillaging.  Fabulously expensive rugs are thrown carelessly on the ground,
+and expensive pillows made of silk and satin are heaped about.  
+~
+0 10 0
+Rd     0
+D0
+~
+~
+0 0 16575
+S
+#16577
+The Provisioner's~
+~
+~
+You have entered a large chamber carved out of stone.  All about you hang
+the smoked carcasses of various animals, and large crates are scattered
+about.  A brazier fills the room with light and smoke.  
+~
+0 10 0
+Rd     0
+D2
+~
+~
+0 0 16575
+S
+#16578
+Ascending the Staircase~
+~
+~
+You are halfway up the staircase.  Upwards you can make out part of what
+seems to be a large chamber, while below you the stairway spirals down into
+the darkness.  
+~
+0 10 0
+Rd     0
+D4
+~
+~
+0 0 16579
+D5
+~
+~
+0 0 16574
+S
+#16579
+The Inner Sanctum~
+~
+~
+You have entered a large circular room.  Small openings are set into the
+walls, providing a view of outside; apparently this chamber is in a tower
+which erupts from the mountain.  The sense of evil and power in this room is
+strong, and strange multicolored lights seem to twist in the air.  
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 16578
+S
+#16580
+The Temple of the Underdark~
+~
+~
+You stand in a small temple constructed of granite.  Ceremonial torches
+line the walls, and the floor is covered with strange symbols engraved in
+gold and ocher.  Four large openings in each wall lead out to the town's
+central cavern.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16554
+D1
+~
+~
+0 0 16554
+D2
+~
+~
+0 0 16554
+D3
+~
+~
+0 0 16554
+S
+#16581
+A Tunnel~
+~
+~
+You have reached the bottom of the tunnel, where it widens into a vast
+cavern.  To the east the stone floor slopes downward.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 16582
+S
+#16582
+A Tunnel~
+~
+~
+The tunnel steeply slopes downward at this point.  The air is warm and
+moist, and a strange smell wafts through the darkness.  
+~
+0 393226 0
+Rd     0
+D3
+~
+~
+0 0 16581
+D5
+~
+~
+0 0 16583
+S
+#16583
+A Tunnel~
+~
+~
+You stand at the bottom of the dark shaft.  Far above you you see the sky
+the walls aren't too steep, so you could probably climb out if you wanted
+to.  To the east a passageway slopes down into the darkness.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 16584
+D4
+~
+~
+0 0 16582
+S
+#16584
+A Huge Tunnel~
+~
+~
+The caverns have grown steadily wider, and now the tunnel is large enough
+for several wagons to be drawn through abreast.  Dark shapes flit above your
+head, and a high-pitched squealing fills the cave.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 16585
+D3
+~
+~
+0 0 16583
+S
+#16585
+A Huge Tunnel~
+~
+~
+The enormous tunnel turns at this point, heading north and west. 
+Stalactites line the ceiling, and your footsteps echo through the darkness. 
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 16586
+D3
+~
+~
+0 0 16584
+S
+#16586
+A Huge Tunnel~
+~
+~
+You are travelling through an enormous cavern system deep below the
+earth.  Luminescent moss grows in patches on the walls, and strange sounds
+echo through the darkness.  To the east the tunnel widens out into an
+enormous cavern.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 16587
+D2
+~
+~
+0 0 16585
+S
+#16587
+A Huge Cavern~
+~
+~
+You have entered a huge cavern deep under the earth.  The dark stone
+reaches upwards into the darkness, and strange sounds echo throughout the
+enormous chamber.  Through the middle runs a massive underground river.  
+~
+0 393218 0
+Rd     0
+D3
+~
+~
+0 0 16586
+S
+#16588
+Before the Gates~
+~
+~
+You stand at the southern edge of the city.  To the north your way is
+blocked by a set of massive wooden gates, ringed with iron.  The city's
+stone buildings loom over you menacingly.  
+~
+0 393230 0
+Rd     0
+D0
+~
+~
+0 0 16589
+D2
+~
+~
+0 0 16587
+S
+#16589
+The Main Street~
+~
+~
+The street is dimly illuminated by guttering lanterns on poles which give
+off an unwholesome green light.  Grey stone buildings rise up on all sides. 
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16590
+D2
+~
+~
+0 0 16588
+S
+#16590
+The Town Square~
+~
+~
+This small square seems to be the only open place in the city.  A grim
+fountain sends up a trickle of chalky water, and strange sounds echo through
+the darkness.  Streets lead east, north, and south.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16592
+D1
+~
+~
+0 0 16591
+D2
+~
+~
+0 0 16589
+S
+#16591
+A Sidestreet~
+~
+~
+This small sidestreet runs east off the town square, between gloomy stone
+buildings.  To the east it runs towards the city wall.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 16594
+D3
+~
+~
+0 0 16590
+S
+#16592
+A Junction~
+~
+~
+Streets run north, south, and west from here.  Grey buildings loom darkly
+above, and the air is chilly and damp.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16596
+D2
+~
+~
+0 0 16590
+D3
+~
+~
+0 0 16593
+S
+#16593
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16592
+S
+#16594
+A Dead-End~
+~
+~
+The street ends here at the city's wall.  To the north is a boarded-up
+door, while to the south is a smoky tavern.  
+~
+0 393226 0
+Rd     0
+D2
+~
+~
+0 0 16595
+D3
+~
+~
+0 0 16591
+S
+#16595
+The Dagger Inn~
+~
+~
+This low tavern is dark and gloomy.  Hooded figures sit at chipped stone
+tables drinking blood-red glasses of wine.  Torches lining the walls fill
+the place with dim, smoky light.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 16594
+S
+#16596
+A Narrow Street~
+~
+~
+The street turns here, heading east and south.  Grim stone buildings loom
+up on all sides.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 16597
+D2
+~
+~
+0 0 16592
+S
+#16597
+A Street~
+~
+~
+The street twists and turns as it goes through the city.  Tall stone
+buildings look down on you silenly.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16598
+D3
+~
+~
+0 0 16596
+S
+#16598
+The Main Plaza~
+~
+~
+You have reached a darkened square deep in the city.  To the north looms
+a large palace, while to the east is a heavily ornamented building.  To the
+west lies a temple.  
+~
+0 393226 0
+Rd     0
+D0
+~
+~
+0 0 16603
+D1
+~
+~
+0 0 16600
+D2
+~
+~
+0 0 16597
+D3
+~
+~
+0 0 16599
+S
+#16599
+A Side Street~
+~
+~
+This narrow stone alley runs west off the main thoroughfare.  To the west
+it vanishes into darkness, while to the east you can re-enter the (somewhat)
+more well-lit street.  
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 16598
+D3
+~
+~
+0 0 16602
+S
+#16600
+The Guild Hall~
+~
+~
+You have entered a cavernous building constructed of dark grey stone. 
+Guttering torches line the walls, and blood-red curtains obscure the barred
+windows.  You feel a palpable sense of evil in the air.  To the east is a
+curtained doorway.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 16607
+D1
+~
+~
+0 0 16601
+D3
+~
+~
+0 0 16598
+S
+#16601
+The Inner Sanctum~
+~
+~
+You have entered a cold, dark chamber in the underground city.  Lush
+drapes hang from the wall, and a large bronze brazier gives off a faint
+light.  Strange shadows loom at the walls.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 16600
+S
+#16602
+A Dead End~
+~
+~
+The street ends suddenly against a featureless stone wall.  Shadows gather
+around you; perhaps coming here wasn't a good idea.
+~
+0 393226 0
+Rd     0
+D1
+~
+~
+0 0 16599
+S
+#16603
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 16604
+D2
+~
+~
+0 0 16598
+S
+#16604
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 16605
+D1
+~
+~
+0 0 16606
+D2
+~
+~
+0 0 16603
+S
+#16605
+The Throne Room~
+~
+~
+This vast chamber houses the throne of Chiral, Queen of this city. 
+Blood-red banners hang from the walls, and enormous bronze braziers in the
+corners fill the room with a hot light.  A thick red carpet leads up to the
+dais where the throne sits.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 16604
+S
+#16606
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 16604
+S
+#16607
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 16600
+S
+#0
+
+
+
+#SPECIALS
+M 16301 spec_cast_mage
+M 16304 spec_cast_cleric
+M 16305 spec_cast_mage
+M 16306 spec_cast_mage
+M 16318 spec_cast_mage
+M 16320 spec_cast_mage
+M 16580 spec_cast_cleric
+M 16605 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 16303 0 16303
+M 0 16301 1 16303
+E 0 16319 0 5
+M 0 16304 1 16304
+E 0 16319 0 5
+M 0 16306 1 16308
+E 0 16319 0 5
+M 0 16305 1 16317
+E 0 16319 0 5
+M 0 16318 1 16318
+E 0 16318 0 20
+E 0 16319 0 5
+M 0 16319 1 16319
+E 0 16305 0 20
+E 0 16319 0 5
+M 0 16320 1 16320
+G 0 16317 0
+G 0 16316 0
+G 0 16315 0
+G 0 16314 0
+G 0 16311 0
+G 0 16310 0
+O 0 16306 0 16321
+P 0 16307 0 16306
+P 0 16308 0 16306
+P 0 16321 0 16306
+M 0 16321 1 16321
+M 0 16325 3 16325
+E 0 16325 0 22
+G 0 16327 0
+M 0 16326 3 16326
+M 0 16328 1 16328
+G 0 16328 0
+M 0 16329 3 16329
+E 0 16320 0 9
+M 0 16334 1 16334
+E 0 16334 0 20
+E 0 16333 0 16
+E 0 16335 0 5
+M 0 16335 1 16334
+E 0 16335 0 5
+M 0 16335 1 16334
+M 0 16339 1 16339
+G 0 16337 0
+G 0 16345 0
+G 0 16341 0
+G 0 16335 0
+G 0 16344 0
+M 0 16347 1 16340
+O 0 16340 0 16341
+O 0 16347 0 16341
+O 0 16343 0 16342
+P 0 16332 0 16343
+P 0 16332 0 16343
+P 0 16332 0 16343
+P 0 16332 0 16343
+P 0 16332 0 16343
+P 0 16332 0 16343
+P 0 16332 0 16343
+P 0 16332 0 16343
+M 0 16356 1 16343
+M 0 16345 1 16345
+M 0 16337 2 16345
+O 0 16348 0 16349
+O 0 16349 0 16349
+M 0 16349 1 16349
+E 0 16350 0 20
+E 0 16335 0 5
+M 0 16350 1 16350
+M 0 16351 1 16350
+M 0 16351 1 16350
+O 0 16351 0 16351
+P 0 16352 0 16351
+P 0 16354 0 16351
+P 0 16355 0 16351
+P 0 16356 0 16351
+M 0 16355 1 16354
+M 0 16357 1 16357
+M 0 16357 1 16358
+M 0 16357 2 16359
+O 0 16391 0 16391
+M 0 16391 1 16391
+O 0 16397 0 16397
+M 0 16397 1 16397
+M 0 16398 1 16398
+M 0 16399 1 16399
+M 0 16400 1 16400
+O 0 16391 0 16401
+M 0 16401 1 16401
+M 0 16402 1 16402
+E 0 16402 0 16
+M 0 16403 1 16403
+E 0 16403 0 6
+M 0 16405 1 16405
+E 0 16405 0 22
+M 0 16406 1 16406
+E 0 16406 0 2
+M 0 16407 1 16407
+E 0 16406 0 2
+M 0 16408 1 16408
+E 0 16408 0 20
+M 0 16409 1 16409
+E 0 16409 0 12
+M 0 16410 1 16410
+E 0 16409 0 12
+O 0 16391 0 16411
+M 0 16411 1 16411
+O 0 16425 0 16425
+M 0 16429 1 16429
+M 0 16430 1 16430
+G 0 16431 0
+G 0 16432 0
+G 0 16433 0
+M 0 16437 1 16430
+E 0 16435 0 5
+M 0 16425 1 16430
+E 0 16333 0 16
+E 0 16436 0 23
+M 0 16421 1 16430
+E 0 16446 0 16
+M 0 16434 1 16434
+M 0 16435 1 16435
+E 0 16435 0 5
+M 0 16446 1 16436
+G 0 16446 0
+G 0 16447 0
+G 0 16448 0
+G 0 16449 0
+G 0 16450 0
+G 0 16451 0
+E 0 16446 0 16
+M 0 16437 1 16437
+E 0 16435 0 5
+E 0 16437 0 12
+E 0 16434 0 20
+E 0 16436 0 23
+O 0 16443 0 16443
+P 0 16308 0 16443
+P 0 16308 0 16443
+P 0 16308 0 16443
+M 0 16447 1 16446
+M 0 16551 1 16553
+O 0 16554 0 16554
+O 0 16580 0 16554
+M 0 16552 1 16556
+E 0 16577 0 5
+M 0 16555 1 16556
+M 0 16573 1 16556
+M 0 16573 1 16559
+M 0 16560 1 16560
+M 0 16553 1 16570
+E 0 16577 0 5
+E 0 16555 0 22
+M 0 16576 1 16576
+E 0 16577 0 5
+E 0 16576 0 20
+G 0 16573 0
+G 0 16571 0
+G 0 16570 0
+G 0 16577 0
+M 0 16577 1 16577
+E 0 16578 0 5
+E 0 16579 0 11
+G 0 16560 0
+G 0 16561 0
+G 0 16430 0
+M 0 16579 1 16579
+E 0 16577 0 5
+M 0 16580 1 16580
+E 0 16577 0 5
+M 0 16554 1 16580
+E 0 16556 0 5
+E 0 16557 0 20
+O 0 16587 0 16587
+O 0 16590 0 16590
+M 0 16596 1 16591
+E 0 16596 0 16
+M 0 16595 1 16595
+G 0 16595 0
+M 0 16599 1 16599
+E 0 16599 0 20
+E 0 16596 0 16
+M 0 16601 1 16601
+E 0 16596 0 16
+E 0 16563 0 20
+E 0 16601 0 21
+E 0 16603 0 3
+M 0 16605 1 16605
+S
+
+
+
+#SHOPS
+16320 0 10 2 0 0 100 40 10 20
+16339 0 0 0 0 0 100 100 600 1700
+16346 0 5 9 19 15 60 120 8 22
+16430 0 0 0 0 0 100 100 0 2400
+16446 0 0 0 0 0 100 100 800 2200
+16576 0 0 0 0 0 100 100 0 2400
+16577 0 0 0 0 0 100 100 0 2400
+16595 0 0 0 0 0 120 50 1400 400
+0
+
+
+
+#$

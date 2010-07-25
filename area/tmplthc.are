@@ -1,0 +1,1983 @@
+#AREADATA
+Name        {  1-5 } THC Temple~
+Builders    Leptar~
+VNUMs       22001 22100
+Security    100
+Recall      17809
+Flags       288
+Version     107
+Creator     None~
+Llevel      0
+Ulevel      0
+Sounds      You feel a slight disturbance in the air.~
+SoundsA     (None)~
+Music       u6_creat.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#22002
+Tim~
+Tim~
+Tim is here ready to help you
+~
+You look at Tim and see a kind man of great power and wisdom.  He is
+dressed in a bright white cloak and other then his face that is all you can
+see.  
+~
+1611 17301692 67141652 16384 33799 1000 S
+350 1 700 700 0 60000d0+0 0d0+0
+3500 0 0
+0 0 1
+0 0 0
+>speech_prog help hi hello~
+smile
+say Hello $n! and Welcome to the Temple of THC.
+say Many journeys will lie ahead of you.
+say How can I be of &PASSISTANCE&W to you?
+~
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) < 2
+say Welcome to Adventures in Stormgate, $n!  I have a newbie guide for you to read.  To read it, type: READ CHAPTER, where chapter is a number.
+smile $n
+mpoload 156
+give newbie $n
+say If you need any other help, just say YES.
+else
+say You have outgrown your need for me, $n.  May you find adventure in all that you do!
+endif
+endif
+~
+>speech_prog yes yeah yup ya yessir~
+Say OK, Just say one of the following and I will help you with that topic.
+nod $n
+mpecho &GLEVEL EXP EXIT PKILL PEACEFUL TRAIN PRACTICE SCHOOL STATS
+~
+>speech_prog nope no never nopers shake~
+say OK $n, You must really know what you are doing. 
+wave $n
+~
+>speech_prog exit exits~
+say There are many auto commands that you can type:
+mpecho AUTOEXIT: Will show you all exits when you walk into a room.
+mpecho AUTOLOOT: Will take all the item in a MOB'S corpse after YOU have killed it.
+mpecho AUTOGOLD: Will take all gold from the corpse of a MOB YOU have killed.
+mpecho AUTOSAC: Will sacrifice a MOB'S corpse after you have killed it.
+~
+>speech_prog experience exp xp~
+say Experience is gained by killing mobs, for each 1000 experience points you earn you gain a level.
+mpecho &GCONSIDER <MOB>: shows you the chances that you will be able to kill the mob in question.
+mpecho &GKILL <MOB>: you attempt to kill a mob.
+mpecho &GWORTH: shows you how much experience you have and how much you need until your next level. Also it shows your modified stats.
+ 
+say for right now, you should stay in the Temple until level 5.
+~
+>speech_prog levels level lvl~
+say to raise levels, you must gain experience from killing mobs.
+mpecho AREA: shows you what level all the areas in the game are.
+say For the time being you should stay in the Temple until you reach level 5.
+~
+>speech_prog pkill pk~
+say PKill means that you wish to be able to fight and kill or die other pk players in the game. This will start at level 30 to give you some breathing room, remember it's a +/- 8 level range.
+~
+>speech_prog peaceful~
+say Peaceful means that you do not wish to kill other players. You cannot be attacked by them unless you wander into CLAN halls or the ARENA.
+~
+>speech_prog stats statistics stat~
+say there are many stats. To see what your values are, type wo.
+mpecho &GSTR: strength, this affects how much you can carry and how much.
+mpecho &GWIS: affects how many practices you get per level.
+mpecho &GINT: affects how many practices you need to become an adept at a skill or spell.
+mpecho &GDEX: affects how often you can dodge or parry an attack.
+mpecho &GCON: affects how many hit points you gain per level.
+say To increase your stats, go TRAIN them.
+~
+>speech_prog wave c-ya bye goodbye~
+wave $n
+say May your journey lead you to good health.
+~
+>speech_prog assistance~
+&Wsay remember $n to &GCON &Y<MOB> &Wbefore attacking them.
+say you will also want to LOOK or READ all SIGNS you come across.
+say as they will further assist you in your journeys.
+say I am also a TRAINER, You can &GTRAIN &W&Y<STAT> &W right here with me simply by typing TRAIN and the STAT you wish to TRAIN.
+mpecho &GWIS, INT, DEX, STR, CON&W
+say those are the stats you should concentrate on training, however do not waste precious practices on.
+mpecho &CHP, MANA, BLOOD, MOVES&W
+say those stats are not permenant if you are single classed, upon remorting you will be set with a new amount of hp,mana/blood, and moves.
+say &GWIS, INT, DEX, STR, &Wand &GCON &Wall max out at 35 naturally then you have race enhancements and equipment enhancements.
+say The Maximun amount with full enhancements is 50, it is almost impossible to reach all 50's across the board, almost.
+smile $n
+~
+>speech_prog school~
+say Each Temple has it's own SCHOOL, each SCHOOL is unique for it's Temple. 
+say In the SCHOOL, You the "player" will be able to gain Levels, Train Stats, Practice Skills and Spells.
+say Also try to remember to CON <MOB>
+smile $n
+~
+>speech_prog train~
+say you can do that right here with me.
+smile $n
+~
+>speech_prog practice~
+if ispc($n) == 1
+if level($n) < 3
+say you must get to level 3 before you can begin practicing.
+smile $n
+else
+say I can help you Practice your skills/spells.
+nod $n
+endif
+endif
+~
+|
+#22018
+servant ghost~
+~
+~
+~
+1 0 0 0 0 0 S
+4 0 8 8 0 0d0+0 0d0+0
+40 0 0
+0 0 0
+0 0 0
+#22022
+ant~
+An Ant.~
+An Ant.
+~
+~
+1 0 0 0 0 0 S
+150 10 -1000 -1000 0 10d0+0 0d0+0
+1500 0 0
+0 0 0
+0 0 0
+#22033
+Whoelt~
+Whoelt~
+Whoelt, the mysterious is here
+~
+~
+3 0 0 0 0 0 S
+5 0 10 10 0 40d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+>fight_prog 10~
+cast 'magic missile'
+~
+>fight_prog 10~
+cast 'inflict pain'
+~
+>fight_prog 10~
+cast 'burning hands'
+~
+|
+#22034
+Moofiegoof~
+Moofiegoof~
+Moofiegoof, an angry spell caster is here.
+~
+~
+35 0 0 0 0 0 S
+5 0 10 10 0 39d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+>fight_prog 10~
+cast 'magic missile'
+~
+>fight_prog 5~
+cast 'chill touch'
+~
+>fight_prog 7~
+cast 'cause light'
+~
+>all_greet_prog 100~
+muhaha
+say die! $n
+say feel my powers!
+~
+>act_prog ~
+~
+|
+#22044
+boxing bag~
+A Boxing Bag~
+A Boxing Bag is in the middle of the room.
+~
+~
+4718659 1073741824 67108864 524288 4099 0 S
+0 0 -40 -40 0 5d0+0 0d0+0
+0 0 0
+0 0 0
+104451 0 0
+>all_greet_prog 100~
+say Welcome $n! I am a magical trainer. Do with me as you wish but don't abuse me or I will vanish.
+smile $n
+~
+>fight_prog 40~
+say I am done
+say by saying 'I am done', I will stop this combat, there is no need to flee and loose exp.
+~
+>speech_prog 'I am done'~
+say Thank you for taking the time to practice some of your skills
+bow $n
+mpat 22044 mpmload 22044
+mppurge self
+~
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) < 11
+curt $n
+else
+say You are too high of level to use me, $n. Begone!
+mptrans $n 22053
+endif
+endif
+~
+|
+#22045
+Hayden knight~
+Hayden~
+Hayden, A recent Grad of THC is standing here.
+~
+~
+3 128 16 0 0 0 S
+8 0 16 16 0 80d0+0 0d0+0
+80 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+grin $n
+say if you think your strong enough and tough enough $n then try me.
+flex $n
+say i didn't get here because i kissed butt.
+mpecho Hayden shows you all his battle scars.
+~
+|
+#22053
+Gawaine~
+Gawaine~
+Gawaine, The healer of THC
+~
+~
+75 16448 21004304 134217728 131079 0 S
+350 0 4000 4000 0 300000d0+0 0d0+0
+3500 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if isimmort($n) == 1
+if sex($n) == 1
+say Greetings Lord $n
+bow $n
+break
+else
+if sex($n) == 2
+say Greetings Lady $n
+curtsey $n
+break
+endif
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+smile $n
+say Welcome back $n, Always a pleasure to see a friendly face.
+break
+else
+glare $n
+say May you die at the hands of a knights sword $n.
+break
+endif
+endif
+~
+>act_prog ~
+~
+|
+#22059
+Kryan~
+Kryan~
+Kryan, the Trainer of THC
+~
+~
+579 0 32784 0 10241 0 S
+110 0 220 220 0 100000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+#22061
+Kay~
+Kay~
+Kay, The Instructor of THC
+~
+~
+1091 100663424 16 0 1 0 S
+110 0 220 220 0 100000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+#22063
+Rensok~
+Rensok~
+Rensok, The Remort Master of THC
+~
+~
+262211 128 16 1073741824 1 0 S
+110 0 220 220 0 100000d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#22001
+shield Truth~
+A Shield of Truth~
+A Shield of Truth~
+~
+9 134217728 0 0 0 513 1
+100 100
+0~ 0~ 0~ 0~
+10 10 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 2
+A
+12 20
+A
+32 1
+#22002
+eye~
+An Eye~
+An Eye~
+~
+12 17 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+9999999 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#22003
+dragon corpse~
+the corpse of a rather large Dragon ~
+&GThe corpse of a very large Dragon lies here.~
+~
+15 33554432 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+1000000 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#22004
+Bucket dragon blood~
+a bucket of Dragon Blood~
+A bucket of Dragon Blood is in the corner.~
+~
+28 0 0 0 0 0 0
+100 100
+-1~ 0~ 0~ 0~
+1000000 10 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+bucket~
+You look at the bucket, it is huge. You know from the odor that this isn't human blood but that of a Dragon.
+~
+>rand_prog 12~
+0
+mpecho &GA few drops of &RDragon Blood&G drips on to the floor.
+~
+|
+#22005
+sign~
+A Sign (look sign)~
+A Sign (look sign)~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+This is one of many signs you will find throughout the lands.  In the
+squire school you will find a well that will supply water for you to drink
+and there is also a magical stand from where you can get food from.  Tim is
+also here to help you, although he can not answer every question, you do
+have other options.  You have channels such as chat, question, answer, ooc,
+and music.  You will find that most of the players here in Stormgate are pretty
+friendly and helpful.  
+~
+#22006
+Sword Honor~
+Sword of Honor~
+Sword of Honor~
+~
+5 1 0 0 0 8193 5
+100 100
+0~ 5~ 12~ 3~
+4 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+#22009
+well~
+a Well~
+A Well is in the center of the room.~
+~
+17 0 0 0 0 0 0
+100 100
+2147483647~ 2147483647~ 0~ 0~
+999999999 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#22010
+up bat bats~
+A bunch of bats hang from the ceiling.~
+A bunch of bats hang from the ceiling.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#22011
+mango fruit~
+a Juicy Ripe Mango~
+A juicy, ripe mango is here.~
+~
+19 8193 0 0 0 1 0
+100 100
+5~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#22012
+stand~
+a magical stand~
+A simple stand of magical food sits here.~
+~
+15 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+stand~
+A magical food stand is what you are looking at, to work it just type
+&Ylook in stand&G and see what wonderful food you the Squire of THC will
+recieve.  
+~
+>look_in_prog 100~
+0
+mpoload 22011
+mpechoat $n You see nothing but a solitary eye staring back at you.  After a moment, it winks!
+mpechoaround $n $n is startled by something in the stand, and jumps back!
+drop mango
+~
+|
+#22015
+table dinning ~
+hidden passageway~
+A Long Elegent Dinning Table~
+~
+29 0 0 0 0 0 0
+100 100
+22027~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+table~
+You see a hidden portal to another section of THC's temple.
+~
+#22022
+stick~
+A stick~
+A stick~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 0~ 0~ 8~
+0 0 0
+2 22022
+reserved~
+1 -1
+0 0 0
+#22027
+sign~
+sign~
+A Large Sign~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Welcome, brave Knight!  Be prepared to defend yourself and may your gains
+come quickly and painlessly. 
+ 
+~
+#22044
+Arms~
+Arms~
+Arms~
+~
+0 0 0 0 0 256 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#22001
+The Temple of Truth, Honor and Chivalry~
+~
+~
+You are surrounded by a beautiful white light, you can hear soothing
+chants in the distance.  The name Templar, the Diety of THC is scribe on the
+wall.  The walls are lined with gold, the floors are of the finest marble
+known to man.  The craftmanship of all the wooden finishes are simply
+beautiful.  You notice the window and the beautiful sky beyond it, the
+lighting in this rooms seems to come from the corners leaving no shadows.  
+Type HELP CHANNELS to join channels and to ask for help on them. Vulgar
+language is ONLY permitted on the MUTTER channel.
+~
+0 402442 0
+Rd     0
+D5
+~
+~
+0 0 22002
+S
+#22002
+A room of Healing~
+~
+~
+In this room you find the pleasant healer named Tim, Tim is a gentle
+looking man dressed in white robes.  Tim will explain to you some of what
+you need to know in order to survive.  
+~
+0 134611980 0
+Rd     0
+D0
+~
+~
+0 0 22020
+D1
+~
+~
+0 0 22026
+D2
+~
+~
+0 0 22024
+D3
+~
+~
+0 0 22022
+S
+#22003
+The Squire School of THC~
+~
+~
+All around you is a barage of broken Knight training gear.  You glance
+quickly thru and wonder who trains with equipment like this.  On the floor
+lies the corpse of a Dragon.  You notice a light reflection as you pass over
+the corpse.  
+~
+0 393220 0
+Rd     0
+D2
+~
+~
+0 0 22018
+D3
+~
+~
+0 0 22004
+S
+>enter_prog 100~
+0
+mpecho &zYou hear whispers about a brave Knight that was eaten by a Dragon.
+~
+>rand_prog 5~
+0
+mpecho &zA cold breeze carries a whisper, 'The Shield of Truth is what killed the Dragon.'
+~
+|
+#22004
+The Squire School of THC~
+~
+~
+You have entered a room where blood has been spilt on the floor.  It
+actually looks like it was tossed on to the ground from a bucket of some
+sort.  You stop and think at what all this blood came from.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 22003
+D2
+~
+~
+0 0 22019
+D3
+~
+~
+0 0 22005
+S
+#22005
+The Squire School of THC~
+~
+~
+You find yourself amazed in all you see in what appears to be dunegons. 
+You stop and think to yourself, "training grounds...  Blah!"  .  There has
+to be more to this then what meets the eye.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 22004
+D2
+~
+~
+0 0 22020
+D3
+~
+~
+0 0 22006
+S
+#22006
+The Squire School of THC~
+~
+~
+These rooms do not appear to be getting any better as far as apearance
+goes.  You stop and now think that failure is death.  You were shown the
+glory upon joining THC and are now being shown what it's like not to be a
+follower of THC.  You really want to graduate from this Squire School.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 22005
+D2
+~
+~
+0 0 22021
+D3
+~
+~
+0 0 22007
+S
+#22007
+The Squire School of THC~
+~
+~
+The southern side of the school appears to be a little cleaner then the
+rest.  You feel yourself looking about in the shadows and really looking
+about before proceeding.  You now know that no one master can teach you, but
+you must be your own teacher and student....  For now.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 22006
+D2
+~
+~
+0 0 22008
+S
+#22008
+The Squire School of THC~
+~
+~
+The ground is covered here with linens and what appears to be soil.  From
+above you notice some thick ropes hanging from the ceiling.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22007
+D1
+~
+~
+0 0 22021
+D2
+~
+~
+0 0 22009
+S
+>rand_prog 11~
+0
+mpecho &GYou hear the screams and feel the THUD of a thief falling to his death!
+~
+|
+#22009
+The Squire School of THC~
+~
+~
+The soil here seems rich in nutrient but no vegation of any kind grow
+here.  You notice a well in the middle and it appears to be operational. 
+You closely examine the ground and notice that your not the only one to
+venture thru here.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22008
+D1
+~
+~
+0 0 22022
+D2
+~
+~
+0 0 22010
+S
+#22010
+The Squire School of THC~
+~
+~
+You start to notice that the ground here is getting harder as if there is
+some type of stone beneath the soil.  You glance all around and see bats
+hanging from the ceiling.  You try to keep as silent as possible.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22009
+D1
+~
+~
+0 0 22023
+D2
+~
+~
+0 0 22011
+S
+>rand_prog 5~
+0
+mpecho &zA bat swoops down and tried it's best to make a nest in your hair.
+~
+|
+#22011
+The Squire School of THC~
+~
+~
+You have made it to the SouthEastern corner of this school.  You know
+what you went thru to get here now it's where you are going that will make
+or break you.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22010
+D1
+~
+~
+0 0 22012
+S
+#22012
+The Squire School of THC~
+~
+~
+This is the southern part of the Squire School.  Here you see all kinds
+of broken equipment on the floor.  There is also some type of stand in the
+middle of the room.  The stand has some type of writtings on it.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22023
+D1
+~
+~
+0 0 22013
+D3
+~
+~
+0 0 22011
+S
+#22013
+The Squire School of THC~
+~
+~
+You see chains hanging from the wall, most of them are broken and rusty. 
+You notice that someone or something has also tried to dig their way out
+thru the solid granite floor.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22024
+D1
+~
+~
+0 0 22014
+D3
+~
+~
+0 0 22012
+S
+#22014
+The Squire School of THC~
+~
+~
+Chains, chains, and more chains lay about all scattered around.  All
+useless junk, now you start to wonder if this was originally a torture
+chamber or some sort of prison.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22025
+D1
+~
+~
+0 0 22015
+D3
+~
+~
+0 0 22013
+S
+#22015
+The Squire School of THC~
+~
+~
+This is the SouthEast corner of the Squire School.  In this room you see
+a rather heavy and long wooden table.  This table strikes you as odd because
+it's more of a dinning table then what really belongs down here.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22016
+D3
+~
+~
+0 0 22014
+S
+>enter_prog 100~
+0
+mpecho &zA light breeze draws your attention towards the table.
+~
+|
+#22016
+The Squire School of THC~
+~
+~
+The eastern part of the school is rather clean, You notice that even the
+walls appear to be cleaned from time to time.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22017
+D2
+~
+~
+0 0 22015
+D3
+~
+~
+0 0 22025
+S
+#22017
+The Squire School of THC~
+~
+~
+The eastern part of the school is rather clean, as if people travel on
+this side of the school.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22018
+D2
+~
+~
+0 0 22016
+D3
+~
+~
+0 0 22026
+S
+#22018
+The Squire School of THC~
+~
+~
+You are on the eastern side of the school.  Part of this room is scortch
+and the other side towards the south is rather clean.  You walk over to the
+scortched wall and begin to rub..  The rock is so badly burnt it doesn't
+come off.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22003
+D2
+~
+~
+0 0 22017
+D3
+~
+~
+0 0 22019
+S
+#22019
+The Squire School of THC~
+~
+~
+You are in the near center of the squire school there is a rather horrid
+smell comming from the north and a gleam of a white light towards the south.
+The room itself is rather tacky as if it has been neglected for years.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22004
+D1
+~
+~
+0 0 22018
+D2
+~
+~
+0 0 22026
+D3
+~
+~
+0 0 22020
+S
+#22020
+The Squire School of THC~
+~
+~
+This has to be one of the more "cleaner" rooms you have come into.  To
+the south you can see Tim the healer, to the north you can see some junk.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22005
+D1
+~
+~
+0 0 22019
+D2
+~
+~
+0 0 22002
+D3
+~
+~
+0 0 22021
+S
+#22021
+The Squire School of THC~
+~
+~
+With the dirtyness of the north and the soil to the south you wonder why
+would someone have gone thru all the trouble of making such a mess.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22006
+D1
+~
+~
+0 0 22020
+D2
+~
+~
+0 0 22022
+D3
+~
+~
+0 0 22008
+S
+#22022
+The Squire School of THC~
+~
+~
+Here in this room the view of the well to the west is rather odd as it
+really doesn't fit with all the other oddities you have found down here. 
+The light to the east is comforting as it is not really blinding but does
+give a smooth warm feeling.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22021
+D1
+~
+~
+0 0 22002
+D2
+~
+~
+0 0 22023
+D3
+~
+~
+0 0 22009
+S
+#22023
+The Squire School of THC~
+~
+~
+With bats to your west and sweet smells of fruit to your south, the light
+from north gives you some peace of mind.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22022
+D1
+~
+~
+0 0 22024
+D2
+~
+~
+0 0 22012
+D3
+~
+~
+0 0 22010
+S
+#22024
+The Squire School of THC~
+~
+~
+Seeing Tim to the north is rather comforting then you glance south and
+see the chains and shiver.  You can hear flapping noises towards the west
+and faint dripping sounds comming from the north.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22002
+D1
+~
+~
+0 0 22025
+D2
+~
+~
+0 0 22013
+D3
+~
+~
+0 0 22023
+S
+#22025
+The Squire School of THC~
+~
+~
+With chains to the south and dead bugs to the north.  You wonder what
+lays ahead for your future.  Knowing what THC stands for you can not begin
+to famoth what your future holds.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 22026
+D1
+~
+~
+0 0 22016
+D2
+~
+~
+0 0 22014
+D3
+~
+~
+0 0 22024
+S
+#22026
+The Squire School of THC~
+~
+~
+You are in the near center of the squire school there is a light that is
+shinning from the west.  This room appears to have been well traveled at one
+time.  Spider webs and it's entangled victims are all that is left here.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22019
+D1
+~
+~
+0 0 22017
+D2
+~
+~
+0 0 22025
+D3
+~
+~
+0 0 22002
+S
+#22027
+Knights' Academy~
+~
+~
+You can't believe it, this is all that you had hoped for.  A real
+training ground with all the goodness of perfect equipment, there is even a
+weight bench in the corner.  You become watery eyed and thankful that you
+have made it this far.  
+~
+0 393228 0
+Rd     0
+D1
+~
+~
+0 0 22028
+D2
+~
+~
+0 0 22033
+S
+#22028
+Knights' Academy~
+~
+~
+Here are 2 eager knights, one is wielding a sword while the other is
+useing a shield. They will wait their turns while you choose which one you 
+wish to practice with. You can do this by typing kill knight or kill 2.knight.
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 22029
+D2
+~
+~
+0 0 22034
+D3
+~
+~
+0 0 22027
+S
+#22029
+Knights' Academy~
+~
+~
+You hear the sounds of swords clanging and images of others walking in
+and out of the room.  You ready yourself, as a breath could mean the
+difference of attacking or being attacked.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 22030
+D2
+~
+~
+0 0 22035
+D3
+~
+~
+0 0 22028
+S
+#22030
+Knights' Academy~
+~
+~
+You finally take a deep breath, ahhh.  Your mistake, as the others take
+notice and wait for the right time to strike.  You try to pass but your out
+numbered.  You grip your weapon tightly and clench your teeth and hope all
+you've learned so far will help you survive. 
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 22031
+D2
+~
+~
+0 0 22036
+D3
+~
+~
+0 0 22029
+S
+#22031
+Knights' Academy~
+~
+~
+You hear the sounds of swords clanging and images of others walking in
+and out of the room.  You ready yourself, as a breath could mean the
+difference of attacking or being attacked.
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 22032
+D2
+~
+~
+0 0 22037
+D3
+~
+~
+0 0 22030
+S
+#22032
+Knights' Academy~
+~
+~
+You have entered the NorthEastern corner of the Academy.  There is no
+sense of security here as there are only 2 exits.  You try to make your way
+out unnoticed, but you await your fate in the other room.  
+~
+0 393224 0
+Rd     0
+D2
+~
+~
+0 0 22038
+D3
+~
+~
+0 0 22031
+S
+#22033
+Knights' Academy~
+~
+~
+You carefully glance about the room, other knights walk in and walk out. 
+Your heart races but you don't fear you anticipate what might come.  You
+grip your weapon ever so tightly and say to your self 'bring it on'.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22027
+D1
+~
+~
+0 0 22034
+D2
+~
+~
+0 0 22039
+S
+#22034
+Knights' Academy~
+~
+~
+What the.....  You can't believe your eye's, you thought this school was
+just for warriors but here are two spellcasters going at each others necks,
+obviously they too can graduate from here.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22028
+D1
+~
+~
+0 0 22035
+D2
+~
+~
+0 0 22040
+D3
+~
+~
+0 0 22033
+S
+#22035
+Knights' Academy~
+~
+~
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22029
+D1
+~
+~
+0 0 22036
+D2
+~
+~
+0 0 22041
+D3
+~
+~
+0 0 22034
+S
+#22036
+Knights' Academy~
+~
+~
+You hear the sounds of swords clanging and images of others walking in
+and out of the room.  You ready yourself, as a breath could mean the
+difference of attacking or being attacked.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22030
+D1
+~
+~
+0 0 22037
+D2
+~
+~
+0 0 22042
+D3
+~
+~
+0 0 22035
+S
+#22037
+Knights' Academy~
+~
+~
+You hear the sounds of swords clanging and images of others walking in
+and out of the room.  You ready yourself, as a breath could mean the
+difference of attacking or being attacked.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22031
+D1
+~
+~
+0 0 22038
+D2
+~
+~
+0 0 22043
+D3
+~
+~
+0 0 22036
+S
+#22038
+Knights' Academy~
+~
+~
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22032
+D2
+~
+~
+0 0 22044
+D3
+~
+~
+0 0 22037
+S
+#22039
+Knights' Academy~
+~
+~
+You hear the sounds of swords clanging and images of others walking in
+and out of the room.  You ready yourself, as a breath could mean the
+difference of attacking or being attacked.
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22033
+D1
+~
+~
+0 0 22040
+S
+#22040
+Knights' Academy~
+~
+~
+The sounds of swords clanging is all around.  To the east you watch as
+two fighters battle it out with each other to prove himself the better.  To
+the south you see a Knight, he just glances at you and smirks, you think to
+yourself 'what if....  '.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22034
+D1
+~
+~
+0 0 22041
+D2
+~
+~
+0 0 22045
+D3
+~
+~
+0 0 22039
+S
+#22041
+Knights' Academy~
+~
+~
+You hear the sounds of swords clanging and images of others walking in
+and out of the room.  You ready yourself, as a breath could mean the
+difference of attacking or being attacked.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22035
+D1
+~
+~
+0 0 22042
+D3
+~
+~
+0 0 22040
+S
+#22042
+Knights' Academy~
+~
+~
+The sounds of swords clanging is all around.  To the south you see a
+Knight who appears to be standing at guard.  Curious as you are you want to
+check it out but you have a little doubt as to how to present your self. 
+Maybe talking to him might clear things up a bit.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22036
+D1
+~
+~
+0 0 22043
+D2
+~
+~
+0 0 22046
+D3
+~
+~
+0 0 22041
+S
+#22043
+Knights' Academy~
+~
+~
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22037
+D1
+~
+~
+0 0 22044
+D3
+~
+~
+0 0 22042
+S
+#22044
+Knights' Academy~
+~
+~
+This is the SouthEastern room of the Academy.  You see practice equipment
+all around.  One piece gets your attention, it's a boxing bag with arms. 
+This boxing bag appears to be rather magical as is faces you as you move
+around it.  
+~
+0 134610954 0
+Rd     0
+D0
+~
+~
+0 0 22038
+D3
+~
+~
+0 0 22043
+S
+#22045
+Knights' Academy~
+~
+~
+You better CON Hayden before attacking him.  He isn't like the others,
+Hayden is a recent graduate of the Academy and is just overseeing all that
+happens.  He surely isn't the type to mess with.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22040
+S
+#22046
+Knights' Academy~
+~
+~
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22042
+D2
+~
+~
+0 0 22047
+S
+#22047
+Knights' Academy~
+~
+~
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22046
+D1
+~
+~
+0 0 22048
+S
+#22048
+Knights' Academy~
+~
+~
+~
+0 393224 0
+Rd     0
+D2
+~
+~
+0 0 22049
+D3
+~
+~
+0 0 22047
+S
+#22049
+Knights' Academy~
+~
+~
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 22048
+D1
+~
+~
+0 0 22050
+S
+#22050
+Knights' Academy~
+~
+~
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+1 0 22051
+D3
+~
+~
+0 0 22049
+S
+#22051
+The Temple of THC~
+~
+~
+~
+0 263180 0
+Rd     0
+D1
+~
+~
+0 0 22052
+D3
+~
+~
+1 0 22050
+S
+#22052
+The Temple of THC~
+~
+~
+~
+0 263180 0
+Rd     0
+D1
+~
+~
+0 0 22053
+D3
+~
+~
+0 0 22051
+S
+#22053
+The Temple of THC~
+~
+~
+~
+0 263180 0
+Rd     0
+D0
+~
+~
+0 0 22054
+D3
+~
+~
+0 0 22052
+S
+#22054
+The Temple of THC~
+~
+~
+~
+0 263180 0
+Rd     0
+D0
+~
+~
+0 0 22055
+D2
+~
+~
+0 0 22053
+S
+#22055
+The Temple of THC~
+~
+~
+~
+0 263180 0
+Rd     0
+D0
+~
+~
+0 0 22058
+D1
+~
+~
+0 0 22056
+D2
+~
+~
+0 0 22054
+D3
+~
+~
+0 0 22057
+S
+#22056
+supplies~
+~
+~
+~
+0 263180 0
+Rd     0
+D3
+~
+~
+0 0 22055
+S
+#22057
+food/drink~
+~
+~
+~
+0 263180 0
+Rd     0
+D1
+~
+~
+0 0 22055
+S
+#22058
+The Temple of THC~
+~
+~
+~
+0 263180 0
+Rd     0
+D0
+~
+~
+0 0 22060
+D2
+~
+~
+0 0 22055
+S
+#22059
+THC's room of Training~
+~
+~
+~
+0 263180 0
+Rd     0
+D3
+~
+~
+0 0 22060
+S
+#22060
+The Temple of THC~
+~
+~
+~
+0 263180 0
+Rd     0
+D1
+~
+~
+0 0 22059
+D2
+~
+~
+0 0 22058
+D3
+~
+~
+0 0 22061
+D4
+~
+~
+0 0 22063
+D5
+~
+~
+0 0 22062
+S
+#22061
+THC's room of Practice~
+~
+~
+~
+0 263180 0
+Rd     0
+D1
+~
+~
+0 0 22060
+S
+#22062
+The Room of Tongues~
+~
+~
+~
+0 263180 0
+Rd     0
+D4
+~
+~
+0 0 22060
+S
+#22063
+The room of the Class Master~
+~
+~
+~
+0 263180 0
+Rd     0
+D5
+~
+~
+0 0 22060
+S
+#0
+
+
+
+#SPECIALS
+M 22002 spec_healer
+M 22053 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 22002 1 22002
+O 0 22005 0 22002
+O 0 22003 0 22003
+P 0 22001 0 22003
+O 0 22004 0 22004
+O 0 22009 0 22009
+O 0 22010 0 22010
+O 0 22012 0 22012
+P 0 22002 0 22012
+O 0 22015 0 22015
+O 0 22027 0 22027
+M 0 22033 1 22034
+M 0 22034 1 22034
+M 0 22044 1 22044
+M 0 22045 1 22045
+E 0 22001 0 15
+E 0 22006 0 20
+M 0 22053 1 22053
+M 0 22059 1 22059
+M 0 22061 1 22061
+M 0 22063 1 22063
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

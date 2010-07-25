@@ -1,0 +1,521 @@
+#AREADATA
+Name        New area~
+Builders    Isabo~
+VNUMs       21901 22000
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Isabo~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#21902
+snake black~
+the snake~
+&zA black snake slithers about.
+~
+~
+65 32768 0 0 2 -100 S
+15 1 30 30 0 1500d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>fight_prog 10~
+bite
+~
+|
+#21904
+liztar creature~
+the liztar~
+&gA strange, winged, lizardlike creature flies low.
+~
+&gThe liztar has thick, scaly green skin with yellow eyes and a split
+tongue and has dragonlike wings that enable it to fly.  It stands about four
+feet tall and has a long tail that it can use to trip its opponents up.  
+~
+65 557248 0 0 0 -100 S
+30 1 60 60 0 4500d0+0 0d0+0
+300 0 0
+0 0 0
+1 0 0
+>entry_prog 25~
+mpecho Something flies above your head.
+~
+>fight_prog 20~
+mpecho &gThe liztar whips its long tail around.
+trip $n
+~
+>death_prog 60~
+mpecho &gThe liztar's wings fall off as it breathes its last.
+mpoload 21905
+drop wings
+~
+|
+#21912
+vines tentacle~
+the vine~
+&gA tentacle of vine reaches out to ensnare.
+~
+&gAn overgrown arm of the vine, flails wildly hoping to catch another
+victim.  This isn't merely a plant; it is a carnivorous flesh-eating beast!
+~
+99 0 16 0 0 -250 S
+15 1 30 30 0 1500d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+mpecho &gThe vines fall harmlessly into pieces to the ground.
+mpgoto 1
+~
+|
+#0
+
+
+
+#OBJECTS
+#21904
+bench marble~
+the marble bench~
+&zA black marble bench is here.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+500 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#21905
+wings scaly liztar set~
+the wings of a liztar~
+&gA set of scaly, green wings lies here.~
+~
+9 0 0 0 0 1025 23
+100 100
+0~ 0~ 0~ 0~
+4 250 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+119 -1
+A
+12 -23
+#21906
+orchid exotic~
+&Pan exotic orchid~
+&PAn exotic orchid grows amongst the ruined garden.~
+~
+26 0 0 0 0 1 25
+100 100
+30~ invis~ reserved~ reserved~
+1 5 0
+0 0
+reserved~
+0 0
+0 0 0
+#21915
+fruit rotten piece~
+a rotten piece of fruit~
+&gA rotten piece of fruit lies on the ground catching flies.~
+~
+19 0 0 0 0 1 1
+100 100
+5~ 0~ 0~ 1~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#21901
+The Entrance to Jorendale~
+~
+~
+&wA wide, dirt path heads east but it is obscured by a thick fog, making
+visibility quite dreary.  A strange calm as such before the storm, has
+settled in the fog making the ringing in one's ears thunderous.  The path
+seems to be winding through a large forest but the fog makes it hard to
+fathom the shape of anything around it.  There are some branches poking
+through the thick mist.  An occasional rustle of dead leaves can be heard,
+muffled in the obscurity.  There is a large, wooden &rsign&w.  
+~
+0 134619148 3
+Rd     0
+E
+sign~
+&O               ____________________
+              |                    |
+              |    &WThe Township&O    | 
+              |        &Wof&O          |
+              |     &WJorendale&O      |
+              |____________________|                 
+~
+D1
+~
+~
+0 0 21902
+S
+#21902
+The Main Forest Path~
+~
+~
+&wThe dirt path seems to head east, although that is up to chance in
+these treacherous mists.  Large trees with naked branches line both sides of
+the path as it appears to be winding through a forest.  The town of
+Jorendale or its people are nowhere in sight.  
+~
+0 134619144 3
+Rd     0
+D1
+~
+~
+0 0 21903
+D3
+~
+~
+0 0 21901
+S
+#21903
+The Main Path~
+~
+~
+&wOne can only trudge slowly on in this stifling mist as it weighs down on
+everything obscuring one's view.  Strange footprints are patterned in a
+random way on the path disappearing off the path into the dense forest
+beyond.  The mists strangle even sound as the eerie silence makes one's own
+heart thunder in one's ear.  The path continues east and back west.  
+~
+0 134619144 3
+Rd     0
+D1
+~
+~
+0 0 21904
+D3
+~
+~
+0 0 21902
+S
+#21904
+The Main Path~
+~
+~
+&wThe path continues slowly towards the town to the east.  There is a
+marble bench to the north of the path.  It looks desolate as the rest of the
+area.  No sound can be heard except very close by.  The path stretches east
+and west.  There appears to be an arch to the east providing an entryway
+into the town.  
+~
+0 134619144 3
+Rd     0
+D1
+~
+~
+0 0 21905
+D3
+~
+~
+0 0 21903
+S
+#21905
+The Gateway to the Courtyard~
+~
+~
+&wThe gateway is high above as a brick wall runs north and south.  The
+path heads east into the township and west towards the forest shrouded in
+mists.  There is absolutely no movement or sound anywhere as the vacuum
+sucks in any sound.  The path is lined with long overgrown weeds and vines
+that grow wildly.  Exotic orchids are in bloom quite mysteriously.  It
+appears to have been the town center with a large garden.  Now, there is no
+sign of life or any light.  
+~
+0 134619144 1
+Rd     0
+E
+gateway~
+&zThe gateway is of wrought iron in an intricate design although it is
+hidden mostly by overgrown &givy&z.  
+ 
+~
+D0
+~
+~
+0 0 21906
+D1
+~
+~
+0 0 21907
+D2
+~
+~
+0 0 21908
+D3
+~
+~
+0 0 21904
+S
+#21906
+In the Courtyard~
+~
+~
+&wThis is the walkway that runs around the courtyard.  The grass grows
+high and weeds threaten to intrude onto the path.  The flowers have all been
+choked off from existence.  The brick walls have ivy and strange vines
+crawling wildly over them.  The mist tinges the air with a slight scent of
+decay.  To the east, there is a man-made stream that is now stagnant, choked
+with algae, as the surface is slick with it.  The trees that once bore
+fruit, now grow barren under the spell of the mists.  The silence in the air
+is stifling.  The path continues north and south.  
+~
+0 134619144 1
+Rd     0
+D0
+~
+~
+0 0 21909
+D2
+~
+~
+0 0 21905
+S
+#21907
+The Path Through the Courtyard~
+~
+~
+&wHere the path continues east and west through the courtyard.  The
+garden is dried up with only weeds growing rampant amidst the tall grass. 
+To the north and south small manmade streams flows stagnantly with algae
+floating in large green clumps at the top.  The large fruit trees stand
+barren.  The mists swirl about, ever choking.  
+~
+0 134619144 1
+Rd     0
+D1
+~
+~
+0 0 21915
+D3
+~
+~
+0 0 21905
+S
+#21908
+The Courtyard~
+~
+~
+&wThis is the walkway that runs around the courtyard.  The grass grows
+high and weeds threaten to intrude onto the path.  The flowers have all been
+choked off from existence.  The brick walls have ivy and strange vines
+crawling wildly over them.  The mist tinges the air with a slight scent of
+decay.  To the east, there is a man-made stream that is now stagnant, choked
+with algae, as the surface is slick with it.  The trees that once bore
+fruit, now grow barren under the spell of the mists.  The silence in the air
+is stifling.  The path continues north and south.  
+~
+0 134619144 0
+Rd     0
+D0
+~
+~
+0 0 21905
+S
+#21909
+In the Courtyard~
+~
+~
+&wThis is the walkway that runs around the courtyard.  The grass grows high
+and weeds threaten to intrude onto the path.  The flowers have all been
+choked off from existence.  The brick walls have ivy and strange vines
+crawling wildly over them.  The mist tinges the air with a slight scent of
+decay.  To the southeast, there is a man-made stream that is now stagnant,
+choked with algae, as the surface is slick with it.  The trees that once
+bore fruit, now grow barren under the spell of the mists.  The silence in
+the air is stifling.  The path continues to the east and south.  
+~
+0 134619144 0
+Rd     0
+D1
+~
+~
+0 0 21910
+D2
+~
+~
+0 0 21906
+S
+#21910
+In the Courtyard~
+~
+~
+&wThis is the walkway that runs around the courtyard.  The grass grows high
+and weeds threaten to intrude onto the path.  The flowers have all been
+choked off from existence.  The brick walls have ivy and strange vines
+crawling wildly over them.  The mist tinges the air with a slight scent of
+decay.  To the south, there is a man-made stream that is now stagnant, choked
+with algae, as the surface is slick with it.  The trees that once bore
+fruit, now grow barren under the spell of the mists.  The silence in the air
+is stifling.  The path continues east and west.  
+~
+0 134619144 0
+Rd     0
+D1
+~
+~
+0 0 21911
+D3
+~
+~
+0 0 21909
+S
+#21911
+In the Courtyard~
+~
+~
+&wThis is the walkway that runs around the courtyard.  The grass grows high
+and weeds threaten to intrude onto the path.  The flowers have all been
+choked off from existence.  The brick walls have ivy and strange vines
+crawling wildly over them.  The mist tinges the air with a slight scent of
+decay.  To the south, there is a man-made stream that is now stagnant, choked
+with algae, as the surface is slick with it.  The trees that once bore
+fruit, now grow barren under the spell of the mists.  The silence in the air
+is stifling.  The path continues east and west. 
+~
+0 134619144 0
+Rd     0
+D1
+~
+~
+0 0 21912
+D3
+~
+~
+0 0 21910
+S
+#21912
+In the Courtyard~
+~
+~
+&gIn this corner, the walls are overrun with overgrown vines and thorny
+roses.  It is quite unavoidable as the path leads straight away into it. 
+When examined closely, the remains of some poor animal can be seen.  The
+path leads west and south.  
+~
+0 134619144 0
+Rd     0
+D2
+~
+~
+0 0 21913
+D3
+~
+~
+0 0 21911
+S
+#21913
+In the Courtyard~
+~
+~
+&wThis is the walkway that runs around the courtyard.  The grass grows high
+and weeds threaten to intrude onto the path.  The flowers have all been
+choked off from existence.  The brick walls have ivy and strange vines
+crawling wildly over them.  The mist tinges the air with a slight scent of
+decay.  To the west, there is a man-made stream that is now stagnant, choked
+with algae, as the surface is slick with it.  The trees that once bore
+fruit, now grow barren under the spell of the mists.  The silence in the air
+is stifling.  The path continues around the courtyard to the north and
+south, and to the east, lies a side street into town.  
+~
+0 134619144 0
+Rd     0
+D0
+~
+~
+0 0 21912
+D2
+~
+~
+0 0 21914
+S
+#21914
+The Main Entrance to the Town~
+~
+~
+~
+0 134619144 1
+Rd     0
+D0
+~
+~
+0 0 21913
+D3
+~
+~
+0 0 21915
+S
+#21915
+The Path Through the Courtyard~
+~
+~
+&wHere the path continues east and west through the courtyard.  The garden
+is dried up with only weeds growing rampant amidst the tall grass.  To the
+north and south small manmade streams flows stagnantly with algae floating
+in large green clumps at the top.  The large fruit trees stand barren.  The
+mists swirl about, ever choking.  To the east is the main entrance of the
+town.  
+~
+0 134619144 1
+Rd     0
+D1
+~
+~
+0 0 21914
+D3
+~
+~
+0 0 21907
+S
+#0
+
+
+
+#SPECIALS
+M 21904 spec_poison
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 21902 3 21902
+O 0 21904 0 21904
+M 0 21904 3 21904
+O 0 21906 0 21906
+M 0 21912 1 21912
+O 0 21915 0 21915
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

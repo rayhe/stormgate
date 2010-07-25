@@ -1,0 +1,2314 @@
+#AREADATA
+Name        {90-104} Valhalla            Sparhawk~
+Builders    Sparhawk  Ambrosia~
+VNUMs       26251 26300
+Security    100
+Recall      25001
+Flags       256
+Sounds      The Sound of hearty laughter fills the Realm.~
+Music       victory.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#26251
+valkyr~
+Valkyr~
+&bOne of Odin's mighty Valkyr's stands here.
+~
+&bWhat little you can see past the bright fiery aura surounding her is
+that she is of great beauty but also deadly as death.  The weapons that she
+wears look as if they have seen great use, and the way she holds then shows
+that she is more than efficient with them.  
+~
+3 67108992 32816 0 0 500 S
+100 200 200 15600 15600d0+0 0d0+100000
+2000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc ($n)
+say Welcome Mortal!
+say Doth thou wish to Enter the Realm of Valhalla?
+say If yes say so.
+say If no say so.
+endif
+endif
+~
+>speech_prog yes~
+if ispc($n)
+    say Ah, Thou art a brave one!!!
+      say Very well, I shall send you to Valhalla..May Odin Welcome you!!
+mpechoat $n The Valkyr raises her &Rflaming &wsword...
+mpechoat $n &PYou have been SLAIN by the Valkyr!!!!
+mpechoat $n &YThe world fades to darkness............
+mpgoto 26251
+mptrans $n 26251
+mpechoat $n &WThe darkness lifts.....
+mpechoat $n You hear from far off, 'Odin Welcomes you!'
+mpgoto 26299
+endif
+~
+>speech_prog no~
+say Come back when you wish to Feast with the Gods!
+mptrans $n 25000
+~
+|
+#26252
+Valkyr~
+Valkyr~
+&bOne of Odin's mighty Valkyr's stands here.
+~
+&b What you can see past the bright fiery aura surounding her is that she
+is of great beauty but also deadly as death.  The weapons that she wears
+look as if they have seen great use, and the way that she holds then shows
+that she is more than efficient with them.  
+~
+3 67108992 32800 0 0 500 S
+100 200 200 19500 19500d0+0 0d0+100000
+2000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say &pOn behalf of my Lord Odin I welcome you to Valhalla!
+smile $n
+endif
+~
+>rand_prog 30~
+mpat 1 weapon
+~
+>rand_prog 15~
+say Mighty Odin, Grant me strength!
+c 'holy strength'
+~
+|
+#26256
+valkyr~
+Valkyr~
+&b One of Odin's mighty Valkyr's stands here.
+~
+&bWhat little you can see past the bright fiery aura surrounding her is
+tha she is of great beauty but also deadly as death.  The weapons that she
+wears look as if they have seen great use, and the way that she holds them
+shows that she is more than efficient with them.  
+~
+3 67108992 32800 0 0 500 S
+100 200 200 17600 17600d0+0 0d0+100000
+2000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say &pCome and find the place my Lord Odin has saved for you!
+smile $n
+endif
+~
+>rand_prog 30~
+mpat 1 weapon
+~
+>rand_prog 15~
+say Mighty Odin, Grant me strength!
+c 'holy strength'
+~
+|
+#26261
+valkyr~
+Valkyr~
+&bOne of Odin's mighty Valkyr's stands here.
+~
+&bWhat little you can see past the bright fiery aura surrounding her is
+that she is of great beauty but also deadly as death.  The weapons that she
+wears look as if they have seen great use, and the way that she holds them
+shows that she is more than efficient with them.  
+~
+3 67108992 32800 0 0 100 S
+100 200 200 15000 15000d0+0 0d0+100000
+2000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say &pCome and sup at my Lord Odin's table!
+smile $n
+endif
+~
+>rand_prog 30~
+mpat 1 weapon
+~
+>rand_prog 15~
+say Mighty Odin, Grant me strength!
+c 'holy strength'
+~
+|
+#26263
+odin~
+Odin Allfather~
+&bOdin sits here in all his glory.
+~
+&bOdin, the Allfather, sits here on his throne Hlidskialf, he watches
+with great interest all of the goings on in his great banquet hall.  Odin
+has two rather large ravens flying in circles over his head, and has a
+mighty spear in his right hand.  He seems to have an air of command about
+him even when he is not speaking, and the feeling that you are in the
+presense of someone mighty overwelms you.  
+~
+323 67125440 98336 24576 0 1000 S
+120 240 240 35000 35000d0+0 0d0+120000
+2400 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+    say &p &p &p &p &p Welcome warrior of Valhalla 
+    emote sweeps his hand widly encompassing all of Valhalla
+    say &pHave Thee enjoyed thy stay in my lands??
+cast 'golden armor'
+endif
+~
+>rand_prog 5~
+yell &pAlas, Warriors of Might have entered my realm!
+thick
+~
+>rand_prog 5~
+emote &bsurveys the many warriors entering his great hall.
+weap
+chant
+~
+>fight_prog 50~
+say Thou would dare Attack a God!
+say Foolish One...this is a trial by Fire!
+quickburst disrupt
+~
+>fight_prog 50~
+say I call upon my Immortal Soul to Strike you Down!
+soulstrike $n
+~
+>hitprcnt_prog 30~
+say You are truely a fool to think I can Die!
+say I am the Greatest of Gods!
+I will no longer Tolerate your Impudent attack!
+berserk
+~
+>death_prog 99~
+emote erupts into a Mote of Pure Power!
+say You fought well for a Mortal...Very Well Indeed.
+cast 'healing hands' $n
+~
+>rand_prog 10~
+mpolo 26294
+eat flesh
+~
+|
+#26264
+valkyr~
+Valkyr~
+&bOne of Odin's mighty Valkyr's stands here.
+~
+&b > &bWhat little you can see past the bright fiery aura surrounding her
+is that she is of great buauty but also deadly as death.  The weapons that
+she wears look as if they have seen great use, and the way that she holds
+them shows that she is more than efficient with them.  
+~
+3 67108992 32800 0 0 500 S
+100 200 200 17400 17400d0+0 0d0+100000
+2000 0 0
+0 0 2
+0 0 0
+>fight_prog 25~
+say We shall defend thee Lord Odin!!
+mprescue odin
+rescue odin
+~
+>rand_prog 75~
+com if ispc($n)
+cast 'web' $n
+cast 'demonfire' $n
+~
+>rand_prog ~
+mpassist odin
+assist odin
+~
+>fight_prog 50~
+disarm
+~
+>fight_prog 50~
+~
+>rand_prog 30~
+mpat 1 weapon
+~
+>rand_prog 15~
+say Mighty Odin, Grant me strength!
+cast 'holy strength'
+~
+|
+#26280
+heimdall~
+Heimdall Guardian of the Bridge~
+&bHeimdall is standing here guarding his bridge.
+~
+&bHeimdall Seems to have lost an eye somewhere along the line of his long
+life, he stands there like a pillar barring the way to the bridge.  He seems
+to be quite confused that you are approaching him from the wrong direction. 
+No mortal has ever tried to leave Valhalla before in his long memory.  
+~
+67 201326720 32800 16384 0 1000 S
+102 204 204 30000 30000d0+0 0d0+102000
+2040 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say &bWho are you who treads on the pathway of the Gods?
+~
+>fight_prog 60~
+emote chops at your weapon
+break 
+~
+>rand_prog 10~
+mpolo 26294
+say The Food of the Gods
+eat flesh
+~
+>rand_prog 30~
+weap
+~
+|
+#26282
+Loki god of Mischief~
+Loki~
+Loki the God of Mischief
+~
+~
+323 128 0 0 0 -900 S
+104 208 208 16600 16600d0+0 0d0+104000
+2080 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+gigg
+laugh
+say Ah my dear half brother!
+cackle
+say Thinks I'm still chained!
+say Dripping Snake Venom on my Face!!!
+CURSE
+say DAMN! DAMN DAMN Them!!!
+rage
+~
+>fight_prog 50~
+say Die in Darkness!!!
+cast 'shadow storm'
+~
+>fight_prog 50~
+circle $r
+~
+>rand_prog 20~
+thick
+~
+|
+#26285
+wolf fenris~
+The Wolf Fenris~
+&rThe Winter Wolf Fenris awaits the Day of his release.  His Jaws ready to sink into Odins Throat!
+~
+&rFenris: One of the three Children of Loki is bound in this room by
+chains.  He will not be released until the Last Day - Ragnarock.  On that
+day his bonds will break and Fenris shall do battle with The All Father
+Odin.  
+~
+67 134217856 16777216 8192 0 -1000 S
+105 210 210 30000 30000d0+0 0d0+0
+2100 0 0
+0 0 1
+0 0 0
+>hitprcnt_prog 20~
+say &bLoki!  My Father!  Why have you abandoned me!
+berserk
+~
+>fight_prog 50~
+bite $n
+~
+>all_greet_prog 100~
+growl $n
+snarl $n
+metamor
+~
+>rand_prog 30~
+rage
+weapon
+~
+>fight_prog 50~
+claw $r
+~
+>rand_prog 30~
+cast 'satanic caress' $i
+~
+|
+#26286
+valkyr~
+Valkyr~
+&bOne of Odin's mighty Valkyr's stands here.
+~
+&p&bWhat little you can see past the bright fiery aura sorrounding her is
+that she is of great beauty but also deadly as death.  The weapons that she
+wears look as if they have seen great use, and the way she holds them shows
+that she is more than efficient with them.  
+~
+3 67108992 32800 0 0 500 S
+100 200 200 17000 17000d0+0 0d0+100000
+2000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say &pGo no father than this, for only the Gods may pass here!
+smile $n
+endif
+~
+>rand_prog 30~
+mpat 1 weapon
+~
+>rand_prog 15~
+say Mighty Odin, Grant me strength!
+c 'holy strength'
+~
+|
+#26289
+tyr god~
+Tyr God of War~
+&rTyr God of War is here.
+~
+&rTyr stands here in all of his glory, he has only one hand, but you have
+a feeling that this is not a disadvantage to him.  The aura of power that
+surrounds him makes you know that you are in the presence of one who is
+truly brave and strong.  
+~
+65 67117184 786592 8192 0 0 S
+105 210 210 28000 28000d0+0 0d0+105000
+2100 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say &bWould you like to try to beat a God?
+smile $n
+endif
+~
+>rand_prog 30~
+mpolo 26294
+say I am the Flame of the Aesir
+eat flesh
+~
+>fight_prog 50~
+slit $r
+~
+>rand_prog 30~
+emote &bSelf-conciously plays with the stump where his right hand used to be.
+say I would give much to have my Hand!
+weapo
+~
+>fight_prog 50~
+emote raises his sword to the Sky!
+cast 'chain lightning'
+~
+>give_prog The Hand of Tyr~
+say My Hand!  Odin Lord My Hand!
+say You are truely Noble and Honorable
+say I do this in Thanks for what you have Done for me!
+mpolo 26295
+drop flesh
+mpjunk hand
+~
+|
+#26295
+valkyr~
+Valkyr~
+&bOne of Odin's mighty Valkyr's stands here.
+~
+&bWhat little you can see past the bright fiery aura surrounding her is
+that she is of great beauty but also deadly as death.  The weapons she wears
+look as if they have seen great use, and the way that she holds them shows
+that she is more than efficient with them.  
+~
+3 67108992 32800 0 0 500 S
+100 200 200 15999 15999d0+0 0d0+100000
+2000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if ispc($n)
+say &pThere are places in Valhalla where even the Gods will not tread.
+smile $n
+endif
+~
+>rand_prog 30~
+mpat 1 weapon
+~
+>rand_prog 15~
+say Mighty Odin, Grant me strength!
+cast 'holy strength'
+~
+|
+#26297
+Thor god~
+Thor God of Lightning~
+&rThor God of the Storm, waits for the day of Ragnarok.
+~
+&rThor has a long beard that has sparks of electricity flowing up and
+down it, he is also holding a very large warhammer that is glowing full of
+power.  Just standing near him has your hair standing on end from all of the
+static in the air.  You have a feeling that Thor would be a worthy opponent.
+~
+65 67109056 16810016 24576 0 500 S
+110 220 220 30000 30000d0+0 0d0+110000
+2200 0 0
+0 0 1
+0 0 0
+>rand_prog 25~
+Emote &rHas lightning sparkle in a cascade down his beard.  
+weaponmaster
+~
+>fight_prog 40~
+emote throws Miolner at you!
+slam $r
+~
+>hitprcnt_prog 25~
+say &ROdin my Father, I Pray to thee for thy Might!
+berserk
+~
+>all_greet_prog 100~
+if ispc($n)
+say &bEnjoy my father Odin's hospitality, but be warned I have little tolerance for mortals!
+frown $n
+endif
+~
+>rand_prog 20~
+mpolo 26294
+eat flesh
+~
+>fight_prog 50~
+say I Call Upon the Power of the Storm!
+quickburst 'chain lightning'
+~
+>rand_prog 15~
+thick
+~
+>death_prog 99~
+emote as Thors Mortal Flesh dies, he looks upon you his better.
+say You have defeated me in fair Combat I salute you who art Mighty in the eyes of the Gods!
+say The Spirit Remains the Shell SHall Return!
+say And you shall be born ANNEW!
+cast 'healing hands' $n
+~
+|
+#26298
+Greusel The Immortal Boar~
+The Boar Greusel~
+Greusel the Immortal Boar is Grazing on the Grass
+~
+This Giant Boar is the Meat of the Gods.  Greusel cannot Die, ever.  Each
+Day he is slaughtered and his meat taken; immediately following the flesh
+returnes, and Greusel goes back to his Grasses.  
+~
+65 0 16777216 524288 1 0 S
+100 200 200 50000 50000d0+0 0d0+0
+2000 0 0
+0 0 0
+2 0 0
+>death_prog 99~
+emote begins to regenerate.
+mpmload 26298
+~
+>rand_prog 20~
+cast 'cloud of healing'
+~
+|
+#0
+
+
+
+#OBJECTS
+#26251
+Sword Flaming~
+&rFlaming Sword~
+&rA sword of flame hangs in the air here.~
+~
+5 570425347 0 0 0 8193 100
+0~ 0~ 0~ 6~
+3 1000 0
+5 0
+fireball~
+20 20
+0 0 0
+A
+13 101
+A
+19 30
+A
+18 30
+A
+25 30
+#26253
+blood puddle~
+blood Puddle~
+&rA huge puddle of blood is on the ground here.~
+~
+28 0 0 0 0 0 0
+100~ 100~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>get_from_prog 100~
+0
+if ispc($n)
+    opemote bleh!1
+endif
+~
+|
+#26258
+palm large~
+&rA Large Palm~
+&rA large chunk of a palm is floating here.~
+~
+9 536870915 0 0 0 513 50
+0~ 0~ 0~ 0~
+1 500 0
+0 0
+reserved~
+0 0
+26291 0 0
+A
+19 5
+A
+18 5
+>wear_prog 100~
+0
+say &rHave you seen the rest of me?
+~
+|
+#26259
+thumb tyr~
+&rTyr's Thumb~
+&rA thumb from a large hand is floating in the air here.~
+~
+9 536870915 0 0 0 16385 78
+0~ 0~ 0~ 0~
+1 780 0
+0 0
+reserved~
+0 0
+26291 0 0
+A
+18 6
+A
+19 6
+A
+2 1
+A
+4 1
+>wear_prog 100~
+0
+say &bHave you seen the rest of me?
+~
+|
+#26263
+munin raven~
+&rOdin's Raven, Munin~
+&rA black raven seems to hover here.~
+~
+9 570425347 0 0 0 32769 104
+0~ 0~ 0~ 0~
+1 1040 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 12
+A
+18 12
+A
+12 100
+A
+4 2
+#26264
+raven hugin~
+&bOdin's Raven, Hugin~
+&bA black raven seems to hover here.~
+~
+9 570425347 0 0 0 32769 104
+0~ 0~ 0~ 0~
+1 1040 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 100
+A
+3 2
+A
+19 12
+A
+18 12
+#26265
+spear gungnir~
+&pThe Spear Gungnir~
+&pA very powerful looking spear floats in the air here.~
+~
+5 704643075 32768 0 0 8193 104
+0~ 0~ 0~ 2~
+3 1040 0
+2 26264
+reserved~
+6 6
+0 0 0
+A
+19 80
+A
+18 54
+A
+25 40
+A
+2 2
+>get_prog ~
+0
+~
+|
+#26266
+throne odin~
+&cHlidshialf, throne of Odin~
+&cThe throne of Odin, Hlidshialf, is here.~
+~
+8 167772163 0 0 0 0 300
+0~ 0~ 0~ 0~
+20000 12000 0
+0 0
+reserved~
+0 0
+0 0 0
+#26267
+odins war armor~
+&cOdin's War Armor~
+&cA huge suit of armor is sitting here.~
+~
+9 570425411 0 0 0 9 104
+0~ 0~ 0~ 0~
+10 1040 0
+5 0
+armor~
+-1 -1
+0 0 0
+A
+4 1
+A
+18 30
+A
+19 30
+A
+25 100
+A
+12 200
+#26270
+chunk of hand~
+&rA Chunk of Hand~
+&rA large chunk of hand is floating here.~
+~
+9 536870915 0 0 0 16385 45
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+26292 0 0
+A
+12 40
+A
+19 4
+A
+18 4
+>wear_prog 100~
+0
+say &b Have you seen the rest of me?
+~
+|
+#26271
+chunk hand~
+&bA Chunk of Hand~
+&bA large chunk of hand is floating here.~
+~
+9 536870915 0 0 0 513 45
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+26292 0 0
+A
+12 40
+A
+18 4
+A
+19 4
+#26272
+red rose~
+&RA Red Rose~
+A red rose is sitting here.~
+~
+8 67108931 0 0 0 1 1
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#26273
+gauntlets power~
+thor's Gauntlets of Power~
+A glowing pair of gauntles are here.~
+~
+9 33686529 0 0 0 129 104
+0~ 0~ 0~ 0~
+2 1040 0
+5 0
+enhanced strength~
+3 3
+0 0 0
+A
+2 -3
+A
+1 5
+A
+301 -1
+A
+12 50
+A
+18 20
+#26277
+tapestry key tapestry piece~
+a Piece Of Tapestry~
+And oddly shaped piece of tapetry is on the ground here.~
+~
+18 0 0 0 0 1 1
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#26278
+shield key piece~
+a Piece Of Shield.~
+A piece of shield in the shape of a key lays here.~
+~
+18 0 0 0 0 1 0
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26282
+display case~
+&bA Display Case~
+&bA display case sits here.~
+~
+15 3 0 0 0 0 0
+1000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26283
+display case~
+&rA Display Case~
+&rA display case sits here.~
+~
+15 536870915 0 0 0 0 0
+1000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26284
+portal~
+portal~
+A huge portal is standing here.~
+~
+29 100663299 0 0 0 0 0
+26252~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26289
+sword tyr~
+&bTyr's Sword~
+A Great Sword lies here.~
+~
+5 671088643 0 0 0 8193 103
+0~ 0~ 0~ 1~
+10 1028 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 30
+A
+19 30
+A
+13 126
+A
+26 100
+A
+1 2
+>wear_prog 100~
+0
+en.c
+emote &bsays are you ever going to return me to my Lord?
+~
+|
+#26290
+The Hand of Tyr~
+&rThe hand Of Tyr~
+&rA powerfull hand floats here.~
+~
+9 704643075 0 0 0 16385 104
+0~ 0~ 0~ 0~
+1 1040 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 100
+A
+12 200
+A
+18 10
+A
+19 10
+>wear_prog 100~
+0
+say &bOne day my Master Tyr will find me once again.
+~
+|
+#26291
+chunk half hand~
+&rHalf Hand~
+&rA large chunk of hand hangs here.~
+~
+9 536870915 0 0 0 16385 90
+15~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+26290 0 0
+A
+19 9
+A
+18 9
+A
+4 2
+A
+25 40
+A
+12 75
+#26292
+half chunk hand~
+&rHalf Hand~
+&rA large chunk of hand hangs here.~
+~
+9 536870915 0 0 0 513 90
+15~ 0~ 0~ 0~
+1 900 0
+0 0
+reserved~
+0 0
+26290 0 0
+A
+19 9
+A
+18 9
+A
+4 2
+A
+25 40
+A
+12 75
+#26293
+The Horn of the Aesir~
+&bThe Horn of the Aesir~
+A Mighty Horn lies on the Ground here.~
+~
+3 1025 16384 0 0 16385 102
+105~ 2~ 2~ dispel magic~
+10 1020 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 -5
+#26294
+The Flesh of Greusel Boar~
+flesh of the Boar~
+A Large Chunk of Cooked Meat is here.~
+~
+26 8192 0 0 0 1 106
+200~ satanic caress~ holy strength~ dark blessing~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26295
+flesh of the Boar~
+flesh of the Boar~
+A Chunk of Delicious Smelling Meat lies on the Board Before you.~
+~
+26 9217 0 0 0 1 102
+102~ bless~ sanctuary~ protection evil~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26296
+display case~
+&bA Display Case~
+&bA display case is standing here.~
+~
+15 3 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>open_prog 100~
+0
+emote &bscreeches loudly when you slide it open.
+~
+|
+#26297
+hammer miolner~
+&rThe Hammer Miolner~
+&rA Warriors Weapon Floats before you.~
+~
+5 536870915 8192 0 0 8193 104
+0~ 0~ 0~ 8~
+20 1040 0
+5 0
+call lightning~
+-1 -1
+0 0 0
+A
+13 90
+A
+18 17
+A
+19 40
+A
+302 -1
+A
+1 2
+#26298
+belt migin-giord~
+&bMigin-Giord belt of power~
+&bA girdle of great power is here.~
+~
+9 536870915 0 0 0 2049 104
+0~ 0~ 0~ 0~
+2 1040 0
+5 0
+giant strength~
+-1 -1
+0 0 0
+A
+4 -5
+A
+1 5
+A
+18 10
+A
+19 10
+#26299
+heimdall's Battle Axe~
+heimdall's Battle Axe~
+A Gigantic Double-Bladed Battle Axe Floats before you.~
+~
+5 671089664 32768 0 0 8193 103
+0~ 0~ 0~ 13~
+5 1028 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 70
+A
+19 80
+A
+301 -1
+A
+113 -1
+A
+13 125
+A
+26 50
+#0
+
+
+
+#ROOMDATA
+#26251
+Entrance To Valhalla~
+~
+~
+You have been transported to a huge corridor, it appears to be larger
+than any structure than you have ever seen.  Voices of merriment and joy can
+be heard echoing down this long and well lighted hallway, the sounds are of
+an almost surealistic quality, sounding to all extents other-worldly.  Over
+the laughter you can hear voices boasting of great conquests in battle.  
+~
+0 134619142 0
+Rd     0
+D0
+~
+~
+0 0 26252
+D2
+~
+~
+0 0 26299
+S
+#26252
+Odin's Tilt Yard~
+~
+~
+You have entered quite possibly the largest hall you have ever seen,
+Odin's tilting yard.  In all directions you can see five-hundred and forty
+doors through each of which could pass eight-hundred abreast.  One of Odin's
+12 mighty Valkyrs stands watch here, assuredly to welcome the heroic dead to
+Odin's great city of Valhalla.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26253
+D2
+~
+~
+0 0 26251
+S
+#26253
+Odin's Tilt Yard~
+~
+~
+This tremendous hall seems to continue forever, it appears to be a giant
+battle field.  Blood drenched warriors are happily slashing at each other
+and shouting in joy for the glory of it.  Each warrior knows that even if he
+falls in battle today, that he will sit in his place of honor at their lord
+Odin's banquet tonight.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26254
+D2
+~
+~
+0 0 26252
+S
+#26254
+Odin's Tilt Yard~
+~
+~
+Huge men wearing skins and holding large axes are engaging what appears
+to be a large giant here, they seem to revel in the blood and gore a get
+great joy out of the wounds they recieve.  At a second glance it seems that
+the giant is an apparation, and the warriors are re-living the events that
+led to their honorable deaths.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26255
+D2
+~
+~
+0 0 26253
+S
+#26255
+Odin's Tilt Yard~
+~
+~
+This gigantic hall continues on and on, the giant doors are in all
+directions.  Through these doors march untold hosts of warriors who have
+died honorably in combat, it seems that Odin has been busy for there seems
+to be many new additions marching into the gates of Valhalla.  You can hear
+shouts of joy as these men see the glory that is Valhalla.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26256
+D2
+~
+~
+0 0 26254
+S
+#26256
+Odin's Tilt Yard~
+~
+~
+One of Odin's twelve Valkyrs stands in the center of the gigantic hall
+her, he is welcoming new entries to Valhalla, where all who die honorably in
+combat will find their own place of honor at Odin's banquet hall.  Large
+amounts of men are fighting each other on the far side of the hall here,
+they are locked in a dance of death that can only end one way.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26257
+D2
+~
+~
+0 0 26255
+S
+#26257
+Odin's Tilt Yard~
+~
+~
+It appears that a great battle has been fought here, many bodies lay upon
+the ground here.  The victors are sitting and waiting for their friends to
+rise from the dead, so that they may go healed into Odin's banquet hall, sup
+well, then glory in battle again on the morrow.  It has always been thus and
+always shall be.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26258
+D2
+~
+~
+0 0 26256
+S
+#26258
+Odin's Tilt Yard~
+~
+~
+In the distance you can hear the legendary hounds of the Wild Huntsmen of
+Odin.  It is the appearance of these hounds that brings war to the ones
+below whom Odin has created, so that he may find joy in his creation, and
+honor those who die with valor upon the battlefields were his mighty Valkyrs
+are gathering these honored few to bring them to Valhalla.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26259
+D2
+~
+~
+0 0 26257
+S
+#26259
+Odin's Tilt Yard~
+~
+~
+To the north of you can be heard the sounds of a great celebration. 
+Warriors who done a worthy day of fighting are all headed in that general
+direction.  It appears that Odin's great banquet hall is up ahead of you.  A
+place where no matter how many enter, a seat of honor is waiting for them. 
+Apparently a great celebration is going on there.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26260
+D2
+~
+~
+0 0 26258
+S
+#26260
+Odin's Great Feasting Hall~
+~
+~
+Long tables are lined up filling this section of a gigatic banquet hall,
+men from apparently all of the ages of men sit and these tables and are
+partaking of a large feast.  Many a proud boast can be heard of this latest
+days conquests on the eternal battlefield.  Ale flows in such a quantity
+that rivers must have been run dry in the making of it.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26261
+D1
+~
+~
+0 0 26297
+D2
+~
+~
+0 0 26259
+D3
+~
+~
+0 0 26289
+S
+#26261
+Odin's Great Feasting Hall~
+~
+~
+This large section of the banquet hall has more tables lined up with men
+feasting at them.  One of Odin's twelve mighty Valkyrs stands her keeping an
+eye on the festivities, making sure no imposters have slipped into Valhalla
+without earning the honor.  Shouts for more ale are resounding off the very
+distant walls.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26262
+D1
+~
+~
+0 0 26294
+D2
+~
+~
+0 0 26260
+D3
+~
+~
+0 0 26287
+S
+#26262
+Odin's Great Feasting Hall~
+~
+~
+This large section of the banquet hall is even more crowded than ones
+that you have already been in.  Huge musclebound warrior's are all sitting
+here partaking from large platters of meat and pitchers of ale.  There seems
+to be no end to all of the boasting that goes on in this hall, but looking
+at the people telling the tales you realize they are not boasting.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26263
+D1
+~
+~
+0 0 26292
+D2
+~
+~
+0 0 26261
+D3
+~
+~
+0 0 26291
+S
+#26263
+Odin's Throne Room~
+~
+~
+A large golden throne stands here, from it Odin can see down upon the
+world and lust in the wanton wars and destruction that he has caused and
+requires of his servants.  Perched on the top corners of this immense throne
+are Hugin (thought) and Munin (memory) Odin's two pet ravens.  From the east
+of here there seems to be a cold breeze.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 26264
+D2
+~
+~
+0 0 26262
+S
+#26264
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they where devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the agless tread of the Gods. 
+~
+0 403054598 0
+Rd     0
+D1
+~
+~
+0 0 26265
+D3
+~
+~
+0 0 26263
+S
+#26265
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D1
+~
+~
+0 0 26266
+D3
+~
+~
+0 0 26264
+S
+#26266
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26266
+D1
+~
+~
+0 0 26267
+D2
+~
+~
+0 0 26266
+D3
+~
+~
+0 0 26265
+S
+#26267
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26267
+D1
+~
+~
+0 0 26268
+D2
+~
+~
+0 0 26267
+D3
+~
+~
+0 0 26266
+S
+#26268
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D2
+~
+~
+0 0 26269
+D3
+~
+~
+0 0 26267
+S
+#26269
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26268
+D1
+~
+~
+0 0 26269
+D2
+~
+~
+0 0 26270
+D3
+~
+~
+0 0 26269
+S
+#26270
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26269
+D1
+~
+~
+0 0 26270
+D2
+~
+~
+0 0 26271
+D3
+~
+~
+0 0 26270
+S
+#26271
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26270
+D1
+~
+~
+0 0 26271
+D2
+~
+~
+0 0 26272
+D3
+~
+~
+0 0 26271
+S
+#26272
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26271
+D1
+~
+~
+0 0 26272
+D2
+~
+~
+0 0 26273
+D3
+~
+~
+0 0 26272
+S
+#26273
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26272
+D3
+~
+~
+0 0 26274
+S
+#26274
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D1
+~
+~
+0 0 26273
+D2
+~
+~
+0 0 26275
+S
+#26275
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26274
+D1
+~
+~
+0 0 26275
+D2
+~
+~
+0 0 26276
+D3
+~
+~
+0 0 26275
+S
+#26276
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26275
+D1
+~
+~
+0 0 26276
+D2
+~
+~
+0 0 26277
+D3
+~
+~
+0 0 26276
+S
+#26277
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26276
+D1
+~
+~
+0 0 26277
+D2
+~
+~
+0 0 26278
+D3
+~
+~
+0 0 26277
+S
+#26278
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26277
+D1
+~
+~
+0 0 26278
+D2
+~
+~
+0 0 26279
+D3
+~
+~
+0 0 26278
+S
+#26279
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26278
+D1
+~
+~
+0 0 26279
+D2
+~
+~
+0 0 26280
+D3
+~
+~
+0 0 26279
+S
+#26280
+The Bridge Bifrost~
+~
+~
+You are standing upon legendary Bridge Bifrost, the path of the Gods to
+and from the mortal world and Asgard, dwelling place of the Gods.  The
+coldness of this place is sapping the very life out of you, and the winds
+feel as though they were devouring your very soul.  The ice has been
+polished down to the smoothness of glass from the ageless tread of the Gods.
+~
+0 403054594 0
+Rd     0
+D0
+~
+~
+0 0 26279
+D3
+~
+ice~
+3 0 26281
+S
+#26281
+A Hidden Room~
+~
+~
+There seems to nothing of note in this room, what could it's purpose have
+been?  The only consolation is the fact that you seem to be away from the
+Bridge Bifrost's chilling affects.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+ice~
+3 0 26280
+D3
+~
+hidden~
+3 0 26282
+S
+#26282
+&bLoki's Secret Place~
+~
+~
+There is another pedastal here with something glowing and floating above
+it.  It also seems to be a large piece of a large humanoid hand.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+secet~
+3 0 26283
+D1
+~
+hidden~
+3 0 26281
+S
+#26283
+Another Hidden Room~
+~
+~
+There is another pedastal here with something glowing and floating above
+it.  It also seems to be a piece of a large humaniod hand.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+concealed~
+3 0 26284
+D2
+~
+secret~
+3 0 26282
+S
+#26284
+Portal Room~
+~
+~
+You have found a room with a huge portal in it, this must be the place
+that you seek after your long visit to Valhalla.  The portal is of fine
+Dwarven workmanship.  Echos from Odin's tilt yard echo hauntingly in your
+mind.  
+~
+0 134610946 0
+Rd     0
+D3
+~
+concealed~
+3 0 26283
+S
+#26285
+Prison Of the Wolf Fenris~
+~
+~
+This is the place where the Gods decided to hide the Wolf Fenris, chains
+that look as if they could broken by a child are binding something in one of
+the far corners.  There is a path worn into the floor by something that has
+paced back and forth for ages.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+Shield~
+7 26278 26286
+S
+#26286
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26290
+D1
+~
+~
+0 0 26287
+D2
+~
+~
+0 0 26288
+D3
+~
+shield~
+7 26278 26285
+S
+#26287
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26291
+D1
+~
+~
+0 0 26261
+D2
+~
+~
+0 0 26289
+D3
+~
+~
+0 0 26286
+S
+#26288
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26286
+D1
+~
+~
+0 0 26289
+S
+#26289
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26287
+D1
+~
+~
+0 0 26260
+D3
+~
+~
+0 0 26288
+S
+#26290
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 26291
+D2
+~
+~
+0 0 26286
+S
+#26291
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 26262
+D2
+~
+~
+0 0 26287
+D3
+~
+~
+0 0 26290
+S
+#26292
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 26293
+D2
+~
+~
+0 0 26294
+D3
+~
+~
+0 0 26262
+S
+#26293
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D2
+~
+~
+0 0 26295
+D3
+~
+~
+0 0 26292
+S
+#26294
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26292
+D1
+~
+~
+0 0 26295
+D2
+~
+~
+0 0 26297
+D3
+~
+~
+0 0 26261
+S
+#26295
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26293
+D1
+~
+tapestry~
+7 26277 26296
+D2
+~
+~
+0 0 26298
+D3
+~
+~
+0 0 26294
+S
+#26296
+Secret Storage Room~
+~
+~
+In the middle of this room is a large pedastal of some sort, it looks as
+if it has been here for a long time judging from the layers of dust on it. 
+There seems to be a glowing object on it, or rather floating just above it. 
+It appears to be a piece of a rather large hand?  
+~
+0 134619138 0
+Rd     0
+D3
+~
+tapestry~
+7 26277 26295
+S
+#26297
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26294
+D1
+~
+~
+0 0 26298
+D3
+~
+~
+0 0 26260
+S
+#26298
+Odin's Great Feasting Hall~
+~
+~
+Tables laden with meat and ale are surrounded by large men who's capacity
+to eat is only beaten by their ability to boast of the deeds that they have
+done.  This festive scene can be seen everywhere you look in this humungous
+hall, it seems that in Valhalla the lust for good food and ale matches the
+desire for war.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 26295
+D3
+~
+~
+0 0 26297
+S
+#26299
+Place Of The Valkyr~
+~
+~
+The place that you have walked into has one of the most beatifull beings
+that you have ever seen standing in it.  Could this be one of the Valkyr's
+of legend?  Maybe the stories of their re-emergence are true after all, and
+the way to Valhalla has opened once again.  
+~
+0 402438 0
+Rd     0
+D0
+~
+~
+0 0 0
+D2
+~
+~
+0 0 18504
+S
+>enter_prog 100~
+0
+if level($n) <40
+mptrans $n lucretia
+tell $n come back when you achive have more experience.
+endif
+~
+|
+#0
+
+
+
+#SPECIALS
+M 26263 spec_repairman
+M 26298 spec_fido
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 26252 1 26252
+E 0 26251 0 20
+O 0 26253 0 26253
+M 0 26256 1 26256
+E 0 26251 0 20
+M 0 26298 1 26256
+M 0 26261 1 26261
+E 0 26251 0 20
+M 0 26263 1 26263
+E 0 26263 0 9
+E 0 26264 0 10
+E 0 26265 0 20
+O 0 26266 0 26263
+E 0 26267 0 5
+M 0 26280 1 26280
+E 0 26299 0 20
+G 0 26293 0
+O 0 26282 0 26282
+O 0 26270 0 26282
+O 0 26283 0 26283
+O 0 26271 0 26283
+O 0 26284 0 26284
+O 0 26278 0 26285
+M 0 26285 1 26285
+G 0 26259 0
+M 0 26286 1 26286
+G 0 26278 0
+E 0 26251 0 20
+M 0 26289 1 26289
+E 0 26289 0 20
+M 0 26295 1 26295
+G 0 26277 0
+E 0 26251 0 20
+O 0 26277 0 26296
+O 0 26296 0 26296
+O 0 26258 0 26296
+M 0 26297 1 26297
+E 0 26297 0 20
+E 0 26298 0 17
+E 0 26273 0 13
+M 0 26251 1 26299
+E 0 26251 0 20
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,3915 @@
+#AREADATA
+Name        { 60-90} Tropical Forest~
+Builders    Ambrosia~
+VNUMs       30600 30699
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Ambrosia~
+Llevel      0
+Ulevel      0
+Sounds      Sweat Drips off your Body...its Humid here.~
+Music       u7_adchr.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#30602
+Fakawii Hunter~
+Fakawii Hunter~
+A Fakawwi Hunter us here hunting for food.
+~
+A Fakawwi tribesman stands before you.  His body is covered in mud, most
+likely for the purpose of camoflage.  In one hand he holds a spear with a
+sharp tip.  You are unable to make out his face for it is hidden behind a
+fierce mask.  
+~
+71 33652928 16777216 0 0 1000 S
+65 1 130 130 21000 21000d0+0 0d0+1
+650 0 0
+0 0 1
+67585 0 0
+#30603
+blue lizard~
+A Blue Bellied Lizard~
+A lizard flicks its tongue at you.
+~
+This scaley critter is entirely green except for its belly wich is
+&Bbright &bblue&G.  
+~
+67 192 16777216 0 0 0 S
+60 1 120 120 17000 17000d0+0 0d0+1
+600 0 0
+0 0 0
+2049 0 0
+#30604
+Toucan~
+A Toucan~
+A Toucan is here, eating fruit.
+~
+This beautiful bird watches you out of one eye as it eats fruit. Its colorful
+feathers might be valuable.
+~
+67 524416 0 0 0 1000 S
+62 1 124 124 17000 17000d0+0 0d0+1
+620 0 0
+0 0 0
+16385 0 0
+>rand_prog 3~
+emote opens it's beak and pulls off a succulent piece of fruit.
+wink 
+emote bites down on its prize, juice trickles out of its beak, as it eats.
+blink
+~
+>fight_prog 40~
+gouge
+~
+|
+#30605
+Sloth~
+A Sloth~
+A Sloth is dozing lazily here.
+~
+This cute and furry blue-grey colored creature barely notices you.  It
+hangs onto a nearby branch and dozes lazily.  
+~
+67 131264 0 0 0 0 S
+63 1 126 126 18000 18000d0+0 0d0+1
+630 0 0
+0 0 0
+1 0 0
+#30606
+Fakawii Hunter2~
+Fakawii Hunter~
+A Fakawii hunter is here hunting for food.
+~
+A Fakawii tribesman stands before you.  His body is covered in mud, most
+likely for the purpose of camoflage.  In one hand he holds a spear with a
+sharp tip.  You are unable to make out his face, for it is hidden behind a
+fiece mask.  
+~
+69 33652928 0 0 0 1000 S
+65 1 130 130 21000 21000d0+0 0d0+1
+650 0 0
+0 0 1
+67585 0 0
+>rand_prog 3~
+emote scans the area for prey
+rage
+~
+|
+#30609
+Monkey~
+A monkey~
+A monkey is here, taunting you.
+~
+A furry, brown, and smelly creature hangs by its tail from a tree in
+front of you.  It seems to be making faces at you.  
+~
+135 192 0 0 0 0 S
+60 1 120 120 17000 17000d0+0 0d0+100
+600 0 0
+0 0 0
+16384 0 0
+#30611
+Gigantic Mosquito~
+A Gigantic Mosquito~
+A Gigantic Mosquito tries to bite you.
+~
+This disgusting creature has six very large black eyes. You can see yourself
+screaming in each one of them. 
+~
+99 269025472 2097168 0 0 -1000 S
+70 1 140 140 25000 25000d0+0 0d0+1
+700 0 0
+0 0 0
+67601 0 0
+#30612
+Toucan ~
+A Toucan~
+A Toucan is here, eating fruit.
+~
+This beautiful bird stares at you with one eye as it eats fruit.  Its
+colorful feathers might be valuable.  
+~
+65 524480 0 0 0 1000 S
+63 1 126 126 17000 17000d0+0 0d0+0
+630 0 0
+0 0 0
+16384 0 0
+#30613
+Monkey~
+Monkey~
+A monkey is here, taunting you.
+~
+A furry, brown, and smelly creature hangs by its tail from a tree in front of you.
+It seems to be making faces at you.
+~
+135 192 0 0 0 0 S
+63 1 126 126 17000 17000d0+0 0d0+100
+630 0 0
+0 0 0
+16384 0 0
+>rand_prog 2~
+taunt $n
+~
+|
+#30614
+Toucan~
+A Toucan~
+A Toucan is here eating fruit.
+~
+This beautiful bird watches you out of one eye as it eats fruit.  Its
+colorful feathers might be valuable.  
+~
+193 524416 0 0 0 0 S
+63 1 126 126 17000 17000d0+0 0d0+1
+630 0 0
+0 0 0
+16385 0 0
+#30615
+lizard blue~
+A Blue Bellied Lizard~
+A lizard flicks its tongue at you.
+~
+This scaley critter is entirely green except for its bellly wich is &Bbright &bblue&Y.
+~
+67 192 16777216 0 0 0 S
+65 1 130 130 21000 21000d0+0 0d0+0
+650 0 0
+0 0 0
+2049 0 0
+#30616
+Sloth~
+A Sloth~
+A Sloth is dozing lazily here.
+~
+This cute and furry blue-grey colored creature barely notices you. It hangs onto
+a nearby branch and dozes lazily.
+~
+67 131264 0 0 0 0 S
+60 1 120 120 17000 17000d0+0 0d0+1
+600 0 0
+0 0 0
+67585 0 0
+>rand_prog 10~
+yawn
+emote looks at you through half closed eyes
+say Squeak!
+~
+|
+#30624
+Malakai~
+Malakai~
+Malakai is here, deep in thought.
+~
+Malakai is a middle aged man with long black hair.  There is a large scar
+running down his left cheek.  He is dressed in a pair of loose fitting black
+pants, and wears a black amulet around his neck.  On his back you see a
+tattoo of a black dragon.  
+~
+67 134217920 32 0 0 1000 S
+75 1 150 150 27500 27500d0+0 0d0+75000
+750 0 0
+0 0 1
+100355 0 0
+>all_greet_prog 100~
+if ispc ($n)
+peer $n
+say What brings you to my home $n?
+endif
+~
+>fight_prog 40~
+if ispc ($n)
+say I call upon the ancients to smite thee $n!
+c 'holy fires' $n
+endif
+~
+>rand_prog 3~
+emote paces back and forth along the floor
+say What could they be up to?
+pond
+endif
+~
+|
+#30626
+hairy tarantula~
+Tarantula~
+A big hairy tarantula spins a web here.
+~
+This gigantic insect has eight long hairy legs and an equal amount of eyes. It 
+is covered in brown fur.
+~
+67 33652800 0 0 0 0 S
+63 1 126 126 17000 17000d0+0 0d0+1
+630 0 0
+0 0 0
+2049 0 0
+>fight_prog 30~
+c web
+~
+|
+#30627
+Fakawii Hunter~
+Fakawii Hunter~
+A Fakawii hunter is here hunting for food,
+~
+A Fakawii tribesman stands before you. His body is covered in mud, most likely
+for the purpose of camoflage. In one hand he holds a spear with a sharp tip.
+You are unable to make out his face for it is hidden behind a fierce mask.
+~
+69 33652928 0 0 0 1000 S
+65 1 130 130 21000 21000d0+0 0d0+1
+650 0 0
+0 0 1
+67585 0 0
+>rand_prog 3~
+emote looks around in search of prey
+rage
+~
+|
+#30628
+Water Sprite~
+A Water Sprite~
+A sprite stares at you with wide eyes.
+~
+This creature is as fare as a red rose. She sits upon a rock combing through
+her bright blue hair with a pearl comb. She wears a dress that seems to be made
+of the water surrounding her and stares into a small mirror wich she holds in
+her free hand.  
+~
+195 134742208 0 2 0 0 S
+68 1 136 136 22000 22000d0+0 0d0+1
+680 0 0
+0 0 2
+18561 0 0
+>all_greet_prog 100~
+if sex($n) < 2
+ooo
+say Why hello $n!
+flut
+say Its been a while since Ive seen a man as hansom as yourself
+say Why dont you come a little closer so that I may gaze into your eyes..
+giggle
+bkiss $n
+else
+say What brings you to this place $n?
+say Have you come to gaze upon my beauty with jealous eyes?
+say There is no one as fare as me $n
+grin
+endif
+endif
+~
+>rand_prog 4~
+emote looks into a mirror and smiles
+say My, I look lovely today!
+gig
+endif
+~
+|
+#30630
+Panther~
+a Panther~
+A Panther growls at you fiercly.
+~
+This large creature has a coat of thick black fur and a pair of piercing green
+eyes. By the way that it looks at you, you can tell it is hungry.
+~
+99 134316224 262160 32768 0 0 S
+70 1 140 140 25000 25000d0+0 0d0+0
+700 0 0
+0 0 2
+262161 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Who dares enter my lair?
+c infravision
+endif
+~
+|
+#30632
+gorilla creature hairy~
+A Gorilla~
+A large hairy creature glares at you.
+~
+This large gorilla is covered in a coat of thick black fur. He dosent look too
+happy that you have invaded his home.
+~
+103 134316224 16 0 0 -1000 S
+70 1 140 140 25000 25000d0+0 0d0+0
+700 0 0
+0 0 1
+17 0 0
+#30634
+Lizard~
+A Blue Bellied Lizard~
+A lizard flicks its tongue at you.
+~
+This scaley critter is entirely green except for its belly wich is &Bbright &bblue&Y.
+~
+67 192 0 0 0 0 S
+55 1 110 110 13000 13000d0+0 0d0+1
+550 0 0
+0 0 0
+2049 0 0
+>rand_prog 3~
+emote chitters briefly.
+say Squeak!
+~
+|
+#30638
+Stone Snake~
+A Stone Snake~
+A Stone Snake glares at you with glittering eyes.
+~
+This creature seems to be made out of stone, yet it moves around with such ease.
+Its scales are made out of a reflective crystaline rock, and set into its eye
+sockets are two large &Rrubys&Y.
+~
+99 67109072 16 256 0 -1000 S
+70 1 140 140 19500 19500d0+0 0d0+50000
+700 0 0
+0 0 0
+67585 0 0
+>fight_prog 80~
+~
+>rand_prog 10~
+emote hisses softly
+endif
+~
+|
+#30640
+Wild Boar~
+Wild Boar~
+A Wild boar thunders through the forest.
+~
+This fierce creature is covered in coarse black fur. It has two tusk on its face
+and four very sharp hooves.
+~
+99 65664 16777232 0 0 0 S
+67 1 134 134 17000 17000d0+0 0d0+1
+670 0 0
+0 0 1
+1 0 0
+#30642
+tarantula hairy~
+Tarantula~
+A big hairy tarantula spins a web here.
+~
+This gigantic insect has eight long hairy legs and an equal amount of eyes. It
+is covered in brown fur.
+~
+67 33554624 0 0 0 0 S
+60 1 120 120 17000 17000d0+0 0d0+1
+600 0 0
+0 0 0
+2049 0 0
+#30643
+Piranha~
+Piranha~
+A piranha jumps out of the water to eat you.
+~
+This vicious fish is covered in red scales. Its teeth look very sharp.
+~
+99 524480 16 0 0 0 S
+65 1 130 130 21000 21000d0+0 0d0+0
+650 0 0
+0 0 0
+17 0 0
+>all_greet_prog 100~
+emote jumps out of the water and attacks you!
+bite $n
+~
+>fight_prog 50~
+bite $n
+~
+|
+#30644
+Piranha~
+Piranha~
+A piranha jumps out of the water to eat you.
+~
+This vicious looking fish is covered in red scales. Its teeth look very sharp.
+~
+99 524480 16 0 0 0 S
+65 1 130 130 21000 21000d0+0 0d0+0
+650 0 0
+0 0 0
+17 0 0
+>all_greet_prog 100~
+emote jumps out of the water and attacks you!
+bite $n
+~
+>fight_prog 50~
+bite $n
+~
+|
+#30646
+Panther~
+a Panther~
+A Panther growls at you fiercely.
+~
+This large creature has a coat of thick black fur and a pair of piercing green
+eyes. By the way it looks at you, you can tell it is hungry.
+~
+99 167870696 0 0 0 0 S
+63 1 126 126 8000 8000d0+0 0d0+0
+630 0 0
+0 0 2
+262161 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Who dares enter my lair?
+c infravision
+endif
+~
+|
+#30649
+Wild Boar~
+Wild Boar~
+A wild boar thunders through the forest.
+~
+This fierce creature is covered in coarse black fur. It has two tusk on its face
+and four very sharp hooves.
+~
+99 65664 16777232 0 0 0 S
+60 1 120 120 17000 17000d0+0 0d0+0
+600 0 0
+0 0 1
+16401 0 0
+>fight_prog 60~
+bite $n
+~
+|
+#30650
+Fakawii Child~
+A Child~
+A Fakawii child runs around here.
+~
+This small child has long brown hair and and brown eyes. He looks at you curiously.
+~
+197 301990080 0 0 0 1000 S
+45 1 90 90 6000 6000d0+0 0d0+100
+450 0 0
+0 0 1
+2049 0 0
+>all_greet_prog 100~
+if ispc($n) 
+if isgood($n)
+say My mom says to be careful of snakes
+say She says they cant be trusted
+else
+say Are you one of those snake people?
+cry
+say Leave me alone, Im telling my mom!
+endif
+endif
+~
+|
+#30651
+Fakawii Child~
+Fakawii Child~
+A Fakawii child runs around here.
+~
+This small cihld has long brown hair and brown eyes. He looks at you curiously.
+~
+197 192 16777216 256 0 1000 S
+65 1 130 130 21000 21000d0+0 0d0+0
+650 0 0
+0 0 1
+2049 0 0
+>all_greet_prog 70~
+say Many people here have been killed in the past few years. 
+say My father tells me it is due to the evil cult that dwells in the mountains...
+sigh
+~
+|
+#30656
+Fakawii Hunter4~
+Fakawii Hunter~
+A Fakawii hunter is here hunting for food.
+~
+A Fakawii tribesman stands before you. His body is covered in mud, most likely
+for the purpose of camoflage. In one hand he holds a spear with a sharp tip.
+You are unable to make out his face for it is hidden behind a fierce mask.
+~
+65 98496 16777216 256 0 1000 S
+65 1 130 130 21000 21000d0+0 0d0+1
+650 0 0
+0 0 1
+67585 0 0
+>rand_prog 3~
+weaponmaster
+~
+>rand_prog 3~
+emote looks around in search of prey.
+~
+|
+#30657
+anaconda giant snake~
+Anaconda~
+A gigantic snake hisses at you menacingly.
+~
+This snake is covered in reflective green and red scales.  It rises up to
+meet you at eye level and holds you hypnotized in its deadly gave.  You can
+feel its tounge on your face as it hisses.  
+~
+99 134234304 0 0 0 -1000 S
+70 1 140 140 8000 8000d0+0 0d0+70000
+700 0 0
+0 0 0
+264211 0 0
+>fight_prog 90~
+~
+|
+#30661
+couatl serpent~
+A Couatl~
+A serpent with feathery wings.
+~
+This beautiful creature has the body of a serpent and feathered wings the color
+of the rainbow.
+~
+67 168296448 0 0 0 1000 S
+85 1 170 170 14000 14000d0+0 0d0+85000
+850 0 0
+0 0 2
+100355 0 0
+#30666
+Fakawii Hunter~
+Fakawii Hunter~
+A Fakawii hunter is here hunting for food.
+~
+A Fakawii tribesman stands before you. His body is covered in mud, most likely
+for the purpose of camoflage. In one hand he holds a spear with a sharp tip.
+You are unable to make out his face for it is hidden behind a fierce mask.
+~
+67 98496 16 256 0 1000 S
+70 1 140 140 25000 25000d0+0 0d0+1
+700 0 0
+0 0 1
+67585 0 0
+#30667
+Fakawii Child~
+A Child~
+A child runs around here.
+~
+This small child has long brown hair and brown eyes. She looks at you curiously.
+~
+197 301990080 0 0 0 1000 S
+45 1 90 90 6000 6000d0+0 0d0+0
+450 0 0
+0 0 2
+2049 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+gig
+say What land have you come from?
+say Ive never been outside of the forest.
+else
+say Your a bad person! 
+say Im telling my mother! Stay out of our village!
+endif
+endif
+~
+|
+#30670
+infant baby~
+An Infant~
+A tiny baby sleeps quietly here
+~
+This little baby looks no more than a few weeks old. 
+~
+67 0 0 0 0 -1000 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 2
+0 0 0
+#30671
+Mother~
+A Young Mother~
+A mother is here feeding her child.
+~
+This young woman holds a small baby in her arms. 
+~
+67 192 0 0 0 1000 S
+65 1 130 130 21000 21000d0+0 0d0+0
+650 0 0
+0 0 2
+67585 0 0
+>all_greet_prog 100~
+emote gasps as you enter and takes her baby in her arms.
+say Who are you? What are you doing in our home?
+peer $n
+~
+|
+#30672
+Mother~
+A Young Mother~
+A mother is here feeding her child.
+~
+This young woman holds a small baby in her arms.
+~
+67 33554624 0 0 0 1000 S
+65 1 130 130 8000 8000d0+0 0d0+1
+650 0 0
+0 0 2
+67585 0 0
+#30674
+Dancing Villager~
+Dancing Villager~
+A villager dances to the beat of the drums.
+~
+This young man seems to be really getting into the music. He dances around without 
+a care in the world.
+~
+67 301989952 16810000 256 0 1000 S
+75 1 150 150 27000 27000d0+0 0d0+500
+750 0 0
+0 0 1
+2049 0 0
+>fight_prog 80~
+emote blows flames at you!
+c 'fire breath' $n
+endif
+~
+|
+#30675
+girl sacrifice~
+A Sacrifice~
+A distraught girl cries softly.
+~
+This young woman looks about 18 years old. She looks extremly distraught!
+~
+67 64 32784 0 0 1000 S
+60 1 120 120 17000 17000d0+0 0d0+500
+600 0 0
+0 0 2
+17 0 0
+>all_greet_prog 100~
+if ispc($n)
+emote weeps softly
+say Kind soul! I dont know who you are but please save me from the fate that awaits me!
+say I have no one else to turn to!
+emote begs you for assistance.
+cry
+endif
+~
+|
+#30677
+man wise witchdoctor doctor~
+Witchdoctor~
+A wise looking man sits here chanting softly.
+~
+This wise looking man has a very long grey beard and two piercing blue eyes. He
+is dressed in red and orange robes and wears many rings, charms, and trinkets.
+~
+67 402653248 16810000 256 0 1000 S
+75 1 150 150 25000 25000d0+0 0d0+75000
+750 0 0
+0 0 1
+67601 0 0
+>all_greet_prog 100~
+if isgood($n) 
+say Ahh, It is you $n!
+bow $n
+say I have forseen your arrival. 
+say You will help rid my people of the Demon's control.
+else
+say You were sent by Him $n! 
+say I know evil when I see it!
+c 'holy flames' $n
+endif
+endif
+~
+>fight_prog 65~
+say Go back to hell from where you came $n!
+c 'earthblast' $n
+endif
+~
+>fight_prog 70~
+c 'heal' witchdoctor
+~
+|
+#30679
+Kyrinda~
+Kyrinda~
+A sturdy looking young woman stands here.
+~
+This young woman looks like shes trained in the art of fighting for quite a while.
+~
+71 134283328 16810000 256 0 1000 S
+80 1 160 160 30000 30000d0+0 0d0+80000
+800 0 0
+0 0 2
+67729 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if isgood($n)
+bow $n
+say Greetings $n! The chief will be anxious to meet you.
+unlock south
+open south
+break
+else
+if ispc ($n) == 1
+weaponmaster
+say We don't want your kind here $n!
+c 'fireball' $n
+endif
+endif
+~
+>fight_prog 55~
+say Evil has no place in our village!
+c 'fireball' $n
+stun
+endif
+~
+>rand_prog 5~
+c 'bio-accel
+c combat
+rage
+endif
+~
+|
+#30680
+lulamanti girl~
+Lulamanti~
+A beautiful girl adorned in precious jewels stands here.
+~
+Lulamanti is the chiefs daughter. She has very long brown hair and is dressed
+in a flowing white gown. On her arms she wears gold bracelets up to her elbows
+and around her neck is a beatiful necklace. She looks like she owns most of the
+jewels in the village.
+~
+67 402653248 32784 256 0 -1000 S
+80 1 160 160 11000 11000d0+0 0d0+80000
+800 0 0
+0 0 2
+67715 0 0
+>all_greet_prog 100~
+if ispc($n)
+sigh
+say For the last few years my father has been acting strangely.
+say I sometimes have nightmares about a darkenss that I cannot explain.
+say I fear that my father has something to do with it.
+cry
+endif
+~
+>fight_prog 80~
+c 'holy fires' $n
+say Let the flames cleanse your tarnished soul $n!
+endif
+~
+>rand_prog 3~
+c combat
+c 'bio-accel
+endif
+~
+|
+#30681
+retikki ya dur~
+Retikki'YaDur~
+The Fakawii Chief greets you warmly.
+~
+The Fakawii chief is a very large man.  He stands around seven feet tall
+and wears red robes and a fierce looking mask.  On his head is a headress
+decorated with jewels and feathers.  Behind his warm expression you can see
+an evil glint in his eyes.  
+~
+71 134250688 16777264 256 0 -1000 S
+93 1 186 186 35000 35000d0+0 0d0+93000
+930 0 0
+0 0 1
+2065 0 0
+>greet_prog 100~
+if ispc($n)
+smile
+say Ahhhh, A riteous soul!
+say Come closer so that I may feel the warmth of riteousness once again!
+grin $n
+close north
+lock north
+c 'fireball' $n
+endif
+~
+>fight_prog 20~
+c 'demonfire' $n
+say Burn $n!
+endif
+~
+>rand_prog 5~
+weaponmaster
+~
+|
+#30690
+couatl serpent~
+A Couatl~
+A serpent with feathery wings floats here.
+~
+This beautiful creature has the body of a serpent and feathered wings the color
+of the rainbow. Its intelligent eyes pass over you as you draw near.
+~
+67 134742080 32784 256 0 1000 S
+92 1 184 184 32000 32000d0+0 0d0+92000
+920 0 0
+0 0 0
+100499 0 0
+>all_greet_prog 100~
+if ispc ($n)
+say I have been chosen as guardian of this place.
+say You may not go any further, for a great evil lies within this temple.
+sigh
+endif
+~
+>rand_prog 3~
+emote stretches its wings and screeches loudly.
+endif
+~
+>rand_prog 3~
+sigh
+say I must be prepared to do my job...
+c 'combat mind'
+~
+|
+#30693
+manticore beast distorted~
+Manticore~
+A hideously distorted beast attacks you.
+~
+This beast has the body of a lion and a head resembling that of a man,
+except that it has a gaping mouth with three rows of razor sharp teeth.  Its
+scaley tail has a ball of poison darts at the end of it.  It does not look
+happy to see you in its lair.  
+~
+99 268435648 16 2304 0 -1000 S
+95 1 190 190 37000 37000d0+0 0d0+95000
+950 0 0
+0 0 1
+16657 0 0
+>all_greet_prog 100~
+is ifpc($n)
+emote snarls menacingly.
+say I shall swallow you whole $n!
+rage
+c 'demonfire' $n
+endif
+~
+>rand_prog 3~
+emote grins widely showing off its rows of teeth
+emote begins to cackle, its eerie voice like that of the most evil demon
+endif
+~
+>rand_prog 3~
+c 'dark blessing' 
+c 'satanic caress'
+rage
+endif
+~
+|
+#30698
+Explorer~
+Explorer~
+An explorer stands here consulting his maps.
+~
+This explorer looks as if hes seen quite a few lands.  He speaks with a
+strange accent unlike anything you have ever heard.  He wears khaki colored
+clothing on his body and a hat with a mosquito net on his head.  He carries
+a large pack full of interesting items.  
+~
+67 33554496 0 0 0 0 S
+50 1 100 100 6500 6500d0+0 0d0+50000
+500 0 0
+0 0 1
+131 0 0
+>greet_prog 100~
+if ispc($n) 
+emote tips his hat to you as you pass
+endif
+~
+>rand_prog 10~
+peer
+say I hear that an ancient tribe dwells within this forest
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#30600
+Sarong~
+&Ca &BBlue &BSarong~
+&bA beautiful sarong made from silken meterial.~
+~
+9 570425408 0 0 0 9 1
+100 100
+3~ 0~ 0~ 0~
+1 8 0
+0 0
+satanic caress~
+0 0
+0 0 0
+A
+13 5
+A
+5 1
+#30601
+golden statue~
+an old statue made from gold.~
+&YA cracked, Golden statue looks very old.~
+~
+8 0 0 0 0 0 90
+100 100
+0~ 0~ 0~ 0~
+1000 3600 0
+0 0
+bio-acceleration~
+0 0
+0 0 0
+#30602
+fakawii long spear~
+fakawii Longspear~
+A spear with a sharp tip lies here.~
+~
+5 570558528 0 0 0 8193 60
+100 100
+0~ 20~ 50~ 11~
+3 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 20
+A
+13 60
+A
+19 10
+A
+18 10
+A
+2 1
+#30603
+Fakawii War Mask~
+painted Warmask~
+A frightening mask lies here.~
+~
+9 574625920 0 0 0 65537 65
+100 100
+0~ 0~ 0~ 0~
+3 648 0
+5 0
+bio-acceleration~
+5 5
+0 0 0
+A
+18 5
+A
+19 7
+A
+24 -10
+#30604
+Golden Dirk~
+&YGolden Dirk~
+A thin golden blade lies here, shining brightly.~
+~
+5 273760768 0 0 0 8193 80
+100 100
+0~ 25~ 70~ 11~
+3 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+13 80
+A
+18 20
+#30605
+Ring of Graaz'zt~
+&zRing of &rGraaz'zt~
+A ring lies on the ground, eminating evil.~
+~
+9 584159892 3108 0 0 3 76
+100 100
+0~ 0~ 0~ 0~
+1 760 0
+5 0
+fireball~
+1 1
+0 0 0
+A
+24 -5
+A
+3 -1
+A
+25 80
+A
+12 100
+A
+18 10
+A
+19 15
+#30606
+Golden Glaive of YaDur~
+&YGolden Glaive of YaDur~
+A glaive, with a golden blade, lies here.~
+~
+5 105988196 2056 0 0 8193 90
+100 100
+0~ 0~ 0~ 13~
+10 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 26
+A
+25 50
+A
+18 24
+A
+26 90
+A
+13 100
+#30607
+Armor~
+red Armor of the Phoenix~
+A suit of fiery armor sits here, burning brightly.~
+~
+9 570427393 512 0 0 9 75
+100 100
+0~ 0~ 0~ 0~
+20 748 0
+5 0
+fireball~
+10 10
+0 0 0
+A
+13 100
+A
+18 20
+A
+19 20
+#30608
+little black book~
+&zLittle Black Book~
+&zA black book looks rather dirty.~
+~
+8 128 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+cure poison~
+0 0
+0 0 0
+E
+tropical~
+&wMany moons ago now, I came to a strange and beautiful tropical forest. 
+Unaware of the dangers that awaited me in this place, my partner Henry and I
+ventured in..  This decision has been the downfall of faithful Henry and I
+fear it shall mean the end of me as well.  We had not travelled more than a
+few hours into the forest when our troubles bagan.  From the trees swooped a
+frightening man, painted completely red.  Henry and I managed to fend him
+off to the best of our abbilities and then made haste to take cover.  We
+stayed the night in a cave in which strange markings were engraved.  I was
+unable to make out any of what it said by there were pictures that gave
+Henry a good indication of what they meant.  Depicted in the pictures were
+what looked like gigantic serpentine creatures surrounded by hundreds of
+worshipers all bent down in prayer.  Logic would dictate that these people
+were snake worshippers and to be avoided at all time.  The reason I say they
+should be avoided for further into the cave we found a stone altar covered
+in dried blood...  It would appear that our snake worshipping friends like
+to make blood sacrifices.  The next morning we left the cave at an early
+hour anxious to explore the rest of the forest.  For five hours we travelled
+unharmed through dense jungle.  Many beautiful sights did we see along the
+way.  A waterfall which flowed into a pool of crystal clear water.  At this
+location we also met with a delightful creature who I belived to be a
+Sprite.  Vain she was yes, but the information we recived from her wave most
+valuable.  She told us the general direction of a villiage where we may rest
+and find out more about the snake worshippers.  From her description of the
+villagers I came to the conclusion that I had encountered one of them just
+the day before.  Apparently they are peaceful people but one would not get
+that impression from a first encounter..  
+~
+E
+book~
+This book is a record of my travels throughout the land.  Whenever I
+happen upon a new place I take note of my encounters in this manual so that
+one day travellers might benefit from what I have experienced.  I have
+seperated it into chapters for convienance and fast reading.  I sincerely
+hope that who ever finds this book will pass this knowledge on so that all
+may know of my adventures.  
+&RV. Renwick
+~
+#30609
+Banana~
+a Banana~
+A ripe yellow banana looks delicious~
+~
+19 0 0 0 0 1 1
+100 100
+3~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30610
+Time~
+&zA Rip in the Fabric of &BS&zpace-&BT&zime~
+A swirling black vortex is here, pulsing.~
+~
+15 604045316 0 0 0 1 105
+100 100
+400~ 1~ 0~ 0~
+0 1048 0
+0 0
+reserved~
+0 0
+0 0 0
+#30611
+Wings~
+&GM&Wo&Gs&Wq&Gu&Wi&Gt&Wo &GW&Wi&Gn&Wg&Gs~
+The wings of a giagantic insect are here.~
+~
+9 67110978 0 0 0 257 70
+100 100
+-60~ 0~ 0~ 0~
+5 700 0
+5 0
+fly~
+20 20
+0 0 0
+A
+13 60
+A
+18 15
+#30612
+Bejeweled Key~
+a Jewelled Key~
+A key covered in gems~
+~
+18 129 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#30613
+Toucan Feather~
+&cT&Cou&Pca&Rn Fe&Gat&Bhe&Yr~
+A beautiful feather floats from place to place.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#30614
+Dress~
+&w(&YFlowing&w) &CSprite's Dress~
+A dress made from water!~
+~
+9 262336 1 0 0 9 1
+100 100
+5~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 4
+A
+2 1
+A
+19 5
+A
+13 30
+#30615
+Diamond~
+&wa &WD&wi&Wa&wm&Wo&wn&Wd~
+A small but valuable diamond is here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+3 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#30616
+Golden Idol~
+&Ya Golden Idol~
+An idol with a key set in the top is here.~
+~
+18 161 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+4 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#30617
+Turqoise~
+&ga &CT&cu&Cr&cq&Co&ci&Cs&ce~
+A beautiful piece of turquoise is here.~
+~
+8 0 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 1200 0
+0 0
+reserved~
+0 0
+0 0 0
+#30618
+Emerald~
+&Gan &gEmera&Gld~
+A beautiful green gem is here.~
+~
+8 0 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+2 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#30619
+pouch~
+&zLeather Pouch~
+A small leather pouch lies here.~
+~
+15 1 0 0 0 1 60
+100 100
+10~ 5~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#30620
+Key~
+wooden Key~
+A piece of wood, carved into a key, lies here.~
+~
+18 131 0 0 0 1 75
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30621
+Desk~
+a Wooden Desk~
+A small wooden desk stands here.~
+~
+15 72 0 0 0 0 0
+100 100
+50~ 15~ 30620~ 0~
+100 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30622
+Pina Colada~
+&YP&Gi&Yn&Oa &YC&Go&Yl&Oa&Yd&Ga~
+A hollow coconut filled with a tropical liquid beverage is here.~
+~
+17 671088640 0 0 0 1 1
+100 100
+50~ 50~ 8~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#30623
+Amulet~
+&CAmulet of the four &BWinds~
+A black circle hanging from a chain is here.~
+~
+9 16778242 4098 0 0 5 70
+100 100
+10~ 0~ 0~ 0~
+3 700 0
+5 0
+holy fires~
+3 3
+0 0 0
+A
+24 -10
+A
+13 50
+A
+12 75
+A
+4 2
+#30624
+malakai's Sword~
+malakai's Sword~
+A black blade of superior quality lies here.~
+~
+5 134217792 5634 0 0 8193 70
+100 100
+0~ 30~ 60~ 3~
+8 700 0
+5 0
+cure blindness~
+7 7
+0 0 0
+A
+26 50
+A
+13 50
+A
+18 15
+A
+19 15
+#30625
+Fanciful Headress~
+&RFancif&Yul &RHead Dre&Yss~
+A bejewelled head dress decorated with feathers sits on the ground.~
+~
+9 3211264 2048 0 0 17 85
+100 100
+15~ 0~ 0~ 0~
+5 848 0
+5 0
+confusion~
+1 1
+0 0 0
+A
+13 80
+#30626
+ruby~
+&Ra &rR&Ru&rb&Ry~
+A beautiful red gem rests on the ground here.~
+~
+8 0 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+2 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#30628
+Mushroom~
+a &PM&Gu&Bs&Ch&Yr&go&po&Cm~
+A colorful fungus lies here.~
+~
+31 2 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+5 0
+detect invis~
+3 3
+0 0 0
+#30638
+Stone Scale~
+&zSnak&we &zScal&we~
+&zA scale made out of stone glimmers slightly.~
+~
+9 3211989 0 0 0 32769 70
+100 100
+0~ 0~ 0~ 0~
+3 700 0
+5 0
+iceball~
+5 5
+0 0 0
+A
+19 7
+A
+18 7
+A
+23 -10
+A
+12 35
+#30645
+Mushroom~
+a &GM&gu&Ws&Gh&gr&Wo&Go&gm~
+A mushroom sits on the ground here.~
+~
+19 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 1~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30650
+Rose~
+&RA Red Rose~
+A beautiful read rose bends in the soft breeze.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30651
+Black Rose~
+a &zBlack Rose~
+A black rose stands firm against the breeze.~
+~
+8 0 0 0 0 32769 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30659
+Bird of Paradise~
+&RBi&Ord &Yof &RPa&Ora&Ydi&Rse~
+A beautiful multicolored flower is here.~
+~
+8 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+5 0
+enchanted song~
+1 1
+0 0 0
+#30662
+Statue~
+a Statue~
+A statue of a snake stands here.~
+~
+12 20 0 0 0 0 100
+100 100
+0~ 0~ 0~ 0~
+550 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#30663
+altar~
+altar~
+A blood covered altar made of stone is here.~
+~
+12 20 0 0 0 0 105
+100 100
+0~ 0~ 0~ 0~
+2000000 1048 0
+0 0
+reserved~
+0 0
+0 0 0
+#30673
+Clay Pot~
+&OClay Pot~
+&BA clay pot is full of cool water.~
+~
+17 0 0 0 0 1 1
+100 100
+20~ 20~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#30674
+Statue~
+pheonix Statue~
+A statue carved into the likeness of a fiery phoenix is here.~
+~
+12 33554433 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+5000000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30675
+Pheonix Charm~
+&Ya Golden Charm~
+A charm in the shape of a phoenix is here.~
+~
+18 33 0 0 0 1 65
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30676
+hut key~
+&zOld key~
+A long forgotten key is burried in the rubble here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#30677
+Staff~
+the Staff of the Witchdoctor~
+A old, bent wooden staff engraved with runes, is here.~
+~
+4 536871939 0 0 0 16385 75
+100 100
+100~ 10~ 10~ lightning bolt~
+2 748 0
+0 0
+fire breath~
+0 0
+0 0 0
+A
+13 70
+A
+24 -10
+A
+12 100
+#30679
+Statue~
+snake Statue~
+A statue made of gold stands here.~
+~
+12 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#30680
+Turqoise slave bracelet~
+a Turquoise Slave-Bracelet~
+A delicate bracelet made from turquoise and gold looks expensive.~
+~
+9 2048 0 0 0 4097 80
+100 100
+-85~ 0~ 0~ 0~
+2 800 0
+5 0
+combat mind~
+2 2
+0 0 0
+A
+13 80
+A
+2 1
+A
+18 8
+A
+19 8
+#30690
+Altar~
+altar of YaDur~
+A burning altar, marked with runes, sits here.~
+~
+15 33554432 0 0 0 0 1
+100 100
+0~ 5~ 0~ 0~
+5000 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#30691
+Statue~
+statue of YaDur~
+A statue is here, formed in the shape of a man killing a snake.~
+~
+12 33554433 0 0 0 0 120
+100 100
+0~ 0~ 0~ 0~
+5000000 1200 0
+0 0
+reserved~
+0 0
+0 0 0
+#30692
+Casket~
+casket of Stone~
+A casket made from stone stands here.~
+~
+12 33554433 0 0 0 0 104
+100 100
+0~ 0~ 0~ 0~
+100000 1040 0
+0 0
+reserved~
+0 0
+0 0 0
+#30693
+skin of the Manticore~
+skin of the Manticore~
+A cloak made from the hide of a hideous beast is here.~
+~
+9 609239604 0 0 0 1025 91
+100 100
+0~ 0~ 0~ 0~
+7 908 0
+5 0
+fire breath~
+5 5
+0 0 0
+A
+13 70
+A
+25 70
+A
+5 2
+A
+18 10
+A
+19 8
+#30695
+sign~
+a sign~
+A sign is posted here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+&zClan Malice Entrance
+~
+#30698
+Futon~
+&zA Futon~
+&zA comfortable black futon looks inviting.~
+~
+12 0 0 0 0 0 100
+100 100
+0~ 0~ 0~ 0~
+500 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#30699
+Flower~
+&P(Pretty) &pA&Pn &pOrchi&Pd~
+A pretty flower grows here.~
+~
+8 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+0 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#30600
+Entrance to a Large Tropical Forest~
+~
+~
+You are travelling through a dense tropical forest. The humidty and dampness
+cause a light mist to form, slightly clouding your vision. Exotic birds fly
+overhead, their tail feathers like rainbows trailing behind them. The thick
+canopy of trees prevents much light from getting through here. Thick vines
+prevent movement to the east and west. You can travel north or south.
+~
+0 134217728 3
+Rd     0
+D0
+~
+~
+0 0 30699
+D1
+~
+~
+0 0 18209
+D2
+~
+~
+0 0 30601
+S
+#30601
+Tropical Forest~
+~
+~
+You are travelling through a beautiful tropical forest.  Tall,
+cylindrical trees reach up into the heavens all around you; thier leaves
+like a never ending shower of green rain.  Life seems to be all around you
+in this forest.  In every dark corner and in every ray of light something
+grows and lives contributing to the cycle of life and the balance of nature.
+Thick rope-like vines and gigantic tropical plants prevent movement to the
+east and west.  You may travel back north or continue south.  
+~
+0 4 3
+Rd     0
+D0
+~
+~
+0 0 30600
+D2
+~
+~
+0 0 30602
+S
+#30602
+Tropical forest~
+~
+~
+&wYou are walking through a tropical forest.  Around you gigantic orchids
+fill the air with a delicious perfume and add brilliant color to some of the
+duller areas of the forest.  Occasionally water drips down onto your hot
+face from ablove, cooling and refreshing you.  The temprature of the forest
+seems to be esculating rather quickly.  Perhaps it is just the humidity
+getting to you.  There is a thin path here leading east and west.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 30601
+D1
+~
+~
+0 0 30604
+D3
+~
+~
+0 0 30603
+S
+#30603
+Dead End~
+~
+~
+The trees and plants have grown very thick here preventing further
+movement.  You can seel that someone before you had started to clear a path
+through this area but did not finish the job.  The only exit is east.  
+~
+0 4 3
+Rd     0
+D1
+~
+~
+0 0 30602
+S
+#30604
+Tropical Forest~
+~
+~
+Around you the trees rustle gently in the warm wind.  The majestic and
+beautiful haliconia plant grows in abundace all around you.  Green ferns
+grown to gigantic size and in countless verieties.  The humidity continues
+to esculate making you a bit uncomfortable.  The path continues east from
+here.  
+~
+0 4 3
+Rd     0
+D1
+~
+~
+0 0 30605
+D3
+~
+~
+0 0 30602
+S
+#30605
+Tropical Forest~
+~
+~
+&wYou are walking along a path in a tropical forest that runs east and
+west.  The thick forest canopy prevents light from getting through and as
+you get deeper into the forest it begins to darken.  Bright green moss
+slightly illuminates fallen trees and provides a rather unusual and subtle
+lightsourse.  The path continues to the east.  
+~
+0 1 3
+Rd     0
+D1
+~
+~
+0 0 30606
+D3
+~
+~
+0 0 30604
+S
+#30606
+Tropical Forest~
+~
+~
+It has become quite dark in this particular area in the forest.  You
+begin to grow nervous in the darkness and the hairs on the back of your neck
+stand on end as the sounds of wild animals fill your ears.  You wonder where
+and what they could be as your eyes struggle to adjust in the darkness.  The
+path continues south from here.  
+~
+0 134217729 3
+Rd     0
+D2
+~
+~
+0 0 30607
+D3
+~
+~
+0 0 30605
+S
+#30607
+Tropical Path~
+~
+~
+You are walking through a strange and beautiful tropical forest.  It is
+still very dark and you think that there might be someone, or something
+following you.  You try and remain calm and quiet but with each step you
+take branches and leaves crunch under your feet.  To the south the forest
+thins out a bit providing more light.  To the east it is still very dark.  
+~
+0 134217733 3
+Rd     0
+D0
+~
+~
+0 0 30606
+D1
+~
+~
+0 0 30608
+D2
+~
+~
+0 0 30612
+S
+#30608
+Dark Forest Path~
+~
+~
+You wonder if you have made a grave error continuing along this dark
+route.  You begin to itch all of a sudden and you notice that your arms are
+covered with tiny red bumps.  You look around and notice that there are a
+great number of mosquitos buzzing about.  The path continues east.  
+~
+0 134217729 3
+Rd     0
+D1
+~
+~
+0 0 30609
+D3
+~
+~
+0 0 30607
+S
+#30609
+Dark Forest Path~
+~
+~
+You are walking along a path through a dark region of a tropical forest. 
+Around you hundreds of mosquitos fly through the air above your head.  They
+seem to be attracted to a nearby pool of water.  The path continues to the
+north.  
+~
+0 134217729 3
+Rd     0
+D0
+~
+~
+0 0 30610
+D3
+~
+~
+0 0 30608
+S
+#30610
+Before a Dark Cave~
+~
+~
+You are standing before a dark cave in a tropical forest.  As you clear
+away some overgrown vines and shrubs from the entrance you notice some
+strange writing carved on some stones above your head.  You look inside of
+the cave but you cant seem to make out anything in the darkness.  
+~
+0 134217729 0
+Rd     0
+D0
+~
+~
+0 0 30611
+D2
+~
+~
+0 0 30609
+S
+#30611
+Dark Cave~
+~
+~
+The heat in this cave in immense but you manage to keep from passing out.
+The walls are covered in an odd slimey moss and a thick yellow liquid drips
+down from above.  In the center of the cave rest a small broken statue in
+the likeness of a snake.  On one of the walls you can see some writing
+underneath the layer of moss.  It looks similar to the writing you saw above
+the cave when you entered.  
+~
+0 134217729 0
+Rd     0
+D2
+~
+~
+0 0 30610
+S
+#30612
+Tropical Forest~
+~
+~
+A warm breeze blows through the trees, not providing much relief from the
+heat and humidity wich are slowly taking thier toll on you.  You begin to
+loosen your clothing in order to gain some relief.  You reach for your water
+skin just to find that the water inside had gone warm.  
+~
+0 4 3
+Rd     0
+D0
+~
+~
+0 0 30607
+D3
+~
+~
+0 0 30613
+S
+#30613
+Tropical Forest~
+~
+~
+Sweat rolls down your face as the heat and humidity overwhelm you.  You
+would think that the trees provided enough shade to keep this forest cool
+but all they seem to do is close off the cool air, making it comparable to a
+sauna.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30612
+D3
+~
+~
+0 0 30614
+S
+#30614
+Tropical Forest~
+~
+~
+You begin to remove some of your clothing as you travel through this hot
+forest.  You wonder if it was a good idea to explore this strange jungle, as
+you realize that you might not live to regret your choice.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30613
+D2
+~
+~
+0 0 30615
+S
+#30615
+Tropical Forest~
+~
+~
+Your steps become slower and more awkward as you continue through the
+forest.  A grove of extremely tall trees grows here, and on one of them you
+think you can make out some sort of a ladder.  The path continues south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30614
+D2
+~
+~
+0 0 30625
+D4
+~
+~
+0 0 30616
+S
+#30616
+Climbing a Tall Tree~
+~
+~
+You are climbing up a very tall tree.  Some of the wooden planks are very
+loose and you fear that you might fall.  They seem to support your weight
+well enough though.  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 30617
+D5
+~
+~
+0 0 30615
+S
+#30617
+Climbing up a Large Tree~
+~
+~
+You try not to look down at the ground as you climb this extremely tall
+tree.  You must be at least 50 feet off the ground by now.  Its not too late
+to turn back.  
+~
+0 0 3
+Rd     0
+D4
+~
+~
+0 0 30618
+D5
+~
+~
+0 0 30616
+S
+#30618
+Top of a Tall Tree~
+~
+~
+&wYou start getting dizzy as you climb higher up into the tall tree.  You
+almost loose your grip as a huge black spider crawls nearby your naked
+flesh.  A small army of green ants crawl all over a nearby branch.  You can
+continue up the tree or climb back down while you still can.  
+~
+0 0 3
+Rd     0
+D4
+~
+~
+0 0 30619
+D5
+~
+~
+0 0 30617
+S
+#30619
+Entrance to a Tree House~
+~
+~
+After a slow and tedious climb you have made it to the top of the tree. 
+To your right you notice a small ledge and make your way onto it.  You are
+now standing before a large wooden door.  There are some strange symbols
+carved into the frame but you cant make much sence out of them.  You wonder
+who could have built this dwelling in such a tall tree.  
+~
+0 134217728 0
+Rd     0
+D0
+~
+~
+0 0 30620
+D5
+~
+~
+0 0 30618
+S
+#30620
+Inside of a Tree House~
+~
+~
+&wYou are standing in the middle of a small living room.  The floor is
+carpeted in a soft green moss and colorful flowers bloom all around you. 
+Intricate wooden carvings depicting a battle adorn the walls here, along
+with several tapestries.  The soft glow of candles and the sound of
+trickling water provide this room with a relaxing ambiant atmosphere.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+1 0 30621
+D2
+~
+~
+1 0 30619
+S
+#30621
+A Library ~
+~
+~
+&wIn this room a row of neat wooden shelves line the east wall.  Each
+shelf holds at least fifty fine leather bound books.  The floor is carpeted
+in a fine woven rug and a comfortable looking leather chair stis in the
+corner.  There is a small wooden table next to the chair and to the south is
+a large glass cabinet containing many rolled up peices of parchment.  There
+is another door to the north.  
+~
+0 1024 0
+Rd     0
+D0
+~
+~
+3 0 30622
+D3
+~
+~
+1 0 30620
+S
+#30622
+Kitchen~
+~
+~
+The smell of something cooking greets you as you enter this room.  A pot
+brews over a small stove in the corner and a loaf of bread sits cooling in a
+window.  Jars full of strange liquids line a nearby shelf, while some herbs
+dry in baskets placed nearby.  A bowl of peculiar looking fruit is placed on
+a table in the center of the room.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 30621
+D3
+~
+~
+1 0 30623
+S
+#30623
+A Bedroom~
+~
+~
+This is prehaps the most impressive of rooms you have seen in this
+dwelling.  Several types of haliconias wind thier way around two stone
+pillars supporting the roof.  From the ceiling hange several glass wind
+chimes wich make beautiful designs on the walls as they sway gently in the
+breeze.  Your eyes are drawn to the floor where a huge spiralling picture of
+a black dragon is painted.  A large bed rests in the corner of the room.  To
+the wast an open door leads out to a small balcony.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+1 0 30622
+D3
+~
+~
+0 0 30624
+S
+#30624
+Balcony~
+~
+~
+The wind is very cool and refrshing out here.  From your vantage point
+you can see the top of the entire forest.  A long river cuts through the
+center of the forest and a large black mountain looms over the horizon. 
+From here you can see the steps which led you up the tree and the door you
+entered the hut through.  The strange thing is that they are in a tree
+directly across from you!  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 30623
+S
+#30625
+Tropical Forest~
+~
+~
+As you continue along through the forest you senses become clouded and
+you find it difficult to think coharently.  The heat and humidity are slowly
+wearing you down.  The path continues east.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 30615
+D1
+~
+~
+0 0 30626
+S
+#30626
+Tropical Forest~
+~
+~
+Just when you think that you are going to pass out from exahaustion and
+thirst, you hear the sound of trickling water nearby.  Perhaps you are
+hallucinating though.  You work up the energy to continue on and make sure
+that your ears are not deceiving you.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 30627
+D3
+~
+~
+0 0 30625
+S
+#30627
+Tropical Forest~
+~
+~
+As you continue on your slow and treacherous journey thorough this
+strange tropical forest, the sound of nearby water fills your ears with
+sweet music.  Small green and red frogs cling tenaciously to nearby trees. 
+To the north you can feel a cool breeze blowing through the trees.  
+~
+0 4 3
+Rd     0
+D0
+~
+~
+0 0 30628
+D2
+~
+~
+0 0 30633
+D3
+~
+~
+0 0 30626
+S
+#30628
+Waterfall~
+~
+~
+You stand before a huge cascading waterfall.  Crystal clear water flows
+over smoothe grey stones and purple and white water lilly's float gently on
+the surface of the pool as tiny colorful birds drink from thier nectar. 
+Gigantic red hibiscus and purple orchids creep along the ground filling the
+air with a sweet fragrance.  Several fruit trees grow nearby, producing
+juicy mangoes and ripe bananas.  Above you colorful parrots and toucans make
+thier nestes in tall trees surrounding the falls, and thier songs fill the
+air with a lovely music.  Behind the falls you can see a small cave wich
+would be the perfect spot for diving off into the water.  The falls are the
+perfect place to stip off, relax, and partake of the bounty that nature has
+provided.  
+~
+0 393218 3
+Rd     0
+D2
+~
+~
+0 0 30627
+D3
+~
+~
+0 0 30629
+S
+#30629
+Behind the Waterfall~
+~
+~
+You are standing behind the beautiful waterfall.  You can barely make out
+your surroundings in the dim light.  You can hear water dripping all around
+you as it echos throughout the cave.  The ground here is very slippery.  
+~
+0 167772161 0
+Rd     0
+D1
+~
+~
+0 0 30628
+D5
+~
+~
+1 0 30630
+S
+#30630
+Beneath a Waterfall~
+~
+~
+You are in a large cavern beneath the waterfall.  You can hear water
+splashing against the rocks above you.  Around you the cave walls glisten
+with moisture,and old bones are gathered in piles and strewn about the
+cavern floor.  There are also several valubles lying around the ground here.
+~
+0 134225921 0
+Rd     0
+D2
+~
+~
+0 0 30631
+D4
+~
+~
+1 0 30629
+S
+#30631
+Dead End~
+~
+~
+You have come to a dead end in the cave. The only exit is north.
+~
+0 134225921 0
+Rd     0
+D0
+~
+~
+0 0 30630
+D5
+~
+~
+3 0 30632
+S
+#30632
+Pit Beneath a Cave~
+~
+~
+It is pitch black.  You can hear very peculiar noises echoing throughout
+the cave.  As you stumble around in the dark, you think that you felt
+something move.  
+~
+0 1 0
+Rd     0
+D4
+~
+~
+3 0 30631
+S
+#30633
+Region of a Tropical Forest~
+~
+~
+Strange insects buzz all around your head as you continue south.  A light
+storm passes overhead, and the sound of raindrops hitting leaves calms your
+nerves somewhat.  Warm steam rises up from the ground increasing the heat. 
+The path continues south.  
+~
+0 4 3
+Rd     0
+D0
+~
+~
+0 0 30627
+D2
+~
+~
+0 0 30634
+S
+#30634
+Intersection in a Tropical Forest~
+~
+~
+You are walking through a tropical forest.  The trees begin to thin out
+to the south where an ominous black mountain looms over the line of trees.  
+~
+0 134217728 3
+Rd     0
+D0
+~
+~
+0 0 30633
+D2
+~
+~
+0 0 30639
+D3
+~
+~
+0 0 30635
+S
+#30635
+Tropical Forest~
+~
+~
+You are travelling through a dense tropical forest.  The forest is
+strangely empty here; devoid of much plantlife.  The surrounding trees are
+extremely tall and the air is very still here.  
+~
+0 134217728 3
+Rd     0
+D1
+~
+~
+0 0 30634
+D4
+~
+~
+0 0 30636
+S
+#30636
+Climbing a Tall Tree~
+~
+~
+The branches are low enough for you to climb with ease.  It is not very
+far to the top now.  
+~
+0 134217728 3
+Rd     0
+D4
+~
+~
+0 0 30637
+D5
+~
+~
+0 0 30635
+S
+#30637
+Climbing a Tall Tree~
+~
+~
+You are almost to the top of this tall tree.  As you climb higher you can
+make out a glittering object at the top.  
+~
+0 0 3
+Rd     0
+D4
+~
+~
+0 0 30638
+D5
+~
+~
+0 0 30636
+S
+#30638
+Top of A Large Tree~
+~
+~
+You have found your way to the top of the tree.  You are quite a distance
+from the ground now.  
+~
+0 8192 3
+Rd     0
+D5
+~
+~
+0 0 30637
+S
+#30639
+Path To Mountain~
+~
+~
+You are walking along a forest path leading to a great black mountain. 
+Smoke billows out from several positions around the mountain and you can
+hear the beating of drums to the south and east.  
+~
+0 4 3
+Rd     0
+D0
+~
+~
+0 0 30634
+D2
+~
+~
+0 0 30640
+S
+#30640
+Path to Mountain~
+~
+~
+&wYou are travelling along a forest path leading to a mountain.  The path
+is clear of vines and plants and looks like it is used quite often. 
+Beautiful red flowers grow in between rock clusters around you and you can
+see some sort of animal tracks embedded in the soil.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 30639
+D1
+~
+~
+0 0 30641
+S
+#30641
+Path to Mountain~
+~
+~
+The once thick forest is now behind you.  Here the trees are shorter and
+are spread out in small clusters around you.  Tall grass sways softly in the
+wind, and you can hear the sound of water to the east.  West leads back to
+the forest.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 30642
+D3
+~
+~
+0 0 30640
+S
+#30642
+Path Around a Mountain~
+~
+~
+You are travelling around a black mountain somewhere in a tropical
+forest.  A small river flows through here and continues on to the south
+where it joins a small lake.  A bridge has been built over the river making
+it easy to cross.  East follows a path around the mountain, and south
+follows the river.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 30653
+D2
+~
+~
+0 0 30643
+D3
+~
+~
+0 0 30641
+S
+#30643
+On a Bridge~
+~
+~
+You are walking across a sturdy bridge that has been built across a
+river.  Below you the river flows southward and gets deeper.  The bridge
+gets closer to the water here and looking down you can see small fish moving
+about.  The bridge continues to the south.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 30642
+D2
+~
+~
+0 0 30644
+S
+#30644
+Following a River~
+~
+~
+You are walking along a bridge built over a river.  The bridge is almost
+at water level now making you very uncomfortable.  To the west it ends and
+you can see smoke risking up around the mountain.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 30643
+D3
+~
+~
+0 0 30645
+S
+#30645
+End of the Bridge~
+~
+~
+You have come to the end of the bridge.  The river continues on to the
+east where it flows into a small lake.  Tropical plants grow along the bank,
+some of them edible.  A group of large insects crawl all over an animal
+carcass nearby nd scavenger birds circle above waiting to make thier move. 
+You can see some figures walking around further south, and to the west large
+footprints lead to a small dark cave.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 30644
+D2
+~
+~
+0 0 30647
+D3
+~
+~
+0 0 30646
+S
+#30646
+Small Dark Cave~
+~
+~
+You have wandered into a small dark cave.  The cave floor is litered with
+bones and animal remains wich look very fresh.  On the walls of the cave you
+notice strange writing and a mural depicting a gigantic snake surrounded by
+revelling people.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30645
+S
+#30647
+Tropical Forest~
+~
+~
+You are travelling through a beautiful and dangerous tropical forest.  To
+the south the path continues and you can hear the beating of drums.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 30645
+D2
+~
+~
+0 0 30648
+S
+#30648
+Path to Village~
+~
+~
+You are walking along a path that leads to a small village.  The village
+itself is situated in a large clearing.  It consist of several small huts
+and a large central garden area.  You can see the smoke from a huge blazing
+bonfire in the distance.  
+~
+0 4 3
+Rd     0
+D0
+~
+~
+0 0 30647
+D1
+~
+~
+0 0 30649
+S
+#30649
+Path to Village~
+~
+~
+As you approach the villagers stop what theyre doing and stare at you curiously.
+You dont think that they see many outsiders here.
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 30650
+D3
+~
+~
+0 0 30648
+S
+#30650
+Path to Village~
+~
+~
+As you approach the village small children run up to greet you.  They
+stare up at you with large curious eyes, and one of them starts rummaging
+through your belongings.  The path continues east.  
+~
+0 4 2
+Rd     0
+D1
+~
+~
+0 0 30651
+D3
+~
+~
+0 0 30649
+S
+#30651
+Path to Village~
+~
+~
+You are travelling along a forest path that lead to a small village.  A
+great black mountain rises up above the tree line a short ways to the north.
+You can hear the sound of drums beating as you approach the village.  
+~
+0 0 2
+Rd     0
+D1
+~
+~
+0 0 30652
+D3
+~
+~
+0 0 30650
+S
+#30652
+Path to Village~
+~
+~
+The path splits in two here, north leading to the mountain and south heading
+towards the village. 
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 30665
+D2
+~
+~
+0 0 30666
+D3
+~
+~
+0 0 30651
+S
+#30653
+Mountain Path~
+~
+~
+You are walking along a rocky mountain path in a tropical forest.  Below
+you the ground is very fertile and produces flowers in the most brilliant
+colors you have ever seen.  Small clumps of green grass sprout out of rock
+clusters around you.  You notice that the air has an odd smell to it here. 
+The path continues to the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30654
+D3
+~
+~
+0 0 30642
+S
+#30654
+Mountain Path~
+~
+~
+As you continue on the path you notice that it is becoming increasingly
+warmer.  Your eyes begin to tingle and water slightly as you walk.  The
+strange smell you encountered a short ways back has also become stronger. 
+It is a very unpleasant smell, similar to sulfer.  The mountain path
+continues to the east.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 30655
+D2
+~
+~
+0 0 30653
+S
+#30655
+Mountain Path~
+~
+~
+You are walking along a mountain path in a tropical forest.  The faint
+smell of sulfer and the rising temprature indicates that this is no ordinary
+mountain but is inface a volcano.  It dose not seem like much volcanic
+activity has been occuring lately though.  It would have taken decades for
+the soil to produce plantlife again, and flora is in full bloom here.  
+~
+0 4 5
+Rd     0
+D1
+~
+~
+0 0 30656
+D3
+~
+~
+0 0 30654
+S
+#30656
+Volcanic Path~
+~
+~
+You are following a path around an inactive volcano.  It has been a while
+since you have been able to see the sky clearly.  You take this opportunity
+to look up into its vastness.  Huge white clouds drift slowly along the blue
+backdrop.  The sun reflects off of them producing stunning shades of purple,
+blue, orange, and red.  To the east a faint hissing noise can be heard deep
+within a dark cave.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+67 0 30657
+D2
+~
+~
+0 0 30658
+D3
+~
+~
+0 0 30655
+S
+#30657
+Small Cave~
+~
+~
+You have found your way into a small cave. Around you strange writing and pictures
+cover the walls and even the floor. One picture depicts revelling people dancing
+around a huge snake. You cannot make out much more than that. On the ground you
+notice a large beam of light coming from a large hole in the side of the cave.
+~
+0 1 0
+Rd     0
+D3
+~
+~
+67 0 30656
+S
+#30658
+Path Around a Volcano~
+~
+~
+You are walking along a path leading around an inactive volcano.  A small
+stream of water trickles down the rock here and collects in a small pool. 
+To the east the tree line begins to thicken out providing you with
+sufficiant shade against the burning sunlight.  The sounds of wild animals
+echo all around you.  The path continues to the south.  
+~
+0 0 5
+Rd     0
+D0
+~
+~
+0 0 30656
+D2
+~
+~
+0 0 30659
+S
+#30659
+Path around Volcano~
+~
+~
+You are walking along a path that leads around a huge volcano.  Life is
+in full bloom here.  Birds of paradise and red alpinia sprout from dozens of
+small cracks in the surrounding area.  You wonder how a place of such beauty
+could hold dangers so great.  The path continues to the east.  
+~
+0 0 5
+Rd     0
+D0
+~
+~
+0 0 30658
+D1
+~
+~
+0 0 30660
+S
+#30660
+Path around Volcano~
+~
+~
+You are on a path leading around a huge volcano.  The elevation rises
+dramatically at this point making it more of a struggle to walk.  The path
+grows more cluttered with rocks and flora as you continue on.  The path
+leads to the south.  
+~
+0 0 5
+Rd     0
+D2
+~
+~
+0 0 30661
+D3
+~
+~
+0 0 30659
+S
+#30661
+Path around Volcano~
+~
+~
+The elevation continues to rise here, almost to the point where youll
+need to start climbing.  In the distance you can make out a small village.  
+~
+0 4 5
+Rd     0
+D0
+~
+~
+0 0 30660
+D1
+~
+~
+3 0 30662
+D2
+~
+~
+0 0 30664
+S
+#30662
+Hidden Cave~
+~
+~
+You have found your way into a large cave.  Around you half lit torches
+line the walls and you can see fresh footprints on the floor.  You can also
+see a thin trail of blood leading north deeper into the cave.  It seems as
+though someone was in this cave very recently.  On the walls you can see
+more drawings and symbols depicting some sort of gathering around a large
+snake.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 30663
+D3
+~
+~
+3 0 30661
+S
+#30663
+Hidden Cave~
+~
+~
+You are inside of a cave within a volcano.  Around you the walls are
+covered with more strange writing and pictures.  Some of the pictures depict
+graphic scenes of horror and gore.  In the center of the cave stands a large
+&zstone &Yaltar wich is covered in fresh blood.  There do not seem to be any
+exits except for the way you came in.  
+~
+0 134348811 0
+Rd     0
+D3
+~
+~
+83 0 0
+S
+#30664
+Path Around a Volcano~
+~
+~
+The elevation decreases here and you are back to a normal pace. You can hear the 
+sound of beating drumbs in the nearby village and see the smoke of a huge bonfire.
+The path continues west.
+~
+0 0 5
+Rd     0
+D0
+~
+~
+0 0 30661
+D3
+~
+~
+0 0 30665
+S
+#30665
+Path to Village~
+~
+~
+You are following a path that leads to a village south of the volcano. The village
+rests in a large clearing and it seems to have quite a few people residing in it.
+In the center of the village is a huge flaming statue surrounded by a bonfire.
+The path continues to the south where it joins a narrow road.
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 30664
+D2
+~
+~
+0 0 30652
+S
+#30666
+Fakawii Village~
+~
+~
+You have found your way through the forest to the village of the Fakawii
+tribe.  The village itself does not appear to be very large but it seems to
+accomidate for a large number of people.  The path continues east.  
+~
+0 8192 1
+Rd     0
+D0
+~
+~
+0 0 30652
+D1
+~
+~
+0 0 30667
+S
+#30667
+Fakawii Village~
+~
+~
+You are walking through the village of the Fakawii People.  Flowers and
+plants taken from the forest line the road around you and form a large
+garden in the center of the city.  As you continue through the village many
+people stop to look at you.  
+~
+0 8196 2
+Rd     0
+D2
+~
+~
+0 0 30668
+D3
+~
+~
+0 0 30666
+S
+#30668
+Village Path~
+~
+~
+You are walking through the village of the Fakawii people.  The sounds of
+beating drums and chanting fill the air here.  A few meters away you see a
+large gathering of people crowded around a large statue.  
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 30667
+D1
+~
+~
+0 0 30669
+S
+#30669
+Fakawii Village~
+~
+~
+Huge bonfires emit a cloud of black smoke near the center of the village.
+It seems as if some sort of ceremony is taking place.  The once curious
+villagers have taken thier focus off of you and are now concentrating on the
+drums and chanting taking place up ahead.  Several people begin dancing
+around the bonfire some of them actually jumping through the flames.  To the
+south a small is a small open hut, and east leads towards the fires.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 30670
+D2
+~
+~
+0 0 30673
+D3
+~
+~
+0 0 30668
+S
+#30670
+Fakawii Village~
+~
+~
+The beating of drums becomes so loud that you can feel it deep down in
+your bones.  The dancing villagers do not seem to be affected by the intense
+heat of the fire but then again they are not wearing many clothes.  To the
+north and west you see more huts, and south leads towards the excitement.  
+~
+0 0 4
+Rd     0
+D0
+~
+~
+0 0 30671
+D1
+~
+~
+0 0 30672
+D2
+~
+~
+0 0 30674
+D3
+~
+~
+0 0 30669
+S
+#30671
+Inside of a Hut~
+~
+~
+This hut is very tidy insided. Clay pots full of unidentifiable substances are
+placed on a nearby table. There are several woven matts on the floor and you 
+notice an abundance of small wooden idols carved into the likenesses of different
+animals, placed on small blocks all around the room. At the back of the hut is
+a larger idol of a pheonix surrounded by flowers and what looks like treasure.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 30670
+S
+#30672
+Inside of a Hut~
+~
+~
+This hut is similar to the last few that you have seen.  Again small
+wooden idols are placed in several positions around the room and a small
+altar with a phoenix statue is adorned in flowers and treasures.  This hut
+looks like it accomidates for a large family.  Several woven mats are placed
+on the floor along with a few wooden cradles for babies.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 30670
+S
+#30673
+Inside of a Hut~
+~
+~
+This hut is made out of palm leaves, wood, and mud.  It is not very large
+inside but it looks like it accomidates for many people.  Jugs of water and
+bowls made from hollowed out gourds are placed near a half eaten roasted
+boar.  Grass mats cover the floor to one side of the hut and wooden idols
+are littered about.  There is an altar with a statue of a pheonix placed on
+top.  Around the pheonix are many beautiful flowers and smaller idols
+representing different animals.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30669
+S
+#30674
+Center of the Villiage~
+~
+~
+&wYou have arrived at the center of the Fakawii village.  Many villagers
+are gathered around and seem to be paying tribute to a huge statue of a
+fiery Phoenix.  The statue is surrounded by a large garden made up of
+several species of tropical flora.  Behind the statue burns a huge bondire
+that illuminates the entire area.  To the south is a path and a group of
+young wemon who talk quietly amongst themselves.  
+~
+0 0 4
+Rd     0
+D0
+~
+~
+0 0 30670
+D2
+~
+~
+0 0 30675
+S
+#30675
+Fakawii Village~
+~
+~
+You can still feel the intense heat of the bonfire on your back.  Around
+you a small group of people talk quiety in a strange tounge.  A few families
+are gathered together around a group of young girls dressed in white robes. 
+The girls look very distraught and some of them cry softly.  To the west you
+see more huts.  
+~
+0 0 4
+Rd     0
+D0
+~
+~
+0 0 30674
+D1
+~
+~
+0 0 30676
+D2
+~
+~
+71 30675 30677
+D3
+~
+~
+0 0 30678
+S
+#30676
+Inside of a Hut~
+~
+~
+This hut looks like it is unused.  On the ground are several broken pots
+and pieces of smashed idols.  The interior is covered in scorch marks and at
+the back of the hut is a large gaping hole.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 30675
+S
+#30677
+Witchdoctors Hut~
+~
+~
+This hut is the smallest out of all of the ones youve seen so far.  It
+looks like there is room for just one person.  Several large idols are
+placed at the entrance and in the center of the hut.  A small table and
+grass mat are placed next to an altar on your left.  Several animal skins
+decorate the walls here and bowls of different colored powders are placed on
+the ground.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+71 0 30675
+D2
+~
+~
+64 30675 0
+S
+#30678
+Fakawii Village~
+~
+~
+You are walking through a small village outside of a tropical forest. 
+The path here is decorated in flowers, and plants.  Golden idols are placed
+alongside either side of the path wich continues to the west.  Up ahead you
+see two heavily adorned huts.  
+~
+0 0 4
+Rd     0
+D1
+~
+~
+0 0 30675
+D3
+~
+~
+0 0 30679
+S
+#30679
+&REnd of Village~
+~
+~
+You have come to the end of the Fakawii village.  To your north and south
+are two doors leading to two heavily adorned huts.  A guard stands here
+keeping watch.  
+~
+0 393218 4
+Rd     0
+D0
+~
+~
+67 0 30680
+D1
+~
+~
+0 0 30678
+D2
+~
+~
+119 30612 30681
+D3
+~
+~
+0 0 30682
+S
+#30680
+Lulamanti's Hut~
+~
+~
+This large hut is decorated in the most splendid flowers youve ever laid
+eyes on.  On one side a bed made of feathers and a colorful cloth rests near
+two golden statues depicting tigers.  A beautiful altar dedicated to the
+Pheonix is placed at the back of the hut.  On the altar you can make out
+many golden charms and jeweled treasures.  The entire floor is covered with
+a woven mat intertwined with colorful feathers and dyed shoots of grass.  
+~
+0 393219 0
+Rd     0
+D2
+~
+~
+67 0 30679
+S
+#30681
+Chief's Hut~
+~
+~
+You have entered a hut adorned in riches.  On the left you see a large
+throne made of gold with large jewels set into it.  Directly across from the
+throne is a large altar with a stone statue of a snake placed upon it. 
+Several different types of food and fruit are set out on a table here, and a
+bowl full of red liquid is placed nearby.  The ground is covered in a woven
+grass rug and on the walls you can see a few tapestries depicting people
+gathered around a snake.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+119 30612 30679
+S
+#30682
+Path to Temple~
+~
+~
+You are walking along a worn path in a tropical forest.  The path
+continues west from here.  
+~
+0 4 3
+Rd     0
+D1
+~
+~
+0 0 30679
+D3
+~
+~
+0 0 30683
+S
+#30683
+Path to Temple~
+~
+~
+You are travelling on a small path outside of the village.  The path
+actually cuts back into the forest here making movement a bit difficult. 
+Uprooted trees and overgrown vines prevent you from moving at a decent
+speed.  This path does not look like it is often used.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 30682
+D3
+~
+~
+0 0 30684
+S
+#30684
+Path to Temple~
+~
+~
+As you tread along through the forest you notice that the path below you
+was once paved in white stones and colorful tiles.  All that is left now are
+broken peices of clay and scattered remnants of what looked like a grand
+walkway.  The path continues to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30683
+D3
+~
+~
+0 0 30685
+S
+#30685
+Path to Temple~
+~
+~
+Many broken statues line the path on either side of you.  Some of them
+depict people but most of them represent some sort of animal.  Many of them
+were made of stone and covered with gold.  Now they are covered in vines and
+grime and are missing several peices.  The path continues to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30684
+D3
+~
+~
+0 0 30686
+S
+#30686
+Path to Temple~
+~
+~
+The path turns sharply here and heads north.  In that direction you can
+make out a large stone building with many steps.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30687
+D1
+~
+~
+0 0 30685
+S
+#30687
+Temple of YaDur~
+~
+~
+You have come to a large stone temple.  There is a large set of stairs
+made form a white marble like rock leading upwards here.  
+~
+0 4 0
+Rd     0
+D2
+~
+~
+0 0 30686
+D4
+~
+~
+0 0 30688
+S
+#30688
+Worn Staircase~
+~
+~
+The stairs are covered in decades of dirt and grime.  In some places they
+are cracked and look like they might collapse.  Dead vines and plants have
+grown so that they completly cover most of the surface making it so you have
+to clear a path for yourself in order to walk.  
+~
+0 0 3
+Rd     0
+D4
+~
+~
+0 0 30689
+D5
+~
+~
+0 0 30687
+S
+#30689
+Temple of YaDur~
+~
+~
+You have arrived at the grand entryway to the once beautiful Temple of
+YaDur.  The elements accompanied by the years of neglect have caused the
+temple to fall into ruin.  Around you broken pots are strewn about the
+stairs and the gigantic pillars that hold the front of the temple together
+are covered in vines and look as though they might collapse at any second. 
+Beneath all of the rubble and dirt you can make out a circular mosiac
+pattern on the ground.  The entrance to the temple is to the north.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 30690
+D5
+~
+~
+0 0 30688
+S
+#30690
+Temple of YaDur~
+~
+~
+Crumbling pillars, broken pots, and a few skeletons are all that remain
+of the once magnificent temple built in honor of YaDur.  Above you a man
+made hole in the roof allows the light from the sun to shine in directly
+upon a stone altar in the center of the room.  A few of the pillars that
+support the temple have given way here causing the entry way to partially
+collapse.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+119 30616 30693
+D1
+~
+~
+0 0 30691
+D2
+~
+~
+0 0 30689
+D3
+~
+~
+0 0 30692
+S
+#30691
+Abandoned Temple~
+~
+~
+The roof in this chamber has collapsed destroying most of the ground
+beneath it.  Most of the walls are covered in plants and vines and look like
+they too might collapse at any second.  The only thing that remains intact
+here is a large statue.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 30690
+S
+#30692
+Chamber of the High Priest~
+~
+~
+As you enter this room a warm sensation encompasses your entire body
+leaving you with a brief tingling sensation.  This part of the temple has
+remained intact during the years of neglect.  Painted on the walls are
+scenes depicting the lifestyle of an ancient culture; probably desendants of
+the Fakawii people.  Four large rune marked pillars keep the room from
+collapsing in on itself and seem to be the sourse of the rooms energy.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 30690
+S
+#30693
+Lair of the Manticore~
+~
+~
+You have entered the lair of a fierce beast...  The Manticore..  You
+stand before it trembling in fear and it eyes you wickedly.  You see alot of
+debris but no bones leading you to believe that either it is friendly or
+devours things whole.  
+~
+0 393219 0
+Rd     0
+D2
+~
+~
+119 30616 30690
+S
+#30694
+&RThin Path~
+~
+~
+You are walking along an overgrown path.  Above you white clouds fill the
+blue sky, and birds fly overhead.  To the south you can make out the
+begining of a forest.  Trees and plants begin to grow in abundance partially
+concealing the trail.  
+~
+0 134217728 2
+Rd     0
+D2
+~
+~
+0 0 30695
+S
+#30695
+Following The Path~
+~
+~
+Around you plantlife grows larger than you have ever see and the trees
+seem taller and hardier.  You spot serveral verities that you have never
+before seen.  The path continues south.  
+~
+0 0 4
+Rd     0
+D0
+~
+~
+0 0 30694
+D2
+~
+~
+0 0 30696
+S
+#30696
+Following the Path~
+~
+~
+The temprature in the area seems to be esculating quite rapidly and a
+thin trail of sweat trickles down your cheek.  The trail continues east
+towards the forest which stretches out miles in that direction.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 30695
+D1
+~
+~
+0 0 30697
+S
+#30697
+Thin Trail~
+~
+~
+The trail is barely visible here.  It is almost completely covered over
+in thick rope like vines and strange tropical plants that creep along the
+ground.  You can faintly make out where it continues to the east.  
+~
+0 5 0
+Rd     0
+D1
+~
+~
+0 0 30698
+D3
+~
+~
+0 0 30696
+S
+#30698
+Thin Trail~
+~
+~
+Your ears are filled with strange and bizzare noises as you continue
+towards the forest.  All sorts of chirping and howling fills the air with a
+rahter frightening music making you wonder just what lies ahead in thie
+dense and warm forest.  A short ways to the south the line of trees begins
+and you may venture into these dense woods.  
+~
+0 0 4
+Rd     0
+D2
+~
+~
+0 0 30699
+D3
+~
+~
+0 0 30697
+S
+#30699
+Thin Trail~
+~
+~
+It has become somewhat darker here.  The trees cast thier tall shadows
+over a huge area of the landscape, making day seem like dusk.  South of here
+the forest begins and you may enter at your discresion.  
+~
+0 134217733 0
+Rd     0
+D0
+~
+~
+0 0 30698
+D2
+~
+~
+0 0 30600
+S
+#0
+
+
+
+#SPECIALS
+M 30611 spec_poison
+M 30626 spec_poison
+M 30628 spec_cast_mage
+M 30638 spec_poison
+M 30642 spec_poison
+M 30657 spec_poison
+M 30680 spec_cast_adept
+M 30690 spec_cast_adept
+M 30693 spec_poison
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 30602 1 30602
+E 0 30602 0 20
+E 0 30603 0 8
+M 0 30603 1 30603
+M 0 30604 1 30604
+G 0 30613 0
+M 0 30605 1 30605
+M 0 30606 1 30606
+E 0 30603 0 8
+E 0 30602 0 20
+M 0 30609 1 30609
+G 0 30609 0
+M 0 30611 1 30611
+E 0 30611 0 5
+M 0 30612 1 30612
+G 0 30613 0
+M 0 30613 1 30613
+G 0 30609 0
+M 0 30614 1 30614
+G 0 30613 0
+M 0 30615 1 30615
+M 0 30616 1 30616
+O 0 30621 0 30621
+P 0 30622 0 30621
+O 0 30698 0 30623
+M 0 30624 1 30624
+E 0 30624 0 20
+G 0 30620 0
+E 0 30623 0 3
+M 0 30626 1 30626
+M 0 30627 1 30627
+E 0 30602 0 20
+E 0 30603 0 8
+M 0 30628 1 30628
+G 0 30628 0
+G 0 30659 0
+E 0 30614 0 5
+M 0 30630 1 30630
+M 0 30632 1 30632
+M 0 30634 1 30634
+M 0 30638 1 30638
+G 0 30638 0
+M 0 30640 1 30640
+M 0 30642 1 30642
+M 0 30642 1 30642
+M 0 30643 1 30643
+M 0 30644 1 30644
+M 0 30646 1 30646
+G 0 30645 0
+M 0 30649 1 30649
+M 0 30650 1 30650
+M 0 30651 1 30651
+M 0 30656 1 30656
+E 0 30602 0 20
+E 0 30603 0 8
+M 0 30657 1 30657
+O 0 30663 0 30663
+M 0 30666 1 30666
+E 0 30603 0 8
+E 0 30602 0 20
+M 0 30667 1 30667
+M 0 30674 1 30670
+M 0 30671 1 30671
+M 0 30670 1 30671
+O 0 30673 0 30671
+M 0 30672 1 30672
+O 0 30673 0 30672
+O 0 30673 0 30673
+O 0 30674 0 30674
+M 0 30674 1 30674
+E 0 30603 0 8
+M 0 30675 1 30675
+G 0 30675 0
+O 0 30676 0 30676
+M 0 30677 1 30677
+E 0 30677 0 22
+M 0 30679 1 30679
+E 0 30607 0 5
+E 0 30602 0 20
+G 0 30612 0
+M 0 30680 1 30680
+E 0 30680 0 19
+E 0 30604 0 20
+E 0 30600 0 5
+G 0 30619 0
+P 0 30615 0 30619
+P 0 30618 0 30619
+P 0 30617 0 30619
+P 0 30626 0 30619
+M 0 30681 1 30681
+E 0 30606 0 20
+E 0 30605 0 1
+G 0 30612 0
+E 0 30625 0 6
+O 0 30601 0 30682
+O 0 30601 0 30683
+O 0 30601 0 30684
+O 0 30601 0 30685
+O 0 30601 0 30686
+O 0 30601 0 30687
+O 0 30690 0 30690
+M 0 30690 1 30690
+G 0 30616 0
+O 0 30691 0 30691
+O 0 30692 0 30692
+M 0 30693 1 30693
+G 0 30693 0
+G 0 30608 0
+M 0 30698 1 30698
+O 0 30699 0 30699
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

@@ -1,0 +1,2295 @@
+#AREADATA
+Name        {  1-5 } LaN Temple~
+Builders    None~
+VNUMs       9400 9499
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Leptar~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#9400
+Druid Life Nature Mother~
+Mother Nature~
+Mother Nature stands near an opening in a gigantic tree.
+~
+This young elven woman is wrapped in a set of light green robes.  She
+currently sits on a wood bench that is near the tree's entrance.  She
+constantly runs her smooth hands across the side of the tree.  The tree
+appears to ripple in her touch.  She appears to be well tuned to nature for
+there are several foxes, rabbits, and wolves lying at her feet.  She looks
+at you with her calm green eyes which convey a feeling of tranquility.  She
+waves for you to come rest under her protection.  
+~
+524355 234881216 88080400 16384 3 1000 S
+300 1 600 600 0 324000d0+0 0d0+0
+2000 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) < 2
+say Welcome to Adventures of Stormgate, $n!  I have a newbie guide for you to read.  To read it, type: READ CHAPTER, where chapter is a number.
+smile $n
+mpoload 156
+give newbie $n
+say If you need any other help, just say YES.
+else
+say You have outgrown your need for me, $n.  May you find adventure in all that you do!
+endif
+endif
+~
+>speech_prog help~
+smile
+say Hello $n! Welcome to the Adventures of Stormgate.
+say Many journeys will lie ahead of you.
+say Can I be of any assistance to you?
+~
+>speech_prog yes yeah yup ya yessir~
+Say OK, Just say one of the following and I will help you with that topic.
+nod $n
+mpecho &GLEVEL EXPERIENCE EXIT PKILL PEACEFUL TRAIN PRACTICE SCHOOL STATS
+~
+>speech_prog nope no nopers shake never~
+say Ok $n, You must really know what you are doing.
+wave $n
+~
+>speech_prog exit exits~
+say There are many auto commands that you can type:
+mpecho AUTOEXIT: Will show you all exits when you walk into a room.
+mpecho AUTOLOOT: Will take all the item in a MOB'S corpse after YOU have killed it.
+mpecho AUTOGOLD: Will take all gold from the corpse of a MOB YOU have killed.
+mpecho AUTOSAC: Will sacrifice a MOB'S corpse after you have killed it.
+~
+>speech_prog experience~
+say Experience is gained by killing mobs, for each 1000 experience points you earn you gain a level.
+mpecho CONSIDER <MOB>: shows you the chances that you will be able to kill the mob in question.
+mpecho KILL <MOB>: you attempt to kill a mob.
+mpecho WORTH: shows you how much experience you have and how much you need until your next level. Also it shows your modified stats.
+ 
+say for right now, you should stay in the Temple until level 5.
+~
+>speech_prog level lvl levels~
+say to raise levels, you must gain experience from killing mobs.
+mpecho AREA: shows you what level all the areas in the game are.
+say For the time being you should stay in the Temple until you reach level 5.
+~
+>speech_prog pkill pk~
+say PKill means that you wish to be able to fight and kill or die other pk players in the game. This will start at level 30 to give you some breathing room, remember it's a +/- 8 level range.
+~
+>speech_prog peaceful peace~
+say Peaceful means that you do not wish to kill other players. You cannot be attacked by them unless you wander into CLAN halls or the ARENA.
+~
+>speech_prog train tra trai~
+say To TRAIN, one must first gather practice points. Gathering PRACTICE points is fairly simple enough to do.
+say Every time you gain a LEVEL you gain PRACTICE points. These points vary depending on the wisdom of your charactor.
+say Another way to gather PRACTICE points is by questing, which you shall learn how to later.
+~
+>speech_prog stat stats statictics~
+~
+>speech_prog practice pract pra prac~
+say With each LEVEL you gain you may or maynot get new skills/spells, but if you do you will need to PRACTICE them.
+say To see what skills/spells you will have for your charactor just type SLIST. 
+say If you wish to see what another CLASS has for skills/spells just type SLIST <CLASS>.
+say An example of the syntax would be SLIST MAGE.
+~
+>speech_prog mud school mudschool~
+say the mud school is where all new players should go to advance LEVELS. 
+say to go there, just go two east, north, east, and north again there will be instructions there.
+say Also remember to CON <mob>
+~
+|
+#9401
+Baker~
+A baker~
+A baker pulls a fresh pie from the oven.
+~
+~
+67 128 16 0 2 1000 S
+106 1 212 212 0 50000d0+0 0d0+0
+1060 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+say Ah, please come and try one of my creations.
+say Type LIST to see what I have baked today.
+endif
+~
+|
+#9402
+Hardened Adventurer~
+A Hardened Adventurer~
+A hardened adventurer sells the basics.
+~
+~
+67 67108864 16 0 2 1000 S
+106 1 212 212 0 50000d0+0 0d0+0
+1060 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+bow $n
+say Type LIST to see what I have in store for you.
+endif
+~
+|
+#9403
+Trainer Helmat~
+Helmat~
+Helmat stands ready to train you.
+~
+~
+579 33554432 16 0 2 1000 S
+106 1 212 212 0 50000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+say You look like a pansy.
+say Type TRAIN to see what you need to work on.
+endif
+~
+|
+#9404
+Lily Practice~
+Lily~
+Lily awaits her next spar partner.
+~
+~
+1091 134217728 16 0 2 1000 S
+106 1 212 212 0 50000d0+0 0d0+0
+0 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+nod $n
+say Let me teach you how nature interacts with combat.
+say Type PRAC to see what needs to be practiced.
+endif
+~
+|
+#9405
+Learn Teacher Dok~
+Dok~
+Dok sits behind a wood desk.
+~
+~
+65603 128 16 0 2 1000 S
+106 1 212 212 0 50000d0+0 0d0+0
+0 0 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+nod $n
+say Please, sit down and learn about the world.
+say Type LEARN to see what languages you still have to learn.
+endif
+~
+|
+#9406
+Worker Ant~
+An ant~
+An ant travels along the dirt.
+~
+~
+65 0 0 0 0 0 S
+1 1 2 2 0 9d0+0 0d0+0
+2 0 0
+0 0 0
+0 0 0
+#9407
+Roach~
+A roach~
+A roach crawls along the ground.
+~
+~
+65 0 0 0 0 0 S
+2 1 4 4 0 15d0+0 0d0+0
+4 0 0
+0 0 0
+0 0 0
+#9408
+Spider~
+A spider~
+A spider climbs the wall.
+~
+~
+65 0 0 0 0 0 S
+2 1 4 4 0 21d0+0 0d0+0
+4 0 0
+0 0 0
+0 0 0
+#9409
+Gnat~
+A gnat~
+A gnat pricks you on the arm.
+~
+~
+65 0 0 0 0 0 S
+1 1 2 2 0 10d0+0 0d0+0
+2 0 0
+0 0 0
+0 0 0
+#9410
+Worker Bee~
+A worker bee~
+A worker bee buzzes by your head.
+~
+~
+65 0 0 0 0 0 S
+5 1 10 10 0 44d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#9411
+Moth~
+A moth~
+A moth flies around the tunnels.
+~
+~
+65 0 0 0 0 0 S
+7 1 14 14 0 55d0+0 0d0+0
+14 0 0
+0 0 0
+0 0 0
+#9412
+Queen Bee~
+The Queen Bee~
+The queen bee hovers in the corner.
+~
+~
+67 0 0 0 0 0 S
+10 1 20 20 0 99d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#9413
+Queen Ant~
+The Queen Ant~
+The queen ant is heading for a hole in the wall.
+~
+~
+67 0 0 0 0 0 S
+3 1 6 6 0 120d0+0 0d0+0
+6 0 0
+0 0 0
+0 0 0
+#9414
+Fly~
+A fly~
+A fly zips through the tunnels.
+~
+~
+65 0 0 0 0 0 S
+8 1 -6 -6 0 66d0+0 0d0+0
+16 0 0
+0 0 0
+0 0 0
+#9415
+Centipede~
+A centipede~
+A centipede crawls in the dirt.
+~
+~
+65 0 0 0 0 0 S
+9 1 18 18 0 70d0+0 0d0+0
+18 0 0
+0 0 0
+0 0 0
+#9416
+Fairy~
+a Fairy~
+A fairy tries to hide in one of the wall's holes.
+~
+~
+75 134234112 16 0 6 1000 S
+300 1 600 600 0 55000d0+0 0d0+0
+3000 0 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+smile $n
+say Welcome $n, please be at rest, and feel safe here.
+say Simply type the word Heal; to know what I may do to aid you.
+~
+|
+#9417
+Traxxas~
+Traxxas~
+You almost don't notice Traxxas standing there as he almost blends into the surroundings.
+~
+~
+262211 134234112 71335952 8192 67 0 S
+108 1 4000 4000 0 100001d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+smile $n
+say Why hello there, $n! I'm here to help you on your way!
+say $n, To learn more about REMORTing and MULTICLASSING type help remort and help multiclassing.
+~
+|
+#9418
+Large Tree~
+A Rather Large Tree~
+A large tree is in the center of the room almost looking alive!
+~
+This tree's one job is to protect the students of the LaN Temple.
+~
+524355 0 71303184 540672 64 0 S
+108 1 216 216 0 1000001d0+0 0d0+0
+1080 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+smile $n
+say I'm happy to see you, be safe.
+if ispc($n) == 1
+mpoload 9422
+close north
+lock north
+mpjunk key
+endif
+say To the West, you can Train your stats with Helmat.
+say To the East, you can Practice your skills/spells with Lily.
+say Going Up, you can Learn more with Traxxas about Remorting/Multiclassing.
+say Going Down, you can Learn different Languages with Dok.
+say To Aquire more Learns you must Quest for them.
+~
+|
+#9419
+Chantraine Druidess~
+Chantraine~
+Chantraine is here welcoming you back.
+~
+~
+75 134242924 71565332 134766594 43559 0 S
+350 1 700 700 0 1000101d0+0 0d0+0
+3500 0 0
+0 0 0
+100591 0 0
+>all_greet_prog 100~
+if isimmort($n) == 1
+if sex($n) == 1
+say Greetings Lord $n
+bow $n
+break
+else
+if sex($n) == 2
+say Greetings Lady $n
+curtsey $n
+break
+endif
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+smile $n
+say Welcome back $n, Hope your stay is comfortable.
+break
+else
+glare $n
+say May you become food for our forest $n.
+break
+endif
+endif
+~
+|
+#9420
+Huge Wasp~
+A Huge Wasp~
+&zA &YHuge &zWasp &P is here watching.
+~
+~
+75 285220864 88145972 0 4 0 S
+300 1 600 600 0 10000010d0+0 0d0+0
+3000 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+smile $n
+say Welcome $n, please be at rest, and feel safe here.
+say Simply type the word Heal, to know what I may do to aid you.
+~
+>speech_prog heal hurt dying pain bleeding~
+if level($n) < 5
+  t $n Oh My, I will help you.
+  sa $n, Please be careful, and remember to type CON <MOB>.
+c 'healing hands' $n
+endif
+~
+|
+#9421
+tick~
+A Tick~
+A Tick hunts in search of new blood.
+~
+~
+1 0 0 0 0 -1000 S
+5 1 2 2 0 10d0+0 0d0+0
+50 0 0
+0 0 0
+0 0 0
+#9422
+worm~
+A Worm~
+A Worm digs a hole ever so slowly.
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 0 9d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+#9423
+salamander~
+A Salamander~
+A Salamander scurrys about looking for insects to eat.
+~
+~
+33 0 0 0 0 -1000 S
+6 1 12 4 0 50d0+0 0d0+0
+60 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say It's nothing Personal.
+muhaha
+mpecho You hear the belly of the Salamander grumble.
+cast 'cause light' $n
+~
+>fight_prog 10~
+muhaha
+say feel my bite
+emote bites you hard.
+~
+>fight_prog 50~
+say I'm so Hungry
+cast 'cause light'
+~
+|
+#9450
+DELETEME~
+DELETEME~
+DELETEME
+~
+~
+67 0 0 0 0 0 S
+110 1 220 220 0 5d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#9400
+Torch~
+a torch~
+A torch has been left behind.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ 5~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9401
+Waterskin~
+waterskin~
+A leather waterskin has been dropped on the ground.~
+~
+17 0 0 0 0 1 1
+100 100
+5~ 5~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9402
+Backpack~
+a backpack~
+A small backpack has been left behind.~
+~
+15 0 0 0 0 1 1
+100 100
+20~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9403
+Scroll Recall~
+scroll of Recall~
+An aged scroll flaps in the breeze.~
+~
+2 0 0 0 0 1 1
+100 100
+100~ word of recall~ reserved~ reserved~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9404
+Blueberry Pie~
+a blueberry pie~
+A fresh baked blueberry pie lets off a nice aroma.~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9405
+Loaf Fresh Bread~
+a loaf of fresh bread~
+A loaf of fresh bread has been left behind.~
+~
+19 0 0 0 0 1 1
+100 100
+12~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9406
+Donation Box~
+donation box~
+A donation box sits against the wall.~
+~
+15 0 0 0 0 0 1
+100 100
+500~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9407
+Firefly~
+a Firefly~
+A firefly lights up the room.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ -1~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9408
+Bee Stinger~
+a Bee's Stinger~
+A bee has lost its stinger.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 0~ 0~ 11~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 2
+#9409
+Green Ring~
+a Green Ring~
+A green ring has been left behind.~
+~
+9 0 0 0 0 3 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9410
+green Sleeves~
+green Sleeves~
+A pair of green sleeves has been left behind.~
+~
+9 0 0 0 0 257 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9411
+Green Bracer~
+a Green Bracer~
+A green bracer has been left behind.~
+~
+9 0 0 0 0 4097 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9412
+green Boots~
+green Boots~
+A pair of green boots has been left behind.~
+~
+9 0 0 0 0 65 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 2
+#9413
+Bark Breastplate~
+a Bark Breastplate~
+A bark breastplate has been left behind.~
+~
+9 0 0 0 0 9 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9414
+Green Necklace~
+a Green Necklace~
+A green necklace has been left behind.~
+~
+9 0 0 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9415
+Green Leaf~
+a Green Leaf~
+A green leaf has fallen to the ground.~
+~
+9 0 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+#9416
+Green Shield~
+a Green Shield~
+A green shield has been left behind.~
+~
+9 0 0 0 0 513 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9417
+green Leggings~
+green Leggings~
+A pair of green leggings have been left behind.~
+~
+9 0 0 0 0 33 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 1
+#9418
+Green Helmet~
+a Green Helmet~
+A green helmet has been left behind.~
+~
+9 0 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9419
+Green Cape~
+a Green Cape~
+A green cape has been left behind.~
+~
+9 0 0 0 0 1025 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 1
+#9420
+Wood Club~
+a Wood Club~
+A wood club has been left behind.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 0~ 0~ 7~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9421
+Spring~
+a spring~
+A spring has broken through the soil.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9422
+Green Key~
+a Green Key~
+A green key has been left here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9423
+sign~
+sign~
+A Sign hangs from above.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+description~
+Welcome to the Temple of Life and Nature.  This sign is the first of many
+you will encounter during your journeys here in The Adventures in Stormgate.
+Please be sure to LOOK SIGN or READ SIGN when ever you may see one.  Most of
+the SIGN's will be useful to you in your journeys.  Have Patientence, be
+strong and thou shall be rewarded.  
+~
+E
+description~
+~
+E
+sign~
+~
+E
+sign~
+Welcome to the Temple of Life and Nature.  This is the begining of many
+adverntures here in Stormgate.  This SIGN is one of many signs here in the
+Realm.  Please be sure to LOOK SIGN when ever you come across one.  Each
+sign here has a purpose, some may just tell you about a mob or an AREA,
+others will give you clues and hints as to what to look for or what to stay
+away from.  Regardless of how you p Welcome to the Temple of Life and
+Nature.  This is the begining of many adverntures here in Stormgate.  This
+SIGN is one of many signs here in the Realm.  Please be sure to LOOK SIGN
+when ever you come across one.  Each sign here has a purpose, some may just
+tell you about a mob or an AREA, others will give you clues and hints as to
+what to look for or what to stay away from.  Regardless of how you play,
+your journeys here shall reward you.  
+~
+E
+sign~
+Welcome to the Temple of Life and Nature.  This is the begining of many
+adverntures here in Stormgate.  This SIGN is one of many signs here in the
+Realm.  Please be sure to LOOK SIGN when ever you come across one.  Each
+sign here has a purpose, some may just tell you about a mob or an AREA,
+others will give you clues and hints as to what to look for or what to stay
+away from.  Regardless of how you play, your journeys here shall reward you.
+~
+>look_prog sign~
+0
+The Temple of LaN welcomes you.  This is one of many signs you will
+encounter here throught the realm.  It is good practice to try and LOOK SIGN
+if and when you do come across them.  They may or may not be of much help
+but might steer you from harms way or point you in general direction.  Good
+luck, and venture strongly as you will be rewarded.  
+~
+|
+#0
+
+
+
+#ROOMDATA
+#9400
+Before the Tree of Life~
+~
+~
+The Tree of Life towers high into the sky.  The branches stretch far out
+over the rest of the forest.  The canopy lets in enough sunlight so that the
+plants on the forest floor can survive but provides a comforting shade for
+any creature within the forest.  In the side of the tree, there is a massive
+opening.  The opening is large enough for even the largest creatures to move
+through.  A young elvish looking woman rests upon a tiny bench near the gap
+in the tree.  
+~
+0 2491392 0
+Rd     0
+D1
+~
+~
+0 0 9403
+D5
+~
+~
+0 0 9404
+S
+#9401
+The Forest of Life~
+~
+~
+Tunnels of dirt make up the complex underneath the forest.  Some of the
+tree's roots intertwine to form beams across the ceiling.  The dirt has been
+compacted nicely so not to fall down into the walkways.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9415
+D2
+~
+~
+0 0 9419
+S
+#9402
+The Forest of Life~
+~
+~
+The grass sways gently in the breeze.  One can hear the chirpings of many
+birds in the trees.  The chirpings blend in with the light rustling of the
+branches.  There is a deep sense of serenity within this forest.  
+~
+0 2098180 0
+Rd     0
+S
+#9403
+The Forest of Life~
+~
+~
+The trees of the forest spread out in all directions.  Many varieties of
+small creatures scurry by your feet.  The grass grows at an even pace
+throughout the entire forest.  The wind blows swiftly through the trees.  
+~
+0 2098176 0
+Rd     0
+D3
+~
+~
+0 0 9400
+S
+#9404
+The School of Nature~
+~
+~
+This is the School of Nature.  This is where one learns the way of this
+world.  You can hear the chirping and growling of the animals in the forest
+above.  There seems to be more traffic traveling to the south.  There is a
+small sign hanging on the side of the tree.  Maybe you should READ SIGN.  It
+is highly recommended that you type HELP RULES in order to see what can and
+can't be done.  
+~
+0 2490376 0
+Rd     0
+E
+sign~
+There are a couple of simple commands that could mean the difference
+between life and death.  If you type SCORE, you will see all your stats. 
+You can see your hitpoints, mana, movement, stats, etc.  If you type WORTH,
+you will see your stats, current amount of experience, and the amount of
+experience until your next level.  
+~
+D2
+~
+~
+0 0 9410
+D4
+~
+~
+0 0 9400
+S
+#9405
+Room of Growth~
+~
+~
+This is the training room of the mud school.  It is here that you can
+raise your stats, hps, mana, movement, or blood points.  Blood points are
+like mana but for Anti-Paladins and Vampires.  Type TRAIN to see what stats
+you have left to train.  Your natural maximum stat is 35 +/- racial bonus. 
+Also, you are able to train your class' primary stat another five.  
+~
+0 2491400 0
+Rd     0
+D1
+~
+~
+0 0 9406
+S
+#9406
+Underneath the Forest~
+~
+~
+As you continue along this path, you hear different noises in the air. 
+To the west, you can train your main statistics.  At level three, you can go
+to the practice room in the eastern room.  Another command that can help
+make the mud more personal is CONFIG.  Type CONFIG to see different aspects
+that can be set to your liking.  Also, type HELP and you will see many
+different commands.  At any time you can type HELP <command> to see what it
+does.  
+~
+0 2491400 0
+Rd     0
+D0
+~
+~
+119 9422 9410
+D1
+~
+~
+0 0 9407
+D2
+~
+~
+0 0 9408
+D3
+~
+~
+0 0 9405
+D4
+~
+~
+0 0 9461
+D5
+~
+~
+0 0 9413
+S
+#9407
+Become One with Nature~
+~
+~
+This is where you can practice any new skills or spells.  Type SLIST to
+see all your available skills/spells.  To see the slist of any other class,
+type SLIST <3 Letter Abreviation>.  You can find the 3 letter abreviation at
+the bottom of the wholist, type WHO.  Type PRACTICE (or just PRAC) to see
+what spells/skills are available for you to practice.  
+~
+0 2490376 0
+Rd     0
+D3
+~
+~
+0 0 9406
+S
+#9408
+The Forest of Life~
+~
+~
+You have reached the end of the path.  There is another shop to the south
+of the path.  An aroma of freshly baked goods is coming from the shop to the
+south.  To the west is the beginning of the combat part of the mud school. 
+Before you fight a mob, it is wise to consider it first.  Type CON <mob> to
+get a hint on whether the mob is too powerful for you.  
+~
+0 2490380 0
+Rd     0
+D0
+~
+~
+0 0 9406
+D1
+~
+~
+0 0 9409
+D2
+~
+~
+0 0 9414
+S
+#9409
+Underneath the Forest~
+~
+~
+There is a shop to the south of the path.  Inside the shop you will find
+several useful items.  Type EQ to see what equipment you are currently
+wearing.  Type INV to see what you are carrying in your inventory.  Whenever
+you want to wear a new piece of equipment, type WEAR <name>.  
+~
+0 2490376 0
+Rd     0
+D1
+~
+~
+0 0 9411
+D2
+~
+~
+0 0 9412
+D3
+~
+~
+0 0 9408
+S
+#9410
+Underneath the Forest~
+~
+~
+So you have decided to continue with the teachings of Mother Nature. 
+Some of the most important commands to learn are the different channels. 
+Type CHANNELS to see the list of channels available to you.  The main
+channel is CHAT but make sure not to use harsh language or to flame anyone
+on this channel.  The MUTTER channel is the only channel that allows
+profanity so make sure to only use such language on that channel.  You can
+check the help files on any channel to see its function.  To the WEST you
+will find some usefull shops where you can buy food and drink.  
+~
+0 2490380 0
+Rd     0
+D0
+~
+~
+0 0 9404
+D2
+~
+~
+119 9422 9406
+D3
+~
+~
+0 0 9451
+S
+#9411
+Close to Graduation~
+~
+~
+This is the second part of the combat mud school and is for characters
+above level 3.  The mobs in this area vary in strength so make sure you CON
+<MOB NAME> before engaging battle.  
+~
+0 2097164 0
+Rd     0
+D1
+~
+~
+0 0 9423
+D3
+~
+~
+0 0 9409
+S
+#9412
+A Tiny Shop~
+~
+~
+This is a little shop that has a few items.  These items are not powerful
+and are mainly to help you get around.  Type LIST to see what items are for
+sell.  If you see an item that you want, type BUY <item>.  
+~
+0 2491400 0
+Rd     0
+D0
+~
+~
+0 0 9409
+S
+#9413
+Learning Center~
+~
+~
+This is where you can learn the different languages of the mud.  You
+automatically start with the langauge of your race and common.  As a mortal,
+you are unable to speak common.  Only Immortals can speak common so that
+everyone across this great realm can understand them.  Type LEARN to see
+what languages you have yet to learn.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 9406
+S
+#9414
+The Bakerery~
+~
+~
+This is nice little shop that sells a couple food items.  It is important
+to eat and drink because you regenerate hps and mana faster.  Type LIST to
+see what is available in the store.  Type BUY <item> to buy it.  You can buy
+more than one of an item if you type BUY <item> #.  
+~
+0 2491400 0
+Rd     0
+D0
+~
+~
+0 0 9408
+S
+#9415
+Dirt Tunnels~
+~
+~
+The roots cover the entire tunnel complex.  Small stems of grass grow
+inverted down from the ceiling.  Tiny holes have been drilled into the dirt
+walls where insects come and go.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9416
+D3
+~
+~
+0 0 9401
+S
+#9416
+Dirt Tunnels~
+~
+~
+The dirt tunnel continues to the west and east.  The dirt floor shows the
+years of passage.  A light path has been stomped into the ground.  You can
+hear the insects moving around you.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9417
+D3
+~
+~
+0 0 9415
+S
+#9417
+Dirt Tunnels~
+~
+~
+Tiny moths in the corner light the room.  It looks like a different
+species of moth that you have never seen before.  Their thorax emits a white
+glow.  Their flapping wings echo off the tunnel walls.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9422
+D3
+~
+~
+0 0 9416
+S
+#9418
+Dirt Tunnels~
+~
+~
+A web of tunnels can be seen stretching off to the east.  The sounds of
+many insects echo off the dirt walls.  This seems strange as one would think
+the dirt would absorb the noise.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9419
+D2
+~
+~
+0 0 9423
+S
+#9419
+Dirt Tunnels~
+~
+~
+Two of the tunnels built underneath the forest cross paths here.  The
+sound of clicking feet come from the insects crawling along the ground. 
+Tiny blades of grass hide the trail of these insects.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9401
+D1
+~
+~
+0 0 9420
+D2
+~
+~
+0 0 9424
+D3
+~
+~
+0 0 9418
+S
+#9420
+Dirt Tunnels~
+~
+~
+The dirt is packed tight into the walls.  Wood beams help hold up the
+ceiling.  Whenever a large vibration occurs in the tunnels, small pieces of
+dirt fall from the ceiling.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9421
+D3
+~
+~
+0 0 9419
+S
+#9421
+Dirt Tunnels~
+~
+~
+The path before you is clearly marked from the constant trampling.  The
+traffic must be great to keep the ground so packed.  The sound of voices
+comes from somewhere else in the tunnels.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9422
+D3
+~
+~
+0 0 9420
+S
+#9422
+Dirt Tunnels~
+~
+~
+The side wall of the complex is marked with blood and ooze.  Some
+adventurers have marked their initials into the blood and ooze.  Parts of
+the blood markings look to have been dried for years.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9417
+D2
+~
+~
+0 0 9427
+D3
+~
+~
+0 0 9421
+S
+#9423
+Dirt Tunnels~
+~
+~
+A spring has broken through the dirt in the center of this intersection. 
+The water spurts up about a meter off the ground and sprays out a little
+ways.  The water drops down into the moist soil.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9418
+D2
+~
+~
+0 0 9428
+D3
+~
+~
+0 0 9411
+S
+#9424
+Dirt Tunnels~
+~
+~
+A lamp covered with a translucent green shade hangs from the ceiling. 
+The green hue surrounds the walls from the light.  There is a creature
+leaning against the wall.  It is hard to make out what it is.  
+~
+0 2098188 0
+Rd     0
+D0
+~
+~
+0 0 9419
+D1
+~
+~
+0 0 9425
+D2
+~
+~
+0 0 9429
+D4
+~
+~
+0 0 9462
+S
+#9425
+Dirt Tunnels~
+~
+~
+The dirt tunnel continues to the west and east.  There are a few blades
+growing through the compact ground soil.  The grass softens the impact of
+travelling through the tunnels.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9426
+D3
+~
+~
+0 0 9424
+S
+#9426
+Dirt Tunnels~
+~
+~
+The noises of the underdark come from all sides.  You can hear the
+chirping of bugs from within the walls as well as from around the corner. 
+There are tiny holes in the dirt walls.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9427
+D3
+~
+~
+0 0 9425
+S
+#9427
+Dirt Tunnels~
+~
+~
+A painting has been put on the eastern wall.  It is a simple design of a
+large tree extending out of the middle of a forest.  The design is painted
+right on the dirt using only a few colors.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9422
+D2
+~
+~
+0 0 9432
+D3
+~
+~
+0 0 9426
+S
+#9428
+Dirt Tunnels~
+~
+~
+Bones are piled in the corner of the tunnel.  The bones have been picked
+completely clean.  This was probably done by the hundreds of insects
+crawling on the pile.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9423
+D1
+~
+~
+0 0 9429
+S
+#9429
+Dirt Tunnels~
+~
+~
+The wood beams keeping the ceiling up shake with every vibration. 
+Chirping and cracking echo off the tunnel walls.  It is hard to pinpoint the
+origin from this position.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9424
+D1
+~
+~
+0 0 9430
+D2
+~
+~
+0 0 9433
+D3
+~
+~
+0 0 9428
+S
+#9430
+Dirt Tunnels~
+~
+~
+Ants and roaches crawl out of holes in the ceiling and walls.  Their
+intertwining paths create a maze of lines across the dirt.  They scurry
+along their business oblivious to your presence.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9431
+D3
+~
+~
+0 0 9429
+S
+#9431
+Dirt Tunnels~
+~
+~
+The path has been trampled into a solid and hard trail.  Only the fringes
+of the path still show the signs of actual footprints.  One can notice the
+prints of several different species.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9432
+D3
+~
+~
+0 0 9430
+S
+#9432
+Dirt Tunnels~
+~
+~
+The wall has been cut apart with swords and other weaponary.  Clumps of
+dirt lie in piles at the base of the wall.  Several flies come flying out of
+one of the holes.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9427
+D2
+~
+~
+0 0 9436
+D3
+~
+~
+0 0 9431
+S
+#9433
+Dirt Tunnels~
+~
+~
+Tiny parts of insects lie scattered on the ground.  Wings and antannae
+are everywhere.  The ground crunches as you pass along the ground.  You can
+hear the buzzing of other insects as well.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9429
+D1
+~
+~
+0 0 9434
+S
+#9434
+Dirt Tunnels~
+~
+~
+The buzzing of insects fly by your head and feet.  You can sense them
+everywhere but can't actually see them.  The prick of a passing gnat is all
+that is left of their passing.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9435
+D3
+~
+~
+0 0 9433
+S
+#9435
+Dirt Tunnels~
+~
+~
+The ground thuds with each step taken.  The ground is so worn that your
+feet do not leave a mark.  They only scuffle the dirt around a little.  The
+ground is too packed for anymore marks to be made.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9436
+D3
+~
+~
+0 0 9434
+S
+#9436
+Dirt Tunnels~
+~
+~
+The air smells of moist soil.  The sound of a distance spring can be
+heard off in the distance.  The water seeps into the soil and helps water
+the forest above.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9432
+D3
+~
+~
+0 0 9435
+S
+#9437
+The School of Life and Nature~
+~
+~
+Walls of dirt make up the tunnels beneath the forest.  Some of the tree's
+roots intertwine to form the ceiling.  The dirt has been packed nicely so
+not to fall down into the walkway.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9438
+D2
+~
+~
+0 0 9442
+S
+#9438
+The School of Life and Nature~
+~
+~
+The roots cover the entire tunnel complex.  Small stems of grass grow
+inverted down from the ceiling.  Tiny holes have been drilled into the dirt
+walls where insects come and go.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9439
+D3
+~
+~
+0 0 9437
+S
+#9439
+The School of Life and Nature~
+~
+~
+The dirt tunnel continues on to the east and west.  The dirt floor shows
+years of passage.  A light path has been stomped into the ground.  You can
+hear the insects moving around you.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9440
+D3
+~
+~
+0 0 9438
+S
+#9440
+The School of Life and Nature~
+~
+~
+Tiny moths in the corner light the room.  They look like a different
+species of moth that you have never seen before.  Their thorax emits a white
+glow.  Their flapping wings echo off the tunnels walls.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9445
+D3
+~
+~
+0 0 9439
+S
+#9441
+The School of Life and Nature~
+~
+~
+The side wall of the complex is marked with blood and ooze.  Some
+adventurers have marked their initials into the blood and ooze.  Parts of
+the blood markings look to have been dry for years.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9447
+S
+#9442
+The School of Life and Nature~
+~
+~
+The tunnels build underneath the forest across the paths here.  The sound
+of clicking feet come from the insects crawling along the ground.  Tiny
+blades of grass hide of the trails of insects.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9437
+D1
+~
+~
+0 0 9443
+D2
+~
+~
+0 0 9448
+S
+#9443
+The School of Life and Nature~
+~
+~
+The dirt is packed tight into the walls.  Wood beams help hold up the
+ceiling.  Whenever a large vibration goes through the tunnels, small pieces
+of dirt fall from the ceiling.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9444
+D3
+~
+~
+0 0 9442
+S
+#9444
+The School of Life and Nature~
+~
+~
+The path before you is clearly marked from the constant trampling.  The
+traffic must be great to keep the ground so packed.  The sound of voices
+comes from somewhere else in the tunnels.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9445
+D3
+~
+~
+0 0 9443
+S
+#9445
+The School of Life and Nature~
+~
+~
+A web of tunnels can be seen stretching off to the west.  The sounds of
+many insects echo off the dirt walls.  This seems strange as one would think
+the dirt would absorb the noise.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9440
+D2
+~
+~
+0 0 9451
+D3
+~
+~
+0 0 9444
+S
+#9446
+The School of Life and Nature~
+~
+~
+A painting has been put on the western wall.  It is a simple design of a
+large tree extending out of the middle of a forest.  The design is painted
+right on the dirt using only a few colors.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9447
+S
+#9447
+The School of Life and Nature~
+~
+~
+A spring has broken through the dirt in the center of this intersection. 
+The water spurts up about a meter off the ground and sprays out a little. 
+The water drops down into the moist soil.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9441
+D1
+~
+~
+0 0 9448
+D2
+~
+~
+0 0 9452
+D3
+~
+~
+0 0 9446
+S
+#9448
+The School of Life and Nature~
+~
+~
+This room is by far the largest you have seen.  You scan around and gasp
+at the enormous size of everything around you.  There is a pile of insect
+parts in the middle of the room.  You take a double look and shiver as you
+don't quite believe what you are seeing.  
+~
+0 394252 0
+Rd     0
+D0
+~
+~
+0 0 9442
+D1
+~
+~
+0 0 9449
+D2
+~
+~
+0 0 9453
+D3
+~
+~
+0 0 9447
+S
+#9449
+The School of Life and Nature~
+~
+~
+The dirt tunnel continues to the west and east.  There are a few blades
+growing through the compact ground soil.  The grass softens the impact of
+travelling through the tunnels.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9450
+D3
+~
+~
+0 0 9448
+S
+#9450
+The School of Life and Nature~
+~
+~
+The noises of the underdark come from the sides.  You can hear the
+chirping of bugs from within the walls as well as from around the corner. 
+There are tiny holes in the dirt walls.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9451
+D3
+~
+~
+0 0 9449
+S
+#9451
+The School of Life and Nature~
+~
+~
+This is the entrance to the Mud School.  These mobs will try to test your
+might.  Be ready, be strong.  In nature, Only the Strong Survive.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9445
+D1
+~
+~
+0 0 9410
+D2
+~
+~
+0 0 9456
+D3
+~
+~
+0 0 9450
+S
+#9452
+The School of Life and Nature~
+~
+~
+Bones are piled in the corner of the tunnel.  The bones have been picked
+completely clean.  This was probably done by the hundreds of insects
+crawling on the pile.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9447
+S
+#9453
+The School of Life and Nature~
+~
+~
+The wood beams keeping the ceiling the up shake with every vibration. 
+Chirping and cracking echo off the tunnel walls.  It is hard to pinpoint the
+origin from this position.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9448
+D1
+~
+~
+0 0 9454
+D2
+~
+~
+0 0 9457
+S
+#9454
+The School of Life and Nature~
+~
+~
+Ants and roaches crawl out of holes in the ceiling and walls.  Their
+intertwining paths create a maze of lines across the dirt.  They scurry
+along their business oblivious to your presence.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9455
+D3
+~
+~
+0 0 9453
+S
+#9455
+The School of Life and Nature~
+~
+~
+The path has been trampled into a solid and hard trail.  Only the fringes
+of the path still show the signs of actual footprints.  One can notice the
+prints of several different species.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9456
+D3
+~
+~
+0 0 9454
+S
+#9456
+The School of Life and Nature~
+~
+~
+The wall has been out apart with swords and other weaponary.  Clumps of
+dirt lie in piles at the base of the wall.  Several flies come from out of
+one of the holes.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9451
+D2
+~
+~
+0 0 9460
+D3
+~
+~
+0 0 9455
+S
+#9457
+The School of Life and Nature~
+~
+~
+Tiny parts of insects lie scattered on the ground.  Wings and antannae
+are everywhere.  The ground crunches as you pass along the ground.  You can
+hear the buzzing of other insects.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9453
+D1
+~
+~
+0 0 9458
+S
+#9458
+The School of Life and Nature~
+~
+~
+The buzzing of insects fly by your head and feet.  You can sense them
+everywhere but can't actually see them.  The prick of a passing gnat is all
+that is left of their passing.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9459
+D3
+~
+~
+0 0 9457
+S
+#9459
+The School of Life and Nature~
+~
+~
+The ground thuds with each step taken.  The ground is so worn taht your
+feet do not leave a mark.  They only scuffle the dirt around a little.  The
+ground is too packed for anymore marks to be made.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9460
+D3
+~
+~
+0 0 9458
+S
+#9460
+The School of Life and Nature~
+~
+~
+The air smells of moist soil.  The sound of a distant spring can be heard
+in the distance.  The water seeps into the soil and helps the forest above. 
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9456
+D3
+~
+~
+0 0 9459
+S
+#9461
+The office of Traxxas, LaN's Remort Master.~
+~
+~
+You have entered the room of the Class Master Traxxas.  This room is
+filled with little statues of what appear to be warriors dressed in silver
+with odd looking helmets.  Traxxas glances over you and smiles, as you start
+to have a warm feeling inside.  An odd glow comes from a plant in the
+corner, you want to ask what is that but you don't want to disrespect the
+quietness of this room.  
+~
+0 136709120 0
+Rd     0
+D5
+~
+~
+0 0 9406
+S
+#9462
+Behind the Bush~
+~
+~
+Behind the Bush is a special place where the followers of Life and Nature
+can safely return to from time to time.  There is a set of roots that are
+shaped like steps leading down to where life begins for the followers of
+Life and Nature.  To the north, a path leads to Methidoral.  
+~
+0 136578052 3
+Rd     0
+D0
+~
+~
+0 0 9465
+D5
+~
+~
+0 0 9424
+S
+#9463
+&YA Golden Path~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#9464
+A Path Near An Enormous Oak~
+~
+~
+You are walking down a path near an enormous Oak Tree.  To the west lies
+the city of Methidoral, the capital city of Stormgate.  To the south sits
+the tranquil Temple of Life and Nature.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 9465
+D3
+~
+~
+0 0 25037
+S
+#9465
+Near the Bush~
+~
+~
+You are wandering thru a path of beauty.  There are insects all around
+scurring about doing their daily thing.  The flowers here look untouched and
+the aroma is so pure you can actually smell the air and know what's here.  
+~
+0 1028 0
+Rd     0
+D0
+~
+~
+0 0 9464
+D2
+~
+~
+0 0 9462
+S
+#0
+
+
+
+#SPECIALS
+M 9419 spec_healer
+M 9420 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 9400 1 9400
+O 0 9423 0 9404
+M 0 9403 1 9405
+M 0 9418 1 9406
+M 0 9404 1 9407
+O 0 9406 0 9410
+P 0 9407 0 9406
+P 0 9408 0 9406
+P 0 9420 0 9406
+P 0 9413 0 9406
+M 0 9402 1 9412
+G 0 9400 0
+G 0 9401 0
+G 0 9402 0
+G 0 9403 0
+M 0 9405 1 9413
+M 0 9401 1 9414
+G 0 9404 0
+G 0 9405 0
+M 0 9414 4 9420
+G 0 9418 0
+M 0 9423 2 9421
+M 0 9415 4 9422
+E 0 9417 0 11
+M 0 9410 4 9423
+E 0 9416 0 15
+O 0 9421 0 9423
+M 0 9416 1 9424
+M 0 9411 4 9430
+E 0 9419 0 16
+M 0 9412 1 9436
+M 0 9408 2 9437
+G 0 9414 0
+M 0 9422 5 9439
+M 0 9409 2 9440
+M 0 9406 1 9443
+M 0 9406 1 9445
+G 0 9409 0
+M 0 9413 1 9446
+G 0 9422 0
+G 0 9415 0
+O 0 9421 0 9447
+M 0 9420 1 9448
+M 0 9407 2 9451
+M 0 9409 5 9454
+G 0 9411 0
+M 0 9409 1 9456
+E 0 9410 0 14
+M 0 9407 2 9457
+E 0 9412 0 12
+M 0 9421 5 9458
+M 0 9417 1 9461
+M 0 9419 1 9462
+S
+
+
+
+#SHOPS
+9401 19 26 17 0 0 100 85 0 23
+9402 1 15 2 17 0 100 85 0 23
+0
+
+
+
+#$

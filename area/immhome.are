@@ -1,0 +1,3362 @@
+#AREADATA
+Name        { IMM  } Immortal Homes~
+Builders    None~
+VNUMs       12001 12500
+Security    1
+Recall      1
+Flags       256
+Version     107
+Creator     All~
+Llevel      0
+Ulevel      0
+Sounds      &WYou hear some voices chanting in the background.~
+SoundsA     chant3.wav V=100 L=1 P=50 T=Background~
+Music       u6_stone.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#12062
+punished~
+The Punished~
+A man lies here in serious pain
+~
+~
+3 0 0 0 0 0 S
+2 1 4 4 0 20d0+0 0d0+0
+20 0 0
+0 0 1
+0 0 0
+>all_greet_prog ~
+~
+>all_greet_prog 100~
+groan
+say Please, put me out of my misery.  Deconce has been torturing me for years, I
+say don't think I can last much longer, maybe if you ask his healer about me he'll
+say free me, he might have forgotten about me after all, he can be forgetful.
+say Just please help me.
+~
+>death_prog 100~
+mpoload 12068
+~
+|
+#12064
+Demon~
+A demon~
+A demon floats around the room
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 0 20d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote blows smoke in your face.
+~
+|
+#12066
+worshiper~
+Deconce's worshiper~
+A man wonders around worshiping all that is Deconce
+~
+~
+1 0 0 0 0 0 S
+2 1 4 4 0 20d0+0 0d0+0
+20 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+say Deconce is the man!
+~
+>rand_prog 10~
+say Have you seen Deconce lately?  He sure is looking good.
+~
+|
+#12067
+dog gina~
+Princess Gina~
+A dog sits on the ground chewing on a bone
+~
+~
+3 0 0 0 0 0 S
+2 1 4 4 0 0d0+0 0d0+0
+20 0 0
+0 0 2
+0 0 0
+>rand_prog 10~
+emote lifts her head and barks at you.
+~
+>all_greet_prog 100~
+growl $n
+~
+|
+#12069
+Jim~
+Jim~
+Deconce's personal Healer stands before you
+~
+~
+11 33554560 32784 0 0 1000 S
+106 1 1000 1000 0 40000d0+0 0d0+0
+0 0 0
+0 0 1
+41007 0 0
+>all_greet_prog 100~
+say Welcome, and be at rest here in this sanctuary.
+say My master Deconce also welcomes you to his home, all he asks is to
+say not hurt his poor dog, she slips off her collar sometimes, so if you
+say ever find it, please return it to me.  I will see that Deconce will
+say recieve it eventually.
+~
+>give_prog dog collar gina~
+say Thank you VERY much $n, for helping my master out like this I will
+say give you a token of thanks, be well.
+mpoload 12061
+give hat $n
+~
+>speech_prog punished~
+say That bastard is still alive?  Deconce must have forgotten about him.
+say Do Deconce a favour and rid us of him, bring back his soul to me to prove
+say that you have done what was requested.
+~
+>give_prog soul~
+say Thank you for doing me this favour, since you completed this task I will
+say do this favour for you.
+c 'dark bless' $n
+~
+|
+#12070
+councilor bob~
+Councilor Bob~
+A plump gentleman is leaning on the wall.
+~
+~
+3 0 16 0 0 0 S
+2 1 4 4 0 20d0+0 0d0+0
+20 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+tap
+say I wish Deconce would hurry up and stop being AFK.
+say I'm not sure why but I think I'll stop helping Deconce and maybe try my hand
+say at helping out Tyrion, at least he's not AFK all the time.
+~
+|
+#12071
+Fish Goldfish ~
+A Goldfish~
+A goldfish swims here in the pond
+~
+~
+524363 16777216 32784 0 1 0 S
+106 1 212 212 0 10000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#12072
+Merrik cook~
+Merrik, the cook~
+Merrik, the cook, stands here making a meal
+~
+~
+3 33570816 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>greet_prog 30~
+nod $n
+'Sorry $n, the kitchen is closed.
+~
+|
+#12075
+null~
+null~
+Null
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#12091
+bill~
+Bill~
+Bill the nurse sits here cross-legged on a mat.
+~
+~
+11 134217856 0 0 0 0 S
+100 1 200 200 0 0d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#12092
+cave dwarf guard~
+A cave guard~
+A cave dwarf struts along guarding the cave.
+~
+~
+1 0 0 0 0 0 S
+5 1 1 2 0 50d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#12093
+raven~
+Raven~
+The Raven perches on a throne arm.
+~
+~
+3 0 0 0 0 0 S
+15 1 25 20 0 300d0+0 0d0+0
+150 20 0
+0 0 0
+0 0 0
+>give_prog saltine cracker~
+say Thanks!!  I really needed that.  I don't know how much longer I could have survived without food.
+eat cracker
+say Here, take this as a souvenir!
+mpoload 12097
+give dropping $n
+~
+>greet_prog 100~
+say Thank goodness someone found me!
+say I'm so hungry, can you give me some food please?
+~
+|
+#12095
+poe edgar allen~
+Edgar Allen Poe~
+Edgar Allen Poe sits on a couch here watching tv.
+~
+~
+3 0 0 0 0 0 S
+10 1 10 10 0 101d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+sigh
+say That darn bird.  I can never find him.
+say Mishval took him off somewhere and now I don't know where he is.
+say Do you think you could find him for me?
+~
+>give_prog dropping raven~
+say You found him???  Where was the little bastard!?  Throne room huh?
+say Should've known.  Well thanks!!  I owe you one.
+say Well.. what is this in my pocket.
+emote digs a small object from his coat pocket.
+say I don't have any use for this.  Here you go.
+mpoload 12095
+give key $n
+mpjunk dropping
+~
+|
+#12096
+cook chef~
+Mishval's cook~
+Mishval's personal chef is cooking up a storm here.
+~
+~
+3 0 0 0 0 0 S
+7 1 10 7 0 100d0+0 0d0+0
+70 20 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote slices and dices his current project.
+~
+|
+#12097
+assistant chef~
+A chef's assistant~
+A chef's assistant seems to be frantically running about here.
+~
+~
+1 0 0 0 0 0 S
+7 1 10 7 0 70d0+0 0d0+0
+70 20 0
+0 0 0
+0 0 0
+>speech_prog hi~
+say Sorry $n, I'm busy.
+say If I don't find those ingredients, the chef will have my head.
+~
+>speech_prog ingredients ingredient~
+say Yes ingredients.  I don't have time to go into it now.
+~
+>rand_prog 2~
+emote looks frantically about for something.
+~
+|
+#12102
+cockatrice~
+A small cockatrice~
+A cockatrice runs past you through the trees!
+~
+~
+3 128 0 0 0 0 S
+19 1 38 38 0 1500d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#12104
+displacer beast~
+A displacer beast~
+A displacer beasts shimmers as it stalks its prey...
+~
+~
+3 128 524288 0 0 0 S
+20 1 40 40 0 1700d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#12105
+bee flying buzz~
+A buzzing bee~
+A bee buzzes as it flies past you...
+~
+~
+3 524288 0 0 0 0 S
+15 1 30 30 0 1000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#12125
+astrath~
+Astrath~
+A man sits on one of the benches, strumming a lute.
+~
+A young man dressed in the garb of a travelling minstrel, he idly plucks
+on a fine wooden lute.
+~
+3 0 0 0 1 0 S
+109 1 218 218 0 0d0+0 0d0+0
+0 1 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if name($n)==zhyril
+say Ah, Lord Zhyril!  I've come to seek audience with you.
+say No need to speak with you now.
+say I hope, however, later you'll grant me audience.
+break
+endif
+say Ah, another petitioner come to see Zhyril, eh?
+~
+>speech_prog yes yeah yep petitioner~
+say I'm here to see him myself.
+say Though it's such a pleasant place I haven't actually
+say gotten around to talking with him.
+say I've spent all my time here composing songs.
+say This place is quite conducive to creative pursuits.
+~
+>speech_prog song songs play~
+say Well, it's not finished, but I'll play you what I've
+say already come up with.
+emote plays a lively tune on his lute.
+mpecho The notes rise and fall in the air, and your feet almost tap involuntarily
+mpecho as the sounds echo through the chamber.
+emote finishes.
+say Need to polish it up a little, but so far so good.
+~
+>act_prog p round of applause.~
+say Why, thank you!
+say It's always nice to have an audience that appreciates
+say good music...
+wink
+~
+|
+#12126
+bird paradise~
+a bird of paradise~
+A brilliantly colored bird of paradise is perched on a branch here.
+~
+This large bird is almost lovely beyond belief; it's vivid plumage
+presents a sharp contrast to the verdant green of the leaves of the tree
+it's perched in.  
+~
+3 8 16 0 3 0 S
+109 1 218 218 0 100d0+0 0d0+0
+0 19 0
+0 0 0
+0 0 0
+>give_prog starfruit~
+emote eagerly takes the fruit, and hops to another branch to eat it.
+mpecho As the bird ascends into the canopy, it jostles a branch.
+mpecho A white blossom floats gently down and lies at your feet.
+mpoload 12130
+drop blossom
+mppurge self
+~
+|
+#12129
+tree frog~
+a bright green tree-frog~
+A bright green tree frog stares at you from a large tree.
+~
+This bright green little frog is staring at you curiously, its little
+webbed feet anchored easily on a tree branch.  
+~
+3 0 0 0 1 0 S
+109 1 218 218 0 100d0+0 0d0+0
+0 19 0
+0 0 0
+0 0 0
+#12130
+chriathne~
+chriathne~
+A beautiful elven woman strolls by.
+~
+A beautiful elven woman dressed in the garb of a ranger.  She strolls by,
+lost in thought.  
+~
+1 0 0 0 1 800 S
+109 1 218 218 0 2000d0+0 0d0+0
+0 3 0
+0 0 2
+0 0 0
+>act_prog hi hello hey greetings~
+smile $n
+say Greetings.
+if name($n)==zhyril
+say It is good to see you, Lord Zhyril.
+curtsy zhyril
+smile zhyril
+blush
+endif
+~
+>speech_prog zhyril zhy arboretum~
+say I've come here seeking an extremely rare herb.
+say Zhyril has planted many exotic plants here, so
+say I'm hoping I can find it here.
+say Perhaps you've seen it?  It's a small white
+say flower with a gold center.  It's called
+say Evengold, or Therasnae in the Elven tongue.
+~
+>rand_prog 20~
+emote sits down by the side of the path, and takes a sip from her canteen.
+mpecho She leans back, and closes her eyes, breathing in the fresh fragrance of the
+mpecho trees.
+~
+>act_prog p flirting with you.~
+blush
+smile $n
+~
+>give_prog evengold~
+gasp
+say You've found it!
+smile $n
+say Thank you, $n, I am in your debt.
+say Here, take this as a token of thanks.
+mpoload 12122
+give ring $n
+smile
+say now to return to my home.
+say Goodbye!
+emote walks swiftly away.
+mppurge self
+~
+|
+#12131
+panther black~
+the black panther~
+&zA large black panther prowls silently.
+~
+Isabo's pet, the black panther wanders the dome silently hiding in the
+shadows.  
+~
+65 33280 0 0 0 0 S
+19 1 10 20 0 2500d0+0 0d0+0
+0 0 0
+0 0 0
+1 0 0
+>fight_prog 5~
+bite
+~
+>greet_prog 100~
+if ispc($n)
+if name($n) == isabo
+pounce $n
+lick $n
+wiggle
+else
+if ispc($n)
+,narrows its eyes.
+,growls low.
+endif
+endif
+~
+|
+#12132
+druid old wise woman~
+the druid~
+A wise, old woman tends to the garden.
+~
+~
+67 0 0 0 0 1000 S
+18 1 15 20 0 2500d0+0 0d0+0
+20 0 0
+0 0 2
+1 0 0
+>greet_prog 50~
+if ispc($n)
+if isgood($n)
+look $n
+smile $n
+say Greetings $n!
+mpecho &W                          'Please rest here.  You will be taken care of.'
+else
+if ispc($n)
+if name($n) == Isabo
+beam $n
+say How are you today, Isabo?
+chuckle
+say The herbs are a bit dry today.
+,waters the herbs.
+else
+if ispc($n)
+nod $n
+endif
+endif
+endif
+~
+>rand_prog 4~
+if rand(30)
+,waters the orchids.
+else
+if rand(30)
+,casts a spell of tranquility over the garden.
+else
+,smiles brightly.
+endif
+endif
+endif
+~
+>fight_prog 15~
+cast 'earthquake
+~
+|
+#12133
+exorcist~
+the exorcist~
+The exorcist is deep in prayer for the souls of the possessed.
+~
+~
+67 0 16 0 0 1000 S
+15 1 15 10 0 1500d0+0 0d0+0
+100 0 0
+0 0 1
+3 0 0
+>fight_prog 5~
+stun
+~
+>greet_prog 100~
+if ispc($n)
+bow $n
+look $n
+say I can see the demons haunting your soul.
+,sighs imperceptibly.
+say I can only save you from some of them.
+tell $n Say curse to remove curse,
+tell $n Say poison to cure poison,
+tell $n and say blindness to cure blindless.
+endif
+~
+>speech_prog p curse~
+if ispc($n)
+if goldamt($n) > 14999
+say I cast you out, unclean spirits and influences!
+cast 'remove curse' $n
+say Now leave for it will become volatile here.
+else
+say I will need more gold..
+endif
+endif
+~
+>speech_prog p poison~
+if ispc($n)
+if goldamt($n) > 19999
+mpforce $n give 20000 coins $i
+say The poisons will plague you no longer.
+cast 'cure poison' $n
+endif
+~
+>speech_prog p blindness~
+if ispc($n)
+if goldamt($n) > 14999
+,claps once.
+say Open your eyes!
+cast 'cure blindness' $n
+endif
+~
+>death_prog 25~
+mpoload 12133
+~
+>rand_prog 5~
+say Unless you are here for an exorcism...
+,makes the sign of the cross.
+say I advise you to make a hasty retreat to a safer place.
+~
+|
+#12139
+Crowley mage~
+Crowley~
+A very wise mage resides here.
+~
+Crowley is a wise old mage with a sinister glint in his eye.  He used to
+be a servant of the dark side but now he serves Isabo in his old age.  His
+face is lined with wrinkles of a century and his long white hair is braided
+and runs down his back.  He wears a simple white robe with a blue stripe
+running down the middle.  
+~
+67 16777344 16 0 0 500 S
+120 1 20 20 0 60000d0+0 0d0+0
+200 0 0
+0 0 1
+3 0 0
+>speech_prog p mana~
+if ispc($n)
+if goldamt($n) > 9999
+mpforce $n give 10000 coins $i
+cast 'mana' $n 
+endif
+~
+>greet_prog 50~
+if ispc($n)
+,raises his head.
+say Welcome $n.
+endif
+~
+|
+#12144
+marius sage~
+Marius~
+A robed man relaxes here, reading a book.
+~
+A middle-aged man with a friendly face and intelligent eyes, he relaxes
+on a stone bench, reading from a large book.  
+~
+3 0 0 0 1 700 S
+109 1 218 218 0 0d0+0 0d0+0
+0 1 0
+0 0 0
+0 0 0
+>greet_prog 100~
+emote smiles wordlessly in greeting.
+if name($n)==zhyril
+say Greetings, Lord Zhyril.
+bow $n
+endif
+~
+>speech_prog hi hello greetings hail~
+say Greetings, friend.
+say Have you come to seek an audience with Lord Zhyril?
+~
+>speech_prog yes yep yeah~
+say I'm not sure if he's here right now, though he checks in often.
+say If you can't find him, feel free to wait here, or elsewhere in the garden.
+smile
+say It's very relaxing.
+~
+>speech_prog zhyril zhy~
+say Lord Zhyril has graciously allowed me to remain here as a guest.
+say I find the tranquility of this place helps me greatly in my studies.
+~
+>speech_prog place arboretum garden platform~
+say He constructed this tower for his own purposes, but he welcomes guests.
+say Many come here to seek enlightenment.
+say Some find meditating in this sacred place brings one closer to truth.
+say Others come seeking the wisdom of Zhyril.  He is one of the oldest of the
+say immortals, and knows many ancient secrets.
+~
+>speech_prog no nope nah~
+smile
+say then just to enjoy his home.  I, too, come here to relax and study.
+say This place is perfect for such ma pursuits.
+~
+>speech_prog book~
+say Ah, I'm reading Archimedes' History of Methidoral.  A most
+say educational book.  If you would like to read something,
+say there is a small library in the Arboretum's entry room.
+say That's the room you entered at the top of the tower stairs.
+~
+|
+#12148
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#12149
+silver-haired woman~
+a silver-haired woman~
+A silver-haired woman relaxes at the end of the pool, sipping sake.
+~
+Her eyes are closed, and her complexion is red, probably a result of the
+sake she's drinking.  She relaxes in the warm waters, paying no attention to
+you.  
+~
+3 0 0 0 0 200 S
+110 1 220 220 0 10000d0+0 0d0+0
+0 0 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#12001
+double bed~
+a double bed~
+A comfortable double bed is here.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+40 4 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+bed~
+It is a spacious double bed, complete with box spring, matress, sheets,
+comforters, and two pillows.  
+~
+#12002
+kingsize bed~
+a king sized bed~
+An ornate King Sized Bed rests on the floor here.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+60 20 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+bed~
+It has golden posts, a footboard, headboard, sheets, 2 comforters, and
+plush pillows.  It is definately the bed of Kings.  
+~
+#12003
+wooden bench~
+a wooden bench~
+A wooden bench sits on the ground.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+30 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+bench~
+It has a metal frame, with wooden slats used for the seat and back.
+~
+#12004
+marble bench~
+a marble bench~
+A fantastically carved marble bench sits here.~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+90 20 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+bench~
+It was carved from a solid piece of marble, with many distinct designs.  
+~
+E
+designs~
+There are designs of all sorts, from dragon heads to horses.
+~
+#12005
+longbow~
+longbow~
+~
+~
+5 0 0 0 0 8193 105
+100 100
+0~ 0~ 0~ 0~
+5 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#12006
+stack arrows~
+a stack of arrows~
+~
+~
+37 0 0 0 0 1 105
+100 100
+200~ 0~ 50~ 100~
+15 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#12007
+book~
+a book~
+A book is here.~
+~
+40 0 0 0 0 1 1
+0 0
+50~ 0~ 447~ 269~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#12009
+bookcase~
+a bookcase~
+A bookcase sits here, filled with books.~
+~
+13 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+75 8 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+bookcase~
+It is made from the finest of wood, and it is filled with books.
+~
+E
+books~
+Many volumes.  Encyclopedias, fiction, non-fiction, there is even a cook
+book here.  
+~
+E
+shelves~
+They are filled with books!
+~
+#12010
+bookcase~
+a bookcase~
+A bookcase sits here, its shelves empty.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+50 4 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+books~
+There are no books!
+~
+E
+shelves~
+They are empty.
+~
+E
+bookcase~
+It is made from the finest of wood, and it is empty.
+~
+#12061
+deconce paper hat~
+a paper hat~
+A burning paper hat made by Deconce himself, sits here~
+~
+9 33554432 0 0 0 17 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+A
+119 -1
+A
+18 2
+A
+19 2
+#12063
+fish tank~
+fish tank~
+A fish tank sits here waiting for you to drink out of.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+2139234 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12064
+couch~
+two couches~
+Two old couches are pushed together to form the power V.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+23834 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12065
+fire pit~
+a fire pit~
+A large fire burns in the middle of the room.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+2147483647 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12066
+Five footer bong~
+a five foot bong~
+A five foot green pipe with a 4:20 sticker sits in the corner.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+10 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12067
+dog collar gina~
+a dog collar~
+A dog collar with a tag reading 'Princess Gina' sits here.~
+~
+9 0 8192 0 0 5 1
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+#12068
+soul~
+a tormented soul~
+A tormented soul floats here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12069
+golden throne~
+a throne~
+A small golden throne sits here before you, where only Deconce may sit.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+239837 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12070
+chair~
+a chair~
+A comfortable looking brown leather chair sits here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12072
+ive earring~
+a ivy-leaf earring~
+An earring in the shape of a ivy leaf lays here~
+~
+8 16384 0 0 0 524289 15
+100 100
+0~ 0~ 0~ 0~
+5 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+32 -5
+A
+39 5
+#12073
+Demon Blood Ring~
+a ring of dried blood~
+A ring of black blood lays here~
+~
+9 33554512 0 0 0 3 15
+100 100
+10~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+39 -5
+A
+32 5
+#12074
+None~
+(no short description)~
+(no long description)~
+~
+13 0 0 0 0 0 20
+100 100
+0~ 0~ 0~ 0~
+2 1680 0
+0 0
+reserved~
+0 0
+0 0 0
+#12075
+BLANK~
+BLANK~
+BLANK~
+~
+8 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+1 0 0
+5 0
+mark~
+10 10
+0 0 0
+#12091
+crevice~
+large crevice~
+Darkness pervades the room through a large crevice in the rock.~
+~
+29 0 0 0 0 0 0
+100 100
+12092~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12092
+throne destiny~
+throne of Destiny~
+The Throne of Destiny sits here humming.~
+~
+13 2 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+100000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12093
+plasma tv~
+a plasma tv~
+A 75" plasma tv hangs on the northern wall.~
+~
+13 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 40000 0
+0 0
+reserved~
+0 0
+0 0 0
+#12094
+shield~
+mishval's shield~
+A GIGANTIC shield with Mishval's face on the front lies here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#12095
+oak key~
+an oak key~
+A key made of oak is just lying in the dirt here.~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12096
+saltine cracker~
+a saltine cracker~
+A delicious looking cracker is on the floor.~
+~
+19 0 0 0 0 1 1
+100 100
+3~ 0~ 0~ 0~
+0 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#12097
+dropping raven~
+the Raven's dropping~
+A bird dropping sits on the ground.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12100
+drop blood mishval~
+mishval's blood~
+A drop of Mishval's blood is soaking into the carpet here.~
+~
+9 33554432 0 0 0 17 10
+100 100
+30~ 0~ 0~ 0~
+3 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+13 50
+#12101
+marble arch~
+marble arch~
+&WA magnificent marble arch is the gateway to Ahsile's domain...~
+~
+13 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12105
+path road silver~
+a Silver Road~
+&wThe silver road twists between the trees~
+~
+13 1 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12106
+crystal staircase case~
+a Crystal Staircase~
+&CA shimmering crystal staircase leads upwards...~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12120
+key~
+a brass key~
+A brass key lies here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12121
+brass sign~
+a brass sign~
+A brass sign is embedded next to the door.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Welcome, traveller, to Zhyril's tower.  Enter if you seek him, though his
+duties take him all over the land, and he might not be here.  Feel free to
+enjoy the natural beauty of his arboretum, but be warned that the creatures
+who live here are under his protection and may not be harmed.  Please also
+take note that lesser magicks are not allowed, and will not work here.  
+~
+#12122
+golden ring~
+a delicate golden ring~
+A beautiful ring lies here.~
+~
+8 536870976 0 0 0 3 0
+100 100
+0~ 0~ 0~ 0~
+0 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+19 1
+A
+18 1
+E
+ring~
+A beautiful ring of elven workmanship, it is engraved with tiny golden
+leaves.  
+~
+#12123
+robes~
+robes~
+Robes lie here.~
+~
+9 0 0 0 0 9 1
+100 100
+2~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12124
+sake~
+a bottle of sake~
+A bottle of sake lies here.~
+~
+17 0 0 0 0 1 1
+100 100
+5~ 3~ 8~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12125
+book poetry~
+a book of poetry~
+A book with a polished slate cover is here.~
+~
+8 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+book~
+This large book is filled with poetry.  Glancing through the book, you
+see several of interest; one by some man named Alexander Pope on page 40,
+another by one by Robert Herrick on page 65, and a third by Li Qingzhao on
+page 97.  
+~
+E
+40~
+See what delights in sylvan scenes appear!
+Descending gods have found Elysium here.
+In woods bright Venus with Adonis stray'd,
+And chaste Diana haunts the forest shade.
+Come, lovely nymph, and bless the silent hours,
+When swains from shearing seek their nightly bow'rs;
+When weary reapers quit the sultry field,.
+And crown'd with corn their thanks to Ceres yield,
+This hamless grove no lurking viper hides,
+But in my breast the serpent Love abides.
+ 
+ 
+~
+E
+65~
+The Night-Piece, to Julia
+ 
+Her eyes the glow-worm lend thee,
+The shooting stars attend thee;
+And the elves also,
+Whose little eyes glow
+Like the sparks of fire, befriend thee.
+ 
+No Will-o'-th'-Wisp mislight thee,
+Nor snake or slow-worm bite thee;
+But on, on thy way,
+Not making a stay,
+Since ghost there's none to affright thee.
+ 
+Let not the dark thee cumber:
+What though the moon does slumber?
+The stars of the night
+Will lend thee their light
+Like tapers clear without number.
+ 
+Then, Julia, let me woo thee,
+Thus, thus to come unto me;
+And when I shall meet
+Thy silv'ry feet
+My soul I'll pour into thee.
+~
+E
+95~
+To the Tune of Like a Dream
+ 
+I always remember the sunset
+ over the pavillion by the river.
+ 
+So tipsy, we could not find our way home.
+ 
+Our interest exhausted, the evening late,
+ we tried to turn the boat homeward.
+ 
+By mistake, we entered deep within the lotus bed.
+ 
+Row! Row the boat!
+ 
+A flock of herons, frightened,
+ suddenly flew skyward.
+~
+#12126
+starfruit tree branch~
+a starfruit tree~
+From a low branch hangs bright yellow fruit.~
+~
+15 0 0 0 0 0 0
+100 100
+10~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12127
+starfruit~
+a starfruit~
+A yellow fruit lies here.~
+~
+19 0 0 0 0 1 0
+100 100
+3~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12128
+telescope~
+a telescope~
+An enormous brass telescope is here, pointed at the heavens.~
+~
+8 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+telescope~
+This large, beautifully-constructed brass telescope is remarkably
+complex.  It is pointed at a gap in the glass ceiling.  Perhaps you should
+look through the eyepiece?  
+~
+E
+eyepiece~
+&W.                              .
+           .               .                      .
+    .            .                      .
+                            .                                .
+      .
+                     .               .                .
+ 
+ .                .               .                  .
+         .
+      .                 .                   .                    .
+           .                .
+~
+#12129
+book~
+a book of history~
+A thick book lies here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+book~
+This large book details the history of Methidoral.  It goes into some depth.
+~
+#12130
+evengold~
+an evengold blossom~
+A beautiful white blossom lies here.~
+~
+26 0 0 0 0 1 1
+100 100
+10~ cure poison~ reserved~ reserved~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12131
+fountain crystal~
+fountain~
+A small crystal fountain is here.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+500 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+fountain~
+&CMade of pure crystal, the fountain sparkles as cold water gushes out
+for your drinking pleasure.  
+~
+#12132
+telescope~
+the telescope~
+&WA humongous telescope spies on the Stormgate world.~
+~
+15 0 0 0 0 0 1
+100 100
+1000~ 0~ 0~ 0~
+1000 400000 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+telescope~
+&WA white telescope that is so gigantic that it can spy on anywhere Isabo
+chooses, sits in the center of the room pointing out towards an opening in
+the dome ceiling.  Look inside to take a peek.  
+~
+>look_in_prog 100~
+0
+if rand(40)
+mpechoat $n &RThe Temple of Methidoral
+mpechoat $n &wYou stand in the center of a vast chamber constructed of marble and gold.
+mpechoat $n The Temple of Methidoral must surely be a vision of paradise; the
+mpechoat $n crystalline walls arch hundres of feet into the air, meeting at the domed
+mpechoat $n ceiling.  Colorful frescos line the walls, depicting the epic struggles of
+mpechoat $n gods and men, and both the joys and hardships that this world contains. 
+mpechoat $n Robed acolytes kneel at the great altar, chanting softly in an ancient
+mpechoat $n language, their soft murmur punctuated by the melody of prayer bells
+mpechoat $n swinging in the breeze. 
+mpechoat $n &R[Exits: &Ysouth&R]
+mpechoat $n      &WA massive altar constructed of white marble sits in the Temple's center.
+mpechoat $n     &W(Glowing) &BThe Oracle of Methidoral is here, towering over your head.
+mpechoat $n      &GA box has been left here for donations.
+mpechoat $n &PThe eternal Hierophant of Methidoral towers overhead.
+mpechoat $n &W    The Hierophant of Methidoral's body is veiled in a glowing white mist.
+mpechoat $n &Y    The Hierophant of Methidoral's body is surrounded by a golden aura.
+mpechoat $n &P    The Hierophant of Methidoral's body is surrounded by an anti-magic aura.
+else
+if rand(35)
+mpechoat $n &RThe Castle Doors
+mpechoat $n &wYou stand before two doors made of a wood that you are not entirely
+mpechoat $n familiar with.  A guard in flowing red robes stands to either side of
+mpechoat $n the door, watching those who seek entrance to the castle proper.  Looking
+mpechoat $n a ways to the east and west, you can see two of the four towers that
+mpechoat $n are built into the corners of the outer wall rising high above the rest
+mpechoat $n of the castle.  To your immediate east and west is the Garden.
+mpechoat $n &R[Exits: &w[&Ynorth&w] &Yeast south west&R]
+mpechoat $n &PA guard makes sure that order is kept within the walls of Aurum.
+mpechoat $n &W    A Guard of Aurum's body is veiled in a glowing white mist.
+mpechoat $n &R    A Guard of Aurum is surrounded by a ring of fire.
+mpechoat $n &B    A Guard of Aurum's body is sparking with electricity.
+mpechoat $n &C    A Guard of Aurum's body is covered in frost and ice.
+mpechoat $n &w    A Guard of Aurum is surrounded by thousands of spinning blades.
+else
+mpechoat $n &RThe Muddy Roadway
+mpechoat $n &wFollowing the road you can see that the building located to the south is
+mpechoat $n a chapel of some type.  And it's a very well built chapel too.  You wonder
+mpechoat $n how people that barely have enough to live on can afford to have a chapel of
+mpechoat $n such rich proportions about.  Off to the east the coughing and hacking
+mpechoat $n noises become louder and you wonder again what is over there making those
+mpechoat $n noises.
+mpechoat $n  &R[Exits: &Ynorth east south&R]
+mpechoat $n &PSome poor serf stands around here looking lost.
+mpechoat $n &PA mother sighs and yells for her child to be quiet.
+endif
+endif
+endif
+~
+|
+#12133
+sage bunch~
+a bunch of sage~
+A dried bunch of sage is here.~
+~
+26 0 0 0 0 1 10
+100 100
+10~ protection evil~ reserved~ reserved~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#12139
+moonstone disc~
+the moonstone~
+&cA large moonstone disc glows with the vibrations.~
+~
+15 0 0 0 0 0 120
+100 100
+0~ 0~ 0~ 0~
+1509 200000 0
+0 0
+reserved~
+0 0
+0 0 0
+>look_in_prog 100~
+0
+if ispc($n)
+if goldamt($n) > 9999
+mpecho &cThe moonstone begins to vibrate at a very low frequency.
+mpechoat $n &PYou shudder involuntarily.
+mpechoaround $n &P$n shudders involuntarily.
+mpforce $n give 10000 coins Crowley
+cast 'mana' $n
+else
+mpecho &cThe moonstone vibrates once and is still.
+endif
+endif
+~
+|
+#12141
+stream~
+a stream~
+The clear waters of the stream flow by.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12142
+stone bench~
+a stone bench~
+A stone bench stands here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12143
+pool~
+a pool~
+Multicolored fish play beneath the waters of the pool.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12144
+waterfall~
+the waterfall~
+A mist rises from where the waterfall enters the pool, filling the air with coolness.~
+~
+29 0 0 0 0 0 0
+100 100
+12144~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12145
+sundial~
+a large stone sundial~
+A large stone sundial stands in the center of the clearing.~
+~
+8 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sundial~
+Carved numbers in an ancient script have been engraved on its stone
+surface.  
+~
+#12146
+console~
+a console~
+A large console sits against the wall.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+console~
+This large console is festooned with various dials, lights, and gauges,
+and seems to monitor the devices that control the arboretum's environment. 
+Temperature, humidity, the status of the devices that automatically feed the
+animals and make sure the vegetation has adequate nutrients and water, and
+finally the amazingly complex water circulation system, which allows the
+existence of the myriad pools, streams, and the waterfall.  You can sense
+great magicks working here; Zhyril truly has carefully crafted his garden
+home.  
+~
+#12147
+stone shelves~
+stone shelves~
+A set of stone shelves lies against one wall.~
+~
+15 0 0 0 0 0 0
+100 100
+30~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12148
+multitool tool~
+a multitool~
+A multitool lies here.~
+~
+5 536870912 0 0 0 2097153 1
+100 100
+0~ 0~ 0~ 9~
+1 4 0
+4 12149
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+3 1
+A
+18 3
+E
+multitool~
+This extremely versatile tool contains a screwdriver, file, and calipers,
+as well as several other devices, all incorporated into a compact silver
+tube.  With the flick of a button it can be turned into a flashlight.  
+~
+E
+tool~
+This extremely versatile tool contains a screwdriver, file, and calipers,
+as well as several other devices, all incorporated into a compact steel
+tube.  With the flick of a button it can be turned into a flashlight.  
+~
+#12149
+multilight light~
+a multilight~
+An illuminated multilight lies here.~
+~
+1 536870913 0 0 0 1 0
+100 100
+0~ 0~ -1~ 0~
+1 4 0
+4 12148
+reserved~
+0 0
+0 0 0
+E
+light~
+This small steel cylinder is a multitool, an extremely useful device. 
+Right now it's in light mode, but with the press of a button it can be
+turned back into tool mode.  
+~
+E
+multilight~
+This small steel cylinder is a multitool, an extremely useful device. 
+Right now it's in light mode, but with the press of a button it can be
+turned back into tool mode.  
+~
+#12150
+bed~
+a bed~
+A large, comfortable looking bed lies against the wall.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#12345
+~
+~
+~
+~
+17 0 0 0 0 0 0
+100 100
+0~ 0~ 1~ 0~
+0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#12001
+Tyrion's Office: The Convergence of Chaos~
+~
+~
+You have entered a room where Warriors of Chaos, Beastmen, and other
+strange creatures hold sway, and where the mutating influence of the
+Warpstones may produce all manner of hideous new monsters.  It is in this
+room where the incursions of the Chaos Wastes have their origins, and every
+now and again the servants of Tyrion sweep down over adjacent territories,
+corrupting and altering all they touch.  
+~
+0 394254 0
+Rd     0
+D1
+~
+~
+0 0 17468
+S
+#12061
+Entrance to Deconce's Hall~
+~
+~
+Welcome to the home of Deconce, The Keeper of Stormgate.  Here Deconce
+lays out his own unique brand of justice to the population of Stormgate.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12065
+D1
+~
+~
+0 0 12062
+D3
+~
+~
+0 0 12063
+S
+#12062
+Corner of Justice~
+~
+~
+In this corner of Deconce's home lies a man being punished for cheating. 
+He lies on the floor crying, all he wants to die is just die.  Will you be
+the one to put this poor soul out of his misery?  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12064
+D3
+~
+~
+0 0 12061
+S
+#12063
+Corner of the hall~
+~
+~
+In this corner of the hall sits a giant fish tank.  All the pretty fishes
+swim about erratically, but the water is just so crystal clear you can't
+help but want to take a drink.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12068
+D1
+~
+~
+0 0 12061
+S
+#12064
+Living Room~
+~
+~
+In this room lies two couches, fromed into a V.  A little garden gnome
+sits in the point of the V, forming the power V.  Here Deconce likes to kick
+back and relax with his friends.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 12066
+D2
+~
+~
+0 0 12062
+D3
+~
+~
+0 0 12065
+S
+#12065
+Center of the hall~
+~
+~
+A fire roars away in the center of the hall, all around are things that
+Deconce has collected over his many years of work.  To the north lies
+Deconce's chamber.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12067
+D1
+~
+~
+0 0 12064
+D2
+~
+~
+0 0 12061
+D3
+~
+~
+0 0 12068
+S
+#12066
+The Den~
+~
+~
+On the wall of this corner of Deconce's hall there is a sign saying
+WELCOME TO THE DEN OF SLACK.  
+~
+0 393218 0
+Rd     0
+D2
+~
+~
+0 0 12064
+D3
+~
+~
+0 0 12067
+S
+#12067
+Dining Area~
+~
+~
+This room is obviously the dining area, food is still laying on the
+table.  Princess Gina, Deconce's dog chews on a bone that she took from the
+table.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12069
+D1
+~
+~
+0 0 12066
+D2
+~
+~
+0 0 12065
+D3
+~
+~
+0 0 12070
+S
+#12068
+Library~
+~
+~
+Along this wall lies hundreds upon hundreds of books to be read, and
+books that have been read.  Also amoung these books are history books in
+refrence to Stormgate.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12070
+D1
+~
+~
+0 0 12065
+D2
+~
+~
+0 0 12063
+S
+#12069
+Deconce's room~
+~
+~
+This is the room that Deconce works from, here he will slay and purge the
+guilty, and help the innocent.  On the wall there is a plaque that reads:
+Always watch thine step, for the Keeper is always watching.  
+~
+0 132102 0
+Rd     0
+D2
+~
+~
+0 0 12067
+S
+#12070
+Reading Area~
+~
+~
+In this area Deconce likes to come and relax while he's reading, a nice
+comfortable arm chair lies in the corner.  Councilor Bob waits as always for
+Deconce to come back and discuss the latest issue.  
+~
+0 393222 0
+Rd     0
+D1
+~
+~
+0 0 12067
+D2
+~
+~
+0 0 12068
+S
+#12071
+Entrance Way~
+~
+~
+You're standing in the large entrance way to a well built structure.  The
+walls are made of some dark gray, black and red swirl marble.  The only way
+to go is to continue down the entrance hall to the east.  
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 12072
+S
+#12072
+Along the Entrance Hall~
+~
+~
+You're contuning down the entrance hall.  Ahead of you you can tell that
+the hall makes a turn and heads north.  This place has peaked your interest
+although it might just be very dangerous.  
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 12073
+D3
+~
+~
+0 0 12071
+S
+#12073
+End Of Entrance Hall~
+~
+~
+The hall ends here and goes north and heads toward the center of the
+house where you assume that you will finaly reach the person who owns this
+building.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 12074
+D3
+~
+~
+0 0 12072
+S
+#12074
+Before the Living Room~
+~
+~
+To the north is what looks like the living room..  Unfortunately it's
+dark so it's difficult to see what is in the room ahead.  You're only hope
+is that the owner of this house doesn't keep any guards or pets on staff.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 12075
+D2
+~
+~
+0 0 12073
+S
+#12075
+Living Room~
+~
+~
+You're in a lavishly decorated living room.  The walls are lined with
+places to sit.  A sky light shines down on the pond in the center of the
+room as well as fill the dim room with a small amount of light.  
+~
+0 132106 0
+Rd     0
+D0
+~
+~
+3 0 12078
+D1
+~
+~
+3 0 12077
+D2
+~
+~
+0 0 12074
+D3
+~
+~
+3 0 12076
+S
+#12076
+Dining Room~
+~
+~
+This is the room where food is eaten.  A large table stands in the middle
+surrounded by about a dozen chairs, for the times company arrives.  To the
+north is where you think the kitchen should be.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 12080
+D1
+~
+~
+3 0 12075
+S
+#12077
+Bathroom~
+~
+~
+This is the bathroom complete with mirrors, a double sink, a toilet, a
+large tub, and a shower stall.  The floor it tiled like a checker board with
+red and black tiles.  
+~
+0 131082 0
+Rd     0
+D3
+~
+~
+3 0 12075
+S
+#12078
+Trucido's Bedroom~
+~
+~
+This is the immortal Trucido's sleeping quarters.  The room contains a
+four post bed with gray bedding and black bed curtains.  Slightly ajar. 
+Oddly enough the bed is crooked and you can see a crack in the floor.  Maybe
+if you could move the bed over.  
+~
+0 131082 0
+Rd     0
+D2
+~
+~
+3 0 12075
+D5
+~
+~
+515 0 12079
+S
+#12079
+Secret Room~
+~
+~
+This room appears to be a hidden study/archive room.  The whole room is
+filled with strange treasures and books as old as time.  Most of the items
+in this room look like they might crumble as soon as you lay a hand on them 
+~
+0 131082 0
+Rd     0
+D4
+~
+~
+515 0 12078
+S
+#12080
+Kitchen~
+~
+~
+This is the kitchen.  It seems rather normal complete with a stove, a
+sink, a counter..  Ect.  Although it looks like it's been a while since a
+meal has been made in here.  
+~
+0 131082 0
+Rd     0
+D2
+~
+~
+0 0 12076
+S
+#12081
+Lands End~
+~
+~
+You stand now on a ledge, in front of a very old man with a long beard. 
+He turns to you as you approach and peers deep past your eyes into your
+soul.  Looking at you curiously, he walks to the ledge and peers down
+thinking about something.  As you look over the edge, you see absolutely
+nothing.  Not just darkness, but a deep nothingness.  Lightening crackles
+below your feet and thunder roars from the ravine.  
+~
+0 4 0
+Rd     0
+S
+#12091
+Before a Stone Cliff~
+~
+~
+Oops.. looks like the path you were following has come to an abrupt stop.
+Before you rises an enormous stone cliff, so flawless that it is doubtful
+the best climbers in the world could scale this piece of rock.  Now that you
+think about it, the cliff seems a bit abnormal, a bit too perfect to belong
+here naturally.  There is no vegetation or animal life nearby, which is also
+extremely interesting.  Something must have scared them away or perhaps they
+were killed in some manner.  Whatever happened to them, it does not give you
+much comfort.  Looking more closely you do notice a large crack toward the
+left side of the cliff.  And a powerful darkness seems to draw you to it.
+~
+0 131078 0
+Rd     0
+S
+#12092
+A Massive Cave~
+~
+~
+After squeezing through that tiny crack, you are out of breath and find
+yourself in the middle of a huge cave.  The cave seems to stretch for miles
+in every direction.  However, it does not have the feel of an abandoned cave
+or a normal naturally carved cave.  You see glowing balls of light floating
+around above you, giving this place more of a homely feel.  What or who
+could possibly enjoy living in such a damp, dark and lifeless place.  Looking
+around again you notice the cave breaks off into passages to the east and
+west.  To the north a tremendous amount of activity seems to be taking place.
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12098
+D1
+~
+~
+0 0 12094
+D2
+~
+~
+0 0 12091
+D3
+~
+~
+0 0 12093
+S
+#12093
+The West Wing~
+~
+~
+Not wanting to leave the entrance, you finally find yourself breaking away
+to the west wing.  Although the passage is constructed of stone, you can see
+that patterns, designs and figures have been intricately carved into the
+stone.  There are some pictures of god's, others of legendary women and still
+others of brave warriors.  All these carvings trickle down to a carpet of deep
+blood red.  On the wall hangs a portrait of a enormous house and underneath
+the label reads 'White House'.
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12097
+D1
+~
+~
+0 0 12092
+D3
+~
+~
+0 0 12096
+S
+#12094
+The East Wing~
+~
+~
+The East Wing is more of a corner of Mishval's cave home.  A full wall mural
+dedicated to the clan wars is straight ahead.  This room must at one time
+have been a mine for there are large diamonds jutting out of the walls and
+ceilings.
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12095
+D3
+~
+~
+0 0 12092
+S
+#12095
+Mishval's Weapons Armory~
+~
+~
+This is more like Mishval's playpen.  Every weapon you could possibly think
+of is sitting in this room, whether hanging on the walls or resting on a
+ledge.  Whenever he goes out to play, he always comes here first to find
+something "special" to bring along in case he gets bored.  Unforunately for
+you, al the weapons have been magically sealed and you can even touch them.
+The guardians of the cavern come around regularly to make sure everything
+is where it should be.
+~
+0 131074 0
+Rd     0
+D2
+~
+~
+0 0 12094
+D3
+~
+~
+0 0 12098
+D4
+~
+~
+0 0 12100
+S
+#12096
+The Stalactite Sanctuary~
+~
+~
+As you enter, you notice a complete silence that almost drowns the room.  A
+singular figure sits at the back of the room, chanting and mumbling something
+you can't quite make out.  The one clearly unique aspect of this room is the
+hundred of stalactites hanging from the ceilings.  Nowhere else in this entire
+cave are there this many stalactites.  However, they are not any normal
+stalactites.  Looking a bit harder, you notice something extremely unnerving.
+What is that dripping from each stalactite?  Water?  No.  Blood drips from each
+and every stalactite, forming a small pool, draining into a hole on the far
+side of the cavern.  The man sitting in the back doesn't seem to mind at all,
+chanting and mumbling.  The entire room seems to glow with a silvery right,
+distinguishing it from the rest of the lighted rooms.  You feel a sense
+of rejeuvenation and refreshment here.
+~
+0 132098 0
+Rd     0
+D1
+~
+~
+0 0 12093
+S
+#12097
+A Cave Kitchen~
+~
+~
+Every imaginable pot, pan and cooking utensil lines the walls and ceiling of
+this kitchen.  It is truely a picture of a chef's dream.  A series of ten
+stoves cover the back wall and two sets of ovens/microwaves are to your right.
+On the other counters are literally hundreds of spices.  Large slabs of
+steak are sitting out on the counter ready to be seasoned and grilled to
+perfection.  Just watching Mishval's chef at work makes your mouth drool.
+The chef's assistants cook the side dishes, making the flames jump as they
+fry their respective foods.  To your left is a gigantic walk-in freezer that
+basically takes up the entire wall.  While the freezer seems ordinary enough,
+there seems something peculiar about the back corner next to it.  You sense
+that if you stay in this room any longer, the chef will make you don a pair
+of gloves and help.
+~
+0 131074 0
+Rd     0
+D1
+~
+~
+0 0 0
+D2
+~
+~
+0 0 12093
+D3
+~
+~
+519 0 12099
+S
+#12098
+The Entertainment Center~
+~
+~
+This place redefines the word entertainment and puts every other
+entertainment center to shame.  It has EVERYTHING you could possibly need
+in one room.  From the videogames, to the television to pool tables, it is
+all right here.  There is not a single new piece of entertainment Mishval
+does not hear about and does not go right away to pick up for this place.
+This place is so entertaining that it is rumored the most powerful god's
+once sat here for a month, leaving the world in utter chaos.
+~
+0 131074 0
+Rd     0
+D1
+~
+~
+0 0 12095
+D2
+~
+~
+0 0 12092
+S
+#12099
+Mishval's Bedroom~
+~
+~
+What have you found?  A trash pile or a room?  It has some semblance of a
+bedroom but you can't be sure with the clothes piled on top of each other
+reaching mammoth heights.  You can see cleaning in progress as half of the room
+has been cleared and neatened somewhat.  A bookshelf sits in the corner of
+the room next to the bed, but there are absolutely no books on it.  The bed
+sitting in the middle is massive and could fit about 4 people if necessary.
+The carpeting is soft and makes you want to take off your footwear and shift
+through it.  Mishval's desk sits against the backwall with piles and piles of
+paperwork on it.
+~
+0 131078 0
+Rd     0
+D1
+~
+~
+519 12095 12097
+S
+#12100
+A Cave Overlook~
+~
+~
+From this point in the huge cavern called home, Mishval rules with an iron
+fist.  The has only one wall to east, the other sides merely drop off to the
+infinite darkness below.  Magical orb's of all colors float in the air
+lighting the room.  On the east wall sits a desk, and right before the
+overlook ends to the north rests Mishval's enormous throne.  A bronze serpent
+curls along the top of the throne and a fierce bat has been emblazoned on the
+cushion.  A grey carpet leads all the way from the stairs up to the throne.
+~
+0 131074 0
+Rd     0
+D5
+~
+~
+0 0 12095
+S
+#12101
+The Grand Entrance to Ahsile's Domain~
+~
+~
+You enter a large open entrance way through a magnificent marble arch. 
+You see scenes depicting the great Ahsile in his many feats throughout the
+world.  There is a relief carving on the north wall depicting Ahsile shaking
+hands with the great Norgoroth , with a portal made of vines behind them. 
+The ceiling seems to be a large dome, painted by the great artisians of the
+land.  It shows Ahsile at the front with several known heroes standing
+beside him, notably Lauren Quickfingers, leader of the Minotaur and a
+shadowy figure labelled Yuna, the Angel of Death.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12102
+D2
+~
+~
+0 0 18267
+S
+#12102
+The Garden of Nature~
+~
+~
+You walk into a large open garden, filled with wildlife.  This seems to
+be a reserve for the endagered species of the realm.  You see large golden
+oaks, reaching towards the ever so high ceiling.  You somehow figure that no
+matter how high the trees grow they will never touch the roof.  A cockatrice
+runs by quicly, but it does not seem concerned with you whatsover, and
+quickly afterwards a displacer beast runs by chasing it.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12105
+D1
+~
+~
+0 0 12104
+D2
+~
+~
+0 0 12101
+D3
+~
+~
+0 0 12103
+S
+#12103
+A Lavish Study~
+~
+~
+The walls in this room are covered with maps and paintings of strange
+places.  Places that you do not recognize.  These places may have existed
+long ago, or maybe they are places the world has not seen yet.  When it
+comes to the Gods, one never knows.  A desk sits off to the west, covered
+with tomes from the shelf on the south wall.  The number of books boggles
+the mind when you think about the small amount of space this room takes up. 
+A large circle is drawn in the center of the room, with arcane symbols
+traced around it.  This must be the place where the world is changed and
+shaped to the God Ahsile's will.  
+~
+0 131074 0
+Rd     0
+D1
+~
+~
+0 0 12102
+S
+#12104
+A Spotless Bedroom~
+~
+~
+You have entered a large bedroom, with not a speck of dust anywhere to be
+seen.  There is a small, but comfortable looking, bed in the corner.  The sheets
+look old, but they also seem as if they have never been touched.  What need
+does a God have to sleep?  This must be for mortal guests who happen upon
+the realm of Ahsile.  
+~
+0 131074 0
+Rd     0
+D3
+~
+~
+0 0 12102
+S
+#12105
+The Silver Road~
+~
+~
+You are are in a place filled with trees and wildlife, and the sounds of
+life reverberate all around you.  You walk on a spotless silver path that
+slithers through the area, but generally leads from south to north.  Further
+to the north you see a large tower, reaching higher than your eyes can see. 
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 12106
+D2
+~
+~
+0 0 12102
+S
+#12106
+The Crystal Tower~
+~
+~
+You stand at the bottom of a crystal tower.  From the outside you could
+not see in, but from inside it seems the crystal magnifies the view outside.
+Here at the bottom you can see the texture of the bark on the trees outside,
+and the smallest of insects seems the size of a giant!  This is definately
+the work of a mind beyond mortal comprehension.  
+~
+0 139264 0
+Rd     0
+D2
+~
+~
+0 0 12105
+D4
+~
+~
+0 0 12107
+S
+#12107
+A View Of The World~
+~
+~
+From outside the tower looked as if it were miles high , but after only a
+few steps you have made it to the top.  The shifting space of the planes is
+a marvel to behold by itself, but there are more interesting things to think
+of up here.  You can see to the very corners of the earth from your vantage
+point , and it is absolutely breathtaking.  You can see Mount Diablos as if
+it were only a mile away, and when you focus upon it the image seems to get
+closer every moment.  You can see deep beneath the Earth, and see the portal
+that leads to Aurum.  It almost seems as if you can touch all these things. 
+With the power of a God, maybe you could!  
+~
+0 131074 0
+Rd     0
+D5
+~
+~
+0 0 12106
+S
+#12121
+Before the Structure~
+~
+~
+You stand before an unusual structure; a tall stone tower with what
+appears to widen out at the top into a circular platform.  The tower walls
+are engraved with weatherbeaten carvings of ancient design, and strange
+sigils run around the doorframe of the building's sole entryway; an ancient
+door constructed of brass, tarnished to a dark green by the ages.  
+~
+0 0 0
+Rd     0
+D0
+~
+door~
+3 12120 12122
+D1
+~
+~
+0 0 18280
+D2
+~
+~
+0 0 18280
+D3
+~
+~
+0 0 18280
+S
+#12122
+Inside the Tower~
+~
+~
+You are at the bottom of a flight of stone stairs which spiral up through
+the darkness.  To the south a large brass door permits access to the outside
+world.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+3 12120 12121
+D4
+~
+~
+0 0 12123
+S
+#12123
+Ascending the Stairs~
+~
+~
+You are approximately halfway up the spiral staircase, and you grip the
+wooden bannister carefully as you ascend.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 12124
+D5
+~
+~
+0 0 12122
+S
+#12124
+The Top of the Staircase~
+~
+~
+The staircase ends here at a small landing, where a short ladder leads up
+to a brass hatch.  You think you can make out the sound of a running water
+from above.  
+~
+0 0 0
+Rd     0
+D4
+~
+hatch~
+3 0 12125
+D5
+~
+~
+0 0 12123
+S
+#12125
+The Tower Pinnacle~
+~
+~
+You are in a large chamber at the top of the tower.  Stone benches line
+the walls, and the floor depicts a beautiful mosaic of wilderness scenes. 
+Long stone benches covered with blue cushions are arrayed about the room,
+and the room is lit by the soft light that seeps through circular
+stained-glass windows.  To the west is another brass door.  
+~
+0 1032 0
+Rd     0
+E
+window~
+The windows are quite lovely, and depict stylized nature scenes.  A small
+brass plaque beneath them list the creator as someone named "Louis Comfort
+Tiffany".  
+~
+D3
+~
+door~
+3 0 12126
+D5
+~
+hatch~
+3 0 12124
+S
+#12126
+Zhyril's Arboretum~
+~
+~
+The platform of the tower is taken up almost entirely by an enormous
+arboretum, filled with beautiful and rare tropical plants.  Verdant trees
+and ferns are all about you, creating a thick underbrush that is dotted with
+exquisite orchids.  Far above you is the platform's roof which is
+constructed entirely of large sections of glass held together by a brass
+latticework.  To the east is brass door leading into a stone structure in
+the platform's center, while to the west a stone path leads into the garden.
+All other directions are blocked by foliage.  
+~
+0 427016 0
+Rd     0
+D1
+~
+door~
+3 0 12125
+D3
+~
+~
+0 0 12127
+S
+#12127
+Zhyril's Arboretum~
+~
+~
+The path splits here, heading in all directions.  To the east you can
+make out a stone structure, to the west is a large clearing, to the north a
+footbridge leads over a babbling stream, while to the south the path leads
+to a raised stone platform against the glass wall of the arboretum.  
+~
+0 394248 0
+Rd     0
+D0
+~
+~
+0 0 12130
+D1
+~
+~
+0 0 12126
+D2
+~
+~
+0 0 12128
+D3
+~
+~
+0 0 12129
+S
+#12128
+Zhyril's Arboretum~
+~
+~
+You have reached the edge of the platform, where a large stone dais has
+been constructed.  Above you is a gap in the glass ceiling, where a panel
+has been removed, presumably to allow better viewing conditions for the
+massive telescope that has been set up here.  
+~
+0 427008 0
+Rd     0
+D0
+~
+~
+0 0 12127
+S
+#12129
+A Path~
+~
+~
+The path runs east and west through the thick jungle foliage.  The soft
+drone of countless insects echos through the arboretum, punctuated by the
+staccato cries of tropical birds.  To the east is an intersection of paths,
+while to the west the stone trail opens up.  
+~
+0 394248 0
+Rd     0
+D1
+~
+~
+0 0 12127
+D3
+~
+~
+0 0 12148
+S
+#12130
+A Wooden Bridge~
+~
+~
+This beautiful wooden bridge leads over a small stream that meanders
+through the arboretum.  Below you brightly-colored fish flit back and forth
+through the crystal water.  
+~
+0 394248 0
+Rd     0
+D0
+~
+~
+0 0 12141
+D2
+~
+~
+0 0 12127
+S
+#12131
+The Silent Dome~
+~
+~
+Here inside the dome, the silence is deafening, as all sounds become
+consumed in a vacuum.  The walls of the round structure are painted with
+murals of celestial depictions and portraits glorifying brave adventurers of
+the past.  The large hall stretches in all directions as a path paved of
+onyx leads to various sectors of the dome.  An iridescent light of blue and
+green, floods in from a window high above, tainting the skies aqua by day
+and the stars azure by night.  A small set of onyx stairs ascends onto a
+raised platform.  
+~
+0 147466 0
+Rd     0
+E
+onyx path~
+&zThe onyx path gleams with luster.  It stretches in all cardinal
+directions to meet the walls of the dome.  All along the path, there grow
+strange, exotic, crimson orchids.  
+~
+D0
+~
+~
+0 0 12132
+D1
+~
+~
+0 0 12135
+D2
+~
+~
+0 0 12133
+D3
+~
+~
+0 0 12134
+D4
+~
+~
+0 0 12140
+S
+#12132
+The Healing Garden~
+~
+~
+The onyx path of crimson orchids leads to a garden where one can come to
+heal their weary body and take a respite from their adventures.  Large
+orchids and flowers with vibrant colors and heady scents grow from blue
+soil.  Some are known for their healing powers.  The ancient druids of the
+dome take great care of the garden.  A statuette of Isabo, the goddess of
+creation, is placed on a pedestal to the north.  The walls of the dome high
+above, seem to twinkle with the million stars of the universe.  
+~
+0 147466 0
+Rd     0
+E
+statuette isabo north~
+&WA small, white statuette about two feet tall sits atop a silver pedestal.
+Tall purple candles are placed all around the pedestal burning brightly.  
+~
+D2
+~
+~
+0 0 12131
+S
+#12133
+The Sector of Exorcism~
+~
+~
+Here, the mood is not quite so tranquil.  Dark shadows weave a deadly
+dance around the souls of the weak.  This is where adventurers come to have
+the demons exorcised from their souls.  Many travel to far away lands and
+have their souls possessed.  The exorcist of the dome has cured many.  By
+the path, there are many sealed bottles filled with the demons as they are
+relegated to an existence of solitude.  They howl silently within their
+prisons.  The path leads north, towards the center of the dome.  
+~
+0 268566538 0
+Rd     1
+D0
+~
+~
+0 0 12131
+S
+#12134
+The Sector of Magick~
+~
+~
+This sector helps a mage find the elusive energy that a mage seeks.  It
+vibrates at a low frequency more felt than heard.  The pulsations cause ones
+heartbeat to slow in unison.  There is a large monolith etched with ancient
+hieroglyphics, that glow with the vibrations.  It is surrounded by many,
+different-sized crystal pillars which propel bright beams to the ceiling. 
+The path in the Sector of Magick continues to the north and south.  The path
+leads back to the center of the dome to the east.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 12138
+D1
+~
+~
+0 0 12131
+D2
+~
+~
+0 0 12139
+S
+#12135
+The Sector of Valor~
+~
+~
+The walls of this sector portray the many brave warriors of the past. 
+They are memorialized in their moment of truth.  Many great weapons procured
+from far away lands on their adventures, hang suspended in the air.  The
+warriors of Stormgate come to gather their strength and courage from here. 
+The Sector of Valor, continues to the north and south.  The center of the
+dome is to the west.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 12136
+D2
+~
+~
+0 0 12137
+D3
+~
+~
+0 0 12131
+S
+#12136
+The Sector of Valor~
+~
+~
+Here the warriors and their many skills are glorified with various
+murals.  The murals are projected holographically onto panels that are
+suspended magically.  The holy clerics and paladins of the dome give praise
+to the gods and the brave warriors of the past.  The path leads back to the
+south.  
+~
+0 131082 0
+Rd     0
+D2
+~
+~
+0 0 12135
+S
+#12137
+The Sector of Valor~
+~
+~
+Here, it is dedicated to the weapons of the warriors.  Legendary weapons
+hang suspended in the air as beams of light shines upon them.  There is a
+bookshelf which holds literature on the various weapons and of the warriors
+who were their companions.  The path leads to the north.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 12135
+S
+#12138
+The Sector of Magick~
+~
+~
+Here, the air shimmers with particles so small, it is not felt but
+catches the light and glitters on its own.  Gravity seems to lose power here
+as movements slow down.  The vibrations from the monolith are clearly felt
+here as well lending a calming hand.  The path leads back to the south.  
+~
+0 131082 0
+Rd     0
+D2
+~
+~
+0 0 12134
+S
+#12139
+The Sector of Magick~
+~
+~
+The center of this part of the sector of Magick, is dominated by a large,
+circular moonstone.  It is ensconed in a circle of blue flames.  The
+moonstone vibrates with an unseen power that is felt to the bone.  The onyx
+path goes back to the north.  
+~
+0 132106 0
+Rd     0
+D0
+~
+~
+0 0 12134
+S
+#12140
+Isabo's Observatory~
+~
+~
+From here, one can see the dome clearly in all its sectors.  The onyx
+path forms a cross leading in all cardinal directions.  This is where Isabo
+resides as she watches the happenings of the Stormgate world through a large
+telescope.  The circular platform gleams with marble floors and in the
+center, there is a sunken area filled with cushions.  In the center of the
+pit, there is a small crystal fountain.
+~
+0 134365194 0
+Rd     0
+D5
+~
+~
+0 0 12131
+S
+#12141
+Beside the Stream~
+~
+~
+The path turns here, heading east towards the sound of falling water, and
+south over a small bridge that crosses the stream.  In all other directions
+is dense foliage.  
+~
+0 394248 0
+Rd     0
+D1
+~
+~
+0 0 12142
+D2
+~
+~
+0 0 12130
+S
+#12142
+Beside the Stream~
+~
+~
+The path continues east and west alongside a clear stream.  Colorful fish
+flit through the crystal waters, and an errant leaf rushes by, caught in the
+current.  The stream curves here, turning from south to west, while the path
+leads north and west along its banks.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 12143
+D3
+~
+~
+0 0 12141
+S
+#12143
+Before the Waterfall~
+~
+~
+You have entered a large clearing.  A granite outcropping rises from the
+forest floor, reaching almost to the greenhouse-like glass ceiling of the
+platform.  From a dark opening at the top of the stone gushes a beautiful
+waterfall that falls into a clear pool.  The narrow path leads east behind
+the shimmering curtain of water.  
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+0 0 12144
+D2
+~
+~
+0 0 12142
+S
+#12144
+Behind the Waterfall~
+~
+~
+You are in a small passage which has been carved out of the stone behind
+the waterfall.  Behind the curtain of blue water is a glistening pool, while
+to the east a narrow crevice leads to the eastern side of the pool.  
+~
+0 427008 0
+Rd     0
+D1
+~
+~
+0 0 12145
+D3
+~
+~
+0 0 12143
+D5
+~
+hatch~
+7 12120 12146
+S
+#12145
+Before the Waterfall~
+~
+~
+You stand on the eastern bank of the pool, beside the glorious waterfall.
+To the east a path leads out of the clearing, while to the west a narrow
+passage leads behind the waterfall.  The soft buzzing of insects and shrill
+cries of the birds that inhabit the arboretum canopy fill the air.  
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+0 0 12147
+D3
+~
+~
+0 0 12144
+S
+#12146
+The Maintenance Area~
+~
+~
+You have entered a large room beneath the arboretum.  Huge, incredibly
+advanced machines are arrayed about the rooms, controlling the environmental
+factors of the arboretum.  Several crates of supplies lay about, containing
+tools, machine parts, and various supplies.  A ladder leads up to a brass
+hatch in the ceiling.  
+~
+0 0 0
+Rd     0
+D4
+~
+hatch~
+7 0 12144
+S
+#12147
+A Path~
+~
+~
+The narrow stone path leads east through the dense underbrush, and west
+towards a small waterfall.  All about you is the verdant foliage of a
+tropical forest, while far above you is a ceiling constructed of glass
+sections joined by a brass framework.  
+~
+0 0 0
+Rd     0
+D1
+~
+gate~
+7 12120 12149
+D3
+~
+~
+0 0 12145
+S
+#12148
+A Shadowed Clearing~
+~
+~
+This silent clearing seems to have been set aside for rest and
+meditation.  Ancient stone benches lie around, and the sounds of the
+arboretum are muted here.  The thick canopy blocks out most of the sunlight,
+although a break in the overhanging branches allows enough sunlight during
+the day to allow the large stone sundial in the center of the clearing to
+function.  
+~
+0 394248 0
+Rd     0
+D1
+~
+~
+0 0 12129
+S
+#12149
+The Baths~
+~
+~
+This large, mist-shrouded clearing contains a pool constructed of marble,
+and fed by a a series of terraced canals that send water cascading down. 
+You are approaching Zhyril's private chambers, which lay through an open
+doorway to the east.  
+~
+0 394240 0
+Rd     0
+D1
+~
+~
+0 0 12150
+D3
+~
+gate~
+7 12120 12147
+S
+#12150
+Zhyril's Chamber~
+~
+~
+This large chamber has been hewn out of solid stone.  There is little
+here except an enormous bed, and a large stone desk.  Tendrils of mist waft
+in from the west, through a large open doorway.  
+~
+0 394242 0
+Rd     0
+D3
+~
+~
+0 0 12149
+S
+#0
+
+
+
+#SPECIALS
+M 12069 spec_healer
+M 12071 spec_healer
+M 12091 spec_healer
+M 12132 spec_healer
+M 12144 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 12062 1 12062
+O 0 12063 0 12063
+O 0 12064 0 12064
+O 0 12065 0 12065
+M 0 12066 1 12066
+O 0 12066 0 12066
+M 0 12064 3 12066
+M 0 12067 1 12067
+E 0 12067 0 3
+O 0 12009 0 12068
+M 0 12069 1 12069
+O 0 12069 0 12069
+O 0 12001 0 12069
+M 0 12070 1 12070
+O 0 12070 0 12070
+M 0 12071 1 12075
+O 0 12072 0 12079
+O 0 12073 0 12079
+M 0 12072 1 12080
+O 0 12091 0 12091
+M 0 12092 1 12092
+M 0 12092 2 12093
+M 0 12092 2 12095
+O 0 12094 0 12095
+M 0 12091 1 12096
+M 0 12096 1 12097
+G 0 12096 0
+M 0 12097 2 12097
+O 0 12093 0 12098
+O 0 12064 0 12098
+M 0 12095 1 12098
+O 0 12002 0 12099
+O 0 12100 0 12099
+O 0 12010 0 12099
+M 0 12093 1 12100
+O 0 12092 0 12100
+O 0 12101 0 12101
+O 0 12004 0 12102
+M 0 12102 1 12102
+M 0 12104 1 12102
+O 0 12009 0 12103
+O 0 12001 0 12104
+O 0 12105 0 12105
+M 0 12105 1 12105
+O 0 12106 0 12106
+O 0 12121 0 12121
+O 0 12142 0 12125
+M 0 12125 1 12125
+O 0 12147 0 12125
+P 0 12125 0 12147
+P 0 12129 0 12147
+M 0 12126 1 12126
+M 0 12129 1 12127
+O 0 12128 0 12128
+O 0 12126 0 12129
+P 0 12127 0 12126
+P 0 12127 0 12126
+P 0 12127 0 12126
+M 0 12130 1 12130
+M 0 12131 1 12131
+M 0 12132 1 12132
+M 0 12133 1 12133
+M 0 12139 1 12139
+O 0 12139 0 12139
+O 0 12131 0 12140
+O 0 12132 0 12140
+O 0 12141 0 12141
+O 0 12141 0 12142
+O 0 12143 0 12143
+O 0 12144 0 12143
+O 0 12146 0 12146
+O 0 12147 0 12146
+P 0 12148 0 12147
+O 0 12145 0 12148
+O 0 12142 0 12148
+M 0 12144 1 12148
+G 0 12120 0
+E 0 12123 0 5
+M 0 12149 1 12149
+O 0 12124 0 12149
+O 0 12150 0 12150
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

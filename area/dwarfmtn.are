@@ -1,0 +1,1052 @@
+#AREADATA
+Name        { 20-40} Dwarf Mtn.~
+Builders    None~
+VNUMs       2100 2149
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Fui~
+Llevel      0
+Ulevel      0
+Music       krager.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#2119
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#2130
+carrier falcon~
+a carrier falcon~
+A hungry carrier falcon is perched here.
+~
+The carrier falcon is preening its feathers with a gigantic, sharp beak
+and eyeing you VERY watchfully.  He looks a little bored because there
+aren't any messages to carry up the mountain, and wonders if you might be an
+entertaining diversion.  
+~
+35 128 0 0 0 0 S
+15 1 30 30 200 200d0+0 0d0+3000
+150 0 0
+0 0 1
+0 0 0
+#2131
+dwarven sentry~
+a dwarven sentry~
+A hidden sentry is watching for intruders.
+~
+You see one of the elite dwarven home guards.  She is short, sleek and
+VERY fast.  Her cold, steel, grey eyes reflect many years in isolated posts
+protecting the empire ...  Certainly no lady to antagonize!  
+~
+3 65666 0 0 0 0 S
+20 1 40 40 400 400d0+0 0d0+4000
+200 0 0
+0 0 2
+0 0 0
+#2132
+mama falcon~
+the mama falcon~
+The mama falcon is here clucking contentedly.
+~
+The mother-to-be looks a little tired and haggard.  Her normally slim
+functional physique is now plump and too slow to carry on the normal duties
+of the carrier falcon.  She is more protective than usual however.  
+~
+35 16552 0 0 0 0 S
+25 1 50 50 450 450d0+0 0d0+6000
+250 0 0
+0 0 2
+0 0 0
+#2133
+carrier falcon~
+a carrier falcon~
+A hungry carrier falcon is perched here.
+~
+The carrier falcon is preening his feathers with a gigantic, razor sharp
+beak and drooling uncontrollably in your direction.  He looks hungry.  
+~
+35 128 0 0 0 0 S
+15 1 30 30 200 200d0+0 0d0+3000
+150 0 0
+0 0 1
+0 0 0
+#2134
+dwarven sentry~
+a dwarven sentry~
+A hidden sentry is looking for intruders.
+~
+~
+3 65666 0 0 0 0 S
+20 1 40 40 400 400d0+0 0d0+4000
+200 0 0
+0 0 1
+0 0 0
+#2135
+old man hermit~
+The old hermit~
+An old man sits here cooking his fish
+~
+His features worn and ravaged by the wind and water, this man nonetheless
+chooses to live on this shore.  He is a kind hearted soul, wanting nothing
+but to enjoy his last years.  
+~
+67 8232 16 0 0 1000 S
+20 1 40 40 500 500d0+0 0d0+2500
+200 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+,looks up as $n enters.
+say Aye! And a good day to ye!
+say Welcome, and take a load off yer feet.
+,shuffles around the shack, fixing you a bite to eat.
+say Ye wouldn't have seen a ship out in the distance, would ye?
+eye $n
+say The reason I ask, is that there be rumors of Vikings in these waters.
+mpoload 2143
+give fish $n
+say Here, have a bit o' supper. Ye won't be leavin' till yer full.
+smile $n
+~
+>speech_prog vikings~
+say Aye, they be maraudin' again.
+stretch
+say They never seem to bother me, though... I be too old to bother with.
+~
+>act_prog $n eats a juicy, baked fish.~
+mpforce $n sleep
+~
+>speech_prog vikings?~
+say Aye, they be maraudin' again.
+stretch
+say They never seem to bother me though... I be too old to bother with.
+~
+>speech_prog supper~
+say Aye, have some fish.
+mpoload 2143
+say Ye might go visible so I can see ye... my eyes aren't what they once were.
+give fish $n
+~
+>speech_prog supper?~
+say Aye, have some fish.
+mpoload 2143
+say Ye might go visible, so I can see ye... my eyes aren't what they once were.
+give fish $n
+~
+|
+#2136
+rattlesnake snake~
+a rattlesnake~
+A big gooshy snake is coiled here about to strike.
+~
+You've never seen a snake this long or huge before.  It's fangs are like
+needles dripping with venom, and it's scaly head is cocked at a sharp angle
+ready for the ultimate strike!  
+~
+35 73858 0 0 0 0 S
+15 1 30 30 200 200d0+0 0d0+4000
+150 0 0
+0 0 0
+0 0 0
+#2137
+old man hermit~
+the old hermit~
+The old man stands here, staring out at the ship
+~
+Garbed in a leather cloak and dark robes, the old man stands at the foot
+of the dock, staring out at the ship.  He looks as if he were preparing to
+do some fishing, but now, you're not so sure.  
+~
+3 8232 16 0 0 1000 S
+20 1 40 40 500 500d0+0 0d0+2500
+200 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+look $n
+say ahh, ye look so much better than yesterday!
+smile $n
+, looks back out over the water
+say there be the vikings, mate.
+~
+>act_prog p looks at you.~
+sigh
+say i was plannin on doin some fishin...
+say but i dinnae think it'd be safe now.
+look $n
+say but, feel free ta use me boat if ye like
+smile
+~
+|
+#0
+
+
+
+#OBJECTS
+#2131
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2140
+feather charm~
+a feather charm~
+A feather charm rests here.~
+~
+9 0 0 0 0 5 20
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+13 30
+A
+12 20
+#2141
+snake fangs~
+the snake fangs~
+Some very sharp snake fangs rest on the ground here.~
+~
+5 0 0 0 0 8193 20
+100 100
+0~ 6~ 20~ 11~
+3 120 0
+5 0
+poison~
+12 12
+0 0 0
+A
+2 2
+A
+3 -1
+A
+19 2
+A
+18 1
+#2142
+riding chaps~
+the riding chaps~
+The riding chaps are on the ground here.~
+~
+9 0 0 0 0 33 20
+100 100
+0~ 0~ 0~ 0~
+4 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 10
+A
+13 20
+A
+5 2
+A
+2 -1
+#2143
+juicy baked fish~
+a juicy, baked fish~
+A juicy, baked fish sits on a wooden plate~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2144
+cloak leather~
+a leather cloak~
+A crumbled cloak of leather lies in a heap~
+~
+9 0 0 0 0 5 20
+100 100
+0~ 0~ 0~ 0~
+2 60 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 20
+A
+12 20
+#2145
+fishing pole rod~
+a fishing pole~
+A fishing pole lies here~
+~
+9 1 16384 0 0 16385 20
+100 100
+0~ 0~ 0~ 0~
+1 20 0
+1 2146
+reserved~
+10 10
+0 0 0
+A
+18 2
+A
+4 1
+A
+3 1
+#2146
+fish~
+a fresh fish~
+A freshly caught fish flops on the ground~
+~
+19 0 0 0 0 1 1
+100 100
+15~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2147
+rowboat row boat~
+an old rowboat~
+An old rowboat sits tethered to the dock~
+~
+22 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+20 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#2100
+Forest Path~
+~
+~
+Tall pine grow on both sides of this dimly path.  As you crane your neck
+and look up you notice the branches above you swaying in a restless, very
+spooky manner.  Strange bird calls, almost like warnings, sound from the
+thick branches.  You begin to be a little worried when you realize this dark
+trail might be the perfect place for an ambush.  The trail thins out to the
+east.  
+~
+0 4 3
+Rd     0
+S
+#2101
+Twist In Forest Path~
+~
+~
+As you round the corner you notice huge boulders which look like they
+must have rolled and tumbled down a great distance blocking the sides of the
+trail.  You can just barely squeeze through to the north where it looks even
+darker than it is here.  
+~
+0 4 3
+Rd     0
+S
+#2102
+Base of Mountain~
+~
+~
+The brush and shrubs here rip and tear and cling annoyingly to your
+armor.  Bugs are dancing little sadistic bug dances in your face.  You begin
+to abandon yourself to wild swatting and cursing and you fervently wish
+you'ld taken a bath before starting out.  In your killing frenzy you almost
+don't notice obvious man made constructions to the east and west.  
+~
+0 4 3
+Rd     0
+D0
+~
+~
+0 0 2105
+D1
+~
+~
+0 0 2103
+D2
+~
+~
+0 0 17453
+D3
+~
+~
+0 0 2104
+S
+#2103
+Outpost~
+~
+~
+This is another a very stout, very dark, very formidible advance fighting
+enclosure.  There's hardly enough room to turn around and the peep hole
+slots are too low for you to comfortably use.  In your infinite wisdom you
+deduce short people, specifically ONE short people, is all that could fit in
+here, except a wierd bird which is tugging gently at your jugular.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 2102
+S
+#2104
+Outpost~
+~
+~
+You've escaped the bugs and brush by diving carelessly to your west.  As
+you land spread-eagled on your face, you can't help but notice the solidly
+hewn pine walls and little slots for spying or defensive fighting.  This
+looks like a forward-observer position complete with a very nasty looking
+bird which is even now towering over you preparing to slice your paltry
+equipment to ribbons.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2102
+S
+#2105
+Rocky Path~
+~
+~
+Rock fragments cover the path as you begin climbing a tall steep
+mountain.  Some of the rocks are blood stained and you notice old junk armor
+with holes pierced in vital places near the sides of the path.  This doesnt
+bother you, because you are invincible.  You can climb the mountain to the
+west, or follow the path around the mountain to the east.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 2112
+D2
+~
+~
+0 0 2102
+D3
+~
+~
+0 0 2106
+S
+#2106
+Small Cliff~
+~
+~
+The path ends here before a short cliff with convenient toe-holds in it
+so you can climb up.  It looks easy.  Maybe too easy ...  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 2105
+D4
+~
+~
+0 0 2107
+S
+#2107
+Treacherous Path~
+~
+~
+The oxygen is getting a little thin but, thankfully, so are the bugs.  As
+you look down you notice only one misstep separates you from a rather
+lengthy swan dive to the bottom.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2108
+D5
+~
+~
+0 0 2106
+S
+#2108
+Mountain Path~
+~
+~
+You continue huffing and puffing up the mountain.  The trees are thinning
+out and you see a wide panoramic view of the forest in the distance below. 
+This wouldn't be a pleasant place for an attack because the only spot to
+hide is in the recent avalanche of rocks and boulders to the east.  
+~
+0 4 5
+Rd     0
+D1
+~
+~
+0 0 2109
+D3
+~
+~
+0 0 2107
+S
+#2109
+Below Ledge~
+~
+~
+You grasp desparately for handholds among the few shrubs clinging to the
+steep mountainside and keep a weary eye out for snakes and other alpine
+predators.  As your precarious toe holds slip loose gravel clatters away and
+you curse the chaos which created this ridiculous mountain.  
+~
+0 0 5
+Rd     0
+D3
+~
+~
+0 0 2108
+D4
+~
+~
+0 0 2110
+S
+#2110
+Falcon Nest~
+~
+~
+This ledge is large enough for one falcon.  You notice she's made a comfy
+nest here of twigs and branches and bones, but you don't see any eggs.  You
+realize too late she is still building her nest and is, in fact, eyeing you
+right now as potential nesting material.  That exit to the west might be
+your only salvation.  
+~
+0 0 5
+Rd     0
+D3
+~
+~
+0 0 2111
+D5
+~
+~
+0 0 2109
+S
+#2111
+Sheer Drop~
+~
+~
+You catch the faint whiff of wild flowers here.  Looking down you can see
+a straight drop to the base of the mountain, and looking up you see a lot of
+sky...  But can't quite see what lurks at the top of this steep incline.  If
+you climb up, you'll probably find out though.  
+~
+0 0 5
+Rd     0
+D1
+~
+~
+0 0 2110
+D4
+~
+~
+0 0 700
+D5
+~
+~
+0 0 2103
+S
+#2112
+Bend in the Path~
+~
+~
+You reach a bend in the path as it curves around the mountainside. 
+Looking further north, you see the surrounding forest give way to a rather
+large cliff.  A very faint rhythmic rumble can be heard, and the ever so
+slight odor of saltwater can be detected.  The mountain itself extends out
+past the cliff, and the rocky path you are on now continues with it.  
+~
+0 0 5
+Rd     0
+D0
+~
+~
+0 0 2113
+D3
+~
+~
+0 0 2105
+S
+#2113
+Near The Cliff~
+~
+~
+The path continues in a slight upwards slope, preventing you from seeing
+what lies beyond the rim of the cliff, but the smell of salt-water and the
+pounding rumble are more prominent.  One can easily assume it to be an ocean
+of some sort.  From here you can tell though, that the path wraps around the
+front of the mountainside, preventing any further view from here.  The path
+you notice, is becoming a little more rough.  
+~
+0 0 5
+Rd     0
+D0
+~
+~
+0 0 2114
+D2
+~
+~
+0 0 2112
+S
+#2114
+Along the Edge~
+~
+~
+Travelling further along the path, you work your way out past the edge of
+the cliff.  Looking down some seventy five to one hundred feet, is the
+ocean, its dark green waves crashing mercilessly against the rocky base.  A
+fall at this point could prove to be fatal, and you press up against the
+wall of the mountain.  The path is getting a bit more rocky and treacherous,
+it might not be safe to continue further.  
+~
+0 0 5
+Rd     0
+D0
+~
+~
+0 0 2115
+D2
+~
+~
+0 0 2113
+S
+#2115
+Bend In The Path~
+~
+~
+The path takes a sharp upward turn to the west at this point, almost
+causing you to take a dive off the edge.  Peering over the edge, you see
+what appears to be a small alcove far below.  However, it is unaccessable
+from here, and you dont feeling like diving to your death just right now.  A
+rumble echoes from within the mountain, causing small rocks to become
+dislodged, and the ocassional chunk of the path to break free.  
+~
+0 0 5
+Rd     0
+D2
+~
+~
+0 0 2114
+D3
+~
+~
+0 0 2116
+S
+#2116
+Shattered!~
+~
+~
+As you walk along the path more, you begin to doubt your very safety. 
+Another loud rumble echoes from within the mountain, and suddenly the entire
+path begins to shake and rumble!  Its a quake, and you're caught right in
+the middle of it!  Without warning, the entire section of the path you are
+standing on, collapses, and you plummet down to the cold swirling waters
+below.  
+~
+0 33554432 5
+Rd     0
+D1
+~
+~
+0 0 2115
+D5
+~
+~
+0 0 2117
+S
+#2117
+Falling!~
+~
+~
+Nothing but fear and panic ensue as you plummet to your death.  Nothing
+is with reach to grab, and the only cushion at the bottom is the raging
+waves and jagged rocks.  
+~
+0 33554432 5
+Rd     0
+D4
+~
+~
+0 0 2116
+D5
+~
+~
+0 0 2118
+S
+#2118
+Falling!~
+~
+~
+As you gain more speed, your heart begins to thunder in your chest.  The
+stinging in your eyes prevents you from opening them, but you know the end
+is soon.  You wonder how many other adventurers fell to their death along
+these shores.  
+~
+0 33554432 0
+Rd     0
+D4
+~
+~
+0 0 2117
+D5
+~
+~
+0 0 2119
+S
+#2119
+Falling!~
+~
+~
+The world around begins to blur as you gain even more speed.  The cliff
+above spirals awckwardly, as your body twists and turns in the wind.  The
+icy spray of water washes over you as a wave crashes below.  Yes this is the
+end.  
+~
+0 33554432 0
+Rd     0
+D4
+~
+~
+0 0 2118
+D5
+~
+~
+0 0 2121
+S
+#2120
+Fui's Spot~
+~
+~
+~
+0 393228 0
+Rd     0
+S
+#2121
+The Rocky Shoreline~
+~
+~
+You slam into the surface of the water with a thunderous SPLASH!  The
+rough waves smash and buffet you into the rocks around, as you struggle to
+get to the surface.  You fight your way to the surface, the shifting glare
+of sunlight as your guide, and grab onto a nearby outcropping.  The pounding
+surf begins to take its toll on you, and you desperately make your way to
+the shore.  
+~
+0 268435456 0
+Rd     10
+D3
+~
+~
+0 0 2122
+D4
+~
+~
+0 0 2119
+S
+#2122
+Rocky Shore~
+~
+~
+Fighting the pounding waves and strong undertow, you make your way onto
+the shore.  Catching your breath, and making sure no vital gear was lost,
+you look up.  The path high above, looks like a bite was taken out of it. 
+Huge chunks of rock and gravel litter the ground around you, presumably what
+was left of the path.  The shore continues to the north.  The huge, towering
+walls of the cliffs and mountain enclose the shore, making it quite
+inaccessable by natural means.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2123
+D1
+~
+~
+0 0 2121
+S
+#2123
+Rocky Shore~
+~
+~
+Making your way along the shore, you wonder how you can make it back up
+that cliff.  Flight seems to be the only option.  The pounding surf seems to
+lessen a bit as you walk, but not by much.  A little further north, you can
+make out a small shack, and beyond that, what looks like a small dock.  As
+you walk, the sun dips behind the rim of the towering cliff, causing a wave
+of slight darkness to cover the shore.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2122
+S
+#2124
+Rocky Shore~
+~
+~
+After walking a few dozen yards or so, you come up to the entrance of the
+shack.  The wind howls like an enraged banshee, whistling through every
+crack of the frail wooden structure.  A large sheet of tattered leather
+covers the front entrance, and numerous skeletons of fish and birds litter
+the ground.  You think to yourself "this seems like a good place to stay for
+now", when suddenly the odor of cooked fish floats out of the doorway.  A
+dim blue glow can be seen in the shack, only noticable in the darkness.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2132
+D3
+~
+~
+3 0 2125
+S
+#2125
+Hermits Shack~
+~
+~
+Stepping inside this humble shack, you come face to face with an old man.
+He looks up at you slightly as he cooks his fish, and upon seeing the
+soaked, beaten expression on your face, kindly offers a mat to rest on.  The
+inside of this hut glows with a soft blue light, perhaps it is magic that
+prevents the wind from destroying the shack completely.  
+~
+0 12 0
+Rd     0
+D1
+~
+~
+3 0 2124
+D2
+~
+~
+0 0 2126
+S
+#2126
+Hermits Shack~
+~
+~
+Stepping inside this humble shack, you come face to face with an old man.
+He looks up at you slightly as he cooks his fish, and upon seeing the
+soaked, beaten expression on your face, kindly offers a mat to rest on.  The
+inside of this hut glows with a soft blue light, perhaps it is magic that
+prevents the wind from destroying the shack completely.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 2125
+D1
+~
+~
+0 0 2127
+S
+#2127
+Rocky Shore~
+~
+~
+Stepping out of the shack, you wipe the sleep away from your eyes, only
+to find your surroundings changed.  The high tide has risen, blocking off
+the rest of the shore to the south.  Towards the north lies the dock, and
+from here you can see the tall masts of the viking ship.  Looks like the
+hermit wasnt kidding about what he said.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2128
+D3
+~
+~
+0 0 2126
+S
+#2128
+Rocky Shore~
+~
+~
+The dock is in rather shoddy condition, weather and time have both taken
+their toll on the wooden planks.  A small boat is tethered to one side,
+gently rocking with the current, and everything is surrounded by a light
+blue aura.  From here, you can get a better glimpse of the huge viking ship.
+Its not more than a hundred yards off shore, and you might be able to row
+out to it.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2129
+D2
+~
+~
+0 0 2127
+S
+#2129
+On the Ocean~
+~
+~
+You waste no time in shoving off the docks, and rowing out to the huge
+ship before you.  The sea is rather calm today, and you row with very little
+strain or effort.  You watch as the old man walks back to the shack, and
+cant help but wonder how he knew the ship would be here soon.  
+~
+0 0 7
+Rd     0
+D0
+~
+~
+0 0 2130
+D2
+~
+~
+0 0 2128
+S
+#2130
+On The Ocean~
+~
+~
+The rocky shore line gradually disappears as you encounter some waves. 
+It seems you are caught in the wake of the massive ship before you.  Its not
+too rough though, and easily managed.  As you get closer to the ship, you
+notice someone left a rope ladder hanging carelessly out of one of the open
+portholes.  
+~
+0 0 7
+Rd     0
+D2
+~
+~
+0 0 2129
+S
+#2131
+Alongside The Ship~
+~
+~
+Despite the wake, and resulting turbulance, you manage to row up
+alongside the ship.  Just above you is the bottom rung of the rope ladder,
+easily within reach.  You marvel at the size of this huge craft.  Are they
+settlers?  Or is this a viking warship?  The answers lie at the end of that
+rope ladder.  
+~
+0 0 6
+Rd     0
+D0
+~
+~
+0 0 17320
+D4
+~
+~
+0 0 1101
+S
+#2132
+Rocky Shore~
+~
+~
+The dock is in rather shoddy condition, weather and time have both taken
+their toll on the wooden planks.  A small boat is tethered to one side,
+gently recking with the current, and everything is surrounded by a light
+blue aura.  Off to the west, you notice a very narrow path, cut through the
+cliff face.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2124
+S
+#0
+
+
+
+#SPECIALS
+M 2135 spec_healer
+M 2136 spec_poison
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 2130 1 2103
+M 0 2131 1 2103
+E 0 2142 0 11
+M 0 2133 1 2104
+M 0 2134 1 2104
+E 0 2142 0 11
+M 0 2136 1 2109
+E 0 2141 0 20
+M 0 2132 1 2110
+E 0 2140 0 3
+M 0 2135 1 2125
+M 0 2137 1 2128
+E 0 2144 0 3
+E 0 2145 0 22
+O 0 2147 0 2128
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

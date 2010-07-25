@@ -1,0 +1,273 @@
+#AREADATA
+Name        New area~
+Builders    None~
+VNUMs       32200 32299
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     None~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#32202
+ferry pilot~
+the ferry pilot~
+A ferry pilot stands here, smoking a pipe and waiting for the passengers to finish boarding.
+~
+A laconic old sailor.
+~
+3 0 0 0 1 0 S
+120 1 240 240 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+look $n
+say If'n ye want to cross over to Mystral, it cost ye.
+say 100 coins, no haggling.
+~
+>bribe_prog 100~
+say Alright, let's go.
+emote leads $n aboard the ferry.
+mptrans $n 32205
+mpecho Sailors cast off the lines, and the ferry sails off to the west.
+mppurge self
+~
+|
+#32205
+ferry pilot~
+the ferry pilot~
+The ferry pilot sits at the rudder, controlling the vessel.
+~
+A taciturn old sailor.
+~
+3 0 0 0 3 0 S
+117 1 234 234 0 2000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>rand_prog 40~
+mpecho The waves lap against the side of the ferry.
+~
+>rand_prog 30~
+mpecho The mast creaks as the steady breeze is caught by the sail.
+mptrans $r 32206
+~
+|
+#32206
+ferry pilot~
+the ferry pilot~
+The ferry pilot sits at the rudder, controlling the vessel.
+~
+A taciturn old sailor.
+~
+67 0 0 0 3 0 S
+117 1 234 234 0 2001d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>rand_prog 20~
+mpecho The waves lap against the side of the ferry.
+~
+>rand_prog 20~
+mpecho The ferry cuts smoothly through the water.
+mpecho Far off to the west, you can make out an island on the horizon.
+mptrans $r 32207
+~
+|
+#32207
+ferry pilot~
+the ferry pilot~
+The ferry pilot sits at the rudder, controlling the vessel.
+~
+A taciturn old sailor.
+~
+67 40 16 0 3 0 S
+117 1 234 234 0 0d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>rand_prog 20~
+mpecho A school of flying fish erupt from the water beside the ferry.
+~
+>rand_prog 20~
+mpecho The isle to the west grows nearer.
+mptrans $r 32208
+~
+|
+#32208
+ferry pilot~
+the ferry pilot~
+The ferry pilot is here, carefully maneuvering the ferry into the port.
+~
+A taciturn old sailor.
+~
+67 40 16 0 3 0 S
+117 1 234 234 0 0d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>rand_prog 10~
+mpecho The ferry pulls up to an ancient wooden pier.
+mpecho The sailors aboard the ferry toss lines and prepare for disembarking.
+~
+>rand_prog 30~
+say We've arrived at Mystral Isle.
+say Everyone out.
+mpecho You quickly disembark with the other passengers.
+mptrans $r 32209
+~
+|
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMDATA
+#32200
+The Pier~
+~
+~
+This large pier juts out into the ocean to the west.  The aged planks
+creak under your feet, and the water laps at the barnacle-encrusted pilings.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 32201
+S
+#32201
+The Pier~
+~
+~
+You have reached the halfway point of the pier.  Old ropes and crates lie
+about, and dark sea swirls around the tall pilings which hold up the wharf. 
+To the west the pier ends.  
+~
+0 131072 0
+Rd     0
+D1
+~
+~
+0 0 32200
+D3
+~
+~
+0 0 32202
+S
+#32202
+Pier's End~
+~
+~
+The pier ends at this point.  There seems to be some traffic along this
+stretch of coast; you make out several vessels slowly cruising the waters
+here.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 32201
+S
+#32205
+Aboard the Ferry~
+~
+~
+This large, leaky vessel plies the waters between Mystral Isle and the
+continent.  Though not too crowded, there are quite a few passengers aboard,
+sitting on the rows of wooden benches that have been set up on the main
+deck.  A platform above your heads protects you from the elements.  
+~
+0 434190 0
+Rd     0
+S
+#32206
+Aboard the Ferry~
+~
+~
+This large, leaky vessel plies the waters between Mystral Isle and the
+continent.  Though not too crowded, there are quite a few passengers aboard,
+sitting on the rows of wooden benches that have been set up on the main
+deck.  A platform above your heads protects you from the elements.  
+~
+0 434180 0
+Rd     0
+S
+#32207
+Aboard the Ferry~
+~
+~
+This large, leaky vessel plies the waters between Mystral Isle and the
+continent.  Though not too crowded, there are quite a few passengers aboard,
+sitting on the rows of wooden benches that have been set up on the main
+desck.  A platform above your heads protects you from the elements.  
+~
+0 425990 0
+Rd     0
+S
+#32208
+Aboard the Ferry~
+~
+~
+This large, leaky vessel plies the waters between Mystral Isle and the
+continent.  Though not too crowded, there are quite a few passengers aboard,
+sitting on the rows of wooden benches that have been set up on the main
+desck.  A platform above your heads protects you from the elements.  
+~
+0 427022 0
+Rd     0
+S
+#32209
+An Old Pier~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#32210
+The Harbor~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 32202 1 32202
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

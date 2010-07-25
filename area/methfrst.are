@@ -1,0 +1,4704 @@
+#AREADATA
+Name        { 50-75} Methic Forest (P)~
+Builders    Balthazar~
+VNUMs       26301 26550
+Security    100
+Recall      4006
+Flags       128
+Version     107
+Creator     Balthazar~
+Llevel      0
+Ulevel      0
+Music       u7_theme.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#26306
+Great Bear Tooth Necklace~
+a Great Bear Tooth Necklace~
+A necklace made out of teeth lies here.~
+~
+9 2 0 0 0 5 59
+100 100
+0~ 0~ 0~ 0~
+3 588 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+A
+12 -15
+A
+13 -10
+A
+5 1
+#26307
+great Bear Claws~
+great Bear Claws~
+Some very sharp looking claws lie here.~
+~
+9 0 0 0 0 65 59
+100 100
+0~ 0~ 0~ 0~
+5 588 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 4
+A
+18 6
+A
+25 10
+A
+24 -1
+#26311
+Wooly Mammoth Trunk~
+a Wooly Mammoth Trunk~
+A Wooly Mammoth Trunk lies here.~
+~
+9 0 0 0 0 65537 57
+100 100
+0~ 0~ 0~ 0~
+6 568 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 9
+A
+19 2
+A
+4 -1
+A
+13 23
+A
+14 -35
+#26312
+Great Wolf Grey Pelt~
+a Great Wolf Grey Pelt~
+A greyish colored animal skin lies here.~
+~
+9 0 0 0 0 9 50
+100 100
+0~ 0~ 0~ 0~
+4 228 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+A
+13 12
+A
+23 -2
+#26313
+Great Wolf Black Pelt~
+a Great Wolf Black Pelt~
+A black animal skin lies on the ground.~
+~
+9 0 0 0 0 9 50
+100 100
+0~ 0~ 0~ 0~
+6 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 16
+A
+19 12
+A
+13 20
+A
+12 10
+A
+2 1
+#26314
+Great Wolf Silver Pelt~
+a Great Wolf Silver Pelt~
+An extremely rare, beutiful silver animal skin lies here.~
+~
+9 2 0 0 0 9 52
+100 100
+0~ 0~ 0~ 0~
+4 520 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 17
+A
+18 16
+A
+13 -10
+A
+23 -2
+A
+24 -3
+#26315
+great Elk Antlers~
+great Elk Antlers~
+A very large set of antlers lies here.~
+~
+9 1 0 0 0 17 56
+100 100
+0~ 0~ 0~ 0~
+6 560 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 4
+A
+19 8
+A
+24 -3
+A
+23 -3
+#26316
+great Elk Hooves~
+great Elk Hooves~
+A pair of hooves lay here.~
+~
+9 0 0 0 0 65 56
+100 100
+0~ 0~ 0~ 0~
+6 356 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 6
+A
+19 6
+A
+13 5
+#26317
+auroch Horns~
+auroch Horns~
+A set of mean looing horns laies here.~
+~
+9 0 0 0 0 17 57
+100 100
+0~ 0~ 0~ 0~
+5 412 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 7
+A
+19 4
+A
+5 1
+A
+3 -1
+A
+25 10
+A
+23 2
+#26318
+Auroch Pelt~
+an Auroch Pelt~
+A heavy animal skin lies here.~
+~
+9 0 0 0 0 9 57
+100 100
+0~ 0~ 0~ 0~
+3 248 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 4
+A
+18 19
+A
+24 -7
+#26319
+Baluchitherium Hide~
+a Baluchitherium Hide~
+A thick animal hide lies here.~
+~
+9 0 0 0 0 9 57
+100 100
+0~ 0~ 0~ 0~
+8 224 0
+5 0
+stone skin~
+-1 -1
+0 0 0
+A
+19 14
+A
+18 10
+A
+13 20
+#26320
+Equitarius Mane~
+an Equitarius Mane~
+A mane lies on the ground here, waiting for your usage.~
+~
+9 0 0 0 0 1025 46
+100 100
+0~ 0~ 0~ 0~
+3 460 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 5
+A
+18 8
+A
+13 10
+A
+26 -10
+#26322
+pterodactyl Wings~
+pterodactyl Wings~
+A pair of leathery wings lies here.~
+~
+9 3 0 0 0 257 43
+100 100
+0~ 0~ 0~ 0~
+3 428 0
+0 0
+fly~
+0 0
+0 0 0
+A
+119 -1
+A
+19 4
+A
+18 3
+A
+24 3
+A
+23 -2
+#26323
+Wooly Spider~
+wooly Spider Fangs~
+Some very sharp fangs lie here~
+~
+5 16384 0 0 0 8193 41
+100 100
+0~ 0~ 0~ 10~
+3 408 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 -10
+A
+18 12
+A
+19 15
+#26324
+Cyanodictis Hide~
+a Cyanodictis Hide~
+A very ordinary hide lies here.~
+~
+9 0 0 0 0 9 40
+100 100
+0~ 0~ 0~ 0~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 4
+A
+18 4
+A
+2 1
+#26325
+mesohippus Hooves~
+mesohippus Hooves~
+A pair of black hooves lie here.~
+~
+9 1 0 0 0 65 42
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 -1
+A
+5 1
+A
+23 4
+A
+24 -2
+A
+13 5
+A
+18 2
+A
+19 3
+#26326
+Yeti Fur Bracelets~
+a Yeti Fur Bracelet~
+A bracelet made from fur as white as snow lies here.~
+~
+9 3 0 0 0 4097 66
+100 100
+0~ 0~ 0~ 0~
+3 660 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+A
+23 -3
+A
+24 -6
+A
+13 50
+A
+18 8
+A
+19 8
+#26327
+yeti Boots~
+yeti Boots~
+A pair of thickly furred boots lies here~
+~
+9 0 0 0 0 65 66
+100 100
+0~ 0~ 0~ 0~
+6 660 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 10
+A
+13 15
+A
+18 7
+A
+18 7
+#26328
+Sword of Ice~
+a Sword of Ice~
+A razor sharp sword formed out of ice lies here.~
+~
+5 134217763 0 0 0 8193 69
+100 100
+0~ 0~ 0~ 6~
+8 688 0
+5 0
+icestorm~
+20 20
+0 0 0
+A
+1 -1
+A
+13 -25
+A
+23 -4
+A
+24 -7
+A
+26 -15
+A
+19 21
+A
+18 15
+#26329
+Cloak of Ice~
+a Cloak of Ice~
+A cloak made out of pure ice lies here.~
+~
+9 134217795 0 0 0 1025 69
+100 100
+0~ 0~ 0~ 0~
+8 688 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 10
+A
+12 35
+A
+13 -10
+A
+24 -7
+A
+23 4
+A
+18 4
+A
+19 8
+#26330
+Dragon's Aura~
+a Dragon's Aura~
+A magical looking aura lies on the ground.~
+~
+9 201589315 8195 0 0 32769 75
+100 100
+0~ 0~ 0~ 0~
+4 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+A
+2 -1
+A
+1 -2
+A
+3 1
+A
+5 1
+A
+4 1
+A
+25 8
+A
+12 50
+A
+13 -25
+A
+23 -20
+A
+18 12
+A
+19 8
+#26331
+Ice Anklet~
+an Ice Anklet~
+An anklet made from ice lies here.~
+~
+9 201589315 8203 0 0 1048577 75
+100 100
+0~ 0~ 0~ 0~
+6 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 -1
+A
+25 4
+A
+12 10
+A
+13 25
+A
+18 3
+A
+19 6
+#26332
+Dragon's Claw~
+a Dragon's Claw~
+A claw with very long talons lies here.~
+~
+5 201589315 11 0 0 8193 75
+100 100
+0~ 0~ 0~ 5~
+5 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+102 -1
+A
+26 -25
+A
+4 1
+A
+24 5
+A
+24 5
+A
+18 21
+A
+19 24
+#26333
+Tiger Fangs~
+sabre-Toothed Tiger Fangs~
+Some six inch long fangs are here.~
+~
+5 32 0 0 0 8193 55
+100 100
+0~ 0~ 0~ 10~
+5 548 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 18
+A
+2 1
+#26500
+no name~
+(no short description)~
+(no description)~
+~
+32 0 0 0 0 2097153 0
+100 100
+0~ 0~ 0~ reserved~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#26301
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4099
+D1
+~
+~
+0 0 26302
+S
+#26302
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26305
+D2
+~
+~
+0 0 26303
+D3
+~
+~
+0 0 26301
+S
+#26303
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26302
+D2
+~
+~
+0 0 26304
+S
+#26304
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26303
+S
+#26305
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26306
+D3
+~
+~
+0 0 26302
+S
+#26306
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26307
+D2
+~
+~
+0 0 26305
+S
+#26307
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26308
+D2
+~
+~
+0 0 26306
+S
+#26308
+Deeper into the Forest~
+~
+~
+~
+0 134488065 0
+Rd     0
+D3
+~
+~
+0 0 26307
+S
+#26309
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4024
+D2
+~
+~
+0 0 26310
+S
+#26310
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26309
+D1
+~
+~
+0 0 26311
+D3
+~
+~
+0 0 26314
+S
+#26311
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26312
+D3
+~
+~
+0 0 26310
+S
+#26312
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26311
+D3
+~
+~
+0 0 26313
+S
+#26313
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26312
+S
+#26314
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26310
+D2
+~
+~
+0 0 26315
+D3
+~
+~
+0 0 26317
+S
+#26315
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26314
+D2
+~
+~
+0 0 26316
+S
+#26316
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26315
+D3
+~
+~
+0 0 26319
+S
+#26317
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26314
+D3
+~
+~
+0 0 26318
+S
+#26318
+Dead End~
+~
+~
+The forest once again refuses you passage.  It appears that the only exit
+is to the east.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26317
+S
+#26319
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26316
+D3
+~
+~
+0 0 26320
+S
+#26320
+Dead End~
+~
+~
+A dead tree blocks your path to the west.  Looking around, you realize
+that your only option is to leave the way you came in.  
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26319
+S
+#26321
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 4026
+D2
+~
+~
+0 0 26322
+S
+#26322
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26321
+D2
+~
+~
+0 0 26323
+S
+#26323
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26322
+D3
+~
+~
+0 0 26324
+S
+#26324
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26323
+D3
+~
+~
+0 0 26325
+S
+#26325
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26326
+D1
+~
+~
+0 0 26324
+D2
+~
+~
+0 0 26327
+D3
+~
+~
+0 0 26394
+S
+#26326
+A Bubbling Hot Spring~
+~
+~
+Out of the Forest, comes a startling sight.  In the middle of a small
+clearing is a bubbling hot spring, which provides welcome relief from the
+cold.  Although the spring isn't really "hot", since it is moderated by the
+extremely cold air, it is lukewarm, and provides an excellent place to relax
+for a while.  However, it also provides an excellent hunting ground.  
+~
+0 134479873 3
+Rd     0
+D2
+~
+~
+0 0 26325
+S
+#26327
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26325
+D2
+~
+~
+0 0 26328
+S
+#26328
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26327
+D1
+~
+~
+0 0 26329
+S
+#26329
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26330
+D2
+~
+~
+0 0 26331
+D3
+~
+~
+0 0 26328
+S
+#26330
+Dead End~
+~
+~
+The forest is impassable here, as the tres merge together, becoming a
+great tangled mass.  You will have to turn around and find another way out
+of this place.  
+~
+0 134488065 3
+Rd     0
+D3
+~
+~
+0 0 26329
+S
+#26331
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26329
+D2
+~
+~
+0 0 26332
+S
+#26332
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26331
+D1
+~
+~
+0 0 26333
+D2
+~
+~
+0 0 26339
+S
+#26333
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26334
+D2
+~
+~
+0 0 26338
+D3
+~
+~
+0 0 26332
+S
+#26334
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26335
+D3
+~
+~
+0 0 26333
+S
+#26335
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26336
+D3
+~
+~
+0 0 26334
+S
+#26336
+Deeper into the Forest~
+~
+~
+You walk through the forest, relaxing in the cool breeze.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26335
+D2
+~
+~
+0 0 26337
+S
+#26337
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26336
+S
+#26338
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26333
+S
+#26339
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26332
+D3
+~
+~
+0 0 26340
+S
+#26340
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26339
+D2
+~
+~
+0 0 26341
+S
+#26341
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26340
+D1
+~
+~
+0 0 26342
+D3
+~
+~
+0 0 26371
+S
+#26342
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26343
+D3
+~
+~
+0 0 26341
+S
+#26343
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26344
+D3
+~
+~
+0 0 26342
+S
+#26344
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26343
+D1
+~
+~
+0 0 26345
+S
+#26345
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26346
+D3
+~
+~
+0 0 26344
+S
+#26346
+Deeper into the Forest~
+~
+~
+~
+0 270337 3
+Rd     0
+D2
+~
+~
+0 0 26347
+D3
+~
+~
+0 0 26345
+S
+#26347
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26346
+D1
+~
+~
+0 0 26348
+D2
+~
+~
+0 0 26354
+S
+#26348
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26349
+D3
+~
+~
+0 0 26347
+S
+#26349
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26350
+D2
+~
+~
+0 0 26352
+D3
+~
+~
+0 0 26348
+S
+#26350
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26351
+D2
+~
+~
+0 0 26353
+D3
+~
+~
+0 0 26349
+S
+#26351
+Dead End~
+~
+~
+The forest becomes impenetrable again here.  You hear the wild howls of
+animals off in the distance.  
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26350
+S
+#26352
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26349
+D1
+~
+~
+0 0 26353
+S
+#26353
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26350
+D3
+~
+~
+0 0 26352
+S
+#26354
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26347
+D2
+~
+~
+0 0 26356
+D3
+~
+~
+0 0 26355
+S
+#26355
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26354
+S
+#26356
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26354
+D1
+~
+~
+0 0 26357
+D2
+~
+~
+0 0 26362
+D3
+~
+~
+0 0 26363
+S
+#26357
+Deeper into the Forest~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26358
+D3
+~
+~
+0 0 26356
+S
+#26358
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26359
+D3
+~
+~
+0 0 26357
+S
+#26359
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26358
+D1
+~
+~
+0 0 26360
+S
+#26360
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26361
+D3
+~
+~
+0 0 26359
+S
+#26361
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26360
+S
+#26362
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26356
+S
+#26363
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26356
+D2
+~
+~
+0 0 26364
+D3
+~
+~
+0 0 26365
+S
+#26364
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26363
+S
+#26365
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26366
+D1
+~
+~
+0 0 26363
+S
+#26366
+Deeper into the Forest~
+~
+~
+~
+0 134225921 3
+Rd     0
+D0
+~
+~
+0 0 26367
+D2
+~
+~
+0 0 26365
+S
+#26367
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26366
+D3
+~
+~
+0 0 26368
+S
+#26368
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26367
+D2
+~
+~
+0 0 26369
+D3
+~
+~
+0 0 26370
+S
+#26369
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26368
+S
+#26370
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26368
+S
+#26371
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26341
+D3
+~
+~
+0 0 26372
+S
+#26372
+Deeper into the Forest~
+~
+~
+~
+0 134488064 3
+Rd     0
+D1
+~
+~
+0 0 26371
+D3
+~
+~
+0 0 26373
+S
+#26373
+Deeper into the Forest~
+~
+~
+~
+0 134488064 3
+Rd     0
+D1
+~
+~
+0 0 26372
+D2
+~
+~
+0 0 26374
+D3
+~
+~
+0 0 26380
+S
+#26374
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26373
+D2
+~
+~
+0 0 26375
+S
+#26375
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26374
+D2
+~
+~
+0 0 26376
+S
+#26376
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26375
+D3
+~
+~
+0 0 26377
+S
+#26377
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26376
+D3
+~
+~
+0 0 26378
+S
+#26378
+~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26379
+D1
+~
+~
+0 0 26377
+S
+#26379
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26378
+S
+#26380
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26381
+D1
+~
+~
+0 0 26373
+S
+#26381
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26382
+D2
+~
+~
+0 0 26380
+S
+#26382
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26381
+D3
+~
+~
+0 0 26383
+S
+#26383
+Deeepr into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26384
+D1
+~
+~
+0 0 26382
+S
+#26384
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26385
+D2
+~
+~
+0 0 26383
+S
+#26385
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26386
+D2
+~
+~
+0 0 26384
+S
+#26386
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26387
+D3
+~
+~
+0 0 26385
+S
+#26387
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26391
+D2
+~
+~
+0 0 26388
+D3
+~
+~
+0 0 26386
+S
+#26388
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26387
+D1
+~
+~
+0 0 26389
+S
+#26389
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26390
+D3
+~
+~
+0 0 26388
+S
+#26390
+Dead End~
+~
+~
+The forest is not passable here.  Various rubble lines the ground, and
+the trees are much too close together to allow you to walk through them. 
+The only exit is back to the west , although you notice a ledge jutting out
+of a cliff face about 70 feet up.  You wonder if it would be possible to get
+there by climbing a tree...  
+~
+0 134488065 3
+Rd     0
+D3
+~
+~
+0 0 26389
+D4
+~
+~
+3 0 26603
+S
+#26391
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26392
+D2
+~
+~
+0 0 26387
+S
+#26392
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26393
+D2
+~
+~
+0 0 26391
+S
+#26393
+Deeper into the Forest~
+~
+~
+~
+0 134225921 3
+Rd     0
+D1
+~
+~
+0 0 26394
+D3
+~
+~
+0 0 26392
+S
+#26394
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26325
+D3
+~
+~
+0 0 26393
+S
+#26395
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26396
+D2
+~
+~
+0 0 4041
+S
+#26396
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26397
+D2
+~
+~
+0 0 26395
+S
+#26397
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26396
+D3
+~
+~
+0 0 1301
+S
+#26398
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26399
+D3
+~
+~
+0 0 4041
+S
+#26399
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26398
+D2
+~
+~
+0 0 26400
+S
+#26400
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26399
+D1
+~
+~
+0 0 26401
+S
+#26401
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26402
+D3
+~
+~
+0 0 26400
+S
+#26402
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26401
+S
+#26403
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26404
+D3
+~
+~
+0 0 4046
+S
+#26404
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26405
+D3
+~
+~
+0 0 26403
+S
+#26405
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26422
+D3
+~
+~
+0 0 26404
+S
+#26406
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26407
+D3
+~
+~
+0 0 4049
+S
+#26407
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26408
+D3
+~
+~
+0 0 26406
+S
+#26408
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26409
+D3
+~
+~
+0 0 26407
+S
+#26409
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26408
+D2
+~
+~
+0 0 26410
+S
+#26410
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26409
+D2
+~
+~
+0 0 26411
+S
+#26411
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26410
+D2
+~
+~
+0 0 26412
+S
+#26412
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26411
+D1
+~
+~
+0 0 26596
+D2
+~
+~
+0 0 26413
+S
+#26413
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26412
+S
+#26414
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26415
+D2
+~
+~
+0 0 26419
+D3
+~
+~
+0 0 4090
+S
+#26415
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26420
+D2
+~
+~
+0 0 26414
+S
+#26416
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26421
+D2
+~
+~
+0 0 26417
+S
+#26417
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26416
+D2
+~
+~
+0 0 26418
+S
+#26418
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26417
+D3
+~
+~
+0 0 26419
+S
+#26419
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26414
+D1
+~
+~
+0 0 26418
+S
+#26420
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26421
+D2
+~
+~
+0 0 26415
+S
+#26421
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26416
+D3
+~
+~
+0 0 26420
+S
+#26422
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26423
+D3
+~
+~
+0 0 26405
+S
+#26423
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26424
+D3
+~
+~
+0 0 26422
+S
+#26424
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26423
+D1
+~
+~
+0 0 26446
+D2
+~
+~
+0 0 26425
+S
+#26425
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26424
+D2
+~
+~
+0 0 26426
+S
+#26426
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26425
+D2
+~
+~
+0 0 26427
+S
+#26427
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26426
+D2
+~
+~
+0 0 26428
+S
+#26428
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26427
+D2
+~
+~
+0 0 26429
+D3
+~
+~
+0 0 26593
+S
+#26429
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26428
+D2
+~
+~
+0 0 26430
+S
+#26430
+Deeper into the Forest~
+~
+~
+~
+0 134488064 3
+Rd     0
+D0
+~
+~
+0 0 26429
+D2
+~
+~
+0 0 26431
+S
+#26431
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26430
+D2
+~
+~
+0 0 26432
+S
+#26432
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26431
+D1
+~
+~
+0 0 26568
+D2
+~
+~
+0 0 26433
+S
+#26433
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26432
+D2
+~
+~
+0 0 26434
+S
+#26434
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26433
+D2
+~
+~
+0 0 26435
+S
+#26435
+Deeper into the Forest~
+~
+~
+~
+0 134488065 0
+Rd     0
+D0
+~
+~
+0 0 26434
+D2
+~
+~
+0 0 26436
+S
+#26436
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26435
+D2
+~
+~
+0 0 26437
+S
+#26437
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26436
+D2
+~
+~
+0 0 26438
+S
+#26438
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26437
+D1
+~
+~
+0 0 26439
+S
+#26439
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26440
+D3
+~
+~
+0 0 26438
+S
+#26440
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26441
+D3
+~
+~
+0 0 26439
+S
+#26441
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26442
+D3
+~
+~
+0 0 26440
+S
+#26442
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26441
+D2
+~
+~
+0 0 26443
+S
+#26443
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26442
+D2
+~
+~
+0 0 26444
+S
+#26444
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26443
+D2
+~
+~
+0 0 26445
+S
+#26445
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26444
+S
+#26446
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26447
+D3
+~
+~
+0 0 26424
+S
+#26447
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26448
+D1
+~
+~
+0 0 26491
+D2
+~
+~
+0 0 26460
+D3
+~
+~
+0 0 26446
+S
+#26448
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26449
+D2
+~
+~
+0 0 26447
+S
+#26449
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26450
+D2
+~
+~
+0 0 26448
+S
+#26450
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26451
+D2
+~
+~
+0 0 26449
+S
+#26451
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26452
+D2
+~
+~
+0 0 26450
+S
+#26452
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26453
+D2
+~
+~
+0 0 26451
+S
+#26453
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26454
+D1
+~
+~
+0 0 26471
+D2
+~
+~
+0 0 26452
+S
+#26454
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26455
+D2
+~
+~
+0 0 26453
+S
+#26455
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26456
+D2
+~
+~
+0 0 26454
+S
+#26456
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26455
+D3
+~
+~
+0 0 26457
+S
+#26457
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26456
+D3
+~
+~
+0 0 26458
+S
+#26458
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26457
+D3
+~
+~
+0 0 26459
+S
+#26459
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26458
+S
+#26460
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26447
+D2
+~
+~
+0 0 26461
+S
+#26461
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26460
+D2
+~
+~
+0 0 26462
+S
+#26462
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26461
+D2
+~
+~
+0 0 26463
+S
+#26463
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26462
+D2
+~
+~
+0 0 26464
+S
+#26464
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26463
+D1
+~
+~
+0 0 26465
+S
+#26465
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26466
+D3
+~
+~
+0 0 26464
+S
+#26466
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26467
+D2
+~
+~
+0 0 26465
+S
+#26467
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26468
+D3
+~
+~
+0 0 26466
+S
+#26468
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26469
+D3
+~
+~
+0 0 26467
+S
+#26469
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26470
+D3
+~
+~
+0 0 26468
+S
+#26470
+Dead End~
+~
+~
+Mountains, seemingly rising from nowhere stop you in your tracks.  The
+trails here are much too steep to try and climb.  The only exit is the one
+you came entered.  
+~
+0 134488065 3
+Rd     0
+D3
+~
+~
+0 0 26469
+S
+#26471
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26472
+D3
+~
+~
+0 0 26453
+S
+#26472
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26473
+D3
+~
+~
+0 0 26471
+S
+#26473
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26474
+D3
+~
+~
+0 0 26472
+S
+#26474
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26475
+D3
+~
+~
+0 0 26473
+S
+#26475
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26485
+D1
+~
+~
+0 0 26476
+D3
+~
+~
+0 0 26474
+S
+#26476
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26477
+D3
+~
+~
+0 0 26475
+S
+#26477
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26478
+D3
+~
+~
+0 0 26476
+S
+#26478
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26479
+D3
+~
+~
+0 0 26477
+S
+#26479
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26480
+D3
+~
+~
+0 0 26478
+S
+#26480
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26481
+D3
+~
+~
+0 0 26479
+S
+#26481
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26482
+D2
+~
+~
+0 0 26480
+S
+#26482
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26483
+D2
+~
+~
+0 0 26481
+S
+#26483
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26484
+D3
+~
+~
+0 0 26482
+S
+#26484
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D3
+~
+~
+0 0 26483
+S
+#26485
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26486
+D2
+~
+~
+0 0 26475
+S
+#26486
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26487
+D2
+~
+~
+0 0 26485
+S
+#26487
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26488
+D2
+~
+~
+0 0 26486
+S
+#26488
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26489
+D2
+~
+~
+0 0 26487
+S
+#26489
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26490
+D2
+~
+~
+0 0 26488
+S
+#26490
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26489
+S
+#26491
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26492
+D3
+~
+~
+0 0 26447
+S
+#26492
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26569
+D2
+~
+~
+0 0 26493
+D3
+~
+~
+0 0 26491
+S
+#26493
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26492
+D2
+~
+~
+0 0 26494
+S
+#26494
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26493
+D1
+~
+~
+0 0 26496
+D2
+~
+~
+0 0 26495
+S
+#26495
+Dead End~
+~
+~
+The forest becomes impassable here, as snow drifts as high as fifteen
+feet in some places.  It would be a wise decision to turn around and go
+back.  
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26494
+S
+#26496
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26497
+D3
+~
+~
+0 0 26494
+S
+#26497
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26498
+D3
+~
+~
+0 0 26496
+S
+#26498
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26499
+D3
+~
+~
+0 0 26497
+S
+#26499
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26500
+D3
+~
+~
+0 0 26498
+S
+#26500
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26501
+D3
+~
+~
+0 0 26499
+S
+#26501
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26500
+D2
+~
+~
+0 0 26502
+S
+#26502
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26501
+D2
+~
+~
+0 0 26503
+S
+#26503
+Deeper into the Forest~
+~
+~
+~
+0 134488064 3
+Rd     0
+D0
+~
+~
+0 0 26502
+D2
+~
+~
+0 0 26504
+S
+#26504
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26503
+D1
+~
+~
+0 0 26522
+D2
+~
+~
+0 0 26505
+D3
+~
+~
+0 0 26530
+S
+#26505
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26504
+D2
+~
+~
+0 0 26506
+S
+#26506
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26505
+D2
+~
+~
+0 0 26507
+S
+#26507
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26506
+D3
+~
+~
+0 0 26508
+S
+#26508
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26507
+D2
+~
+~
+0 0 26509
+S
+#26509
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26508
+D2
+~
+~
+0 0 26510
+S
+#26510
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26509
+D1
+~
+~
+0 0 26511
+S
+#26511
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26512
+D3
+~
+~
+0 0 26510
+S
+#26512
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26511
+D1
+~
+~
+0 0 26513
+S
+#26513
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26514
+D3
+~
+~
+0 0 26512
+S
+#26514
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26515
+D3
+~
+~
+0 0 26513
+S
+#26515
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26516
+D3
+~
+~
+0 0 26514
+S
+#26516
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26517
+D3
+~
+~
+0 0 26515
+S
+#26517
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26516
+D1
+~
+~
+0 0 26518
+S
+#26518
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26519
+D3
+~
+~
+0 0 26517
+S
+#26519
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26520
+D3
+~
+~
+0 0 26518
+S
+#26520
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26521
+D3
+~
+~
+0 0 26519
+S
+#26521
+Dead End~
+~
+~
+The forest is impassable here.  Better turn around before you freeze to
+death.  
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26520
+S
+#26522
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26523
+D3
+~
+~
+0 0 26504
+S
+#26523
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26524
+D3
+~
+~
+0 0 26522
+S
+#26524
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26525
+D3
+~
+~
+0 0 26523
+S
+#26525
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26526
+D3
+~
+~
+0 0 26524
+S
+#26526
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26527
+D3
+~
+~
+0 0 26525
+S
+#26527
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26528
+D3
+~
+~
+0 0 26526
+S
+#26528
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26529
+D3
+~
+~
+0 0 26527
+S
+#26529
+Connection Point~
+~
+~
+~
+0 134488065 3
+Rd     0
+D3
+~
+~
+0 0 26528
+S
+#26530
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26504
+D3
+~
+~
+0 0 26531
+S
+#26531
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26530
+D3
+~
+~
+0 0 26532
+S
+#26532
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26533
+D1
+~
+~
+0 0 26531
+S
+#26533
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26532
+D3
+~
+~
+0 0 26534
+S
+#26534
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26533
+D3
+~
+~
+0 0 26535
+S
+#26535
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26534
+D2
+~
+~
+0 0 26536
+S
+#26536
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26535
+D2
+~
+~
+0 0 26537
+S
+#26537
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26536
+D2
+~
+~
+0 0 26538
+S
+#26538
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26537
+D2
+~
+~
+0 0 26539
+D3
+~
+~
+0 0 26565
+S
+#26539
+Deeper into the Forest~
+~
+~
+~
+0 134217729 3
+Rd     0
+D0
+~
+~
+0 0 26538
+D2
+~
+~
+0 0 26540
+S
+#26540
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26539
+D2
+~
+~
+0 0 26541
+S
+#26541
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26540
+D1
+~
+~
+0 0 26542
+S
+#26542
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26543
+D3
+~
+~
+0 0 26541
+S
+#26543
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26544
+D3
+~
+~
+0 0 26542
+S
+#26544
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26543
+D1
+~
+~
+0 0 26545
+D2
+~
+~
+0 0 26547
+S
+#26545
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D2
+~
+~
+0 0 26546
+D3
+~
+~
+0 0 26544
+S
+#26546
+Deeeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26545
+D1
+~
+~
+0 0 26547
+S
+#26547
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26544
+D2
+~
+~
+0 0 26548
+D3
+~
+~
+0 0 26546
+S
+#26548
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26547
+D2
+~
+~
+0 0 26549
+S
+#26549
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D0
+~
+~
+0 0 26548
+D1
+~
+~
+0 0 26550
+S
+#26550
+Deeper into the Forest~
+~
+~
+~
+0 134488065 3
+Rd     0
+D1
+~
+~
+0 0 26551
+D3
+~
+~
+0 0 26549
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 4028 5 26334
+E 0 26312 0 5
+M 0 4029 5 26353
+E 0 26315 0 6
+E 0 26316 0 12
+M 0 4025 5 26365
+E 0 4005 0 5
+E 0 26306 0 3
+E 0 26307 0 12
+M 0 4041 3 26381
+E 0 26313 0 5
+M 0 4027 5 26388
+E 0 4013 0 5
+E 0 26311 0 8
+M 0 4037 5 26389
+E 0 26325 0 12
+M 0 4030 5 26408
+E 0 26317 0 6
+E 0 26318 0 5
+M 0 4034 5 26460
+E 0 26322 0 14
+M 0 4036 5 26475
+E 0 26324 0 5
+M 0 4033 5 26512
+E 0 4009 0 5
+M 0 4031 5 26538
+E 0 26319 0 5
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

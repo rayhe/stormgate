@@ -1,0 +1,4420 @@
+#AREADATA
+Name        { 10-40} The Fortress~
+Builders    None~
+VNUMs       9500 9600
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Davian~
+Llevel      0
+Ulevel      0
+Music       u6_bootp.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#9500
+stag deer~
+A fleefooted stag~
+A stag bounds away as you crash through the underbrush.
+~
+A bushy tailed and very frightened stag bounds away from you as you
+continue to crash though the undergrowth that surrounds you.  
+~
+193 512 0 0 0 0 S
+13 1 26 26 351 351d0+0 0d0+100
+130 0 0
+0 0 0
+0 0 0
+>fight_prog 20~
+kick
+~
+|
+#9501
+owl~
+A small owl~
+An owl flies above you and wings into the trees.
+~
+A large owl gives a hoot as it wings overhead and disappears into the
+treetops.  
+~
+65 524800 0 0 0 0 S
+11 1 22 22 297 297d0+0 0d0+75
+110 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote looks around the room.
+~
+|
+#9502
+bobcat~
+A small bobcat~
+A bobcat slinks along the ground here looking for lunch.
+~
+A small bobcat slinks along the ground, hunting for one of the vales
+other inhabitants to have lunch with.  
+~
+69 33280 0 0 0 0 S
+15 1 30 30 405 405d0+0 0d0+250
+150 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote growls
+~
+>rand_prog 10~
+emote scratches the ground
+~
+|
+#9503
+bear~
+An angry bear~
+A large bear growls at you for upsetting it's sleep.
+~
+A bear of immense proportions gives a bellow and leaps for your throat. 
+I don't think it's too happy to be woken up.  
+~
+99 544 0 0 0 0 S
+18 1 36 36 486 486d0+0 0d0+1000
+180 0 0
+0 0 0
+0 0 0
+>rand_prog 10~
+emote lumbers around.
+~
+>fight_prog 10~
+claw
+~
+|
+#9504
+norgoroth ranger~
+Norgoroth~
+Norgoroth the ranger watches your every move.
+~
+Norgoroth, the retired ranger, stands almost entirely hidden in the trees
+looking at you strangely.  He seems to be judging you.  
+~
+65 106496 0 0 0 500 S
+20 1 40 40 500 500d0+0 0d0+2500
+200 0 0
+0 0 1
+0 0 0
+>fight_prog 10~
+c earthquake
+~
+>speech_prog hi hello~
+Say Leave me alone.
+~
+|
+#9505
+guard~
+A bored looking guard~
+A bored looking guard lounges around here.
+~
+This guard lounges around by the gates leading into the area looking as
+if he'd rather be anywhere other than here.  
+~
+67 0 0 0 0 250 S
+17 1 34 34 459 459d0+0 0d0+250
+170 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+emote goes about his business.
+~
+>fight_prog 15~
+head
+~
+>speech_prog hi hello~
+say Hello, please go about your business.
+~
+|
+#9506
+guard~
+a guard~
+A guard is here.
+~
+A guard stands here leaning up against the outer wall of the fortress. 
+Upon seeing you she asks if there is anything she can help you with.  
+~
+67 0 0 0 0 200 S
+18 1 36 36 486 486d0+0 0d0+250
+180 0 0
+0 0 2
+0 0 0
+>greet_prog 100~
+say Do you need any help?
+~
+>fight_prog 10~
+head
+~
+>fight_prog 20~
+punch
+~
+>speech_prog yes~
+say The Lord and Lady are to the east.
+~
+>speech_prog no~
+say OK then, go about your business.
+~
+>speech_prog hi hello~
+say Hello $n, do you need any help?
+~
+|
+#9507
+Sammual keeper tavern~
+Sammual, Keeper of the Sun~
+Sammual, the taverns keeper, is pouring drinks behind the bar.
+~
+Sammual, the owner and bartender of this inn, has his hands full.  He
+pours many drinks and is slapping plates on the counter for his waitresses
+to take to their customers.  Looking up he sees you and tells you to take a
+table and a waitress will be with you in a moment.  
+~
+67 40 0 0 0 0 S
+22 1 44 44 594 594d0+0 0d0+7500
+220 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+say Greetings, can I help ye?
+~
+>speech_prog hi hello~
+say Greetings, welcome to my shoppe.
+~
+|
+#9508
+serving maid~
+The serving maid~
+The serving maid rushes about madly trying to fill orders!
+~
+The serving maid rushes from table to table and table to bar filling
+drinks and dishing out servings of the local specialty.  
+~
+67 0 0 0 0 50 S
+20 1 40 40 540 540d0+0 0d0+1500
+200 0 0
+0 0 2
+0 0 0
+>rand_prog 10~
+emote walks around the room, cleaning tables
+~
+>fight_prog 10~
+say You beast!  Leave me alone!
+~
+>greet_prog 50~
+emote looks up
+say Can I get you something?
+~
+>act_prog hi hello~
+say Greetings, can I help you?
+~
+|
+#9509
+guard~
+A guard~
+A guard is here, playing poker.
+~
+The guards lays his cards on the table and stops playing poker so as to
+be ready in case you try to cause any trouble.  His hand strays to the hilt
+of his sword.  
+~
+67 0 0 0 0 150 S
+21 1 42 42 567 567d0+0 0d0+3500
+210 0 0
+0 0 1
+0 0 0
+>greet_prog 50~
+emote stops playing poker long enough to look at you.
+~
+>fight_prog 12~
+kick
+~
+>speech_prog hi hello~
+say Hello.
+~
+|
+#9510
+guard~
+A guard~
+A guard sits here, attempting to play poker.
+~
+This guards looks you over and dismisses you as no threat.  She then
+tries to reinterest her opponent in the poker game they were playing until
+you walked in.  
+~
+67 0 0 0 0 250 S
+19 1 38 38 513 513d0+0 0d0+2450
+190 0 0
+0 0 2
+0 0 0
+>greet_prog 40~
+say C'mon, lets play some poker!
+~
+>fight_prog 15~
+kick
+~
+>speech_prog hi hello~
+say Hello there!
+~
+|
+#9511
+guard~
+A guard~
+A guard sits here polishing his sword.
+~
+A husky looking guard sits on his bunk here running his sword over a
+whetstone making sure to keep out any nicks in the blade.  He then gets an
+oiled rag and runs it over the sword to put a nice polish on it.  
+~
+67 0 0 0 0 250 S
+20 1 40 40 540 540d0+0 0d0+1500
+200 0 0
+0 0 1
+0 0 0
+>rand_prog 20~
+emote polishes his sword
+~
+>fight_prog 14~
+head
+~
+>speech_prog hi hello~
+say Greetings and salutations.
+~
+|
+#9512
+guard~
+A guard~
+A guard catches a quick nap before duty.
+~
+A petite looking guard catches a nap on her bunk here.  She's sleeping in
+full armor with her helmet pulled over her eyes.  You wonder how should
+could manage to be comfortable.  
+~
+67 131072 0 0 0 250 S
+20 1 40 40 540 540d0+0 0d0+1500
+200 0 0
+0 0 2
+0 0 0
+>rand_prog 10~
+snore
+~
+>fight_prog 5~
+head
+~
+>speech_prog hi hello~
+say Hello.
+~
+|
+#9513
+zand guard captain~
+Zand, the guard captain~
+Zand looks you over as he awaits your reply.
+~
+A very large man, Zand the captain of the guards is sitting here behind
+his desk trying to catch up on the paperwork that always seems to pile up. 
+Upon your entrance he looks up at you and asks you what you want.  
+~
+67 0 0 0 0 500 S
+29 1 58 58 783 783d0+0 0d0+8000
+290 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+emote looks up
+say What would you like?
+~
+>speech_prog lord lady~
+say The Lady and The Lord are in the eastern part of this keep.
+~
+>speech_prog fortress keep~
+Aye, The Fortress was built many many years ago, it is a proud place.
+~
+>rand_prog 10~
+emote looks $r over.
+~
+>fight_prog 25~
+kick
+~
+>fight_prog 15~
+punch
+~
+>fight_prog 10~
+head
+~
+>speech_prog hi hello~
+say Greetings, I am the guard capitain.
+~
+|
+#9514
+guard veteran~
+A veteran guard~
+A veteran looks you over before going back to polishing her armor.
+~
+As a veteran guard, this woman has been granted a bunk back near the rear
+of the compound.  She looks you over quickly and frankly before going back
+to polishing her armor.  
+~
+67 0 0 0 0 350 S
+23 1 46 46 621 621d0+0 0d0+4000
+230 0 0
+0 0 2
+0 0 0
+>rand_prog 10~
+emote polishes her armor
+~
+>greet_prog 60~
+emote looks $n over before going back to polishing her armor.
+~
+>fight_prog 20~
+kick
+~
+>fight_prog 15~
+head
+~
+>speech_prog hi hello~
+say Greetings, I'm on duty.
+~
+|
+#9515
+guard veteran~
+A veteran guard~
+The veteran guard ignores you as he grinds the dents out of his sword.
+~
+As a veteran guard, this man has been granted a bunk near the back of the
+compound. He looks you over frankly, dismissing you as any sort of threat
+before going back to the grinding of his sword.  
+~
+67 0 0 0 0 350 S
+24 1 48 48 648 648d0+0 0d0+4000
+240 0 0
+0 0 1
+0 0 0
+>rand_prog 5~
+emote grinds some dents from his sword.
+~
+>fight_prog 21~
+kick
+~
+>fight_prog 19~
+head
+~
+>speech_prog hi hello~
+say Greetings.
+~
+|
+#9516
+Josaph~
+Josaph, the Stablemaster~
+Josaph, lounges around here slacking.
+~
+Josaph, the stablemaster of the fortress whose responsibility it is to
+care for his Lord's horses, lounges around here looking as if he's doing
+anything to avoid having to do his job.  
+~
+67 0 0 0 0 0 S
+25 1 50 50 700 700d0+0 0d0+100
+250 0 0
+0 0 1
+0 0 0
+>greet_prog 40~
+emote attempts to look busy.
+~
+>speech_prog hi hello~
+emote looks startled
+say Erm, Hello.
+emote attempts to look busy
+~
+>fight_prog 9~
+say Get away from me!
+rake
+~
+|
+#9517
+horse~
+A horse~
+A horse stand here dozing in the shade.
+~
+An older horse stand here in the shade dozing.  Occasionally he will
+flick his tail trying to get rid of the flies buzzing around.  
+~
+67 0 0 0 0 0 S
+26 1 52 52 702 702d0+0 0d0+0
+260 0 0
+0 0 1
+0 0 0
+>rand_prog 10~
+emote shakes his mane
+~
+>fight_prog 15~
+kick
+~
+|
+#9518
+horse~
+A horse~
+A horse stands here busily swatting at the swarming flies with it's tail.
+~
+A yound filly stomps her feet at your arrival.  She seems full of spirit
+and wiling to go on a nice long run.  She busily swats her tail at the
+swarming flies.  
+~
+67 0 0 0 0 0 S
+27 1 54 54 729 729d0+0 0d0+0
+270 0 0
+0 0 2
+0 0 0
+>rand_prog 10~
+emote swishes his tail
+~
+>fight_prog 15~
+kick
+~
+|
+#9519
+Asgorn smithy~
+Asgorn the Smithy~
+Asgorn is here pounding some metal into a finely honed weapon.
+~
+Asgorn, the smithy, stand here, sweat pouring down his body as he pounds
+on some shapeless lump of metal with one of the biggest hammers you've ever
+seen.  
+~
+67 33562664 0 0 0 500 S
+40 1 80 80 1000 1000d0+0 0d0+25000
+400 0 0
+0 0 1
+0 0 0
+>speech_prog hi hello~
+say Hello $n, I'm a Smithy!
+~
+>greet_prog 100~
+say Hello $n, I'm a Smithy!
+~
+>speech_prog smithy~
+say Yes, I work with hammers, an anvil, and other things!
+~
+>speech_prog hammers~
+say Yes, and anvils, and other things!
+~
+>speech_prog anvil anvils~
+say Yes, and hammers, and other things!
+~
+>speech_prog other things~
+say I don't like to talk about those.
+~
+>fight_prog 10~
+punch
+~
+>fight_prog 15~
+stun
+~
+|
+#9520
+servant~
+A servant~
+A servant rushes onward on a mission of utmost importance.
+~
+This servant dashes madly past you as he rushes to fulfill his
+responsibilities.  
+~
+65 0 0 0 0 100 S
+21 1 42 42 567 567d0+0 0d0+3000
+210 0 0
+0 0 1
+0 0 0
+>greet_prog 30~
+say Sorry $n, I'm busy at the moment.
+~
+>speech_prog hi hello~
+say Sorry $n, I'm busy at the moment.
+~
+>rand_prog 5~
+emote cleans something
+~
+|
+#9521
+trader merchant~
+A trader~
+A trader is here looking for a bargain.
+~
+A woman stands here in outlandish grab, you can only guess she is one of
+the many traders that come and go keeping the economy of the fortress above
+water.  
+~
+65 0 0 0 0 150 S
+25 1 50 50 675 675d0+0 0d0+7500
+250 0 0
+0 0 2
+0 0 0
+#9522
+guard~
+A guard~
+A guard walks around looking for signs of trouble.
+~
+This guards walks around the inner courtyard of the fortress keeping his
+eyes open for signs of trouble.  If needed he can call on his brothers and
+sisters to help deal with any problems he finds.  
+~
+65 0 0 0 0 500 S
+26 1 52 52 700 700d0+0 0d0+2000
+260 0 0
+0 0 1
+0 0 0
+#9523
+guard~
+A guard~
+A guard eyes you suspiciously.
+~
+This guard eyes you suspiciously as you come closer to the large gate set
+in the back wall of the Fortress.  He tells you to move on.  
+~
+67 0 0 0 0 500 S
+28 1 56 56 756 756d0+0 0d0+3500
+280 0 0
+0 0 1
+0 0 0
+#9524
+guard~
+A guard~
+A guard eyes you suspiciously.
+~
+This guard eyes you suspiciously as you come closer to the large gate set
+in the back wall of the Fortress.  She tells you to move on.  
+~
+67 0 0 0 0 500 S
+29 1 58 58 783 783d0+0 0d0+3500
+290 0 0
+0 0 2
+0 0 0
+#9525
+beggar~
+A beggar~
+A pitiful man begs you for money.
+~
+This pitiful looking man, dressed only in rags, looks up at you with a
+pleading look in his eye and asks if you can spare a few gold for a man upon
+who life has played many a cruel joke.  
+~
+67 0 0 0 0 0 S
+20 1 40 40 540 540d0+0 0d0+1
+200 0 0
+0 0 1
+0 0 0
+#9526
+noble~
+A nobleman~
+A noble of the land looks around for something interesting to do.
+~
+A man dressed in fancy clothes walks around the courtyard looking for
+something to do.  As he spots you he sticks his nose up in the air and walks
+off.  
+~
+65 0 0 0 0 -100 S
+28 1 56 56 756 756d0+0 0d0+10000
+280 0 0
+0 0 1
+0 0 0
+#9527
+dog mongrel~
+A mangy mongrel~
+A mangy mongrel comes up and sniffs your boots in hopes of some food.
+~
+One sorry looking excuse for a dog runs up to you and starts sniffing
+around your boots.  It looks up at you with pitiful eyes seeming to beg for
+something to eat.  
+~
+67 0 0 0 0 0 S
+10 1 20 20 270 270d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+#9528
+mugger thief~
+A mugger~
+A mugger takes a swipe at you with his knife and demands all your money.
+~
+An unshaven, ugly looking man with a scar running down his face
+brandishes a knife at you and demand that you hand over all your money now
+if you know whats good for you.  
+~
+99 98336 0 0 0 -500 S
+21 1 42 42 567 567d0+0 0d0+5000
+210 0 0
+0 0 1
+0 0 0
+#9529
+mage man~
+The Chaos Mage~
+The Chaos Mage stands here, his gazing boring into your very soul.
+~
+An eccentric looking man dressed in black robes with all kinds of strange
+symbols on them stands here.  On his right hand a glove glows slightly with
+restrained power.  He looks at you and shouts something about demons and
+running.  
+~
+67 268435456 0 0 0 0 S
+40 1 80 80 1800 1800d0+0 0d0+25000
+400 0 0
+0 0 1
+4 0 0
+#9530
+Demon~
+A large demon~
+A demon sheathed in flames leaps for your throat!
+~
+A horrifying creature, the demon has the horns of a bull and the legs of
+a goat.  On it's back wings like those found on bats unfold.  It's sheathed
+in flames and upon seeing you leaps to the attack thinking to make you it's
+first snack in over one hundred years.  
+~
+99 33554432 0 0 0 -750 S
+35 1 70 70 1500 1500d0+0 0d0+1
+350 0 0
+0 0 0
+128 0 0
+#9531
+priest man cleric~
+The priest~
+The priest stands here devoutly offering prayers up to his god.
+~
+A large pious man stands here surrounded by the holy glow of the
+righteous.  He continually chants strange sounding words to a god unknown to
+you.  Occasionally he looks your way as he chants and you feel slightly
+better for it.  
+~
+67 128 0 0 0 750 S
+40 1 80 80 1750 1750d0+0 0d0+500
+400 0 0
+0 0 1
+8192 0 0
+#9532
+squire james~
+Squire James~
+Squire James looks at you and asks what you need.
+~
+Squire James sits behind his desk looking over all the paperwork that has
+accumulated on it.  He busily scribbles something on one of the sheets and
+puts it on the other side of the desk.  When he looks up he sees you and his
+hand strays to his dagger as he asks what you want.  
+~
+67 0 0 0 0 250 S
+40 1 80 80 2500 2500d0+0 0d0+15000
+400 0 0
+0 0 1
+0 0 0
+#9533
+lord~
+The Lord~
+The Lord of the Fortress looks you over intently.
+~
+The Lord of the Fortess stand here taking care of the day to day business
+involved in running his castle.  At his side the sword of Order hums
+slightly as you enter it's presence.  
+~
+67 128 0 0 0 0 S
+40 1 80 80 2000 2000d0+0 0d0+30000
+400 0 0
+0 0 1
+0 0 0
+#9534
+lady~
+The Lady~
+The Lady of the Fortress sits here studying you like a bug under glass.
+~
+The wife of the Lord of the Fortress sits here watching her husband take
+care of the day to day routine of keeping the Fortress running. 
+Occassionally a member of the nobility will come up and she will whisper
+something to them and then they will leave.  As you step up to the throne
+you can feel her eyes judging you.  
+~
+67 8192 0 0 0 0 S
+39 1 78 78 2000 2000d0+0 0d0+10000
+390 0 0
+0 0 2
+0 0 0
+#9535
+ambassador~
+An ambassador~
+An ambassador from a foreign land has cornered a Baron here.
+~
+A strange looking man dressed in outlandish costume stands here.  He
+seems to be an ambassador from some far away land whose managed to corner
+one of the barons of the court.  
+~
+67 0 32 0 0 -2000 S
+35 1 70 70 1800 1800d0+0 0d0+20000
+350 0 0
+0 0 1
+0 0 0
+#9536
+baron~
+A baron~
+A baron stand here looking about frantically for a way to get away.
+~
+A husky man with a wary look on his face stands here in the corner
+looking for a way to get past the ambassador that seems to have trapped him.
+~
+67 8192 0 0 0 200 S
+37 1 74 74 2000 2000d0+0 0d0+15000
+370 0 0
+0 0 1
+0 0 0
+#9537
+baroness~
+A baroness~
+A baroness wanders around here chatting with people.
+~
+A baroness dressed in a beautiful velvet gown wanders around the court
+looking bored out of her mind.  Upon seeing you her eyes light up and you
+can almost see the wheels grinding.  
+~
+65 8192 0 0 0 200 S
+37 1 74 74 2000 2000d0+0 0d0+13500
+370 0 0
+0 0 2
+0 0 0
+#9538
+man~
+A man~
+A man kneels here among the pews deep in prayer.
+~
+A pious man dressed in plain clothes is bent down on one knee with his
+head bowed in prayer.  
+~
+67 8192 0 0 0 750 S
+32 1 64 64 1700 1700d0+0 0d0+500
+320 0 0
+0 0 1
+0 0 0
+#9539
+woman~
+A woman~
+A woman has her head bowed in prayer here.
+~
+A woman dressed in a plain dress kneels in the pews here with her head
+bowed in prayer.  
+~
+67 8192 0 0 0 550 S
+31 1 62 62 1600 1600d0+0 0d0+250
+310 0 0
+0 0 2
+0 0 0
+#9540
+servant man~
+A servant~
+A servant wanders around here doing some dusting.
+~
+A very non-descript man dressed in plain clothes wanders around the
+throne room dusting the items and painting on display.  
+~
+69 0 0 0 0 0 S
+31 1 62 62 1600 1600d0+0 0d0+1
+310 0 0
+0 0 1
+0 0 0
+#9541
+servant woman~
+A servant~
+A servant wanders around the court serving drinks.
+~
+A cute looking girl barely out of her teens wanders around the throne
+room serving drink to anyone who wants them.  
+~
+69 0 0 0 0 0 S
+30 1 60 60 1500 1500d0+0 0d0+1
+300 0 0
+0 0 2
+0 0 0
+#9542
+servant woman~
+A servant~
+A woman stirs slightly on her cot in her sleep as you enter.
+~
+An ugly old woman dressed in what appear to be something just a step up
+from rags stirs slightly on her cot as you enter the room.  
+~
+71 0 0 0 0 0 S
+31 1 62 62 1600 1600d0+0 0d0+50
+310 0 0
+0 0 2
+0 0 0
+#9543
+servant man~
+A servant~
+A man glares at you for invading his room.
+~
+A plain looking man dressed no better than a beggar looks up as you enter
+the room and fixes you with a glare for poking your nose in here.  
+~
+71 0 0 0 0 0 S
+33 1 66 66 1750 1750d0+0 0d0+100
+330 0 0
+0 0 0
+0 0 0
+#9544
+servant~
+A servant~
+A servant hurries about, rushing to complete some task.
+~
+A petite woman in a fetchingly short skirt and slightly revealing blouse
+hurries to complete some task or other that Squire James sent her on.  
+~
+69 0 0 0 0 0 S
+32 1 64 64 1650 1650d0+0 0d0+50
+320 0 0
+0 0 2
+0 0 0
+#9545
+guard~
+A guard~
+A guard stands here at attention.
+~
+A large barrel chested guards stands here in dress uniform at perfect
+attention watching all who go by.  
+~
+67 0 0 0 0 250 S
+31 1 62 62 1600 1600d0+0 0d0+500
+310 0 0
+0 0 1
+0 0 0
+#9546
+guard~
+A guard~
+A guard stands here at attention.
+~
+A petite guard dressed in full battle attire stands at attention here
+watching all who go by.  
+~
+67 0 0 0 0 250 S
+32 1 64 64 1700 1700d0+0 0d0+1000
+320 0 0
+0 0 2
+0 0 0
+#9547
+guard~
+A guard~
+The guard stands here looking you over intently.
+~
+A guard with arms like tree trunks stands here in full armor with his
+weapons at his side as he looks you over intently.  
+~
+67 0 0 0 0 500 S
+37 1 74 74 2100 2100d0+0 0d0+5000
+370 0 0
+0 0 1
+0 0 0
+#9548
+guard~
+A guard~
+The guard glares at you as her eyes pass over your weapons.
+~
+A small guard with very nice lines notices you staring at her curves and
+puts her hand on the worn hilt of her sword and smiles slightly as you avert
+your gaze.  
+~
+67 0 0 0 0 500 S
+38 1 76 76 1800 1800d0+0 0d0+5000
+380 0 0
+0 0 2
+0 0 0
+#9599
+panther black~
+A massive black panther~
+Derk's familiar, a large black panther lazes about here.
+~
+The panther looks at you quizically for a second as it ascesses the
+danger factor you might represent to it's master.  After determining it to
+be so low that it needn't bother to do anything the panther goes back to
+cleaning his coat.  
+~
+1607 128 0 0 0 -1000 S
+105 1 210 210 30000 30000d0+0 0d0+0
+1050 0 0
+0 0 1
+3 0 0
+#0
+
+
+
+#OBJECTS
+#9500
+key twisted wood~
+a small twisted piece of wood~
+A twisted piece of wood blends in with it's surroundings.~
+~
+18 0 0 0 0 1 15
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9501
+stream river fountain~
+a small stream~
+A small stream runs through the vale here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9502
+sign~
+put my sign back!~
+A sign is nailed to a tree here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+9502 0 0
+E
+sign~
+Hail and welcome to my Vale.  My name is Norgoroth and I am a retired
+ranger, I have taken it upon myself to retire in this vale and keep and
+protect it from the ravages of men.  I will be about the vale keeping my eye
+on you.  I do not suggest you do anything to harm any of the creatures or
+plants in the vale.  
+Signed,
+Norgoroth the Retired Ranger Lord
+~
+#9503
+bear bearskin skin shaggy~
+a shaggy bearskin~
+The shaggy skin of a bear raises a stink here.~
+~
+9 0 0 0 0 1025 18
+100 100
+0~ 0~ 0~ 0~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+13 10
+A
+19 2
+#9504
+elven blade sword~
+an Elven blade~
+A blade of Elven manufacture lies discarded here.~
+~
+5 1 0 0 0 8193 20
+100 100
+0~ 0~ 0~ 3~
+2 48 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+19 4
+#9505
+bag holding~
+a bag of holding~
+A bag that contains more than it look to be able lies here.~
+~
+15 64 0 0 0 1 20
+100 100
+100~ 0~ 0~ 0~
+4 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#9506
+main gauche dagger~
+a main gauche~
+A dagger designed for parrying glints in the sunlight.~
+~
+5 0 0 0 0 8193 15
+100 100
+0~ 0~ 0~ 11~
+4 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 3
+#9507
+mottled tunic~
+a mottled tunic~
+A tunic of mottled greens and browns lies crumpled in the corner.~
+~
+9 0 0 0 0 9 20
+100 100
+0~ 0~ 0~ 0~
+3 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+24 -5
+#9508
+chest~
+a small chest~
+A small locked chest draws your attention.~
+~
+15 0 0 0 0 0 1
+100 100
+500~ 13~ 9530~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9509
+potion healing~
+a potion of healing~
+A potion of murky white fluid rests here.~
+~
+10 268435457 0 0 0 1 20
+100 100
+20~ cure blindness~ cure poison~ reserved~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#9510
+potion healing~
+a potion of healing~
+A potion of murky white fluid rests here.~
+~
+10 268435457 0 0 0 1 20
+100 100
+20~ cure blindness~ cure poison~ reserved~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#9511
+gold coins pile~
+a pile of coins~
+A gleaming pile of coins is scattered in the bottom of the chest.~
+~
+20 0 0 0 0 1 1
+100 100
+2500~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#9512
+guard sword basic~
+a basic issue guard's sword~
+A much used and slightly dented sword rests here.~
+~
+5 0 0 0 0 8193 17
+100 100
+0~ 0~ 0~ 3~
+3 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#9513
+glass chilled wine~
+a glass of wine~
+A chilled glass of wine sparkles invitingly.~
+~
+17 0 0 0 0 1 20
+100 100
+25~ 25~ 2~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#9514
+shot whiskey~
+a shot of whiskey~
+A small shot glass full of whiskey practically dares you to drink it.~
+~
+17 0 0 0 0 1 20
+100 100
+25~ 25~ 5~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9515
+loaf bread~
+a loaf of bread~
+A loaf of bread lies here steaming.~
+~
+19 0 0 0 0 1 1
+100 100
+15~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9516
+leg lamb~
+a leg of lamb~
+A delicious leg of lamb lies here with steam rising off it.~
+~
+19 0 0 0 0 1 1
+100 100
+25~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9517
+shield wooden~
+a small wooden shield~
+A shield made of wood rests in the corner.~
+~
+9 0 512 0 0 513 25
+100 100
+0~ 0~ 0~ 0~
+4 140 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 3
+A
+19 2
+A
+26 10
+#9518
+gauntlet bladed blade~
+a bladed gauntlet~
+A gauntlet with blades protruding from it rests here.~
+~
+5 0 0 0 0 8193 29
+100 100
+0~ 0~ 0~ 3~
+1 288 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+26 10
+A
+19 4
+A
+18 2
+#9519
+mail chain hauberk~
+a chain mail hauberk~
+A hauberk of finely woven chain links is here.~
+~
+9 0 0 0 0 9 17
+100 100
+0~ 0~ 0~ 0~
+8 28 0
+0 0
+reserved~
+0 0
+0 0 0
+#9520
+boots winged~
+winged boots~
+A pair of winged boots levitate above the ground.~
+~
+9 0 64 0 0 65 15
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+5 0
+fly~
+10 10
+0 0 0
+#9521
+pitchfork~
+a pitchfork~
+A weapon with 3 sharp, long tines lies here.~
+~
+5 0 0 0 0 8193 23
+100 100
+0~ 0~ 0~ 11~
+6 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9522
+splint mail jacket~
+a splint mail jacket~
+A jacket of splint mail lies here much used.~
+~
+9 0 0 0 0 9 20
+100 100
+0~ 0~ 0~ 0~
+10 60 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -10
+#9523
+chain coif~
+a chain coif~
+A coif made of fine links of chain mail glints in the sunlight.~
+~
+9 0 0 0 0 17 20
+100 100
+0~ 0~ 0~ 0~
+4 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+A
+3 1
+#9524
+military pick hammer~
+a military pick~
+A pick with a wicked looking point looks like it could do some damage.~
+~
+5 0 0 0 0 8193 20
+100 100
+0~ 0~ 0~ 11~
+5 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+26 5
+A
+19 4
+#9525
+sabre~
+a steel sabre~
+A wicked looking sabre is thrust into the ground here.~
+~
+5 0 0 0 0 8193 20
+100 100
+0~ 0~ 0~ 3~
+3 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+19 1
+A
+18 3
+#9526
+belt power~
+a belt of power~
+A powerful looking belt hums with repressed strength.~
+~
+9 2 2048 0 0 2049 40
+100 100
+0~ 0~ 0~ 0~
+3 400 0
+5 0
+giant strength~
+15 15
+0 0 0
+A
+1 2
+A
+19 6
+A
+5 2
+#9527
+poignard dagger~
+a poignard~
+A long dagger with a wicked blade lies here.~
+~
+5 0 0 0 0 8193 25
+100 100
+0~ 0~ 0~ 3~
+2 28 0
+0 0
+reserved~
+0 0
+0 0 0
+#9528
+rapier sword~
+a rapier~
+A sword that tapers to a long thin point lies here awaiting use.~
+~
+5 0 0 0 0 8193 27
+100 100
+0~ 0~ 0~ 11~
+3 48 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 10
+A
+18 3
+A
+19 3
+#9529
+fountain statue~
+the courtyard fountain~
+A large fountain with a statue of a man riding a horse is here.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9530
+key iron~
+an iron key~
+A key made of solid iron lies here in the mud.~
+~
+18 32 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9531
+silk sash~
+a silk sash~
+A sash of fine silk blows around in the wind.~
+~
+9 0 2048 0 0 2049 25
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 3
+A
+12 30
+A
+3 1
+#9532
+chaos glove~
+the Chaos Glove~
+A glove lies here glowing with restrained power.~
+~
+5 98959361 11 0 0 8193 40
+100 100
+0~ 0~ 0~ 6~
+3 400 0
+0 0
+reserved~
+0 0
+9538 0 0
+A
+12 40
+A
+24 -35
+A
+19 15
+A
+18 10
+#9533
+bracer black runes~
+a black runed bracer~
+A black bracer covered in runes rests here.~
+~
+9 0 0 0 0 4097 35
+100 100
+0~ 0~ 0~ 0~
+1 348 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 4
+A
+18 3
+A
+4 1
+A
+5 1
+A
+12 25
+#9534
+gold coins pile~
+a pile of coins~
+A large pile of gold coins glitters brightly in the dim light.~
+~
+20 0 0 0 0 1 1
+100 100
+20000~ 0~ 0~ 0~
+10 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#9535
+rune runed key~
+a rune marked key~
+A key covered in runes lies forgotten here.~
+~
+18 32 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9536
+scrap parchment~
+a scrap of parchment~
+A torn scrap of parchment lies in the corner.~
+~
+2 0 0 0 0 1 30
+100 100
+30~ bless~ stone skin~ giant strength~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+parchment~
+Taking a close look at the parchment you see all kinds of symbols and words
+that just don't make any sense to you at all.  You think that maybe if you
+were to recite them something wonderful might happen, cause you get the
+feeling they may be a spell of some sort.  Down near the bottom of the scrap
+there is a passage that has what looks to be a translation written
+underneath it.  It says: In the world there are many forces, among some of
+the more powerful of these forces are Order and Chaos.  Order stagnates and
+kills itself, while Chaos destroys with randomness till all is gone.  Both
+are dead-ends in and of themselves, but when joined the can create new and
+wonderful things.  
+~
+#9537
+blade order~
+the Blade of Order~
+A short blade sits here humming.~
+~
+5 26968066 35 0 0 8193 40
+100 100
+0~ 0~ 0~ 1~
+5 400 0
+0 0
+reserved~
+0 0
+9538 0 0
+A
+19 10
+A
+18 15
+A
+26 40
+A
+1 1
+#9538
+blade bladed short glove~
+a short bladed glove~
+A glove with wicked blades protruding radiates power.~
+~
+5 3 0 0 0 8193 40
+100 100
+0~ 0~ 0~ 11~
+2 400 0
+0 0
+reserved~
+0 0
+0 9532 9537
+A
+19 15
+A
+18 15
+A
+1 2
+A
+4 2
+A
+26 40
+#9539
+holy mace~
+the Holy Mace~
+A mace lies here glowing with holy power.~
+~
+5 27951105 10 0 0 8193 40
+100 100
+0~ 0~ 0~ 0~
+0 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 10
+A
+12 40
+A
+4 1
+#9540
+blessed belt~
+the Blessed Belt~
+A blessed belt lies here getting dirty.~
+~
+9 0 2048 0 0 2049 35
+100 100
+0~ 0~ 0~ 0~
+3 348 0
+5 0
+bless~
+-1 -1
+0 0 0
+A
+19 4
+A
+5 1
+A
+18 2
+#9541
+boots stealth~
+the Boots of Stealth~
+A pair of boots lie discarded here.~
+~
+9 0 64 0 0 65 40
+100 100
+0~ 0~ 0~ 0~
+3 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+115 -1
+A
+18 4
+A
+19 2
+A
+23 -25
+#9542
+gloves thieves~
+thieve's gloves~
+A pair of worn gloves lie here in the dirt.~
+~
+9 4 128 0 0 129 40
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+0 0
+pick lock~
+0 0
+0 0 0
+A
+19 6
+A
+2 2
+A
+18 2
+#9543
+blade tri dagger~
+a tri-bladed dagger~
+A dagger with three blades glints sharply in the sunlight.~
+~
+5 8224768 37 0 0 8193 40
+100 100
+0~ 0~ 0~ 11~
+4 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 13
+A
+18 12
+A
+25 15
+A
+1 1
+#9544
+some drow chainmail~
+some drow chainmail~
+A set of chainmail of elven manufacture awaits use here.~
+~
+9 1 0 0 0 9 40
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 15
+A
+19 13
+A
+3 2
+A
+4 1
+#9545
+helm shadow shadowhelm~
+the ShadowHelm~
+A helm of shadows blends into the background.~
+~
+9 0 0 0 0 17 40
+100 100
+0~ 0~ 0~ 0~
+4 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 4
+A
+19 4
+A
+24 -25
+#9546
+holy symbol~
+a Holy symbol~
+The symbol of a God lies here tarnished and forgotten.~
+~
+9 0 0 0 0 16385 40
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 40
+A
+19 2
+A
+18 4
+#9547
+scale mail shirt~
+a scalemail shirt~
+A shirt made of overlapping metal scales lies here.~
+~
+9 0 0 0 0 9 31
+100 100
+0~ 0~ 0~ 0~
+10 140 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 7
+#9548
+unadorned sword~
+an unadorned sword~
+A servicable sword with no adornments lies in the dirt at your feet.~
+~
+5 0 0 0 0 8193 31
+100 100
+0~ 0~ 0~ 3~
+5 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 11
+A
+18 5
+A
+1 1
+#9549
+fortress livery~
+the fortress livery~
+A tunic with Fortress markings on it lies discarded here.~
+~
+9 0 0 0 0 9 30
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+A
+18 10
+#9550
+haramaki~
+a haramaki~
+A shirt of strange overlapping plates lies here.~
+~
+9 0 0 0 0 9 35
+100 100
+0~ 0~ 0~ 0~
+7 348 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 12
+A
+18 10
+#9551
+katana~
+a katana~
+A sharp edged sword of strange manufature is here.~
+~
+5 0 0 0 0 8193 35
+100 100
+0~ 0~ 0~ 1~
+2 348 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 10
+A
+26 35
+#9552
+wakizashi~
+a wakizashi~
+A short curved dagger lies on the ground in it's sheath.~
+~
+5 0 0 0 0 8193 30
+100 100
+0~ 0~ 0~ 3~
+3 300 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+A
+18 7
+#9553
+ruby ring~
+a ruby ring~
+A ring mounted with a large ruby glints in the light.~
+~
+9 0 0 0 0 3 35
+100 100
+0~ 0~ 0~ 0~
+1 348 0
+5 0
+charm person~
+10 10
+0 0 0
+A
+19 2
+A
+18 3
+#9554
+velvet gown~
+an elegant velvet gown~
+A gown of beautiful velvet material has been tossed here.~
+~
+9 0 0 0 0 9 35
+100 100
+0~ 0~ 0~ 0~
+4 348 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 35
+A
+24 -35
+#9555
+iron key~
+an iron key~
+A key made of iron lies here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9556
+flask water~
+a flask of water~
+A flask of crystal clear water makes you sunddenly thirsty.~
+~
+17 0 0 0 0 1 10
+100 100
+100~ 100~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9557
+side beef~
+a side of beef~
+A side of beef has been left out to spoil.~
+~
+19 0 0 0 0 1 1
+100 100
+25~ 0~ 0~ 1~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9558
+loaf bread~
+a loaf of bread~
+A fresh loaf of bread looks delicious.~
+~
+19 0 0 0 0 1 1
+100 100
+30~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9559
+leather knapsack sack~
+a leather knapsack~
+A worn leather knapsack rests on a shelf here.~
+~
+15 0 0 0 0 1 25
+100 100
+150~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#9592
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9593
+null~
+null~
+Null~
+~
+13 0 64 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+vibrate~
+-1 -1
+0 0 0
+#9594
+null~
+null~
+Null~
+~
+13 0 4096 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+chaos field~
+-1 -1
+0 0 0
+#9595
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+fireshield~
+-1 -1
+0 0 0
+#9596
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+blade barrier~
+-1 -1
+0 0 0
+#9597
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+shockshield~
+-1 -1
+0 0 0
+#9598
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9599
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+dark blessing~
+-1 -1
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#9500
+Derk Room 1~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#9501
+Entrance to the Vale~
+~
+~
+Exiting the arch you walk into a large vale full of lush trees.  You can
+hear birds singing and creatures roaming around between the trees.  A small
+trail leads off to the east towards what looks to be a large fortress
+astride a small pass.  Ahead of you the vale continues in it's full splendor
+and behind you the arch leads back to the path.  A large sign is posted on
+one of the trees and demands your attention.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9502
+D1
+~
+~
+0 0 9506
+D2
+~
+~
+0 0 9503
+D3
+~
+~
+0 0 9595
+S
+#9502
+Along the East Wall~
+~
+~
+Here on the west side of the vale tree grow everywhere.  Small shrubs
+abound.  All you can see around you is browns and greens.  All around you
+you can here the sounds of the local wildlife, you even manage to catch a
+glimpse of a deer as it bounds back deeper into the vale.  To the south a
+small trail can been seen leading in an east-west direction.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9504
+D1
+~
+~
+0 0 9507
+D2
+~
+~
+0 0 9501
+S
+#9503
+Along the East Wall~
+~
+~
+Here in the vale all is peaceful, the trees provide pleasant shade and
+the slight sounds of the forest creatures provide a gentle background.  All
+around you life grows and flourishes, it's amazing that being this close to
+the city no one has managed to destroy this wonderful glade.  It makes you
+think maybe that sign had something important written on it.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9501
+D1
+~
+~
+0 0 9508
+D2
+~
+~
+0 0 9505
+S
+#9504
+NorthEast corner of the Vale~
+~
+~
+Here in the northwest corner of the vale the growth is tremendous.  To
+your north and west huge trees with massive trunks form a barrier that is
+filled in only by the underbrush.  You most definately cannot make your way
+through them.  Over to the east you can see one tree rising high above all
+the rest.  In the distance you can hear a bird call as it flys off looking
+for food.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 9509
+D2
+~
+~
+0 0 9502
+S
+#9505
+SouthWest corner of the vale~
+~
+~
+Here in the southwest corner of the glade the underbrush grows even
+thicker than back from the way you came.  Looking around you can see signs
+that someone has been here before you, a number of half formed footprints
+are left imprinted in the damp earth.  Off to the east you can hear a small
+stream gurgling pleasantly away.  You think you see a trail through the
+underbrush to the west.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9503
+D1
+~
+~
+0 0 9510
+S
+#9506
+Following a small game trail~
+~
+~
+You follow a small game trail to the east.  Looking ahead you can see it
+widens even more as it approaches the large fortress.  On either side of you
+the trees and undergrowth rise up to hem you in somewhat.  As you continue
+down the trail you can't shake the feel that you're being watched.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9507
+D1
+~
+~
+0 0 9511
+D2
+~
+~
+0 0 9508
+D3
+~
+~
+0 0 9501
+S
+#9507
+Deeper into the vale~
+~
+~
+Moving eastwards into the vale the growth continues, it's a veritable
+forest in here.  On all sides trees abound.  Off to your right you hear a
+branch snap, but when you turn to see what caused it there's nothing in
+sight.  Over to the east you can see the top of the big tree that rises
+above all the rest.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9509
+D1
+~
+~
+0 0 9512
+D2
+~
+~
+0 0 9506
+D3
+~
+~
+0 0 9502
+S
+#9508
+A small stream~
+~
+~
+As you continue to move eastwards deeper into the vale the trees part
+slightly and a small clearing becomes apparent.  In the middle of the
+clearing a small stream runs through.  Looking around you can see that
+whichever direction you choose to take will once again take you back into
+the jungle of trees and undergrowth.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9506
+D1
+~
+~
+0 0 9513
+D2
+~
+~
+0 0 9510
+D3
+~
+~
+0 0 9503
+S
+#9509
+Deeper into the vale~
+~
+~
+Moving deeper into the vale the trees grow even thicker around you. 
+Every now and again you catch a glimpse of some animal or person flitting
+from tree to tree.  You definately have the feeling that your movements in
+the vale are closely watched.  Off to the south and east you can still see
+the great tree that rises above all the rest.  
+~
+0 0 3
+Rd     0
+D1
+~
+~
+0 0 9514
+D2
+~
+~
+0 0 9507
+D3
+~
+~
+0 0 9504
+S
+#9510
+The south side of the vale~
+~
+~
+Here on the south side of the vale the growth is the same as most
+everywhere else.  You way south is blocked by intesive undergrowth and trees
+that grow so close their trunks almost touch.  Off to the north the sounds
+of a stream can be heard above the normal sounds of the wildlife that
+inhabit the vale.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9508
+D1
+~
+~
+0 0 9515
+D3
+~
+~
+0 0 9505
+S
+#9511
+Following the road east~
+~
+~
+Here the game trail into a full fledged road still heading due east
+towards the ever present fortress.  Looking a bit more closely at the
+fortress from you new vantage point you can see a pair of large gates
+located at the entrance standing slightly ajar.  Off to either side of the
+gates huge cliffs rise straight up into the air.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9512
+D1
+~
+~
+0 0 9516
+D2
+~
+~
+0 0 9513
+D3
+~
+~
+0 0 9506
+S
+#9512
+The HUGE tree~
+~
+~
+As you continue to walk thru the vale the trees part a little and you
+come upon a small glade dominated by probably the biggest tree you've ever
+seen.  Taking a look around you notice that there seems to be a noticeable
+lack of any creatures around here.  Upon closer examination of the tree you
+see a small trapdoor right above your head.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9514
+D1
+~
+~
+0 0 9517
+D2
+~
+~
+0 0 9511
+D3
+~
+~
+0 0 9507
+D4
+~
+trapdoor~
+7 9500 9521
+S
+#9513
+The path~
+~
+~
+Here on the eastern side of the vale all the normal things you've been
+seeing once again burst forth.  Trees are as plentiful as dirt and shrubs
+even more so.  You see a small form fly by at great speed and fail to
+identify it before it gets lost in the foilage of a tree.  Off to your east
+the ground becomes rocky and almost mountainous, lacking any trees and all
+but a few scrawny shrubs.  To the north the path turns into a road and
+continues towards the fortress.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9511
+D1
+~
+~
+0 0 9518
+D2
+~
+~
+0 0 9515
+D3
+~
+~
+0 0 9508
+S
+#9514
+NorthEast corner of the vale~
+~
+~
+Here in this corner of the vale a number of creatures are moving amongst
+the trunks of the trees.  Upon your arrival they scatter to the other parts
+of the vale.  Looking to the north more large trees and large quantities of
+underbrush form an impassible barrie.  While to the east a huge cliff rises
+up towards the heavens and it's sheer face offers you no purchase for
+climbing.  
+~
+0 0 3
+Rd     0
+D2
+~
+~
+0 0 9512
+D3
+~
+~
+0 0 9509
+S
+#9515
+SouthEast corner of the vale~
+~
+~
+Here in the corner of the vale it is like the rest of the vale, trees
+tower above you all around.  To your east a great cliff rises up blocking
+any movement in that direction.  In the southern direction large trees,
+undrebrush and dead branches abound, effectively blocking off that direction
+as well.  Though from behind all the underbrush and branches you seem to
+hear a low rumbling noise.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 9513
+D2
+~
+branches~
+3 0 9527
+D3
+~
+~
+0 0 9510
+S
+#9516
+Following the road east~
+~
+~
+The road contiues eastwards towards the fortress.  Looking up ahead you
+can see what looks to be a pair of guards standing on either side of the
+gates, but you can't tell what they're doing, they're just too far away. 
+Off to either side of the road the terrain turns rocky and mountainous before
+the cliffs block all passage entirely.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9517
+D1
+~
+~
+0 0 9519
+D2
+~
+~
+0 0 9518
+D3
+~
+~
+0 0 9511
+S
+#9517
+North side of the road~
+~
+~
+Here on the side of the road there is a definite lack of greenery. 
+Mostly rocks and sand are all that thrive here except for the single shrub
+that has attached itself to the cliffwall and seems to eek out a pathetic
+existance.  To both the north and the east the walls of the cliffs rise up
+blocking any progress in those two directions.  
+~
+0 0 5
+Rd     0
+D2
+~
+~
+0 0 9516
+D3
+~
+~
+0 0 9512
+S
+#9518
+South side of the road~
+~
+~
+The south side of the road looks alot like the north side of the road,
+though there is no shrub here eeking out an existance.  A small lizard does
+make itself known though by scurrying out of your way as you clamber over the
+rocks.  To the east and south the faces of the cliffs rise up sheer as glass
+preventing any progress in those directions.  
+~
+0 0 5
+Rd     0
+D0
+~
+~
+0 0 9516
+D3
+~
+~
+0 0 9513
+S
+#9519
+In the pass~
+~
+~
+As you continue eastwards the cliffs seem to hem you into a small pass. 
+Looking up you can see there is no chance of climbing the sheer faces of the
+cliffs and decide the only direction you can continue on is fowards. 
+Looking ahead you can see the fortress rising up almost as high as the
+cliff, at the gates the two guards stand around idly looking bored.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9520
+D3
+~
+~
+0 0 9516
+S
+#9520
+Before the gates~
+~
+~
+You stand directly before the slightly ajar gates to the fortress. 
+Looking beyond them, you can see a courtyard bustling with activity.  You
+can go east or west from here.  
+~
+0 0 0
+Rd     0
+D1
+~
+Gate~
+1 0 9530
+D3
+~
+~
+0 0 9519
+S
+#9521
+A walkway among the branches~
+~
+~
+What this?  Having managed to open the trapdoor and fly up through it you
+find yourself on some sort of walkway in and among the branches of this
+spectacular tree.  You wonder who built this and for what purpose it serves.
+Looking around you see the walkway continues eastwards following the trunk
+of the tree.  
+~
+0 0 9
+Rd     0
+D1
+~
+~
+0 0 9522
+D5
+~
+trapdoor~
+7 9500 9512
+S
+#9522
+Following the walkway~
+~
+~
+You follow the walkway around the tree's girth and marvel at the
+spectacular view you're afforded of the vale below you.  While looking
+around you notice a large crossbow mounted to the railing on the walkway,
+seems that whoever built it didn't use it just for a nice view.  The walkway
+continues even farther around the tree to the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9523
+D3
+~
+~
+0 0 9521
+S
+#9523
+A dead end~
+~
+~
+All of a sudden the walkway just terminates directly into the trunk of
+the tree.  You continue to look around but can't see any signs of trapdoors
+or anything, maybe the thing just ends here.  But for some reason you've
+got this funny feeling that there's more to this tree than just this
+walkway.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 9522
+D4
+~
+trapdoor~
+3 0 9524
+S
+#9524
+The room above the walkway~
+~
+~
+Aha!  There was a small trapdoor above the walkway and you found it! 
+Looking around you find yourself in a small room with a window set in one
+wall and a table below the window.  To the south an archway leads into yet
+another room.  
+~
+0 0 0
+Rd     0
+D0
+~
+secret door~
+7 9500 9526
+D2
+~
+~
+0 0 9525
+D5
+~
+trapdoor~
+3 0 9523
+S
+#9525
+A smallish bedroom~
+~
+~
+Passing through the archway you find yourself in a small bedroom.  Up
+against one wall is a matress lieing on the floor, while over in the corner
+a chest covered with dust rests.  While the room is a bit dusty and has the
+air of having not been used for quite a while, it is still basically tidy. 
+The archway north goes back to the room you just left.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9524
+S
+#9526
+A secret room~
+~
+~
+Aha!  After finding the secret door and getting past it you find
+yourself in a little room that was probably inteded to be kept secret. 
+Looking around you see many chipped and used weapons along with a few sets
+of very worn and dented armor.  But the thing that draws your attention is
+the small chest in the middle of the room.  Taking a closer look at it you
+can see it's closed and locked, but have no idea where the key may be.  
+~
+0 131072 0
+Rd     0
+D2
+~
+secret door~
+7 9500 9524
+S
+#9527
+A damp, dark cave~
+~
+~
+After moving all the branches out of the way you reveal the opening to a
+very dark and very damp cave.  You try to peer farther in but you just can't
+penetrate the darkness.  As you move around you can hear an occasional
+crunch as you step on something dry and brittle, you're not sure you want to
+know exactly what it was.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+3 0 9515
+D1
+~
+~
+0 0 9528
+S
+#9528
+Further along in the cave~
+~
+~
+Moving farther along in the cave it actually gets even darker than before
+if that's possible.  The only light you have to rely on is the one you carry
+with you, and even that only sheds enough light to keep you from tripping
+over yourself.  From the south a deep rumbling noise can be heard, dare you
+go there and see what it is?  
+~
+0 9 0
+Rd     0
+D2
+~
+~
+0 0 9529
+D3
+~
+~
+0 0 9527
+S
+#9529
+You woke up the huge bear!~
+~
+~
+As you creep along the cave the rumbling noise gets louder.  Rounding the
+corner you see a very large bear sleeping comfortably against one wall.  But
+as your light starts to shed it's glow the bear wakes up and is none to
+happy about it.  It leaps to the attack seeing you as the creature that woke
+up it's comfortable sleep.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 9528
+S
+#9530
+The killing zone~
+~
+~
+Passing through the gates you enter into a small section of the wall
+between the gates and the porticullis.  This is the area that the defenders
+of the fortress can use as a fallback position and to kill many attackers in
+the process.  Looking up you can see the hole in the ceiling where the
+boiling oil or pitch is usually poured down on the unsuspecting beseigers,
+just looking at it gives you the chills and makes you want to move past this
+place as fast as possible.  
+~
+0 4 0
+Rd     0
+D1
+~
+porticullis~
+1 0 9531
+D3
+~
+Gate~
+1 0 9520
+S
+#9531
+Entrance into the courtyard~
+~
+~
+You exit that small section between the walls with a feeling of relief. 
+Passing the porticullis you step into a small cobbled way that leads towards
+the courtyard.  Looking to the east you can see it open up before you. 
+While to the south laughter floats out of a slightly open door leading to a
+room that looks as if it belongs to the guards.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9535
+D2
+~
+door~
+1 0 9532
+D3
+~
+porticullis~
+1 0 9530
+S
+#9532
+The guardsroom~
+~
+~
+Here at the entrance to the guard's quarters there are no bunks set up. 
+Looking around you see a multitude of weapons and armor stacked up against
+the walls.  This must be where all the spare equipment is stored when not in
+use.  When you walked in the guards that were playing cards at the small
+table and laughing ceased all such merriment so as to stare at you.  It
+makes you feel kind of uneasy, maybe you're not welcome here.  
+~
+0 131080 0
+Rd     0
+D0
+~
+door~
+1 0 9531
+D3
+~
+~
+0 0 9533
+S
+#9533
+The guard's quarters~
+~
+~
+Moving past the guards at the poker game you tread farther into the set
+of rooms that the guards consider their one safe haven.  Looking around the
+new room you see a number of bunks and cots in various states of use and
+abuse.  While you inspect the room a couple of very young looking guards
+inspect you with the same intensity.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9532
+D2
+~
+~
+0 0 9534
+S
+#9534
+The guard's quarters~
+~
+~
+Passing by the two young guards you move into a new room that looks much
+like the last one.  But where the last room had unkempt bunks and equipment
+strewn around, this area is kept very clean.  The bunks are all made and the
+equipment is all stored in it's proper places.  Sitting on a pair of bunks
+working on some equipment is a pair of grizzled veterans of the guard.  To
+the south an unadorned closed door decorates the wall.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9533
+D2
+~
+door~
+3 0 9556
+S
+#9535
+The courtyard~
+~
+~
+The courtyard opens up before you.  Here traders, artisans, children,
+housewives and even an occasional noble mix and mingle in a chaotic
+mish-mash of humanity.  Guards around the courtyard keep a careful watch on
+everything. Up ahead of you a fountain spays water into the air.  Exits 
+lead in the four cardinal directions.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9536
+D1
+~
+~
+0 0 9540
+D2
+~
+~
+0 0 9537
+D3
+~
+~
+0 0 9531
+S
+#9536
+The courtyard~
+~
+~
+Wander around the courtyard looking at the different people that pass you 
+by.  It seems that here in the courtyard anyone at all can mix and mingle 
+with anyone else from the fortress with little or no thought for any 
+social rank.  Nobles talk and haggle with traders while guards instead of
+shooing beggars away give them a small coin or two.  Farther north is the
+entrance to what looks to be a small alcove, while to the east, you can
+hear the sounds of a smithy hammering away.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9538
+D1
+~
+~
+0 0 9541
+D2
+~
+~
+0 0 9535
+S
+#9537
+The courtyard~
+~
+~
+You continue to wander around the courtyard taking in the sights and
+smells that assault you senses.  A mangy mongrel runs up and sniffs at your
+boots and wags it's tail at you looking pathetic.  Off to the east you can
+hear the sounds of horses, while south is the entrance to the tavern. 
+Laughter and singing can be heard floating from the open doorway.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9535
+D1
+~
+~
+0 0 9542
+D2
+~
+~
+0 0 9539
+S
+#9538
+An alcove~
+~
+~
+You enter a small darkened alcove that lies off the northern edge of the
+courtyard.  It's a bit darker in here that the rest of the courtyar and a
+pitiful beggar sits here and begs you for money.  To the west and north the
+walls of the courtyard rise up providing protectin from an evident but
+unseen threat, while to the east the wall of the smithy stands tall.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 9536
+S
+#9539
+Tavern of the Sun~
+~
+~
+As you enther the tavern you are immediately assaulted by the staggering
+volume of people laughing and singing.  All around people are drinking and
+having a good time.  Looking around, you think you spot a table in the back,
+maybe if you're quick you can grab it.  Sammual, the keeper of the tavern,
+is behind the bar, while the serving girls rush about madly trying to fill
+orders.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9537
+S
+#9540
+A fountain~
+~
+~
+This is the center of the courtyard.  Situated here is a large fountain. 
+In the middle of the fountain is a statue of a man riding a tall charger
+with an upraised sword.  Around the fountain are a number of benches that
+you can take a seat on and rest for a while.  To the north lies the smithy,
+the south is the tavern and the stables, while the east is the entrance to
+the fortress itself.  And back west is the entrance to the courtyard.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9541
+D1
+~
+~
+0 0 9545
+D2
+~
+~
+0 0 9542
+D3
+~
+~
+0 0 9535
+S
+#9541
+The courtyard~
+~
+~
+You continue to wander around the courtyard taking in the sights and
+sounds.  North of you lies the smithy, you can hear the hammering and see
+the smoke rising up above the building.  South of you lies a large fountain
+in the center of the courtyard.  While off to the east and west the
+courtyard continues.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9543
+D1
+~
+~
+0 0 9546
+D2
+~
+~
+0 0 9540
+D3
+~
+~
+0 0 9536
+S
+#9542
+The courtyard~
+~
+~
+The crowd thins here a little as you approach the stables which are just
+a bit farther ahead.  South of you a small cul-de-sac is formed by the walls
+of the fortress, the tavern and the stables.  Up to the north you can hear
+the sounds of running water as the fountain continues to spray water into
+the air.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9540
+D1
+~
+~
+0 0 9547
+D2
+~
+~
+0 0 9544
+D3
+~
+~
+0 0 9537
+S
+#9543
+The smithy~
+~
+~
+As you enter the smithy the sound of metal on metal grows noticably
+louder.  The heat flowing from the back of the building is almost enough to
+drive you back out into the street.  Looking around you can see a number of
+weapons and armors lining the walls, all for sale you assume.  Over by the
+anvil being assisted by a number of apprentices is Asgorn, the Smithy.  Over
+the din of the hammering he yells that he'll be with you in just a moment.  
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 9541
+S
+#9544
+A Cul-de-sac~
+~
+~
+You enter a small cul-de-sac off the main street in the courtyard.  Walls
+bound you on the east, west and south side.  As you enter the cul-de-sac you
+immediately notice it's much darker in here than it is back out in the main
+part of the courtyard.  Taking a look around you think you see a shadow make
+a quick movement just as a knife plunges at you from the darkness.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 9542
+S
+#9545
+Before the fortress~
+~
+~
+You stand here before the grand gates of the fortress and wonder what
+purpose it serves.  Why did someone build it, and why was it built astride
+this pass?  What does it guard against?  Or maybe it's a convient place to
+gather troops so as to mass an attack on whatever lies on the other side. 
+The only way to know is to enter it and find out.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9546
+D1
+~
+Gate~
+3 0 9557
+D2
+~
+~
+0 0 9547
+D3
+~
+~
+0 0 9540
+S
+#9546
+The courtyard~
+~
+~
+Here in the northeastern side of the courtyard many races and classes mix
+nd mingle as if there were no difference between them.  Back west you can
+here the sounds of the smithy hard at work, while to the south lies the
+stables.  Off to the east lies a small alley leading around the fortress
+proper.  And to the north a small niche is formed by the walls of the
+fortress and the smithy.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9548
+D1
+~
+~
+0 0 9550
+D2
+~
+~
+0 0 9545
+D3
+~
+~
+0 0 9541
+S
+#9547
+The stables~
+~
+~
+Moving foward you come upon the entrance to the stables.  Probably the
+most tell-tale sign that you've found them would be the stench.  Josaph, the
+stable master, stands around here watching people go by.  He doesn't look
+like he's actually doing anything at all and you wonder why he's in charge. 
+Off to the east a small ally leads around the main building of the fortress. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9545
+D1
+~
+~
+0 0 9551
+D2
+~
+~
+0 0 9549
+D3
+~
+~
+0 0 9542
+S
+#9548
+A small niche~
+~
+~
+You have entered a small niche formed from the walls of the fortress
+courtyard and the smithy which lies to your west.  There's not really much
+of interest here.  Back to the south lies the courtyard proper, probably
+wouldn't be a bad idea to go back there and look around.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 9546
+S
+#9549
+The stables~
+~
+~
+You've entered the stable for whatever twisted reason.  The stench is 
+almost overwhelming, it seems the place hasn't had a good cleaning in a 
+number of days.  A couple of horses are here, their tails swatting at the 
+flies that are swarming all over the place.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9547
+S
+#9550
+A small alley~
+~
+~
+You have entered a small alley running alongside the fortress proper. 
+It's dark as night in here, though your own light does keep it from being
+totally pitch black in here.  From somewhere up ahead you can hear the sound
+of muted voices.  
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 9552
+D3
+~
+~
+0 0 9546
+S
+#9551
+A small alley~
+~
+~
+You have entered a small alley that runs alongside the fortress proper. 
+It's really dark in here even though you carry a light with you.  Looking
+around you can barely make out where you're going.  You think you might hear
+muted voices from up ahead, but you're not sure.  
+~
+0 1 0
+Rd     0
+D1
+~
+~
+0 0 9553
+D3
+~
+~
+0 0 9547
+S
+#9552
+A small, dark alley~
+~
+~
+You continue to stumble your way through the alley.  Your light is barely
+adequate to keep the place lit so you don't stumble over your own two feet. 
+The alley takes a turn to the south here and looking ahead you can see the
+glow of a small light.  You can also hear the sound of voices as you stumble
+towards the light.  
+~
+0 1 0
+Rd     0
+D2
+~
+~
+0 0 9554
+D3
+~
+~
+0 0 9550
+S
+#9553
+A small, dark alley~
+~
+~
+You continue along the dark alley, stumbling around trying to find your
+way.  The alley takes a turn to the north here.  Looking foward you can see
+a small spark of light from that direction and can definately hear voices
+from up that way.  
+~
+0 1 0
+Rd     0
+D0
+~
+~
+0 0 9554
+D3
+~
+~
+0 0 9551
+S
+#9554
+The Gate~
+~
+~
+You stumble into a small area lit by a torch on the wall.  Looking around
+you notice two guards looking at you supiciously.  You also notice a very
+large gate bound by chains with an even larger lock keeping the chains in
+place and the gate from opening.  You guess that for whatever reason, this
+gate is not meant to be opened on a daily basis.  Though you do wonder what
+might be on the other side of it, yet another mystery in need of solving.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9552
+D2
+~
+~
+0 0 9553
+S
+#9555
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#9556
+The captain's room~
+~
+~
+Upon entering this room it is very apparent that it doesn't belong to any
+common guadsman.  Taking a quick look around you see a very used and
+slightly cluttered desk, a small bookshelf, and a chair behind the desk. 
+Sitting in the chair is Zand, the captain of the guard and also the champion
+of the fortress.  He looks you over then pierces you with his gaze and asks
+why you have disturbed him.  
+~
+0 131080 0
+Rd     0
+D0
+~
+door~
+3 0 9534
+S
+#9557
+Entrance to the Fortress~
+~
+~
+You have entered the fortress proper, at first glance all you can see is
+the long hallway stretching before you.  But as you take a second glance and
+look around you more you begin to notice a few things.  Like to either side
+of you a darkened alcove sits.  Also that the place isn't as dark as you
+first believe, torches line the walls on either side.  Down at the far end
+of the hall you can make out a pair of huge oak double doors.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9558
+D1
+~
+~
+0 0 9560
+D2
+~
+~
+0 0 9559
+D3
+~
+Gate~
+3 0 9545
+S
+#9558
+A darkened alcove~
+~
+~
+You enter a small alcove off to the side of the main corridor.  At first
+you can't see anything at all because the alcove has no source of light, but
+as your eyes accustom themselves to the darkness you can make out the form
+of a guard standing here at attention watching you warily.  
+~
+0 9 0
+Rd     0
+D2
+~
+~
+0 0 9557
+S
+#9559
+A dark alcove~
+~
+~
+You enter a darkened alcove.  At first you can't see anything for the
+alcove lacks any source of light.  But as your eyes accustom themselves to
+the darker atmosphere you can make out the form of a guard standing here at
+attention and paying very close attention to you and what you are doing.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 9557
+S
+#9560
+The main hallway~
+~
+~
+You continue down the hallway towards the great double doors at the end. 
+A plush red carpet precedes you down the entire length of the hallway.  Off
+to the north and the south side passages break off from the main one.  To
+the north you can hear much hustle and bustle, while to the south the faint
+sounds of praying can be heard.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9561
+D1
+~
+~
+0 0 9583
+D2
+~
+~
+0 0 9569
+D3
+~
+~
+0 0 9557
+S
+#9561
+A side corridor~
+~
+~
+You turn off from the main hallway into this small side corridor. 
+Looking ahead you can see that it runs straight for a bit then takes a sharp
+turn to the right.  One thing you notice right away is that this corridor is
+nowhere near the beautiful condition that the main hallway is, there's no
+red carpet and the torches lining the walls are barely adequate to light the
+place.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9562
+D2
+~
+~
+0 0 9560
+S
+#9562
+The servants corridor~
+~
+~
+You continue along the corridor and after observing the number of
+servants coming and going through it you deduce this must be the hall to
+their private quarters.  The corridor take a sharp turn here and continues
+onward into a much better lit area.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9563
+D2
+~
+~
+0 0 9561
+S
+#9563
+The servants hall~
+~
+~
+You continue down the servant's hall.  Off to either side of you there
+are small alcoves leading to what you suspect are the rooms that are
+allotted to the servants to sleep in.  Farther down the hall you can see
+where it ends with a door located on each side of the corridor.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9564
+D1
+~
+~
+0 0 9566
+D2
+~
+~
+0 0 9565
+D3
+~
+~
+0 0 9562
+S
+#9564
+A servant's room~
+~
+~
+Stepping thru one of the alcoves you exit the hall and enter a small,
+plainly furnished room.  There are a number of cots set up against the walls
+with a chest at the foot of each one.  A small torch burns fitfully on the
+wall barely providing enough illumination to see by.  All in all this is a
+boring place.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9563
+S
+#9565
+A servant's room~
+~
+~
+You exit the hall and walk thru the archway into probably one of the most
+boring rooms you've ever seen.  A few cots line the wall with a chest located
+at the foot of each.  You see a woman sleeping in one of the cots, while a
+man stares up at you indignantly for invading his privacy.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9563
+S
+#9566
+End of the hallway~
+~
+~
+You have reached the end of the hallway.  A wall here blocks any further
+progress in the direction you were previously going.  To either side of you
+a closed door is located on the wall.  To the north some muted sounds of a
+person talking can be heard, while to the south nothing can be heard at all.
+~
+0 8 0
+Rd     0
+D0
+~
+door~
+3 0 9567
+D2
+~
+door~
+71 9555 9568
+D3
+~
+~
+0 0 9563
+S
+#9567
+Squire James' room~
+~
+~
+Upon entering this room you can immediately tell it is of a much better
+quality that the previous rooms you've inspected here in the servants
+quarters.  Looking around you can see a bed with an ornate chest located at
+it's end.  Also a desk sits against the wall with a slight man located in
+the chair behind it.  He appeared to be talking to the servant standing in
+front of the desk, but upon your arrival he looks up and demands to know
+what you are doing here.  
+~
+0 8 0
+Rd     0
+D2
+~
+door~
+3 0 9566
+S
+#9568
+A storage room~
+~
+~
+Entering this room it is immediately apparant it is a storage room. 
+Shelves line the walls on all sides and are almost overflowing with any
+number of different commonplace items.  Who knows, maybe you can root around
+in here and locate something you need if you don't get caught first that is.
+~
+0 8 0
+Rd     0
+D0
+~
+door~
+71 9555 9566
+S
+#9569
+A small side passage~
+~
+~
+You turn off the main hallway into this small corridor.  To your left
+there is a door set in the wall from which the muted sounds of praying can
+be heard.  Looking farther along the hall you can see it continues to a set
+of stairs, obviously leading upwards to one of the towers of the fortress.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9560
+D1
+~
+door~
+3 0 9570
+D2
+~
+~
+0 0 9574
+S
+#9570
+A small chapel~
+~
+~
+You have entered a small chapel that evidently serves the spiritual needs
+of the fortress.  Up ahead of you the praying gets louder while south of you
+a number of pews can be seen with a few people scattered here and there
+among them with their heads bowed in prayer.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9572
+D2
+~
+~
+0 0 9571
+D3
+~
+door~
+3 0 9569
+S
+#9571
+A small chapel~
+~
+~
+You continue further into the chapel taking a good look around.  All you
+can see about you at the moment is pews, pews and more pews.  Here and there
+scattered among the pews a man or woman is kneeling with their head bowed in
+prayer.  The chanting of the priest permeates the room filling it with his
+constant droning voice.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9570
+D1
+~
+~
+0 0 9573
+S
+#9572
+The priest~
+~
+~
+You continue deeper into the chapel.  Before you stands a large and
+robust man in some ornate robes of some kind, obviously the priest.  He
+continues his praying not even noticing that you have arrived.  A large
+altar sits here with ornate woodwork all over it and glowing slightly in the
+subdued lighting here.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9573
+D3
+~
+~
+0 0 9570
+S
+#9573
+A small chapel~
+~
+~
+You've made it to the far corner of the chapel.  A few pews are scattered
+around the area with a person or two kneeling and praying to their god.  Off
+against the corner is a confessional.  Up north from you you can hear the
+droning voice of the priest as he continues to chant his prayers.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9572
+D3
+~
+~
+0 0 9571
+S
+#9574
+Entrance to the stairwell~
+~
+~
+You've come to the end of the small hallway.  A stone wall blocks any
+progress to the south.  But a stairwell marked with runes leads upwards into
+darkness.  You can sense that the stairs lead to a place where great magic
+is performed, you can feel the effects of the magic in your very bones.  You
+wonder if it would be such a great idea to go disturb the practioner.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9569
+D4
+~
+~
+0 0 9575
+S
+#9575
+In the stairwell~
+~
+~
+You continue upwards, following the stairs as the climb the tower.  More
+runes mark the walls around you, but these ones glow in the dim light.  Once
+again you reconsider whether interupting any practioner of magic of any kind
+is a truly wise idea.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 9576
+D5
+~
+~
+0 0 9574
+S
+#9576
+In the stairwell~
+~
+~
+You keep following the stairs on their ever constant upwards climb to the
+pinnacle of the tower.  A small window is situated on one of the walls and
+as you look out you are suprised to realized just how high you've climbed. 
+While the walls still sport the ever glowing runes there are also a number
+of scorch marks here and there to accompany them.  
+~
+0 8 0
+Rd     0
+D4
+~
+~
+0 0 9577
+D5
+~
+~
+0 0 9575
+S
+#9577
+The top of the stairwell~
+~
+~
+You have reached the top of the stairwell, looking around you see the
+ever present runes that were located along it's entire length.  But now the
+runes are glowing so brightly as to almost blind you.  A closed door is
+located on the south wall with the words 'Disturb at your own peril!'
+written in flames upon it.  
+~
+0 8 0
+Rd     0
+D2
+~
+door~
+3 0 9578
+D5
+~
+~
+0 0 9576
+S
+#9578
+The mage's workshop~
+~
+~
+You open the door and enter a room that is pure chaos.  Books and scrolls
+are thrown around haphazardly all over the place, beakers of liquid and
+flames that a burning on the floor itself make you think this place is a
+definate fire hazard.  Over in the opposite corner you can hear someone
+mumbling something about ferris root and nightshade leaves.  
+~
+0 8 0
+Rd     0
+D0
+~
+door~
+3 0 9577
+D1
+~
+~
+0 0 9580
+D2
+~
+~
+0 0 9579
+S
+#9579
+The mage's workshop~
+~
+~
+Moving through the mage's workplace this part of it is just as messy if
+not more so than the part of it you just left.  But instead of a fire
+burning on the floor as in the other place there's a patch of pure chaos
+bubbling up from a small hole in the wall.  Off to the east the mumbling
+gets louder and you wonder whats going on.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9578
+D1
+~
+~
+0 0 9581
+S
+#9580
+The mages pentagon~
+~
+~
+Unlike the rest of the workshop this area is relatively clean of clutter.
+But the one thing that does catch your attention is the giant glowing
+pentagram enscribed on the floor.  And in that pentagram waits a large
+salivating demon.  It looks at you with hungry eyes and leaps to the attack,
+planning to make you it's next meal.  Evidently the mage didn't make his
+pentagram perfect enough for the demon's tastes.  
+~
+0 8 0
+Rd     0
+D1
+~
+wall~
+103 9535 9582
+D2
+~
+~
+0 0 9581
+D3
+~
+~
+0 0 9578
+S
+#9581
+The mage~
+~
+~
+The mage himself stands here among a clutter of magical implements, most
+looking as if they have been exhausted.  He continues to mumble something
+about demons and pentagrams but most of it is under his breath and you can't
+make it out.  He looks up as he hears your steps and immediately upon seeing
+you screams the word DEMON and tells you to run while you can.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9580
+D3
+~
+~
+0 0 9579
+S
+#9582
+The mage's treasure trove!~
+~
+~
+Unlink the mage's workshop this room is very neat and very organized. 
+The walls are lined with a number of shelves that contain many book and
+scrolls and parchments that look as if they've all been well taken care of. 
+A few other items are locate on the shelves and some may even be magical. 
+In the middle of the floor lies a pile of coins, probably the mages
+retirement fund.  
+~
+0 8 0
+Rd     0
+D3
+~
+wall~
+103 9535 9580
+S
+#9583
+The main hallway~
+~
+~
+Continuing down the hall you see a number of pictures lining the wall,
+many depict major battles that evidently the Lord of this place took part
+in.  Each has a date listed below it and the proceed in chronological order.
+The very last picture is a strange one though, it depicts this very fortress
+straddling the pass.  Over the fortress a black sky reigns and lightning
+bolts burst forth to strike some of the towers.  Among the black clouds some
+very vague shapes can be seen as if the painter wanted the viewer to almost
+see a mind behind the storm.  Under the painting the plaque showing the
+dates has the starting date, but no finishing date.  The hall continues
+foward.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9584
+D3
+~
+~
+0 0 9560
+S
+#9584
+The main hallway~
+~
+~
+You continue foward down the hall, following the plush red carpet leading
+up to the double doors ahead of you.  Looking ahead you can see the massive
+doors are closed.  A pair of guards stand sentry on either side of the doors
+watching your progress.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9585
+D3
+~
+~
+0 0 9583
+S
+#9585
+Before the double doors~
+~
+~
+Whew!  You've made it to the doors after traversing the long hallway. 
+The guards stand on either side of the doors looking you over from head to
+toe.  Their eyes stop for a moment on your weapons and they get a dangerous
+glint to them.  The doors are closed so you cannot see what is beyond them. 
+~
+0 12 0
+Rd     0
+D1
+~
+doors~
+3 0 9586
+D3
+~
+~
+0 0 9584
+S
+#9586
+The entrance to the throne room~
+~
+~
+Passing thru the doors you enter the great throne room belonging to the
+Lord of the fortress.  Up ahead of you you can see the Lord seated in his
+throne and discussing something with his Lady.  All around you servants
+scurry about taking care of the needs of the few nobles walking around. 
+Over in a corner an ambassador from a foreign land has cornered a Baron and
+is grilling him looking to form an alliance.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9587
+D1
+~
+~
+0 0 9590
+D2
+~
+~
+0 0 9588
+D3
+~
+doors~
+3 0 9585
+S
+#9587
+The throne room~
+~
+~
+A number of banners decorate this wall here.  Under each banner is a
+small plaque telling from what clan/enemy the banner was taken, along with
+when and where the battle occured.  A servant scurries up and asks you if
+you wish for any refreshment while you study the various trophies.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9589
+D2
+~
+~
+0 0 9586
+S
+#9588
+The throne room~
+~
+~
+You continue to wander around the throne room taking in the number
+pictures hanging on the walls.  Here in this corner a number of portraits
+hang.  From the dress and stature of each portrait you would assume they
+were the previous Lords here.  Under each portrait hangs a small plaque
+giving the name of the person and the dates of their rule.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9586
+D1
+~
+~
+0 0 9591
+S
+#9589
+The throne room~
+~
+~
+In this corner of the throne room a small pedestal stands.  It is
+illuminated by a small glowing light the hovers in mid-air and resist all
+attempts to budge.  On the pedestal an unrolled parchment rests under glass.
+Taking a look at the parchment you can see it's the original deed to the
+land upon which this fortress is situated on.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9590
+D3
+~
+~
+0 0 9587
+S
+#9590
+The throne room~
+~
+~
+You stand before the steps leading up to the throne.  Looking up you can
+get a better look at the man who calls himself Lord of this place.  He is a
+large man bearing a scar down the side of his face.  He wears a dark armor
+and an open-faced helm wreathed in shadows.  At his side a short sword is
+sheathed yet gives off a low hum.  Seated in a throne that is slighter
+smaller but similiar to the Lord's the Lady of the Fortress sits and watches
+as the commotion you have caused in her court.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9589
+D1
+~
+~
+0 0 9592
+D2
+~
+~
+0 0 9591
+D3
+~
+~
+0 0 9586
+S
+#9591
+The throne room~
+~
+~
+Over in this corner you see a Baron has been cornered by an ambassador
+from a strange land.  Looking the pair over you find the ambassador the more
+interesting of the two.  The baron looks much like any other pompous
+nobleman of the land, but the stanger has some interesting weapons and
+armor.  You wonder if you could maybe engage him in a conversation on the
+differences between the weapons here and from where he comes from?  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9590
+D3
+~
+~
+0 0 9588
+S
+#9592
+The great throne~
+~
+~
+You stand directly before the great throne.  Sitting in the throne is the
+Lord of the Fortress.  Directly next to the throne rests a small one upon
+which the Lady of the Fortress has seated herself.  As you stand there
+before the rulers of this place they look you over taking in everything
+about you.  You feel as if they're reading your lifes history just by
+glancing at you.  
+~
+0 12 0
+Rd     0
+D3
+~
+~
+0 0 9590
+S
+#9593
+South of the city~
+~
+~
+Walking past the gates you enter a wooded area.  All around you trees
+thrust up into the air reaching for the sun.  You can hear the sounds of
+many of the local wildlife rooting around in the trees looking for lunch or
+maybe looking for each other to make the other lunch.  The path continues to
+the south.  
+~
+0 4 0
+Rd     0
+S
+#9594
+Following the path~
+~
+~
+You continue your walk down the path.  Looking around you can see the
+forest thickening.  Taking a closer look at the path you can see many
+footprints all headed south but none going back the other way.  You wonder
+what thats all about.  Back to the north you can still make out the gate
+leading to the city, while to the south you can see the path continuing.  
+There is also a well-travelled path leading eastwards from here...
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9596
+S
+#9595
+An arch of trees~
+~
+~
+Large piles of lumber line the path here, as a previously hidden road
+stretches south.  Gazing southward, you hear the sounds of people talking
+and see what appear to be small huts.  To the east an archway made of trees
+stands giving you a view of a beautiful wooded vale.  The trees have grown
+so thick, they almost blot out the sun 
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9501
+D3
+~
+~
+0 0 18279
+S
+#9596
+A Path along the City Walls~
+~
+~
+This well-travelled path leads eastwards, winding between the southern forest
+and the mighty walls of Methidoral. Althought the path is rather hidden, it has
+seen many travellers coming and going.
+~
+0 4 3
+Rd     0
+D1
+~
+~
+0 0 0
+D3
+~
+~
+0 0 9594
+S
+#9599
+Derk's private sanctum~
+~
+~
+This small room is where Derk spends his time working.  Piled along the
+walls can be seen many items of ancient origin that have managed to capture
+his attention throughout the ages.  At the moment though his entire
+attention is centered on you.  
+~
+0 271372 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 9504 spec_janitor
+M 9520 spec_janitor
+M 9522 spec_guard
+M 9523 spec_guard
+M 9529 spec_cast_mage
+M 9531 spec_healer
+M 9532 spec_thief
+M 9533 spec_cast_adept
+M 9535 spec_cast_psionicist
+M 9536 spec_cast_adept
+M 9599 spec_breath_any
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 9502 0 9501
+O 0 9501 0 9508
+M 0 9500 3 9508
+M 0 9501 3 9509
+M 0 9502 2 9511
+M 0 9504 1 9512
+E 0 9504 0 20
+E 0 9506 0 21
+E 0 9507 0 5
+G 0 9500 0
+G 0 9530 0
+E 0 9520 0 12
+M 0 9505 1 9520
+E 0 9512 0 20
+E 0 9519 0 5
+M 0 9506 1 9520
+E 0 9512 0 20
+E 0 9519 0 5
+O 0 9508 0 9526
+P 0 9505 0 9508
+P 0 9509 0 9508
+P 0 9510 0 9508
+P 0 9511 0 9508
+M 0 9503 1 9529
+E 0 9503 0 16
+M 0 9509 1 9532
+E 0 9512 0 20
+E 0 9519 0 5
+M 0 9510 1 9532
+E 0 9512 0 20
+E 0 9519 0 5
+M 0 9511 1 9533
+E 0 9512 0 20
+E 0 9519 0 5
+M 0 9512 1 9533
+E 0 9512 0 20
+E 0 9519 0 5
+M 0 9514 1 9534
+E 0 9512 0 20
+E 0 9519 0 5
+M 0 9515 1 9534
+E 0 9512 0 20
+E 0 9519 0 5
+M 0 9527 1 9537
+M 0 9525 1 9538
+M 0 9507 1 9539
+M 0 9508 2 9539
+G 0 9513 0
+G 0 9514 0
+G 0 9515 0
+G 0 9516 0
+O 0 9529 0 9540
+M 0 9520 3 9540
+E 0 9506 0 20
+M 0 9521 2 9541
+E 0 9527 0 20
+E 0 9507 0 5
+M 0 9522 2 9542
+E 0 9523 0 6
+E 0 9519 0 5
+E 0 9517 0 15
+E 0 9512 0 20
+M 0 9519 1 9543
+G 0 9522 0
+G 0 9523 0
+G 0 9524 0
+G 0 9525 0
+E 0 9526 0 17
+M 0 9528 1 9544
+E 0 9506 0 20
+E 0 9507 0 5
+M 0 9526 1 9545
+E 0 9528 0 20
+E 0 9506 0 21
+E 0 9519 0 5
+M 0 9516 1 9547
+E 0 9521 0 20
+M 0 9517 1 9549
+M 0 9518 1 9549
+M 0 9523 1 9554
+E 0 9519 0 5
+E 0 9524 0 20
+E 0 9517 0 15
+E 0 9523 0 6
+M 0 9524 1 9554
+E 0 9525 0 20
+E 0 9523 0 6
+E 0 9519 0 5
+E 0 9517 0 15
+M 0 9513 1 9556
+E 0 9518 0 20
+E 0 9519 0 5
+E 0 9517 0 15
+E 0 9531 0 17
+M 0 9545 1 9558
+E 0 9547 0 5
+E 0 9548 0 20
+M 0 9546 1 9559
+E 0 9547 0 5
+E 0 9548 0 20
+M 0 9544 5 9564
+E 0 9549 0 5
+M 0 9542 1 9565
+E 0 9549 0 5
+M 0 9543 1 9565
+E 0 9549 0 5
+M 0 9532 1 9567
+E 0 9541 0 12
+E 0 9542 0 13
+E 0 9543 0 20
+G 0 9555 0
+O 0 9556 0 9568
+O 0 9556 0 9568
+O 0 9558 0 9568
+O 0 9558 0 9568
+O 0 9558 0 9568
+O 0 9557 0 9568
+O 0 9557 0 9568
+O 0 9559 0 9568
+M 0 9539 1 9571
+E 0 9549 0 5
+M 0 9531 1 9572
+E 0 9539 0 20
+E 0 9540 0 17
+E 0 9546 0 22
+M 0 9538 1 9573
+E 0 9549 0 5
+M 0 9530 1 9580
+M 0 9529 1 9581
+E 0 9532 0 20
+E 0 9533 0 19
+G 0 9535 0
+O 0 9534 0 9582
+O 0 9536 0 9582
+M 0 9547 1 9585
+E 0 9547 0 5
+E 0 9548 0 20
+M 0 9548 1 9585
+E 0 9547 0 5
+E 0 9548 0 20
+M 0 9540 1 9587
+E 0 9549 0 5
+M 0 9541 1 9588
+E 0 9549 0 5
+M 0 9537 1 9589
+E 0 9554 0 5
+E 0 9553 0 2
+M 0 9535 1 9591
+E 0 9550 0 5
+E 0 9551 0 20
+E 0 9552 0 21
+M 0 9536 1 9591
+E 0 9547 0 5
+E 0 9548 0 20
+E 0 9553 0 2
+M 0 9533 1 9592
+E 0 9537 0 20
+E 0 9544 0 5
+E 0 9545 0 6
+M 0 9534 1 9592
+E 0 9554 0 5
+M 0 9599 1 9599
+S
+
+
+
+#SHOPS
+9507 17 19 0 0 0 100 100 0 23
+9519 9 5 0 0 0 125 75 7 21
+0
+
+
+
+#$

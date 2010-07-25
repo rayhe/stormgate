@@ -1,0 +1,4055 @@
+#AREADATA
+Name        { 85-100 } Relfaust~
+Builders    Cadax Zhyril~
+VNUMs       9300 9399
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Zhyril~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#9301
+dark legion~
+a Dark Legionnaire~
+A soldier of the Dark Legion is here.
+~
+A towering figure in black armor, these soldiers are elite killing
+machines.  
+~
+65 41943176 20 134217728 2 0 S
+99 1 198 198 0 17000d0+0 0d0+0
+20 20 0
+0 0 1
+0 0 0
+#9302
+dark guardsman~
+an elite guardsman~
+An elite guardsman stands here impassively.
+~
+Hand-picked from the Dark Legion by Azenghast himself, this guard appears
+to be a formidable opponent.  
+~
+3 134225920 0 1073741824 0 -700 S
+100 1 200 200 0 20000d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+#9306
+mage dark legion~
+a Dark Mage~
+A mage of the Dark Legion is here, scowling angrily.
+~
+A tall, skeletal-looking man in black robes, his magic helps maintain the
+Dark Lord's reign over this unlucky town.  
+~
+1 268435472 0 134217728 0 -900 S
+100 1 200 200 0 15000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#9326
+townsman man~
+a downtrodden townsman~
+A villager walks by, staring at the ground.
+~
+He seems to be studiously avoiding the Dark Legion troops who patrol the
+streets.  
+~
+1 0 0 0 0 0 S
+20 1 40 40 0 10000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+#9336
+veshek~
+Veshek~
+An orcish shopkeep is here.
+~
+A portly orc of advanced years, Veshek seems to be doing alright under
+the town's occupation.  
+~
+3 64 0 0 0 -500 S
+0 1 0 0 0 30000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+#9339
+drunken mercenary~
+a drunken mercenary~
+An ill-mannered mercenary snickers at you.
+~
+A cruel-looking man who is extremely drunk.
+~
+3 0 1156 0 0 -600 S
+90 1 180 180 0 30000d0+0 0d0+0
+0 1 0
+0 0 1
+0 0 0
+>act_prog 100~
+say Ha!  Look at this ill-mannered lout!
+look $n
+snicker
+~
+|
+#9340
+mercenary~
+a mercenary~
+A vicious-looking mercenary is here.
+~
+A lean, powerful-looking man in black armor.  While he doesn't seem to
+have the discipline of the Dark Legion, he would be a formidable opponent
+all the same.  
+~
+1 0 0 0 0 -400 S
+90 1 180 180 0 20000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#9341
+drashlek~
+Drashlek~
+A Drow bartender is here, serving food and drink.
+~
+A sneering Drow merchant, Drashlek seems to prosper from the city's
+recent conquest.  
+~
+3 0 0 0 0 -500 S
+99 1 198 198 0 50000d0+0 0d0+0
+100 1 0
+0 0 1
+0 0 0
+>speech_prog conquest azenghast dark legion~
+say Ah, the gods were smiling on me when they marched in.
+say Business has quadrupled!
+say And the peasants stay out.
+snicker
+~
+|
+#9342
+torga~
+Torga~
+A huge ogre is here, staring stupidly about.
+~
+Huge even by ogrish standards, Torga seems to be around to keep order in
+the place, taking his orders from Drashlek alone.  Even the hardened
+warriors of the Dark Legion give him a wide berth.  
+~
+3 0 0 0 0 -400 S
+101 1 202 202 0 40000d0+0 0d0+0
+0 7 0
+0 0 1
+0 0 0
+>fight_prog 40~
+punch
+~
+|
+#9353
+Klavius minotaur~
+Klavius~
+The enormous minotaur warrior, Klavius, stands here.
+~
+Dressed in blood-spattered black armor, Klavius is truly a frightening
+sight.  Liable to fly into a rage, he is feared even by his own men, who 
+form the Dark Legion's shock troops.
+~
+67 33554624 0 0 0 -900 S
+60 1 120 120 0 12000d0+0 0d0+0
+100 1 0
+0 0 1
+0 0 0
+>greet_prog 50~
+emote looks up.
+snicker
+say Fool!  You DARE intrude?
+say Then DIE!
+emote roars in mindless rage, then leaps to the attack.
+kill $n
+~
+|
+#9360
+Danielle~
+Danielle~
+A beautiful woman dressed in red is here.
+~
+A stunningly beautiful face holds eyes that burn with malevolence.  She
+looks you over, a sneer marring her lovely features.
+~
+67 268435520 0 131072 0 -1000 S
+90 1 180 180 0 20000d0+0 0d0+0
+200 0 0
+0 0 0
+0 0 0
+#9366
+Lara~
+Lara~
+A beautiful young women is here.
+~
+A tall, beautiful woman with pale blond hair.  She seems very surprised
+to see you.  
+~
+3 16777216 0 0 0 700 S
+130 1 260 260 0 30000d0+0 0d0+0
+0 1 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+emote rises to her feet.
+say Wait, you're not one of Azenghast's soldiers!
+peer $n
+say please, stranger, will you help me?
+~
+>speech_prog yes help~
+smile $n
+say Thank you!
+mpecho Quickly she leads you from the cell, and you both slip down a secret passage.
+mpecho After what seems like an indeterminate time, you emerge into a small cavern.
+mptrans $n 9392
+mpat $n say We're safe here!
+mpat $n smile
+close west
+lock west
+mpat $n mpmload 9367
+~
+>act_prog ~
+~
+|
+#9367
+Lara~
+Lara~
+Lara is here, comforting the children.
+~
+This women is strikingly beautiful.  She appears tired but happy, as if
+she had recently escaped a dire situation.  
+~
+3 16777216 0 0 0 900 S
+130 1 260 260 0 30000d0+0 0d0+0
+2 1 0
+0 0 2
+0 0 0
+#9375
+Prince Voorhan~
+Prince Voorhan~
+Prince Voorhan relaxes here languidly.
+~
+The son and heir apparent of the Dark Lord Azerghast, Prince Voorhan is
+reputed to almost be his father's match in cruelty.  He stares languidly at
+you, fingering his weapon and wondering if he should spend the time to kill
+you.  
+~
+67 167772161 32880 0 0 0 S
+100 1 200 200 0 11500d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+yawn
+look $n
+say How dare you intrude in my chambers, peasant?
+say Away, before I grow irritated.
+emote motions you away disdainfully.
+~
+>fight_prog 10~
+blink
+say You....DARE?
+emote seems overcome with rage.
+say Then die, peasant scum!
+slit
+~
+>death_prog 100~
+say Im...possible...
+mpecho Prince Voorhan's eyes fill with fear.
+mpforce $n snicker
+mpforce $n say Not so tough, eh?
+~
+|
+#9380
+dark lord azenghast~
+Lord Azenghast~
+The Dark Lord of Relfaust, Azenghast, sits before you.
+~
+A tall, broad-shouldered man in black battle armor.  His eyes are cold
+and dead, and look at you with undisguised contempt from over an iron-grey
+beard.  Since he conquered Relfaust, Azenghast has been gathering his forces
+so he can move on to his next conquest.  
+~
+3 167772224 32 0 0 0 S
+110 1 220 220 0 30000d0+0 0d0+0
+1100 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+say I have guests, I see.
+say Guards.
+say Make them suffer.
+emote sits back down, ignoring you.
+~
+>act_prog roars in anger and pain before falling~
+say I see I face no common enemy.
+say Very well, come do battle with me.
+say IF YOU DARE!
+emote rises to his feet, and grips his battlesword.
+~
+>death_prog 100~
+cringe $n
+say No...it cannot be...
+say I am invin...
+emote collapses to the ground.
+mpecho You hear the sound of clashing swords in the distance; apparently the
+mpecho Rebels have used this chance to launch an attack!
+~
+|
+#9386
+wolfen~
+a wolfen~
+A wolfen smiles at you delicately, then attacks.
+~
+A creature of unimaginable evil.
+~
+35 0 327680 0 0 -900 S
+100 1 200 200 0 30000d0+0 0d0+0
+1000 0 0
+0 0 0
+0 0 0
+>fight_prog 40~
+claw
+~
+>fight_prog 40~
+bite
+~
+>act_prog sunburst~
+emote screams in pain as the bright sunlight fills the room.
+mpecho With a roar of pain and fury a huge flame envelops the wolfen.
+mpecho When it clears nothing remains but a pile of ash.
+mpecho You notice something glinting in the ash.
+mpoload 9387
+mpoload 9386
+put coin in ash
+mppurge self
+~
+|
+#9388
+silver wyrm dragon~
+the Silver Wyrm~
+A huge silver dragon looms before you.
+~
+An enormous, sleek silver dragon with smoky grey eyes and razor-sharp
+teeth.  You think that perhaps you should slip out before he notices you.  
+~
+1 134217728 262144 0 0 0 S
+110 1 220 220 0 40000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#9391
+sage~
+a wise sage~
+A wise sage is here, poring over an ancient tome.
+~
+An ancient man in dusty robes, he seems a slightly befuddled old sage. 
+Something about him hints at great power, though.  
+~
+3 0 0 0 0 0 S
+104 1 208 208 0 40000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+emote looks up.
+say Welcome, stranger.
+say Fear not the Dark Legion here, I have enchanted this cavern.
+say Nothing harmful can enter.
+emote returns to his book.
+~
+|
+#9392
+child~
+a child~
+A child is playing here.
+~
+Brought down to the protection of the caverns when the city was overrun,
+this child seems to have regained some kind of a life here.  
+~
+3 0 0 0 0 0 S
+5 1 10 10 0 100d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#9395
+rebel~
+a rebel~
+A rebel is here, looking at you suspiciously.
+~
+A war-weary man, who will give his life in trying to regain his town.  
+~
+1 0 0 0 0 0 S
+100 1 200 200 0 30000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#9397
+dark scout~
+a Dark Legion scout~
+A scout of the Dark Legion skulks through the shadows.
+~
+A rangy, evil-looking man is here searching for the rebels' hideout.
+~
+3 64 0 0 0 0 S
+100 1 200 200 0 20000d0+0 0d0+0
+0 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#9300
+pulsating vortex of smoke~
+pulsating vortex of smoke~
+A vortex of thick smoke pulsates in and out of reality here.~
+~
+29 0 0 0 0 0 1
+100 100
+9381~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9301
+blue half-disk~
+a blue half-disk~
+A sky blue half-disk lies here.~
+~
+8 65 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+9303 0 0
+#9302
+yellow half-disk~
+a yellow half-disk~
+A sulfer yellow half-disk lies here.~
+~
+8 65 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+9303 0 0
+#9303
+green disk~
+a green disk~
+A grass green disk lies here.~
+~
+8 65 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+9307 9301 9302
+#9304
+red tile~
+a red tile~
+A red rectangular tile with a half-circle groove inset lies here.~
+~
+8 65 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+9306 0 0
+#9305
+black tile~
+a black tile~
+A black rectangular tile with a half-circle groove inset lies here.~
+~
+8 65 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+9306 0 0
+#9306
+red and black square tile~
+a red and black tile~
+A red and black square tile with a circular groove inset lies here.~
+~
+8 65 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+9307 0 0
+#9307
+crest of relfaust~
+crest of Relfaust~
+A crest depicting the founding of the city of Relfaust lies here.~
+~
+18 65 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 9306 9303
+#9308
+cell key~
+a dungeon cell key~
+A rusty iron key attached to a wooden key ring lies here.~
+~
+18 268443776 131072 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9309
+quartz pyramid~
+a quartz pyramid~
+A small pyramid made of rose quartz floats above the ground here.~
+~
+18 67108865 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9310
+granite pebble~
+a granite pebble~
+A smooth, gray pebble lies discarded here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9311
+oblong marble chest~
+an oblong chest~
+An oblong marble chest with a triangular hole in it lies here.~
+~
+15 805306432 0 0 0 0 1
+100 100
+0~ 15~ 9309~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9312
+Master key~
+Master key~
+Master key~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9313
+bubbling ochre potion~
+an ochre potion~
+An ochre potion bubbles and fizzes violently here.~
+~
+10 268438019 0 0 0 1 60
+100 100
+85~ haste~ daemonic might~ flesh armor~
+1 240 0
+0 0
+reserved~
+0 0
+0 0 0
+#9314
+ghostly specter brew~
+spectre brew~
+An ethereal brew of ghostly liquid lies here.~
+~
+10 268435521 0 0 0 1 1
+100 100
+75~ pass door~ improved invis~ true sight~
+0 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#9315
+buffer brew~
+buffer brew~
+A brew that seems to negate magic lies here.~
+~
+10 268468225 0 0 0 1 60
+100 100
+85~ aura of anti-magic~ energy containment~ sanctuary~
+0 240 0
+0 0
+reserved~
+0 0
+0 0 0
+#9316
+tashara statue~
+tashara statue~
+The golden statue of Tashara ab Greenleaf rests here.~
+~
+12 65 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+This golden statue is absolutely captivating.  There is no doubt in your
+mind that this beautiful, young druid did everything within her power to
+preserve the sanctity of nature and push back the forces of chaos.  
+~
+E
+tashara~
+This golden statue is absolutely captivating.  There is no doubt in your
+mind that this beautiful, young druid did everything within her power to
+preserve the sanctity of nature and push back the forces chaos.  
+~
+#9317
+portrait~
+a portrait~
+An extremely faded portrait hangs on the wall.~
+~
+12 268435456 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+portrait~
+Although it is covered in dust and the color has all but faded away, this
+portrait depicts a very life-like image of an upperclass, almost regal male
+human.  He is portrayed as being quite young, however, his dark eyes and
+furrowed brow clearly mark him as having experience well beyond his years.  
+~
+#9318
+dark legionaire helmet~
+dark legionaire helmet~
+A helmet fashioned out of night black metal lies here.~
+~
+9 5308944 0 0 1048576 17 60
+100 100
+0~ 0~ 0~ 0~
+15 640 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+18 6
+#9319
+dragon skull helmet~
+dragon skull helmet~
+A helmet reminiscent of a dragon's skull lies here.~
+~
+9 1 0 0 8388608 17 80
+100 100
+0~ 0~ 0~ 0~
+20 640 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+304 -1
+A
+5 2
+A
+4 1
+A
+2 -2
+A
+23 -10
+A
+24 -6
+#9320
+crystal tiara~
+a crystal tiara~
+A tiara made of the purest crystal lies here.~
+~
+9 0 0 0 0 17 65
+100 100
+0~ 0~ 0~ 0~
+2 648 0
+5 0
+awe~
+3 3
+0 0 0
+A
+18 10
+A
+2 1
+A
+12 30
+#9321
+red cloth headband~
+a red headband~
+A length of red cloth lies on the ground.~
+~
+9 16778496 5634 0 33554432 17 65
+100 100
+0~ 0~ 0~ 0~
+1 640 0
+5 0
+swiftness~
+5 5
+0 0 0
+A
+19 7
+A
+12 50
+A
+18 7
+A
+2 2
+A
+5 1
+#9322
+cloth skull cap~
+a cloth skull cap~
+A dingy brown cloth skull cap lies here.~
+~
+9 67108864 0 0 0 17 50
+100 100
+0~ 0~ 0~ 0~
+2 120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 -1
+A
+2 1
+#9323
+gray broad rimmed hat~
+a gray broad rimmed hat~
+A dusty, dark gray broad rimmed hat lies here.~
+~
+9 67108864 0 0 0 17 55
+100 100
+0~ 0~ 0~ 0~
+5 140 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 11
+A
+4 1
+A
+3 1
+#9324
+onyx crown~
+an onyx crown~
+A crown carved from onyx vibrates on the ground here.~
+~
+9 4262482 0 0 1048576 17 90
+100 100
+0~ 0~ 0~ 0~
+10 900 0
+5 0
+domination~
+10 10
+0 0 0
+A
+19 9
+A
+18 9
+A
+24 -15
+A
+3 1
+A
+4 2
+A
+12 80
+#9325
+mithrium helmet~
+a mithrium helmet~
+A helmet made out of a silvery-golden metal glints in the light here.~
+~
+9 536870977 0 0 0 17 90
+100 100
+0~ 0~ 0~ 0~
+20 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+38 8
+A
+303 -1
+A
+5 1
+A
+3 3
+#9326
+ether goggles~
+ether goggles~
+A pair of bulky goggles lies here.~
+~
+27 1 2049 0 0 131073 65
+100 100
+100~ -1~ 0~ identify~
+6 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+18 13
+A
+4 1
+#9327
+Amulet of Primus~
+the Amulet of Primus~
+An amulet that seems to be negating ambient magic lies here.~
+~
+9 67108928 16384 0 0 5 90
+100 100
+0~ 0~ 0~ 0~
+6 400 0
+5 0
+aura of anti-magic~
+7 7
+0 0 0
+A
+20 8
+A
+24 10
+A
+4 2
+A
+2 2
+A
+1 -1
+A
+5 -1
+A
+12 90
+A
+18 8
+A
+19 10
+#9328
+crystal necklace~
+a crystal necklace~
+A necklace composed of prismatic crystal shards glints in the light.~
+~
+9 0 0 0 0 5 65
+100 100
+0~ 0~ 0~ 0~
+3 648 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+#9329
+talisman of chaos~
+the Talisman of Chaos~
+A miniature chaos storm forged into a talisman lies here.~
+~
+9 72417920 0 0 1048576 5 75
+100 100
+0~ 0~ 0~ 0~
+3 480 0
+5 0
+dancing lights~
+3 3
+0 0 0
+A
+13 -50
+A
+19 6
+A
+18 8
+A
+5 -1
+A
+4 2
+#9330
+opal necklace~
+an opal necklace~
+A necklace composed of opal beads lies on the ground.~
+~
+9 16778497 5138 0 33554432 5 70
+100 100
+0~ 0~ 0~ 0~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+113 -1
+A
+5 1
+A
+4 2
+#9331
+dragon-tooth necklace~
+a dragon-tooth necklace~
+A necklace made of dagger-like fangs lies on the ground.~
+~
+9 64 0 0 8388608 5 80
+100 100
+0~ 0~ 0~ 0~
+5 600 0
+5 0
+flesh armor~
+-1 -1
+0 0 0
+A
+302 -1
+A
+2 -1
+A
+5 2
+A
+1 2
+#9332
+golden locket~
+a golden locket~
+A golden locket containing a holy inscription sparkles here.~
+~
+9 16778496 5122 0 33554432 5 65
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 60
+A
+26 -60
+A
+18 13
+A
+2 2
+#9333
+good luck charm~
+a good luck charm~
+A small charm in the shape of a four-leaf clover lies here.~
+~
+9 64 0 0 0 5 55
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+31 4
+#9334
+imprisoned soul~
+an imprisoned soul~
+A soul imprisoned within a shimmering sphere floats here.~
+~
+9 2625 0 0 0 32769 75
+100 100
+0~ 0~ 0~ 0~
+0 280 0
+5 0
+daemonic possession~
+1 1
+0 0 0
+A
+3 2
+A
+4 1
+A
+18 4
+A
+19 6
+A
+5 -1
+A
+24 -10
+#9335
+aura of oblivion~
+the aura of oblivion~
+A dark aura radiating destructive energies floats here.~
+~
+9 5309008 0 0 1048576 32769 85
+100 100
+0~ 0~ 0~ 0~
+0 640 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 -1
+A
+19 8
+A
+18 6
+A
+36 4
+A
+4 2
+A
+5 2
+A
+12 85
+A
+13 80
+A
+26 -50
+#9336
+mithrium breastplate~
+a mithrium breastplate~
+A breastplate forged out of a strange amalgam of silver and gold lies here.~
+~
+9 536870913 0 0 0 9 90
+100 100
+0~ 0~ 0~ 0~
+30 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+107 -1
+A
+31 8
+A
+42 8
+A
+25 20
+A
+12 85
+A
+26 -80
+A
+13 80
+A
+301 -1
+A
+19 15
+A
+5 1
+A
+2 1
+A
+1 2
+#9337
+dragon bone breatsplate~
+a dragon bone breatsplate~
+The ribcage of a very large dragon lies on the ground here.~
+~
+9 0 0 0 8388608 9 80
+100 100
+0~ 0~ 0~ 0~
+35 640 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 16
+A
+1 2
+A
+5 2
+A
+2 -1
+A
+24 -10
+A
+23 -10
+A
+25 20
+A
+26 -75
+#9338
+dark legionaire breastplate~
+dark legionaire breastplate~
+A dark metal breastplate radiating chaotic energy lies here.~
+~
+9 5308944 0 0 1048576 9 60
+100 100
+0~ 0~ 0~ 0~
+15 480 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 -40
+A
+18 7
+A
+19 7
+A
+25 10
+A
+5 1
+A
+1 1
+A
+13 50
+#9339
+rancid shirt~
+a rancid shirt~
+A filthy, stinking silk shirt lies in a pile on the ground here.~
+~
+9 67108864 0 0 0 9 50
+100 100
+0~ 0~ 0~ 0~
+5 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+A
+5 -1
+A
+1 -1
+A
+13 -20
+#9340
+red sequined dress~
+a red sequined dress~
+An expensive red sequined dress lies on the ground here.~
+~
+9 1 2049 0 0 9 65
+100 100
+0~ 0~ 0~ 0~
+6 440 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+A
+12 50
+A
+26 -40
+A
+33 8
+A
+3 1
+#9341
+a ninja suit~
+a ninja suit~
+A skin-tight suit composed of dark fibers lies here.~
+~
+9 4194304 133121 0 0 9 70
+100 100
+0~ 0~ 0~ 0~
+8 560 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 -80
+A
+116 -1
+A
+115 -1
+A
+304 -1
+A
+18 8
+A
+19 4
+A
+2 3
+A
+1 -1
+A
+14 50
+#9342
+vermilion robe~
+a vermilion robe~
+A long robe, the color of blood, lies in a heap on the ground here.~
+~
+9 4260368 0 0 1048576 9 75
+100 100
+0~ 0~ 0~ 0~
+9 560 0
+5 0
+cancellation~
+5 5
+0 0 0
+A
+24 -15
+A
+4 2
+A
+5 2
+A
+25 25
+A
+18 7
+A
+19 7
+#9343
+black traveller's tunic~
+a black traveller's tunic~
+An immaculate, heavily creased black suit lies on the ground here.~
+~
+9 0 2049 0 0 9 70
+100 100
+4~ 0~ 0~ 0~
+6 560 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+20 -10
+A
+13 60
+A
+1 1
+A
+4 1
+A
+18 5
+#9344
+white silk shirt~
+a white silk shirt~
+A simple white silk shirt lies in a heap here.~
+~
+9 0 0 0 0 9 55
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+A
+5 1
+#9345
+shell armor~
+shell armor~
+A suit of armor composed of various animal shells lies here.~
+~
+9 0 0 0 0 9 65
+100 100
+0~ 0~ 0~ 0~
+10 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 12
+A
+13 30
+A
+14 -20
+A
+25 20
+A
+2 -1
+A
+1 1
+A
+5 3
+A
+26 -50
+#9346
+twilight platemail breastplate~
+twilight platemail breastplate~
+A platemail breastplate, the color of twilight, shimmers here.~
+~
+9 67109458 0 0 0 9 85
+100 100
+0~ 0~ 0~ 0~
+15 840 0
+5 0
+astral walk~
+5 5
+0 0 0
+A
+23 -10
+A
+13 80
+A
+19 8
+A
+18 8
+A
+26 -80
+A
+14 25
+A
+25 25
+A
+5 2
+A
+4 2
+#9347
+plain white robe~
+a plain white robe~
+A plain white robe lies on the ground here.~
+~
+9 1344 5122 0 0 9 70
+100 100
+0~ 0~ 0~ 0~
+3 560 0
+5 0
+complete healing~
+1 1
+0 0 0
+A
+12 70
+A
+26 -55
+A
+3 2
+A
+4 2
+#9348
+tool belt~
+a tool belt~
+A leather belt with several small pouches attached to it lies here.~
+~
+15 536870912 0 0 0 2049 50
+100 100
+130~ 5~ 0~ 0~
+3 480 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 -50
+A
+5 1
+#9349
+dragon-scale belt~
+dragon-scale belt~
+A string of multi-colored scales twinkles in the light here.~
+~
+9 64 0 0 8388608 2049 80
+100 100
+0~ 0~ 0~ 0~
+5 640 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+5 2
+A
+13 80
+A
+19 12
+A
+18 6
+A
+23 -15
+#9350
+black leather belt~
+a black leather belt~
+A thin, black leather cord vibrates on the ground here.~
+~
+9 10747904 0 0 0 2049 65
+100 100
+0~ 0~ 0~ 0~
+3 480 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 -1
+A
+2 3
+A
+14 40
+A
+26 -40
+#9351
+twilight belt~
+twilight belt~
+A sliver of raw chaos writhes on the ground here.~
+~
+9 2576 0 0 0 2049 85
+100 100
+0~ 0~ 0~ 0~
+5 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 16
+A
+26 -80
+A
+1 2
+A
+5 2
+A
+151 -1
+#9352
+dark legionaire leggings~
+dark legionaire leggings~
+A pair of dark metal leggings lies here.~
+~
+9 67109376 0 0 0 33 60
+100 100
+0~ 0~ 0~ 0~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+2 -1
+A
+14 -10
+A
+26 -20
+#9353
+rubber slacks~
+rubber slacks~
+A pair of pants hewn from strangely cured leather lies here.~
+~
+9 0 0 0 0 33 65
+100 100
+0~ 0~ 0~ 0~
+4 480 0
+0 0
+reserved~
+0 0
+0 0 0
+#9360
+black war axe~
+a black war axe~
+A black war axe lies here.~
+~
+5 65538 36 0 67110912 8193 100
+100 100
+0~ 0~ 0~ 1~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+25 10
+A
+18 10
+#9363
+red robe~
+a red robe~
+(no description)~
+~
+9 3 0 0 0 1025 70
+100 100
+2~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 13
+A
+24 -13
+#9365
+a black silk cloak~
+a black silk robe~
+A black silk cloak is here.~
+~
+9 0 0 0 0 9 50
+100 100
+3~ 0~ 0~ 0~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#9369
+black robes~
+black robes~
+Robes lie here.~
+~
+8 597 0 0 0 9 100
+100 100
+0~ 0~ 0~ 0~
+0 1600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 100
+#9370
+black battle armor~
+a suit of spiked black battle armor~
+A bulky suit of combat armor is here.~
+~
+9 0 0 0 0 9 100
+100 100
+0~ 0~ 0~ 0~
+30 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 8
+A
+26 40
+A
+1 2
+#9371
+a spiked whip~
+a black spiked whip~
+A whip lies here.~
+~
+5 6 0 0 0 8192 100
+100 100
+0~ 0~ 0~ 4~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+26 10
+#9372
+black serrated broadsword sword~
+a black serrated broadsword~
+A huge serrated sword is here.~
+~
+5 16390 0 0 0 8193 100
+100 100
+0~ 0~ 0~ 10~
+8 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+25 30
+A
+26 40
+#9380
+dark crown~
+a dark crown~
+A darkly gleaming crown lies here.~
+~
+9 64 0 0 0 17 100
+100 100
+4~ 0~ 0~ 0~
+2 400 0
+5 0
+armor~
+1 1
+0 0 0
+A
+30 2
+A
+9 1
+A
+12 50
+A
+19 5
+A
+18 5
+#9381
+black halberd~
+a black halberd~
+A halberd lies here.~
+~
+5 37814336 32768 0 0 8193 100
+100 100
+0~ 0~ 0~ 13~
+5 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 20
+A
+24 1
+A
+19 20
+A
+18 20
+#9385
+black leather armor~
+black leather armor~
+A suit of armor is here.~
+~
+9 0 0 0 0 8 100
+100 100
+12~ 0~ 0~ 0~
+5 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#9386
+silver coin~
+a silver coin~
+A silver coin lies here.~
+~
+8 0 0 0 0 32769 100
+100 100
+0~ 0~ 0~ 0~
+0 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+-99 2
+A
+103 -1
+A
+4 1
+A
+18 5
+A
+19 5
+E
+coin~
+On one side is a snarling wolf; on the other, unintelligable runes.
+~
+#9387
+pile ash~
+a pile of ash~
+A pile of ash is here.~
+~
+15 0 0 0 0 0 0
+100 100
+10~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9388
+goblet wine~
+a goblet of wine~
+A goblet of wine is here.~
+~
+17 0 0 0 0 1 1
+100 100
+2~ 2~ 2~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9389
+hunk mutton~
+a hunk of mutton~
+A hunk of mutton is here.~
+~
+19 0 0 0 0 1 1
+100 100
+4~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#9390
+black blade soulstealer~
+the black blade "Soulstealer"~
+A glowing sword is here.~
+~
+5 4259908 0 0 0 8193 100
+100 100
+0~ 0~ 0~ 3~
+5 400 0
+5 0
+drain life~
+3 3
+0 0 0
+A
+18 20
+A
+19 20
+#9394
+loose stone~
+a loose cobblestone~
+One of the cobblestones here seems to be somewhat loose.~
+~
+15 0 0 0 0 0 0
+100 100
+10~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#9300
+Entrance to Relfaust~
+~
+~
+The minute you force your way through the large iron gates guarding the
+small town of Relfaust, you are immediately beset by feelings of utter dread
+and doom.  You cannot bring yourself to even think of the events that could
+have conspired to transform this peaceful province into the waste that now
+lies before you.  However, in the back of your mind, you have a feeling that
+the answers lie within the large, dark castle that looms above the horizon. 
+To the north, you see the beginnings of an old cobblestone road.  
+~
+0 536870916 1
+Rd     0
+D0
+~
+~
+0 0 9309
+S
+#9301
+Intersection of Morphock and Keriok~
+~
+~
+You find yourself involuntarily darting your eyes from side to side and
+nervously jumping at every slight noise.  Even though you have only been
+here for but a short time, you're beginning to notice a disturbing trend
+among the local citizenry.  Namely, all of them have been twisted somehow by
+the forces of chaos that permeate this city.  Some are slight, such as pale
+skin and slightly enlarged or distorted physical features.  Others are more
+pronounced, so much so that you can barely look upon them without fleeing in
+terror.  Spying a bent signpost, you see that Morphock Lane continues to the
+north towards the town square while Keriock Drive lies to the east.  
+~
+0 536870912 1
+Rd     0
+D0
+~
+~
+0 0 9310
+D1
+~
+~
+0 0 9302
+D2
+~
+~
+0 0 9309
+S
+#9302
+Keriock Drive~
+~
+~
+Oddly enough, this street seems quite deserted.  It's almost as if no
+living being has tread this way within several years.  Looking eastward you
+have an idea as to why this might be.  You notice what appears to be a very
+large, black pillar of flame emanating from the roof of a dilapidated
+building.  Something inside you wishes to investigate this curiosity.  Of
+course, something inside you is also suppressing the urge to scream...  
+~
+0 536870912 1
+Rd     0
+D1
+~
+~
+0 0 9303
+D3
+~
+~
+0 0 9301
+S
+#9303
+Before a Small Church~
+~
+~
+Keriock Drive ends before what appears to be a small, abandoned church. 
+The area is very quiet and still.  It seems as if even lower creatures dare
+not approach this edifice.  The black pillar of flame you observed in the
+distance now appears as a raging bonfire hovering just above the church's
+rooftop.  The force of chaos is almost palpable here and, even though you
+exert all of your will to fight it, you feel it urging you inside of the
+church.  What you'll find inside is anybody's guess.  
+~
+0 536870912 1
+Rd     0
+D1
+~
+~
+0 0 9363
+D3
+~
+~
+0 0 9302
+S
+#9304
+Green Leaf Square~
+~
+~
+As you arrive at Relfaust's town square, you notice yet another
+disturbing aspect of this area.  Regardless of the time of day, it appears
+as if this place is in a perpetual state of twilight.  The sky does not
+brighten or darken, and neither the moon or the sun deigns to occupy their
+rightful place in the heavens.  The only sources of light in the city seem
+to come from strange crystal orbs that line the streets much like lampposts.
+However, something in the back of your mind tells you that the baleful green
+light that they emit is not exactly all that healthy.  From here, you see
+that Morphock Lane continues to the north while two smaller paths branch off
+to the east and west.  
+~
+0 536870912 1
+Rd     0
+D0
+~
+~
+0 0 9305
+D1
+~
+~
+0 0 9311
+D2
+~
+~
+0 0 9310
+D3
+~
+~
+0 0 9316
+S
+#9305
+Morphock Lane North~
+~
+~
+You continue north along Morphock Lane, the feelings of dread and doom growing
+ever stronger with each step you take.  Some of the local citizens seem to
+be taking more notice of you.  You overhear them snickering about something
+as you pass them by.  Perhaps you are the butt of some private joke.  Or
+perhaps you are the new delicacy...  
+~
+0 536870912 1
+Rd     0
+D0
+~
+~
+0 0 9306
+D2
+~
+~
+0 0 9304
+S
+#9306
+Intersection of Morphock and Venerable~
+~
+~
+This place is definitely beginning to take a toll on your already
+frazzled nerves.  No matter where you look, all you can see are broken
+homes, chaotically warped bodies, and the relics of what you believe to be a
+once beautiful city.  Composing yourself, you notice that you have arrived
+at the intersection of Morphock Lane and Venerable Way.  To the east you see
+what was once Relfaust's commerce district.  To the west, you see several
+large buildings, one of which looks like a seashell.  Morphock Lane
+continues to the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9307
+D1
+~
+~
+0 0 9323
+D2
+~
+~
+0 0 9305
+D3
+~
+~
+0 0 9328
+S
+#9307
+Nearing Morimir Castle~
+~
+~
+The locals are starting to take a decidedly unhealthy interest in you. 
+You can hear some of them sneering in your direction, while others are
+gesticulating wildly and motioning for you to quickly take your leave. 
+Ignoring them you look forward, catching a glimpse of the massive stone
+castle that you observed near the city entrance.  For a brief moment, you
+feel an alien presence in your mind.  The presence soon retreats as you make
+your way to the castle's entrance.  
+~
+0 536870912 1
+Rd     0
+D0
+~
+~
+0 0 9308
+D2
+~
+~
+0 0 9306
+S
+#9308
+Entrance to Castle Morimir~
+~
+~
+The atmosphere of this place becomes even more oppressive the closer you
+get to the castle.  A signpost beside the road reads 'Castle Morimir' and
+something else in an unknown language.  You barely have time to ponder this
+before you are accosted by two very large men dressed in jet black
+legionaire's armor.  It seems as if they have been at their posts for longer
+than you have been alive.  From the looks of it, they may be here long after
+you have "departed".  
+~
+0 536870912 1
+Rd     0
+D0
+~
+~
+3 0 9364
+D2
+~
+~
+0 0 9307
+S
+#9309
+Morphock Lane South~
+~
+~
+You step over several deep potholes as you make your way down the
+cobblestone road.  The farther you travel, the more you notice the
+remarkable state of disrepair that this city is in.  Looking at a rotten
+wooden signpost, you see that you are currently on Morphock Lane South.  The
+road continues to the north.  
+~
+0 536870916 1
+Rd     0
+D0
+~
+~
+0 0 9301
+D2
+~
+~
+0 0 9300
+S
+#9310
+Morphock Lane South~
+~
+~
+For some unknown reason, the cobblestone road appears to be in better
+shape here.  You also notice that there are a few more people milling about the
+street.  As you look ahead, you see that you are approaching Relfaust's town
+square.  
+~
+0 536870912 0
+Rd     0
+D0
+~
+~
+0 0 9304
+D2
+~
+~
+0 0 9301
+S
+#9311
+Rainard Terrace~
+~
+~
+The cobblestone road gives way to a simple dirt path.  Eyeing yet another
+rotten wooden signpost you see that this is Rainard Terrace.  To the east,
+you can hear the sounds of metal clanging against metal and several shrill
+cries of pain.  
+~
+0 536870912 1
+Rd     0
+D1
+~
+~
+0 0 9312
+D3
+~
+~
+0 0 9304
+S
+#9312
+Before the Stadium~
+~
+~
+The dry, dusty brown road suddenly turns a deep crimsupon red.  It does not
+take you long to realize that the ground is saturated with blood, most of it
+congealing upon the steps of a large Romanesque stadium.  The sounds of battle
+reverberate within its cracked, marble walls along with the pitiful wails
+of fallen warriors.  The entrance to the Stadium lies to the north while
+Rainard Terrace continues to the east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9313
+D1
+~
+~
+0 0 9314
+D3
+~
+~
+0 0 9311
+S
+#9313
+Stadium Main Hall~
+~
+~
+Raucous laughter and squeals of pain fill the hallway.  The alabaster
+walls are stained in varying hues of red.  The incessant clamor of metal
+against metal emanates from the archways to your left and right while you
+can hear a barely inaudible growl coming from the north.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9356
+D1
+~
+~
+0 0 9355
+D2
+~
+~
+0 0 9312
+D3
+~
+~
+0 0 9354
+S
+#9314
+Rainard Terrace~
+~
+~
+The sounds of battle are quickly drowned out by those of very loud
+thunderclaps.  Streaks of blue lightning dance across the sky, forming the
+shapes of elaborate pentagrams and other arcane sigils.  You feel a strong
+concentration of chaotic energies to the east.  A slight tingling sensation
+races up and down your spine as you decide whether to press on or fall back.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9315
+D3
+~
+~
+0 0 9312
+S
+#9315
+Before the Infernal Spire~
+~
+~
+The air here is thick with the pungent aroma of sulfer and freshly burned
+pitch.  With watery eyes, you see that before you is a tall, cylindrical
+tower the color of the darkest midnight.  Tendrils of blue energy race down
+its ebon walls, finally slamming into the ground and radiating outward.  It
+is of no wonder that you can find no evidence of flora or fauna anywhere
+near this place.  Indeed, the very earth has taken on a dark, unholy
+appearance.  The entrance to this bastion of chaos lies east, behind two
+very large iron doors.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9357
+D3
+~
+~
+0 0 9314
+S
+#9316
+Tashara Avenue~
+~
+~
+The cobblestone path transforms into a smooth red brick road.  The
+multitude of small cottages and log cabins that dot the landscape indicates
+that this must be Relfaust's residential district.  A white signpost
+states that the name of this street is Tashara Avenue.  The road
+continues to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9304
+D3
+~
+~
+0 0 9317
+S
+#9317
+Community Circle~
+~
+~
+Tashara Avenue widens a bit here.  A fallen brown signpost reads
+'Community Square: All Visitors Welcome'.  You cannot quite put your finger
+on it, but you feel a little more at ease here.  The omnipresent chaotic
+force does not seem to be as strong here for some reason.  You also notice
+that very few locals wish to come this way, as evident by the grimaces on
+their faces when they look your way.  There are three paths here. The path
+to the north leads to a small log cabin, while the path to the south leads
+to a large manor.  The path to the west leads to a large meeting hall.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9319
+D1
+~
+~
+0 0 9316
+D2
+~
+~
+0 0 9318
+D3
+~
+~
+0 0 9320
+S
+#9318
+Before a Large Manor~
+~
+~
+This path ends before a very prestigous manor house.  You notice that the
+grounds are exceptionally well taken care of.  Whoever lives, or once lived
+here must be quite a wealthy and influential citizen.  You rapt the
+hawk-shaped silver door knocker several times, but no one answers.  Testing
+the door you find that is unlocked, allowing easy access inside this grand
+estate.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9317
+D2
+~
+~
+3 0 9346
+S
+#9319
+Before a Small Cabin~
+~
+~
+The path ends before a small log cabin nestled beside a suprisingly
+beautiful forest lake.  Kudzu vines hang precariously down the sides of the
+cabin while other plant growth pushes its way up through the cabin's wooden
+deck.  The front door appears to be unlocked.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 9345
+D2
+~
+~
+0 0 9317
+S
+#9320
+Before The Meeting Lodge~
+~
+~
+You follow the western path until you come to a very large wooden lodge. 
+The windows of this lodge have been boarded up and it appears that the only
+entrance has been nailed shut.  Nothing short of phasing through the door or
+bashing it down will allow entry into this place.  For a brief moment you
+hear the sounds of movement coming from within the lodge, but then it
+ceases.  The path you are on continues to the west towards a large statue.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+23 0 9352
+D1
+~
+~
+0 0 9317
+D3
+~
+~
+0 0 9321
+S
+#9321
+Tashara Avenue~
+~
+~
+The closer you come to the statue, the more a feeling of peace and
+tranquility passes over you.  At this point, you have no doubt in your mind
+that this is the reason that the locals are loathe to come this way.  For
+the first time during your visit to this province, you feel almost totally
+at ease.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9320
+D3
+~
+~
+0 0 9322
+S
+#9322
+Tashara's Memorial~
+~
+~
+You gaze in awe at a seven meter tall, pure golden statue resting atop a
+marble, cubic base.  It appears to be that of an attractive, long-haired
+female human no more than 19 years of age.  She is depicted in a meditative
+stance, adorned with the robes and wooden circlet of a druid.  An ingraving
+on the statue's base reads 'In Memoriam De Tashara ab Green Leaf'.  As you
+gaze at the statue, you are filled with a sense of peace and safety.  
+~
+0 2098176 0
+Rd     0
+D1
+~
+~
+0 0 9321
+S
+#9323
+Venerable Way East~
+~
+~
+Relfaust's commerce district has definitely witnessed better days. 
+Refuse literally covers the street to point that it is impossible to see the
+road itself.  Most of the buildings this way are in even poorer condition
+than the rest of the province.  Some are threatening to collapse at a
+moment's notice. The locals here regard you with disdain as they mill about
+the street buying rotten food and broken products.  The trail of trash
+extends eastward towards a large crowd of people.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9324
+D3
+~
+~
+0 0 9306
+S
+#9324
+Venerable East~
+~
+~
+The number of locals increases dramatically here.  It is all that you can
+do to prevent being pushed to the ground and trampled upon.  You notice that
+a majority of them seem to be pouring out of a fairly large hut southward. 
+To the north, you spy a dilapidated brick building with the word 'Bank'
+scrawled in black paint above the entrance.  The crowd of locals seems to
+thin a bit towards the east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9335
+D1
+~
+~
+0 0 9325
+D2
+~
+~
+0 0 9336
+D3
+~
+~
+0 0 9323
+S
+#9325
+Venerable East~
+~
+~
+In stark contrast to the hustle and bustle prevalent towards the west,
+this section of Venerable Way is almost deserted.  The pile of trash and
+refuse also thins a bit here and there, allowing brief glimpses of the dry
+dirt road beneath.  Glancing to the north and south, you see two small brick
+buildings.  Both appear to have been desecrated beyond any hope of repair. 
+Judging buy what is left of their entrances, the northern building was once
+a weapon's shop while the southern building was once an armory.  Venerable
+Way continues to the east.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 9337
+D1
+~
+~
+0 0 9327
+D2
+~
+~
+0 0 9338
+D3
+~
+~
+0 0 9324
+S
+#9326
+Wall~
+~
+~
+You find yourself standing before a three meter high, granite wall.  You
+begin to question your senses, as you are positive that this wall did not
+exist a few moments ago.  While you ponder the situation, two very large
+humanoid creatures composed of granite step out of the wall and take
+positions on opposite sides of you.  They turn their spherical heads toward
+you and although their faces are featureless, you have a strong feeling that
+they are not at all happy to see you.  There is a small crack in the wall
+that vaguely resembles a keyhole.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9328
+D3
+~
+~
+119 9310 9329
+S
+#9327
+Before Chanry De Al'asad~
+~
+~
+Venerable Way ends before a small restaurant called Chantry De Al'asad. 
+The building itself is reminiscent of a gothic cathedral, the dark granite
+walls and various outcroppings giving it the appearance of a perched
+gargoyle.  The aroma of barbecued meat permeates the air, possessing a
+distinct flavor that you can't quite place at the moment.  At any rate, it
+merits investigation, if only for the sole purpose of acquiring a well-deserved
+meal and some rest.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9339
+D3
+~
+~
+0 0 9325
+S
+#9328
+Venerable Way West~
+~
+~
+This area of the city seems to be in almost pristine condition.  The
+buildings do not have the battle scarred, condemned appearance prevalent
+throughout the rest of the city and the road appears to be uniform and well
+cleaned.  Even the locals here do not express the taint of chaos to the
+degree of their brethren elswhere.  The road continues to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 9306
+D3
+~
+~
+0 0 9326
+S
+#9329
+Venerable Way west~
+~
+~
+You continue westward along Venerable Way, all the while admiring the
+complex architecture of the buildings prevalent here.  Amazingly, they all
+seem to have been molded from the ground up, much like a sand castle.  Their
+features are all seamless and if it were not for the paint, it would be
+almost impossible to tell where the ground ends and the actual edifices
+themselves begin.  The well paved road you are on continues to the west
+while to the north you spot an unnaturally dark alleyway.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 9330
+D1
+~
+~
+119 9310 9326
+D3
+~
+~
+0 0 9331
+S
+#9330
+Truly Dead End~
+~
+~
+You are assaulted by the overwhelming stench of death and decay. 
+Numerous desecated body parts lie strewn about the ground, blood and viscera
+cover the walls.  Near the back of the alley, you can hear a high-pitched
+whine.  Moments later, you hear a shuffling noise and see that several of
+the body parts are moving in your direction.  This does not bode well....  
+~
+0 131074 0
+Rd     0
+D2
+~
+~
+0 0 9329
+S
+#9331
+Before The Opera House~
+~
+~
+You find yourself standing before a large building that bears an uncanny
+resemblance to a conch shell.  The exterior is a dull gray ivory, almost the
+color of a spring stormcloud.  A mural located beside the entrance depicts a
+beautiful, blonde woman performing before a crowd of attentive people. 
+Below the mural, a sign printed in silver letters reads 'Relfaust
+Opera-Night Performances Only'. The road continues west.  
+~
+0 131074 0
+Rd     0
+D0
+~
+~
+0 0 9398
+D1
+~
+~
+0 0 9329
+D3
+~
+~
+0 0 9332
+S
+#9332
+The Governor's House~
+~
+~
+The road comes to an abrupt end before a miniature citadel.  There are
+almost no locals on the street here, which no doubt has something to do with
+the gigantic humanoid pacing back and forth before the citadel's entrance. 
+It soon becomes evident that a very influential and wealthy indvidual must
+reside here.  The large figure ceases his pacing and strides toward you,
+motioning for you to leave.  As you gaze at his gigantic features, something
+in the back of your mind tells you that leaving might not be such a bad
+idea.  
+~
+0 131074 0
+Rd     0
+D1
+~
+~
+0 0 9331
+D3
+~
+~
+3 0 9333
+S
+#9333
+A Short Hallway~
+~
+~
+Gilded statues of exotic beasts stand in eternal vigilance next to
+ornately designed, stained-glass windows.  A monochromatic mural of a
+gigantic mountain hawk dominates the westernmost wall.  Despite the splendor
+that lies before you, there is an overbearing sense of longing and despair
+present here.  Faded tapestries of beautiful sunlit fields of flowers hang
+prominently on the walls, completely in defiance of the drabness that
+pervades the rest of the city.  The hallway ends to the north before two
+large iron doors.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+0 0 9334
+D1
+~
+~
+3 0 9332
+S
+#9334
+Governor Hawke's Office~
+~
+~
+You enter into a large circular room with an incredibly high, domed
+ceiling.  The walls are made of a dark, smooth substance unlike any you have
+ever encountered before.  A plush, sky-blue carpet emblazoned with a white
+emblem of a hawk covers the floor.  Strangely, all of the pieces of
+furniture here appear to have been literally molded out of the walls or up
+from the floor.  Near the back of the room behind a dark gray slab sits a
+morose, middle-aged, male human.  
+~
+0 131082 0
+Rd     0
+D2
+~
+~
+0 0 9333
+S
+#9335
+Relfaust Bank~
+~
+~
+This place is more akin to a mausoleum than a bank.  All is deathly
+quiet, save for the slight scratching sound made by the quil pen of an elder
+financier.  He seems to be deeply involved in settling accounts, barely
+giving notice to your unannounced intrusion.  
+~
+0 16777224 0
+Rd     0
+D2
+~
+~
+0 0 9324
+S
+#9336
+Veshek's Bazaar~
+~
+~
+Several people file past you as you make your way inside the hut.  A
+tattered cloth banner with the name 'Veshek' scrawled on it hangs limply
+from the ceiling.  Multicolored hemp ropes cordon off the area into many
+smaller subsections, each filled with bags of exotic spices, flasks of
+various liquids and potions, and other food stuffs from around the world.  A
+large rectangular iron safe sits at the far end of the hut, beside which
+stands a devious, portly orc counting a pile of freshly collected gold
+coins.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9324
+S
+#9337
+Desecrated Armory~
+~
+~
+This shop has long since been abandoned.  The cracked, blood stained
+brick walls are completely bare save for the shadowy outlines of shields and
+breastplates that were once displayed on them.  The rest of the shop is
+completely barren with the exception of a large, oblong marble chest sitting
+in the middle of the room.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9325
+S
+#9338
+Desecrated Weapon Shop~
+~
+~
+Shards of glass and bits of charred wood and brick litter the floor. 
+Several sections of the back wall have large scorch marks on them and, in
+some areas, have been completely punched through.  Any weapons that may have
+been housed here are long gone.  Indeed, the only object here that is still
+in one piece is an oddly marked, oblong marble chest.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9325
+S
+#9339
+Chantry Lower Level~
+~
+~
+The inside of the the restaurant is no more inviting than the outside. 
+Ominous shadows dance about in the dim torch light while music befitting a
+funeral procession plays in the background.  There are many tables here,
+however, only a scant few seem to be occupied at the moment.  There is a set
+of stairs here that lead to the Chantry's upper level.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 9327
+D4
+~
+~
+0 0 9340
+S
+#9340
+Chantry Upper Level~
+~
+~
+Even though there is better lighting here, the restaurant's upper level
+is just as depressing as the lower level.  There are mostly two-person
+booths here, although few are occupied by more than one person.  All of the
+patrons seem to be lost deep in thought.  Their dead-pan faces indicate that
+none are too happy to be here.  To the west, you spy a dark elven bartender
+mixing drinks.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 9341
+D5
+~
+~
+0 0 9339
+S
+#9341
+Chantry Bar~
+~
+~
+The Bar seems to contain more customers than the restaurant's upper and
+lower levels combined.  Quite a few of them appear to be completely
+intoxicated.  You are hardly surprised, seeing as how the wall behind the
+bar is filled with a multitude of unlabled bottles and spice bags.  As you
+stare on, the dark elven bartender approaches you with a decidedly wicked
+grin on his face.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9340
+S
+#9342
+The Auditorium~
+~
+~
+It looks as if half of the city has gathered here.  All of the seats seem
+to be taken save for a few in the very back.  The floor dips considerably,
+allowing you to peer over the crowd and view the stage, which is currently
+occupied by a female dressed in a seductive twilight blue evening gown.  Her
+hypnotic voice resonates throughout the auditorium, lulling the crowd into a
+deep state of torpor.  You find yourself briefly growing just as listless,
+yet you quickly manage to fight it off.  
+~
+0 131082 0
+Rd     0
+D1
+~
+~
+0 0 9343
+D2
+~
+~
+119 0 9398
+D4
+~
+~
+0 0 9344
+S
+#9343
+The Stage~
+~
+~
+You make your way to the stage despite vehement protests made by ushers
+urging you to find a seat.  On stage, the enchantingly beautiful elven bard
+Maxima Darkrose simply gazes steadily at you.  You find yourself becoming
+enraptured by her ballad, which is dedicated to the lords of chaos.  She
+approaches you as she nears the final stanza, a devilish grin creeping
+across her face.  
+~
+0 131082 0
+Rd     0
+D3
+~
+~
+0 0 9342
+S
+#9344
+The Balcony~
+~
+~
+Only the wealthiest and most influential citizens can afford these seats.
+High above the "commoners", the elite snicker amongst themselves and
+exchange private jokes directed at those they deem beneath them.  You begin
+to wonder why they would pay so much for a show ticket, yet not pay any
+attention to the performance.  A few of them turn in your direction and
+sneer while the others cease their conversations and motion for you to
+leave.  
+~
+0 131074 0
+Rd     0
+D5
+~
+~
+0 0 9342
+S
+#9345
+Inside the Cabin~
+~
+~
+This place is sparsely furnished, yet has a uniquely livable feel about
+it.  Judging by the markings on the floor and the numerous measuring tools
+and mixing bowls lying about, a great sage onced lived here.  Apparently he
+or she left in quite a hurry as several of their notes and charts lay strewn
+about the room.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 9319
+S
+#9346
+Manor Main Hall~
+~
+~
+No one has ventured here for a long time, as evident by the thick coating
+of dust covering everything.  Nevertheless, this place is extremely well
+furnished.  Gold and silver lantern holders line the walls and expensive
+crystal figurines sit atop handcrafted mahogany stands.  A red velvet
+staircase leads up from here, with other rooms located to the east and west.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 9318
+D1
+~
+~
+0 0 9347
+D3
+~
+~
+0 0 9348
+D4
+~
+~
+0 0 9349
+S
+#9347
+Dining Room~
+~
+~
+Pushing your way through an abnormally thick matrix of cobwebs, you enter
+a grand dining hall.  An impressive chandelier hangs from the ceiling, it's
+dazzling crystals sparkle even in the room's dim lighting.  Before you
+stretches an exceptionally long, polished oak dining table.  Each seat has a
+set of eating utensils meticulously arranged before it.  Evidently, the
+manor's previous occupant was expecting to host a rather exquisite feast for
+a very long guest list.  You look about the room and glimpse several large
+portraits lining the walls.  Most of them are faded beyond recognition,
+although the one near the head of the table still manages to catch your
+attention.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 9346
+S
+#9348
+Kitchen~
+~
+~
+With the exception of the many dust balls and cobwebs lying about, the
+kitchen appears very neat and orderly.  A large wood stove takes up most of
+the back wall, with a dish basin and variable-sized cupboards taking up the
+rest.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9346
+S
+#9349
+Upstairs~
+~
+~
+You make your way up the velvet carpeted staircase to the second floor. 
+There is a relatively short hallway here adorned with ornate tapestries and
+intricate pieces of art.  A large oaken door lies to your west and a smaller
+iron door lies to your east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 9350
+D3
+~
+~
+3 0 9351
+D5
+~
+~
+0 0 9346
+S
+#9350
+Small Study~
+~
+~
+This small enclosure contains two small bookcases several old books and
+papers.  Near the back of the room is an oval, wooden desk with piles of
+sealed scrolls lying neatly on top of it.  You notice that some of those
+seals are familar, especially the ones from Methidoral, StoneGate Castle and
+Aurum.  A few of the other seals appear incredibly worn, as if they have
+been sitting on this desk for well over a century.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 9349
+S
+#9351
+Master Bedroom~
+~
+~
+You enter into a fabulously large bedroom.  Even though dust covers
+everything and cobwebs are everywhere, this room is nonetheless fit for a
+king.  The ceiling is a multicolor stained-glass skyligt.  You briefly
+imagine how this room must have appeared during a bright, sunny day. 
+Vibrant colors would dance about the room, giving one the feeling of living
+within a kaleidoscope.  A huge, plush bed with goose feather pillows
+occupies the center of the room while extravagant mahogany dressers and
+chairs take up the rest.  You are sorely tempted to take a brief rest here,
+however, your better judgement dictates otherwise.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 9349
+S
+#9352
+Inside the Meeting Lodge~
+~
+~
+You force your way through the door, entering a large room filled with
+broken furniture and piles of trash.  This place looks as if it were the
+first to be pillaged by agents of chaos that ransacked the rest of the town.
+Or so it seems.  You notice that the debris is just a bit too orderly,
+almost as if it were arranged to hide something.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+23 0 9320
+D5
+~
+~
+512 0 9391
+S
+#9353
+The Domain of Klavius~
+~
+~
+Piles of jewels and gold coins lay on the ground before you.  Golden
+statues of warriors stand beside a small crater filled with mud.  Your hopes
+of making off with a portion of this treasure trove are dashed to pieces
+when you finally notice the hulking, extremely well armed minotaur sitting
+on a gigantic throne near the center of the room.  He eyes you closely, just
+itching to start a fight.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9356
+S
+#9354
+A Shadow Filled Room~
+~
+~
+You tread carefully into this dimly lit room.  All is deathly quiet, save
+for a slight murmuring originating somewhere in the darkness.  This
+murmuring suddenly cease the moment you see two eyes, glowing red like
+burning coals, rushing toward you.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9313
+S
+#9355
+A Packed Arena~
+~
+~
+You enter into a small, enclosed arena.  The place is filled to the brim
+with the local citizenry, most of them frothing at the mouth and screeching
+for blood.  In the distance you see a slender figure picking off a fellow
+combatant.  Once done, the figure looks your way.  The crowd goes wild...  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 9313
+S
+#9356
+North Hall~
+~
+~
+A gruesome theme rears its ugly head the farther you walk down this
+hallway.  At first, you notice several pieces of dented armor hanging
+precariously on the walls.  However, they quickly progress into whole suits
+of dented war armor.  When you finally arrive at the jet black archway
+leading to the guildmaster's office, you see two mummified corpses staked to
+either side of the archway.  You get the impression that whoever or whatever
+lies behind that archway does not take kindly to visitors.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9353
+D2
+~
+~
+0 0 9313
+S
+#9357
+Base of the Tower~
+~
+~
+The interior of the spire radiates raw, chaotic power.  The walls pulsate
+with energy, giving them a uniquely organic property.  Oddly enough, this
+place seems to be much more spacious inside than without.  Be it a trick of
+light or some unknown aspect of the tower itself, you cannot tell.  Glancing
+about the room, you see that there are three distinctly strange doors
+embedded in the wall above you, HIGH above you.  There are no stairs leading
+up to these doors, nor do you spot any way to climb the walls' incredibly
+smooth black surface.  Perhaps there is an alternative way to reach them...  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 9315
+D4
+~
+~
+0 0 9362
+S
+#9358
+Entrance to library~
+~
+~
+Fighting an ever-growing feeling of vertigo, you make your way up to the
+second door.  It is a simple oaken door with a golden plaque in the shape of
+a book nailed to it.  In the back of your mind, something tells you that
+whatever is behind this door is not as harmless as you are being led to
+believe.  Staring upward, you see one last door situated just below the
+tower's domed ceiling.  
+~
+0 33554440 0
+Rd     0
+D1
+~
+~
+3 0 9361
+D4
+~
+~
+0 0 9359
+D5
+~
+~
+0 0 9362
+S
+#9359
+The Final Door~
+~
+~
+Struggling against an unseen force, you barely make it to the stone
+landing just before the third door.  Resting yourself, you stare at the
+fresco on the tower's ceiling.  It depicts a rather grim account of the
+construction of this tower.  You view images of beings from distant, chaotic
+realms enslaving innocent souls and then sacrificing them to their dark
+masters.  You turn away, focusing your attention on the large heavy iron
+door that looms in front of you.  Approaching it, you are stopped dead in
+your tracks by the appearance of a genderless, humanoid face within the
+center of the door.  The face stares at you with crimson eyes, seemingly
+peering into your very soul.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 9360
+D5
+~
+~
+0 0 9358
+S
+#9360
+Danielle's Haven~
+~
+~
+A blast of cold air rushes by you, chilling you to the very bone.  The
+entire area is smothered in darkness, the only illumination stems from a
+pillar of blueish-black flame in the center of the room.  As you look
+closer, you can barely make out the ephemeral forms of various beings
+floating about within it.  They all appear to be in great pain, their low
+moans and wails reverberate throughout the room sending shivers up your
+spine.  Floating beside the ghostly pillar of flame is a young human woman
+adorned in a blood red robe and saccloth black cloak covered in arcane
+runes.  You sense very powerful chaotic energy emanating from her.  She
+turns her head towards you and smiles, barring two long and very sharp
+fangs.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 9359
+S
+#9361
+Grand Library~
+~
+~
+The walls are lined with bookcase upon bookcase of thick, musty tomes.  A
+single oaken table in the center of the room overflows with various scrolls
+and parchments.  You speculate that it would take someone at least a decade
+to just browse through them all.  Just as you are about to pick up a book
+and flip through it, you hear a slight fluttering noise coming from behind. 
+Swiftly spinning around, you come face to face with a very elderly elven
+woman.  Judging by her angry visage, she is not too pleased by your presence
+here.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 9358
+S
+#9362
+The First Door~
+~
+~
+You slowly float before the first door, which is more or less a gigantic
+mosaic composed of dented shields and various bits of used armor.  Upon
+closer inspection, you see several large blood stains on the door.  Many of
+these stains center around puncture holes on the armor pieces, others appear
+near the areas where the pieces have been welded together.  You notice that
+some of them are quite fresh, a few are even dripping.  You shiver slightly
+as you decide whether to continue upward or brave whatever lies behind this
+gruesome piece of art.  
+~
+0 33554440 0
+Rd     0
+D1
+~
+~
+3 0 9399
+D4
+~
+~
+0 0 9358
+D5
+~
+~
+0 0 9357
+S
+#9363
+Within the Church~
+~
+~
+The inside of the church is meticulously clean yet sparsly furnished.  A
+plaque on the back wall reads 'Church of the Great Light'.  How ironic,
+seeing as how the entire place is bathed in shadows.  In the center of the
+room, there is a very large black sphere floating above a stone altar
+enscribed in arcane runes.  Chaotic energy radiates from the altar, coursing
+through your entire being.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 9303
+S
+#9364
+Entrance Hall~
+~
+~
+A thick, dark mist rolls about the hall.  Although it is spacious and
+well lit, you cannot help feeling stifled and closed-in.  An indescribable
+darkness pervades this castle, and you can sense that it has immense power. 
+From here, you see a smaller hallway branching off to east.  The main
+hallway continues to the north.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9369
+D1
+~
+~
+0 0 9390
+D2
+~
+~
+3 0 9308
+S
+#9365
+A Cramped Dungeon~
+~
+~
+As you descend the staircase, the laughter and moans are replaced by
+hushed voices and exceedingly loud snoring.  At the bottom of the staircase
+you see an armored orcish guard leaning against the dank dungeon wall.  He
+is deep asleep, although his snoring is loud enough to wake the dead.  To
+the east lies a dingy cell in which a young lady dressed in rags sits
+cowering in the back corner.  To the west lies a similar cell in which a
+regal, very surly feline warrior stands chained to the back wall.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+117 9308 9366
+D3
+~
+~
+7 9308 9368
+D4
+~
+~
+0 0 9390
+S
+#9366
+Lara's Cell~
+~
+~
+A pile of compressed hay and a dirty blanket are the only comforts
+provided in this cell.  A pool of muddy water lies stagnant near the left
+wall along with the remnants of a half-eaten, moldy loaf of bread.  The
+young lady held prisoner here eyes you hesitantly, a mix of both wonder and
+fear etched on her face as she cringes in the back corner of the cell.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+117 0 9365
+S
+#9367
+West Wing~
+~
+~
+Childish scriblings written in a crimson substance cover the walls.  The
+oppressive, dark atmosphere of the castle grows with each step westward,
+along with the sounds of innocent, child-like giggling.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9370
+D3
+~
+~
+0 0 9373
+S
+#9368
+Mehiyon's Cell~
+~
+~
+This cell is completely devoid of any other trappings, save for the
+shackles barely containing the muscular, yet lithe form of an elder feline
+warrior.  His body hangs limp against the cold stone wall, yet his face is
+ablaze with the fires of resistance.  The warrior stares your way, bracing
+himself for anything you have to offer.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+7 0 9365
+S
+#9369
+Main Hall~
+~
+~
+The castle walls darken noticeably here.  Segmented granite wall blocks
+begin to mesh together forming a smooth, monolithic gray substance.  There
+is little in the way of furnishings or decorations here, although you can
+make out the faint etchings of what perhaps was once a mural or fresca. 
+Something in your mind tells you that it has been a long time since this
+place has witnessed anything in the way of light or beauty.  The hallway
+continues to the north.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9370
+D2
+~
+~
+0 0 9364
+S
+#9370
+Main Hall Intersection~
+~
+~
+The Main Hall splits into three directions here.  To the east, you see a
+dull bluish glow that somehow feels quite out of place in this castle.  To
+the west, the hallway narrows a bit.  Several high-pitched squeals emanate
+from that direction that send shivers up your spine.  A distinct, almost
+tangible darkness lies in the hallway to the north.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9372
+D1
+~
+~
+0 0 9371
+D2
+~
+~
+0 0 9369
+D3
+~
+~
+0 0 9367
+S
+#9371
+East Wing~
+~
+~
+The castle walls take on extremely odd properties here.  Instead of the
+tarry, gray substance covering the other areas, the walls here have a
+crystaline, prismatic appearance.  It also seems more peaceful here than in
+other areas of the castle.  The soft blue glow you noticed earlier increases
+further east.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9376
+D3
+~
+~
+0 0 9370
+S
+#9372
+Before A Dark Archway~
+~
+~
+You find yourself standing before a gigantic archway that has been sealed
+by a black slab of smooth rock.  The runic symbols carved on the slab plus
+the eerie, cold feeling you get when you touch it, indicate that this is a
+magical barrier designed to keep outsiders away.  Beside the archway is a
+swirling vortex of smoke along with a simple, golden plaque.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+119 9307 9379
+D2
+~
+~
+0 0 9370
+D3
+~
+~
+0 0 9380
+S
+#9373
+End of the Hall~
+~
+~
+Soft mumblings intermixed with hushed whispers urge you to turn back.  In
+several instances you swear that you can make out the faint outlines of
+faces extruding from the walls.  However, when you dare to examine closer,
+you see only the same tarry, gray substance that covers the rest of the
+walls in this place.  The hallway ends here, with rooms lying to the north
+and south.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9375
+D1
+~
+~
+0 0 9367
+D2
+~
+~
+0 0 9374
+S
+#9374
+The Nursery~
+~
+~
+You enter into a windowless room with three small beds lined in a perfect
+row.  The area is quite dim, a single weak torch providing the only
+illumination.  The squealing you heard earlier has since ceased, much to the
+relief of your throbbing eardrum.  Just as if it seems that this room has
+nothing to offer, you notice movement in a darkened back corner.  Emerging
+literally out of the shadows are three human toddlers, all of which possess
+decidedly grotesque, animalistic features.  The eldest one among them stares
+at you, a look of hunger creeping across it cat-like eyes.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 9373
+S
+#9375
+Prince Voorhan's Room~
+~
+~
+An icy draft slithers past as you move into this room.  Intricately
+fashioned pieces of furniture line the walls while a colossal, four poster
+bed occupies nearly all of the back wall.  A massive tinted window takes up
+most of the left wall, offering a bird's-eye-view of the bleak cityscape of
+Relfaust.  A solitary figure adorned in faded princely regalia stands
+brooding before the window.  He briefly glances in your direction, regarding
+you with a pronounced air of detachment.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+0 0 9373
+S
+#9376
+Sanctuary~
+~
+~
+You enter a room bathed in a soft, sky-blue glow.  This glow seems to
+radiate from the crystal statues of a man and woman dressed in regal garb. 
+Their faces are resolute, in stark defiance of the chaotic force that has
+overrun this province.  As you look on, a soothing warmth passes through
+your body imparting upon you an incredible sense of safety and peace.  
+ 
+It appears that this room is infrequently used by the denizens of the castle.
+~
+0 1036 0
+Rd     0
+D3
+~
+~
+0 0 9371
+S
+#9377
+Underground Tunnel East~
+~
+~
+The farther east you travel, the more you feel the resurgence of the
+chaotic force within the city.  The familiar feelings of doom and dread take
+root within your mind once more.  You continue forward, knowing that there
+is no turning back now.  
+~
+0 1036 0
+Rd     0
+D1
+~
+~
+0 0 9397
+D3
+~
+~
+0 0 9396
+S
+#9379
+The Grand Throne Room~
+~
+~
+A grand throne room, the largest you have ever seen, expands before you. 
+Crystal statues of castle stewards, armored guards, and visitors hailing
+from a variety of different realms stand scattered about.  Although the
+style of clothing and stances are many and varied, all of the statues
+possess expressions of absolute horror on their faces.  As you look on, a
+flash of red lightning arcs by you followed by a booming thunderclap.  You
+literally feel the force of chaos gather and congeal in front of you,
+finally forming a humanoid figure wearing a midnight black, satin mantle. 
+The figure merely points to you, bidding you to step forward.  Try as you
+might, you find it impossible to resist.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+119 0 9372
+S
+#9380
+The Grand Archive~
+~
+~
+Tables filled with magical artifacts and bookcases lined with ancient
+texts occupy most of the room.  It seems that most of the spoils of the
+inumerable raids on the city have made their way here.  You notice quite a
+few piles of gold and other trinkets near the back wall, along with a
+stunning set of armor floating lazily in a blue pillar of light.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 9372
+S
+#9381
+The Chaotic Abyss~
+~
+~
+You careen through an oscillating tunnel of dark smoke, finally crashing
+through a thick membrane of shadows.  Your senses are assaulted by
+disconnected sounds, flashes of black lightning against tumultuous
+thunderheads, and stale air that is barely breathable and energizing at the
+same time.  You feel as if you are free-falling at breakneck speed yet,
+simultaneously, being held steadfast in place.  After a few moments, you
+focus your thoughts enough to spy four doors lying in all four compass
+directions.  Above you floats a crystal staircase enclosed in glowing
+magical barrier.  
+~
+0 134619144 0
+Rd     0
+D0
+~
+~
+0 0 9382
+D1
+~
+~
+0 0 9384
+D2
+~
+~
+0 0 9383
+D3
+~
+~
+0 0 9385
+D4
+~
+~
+119 9307 9372
+S
+#9382
+A Slime Coated Cavern~
+~
+~
+You reappear in what looks like a dark underground cavern.  The walls are
+covered in a thick coating of greenish-yellow yellow slime.  The cavern is
+characterized by a pungent, acidic smell that literally brings tears to your
+eyes.  The cavern continues to the north.  
+~
+0 134619144 0
+Rd     0
+D0
+~
+~
+0 0 9388
+S
+#9383
+A Tubular Metallic Hallway~
+~
+~
+You find yourself in a tubular, metallic hallway.  The air is quite
+stale, reeking of minerals and processed ore.  Suits of armor made of
+various materials and in a variety of styles line the walls.  They all
+appear to be very ancient in design, although none are readily identifiable.
+You hear a loud, clanging noise originating from the north.  It sounds
+almost like a legion of well armored knights marching back and forth.  
+~
+0 134619144 0
+Rd     0
+D0
+~
+~
+0 0 9389
+S
+#9384
+A Long Dark Hallway~
+~
+~
+You find yourself standing at the beginning of a long, dimly lit hallway.
+The walls are made of a dark, cold substance similar to that of shale or
+obsidian.  The hall leads to a much larger room northward, from which you
+can hear the sounds of laughter followed by screams of pain.  
+~
+0 134619144 0
+Rd     0
+D0
+~
+~
+0 0 9387
+S
+#9385
+Before a Dark Cave~
+~
+~
+A thick, cold mist wafts about the ground.  You find yourself at the
+entrance of what appears to be a very large cave.  The entropic storms of
+the chaotic abyss thunder furiously overhead.  Through it all, you hear an
+animalistic howl coming from somewhere deep within the bowels of the cave.  
+~
+0 134619144 0
+Rd     0
+D0
+~
+~
+0 0 9386
+S
+#9386
+Lair of the Abomination~
+~
+~
+Off in the distance, you hear something akin to a dog lapping up water. 
+The closer you move towards the center of the cave, the more pronounced this
+sound becomes.  When you finally arrive at the cave's center, you are
+greeted by a decidedly eerie sight.  Amidst a sea of mummified bodies sits a
+relatively slender werewolf with matted, pale white fur.  It appears to be
+gnawing on the neck of a previous catch.  As you move closer, you are
+shocked to see that this creature is not chewing, but rather sucking the
+very life force out of the body.  As you are pondering this situation, the
+werewolf-vampire hybrid discards its current meal and charges towards you.  
+~
+0 134619147 0
+Rd     0
+D2
+~
+~
+0 0 9385
+S
+#9387
+Domain of Varak~
+~
+~
+The hallway ends before a large pillar suspended within the chaotic
+abyss.  Flashes of black lightning streak about you, some coming dangerously
+close to contact.  In the center of the pillar is a pool of lava packed with
+hundreds of people.  The all have horrible looks of pain on their faces,
+quite a few of them even cry out for your help.  Floating above the pool is
+a very powerful-looking demon.  It glances in your direction and, before you
+even have a chance to blink, rushes towards you with a fierce grin on its
+face.  
+~
+0 134619144 0
+Rd     0
+D2
+~
+~
+0 0 9384
+S
+#9388
+Domain of the Silver Wyrm~
+~
+~
+You wander northward, the acidic odor becoming steadily unbearable with
+each and every step you take.  Just when you think that you can no longer
+continue, you are beset upon by a titanic, sliver wyrm.  Behind it you spy
+another vortex of black clouds.  Unfortunately, it seems that the only way
+to get to it is to go through the wyrm itself.  
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 9382
+S
+#9389
+Domain of the Living Armor~
+~
+~
+You enter into a large, spherical room constructed of an exceptionally
+lustrous, silvery metal.  Scores of armor plates and slivers of metal lay
+strewn about area.  You spot a vortex of dark clouds floating above a large
+pile of discarded suits of armor.  As you make your way to it, you notice
+the suits of armor begin to shift ever so slightly.  Moments later, you hear
+a loud crash behind you.  Swinging around, you catch a brief glimpse of a
+gigantic suit of black, platemail armor as it lunges towards you.  
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 9383
+S
+#9390
+A Stairway Leading Down~
+~
+~
+The eastern corridor dead-ends before a spiral staircase leading
+downward.  You hear several moans of pain mingled with whip cracks and
+rattling chains.  A deep throated laughter follows soon after.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 9364
+D5
+~
+~
+0 0 9365
+S
+#9391
+Underground Main Cavern~
+~
+~
+You slide down the hole for what seems like an eternity until you finally
+come to rest on a large, soft pile of cave moss.  As you rise to your feet,
+you hear the chittering of hushed voices behind you.  When your eyes finally
+adjust to the dim, torchlit cavern, you see several small children gathered
+about you.  The scattered looks of bewilderment about their faces tells you
+that they have not seen outside visitors for quite some time.  Amazingly,
+they display no signs of the chaotic taint that has infected the locals
+above ground.  You see cavern tunnels leading off in all cardinal directions
+from here.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 9392
+D1
+~
+~
+0 0 9393
+D2
+~
+~
+0 0 9395
+D3
+~
+~
+0 0 9394
+S
+#9392
+Children's Room~
+~
+~
+The cavern ceiling slopes low, forcing you to kneel down and crawl to
+enter this alcove.  It comes to no big surprise that you see several small
+beds with young children napping in them.  The few that are awake gasp as
+you enter, but then they giggle and ask you to join in the game of
+hide-and-seek that you interrupted.  Several other children begin to crowd
+around you, asking you various questions about the world above.  
+~
+0 1032 0
+Rd     0
+D2
+~
+~
+0 0 9391
+S
+#9393
+Council Cavern~
+~
+~
+Numerous torches light up this spacious cavern which is filled with over
+thirty adults of various ages.  They fail to notice your intrusion, mainly
+due to the fact that they seem to be discussing the formation of groups to
+raid the city above ground for food and other desperately needed supplies. 
+There appears to be a lot of debate on the subject as four previous groups
+have been lost within the last two weeks.  Keeping your distance, you listen
+in on the arguments, silently hoping that they decide not to turn on you.  
+~
+0 1032 0
+Rd     0
+D3
+~
+~
+0 0 9391
+S
+#9394
+Elder's Room~
+~
+~
+The cavern here is filled with the aroma of freshly burned incense. 
+Animal wax candles illuminate the area just enough to read by.  Sitting in
+the center of the room is an elderly woman who is in the midst of an
+exceedingly long and complicated litany.  Every so often she glances at you
+and smiles, instilling within you a strong feeling of peace and tranquility.
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 9391
+S
+#9395
+Underground Barricade~
+~
+~
+The southern tunnel leads you to a gigantic iron wall covered in ancient
+runes and sigils, presumably warding it against magical and physical
+intrusion.  Pacing the area in front of the wall is a large, brutish looking
+male ogre.  He glances in your direction trying to discern if you are friend
+or foe.  
+~
+0 1032 0
+Rd     0
+D0
+~
+~
+0 0 9391
+D2
+~
+~
+87 0 9396
+S
+#9396
+Underground Tunnel South~
+~
+~
+The wall exit clangs shut behind you.  Several weak torches line the
+tunnel walls, allowing you to just barely see your way.  The tunnel bends to
+east.  
+~
+0 1032 0
+Rd     0
+D1
+~
+~
+0 0 9377
+S
+#9397
+End of the Tunnel~
+~
+~
+You finally arrive at the end of the underground tunnel.  A shaft of
+baleful green light shines down on you from a pinprick hole above.  Looking
+up, you see one of the large green orbs along with a sign that reads
+'Morphock Lane South'.  There are footholds embedded in the tunnel wall that
+are just large enough for you to use to reach the surface.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+0 0 9377
+D4
+~
+~
+0 0 9309
+S
+#9398
+Opera House Main Lobby~
+~
+~
+The interior of the Opera House is just as exotically designed as the
+exterior.  High, concave walls join each other at a slender rectangular
+ceiling.  Several curved support bars extend from the ceiling and run down
+the walls, giving you the unnerving feeling of walking about in a gigantic
+ribcage.  The entrance to the seating area is to the north, behind a very
+large man charging for admittance.  
+~
+0 131082 0
+Rd     0
+D0
+~
+~
+119 9312 9342
+D2
+~
+~
+0 0 9331
+S
+#9399
+Master Forge~
+~
+~
+You nearly pass out due to this room's sweltering heat.  A gargantuan
+forge encompasses most of the room blasting wave upon wave of hot air. 
+Beside the forge lies a stone table containing a multitude of armors,
+weapons, and other bizarre metal constructions.  As you are catching your
+breath, you are approched by a wizened old dwarf attired in jet black plate
+armor.  He eyes you suspiciously, then chuckles to himself.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 9362
+S
+#0
+
+
+
+#SPECIALS
+M 9306 spec_cast_mage
+M 9386 spec_cast_ghost
+M 9388 spec_breath_frost
+M 9391 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 9306 1 9303
+E 0 9369 0 5
+M 0 9301 1 9306
+E 0 9370 0 5
+E 0 9372 0 20
+M 0 9306 2 9306
+E 0 9369 0 5
+M 0 9353 1 9308
+E 0 9370 0 5
+E 0 9371 0 20
+O 0 9316 0 9322
+O 0 9316 0 9322
+O 0 9316 0 9322
+O 0 9316 0 9322
+M 0 9301 1 9326
+E 0 9370 0 5
+E 0 9372 0 20
+O 0 9394 0 9326
+P 0 9310 0 9394
+M 0 9301 1 9327
+E 0 9370 0 5
+M 0 9326 2 9327
+M 0 9301 1 9328
+E 0 9370 0 5
+E 0 9372 0 20
+O 0 9310 0 9329
+M 0 9336 1 9336
+E 0 9350 0 17
+E 0 9342 0 5
+G 0 9365 0
+G 0 9323 0
+G 0 9320 0
+G 0 9343 0
+G 0 9348 0
+O 0 9311 0 9337
+P 0 9301 0 9311
+O 0 9311 0 9337
+O 0 9311 0 9337
+O 0 9311 0 9337
+O 0 9311 0 9338
+O 0 9311 0 9338
+M 0 9340 1 9339
+E 0 9360 0 20
+E 0 9385 0 5
+M 0 9342 1 9341
+M 0 9341 1 9341
+G 0 9388 0
+G 0 9389 0
+M 0 9339 1 9341
+O 0 9317 0 9347
+M 0 9360 1 9360
+E 0 9363 0 16
+E 0 9325 0 6
+E 0 9336 0 5
+M 0 9366 1 9366
+G 0 9308 0
+O 0 9300 0 9372
+O 0 9300 0 9372
+O 0 9300 0 9372
+O 0 9300 0 9372
+O 0 9300 0 9372
+O 0 9300 0 9372
+M 0 9302 1 9372
+E 0 9370 0 5
+E 0 9381 0 20
+G 0 9307 0
+M 0 9301 1 9373
+E 0 9370 0 5
+E 0 9372 0 20
+M 0 9375 1 9375
+E 0 9370 0 5
+E 0 9372 0 20
+E 0 9329 0 3
+M 0 9380 1 9379
+E 0 9370 0 5
+E 0 9380 0 6
+E 0 9390 0 20
+O 0 9300 0 9386
+M 0 9386 1 9386
+O 0 9300 0 9387
+O 0 9300 0 9387
+O 0 9300 0 9387
+O 0 9300 0 9388
+O 0 9300 0 9388
+O 0 9300 0 9388
+M 0 9388 1 9388
+O 0 9300 0 9389
+O 0 9300 0 9389
+O 0 9300 0 9389
+M 0 9391 1 9391
+M 0 9392 5 9392
+M 0 9395 2 9395
+M 0 9397 1 9397
+S
+
+
+
+#SHOPS
+9336 8 9 0 0 0 100 100 9 22
+9341 19 17 0 0 0 100 100 10 23
+0
+
+
+
+#$

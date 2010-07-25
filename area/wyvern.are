@@ -1,0 +1,1753 @@
+#AREADATA
+Name        {80-104} Wyverns Keep~
+Builders    None~
+VNUMs       3700 3799
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Sparhawk~
+Llevel      0
+Ulevel      0
+Music       u7_chmbr.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#3700
+huge stone gargoyle~
+a Huge Stone Gargoyle~
+A huge stone statue in the shape of a gargoyle is standing here.
+~
+A large very well scuplted Gargoyle is here, in fact it looks too well
+designed.  The most noticable thing about it is the two very large emeralds
+in its eyes.  The one thing that does catch your eye is the large sapphire
+gems in its eyes.  
+~
+3 335544320 0 0 0 0 S
+95 1 190 190 42000 42000d0+0 0d0+1
+950 0 0
+0 0 0
+0 0 0
+#3701
+reptilian guard~
+a Reptilian Guard~
+A Reptilian Guard notices your presense.
+~
+This is a very fierce looking creature.  It seems to have been spawned
+right out of your nightmares, it is all scales and claws and teeth.  It
+reminds you of an old tale you heard long ago about half human, half
+dragons.  
+~
+3 167772160 0 0 0 500 S
+80 1 160 160 24000 24000d0+0 0d0+30000
+800 0 0
+0 0 1
+16 0 0
+#3702
+reptilian guard~
+a Reptilian Guard~
+A reptilian guard sits up and looks at you. He is not happy to see you.
+~
+This is a very fierce looking creature.  It seems to have been spawned
+right out of your nightmares, it is all scales and claws and teeth.  It
+reminds you of an old tale you heard a long time ago about half human, half
+dragons.  
+~
+3 167772160 0 0 0 500 S
+80 1 160 160 24000 24000d0+0 0d0+30000
+800 0 0
+0 0 1
+16 0 0
+#3703
+reptilian guard~
+a Reptilian Guard~
+A reptilian gaurd sits up and looks at you. He is not happy to see you.
+~
+This is a very fierce looking creature.  It seems to have been spawned
+right out of your nightmares, It is all scales and claws and teeth.  It
+reminds you of an old tale you heard a long time ago about half human, half
+dragons.  
+~
+3 167772160 0 0 0 500 S
+80 1 160 160 24000 24000d0+0 0d0+30000
+800 0 0
+0 0 1
+16 0 0
+#3709
+draconian~
+a Grumpy Draconian~
+A Grumpy Dracoian jumps out out bed and attacks you!
+~
+This is a very large Dragonlike creature, it is standing on two legs and
+seems to prefer it that way.  Just from the look of him you would think he
+would give you a good fight.  
+~
+35 33554560 0 0 0 500 S
+85 1 170 170 25000 25000d0+0 0d0+50000
+850 0 0
+0 0 1
+16 0 0
+#3710
+draconian~
+a Naked Draconian~
+A naked Draconian jumps out of a shower and attacks you!
+~
+This is not the pretiest sight that you have ever seen, you thought that
+these things looked ugly with their clothes on.  You fight the urge to vomit
+as she charges you.  
+~
+35 33554560 0 0 0 500 S
+85 1 170 170 24000 24000d0+0 0d0+50000
+850 0 0
+0 0 2
+16 0 0
+#3713
+shadow~
+a Shadow~
+A shadow lurks in the corner of this room.
+~
+A blackness on the blackness of the room, it can only be seem when it
+chooses to move.  
+~
+3 606274 0 0 0 -500 S
+85 1 170 170 30000 30000d0+0 0d0+40000
+850 0 0
+0 0 0
+128 0 0
+#3715
+guardian spirit~
+a Guardian Spirit~
+A Gaurdian Spirit examines you from inside the carving.
+~
+A mournful spirit stands here, it appears to have been been imprisoned
+here for some reason.  
+~
+3 67174528 0 0 0 750 S
+85 1 170 170 26500 26500d0+0 0d0+1
+850 0 0
+0 0 1
+0 0 0
+#3719
+reptilian guard~
+a Reptilian Guard~
+A Reptilian Guard sees you and screams a war cry!
+~
+This is a very fierce looking creature.  It seems to have been spawned
+right out of your nightmares.  It is all scales and claws and theeth.  It
+reminds you of an old tale you heard a long time ago about half human, half
+dragons.  
+~
+35 167772160 0 0 0 500 S
+85 1 170 170 24000 24000d0+0 0d0+30000
+850 0 0
+0 0 1
+16 0 0
+#3723
+guardian spirit~
+a Gaurdian Spirit~
+A Guardian Spirit examines you from inside the carving.
+~
+A mournful spirit stands here, it appears to have been imprisoned here
+for some purpose.  
+~
+3 67174528 0 0 0 750 S
+85 1 170 170 29000 29000d0+0 0d0+1
+850 0 0
+0 0 1
+0 0 0
+#3724
+shadow~
+a Shadow~
+A Shadow lurks in the corner of this room.
+~
+A blackness on the blackness of the room.  It can only be seen when it
+chooses to move 
+~
+3 606274 0 0 0 -500 S
+85 1 170 170 22000 22000d0+0 0d0+50000
+850 0 0
+0 0 0
+0 0 0
+#3726
+temple guard~
+a Temple Guard~
+A temple Guard stands here barring your further passage.
+~
+This guard has the look of a much more confident warrior.  He seems sure
+of himself that he can stop you from coming into the temple.  Judging from
+the way he handles his sword he may be right.  
+~
+35 134217856 0 0 0 1000 S
+90 1 180 180 27000 27000d0+0 0d0+50000
+900 0 0
+0 0 1
+0 0 0
+#3729
+Raken~
+Raken~
+Raken looks up from his books curiously.
+~
+You get the distinct impression that this huge creature has absolutely no
+fear of you.  He stands about 8 feet tall and is built just about as strong
+as this keep, maybe just a little better.  
+~
+99 234881152 0 0 2 750 S
+101 1 202 202 30000 30000d0+0 0d0+101000
+1010 0 0
+0 0 1
+0 0 0
+>fight_prog 50~
+cast 'sunburst'
+~
+>fight_prog 20~
+cast 'dispel magic'
+~
+|
+#3730
+giant spider~
+a Giant Spider~
+A very hungry looking spider lurks here.
+~
+This has got to be the largest spider you have ever seen.  It is black as
+night with white stripes down its nack.  You immediately get the urge to
+kill this monstrosity.  
+~
+35 16384 0 0 0 -1000 S
+85 1 170 170 32500 32500d0+0 0d0+85000
+850 0 0
+0 0 2
+0 0 0
+#3731
+draconian high priest~
+a Draconian High Priest~
+The Draconian High Priest looks unhappy to see you.
+~
+This is the most fully dressed Draconian that you have seen.  He looks
+like he has lived the soft life of a priest, but this could be misleading. 
+The remains of a sacrifice on the altar before him so you think that maybe
+you should be careful of him.  Considering the body parts look human.  
+~
+3 167789760 0 0 0 1000 S
+103 1 206 206 35000 35000d0+0 0d0+50000
+1030 0 0
+0 0 1
+0 0 0
+>fight_prog 30~
+cast 'fireball' $n
+~
+>fight_prog 75~
+cast 'heal' self
+~
+|
+#3738
+guardian spirit~
+a Guardian Spirit~
+A Guardian Spirit examines you from inside the carving.
+~
+A mournful spirit stands here, it appears to have been imprisoned here
+for some purpose.  
+~
+3 134283264 0 0 0 750 S
+85 1 170 170 29000 29000d0+0 0d0+1
+850 0 0
+0 0 1
+0 0 0
+#3739
+thingy~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 1 S
+80 1 160 160 0 0d0+0 0d0+0
+800 0 0
+0 0 0
+0 0 0
+#3741
+reptilian guard~
+a Reptilian Guard~
+A reptilian Tower Guard looks vexed with your presence.
+~
+This is a very fierce looking creature.  It seems to have been spawned
+right out of your nightmares, it is all scales and claws and teeth.  It
+reminds you of an old tale that heard a long time ago about half human, half
+dragons.  
+~
+3 167772160 0 0 0 500 S
+90 1 180 180 26000 26000d0+0 0d0+50000
+900 0 0
+0 0 2
+16 0 0
+#3745
+reptilian tower guard~
+a Reptilian Tower Guard~
+A Reptilian Tower Guard looks vexed with your presence.
+~
+This is a very fierce looking creature.  It seems to have been spawned
+right out of your nightmares, it is all scales and claws and teeth.  It
+reminds you of an old tale you heard a long time ago about half human, half
+dragons.  
+~
+3 167772160 0 0 0 500 S
+90 1 180 180 26000 26000d0+0 0d0+50000
+900 0 0
+0 0 2
+16 0 0
+#3747
+a Reptilian Tower Guard~
+a Reptilian Tower Guard~
+A Reptilian Tower Guard looks vexed with your presence.
+~
+This is a very fierce looking creature.  It seems to have been spawned
+right out of your nightmares, it is all scales and claws and teeth.  It
+reminds you of a tale you heard a long time ago about half human, half
+dragons.  
+~
+3 167772160 0 0 0 500 S
+90 1 180 180 26000 26000d0+0 0d0+50000
+900 0 0
+0 0 2
+16 0 0
+#3748
+ancient one~
+the Ancient One~
+The Ancient One sits on a ledge sunning itself.
+~
+This very large and very ancient looking dragon, is just sitting in the
+sun enjoying itself.  It has been alive for so long that it does not worry
+that someone has gotten past its guards.  From the looks of it, it has
+survived many battles because of the multiple tracings of scars all over its
+body.  
+~
+3 235421888 0 0 2 0 S
+104 1 208 208 30000 30000d0+0 0d0+104000
+1040 0 0
+0 0 1
+1 0 0
+>fight_prog 40~
+say You cannot defeat me!
+cast 'dispel magic' $n
+~
+>fight_prog 60~
+laugh $n
+~
+>fight_prog 20~
+cast 'fireball' $n
+~
+|
+#3793
+reptilian tower guard~
+a Reptilian Tower Guard~
+A Reptilian Tower Guard looks vexed with your presence.
+~
+This is a very fierce looking creature.  It seems to have been spawned
+right out of your nightmares, it is all scales and claws and teeth.  It
+reminds you of an old tale you heard a long time ago about half human, half
+dragons.  
+~
+3 167772160 0 0 0 500 S
+90 1 180 180 26000 26000d0+0 0d0+50000
+900 0 0
+0 0 2
+16 0 0
+#0
+
+
+
+#OBJECTS
+#3700
+sapphire eyeballs~
+sapphire eyeballs~
+A beautiful pair of sapphire eyeballs is here.~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+3720 0 0
+#3701
+draconian longsword sword~
+a draconian longsword~
+A longsword rests on the floor.~
+~
+5 68190211 0 0 0 8193 80
+100 100
+0~ 22~ 79~ 3~
+2 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+18 15
+#3702
+Draconian Short Sword~
+a draconian short sword~
+A short sword rests on the floor.~
+~
+5 67108867 0 0 0 8193 75
+100 100
+0~ 25~ 68~ 11~
+2 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 28
+A
+18 17
+#3703
+dragon cloak~
+a dragon cloak~
+A cloak rests on the ground.~
+~
+9 3 0 0 0 1025 80
+100 100
+23~ 0~ 0~ 0~
+3 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 40
+A
+13 80
+A
+19 7
+A
+18 7
+#3704
+dragonskin Belt~
+dragonskin Belt~
+A belt made of pure dragonskin sits here.~
+~
+9 0 0 0 0 2049 1
+100 100
+10~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+3720 0 0
+A
+4 2
+>join_prog 100~
+0
+mpechoat $n The sapphire eyeball fits neatly into a nitch in the dragonskin belt. A strong magical energy now flows through the belt.
+~
+|
+#3705
+pain thing blade~
+the pain thing~
+Pain Thing~
+~
+5 234897408 0 0 0 8193 100
+100 100
+0~ 0~ 0~ 3~
+5 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 100
+A
+12 100
+A
+25 100
+A
+19 30
+A
+18 30
+#3706
+cloak shadows~
+cloak of Shadows~
+A cloak sits on the ground, crumpled.~
+~
+9 16419 0 0 0 1025 80
+100 100
+19~ 0~ 0~ 0~
+1 800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+#3708
+cloak ancient one~
+cloak of the ancient one~
+A mystical cloak floats before you.~
+~
+9 134234115 0 0 0 1025 100
+100 100
+100~ 0~ 0~ 0~
+2 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 5
+A
+25 30
+A
+12 100
+A
+13 150
+#3709
+huge altar~
+a Huge Altar~
+A huge altar sits in the middle of the room.~
+~
+8 3 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+2000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3710
+weapons rack~
+a Weapons Rack~
+A weapons rack hangs on a wall.~
+~
+13 3 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+2000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3711
+battered box~
+a Battered Box~
+A battered box sits on the ground.~
+~
+15 3 0 0 0 0 1
+100 100
+25~ 0~ 0~ 0~
+1500 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3712
+back scrubber~
+a back scrubber~
+A back scrubber is here.~
+~
+5 3 0 0 0 8193 80
+100 100
+0~ 25~ 80~ 7~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 100
+A
+19 20
+A
+18 20
+#3713
+key karma~
+key of Karma~
+A key sits on the floor, glowing.~
+~
+18 3 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 3714 3715
+#3714
+yin Key~
+yin Key~
+A yin key is here.~
+~
+18 2 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+3713 0 0
+#3715
+yang Key~
+yang Key~
+A yang key is here.~
+~
+18 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+3713 0 0
+#3716
+soft roll of paper~
+a Soft Roll Of Paper~
+A soft roll of paper is here.~
+~
+9 3 0 0 0 32769 50
+100 100
+25~ 0~ 0~ 0~
+1 20 0
+0 0
+reserved~
+0 0
+3719 0 0
+A
+19 5
+A
+18 5
+>join_prog 100~
+0
+mpechoat $n As you pour the oil over the roll of paper, a strange transformation takes place.
+~
+|
+#3717
+large bed~
+a Large Bed~
+A large bed rests on the ground.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#3718
+Vial of Oil~
+a Vial of Oil~
+A magical tube of oil lies here.~
+~
+10 268435456 0 0 0 1 75
+100 100
+100~ cure poison~ remove curse~ reserved~
+2 748 0
+0 0
+reserved~
+0 0
+3719 0 0
+>join_prog 100~
+0
+mpechoat $n As you pour the oil over the roll of paper, a strange transformation takes place.
+~
+|
+#3719
+Roll of Enhancement~
+a Roll of Enhancement~
+An enhanced roll of paper lies here.~
+~
+9 262144 10 0 0 32769 75
+100 100
+0~ 0~ 0~ 0~
+4 748 0
+0 0
+reserved~
+0 0
+3721 0 3721
+A
+18 8
+A
+19 8
+>join_prog 100~
+0
+mpechoat $n As you combine the oil and the roll of paper, the new object begins to form, almost seemingly coming to life.
+~
+|
+#3720
+Belt of Enhancement~
+a Belt of Enhancement~
+A magical belt lies here.~
+~
+9 264192 10 0 0 2049 75
+100 100
+0~ 0~ 0~ 0~
+3 748 0
+0 0
+reserved~
+0 0
+3721 0 0
+A
+18 7
+A
+19 7
+A
+4 2
+>join_prog 100~
+0
+mpechoat $n The sapphire eyeball fits neatly into a nitch in the dragonskin belt. A strong pulsing energy now flows through the belt.
+~
+|
+#3721
+Staff Dragons~
+a Staff of the Dragons~
+A Staff of extreme magical power lies here.~
+~
+4 805306368 0 0 0 16385 75
+100 100
+100~ 3~ 3~ mental block~
+3 748 0
+0 0
+complete healing~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#3700
+Entrance to a Giant Stone Keep~
+~
+~
+The first thing that you notice when you enter this keep is a large stone
+Gargoyle.  Fortunately it appears to be covered in ages of dust.  Two large
+gems are set in its eyes and you wonder what they could be worth?  You
+notice that the sounds of animal life has been hushed.  You start to wonder
+if you have missed something.  There is a door to the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 3701
+D2
+~
+~
+0 0 18463
+S
+#3701
+Beginning of a Long Corridor~
+~
+~
+You are looking down a long dark passageway. There does not seem to be any
+way to see all the way to the end of this apparently deserted area. The
+halllway seems to continue on to the north. All around you on the walls are
+ancient carvings of some reptilian form.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3704
+D1
+~
+~
+3 0 3702
+D2
+~
+~
+3 0 3700
+D3
+~
+~
+3 0 3703
+S
+#3702
+Guard Room~
+~
+~
+There are several bunks in this room, a table with some half eaten food
+left on it is in the far right corner.  For some odd reason the furniture
+does not seem to be made for humankind.  There seems to be something
+sleeping in one of the bunks.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 3701
+S
+#3703
+Guard Room~
+~
+~
+There are several bunks in this room, a table with some half eaten food
+left on it is in the far left corner.  For some reason the furniture does
+not seem to be made for humankind.  There seems to be something sleeping in
+one of the bunks.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 3701
+S
+#3704
+Continuing Down the Corridor~
+~
+~
+The ancient carvings on the walls gain a surrealistic quality from the
+beams of your light.  This passageway continues on to the north.  An eerie
+howling sound seems to be coming from up ahead.  Could it be the wind?  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3705
+D2
+~
+~
+0 0 3701
+S
+#3705
+Approaching the Intersection~
+~
+~
+Up ahead in the dim light you can see that you are approaching an
+intersection.  The howling is getting louder here.  You are beginning to
+realize that the sound is not the wind at all, but the tortured sounds of
+someone in great pain.  To the west of you you see a closed door.  When you
+look back from the door you catch what you think might be movement.  This
+does not seem to be a very nice place. Should you turn back now?
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3719
+D1
+~
+~
+1 0 3708
+D2
+~
+~
+0 0 3704
+D3
+~
+~
+0 0 3706
+S
+#3706
+Entrance to the Living Quarters~
+~
+~
+You have just entered a well kept neat room, chests are neatly stacked
+and stored on shelves.  One of the items are of any use to you.  There are
+beautiful sculptures on some of the tables also.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3705
+D3
+~
+~
+0 0 3707
+S
+#3707
+A Bedroom~
+~
+~
+A very large bed sits in the very center of this room, the bed seems to
+have been very neatly made.  There appears to be nothing of any value in
+this room.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3706
+D2
+~
+~
+1 0 3710
+S
+#3708
+A Small Sitting Room~
+~
+~
+You are at the entry of what appears to be some sort of living quarters,
+There is a couple of chests with clothing sticking out of them in various
+places around the room.  There are elaborate frescos decorating the ceiling
+and sconces on the wall with burnt out torches.  You think you can hear
+noises coming from the room to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+1 0 3709
+D3
+~
+~
+1 0 3705
+S
+#3709
+A Bedroom~
+~
+~
+A very large bed is in the center of this room, you seem to have walked
+into somethings bedroom.  This might not have been such a good idea.  There
+seems to be nothing else of note in this room.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+1 0 3712
+D3
+~
+~
+1 0 3708
+S
+#3710
+A Bathroom~
+~
+~
+You have just entered a large bathroom, you think you hear a noise coming
+from behind a curtain across the room.  This room appears very well cleaned
+and taken care of.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3707
+S
+#3711
+safe room~
+~
+~
+~
+0 1028 0
+Rd     0
+S
+#3712
+A Bathroom~
+~
+~
+You have just entered a large bathroom.  With all of the art in this keep
+you would have thought that they would have invested some more time on
+improving this place.  The only thing that you can see of interest is a soft
+roll of paper.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+1 0 3709
+S
+#3713
+A Small Room~
+~
+~
+Something definitely is wrong with the shadows in the back of this room,
+They seem to have a life of their own.  There is nothing else of any value
+in this room, besides some beautiful sculptures on the wall, which of course
+you could not carry.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+1 0 3716
+S
+#3714
+A Small Side Room~
+~
+~
+There is nothing special about this room except for some unusual round
+shaped foot prints on the floor.  There seems to be something very wrong
+about this room.  You think you hear something creeping up behind you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+1 0 3722
+S
+#3715
+Western Dead End~
+~
+~
+You have come to a dead end in a corridor.  You see a beautiful carving
+of a draconian in the stone of the dead end.  It is so real you feel that it
+could animate right off the wall.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3716
+S
+#3716
+Along the West Corridor~
+~
+~
+You have come to a place where the corridor continues on but there are
+doors to the north and south.  There seems to be sounds coming from one of
+the rooms but the echoes of your own footfalls seems to drown out their
+exact location.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3724
+D1
+~
+~
+0 0 3717
+D2
+~
+~
+1 0 3713
+D3
+~
+~
+0 0 3715
+S
+#3717
+Continuing Down the Western Corridor~
+~
+~
+Your light strikes off the walls of the corridor that you are walking
+down.  Eerie shadows on the wall make you feel like you are being watched. 
+The dust on the floor looks to be recently disturbed.  The tracks don't seem
+To come from any creature you have ever seen.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3718
+D3
+~
+~
+0 0 3716
+S
+#3718
+Beginning of the Western Corridor~
+~
+~
+Carvings of sacrifice are on the walls here, the victims appear to be
+humnas.  In front of you another long dark corridor diminishes in to the
+darkness.  Light tapping noises can be heard in the distance.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3719
+D3
+~
+~
+0 0 3717
+S
+#3719
+At the Intersection~
+~
+~
+The one good thing about being in this intersection is that the carvings
+are out of sight.  But you get the strangest feeling that this is a VERY bad
+place to be.  Are you about to meet the makers of the carvings?  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3727
+D1
+~
+~
+0 0 3720
+D2
+~
+~
+0 0 3705
+D3
+~
+~
+0 0 3718
+D4
+~
+~
+0 0 3743
+S
+#3720
+Beginning of the Eastern Corridor~
+~
+~
+You are heading down a dark passagway, shadows line the walls.  A carving
+on the wall depicts some pagan Ritual, it would be hard to say what they are
+doing, just that your anatomy won't let you do it.  It does bring a strong
+primal urge up in you.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3721
+D3
+~
+~
+0 0 3719
+S
+#3721
+Continuing down the Eastern Corridor~
+~
+~
+Old cobwebs hang from the ceiling here.  Bones and discarded debris have
+piled up here.  Some of the bones appear quite human to you, and you feel a
+twinge of pity for anyone who could have died in this God foresaken place. 
+The cobwebs stir in the gentle breeze of the hallway, the carvings on the
+wall seem to be mouthing silent screams.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3722
+D3
+~
+~
+0 0 3720
+S
+#3722
+Along the Eastern Corridor~
+~
+~
+This section of corridor has a door to the north and the south.  There
+care carvings above and around the entryways.  The webs seem to be more
+recent and much more highly concentrated here.  A desicated corpse is webbed
+to the north wall.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3730
+D1
+~
+~
+0 0 3723
+D2
+~
+~
+1 0 3714
+D3
+~
+~
+0 0 3721
+S
+#3723
+Eastern Dead End~
+~
+~
+You have come to a dead end in a corridor.  You see a beautiful carving
+of a draconian in the stone of the dead end.  It is so real you feel that it
+could animate right off the wall.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 3722
+S
+#3724
+A Small Room~
+~
+~
+This room is empty, or it seems to be.  Something seems to be wrong with
+the shadows in the back corner of this room.  You do notice that the dust
+seems to have been recently disturbed.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 3716
+S
+#3725
+Before a Giant Altar~
+~
+~
+Sculptures of human sacrifice are along the walls in this room.  For some
+odd reason you feel that you would be REAL welcome if you were to go up to
+the altar.  You hear the sounds of chanting just to the north of you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3731
+D1
+~
+~
+0 0 3726
+S
+#3726
+Entrance to a Temple~
+~
+~
+This appears to be the first room of a large temple, The sculptures on
+the walls and ceilings are are so beautiful that they put the ones in the
+corridors outside to shame.  There is a decorative stand that apears to have
+some type of holy water in it.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3727
+D3
+~
+~
+0 0 3725
+S
+#3727
+North of the Intersection~
+~
+~
+Nothing really catches your eye here except the openings to the east and
+west of you that break up the monotony of the corridor.  It does not
+surprise you to see carvings over the doors.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3732
+D1
+~
+~
+1 0 3728
+D2
+~
+~
+0 0 3719
+D3
+~
+~
+0 0 3726
+S
+#3728
+Standard Issue Room~
+~
+~
+You have entered a room full of what appears to be full of standard issue
+equipment.  The type of equipment that you would see being worn by most
+castle guards.  It is worn but in good repair, and strangely enough, it does
+not seem to fit any type of creature that you know of.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3729
+D3
+~
+~
+1 0 3727
+S
+#3729
+Armorer's Office~
+~
+~
+There is a large desk in this room, It has the look of a place that you
+should not be.  You could very well get hurt if you are caught here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3734
+D3
+~
+~
+0 0 3728
+S
+#3730
+Spiders Lair~
+~
+~
+This room is completely full of webs.  Mummified corpses are strewn about
+in no apparent order.  Whatever lives in this room seems to suck the very
+life out of it's victims.  Where could this creature be?  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 3722
+S
+#3731
+Upon a Huge Altar~
+~
+~
+On the altar you see the remains of a sacrifice, you think it was human
+at one time, but the brutalities it was put through make it hard to tell. 
+There is a chalice full of blood on the top of the altar.  
+~
+0 393218 0
+Rd     0
+D2
+~
+~
+0 0 3725
+S
+#3732
+Continuing Down the Corridor~
+~
+~
+You have come to another place where the reflection of your light starts
+to play with the carvings on the wall.  They almost seem to dance in the
+flicker of your light.  Somewhere up ahead you hear a rumbling noise.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3736
+D2
+~
+~
+0 0 3727
+S
+#3733
+Room of the Pain Thing~
+~
+~
+This room has the look of a long ago abandoned and hidden place.  There
+must be some reason why this was done, but the only object of notice in this
+room is a rotting wooden box.  Maybe you should investigate further?  
+~
+0 393216 0
+Rd     0
+D1
+You see a rotting wooden box.
+~
+panel~
+87 3713 3734
+S
+#3734
+Special Weapons Room~
+~
+~
+Rows and rows of weapons racks are in this room, it has the look of a
+well kept place and the weapons seem to be magically sealed to the racks. 
+Weapons of a quality that you have never seen are unattainable to you here. 
+Is there no way to aquire one of these fine weapons?  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 3729
+D3
+You see a rotting pannel.
+~
+panel~
+87 3713 3733
+S
+#3735
+An Empty Storage Room~
+~
+~
+Some old dusty shelves are in this room, there does not seem to be
+anything usefull in sight.  The dust has not been disturbed for years.  Back
+to the east you hear a rumbling sound.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 3736
+S
+#3736
+Continuing Down the Corridor~
+~
+~
+The corridor seems to go on forever.  The eerie carvings are becoming
+more grotesque, and more finely detailed as you go.  You see faint clawed
+footprints on the floor.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3738
+D1
+~
+~
+0 0 3737
+D2
+~
+~
+0 0 3732
+D3
+~
+~
+0 0 3735
+S
+#3737
+A Small Side Room~
+~
+~
+The dust on the floor of this room appears to be undisturbed for years,
+the walls are completely bare and nothing of note can be seen anywhere.  In
+one corner there is what appears to be some kind of nest, but it has long
+been out of use.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 3736
+S
+#3738
+A Dead End~
+~
+~
+You have come to a dead end in the corridor,.  You see a beautiful
+carving of a draconian in the stone of the dead end.  It is so real you feel
+that it could animate right off of the wall.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 3736
+S
+#3740
+A Short Northern Corridor~
+~
+~
+You are in a small passageway that leads up to a window.  You can see
+mountains all around the keep from this vantage point.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 3743
+S
+#3741
+Northeast Lookout~
+~
+~
+This room is clearly designed for miltary use.  You see narrow windows
+where archers and crossbowmen can fire with great effect.  The location is
+clearly of great strategic importance.  There are several benches along the
+wall.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 3744
+S
+#3742
+A Short Western Corridor~
+~
+~
+You are in a small passageway that leads up to a window.  You can see
+mountains all around the keep from this vantage point.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3793
+D1
+~
+~
+0 0 3743
+D2
+~
+~
+0 0 3745
+S
+#3743
+A Strange Landing~
+~
+~
+You have come to the second level of this keep.  You wonder at the lack
+of stairs to this place, it seems the dwellers of this place have no need
+for them.  You see passages going off in all directions from where you
+stand.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3740
+D1
+~
+~
+0 0 3744
+D2
+~
+~
+0 0 3746
+D3
+~
+~
+0 0 3742
+D4
+~
+~
+0 0 3748
+D5
+~
+~
+0 0 3719
+S
+#3744
+A Short Eastern Corridor~
+~
+~
+You are in a small passageway that leads up to a window.  You can see
+mountains all around the keep from this vantage point.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3741
+D2
+~
+~
+0 0 3747
+D3
+~
+~
+0 0 3743
+S
+#3745
+Southwest Lookout~
+~
+~
+This room is clearly designed for military use.  You see narrow windows
+where archers and crossbowmen can fire with great effect.  The location is
+clearly of great strategic importance.  There are several benches along the
+wall.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3742
+S
+#3746
+A Short Southern Corridor~
+~
+~
+You are in a small passageway that leads up to a window.  You can see the
+trail that took you to this place down below.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3743
+S
+#3747
+Southeast Lookout~
+~
+~
+This room is clearly designed for military use.  You see narrow windows
+Where archers and crossbowmen can fire with great effect.  The location is
+clearly of great stategic importance.  There are several benches along the
+wall.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 3744
+S
+#3748
+The nest of He Whom They Guard~
+~
+~
+This seems to be the roof of this large keep.  There is a large flat rock
+slab that would be perfect for a large reptile to sun itself on.  For some
+reason there are several comfortable chairs and a table right in the center
+of this immense roof.  
+~
+0 393218 0
+Rd     0
+D5
+~
+~
+0 0 3743
+S
+#3793
+Northwest Lookout~
+~
+~
+This room is clearly designed for military use.  You see narrow windows
+where archers and crossbowmen can fire with great effect.  The location is
+clearly of great strategic importance.  There are several benches along the
+wall.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 3742
+S
+#0
+
+
+
+#SPECIALS
+M 3731 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 3700 1 3700
+G 0 3700 0
+M 0 3701 1 3701
+E 0 3702 0 20
+E 0 3703 0 16
+M 0 3702 1 3702
+E 0 3702 0 20
+E 0 3703 0 16
+M 0 3703 1 3703
+E 0 3702 0 20
+E 0 3703 0 16
+O 0 3717 0 3707
+M 0 3709 1 3709
+O 0 3717 0 3709
+M 0 3710 1 3710
+E 0 3712 0 20
+O 0 3716 0 3712
+M 0 3713 1 3713
+E 0 3706 0 16
+M 0 3715 1 3715
+G 0 3714 0
+M 0 3719 1 3719
+E 0 3702 0 20
+E 0 3703 0 16
+E 0 3704 0 17
+M 0 3723 1 3723
+G 0 3715 0
+M 0 3724 1 3724
+E 0 3706 0 16
+M 0 3726 1 3726
+E 0 3701 0 20
+E 0 3703 0 16
+M 0 3729 1 3729
+E 0 3701 0 20
+E 0 3703 0 16
+E 0 3704 0 17
+M 0 3730 1 3730
+M 0 3731 1 3731
+O 0 3709 0 3731
+E 0 3703 0 16
+O 0 3711 0 3733
+P 0 3705 0 3711
+O 0 3710 0 3734
+O 0 3710 0 3734
+O 0 3710 0 3734
+O 0 3710 0 3734
+M 0 3738 1 3738
+M 0 3741 1 3741
+E 0 3701 0 20
+E 0 3703 0 16
+M 0 3745 1 3745
+E 0 3701 0 20
+E 0 3703 0 16
+M 0 3747 1 3747
+E 0 3701 0 20
+E 0 3703 0 16
+M 0 3748 1 3748
+E 0 3708 0 16
+G 0 3718 0
+M 0 3793 1 3793
+E 0 3701 0 20
+E 0 3703 0 16
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

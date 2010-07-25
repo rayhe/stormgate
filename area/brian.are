@@ -1,0 +1,1630 @@
+#AREADATA
+Name        {  8-15} Lord Brians House~
+Builders    None~
+VNUMs       11900 11950
+Security    100
+Recall      1
+Flags       288
+Version     107
+Creator     Sthric~
+Llevel      0
+Ulevel      0
+Sounds      &CLord Brian yells 'Is there someone in my house?'~
+Music       u3_shop.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#11900
+Tanar'ri~
+Tanar'ri the Great~
+Sethric's slave, Tanar'ri is here.
+~
+~
+3 218103976 0 0 0 500 S
+100 1 200 200 5000 5000d0+0 0d0+80000
+1000 0 0
+0 0 2
+511 0 0
+>speech_prog p book please~
+if ispc($n)
+say Hmmmm you want a programing book huh? Lets see do i have one.
+emote looks in her backpack for the book
+smile $n
+say I seem to have a copy, here you go.
+mpoload 15245
+give book $n
+endif
+~
+>all_greet_prog 100~
+if ispc($n)
+if name($n) == sethric
+bow $n
+say Greetings master, it is good to see you are back.
+break
+else
+say If you would like to be let in you will have to ask Lord Sethric
+say to put you on the guest list.
+endif
+endif
+~
+|
+#11901
+george doorman~
+George the doorman~
+George the doorman is here.
+~
+George, the long time loyal friend of Brian stands here to guard his house.
+He smiles at you happily.
+~
+3 0 0 0 0 -500 S
+8 1 16 16 180 180d0+0 0d0+200
+80 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if ispc($n)
+smile $n
+say Hello there how are you? Welcome to Brian's house!
+bow $n
+beam $n
+endif
+~
+>rand_prog 15~
+emote picks his teeth
+emote looks out the window
+~
+|
+#11902
+dragon shugra~
+the dragon Shugra~
+Shugra a great golden dragon.
+~
+~
+259 236478636 0 0 0 1000 S
+100 1 200 200 30000 30000d0+0 0d0+1000
+1000 0 0
+0 0 0
+32781 0 0
+#11903
+puppy rex~
+Rex the house puppy~
+Rex a brown puppy wags it's tail.
+~
+This is a small brown puppy. It looks so cute when it wags its tail and
+barks.
+~
+65 0 0 0 0 0 S
+6 1 12 12 50 50d0+0 0d0+1
+60 0 0
+0 0 2
+0 0 0
+>rand_prog 15~
+bark
+~
+>greet_prog 100~
+if ispc($n)
+emote wags its tail at $n
+emote sniffs $n
+endif
+~
+|
+#11904
+Slave Master Jim~
+Jim~
+Slave Master Jim
+~
+~
+1 16777216 0 0 0 0 S
+100 1 200 200 30000 30000d0+0 0d0+100000
+1000 0 0
+0 0 0
+0 0 0
+#11905
+undeadcreature creature~
+An Undead Thing~
+An Undead Creature is here.
+~
+~
+1 268500992 0 0 0 0 S
+1 1 2 2 100 100d0+0 0d0+0
+10 0 0
+0 0 0
+0 0 0
+#11906
+mike butler~
+Mike the butler~
+The house butler Mike is here.
+~
+Dress in a black and white suit, Mike the butler is here to serve Brian's
+family as long as he lives.  
+~
+1 0 0 0 0 100 S
+9 1 18 18 180 180d0+0 0d0+5
+90 0 0
+0 0 1
+0 0 0
+#11907
+servant~
+A house servant~
+A house servant is here.
+~
+Dressed in a maids uniform, this young lady takes care of the work around the
+house so Brian's wife has time to do other things.
+~
+65 0 0 0 0 200 S
+9 1 18 18 180 180d0+0 0d0+5
+90 0 0
+0 0 2
+0 0 0
+>rand_prog 20~
+if ispc($n)
+emote dusts
+look $n
+emost dusts $n
+endif
+~
+|
+#11911
+cook~
+a big cook~
+The house cook is busy at work.
+~
+Dressed in white, including a big puffy hat, this cook works over the
+hot stoves all day to prepare food 
+~
+3 0 0 0 0 100 S
+10 1 20 20 200 200d0+0 0d0+50
+100 0 0
+0 0 1
+67584 0 0
+>greet_prog 100~
+if ispc($n)
+glare $n
+say Don't be touching anything!
+endif
+~
+>rand_prog 10~
+emote mixes something in a bowl
+frown
+~
+|
+#11920
+swarm spiders~
+A spider swarm~
+A swarm of spiders is here.
+~
+Numbering in the hundreds a swarm of spiders crawl in thier web waiting for
+a victim to come into the room.
+~
+3 64 0 0 0 0 S
+12 1 24 24 220 220d0+0 0d0+100
+120 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+if ispc($n)
+emote scurry in all directions
+endif
+~
+|
+#11922
+boogie man~
+The boogie man~
+The boogie man burps here.
+~
+A man like creature covered in slime and god knows what else stands here in
+the darkness. Its bug like red eyes stare at you like a piece of meat.
+~
+35 65536 0 0 0 -500 S
+15 1 30 30 300 300d0+0 0d0+3500
+150 0 0
+0 0 0
+67584 0 0
+>rand_prog 10~
+emote blows snott everywhere
+burp
+drool
+smile
+~
+>greet_prog 100~
+if ispc($n)
+say Go away or I will kill you!!
+glare $n
+endif
+~
+|
+#11928
+servant~
+A house servant~
+A house servant is here.
+~
+Dressed in a maid's uniform this young lady does the work around the house
+so Brian's wife has time to do other things.
+~
+65 0 0 0 0 200 S
+12 1 24 24 230 230d0+0 0d0+100
+120 0 0
+0 0 2
+0 0 0
+#11933
+wife~
+Brian's wife~
+Brian's wife sits here trying on dresses.
+~
+Brian's wife sits here in front of a mirror trying on dresses of all
+sort. A beautiful woman in her own right, but with the added jewels and
+dresses she looks like and angel.
+~
+3 0 0 0 0 200 S
+10 1 20 20 200 200d0+0 0d0+500
+100 0 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if ispc($n)
+smile $n
+say how do you like my clothes?
+emote looks at herself
+say Do you like the way I look?
+smile
+say Do you like my hair?
+emote fixes her necklace
+say By the way who are you?
+endif
+~
+>rand_prog 15~
+emote brushes her hair
+smile
+~
+|
+#11934
+brian~
+The man named Brian~
+Lord Brian sits here.
+~
+Sitting here behind his desk, Lord Brian slayer of the dragon Magoth
+does his taxes. A big scar goes across his face, this is one guy you
+think who has earned his money.
+~
+3 0 0 0 0 1000 S
+13 1 26 26 240 240d0+0 0d0+3500
+130 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+if ispc($n)
+smile $n
+say welcome! How may I help you?
+eye $n
+endif
+~
+|
+#11935
+child female~
+A small child~
+A female child plays here.
+~
+With a dirty face and clothes covered in food this child looks like any
+other normal child.
+~
+3 0 0 0 0 200 S
+8 1 16 16 120 120d0+0 0d0+1
+80 0 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if ispc($n)
+say Hi, im seven today!
+smile $n
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#11900
+sword avenger~
+holy Avenger~
+A long glowing sword rest here.~
+~
+5 570425667 8192 0 0 8193 101
+100 100
+0~ 0~ 0~ 3~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 25
+A
+18 25
+#11901
+cue~
+a pool cue~
+A long wooden pool cue is here.~
+~
+5 0 0 0 0 8193 8
+100 100
+0~ 0~ 0~ 11~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+13 9
+A
+19 2
+#11902
+dart~
+a golden dart~
+A golden dart is here.~
+~
+5 0 0 0 0 8193 9
+100 100
+0~ 0~ 0~ 2~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+#11903
+web~
+some webbing~
+A pile of web is here.~
+~
+9 0 0 0 0 17 12
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 5
+#11904
+boogers~
+green boogers~
+Some slimy green boogers are here.~
+~
+9 0 0 0 0 65537 15
+100 100
+0~ 0~ 0~ 0~
+3 16 0
+0 0
+reserved~
+0 0
+0 0 0
+#11905
+fork~
+a eating fork~
+A silver fork for eating is here.~
+~
+5 0 0 0 0 8193 8
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#11906
+plunger~
+a plunger~
+A big wet plunger is here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 12~
+3 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+A
+18 1
+A
+19 1
+#11907
+dress~
+a purple dress~
+A long purple dress.~
+~
+9 0 0 0 0 9 10
+100 100
+0~ 0~ 0~ 0~
+3 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#11908
+earrings~
+purple earrings~
+A set of purple earrings.~
+~
+9 0 0 0 0 524289 10
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+#11909
+bracelet~
+purple bracelet~
+A purple bracelet is here.~
+~
+9 0 0 0 0 4097 10
+100 100
+0~ 0~ 0~ 0~
+2 100 0
+5 0
+shield~
+5 5
+0 0 0
+A
+2 1
+A
+18 1
+#11910
+belt~
+a golden belt~
+A nice golden belt is here.~
+~
+9 0 0 0 0 2049 13
+100 100
+0~ 0~ 0~ 0~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 13
+A
+19 2
+#11911
+contacts~
+contacts of detection~
+A set of red contacts.~
+~
+27 0 0 0 0 131073 15
+100 100
+30~ 35~ 35~ detect evil~
+2 148 0
+0 0
+detect evil~
+0 0
+0 0 0
+A
+3 1
+#11912
+desk~
+brian's desk~
+A big wooden desk.~
+~
+15 0 0 0 0 0 20
+100 100
+1000~ 13~ 11913~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11913
+key~
+a rusty key~
+A lost key is here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11914
+chicken~
+a roasted chicken~
+A big roasted chicken.~
+~
+19 0 0 0 0 1 18
+100 100
+8~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#11915
+wall~
+a piece of a wall~
+The back wall is here.~
+~
+9 0 512 0 0 513 10
+100 100
+0~ 0~ 0~ 0~
+4 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 10
+#11916
+gold~
+a pile of coins~
+A pile of gold coins is here.~
+~
+20 0 16384 0 0 1 1
+100 100
+20000~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#11917
+axe bone lilth~
+bone axe named "Lilth"~
+A dragon bone axe named "Lilth" is here.~
+~
+5 537575425 56 0 0 8193 15
+100 100
+0~ 0~ 0~ 13~
+5 148 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 -10
+A
+13 15
+A
+1 2
+A
+18 3
+A
+19 10
+>wear_prog 100~
+0
+if ispc($n)
+tell $n Now together we will go out and destroy all that stands against us.
+emote hums softly
+endif
+~
+>get_prog 100~
+0
+if ispc($n)
+emote glows brightly
+endif
+~
+|
+#11918
+safe vault~
+a safe~
+A big steel safe.~
+~
+15 0 0 0 0 0 1
+100 100
+10000~ 15~ 11919~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>get_prog ~
+0
+~
+|
+#11919
+paper code combination~
+a combination code~
+A paper with a combination on it.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11920
+blah~
+Blah~
+Blah~
+~
+9 0 5 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11921
+blah~
+blah~
+Bah~
+~
+9 0 5 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11922
+tag red~
+a red tag~
+A red tag~
+~
+13 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11923
+board~
+sethric's Noteboard of info.~
+Sethric's Noteboard of Info.~
+~
+11 536870913 0 0 0 0 1
+100 100
+0~ 90~ 1~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11924
+sethstaff staff~
+staff of Eternal Magic~
+A glowing ice blue staff is here.~
+~
+4 418840641 2061 0 0 16385 108
+100 100
+108~ -1~ 0~ summon greater demon~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#11925
+robe sethrobe~
+robe of Eternal Magic~
+A glowing blue robe is here.~
+~
+9 134479937 0 0 0 1025 108
+100 100
+-1000~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#11900
+Sethric's Sanctuary~
+~
+~
+You have entered the sanctuary of Sethric. I large white room, with beautiful
+carpeting the shade of rose make you feel very at peace. A large desk is
+situated at the eastern end of the room flanked by a small table at each end
+and  many papers are scattered along these tables. A big window almost the
+size of the entire eastern wall permits a view of the entire landscape of
+the storm, you are amased at the hight you must be at.
+~
+0 8790016 0
+Rd     0
+D0
+~
+~
+0 0 11938
+S
+#11901
+Front Hall~
+~
+~
+Upon entering Brian's house you can see this Brian guy must be loaded!
+Fine silver frames the windows, and beautiful Purple carpeting cover the
+floor. Shining Golden lantern holders line the walls at 10 foot intervals.
+The smell of rose lingers in the air, taking a big sniff you feel at peace
+here. The hallway continues to the south.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 11936
+D2
+~
+~
+0 0 11902
+S
+#11902
+Hallway~
+~
+~
+Walking down this hallway you wonder to yourself if you will ever be as
+rich and well off as Brian. The hallway is lit by small lanterns lit
+every ten feet along the walls. A solid oak door set into the east wall
+promises fame and fortune.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11901
+D1
+~
+~
+3 0 11913
+D2
+~
+~
+0 0 11903
+S
+#11903
+Hallway~
+~
+~
+Walking along this beautiful hallway you continue to marvel at the amount
+of wealth that went into making this house. Looking closer at the lamps
+on the walls you see they are the best money can buy, and have diamonds
+set into each of them. As you look at the fine carpeting you hope you
+wiped your boots before you came in here, to mess such a fine thing would
+be a crime.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11902
+D2
+~
+~
+0 0 11905
+D3
+~
+~
+0 0 11904
+S
+#11904
+Sitting Room~
+~
+~
+This is a small room, more situated away from the other rooms, with a few
+chairs placed around a modest table, no doubt meant for small informal
+gatherings, or to do small tasks such as sewing. You notice even in this room
+the table is made from fine oak and has engravings made from silver on it,
+what wealth this Brian must have to afford such things even for this small
+room.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11912
+D1
+~
+~
+0 0 11903
+D2
+~
+~
+0 0 11906
+S
+#11905
+Hallway~
+~
+~
+This part of the hallway has some fantastic paintings hanging along the
+walls. Looking at them you see a painting of Brian on his warhorse with
+a dead dragon at his side, you think to yourself this is how brian must
+has aquired his vast fortune but you will never know unless you speak to
+him yourself. Looking at another painting you see a landscape of a
+beautiful place, lush trees, fantastic birds, you wonder where this place
+is and if it even excists.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11903
+D2
+~
+~
+0 0 11907
+D3
+~
+~
+0 0 11906
+S
+#11906
+Dinning Room~
+~
+~
+As you enter this fantastic room the first thing that enters your sight
+is a big long table made of wood, gold and other expensive materials.  Upon
+the table sits a wide selection of food, if you can name it, it is there. 
+Goblets made from fine crystal and engraved with gold sit filled with only
+the best wine.  There are 12 chairs around the table, and each chair is well
+padded with leather and silk, and stitched together with a fine gold thread.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11904
+D1
+~
+~
+0 0 11905
+D2
+~
+~
+0 0 11908
+D3
+~
+~
+0 0 11911
+S
+#11907
+Hallway~
+~
+~
+This is the end of the hallway.  A big window sits in the southern wall,
+looking out this window you see a wonderful back yard with trees, bushes and
+a small pond.  A small table is under the window, upon this table are some
+pictures of Brian and his family.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11905
+D1
+~
+~
+0 0 11909
+D3
+~
+~
+0 0 11908
+S
+#11908
+Living Room~
+~
+~
+This is a large room with many chairs and couches. Sitting in the western
+wall is a grand fireplace with a roaring fire. You notice the chairs and
+couches are situated as so people can converse with each other with ease.
+Paintings line the walls, depicting hunts, family pictures, and fierce
+monsters.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11906
+D1
+~
+~
+0 0 11907
+S
+#11909
+Reading Room~
+~
+~
+This is a small reading room for those people who just wish to relax in
+a quiet part of the house and read a good book. A brass lamp sits on a
+table beside a big well made chair. Several books lay upon the table,
+look at the books you see "Swordplay made easy", "Gods of the Realms" and
+"Tanar'ri family history" as some of the titles. You think about staying
+to read some of these wonderful books but you decide you better continue
+your search.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11910
+D3
+~
+~
+0 0 11907
+S
+#11910
+Stairway~
+~
+~
+The stairs here lead up to the second story of the house. The rails of the
+stairs are made from ivory, and the stairs themselves are carpeted with
+a fine purple carpet.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 11909
+D4
+~
+~
+0 0 11923
+S
+#11911
+Kitchen~
+~
+~
+As you walk into the kitchen, sounds of buisy servants fill the air along
+with smells of all kinds of food. Along the southern wall is a large
+stove with enough space to cook for an army. The west walls are lined
+with cabnets and sinks. Steel tables are set up in the centre of the
+room, with all kinds delicious desserts ready to be served.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11906
+S
+#11912
+Stairs~
+~
+~
+You have reached the basement stairs. Brian has told his children not to go
+down there because the boogie monster lives down there. Now if thats true or
+not you dont know, but you sure would like to find out. Standing here you
+can feel a bone chilling cold come forth from the basement.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 11904
+D5
+~
+~
+3 0 11914
+S
+#11913
+Closet~
+~
+~
+You are in Brians hallway closet, as long as your here and being the snoop
+that you are you decide to search through the closet. You find some robes
+cloaks for all seasons, boots and sandels. Some helms and other headwear
+sit on the top shelf, looking closer to the back of the closet you find
+the back wall.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+3 0 11902
+S
+#11914
+Basement Stairs~
+~
+~
+Now you are at the bottom of the stairs. Here in the basement you get a chill
+that you did not get in the rest of the house. Sounds of dripping water
+fill the basement with an eerie sound, and the fact that there are no lights
+down here make the hair on your neck stand up.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11915
+D2
+~
+~
+0 0 11916
+D4
+~
+~
+3 0 11912
+S
+#11915
+Basement~
+~
+~
+Here the darkness is overwelming, you are glad that you have the light that
+you do have, even with that it seem the darkness just wants to consume all
+light that is shed down here. In the distance you head the droplets of
+water and for a second you think you hear a scratching sound but it
+does not come again so you conclude that you must have been hearing things.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11917
+D2
+~
+~
+0 0 11918
+D3
+~
+~
+0 0 11914
+S
+#11916
+Basement~
+~
+~
+Walking along in the basement, you try not to trip over anything, because
+doing so would most certainly end up with you getting a nice wet outfit. 
+Looking down, you can see that you are walking in about a half a foot of
+water.  The southern wall is covered with cracks all over the surface,
+allowing water to leak into the basement.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11914
+D1
+~
+~
+0 0 11918
+S
+#11917
+Basement~
+~
+~
+As you enter this part of the basement you find a large oak door in the
+northern wall. Years of neglect have warped the door and turned it into a
+shadow of its former self. The sounds of your feet splashing in the small
+amount of water that cover the floor echo all over the place, making sneaking
+an impossible task.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 11920
+D2
+~
+~
+0 0 11919
+D3
+~
+~
+0 0 11915
+S
+#11918
+Basement~
+~
+~
+As far as you can figure you have reached the possible middle point if
+the basement, and you conclude that this part if the house is in dire need
+of repairs.  Years of water leaking and a few earthquakes have turned the
+basement into a death trap, one could easily slip and kill oneself if the
+whole place could collapse at any moment.  ' 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11915
+D1
+~
+~
+0 0 11919
+D3
+~
+~
+0 0 11916
+S
+#11919
+Basement~
+~
+~
+Here at the far end of the basement you can see where the wall has collapsed
+at the southern end causing a small hole to develop, but not so small as to
+where you can not fit. Small rats scurry along and you walk, you hope
+they do not have some sort of desiese.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11917
+D2
+~
+~
+0 0 11921
+D3
+~
+~
+0 0 11918
+S
+#11920
+Storage Closet~
+~
+~
+This is the storage closet, used to store things Brian will never need for
+a long time (if ever again). All sorts of things are in here, from Brian's
+old suit of armor to some odd rings and a steak. The smell of lime fills
+this room, no doubt this room has developed a leak somehwere.
+Looking up you see hundreds of webs and icky spiders.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+3 0 11917
+S
+#11921
+Dark Tunnel~
+~
+~
+As you try and squeeze yourself through this small tunnel created by
+years of earthquakes, you listen to the sounds of dripping water as in falls
+from the cave into small puddles on the ground. A slight wind blows from
+deep within this cave to produce a bone chilling affect. Light dances on
+the walls making all kinds of shadows that play with your mind. You hope
+this was not a mistake on your part to venture into this cave.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11919
+D3
+~
+~
+0 0 11922
+S
+#11922
+Boogie Man's Hideout~
+~
+~
+Deep within the earth you finally emerge into a small cave.  Black as the
+deepest night, you strain to see.  Constant dripping echo everywhere making
+it hard for you to get your bearings.  Dirt and a collection of items litter
+the floor.  Bones of animals and a few adventures lay on the ground.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11921
+S
+#11923
+Stairs~
+~
+~
+These are the top of the stairs leading down to the main level of Brian's
+house. Looking down the stairs you marvel at the the wooden banner and
+the fine ingravings that cover its surface. Sitting in the corner of this
+small alcove sits a small table upon which sits a stuffed little dragon.
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 11924
+D5
+~
+~
+0 0 11910
+S
+#11924
+Hallway~
+~
+~
+Entering the upper level of Brian's house, you note the style and flare of
+decoration has not changed. Purple rugs cover the floor while small
+lantern holders line the walls at every ten feet. Looking at some of
+the paintings hanging on the walls you see this level is more dedicated
+towards the family, pictures of Brian's wife and children seem dominant
+here.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11925
+D1
+~
+~
+0 0 11923
+D2
+~
+~
+0 0 11928
+S
+#11925
+Hallway~
+~
+~
+Walking along the hall your feet sink into the purple carpeting, you wonder
+to yourself what it must feel like on the bare feet. On the north wall is
+a big window with gold enraved upon the frame. Looking out the window you
+see the city outside, you see people walking along the steets and even
+some fights here and there as other people try for adventure and fame.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11926
+D2
+~
+~
+0 0 11924
+D3
+~
+~
+0 0 11927
+S
+#11926
+Washroom~
+~
+~
+When you step into this room the hair on your arms stands on end from the
+magic emitted here.  In the far corner is some kind of bowl type device with
+a handle on it.  Looking into the bowl you see that it is filled with water
+and when you pull the handle the water disappears into a magical void. 
+Sitting on the wall is a large mirror, and below this mirror is some device
+made from some kind of stone.  Attached to this device are two pipe like
+objects with knobs that can be turned.  Turning one of these knobs causes
+water to pour out the strange pipes.  
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 11925
+S
+#11927
+Hallway~
+~
+~
+This is a small turn in the upper hallway of Brian's house. Lit by one
+lantern, shadows play along the walls as you stand here admiring the artwork
+of the paintings hanging on the walls. A small table sits in the corner
+of this hallway and upon this table rests a small vase of flowers that
+emits a pleasant smell throughout the hall.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11925
+D2
+~
+~
+0 0 11930
+S
+#11928
+Hallway~
+~
+~
+Looking around in amazment you wonder to yourself at how rich Brian is.
+To afford capeting and wall fixtures this expensive must have cost an
+arm and a leg. Looking out the window in the southern wall you can see
+the outer walls of the city and the forest beyond.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11924
+D3
+~
+~
+0 0 11929
+S
+#11929
+Recreation Room~
+~
+~
+This room is very big and takes up most of this upper level.  Sitting in
+the middle of the room is a huge pool table made from Dragon wood, the most
+rare wood in the world.  Sitting on one wall is a dartboard with some pure
+golden darts still in it.  A table sits in one corner of the room with a few
+chairs around it, probably for card or other social sport.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11928
+S
+#11930
+Stairway~
+~
+~
+you stand at the bottom of the stairs that leads to the upmost level of
+Brian's house, most likely the level with the families bedrooms. Even here
+the stairs are carpeted with this fine purple carpeting. The stairs are well
+lit to avoid anyone tripping and falling down the stairs.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11927
+D4
+~
+~
+0 0 11931
+S
+#11931
+Stairs~
+~
+~
+Standing at the top of the upper level stairs, you can hear the chattering
+of children which brings a smile to your lips. Someday you hope you can
+become a great adventurer and retire with wealth as Brian did. As with the
+lower levels this level is quite the same, nothing out of the normal is
+here, well normal for Brian that is.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 11932
+D5
+~
+~
+0 0 11930
+S
+#11932
+Hallway~
+~
+~
+This is the upper most hallway of Brian's house. As with the rest of the
+house this hall has purple carpeting and brass lanterns along the walls.
+You wonder if you will actually get to meet Brian himself, and if so
+what kind of man this Brian is. The sounds of children distracts you
+from any further thought.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11933
+D1
+~
+~
+0 0 11934
+D2
+~
+~
+0 0 11935
+D3
+~
+~
+0 0 11931
+S
+#11933
+Master Bedroom~
+~
+~
+This is the master bedroom. Lord Brian and his wife sleep here when not
+away on trips or hunting. A large bed made from dragon wood and trimmed
+with gold sits at the northern end of the room. An open closet reveals
+that Brian's wife has no shortage of clothing. A large dresser sits in
+one of the corners with all kinds of expensive necklaces and earrings
+sitting on top of it.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 11932
+S
+#11934
+Brian's Office~
+~
+~
+You are now standing in Brian's office. Near the the east wall is a large
+desk made from dragon wood and framed with gold and silver stripping.
+Upon the desk sits piles and piles of papers, maps and other kinds of
+notes. Floating in the middle of the room is a giant globe of light used
+to light this rather large room. There is no carpet in here, only the
+hard surface of the oak floor. Behind the desk sits Brian himself.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 11937
+D3
+~
+~
+0 0 11932
+S
+#11935
+Children's Bedroom~
+~
+~
+This bedroom while smaller than the Master bedroom, is quite large none the
+less. Two beds dominate the southern part of this room, each made from the
+rare Dragon wood, and covered in silk sheets. Toys are scattered all over
+the floor, and childrens drawings are scribbled on the walls.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 11932
+S
+#11936
+Steps To Brian's House~
+~
+~
+Standing upon the steps of this great house you ponder if Brian is as
+great as is told in the local bars. Brian former adventurer, retired after
+killing a dragon and now lives off of the wealth from it. The house itself
+is rather large, brick walls and white wooden trimming make this house
+one of the most expensive on this street. A door to the south gives entry
+to the house.
+~
+0 1028 1
+Rd     0
+D0
+~
+~
+0 0 25034
+D2
+~
+~
+3 0 11901
+S
+#11937
+Secret Room~
+~
+~
+You have found Brian's secret room. This room is completely bare.
+The floors are left uncarpeted, there is nothing on the walls, the only thing
+in here is a real large safe. Looking at the safe you can see its made of
+steel and stands about 8 feet in height.
+~
+0 4 0
+Rd     0
+D2
+~
+~
+3 0 11934
+S
+#11938
+Sethric's Chambers~
+~
+~
+This room is for testing.
+~
+0 134616066 0
+Rd     0
+D2
+~
+~
+0 0 11900
+S
+#0
+
+
+
+#SPECIALS
+M 11902 spec_cast_psionicist
+M 11920 spec_poison
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 11923 0 11900
+M 0 11901 1 11901
+M 0 11903 1 11903
+M 0 11906 1 11906
+O 0 11914 0 11906
+M 0 11907 1 11907
+M 0 11911 1 11911
+E 0 11905 0 20
+O 0 11915 0 11913
+M 0 11920 1 11920
+E 0 11903 0 6
+M 0 11922 1 11922
+E 0 11904 0 8
+G 0 11913 0
+O 0 11906 0 11926
+M 0 11928 1 11928
+O 0 11902 0 11929
+O 0 11901 0 11929
+M 0 11933 1 11933
+E 0 11907 0 5
+E 0 11908 0 23
+E 0 11909 0 18
+E 0 11909 0 19
+M 0 11934 1 11934
+E 0 11910 0 17
+O 0 11912 0 11934
+P 0 11911 0 11912
+P 0 11916 0 11912
+P 0 11919 0 11912
+M 0 11935 1 11935
+O 0 11918 0 11937
+P 0 11917 0 11918
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

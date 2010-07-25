@@ -1,0 +1,3902 @@
+#AREADATA
+Name        {60-100} Hammerheim~
+Builders    None~
+VNUMs       10201 10300
+Security    100
+Recall      10210
+Flags       256
+Version     107
+Creator     Nosferatu~
+Llevel      0
+Ulevel      0
+Sounds      &RYou hear the bells of Hammerheim...BONNNNG, BONNNNG!~
+Music       magus.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#10201
+Rodgaar~
+Rodgaar~
+Rodgaar the Healer
+~
+Rodgar is an old man of smaller statue but he radiates a trememdous power.
+This power must come from the Shrine behind him. Rodgaar has guarded the
+Shrine for many years, and he has healt many adventurers in need. 
+He smiles at you and tends to your wounds...
+~
+75 520118952 16 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+1
+1500 0 0
+0 0 1
+0 0 0
+#10202
+Nyrmaal~
+Nyrmaal~
+Nyrmaal the Gym Mistress cracks her whip...
+~
+Nyrmaal is a huge women! Her arms are like tree trunks and her body is
+packed with muscles all over.
+She looks sternly at you and nods....you may train here.
+~
+579 268444328 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+1
+1500 0 0
+0 0 2
+0 0 0
+#10203
+Tygaar~
+Tygaar~
+Tygaar the Wise studies an old scroll...
+~
+Tygaar is a typical scholar. Slightly hunched over, spectacles and a little
+absent minded. The only item that does not fit is that huge club stuck 
+in his belt...well, he is wise but a Barbarian afterall.
+~
+1091 134226600 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+1
+1500 0 0
+0 0 1
+0 0 0
+#10204
+Overlord~
+The Overlord~
+The Overlord of Hammerheim does not like surprise visitors...
+~
+The Overlord of Hammerheim is a beautiful warrior women. She combines the
+strenght of a giant with the agility of a goblin. As you about to find out,
+she does not like unannounced visitors...
+~
+2147 503325352 0 0 0 -333 S
+105 1 210 210 15749 15749d0+0 0d0+105000
+1050 0 0
+0 0 2
+0 0 0
+#10205
+Headman~
+The Headman~
+The Headman of Hammerheim stands here...
+~
+The Headman is a middle aged man with silver hair and a stern look. 
+Those many scars that cover his body are witness to the great combat 
+experience this man has. As tradition dictates, the office of Headman is
+always held by the strongest and bravest barbarian.
+~
+2119 301998760 0 0 0 200 S
+90 1 180 180 18000 18000d0+0 0d0+90000
+900 0 0
+0 0 1
+2 0 0
+#10206
+Executioner~
+The Executioner~
+The Executioner of Hammerheim sees that justice is served...
+~
+This grim Barbarian has been employed to cut down on the crime rate in
+Hammerheim. No matter how you may feel about the death penalty, it sure
+worked for this towm. Crime is virtually non-existant, since the
+Executioner has been present.
+~
+67 335553256 17039360 8192 0 0 S
+150 1 300 300 50000 50000d0+0 0d0+1
+1500 0 0
+0 0 1
+2 0 0
+>fight_prog 25~
+yell $n DARES to attack me.  He shall find me somewhat challenging!!!
+stun $n
+~
+>fight_prog 50~
+say I shall send your body to your mother piece by piece!
+bite $n
+~
+>fight_prog 25~
+cackle $n
+rake $n
+~
+|
+#10207
+Shaman~
+The Shaman~
+The Shaman of Hammerheim is consumed by dark magics...
+~
+The Shaman is clad in the traditional barbarian furs, but that is the only
+that reminds of a mortal humanoid. This woman is much closer to a demon 
+than any mortal creature you have ever seen. Her eyes glow evilly red and
+she screams earthshakingly as she becomes aware of your presence..
+~
+2147 336151210 0 0 0 -666 S
+100 1 200 200 9789 9789d0+0 0d0+100000
+1000 0 0
+0 0 2
+0 0 0
+>act_prog ~
+~
+|
+#10208
+Archbishop~
+The Archbishop~
+The Archbishop of Hammerheim blesses you...
+~
+The Archbishop is a devoted man. But his title does not really reflect the
+true nature of his occupation. The Overlord has put him in charge of all 
+spiritual matters in Hammerheim, but he is also a Warrior Priest with 
+considerable combat experience.
+~
+2115 234889896 0 0 0 1000 S
+95 1 190 190 14000 14000d0+0 0d0+95000
+950 0 0
+0 0 1
+0 0 0
+#10209
+Mastiff~
+A Gray Mastiff~
+A Gray Mastiff with bloodshot eyes attacks!
+~
+A huge gray dog with blood red eyes comes out of nowhere! It is obviously
+trained to seek out intruders and kill them.
+The Mastiff attacks you viciously!
+~
+2085 74240 0 0 0 -333 S
+70 1 140 140 5000 5000d0+0 0d0+1
+700 0 0
+0 0 0
+0 0 0
+#10210
+Battle Cat~
+A Battle Cat~
+A huge Battle Cat wants you for dinner!
+~
+A huge black cat gracefully jumps through the air...and lands directly
+at your throat!
+~
+2081 107040 0 0 0 0 S
+72 1 144 144 5000 5000d0+0 0d0+1
+720 0 0
+0 0 0
+0 0 0
+#10211
+Thief~
+A Thief~
+A seedy looking individual blends into the shadows...
+~
+He is small and sneaky. And he has a tremendous agility and dexterity.
+While you wonder which alley he has vanished in, you notice that your
+purse feels considerably lighter....
+~
+2049 98858 0 0 0 0 S
+60 1 120 120 2500 2500d0+0 0d0+60000
+600 0 0
+0 0 1
+0 0 0
+#10212
+Demon~
+A Fire Demon~
+A Demon from the fires of hell gnarles on your bones!
+~
+A lesser demon has been summoned from the pits of hell! This one is a 
+fire demon, one of the more vicious kind! 
+The fire demon houls and attacks you immediately!
+~
+2147 306709032 0 0 0 -100 S
+50 1 100 100 500 500d0+0 0d0+1
+500 0 0
+0 0 0
+128 0 0
+#10213
+Spider~
+A Giant Spider~
+A Giant Spider casts a web at you!
+~
+A large brown spider with hairy, three feet long legs suddenly attacks
+you! Obivously, you have triggerd one of the fine web strings that you
+have noticed in these sewer pipes...
+~
+2081 268509736 0 0 0 0 S
+75 1 150 150 3000 3000d0+0 0d0+1
+750 0 0
+0 0 0
+0 0 0
+#10214
+Rat~
+A Sewer Rat~
+A large sewer rat gnarls on your bones!
+~
+What an ugly and disease infested rodent! The rat bares its nasty yellow
+teeth and jumps at you...it must be rabid!
+~
+2085 107048 0 0 0 0 S
+65 1 130 130 3000 3000d0+0 0d0+1
+650 0 0
+0 0 0
+0 0 0
+#10215
+Eel~
+An Electric Eel~
+An Electric Eel is looking for its prey!
+~
+A seven feet long eel slithers through the sewer slime. As many eels, it
+is blind but it senses the presence of its prey...you!
+The eel's body vibrates with anticipation and crackles with electricity.
+~
+2081 67125801 0 0 0 0 S
+70 1 140 140 3000 3000d0+0 0d0+1
+700 0 0
+0 0 0
+0 0 0
+#10216
+Salamander~
+The Fire Salamander~
+A creature surrounded by fire strikes at you!
+~
+This creature is not a natural mutation of a salamander. Someone has made
+a monster here, someone very demented and evil!
+The creature howls in rage apparently from the pain of its own fire. 
+The tormented animal becomes aware of your presence and attacks!
+ 
+~
+2081 34611752 0 0 0 0 S
+70 1 140 140 4000 4000d0+0 0d0+1
+700 0 0
+0 0 0
+0 0 0
+#10217
+Kormaal~
+Kormaal, the Smithy~
+Kormaal is pounding her anvil with a huge hammer...
+~
+Kormaal is small by Barbarian standards..only about 6 feet. But she is
+also about 6 feet wide! Working hard as a smithy has made her the most
+muscular person you have ever seen.
+Kormaal nod at you in recognition and starts to repair your defective
+equipment.
+~
+67 33563304 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 2
+0 0 0
+#10218
+Jadgaar~
+Jadgaar, the Jeweler~
+Jadgaar has a fine selection of jewels here...
+~
+Jadgaar is a small, old man. His eyes sparkle as much as the jewels he 
+displays in his shop. He greets you friendly and is eager to see your
+treasures.
+ 
+~
+2115 16786088 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 1
+0 0 0
+#10219
+Otgaar~
+Otgaar, the Chef~
+Otgaar, the chef leads you to your table...
+~
+Judging by the size of Otgaar, he is not only his best customer here, but
+the food in this restaurant must be really good!
+Otgaar smiles friendly and finds a nice window table for you.
+~
+2115 8872 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 1
+0 0 0
+#10220
+Dermaal~
+Dermaal, the Potionmaker~
+Dermaal presents a fine selection of potions here...
+~
+Dergaal does not look like your typical barbarian female. She is a rather
+petite and graceful lady. She has rather chilling expression in her 
+pleasant features...why?
+~
+2115 8872 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 2
+0 0 0
+#10221
+Krugaar~
+Krugaar, the Merchant~
+Krugaar has a wide selection of items to offer...
+~
+Krugaar looks as smart as a tree trunk! But actually, he is one of the few
+Barbarians who is capable of reading and writing. He has also been trained
+in some magics.
+Krugaar, proudly presents you a variety of useful supplies.
+~
+2115 8872 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 1
+0 0 0
+#10222
+Hargaar~
+Hargaar, the Bartender~
+Hargar stands behind the counter and offers you a drink..
+~
+The Bartender is a rugged, yet friendly man. Upon your arrival, he greets
+you and offers you a refreshing drink on the house.
+~
+2115 8872 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 1
+0 0 0
+#10223
+Yyrmaal~
+Yyrmaal, the Trapper~
+Yyrmaal has a few fine animals for sale...
+~
+Yyrmaal is the premier trapper of Hammerheim. She loves animals and she
+has a gift to train them into pets. Her animals are in superb condition.
+She asks you if you will take good care of them and shows you around...
+~
+2115 8872 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 2
+0 0 0
+#10224
+Gutt~
+Gutt, the Ogre~
+Gutt, the Ogre has plenty of good weapons here...
+~
+Gutt is Klutz' twin brother. Not that you would be able to tell one Ogre
+apart from another even if they were not related. 
+Gutt grunts friendly at you and shows you his collection of weapons.
+~
+2115 8744 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 1
+0 0 0
+#10225
+Klutz~
+Klutz, the Ogre~
+Klutz, the Ogre displays Hammerheim's finest armors...
+~
+Klutz is an Ogre. He is very tall, very strong, very dirty and very dumb.
+The Barbarians found him and his twin brother Gutt before their gates many
+years ago. They nutured and raised them and to everyone's surprise, both 
+Ogres became pretty sucessful business men in Hammerheim.
+~
+67 8872 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 1
+0 0 0
+#10226
+Wolverine~
+A Wolverine~
+A bloodthirsty Wolverine follows you...
+~
+This Wolverine has been trained to serve as a pet. However, inside is still
+the furious animal we all know and love.
+It is really astounishing how well Yyrmaal can domesticate wild animals.
+~
+323 74280 0 0 0 -333 S
+65 1 130 130 6000 6000d0+0 0d0+1
+650 0 0
+0 0 0
+0 0 0
+#10227
+Troll~
+A Troll~
+A Troll awaits your orders...
+~
+A huge shaggy humanoid form stands here. The Troll smells really bad but
+in contrast to its wild counterparts it is unusally peaceful and cooperative.
+Yyrmaal really knows how to train a pet!
+~
+2371 8872 0 0 0 -666 S
+75 1 150 150 5000 5000d0+0 0d0+1
+750 0 0
+0 0 0
+0 0 0
+#10228
+Fiend~
+A Pit Fiend~
+The Pit Fiend howls terrifyingly, but it follows your orders...
+~
+This creature comes straight from the pits of hell! It is not very happy
+to be on this plane of existance and it howls in rage. The more amazing
+that Yyrmaal was able to capture and train this hellish monster into a
+useful pet.
+~
+2371 34087592 0 0 0 -1000 S
+85 1 170 170 2500 2500d0+0 0d0+1
+850 0 0
+0 0 0
+0 0 0
+#10229
+Druid~
+A Druid~
+A Druid mutters some incantations...
+~
+This female barbarian is neither pretty nor ugly.  She wears a strange
+headdress of leaves, almost like a crown.  Even though barbarian druids are
+illiterate, they have great knowledge of nature and it's hidden magic.  
+~
+2049 268444348 0 0 0 750 S
+85 1 170 170 4000 4000d0+0 0d0+75000
+850 0 0
+0 0 2
+0 0 0
+#10230
+Barbarian~
+A Barbarian~
+A Barbarian walks this way...
+~
+This Barbarian seems to be on his way home from work. He is dressed in
+a rather filthy fur tunic and wields the traditional stone hammer.
+These hammers are weapon, tool and symbol as well. They have given 
+Hammerheim its name.
+~
+2049 8704 0 0 0 200 S
+60 1 120 120 4000 4000d0+0 0d0+50000
+600 0 0
+0 0 1
+0 0 0
+#10231
+Axe-man~
+An Axe-man~
+An Axe-man patrols the streets of Hammerheim...
+~
+This Barbarian has a double duty as a cityguard and a policeman. He has a
+stern, proud look in his face. He carries the traditional short-axes
+which gave his profession the name Axe-men.
+~
+2049 134226472 0 0 0 500 S
+75 1 150 150 4000 4000d0+0 0d0+60000
+750 0 0
+0 0 1
+0 0 0
+#10232
+Chimaera~
+A Chimaera ~
+A Chimaera guards the Tower against any danger!
+~
+This part-lion part bird creature has been employed in the city defenses.
+It attacks anything that does not belong in this place...even adventurers
+like yourself!
+~
+2147 201859752 0 0 0 -333 S
+80 1 160 160 5000 5000d0+0 0d0+80000
+800 0 0
+0 0 0
+0 0 0
+#10233
+Chimaera~
+A Chimaera~
+A Chimaera guards the Tower against any danger!
+~
+This part-lion part-bird creature has been employed in the city defenses.
+It attacks anything that does not belong in this place...even adventurers
+like yourself!
+~
+2147 201859752 0 0 0 -333 S
+80 1 160 160 5000 5000d0+0 0d0+80000
+800 0 0
+0 0 0
+0 0 0
+#10234
+Lodgaar~
+Lodgaar, the Traveller~
+Lodgaar travels to other regions of the realm...
+~
+Lodgaar is a typical Barbarian. He is dressed in the traditional furs and
+carries a bronze sword as well as the traditional stone hammer.
+Lodgaar is on his way to explore the other parts of the World, 
+whistling a happy tune...
+~
+67 8872 16777216 0 0 0 S
+60 1 120 120 5000 5000d0+0 0d0+50000
+600 0 0
+0 0 1
+0 0 0
+#10235
+Rodent~
+A Tiny Rodent~
+A tiny rodent carries a key around...
+~
+This tiny furball carries some key around that Lodgaar must have dropped.
+~
+67 553 0 0 0 0 S
+3 1 6 6 50 50d0+0 0d0+1
+30 0 0
+0 0 0
+0 0 0
+#10236
+Ogre Prisoner~
+An Ogre Prisoner~
+An Ogre Prisoner awaits execution...
+~
+This unwashed Ogre has been sentenced to death for stealing and killing 
+citizens of Hammerheim. He will be executed at dawn tomorrow morning.
+However, he seems to be completely oblivious to his death. He still tries
+to snatch your coin purse...hmm, maybe you can predate the execution by
+a few hours...
+~
+67 552 0 0 0 0 S
+86 1 172 172 15000 15000d0+0 0d0+1000
+860 0 0
+0 0 1
+0 0 0
+#10237
+Brugaar~
+Brugaar, the Banker~
+Brugaar the banker stands behind a marble counter...
+~
+There is no nice way of putting it...Brugaar is fat! Obviously, his banking
+business makes a good profit that keep him well fed. Brugaar grins at you
+as you arrive...hoping for another large deposit!
+~
+131139 16786088 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+10000
+1500 0 0
+0 0 1
+2 0 0
+#10238
+Zynmaal~
+Zynmaal, the Librarian~
+Zynmaal sits behind her desk reading a good book...
+~
+Zynmaal is an older barbarian woman. She has spent a great deal of her life
+to visit the libraries of the Storm. Now she has retired here and offers
+adventurers like yourself the benefits of her vast book collection.
+~
+67 16786088 0 0 0 0 S
+150 1 300 300 30000 30000d0+0 0d0+0
+1500 0 0
+0 0 2
+3 0 0
+#10255
+Rodent~
+A Tiny Rodent~
+A tiny rodent is carrying a key...
+~
+This tiny furball carries a key to its nest. Someone must have dropped it
+here...
+~
+67 553 0 0 0 0 S
+3 1 6 6 50 50d0+0 0d0+1
+30 0 0
+0 0 0
+0 0 0
+#10256
+Rodent~
+A Tiny Rodent~
+A Tiny Rodent has a key between its teeth...
+~
+This tiny furball carries a key that someone must have lost...
+~
+67 553 0 0 0 0 S
+3 1 6 6 50 50d0+0 0d0+1
+30 0 0
+0 0 0
+0 0 0
+#0
+
+
+
+#OBJECTS
+#10201
+Shrine~
+the Shrine~
+The Great Shrine of Hammerheim~
+~
+12 3 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10202
+Horn~
+an Ogre Horn~
+An Ogre Horn for Donations has been placed here...~
+~
+15 4 0 0 0 0 200
+100 100
+100000~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10203
+Waark~
+the Waark~
+A poisoned dagger with three pointy blades...~
+~
+5 16897 0 0 0 8193 100
+100 100
+0~ 50~ 50~ 11~
+5 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 -100
+A
+24 -10
+A
+13 125
+A
+18 25
+A
+19 35
+#10204
+Guard~
+the Invisible Guard~
+A Shield unseen to the normal eye...~
+~
+9 23068705 515 0 0 513 90
+100 100
+0~ 0~ 0~ 0~
+10 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 8
+A
+19 8
+A
+13 50
+A
+1 1
+A
+24 -10
+#10205
+Helmet~
+a Crowned Helmet~
+A large helmet with a crude crown on top...~
+~
+9 513 0 0 0 17 90
+100 100
+0~ 0~ 0~ 0~
+5 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 -10
+A
+12 -35
+A
+13 75
+A
+18 9
+A
+19 9
+#10206
+war axe~
+a Bloody War Axe~
+A huge axe covered with blood and dripping with poison...~
+~
+5 16385 0 0 0 8193 92
+100 100
+0~ 50~ 50~ 13~
+8 920 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+19 35
+A
+26 50
+A
+12 -50
+A
+13 100
+#10207
+Chain Mail~
+a Chain Mail~
+A Barbarian Chain Mail...~
+~
+9 16778241 18 0 0 9 90
+100 100
+0~ 0~ 0~ 0~
+15 900 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+18 25
+A
+12 50
+A
+14 -50
+#10208
+Amulet eternal sleep~
+the Amulet of Eternal Sleep~
+A dark glowing obsidian amulet...~
+~
+9 527365 0 0 0 5 95
+100 100
+0~ 0~ 0~ 0~
+1 948 0
+5 0
+sleep~
+35 35
+0 0 0
+A
+12 50
+A
+13 50
+A
+19 8
+A
+18 8
+#10209
+Boots~
+a Pair of Pilgrim Boots~
+A worn yet sturdy pair of boots...~
+~
+9 1048582 64 0 0 65 95
+100 100
+0~ 0~ 0~ 0~
+5 948 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 50
+A
+12 50
+A
+19 5
+A
+18 5
+A
+2 1
+#10210
+Darkness~
+a Piece of Darkness~
+A circle of pure darkness...~
+~
+9 66053 0 0 0 3 100
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+5 0
+blindness~
+25 25
+0 0 0
+A
+13 75
+A
+19 10
+A
+18 10
+#10211
+Doom~
+a Piece of Doom~
+A circle radiating with evil...~
+~
+9 66053 0 0 0 3 100
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+5 0
+curse~
+25 25
+0 0 0
+A
+13 75
+A
+19 10
+A
+18 10
+#10212
+Executioner Hammer~
+the Executioner's Hammer~
+A hammer of great power lies here.~
+~
+5 98959360 2078 0 0 8193 105
+100 100
+0~ 0~ 0~ 8~
+40 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 50
+A
+13 200
+A
+24 -30
+A
+19 60
+#10213
+Collar~
+a Spiked Collar~
+A large leather collar with 2-inch metal spikes...~
+~
+9 7406084 4 0 0 5 70
+100 100
+0~ 0~ 0~ 0~
+2 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+A
+1 2
+A
+18 2
+A
+19 7
+#10214
+chain silver~
+a Silver Chain~
+A necklace made from the finest silver...~
+~
+9 513 0 0 0 5 72
+100 100
+0~ 0~ 0~ 0~
+2 720 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 25
+A
+25 25
+A
+12 -25
+A
+19 7
+#10215
+Ring Luck~
+the Ring of Luck~
+A twisted circle made from some translucent material...~
+~
+9 8192737 5 0 0 3 60
+100 100
+0~ 0~ 0~ 0~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -10
+A
+24 -10
+A
+109 -1
+A
+2 2
+#10216
+Bracer Obsidian~
+an Obsidian Bracer~
+A pitchblack bracer of great power...~
+~
+9 15827665 4133 0 0 4097 100
+100 100
+0~ 0~ 0~ 0~
+3 1000 0
+5 0
+bloodbath~
+-1 -1
+0 0 0
+A
+14 -120
+A
+24 -10
+A
+13 30
+A
+25 25
+A
+19 10
+A
+18 10
+#10217
+hide~
+an Amphibian Hide~
+A slippery, translucent hide worked into a belt...~
+~
+9 4320 2048 0 0 2049 70
+100 100
+0~ 0~ 0~ 0~
+3 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 5
+A
+13 50
+A
+120 -1
+#10218
+Bonfire~
+a Bonfire~
+A huge Bonfire burns here...~
+~
+1 1 0 0 0 0 0
+100 100
+0~ 0~ -1~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10219
+Chalice~
+an Old Chalice~
+An old mangled chalice lies here...~
+~
+15 2 0 0 0 0 1
+100 100
+100000~ 5~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10220
+Key~
+an Old Key ~
+An old key, slightly bent, but still usable... ~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#10221
+Gatekey~
+a Gatekey~
+The large key to the South Gate...~
+~
+18 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#10222
+Chest~
+a Forgotten Chest~
+An old chest has been forgotten here...~
+~
+15 4 0 0 0 0 1
+100 100
+100000~ 5~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10223
+Table~
+table ~
+A table by the window...~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10224
+Arch~
+an Arch~
+A tall, humming Arch stands here...~
+~
+29 3 0 0 0 0 1
+100 100
+25000~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10225
+Fountain~
+fountain~
+The Mathyr Fountain of Hammerheim~
+~
+28 65 0 0 0 0 1
+100 100
+200000~ 200000~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10226
+Well~
+well~
+The Well of Hammerheim~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10227
+Hammer Statue~
+the Hammer~
+The Huge Hammer of Hammerheim..symbol of the city.~
+~
+12 65 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10230
+Crown Leaves~
+a Crown of Leaves~
+A crown of strange leaves and branches...~
+~
+9 1217 0 0 0 17 85
+100 100
+0~ 0~ 0~ 0~
+1 848 0
+5 0
+bark skin~
+25 25
+0 0 0
+A
+4 2
+A
+18 5
+A
+19 5
+A
+14 50
+A
+12 75
+A
+13 75
+#10231
+Belt~
+a Belt of Leaves~
+A green belt wrought from leaves and branches...~
+~
+9 67 2048 0 0 2049 85
+100 100
+0~ 0~ 0~ 0~
+3 848 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+A
+1 2
+A
+18 2
+A
+19 8
+A
+13 50
+#10232
+Vial Azure~
+a Azure Vial~
+A pretty looking azure vial with a chaotic content...~
+~
+10 268435585 0 0 0 1 75
+100 100
+50~ flesh armor~ stone skin~ reserved~
+2 748 0
+0 0
+reserved~
+0 0
+0 0 0
+#10233
+Fur Tunic~
+a Fur Tunic~
+A shaggy tunic nit from animal furs...~
+~
+9 4 1024 0 0 1025 60
+100 100
+0~ 0~ 0~ 0~
+5 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 50
+A
+19 5
+A
+18 5
+A
+1 1
+#10234
+Hammer~
+a Stone Hammer~
+A strong, heavy marble hammer...~
+~
+5 2 0 0 0 8193 60
+100 100
+0~ 30~ 30~ 7~
+8 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+18 12
+A
+19 12
+A
+13 40
+#10235
+Armor Bronze~
+a Bronze Armor~
+A sturdy, heavy bronze armor...~
+~
+9 132097 10 0 0 9 75
+100 100
+0~ 0~ 0~ 0~
+25 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 -100
+A
+13 50
+A
+19 15
+A
+18 15
+#10236
+Leggings~
+a Pair of Bronze Leggings~
+A nicely crafted pair of bronze leggings...~
+~
+9 65 0 0 0 33 75
+100 100
+0~ 0~ 0~ 0~
+10 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 -50
+A
+19 7
+A
+18 7
+#10237
+Axe~
+a Short Bronze Axe~
+A very sharp bronze axe with a short shaft...~
+~
+5 1153 0 0 0 8193 75
+100 100
+0~ 30~ 30~ 13~
+5 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 25
+A
+19 20
+A
+18 15
+A
+26 50
+#10238
+Vial Blue~
+a Blue Vial ~
+A blue vial of healing...~
+~
+10 268435521 0 0 0 1 60
+100 100
+60~ heal~ heal~ reserved~
+2 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#10239
+Vial White~
+a White Vial~
+A white vial of mana...~
+~
+10 268435521 0 0 0 1 60
+100 100
+60~ mana~ mana~ psychic healing~
+2 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#10240
+Scroll Removal~
+a Scroll of Removal~
+A strange looking magical scroll...~
+~
+2 66 0 0 0 1 75
+100 100
+100~ cancellation~ dispel magic~ remove curse~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#10241
+Chest~
+an Oak Chest~
+A wooden chest with handles on it...~
+~
+15 1 0 0 0 1 60
+100 100
+100000~ 5~ 0~ 0~
+5 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#10242
+Torch~
+an Everlasting Torch~
+A magical torch that cannot be doused...~
+~
+1 4161 0 0 0 1 60
+100 100
+0~ 0~ -1~ 0~
+1 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 2
+A
+13 25
+#10243
+Emerald~
+an Emerald~
+A shiny green emerald...~
+~
+8 1 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#10244
+Steak~
+a Steak~
+A juicy steak with onions and mushrooms...~
+~
+19 0 0 0 0 1 1
+100 100
+25~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#10245
+Salmon~
+a Salmon~
+A fresh fried salmon...~
+~
+19 0 0 0 0 1 1
+100 100
+40~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#10246
+Bottle Water~
+a Bottle of Water~
+A big bottle of refreshing mountain spring water...~
+~
+17 0 0 0 0 1 1
+100 100
+50~ 50~ 0~ 0~
+3 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#10247
+Beer~
+a Bottle of Beer~
+A bottle of the local dark beer...~
+~
+17 0 0 0 0 1 1
+100 100
+10~ 10~ 1~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#10248
+Sword~
+a Bronze Sword~
+A sharp short bronze sword...~
+~
+5 64 0 0 0 8193 60
+100 100
+0~ 30~ 30~ 3~
+5 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 60
+A
+18 15
+A
+19 15
+#10249
+Stone Club~
+a Stone Club~
+A crude granite club...~
+~
+5 64 0 0 0 8193 70
+100 100
+0~ 30~ 30~ 8~
+8 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 12
+A
+19 18
+A
+13 75
+#10250
+Wristband~
+a Bronze Wristband~
+A circle of bronze made to fit a wrist...~
+~
+9 1 4096 0 0 4097 60
+100 100
+0~ 0~ 0~ 0~
+2 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+A
+13 25
+#10251
+Magical Feather~
+a Magical Feather~
+A soft, glowing feather...~
+~
+8 4291 0 0 0 16385 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 100
+A
+119 -1
+#10252
+Bloody Feather~
+a Bloody Feather~
+A blood-smeared, glowing feather...~
+~
+8 4291 0 0 0 16385 80
+100 100
+0~ 0~ 0~ 0~
+1 3200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 50
+A
+116 -1
+#10253
+Portal~
+the Quest Portal~
+The Quest Portal towers over you...~
+~
+29 65 0 0 0 0 1
+100 100
+25001~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10254
+Key Coppery~
+a Coppery Key~
+The coppery key to a gate in Hammerheim...~
+~
+18 129 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#10255
+Shroud~
+the Divine Shroud~
+A glowing shroud of divine origin...~
+~
+9 285608001 1034 0 0 1025 95
+100 100
+0~ 0~ 0~ 0~
+3 948 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 8
+A
+18 8
+A
+13 50
+A
+12 50
+A
+116 -1
+#10256
+Flame~
+the Flame of Hammerheim~
+A large, golden torch with a city emblem...~
+~
+1 536872001 0 0 0 16385 90
+100 100
+0~ 0~ -1~ 0~
+1 900 0
+5 0
+burning hands~
+10 10
+0 0 0
+A
+5 2
+A
+1 2
+A
+13 50
+A
+18 5
+A
+19 5
+#10257
+Portal~
+an Ice Portal~
+A magical ice portal towers over you...~
+~
+29 65 0 0 0 0 1
+100 100
+10224~ 0~ 0~ 0~
+100000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10258
+Portal~
+an Ice Portal~
+A magical ice portal towers over you...~
+~
+29 65 0 0 0 0 1
+100 100
+10224~ 0~ 0~ 0~
+100000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10259
+Counter~
+a Marble Counter~
+A Long Marble Counter~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10260
+Book~
+the Book of SR and EoS~
+A huge book containing the facts about the Storm...~
+~
+18 67108868 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+book~
+~
+E
+chapter1~
+~
+E
+chapter2~
+~
+E
+chapter3~
+~
+E
+chapter4~
+~
+E
+chapter5~
+~
+E
+chapter5~
+~
+E
+book~
+The BOOK of STORM    
+  
+  Chapter1: The History of Storm
+   Chapter2: The Different Realms
+   Chapter3: The Different Clans
+Chapter4: Secrets of the Storm
+~
+E
+book~
+The BOOK of STORM
+  
+Chapter1: The History of Storm
+Chapter2: The Different Realms
+Chapter3: The Different Clans
+Chapter4: Secrets of Storm
+Chapter5: The Rules of Storm
+~
+#10261
+Leafy Anklet~
+a Leafy Anklet~
+A small ivy leafed anklet...~
+~
+9 268437505 1048576 0 0 1048577 70
+100 100
+0~ 0~ 0~ 0~
+1 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+A
+4 2
+A
+13 25
+A
+18 3
+#10262
+portal~
+portal~
+A portal to Safety is here.~
+~
+29 19 0 0 0 0 1
+100 100
+25001~ 0~ 0~ 0~
+20000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#10299
+null~
+null~
+Null~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#10201
+A Mountain Trail~
+~
+~
+The mountain trail is well traveled and deeply worn, but it is difficult
+going nonetheless.  A bitter north wind blasts down the trail, freezing
+everything in sight.  The few other travelers on the trail are heavily clad
+in furs and other winter garb.  
+~
+0 401412 5
+Rd     0
+D0
+~
+~
+0 0 10202
+D2
+~
+~
+0 0 18567
+S
+#10202
+A Mountain Trail~
+~
+~
+The trail becomes narrower as the mountains become steeper.  Ice and
+sleet make the footing slippery, and the cold wind makes the going even more
+miserable.  The beauty of the mountains is stunning, with their snow-capped
+and craggy peaks.  Unfortunately, the weather makes it impossible to enjoy. 
+~
+0 401408 5
+Rd     0
+D0
+~
+~
+0 0 10203
+D2
+~
+~
+0 0 10201
+S
+#10203
+The Road to Hammerheim~
+~
+~
+The trail broadens out into a proper road here, high in the mountains. 
+Just over the horizon, you think you can see the gates to a city.  It
+appears to be solidly made, with a sturdy wall around it to protect from
+intruders.  Hopefully, it keeps out the elements, as well.  
+~
+0 401408 4
+Rd     0
+D0
+~
+~
+0 0 10204
+D2
+~
+~
+0 0 10202
+S
+#10204
+Before the South Gate~
+~
+~
+The road ends at the gateway to Hammerheim.  A large gate made of stone
+is barred and locked, preventing travel to the north.  The absence of guards
+is noticeable, but with such solid gates they are really uneccesary.  There
+is a very large keyhole in the gate.  
+~
+0 401408 0
+Rd     0
+D0
+~
+Gate~
+119 10221 10205
+D2
+~
+~
+0 0 10203
+S
+#10205
+Inside the South Gate~
+~
+~
+Here inside the south gate of Hammerheim, the bitter cold and wind seem
+less harsh.  The residents of this city, both male and female, are heavily
+muscled and well-clad against the elements with heavy furs and solid winter
+boots.  Most seem to carry at least a light weapon, as well.  This explains
+the lack of guards at the gate.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10206
+D2
+~
+Gate~
+119 10221 10204
+S
+#10206
+Uraag's Road~
+~
+~
+Uraag's Road is a main thoroughfair of Hammerheim.  To the east, Holy Way
+stretches out to the Cathedral.  The chanting of religious fanatics can be
+heard even here.  The road itself is well-made with tightly fitting
+cobblestones.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10207
+D1
+~
+~
+0 0 10230
+D2
+~
+~
+0 0 10205
+S
+#10207
+Uraag's Road~
+~
+~
+The other travelers on Uraag's Road are mostly the barbarian inhabitants
+of Hammerheim.  Their fierce demeanors are a bit discomforting, and the
+weapons they carry look menacing.  The cold is incredibly intense, and the
+wind whips through your garments.  The distant sound of a hammer on an anvil
+can be heard far to the west.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10208
+D2
+~
+~
+0 0 10206
+D3
+~
+~
+0 0 10234
+S
+#10208
+Main Intersection~
+~
+~
+The intersection of Uraag's Road and Groog's Way appears to be one of the
+busiest in Hammerheim.  Set on a pedestal is the huge hammer which is the
+symbol of the city.  On the ground is a very large grate, which, by the
+smell, must lead to the city's dark and dangerous sewers.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10289
+D1
+~
+~
+0 0 10241
+D2
+~
+~
+0 0 10207
+D3
+~
+~
+0 0 10247
+D5
+~
+Grate~
+119 10220 10253
+S
+#10209
+Uraag's Road~
+~
+~
+Uraag's Way is intersected by two streets here.  Shaman Street leads off to
+the west, and Headman's way branches off to the east.  The roads are made
+of the same tight-fitting cobblestones as the rest of Hammerheim's streets.
+Headman's Way is a very busy thoroughfair, with many citizens taking their
+problems to the Headman to be resolved.
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10288
+D1
+~
+~
+0 0 10215
+D2
+~
+~
+0 0 10289
+D3
+~
+~
+0 0 10226
+S
+#10210
+Before the Hammerheim Shrine~
+~
+~
+The Hammerheim shrine looms to the north.  The seat of the real power in
+Hammerheim, the shrine is the home of the Overlord.  Her rule is absolute,
+and her decisions are heavy-handed but just.  The shrine is also a quiet
+place of worship for the masses, and also serves as an academy where people
+can go to receive special training.  
+~
+0 262148 1
+Rd     0
+D0
+~
+~
+0 0 10211
+D2
+~
+~
+0 0 10288
+S
+#10211
+The Great Shrine~
+~
+~
+The shrine of Hammerheim is immense yet simple.  A donation horn for the
+needy of Hammerheim is here.  Milling about are citizens of the town which
+are deeply involved in their own thoughts.  Some seek an audience with the
+Overlord.  Others wish to quietly worship their gods by providing for the
+needy.  Still others seek the knowledge of the academics.  
+~
+0 2491400 0
+Rd     0
+D0
+~
+door~
+119 0 10212
+D2
+~
+~
+0 0 10210
+D4
+~
+~
+0 0 10214
+D5
+~
+~
+0 0 10213
+S
+#10212
+The Chamber of the Overlord~
+~
+~
+The chamber of the Overlord is a very lavishly decorated room.  That is,
+lavish for a barbarian.  The stout furniture in the room is covered with
+very fine velvet, and the thick walls keep out the cold winds blowing
+outside.  The look on the Overlord's face makes you wonder if you should
+have scheduled an appointment.  
+~
+0 401416 0
+Rd     0
+D2
+~
+door~
+119 0 10211
+D5
+~
+trapdoor~
+3 0 10260
+S
+#10213
+The Hall of Sweat~
+~
+~
+All around you are the sweaty bodies of half-clad barbarians.  Nyrmaal,
+the trainer, really knows how to provide a workout.  The thoroughness of her
+teaching pays off, however.  At least it seems that way by the looks of
+these barbarians.  The heat generated by the warm bodies makes this room one
+of the most pleasent in Hammerheim.  The smell of the people working out
+isn't so pleasant, however.  
+~
+0 2491400 0
+Rd     0
+D4
+~
+~
+0 0 10211
+S
+#10214
+The Hall of Studies~
+~
+~
+Leather bound books written in the tongue of the barbarian lands line the
+bookcases of this room.  A rug on the floor and a fire in the hearth makes
+this room very cozy by barbarian standards.  This hall of studies contains
+the heart of the barbarian wisdom and knowledge, which is surprisingly
+immense.  Tygaar, the wise scholar, could probably teach you a thing or two.
+~
+0 2491400 0
+Rd     0
+D5
+~
+~
+0 0 10211
+S
+#10215
+Headman's Way~
+~
+~
+Headman's Way leads off to the east toward the village hall and the
+office of the Headman.  Although it is difficult to obtain an audience with
+this man, it is often very important.  His decisions are just, and he is
+often involved in settling petty disputes.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10216
+D3
+~
+~
+0 0 10209
+S
+#10216
+Headman's Way~
+~
+~
+Headman's Way leads to the Village Hall to the east, and the city gate
+down the alley to the north.  It is rumored that terrible beasts and giant
+men live to the north, and you are thankful of the protective city walls.  A
+fountain which stands in the road provides fresh, clear water to any that
+would like to drink.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10218
+D1
+~
+~
+0 0 10217
+D3
+~
+~
+0 0 10215
+S
+#10217
+At Village Hall~
+~
+~
+The Village Hall is a large and sturdy building which provides protection
+from the outdoors, as well as serving as a meeting place for the citizens. 
+Although the members of the town do not rule over themselves, important
+policies are discussed here.  The citizens then appoint a representative to
+take their views to the Headman.  
+~
+0 393216 1
+Rd     0
+D1
+~
+doors~
+119 0 10225
+D3
+~
+none~
+0 0 10216
+S
+#10218
+North Gate Alley~
+~
+~
+The alley runs between some houses in the residential section of
+Hammerheim.  A cold north wind whips down the alley, swirling snow around
+your feet.  The solid stone houses look inviting, with glows coming out of
+their windows from the warmth within.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10219
+D2
+~
+~
+0 0 10216
+S
+#10219
+North Gate Alley~
+~
+~
+Just ahead is the north gate.  More mountains can be seen beyond the city
+walls, their snow-capped peaks glistening in the sun.  The city behind you,
+even with its cold and stone-faced inhabitants looks more welcoming than the
+terrain ahead.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10220
+D2
+~
+~
+0 0 10218
+S
+#10220
+Inside the North Gate~
+~
+~
+The north gate is barred and locked securely.  Just like the south gate
+of Hammerheim, no guards are posted to keep out unwelcome intruders.  By the
+looks of the citizens and the weapons they carry, however, it is no wonder. 
+A good smack from one of the stone clubs would knock a person senseless at
+the least.  
+~
+0 393216 1
+Rd     0
+D2
+~
+~
+0 0 10219
+S
+#10221
+Before the North Gate~
+~
+~
+The north gate of Hammerheim is firmly barred against any intrusion.  The
+lack of guards for the gate is noticeable and puzzling, however.  The city
+walls appear to be impenetrable, and the gate has a very large keyhole in
+it.  To the north, the immense mountains of the giants can be seen.  
+~
+0 401408 4
+Rd     0
+D0
+~
+~
+0 0 10222
+S
+#10222
+The Road to Hammerheim~
+~
+~
+The road to Hammerheim is very rough but passable.  Not many people enter
+from the north, because not many people live to tell about the giants which
+dwell in the mountains to the north.  To the south, the gates of Hammerheim
+loom up.  
+~
+0 401408 4
+Rd     0
+D0
+~
+~
+0 0 10223
+D2
+~
+~
+0 0 10221
+S
+#10223
+The Road to Hammerheim~
+~
+~
+The cold chill of the wind is incredible here.  The tendrils of cold
+creep through every layer of clothing, picking at the flesh like many tiny
+barbs of a bramble bush.  Even the thickest fur cloak does nothing against
+this incredible wind.  
+~
+0 401412 4
+Rd     0
+D0
+~
+~
+0 0 10224
+D2
+~
+~
+0 0 10222
+S
+#10224
+The Road to Hammerheim~
+~
+~
+You are in a large snow covered clearing! A trail to the south leads to the
+famous city of Hammerheim. In the middle of all the show and ice, you see
+the large Ice Portal through which you have arrived here. 
+Just now, you notice that you are not alone here. A Barbarian is heading
+from the south right towards the portal...
+~
+0 270336 1
+Rd     0
+D0
+~
+~
+0 0 18567
+D2
+~
+~
+0 0 10223
+S
+#10225
+The Village Hall~
+~
+~
+You have entered a plain, sturdy building that serves as the Village Hall 
+of Hammerheim. The Headman, who has authority comparable to a mayor, 
+is apparently studying the latest reports from the city guards. When he 
+becomes aware of your presence, he just gives you a hard look and continues
+his work.
+~
+0 4595720 0
+Rd     0
+D3
+~
+doors~
+119 0 10217
+D5
+~
+~
+3 0 10270
+S
+#10226
+Shaman Street~
+~
+~
+Shaman street seems strangely deserted.  You still see the occasional
+barbarian, but there are not nearly as many of them as in the other parts of
+the city.  Maybe there is a reason for this...  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10209
+D3
+~
+~
+0 0 10227
+S
+#10227
+Shaman Street~
+~
+~
+The town seems strangely empty the further you walk down Shaman Street. 
+The few barbarians you do see seem to be walking awfully quickly, and none
+of them meet your gaze.  To the west, you see a strange building and a
+portal of some sort.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10296
+D1
+~
+~
+0 0 10226
+D3
+~
+~
+0 0 10228
+S
+#10228
+Before a Strange Mansion~
+~
+~
+A strange mansion stands to the west.  Twisted and gnarled strees stand
+sentinel around it, and weird, flickering lights come from inside.  The door
+is locked, and there doesn't seem to be a key anywhere around.  Perhaps
+there is another way in.  There is also a very large portal here, in which
+you can see the Hierophant of Methidoral.  
+~
+0 131076 1
+Rd     0
+D1
+~
+~
+0 0 10227
+D3
+~
+door~
+119 0 10229
+S
+#10229
+The Shaman's Hideout~
+~
+~
+It was an incredibly huge mistake to have entered this room.  The shaman,
+whom you have disturbed in a secret ritual is not very happy to see you.  A
+quick survey of the room reveals all matter of arcane items.  Candles are
+arranged in the shape of a pentagram, and runes have been drawn from fresh
+blood.  On the floor is a trapdoor, and the only other exit is a locked door
+to the east.  
+~
+0 401417 0
+Rd     0
+D1
+~
+door~
+119 0 10228
+D5
+~
+trapdoor~
+3 0 10275
+S
+#10230
+Holy Way~
+~
+~
+The people you meet on Holy Way have a wild look in their eyes.  They
+mutter prayers under their breath and scurry along their way.  Only the
+upper echelon goes to the immense Cathedral to pray.  The rest pray at the
+Shrine of Hammerheim.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10231
+D3
+~
+~
+0 0 10206
+S
+#10231
+Holy Way~
+~
+~
+In the distance, you see the Cathedral of Hammerheim.  It is a most
+impressive building, and by the looks of it, is the most expensive building
+in all of Hammerheim.  Religion must play an important role in these
+people's lives.  Screams of agony can be heard coming from afar...  Possibly
+from the Cathedral.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10232
+D2
+~
+~
+0 0 10297
+D3
+~
+~
+0 0 10230
+S
+#10232
+Before the Cathedral~
+~
+~
+The Cathedral is a very impressive building.  Ornately carved gargoyles
+perch on the edges of the building which soars high into the sky.  A
+fountain of blood fills the courtyard, a tribute to Groog, the god of death.
+The blood of fresh sacrifices is added to it on a daily basis.  
+~
+0 393216 1
+Rd     0
+D1
+~
+Templedoors~
+119 0 10233
+D3
+~
+~
+0 0 10231
+S
+#10233
+The Cathedral of Hammerheim~
+~
+~
+The Cathedral of Hammerheim is a very immense and impressive building. 
+Vaulted ceilings rise high above you, proof that the church is an important
+infuence in the daily lives of the citizens, as well as being influential
+politically.  
+~
+0 4595721 0
+Rd     0
+D3
+~
+Templedoors~
+119 0 10232
+D5
+~
+trapdoor~
+3 0 10265
+S
+#10234
+Fire Alley~
+~
+~
+The wind whips down Fire Alley...  A wind so chilling it blows through
+any garment and chills you to the bone.  In the distance, a flickering and
+comforting glow from a large bonfire can be seen.  Crowds of people huddle
+around the bonfire, warming their numb fingers.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10207
+D3
+~
+~
+0 0 10235
+S
+#10235
+Fire Alley~
+~
+~
+The glow from the distant fire is bright here, but no warmth can be felt.
+The weather is almost always cruel here in Hammerheim, and it is apparent in
+the attitude of its residents.  No children can be seen playing in the
+street, and the adults are only out so long as they need be.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10234
+D3
+~
+~
+0 0 10236
+S
+#10236
+Bonfire Plaza~
+~
+~
+The aptly named Bonfire Plaza provides some respite from the cold.  A
+glowing bonfire cheers your mood and warms your hands as you look around. 
+To the south is the smithy, to the west are the stables, and to the north is
+a warehouse.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10237
+D1
+~
+~
+0 0 10235
+D2
+~
+~
+0 0 10238
+D3
+~
+Stables~
+3 0 10239
+S
+#10237
+In Front of a Warehouse~
+~
+~
+By the looks of the warehouse, it must be abandoned.  It is sealed
+tightly, and the windows are boarded up.  The wind seems especially chill
+here, and the noises coming from within the warehouse are very spooky.  The
+glow from the bonfire behind you seems much more welcoming than the
+warehouse.  
+~
+0 393216 1
+Rd     0
+D0
+~
+door~
+3 0 10240
+D2
+~
+~
+0 0 10236
+S
+#10238
+Hammerheim Smithy~
+~
+~
+The smithy is a very loud and chaotic place.  A large, muscle-bound woman
+takes the orders and gives them to Kormaal.  A bench along the wall provides
+a place for the more impatient customers to sit and wait for their orders to
+be finished.  The heat from the fire is a welcome change from the bitter
+outdoors.  
+~
+0 69608456 0
+Rd     0
+D0
+~
+~
+0 0 10236
+S
+#10239
+Empty Stables~
+~
+~
+The stables are completely empty, unless you want to count the rats that
+have made nests in the smelly old hay.  Pieces of tack hang from the boards
+of the ceiling, and the musty smell of old hay assails your nostrils.  
+~
+0 393225 0
+Rd     0
+D1
+~
+Stables~
+3 0 10236
+S
+#10240
+Inside the Warehouse~
+~
+~
+The warehouse is empty and appears to be long abandoned.  A few pieces of
+old junk lie strewn about the floor, and the occasional rat scrabbles across
+the toes of your boots.  The dilapidated building looks like it could
+collapse at any moment, which is not a very comforting thought to those that
+might otherwise find shelter here.  
+~
+0 393225 0
+Rd     0
+D2
+~
+door~
+3 0 10237
+S
+#10241
+Groog's Way~
+~
+~
+Groog's way has all of the excitement of a typical market street.
+Throngs of people are checking out the wares of the many merchants.  To
+the north you can hear the racous shouting of a bar, and to the south
+animal noises can be heard.
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10284
+D1
+~
+~
+0 0 10292
+D2
+~
+~
+0 0 10285
+D3
+~
+~
+0 0 10208
+S
+#10242
+Groog's Way~
+~
+~
+The clatter of metal can be heard to the north and to the south.  The
+Hammerheim weapon shop is to the north, and the armor shop is to the south. 
+These shops are by far the most popular in the town, and one glance at the
+citizens can tell you why.  Every man, woman, and child is at least lightly
+armored, and everyone carries some sort of weapon.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10291
+D1
+~
+~
+0 0 10243
+D2
+~
+~
+0 0 10287
+D3
+~
+~
+0 0 10292
+S
+#10243
+Before the East Tower~
+~
+~
+Groog's Way ends here at the East Tower of Hammerheim.  Although not very
+threatened from the outside, the practical people of Hammerheim still
+provide for their defenses.  The Axe-men that wander by give you a stern
+look of warning.  It is obviously not a good idea to climb into the tower.  
+~
+0 393220 1
+Rd     0
+D1
+~
+door~
+3 0 10244
+D3
+~
+~
+0 0 10242
+S
+#10244
+Inside the East Tower~
+~
+~
+The east tower is made entirely of granite which is 5 feet thick.  No
+furnishings whatsoever can be found inside the tower, but a sturdy staircase
+winds up to the top of the tower.  It is probably not a good idea to be
+inside the guard tower if you are not a citizen of Hammerheim.  
+~
+0 393225 0
+Rd     0
+D3
+~
+door~
+3 0 10243
+D4
+~
+~
+0 0 10245
+S
+#10245
+Large Staircase~
+~
+~
+The large staircase looks like it could support an army of barbarians. 
+Given the function of the tower, this fact is not very surprising.  A
+strange animal-like sound can be heard above you.  The cold granite of the
+tower looks like it defend even a barrage of solid stone.  
+~
+0 393225 0
+Rd     0
+D4
+~
+~
+0 0 10246
+D5
+~
+~
+0 0 10244
+S
+#10246
+East Tower Overlook~
+~
+~
+The top of the tower opens up into an overlook which provides a splendid
+view of the lands surrounding Hammerheim.  Not much opportunity is provided
+for sightseeing, however, as there is also a very large and very angry
+chimaera on the top of the tower.  
+~
+0 4595712 1
+Rd     0
+D5
+~
+~
+0 0 10245
+S
+#10247
+Groog's Way~
+~
+~
+The people coming out from the shop to the north have sparkles in their
+eyes, and sparkling jewelry on their bodies.  It must be the famous jewelry
+shop of Hammerheim.  To the south, the clattering of silverware on plates
+and the din of meal-time conversation can be heard.  The restaurant is
+rumored to be among the best in the realm.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10280
+D1
+~
+~
+0 0 10208
+D2
+~
+~
+0 0 10281
+D3
+~
+~
+0 0 10290
+S
+#10248
+Groog's Way~
+~
+~
+A potion shop can be seen to the north, and a supply shop is to the
+south.  The wise adventurer would make a stop at both of these shops before
+heading out into the vicious world beyond the Hammerheim gates.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10282
+D1
+~
+~
+0 0 10290
+D2
+~
+~
+0 0 10283
+D3
+~
+~
+0 0 10249
+S
+#10249
+Before the West Tower~
+~
+~
+Groog's Way ends at one of the lookout towers of Hammerheim.  Jutting out
+from the stone wall, the tower provides a formidable defense for the city. 
+It probably would not be a good idea to trespass here.  The barbarians are
+very careful about their defenses and might not take kindly to an outsider
+in their watch tower.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10248
+D3
+~
+door~
+3 0 10250
+S
+#10250
+Inside the West Tower~
+~
+~
+The inside of the western tower is very spartan in appearance.  Only a
+large staircase winding up to the top of the tower can be seen.  The thick
+granite walls provide a strong defense for the citizens of Hammerheim.  In
+case of dire emergency, the entire population can run to the two lookout
+towers to find safety and to help defend the city.  
+~
+0 393229 0
+Rd     0
+D1
+~
+door~
+3 0 10249
+D4
+~
+~
+0 0 10251
+S
+#10251
+Large Staircase~
+~
+~
+The large granite staircase looks as if it could support an army of
+barbarians.  In times of war, this is very necessary.  All of the capable
+men are employed in the city defenses during times of trouble, and the watch
+towers provide the perfect position to defend the city.  
+~
+0 393225 0
+Rd     0
+D4
+~
+~
+0 0 10252
+D5
+~
+~
+0 0 10250
+S
+#10252
+West Tower Overlook~
+~
+~
+The lookout tower has an incredible view of the lands surrounding
+Hammerheim.  It also provides a very strategic position on which to defend
+the city.  The chimaera which guards the tower in times of peace does not
+look very happy to have visitors.  
+~
+0 4595712 1
+Rd     0
+D5
+~
+~
+0 0 10251
+S
+#10253
+A Dark Shaft~
+~
+~
+You are in a very dark and very smelly shaft.  No top or bottom can be
+seen to the shaft; merely darkness.  Groping around, you feel a cold metal
+pipe which is covered in some sort of smelly goo.  You pull back your hand,
+disgusted at the sensation.  
+~
+0 401421 9
+Rd     0
+D4
+~
+grate~
+119 10220 10208
+D5
+~
+~
+0 0 10254
+S
+#10254
+A Dark Shaft~
+~
+~
+You are in a very smell and very disgusting shaft.  No sense of direction
+can be determined; only darkness and stench.  The slick surface of the metal
+shaft you are in is repulsive.  
+~
+0 401417 9
+Rd     0
+D4
+~
+~
+0 0 10253
+D5
+~
+~
+0 0 10255
+S
+#10255
+The Sewer System~
+~
+~
+You stand in the sewer system of Hammerheim.  The trickling and dripping
+of water can be heard, and the cold, smelly dampness of the system seeps
+through all of your clothing.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10256
+D1
+~
+~
+0 0 10266
+D2
+~
+~
+0 0 10261
+D3
+~
+~
+0 0 10271
+D4
+~
+~
+0 0 10254
+D5
+~
+~
+0 0 10255
+S
+#10256
+A Large Pipe~
+~
+~
+You are in a very large sewer pipe underneath the town of Hammerheim. 
+The stench here is disgusting, and every step splashes through sludge.  A
+dripping sound can be heard coming from somewhere, and the cold metal of the
+pipe feels disgusting under your outstretched hand.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10257
+D2
+~
+~
+0 0 10255
+D3
+~
+~
+0 0 10276
+S
+#10257
+A Large Pipe~
+~
+~
+You are in a very large sewer pipe underneath the town of Hammerheim. 
+The stench here is disgusting, and every step splashes through sludge.  A
+dripping sound can be heard coming from somewhere, and the cold metal of the
+pipe feels disgusting under your outstretched hand.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10258
+D2
+~
+~
+0 0 10256
+S
+#10258
+The Sewer System~
+~
+~
+You stand in the sewer system of Hammerheim.  The trickling and dripping
+of water can be heard, and the cold, smelly dampness of the system seeps
+through all of your clothing.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10257
+D1
+~
+~
+0 0 10257
+D2
+~
+~
+0 0 10257
+D3
+~
+~
+0 0 10257
+D4
+~
+~
+0 0 10259
+D5
+~
+~
+0 0 10258
+S
+#10259
+A Dark Shaft~
+~
+~
+You are in a very smell and very disgusting shaft.  No sense of direction
+can be determined; only darkness and stench.  The slick surface of the metal
+shaft you are in is repulsive.  
+~
+0 401417 9
+Rd     0
+D4
+~
+~
+0 0 10260
+D5
+~
+~
+0 0 10258
+S
+#10260
+A Dark Shaft~
+~
+~
+You are in a very dark and very smelly shaft.  No top or bottom can be
+seen to the shaft; merely darkness.  Groping around, you feel a cold metal
+pipe which is covered in some sort of smelly goo.  You pull back your hand,
+disgusted at the sensation.  
+~
+0 401421 9
+Rd     0
+D4
+~
+trapdoor~
+3 0 10212
+D5
+~
+~
+0 0 10259
+S
+#10261
+A Large Pipe~
+~
+~
+You are in a very large sewer pipe underneath the town of Hammerheim. 
+The stench here is disgusting, and every step splashes through sludge.  A
+dripping sound can be heard coming from somewhere, and the cold metal of the
+pipe feels disgusting under your outstretched hand.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10255
+D1
+~
+~
+0 0 10277
+D2
+~
+~
+0 0 10262
+S
+#10262
+A Large Pipe~
+~
+~
+You are in a very large sewer pipe underneath the town of Hammerheim. 
+The stench here is disgusting, and every step splashes through sludge.  A
+dripping sound can be heard coming from somewhere, and the cold metal of the
+pipe feels disgusting under your outstretched hand.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10261
+D2
+~
+~
+0 0 10263
+S
+#10263
+The Sewer System~
+~
+~
+You stand in the sewer system of Hammerheim.  The trickling and dripping
+of water can be heard, and the cold, smelly dampness of the system seeps
+through all of your clothing.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10262
+D1
+~
+~
+0 0 10262
+D2
+~
+~
+0 0 10262
+D3
+~
+~
+0 0 10262
+D4
+~
+~
+0 0 10264
+D5
+~
+~
+0 0 10263
+S
+#10264
+A Dark Shaft~
+~
+~
+You are in a very smell and very disgusting shaft.  No sense of direction
+can be determined; only darkness and stench.  The slick surface of the metal
+shaft you are in is repulsive.  
+~
+0 401417 9
+Rd     0
+D4
+~
+~
+0 0 10265
+D5
+~
+~
+0 0 10263
+S
+#10265
+A Dark Shaft~
+~
+~
+You are in a very dark and very smelly shaft.  No top or bottom can be
+seen to the shaft; merely darkness.  Groping around, you feel a cold metal
+pipe which is covered in some sort of smelly goo.  You pull back your hand,
+disgusted at the sensation.  
+~
+0 401421 0
+Rd     0
+D4
+~
+trapdoor~
+3 0 10233
+D5
+~
+~
+0 0 10264
+S
+#10266
+A Large Pipe~
+~
+~
+You are in a very large sewer pipe underneath the town of Hammerheim. 
+The stench here is disgusting, and every step splashes through sludge.  A
+dripping sound can be heard coming from somewhere, and the cold metal of the
+pipe feels disgusting under your outstretched hand.  
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 10267
+D3
+~
+~
+0 0 10255
+S
+#10267
+A Large Pipe~
+~
+~
+You are in a very large sewer pipe underneath the town of Hammerheim. 
+The stench here is disgusting, and every step splashes through sludge.  A
+dripping sound can be heard coming from somewhere, and the cold metal of the
+pipe feels disgusting under your outstretched hand.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10279
+D1
+~
+~
+0 0 10268
+D3
+~
+~
+0 0 10266
+S
+#10268
+The Sewer System~
+~
+~
+You stand in the sewer system of Hammerheim.  The trickling and dripping
+of water can be heard, and the cold, smelly dampness of the system seeps
+through all of your clothing.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10267
+D1
+~
+~
+0 0 10267
+D2
+~
+~
+0 0 10267
+D3
+~
+~
+0 0 10267
+D4
+~
+~
+0 0 10269
+D5
+~
+~
+0 0 10268
+S
+#10269
+A Dark Shaft~
+~
+~
+You are in a very smell and very disgusting shaft.  No sense of direction
+can be determined; only darkness and stench.  The slick surface of the metal
+shaft you are in is repulsive.  
+~
+0 401417 9
+Rd     0
+D4
+~
+~
+0 0 10270
+D5
+~
+~
+0 0 10268
+S
+#10270
+A Dark Shaft~
+~
+~
+You are in a very dark and very smelly shaft.  No top or bottom can be
+seen to the shaft; merely darkness.  Groping around, you feel a cold metal
+pipe which is covered in some sort of smelly goo.  You pull back your hand,
+disgusted at the sensation.  
+~
+0 401421 9
+Rd     0
+D4
+~
+trapdoor~
+3 0 10225
+D5
+~
+~
+0 0 10269
+S
+#10271
+A Large Pipe~
+~
+~
+You are in a very large sewer pipe underneath the town of Hammerheim. 
+The stench here is disgusting, and every step splashes through sludge.  A
+dripping sound can be heard coming from somewhere, and the cold metal of the
+pipe feels disgusting under your outstretched hand.  
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 10255
+D3
+~
+~
+0 0 10272
+S
+#10272
+A Large Pipe~
+~
+~
+You are in a very large sewer pipe underneath the town of Hammerheim. 
+The stench here is disgusting, and every step splashes through sludge.  A
+dripping sound can be heard coming from somewhere, and the cold metal of the
+pipe feels disgusting under your outstretched hand.  
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 10271
+D2
+~
+~
+0 0 10278
+D3
+~
+~
+0 0 10273
+S
+#10273
+The Sewer System~
+~
+~
+You stand in the sewer system of Hammerheim.  The trickling and dripping
+of water can be heard, and the cold, smelly dampness of the system seeps
+through all of your clothing.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10272
+D1
+~
+~
+0 0 10272
+D2
+~
+~
+0 0 10272
+D3
+~
+~
+0 0 10272
+D4
+~
+~
+0 0 10274
+D5
+~
+~
+0 0 10298
+S
+#10274
+A Dark Shaft~
+~
+~
+You are in a very smell and very disgusting shaft.  No sense of direction
+can be determined; only darkness and stench.  The slick surface of the metal
+shaft you are in is repulsive.  
+~
+0 401417 9
+Rd     0
+D4
+~
+~
+0 0 10275
+D5
+~
+~
+0 0 10273
+S
+#10275
+A Dark Shaft~
+~
+~
+You are in a very dark and very smelly shaft.  No top or bottom can be
+seen to the shaft; merely darkness.  Groping around, you feel a cold metal
+pipe which is covered in some sort of smelly goo.  You pull back your hand,
+disgusted at the sensation.  
+~
+0 401421 0
+Rd     0
+D4
+~
+trapdoor~
+3 0 10229
+D5
+~
+~
+0 0 10274
+S
+#10276
+A Narrow Pipe~
+~
+~
+You stand in a small pipe in the sewer system of Hammerheim.  The space
+is cramped here, and there is no way to escape touching some part of the
+disgusting pipe.  The stench is unbearable and makes you want to gag.  
+~
+0 401417 0
+Rd     0
+D3
+~
+~
+0 0 10256
+S
+#10277
+A Narrow Pipe~
+~
+~
+You stand in a small pipe in the sewer system of Hammerheim.  The space
+is cramped here, and there is no way to escape touching some part of the
+disgusting pipe.  The stench is unbearable and makes you want to gag.  
+~
+0 401417 0
+Rd     0
+D1
+~
+~
+0 0 10261
+S
+#10278
+A Narrow Pipe~
+~
+~
+You stand in a small pipe in the sewer system of Hammerheim.  The space
+is cramped here, and there is no way to escape touching some part of the
+disgusting pipe.  The stench is unbearable and makes you want to gag.  
+~
+0 401417 0
+Rd     0
+D2
+~
+~
+0 0 10272
+S
+#10279
+A Narrow Pipe~
+~
+~
+You stand in a small pipe in the sewer system of Hammerheim.  The space
+is cramped here, and there is no way to escape touching some part of the
+disgusting pipe.  The stench is unbearable and makes you want to gag.  
+~
+0 401417 0
+Rd     0
+D0
+~
+~
+0 0 10267
+S
+#10280
+Hammerheim Treasures~
+~
+~
+The Hammerheim jewelry shop is magnificent.  All sizes of gemstones in
+various settings can be seen.  Rings, necklaces, and pins glitter under the
+artificial light of the shop.  Like the rest of the Hammerheim shops, guards
+are nowhere to be seen.  
+~
+0 2499592 0
+Rd     0
+D2
+~
+~
+0 0 10247
+S
+#10281
+Hammerheim Restaurant~
+~
+~
+The Hammerheim restaurant is very crowded with barbarian men and women. 
+It seems to be a very popular place to eat, and the warm fire in the hearth
+adds to its charm.  Stout tables are laden with steaming food, and the
+establishment is kept very clean.  
+~
+0 2499592 0
+Rd     0
+D0
+~
+~
+0 0 10247
+S
+#10282
+Hammerheim Secrets~
+~
+~
+Lining the shelves of this store are all manner of bottles and a few
+parchments.  Dermaal the potion maker is a renowned herbalist, and her brews
+are guaranteed to put hair on the chest.  It would be a good idea to take a
+few of the healing potions with you on your travels...  
+~
+0 2499592 0
+Rd     0
+D2
+~
+~
+0 0 10248
+S
+#10283
+Hammerheim Supplies~
+~
+~
+The supply shop is well-stocked in goods needed by city residents and
+adventurers alike.  Stout torches and solid chests seem to be the most
+popular item, and they look like they are finely made.  Behind the counter
+is a barbarian shopkeeper.  
+~
+0 2499592 0
+Rd     0
+D0
+~
+~
+0 0 10248
+S
+#10284
+The Golden Hammer~
+~
+~
+The atmosphere in the bar is boisterous, and the people are much more
+congenial with a few beers in them than they are out on the street.  A warm
+fire in the hearth keeps out the chill of the outdoors.  
+~
+0 2499592 0
+Rd     0
+D2
+~
+~
+0 0 10241
+S
+#10285
+Hammerheim Petshop~
+~
+~
+The smell of animals is very strong in this shop.  All around are cages
+with various critters in them, waiting to be sold.  The reactions of the
+animals is varied; some of them are looking as cute as possible, and others
+are baring their fangs and raging against the cage trying to get out.  
+~
+0 2503688 0
+Rd     0
+D0
+~
+~
+0 0 10241
+S
+#10286
+Pet Storage~
+~
+~
+~
+0 2491404 0
+Rd     0
+S
+#10287
+Hammerheim Armoury~
+~
+~
+On racks behind the storekeeper are all matter of armor.  Helmets,
+bracers, leggings, and boots are just a few of the items you see on display.
+The quality appears to be high at first glance, and the prices are very
+reasonable.  
+~
+0 2499592 0
+Rd     0
+D0
+~
+~
+0 0 10242
+S
+#10288
+Executioner's Square~
+~
+~
+The execution square is an extremely disturbing place.  A chopping block
+which is stained deeply with blood awaits its next head, and the Executioner
+of Hammerheim waits as well.  Not a sound can be heard except the wind,
+which rustles debris through the square.  Below the square is a holding cell
+for those people unlucky enough to be awating execution.  Above the square
+is an alcove which leads to the Quest Portal.  
+~
+0 6725632 1
+Rd     0
+D0
+~
+~
+0 0 10210
+D2
+~
+~
+0 0 10209
+D4
+~
+Alcove~
+3 0 10293
+D5
+~
+~
+0 0 10294
+S
+#10289
+Uraag's Road~
+~
+~
+The stream of people is pretty steady here on Uraag's Road.  Everyone is
+preoccupied with their own problems and pay little attention to everyone
+else.  Their grim faces and harsh demeanors contribute to the lack of bantor
+as well.  The bone-numbing chill is lessened a bit by the many bodies and
+the close proximity of buildings.  
+~
+0 393216 1
+Rd     0
+D0
+~
+~
+0 0 10209
+D2
+~
+~
+0 0 10208
+S
+#10290
+Groog's Way~
+~
+~
+People bustle by you on their way to do business at the Hammerheim shops.
+The street is very wide and made to accomodate the heavy traffic that can be
+found on market days.  The Axe-men are very busy watching for anyone that
+might be stealing from the stores.  If they are lucky, they will only lose
+their hands.  If they are not lucky, they will be meeting the executioner.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10247
+D3
+~
+~
+0 0 10248
+S
+#10291
+Hammerheim Weapons~
+~
+~
+The deadly-looking weapons in this shop are some of the best in the
+realm.  Guaranteed to be sharp and to last for years, Gutt's equipment
+glimmers in the lamplight of the shop.  If Hammerheim were ever to be
+invaded, the members of the city would be well-armed.  
+~
+0 2499592 0
+Rd     0
+D2
+~
+~
+0 0 10242
+S
+#10292
+Groog's Way~
+~
+~
+The people on Groog's Way are the happiest you have seen in Hammerheim. 
+The new wares they carry around probably have something to do with this
+uncharacteristic cheer.  New weapons and armor can be seen wrapped in loose
+animal skins, and all manner of bottles from the potion shop can be seen
+sticking out from other packages.  
+~
+0 393216 1
+Rd     0
+D1
+~
+~
+0 0 10242
+D3
+~
+~
+0 0 10241
+S
+#10293
+Quest Portal~
+~
+~
+Enter Portal to get to the Quest Halls of Methidoral.
+Cast Word of Recall to return to the Executioner of Hammerheim.
+~
+0 393228 0
+Rd     0
+S
+#10294
+Executioner's Cage~
+~
+~
+This smelly and dark cage is used by prisoners during their final days as
+they await their fate at the hands of the Executioner of Hammerheim.  The
+reek of fear and stale urine pervades the little area, and the littering of
+straw on the floor is old, moldy, and full of feces.  
+~
+0 393228 0
+Rd     0
+D4
+~
+~
+0 0 10288
+S
+#10295
+A Glistening Portal~
+~
+~
+As you step below the bridge, everything seems to waver and shift around
+you.  You feel the aura of the strange, ice covered portal, which glistens
+with tendrils of frost.  The shadows here below the bridge keep this strange
+pocket of magic steeped in gloom, and the portal itself calls you to enter
+and begin a strange and wonderous journey.  
+~
+0 8196 4
+Rd     0
+D4
+~
+~
+0 0 0
+S
+#10296
+Hammerheim Bank~
+~
+~
+You have entered a large stone building. The entrance is guarded by two 
+axe-men. Behind a rather crude marble counter stands Brugaar, the Banker.
+Hammerheim may be a barbarian city, but it is not backwards.
+~
+0 2499596 0
+Rd     0
+D2
+~
+~
+0 0 10227
+S
+#10297
+Hammerheim Library~
+~
+~
+This is the Hammerheim Library. Zynmaal will gladly rent you any book 
+available for just a small fee. Upon your leaving the realm of Storm, the
+book will automatically be returned to this Library, so no late charges may
+apply.
+~
+0 8791052 0
+Rd     0
+D0
+~
+~
+0 0 10231
+S
+#10298
+The Portal Room~
+~
+~
+You have entered a room deep below Hammerheim.  All is dark, except for
+one portal in the center of the floor.  This appears to be your only way
+out.  
+~
+0 310812685 0
+Rd     10
+S
+#0
+
+
+
+#SPECIALS
+M 10201 spec_healer
+M 10202 spec_executioner
+M 10204 spec_cast_judge
+M 10205 spec_cast_adept
+M 10206 spec_executioner
+M 10207 spec_nosferatu_mob
+M 10208 spec_cast_cleric
+M 10209 spec_fido
+M 10210 spec_cast_adept
+M 10211 spec_thief
+M 10212 spec_breath_fire
+M 10213 spec_poison
+M 10214 spec_poison
+M 10215 spec_poison
+M 10216 spec_breath_fire
+M 10217 spec_repairman
+M 10226 spec_fido
+M 10229 spec_cast_psionicist
+M 10231 spec_guard
+M 10232 spec_cast_mage
+M 10234 spec_guard
+M 10236 spec_thief
+M 10237 spec_breath_any
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 10234 1 10201
+E 0 10233 0 16
+E 0 10234 0 21
+E 0 10248 0 20
+G 0 10244 0
+G 0 10246 0
+E 0 10242 0 0
+M 0 10235 1 10201
+G 0 10221 0
+M 0 10231 6 10205
+E 0 10235 0 5
+E 0 10236 0 11
+E 0 10237 0 20
+E 0 10237 0 21
+M 0 10211 2 10206
+E 0 10215 0 2
+O 0 10227 0 10208
+M 0 10209 3 10208
+E 0 10213 0 3
+M 0 10210 3 10209
+E 0 10214 0 3
+M 0 10201 1 10211
+O 0 10201 0 10211
+O 0 10202 0 10211
+M 0 10204 1 10212
+E 0 10203 0 20
+E 0 10204 0 15
+E 0 10205 0 6
+G 0 10220 0
+E 0 10236 0 11
+M 0 10202 1 10213
+M 0 10203 1 10214
+O 0 10226 0 10216
+M 0 10205 1 10225
+E 0 10206 0 20
+E 0 10207 0 5
+G 0 10220 0
+E 0 10256 0 22
+E 0 10236 0 11
+O 0 10224 0 10228
+M 0 10207 1 10229
+E 0 10210 0 2
+E 0 10211 0 1
+E 0 10216 0 18
+E 0 10216 0 19
+G 0 10220 0
+O 0 10225 0 10232
+M 0 10208 1 10233
+E 0 10208 0 3
+E 0 10209 0 12
+E 0 10255 0 16
+G 0 10220 0
+O 0 10218 0 10236
+M 0 10217 1 10238
+M 0 10255 1 10239
+G 0 10221 0
+O 0 10219 0 10240
+P 0 10220 0 10219
+M 0 10256 1 10240
+G 0 10220 0
+M 0 10232 1 10246
+E 0 10251 0 22
+M 0 10233 1 10252
+E 0 10252 0 22
+M 0 10213 3 10276
+M 0 10214 3 10277
+M 0 10215 3 10278
+M 0 10216 1 10279
+E 0 10217 0 17
+M 0 10218 1 10280
+G 0 10243 0
+M 0 10219 1 10281
+O 0 10223 0 10281
+G 0 10244 0
+G 0 10245 0
+M 0 10220 1 10282
+G 0 10240 0
+M 0 10221 1 10283
+G 0 10242 0
+G 0 10241 0
+M 0 10222 1 10284
+G 0 10246 0
+G 0 10247 0
+M 0 10223 1 10285
+M 0 10226 1 10286
+M 0 10227 1 10286
+M 0 10228 1 10286
+M 0 10225 1 10287
+G 0 10233 0
+G 0 10250 0
+G 0 10236 0
+M 0 10206 1 10288
+E 0 10212 0 20
+M 0 10230 1 10290
+E 0 10233 0 16
+E 0 10234 0 20
+M 0 10224 1 10291
+G 0 10234 0
+G 0 10248 0
+G 0 10249 0
+E 0 10230 0 6
+E 0 10231 0 17
+G 0 10232 0
+G 0 10232 0
+E 0 10261 0 25
+M 0 10229 3 10292
+G 0 10232 0
+G 0 10232 0
+E 0 10261 0 25
+E 0 10231 0 17
+E 0 10230 0 6
+O 0 10253 0 10293
+M 0 10236 1 10294
+O 0 10259 0 10296
+M 0 10237 1 10296
+M 0 10238 1 10297
+O 0 10262 0 10298
+S
+
+
+
+#SHOPS
+10218 8 0 0 0 0 100 80 0 24
+10219 19 0 0 0 0 100 100 0 24
+10220 26 10 0 2 3 100 100 0 24
+10221 1 15 13 0 0 100 75 0 24
+10222 19 0 0 0 0 100 100 0 24
+10224 13 5 0 0 0 100 100 0 23
+10225 5 13 9 0 0 100 75 0 24
+10238 18 0 0 0 0 100 100 0 2
+0
+
+
+
+#$

@@ -1,0 +1,4479 @@
+#AREADATA
+Name        {70-104} Clockwork Citadel~
+Builders    Zhyril~
+VNUMs       8100 8199
+Security    1
+Recall      1
+Flags       288
+Version     107
+Creator     Zhyril~
+Llevel      0
+Ulevel      0
+Sounds      &pBells in the distance chime the hour.~
+Music       chronoth.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#8100
+energy field 1~
+a field of temporal energy~
+A field of temporal energy envelops the Citadel.
+~
+A strange bluish glow.
+~
+3 25231360 69468176 0 1 0 S
+10000 1 20000 20000 9999 9999d0+0 0d0+0
+100000 0 0
+0 0 1
+0 0 0
+>rand_prog 10~
+mpecho The Citadel seems to blur and shift.
+mppurge citadel
+cast 'teleport'
+mpoload 8100
+~
+|
+#8101
+energy field 2~
+a field of temporal energy~
+A field of temporal energy envelops the Citadel.
+~
+It swirls around mystically.
+~
+3 65536 2359312 0 1 0 S
+20000 1 40000 40000 9999 9999d0+0 0d0+0
+200000 0 0
+0 0 0
+0 0 0
+>rand_prog 5~
+mpecho Suddenly, the Citadel blurs out of existence.
+mppurge citadel
+mpgoto 17073
+mpecho Suddenly, a bluish light permeates the air.
+mpecho An enormous brass Citadel blurs into existence!
+mpoload 8100
+mpmload 8102
+mppurge self
+~
+|
+#8102
+energy field 3~
+a field of temporal energy~
+A field of temporal energy envelops the Citadel.
+~
+A field of blue energy.
+~
+3 65536 2359312 0 1 0 S
+20000 1 40000 40000 9999 9999d0+0 0d0+0
+200000 0 0
+0 0 0
+0 0 0
+>rand_prog 5~
+mpecho Suddenly, the Citadel blurs out of existence.
+mppurge citadel
+mpgoto 26423
+mpecho Suddenly, a bluish light permeates the air.
+mpecho An enormous brass Citadel blurs into existence!
+mpoload 8100
+mpmload 8103
+mppurge self
+~
+|
+#8103
+energy field 4~
+a field of temporal energy~
+A field of temporal energy envelops the Citadel.
+~
+~
+3 0 262160 0 3 0 S
+20000 1 40000 40000 9999 9999d0+0 0d0+0
+200000 0 0
+0 0 0
+2 0 0
+>rand_prog 5~
+mpecho Suddenly, the Citadel blurs out of existence.
+mppurge citadel
+mpgoto 18009
+mpecho Suddenly, a bluish light permeates the air.
+mpecho An enormous brass Citadel blurs into existence!
+mpoload 8100
+mpmload 8100
+mppurge self
+~
+|
+#8104
+pet seller~
+pet seller~
+A shopkeeper stands here.
+~
+~
+259 262144 0 0 0 0 S
+100 1 200 200 0 40000d0+0 0d0+0
+20 0 0
+0 0 1
+0 0 0
+>speech_prog a b c d e f g h i j k l m n o p q r s t u v w x y z ~
+mpkill $n
+~
+|
+#8105
+sir henry grambling~
+Sir Henry Grambling~
+The legendary explorer, Sir Henry Grambling sits in an armchair here.
+~
+A tall man of middle years, Sir Henry Grambling is an explorer of great
+repute.  
+~
+3 33554496 16 0 2 500 S
+140 1 280 280 60000 60000d0+0 0d0+0
+1400 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+emote looks up.
+say Ah, greetings my friends.
+~
+>speech_prog hello~
+smile
+say Good day to you, traveller...
+~
+>fight_prog 20~
+say you shall not find me such an easy target, ruffian!
+punch
+~
+>fight_prog 5~
+say Ah, now how did that spell go?
+say Ah, yes...
+cast 'winters chill' $n
+~
+>fight_prog 10~
+say Have at you then!
+slit
+~
+>fight_prog 10~
+say now how does that spell go...
+say ah yes..
+cast 'ultrablast' $n
+~
+|
+#8109
+no name~
+the BIGGEST demon you've EVER seen~
+A HUMONGOUS demon is here!
+~
+~
+3 0 0 0 0 0 S
+1000 1 2000 2000 0 0d0+0 0d0+0
+10000 0 0
+0 0 0
+0 0 0
+#8110
+giant~
+a giant ping-pong player~
+A giant wielding an enormous ping-pong racquet moves into position to swing at you!
+~
+~
+3 8 16 0 0 0 S
+200 1 400 400 10000 10000d0+0 0d0+0
+2000 0 0
+0 0 0
+0 0 0
+>rand_prog 90~
+emote swings his racquet!
+push $r east
+~
+|
+#8111
+giant~
+a giant ping-pong player~
+A giant wielding an enormous ping-pong racquet moves into position to swing at you!
+~
+~
+3 8 16 0 0 0 S
+200 1 400 400 10000 10000d0+0 0d0+0
+2000 0 0
+0 0 0
+0 0 0
+>rand_prog 90~
+emote swings his mighty racquet!
+push $r west
+~
+|
+#8113
+giant snowman~
+a giant snowman~
+A giant snowman is here!
+~
+~
+259 134479872 262160 0 0 0 S
+113 1 226 226 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#8119
+buffy healer~
+Buffy~
+Buffy the pixie healer urges her charges on to even greater acts of perversion.
+~
+Buffy is one of the most desirable women you've ever met.  It just seems
+the farther you come into the circle the more beautiful and perverse the
+people get.  She stands here urging all the folk around her to acts of
+perversion that would turn the stomachs of some of the hardest adventurers
+you've known.  Upon seeing you she lets out a small squeal of delight and
+literally takes you into her hands and begins helping you join the general
+party.  
+~
+3 16552 0 0 0 1000 S
+100 1 200 200 30000 30000d0+0 0d0+0
+1000 0 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if ispc($n) == 1
+  emote gives a little squeal of delight and points to you and a small horde of pixies descend on you!
+  say A new plaything!!
+nasty $n
+endif
+~
+>rand_prog 10~
+emote pops her gum and twirls her hair.
+~
+|
+#8120
+zhyrga bartender~
+Zhyrga the bartender~
+A large Satyr stands behind the bar here.
+~
+Zhyrga the bartender is probably the largest satyr you've even known to
+exist, he stands behind the bar with a slightly bored look on his face. 
+It's been said that if it's sexual or pleasurable in any way that Zhyrga has
+already done it or tried it.  He's taken up this job here in Stormpixie HQ
+cause he believe it probably the best place in all of creation to find
+something new and different to try.  
+~
+3 168 0 0 0 0 S
+100 1 200 200 30000 30000d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+#8121
+Kyrstallin shopkeeper~
+Kyrstallin the imp~
+Kyrstallin tries to peer through the light and mist and make you out.
+~
+From what you can see Kyrstallin appears to be a slightly smallish and
+very attractive imp who runs this store.  As you keep peering through the
+light show you begin to realize that Kyrstallin is wearing nothing more than
+the mist that veils her body.  Her attractiveness immediatley takes a sharp
+hike in your opinion.  She notices your reaction and says, 'If I can do
+ANYTHING at all for you traveller just ask.  '.  She winks at you...  
+~
+3 33554600 0 0 0 0 S
+100 1 200 200 30000 30000d0+0 0d0+0
+1000 0 0
+0 0 2
+4 0 0
+>greet_prog 100~
+if ispc($n) == 1
+   smile
+   say Welcome $n, please come in.
+   say If there is ANYTHING I can do for you please just ask.
+   wink $n
+break
+endif
+~
+>rand_prog 10~
+mpecho Kyrstallin continues moving about the shop dusting and cleaning all the
+mpecho numerous treasures she's collected.
+mpecho You can't help but watch the way her body moves and long for it.
+~
+|
+#8122
+denora shopkeeper~
+Denora~
+Denora sizes you up from behind her counter.
+~
+Denora is dressed in multiple layers of silk and satin, but looks
+beautiful none the less.  She hums an infectous and happy song as she goes
+about stocking her shelves and taking inventory on what she has.  It's been
+said that Denora can get whatever it is a weary traveller may wish, no
+matter how hard to find or how 'interesting' an item may be.  
+~
+3 17064 0 0 0 0 S
+100 1 200 200 30000 30000d0+0 0d0+10000
+1000 0 0
+0 0 2
+0 0 0
+>greet_prog 0~
+~
+>rand_prog 5~
+mpecho Denora hums her little ditty while checking her shelves.
+~
+|
+#8123
+linquist banker~
+Linquist~
+Linquist stands ready to handle all your monetary needs.
+~
+Linquist is an ordinary looking sprite who, incredibly, isn't trying to
+have sex with you in one manner or another.  He stands here near the
+donation pile keeping track of all the eq and such that goes in and out,
+making sure everyone has everything they need.  He also has a great love of
+money making him the perfect pixie to handle the financial affairs of the
+clan.  As you continue to look at him, you begin to understand why he's not
+offering to have sex with....  Judging from the hand down his pants and the
+action going on it seems Linquist is more content to have fun with himself
+that another.  
+~
+3 136 0 0 0 1000 S
+125 1 250 250 30000 30000d0+0 0d0+0
+1250 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+if ispc($n) == 1
+  say Ahhh, $n, you bring more gold for me to handle and more donations to catalogue.
+  mpech licks his lips in anticpation.
+endif
+~
+>rand_prog 10~
+mpecho Linquist puts his hand back down his pants and proceeds to enjoy
+mpecho himself heartily.
+~
+|
+#8124
+morollen smithy~
+Morollen the smithy~
+Morollen stands here looking you over.
+~
+Damn if Morollen isn't the biggest damned fairy you've ever seen!  He
+stands about as high as a normal man and is even bulkier.  He continues with
+his work, plunging a steaming sword into the vat of blood while still eyeing
+you up.  You wonder maybe if Morollen isn't a fairy in more than just race? 
+~
+3 100679848 0 0 0 0 S
+125 1 250 250 30000 30000d0+0 0d0+1000
+1250 0 0
+0 0 1
+0 0 0
+>act_prog p screams at you!  That's not nice!  *sniff*~
+if name ($n) == Gwen
+ scream gwen
+  say here's the equipment ye be needin
+      mpoload 8126
+    mpoload 8125
+    mpoload 8127
+  give stormpixies gwen
+give stormpixies gwen
+give stormpixies gwen
+   drool gwen
+else
+say get outta here...beat it!
+glare $n
+endif
+ 
+~
+>speech_prog p wings please~
+if ispc($n)
+  if isclan($n) == 5
+    mpoload 8127
+    if sex($n) == 1
+      say Yes, M'lord
+    endif
+    if sex($n) == 2
+      say Yes, M'lady
+    endif
+    bow $n
+    give wings $n
+  endif
+endif
+~
+>speech_prog p earring please~
+if ispc($n)
+  if isclan($n) == 5
+    mpoload 8126
+    if sex($n) == 1
+      say Yes, M'lord
+    endif
+    if sex($n) == 2
+      say Yes, M'lady
+    endif
+    bow $n
+    give hoop $n
+  endif
+endif
+~
+>speech_prog p belt please~
+if ispc($n)
+  if isclan($n) == 5
+    mpoload 8125
+    if sex($n) == 1
+      say Yes, M'lord
+    endif
+    if sex($n) == 2
+      say Yes, M'lady
+    endif
+    bow $n
+    give belt $n
+  endif
+endif
+~
+|
+#8125
+spectral guardian~
+The Spectral Guardian~
+The Spectral Guardian patrols the castle for invaders
+~
+Your body falls numb to the immense power of the spectral guardians. 
+They are nothing more that swirling masses of energy, in the form of a fully
+armored knight, yet you know their true purpose.  They are the personal
+minions of Lord VerKapheron DarkHolme, and to attack them, is only bringing
+upon yourself a swift death.  
+~
+65 469778600 0 0 0 0 S
+105 1 210 210 30000 30000d0+0 0d0+0
+1050 0 0
+0 0 0
+8 0 0
+>greet_prog 100~
+if isimmort ($n)
+    glare $n
+ say Welcome to the Dominion of Retribution
+else
+ if isclan ($n) == 5
+   say rest assured, you shall be safe here.
+  else
+shout Invader!! now you shall perish in the flames of Vengeance!
+ mpkill $n
+endif
+endif
+~
+|
+#8126
+saxmon trainer~
+Saxmon the wordly~
+Saxmon looks you over and says, 'Fresh meat!'.
+~
+Saxmon is by far one of the buffest pixies around, his muscles are enough
+to make an ogre jealous.  And by Gods if he hasn't got the largest cock
+you've ever heard of on a man!!!  He's currently going around the room
+pointing out mistakes to the trainees and showing them the proper way to
+swing a sword, thrust a cock, or tongue a cunt.  
+~
+1539 168 0 0 0 0 S
+150 1 300 300 10000 10000d0+0 0d0+0
+1500 0 0
+0 0 1
+12 0 0
+>act_prog ~
+~
+>rand_prog 7~
+mpecho From all around the squeals, grunts, moans, screams and groans of pleasure
+mpecho can be heard from the trainees.
+~
+|
+#8127
+shanella sage~
+Shanella the sage~
+The Sage Shanella is ready to assist you in your skills
+~
+The spectres form exudes an unparalleled beauty, even after death. 
+Shanella looks at you through crystalline eyes, and smiles softly.  Such
+beauty stuns you and you almost forget to take up your studies with her. 
+Various tomes of lore appear in her hands as she prepares to start your
+studies.  
+~
+1027 168 0 0 0 0 S
+0 1 0 0 10000 10000d0+0 0d0+0
+0 0 0
+0 0 2
+12 0 0
+#8128
+human slave~
+Retribution's human blood slave~
+A large brutally butchered man hangs here, spewing blood
+~
+This poor soul has been trapped here for eternity.  Large gashes and
+vicious cuts cover his body, and blood spews forcefully from each.  He looks
+around apparently blind, and unaware of his condition.  It is obvious
+though, that this blood is not all his, but possibly channeled through his
+body from somewhere.  
+~
+3 1 0 0 0 0 S
+1 1 2 2 50000 50000d0+0 0d0+0
+10 0 0
+0 0 1
+0 0 0
+#8129
+cyclops healer magog~
+The Cyclops~
+The Cyclops of Magog gazes deep into your soul, patching any wounds.
+~
+An enormus eye bulges in your general direction.  It seems to move about
+from side to side making it impossible for you to escape it's gaze.  
+~
+3 369099496 0 0 0 -1000 S
+150 1 300 300 30000 30000d0+0 0d0+150000
+1500 0 0
+0 0 0
+31 0 0
+>greet_prog 100~
+bow $n
+say Welcome to Magog $n
+~
+|
+#8130
+sage magog wizard~
+the Sage~
+The Dark Sage of Magog stands ominous before you.
+~
+A tall dark cloak figure standing nearly seven feet tall stands before you.
+A metal scythe reflects your own image from the shadows that twist about.
+The sage has no time for insubordinance.
+~
+3 100663464 0 0 0 -1000 S
+101 1 202 202 10000 10000d0+0 0d0+101000
+1010 0 0
+0 0 0
+12 0 0
+#8131
+arcane beast mutant~
+the Arcane Beast~
+An Arcane who has been subject to massive mutations awaits your bid.
+~
+The beast is about seven and a half feet tall.  It's long blue face is
+massively distorted.  Crippled blue hands grab incessantly at your gold,
+whilest it screams in pain.  
+~
+3 134234792 0 0 0 -1000 S
+101 1 202 202 10000 10000d0+0 0d0+101000
+1010 0 0
+0 0 0
+0 0 0
+#8132
+Gulliver~
+Gulliver~
+Gulliver the banker of Magog stands shielded in gold before you.
+~
+It's body is coated in a golden film, sticky to the touch.  It walks on all
+fours and seems to slither about the vault quite freely.  A long tounge whips
+about catching bugs and such that surface about the piles of gold that lie
+about.
+~
+3 268435624 0 0 0 -1000 S
+101 1 202 202 10000 10000d0+0 0d0+101000
+1010 0 0
+0 0 0
+0 0 0
+#8133
+...~
+the Guardian of Magog~
+An angel of death surfaces, guarding the almighty pillars of Magog.
+~
+The angel has long blackened wings that drip blood as warning to nearby
+victims and trespassers.  For centuries the angel has roamed freely through
+Magog destroying all who disobey the Echoes of APOCALYPSE.  
+~
+65 503898344 0 0 0 -1000 S
+120 1 240 240 30000 30000d0+0 0d0+120000
+1200 0 0
+0 0 0
+2060 0 0
+>all_greet_prog 100~
+if isimmort ($n)
+  bow $n
+  say Welcome almighty $n to the land where evil comes on the APOCALYPSE
+else
+  isclan ($n) == 5
+  emote screams in terror at your ominous warnings.
+  say APOCALYPSE is coming!
+else
+  shout Through the power of Magog I sentence $n to DEATH!
+  shout DEATH TO ALL WHO CHALLENGE THE APOCALYPSE!!
+  
+endif
+endif
+~
+|
+#8134
+dungeon guard~
+the Dungeon Guard~
+A tall and dominating being stands over you.
+~
+The guard is here to insure the safety of all prisoners.  No one has ever 
+escaped the prison alive, do not think you will be the first!
+~
+3 33562792 0 0 0 -1000 S
+110 1 220 220 10000 10000d0+0 0d0+0
+1100 0 0
+0 0 0
+14 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+  if isclan($n) != 1
+    mpforce $n say bung
+  endif
+endif
+~
+>speech_prog bung~
+mpforce $n wear chains
+~
+>act_prog p The gods fall down laughing at $n's request for mercy.~
+~
+>act_prog give chains~
+~
+|
+#8137
+no name~
+(no short description)~
+(no long description)
+~
+~
+1 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#8139
+banker Morgenstern~
+Morgenstern the Banker~
+The chief Banker, Morgenstern, stands here glowering.
+~
+A towering man with a shock of gray hair, Morgenstern is an intimidating
+presence.  He glowers at you, and returns to smoking an enormous cigar he's
+holding in one massive hand.  
+~
+3 0 0 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+>rand_prog 10~
+mpecho A bank clerk runs past you, holding a large folder.
+~
+>rand_prog 10~
+mpecho A clerk carrying a large sack of coins walks past.
+~
+>rand_prog 10~
+mpecho Busy clerks mill about, shuffling papers and arguing with each other.
+~
+|
+#8146
+engineer~
+an engineer~
+A harried engineer is here, working.
+~
+A short, balding man dressed in well-worn dungarees.  One of the
+disciples of the legendary Morrenmarch, his job is to oversee the
+construction and sale of automata to members of the Order and visitors to
+the Citadel.  
+~
+67 0 0 0 0 0 S
+40 1 80 80 20000 20000d0+0 0d0+0
+400 0 0
+0 0 1
+0 0 0
+#8147
+clockwork automaton~
+a clockwork automaton~
+A clockwork automaton stands here silently.
+~
+Roughly human in size and shape, the automaton is constructed of an
+intricate variety of gears, wheels, and cogs.  Though able to respond to
+simple voice commands, it has no true intelligence.  
+~
+257 8650752 0 0 0 0 S
+10 1 20 20 100 100d0+0 0d0+0
+100 0 0
+0 0 0
+0 0 0
+#8148
+grocer~
+the grocer~
+A grocer is here, awaiting your purchase.
+~
+A tall, graceful woman in voluminous robes.
+~
+3 0 0 0 0 0 S
+30 1 60 60 20000 20000d0+0 0d0+30000
+300 0 0
+0 0 2
+0 0 0
+#8150
+clockwork guardian~
+a clockwork guardian~
+A clockwork guardian stands here impassively.
+~
+Before you stands an amazing construction, a humanoid figure created out
+of gears, cogs, and wheels.  His ruby eyes look around slowly and
+mechanically, and his awkward stance is balanced by the feeling of intense
+strength and endurance you feel emanating from him.  
+~
+524355 8405120 0 0 0 0 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+look $n
+mpecho A clockwork guardian turns towards you, it's ruby eyes glowing enigmatically.
+~
+|
+#8152
+camera hidden security~
+a hidden security camera~
+A hidden security camera spies on you.
+~
+~
+524355 66090 0 0 0 0 S
+105 1 210 210 1 1d0+0 0d0+0
+1050 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+mpat 8170 mpecho A security screen shows intruders in the Citadels!
+mpat 8199 mpforce int yell Intruder alert!  All personnel to their stations!
+endif
+~
+|
+#8153
+golem clockwork~
+a clockwork golem~
+A hulking golem made out of gears and cogs stands here.
+~
+An enormous construct.
+~
+67 16552 294912 0 0 0 S
+99 1 198 198 30000 30000d0+0 0d0+0
+990 0 0
+0 0 0
+0 0 0
+#8154
+gardener man hathar~
+a gardener~
+A gardener is here, tending the courtyard.
+~
+An old man, stooped with age, but still vigorous and hearty.  Though he
+seems harmless, you notice a steely glint in his eyes that tells of hidden
+strength, and his wiry arms ripple with corded muscle.  He moves slowly
+around the courtyard, lovingly tending the plants in his care.  
+~
+524289 0 0 0 0 600 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+>speech_prog hello hi~
+look $n
+say Greetings, friend.
+say What can I help you with?
+~
+>speech_prog nothing~
+say Ah, just being sociable, eh?
+say I appreciate it!
+smile $n
+~
+>speech_prog clockwork  order~
+say Yes, I used to be a member of the Order...but I
+say retired years ago.  Now I just tend the courtyard and
+say plants in the Citadel.  These old bones are too weary for
+say travel.
+grin
+~
+>speech_prog job~
+grin
+say I'm a gardener!
+emote gestures at the lush courtyard around him.
+~
+>rand_prog 10~
+emote carefully trims one of the hedges.
+~
+|
+#8160
+test~
+test~
+Test.
+~
+~
+524289 0 0 0 1 0 S
+3 1 6 6 4000 4000d0+0 0d0+0
+30 0 0
+0 0 0
+0 0 0
+>rand_prog 50~
+mpechoat testing testing
+~
+|
+#8161
+chambermaid maid~
+a chambermaid~
+A chambermaid is here, bustling about the room.
+~
+A stunningly beautiful woman in a daring maid uniform.  She smiles coyly
+at your scrutiny.  
+~
+524291 8 0 0 0 300 S
+30 1 60 60 10000 10000d0+0 0d0+0
+300 0 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if name($n)==zhyril
+say Bonjour, monsieur!
+say Comment allez-vous?
+else
+say No, no, no c'est posible!  You are not allowed een zees chambers!
+push $n east
+endif
+~
+>speech_prog towel~
+say Oui, monsieur!
+emote smiles fetchingly.
+mpoload 8181
+give towel $n
+~
+>act_prog kisses you~
+mpechoat $n The surprised maid melts into your arms, kissing you passionately.
+french $n
+~
+|
+#8162
+Chaveis~
+Chaveis~
+Chaveis du Sontilland sits here, drinking ale.
+~
+A short, wild-haired man dressed in rumpled brown robes.  He is drinking
+a large amount of ale, and seems somewhat drunk.  
+~
+3 8 0 0 0 0 S
+75 1 150 150 10000 10000d0+0 0d0+0
+750 0 0
+0 0 1
+0 0 0
+>fight_prog 10~
+cast 'summon water elemental'
+order elemental kill $n
+~
+>fight_prog 10~
+cast 'summon swarm'
+order swarm kill $n
+~
+>fight_prog 10~
+cast 'summon fire elemental'
+order elemental kill $n
+~
+|
+#8164
+no name~
+(no short description)~
+(no long description)
+~
+~
+524289 0 0 0 0 0 S
+0 1 0 0 0 0d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#8165
+bazrak bounty hunter~
+Bazrak~
+The bounty hunter, Bazrak, is drinking here.
+~
+Before you sits the legendary bounty hunter, Bazrak, known for his
+tenacity and mercilessness.  He doesn't seem to notice you; maybe you should
+slip out while he's occupied with his ale.  With all your enemies,
+someone might have put a price on your head.  
+~
+3 301990080 16777236 24576 2 0 S
+110 1 220 220 50000 60000d0+0 0d0+110000
+1100 0 0
+0 0 1
+0 0 0
+>fight_prog 10~
+rake
+~
+>act_prog 5~
+emote sips from his flagon of ale.
+~
+>death_prog 100~
+mpecho Bazrak's eyes widen in amazement.
+say Impossible!
+say I am...Baz...
+emote breaks into a fit of coughing, and falls to the ground dead.
+~
+>fight_prog 30~
+kick
+~
+>fight_prog 10~
+gouge
+~
+|
+#8167
+armorer jahdeel~
+Jahdeel the Armorer~
+Jahdeel the Armorer stands here, selling his wares.
+~
+A tall, swarthy man with many scars, Jahdeel is bristling with exotic
+weapons and is dressed in strange armor.  
+~
+524291 0 0 0 0 0 S
+50 1 100 100 23000 23000d0+0 0d0+10000
+500 0 0
+0 0 1
+0 0 0
+#8168
+tavernkeep Bill~
+Bill the Tavernkeep~
+Bill the Tavernkeep is here, serving customers.
+~
+A bluff, hearty-looking man of middle years.
+~
+524291 0 0 0 0 600 S
+50 1 100 100 24000 24000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#8169
+test~
+test~
+Test mob
+~
+~
+524289 0 0 0 0 0 S
+110 1 220 220 0 0d0+0 0d0+0
+1100 0 0
+0 0 0
+0 0 0
+>speech_prog go~
+mpfo $n rech TEST
+mpforce $n recho TEST
+mpforce $n recho TEST
+~
+|
+#8170
+defender citadel~
+a human defender of the Citadel~
+A human defender of the Citadel is here, monitoring the defenses.
+~
+A tall, clerkish-looking man, but obviously he takes his pledge of
+defending the Citadel seriously.  He sits here, monitoring the multitude of
+screens.  
+~
+524291 0 4 0 0 0 S
+40 1 80 80 20000 20000d0+0 0d0+0
+400 0 0
+0 0 1
+0 0 0
+>act_prog intruders~
+mpat 8199 look intercom 
+~
+|
+#8180
+time elemental~
+a time elemental~
+A disruption in the timestream crackles with energy.
+~
+An almost invisible cloud of temportal energy.
+~
+1 67666088 262144 0 0 0 S
+50 1 100 100 10000 10000d0+0 0d0+0
+500 0 0
+0 0 0
+0 0 0
+#8182
+member order man~
+a member of the Order~
+A man sits here, studying.
+~
+A studious-looking man, like all members of the Order he is dressed in a
+bizarre variety of clothing from several different time periods.  He is
+currently reading a book, and looks up with a smile when he notices your
+scrutiny.  
+~
+67 64 0 0 0 400 S
+70 1 140 140 20000 20000d0+0 0d0+0
+700 0 0
+0 0 1
+0 0 0
+#8183
+verthugio sage~
+Verthugio the Sage~
+Verthugio the Sage sits here, poring over ancient volumes.
+~
+An ancient sage, who has been a member of the Order as long as anyone can
+remember.  He stays mainly in the Citadel nowadays, helping to train the
+younger members.  
+~
+1027 0 0 0 0 0 S
+50 1 100 100 20000 20000d0+0 0d0+0
+500 0 0
+0 0 1
+0 0 0
+#8184
+chronomech construct~
+the Chronomech~
+The mighty Chronomech looms above you here.
+~
+The mighty Chronomech is Morrenmarch's final, and greatest,
+creation.  Thousands of gears, cogs, wheels, and gears move in perfect
+harmony , powered by an unknown source of energy.  From what you understand
+of it's function, members of the Order can get spells placed upon them by
+this machine by placing offerings of gold coins in the special bin on it's
+side.
+~
+75 234897576 0 0 0 0 S
+104 1 208 208 24000 24000d0+0 0d0+0
+1040 0 0
+0 0 0
+0 0 0
+>speech_prog greetings hello hi~
+emote glows faintly.
+say Welcome, $n.
+say What do you wish of me?
+~
+>speech_prog clockwork~
+say The Order was created to explore the timestream.
+say More information can be found in our library, in the west wing.
+~
+>speech_prog help~
+if isclan($n)==9
+say Yes, I can help you.
+say If you wish, I can cast spells on you.
+say Or, I can provide information regarding the timestream.
+else
+say I am sorry; you are not a member of the Order.
+endif
+~
+>speech_prog time~
+say the time:
+mpforce $n time
+ 
+~
+>speech_prog heal~
+if ispc($n) == 1
+if isclan($n) == 9
+if goldamt($n) > 250000
+emote glows with energy.
+mpechoat $n As the Chronomech's temporal energy envelops you, you feel your
+mpechoat $n body's natural healing processes speed up.
+mpforce $n give 250000 coins $i
+cast 'healing hands' $n
+else
+say Unfortunately, you do not possess sufficient funds for that.
+endif
+endif
+endif
+~
+>all_greet_prog 100~
+if isclan($n)==9
+say Greetings, $n.
+else
+mpat 8181 note to all
+mpat 8181 note + Intruder alert!  $n has invaded the sacred Time Chamber.
+mpat 8181 note subject intruder alert: $n
+mpat 8181 note post
+say You are not welcome here in the Time Chamber, $n!
+endif
+~
+>speech_prog spells prices price~
+say Spell Prices:
+say Heal                     250,000
+say Cure Blindess              3,000
+say Flight                     2,000
+say Invisibility               2,500
+say Enhanced Strength          3,000
+~
+>speech_prog blindness~
+if ispc($n)
+if isclan($n)==9
+if goldamt($n)>2999
+mpforce $n give 3000 coins chronomech
+cast 'cure blindness' $n
+else
+say You have insufficient funds for that, $n.
+endif
+endif
+endif
+~
+>speech_prog strength~
+if ispc($n)
+if isclan($n)==9
+if goldamt($n)>2999
+mpforce $n give 3000 coins chronomech
+cast 'giant strength' $n
+mpechoat $n Your muscles ripple with newfound power.
+else
+say You have insufficient funds for that, $n.
+endif
+endif
+endif
+~
+>speech_prog invisibility~
+if ispc($n)
+if isclan($n)==9
+if goldamt($n)>2499
+mpforce $n give 2500 coins chronomech
+cast 'invisibility' $n
+else
+say You have insufficient funds for that, $n.
+endif
+endif
+endif
+~
+>speech_prog charter~
+if goldamt($n)>299
+mpoload 8195
+give charter $n
+force $n give 300 coins chronomech
+say To defray printing costs, we must charge you for the book.
+else
+say Sorry, a copy of the Charter costs 300 gold.
+endif
+~
+|
+#8185
+time traveller~
+a traveller from the future~
+A traveller from the distant future wanders around here.
+~
+A strange-looking individual garbed in outlandish costume.  When he
+notices your gaze he sniffs with disdain at your obvious primitive state.  
+~
+65 8 0 0 0 0 S
+60 1 120 120 15000 15000d0+0 0d0+0
+600 0 0
+0 0 1
+0 0 0
+#8186
+arendar~
+Arendar~
+The well-known adventurer Arendar strides by.
+~
+A swordsman of no small repute, Arendar is well-known for his many
+adventures across the timestream.  At the moment he walks the halls of the
+Citadel, relaxing from his journeys.  
+~
+65 200 786468 0 2 0 S
+102 1 204 204 30000 30000d0+0 0d0+500
+1020 0 0
+0 0 1
+2 0 0
+>fight_prog 10~
+punch
+~
+>fight_prog 10~
+slit
+~
+>fight_prog 10~
+bash
+~
+|
+#8187
+guardsman~
+a guardsman~
+A guardsman of the Citadel peers at you suspiciously.
+~
+A tall, armored man, he patrols the Citadel looking for troublemakers.
+~
+65 33554496 32 0 0 0 S
+70 1 140 140 30000 30000d0+0 0d0+0
+700 0 0
+0 0 1
+0 0 0
+#8190
+lift technician~
+a lift technician~
+A lift technician is here, deftly manipulating the controls.
+~
+A short, attractive woman wearing a blue jumpsuit.  She sits at a control
+panel , deftly manipulating the knobs and dials that control the lift.  
+~
+67 0 16 0 0 0 S
+20 1 40 40 15000 15000d0+0 0d0+0
+200 0 0
+0 0 2
+0 0 0
+>speech_prog hello hi greetings~
+emote smiles brightly!
+say Hello!  If you'd like to go to another level, please tell me
+say which direction like to go in.  From here you can go
+say up and down.
+~
+>speech_prog down~
+emote manipulates some controls.
+mpecho You hear a steady hum, and feel the lift moving downwards.
+mpecho In a few moments you reach the bottom floor.
+mptrans $n 8190
+~
+>speech_prog up~
+emote manipulates some controls.
+mpecho You hear a steady hum, and feel the lift moving upwards.
+mpecho In a few moments you reach the top floor.
+mptrans $n 8189
+~
+|
+#8191
+lift technician~
+a lift technician~
+A lift technician is here, deftly manipulating the controls.
+~
+A short, attractive woman wearing a blue jumpsuit.  She sits at a control
+panel , deftly manipulating the knobs and dials that control the lift.
+~
+67 0 16 0 0 0 S
+20 1 40 40 15000 15000d0+0 0d0+0
+200 0 0
+0 0 2
+0 0 0
+>speech_prog hello hi greetings~
+emote smiles brightly!
+say Hello!  If you'd like to go to another level, please tell me
+say which direction like to go in.  From here you can go
+say up.
+~
+>speech_prog up~
+smile
+say Sorry, this is the highest you can go.
+~
+>speech_prog down~
+emote manipulates some controls.
+mpecho You hear a steady hum, and feel the lift moving downwards.
+mpecho In a few moments the lift reaches the main floor.
+mptrans $n 8188
+~
+>speech_prog where~
+say Top floor.
+grin
+~
+|
+#8192
+lift technician~
+a lift technician~
+A lift technician is here, deftly manipulating the controls.
+~
+A short, attractive woman wearing a blue jumpsuit.  She sits at a control
+panel , deftly manipulating the knobs and dials that control the lift.
+~
+67 0 16 0 0 0 S
+20 1 40 40 15000 15000d0+0 0d0+0
+200 0 0
+0 0 2
+0 0 0
+>speech_prog hi hello greetings~
+emote smiles
+brightly! say Hello!  If you'd like to go to another level, please tell me
+say which direction like to go in.  From here you can go
+say up.
+~
+>speech_prog down~
+smil
+say Sorry, this is the lowest level you can descend to.
+~
+>speech_prog up~
+emote manipulates some controls.
+mpecho You hear a steady hum, and feel the lift moving upwards.
+mpecho In a few moments the lift reaches the main floor.
+mptrans $n 8188
+~
+|
+#8193
+master order farazul~
+Master Farazul~
+Farazul, Master of the Clockwork Order stands here.
+~
+A tall, dignified-looking man in opulent robes.  His eyes gleam with a
+sense of power and ambition, and you feel that he would be a very tough
+opponent indeed...  
+~
+3 335569120 262144 8192 2 0 S
+135 1 270 270 30000 70000d0+0 0d0+0
+1350 0 0
+0 0 1
+0 0 0
+>greet_prog 100~
+emote frowns.
+say Who dares disturb the inner sanctum of the Order?
+~
+>fight_prog 20~
+echo glares at you.
+cast 'chain lightning' $n
+~
+>fight_prog 1~
+cast 'holy wrath'
+~
+|
+#8195
+bazarius~
+Bazarius~
+A furtive figure stands in the shadows.
+~
+Before you stands the infamous Bazarius, a thief-mage known for his
+daring acts of banditry.  Sought by lawmen of a hundred different nations
+across dozens of dimensions, he is a dangerous foe whom you should approach
+with extreme caution.  
+~
+1 269582424 69206144 0 2 0 S
+99 1 198 198 70000 70000d0+0 0d0+99000
+990 0 0
+0 0 1
+2 0 0
+>fight_prog 10~
+slit
+~
+>fight_prog 10~
+disarm
+~
+>fight_prog 5~
+gouge
+~
+>fight_prog 5~
+slit
+~
+|
+#8196
+huge warrior~
+a huge warrior~
+A huge warrior dressed all in black stands before you.
+~
+He is totally covered in black armor--the only features you can make out
+are his eyes, which glow with an eerie red flame.  
+~
+3 0 0 0 0 0 S
+120 1 240 240 30000 30000d0+0 0d0+0
+1200 0 0
+0 0 1
+0 0 0
+#8198
+int intercom~
+over an intercom, a computerized voice~
+An intercom is here.
+~
+~
+3 40 0 0 0 0 S
+105 1 210 210 2 2d0+0 0d0+0
+1050 0 0
+0 0 0
+0 0 0
+>speech_prog intruder~
+yell Intruder alert!
+yell All personnel to their stations!
+~
+|
+#8199
+panther familiar~
+a huge panther~
+A huge panther lazes about here in the sun.
+~
+This panther is huge!  He is easily probably the largest speciment of his
+kind on the world.  He's been Derk's companion and constant friend on many
+adventures and now has earned his rest laying around in the sun and
+relaxing.  He looks you over and deciding you're not any threat to his
+friend goes back to groom his coat.  
+~
+3 168 0 0 0 0 S
+100 1 200 200 30000 30000d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#8100
+clockwork citadel rift portal clock~
+the Clockwork Citadel~
+A golden rift of energy is here; superimposed over it is the image of a clock.~
+~
+29 1 0 0 0 0 0
+100 100
+8150~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8102
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8104
+monocle~
+a silver-rimmed monocle~
+A monocle lies here.~
+~
+27 0 0 0 0 131073 100
+100 100
+100~ 3~ 3~ identify~
+1 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+304 -1
+#8105
+ornately decorated cutlass~
+an ornately decorated cutlass~
+A cutlass lies here.~
+~
+5 0 0 0 0 8193 100
+100 100
+0~ 30~ 75~ 1~
+5 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#8106
+revolver~
+a revolver~
+A revolver lies here.~
+~
+32 0 0 0 0 2097153 100
+100 100
+100~ 6~ 6~ bullet~
+5 1000 0
+0 0
+reserved~
+0 0
+0 0 0
+#8107
+leather breeches~
+a pair of leather breeches~
+Breeches lie here.~
+~
+9 0 0 0 0 33 20
+100 100
+5~ 0~ 0~ 0~
+0 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#8108
+tan buttoned shirt~
+a tan shirt~
+A shirt lies here.~
+~
+9 0 0 0 0 9 10
+100 100
+3~ 0~ 0~ 0~
+2 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#8109
+pith helmet~
+a pith helmet~
+A helmet lies here.~
+~
+9 0 0 0 0 17 10
+100 100
+10~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8110
+portal gateway~
+a huge shimmering gateway~
+A shimmering portal has been conjured here~
+~
+29 0 0 0 0 0 8111
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8111
+whisky shot~
+a shot of whisky~
+A small shot glass of whisky rests on the bar here.~
+~
+17 0 0 0 0 1 10
+100 100
+0~ 10~ 5~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8114
+angry ferret~
+an angry ferret~
+An angry ferret runs around here.~
+~
+13 0 32768 0 0 16385 107
+100 100
+0~ 0~ 0~ 0~
+20 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8115
+jolt~
+a can of Jolt~
+A can lies here.~
+~
+17 0 0 0 0 16385 107
+100 100
+3~ 3~ 15~ 0~
+2 1 0
+5 0
+vibrate~
+2 2
+0 0 0
+#8118
+portal gateway~
+a huge flaming gateway~
+A huge gateway of flames has been conjured here.~
+~
+29 33554432 0 0 0 0 8122
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8119
+chronoblade~
+a chronoblade~
+A long blade lies here.~
+~
+5 65 0 0 0 8193 70
+100 100
+0~ 12~ 25~ 11~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+#8120
+crimson robes~
+crimson robes~
+A set of robes is here.~
+~
+9 64 0 0 0 1025 99
+100 100
+0~ 0~ 0~ 0~
+4 988 0
+0 0
+reserved~
+0 0
+0 0 0
+#8121
+mirror portal~
+a shimmering mirror~
+A shimmering mirror set in a gold frame stands here.~
+~
+29 65 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+400 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#8129
+water fall waterfall~
+waterfall~
+A small waterfall plummets over the eastern cliff to form a pond in the center of this glade.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+fountain~
+A huge fountain in the likeness of VerKapheron DarkHolme has been erected
+here.  It is carved from a single chunk of obsidian, with no visable means
+of water entry.  The eyes of the statue begin to glow brightly, and a voice
+booms,"Seek out those which you desire vengeance on!"  
+~
+#8139
+laser carbine~
+a laser carbine~
+A laser carbine lies here.~
+~
+32 2 0 0 0 2097153 99
+100 100
+99~ 10~ 10~ laser beam bullet~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8140
+serrated sword~
+a vicious serrated sword~
+A nasty-looking sword lies here.~
+~
+5 0 0 0 0 8193 100
+100 100
+0~ 15~ 25~ 5~
+5 120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 20
+A
+18 30
+A
+19 30
+A
+26 100
+#8141
+steel breastplate scorched~
+a scorched steel breastplate~
+A breastplate lies here, scorched and battered.~
+~
+9 0 0 0 0 9 99
+100 100
+20~ 0~ 0~ 0~
+12 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 20
+A
+13 100
+A
+24 -20
+A
+23 -20
+#8147
+battleworn plate armor~
+a battleworn suit of plate armor~
+A suit of plate armor lies here.~
+~
+9 0 0 0 0 9 80
+100 100
+14~ 0~ 0~ 0~
+30 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8148
+ironstorm broadsword~
+the legendary broadsword, "Ironstorm"~
+A mighty broadsword lies here.~
+~
+5 322 163850 0 0 8193 80
+100 100
+0~ 5~ 15~ 3~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+18 5
+A
+19 5
+#8150
+clock~
+clock~
+There seem to be no guards here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+clock~
+This huge clock is heavily ornamented, and it graces the front entrance
+with it's delicate, yet strong, beauty.
+According to the clock:
+~
+>look_prog 100~
+0
+if ispc($n)
+mpforce $n time
+endif
+~
+|
+#8151
+cybernetic eyes~
+a pair of cybernetic eyes~
+A pair of mechanical eyes is here.~
+~
+35 0 0 0 0 4194305 99
+100 100
+0~ 0~ 0~ reserved~
+1 988 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+304 -1
+#8152
+clear vial~
+a clear vial~
+(no description)~
+~
+10 268435456 0 0 0 1 99
+100 100
+100~ sanctuary~ haste~ reserved~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8153
+golden cog ring~
+a golden cog~
+A beautiful golden cog lies here.~
+~
+8 1 0 0 0 3 75
+100 100
+0~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+3 2
+#8154
+white marble fountain~
+white marble fountain~
+A white marble fountain lies here, shooting water into the air.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8155
+flame lance~
+a flame lance~
+A long golden flame lance lies here.~
+~
+5 0 0 0 0 8193 25
+100 100
+0~ 5~ 15~ 6~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8156
+adamantium chain mail~
+adamantium chain mail~
+A suit of gleaming chain mail lies here.~
+~
+9 0 0 0 0 9 50
+100 100
+10~ 0~ 0~ 0~
+5 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8158
+statue~
+a statue~
+A small statue is here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+It depicts a strange-looking man with a great deal of hair rising from his
+head.  Underneath is a single word:
+ 
+    E * I * N * S * T * E * I * N
+~
+#8159
+statue~
+a statue~
+A large, ominous-looking statue stands here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+This large statue depicts the mysterious figure only known as the
+Chronomancer, the entity whose mastery of temporal energy has made him a
+legend across the multiverse.  
+~
+#8160
+statue~
+a statue~
+A statue stands here amidst the brambles.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+This well-crafted statue depicts the artificer Morrenmarch of Methidoral,
+whose skill at creating clocks and other pieces of machinery approached
+supernatural status.  Along with Zarostros and the strange wanderer known
+only as the Chronomancer, he created the Clockwork Order to explore the
+timestream.  
+~
+#8161
+statue~
+a statue~
+A statue stands here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+statue~
+This statue depicts the legendary mage Zarostros, whose explorations of
+the timestream have made him known throughout the multiverse.  He also
+helped found the Order, and played a large part in it's operation until he
+disappeared in mysterious circumstances.  
+~
+E
+statue~
+~
+E
+statue~
+This statue depicts the great mage Zarostros, whose mystical exploration
+of the timestream led to his ultimate destruction.  
+~
+#8163
+beef roast~
+some roast beef~
+Some roast beef sits here.~
+~
+19 0 0 0 0 1 0
+100 100
+24~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8164
+pitcher wine~
+a pitcher of wine~
+A pitcher of wine sits here.~
+~
+17 0 0 0 0 1 0
+100 100
+3~ 3~ 0~ 1~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8165
+flagon ale cup~
+a flagon of ale~
+A cup of ale sits here.~
+~
+17 0 0 0 0 16385 0
+100 100
+2~ 2~ 3~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8166
+clock huge~
+a huge grandfather clock~
+A huge grandfather clock stands here.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+300 8 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+clock~
+This towering piece of machinery has been carefully constructed of wood
+and brass.  The craftsmanship is remarkable, and despite it's obvious great
+age it appears to be in perfect condition.  
+According to the grandfather clock:
+~
+E
+clock~
+~
+E
+clock~
+This large clock has been crafted with the utmost care.  It's mahogany
+surface has been lightened by untold years of service, but the brass face
+shines brightly, as if it were new.  
+According to the clock:
+~
+>look_prog 100~
+0
+if ispc($n)
+mpforce $n time
+endif
+~
+|
+#8167
+auroch meat~
+some auroch meat~
+A huge chunk of meat lies here.~
+~
+19 0 0 0 0 1 1
+100 100
+24~ 0~ 0~ 0~
+7 8 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+meat~
+It's from the extinct auroch.
+~
+#8169
+clock water~
+a water clock~
+A large water clock stands here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+clock~
+This marvel of engineering uses the constant dripping of water to give
+accurate time.  Constructed of bronze and glass, it's workmanship is beyond
+anything you have seen before; yet another marvel you've found in the
+Citadel.
+According to the water clock:
+~
+E
+water~
+This marvel of engineering uses the constant dripping of water to give
+accurate time.  Constructed of bronze and glass, it's workmanship is beyond
+anything you have seen before; yet another marvel you've found in the
+Citadel.  
+According to the water clock:
+~
+>look_prog 100~
+0
+if ispc($n)
+mpforce $n time
+endif
+~
+>look_in_prog 50~
+0
+mpecho Water streams through the glass pipes of the water clock.
+~
+|
+#8170
+clock digital~
+a digital clock~
+A digital clock sits here.~
+~
+13 0 0 0 0 1024 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+clock~
+#      ###      #      ###     ###
+                  ##    #     #   ###    #   #   #   #
+                 # #          #    #    #     # #     #
+                   #     #####          #     # #     #
+                   #    #          #    #     # #     #
+                   #    #         ###    #   #   #   #
+                 #####  #######    #      ###     ###
+
+ 
+You've heard about this strange device.  Apparently a time traveller
+brought it back from the distant future, but nobody in the
+Citadel can figure out how to get it to work...
+~
+#8171
+an intercom system~
+over an intercom system, a voice~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8172
+portal methidoral~
+a portal to Methidoral~
+A portal leading to Methidoral is here.~
+~
+29 0 0 0 0 0 0
+100 100
+25000~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8173
+portal Hammerheim~
+a portal to Hammerheim~
+A portal to Hammerheim glows softly.~
+~
+29 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8174
+portal ways~
+a portal to the Ways~
+A portal to the Ways glimmers in the air.~
+~
+29 0 0 0 0 0 0
+100 100
+15100~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8175
+stun baton~
+a stun baton~
+A baton lies here.~
+~
+5 2 0 0 0 8193 50
+100 100
+0~ 10~ 20~ 7~
+6 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#8176
+iron gauntlets~
+thick iron gauntlets~
+A huge pair of gauntlets is here.~
+~
+9 536870912 0 0 0 129 99
+100 100
+11~ 0~ 0~ 0~
+5 120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 4
+#8178
+kevlar jacket~
+a kevlar jacket~
+A kevlar jacket lies here.~
+~
+9 0 0 0 0 9 20
+100 100
+4~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8180
+jacuzzi bath water~
+a jacuzzi~
+A bubbling jacuzzi is here.~
+~
+29 0 0 0 0 0 0
+100 100
+8136~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8181
+board clockwork ~
+the Clockwork noteboard~
+The clan noteboard is here.~
+~
+11 0 0 0 0 0 1
+100 100
+8183~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8182
+clock~
+a clock~
+A clock is hung on the wall here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+clock~
+A large wooden clock with brass hands and numbers.
+~
+>look_prog 100~
+0
+if ispc($n)
+mpforce $n time
+endif
+~
+|
+#8183
+glasses decoder clockwork~
+<CLOCKWORK> Decoder glasses~
+A strange pair of spectacles lies here.~
+~
+13 0 0 0 0 131073 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8184
+metallic robes~
+metallic robes~
+A shiny-looking set of robes lies here.~
+~
+9 0 0 0 0 1025 50
+100 100
+5~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#8185
+sword broadsword ancient~
+an ancient broadsword~
+A broadsword of ancient design lies here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 3~ 12~ 3~
+7 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#8186
+bow fibreglass~
+a fibreglass bow~
+A high-tech bow lies here.~
+~
+5 0 32768 0 0 8193 15
+100 100
+1~ 4~ 30~ 15~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#8187
+a Chronoblade~
+a Chronoblade~
+A blade made of shifting energy is here.~
+~
+5 100664386 0 0 0 8193 104
+100 100
+0~ 0~ 0~ 11~
+2 600 0
+5 0
+lightning bolt~
+5 5
+0 0 0
+A
+13 100
+A
+19 60
+A
+26 100
+A
+18 20
+#8188
+intercom~
+over the intercom, a computerized voice~
+An intercom is here.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>look_prog 100~
+0
+yell Intruder alert!
+yell All personnel to their stations!
+mpat 8152 mpech Warning lights start blinking on.
+~
+|
+#8189
+jewelled torc~
+a jewelled torc~
+A beautiful jewelled torc lies here.~
+~
+8 64 0 0 0 5 75
+100 100
+0~ 0~ 0~ 0~
+5 160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 5
+A
+3 2
+#8190
+chronomech chrono mech~
+the chronomech~
+The chronomech looms above you.~
+~
+8 0 0 0 0 0 100
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+chronomech~
+A huge piece of softly glowing machinery looms above you.  You sense
+waves of power emanating from it, and a strange silence envelops the room.
+~
+#8191
+arcanum ring~
+an arcanum ring~
+An ancient ring lies here.~
+~
+8 0 0 0 0 3 75
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+12 20
+#8192
+glowing blade~
+a glowing blade~
+A glowing sword lies here.~
+~
+5 64 0 0 0 8193 75
+100 100
+0~ 10~ 20~ 1~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 25
+A
+19 10
+#8193
+storm cloak~
+a storm cloak~
+A dark cloak lies here.~
+~
+9 65 0 0 0 1025 99
+100 100
+5~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+3 1
+A
+19 10
+A
+12 75
+#8194
+mirror~
+a mirror~
+A large mirror stands here.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>look_prog 100~
+0
+mpforce $n look self
+~
+|
+#8195
+charter clockwork book~
+the Clockwork Charter~
+A huge book lies here.~
+~
+13 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+20 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+charter~
+The Charter of the Clockwork Order is an impressive document, taking up
+a huge book bound with leather. As you look over the small, meticulously
+written passages, you realize that it must be several hundred years old,
+and is written in an archaic form of the Common language:
+ 
+I. And so this Auguste Companye, having banded together to form a most
+Noble Order, dost write the Laws and Rules of Said Order, so as to 
+Establish for Posterity the Standards and Legalities so All Members
+knoweth thine Duties and Obligations with respect to Said Order.
+ 
+II. We the founders of the Order do bequeath upon our Heirs the Most
+Solemn geas to Maintain the Laws that precedeth:
+ 
+First, that no member of the Order doth turn against his brother in
+violence, or slander his brother without Just Cause.
+ 
+Second, that no member of the Order useth the powers and Devyces given
+unto him by the Order to cause Disturbances in the Natural Order of the
+Temporal Energies of the Cosmos.
+ 
+Third, that no member Travelling in Tyme dost change to a Significant
+Degree the Future or Futures descending from whatsoever Period he
+dwelleth or travelleth in.
+ 
+Fourth, that member Betrayeth the Divine Secrets of the Order to those
+who are not Pledged to the Order in Loyalty, or those So Pledged but
+who hath not obtaineth the correct rank for Said Secrets.
+ 
+Fifth, that all members pledge Perpetual Allegiance to the Rightful
+Master of the Order, and those others who hath been Chosen to leadeth
+the Order.
+ 
+Sixth, that no member meddle in the Affairs of other Organisations,
+Nations, Principalities, Empires, City-States, Armyes, and Kingdoms
+so as to causeth the Order to be placed in Grave Discord with Said
+Organisations, Nations, Principalities, Empires, City-States, Armyes,
+or Kingdoms.
+ 
+Seventh, and most Important and Solemn, that Each Member at the tyme of
+his Entry into the Order, take a Most Sacred Oath to Defend the
+Well-Being and Stability of the Tyme Stream by any actions necessary,
+even if aforementioned actions constitute a Great Hazard to said
+member, Including Death or Dismemberment.
+ 
+******************************************************************************
+The next several hundred pages are even more boring than the opening
+passages, and deal with the minute details of the organization and bylaws
+of the Order.
+~
+#8196
+sundial sun dial~
+a sundial~
+A sundial rises up from the grass.~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sundial~
+Made of marble, with gold-inlaid numerals, this sundial is not only a
+timepiece, but a work of art as well.  
+According to the sundial:
+~
+>look_prog 100~
+0
+mpforce $n time
+~
+|
+#8197
+helm clockwork~
+a Clockwork helm~
+A lightweight helm lies here, covered with strange devices.~
+~
+9 536870976 0 0 0 17 30
+100 100
+5~ 0~ 0~ 0~
+3 300 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+117 -1
+A
+12 50
+A
+25 40
+A
+19 10
+A
+24 -10
+A
+3 1
+#8198
+black leather armor~
+black leather armor~
+Black armor lies here.~
+~
+9 0 0 0 0 9 75
+100 100
+8~ 0~ 0~ 0~
+4 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#8199
+domino mask~
+a domino mask~
+A black and white mask lies here.~
+~
+9 805306432 0 0 0 65537 99
+100 100
+8~ 0~ 0~ 0~
+2 988 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+304 1
+>wear_prog 100~
+0
+mpecho As $n wears the helmet, a shimmering faceplate comes down over $m face.
+mpechoat $n You feel your senses expand.
+~
+|
+#0
+
+
+
+#ROOMDATA
+#8100
+A Void~
+~
+~
+You are in a strange void fill of purple mist.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8100
+D1
+~
+~
+0 0 8100
+D2
+~
+~
+0 0 8100
+D3
+~
+~
+0 0 8100
+D4
+~
+~
+0 0 26159
+D5
+~
+~
+0 0 8100
+S
+>cast_prog puff n%~
+0
+c shock
+~
+|
+#8101
+On the Giant Ping-Pong Table~
+~
+~
+Screaming you bounce along the table surface, towards one of the gigantic
+players, who readies his huge racket, preparing to smite you.  
+~
+0 393228 3
+Rd     0
+D1
+~
+~
+0 0 8102
+S
+#8102
+On the Giant Ping-Pong Table~
+~
+~
+Screaming, you bounce along the table surface, towards one of the
+gigantic players, who readies his huge racket, preparing to smite you.  
+~
+0 139272 3
+Rd     0
+D3
+~
+~
+0 0 8101
+S
+#8103
+Lost in the forest~
+~
+~
+You wander around the forest wondering where that damned path dissapeared
+to.  All around you trees loom overhead seeming to take great delight in
+your pointless wanderings.  A stray breeze blows by bringing with it the
+sounds of multiple pixies laughing.  You look around wondering which
+direction to try next.  
+~
+0 401408 3
+Rd     0
+D0
+~
+~
+0 0 8104
+D2
+~
+~
+0 0 8104
+S
+#8104
+Lost in the forest~
+~
+~
+You wander around the forest wondering where that damned path dissapeared
+to.  All around you trees loom overhead seeming to take great delight in
+your pointless wanderings.  A stray breeze blows by bringing with it the
+sounds of multiple pixies laughing.  You look around wondering which
+direction to try next.  
+~
+0 139264 3
+Rd     0
+D0
+~
+~
+0 0 8103
+D1
+~
+~
+0 0 8105
+S
+#8105
+Lost in the forest~
+~
+~
+You wander around the forest wondering where that damned path dissapeared
+to.  All around you trees loom overhead seeming to take great delight in
+your pointless wanderings.  A stray breeze blows by bringing with it the
+sounds of mulptiple pixies laughing.  You look around wondering which
+direction to try next.  
+~
+0 139264 3
+Rd     0
+D2
+~
+~
+0 0 8103
+D3
+~
+~
+0 0 8104
+S
+#8106
+A hallway~
+~
+~
+You stand in a gloomy hallway, thick with dust and smoke.  A narrow
+stairway leads upwards stairway leads upwards, while to the east is a
+doorway.  
+~
+0 139264 3
+Rd     0
+D1
+~
+~
+0 0 8107
+S
+#8107
+A living room~
+~
+~
+You stand in a cold living room.  Old furniture lies about, casting
+forbidding shadows on the ground.  The slowly dying fireplace crackles
+ominously, and you feel a strange chill in the air.  
+~
+0 139264 3
+Rd     0
+D3
+~
+~
+0 0 8106
+S
+#8108
+At the base of a large tree~
+~
+~
+You stand at the base of one of the largest trees you've ever seen.  All
+around you can be seen pixies in various manners of dress flying up into the
+branches.  From above can be heard the sounds of raucous laughter.  Looking
+for a way into the higher branches you notice that the lower branches of the
+tree have been arranged in such a way as to provide a natural staircase for
+those that don't have the ability to fly.  
+~
+0 140288 3
+Rd     0
+D4
+~
+~
+0 0 8109
+S
+#8109
+The Tavern of The Lusty Nymph~
+~
+~
+As you enter the bar you are almost overwhelmed by what you find. 
+Everywhere you look you see fairies, sprites, pixies, nymphs and other
+manner of enchanted folks engaged in all manner of activities from just
+enjoying a nice cup of nectar to the pair over near the corner going at it
+in the air.  The haze in the air from the number of mind altering
+consumables almost brings you to your knees.  Then you notice the nymph
+dancing on the bartop, it's the same one from the sign!  
+~
+0 139272 0
+Rd     0
+D5
+~
+~
+0 0 8108
+S
+#8110
+Along the path~
+~
+~
+You follow the meandering path deeper into the heart of the woods. 
+Streamers of sunlight shine down through the branches of the trees barely
+illuminating your way.  Off to the east is a secluded little grove with a
+large tree while to the west the path continues through the trees.  The
+north is completely blocked off by the huge trees all around you.  From
+above you can be heard the sounds of metal on metal as well as a few giggles
+now and then.  
+~
+0 139264 3
+Rd     0
+D1
+~
+~
+0 0 8122
+D3
+~
+~
+0 0 8111
+D4
+~
+~
+0 0 8112
+S
+#8111
+A meandering path~
+~
+~
+You follow the path through the forest, all about you can be heard the
+sounds of the enchanted folk frolicking about.  Groans, moans, squeals and
+screams pierce the air constantly.  The pathway leads back to the east
+towards the entrance to the ring and fowards to the north towards the
+center.  
+~
+0 139264 3
+Rd     0
+D0
+~
+~
+0 0 8113
+D1
+~
+~
+0 0 8110
+S
+#8112
+The smithy~
+~
+~
+You have entered the smithy, you can now see why you heard all that
+racket down below on the path.  Morollen stands here busy making eq for the
+Stormpixies.  There's a large vat of some dark red liquid over in the
+corner, it seems to be what Morollen is dipping his creations in to cool
+them off.  Taking a closer look at it you realize that it is blood, and
+probably came from the unfortunate human who's head you can see behind that
+vat!  
+~
+0 67249160 0
+Rd     0
+D5
+~
+~
+0 0 8110
+S
+#8113
+Fowards towards the center of the ring~
+~
+~
+Continuing onwards you come to a small clearing.  There are many
+directions to choose from including up.  Off to the west you can see a large
+grove with piles of treasure lieing about, while a sign declares that above
+you lies the general equipment store for the clan.  And off to the north you
+can hear some faint chanting.  
+~
+0 140288 3
+Rd     0
+D0
+~
+~
+0 0 8117
+D2
+~
+~
+0 0 8111
+D3
+~
+~
+0 0 8114
+D4
+~
+~
+0 0 8115
+S
+#8114
+The donation grove~
+~
+~
+You enter a large grove surrounded on all sides by the massive trees that
+you've noticed are normal for the the fairy ring.  In the center of the
+grove a large pile of treasure, armor, weapons and potions and scrolls is
+just lieing there waiting for someone to take what they want.  You'd heard
+about the wealth awaiting anyone who managed to sneak into a fairy ring, but
+now the proof of that rumor is before your very eyes.  Off to the north can
+be heard alot of grunting with some occasionally barked orders.  
+~
+0 139268 3
+Rd     0
+D0
+~
+~
+0 0 8116
+D1
+~
+~
+0 0 8113
+S
+#8115
+Denora's General Supplies~
+~
+~
+Climbing up the tree you find yourself standing on a wood planking floor
+that stretches out and among the branches.  Looking around you notice that
+all of the branches in the immediate area have been cleared away so that
+business can be conducted in relative peace.  Standing behind the large
+counterstands a fragile looking sprite.  She looks up and you with a
+seductive gaze and asks what your business might be.  
+~
+0 140296 0
+Rd     0
+D5
+~
+~
+0 0 8113
+S
+#8116
+The training grounds~
+~
+~
+The first think you see upon entering the grounds here is the buff pixie
+ordering all the younger sprites, satyrs, fairies and imps around.  Here is
+where Saxmon teaches the younger and even at time the older members of the
+clan what they need to know to survive out in the world.  His classes range
+from learning to wield a sword to learning to wield a cock!?!?!  And over in
+the corner two ladies are practicing advanced manuevers with their tongues?!
+What kind of pixies are these!?!?!?!  
+~
+0 139264 3
+Rd     0
+D2
+~
+~
+0 0 8114
+S
+#8117
+Just before the center~
+~
+~
+You stand just before the center of the ring.  Up ahead you can hear the
+normal sounds of moaning and groaning that you've started to associate with
+this particular group of pixies.  There's also an underlying chanting coming
+from the center, you begin to wonder what the chanting means.  From up above
+a stray bolt of lighting whizzes by your head to bury itself in the grass
+beside you.  Looking up all sorts of strange mists and glowing lights can be
+seen.  Off to the east a small path leads to a little grove.  
+~
+0 140292 3
+Rd     0
+D0
+~
+~
+0 0 8119
+D1
+~
+~
+0 0 8123
+D2
+~
+~
+0 0 8113
+D4
+~
+~
+0 0 8118
+S
+#8118
+The shop of mystical delights~
+~
+~
+You make your way up the tree only to be assaulted by one of the most
+spectacular light shows of your life.  All around you mists and lights of
+every imaginable color and shape covort, play and generally float around. 
+And throught it all small branches of lightning arc from light to mist and
+back again, building up magnificent charges and finally flying straight up
+to burst into the air in spectacular fashion.  It's probably one of the best
+light shows you've ever seen.  Krystallin, the keeper of the store tries to
+peer throught the mist and light and determine who you are and what you
+need.  
+~
+0 131084 0
+Rd     0
+D5
+~
+~
+0 0 8117
+S
+#8119
+The center of the fairy circle~
+~
+~
+At last!  You've reached the center of the circle and you even did it
+alive!  As you look around you you can only groan with dissapointment as you
+behold the total lack of interest you arouse.  All around you there's
+pixies, sprites, imps, fairies, nymphs, and othere enchanted folk.  All of
+them are involved in having sex with themselves, each other, forest animals
+and even various magical and non-magical toys of strange make.  You've come
+to expect nothing less from this batch of pixies, it seems the thrive on
+sexual energy.  You even think that if they were deprived of it they'd
+probably all shrivel up and die.  Standing in the very center of the ring is
+the totally naked healer, urging all the folk around her on to greater feats
+of sexual pervesion and casting spells of healing and refreshment to make
+sure they all manage to continue and survive the general orgy taking place
+here.  
+~
+0 140300 3
+Rd     0
+D2
+~
+~
+0 0 8117
+S
+#8120
+A laboratory~
+~
+~
+This cavernous room is filled with strange equipment and bubbling beakers.  To
+the north is a curtained doorway.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 8191
+S
+#8121
+General Supply~
+~
+~
+This small shop serves as the general trading store of the castle.  It is
+here that clan members can buy their basic supplies,as well as sell ones
+that have been found.  The condition of this store is rather disturbing,
+nothing has been touched or moved out of place.  Suddenly, one rack of goods
+begins to straigten itself out, preparing its goods for sale.  Tis odd
+indeed.  
+~
+0 140300 0
+Rd     0
+S
+#8122
+A secluded grove~
+~
+~
+You push through the branches in this secluded little grove.  It's
+entirely surrounded by trees.  Two things catch your attention right off. 
+One is the huge panther lazing about in the sun at the bottom of the tree. 
+The other is the tree itself.  It's absolutely huge.  Looking up into it's
+branches you can see that there's some sort of a treehouse in and among
+them.  Just above your head there seems to be a sort of door leading up into
+the treehouse.  Unfortunately it seems to be locked.  
+~
+0 393224 3
+Rd     0
+D3
+~
+~
+0 0 8110
+D4
+~
+~
+119 8197 8199
+S
+#8123
+A quiet little grove~
+~
+~
+You enter a small, secluded little grove off the main path.  The silence
+hits you almost like a physical blow.  You're so used to listening to all
+those pixies getting it on that you can hardly remember what quiet is. 
+Posted on the far tree is a large board with notes pasted all over it.  
+~
+0 8528908 3
+Rd     0
+D3
+~
+~
+0 0 8117
+S
+#8124
+Bloody Carnage~
+~
+~
+As soon as you enter this room, A huge wave of blood slams into you,
+pounding you with the force of the ocean.  Chunks of shredded flesh swirl
+around you, and the stench causes your stomach to knot up something horrid. 
+In the center of this room, is a very large man chained to the ceiling.  He
+has some very large gashes on his body, and blood pours out of him in
+gushing torrents.  This would be a vampires delight.  
+~
+0 139268 0
+Rd     0
+S
+#8125
+Before the Throne Room~
+~
+~
+You continue north through the blackened corridor, only to find yourself
+before a huge pair of oak doors.  They seem to be reinforced with a strange
+metal, and are decorated with various magic glyphs and wards.  At the base
+of the door, the tattered remains of a red rug can be seen, and a flickering
+light casts on shadows through the crack 
+~
+0 139276 0
+Rd     0
+S
+#8126
+Lord VerKapheron's Domain~
+~
+~
+You continue deeper into the cavern.  Large gouts of flame shoot forth
+from the ground, causing you to rear back from the heat.  Suddenly one of
+the flames spouts suddenly takes on the form of a huge hissing cobra.  At
+first, you think its only the heat playing tricks on you, but you soon
+realize its not.  All around you, all manners of reptiles slither forth from
+the flames, their bodies made up of pure fire.  
+~
+0 131084 0
+Rd     0
+D1
+~
+~
+0 0 8127
+S
+#8127
+Throne of the OverLord~
+~
+~
+As you continue deeper into the cavern, a huge wall of black flames
+erupts from the ground, ending your march.  Oddly enough, this fire does not
+burn as should a normal flame.  Slowly, a huge throne begins to mold itself
+from the flames.  Within moments, a pair of 14 foot tall cobras branch out
+from beneath the throne.  Gripped with fear, you try to run..  Only to find
+yourself engulfed in the black flames.  
+~
+0 132108 0
+Rd     0
+D3
+~
+~
+0 0 8126
+D5
+~
+~
+0 0 8111
+S
+#8128
+Swirling Mist above Magog~
+~
+~
+You surface amongst a strange and twirling mist.  Below you see nothing
+but darkness that encompasses all who encounter it.  This strange land is
+the Magog, home to all that is evil on Apocalypse.  A strange array of
+echoes ripple of your skull, as you proceed with the upmost care.  
+~
+0 132104 0
+Rd     0
+D5
+~
+~
+0 0 8129
+S
+#8129
+Entrance to Magog~
+~
+~
+The ceiling of this room stretches up forming a maze of arches and colourful
+decorations resembling many battles and subsequent deaths.  A rose is
+engraved into the cold marble floor.  Looking closely you notice that the
+rose seems to be bleeding the blood of those who scream on Apocalypse.
+A giant cyclops serves those who are loyal to Magog, for they are pure evil.
+~
+0 2229260 0
+Rd     0
+D4
+~
+~
+0 0 8128
+S
+#8130
+The Four Seasons~
+~
+~
+This small tavern is well-lit by a roaring fireplace in the east wall,
+and the rustic decor and pleasant aromas evoke a comfortable feeling.  This
+is where most of the members of the Order congregate when not adventuring;
+you see several familiar faces among the tavern's patrons, and you feel the
+urge to sit in front of the fire and soak up warmth and ale.  
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 8143
+S
+#8131
+The Meeting Room~
+~
+~
+This huge room is where the higher-echelon members of the Order meet.  A
+huge wooden table dominates the room, and the symbol of the order, a giant
+gear, is emblazoned on a huge tapestry on the wall.  
+~
+0 393224 0
+Rd     0
+E
+tapestry~
+__
+          /\|  |/ \
+        _\        /_
+       |            |
+        --        --
+         /        \
+          \/|__|\ /
+~
+D3
+~
+~
+0 0 8195
+S
+#8132
+Chambers of the Master of the Order~
+~
+~
+This huge well-furnished chamber has been set aside as the personal room
+of the current Master of the Order.  The decor is luxurious; thick
+carpeting, antique wood furniture, and colorful tapestries greet your eyes,
+and the bed is of epic proportions.  
+~
+0 8 0
+Rd     0
+D1
+~
+door~
+3 0 8195
+S
+#8133
+The Armory~
+~
+~
+This small hut is full of wooden crates scattered haphazardly about. 
+Weapons of every age and make are crammed into display cases, and thick
+suits of hide armor sit side by side with futuristic security jackets.  You
+can also get weapons and other objects repaired here; Jahdeel is an expert
+smith also.  
+~
+0 67502088 0
+Rd     0
+D3
+~
+~
+0 0 8144
+S
+#8134
+Hall of Shops~
+~
+~
+You are amidst a long dark hallway that leads past all the major shops.  You
+feel power eminating off the walls into your bones about you.  A song is
+chanted from within the shadows.  To the south you can see an ancient sage
+practicing magic.
+~
+0 2229260 0
+Rd     0
+S
+#8135
+The Palace of Portals~
+~
+~
+This large stone building has been erected inside the mammoth Citadel of
+the Clockwork Order.  Stained glass windows depicting events from several
+different eras allow the artificial light generated on the Promenade to
+filter in, illuminating portals set into alcoves along the walls.  To the
+east is a small arch.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 8145
+D2
+~
+~
+0 0 8144
+S
+#8136
+In the jacuzzi~
+~
+~
+You relax in the bubbling waters of the jacuzzi, letting all the
+tension you've got from adventuring fade.  You can climb up, out of the
+jacuzzi, but why would you want to do that?  
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 0
+S
+#8137
+...~
+~
+~
+You enter into a giant maze of blue light that comes from different
+cracks in the wall and floor.  A tall beast stands before like some alien
+life form protecting the area.  
+~
+0 4 0
+Rd     0
+S
+#8138
+...~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#8139
+First Temporal Bank~
+~
+~
+This large bank is very busy, as bank clerks rushed around with papers
+and sacks of coins.  This bank tracks accounts through several different
+time periods in many dimensions, and the bank employees have a lot of work
+to do.  
+~
+0 17170440 0
+Rd     0
+D0
+~
+~
+0 0 8140
+S
+#8140
+The promenade~
+~
+~
+This wide thoroughfare runs north and south through the tower.  Large
+windows in the arched walls allow a generous amount of light to filter down,
+and here and there are large stone planters, filled with verdant greenery. 
+To the south is an imposing stone building.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8141
+D2
+~
+~
+0 0 8139
+D3
+~
+door~
+3 0 8155
+S
+#8141
+The promenade~
+~
+~
+You continue along the promenade, enjoying the sights and sounds of the
+crowds and stores.  To the east is some sort of shop with a sign depicting a
+wheel and cog over it.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8142
+D1
+~
+~
+0 0 8146
+D2
+~
+~
+0 0 8140
+S
+#8142
+The promenade~
+~
+~
+The promenade continues on, running north and south.  To the east is what
+seems to be some sort of grocery.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8143
+D1
+~
+~
+0 0 8148
+D2
+~
+~
+0 0 8141
+S
+#8143
+The promenade~
+~
+~
+The lovely promenade passes by a cozy-looking tavern to the east.  Above
+you beautiful trees form a lush canopy, and you feel relaxed as you stroll
+along.  To the north the promenade comes to an end at a large building.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8144
+D1
+~
+~
+0 0 8130
+D2
+~
+~
+0 0 8142
+S
+#8144
+The promenade~
+~
+~
+The promenade ends here, before a large gothic stone building.  To the
+east a small hut houses some sort of shop, while to the south the
+promenade runs past several stores.
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8135
+D1
+~
+~
+0 0 8133
+D2
+~
+~
+0 0 8143
+S
+#8145
+A lounge~
+~
+~
+This room is full of armchairs and tables placed before a large
+fireplace.  A luxurious carpet cushions your feet, while the crackling of
+the fire fills the room with a feeling of warmth.  
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 8135
+S
+#8146
+Automata~
+~
+~
+You stand in a small workshop where various mechanized constructs are
+created.  Tools and machine parts are scattered about, and half-finished
+automata stand around.
+~
+0 397320 0
+Rd     0
+D3
+~
+~
+0 0 8141
+S
+#8147
+Automata storage room~
+~
+~
+Storage room for pets for automata shop.
+~
+0 4 0
+Rd     0
+S
+#8148
+The grocer~
+~
+~
+In this exotic grocery you can buy fresh produce, meat, and other types
+of food from across the timeline.  Prehistoric melons the size of boulders
+sit side by side with genetically engineered tomatos and roasted haunch of
+mastodon.  To the west you can re-enter the promenade.  
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 8142
+S
+#8149
+~
+~
+~
+~
+0 132108 0
+Rd     0
+S
+#8150
+Before the Citadel~
+~
+~
+You stand before the massive citadel of the Clockwork Order.  The huge
+structure is made to look like a huge set of gears made of stone, iron, and
+brass.  The entrance gate is to the north; above it hangs a huge clock
+constructed of components of unbelievable intricity and beauty.
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 8151
+D2
+~
+~
+0 0 8100
+S
+#8151
+A stone corridor~
+~
+~
+This tunnel leads into the Citadel, running from the entrance gate to the
+south towards a courtyard to the north.  You hear the faint sound of chimes
+in the distance.  
+~
+0 393220 0
+Rd     0
+D0
+~
+~
+0 0 8152
+D2
+~
+~
+0 0 8150
+S
+#8152
+A stone corridor~
+~
+~
+This corridor connects the main gate of the Citadel to a lush courtyard
+that lies to the north.  The stones that make up the floor and walls are
+smooth and well-worn by the passage of time.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8153
+D2
+~
+~
+0 0 8151
+S
+#8153
+The courtyard~
+~
+~
+This lush courtyard radiates peace and order.  Stone pathways lead
+through patches of emerald green grass and clumps of tall, straight trees. 
+In the center of the courtyard, to the north, lies a huge sundial.  
+~
+0 393220 0
+Rd     0
+D0
+~
+~
+0 0 8154
+D1
+~
+~
+0 0 8160
+D2
+~
+~
+0 0 8152
+D3
+~
+~
+0 0 8159
+S
+#8154
+The center of the courtyard~
+~
+~
+Here, in the center of the well-ordered courtyard lies a huge white fountain
+made of shining white marble.  On all sides of you rise the vast walls of the
+citadel, casting the courtyard into perpetual shade.  The air is cool and
+comfortable.
+~
+0 132104 0
+Rd     0
+D0
+~
+~
+0 0 8157
+D1
+~
+~
+0 0 8155
+D2
+~
+~
+0 0 8153
+D3
+~
+~
+0 0 8156
+S
+#8155
+In the courtyard~
+~
+~
+You stand at the eastern end of the courtyard.  A stone path leads west
+to a large fountain, while to the east is a large wooden door.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8161
+D1
+~
+door~
+3 0 8140
+D2
+~
+~
+0 0 8160
+D3
+~
+~
+0 0 8154
+S
+#8156
+In the courtyard~
+~
+~
+You stand at the western edge of the courtyard.  To the west is a large
+oaken door leading in all other directions Citadel, while to the lies the
+cool pleasantness of the courtyard.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8158
+D1
+~
+~
+0 0 8154
+D2
+~
+~
+0 0 8159
+D3
+~
+door~
+3 0 8162
+S
+#8157
+In the courtyard~
+~
+~
+You stand at the north edge of the courtyard, before a large wooden
+door inlaid with brass.  You can enter the Citadel proper by going northward
+through the door, while in all other directions lies the bucolic splendor of
+the courtyard.  
+~
+0 0 0
+Rd     0
+D0
+~
+door~
+3 0 8180
+D1
+~
+~
+0 0 8161
+D2
+~
+~
+0 0 8154
+D3
+~
+~
+0 0 8158
+S
+#8158
+In the courtyard~
+~
+~
+You stand in the northwest corner of the courtyard.  Among the trees
+is a small alcove, in which stands a white marble statue.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 8157
+D2
+~
+~
+0 0 8156
+S
+#8159
+In the courtyard~
+~
+~
+In the southwestern corner of the courtyard, a large marble statue of
+forbidding aspect has been erected.  The sounds of the Citadel sound muted
+here, and the air is uncomfortably cool.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8156
+D1
+~
+~
+0 0 8153
+S
+#8160
+In the courtyard~
+~
+~
+In this corner of the courtyard a marble statue stands amidst the trees
+and shrubbery.  This part of the courtyard is somewhat more wild than the
+rest, and the brambles are unusually dense here.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 8155
+D3
+~
+~
+0 0 8153
+S
+#8161
+In the courtyard~
+~
+~
+This corner of the courtyard is cool and pleasantly moist.  A white
+marble statue rises up from the fragrant grass, and you feel the urge to
+simply lie down and rest for a while.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 8155
+D3
+~
+~
+0 0 8157
+S
+#8162
+A corridor~
+~
+~
+This corridor runs through the halls of the Citadel of Time, running west
+from a windowed door which looks out into the courtyard.  The decor in the
+hall is eclectic indeed; trophies, paintings, and tapestries from many
+different time periods grace the walls, and the overall atmosphere is calm
+and serene.  
+~
+0 393228 0
+Rd     0
+D1
+~
+door~
+3 0 8156
+D3
+~
+~
+0 0 8163
+S
+#8163
+A corridor~
+~
+~
+The corridor continues east and west.  Here a series of paintings have
+been hung.  They depict an ancient civilizations growth from small village
+to mighty nation, and finally to ruin at the hands of barbarian invaders. 
+You pause sadly to contemplate the great works created before the nation's
+downfall, knowing that this is the eventual outcome of all civilizations.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 8162
+D3
+~
+~
+0 0 8164
+S
+#8164
+An intersection~
+~
+~
+The corridor branches here, heading north, east, and south.  To the north
+the Citadel seems busier, while to the east and south you hear nothing, save
+the soft bubbling of water.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8165
+D1
+~
+~
+0 0 8163
+D2
+~
+~
+0 0 8167
+S
+#8165
+A corridor~
+~
+~
+This wide corridor runs north and south through the citadel.  Artifacts
+from various historical artifacts line the walls, ranging from intricate
+paintings to ancient tribal symbols.
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8166
+D2
+~
+~
+0 0 8164
+S
+#8166
+A corridor~
+~
+~
+At this point the corridor runs past a small library to the west and
+what appears to be a study to the east.  To the north it makes a turn,
+heading east.
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8192
+D1
+~
+~
+0 0 8183
+D2
+~
+~
+0 0 8165
+D3
+~
+~
+0 0 8182
+S
+#8167
+A corridor~
+~
+~
+This north-south hallway is decorated like most of the Citadel's
+corridors: tasteful hangings and the works of master painters line the
+walls, while strange devices of advanced design shed a warm light.
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8164
+D2
+~
+~
+0 0 8168
+S
+#8168
+A corridor~
+~
+~
+The corridor turns here, heading west and north, while to the east is a
+large door.  To the south lies a peaceful alcove, filled with plants.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8167
+D1
+~
+~
+0 0 8170
+D2
+~
+~
+0 0 8169
+D3
+~
+~
+0 0 8171
+S
+#8169
+An alcove~
+~
+~
+In this alcove the custodians of the Citadel have placed a wide variety
+of potted plants and vines.  They surround a large water clock, a graceful
+machine constructed of bronze and glass.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 8168
+S
+#8170
+A guard station~
+~
+~
+In this large room the human guardians of the Citadel coordinate it's
+defenses.  Large screens line the walls, showing views of different areas of
+the Citadel, as well as the coordinates and vital statistics of it's
+mechanized guardians.  The most impressive piece of equipment is what seems
+to be a large targeting computer in the corner, which controls the aerial
+defenses located at the top of the Citadel.  
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 8168
+S
+#8171
+A corridor~
+~
+~
+The corridor runs east and west through the Citadel.  To the east it
+makes a turn to the north, while to the west you notice a set of stairs
+leading down.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 8168
+D3
+~
+~
+0 0 8172
+S
+#8172
+The stairs~
+~
+~
+The corridor ends here, at a set of large metal stairs that lead down into
+the gloom.  From below you can hear the sound of running water.
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 8171
+D5
+~
+~
+0 0 8173
+S
+#8173
+The underground river~
+~
+~
+You have entered an enormous cavern that lies beneath the Citadel's
+foundations.  Through it runs an underground river, on the banks of which is
+a large dock complex at which many craft are moored.  The watercraft come
+from every conceivable era, and ancient canoes stand next to futuristic
+speedboats, and piratical longships bob gently next to high-tech hovercraft.
+~
+0 393224 0
+Rd     0
+D4
+~
+~
+0 0 8172
+S
+#8180
+An antechamber~
+~
+~
+This large room is sumptously decorated with many ancient, modern, and
+future works of art.  The floor is marble, and red velvet curtains hang from
+the walls.  To the north an archway leads into an even larger room; there
+seems to be a lot of activity there.  
+~
+0 393220 0
+Rd     0
+D0
+~
+~
+0 0 8181
+D2
+~
+door~
+3 0 8157
+S
+#8181
+The Time Chamber~
+~
+~
+This walls of this huge, cathedral-like chamber are made of some strange
+crystalline substance, and arch hundreds of feet into the air.  They glow
+faintly, filling the room with a brilliant ambience, the beauty of which
+takes your breath away.  To the north rises a large structure, while to the
+south you can enter the courtyard.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8184
+D2
+~
+~
+0 0 8180
+S
+#8182
+The library~
+~
+~
+This small room is filledwith several hundred leatherbound volumes, the
+subjects of which run the gamut from biography to mathematics.  Most of
+them, though, seem to be historical works, though.  The library is peaceful,
+with several comfortable-looking chairs spread throughout, and you feel the
+urge to sit down and lose yourself in a book.  
+~
+0 425992 0
+Rd     0
+D1
+~
+~
+0 0 8166
+S
+#8183
+A study~
+~
+~
+This small study has been provided to allow members of the Order to train
+and study.  Several ancient oak desks are here, with comfortable chairs and
+various writing materials and books.  Pictures of the founders of the order
+line the walls, and leafy ferns give the room a more natural atmosphere.  
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 8166
+S
+#8184
+Before the Chronomech~
+~
+~
+You stand in the center of the enormous Time Chamber, heart of the
+Citadel.  The walls arch hundreds of feet into the air , filling you with
+awe at their unbelievable majesty.  You can hear a faint thudding sound, not
+unlike the beating of a heart, emanating from deep within the Citadel.  Here
+an enormous construction has been placed: the fabled Chronomech, a sentient
+piece of machinery so complex and beautiful that it's said the gods
+themselves had a hand in it's making.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 8187
+D1
+~
+~
+0 0 8186
+D2
+~
+~
+0 0 8181
+D3
+~
+~
+0 0 8185
+S
+#8185
+The Time Chamber~
+~
+~
+The crystalline walls of this enormous room fill the air with blue
+brilliance, and you feel a sense of majesty and power emanating from the
+room.  To the east is a large construct of some sort, while to the west you
+can enter a hallway.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 8184
+D3
+~
+~
+0 0 8193
+S
+#8186
+The Time Chamber~
+~
+~
+This vast crystaline chamber houses some large construct that lies to the
+west.  The walls glow faintly, and you sense great age and power emanating
+from the floors and walls of this mystical place.  
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 8184
+S
+#8187
+The Time Chamber~
+~
+~
+You stand in the northern section of the Time Chamber.  Faintly
+glowing crystalline walls arch above you, and you feel a sense of great power
+emanating from the center of the room, to the south.  To the north you can
+enter a strange room.  
+~
+0 393228 0
+Rd     0
+D0
+~
+~
+0 0 8188
+D2
+~
+~
+0 0 8184
+S
+#8188
+The lift (main level)~
+~
+~
+This ingenious creation will ferry you to other levels of the Citadel. 
+The lift is spacious and comfortable, with heavy carpeting and places for
+the weary traveller to sit down as they wait to reach their destination.  A
+control panel is here, allowing use of the lift.  
+~
+0 394760 0
+Rd     0
+D2
+~
+~
+0 0 8187
+S
+#8189
+The lift (upper level)~
+~
+~
+This ingenious creation will ferry you to other levels of the Citadel.
+The lift is spacious and comfortable, with heavy carpeting and places for
+the weary traveller to sit down as they wait to reach their destination.  A
+control panel is here, allowing use of the lift.
+~
+0 394752 0
+Rd     0
+D0
+~
+~
+0 0 8194
+S
+#8190
+The lift (lower level)~
+~
+~
+This ingenious creation will ferry you to other levels of the Citadel.
+The lift is spacious and comfortable, with heavy carpeting and places for
+the weary traveller to sit down as they wait to reach their destination.  A
+panel is here, allowing control of the lift.
+~
+0 394248 0
+Rd     0
+D2
+~
+~
+0 0 8191
+S
+#8191
+The museum~
+~
+~
+This cavernous chamber is filled with thousands of artifacts that have
+been collected by members of the Order from several different eras.  Huge
+stone monoliths stand next to delicate golden statues, while lining the
+walls are hundreds of beautiful paintings.  There seems to be little order
+to the collection; everything is scattered about haphazardly.  There seems
+to be no security measures, a thought which puzzles you until you notice
+that one of the huge statues has begun to move...  
+You notice a small curtained doorway that leads south.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 8190
+D2
+~
+~
+0 0 8120
+S
+#8192
+A turn in the corridor~
+~
+~
+The corridor turns here, heading east and south.  To the east a huge
+chamber opens up, and you notice great activity there.  To the south is a
+quieter corridor.  
+~
+0 393224 0
+Rd     0
+D1
+~
+~
+0 0 8193
+D2
+~
+~
+0 0 8166
+S
+#8193
+Before the Time Chamber~
+~
+~
+You stand at the verge of an enormous chamber that stretches out to the
+east.  To the west the corridor makes a turn to the south.  In this section
+of the Citadel are several small alcoves that contain sculpturef from across
+the eons.  
+~
+0 131072 0
+Rd     0
+D1
+~
+~
+0 0 8185
+D3
+~
+~
+0 0 8192
+S
+#8194
+The hall~
+~
+~
+This sumptously decorated hallway leads north from the lift.  You feel a
+cool breeze against your face; apparently there is an opening to the outside
+on this level.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8195
+D2
+~
+~
+0 0 8189
+S
+#8195
+The hall~
+~
+~
+The hall ends here, with doors to the east and west, and an arched
+passage to the north that opens up into an outdoor patio.  To the south the
+hall stretches towards the lift.  
+~
+0 393224 0
+Rd     0
+D0
+~
+~
+0 0 8196
+D1
+~
+~
+0 0 8131
+D2
+~
+~
+0 0 8194
+D3
+~
+~
+3 0 8132
+S
+#8196
+A small courtyard~
+~
+~
+This small ledge looks out to the north of the CItadel, where a range of
+massive mountains fills your vision.  Beneath your feet is not stone, but
+grass, and a few small trees have been placed here for affect.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 8195
+S
+#8198
+A hidden lair~
+~
+~
+This large room is filled to overflowing with treasure; chests of gold,
+fine art, luxurious rugs and beautifully crafted weapons and armor lie all
+around.  In the center of the room is a mystical pool, in which shimmers the
+image of Methidoral.  
+~
+0 4 0
+Rd     0
+S
+#8199
+Derk's private sanctum~
+~
+~
+This is Derk's private sanctum, here he can escape the cares and worries
+of this world or the next by retreating here.  A large bearskin rug lies on
+the floor in front of the fireplace with a cheery fire blazing merrily away
+within it.  All sort of things clutter up the room from ancient weapons,
+rusting armor to moldy scrolls and some things you think you might have an
+idea of what they are, but don't really want to think about it.  What Derk
+does with his own time is his own business.  
+~
+0 16777740 0
+Rd     0
+D5
+~
+~
+119 8197 8122
+S
+#0
+
+
+
+#SPECIALS
+M 8119 spec_healer
+M 8125 spec_breath_acid
+M 8129 spec_healer
+M 8133 spec_executioner
+M 8134 spec_guard
+M 8162 spec_cast_mage
+M 8182 spec_cast_mage
+M 8193 spec_cast_mage
+M 8195 spec_cast_mage
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 8110 1 8101
+M 0 8104 1 8104
+M 0 8113 1 8105
+M 0 8168 1 8130
+G 0 8165 0
+G 0 8163 0
+G 0 8164 0
+M 0 8165 1 8130
+E 0 8141 0 5
+E 0 8139 0 23
+E 0 8140 0 20
+M 0 8193 1 8131
+E 0 8153 0 2
+E 0 8120 0 16
+E 0 8187 0 20
+M 0 8167 1 8133
+G 0 8178 0
+G 0 8186 0
+O 0 8172 0 8135
+O 0 8174 0 8135
+M 0 8186 1 8135
+E 0 8148 0 20
+E 0 8147 0 5
+M 0 8139 1 8139
+M 0 8185 1 8141
+M 0 8180 1 8143
+M 0 8105 1 8145
+E 0 8105 0 20
+E 0 8107 0 11
+E 0 8108 0 5
+E 0 8106 0 23
+E 0 8104 0 7
+M 0 8146 1 8146
+M 0 8147 1 8147
+M 0 8148 1 8148
+G 0 8167 0
+M 0 8152 1 8152
+M 0 8154 1 8154
+M 0 8185 1 8164
+E 0 8184 0 16
+M 0 8187 1 8167
+E 0 8155 0 20
+E 0 8156 0 5
+M 0 8180 1 8167
+M 0 8170 1 8170
+M 0 8150 1 8170
+M 0 8182 1 8182
+O 0 8190 0 8184
+M 0 8150 1 8184
+M 0 8180 1 8185
+M 0 8187 1 8186
+E 0 8156 0 5
+E 0 8186 0 20
+M 0 8185 1 8186
+E 0 8175 0 20
+M 0 8190 1 8188
+M 0 8190 1 8188
+M 0 8191 1 8189
+M 0 8192 1 8190
+M 0 8192 1 8190
+M 0 8195 1 8191
+E 0 8191 0 2
+E 0 8192 0 20
+E 0 8193 0 16
+M 0 8153 1 8195
+M 0 8198 1 8199
+S
+
+
+
+#SHOPS
+8104 0 0 0 0 0 100 100 1 23
+8120 17 19 18 0 0 100 50 0 24
+8121 10 2 4 3 8 100 50 0 24
+8122 15 17 8 19 18 100 50 0 24
+8124 5 9 15 0 0 100 100 0 24
+8130 10 2 4 3 26 100 100 0 24
+8131 1 19 15 17 8 100 100 0 24
+8148 0 19 0 0 0 100 100 600 1800
+8167 5 9 0 0 0 100 100 10 23
+8168 17 19 0 0 0 100 100 300 600
+0
+
+
+
+#$

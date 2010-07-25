@@ -1,0 +1,7829 @@
+#AREADATA
+Name        { 50-80} Dark Forest         Sicarius~
+Levels      50 80
+Builders    Caimen Sicarius~
+VNUMs       27000 27399
+Security    213
+Recall      25000
+Flags       64
+Color       6
+End
+
+
+
+#MOBILES
+#27000
+kiru~
+the Kiru~
+A ferocious Kiru is standing here, considering how he should kill you
+~
+You see a large creature that looks like a vampire but it has great
+leathery wings like a dragon. His eyes are bright red and his scaly body is
+pitch black. From what you remember of the tales of the first great war these
+creatures rode on blood panthers and led squadrons of orcs into villages and
+literally wiping out scores of men and women
+~
+8289 268435968 163840 -1000 S
+80 0 -160 24000d0+0 0d0+0
+25 10 0 0
+0 0 0
+8194 0 0
+>fight_prog 20~
+shriek
+~
+>fight_prog 25~
+emote lunges at you!
+bite
+~
+>fight_prog 15~
+glare $n
+c hex $n
+~
+|
+#27001
+ghost marius~
+The ghost of Marius~
+The ghost of the once great magician Marius is floating around you.
+~
+You see a tall man with big brown eyes. He looks very noble but sad as well.
+You can tell that he had many things on his mind when he died because of all
+the wrinkles on his forehead.
+~
+65 17302060 327680 80 S
+75 0 -150 22500d0+0 0d0+0
+2 5 0 0
+0 0 0
+2 0 0
+>rand_prog 2~
+moan
+~
+>all_greet_prog 100~
+say &COnce I was a &Rmighty magician&C. Many feared me, and many more sought for the secret to my powers.
+say &g and now look at me, all &Ywashed up&g.
+~
+>speech_prog power~
+say &GAnd what is it you think you know about power?
+say &GWould you like to see a &Rdemonstration of my &YPower?
+~
+>speech_prog Yes~
+say &PVery well then.
+c shatter $n
+~
+>fight_prog 25~
+say &RBah!&BIs that the best you can do?
+c chain
+~
+>speech_prog magician~
+sigh
+say Yes, I had much &Rpower&C, but now I am greatly diminished.
+~
+>speech_prog no~
+emote smiles tiredly at you
+say You are very wise.
+~
+|
+#27002
+witch~
+a witch~
+A witch is upset that you have found her and attacks you.
+~
+An ugly looking thing with warts all over her face and a body odor that you
+will never be able to forget is upset that you have found her secret hiding
+place and is now determined to kill you for your stupidity.
+~
+99 8336 98432 -500 S
+60 0 -120 12000d0+0 0d0+0
+7 8 123 0
+0 0 2
+2 0 0
+#27003
+blood panther female~
+a blood panther~
+A blood panther is stealthily stalking her prey.
+~
+You see something that looks exactly like a normal panther but it is twice the
+size of a traditional panther and has a blood red coat. You catch a glimpse of
+her teeth and you feel like fainting.
+~
+16385 107176 196624 0 S
+60 0 -120 12000d0+0 0d0+0
+1 2 3 0
+0 0 2
+0 0 0
+#27004
+blood panther male~
+a blood panther~
+A blood panther is stealthily stalking his prey
+~
+You see something that looks exactly like a normal panther but it is twice the
+size of a traditional panther and has a blood red coat. You catch a glimpse of
+his teeth and you feel like fainting.
+~
+65 107176 196624 0 S
+60 0 -120 12000d0+0 0d0+0
+12 2 3 0
+0 0 1
+0 0 0
+#27005
+red wolf~
+a red wolf~
+A hungry red wolf is looking for something to kill.
+~
+You see a mean looking wolf with huge teeth and a red coat. The red color
+shifts and changes into different shades of red, making it look like it is wet
+~
+1 98984 196624 0 S
+60 0 -120 12000d0+0 0d0+0
+16 2 3 0
+0 0 0
+0 0 0
+#27006
+spirit~
+a wandering spirit~
+A wandering spirit of a sad looking man floats here.
+~
+You see a sad looking man who looks like he is looking for something.
+~
+1 0 0 0 S
+4 0 0 0d0+0 0d0+0
+1 2 3 0
+0 0 0
+0 0 0
+#27007
+young spider~
+a young spider~
+The young spider is ballooning by you.
+~
+He looks freshly hatched and sprightly.  His young fangs are just
+growing in as of late.
+~
+1 8832 196624 0 S
+55 0 -110 8250d0+0 0d0+0
+6 2 3 0
+0 0 0
+0 0 0
+#27008
+spider wolf~
+a spider wolf~
+The Wolf Spider is here, licking its bloody fangs.
+~
+The Wolf Spider is hairy, very hairy.
+~
+1 8832 196624 0 S
+60 0 -120 12000d0+0 0d0+0
+1 2 3 0
+0 0 0
+0 0 0
+#27009
+black serpent~
+a large black serpent~
+A large black serpent tries to bite you!
+~
+A large black snake with fierce red eyes and a body that looks like it might be
+30 feet long opens its mouth and shows you it's 5 inch long and poisonous
+fangs.
+~
+1 123008 196624 0 S
+60 0 -120 12000d0+0 0d0+0
+8 2 3 0
+0 0 0
+2048 0 0
+#27010
+goblin soldier~
+goblin soldier~
+A mean looking goblin soldier is standing here.
+~
+A gross looking creature with dark leathery skin and blood stains all over his
+filthy body. He grunts and looks very upset at having to be on duty when he
+could be out killing women and children.
+~
+65 552 458768 0 S
+60 0 -120 12000d0+0 0d0+0
+23 2 3 0
+0 0 0
+0 0 0
+#27011
+Beriz demon~
+beriz demon~
+Beriz the Demon is crouched here, thinking of ways to corrupt you
+~
+You see a huge demon, his eyes are blood red and his skin looks to be charred
+black. He looks like he is about to eat you alive or at least cut you up into
+little pieces and play with your body parts as you are forced to watch in
+terror.
+~
+1065057 504373880 229552 -1000 S
+90 0 -180 27000d0+0 0d0+0
+50 2 3 0
+0 0 0
+130 0 0
+#27012
+goblin ugly~
+an ugly old goblin~
+A huge and ugly goblin is upset that you have entered his lair.
+~
+You see a huge and ugly troll twice your size. He was obviously trying to
+get some beauty sleep when you barged in on his home unannounced. So it
+looks like he is going to have to kill you.
+~
+1 8832 196624 0 S
+65 0 -130 19500d0+0 0d0+0
+1 2 3 0
+0 0 0
+0 0 0
+#27013
+goblin Overlord~
+a Goblin Overlord~
+A huge War Goblin leader of a goblin horde
+~
+A huge Goblin highly skilled in the arts of war and death
+~
+99 74474 65568 0 S
+80 0 -160 24000d0+0 0d0+0
+20 2 3 0
+0 0 0
+0 0 0
+#27014
+strange traveler~
+a strange traveler~
+A mysterious traveler is here
+~
+He is cloaked in dark robes
+~
+1 0 0 0 S
+4 0 0 0d0+0 0d0+0
+1 2 3 0
+0 0 0
+0 0 0
+>act_prog p looks at you.~
+mpecho Did this work?
+~
+|
+#27015
+Tyrannosaur~
+the tyrannosaurus rex~
+The huge Tyrannosaurus Rex is stamping about here!
+~
+A giant lizard, with a small brain, but a very canny ability to seek out it's prey. Might not want to be in the path of this behemoth.
+~
+65 64 491520 0 S
+90 0 -180 27000d0+0 0d0+0
+0 0 0 0
+0 0 0
+2 0 0
+>fight_prog 35~
+mpecho The Tyrannosaur utters a thundering &RROAR!
+stun
+~
+|
+#27101
+witch hag woman~
+a witch~
+A robust woman grins as she watches you in her cottage
+~
+She appears to be an old woman whom you guess to be a witch since
+she has in her hand a wand, and in the room is a magical red book.
+~
+3 0 0 0 S
+90 0 -180 27000d0+0 0d0+0
+1 2 3 0
+0 0 2
+0 0 0
+#27102
+sailor~
+the sailor~
+A stranded sailor stands here, selling boats.
+~
+It appears that this sailor's captain has left him here on the dock.
+~
+1 0 0 0 S
+4 0 0 0d0+0 0d0+0
+1 2 3 0
+0 0 0
+0 0 0
+#27103
+dragonfly~
+a dragonfly~
+A small dragonfly is here
+~
+The dragonfly is small but very colorfull
+~
+1 67650048 196624 0 S
+60 0 -120 12000d0+0 0d0+0
+10 2 3 0
+0 0 0
+0 0 0
+#27104
+squid~
+a squid~
+An ugly squid is here
+~
+It is very very ugly and very mean!
+~
+1 0 0 0 S
+60 0 -120 12000d0+0 0d0+0
+15 2 3 0
+0 0 0
+0 0 0
+#27105
+sea monster~
+sea monster~
+A large sea monster is here
+~
+A very large ugly beast
+~
+1 0 0 0 S
+70 0 -140 21000d0+0 0d0+0
+20 2 3 0
+0 0 0
+0 0 0
+#27106
+giant octopus~
+a giant octopus~
+A giant octopus surfaces and attacks you
+~
+Its tentacles reach out to strangle you
+~
+33 0 0 0 S
+65 0 -130 19500d0+0 0d0+0
+16 2 3 0
+0 0 0
+0 0 0
+#27164
+wooly mamoth~
+a wooly mamoth~
+A huge, wooly mamoth is here!
+~
+A massive, ophid beast is here before you. It's thick, shaggy coat seems like it would be perfect protection from this cold.
+~
+65 134217856 131088 0 S
+70 0 -140 21000d0+0 0d0+0
+20 45 0 0
+0 0 0
+2 0 0
+>fight_prog 35~
+The mamoth utters a loud trumpeting through it's trunk.
+stun
+~
+|
+#27219
+yeti abominable snowman~
+a yeti~
+The legendary Yeti stands here.
+~
+Before you stands a huge, shaggy beast.  It's eyes are red, and it's paws
+end in huge, clawed paws.  It looks like the legendary abominable snowman of
+lore!  
+~
+33 134218240 393232 0 S
+80 0 -160 24000d0+0 0d0+0
+30 28 0 0
+0 0 0
+256 0 0
+>fight_prog 25~
+howl
+rake
+~
+|
+#27311
+Dr Livingstone~
+Dr Livingstone~
+Dr Livingstone is standing here!
+~
+Before you stands a short, stoutish man, wearing a pith helmet, khaki pants and shirt.
+He appears to be somewhat frazzled, as if all this being lost in the jungle is a bit much for him
+~
+393219 64 16 0 S
+80 0 -160 24000d0+0 0d0+0
+0 0 0 0
+0 0 0
+0 0 0
+#27314
+amazon pirrannah fish~
+a nasty fish~
+A fish with loads of teeth is swimming malevolently here!
+~
+~
+33 122880 65536 0 S
+65 0 -130 19500d0+0 0d0+0
+25 0 0 0
+0 0 0
+0 0 0
+#27329
+monkey~
+a large monkey~
+A large monkey screams at you from the trees!
+~
+~
+65 98920 16 0 S
+60 0 -120 12000d0+0 0d0+0
+20 0 0 0
+0 0 0
+0 0 0
+#27338
+fire ant~
+a huge fire ant~
+A Huge Fire Ant is standing here!
+~
+~
+67 33562688 196624 0 S
+60 0 -120 12000d0+0 0d0+0
+23 58 0 0
+0 0 0
+128 0 0
+#27342
+Soldier fire ant~
+a fire ant guard~
+A Huge Fire Ant Guard stands at attention here!
+~
+~
+35 33562688 196624 0 S
+70 0 -140 21000d0+0 0d0+0
+32 51 0 0
+0 0 1
+128 0 0
+#27343
+King Hormiga~
+King Hormiga~
+The mighty lord of the fire ants, King Hormiga is here!
+~
+~
+35 33562688 196624 0 S
+90 0 -180 27000d0+0 0d0+0
+60 55 0 0
+0 0 1
+128 0 0
+#27344
+Queen Hormigetta~
+Queen Hormigetta~
+Queen Hormigetta, the legendary queen of the fire ants is here!
+~
+~
+35 33562688 196624 0 S
+90 0 -180 27000d0+0 0d0+0
+75 0 0 0
+0 0 2
+128 0 0
+#27346
+Worker bee~
+a worker bee~
+A Worker Bee is buzzing Buzzily here!
+~
+~
+65 540672 0 0 S
+60 0 -120 12000d0+0 0d0+0
+17 25 0 0
+0 0 0
+0 0 0
+#27347
+Drone bee~
+a drone bee~
+A Drone Bee is buzzing importantly here
+~
+~
+65 548928 0 0 S
+70 0 -140 21000d0+0 0d0+0
+27 42 0 0
+0 0 1
+0 0 0
+#27351
+Queen bee~
+the Queen Bee~
+The Queen Bee is buzzing royally here!
+~
+~
+1048611 548928 196608 0 S
+90 0 -180 27000d0+0 0d0+0
+35 54 0 0
+0 0 2
+0 0 0
+#27360
+headhunter~
+a headhunter~
+A headhunter eyes you as his next trophy!
+~
+A large, brown native stands before you. wearing a grass skirt, with a bone through his nose.
+he has several shrunken heads hanging from his belt, and looks like he would like to have you for a bite.
+~
+97 40 0 -500 S
+80 0 -160 24000d0+0 0d0+0
+0 0 0 0
+0 0 0
+0 0 0
+#27365
+tiger~
+a hungry tiger~
+A hungry tiger is here, waiting to make a meal of you!
+~
+~
+35 107072 196640 0 S
+90 0 -180 27000d0+0 0d0+0
+30 0 0 0
+0 0 0
+0 0 0
+#27369
+pronghorn antelope~
+a pronghorn antelope~
+A large, proghorned antelope stands here.
+~
+~
+1 123392 262160 0 S
+70 0 -140 21000d0+0 0d0+0
+35 0 0 0
+0 0 0
+0 0 0
+>greet_prog 100~
+emote looks up, startled at $n's entrance.
+~
+|
+#27375
+elephant~
+an elephant~
+A large elephant is beating the brush for food here.
+~
+~
+1 0 393232 0 S
+75 0 -150 22500d0+0 0d0+0
+25 0 0 0
+0 0 0
+0 0 0
+#27378
+Jane~
+Jane~
+The gorgeous Jane stands here!
+~
+~
+1441795 16777216 0 0 S
+80 0 -160 24000d0+0 0d0+0
+0 0 0 0
+0 0 2
+0 0 0
+#0
+
+
+
+#OBJECTS
+#27000
+Black Serpant Staff~
+the Great Black Serpant Staff~
+The Great Black Serpant Staff is lying here
+~
+~
+4 0 0 0 16385 60
+50~ 5~ 5~ cure poison~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27001
+pitch black sword~
+a pitch black sword~
+A small black sword lies here
+~
+~
+5 20 4263 32858 8193 80
+0~ 0~ 0~ 1~
+4 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 95
+A
+18 70
+A
+26 4
+#27002
+black shield~
+a pitch black shield~
+A small black shield lies here
+~
+~
+9 20 0 0 513 80
+4~ 0~ 0~ 0~
+4 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+17 -60
+#27003
+broomstick~
+a small broomstick lies here~
+A small broomstick lies here
+~
+~
+4 0 0 0 16385 65
+65~ -1~ 0~ fly~
+3 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27004
+sword Handle~
+sword Handle~
+A sword handle lies here
+~
+~
+8 0 0 0 1 80
+0~ 0~ 0~ 0~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+27006 0 0
+#27005
+sword blade~
+a sword blade~
+A small blade of a sword lies here
+~
+~
+8 0 0 0 1 80
+0~ 0~ 0~ 0~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+27006 0 0
+#27006
+sword of destruction~
+a sword of destruction~
+A large sword lies here
+~
+~
+5 100679697 4262 32863 8193 80
+0~ 0~ 0~ 3~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+0 27004 27005
+A
+26 8
+A
+19 160
+A
+18 120
+A
+25 20
+A
+13 60
+#27007
+black armor~
+pitch black armor~
+A small set of pitch black armor lies here
+~
+~
+9 20 0 0 9 65
+0~ 0~ 0~ 0~
+5 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27008
+green herbs~
+green herbs~
+A strange looking herb lies here
+~
+~
+26 0 0 0 1 50
+50~ cure poison~ reserved~ reserved~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27009
+blue herb~
+a blue herb~
+A blue herb lies here
+~
+~
+26 0 0 0 1 0
+50~ cure damage~ cure damage~ reserved~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27010
+black herb~
+a strange black herb~
+A small black herb lies here
+~
+~
+9 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27011
+giant axe~
+a giant axe~
+A great axe lies here
+~
+~
+5 16384 0 0 8193 60
+0~ 0~ 0~ 13~
+4 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 4
+A
+19 70
+A
+18 60
+#27012
+large knife~
+a large knife~
+A large knife lies here
+~
+~
+5 1 0 0 8193 60
+0~ 0~ 0~ 2~
+3 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27013
+shroud of knowledge~
+a shroud of knowledge~
+A dark shroud lies here
+~
+~
+9 0 0 0 1025 65
+0~ 0~ 0~ 0~
+0 0 0 0 0
+5 0
+eternal intellect~
+5 5
+0 0 0
+#27014
+panther claws~
+panther claws~
+The claws of the panther lie here
+~
+~
+5 0 0 0 8193 60
+0~ 0~ 0~ 5~
+3 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 60
+A
+19 80
+#27015
+blood red armband~
+a blood red armband~
+A blood red armband lies here
+~
+~
+9 0 0 0 4097 60
+5~ 0~ 0~ 0~
+2 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27016
+A wooden raft~
+a wooden raft~
+A wooden raft is here in the water.~
+~
+22 0 0 0 16385 1
+0~ 0~ 0~ 0~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27017
+wolly mamoth skin~
+a large, shaggy fur.~
+The shaggy coat of a wolly mamoth lies here.~
+~
+9 0 0 0 1025 70
+0~ 0~ 0~ 0~
+5 0 0 0 0
+5 0
+fireshield~
+3 3
+0 0 0
+A
+17 -50
+#27219
+yeti claws~
+yeti claws~
+A pair of bloody yeti claws are on the floor here.~
+~
+5 4240 0 0 8193 80
+0~ 0~ 0~ 5~
+2 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 7
+A
+19 90
+A
+18 70
+#27300
+obj ruby key~
+a ruby key~
+A red key lies here on the floor.~
+~
+18 0 0 0 1 30
+0~ 0~ 0~ 0~
+1 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27301
+obj skull key~
+a skull key~
+A key in the shape of a skull lies here.~
+~
+18 0 0 0 1 30
+0~ 0~ 0~ 0~
+1 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27302
+obj key stick~
+a stick key~
+A very small stick lies here.~
+~
+18 0 0 0 1 30
+0~ 0~ 0~ 0~
+1 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27310
+Pith Helmet~
+a pith helmet~
+A large, pith helmet!~
+~
+9 0 0 0 17 50
+0~ 0~ 0~ 0~
+0 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27311
+Khaki shorts~
+a pair of kahaki shorts~
+A nice pair of khaki shorts are laying here!~
+~
+9 0 0 0 33 50
+0~ 0~ 0~ 0~
+1 10 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27312
+Khaki shirt~
+a nice khaki bush shirt~
+A nice khaki bush shirt is laying here!~
+~
+9 0 0 0 9 50
+0~ 0~ 0~ 0~
+2 10 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27344
+ant egg~
+an ant egg~
+A wiggling, slimey ant egg is laying here!~
+~
+19 0 0 0 1 50
+180~ 0~ 0~ 0~
+1 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+#27351
+bee stinger~
+a bee stinger~
+A wickedly barbed bees stinger!~
+~
+5 20608 0 0 8193 70
+0~ 0~ 0~ 0~
+5 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 70
+A
+19 90
+#27360
+headhunter spear~
+a headhunters spear~
+A very nicely made spear is laying here.~
+~
+5 67108864 0 0 8193 80
+0~ 0~ 0~ 2~
+4 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 100
+A
+19 120
+A
+26 6
+E
+spear~
+A finely made wooden spear, with an iron head, and feathers tied to the
+haft below the head.  There are red slashes along the haft, most likely to
+mark the number of heads the hunter has taken.  
+~
+#27375
+tusk~
+an elephants tusk~
+A large ivory elephants tusk is laying here.~
+~
+5 0 0 0 8193 70
+0~ 0~ 0~ 0~
+4 0 0 0 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 65
+A
+19 85
+#0
+
+
+
+#ROOMDATA
+#27000
+Off the main trail~
+A tiny trail of blood runs to the north, becoming more and more dense as the
+footprints seem to blend together. Also, the once serene breeze has now
+become a dark, dreary whisper.
+&YWarning, this area is intended for players level 50 to 80
+~
+0 5 3
+Rd     0
+D0
+a dark path~
+north~
+0 -1 27001
+D2
+~
+~
+3 0 28156
+S
+#27001
+A dark path~
+Here, you think you can almost make out tiny footprints in the visible parts
+of the dirt. Beside the tiny footprints lie bigger, uglier footprints. You
+can only wonder why two creatures of such differing size would choose to
+travel together.
+~
+0 131072 3
+Rd     0
+D0
+a dark path~
+north~
+0 -1 27005
+D1
+a dark path~
+east~
+0 -1 27002
+D2
+a dark path~
+south~
+0 -1 27000
+S
+#27002
+A dark path~
+The trail becomes darker to the east. The trampling of the trees and plant
+life appears to become more intense in that direction, also. A frightful,
+though serene, breeze blows through what remains of the treetops.
+~
+0 131072 3
+Rd     0
+D1
+a dark path~
+east~
+0 -1 27003
+D3
+a dark path~
+west~
+0 -1 27001
+S
+#27003
+A dark path~
+Ahead the road has been overgrown by a strange dead looking forest. It looks
+almost like some kind of maze. And the large, sharp thorns covering the odd 
+black trees promise to make the passage a painful one.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 27004
+D3
+a dark path~
+west~
+0 -1 27002
+S
+#27004
+Within the Dark Forest~
+The forest narrows into what looks to have been a recently-constructed path
+of some sort. The forest looks as though it has been deliberately pushed
+aside to make room for some dark, mighty force.
+~
+0 131072 3
+Rd     0
+D2
+~
+~
+0 0 27003
+S
+#27005
+A dark path~
+Ahead the road has been overgrown by a strange dead looking forest. It looks
+almost like some kind of maze. And the large, sharp thorns covering the odd 
+black trees promise to make the passage a painful one.
+~
+0 131072 3
+Rd     0
+D0
+a dark path~
+north~
+0 -1 27006
+D2
+a dark path~
+south~
+0 -1 27001
+S
+#27006
+A dark path~
+The lights dim, the trees loom overhead, this is not a friendly-looking 
+path at all. The shrubbery is thickets and thorny, and there is not a 
+flower to be seen.
+~
+0 131072 3
+Rd     0
+D1
+a dark path~
+east~
+0 -1 27007
+D2
+a dark path~
+south~
+0 -1 27005
+S
+#27007
+A dark path~
+Ahead the road has been overgrown by a strange dead looking forest. It looks
+almost like some kind of maze. And the large, sharp thorns covering the odd 
+black trees promise to make the passage a painful one.
+~
+0 131072 3
+Rd     0
+D0
+before a great mass of trees~
+north~
+0 -1 27008
+D3
+a dark path~
+west~
+0 -1 27006
+S
+#27008
+Before the Black Forest~
+The lights dim, the trees loom overhead, this is not a friendly-looking 
+path at all. The shrubbery is thickets and thorny, and there is not a 
+flower to be seen.
+~
+0 131076 3
+Rd     0
+D0
+The forest concedes to the vast darkness...~
+north~
+0 -1 27009
+D2
+a dark path~
+south~
+0 -1 27007
+S
+#27009
+Within the Black Forest~
+You travel down a quiet, narrow trail through the forest.  The sounds of
+civilization can be heard roughly south of here, while the forest changes
+gradually to the north.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27010
+D2
+~
+~
+0 -1 27008
+S
+#27010
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest seems to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27013
+D1
+~
+~
+0 -1 27011
+D2
+~
+~
+0 -1 27009
+D3
+~
+~
+0 -1 27012
+S
+#27011
+Within the Black Forest~
+Continuing through the heavy undergrowth, you find yourself in the middle
+of the forest.  The sounds of the forest can be heard all round and you 
+feel a peaceful feeling come over you as you realize that mankind has not 
+passed this way for some time.The fading trail you are on appears to have
+been so littleused that it has almost completely grown over with vegitation
+from the woods here.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27026
+D3
+~
+~
+0 -1 27010
+S
+#27012
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27051
+D1
+~
+~
+0 -1 27010
+D3
+~
+~
+0 -1 27052
+S
+#27013
+Within the Black Forest~
+You travel down a quiet, narrow trail through the forest.  The sounds of
+civilization can be heard roughly south of here, while the forest changes
+gradually to the north.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27014
+D1
+~
+~
+0 -1 27029
+D2
+~
+~
+0 -1 27010
+S
+#27014
+Within the Black Forest~
+You travel down a quiet, narrow trail through the forest.  The sounds of
+civilization can be heard roughly south of here, while the forest changes
+gradually to the north.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27015
+D2
+~
+~
+0 -1 27013
+S
+#27015
+Heart of the Black Forest~
+It is black as night here, without the moonlight to aid you.  You hear
+whistlings and murmurings from all around you and, now and again, a pair of
+eyes glaring at you from various directions.  But, strangely, you feel at
+home here.  
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27016
+D1
+~
+~
+0 -1 27039
+D2
+~
+~
+0 -1 27014
+S
+#27016
+Heart of the Black Forest~
+You now realize that the darkness and mystery of the Black Forest were not
+exaggerated in tales of olde. The trees appear to reach out, as if trying
+to strangle the lifeforce out of all creatures that might be foolish enough
+to wander too deep into the forest. Though the blood on the ground has
+practically disappeared, the auras of gloom and terror have certainly not
+diminished.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27017
+D2
+~
+~
+0 -1 27015
+D3
+~
+~
+0 -1 27066
+S
+#27017
+Heart of the Black Forest~
+You are on a path in the dark forest. There are numerous trees to your left
+as well as to your right. The sunlight is completely blocked off now so that
+the only light you have comes from some sort of glowing algea on the ground.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27018
+D1
+~
+~
+0 -1 27041
+D2
+~
+~
+0 -1 27016
+S
+#27018
+Heart of the Black Forest~
+It is black as night here, but without the moonlight to aid you. You hear
+whistlings and murmurings from all around you and, now and again, a pair of
+eyes glaring at you from various directions. But, strangely, you feel at home
+here.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27019
+D1
+~
+~
+0 -1 27042
+D2
+~
+~
+0 -1 27017
+D3
+~
+~
+0 -1 27078
+S
+#27019
+Heart of the Black Forest~
+You are on a path in the dark forest. There are numerous trees to your left
+as well as to your right. The sunlight is completely blocked off now so that
+the only light you have comes from some sort of glowing algea on the ground.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27020
+D1
+~
+~
+0 -1 27043
+D2
+~
+~
+0 -1 27018
+D3
+~
+~
+0 -1 27070
+S
+#27020
+Heart of the Black Forest~
+You now realize that the darkness and mystery of the Black Forest were not
+exaggerated in tales of olde. The trees appear to reach out, as if trying
+to strangle the lifeforce out of all creatures that might be foolish enough
+to wander too deep into the forest. Though the blood on the ground has
+practically disappeared, the auras of gloom and terror have certainly not
+diminished.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27022
+D1
+~
+~
+0 -1 27046
+D2
+~
+~
+0 -1 27019
+S
+#27021
+Within the Black Forest~
+You are standing in a dense forest. So dense in fact that no light penetrates 
+down to the ground. All the trees look dead and are covered by large sharp 
+thorns. There are no obvious paths and any attempt at movement is going to 
+require crashing (painfully) through a wall of thorns.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27049
+D3
+~
+~
+0 -1 27081
+S
+#27022
+Within The Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27023
+D1
+~
+~
+0 -1 27050
+D2
+~
+~
+0 -1 27020
+S
+#27023
+Within the Black Forest~
+The forest canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27024
+D2
+~
+~
+0 -1 27022
+D3
+~
+~
+0 -1 27091
+S
+#27024
+Before the Black Forest~
+You stand between the beach and the entrance to
+the Dark forest.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27025
+D2
+~
+~
+0 -1 27023
+S
+#27025
+On a small beach~
+You are standing on a small beach, which leads to a protected cove.  High
+cliffs line this narrow inlet on all sides, protecting it from storms.  This
+spot seems more secluded and untouched than any other place you have ever
+been.  You can't help but wonder if any one even knows this is here.  
+~
+0 131076 1
+Rd     0
+D2
+~
+~
+0 -1 27024
+S
+#27026
+Within the Black Forest~
+The canopy seems to have opened up just enough to allow a faint light in.
+You look up and it looks like a tree house of some sort up in the trees.
+The animals here seem a bit more peaceful, than in the other areas. Like
+they have been satisfied and treated well.
+~
+0 131076 3
+Rd     0
+D0
+~
+~
+0 -1 27027
+D3
+~
+~
+0 -1 27011
+S
+#27027
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27028
+D2
+~
+~
+0 -1 27026
+D3
+~
+~
+0 -1 27029
+S
+#27028
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest seems to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D3
+~
+~
+0 -1 27027
+S
+#27029
+Within the Black Forest~
+You are standing in a dense forest. So dense in fact that no light penetrates 
+down to the ground. All the trees look dead and are covered by large sharp 
+thorns. There are no obvious paths and any attempt at movement is going to 
+require crashing (painfully) through a wall of thorns.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27030
+D1
+~
+~
+0 -1 27027
+D3
+~
+~
+0 -1 27013
+S
+#27030
+Within the Black Forest~
+The forest seems to twist and turn everywhere you look.  It appears that you
+could leave in any direction, but you have no idea which direction leads to
+where. You are very confused.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27031
+D2
+~
+~
+0 -1 27029
+S
+#27031
+Within the Black Forest~
+This small enclave in the forest is very strange indeed.  It has a cleared out
+area in the center and there is a small pit where things have been burned
+for some reason or another.  There is a circle of rocks around the burnt area
+and there is an aroma of flowers all around, yet no flowers grow here.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27032
+D1
+~
+~
+0 -1 27033
+D3
+~
+~
+0 -1 27030
+S
+#27032
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27037
+D1
+~
+~
+0 -1 27034
+D2
+~
+~
+0 -1 27031
+D3
+~
+~
+0 -1 27039
+S
+#27033
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest seems to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27034
+D3
+~
+~
+0 -1 27031
+S
+#27034
+Within the Black Forest~
+The forest seems to twist and turn everywhere you look.  It appears that you
+could leave in any direction, but you have no idea which direction leads to
+where.  You are very confused.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27035
+D2
+~
+~
+0 -1 27033
+D3
+~
+~
+0 -1 27032
+S
+#27035
+Within the Black Forest~
+You are standing in a dense forest. So dense in fact that no light penetrates 
+down to the ground. All the trees look dead and are covered by large sharp 
+thorns. There are no obvious paths and any attempt at movement is going to 
+require crashing (painfully) through a wall of thorns.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27036
+D1
+~
+~
+0 -1 27038
+D2
+~
+~
+0 -1 27034
+S
+#27036
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D2
+~
+~
+0 -1 27035
+D3
+~
+~
+0 -1 27040
+S
+#27037
+Within the Black Forest~
+The forest seems to twist and turn everywhere you look.  It appears that you
+could leave in any direction, but you have no idea which direction leads to
+where.  You are very confused.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 0 27040
+D2
+~
+~
+0 -1 27032
+S
+#27038
+Within the Black Forest~
+You are standing in a dense forest. So dense in fact that no light penetrates 
+down to the ground. All the trees look dead and are covered by large sharp 
+thorns. There are no obvious paths and any attempt at movement is going to 
+require crashing (painfully) through a wall of thorns.
+~
+0 132100 3
+Rd     0
+D3
+~
+~
+0 -1 27035
+S
+#27039
+Heart of the Black Forest~
+It is black as night here, but without the moonlight to aid you. You hear
+whistlings and murmurings from all around you and, now and again, a pair of
+eyes glaring at you from various directions. But, strangely, you feel at home
+here.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27032
+D3
+~
+~
+0 -1 27015
+S
+#27040
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27036
+D2
+~
+~
+0 0 27037
+D3
+~
+~
+0 -1 27041
+S
+#27041
+Heart of the Black Forest~
+You now realize that the darkness and mystery of the Black Forest were not
+exaggerated in tales of olde. The trees appear to reach out, as if trying
+to strangle the lifeforce out of all creatures that might be foolish enough
+to wander too deep into the forest. Though the blood on the ground has
+practically disappeared, the auras of gloom and terror have certainly not
+diminished.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27042
+D1
+~
+~
+0 -1 27040
+D3
+~
+~
+0 -1 27017
+S
+#27042
+Heart of the Black Forest~
+Continuing through the heavy undergrowth, you find yourself in the middle
+of the forest.  The sounds of the forest can be heard all round and you 
+feel a peaceful feeling come over you as you realize that mankind has not 
+passed this way for some time.The fading trail you are on appears to have
+been so littleused that it has almost completely grown over with vegitation
+from the woods here.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27043
+D1
+~
+~
+0 -1 27044
+D2
+~
+~
+0 -1 27041
+D3
+~
+~
+0 -1 27018
+S
+#27043
+Heart of the Black Forest~
+It is black as night here, but without the moonlight to aid you. You hear
+whistlings and murmurings from all around you and, now and again, a pair of
+eyes glaring at you from various directions. But, strangely, you feel at home
+here.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27046
+D2
+~
+~
+0 -1 27042
+D3
+~
+~
+0 -1 27019
+S
+#27044
+Within the Black Forest~
+The forest seems to twist and turn everywhere you look.  It appears that you
+could leave in any direction, but you have no idea which direction leads to
+where.  You are very confused.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27045
+D3
+~
+~
+0 -1 27042
+S
+#27045
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27099
+D2
+~
+~
+0 -1 27044
+S
+#27046
+Heart of the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27049
+D1
+~
+~
+0 -1 27047
+D2
+~
+~
+0 -1 27043
+D3
+~
+~
+0 -1 27020
+S
+#27047
+Within the Black Forest~
+The forest seems to twist and turn everywhere you look.  It appears that you
+could leave in any direction, but you have no idea which direction leads to
+where.  You are very confused.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27048
+D3
+~
+~
+0 -1 27046
+S
+#27048
+Before a dark cave~
+You find yourself in front of a small cave within the forest. You attempt to
+peer into the cave but can see nothing.
+~
+0 131076 1
+Rd     0
+D0
+~
+~
+0 -1 27096
+D3
+~
+~
+0 -1 27047
+S
+#27049
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27050
+D2
+~
+~
+0 -1 27046
+D3
+~
+~
+0 -1 27021
+S
+#27050
+Within the Black Forest~
+You stomp your way through the underbrush. The trees of the forest are
+getting pretty thick here, and the branches high above your head are so
+thick that they block out all direct sunlight.
+~
+0 131072 3
+Rd     0
+D2
+~
+~
+0 -1 27049
+D3
+~
+~
+0 -1 27022
+S
+#27051
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27055
+D2
+~
+~
+0 -1 27012
+S
+#27052
+Within the Black Forest~
+The forest seems to twist and turn everywhere you look.  It appears that you
+could leave in any direction, but you have no idea which direction leads to
+where.  You are very confused.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27056
+D1
+~
+~
+0 -1 27012
+D3
+~
+~
+0 -1 27053
+S
+#27053
+Within the Black Forest~
+You stomp your way through the underbrush. The trees of the forest are
+getting pretty thick here, and the branches high above your head are so
+thick that they block out all direct sunlight.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27054
+D1
+~
+~
+0 -1 27052
+S
+#27054
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27056
+D2
+~
+~
+0 -1 27053
+D3
+~
+~
+0 -1 27057
+S
+#27055
+Within the Black Forest~
+Here, you see a gruesome sight.  Blood is everywhere... on the trees and
+soaked into the ground. Two carcasses lie in front of you, seeming to look
+up at you.
+~
+0 132100 3
+Rd     0
+D2
+~
+~
+0 -1 27051
+S
+#27056
+Within the Black Forest~
+It is black as night here, but without the moonlight to aid you. You hear
+whistlings and murmurings from all around you and, now and again, a pair of
+eyes glaring at you from various directions. But, strangely, you feel at home
+here.
+~
+0 131072 3
+Rd     0
+D2
+~
+~
+0 -1 27052
+D3
+~
+~
+0 -1 27054
+S
+#27057
+Within the Black Forest~
+You stand in a small hidden path in the old forest. There are huge trees
+both to the left and the right of you. You feel as if somebody is watching 
+you. You look around and see little green eyes staring at you from the bushes.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27090
+D1
+~
+~
+0 -1 27054
+D3
+~
+~
+0 -1 27058
+S
+#27058
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27059
+D1
+~
+~
+0 -1 27057
+S
+#27059
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27060
+D2
+~
+~
+0 -1 27058
+S
+#27060
+Within the Black Forest~
+You stand in a small hidden path in the old forest. There are huge trees
+both to the left and the right of you. You feel as if somebody is watching 
+you. You look around and see little green eyes staring at you from the bushes.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27061
+D2
+~
+~
+0 -1 27059
+S
+#27061
+Within the Black Forest~
+The large dark colored trees seem to move about as you move. You begin to 
+feel uneasy about straying from the main path. You notice that the huge roots
+coming out of the ground seem to have a life of its own as well. The deeper
+you get into the forest the most confused you become, trees move and block
+your way, or at least it seems that way.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27062
+D2
+~
+~
+0 -1 27060
+S
+#27062
+Within the Black Forest~
+It is black as night here, but without the moonlight to aid you. You hear
+whistlings and murmurings from all around you and, now and again, a pair of
+eyes glaring at you from various directions. But, strangely, you feel at home
+here.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27063
+D1
+~
+~
+0 -1 27073
+D2
+~
+~
+0 -1 27061
+S
+#27063
+Within the Black Forest~
+The large dark colored trees seem to move about as you move. You begin to 
+feel uneasy about straying from the main path. You notice that the huge roots
+coming out of the ground seem to have a life of its own as well. The deeper
+you get into the forest the most confused you become, trees move and block
+your way, or at least it seems that way.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27064
+D2
+~
+~
+0 -1 27062
+S
+#27064
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27065
+D1
+~
+~
+0 -1 27069
+D2
+~
+~
+0 -1 27063
+S
+#27065
+Within the Black Forest~
+The lights grow more and more faint, until you are on ther verge of your 
+visual capacity, you think you can make out dark shapes moving in the trees, 
+and once you distinctly thought you heard a giggle coming from somewhere.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27086
+D1
+~
+~
+0 -1 27068
+D2
+~
+~
+0 -1 27064
+S
+#27066
+Heart of the Black Forest~
+It is black as night here, but without the moonlight to aid you. You hear
+whistlings and murmurings from all around you and, now and again, a pair of
+eyes glaring at you from various directions. But, strangely, you feel at home
+here.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27079
+D1
+~
+~
+0 -1 27016
+D3
+~
+~
+0 -1 27067
+S
+#27067
+Heart of the Black Forest~
+It is black as night here, but without the moonlight to aid you. You hear
+whistlings and murmurings from all around you and, now and again, a pair of
+eyes glaring at you from various directions. But, strangely, you feel at home
+here.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27066
+D3
+~
+~
+0 -1 27082
+S
+#27068
+Heart of the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27072
+D1
+~
+~
+0 -1 27077
+D3
+~
+~
+0 -1 27065
+S
+#27069
+Heart of the Black Forest~
+The large dark colored trees seem to move about as you move. You begin to 
+feel uneasy about straying from the main path. You notice that the huge roots
+coming out of the ground seem to have a life of its own as well. The deeper
+you get into the forest the most confused you become, trees move and block
+your way, or at least it seems that way.
+~
+0 132100 3
+Rd     0
+D3
+~
+~
+0 -1 27064
+S
+#27070
+Heart of the Black Forest~
+The large dark colored trees seem to move about as you move. You begin to 
+feel uneasy about straying from the main path. You notice that the huge roots
+coming out of the ground seem to have a life of its own as well. The deeper
+you get into the forest the most confused you become, trees move and block
+your way, or at least it seems that way.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27019
+D3
+~
+~
+0 -1 27071
+S
+#27071
+Heart of the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27080
+D1
+~
+~
+0 -1 27070
+S
+#27072
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27083
+D2
+~
+~
+0 -1 27068
+S
+#27073
+Heart of the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 132100 3
+Rd     0
+D1
+~
+~
+0 -1 27074
+S
+#27074
+Heart of the Black Forest~
+The large dark colored trees seem to move about as you move. You begin to 
+feel uneasy about straying from the main path. You notice that the huge roots
+coming out of the ground seem to have a life of its own as well. The deeper
+you get into the forest the most confused you become, trees move and block
+your way, or at least it seems that way.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27075
+D2
+~
+~
+0 -1 27082
+D3
+~
+~
+0 -1 27073
+S
+#27075
+Heart of the Black Forest~
+You are standing in a maze of trees. There are willow trees that seem to move 
+by themselves and the roots that stick out of the ground seem to be beckoning
+you to come and have a nap under the trees. As you move from one room to
+another the trees seem to move with you, causing you to lose any sense of
+direction that you previously had.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27076
+D2
+~
+~
+0 -1 27074
+S
+#27076
+Heart of the Black Forest~
+The large dark colored trees seem to move about as you move. You begin to 
+feel uneasy about straying from the main path. You notice that the huge roots
+coming out of the ground seem to have a life of its own as well. The deeper
+you get into the forest the most confused you become, trees move and block
+your way, or at least it seems that way.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27077
+D2
+~
+~
+0 -1 27075
+S
+#27077
+Heart of the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D2
+~
+~
+0 -1 27076
+D3
+~
+~
+0 -1 27068
+S
+#27078
+Heart of the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27018
+D2
+~
+~
+0 -1 27079
+S
+#27079
+Heart of the Black Forest~
+You are standing in a maze of trees. There are willow trees that seem to move 
+by themselves and the roots that stick out of the ground seem to be beckoning
+you to come and have a nap under the trees. As you move from one room to
+another the trees seem to move with you, causing you to lose any sense of
+direction that you previously had.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27078
+D2
+~
+~
+0 -1 27066
+S
+#27080
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27081
+D2
+~
+~
+0 -1 27071
+D3
+~
+~
+0 -1 27083
+S
+#27081
+Within the Black Forest~
+The large dark colored trees seem to move about as you move. You begin to 
+feel uneasy about straying from the main path. You notice that the huge roots
+coming out of the ground seem to have a life of its own as well. The deeper
+you get into the forest the most confused you become, trees move and block
+your way, or at least it seems that way.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27084
+D1
+~
+~
+0 -1 27021
+D2
+~
+~
+0 -1 27080
+S
+#27082
+Heart of the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27074
+D1
+~
+~
+0 -1 27067
+S
+#27083
+Heart of the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27080
+D3
+~
+~
+0 -1 27072
+S
+#27084
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D2
+~
+~
+0 -1 27081
+D3
+~
+~
+0 -1 27085
+S
+#27085
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest seems to grow darker and darker
+~
+0 131085 0
+Rd     0
+D1
+~
+~
+0 -1 27084
+S
+#27086
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27087
+D2
+~
+~
+0 -1 27065
+S
+#27087
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27088
+D1
+~
+~
+0 -1 27089
+D2
+~
+~
+0 -1 27086
+S
+#27088
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27095
+D2
+~
+~
+0 -1 27087
+S
+#27089
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27094
+D3
+~
+~
+0 -1 27087
+S
+#27090
+A small dark cave~
+It is dark in here and smells very bad. You decide that there must be
+some very foul creature living here.
+~
+0 131085 0
+Rd     0
+D2
+~
+~
+0 -1 27057
+S
+#27091
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 131072 3
+Rd     0
+D1
+~
+~
+0 -1 27023
+D3
+~
+~
+0 -1 27092
+S
+#27092
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131072 3
+Rd     0
+D0
+~
+~
+0 -1 27093
+D1
+~
+~
+0 -1 27091
+S
+#27093
+Within the Black Forest~
+You arrive at a small river bank.  The forest itself is impassable in
+every other direction.  
+~
+0 131076 1
+Rd     0
+D2
+~
+~
+0 -1 27092
+D3
+~
+~
+0 0 27101
+S
+#27094
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131076 1
+Rd     0
+D2
+~
+~
+0 -1 27089
+S
+#27095
+Within the Black Forest~
+Even the breeze flowing through the treetops is dark and gloomy. Strange
+noises come at you from each direction. The leaves on the ground might make
+rustling sounds if they were not soaked down with blood. In each direction,
+the forest appears to grow darker and darker.
+~
+0 132100 3
+Rd     0
+D2
+~
+~
+0 -1 27088
+S
+#27096
+A small dark cave~
+It is dark in here and smells very bad. You decide that there must be
+some very foul creature living here.
+~
+0 131080 1
+Rd     0
+D0
+~
+~
+0 -1 27097
+D2
+~
+~
+0 -1 27048
+S
+#27097
+A small dark cave~
+It is dark in here and smells very bad. You decide that there must be
+some very foul creature living here.
+~
+0 131081 0
+Rd     0
+D1
+~
+~
+0 -1 27098
+D2
+~
+~
+0 -1 27096
+S
+#27098
+A small dark cave~
+It is dark in here and smells very bad. You decide that there must be
+some very foul creature living here.
+~
+0 131081 0
+Rd     0
+D3
+~
+~
+0 -1 27097
+S
+#27099
+Within the Black Forest~
+You are on a path in the dark forest but the trees that pass by in this room
+looks very familiar, as if you've just passed by them.
+~
+0 131076 1
+Rd     0
+D3
+~
+~
+0 -1 27045
+S
+#27100
+The Face of the Mountain.~
+Dangling precariously on the face of this mountain, you begin to wonder
+if this was such a good idea.  There are bones scattered everywhere
+attesting to the attempts of others who tried and failed.  
+~
+0 131072 5
+Rd     0
+D4
+~
+~
+0 0 27148
+D5
+~
+~
+0 0 27147
+S
+#27101
+On the River~
+You stuble across a river running from east to west here.  To the east
+the river is impassable while the west looks as if you may be able to
+negotiate it.  
+~
+0 132100 6
+Rd     0
+D1
+~
+~
+0 0 27093
+D3
+~
+~
+0 0 27102
+S
+#27102
+On the River~
+The forest bordering the river has swallowed you in a dark shadow.  The
+river flows west and upstream to the east.  
+~
+0 131072 6
+Rd     0
+D1
+~
+~
+0 0 27101
+D3
+~
+~
+0 0 27103
+S
+#27103
+On the River~
+The sun is barely visible above the top branches of the trees as the 
+river snakes its way thru the forest. The flow of the river seems to have 
+picked up though in this narrow section of the river as you notice a small 
+figure watching you from the northern shore. The river flows west and upstream
+to the east.
+~
+0 131072 6
+Rd     0
+E
+figure small north~
+As you look towards the shore, the figure disappears into the forest.
+~
+D1
+The river leads east towards a city.
+~
+~
+0 -1 27102
+D3
+The river continues to the west.
+~
+~
+0 0 27104
+S
+#27104
+The Wide River~
+Here the river is very wide. With the absence of so many tree limbs
+overhead, the river is much brighter here than it is towards the east.
+You can see land far to the west. The river flows west and upstream to the 
+east.
+~
+0 131072 6
+Rd     0
+D1
+Looking upstream, the river narrows and darkens.
+~
+~
+0 -1 27103
+D3
+The appears to be an island in the middle of the river ahead.
+~
+~
+0 -1 27105
+S
+#27105
+A Split in the River~
+The river flows around a small island which lies directly to the south
+west. The brackish water reflects your image like a smooth mirror disturbed 
+only by your movement. The river flows west and upstream to the east. A 
+smaller part of the river splits and flows south.
+~
+0 131072 6
+Rd     0
+D1
+Looking east you can see a widening in the river.
+~
+~
+0 -1 27104
+D2
+This way leads past the eastern side of the island.
+~
+~
+0 -1 27107
+D3
+This way will take you to the northern side of the island.
+~
+~
+0 -1 27106
+S
+#27106
+On the River~
+You are on the river which is flowing westward past the north side
+of a small island.  The island is thich with vegetation which makes it 
+impossible to get on shore from here. The river flows west and upstream
+to the east.
+~
+0 131072 6
+Rd     0
+D1
+You see the southeast split in the river.
+~
+~
+0 -1 27105
+D3
+The river continues onwards towards a large body of water.
+~
+~
+0 -1 27109
+S
+#27107
+The Southeast Split in the River~
+A small island is west of the river here, but the island's thick 
+vegetation makes it impossible to get on shore from here. To the north
+the main path of the river flows west and upstream to the east.
+~
+0 131072 6
+Rd     0
+D0
+The river flows east and downstream to the west there.
+~
+~
+0 -1 27105
+D3
+Here you can see the southern side of the island.
+~
+~
+0 -1 27108
+S
+#27108
+The Little River~
+This narrower route around the island has brought you within sight
+of a small path cut out of the vegetation leading north into the depths
+of the island.
+~
+0 131072 6
+Rd     0
+D0
+A small path leads into the shadowy island.
+~
+~
+0 -1 27142
+D1
+You see the southeast split in the river.
+~
+~
+0 -1 27107
+D3
+You see the southwest split in the river.
+~
+~
+0 -1 27110
+S
+#27109
+On the Big River~
+A small island splits the river to the southeast. On the island you
+can see nothing due to trees and plants which grow even at the waters edge.
+These plants make it impossible to get on the island from here. The river
+flows to the downstream to the west and upstream to the east. 
+~
+0 131072 6
+Rd     0
+D1
+Looking east you see the river as it passes by the island which is to the south
+of that point.
+~
+~
+0 -1 27106
+D2
+You see the southwest split in the river.
+~
+~
+0 -1 27110
+D3
+The river continues its slow movement toward a larger body of water.
+~
+~
+0 -1 27111
+S
+#27110
+The Southwest Split in the River~
+A small island can be seen to the east. Large trees cover this end
+of the island. The river merges to the north where it continues to flow
+downstream to the west.
+~
+0 131072 6
+Rd     0
+D0
+You see a river flowing west and upsteam to the east.
+~
+~
+0 -1 27109
+D1
+Going upstream from here you may pass by the southern side of the island.
+~
+~
+0 -1 27108
+S
+#27111
+The Wide River~
+The river flows westward from here. Looking at the distant shores
+you notice they continue to get further apart and all that can be seen to
+the west is more water which touches the sky at the horizon. Upstream
+it appears there is land near the middle of the river.
+~
+0 131072 6
+Rd     0
+D1
+The river continues upstream to the east.
+~
+~
+0 -1 27109
+D3
+The mouth of the river can be seen to the west.
+~
+~
+0 -1 27112
+S
+#27112
+The Mouth of the River~
+The river is merging with the ocean! Waves rock you back and forth
+as you move about. The river snakes its way into the land and disappears
+to the east. To the west is the big, blue ocean. To the north and south
+the forest has given way to grass fields and small bushes on fairly flat land.
+~
+0 132100 6
+Rd     0
+D1
+The river continues upstream to the east.
+~
+~
+0 -1 27111
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27113
+S
+#27113
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the east can be seen
+a river as it leads into an immense land mass. The ocean continues to
+the north, south, and west.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27114
+D1
+You can see the mouth of a large river.
+~
+~
+0 -1 27112
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27115
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27116
+S
+#27114
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, and west
+the ocean continues in unobscured vision. To the east, a large land mass 
+can be seen, however rocks along the shore prevent you from landing there.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27117
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27113
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27121
+S
+#27115
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, and west
+the ocean continues in unobscured vision. To the east, a large land mass 
+can be seen, however rocks along the shore prevent you from landing there.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27113
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27122
+D3
+To the west only the ocean can ben seen.
+~
+~
+0 -1 27124
+S
+#27116
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision. 
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27121
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27113
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27124
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27129
+S
+#27117
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, and west
+the ocean continues in unobscured vision. To the east, a large land mass 
+can be seen, however rocks along the shore prevent you from landing there.
+~
+0 131072 6
+Rd     0
+D0
+To the north the ocean appears to have frozen.
+~
+~
+0 -1 27118
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27114
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27120
+S
+#27118
+In a Frozen Ocean~
+The ocean is beginning to freeze and turn to ice. To the north can
+be seen large blocks of ice which block further passage in that direction. To 
+the south and west the ocean continues. To the east, a large land mass 
+can be seen, however rocks along the shore prevent you from landing there.
+Looking further inland you can see a number of large mountains.
+~
+0 132100 6
+Rd     0
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27117
+D3
+To the west the ocean appears frozen.
+~
+~
+0 -1 27119
+S
+#27119
+In a Frozen Ocean~
+The ocean is beginning to freeze and turn to ice. To the north can
+be seen large blocks of ice which block further passage in that direction. To 
+the south and east the ocean continues.
+~
+0 132100 6
+Rd     0
+D1
+To the east the ocean appears frozen.
+~
+~
+0 -1 27118
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27120
+S
+#27120
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision. 
+~
+0 131072 6
+Rd     0
+D0
+To the north the ocean appears to have frozen.
+~
+~
+0 -1 27119
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27117
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27121
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27134
+S
+#27121
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision. 
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27120
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27114
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27116
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27133
+S
+#27122
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north and west the 
+ocean continues in unobscured vision. To the east the shore rises steeply
+into a verticle cliff. To the south the water seem to be turning cooler.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27115
+D2
+To the south appears a dangerous region inhabited by polar bears.
+~
+~
+0 -1 0
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27123
+S
+#27123
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, east and west 
+the ocean continues in unobscured vision. To the south large pieces of floating
+ice make the waters impassable.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27124
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27122
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27125
+S
+#27124
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision. 
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27116
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27115
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27123
+D3
+To the west the ocean grows in ferocity.
+~
+~
+0 -1 27126
+S
+#27125
+The Angry Sea~
+Although you didn't know it at the time, you have come upon 
+the dreaded area of the ocean where many an adventurer has perished
+never to heard of again.
+~
+0 131072 6
+Rd     0
+D0
+To the north the ocean grows in ferocity.
+~
+~
+0 -1 27126
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27123
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27127
+D3
+To the west only the sea can be seen.
+~
+~
+0 -1 27128
+S
+#27126
+A Ferocious Sea~
+As you make your way here the sky darkens, and the
+wind rises. Waves now pour over you, filling your stomach with
+the taste of salt water. Gradually things subside, and you able to
+continue your journey.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27129
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27124
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27125
+D3
+To the west only the ocean can be seen.
+~
+~
+0 -1 27130
+S
+#27127
+A Tropical Sea~
+You have reached the calm warm waters of the Yeats Sea. 
+The clear blue-green waters support a variety of life below the surface. 
+Stuck to simply wondering above though, you notice land to the south, but 
+volcanic lava flows prevent landing.
+~
+0 131072 6
+Rd     0
+D0
+To the north waves increase in size and the sky appears darker.
+~
+~
+0 -1 27125
+D3
+To the west only the smooth sea can be seen.
+~
+~
+0 -1 27131
+S
+#27128
+A Tropical Sea~
+You have reached the calm warm waters of the Yeats Sea. 
+The clear blue-green waters support a variety of life below the surface. 
+The sea continues north, south, east, and west, however the sky 
+appears much cloudier looking to the east than in the other directions.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the sea can be seen.
+~
+~
+0 -1 27130
+D1
+To the east the sea grows in ferocity.
+~
+~
+0 -1 27125
+D2
+To the south only the sea can be seen.
+~
+~
+0 -1 27131
+D3
+To the west only the sea can be seen.
+~
+~
+0 -1 27132
+S
+#27129
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, and east 
+the ocean continues in unobscured vision. You see land in the west, seemingly
+unconnected with that on which Bethaven rests.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27133
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27116
+D2
+To the south the clouds gather in manner meant as a warning.
+~
+~
+0 -1 27126
+S
+#27130
+A Tropical Sea~
+You have reached the calm warm waters of the Yeats Sea. 
+The clear blue-green waters support a variety of life below the surface. 
+The sea continues south, east, and west, however the sky appears 
+much cloudier looking to the east than in the other directions. You see 
+land to the north, seemingly unconnected with that on which Bethaven rests.
+~
+0 131072 6
+Rd     0
+D1
+To the east clouds seem to be gathering, threatening a storm.
+~
+~
+0 -1 27126
+D2
+To the south only the sea can be seen.
+~
+~
+0 -1 27128
+D3
+To the west only the sea can be seen.
+~
+~
+0 -1 27135
+S
+#27131
+A Tropical Sea~
+You traverse the calm warm waters of the Yeats Sea. The clear
+ blue-green waters support a variety of life below the surface. The sea 
+continues north, south, east, and west.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the sea can be seen.
+~
+~
+0 -1 27128
+D1
+To the east only the sea can be seen.
+~
+~
+0 -1 27127
+D2
+To the south only the sea can be seen.
+~
+~
+0 -1 27136
+D3
+To the west only the sea can be seen.
+~
+~
+0 -1 27137
+S
+#27132
+A Tropical Sea~
+You traverse the calm warm waters of the Yeats Sea. The clear
+ blue-green waters support a variety of life below the surface. The sea 
+continues north, south, east, and west.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the sea can be seen.
+~
+~
+0 -1 27135
+D1
+To the east only the sea can be seen.
+~
+~
+0 -1 27128
+D2
+To the south only the sea can be seen.
+~
+~
+0 -1 27137
+D3
+To the west only the sea can be seen.
+~
+~
+0 -1 27138
+S
+#27133
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, and east 
+the ocean continues in unobscured vision. You see land in the west, seemingly
+unconnected with that on which Bethaven rests.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the ocean can be seen.
+~
+~
+0 -1 27134
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27121
+D2
+To the south only the ocean can be seen..
+~
+~
+0 -1 27129
+S
+#27134
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the south and east the 
+ocean continues in unobscured vision. You see land in the west, seemingly
+unconnected with that on which Bethaven rests. To the north the cliffs 
+break away to a narrow stretch of beach. 
+~
+0 131072 6
+Rd     0
+D0
+You see the beach ahead.
+~
+~
+0 0 27145
+D1
+To the east only the ocean can be seen.
+~
+~
+0 -1 27120
+D2
+To the south only the ocean can be seen.
+~
+~
+0 -1 27133
+S
+#27135
+A Tropical Sea~
+You traverse the calm warm waters of the Yeats Sea. 
+The clear blue-green waters support a variety of life below the surface. 
+The sea continues south and east. You see land to the north and west 
+seemingly unconnected with that on which Bethaven rests. A small
+dock allows you to continue north onto land.
+~
+0 131072 6
+Rd     0
+D0
+To the north you see a small dock.
+~
+~
+0 -1 27139
+D1
+To the east only the sea can be seen.
+~
+~
+0 -1 27130
+D2
+To the south only the sea can be seen.
+~
+~
+0 -1 27132
+S
+#27136
+A Tropical Sea~
+You have reached the calm warm waters of the Yeats Sea. 
+The clear blue-green waters support a variety of life below the surface. 
+Stuck to simply wondering above though, you notice land to the south and 
+east, but volcanic lava flows prevent landing.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the sea can be seen.
+~
+~
+0 -1 27131
+D3
+To the west only the sea can be seen.
+~
+~
+0 -1 27140
+S
+#27137
+A Tropical Sea~
+You traverse the calm warm waters of the Yeats Sea. The clear
+ blue-green waters support a variety of life below the surface. The sea 
+continues north, south, east, and west.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the sea can be seen.
+~
+~
+0 -1 27132
+D1
+To the east only the sea can be seen.
+~
+~
+0 -1 27131
+D2
+To the south only the sea can be seen.
+~
+~
+0 -1 27140
+D3
+To the west only the sea can be seen.
+~
+~
+0 -1 27141
+S
+#27138
+A Tropical Sea~
+You traverse the calm warm waters of the Yeats Sea. 
+The clear blue-green waters support a variety of life below the surface. 
+The sea continues south and east. You see land to the north and west 
+seemingly unconnected with that on which Bethaven rests. The banks
+are too steep to climb.
+~
+0 131072 6
+Rd     0
+D1
+To the east only the sea can be seen.
+~
+~
+0 -1 27132
+D2
+To the south only the sea can be seen.
+~
+~
+0 -1 27141
+S
+#27139
+The Dock~
+The dock is made of old greyed timber. Not very much could 
+stop at so small a dock with such shallow water around it. There are no
+apparent reasons for a dock even being here, since there is no visible
+trail in any direction. The only exit takes you back to the Sea.
+~
+0 132096 1
+Rd     0
+D2
+To the south only the sea can be seen.
+~
+~
+0 -1 27135
+S
+#27140
+A Tropical Sea~
+You sail the calm warm waters of the Yeats Sea. The clear 
+blue-green waters support a variety of life below the surface. Stuck to 
+simply wondering above though, you notice land to the south and 
+west, but volcanic lava flows prevent landing.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the sea can be seen.
+~
+~
+0 -1 27137
+D1
+To the east only the sea can be seen.
+~
+~
+0 -1 27136
+S
+#27141
+A Tropical Sea~
+You sail the calm warm waters of the Yeats Sea. The clear 
+blue-green waters support a variety of life below the surface. Stuck to 
+simply wondering above though, you notice land to the south and 
+west on which forested hills rise and fall like the waves of the sea for as
+far as the eye can see. The shores are too steep to climb.
+~
+0 131072 6
+Rd     0
+D0
+To the north only the sea can be seen.
+~
+~
+0 -1 27138
+D1
+To the east only the sea can be seen.
+~
+~
+0 -1 27137
+S
+#27142
+A Small Path~
+As you slowly force your way through the head high weeds
+the path becomes clearer. Going just far enough to be out of sight 
+of where you stepped on to the island, you can see a small cottage
+ahead steeped in shadow with light filtering though the shutters of a 
+small window.
+~
+0 132100 3
+Rd     0
+D0
+To the north you can see a small cottage.
+~
+~
+0 -1 27143
+D2
+To the south you can see the river.
+~
+~
+0 -1 27108
+S
+#27143
+Beside the Cottage~
+You stand in front of a small cottage made of shabbily
+connected boards and sticks, the kinds of things one might see
+floating down a river. As you approached a noise came from 
+within, and now all is quiet.  The entrance is to the west, or you
+may return on the path to the south.
+~
+0 132096 3
+Rd     0
+D2
+To the south you can see a small path leading through the 
+forest.
+~
+~
+0 -1 27142
+D3
+To the west can be seen a wooden door.
+~
+door wooden~
+3 -1 27144
+S
+#27144
+Inside the Cottage~
+Around the room you can see a number of books and
+flasks, perhaps used in the manufacture of magical potions. On
+the far side of the room from where you stand the picture of a 
+beautiful woman dressed in a formal gown can be seen. A door
+leading outside is east of here.
+~
+0 131080 0
+Rd     0
+D1
+The door leads outside.
+~
+~
+3 -1 27143
+S
+#27145
+A Beach~
+You come to a narrow beach.  Vertical cliffs loom to the east and west,
+and the harsh ocean is to the south.  To the north, you can see a less steep
+mountain ahead, which you can probably climb.
+~
+0 131084 0
+Rd     0
+D0
+~
+~
+0 0 27146
+D2
+You see the vast ocean before you.
+~
+~
+0 0 27134
+S
+#27146
+Along the Beach~
+You are walking along the beach.  Evidently, not many people travel on this rocky
+shore, and you are lucky you found this place.  Continuing north is the foot
+of a large mountain, while south of you, you can hear the roar of the waves
+crashing against the rocky beach.  The vertical cliffs to the east and west
+block any movement in those directions.  
+~
+0 131072 0
+Rd     0
+D0
+~
+~
+0 0 27147
+D2
+~
+~
+0 0 27145
+S
+#27147
+Foot of the Mountain~
+You are at the foot of the mountain.  A narrow trail leads up the face
+of the mountain to the north, while the beach leads back south toward the
+ocean.  Vertical cliffs block all travel east and west.  It almost looks as if
+stairs have been carved into the trail to the north.
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+0 0 27146
+D4
+~
+~
+0 0 27100
+S
+#27148
+Further up the Mountains Face~
+Almost to the top, and the mountain face begins to get less sheer.  The
+amount of remains scattered hasn't changed though, and you begin to wonder
+if what lies behind that suspicious door in the side of the mountain might
+not be the source of all these remains.  
+~
+0 131072 5
+Rd     0
+D0
+~
+~
+3 0 27161
+D4
+~
+~
+0 0 27149
+D5
+~
+~
+0 0 27100
+S
+#27149
+The Mountains Peak.~
+At the top at last!  You can see almost everywhere from here, down to the
+south is the dark forest, and further that direction lies Arnath.  To the
+south east lies Bethaven, and the rest of that part of the lands.  To the
+north lies a massive expanse of ice, beyond which you can not see.  Perhaps
+this is one of the fabeled glaciers deposited here at the dawn of time.  
+~
+0 131076 5
+Rd     0
+D0
+~
+~
+0 0 27163
+D5
+~
+~
+0 0 27148
+S
+#27150
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision.
+~
+0 131072 6
+Rd     0
+D0
+~
+~
+0 -1 27151
+D1
+~
+~
+0 -1 27153
+D2
+~
+~
+0 -1 27154
+D3
+~
+~
+0 -1 27152
+S
+#27151
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision.
+~
+0 131072 6
+Rd     0
+D2
+~
+~
+0 -1 27150
+S
+#27152
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, and west
+the ocean continues in unobscured vision. To the east, a large land mass 
+can be seen, however rocks along the shore prevent you from landing there.
+~
+0 131072 6
+Rd     0
+D1
+~
+~
+0 -1 27150
+S
+#27153
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, and west
+the ocean continues in unobscured vision. To the east, a large land mass 
+can be seen, however rocks along the shore prevent you from landing there.
+~
+0 131072 6
+Rd     0
+D3
+~
+~
+0 -1 27150
+S
+#27154
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, and west
+the ocean continues in unobscured vision. To the east, a large land mass 
+can be seen, however rocks along the shore prevent you from landing there.
+~
+0 131072 6
+Rd     0
+D0
+~
+~
+0 -1 27150
+D1
+~
+~
+0 -1 27155
+D2
+~
+~
+0 -1 27157
+D3
+~
+~
+0 -1 27156
+S
+#27155
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision.
+~
+0 131072 6
+Rd     0
+D3
+~
+~
+0 -1 27154
+S
+#27156
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision.
+~
+0 131072 6
+Rd     0
+D1
+~
+~
+0 -1 27154
+S
+#27157
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision.
+~
+0 131072 6
+Rd     0
+D0
+~
+~
+0 -1 27154
+D1
+~
+~
+0 -1 27159
+D2
+~
+~
+0 -1 27160
+D3
+~
+~
+0 -1 27158
+S
+#27158
+The Big Blue Ocean~
+You are in the ocean. Waves rock you back and forth occasionally
+crashing over you, drenching you in salt water. To the north, south, east and 
+west the ocean continues in unobscured vision.
+~
+0 131072 6
+Rd     0
+D1
+~
+~
+0 -1 27157
+S
+#27159
+Upon the Ocean~
+As you make your way here the sky darkens, and the
+wind rises. Waves now pour over you, filling your stomach with
+the taste of salt water. Gradually things subside, and you able to
+continue your journey.
+~
+0 131072 6
+Rd     0
+D3
+~
+~
+0 -1 27157
+S
+#27160
+Upon the Ocean~
+As you make your way here the sky darkens, and the
+wind rises. Waves now pour over you, filling your stomach with
+the taste of salt water. Gradually things subside, and you able to
+continue your journey.
+~
+0 131072 6
+Rd     0
+D0
+~
+~
+0 -1 27157
+S
+#27161
+The Mouth of The Cave~
+So, you decided to enter the cave, either you are a fool, or a hero,
+either way, the muscles in your neck tense up as you prepare your weapons,
+ready for any suprises.  The cave continues to the north.  
+~
+0 131085 0
+Rd     0
+D0
+~
+~
+0 0 27162
+D2
+~
+~
+3 0 27148
+S
+#27162
+A fork in the tunnel.~
+The cave splits into two directions, both east and west. The air is dry and smells of death, the rocks are gray with a rough texture.
+~
+0 131081 0
+Rd     0
+D1
+~
+~
+0 0 27186
+D2
+~
+~
+0 0 27161
+D3
+~
+~
+0 0 27187
+S
+#27163
+The Glacier~
+&W Searing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27164
+D1
+~
+~
+0 0 27180
+D2
+~
+~
+0 0 27149
+D3
+~
+~
+0 0 27183
+S
+#27164
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27165
+D1
+~
+~
+0 0 27208
+D2
+~
+~
+0 0 27163
+D3
+~
+~
+0 0 27211
+S
+#27165
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27166
+D1
+~
+~
+0 0 27214
+D2
+~
+~
+0 0 27164
+D3
+~
+~
+0 0 27217
+S
+#27166
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27220
+D1
+~
+~
+0 0 27167
+D2
+~
+~
+0 0 27165
+D3
+~
+~
+0 0 27219
+S
+#27167
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27221
+D1
+~
+~
+0 0 27168
+D2
+~
+~
+0 0 27214
+D3
+~
+~
+0 0 27166
+S
+#27168
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27169
+D1
+~
+~
+0 0 27222
+D2
+~
+~
+0 0 27215
+D3
+~
+~
+0 0 27167
+S
+#27169
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27170
+D1
+~
+~
+0 0 27223
+D2
+~
+~
+0 0 27168
+D3
+~
+~
+0 0 27221
+S
+#27170
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27226
+D1
+~
+~
+0 0 27224
+D2
+~
+~
+0 0 27169
+D3
+~
+~
+0 0 27171
+S
+#27171
+The Glaciers Edge.~
+&WThe glacier drops off in a sheer wall of ice here.  You can see the
+ocean extending to the edges of the horizon.  It starts to make you wonder
+what might be out there.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27172
+D1
+~
+~
+0 0 27170
+D2
+~
+~
+0 0 27221
+S
+#27172
+The Glaciers Edge.~
+&WThe glacier drops off in a sheer wall of ice here.  You can see the
+ocean extending to the edges of the horizon.  It starts to make you wonder
+what might be out there.  
+~
+0 268566528 5
+Rd     0
+D0
+~
+~
+0 0 27173
+D1
+~
+~
+0 0 27226
+D2
+~
+~
+0 0 27171
+S
+#27173
+The Glaciers Edge~
+&WYou find yourself standing upon the edge of the great glacier.  To the
+north lies a large, jungle covered island.  It appears there is a lot of
+area there to explore.  As you stand here gazing out across the island, you
+hear a deep rumbling from the ice below, and a huge hole opens up.  Good
+thing you are flying!  
+~
+0 302120964 5
+Rd     0
+D2
+~
+~
+0 0 27172
+D5
+~
+~
+0 0 27174
+S
+#27174
+A Small Stream~
+You splash down into an incredibly cold stream, formed from the glaciers run off.
+The water is cold, and clear, revealing more ice beneath it.
+~
+0 268836864 5
+Rd     100
+D2
+~
+~
+0 0 27175
+S
+#27175
+Rising River~
+The water starts to rise here, into a freezing cold river. It cuts its way
+deep into the glacier, forming an icy smooth tunnel. As you are carried along by the
+current, you notice how much the ice sparkles, and how numb your hands and
+feet are becoming.
+~
+0 277241857 0
+Rd     100
+D1
+~
+~
+0 0 27176
+S
+#27176
+A Thundering Cataract~
+The river has become a thundering wall of water, forcing it's way ever deeper into
+the glacier. The noise is deafening, and the current incredibly strong, dragging
+you insistently onward.
+~
+0 277241857 0
+Rd     100
+D0
+~
+~
+0 0 27177
+S
+#27177
+Top of the Waterfall!~
+You find yourself at the top of a thundering waterfall. The icy torrent washes
+everything before it, down to a pool far below.
+~
+0 302120961 0
+Rd     100
+D5
+~
+~
+0 0 27178
+S
+#27178
+Middle of the Waterfall~
+You find yourself floating in the center of an icy waterfall. The water crashes 
+into a pond below.
+~
+0 302120960 9
+Rd     100
+D5
+~
+~
+0 0 27306
+S
+#27179
+Bottom of the Falls~
+~
+0 4 6
+Rd     0
+S
+#27180
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27208
+D1
+~
+~
+0 0 27181
+D3
+~
+~
+0 0 27163
+S
+#27181
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27209
+D1
+~
+~
+0 0 27182
+D3
+~
+~
+0 0 27180
+S
+#27182
+Edge of the Glacier~
+&WThe glacier drops off into a sheer wall of ice.  Below you, the ocean
+smashes angrily against the islands edge.  Far to the south east you can
+just make out the outline of Bethaven, and to the east, Hammerheim.  To the
+northeast you see the vast field of ice, rather reminds you of where you are
+now.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27210
+D3
+~
+~
+0 0 27181
+S
+#27183
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27211
+D1
+~
+~
+0 0 27163
+D3
+~
+~
+0 0 27184
+S
+#27184
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27212
+D1
+~
+~
+0 0 27183
+D3
+~
+~
+0 0 27185
+S
+#27185
+The Glaciers Edge~
+&WThe glacier drops off in a sheer wall of ice here.  You can see the
+ocean extending to the edges of the horizon.  It starts to make you wonder
+what might be out there.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27213
+D1
+~
+~
+0 0 27184
+S
+#27186
+The Cave~
+You see no light coming from this direction, and the smell of rotting
+flesh has only gotten stronger.  As you walk, you almost hit your head on a
+sharp stalgmite.  The cave continues east, you think.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27188
+D3
+~
+~
+0 0 27162
+S
+#27187
+A cave.~
+The cave is dark, so it is hard to see much, the walls are smooth, as are
+the floors and the ceiling.  It almost feels man made.  A small passage
+leads west, deeper into the mountain.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27162
+D3
+~
+~
+0 0 27195
+S
+#27188
+The Cave.~
+You see no light coming from this direction, and the smell of rotting
+flesh has only gotten stronger.  As you walk, you almost hit your head on a
+sharp stalgmite.  The cave continues east, you think.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27189
+D3
+~
+~
+0 0 27186
+S
+#27189
+A Turn.~
+The cave turns to the north now, and still no sign of light.
+Your only way out may be to turn back.
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27190
+D3
+~
+~
+0 0 27188
+S
+#27190
+Another turn.~
+The cave curves again to the east.  You hear a faint sound, a drip.  A
+drop of water hits you on the head.  Water!  You must be near an exit!  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27191
+D2
+~
+~
+0 0 27189
+S
+#27191
+Deeper in the cave.~
+The caves walls are damp and covered with moss now.  You get the
+suspicion that there may be an underground river or lake up ahead.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27192
+D3
+~
+~
+0 0 27190
+S
+#27192
+Deeper in the cave.~
+The caves walls are damp and covered with moss now.  You get the
+suspicion that there may be an underground river or lake up ahead.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27193
+D3
+~
+~
+0 0 27191
+S
+#27193
+Deeper in the cave.~
+As you continue through the cave, you hear the faint whisper of water
+running up ahead.  You point your torch east, and see the dim outline of a
+lake.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27194
+D3
+~
+~
+0 0 27192
+S
+#27194
+A cave in.~
+As you continue through the cave, you hear a rumbling.  Rocks begin to
+fall all around you.  Both the lake and the cavern west are sealed!  You are
+trapped , &RDoomed to starve to death!  
+~
+0 13 0
+Rd     0
+S
+#27195
+A cave.~
+The cave narrows into a small passageway here, which is barely wide
+enough for you to squeeze through.  The walls are rougher here, but there
+are still no stalagtites or stalagmites.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27196
+D1
+~
+~
+0 0 27187
+S
+#27196
+A cave.~
+The cave begins to descend deeper into the mountain.  The cave walls are
+coarse and occasionally rip your clothing as you squeeze through.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27197
+D2
+~
+~
+0 0 27195
+S
+#27197
+Deeper in the cave.~
+The cave walls are rough and porous to the touch, and it is hard to get a
+good footing on the cave floor, it has many cracks and it is very steep. 
+The cave is too dark to see how far it leads.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27198
+D2
+~
+~
+0 0 27196
+S
+#27198
+Deeper in the cave.~
+The cave walls are rough and porous to the touch, and it is hard to get a
+good footing on the cave floor.  The passage levels off, and by touching the
+walls you know you can continue north.  The cave is too dark to see how far
+it leads.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27199
+D2
+~
+~
+0 0 27197
+S
+#27199
+Deeper in the cave.~
+The cave walls are rough and porous to the touch, and it is hard to get a
+good footing on the cave floor.  The cave passage runs north and south, but
+it is too dark to see how far it leads.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27200
+D2
+~
+~
+0 0 27198
+S
+#27200
+Deeper in the cave.~
+The cave turns east and your head encounters a stalagmite.  OUCH!  You
+lean against the wall and notice that it is slightly wet.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27201
+D2
+~
+~
+0 0 27199
+S
+#27201
+Deeper in the cave.~
+The cave turns north.  You weave your way between stalagmites and
+stalactites, all the while trying to keep your balance on the cracking cave
+floor.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27202
+D3
+~
+~
+0 0 27200
+S
+#27202
+Deeper in the cave.~
+The cave turns east.  You weave your way between stalagmites and
+stalactites, all the while trying to keep your balance on the cracking cave
+floor.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27203
+D2
+~
+~
+0 0 27201
+S
+#27203
+Deeper in the cave~
+A smell of mildew and decaying flesh fills the cave.  You gag and stumble
+about, wondering if you should go on.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27204
+D3
+~
+~
+0 0 27202
+S
+#27204
+Deeper in the cave.~
+The smell becomes worse as the cave turns north.  While the stalagmites
+and stalactites are fewer, the floor is still cracked and slopes slightly. 
+The walls are slimy to the touch.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27205
+D3
+~
+~
+0 0 27203
+S
+#27205
+Deeper in the cave.~
+The smell of death and mildew is becoming unbearable!  The source of
+these odors must be near by.  The cave continues north and south, sloping
+slightly downward.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27206
+D2
+~
+~
+0 0 27204
+S
+#27206
+Deeper in the cave.~
+The smell of death and mildew is becoming unbearable!  The source of
+these odors must be near by.  The cave continues north and south, sloping
+slightly downward.  
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27207
+D2
+~
+~
+0 0 27205
+S
+#27207
+Goblin mess hall.~
+Several wooden tables are arrayed around a central roasting pit here. On the floor you see scraps of old food, and broken bones.
+Guess no one ever taught these goblins table manners!
+~
+0 9 0
+Rd     0
+D0
+~
+~
+0 0 27228
+D2
+~
+~
+0 0 27206
+D3
+~
+~
+0 0 27227
+S
+#27208
+The Glacier.~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27214
+D1
+~
+~
+0 0 27209
+D2
+~
+~
+0 0 27180
+D3
+~
+~
+0 0 27164
+S
+#27209
+The Glacier.~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27215
+D1
+~
+~
+0 0 27210
+D2
+~
+~
+0 0 27181
+D3
+~
+~
+0 0 27208
+S
+#27210
+The Glaciers Edge.~
+&WThe glacier drops off into a sheer wall of ice.  Below you, the ocean
+smashes angrily against the islands edge.  Far to the south east you can
+just make out the outline of Bethaven, and to the east, Hammerheim.  To the
+northeast you see the vast field of ice, rather reminds you of where you are
+now.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27216
+D2
+~
+~
+0 0 27182
+D3
+~
+~
+0 0 27209
+S
+#27211
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27217
+D1
+~
+~
+0 0 27164
+D2
+~
+~
+0 0 27183
+D3
+~
+~
+0 0 27212
+S
+#27212
+The Glacier.~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27218
+D1
+~
+~
+0 0 27211
+D2
+~
+~
+0 0 27184
+D3
+~
+~
+0 0 27213
+S
+#27213
+The Glaciers Edge.~
+&WThe glacier drops off in a sheer wall of ice here.  You can see the
+ocean extending to the edges of the horizon.  It starts to make you wonder
+what might be out there.  
+~
+0 268435456 5
+Rd     0
+D1
+~
+~
+0 0 27212
+D2
+~
+~
+0 0 27185
+S
+#27214
+The Glacier.~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27167
+D1
+~
+~
+0 0 27215
+D2
+~
+~
+0 0 27208
+D3
+~
+~
+0 0 27165
+S
+#27215
+The Glacier.~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27168
+D1
+~
+~
+0 0 27216
+D2
+~
+~
+0 0 27209
+D3
+~
+~
+0 0 27214
+S
+#27216
+The Glaciers Edge.~
+&WThe glacier drops off into a sheer wall of ice.  Below you, the ocean
+smashes angrily against the islands edge.  Far to the south east you can
+just make out the outline of Bethaven, and to the east, Hammerheim.  To the
+northeast you see the vast field of ice, rather reminds you of where you are
+now.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27222
+D2
+~
+~
+0 0 27210
+D3
+~
+~
+0 0 27215
+S
+#27217
+The Glacier.~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27219
+D1
+~
+~
+0 0 27165
+D2
+~
+~
+0 0 27211
+D3
+~
+~
+0 0 27218
+S
+#27218
+The Glaciers Edge.~
+&WThe glacier drops off in a sheer wall of ice here.  You can see the
+ocean extending to the edges of the horizon.  It starts to make you wonder
+what might be out there.  
+~
+0 268435456 5
+Rd     0
+D1
+~
+~
+0 0 27217
+D2
+~
+~
+0 0 27212
+S
+#27219
+The Glaciers Edge.~
+&WThe glacier drops off in a sheer wall of ice here.  You can see the
+ocean extending to the edges of the horizon.  It starts to make you wonder
+what might be out there.  
+~
+0 268435456 5
+Rd     0
+D1
+~
+~
+0 0 27166
+D2
+~
+~
+0 0 27217
+S
+#27220
+The Glaciers Edge.~
+&WThe glacier drops off in a sheer wall of ice here.  You can see the
+ocean extending to the edges of the horizon.  It starts to make you wonder
+what might be out there.  
+~
+0 268435456 5
+Rd     0
+D1
+~
+~
+0 0 27221
+D2
+~
+~
+0 0 27166
+S
+#27221
+The Glacier~
+&WSearing cold air all around, white fields of ice are all that you see
+for miles, which emanates waves of chill reaching into your consciousness
+threatening to wipe it out.  The wind picks up speed every now and then
+blasting down at you.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27171
+D1
+~
+~
+0 0 27169
+D2
+~
+~
+0 0 27167
+D3
+~
+~
+0 0 27220
+S
+#27222
+The Glaciers Edge.~
+&WThe glacier drops off into a sheer wall of ice.  Below you, the ocean
+smashes angrily against the islands edge.  Far to the south east you can
+just make out the outline of Bethaven, and to the east, Hammerheim.  To the
+northeast you see the vast field of ice, rather reminds you of where you are
+now.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27223
+D2
+~
+~
+0 0 27216
+D3
+~
+~
+0 0 27168
+S
+#27223
+The Glaciers Edge.~
+&WThe glacier drops off into a sheer wall of ice.  Below you, the ocean
+smashes angrily against the islands edge.  Far to the south east you can
+just make out the outline of Bethaven, and to the east, Hammerheim.  To the
+northeast you see the vast field of ice, rather reminds you of where you are
+now.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27224
+D2
+~
+~
+0 0 27222
+D3
+~
+~
+0 0 27169
+S
+#27224
+The Glaciers Edge.~
+&WThe glacier drops off into a sheer wall of ice.  Below you, the ocean
+smashes angrily against the islands edge.  Far to the south east you can
+just make out the outline of Bethaven, and to the east, Hammerheim.  To the
+northeast you see the vast field of ice, rather reminds you of where you are
+now.  
+~
+0 268435456 5
+Rd     0
+D0
+~
+~
+0 0 27225
+D2
+~
+~
+0 0 27223
+D3
+~
+~
+0 0 27170
+S
+#27225
+The Glaciers Edge.~
+&WThe glacier drops off into a sheer wall of ice.  Below you, the ocean
+smashes angrily against the islands edge.  Far to the south east you can
+just make out the outline of Bethaven, and to the east, Hammerheim.  To the
+northeast you see the vast field of ice, rather reminds you of where you are
+now.  
+~
+0 268435456 5
+Rd     0
+D2
+~
+~
+0 0 27224
+D3
+~
+~
+0 0 27226
+S
+#27226
+The Glaciers Edge.~
+&WYou are at the edge of the great glacier.  The glacier drops off into a
+sheer ice wall here, which gives you an almost totally unobstructed view of
+the lands.  To the east you see the dim outlines of Hammerheim, and to the
+north east, the vast plains of ice.  To the north lies a large, jungel
+covered island, looks like you might be able to get to it from the northern
+edge of the glacier.  
+~
+0 268435456 5
+Rd     0
+D1
+~
+~
+0 0 27225
+D2
+~
+~
+0 0 27170
+D3
+~
+~
+0 0 27172
+S
+#27227
+Goblin Bunkroom.~
+What a mess, there are beds scattered everywhere, with old goblin
+uniforms, and bits of clothing strewn between.  You hear scurrying sounds in
+amongst the piles of detritus, and worry that there might be rabid rats in
+the mess.  Good luck finding anything of use here!  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+0 0 27207
+S
+#27228
+Goblin Overlords room.~
+Phewwwww!  This room really stinks.  Seems the overlord is not only a
+higher rank, but is more rank.  There are heads on the wall, most in some
+advanced state of decay, possibly from the overlords challengers, who then
+lost.  Old body parts, weapons, and armor cover the floor in an impenetrable
+mass.  
+~
+0 13 0
+Rd     0
+D2
+~
+~
+0 0 27207
+S
+#27300
+Amazon River~
+As you float down the river, you notice monkeys and parrots flying between
+the jungle tree tops. Vines lay everywhere on the trees that surround you.
+The dark, murky water swirls around you. The hot climate makes you drip with
+sweat.
+~
+0 4 6
+Rd     0
+D0
+The tributary flows to the north.
+~
+~
+0 -1 27301
+S
+#27301
+Amazon River~
+As you venture farther into the dense tropics you question if these waterways
+have ANY end. You notice that the air is becoming much more humid as you
+float south. You see a small tributary off to the west. The river continues
+south.
+~
+0 0 6
+Rd     0
+D0
+You see water spanning ahead.
+~
+~
+0 -1 27300
+D2
+You see water spanning ahead. The river grows wider.
+~
+~
+0 -1 27302
+D3
+You see a tributary.
+~
+~
+0 -1 27312
+S
+#27302
+Amazon River~
+It is now getting very hard to paddle upstream. Something huge must be pushing
+you back. The lush surroundings are somewhat comforting, and the wildlife is
+as would be expected in a jungle, plentiful. The river cotinues south.
+~
+0 0 6
+Rd     0
+D0
+You see water spanning ahead.
+~
+~
+0 -1 27301
+D2
+You see water spanning ahead.
+~
+~
+0 -1 27303
+S
+#27303
+Amazon River~
+You wonder if you'll ever get anywhere on this river. Numerous trees and
+animals surround you as you float in peace. You are forced wipe your brow as 
+the humidity is unbearable. The river continues south.
+~
+0 0 6
+Rd     0
+D0
+You see water spanning ahead.
+~
+v~
+0 -1 27302
+D2
+You see water spanning ahead.
+~
+~
+0 -1 27304
+S
+#27304
+Amazon River~
+The river widens immensely here and as you peer to the south you notice a 
+massive mist rising from the jungle. You wonder what it could be. It beckons 
+you to investigate further. The ever present animals still surround you as
+you float. The river continues south.
+~
+0 0 6
+Rd     0
+D0
+You see water spanning ahead.
+~
+~
+0 -1 27303
+D2
+You see water spanning ahead.
+~
+~
+0 -1 27305
+S
+#27305
+Before the Waterfall~
+You finally come to see an immense waterfall roaring and splashing in front of
+you. You try to look into and behind the waterfall and see some sort of
+lagoon. Your curiousity beckons you to go south and investigate. The waterfall
+is south. The river flows north, back the way you came.
+~
+0 0 6
+Rd     0
+D0
+You see water spanning ahead.
+~
+~
+0 -1 27304
+D2
+You hear the sounds of rushing, falling water.
+~
+~
+0 -1 27306
+S
+#27306
+Waterfall Lagoon~
+You are deafened by the pulsating roar of the waterfall as it crashes down on 
+the rocks below. The water is clear here and you see fish of all types 
+swimming lazy circles around you. A path leads into the dense jungle canopy, 
+it looks dark but the path is distinguishable. The climb up the waterfall 
+look precarious.
+~
+0 4100 6
+Rd     0
+D3
+A path leads into the jungle.
+~
+~
+0 -1 27307
+D4
+You fear that you will fall if you go up.
+~
+~
+0 -1 27313
+S
+#27307
+Jungle Trail~
+Trees encompass you with a dreary presence as you walk further into the
+jungle. It seems that no one could make it in such harsh conditions (to you
+at least). The path turns towards the north and goes back to the waterfall.
+~
+0 5 3
+Rd     0
+D0
+You see a trail through the jungle.
+~
+~
+0 -1 27308
+D1
+You see a lagoon ahead.
+~
+~
+0 -1 27306
+S
+#27308
+Jungle Trail~
+You continue to explore this jungle with due caution. Jungle surrounds you
+with no end in sight. Paths lead in all directions. You fell that you could
+get lost any moment.
+~
+0 9 3
+Rd     0
+D0
+You see a trail through the jungle.
+~
+~
+0 -1 27309
+D1
+You see Jungle.
+~
+~
+0 -1 27324
+D2
+You see a trail through the jungle.
+~
+~
+0 -1 27307
+D3
+You see a trail through the jungle.
+~
+~
+0 -1 27307
+S
+#27309
+Jungle Trail~
+You continue to explore the jungle with due caution. Trees and jungle is all
+you can see. Paths lead in every direction. You feel that you are going to get
+lost any moment.
+~
+0 1 3
+Rd     0
+D0
+You see a trail through the jungle.
+~
+~
+0 -1 27307
+D1
+You see a trail through the jungle.
+~
+~
+0 -1 27308
+D2
+You see a trail through the jungle.
+~
+~
+0 -1 27310
+D3
+You see Jungle.
+~
+~
+0 -1 27322
+S
+#27310
+Jungle Trail~
+You have come to a welcomed change in the landscape. Beginning here are some
+high mountains with steep slopes. A mountain trail leads up and jungle
+continues north, south and east.
+~
+0 1 3
+Rd     0
+D0
+You see a trail through the jungle.
+~
+~
+0 -1 27307
+D1
+You see a trail through the jungle.
+~
+~
+0 -1 27307
+D2
+You see Jungle.
+~
+~
+0 -1 27323
+D3
+You see a small hut door.
+~
+door hut~
+31 27302 27311
+D4
+You see a mountain Jungle trail.
+~
+~
+0 -1 27355
+S
+#27311
+A Small Hut~
+You have found a secret hut that is very unlike all of the residences you 
+have seen in jungle to date. Books of all kinds and sizes are lying everywhere
+but in perfect order. Your suspicions are confirmed when you notice an old
+man sitting and reading in the corner.
+~
+0 9229 0
+Rd     0
+D1
+You see a trail in the forrest.
+~
+door hut~
+15 27302 27310
+S
+#27312
+Small, Tributary to the Amazon~
+You have paddled your way into a small tributary. The water is so shallow here
+that you feel that you could probably wade your way through. The waterway has 
+been cleared of any loose vines, shrubbery or debris that might hamper its 
+use as a launch. The tributary continues west.
+~
+0 0 6
+Rd     0
+D1
+You see a River ahead.
+~
+~
+0 -1 27301
+D3
+You see a small tributary.
+~
+~
+0 -1 27314
+S
+#27313
+Fallen off the Waterfall~
+Stupidity has blessed you with a painful blow and bad luck has drowned you.
+Next time think about it...Climb a waterfall?
+~
+0 4102 1
+Rd     0
+S
+#27314
+Small, Tributary to the Amazon~
+As you travel down this tributary it begins to look less and less like a
+natural occurrence. The trees are trimmed back so as to provide easy access,
+but for what? The tributary continues both east and west.
+~
+0 0 6
+Rd     0
+D1
+You see a small tributary.
+~
+~
+0 -1 27312
+D3
+You see a small tributary.
+~
+~
+0 -1 27315
+S
+#27315
+Small, Tributary to the Amazon~
+You have reached the boat launch of a race of pigmies that often fishes in the
+huge amazon to the east. Several boats are tied to their respective trees. It 
+seems funny to you that all of the boats seem to be in right now. From what
+you know of the pigmies they should be on the hunt. A small village is to the 
+south.
+~
+0 4 6
+Rd     0
+D1
+You see a small tributary.
+~
+~
+0 -1 27314
+D2
+You see a village.
+~
+~
+0 -1 27316
+S
+#27316
+Village of Tubbiki~
+You have entered the pigmie village. Little people scamper about your feet 
+dancing and singing in the usual merriment. However do not be fooled.  These
+are some tough little warriors with high strung tempers with cause to be
+alarmed. Paths lead in all directions.
+~
+0 0 1
+Rd     0
+D0
+You see the tributary.
+~
+~
+0 -1 27315
+D1
+You see nothing special.
+~
+~
+0 -1 27317
+D2
+You see a jungle path.
+~
+~
+0 -1 27322
+D3
+You see nothing special.
+~
+~
+0 -1 27320
+S
+#27317
+Village of Tubbiki~
+The path through the village continues east and west of here. A storage room
+lies to the north. Pigmies are everywhere in this town!
+~
+0 0 1
+Rd     0
+D0
+You see a small shop.
+~
+~
+0 -1 27318
+D1
+You see nothing special.
+~
+~
+0 -1 27319
+D2
+You see a small home.
+~
+~
+0 -1 27389
+D3
+You see nothing special.
+~
+~
+0 -1 27316
+S
+#27318
+Food Storage Room~
+You see a small pigmy here, he offers you some food for a small price.
+~
+0 12 1
+Rd     0
+D2
+You see the outside.
+~
+~
+0 -1 27317
+S
+#27319
+Village of Tubbiki~
+You have reached the end of the street with no way to go but back west.
+Apparently, the pigmies are not very receptive to your prescence and none
+will even open their door and be hospitable. The path leads back west.
+~
+0 0 1
+Rd     0
+D0
+You see a small home.
+~
+~
+0 -1 27390
+D1
+You see a small home.
+~
+~
+0 -1 27392
+D2
+You see a small home.
+~
+~
+0 -1 27391
+D3
+You see nothing special.
+~
+~
+0 -1 27317
+S
+#27320
+Village of Tubbiki~
+Small little huts and homes surround you. Pigmies run rampid throughout the
+village. You see a small hut to the south. What isnt small around here.
+~
+0 4 1
+Rd     0
+D0
+You see a small home.
+~
+~
+0 -1 27388
+D1
+You see nothing special.
+~
+~
+0 -1 27316
+D2
+You see a small hut.
+~
+~
+0 -1 27321
+D3
+You see more village.
+~
+~
+0 -1 27363
+S
+#27321
+Small Hut~
+This hut seems slightly larger than the others you have seen but is still
+cramped for space. Several pots and pans are lying about in an orderly
+fashion.  Clearly these pigmies never intended to have you as a guest.
+~
+0 8 0
+Rd     0
+D0
+You see the village.
+~
+~
+0 -1 27320
+D2
+You see a wall.
+~
+wall~
+31 27301 27354
+S
+#27322
+Jungle Path~
+You are wlking on a path leading into some dense jungle terrain. Birds and
+animals are here with their constant chirping, singing and chattering.  The
+village lies to the north and the jungle to the west.
+~
+0 4 3
+Rd     0
+D0
+You see a village.
+~
+~
+0 -1 27316
+D3
+You see Jungle.
+~
+~
+0 -1 27323
+S
+#27323
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see a path lined with orchids.
+~
+~
+0 -1 27376
+D1
+You see Jungle.
+~
+~
+0 -1 27324
+D2
+You see jungle.
+~
+~
+0 -1 27323
+D3
+You see jungle.
+~
+~
+0 -1 27308
+S
+#27324
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see jungle.
+~
+~
+0 -1 27323
+D1
+You see jungle.
+~
+~
+0 -1 27324
+D2
+You see Jungle.
+~
+~
+0 -1 27325
+D3
+You see jungle.
+~
+~
+0 -1 27323
+S
+#27325
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see jungle.
+~
+~
+0 -1 27323
+D1
+You see jungle.
+~
+~
+0 -1 27325
+D2
+You see jungle.
+~
+~
+0 -1 27324
+D3
+You see Jungle.
+~
+~
+0 -1 27326
+S
+#27326
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see jungle.
+~
+~
+0 -1 27308
+D1
+You see Jungle.
+~
+~
+0 -1 27327
+D2
+You see jungle.
+~
+~
+0 -1 27325
+D3
+You hear the faint sounds of a waterfall.
+~
+~
+0 -1 27307
+S
+#27327
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see Jungle.
+~
+~
+0 -1 27328
+D1
+You see jungle.
+~
+~
+0 -1 27326
+D2
+You see jungle.
+~
+~
+0 -1 27326
+D3
+Your spine shivers as you hear the roar of hungry tigers.  
+Maybe you shouldn't go that way.
+~
+~
+0 -1 27365
+S
+#27328
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see some sort of cage.
+~
+~
+0 -1 27366
+D1
+You see jungle.
+~
+~
+0 -1 27326
+D2
+You see jungle.
+~
+~
+0 -1 27325
+D3
+You see Jungle.
+~
+~
+0 -1 27329
+S
+#27329
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see Jungle.
+~
+~
+0 -1 27330
+D1
+You see jungle.
+~
+~
+0 -1 27328
+D2
+You see jungle.
+~
+~
+0 -1 27327
+D3
+You see jungle.
+~
+~
+0 -1 27323
+D4
+You see a hive in a tree.
+~
+~
+0 -1 27345
+S
+#27330
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see a bush.
+~
+bush~
+9 -1 27362
+D1
+You see jungle.
+~
+~
+0 -1 27328
+D2
+You see jungle.
+~
+~
+0 -1 27337
+D3
+You see Jungle.
+~
+~
+0 -1 27331
+S
+#27331
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 1 3
+Rd     0
+D0
+You see an opening in the canopy.
+~
+~
+0 -1 27335
+D1
+You see Jungle.
+~
+~
+0 -1 27332
+D2
+You see jungle.
+~
+~
+0 -1 27329
+D3
+You see jungle.
+~
+~
+0 -1 27330
+S
+#27332
+Wandering the Jungle~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 0 3
+Rd     0
+D0
+You see jungle.
+~
+~
+0 -1 27330
+D1
+You can't see anything but hear cheering.
+~
+~
+0 -1 27333
+D2
+You see jungle.
+~
+~
+0 -1 27324
+D3
+You see jungle.
+~
+~
+0 -1 27323
+S
+#27333
+Pigmy Camp~
+You see very small huts here, spears lying against them. Pigmy's run all over
+the place cheering in victory. A wild boar lies pierced on a stick roasting
+over a fire. They look at you as you walk in.
+~
+0 0 1
+Rd     0
+D0
+You see Jungle.
+~
+~
+0 -1 27332
+D1
+You see a corner of the camp.
+~
+~
+0 -1 27394
+D2
+You see the south edge of the camp.
+~
+~
+0 -1 27393
+D3
+You see a corner of the camp.
+~
+~
+0 -1 27395
+S
+#27334
+Pigmy Throne Room~
+A small bamboo throne is here, and on it sits Kabukiki, the Pigmy King. He 
+raises his brow at you as you walk in. Small skulls of boars adorne the wall 
+as well as skeletons of his enemies that he has been victorious over.
+~
+0 8200 1
+Rd     0
+D4
+You see a small trap door.
+~
+trap door~
+31 27300 27361
+D5
+You see the camp.
+~
+~
+0 -1 27393
+S
+#27335
+Canopy Opening~
+The canopy seems to have opened up just enough to allow a faint light in.
+You look up and it looks like a tree house of some sort up in the trees.
+The animals here seem a bit more peaceful, than in the other areas. Like
+they have been satisfied and treated well.
+~
+0 0 3
+Rd     0
+D0
+You see jungle.
+~
+~
+0 -1 27323
+D1
+You see jungle.
+~
+~
+0 -1 27324
+D2
+You see jungle.
+~
+~
+0 -1 27325
+D3
+You see jungle.
+~
+~
+0 -1 27323
+D4
+You see a tree house.
+~
+~
+0 -1 27336
+S
+#27336
+Tarzan's Tree House~
+This tree house is made of bamboo and tied together with vine. Its 
+construction was intelligently made. Only a man could make such a thing.
+Standing here is Tarzan, the Ape Man. He looks at you and grunts as he
+speaks. Some crudely but very useful tools and furniture lie all around
+the tree house. He is currently talking to himself and peeling bananas
+aparently for his dinner.
+~
+0 9 3
+Rd     0
+D5
+You see the jungle below.
+~
+~
+0 -1 27335
+S
+#27337
+Entrance to the Ant Hill~
+The Jungle canopy is high above you, it blocks out all sunlight and moonlight.
+Strange noises come from everywhere, and you feel as though you are being
+watched. You see movement in the canopy above you from the wandering animals.
+You feel eerie as you wander around.
+~
+0 13 3
+Rd     0
+D0
+Your spine shivers, as you hear the roar of hungry tigers, Maybe you shouldn't
+go that way.
+~
+~
+0 -1 27365
+D1
+You see jungle.
+~
+~
+0 -1 27308
+D3
+You hear rushing water.
+~
+~
+0 -1 27302
+D5
+You see the entrance to an Ant Hill.
+~
+~
+0 -1 27338
+S
+#27338
+The Ant Hill~
+You sit in a tunnel that seems almost naturally carved out. But it was carved
+out by ants. Ants are running around everywhere making themselves busy,
+collecting food for the queen ant and all the new larvae. The stagnant smell 
+almost turns your stomach as you are standing here.
+There seems to be no way out of this hill.
+~
+0 4361 3
+Rd     0
+D0
+The tunnel leads on.
+~
+~
+0 -1 27339
+D1
+The tunnel goes on.
+~
+~
+0 -1 27339
+D2
+The tunnel goes on.
+~
+~
+0 -1 27341
+D4
+You see the jungle.
+~
+~
+0 -1 27337
+S
+#27339
+The Ant Hill~
+You sit in a tunnel that seems almost naturally carved out. But it was carved
+out by ants. Ants are running around everywhere making themselves busy,
+collecting food for the queen ant and all the new larvae. The stagnant smell 
+almost turns your stomach as you are standing here.
+There seems to be no way out of this hill.
+~
+0 4361 3
+Rd     0
+D1
+The tunnel goes on.
+~
+~
+0 -1 27341
+D3
+The tunnel goes on.
+~
+~
+0 -1 27339
+D4
+The tunnel goes on.
+~
+~
+0 -1 27340
+D5
+The tunnel goes on.
+~
+~
+0 -1 27340
+S
+#27340
+The Ant Hill~
+You sit in a tunnel that seems almost naturally carved out. But it was carved
+out by ants. Ants are running around everywhere making themselves busy,
+collecting food for the queen ant and all the new larvae. The stagnant smell 
+almost turns your stomach as you are standing here.  There seems to be no way 
+out of this hill.
+~
+0 4361 3
+Rd     0
+D0
+The tunnel continues.
+~
+~
+0 -1 27338
+D1
+Your conscience tells you not to go that way.
+~
+~
+0 -1 27380
+D2
+The tunnel continues.
+~
+~
+0 -1 27339
+D3
+The tunnel goes on.
+~
+~
+0 -1 27338
+S
+#27341
+The Ant Hill~
+You sit in a tunnel that seems almost naturally carved out. But it was carved
+out by ants. Ants are running around everywhere making themselves busy,
+collecting food for the queen ant and all the new larvae. The stagnant smell 
+almost turns your stomach as you are standing here.  There seems to be no way
+out of this hill.
+~
+0 4361 0
+Rd     0
+D0
+The tunnel goes on.
+~
+~
+0 -1 27340
+D2
+You see a wider tunnel.
+~
+~
+0 -1 27342
+D3
+The tunnel goes on.
+~
+~
+0 -1 27338
+D4
+The tunnel goes on.
+~
+~
+0 -1 27339
+D5
+The tunnel goes on.
+~
+~
+0 -1 27338
+S
+#27342
+Royal ANTe Chamber~
+This tunnel seems to have been widened a bit more. The Royal Soldiers stand he
+re ready to attack intruders at any given moment. Worker ants are no where to
+be seen considering they are not allowed to come in through this tunnel.
+~
+0 269 3
+Rd     0
+D0
+You see a tunnel.
+~
+~
+0 -1 27341
+D5
+You see a very large cave.
+~
+~
+0 -1 27343
+S
+#27343
+Royal Chamber~
+You have entered the royal ant chamber. King Hormiga sits here with his
+queen, Hormigetta. She is here laying eggs, and he is sitting here serving
+her food, and cleaning out the waste in the room, this includes intruders.
+~
+0 269 3
+Rd     0
+D1
+You see the egg chamber.
+~
+~
+0 -1 27344
+D4
+You see the ANTe Chamber.
+~
+~
+0 -1 27342
+S
+#27344
+Egg Chamber~
+You walk into a room with eggs laying everywhere. There are worker ants
+running around everywhere, neatly stacking the eggs in piles, and moving
+out hatched eggs, they also sit here feeding larvae and removing trash.
+~
+0 269 3
+Rd     0
+D3
+You see the Royal Chamber.
+~
+~
+0 -1 27343
+S
+#27345
+Entrance to the Hive~
+You see a large bee hive here. Drone bees are here guarding the entrance, and
+worker bees fly in and out to collect pollen. You are in awe as you look at 
+the effectiveness of this hierarchy.
+~
+0 33554436 0
+Rd     0
+D4
+Entrance to the Hive.
+~
+~
+0 -1 27346
+D5
+The Jungle Floor.
+~
+~
+0 -1 27329
+S
+#27346
+Honeycomb~
+You sit inside the honeycomb, honey surrounds you. Worker bees are here 
+brushing off pollen into the honeycombs, they just seem to ignore you.
+But they Drone bees sitting here aren't.
+~
+0 33554440 0
+Rd     0
+D0
+The tunnel continues.
+~
+~
+0 -1 27347
+D5
+You see the entrance to the hive.
+~
+~
+0 -1 27345
+S
+#27347
+Center of the Hive~
+You sit in the center of the hive. Passages lead off in all directions.  You 
+are confused, and not sure which way is the way out.  Bees wander all over 
+the place.
+~
+0 8 0
+Rd     0
+D0
+The tunnel goes on.
+~
+~
+0 -1 27349
+D1
+The tunnel goes on.
+~
+~
+0 -1 27348
+D2
+The tunnel goes on.
+~
+~
+0 -1 27350
+D3
+The tunnel goes on.
+~
+~
+0 -1 27350
+S
+#27348
+Honeycomb~
+You sit inside the honeycomb, honey surrounds you. Worker bees are here 
+brushing off pollen into the honeycombs, they just seem to ignore you.
+But they Drone bees sitting here aren't.
+~
+0 8 0
+Rd     0
+D0
+The tunnel goes on.
+~
+~
+0 -1 27347
+D1
+The tunnel goes on.
+~
+~
+0 -1 27347
+D2
+The Queen's Chamber.
+~
+~
+0 -1 27351
+D3
+The tunnel goes on.
+~
+~
+0 -1 27347
+S
+#27349
+Honeycomb~
+You sit inside the honeycomb, honey surrounds you. Worker bees are here 
+brushing off pollen into the honeycombs, they just seem to ignore you.
+But they Drone bees sitting here aren't.
+~
+0 8 0
+Rd     0
+D0
+The tunnel goes on.
+~
+~
+0 -1 27347
+D1
+The tunnel goes on.
+~
+~
+0 -1 27347
+D2
+The tunnel goes on.
+~
+~
+0 -1 27347
+D3
+The tunnel goes on.
+~
+~
+0 -1 27347
+S
+#27350
+Honeycomb~
+You sit inside the honeycomb, honey surrounds you. Worker bees are here 
+brushing off pollen into the honeycombs, they just seem to ignore you.
+But they Drone bees sitting here aren't.
+~
+0 8 0
+Rd     0
+D0
+The tunnel goes on.
+~
+~
+0 -1 27347
+D1
+The tunnel goes on.
+~
+~
+0 -1 27347
+D2
+The tunnel goes on.
+~
+~
+0 -1 27347
+D3
+The tunnel goes on.
+~
+~
+0 -1 27347
+S
+#27351
+Queen Bee's Chamber~
+This room is ornately decorated with honeycombs. Vats of honey sit all over 
+the place. The Queen bee sits on her throne buzzing, and laying eggs in the
+various honeycomb holes. Worker bees sit here tending her, and many drone
+bees sit here protecting her from intruders.
+~
+0 12 0
+Rd     0
+D0
+The tunnel goes on.
+~
+~
+0 -1 27350
+D1
+The tunnel goes on.
+~
+~
+0 -1 27346
+D2
+The tunnel goes on.
+~
+~
+0 -1 27349
+D3
+The tunnel goes on.
+~
+~
+0 -1 27348
+S
+#27352
+By the Deadly Jungle~
+You see to have wandered, and gotten totally lost, you get a spine shivering
+feeling from all directions. You feel utterly trapped, and that another step 
+will get you killed.
+~
+0 4 3
+Rd     0
+D0
+You spine shivers, as death is near.
+~
+~
+0 -1 27353
+D1
+You spine shivers, as death is near.
+~
+~
+0 -1 27353
+D2
+You spine shivers, as death is near.
+~
+~
+0 -1 27353
+D3
+You spine shivers, as death is near.
+~
+~
+0 -1 27353
+S
+#27353
+Lair of the Pink Panther~
+Whoops, looks like you didn't check before walking. Hope this teaches you
+for next time to look where you walk. The Deadly Pink Panther kills you
+with one swipe of his 5 foot long claws.
+~
+0 14 3
+Rd     0
+S
+#27354
+Witch Doctor's Clinic~
+This is where the Witch Doctor hangs out, all his medicines are on a shelf. 
+He seems to be withdrawn from the world, and doesn't wish to help anyone 
+especially you.
+~
+0 12 1
+Rd     0
+D0
+You see a handle on a wall.
+~
+wall~
+31 27301 27321
+S
+#27355
+Jungle Mountain Trail~
+You are on a mountain trail inside the jungle.
+~
+0 5 5
+Rd     0
+D1
+You see jungle.
+~
+~
+0 -1 27356
+D5
+You see jungle.
+~
+~
+0 -1 27310
+S
+#27356
+Jungle Mountain Trail~
+You are on a mountain trail inside the jungle.
+~
+0 1 5
+Rd     0
+D2
+You see a village ahead.
+~
+~
+0 -1 27357
+D3
+You see jungle.
+~
+~
+0 -1 27355
+S
+#27357
+Village~
+Villagers run all over the place, screaming in a language unknown to you.
+The begin running for weapons, and start running at you, screaming. You
+decipher by pure body language alone, not to mention the flying spears
+and flailing machete's that they don't want you here, or maybe they do,
+some of them seem to be gathering pots.
+~
+0 0 1
+Rd     0
+D0
+You see jungle.
+~
+~
+0 -1 27356
+D1
+A village road.
+~
+~
+0 -1 27358
+D2
+A village road.
+~
+~
+0 -1 27360
+D3
+A village road.
+~
+~
+0 -1 27359
+S
+#27358
+Village~
+Villagers run all over the place, screaming in a language unknown to you.
+The begin running for weapons, and start running at you, screaming. You
+decipher by pure body language alone, not to mention the flying spears
+and flailing machete's that they don't want you here, or maybe they do,
+some of them seem to be gathering pots.
+~
+0 0 1
+Rd     0
+D2
+A village road.
+~
+~
+0 -1 27360
+D3
+A village road.
+~
+~
+0 -1 27357
+S
+#27359
+Village~
+Villagers run all over the place, screaming in a language unknown to you.
+The begin running for weapons, and start running at you, screaming. You
+decipher by pure body language alone, not to mention the flying spears
+and flailing machete's that they don't want you here, or maybe they do,
+some of them seem to be gathering pots.
+~
+0 0 1
+Rd     0
+D1
+A village road.
+~
+~
+0 -1 27357
+D2
+A village road.
+~
+~
+0 -1 27360
+S
+#27360
+Village~
+Villagers run all over the place, screaming in a language unknown to you.
+The begin running for weapons, and start running at you, screaming. You
+decipher by pure body language alone, not to mention the flying spears
+and flailing machete's that they don't want you here, or maybe they do,
+some of them seem to be gathering pots.
+~
+0 0 1
+Rd     0
+D0
+A village road.
+~
+~
+0 -1 27357
+D1
+A village road.
+~
+~
+0 -1 27358
+D2
+You see a path leading off through the jungle.
+~
+~
+0 -1 27367
+D3
+A village road.
+~
+~
+0 -1 27359
+S
+#27361
+Elder Room~
+This place has writing utensils on a small tabletop. A fire sits in the 
+center of this room, and an Old man sits here at the fire.  He looks deep 
+in contemplation.
+~
+0 8200 1
+Rd     0
+D5
+You see a trap door.
+~
+trap door~
+31 27300 27334
+S
+#27362
+Lion's Den~
+You have entered the only cave here in the jungle. It is dark and dank, 
+the smell of rotting flesh and meat, lingers in the air. Bones are lying
+around all over the ground. You get a sense of supremecy here, and look
+around seeing, the one and only, King of the Jungle.
+~
+0 265 5
+Rd     0
+D2
+You see a bush.
+~
+bush~
+9 -1 27330
+S
+#27363
+Village of Tubbiki~
+You see pigmies everywhere. Sheesh! These things are tiny, little, annoying, 
+and too cute to live. You are flanked by pigmy homes.
+~
+0 0 1
+Rd     0
+D0
+You see a small home.
+~
+~
+0 -1 27364
+D1
+You see more village.
+~
+~
+0 -1 27320
+D2
+You see a small home.
+~
+~
+0 -1 27387
+D3
+You see a small home.
+~
+~
+0 -1 27386
+S
+#27364
+Pigmy House~
+You have entered one of the many homes in the Village of Tubbiki. Pigmy
+children run around at your feet and the adults eye you cautiously. Again you
+were not expected.
+~
+0 8 1
+Rd     0
+D2
+You see the village.
+~
+~
+0 -1 27363
+S
+#27365
+Tiger Pit~
+Remember the days when your mother told you to look both ways before crossing 
+the street? Well the same thing goes for the jungle before you take a step in 
+any direction. Now you didn't listen to your mother, and you didn't use any 
+common sense. You're here in a pit with tigers, who are licking thief lips 
+and thinking of you as kitty bits.
+
+~
+0 131206 1
+Rd     0
+S
+#27366
+The Poachers Cage~
+Bad luck has shined upon thee! You have found your way into the poachers cage!
+No exits, no magic, your only hope is a summon my careless friend!
+~
+0 7308 0
+Rd     0
+S
+#27367
+Path to the Plain~
+You are now walking in gradually less dense jungle. Off to the south you can 
+see a huge clearing.
+~
+0 4 3
+Rd     0
+D0
+You see the head hunter village.
+~
+~
+0 -1 27360
+D2
+You see a path leading to a large clearing.
+~
+~
+0 -1 27368
+S
+#27368
+Path to the Plain~
+You are now walking in gradually less dense jungle. Off to the south you can 
+see a huge clearing.
+~
+0 0 3
+Rd     0
+D0
+The path leads back to the head hunter village.
+~
+~
+0 -1 27367
+D2
+You see a large clearing.
+~
+~
+0 -1 27369
+S
+#27369
+Plain~
+The plains stretch out in front of you with a vast nothingness.  Everywhere
+you look you see different animals than those of the jungle.
+~
+0 0 2
+Rd     0
+D0
+The path leads back to the head hunter village.
+~
+~
+0 -1 27368
+D1
+Nothing but plains.
+~
+~
+0 -1 27371
+D2
+Nothing but plains.
+~
+~
+0 -1 27372
+D3
+Nothing but plains.
+~
+~
+0 -1 27370
+S
+#27370
+Plain~
+The plains stretch out in front of you with a vast nothingness. Everywhere 
+you look you see different animals than those of the jungle.
+~
+0 0 2
+Rd     0
+D0
+Nothing but plains.
+~
+~
+0 -1 27370
+D1
+Nothing but plains.
+~
+~
+0 -1 27369
+D2
+Nothing but plains.
+~
+~
+0 -1 27373
+D3
+Nothing but plains.
+~
+~
+0 -1 27370
+S
+#27371
+Plain~
+The plains stretch out in front of you with a vast nothingness. Everywhere
+you look you see different animals than those of the jungle.
+~
+0 0 2
+Rd     0
+D0
+Nothing but plains.
+~
+~
+0 -1 27371
+D1
+Nothing but plains.
+~
+~
+0 -1 27371
+D2
+Nothing but plains.
+~
+~
+0 -1 27374
+D3
+Nothing but plains.
+~
+~
+0 -1 27369
+S
+#27372
+Plain~
+The plains stretch out in front of you with a vast nothingness. Everywhere 
+you look you see different animals than those of the jungle.
+~
+0 0 2
+Rd     0
+D0
+Nothing but plains.
+~
+~
+0 -1 27369
+D1
+Nothing but plains.
+~
+~
+0 -1 27374
+D2
+You see some sort of rock strata.
+~
+~
+0 -1 27375
+D3
+Nothing but plains.
+~
+~
+0 -1 27373
+S
+#27373
+Plain~
+The plains stretch out in front of you with a vast nothingness. Everywhere 
+you look you see different animals than those of the jungle.
+~
+0 0 2
+Rd     0
+D0
+Nothing but plains.
+~
+~
+0 -1 27370
+D1
+Nothing but plains.
+~
+~
+0 -1 27372
+D2
+Nothing but plains.
+~
+~
+0 -1 27373
+D3
+Nothing but plains.
+~
+~
+0 -1 27373
+S
+#27374
+Plain~
+The plains stretch out in front of you with a vast nothingness. Everywhere 
+you look you see different animals than those of the jungle.
+~
+0 0 2
+Rd     0
+D0
+Nothing but plains.
+~
+~
+0 -1 27371
+D1
+Nothing but plains.
+~
+~
+0 -1 27374
+D2
+Nothing but plains.
+~
+~
+0 -1 27374
+D3
+Nothing but plains.
+~
+~
+0 -1 27372
+S
+#27375
+Plain~
+You have reached the plains rocks a central meeting spot for all of the 
+animals in this clearing. You see elephants, birds and every other type of 
+animal you would expect. You also see a particularly unusual sight when you
+notice the elephant leader here giving commands to his minions.
+~
+0 0 2
+Rd     0
+D0
+Nothing but plains.
+~
+~
+0 -1 27372
+D5
+You see a large rock covering a small hole.
+~
+rock~
+11 0 27381
+S
+#27376
+Path to Jane's~
+You are on a path that has been decorated in an extremely feminine fashion. 
+In addition to thousands of beautiful flowers lining the sides of the path,
+you see many cute fuzzy little animals scurrying throughout the various
+plants and bushes.
+~
+0 5 3
+Rd     0
+D0
+You see a house built of bamboo.
+~
+~
+0 -1 27377
+D2
+You see jungle.
+~
+~
+0 -1 27323
+S
+#27377
+Outside Jane's House~
+You have come to a small clearing. You are apparently on the front porch of
+Jane the Jungle Lady. Her house is fashioned with the most up to date jungle
+decor. You feel a sense of peace as you stand in such a caring place. Every 
+animal seems to gather around her house with admiration.
+~
+0 1 3
+Rd     0
+D0
+You see the front door.
+~
+door front door~
+3 -1 27378
+D2
+You see a path lined with orchids.
+~
+~
+0 -1 27376
+S
+#27378
+Jane's House~
+As you look around you see flower pot, bird feathers and many more various
+decorations from the jungle. you realize that the inside of this house is even
+more beautiful than the outside. But all in all the real beauty comes from
+Jane who is standing here. Wow! What a knockout!
+~
+0 9 3
+Rd     0
+D2
+You see the front door.
+~
+front door~
+3 -1 27377
+S
+#27379
+Map Room.~
+A M A Z O N   M A Z E   M A P   R O O M . . . . .
+
+Starting at 27323...north is Jane's, east is path
+            27324...south is path
+            27325...west is path
+            27326...east is path
+            27327...west is DT, north is path
+            27328...north is poachers cage, west is path
+            27329...up is hive, north is path
+            27330...north is lion's den, south is anthill, west is path
+            27331...north is opening under tarzan, east is path
+            27332...east is path to pigmy camp
+~
+0 8716 0
+Rd     0
+D3
+You see maze map room 2.
+~
+~
+0 -1 27398
+S
+#27380
+The Ant Lion's Den~
+You apparently don't watch where you wander, so you wandered into a place
+where a hungry beast eats you in one gulp.
+~
+0 270 3
+Rd     0
+S
+#27381
+Secret Underground River~
+You have entered a secret underground river flowing who knows where. The 
+current is quite strong and you fear you cannot go back.
+~
+0 5 6
+Rd     0
+D2
+You see more river.
+~
+~
+0 -1 27382
+S
+#27382
+Secret Underground River~
+You have entered a secret underground river flowing who knows where. The 
+current is quite strong and you fear you cannot go back.
+~
+0 5 6
+Rd     0
+D2
+You see more river.
+~
+~
+0 -1 27383
+S
+#27383
+Secret Underground River~
+You have entered a secret underground river flowing who knows where. The
+current is quite strong and you fear you cannot go back.
+~
+0 5 6
+Rd     0
+D1
+You see more river.
+~
+~
+0 -1 27384
+S
+#27384
+Secret Underground River~
+You have entered a secret underground river flowing who knows where. The
+current is quite strong and you fear you cannot go back.
+~
+0 5 6
+Rd     0
+D2
+You see more river.
+~
+~
+0 -1 27385
+S
+#27385
+Secret Underground River~
+You have come to the end of the secret river. Down you see the amazon, 
+a welcomed sight after so much darkness.
+~
+0 1 6
+Rd     0
+D5
+You see a huge river.
+~
+~
+0 -1 27300
+S
+#27386
+Pigmy House~
+You have entered one of the many homes in the Village of Tubbiki. Pigmy
+children run around at your feet and the adults eye you cautiously. Again 
+you were not expected.
+~
+0 8 1
+Rd     0
+D1
+You see the village.
+~
+~
+0 -1 27363
+S
+#27387
+Pigmy House~
+You have entered one of the many homes in the Village of Tubbiki. Pigmy
+children run around at your feet and the adults eye you cautiously. Again
+you were not expected.
+~
+0 8 1
+Rd     0
+D0
+You see the village.
+~
+~
+0 -1 27363
+S
+#27388
+Pigmy House~
+You have entered one of the many homes in the Village of Tubbiki. Pigmy
+children run around at your feet and the adults eye you cautiously. Again
+you were not expected.
+~
+0 8 1
+Rd     0
+D2
+You see the village.
+~
+~
+0 -1 27320
+S
+#27389
+Pigmy House~
+You have entered one of the many homes in the Village of Tubbiki. Pigmy
+children run around at your feet and the adults eye you cautiously. Again
+you were not expected.
+~
+0 8 1
+Rd     0
+D0
+You see the village.
+~
+~
+0 -1 27317
+S
+#27390
+Pigmy House~
+You have entered one of the many homes in the Village of Tubbiki. Pigmy
+children run around at your feet and the adults eye you cautiously. Again
+you were not expected.
+~
+0 8 1
+Rd     0
+D2
+You see the village.
+~
+~
+0 -1 27319
+S
+#27391
+Pigmy House~
+You have entered one of the many homes in the Village of Tubbiki. Pigmy
+children run around at your feet and the adults eye you cautiously. Again
+you were not expected.
+~
+0 8 1
+Rd     0
+D0
+You see the village.
+~
+~
+0 -1 27319
+S
+#27392
+Pigmy House~
+You have entered one of the many homes in the Village of Tubbiki. Pigmy
+children run around at your feet and the adults eye you cautiously. Again
+you were not expected.
+~
+0 8 1
+Rd     0
+D3
+You see the village.
+~
+~
+0 -1 27319
+S
+#27393
+Pigmy Camp~
+You see very small huts here, spears lying against them. Pigmy's run all over
+the place cheering in victory. A wild boar lies pierced on a stick roasting
+over a fire. They look at you as you walk in.
+~
+0 0 1
+Rd     0
+D0
+You see the north edge of the camp.
+~
+~
+0 -1 27333
+D1
+You see a corner of the camp.
+~
+~
+0 -1 27397
+D3
+You see a corner of the camp.
+~
+~
+0 -1 27396
+D4
+You see a throne room.
+~
+~
+0 -1 27334
+S
+#27394
+Pigmy Camp~
+You see very small huts here, spears lying against them. Pigmy's run all over
+the place cheering in victory. A wild boar lies pierced on a stick roasting
+over a fire. They look at you as you walk in.
+~
+0 0 1
+Rd     0
+D2
+You see a corner of the camp.
+~
+~
+0 -1 27397
+D3
+You see the north edge of the camp.
+~
+~
+0 -1 27333
+S
+#27395
+Pigmy Camp~
+You see very small huts here, spears lying against them. Pigmy's run all over
+the place cheering in victory. A wild boar lies pierced on a stick roasting
+over a fire. They look at you as you walk in.
+~
+0 0 1
+Rd     0
+D1
+You see the north edge of the camp.
+~
+~
+0 -1 27333
+D2
+You see a corner of the camp.
+~
+~
+0 -1 27396
+S
+#27396
+Pigmy Camp~
+You see very small huts here, spears lying against them. Pigmy's run all over
+the place cheering in victory. A wild boar lies pierced on a stick roasting
+over a fire. They look at you as you walk in.
+~
+0 0 1
+Rd     0
+D0
+You see a corner of the camp.
+~
+~
+0 -1 27395
+D1
+You see the south edge of the camp.
+~
+~
+0 -1 27393
+S
+#27397
+Pigmy Camp~
+You see very small huts here, spears lying against them. Pigmy's run all over
+the place cheering in victory. A wild boar lies pierced on a stick roasting
+over a fire. They look at you as you walk in.
+~
+0 0 1
+Rd     0
+D0
+You see a corner of the camp.
+~
+~
+0 -1 27394
+D3
+You see the south edge of the camp.
+~
+~
+0 -1 27393
+S
+#27398
+Map Room 2~
+A M A Z O N   M A Z E   M A P   R O O M   2
+
+Bee Hive...
+   from 27329...up to hive
+        27345...up to honeycomb
+        27346...north
+        27347...east
+        27348...south to queen bee
+        27351...east
+        27346...down
+        27345...down
+
+Jungle Trail...
+   from 27307...north
+        27308...north
+        27309...south
+        27310...west is dr. livingston, up to headhunter village
+~
+0 8704 0
+Rd     0
+D1
+You see maze map room 1.
+~
+~
+0 -1 27379
+D3
+you see maze map room 3.
+~
+~
+0 -1 27399
+S
+#27399
+Map Room 3~
+A M A Z O N   M A Z E   M A P   R O O M   3
+
+Ant Hill...
+    from 27337...north is a dt, down is anthill
+         27338...south
+         27341...south
+         27342...down to royal chamber
+         27343...east to egg chamber
+         27344...west back to royal chamber
+         27343...up
+         27342...north
+         27341...west
+         27338...up to jungle
+~
+0 8704 0
+Rd     0
+D1
+You see maze map room 2.
+~
+~
+0 -1 27398
+S
+#0
+
+
+
+#SPECIALS
+M 27001 spec_cast_mage
+M 27002 spec_cast_ghost
+M 27007 spec_poison
+M 27008 spec_poison
+M 27009 spec_poison
+M 27011 spec_summon_demon
+M 27015 spec_fido
+M 27101 spec_healer
+M 27311 spec_healer
+M 27329 spec_thief
+M 27338 spec_guard
+M 27343 spec_poison
+M 27347 spec_guard
+M 27351 spec_poison
+M 27378 spec_healer
+S
+
+
+
+#RESETS
+M 0 27001 1 27001
+E 0 27013 0 16
+M 0 27003 5 27012
+E 0 27014 0 20
+M 0 27004 5 27029
+E 0 27014 0 20
+M 0 27000 1 27031
+E 0 27001 0 20
+E 0 27002 0 15
+E 0 27007 0 5
+M 0 27005 5 27056
+M 0 27008 5 27057
+M 0 27009 5 27059
+M 0 27002 1 27090
+E 0 27000 0 22
+G 0 27004 0
+M 0 27011 1 27098
+M 0 27103 4 27110
+M 0 27106 3 27115
+M 0 27105 3 27120
+M 0 27104 3 27129
+M 0 27101 1 27144
+M 0 27164 3 27164
+E 0 27017 0 16
+E 0 27375 0 20
+M 0 27012 1 27207
+E 0 27011 0 20
+M 0 27219 1 27219
+E 0 27219 0 20
+G 0 27005 0
+M 0 27010 3 27227
+E 0 27011 0 20
+M 0 27013 1 27228
+E 0 27011 0 20
+M 0 27311 1 27311
+E 0 27310 0 6
+E 0 27311 0 11
+E 0 27312 0 5
+M 0 27314 3 27314
+M 0 27365 5 27323
+M 0 27015 1 27324
+M 0 27329 10 27329
+M 0 27338 5 27338
+M 0 27338 5 27339
+M 0 27338 5 27341
+M 0 27342 2 27342
+M 0 27343 1 27343
+M 0 27344 1 27343
+O 0 27344 0 27344
+M 0 27346 5 27346
+M 0 27347 5 27350
+E 0 27351 0 20
+M 0 27351 1 27351
+E 0 27351 0 20
+M 0 27360 1 27360
+E 0 27360 0 20
+M 0 27369 4 27369
+M 0 27375 1 27375
+E 0 27375 0 20
+M 0 27378 1 27378
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

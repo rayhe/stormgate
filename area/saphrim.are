@@ -1,0 +1,8122 @@
+#AREADATA
+Name        { 55-75} Temple of Saphrim~
+Builders    Andromeda~
+VNUMs       2150 2449
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     Andromeda~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#2150
+cleric gardener~
+A gardening cleric~
+A cleric of Saphram, occupied with tending to the temple grounds.
+~
+A middle aged human cleric of approximately 35 years in age carefully
+tends to the gardens.  He is slightly balding, with traces of grey hair
+appearing.  His clerical robes hang loosely over his slender shoulders.  He
+is not armed with any visible weapon.  
+~
+5 67108992 0 0 0 500 S
+55 1 110 110 10400 10400d0+0 0d0+55000
+550 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+break
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+say Good day, $n!
+say Such a beautiful day this day, is it not?
+smile $n
+say May your journey be blessed by Saphrim.
+emote turns and continues about his work.
+else
+emote regards you grimly.
+say The shadowy path you walk will only destroy you in the end, $n
+say Hopefully you come here to seek the path of light, nothing more.
+say I advise you to take this advice. Soon evil will be vanquished.
+emote wipes his brow and continues back to work.
+endif
+endif
+~
+>speech_prog evil~
+emote traces a few symbols of protection over his chest.
+say Evil will soon be no longer, no worries.
+~
+>fight_prog 20~
+say May the light you presently turn your back upon blind you!
+cast 'bend light' $n
+~
+>fight_prog 20~
+cast 'holy fires' $n
+~
+>fight_prog 10~
+cast 'dancing lights' $n
+~
+>fight_prog 10~
+mpechoat $n &YThe medallion around the neck of the cleric glows brightly and you begin to feel the anger of the gods.
+cast 'curse' $n
+~
+>fight_prog 20~
+mpechoat $n &YThe plants all around you begin to grow and reach for you!
+cast 'entangle' $n
+~
+>fight_prog 20~
+cast 'lightning bolt' $n
+~
+|
+#2151
+wandering cleric~
+A wandering cleric~
+A cleric wanders through the gardens.
+~
+This young cleric is wandering all around the gardens gazing at the
+flowers.  He smiles at you as you come close, bowing his head slightly.  He
+tucks his hands into his robes and walks on.  
+~
+1 16512 0 0 0 1000 S
+55 1 110 110 10400 10400d0+0 0d0+55000
+550 0 0
+0 0 1
+0 0 0
+>all_greet_prog 5~
+if isnpc($n) == 1
+nod $n
+break
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+say Saphrim be blessed! You look unwell.
+say Let me heal you.
+cast 'heal' $n
+cast 'cure poison' $n
+bow $n
+say Take care on journies ahead, $n.
+else
+emote hurries along his way, doing his best to avoid $n.
+endif
+endif
+~
+>all_greet_prog 95~
+if isnpc($n) == 1
+break
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+bow $n
+say Welcome to the Temple of Saphrim, $n.
+say You are just in time to see us begin to rid the world of evil.
+say May you be blessed.
+cast 'bless' $n
+else
+say You, $n, will soon feel the wrath of this temple and our Goddess, Saphrim!
+say You have been warned.
+endif
+endif
+~
+>speech_prog evil~
+say SOON! Evil shall be swept from this land!
+say The powers of our faith are strong!
+~
+>fight_prog 40~
+cast 'holy fires' $n
+~
+>fight_prog 10~
+say Your evil deeds are frowned upon, $n
+cast 'curse' $n
+~
+>fight_prog 30~
+cast 'dispel magic' $n
+~
+>fight_prog 20~
+emote grasps his medallion for strength.
+~
+|
+#2152
+guard~
+The entrance guard~
+A well disciplined soldier stands here overlooking the grounds.
+~
+The guard stares back at you with the same calculating look mirrored in
+his face as you imagine yours must look now.  His hands fall rigidly at his
+sides.  He is decently armed and protected, and looks to be a formidable
+opponent should you cross him.  
+~
+3 67125376 0 0 0 0 S
+60 1 120 120 11900 11900d0+0 0d0+60000
+600 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+nod $n
+break
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+say Welcome to the Temple of Saphrim, $n.
+say I'm sure you can find all of your needs satisfied within.
+bow $n
+else
+say I have my eye upon you, $n.
+say Steer clear of trouble, or your death will come upon my blade!
+emote watches you intently.
+endif
+endif
+~
+>speech_prog evil~
+say Let the cursed scum try to usurp the might of this temple and our Goddess!
+say Let the scum die by my blade!
+emote moves his hand to his hilt.
+~
+>fight_prog 20~
+kick $n
+~
+>fight_prog 10~
+emote executes a swift roundhouse kick!
+backkick $n
+~
+>fight_prog 10~
+stun $n
+~
+>fight_prog 20~
+head $n
+~
+>fight_prog 10~
+punch $n
+~
+>fight_prog 10~
+emote regains his balance and begins on the offensive.
+wield sword
+stun $n
+~
+|
+#2153
+young male cleric~
+a young male cleric~
+A young looking cleric wanders the halls aimlessly
+~
+A fairly young male cleric of Saphrim stands before you.  You can feel
+the buddings of great power within him.  Given more time he could be one of
+the heads of the church.  
+~
+1 268451968 0 0 0 800 S
+60 1 120 120 11500 11500d0+0 0d0+60000
+600 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+bow $n
+break
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+bow $n
+say Good day to you, $n!
+else 
+bow $n
+endif
+endif
+~
+>speech_prog evil~
+emote looks around with a look of concern and fear on his face.
+emote runs his hand over his head.
+say Heh...heh... soon, $n, the darkness will be banished.
+emote manages a smile.
+~
+>fight_prog 20~
+cast 'holy fires' $n
+~
+>fight_prog 20~
+say I shall strike thee blind!
+cast 'bend light' $n
+~
+>fight_prog 20~
+mpechoat $n &YThe medallion around the cleric's neck begins to glow!
+mpechoat $n &CCol&Rour&Wful &Ylight shoots out towards you!
+cast 'dancing lights' $n
+~
+>fight_prog 20~
+yell You have drawn blood upon our holy grounds, $n and for this you shall be cursed!
+cast 'curse' $n
+~
+>fight_prog 20~
+mpechoat $n &RThe young cleric becomes extremely angered!
+cast 'ultrablast' $n
+~
+|
+#2154
+young female cleric~
+A beatiful lady cleric~
+A young cleric gazes upward praying to Saphrim
+~
+Standing before you, this marble maiden of Saphrim looks at you with
+sorrow-filled eyes.  Her beauty is almost unparallelled in this world, as is
+her devotion to her faith.  
+~
+1 134234240 0 0 0 800 S
+60 1 120 120 11500 11500d0+0 0d0+60000
+600 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+break
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+if level($n) < 55
+say Here, $n, take this blessing of the Goddess Saphrim.
+cast 'bless' $n
+else
+say Ahhh, $n, how are you today? All is well I hope.
+endif
+else
+emote regards $n grimly.
+sigh
+endif
+endif
+~
+>speech_prog evil~
+say With the power of the Goddess, Saphrim behind us...
+say Evil will soon be gone from the land. 
+emote smiles warmly.
+~
+>fight_prog 20~
+cast 'dispel magic' $n
+~
+>fight_prog 20~
+cast 'holy fires' $n
+~
+>fight_prog 10~
+say Only in darkness can one truly see the faults of what they do.
+cast 'bend light' $n
+~
+>fight_prog 10~
+cast 'dancing lights' $n
+~
+>fight_prog 10~
+cast 'fireball' $n
+~
+>fight_prog 10~
+cast 'curse' $n
+~
+>fight_prog 10~
+mpechoat $n Your hair begins to stand up.....
+cast 'lightning bolt' $n
+~
+>fight_prog 10~
+cast 'energy drain' $n
+~
+|
+#2155
+travelling worshipper~
+A Travelling Worshipper~
+A well travelled warrior walks through the halls.
+~
+One thing is for sure, and that is that this guy travels.  That and the
+fact that he's kinda funny looking.  He resembles a chipmunk with his cheeks
+stuffed....  
+~
+1 33570944 0 0 0 500 S
+65 1 130 130 14700 14700d0+0 0d0+0
+650 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+emote looks up at you.
+say Ahhh.... good day fellow explorer.
+say Come to seek the blessing of Saphrim, have you?
+smile $n
+~
+>speech_prog evil~
+hmm
+say Many a time has it been that a foul creature has died upon my blade.
+smile
+~
+>fight_prog 15~
+bloodthirsty
+~
+>fight_prog 15~
+emote executes a swift spinning roundhouse kick.
+backkick $n
+~
+>fight_prog 15~
+paralyse $n
+~
+>fight_prog 15~
+head $n
+~
+>fight_prog 20~
+kick $n
+~
+>fight_prog 20~
+stun $n
+circle $n
+~
+|
+#2173
+Healer of Saphrim~
+a beautiful female cleric~
+A beatiful female cleric of Saphrim stands here healing everyone
+~
+Here stands an extremely beautiful woman.  Her black hair hangs about her
+shoulders in slight curls.  Her skin is smooth, and as white as marble.  She
+is very calm, cool, and collected.  Her white robes hang about her body
+loosely, but one can still see the sensuous curves of her body beneath. 
+Around her neck hangs her medallion of Saphrim, eminating a cool white
+light.  
+~
+11 134234240 262160 0 0 1000 S
+150 1 300 300 165000 165000d0+0 0d0+0
+1500 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+break
+endif
+if ispc($n) == 1
+if isgood($n) == 1
+say Greetings, $n. Rest easy here for a moment while I heal you.
+else
+say Ahhh, $n. Still up to your evil deeds I see.
+say It is of no concern to me, the holyness of Saphrim shines deep within all living creatures.
+say However, some choose to hide it deep within.
+frown
+endif
+endif
+~
+>speech_prog Saphrim~
+say Saphrim, Goddess of Light, has been around since the beginning of time.
+say She was one of the creators of the world and life itself.
+say She, at present, is the most powerful God or Goddess on the planet. The priests know this.
+say They plan on gathering the followers of good together to bansih the evil from the world.
+say Evil, although it has no use to me, has its place in the scheme of things.
+say Remember that, $n.
+frown
+~
+|
+#2216
+prison guard~
+A Guard~
+A well muscled prison guard patrols here.
+~
+~
+1 0 32768 256 0 0 S
+55 1 110 110 10400 10400d0+0 0d0+55000
+550 0 0
+0 0 1
+0 0 0
+#2220
+dirty prisoner~
+A Dirty Prisoner~
+A dirty prisoner in torn clothes squats here.
+~
+~
+5 16384 262160 131072 0 -500 S
+60 1 120 120 11900 11900d0+0 0d0+60000
+600 0 0
+0 0 1
+0 0 0
+>rand_prog 3~
+lick
+~
+>all_greet_prog 100~
+if ispc($n) == 1
+ if isgood($n) == 1
+ say DIE!!! DIE, $n DIE!!!!
+ mpkill $n
+ endif
+endif
+ 
+~
+>fight_prog 20~
+stun $n
+~
+>fight_prog 20~
+backkick $n
+~
+>fight_prog 20~
+rake $n
+~
+>fight_prog 30~
+berserk
+~
+|
+#2281
+psycho prisoner~
+A Psychotic Prisoner~
+A psychotic prisoner mutters something in a strange tongue.
+~
+~
+5 268500994 262160 131072 0 -800 S
+70 1 140 140 16500 16500d0+0 0d0+10000
+700 0 0
+0 0 1
+0 0 0
+>rand_prog 3~
+say There has to be a way out somewhere in here.
+lick
+emote mumbles something you can't understand.
+~
+>all_greet_prog 100~
+emote looks over your belongings.
+if ispc($n) == 1
+ if isgood($n) == 1
+  say HAHAHAH DIE $n!
+  mpkill $n
+ endif
+endif
+~
+>fight_prog 20~
+paralyse $n
+~
+>fight_prog 10~
+slit $n
+~
+>fight_prog 20~
+backkick $n
+~
+>fight_prog 10~
+rake $n
+~
+>fight_prog 20~
+circle $n
+circle $n
+~
+>fight_prog 20~
+slam $n
+~
+|
+#2282
+prison guard~
+A Guard~
+A burly prison guard keeps vigil.
+~
+~
+1 0 32768 256 0 0 S
+55 1 110 110 10400 10400d0+0 0d0+55000
+550 0 0
+0 0 1
+0 0 0
+#2287
+Goodly Silverpants~
+Goodly Silverpants~
+Goodly Silverpants, the quasi-paladin roams the halls
+~
+Dressed in the full paladin get-up, the quasi-paladin Goodly Silverpants
+is a humourous sight more than anything else.  The armor fits slightly too
+big for his small framed body.  Only his faith in the Goddess, Saphrim has
+kept him alive in these times.  Maybe she keeps him around for a joke?  
+~
+1 134234112 32768 0 0 800 S
+70 1 140 140 17000 17000d0+0 0d0+70000
+700 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+break
+endif
+if ispc($n) == 1
+ if isgood($n) == 1
+  bow $n
+  say Hello $n!
+  say I'm in search of evil,
+  say hath thou found any?
+  emote looks at you hopefully.
+  say It wouldst be a great honour to smite
+  say one of their kind!
+ else
+  glare $n
+  yell In the name of Saphrim I shall smite thee!!!!!!
+  emote draws his sword and attacks!
+  mpkill $n
+ endif
+endif
+~
+>speech_prog good saphrim~
+if isnpc($n) == 1
+break
+endif
+if ispc($n) == 1
+ if isgood($n) == 1
+  smile
+say Yes, the followers of Saphrim shall
+  say smite the evil doers of this land!
+  say And, I shall lead them!
+  say Care to join us?
+  mpechoat $n Goodly Silverpants looks at you hopefully.
+ else
+  say Are you mocking me?
+  say I think that you are!
+  emote draws his sword!
+  say I am Goodly Silverpants.
+  say You probably killed my brother.
+  say Prepare to die!
+  emote attacks!
+  mpkill $n
+ endif
+endif
+~
+>speech_prog evil~
+if isnpc($n) == 1
+break
+endif
+if ispc($n) == 1
+ if isgood($n) == 1
+  emote is startled at the mention of evil
+  emote drop his sword and stumbles as he bends to retrieve it
+  say EVIL!
+  say EVIL shall perish!!!!
+ else
+  yell I shall destroy thee evil doer!
+  emote draws his sword and attacks!
+  mpkill $n
+ endif
+endif
+~
+>fight_prog 30~
+cast 'holy fires' $n
+~
+>fight_prog 10~
+cast 'dispel magic' $n
+~
+>fight_prog 10~
+soulstrike $n
+~
+>fight_prog 10~
+mpechoat $n &WGoodly Silverpants calls upon the power of Saphrim
+cast 'bend light' $n
+cast 'curse' $n
+~
+>fight_prog 10~
+mpechoat $n &PGoodly Silverpants executes a powerful roundhouse kick!
+backkick $n
+~
+>fight_prog 10~
+mpechoat $n &CGoodly Silverpants catches you under the chin with a powerful blow!
+stun $n
+~
+>fight_prog 10~
+mpechoat $n &GGoodly Silverpants regroups himself.
+get hope
+wield hope
+~
+>rand_prog 5~
+peer
+say I sense evil about this building...
+say I shall find it!
+~
+|
+#2288
+big prisoner man~
+A Big Prisoner~
+A Big man sits on a rock looking about.
+~
+~
+3 436273154 16 0 0 -500 S
+75 1 150 150 19250 19250d0+0 0d0+75000
+750 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+ nod $n
+endif
+if ispc($n) == 1
+ peer
+ grin $n
+ say You're carrying gold. Not a wise idea.
+endif
+~
+>fight_prog 20~
+slit $n
+~
+>fight_prog 20~
+paralyse $n
+~
+>fight_prog 30~
+backkick $n
+~
+>fight_prog 10~
+slam $n
+~
+>fight_prog 10~
+circle $n
+circle $n
+~
+|
+#2291
+balding cleric~
+A balding cleric~
+A balding cleric of Saphrim strides along.
+~
+You look at the balding cleric.  He does not seem all that old actually,
+just premature hair loss.  He looks similar to what YOU would know as a monk
+from old England in real space.  He bows slightly towards you and continues
+along his way.  
+~
+1 33570944 16 0 0 800 S
+70 1 140 140 17000 17000d0+0 0d0+70000
+700 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+ if isgood($n) == 1
+  bow $n
+  say Ahh, $n! Welcome, welcome!
+  say Tis a blessed day!
+  smile $n
+  say I apologize, for I must be on my way.
+ else
+  peer $n
+ endif
+endif
+~
+>fight_prog 10~
+cast 'dispel magic' $n
+~
+>fight_prog 10~
+mpechoat $n &WThe light from the cleric's medallion gathers around you!
+cast 'bend light' $n
+~
+>fight_prog 20~
+cast 'holy fires' $n
+~
+>fight_prog 10~
+cast 'curse' $n
+~
+>fight_prog 10~
+cast 'dancing lights' $n
+~
+>fight_prog 10~
+cast 'fireball' $n
+~
+>fight_prog 10~
+cast 'iceball' $n
+~
+|
+#2300
+angel~
+An angel~
+A large angel.
+~
+~
+1 134742144 262144 0 0 500 S
+50 1 100 100 5000 5000d0+0 0d0+100
+500 0 0
+0 0 0
+0 0 0
+>fight_prog 50~
+cast 'iceball' $n
+~
+>fight_prog 50~
+cast 'fireball' $n
+~
+|
+#2319
+temple guard~
+A Guard~
+A Temple Guard searches for evil doers.
+~
+~
+1 33554560 48 0 0 800 S
+65 1 130 130 14700 14700d0+0 0d0+65000
+650 0 0
+0 0 1
+0 0 0
+>fight_prog 10~
+yell Halt! Evil doer!
+cast 'entangle' $n
+~
+>fight_prog 30~
+backkick $n
+~
+>fight_prog 10~
+rake $n
+~
+>fight_prog 40~
+slam $n
+~
+|
+#2344
+Perience~
+Perience~
+Perience is here to help you practice your skills.
+~
+~
+525379 33554560 262160 0 3 0 S
+100 1 200 200 28000 28000d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+#2345
+verse~
+Verse~
+Verse is here to train you.
+~
+~
+524867 134217856 262160 0 3 0 S
+100 1 200 200 28000 28000d0+0 0d0+0
+1000 0 0
+0 0 1
+0 0 0
+#2346
+Reance~
+Reance~
+Reance, the merchant sells his wares here.
+~
+~
+524355 67108992 262160 0 3 0 S
+100 1 200 200 28000 28000d0+0 0d0+100000
+1000 0 0
+0 0 1
+0 0 0
+#2348
+linguist~
+The Linguist~
+The Linguist knows all the languages and will teach you!
+~
+~
+589891 268435584 262160 0 3 0 S
+100 1 200 200 28000 28000d0+0 0d0+0
+1000 0 0
+0 0 2
+0 0 0
+#2349
+Primus~
+Primus~
+Primus, the weapons dealer has set up shop here.
+~
+~
+524355 128 262160 2048 3 0 S
+100 1 200 200 28000 28000d0+0 0d0+100000
+1000 0 0
+0 0 1
+0 0 0
+#2351
+Kerchal~
+Kerchal~
+Kerchal, the armorer has set up shop here.
+~
+~
+524355 128 262160 256 3 0 S
+100 1 200 200 28000 28000d0+0 0d0+100000
+1000 0 0
+0 0 1
+0 0 0
+#2352
+revered cleric~
+A Revered Son~
+A Revered Son of Saphrim kneels in worship to Saphrim.
+~
+~
+1 134217922 262160 0 0 1000 S
+75 1 150 150 19250 19250d0+0 0d0+40000
+750 0 0
+0 0 1
+0 0 0
+>fight_prog 10~
+cast 'dispel magic' $n
+~
+>fight_prog 10~
+cast 'bend light' $n
+~
+>fight_prog 60~
+cast 'holy fires' $n
+~
+>fight_prog 10~
+cast 'entangle' $n
+~
+>fight_prog 10~
+cast 'curse' $n
+~
+|
+#2363
+High Paladin of Saphrim~
+The High Paladin~
+The High Paladin of Saphrim stands here
+~
+A man of pure good and righteousness stands before you.  He has come to
+the Temple of Saphrim to seek the blessing of the High Priest himself.  He
+stands slightly over 6 feet tall and is of a well build.  His armor and
+sword glitter in the sunlight.  
+~
+67 234881024 32816 16384 2 5000 S
+120 1 240 240 45000 45000d0+0 0d0+120000
+1200 0 0
+0 0 1
+0 0 0
+#2364
+High Priest~
+The High Priest of Saphrim~
+The High Priest of Saphrim stands within his own light
+~
+The mighty High Priest of Saphrim towers before you inside a bright white
+light that seems to eminate from himself.  Staring into the light, you can
+see a calm and collected middle age man of average size and build.  He looks
+back at you, seeming to stare into your very soul.  A look of sorrow and
+grief falls over his face.....  
+~
+3 168312832 32816 24576 2 5000 S
+140 1 280 280 56000 56000d0+0 0d0+140000
+1400 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if isgood($n) == 1
+smile $n
+say Welcome to the Temple of Saphrim, $n
+say May the path of light forever guide your ways.
+c bless $n
+emote nods slightly.
+else 
+emote frowns.
+say You are not among the welcome, here, $n
+say The dark path you walk upon will be
+say washed over by the light very soon, $n
+say Take that message to your Dark God.
+endif
+endif
+~
+>speech_prog evil~
+if isgood($n) == 1
+emote smiles!
+say Yes, $n! Evil will soon be vanquished!
+else
+emote glares!
+say The evil of this land will soon be crushed!
+say and you along with it, $n
+endif
+~
+>speech_prog saphrim~
+smile
+say The Goddess of Light, Saphrim is by far
+say the most powerful of the gods.
+say Along side her, I shall rid the world
+say of evil, and the harm it brings!
+~
+>rand_prog 5~
+emote looks over his audience chamber with great pride.
+emote whispers, "Soon, my people, soon.
+~
+>fight_prog 10~
+mpechoat $n &YThe High Priest's light blinds you!
+cast 'bend light' $n
+~
+>fight_prog 10~
+cast 'Dancing Lights' $n
+~
+>fight_prog 10~
+mpechoat $n &RThe High Priest grasps his medallion....
+cast 'sunburst' $n
+~
+>fight_prog 10~
+mpechoat $n &CThe High Priest grasps his medallion....
+cast 'winters chill' $n
+~
+>fight_prog 20~
+cast 'holy fires' $n
+~
+>fight_prog 10~
+mpechoat $n &YYou can feel the anger of the Gods upon you.
+cast 'curse' $n
+cast 'confusion' $n
+~
+>fight_prog 20~
+cast 'soulstrike' $n
+~
+>hitprcnt_prog 20~
+mpechoat $n &WThe light around &wthe High Priest &zfades out....
+mpechoat $n &RA look of terror comes across the High Priest's face.
+mpmload 2300 4
+order all.angel mpkill $n
+~
+>death_prog 99~
+mpecho &YThe High Priest turns his eyes upwards-gazing into the light.
+say Saphrim, I know now that I have made a mistake.
+say Let my downfall be an example for others in the future.
+mpecho &zThe last remaining light flickers out.
+~
+>fight_prog 20~
+mpechoat $n &RThe High Priest attempts to open up a weakness in your defenses.
+cast 'dispel magic' $n
+~
+>fight_prog 10~
+cast 'earthblast' $n
+~
+>fight_prog 10~
+cast 'confusion' $n
+~
+|
+#2401
+Vinas Nightblaze~
+Vinas Nightblaze~
+A black robed mage moves about his laboratory.
+~
+A great deal of evil radiates from this being.  Standing tall in his
+black velvet robes, Vinas Nightblaze strikes fear into even your heart. 
+Deep within the shadows of his hood you can make out a faint redish glow
+where you imagine his eyes to be.  
+~
+133 234881024 4292624 134242304 2 -5000 S
+140 1 400 400 56000 56000d0+0 0d0+140000
+1400 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+ say Ahh... Test subject. Begone from my sight!
+ emote utters an arcane word of magic and points at $n.
+ mptrans $n 2407
+endif
+if ispc($n) == 1
+ if level($n) < 100
+  glare $n
+  say You are not welcome here, $n
+say Come back when you are truly strong
+  say enough to challenge me!
+  emote utters an arcane word of magic and points at $n.
+  yell BEGONE!!
+  mpechoat $n &YYou feel as if your body is tearing apart in all directions at once.
+  mptrans $n 2400
+  mpechoat $n &YThe sensation stops suddenly.
+  mpforce $n look
+ else
+  say Ahhhh, $n
+  say You have come to challenge me, have you?
+  say So be it. Once I am through playing this game
+  say with you, I shall use your life force to continue
+  say my own!
+  emote caresses the amulet hanging from around his neck.
+  emote licks at you and licks his lips.
+ endif
+endif
+~
+>speech_prog exit~
+say So be it, $n!
+mptrans $n 2400
+mpat $n mpforce $n look
+~
+>fight_prog 40~
+mpechoat $n &CVinas Nightblaze gathers the magical energies about him and directs it at you!
+mpechoaround $n &C Vinas Nightblaze gathers the magical energies about him and directs it
+mpechoaround $n at $n, catching you as it flies past!
+cast 'cone of frost'
+~
+>fight_prog 30~
+if class($n) == 4
+ cast 'dancing lights' $n
+ break
+else
+slit $n
+endif
+~
+>fight_prog 30~
+cast 'daggers of pain' $n
+cast 'daggers of pain' $n
+~
+>fight_prog 20~
+cast 'dispel magic' $n
+~
+>fight_prog 15~
+if hitprcnt($i) == 80
+ cast 'ultrablast'
+ break
+else
+cast demonfire
+endif
+~
+>death_prog 99~
+emote gazes through you, searching for something.
+say Wh...Who...are you?
+say You....are not the...*cough* one the
+say prophecy spoke of!
+emote glares and doubles over in pain
+mpechoat all &WA piercing scream of agony penetrates the fabric of time.
+~
+|
+#0
+
+
+
+#OBJECTS
+#2150
+temple gates~
+the Temple gates~
+&YThe Temple Gates separate this sacred land from the vicious creatures outside.~
+~
+29 3 0 0 0 0 0
+100 100
+2150~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2151
+small statue~
+a small statue ~
+A statue representing some powerful being stands in the fountain~
+~
+13 259 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2152
+cell key~
+dungeon cell key~
+Shiny metal cell key~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2153
+white robe~
+a white clerical robe~
+The white robe of a cleric of Saphrim.~
+~
+9 1027 0 0 0 1025 55
+100 100
+15~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 55
+A
+19 2
+A
+18 5
+A
+3 1
+#2154
+Saphrim medallion~
+medallion of Saphrim~
+A bright metallic medallion representing the Goddess,  Saphrim.~
+~
+9 1283 0 0 0 5 55
+100 100
+5~ 0~ 0~ 0~
+0 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+A
+301 -1
+#2155
+gleaming sword~
+a gleaming sword~
+A gleaming sword with a golden hilt.~
+~
+5 3 0 0 0 8193 60
+100 100
+0~ 0~ 0~ 3~
+5 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 -1
+A
+13 60
+A
+26 60
+A
+18 20
+A
+19 10
+A
+1 2
+#2156
+golden armor~
+golden armor~
+Some golden body armor~
+~
+9 3 0 0 0 9 60
+100 100
+20~ 0~ 0~ 0~
+5 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 1
+A
+18 15
+A
+19 15
+A
+13 60
+A
+24 12
+#2157
+fountain~
+western fountain~
+A large, circular fountain sits in the middle of the garden~
+~
+25 259 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2158
+laurel~
+a laurel~
+A fine looking laurel~
+~
+9 134219011 0 0 0 17 60
+100 100
+25~ 0~ 0~ 0~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 20
+A
+12 60
+A
+19 6
+A
+18 6
+A
+1 -1
+A
+4 1
+A
+2 1
+#2159
+silver ring~
+a silver ring~
+A silver ring eminating a soft white light~
+~
+9 134217987 0 0 0 3 60
+100 100
+20~ 0~ 0~ 0~
+1 400 0
+5 0
+bless~
+-1 -1
+0 0 0
+A
+3 2
+A
+4 2
+A
+18 5
+A
+19 5
+>drop_prog 100~
+0
+mpechoat $n The silver ring seems to be staring at you.....
+~
+|
+#2160
+travelling boots~
+well made travelling boots~
+These boots were made for walking, and that's just what they'll do~
+~
+9 33554435 0 0 0 65 65
+100 100
+20~ 0~ 0~ 0~
+2 400 0
+5 0
+portal~
+5 5
+0 0 0
+A
+5 1
+A
+1 1
+A
+18 5
+A
+19 5
+A
+13 65
+A
+12 -20
+#2161
+travelling cloak~
+a nice warm travelling cloak~
+A thick cloak, embroidered with symbols~
+~
+9 33554435 0 0 0 1025 65
+100 100
+20~ 0~ 0~ 0~
+2 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -5
+A
+24 10
+A
+5 2
+A
+18 7
+#2162
+huge sword~
+a huge sword~
+A sword that can only be described as "Huge"~
+~
+5 33554435 32768 0 0 8193 65
+100 100
+0~ 0~ 0~ 13~
+7 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 -2
+A
+1 2
+A
+13 65
+A
+5 1
+A
+18 15
+A
+19 15
+#2166
+eastern fountain~
+eastern fountain~
+A large, circular fountain sits in the middle of the garden~
+~
+13 259 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2173
+large marble fountain~
+a large marble fountain~
+A large marble fountain sits in the middle of the hallway~
+~
+25 3 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2174
+statue~
+a large statue of Saphrim~
+A large marble statue of the Goddess, Saphrim~
+~
+13 3 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2187
+Fountain~
+fountain~
+A circular fountain lie built into the ground here.~
+~
+25 3 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2188
+delete me~
+golden Gates~
+The Golden Gates of the Pkill Academy stand here.~
+~
+29 67108867 0 0 0 0 0
+100 100
+25200~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2216
+body armor~
+body Armor~
+Some well made body armor lies here.~
+~
+9 3 0 0 0 9 55
+100 100
+15~ 0~ 0~ 0~
+2 548 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 55
+A
+18 7
+A
+19 7
+A
+5 2
+#2220
+dirty prisoner clothes~
+dirty Prisoner Clothes~
+A heap of dirty rags resembling a shirt.~
+~
+9 67108870 0 0 0 9 60
+100 100
+14~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 20
+A
+13 30
+A
+19 12
+A
+18 5
+A
+5 1
+#2221
+burning hatred~
+burning Hatred~
+A great deal of hatred can be felt here.~
+~
+5 100680195 0 0 0 8193 60
+100 100
+0~ 0~ 0~ 6~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+#2280
+ragged prisoner outfit~
+a Ragged Prisoner Outfit~
+A ragged old dirty prisoner's shirt lies here.~
+~
+9 67109382 0 0 0 9 70
+100 100
+20~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+#2281
+dirty tactics~
+dirty Tactics~
+The art of dirty fighting manual.~
+~
+5 100663299 0 0 0 8193 70
+100 100
+0~ 0~ 0~ 6~
+2 400 0
+5 0
+blindness~
+10 10
+0 0 0
+#2287
+sword truth~
+the Sword of Truth~
+The Sword of Truth lay here glimmering.~
+~
+5 536871939 37890 0 0 8193 70
+100 100
+0~ 20~ 60~ 1~
+10 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+4 2
+A
+23 -7
+A
+24 -7
+A
+12 70
+A
+13 70
+A
+18 21
+A
+19 21
+A
+301 -1
+>get_prog 99~
+0
+mpechoat $n &WA slight sensation of hope creeps into you.
+~
+>wear_prog 99~
+0
+mpechoat $n &WThe hopes of the people of the world can be heard
+mpechoat $n &WThey are calling for someone to save them from
+mpechoat $n &Wtyrany and oppression. They are calling for you!
+~
+|
+#2288
+great helm~
+a great winged helm~
+A great helm with large wings lay here.~
+~
+9 536871939 5122 0 0 17 70
+100 100
+20~ 0~ 0~ 0~
+8 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -7
+A
+12 70
+A
+13 70
+A
+19 7
+A
+18 7
+A
+4 2
+A
+3 2
+#2289
+great plate mail~
+some beautiful platemail~
+A full set of gleaming platemail lay here.~
+~
+9 536871939 5122 0 0 9 70
+100 100
+30~ 0~ 0~ 0~
+15 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 22
+A
+18 18
+A
+12 70
+A
+13 70
+A
+5 2
+A
+1 2
+#2290
+great plate leggings~
+some platemail leggings~
+A pair of leggings formed out of heavy plate.~
+~
+9 536871939 5122 0 0 33 70
+100 100
+20~ 0~ 0~ 0~
+10 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 50
+A
+13 70
+A
+5 1
+A
+2 -1
+A
+19 7
+A
+18 7
+A
+1 2
+#2291
+embroidered robe~
+embroidered robe~
+A soft emboidered robe lay here.~
+~
+9 92669187 3083 0 0 9 75
+100 100
+24~ 0~ 0~ 0~
+1 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+4 2
+A
+24 -7
+A
+23 -7
+A
+12 70
+A
+13 70
+A
+19 20
+A
+18 20
+#2292
+cleric ring~
+a cleric ring~
+A small silver banded ring.~
+~
+9 1027 0 0 0 3 70
+100 100
+15~ 0~ 0~ 0~
+1 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 70
+A
+13 70
+A
+19 7
+A
+18 7
+A
+4 2
+A
+3 2
+#2293
+cleric anklet~
+a cleric anklet~
+An anklet made from silver lies here.~
+~
+9 1027 8192 0 0 1048577 70
+100 100
+15~ 0~ 0~ 0~
+1 700 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+A
+18 7
+A
+12 70
+A
+13 70
+A
+1 1
+A
+5 1
+#2315
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2317
+pot~
+a pot~
+A potted plant sits beside the chamber door.~
+~
+15 0 0 0 0 0 0
+100 100
+5~ 5~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2318
+chamber key~
+a small gold key~
+A small golden key lies here.~
+~
+18 3 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2319
+platemail~
+heavy Platemail~
+Some heavy platemail armor lies here.~
+~
+9 67110147 0 0 0 9 65
+100 100
+25~ 0~ 0~ 0~
+4 648 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+18 10
+A
+19 20
+A
+13 65
+#2320
+broadsword~
+a Broadsword~
+A well crafted broadsword.~
+~
+5 134217987 32768 0 0 8193 65
+100 100
+0~ 0~ 0~ 1~
+8 648 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+2 -1
+A
+13 65
+A
+18 14
+A
+19 25
+#2343
+spicy potatoes~
+spicy Potatoes~
+Reance's famous spicy potatoes.~
+~
+19 33554432 0 0 0 1 0
+100 100
+50~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2344
+grolsch~
+grolsch~
+A tall frosty Grolsch!~
+~
+17 134217729 0 0 0 1 0
+100 100
+1000~ 1000~ 4~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2345
+potion clairvoyance~
+potion of Clairvoyance~
+A potion of clairvoyance radiates with its own light.~
+~
+10 268435459 0 0 0 1 75
+100 100
+75~ true sight~ scry~ cure blindness~
+1 748 0
+0 0
+reserved~
+0 0
+0 0 0
+#2346
+scroll saphrim~
+a Scroll of Saphrim~
+A scroll containing a written blessing of Saphrim.~
+~
+2 1027 0 0 0 1 75
+100 100
+60~ sanctuary~ fly~ giant strength~
+1 748 0
+0 0
+reserved~
+0 0
+0 0 0
+#2352
+revered robe cleric~
+a soft clerical robe~
+A soft white clerical robe lay here in folds.~
+~
+9 1299 0 0 0 9 75
+100 100
+20~ 0~ 0~ 0~
+3 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -10
+A
+12 75
+A
+13 50
+A
+18 20
+A
+19 20
+A
+3 1
+#2353
+holy aura~
+a Holy Aura~
+The Aura of a cleric remains here.~
+~
+9 570426627 0 0 0 1025 75
+100 100
+20~ 0~ 0~ 0~
+1 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+A
+18 5
+A
+13 50
+A
+12 75
+A
+24 -6
+A
+5 2
+#2357
+Saphrim's blessing~
+saphrim's Blessing~
+Saphrim's Blessing, the essence of good~
+~
+9 671091715 0 0 0 32769 105
+100 100
+30~ 0~ 0~ 0~
+1 1048 0
+5 0
+iceshield~
+3 3
+0 0 0
+A
+23 -20
+A
+24 -20
+A
+18 15
+A
+19 15
+A
+13 200
+A
+12 200
+A
+25 90
+A
+1 2
+A
+2 2
+>get_prog 100~
+0
+if isgood($n) == 1
+mpechoat $n &CA feeling of peace and protection falls over you.
+else
+mpechoat $n &RA loud shrieking noise floods out from the orb
+endif
+~
+>wear_prog 100~
+0
+if isgood($n) == 1
+mpechoat $n &WBright white light begins to orbit around your body
+else
+mpechoat $n &RThe anger of Saphrim herself can be felt upon you!
+endif
+~
+|
+#2364
+throne~
+a large golden throne.~
+The High Priest of Saphrim's golden throne.~
+~
+13 67 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2365
+holy helm saphrim~
+the Holy Helm~
+The Holy Helm of Saphrim hovers slightly~
+~
+9 671091971 0 0 0 17 105
+100 100
+30~ 0~ 0~ 0~
+2 1048 0
+5 0
+sanctuary~
+5 5
+0 0 0
+A
+18 15
+A
+19 15
+A
+13 200
+A
+12 200
+A
+25 90
+A
+3 2
+A
+4 2
+A
+24 -15
+>wear_prog 99~
+0
+mpechoat $n &WThe beautiful voice of Saphrim fills your head
+~
+|
+#2366
+High Priest's robe~
+the High Priest's Robe~
+The robe of the High Priest of Saphrim~
+~
+9 671091971 0 0 0 9 105
+100 100
+40~ 0~ 0~ 0~
+2 1048 0
+5 0
+protection evil~
+-1 -1
+0 0 0
+A
+24 -20
+A
+13 200
+A
+12 200
+A
+25 90
+A
+5 1
+A
+3 2
+A
+18 45
+A
+19 45
+#2388
+crafty intelligence~
+crafty Intelligence~
+Someone has lost their crafty intelligence!~
+~
+9 570425351 0 0 0 131073 75
+100 100
+10~ 0~ 0~ 0~
+1 400 0
+5 0
+mental block~
+5 5
+0 0 0
+A
+4 2
+A
+3 2
+A
+18 4
+A
+19 4
+A
+12 20
+#2389
+large prisoner's shirt~
+a Large Shirt~
+A large prisoner's shirt lies here.~
+~
+9 201326598 0 0 0 9 75
+100 100
+22~ 0~ 0~ 0~
+2 748 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+5 1
+A
+25 40
+A
+13 40
+A
+12 40
+A
+19 6
+A
+18 10
+A
+19 12
+#2398
+a portal~
+a Blazing Portal~
+The blazing portal seems to be the only way out.~
+~
+29 100663299 0 0 0 0 0
+100 100
+2173~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2399
+implant?~
+implant~
+Implat?~
+~
+9 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2400
+blazing portal~
+a Blazing Portal~
+A portal flickering with dancing flames hovers here.~
+~
+29 100663299 0 0 0 0 0
+100 100
+2401~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>rand_prog 5~
+0
+echo &RThe fire around the portal leap violently outward, scorching the walls.
+~
+>look_in_prog 100~
+0
+mpechoat $n &zYou can feel the immense evil from within.
+~
+|
+#2401
+robe darkness~
+&zThe Robe of Darkness~
+&zA robe of pure darkness swallows up the light.~
+~
+9 738198103 0 0 0 9 105
+100 100
+35~ 0~ 0~ 0~
+2 1048 0
+5 0
+circle of fire~
+10 10
+0 0 0
+A
+23 -15
+A
+24 -30
+A
+25 100
+A
+12 200
+A
+13 200
+A
+18 45
+A
+19 45
+A
+1 2
+A
+2 2
+#2402
+ring fire~
+the Ring of Fire~
+A golden ring with a fire rune engraved on it.~
+~
+9 570425411 0 0 0 3 105
+100 100
+20~ 0~ 0~ 0~
+1 1048 0
+5 0
+flamestrike~
+10 10
+0 0 0
+A
+3 2
+A
+4 2
+A
+18 10
+A
+19 20
+A
+13 100
+A
+12 100
+E
+rof~
+rof
+~
+#2403
+ring ice~
+the Ring of Ice~
+A golden ring with an ice rune engraved on it.~
+~
+9 671088707 0 0 0 3 105
+100 100
+20~ 0~ 0~ 0~
+1 1048 0
+5 0
+chill touch~
+10 10
+0 0 0
+A
+1 2
+A
+5 2
+A
+19 15
+A
+18 15
+A
+13 100
+A
+12 100
+E
+roi~
+roi
+~
+#2404
+face evil~
+the Face of Evil~
+A face resembling all the evil of the world.~
+~
+9 570425365 0 0 0 65537 105
+100 100
+30~ 0~ 0~ 0~
+2 1048 0
+5 0
+protection good~
+-1 -1
+0 0 0
+A
+1 2
+A
+18 15
+A
+19 15
+A
+13 100
+A
+12 100
+A
+25 90
+A
+24 -20
+#2405
+onyx rune~
+an Onyx Rune~
+A rune made out of pollished onyx.~
+~
+33 3 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+3 2173
+reserved~
+1 1
+0 0 0
+#2407
+cage key~
+an Iron Key~
+A slightly ruseted iron key.~
+~
+18 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#2408
+arcane Arts~
+arcane Arts~
+The Ancient Magic of Vinas Nightblaze.~
+~
+5 168181760 8217 0 0 8193 106
+100 100
+0~ 0~ 0~ 6~
+0 1060 0
+0 0
+reserved~
+0 0
+0 0 0
+#2409
+hate~
+hate~
+A lot of hate in this room....~
+~
+8 33554432 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 2402 2403
+#2410
+White Sword Truth~
+white Sword of Truth~
+The Sword of Truth is here, glowing white.~
+~
+5 671088963 0 0 0 8193 105
+100 100
+0~ 0~ 0~ 3~
+5 200 0
+0 0
+reserved~
+0 0
+0 2409 2287
+A
+1 2
+A
+19 45
+A
+18 20
+A
+13 150
+A
+12 100
+A
+25 40
+#2411
+magical energy~
+magical Energy~
+A lot of magical energy weaves it's way around vinas Nightblaze.~
+~
+9 771760147 8192 0 0 32769 108
+100 100
+0~ 0~ 0~ 0~
+0 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 500
+A
+18 500
+#0
+
+
+
+#ROOMDATA
+#2150
+Temple Gates~
+~
+~
+You stand inside the gates of this beautiful temple.  The grounds inside
+are well kept and very attractive.  You know for certain that this temple
+doesn't even exist during your times.  What could have happened to such a
+place that it would cease to exist anymore?  
+~
+0 8192 3
+Rd     0
+D0
+~
+~
+0 0 2151
+S
+#2151
+Main Walkway~
+~
+~
+The walkway opens up just beyond the treeline to the south.  It is here
+that a traveller would be able to get his or her first glance at the massive
+centre of worship standing above.  One can only help but to stand, staring
+in awe at the pearl and rose coloured temple structure.  The gardens to the
+east and west teem with what you believe to be clerics of some sort, engaged
+in converstaion, gardening, or just basking in the wondrous light and
+sounds.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2161
+D2
+~
+~
+0 0 2150
+D3
+~
+~
+0 0 2152
+D4
+~
+~
+0 0 2170
+S
+#2152
+Western Gardens~
+~
+~
+You walk along the pathway dodging in between the fluttering white robes
+of the clerics.  Strange and beautiful flowers line the edges of the path,
+keeping it seperated from the lucious green lawn.  You catch the eye of a
+few of the robed figures glancing in your direction, sizing you up perhaps. 
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2160
+D1
+~
+~
+0 0 2151
+D2
+~
+~
+0 0 2153
+D3
+~
+~
+0 0 2157
+S
+#2153
+Western Gardens~
+~
+~
+The birds eating the crumbs left for them on the path fly off as you come
+near.  A small lizard runs off into the bushes in fear of being trampled
+upon.  A robed figured smiles and bows his head in reverance as he passes
+you in the other direction, while another welcomes you to rest here during
+your travels.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2152
+D3
+~
+~
+0 0 2154
+S
+#2154
+Western Gardens~
+~
+~
+You find yourself at the southern part of the garden, just skirting the
+edge of the tree line.  It is quite cool in the shade comparing to the
+warmth of the open areas.  The path curves to the east and west, and splits
+north heading to the fountain.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2157
+D1
+~
+~
+0 0 2153
+D3
+~
+~
+0 0 2155
+S
+#2155
+Western Gardens~
+~
+~
+The path you travel on curves eastward along the edge of the tree line
+and towards the tower to the north.  It is quite quiet and peaceful here. 
+Only a few clerics seem to be hanging around the garden now, most of which
+you can see sitting on the edge of the fountain engaged in conversation.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2156
+D1
+~
+~
+0 0 2154
+S
+#2156
+Western Gardens~
+~
+~
+You wander about at the western-most edge of the garden.  It is some what
+emptier here than the rest of the garden.  The path curves around to both
+the south and north and splits to head east towards the fountain.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2158
+D1
+~
+~
+0 0 2157
+D2
+~
+~
+0 0 2155
+S
+#2157
+Western Fountain~
+~
+~
+You make your way around the edge of the fountain that rests in the
+center of the garden.  Clerics dressed in rich robes stand around talking to
+each other, stopping as you approach, only to begin again as you pass.  You
+look at the water inside the stone fountain impessed at how clear it
+actually is.  There is a statue standing on a pedestal in the center of the
+water representing all the glory of some powerful being, possibly the God of
+these clerics.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2159
+D1
+~
+~
+0 0 2152
+D2
+~
+~
+0 0 2154
+D3
+~
+~
+0 0 2156
+S
+#2158
+Western Gardens~
+~
+~
+Walking along the path, a loud bell sounds over the grounds.  Many of the
+clerics hurry towards the temple, and head inside.  A few of the others,
+mostly older ones, stay behind and continue babbling on about matters of the
+temple and other non-temple related subjects.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2159
+D2
+~
+~
+0 0 2156
+S
+#2159
+Western Gardens~
+~
+~
+You walk along the path at the northern part of the garden.  It runs
+along the edge of the temple, at the base of one of its massive towers.  The
+path curves west and east and also heads south to the fountain.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2160
+D2
+~
+~
+0 0 2157
+D3
+~
+~
+0 0 2158
+S
+#2160
+Western Gardens~
+~
+~
+A gardener glances up at you as you walk on by.  Running his hand upon
+his smooth bald head, he smiles at you, nods and goes back to his work.  A
+few of the other lounge around on the lawn oblivious to the world it seems. 
+~
+0 134619138 0
+Rd     0
+D2
+~
+~
+0 0 2152
+D3
+~
+~
+0 0 2159
+S
+#2161
+Eastern Gardens~
+~
+~
+The path here is made of a pattern of inter-locking bricks, as is the
+rest of the path you've seen so far.  Lined with the bightest flowers you've
+ever seen, you marvel at the landscaping.  A pair of young warriors pass by
+you wishing you luck on your travels to come.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2169
+D1
+~
+~
+0 0 2166
+D2
+~
+~
+0 0 2162
+D3
+~
+~
+0 0 2151
+S
+#2162
+Eastern Gardens~
+~
+~
+The air is filled with the beautiful songs of the coloured birds pirched
+in the trees.  The sun is shining brightly, and the general atmosphere is
+even uplifting.  You make your way past a few clerics indulged in a
+political conversation.  The path curves north towards the entrance to the
+eastern gardens, while it also continues east along side the trees.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2161
+D1
+~
+~
+0 0 2163
+S
+#2163
+Eastern Gardens~
+~
+~
+You skirt the edge of the tree line as you walk through the southern
+parts of the garden.  The coolness of the shade is a welcome feeling in this
+hot weather.  A gardener looks up from transplanting a large red flower to
+wish you a good day.  The path curves to the west and east, and also splits
+off to travel north to the center of the garden.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2166
+D1
+~
+~
+0 0 2164
+D3
+~
+~
+0 0 2162
+S
+#2164
+Eastern Gardens~
+~
+~
+This part of the garden is fairly empty.  Everyone either seems to be
+gathered at the fountain or inside the temple.  A squirrel crosses the path
+ahead of you, which curves north and west.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2165
+D3
+~
+~
+0 0 2163
+S
+#2165
+Eastern Gardens~
+~
+~
+You walk along the path along the eastern edge of the garden, passing
+under a small tree.  The path curves around to the north and to the south,
+as well as heading west towards a fountain.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2167
+D2
+~
+~
+0 0 2164
+D3
+~
+~
+0 0 2166
+S
+#2166
+Eastern Fountain~
+~
+~
+You make your way around the edge of the fountain that rests in the
+center of the garden.  Clerics dressed in rich robes stand around talking to
+each other, stopping as you approach, only to begin again as you pass.  You
+look at the water inside the stone fountain impessed at how clear it
+actually is.  There is a statue standing on a pedestal in the center of the
+water representing all the glory of some powerful being, possibly the God of
+these clerics.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2168
+D1
+~
+~
+0 0 2165
+D2
+~
+~
+0 0 2163
+D3
+~
+~
+0 0 2161
+S
+#2167
+Eastern Gardens~
+~
+~
+A few birds cease pecking at the seeds on the ground and take flight as
+you walk near them.  A few clerics follow the path south, laughing and
+chatting along the way.  The path curves westward along the base of the
+tower and south towards the trees along the perimiter wall.  
+~
+0 134619138 0
+Rd     0
+D2
+~
+~
+0 0 2165
+D3
+~
+~
+0 0 2168
+S
+#2168
+Eastern Gardens~
+~
+~
+The path skirts the edge of the south-eastern tower of the temple which
+towers high above you.  Voices of the clerics can be heard from the south at
+the fountain.  The path also travels to the west and east.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2167
+D2
+~
+~
+0 0 2166
+D3
+~
+~
+0 0 2169
+S
+#2169
+Eastern Gardens~
+~
+~
+This part of the path is empty.  You can, however, see many young men and
+women all around you going about their business, ignoring you for the most
+part.  You can make out a few faces in the crowd glancing nervously towards
+you.  The path curves south towards the garden entrance and to the east
+along the temple wall.  
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2168
+D2
+~
+~
+0 0 2161
+S
+#2170
+On the Front Steps~
+~
+~
+You walk upon the smooth white marbe steps, leading to the Temple doors. 
+Soft rose coloured lines weave endlessly through the stone.  The guards
+standing at the Temple doors eye you from afar.  
+~
+0 134619138 0
+Rd     0
+D4
+~
+~
+0 0 2171
+D5
+~
+~
+0 0 2151
+S
+#2171
+Entrance to the Temple~
+~
+~
+You stand before the great doors of the temple.  Easily a few feet thick,
+they are made from some of the strongest metals in the land.  The doors
+contain several pictures of different symbols representing the Goddess and
+her domain.  There are guards posted at the doors watching over the grounds.
+The regard you and your weapons with mild interest, but they are aware of
+your every move.  
+~
+0 134619138 0
+Rd     0
+D0
+~
+door~
+83 0 2172
+D5
+~
+~
+0 0 2170
+S
+#2172
+Inside the Temple Doors~
+~
+~
+You stand inside the great doors of the Temple of Saphrim.  The front
+hall is extremely lively with clerics running about fulfilling one task only
+to embark on another.  The walls are made of the purest white marble with
+the soft rose weaving all about inside the stone, as is the ceiling and the
+floor.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2173
+D1
+~
+~
+0 0 2231
+D2
+~
+~
+83 0 2171
+D3
+~
+~
+0 0 2177
+S
+#2173
+A Large Fountain~
+~
+~
+You come before the great fountain in the middle of the great hallway. 
+The water pouring forth is crystal clean and pure.  A large representative
+statue of the Goddess of Light, Saphrim stands in the middle of the
+fountain.  Standing at the edge is a beautiful woman healing the wounded and
+the ill.  
+~
+0 134620170 0
+Rd     0
+D0
+~
+~
+0 0 2174
+D1
+~
+~
+0 0 2232
+D2
+~
+~
+0 0 2172
+D3
+~
+~
+0 0 2176
+S
+#2174
+Great Hallway~
+~
+~
+Clerics dressed in their white robes flutter past you in every direction.
+Some seeking others, delivering messages of the most importance.  Others
+simply making sure all is in order.  Mingling in with the clerics of Saphrim
+are the armor clad warriors of its faith.  Paladins, or simple adventurers
+seeking the blessing of their Goddess.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2233
+D2
+~
+~
+0 0 2173
+D3
+~
+~
+0 0 2175
+S
+#2175
+Great Hallway~
+~
+~
+Looking out the window here, you can see a large domed building.  The
+roof is made of a frosted glass of some sort.  The light reflecting in
+throught the window is a cool blue colour.  That light mixing with the light
+from the candles gives a feeling of a soft aura of peace.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2174
+D2
+~
+~
+0 0 2176
+D3
+~
+~
+0 0 2180
+S
+#2176
+Great Hallway~
+~
+~
+Large tile pictures lay in the floor of the hallway.  Some being of the
+Godess, others being of battles, or priests.  A large chandelier hangs from
+the cieling with nearly a hundred lit candles, bringing light to the
+otherwise dim hallway.  Clerics, in their white robes move along by you
+talking of preparations for the holidays.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2175
+D1
+~
+~
+0 0 2173
+D2
+~
+~
+0 0 2177
+D3
+~
+~
+0 0 2179
+S
+#2177
+Great Hallway~
+~
+~
+Light shines in through a window in the wall upon the area inside,
+causing to appear to be radiating white light itself.  A feeling of peace
+can be felt all around you.  The Temple looks very plain in the soft white
+light.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2176
+D1
+~
+~
+0 0 2172
+D3
+~
+~
+0 0 2178
+S
+#2178
+Great Hallway~
+~
+~
+A window allows light to pour into the Temple from the garden outside. 
+Voices waft in through the window as well.  The silver candle holders on the
+wall are decorated with bright red ribbon.  Actually, now that you notice
+it...  Most of the Temple is decorated in this manner.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2179
+D1
+~
+~
+0 0 2177
+D3
+~
+~
+0 0 2181
+S
+#2179
+Great Hallway~
+~
+~
+The floor pattern sweeps into a line heading west, it looks to be the
+stem of a rose.  The pattern leads west into the center of the tower.  A man
+dressed in glowing armor walks by you with a look of the greatest peace on
+his face.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2180
+D1
+~
+~
+0 0 2176
+D2
+~
+~
+0 0 2178
+D3
+~
+~
+0 0 2198
+S
+#2180
+Great Hallway~
+~
+~
+The ceiling above you begins to slope upwards until it is swallowed into
+the tower to the west.  The wall begins to curve north slightly.  Clerics
+round the corner, narrowly passing you by.  With a brief apology they move
+on, however.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2175
+D2
+~
+~
+0 0 2179
+D3
+~
+~
+0 0 2197
+S
+#2181
+Western Tower~
+~
+~
+A window in the wall to your south allows a pale light to enter the
+temple and illuminate your surroundins.  The sound of the chattering clerics
+and other worshippers is peaceful and pleasant.  The laughter of those in
+the great hallway can be heard back to the east.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2198
+D1
+~
+~
+0 0 2178
+D3
+~
+~
+0 0 2182
+S
+#2182
+Western Tower~
+~
+~
+Once again the floor pattern takes the form of a rose coloured petal. 
+They seem to encircle the pillar of marble that reaches up the middle of the
+open tower.  Holy symbols and other pictures of goodness can be seen
+engraved into the pillar with breath-taking detail.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2181
+D2
+~
+~
+0 0 2183
+D3
+~
+~
+0 0 2185
+S
+#2183
+Western Tower~
+~
+~
+Pleasant sounds from the garden filter in through the window and reach
+your ears just as easily as the sweet fragrances from the flowers.  The
+voices of a few nearby clerics talking to each other echo about the inside
+of the tower.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2182
+D3
+~
+~
+0 0 2184
+S
+#2184
+Western Tower~
+~
+~
+A small child stands near the window as the pale light filters in
+enveloping him in a white glow.  The scene here could be described as being
+one of holiness.  Very holy indeed.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2185
+D1
+~
+~
+0 0 2183
+S
+#2185
+Western Tower~
+~
+~
+A prisoner is being escorted to the north by a guard.  Clerics surround
+them chanting curses and prayers alike as they push through the crowd. 
+There is a soft rose coloured petal pattern in the floor coming outward from
+the pillar in the center of the tower.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2200
+D1
+~
+~
+0 0 2182
+D2
+~
+~
+0 0 2184
+D3
+~
+~
+0 0 2186
+S
+#2186
+Western Tower~
+~
+~
+A female cleric stands at the open window resting her chin on her forearm
+and she leans against the sill.  The pale light is still able to reach
+around her and enter the tower.  The shadow leaps slightly and fades again
+in time with her breathing.  With the marble pillar obscuring the main part
+of the temple most of the noises are snuffed out.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2187
+D1
+~
+~
+0 0 2185
+S
+#2187
+Western Tower~
+~
+~
+You are at the western edge of the marble pillar that rises up in the
+center of the tower.  There is an arch carved out of the marble to the east
+and more of the tower to each other side.  A few clerics pass you as they
+chat with each other in a language you can't quite place.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2190
+D1
+~
+~
+0 0 2200
+D2
+~
+~
+0 0 2186
+D3
+~
+~
+0 0 2188
+S
+#2188
+Western Tower~
+~
+~
+You are at the very westernmost part of the temple.  It is quite quiet
+here compared to the rest of this place.  A window in the wall of the tower
+allows some light to enter and illuminate the area.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2189
+D1
+~
+~
+0 0 2187
+S
+#2189
+Western Tower~
+~
+~
+You walk along the inside of the tower wall.  The wall is decorated with
+many intricate designs and pictures carved into it's smooth marble surface. 
+It is fairly quiet here as the marble pillar blocks the rest of the temple
+off from this part of the tower.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2190
+D2
+~
+~
+0 0 2188
+S
+#2190
+Western Tower~
+~
+~
+You skirt around the edge of the marble pillar in the center of the
+tower.  The same petal pattern stretches out towards the outter wall.  To
+the south there seems to be a little commotion.  A cleric heading in that
+direction mentions something about taking a prisoner down to the dungeons. 
+To the north the pillar continues to curve increasingly eastward.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2191
+D2
+~
+~
+0 0 2187
+D3
+~
+~
+0 0 2189
+S
+#2191
+Western Tower~
+~
+~
+The tower begins to open up to the rest of the temple, with hallways
+visible to the north and east.  The continuous petal pattern set into the
+floor stretches out to the walls with it's rose quartz glimmering in the
+pale light that enters the tower from a window.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2192
+D2
+~
+~
+0 0 2190
+S
+#2192
+Western Tower~
+~
+~
+You Stand at the edge of a large rose quartz floor design in the shape of
+a petal.  To the north of you lies a long hallway that stretches on for a
+distance.  To the east lies the Great Hallway.  To the south is the
+remainder of the tower, with it's large marble pillar stretching up towards
+the heavens.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2193
+D1
+~
+~
+0 0 2195
+D3
+~
+~
+0 0 2191
+S
+#2193
+Western Hallway~
+~
+~
+You walk along the westernmost hallway in the temple.  Light filters in
+through the window and illuminates this part of the hall.  Sounds of soft
+whisperings from the clerics reach your ears from around you.  The hallway
+widens into a tower to the south, and continues north.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2287
+D1
+~
+~
+0 0 2194
+D2
+~
+~
+0 0 2192
+S
+#2194
+Western Hallway~
+~
+~
+Looking out the window here, you can see a large domed building.  The
+roof is made of a frosted glass of some sort.  The light reflecting in
+throught the window is a cool blue colour.  That light mixing with the light
+from the candles gives a feeling of a soft aura of peace.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2288
+D2
+~
+~
+0 0 2195
+D3
+~
+~
+0 0 2193
+S
+#2195
+Western Tower~
+~
+~
+Several clerics dressed in fluttering white robes pass you by as you
+wander the tower.  A hallway branches off to the north, while activity can
+be seen in the Great Hallway southeast of you.  Directly south of you there
+is an arch in the giant marble pillar.  It looks to be an entrance to a
+stairwell.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2194
+D1
+~
+~
+0 0 2196
+D2
+~
+~
+0 0 2199
+D3
+~
+~
+0 0 2192
+S
+#2196
+Western Tower~
+~
+~
+As you round the outside edge of the vast tower you can't help but glance
+up towards the top of it.  It reaches so high in the air you wonder how it
+was constructed without risk of many deaths from such a height.  Rays of
+light criss-cross all the way towards the top as they enter through the open
+windows.  
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2197
+D3
+~
+~
+0 0 2195
+S
+#2197
+Western Tower~
+~
+~
+A pattern inlaid in the floor reaches out toward you in the shape of a
+petal of a rose.  The tower is a scene of vast beauty and colour with
+intricate designs found everywhere.  The Great Hallway stretches out toward
+the east.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2196
+D1
+~
+~
+0 0 2180
+D2
+~
+~
+0 0 2198
+D3
+~
+~
+0 0 2199
+S
+#2198
+Western Tower~
+~
+~
+The ceiling extends a good ways up to the heavens here.  The floor is
+coloured a soft rose and the pattern takes the shape of a petal.  The great
+hallway can be seen back to the east while you can travel around the pillar
+of solid marble by going north or south.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2197
+D1
+~
+~
+0 0 2179
+D2
+~
+~
+0 0 2181
+S
+#2199
+Western Tower~
+~
+~
+As you enter the archway and peer down the stairs into utter darkness a
+cold chill creeps up your spine.  Voices can be heard from deep within the
+black void muttering curses at one another.  
+~
+0 134619150 0
+Rd     0
+D0
+~
+~
+0 0 2195
+D1
+~
+~
+0 0 2197
+D5
+~
+~
+0 0 2217
+S
+#2200
+Western Tower~
+~
+~
+As you step through the low archway in the marble pillar you come to a
+stairway leading down.  It grows fairly dark towards the bottom and you can
+make out faint cursing and muttering as well as a slight chill of evil from
+down these stairs.  
+~
+0 134619150 0
+Rd     0
+D2
+~
+~
+0 0 2185
+D3
+~
+~
+0 0 2187
+D5
+~
+~
+0 0 2201
+S
+#2201
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D2
+~
+~
+0 0 2226
+D3
+~
+~
+0 0 2202
+D4
+~
+~
+0 0 2200
+S
+#2202
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2204
+D1
+~
+~
+0 0 2201
+D2
+~
+~
+0 0 2228
+D3
+~
+cell~
+119 2152 2203
+S
+#2203
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2205
+D1
+~
+cell~
+119 2152 2202
+D2
+~
+~
+0 0 2230
+S
+#2204
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2206
+D2
+~
+~
+0 0 2202
+D3
+~
+cell~
+119 2152 2205
+S
+#2205
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2207
+D1
+~
+cell~
+119 2152 2204
+D2
+~
+~
+0 0 2203
+S
+#2206
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2209
+D2
+~
+~
+0 0 2204
+S
+#2207
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2413
+D2
+~
+~
+0 0 2205
+S
+#2208
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2210
+D3
+~
+~
+0 0 2413
+S
+#2209
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+cell~
+119 2152 2210
+D1
+~
+~
+0 0 2211
+D3
+~
+~
+0 0 2206
+S
+#2210
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2212
+D2
+~
+cell~
+119 2152 2209
+D3
+~
+~
+0 0 2208
+S
+#2211
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+cell~
+119 2152 2212
+D1
+~
+~
+0 0 2213
+D2
+~
+~
+0 0 2217
+D3
+~
+~
+0 0 2209
+S
+#2212
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2214
+D2
+~
+cell~
+119 2152 2211
+D3
+~
+~
+0 0 2210
+S
+#2213
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D2
+~
+~
+0 0 2216
+D3
+~
+~
+0 0 2211
+S
+#2214
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2412
+D3
+~
+~
+0 0 2212
+S
+#2215
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2412
+D1
+~
+~
+0 0 2380
+D2
+~
+~
+0 0 2218
+S
+#2216
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2213
+D1
+~
+cell~
+119 2152 2218
+D2
+~
+~
+0 0 2219
+D3
+~
+~
+0 0 2217
+S
+#2217
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2211
+D1
+~
+~
+0 0 2216
+D4
+~
+~
+0 0 2199
+S
+#2218
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2215
+D1
+~
+~
+0 0 2381
+D2
+~
+~
+0 0 2220
+D3
+~
+cell~
+119 2152 2216
+S
+#2219
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2216
+D1
+~
+cell~
+87 2152 2220
+D2
+~
+~
+0 0 2221
+S
+#2220
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2218
+D1
+~
+~
+0 0 2386
+D2
+~
+~
+0 0 2222
+D3
+~
+cell~
+87 2152 2219
+S
+#2221
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2219
+D3
+~
+~
+0 0 2224
+S
+#2222
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+cell~
+0 2152 2220
+D1
+~
+~
+0 0 2387
+D2
+~
+~
+0 0 2415
+S
+#2223
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2415
+D3
+~
+~
+0 0 2225
+S
+#2224
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2221
+D2
+~
+cell~
+119 2152 2225
+D3
+~
+~
+0 0 2226
+S
+#2225
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+cell~
+119 2152 2224
+D1
+~
+~
+0 0 2223
+D3
+~
+~
+0 0 2227
+S
+#2226
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2201
+D1
+~
+~
+0 0 2224
+D2
+~
+cell~
+115 2152 2227
+D3
+~
+~
+0 0 2228
+S
+#2227
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+cell~
+115 2152 2226
+D1
+~
+~
+0 0 2225
+D3
+~
+~
+0 0 2229
+S
+#2228
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2202
+D1
+~
+~
+0 0 2226
+S
+#2229
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2227
+D3
+~
+~
+0 0 2414
+S
+#2230
+Western Dungeons~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2203
+D2
+~
+~
+0 0 2414
+S
+#2231
+Great Hallway~
+~
+~
+You walk along the southern wall of this great white hallway.  A soft
+white light pours in through an open window, casting its holy glow upon the
+white floor.  Minute veins of a soft rose spider their way along the walls. 
+A couple female clerics walk by you giggling about someone.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2232
+D1
+~
+~
+0 0 2236
+D3
+~
+~
+0 0 2172
+S
+#2232
+Great Hallway~
+~
+~
+A long buffet table is set up here in the hallway.  A few clerics and an
+abundance of travellers pick their way through the assorted treats.  The
+food looks inviting enough to make you consider stopping for a bite to eat. 
+After all, why pass up free food?  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2233
+D1
+~
+~
+0 0 2235
+D2
+~
+~
+0 0 2231
+D3
+~
+~
+0 0 2173
+S
+#2233
+Great Hallway~
+~
+~
+You walk along the northern edge of the large white hallway.  Small red
+ribbons are tied around the light scones.  Decoration for an upcoming
+holiday you suppose.  A small group of children stare at you in awe as you
+pass by them and giggle a little.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2234
+D2
+~
+~
+0 0 2232
+D3
+~
+~
+0 0 2174
+S
+#2234
+Great Hallway~
+~
+~
+A soft blue light eminates in through the window, obtaining its colour
+from the frosted dome outside.  You overheard someone mention that the High
+Priest and his most trusted advisors were gathered in there right now,
+discussing the end of all evil.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2239
+D2
+~
+~
+0 0 2235
+D3
+~
+~
+0 0 2233
+S
+#2235
+Great Hallway~
+~
+~
+The hallway begins to open up into a large circular area.  The Eastern
+Tower, it looks like.  The tiles in the floor form into a pattern of a stem
+of a flower and weaves its way eastward.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2234
+D1
+~
+~
+0 0 2238
+D2
+~
+~
+0 0 2236
+D3
+~
+~
+0 0 2232
+S
+#2236
+Great Hallway~
+~
+~
+The pale white light enters through an open window and casts itself upon
+the interior of the temple.  It reflects off everything living and not,
+causing them to seem to glow a holy light themselves.  It is a very relaxing
+atmosphere here in the Temple of Saphrim.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2235
+D1
+~
+~
+0 0 2237
+D3
+~
+~
+0 0 2231
+S
+#2237
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2238
+D1
+~
+~
+0 0 2254
+D3
+~
+~
+0 0 2236
+S
+#2238
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2239
+D2
+~
+~
+0 0 2237
+D3
+~
+~
+0 0 2235
+S
+#2239
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2240
+D1
+~
+~
+0 0 2255
+D2
+~
+~
+0 0 2238
+D3
+~
+~
+0 0 2234
+S
+#2240
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2241
+D2
+~
+~
+0 0 2239
+S
+#2241
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2242
+D1
+~
+~
+0 0 2244
+D2
+~
+~
+0 0 2255
+D3
+~
+~
+0 0 2240
+S
+#2242
+Eastern Hallway~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2291
+D1
+~
+~
+0 0 2243
+D2
+~
+~
+0 0 2241
+S
+#2243
+Eastern Hallway~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2292
+D2
+~
+~
+0 0 2244
+D3
+~
+~
+0 0 2242
+S
+#2244
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2243
+D1
+~
+~
+0 0 2245
+D3
+~
+~
+0 0 2241
+S
+#2245
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D2
+~
+~
+0 0 2246
+D3
+~
+~
+0 0 2244
+S
+#2246
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2245
+D1
+~
+~
+0 0 2247
+D2
+~
+~
+0 0 2249
+S
+#2247
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D2
+~
+~
+0 0 2248
+D3
+~
+~
+0 0 2246
+S
+#2248
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2247
+D3
+~
+~
+0 0 2249
+S
+#2249
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2246
+D1
+~
+~
+0 0 2248
+D2
+~
+~
+0 0 2250
+D3
+~
+~
+0 0 2256
+S
+#2250
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2249
+D3
+~
+~
+0 0 2251
+S
+#2251
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2256
+D1
+~
+~
+0 0 2250
+D2
+~
+~
+0 0 2252
+D3
+~
+~
+0 0 2254
+S
+#2252
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2251
+D3
+~
+~
+0 0 2253
+S
+#2253
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2254
+D1
+~
+~
+0 0 2252
+S
+#2254
+Eastern Tower~
+~
+~
+~
+0 134619138 0
+Rd     0
+D1
+~
+~
+0 0 2251
+D2
+~
+~
+0 0 2253
+D3
+~
+~
+0 0 2237
+S
+#2255
+Eastern Tower~
+~
+~
+~
+0 134619142 0
+Rd     0
+D0
+~
+~
+0 0 2241
+D3
+~
+~
+0 0 2239
+D5
+~
+~
+0 0 2257
+S
+#2256
+Eastern Tower~
+~
+~
+~
+0 134619142 0
+Rd     0
+D1
+~
+~
+0 0 2249
+D2
+~
+~
+0 0 2251
+D5
+~
+~
+0 0 2273
+S
+#2257
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2258
+D3
+~
+~
+0 0 2282
+D4
+~
+~
+0 0 2255
+S
+#2258
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+cell~
+119 2152 2259
+D1
+~
+~
+0 0 2260
+D2
+~
+~
+0 0 2257
+D3
+~
+~
+0 0 2284
+S
+#2259
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2261
+D2
+~
+~
+119 0 2258
+D3
+~
+~
+0 0 2286
+S
+#2260
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+cell~
+119 2152 2261
+D1
+~
+~
+0 0 2262
+D3
+~
+~
+0 0 2258
+S
+#2261
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2263
+D2
+~
+~
+119 0 2260
+D3
+~
+~
+0 0 2259
+S
+#2262
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2265
+D3
+~
+~
+0 0 2260
+S
+#2263
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2411
+D3
+~
+~
+0 0 2261
+S
+#2264
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2411
+D2
+~
+~
+0 0 2266
+S
+#2265
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2262
+D1
+~
+cell~
+119 2152 2266
+D2
+~
+~
+0 0 2267
+S
+#2266
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2264
+D2
+~
+~
+0 0 2268
+D3
+~
+~
+119 0 2265
+S
+#2267
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2265
+D1
+~
+cell~
+71 2152 2268
+D2
+~
+~
+0 0 2269
+D3
+~
+~
+0 0 2273
+S
+#2268
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2266
+D2
+~
+~
+0 0 2270
+D3
+~
+~
+71 0 2267
+S
+#2269
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2267
+D3
+~
+~
+0 0 2272
+S
+#2270
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2268
+D2
+~
+~
+0 0 2410
+S
+#2271
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2410
+D3
+~
+~
+0 0 2274
+S
+#2272
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2273
+D1
+~
+~
+0 0 2269
+D2
+~
+cell~
+119 2152 2274
+D3
+~
+~
+0 0 2275
+S
+#2273
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2267
+D2
+~
+~
+0 0 2272
+D4
+~
+~
+0 0 2256
+S
+#2274
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+119 0 2272
+D1
+~
+~
+0 0 2271
+D3
+~
+~
+0 0 2276
+S
+#2275
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2272
+D2
+~
+cell~
+119 2152 2276
+D3
+~
+~
+0 0 2277
+S
+#2276
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+119 0 2275
+D1
+~
+~
+0 0 2274
+D3
+~
+~
+0 0 2278
+S
+#2277
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2280
+D1
+~
+~
+0 0 2275
+S
+#2278
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2276
+D3
+~
+~
+0 0 2409
+S
+#2279
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2281
+D2
+~
+~
+0 0 2409
+D3
+~
+~
+0 0 2389
+S
+#2280
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2282
+D2
+~
+~
+0 0 2277
+D3
+~
+cell~
+119 2152 2281
+S
+#2281
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2283
+D1
+~
+cell~
+119 2152 2280
+D2
+~
+~
+0 0 2279
+D3
+~
+~
+0 0 2384
+S
+#2282
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2284
+D1
+~
+~
+0 0 2257
+D2
+~
+~
+0 0 2280
+D3
+~
+cell~
+119 2152 2283
+S
+#2283
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2285
+D1
+~
+~
+119 0 2282
+D2
+~
+~
+0 0 2281
+D3
+~
+~
+0 0 2383
+S
+#2284
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2258
+D2
+~
+~
+0 0 2282
+S
+#2285
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2408
+D2
+~
+~
+0 0 2283
+D3
+~
+~
+0 0 2378
+S
+#2286
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2259
+D3
+~
+~
+0 0 2408
+S
+#2287
+Western Hallway~
+~
+~
+Large tile pictures lay in the floor of the hallway.  Some being of the
+Godess, others being of battles, or priests.  A large chandelier hangs from
+the cieling with nearly a hundred lit candles, bringing light to the
+otherwise dim hallway.  Clerics, in their white robes move along by you
+talking of preparations for the holidays.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2290
+D1
+~
+~
+0 0 2288
+D2
+~
+~
+0 0 2193
+S
+#2288
+Western Hallway~
+~
+~
+A long buffet table is set up here in the hallway.  A few clerics and an
+abundance of travellers pick their way through the assorted treats.  The
+food looks inviting enough to make you consider stopping for a bite to eat. 
+After all, why pass up free food?  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2289
+D2
+~
+~
+0 0 2194
+D3
+~
+~
+0 0 2287
+S
+#2289
+Western Hallway~
+~
+~
+The hallway to the north begins to open upward and outward into the
+North-Western Tower.  Clerics and travellers alike filter into this minor
+market gazing over the inconsequential wares being pawned off.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2297
+D2
+~
+~
+0 0 2288
+D3
+~
+~
+0 0 2290
+S
+#2290
+Western Hallway~
+~
+~
+The hallway to the north begins to open upward and outward into the
+North-Western Tower.  Clerics and travellers alike filter into this minor
+market gazing over the inconsequential wares being pawned off.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2296
+D1
+~
+~
+0 0 2289
+D2
+~
+~
+0 0 2287
+S
+#2291
+Eastern Hallway~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2294
+D1
+~
+~
+0 0 2292
+D2
+~
+~
+0 0 2242
+S
+#2292
+Eastern Hallway~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2293
+D2
+~
+~
+0 0 2243
+D3
+~
+~
+0 0 2291
+S
+#2293
+Eastern Hallway~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2338
+D2
+~
+~
+0 0 2292
+D3
+~
+~
+0 0 2294
+S
+#2294
+Eastern Hallway~
+~
+~
+~
+0 134619138 0
+Rd     0
+D0
+~
+~
+0 0 2339
+D1
+~
+~
+0 0 2293
+D2
+~
+~
+0 0 2291
+S
+#2295
+Western Tower~
+~
+~
+You wander around the western edges of the tower.  The walls here, as
+with everywhere else, are rich with decoration for the upcoming Yule season.
+Sweet aromas from the foods placed upon the numerous tables and the
+generally positive chatter from the clerics flood your senses.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2300
+D1
+~
+~
+0 0 2296
+S
+#2296
+Western Tower~
+~
+~
+A soft light enters the temple from the domed ceiling of the tower high
+above illuminating the area with a hallowed feeling.  The master craftsmen
+who built this temple centuries ago in the Age of Wonder must have had
+architectural talents far exceding your wildest dreams.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2299
+D1
+~
+~
+0 0 2297
+D2
+~
+~
+0 0 2290
+D3
+~
+~
+0 0 2295
+S
+#2297
+Western Tower~
+~
+~
+You are caught up in the flow of traffic passing through this part of the
+tower.  Off to the east a bit you can make out another hallway, which the
+general flow seems to be headed or returning from.  Word from a cleric in
+passing hints of the High Priest being over that way somewhere.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2374
+D1
+~
+~
+0 0 2298
+D2
+~
+~
+0 0 2289
+D3
+~
+~
+0 0 2296
+S
+#2298
+Western Tower~
+~
+~
+As you glance out the windows of this part of the tower you can once
+again see the domed chamber that houses the High Priest and his revered
+clerics.  The tower opens up into two hallways, one slightly to the north,
+while the other is slightly to the west.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2312
+D3
+~
+~
+0 0 2297
+S
+#2299
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2375
+D1
+~
+~
+0 0 2374
+D2
+~
+~
+0 0 2296
+D3
+~
+~
+0 0 2300
+S
+#2300
+Western Tower~
+~
+~
+High above you, sunlight enters the tower through the delicately formed
+windows.  It's holy light illuminates your surroundings, bringing out the
+full beauty of the workmanship.  Clerics and travellers alike pass you by in
+throngs, heading in all directions and none.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2303
+D1
+~
+~
+0 0 2299
+D2
+~
+~
+0 0 2295
+D3
+~
+~
+0 0 2301
+S
+#2301
+Western Tower~
+~
+~
+You traverse around the outer edge of the tower.  Tapestries hang from
+the walls depicting holy battles and heroes, made of only the finest
+material.  Way off to the east you can hear a large number of people milling
+about in the heart of the temple.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2302
+D1
+~
+~
+0 0 2300
+S
+#2302
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2303
+D2
+~
+~
+0 0 2301
+S
+#2303
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2304
+D1
+~
+~
+0 0 2375
+D2
+~
+~
+0 0 2300
+D3
+~
+~
+0 0 2302
+S
+#2304
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2305
+D2
+~
+~
+0 0 2303
+S
+#2305
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2306
+D2
+~
+~
+0 0 2375
+D3
+~
+~
+0 0 2304
+S
+#2306
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2307
+D2
+~
+~
+0 0 2305
+S
+#2307
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2308
+D3
+~
+~
+0 0 2306
+S
+#2308
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2307
+D1
+~
+~
+0 0 2310
+D2
+~
+~
+0 0 2309
+S
+#2309
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2308
+D1
+~
+~
+0 0 2311
+D2
+~
+~
+0 0 2374
+D3
+~
+~
+0 0 2375
+S
+#2310
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2315
+D2
+~
+~
+0 0 2311
+D3
+~
+~
+0 0 2308
+S
+#2311
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2310
+D1
+~
+~
+0 0 2314
+D2
+~
+~
+0 0 2312
+D3
+~
+~
+0 0 2309
+S
+#2312
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2311
+D1
+~
+~
+0 0 2313
+D2
+~
+~
+0 0 2298
+D3
+~
+~
+0 0 2374
+S
+#2313
+Northern Hallway~
+~
+~
+The ceiling above you begins to slope upwards until it is swallowed into
+the tower to the west.  The wall begins to curve north slightly.  Clerics
+round the corner, narrowly passing you by.  With a brief apology they move
+on, however.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2314
+D1
+~
+~
+0 0 2316
+D3
+~
+~
+0 0 2312
+S
+#2314
+Northern Hallway~
+~
+~
+The hallway on the northern part of the temple seems to be the busiest of
+them all.  Clerics all around are abuzz with activity, running to and fro. 
+Merchants selling their wares skirt the outer walls shouting over the murmur
+ro attract potential customers.  People wander the halls aimlessly seeking a
+blessing of any kind to gain hopes for the future.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2315
+D1
+~
+~
+0 0 2317
+D2
+~
+~
+0 0 2313
+D3
+~
+~
+0 0 2311
+S
+#2315
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2314
+D3
+~
+~
+0 0 2310
+S
+#2316
+Northern Hallway~
+~
+~
+You can feel the presence of a vast power very nearby.  As you look out
+the window here you can see the pale blue frosted dome in all it's spledor. 
+The dome seems to be resonating the sounds of the chorusing clerics that it
+houses.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2317
+D1
+~
+~
+0 0 2319
+D3
+~
+~
+0 0 2313
+S
+#2317
+Northern Hallway~
+~
+~
+The line of merchants selling things begins to dissipate and make way for
+entrance to the chamber of commerce.  Clerics mill through the stalls with
+mild interest as they go about doint their daily businesses of temple
+politics.  Elaborately armoured guards stand watch over the area ready to
+strike at any wronging.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2318
+D2
+~
+~
+0 0 2316
+D3
+~
+~
+0 0 2314
+S
+#2318
+Northern Hallway~
+~
+~
+Droves of people swarm out of the large oaken doors of the chamber of
+commerce.  Within you can finid anything to suit your needs and at a
+reasonable price for such a high quality.  To the south of you lies the
+audience chamber of the High Priest of Saphrim.  His voice can still
+scarcely be heard from within.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+chamber-door~
+19 2318 2343
+D1
+~
+~
+0 0 2321
+D2
+~
+~
+0 0 2319
+D3
+~
+~
+0 0 2317
+S
+#2319
+Northern Hallway~
+~
+~
+Before you stands the giant bronze doors to the audience chamber of the
+High Priest himself.  A melodious voice can be heard from within sending out
+blessing after blessing to the followerers of Saphrim as they prepare for
+what is to be the most glorious day in all of history.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2318
+D1
+~
+~
+0 0 2320
+D2
+~
+~
+3 0 2352
+D3
+~
+~
+0 0 2316
+S
+#2320
+Northern Hallway~
+~
+~
+You can feel the presence of a vast power very nearby.  As you look out
+the window here you can see the pale blue frosted dome in all it's spledor. 
+The dome seems to be resonating the sounds of the chorusing clerics that it
+houses.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2321
+D1
+~
+~
+0 0 2322
+D3
+~
+~
+0 0 2319
+S
+#2321
+Northern Hallway~
+~
+~
+The line of merchants selling things begins to dissipate and make way for
+entrance to the chamber of commerce.  Clerics mill through the stalls with
+mild interest as they go about doint their daily businesses of temple
+politics.  Elaborately armoured guards stand watch over the area ready to
+strike at any wronging.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2323
+D2
+~
+~
+0 0 2320
+D3
+~
+~
+0 0 2318
+S
+#2322
+Northern Hallway~
+~
+~
+The hallway on the northern part of the temple seems to be the busiest of
+them all.  Clerics all around are abuzz with activity, running to and fro. 
+Merchants selling their wares skirt the outer walls shouting over the murmur
+ro attract potential customers.  People wander the halls aimlessly seeking a
+blessing of any kind to gain hopes for the future.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2323
+D1
+~
+~
+0 0 2341
+D3
+~
+~
+0 0 2320
+S
+#2323
+Northern Hallway~
+~
+~
+The ceiling above you begins to slope upwards until it is swallowed into
+the tower to the east.  The wall begins to curve north slightly.  Clerics
+round the corner, narrowly passing you by.  With a brief apology they move
+on, however.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2324
+D1
+~
+~
+0 0 2342
+D2
+~
+~
+0 0 2322
+D3
+~
+~
+0 0 2321
+S
+#2324
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2325
+D2
+~
+~
+0 0 2323
+S
+#2325
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2326
+D2
+~
+~
+0 0 2342
+D3
+~
+~
+0 0 2324
+S
+#2326
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2328
+D1
+~
+~
+0 0 2330
+D2
+~
+~
+0 0 2327
+D3
+~
+~
+0 0 2325
+S
+#2327
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2326
+D1
+~
+~
+0 0 2376
+D2
+~
+~
+0 0 2377
+D3
+~
+~
+0 0 2342
+S
+#2328
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2329
+D2
+~
+~
+0 0 2326
+S
+#2329
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2330
+D3
+~
+~
+0 0 2328
+S
+#2330
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2329
+D1
+~
+~
+0 0 2331
+D2
+~
+~
+0 0 2376
+D3
+~
+~
+0 0 2326
+S
+#2331
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2332
+D3
+~
+~
+0 0 2330
+S
+#2332
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2331
+D1
+~
+~
+0 0 2333
+D2
+~
+~
+0 0 2335
+D3
+~
+~
+0 0 2376
+S
+#2333
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2334
+D3
+~
+~
+0 0 2332
+S
+#2334
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2333
+D3
+~
+~
+0 0 2335
+S
+#2335
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2332
+D1
+~
+~
+0 0 2334
+D2
+~
+~
+0 0 2337
+D3
+~
+~
+0 0 2336
+S
+#2336
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2376
+D1
+~
+~
+0 0 2335
+D2
+~
+~
+0 0 2338
+D3
+~
+~
+0 0 2377
+S
+#2337
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2335
+D3
+~
+~
+0 0 2338
+S
+#2338
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2336
+D1
+~
+~
+0 0 2337
+D2
+~
+~
+0 0 2293
+D3
+~
+~
+0 0 2339
+S
+#2339
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2377
+D1
+~
+~
+0 0 2338
+D2
+~
+~
+0 0 2294
+D3
+~
+~
+0 0 2340
+S
+#2340
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2341
+D1
+~
+~
+0 0 2339
+S
+#2341
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2342
+D1
+~
+~
+0 0 2377
+D2
+~
+~
+0 0 2340
+D3
+~
+~
+0 0 2322
+S
+#2342
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2325
+D1
+~
+~
+0 0 2327
+D2
+~
+~
+0 0 2341
+D3
+~
+~
+0 0 2323
+S
+#2343
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2347
+D1
+~
+~
+0 0 2344
+D2
+~
+chamber-door~
+19 2318 2318
+D3
+~
+~
+0 0 2345
+S
+#2344
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2346
+D3
+~
+~
+0 0 2343
+S
+#2345
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2348
+D1
+~
+~
+0 0 2343
+S
+#2346
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2351
+D2
+~
+~
+0 0 2344
+D3
+~
+~
+0 0 2347
+S
+#2347
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2350
+D1
+~
+~
+0 0 2346
+D2
+~
+~
+0 0 2343
+D3
+~
+~
+0 0 2348
+S
+#2348
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2349
+D1
+~
+~
+0 0 2347
+D2
+~
+~
+0 0 2345
+S
+#2349
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2350
+D2
+~
+~
+0 0 2348
+S
+#2350
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2351
+D2
+~
+~
+0 0 2347
+D3
+~
+~
+0 0 2349
+S
+#2351
+The Chamber of Commerce~
+~
+~
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2346
+D3
+~
+~
+0 0 2350
+S
+#2352
+The Chamber of Audience~
+~
+~
+You enter the audience chamber of the great High Priest.  The entire
+chamber is constructed in a large frosted blue glass of some sort.  The
+entire chamber is cast into a pale blue light, which creates an utmost holy
+feeling.  Dozens of clerics wander about talking and basking ini the
+peaceful aura of the High Priest.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+3 0 2319
+D1
+~
+~
+0 0 2353
+D2
+~
+~
+0 0 2365
+D3
+~
+~
+0 0 2366
+S
+#2353
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2354
+D3
+~
+~
+0 0 2352
+S
+#2354
+The Chamber of Audience~
+~
+~
+You stand before the stairs that surround the platform housing the High
+Priest.  Clerics step down out of the bright light that eminates from the
+High Priest himself with a look of peace upon their visage.  Others eagerly
+rush up to take the place of their comrades as they decend.  The closer you
+come the more at peace your soul seems to become.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2353
+D1
+~
+~
+0 0 2355
+D2
+~
+~
+0 0 2357
+D3
+~
+~
+0 0 2365
+S
+#2355
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D2
+~
+~
+0 0 2356
+D3
+~
+~
+0 0 2354
+S
+#2356
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2355
+D2
+~
+~
+0 0 2359
+D3
+~
+~
+0 0 2357
+S
+#2357
+The Chamber of Audience~
+~
+~
+You stand before the stairs that surround the platform housing the High
+Priest.  Clerics step down out of the bright light that eminates from the
+High Priest himself with a look of peace upon their visage.  Others eagerly
+rush up to take the place of their comrades as they decend.  The closer you
+come the more at peace your soul seems to become.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2354
+D1
+~
+~
+0 0 2356
+D2
+~
+~
+0 0 2358
+D3
+~
+~
+0 0 2363
+S
+#2358
+The Chamber of Audience~
+~
+~
+You stand before the stairs that surround the platform housing the High
+Priest.  Clerics step down out of the bright light that eminates from the
+High Priest himself with a look of peace upon their visage.  Others eagerly
+rush up to take the place of their comrades as they decend.  The closer you
+come the more at peace your soul seems to become.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2357
+D1
+~
+~
+0 0 2359
+D2
+~
+~
+0 0 2360
+D3
+~
+~
+0 0 2362
+S
+#2359
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2356
+D3
+~
+~
+0 0 2358
+S
+#2360
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2358
+D3
+~
+~
+0 0 2361
+S
+#2361
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2362
+D1
+~
+~
+0 0 2360
+D3
+~
+~
+0 0 2373
+D5
+~
+tile~
+3 0 2395
+S
+#2362
+The Chamber of Audience~
+~
+~
+You stand before the stairs that surround the platform housing the High
+Priest.  Clerics step down out of the bright light that eminates from the
+High Priest himself with a look of peace upon their visage.  Others eagerly
+rush up to take the place of their comrades as they decend.  The closer you
+come the more at peace your soul seems to become.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2363
+D1
+~
+~
+0 0 2358
+D2
+~
+~
+0 0 2361
+D3
+~
+~
+0 0 2371
+S
+#2363
+The Chamber of Audience~
+~
+~
+You stand before the final steps that lead up to the High Priest himself.
+The light shining forth from his being is almost unbearable at this point,
+however, it is not threatening at all.  In fact it is quite welcoming.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2365
+D1
+~
+~
+0 0 2357
+D2
+~
+~
+0 0 2362
+D3
+~
+~
+0 0 2370
+D4
+~
+~
+0 0 2364
+S
+#2364
+Before the High Priest of Saphrim~
+~
+~
+You stand before the golden throne of the High Priest.  The High Priest
+himself is sitting on it, beaming with pride.  The light here is blinding,
+seeming to flood outward from the priest himself.  A small opening in the
+roof of the frosted dome allows light to spill around the High Priest.  The
+presence of the Goddess of Light herself can be felt to some degree here.  
+~
+0 134619150 0
+Rd     0
+D5
+~
+~
+0 0 2363
+S
+#2365
+The Chamber of Audience~
+~
+~
+You stand before the stairs that surround the platform housing the High
+Priest.  Clerics step down out of the bright light that eminates from the
+High Priest himself with a look of peace upon their visage.  Others eagerly
+rush up to take the place of their comrades as they decend.  The closer you
+come the more at peace your soul seems to become.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2352
+D1
+~
+~
+0 0 2354
+D2
+~
+~
+0 0 2363
+D3
+~
+~
+0 0 2367
+S
+#2366
+the Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2352
+D2
+~
+~
+0 0 2367
+S
+#2367
+The Chamber of Audience~
+~
+~
+You stand before the stairs that surround the platform housing the High
+Priest.  Clerics step down out of the bright light that eminates from the
+High Priest himself with a look of peace upon their visage.  Others eagerly
+rush up to take the place of their comrades as they decend.  The closer you
+come the more at peace your soul seems to become..f
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2366
+D1
+~
+~
+0 0 2365
+D2
+~
+~
+0 0 2370
+D3
+~
+~
+0 0 2368
+S
+#2368
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D1
+~
+~
+0 0 2367
+D2
+~
+~
+0 0 2369
+S
+#2369
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2368
+D1
+~
+~
+0 0 2370
+D2
+~
+~
+0 0 2372
+S
+#2370
+The Chamber of Audience~
+~
+~
+You stand before the stairs that surround the platform housing the High
+Priest.  Clerics step down out of the bright light that eminates from the
+High Priest himself with a look of peace upon their visage.  Others eagerly
+rush up to take the place of their comrades as they decend.  The closer you
+come the more at peace your soul seems to become.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2367
+D1
+~
+~
+0 0 2363
+D2
+~
+~
+0 0 2371
+D3
+~
+~
+0 0 2369
+S
+#2371
+The Chamber of Audience~
+~
+~
+You stand before the stairs that surround the platform housing the High
+Priest.  Clerics step down out of the bright light that eminates from the
+High Priest himself with a look of peace upon their visage.  Others eagerly
+rush up to take the place of their comrades as they decend.  The closer you
+come the more at peace your soul seems to become.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2370
+D1
+~
+~
+0 0 2362
+D2
+~
+~
+0 0 2373
+D3
+~
+~
+0 0 2372
+S
+#2372
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2369
+D1
+~
+~
+0 0 2371
+S
+#2373
+The Chamber of Audience~
+~
+~
+You walk along the edge of the pale glass dome.  All about you you can
+hear the buzzing conversations of the clerics as they brag about the
+upcoming victory over the forces of darkness.  Above all the noise you can
+distinguish a humming coming from the center of the dome where the High
+Priest is located upon his throne.  
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2371
+D1
+~
+~
+0 0 2361
+S
+#2374
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2309
+D1
+~
+~
+0 0 2312
+D2
+~
+~
+0 0 2297
+D3
+~
+~
+0 0 2299
+S
+#2375
+Western Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2305
+D1
+~
+~
+0 0 2309
+D2
+~
+~
+0 0 2299
+D3
+~
+~
+0 0 2303
+S
+#2376
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2330
+D1
+~
+~
+0 0 2332
+D2
+~
+~
+0 0 2336
+D3
+~
+~
+0 0 2327
+S
+#2377
+Eastern Tower~
+~
+~
+~
+0 134619146 0
+Rd     0
+D0
+~
+~
+0 0 2327
+D1
+~
+~
+0 0 2336
+D2
+~
+~
+0 0 2339
+D3
+~
+~
+0 0 2341
+S
+#2378
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2285
+D2
+~
+~
+0 0 2383
+D3
+~
+~
+0 0 2379
+S
+#2379
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2378
+D2
+~
+~
+0 0 2382
+D3
+~
+~
+0 0 2380
+S
+#2380
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2379
+D2
+~
+~
+0 0 2381
+D3
+~
+~
+0 0 2215
+S
+#2381
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2380
+D1
+~
+~
+0 0 2382
+D2
+~
+~
+0 0 2386
+D3
+~
+~
+0 0 2218
+S
+#2382
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2379
+D1
+~
+~
+0 0 2383
+D2
+~
+~
+0 0 2385
+D3
+~
+~
+0 0 2381
+S
+#2383
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2378
+D1
+~
+~
+0 0 2283
+D2
+~
+~
+0 0 2384
+D3
+~
+~
+0 0 2382
+S
+#2384
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2383
+D1
+~
+~
+0 0 2281
+D2
+~
+~
+0 0 2389
+D3
+~
+~
+0 0 2385
+S
+#2385
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2382
+D1
+~
+~
+0 0 2384
+D2
+~
+~
+0 0 2388
+D3
+~
+~
+0 0 2386
+S
+#2386
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2381
+D1
+~
+~
+0 0 2385
+D2
+~
+~
+0 0 2387
+D3
+~
+~
+0 0 2220
+S
+#2387
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2386
+D1
+~
+~
+0 0 2388
+D3
+~
+~
+0 0 2222
+S
+#2388
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2385
+D1
+~
+~
+0 0 2389
+D2
+~
+rock~
+3 0 2390
+D3
+~
+~
+0 0 2387
+S
+#2389
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2384
+D1
+~
+~
+0 0 2279
+D3
+~
+~
+0 0 2388
+S
+#2390
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+rock~
+3 0 2388
+D5
+~
+~
+0 0 2391
+S
+#2391
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2392
+D4
+~
+~
+0 0 2390
+S
+#2392
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2391
+D5
+~
+~
+0 0 2393
+S
+#2393
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2394
+D4
+~
+~
+0 0 2392
+S
+#2394
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2393
+S
+#2395
+Hidden Passage~
+~
+~
+~
+0 401419 0
+Rd     0
+D4
+~
+~
+3 0 2361
+D5
+~
+~
+0 0 2396
+S
+#2396
+Hidden Passage~
+~
+~
+~
+0 401419 0
+Rd     0
+D4
+~
+~
+0 0 2395
+D5
+~
+~
+0 0 2397
+S
+#2397
+Hidden Passage~
+~
+~
+~
+0 401419 0
+Rd     0
+D4
+~
+~
+0 0 2396
+D5
+~
+~
+0 0 2398
+S
+#2398
+Hidden Passage~
+~
+~
+~
+0 401419 0
+Rd     0
+D4
+~
+~
+0 0 2397
+D5
+~
+~
+0 0 2399
+S
+#2399
+Hidden Passage~
+~
+~
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 2400
+D4
+~
+~
+0 0 2398
+S
+#2400
+Hidden Passage~
+~
+~
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 2399
+S
+#2401
+Laboratory of Vinas Nightblaze~
+~
+~
+Here, in this room, things stand out with vivid clarity, though the
+laboratory is only dimly lit with the light of a magelight off in the
+distance.  Staring around, overawed by the sense of evil in this room, it is
+difficult to move beyond where the portal has deposited you.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 2404
+D1
+~
+~
+0 0 2406
+D3
+~
+~
+0 0 2402
+S
+#2402
+Laboratory of Vinas Nightblaze~
+~
+~
+You hear a sound and feel a faint touch upon your arm.  Whirling in
+alarm, you see dark, living, shapeless creatures, trapped and held in cages.
+Smelling your warm blood, they stir in the soft light of the magelight, and
+you realize that it was the touch of one of their grasping hands you had
+felt.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 2403
+D1
+~
+~
+0 0 2401
+S
+#2403
+Laboratory of Vinas Nightblaze~
+~
+~
+With a shudder you back away from the touch of the reaching hands of the
+caged entities and bump into something solid.  You slowly turn about to
+discover the object that has obstructed you.  It was an open casket
+containing the body of what might have once been a young adventurer, much
+like yourself.  But now, it's skin is stretched like parchment across it's
+bones, his mouth agape in a ghastly, silent scream.  The ground beneath you
+lurches, and the body in the casket is jostled about wildly, staring at you
+from empty eye sockets.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 2404
+D2
+~
+~
+0 0 2402
+S
+#2404
+Laboratory of Vinas Nightblaze~
+~
+~
+Unbeknownst to any of the clerics of the temple, Vinas Nightblaze created
+this laboratory years and years ago.  Using his great magical power he
+borrowed deep beneath the temple like a worm, eating away at solid rock,
+forming it into stairs and secret doors, and finally casting his spells upon
+those doors so that few would ever know of their existance.  
+~
+0 401419 0
+Rd     0
+D0
+~
+cage~
+7 2407 2407
+D1
+~
+~
+0 0 2405
+D2
+~
+~
+0 0 2401
+D3
+~
+~
+0 0 2403
+S
+#2405
+Laboratory of Vinas Nightblaze~
+~
+~
+This part of the laboratory is completely devoid of decoration, save for
+the giant ring of some sort of silvery metal laid in the stone floor.  Runes
+are etched in the stone floor around this ring, and are also inlaid with the
+same silvery metal.  You recognize some of the runes of warding and
+protection, and quickly come to understand that the ring is a summoning
+circle used to contain beings from other planes when they are ripped from
+their homes.  
+who
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 2406
+D3
+~
+~
+0 0 2404
+S
+#2406
+Laboratory of Vinas Nightblaze~
+~
+~
+The predominant feature of this half of the laboratory are the books.  It
+is lined with deep wooden shelves, holding hundreds upon hundreds of books. 
+Many of the volumes appeared similar, each bound with the same black or navy
+binding, decorated in runes of silver or gold.  The books aren't the only
+items ornamenting the room, however.  Amongst the countless volumes are
+countless objects, rare and beautiful--and rare and ghastly--situated upon
+the shelves.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 2405
+D3
+~
+~
+0 0 2401
+S
+#2407
+The Cage Room of Vinas Nightblaze~
+~
+~
+The inside of this caged room smells of rot and decay.  Dried blood
+stains upon the floor and walls are found everywhere--product of the
+countless slaughters of helpless creatures.  The few remaining "test
+subjects" and "failures" cower in the corners, as far from you as possible,
+shivering in fear of their fate.  
+~
+0 4595723 0
+Rd     0
+D2
+~
+~
+7 0 2404
+S
+#2408
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2286
+D2
+~
+~
+0 0 2285
+S
+#2409
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2279
+D1
+~
+~
+0 0 2278
+S
+#2410
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2270
+D3
+~
+~
+0 0 2271
+S
+#2411
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2264
+D3
+~
+~
+0 0 2263
+S
+#2412
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 2215
+D3
+~
+~
+0 0 2214
+S
+#2413
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 2208
+D2
+~
+~
+0 0 2207
+S
+#2414
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2230
+D1
+~
+~
+0 0 2229
+S
+#2415
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 2222
+D3
+~
+~
+0 0 2223
+S
+#2436
+~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 2220 spec_fido
+M 2281 spec_fido
+M 2319 spec_guard
+M 2364 spec_cast_psionicist
+M 2401 spec_fido
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 2150 0 2150
+O 0 2157 0 2157
+O 0 2151 0 2157
+M 0 2151 1 2157
+E 0 2154 0 3
+E 0 2153 0 5
+M 0 2150 1 2160
+E 0 2153 0 5
+O 0 2151 0 2166
+O 0 2166 0 2166
+M 0 2152 2 2171
+E 0 2156 0 5
+E 0 2155 0 20
+E 0 2154 0 3
+O 0 2173 0 2173
+O 0 2174 0 2173
+M 0 2173 1 2173
+M 0 2155 2 2174
+E 0 2160 0 12
+E 0 2161 0 16
+E 0 2162 0 20
+M 0 2153 2 2176
+E 0 2158 0 6
+E 0 2154 0 3
+E 0 2153 0 5
+M 0 2216 1 2216
+E 0 2216 0 5
+G 0 2152 0
+M 0 2220 4 2220
+E 0 2220 0 5
+E 0 2221 0 20
+M 0 2154 2 2232
+E 0 2154 0 3
+E 0 2159 0 2
+E 0 2153 0 5
+M 0 2281 4 2281
+E 0 2280 0 5
+E 0 2281 0 20
+M 0 2282 1 2282
+E 0 2216 0 5
+G 0 2152 0
+M 0 2287 1 2287
+E 0 2287 0 20
+E 0 2288 0 6
+E 0 2289 0 5
+E 0 2290 0 11
+M 0 2291 2 2291
+E 0 2291 0 5
+E 0 2292 0 2
+E 0 2293 0 25
+M 0 2319 8 2319
+E 0 2319 0 5
+E 0 2320 0 20
+M 0 2344 1 2344
+M 0 2345 1 2345
+M 0 2346 1 2346
+G 0 2346 0
+G 0 2345 0
+G 0 2344 0
+G 0 2343 0
+M 0 2348 1 2348
+M 0 2349 1 2349
+M 0 2351 1 2351
+M 0 2352 8 2352
+E 0 2352 0 5
+E 0 2353 0 16
+O 0 2364 0 2364
+M 0 2364 1 2364
+E 0 2154 0 3
+E 0 2357 0 9
+E 0 2366 0 5
+E 0 2365 0 6
+M 0 2288 1 2388
+E 0 2388 0 7
+E 0 2389 0 5
+E 0 2281 0 20
+E 0 2221 0 21
+O 0 2400 0 2394
+O 0 2400 0 2400
+M 0 2401 1 2401
+E 0 2401 0 5
+E 0 2402 0 1
+E 0 2403 0 2
+E 0 2404 0 8
+G 0 2407 0
+G 0 2405 0
+E 0 2408 0 20
+E 0 2411 0 9
+S
+
+
+
+#SHOPS
+2346 10 2 8 19 17 100 90 0 24
+2349 5 0 0 0 0 100 90 0 24
+2351 9 0 0 0 0 100 90 0 24
+0
+
+
+
+#$

@@ -1,0 +1,2450 @@
+#AREADATA
+Name        elemental planes~
+Builders    Zhyril~
+VNUMs       31100 31199
+Security    1
+Recall      31150
+Flags       17
+Sounds      Waves of elemental energy flow through the air.~
+End
+
+
+
+#MOBILES
+#31102
+water elemental~
+a water elemental~
+A vortex of water moves through the depths.
+~
+It's hard to distinguish it from the surrounding water, but you think you
+can make out softly glowing eyes and a vaguely humanoid form.  
+~
+1 134217856 294916 2 0 0 S
+70 100 100 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31115
+sea elf~
+a sea elf~
+A sea elf gracefully walks through the depths here.
+~
+Most likely a traveller from a distant plane, this sea elf looks somewhat
+haughty.  He seems almost offended by the presence of an airbreather such as
+yourself.  
+~
+1 0 0 0 0 0 S
+70 140 140 0 5000d0+0 0d0+0
+70000 3 0
+0 0 1
+0 0 0
+#31118
+fire elemental~
+a fire elemental~
+A vaguely humanoid pillar of fire races along the ground.
+~
+You can make out eyes that glow white-hot.  This elemental creature seems
+to be made completely of fire, though the flames seem to take a vaguely
+human form.  
+~
+65 100663488 32772 0 0 0 S
+70 100 100 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31119
+undine~
+an undine~
+An undine wafts gracefully through the water.
+~
+A beautiful female ocean spirit, her translucent blue skin casts a soft
+light.  
+~
+1 128 0 2 1 300 S
+90 200 200 0 30000d0+0 0d0+0
+0 10 0
+0 0 2
+0 0 0
+>greet_prog 100~
+if ispc($n)
+say Greetings, mortal.
+smile $n
+endif
+~
+|
+#31120
+barracuda~
+a barracuda~
+An enormous barracuda speeds through the waves.
+~
+Far larger than anything you've seen on your home plane, this creature's
+scales glow with an irridescent light.  
+~
+97 8396864 16777216 2 0 0 S
+70 0 0 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31121
+coral golem~
+a coral golem~
+A golem constructed of coral stands here impassively.
+~
+A huge, craggy humanoid form constructed of blue coral.  Its eyes glow
+with a strange blue light, and you notice something embedded in its chest;
+it appears to be a huge milky pearl.  
+~
+3 8388800 262160 2 0 0 S
+80 200 200 0 10000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>fight_prog 50~
+punch
+~
+>death_prog 100~
+mpecho As the golem crumbles into debris, the pearl falls to the ground.
+mpoload 31148
+drop pearl
+~
+|
+#31122
+triton~
+a triton~
+A triton streaks through the water here.
+~
+A huge humanoid warrior with scales covering the lower half of his body. 
+He glares at you, and waves his trident dismissively, as if you're not worth
+his challenge.  
+~
+1 134217920 262144 2 0 -300 S
+75 150 150 0 6000d0+0 0d0+0
+75000 9 0
+0 0 1
+0 0 0
+#31135
+salamander~
+a salamander~
+A five-foot long lizard with bright red skin hisses at you.
+~
+A beautiful creature with mottled red skin, it appears to be quite
+vicious.  It doesn't attack immediately, but starts to circle you, hissing
+menacingly.  
+~
+1 41943104 0 0 0 -200 S
+60 0 0 0 15000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31139
+phoenix~
+a phoenix~
+An enormous bird constructed of living fire circles the area.
+~
+Its wingspan must be 12 feet, and it's white-hot eyes hold you in their
+gaze.  It is flying a few feet above the ground now.  
+~
+1 34078848 32768 0 0 0 S
+60 0 0 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31145
+lava golem~
+a lava golem~
+A humanoid form made out of living lava is here.
+~
+A fearsome apparition.  It's too bright to look directly at, but you
+think you can make out a gem of some sort embedded in its chest.  
+~
+67 41943232 0 0 0 0 S
+80 200 200 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+mpechoAs t lava golem is vanquished, the liquid stone loses its shape.
+mpecho It falls to the ground, and rivulets of lava are absorbed into the earth.
+mpecho Nearby fire trees seem to glow for a moment, then all is still.
+mpoload 31152
+drop ruby
+mpecho A ruby lies on the ground.
+~
+|
+#31149
+druid orterix~
+the Druid, Orterix~
+A man dressed in druidic robes rests on a bed of moss.
+~
+An average-looking man of medium height and build, he is dressed in the
+dark robes of a Druid.  He smiles at your scrutiny.  
+~
+3 0 0 0 3 1000 S
+140 5000 5000 0 70000d0+0 0d0+0
+0 0 0
+0 0 1
+2 0 0
+>speech_prog hi hello greetings~
+say Ah, a visitor!
+say I rarely get them here.
+say Come in, and relax!
+say Your travels through this Plane must have wearied you.
+~
+>speech_prog Plane~
+say Yes, this place can be harsh and unyielding.  Fortunately the sphere protects us from it.
+~
+>speech_prog sphere~
+say I constructed it to provide a sanctuary for myself as I explored this Plane.
+say I did not expect visitors, but I'm glad if it can provide respite to others.
+~
+>speech_prog explore exploration~
+say I've travelled the entire world on my home plane.
+say I desired other challenges.  The elemental planes are fascinating places.
+say I've learned much here.
+~
+>speech_prog learn learned ~
+say Yes, my powers have increased greatly during my travels here.
+say Why do you come here, $n?  What do you seek?
+~
+>speech_prog gem ruby amulet~
+say Ahhhhh...
+say You seek to construct an elemental amulet?
+say They're quite powerful.
+say If I recall correctly, you'll need to obtain an elemental disc.
+say Then place gems representing each element in it.
+say You have to do it in the correct order, however.
+say If I remember correctly it's...
+ponder
+say Water-Fire-Earth-Air.
+say The water gem is represented by a pearl.
+say Fire by a ruby.
+say Earth by an opal.
+say And air by a diamond.
+say The kinds of gems needed are very rare.
+say They're most commonly used in the creation of golems.
+~
+>speech_prog golem golems rare~
+say Golems are mindless entities created to serve their masters.
+say Each one will have a gem embedded in its chest to provide it energy.
+say It would be easier to find a golem and destroy it than search for an actual gem.
+say There's actually one nearby, in the Forest.  I'm not sure who created it.
+say But it seems to be guarding a portal of some sort.
+~
+>speech_prog hungry food~
+say Ah, you're hungry?
+say Maybe I can help.
+cast 'create food'
+smile
+~
+>speech_prog thirsty~
+say Feel free to drink from the spring.  I've created a vortex to the Prime
+say Material Plane, the water comes from a spring in the mountains.
+smile
+saIt's near my old home.
+~
+>speech_prog heal healing help~
+say Well, I haven't healed anyone in a while.
+say But I can give it a shot...
+cast 'cure serious' $n
+~
+|
+#31152
+stone giant~
+a stone giant~
+A huge creature glares at you menacingly.
+~
+An enormous, muscular humanoid with grey skin.
+~
+1 33554432 16777364 0 0 -500 S
+75 0 0 0 23000d0+0 0d0+0
+1500 2 0
+0 0 0
+0 0 0
+#31161
+earth elemental~
+an earth elemental~
+A giant form made of earth and stone lumbers by.
+~
+Made of stone and earth, it looks like a crudely formed statue.  Brooding
+black eyes look out from its stony face.  
+~
+67 16576 262144 0 0 0 S
+70 100 100 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#31162
+giant mole~
+a giant mole~
+A mole the size of a horse is here, digging in the ground.
+~
+It's quite large.
+~
+1 64 0 0 0 0 S
+60 0 0 0 17000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>fight_prog 100~
+bite
+~
+|
+#31170
+stone piercer~
+a stone piercer~
+One of the stalagmites suddenly drops towards you!
+~
+A long, sharp stone creature.
+~
+99 0 16777220 32768 0 0 S
+60 100 100 0 15000d0+0 0d0+0
+1000 0 0
+0 0 0
+0 0 0
+#31171
+stone golem~
+a stone golem~
+A massive stone figure stands impassively here.
+~
+Looking almost like a roughly-carved statue, this towering figure seems
+to ignore your presence.  You notice a large opal embedded in its chest.  
+~
+3 8396992 294916 0 0 0 S
+80 200 200 0 20000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+>death_prog 100~
+mpecho The stone golem crumbles silently into a pile of rubble.
+mpecho You notice a large opal shimmering from among the debris.
+mpoload 31172
+drop opal
+~
+|
+#0
+
+
+
+#OBJECTS
+#31120
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31121
+blue portal~
+a blue portal~
+A blue portal hangs midway in the water.~
+~
+29 1 0 0 0 0 0
+31150~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31122
+trident~
+a blue steel trident~
+A trident has been stuck in the ground here.~
+~
+5 65 0 0 0 8192 70
+0~ 0~ 0~ 11~
+10 400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 70
+A
+18 20
+A
+19 20
+#31124
+red portal~
+a red portal~
+A red portal hovers above the ground.~
+~
+29 0 0 0 0 0 0
+31150~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31140
+no name~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31142
+fire tree~
+a fire tree~
+You notice that one of the fire trees has low-hanging branches, covered with a strange fruit.~
+~
+15 33554433 0 0 0 0 0
+20~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31143
+flame fruit~
+a flame fruit~
+A glowing piece of fruit is here.~
+~
+26 0 0 0 0 1 1
+1~ infravision~ reserved~ reserved~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31145
+blue sphere~
+a blue sphere~
+The blue dome shimmers softly.~
+~
+29 0 0 0 0 0 0
+31149~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31148
+pearl~
+an enormous pearl~
+A softly glowing pearl lies here.~
+~
+8 0 0 0 0 32769 80
+0~ 0~ 0~ 0~
+2 8000 0
+5 0
+breathe water~
+3 3
+31151 0 0
+A
+19 5
+A
+18 5
+#31149
+spring pool~
+a crystal spring~
+A crystal spring bubbles up, creating a pool of water.~
+~
+25 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31150
+platinum disc~
+a platinum disc~
+A platinum disc on a chain lies here.~
+~
+8 64 0 0 0 5 60
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+31151 0 0
+A
+18 5
+A
+12 5
+#31151
+disc embedded pearl~
+a platinum disc embedded with a pearl~
+A disc lies here.~
+~
+8 0 0 0 0 1 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+31153 31148 31150
+A
+12 20
+#31152
+ruby~
+a beautiful ruby~
+A fabulous ruby lies here.~
+~
+8 0 0 0 0 32769 1
+0~ 0~ 0~ 0~
+1 4000 0
+0 0
+reserved~
+0 0
+31153 0 0
+A
+12 10
+#31153
+disc embedded pearl ruby~
+a platinum disc embedded with a pearl and ruby~
+A disc lies here.~
+~
+8 0 0 0 0 0 0
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+31154 31152 31151
+#31154
+platinum disc pearl ruby opal~
+a platium disc embedded with a pearl, ruby, and opal~
+(no description)~
+~
+8 0 0 0 0 1 60
+0~ 0~ 0~ 0~
+2 1200 0
+0 0
+reserved~
+0 0
+31199 31153 31172
+#31160
+marble pedestal~
+a marble pedestal~
+A marble pedestal sits in the center of the chamber.~
+~
+15 0 0 0 0 0 0
+50~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31162
+sapphire~
+a sapphire~
+A beautiful sapphire is here.~
+~
+8 0 0 0 0 1 1
+0~ 0~ 0~ 0~
+1 8000 0
+0 0
+reserved~
+0 0
+0 0 0
+#31163
+stone club~
+a stone club~
+A stone club lies here.~
+~
+5 536870912 0 16384 0 8193 60
+0~ 0~ 0~ 8~
+15 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+18 15
+A
+19 15
+#31170
+emerald~
+an emerald~
+An emerald lies here.~
+~
+8 0 0 0 0 1 1
+0~ 0~ 0~ 0~
+1 8000 0
+0 0
+reserved~
+0 0
+0 0 0
+#31171
+grey portal~
+a grey portal~
+A grey portal hangs in the center of the ring of monoliths.~
+~
+29 0 0 0 0 0 0
+31150~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#31172
+large opal~
+a large opal~
+A large opal shimmers on the ground.~
+~
+8 0 0 0 0 32769 60
+0~ 0~ 0~ 0~
+2 8000 0
+0 0
+reserved~
+0 0
+31154 0 0
+A
+104 -1
+#31190
+shimmering diamond~
+a shimmering diamond~
+A diamond glitters on the ground.~
+~
+8 0 0 0 0 32769 60
+0~ 0~ 0~ 0~
+1 8000 0
+0 0
+reserved~
+0 0
+31199 0 0
+A
+119 -1
+#31199
+elemental amulet~
+the Elemental Amulet~
+A beautiful amulet lies here.~
+~
+8 321 131072 0 0 5 60
+0~ 0~ 0~ 0~
+1 12000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 60
+A
+119 -1
+A
+4 1
+A
+3 1
+A
+31 4
+A
+26 60
+A
+12 60
+A
+18 6
+A
+19 6
+#0
+
+
+
+#ROOMDATA
+#31100
+Entrance to the Elemental Plane of Water~
+~
+~
+You have plunged into cool depths of liquid azure.  The water swirls
+about you calmly, and the entire area is suffused with a soft blue light. 
+You see no sign of either a surface or a bottom, but despite your great
+depth the water is warm, and the pressure light.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 31101
+S
+#31101
+Through the Azure Depths~
+~
+~
+You travel through the water easily, kicking with gentle strokes.  In all
+directions is clear water, fading out to a uniform blue far in the distance.
+Brightly colored fish occasionally happen by, looking like nothing you have
+ever seen in earthly waters.  
+~
+0 268828674 0
+Rd     0
+D0
+~
+~
+0 0 31102
+D1
+~
+~
+0 0 31103
+D2
+~
+~
+0 0 31100
+D3
+~
+~
+0 0 31104
+D4
+~
+~
+0 0 31101
+D5
+~
+~
+0 0 31101
+S
+#31102
+In the Water~
+~
+~
+The infinite ocean depths stretch in all directions, suffused with a soft
+blue light.  The water is warm and calming, and you let the gentle current
+carry you through.  A strong current blocks your way north.  
+~
+0 268828682 8
+Rd     0
+D1
+~
+~
+0 0 31106
+D2
+~
+~
+0 0 31101
+D3
+~
+~
+0 0 31105
+D4
+~
+~
+0 0 31102
+D5
+~
+~
+0 0 31102
+S
+#31103
+The Deep Blue~
+~
+~
+The water continues on and on, intersected at points by strong currents
+and eddies.  To the east is one such current, which is strong enough to
+prevent your travel in that direction.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31106
+D3
+~
+~
+0 0 31101
+S
+#31104
+The Deep Blue Waters~
+~
+~
+The waters continue on and on, with seemingly no end in sight.  A warm
+current enters the area from the west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31105
+D1
+~
+~
+0 0 31101
+D3
+~
+~
+0 0 31108
+S
+#31105
+The Infinite Sea~
+~
+~
+The waters seem to stretch on forever, and a shadow of worry begins to
+gnaw at you; what if you're kept here forever?  
+~
+0 268836866 0
+Rd     0
+D0
+~
+~
+0 0 31105
+D1
+~
+~
+0 0 31102
+D2
+~
+~
+0 0 31104
+D3
+~
+~
+0 0 31105
+D5
+~
+~
+0 0 31110
+S
+#31106
+The Clear Depths~
+~
+~
+You swim easily through the water, and wonder at its warmth and clarity. 
+Occasionally shimmering bubbles rise from the depths, and brightly colored
+fish swim by in rainbow flashes.  In all directions the infinite waters
+stretch.  
+~
+0 268836866 0
+Rd     0
+D2
+~
+~
+0 0 31103
+D3
+~
+~
+0 0 31102
+S
+#31107
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31108
+S
+#31108
+The Turbulent Water~
+~
+~
+The water here is becoming somewhat turbulent.  Currents buffet your
+body, and the visibility diminishes in the churning water.  To the west it
+seems even more violent.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 31117
+D1
+~
+~
+0 0 31104
+D3
+~
+~
+0 0 31109
+S
+#31109
+In an Undersea Maelstrom~
+~
+~
+The waters spins about here, and you struggle to stay upright.  The water
+seems calmer in all other directions but the west, from which direction a
+mighty current pushes you back.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31116
+D1
+~
+~
+0 0 31108
+D4
+~
+~
+0 0 31109
+D5
+~
+~
+0 0 31109
+S
+#31110
+The Warm Depths~
+~
+~
+The water is warm against your skin, and you suddenly notice that none of
+your equipment seems to be suffering from your lengthy immersion.  In all
+directions stretches the crystal blue waters, though strong currents prevent
+your travelling north and west.  
+~
+0 393218 8
+Rd     0
+D1
+~
+~
+0 0 31111
+D2
+~
+~
+0 0 31115
+D4
+~
+~
+0 0 31105
+S
+#31111
+The Deep~
+~
+~
+The properties of the water make it difficult to gauge distance, but
+there seems to be some sort of city floating in the water north of here.  
+~
+0 393216 8
+Rd     0
+D0
+~
+~
+0 0 31113
+D1
+~
+~
+0 0 31112
+D2
+~
+~
+0 0 31114
+D3
+~
+~
+0 0 31110
+S
+#31112
+The Infinite Depths~
+~
+~
+The water seems to go on forever, and all your swimming seems to take you
+nowhere.  
+~
+0 393216 8
+Rd     0
+D3
+~
+~
+0 0 31111
+S
+#31113
+Before the Gates of the Undersea City~
+~
+~
+A strange city constructed out of some bluish substance floats before
+you.  Strange creatures float into and out of the large buildings, and you
+canhear a low murmur.  
+~
+0 4 8
+Rd     0
+D0
+~
+~
+0 0 31118
+D2
+~
+~
+0 0 31111
+S
+#31114
+The Clear Blue Water~
+~
+~
+The water continues on and on.  The current is strong here, and the only
+directions you can travel in are west and north.  
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 31111
+D3
+~
+~
+0 0 31115
+S
+#31115
+Travelling Through Infinity~
+~
+~
+The warm water continues in all directions, seemingly to infinity. 
+Strange shapes glide by in the distance.  
+~
+0 393218 8
+Rd     0
+D0
+~
+~
+0 0 31110
+D1
+~
+~
+0 0 31114
+D2
+~
+~
+0 0 31115
+D3
+~
+~
+0 0 31115
+S
+#31116
+The Crystal Blue Depths~
+~
+~
+The water continues as far as the eye can see in all directions. 
+Occasionally a murky figure swims by, but at such speed you can't tell who,
+or what, it is.  To the south the water seems somewhat turbulent.  A strong
+current below you prevents your travel in that direction.  
+~
+0 393218 8
+Rd     0
+D1
+~
+~
+0 0 31117
+D2
+~
+~
+0 0 31109
+S
+#31117
+The Strong Currents~
+~
+~
+The powerful currents push you around here; you think you can travel west
+or south, but all other directions would require a stronger swimmer than
+you.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31108
+D3
+~
+~
+0 0 31116
+S
+#31118
+The Undersea City~
+~
+~
+Most of the buildings here are roofless, and elemental creatures roam in
+and out of them in a slow underwater dance.  To the north are what appear to
+be the only intact buildings in this place.  
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 31119
+D2
+~
+~
+0 0 31113
+S
+#31119
+The Undersea City~
+~
+~
+At this point there are two huge buildings on either side of you.  To the
+north your way is blocked by a wall of coral.  A bewildering array of
+undersea spirits swirl about you.  Undines, nereids, mermaids, water
+elementals, tritons, sea elves--there seems to be no end to the denizens of
+this watery plane.  
+~
+0 0 8
+Rd     0
+D1
+~
+~
+0 0 31121
+D2
+~
+~
+0 0 31118
+D3
+~
+~
+0 0 31120
+S
+#31120
+A Building~
+~
+~
+You have entered a huge chamber constructed from blue coral.  All about
+you are the denizens of this strange undersea city, swimming in and out
+through the large windows.  
+~
+0 0 8
+Rd     0
+D1
+~
+~
+0 0 31119
+S
+#31121
+A Huge Building~
+~
+~
+For some reason there are very few creatures in this place.  Like the
+other buildings in this city, the walls are constructed of blue coral.  On
+the ground is a strange assortment of objects; statuescovered with
+barnacles.  
+~
+0 8 8
+Rd     0
+D3
+~
+~
+0 0 31119
+S
+#31126
+Entrance to the Elemental Plane of Fire~
+~
+~
+You stand on a vast obsidian plane.  All about you are walls of fierce
+flame, forming a maze of fiery barriers.  Needless to say the heat is
+remarkable, and you can barely breathe.  Behind you to the south is a sheer
+basalt cliff.  
+~
+0 262148 0
+Rd     0
+D0
+~
+~
+0 0 31127
+D1
+~
+~
+0 0 31128
+D3
+~
+~
+0 0 31129
+S
+#31127
+On the Plains of Fire~
+~
+~
+You travel across the black obsidian plains.  Giant crevasses filled with
+flame stretch across the ground in a spiderweb of fire.  The sky is a dull,
+angry red, and the heat is indescribable.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31130
+D1
+~
+~
+0 0 31132
+D2
+~
+~
+0 0 31126
+D3
+~
+~
+0 0 31131
+S
+#31128
+On the Plains of Fire~
+~
+~
+Your way south is blocked by a basalt cliff face, while to the east is an
+enormous wall of angry red flame.  The wall seems to go on forever, and you
+realize that you've entered one of the few areas on the Plane of Fire that
+you can survive on.  Fortunate you are to not have emerged into the fire
+that engulfs most of this place.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31132
+D3
+~
+~
+0 0 31126
+S
+#31129
+The Plains of Fire~
+~
+~
+You way west is blocked by a wall of fire, while to the south is a blank
+basalt cliff face.  The sky is a uniform red, and the heat here is
+incredible.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31131
+D1
+~
+~
+0 0 31126
+S
+#31130
+On the Plains of Fire~
+~
+~
+Giant walls of flame to the west and east approach each other to the
+north, where a narrow passage between them seems to allow access.  The heat
+here is incredible.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31135
+D1
+~
+~
+0 0 31134
+D2
+~
+~
+0 0 31127
+D3
+~
+~
+0 0 31133
+S
+#31131
+On the Plains of Fire~
+~
+~
+To the west is an enormous wall of roaring flame that erupts from a
+crevasse.  Obviously you cannot go that way.  Bright red lizard-like
+creatures scurry about underfoot, their eyes glowing red.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 31133
+D1
+~
+~
+0 0 31127
+D2
+~
+~
+0 0 31129
+S
+#31132
+On the Plains of Fire~
+~
+~
+You travel across the gleaming obsidian plains.  To the east your way is
+blocked by a fierce wall of flame that erupts hundreds of feet into the air.
+The heat is astounding, and you have trouble breathing.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31134
+D2
+~
+~
+0 0 31128
+D3
+~
+~
+0 0 31127
+S
+#31133
+On the Plains of Fire~
+~
+~
+The giant wall of flame to the west prevents your going that way, while
+to the north your travel is blocked by a sheer cliff of obsidian.  
+~
+0 393218 0
+Rd     0
+D1
+~
+~
+0 0 31130
+D2
+~
+~
+0 0 31131
+S
+#31134
+On the Plains of Fire~
+~
+~
+Your way to the north and east is blocked by a wall of fire which curves
+around the plain.  In all other directions the scorched obsidian continues. 
+~
+0 393216 0
+Rd     0
+D2
+~
+~
+0 0 31132
+D3
+~
+~
+0 0 31130
+S
+#31135
+A Passage Between the Flame Walls~
+~
+~
+The heat, nearly unbearable before, has increased twofold here.  Great
+walls of flame are a few feet away from you on either side, and you realize
+that you should leave this place as quickly as possible.  To the north and
+south the flame walls separate farther.  The heat is so intense that you
+cannot breathe.  
+~
+0 0 8
+Rd     0
+D0
+~
+~
+0 0 31136
+D2
+~
+~
+0 0 31130
+S
+#31136
+The Lava Fields~
+~
+~
+Your way is now blocked by a bewildering series of rivers of lava.  At
+this point one of them blocks your passage west and north, but you can
+travel east around it.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 31137
+D2
+~
+~
+0 0 31135
+S
+#31137
+The Lava Fields~
+~
+~
+Serpentine rivers of lava twist and turn around you, blocking your way to
+the east, while the flame wall to the south prevents your travelling in that
+direction.  To the north a perilous path snakes around the lava.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 31138
+D3
+~
+~
+0 0 31136
+S
+#31138
+The Lava Fields~
+~
+~
+The path through the lava twists and turns, heading west and south at
+this point.  To the north is a particularly wide river of lava, upon which
+you see strange elemental creatures swimming through the liquid heat.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31137
+D3
+~
+~
+0 0 31139
+S
+#31139
+The Lava Fields~
+~
+~
+You carefully maneuver around channels filled with lava.  To the north
+you can make out the edge of the lava field.  In all other directions the
+web of lava-filled rivers stretches.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31140
+D1
+~
+~
+0 0 31138
+S
+#31140
+The Northern Edge of the Field~
+~
+~
+You have reached the northern edge of the lava field.  To the north looms
+a massive granite cliff, broken by a narrow valley, while in all other
+directions the lava field stretches.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31141
+D2
+~
+~
+0 0 31139
+S
+#31141
+The Valley of Flames~
+~
+~
+This narrow valley connects the lava fields to the south with what
+appears to be some sort of forest to the north.  The obsidian walls radiate
+intense heat, and the sweat runs in rivulets off your body.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31142
+D2
+~
+~
+0 0 31140
+S
+#31142
+The Valley of Flames~
+~
+~
+To the north the valley opens up into what appears to be some sort of
+forest!  Strange, you would never believe that things could grow in this
+waterless place.  
+~
+0 393220 0
+Rd     0
+D0
+~
+~
+0 0 31143
+D2
+~
+~
+0 0 31141
+S
+#31143
+Among the Fire Trees~
+~
+~
+You have entered what must be one of the multiverse's most unusual sites;
+a vast forest of red trees shooting up from the obsidian floor.  The trees
+are red and hot to the touch, and their canopy is made of bright orange
+leaves.  Apparently they can thrive in this harsh environment.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31144
+D1
+~
+~
+0 0 31145
+D2
+~
+~
+0 0 31142
+D3
+~
+~
+0 0 31146
+S
+#31144
+Among the Fire Trees~
+~
+~
+You trudge on through the surreal forest, the bright red trunks of the
+flame trees extending a hundred feet into the air.  Strange red birds made
+of living fire streak by overhead, filling the air with their crackling and
+hissing songs.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 31148
+D2
+~
+~
+0 0 31143
+D3
+~
+~
+0 0 31147
+S
+#31145
+Among the Fire Trees~
+~
+~
+The fire trees loom above you, red sap dripping from their burning
+trunks.  You see something quite unusual here; a strange blue sphere
+constructed of energy.  Itrests on the ground, creating a dome, and you
+think you can make out shapes moving inside it...  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31148
+D3
+~
+~
+0 0 31143
+S
+#31146
+Among the Fire Trees~
+~
+~
+The trees become too dense to the west to pass.  The heat here is
+tremendous, as each tree gives off as much as a bonfire.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31147
+D1
+~
+~
+0 0 31143
+S
+#31147
+Among the Fire Trees~
+~
+~
+You travel on through the red forest.  To the north and west the trees
+get too dense to pass.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31144
+D2
+~
+~
+0 0 31146
+S
+#31148
+Among the Fire Trees~
+~
+~
+To the east the trees become too thick to pass.  The rust-colored soil
+here has been churned by the passage of what appear to be human footprints! 
+Perhaps you are not the only traveller here...  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31145
+D3
+~
+~
+0 0 31144
+S
+#31149
+A Sanctuary~
+~
+~
+You've finally escaped the terrible heat, thank the gods!  The inside of
+the dome is cool and moist, and resembles a regular forest.  A spring of
+fresh water erupts from the ground, creating a crystal pool on the forest
+floor.  Who could have created this place in the middle of the Plane of
+Fire?  You think you may find out soon; you suddenly realize you're not
+alone.  
+~
+0 2098176 0
+Rd     0
+D0
+~
+~
+0 0 31145
+D1
+~
+~
+0 0 31145
+D2
+~
+~
+0 0 31145
+D3
+~
+~
+0 0 31145
+S
+#31150
+The Elemental Nexus~
+~
+~
+You stand in the center of a vast chamber of such bizarre majesty that
+you wonder if may be dreaming.  The ground underfoot is an ancient marble of
+smoky grey and blue, and the ceilingis covered with vast, colorful frescos
+depicting swirling clouds of flame and vapor.  Instead of walls the chamber
+is ringed with moving swirls of energy.  To the north this takes the form of
+a swirling grey mass of clouds.  To the west is a wall of fierce flame.  To
+the east is a shifting field of aqua and white.  To the south is shifting
+earth.  
+~
+0 262152 0
+Rd     0
+D1
+~
+~
+0 0 31100
+D2
+~
+~
+0 0 31151
+D3
+~
+~
+0 0 31126
+S
+#31151
+The Elemental Plane of Earth~
+~
+~
+You stand at the beginning of a vast tunnel.  Behind you to the south it
+has seemingly collapsed, and the thick rubble prevents you from going in
+that direction.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31152
+S
+#31152
+A Vast Tunnel~
+~
+~
+The tunnel continues to the north and south.  While only 30 feet or so
+across, the ceiling is several hundred feet above you.  You remember from
+your studies that this elemental plane is across, the ceiling is several
+hundred feet above you.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31153
+D2
+~
+~
+0 0 31151
+S
+#31153
+A Vast Tunnel~
+~
+~
+The enormous tunnel runs north and south through thick stone.  The ground
+is strangely flat, as if it had been carved.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31154
+D2
+~
+~
+0 0 31152
+S
+#31154
+Before a Bridge~
+~
+~
+A narrow stone bridge stretches north over a vast chasm.  You're not sure
+if such a thin thread of stone can support you, but you see little choice.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31155
+D2
+~
+~
+0 0 31153
+S
+#31155
+On the Bridge~
+~
+~
+The crude stone bridge arches over unfathomable depths.  You would NOT
+want to lose your footing here; you'd probably fall for eternity.  
+~
+0 393220 0
+Rd     0
+D0
+~
+~
+0 0 31156
+D2
+~
+~
+0 0 31154
+S
+#31156
+On the Bridge~
+~
+~
+The bridge approaches one side of the chasm to the north.  Strange shapes
+seem to lumber in the darkness in that direction.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31157
+D2
+~
+~
+0 0 31155
+S
+#31157
+A Tunnel~
+~
+~
+You stand once again in a tunnel.  The air is pervaded by a strong,
+earthy smell, and you can almost feel the infinite depths pushing down on
+you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31158
+D2
+~
+~
+0 0 31156
+S
+#31158
+An Intersection of Tunnels~
+~
+~
+Here the large north-south tunnel is intersected by another one going
+east and west.  The stone walls seem to press down on you, and you start
+feeling claustrophobic.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31159
+D1
+~
+~
+0 0 31162
+D2
+~
+~
+0 0 31157
+D3
+~
+~
+0 0 31161
+S
+#31159
+A Tunnel~
+~
+~
+You are travelling along one of the endless tunnels that crisscross this
+plane.  The floor is strangely smooth and flat, as if it had been carved out
+of the earth to be a road.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31160
+D2
+~
+~
+0 0 31158
+S
+#31160
+A Dead End~
+~
+~
+The tunnel comes to a halt at this point, and your way is blocked by
+solid rock.  The only way you can go is back to the south.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31159
+S
+#31161
+A Narrow Tunnel~
+~
+~
+This narrow tunnel runs east and west through the gloom.  A strange
+earthy smell assails your nostrils, and you feel the weight of infinite
+stone pressing down upon you.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 31158
+D3
+~
+~
+0 0 31173
+S
+#31162
+A Tunnel~
+~
+~
+This tunnel runs from west to east, and seems to narrow in the latter
+direction.  Far away you hear a deep roaring sound, and dust frequently
+trickles down from the jagged ceiling.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 31163
+D3
+~
+~
+0 0 31158
+S
+#31163
+A Tunnel~
+~
+~
+The tunnel has narrowed considerably, and you can no longer go east. 
+However, a crack in the floor might be large enough for you to fit into.  
+~
+0 131072 0
+Rd     0
+D3
+~
+~
+0 0 31162
+D5
+~
+~
+0 0 31164
+S
+#31164
+A Crack~
+~
+~
+This jagged crack leads downwards through the infinite earth.  Veins of
+precious metal run along the walls around you; if you only had the time and
+equipment you could probably make millions here.  
+~
+0 393224 0
+Rd     0
+D3
+~
+~
+0 0 31165
+D4
+~
+~
+0 0 31163
+S
+#31165
+A Crack~
+~
+~
+The crack twists and turns as it descends through the earth.  From below
+you think you make out something unusual for these environs; light.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 31164
+D5
+~
+~
+0 0 31166
+S
+#31166
+An Enormous Chamber~
+~
+~
+You have entered an enormous chamber deep within the earth.  It extends
+to the north.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31167
+D4
+~
+~
+0 0 31165
+S
+#31167
+An Enormous Chamber~
+~
+~
+You stand in an enormous chamber deep within the primeval stone.  Strange
+luminesce moss grows along the ceiling, providing some measure of light.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31168
+D1
+~
+~
+0 0 31169
+D2
+~
+~
+0 0 31166
+S
+#31168
+An Enormous Chamber~
+~
+~
+You are near the chamber's northern edge, where the light is somewhat
+stronger.  From far above you you hear a sound reminiscent of thunder, and
+the walls seem to shake slightly.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31171
+D1
+~
+~
+0 0 31170
+D2
+~
+~
+0 0 31167
+S
+#31169
+An Enormous Chamber~
+~
+~
+As you approach the eastern edge of the chamber, you notice rich veins of
+gold and platinum swirling through the stone walls.  It truly is wealth
+enough to sate the greediest Dwarf.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31170
+D3
+~
+~
+0 0 31167
+S
+#31170
+An Enormous Chamber~
+~
+~
+The floor here is covered with small pools of mineral-rich water, formed
+by the slow dripping from the giant stalactites above you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31172
+D2
+~
+~
+0 0 31169
+D3
+~
+~
+0 0 31168
+S
+#31171
+An Enormous Chamber~
+~
+~
+The chamber ends to the north at a stone wall.  In this corner of the
+chamber someone has set up a ring of smoothly carved monoliths.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 31172
+D2
+~
+~
+0 0 31168
+S
+#31172
+An Enormous Chamber~
+~
+~
+The walls and ceiling are almost covered completely by the luminescent
+moss that lights this chamber.  It is truly of unearthly beauty.  
+~
+0 393216 0
+Rd     0
+D2
+~
+~
+0 0 31170
+D3
+~
+~
+0 0 31171
+S
+#31173
+A Narrow Tunnel~
+~
+~
+This tunnel runs between massive ramparts of stone.  The air is cool and
+damp, and the smell of earth is very strong.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 31161
+D3
+~
+~
+0 0 31174
+S
+#31174
+A Narrow Tunnel~
+~
+~
+You continue on through one of the endless tunnels that run through the
+infinite earth of this Plane.  You contemplate what it must be like to
+become lost here, and spend eternity trudging through infinite tunnels.  
+~
+0 393216 0
+Rd     0
+D1
+~
+~
+0 0 31173
+D3
+~
+~
+0 0 31174
+S
+#31175
+Entrance to the Elemental Plane of Air~
+~
+~
+~
+0 33947648 0
+Rd     0
+D0
+~
+~
+0 0 31179
+D3
+~
+~
+0 0 31178
+D5
+~
+~
+0 0 31176
+S
+#31176
+In the Air~
+~
+~
+~
+0 33554432 0
+Rd     0
+D4
+~
+~
+0 0 31175
+D5
+~
+~
+0 0 31177
+S
+#31177
+A Cloudtop~
+~
+~
+You hit into the top of a cloud.  Strangely enough it seems solid, and
+strong enough to support you.  The white vapor is soft and springy beneath
+your feet.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31182
+D1
+~
+~
+0 0 31183
+D2
+~
+~
+0 0 31184
+D3
+~
+~
+0 0 31181
+D4
+~
+~
+0 0 31176
+S
+#31178
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31175
+D3
+~
+~
+0 0 31180
+S
+#31179
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31175
+S
+#31180
+A cloudtop~
+~
+~
+The cloud comes to an end here, at a roaring wall of wind.  The only
+directions you can move in are east and south.  
+~
+0 401408 0
+Rd     0
+D1
+~
+~
+0 0 31178
+S
+#31181
+A Cloudtop~
+~
+~
+You are travelling along the top of a cloud, the soft, springy substance
+of the cloud feeling cool and damp beneath your feet.  Mighty currents of
+wind whirl and collide above you.  
+~
+0 401408 0
+Rd     0
+D0
+~
+~
+0 0 31187
+D1
+~
+~
+0 0 31177
+D2
+~
+~
+0 0 31185
+S
+#31182
+A Cloudtop~
+~
+~
+You walk across the grey and white cloud, the clinging mist obscuring
+your feet.  Above you the strong currents of wind block any air travel, even
+if you had the proper spells.  
+~
+0 401408 0
+Rd     0
+D1
+~
+~
+0 0 31188
+D2
+~
+~
+0 0 31177
+D3
+~
+~
+0 0 31187
+S
+#31183
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31188
+D2
+~
+~
+0 0 31186
+D3
+~
+~
+0 0 31177
+S
+#31184
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31177
+D1
+~
+~
+0 0 31186
+D3
+~
+~
+0 0 31185
+S
+#31185
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31181
+D1
+~
+~
+0 0 31184
+S
+#31186
+A Cloudtop~
+~
+~
+A heavy mist hangs over the white, springy ground here.  Above you mighty
+air currents roar; it would be suicide to fly up there, even with the
+appropriate spells.  
+~
+0 393216 0
+Rd     0
+D0
+~
+~
+0 0 31183
+D3
+~
+~
+0 0 31184
+S
+#31187
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31182
+D2
+~
+~
+0 0 31181
+S
+#31188
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31183
+D3
+~
+~
+0 0 31182
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 31102 2 31101
+M 0 31102 2 31102
+M 0 31120 1 31114
+M 0 31122 1 31119
+E 0 31122 0 20
+M 0 31102 2 31119
+M 0 31119 1 31120
+O 0 31121 0 31121
+M 0 31121 1 31121
+M 0 31118 2 31130
+M 0 31118 2 31133
+M 0 31135 2 31137
+M 0 31118 4 31138
+M 0 31139 1 31139
+M 0 31145 1 31144
+O 0 31124 0 31144
+O 0 31145 0 31145
+O 0 31142 0 31147
+P 0 31143 0 31142
+P 0 31143 0 31142
+P 0 31143 0 31142
+O 0 31149 0 31149
+M 0 31149 1 31149
+O 0 31160 0 31150
+P 0 31150 0 31160
+M 0 31161 3 31152
+M 0 31161 1 31153
+M 0 31162 1 31155
+M 0 31152 1 31159
+G 0 31170 0
+G 0 31162 0
+E 0 31163 0 20
+M 0 31161 2 31161
+M 0 31170 1 31170
+O 0 31171 0 31171
+M 0 31171 1 31171
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

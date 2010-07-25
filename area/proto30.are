@@ -1,0 +1,1511 @@
+#AREADATA
+Name        New area~
+Builders    Aesthir~
+VNUMs       31800 31899
+Security    1
+Recall      1
+Flags       16
+Version     107
+Creator     Aesthir~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMDATA
+#31800
+Lower Steps of a Large Castle~
+~
+~
+Large steps lead up to the huge double doors towering in front of you. 
+Marble dragon statues are perched on both sides of the stairs.  Red dragons
+on both ledges stare at you with glowing eyes, following your every
+movement.  
+~
+0 0 3
+Rd     0
+D0
+~
+~
+0 0 31801
+S
+#31801
+Before a large door~
+~
+~
+The door that stands before you is very large, big enough for a dragon to
+walk through comfortably.  Heads of dragons are door knockers that hang from
+each door.  Both of the dragon heads are dripping blood from their teeth to
+the stairs below.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 31802
+D2
+~
+~
+0 0 31800
+S
+#31802
+Just inside the large doors~
+~
+~
+Magnificent pictures of dragons run up the walls and onto the ceiling of
+this arched foyer.  The pictures tell stories of dragon wars all the evil
+dragons winning their wars.  Many pillars with engravings, runes and ancient
+markings fill the large room.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31811
+D1
+~
+~
+0 0 31803
+D2
+~
+~
+3 0 31801
+D3
+~
+~
+0 0 31807
+S
+#31803
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31812
+D1
+~
+~
+0 0 31804
+D3
+~
+~
+0 0 31802
+S
+#31804
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31813
+D1
+~
+~
+0 0 31805
+D3
+~
+~
+0 0 31803
+S
+#31805
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31814
+D3
+~
+~
+0 0 31804
+S
+#31806
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31809
+D1
+~
+~
+0 0 31807
+D3
+~
+~
+0 0 31808
+S
+#31807
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31810
+D1
+~
+~
+0 0 31802
+D3
+~
+~
+0 0 31806
+S
+#31808
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31815
+D1
+~
+~
+0 0 31806
+S
+#31809
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31818
+D1
+~
+~
+0 0 31810
+D2
+~
+~
+0 0 31806
+D3
+~
+~
+0 0 31815
+S
+#31810
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31819
+D1
+~
+~
+0 0 31811
+D2
+~
+~
+0 0 31807
+D3
+~
+~
+0 0 31809
+S
+#31811
+Center of Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31820
+D1
+~
+~
+0 0 31812
+D2
+~
+~
+0 0 31802
+D3
+~
+~
+0 0 31810
+S
+#31812
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31821
+D1
+~
+~
+0 0 31813
+D2
+~
+~
+0 0 31803
+D3
+~
+~
+0 0 31811
+S
+#31813
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31822
+D1
+~
+~
+0 0 31814
+D2
+~
+~
+0 0 31804
+D3
+~
+~
+0 0 31812
+S
+#31814
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31823
+D2
+~
+~
+0 0 31805
+D3
+~
+~
+0 0 31813
+S
+#31815
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31817
+D1
+~
+~
+0 0 31809
+D2
+~
+~
+0 0 31808
+S
+#31816
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31817
+S
+#31817
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31818
+D2
+~
+~
+0 0 31815
+D3
+~
+~
+0 0 31816
+S
+#31818
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31819
+D2
+~
+~
+0 0 31809
+D3
+~
+~
+0 0 31817
+S
+#31819
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31820
+D2
+~
+~
+0 0 31810
+D3
+~
+~
+0 0 31818
+S
+#31820
+Center of Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31825
+D1
+~
+~
+0 0 31821
+D2
+~
+~
+0 0 31811
+D3
+~
+~
+0 0 31819
+S
+#31821
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31822
+D2
+~
+~
+0 0 31812
+D3
+~
+~
+0 0 31820
+S
+#31822
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31823
+D2
+~
+~
+0 0 31813
+D3
+~
+~
+0 0 31821
+S
+#31823
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31824
+D2
+~
+~
+0 0 31814
+D3
+~
+~
+0 0 31822
+S
+#31824
+Castle Lobby~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 31823
+S
+#31825
+Hall Entrance~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31829
+D2
+~
+~
+0 0 31820
+S
+#31826
+Halls of Discipline~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31833
+D1
+~
+~
+0 0 31827
+S
+#31827
+Halls of Discipline~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31834
+D1
+~
+~
+0 0 31828
+D3
+~
+~
+0 0 31826
+S
+#31828
+Halls of Discipline~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31829
+D3
+~
+~
+0 0 31827
+S
+#31829
+Halls of Discipline~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31830
+D2
+~
+~
+0 0 31825
+D3
+~
+~
+0 0 31828
+S
+#31830
+Halls of Discipline~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31831
+D3
+~
+~
+0 0 31829
+S
+#31831
+Halls of Discipline~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31835
+D1
+~
+~
+0 0 31832
+D3
+~
+~
+0 0 31830
+S
+#31832
+Halls of Discipline~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31836
+D3
+~
+~
+0 0 31831
+S
+#31833
+Halls of Might~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31837
+D1
+~
+~
+0 0 31834
+D2
+~
+~
+0 0 31826
+S
+#31834
+Halls of Might~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31838
+D2
+~
+~
+0 0 31827
+D3
+~
+~
+0 0 31833
+S
+#31835
+Halls of Doom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31839
+D1
+~
+~
+0 0 31836
+D2
+~
+~
+0 0 31831
+S
+#31836
+Halls of Doom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31840
+D2
+~
+~
+0 0 31832
+D3
+~
+~
+0 0 31835
+S
+#31837
+Halls of Might~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31841
+D1
+~
+~
+0 0 31838
+D2
+~
+~
+0 0 31833
+S
+#31838
+Halls of Might~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31842
+D2
+~
+~
+0 0 31834
+D3
+~
+~
+0 0 31837
+S
+#31839
+Halls of Doom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31846
+D1
+~
+~
+0 0 31840
+D2
+~
+~
+0 0 31835
+S
+#31840
+Halls of Doom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31847
+D2
+~
+~
+0 0 31836
+D3
+~
+~
+0 0 31839
+S
+#31841
+Halls of Might~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31848
+D1
+~
+~
+0 0 31842
+D2
+~
+~
+0 0 31837
+S
+#31842
+Halls of Might~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31843
+D2
+~
+~
+0 0 31838
+D3
+~
+~
+0 0 31841
+S
+#31843
+Hall of Despair~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31844
+D3
+~
+~
+0 0 31842
+S
+#31844
+Hall of Despair~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31845
+D2
+~
+~
+118 0 31857
+D3
+~
+~
+0 0 31843
+S
+#31845
+Hall of Despair~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31846
+D3
+~
+~
+0 0 31844
+S
+#31846
+Hall of Doom~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31847
+D2
+~
+~
+0 0 31839
+D3
+~
+~
+0 0 31845
+S
+#31847
+Halls of Doom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31849
+D2
+~
+~
+0 0 31840
+D3
+~
+~
+0 0 31846
+S
+#31848
+Halls of Might~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31850
+D2
+~
+~
+0 0 31841
+S
+#31849
+Halls of Doom~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31856
+D2
+~
+~
+0 0 31847
+S
+#31850
+Halls of Might~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31851
+D2
+~
+~
+0 0 31848
+S
+#31851
+Hall of Power~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31852
+D3
+~
+~
+0 0 31850
+S
+#31852
+Hall of Power~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31853
+D3
+~
+~
+0 0 31851
+S
+#31853
+Hall of Power~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+3 0 31858
+D1
+~
+~
+0 0 31854
+D3
+~
+~
+0 0 31852
+S
+#31854
+Hall of Power~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31855
+D3
+~
+~
+0 0 31853
+S
+#31855
+Hall of Power~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31856
+D3
+~
+~
+0 0 31854
+S
+#31856
+Halls of Doom~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31849
+D3
+~
+~
+0 0 31855
+S
+#31857
+Huffaker's Private Quarters~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+118 0 31844
+S
+#31858
+Entrance to Guards Room~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31860
+D2
+~
+~
+3 0 31853
+S
+#31859
+Guards Room~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31862
+D1
+~
+~
+0 0 31860
+S
+#31860
+Guards Room~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31863
+D1
+~
+~
+0 0 31861
+D2
+~
+~
+0 0 31858
+D3
+~
+~
+0 0 31859
+S
+#31861
+Guards Room~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31864
+D3
+~
+~
+0 0 31860
+S
+#31862
+Guards Room~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31863
+D2
+~
+~
+0 0 31859
+S
+#31863
+Guards Room~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+118 0 31865
+D1
+~
+~
+0 0 31864
+D2
+~
+~
+0 0 31860
+D3
+~
+~
+0 0 31862
+S
+#31864
+Guards Room~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31861
+D3
+~
+~
+0 0 31863
+S
+#31865
+Towers Entrance~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31867
+D2
+~
+~
+118 0 31863
+S
+#31866
+Entrance to the Holy Tower~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31869
+D1
+~
+~
+0 0 31867
+S
+#31867
+Room of Choice~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 31868
+D2
+~
+~
+0 0 31865
+D3
+~
+~
+0 0 31866
+S
+#31868
+Entrance to the UnHoly Tower~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 31870
+D3
+~
+~
+0 0 31867
+S
+#31869
+Holy Tower level One~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31866
+D4
+~
+~
+0 0 31871
+S
+#31870
+UnHoly Tower level One~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 31868
+S
+#31871
+Holy Tower level Two~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31873
+D5
+~
+~
+0 0 31869
+S
+#31873
+Holy Tower level Three~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31875
+D5
+~
+~
+0 0 31871
+S
+#31875
+Holy Tower level Four~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31877
+D5
+~
+~
+0 0 31873
+S
+#31877
+Holy Tower level Five~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31879
+D5
+~
+~
+0 0 31875
+S
+#31879
+~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31881
+D5
+~
+~
+0 0 31877
+S
+#31881
+~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31883
+D5
+~
+~
+0 0 31879
+S
+#31883
+~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31885
+D5
+~
+~
+0 0 31881
+S
+#31885
+~
+~
+~
+~
+0 0 0
+Rd     0
+D4
+~
+~
+0 0 31887
+D5
+~
+~
+0 0 31883
+S
+#31887
+~
+~
+~
+~
+0 0 0
+Rd     0
+D5
+~
+~
+0 0 31885
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

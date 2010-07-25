@@ -1,0 +1,3375 @@
+#AREADATA
+Name        New area~
+Builders    Darkkar~
+VNUMs       5900 5999
+Security    100
+Recall      1
+Flags       16
+Version     107
+Creator     Darkkar~
+Llevel      0
+Ulevel      0
+End
+
+
+
+#MOBILES
+#5900
+angel olympos~
+Angel of Olympos~
+Angel of Olympos is here, guarding the entrance.
+~
+The angel stand still before the gates.  He is wearing white robes and is
+wielding a strange sword.  You wonder if he has been always been guarding
+the entrance here.  
+~
+67 168296656 294964 24576 0 1000 S
+300 1 600 600 0 50000d0+0 0d0+0
+2800 0 0
+0 0 1
+323583 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+bow
+say Welcome to Olympos $n, to land of the Gods.
+say If you wish to &Renter&W, then say so.
+say If not, say so.
+endif
+~
+>fight_prog 15~
+quickburst 'chain lightning'
+mpechoat $n &YLightning strikes down at you!
+~
+>fight_prog 30~
+say Take this you..
+soul $n
+~
+>rand_prog 5~
+rage
+~
+>rand_prog 5~
+~
+>speech_prog wish do enter yes~
+nod $n
+mpechoat $n &G$I sends a swirling vortex to transport you.
+say Done.
+mptransfer $n 5906
+~
+>speech_prog no not dont~
+if ispc($n) == 1
+growl
+say Then leave...
+mpechoat $n &OYou find yourself in a sandstorm..
+mptransfer $n 25002
+mpecho &O$I summons a sandstorm which carries $n away.
+endif
+~
+|
+#5901
+iris~
+Iris~
+Iris, the messenger of the gods, stands here, waiting for a message to carry.
+~
+Iris is a young woman, dressed in a winged tunic that hangs down to her
+knees.  She looks quick and fast, both necessary in her duties.  
+~
+67 33554552 32820 0 0 0 S
+105 1 200 210 0 20000d0+0 0d0+0
+1050 0 0
+0 0 2
+2051 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if sex($n) == 2
+say Hi Lady $n.
+break
+else
+say Is it you $n?
+endif
+endif
+~
+>rand_prog 15~
+weap
+~
+>fight_prog 10~
+mpechoat $n $I rises her voice at you..
+shriek $n
+~
+>fight_prog 25~
+quickburst 'winters chill'
+mpechoat $n &CYou feel suddenly extremly cold.
+~
+>speech_prog yes~
+smile
+say Good.. you hungry, want a pie?
+~
+>speech_prog no~
+hmm
+say Ok.. I'm not gonna play hide and seek with you.
+smirk
+~
+>speech_prog pie~
+grin
+say Try this, they are really tasty.
+mpoload 5927
+give pie $n
+~
+|
+#5902
+aphrodite~
+Aphrodite~
+Aphrodite, the goddess of love, is standing here.
+~
+This is the most beautiful woman you have ever seen.  She is wearing a
+very close fitting dress, and as you look into her eyes you feel like
+melting into a lump of butter.  
+~
+67 16384 294928 0 0 390 S
+105 1 200 200 0 17000d0+0 0d0+0
+1050 0 0
+0 0 2
+2051 0 0
+>all_greet_prog 100~
+emote raises her eyes.
+look $n
+say Hello, $n.
+emote looks into her mirror again.
+~
+>rand_prog 5~
+emote checks her hair and makeup.
+say Mmm.. I sure do look good.
+smile
+~
+>fight_prog 15~
+mpechoat $n &z$I bends the light around you with her mirror.
+c 'bend light'
+~
+>fight_prog 20~
+mpechoat $n &C$I calls the thunder to strike you.
+c 'thunder strike'
+~
+>rand_prog 5~
+c 'fireshield'
+~
+>rand_prog 5~
+c 'iceshield'
+~
+>rand_prog 5~
+c 'golden armor'
+~
+>rand_prog 5~
+c 'shockshield'
+~
+>speech_prog hi hello hey greetings~
+emote looks at you.
+say Hi.. have you concidered changing your
+say hair.. trust me, I'm good at this..
+smile
+~
+>speech_prog yes~
+say Good, because it looks awful right now.
+~
+>speech_prog no~
+say Well you should, honestly.
+emote takes a good look at you.
+say And dye it white.. that would suit you.
+~
+>fight_prog 15~
+mpechoat $n &Y$I uses her mirror to reflect a blinding light at you.
+c 'dancing lights'
+~
+|
+#5903
+hermes~
+Hermes~
+Hermes, the god of shepherds, is standing here
+~
+Hermes is a teenager, and has very odd clothing.  He is only wearing a
+pair of boots, and a tunic that fall to his thighs.  He looks very fast, and
+clever.  
+~
+67 192 262192 0 0 0 S
+106 1 225 225 0 25000d0+0 0d0+0
+1060 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+say Welcome traveller.
+~
+>speech_prog hi hello hey~
+smile
+say Would you like me to show you around here?
+~
+>speech_prog yes~
+say Sorry, too busy.
+emote continues doing nothing.
+~
+>fight_prog 25~
+mpechoat $n &B$I speeds up and jumps at you.
+slam $n
+~
+>fight_prog 20~
+mpechoat $n &C$I throws a snowball at you.
+c 'iceball' $n
+~
+|
+#5904
+athena~
+Athena~
+Athena, the goddess of wisdom, is standing here.
+~
+Athena is possibly the wisest of the gods, but is also one of the most
+warlike.  She is full of common sense, and can be counted on to not make a
+rash move.  
+~
+67 67633216 262160 0 0 0 S
+107 1 250 250 0 20000d0+0 0d0+0
+1070 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+look $n
+say Good day, $n.
+~
+>speech_prog hi hello hey~
+say Hello there. Please, can you keep little
+say bit quieter.. I got to plan some war
+say strategies.
+nod
+~
+>rand_prog 5~
+emote polishes her spear.
+weapon
+~
+>rand_prog 5~
+c 'iceshield'
+~
+>rand_prog 5~
+c 'golden armor'
+~
+>rand_prog 5~
+c 'holy strength'
+~
+>fight_prog 20~
+mpechoat $n &P$I assaults you with her spear.
+stun $n
+stun $n
+~
+>fight_prog 14~
+mpechoat $n &z$I throws several sharp daggers at you.
+multiburst 'daggers of pain' 'daggers of pain'
+~
+>fight_prog 25~
+mpechoat $n &Y$I utters something to herself and the room is filled with cold.
+quickburst 'cone of frost'
+~
+|
+#5905
+hestia~
+Hestia~
+Hestia, goddess of the hearth, stands here.
+~
+Hestia is a motherly, if also young, woman dressed in the dress of a
+Graecian matron.  She stands at the fire, cooking something.  
+~
+67 540800 32784 0 0 0 S
+108 1 200 200 0 25000d0+0 0d0+0
+1080 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+say Good day $n. I hope you like here.
+smile
+~
+>speech_prog do yes uhuhh~
+say That is good indeed.
+pet $n
+~
+>speech_prog no~
+hmm
+say Well... leave then.
+~
+>rand_prog 5~
+c 'iceshield'
+~
+>rand_prog 5~
+c 'fireshield'
+~
+>fight_prog 15~
+mpechoat $n &C$I utters the magic words and everything around you starts to disrupt.
+c 'disrupt'
+~
+>fight_prog 20~
+mpechoat $n &P$I sweeps at you with her long fingernails.
+claw
+claw
+claw
+~
+|
+#5906
+helios~
+Helios~
+Helios looks like he has nothing to do.
+~
+Helios is a young man.  He has white beard and brown eyes..  From the way
+he's handling the weapon you notice that he's left-handed.  He has one of
+those weird swords too.  
+~
+67 67108992 48 134217728 0 0 S
+106 1 200 200 0 19000d0+0 0d0+0
+1060 0 0
+0 0 1
+2051 0 0
+>all_greet_prog 100~
+say Welcome $n.
+~
+>fight_prog 35~
+dirt $n
+~
+>fight_prog 20~
+mpecho &P$I does a powerful kick.
+backkick $n
+~
+>rand_prog 30~
+weap
+~
+>rand_prog 15~
+c 'heal'
+~
+>rand_prog 5~
+say Lalala... I'm bored, I hope Zeus decides
+say to travel somewhere soon.
+~
+>speech_prog hi hello hey~
+if name($n) == Darkkar
+grin
+say Hi Darkkar, at last we meet again.
+wink $n
+else
+yawn
+say Hi there, $n, how's it going?
+endif
+~
+|
+#5907
+Assurpanipal~
+Assurpanipal~
+A man stands at the fountain, healing people who need it.
+~
+This man heals for money.
+~
+67 201343168 262160 8192 1 390 S
+300 1 500 500 0 100000d0+0 0d0+0
+2300 0 0
+0 0 1
+2051 0 0
+>speech_prog commands~
+mpechoat $n Cost    Spell           Command
+mpechoat $n ----    -----           -------
+ 
+mpechoat $n 75000   Healing Hands   Heal
+mpechoat $n 5000    Cure Poison     Cure
+mpechoat $n 15000   Cure Critical   Critic
+mpechoat $n 10000   Gianth Strenght Giant
+mpechoat $n 10000   Fly Spell       Fly
+mpechoat $n 0       Resurrection    Resu
+~
+>speech_prog heal~
+if goldamt($n) > 75000
+mpforce $n wake
+mpforce $n give 75000 coins assurpanipal
+say I healed you.
+c 'healing hands' $n
+break
+else
+say You don't have enough gold.
+endif
+~
+>speech_prog cure~
+if goldamt($n) > 4999
+mpforce $n wake
+mpforce $n give 5000 coins assurpanipal
+say You are no loger affected by poison.
+c 'cure poison' $n
+break
+else
+say You don't have enough gold.
+endif
+~
+>speech_prog critic~
+if goldamt($n) > 14999
+mpforce $n wake
+mpforce $n give 15000 coins assurpanipal
+say You are now more healthy.
+c 'cure critical' $n
+break
+else
+say You don't have enough gold.
+endif
+~
+>speech_prog fly~
+if goldamt($n) > 9999
+mpforce $n wake
+mpforce $n give 10000 coins assurpanipal
+say You are now able to fly.
+c 'fly' $n
+break
+else
+say You don't have enough gold.
+endif
+~
+>speech_prog giant~
+if goldamt($n) > 9999
+mpforce $n wake
+mpforce $n give 10000 coins assurpanipal
+say You now have the strength of a giant.
+c 'giant strength' $n
+break
+else
+say You don't have enough gold.
+endif
+~
+>speech_prog surgery~
+say Done.
+grin
+c 'change sex' $n
+~
+>all_greet_prog 100~
+smile
+say If you need any healing services say
+say commands to know how I may aid you.
+say And if you wish to &Rleave&W, let me know.
+~
+>speech_prog hi hello hey~
+smile
+say Hi, $n. If you need any medical attention let
+say me know by saying commands, then you know how I can help you.
+say And say &Rleave &Wif you wish to leave.
+~
+>fight_prog 25~
+slit
+~
+>fight_prog 30~
+dim
+~
+>fight_prog 15~
+c 'wrath of god' $n
+~
+>fight_prog 30~
+soul
+~
+>speech_prog leave~
+if ispc($n) == 1
+say As you wish $n.
+mpechoat $n &GYou are transferred by a vortex.
+mptransfer $n 5964
+mpecho $n &G$n disappears into the vortex..
+endif
+~
+>speech_prog resu resurrection~
+is ispc($n) == 1
+c 'resurrection' $n
+break
+else
+shake
+endif
+~
+|
+#5908
+apollo~
+Apollo~
+Apollo is here, playing his lyre.
+~
+Apollo wears white robes, and a wreath of laurel crowns on his head.  He
+carries a lyre in his hand, and a bow across his back.  
+~
+67 67108992 65552 0 0 390 S
+108 1 150 150 0 22000d0+0 0d0+0
+1080 0 0
+0 0 0
+2051 0 0
+>all_greet_prog 100~
+say Hello there, $n, you want to hear a song?
+~
+>rand_prog 15~
+emote sings a song.
+c 'satanic caress'
+~
+>rand_prog 5~
+say Lalala..laa laa..blaa.. Wasn't that beautiful? I just made it up.
+~
+>fight_prog 15~
+mpechoat $n &Y$I sings a frightening song...
+c 'tale of terror' $n
+~
+>fight_prog 25~
+mpechoat $n &C$I hits you with his lyre, leaving you stunned.
+stun $n
+stun $n
+stun $n
+~
+>fight_prog 30~
+mpechoat $n &g$I creates powerful soundwaves with his lyre.
+c 'sonic boom' $n
+~
+>rand_prog 10~
+rage
+~
+>speech_prog hi hello hey~
+if name($n) == Darkkar
+bow
+say Hello master Darkkar, how have you been?
+smile
+endif
+if name($n) != Darkkar
+say Hello there, $n.
+endif
+~
+>speech_prog yes~
+emote starts singing.
+c 'change sex' $n
+smile
+~
+|
+#5909
+eris~
+Eris~
+Eris, goddess of discord, is here.
+~
+~
+1 0 16 0 0 0 S
+110 1 220 220 0 0d0+0 0d0+0
+0 0 0
+0 0 2
+2051 0 0
+#5910
+angel guardian~
+A Guardian Angel~
+A Guardian Angel stands here, guarding Zeus.
+~
+You are looking at a strong young man.  He has white beard and black
+hair.  He's calmly looks to the distance.  
+~
+67 541368 327696 0 0 1000 S
+109 1 150 150 0 20000d0+0 0d0+0
+1090 0 0
+0 0 1
+2051 0 0
+>all_greet_prog 100~
+say Hello there, $n.
+say If you with to see Zeus just let me know
+say by saying &RI wish &Wand I'll take you there.
+smile
+~
+>fight_prog 30~
+backkick
+~
+>fight_prog 15~
+disarm
+~
+>speech_prog wish ok~
+nod $n
+emote waves his hand and utters some strange words.
+mptransfer $n 5954
+tell $n There..
+~
+|
+#5911
+zeus god~
+Zeus~
+Zeus, ruler of the Gods, is here before you.
+~
+Zeus has a flowing white beard and is wearing gleaming white robes.  When
+he looks at you, you see lightning in his eyes, and you tremble before his
+mighty presence.  
+~
+67 235421888 360500 24576 2 1000 S
+120 1 240 240 0 40000d0+0 0d0+0
+1200 0 0
+0 0 1
+2051 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say Welcome to Olympos $n, I hope you enjoy your stay..
+smile
+endif
+~
+>fight_prog 10~
+mpechoat $n &C$I throws a lightning bolt at you!
+quickburst 'chain lightning'
+~
+>fight_prog 8~
+say I call the heavens to smite thee.
+c 'wrath of god' $n
+~
+>fight_prog 25~
+mpechoat $n &P$I throws himself on you with all his weight.
+slam
+~
+>fight_prog 25~
+mpechoat $n &Y$I rises his voice at you.. earth starts to tremble.
+shriek
+~
+>rand_prog 10~
+rage
+~
+>rand_prog 10~
+weapon
+~
+>fight_prog 10~
+mpoload 5909
+quaff elixir
+~
+>fight_prog 10~
+mpoload 5910
+quaff elixir
+~
+>fight_prog 30~
+say Feel my power..
+soul $n
+~
+>fight_prog 20~
+mpechoat $n &B$I tries to eliminate magic surrounding you.
+quickburst 'dispel magic'
+~
+>rand_prog 10~
+mpecho  &YThe wounds heal as $I utters the magic words.
+c 'complete healing'
+~
+>fight_prog 20~
+stun
+stun
+stun
+~
+>fight_prog 20~
+mpechoat $n &Y$I tries to surround you by lights.
+quickburst 'dancing lights'
+~
+>speech_prog hello hi hey~
+if ispc($n) == 1
+nod $n
+say Welcome $n.
+endif
+~
+>speech_prog hades~
+if ispc($n) == 1
+hmm
+say He's somewhere down there.. if you think
+say about seeing him then know that he hates visitors.
+endif
+~
+|
+#5912
+demeter~
+Demeter~
+Demeter, goddess of agriculture, is here, cutting wheat.
+~
+~
+67 524304 294960 0 0 0 S
+107 1 200 200 0 19000d0+0 0d0+0
+1070 0 0
+0 0 2
+2051 0 0
+>all_greet_prog 100~
+say Good day, $n. So how are things going down there?
+~
+>speech_prog fine ok cool good~
+say Ok.. I'm not really interested, now would you
+say leave me alone please, I got things to do you
+say know.. huss huss.. out!
+~
+>rand_prog 5~
+c 'golden armor'
+~
+>rand_prog 5~
+c 'fireshield'
+~
+>rand_prog 10~
+mpechoat $n &Y$I cuts down some wheat..
+~
+>fight_prog 20~
+mpechoat $n &P$I sweeps at you with her sickle..
+stun $n
+stun $n
+stun $n
+~
+>fight_prog 30~
+c 'earthblast' $n
+~
+>fight_prog 18~
+mpechoat $n &c$I calls nature to lay a curse upon you.
+c 'curse of nature' $n
+~
+|
+#5913
+gardener~
+The Gardener~
+A gardener is here, making sure the flowers and trees are watered.
+~
+The gardener is a handsome man.  He walks and looks around that every
+plant, tree has been taken care of.  He is holding a shovel on his hand.  
+~
+65 16512 48 0 0 0 S
+104 1 100 110 0 20000d0+0 0d0+0
+1040 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+emote is whistling a merry toon to himself.
+~
+>speech_prog hi hello hey~
+emote looks at you.
+say Oh, hi $n. Sorry I didn't notice you.
+say Busy with the garden you know.
+smile
+~
+>rand_prog 5~
+emote pours some water on the flowers.
+say There, that should do my sweeties.
+~
+>fight_prog 20~
+mpechoat $n &P$I gives you a good pound with his shovel.
+stun $n
+stun $n
+stun $n
+~
+>fight_prog 15~
+mpechoat $n &C$I throws some really cold water on you.
+c 'winters chill'
+~
+>rand_prog 5~
+~
+|
+#5914
+gardener~
+The Gardener~
+A gardener looks that you wouldn't do any harm to the plants.
+~
+~
+65 128 48 256 0 0 S
+104 1 150 150 0 19000d0+0 0d0+0
+1040 0 0
+0 0 1
+2 0 0
+>all_greet_prog 100~
+say Hello $n, nice to see you, and please be
+say careful that you wouldn't step on my sweet
+say flowers, ok?
+smile
+~
+>speech_prog no~
+say So you don't like my flowers..
+say I shall make you love them.
+growl $n
+c 'change sex' $n
+~
+>rand_prog 5~
+emote sings to himself.
+say Tut tuduuu.. lallalaa..
+emote poors some waters to plants.
+say There..
+smile
+~
+>fight_prog 15~
+mpechoat $n &P$I hits you hard with his rake.
+stun $n
+stun $n
+stun $n
+~
+>fight_prog 20~
+mpechoat $n &c$I calls the nature to erupt the ground beneath you!
+c 'earthblast'
+~
+|
+#5915
+Dark Angel~
+Dark Angel~
+Dark Angel is here, looking really evil.
+~
+~
+67 34078928 262164 131328 0 -390 S
+109 1 200 200 0 20000d0+0 0d0+0
+1090 0 0
+0 0 1
+2051 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if sex($n) == 1
+bow
+say Hello, $n. Would you be interester in meeting Lord Hades?
+grin
+break
+else
+mmm
+say Greetings Lady  $n. Do you feel like
+say meeting Lord Hades today?
+wink $n
+endif
+endif
+~
+>speech_prog yes~
+say Very well.
+mptransfer $n 5938
+wave $n
+~
+>speech_prog no~
+say Mhmhhh.
+emote ignores you.
+~
+>speech_prog fight~
+say You want to fight, you got it.
+mpechoat $n &Y$I attacks.
+mpkill $n
+~
+>rand_prog 5~
+rage
+~
+>fight_prog 20~
+mpechoat $n &R$I summons dark flames to strike you.
+c 'demonfire' $n
+~
+>fight_prog 20~
+mpechoat $n &O$I tryes to poison you.
+c 'plague' $n
+~
+>fight_prog 20~
+mpechoat $n &z$I uses cowardly tactics - sneaks behind you then attacks.
+circle
+circle
+~
+>fight_prog 10~
+disarm
+~
+>fight_prog 15~
+slit
+~
+|
+#5916
+Hera~
+Hera~
+Hera, wife of Zeus is here.
+~
+A beautiful woman with long dark hair.  She seems to be very upset at the
+momenent and attacks you!!  
+~
+67 470286528 20 1073744128 0 -390 S
+111 1 225 225 0 21000d0+0 0d0+0
+1110 0 0
+0 0 2
+2051 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+emote is throwing her things across the room.
+say How dare you.. with out knocking.
+mpkill $n
+c 'earthquake'
+endif
+~
+>fight_prog 20~
+mpechoat $n &R$I throws her personal stuff at you.
+quickburst 'disrupt' $n
+~
+>fight_prog 15~
+say This is what you get when you invade someones privacy..
+mpechoat $n &B$I grabs a big vase and throws it at you.
+stun $n
+stun $n
+stun $n
+~
+>fight_prog 25~
+mpechoat $n &g$I spits venomous acid on you.
+c 'acid breath' $n
+~
+>fight_prog 19~
+c 'unholy curse' $n
+~
+>fight_prog 25~
+quickburst 'meteor swarm'
+~
+>rand_prog 6~
+weapon
+~
+>rand_prog 6~
+rage
+~
+|
+#5917
+eris~
+Eris~
+Eris is here.. looking really mean.
+~
+~
+67 268959936 262164 2304 0 -390 S
+110 1 225 225 0 20000d0+0 0d0+0
+1100 0 0
+0 0 2
+2051 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say This is no place for a mortal.. out!
+c 'chain lightning'
+endif
+~
+>fight_prog 35~
+mpechoat $n &R$I summons flames of hell down on you.
+quickburst 'hellfire' $n
+~
+>fight_prog 35~
+mpechoat $n &z$I tries to drain your energy..
+quickburst 'power leak' $n
+~
+>fight_prog 30~
+mpechoat $n &C$I calls the forces of Lord Winter to make you feel REALLY cold!
+quickburst 'winters chill' $n
+~
+>fight_prog 35~
+wear energy
+~
+|
+#5918
+Ares~
+Ares~
+Ares, the god of war is here, planning how to kill more people.
+~
+Anger bursts from his eyes..  You feel so little and helpless before him,
+as he is about to squish you!  
+~
+67 369623232 65556 134356992 0 -900 S
+115 1 200 150 0 25000d0+0 0d0+0
+1150 0 0
+0 0 1
+2055 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+say At last, I get visitors.
+laugh
+c 'icequake'
+mpkill $n
+endif
+~
+>fight_prog 35~
+mpechoat $n &B$I punches you at your face, HARD!.
+stun $n
+stun $n
+stun $n
+~
+>fight_prog 30~
+mpechoat $n &wHe runs, then jumps, hitting you with all his bodyweight.
+slam $n
+~
+>fight_prog 30~
+mpechoat $n &Y$I practices his war cry on you.
+shriek $n
+~
+>fight_prog 30~
+mpechoat $n &C$I runs and hits you with his iron helm. OUCH!
+head $n
+head $n
+head $n
+~
+>fight_prog 30~
+wear ene
+~
+>rand_prog 10~
+weapon
+~
+>rand_prog 10~
+rage
+~
+|
+#5919
+dark angel~
+Dark Angel~
+Dark Angel is here, guarding Hades.
+~
+~
+67 128 65552 133376 0 -390 S
+109 1 300 200 0 20000d0+0 0d0+0
+1090 0 0
+0 0 1
+2051 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if isgood($n) == 1
+say I wouldn't suggest you to visit Hades today,
+say he's in bad mood.
+break
+else
+say Is you need to gain entrance to Hades, tell me so.
+endif
+endif
+~
+>speech_prog enter yes do~
+if ispc($n) == 1
+if isgood($n) == 1
+emote ignores you.
+break
+else
+unlock north
+open north
+say Just be careful..
+iwhis
+endif
+endif
+~
+>fight_prog 30~
+laugh $n
+say If you can't beat me, I wonder what will Hades do with you.
+slam
+~
+>fight_prog 25~
+say I shall curse you forever!!
+quickburst 'nagaroms curse' $n
+~
+>fight_prog 30~
+mpechoat $n &B$I jumps high in the air and does a spinkick!!
+backkick $n
+~
+|
+#5920
+hades~
+Hades~
+Hades, king of the dead.
+~
+You don't have time for that.. he's about to kill you!!
+~
+67 402669760 98320 1073768448 0 -1000 S
+119 1 125 125 0 24000d0+0 0d0+0
+1190 0 0
+0 0 1
+2051 0 0
+>all_greet_prog 100~
+emote takes out an old coin, throws it and looks at it.
+say It seems you have to die, like everyone else!
+mpechoat $n &YYou feel his dagger piercing thru your armour..
+laugh $n
+assassinate $n
+mpkill $n
+~
+>rand_prog 10~
+weapon
+~
+>rand_prog 10~
+rage
+~
+>fight_prog 30~
+mpechoat $n &RRed flames strike down at you!!
+quickburst 'demonfire' $n
+~
+>fight_prog 30~
+quickburst 'dancing lights'
+~
+>fight_prog 30~
+mpechoat $n &PSlams you HARD with his shoulder!
+slam
+~
+>fight_prog 25~
+slit
+~
+>death_prog 65~
+say You did well $n.. for a mortal.
+emote takes his last breath and dies.
+~
+>fight_prog 20~
+grin
+dim
+~
+>rand_prog 10~
+war
+~
+|
+#5921
+vortex~
+Vortex~
+A Vortex is here, swirling around you.
+~
+You stand before a hugh vortex which is swirling around you.  It
+transport people our from Olympos.  
+~
+524355 192 294964 24576 1 0 S
+300 1 600 600 0 100000d0+0 0d0+0
+3000 0 0
+0 0 0
+524271 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+bow
+say Welcome $n. I may aid you in your travels.
+say Tell me &Rwhere &Wyou need to go and I shall take you there. 
+endif
+~
+>speech_prog where need travel~
+say I can take you to &RMethidoral&W(&wmeth&W) or &RHammerheim&W(&whamm&W).
+~
+>speech_prog meth methidoral~
+if ispc($n) == 1
+mpechoat $n &GVortex takes you high into the air...
+mptransfer $n 25000
+mpecho &G$n disappears into the vortex...
+endif
+~
+>speech_prog hamm hammerheim~
+if ispc($n) == 1
+mpechoat $n &GVortex takes you high into the air...
+mptransfer $n 10211
+mpecho &G$n disappears into the vortex...
+endif
+~
+>fight_prog 100~
+mpechoat $n &GThe vortex swirls around you, making painful sound..
+shriek
+~
+>speech_prog prince~
+if ispc($n) == 1
+mpechoat $n &B$I opens the dimension door and you enter it.
+mpechoat $n &zVortex says &W'I shall transport you thru space and time'
+mptransfer $n 10117
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#5900
+sword energy~
+an ancient runed sword~
+An ancient sword lies here, pulsating with power.~
+~
+5 671096864 8192 0 0 8193 100
+100 100
+0~ 30~ 55~ 1~
+3 1200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+12 100
+A
+18 30
+A
+19 30
+#5901
+portal olympos~
+ancient Portal~
+&z(Translucent) &wA Ancient Portal stands here.~
+~
+29 134217728 0 0 0 0 0
+100 100
+5900~ 0~ 0~ 0~
+100000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5902
+portal~
+ancient Portal~
+&z(Translucent) &wA Ancient Portal stands here.~
+~
+29 134217728 0 0 0 0 0
+100 100
+5908~ 0~ 0~ 0~
+100000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5903
+tunic iris~
+&wIris' Tunic~
+Tunic belonging to Iris is here.~
+~
+9 134217728 0 0 0 2049 101
+100 100
+-25~ 0~ 0~ 0~
+4 624 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+A
+13 125
+#5904
+lyre apollos~
+&wApollo's Lyre~
+You notice a musical instrument lying here.~
+~
+9 939525120 0 0 0 2097153 103
+100 100
+25~ 0~ 0~ 0~
+5 980 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+18 10
+A
+12 150
+A
+13 150
+A
+23 -15
+#5905
+gatekey key~
+&zThe Gatekey~
+&wA massive key made out from platinum.~
+~
+18 33554433 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5906
+youth fountain~
+fountain of youth~
+The fountain of youth.~
+~
+25 201326592 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5907
+apple~
+&wAn apple~
+&wAn apple marked with 'For the fairest' lies here.~
+~
+19 32 0 0 0 1 1
+100 100
+20~ 0~ 0~ 1~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5908
+aegis zeus~
+&wAegis of Zeus~
+A legendary aegis is here.~
+~
+13 570425346 0 0 0 513 102
+100 100
+0~ 0~ 0~ 0~
+5 896 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -20
+A
+24 -8
+A
+18 15
+A
+19 10
+A
+13 50
+A
+12 250
+#5909
+elixir vitality~
+&zelixir of vitality~
+A potion is here, waiting for you to pick it up.~
+~
+10 838868992 0 0 0 1 106
+100 100
+200~ sanctuary~ remove curse~ cancellation~
+1 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+#5910
+elixir protection~
+&zelixir of protection~
+A potion is here, waiting for you to pick it up.~
+~
+10 838868992 0 0 0 1 0
+100 100
+200~ bless~ ghost shield~ acidshield~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5911
+mirror silver~
+silver mirror~
+&z(Reflecting) &WA silver mirror~
+~
+29 67108864 0 0 0 0 1
+100 100
+5935~ 0~ 0~ 0~
+10000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5912
+statue zeus~
+statue of Zeus~
+&wA &Ygolden &wstatue of Zeus is here, decorating the garden.~
+~
+12 3 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+100000 40000 0
+0 0
+reserved~
+0 0
+0 0 0
+#5913
+sickle demeter~
+&wDemeter's Sickle~
+A sharp sickle is here.~
+~
+5 134856704 32768 0 0 8193 104
+100 100
+0~ 100~ 200~ 1~
+5 1024 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 100
+A
+5 2
+A
+18 30
+A
+19 50
+A
+3 -2
+A
+24 -15
+A
+23 -15
+#5914
+mirror pocket~
+a pocket mirror~
+Someone has lost his mirror..~
+~
+9 134807617 0 0 0 2097153 104
+100 100
+-26~ 0~ 0~ 0~
+2 784 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -10
+A
+24 -10
+A
+18 15
+A
+19 15
+#5915
+shovel gardeners~
+gardener's shovel~
+A big shovel is resting here.~
+~
+5 33570816 32768 0 0 8193 99
+100 100
+0~ 120~ 225~ 7~
+7 916 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+13 90
+A
+19 15
+A
+18 40
+#5916
+rake gardeners~
+gardener's rake~
+A mouldy rake is lying here, gathering dust.~
+~
+5 51068992 8 0 0 8193 100
+100 100
+0~ 30~ 90~ 7~
+7 860 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 90
+A
+19 40
+#5917
+boots hermes~
+floating boots~
+A pair of boots is here, floating.~
+~
+9 33554496 0 0 0 65 100
+100 100
+-25~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+5919 0 0
+A
+19 5
+A
+18 15
+A
+119 -1
+#5918
+angel wings~
+&g(Hovering) &WAngel Wings~
+A pair of angel wings.~
+~
+9 33554432 0 0 0 3073 100
+100 100
+-10~ 0~ 0~ 0~
+1 360 0
+0 0
+reserved~
+0 0
+5919 0 0
+A
+12 50
+A
+13 50
+A
+19 5
+A
+18 5
+A
+119 -1
+#5919
+leather boots~
+&wLeather Boots~
+A pair of comfortable leather boots are here on the ground.~
+~
+9 153354240 4671 0 0 65 105
+100 100
+-24~ 0~ 0~ 0~
+3 1000 0
+0 0
+reserved~
+0 0
+0 5917 5918
+A
+12 250
+A
+13 150
+A
+19 16
+A
+18 10
+A
+120 -1
+A
+25 80
+A
+23 -20
+#5920
+gloves heart~
+&wHeart Gloves~
+A pair of gloves with a heart image on them are lying here.~
+~
+9 159073284 528 0 0 129 100
+100 100
+-18~ 0~ 0~ 0~
+3 636 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 5
+A
+23 -10
+A
+24 -8
+A
+13 80
+#5921
+spear athenas~
+&wAthena's Spear~
+A heavy spear is lying on the ground.~
+~
+5 33554432 8192 0 0 8193 103
+100 100
+0~ 100~ 150~ 2~
+10 992 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 35
+A
+19 25
+A
+13 130
+A
+24 -15
+#5922
+elixir curing~
+elixir of curing~
+A little bottle with some liquid in it.~
+~
+10 301989888 0 0 0 1 100
+100 100
+150~ remove curse~ cure poison~ cancellation~
+1 1200 0
+0 0
+reserved~
+0 0
+0 0 0
+#5923
+olympos crown~
+&wCrown of Olympos~
+A golden crown reflects light as you look at it.~
+~
+9 671096832 0 0 0 17 106
+100 100
+-200~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 15
+A
+18 15
+A
+13 200
+A
+12 200
+A
+23 -75
+A
+24 -75
+#5924
+helm iron~
+&wIron Helm~
+An helm made out of solid iron shines here.~
+~
+9 206668305 516 0 0 17 103
+100 100
+24~ 0~ 0~ 0~
+3 840 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 150
+A
+13 120
+A
+25 90
+A
+19 16
+A
+18 10
+A
+3 2
+A
+23 -10
+#5925
+stone~
+stone~
+A piece of rock is on the ground here.~
+~
+18 100663296 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5926
+dagger silver~
+a Silver Dagger~
+A silver dagger is lying here, still covered in blood.~
+~
+5 160759873 5135 0 0 8193 103
+100 100
+0~ 25~ 78~ 11~
+3 1024 0
+0 0
+reserved~
+0 0
+5929 0 0
+A
+19 50
+A
+18 28
+A
+23 -10
+A
+24 -10
+A
+25 -90
+A
+13 110
+#5927
+pie~
+a blueberry pie~
+A very delicious pie is here.. how could someone not eat it?~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 1~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5928
+sword silver~
+a Silver Sword~
+A silver sword lies here, shining brightly.~
+~
+5 134349889 25 8 0 8193 103
+100 100
+0~ 30~ 82~ 3~
+3 1060 0
+0 0
+reserved~
+0 0
+5929 0 0
+A
+1 2
+A
+12 150
+A
+13 150
+A
+19 45
+A
+18 45
+A
+24 -25
+A
+26 45
+#5929
+gods spear~
+&wSpear of Gods~
+You notice a long spear hit to the ground here.~
+~
+5 167772160 8192 0 0 8193 104
+100 100
+0~ 35~ 90~ 2~
+5 992 0
+0 0
+reserved~
+0 0
+0 5928 5926
+A
+3 1
+A
+1 1
+A
+18 30
+A
+19 45
+A
+24 -10
+A
+13 120
+A
+12 100
+#5930
+mirror silver~
+silver Mirror~
+&z(Reflecting) &WA silver mirror.~
+~
+29 134217728 0 0 0 0 1
+100 100
+5904~ 0~ 0~ 0~
+10000 20000 0
+0 0
+reserved~
+0 0
+0 0 0
+#5931
+blackmite bracers~
+&wBlackmite Bracers~
+A pair of powerful bracers are resting here.~
+~
+9 122781696 4644 0 0 257 105
+100 100
+-26~ 0~ 0~ 0~
+3 996 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+12 200
+A
+13 200
+A
+25 90
+A
+26 50
+A
+18 10
+A
+19 13
+#5932
+bag pockets~
+bag of many pockets~
+A bag with numerous pockets is here.~
+~
+15 536870977 131072 0 0 1 100
+100 100
+500~ 1~ 0~ 0~
+1 8000 0
+0 0
+reserved~
+0 0
+0 0 0
+#5933
+lion's hide~
+a lion's hide~
+A piece of lion hide lies here.~
+~
+9 100663808 0 0 0 2049 103
+100 100
+23~ 0~ 0~ 0~
+2 596 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 13
+A
+24 -15
+A
+13 150
+A
+3 1
+A
+18 7
+A
+12 150
+A
+25 66
+A
+23 -10
+#5934
+bracers iron~
+&wIron Bracers~
+A pair of iron bracers are lying here.~
+~
+9 33554434 0 0 0 257 100
+100 100
+26~ 0~ 0~ 0~
+2 960 0
+0 0
+reserved~
+0 0
+5931 0 0
+A
+19 5
+A
+18 10
+A
+13 50
+#5935
+iron bracers~
+&wIron Bracers~
+A pair of iron bracers are on the ground here.~
+~
+9 33554433 0 0 0 257 101
+100 100
+22~ 0~ 0~ 0~
+2 500 0
+0 0
+reserved~
+0 0
+5931 0 0
+A
+13 -100
+A
+1 2
+A
+12 -200
+A
+25 150
+A
+24 -10
+A
+18 2
+A
+19 8
+#5936
+crystal shard~
+&wa Crystal Shard~
+A piece of shiny crystal reflects sun.~
+~
+5 159662144 5133 0 0 8193 105
+100 100
+0~ 30~ 83~ 11~
+3 920 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 30
+A
+23 -10
+A
+19 60
+A
+26 50
+A
+25 90
+A
+12 200
+A
+13 200
+#5937
+piece crystal~
+piece of crystal~
+You notice a piece of crystal here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+5940 0 0
+#5938
+piece crystal~
+piece of crystal~
+You see a crystal glowing here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+5940 0 0
+#5939
+piece crystal~
+piece of crystal~
+A piece of crystal is here radiating energy.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+5941 0 0
+#5940
+sharp crystal~
+a sharp crystal~
+A quite sharp looking crystal has been forgotten here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+5943 0 0
+#5941
+sharp crystal~
+a sharp crystal~
+A small crystal is on the ground.~
+~
+13 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+5943 0 0
+#5942
+piece crystal useless~
+piece of crystal~
+A useless looking crystal lies here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+5941 0 0
+#5943
+crystal shard~
+&wa Crystal Shard~
+A sharp looking crystal weapons is on the ground.~
+~
+5 134234113 0 0 0 8193 103
+100 100
+0~ 30~ 75~ 11~
+2 400 0
+0 0
+reserved~
+0 0
+5936 0 0
+A
+24 10
+A
+18 35
+A
+19 35
+A
+25 60
+A
+12 130
+A
+13 100
+#5945
+piece glass~
+&wPiece of Glass~
+A sharp piece of glass sits on the ground.~
+~
+5 3 0 0 0 8193 70
+100 100
+0~ 20~ 60~ 0~
+1 100 0
+0 0
+reserved~
+0 0
+5936 0 0
+A
+18 15
+A
+19 15
+A
+24 -10
+#5997
+boots~
+&Oleather boots~
+Hey.. Darkkar's boots are here.. wonder why?~
+~
+9 33554465 0 0 0 65 1
+100 100
+1~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5998
+brown eyes~
+brown eyes~
+Someones eye is here..~
+~
+27 1006632960 0 0 0 131073 108
+100 100
+100~ -1~ 0~ identify~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#5999
+ebonshard fragment~
+&wa Fragment of Ebonshard~
+Here's something lying here..~
+~
+5 939524104 0 0 0 8193 106
+100 100
+0~ 500~ 500~ 11~
+1 400000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -200
+A
+13 1000
+A
+12 1000
+A
+25 500
+A
+3 50
+A
+4 50
+A
+5 50
+A
+1 50
+A
+2 50
+A
+18 550
+A
+19 550
+A
+24 -1500
+#0
+
+
+
+#ROOMDATA
+#5900
+Path Up The Hill~
+~
+~
+You stand on the small rocky trail up the steep side of Mount Olympus. 
+The footing here is very treacherous, and you constantly slip in loose
+rocks.  The trail keeps going up and up and up...  
+~
+0 2 5
+Rd     0
+D4
+~
+~
+0 0 5901
+S
+#5901
+Path Up The Hill~
+~
+~
+You stand on the small rocky trail up the steep side of Mount Olympus. 
+The footing here is very treacherous, and you constantly slip in loose
+rocks.  The trail keeps going up and up and up...  
+~
+0 33955846 9
+Rd     0
+D4
+~
+~
+0 0 5902
+D5
+~
+~
+0 0 5900
+S
+#5902
+Path Up The Hill~
+~
+~
+You stand on the small rocky trail up the steep side of Mount Olympus. 
+The footing here is very treacherous, and you constantly slip in loose
+rocks.  The trail keeps going up and up and up...  
+~
+0 33955846 9
+Rd     0
+D0
+~
+~
+0 0 5903
+D5
+~
+~
+0 0 5901
+S
+#5903
+Path Up The Hill~
+~
+~
+You stand on the small rocky trail up the steep side of Mount Olympus. 
+The footing here is very treacherous, and you constantly slip in loose
+rocks.  The trail keeps going up and up and up...  
+~
+0 401410 9
+Rd     0
+D2
+~
+~
+0 0 5902
+D4
+~
+~
+0 0 5904
+S
+#5904
+Path Up The Mountain~
+~
+~
+You stand on the small rocky trail up the steep side of Mount Olympus. 
+The footing here is very treacherous, and you constantly slip in loose
+rocks.  The trail keeps going up and up and up...  
+~
+0 33955842 9
+Rd     0
+D0
+~
+~
+0 0 5905
+D5
+~
+~
+0 0 5903
+S
+#5905
+Before The Gates~
+~
+~
+The rocky path slowly disappears from sight as you enter a huge bank of
+fog.  You stop for a minute and peer down the huge mountain you have been
+climbing.  The trail ends at the face of two massive platinum gates,
+seemingly standing at the summit of Mount Olympus 
+~
+0 402434 5
+Rd     0
+D0
+~
+gate~
+103 5905 5906
+D2
+~
+~
+0 0 5904
+S
+#5906
+Gateway of the Gods~
+~
+~
+You are now inside of the huge platinum gates of Olympus.  All around
+you, a courtyard stretches away, ending in a line with the gates.  Beyond
+the gates, all is blurry.  A path of pure crystal leads off through the
+courtyard, occasionally branching off at the entrances to the dwellings of
+gods.  
+~
+0 401414 5
+Rd     0
+D0
+~
+~
+0 0 5956
+D1
+~
+~
+0 0 5907
+D2
+~
+gate~
+103 0 5905
+D3
+~
+~
+0 0 5920
+S
+#5907
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+0 0 5909
+D3
+~
+~
+0 0 5906
+S
+#5908
+At Ancient Portal~
+~
+~
+It's very quiet here.  You see a portal standing here, it's humming and
+glowing.  Some strange marks are carved into it.  It looks very old because
+and is covered with leaves..  Someone trying to hide it?  
+~
+0 4 5
+Rd     0
+S
+#5909
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5911
+D1
+~
+~
+3 0 5910
+D3
+~
+~
+0 0 5907
+S
+#5910
+Iris' Rainbow~
+~
+~
+The rainbow Iris lives on is exeptional, some colors used here you have
+never seen before.  You can see Methidoral from here - you are just above
+it.  
+~
+0 401410 5
+Rd     0
+D3
+~
+~
+3 0 5909
+S
+#5911
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5912
+D2
+~
+~
+0 0 5909
+S
+#5912
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401414 5
+Rd     0
+D0
+~
+~
+0 0 5914
+D1
+~
+~
+3 0 5913
+D2
+~
+~
+0 0 5911
+D3
+~
+~
+0 0 5959
+S
+#5913
+Helios' Chariot Track~
+~
+~
+This track is where Helios drives his chariot of fire, giving light to
+those below.  The track is blackened by the heat of the chariot.  At one end
+of the track, you can see the head of the Colossus poking through the clouds
+below.  
+~
+0 401410 5
+Rd     0
+D3
+~
+~
+3 0 5912
+S
+#5914
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5915
+D2
+~
+~
+0 0 5912
+S
+#5915
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5916
+D1
+~
+~
+3 0 5917
+D2
+~
+~
+0 0 5914
+S
+#5916
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5918
+D2
+~
+~
+0 0 5915
+S
+#5917
+Demeter's Grain Field~
+~
+~
+This huge field is the home of Demeter, goddess of agriculture.  The
+grain in the field is of many different types, but all of them are in full
+health.  Fuller than normal health, in fact, because some of the grains grow
+well over your head in places.  
+~
+0 401410 5
+Rd     0
+D3
+~
+~
+3 0 5915
+S
+#5918
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  To east is
+the home of Apollo.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+3 0 5919
+D2
+~
+~
+0 0 5916
+D3
+~
+~
+0 0 5934
+S
+#5919
+Dwelling of Apollo~
+~
+~
+The dwelling of Apollo looks exactly like a temple.  Marble steps lead up
+to a colonaded porch.  Inside, You can see a large, comfortable room. 
+Shelves line some of the walls.  On them, you can see various things,
+including a lyre, a wreath of laurel, and statues of a wolf, hawk, fawn, and
+a crow.  
+~
+0 401410 5
+Rd     0
+D3
+~
+~
+3 0 5918
+S
+#5920
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+0 0 5906
+D3
+~
+~
+0 0 5921
+S
+#5921
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5923
+D1
+~
+~
+0 0 5920
+D3
+~
+~
+3 0 5922
+S
+#5922
+Aphrodite's Room~
+~
+~
+This room is completely covered in mirrors.  Upon the mirrors rest a
+large bed, that looks very comfortable, even with the sheets messed up and
+stained.  At one end of the room, shelves hold jars of cosmetics and
+perfume.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+3 0 5921
+S
+#5923
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5924
+D2
+~
+~
+0 0 5921
+S
+#5924
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401414 5
+Rd     0
+D0
+~
+~
+0 0 5926
+D1
+~
+~
+0 0 5958
+D2
+~
+~
+0 0 5923
+D3
+~
+~
+3 0 5925
+S
+#5925
+Hermes' Meadow~
+~
+~
+This meadow is the home of Hermes, the god of shepherds.  He sits in the
+grass, watching his flock graze the grass.  When one of the sheep strays,
+Hermes becomes a blur as he streaks to correct it.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 5924
+S
+#5926
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5927
+D2
+~
+~
+0 0 5924
+S
+#5927
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5929
+D2
+~
+~
+0 0 5926
+D3
+~
+~
+3 0 5928
+S
+#5928
+Under Athena's Olive Tree~
+~
+~
+This shady spot is under a massive olive tree, which is sacred to Athena.
+A large owl sits on one of the branches, with a wise look on its face. 
+Under the tree is a woman, dressed as a warrior.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 5927
+S
+#5929
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5930
+D2
+~
+~
+0 0 5927
+S
+#5930
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+0 0 5932
+D2
+~
+~
+0 0 5929
+D3
+~
+~
+3 0 5931
+S
+#5931
+Hestia's Hearth~
+~
+~
+The goddess Hestia lives in a small house, appearing to belong to a
+Methidorals peasant.  The house is well kept, and everything is in its
+proper place.  You can smell something cooking upon the hearth.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+3 0 5930
+S
+#5932
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+0 0 5933
+D3
+~
+~
+0 0 5930
+S
+#5933
+Intersection Of Roads~
+~
+~
+Here the roads of the garden and the pathway of Gods cross.  You see the
+statue of Zeus towering in the distance.  To north you hear some water
+sparking, there seems to be a fountain.  
+~
+0 401414 5
+Rd     0
+D0
+~
+~
+0 0 5935
+D1
+~
+~
+0 0 5934
+D2
+~
+~
+0 0 5962
+D3
+~
+~
+0 0 5932
+S
+#5934
+Pathway of the Gods~
+~
+~
+The crystal path leads through the courtyard of the gods, occasionally
+branching off to the enterances of the homes of the lesser gods.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+0 0 5918
+D3
+~
+~
+0 0 5933
+S
+#5935
+Fountain Of Youth~
+~
+~
+You see a beautiful fountain here.  The Gods drink from here, you wonder
+if the water here tastes differently from what you have drank so far.  You
+taste the water and fid it being very clean and tasty.  To east and west is
+a forest.  Path goes to north and south.  
+~
+0 402434 5
+Rd     0
+D0
+~
+~
+0 0 5936
+D2
+~
+~
+0 0 5933
+S
+#5936
+The Pathway Separates~
+~
+~
+Here you have to choose where to go, east or west.  The trees are
+blocking the further path to north.  To south you see the fountain you just
+passed.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+0 0 5948
+D2
+~
+~
+0 0 5935
+D3
+~
+~
+0 0 5937
+S
+#5937
+At The Entrance To A Tunnel~
+~
+~
+Here is a ladder leading down, to a tunnel.  Trees block the way to any
+other direction exept east.  You look down and it's dark there..  Is it
+safe..?  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+0 0 5936
+S
+#5938
+In A Dark Tunnel~
+~
+~
+You find yourself in a tunnel, the water is almost to your knees.  It's
+is very dark here, there's only a dim light here.  There are some torches on
+the wall.  A muddy path leads to all directions.  
+~
+0 401415 0
+Rd     0
+D0
+~
+~
+0 0 5939
+D1
+~
+~
+0 0 5944
+D2
+~
+~
+0 0 5946
+D3
+~
+~
+0 0 5942
+D4
+~
+~
+0 0 5935
+S
+#5939
+In A Dark Tunnel~
+~
+~
+The mud sticks to your feed, how unpleasant.  The darkness here makes you
+be little bit scared because anything could just out from somewhere and
+attack.  You hear some noise coming from north and decide to head there.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 5940
+D2
+~
+~
+0 0 5938
+S
+#5940
+A Cave~
+~
+~
+You thand in a large cave, made on some sort of stone.  To north is a
+hugh boulder blocking the way, just before that stands a man, dressed in
+black robes.  You wonder if it was really worth to come here..  You might
+just get rid of your life..  
+~
+0 134619151 0
+Rd     0
+D0
+~
+boulder~
+103 5925 5941
+D2
+~
+~
+0 0 5939
+S
+#5941
+In A Large Cave~
+~
+~
+Here lies throne of Hades, kind of the dead.  As you enter you can't look
+around much because you are being attacked right away!  Hades doesn't care
+about anything or anyone, just as long there is enough corpses to feed his
+need to kill.  
+~
+0 4595722 0
+Rd     0
+D2
+~
+boulder~
+103 5925 5940
+S
+#5942
+In A Dark Tunnel~
+~
+~
+You stand behind a door, that's what you think because it's still dark
+here.  You hear voices coming from west, a womans voice.  Perhaps you should
+go and find out who or what is living there?  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 5938
+D3
+~
+~
+99 0 5943
+S
+#5943
+Hera's Nursery~
+~
+~
+This is the nursery of Hera, goddess of childbirth.  She is surrounded by
+midwives, learning the trade from her.  Occasionally she looks in a small
+mirror, and grows angry.  Catching a glimpse of the mirror, you can see why.
+Zeus and a mortal woman are sitting by a tree talking.  This quite obviously
+making Hera VERY angry.  Perhaps you had better leave, like the midwives are
+doing.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+99 0 5942
+S
+#5944
+In A Dark Tunnel~
+~
+~
+The water is lower here, but it's still muddy.  You can see bug crawling
+here and eating each other, yuk.  Right now there's a cockroack eating a
+rat..  To east theres a door, hugh one.  This must be someone importand and
+powerful.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+3 0 5945
+D3
+~
+~
+0 0 5938
+S
+#5945
+Ares' Battlefield~
+~
+~
+You are standing on a massive battlefield, trapped between two armies
+facing each other.  As they charge, you cower in fear, but needlessly.  The
+men just pass right through you.  This must be an illusion.  To one side,
+you can see Ares watching the battle.  
+~
+0 401418 0
+Rd     0
+D3
+~
+~
+3 0 5944
+S
+#5946
+In A Dark Tunnel~
+~
+~
+The water is still to your knees.  There is some light coming from south,
+looking more closely you see a door.  On the door is a sight saying "Do not
+disturb".  Is that a joke or not?  
+~
+0 401411 0
+Rd     0
+D0
+~
+~
+0 0 5938
+D2
+~
+~
+3 0 5947
+S
+#5947
+A Small House~
+~
+~
+This small house is the home of Eris, and is here because no one could
+stand her being any closer.  The house is decorated in greens and reds -
+poison green and blood red.  A small apple lies on the table, marked with a
+tag reading "For the fairest".  
+~
+0 401410 0
+Rd     0
+D0
+~
+~
+3 0 5946
+S
+#5948
+A Path~
+~
+~
+This is a small path made out from white bricks.  There are birds singing
+and the nature around here is beautiful.  It is quite warm here because you
+are much closer to sun.  Perhaps you should ahead back to fountain because
+you feel thirsty again.  The path continues to east.  
+~
+0 401410 5
+Rd     0
+D1
+~
+~
+0 0 5949
+D3
+~
+~
+0 0 5936
+S
+#5949
+A Path~
+~
+~
+You have come to a dead end.  Only way leads to west, back where you came
+from You notice some fresh footprints coming from west and end here.  
+~
+0 401410 5
+Rd     0
+D3
+~
+~
+0 0 5948
+D4
+~
+bush~
+515 0 5950
+S
+#5950
+Up On The Clouds~
+~
+~
+There was a bush hiding a path indeed..  You find yourself on a path of
+clouds.  The weather here is always beautiful..  It's up to Zeus actually,
+depends on his mood.  The road continues to south from here.  
+~
+0 401410 5
+Rd     0
+D2
+~
+~
+0 0 5951
+D5
+~
+bush~
+515 0 5949
+S
+#5951
+Up On The Clouds~
+~
+~
+You are still walking the same cloudpath.  It is very easy to walk here,
+like the wind would carry you where needed.  The path continues to south,
+you see someone standing there..  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5950
+D2
+~
+~
+0 0 5952
+S
+#5952
+At An Angel~
+~
+~
+The path stops here.  You find yourself standing next to an angel. 
+Eigher go back or..  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 5951
+S
+#5953
+Throne of Zeus~
+~
+~
+You have entered to the Zeus' throne room.  This is a hugh room with many
+decorations, mostly made out of pure gold.  On the walls you see friezes
+showing the Titans being banished from Olympos.  A large mirror shows Zeus
+what is happening in the world.  
+~
+0 401410 9
+Rd     0
+D0
+~
+~
+0 0 5954
+D5
+~
+~
+0 0 5955
+S
+#5954
+Big Cloud~
+~
+~
+You were transported as the Angel had told you..  As you look around you
+see nothing but white mist..  Wait!  There's a something to south..  A
+little cloud path leads to south, to entrance to a temle.  You decide that
+Zeus has to live there and you start walking that way..  
+~
+0 401414 9
+Rd     0
+D2
+~
+~
+0 0 5953
+S
+#5955
+Strange Room~
+~
+~
+As you enter you notice it's very bright here.  There are several torches
+on the walls, burning.  The walls of this room are made from marble.  The
+light is coming from some sort of a portal, that's what you think.  
+~
+0 401414 9
+Rd     0
+D4
+~
+~
+0 0 5953
+S
+#5956
+Little Garden~
+~
+~
+You are walking in a little garden, in the middle of the Gods homes.  You
+can find flowers and trees here, that you have never seen before.  A
+gardener walks here taking care of the garden.  
+~
+0 401410 2
+Rd     0
+D0
+~
+~
+0 0 5957
+D2
+~
+~
+0 0 5906
+S
+#5957
+In The Middle Of The Garden~
+~
+~
+You are standing in the middle of this beautiful garden.  A golden statue
+is standing here - a man holding a thunderbolt in his hand.  It must be Zeus
+himself.  From here you can wander off to every direction.  
+~
+0 401410 2
+Rd     0
+D0
+~
+~
+0 0 5960
+D1
+~
+~
+0 0 5959
+D2
+~
+~
+0 0 5956
+D3
+~
+~
+0 0 5958
+S
+#5958
+Little Garden~
+~
+~
+You are walking in a little garden, in the middle of the Gods homes.  You
+can find flowers and trees here, that you have never seen before.  A
+gardener walks here taking care of the garden.  
+~
+0 401410 2
+Rd     0
+D1
+~
+~
+0 0 5957
+D3
+~
+~
+0 0 5924
+S
+#5959
+Little Garden~
+~
+~
+You are walking in a little garden, in the middle of the Gods homes.  You
+can find flowers and trees here, that you have never seen before.  A
+gardener walks here taking care of the garden.  
+~
+0 401410 2
+Rd     0
+D1
+~
+~
+0 0 5912
+D3
+~
+~
+0 0 5957
+S
+#5960
+Little Garden~
+~
+~
+You are walking in a little garden, in the middle of the Gods homes.  You
+can find flowers and trees here, that you have never seen before.  A
+gardener walks here taking care of the garden.  
+~
+0 401410 2
+Rd     0
+D0
+~
+~
+0 0 5961
+D2
+~
+~
+0 0 5957
+S
+#5961
+Little Garden~
+~
+~
+You are walking in a little garden, in the middle of the Gods homes.  You
+can find flowers and trees here, that you have never seen before.  A
+gardener walks here taking care of the garden.  
+~
+0 401410 2
+Rd     0
+D0
+~
+~
+0 0 5962
+D2
+~
+~
+0 0 5960
+S
+#5962
+Little Garden~
+~
+~
+You are walking in a little garden, in the middle of the Gods homes.  You
+can find flowers and trees here, that you have never seen before.  A
+gardener walks here taking care of the garden.  
+~
+0 401410 2
+Rd     0
+D0
+~
+~
+0 0 5933
+D2
+~
+~
+0 0 5961
+S
+#5963
+In A Vortex~
+~
+~
+You have been transported into a vortex!  Everything is moving, fast. 
+You are floating in air.  The vortex seems to have mind of it's own..  
+~
+0 401410 9
+Rd     0
+D5
+~
+~
+0 0 5964
+S
+#5964
+In A Vortex~
+~
+~
+You were transferred into a vortex..  As you look around you see you are
+floating in the air, vortex swirling around you.  You can go up from here. 
+It seems to be only wait out of here.  
+~
+0 401414 9
+Rd     0
+D4
+~
+~
+0 0 5963
+S
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+O 0 5902 0 5900
+M 0 5900 1 5905
+E 0 5900 0 20
+E 0 5900 0 21
+O 0 5901 0 5908
+M 0 5901 1 5910
+E 0 5903 0 17
+M 0 5906 1 5913
+E 0 5900 0 20
+G 0 5937 0
+M 0 5912 1 5917
+E 0 5913 0 20
+M 0 5908 1 5919
+E 0 5904 0 22
+E 0 5900 0 20
+G 0 5922 0
+G 0 5932 0
+M 0 5902 1 5922
+E 0 5914 0 23
+G 0 5938 0
+M 0 5903 1 5925
+E 0 5917 0 12
+M 0 5904 1 5928
+E 0 5921 0 20
+G 0 5942 0
+M 0 5905 1 5931
+E 0 5920 0 13
+G 0 5939 0
+O 0 5906 0 5935
+M 0 5907 1 5935
+M 0 5915 1 5937
+E 0 5900 0 20
+M 0 5919 1 5940
+G 0 5925 0
+O 0 5925 0 5941
+M 0 5920 1 5941
+E 0 5926 0 20
+E 0 5900 0 21
+E 0 5933 0 17
+E 0 5935 0 14
+M 0 5916 1 5943
+E 0 5945 0 20
+M 0 5918 1 5945
+E 0 5924 0 6
+E 0 5900 0 20
+E 0 5934 0 14
+O 0 5907 0 5947
+M 0 5917 1 5947
+E 0 5900 0 20
+M 0 5910 1 5952
+E 0 5900 0 20
+E 0 5900 0 21
+E 0 5918 0 16
+M 0 5911 1 5953
+E 0 5908 0 15
+E 0 5923 0 6
+E 0 5928 0 20
+O 0 5911 0 5955
+O 0 5912 0 5957
+M 0 5913 1 5957
+E 0 5915 0 20
+M 0 5914 1 5959
+E 0 5916 0 20
+M 0 5921 1 5963
+O 0 5930 0 5963
+S
+
+
+
+#SHOPS
+5908 0 0 0 0 0 150 50 0 24
+0
+
+
+
+#$

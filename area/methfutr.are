@@ -1,0 +1,6472 @@
+#AREADATA
+Name        { 50-70} Future Methidoral~
+Builders    None~
+VNUMs       26000 26200
+Security    100
+Recall      26002
+Flags       64
+Version     107
+Creator     Tyrion~
+Llevel      0
+Ulevel      0
+Sounds      You hear a siren in the distance.~
+Music       tiamat.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#26000
+Hierophant~
+The Hierophant of Methidoral~
+The eternal Hierophant towers overhead.
+~
+The Hierophant looks to have been here a long time, and looks as though he is
+ready to stand here just as long.  
+
+~
+11 33579692 16 0 0 1000 S
+108 1 216 216 30000 30000d0+0 0d0+0
+0 0 0
+0 0 0
+4 0 0
+>greet_prog 30~
+smile $n
+'Welcome $n, please be at rest here...
+~
+>speech_prog heal hurt dying pain~
+if level($n) < 6
+  t $n Ahhh, you are still low of level...
+  t $n For this reason, I shall grant you extended help.
+  c 'cure serious' $n
+endif
+~
+|
+#26001
+protector~
+The Protector~
+The Protector is here, guarding the temple.
+~
+The Protector is a giant of a man.  He still uses a traditional sword in
+times of battle.  
+~
+3 436216492 52 16384 0 1000 S
+120 1 240 240 50000 50000d0+0 0d0+120000
+1200 0 0
+0 0 1
+33007 0 0
+>greet_prog 100~
+if isimmort($n) == 1
+   if sex($n) == 1
+        say Greetings Lord $n.
+      bow $n
+      break
+  else
+  if sex($n) == 2
+   say Greeting Lady $n.
+   curtsy $n
+   break
+ endif
+endif
+if ispc($n) == 1
+   if isgood($n) == 1
+       smile $n
+       say Enjoy your stay in Methidoral $n.
+       break
+   else
+       glare $n
+       say Watch thine step $n.
+       break
+    endif
+endif
+~
+>fight_prog 50~
+yell Alas, $n breeds dishonor... it is time for $m to die!
+slam
+~
+>fight_prog 10~
+yell DIE, $n!
+bk
+~
+>fight_prog 75~
+say Give me your life!
+drain
+~
+|
+#26002
+postal worker disgruntled~
+Disgruntled postal worker~
+A disgruntled postal worker walks around highstrung.
+~
+~
+65 67108992 0 0 0 -1000 S
+60 1 120 120 17052 17052d0+0 0d0+29341
+600 0 0
+0 0 0
+0 0 0
+#26003
+William alchemist~
+William~
+William stands here, selling potions.
+~
+~
+67 8872 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+100000
+3000 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+look $n
+if ispc($n) == 1
+   if isgood($n) == 1
+      say Welcome to my humble shop $n.
+      smile $n
+   else
+      say I've got my eye on you $n!
+      glare $n
+   endif
+else
+    mpforce $n east
+  break
+endif
+~
+|
+#26004
+Frank~
+Frank~
+Frank is here, tending his antique shop.
+~
+Frank stands about six foot two, and he is built like a tank. He
+glances at you with eyes that have seen many a battle, and know how to
+escape death during them.  He looks to know everything there is to know
+about protection during combat, and you feel that you could trust his armour
+to stand up to the worst.  
+e
+~
+3 8872 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+100000
+3000 0 0
+0 0 1
+0 0 0
+#26005
+Jennifer~
+Jennifer, the manager~
+Jennifer, the manager of the store, hurries over to help you.
+~
+~
+67 8328 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 2
+0 0 0
+#26006
+Jim~
+Jim~
+Jim calmly looks you over, keeping his shotgun handy.
+~
+Jim is one of the more disgusting people you have had the unfortune to
+meet.  He is constantly spitting his chew into the trash can, and his greasy
+hair looks like it hasn't been washed in a month.  
+~
+3 8872 0 0 0 1000 S
+3000 1 6000 6000 30000 30000d0+0 0d0+100000
+30000 0 0
+0 0 1
+0 0 0
+#26007
+Johanna~
+Johnna~
+Johanna tries to get you to buy some jewelry
+~
+~
+3 8360 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 2
+0 0 0
+#26008
+Victoria~
+Victoria~
+A Wicken High Priestess is here scribing spells and watching over her store.
+~
+~
+3 8360 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+t $n Welcome to my store, type &Rlist&W to see what I sell.
+-
+~
+|
+#26009
+Evan~
+Evan~
+A very powerful, yet friendly magus stands here, waiting to talk to you.
+~
+~
+3 8360 0 0 0 100 S
+300 1 600 600 30000 30000d0+0 0d0+100000
+3000 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say Welcome $n, type LIST to see what I can sell you.
+~
+|
+#26010
+Teenager~
+A Bored Teenager~
+A Bored Teenager stands behind the counter, wishing he was elsewhere.
+~
+~
+3 8320 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+#26011
+Rerun Burgerama Worker~
+Rerun the Burgerama Worker~
+A cashier fixes his headset before he takes your order.
+~
+~
+3 8360 0 0 0 -1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+3 0 0
+#26012
+Sister Suzanne~
+Sister Suzanne~
+Sister Suzanne makes the sign of the cross at you as you enter.
+~
+~
+3 8328 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#26013
+Bob~
+Bob~
+Bob, stands behind the counter waitint patiently for you to make a purchase.
+~
+~
+3 8328 0 0 0 200 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#26014
+John Baker~
+John~
+The baker stands here, making bread.
+~
+~
+3 8328 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#26015
+Bartender ~
+Bartender~
+The Bartender stands behind the bar, taking drink orders.
+~
+~
+3 8328 0 0 0 1000 S
+200 1 400 400 30000 30000d0+0 0d0+1000
+2000 0 0
+0 0 1
+0 0 0
+#26016
+Fred Tailor~
+Fred the Tailor~
+An elderly man stands here repairing shoes.
+~
+~
+3 8328 0 0 0 500 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#26017
+Pantor~
+Pantor~
+Pantor, the storekeeper of the pet shop stands here selling animals.
+~
+~
+3 8328 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 2
+0 0 0
+#26018
+Nerrk, headmaster~
+Nerrk, the headmaster~
+A well armoured man stands here hiring out his mercenaries.
+~
+~
+3 33562760 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 1
+0 0 0
+#26019
+puppy dog~
+A puppy~
+A small puppy wags his tail happily here.
+~
+~
+257 0 0 0 0 0 S
+3 1 6 6 15 15d0+0 0d0+0
+30 0 0
+0 0 1
+0 0 0
+>rand_prog 30~
+if ispc($r)
+  ,pees on $r's shoes.
+endif
+~
+|
+#26020
+Pit bull dog pitbull~
+A pitbull~
+A rather large pitbull growls ominously.
+~
+~
+257 8 0 0 0 0 S
+8 1 16 16 80 80d0+0 0d0+0
+80 0 0
+0 0 2
+0 0 0
+#26021
+kitten cat~
+A kitten~
+A small kitten purrs happily at you.
+~
+~
+257 512 0 0 0 0 S
+2 1 4 4 15 15d0+0 0d0+0
+20 0 0
+0 0 2
+0 0 0
+#26022
+hawk bird~
+A hawk~
+A beautiful hawk perches here.
+~
+~
+257 524296 0 0 0 100 S
+5 1 10 10 50 50d0+0 0d0+0
+50 0 0
+0 0 2
+0 0 0
+#26023
+Wolf dog~
+A wolf~
+A magnificant grey wolf stalks around here.
+~
+~
+257 8 0 0 0 -100 S
+12 1 24 24 130 130d0+0 0d0+0
+120 0 0
+0 0 1
+0 0 0
+#26024
+mage mercenary~
+A mage~
+A stately mage stands here.
+~
+~
+257 524296 0 0 0 400 S
+15 1 30 30 1000 1000d0+0 0d0+0
+150 0 0
+0 0 0
+0 0 0
+#26025
+warrior barbarian~
+A barbarian~
+A well muscled barbarian stands here.
+~
+~
+257 0 0 0 0 100 S
+20 1 40 40 2000 2000d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#26026
+cleric priest~
+A priest~
+A priest in flowing white robes stands here.
+~
+~
+257 8 0 0 0 1000 S
+20 1 40 40 1400 1400d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+#26027
+Police Officer~
+A Police Officer~
+A Police Officer wanders the streets in search of crime
+~
+~
+65 200 0 0 0 1000 S
+115 1 230 230 17000 17000d0+0 0d0+4000
+1150 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+mpecho $I approaches you...
+say Hi $n, I was just wondering if you have seen any criminals wandering the streets lately?
+endif
+~
+>speech_prog yes yeah~
+mpecho $I gets very serious.
+say I need you to tell me where this vile person is, so that I may serve justice!
+~
+>speech_prog nope no~
+smile
+point self
+say See what a good job I am doing?!?!?
+~
+>speech_prog maybe possibly might~
+blink
+say Maybe! Maybe!? Don't play with me, $n! I will arrest you for obstructing a police officer in the line of duty!!
+~
+|
+#26028
+Police Officer Station~
+A Police Officer~
+A Police Officer is getting ready to leave.
+~
+~
+67 200 0 0 0 1000 S
+60 1 120 120 17000 17000d0+0 0d0+6000
+600 0 0
+0 0 1
+0 0 0
+#26029
+Police Liuetenant~
+The Police Lieutenant~
+The Police Lieutenant looks you over.
+~
+~
+67 16576 0 0 0 1000 S
+66 1 132 132 21300 21300d0+0 0d0+6000
+660 0 0
+0 0 1
+0 0 0
+#26030
+Security Guard~
+A Security Guard~
+A Security Guard stands here, making sure there is no crime.
+~
+~
+67 200 0 0 0 0 S
+60 1 120 120 17000 17000d0+0 0d0+6000
+600 0 0
+0 0 1
+0 0 0
+#26031
+vagabond~
+A vagabond~
+A scrawny vagabond roams the streets of Methidoral.
+~
+~
+65 40 0 0 0 -500 S
+10 1 20 20 250 250d0+0 0d0+50
+100 0 0
+0 0 1
+0 0 0
+#26032
+child Methidoral~
+A child~
+One of Methidoral's children plays in the streets here.
+~
+This child is a young boy of an apparent age of about 15.  From his clothing,
+he appears to already be following in the footsteps of his father or mother
+as an adventurer.
+~
+65 0 0 0 0 500 S
+5 1 10 10 35 35d0+0 0d0+1
+50 0 0
+0 0 1
+0 0 0
+#26033
+citizen Methidoral~
+A citizen of Methidoral~
+A citizen of Methidoral strolls through the town looking for things to buy.
+~
+~
+65 0 0 0 0 100 S
+12 1 24 24 325 325d0+0 0d0+60
+120 0 0
+0 0 2
+0 0 0
+#26034
+citizen Methidoral~
+A citizen of Methidoral~
+A citizen of Methidoral is wandering the streets here.
+~
+~
+65 0 0 0 0 500 S
+14 1 28 28 490 490d0+0 0d0+40
+140 0 0
+0 0 1
+0 0 0
+#26035
+Sanitation Worker~
+A Sanitation Worker~
+A Sanitation Worker cleans up the trash laying in the streets around Methidoral City
+~
+~
+65 0 0 0 0 100 S
+10 1 20 20 230 230d0+0 0d0+10
+100 0 0
+0 0 1
+0 0 0
+#26036
+dog hound scavenger~
+A hound~
+A hound roams the streets sniffing through rubbish.
+~
+~
+193 8 0 0 0 0 S
+5 1 10 10 100 100d0+0 0d0+0
+50 0 0
+0 0 1
+0 0 0
+#26037
+cat alley~
+An alley cat~
+An alley cat prowls the street in search of mice.
+~
+This cat is obviously on its own from the look of its hair, but it appears
+to be eating quite well from its size; you would assume there are plenty of
+people who favor cats in this city.
+~
+65 520 0 0 0 0 S
+4 1 8 8 40 40d0+0 0d0+0
+40 0 0
+0 0 2
+0 0 0
+#26038
+beggar bum~
+A beggar~
+A beggar hobbles about the streets here.
+~
+~
+69 8192 0 0 0 100 S
+7 1 14 14 90 90d0+0 0d0+1
+70 0 0
+0 0 1
+0 0 0
+>greet_prog 20~
+if sex($n) == 1
+  say spare some gold good sir?
+    break
+else
+    say spare some gold m'lady?
+    break
+endif
+~
+>act_prog p looks at you~
+emote smiles toothlessly at you in hopes of a coin.
+~
+>bribe_prog 1000~
+mpoload 26048
+say THANK YOU!!! My GOD!!!
+give cloak $n
+say A gift for your generousity!
+~
+|
+#26039
+wizard Methidoral mage~
+A mage of Methidoral~
+One of Methidoral's mages wanders the street here.
+~
+This mage is appears to be a female in her early twenties, but then, with
+magic there is no way to be sure of her real age.  Her clothing matches that of her profession.
+~
+65 33554472 0 0 0 100 S
+20 1 40 40 600 600d0+0 0d0+7500
+200 0 0
+0 0 2
+0 0 0
+>speech_prog ouch!  I could REALLY use a fireshield.~
+if rand(20)
+  if ispc($n)
+    if level($n) < 15
+      smile $n
+      say Well, I guess i can supply you with a shield if its needed that badly.
+      cast 'fireshield' $n
+      break
+    endif
+  endif
+endif
+mpecho &B$I places a finger to the sky and disappears!
+mpteleport
+mpecho &B$I steps out of the shadows.
+~
+|
+#26040
+warrior veteran~
+A veteran~
+A veteran of Methidoral's army is here.
+~
+~
+65 0 0 0 0 100 S
+16 1 32 32 400 400d0+0 0d0+2000
+160 0 0
+0 0 1
+0 0 0
+#26041
+keeper lost found~
+the keeper~
+The Keeper of Methidoral's Lost and Found whistles away as you rumage around.
+~
+A tall slender man, standing nearly six and a half feet.  He looks almost
+asleep, but I wouldn't let that fool you - the keeper is built like a TANK! 
+~
+3 100663424 0 0 0 1000 S
+150 1 300 300 30000 30000d0+0 0d0+1000
+1500 0 0
+0 0 1
+0 0 0
+#26042
+Igor man smith~
+Big Jim ~
+Big Jim the smithy stands here, repairing equipment.
+~
+~
+67 100687872 0 0 0 1000 S
+300 1 600 600 30000 30000d0+0 0d0+10000
+3000 0 0
+0 0 0
+39 0 0
+#26043
+Thug ~
+A Thug~
+A thug strolls through the streets...
+~
+A seedy looking individual with a broken nose and a few teeth missing. Just
+by his appearance and his behavior, you know this guy is up to no good!
+~
+69 0 0 0 0 -333 S
+18 1 36 36 550 550d0+0 0d0+10000
+180 0 0
+0 0 1
+0 0 0
+#26044
+Lady ~
+A beautiful Woman~
+A beautiful woman leans on the citywalls...
+~
+This Lady is giving you her best smile! She tries to hide in the shadows
+of the citywall, and you ponder why she does that....hmmm.
+~
+195 2 0 0 0 200 S
+12 1 24 24 500 500d0+0 0d0+12000
+120 0 0
+0 0 2
+0 0 0
+#26045
+draco dragon~
+Draco~
+Draco, KING of the true DRAGONS!
+~
+~
+1 404243172 0 0 0 1000 S
+200 1 400 400 30000 30000d0+0 0d0+200000
+2000 0 0
+0 0 1
+3495 0 0
+#26046
+Irkel~
+Irkel~
+Irkel the questmaster awaits adventurers to ask for quests.
+~
+~
+67 134217856 0 0 0 0 S
+300 1 600 600 10000 10000d0+0 0d0+0
+3000 0 0
+0 0 1
+0 0 0
+#26047
+Bouncer~
+The Bouncer~
+The Bouncer sits at the door, checking ID's.
+~
+~
+3 128 0 0 0 0 S
+150 1 300 300 50000 50000d0+0 0d0+0
+1500 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if level($n) > 20
+mpecho $I looks at your ID and allows you to pass.
+else
+mpecho $I looks at your ID, laughs, and says:
+mpecho "Nice try. Should I call the cops, or just Confiscate your ID?"
+mpecho $I takes your ID and puts it in a pile with other fakes.
+push $n south
+endif
+endif
+~
+|
+#26048
+Jeff Fireman~
+Jeff the Fireman~
+Jeff the Fireman stands here, waiting for a fire.
+~
+~
+3 33554560 0 0 0 0 S
+150 1 300 300 50000 50000d0+0 0d0+0
+1500 0 0
+0 0 0
+128 0 0
+>rand_prog 5~
+mpecho $I Sits down and nervously begins flicking a lighter.
+~
+>rand_prog 5~
+mpecho $I lights a stack of papers on fire by mistake.
+mpecho "Holy Crap!"
+mpecho $I throws the papers out the window! Better watch out below!
+~
+>speech_prog fire~
+mpecho $I Gets all excited!
+mpecho $I screams "Where? Where?!"
+~
+|
+#26049
+Veener~
+Veener the Proctologist~
+An incompetant doctor waits for his next patient.
+~
+~
+65 0 0 0 0 0 S
+20 1 40 40 3700 3700d0+0 0d0+0
+200 0 0
+0 0 1
+1 0 0
+>act_prog ~
+~
+>speech_prog Veener~
+mpecho Veener suddenly looks startled.
+say Huh? What? You wish to speak to me??
+mpecho Veener has an expression of great happiness on his face.
+~
+>speech_prog pong~
+say Oh, so Pong told you to come talk to me, did he?
+say Wow! What a day! Pong has finally accepted me as his equal!
+boogie $n
+say Oh...I'm terribly sorry...what was it you wanted to talk to me about?
+smile $n
+~
+>speech_prog Time Travel Travelling timetravel~
+say So you believe in it too!!! And I thought I was the only one for all this time...  
+mpecho Veener gets a very serious look on his face
+say Would you like for me to explain what this is all about?
+~
+>speech_prog nope no nopers noper never~
+say Then get out of here! You are wasting my time! You will see...You will all see!!!
+~
+>speech_prog maybe possibly possible somewhat~
+say Either you want me to tell you about it, or you don't! I am a very busy doctor. Stop wasting my time!
+say Good day, $n.
+~
+>speech_prog yes yeah yep bet yup yeppes yuppers nods nod~
+mpecho Veener looks around nervously, making sure noone is watching.
+say Ok...I will give you a book that I wrote about this very subject.  Here...read the second chapter. I believe that this will answer most of your questions.
+mpoload 26092
+give book $n
+mpforce $n read book
+~
+|
+#26050
+Pong~
+Pong the Proctologist~
+The doctor walks in and waits for his next patient
+~
+~
+65 128 0 0 0 0 S
+62 1 124 124 17750 17750d0+0 0d0+0
+620 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+if isnpc($n) == 1
+if name($n) == veener
+say Veener! You are doing it all wrong! How many time must i show you?
+say Like this!
+mpecho $I shows Veener what to do by making an example of him!
+mpforce $n yell Ooooouuucccchh!!! You have no tact Dr. Pong!!
+gasp veener
+slap veener
+mpkill $n
+endif
+endif
+~
+>speech_prog pong~
+mpecho Pong turns around quickly.
+say That is me. Can I help you with something?
+~
+>speech_prog Doctor~
+say Yes, I am one of many doctors here.  Is there one in particular you are looking for?
+~
+>speech_prog time travel travelling timetravel nonsense hogwash~
+chuckle
+say Ahh.. the doctor you must want to speak to is Veener. He often talks of such silly, silly ideas.  He actually thinks that one is able to travel in and out of time.
+sigh
+shake
+say What a ridiculous thought.
+~
+>speech_prog veener~
+say Veener is one of the other doctors in the hospital. I'm sure he will be overjoyed to hear someone who wishes to speak to him about it.
+~
+>speech_prog yes yeah yep yup yeppers ya yuppers nods nod~
+say Ok. What can I do for you? Are you feeling all right? Let me take your temperature.
+mpecho Pong shoves a thermometer in your mouth.
+~
+|
+#26051
+Police Chief~
+The Police Chief~
+The Police Chief sits behind his desk.
+~
+~
+67 302006400 0 0 0 1000 S
+70 1 140 140 23000 23000d0+0 0d0+48790
+700 0 0
+0 0 0
+0 0 0
+#26052
+Police Car~
+A Police Car~
+A Police Car drives around, its lights flashing.
+~
+~
+65 134226112 0 0 0 0 S
+70 1 140 140 25000 25000d0+0 0d0+0
+700 0 0
+0 0 0
+0 0 0
+#26053
+Fire Engine~
+A Fire Engine~
+A Fire Engine rushes to put out a fire!
+~
+~
+65 33554624 0 0 0 0 S
+70 1 140 140 25000 25000d0+0 0d0+0
+700 0 0
+0 0 0
+128 0 0
+#26054
+Fire Man~
+A Fireman~
+A Fireman battles the fire.
+~
+~
+65 33554664 0 0 0 500 S
+57 1 114 114 0 0d0+0 0d0+37832
+570 0 0
+0 0 1
+128 0 0
+#26055
+Violent Criminal~
+A Violent Criminal~
+A Violent Criminal sits here in solitary confinement.
+~
+~
+3 268451840 0 0 0 -1000 S
+62 1 124 124 18560 18560d0+0 0d0+15000
+620 0 0
+0 0 1
+0 0 0
+#26056
+Mayor Methidoral~
+The Mayor of Methidoral City~
+The Mayor sits behind his desk.
+~
+~
+3 24808 0 0 0 700 S
+55 1 110 110 13000 13000d0+0 0d0+41847
+550 0 0
+0 0 1
+3 0 0
+#26057
+City Council Member~
+A City Council Member~
+A CIty Council Member gets ready to vote on an issue.
+~
+~
+3 8384 0 0 0 -500 S
+50 1 100 100 11621 11621d0+0 0d0+36321
+500 0 0
+0 0 2
+3 0 0
+#26058
+Secretary Mayor~
+The Mayor's Secretary~
+The Mayor's Secretary sits here and gives out information to the guests.
+~
+~
+3 192 0 0 0 1000 S
+50 1 100 100 11175 11175d0+0 0d0+23921
+500 0 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+say Hello $n! Have you come to see the mayor today?
+smile
+~
+>rand_prog 0~
+~
+>speech_prog time year date~
+say this is the year 1997! Have you been living in a closet?
+snicker
+~
+>speech_prog nope no never~
+say Well $n, you have come to the wrong place then. Have a nice day, wherever your adventures may take you.
+smile $n
+wave $n
+~
+>speech_prog maybe possible possibly~
+say There is no maybe about it. Either you want to see him or you don't.
+growl $n
+~
+>speech_prog methic dorat ice age old~
+say Methic Dorat existed during the ice age, many many years ago.  What a life they must have had, living in caves their whole existences. They had some hard lives, let me tell you.  Having to hunt Sabre-Toothed Tigers, and Wooly Mammoths
+say and what not. And the cold!! You think its cold now? This is nothing compared to what they had to endure! How could anyone ever survive back then?!?
+shrug $n
+~
+>speech_prog survive survival live living life~
+say That's a good question! I have no idea how they survived back then. It musta have been tough.
+~
+>speech_prog mage magus savior saved saver save helped helper help~
+say Well, as i was telling you earlier, to this date, noone really knows who the magus was that saved Methidoral from the invaders. However, it has been rumored that if you could somehow go back into time, and go to Methidoral, as it was
+say during this time, that you would be able to possibly find this mage, and discover who it is.  I am sure he could provide you with a lot of useful information, and you would be a hero for finding out who this person was!
+laugh
+say Travelling time! Hah! What a ridiculous thought! I have never heard of such utter nonsense.
+chuckle
+~
+>speech_prog Middle Medieval Methidoral~
+say Yes, it was called Methidoral back in those days.  That was at least seven or eight hundred years ago, though.  However, you can still see a few of the old buildings that are intact in parts of the city.  How things have changed!!
+~
+>speech_prog travelling travel~
+say well, from what i hear, there is a certain doctor who believes in such nonsense, but not me!! I believe it is hogwash!
+snicker
+~
+>speech_prog changed changes change~
+say Well, most of the buildings haven't survived taht long, but there are a few that may be well hidden among the newer ones.  I have heard that one is so hidden that no one has found it yet.  I'm sure someone will...It is only a matter of time.
+~
+>speech_prog doctor believes believe believing~
+say Yeah, there is this doctor in the hospital that talks of such nonsense.  I can't remember his name tho...perhaps Pong would. Go ask him, i'm sure he will know.
+smile
+~
+>speech_prog hidden buildings building hide ~
+say Well, i'm not sure where the buildings are either, but there is this on fellow i know of who might.  Go talk to the Jeff, i hear he knows a lotta secrets about the city. I can't guarentee that he will talk to you though.
+~
+>speech_prog Nonsense Hogwash utter~
+stare $n
+say The stuff about travelling time! What have you been listening to all this time?
+~
+>speech_prog listening listen you talking talk~
+say Well, I certainly hope you have been listening to me! I'm not talking for my own health ya know!!
+sigh 
+~
+>speech_prog Pong~
+say Pong is one of the doctors in the hospital.  He is a nice guy, he will help you out.  He is pretty busy though.
+~
+>speech_prog Busy work~
+say Well, Pong is a doctor after all. He is seeing patients all day. Don't take up anymore time than necessary.
+~
+>speech_prog jeff ~
+nod
+say Thats right, Jeff.  He is the fireman of the Methidoral City.  You can probably find him in the fire station most of the time. He knows many secrets about the city.
+~
+>speech_prog secrets secret about~
+say He hasn't told me, but I have heard from a few dependable sources. They are secrets after all. Go talk to Jeff if you want to find out more.
+~
+>speech_prog dependable sources source few~
+say Well, who they are is not important.  Just know that Jeff knows more about the city than most people.  He has to.  What would happen if he idn't know his way around and there was a fire somewhere!
+gasp
+~
+>speech_prog Hospital~
+say The hospital I am speaking of is Methidoral City General Hospital.  Geez, you are being silly now aren't you?
+chcukle
+~
+>speech_prog silly silliness ~
+sigh
+say By pretending you aren't from here.  That's how you are being silly.  Now stop asking stupid questions.
+slap $n
+~
+>speech_prog New City~
+say Methidoral City is built over the same area where Methidoral lies.  I'm not going to tell you anymore about that...go out and explore for yourself.  Oh, and while your here, stop in at Humphrey's!
+wink $n
+~
+>speech_prog Humphrey's~
+say Humphrey's!! It's the most famous bar in all of Methidoral City.  You can find it on Laurentian Drive, west of Market Square.  I kinda like going there myself sometimes...maybe I could meet ya there later tonight...
+wink $n
+strut $n
+~
+>speech_prog future ~
+say Who knows what the future holds!  All I hope is that Methidoral City will be around forever. 
+~
+>speech_prog mayor ~
+say The mayor is in charge of the whole city!! Can you imagine that? What a responsibility he has.  Why are you in such a hurry...stay and talk for a while.  But if you must know, his name is Anthony.  If you really want to meet him, just say Anthony.
+~
+>speech_prog Anthony~
+sulk $n
+say Why don't you want to talk to me! Don't you like me? Fine.  Here is the key to the mayor's office. It's straight ahead, you can't miss it.
+grumble
+mpoload 26059
+give key $n
+~
+>act_prog ~
+~
+>speech_prog Hello Hi~
+smile
+say Hello $n. How are you today?
+say Have you come to see the mayor?
+~
+>speech_prog p How are you~
+say I am doing terrific, how about yourself?
+~
+>speech_prog good great terrific stupendous fine allright ok~
+say Good. Glad to hear it
+smile
+~
+>speech_prog bad terrible horrible awful sucky suck shitty shit sucks not~
+say Oh...I'm sorry to hear that.  I hope you feel better.
+comfort $n
+~
+>speech_prog laughing laugh ~
+say I can do whatever I please! Do you have a problem with that!? Oh, you do, do you? Well watch this then...
+snicker $n
+chuckle $n
+laugh $n
+muhaha $n
+say What do you think of that, $n!!!
+slap $n
+~
+>speech_prog funny~
+say Yeah, I think you are funny because you are being an idiot! Stop asking me questions I can't answer!
+boggle $n
+~
+>speech_prog shut fuck bitch whore fucking~
+say How dare you say that to me!!!!
+gasp $n
+say I am the Mayor's Secretary and I demand you treat me with respect!!
+say take this!!
+fart $n
+~
+>speech_prog ~
+~
+>speech_prog yes yeah yep~
+grin $n
+say OK, but before I can allow you to see the mayor, I must inform you about the history of Methidoral City.  Here is a pamphlet....Read it!
+mpoload 26091
+give pamphlet $n
+mpforce $n read pamphlet
+~
+|
+#26059
+Mail Clerk~
+A Mail Clerk~
+A Mail Clerk calls the next person in line to the window.
+~
+~
+3 192 0 0 0 15 S
+55 1 110 110 13203 13203d0+0 0d0+36231
+550 0 0
+0 0 1
+3 0 0
+#26060
+Surgeon~
+A Surgeon~
+A Surgeon is operating to save a patient's life
+~
+~
+67 268443840 0 0 0 550 S
+65 1 130 130 21243 21243d0+0 0d0+53902
+650 0 0
+0 0 1
+3 0 0
+#26061
+Nurse~
+A Nurse~
+A Nurse walks the corridors giving medicine to patients.
+~
+~
+65 33554496 0 0 0 200 S
+54 1 108 108 12900 12900d0+0 0d0+24136
+540 0 0
+0 0 2
+3 0 0
+#26062
+Receptionist Hospital~
+A Hospital Receptionist~
+A Hospital Receptionist is busy with paperwork.
+~
+~
+3 192 0 0 0 -200 S
+51 1 102 102 11923 11923d0+0 0d0+23105
+510 0 0
+0 0 2
+3 0 0
+#26063
+Intern~
+A Medical Intern~
+A Medical Intern follows a doctor around like a dog.
+~
+~
+65 192 0 0 0 300 S
+47 1 94 94 10784 10784d0+0 0d0+15000
+470 0 0
+0 0 0
+3 0 0
+#26064
+Criminally Insane Patient~
+A Criminally Insane Patient~
+A Criminally Insane Patient wanders around witha glazed look in his eyes.
+~
+~
+97 268451904 0 0 0 -800 S
+58 1 116 116 16200 16200d0+0 0d0+0
+580 0 0
+0 0 1
+3 0 0
+#26065
+Ambulance~
+An Ambulance~
+An Ambulance wails its siren, trying to save a victim
+~
+~
+65 33554624 0 0 0 0 S
+67 1 134 134 24210 24210d0+0 0d0+0
+670 0 0
+0 0 0
+0 0 0
+#26066
+X-ray Machine~
+An X-Ray Machine~
+An X-Ray Machine goes about tis work.
+~
+~
+3 192 0 0 0 0 S
+60 1 120 120 17241 17241d0+0 0d0+0
+600 0 0
+0 0 0
+3 0 0
+#26067
+Store Manager~
+A Store Manager~
+A Store manager walks around, looking to help people.
+~
+~
+65 192 0 0 0 500 S
+61 1 122 122 17641 17641d0+0 0d0+43091
+610 0 0
+0 0 1
+3 0 0
+#26068
+Teenage Punk~
+A Teenage Punk~
+A Teenage Punk looks to start trouble
+~
+~
+65 192 0 0 0 -600 S
+50 1 100 100 11462 11462d0+0 0d0+17946
+500 0 0
+0 0 1
+3 0 0
+>act_prog ~
+~
+|
+#26069
+Senior Citizen~
+A Senior Citizen~
+A Senior Citizen walks slowly through the mall.
+~
+~
+65 8424 0 0 0 1000 S
+53 1 106 106 12572 12572d0+0 0d0+27520
+530 0 0
+0 0 2
+3 0 0
+#26070
+Bum~
+A Bum~
+A Bum walks around in a drunken stupor.
+~
+~
+65 192 0 0 0 35 S
+51 1 102 102 11754 11754d0+0 0d0+2548
+510 0 0
+0 0 1
+0 0 0
+#26071
+Store Employee~
+A Store Employee~
+A Store Employee tries to keep up with the customers
+~
+~
+3 192 0 0 0 600 S
+54 1 108 108 12895 12895d0+0 0d0+36218
+540 0 0
+0 0 2
+3 0 0
+#26099
+Harry banker~
+Harry~
+Harry the Bank Teller unpatiently waits for you to step forward.
+~
+~
+131075 128 0 0 0 0 S
+150 1 300 300 50000 50000d0+0 0d0+0
+1500 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+if isimmort($n) == 1
+  if sex($n) == 1
+     say Greetings M'lord $n!
+     grovel $n
+     mpforce $n cackle
+     break
+   else
+  if sex($n) == 2
+     say Greetings M'lady $n!
+     grovel $n
+     mpforce $n cackle
+     break
+  endif
+endif
+if ispc($n) == 1
+  if isgood($n) == 1
+    say Welcome to my humble bank, $n!
+    bow $n
+    break
+  endif
+endif
+if ispc($n) == 1
+  say Tread carefully here $n, as I have little patience for evil.
+  frown $n
+endif~
+>speech_prog information knowledge help money~
+mpechoat $n $i begins whispering to you as he hears something you say.
+mpechoat $n 'Ye be interested in help eh? Perhaps you should try asking
+mpechoat $n champions' he says.
+mpechoaround $n $i whispers quietly to $n, you wonder what about.
+~
+|
+#26132
+no name~
+Darkhound~
+A darkhound sits here.
+~
+~
+1 0 0 0 0 0 S
+120 1 240 240 10 10d0+0 0d0+0
+1200 0 0
+0 0 0
+0 0 0
+>speech_prog double~
+mpmload 26132
+~
+|
+#26145
+Joe Barber~
+Joe the Barber~
+Joe the Barber waits to give you a haircut.
+~
+~
+3 128 0 0 0 0 S
+150 1 300 300 50000 50000d0+0 0d0+0
+1500 0 0
+0 0 1
+0 0 0
+#0
+
+
+
+#OBJECTS
+#26000
+sword ancient~
+the sword of ancient times~
+An ancient sword rests on the ground.~
+~
+5 167775297 2 0 0 8193 104
+100 100
+0~ 0~ 0~ 11~
+15 1040 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 5
+A
+24 -20
+A
+18 45
+A
+19 45
+A
+13 150
+A
+12 150
+>get_prog ~
+0
+~
+|
+#26001
+box donation~
+a donation box~
+A box has been left here for donations.~
+~
+15 64 0 0 0 0 100000
+100 100
+9999~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26002
+fountain~
+fountain~
+A huge marble fountain sprays clear water into the air.~
+~
+25 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+3000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>get_prog ~
+0
+~
+|
+#26003
+hauberk chainmail chain~
+chain hauberk~
+A chain hauberk lies here in the dust.~
+~
+9 0 0 0 0 17 12
+100 100
+0~ 0~ 0~ 0~
+4 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#26004
+vest chain link~
+chain link vest~
+A chain vest lies forgotten here.~
+~
+9 0 0 0 0 9 10
+100 100
+0~ 0~ 0~ 0~
+6 80 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+#26005
+chain leggings~
+chain leggings~
+A pair of chain leggings has been left here.~
+~
+9 0 0 0 0 33 12
+100 100
+0~ 0~ 0~ 0~
+4 20 0
+0 0
+reserved~
+0 0
+0 0 0
+#26006
+sword broad broadsword~
+broadsword~
+A broadsword has been forgotten here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 3~
+6 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 2
+#26007
+leather pants~
+leather pants~
+A pair of leather pants have been left here.~
+~
+9 0 0 0 0 33 10
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+14 10
+#26008
+jerkin leather~
+leather jerkin~
+A leather jerkin has been left here.~
+~
+9 0 0 0 0 9 10
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#26009
+rusty sword longsword~
+rusty longsword~
+A rusty blade has been forgotten here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 1~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#26010
+leather helmet~
+leather helmet~
+A leather helmet has been left here.~
+~
+9 0 0 0 0 17 10
+100 100
+0~ 0~ 0~ 0~
+1 12 0
+0 0
+reserved~
+0 0
+0 0 0
+#26011
+cloak brown wool~
+brown woolen cloak~
+A brown woolen cloak lies here in a pile.~
+~
+9 0 0 0 0 1025 10
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 50
+A
+14 10
+#26012
+boots leather~
+leather boots~
+A pair of comfortable leather boots have been forgotten here.~
+~
+9 0 64 0 0 65 10
+100 100
+0~ 0~ 0~ 0~
+2 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#26013
+gloves silk~
+silken gloves~
+A pair of delicate silk gloves have been left here.~
+~
+9 64 128 0 0 129 10
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 75
+#26014
+necklace bead~
+bead necklace~
+A bead necklace has been left here.~
+~
+9 0 0 0 0 5 10
+100 100
+0~ 0~ 0~ 0~
+2 100 0
+5 0
+detect invis~
+2 2
+0 0 0
+A
+14 25
+#26015
+robe purple~
+purple robes~
+A pile of purple cloth lies here.~
+~
+9 0 0 0 0 1025 10
+100 100
+0~ 0~ 0~ 0~
+5 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 50
+A
+14 10
+#26016
+staff oaken~
+gnarled oaken staff~
+A gnarled oaken staff lies here.~
+~
+4 64 0 0 0 16385 14
+100 100
+20~ 5~ 5~ fly~
+3 40 0
+0 0
+fly~
+5 5
+0 0 0
+#26017
+leather bracers~
+leather bracers~
+A pair of strong leather bracers has been left here.~
+~
+9 0 256 0 0 4097 10
+100 100
+0~ 0~ 0~ 0~
+2 24 0
+5 0
+giant strength~
+3 3
+0 0 0
+#26018
+mace steel~
+steel mace~
+A huge steel mace has been left here.~
+~
+5 0 0 0 0 8193 10
+100 100
+0~ 0~ 0~ 8~
+8 48 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+#26019
+potion blue~
+blue potion~
+A blue potion of healing has been left here.~
+~
+10 268435520 0 0 0 1 8
+100 100
+100~ heal~ cure light~ reserved~
+2 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#26020
+white mana potion~
+white potion~
+A white mana potion has been left here.~
+~
+10 268435520 0 0 0 1 0
+100 100
+100~ mana~ reserved~ reserved~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26021
+pill orange protection~
+orange pill~
+An orange pill of protection has been left here.~
+~
+26 268435456 0 0 0 1 8
+100 100
+20~ armor~ bless~  ~
+2 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#26022
+yellow potion~
+yellow potion~
+A yellow potion of detect invis lies here.~
+~
+10 268435456 0 0 0 1 8
+100 100
+50~ detect invis~ detect hidden~ reserved~
+2 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#26023
+scroll recall~
+scroll of recall~
+A scroll of recall has been forgotten here.~
+~
+2 0 0 0 0 1 1
+100 100
+100~ word of recall~  ~  ~
+1 250 0
+0 0
+reserved~
+0 0
+0 0 0
+#26024
+scroll tattered~
+tattered scroll~
+A tattered scroll has been left here.~
+~
+2 0 0 0 0 1 1
+100 100
+100~ remove curse~ reserved~ reserved~
+2 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#26025
+scroll ident identify~
+scroll of identify~
+A scroll of identify has been left here.~
+~
+2 0 0 0 0 1 10
+100 100
+100~ identify~ reserved~ reserved~
+2 100 0
+0 0
+reserved~
+0 0
+0 0 0
+#26026
+pot pie~
+big pot pie~
+A big pot pie has been left here in the dirt.~
+~
+19 0 0 0 0 1 1
+100 100
+6~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26027
+bread loaf~
+loaf of bread~
+A loaf of bread has been left here.~
+~
+19 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26028
+cake chocolate~
+chocolate cake~
+A chocolate cake sits here on the ground.~
+~
+19 0 0 0 0 1 1
+100 100
+2~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26029
+cheesecake slice~
+slice of cheesecake~
+A delicious looking slice of cheesecake has been left here.~
+~
+19 0 0 0 0 1 1
+100 100
+2~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26030
+sack cloth~
+cloth sack~
+A cloth sack has been left here.~
+~
+15 0 0 0 0 1 1
+100 100
+10~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26031
+pouch belt~
+belt pouch~
+A leather belt pouch has been left here.~
+~
+15 0 2048 0 0 2049 1
+100 100
+10~ 1~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26032
+skin water bloated~
+bloated water skin~
+A bloated water skin lies on the ground here.~
+~
+17 0 0 0 0 1 1
+100 100
+100~ 100~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26033
+dried beef~
+dried beef~
+A chunk of dried beef has been left here.~
+~
+19 0 0 0 0 1 1
+100 100
+7~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26034
+lantern~
+covered lantern~
+A covered lantern has been tossed aside here.~
+~
+1 0 0 0 0 1 1
+100 100
+0~ 0~ 25~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26035
+wand missle~
+wand of missiles~
+A small maple wand lies on the ground here.~
+~
+3 64 16384 0 0 16385 8
+100 100
+20~ 15~ 15~ magic missile~
+4 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#26036
+dagger copper~
+copper dagger~
+A copper dagger has been left here.~
+~
+5 0 0 0 0 8193 18
+100 100
+0~ 0~ 0~ 11~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 3
+#26037
+mace copper~
+copper mace~
+A copper mace has been left here.~
+~
+5 0 0 0 0 8193 18
+100 100
+0~ 0~ 0~ 8~
+3 16 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 3
+#26038
+plate mail vest~
+copper plate vest~
+A plate mail vest make of copper has been left here.~
+~
+9 0 0 0 0 9 18
+100 100
+0~ 0~ 0~ 0~
+9 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 10
+#26039
+copper leggings~
+copper leggings~
+A pair of copper leggings have been left here.~
+~
+9 0 0 0 0 9 18
+100 100
+0~ 0~ 0~ 0~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 5
+#26040
+copper vambraces~
+copper vambraces~
+A pair of copper vambraces have been tossed aside here.~
+~
+9 0 0 0 0 257 18
+100 100
+0~ 0~ 0~ 0~
+5 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+#26041
+copper helmet~
+copper helmet~
+A copper helmet has been left here.~
+~
+9 0 0 0 0 17 18
+100 100
+0~ 0~ 0~ 0~
+3 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+#26042
+gauntlets copper~
+copper gauntlets~
+A pair of shiny copper gauntlets have been left here.~
+~
+9 0 128 0 0 129 18
+100 100
+0~ 0~ 0~ 0~
+2 52 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 1
+A
+1 1
+#26043
+faceplate copper~
+copper faceplate~
+A copper faceplate has been left here.~
+~
+9 0 0 0 0 65537 18
+100 100
+0~ 0~ 0~ 0~
+2 40 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 1
+#26044
+beer bottle~
+bottle of beer~
+A bottle of beer has been left here.~
+~
+17 0 0 0 0 1 1
+100 100
+10~ 10~ 1~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26045
+bottle whiskey~
+a bottle of whiskey~
+A bottle of whiskey sits here~
+~
+17 0 0 0 0 1 1
+100 100
+20~ 20~ 5~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26046
+cigar~
+smelly cigar~
+A smelly cigar has been tossed aside here.~
+~
+13 0 0 0 0 1 5
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26047
+pretzel salty~
+salty pretzels~
+A bunch of salty pretzels have been tossed to the ground here.~
+~
+19 0 0 0 0 1 1
+100 100
+2~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26048
+cloak invisibility~
+cloak of invisibility~
+Something shimmers on the ground here.~
+~
+9 64 0 0 0 1025 15
+100 100
+0~ 0~ 0~ 0~
+1 148 0
+5 0
+mass invis~
+10 10
+0 0 0
+A
+108 -1
+A
+100 -1
+A
+19 2
+#26049
+bracelet leather~
+a Leather Bracelet~
+A stylish leather bracelet...~
+~
+9 4 4096 0 0 4097 10
+100 100
+0~ 0~ 0~ 0~
+1 100 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 1
+A
+5 1
+#26050
+parchment scroll blank~
+blank parchment~
+A piece of blank parchment lies here.~
+~
+2 64 0 0 0 16385 1
+100 100
+0~ reserved~ reserved~ reserved~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#26051
+quill magical~
+magical quill~
+A feather quill has been left here.~
+~
+13 65 16384 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+4 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#26052
+potion flask~
+empty flask~
+An empty flask has been left here.~
+~
+10 268435520 0 0 0 16385 1
+100 100
+0~ reserved~ reserved~ reserved~
+3 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#26053
+cauldron~
+iron cauldron~
+A large iron cauldron has been left here.~
+~
+13 2 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+20 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#26054
+fire magic magical~
+magical fire~
+&RA magical fire roars on the ground here.~
+~
+1 64 0 0 0 1 50
+100 100
+0~ 0~ -1~ 0~
+1 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#26055
+ink magical~
+magical ink~
+A bottle of magical ink has been left here.~
+~
+13 64 0 0 0 1 50
+100 100
+0~ 0~ 0~ 0~
+1 240 0
+0 0
+reserved~
+0 0
+0 0 0
+#26056
+gallows~
+a gallows~
+A gallows stands here, noose swinging slightly.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+>invoke_prog 100~
+0
+~
+|
+#26057
+green pill~
+a green pill~
+A green pill sits here.~
+~
+26 0 0 0 0 1 8
+100 100
+50~ cure poison~ reserved~ reserved~
+1 80 0
+0 0
+reserved~
+0 0
+0 0 0
+#26058
+desk~
+desk~
+A desk lines the southern wall.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26059
+Key to the Mayor's Office~
+a Key to the Mayor's Office~
+A shiny, new key lies here.~
+~
+18 0 0 0 0 1 40
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26060
+Bullet Proof Vest~
+a Bullet Vest~
+A black vest with a lot of padding lies here.~
+~
+9 7168 0 0 0 9 55
+100 100
+0~ 0~ 0~ 0~
+4 548 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -7
+A
+24 -7
+A
+1 1
+A
+19 8
+A
+19 18
+A
+18 16
+#26061
+Billy Club~
+a Billy Club~
+A big stick with a strong cord attached to it lies here.~
+~
+9 3072 0 0 0 8193 55
+100 100
+0~ 0~ 0~ 0~
+2 548 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 17
+A
+18 17
+A
+26 -50
+#26062
+9mm Standard Issue Gun~
+a 9mm Standard Issue~
+A black gun lies here.~
+~
+32 0 0 0 0 2097153 50
+100 100
+500~ 6~ 6~ bullet~
+3 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#26063
+Badge Police Lieutenant~
+a Police Lieutenant's Badge~
+An official looking badge lies here.~
+~
+9 4459651 4099 0 0 16385 60
+100 100
+0~ 0~ 0~ 0~
+2 600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -3
+A
+19 6
+A
+1 -1
+A
+5 -1
+A
+13 -50
+A
+24 -6
+A
+23 4
+A
+12 15
+#26064
+Badge Police Chief~
+a Police Chief's Badge~
+A very well decorated badge lies here.~
+~
+9 4459648 4107 0 0 16385 68
+100 100
+0~ 0~ 0~ 0~
+2 680 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 6
+A
+12 20
+A
+13 -40
+#26065
+Razor Blade~
+a Razor Blade~
+A sharp metal blade lies here.~
+~
+5 262656 2 0 0 8193 56
+100 100
+0~ 0~ 0~ 3~
+1 60 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+18 3
+#26066
+Scalpel Surgeon~
+a Scalpel~
+A sharp precision cutting instrument lies here.~
+~
+5 0 0 0 0 8193 65
+100 100
+0~ 0~ 0~ 3~
+3 424 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 12
+A
+18 6
+A
+13 60
+#26067
+Mask Surgical~
+a Surgical Mask~
+A protective mask to prevent spreading germs lies here.~
+~
+9 262147 11 0 0 65537 66
+100 100
+0~ 0~ 0~ 0~
+1 660 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -3
+A
+24 -5
+A
+3 1
+A
+4 1
+A
+18 8
+A
+19 3
+#26068
+Scrub Suit~
+a Surgical Scrub Suit~
+Some doctor's clothing lies here.~
+~
+9 0 0 0 0 1025 67
+100 100
+0~ 0~ 0~ 0~
+3 312 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 -1
+A
+2 -1
+A
+12 20
+A
+13 56
+A
+18 19
+A
+19 16
+#26069
+Hat Nurse~
+a Nurse Hat~
+A funny looking white hat lies here.~
+~
+9 4457473 10 0 0 17 54
+100 100
+0~ 0~ 0~ 0~
+3 392 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -1
+A
+24 -1
+A
+19 4
+A
+18 6
+#26070
+Knife Butter~
+a Butter Knife~
+A dull knife lies here.~
+~
+5 0 0 0 0 8193 27
+100 100
+0~ 0~ 0~ 11~
+2 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 2
+A
+19 4
+#26071
+Gown Hospital~
+a Hospital Gown~
+A thin gown lies crumpled up on the floor~
+~
+9 2560 0 0 0 9 50
+100 100
+0~ 0~ 0~ 0~
+2 332 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 20
+A
+13 -10
+A
+18 4
+A
+19 7
+#26072
+latex Gloves~
+latex Gloves~
+Some stretchy gloves lie on the ground here.~
+~
+9 0 0 0 0 129 59
+100 100
+0~ 0~ 0~ 0~
+1 20 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 3
+A
+19 3
+#26073
+Stethiscope~
+a Stethiscope~
+A strange looking pair of metal tubes with a circular attachment lies here.~
+~
+9 0 0 0 0 5 40
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 1
+A
+4 1
+A
+18 5
+A
+19 4
+#26074
+Purse~
+a Purse~
+A baggy black purse.~
+~
+5 0 0 0 0 8193 52
+100 100
+0~ 0~ 0~ 0~
+6 160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 1
+A
+1 -1
+A
+18 3
+A
+19 6
+#26075
+Cane~
+a wooden cane~
+A long wooden stick lies here.~
+~
+5 0 0 0 0 8193 52
+100 100
+0~ 0~ 0~ 7~
+4 212 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 21
+A
+18 2
+A
+19 7
+#26076
+Wristwatch~
+a Diamond Studded Wristwatch~
+A fancy watch that was a gift from he governor lies here.~
+~
+9 0 0 0 0 4097 55
+100 100
+0~ 0~ 0~ 0~
+2 548 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 10
+A
+13 20
+A
+19 2
+A
+18 10
+#26077
+Letter Opener~
+a Letter Opener~
+A long letter opener lies here.~
+~
+5 0 0 0 0 8193 53
+100 100
+0~ 0~ 0~ 11~
+1 292 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 16
+A
+18 8
+A
+19 7
+#26080
+Safety Goggles~
+a pair of safety goggles~
+A funny pair of goggles lie here.~
+~
+27 0 0 0 0 131073 50
+100 100
+0~ 0~ 0~ reserved~
+2 28 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+103 -1
+#26081
+Longjohns~
+a pair of longjohns~
+Some warm pants lie here.~
+~
+9 0 0 0 0 33 50
+100 100
+0~ 0~ 0~ 0~
+4 36 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 3
+A
+18 3
+#26082
+Heavy Duty Gloves~
+a pair of Heavy-duty Gloves~
+Some tough looking gloves lie here, forgotten.~
+~
+9 0 0 0 0 129 50
+100 100
+0~ 0~ 0~ 0~
+5 32 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 2
+A
+18 5
+A
+12 31
+#26083
+Big Gulp~
+a Big Gulp~
+A very large plastic drinking cup lies here.~
+~
+17 0 0 0 0 1 0
+100 100
+4~ 4~ 15~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26084
+Butcher Knife~
+a Butcher knife~
+(no description)~
+~
+5 0 0 0 0 8193 50
+100 100
+0~ 0~ 0~ 2~
+2 60 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 25
+A
+18 7
+A
+19 8
+#26085
+Switchblade~
+a Switchblade~
+A knife with a button that reveals a long blade lies here.~
+~
+5 0 0 0 0 8193 50
+100 100
+0~ 0~ 0~ 11~
+3 136 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 9
+A
+19 6
+#26086
+A Ho-Ho~
+a Ho-Ho cupcake~
+A chocolaty cupcake lies here.~
+~
+19 0 0 0 0 1 4
+100 100
+2~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26087
+TV Dinner~
+a TV Dinner~
+A frozen dinner lies here.~
+~
+19 0 0 0 0 1 5
+100 100
+4~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26088
+Kahuna Burger~
+a Big Kahuna Burger~
+A hamburger lies here.~
+~
+19 0 0 0 0 1 3
+100 100
+5~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26089
+Large Fries~
+some Large Fries~
+Some thin cut potatoes are here~
+~
+19 0 0 0 0 1 5
+100 100
+2~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26090
+Milkshake~
+a Milkshake~
+A creamy looking shake lies here.~
+~
+17 0 0 0 0 1 5
+100 100
+8~ 8~ 10~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26091
+Pamphlet~
+a Pamphlet of Methidoral City's History~
+A piece of paper lies on the ground here.~
+~
+13 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+pamphlet~
+Methidoral City dates back almost 18,000 years, to the ice age.  Known as
+Methic Dorat, it was built into caves and inhabited by Neandrathals.  From
+those early days, it eventually became Methidoral during the Middle Ages and
+was a city of great strategic importance.  This was during the times when
+huns and various other raiding parties attacked the realms, sacking many
+cities and laying waste to the countrysides.  Methidoral became the
+stronghold, but after years of sustaining devastating attacks, it could hold
+out no more.  At the point of near collapse, and with the enemy advancing,
+Methidoral was surely ruined.  It was at about this same time that,
+according to legend, a portal at the fountain opened, and a strange mage and
+his minions stepped forth.  They wreaked havoc upon the invaders, beating
+them back until they were no longer a threat to any town or village, let
+alone Methidoral.  Needless to say, great celebrations were thrown in his
+honor, but the mage seemed to care not.  While the celebrations and partying
+were going on late into the night, the mage stepped into the portal once
+more, and returned to where he came from.  The portal then closed behind
+him, before any could follow.  To this day, the identity of the mage, and
+his reasons for saving the city from destruction remain unknown.  But
+without his assistance, the city would have surely fallen, and the whole
+realms would have been next.  From those days, it has become Methidoral
+City, the largest city in the land.  One of the more modern cities, it has
+all of the conveniences that would be expected of such an important place. 
+This is a great time to be alive, that's for sure.  
+~
+#26092
+Book Veener~
+veener's Book~
+A short, rather dirty book lies on the ground here.~
+~
+13 0 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+book~
+Time travel exists only in one place in the entire realms.  From this one
+place, it is possible to go to the past, present and the future.  StoneGate
+Castle is the place you must journey to.  From here, three portals stand
+forever open.  One leads back in time to the Ice Age, to the very beginnings
+of Methidoral City.  See Methidoral City as it was thousands upon thousands
+of years ago.  One of the portals leads to Fountain Plaza, which stood at
+the exact same place that our Clocktower stands today, almost 600 years ago.
+The final portal leads to the Clocktower.  The very one that stands in
+Methidoral City today.  This now makes it possible for people to travel
+through time almost at will, posing many problems.  What would happen if a
+band of uncivilized, heathen warriors from the past decided to come to
+Methidoral City of today, destroying everything in sight?  This is a very
+grave problem, and is not to be taken lightly.  When people are able to
+travel through time, they can also bring items from their era.  I'm sure,
+not many of you will believe this, but if one of you could follow my
+directions and travel back in time, delivering a copy of this book to
+someone, my theory would then be proven.  
+~
+#26093
+Armor Piercing Gun~
+an Armor Piercing Gun~
+A very sophisticated gun lies here.~
+~
+32 0 0 0 0 2097153 60
+100 100
+100~ 6~ 6~ armour piercing bullet~
+10 600 0
+0 0
+armour piercing bullet~
+0 0
+0 0 0
+#26094
+EMP Gun~
+an EMP Gun~
+A complicated gun lies on the ground here.~
+~
+32 0 0 0 0 2097153 58
+100 100
+100~ 6~ 6~ emp bullet~
+5 580 0
+0 0
+reserved~
+0 0
+0 0 0
+#26095
+Energy Pulse Gun~
+an Energy Pulse Gun~
+A gun charged with energy lies on the ground here.~
+~
+32 0 0 0 0 2097153 60
+100 100
+100~ 6~ 6~ energy pulse bullet~
+6 600 0
+0 0
+reserved~
+0 0
+0 0 0
+#26096
+Laser Beam Gun~
+a laser~
+A laser lies abandoned here.~
+~
+32 0 0 0 0 2097153 65
+100 100
+100~ 6~ 6~ laser beam bullet~
+4 648 0
+0 0
+reserved~
+0 0
+0 0 0
+#26097
+Flamethrower~
+a Flamethrower~
+A dangerous looking weapon lies here.~
+~
+32 33554432 0 0 0 2097153 65
+100 100
+100~ 6~ 6~ flame thrower bullet~
+8 648 0
+0 0
+reserved~
+0 0
+0 0 0
+#26098
+Stun Gun~
+a Stun Gun~
+A gun that doesn't look too threatening lies here.~
+~
+32 0 0 0 0 2097153 65
+100 100
+100~ 6~ 6~ stun gun bullet~
+4 648 0
+0 0
+reserved~
+0 0
+0 0 0
+#26099
+sign informative~
+an informative sign~
+An informative sign rests here~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+sign~
+Methidoral City Vault
+ 
+Type the word BANK for a list of commands.
+~
+#26100
+Mortar Cannon~
+a mortal Cannon~
+A cannon lies abadoned here.~
+~
+32 0 0 0 0 2097153 65
+100 100
+100~ 6~ 6~ mortar bullet~
+9 648 0
+0 0
+reserved~
+0 0
+0 0 0
+#26101
+Freeze Ray~
+a Freeze ray~
+A very cold gun lies here.~
+~
+32 0 0 0 0 2097153 58
+100 100
+100~ 6~ 6~ freeze bullet~
+3 580 0
+0 0
+reserved~
+0 0
+0 0 0
+#26102
+Nail Gun~
+a Nail Gun~
+A gun shooting out long nails lies here.~
+~
+32 0 0 0 0 2097153 50
+100 100
+100~ 6~ 6~ nails bullet~
+3 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#26103
+Flash Gun~
+a Flash Gun~
+A cheaply made gun lies here.~
+~
+32 0 0 0 0 2097153 50
+100 100
+100~ 6~ 6~ white light bullet~
+5 500 0
+0 0
+reserved~
+0 0
+0 0 0
+#26105
+Nuclear Cannon~
+a Nuclear Cannon~
+An extremely powerful weapon lies here.~
+~
+32 0 0 0 0 2097153 80
+100 100
+500~ 6~ 6~ nuclear bullet~
+7 800 0
+0 0
+reserved~
+0 0
+0 0 0
+#26129
+Tyrion Gonad~
+Tyrion's gonads~
+Tyrion's gonads~
+~
+9 67108864 0 0 0 2049 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26159
+mirror~
+mirror~
+A mirror is here.~
+~
+29 0 0 0 0 0 1
+100 100
+25002~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+mirror~
+It is rather large, with its surface almost liquid.
+~
+#26192
+Balthazar's Love~
+balthazar's ring of love ~
+A ring that Balthazar has made for Mirabeau lies here.~
+~
+9 536870912 0 0 0 3 106
+100 100
+0~ 0~ 0~ 0~
+1 1060 0
+0 0
+reserved~
+0 0
+0 0 0
+#26193
+Free CR Token~
+a CR token~
+Give this to an imm for a free CR when u need it.~
+~
+13 268435456 0 0 0 1 0
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26198
+Class suggestion board~
+class suggestion board~
+This board is for class/race suggestions.~
+~
+11 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26199
+magic magical door way doorway arena grand great~
+doorway~
+The Magical Doorway to the Great Arena is Out of Order~
+~
+29 65 0 0 0 0 26200
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#26200
+shiny brass drain sewer~
+drain~
+The water runs into a shiny brass Drain on the ground~
+~
+29 0 0 0 0 0 1
+100 100
+19701~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#26000
+Temple of Methidoral~
+~
+~
+Within this chamber stands the great and ancient Hierophant.  He has
+stood in this spot since long before the dawning of the realm, and shall
+continue into eternity.  Standing directly in the centre of the room is a
+huge altar carved from one solid granite stone.  It's surface is carved with
+intricate designs and symbols.  It is here that the citizens of Methidoral
+come to heal and rest, and to share in the glory of eternity.  
+There is a sign here.
+~
+0 2360332 0
+Rd     0
+E
+sign~
+Methidoral: Future
+Original Descriptions by Milantha, some changed by Tyrion
+Floorplan by Ichiban, new additions by Tyrion
+Most MOBs by Tyrion
+~
+D2
+~
+~
+0 0 26001
+S
+#26001
+Before the Temple~
+~
+~
+You are standing in a room just south of the Temple.  It is here that the
+citizens of this city come to talk, a safe haven from the city that lies to
+the south.  The protector of the temple stands in this room.  
+~
+0 4227084 0
+Rd     0
+D0
+~
+~
+0 0 26000
+D2
+~
+~
+0 0 26002
+S
+#26002
+Fountain Plaza~
+~
+~
+A large fountain stands in the middle of the plaza, its waters remarkable
+clean when compared with the surrounding road.  You have to be careful where
+you walk, for large wheeled machines known as cars zip by all around you. 
+This is truly a foreign land.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26001
+D1
+~
+~
+0 0 26021
+D2
+~
+~
+0 0 26003
+D3
+~
+~
+0 0 26020
+S
+#26003
+King Street~
+~
+~
+You are walking down King Street, directly south of the Plaza.  The large
+metal vehicles travel at high speeds, beeping and honking at you as they
+pass. The street leads to the north and to the south.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26002
+D2
+~
+~
+0 0 26004
+S
+#26004
+Crossing of King and Queen~
+~
+~
+The crossing of Queen and King is busy, but the throng of people is still
+bearable.  Every now and then, a fight erupts between an arrogant cop and
+an equally arrogant thug.  Pyrotechnics, hacks, slashes, and screams
+of pain fill the air.  Few people take notice of these actions because they
+have grown accustomed to open feuding in the streets.  The police pay
+little heed also, only stepping in when they believe the fight is
+unjustified.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26003
+D1
+~
+~
+0 0 26033
+D2
+~
+~
+0 0 26005
+D3
+~
+~
+0 0 26052
+S
+#26005
+King Street~
+~
+~
+King Street is a street like all others.  Two lanes set up for the
+vehicles to drive on, a sidewalk on either side of the street, and huge
+towering buildings as far as the eye can see.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26004
+D2
+~
+~
+0 0 26006
+S
+#26006
+King Street~
+~
+~
+You walk along a long street, and hear a loud comotion to the south.  It
+seems that even after all this time has passed, they still kept the same
+layout of the town, leaving important things where they were.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26005
+D2
+~
+~
+0 0 26007
+S
+#26007
+Market Square~
+~
+~
+The market square is arguably the busiest intersection in all of
+Methidoral.  Street vendors hawking illegal wares try to escape notice by the
+police, hooligans run from one store to another collecting supplies
+for journeys outside the town, and common citizens meander down the streets.
+The whole intersection is a swirling vortex of colors, odors, and sounds. 
+Clutching your head, you attempt to find a quieter place in the city.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26006
+D1
+~
+~
+0 0 26061
+D2
+~
+~
+0 0 26008
+D3
+~
+~
+0 0 26060
+D4
+~
+~
+0 0 26160
+S
+#26008
+King Street~
+~
+~
+Crowds of people swarm out of the market square to the north, jostling
+each other as they vie for a good position in the crowd.  A small child
+meanders out into the middle of the street and gets cut off from its mother.
+The wailing from the child and the answering shrieks of terror from the
+panicked mother gives you a headache.  To the south, King street appears to
+be less busy, and a park can easily be seen.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26007
+D2
+~
+~
+0 0 26009
+S
+#26009
+King Street~
+~
+~
+You are walking along King Street.  A large park lies to the east,
+complete with swingset and swimming pool.  Huge buildings tower overhead to
+the west, while an intersection can be seen immediately to the south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26008
+D2
+~
+~
+0 0 26010
+S
+#26010
+Crossing of King and Franklin~
+~
+~
+King street intersects with Franklin here.  A quiet military complex lies
+to the west, and a rather large park lies to the east.  King street travels
+north and south.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26009
+D1
+~
+~
+0 0 26070
+D2
+~
+~
+0 0 26011
+D3
+~
+~
+0 0 26069
+S
+#26011
+King Street~
+~
+~
+Main street is deserted here except for the occasional rough character
+lurking in the bulidings along the street.  Off in the distance, you hear
+the scream of some poor soul who is being beaten up by a ruffian.  The few
+people you meet on the street avoid eye contact and look around nervously.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26010
+D2
+~
+~
+0 0 26012
+S
+#26012
+King Street~
+~
+~
+More seedy individuals prowl the streets here.  Occasional bands of
+ruffians and thieves can be seen slinking through the back alleys, and you
+see people eyeing your belongings.  King street stretches to the north and
+south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26011
+D2
+~
+~
+0 0 26013
+S
+#26013
+Crossing of King and Laurentian~
+~
+~
+You are at the crossing of King and Laurentian, at the very southern edge
+of the city.  A large gate lies directly to the south, closed.  King street
+leads off to the north, while Laurentian Drive leads to th east and west.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26012
+D1
+~
+~
+0 0 26079
+D2
+~
+~
+0 0 26014
+D3
+~
+~
+0 0 26078
+S
+#26014
+Southern gate of Methidoral~
+~
+~
+You are walking along the southern side of Methidoral.  A large gate has
+been permanently closed to the south of here.  The crossing of King and
+Laurentian is to the north.  
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 26013
+S
+#26015
+Western gate of Methidoral~
+~
+~
+The western gate of Methidoral is heavily guarded, and the gates are
+sturdily barred.  The threat from an outside invasion is always present, and
+Methidoral, with its great riches, is a prime target of raids.  The cityguards
+look at you sternly, and question what business you have in the city.  In
+the distance you can hear wagon wheels crunching over the road leading up to
+the gate.  
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 26016
+D3
+~
+~
+0 0 15301
+S
+#26016
+Corner of Charles and Cliff~
+~
+~
+The street to the south has two archways leading into what appears to be the
+upper class neighbourhood.  Charles street leads off to the east of here,
+while Cliff street stretches to the south.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26017
+D2
+~
+~
+0 0 26038
+D3
+~
+~
+0 0 26015
+S
+#26017
+Charles Street West~
+~
+~
+As you walk along the street, you are narrowly missed by a car with
+flashing lights on top of it.  Loud sirens can be heard eminating from it,
+and you manage to get a glimpse of the words LAW ENFORCEMENT painted on the
+side.  The street leads off to the east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26018
+D3
+~
+~
+0 0 26016
+S
+#26018
+Charles Street West~
+~
+~
+You realize as you walk, that the people here appear to be all human.  Some
+people look at you strangely, and you can't seem to figure out why.  Perhaps
+its your clothing, or the way you walk.  The street leads off to the east or
+west.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26127
+D1
+~
+~
+0 0 26019
+D3
+~
+~
+0 0 26017
+S
+#26019
+Charles Street West~
+~
+~
+The crowds are noticeably thicker here, closer to the heart of the city. 
+People from various walks of life and various lands come to Methidoral for
+many reasons.  Some are refugees which seek shelter, and others are just
+looking for love.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26020
+D2
+~
+~
+3 0 26131
+D3
+~
+~
+0 0 26018
+S
+#26020
+Charles Street West~
+~
+~
+A significant crowd of people here is impeding traffic.  Ahead is the
+fountain plaza of Methidoral, which is a place of respite for road-weary
+travelers and is on the road to the temple of Methidoral.  Among the throng of
+people are a significant number of the sick and the dying.  They are
+probably being taken to the famed Oracle of Methidoral in the hope that a
+miracle can be performed.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26002
+D3
+~
+~
+0 0 26019
+S
+#26021
+Charles Street East~
+~
+~
+You are walking along a street, surrounded by towering buildings.  Cars
+travel by you at speeds you have never seen, people are walking every
+direction, in and out of buildings.  Lights flash all around you, sounds of
+everything imaginable coming from every direction.  The street continues to
+the east or to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26022
+D3
+~
+~
+0 0 26002
+S
+#26022
+Charles Street East~
+~
+~
+You are walking along Charles street east.  There are several large buildings
+to the north and south of here, the sidewalks cluttered with debris.  The
+street has dotted lines, and solid lines, seemingly to separate lanes.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26023
+D3
+~
+~
+0 0 26021
+S
+#26023
+Charles Street East~
+~
+~
+You are walking down Charles street east.  Huge sky reaching buildings
+line the sidewalks, and large metal vehicles zoom past you in both
+directions.  You wonder what kind of marvel has built these things.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26024
+D3
+~
+~
+0 0 26022
+S
+#26024
+Charles Street East~
+~
+~
+You are walking along Charles stree east, its straight, smooth asphalt road
+baking under the sun.  The street continues to the east and west, while tall
+buildings continue to line the sidewalks.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26025
+D3
+~
+~
+0 0 26023
+S
+#26025
+Corner of Charles and Fischer~
+~
+~
+You are at the corner of Charles street and Fantasia.  It is ordinary in
+every way, buildings lining the streets as usual, road signs here and there.
+There is a parking garage to the north, and a set of lights hanging above
+the street.  They change from red, to green, to amber, and repeat.  The two
+streets lead off to the south and west.  
+~
+0 0 0
+Rd     0
+D0
+~
+gate~
+3 0 26122
+D1
+~
+~
+0 0 26026
+D2
+~
+~
+0 0 26027
+D3
+~
+~
+0 0 26024
+S
+#26026
+Eastern gate of Methidoral~
+~
+~
+The eastern gate of Methidoral is carefully guarded, and the gates are
+heavily barred.  The city walls are at least 10 meters high and are made of
+solid stone dragged in from the cliffs near the city.  The gates are equally
+solid looking, and are made of the hardest oak.  The cityguards look at you
+suspiciously, but they allow you to pass without any hardship.  
+~
+0 4 0
+Rd     0
+D3
+~
+~
+0 0 26025
+S
+#26027
+Fischer Street North~
+~
+~
+Fischer street is the beginning of one of the biggest residential areas
+in Methidoral.  The houses here are made out of thick river stone and solid
+wood from the nearby forest.  The roofs are thatched with tough marsh
+grasses, and the entire structure is whitewashed.  Here and there, simple
+touches made by the inhabitants have distinguished the otherwise identical
+houses from each other.  Off in an alley, you hear the hiss of a stray cat. 
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26025
+D2
+~
+~
+0 0 26028
+S
+#26028
+Intersection of Fischer and Queen~
+~
+~
+Very few people can be seen here on Fischer street, which is not
+surprising.  The only thing which can be found on this street are
+nondescript residences of the city's inhabitants.  From the building on your
+right, you hear the squall of a young child.  The answering slap can be
+heard shortly afterward.  
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 26027
+D2
+~
+~
+0 0 26029
+D3
+~
+~
+0 0 26036
+S
+#26029
+Fischer Street North~
+~
+~
+More of the simple thatch-roofed houses can be seen along the street.  A
+few of the houses have the more traditional shingling roofs, but several
+of the old-style thatchwork still exists.  The street continues to the north
+or south.
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 26028
+D2
+~
+~
+0 0 26030
+S
+#26030
+Fischer Street North~
+~
+~
+The number of houses are thinning out here, gradually being replaced by
+business which cannot afford the rent on a shop on Market street.  To the
+east, the smell of baked goods wafts out onto the street.  The few houses
+which line the street here are more run-down than the others you have seen
+in Methidoral.  Most of these people depend on back-breaking labor in the
+mines to support themselves.  
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 26029
+D1
+~
+~
+0 0 26089
+D2
+~
+~
+0 0 26031
+S
+#26031
+Intersection of Fischer and Market~
+~
+~
+The mainly residential Fischer street meets up with Market street at
+this intersection.  The crowds are heavy on Market, but they seem to be
+thinned out on this end of the street.  The store to the east is an
+exception.
+~
+0 1073741824 0
+Rd     0
+D0
+~
+~
+0 0 26030
+D1
+~
+~
+0 0 26090
+D2
+~
+~
+0 0 26032
+D3
+~
+~
+0 0 26064
+S
+#26032
+Fischer Street South~
+~
+~
+You can hear the bustle of Market street to the north, and can see the dark
+poor section of town to the south.  These are the only ways to travel from
+this location.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26031
+D2
+~
+~
+0 0 26053
+S
+#26033
+Queen Street East~
+~
+~
+Queen Street, infamous for its gangsters and prostitues, is a down and
+dirty street indeed.  Its delapitated houses and buildings seeminly mock you
+as you walk past.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26034
+D3
+~
+~
+0 0 26004
+S
+#26034
+Queen Street East~
+~
+~
+Queen street is fairly deserted.  The only business which might bring you
+to this area of the city would be an attempt to employ a veteran of the
+city.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26035
+D2
+~
+~
+0 0 26151
+D3
+~
+~
+0 0 26033
+S
+#26035
+Queen Street East~
+~
+~
+A group of women, dressed to kill, stand on the side of the street, showing
+their attributes.  Perhaps this time is even more corrupt than the one you
+left. Queen street goes east and west.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26036
+D3
+~
+~
+0 0 26034
+S
+#26036
+Queen Street East~
+~
+~
+A pretty and buxom young woman stares dejectedly out the window.  Her
+beauty is stunning, and you wonder what could possibly upset her so.  From
+the inside of the house, you hear someone yelling at her.  She rolls her
+eyes, sighs, and walks away.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26028
+D3
+~
+~
+0 0 26035
+S
+#26037
+Corner of Fischer and Laurentian~
+~
+~
+You are in the southeast corner of Methidoral.  The people here are seedy
+looking, dirty, and just plain foul.  There is a tavern to the east of you,
+and the streets go off to the north or west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26056
+D2
+~
+~
+0 0 26130
+D3
+~
+~
+0 0 26082
+S
+#26038
+Cliff Street North~
+~
+~
+The lavish houses found along Cliff Street North are just that, lavish.  They
+must belong to those who are either very rich, very powerful, or both.  One
+house in particular, located to the east of here, seems to be the largest.
+You conclude that it must be the mayors house.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26016
+D2
+~
+~
+0 0 26039
+S
+#26039
+Intersection of Cliff and Queen~
+~
+~
+As you walk along these streets, you glance to the sky, to see the
+clouds.  They somehow look different, as though they are void of that
+feeling you get back home.  Even the stars appear to be in a different
+place, and not as twinkly as your used to.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26038
+D1
+~
+~
+0 0 26049
+D2
+~
+~
+0 0 26040
+S
+#26040
+Cliff Street North~
+~
+~
+A rich child runs out into the street and stares at you.  His fine blond
+hair is freshly washed and cut short, and his clothing appears to be brand
+new.  He seems to be the son of some powerful political figure.  Seeing you,
+he runs away, frightened.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26039
+D2
+~
+~
+0 0 26041
+S
+#26041
+Cliff Street North~
+~
+~
+You have come to another residential area of the town.  These large,
+luxurious homes stretch out for what seems like acres.  The street continues
+to the north, or to the south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26040
+D2
+~
+~
+0 0 26042
+D3
+~
+~
+0 0 26087
+S
+#26042
+Intersection of Cliff and Market~
+~
+~
+Cliff street intersects with Market Street here.  The throng of people
+is almost impenetrable, and a great deal of pushing and shoving occurs as
+people try to get their business done.  George's antiques is to the west,
+and you can hear the clanging of the hammer against the anvil out here on
+the street.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26041
+D1
+~
+~
+0 0 26057
+D2
+~
+~
+0 0 26043
+D3
+~
+~
+0 0 26088
+S
+#26043
+Cliff Street South~
+~
+~
+The building walls suddenly change to glass here, and you can see inside
+the structures.  People shop here and there, work on things, do things that you
+have never quite seen before.  This place is very confusing
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26042
+D2
+~
+~
+0 0 26044
+S
+#26044
+Cliff Street South~
+~
+~
+You are walking along the southern end of Cliff Street, just south of Market.
+The street continues to the north or south, while large buildings continue to
+tower over your head.  Traffic lights blink, people walk hurredly, cars and
+trucks speed by you, all in all, it is very chaotic.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26043
+D2
+~
+~
+0 0 26045
+S
+#26045
+Cliff Street South~
+~
+~
+You are walking along the southern side of Cliff Street.  A large family
+restaurant can be seen to the west of here.  The street continues to the
+north and south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26044
+D2
+~
+~
+0 0 26046
+S
+#26046
+Cliff Street South~
+~
+~
+The few people you meet here on southern Cliff street are most likely
+residents of Methidoral.  There really isn't much reason for an adventurer to
+be in this section of town, and the looks the residents give you are very
+suspicious.  One woman in particular looks mistrustful, and she grabs her
+child and runs with him into the nearest building.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26045
+D2
+~
+~
+0 0 26047
+S
+#26047
+Cliff Street South~
+~
+~
+The buildings on Magnolia street here appear to be more run down than
+they are further to the north.  Apparently, a crowd of unsavory individuals
+have taken over the southern section of the city.  Although not as dangerous
+as the world outside the city gates, it is nonetheless a very unpopular
+place to live.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26046
+D2
+~
+~
+0 0 26048
+S
+#26048
+Corner of Cliff and Laurentian~
+~
+~
+You are at the corner of Cliff Road, and Laurentian Drive.  The two
+streets lead off in separate directions, east and north, while huge
+buildings stretch to the sky all around you.  The feeling of claustrophobia
+is hard to fight off.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26047
+D1
+~
+~
+0 0 26075
+S
+#26049
+Queen Street West~
+~
+~
+Queen Street stretches through the entrepreneur section of town.  Male
+and Female prostitutes stand at regular intervals, hoping to turn a trick. 
+The street continues to the east or west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26050
+D2
+~
+~
+0 0 26125
+D3
+~
+~
+0 0 26039
+S
+#26050
+Queen Street West~
+~
+~
+You walk along the streets, taking in the sights, eyeing up the
+occasional prostitute that doesn't seem diseased, when you see a glimmer of
+hope for this god forsaken place.  A single tree grows out of the sidewalk,
+fenced off so that nobody touches it.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26051
+D3
+~
+~
+0 0 26049
+S
+#26051
+Queen Street West~
+~
+~
+Queen Street, in all its splendor, is definately for the birds.  Its huge
+buildings towering overhead, seemingly about to topple down on top of you. 
+Large vehicles race by, seemingly never to stop.  The exits are east and
+west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26052
+D3
+~
+~
+0 0 26050
+S
+#26052
+Queen Street West~
+~
+~
+The occasional child or animal looks your way, apparently perturbed by
+your presence.  Visitors are seldom here on Queen street, and strangers are
+looked upon as a curiosity.  A bird screeches at you from an overhead
+branch, offended that you have intruded on her territory.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26004
+D3
+~
+~
+0 0 26051
+S
+#26053
+Fischer Street South~
+~
+~
+The poverty-stricken families of Fischer street watch you from doorways
+as you go by.  From dawn to dusk, these people work in order to scrape up
+enough money to get by.  Without any sort of aid from the city of Methidoral,
+they must depend on the handouts of others to supplement their meager
+income.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26032
+D2
+~
+~
+0 0 26054
+S
+#26054
+Fischer Street South~
+~
+~
+The houses, or whats left of them, line the streets of Fischer, with a vile
+smelling odor eminating from their doors.  Trash lines the street, and the
+poor and sick creep along, begging for any assistance.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26053
+D1
+~
+~
+0 0 26115
+D2
+~
+~
+0 0 26055
+S
+#26055
+Fischer Street South~
+~
+~
+Some children are playing a complicated-looking game with all manner of
+stones out in the street.  They are so engrossed in their game, they hardly
+pay you any attention at all.  The clattering of your feet on the
+cobblestones is strangely calming, and you whistle a tune as you walk along.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26054
+D2
+~
+~
+0 0 26056
+S
+#26056
+Fischer Street South~
+~
+~
+Still more houses line the street.  This is definately a much larger city than
+you came from, huge buildings can be seen once again along the sides of the
+street, with great columns of smoke coming out the top.  Loud noises can be
+heard within them.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26055
+D2
+~
+~
+0 0 26037
+S
+#26057
+Market Street West~
+~
+~
+You are walking along Market street.  Two monstrous buildings, one on the
+north, and one on the south, just keep you in awe.  They are unbelievable
+large, and have the word SUPERMARKET emblazened on the front of them.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26091
+D1
+~
+~
+0 0 26058
+D2
+~
+~
+0 0 26124
+D3
+~
+~
+0 0 26042
+S
+#26058
+Intersection of Market and Franklin~
+~
+~
+Franklin street leads off to the south of here, into a military complex. 
+A large building also lies to the north, but it seems to be abandoned. 
+Market street leads to the east and west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26092
+D1
+~
+~
+0 0 26059
+D2
+~
+~
+0 0 26065
+D3
+~
+~
+0 0 26057
+S
+#26059
+Market Street West~
+~
+~
+Market street continues to the east and west here, while large buildings
+insistantly stretch to the skies around you.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26093
+D1
+~
+~
+0 0 26060
+D2
+~
+~
+0 0 26145
+D3
+~
+~
+0 0 26058
+S
+#26060
+Market Street West~
+~
+~
+To the south are various members of the realm which are clutching vast
+sums of money to their chests.  The iron bars in the window and the heavily
+armed guards indicate that you are before the Bank of Methidoral.  Market
+street continues to the east and west.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26094
+D1
+~
+~
+0 0 26007
+D2
+~
+~
+0 0 26099
+D3
+~
+~
+0 0 26059
+S
+#26061
+Market Street East~
+~
+~
+You are walking along the east side of Market street.  Its long paved
+blocks of cement leading in the horizontal compass directions.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26095
+D1
+~
+~
+0 0 26062
+D2
+~
+~
+0 0 26123
+D3
+~
+~
+0 0 26007
+S
+#26062
+Market Street East~
+~
+~
+Happy couples and families shopping for bridal gifts enter and leave the
+store to the north.  A unique concept, Juttey offers everything a new bride
+could possibly need.  This is a relief for the family of the bride who would
+have to make the dress and veil in years past.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26096
+D1
+~
+~
+0 0 26063
+D3
+~
+~
+0 0 26061
+S
+#26063
+Intersection of Market and Franklin~
+~
+~
+You are walking along Market street, when you see a second street leading
+off to the south, named Franklin.  It seems to be very ritzy, its lavish
+apartment buildings seeming to be in impecable shape.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26097
+D1
+~
+~
+0 0 26064
+D2
+~
+~
+0 0 26074
+D3
+~
+~
+0 0 26062
+S
+#26064
+Market Street~
+~
+~
+You are walking along market street, which travels to the east and west. 
+Large buildings climb to the skies on either side of you, and they seem to
+block out the sun.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26098
+D1
+~
+~
+0 0 26031
+D3
+~
+~
+0 0 26063
+S
+#26065
+Franklin Street~
+~
+~
+You are at the west side of Franklin street, just north of a military
+complex.  The street leads to the south, and to the north, to market street.
+The buildings here are just as large as the rest of the city, it is almost
+unfathomable.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26058
+D2
+~
+~
+0 0 26066
+S
+#26066
+Franklin Street~
+~
+~
+You are now at an entrance to the military complex.  A guard house is
+here, with the guard inside seemingly asleep, not caring what you do.  The
+street goes to the north and south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26065
+D2
+~
+~
+0 0 26067
+S
+#26067
+A bend in Franklin Street~
+~
+~
+Franklet street makes a sharp turn here, following the city walls.  These
+walls provide the first line of the defense for the city, and are at least
+ten meters high and two meters thick.  Stone from the distant mountains were
+brought in by mule train to build the walls, and they are legendary in the
+realm.  They are as old as anyone can remember.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26066
+D1
+~
+~
+0 0 26068
+S
+#26068
+Franklin Street~
+~
+~
+You are inside the military complex, its low, wide buildings stretching
+all over the landscape.  The entire area seems to be deserted.  You can go
+to the east or west from here.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26069
+D3
+~
+~
+0 0 26067
+S
+#26069
+Franklin Street~
+~
+~
+You are at a checkpoint, its roadblocks in the up position.  A guard
+house is here, and the guard inside doesn't really care what you doing.  The
+street travels to the east and west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26010
+D3
+~
+~
+0 0 26068
+S
+#26070
+Franklin Street~
+~
+~
+You are walking along Franklin street.  A large park lies to the north
+and south side of this street, its large forests and perfectly groomed grass
+a welcome sight.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26071
+D3
+~
+~
+0 0 26010
+S
+#26071
+Franklin Street~
+~
+~
+A large park rests on both sides of the street here, with children playing
+on its swingsets and monkey bars.  The street continues to the east and west.
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26146
+D1
+~
+~
+0 0 26072
+D2
+~
+~
+0 0 26143
+D3
+~
+~
+0 0 26070
+S
+#26072
+Corner of Franklin Street~
+~
+~
+Franklin street bends very sharply here, turning to the west.  Huge
+apartment complexes line the outer side of the street, while a lavish estate
+rests on the inner side.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26073
+D3
+~
+~
+0 0 26071
+S
+#26073
+Franklin Street~
+~
+~
+Franklin street continues to the north and south here.  The vehicles move
+slowly, actually obeying the speed limits.  This street is actually too
+serene, too peaceful.  You feel like a sore thumb.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26074
+D2
+~
+~
+0 0 26072
+D3
+~
+~
+0 0 26146
+S
+#26074
+Franklin Street~
+~
+~
+Franklin street is loaded with glamour and money.  It seems that millions
+of gold pieces was spent in its construction.  The street continues to the
+north and south.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26063
+D2
+~
+~
+0 0 26073
+S
+#26075
+Laurentian Drive~
+~
+~
+A suspicious man begins to approach you from behind.  Spinning around
+rapidly, you take him off-guard and he flees back into the shadows. 
+Clearly, this is not a very safe corner of Methidoral.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26076
+D3
+~
+~
+0 0 26048
+S
+#26076
+Laurentian Drive~
+~
+~
+From the edge of the street, you hear a woman's voice calling at you. 
+She offers you companionship for the night in exchange for some money or
+food.  On close scrutiny, she appears to be very sick and very thin.  You
+wonder what happened that caused her to end up on the street as you continue
+on your way.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26200
+D1
+~
+~
+0 0 26077
+D3
+~
+~
+0 0 26075
+S
+#26077
+Lauretian Drive~
+~
+~
+You are walking along Laurentian Drive, in the commercial sector.  Huge
+skyscrapers lie to the immediate north and south, while the street continues
+to the east and west.  There is a mailbox here.
+~
+0 0 0
+Rd     0
+E
+mailbox~
+It is blue.
+~
+D0
+~
+~
+0 0 26085
+D1
+~
+~
+0 0 26078
+D3
+~
+~
+0 0 26076
+S
+#26078
+Laurentian Drive~
+~
+~
+To the east of here, you can see King Street.  The buildings here are very
+tall, and very clean looking.  This must be the commercial sector of town.
+Lauretian Drive leads to the east or west.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26013
+D3
+~
+~
+0 0 26077
+S
+#26079
+Laurentian Drive~
+~
+~
+A cold breeze sends a chill up your spine and makes you look uneasily
+over your shoulder.  The street is dark and the people you pass by are
+unwholesome looking.  The police do their best to keep down on crime, but
+in a city this large, it is very difficult.
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26080
+D3
+~
+~
+0 0 26013
+S
+#26080
+Kragar Street East~
+~
+~
+You are walking along Laurentian Drive, just to the east of King Street. 
+You are narrowly missed by a car zooming past you, its horn blaring in a
+loud, annoying screetch.  Perhaps you had better stop walking on the road.  
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 26086
+D1
+~
+~
+0 0 26081
+D3
+~
+~
+0 0 26079
+S
+#26081
+Laurentian Drive~
+~
+~
+A gang of young punks eyes you from a back alley.  Seeing your build and
+your obvious lack of fear, they pass you by and look for a new target.  Like
+all large cities, Methidoral has its share of crime despite attempts to keep
+it safe.  The institution of an executioner is helping to crack down on many
+of the worst criminals, however.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26082
+D3
+~
+~
+0 0 26080
+S
+#26082
+Laurentian Drive~
+~
+~
+You are walking along Laurentian drive, near the poor section of down on
+South Fischer.  You can hear the sounds of a bar a little ways to the east
+of here, while the main road continues to the west.  
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 26037
+D3
+~
+~
+0 0 26081
+S
+#26083
+Entrance to the Western Turret~
+~
+~
+You stand before one of the massive lookout Turrets of Methidoral.  Made of
+solid stone pieced together carefully by the realm's finest masons, the
+Turrets serve a very important purpose for the city of Methidoral.  Not only do
+they provide a view from which to detect approaching invaders, they also
+provide an excellent vantage point from which to launch a counter-attack.  
+~
+0 4 0
+Rd     0
+S
+#26084
+Entrance to the Eastern Turret~
+~
+~
+You stand before one of the massive lookout Turrets of Methidoral.  Made of
+solid stone pieced together carefully by the realm's finest masons, the
+Turrets serve a very important purpose for the city of Methidoral.  Not only do
+they provide a view from which to detect approaching invaders, they also
+provide an excellent vantage point from which to launch a counter-attack.  
+~
+0 4 0
+Rd     0
+S
+#26085
+Humphrey's~
+~
+~
+Walking through the door, you realize that it is the law of the land
+that you must be 21 to consume alcohol in bars.  The bouncers at Humphrey's
+card hard, and will throw you out if you are not of age.  
+~
+0 1036 0
+Rd     0
+D2
+~
+~
+0 0 26077
+S
+#26086
+Hortus the Leather Worker~
+~
+~
+This shop smells strongly of freshly tanned hides.  The leather worker
+looks up at you briefly, then continues on with his work.  Various pieces of
+finished armor hang on the walls, as well as interesting-looking items whose
+purpose you can only guess.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 26080
+S
+#26087
+William's Shop of Alchemy~
+~
+~
+A horrendous smell assaults your nostrils as you enter Sansibar's Magic
+Emporium.  The counters in this shop are filled with potions and pills, and
+in the back of the shop you can see a complete laboratory.  Something black
+and viscous is bulbbing in a distillation apparatus back there, and you
+guess that this is where the hideous smell is coming from.  
+~
+0 1028 0
+Rd     0
+D1
+~
+~
+0 0 26041
+S
+#26088
+Frank's Antiques~
+~
+~
+You have entered a shop full of things that seem rather new to you.  Old
+armor, old swords, just about everything that you can imagine is here. 
+Finally, a place that you can know something more than the person who owns
+it. The only exit is to the east.
+~
+0 1024 0
+Rd     0
+D1
+~
+~
+0 0 26042
+S
+#26089
+The Bakery~
+~
+~
+The comforting smell of bread baking greets you as you walk into this
+building.  All manner of pastries and breads fill racks upon racks in this
+store.  Everything is bright and cheery, and the place is kept spotlessly
+clean.  Frem beams a smile at you as he places another tray of pastries into
+the brick oven.  
+~
+0 1073742848 0
+Rd     0
+D3
+~
+~
+0 0 26030
+S
+#26090
+Bob's Hardware~
+~
+~
+You have arrived at the hardware store.  Here you can buy the neccessary
+goods for any home repair, and perhaps something for a camping trip or two.
+The only exit is west
+~
+0 1024 0
+Rd     0
+D3
+~
+~
+0 0 26031
+S
+#26091
+The Furniture Outlet~
+~
+~
+The Furniture Outlet is part of the wholesale craze that is sweeping the
+land.  Their popularity has grown, and Furniture Outlet is the biggest of
+its kind in in Methidoral City.  Jennifer, the manager of the store comes
+over to see if you need assistance with anything.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 26057
+S
+#26092
+Jim's Self Defense~
+~
+~
+Upon walking through the door, you cannot imagine what this store fails
+to offer in way of weapons.  In the locked glass cases surrounding Jim are
+tools of destruction that range in price and effectiveness.  Jim leans
+against the wall, cleaning his teeth with a toothpick, then calmly asks what
+ya want in a redneck drawl.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 26058
+S
+#26093
+Johanna's Jewelry~
+~
+~
+Entering the store, you immediately notice the thick glass that most of
+the jewelry is behind.  While police roam the streets outside, this is still
+a dangerous city, and thieves are lurking everywhere.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 26059
+S
+#26094
+Victoria's Magic~
+~
+~
+Walking through the curtains into the main part of the store, you can
+sense an unknown magical energy pulsing through the room.  There are many
+symbols and other strange figures around the store.  The wicken High
+Priestess Victoria comes to see if you need assistance with anything.  The
+scrolls here have been made so that they will disappear after reciting them,
+so you may want to buy more than one at a time.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 26060
+S
+#26095
+Evan's Emporium~
+~
+~
+Evan's Emporium has just completed a buyout of Doren.  This new magical
+store boasts even more variety and the same high quality that people had
+grown used to with Doren.  Evan is very busy, but happens to be around
+today, and rather enjoys chatting with the customers when he has time.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 26061
+S
+#26096
+Mini-Mart~
+~
+~
+Growing in popularity, these stores are basically places where one can
+stop and get gas for their cars and grab a quick bite to eat if they are in
+a hurry.  While its selection is limited, it is much quicker than going to a
+Supermarket.  
+~
+0 1024 0
+Rd     0
+D2
+~
+~
+0 0 26062
+S
+#26097
+Burgerama~
+~
+~
+The Burgerama offers fastfood to those in a hurry, and has become the
+most popular place for teenagers to hang out at.  The Burgerama offers a
+limited selection, but its prices are very low, probably adding to its
+popularity.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 26063
+S
+#26098
+Sister Lucille's Clergy Supplies~
+~
+~
+Sister Lucille's is a store run by an order of Nuns, and contains various
+holy items and artifacts.  Although it would seem that Lucille would run the
+store, the nuns look puzzled when you ask about her, and tell you there is
+no such person.  
+~
+0 1028 0
+Rd     0
+D2
+~
+~
+0 0 26064
+S
+#26099
+First Bank of Methidoral~
+~
+~
+You stand in line as you watch busy bank employees race around.  On the
+contrast, the security guards standing at the entrance seem very
+uninterested in the goings on of the bank.  Perhaps this is why so many
+banks get robbed nowadays.  
+~
+0 33792 0
+Rd     0
+D0
+~
+~
+0 0 26060
+S
+#26100
+Mall Walkway~
+~
+~
+People of all ages are walking around, carrying bags containing clothes
+or other items that they have bought.  While it is very convenient to have a
+centralized shopping location for just about anything one could possibly
+want, it is not without its drawbacks.  Prices here are usually higher,
+since the malls charge such high rent, the stores have no choice but to pass
+this on to the consumer.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26130
+D1
+~
+~
+0 0 26102
+D2
+~
+~
+0 0 26107
+D3
+~
+~
+0 0 26101
+S
+#26101
+JD Pennies~
+~
+~
+Department stores carry a wide variety of items ranging from clothes to
+furniture.  To curb theft, they hire plain-clothed police officers, who
+stand in strategic locations and watch to try and catch people in the act of
+shoplifting.  The only exit is east 
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26100
+S
+#26102
+Paidless Shoestore~
+~
+~
+Aisles full of shoes fill this store, but aren't of very high quality.  A
+Lone worker rushes around trying to restock all the aisles, but it is to no
+avail.  Many stores here can't afford to hire more than one or two
+employees, so they must get by with what they can.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26100
+S
+#26103
+Chumps Sporting Goods~
+~
+~
+One of the more popular types of stores in the mall, they carry jerseys
+of players in the major sports leagues, a wide variety of baseball hats, as
+well as all the equipment you could ever want to play a sport.  The workers
+at these types of stores are usually friendly and outgoing, and are ready to
+assist you in making a purchase.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26104
+S
+#26104
+Mall Walkway~
+~
+~
+Continuing on here, you notice more shops to the east and west.  The
+crowds of people begin to thicken a little as you approach the center of the
+mall.  Rushing water can be heard in the distance.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26105
+D3
+~
+~
+0 0 26103
+S
+#26105
+Radio Hut~
+~
+~
+A Miracle of modern technology, electronics is a booming industry.  This
+store is extremely crowded, and is fairly expensive as well, but that does
+not seem to deter people from making large purchases.  The manager greets
+you as you enter the store, a little puzzled by your strange appearance.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26104
+S
+#26106
+Restrooms~
+~
+~
+With hundreds of people walking through here daily, restrooms are a
+necessity.  Unfortunately for you, there is a long line waiting to use the
+facilities.  You shift positions uncomfortably, in the hopes of easing the
+urge.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26107
+S
+#26107
+The Fountain~
+~
+~
+The fountain sits in the middle of the mall and acts as a gathering
+place, or a place to quietly sit and wait for others to finish shopping. 
+Coins line the bottom of the fountain, as it is a tradition to throw them in
+after making a wish.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26100
+D1
+~
+~
+0 0 26108
+D2
+~
+~
+0 0 26110
+D3
+~
+~
+0 0 26106
+S
+#26108
+Another Exit~
+~
+~
+You walk past a few other shops before you reach the exit.  With
+entrances and exits all over the building, security can be very hard to
+enforce.  However, they do a fair job in keeping the malls safe, due in
+large part to the stores help in identifying the offenders.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26107
+S
+#26109
+Eddie Sauer~
+~
+~
+Various mens and womens apparel line the shelves here.  The salespeople
+are much more laid-back here, not wanting to rush customers into a purchase,
+they simply wait for them to decide.  Mainly casual wear in nature, the more
+dressy apparel lies across the mall.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26110
+S
+#26110
+Mall Walkway~
+~
+~
+Most of the people walking through here are heading north, towards the
+fountain.  The foodcourt is also a big attraction to the south, but most
+people come in through the entrance there if they are gonna eat.  You notice
+a security guard standing to the side, making sure there are no problems.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26107
+D1
+~
+~
+0 0 26111
+D2
+~
+~
+0 0 26113
+D3
+~
+~
+0 0 26109
+S
+#26111
+John Wiggins~
+~
+~
+John Wiggins is one of the finest clothing apparel stores for men.  It
+carriesa wide array of dress clothes, but is extremely pricey in nature.  If
+you have some extra money to spend, this might be a good place to blow it.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26110
+S
+#26112
+Mall Foodcourt~
+~
+~
+People are strolling around trying to decide which of the numerous
+fastfood joints to buy food from.  Looking to the east you see people
+sitting down.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26113
+S
+#26113
+Eating Area~
+~
+~
+Tables and chairs are all over the place here, since they must provide
+enough seating for people to eat, and during meal times, this is a vey large
+challenge.  Even now, you notice some people standing up, unable to find
+anywhere to sit.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26110
+D1
+~
+~
+0 0 26114
+D2
+~
+~
+0 0 26152
+D3
+~
+~
+0 0 26112
+S
+#26114
+More Food Shops~
+~
+~
+More fastfood places line the walls here, and an arcade lies towards the
+back of the room.  People walk past you carrying their trays, making you
+hungry.  You wonder if they would notice if a few french fries were
+missing...  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26113
+S
+#26115
+Pet Shop~
+~
+~
+As you enter this store, various animal smells come to your attention. 
+The little animals in their tiny cages perk up as you walk by them, and the
+pathetic begging looks in their eyes tug at your heart.  Enough food and
+water is provided, and their cages are kept clean, but you feel sorry for
+them nonetheless.  A hawk screeches at you in defiance, and a little kitten
+mews for attention.  The bored-looking storekeeper watches these
+interactions with disinterest.  
+~
+0 5120 0
+Rd     0
+D3
+~
+~
+0 0 26054
+S
+#26116
+Where the pets are~
+~
+~
+These pets are waiting to be sold in the Methidoral pet shop.
+~
+0 132108 0
+Rd     0
+S
+#26117
+Mercenary Guild~
+~
+~
+The famed Mercenary's Guild of Methidoral has able men and women of all
+classes and races to rent as companions on dangerous adventures.  The cost
+is not cheap, but the service is well worth any cost.  These mercenaries are
+willing to lay down their lives for the person who rents their services. 
+They have little choice, for failing a client means a lifetime of indentured
+servitude for the Mercenary's Guild.  
+~
+0 5124 0
+Rd     0
+S
+#26118
+Where the mercenaries Are~
+~
+~
+The mercenaries of Methidoral are waiting here to be hired out to customers.
+~
+0 164876 0
+Rd     0
+S
+#26119
+Donation Room~
+~
+~
+As you enter, or rather swim into this room filled with an assortment of
+lost, or rather forgotten, goods, you can't help but notice a man covered in
+dust, and nearly alseep on a pile of junk.  All around you a fair variety of
+lost items have been placed, in no particular order, which only leads to the
+feeling you are trapped in a dump of some sort.  
+~
+0 132108 0
+Rd     0
+S
+#26120
+Note Room~
+~
+~
+As you enter this room, you begin to feel rather scholarly.  The room has
+an air of the finest intellects around, and you cannot help but get caught
+up in the nostalgia.  A huge note board covers the wall.  It is remarkably
+quiet in here.  
+~
+0 8569868 0
+Rd     0
+S
+#26121
+A Barren Path~
+~
+~
+You are just inside the rusty gate. The land to the north looks barren and
+desolate. A chilling wind blows from the hills nearby. To the south are the
+familiar buildings of Methidoral.
+The barren path continues eastwards along the city walls...
+~
+0 4 11
+Rd     0
+D0
+~
+~
+0 0 10301
+D1
+~
+~
+0 0 11836
+S
+#26122
+Outside the Northern Gates~
+~
+~
+As you step out this northern gate, you notice immediately that this is
+going to be a tough trip.  This area appears to be well travelled, yet
+deserted at the same time.  It suddenly comes to you that though the path is
+well marked, you don't think that many of the travellers have come back this
+way.  
+~
+0 4 0
+Rd     0
+D2
+~
+~
+3 0 26025
+S
+#26123
+Igor's Smithy~
+~
+~
+Igor's Smithy is swelteringly hot.  Sparks fly as Igor pounds out metal
+on an anvil.  His sweat-soaked body ripples with muscles, and he looks up as
+you walk in.  Igor's prices are reasonable, and it is very much more
+affordable to fix an item than to risk life and limb in replacing a broken
+item.  
+~
+0 67109892 0
+Rd     0
+D0
+~
+~
+0 0 26061
+S
+#26124
+Quest Central~
+~
+~
+You enter a rather comfortable feeling room.  Several large soafas lie
+against the walls, and a large archway dominates the northern wall.  A
+massive stone statue sits on the southeast corner.  The only exit is through
+the archway to the north.  
+~
+0 132108 0
+Rd     0
+D0
+~
+~
+0 0 26057
+S
+#26125
+Methidoral City Post Office~
+~
+~
+You have entered Methidoral City's Post Office, where you can get
+packages weighed and sent all over the realms.  While the jobs are boring,
+the pay is very high, since it is a government job.  However, many postal
+workers have been known to ge a little crazy if they happen to get fired.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26049
+D1
+~
+~
+0 0 26126
+S
+#26126
+In the Mail Room~
+~
+~
+The room literally has bags filled with mail lying all over the floor. 
+Postal workers are working frantically to keep up with the incoming flow. 
+Places.  Mail trucks wait outside to take the bags and deliver them to the
+right places.  The workers seem to ignore your presence, as they are
+extremely busy.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26125
+S
+#26127
+Entrance to City Hall~
+~
+~
+Methidoral City's newly built City Hall building stands here, with its
+high arched ceiling, and spotless floors.  The secretary sitting at the
+front desk waits to help you, and provide information.  Perhaps it would be
+a wise decision to talk with her.  
+~
+0 131084 0
+Rd     0
+D0
+~
+~
+0 0 26157
+D1
+~
+~
+0 0 26129
+D2
+~
+~
+0 0 26018
+D3
+~
+~
+0 0 26128
+S
+#26128
+City Hall~
+~
+~
+Various City officials walk past you, apparently impervious to your
+existence, too busy talking amongst themselves.  Probably the only other
+thing of interest here is the extremely large water cooler that sits in the
+corner.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26127
+S
+#26129
+In a Meeting with the City Council~
+~
+~
+Sitting down around a circular table are the members of the Methidoral
+City council.  It is their job to decide on the laws that the city will
+follow.  They do not appear to be pleased by your interruption and the head
+of the council stands and begins to speak.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26127
+S
+#26130
+Mall Entrance~
+~
+~
+You stand at the entrance to one of the more popular new inventions ---
+the mall.  It is a large building which houses various different stores and
+shops.  The size and complexity of these super shopping centres has grown
+over the years, and now many of them include full sized ice rinks among
+other amenities.  
+~
+0 131084 0
+Rd     0
+D0
+~
+~
+0 0 26037
+D2
+~
+~
+0 0 26100
+S
+#26131
+Entrance to Methidoral General Hospital~
+~
+~
+You have entered Methidoral General Hospital.  As time has progressed,
+hospitals have played a major role in prolonging the population's life span.
+No longer do citizens die from easily curable diseases, such as smallpox and
+tuberculosis.  The sickening smell of germicidals is almost overpowering.  
+~
+0 131084 0
+Rd     0
+D0
+~
+~
+0 0 26019
+D2
+~
+~
+0 0 26133
+S
+#26132
+Waiting Room~
+~
+~
+The room is filled with grim faces either waiting for their name to be
+called or waiting for news of their loved ones condition.  The chairs are
+very uncomfortable and the room is bland, with greyish walls adding to the
+feeling.  You hope your wait isn't too long.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26133
+S
+#26133
+Hospital Receptionist~
+~
+~
+The receptionist sits here and has to make sure that your insurance
+covers the treatment that the hospital will give you.  Often this takes
+longer than the actual hospital visit.  The receptionist is very friendly
+even though she has a very boring job.  You wonder how anyone could do this
+for an extended period of time.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26131
+D1
+~
+~
+0 0 26136
+D2
+~
+~
+0 0 26132
+S
+#26134
+Examination Room~
+~
+~
+You have entered one of the many rooms that doctors use to look at
+patients.  Instruments are everywhere, kept very neatly towards the back of
+the counter.  An examination table that is used by the doctors sits in the
+middle of the room.  
+~
+0 131076 0
+Rd     0
+D0
+~
+~
+0 0 26135
+S
+#26135
+A Hospital Hallway~
+~
+~
+The hallway is line with various wheelchairs and IV stands, and is
+painted white.  There isn't much interesting going on here.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26136
+D2
+~
+~
+0 0 26134
+S
+#26136
+Intersection of Hallways~
+~
+~
+You can go in any of the four cardinal directions here.  This is a bad
+spot to be standing, as doctors and nurses are running back and forth to
+areas all over the hospital from here.  You get the feeling that they do not
+welcome your presence here, but they do not really say anyhting to you,
+other than the occassional dirty look when one of them bumps into you.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26137
+D1
+~
+~
+0 0 26139
+D2
+~
+~
+0 0 26135
+D3
+~
+~
+0 0 26133
+S
+#26137
+Hallway in the Hospital~
+~
+~
+You walk by a few elderly patients sitting in wheelchairs, apparently having no recognition of anything that is happening around them.
+It is a sad sight and you hope this is a fate that doesnt befall you.
+The X-Ray room lies to the north.
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26138
+D2
+~
+~
+0 0 26136
+S
+#26138
+X-Ray Room~
+~
+~
+This room is very dark, and in the middle of it sits a larg machine which allows doctors to determine whether patients' have broken bones or not, among various other things.
+The only way out is south.
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+0 0 26137
+S
+#26139
+A Hallway in the Hospital~
+~
+~
+This hallway seems to be a little busier than the others, with doctors
+and surgeons walking back and forth, covered in blood.  There is a sense of
+urgency in the air that is very tangible.  Looking to the east, you realize
+that the emergency room entrance is directly ahead.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26140
+D3
+~
+~
+0 0 26136
+S
+#26140
+Emergency Room Entrance~
+~
+~
+Through the automated glass doors, you see ambulance after ambulance pull
+up, delivering dying patients to the hospital.  Four or five members of the
+hospital staff wait for each one, getting briefed on the way to the
+operating room.  The pace here is frantic, as every second counts.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26141
+D3
+~
+~
+0 0 26139
+S
+#26141
+Emergency Room Hallway~
+~
+~
+This hallway leads directly into the operating room, where people are
+brought from the ambulances.  Blood lines the hallway, and the patients
+being carted by you on the gurneys are in very bad shape.  The medical staff
+rushes by you into the room to the north.  Better stay out if you can't
+handle the sight of blood.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26142
+D2
+~
+~
+0 0 26140
+S
+#26142
+Operating Room~
+~
+~
+Blood is everywhere here.  The surgeons are covered head to foot with
+protective gear, as are the nurses that assist them.  While they are the
+best in the realms, even they cannot save everyone.  It is perhaps the most
+difficult thing to accept --- that people are going to die, and there is
+nothing you can do about it.  The only exit is to the south.  
+~
+0 131080 0
+Rd     0
+D2
+~
+~
+0 0 26141
+S
+#26143
+Central Booking~
+~
+~
+Methidoral City's Police force does as good a job as they are able to
+against the war on crime in the city.  However, they are fighting a losing
+battle, since the rising population, and thecriminals growing access to
+powerful weapons, are starting to be more than they can handle on their own.
+More officers are desperately needed, but few are interested in taking such
+a dangerous job for so little money.  
+~
+0 131084 0
+Rd     0
+D0
+~
+~
+0 0 26071
+D1
+~
+~
+0 0 26144
+S
+#26144
+A Holding Cell~
+~
+~
+You are standing in a holding cell with various criminals awaiting trial
+in the Methidoral City Courthouse.  Most of them are minor offenders, but
+every once in a while there is a very dangerous criminal that has to be kept
+in a cell by themselves.  Noone here seems to pay you any attention,
+figuring you are just like them, awating trial.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26148
+D2
+~
+~
+0 0 26149
+D3
+~
+~
+0 0 26143
+S
+#26145
+Barber Shop~
+~
+~
+You walk into the barber shop and take a seat.  It is quite crowded as
+patrons await a haircut or have come to talk.  It is an atmosphere that is
+very much to your liking, and is one that you do not experience frequently. 
+Joe has become very popular because of his friendliness and his great
+haircuts, which are famous throughout the realms.  
+~
+0 132104 0
+Rd     0
+D0
+~
+~
+0 0 26059
+S
+#26146
+First Precinct Fire Station~
+~
+~
+Walking into the Fire Station, you see only one person around here, and
+assume that most of the others are out fighting fires.  You see various fire
+fighting equipment hanging on the walls, but it would be a good idea to
+leave it alone.  
+~
+0 132104 0
+Rd     0
+D0
+~
+~
+0 0 26147
+D1
+~
+~
+0 0 26073
+D2
+~
+~
+0 0 26071
+S
+#26147
+Fire Station~
+~
+~
+Methidoral City's Fire Department is in need of some more fire engines as
+the population and size of the city grows, so do the number of fires.  They
+are also understaffed, since it is all on a volunteer basis.  People in this
+time are much too busy with everyday life to do something for free.  
+~
+0 132104 0
+Rd     0
+D2
+~
+~
+0 0 26146
+S
+#26148
+Another Holding Cell~
+~
+~
+You have entered another holding cell, which is much smaller than the one
+next to it.  This is used only to keep the most violent criminals in, so
+they cannot harm any of the others being held.  The man in here has a very
+angry look on his face as he turns toward you.  It might be a good idea to
+leave, before you find out why he is being kept by himself.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26144
+S
+#26149
+The Police Chief's Office~
+~
+~
+The Police Chief sits behind his desk, talking on the phone.  He motions
+for you to sit down in a chair across the desk from him, but you politefully
+decline.  It is a very nice office he has, with a solid oak carved desk and
+fine upholstered chairs.  Various pictures and awards line the wall, and a
+file cabinet in the back of the room contains all of the records, but it
+would be a very unwise decision to try and go snooping through them. 
+Esecially since he is still in the room.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26144
+D1
+~
+~
+0 0 26150
+S
+#26150
+The Briefing Room~
+~
+~
+Walking in here, you notice two officers in the room grilling a suspect. 
+The one sitting down seems very calm in asking the questions, but the
+officer standing up is growing weary of his attitude and suddenly grabs him
+by the shirt and demands answers.  The suspect appears startled and his
+story starts falling apart after this.  The room is surrounded by tinted
+glass, but you know the glass on the back wall is a one way mirror, with
+officers sitting behind it observing what is going on inside the room.  
+~
+0 131080 0
+Rd     0
+D3
+~
+~
+0 0 26149
+S
+#26151
+Schnucks~
+~
+~
+People are everwhere, shopping for groceries.  It appears that more
+checkout clerks are needed since there are extremely long lines.  Stores
+such as these are very convenient for the citizens to shop in, and almost
+everyone utilizes them.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26034
+S
+#26152
+Food Court Exit~
+~
+~
+Another exit to the mall is here, leading to the parking lots surrounding it.
+The aroma of food hits your nose to the north.
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+0 0 26113
+D3
+~
+~
+0 0 26153
+S
+#26153
+BMC Movie Theaters~
+~
+~
+You walk in, not quite knowing what to expect.  Looking around, you see a
+woman sitting in an enclosed circular booth talking into a metal stick.  She
+demands that you buy a ticket to enter.  
+~
+0 131080 0
+Rd     0
+D1
+~
+~
+0 0 26152
+S
+#26154
+BMC Movie Theaters~
+~
+~
+A buttery smell reaches your nostrils, and you search to find where it is
+coming from.  Your search doesn't take long.  Standing behind an extremely
+long glass counter are mostly teenage employees selling candy, popcorn, and
+drinks.  Walking past them, you enter a theater through the double doors and
+are astounded to see a huge white screen hanging with pictures on it.  This
+is something you have never seen before, and you are awestruck by it.  
+~
+0 131084 0
+Rd     0
+S
+#26157
+City Hall~
+~
+~
+This section of the hallway is much less crowded than the section to the
+south.  A janitor walks around whistling quietly, trying to distract himself
+from his endless toil.  
+~
+0 131080 0
+Rd     0
+D0
+~
+~
+7 0 26158
+D2
+~
+~
+0 0 26127
+S
+#26158
+The Mayor's Office~
+~
+~
+The mayor of Methidoral City sits in his office and ponders the future of
+the city he is in charge of running.  His office is richly decorated with
+imported furniture, and portraits of all the former mayors hang on the wall.
+The view overlooking Methidoral from here is breathtaking.  
+~
+0 131082 0
+Rd     0
+D2
+~
+mayor's office~
+7 26059 26157
+S
+#26159
+The Clocktower~
+~
+~
+You have entered a room where time seems to stand still.  The ticking of
+the clock is all you can concentrate on, and it seems to penetrate your
+every thought.  Looking around, you see a pitch black room, which is home
+only to a few bats in the rafters.  An overwhelming feeling of fear grips
+you, as you try to control yourself from fleeing in sheer panic.  
+~
+0 393228 0
+Rd     0
+D5
+~
+~
+0 0 26162
+S
+>wake_prog 100~
+0
+mpechoat $n Good Morning, $n.
+~
+|
+#26160
+Base of the Clocktower~
+~
+~
+Standing at the base of the clocktower, you look outside, not knowing
+exactly what to expect.  There is a great deal of noise surrounding you, and
+people are dressed in a style that you have never seen before.  Moving
+machines of metal abound, but noone else seems to take much notice.  
+Where are you?
+~
+0 393229 0
+Rd     0
+D4
+~
+~
+0 0 26161
+D5
+~
+~
+0 0 26007
+S
+#26161
+Inside the Clocktower~
+~
+~
+You are on a staircase inside a clocktower.  Not quite knowing where this
+is leading, you become a little bit frightened.  The creaking stairs seem to
+be old, but the rest of the clocktower is fairly new looking.  
+~
+0 393229 0
+Rd     0
+D4
+~
+~
+0 0 26162
+D5
+~
+~
+0 0 26160
+S
+#26162
+Inside the Clocktower~
+~
+~
+Finally you begin to get used to the total darkness inside of the
+clocktower.  The light you are carrying is not very effective, and only
+allows you to see a few feet in front of you.  
+~
+0 393229 0
+Rd     0
+D4
+~
+~
+0 0 26159
+D5
+~
+~
+0 0 26161
+S
+#26200
+Entrance to the Grand Arena~
+~
+~
+You are standing in a small room.  The room is bare of any furnishings to
+prevent any form of combustion.  Within the room is a portal which leads to
+the Grand Arena.  It is safe to stand within the spectators area, but is
+quite dangerous within the gladiator wings.
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 26076
+S
+#0
+
+
+
+#SPECIALS
+M 26000 spec_healer
+M 26001 spec_executioner
+M 26024 spec_cast_mage
+M 26026 spec_cast_adept
+M 26027 spec_guard
+M 26028 spec_guard
+M 26031 spec_thief
+M 26035 spec_janitor
+M 26036 spec_fido
+M 26039 spec_cast_mage
+M 26046 spec_assassin
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 26000 1 26000
+M 0 26001 1 26001
+E 0 26000 0 20
+E 0 26000 0 21
+O 0 26002 0 26002
+M 0 26027 8 26007
+E 0 26060 0 5
+E 0 26061 0 20
+E 0 26062 0 23
+M 0 26052 3 26011
+M 0 26065 1 26027
+M 0 26002 1 26044
+M 0 26035 3 26045
+M 0 26053 1 26071
+M 0 26054 1 26071
+M 0 26015 1 26085
+G 0 26044 0
+G 0 26045 0
+G 0 26046 0
+G 0 26047 0
+E 0 26046 0 22
+M 0 26047 1 26085
+M 0 26016 1 26086
+M 0 26003 1 26087
+G 0 26021 0
+G 0 26022 0
+G 0 26057 0
+G 0 26020 0
+M 0 26004 1 26088
+G 0 26080 0
+G 0 26081 0
+G 0 26082 0
+M 0 26014 1 26089
+G 0 26026 0
+G 0 26027 0
+G 0 26028 0
+G 0 26029 0
+M 0 26013 1 26090
+G 0 26030 0
+G 0 26031 0
+G 0 26032 0
+G 0 26033 0
+G 0 26034 0
+M 0 26005 1 26091
+M 0 26006 1 26092
+G 0 26084 0
+G 0 26085 0
+G 0 26062 0
+G 0 26093 0
+G 0 26103 0
+G 0 26102 0
+G 0 26097 0
+M 0 26007 1 26093
+M 0 26008 1 26094
+G 0 26023 0
+G 0 26024 0
+G 0 26025 0
+G 0 26050 0
+M 0 26009 1 26095
+G 0 26016 0
+G 0 26035 0
+M 0 26010 1 26096
+G 0 26083 0
+G 0 26086 0
+G 0 26087 0
+M 0 26011 1 26097
+G 0 26088 0
+G 0 26089 0
+G 0 26090 0
+M 0 26012 1 26098
+G 0 26052 0
+G 0 26053 0
+G 0 26054 0
+O 0 26099 0 26099
+M 0 26099 1 26099
+M 0 26030 3 26100
+E 0 26062 0 23
+E 0 26060 0 5
+M 0 26067 3 26101
+M 0 26068 1 26104
+M 0 26069 2 26107
+E 0 26075 0 20
+E 0 26074 0 21
+M 0 26017 1 26115
+M 0 26019 1 26116
+M 0 26020 1 26116
+M 0 26021 1 26116
+M 0 26022 1 26116
+M 0 26023 1 26116
+M 0 26018 1 26117
+M 0 26024 1 26118
+M 0 26025 1 26118
+M 0 26025 1 26118
+M 0 26041 1 26119
+O 0 26198 0 26120
+M 0 26042 1 26123
+M 0 26046 1 26124
+O 0 26058 0 26124
+M 0 26059 1 26126
+E 0 26077 0 20
+M 0 26058 1 26127
+M 0 26057 1 26129
+M 0 26049 1 26133
+M 0 26062 1 26133
+M 0 26061 2 26135
+E 0 26069 0 6
+M 0 26064 1 26135
+E 0 26070 0 20
+E 0 26071 0 5
+M 0 26066 1 26138
+M 0 26050 1 26139
+E 0 26072 0 13
+E 0 26073 0 3
+M 0 26060 1 26142
+E 0 26066 0 20
+E 0 26067 0 8
+M 0 26029 1 26143
+E 0 26063 0 22
+E 0 26062 0 23
+M 0 26145 1 26145
+M 0 26048 1 26147
+M 0 26055 1 26148
+E 0 26065 0 20
+M 0 26051 1 26149
+E 0 26064 0 22
+E 0 26062 0 23
+M 0 26028 2 26150
+E 0 26060 0 5
+E 0 26062 0 23
+E 0 26061 0 20
+M 0 26056 1 26158
+E 0 26076 0 18
+O 0 26159 0 26159
+O 0 26199 0 26200
+S
+
+
+
+#SHOPS
+26003 10 26 31 0 0 100 75 0 24
+26004 9 0 0 0 0 120 75 0 24
+26005 12 0 0 0 0 130 60 9 20
+26006 5 0 0 0 0 110 70 0 24
+26007 8 13 0 0 0 140 90 9 20
+26008 2 13 0 0 0 110 90 0 24
+26009 3 4 27 29 0 125 70 0 24
+26010 19 17 0 0 0 120 80 0 24
+26011 19 17 0 0 0 120 80 7 23
+26012 13 9 3 10 0 100 100 9 18
+26013 1 15 17 19 0 110 90 0 24
+26014 19 0 0 0 0 105 90 0 24
+26015 17 19 13 0 0 120 100 0 24
+26016 9 0 0 0 0 110 90 9 18
+0
+
+
+
+#$

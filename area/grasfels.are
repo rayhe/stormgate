@@ -1,0 +1,7953 @@
+#AREADATA
+Name        { 100+ } Grasfels~
+Builders    Gorsha~
+VNUMs       21701 21900
+Security    100
+Recall      1
+Flags       32
+Version     107
+Creator     Gorsha~
+Llevel      0
+Ulevel      0
+Sounds      &zAn abrupt silence covers the land.~
+Music       u4_castl.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#21701
+Nowex~
+Nowex~
+Nowex stands guard in the Northwestern Tower.
+~
+This guard leans against the wall of the tower.  The armor does not
+appear to fit him as well as it should.  He leans against the wall with his
+powerful gaze out the window.  He rarely moves while standing at his post
+but every so often he'll slightly move the position of his battlehammer on
+his shoulder.  
+~
+67 167780544 71335952 49152 2 1000 S
+106 1 212 212 0 39286d0+0 0d0+0
+1060 12 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if isgood($n)
+kneel $n
+say I am glad you have come to visit Cebu.
+say I must bid you farewell as I am still on guard duty.
+emote turns to look over the city.
+else
+eyebrow $n
+say I am afraid you have come to the wrong place.
+mpkill $n
+endif
+~
+>fight_prog 25~
+head
+~
+>fight_prog 20~
+cast entangle
+~
+|
+#21702
+Neeran~
+Neeran~
+Neeran stands guard in the Northeastern Tower.
+~
+The guard before you is much taller than most of the other minotaurs. 
+His horns would scrap across the top of the tower if he were to stand on his
+toes.  He leans on his battlehammer while standing in the center of the
+tower.  His large brown eyes are able to pick out the tiniest detail from a
+distance.  If anything were to happen to the city, he looks capable of
+defending the village.  He keeps in large, metallic armor in pristine
+condition.  The battlehammer in his hand is large enough to cleanly knock
+off a head or two.  Clearly, this is a minotaur that isn't to be messed
+with.  
+~
+67 167780544 71335952 49152 2 1000 S
+106 1 212 212 0 39287d0+0 0d0+0
+1060 12 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if isgood($n)
+bow $n
+say $n, Welcome to Cebu.
+say I'm sure the people of our good village will be hospitable.
+emote turns to look over the city.
+else
+eyebrow $n
+say Only creatures of good are welcomed within our walls.
+mpkill $n
+endif
+~
+>fight_prog 25~
+punch
+~
+>fight_prog 20~
+cast entangle
+~
+|
+#21703
+Slexin~
+Slexin~
+Slexin stands guard in the Southeastern Tower.
+~
+This minotaur is not as large as most of his brethen.  He stands a few
+feet shorter than the average minotaur.  His body is covered in light
+leather clothing.  A long quivver hangs down his left leg, and the quivver
+is filled with many arrows.  His bow is slung over his back.  
+~
+67 167780544 71335952 49152 2 1000 S
+106 1 212 212 0 39287d0+0 0d0+0
+1060 12 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if isgood($n)
+nod $n
+say I am glad when anyone comes up to visit, but
+say I'd rather chat later over a drink instead of
+say during my duty.
+wave $n
+else
+say YOU are the reason I stand guard over my precious city.
+mpkill $n
+endif
+~
+>fight_prog 20~
+cast entangle
+~
+|
+#21704
+Sowet~
+Sowet~
+Sowet stands guard in the Southwestern Tower.
+~
+Sowet is wearing standard battlearmor.  The metal plates klank against
+each other with her every movement.  The thick metal slows movement a little
+but stops many would-be fatal blows.  Her hair is flung between her horns
+and falls down the middle of her back.  A pink flower is placed in her hair
+near one of her horns.  
+~
+67 167780544 71335952 49152 2 1000 S
+106 1 212 212 0 39287d0+0 0d0+0
+1060 12 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if isgood($n)
+curtsey $n
+say Welcome to the city of Cebu.
+say I enjoy newcomers, but it'll be safer for you
+say if you go back down into the city.
+smile $n
+wave $n
+emote turns back to looking out over the surrounding area.
+else
+say My day was going fine until you came along.
+mpkill $n
+endif
+~
+>fight_prog 20~
+cast entangle
+~
+>fight_prog 25~
+head
+~
+|
+#21705
+North West Drow Guard~
+a Drow guard~
+A Drow guard keeps watch over the city.
+~
+The drow guard is covered in a thick globe of darkness.  It is hard to
+make out an exact characteristics through the shroud of blackness.  
+~
+65 32960 6324240 43008 2 -1000 S
+106 1 250 250 0 39287d0+0 0d0+0
+1060 8 0
+0 0 1
+3 0 0
+>fight_prog 25~
+if ispc($n)
+cast 'bend light'
+else
+cast demonfire
+endif
+~
+>fight_prog 20~
+if ispc($n)
+slit
+else
+circle
+endif
+~
+>rand_prog 10~
+cast 'complete healing'
+~
+>all_greet_prog 100~
+if isnpc($n)
+break
+endif
+if ispc($n)
+if isgood($n)
+grin
+say Time to die!
+mpkill $n
+endif
+endif
+~
+|
+#21706
+North East Drow Guard~
+A Drow Guard~
+A Drow guard watches over the city.
+~
+The drow guard is covered in a thick globe of darkness.  It is hard to
+make out exact characteristics through the shroud of darkness.  
+~
+65 32960 6324240 59392 2 -1000 S
+106 1 250 250 0 39287d0+0 0d0+0
+1060 8 0
+0 0 1
+3 0 0
+>fight_prog 25~
+if ispc($n)
+cast 'bend light'
+else
+cast demonfire
+endif
+~
+>fight_prog 20~
+if ispc($n)
+slit
+else
+circle
+endif
+~
+>rand_prog 10~
+cast 'complete healing'
+~
+>all_greet_prog 100~
+if isnpc($n)
+break
+endif
+if ispc($n)
+if isgood($n)
+say You shouldn't have ventured this far into the caves.
+mpkill $n
+endif
+endif
+~
+|
+#21707
+South East Drow Guard~
+a Drow guard~
+A Drow guard stalks the streets of Anxi.
+~
+The drow guard is covered in a thick globe of darkness.  It is hard to
+make out an exact characteristics through the shroud of blackness.  
+~
+65 32960 6324240 59392 2 -1000 S
+106 1 250 250 0 39287d0+0 0d0+0
+1060 8 0
+0 0 1
+3 0 0
+>fight_prog 20~
+if ispc($n)
+cast 'bend light'
+else
+cast demonfire
+endif
+~
+>fight_prog 20~
+if ispc($n)
+slit
+else
+circle
+endif
+~
+>rand_prog 10~
+cast 'complete healing'
+~
+>all_greet_prog 100~
+if isnpc($n)
+break
+endif
+if ispc($n)
+if isgood($n)
+cackle
+mpkill $n
+endif
+endif
+~
+|
+#21708
+South West Drow Guard~
+a Drow guard~
+A Drow guard watches out for any danger to the city.
+~
+The drow guard is covered in a thick globe of darkness.  It is hard to
+make out an exact characteristics through the shroud of darkness.  
+~
+65 32960 6324240 59392 0 -1000 S
+106 1 250 250 0 39287d0+0 0d0+0
+1060 8 0
+0 0 1
+3 0 0
+>fight_prog 25~
+if ispc($n)
+cast 'bend light'
+else
+cast demonfire
+endif
+~
+>fight_prog 20~
+if ispc($n)
+slit
+else
+circle
+endif
+~
+>rand_prog 10~
+cast 'complete healing'
+~
+>all_greet_prog 100~
+if isnpc($n)
+break
+endif
+if ispc($n)
+if isgood($n)
+mpkill $n
+endif
+endif
+~
+|
+#21709
+Pari~
+Pari~
+Pari admires the many murals adorning the temple's walls.
+~
+Pari stands tall as he shuffles around the temple.  His long and brown
+robe trails behind as he walks.  The end of his robe has not started to
+tatter from the drag.  There is a large pocket in the robe near the left
+waist.  His piercing dark eyes penetrate your soul as he looks upon you.  It
+is hard to figure out what is going through his mind.  
+~
+65 167772224 4227120 57344 2 1000 S
+115 1 230 230 0 38750d0+0 0d0+0
+1150 12 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+say Welcome my child.
+say Please do not disturb any who may enter this holy temple.
+else
+say I do not care for your tormented soul within these walls!
+mpkill $n
+cast entangle
+endif
+endif
+~
+>fight_prog 25~
+mpecho &GA green glow radiates from the tips of Pari's fingers.
+cast 'curse of nature'
+~
+>fight_prog 20~
+mpecho &RA vortex opens in the air above you...
+cast 'meteor swarm'
+~
+>fight_prog 15~
+mpecho A weird tingle flows down your spine.
+c 'dancing lights'
+~
+>speech_prog p dunkel grease~
+if ispc($n)
+say How'd you come about hearing of this?
+say Nevermind, I guess it matters not. I've
+say ran out of the grease. If you want some,
+say then you'll need to go into the mountains.
+say The grease covers the rocks in a couple of
+say hidden caves.  I've also heard rumors that
+say the Drow use it as well so you might want
+say to keep your watch up.
+endif
+~
+>speech_prog p jieka~
+if ispc($n)
+say I haven't heard that name in many years.
+say I'm afraid we let Jieka back into the wild.
+say Even if you found him, he'd have no memory
+say of this land. He was still an infant when
+say we let him go. Perhaps our scout, Pulis,
+say ran into him. If he ever returns from the
+say mountains, then I'll tell him to look for you.
+endif
+~
+>give_prog Tail Scurn~
+if ispc($n)
+emote falls back a step in surprise
+say I can't believe you've killed him. I heard
+say he is one of the most powerful demons ever.
+say I shall reward you for your bravery with
+say this.
+emote pulls a small staff out from within his robes.
+mpoload 21724
+give hilt $n
+mpjunk tail
+endif
+~
+>rand_prog 5~
+emote pulls out a small staff from a secret inside pocket.
+emote twirls the staff in his hand as he mumbles to himself
+mpecho You can hear something about ridding the world of some demon
+emote must have given up on that thought as he puts the staff back in his robe.
+~
+|
+#21710
+Hecar~
+Hecar~
+Hecar leans upon the back of the throne.
+~
+The Elder of the village of Cebu is the creature that stands before you. 
+His old age is apparent from the gray hairs running down his back.  One of
+his wrinkled hands leans on the back of the silver throne in order to help
+him stand.  The pristine white robes hanging from his shoulders stop only
+near his ankles.  The hood of the robe is currenly hanging down his back. 
+You're not sure if he ever wears the hood up since minotaurs are equiped
+with such large horns.  
+~
+67 234881216 21004336 57344 2 1000 S
+135 1 270 270 0 38250d0+0 0d0+0
+1350 12 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+nod $n
+say I am glad you have come to Cebu.
+say Perhaps you would be willing to HELP us?
+else
+sigh
+say You are only part of the problem!
+say Why must you come here?!?
+mpkill $n
+cast entangle $n
+endif
+endif
+~
+>fight_prog 25~
+mpecho &OThe hairs on your body begin to stand on end...
+cast 'thunder strike'
+~
+>fight_prog 20~
+say I am old but I'm not going without a fight!
+slam
+~
+>fight_prog 15~
+emote makes a lunge for your throat.
+dim
+~
+>speech_prog p help~
+if ispc($n)
+say The village is constantly being raided
+say by a clan of Drow. We've never been able
+say to find their origin. If we could ever
+say get a map of the mountain, even just a
+say piece. We'd finally be able to put
+say together some form of an assault.
+endif
+~
+>speech_prog p jieka~
+if ispc($n)
+mpechoat $n Hecar shifts his weight upon the throne.
+emote clears his throat
+say Jieka? I..uh..don't recall this name.
+emote looks around the chamber.
+say Now if you'll excuse me, I do have other business.
+endif
+~
+>rand_prog 10~
+emote pulls out a little box from under the pulpit
+emote opens the box.
+gasp
+say I can't believe I'm out of...
+say I'm too old to make the Dunkel Grease.
+say Perhaps Pari still has some....
+~
+>give_prog Dunkel Grease~
+if ispc($n)
+say My oh my! You've got some Dunkel Grease!
+say How can I ever thank you?
+ponder
+say AH HA! I shall give you this to help light
+say your way from danger.
+mpjunk grease
+mpoload 21775
+give light $n
+endif
+~
+|
+#21711
+Alaki~
+Alaki~
+Alaki is removing the burnt candles from their holders.
+~
+Alaki leaves her long, brown hair trailing down her back.  The light of
+the candles glints off her horns as she bends over to remove an unlit one. 
+She wears a loose, blue blouse that is left untucked.  The ends of the
+blouse drop down over the top of her skirt.  The length of her skirt drops
+down to just below her knee.  Hanging from her neck is a shiny gold
+medallion.  A light seems to be glowing from the emerald embedded into the
+medallion.  
+~
+67 234881216 88375312 57344 2 1000 S
+125 1 250 250 0 20500d0+0 0d0+0
+1250 12 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+smile $n
+say Hello, my name is Alaki.
+say I'm chief advisor to Hecar.
+say Give me a minute to finish with these candles, and
+say I'll help you as soon as I'm done.
+else
+say By damn, I'm tired of your kind in my village!
+mpkill $n
+cast entangle $n
+endif
+endif
+~
+>fight_prog 25~
+mpoload 21714
+emote waves her hands in a circular motion.
+mpecho A scroll magically appears in her grasp.
+emote begins to recite the scroll
+recite disrupt $n
+~
+>fight_prog 20~
+mpecho &WA brillant white light streaks from Alaki's hands!
+cast 'holy fires'
+~
+>fight_prog 5~
+if ispc($n)
+mpoload 21715
+cast 'wrath of god'
+quaff alakihealing
+endif
+~
+>speech_prog p hecar~
+if ispc($n)
+say Hecar is the current chief of Cebu.
+say I help advise him on matters in the 
+say village. Right now we have an important
+say CONCERN to the village and have been trying
+say to take the proper precautions.
+endif
+~
+>speech_prog p concern~
+if ispc($n)
+say The Drow raiding parties have been coming
+say with more frequency as of late. We need to
+say somehow find a way to stop them. We believe
+say that killing the Matriarch of the main
+say family should put a glitch in their plans.
+say At least, we hope it would. Our top scouts
+say have discovered that she holds an important
+say Anxi item on her. The day I see that item is
+say the day I'll believe she's dead.
+endif
+~
+>give_prog Crystal Prism 2Half~
+if ispc($n)
+gasp
+say Have you really done it? You've really
+say killed that most heinous creature. The
+say village is forever in your debt for this.
+curtsey $n
+mpjunk crystal
+mpoload 21778
+drop block
+say This diamond is worth a lot on any market
+say that I've ever been to. I'm ashamed this
+say is all I have at the moment to give you.
+blush
+endif
+~
+>death_prog 25~
+if ispc($n)
+mpoload 21726
+mpecho A piece of paper slides out of one of her pockets.
+endif
+~
+|
+#21712
+Lydao~
+Lydao~
+Lydao walks through his home.
+~
+Lydao walks around his house wearing a simple, everyday outfit.  A thick
+shirt is tucked into a pair of cotton pants.  A rock hammer attached to his
+belt bounces off his leg.  
+~
+65 234881088 71335984 57344 2 1000 S
+112 1 224 224 0 28000d0+0 0d0+0
+1120 12 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+bow $n
+say How are you on this fine day?
+else
+glare $n
+cast 'blood omen' $n
+endif
+endif
+~
+>fight_prog 25~
+if isgood($n)
+say Why would you attack those of a similar upbringing?
+cast 'bend light'
+else
+emote swings his hammer for your legs.
+stun
+endif
+~
+>fight_prog 20~
+if isgood($n)
+sigh
+mpecho A swarm of insects flies through one of the windows.
+cast pestilence
+else
+scream
+cast 'sonic boom'
+endif
+~
+>death_prog 100~
+if inroom($n) == 21715
+emote bumps into the stove as he falls to the ground.
+mpecho A few embers are knocked out of the hot stove.
+mpoload 21719
+endif
+~
+|
+#21713
+Mysse~
+Mysse~
+Mysse quietly cleans up the house.
+~
+~
+65 167772352 71335952 57344 2 1000 S
+111 1 222 222 0 33750d0+0 0d0+0
+1110 12 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+curtsey $n
+say You don't happen to have a cooking pot on you?
+say Nevermind...I'm sure I've got one somewhere.
+else
+say Can't I have one day of peace around here!
+mpkill $n
+endif
+endif
+~
+>fight_prog 25~
+emote charges at you with her horns.
+head
+~
+>fight_prog 20~
+snicker
+say How limber do I look?
+bk
+~
+|
+#21714
+Goi~
+Goi~
+Goi is leaning against the wall.
+~
+~
+65 167772352 71335952 49152 2 1000 S
+110 1 220 220 0 39000d0+0 0d0+0
+1100 12 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+bow $n
+say Please, make yourself at home.
+else
+say I already dislike your presence.
+mpkill $n
+endif
+endif
+~
+>fight_prog 25~
+mpecho &WYou feel the power of the gods streak through your chest.
+soul
+~
+>fight_prog 20~
+mpecho &OThe ground begins to shake....
+cast earthblast
+~
+|
+#21715
+Sapan~
+Sapan~
+Sapan huddles in his cloak.
+~
+~
+131 67109056 71335952 49152 2 1000 S
+109 1 218 218 0 43750d0+0 0d0+0
+1090 12 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+shiver
+nod $n
+say I am glad to have company.
+say Please, rest here with me.
+else
+chuckle
+say It is true, I am cold and poor but not weak!
+mpkill $n
+endif
+endif
+~
+>fight_prog 25~
+mpecho &BThe temperture suddenly drops....
+cast 'cone of frost'
+~
+>fight_prog 20~
+mpecho &BSapan's hands become severly cold.
+cast 'winters chill'
+~
+|
+#21716
+Minotaur Guard Cebu~
+a City Guard~
+One of the city's guards strolls by.
+~
+~
+65 234922176 90210352 49152 2 1000 S
+110 1 220 220 0 19500d0+0 0d0+0
+1100 12 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+if isnpc($n)
+break
+endif
+if ispc($n)
+if isgood($n)
+bow $n
+else
+cast 'holy fires' $n
+endif
+endif
+~
+>fight_prog 25~
+if isgood($n)
+slap $n
+stun
+else
+emote attempts to knock your feet out from underneath you.
+stun
+endif
+~
+>fight_prog 20~
+if ispc($n)
+if isgood($n)
+cast 'bend light'
+else
+cast 'dancing lights'
+endif
+endif
+~
+|
+#21717
+Villager~
+a villager~
+A villager travels along the path.
+~
+~
+193 8384 88178704 49152 2 1000 S
+105 1 210 210 0 26250d0+0 0d0+0
+1050 12 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+if isgood($n)
+bow $n
+else
+glare $n
+endif
+~
+>fight_prog 25~
+circle
+~
+>fight_prog 20~
+emote tries to claw your eyes.
+gorge
+~
+|
+#21718
+Anya~
+Anya~
+Anya rests near the back of the cave.
+~
+Anya shivers near the back of the cave.  Her clothing has long been
+ripped to shreds.  The elements can be quite harsh as she has found out. 
+Many pieces of her clothing barely cling to her skin.  With every gust of
+wind tha blows into the cave, Anya goes into a fit of shivering.  
+~
+67 134250688 73400336 35072 2 0 S
+110 1 220 220 0 39000d0+0 0d0+0
+1100 8 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+emote looks you over carefully.
+say Why have you come to bother me?
+say Can't I just live out my PUNISHMENT in peace?
+emote looks back at her cold firepit.
+endif
+~
+>fight_prog 25~
+mpecho Anya's eyes grow a dark red as she lifts her hands to the sky.
+mpecho &rA loud screech erupts from a portal opening in the sky.
+cast hellfire
+~
+>fight_prog 20~
+mpecho From the look in Anya's eyes, she has lost all sense of reality.
+bite
+~
+>speech_prog p punishment~
+if ispc($n)
+sniff
+say Being exiled from the rest has been difficult.
+say I've been living in this caves for many years
+say now. One day I hope to see my child again. Its
+say his birth that made MAGNUS and HECAR shun me.
+endif
+~
+>speech_prog p magnus~
+if ispc($n)
+say If one was to say the Drow had a leader, then
+say Magnus would be it. He spends most of the day
+say worrying about his damn horde. When my baby,
+say Jieka, was born, he had the most beautiful
+say blue eyes. It is unheard of, at least in our,
+say clan, a Drow having such a color. Magnus had
+say taken my child and I was exiled from Anxi.
+say What I wouldn't give to see Magnas dead.
+say Before I die, I'd love to see nobody in those
+say pitiful, worn out boots of his.
+endif
+~
+>speech_prog p hecar~
+if ispc($n)
+say Hecar is from the minotaur village to the
+say north. I'm not sure what or even if any 
+say position he may hold with them. He found
+say my child and I laying in the fields outside
+say the village. He tried to comfort me, but
+say it was all a distraction. While he talked,
+say a robed minotaur took my child away. He left
+say me for dead outside the gates to the village.
+say Only PULIS had any compassion among them. I
+say wish he would come back to visit. He used to
+say visit often.
+endif
+~
+>speech_prog p pulis~
+if ispc($n)
+say Pulis used to come and visit me often. I
+say haven't seen him in a few weeks.
+sigh
+endif
+~
+>speech_prog p anxi~
+if ispc($n)
+say Anxi is a drow city hidden beneath the
+say Dunkel Mountains. Don't ask for directions
+say because I've long forgotten the way through
+say the caves.
+endif
+~
+>death_prog 45~
+if ispc($n)
+mpecho Anya's blood sprays against the cave upon the last devasting blow.
+mpoload 21722
+drop blood
+endif
+~
+>give_prog Hara-kiri~
+if ispc($n)
+smile $n
+emote looks over the dagger.
+say I see you have found one of these blades.
+say Hopefully with this, I shall find the
+say peace I've been searching for.
+emote jams the Hara-kiri into a small hole in the ground.
+mpecho Anya throws herself onto the blade.
+mpecho &BAnya's blood is smeared all over the weapon.
+mpecho The blade begins to emite a weird glow.
+mpoload 21789
+drop eternal
+mpecho The body shimmers slightly before disappearing.
+mppurge $i
+endif
+~
+>give_prog Worn Leather Boots~
+if ispc($n)
+chuckle
+say I was just joking about that earlier, but
+say I must say that it is great to see those
+say boots without their owner. At the sight of
+say those empty boots, I feel as if a burdern
+say has lifted.
+mpoload 21780
+give exon $n
+mpjunk boot
+endif
+~
+>give_prog Pulis Love~
+if ispc($n)
+emote starts to cry as you give her the gift.
+say Oh don't worry about me, these aren't tears
+say of pain. I'm just so happy that he didn't
+say die in those awful Drow prisons. He got to
+say die as a free man. It is now time for me to
+say follow him to the other side. I've been
+say waiting for this day for a long time.
+mpoload 21782
+drop heart
+say Thank you, $n!
+peck $n
+wave
+mppurge $i
+endif
+~
+|
+#21719
+City Guard~
+the City Guard~
+The city guard stands before the gates of Cebu.
+~
+One of the guards of Cebu stands in front of the city.  The large plates
+of armor overlap each other.  With every intake of breath, you can hear the
+breast plates hit upon each other.  There isn't a dent or blemish to be
+found on the armor.  A silhouette of the minotaur is stamped on the right
+breastplate.  A leather belt is wrapped around his waist.  A large hammer
+hangs from a loop on the belt.  
+~
+67 235512000 88113200 49152 2 1000 S
+125 1 250 250 0 20500d0+0 0d0+0
+1250 12 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+if level($n) < 90
+grin $n
+tell $n It would be in your best interest to not enter here.
+tell $n This area is meant for champions or higher.
+break;
+endif
+if isnpc($n)
+break;
+endif
+if ispc($n)
+if isgood($n)
+bow $n
+say Welcome to the city of Cebu.
+say May your visit be joyous!
+emote stands aside from the entrance.
+unlock north
+open north
+else
+grin $n
+say I'm afraid there is only way into the city for you.
+emote brings his battlehammer up to a ready position.
+endif
+endif
+~
+|
+#21720
+Terhes~
+Terhes~
+Terhes inspects for imposters.
+~
+A small creature darts around her underground dwelling.  She wears a long
+robe that flows behind her.  A dark red shroud waves in the air as she
+speeds around.  A glint of light comes off something metallic near her
+waist.  
+~
+65 32960 71303184 26880 2 -1000 S
+115 1 230 230 0 46500d0+0 0d0+0
+1150 8 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+say How have you made it in here?
+scream $n
+mpkill $n
+else
+glare $n
+say I don't care for strangers within my home.
+say LEAVE!
+endif
+endif
+~
+>entry_prog 100~
+if inroom($i) == 21838
+south
+endif
+~
+|
+#21721
+Inas~
+Inas~
+Inas slowly walks around the alter.
+~
+Inas shrouds herself in a black cloak.  The cloak extends itself all
+around her body.  She has it tied together in the front.  Her beady red eyes
+stick out in the darkness of the underground.  You sense them following you
+everywhere you move.  
+~
+67 268468416 88178704 59392 2 -1000 S
+125 1 250 250 0 30750d0+0 0d0+0
+1250 8 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+curtsey $n
+say I'm afraid you have come to the wrong place.
+dbs $n
+cast curse $n
+else
+curtsey $n
+say You may walk around and see what you can't have.
+say I should warn you, you will be watched at all times.
+endif
+endif
+~
+>fight_prog 25~
+mpecho &zThe floor begins to rumble as a vortex opens up before Inas.
+cast hellfire
+~
+>fight_prog 20~
+mpecho &cYour begin to feel lightheaded.
+cast 'bend light'
+~
+>fight_prog 15~
+mpecho &pThe lighting begins to dim.
+cast 'unholy curse'
+~
+|
+#21722
+Hitues~
+Hitues~
+Hitues guards the house of the First Family.
+~
+The high male of the First Family guards the house from invasion.  He
+drapes himself in a long, black cloak which floats behind as he moves.  He
+is wearing a set of light chainmail armor on his body.  As he walks around
+the house, his eyes stare intently at every inch of the house for any
+changes.  The two large scimitars at his side glint in the light as he
+passes by.  
+~
+65 134250688 88113168 51456 2 -1000 S
+123 1 246 246 0 39000d0+0 0d0+0
+1230 8 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+say I care not for your kind!
+assassinate $n
+cast solidify $n
+else
+say It would be wise to declare your business.
+endif
+endif
+~
+>fight_prog 25~
+if isgood($n)
+mpecho &rA portal opens in the air above you.
+cast demonfire
+else
+mpecho &OThe stone floor begins to rumble beneath you.
+cast earthblast
+endif
+~
+>fight_prog 20~
+emote attempts to slash your throat.
+slit
+~
+>fight_prog 15~
+cast 'dispel magic'
+~
+>entry_prog 100~
+if inroom($i) == 21839
+north
+endif
+~
+|
+#21723
+Vesz~
+Vesz~
+Vesz swirls her hand around in the pool.
+~
+Vesz is unusually tall for this tribe of Drow.  She towers over the pool
+of blood in front of her.  Her long dress flows onto the ground and the
+trail drags a few feet behind her.  The dress is made from crushed velvet
+and looks incredibly soft to the touch.  The blood from the pool drips off
+her long fingernails.  As you look upon her face, the only impression you
+can remember are her little dark eyes.  Her eyes remind you of your darkest
+nightmare and you wish to never look in them again.  
+~
+67 268468416 71860240 43008 2 -1000 S
+120 1 240 240 0 36000d0+0 0d0+0
+1200 8 0
+0 0 2
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+emote stops looking at the pool of blood.
+mpecho You can see a sly grin appear on her face as she slowly looks up.
+mpkill $n
+cast solidify $n
+else
+emote doesn't stop walking around the pool as you enter.
+mpecho Vesz waves her hand in the air as if you mean nothing to her.
+endif
+endif
+~
+>fight_prog 25~
+emote lashes out with her fingernails.
+claw
+~
+>fight_prog 20~
+mpecho Your feel a strange sensation come over head mind.
+cast ultrablast
+~
+>fight_prog 15~
+mpecho It is beginning to become harder to concentrate.
+cast malignify
+~
+>give_prog Dagger Holy Flame~
+if ispc($n)
+say This is the last ingrediant needed for my
+say spell. I finally have that Inas where I want
+say her.
+emote looks you over from head to toe.
+say Well, I presume you are entitled to something
+say for bringing this to me.
+mpjunk holy
+mpoload 21784
+give flame $n
+endif
+~
+|
+#21724
+Hajo~
+Hajo~
+Hajo patrols this dwelling for Vesz.
+~
+This Drow walks around wearing practical clothing.  His clothes do not
+look special in any way.  He keeps two scimitars at his side which are
+placed in two sheathes.  Since his clothing is so dark, it is difficult to
+notice Hajo when he slides off into the shadows.  
+~
+65 32960 21004304 59648 2 -1000 S
+118 1 236 236 0 34000d0+0 0d0+0
+1180 8 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+say I'm afraid I can't allow you to leave.
+mpkill $n
+cast solidify $n
+else
+nod $n
+say I'm quite busy so if you wouldn't just move along.
+say Vesz will have my head if I don't find the Dagger
+say of Holy Flame for her.
+endif
+endif
+~
+>fight_prog 25~
+~
+>fight_prog 20~
+cast 'bend light'
+~
+>fight_prog 15~
+dim
+~
+>entry_prog 100~
+if inroom($i) == 21842
+north
+endif
+~
+>speech_prog p dagger of holy flame~
+if ispc($n)
+say The Dagger of Holy Flame will help Vesz finally
+say take down Inas. She will then be the ruler of
+say Anxi as her family will take over the top position.
+say The Ancient Books speak of a Dagger dipped in a
+say pool of blood then blessed by a Spirit of the most
+say Holy nature. It is very hard to find such a spirit
+say in these caverns. As soon as I find this spirit,
+say I shall kill that other troubling woman for the
+say dagger.
+endif
+~
+>give_prog Dagger Holy Flame~
+laugh $n
+say I can't believe you gave this to me!
+say Now I will be the most favored of all.
+laugh $n
+say I can't wait until Vesz finds out what I
+say have discovered.
+mpjunk holy
+mpecho shuffles off to find Vesz.
+~
+|
+#21725
+Scurn~
+Scurn~
+Scurn floats in the center of the Praxis.
+~
+Scurn floats near the center of the room.  This is definitely not a Drow,
+of this or any tribe.  Two large and red horns stick out from the top of his
+hooded head.  The tips of the horns sporadically drip small amounts of
+blood.  Two large white orbs peer out from the eyeslits of the mask.  Three
+long blackish arms are crossed across his chest.  The scaly arms of this
+creature glisten in the light from some moist covering.  A thick tail hangs
+behind the creature as he floats in the air.  
+~
+67 436764864 88965136 57600 2 -1000 S
+139 1 278 278 0 41250d0+0 0d0+0
+1390 19 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+grin $n
+say I've waited for one such as you to come.
+say Come on $n, lets dance.....
+emote moves his hands in an arcanic nature.
+else
+bow $n
+say Welcome to the Praxis of Magic.
+say You come TRAIN with the greatest magicians in the realm?
+endif
+endif
+~
+>fight_prog 25~
+mpecho &zThe air in the room starts to feel like its contracting.
+cast ultrablast
+~
+>fight_prog 20~
+emote pulls a small piece of paper from something on his back.
+emote unrolls the small scroll.
+mpoload 21717
+recite scurn $n
+~
+>fight_prog 15~
+mpecho &rA large vortex begins to swirl in the air behind Scurn.
+cast demonfire
+~
+>death_prog 80~
+if ispc($n)
+mpecho &rA loud scream rips through the room.
+mpecho Your killing blow has chopped off Scurn's tail.
+mpoload 21725
+endif
+~
+>give_prog Small Flame~
+if ispc($n)
+grin
+nod $n
+emote covers the small flame with its hands.
+mpjunk flame
+mpoload 21720
+give flame $n
+say I have added a small portion of my power
+say to that flame. It is now more powerful.
+endif
+~
+>speech_prog p train~
+if ispc($n)
+say If you want to train with me, then you need
+say to gain more power. I sense that you are much
+say to weak to handle the greater magics. Only
+say by finding the Tome of Lifeless Blood shall
+say you gain the knowledge needed.
+endif
+~
+>give_prog Tome Lifeless Blood~
+if ispc($n)
+mpechoat $n You believe you saw a hint of surprise on Scurn's face.
+say You must have more power than I thought.
+say I am not unfair and shall give you something
+say in return for the Tome. Take this object
+say that has been in my possession for too long.
+mpjunk tome
+mpoload 21783
+give light $n
+endif
+~
+|
+#21726
+Magnas~
+Magnas~
+Magnas looks around the room inspecting the loot.
+~
+Magnas slowly walks around the room.  His white hair has been cut short
+and stops just at the top of the neck.  His thin leather armor shows off the
+muscles underneath.  The leather has been worked over many times and shows
+the scars of battle.  Spots of dried blood can be seen all over his armor. 
+Even the tips of his boots are covered in dried blood.  
+~
+67 503349440 524432 57600 2 -1000 S
+130 1 260 260 0 29250d0+0 0d0+0
+1300 8 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+say Tsk, tsk, how did you get in here?
+mpkill $n
+cast solidify $n
+else
+say I highly suggest departing this room.
+glare $n
+endif
+endif
+~
+>fight_prog 25~
+~
+>fight_prog 20~
+circle
+~
+>fight_prog 15~
+cast 'dispel magic'
+~
+>rand_prog 10~
+emote pulls a crystal ball out of one of the chests.
+mpecho A vision of a medallion with a glowing emerald
+mpecho embedded into it fades into view.
+mpechoat $r &gYou think you hear Magnas mumble something about
+mpechoat $r &gwanting this Glowing Medallion.
+mpecho The vision begins to fade away.
+emote puts the crystal ball back into the chest.
+~
+>give_prog Glowing Medallion~
+if ispc($n)
+say I have finally found the Medallion. How
+say did you know I was looking for this? It
+say doesn't matter. I've always wanted to look
+say upon this piece. Give me a couple minutes
+say and I shall make you something with this
+say Emerald.
+emote pulls out a small knife and digs the Emerald out of the Medallion.
+emote goes to the far corner and begins to gather some items.
+mpecho After awhile he comes back with something in his hand.
+say I want you to have this. A prophecy once said
+say that this would be used to create a weapon of
+say extreme power. Who knows if its true.
+mpjunk medallion
+mpoload 21777
+give hilt $n
+endif
+~
+|
+#21727
+Harcos~
+Harcos~
+Harcos wipes blood from the end of his blade.
+~
+The area around Harcos is phased out of reality.  The air shimmers right
+before your very eyes.  It is hard to make out what Harcos looks like.  The
+shimmering vision begins to tire your eyes and you need to look away.  
+~
+67 33661632 90177680 24576 2 -1000 S
+130 1 260 260 0 46000d0+0 0d0+0
+1300 8 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+say At last a surface dweller has found blah way into Anxi.
+say Too bad this shall be your last.....
+dbs $n
+cast solidify $n
+else
+nod $n
+say I am here to sharpen your skills in combat.
+say Naturally, my TRAINING is why the Drow of this tribe
+say are so lethal.
+grin
+endif
+endif
+~
+>fight_prog 25~
+emote attempts to slash your throat.
+slit
+~
+>fight_prog 20~
+if ispc($n)
+dim
+endif
+~
+>fight_prog 15~
+emote attempts to knock you over.
+stun
+~
+>speech_prog p training~
+if ispc($n)
+say The Drow raiders of this tribe must be
+say able to kill all minotaur guards. Do you
+say think you have what it takes to fight along
+say us? I repeat, do you have what it TAKES!
+endif
+~
+>speech_prog p takes~
+if ispc($n)
+say Then I shall test you. In the village of
+say Cebu, there is a chamber that is held most
+say sacred by the Minotaur. Find the key to this
+say chamber and bring it to me. I shall reward
+say you if you pass this difficult trial of Drow
+say training.
+endif
+~
+>give_prog Crystal Key~
+if ispc($n)
+mpecho A sly grin spreads across Harcos' face.
+say Finally, the Drow will have access to the
+say village without having to hide in the darkness.
+mpjunk key
+mpoload 21758
+say Take this weapon, its given to the Drow upon
+say completion of their training.
+give scimitar $n
+endif
+~
+|
+#21728
+Verzerg~
+Verzerg~
+Verzerg is looking among the papers on the table.
+~
+A tall and skinny Drow stands with his hands on the table.  His large
+gauntlets stretch back up his arm almost up to his elbow.  The loose silk
+shirt slightly flaps in a small breeze the occasionally sweeps through. 
+Verzerg's legs are covered in thick chainmail with a bone cap covering his
+knee.  His gaze is kept constant upon the papers and maps spread out before
+him.  
+~
+67 436207808 90996752 59648 2 -1000 S
+140 1 280 280 0 42000d0+0 0d0+0
+1400 8 0
+0 0 1
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+say What's this? You saving me the trouble
+say of killing you on the surface?
+dbs $n
+cast ultrablast
+else
+say If you've made this far, then you must
+say be capable warriors. I will not kill you
+say if you can perform a TEST of skill.
+endif
+endif
+~
+>fight_prog 25~
+mpecho &rA vortex opens up above your head.
+cast demonfire
+~
+>fight_prog 20~
+mpecho &zA dark pulse comes from Verzerg's eyes.
+cast 'flash burn'
+~
+>fight_prog 15~
+emote twirls his blade in his hands before he strikes.
+circle
+~
+>fight_prog 10~
+emote reaches for a pouch on his belt.
+mpoload 21718
+quaff Verzerghealing
+~
+>speech_prog p test~
+if ispc($n)
+say I'm sure we'll be able to kill every
+say last one of those Minotaur eventually.
+say It would just go much quicker if I had
+say a layout of their village. That way I
+say could plan out a more precise stragedy.
+say Every village or town has a map somewhere.
+say If I could only get my hands on Cebu's.
+endif
+~
+>give_prog Layout Cebu Map~
+if ispc($n)
+say Now I will be able to finalize an
+say attack plan. The Drow will drain every
+say last drop of blood from those Minotaurs.
+say I shall give you some info as your reward.
+say There are weapons of great power within
+say the region of Grasfels. A weapon of Good
+say and one of Evil exist. I know not much
+say about the weapon of Good since it doesn't
+say concern me. But I will tell you that the
+say Drow of exile has the key ingrediant for
+say Eternal Damnation.
+mpjunk layout
+endif
+~
+|
+#21729
+Minotaur Prisoner Pulis~
+a minotaur~
+A minotaur sits against the wall with his hands chained to the wall.
+~
+This minotaur has become scrawny from malnutrition.  His skeleton is
+easily visible through his taunt skin.  Much of this minotaur' hair has
+fallen out from his imprisonment in this dark cell.  The life has long been
+sapped from his eyes as he sits here lifelessly.  
+~
+67 64 21233680 0 2 1000 S
+106 1 212 212 0 44000d0+0 0d0+0
+1060 12 0
+0 0 1
+3 0 0
+>all_greet_prog 85~
+if ispc($n)
+if inroom($n) == 21826
+emote attempts to look up.
+emote gives up as his head falls back down.
+mpecho You can hear him whisper for help.
+mptrans $n 21827
+mpat $n mpforce $n look
+mpgoto $n
+follow $n
+endif
+endif
+~
+>entry_prog 100~
+if isfollow($i)
+if inroom($i) == 21797
+emote gasps heavily for air.
+mpecho Pulis whispers, "I can't make it."
+say Please, go on without me. The torture I was
+say put through has taken too much from my body.
+say At least I got to see the outside of that cell
+say before death came for me. Take this to Anya for
+say me. Hopefully this will put her heart at east.
+mpoload 21797
+drop love
+mpecho Pulis slumps against the side of the cave.
+mpecho You notice Pulis stop breathing as his chest
+mpecho stops moving.
+mpecho The wide smile on Pulis' face shows that he
+mpecho finally found peace.
+mppurge $i
+endif
+endif
+~
+|
+#21730
+Prisoner Angel Masaya~
+an angel~
+An angel is tied to the wall in a spreadeagle formation.
+~
+An angel is suspended on the wall with all its limbs chained.  Its wings
+have long withered to a point of being almost useless.  The wings just
+limply hang to its side.  A white glow radiates from its body even in its
+weakened state.  A small tube sticks out from the wall near the angel's
+chest.  It is stuck into the chest of the angel is looks to be draining its
+blood.  
+~
+67 532544 21233680 0 2 1000 S
+106 1 212 212 0 38500d0+0 0d0+0
+1060 17 0
+0 0 2
+3 0 0
+>all_greet_prog 85~
+if ispc($n)
+emote looks up as you walk through the doorway.
+emote attempts to smile, but it appears to be too much of a strain.
+say I am glad you have come.
+say I can sense another Angelic presence on this
+say plane. Take this to him, and he shall make
+say sure your efforts don't go for naught.
+mpoload 21794
+give print $n
+mpecho A bright white light surrounds the angel.
+mppurge $i
+endif
+~
+|
+#21731
+Drow Guard Anxi~
+a Drow Guard~
+One of the Drow guards silently walks by in the shadows.
+~
+~
+65 167805120 88080528 59392 2 -1000 S
+110 1 220 220 0 19500d0+0 0d0+0
+1100 8 0
+0 0 1
+3 0 0
+#21732
+Pack Wolves~
+a pack of Wolves~
+A pack of wolves walks through the caves.
+~
+~
+101 32768 17596432 0 2 0 S
+107 1 214 214 0 34500d0+0 0d0+0
+1070 16 0
+0 0 0
+3 0 0
+>fight_prog 25~
+bite
+~
+>fight_prog 20~
+claw
+~
+|
+#21733
+Angel Enares~
+Enares~
+Enares appears to be lost within the caves.
+~
+&WA bright light surrounds the creature walking through the caves.  From
+within the light, you can see a tall and translucent creature.  Two large
+wings stretch out from it's back.  The tips of the wings come close to the
+edge of the light but do not quite cross the boundary.  It moves with a
+grace that you have never seen before.  You can't see the head, but you
+notice something looking side to side as if its searching for something.  
+~
+75 1614016 90210352 24576 2 1000 S
+350 1 700 700 0 300000d0+0 0d0+0
+10 17 0
+0 0 0
+3 0 0
+>all_greet_prog 100~
+if ispc($n)
+nod $n
+say I am filled with joy at the sight of you. I've
+say become tired of wolves. You are the first sign
+say of intelligent life that I've seen in days.
+say You don't happen to know your WAY through these
+say caves? I can't find the hidden city of Anxi.
+endif
+~
+>speech_prog p way~
+if ispc($n)
+say You do know the way? Thats fantastic! I've been
+say searching for days in these caves. I need some
+say rest before I try to deal with the Drow. I am
+say in search of my sister Masaya. She got lost while
+say in your mortal plane. I'm afraid something
+say dreadful has occured since she's usually back
+say quite quickly. If you find any trace of her, I'd
+say be eternally grateful for your help.
+endif
+~
+>give_prog Print Masaya~
+if isgood($n)
+say OH! I'm happy that you've helped Masaya find freedom.
+mpjunk print
+mpoload 21785
+give ankle $n
+else
+say I'm not sure why you've helped my sister but I'm grateful.
+mpjunk print
+mpoload 21786
+give flame $n
+endif
+~
+|
+#21734
+Loader~
+&z~
+&z
+~
+~
+524355 0 16 32768 0 0 S
+110 1 220 220 0 10000d0+0 0d0+0
+0 0 0
+0 0 0
+7 0 0
+#21735
+Minotaur Spirit~
+a Spirit of a Minotaur~
+&WA Spirit of a Minotaur hovers above the pool.
+~
+~
+524363 64 4194320 32768 3 1000 S
+106 1 212 212 0 25000d0+0 0d0+0
+0 12 0
+0 0 0
+7 0 0
+>all_greet_prog 100~
+if ispc($n)
+if isgood($n)
+bow $n
+say I am glad a kind spirit such as yours
+say has found their way here.  The Minotaur
+say of this village have a tough fight against
+say the Drow of Anxi. If you help them, I will
+say be able to help you in return. Before the
+say bravest Minotaurs go into battle, they come
+say to me so that I may bless their weapons.
+say If you receive such a weapon, I shall be
+say bless yours as well.
+endif
+endif
+~
+>give_prog Diamond Battle Hammer~
+if ispc($n)
+if isgood($n)
+bow $n
+say I see you have received such a weapon
+say that I spoke of before. You have must
+say showed courage in battle. I shall
+say reward your courage with a blessing
+say upon this Hammer.
+emote waves his hand over the Battlehammer.
+mpecho The Diamond head of the weapon begins to glow.
+mpjunk diamond
+mpoload 21788
+give glowing $n
+say May it shine as brightly as your bravery.
+else
+glare $n
+say How have you found your way into this
+say chamber? I shall mourn the loss of the
+say Minotaur who died for you to receive this
+say glorious weapon. This weapon was not meant
+say for you and shall not be in your possession
+say any longer.
+mpjunk diamond
+endif
+endif
+~
+>give_prog Bloody Dagger~
+if ispc($n)
+say I am surprised you have heard of this legend.
+say This one is known by very few left on the
+say world.
+mpjunk bloody
+mpoload 21796
+give holy $n
+endif
+~
+>act_prog can't carry that much weight~
+if ispc($n)
+say I'm afraid that you are too overburdened
+say with material possessions to receive such
+say a rare object.
+emote throws the Dagger into the Pool.
+mpecho The dagger evaporates as it hits the water.
+mpjunk dagger
+endif
+~
+|
+#0
+
+
+
+#OBJECTS
+#21701
+Silver Throne~
+a silver throne~
+A silver throne sits near the back wall.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+throne~
+~
+E
+silver~
+~
+#21702
+Row Pillars~
+a row of pillars~
+Two rows of pillars outline the way to the alter.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+pillars~
+The pillars are constructed from the wood of the local oak.  The pillars
+have small notches evenly dug into the wood from top to bottom.  The notches
+are empty and have not even collected dust.  The rest of the pillar is kept
+in great condition with special treatment to keep its shine.  
+~
+#21703
+Matchbox~
+a matchbox~
+An empty matchbox sits next to the candle.~
+~
+15 256 0 0 0 0 1
+100 100
+5~ 1~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+matchbox~
+The small matchbox is currently empty.  
+~
+#21704
+Wood Alter~
+a wood alter~
+A wood alter is covered with a thin piece of cloth.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+alter~
+An alter has been constructed from the base of a solid oak tree.  No
+markings or engravings have been put upon the surface of the alter.  This
+alter could be confused for a regular table if it wasn't sitting in this
+temple.  A thin white cloth lies on the top of the alter.  The cloth is not
+quite large enough to cover the entire surface.  It leaves a little less
+than an inch of wood around its border.  
+~
+E
+wood~
+An alter has been constructed from the base of a solid oak tree.  No
+markings or engravings have been put upon the surface of the alter.  This
+alter could be confused for a regular table if it wasn't sitting in this
+temple.  A thin white cloth lies on the top of the alter.  The cloth is not
+quite large enough to cover the entire surface.  It leaves a little less
+than an inch of wood around its border.  
+~
+#21705
+Spiraling Staircase~
+spiraling staircase~
+A staircase spirals up into the darkness above the city.~
+~
+12 20 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+staircase~
+A set of stone steps compose the staircase.  The steps are a little less
+than a foot high.  The staircase was made in a spiral pattern in order to
+use up less space in the city.  
+~
+#21706
+Table~
+a table~
+A large table sits in the center of the room.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+table~
+The table is covered with many different papers.  Some of the papers are
+maps of the surrounding villages, mountains, rivers, etc.  Other papers are
+detailed instructions for future campaigns.  None of the writing is in any
+known language.  This Drow tribe must use their own secretive code to keep
+their plans to themselves.  
+~
+#21707
+Glowing Mirror~
+glowing mirror~
+The mirror sporadically glows from within its glass.~
+~
+15 0 0 0 0 0 0
+100 100
+500~ 15~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21708
+Pool Blood~
+a pool of blood~
+A deep pool is filled with swirling blood.~
+~
+12 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21709
+Stone Pulpit~
+a stone pulpit~
+A stone pulpit stands in the center of the room.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21710
+Alcove~
+an alcove~
+A unlit alcove is set into the wall near the door.~
+~
+15 268435492 0 0 0 0 0
+100 100
+50~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+E
+alcove~
+The arched alcove goes back about a foot into the wall.  The top of the
+arch has been smeared with a thick grease.  A small nitch is in the center
+of the alcove.  Right in front of the nitch is small wood chip which has
+been set into the stone.  
+~
+#21711
+Dark Alter~
+a dark alter~
+The alter exudes a hidden and darker evil.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21712
+Closed Book~
+a closed book~
+A closed book sits in the middle of the alter.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21713
+Mob Weapon Dagger NOT FOR MORTS~
+a dagger~
+A dagger is here.~
+~
+5 536895488 0 0 0 8193 106
+100 100
+0~ 0~ 0~ 11~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 250
+A
+19 250
+#21714
+Disrupt~
+scroll of disrupt~
+A scroll rolls in the dirt.~
+~
+2 536879104 0 0 0 1 106
+100 100
+140~ disrupt~ disrupt~ detonate~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21715
+Alakihealing~
+potion of Alakihealing~
+A potion not meant for mortals is here.~
+~
+10 805314560 0 0 0 1 106
+100 100
+140~ cure serious~ cure serious~ cure serious~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21716
+Key Cebu~
+the Key to Cebu~
+A key made of bone sits on the ground.~
+~
+8 805306368 131072 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21717
+Scurn Scroll Power~
+scurn's Power Scroll~
+Scurn has lost his scroll of ultimate power.~
+~
+2 805314560 131072 0 0 1 106
+100 100
+135~ curse~ confusion~ dispel magic~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21718
+Verzerghealing~
+verzerg's Potion of Health~
+A small vial bubbles with a dark liquid.~
+~
+10 805314560 131072 0 0 1 106
+100 100
+140~ heal~ cure critical~ golden armor~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21719
+Small Flame~
+a small flame~
+&RA small flame is about to die out.~
+~
+8 301989888 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+#21720
+Dark Flame~
+a dark flame~
+&zA dark flame is still lit.~
+~
+8 301989908 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 3000 0
+0 0
+reserved~
+0 0
+0 0 0
+>drop_prog 100~
+0
+if inroom($n) == 21847
+mpecho As the dark flame gets closer to the alcove,
+mpecho you notice it start to melt the grease.
+mpecho &zSome of the grease drips from the top of
+mpecho &zthe alcove.
+mpat 21873 mpforce loader mpoload 21721
+mpat 21873 mpforce loader mpat 21847 drop grease
+mpat 21873 mpforce loader mpat 21847 palm flame
+endif
+~
+|
+#21721
+Dunkel Grease~
+dunkel Grease~
+&zSome grease is smeared on the ground.~
+~
+8 268435460 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+2 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+#21722
+Anya Blue Blood~
+a Drop of Blue Blood~
+&BA drop of a thick blue liquid lies on the ground.~
+~
+8 402653184 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 2000 0
+0 0
+reserved~
+0 0
+0 0 0
+>drop_prog 100~
+0
+if inroom($n) == 21835
+mpecho The book on the alter begins to &Yglow&w.
+mpat 21873 mpforce loader mpoload 21723
+mpat 21873 mpforce loader mpat 21835 mppurge
+mpat 21873 mpforce loader mpat 21835 drop tome
+endif
+~
+|
+#21723
+Tome Lifeless Blood~
+the Tome of Lifeless Blood~
+&bA book attempts to hide in the dark.~
+~
+8 268435456 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+5 10000 0
+5 0
+blood omen~
+1 1
+0 0 0
+#21724
+Demon Skin Hilt~
+a Demon Skin Hilt~
+A hilt made from a demon's skin lies here.~
+~
+4 268435540 0 0 0 1 104
+100 100
+104~ 1~ 1~ age~
+10 4160 0
+0 0
+reserved~
+0 0
+21779 0 0
+#21725
+Tail Scurn~
+the Tail of Scurn~
+&rA tail has been chopped off of some creature.~
+~
+8 84 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+25 10000 0
+0 0
+reserved~
+0 0
+0 0 0
+#21726
+Layout Cebu Map~
+the Layout of Cebu~
+A map lies on the ground.~
+~
+2 268435456 0 0 0 1 100
+100 100
+0~ reserved~ reserved~ reserved~
+1 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+#21727
+Reflecting Pool~
+a pool~
+&CA crystal clear pool is in the center of the room.~
+~
+25 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+999 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#21728
+Square Piece Crystal~
+a square piece of crystal~
+&CA piece of crystal is in the shape of a square.~
+~
+18 0 131072 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+21732 0 0
+>put_prog 25~
+0
+if ispc($n)
+mpecho &CThe water starts to swirl around in the pool.
+mpecho &WAn apparition appears above the pool.
+mpmload 21735
+endif
+~
+|
+#21729
+Square Piece Crystal~
+a square piece of crystal~
+&wA piece of crystal is in the shape of a square.~
+~
+18 0 131072 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+21732 0 0
+#21730
+Rectangular Piece of Crystal~
+a rectangular piece of crystal~
+&OA piece of crystal is in the shape of a rectangle.~
+~
+18 0 131072 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+21733 0 0
+#21731
+Triangular Piece Crystal~
+a triangular piece of crystal~
+&cA piece of crystal is in the shape of a triangle.~
+~
+18 0 131072 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 400 0
+0 0
+reserved~
+0 0
+21733 0 0
+#21732
+Large Square Crystal~
+a large square crystal~
+A piece of crystal is in the shape of a large square.~
+~
+8 268435456 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 600 0
+0 0
+reserved~
+0 0
+21734 0 0
+#21733
+Crystal Key Shaft~
+a key shaft made of crystal~
+A piece of a crystal key lies here.~
+~
+8 268435456 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 600 0
+0 0
+reserved~
+0 0
+21734 0 0
+#21734
+Crystal Key~
+a clear crystal key~
+A key made of crystal lies here.~
+~
+18 268435457 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1000 0
+0 0
+reserved~
+0 0
+0 21733 21732
+#21735
+Donation Cup~
+a donation cup~
+&WA donation cup sits on a table next to the pool.~
+~
+15 0 0 0 0 0 1
+100 100
+2~ 0~ 0~ 0~
+999 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#21736
+Battle Hammer~
+a Battlehammer~
+A large hammer shows the signs of battle.~
+~
+5 132161 8 0 16384 8193 100
+100 100
+0~ 0~ 0~ 8~
+7 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 75
+A
+19 45
+A
+18 15
+A
+13 150
+#21737
+Longbow~
+a Longbow~
+A used longbow sits on the ground.~
+~
+32 1025 17 0 16384 2097153 100
+100 100
+100~ 10~ 10~ holy fires~
+4 4000 0
+0 0
+reserved~
+0 0
+21737 0 0
+A
+2 2
+A
+19 20
+A
+18 40
+A
+13 150
+#21738
+Breastplate Cebu~
+the Breastplate of Cebu~
+A thick breastplate has the image of a Minotaur engraved on it.~
+~
+9 1088 0 0 16384 9 100
+100 100
+0~ 0~ 0~ 0~
+35 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+14 -150
+A
+2 -1
+A
+24 -10
+A
+23 -10
+A
+13 150
+A
+18 30
+A
+19 30
+#21739
+Quiver~
+a Quiver~
+A quiver has been left behind with a few arrows left inside.~
+~
+15 1024 0 0 0 1 101
+100 100
+3~ 1~ 0~ 0~
+2 4040 0
+0 0
+reserved~
+0 0
+21737 0 0
+#21740
+Leather Vest~
+a Leather Vest~
+A leather vest is beginning to collect dust.~
+~
+9 536872000 0 0 0 9 100
+100 100
+0~ 0~ 0~ 0~
+10 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 1
+A
+24 -20
+A
+14 100
+A
+13 100
+A
+18 30
+A
+19 30
+#21741
+dark Metal Gauntlets~
+dark Metal Gauntlets~
+A pair of gauntlets is made out of a dark and hard metal.~
+~
+9 872417872 0 0 0 129 105
+100 100
+0~ 0~ 0~ 0~
+4 4400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -15
+A
+12 180
+A
+13 180
+A
+19 15
+A
+18 15
+#21742
+Chainmail Leggings~
+a Pair of Chainmail Leggings~
+A pair of chainmail leggings shows the first signs of rust.~
+~
+9 872417856 8192 0 0 33 105
+100 100
+0~ 0~ 0~ 0~
+10 4200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 180
+A
+25 75
+A
+12 180
+A
+19 10
+A
+18 15
+#21743
+Silk Shirt~
+a Silk Shirt~
+A silk shirt is starting to get dirty as it lies on the ground.~
+~
+9 905972304 0 0 67108864 9 105
+100 100
+0~ 0~ 0~ 0~
+45 4600 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 55
+A
+12 110
+A
+13 110
+A
+19 45
+A
+18 45
+#21744
+Long Black Cloak~
+a Long Black Cloak~
+&zA long black cloak lies on the ground.~
+~
+9 528 0 0 0 1025 103
+100 100
+0~ 0~ 0~ 0~
+3 4120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -15
+A
+12 185
+A
+25 60
+A
+13 150
+A
+19 12
+A
+18 12
+#21745
+light Chainmail~
+light Chainmail~
+A set of chainmail rests on the ground.~
+~
+9 576 8192 0 2097152 9 103
+100 100
+0~ 0~ 0~ 0~
+25 4120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 100
+A
+25 50
+A
+23 -20
+A
+18 35
+A
+19 35
+A
+13 150
+#21746
+Blazing Scimitar~
+a Blazing Scimitar~
+Small flames jump off the end of a scimitar.~
+~
+5 100680192 0 0 0 8193 103
+100 100
+0~ 0~ 0~ 3~
+4 4120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 80
+A
+25 40
+A
+12 100
+A
+13 160
+A
+19 46
+A
+18 32
+#21747
+Black Cloak~
+a Black Cloak~
+&zA black cloak lies on the ground.~
+~
+9 402653776 0 0 0 1025 104
+100 100
+0~ 0~ 0~ 0~
+2 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+3 2
+A
+18 10
+A
+19 10
+A
+24 -35
+A
+12 375
+A
+13 100
+#21748
+Dark Red Shroud~
+a Dark Red Shroud~
+&rA dark red shroud lies here forgotten.~
+~
+9 33554960 0 0 0 1025 101
+100 100
+0~ 0~ 0~ 0~
+6 4040 0
+5 0
+mental barrier~
+-1 -1
+0 0 0
+A
+13 100
+A
+19 11
+A
+18 11
+A
+25 20
+A
+32 8
+#21749
+Dagger~
+a Dagger~
+A dagger lies on the ground before you.~
+~
+5 2050 0 0 0 8193 101
+100 100
+0~ 0~ 0~ 11~
+5 4040 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 120
+A
+25 35
+A
+23 -15
+A
+19 31
+A
+18 35
+>drop_prog 100~
+0
+if inroom($n) == 21822
+mpecho The dagger submerges in the pool of blood.
+mpat 21873 mpforce loader mpat 21822 mppurge dagger
+mpat 21873 mpforce loader mpoload 21795
+mpat 21873 mpforce loader mpat 21822 drop bloody
+mpecho &rA spirit rises from the pool.
+mpecho &rThe spirit leaves a weapon by the side of the pool.
+endif
+~
+|
+#21750
+Diamond Studded Belt~
+a Diamond Studded Belt~
+A belt has diamonds embedded into the leather.~
+~
+9 536871424 0 0 0 2049 101
+100 100
+0~ 0~ 0~ 0~
+7 4040 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 100
+A
+19 10
+A
+18 10
+#21751
+Velvet Dress~
+a Velvet Dress~
+A dress made of velvet lies tattered on the ground.~
+~
+9 2064 0 0 0 9 102
+100 100
+0~ 0~ 0~ 0~
+15 4080 0
+5 0
+weaken~
+20 20
+0 0 0
+A
+12 140
+A
+13 140
+A
+18 35
+A
+19 35
+#21752
+fingernails~
+fingernails~
+Fingernail clippings lie scattered on the ground.~
+~
+5 16400 0 0 0 8193 102
+100 100
+0~ 0~ 0~ 5~
+1 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 140
+A
+25 50
+A
+26 100
+A
+2 2
+A
+19 20
+A
+18 50
+#21753
+scurn's Horns~
+scurn's Horns~
+Two large horns roll around the ground.~
+~
+9 1006635584 0 0 10485760 17 105
+100 100
+0~ 0~ 0~ 0~
+25 4200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -40
+A
+25 90
+A
+12 200
+A
+13 200
+A
+19 15
+A
+18 15
+#21754
+Large White Orbs~
+two Large White Orbs~
+&WTwo large white orbs hover slightly above the ground.~
+~
+9 872417809 0 0 0 131073 105
+100 100
+0~ 0~ 0~ 0~
+10 4200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 14
+A
+19 14
+A
+13 150
+A
+12 150
+A
+31 6
+#21755
+Hooded Mask~
+a Hooded Mask~
+A hooded mask lies on the ground.~
+~
+9 939526676 0 0 10485760 65537 105
+100 100
+0~ 0~ 0~ 0~
+2 4200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 150
+A
+12 200
+A
+3 2
+A
+18 15
+A
+19 15
+A
+46 5
+#21756
+simple Leather Armor~
+simple Leather Armor~
+Some leather armor rests on the ground.~
+~
+9 532 0 0 0 9 104
+100 100
+0~ 0~ 0~ 0~
+20 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 42
+A
+19 42
+A
+25 50
+A
+12 100
+A
+13 100
+A
+24 -13
+A
+23 -13
+#21757
+Worn Leather Boots~
+a Pair of Worn Leather Boots~
+A pair of worn out leather boots have been left behind.~
+~
+9 516 0 0 0 65 104
+100 100
+0~ 0~ 0~ 0~
+5 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+A
+24 -25
+A
+25 75
+A
+13 250
+#21758
+Diamond Scimitar~
+a Diamond Scimitar~
+A diamond scimitar glints in the light.~
+~
+5 805306880 0 0 0 8193 104
+100 100
+0~ 0~ 0~ 3~
+6 6000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -15
+A
+24 -15
+A
+25 70
+A
+18 35
+A
+19 55
+A
+12 150
+A
+13 150
+#21759
+Ripped Clothing~
+ripped clothing~
+Some clothing has been ripped apart and left behind.~
+~
+9 0 0 0 0 9 100
+100 100
+0~ 0~ 0~ 0~
+15 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 20
+A
+13 100
+A
+12 100
+A
+48 10
+#21760
+Leather Belt~
+a Leather Belt~
+A leather belt lies before you.~
+~
+9 1025 0 0 16384 2049 102
+100 100
+0~ 0~ 0~ 0~
+5 4080 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 100
+A
+12 140
+A
+19 5
+A
+18 10
+A
+37 5
+#21761
+Stone Hammer~
+a Stone Hammer~
+A stone hammer rests on the ground before you.~
+~
+5 1025 0 0 16384 8193 102
+100 100
+0~ 0~ 0~ 8~
+6 4080 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+1 2
+A
+12 140
+A
+13 140
+A
+19 33
+A
+18 33
+#21762
+Thick Shirt~
+a Thick Shirt~
+A shirt is made out of a thick material.~
+~
+9 1027 0 0 0 9 103
+100 100
+0~ 0~ 0~ 0~
+12 4120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 100
+A
+13 160
+A
+5 2
+A
+19 36
+A
+18 36
+#21763
+Cotton Pants~
+a Pair of Cotton Pants~
+A pair of cotton pants floats in the breeze.~
+~
+9 1024 0 0 0 33 103
+100 100
+0~ 0~ 0~ 0~
+2 4120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 150
+A
+24 -35
+A
+13 50
+A
+19 9
+A
+18 8
+#21764
+Rock Hammer~
+a Rock Hammer~
+A hammer has been formed out of rock.~
+~
+5 536872000 0 0 0 8193 103
+100 100
+0~ 0~ 0~ 8~
+8 4120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+2 2
+A
+13 160
+A
+19 35
+A
+18 35
+#21765
+brown Robes~
+brown Robes~
+&OA set of brown robes lies crumpled in a heap.~
+~
+9 553649152 5120 0 16384 9 104
+100 100
+0~ 0~ 0~ 0~
+15 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+18 50
+A
+12 250
+A
+13 50
+A
+4 2
+#21766
+white Robes~
+white Robes~
+&WA set of white robes lies crumpled in a heap.~
+~
+9 687868928 13312 0 16384 9 104
+100 100
+0~ 0~ 0~ 0~
+15 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 30
+A
+18 30
+A
+12 50
+A
+13 250
+A
+3 2
+#21767
+White Hood~
+a White Hood~
+&WA white piece of cloth flaps in the wind.~
+~
+9 536873987 8192 0 16384 17 104
+100 100
+0~ 0~ 0~ 0~
+5 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -30
+A
+13 150
+A
+12 150
+A
+18 16
+A
+19 14
+#21768
+Blue Blouse~
+a Blue Blouse~
+&BA blue blouse has been folded neatly and lies before you.~
+~
+9 1006636032 0 0 16384 9 105
+100 100
+0~ 0~ 0~ 0~
+25 4200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+30 15
+A
+19 45
+A
+18 45
+A
+13 150
+A
+12 175
+#21769
+Long Grass Skirt~
+a Long Grass Skirt~
+A grass skirt lies on the ground.~
+~
+9 805307459 0 0 16384 33 105
+100 100
+0~ 0~ 0~ 0~
+5 4200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+37 5
+A
+12 175
+A
+13 75
+A
+19 15
+A
+18 15
+#21770
+Glowing Medallion~
+a Glowing Medallion~
+A medallion lies on the ground with a green glow coming from its center.~
+~
+9 805307395 0 0 42754048 5 105
+100 100
+0~ 0~ 0~ 0~
+5 6000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+42 4
+A
+13 25
+A
+12 50
+A
+18 10
+A
+19 20
+#21771
+Pink Flower~
+a &Ppink&c flower~
+&PA pink flower lies discarted on the ground.~
+~
+9 3072 0 0 0 17 101
+100 100
+0~ 0~ 0~ 0~
+1 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 25
+A
+13 200
+A
+19 11
+A
+18 11
+#21772
+Gardening Gloves~
+a Pair of Gardening Gloves~
+A pair of gardening gloves has been left in the dirt.~
+~
+9 1024 0 0 0 129 101
+100 100
+0~ 0~ 0~ 0~
+3 3800 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+5 2
+A
+2 2
+A
+12 120
+A
+13 120
+A
+18 20
+#21773
+Thin Veil Cloth~
+a Thin Veil~
+A thin piece of cloth blows by you.~
+~
+9 1024 0 0 0 65537 102
+100 100
+0~ 0~ 0~ 0~
+1 4080 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+35 8
+A
+13 140
+A
+12 140
+A
+4 1
+A
+18 12
+A
+19 12
+#21774
+Bone Earring~
+a Bone Earring~
+&WAn earring has been made out of a piece of bone.~
+~
+9 16384 0 0 0 524289 100
+100 100
+0~ 0~ 0~ 0~
+2 3000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 10
+A
+19 10
+A
+12 100
+A
+25 30
+A
+24 -12
+#21775
+Shard Divine Light~
+a Shard of Divine Light~
+&WA shard of divine light shoots down from the sky.~
+~
+1 805307392 0 0 0 1 104
+100 100
+0~ 0~ -1~ 0~
+10 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+35 8
+A
+13 130
+A
+12 220
+A
+18 14
+A
+19 14
+#21776
+Diamond Battle Hammer~
+a Diamond Battlehammer~
+A battlehammer constructed from a Diamond sits on the ground.~
+~
+5 939525120 8192 0 67125248 8193 104
+100 100
+0~ 0~ 0~ 8~
+4 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -20
+A
+13 200
+A
+12 100
+A
+19 50
+A
+18 40
+#21777
+Emerald Hilt~
+an Emerald hilt~
+&GA hilt made from Emerald is starting to collect dust.~
+~
+8 0 0 0 0 1 104
+100 100
+0~ 0~ 0~ 0~
+5 6000 0
+5 0
+acid breath~
+5 5
+21776 0 0
+#21778
+Diamond Block~
+a large Diamond block~
+A large block of a Diamond lies on the ground.~
+~
+8 805306433 0 0 0 1 104
+100 100
+0~ 0~ 0~ 0~
+100 20000 0
+5 0
+enhanced strength~
+5 5
+21776 0 0
+#21779
+hara-kiri~
+hara-kiri~
+&cA jagged and curved blade stands up on its hilt.~
+~
+5 905986560 0 0 2048 8193 104
+100 100
+0~ 0~ 0~ 11~
+4 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+25 65
+A
+13 150
+A
+12 150
+A
+24 -20
+A
+19 45
+A
+18 45
+#21780
+Exoneration Hope~
+exoneration~
+A shimmering glimmer of hope hovers slightly above you.~
+~
+9 872415233 0 0 2113536 16385 103
+100 100
+0~ 0~ 0~ 0~
+15 4120 0
+0 0
+reserved~
+0 0
+21779 0 0
+A
+36 10
+A
+25 45
+A
+12 125
+A
+13 250
+A
+19 8
+A
+18 8
+#21781
+Hammer Equality~
+a Hammer of Equality~
+A hammer is here.~
+~
+5 973086720 8192 0 0 8193 106
+100 100
+0~ 0~ 0~ 8~
+1 1 0
+0 0
+malignify~
+0 0
+0 0 0
+A
+24 -250
+A
+18 400
+A
+19 700
+#21782
+anya's Heart~
+anya's Heart~
+&rAn eerie red light glows in the shape of a heart.~
+~
+9 872417345 0 0 0 257 104
+100 100
+0~ 0~ 0~ 0~
+1 6000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+23 -25
+A
+3 2
+A
+13 120
+A
+12 150
+A
+19 15
+A
+18 15
+#21783
+Black Light~
+a Black Light~
+&zA dark light radiates from within.~
+~
+9 805306432 0 0 0 16385 105
+100 100
+0~ 0~ 0~ 0~
+75 4200 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+24 -40
+A
+13 50
+A
+12 300
+A
+4 2
+A
+3 2
+#21784
+Everburning Flame~
+an Everburning Flame~
+&RA flame continues to burn forever.~
+~
+9 838863217 0 0 0 32769 104
+100 100
+0~ 0~ 0~ 0~
+25 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 155
+A
+24 -15
+A
+23 -15
+A
+18 11
+A
+19 17
+A
+12 150
+#21785
+Tiny Ankle Wing~
+a Tiny Ankle Wing~
+A tiny wing flutters in the breeze.~
+~
+9 805307649 0 0 0 1048577 105
+100 100
+0~ 0~ 0~ 0~
+1 4400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 12
+A
+19 12
+A
+12 200
+A
+13 200
+A
+24 -10
+A
+4 2
+#21786
+Flames of the Netherworld~
+the Flames of the Netherworld~
+Small flames flicker at your heels.~
+~
+9 805306900 0 0 0 1048577 105
+100 100
+0~ 0~ 0~ 0~
+1 4400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 12
+A
+19 12
+A
+25 90
+A
+13 200
+A
+24 -10
+A
+1 2
+#21787
+Dark Sandals~
+a Pair of Dark Sandals~
+A pair of dark sandals have been left behind.~
+~
+9 1024 0 0 0 65 104
+100 100
+0~ 0~ 0~ 0~
+5 4160 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+39 8
+A
+13 120
+A
+12 300
+A
+18 8
+A
+19 8
+#21788
+Glowing Diamond Battle Hammer~
+a Glowing Diamond Battlehammer~
+&WA diamond hammer has a glow radiate from within.~
+~
+5 939525184 8216 0 16384 8193 105
+100 100
+0~ 0~ 0~ 8~
+3 6000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 150
+A
+13 150
+A
+25 75
+A
+18 45
+A
+19 50
+#21789
+eternal Damnation~
+eternal Damnation~
+&zA wickedly jagged dagger fails to reflect any light.~
+~
+5 906036052 17 0 2097152 8193 105
+100 100
+0~ 0~ 0~ 11~
+3 6000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 150
+A
+13 150
+A
+25 75
+A
+18 45
+A
+19 50
+#21790
+Diamond Scimitar Harcos~
+a Diamond Scimitar~
+A diamond scimitar glints in the light.~
+~
+5 536879616 0 0 0 8193 104
+100 100
+0~ 0~ 0~ 3~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+13 150
+A
+12 150
+A
+19 55
+A
+18 35
+A
+25 70
+A
+24 -30
+#21791
+Crystal Prism Half~
+half of a crystal prism~
+Half of crystal prism lies on the ground.~
+~
+8 805306432 131072 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 4000 0
+0 0
+reserved~
+0 0
+21793 0 0
+#21792
+Crystal Prism 2Half~
+half of a crystal prism~
+Half of a crystal prism lies on the ground.~
+~
+8 805306432 131072 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 4000 0
+0 0
+reserved~
+0 0
+21793 0 0
+#21793
+Crystal Prism~
+a Crystal Prism~
+A crystal prism helps create a rainbow on the wall.~
+~
+18 0 0 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+0 21791 21792
+#21794
+Print Masaya~
+the Print of Masaya~
+&W~
+~
+8 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#21795
+Bloody Dagger~
+a Bloody Dagger~
+&RA dagger lies in a pool of blood.~
+~
+5 0 0 0 0 8193 101
+100 100
+0~ 0~ 0~ 11~
+5 4000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 35
+A
+19 31
+A
+23 -15
+A
+25 35
+A
+13 120
+#21796
+Dagger Holy Flame~
+the Dagger of Holy Flame~
+&WA dagger has wisp of smoke coming off the blade.~
+~
+5 0 0 0 0 8193 1
+100 100
+0~ 0~ 0~ 11~
+5 400 0
+0 0
+reserved~
+0 0
+0 0 0
+#21797
+Pulis Love~
+pulis' Love for Anya~
+&W~
+~
+8 838860800 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 10000 0
+0 0
+reserved~
+0 0
+0 0 0
+#21798
+Half War Room Key~
+a half of the War Room key~
+A key has been ripped in two.~
+~
+8 0 131072 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+21800 0 0
+#21799
+Half2 War Room Key~
+a half of the War Room key~
+A key has been ripped in two.~
+~
+8 0 131072 0 0 1 100
+100 100
+0~ 0~ 0~ 0~
+1 40 0
+0 0
+reserved~
+0 0
+21800 0 0
+#21800
+War Room Key~
+the Key to the War Room of Anxi~
+A large key is made out of rock.~
+~
+18 805322752 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 21798 21799
+#21801
+Dagger Anxi~
+a Dagger of the Anxi~
+A dagger is here.~
+~
+5 1040212032 0 0 0 8193 106
+100 100
+0~ 0~ 0~ 11~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 400
+A
+24 -250
+A
+19 700
+#0
+
+
+
+#ROOMDATA
+#21701
+Top of a Guard Tower~
+~
+~
+An open trapdoor is in the center of the floor here at the top of the
+tower.  A wood ladder reaches up into the tower.  On each side of the tower
+are openings used by the guards to look over the village and surrounding
+area.  A table and two chairs sits to the side of one of these openings. 
+The chairs look worn from constant use from the guards.  The view out on of
+the openings is spectacular as one can see far in all directions.  
+~
+0 401418 0
+Rd     0
+D5
+~
+~
+0 0 21702
+S
+#21702
+Inside a Guard Tower~
+~
+~
+A wood ladder reaches up to the top of the tower.  The top end of the
+ladder reaches a little over the edge of an opened trapdoor.  Along the
+sides of the tower are tiny hooks and kniches which hold a collection of
+weapons.  The guards of the village keep extra weapons inside the tower in
+case of an attack.  
+~
+0 401422 0
+Rd     0
+D4
+~
+~
+0 0 21701
+D5
+~
+~
+0 0 21703
+S
+#21703
+Corner of the Village~
+~
+~
+At the northwest corner of the village, the dirt path takes a turn
+towards the east and south.  A tower has built on the top of the wall.  The
+tower reaches quite high above the village.  A small room was built in the
+corner of the wall.  Inside the room is a wood ladder reaching up into the
+tower.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21704
+D2
+~
+~
+0 0 21714
+D4
+~
+~
+0 0 21702
+S
+#21704
+Northern Guard Wall~
+~
+~
+The guard wall rises up into the sky across the dirt path from a
+residental area.  The stomping of guard boots mixes in with the sound of
+children.  The kids play in the grass lawns of the houses.  After many years
+of use, the dirt path has compacted into a hard surface.  The children seem
+to be cautious to even approach the path.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21705
+D3
+~
+~
+0 0 21703
+S
+#21705
+Northern Guard Wall~
+~
+~
+The yelling and laughing of children come from all around.  The yards
+surrounding the houses to the south are being trampled by the village's
+children.  They chase each other around on the grass as they play their
+games.  Some of the mothers stand in doorways watching them.  They talk to
+each other from their doorways while trying to keep watch on their kids.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21706
+D3
+~
+~
+0 0 21704
+S
+#21706
+Northern Guard Wall~
+~
+~
+A small dirt path travels along the bottom of the village's guard wall. 
+Several houses line the side of the path.  The lawns are nicely trimmed and
+watered.  A circle of flowers were planted next to a couple of the houses. 
+A sapling has recently been planted in one of the front yards.  A few
+elderly women sit underneath its branches and quilt in the shade.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21707
+D3
+~
+~
+0 0 21705
+S
+#21707
+Northern Guard Wall~
+~
+~
+As the guard wall continues along the northern border of the village, you
+have come to an intersection in the dirt path.  There is a break-off from
+the path moving to the south towards the center of the village.  The sound
+of children can be heard echoing off the many houses in the village.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21708
+D2
+~
+~
+0 0 21718
+D3
+~
+~
+0 0 21706
+S
+#21708
+Northern Guard Wall~
+~
+~
+A dirt path makes its way around the village at the base of the guard
+wall.  The constant stomping of boots can be heard from the top of the wall.
+The only other evidence of the guards is their shadows that can sometimes be
+seen on the ground.  Across the dirt path from the wall is a building with a
+lavish decor.  The windows are darkly tinted so it is impossible to see what
+is inside.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21709
+D3
+~
+~
+0 0 21707
+S
+#21709
+Northern Guard Wall~
+~
+~
+The massive guard wall continues its way along the northern perimeter of
+the village.  The path going along the bottom of the wall has been stomped
+into being only dirt.  Not a single blade of grass grows on this path
+anymore.  The building to the south looks to be one of importance from its
+decorations.  The window in this part of the building is slightly held ajar
+by a piece of wood.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21710
+D3
+~
+~
+0 0 21708
+S
+#21710
+Northern Guard Wall~
+~
+~
+A thick wall guards the northern border of the village.  The shadows of
+guards walking the wall's top come down on a dirt path.  The building to the
+south is richly decorated with lavish shingles and tinted windows.  There is
+not a speck of dirt blemishing the structure.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21711
+D3
+~
+~
+0 0 21709
+S
+#21711
+Corner of the Village~
+~
+~
+The dirt path turns to the west and south in this corner of the village. 
+At the curved corner of the guard wall, there is a small room built from the
+same material as the wall.  There is a ladder inside the room which leads up
+into the tower above.  The tower stretches up from the top of the wall to
+allow greater visability.  
+~
+0 401410 1
+Rd     0
+D2
+~
+~
+0 0 21722
+D3
+~
+~
+0 0 21710
+D4
+~
+~
+0 0 21712
+S
+#21712
+Inside a Guard Tower~
+~
+~
+The ladder continues to go up and down inside the tower.  All along the
+wall are a variety of weapons hanging on hooks.  On these walls must be
+where the guards keep their extra weapons.  There is a small amount of light
+coming from an opened trapdoor near the top of the tower.  
+~
+0 401422 0
+Rd     0
+D4
+~
+~
+0 0 21713
+D5
+~
+~
+0 0 21711
+S
+#21713
+Top of a Guard Tower~
+~
+~
+The top of the tower is a small and fairly empty room overlooking the
+village and surrounding area.  The only furniture in the room is a small
+table resting against one of the walls.  A couple of chairs sit next to the
+table in case someone needs to rest their legs.  Small openings are carved
+into each side of the tower to allow the guards line of sight over the area.
+~
+0 401418 0
+Rd     0
+D5
+~
+~
+0 0 21712
+S
+#21714
+Western Guard Wall~
+~
+~
+A large stone wall protects the western edge of the village.  The
+stomping of the guard's boots can be heard from the top of the wall.  Along
+the bottom of the wall is a trampled dirt path that travels around the
+village.  Some houses are off the eastern side of the path.  A couple of the
+windows have been left open to help air out the dwellings.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21703
+D2
+~
+~
+0 0 21723
+S
+#21715
+Hot Stove~
+~
+~
+A stove is built into one of the walls.  A pipe goes up through the
+ceiling to let the smoke escape.  A wood table sits in the middle of the
+kitchen.  There are some bowls and plates scattered on the top of the table.
+The meals must be prepared on this table since there are many cuts made in
+the table.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 21716
+D2
+~
+~
+0 0 21724
+S
+#21716
+Large Soft Bed~
+~
+~
+This room has very little furniture inside.  There is one large bed
+stretching out from one of the walls.  Two large pillows rest at the head of
+the bed.  The bed has been made today, and a large quilt keeps the occupants
+warm.  The only other piece of furniture in the room is a chest next to the
+door.  A large lock keeps the chest closed.  
+~
+0 401418 0
+Rd     0
+E
+lock~
+This lock does not have any keyhole.  It is just one solid piece of metal
+looped through the chest.  
+~
+D3
+~
+~
+0 0 21715
+S
+#21717
+A Woodburning Stove~
+~
+~
+The kitchen consists mainly of a table and a stove.  The stove is built
+into the side of the house.  A hole behind the stove is where the smoke
+filters out of the room.  The stove appears hot, but the door is closed. 
+The table has been cleared off with only a few crumbs still residing.  The
+only other thing in the room is a small chest sitting in the corner.  The
+top is open showing the assortment of cooking utensils.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 21726
+S
+#21718
+Dirt Path~
+~
+~
+The dirt path travels between the many buildings of the village.  The
+traffic is busier along the inner streets as you get closer to the village
+square.  The hard, downtroddened path is becoming increasingly busier as one
+moves south.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21707
+D2
+~
+~
+0 0 21727
+S
+#21719
+Reflecting Pool~
+~
+~
+The walls of this room are kept in immaculate condition.  A large crystal
+chandilier hangs from the ceiling.  The light shines brightly in this room
+since the walls are already bright.  In the center of the room is a circular
+pool.  The pool is filled with clear water that reflects all who look on it
+perfectly.  
+~
+0 402442 0
+Rd     0
+D2
+~
+~
+631 21734 21728
+S
+#21720
+Waiting Chamber~
+~
+~
+A throne made entirely of silver rests near the back wall.  The pulpit
+area is kept brightly lit as the candlelight glinting off the throne adds to
+the natural candlelight.  Before the throne stands a pulpit which overlooks
+the rest of the chamber.  An unlit candle sits in a niche on the top of the
+pulpit.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 21721
+D2
+~
+~
+0 0 21729
+S
+#21721
+Elders' Council~
+~
+~
+The chamber slopes down towards the pulpit to the west.  The rows of
+seats are arranged so the row behind is a little higher.  This arrangement
+allows people in the back to get a better view.  Small windows let people
+see the outside and let a breeze come in.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 21730
+D3
+~
+~
+0 0 21720
+S
+#21722
+Eastern Guard Wall~
+~
+~
+The dirt path continues along the bottom of the eastern wall.  Opposite
+of the wall is a richly decorated building.  Scented candles hang off the
+roof's overhang.  The windows are darkly tinted to stop people from looking
+inside.  Unlike the rest of the village, the markings of combat are absent
+from the walls of this building.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21711
+D2
+~
+~
+0 0 21731
+S
+#21723
+Western Guard Wall~
+~
+~
+Some children play within the shadow of the large guard wall.  Their
+yelps and screams carry over any other noise in the area.  A couple of the
+yards have tiny flower patches.  The parents of the children are very
+careful to keep the children from stomping the flowers.  The children appear
+to be having a good time as they run around in the grass.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21714
+D2
+~
+~
+0 0 21732
+S
+#21724
+Lavishly Decorated Living Area~
+~
+~
+A little rug lies inside the doorway.  There are a few pair of shoes
+placed against the wall on the one side of the door.  Several pillows lie
+against the walls of this room for the family or visitors to sit.  In the
+middle of the room is a circular glass table.  An emblem has been engraved
+in the center of the table.  A fireplace helps keep the room warm during the
+cold times.  
+~
+0 401418 0
+Rd     0
+E
+emblem~
+The emblem is a dual-bladed axe with two horns coming out of the hilt. 
+The left blade has a layer of blood on the tip, and the right blade glints
+from a light.  
+~
+D0
+~
+~
+0 0 21715
+D2
+~
+~
+0 0 21733
+S
+#21725
+Large Soft Bed~
+~
+~
+As one enters the bedroom, a large bed is before them.  The bed is
+circular in nature and rests in the dead center of the room.  Two
+nightstands are against the far wall.  A horn rests upon one of the
+nightstands.  Dried blood can be seen on the tip of the horn.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 21726
+S
+#21726
+Decorated Living Area~
+~
+~
+There is a small glass table resting in the center of this room.  Many
+worn pillows sit around the table.  On the table is a bowl filled with a
+variety of fruit.  A fire has been lit in the fireplace which is helping to
+keep the room at a nice temperature.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21717
+D2
+~
+~
+0 0 21735
+D3
+~
+~
+0 0 21725
+S
+#21727
+Dirt Path~
+~
+~
+Several shop windows look out onto the dirt path.  Shoppers enter and
+exit the many stores.  The noise level has gone up as the amount of people
+gets larger.  The buildings are decorated with banners and paintings
+depicting their wares.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21718
+D2
+~
+~
+0 0 21736
+S
+#21728
+Small Hallway~
+~
+~
+Two massive doors stand before you to the north.  The silhouette of the
+minotaur is carved into both doors.  A glow radiates from the keyhole
+illuminating the hall.  The glow is the only source of light in the hallway.
+The glow allows some vision while the corners are still shrouded in
+darkness.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+631 21734 21719
+D1
+~
+~
+0 0 21729
+S
+#21729
+Entrance to the Elders' Chambers~
+~
+~
+The entrance to the auditorium opens up quickly into the council chamber.
+The rows of chairs start near the entrance and stretch towards the pulpit to
+the north.  A table to the side of the door has an opened book sitting on
+top.  A dark hallway goes off to the west.  
+~
+0 401418 0
+Rd     0
+E
+open~
+The pages of the book are a list of all the council's visitors.
+~
+E
+book~
+The pages of the book are a list of all the council's visitors.
+~
+E
+opened~
+The pages of the book are a list of all the council's visitors.  
+~
+D0
+~
+~
+0 0 21720
+D1
+~
+~
+0 0 21730
+D2
+~
+~
+0 0 21738
+D3
+~
+~
+0 0 21728
+S
+#21730
+Rows of Chairs~
+~
+~
+The rows of seats climb the upgrade to the back corner of the chamber.  A
+group of minotaur villagers chat together in the corner.  Their laughing
+carries throughout the chamber.  The gentle flickering of candles keeps the
+area lit.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21721
+D3
+~
+~
+0 0 21729
+S
+#21731
+Eastern Guard Wall~
+~
+~
+A soft breeze gently blows through the open street of the village.  The
+smell of cooked meat is carried with the breeze.  The windows in the
+building to the west are darkly tinted.  The tint makes it impossible to see
+what is going on inside.  The lavish decorations on the building must mean
+this structure serves an important service.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21722
+D2
+~
+~
+0 0 21740
+S
+#21732
+Western Guard Wall~
+~
+~
+The wall continues to protect the western edge of the village.  It
+stretches off to the north and south from this intersection.  The dirt path
+branches off to the east into the middle of the village.  One can hear a lot
+of commotion coming from the east.  The grass does start to grow a little on
+the path's edges as it gets further away from the wall.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21723
+D1
+~
+~
+0 0 21733
+D2
+~
+~
+0 0 21741
+S
+#21733
+Dirt Path~
+~
+~
+The dirt path continues to cut across the center of the village.  A set
+of cobblestones leads the way north towards the entrance to a house.  The
+door is beautifully decorated with small gems and flowers.  The gems sparkle
+in the sunlight causing a rainbow of color to fall across part of the door. 
+Many tall pillars block sight of the southern building.  
+~
+0 401414 1
+Rd     0
+D0
+~
+~
+0 0 21724
+D1
+~
+~
+0 0 21734
+D3
+~
+~
+0 0 21732
+S
+#21734
+Dirt Path~
+~
+~
+Part of the path breaks off towards the south.  It runs up to the
+entrance to the village's temple.  On the door of the temple is a silhouette
+of a minotaur's head.  There is a silver knocker in the center of the door. 
+An inner light radiates from within the silhouette lighting the temple's
+doorstep.  The rest of the dirt path continues to the east and west.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21735
+D2
+~
+~
+0 0 21743
+D3
+~
+~
+0 0 21733
+S
+#21735
+Dirt Path~
+~
+~
+The dirt path moves to the west and to the east towards the village
+square.  A house to the north has a nice flower garden growing near its
+front door.  A mat lies in front of the door with the word "Welcome" painted
+on it.  
+~
+0 401414 1
+Rd     0
+D0
+~
+~
+0 0 21726
+D1
+~
+~
+0 0 21736
+D3
+~
+~
+0 0 21734
+S
+#21736
+Center of Village~
+~
+~
+The streets come together to form a four-way intersection.  The traffic
+is packed as people cross each other as they go about their way.  The
+screams of children can be overheard over the rest of the noise.  Part of
+the reason for the crowd is the placement of a stone sundial near the center
+of the intersection.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21727
+D1
+~
+~
+0 0 21737
+D2
+~
+~
+0 0 21745
+D3
+~
+~
+0 0 21735
+S
+#21737
+Dirt Path~
+~
+~
+A bee takes flight from a bunch of flowers off the side of the path.  The
+bee buzzes off into the sky.  Farther back behind the flowers is the front
+door of a house.  The door looks ragged from putting up with the changing
+seasons.  The sides of the house look equally weather-worn.  
+~
+0 401414 1
+Rd     0
+D1
+~
+~
+0 0 21738
+D2
+~
+~
+0 0 21746
+D3
+~
+~
+0 0 21736
+S
+#21738
+Dirt Path~
+~
+~
+An aisle of stones travels off the path up to a building to the north.  A
+large marble arch allows passage into the village auditorium.  A wide purple
+banner hangs from the room to the right side of the arch.  A wide white
+banner hangs from the left side.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21729
+D1
+~
+~
+0 0 21739
+D3
+~
+~
+0 0 21737
+S
+#21739
+Dirt Path~
+~
+~
+The path heads toward the village center to the west and towards the
+outer wall to the east.  An elderly woman sits in a rockhing chair outside
+one of the houses.  She quietly quilts while rocking back and forth in the
+chair.  A door squeaks as a slight breeze blows by.  
+~
+0 401414 1
+Rd     0
+D1
+~
+~
+0 0 21740
+D2
+~
+~
+0 0 21748
+D3
+~
+~
+0 0 21738
+S
+#21740
+Eastern Guard Wall~
+~
+~
+A path heading towards the center of the village breaks off to the west. 
+The sounds of commerce can be heard to the west.  The dirt path is extremely
+worn down at this intersection so this must be a popular intersection.  The
+ground is hard beneath the feet as you travel along the path.  A minotaur
+child darts around the corner causing many people to bump into each other.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21731
+D2
+~
+~
+0 0 21749
+D3
+~
+~
+0 0 21739
+S
+#21741
+Western Guard Wall~
+~
+~
+A dirt path goes along the bottom of a thick and large wall.  The path
+appears to be trampled into a hard layer of dirt.  Across the path from the
+wall are several residences.  Large and small minotaurs walk in and out of
+the different dwellings.  The path is so hard and even that not even the
+weight of a minotaur is enough to leave a print in the path.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21732
+D2
+~
+~
+0 0 21750
+S
+#21742
+A Circular Arrangement of Pillows~
+~
+~
+Pillows have been arranged into a circle before you.  In the center of
+the circle is a stand holding a single candle.  The candle is not currently
+lit as the match box is empty.  The walls of the temple are covered in
+murals of village legend.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 21743
+D2
+~
+~
+0 0 21751
+S
+#21743
+Entrance to Village Temple~
+~
+~
+The temple is not lavishly decorated like most.  The ground is only solid
+dirt without any tile or marble.  Two row of pillars outline a path to an
+alter at the other end of the temple.  The pillars are constructed from the
+trees of a local forest.  The aroma of burning incense fills the entire
+temple.  
+~
+0 401422 0
+Rd     0
+D0
+~
+~
+0 0 21734
+D1
+~
+~
+0 0 21744
+D2
+~
+~
+0 0 21752
+D3
+~
+~
+0 0 21742
+S
+#21744
+Burning Candles and Incense~
+~
+~
+The walls are covered with many murals.  There are several stories being
+told on these walls.  It is easier to see these pictures with all the
+candles.  The candles are sitting on racks which are leaning against the
+walls.  These candles are letting of a wonderful smell.  The smell is almost
+intoxicating.  
+~
+0 401418 0
+Rd     0
+D2
+~
+~
+0 0 21753
+D3
+~
+~
+0 0 21743
+S
+#21745
+Dirt Path~
+~
+~
+A flower stand on the side of the road attracts the largest crowd on this
+part of the street.  The sweet smell of the flowers drifts by whenever the
+wind blows just right.  The rest of the stores have their names painted on
+their windows.  From their names, the stores are mostly a variety of grocery
+stores.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21736
+D2
+~
+~
+0 0 21754
+S
+#21746
+Comfortable Living Area~
+~
+~
+Some pillows lie scattered around the room.  The pillows look to be worn
+from constant usage.  Instead of a table in the living room, there is a slab
+of wood resting on the ground.  In a corner of the house, a ditch has been
+dug in hold a fire.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21737
+D2
+~
+~
+0 0 21755
+S
+#21747
+Pair of Hay Mattresses~
+~
+~
+A couple of blankets cover a pair of hay mattresses.  The ends of the
+blankets are starting to become unraveled.  They are severely dirty after
+sitting on the floor all the time.  The rest of the floor is covered with
+various articles of clothing which also look dirty.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 21748
+S
+#21748
+General Living Area~
+~
+~
+The living area lacks any significant furniture.  There is a stack of
+mats lying to the side of the door.  Some weeds have sprouted out through
+the hard ground.  The weeds are few but scattered.  A loud whistle screeches
+as the wind blows through the cracks in the door.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21739
+D2
+~
+~
+0 0 21757
+D3
+~
+~
+0 0 21747
+S
+#21749
+Eastern Guard Wall~
+~
+~
+The large wall continues to protect the eastern side of the village.  The
+people of this village walk around without paying second notice the wall. 
+It is hard to navigate along the dirt path since the minotaurs are so large.
+If one or more of them walk to each other sides, then they take up almost
+the entire width of the path.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21740
+D2
+~
+~
+0 0 21758
+S
+#21750
+Western Guard Wall~
+~
+~
+The guards can be heard walking along the top of the guard wall.  Every
+so often a shadow is cast down upon the path as a guard walks in front of
+the sun.  The villagers go about their business or pleasure under the
+protection of this wall and its guards.  Even throught the constant raids,
+this village of minotaurs have tried to not let it affect their sanity.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21741
+D2
+~
+~
+0 0 21761
+S
+#21751
+A Couple Rows of Pews~
+~
+~
+Many pews are lined up facing the alter to the east.  The pews are made
+from a dark and hard wood.  Each pew appears to be able to hold about four
+villagers.  At the feet of the pews are tiny pads that are used for
+kneeling.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21742
+D1
+~
+~
+0 0 21752
+S
+#21752
+Wood Alter~
+~
+~
+A wood alter stands at the front of the temple.  Two tall candleholders
+are on the sides of the alter.  There are two candles burning incense that
+spreads throughout the entire building.  A drain has been carved into the
+alter.  The drain leads to a bucket resting in front of the alter.  On the
+wall behind the alter hangs a massive minotaur silhouette made from silver. 
+~
+0 401418 0
+Rd     0
+E
+bucket~
+The bucket is currently empty.
+~
+D0
+~
+~
+0 0 21743
+D1
+~
+~
+0 0 21753
+D3
+~
+~
+0 0 21751
+S
+#21753
+A Couple Rows of Pews~
+~
+~
+Wood pews are lined up facing the alter to the west.  There are about ten
+pews here.  The pews are made from a dark wood that is very rare.  At the
+feet of the pews are little pillows to make it easier to kneel on the hard
+ground.  On the walls behind the pews are more murals of local legends.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21744
+D3
+~
+~
+0 0 21752
+S
+#21754
+Dirt Path~
+~
+~
+The dirt path widens by a little to allow more traffic.  The buildings
+are occupied by a variety of stores.  One of the shopkeepers is outside
+cleaning dirt off the store's front window.  The inner street is even
+compacted than the outer path.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21745
+D2
+~
+~
+0 0 21765
+S
+#21755
+A Kettle Over a Small Fire~
+~
+~
+A small table sits against the side wall of the kitchen.  A couple knives
+are on the top of the table.  The blades look dull and dirty.  In the center
+of the room is a firepit.  A kettle hangs over the firepit which is filled
+with only ash at the moment.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21746
+D1
+~
+~
+0 0 21756
+S
+#21756
+Two Small Beds~
+~
+~
+There are two rolled up sacks in the corner.  Two flattened positions on
+the floor show where the sacks are usually unrolled.  An extremely small
+chest sits off to the side of the sacks.  A window allows the family to see
+the outer wall.  
+~
+0 401418 0
+Rd     0
+D3
+~
+~
+0 0 21755
+S
+#21757
+Brewing Cauldron~
+~
+~
+The kitchen consists only of flat ground with a hole dug in the room's
+center.  Burnt logs and ashes litter the bottom of the hole.  Some wood
+utensils lie to the side of the hole.  Some bare bones are piled in the
+corner.  Bugs crawl through the pile.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21748
+S
+#21758
+Eastern Guard Wall~
+~
+~
+A massive wall towers over the village.  The tower stands many lengths
+higher than even the tallest of giants.  There are scorch marks covering the
+wall in many places.  This wall must have survived hundreds of battles.  All
+damaged bricks are quickly repaired as there are several patch marks.  You
+can hear the stomping of feet from the guards walking along the top of the
+wall.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21749
+D2
+~
+~
+0 0 21769
+S
+#21759
+Top of a Guard Tower~
+~
+~
+The top of the guard tower is basically barren except for the single wood
+table against the side wall.  A slight draft comes in through the small
+openings on each side of the tower.  These openings is where the guards can
+look out over the surrounding area and the village.  The table has several
+slices taken out of it from combat.  The walls of the tower are also covered
+with battle scars.  A wood ladder stretches up through an open trapdoor in
+the center of the room.  
+~
+0 401418 0
+Rd     0
+D5
+~
+~
+0 0 21760
+S
+#21760
+Inside a Guard Tower~
+~
+~
+The wood ladder continues to go up and down in the inside of the tower. 
+The walls have been badly burned in the past as there are still black marks
+up and down the walls.  A small collection of weapons hang off tiny hooks in
+each wall.  When under attack, the guard reinforcements can grab a weapon on
+the way up or down.  
+~
+0 401422 0
+Rd     0
+D4
+~
+~
+0 0 21759
+D5
+~
+~
+0 0 21761
+S
+#21761
+Corner of the Village~
+~
+~
+The dirt path that travels the perimeter of the village takes a turn to
+the east and north.  Several parts of the wall have been patched up, and
+some blocks have been replaced.  There is a tall tower that stretches from
+the top of the wall.  An arched doorway leads into a small room under the
+tower.  A wood ladder stretches up into the tower from within this room.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21750
+D1
+~
+~
+0 0 21762
+D4
+~
+~
+0 0 21760
+S
+#21762
+Southern Guard Wall~
+~
+~
+The perimeter wall towers above you to the south.  The signs of combat
+have been left in many places along the wall.  The dirt path that goes along
+the base of the wall is devoid of all plant life.  After so many years of
+use, nature has given up its attempts at conquering this path.  The sounds
+of children come from somewhere in the village.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21763
+D3
+~
+~
+0 0 21761
+S
+#21763
+Southern Guard Wall~
+~
+~
+A dirt path travels along the base of the village's guard wall.  Small
+particles of dirt blow along the ground whenever even a slight breeze sweeps
+by.  The buildings along the path are constructed from the same type of
+blocks as the wall.  The blocks appear to be extremely solid and can
+probably withstand massive damage.  This is the type of material needed when
+living under constant warfare.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21764
+D3
+~
+~
+0 0 21762
+S
+#21764
+Southern Guard Wall~
+~
+~
+The wall stretches off towards the east and west.  When one looks up,
+they can make out the outline of a guard walking along the top of the wall. 
+This wall has stood its ground against many raids upon the village.  The
+signs of battle scattered along the wall are proof of its durability. 
+Chatter can be heard coming from the east.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21765
+D3
+~
+~
+0 0 21763
+S
+#21765
+Entrance to the Village of Cebu~
+~
+~
+The village of Cebu consists of many small dwellings and huts.  There is
+one tall structure stretching high into the sky.  The tall structure is a
+little to the northwest from the entrance.  It is hard to see exactly what
+kind of building it is.  A thick guard wall surrounds the village.  A path
+travels along the bottom of the wall while another path goes north into the
+village.  
+~
+0 393218 1
+Rd     0
+D0
+~
+~
+0 0 21754
+D1
+~
+~
+0 0 21766
+D2
+~
+~
+119 21716 21772
+D3
+~
+~
+0 0 21764
+S
+#21766
+Southern Guard Wall~
+~
+~
+A solid wall has been erected along the perimeter of the village. 
+Construction was started on this wall right after the founding of the
+village.  It has survived many attacks from outside tribes.  The signs of
+ancient battles still mark the wall.  The shadow of one of the wall's guards
+covers part of the dirt path in front of you.  Guards walk upon the top of
+at all times to keep watch for attacks.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21767
+D3
+~
+~
+0 0 21765
+S
+#21767
+Southern Guard Wall~
+~
+~
+Several little houses line the northern side of the path.  They are only
+a few feet from the thick wall guarding the village.  A fresh pie sits on
+one of the window ledges of one of the houses.  The aroma floats by your
+nose on the soft breeze.  A little child is trying to reach one of the pies.
+His arms are just a bit too short to reach the ledge.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21768
+D3
+~
+~
+0 0 21766
+S
+#21768
+Southern Guard Wall~
+~
+~
+One of the houses to the north has a small yard.  It appears that most of
+the village's children come here to play during the day.  Only a couple
+blades of grass have survived the constant trampling of the children.  The
+children are using their heads to pass a ball to each other.  Its amazing
+the children do not impale the ball with their horns very often.  
+~
+0 401410 1
+Rd     0
+D1
+~
+~
+0 0 21769
+D3
+~
+~
+0 0 21767
+S
+#21769
+Corner of Village~
+~
+~
+The dirt path curves to the north and west in this corner of the village.
+The path curves along with the village's guardian wall.  In the curve there
+is a small room built into the wall.  A tower stretches up into the sky from
+the top of the wall.  A wood ladder going up into the tower is inside the
+small room.  
+~
+0 401410 1
+Rd     0
+D0
+~
+~
+0 0 21758
+D3
+~
+~
+0 0 21768
+D4
+~
+~
+0 0 21770
+S
+#21770
+Inside a Guard Tower~
+~
+~
+The wood ladder magically stays straight as it travels up through the
+middle of the tower.  The ladder slightly reaches up inside a room at the
+top of the tower.  Tiny hooks stick out from the walls surrounding you.  A
+plethra of weapons hang from these hooks in case the battle alarm is raised.
+The archway into the tower can still be seen below.  
+~
+0 401422 0
+Rd     0
+D4
+~
+~
+0 0 21771
+D5
+~
+~
+0 0 21769
+S
+#21771
+Top of a Guard Tower~
+~
+~
+An opened trapdoor is in the center of the room.  There is a wood ladder
+sticking through the trapdoor.  A small wood table sits against one of the
+walls.  Two chairs rest on opposite sides of the table in case the guards
+wish to rest their tired bones.  Openings looking out over the village and
+surrounding lands are on each side of the tower.  This is where the guards
+keep watch for invaders.  
+~
+0 401418 0
+Rd     0
+D5
+~
+~
+0 0 21770
+S
+#21772
+Standing before the Village of Cebu~
+~
+~
+The gates of Cebu rise from the field of grass.  A stone wall encompasses
+the village.  The wall towers high above the village.  A couple guards stand
+on the wall above the gate.  They peer intently at all who pass through the
+gate.  The wall has survived many battles but has taken abuse from the
+fighting.  The spiked bottom of the gate juts out from the top of the
+entrance.  
+~
+0 393218 2
+Rd     0
+D0
+~
+~
+119 21716 21765
+D2
+~
+~
+0 0 21773
+S
+#21773
+A Path Through the Field~
+~
+~
+The grass has been slightly trampled.  The trampled ground is in a
+pattern moving to the north.  The grass to the south is walked upon but not
+as much as the northern ground.  The blades move lightly in the wind.  A
+colossal wall can be seen far to the north.  
+~
+0 393218 2
+Rd     0
+D0
+~
+~
+0 0 21772
+D2
+~
+~
+0 0 21774
+S
+#21774
+A Path in the Field~
+~
+~
+The wind blows meekly across this grassy field.  The field expands to the
+north approaching the village of Cebu.  The region of Grasfels consists of
+scattered tribes of minotaurs in the grassy plains and the rarely traveled
+Dunkel Mountains.  The mountains can be seen aways to the south as the
+grassy plains stretch to the north.  
+~
+0 393218 2
+Rd     0
+D0
+~
+~
+0 0 21773
+D2
+~
+~
+0 0 21775
+D4
+~
+~
+0 0 18339
+S
+#21775
+Beginning of a rocky path~
+~
+~
+The grass is becoming littered with more rocks as the plains emerge into
+a hilly terrain.  Rocks are scattered around the grass.  Upon closers
+inspection, there appears to be traces of blood on some of the rocks.  The
+ground is slowly sloping upwards as the terrain gets closer to the
+mountains.  
+~
+0 393222 2
+Rd     0
+D0
+~
+~
+0 0 21774
+D2
+~
+~
+0 0 21776
+S
+#21776
+Curved Mountain Path~
+~
+~
+A path going up into the mountains starts here at the bottom.  The rocks
+begin to get higher and more rugged as one moves further on the trail.  The
+large rocks make it hard to move as the trail curves around many of the
+rocks.  Small pebbles roll down the path as movement knocks them loose.  
+~
+0 393218 0
+Rd     0
+D0
+~
+~
+0 0 21775
+D2
+~
+~
+0 0 21779
+S
+#21777
+Mountain Path~
+~
+~
+The path through the mountains has come to an end.  The walls of rock are
+too high and thick to overcome.  The pebbles all over the ground roll under
+the feet of travelers.  Off the side of the path is a dark cave.  The
+opening of the cave is very thin and nearly impassable.  
+~
+0 393218 5
+Rd     0
+D1
+~
+~
+0 0 21778
+D2
+~
+~
+0 0 21782
+S
+#21778
+Mountain Path~
+~
+~
+The path continues to move through the Dunkel Mountains.  The rocks
+keep going up the side of the mountain.  A trail goes off the main path to
+the south.  It cuts between two sharp rocks.  The wind has a much colder
+edge as it blows through the mountains.  
+~
+0 393218 5
+Rd     0
+D1
+~
+~
+0 0 21779
+D2
+~
+~
+0 0 21783
+D3
+~
+~
+0 0 21777
+S
+#21779
+Split in the Mountain Path~
+~
+~
+The rocky terrain makes it difficult to cover ground.  Rocks stick out of
+the mountain and up from the ground.  There are gaps in the rocks here and
+there which allow travelers to climb the mountain.  The howling of a pack of
+wolves breaks the silence.  
+~
+0 393218 5
+Rd     0
+D0
+~
+~
+0 0 21776
+D1
+~
+~
+0 0 21780
+D3
+~
+~
+0 0 21778
+S
+#21780
+Mountain Path~
+~
+~
+The trail cuts through the sharp rocks.  One of the shards sticking out
+has a moist tip.  Small drops of blood drip from the tip.  There does not
+appear to be any other blood trail.  There does not look to be any other
+sign that others could have been through here.  
+~
+0 393218 5
+Rd     0
+D1
+~
+~
+0 0 21781
+D3
+~
+~
+0 0 21779
+S
+#21781
+Mountain Path~
+~
+~
+The mountain trail starts to curve to the west and south.  The path has
+become wider which makes it easier to move about.  Along with the space, it
+seems the mountain has also relented to some plant growth.  The leaves of a
+tiny plant try to break out from between some rocks.  
+~
+0 393218 5
+Rd     0
+D2
+~
+~
+0 0 21784
+D3
+~
+~
+0 0 21780
+S
+#21782
+A Cold and Dark Cave~
+~
+~
+The temperature seems to have dropped considerably in this cave.  The
+light from outside cannot break the darkness.  The caves goes deeper back
+from the opening.  Near the back there is a circle of burnt logs.  The logs
+look to have long burned their last.  A puddle of water has frozen over to
+the side of the logs.  
+~
+0 134619146 5
+Rd     0
+D0
+~
+~
+0 0 21777
+S
+#21783
+Dead-End to the Path~
+~
+~
+The trail has run into a dead end.  The rocks climb really high and are
+impossible to get over.  Dust has started to twirl in the air as a stiff
+breeze flows in.  A low moan comes as the wind sweeps through.  
+~
+0 401410 5
+Rd     0
+D0
+~
+~
+0 0 21778
+S
+#21784
+A Downgrade Slope~
+~
+~
+The trail has come to a dead end.  The rocks are not as sharp as the ones
+on the rest of the mountain.  It appears as if some of the rocks could have
+been manually dulled.  A boulder against the mountain looks to have been
+smoothed out.  There are some marks at the ground at the bottom of the
+boulder.  
+~
+0 401410 5
+Rd     0
+E
+boulder~
+The rough edges of the boulder have been sanded down.  There are some
+marks on the ground beneath the boulder.  
+~
+E
+marks~
+The marks underneath the boulder give the sign that the boulder has been
+moved.  The drag marks don't go for long, but they are definitely there.  
+~
+D0
+~
+~
+0 0 21781
+D5
+~
+boulder~
+627 0 21789
+S
+#21785
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 5
+Rd     0
+D0
+~
+~
+0 0 21805
+D1
+~
+~
+0 0 21786
+D2
+~
+~
+0 0 21805
+D3
+~
+~
+0 0 21800
+S
+#21786
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 2499594 0
+Rd     0
+D0
+~
+~
+0 0 21805
+D1
+~
+~
+0 0 21800
+D2
+~
+~
+0 0 21791
+D3
+~
+~
+0 0 21785
+S
+#21787
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21788
+D2
+~
+~
+0 0 21792
+D3
+~
+~
+0 0 21805
+S
+#21788
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21789
+D2
+~
+~
+0 0 21805
+D3
+~
+~
+0 0 21787
+S
+#21789
+Crossing and Twisting Caves~
+~
+~
+A large boulder looks to be out of place.  A set of caves has been dug
+out from the underbelly of the Dunkel Mountains.  The caves twist and turn
+every few feet.  They cross each other all over the place.  There are not
+any significant differences in the walls.  It appears that someone took the
+time to make the walls of this rocky maze look exactly the same as the rest.
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21805
+D2
+~
+~
+0 0 21794
+D3
+~
+~
+0 0 21788
+D4
+~
+~
+627 0 21784
+S
+#21790
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21791
+D2
+~
+~
+0 0 21795
+D3
+~
+~
+0 0 21805
+S
+#21791
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21786
+D1
+~
+~
+0 0 21792
+D2
+~
+~
+0 0 21800
+D3
+~
+~
+0 0 21790
+S
+#21792
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21787
+D1
+~
+~
+0 0 21805
+D2
+~
+~
+0 0 21800
+D3
+~
+~
+0 0 21791
+S
+#21793
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21794
+D2
+~
+~
+0 0 21798
+D3
+~
+~
+0 0 21805
+S
+#21794
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21789
+D1
+~
+~
+0 0 21800
+D2
+~
+~
+0 0 21799
+D3
+~
+~
+0 0 21793
+S
+#21795
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21790
+D1
+~
+~
+0 0 21800
+D2
+~
+~
+0 0 21800
+D3
+~
+~
+0 0 21805
+S
+#21796
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21797
+D2
+~
+~
+0 0 21801
+D3
+~
+~
+0 0 21805
+S
+#21797
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  There is a glint of light peeking out
+from under a rock.  
+~
+0 393230 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21800
+D2
+~
+~
+0 0 21805
+D3
+~
+~
+0 0 21796
+D5
+~
+~
+0 0 21841
+S
+>enter_prog 100~
+0
+if name($n) == Minotaur Prisoner Pulis
+mpforce pulis emote gasp heavily for air.
+mpecho Pulis whispers, "I can't make it."
+mpforce pulis say Please, go without me. The torture
+mpforce pulis I was put through has taken too much
+mpforce pulis say from my body. At least I got to see the
+mpforce pulis say outside of that cell before death came
+mpforce pulis say for me. Take this to Anya for me.
+mpforce pulis say Hopefully this will put heart at ease.
+mpforce pulis mpoload 21797
+mpforce pulis drop love
+mpecho Pulis slumps against the side of the cave.
+mpecho You notice Pulis' stop breathing as his chest
+mpecho stops moving.
+mpecho The wide smile on Pulis' face shows that he
+mpecho finally found peace.
+mptrans pulis 1
+endif
+~
+|
+#21798
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21793
+D1
+~
+~
+0 0 21805
+D2
+~
+~
+0 0 21803
+D3
+~
+~
+0 0 21800
+S
+#21799
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21794
+D1
+~
+~
+0 0 21805
+D2
+~
+~
+0 0 21804
+D3
+~
+~
+0 0 21800
+S
+#21800
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 434190 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21789
+D2
+~
+~
+0 0 21805
+D3
+~
+~
+0 0 21789
+S
+#21801
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21796
+D1
+~
+~
+0 0 21802
+D2
+~
+~
+0 0 21800
+D3
+~
+~
+0 0 21805
+S
+#21802
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21803
+D2
+~
+~
+0 0 21805
+D3
+~
+~
+0 0 21801
+S
+#21803
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21798
+D1
+~
+~
+0 0 21805
+D2
+~
+~
+0 0 21800
+D3
+~
+~
+0 0 21802
+S
+#21804
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21799
+D1
+~
+~
+0 0 21805
+D2
+~
+~
+0 0 21809
+D3
+~
+~
+0 0 21800
+S
+#21805
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 434190 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21789
+D2
+~
+~
+0 0 21805
+D3
+~
+~
+0 0 21789
+S
+#21806
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21805
+D1
+~
+~
+0 0 21807
+D2
+~
+~
+0 0 21800
+D3
+~
+~
+0 0 21800
+S
+#21807
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21805
+D1
+~
+~
+0 0 21808
+D2
+~
+~
+0 0 21800
+D3
+~
+~
+0 0 21806
+S
+#21808
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21800
+D1
+~
+~
+0 0 21809
+D2
+~
+~
+0 0 21805
+D3
+~
+~
+0 0 21807
+S
+#21809
+Crossing and Twisting Caves~
+~
+~
+A set of caves has been dug out from the underbelly of the Dunkel
+Mountains.  The caves twist and turn every few feet.  They cross each other
+all over the place.  There are not any significant differences in the walls.
+It appears that someone took the time to make the walls of this rocky maze
+look exactly the same as the rest.  
+~
+0 401418 0
+Rd     0
+D0
+~
+~
+0 0 21804
+D1
+~
+~
+0 0 21805
+D2
+~
+~
+0 0 21800
+D3
+~
+~
+0 0 21808
+S
+#21810
+Cavern Path~
+~
+~
+The path curves around the northwestern corner of Anxi.  The height of
+the cavern is undetectable from this point.  The rock seems to keep
+traveling on up to the heavens.  The curve of the path is a perfect
+semicircle without any deviations.  The rock is smooth to the touch and does
+not show any signs of time.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21811
+D2
+~
+~
+0 0 21819
+S
+#21811
+Cavern Path~
+~
+~
+The dwelling to the south takes up an entire city block.  The solid rock
+structure strides to the upper regions of this cavern.  Colorful tapestries
+are suspended from the top of the structure.  The tapestries are created
+from the finest cloth in the world.  All of the ornaments depict certain
+individuals of the city.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21812
+D3
+~
+~
+0 0 21810
+S
+#21812
+Cavern Path~
+~
+~
+The path around the outer reaches of the city continues to the east and
+west.  A large building to the south reaches toward the top of cavern.  The
+building has many long tapestries hanging from the top.  The tapestries
+appear to be of individual Drow; perhaps of the building's inhabitants.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21813
+D3
+~
+~
+0 0 21811
+S
+#21813
+Cavern Path~
+~
+~
+The edge of the cavern is to the north.  The stone goes up beyond mortal
+vision.  The shiny nature of the ancient rock warps the shadows into
+lifelike creations.  There must be magic at work here because it is
+practically impossible to hear anything beyond your reach.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21814
+D3
+~
+~
+0 0 21812
+S
+#21814
+Cavern Path~
+~
+~
+One of the inner paths has come to form an intersection with the outer
+perimeter.  The eastern wall of the cavern reaches so high above that the
+top is out of sight.  The rock has been magically polished over the
+centuries to allow easy passage around the city.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21815
+D2
+~
+~
+0 0 21823
+D3
+~
+~
+0 0 21813
+S
+#21815
+Cavern Path~
+~
+~
+Shadows skip along the walls of the city.  The seem to be daring you to
+come closer.  The darkness of the city helps to hide them even within the
+polished nature of the rock.  From the corner of your eye, the shadows
+appear to leap forth from the walls but appear still when your head.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21816
+D3
+~
+~
+0 0 21814
+S
+#21816
+Cavern Path~
+~
+~
+The glossy surface of the cavern hides the true age of the city.  The
+Dunkel mountains have been part of the realm since the beginning of time,
+but there is no exact time for Anxi's birth.  The rock of the cavern have
+stood solid throughout time and don't show any signs of changing.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21817
+D3
+~
+~
+0 0 21815
+S
+#21817
+Cavern Path~
+~
+~
+The outer walls of the city are kept bare and clean.  There is not one
+decoration to be found on the entire outer wall.  There is not a decoration
+to be found, but there is not a disfiguration to be found either.  The whole
+city is kept in immaculate condition.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21818
+D3
+~
+~
+0 0 21816
+S
+#21818
+Cavern Path~
+~
+~
+The path comes to one of the edges of the cavern city of Anxi.  The
+polished rock takes a turn around the city towards the south and west.  The
+rock is cold to the touch and creates a blue tinge on your fingertips. 
+There is a complete lack of sound coming from any part of the city.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 21827
+D3
+~
+~
+0 0 21817
+S
+#21819
+Cavern Path~
+~
+~
+The western wall of Anxi goes north and south along this side of the
+path.  A lavishly decorated building extends along the inside of the path. 
+The building has many luxuriant tapestries hanging from the top.  The
+tapestries are made from the finest materials and are kept from in prime
+condition.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21810
+D2
+~
+~
+0 0 21828
+S
+#21820
+Glowing Mirror~
+~
+~
+Another room has been magically dug from the confines of this cavern. 
+The walls have had the rough edges smoothed out over many years of service. 
+A glowing mirror shines on one of the walls.  The glass radiates a soft
+light which forces back many of the shadows.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21821
+D2
+~
+~
+0 0 21829
+S
+#21821
+Bone Alter~
+~
+~
+A red carpet is rolled out on top of the cold stone floor.  The carpet
+runs up to an alter near the back wall.  The alter is constructed out of
+large bones.  The bones appear to be the same size as minotaur fibulas.  A
+divit has been drilled into the alter, and small flakes of blood have dried
+on the edges of the divit.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21822
+D2
+~
+~
+0 0 21830
+D3
+~
+~
+0 0 21820
+S
+#21822
+Large Pool of Blood~
+~
+~
+A circular pool has been dug into the cavern floor.  The pool is filled
+with blood which drains out of a small hole in the wall.  The blood is being
+continously swirled around the pool.  The pool looks to be a few feet deep,
+and the blood comes up to near the top.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 21831
+D3
+~
+~
+0 0 21821
+S
+#21823
+Cavern Path~
+~
+~
+The stone path goes off to the north and south.  The walls of the
+buildings surrounding the path have been polished to a fine finish.  There
+is not a single print in the ground.  The path has been kept perfect
+throughout the centuries of combat and travel.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21814
+D2
+~
+~
+0 0 21832
+S
+#21824
+Small Pool of Blood~
+~
+~
+Many layers of shelves line the walls of this room.  Vials and several
+kinds of other containers currently are stored on these shelves.  The
+contents of these containers are a mystery as most of them are not
+transparent.  The bubbling of a pool in the room's center interupts the
+silence periodically.  The pool is filled with boiling blood, and some blood
+spurts over the sides from some of the bursting bubbles.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21825
+D2
+~
+~
+0 0 21833
+S
+#21825
+Room of Leather~
+~
+~
+The temperature has risen dramatically when walking into this room.  As
+one takes a look around, the reason might come from the walls being
+completely covered in leather.  The leather has been dyed in a dark shade of
+red.  A single empty candleholder stands in the middle of the room.  The
+leather above the candleholder shows sign of once absorbing smoke.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 21834
+D3
+~
+~
+0 0 21824
+S
+#21826
+Dark and Wet Prison~
+~
+~
+Two thick chains dangle from the top of the ceiling.  The chains are
+attached to the center of the ceiling.  There is a puddle in the one corner
+of the cell.  The puddle has been formed from the constant dripping of a
+liquid from the ceiling.  The dripping occurs in a set pattern and becomes
+irritating quickly.  
+~
+0 134619147 0
+Rd     0
+E
+liquid~
+&RThe dripping liquid is fresh blood.  The blood drops from the ceiling
+in a constant pattern in order to torture the prisoner.  
+~
+E
+puddle~
+&RThe dripping liquid is fresh blood.  The blood drops from the ceiling
+in a constant pattern in order to torture the prisoner.  
+~
+D1
+~
+~
+631 21793 21827
+S
+#21827
+Cavern Path~
+~
+~
+The wall of rock has taken a break here.  A section of rock has been
+replaced with a thick sheet of glass.  The glass is warped so that it is
+difficult to see what is on the other side.  The glass is the same perfect
+condition as the rocky walls of the city.  There is not a single scratch on
+the sheet of glass.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21818
+D2
+~
+~
+0 0 21836
+D3
+~
+~
+631 21793 21826
+S
+#21828
+Cavern Path~
+~
+~
+A stone path continues to make its way around the edge of the city of
+Anxi.  The path is not used too often since most of the city's occupants
+live in the inner regions.  From the looks of the eastern building and the
+cavern walls, the city does not look too old, but legends have this place to
+be one of the most ancient.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21819
+D2
+~
+~
+0 0 21837
+S
+#21829
+Marble Tomb~
+~
+~
+The floor has been smoothed out over the centuries.  It's glossy surface
+slightly reflects the candlelight around the room.  A large marble tomb
+stands erect in the corner of the house.  An intricate engraving covers the
+tomb's lid.  A set of candles have been placed around the tomb which keep
+enough light over it so that there aren't any dark shadows.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21820
+D1
+~
+~
+0 0 21830
+S
+#21830
+Guard Room~
+~
+~
+Two racks of weapons stand near the sides of the front door.  A variety
+of weapons hang from the pegs of the rack.  A scimitar lies in a small
+puddle of dark blood at the bottom of the rack.  A sharpening stone and a
+couple rags sit on the top of the weapon rack.  Almost all of the weapons
+look used from constant battle.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21821
+D1
+~
+~
+0 0 21831
+D2
+~
+~
+0 0 21839
+D3
+~
+~
+0 0 21829
+S
+#21831
+Room of Velvet~
+~
+~
+The floor is covered with a thick layer of velvet.  This room is much
+warmer than the rest of the house from the insulation.  The dark and black
+velvet covers the floor, the walls, and the ceiling.  A stone pulpit stands
+in the center of the room.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21822
+D3
+~
+~
+0 0 21830
+S
+#21832
+Cavern Path~
+~
+~
+The slick walls of Anxi continue to travel north and south.  There is an
+eerie silence hanging over the entire city.  The buildings on each side of
+the path are decorated quite lavishly.  The western building has intricate
+tapestries hanging down its side.  While the eastern building has many
+paintings adorning its walls.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21823
+D2
+~
+~
+0 0 21841
+S
+#21833
+Guard Room~
+~
+~
+The walls of the cavern quickly stretch out to form a good sized home. 
+The floors are polished and sparkle from the soft candlelight.  A massive
+lantern hangs above the door.  The lantern produces enough light to
+illuminate the entire front room.  A stone bench is against the wall near
+the door.  A few scratches cover the bench's surface.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21824
+D1
+~
+~
+0 0 21834
+D2
+~
+~
+0 0 21842
+S
+#21834
+Marble Tomb~
+~
+~
+A small marble tomb is in the center of the room.  Along the sides of the
+tomb, the floor is covered with soft mats.  All around the sides of the tomb
+are engravings of a small female drow.  She appears to only be a child as
+some of the pictures have an older drow leading her by the hand.  The
+engraving on the tomb's lid is of the child's silhouette with a spider below
+her.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21825
+D1
+~
+~
+0 0 21835
+D3
+~
+~
+0 0 21833
+S
+#21835
+Stone Alter~
+~
+~
+The only set of candles in this room are set inside an alcove.  The
+alcove is inserted in the back wall a little ways above a stone alter.  A
+couple of carving instruments lie bundled in a piece of satin on the alter. 
+A rectangular piece of velvet covers the center of the alter.  In the middle
+of the velvet is a closed book.  
+~
+0 401419 0
+Rd     0
+E
+velvet~
+A piece of velvet sits in the middle of the alter.  A large brown book is
+currently sitting on the velvet.  
+~
+E
+book~
+The book sits in the center of the piece of velvet.  The cover of the
+book is made from leather.  There are some marks burnt into the top of the
+book.  
+~
+E
+marks~
+This book shall always be lifeless until the blood of water is dropped
+upon its cover.  
+~
+D3
+~
+~
+0 0 21834
+S
+#21836
+Cavern Path~
+~
+~
+The path continues to travel around the perimeter of the city.  The walls
+of the cavern are kept smooth and polish.  The ground is void of any dirt or
+dust.  The rock walls do not show any signs of battle or signs of time.  The
+entire city is carved from the underbelly of a mountain, but the rock does
+not allow a single noise to echo.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21827
+D2
+~
+~
+0 0 21845
+S
+#21837
+Cavern Path~
+~
+~
+The cavern reaches up into the darkness hiding the ceiling.  The western
+side of the cavern continues to move to the south and north.  A path coming
+from the inner reaches of the city intersects with the outer path.  A sense
+of dread comes from the lack of sound coming from any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21828
+D1
+~
+~
+0 0 21838
+D2
+~
+~
+0 0 21846
+S
+#21838
+Cavern Path~
+~
+~
+The house to the north has beautiful tapestries hanging down the front. 
+The tapestries have a family member's portrait woven into its cloth.  To the
+south, there is a smaller dwelling which houses one the ruling families of
+Anxi.  The entrance is marked by a small minotaur skull.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21839
+D2
+~
+~
+0 0 21847
+D3
+~
+~
+0 0 21837
+S
+#21839
+Cavern Path~
+~
+~
+A large building has been molded from the stone.  The building stretches
+up towards the top of the cavern.  Long tapestries hang along the front of
+this dwelling.  A large stake sticks up from the solid ground.  On the top
+of this stake is an enormous minotaur skull.  This skull marks the entrance
+to the house of the most powerful family in the Anxi tribe.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21830
+D1
+~
+~
+0 0 21840
+D3
+~
+~
+0 0 21838
+S
+#21840
+Cavern Path~
+~
+~
+A path has been carved in the area between two of Anxi's largest
+dwellings.  The walls of the cavern have had the rough edges smoothed out
+over the years.  A bright glint sparkles off the wall to the south.  It
+appears to have been polished to a near glossy finish.  
+~
+0 401418 0
+Rd     0
+D1
+~
+~
+0 0 21841
+D2
+~
+~
+631 21800 21849
+D3
+~
+~
+0 0 21839
+S
+#21841
+Anxi's Spiraling Entrance~
+~
+~
+The streets of Anxi cross in the city's center.  In the exact center of
+the city is a spiraling staircase going up into the caverns.  The city of
+Anxi has been carved out of the inside of the mountains.  The city streets
+are kept dimly lit with only a few candles kept lit on all the streets.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21832
+D1
+~
+~
+0 0 21842
+D2
+~
+~
+0 0 21850
+D3
+~
+~
+0 0 21840
+D4
+~
+~
+0 0 21797
+S
+#21842
+Cavern Path~
+~
+~
+Another of Anxi's ruling families has built their house to the north. 
+The walls around the entrance are decorated with paintings.  The paintings
+are of a different family killing a minotaur.  The paintings have been
+created using blood.  A slight stench comes off the walls of this house from
+the blood.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21833
+D1
+~
+~
+0 0 21843
+D3
+~
+~
+0 0 21841
+S
+#21843
+Cavern Path~
+~
+~
+The entrance to the Tribe of Anxi's School of Combat is to the south.  A
+long cloth is the only blockade hanging in the entrance.  The cloth is a
+single piece of black velvet.  There doesn't appear to be a single smudge or
+dirt spot on the cloth.  A sign to the side of the entrance signifies that
+this is the School of Combat.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21844
+D2
+~
+~
+0 0 21852
+D3
+~
+~
+0 0 21842
+S
+#21844
+Cavern Path~
+~
+~
+A path has been carved out of the cavern's underbelly.  The walls on the
+sides of the path shoot straight up into the darkness above.  There are no
+breaks in the walls along the path.  The buildings in this city have been
+carved from the rock; not built with blocks.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21845
+D3
+~
+~
+0 0 21843
+S
+#21845
+Cavern Path~
+~
+~
+One of the inner paths has come to form an intersection with the outer
+perimeter.  The eastern wall of the cavern reaches so high above that the
+top is out of sight.  The rock has been magically polished over the
+centuries to allow easy passage around the city.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21836
+D2
+~
+~
+0 0 21854
+D3
+~
+~
+0 0 21844
+S
+#21846
+Cavern Path~
+~
+~
+Shadows skip along the walls of the city.  The seem to be daring you to
+come closer.  The darkness of the city helps to hide them even within the
+polished nature of the rock.  From the corner of your eye, the shadows
+appear to leap forth from the walls but appear still when your head.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21837
+D2
+~
+~
+0 0 21855
+S
+#21847
+Small Guard Room~
+~
+~
+A slightly visable field of energy encompasses the doorway.  Runes have
+been painted along the edges of the door.  The runes glow as you pass
+through the entrance creating the field.  A bloodsoaked mat lies just inside
+the doorway.  Some of the blood within the mat looks to be fairly recent. 
+To the side of the door is a darkened alcove.  
+~
+0 401419 0
+Rd     0
+E
+wood~
+A small engraving on the wood chip says, "Only the dark flame may light
+this darkness."  
+~
+E
+chip~
+A small engraving on the wood chip says, "Only the dark flame may light
+this darkness."  
+~
+D0
+~
+~
+0 0 21838
+D1
+~
+~
+0 0 21848
+D2
+~
+~
+0 0 21856
+S
+#21848
+Marble Alter~
+~
+~
+An alter sits alone in the center of this little shrine.  There are no
+candles or decorations of any type in the room.  The alter has a set of
+minotaur horns attached to both sides of the alter.  An eerie and dark
+feeling radiates from the alter.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 21857
+D3
+~
+~
+0 0 21847
+S
+#21849
+War Room~
+~
+~
+A set of steps leads down into a large room underneath the city.  Maps
+hang on every available space on the walls.  The maps contain detailed data
+about the land up above.  There are many red flags placed on certain
+locations on the maps.  Besides the red flags, there are a few blue flags
+stuck in a couple locations.  In the middle of the room is an extremely
+large table.  The table takes up most of the space in the room.  There is
+just enough space around the edges to walk around the table.  
+~
+0 134619147 0
+Rd     0
+D0
+~
+~
+631 21800 21840
+S
+#21850
+Cavern Path~
+~
+~
+The slick walls of Anxi continue to travel north and south.  There is an
+eerie silence hanging over the entire city.  The buildings on each side of
+the path are lacking in any form of decoration.  The rock has just been
+polished to a glossy finish.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21841
+D2
+~
+~
+0 0 21859
+S
+#21851
+Library of Scrolls~
+~
+~
+A couple drow sit at their desks writing new scrolls for the tribe's
+collection.  The shelves above their heads are draped with scrolls, some
+rolled and some aren't.  A few dressers have their drawers opened, and the
+scrolls within are shown to all.  The sound of fire and wind can be heard
+brewing to the south.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21852
+D2
+~
+~
+0 0 21860
+S
+#21852
+School of Combat~
+~
+~
+The building opens up quickly into a large audience hall.  Three hallways
+split off this main room.  The sounds of clashing swords come from the
+eastern hallway.  A deep blast of wind occasionally erupts out of the
+western hallway.  The hall going to the south stops shortly at a door.  Two
+crossed scimitars are attached to the front of the door.  
+~
+0 401423 0
+Rd     0
+D0
+~
+~
+0 0 21843
+D1
+~
+~
+0 0 21853
+D2
+~
+~
+3 0 21861
+D3
+~
+~
+0 0 21851
+S
+#21853
+Library of Strategy~
+~
+~
+A small desk sits in the center of the room.  Many books about combat
+stragedy lie on the top.  Many layers of shelves are along the northern and
+eastern walls.  The shelves are jammed pack with books and papers.  The
+bottom shelf has hooks hanging underneath.  A wide variety of weapons hang
+from these hooks.  
+~
+0 401419 0
+Rd     0
+D2
+~
+~
+0 0 21862
+D3
+~
+~
+0 0 21852
+S
+#21854
+Cavern Path~
+~
+~
+The path is made from a single piece of stone as is the rest of the city.
+The entire city was magically carved from the interior of the Dunkel
+mountains.  The cold stone has resisted every advance into the city.  This
+path circles the perimeter of this legendary city.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21845
+D2
+~
+~
+0 0 21863
+S
+#21855
+Cavern Path~
+~
+~
+The glossy surface of the cavern hides the true age of the city.  The
+Dunkel mountains have been part of the realm since the beginning of time,
+but there is no exact time for Anxi's birth.  The rock of the cavern have
+stood solid throughout time and don't show any signs of changing.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21846
+D2
+~
+~
+0 0 21864
+S
+#21856
+Table of Blood~
+~
+~
+Thick flaps cover the entrances to this back room.  The flaps quickly
+drop back into place as soon as anyone is passed.  The first thing visable
+within the room is a large glass table.  The table sits in the middle of the
+room.  As one gets closer to the table, they notice the table is filled with
+blood.  The legs of the table are a darker red as the blood is highly
+concentrated.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21847
+D1
+~
+~
+0 0 21857
+S
+#21857
+Dark Bedroom~
+~
+~
+The candles are kept very dim in this bedroom.  The light barely reaches
+beyond its own candle.  Against the far wall is a large, velvet bed.  The
+pillowcases and sheets are made from a soft velvet material.  The velvet is
+hard to see, but the bed does seem to be moving in a wave-like motion.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21848
+D3
+~
+~
+0 0 21856
+S
+#21858
+Dark and Wet Prison~
+~
+~
+Two thick chains dangle from the top of the ceiling.  The chains are
+attached to the center of the ceiling.  There is a puddle in the one corner
+of the cell.  The puddle has been formed from the dripping of some liquid
+from the ceiling.  The dripping occurs in a set pattern and becomes
+irritating quickly.  
+~
+0 401419 0
+Rd     0
+E
+liquid~
+&RThe dripping liquid is fresh blood.  The blood drops from the ceiling
+in a constant pattern in order to torture the prisoner.  
+~
+E
+puddle~
+&RThe dripping liquid is fresh blood.  The blood drops from the ceiling
+in a constant pattern in order to torture the prisoner.  
+~
+D2
+~
+~
+631 21793 21867
+S
+#21859
+Cavern Path~
+~
+~
+The stone path goes off to the north and south.  The wall of the
+surrounding buildings have been polished to a fine finish.  There is not a
+single print in the ground.  The path has been kept perfect throughout the
+centuries of combat and travel.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21850
+D2
+~
+~
+0 0 21868
+S
+#21860
+Praxis~
+~
+~
+The walls of the cavern have been polished by years of magical treatment.
+Scorch marks cover the entire room from floor to ceiling.  One can even see
+a couple icicles hanging from the ceiling.  The walls of the room feel warm
+from the last practice session.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21851
+S
+#21861
+Room of Weaponary~
+~
+~
+The door opens into one of the largest collections of weapons in the
+known world.  Chests line the floor against the walls.  The chests are all
+opened and overloaded with knives, daggers, and other types of small blades.
+Almost every weapon known to the world is hanging on the walls.  Swords of
+every temperment and ore glint in the candlelight.  A massive rock hammer
+lies up against one of the chests.  It must have taken centuries of raids to
+pillage all this.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+3 0 21852
+S
+#21862
+Art of Combat~
+~
+~
+The walls are covered in a thick padding.  The floor is inclined down
+towards the center of the floor.  A circular drain is in the middle of the
+room.  Small streams of blood flow down the floor into the drain.  The
+bottom of the walls are practically saturated with blood from the many
+training sessions.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21853
+S
+#21863
+Cavern Path~
+~
+~
+A path encompasses the city of Anxi.  The path was carved from the
+mountain's underbelly with the rest of Anxi.  The hard stone does not show
+one break and is part of the single piece of rock that makes up the city. 
+The rock stands patient for time to pass as the city's inhabitants walk upon
+its surface.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21854
+D2
+~
+~
+0 0 21872
+S
+#21864
+Cavern Path~
+~
+~
+The path comes to one of the edges of the cavern city of Anxi.  The
+polished rock takes a turn around the city towards the north and east.  The
+rock is cold to the touch and creates a blue tinge on your fingertips. 
+There is a complete lack of sound coming from any part of the city.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21855
+D1
+~
+~
+0 0 21865
+S
+#21865
+Cavern Path~
+~
+~
+The outer walls of the city are kept bare and clean.  There is not one
+decoration to be found on the entire outer wall.  There is not a decoration
+to be found, but there is not a disfiguration to be found either.  The whole
+city is kept in immaculate condition.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21866
+D3
+~
+~
+0 0 21864
+S
+#21866
+Cavern Path~
+~
+~
+The path continues to travel around the perimeter of the city.  The walls
+of the cavern are kept smooth and polished.  The ground is devoid of any
+dirt or dust.  The rock walls do not show any signs of battle or signs of
+time.  The entire city is carved from the underbelly of a mountain, but the
+rock does not allow a single noise to echo.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21867
+D3
+~
+~
+0 0 21865
+S
+#21867
+Cavern Path~
+~
+~
+The wall of rock has taken a break here.  A section of rock has been
+replaced with a thick sheet of glass.  The glass is warped so that it is
+difficult to see what is on the other side.  The glass is the same perfect
+condition as the rocky walls of the city.  There is not a single scratch on
+the sheet of glass.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+631 21793 21858
+D1
+~
+~
+0 0 21868
+D3
+~
+~
+0 0 21866
+S
+#21868
+Cavern Path~
+~
+~
+The cavern reaches up into the darkness hiding the ceiling.  The western
+side of the cavern continues to move to the west and east.  A path coming
+from the inner reaches of the city intersects with the outer path.  A sense
+of dread comes from the lack of sound coming from any direction.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21859
+D1
+~
+~
+0 0 21869
+D3
+~
+~
+0 0 21867
+S
+#21869
+Cavern Path~
+~
+~
+The building to the north reaches high up into the mountain darkness. 
+The top is beyond mortal vision but one can notice that the stone comes
+together forming a spire.  There seems to something attached halfway up the
+spire.  Across the path from this building is the outer wall of the city.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21870
+D3
+~
+~
+0 0 21868
+S
+#21870
+Cavern Path~
+~
+~
+The path around the outer reaches of the city continue to the east and
+west.  A large building to the north reaches toward the top of the cavern. 
+After reaching to extreme heights, the building begins to converge into a
+spire.  A large symbol is attached to the spire about halfway up.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21871
+D3
+~
+~
+0 0 21869
+S
+#21871
+Cavern Path~
+~
+~
+The edge of the cavern is to the south.  The stone goes up beyond mortal
+vision.  The shiny nature of the ancient rock warps the shadows into
+lifelike creations.  There must be magic at work here because it is
+practically impossible to hear anything beyond your reach.  
+~
+0 401419 0
+Rd     0
+D1
+~
+~
+0 0 21872
+D3
+~
+~
+0 0 21870
+S
+#21872
+Cavern Path~
+~
+~
+The path curves around the southeastern corner of Anxi.  The height of
+the cavern is undetectable from this point.  The rock seems to keep
+traveling on up to the heavens.  The curve of the path is a perfect
+semicircle without any deviations.  The rock is smooth to the touch and does
+not show any signs of time.  
+~
+0 401419 0
+Rd     0
+D0
+~
+~
+0 0 21863
+D3
+~
+~
+0 0 21871
+S
+#21873
+Raiding Party~
+~
+~
+This is where the Drow raiding party rests for their next battle.
+~
+0 134620174 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 21709 spec_healer
+M 21711 spec_breath_any
+M 21712 spec_cast_cleric
+M 21715 spec_thief
+M 21716 spec_guard
+M 21719 spec_guard
+M 21720 spec_assassin
+M 21722 spec_guard
+M 21727 spec_assassin
+M 21731 spec_guard
+M 21733 spec_healer
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 21701 1 21701
+E 0 21736 0 20
+E 0 21738 0 5
+G 0 21730 0
+E 0 21781 0 21
+M 0 21716 5 21703
+E 0 21738 0 5
+M 0 21716 5 21711
+E 0 21738 0 5
+M 0 21702 1 21713
+E 0 21736 0 20
+E 0 21738 0 5
+G 0 21728 0
+E 0 21781 0 21
+M 0 21712 1 21715
+E 0 21762 0 5
+E 0 21763 0 11
+M 0 21735 1 21719
+O 0 21727 0 21719
+O 0 21735 0 21719
+P 0 21734 0 21735
+P 0 21716 0 21735
+O 0 21701 0 21720
+M 0 21710 1 21720
+E 0 21766 0 5
+E 0 21767 0 6
+E 0 21781 0 20
+M 0 21713 1 21726
+E 0 21773 0 8
+M 0 21711 1 21730
+E 0 21768 0 5
+E 0 21769 0 11
+E 0 21770 0 3
+E 0 21781 0 20
+M 0 21716 5 21736
+E 0 21738 0 5
+M 0 21717 4 21736
+E 0 21781 0 20
+O 0 21703 0 21742
+O 0 21702 0 21743
+O 0 21704 0 21752
+M 0 21709 1 21752
+E 0 21765 0 5
+E 0 21787 0 12
+E 0 21781 0 20
+M 0 21714 1 21755
+E 0 21772 0 13
+M 0 21715 1 21757
+E 0 21774 0 24
+M 0 21704 1 21759
+E 0 21736 0 20
+E 0 21738 0 5
+E 0 21771 0 6
+G 0 21729 0
+E 0 21781 0 21
+M 0 21716 5 21761
+E 0 21738 0 5
+M 0 21716 5 21769
+E 0 21738 0 5
+M 0 21703 1 21771
+E 0 21737 0 23
+G 0 21739 0
+E 0 21740 0 5
+G 0 21731 0
+E 0 21781 0 20
+M 0 21719 1 21772
+G 0 21716 0
+E 0 21760 0 17
+E 0 21761 0 20
+E 0 21738 0 5
+E 0 21781 0 21
+M 0 21718 1 21782
+E 0 21759 0 5
+M 0 21733 1 21786
+M 0 21705 1 21810
+M 0 21706 1 21818
+G 0 21799 0
+O 0 21707 0 21820
+M 0 21721 1 21821
+E 0 21747 0 16
+E 0 21713 0 20
+G 0 21792 0
+E 0 21801 0 21
+O 0 21708 0 21822
+M 0 21723 1 21824
+E 0 21751 0 5
+E 0 21752 0 20
+M 0 21729 1 21826
+M 0 21722 1 21830
+E 0 21744 0 16
+E 0 21745 0 5
+E 0 21746 0 20
+E 0 21801 0 21
+O 0 21709 0 21831
+M 0 21724 1 21834
+E 0 21746 0 20
+E 0 21745 0 5
+O 0 21712 0 21835
+O 0 21705 0 21841
+O 0 21710 0 21847
+O 0 21711 0 21848
+O 0 21706 0 21849
+M 0 21728 1 21849
+E 0 21741 0 13
+E 0 21743 0 5
+E 0 21742 0 11
+E 0 21758 0 20
+E 0 21801 0 21
+M 0 21720 1 21857
+E 0 21748 0 16
+E 0 21749 0 20
+E 0 21750 0 17
+M 0 21730 1 21858
+M 0 21725 1 21860
+E 0 21753 0 6
+E 0 21754 0 7
+E 0 21755 0 8
+E 0 21801 0 20
+M 0 21726 1 21861
+E 0 21756 0 5
+E 0 21757 0 12
+M 0 21727 1 21862
+G 0 21791 0
+E 0 21790 0 20
+E 0 21801 0 21
+M 0 21708 1 21864
+G 0 21798 0
+M 0 21707 1 21872
+M 0 21734 1 21873
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

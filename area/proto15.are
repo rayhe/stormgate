@@ -1,0 +1,2397 @@
+#AREADATA
+Name        New area~
+Builders    Isabo~
+VNUMs       14101 14300
+Security    100
+Recall      17809
+Flags       16
+End
+
+
+
+#MOBILES
+#14101
+Grimpy dwarf~
+Grimpy~
+A grumpy, old dwarf sits on a stump guarding the gate.
+~
+He's not as grumpy as he first seems.  He is just waiting for the next
+guard to come relieve him of his duties.  His face is adorned with a long
+white beard which he strokes every so often.  He wears a bright purple cloak
+and carries a broad dagger.  
+~
+67 268435456 16777232 134234112 2 500 S
+100 350 350 0 32000d0+0 0d0+0
+10000 2 0
+0 0 1
+40962 0 0
+>all_greet_prog 100~
+if ispc($n) == 1
+if isimmort($n) == 1
+     bow $n
+     say Welcome, oh highly esteemed one!
+     emote bows so low his beard touches the ground.
+   else
+     if isgood($n) == 1
+       look $n
+       ,gets up from the stump.
+       shake $n
+       say Greetings $n!
+       say You have come to give your regards to Nature?
+   else
+     if ispc($n) == 1
+     if rand(55)
+       ,stands up from the stump.
+       look $n
+       emote gets a real nasty look on his face.
+       say You will be judged harshly in these parts!
+       say We have no room for evildoers here!
+       say Leave while your head is still attached to your neck!
+   else
+     if ispc($n) == 1
+       say BeGONE wicked harbinger of doom!
+       mpkill $n
+     break
+   endif
+  endif
+ endif                                                                         
+~
+>speech_prog p yes~
+if ispc($n) == 1
+if inroom($n) == 14101
+if isgood($n) == 1
+     say If you meet my brother Trini..
+     say Please tell him to relieve me of my duties here.
+     say For I am in need of sleep.
+     wave $n
+     mpoload 14101
+     unlock south
+     open south
+     mpechoat $n You walk towards the wondrous place before you.
+     mptrans $n 14102
+     close south
+     lock south
+     mppurge key
+endif                                                  
+~
+>death_prog 80~
+mpoload 14101
+~
+|
+#14103
+Yayoi~
+Yayoi~
+Yayoi is standing here drinking fruit punch.
+~
+~
+67 128 0 0 0 0 S
+100 0 0 0 30000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#14104
+tree golden apple~
+the golden apple tree~
+&YA tree bearing golden apples rustle in the breeze.
+~
+A tree standing about ten feet in height, shimmers with plump apples of
+gold.  The leaves sparkle with leaves of silver and gold.  But when you try
+to reach for one the branches move away from you.  
+~
+67 268451968 16 0 0 1000 S
+120 0 0 0 50000d0+0 0d0+0
+0 0 0
+0 0 0
+0 0 0
+#14137
+gardener~
+the gardener~
+The gardener tends to the flowers.
+~
+This gardener is quiet and unassuming as he goes about his task whistling
+and humming to himself.  He seems quite shy as he avoids eye contact with
+you.  
+~
+193 104 32768 0 0 200 S
+100 300 300 0 36000d0+0 0d0+0
+300 0 0
+0 0 1
+0 0 0
+#14170
+guard ogre~
+the Ogre guard~
+An ogre stands guard before the Black Tower.
+~
+~
+67 128 16777232 16384 0 750 S
+110 40 50 0 65000d0+0 0d0+0
+1000 0 0
+0 0 1
+3 0 0
+#14225
+ogre guard~
+the Ogre Guard~
+An ogre guard of gargantuan proportions, silently but menacingly looms before the gate.
+~
+~
+67 134225984 58753072 24832 2 800 S
+120 400 400 0 53144d0+0 0d0+0
+10000 7 0
+0 0 1
+272386 0 0
+#0
+
+
+
+#OBJECTS
+#14101
+key golden gold~
+the golden key~
+&YA gold key sits here shining.~
+~
+18 1 0 0 0 1 1
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#14102
+dagger broad grimpy's~
+grimpy's dagger~
+A broad dagger has been discarded.~
+~
+5 1025 0 0 0 8193 95
+0~ 30~ 75~ 11~
+3 6000 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 10
+A
+12 95
+A
+1 2
+A
+26 50
+A
+18 40
+#14103
+cloak purple~
+the purple cloak~
+A purple cloak lies crumpled on the ground.~
+~
+9 33554432 0 0 0 1025 95
+0~ 0~ 0~ 0~
+3 3400 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+4 2
+A
+12 95
+A
+23 -10
+#14119
+fountain amethyst~
+amethyst fountain~
+&pA fountain made from gleaming amethyst gushes forth sparkling water.~
+~
+25 0 0 0 0 0 1
+0~ 0~ 0~ 0~
+1000 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#0
+
+
+
+#ROOMDATA
+#14101
+The Gate to Nature's Realm~
+~
+~
+&gA tall, golden gate looms ahead, behind which lies the realm of Mother
+Nature and all that is beholden to her.  The gate stands so very tall that
+even a giant or ogre could not climb over it.  A magical force field
+surrounds it making it impenetrable.  From beyond, tinkering laughter can be
+heard and a warm breeze tickles the air.  Green, grassy fields spread far and
+wide as tall trees cluster together behind the walls that surround the
+realm.  
+~
+0 393230 2
+Rd     0
+E
+plaque~
+&YNature's Realm holds the most wondrous secrets of Nature.  If you
+choose to harm the balance within, be prepared to face the wrath there
+after.  This area is for levels 95 to 105.  
+~
+D2
+~
+gate~
+119 14101 14102
+S
+#14102
+In The Fields of Nature's Realm~
+~
+~
+~
+0 393218 2
+Rd     0
+D0
+~
+gate~
+119 14101 14101
+D4
+~
+~
+0 0 14103
+S
+#14103
+In The Fields of Nature's Realm~
+~
+~
+~
+0 393222 2
+Rd     0
+D2
+~
+~
+0 0 14104
+D5
+~
+~
+0 0 14102
+S
+#14104
+The Circle of the Tree~
+~
+~
+~
+0 2491398 2
+Rd     0
+D0
+~
+~
+0 0 14103
+D1
+~
+~
+0 0 14106
+D2
+~
+~
+0 0 14105
+D3
+~
+~
+0 0 14107
+S
+#14105
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14104
+D1
+~
+~
+0 0 14109
+D2
+~
+~
+0 0 14111
+D3
+~
+~
+0 0 14108
+S
+#14106
+~
+~
+~
+~
+0 4 0
+Rd     0
+D2
+~
+~
+0 0 14109
+D3
+~
+~
+0 0 14104
+S
+#14107
+~
+~
+~
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 14104
+D2
+~
+~
+0 0 14108
+S
+#14108
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14107
+D1
+~
+~
+0 0 14105
+D2
+~
+~
+0 0 14110
+D3
+~
+~
+0 0 14126
+S
+#14109
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14106
+D2
+~
+~
+0 0 14112
+D3
+~
+~
+0 0 14105
+S
+#14110
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14108
+D1
+~
+~
+0 0 14111
+D2
+~
+~
+0 0 14116
+D3
+~
+~
+0 0 14113
+S
+#14111
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14105
+D1
+~
+~
+0 0 14112
+D2
+~
+~
+0 0 14114
+D3
+~
+~
+0 0 14110
+S
+#14112
+The Hut of the Medicine Woman~
+~
+~
+~
+0 2491404 2
+Rd     0
+D0
+~
+~
+0 0 14109
+D3
+~
+~
+0 0 14111
+S
+#14113
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14126
+D1
+~
+~
+0 0 14110
+D2
+~
+~
+0 0 14115
+S
+#14114
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14111
+D3
+~
+~
+0 0 14116
+S
+#14115
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14113
+D1
+~
+~
+0 0 14116
+D2
+~
+~
+0 0 14119
+D3
+~
+~
+0 0 14117
+S
+#14116
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14110
+D1
+~
+~
+0 0 14114
+D3
+~
+~
+0 0 14115
+S
+#14117
+~
+~
+~
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 14115
+D5
+~
+~
+0 0 14118
+S
+#14118
+~
+~
+~
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 14119
+D3
+~
+~
+0 0 14121
+D4
+~
+~
+0 0 14117
+S
+#14119
+The Fountain~
+~
+~
+~
+0 131076 4
+Rd     0
+D0
+~
+~
+0 0 14115
+D3
+~
+~
+0 0 14118
+S
+#14120
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14127
+D3
+~
+~
+0 0 14227
+S
+#14121
+~
+~
+~
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 14118
+D2
+~
+~
+0 0 14122
+S
+#14122
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14121
+D2
+~
+~
+0 0 14125
+D3
+~
+~
+0 0 14123
+S
+#14123
+Before the Cloud Pillar~
+~
+~
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 14122
+D2
+~
+~
+0 0 14124
+S
+#14124
+Arch to the Garden~
+~
+~
+~
+0 393220 2
+Rd     0
+D0
+~
+~
+0 0 14123
+D1
+~
+~
+0 0 14125
+D2
+~
+~
+0 0 14128
+D3
+~
+~
+0 0 14134
+S
+#14125
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14122
+D2
+~
+~
+0 0 14127
+D3
+~
+~
+0 0 14124
+S
+#14126
+~
+~
+~
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 14108
+D2
+~
+~
+0 0 14113
+S
+#14127
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14125
+D2
+~
+~
+0 0 14120
+D3
+~
+~
+0 0 14128
+S
+#14128
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14124
+D1
+~
+~
+0 0 14127
+D2
+~
+~
+0 0 14227
+D3
+~
+~
+0 0 14129
+S
+#14129
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14134
+D1
+~
+~
+0 0 14128
+D2
+~
+~
+0 0 14132
+D3
+~
+~
+0 0 14130
+S
+#14130
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14131
+D1
+~
+~
+0 0 14129
+D2
+~
+~
+0 0 14228
+S
+#14131
+~
+~
+~
+~
+0 4 0
+Rd     0
+D1
+~
+~
+0 0 14134
+D2
+~
+~
+0 0 14130
+S
+#14132
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14129
+D1
+~
+~
+0 0 14227
+D3
+~
+~
+0 0 14228
+S
+#14133
+~
+~
+~
+~
+0 4 0
+Rd     0
+D2
+~
+~
+0 0 14134
+S
+#14134
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14133
+D1
+~
+~
+0 0 14124
+D2
+~
+~
+0 0 14129
+D3
+~
+~
+0 0 14131
+S
+#14135
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14136
+D2
+~
+~
+0 0 14139
+S
+#14136
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14229
+D1
+~
+~
+0 0 14137
+D2
+~
+~
+0 0 14140
+D3
+~
+~
+0 0 14135
+S
+#14137
+In the Garden~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14138
+D2
+~
+~
+0 0 14141
+D3
+~
+~
+0 0 14136
+S
+#14138
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14142
+D3
+~
+~
+0 0 14137
+S
+#14139
+~
+~
+~
+~
+0 0 2
+Rd     0
+D0
+~
+~
+0 0 14135
+D1
+~
+~
+0 0 14140
+S
+#14140
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14136
+D1
+~
+~
+0 0 14141
+D2
+~
+~
+0 0 14143
+D3
+~
+~
+0 0 14139
+S
+#14141
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14137
+D1
+~
+~
+0 0 14142
+D2
+~
+~
+0 0 14144
+D3
+~
+~
+0 0 14140
+S
+#14142
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14138
+D1
+~
+~
+0 0 14146
+D2
+~
+~
+0 0 14145
+D3
+~
+~
+0 0 14141
+S
+#14143
+Gate to the Field of Animals~
+~
+~
+~
+0 131076 0
+Rd     0
+D0
+~
+~
+0 0 14140
+D1
+~
+~
+0 0 14144
+D3
+~
+~
+55 0 0
+S
+#14144
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14141
+D1
+~
+~
+0 0 14145
+D2
+~
+~
+0 0 14148
+D3
+~
+~
+0 0 14143
+S
+#14145
+~
+~
+~
+~
+0 4 0
+Rd     0
+D0
+~
+~
+0 0 14142
+D1
+~
+~
+0 0 14147
+D2
+~
+~
+0 0 14149
+D3
+~
+~
+0 0 14144
+S
+#14146
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14150
+D2
+~
+~
+0 0 14147
+D3
+~
+~
+0 0 14142
+S
+#14147
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14146
+D2
+~
+~
+0 0 14153
+D3
+~
+~
+0 0 14145
+S
+#14148
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14144
+D1
+~
+~
+0 0 14149
+S
+#14149
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14145
+D3
+~
+~
+0 0 14148
+S
+#14150
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14151
+D3
+~
+~
+0 0 14146
+S
+#14151
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14152
+D2
+~
+~
+0 0 14150
+S
+#14152
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14166
+D3
+~
+~
+0 0 14151
+S
+#14153
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14147
+D1
+~
+~
+0 0 14155
+D2
+~
+~
+0 0 14154
+S
+#14154
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14153
+D1
+~
+~
+0 0 14156
+S
+#14155
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14168
+D1
+~
+~
+0 0 14161
+D3
+~
+~
+0 0 14153
+S
+#14156
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14157
+D3
+~
+~
+0 0 14154
+S
+#14157
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14158
+D3
+~
+~
+0 0 14156
+S
+#14158
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14157
+D3
+~
+~
+0 0 14159
+S
+#14159
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14158
+D2
+~
+~
+0 0 14160
+S
+#14160
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14159
+S
+#14161
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14162
+D3
+~
+~
+0 0 14155
+S
+#14162
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14163
+D2
+~
+~
+0 0 14161
+S
+#14163
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14164
+D3
+~
+~
+0 0 14162
+S
+#14164
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14165
+D2
+~
+~
+0 0 14163
+S
+#14165
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14174
+D2
+~
+~
+0 0 14164
+S
+#14166
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14167
+D2
+~
+~
+0 0 14152
+S
+#14167
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14230
+D2
+~
+~
+0 0 14166
+S
+#14168
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14155
+S
+#14169
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14170
+D3
+~
+~
+0 0 14230
+S
+#14170
+Before the Black Gate~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+7 0 14171
+D2
+~
+~
+0 0 14169
+S
+#14171
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14173
+D1
+~
+~
+0 0 14199
+D3
+~
+~
+7 0 14170
+S
+#14172
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14199
+S
+#14173
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14171
+S
+#14174
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14176
+D2
+~
+~
+0 0 14175
+D3
+~
+~
+0 0 14165
+S
+#14175
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14174
+D1
+~
+~
+0 0 14177
+S
+#14176
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14178
+D2
+~
+~
+0 0 14177
+D3
+~
+~
+0 0 14174
+S
+#14177
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14176
+D1
+~
+~
+0 0 14181
+D2
+~
+~
+0 0 14188
+D3
+~
+~
+0 0 14175
+S
+#14178
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14179
+D2
+~
+~
+0 0 14181
+D3
+~
+~
+0 0 14176
+S
+#14179
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14182
+D2
+~
+~
+0 0 14180
+D3
+~
+~
+0 0 14178
+S
+#14180
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14179
+D1
+~
+~
+0 0 14183
+D2
+~
+~
+0 0 14184
+D3
+~
+~
+0 0 14181
+S
+#14181
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14178
+D1
+~
+~
+0 0 14180
+D2
+~
+~
+0 0 14186
+D3
+~
+~
+0 0 14177
+S
+#14182
+~
+~
+~
+~
+0 0 0
+Rd     0
+D2
+~
+~
+0 0 14183
+D3
+~
+~
+0 0 14179
+S
+#14183
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14182
+D2
+~
+~
+0 0 14185
+D3
+~
+~
+0 0 14180
+S
+#14184
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14180
+D1
+~
+~
+0 0 14185
+D3
+~
+~
+0 0 14186
+S
+#14185
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14183
+D3
+~
+~
+0 0 14184
+S
+#14186
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14181
+D1
+~
+~
+0 0 14184
+D3
+~
+~
+0 0 14188
+S
+#14188
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14177
+D1
+~
+~
+0 0 14186
+S
+#14199
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14200
+D1
+~
+~
+0 0 14172
+D3
+~
+~
+0 0 14171
+S
+#14200
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14201
+D2
+~
+~
+0 0 14199
+S
+#14201
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14202
+D2
+~
+~
+0 0 14200
+S
+#14202
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14204
+D2
+~
+~
+0 0 14203
+D3
+~
+~
+0 0 14201
+S
+#14203
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14202
+D1
+~
+~
+0 0 14205
+S
+#14204
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14208
+D2
+~
+~
+0 0 14202
+S
+#14205
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14203
+S
+#14206
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14208
+D1
+~
+~
+0 0 14207
+S
+#14207
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14206
+S
+#14208
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14209
+D2
+~
+~
+0 0 14206
+D3
+~
+~
+0 0 14204
+S
+#14209
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14210
+D2
+~
+~
+0 0 14211
+S
+#14210
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14209
+S
+#14211
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14209
+D1
+~
+~
+0 0 14212
+S
+#14212
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14214
+D2
+~
+~
+0 0 14213
+D3
+~
+~
+0 0 14211
+S
+#14213
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14212
+D1
+~
+~
+0 0 14218
+S
+#14214
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14215
+D2
+~
+~
+0 0 14212
+S
+#14215
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14214
+S
+#14216
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14217
+D2
+~
+~
+0 0 14218
+S
+#14217
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14216
+S
+#14218
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14216
+D2
+~
+~
+0 0 14219
+D3
+~
+~
+0 0 14213
+S
+#14219
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14218
+D1
+~
+~
+0 0 14220
+S
+#14220
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14221
+D2
+~
+~
+0 0 14223
+D3
+~
+~
+0 0 14219
+S
+#14221
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14222
+D2
+~
+~
+0 0 14220
+S
+#14222
+~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14221
+S
+#14223
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14220
+D1
+~
+~
+0 0 14224
+S
+#14224
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14225
+D3
+~
+~
+0 0 14223
+S
+#14225
+Before the Tower of the Clouds~
+~
+~
+~
+0 0 0
+Rd     0
+D3
+~
+~
+0 0 14224
+D4
+~
+~
+3 0 14226
+S
+#14226
+~
+~
+~
+~
+0 0 0
+Rd     0
+D5
+~
+~
+3 0 14225
+S
+#14227
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14128
+D1
+~
+~
+0 0 14120
+D3
+~
+~
+0 0 14132
+S
+#14228
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+0 0 14130
+D1
+~
+~
+0 0 14132
+D2
+~
+~
+7 0 14229
+S
+#14229
+~
+~
+~
+~
+0 0 0
+Rd     0
+D0
+~
+~
+7 0 14228
+D2
+~
+~
+0 0 14136
+S
+#14230
+~
+~
+~
+~
+0 0 0
+Rd     0
+D1
+~
+~
+0 0 14169
+D3
+~
+~
+0 0 14167
+S
+#14300
+last room~
+~
+~
+~
+0 4 0
+Rd     0
+S
+#0
+
+
+
+#SPECIALS
+M 14101 spec_thief
+M 14137 spec_cast_adept
+M 14170 spec_guard
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 14101 1 14101
+E 0 14102 0 20
+E 0 14103 0 16
+O 0 14119 0 14119
+M 0 14225 1 14225
+S
+
+
+
+#SHOPS
+0
+
+
+
+#$

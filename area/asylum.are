@@ -1,0 +1,2820 @@
+#AREADATA
+Name        { 15-30} The Asylum~
+Builders    None~
+VNUMs       28800 28899
+Security    100
+Recall      1
+Flags       256
+Version     107
+Creator     Hayt~
+Llevel      0
+Ulevel      0
+Sounds      Joyful laughter, Pathetic Sobs and Mad Screams mingle into one Horrible Sound.~
+Music       u7_theme.mid V=50 L=1 P=50 T=Background~
+End
+
+
+
+#MOBILES
+#28801
+Goon~
+A Goon~
+An Ugly Stone Faced Goon is trying to look tough.
+~
+An Ugly Stone Faced Goon, dressed all in White.  
+~
+67 8236 262272 0 0 3 S
+16 1 32 32 400 400d0+0 0d0+300
+160 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+glare $n
+say I wont let you out.
+say Go back the way ya Came.
+emote crosses his arms, and looks tough.
+~
+>rand_prog 10~
+burp $r
+~
+|
+#28802
+Cartha~
+Cartha~
+Cartha of Admittance, is doing a great job of ignoring everything.
+~
+The Gender of this woman took you a bit of time to figure.  Either way
+she is a Hawk Faced Nasty Tempered...  
+~
+67 8256 67109008 0 0 -3 S
+16 1 32 32 400 400d0+0 0d0+200
+160 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+emote looks up at you.
+say Visiting hours are Never.
+emote Ignores you for a time.
+Mpecho You cough.
+emote looks up.
+say You can't go in.
+emote mutters to herself about the Pay.
+say 100 Gold a Month.  If I didn't steal from...
+grumble
+ 
+mpecho Perhaps a Small Bribe?
+~
+>fight_prog 40~
+emote smashes you with her very Cro-Magnon like Skull.
+head $r
+~
+>bribe_prog 100~
+emote looks at you curiously
+say You really want to go in there?
+smirk $n
+say Fine.
+emote gets up slowly
+emote moves like a sloth to the gate.
+say Sot!  Opening Up!
+unlock north
+open north
+grunt
+say Go on.
+push $n north
+~
+|
+#28803
+Sot Guard~
+Sot~
+Sot the living Zombie is standing here drooling on itself.
+~
+~
+67 8288 262272 0 0 22 S
+16 1 32 32 400 400d0+0 0d0+0
+160 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+emote looks at you with sullen dead eyes.
+drool $i
+emote points South.
+close north
+~
+>fight_prog 70~
+emote looks at you sullenly
+say Pain
+cast 'inflict pain' $r
+~
+>rand_prog 10~
+mpat 1 cast 'stone skin' $i
+~
+>rand_prog 40~
+mpat 28804 mpecho So it goes...Round and Round....This is how the Madness Begins....Feel it?
+~
+|
+#28806
+Ugly Guard~
+A Guard~
+An Ugly Stone Faced Guard is here...Sleeping on Duty.
+~
+~
+67 8192 144 0 0 4 S
+16 1 32 32 500 500d0+0 0d0+0
+160 0 0
+0 0 1
+0 0 0
+>rand_prog 2~
+mpat 28809 say Halt!
+~
+>rand_prog 4~
+mpat 28813 mpecho &.You are Mad too?
+~
+>rand_prog 4~
+mpat 28806 mpecho &BPlink Plink Plink &bWater drips &BPlink Plink
+~
+|
+#28807
+Elf Elven Mentalist~
+AN Elven Mentalist~
+An Elven Mentalist
+~
+~
+67 64 0 0 0 0 S
+18 1 36 36 650 650d0+0 0d0+0
+180 0 0
+0 0 1
+0 0 0
+>rand_prog 20~
+mpat 28833 mpecho Whoosh
+~
+>rand_prog 20~
+mpat 28811 mpecho You'll be in here soon, your room is ready.
+~
+>rand_prog 20~
+mpat 28823 mpecho The Wall sais: Hi there I'm Stoned
+~
+|
+#28808
+Wacko Woman~
+a Wacko Woman~
+A Lovely Woman with a Loony Smile
+~
+~
+67 320 0 0 0 -1000 S
+18 1 36 36 500 500d0+0 0d0+2
+180 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+mpecho You hear a voice in your mind.
+say Hello $n
+say Are you planning to do to me,
+say what you did to Mr. Taladani
+say If so.
+smile $n
+say Come get me.
+bkiss $n
+c 'levitation' $i
+~
+>rand_prog 15~
+cast 'chant' $i
+~
+>rand_prog 20~
+mpat 1 cast 'combat mind' $i
+~
+>rand_prog 20~
+mpat 1 weaponmaster
+~
+|
+#28811
+guy regressive~
+A Regressive~
+This guy is a mess.
+~
+~
+67 8192 144 0 0 500 S
+17 1 34 34 600 600d0+0 0d0+0
+170 0 0
+0 0 1
+0 0 0
+>rand_prog 20~
+emote crawls into a fetal position and wimpers.
+~
+>hitprcnt_prog 50~
+emote emote screams with years of &rRage!!
+berserk
+~
+|
+#28812
+Renfield~
+Mr. Renfield~
+Mr. Renfield the Life Eater
+~
+~
+67 8256 128 0 0 -550 S
+20 1 40 40 700 700d0+0 0d0+0
+200 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+emote beams a smile at you.
+say Hello!
+burp
+say Oh Excuse me
+smile
+say I was restoring my Life Energy.
+say did you know that consuming life,
+say in greater and greater amounts...
+say Brings you closer to God?
+emote looks at you with a hungry mad stare.
+~
+|
+#28813
+inmate~
+an inmate~
+&cAn Inmate is here eating dinner.
+~
+~
+67 8256 128 0 0 -1000 S
+20 1 40 40 700 700d0+0 0d0+0
+200 0 0
+0 0 2
+0 0 0
+>fight_prog 50~
+cast 'agitation'
+~
+>rand_prog 9~
+emote throws some food.
+~
+|
+#28814
+Catatonic~
+A Catatonic~
+&wA Catatonic sits here, her finger way up her nose.
+~
+Every Madhouse has three or four.  Catatonics, they never move never blink or bat an eye-lash..
+~
+67 0 25165824 0 0 0 S
+19 1 38 38 1100 1100d0+0 0d0+0
+190 0 0
+0 0 2
+0 0 0
+>rand_prog 30~
+mpat 1 rage
+~
+>rand_prog 60~
+mpat 28813 mpecho Can You see it?
+~
+|
+#28818
+Ping POng Player ~
+A Ping Pong Player~
+This strange Woman is Playing Ping Pong, with herself???
+~
+~
+67 8256 1152 0 0 400 S
+17 1 34 34 500 500d0+0 0d0+0
+170 0 0
+0 0 0
+0 0 0
+>rand_prog 15~
+emote is moving fast from one end of the table to the other
+mpat 1 cast haste $i
+~
+>rand_prog 20~
+mpat 1 rage
+~
+>rand_prog 20~
+mpecho &.Don't you feel like Playing Ping Pong?
+~
+|
+#28819
+Placido Salat~
+Placido Salat~
+Master Chef Placido Salat is stirring something delicious
+~
+This Beefy olive-skinned man wears a perpetual smile.  Dressed all in
+pristine white, Placido Salat is not only on the staff but is also an
+inmate.  But no one seems to know why?  
+~
+67 16448 0 0 0 500 S
+24 1 48 48 600 600d0+0 0d0+0
+240 0 0
+0 0 0
+0 0 0
+>rand_prog 15~
+mpat 1 weaponmaster
+~
+>rand_prog 15~
+sing
+laugh
+emote Spins around and with a flick of his wrist puts a knife into the board on the wall.
+~
+>rand_prog 20~
+mpat 1 cast 'haste' $i
+~
+>all_greet_prog 100~
+say Well Hello there!
+emote begins cutting meat
+say what can I do for you?
+emote eyes you curiously
+say your not a patient?
+shrug
+emote starts stirring some soup
+~
+|
+#28820
+inmate~
+an inmate~
+An inmate is here eating dinner.
+~
+~
+67 8256 128 0 0 1000 S
+20 1 40 40 1000 1000d0+0 0d0+1
+200 0 0
+0 0 1
+0 0 0
+>rand_prog 10~
+emote throws some food
+~
+>fight_prog 50~
+emote hits you with a plate
+cast 'ballistic' $r
+~
+|
+#28821
+Tilvus Telcal'eth~
+Tilvus~
+The Psychist Tilvus Telcal'eth is...experimenting.
+~
+~
+67 68 16777232 0 0 -700 S
+21 1 42 42 1400 1400d0+0 0d0+3700
+210 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+emote looks up from his work
+say May I ask what you are doing in here.
+glare $n
+~
+>death_prog 99~
+say Don't Open the Box!
+say Don't Open It!
+say This Place must burn
+cast 'burning hands' $n
+~
+>rand_prog 20~
+mpat 1 cast 'intellect fortress' $i
+~
+|
+#28824
+Catatonic~
+A Catatonic~
+A Catatonic is in a strange position
+~
+~
+67 8256 16777344 0 0 -450 S
+21 1 42 42 1500 1500d0+0 0d0+2
+210 0 0
+0 0 2
+0 0 0
+>rand_prog 30~
+mpat 1 rage
+~
+>all_greet_prog 30~
+glare guard
+emote moves his hand, clenching it into a fist!
+cast 'bend light' guard
+~
+|
+#28825
+Asylum Guard~
+A Guard~
+The Guard of the Violent Ward is Tormenting a Poor Catatonic
+~
+~
+67 24640 128 0 0 490 S
+24 1 48 48 1900 1900d0+0 0d0+50
+240 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say 'ere now whatr'ya fer?
+say Ye aint a Doc.
+emote takes out his Stun Rod
+say Ye aint gettin threw me Mate.
+bonk cata
+smirk
+say Dis 'ere be the Violent Ward.
+say No Admitense
+emote looks tough
+~
+>rand_prog 30~
+emote bitches aobut the pay
+slap catatonic
+grin
+emote punches a Catatonic
+laugh
+~
+>bribe_prog 2~
+say Thanks Pal
+emote Pockets your Gold
+say But ye' still ainta gittin in.
+emote looks tough some more
+~
+|
+#28828
+Violent Guard~
+A Guard~
+A Guardian of the Violent is here.
+~
+~
+65 8320 128 0 0 10 S
+31 1 62 62 3000 3000d0+0 0d0+0
+310 0 0
+0 0 1
+0 0 0
+>rand_prog 20~
+cast shield
+~
+>rand_prog 20~
+cast armor
+~
+>rand_prog 20~
+~
+|
+#28829
+Wretched Madman~
+A Wretched Madman~
+A Madman lies in a pile of his own making.
+~
+~
+1091 17408 0 0 0 -1000 S
+29 1 58 58 1570 1570d0+0 0d0+0
+290 0 0
+0 0 1
+0 0 0
+>rand_prog 40~
+sob
+say I want to Go Home
+sniff
+gag
+puke
+~
+|
+#28831
+Paranoid Dwarf~
+A Paranoid Dwarf~
+This Dwarf is talking to the Stone.
+~
+~
+67 0 16777232 0 0 23 S
+28 1 56 56 3100 3100d0+0 0d0+0
+280 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+say The Stone The Stone.
+emote licks the stone wall
+say I love the Stone
+eat stone
+~
+>fight_prog 40~
+say Keep Away from My Stone!
+cast earthquak
+~
+>act_prog $n looks at you~
+say What are you looking at!!!!!!
+rage
+~
+>fight_prog 30~
+punch $r
+~
+|
+#28832
+Asylum Guard~
+An Asylum Guard~
+One of the Asylums guards
+~
+~
+65 8256 144 0 0 200 S
+18 1 36 36 2000 2000d0+0 0d0+0
+180 0 0
+0 0 1
+0 0 0
+>rand_prog 20~
+mpat 1 cast 'stone skin' $i
+~
+>rand_prog 20~
+mpat 1 cast 'flesh armor' $i
+~
+>rand_prog 20~
+mpat 1 cast 'armor' $i
+~
+>rand_prog 20~
+mpat 1 cast 'shield' $i
+~
+>all_greet_prog 100~
+emote reaches for something inside his coat.
+say Oh your not one of them.
+smile
+say sorry
+~
+|
+#28833
+Insane Kender~
+An Insane Kender~
+A Kender wearing a Straight-Jacket
+~
+Even with the Straight-Jack on you don't feel safe.
+This is a Kender
+~
+67 16640 5120 0 0 0 S
+30 1 60 60 2700 2700d0+0 0d0+30000
+300 0 0
+0 0 2
+0 0 0
+>rand_prog 20~
+mpat 1 thick
+~
+>rand_prog 20~
+mpat 1 cast mist $i
+~
+>all_greet_prog 100~
+look $n
+say Hello, I am so Bored.  Please let me out
+sniff
+close west
+~
+>fight_prog 40~
+emote does the only thing he can
+kick $r
+~
+>fight_prog 40~
+cast 'confusion' $r
+~
+>rand_prog 25~
+mpat 28832 mpecho &.You hear a Merry Tune!
+~
+|
+#28834
+Labrythimn Quanost~
+Labrythimn Quanost~
+Labrythimn Quanost is meditating.
+~
+~
+67 24588 262272 0 0 700 S
+24 1 48 48 2500 2500d0+0 0d0+2000
+240 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+Smile $n
+say Hello there.
+peer
+say Can I help you?
+cast 'mind probe' $n
+~
+>fight_prog 40~
+emote looks at you oddly.
+say why are you so violent?
+say you need help.
+cast 'awe' $n
+~
+>fight_prog 40~
+say I hate Violence
+cast 'detonate' $r
+~
+|
+#28835
+Dr. Liet~
+Dr. Liet~
+The Asylum Doctor Liet Tari
+~
+~
+67 16524 16 0 0 900 S
+25 1 50 50 3000 3000d0+0 0d0+300
+250 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+smile 
+say Ah welcome!
+emote closes his eyes for a moment.
+mpecho You feel a presence touch your mind.
+say $n
+smile
+say how may I heal you?
+say in Mind or Body
+~
+>speech_prog Mind~
+cast 'remove curse' $n
+~
+>speech_prog body~
+Mpecho &rDoctors are so Expensive!
+if goldamt ($n) > 10000
+Mpforce $n give 10000 coins liet
+mpolo 28837
+say Your Bill
+cast heal $n
+else
+say You need to lose weight.
+smile
+endif
+endif
+~
+>fight_prog 50~
+say For gods sake I'm a Doctor!
+glare $n
+say So be it!
+drain $n
+~
+>rand_prog 30~
+~
+|
+#28836
+Death Watcher~
+The Death Watcher~
+The Death Watcher is here.
+~
+~
+8259 0 65552 131072 0 -700 S
+30 1 60 60 1000 1000d0+0 0d0+3000
+300 0 0
+0 0 0
+0 0 0
+>all_greet_prog 100~
+look $n
+say Who are you?  And why are you here?
+say There are no executions scheduled for today
+say I warn you.  Do not open the door.
+say When an Inmate can't be controled,
+say I put them into the Acid.
+emote sniffs the Arcid air.
+say Boiling Nicely,
+grin
+say I am not Joking Don't go...You will Die!
+~
+|
+#28839
+psychotic Bandit~
+A Psychotic~
+A Violently psychotic Bandit is bound here.
+~
+~
+67 100 64 0 0 -900 S
+29 1 58 58 2850 2850d0+0 0d0+0
+290 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say The Temple Evil....I wont go back!
+say In the Dark Forest!
+scream
+howl
+say Drow Death Spirits of the Dead!
+back $r
+~
+|
+#28840
+Myra'thyn~
+Myra'thyn~
+Myra'thyn the Black Widow
+~
+~
+1 64 0 0 0 -670 S
+30 1 60 60 3000 3000d0+0 0d0+0
+300 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+if sex ($n) == 2
+say Hello what do you want bitch.
+glare $n
+say your not as pretty as me
+smile $i
+say do you know how many men I have seduced into my bed
+say they all died happy
+gigg
+break
+else 
+emote looks over at you and smiles.
+say Hello, welcome to my room.
+say I get so Lonely
+lick
+say I need some company
+nuzzle $n
+endif
+endif
+~
+>act_prog $n looks~
+emote leans foward a little and opens her legs slightly
+say I like being looked at.
+sigh
+say its been so long.
+flutter
+say Kiss me Lover
+~
+>act_prog $n kisses~
+say mmmmm yes baby.
+mmm
+nibble $n
+french $n
+emote whispers You are Dead!
+back $n
+~
+>act_prog $n gives you a long~
+french $n
+caress $n
+nibble $n
+mpolo 28841
+emote reaches back and something is in her hand!
+wield shiv
+back $n
+~
+|
+#28843
+Dr Trevant Wyrvlow~
+Dr. Wyrvlowe~
+Dr. Trevant Wyrvlowe
+~
+~
+67 16576 4 0 0 1000 S
+33 1 66 66 5000 5000d0+0 0d0+25
+330 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+emote looks up at you.
+mpecho For a Moment you feel a bennevolent force enter your mind.
+look $n
+emote waits patiently for you to act.
+mpat 1 cast 'combat mind' $i
+~
+|
+#28844
+Aerial Servant House Keeper~
+An &cAerial Servant~
+This is Dr. Wyrvlows house keeper
+~
+~
+323 128 786432 0 0 400 S
+31 1 62 62 3500 3500d0+0 0d0+0
+310 0 0
+0 0 0
+0 0 0
+>rand_prog 30~
+mpat 1 cast 'intertial' $i
+~
+>fight_prog 70~
+cast spark
+~
+>rand_prog 25~
+emote flits around drawing dust into its body
+mpat 1 rage
+~
+|
+#28846
+Hiding Lunatic~
+A Lunatic~
+A Lunatic is hiding in the Shower
+~
+~
+67 40 16778240 0 0 -600 S
+30 1 60 60 4600 4600d0+0 0d0+0
+300 0 0
+0 0 2
+0 0 0
+>all_greet_prog 100~
+say I wont let you take me back!
+cast 'bend light' $r
+~
+>rand_prog 20~
+rage
+~
+|
+#28847
+Off Duty Guards~
+&OA Guard~
+Off Duty Guards
+~
+~
+67 0 0 0 0 0 S
+35 1 70 70 2500 2500d0+0 0d0+0
+350 0 0
+0 0 1
+0 0 0
+>all_greet_prog 100~
+glare $n
+say Get Out!
+~
+>fight_prog 25~
+head
+~
+>fight_prog 25~
+punch
+~
+>fight_prog 25~
+kick
+~
+|
+#28899
+Dark within~
+The Dark Within~
+A Member of the Sacred Order of the Gash
+~
+Looking at this figure chills you to the bone.  He-She-It is dressed in a
+Black Leather Gown that appears to be sewn to and thru the creatures Skin. 
+The being is Covered in wounds of varying severity and age.  It head is
+hideous beyond description.  In its eyes is the knowledge of Pain, Pleasure
+and Death.  
+~
+8259 192 0 0 0 -500 S
+30 1 60 60 1500 1500d0+0 0d0+0
+300 0 0
+0 0 0
+0 0 0
+>rand_prog 20~
+say You Opened the Box.
+say We Came
+say We are here for your Pain.
+say Open yourself to us.
+say Expirience with us.
+say Die with us.
+cast 'molecular' $r
+~
+>fight_prog 30~
+say Open yourself to the Pleasure of Pain
+cast 'detonate' $r
+~
+>fight_prog 30~
+say Open yourself to the Pain of Pleasure
+cast 'disrupt' $r
+~
+|
+#0
+
+
+
+#OBJECTS
+#28800
+sign post~
+thorn and Mud Covered Sign~
+A thorn and mud covered sign post is here.~
+~
+13 20 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28801
+shock Stick~
+shock Stick~
+A long, black metal rod, lies here.~
+~
+5 268435456 8224 0 0 8193 15
+100 100
+0~ 0~ 0~ 7~
+2 1 0
+5 0
+spark~
+5 5
+0 0 0
+A
+18 3
+#28802
+desk~
+desk~
+A rotting wooden desk is in the corner.~
+~
+12 0 0 0 0 0 1
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28803
+key~
+key~
+A key is sitting here.~
+~
+13 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28804
+blood~
+blood~
+Splatters of drying blood are here.~
+~
+28 0 0 0 0 0 15
+100 100
+3~ 3~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28805
+Vial of Blood~
+vial of &RBlood~
+A vial of animal blood is here.~
+~
+17 268435456 0 0 0 1 17
+100 100
+5~ 5~ 13~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28806
+violence inhibitor tube~
+violence Inhibitor~
+A strange metal tube lies here.~
+~
+32 2 0 0 0 2097153 20
+100 100
+40~ 20~ 20~ awe~
+2 120 0
+0 0
+reserved~
+0 0
+0 0 0
+#28807
+pain Giver~
+pain Giver~
+A long rusty rod lies here.~
+~
+5 262146 9 0 0 8193 17
+100 100
+0~ 0~ 0~ 0~
+2 16 0
+5 0
+inflict pain~
+5 5
+0 0 0
+A
+19 2
+A
+18 3
+#28808
+key Ring~
+key Ring~
+A ring with many keys on it is here.~
+~
+13 4 0 0 0 1 10
+100 100
+0~ 0~ 0~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28809
+Ping Pong Table~
+table~
+A ping pong table is here.~
+~
+12 536870912 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+20 4 0
+0 0
+reserved~
+0 0
+0 0 0
+#28810
+ring of Mixed Blessings~
+ring of Mixed Blessings~
+A ring sits here.~
+~
+9 4496 0 0 0 3 17
+100 100
+0~ 0~ 0~ 0~
+1 80 0
+5 0
+bless~
+5 5
+0 0 0
+A
+18 10
+A
+301 -1
+A
+19 -5
+A
+1 -1
+A
+3 -2
+A
+4 2
+A
+2 1
+#28811
+psychist Stone~
+psychist Stone~
+A dimly glowing green stone floats here.~
+~
+9 19267587 10267 0 0 32769 20
+100 100
+1~ 0~ 0~ 0~
+1 40 0
+0 0
+mana~
+0 0
+0 0 0
+A
+4 3
+A
+12 50
+A
+3 2
+#28812
+Flies Spiders~
+flies and Spiders~
+A bunch of nasty insects crawl about on the floor and walls.~
+~
+19 16386 0 0 0 1 15
+100 100
+2~ 0~ 0~ 1~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28813
+dagger of Venom~
+dagger of Venom~
+A steel dagger sits on the ground here.~
+~
+5 541147152 8193 0 0 8193 23
+100 100
+0~ 0~ 0~ 11~
+2 120 0
+5 0
+poison~
+2 2
+0 0 0
+A
+25 10
+A
+19 5
+#28814
+whistle~
+&WWarning Whistle~
+A silver whistle sits here.~
+~
+9 0 0 0 0 5 15
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+5 0
+weaken~
+5 5
+0 0 0
+A
+4 -2
+A
+5 4
+>invoke_prog 100~
+0
+mpecho You blow the Whistle!
+~
+|
+#28815
+Fire~
+&RIncubate &rFire~
+A Flame Burns Brightly here.~
+~
+1 570429440 0 0 0 1 20
+100 100
+0~ 0~ -1~ 0~
+1 1 0
+5 0
+control flames~
+-1 -1
+0 0 0
+A
+48 20
+A
+19 5
+A
+2 5
+A
+12 50
+A
+5 -6
+#28816
+short sword~
+a Psionically Tempered Short Sword~
+An Extremely Sharp Short Sword floats in the air.~
+~
+5 134381570 1057 0 0 8193 30
+100 100
+0~ 0~ 0~ 1~
+1 300 0
+5 0
+energy containment~
+5 5
+0 0 0
+A
+19 15
+A
+26 20
+A
+18 3
+#28817
+Chefs Hat~
+chef's Hat~
+A white hat is here.~
+~
+9 0 0 0 0 17 25
+100 100
+0~ 0~ 0~ 0~
+1 4 0
+0 0
+goodberry~
+0 0
+0 0 0
+A
+12 25
+A
+13 10
+#28818
+cutting Board~
+cutting Board~
+A cutting board sits here.~
+~
+9 262208 0 0 0 513 25
+100 100
+0~ 0~ 0~ 0~
+2 12 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 20
+A
+24 -5
+#28819
+Chef Salat's Ever Sharp Knife~
+placido's Ever Sharp Knife~
+A very long, very sharp knife is here.~
+~
+5 3145730 0 0 0 8193 25
+100 100
+0~ 0~ 0~ 11~
+1 8 0
+0 0
+enchant weapon~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+A
+25 25
+A
+2 1
+#28820
+Configuration box~
+laem'archan's Configuration~
+This small bronze cube, seems to call to you~
+~
+9 813760516 0 0 0 16385 20
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+5 0
+intellect fortress~
+-1 -1
+0 0 0
+A
+4 3
+A
+3 3
+A
+1 -2
+A
+2 -2
+A
+12 50
+A
+5 -3
+A
+104 -1
+>invoke_prog 10~
+0
+mpechoat $n After what seems like hours, you finaly figure out the correct series of turns and touches to open the Puzzle Box.
+mpechoaround $n $n has solved a strange puzzle.
+mpmload 28899
+~
+|
+#28821
+Display Case~
+case~
+A glass display case is here.~
+~
+15 21 0 0 0 0 1
+100 100
+1000~ 13~ 28822~ 0~
+100 8 0
+0 0
+reserved~
+0 0
+0 0 0
+#28822
+display Case Key~
+display Case Key~
+A key is here.~
+~
+18 32 256 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28823
+done~
+(no short description)~
+(no description)~
+~
+13 0 0 0 0 0 0
+100 100
+0~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28824
+Pie~
+&rApple &WPIE~
+An apple pie sits here.~
+~
+19 0 0 0 0 16385 15
+100 100
+2~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28825
+Stun Rod~
+&cStun Rod~
+A stun rod is here, shaped like a normal piece of steel.~
+~
+5 64 8192 0 0 8192 24
+100 100
+0~ 0~ 0~ 8~
+2 8 0
+5 0
+agitation~
+2 2
+0 0 0
+A
+19 4
+A
+18 4
+#28826
+immobilizer weapon~
+immobilizer~
+An odd looking Projectile Weapon is here.~
+~
+32 2 1 0 0 2097153 20
+100 100
+24~ 5~ 5~ web~
+1 200 0
+0 0
+reserved~
+0 0
+0 0 0
+#28827
+Spectacles~
+&WSilver Spectacles~
+A pair if silver framed spectacles are here.~
+~
+27 270532608 32 0 0 131073 17
+100 100
+20~ 5~ 5~ identify~
+2 120 0
+0 0
+reserved~
+0 0
+0 0 0
+#28828
+key Ring~
+key Ring~
+A key ring is here.~
+~
+18 0 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28829
+Sedative~
+a Sedative~
+A small blue pill is here.~
+~
+26 2 1553 0 0 1 25
+100 100
+25~ levitation~ protection evil~ protection good~
+1 248 0
+0 0
+reserved~
+0 0
+0 0 0
+#28830
+Table~
+dining table~
+A dining table is here.~
+~
+12 4 0 0 0 1 1
+100 100
+0~ 0~ 0~ 0~
+30 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28831
+White Uniform ~
+white guard uniform~
+A crisp white uniform is here.~
+~
+9 131072 0 0 0 9 18
+100 100
+0~ 0~ 0~ 0~
+2 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 20
+A
+2 1
+A
+301 -1
+#28832
+stun Baton~
+stun Baton~
+A stun baton is here.~
+~
+5 2 8192 0 0 8193 18
+100 100
+0~ 0~ 0~ 12~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+26 20
+A
+18 5
+#28833
+Straight Jacket~
+reinforced Straight-Jacket~
+There is a straight-jacket here.~
+~
+9 4102 0 0 0 1025 30
+100 100
+0~ 0~ 0~ 0~
+3 4 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -10
+A
+14 -500
+A
+2 -20
+A
+19 -20
+#28835
+stimulant pill~
+a Stimulant~
+A small white pill is here.~
+~
+26 268435457 0 0 0 1 25
+100 100
+25~ giant strength~ adrenaline control~ reserved~
+1 248 0
+0 0
+reserved~
+0 0
+0 0 0
+#28836
+Needle~
+a Long Nasty Needle~
+A Very Long Nasty Looking Needle lies before you.~
+~
+3 32768 1568 0 0 16385 25
+100 100
+25~ 5~ 5~ ego whip~
+1 76 0
+0 0
+reserved~
+0 0
+0 0 0
+#28837
+White Lab Coat~
+a white lab coat~
+A white lab coat has been left here.~
+~
+9 393216 1 0 0 1025 25
+100 100
+0~ 0~ 0~ 0~
+2 28 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 30
+A
+113 -1
+#28838
+Uniform Guard~
+guards Uniform~
+A heavily padded guards uniform is here.~
+~
+9 1 0 0 0 9 30
+100 100
+0~ 0~ 0~ 0~
+2 120 0
+5 0
+flesh armor~
+5 5
+0 0 0
+A
+19 7
+A
+13 30
+A
+12 30
+A
+113 -1
+#28839
+Steel Rod~
+steel Rod~
+A Rod covered in blood is here.~
+~
+5 0 8192 0 0 8193 30
+100 100
+0~ 0~ 0~ 8~
+0 120 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 7
+#28840
+stone~
+stone~
+A stone is on the floor.~
+~
+26 268435456 0 0 0 1 28
+100 100
+30~ stone skin~ flesh armor~ armor~
+1 160 0
+0 0
+reserved~
+0 0
+0 0 0
+#28841
+Shiv~
+home-made Shiv~
+A sharpened metal spoon is here.~
+~
+5 335560736 256 0 0 8193 30
+100 100
+0~ 0~ 0~ 11~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 -2
+A
+19 10
+A
+12 30
+#28843
+wyverns leather hide armor~
+wyvern's Hide~
+A full suit of supple leather armor is here.~
+~
+9 2 4096 0 0 9 30
+100 100
+0~ 0~ 0~ 0~
+3 300 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 40
+A
+19 13
+A
+18 10
+A
+24 -5
+A
+23 -5
+#28844
+power gem~
+&rPower gem~
+This radiant crystal calls to you~
+~
+9 16777218 0 0 0 32769 30
+100 100
+0~ 0~ 0~ 0~
+1 300 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+12 33
+A
+24 -5
+A
+23 5
+#28845
+face of Death~
+face of Death~
+A Mask of a Human Face is here.~
+~
+9 536870912 0 0 0 65537 30
+100 100
+0~ 0~ 0~ 0~
+1 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 6
+A
+13 -50
+A
+5 3
+#28846
+Blue Shower Curtain~
+a blue shower curtain~
+A shower curtain is here.~
+~
+9 134217728 1 0 0 1025 35
+100 100
+0~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+12 40
+A
+19 10
+A
+14 -200
+#28847
+arm Sheath~
+arm Sheath~
+A Wonderouse looking Arm Band is here.~
+~
+9 32834 1024 0 0 257 30
+100 100
+0~ 0~ 0~ 0~
+1 300 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+18 5
+A
+19 5
+#28848
+Throwing Daggers~
+throwing Dagger~
+A dagger, balanced for throwing, is here.~
+~
+5 0 0 0 0 16385 30
+100 100
+0~ 0~ 0~ 11~
+1 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28849
+rack lamb~
+rack of lamb~
+A rack of lamb with all the fixings is here.~
+~
+19 33554432 0 0 0 1 15
+100 100
+19~ 0~ 0~ 0~
+2 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28850
+Pitcher of Fruit Punch~
+fruit Punch~
+A pitcher of fruit punch is here.~
+~
+17 0 0 0 0 1 15
+100 100
+20~ 11~ 8~ 0~
+3 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28851
+Aerieal Shroud~
+&zAerial Shroud~
+A Mutable Pocket of Dusty Air Floats Here.~
+~
+9 32 0 0 0 1025 31
+100 100
+0~ 0~ 0~ 0~
+1 1 0
+0 0
+fly~
+10 10
+0 0 0
+A
+100 -1
+A
+120 -1
+A
+119 -1
+#28852
+Desterted Stretch Road Somewhere~
+portal~
+This deserted stretch of road leads somewhere.~
+~
+29 0 0 0 0 0 1
+100 100
+17265~ 0~ 0~ 0~
+0 1 0
+0 0
+reserved~
+0 0
+0 0 0
+#28860
+steel Anklets~
+steel Anklets~
+A Pair of Shiny Steel Anklets, lie here.~
+~
+9 536870912 8193 0 0 1048577 20
+100 100
+0~ 0~ 0~ 0~
+2 8 0
+0 0
+reserved~
+0 0
+0 0 0
+A
+19 4
+A
+2 1
+A
+12 20
+A
+1 -4
+#0
+
+
+
+#ROOMDATA
+#28801
+The Asylum~
+~
+~
+Your treck through the Swamp has brought you to the Front Gate of the
+Asylum: run by the famous Dr.  Trevant Wyrvlowe.  The building is made of
+granite.  All the Windows have bars on them.  Standing at the Gate is a Big
+Ugly Goon - he looks tough.  
+~
+0 1 11
+Rd     0
+D0
+~
+Iron-Door~
+3 0 28802
+D2
+~
+~
+0 0 28850
+D3
+~
+~
+0 0 17265
+S
+#28802
+Admitting~
+~
+~
+This room is simply massive!  And except for a desk a chair and a rather
+masculine looking Woman; it is totaly empty.  The only exit is secured by an
+iron gate.  
+~
+0 8 0
+Rd     0
+D0
+~
+Iron-Gate~
+7 28803 28803
+D2
+~
+Iron-Gate~
+3 0 28801
+S
+#28803
+The Madness Begins~
+~
+~
+You hear the Gate slam shut behind you.  Turning around you look straight
+into the eyes of a Walking Corpse, or so it seems.  You are in a short
+Hallway; every inch of which is covered with dull gray Padding.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28804
+D2
+~
+Iron-Gate~
+7 28803 28802
+S
+#28804
+Padded Hallway~
+~
+~
+The scent of must, sweat and old blood assaults your nasal passages as
+you walk down the hall.  The stench is coming from the padding which covers
+everything to prevent injury.  Judging by the dirty dried and drying blood,
+the padding isn't too effective.  As you walk away you take one last look
+behind you, and quickly look back.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28805
+D2
+~
+~
+0 0 28803
+S
+#28805
+Padded Hallway~
+~
+~
+You come to a 4-way split in the corridore.  You can hear giggles and
+laughter from the right, also you catch a whiff of something good.  Ahead
+and to the left the sounds are distant and undiscernable.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28806
+D1
+~
+~
+0 0 28813
+D2
+~
+~
+0 0 28804
+D3
+~
+~
+0 0 28823
+S
+#28806
+Padded Hallway~
+~
+~
+You have come to annother iron gate.  And annother stone faced ugly guard
+- who looks at you like you belong here?  
+~
+0 8 0
+Rd     0
+D0
+~
+Iron-Gate~
+3 0 28807
+D2
+~
+~
+0 0 28805
+S
+#28807
+Observation of the Loon~
+~
+~
+After pasing the guard you enter one of the Cell Chambers.  This wing and
+this level is for the passive; safely, happy, insane.  The security is not
+very tight here.  There are doors to the east and west.  The door to the
+North is made of metal with a iron wire reinforced window.  There is a
+rather medical looking Elf looking through the Window.  
+~
+0 8 0
+Rd     0
+D0
+~
+Cell-Door~
+7 28808 28808
+D1
+~
+~
+0 0 28809
+D2
+~
+Iron-Gate~
+3 0 28806
+D3
+~
+~
+0 0 28810
+S
+#28808
+Loonie Room~
+~
+~
+This is not what you expected to see upon entering the room of a supposed
+madman.  The room though Spartan is rather well decorated.  A well made bed
+is in the center of the room.  There is a night stand, a chest for things
+and two immaculate book shelves; are along the wall.  And there is the man
+himself - actualy Woman.  She is quite lovely and smiles as you enter.  
+~
+0 0 0
+Rd     0
+D2
+~
+~
+7 0 28807
+S
+#28809
+Observation Room~
+~
+~
+Yet annother padded sterile chamber.  And there is a white door here,
+with a wire inlay glass window.  There seems to be no one on duty here at
+the moment.  
+~
+0 8 0
+Rd     0
+D0
+~
+Cell-Door~
+7 28808 28811
+D3
+~
+~
+0 0 28807
+S
+#28810
+Observation Room ~
+~
+~
+This room is for observing the Patients.  Just like the last room, it is
+white padded with a door, with a wire braced window.  
+~
+0 8 0
+Rd     0
+D0
+~
+Cell-Door~
+7 28808 28812
+D1
+~
+~
+0 0 28807
+S
+#28811
+Patients Room~
+~
+~
+This room is a mess.  Paper is scattered everywhere, as are cloths, books
+food and heaven knows what else.  The padding here is stained and filthy. 
+In the center of the room; sitting on the floor sucking his thumb is a naked
+man.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+7 0 28809
+S
+#28812
+Mr. Reinfelds Room~
+~
+~
+This room Stinks!  Looking around you can see why too.  Food in various
+states of Rot is everywhere!  Several Dozen species of insects are buzzing
+around; eating the food, drinking the sugar water, and of course laying
+their eggs.  There is a man here; he is writing in a note book, and chewing
+on something.  When he hears you come in, he looks up.  For a fleeting
+moment you see a hairy leg between the mans lips!  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+7 28808 28810
+S
+#28813
+Padded Hallway~
+~
+~
+White Padded Walls.  White Padded Floor.  White Padded Ceiling.  And
+the Mad in all directions.  This hall is slightly cleaner than the rest
+though.  The happy sounds and the yummy smell are getting louder and
+stronger.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 28814
+D3
+~
+~
+0 0 28805
+S
+#28814
+Padded Hallway~
+~
+~
+There is a door here, made of hard Oak.  In front of the door is a man.
+At first glance he looks like a guard, on closer inspection you see that he
+is wearing a grey gown.  Also he is totaly Immobile.  He is a Catatonic.  He
+will take a pose and hold it for hours, also he will hold any position you
+put him in.  Right now his finger is in his nose.  Everyone who sees such a
+poor soul always think they are the first to see the possibilities. 
+Sometimes they get a nasty surprise.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 28821
+D1
+~
+~
+0 0 28815
+D3
+~
+~
+0 0 28813
+S
+#28815
+Padded Hallway~
+~
+~
+MmMmMm, boy something smells good in here.  The sounds of merryment are
+getting louder.  There is a door to your right.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 28816
+D2
+~
+~
+3 0 28834
+D3
+~
+~
+0 0 28814
+S
+#28816
+Padded Hallway~
+~
+~
+You have come to the end of the Padded Hallway.  To a door that is adjar.
+~
+0 8 0
+Rd     0
+D1
+~
+~
+3 0 28817
+D3
+~
+~
+0 0 28815
+S
+#28817
+Recreation Area~
+~
+~
+You have come into the Asylum recreation area, where many of the less
+volatile inmates come to have fun as well as eat.  This area is well
+furnished with comfortable looking chairs and sofas.  Patients are playing
+cards at tables, ping pong, billiards and other games.  There are of course
+a few guards around but they seem to be rather relaxed.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 28819
+D1
+~
+~
+0 0 28818
+D2
+~
+~
+0 0 28820
+D3
+~
+~
+3 0 28816
+S
+#28818
+Game Room~
+~
+~
+This is the game room.  The only game here is Ping Pong lots of Ping
+Pong.  There is only one patient here, playing Ping Pong, only Ping Pong.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28820
+D1
+~
+~
+3 0 28848
+D3
+~
+~
+0 0 28817
+S
+#28819
+Kitchen~
+~
+~
+You have walked into the Asylum Kitchen.  By the smell of the place the
+inmates seem to eat very well.  The Wood Stove is massive and at the moment
+there is a huge kettle on it filled with some savoury stew.  After a minute
+the walk-in opens and a beefy looking man walks out lugging a frozen bird.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 28822
+D2
+~
+~
+3 0 28817
+S
+#28820
+Dinning Area~
+~
+~
+This is the Asylum Dinning Room.  Several inmates are seated at the
+long Tables eating yummy smelling food.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28817
+D2
+~
+~
+0 0 28818
+S
+#28821
+Tilvus's Office~
+~
+~
+This is the Office of The Psychist Tilvus Telcal'eth, and what a
+deppressing room it is.  Greusome charts, graphs and models line the walls
+and there are several real skulls, of several races on shelves.  There is
+also a large Display Case behind Tilvus's desk, there are several odd
+objects inside it.  Tilvus himself is also disturbing.  He is a black
+skinned elf but he is not a Drow?  His hair is rust red and his eyes are of
+blue-flame.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+3 0 28814
+S
+#28822
+Walk-In~
+~
+~
+This is the Walk-in Cool Room of the Kitchen.  Fruits, vegetables,
+meats and fish are on the racks and hanging from hooks.  There is alot of
+food here, and it is getting rather cold in here.  
+~
+0 8 0
+Rd     1
+D2
+~
+~
+3 0 28819
+S
+#28823
+Padded Hallway~
+~
+~
+This dusty, musty, mouldy &WGrey &wis getting on your nerves.  Here and
+there the stuffing is coming out of the walls.  Dried Blood can be seen from
+time to time.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 28805
+D2
+~
+~
+3 0 28835
+D3
+~
+~
+0 0 28824
+S
+#28824
+Padded Hallway~
+~
+~
+Ahead of you is annother Iron Gate.  More cells lie beyond.  There is
+annother Catatonic here, this one is bent over??  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+0 0 28823
+D3
+~
+Iron-Gate~
+7 28828 28825
+S
+#28825
+Violent Ward~
+~
+~
+This place is horrible!  It stinks of living putrecence and filth. 
+This is not the playground of the Happy Mad.  No more laughter, there are
+only screams, and weeping in this place.  
+~
+0 268435464 0
+Rd     3
+D0
+~
+~
+0 0 28826
+D1
+~
+~
+7 28828 28824
+D2
+~
+~
+0 0 28827
+D3
+~
+Iron-Gate~
+7 28808 28831
+S
+#28826
+Violent Ward~
+~
+~
+You almost feel pity for these poor people.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28828
+D2
+~
+~
+0 0 28825
+D3
+~
+~
+7 28808 28830
+S
+#28827
+Padded Hallway~
+~
+~
+How you want to Gag.  Blood covers the torn padding here.  The ah floor
+is also stained several shades of &OYellow.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28825
+D2
+~
+~
+99 28808 28832
+D3
+~
+Cell-Door~
+7 28808 28839
+S
+#28828
+Padded Halway~
+~
+~
+This place is filthy.  Dirt, trash and muck are everywhere the padding
+isn't even white anymore.  There is a cell door with a terrible stench
+coming from the other side 
+~
+0 8 0
+Rd     0
+D0
+~
+Slip-Wall~
+3 0 28836
+D2
+~
+~
+0 0 28826
+D3
+~
+~
+7 28808 28829
+S
+#28829
+Bare Cell~
+~
+~
+You have enterd a Bare Stone Cell.  It Stinks of Urin and Feces.  The
+Smell is so Strong it is making you Sick.  There is a man here bathed in his
+own waste.  
+~
+0 268435464 0
+Rd     20
+D1
+~
+~
+7 0 28828
+S
+#28830
+Cell of the Seductress~
+~
+~
+Somehow a taste of elegance and refinement has been brought to this
+sparse stone cell.  The cot is neatly made , there is a smal desk for
+writing, and a well kept toilet.  Laying on the bed is a truely beautiful
+elven woman.  Her scant clothing is well worn to arouse.  
+~
+0 8 0
+Rd     0
+D1
+~
+~
+7 28808 28826
+S
+#28831
+Paranoid's Cell~
+~
+~
+Bleak Stone, a hole in the ground, and a cot.  The occupent of this
+cell is in the corner talking to the wall.  It isn't talking back at least
+to you.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+7 0 28825
+S
+#28832
+Empty Cell~
+~
+~
+You have entered an empty cell.  Bare padding dust and webs...  And
+footprints?!?  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+99 0 28827
+D1
+~
+~
+7 0 28833
+S
+#28833
+Cell of the Mad Kender~
+~
+~
+A Mad Kender!!!! 
+Your First Thought is to run.  Yoour First Act is to Run.
+You can't the door is shut!
+You turn around slowly, Your Life flashes before your eyes.
+It was a good life....too bad its over.
+~
+0 142622728 0
+Rd     0
+D3
+~
+~
+7 0 28832
+S
+#28834
+Office of Labrythinm Quanost~
+~
+~
+You have entered annother of the Asylums offices.  Its a very cozy
+room, expensively furnished and tastefuly decorated.  Half a Dozen Antiques
+line the shelves in this room, along with hundred of books on the treatment
+of the mentaly unbalanced.  Sitting behind his desk, is the noted psychist
+Labrythinm Quanost.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 28815
+S
+#28835
+Infirmary~
+~
+~
+This is the Asylum Infirmary.  It isn't very impressive.  In fact it is
+empty utterly empty?  No examination table, no medical apperatus nothing.  
+There is only Doctor Liet.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 28823
+S
+#28836
+Execution Chamber~
+~
+~
+Welcome to the Execution Chamber.  
+~
+0 8388616 0
+Rd     0
+D1
+~
+~
+3 0 28837
+D2
+~
+~
+3 0 28828
+S
+#28837
+Above the Acid~
+~
+~
+If you are flying you can look down into a Pit of Acid.  If you can't fly
+you can expierience it.  
+~
+0 33554440 0
+Rd     0
+D3
+~
+~
+3 0 28836
+D5
+~
+~
+0 0 28838
+S
+#28838
+Pool of Acid~
+~
+~
+You were warned.  Next Time you will head the warnings you see.
+~
+0 277274624 0
+Rd     200
+D4
+~
+~
+0 0 28837
+S
+#28839
+Psychotic's Cell~
+~
+~
+There are murals scatched into the walls of this cell.  Pictures of
+Violence: Rape, Murder, and other horrors.  
+~
+0 9 0
+Rd     0
+D1
+~
+~
+7 28808 28827
+S
+#28840
+Hallway~
+~
+~
+From the Outside you couldn't tell that this house had a second floor. 
+Appearantly it does.  And it is vastly different than down below.  The walls
+are of plaster, with a new coat of Paint soft light comes from above, and
+the carpet is soft and deep.  
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28841
+D2
+~
+~
+0 0 28845
+D5
+~
+~
+0 0 28848
+S
+#28841
+Hallway~
+~
+~
+Whoever this Wyrvlowe is, he does have very refined tastes.  Several
+beautiful paintings line the walls, and thankfuly the smell of sweat and
+must is gone.  
+A door is at the end of the Hall.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 28842
+D2
+~
+~
+0 0 28840
+S
+#28842
+The Reception Area~
+~
+~
+Expensive leather furniture abounds in this room.  There is a Book-Case
+along the left hand wall, for while you wait to see the Doctor.  
+Several small landscape paintings are on each wall, and there are two doors leading into other rooms.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 28843
+D1
+~
+~
+3 0 28844
+D2
+~
+~
+3 0 28841
+S
+#28843
+Dr. Wyrvlowes Office~
+~
+~
+You have come upon the man himself: Dr.  Trevant Wyrvlowe.  As you walk
+in he looks up from the papers on his desk.  You take a quick glance about
+the room.  Medical Apperatus, books, charts, models and antiques.  
+~
+0 8 0
+Rd     0
+D2
+~
+~
+3 0 28842
+S
+#28844
+Dr. Wyrvlowe's Bed Room~
+~
+~
+In the Center of the room is a large, very comfortable looking bed.  A
+mahogony tall-boy, dresser, walk-in several mirrors, and a bookshelf are the
+other pieces of furniture in this room.  Soft Music plays from somewhere,
+calming your nerves.  As you enter you feel a presance in the room.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 28842
+S
+#28845
+Hallway~
+~
+~
+At the end of the hallway is a door there is also a door to your left.
+~
+0 8 0
+Rd     0
+D0
+~
+~
+0 0 28840
+D1
+~
+~
+3 0 28846
+D2
+~
+~
+3 0 28847
+S
+#28846
+Bathroom~
+~
+~
+You have entered a bathroom, with toilets, bath, two showers with a guy
+hiding in one.  
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 28845
+S
+#28847
+Guards Room~
+~
+~
+This very spacious room is where the Asylum Guards live and sleep. 
+While most of the Asylum personel go home at the end of day, the guards are
+on call at all times.  The Room is sectioned off into cubicles for privacy. 
+~
+0 8 0
+Rd     0
+D0
+~
+~
+3 0 28845
+S
+#28848
+Stairwell~
+~
+~
+These stairs were well hidden.  They lead up to the second floor.
+~
+0 8 0
+Rd     0
+D3
+~
+~
+3 0 28818
+D4
+~
+~
+0 0 28840
+S
+#28850
+&zMisty Road~
+~
+~
+Cloying, clining mist is all about you; thick and foul smelling.  In one
+direction is the Road, the other leads you to the Asylum.  
+~
+0 0 11
+Rd     0
+D0
+~
+~
+0 0 28801
+S
+#0
+
+
+
+#SPECIALS
+M 28801 spec_cast_adept
+M 28802 spec_cast_adept
+M 28806 spec_cast_adept
+M 28807 spec_cast_psionicist
+M 28808 spec_cast_psionicist
+M 28811 spec_cast_psionicist
+M 28812 spec_cast_psionicist
+M 28813 spec_guard
+M 28820 spec_guard
+M 28821 spec_cast_psionicist
+M 28824 spec_cast_psionicist
+M 28825 spec_cast_psionicist
+M 28829 spec_poison
+M 28836 spec_cast_undead
+M 28843 spec_cast_psionicist
+M 28846 spec_cast_adept
+M 28847 spec_cast_adept
+S
+
+
+
+#GAMES
+S
+
+
+
+#RESETS
+M 0 28801 1 28801
+E 0 28801 0 20
+M 0 28802 1 28802
+O 0 28802 0 28802
+E 0 28801 0 20
+G 0 28803 0
+M 0 28803 1 28803
+G 0 28803 0
+E 0 28814 0 3
+O 0 28804 0 28804
+M 0 28806 1 28806
+E 0 28801 0 20
+E 0 28814 0 3
+E 0 28807 0 21
+M 0 28807 1 28807
+E 0 28807 0 20
+G 0 28808 0
+E 0 28814 0 3
+E 0 28827 0 7
+E 0 28806 0 23
+M 0 28808 1 28808
+E 0 28810 0 1
+E 0 28810 0 2
+M 0 28811 1 28811
+M 0 28812 1 28812
+O 0 28805 0 28812
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+G 0 28812 0
+M 0 28814 1 28814
+M 0 28832 2 28817
+E 0 28832 0 20
+E 0 28814 0 3
+E 0 28806 0 23
+E 0 28831 0 5
+O 0 28809 0 28818
+M 0 28818 1 28818
+M 0 28819 1 28819
+E 0 28819 0 20
+E 0 28818 0 15
+E 0 28817 0 6
+O 0 28830 0 28820
+M 0 28813 3 28820
+M 0 28820 3 28820
+O 0 28849 0 28820
+O 0 28824 0 28820
+O 0 28850 0 28820
+O 0 28821 0 28821
+M 0 28821 1 28821
+E 0 28820 0 27
+E 0 28860 0 26
+E 0 28860 0 25
+E 0 28815 0 0
+E 0 28813 0 20
+E 0 28811 0 9
+O 0 28804 0 28821
+O 0 28804 0 28823
+M 0 28824 1 28824
+M 0 28825 1 28824
+E 0 28814 0 3
+E 0 28831 0 5
+E 0 28826 0 23
+E 0 28825 0 20
+G 0 28828 0
+M 0 28828 3 28826
+E 0 28838 0 5
+E 0 28839 0 20
+O 0 28804 0 28827
+M 0 28829 1 28829
+M 0 28840 1 28830
+E 0 28841 0 20
+M 0 28831 1 28831
+G 0 28840 0
+G 0 28840 0
+M 0 28832 1 28832
+E 0 28832 0 20
+E 0 28806 0 23
+E 0 28831 0 5
+M 0 28833 1 28833
+E 0 28833 0 16
+M 0 28834 1 28834
+E 0 28811 0 9
+M 0 28835 1 28835
+G 0 28829 0
+G 0 28835 0
+E 0 28836 0 22
+G 0 28836 0
+E 0 28814 0 3
+E 0 28837 0 16
+M 0 28836 1 28836
+E 0 28845 0 8
+M 0 28839 1 28839
+E 0 28841 0 20
+M 0 28843 1 28843
+E 0 28843 0 5
+E 0 28816 0 20
+E 0 28844 0 3
+E 0 28847 0 14
+M 0 28844 1 28844
+E 0 28851 0 16
+M 0 28846 1 28846
+E 0 28846 0 16
+M 0 28847 3 28847
+O 0 28852 0 28850
+S
+
+
+
+#SHOPS
+28835 0 0 0 0 0 100 100 0 23
+0
+
+
+
+#$
