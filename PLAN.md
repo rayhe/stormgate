@@ -2,7 +2,46 @@
 
 ## Goal
 
-Build a web-based MUD client for Stormgate that uses Google Authentication for login and Firebase for data persistence with permission-based access control.
+Build a web-based MUD client for Stormgate that uses Google Authentication for login and Firebase for data persistence with permission-based access control. Full TypeScript engine port, hosted entirely on free-tier infrastructure.
+
+---
+
+## Hosting & Infrastructure ($0/month)
+
+### Game Server: Oracle Cloud Always Free Tier
+- **Instance:** ARM Ampere A1 (up to 4 OCPUs, 24GB RAM) — massively overkill for a MUD
+- Even the smaller x86 free instance (1/8 OCPU, 1GB RAM) is more than enough
+- The TypeScript game engine holds the entire world in memory (~100-200MB)
+- 200GB block storage, 10TB/month outbound included
+- **Setup:**
+  - Node.js game engine runs as a `systemd` service (auto-restart on crash/reboot)
+  - Nginx or Caddy as reverse proxy for TLS termination (free Let's Encrypt cert)
+  - WebSocket connections proxied through to the Node.js process
+
+### Static Client: Firebase Hosting (Free Tier)
+- 10GB storage, 360MB/day transfer
+- Serves the React/xterm.js client as static files
+- Custom domain support with automatic SSL
+
+### Auth: Firebase Authentication (Free Tier)
+- Unlimited Google Sign-In authentications
+- No cost for any volume of MUD players
+
+### Database: Cloud Firestore (Free Tier)
+- 1GB storage, 50k reads/day, 20k writes/day
+- More than sufficient — a MUD writes player saves periodically, not on every keystroke
+- Game world loaded into memory at boot, Firestore is the persistence layer not the hot path
+
+### Cost Summary
+
+| Service | Free Tier Limit | MUD Usage | Cost |
+|---------|----------------|-----------|------|
+| Oracle Cloud VM | 4 OCPU / 24GB RAM | ~0.1 CPU / 200MB RAM | $0 |
+| Firebase Hosting | 360MB/day | ~10MB/day (small SPA) | $0 |
+| Firebase Auth | Unlimited | Any number of players | $0 |
+| Cloud Firestore | 50k reads, 20k writes/day | ~5k reads, ~2k writes/day | $0 |
+| Let's Encrypt TLS | Unlimited | 1 cert | $0 |
+| **Total** | | | **$0/month** |
 
 ---
 
@@ -10,45 +49,57 @@ Build a web-based MUD client for Stormgate that uses Google Authentication for l
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                  Frontend (React)                │
-│  ┌───────────┐ ┌──────────┐ ┌────────────────┐  │
-│  │ Terminal   │ │ Map View │ │ Character Panel│  │
-│  │ (xterm.js) │ │(optional)│ │ (stats/inv)    │  │
-│  └─────┬─────┘ └──────────┘ └────────────────┘  │
-│        │                                         │
-│  ┌─────┴──────────────────────────────────────┐  │
-│  │         WebSocket Client Layer             │  │
-│  └─────┬──────────────────────────────────────┘  │
-│        │                                         │
-│  ┌─────┴──────────────────────────────────────┐  │
-│  │    Firebase Auth (Google Sign-In)          │  │
-│  └────────────────────────────────────────────┘  │
-└────────┬────────────────────────────────────────┘
-         │ WSS
-┌────────┴────────────────────────────────────────┐
-│              Backend (Node.js)                   │
-│  ┌────────────────────────────────────────────┐  │
-│  │     WebSocket Server (ws)                  │  │
-│  ├────────────────────────────────────────────┤  │
-│  │     Firebase Admin SDK                     │  │
-│  │     - Auth token verification              │  │
-│  │     - Firestore read/write                 │  │
-│  ├────────────────────────────────────────────┤  │
-│  │     Game Engine (ported from C)            │  │
-│  │     OR Telnet Proxy to existing server     │  │
-│  └────────────────────────────────────────────┘  │
-└─────────────────┬───────────────────────────────┘
-                  │
-┌─────────────────┴───────────────────────────────┐
-│              Firebase                            │
-│  ┌──────────────┐  ┌──────────────────────────┐  │
-│  │ Auth         │  │ Firestore                │  │
-│  │ (Google SSO) │  │ - players/{uid}          │  │
-│  │              │  │ - characters/{charId}    │  │
-│  │              │  │ - areas/{areaName}       │  │
-│  │              │  │ - world_state/           │  │
-│  └──────────────┘  └──────────────────────────┘  │
-└──────────────────────────────────────────────────┘
+│          Firebase Hosting (free tier)            │
+│                                                  │
+│  ┌───────────────── React SPA ────────────────┐  │
+│  │  ┌───────────┐ ┌──────────┐ ┌───────────┐  │  │
+│  │  │ Terminal   │ │ Map View │ │ Character │  │  │
+│  │  │ (xterm.js) │ │(optional)│ │ Panel     │  │  │
+│  │  └─────┬─────┘ └──────────┘ └───────────┘  │  │
+│  │        │                                    │  │
+│  │  ┌─────┴────────────────────────────────┐   │  │
+│  │  │       WebSocket Client Layer         │   │  │
+│  │  └─────┬────────────────────────────────┘   │  │
+│  │        │                                    │  │
+│  │  ┌─────┴────────────────────────────────┐   │  │
+│  │  │  Firebase Auth (Google Sign-In)      │   │  │
+│  │  └──────────────────────────────────────┘   │  │
+│  └─────────────────────────────────────────────┘  │
+└────────┬──────────────────────────────────────────┘
+         │ WSS (wss://your-domain.com)
+┌────────┴──────────────────────────────────────────┐
+│    Oracle Cloud Free Tier VM (ARM A1)             │
+│                                                    │
+│  ┌─────────────────────────────────────────────┐   │
+│  │  Nginx/Caddy (TLS via Let's Encrypt)        │   │
+│  └─────┬───────────────────────────────────────┘   │
+│        │                                           │
+│  ┌─────┴───────────────────────────────────────┐   │
+│  │  Node.js Game Engine (systemd service)      │   │
+│  │  ┌───────────────────────────────────────┐  │   │
+│  │  │  WebSocket Server (ws)                │  │   │
+│  │  ├───────────────────────────────────────┤  │   │
+│  │  │  Firebase Admin SDK                   │  │   │
+│  │  │  - Auth token verification            │  │   │
+│  │  │  - Firestore read/write               │  │   │
+│  │  ├───────────────────────────────────────┤  │   │
+│  │  │  Game Engine (TypeScript port of C)   │  │   │
+│  │  │  - World state held in memory         │  │   │
+│  │  │  - Periodic save to Firestore         │  │   │
+│  │  └───────────────────────────────────────┘  │   │
+│  └─────────────────────────────────────────────┘   │
+└────────────────────┬───────────────────────────────┘
+                     │
+┌────────────────────┴───────────────────────────────┐
+│              Firebase (free tier)                   │
+│  ┌──────────────┐  ┌──────────────────────────┐    │
+│  │ Auth         │  │ Firestore                │    │
+│  │ (Google SSO) │  │ - users/{uid}            │    │
+│  │              │  │ - characters/{charId}    │    │
+│  │              │  │ - areas/{areaName}       │    │
+│  │              │  │ - world_state/           │    │
+│  └──────────────┘  └──────────────────────────┘    │
+└────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -230,29 +281,20 @@ service cloud.firestore {
 
 ---
 
-## Phase 3: Game Engine (Server-Side)
+## Phase 3: Game Engine (Full TypeScript Port)
 
-### Step 3.1 - Strategy Decision
+### Step 3.1 - Engine Architecture
 
-**Option A: Telnet Proxy (quickest path)**
-- Keep the existing C server running
-- Node.js server acts as a WebSocket-to-Telnet proxy
-- Auth happens at the proxy layer; proxy connects to C server on behalf of authenticated user
-- Firebase stores supplementary data (account linking, preferences)
-- Pros: Minimal game logic rewrite
-- Cons: Still need the C server running, limited integration with Firebase
+The game engine is a full port of the C server to TypeScript, running as a single
+long-lived Node.js process on the Oracle Cloud VM. Like the original C server, it
+holds the entire game world in memory and runs a tick-based game loop. Firestore
+replaces flat files as the persistence layer.
 
-**Option B: TypeScript Game Engine (recommended for full web version)**
-- Port the game logic to TypeScript/Node.js
-- Load world data from Firestore instead of `.are` files
-- Save player data to Firestore instead of flat files
-- Full integration with Firebase Auth (Google account = MUD account)
-- Pros: Single stack, native Firebase integration, modern tooling
-- Cons: Significant porting effort
+The process runs as a `systemd` service so it auto-restarts on crash or VM reboot.
+Nginx/Caddy sits in front for TLS termination (Let's Encrypt), proxying WSS
+connections to the Node.js process.
 
-**Recommended: Start with Option A, incrementally migrate to Option B.**
-
-### Step 3.2 - Core Engine Port (if Option B)
+### Step 3.2 - Core Engine Port
 
 Port in this order, as each layer depends on the previous:
 
@@ -341,16 +383,31 @@ Map MUD immortal levels to Firebase roles:
 | Auth | Firebase Authentication (Google provider) |
 | Database | Cloud Firestore |
 | Backend | Node.js, TypeScript, Express, ws |
-| Hosting | Firebase Hosting (client), Cloud Run or a VPS (server) |
+| Game Server | Oracle Cloud Free Tier VM (ARM A1) |
+| TLS Proxy | Nginx or Caddy + Let's Encrypt |
+| Process Manager | systemd |
+| Static Hosting | Firebase Hosting |
 | Area Migration | Node.js scripts parsing `.are` file format |
 
 ---
 
 ## Implementation Order
 
-1. **Phase 1** (Foundation) - Get a working terminal in the browser that authenticates with Google and connects via WebSocket
-2. **Phase 2** (Data Layer) - Design Firestore schema, write migration scripts, set up security rules
-3. **Phase 3.1** (Proxy) - Connect the web client to the existing C server via a telnet proxy for immediate playability
-4. **Phase 4** (Permissions) - Implement role system and permission checks
-5. **Phase 3.2+** (Engine Port) - Incrementally port game systems from C to TypeScript, switching each system to use Firestore
-6. **Phase 5** (Enhanced UI) - Add rich panels, mobile support, visual OLC editor
+1. **Phase 1** (Foundation) - Get a working terminal in the browser that authenticates with Google and connects via WebSocket to the Oracle Cloud VM
+2. **Phase 2** (Data Layer) - Design Firestore schema, write migration scripts to import `.are` files and player saves, set up security rules
+3. **Phase 3** (Engine Port) - Port game systems from C to TypeScript in dependency order, loading/saving from Firestore, running on Oracle Cloud VM as a systemd service
+4. **Phase 4** (Permissions) - Implement role system and permission checks, account linking for legacy characters
+5. **Phase 5** (Enhanced UI) - Add rich panels, mobile support, visual OLC editor
+
+## Server Deployment Checklist (Oracle Cloud VM)
+
+1. Provision an ARM A1 instance (Ubuntu) in Oracle Cloud Always Free
+2. Install Node.js (LTS), Nginx/Caddy, Certbot
+3. Open ports 80, 443 in VCN security list
+4. Point domain DNS A record to the VM's public IP
+5. Configure Nginx/Caddy as reverse proxy: `wss://your-domain.com` -> `localhost:3000`
+6. Obtain TLS cert via Let's Encrypt / Certbot
+7. Place Firebase service account key on the VM (env var or file, NOT in repo)
+8. Create a `systemd` unit file for the game engine (`ExecStart=node dist/server.js`)
+9. Enable and start the service: `systemctl enable stormgate && systemctl start stormgate`
+10. Deploy React client to Firebase Hosting: `firebase deploy --only hosting`
