@@ -105,10 +105,15 @@ const	char 	go_ahead_str	[] = { '\0' };
 	- Ahsile 
 */
 #define TELOPT_ECHO	1
-#define GA			249
+#define TELOPT_GMCP	201
+#define SB		250
+#define GA		249
 #define WILL		251
 #define WONT		252
-#define IAC			255
+#define DO_OPT		253
+#define DONT		254
+#define IAC		255
+#define SE		240
 
 #pragma warning( disable : 4305 )
 
@@ -121,13 +126,27 @@ const	char 	go_ahead_str	[] = { IAC, GA, '\0' };
 
 #if	defined( unix )
 #include <fcntl.h>
+#include <unistd.h>
 #include <netdb.h>
 #include <netinet/in.h>
 #include <sys/socket.h>
 #include <arpa/telnet.h>
+#ifndef TELOPT_GMCP
+#define TELOPT_GMCP	201
+#endif
+#ifndef DO_OPT
+#define DO_OPT		253
+#endif
+#ifndef SB
+#define SB		250
+#endif
+#ifndef SE
+#define SE		240
+#endif
 const	char	echo_off_str	[] = { IAC, WILL, TELOPT_ECHO, '\0' };
 const	char	echo_on_str	[] = { IAC, WONT, TELOPT_ECHO, '\0' };
 const	char 	go_ahead_str	[] = { IAC, GA, '\0' };
+const	char	gmcp_will_str	[] = { IAC, WILL, TELOPT_GMCP, '\0' };
 #endif
 
 
@@ -753,6 +772,7 @@ void game_loop_unix( unsigned int control )
 		continue;
 	    }
 
+	    process_telnet_input( d );
 	    read_from_buffer( d );
 	    if ( d->incomm[0] != '\0' )
 	    {
@@ -996,7 +1016,13 @@ void new_descr( int control )
      *
      * Furey: added suffix check by request of Nickel of HiddenWorlds.
      */
-     if ( check_ban( dnew, FALSE ) ) return; 
+     if ( check_ban( dnew, FALSE ) ) return;
+
+    /*
+     * Negotiate GMCP.
+     */
+    write_to_descriptor( dnew->descriptor, (char *) gmcp_will_str, 3, dnew );
+
     /*
      * Init descriptor data.
      */
@@ -1231,6 +1257,181 @@ bool read_from_descriptor( DESCRIPTOR_DATA *d )
     return TRUE;
 }
 
+
+
+/*
+ * Process and strip telnet IAC sequences from input buffer.
+ * Handles GMCP negotiation (IAC DO/DONT GMCP).
+ */
+void process_telnet_input( DESCRIPTOR_DATA *d )
+{
+    unsigned char *buf = (unsigned char *) d->inbuf;
+    int len = strlen( d->inbuf );
+    int i, j;
+
+    for ( i = 0, j = 0; i < len; )
+    {
+	if ( buf[i] == IAC && i + 1 < len )
+	{
+	    unsigned char cmd = buf[i+1];
+
+	    if ( (cmd == WILL || cmd == WONT || cmd == DO_OPT || cmd == DONT)
+		 && i + 2 < len )
+	    {
+		unsigned char opt = buf[i+2];
+		if ( cmd == DO_OPT && opt == TELOPT_GMCP )
+		    d->gmcp = TRUE;
+		else if ( cmd == DONT && opt == TELOPT_GMCP )
+		    d->gmcp = FALSE;
+		i += 3;
+	    }
+	    else if ( cmd == SB && i + 2 < len )
+	    {
+		/* Skip subnegotiation until IAC SE */
+		i += 2;
+		while ( i < len - 1 )
+		{
+		    if ( buf[i] == IAC && buf[i+1] == SE )
+		    {
+			i += 2;
+			break;
+		    }
+		    i++;
+		}
+	    }
+	    else if ( cmd == IAC )
+	    {
+		buf[j++] = IAC; /* escaped IAC */
+		i += 2;
+	    }
+	    else
+	    {
+		i += 2; /* other 2-byte commands */
+	    }
+	}
+	else
+	{
+	    buf[j++] = buf[i++];
+	}
+    }
+    buf[j] = '\0';
+}
+
+
+/*
+ * Send a GMCP message to a descriptor.
+ * Format: IAC SB GMCP <package> <json> IAC SE
+ */
+void send_gmcp( DESCRIPTOR_DATA *d, const char *package, const char *json )
+{
+    char buf[MAX_STRING_LENGTH];
+    int  len;
+
+    if ( !d || !d->gmcp )
+	return;
+
+    if ( json && json[0] != '\0' )
+	len = snprintf( buf + 3, sizeof(buf) - 5, "%s %s", package, json );
+    else
+	len = snprintf( buf + 3, sizeof(buf) - 5, "%s", package );
+
+    buf[0] = (char) IAC;
+    buf[1] = (char) SB;
+    buf[2] = (char) TELOPT_GMCP;
+    buf[3 + len] = (char) IAC;
+    buf[4 + len] = (char) SE;
+    write_to_descriptor( d->descriptor, buf, 5 + len, d );
+}
+
+
+/*
+ * Send GMCP Char.Vitals - hp, mana, move.
+ */
+void send_gmcp_vitals( CHAR_DATA *ch )
+{
+    DESCRIPTOR_DATA *d;
+    char json[MAX_STRING_LENGTH];
+
+    if ( !ch || !( d = ch->desc ) || !d->gmcp )
+	return;
+
+    snprintf( json, sizeof(json),
+	"{\"hp\":%d,\"maxhp\":%d,\"mana\":%d,\"maxmana\":%d,"
+	"\"move\":%d,\"maxmove\":%d}",
+	ch->hit, ch->max_hit,
+	( ch->class != 9 && ch->class != 11 ) ? ch->mana : ch->bp,
+	( ch->class != 9 && ch->class != 11 ) ? ch->max_mana : ch->max_bp,
+	ch->move, ch->max_move );
+
+    send_gmcp( d, "Char.Vitals", json );
+}
+
+
+/*
+ * Send GMCP Room.Info - name, exits, area, vnum, sector.
+ */
+void send_gmcp_room( CHAR_DATA *ch )
+{
+    DESCRIPTOR_DATA *d;
+    ROOM_INDEX_DATA *room;
+    char json[MAX_STRING_LENGTH];
+    char exits[MAX_INPUT_LENGTH];
+    char *p;
+    int  door;
+    static const char *dir_short[] = { "n","e","s","w","u","d" };
+
+    if ( !ch || !( d = ch->desc ) || !d->gmcp )
+	return;
+    if ( !( room = ch->in_room ) )
+	return;
+
+    p = exits;
+    *p++ = '{';
+    for ( door = 0; door < 6; door++ )
+    {
+	EXIT_DATA *pexit = room->exit[door];
+	if ( pexit && pexit->to_room
+	     && !IS_SET( pexit->exit_info, EX_HIDDEN ) )
+	{
+	    if ( p != exits + 1 )
+		*p++ = ',';
+	    p += snprintf( p, sizeof(exits) - (p - exits),
+		"\"%s\":%d", dir_short[door], pexit->to_room->vnum );
+	}
+    }
+    *p++ = '}';
+    *p   = '\0';
+
+    snprintf( json, sizeof(json),
+	"{\"name\":\"%s\",\"vnum\":%d,\"area\":\"%s\","
+	"\"sector\":%d,\"exits\":%s}",
+	room->name, room->vnum,
+	room->area ? room->area->name : "Unknown",
+	room->sector_type, exits );
+
+    send_gmcp( d, "Room.Info", json );
+}
+
+
+/*
+ * Send GMCP Char.Status - name, level, class, race.
+ */
+void send_gmcp_status( CHAR_DATA *ch )
+{
+    DESCRIPTOR_DATA *d;
+    char json[MAX_STRING_LENGTH];
+
+    if ( !ch || !( d = ch->desc ) || !d->gmcp || IS_NPC( ch ) )
+	return;
+
+    snprintf( json, sizeof(json),
+	"{\"name\":\"%s\",\"level\":%d,\"class\":\"%s\",\"race\":\"%s\"}",
+	ch->name, ch->level,
+	class_table[ch->class].who_long,
+	race_table[ch->race].race_full );
+
+    send_gmcp( d, "Char.Status", json );
+}
 
 
 /*
@@ -1571,6 +1772,11 @@ void bust_a_prompt( DESCRIPTOR_DATA *d )
          ++point, ++i;      
    }
    write_to_buffer( d, buf, point - buf );
+
+   /* Send GMCP vitals every prompt */
+   if ( ch && d->gmcp )
+       send_gmcp_vitals( ch );
+
    return;
 }
 
@@ -3200,6 +3406,11 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 		send_to_char(AT_RED, "\n\r*** Corrupted items have been found on your character.\n\r*** They have been removed to prevent a crash.\n\r\n\r", ch);
 
 	do_look( ch, "auto" );
+
+	/* Send initial GMCP data on login */
+	send_gmcp_status( ch );
+	send_gmcp_room( ch );
+
 	/* check for new notes */
 	notes = 0;
 
@@ -4115,6 +4326,95 @@ int main( int argc, char **argv )
     control = init_socket( port );
     sprintf( log_buf, "OmegmaMud is ready to rock on port %d.", port );
     log_string( log_buf, CHANNEL_NONE, -1 );
+
+    /* Copyover recovery: reload saved descriptors */
+    if ( argc > 2 && !str_cmp( argv[2], "copyover" ) )
+    {
+	FILE            *fp;
+	DESCRIPTOR_DATA *d;
+	unsigned int     desc;
+	char             name[MAX_INPUT_LENGTH];
+	char             host[MAX_INPUT_LENGTH];
+	bool             fOld;
+
+	log_string( "Copyover recovery initiated.", CHANNEL_NONE, -1 );
+
+	fp = fopen( "../area/copyover.dat", "r" );
+	if ( fp )
+	{
+	    for ( ;; )
+	    {
+		fscanf( fp, "%u %s %s\n", &desc, name, host );
+		if ( desc == (unsigned int) -1 )
+		    break;
+
+		if ( fcntl( desc, F_SETFL, FNDELAY ) == -1 )
+		{
+		    bug( "Copyover: fcntl on desc %d", desc );
+		    close( desc );
+		    continue;
+		}
+
+		d		= new_descriptor();
+		*d		= d_zero;
+		d->descriptor	= desc;
+		d->character	= NULL;
+		d->connected	= CON_COPYOVER_RECOVER;
+		d->showstr_head = str_dup( "" );
+		d->showstr_point = NULL;
+		d->pEdit	= NULL;
+		d->pString	= NULL;
+		d->editor	= 0;
+		d->outsize	= 2000;
+		d->outbuf	= alloc_mem( d->outsize );
+		d->ansi		= TRUE;
+		d->host		= str_dup( host );
+		d->user		= str_dup( "(copyover)" );
+		d->auth_inc	= 0;
+		d->auth_fd	= -1;
+		d->next		= descriptor_list;
+		descriptor_list = d;
+
+		/* Load the character */
+		fOld = load_char_obj( d, name );
+		if ( !fOld )
+		{
+		    write_to_descriptor( d->descriptor,
+			"\n\rSomething went wrong during copyover. Please reconnect.\n\r",
+			0, d );
+		    close_socket( d );
+		    continue;
+		}
+
+		/* Put them back in the game */
+		d->character->next  = char_list;
+		char_list           = d->character;
+		d->connected        = CON_PLAYING;
+
+		/* Re-enter the room */
+		if ( d->character->in_room )
+		    char_to_room( d->character, d->character->in_room );
+		else
+		    char_to_room( d->character, get_room_index( ROOM_VNUM_TEMPLE ) );
+
+		/* Let them know */
+		send_to_char( AT_WHITE,
+		    "\n\r *** Copyover complete. Welcome back! ***\n\r\n\r",
+		    d->character );
+		do_look( d->character, "" );
+		act( AT_WHITE, "$n materializes!", d->character, NULL, NULL, TO_ROOM );
+
+		/* Send GMCP negotiation */
+		write_to_descriptor( d->descriptor,
+		    (char *) gmcp_will_str, 3, d );
+	    }
+	    fclose( fp );
+	    unlink( "../area/copyover.dat" );
+	}
+
+	log_string( "Copyover recovery complete.", CHANNEL_NONE, -1 );
+    }
+
     {
       FILE *fp;
       char buf[MAX_INPUT_LENGTH];

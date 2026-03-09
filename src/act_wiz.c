@@ -29,7 +29,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-//#include <unistd.h>
+#include <unistd.h>
 #include "merc.h"
 
 /* Conversion of Immortal powers to Immortal skills done by Thelonius */
@@ -1860,6 +1860,81 @@ void do_reboot( CHAR_DATA *ch, char *argument )
     return;
 }
 
+
+/*
+ * Copyover - restart the MUD without disconnecting players.
+ * Saves all descriptors and player data, then exec()s a new binary.
+ */
+void do_copyover( CHAR_DATA *ch, char *argument )
+{
+    DESCRIPTOR_DATA *d;
+    DESCRIPTOR_DATA *d_next;
+    CHAR_DATA       *rch;
+    FILE            *fp;
+    char             buf[MAX_STRING_LENGTH];
+    extern bool      merc_down;
+    extern int       port;
+
+    rch = get_char( ch );
+
+    if ( !authorized( rch, "copyover" ) )
+	return;
+
+    fp = fopen( "../area/copyover.dat", "w" );
+    if ( !fp )
+    {
+	send_to_char(AT_RED, "Copyover file not writable, aborted.\n\r", ch );
+	perror( "do_copyover: fopen" );
+	return;
+    }
+
+    sprintf( buf, "\n\r *** COPYOVER by %s - please remain online ***\n\r", ch->name );
+
+    /* Save all connected players and write descriptor info */
+    for ( d = descriptor_list; d; d = d_next )
+    {
+	d_next = d->next;
+
+	if ( !d->character || d->connected != CON_PLAYING )
+	{
+	    write_to_descriptor( d->descriptor,
+		"\n\rSorry, we are rebooting. Come back in a few seconds.\n\r",
+		0, d );
+	    close_socket( d );
+	    continue;
+	}
+
+	/* Inform the player */
+	write_to_descriptor( d->descriptor, buf, 0, d );
+
+	/* Save the character */
+	save_char_obj( d->character, FALSE );
+
+	/* Write descriptor fd, character name, host to file */
+	fprintf( fp, "%u %s %s\n",
+	    d->descriptor, d->character->name, d->host );
+    }
+
+    fprintf( fp, "-1\n" );
+    fclose( fp );
+
+    /* Close reserve and other fds */
+    fclose( fpReserve );
+
+    /* exec the new binary */
+    sprintf( buf, "%d", port );
+    sprintf( log_buf, "Copyover initiated by %s.", ch->name );
+    log_string( log_buf, CHANNEL_NONE, -1 );
+
+    execl( "../src/stormgate", "stormgate", buf, "copyover", (char *) NULL );
+
+    /* If we get here, exec failed */
+    perror( "do_copyover: execl" );
+    send_to_char(AT_RED, "Copyover FAILED!\n\r", ch );
+
+    /* Reopen reserve */
+    fpReserve = fopen( NULL_FILE, "r" );
+}
 
 
 void do_shutdow( CHAR_DATA *ch, char *argument )

@@ -344,6 +344,7 @@ void move_char( CHAR_DATA *ch, int door )
               dir_noun[rev_dir[door]], TO_ROOM );
 
     do_look( ch, "auto" );
+    send_gmcp_room( ch );
 
     if ( to_room->exit[rev_dir[door]] &&
 	 to_room->exit[rev_dir[door]]->to_room == in_room )

@@ -373,6 +373,7 @@ struct	cmd_type	cmd_table	[ ] =
     { "pardon",		do_pardon,	POS_DEAD,    L_IMP,  LOG_ALWAYS	},
     { "purge",		do_purge,	POS_DEAD,    L_APP,  LOG_NORMAL	},
     { "reboo",		do_reboo,	POS_DEAD,    L_ARC,  LOG_NORMAL	},
+    { "copyover",	do_copyover,	POS_DEAD,    L_ARC,  LOG_ALWAYS	},
     { "reboot",		do_reboot,	POS_DEAD,    L_ARC,  LOG_ALWAYS	},
     { "restore",	do_restore,	POS_DEAD,    L_DEI,  LOG_ALWAYS	},
     { "shutdow",	do_shutdow,	POS_DEAD,    L_KPR,  LOG_NORMAL	},

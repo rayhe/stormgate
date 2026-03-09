@@ -489,6 +489,7 @@ struct	weather_data
 #define CON_CONFIRM_ATTRIBUTES	       26
 
 #define CON_GET_ANSI			105
+#define CON_COPYOVER_RECOVER		106
 #define CON_AUTHORIZE_NAME		100
 #define CON_AUTHORIZE_NAME1		101
 #define CON_AUTHORIZE_NAME2		102
@@ -581,6 +582,7 @@ struct	descriptor_data
     int			editor;		/* OLC */
     int                 editin;         /* Altrag, again for nesting */
     bool		ansi;
+    bool		gmcp;		/* GMCP protocol support */
 };
 
 
@@ -3150,6 +3152,7 @@ DECLARE_DO_FUN( do_setlev       );
 DECLARE_DO_FUN(	do_shout	);
 DECLARE_DO_FUN(	do_shutdow	);
 DECLARE_DO_FUN(	do_shutdown	);
+DECLARE_DO_FUN( do_copyover	);
 DECLARE_DO_FUN(	do_silence	);
 DECLARE_DO_FUN(	do_sla		);
 DECLARE_DO_FUN(	do_slay		);
@@ -3928,6 +3931,11 @@ void	set_timed_room_flags   args( ( ROOM_INDEX_DATA* room, int flag, int timer )
 void	close_socket	 args( ( DESCRIPTOR_DATA *dclose ) );
 void	write_to_buffer	 args( ( DESCRIPTOR_DATA *d, const char *txt,
 				int length ) );
+void	send_gmcp	 args( ( DESCRIPTOR_DATA *d, const char *package,
+				const char *json ) );
+void	send_gmcp_vitals args( ( CHAR_DATA *ch ) );
+void	send_gmcp_room	 args( ( CHAR_DATA *ch ) );
+void	send_gmcp_status args( ( CHAR_DATA *ch ) );
 void    send_to_all_char args( ( const char *text ) );
 void    send_to_al       args( ( int clr, int level, char *text ) );
 /* send to above level---^   TRI */
