@@ -12,6 +12,7 @@ const DO = 0xFD;
 const DONT = 0xFE;
 const SB = 0xFA;
 const SE = 0xF0;
+const TELOPT_ECHO = 1;
 const TELOPT_GMCP = 201;
 
 const wss = new WebSocketServer({ port: WS_PORT });
@@ -87,6 +88,10 @@ function parseTelnet(buf, tcp) {
         if (cmd === WILL && opt === TELOPT_GMCP && tcp.writable) {
           tcp.write(Buffer.from([IAC, DO, TELOPT_GMCP]));
           console.log('[GMCP] Negotiated GMCP with server');
+        }
+        // Forward echo control to client (password masking)
+        if (opt === TELOPT_ECHO) {
+          gmcp.push({ pkg: 'Echo', data: { off: cmd === WILL } });
         }
         i += 3;
       } else if (cmd === SB) {
