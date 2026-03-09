@@ -13,13 +13,25 @@ import {
   PULSE_AREA,
   PULSE_MOBILE,
   Position,
+  Direction,
+  ItemType,
 } from './types.js';
 
-import type { CharData, AffectData } from './types.js';
+import type { CharData, AffectData, ObjInstance } from './types.js';
 
-import { world, SKY_CLOUDLESS, SKY_CLOUDY, SKY_RAINING, SKY_LIGHTNING, SUN_DARK, SUN_RISE, SUN_LIGHT, SUN_SET } from './world.js';
-import { affectRemoveFromChar } from './handler.js';
-import { sendToChar, sendToAll } from './output.js';
+import { world, charRoomMap, SKY_CLOUDLESS, SKY_CLOUDY, SKY_RAINING, SKY_LIGHTNING, SUN_DARK, SUN_RISE, SUN_LIGHT, SUN_SET } from './world.js';
+import {
+  affectRemoveFromChar,
+  charToRoom,
+  charFromRoom,
+  getCharRoom,
+  objToChar,
+  objFromRoom,
+  isName,
+} from './handler.js';
+import { sendToChar, sendToAll, act, colors, TO_ROOM } from './output.js';
+import { multiHit, setFighting } from './fight.js';
+import { sendVitals } from './protocol.js';
 
 // ============================================================================
 //  Game loop state
@@ -140,6 +152,11 @@ function tickUpdate(): void {
 
     // Process affects — decrease durations and remove expired
     processAffects(ch);
+
+    // Send updated vitals to connected PCs after regen
+    if (!ch.isNpc) {
+      sendVitals(ch);
+    }
   }
 
   world.time.total++;
@@ -396,20 +413,43 @@ function areaUpdate(): void {
  * Processes combat rounds for all fighting characters.
  */
 function violenceUpdate(): void {
-  // TODO: Implement combat rounds
-  // This would iterate through all characters in Position.FIGHTING and:
-  //   - Roll attacks based on hitroll, damroll, weapon dice
-  //   - Apply damage
-  //   - Check for character death
-  //   - Handle flee, wimpy, etc.
-
-  // For now, just keep fighting characters aware
+  // Collect characters in combat (iterate a snapshot to avoid mutation issues)
+  const fighters: CharData[] = [];
   for (const ch of world.characters.values()) {
     if (ch.deleted) continue;
     if (ch.position !== Position.FIGHTING) continue;
+    if (ch.fighting === null) continue;
+    fighters.push(ch);
+  }
 
-    // Stub: fighting characters take no action automatically
-    // The real system would process multi_hit(), damage(), etc.
+  for (const ch of fighters) {
+    if (ch.deleted) continue;
+    if (ch.position !== Position.FIGHTING) continue;
+    if (ch.fighting === null) continue;
+
+    const victim = world.getCharById(ch.fighting);
+    if (!victim || victim.deleted) {
+      // Target is gone, stop fighting
+      ch.fighting = null;
+      if (ch.position === Position.FIGHTING) {
+        ch.position = Position.STANDING;
+      }
+      continue;
+    }
+
+    // Check they are still in the same room
+    const chRoom = getCharRoom(ch);
+    const victRoom = getCharRoom(victim);
+    if (chRoom === -1 || victRoom === -1 || chRoom !== victRoom) {
+      ch.fighting = null;
+      if (ch.position === Position.FIGHTING) {
+        ch.position = Position.STANDING;
+      }
+      continue;
+    }
+
+    // Process one combat round
+    multiHit(ch, victim);
   }
 }
 
@@ -419,15 +459,102 @@ function violenceUpdate(): void {
 
 /**
  * Mobile updates, fired every PULSE_MOBILE (4 seconds).
- * Handles NPC behavior: wandering, scavenging, mob programs, etc.
+ * Handles NPC behavior: wandering, scavenging, aggressive attacks.
  */
 function mobileUpdate(): void {
-  // TODO: Implement NPC AI
-  // This would iterate through all NPC characters and:
-  //   - Random movement for wandering mobs
-  //   - Scavenge items off the ground
-  //   - Execute mob programs
-  //   - Aggressive mobs attack players
+  // ACT flag bit definitions
+  const ACT_SENTINEL   = 1 << 2;  // bit 2: mob does not wander
+  const ACT_AGGRESSIVE = 1 << 5;  // bit 5: mob attacks PCs on sight
+  const ACT_SCAVENGER  = 1 << 6;  // bit 6: mob picks up items
+
+  // Snapshot the character list to avoid mutation during iteration
+  const mobs: CharData[] = [];
+  for (const ch of world.characters.values()) {
+    if (!ch.isNpc || ch.deleted) continue;
+    mobs.push(ch);
+  }
+
+  for (const ch of mobs) {
+    if (ch.deleted) continue;
+
+    // Skip mobs that are fighting, sleeping, etc.
+    if (ch.position < Position.STANDING) continue;
+    if (ch.position === Position.FIGHTING) continue;
+
+    const roomVnum = getCharRoom(ch);
+    if (roomVnum === -1) continue;
+
+    const room = world.getRoom(roomVnum);
+    if (!room) continue;
+
+    // ---- Scavenger behavior ----
+    // Mobs with ACT_SCAVENGER pick up a random item from the room
+    if (ch.act & ACT_SCAVENGER) {
+      if (Math.random() < 0.10) {
+        const roomObjs = world.getObjsInRoom(roomVnum);
+        if (roomObjs.length > 0) {
+          const obj = roomObjs[Math.floor(Math.random() * roomObjs.length)];
+          // Don't pick up corpses
+          if (obj.itemType !== ItemType.CORPSE_NPC && obj.itemType !== ItemType.CORPSE_PC) {
+            objFromRoom(obj);
+            objToChar(obj, ch);
+            act('$n gets $p.', ch, obj, null, TO_ROOM);
+          }
+        }
+      }
+    }
+
+    // ---- Aggressive behavior ----
+    // Mobs with ACT_AGGRESSIVE attack any PC in the room
+    if (ch.act & ACT_AGGRESSIVE) {
+      const charsInRoom = world.getCharsInRoom(roomVnum);
+      for (const victim of charsInRoom) {
+        if (victim.isNpc || victim.deleted) continue;
+        if (victim.position < Position.STANDING) continue;
+        // Don't attack immortals
+        if (victim.level >= 105) continue;
+
+        // Attack!
+        act(`${colors.brightRed}$n screams and attacks!${colors.reset}`, ch, null, null, TO_ROOM);
+        setFighting(ch, victim);
+        multiHit(ch, victim);
+        break; // Only attack one target per pulse
+      }
+      // If we started fighting, skip wandering
+      if (ch.position === Position.FIGHTING) continue;
+    }
+
+    // ---- Wandering behavior ----
+    // Mobs without ACT_SENTINEL have a 10% chance to move randomly
+    if (!(ch.act & ACT_SENTINEL)) {
+      if (Math.random() < 0.10) {
+        // Collect available exits
+        const availableDirs: Direction[] = [];
+        for (let dir = 0; dir < 6; dir++) {
+          const exit = room.exits[dir as keyof typeof room.exits];
+          if (exit && !(exit.exitInfo & 1)) {
+            // Check that the destination room exists
+            const destRoom = world.getRoom(exit.toVnum);
+            if (destRoom) {
+              availableDirs.push(dir as Direction);
+            }
+          }
+        }
+
+        if (availableDirs.length > 0) {
+          const dir = availableDirs[Math.floor(Math.random() * availableDirs.length)];
+          const exit = room.exits[dir as keyof typeof room.exits];
+          if (exit) {
+            const DIRECTION_NAMES = ['north', 'east', 'south', 'west', 'up', 'down'];
+            act(`$n leaves ${DIRECTION_NAMES[dir]}.`, ch, null, null, TO_ROOM);
+            charFromRoom(ch);
+            charToRoom(ch, exit.toVnum);
+            act('$n has arrived.', ch, null, null, TO_ROOM);
+          }
+        }
+      }
+    }
+  }
 }
 
 // ============================================================================

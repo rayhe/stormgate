@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import type { GameConnection, ConnectionState } from "../core/connection";
 import { connect } from "../core/connection";
+import { useGameState } from "../core/gameState";
+import { CombatOverlay } from "./CombatOverlay";
 
 // ANSI color map matching Stormgate's colors.h
 // These are the standard 16-color ANSI codes the MUD server sends
@@ -82,50 +84,9 @@ export function Terminal() {
   const inputRef = useRef<HTMLInputElement>(null);
   const maxLines = 500;
 
-  useEffect(() => {
-    let mounted = true;
+  const { dispatch, setSendCommand } = useGameState();
 
-    connect()
-      .then((conn) => {
-        if (!mounted) {
-          conn.disconnect();
-          return;
-        }
-        connRef.current = conn;
-
-        conn.onStateChange((state) => {
-          if (mounted) setConnState(state);
-        });
-
-        conn.onData((data) => {
-          if (!mounted) return;
-          const incoming = data.split("\n").map((line) => ({
-            id: lineCounter++,
-            spans: parseAnsi(line),
-          }));
-          setLines((prev) => {
-            const next = [...prev, ...incoming];
-            return next.length > maxLines ? next.slice(-maxLines) : next;
-          });
-        });
-      })
-      .catch((err) => {
-        console.error("Connection failed:", err);
-      });
-
-    return () => {
-      mounted = false;
-      connRef.current?.disconnect();
-    };
-  }, []);
-
-  // Auto-scroll to bottom on new output
-  useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-    }
-  }, [lines]);
-
+  // Wrap sendCommand so it can be shared via context
   const sendCommand = useCallback(
     (cmd: string) => {
       if (!connRef.current) return;
@@ -143,8 +104,64 @@ export function Terminal() {
       setHistoryIndex(-1);
       setInput("");
     },
-    []
+    [],
   );
+
+  // Register the send function into the game state context
+  useEffect(() => {
+    setSendCommand(sendCommand);
+  }, [sendCommand, setSendCommand]);
+
+  useEffect(() => {
+    let mounted = true;
+
+    connect()
+      .then((conn) => {
+        if (!mounted) {
+          conn.disconnect();
+          return;
+        }
+        connRef.current = conn;
+
+        conn.onStateChange((state) => {
+          if (mounted) setConnState(state);
+        });
+
+        // Handle raw text data for the terminal
+        conn.onData((data) => {
+          if (!mounted) return;
+          const incoming = data.split("\n").map((line) => ({
+            id: lineCounter++,
+            spans: parseAnsi(line),
+          }));
+          setLines((prev) => {
+            const next = [...prev, ...incoming];
+            return next.length > maxLines ? next.slice(-maxLines) : next;
+          });
+        });
+
+        // Handle structured JSON messages for the game state panels
+        conn.onMessage((msg) => {
+          if (!mounted) return;
+          dispatch(msg);
+        });
+      })
+      .catch((err) => {
+        console.error("Connection failed:", err);
+      });
+
+    return () => {
+      mounted = false;
+      connRef.current?.disconnect();
+    };
+  }, [dispatch]);
+
+  // Auto-scroll to bottom on new output
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [lines]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
@@ -193,6 +210,7 @@ export function Terminal() {
               : "Disconnected"}
         </span>
       </div>
+      <CombatOverlay />
       <div ref={scrollRef} style={styles.output}>
         {lines.map((line) => (
           <div key={line.id} style={styles.line}>
@@ -235,7 +253,8 @@ const styles: Record<string, React.CSSProperties> = {
   container: {
     display: "flex",
     flexDirection: "column",
-    height: "100vh",
+    flex: 1,
+    minHeight: 0,
     backgroundColor: "#0a0a0f",
     fontFamily: "'Courier New', Courier, monospace",
     fontSize: "14px",
@@ -253,6 +272,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: "8px 12px",
     whiteSpace: "pre-wrap",
     wordBreak: "break-word",
+    minHeight: 0,
   },
   line: {
     minHeight: "1.3em",

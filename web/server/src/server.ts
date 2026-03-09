@@ -9,11 +9,23 @@ import { URL } from "url";
 import {
   world,
   interpret,
+  charToRoom,
+  charFromRoom,
   registerConnection,
   unregisterConnection,
   sendToChar,
   startGameLoop,
   stopGameLoop,
+  initSaveSystem,
+  initAdminSystem,
+  setCharOwnerMap,
+  saveCharacter,
+  loadCharacter,
+  listCharacters,
+  startAutoSave,
+  stopAutoSave,
+  saveAllCharacters,
+  charOwnerMap,
   type CharData,
   type PcData,
   Position,
@@ -36,6 +48,22 @@ if (existsSync(serviceAccountPath)) {
 
 const auth = getAuth();
 const db = getFirestore();
+
+// ─── Initialize persistence and admin systems ─────────────────────────
+
+initSaveSystem(db);
+initAdminSystem(db);
+setCharOwnerMap(charOwnerMap);
+
+// ─── Class name lookup (for character selection menu) ─────────────────
+
+const CLASS_NAMES: Record<number, string> = {
+  0: "Mage", 1: "Cleric", 2: "Thief", 3: "Warrior", 4: "Psionicist",
+  5: "Druid", 6: "Ranger", 7: "Paladin", 8: "Bard", 9: "Vampire",
+  10: "Werewolf", 11: "Anti-Paladin", 12: "Assassin", 13: "Monk",
+  14: "Barbarian", 15: "Illusionist", 16: "Necromancer", 17: "Demonologist",
+  18: "Shaman", 19: "Darkpriest",
+};
 
 // ─── Boot the Game World ──────────────────────────────────────────────
 
@@ -158,46 +186,29 @@ interface ConnectedClient {
   uid: string;
   email: string;
   displayName: string;
-  character: CharData;
+  character: CharData | null;
+  state: "selecting" | "playing";
 }
 
 const clients = new Map<WebSocket, ConnectedClient>();
 
-wss.on("connection", async (ws, req) => {
-  const url = new URL(req.url || "/", `http://${req.headers.host}`);
-  const token = url.searchParams.get("token");
+// ─── Helper: send raw text to a WebSocket ─────────────────────────────
 
-  if (!token) {
-    ws.close(4001, "Missing auth token");
-    return;
+function wsSend(ws: WebSocket, text: string): void {
+  if (ws.readyState === WebSocket.OPEN) {
+    ws.send(text);
   }
+}
 
-  let decoded;
-  try {
-    decoded = await auth.verifyIdToken(token);
-  } catch {
-    ws.close(4003, "Invalid auth token");
-    return;
-  }
+// ─── Helper: create a fresh character for a new player ────────────────
 
-  // Ensure user doc exists
-  const userRef = db.collection("users").doc(decoded.uid);
-  const userSnap = await userRef.get();
-  if (!userSnap.exists) {
-    await userRef.set({
-      email: decoded.email || "",
-      displayName: decoded.name || decoded.email || decoded.uid,
-      role: "player",
-      createdAt: new Date(),
-      lastLogin: new Date(),
-      characterIds: [],
-    });
-  } else {
-    await userRef.update({ lastLogin: new Date() });
-  }
-
-  // Create a character for this session
-  const charName = decoded.name || decoded.email?.split("@")[0] || "Adventurer";
+function createNewCharacter(
+  ws: WebSocket,
+  uid: string,
+  displayName: string,
+  email: string
+): CharData {
+  const charName = displayName || email?.split("@")[0] || "Adventurer";
   const charId = world.nextId();
 
   const pcdata: PcData = {
@@ -231,13 +242,15 @@ wss.on("connection", async (ws, req) => {
     mobkills: 0,
     corpses: 0,
     plan: "",
-    email: decoded.email || "",
+    email: email || "",
     awins: 0,
     alosses: 0,
     aliases: new Map(),
-    spell1: 0,
-    spell2: 0,
-    spell3: 0,
+    spellSlots: {
+      spell1: 0,
+      spell2: 0,
+      spell3: 0,
+    },
     craftTimer: 0,
     craftType: 0,
   };
@@ -284,7 +297,7 @@ wss.on("connection", async (ws, req) => {
     language: new Array(27).fill(0),
     speaking: 0,
     size: 2,
-    pkill: false,
+    pkill: 0,
     shields: 0,
     questpoints: 0,
     nextquest: 0,
@@ -305,58 +318,246 @@ wss.on("connection", async (ws, req) => {
     carryNumber: 0,
     deleted: false,
     isNpc: false,
-    roomVnum: 25000, // Temple recall
-    pcdata,
-    equipment: new Map(),
-    inventory: [],
-    fighting: null,
   };
 
   // Place character in the world
   world.characters.set(charId, character);
+  world.pcData.set(charId, pcdata);
 
-  // If start room doesn't exist, use first available room
-  if (!world.rooms.has(character.roomVnum)) {
-    const firstRoom = world.rooms.keys().next().value;
-    if (firstRoom !== undefined) {
-      character.roomVnum = firstRoom;
-    }
-  }
+  // Determine starting room
+  const startVnum = 25000;
+  const targetRoom = world.getRoom(startVnum);
+  const roomVnum = targetRoom
+    ? startVnum
+    : world.rooms.keys().next().value ?? 2;
+  charToRoom(character, roomVnum);
 
-  // Register WebSocket connection for output
-  registerConnection(charId, (text: string) => {
-    if (ws.readyState === WebSocket.OPEN) {
-      ws.send(text);
-    }
+  // Track ownership for save system
+  charOwnerMap.set(charId, uid);
+
+  // Do an initial save so the character shows up in future listings
+  saveCharacter(character, uid).catch((err) => {
+    console.error(`Failed to save new character ${charName}:`, err);
   });
 
-  const client: ConnectedClient = {
-    ws,
-    uid: decoded.uid,
-    email: decoded.email || "",
-    displayName: charName,
-    character,
-  };
+  return character;
+}
 
-  clients.set(ws, client);
-  console.log(`[+] ${charName} (${decoded.uid}) connected`);
+// ─── Helper: enter the game with a character ──────────────────────────
+
+function enterGame(client: ConnectedClient, character: CharData): void {
+  client.character = character;
+  client.state = "playing";
+
+  // Register WebSocket connection for output
+  registerConnection(character.id, (text: string) => {
+    wsSend(client.ws, text);
+  });
+
+  console.log(`[+] ${character.name} (${client.uid}) entered the game`);
 
   // Send welcome and initial look
   sendToChar(character, "\n\x1b[1;36m   Welcome to Stormgate!\x1b[0m\n\n");
   interpret(character, "look");
+}
 
-  // Handle incoming commands
-  ws.on("message", (data) => {
+// ─── WebSocket connection handler ─────────────────────────────────────
+
+wss.on("connection", async (ws, req) => {
+  const url = new URL(req.url || "/", `http://${req.headers.host}`);
+  const token = url.searchParams.get("token");
+
+  if (!token) {
+    ws.close(4001, "Missing auth token");
+    return;
+  }
+
+  let decoded;
+  try {
+    decoded = await auth.verifyIdToken(token);
+  } catch {
+    ws.close(4003, "Invalid auth token");
+    return;
+  }
+
+  // Ensure user doc exists
+  const userRef = db.collection("users").doc(decoded.uid);
+  const userSnap = await userRef.get();
+  if (!userSnap.exists) {
+    await userRef.set({
+      email: decoded.email || "",
+      displayName: decoded.name || decoded.email || decoded.uid,
+      role: "player",
+      createdAt: new Date(),
+      lastLogin: new Date(),
+      characterIds: [],
+    });
+  } else {
+    await userRef.update({ lastLogin: new Date() });
+  }
+
+  const displayName =
+    decoded.name || decoded.email?.split("@")[0] || "Adventurer";
+
+  // Create the client in 'selecting' state
+  const client: ConnectedClient = {
+    ws,
+    uid: decoded.uid,
+    email: decoded.email || "",
+    displayName,
+    character: null,
+    state: "selecting",
+  };
+
+  clients.set(ws, client);
+  console.log(`[ws] ${displayName} (${decoded.uid}) connected, checking characters...`);
+
+  // Check for existing characters
+  let savedChars: Array<{ id: string; name: string; level: number; class: number }>;
+  try {
+    savedChars = await listCharacters(decoded.uid);
+  } catch (err) {
+    console.error("Failed to list characters:", err);
+    savedChars = [];
+  }
+
+  if (savedChars.length === 0) {
+    // No saved characters — create one automatically
+    const character = createNewCharacter(
+      ws,
+      decoded.uid,
+      displayName,
+      decoded.email || ""
+    );
+    enterGame(client, character);
+  } else {
+    // Show character selection menu
+    let menu = "\n\x1b[1;36m   Welcome to Stormgate!\x1b[0m\n\n";
+    menu += "\x1b[1;33mSelect a character:\x1b[0m\r\n\r\n";
+
+    for (let i = 0; i < savedChars.length; i++) {
+      const sc = savedChars[i];
+      const className = CLASS_NAMES[sc.class] ?? "Unknown";
+      menu += `  \x1b[1;37m${i + 1}\x1b[0m. ${sc.name} (Level ${sc.level} ${className})\r\n`;
+    }
+
+    menu += `  \x1b[1;37m${savedChars.length + 1}\x1b[0m. Create new character\r\n`;
+    menu += "\r\nEnter your choice: ";
+
+    wsSend(ws, menu);
+
+    // Store the saved character list for the selection handler
+    (client as any)._savedChars = savedChars;
+  }
+
+  // Handle incoming messages
+  ws.on("message", async (data) => {
     const message = data.toString().trim();
     if (!message) return;
-    interpret(character, message);
+
+    const currentClient = clients.get(ws);
+    if (!currentClient) return;
+
+    if (currentClient.state === "selecting") {
+      // Handle character selection
+      const savedChars: Array<{
+        id: string;
+        name: string;
+        level: number;
+        class: number;
+      }> = (currentClient as any)._savedChars || [];
+
+      const choice = parseInt(message, 10);
+
+      if (isNaN(choice) || choice < 1 || choice > savedChars.length + 1) {
+        wsSend(ws, "Invalid choice. Please enter a number.\r\nEnter your choice: ");
+        return;
+      }
+
+      if (choice === savedChars.length + 1) {
+        // Create new character
+        const character = createNewCharacter(
+          ws,
+          currentClient.uid,
+          currentClient.displayName,
+          currentClient.email
+        );
+        delete (currentClient as any)._savedChars;
+        enterGame(currentClient, character);
+        return;
+      }
+
+      // Load the selected character
+      const selected = savedChars[choice - 1];
+      wsSend(ws, `\r\nLoading ${selected.name}...\r\n`);
+
+      try {
+        const loaded = await loadCharacter(selected.id);
+        if (!loaded) {
+          wsSend(ws, "\x1b[1;31mFailed to load character. Creating a new one...\x1b[0m\r\n");
+          const character = createNewCharacter(
+            ws,
+            currentClient.uid,
+            currentClient.displayName,
+            currentClient.email
+          );
+          delete (currentClient as any)._savedChars;
+          enterGame(currentClient, character);
+          return;
+        }
+
+        // Track ownership
+        charOwnerMap.set(loaded.char.id, currentClient.uid);
+
+        delete (currentClient as any)._savedChars;
+        enterGame(currentClient, loaded.char);
+      } catch (err) {
+        console.error(`Failed to load character ${selected.id}:`, err);
+        wsSend(ws, "\x1b[1;31mError loading character. Creating a new one...\x1b[0m\r\n");
+        const character = createNewCharacter(
+          ws,
+          currentClient.uid,
+          currentClient.displayName,
+          currentClient.email
+        );
+        delete (currentClient as any)._savedChars;
+        enterGame(currentClient, character);
+      }
+    } else {
+      // Normal gameplay — dispatch to interpreter
+      if (currentClient.character) {
+        interpret(currentClient.character, message);
+      }
+    }
   });
 
-  ws.on("close", () => {
-    unregisterConnection(charId);
-    world.characters.delete(charId);
+  ws.on("close", async () => {
+    const closingClient = clients.get(ws);
+    if (closingClient?.character) {
+      const ch = closingClient.character;
+
+      // Save before removing
+      const uid = charOwnerMap.get(ch.id);
+      if (uid) {
+        try {
+          await saveCharacter(ch, uid);
+          console.log(`[save] ${ch.name} saved on disconnect.`);
+        } catch (err) {
+          console.error(`Failed to save ${ch.name} on disconnect:`, err);
+        }
+      }
+
+      unregisterConnection(ch.id);
+      charFromRoom(ch);
+      ch.deleted = true;
+      world.characters.delete(ch.id);
+      world.pcData.delete(ch.id);
+      charOwnerMap.delete(ch.id);
+      console.log(`[-] ${ch.name} disconnected`);
+    } else {
+      console.log(`[-] ${closingClient?.displayName ?? "Unknown"} disconnected (no character)`);
+    }
     clients.delete(ws);
-    console.log(`[-] ${charName} disconnected`);
   });
 });
 
@@ -367,6 +568,7 @@ const PORT = parseInt(process.env.PORT || "3000", 10);
 bootWorld()
   .then(() => {
     startGameLoop();
+    startAutoSave();
     server.listen(PORT, () => {
       console.log(`Stormgate server listening on port ${PORT}`);
     });
@@ -377,14 +579,26 @@ bootWorld()
   });
 
 // Graceful shutdown
-process.on("SIGINT", () => {
+process.on("SIGINT", async () => {
   console.log("\nShutting down...");
   stopGameLoop();
+  stopAutoSave();
+
+  // Save all characters before shutting down
+  try {
+    await saveAllCharacters();
+    console.log("[shutdown] All characters saved.");
+  } catch (err) {
+    console.error("[shutdown] Error saving characters:", err);
+  }
+
   for (const client of clients.values()) {
-    sendToChar(
-      client.character,
-      "\n\x1b[1;31mServer shutting down. Goodbye!\x1b[0m\n"
-    );
+    if (client.character) {
+      sendToChar(
+        client.character,
+        "\n\x1b[1;31mServer shutting down. Your character has been saved. Goodbye!\x1b[0m\n"
+      );
+    }
     client.ws.close();
   }
   server.close();

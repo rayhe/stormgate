@@ -12,4 +12,21 @@ export * from './types.js';
 export * from './handler.js';
 export * from './output.js';
 export * from './commands.js';
+export * from './fight.js';
 export { startGameLoop, stopGameLoop } from './update.js';
+export * from './protocol.js';
+export {
+  initSaveSystem,
+  saveCharacter,
+  loadCharacter,
+  listCharacters,
+  startAutoSave,
+  stopAutoSave,
+  saveAllCharacters,
+  charOwnerMap,
+} from './save.js';
+export {
+  initAdminSystem,
+  setCharOwnerMap,
+  adminCommands,
+} from './admin.js';

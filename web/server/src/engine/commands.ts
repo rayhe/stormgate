@@ -55,11 +55,34 @@ import {
   TO_NOTVICT,
 } from './output.js';
 
+import {
+  setFighting,
+  stopFighting,
+  multiHit,
+  doConsider,
+  doWimpy,
+  doRest,
+  doSleep,
+  doWake,
+  doStand,
+} from './fight.js';
+
+import { adminCommands } from './admin.js';
+import { saveCharacter, charOwnerMap } from './save.js';
+
+import {
+  sendVitals,
+  sendRoomData,
+  sendChannelMessage,
+  sendCharInfo,
+  sendWhoList,
+} from './protocol.js';
+
 // ============================================================================
 //  Command entry interface
 // ============================================================================
 
-interface CommandEntry {
+export interface CommandEntry {
   name: string;
   fn: (ch: CharData, argument: string) => void;
   minPosition: Position;
@@ -143,7 +166,7 @@ const REVERSE_DIR: Record<number, number> = {
 //  The command table
 // ============================================================================
 
-const commandTable: CommandEntry[] = [
+export const commandTable: CommandEntry[] = [
   // Movement — ordered first so single-letter shortcuts work
   { name: 'north',     fn: doNorth,     minPosition: Position.GHOST,    minLevel: 0, log: 0 },
   { name: 'east',      fn: doEast,      minPosition: Position.GHOST,    minLevel: 0, log: 0 },
@@ -180,8 +203,19 @@ const commandTable: CommandEntry[] = [
   { name: 'recall',    fn: doRecall,    minPosition: Position.GHOST,    minLevel: 0, log: 0 },
 
   // Combat
-  { name: 'kill',      fn: doKill,      minPosition: Position.FIGHTING, minLevel: 0, log: 0 },
-  { name: 'flee',      fn: doFlee,      minPosition: Position.FIGHTING, minLevel: 0, log: 0 },
+  { name: 'kill',      fn: doKill,      minPosition: Position.STANDING,  minLevel: 0, log: 0 },
+  { name: 'flee',      fn: doFlee,      minPosition: Position.FIGHTING,  minLevel: 0, log: 0 },
+  { name: 'consider',  fn: doConsiderCmd, minPosition: Position.RESTING, minLevel: 0, log: 0 },
+  { name: 'wimpy',     fn: doWimpyCmd,  minPosition: Position.DEAD,      minLevel: 0, log: 0 },
+
+  // Position
+  { name: 'rest',      fn: doRestCmd,   minPosition: Position.RESTING,   minLevel: 0, log: 0 },
+  { name: 'sleep',     fn: doSleepCmd,  minPosition: Position.RESTING,   minLevel: 0, log: 0 },
+  { name: 'stand',     fn: doStandCmd,  minPosition: Position.SLEEPING,  minLevel: 0, log: 0 },
+  { name: 'wake',      fn: doWakeCmd,   minPosition: Position.SLEEPING,  minLevel: 0, log: 0 },
+
+  // Admin / Immortal / Builder commands (appended from admin.ts)
+  ...adminCommands,
 ];
 
 // ============================================================================
@@ -331,7 +365,7 @@ function moveChar(ch: CharData, dir: Direction): void {
   // Announce arrival
   act('$n has arrived.', ch, null, null, TO_ROOM);
 
-  // Show the new room
+  // Show the new room (this also sends sendRoomData and sendVitals)
   doLook(ch, '');
 }
 
@@ -402,6 +436,10 @@ function doLook(ch: CharData, argument: string): void {
   }
 
   sendToChar(ch, buf);
+
+  // Send structured data for rich UI panels
+  sendRoomData(ch, room);
+  sendVitals(ch);
 }
 
 /**
@@ -583,6 +621,10 @@ function doScore(ch: CharData, _argument: string): void {
 
   buf += `${colors.brightCyan}+------------------------------------------------------+${colors.reset}\r\n`;
   sendToChar(ch, buf);
+
+  // Send structured data for rich UI panels
+  sendCharInfo(ch);
+  sendVitals(ch);
 }
 
 /**
@@ -619,6 +661,9 @@ function doWho(ch: CharData, _argument: string): void {
 
   buf += `\r\n${colors.brightCyan}${count} player${count !== 1 ? 's' : ''} online.${colors.reset}\r\n`;
   sendToChar(ch, buf);
+
+  // Send structured who list for UI panel
+  sendWhoList(ch);
 }
 
 /**
@@ -679,6 +724,18 @@ function doSay(ch: CharData, argument: string): void {
 
   sendToChar(ch, `${colors.green}You say '${argument}'${colors.reset}\r\n`);
   act(`${colors.green}$n says '${argument}'${colors.reset}`, ch, null, null, TO_ROOM);
+
+  // Send structured channel message to the speaker
+  sendChannelMessage(ch, 'say', ch.name, argument);
+
+  // Send structured channel message to others in the room
+  const sayRoomVnum = getCharRoom(ch);
+  if (sayRoomVnum !== -1) {
+    for (const other of world.getCharsInRoom(sayRoomVnum)) {
+      if (other.id === ch.id || other.isNpc) continue;
+      sendChannelMessage(other, 'say', ch.name, argument);
+    }
+  }
 }
 
 /**
@@ -725,6 +782,10 @@ function doTell(ch: CharData, argument: string): void {
 
   sendToChar(ch, `${colors.magenta}You tell ${victim.name} '${message}'${colors.reset}\r\n`);
   sendToChar(victim, `${colors.magenta}${ch.name} tells you '${message}'${colors.reset}\r\n`);
+
+  // Send structured channel messages
+  sendChannelMessage(ch, 'tell', ch.name, `(to ${victim.name}) ${message}`);
+  sendChannelMessage(victim, 'tell', ch.name, message);
 }
 
 /**
@@ -738,10 +799,16 @@ function doShout(ch: CharData, argument: string): void {
 
   sendToChar(ch, `${colors.brightYellow}You shout '${argument}'${colors.reset}\r\n`);
 
+  // Send structured channel message to the shouter
+  sendChannelMessage(ch, 'shout', ch.name, argument);
+
   for (const other of world.characters.values()) {
     if (other.isNpc || other.deleted || other.id === ch.id) continue;
     if (!hasConnection(other.id)) continue;
     sendToChar(other, `${colors.brightYellow}${ch.name} shouts '${argument}'${colors.reset}\r\n`);
+
+    // Send structured channel message to listeners
+    sendChannelMessage(other, 'shout', ch.name, argument);
   }
 }
 
@@ -756,6 +823,9 @@ function doChat(ch: CharData, argument: string): void {
 
   sendToChar(ch, `${colors.brightMagenta}[Chat] You: ${argument}${colors.reset}\r\n`);
 
+  // Send structured channel message to the chatter
+  sendChannelMessage(ch, 'chat', ch.name, argument);
+
   for (const other of world.characters.values()) {
     if (other.isNpc || other.deleted || other.id === ch.id) continue;
     if (!hasConnection(other.id)) continue;
@@ -763,6 +833,9 @@ function doChat(ch: CharData, argument: string): void {
       other,
       `${colors.brightMagenta}[Chat] ${ch.name}: ${argument}${colors.reset}\r\n`
     );
+
+    // Send structured channel message to listeners
+    sendChannelMessage(other, 'chat', ch.name, argument);
   }
 }
 
@@ -1055,7 +1128,7 @@ function doGive(ch: CharData, argument: string): void {
 // ============================================================================
 
 /**
- * doQuit — Disconnect the player.
+ * doQuit — Save the character and disconnect the player.
  */
 function doQuit(ch: CharData, _argument: string): void {
   if (ch.isNpc) {
@@ -1068,23 +1141,46 @@ function doQuit(ch: CharData, _argument: string): void {
     return;
   }
 
-  sendToChar(ch, "Alas, all adventures must come to an end.\r\n");
+  // Save before quitting
+  const uid = charOwnerMap.get(ch.id);
+  if (uid) {
+    saveCharacter(ch, uid).catch((err: unknown) => {
+      console.error(`doQuit: failed to save ${ch.name}:`, err);
+    });
+  }
+
+  sendToChar(ch, "Your character has been saved. Alas, all adventures must come to an end.\r\n");
   act('$n has left the game.', ch, null, null, TO_ROOM);
 
   // Remove from world
   charFromRoom(ch);
   ch.deleted = true;
   world.characters.delete(ch.id);
+  world.pcData.delete(ch.id);
+  charOwnerMap.delete(ch.id);
   unregisterConnection(ch.id);
 }
 
 /**
- * doSave — Save character to persistent store.
+ * doSave — Save character to Firestore.
  */
 function doSave(ch: CharData, _argument: string): void {
   if (ch.isNpc) return;
-  sendToChar(ch, `${colors.brightGreen}Character saved.${colors.reset}\r\n`);
-  // TODO: Actually save to Firestore
+
+  const uid = charOwnerMap.get(ch.id);
+  if (!uid) {
+    sendToChar(ch, `${colors.brightRed}Error: no account linked. Contact an admin.${colors.reset}\r\n`);
+    return;
+  }
+
+  saveCharacter(ch, uid)
+    .then(() => {
+      sendToChar(ch, `${colors.brightGreen}Character saved.${colors.reset}\r\n`);
+    })
+    .catch((err: unknown) => {
+      console.error(`doSave: failed to save ${ch.name}:`, err);
+      sendToChar(ch, `${colors.brightRed}Save failed. Please try again.${colors.reset}\r\n`);
+    });
 }
 
 /**
@@ -1123,15 +1219,20 @@ function doRecall(ch: CharData, _argument: string): void {
 }
 
 // ============================================================================
-//  Combat commands (stubs)
+//  Combat commands
 // ============================================================================
 
 /**
- * doKill — Initiate combat (stub).
+ * doKill — Initiate combat with an NPC.
  */
 function doKill(ch: CharData, argument: string): void {
   if (!argument) {
     sendToChar(ch, "Kill whom?\r\n");
+    return;
+  }
+
+  if (ch.position === Position.FIGHTING) {
+    sendToChar(ch, "You are already fighting!\r\n");
     return;
   }
 
@@ -1146,12 +1247,20 @@ function doKill(ch: CharData, argument: string): void {
         return;
       }
 
+      if (isImmortal(victim)) {
+        sendToChar(ch, "You can't attack them.\r\n");
+        return;
+      }
+
       sendToChar(ch, `${colors.brightRed}You attack ${victim.shortDescr}!${colors.reset}\r\n`);
       act('$n attacks $N!', ch, null, victim, TO_NOTVICT);
       sendToChar(victim, `${colors.brightRed}${ch.name} attacks you!${colors.reset}\r\n`);
-      ch.position = Position.FIGHTING;
-      // TODO: Implement full combat system
-      sendToChar(ch, `${colors.yellow}[Combat system coming soon]${colors.reset}\r\n`);
+
+      // Initiate combat
+      setFighting(ch, victim);
+
+      // Perform the first round of attacks immediately
+      multiHit(ch, victim);
       return;
     }
   }
@@ -1160,7 +1269,7 @@ function doKill(ch: CharData, argument: string): void {
 }
 
 /**
- * doFlee — Leave combat (stub).
+ * doFlee — Attempt to flee from combat.
  */
 function doFlee(ch: CharData, _argument: string): void {
   if (ch.position !== Position.FIGHTING) {
@@ -1172,7 +1281,7 @@ function doFlee(ch: CharData, _argument: string): void {
   const roomVnum = getCharRoom(ch);
   const room = world.getRoom(roomVnum);
   if (!room) {
-    sendToChar(ch, "PANIC! You couldn't escape!\r\n");
+    sendToChar(ch, `${colors.brightRed}PANIC! You couldn't escape!${colors.reset}\r\n`);
     return;
   }
 
@@ -1185,15 +1294,88 @@ function doFlee(ch: CharData, _argument: string): void {
   }
 
   if (availableDirs.length === 0) {
-    sendToChar(ch, "PANIC! You couldn't escape!\r\n");
+    sendToChar(ch, `${colors.brightRed}PANIC! You couldn't escape!${colors.reset}\r\n`);
+    return;
+  }
+
+  // 75% chance of success
+  if (Math.random() > 0.75) {
+    sendToChar(ch, `${colors.brightRed}PANIC! You couldn't escape!${colors.reset}\r\n`);
     return;
   }
 
   const dir = availableDirs[Math.floor(Math.random() * availableDirs.length)];
-  ch.position = Position.STANDING;
-  sendToChar(ch, `${colors.brightYellow}You flee from combat!${colors.reset}\r\n`);
+  const exit = room.exits[dir as keyof typeof room.exits];
+  if (!exit) return;
+
+  const toRoom = world.getRoom(exit.toVnum);
+  if (!toRoom) {
+    sendToChar(ch, `${colors.brightRed}PANIC! You couldn't escape!${colors.reset}\r\n`);
+    return;
+  }
+
+  // XP loss for fleeing
+  const xpLoss = Math.floor(ch.level * 5);
+  if (!ch.isNpc) {
+    ch.exp = Math.max(0, ch.exp - xpLoss);
+    sendToChar(ch, `${colors.yellow}You lose ${xpLoss} experience points for fleeing.${colors.reset}\r\n`);
+  }
+
+  // Stop fighting
+  stopFighting(ch);
+
+  // Move
+  const DIRECTION_LABELS = ['north', 'east', 'south', 'west', 'up', 'down'];
+  sendToChar(ch, `${colors.brightYellow}You flee ${DIRECTION_LABELS[dir]} from combat!${colors.reset}\r\n`);
   act('$n has fled!', ch, null, null, TO_ROOM);
-  moveChar(ch, dir);
+  charFromRoom(ch);
+  charToRoom(ch, exit.toVnum);
+  act('$n arrives in a panic!', ch, null, null, TO_ROOM);
+
+  // Show the new room
+  doLook(ch, '');
+}
+
+/**
+ * Wrapper for the consider command from fight.ts.
+ */
+function doConsiderCmd(ch: CharData, argument: string): void {
+  doConsider(ch, argument);
+}
+
+/**
+ * Wrapper for the wimpy command from fight.ts.
+ */
+function doWimpyCmd(ch: CharData, argument: string): void {
+  doWimpy(ch, argument);
+}
+
+/**
+ * Wrapper for the rest command from fight.ts.
+ */
+function doRestCmd(ch: CharData, argument: string): void {
+  doRest(ch, argument);
+}
+
+/**
+ * Wrapper for the sleep command from fight.ts.
+ */
+function doSleepCmd(ch: CharData, argument: string): void {
+  doSleep(ch, argument);
+}
+
+/**
+ * Wrapper for the stand command from fight.ts.
+ */
+function doStandCmd(ch: CharData, argument: string): void {
+  doStand(ch, argument);
+}
+
+/**
+ * Wrapper for the wake command from fight.ts.
+ */
+function doWakeCmd(ch: CharData, argument: string): void {
+  doWake(ch, argument);
 }
 
 /**
@@ -1221,11 +1403,26 @@ function doHelp(ch: CharData, argument: string): void {
     'Communication': ['say', 'tell', 'shout', 'chat'],
     'Objects': ['get', 'drop', 'wear', 'remove', 'give'],
     'Actions': ['quit', 'save', 'recall'],
-    'Combat': ['kill', 'flee'],
+    'Combat': ['kill', 'flee', 'consider', 'wimpy'],
+    'Position': ['rest', 'sleep', 'stand', 'wake'],
   };
 
   for (const [category, cmds] of Object.entries(categories)) {
     buf += `  ${colors.brightYellow}${category}:${colors.reset} ${cmds.join(', ')}\r\n`;
+  }
+
+  // Show admin/immortal/builder commands if the character qualifies
+  if (ch.level >= 106) {
+    const builderCmds = ['rstat', 'mstat', 'ostat'];
+    buf += `  ${colors.brightYellow}Builder:${colors.reset} ${builderCmds.join(', ')}\r\n`;
+  }
+  if (ch.level >= 108) {
+    const immCmds = ['goto', 'transfer', 'peace', 'slay', 'stat', 'force', 'wiznet'];
+    buf += `  ${colors.brightYellow}Immortal:${colors.reset} ${immCmds.join(', ')}\r\n`;
+  }
+  if (ch.level >= 115) {
+    const adminCmds = ['setrole', 'advance', 'restore', 'purge'];
+    buf += `  ${colors.brightYellow}Admin:${colors.reset} ${adminCmds.join(', ')}\r\n`;
   }
 
   buf += `\r\nType ${colors.brightCyan}help <command>${colors.reset} for more information on a specific command.\r\n`;

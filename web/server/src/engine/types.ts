@@ -643,6 +643,9 @@ export interface CharData {
   carryNumber: number;
   deleted: boolean;
   isNpc: boolean;
+
+  /** Id of the character this char is currently fighting, or null if not in combat. */
+  fighting: string | null;
 }
 
 /**

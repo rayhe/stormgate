@@ -225,6 +225,7 @@ export class World {
       carryNumber: 0,
       deleted: false,
       isNpc: true,
+      fighting: null,
     };
 
     this.characters.set(id, mob);
@@ -302,7 +303,7 @@ export const world = new World();
 //  Utility
 // ============================================================================
 
-function rollDice(count: number, sides: number): number {
+export function rollDice(count: number, sides: number): number {
   if (count <= 0 || sides <= 0) return 0;
   let total = 0;
   for (let i = 0; i < count; i++) {

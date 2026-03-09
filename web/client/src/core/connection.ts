@@ -1,5 +1,6 @@
 import { WS_URL } from "./config";
 import { getIdToken } from "./auth";
+import { parseServerMessage, type GameMessage } from "./protocol";
 
 export type ConnectionState = "disconnected" | "connecting" | "connected";
 
@@ -7,6 +8,7 @@ export interface GameConnection {
   send(command: string): void;
   disconnect(): void;
   onData(callback: (data: string) => void): void;
+  onMessage(callback: (msg: GameMessage) => void): void;
   onStateChange(callback: (state: ConnectionState) => void): void;
 }
 
@@ -17,6 +19,7 @@ export async function connect(): Promise<GameConnection> {
   }
 
   const dataCallbacks: ((data: string) => void)[] = [];
+  const messageCallbacks: ((msg: GameMessage) => void)[] = [];
   const stateCallbacks: ((state: ConnectionState) => void)[] = [];
 
   let ws: WebSocket | null = null;
@@ -41,7 +44,16 @@ export async function connect(): Promise<GameConnection> {
     };
 
     ws.onmessage = (event) => {
-      dataCallbacks.forEach((cb) => cb(event.data as string));
+      const raw = event.data as string;
+      const parsed = parseServerMessage(raw);
+
+      if (parsed.type === 'text') {
+        // Raw text — pass to terminal data callbacks
+        dataCallbacks.forEach((cb) => cb(parsed.data));
+      } else {
+        // Structured message — pass to message callbacks
+        messageCallbacks.forEach((cb) => cb(parsed));
+      }
     };
 
     ws.onclose = () => {
@@ -74,6 +86,9 @@ export async function connect(): Promise<GameConnection> {
     },
     onData(callback: (data: string) => void) {
       dataCallbacks.push(callback);
+    },
+    onMessage(callback: (msg: GameMessage) => void) {
+      messageCallbacks.push(callback);
     },
     onStateChange(callback: (state: ConnectionState) => void) {
       stateCallbacks.push(callback);
