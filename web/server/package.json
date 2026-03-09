@@ -8,7 +8,8 @@
     "dev:stub": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "migrate": "tsx src/migration/migrate.ts"
+    "migrate": "tsx src/migration/migrate.ts",
+    "migrate:players": "tsx src/migration/player-migration.ts"
   },
   "dependencies": {
     "express": "^5.0.0",

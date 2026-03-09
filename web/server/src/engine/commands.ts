@@ -12,6 +12,7 @@ import type {
   CharData,
   ObjInstance,
   RoomIndex,
+  ExitData,
 } from './types.js';
 
 import {
@@ -20,6 +21,8 @@ import {
   WearLocation,
   Sex,
   ItemType,
+  SectorType,
+  CharClass,
 } from './types.js';
 
 import { world } from './world.js';
@@ -38,6 +41,7 @@ import {
   getCarriedItems,
   getEquippedItems,
   getWearSlotName,
+  getInventory,
   isImmortal,
   isName,
   capitalize,
@@ -45,11 +49,13 @@ import {
 
 import {
   sendToChar,
+  sendToRoom,
   act,
   renderPrompt,
   colors,
   hasConnection,
   unregisterConnection,
+  TO_CHAR,
   TO_ROOM,
   TO_VICT,
   TO_NOTVICT,
@@ -70,6 +76,29 @@ import {
 import { adminCommands } from './admin.js';
 import { saveCharacter, charOwnerMap } from './save.js';
 
+import { socialCommands, garbleMessage, getLanguageName } from './social.js';
+import { questCommands } from './quest.js';
+import { craftingCommands } from './crafting.js';
+import { getMagicCommands } from './magic.js';
+
+import {
+  doBuy,
+  doSell,
+  doList,
+  doValue,
+  doExamine,
+  doSacrifice,
+  doEat,
+  doDrink,
+  doFill,
+  doQuaff,
+  doRecite,
+  doBrandish,
+  doZap,
+  doGetEnhanced,
+  doHeal,
+} from './shops.js';
+
 import {
   sendVitals,
   sendRoomData,
@@ -77,6 +106,21 @@ import {
   sendCharInfo,
   sendWhoList,
 } from './protocol.js';
+
+import {
+  EX_ISDOOR,
+  EX_CLOSED,
+  EX_LOCKED,
+  EX_BASHED,
+  EX_BASHPROOF,
+  EX_PICKPROOF,
+  EX_PASSPROOF,
+  EX_HIDDEN,
+  CONT_CLOSEABLE,
+  CONT_PICKPROOF,
+  CONT_CLOSED,
+  CONT_LOCKED,
+} from './resets.js';
 
 // ============================================================================
 //  Command entry interface
@@ -191,11 +235,39 @@ export const commandTable: CommandEntry[] = [
   { name: 'chat',      fn: doChat,      minPosition: Position.DEAD,     minLevel: 0, log: 0 },
 
   // Object manipulation
-  { name: 'get',       fn: doGet,       minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'get',       fn: doGetEnhanced, minPosition: Position.RESTING,  minLevel: 0, log: 0 },
   { name: 'drop',      fn: doDrop,      minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'put',       fn: doPut,       minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'empty',     fn: doEmpty,     minPosition: Position.RESTING,  minLevel: 0, log: 0 },
   { name: 'wear',      fn: doWear,      minPosition: Position.RESTING,  minLevel: 0, log: 0 },
   { name: 'remove',    fn: doRemove,    minPosition: Position.RESTING,  minLevel: 0, log: 0 },
   { name: 'give',      fn: doGive,      minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'examine',   fn: doExamine,   minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'sacrifice', fn: doSacrifice, minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'eat',       fn: doEat,       minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'drink',     fn: doDrink,     minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'fill',      fn: doFill,      minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'quaff',     fn: doQuaff,     minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'recite',    fn: doRecite,    minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'brandish',  fn: doBrandish,  minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'zap',       fn: doZap,       minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+
+  // Shop commands
+  { name: 'buy',       fn: doBuy,       minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'sell',      fn: doSell,      minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'list',      fn: doList,      minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+  { name: 'value',     fn: doValue,     minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+
+  // Healer
+  { name: 'heal',      fn: doHeal,      minPosition: Position.RESTING,  minLevel: 0, log: 0 },
+
+  // Door commands
+  { name: 'open',      fn: doOpen,      minPosition: Position.STANDING, minLevel: 0, log: 0 },
+  { name: 'close',     fn: doClose,     minPosition: Position.STANDING, minLevel: 0, log: 0 },
+  { name: 'lock',      fn: doLock,      minPosition: Position.STANDING, minLevel: 0, log: 0 },
+  { name: 'unlock',    fn: doUnlock,    minPosition: Position.STANDING, minLevel: 0, log: 0 },
+  { name: 'pick',      fn: doPick,      minPosition: Position.STANDING, minLevel: 0, log: 0 },
+  { name: 'knock',     fn: doKnock,     minPosition: Position.STANDING, minLevel: 0, log: 0 },
 
   // Actions
   { name: 'quit',      fn: doQuit,      minPosition: Position.DEAD,     minLevel: 0, log: 0 },
@@ -216,6 +288,18 @@ export const commandTable: CommandEntry[] = [
 
   // Admin / Immortal / Builder commands (appended from admin.ts)
   ...adminCommands,
+
+  // Social systems (clan, religion, language, economy, marriage, gambling)
+  ...socialCommands,
+
+  // Quest system
+  ...questCommands,
+
+  // Crafting system
+  ...craftingCommands,
+
+  // Magic system (cast, practice, spells, skills, slist)
+  ...getMagicCommands(),
 ];
 
 // ============================================================================
@@ -322,7 +406,32 @@ function doDown(ch: CharData, _argument: string): void {
 }
 
 /**
- * Move a character in a direction. Checks for valid exit, locked doors, etc.
+ * Movement cost by sector type.
+ * Port of movement_loss[] from act_move.c.
+ */
+const MOVEMENT_COST: Record<number, number> = {
+  [SectorType.INSIDE]:       1,
+  [SectorType.CITY]:         2,
+  [SectorType.FIELD]:        2,
+  [SectorType.FOREST]:       3,
+  [SectorType.HILLS]:        4,
+  [SectorType.MOUNTAIN]:     5,
+  [SectorType.WATER_SWIM]:   4,
+  [SectorType.WATER_NOSWIM]: 1,
+  [SectorType.UNDERWATER]:   6,
+  [SectorType.AIR]:          10,
+  [SectorType.DESERT]:       6,
+  [SectorType.BADLAND]:      4,
+};
+
+/**
+ * AFF_ANTI_FLEE bitvector flag — prevents fleeing and voluntary movement.
+ */
+const AFF_ANTI_FLEE = 1 << 25;
+
+/**
+ * Move a character in a direction. Checks for valid exit, closed doors,
+ * movement points, drunk stumbling, etc. Port of move_char() from act_move.c.
  */
 function moveChar(ch: CharData, dir: Direction): void {
   const roomVnum = getCharRoom(ch);
@@ -337,6 +446,24 @@ function moveChar(ch: CharData, dir: Direction): void {
     return;
   }
 
+  // AFF_ANTI_FLEE check: blocked from voluntary movement
+  if (ch.affectedBy & AFF_ANTI_FLEE) {
+    sendToChar(ch, "You are unable to move!\r\n");
+    return;
+  }
+
+  // Drunk stumbling: if PC is drunk, random chance to go wrong direction
+  if (!ch.isNpc) {
+    const pc = world.pcData.get(ch.id);
+    if (pc && pc.condition[0] > 10 && Math.random() < 0.20) {
+      const randomDir = Math.floor(Math.random() * 6) as Direction;
+      if (randomDir !== dir) {
+        sendToChar(ch, "You stumble drunkenly and go the wrong way...\r\n");
+        dir = randomDir;
+      }
+    }
+  }
+
   const exit = room.exits[dir];
   if (!exit) {
     sendToChar(ch, "Alas, you cannot go that way.\r\n");
@@ -349,10 +476,25 @@ function moveChar(ch: CharData, dir: Direction): void {
     return;
   }
 
-  // Check for closed doors (exitInfo bit 1 = closed)
-  if (exit.exitInfo & 1) {
-    sendToChar(ch, "The door is closed.\r\n");
+  // Check for closed doors
+  if (exit.exitInfo & EX_CLOSED) {
+    const doorName = exit.keyword || 'door';
+    sendToChar(ch, `The ${doorName} is closed.\r\n`);
     return;
+  }
+
+  // Movement cost (PCs only, NPCs have unlimited movement)
+  if (!ch.isNpc) {
+    const fromCost = MOVEMENT_COST[room.sectorType] ?? 1;
+    const toCost = MOVEMENT_COST[toRoom.sectorType] ?? 1;
+    const moveCost = Math.max(1, Math.floor((fromCost + toCost) / 2));
+
+    if (ch.move < moveCost) {
+      sendToChar(ch, "You are too exhausted.\r\n");
+      return;
+    }
+
+    ch.move -= moveCost;
   }
 
   // Announce departure
@@ -522,7 +664,8 @@ function formatExits(room: RoomIndex): string {
   for (let dir = 0; dir < 6; dir++) {
     const exit = room.exits[dir as keyof typeof room.exits];
     if (exit) {
-      const closed = (exit.exitInfo & 1) ? ' (closed)' : '';
+      if (exit.exitInfo & EX_HIDDEN) continue;
+      const closed = (exit.exitInfo & EX_CLOSED) ? ' (closed)' : '';
       exitParts.push(`${DIRECTION_NAMES[dir]}${closed}`);
     }
   }
@@ -551,9 +694,10 @@ function doExits(ch: CharData, _argument: string): void {
   for (let dir = 0; dir < 6; dir++) {
     const exit = room.exits[dir as keyof typeof room.exits];
     if (exit) {
+      if (exit.exitInfo & EX_HIDDEN) continue;
       found = true;
       const toRoom = world.getRoom(exit.toVnum);
-      const closed = (exit.exitInfo & 1) ? ' (closed)' : '';
+      const closed = (exit.exitInfo & EX_CLOSED) ? ' (closed)' : '';
       const roomName = toRoom ? toRoom.name : 'unknown';
       buf += `  ${capitalize(DIRECTION_NAMES[dir])}${closed} - ${roomName}\r\n`;
     }
@@ -714,7 +858,7 @@ function doEquipment(ch: CharData, _argument: string): void {
 // ============================================================================
 
 /**
- * doSay — Broadcast message to current room.
+ * doSay -- Broadcast message to current room, garbled by language.
  */
 function doSay(ch: CharData, argument: string): void {
   if (!argument) {
@@ -722,18 +866,20 @@ function doSay(ch: CharData, argument: string): void {
     return;
   }
 
-  sendToChar(ch, `${colors.green}You say '${argument}'${colors.reset}\r\n`);
-  act(`${colors.green}$n says '${argument}'${colors.reset}`, ch, null, null, TO_ROOM);
+  const langName = getLanguageName(ch.speaking);
+  sendToChar(ch, `${colors.green}You say (in ${langName}) '${argument}'${colors.reset}\r\n`);
 
   // Send structured channel message to the speaker
   sendChannelMessage(ch, 'say', ch.name, argument);
 
-  // Send structured channel message to others in the room
+  // Send to others in the room, garbled by language proficiency
   const sayRoomVnum = getCharRoom(ch);
   if (sayRoomVnum !== -1) {
     for (const other of world.getCharsInRoom(sayRoomVnum)) {
       if (other.id === ch.id || other.isNpc) continue;
-      sendChannelMessage(other, 'say', ch.name, argument);
+      const garbled = garbleMessage(ch, other, argument);
+      sendToChar(other, `${colors.green}${ch.name} says (in ${langName}) '${garbled}'${colors.reset}\r\n`);
+      sendChannelMessage(other, 'say', ch.name, garbled);
     }
   }
 }
@@ -781,7 +927,8 @@ function doTell(ch: CharData, argument: string): void {
   }
 
   sendToChar(ch, `${colors.magenta}You tell ${victim.name} '${message}'${colors.reset}\r\n`);
-  sendToChar(victim, `${colors.magenta}${ch.name} tells you '${message}'${colors.reset}\r\n`);
+  const garbled = garbleMessage(ch, victim, message);
+  sendToChar(victim, `${colors.magenta}${ch.name} tells you '${garbled}'${colors.reset}\r\n`);
 
   // Send structured channel messages
   sendChannelMessage(ch, 'tell', ch.name, `(to ${victim.name}) ${message}`);
@@ -789,7 +936,7 @@ function doTell(ch: CharData, argument: string): void {
 }
 
 /**
- * doShout — Broadcast to all connected players with [Shout] prefix.
+ * doShout -- Broadcast to all connected players, garbled by language.
  */
 function doShout(ch: CharData, argument: string): void {
   if (!argument) {
@@ -797,7 +944,8 @@ function doShout(ch: CharData, argument: string): void {
     return;
   }
 
-  sendToChar(ch, `${colors.brightYellow}You shout '${argument}'${colors.reset}\r\n`);
+  const langName = getLanguageName(ch.speaking);
+  sendToChar(ch, `${colors.brightYellow}You shout (in ${langName}) '${argument}'${colors.reset}\r\n`);
 
   // Send structured channel message to the shouter
   sendChannelMessage(ch, 'shout', ch.name, argument);
@@ -805,10 +953,11 @@ function doShout(ch: CharData, argument: string): void {
   for (const other of world.characters.values()) {
     if (other.isNpc || other.deleted || other.id === ch.id) continue;
     if (!hasConnection(other.id)) continue;
-    sendToChar(other, `${colors.brightYellow}${ch.name} shouts '${argument}'${colors.reset}\r\n`);
+    const garbled = garbleMessage(ch, other, argument);
+    sendToChar(other, `${colors.brightYellow}${ch.name} shouts (in ${langName}) '${garbled}'${colors.reset}\r\n`);
 
     // Send structured channel message to listeners
-    sendChannelMessage(other, 'shout', ch.name, argument);
+    sendChannelMessage(other, 'shout', ch.name, garbled);
   }
 }
 
@@ -843,56 +992,8 @@ function doChat(ch: CharData, argument: string): void {
 //  Object manipulation commands
 // ============================================================================
 
-/**
- * doGet — Pick up an object from the room.
- */
-function doGet(ch: CharData, argument: string): void {
-  if (!argument) {
-    sendToChar(ch, "Get what?\r\n");
-    return;
-  }
-
-  const roomVnum = getCharRoom(ch);
-  if (roomVnum === -1) {
-    sendToChar(ch, "You are in the void.\r\n");
-    return;
-  }
-
-  // Handle "get all"
-  if (argument.toLowerCase() === 'all') {
-    const objs = world.getObjsInRoom(roomVnum);
-    if (objs.length === 0) {
-      sendToChar(ch, "There is nothing here to get.\r\n");
-      return;
-    }
-    let gotSomething = false;
-    for (const obj of [...objs]) {
-      objFromRoom(obj);
-      objToChar(obj, ch);
-      sendToChar(ch, `You get ${obj.shortDescr}.\r\n`);
-      act('$n gets $p.', ch, obj, null, TO_ROOM);
-      gotSomething = true;
-    }
-    if (!gotSomething) {
-      sendToChar(ch, "There is nothing here to get.\r\n");
-    }
-    return;
-  }
-
-  // Find the specific object in the room
-  const objs = world.getObjsInRoom(roomVnum);
-  for (const obj of objs) {
-    if (isName(argument, obj.name)) {
-      objFromRoom(obj);
-      objToChar(obj, ch);
-      sendToChar(ch, `You get ${obj.shortDescr}.\r\n`);
-      act('$n gets $p.', ch, obj, null, TO_ROOM);
-      return;
-    }
-  }
-
-  sendToChar(ch, "You don't see that here.\r\n");
-}
+// NOTE: The 'get' command uses doGetEnhanced from shops.ts which handles
+// containers, money objects, and take-flag checks.
 
 /**
  * doDrop — Drop an object from inventory to the room.
@@ -1124,6 +1225,748 @@ function doGive(ch: CharData, argument: string): void {
 }
 
 // ============================================================================
+//  Door commands — open, close, lock, unlock, pick, knock
+// ============================================================================
+
+/**
+ * Find a door by direction name or exit keyword.
+ * Returns the direction number and the exit data, or null if not found.
+ * Port of find_door() from act_move.c.
+ */
+function findDoor(ch: CharData, arg: string): { dir: number; exit: ExitData } | null {
+  const roomVnum = getCharRoom(ch);
+  const room = world.getRoom(roomVnum);
+  if (!room) return null;
+
+  // First, try matching as a direction name
+  const dirIndex = DIRECTION_NAMES.findIndex((name) => name.startsWith(arg.toLowerCase()));
+  if (dirIndex >= 0) {
+    const exit = room.exits[dirIndex as Direction];
+    if (!exit) {
+      sendToChar(ch, "There is no exit in that direction.\r\n");
+      return null;
+    }
+    if (!(exit.exitInfo & EX_ISDOOR) && !(exit.rsFlags & EX_ISDOOR)) {
+      sendToChar(ch, "There is no door in that direction.\r\n");
+      return null;
+    }
+    return { dir: dirIndex, exit };
+  }
+
+  // Otherwise, try matching as an exit keyword
+  for (let dir = 0; dir < 6; dir++) {
+    const exit = room.exits[dir as Direction];
+    if (exit && exit.keyword && isName(arg, exit.keyword)) {
+      return { dir, exit };
+    }
+  }
+
+  sendToChar(ch, "You don't see that here.\r\n");
+  return null;
+}
+
+/**
+ * Check if a character has a key with the given vnum in their inventory.
+ */
+function hasKey(ch: CharData, keyVnum: number): boolean {
+  if (keyVnum <= 0) return false;
+  const items = getInventory(ch);
+  for (const obj of items) {
+    if (obj.itemType === ItemType.KEY && obj.indexVnum === keyVnum) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Get the name of a door/exit for display purposes.
+ */
+function getDoorName(exit: ExitData): string {
+  return exit.keyword || 'door';
+}
+
+/**
+ * doOpen — Open a door or container.
+ */
+function doOpen(ch: CharData, argument: string): void {
+  if (!argument) {
+    sendToChar(ch, "Open what?\r\n");
+    return;
+  }
+
+  // Try to open a container in inventory or room first
+  const roomVnum = getCharRoom(ch);
+  const container = findContainerForChar(ch, argument, roomVnum);
+  if (container && container.itemType === ItemType.CONTAINER) {
+    if (!(container.value[1] & CONT_CLOSEABLE)) {
+      sendToChar(ch, "You can't do that.\r\n");
+      return;
+    }
+    if (!(container.value[1] & CONT_CLOSED)) {
+      sendToChar(ch, "It's already open.\r\n");
+      return;
+    }
+    if (container.value[1] & CONT_LOCKED) {
+      sendToChar(ch, "It's locked.\r\n");
+      return;
+    }
+
+    container.value[1] &= ~CONT_CLOSED;
+    sendToChar(ch, `You open ${container.shortDescr}.\r\n`);
+    act('$n opens $p.', ch, container, null, TO_ROOM);
+    return;
+  }
+
+  // Try to open a door/exit
+  const result = findDoor(ch, argument);
+  if (!result) return;
+
+  const { dir, exit } = result;
+
+  if (!(exit.exitInfo & EX_CLOSED)) {
+    sendToChar(ch, "It's already open.\r\n");
+    return;
+  }
+
+  if (exit.exitInfo & EX_LOCKED) {
+    sendToChar(ch, "It's locked.\r\n");
+    return;
+  }
+
+  // Open the door
+  exit.exitInfo &= ~EX_CLOSED;
+
+  const doorName = getDoorName(exit);
+  sendToChar(ch, `You open the ${doorName}.\r\n`);
+  act(`$n opens the ${doorName}.`, ch, null, null, TO_ROOM);
+
+  // Open the reverse side
+  const toRoom = world.getRoom(exit.toVnum);
+  if (toRoom) {
+    const revDir = REVERSE_DIR[dir];
+    const revExit = toRoom.exits[revDir as Direction];
+    if (revExit && (revExit.exitInfo & EX_CLOSED)) {
+      revExit.exitInfo &= ~EX_CLOSED;
+      // Notify players in the other room
+      sendToRoom(exit.toVnum, `The ${getDoorName(revExit)} opens.\r\n`);
+    }
+  }
+}
+
+/**
+ * doClose — Close a door or container.
+ */
+function doClose(ch: CharData, argument: string): void {
+  if (!argument) {
+    sendToChar(ch, "Close what?\r\n");
+    return;
+  }
+
+  // Try container first
+  const roomVnum = getCharRoom(ch);
+  const container = findContainerForChar(ch, argument, roomVnum);
+  if (container && container.itemType === ItemType.CONTAINER) {
+    if (!(container.value[1] & CONT_CLOSEABLE)) {
+      sendToChar(ch, "You can't do that.\r\n");
+      return;
+    }
+    if (container.value[1] & CONT_CLOSED) {
+      sendToChar(ch, "It's already closed.\r\n");
+      return;
+    }
+
+    container.value[1] |= CONT_CLOSED;
+    sendToChar(ch, `You close ${container.shortDescr}.\r\n`);
+    act('$n closes $p.', ch, container, null, TO_ROOM);
+    return;
+  }
+
+  // Try door/exit
+  const result = findDoor(ch, argument);
+  if (!result) return;
+
+  const { dir, exit } = result;
+
+  if (exit.exitInfo & EX_CLOSED) {
+    sendToChar(ch, "It's already closed.\r\n");
+    return;
+  }
+
+  exit.exitInfo |= EX_CLOSED;
+
+  const doorName = getDoorName(exit);
+  sendToChar(ch, `You close the ${doorName}.\r\n`);
+  act(`$n closes the ${doorName}.`, ch, null, null, TO_ROOM);
+
+  // Close the reverse side
+  const toRoom = world.getRoom(exit.toVnum);
+  if (toRoom) {
+    const revDir = REVERSE_DIR[dir];
+    const revExit = toRoom.exits[revDir as Direction];
+    if (revExit && !(revExit.exitInfo & EX_CLOSED)) {
+      revExit.exitInfo |= EX_CLOSED;
+      sendToRoom(exit.toVnum, `The ${getDoorName(revExit)} closes.\r\n`);
+    }
+  }
+}
+
+/**
+ * doLock — Lock a door or container. Requires a key in inventory.
+ */
+function doLock(ch: CharData, argument: string): void {
+  if (!argument) {
+    sendToChar(ch, "Lock what?\r\n");
+    return;
+  }
+
+  // Try container first
+  const roomVnum = getCharRoom(ch);
+  const container = findContainerForChar(ch, argument, roomVnum);
+  if (container && container.itemType === ItemType.CONTAINER) {
+    if (!(container.value[1] & CONT_CLOSEABLE)) {
+      sendToChar(ch, "You can't do that.\r\n");
+      return;
+    }
+    if (!(container.value[1] & CONT_CLOSED)) {
+      sendToChar(ch, "It's not closed.\r\n");
+      return;
+    }
+    if (container.value[1] & CONT_LOCKED) {
+      sendToChar(ch, "It's already locked.\r\n");
+      return;
+    }
+    // Containers use value[2] as the key vnum
+    if (!hasKey(ch, container.value[2])) {
+      sendToChar(ch, "You lack the key.\r\n");
+      return;
+    }
+
+    container.value[1] |= CONT_LOCKED;
+    sendToChar(ch, `You lock ${container.shortDescr}.\r\n`);
+    act('$n locks $p.', ch, container, null, TO_ROOM);
+    return;
+  }
+
+  // Try door/exit
+  const result = findDoor(ch, argument);
+  if (!result) return;
+
+  const { dir, exit } = result;
+
+  if (!(exit.exitInfo & EX_CLOSED)) {
+    sendToChar(ch, "It's not closed.\r\n");
+    return;
+  }
+
+  if (exit.exitInfo & EX_LOCKED) {
+    sendToChar(ch, "It's already locked.\r\n");
+    return;
+  }
+
+  if (!hasKey(ch, exit.key)) {
+    sendToChar(ch, "You lack the key.\r\n");
+    return;
+  }
+
+  exit.exitInfo |= EX_LOCKED;
+
+  const doorName = getDoorName(exit);
+  sendToChar(ch, `You lock the ${doorName}.\r\n`);
+  act(`$n locks the ${doorName}.`, ch, null, null, TO_ROOM);
+
+  // Lock the reverse side
+  const toRoom = world.getRoom(exit.toVnum);
+  if (toRoom) {
+    const revDir = REVERSE_DIR[dir];
+    const revExit = toRoom.exits[revDir as Direction];
+    if (revExit && !(revExit.exitInfo & EX_LOCKED)) {
+      revExit.exitInfo |= EX_LOCKED;
+    }
+  }
+}
+
+/**
+ * doUnlock — Unlock a door or container. Requires a key in inventory.
+ */
+function doUnlock(ch: CharData, argument: string): void {
+  if (!argument) {
+    sendToChar(ch, "Unlock what?\r\n");
+    return;
+  }
+
+  // Try container first
+  const roomVnum = getCharRoom(ch);
+  const container = findContainerForChar(ch, argument, roomVnum);
+  if (container && container.itemType === ItemType.CONTAINER) {
+    if (!(container.value[1] & CONT_CLOSEABLE)) {
+      sendToChar(ch, "You can't do that.\r\n");
+      return;
+    }
+    if (!(container.value[1] & CONT_CLOSED)) {
+      sendToChar(ch, "It's not closed.\r\n");
+      return;
+    }
+    if (!(container.value[1] & CONT_LOCKED)) {
+      sendToChar(ch, "It isn't locked.\r\n");
+      return;
+    }
+    if (!hasKey(ch, container.value[2])) {
+      sendToChar(ch, "You lack the key.\r\n");
+      return;
+    }
+
+    container.value[1] &= ~CONT_LOCKED;
+    sendToChar(ch, `You unlock ${container.shortDescr}.\r\n`);
+    act('$n unlocks $p.', ch, container, null, TO_ROOM);
+    return;
+  }
+
+  // Try door/exit
+  const result = findDoor(ch, argument);
+  if (!result) return;
+
+  const { dir, exit } = result;
+
+  if (!(exit.exitInfo & EX_CLOSED)) {
+    sendToChar(ch, "It's not closed.\r\n");
+    return;
+  }
+
+  if (!(exit.exitInfo & EX_LOCKED)) {
+    sendToChar(ch, "It isn't locked.\r\n");
+    return;
+  }
+
+  if (!hasKey(ch, exit.key)) {
+    sendToChar(ch, "You lack the key.\r\n");
+    return;
+  }
+
+  exit.exitInfo &= ~EX_LOCKED;
+
+  const doorName = getDoorName(exit);
+  sendToChar(ch, `You unlock the ${doorName}.\r\n`);
+  act(`$n unlocks the ${doorName}.`, ch, null, null, TO_ROOM);
+
+  // Unlock the reverse side
+  const toRoom = world.getRoom(exit.toVnum);
+  if (toRoom) {
+    const revDir = REVERSE_DIR[dir];
+    const revExit = toRoom.exits[revDir as Direction];
+    if (revExit && (revExit.exitInfo & EX_LOCKED)) {
+      revExit.exitInfo &= ~EX_LOCKED;
+    }
+  }
+}
+
+/**
+ * doPick — Pick a lock on a door or container. Thief skill check.
+ * Port of do_pick() from act_move.c.
+ */
+function doPick(ch: CharData, argument: string): void {
+  if (!argument) {
+    sendToChar(ch, "Pick what?\r\n");
+    return;
+  }
+
+  // Check for thief class or immortal
+  const THIEF_CLASS = CharClass.THIEF;
+  const ASSASSIN_CLASS = CharClass.ASSASSIN;
+  if (!ch.isNpc && ch.charClass !== THIEF_CLASS && ch.charClass !== ASSASSIN_CLASS && !isImmortal(ch)) {
+    sendToChar(ch, "You don't know how to pick locks.\r\n");
+    return;
+  }
+
+  // Try container first
+  const roomVnum = getCharRoom(ch);
+  const container = findContainerForChar(ch, argument, roomVnum);
+  if (container && container.itemType === ItemType.CONTAINER) {
+    if (!(container.value[1] & CONT_CLOSED)) {
+      sendToChar(ch, "It's not closed.\r\n");
+      return;
+    }
+    if (!(container.value[1] & CONT_LOCKED)) {
+      sendToChar(ch, "It isn't locked.\r\n");
+      return;
+    }
+    if (container.value[1] & CONT_PICKPROOF) {
+      sendToChar(ch, "You failed.\r\n");
+      return;
+    }
+
+    // Skill check: base 50% + 2% per level, max 95%
+    const chance = Math.min(95, 50 + ch.level * 2);
+    if (Math.floor(Math.random() * 100) >= chance) {
+      sendToChar(ch, "You failed.\r\n");
+      return;
+    }
+
+    container.value[1] &= ~CONT_LOCKED;
+    sendToChar(ch, `You pick the lock on ${container.shortDescr}.\r\n`);
+    act('$n picks the lock on $p.', ch, container, null, TO_ROOM);
+    return;
+  }
+
+  // Try door/exit
+  const result = findDoor(ch, argument);
+  if (!result) return;
+
+  const { dir, exit } = result;
+
+  if (!(exit.exitInfo & EX_CLOSED)) {
+    sendToChar(ch, "It's not closed.\r\n");
+    return;
+  }
+
+  if (!(exit.exitInfo & EX_LOCKED)) {
+    sendToChar(ch, "It isn't locked.\r\n");
+    return;
+  }
+
+  if (exit.exitInfo & EX_PICKPROOF) {
+    sendToChar(ch, "You failed.\r\n");
+    return;
+  }
+
+  // Skill check
+  const chance = Math.min(95, 50 + ch.level * 2);
+  if (Math.floor(Math.random() * 100) >= chance) {
+    sendToChar(ch, "You failed.\r\n");
+    return;
+  }
+
+  exit.exitInfo &= ~EX_LOCKED;
+
+  const doorName = getDoorName(exit);
+  sendToChar(ch, `You pick the lock on the ${doorName}.\r\n`);
+  act(`$n picks the lock on the ${doorName}.`, ch, null, null, TO_ROOM);
+
+  // Also unlock reverse side
+  const toRoom = world.getRoom(exit.toVnum);
+  if (toRoom) {
+    const revDir = REVERSE_DIR[dir];
+    const revExit = toRoom.exits[revDir as Direction];
+    if (revExit && (revExit.exitInfo & EX_LOCKED)) {
+      revExit.exitInfo &= ~EX_LOCKED;
+    }
+  }
+}
+
+/**
+ * doKnock — Knock on a door to notify people on the other side.
+ */
+function doKnock(ch: CharData, argument: string): void {
+  if (!argument) {
+    sendToChar(ch, "Knock on what?\r\n");
+    return;
+  }
+
+  const result = findDoor(ch, argument);
+  if (!result) return;
+
+  const { dir, exit } = result;
+
+  if (!(exit.exitInfo & EX_CLOSED)) {
+    sendToChar(ch, "Why knock? It's open.\r\n");
+    return;
+  }
+
+  const doorName = getDoorName(exit);
+  sendToChar(ch, `You knock on the ${doorName}.\r\n`);
+  act(`$n knocks on the ${doorName}.`, ch, null, null, TO_ROOM);
+
+  // Notify the other side
+  const toRoom = world.getRoom(exit.toVnum);
+  if (toRoom) {
+    sendToRoom(exit.toVnum, `Someone knocks on the ${doorName} from the other side.\r\n`);
+  }
+}
+
+// ============================================================================
+//  Container commands — put, empty
+// ============================================================================
+
+/**
+ * doPut — Put an item from inventory into a container.
+ * Syntax: "put <item> <container>"
+ */
+function doPut(ch: CharData, argument: string): void {
+  if (!argument) {
+    sendToChar(ch, "Put what in what?\r\n");
+    return;
+  }
+
+  const parts = argument.split(/\s+/);
+  if (parts.length < 2) {
+    sendToChar(ch, "Put what in what?\r\n");
+    return;
+  }
+
+  // Handle "put <item> in <container>" or "put <item> <container>"
+  let itemArg = parts[0];
+  let containerArg: string;
+
+  if (parts.length >= 3 && parts[1].toLowerCase() === 'in') {
+    containerArg = parts.slice(2).join(' ');
+  } else {
+    containerArg = parts.slice(1).join(' ');
+  }
+
+  const roomVnum = getCharRoom(ch);
+
+  // Find the container in inventory or room
+  const container = findContainerForChar(ch, containerArg, roomVnum);
+  if (!container) {
+    sendToChar(ch, "You don't see that container here.\r\n");
+    return;
+  }
+
+  if (container.itemType !== ItemType.CONTAINER) {
+    sendToChar(ch, "That's not a container.\r\n");
+    return;
+  }
+
+  if (container.value[1] & CONT_CLOSED) {
+    sendToChar(ch, "It is closed.\r\n");
+    return;
+  }
+
+  // Handle "put all <container>"
+  if (itemArg.toLowerCase() === 'all') {
+    const items = getCarriedItems(ch);
+    if (items.length === 0) {
+      sendToChar(ch, "You aren't carrying anything.\r\n");
+      return;
+    }
+
+    let putSomething = false;
+    for (const obj of [...items]) {
+      if (obj.id === container.id) continue;  // Can't put container in itself
+
+      // Check weight capacity (value[0] = max weight)
+      const containerWeight = getContainerContentWeight(container.id);
+      if (container.value[0] !== 0 && containerWeight + obj.weight > container.value[0]) {
+        sendToChar(ch, `${capitalize(obj.shortDescr)} won't fit.\r\n`);
+        continue;
+      }
+
+      objFromChar(obj);
+      obj.containedIn = container.id;
+      obj.inRoom = undefined;
+      obj.carriedBy = undefined;
+      sendToChar(ch, `You put ${obj.shortDescr} in ${container.shortDescr}.\r\n`);
+      act('$n puts $p in $P.', ch, obj, container as unknown as CharData, TO_ROOM);
+      putSomething = true;
+    }
+    if (!putSomething) {
+      sendToChar(ch, "You have nothing to put in there.\r\n");
+    }
+    return;
+  }
+
+  // Find the specific item in inventory
+  const items = getCarriedItems(ch);
+  let obj: ObjInstance | undefined;
+  for (const item of items) {
+    if (isName(itemArg, item.name)) {
+      obj = item;
+      break;
+    }
+  }
+
+  if (!obj) {
+    sendToChar(ch, "You don't have that.\r\n");
+    return;
+  }
+
+  if (obj.id === container.id) {
+    sendToChar(ch, "You can't fold it into itself.\r\n");
+    return;
+  }
+
+  // Check weight capacity
+  const containerWeight = getContainerContentWeight(container.id);
+  if (container.value[0] !== 0 && containerWeight + obj.weight > container.value[0]) {
+    sendToChar(ch, "It won't fit.\r\n");
+    return;
+  }
+
+  objFromChar(obj);
+  obj.containedIn = container.id;
+  obj.inRoom = undefined;
+  obj.carriedBy = undefined;
+  sendToChar(ch, `You put ${obj.shortDescr} in ${container.shortDescr}.\r\n`);
+  act('$n puts $p in $P.', ch, obj, container as unknown as CharData, TO_ROOM);
+}
+
+/**
+ * doEmpty — Empty a container's contents onto the floor or into another container.
+ * Syntax: "empty <container>" or "empty <container> into <container>"
+ */
+function doEmpty(ch: CharData, argument: string): void {
+  if (!argument) {
+    sendToChar(ch, "Empty what?\r\n");
+    return;
+  }
+
+  const roomVnum = getCharRoom(ch);
+  if (roomVnum === -1) {
+    sendToChar(ch, "You are in the void.\r\n");
+    return;
+  }
+
+  // Parse "empty <container> into <container>"
+  const parts = argument.split(/\s+/);
+  let sourceArg = parts[0];
+  let destArg: string | null = null;
+
+  if (parts.length >= 3 && parts[1].toLowerCase() === 'into') {
+    destArg = parts.slice(2).join(' ');
+  }
+
+  // Find source container
+  const source = findContainerForChar(ch, sourceArg, roomVnum);
+  if (!source) {
+    sendToChar(ch, "You don't see that container here.\r\n");
+    return;
+  }
+
+  if (source.itemType !== ItemType.CONTAINER && source.itemType !== ItemType.DRINK_CON) {
+    sendToChar(ch, "That's not a container.\r\n");
+    return;
+  }
+
+  if (source.itemType === ItemType.CONTAINER && (source.value[1] & CONT_CLOSED)) {
+    sendToChar(ch, "It is closed.\r\n");
+    return;
+  }
+
+  // Handle drink containers
+  if (source.itemType === ItemType.DRINK_CON) {
+    if (source.value[1] <= 0) {
+      sendToChar(ch, "It's already empty.\r\n");
+      return;
+    }
+    source.value[1] = 0;
+    sendToChar(ch, `You empty ${source.shortDescr}.\r\n`);
+    act('$n empties $p.', ch, source, null, TO_ROOM);
+    return;
+  }
+
+  const contents = getContainerContents(source.id);
+  if (contents.length === 0) {
+    sendToChar(ch, "It's already empty.\r\n");
+    return;
+  }
+
+  // Find destination container (if specified)
+  let dest: ObjInstance | null = null;
+  if (destArg) {
+    dest = findContainerForChar(ch, destArg, roomVnum);
+    if (!dest) {
+      sendToChar(ch, "You don't see that container here.\r\n");
+      return;
+    }
+    if (dest.itemType !== ItemType.CONTAINER) {
+      sendToChar(ch, "That's not a container.\r\n");
+      return;
+    }
+    if (dest.value[1] & CONT_CLOSED) {
+      sendToChar(ch, "The destination is closed.\r\n");
+      return;
+    }
+    if (dest.id === source.id) {
+      sendToChar(ch, "You can't empty a container into itself.\r\n");
+      return;
+    }
+  }
+
+  for (const obj of [...contents]) {
+    obj.containedIn = undefined;
+    if (dest) {
+      // Check weight
+      const destWeight = getContainerContentWeight(dest.id);
+      if (dest.value[0] !== 0 && destWeight + obj.weight > dest.value[0]) {
+        sendToChar(ch, `${capitalize(obj.shortDescr)} won't fit in ${dest.shortDescr}.\r\n`);
+        continue;
+      }
+      obj.containedIn = dest.id;
+      obj.inRoom = undefined;
+      obj.carriedBy = undefined;
+    } else {
+      // Drop to room
+      objToRoom(obj, roomVnum);
+    }
+  }
+
+  if (dest) {
+    sendToChar(ch, `You empty ${source.shortDescr} into ${dest.shortDescr}.\r\n`);
+    act('$n empties $p.', ch, source, null, TO_ROOM);
+  } else {
+    sendToChar(ch, `You empty ${source.shortDescr} onto the ground.\r\n`);
+    act('$n empties $p onto the ground.', ch, source, null, TO_ROOM);
+  }
+}
+
+// ============================================================================
+//  Container helper functions
+// ============================================================================
+
+/**
+ * Find a container object in the character's inventory or in the room.
+ */
+function findContainerForChar(ch: CharData, arg: string, roomVnum: number): ObjInstance | null {
+  // Check inventory first
+  const carried = getCarriedItems(ch);
+  for (const obj of carried) {
+    if (isName(arg, obj.name)) {
+      return obj;
+    }
+  }
+
+  // Check room objects
+  if (roomVnum >= 0) {
+    const roomObjs = world.getObjsInRoom(roomVnum);
+    for (const obj of roomObjs) {
+      if (isName(arg, obj.name)) {
+        return obj;
+      }
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Get all objects contained within a container (by container id).
+ */
+function getContainerContents(containerId: string): ObjInstance[] {
+  const items: ObjInstance[] = [];
+  for (const obj of world.objects.values()) {
+    if (obj.deleted) continue;
+    if (obj.containedIn === containerId) {
+      items.push(obj);
+    }
+  }
+  return items;
+}
+
+/**
+ * Get the total weight of items inside a container.
+ */
+function getContainerContentWeight(containerId: string): number {
+  let total = 0;
+  for (const obj of world.objects.values()) {
+    if (obj.deleted) continue;
+    if (obj.containedIn === containerId) {
+      total += obj.weight;
+    }
+  }
+  return total;
+}
+
+// ============================================================================
 //  Action commands
 // ============================================================================
 
@@ -1288,7 +2131,7 @@ function doFlee(ch: CharData, _argument: string): void {
   const availableDirs: Direction[] = [];
   for (let dir = 0; dir < 6; dir++) {
     const exit = room.exits[dir as keyof typeof room.exits];
-    if (exit && !(exit.exitInfo & 1)) {
+    if (exit && !(exit.exitInfo & EX_CLOSED)) {
       availableDirs.push(dir as Direction);
     }
   }
@@ -1400,11 +2243,17 @@ function doHelp(ch: CharData, argument: string): void {
   const categories: Record<string, string[]> = {
     'Movement': ['north', 'east', 'south', 'west', 'up', 'down'],
     'Information': ['look', 'score', 'who', 'inventory', 'equipment', 'exits', 'help'],
-    'Communication': ['say', 'tell', 'shout', 'chat'],
-    'Objects': ['get', 'drop', 'wear', 'remove', 'give'],
+    'Communication': ['say', 'tell', 'shout', 'chat', 'speak', 'languages'],
+    'Objects': ['get', 'drop', 'put', 'empty', 'wear', 'remove', 'give'],
+    'Doors': ['open', 'close', 'lock', 'unlock', 'pick', 'knock'],
     'Actions': ['quit', 'save', 'recall'],
     'Combat': ['kill', 'flee', 'consider', 'wimpy'],
     'Position': ['rest', 'sleep', 'stand', 'wake'],
+    'Social': ['clan', 'religion', 'propose', 'accept', 'divorce'],
+    'Economy': ['bank'],
+    'Quest': ['quest'],
+    'Crafting': ['skin', 'tan', 'forge', 'brew', 'scribe'],
+    'Gambling': ['slots', 'dice', 'seven', 'highdice'],
   };
 
   for (const [category, cmds] of Object.entries(categories)) {

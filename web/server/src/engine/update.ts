@@ -32,6 +32,10 @@ import {
 import { sendToChar, sendToAll, act, colors, TO_ROOM } from './output.js';
 import { multiHit, setFighting } from './fight.js';
 import { sendVitals } from './protocol.js';
+import { resetAllAreas } from './resets.js';
+import { EX_CLOSED } from './resets.js';
+import { questUpdate } from './quest.js';
+import { craftUpdate } from './crafting.js';
 
 // ============================================================================
 //  Game loop state
@@ -160,6 +164,12 @@ function tickUpdate(): void {
   }
 
   world.time.total++;
+
+  // Quest timer update (countdown, nextquest cooldowns)
+  questUpdate();
+
+  // Crafting timer update (timed crafts in progress)
+  craftUpdate();
 }
 
 /**
@@ -394,14 +404,7 @@ function updateWeather(): void {
  * Handles resetting areas (respawning mobs, resetting doors, etc.).
  */
 function areaUpdate(): void {
-  // TODO: Implement area resets
-  // This would iterate through area.resets and:
-  //   - 'M' — spawn mobs if below max count
-  //   - 'O' — place objects if not present
-  //   - 'D' — reset door states
-  //   - 'R' — randomize exits
-  //   - 'G' — give objects to last spawned mob
-  //   - 'E' — equip objects on last spawned mob
+  resetAllAreas();
 }
 
 // ============================================================================
@@ -532,7 +535,7 @@ function mobileUpdate(): void {
         const availableDirs: Direction[] = [];
         for (let dir = 0; dir < 6; dir++) {
           const exit = room.exits[dir as keyof typeof room.exits];
-          if (exit && !(exit.exitInfo & 1)) {
+          if (exit && !(exit.exitInfo & EX_CLOSED)) {
             // Check that the destination room exists
             const destRoom = world.getRoom(exit.toVnum);
             if (destRoom) {

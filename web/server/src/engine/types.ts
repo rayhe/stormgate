@@ -619,6 +619,22 @@ export interface CharData {
   questmob: number;
   rquestpoints: number;
 
+  // Extended quest fields (used by quest.ts)
+  /** Whether the character is currently on a quest */
+  isQuestor: boolean;
+  /** Name of the questmaster who issued the current quest */
+  questGiver: string;
+  /** Area name hint for quest target */
+  questArea: string;
+  /** Room name hint for quest target */
+  questRoom: string;
+  /** Fetch item name for fetch quests */
+  questFetchItem: string;
+  /** NPC template vnum (for NPCs) */
+  vnum: number;
+  /** Learn sessions available */
+  learn: number;
+
   // Timers
   combatTimer: number;
   summonTimer: number;

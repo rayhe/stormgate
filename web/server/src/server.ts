@@ -26,6 +26,10 @@ import {
   stopAutoSave,
   saveAllCharacters,
   charOwnerMap,
+  loadResets,
+  resetAllAreas,
+  rebuildMobCounts,
+  registerAllSpells,
   type CharData,
   type PcData,
   Position,
@@ -139,6 +143,15 @@ async function bootWorld() {
     }
   }
 
+  // Load resets
+  const resetsDoc = await db.collection("world_state").doc("resets").get();
+  if (resetsDoc.exists) {
+    const resetsData = resetsDoc.data();
+    if (resetsData) {
+      loadResets(resetsData as Record<string, any[]>);
+    }
+  }
+
   console.log(
     `[boot] World loaded: ${world.rooms.size} rooms, ${world.mobTemplates.size} mob templates, ${world.objTemplates.size} obj templates, ${world.areas.size} areas`
   );
@@ -161,6 +174,16 @@ async function bootWorld() {
       areaKey: "limbo",
     });
   }
+
+  // Register all spell functions into the skill table
+  console.log("[boot] Registering spell/skill implementations...");
+  registerAllSpells();
+
+  // Run initial area resets to populate the world with mobs and objects
+  console.log("[boot] Running initial area resets...");
+  resetAllAreas();
+  rebuildMobCounts();
+  console.log("[boot] Initial reset complete.");
 }
 
 // ─── Express + HTTP Server ────────────────────────────────────────────
@@ -305,6 +328,13 @@ function createNewCharacter(
     questobj: 0,
     questmob: 0,
     rquestpoints: 0,
+    isQuestor: false,
+    questGiver: '',
+    questArea: '',
+    questRoom: '',
+    questFetchItem: '',
+    vnum: 0,
+    learn: 0,
     combatTimer: 0,
     summonTimer: 0,
     poisonLevel: 0,

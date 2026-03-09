@@ -27,6 +27,7 @@ import type {
 import {
   Position,
   WearLocation,
+  ItemType,
 } from './types.js';
 
 // ============================================================================
@@ -209,6 +210,14 @@ export class World {
       questmob: 0,
       rquestpoints: 0,
 
+      isQuestor: false,
+      questGiver: '',
+      questArea: '',
+      questRoom: '',
+      questFetchItem: '',
+      vnum: template.vnum,
+      learn: 0,
+
       combatTimer: 0,
       summonTimer: 0,
       poisonLevel: 0,
@@ -229,6 +238,7 @@ export class World {
     };
 
     this.characters.set(id, mob);
+    mobTemplateVnumMap.set(id, vnum);
     return mob;
   }
 
@@ -281,6 +291,70 @@ export class World {
   nextId(): string {
     return generateId();
   }
+
+  // --------------------------------------------------------------------------
+  //  Object helpers for crafting / quest systems
+  // --------------------------------------------------------------------------
+
+  /**
+   * Create a simple object instance without requiring a template vnum.
+   * Used by crafting, quest rewards, and similar dynamic object creation.
+   */
+  createSimpleObject(opts: {
+    name: string;
+    shortDescr: string;
+    description: string;
+    level: number;
+    itemType: ItemType;
+    weight: number;
+    cost: number;
+    wearFlags: number;
+    extraFlags: number;
+  }): ObjInstance {
+    const id = this.nextId();
+    const obj: ObjInstance = {
+      id,
+      indexVnum: 0,
+      name: opts.name,
+      shortDescr: opts.shortDescr,
+      description: opts.description,
+      itemType: opts.itemType,
+      extraFlags: opts.extraFlags,
+      extraFlags2: 0,
+      extraFlags3: 0,
+      extraFlags4: 0,
+      wearFlags: opts.wearFlags,
+      wearLoc: WearLocation.NONE,
+      durabilityMax: 100,
+      durabilityCur: 100,
+      weight: opts.weight,
+      cost: opts.cost,
+      level: opts.level,
+      timer: 0,
+      value: [0, 0, 0, 0],
+      affects: [],
+      acType: 0,
+      acVnum: 0,
+      acSpell: '',
+      acCharge: [0, 0],
+      deleted: false,
+    };
+    this.objects.set(id, obj);
+    return obj;
+  }
+
+  /**
+   * Remove an object from the game world entirely.
+   * Clears all ownership references and marks it deleted.
+   */
+  extractObj(obj: ObjInstance): void {
+    obj.deleted = true;
+    obj.carriedBy = undefined;
+    obj.inRoom = undefined;
+    obj.containedIn = undefined;
+    obj.storedBy = undefined;
+    this.objects.delete(obj.id);
+  }
 }
 
 // ============================================================================
@@ -292,6 +366,12 @@ export class World {
  * with a runtime-only field. handler.ts charToRoom/charFromRoom maintain this.
  */
 export const charRoomMap = new Map<string, number>();
+
+/**
+ * Maps NPC character id -> mob template vnum. Set in createMobInstance so
+ * the reset system can efficiently look up template vnums for mob counting.
+ */
+export const mobTemplateVnumMap = new Map<string, number>();
 
 // ============================================================================
 //  Singleton instance
