@@ -126,7 +126,6 @@ const	char 	go_ahead_str	[] = { IAC, GA, '\0' };
 
 #if	defined( unix )
 #include <fcntl.h>
-#include <unistd.h>
 #include <netdb.h>
 #include <netinet/in.h>
 #include <sys/socket.h>
@@ -4356,7 +4355,7 @@ int main( int argc, char **argv )
 		}
 
 		d		= new_descriptor();
-		*d		= d_zero;
+		memset( d, 0, sizeof( *d ) );
 		d->descriptor	= desc;
 		d->character	= NULL;
 		d->connected	= CON_COPYOVER_RECOVER;
