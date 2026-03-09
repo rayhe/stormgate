@@ -1279,7 +1279,34 @@ void process_telnet_input( DESCRIPTOR_DATA *d )
 	    {
 		unsigned char opt = buf[i+2];
 		if ( cmd == DO_OPT && opt == TELOPT_GMCP )
+		{
 		    d->gmcp = TRUE;
+		    /* GMCP clients support color — auto-enable ANSI
+		     * and skip the ANSI prompt if still waiting */
+		    if ( d->connected == CON_GET_ANSI )
+		    {
+			d->ansi = TRUE;
+			d->connected = CON_GET_NAME;
+			{
+			    extern char *help_greeting_one;
+			    extern char *help_greeting_two;
+			    extern char *help_greeting_three;
+			    extern char *help_greeting_four;
+			    extern char *help_greeting_five;
+			    int rndnumber = number_range(1, 5);
+			    if ( rndnumber == 1 )
+				write_to_buffer( d, help_greeting_one, 0 );
+			    else if ( rndnumber == 2 )
+				write_to_buffer( d, help_greeting_two, 0 );
+			    else if ( rndnumber == 3 )
+				write_to_buffer( d, help_greeting_three, 0 );
+			    else if ( rndnumber == 4 )
+				write_to_buffer( d, help_greeting_four, 0 );
+			    else
+				write_to_buffer( d, help_greeting_five, 0 );
+			}
+		    }
+		}
 		else if ( cmd == DONT && opt == TELOPT_GMCP )
 		    d->gmcp = FALSE;
 		i += 3;
