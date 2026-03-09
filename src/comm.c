@@ -182,7 +182,7 @@ int	socket		args( ( int domain, int type, int protocol ) );
 #endif
 
 // Removed by Ahsile for CygWin
-#if	defined( linux ) || defined( RUN_AS_WIN32SERVICE )
+#if	defined( RUN_AS_WIN32SERVICE )
 int	close		args( ( int fd ) );
 int	gettimeofday	args( ( struct timeval *tp, struct timezone *tzp ) );
 //int	listen		args( ( int s, int backlog ) );
