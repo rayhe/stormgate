@@ -1,0 +1,15 @@
+[Unit]
+Description=Stormgate WebSocket Proxy
+After=network.target stormgate.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/stormgate/frontend
+ExecStart=/usr/bin/node ws-proxy.js
+Restart=always
+RestartSec=5
+User=stormgate
+Group=stormgate
+
+[Install]
+WantedBy=multi-user.target

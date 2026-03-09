@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stormgate</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xterm/xterm@5.5.0/css/xterm.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0a0f; height: 100vh; display: flex; flex-direction: column; }
+    #status { color: #888; font: 12px monospace; padding: 4px 8px; background: #111; }
+    #status.connected { color: #4f4; }
+    #status.connecting { color: #ff4; }
+    #terminal { flex: 1; }
+  </style>
+</head>
+<body>
+  <div id="status" class="connecting">Connecting...</div>
+  <div id="terminal"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@xterm/xterm@5.5.0/lib/xterm.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@xterm/addon-fit@0.10.0/lib/addon-fit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@xterm/addon-web-links@0.11.0/lib/addon-web-links.min.js"></script>
+  <script>
+    const term = new Terminal({
+      cursorBlink: true,
+      fontFamily: '"Fira Code", "Cascadia Code", "Menlo", monospace',
+      fontSize: 14,
+      theme: { background: '#0a0a0f' },
+      scrollback: 5000,
+    });
+    const fitAddon = new FitAddon.FitAddon();
+    term.loadAddon(fitAddon);
+    term.loadAddon(new WebLinksAddon.WebLinksAddon());
+    term.open(document.getElementById('terminal'));
+    fitAddon.fit();
+    window.addEventListener('resize', () => fitAddon.fit());
+
+    const status = document.getElementById('status');
+    let ws, inputBuf = '';
+
+    function connect() {
+      const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+      ws = new WebSocket(`${proto}//${location.host}/ws`);
+      ws.binaryType = 'arraybuffer';
+      status.textContent = 'Connecting...';
+      status.className = 'connecting';
+
+      ws.onopen = () => {
+        status.textContent = 'Connected';
+        status.className = 'connected';
+      };
+
+      ws.onmessage = (e) => {
+        const data = typeof e.data === 'string' ? e.data : new TextDecoder().decode(e.data);
+        term.write(data);
+      };
+
+      ws.onclose = () => {
+        status.textContent = 'Disconnected - reconnecting...';
+        status.className = 'connecting';
+        setTimeout(connect, 3000);
+      };
+    }
+
+    term.onData((data) => {
+      if (!ws || ws.readyState !== WebSocket.OPEN) return;
+      // Send raw keystrokes to the MUD
+      ws.send(data);
+    });
+
+    connect();
+    term.focus();
+  </script>
+</body>
+</html>

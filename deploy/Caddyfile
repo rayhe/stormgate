@@ -1,0 +1,8 @@
+new.rayhe.net {
+    root * /opt/stormgate/frontend
+    file_server
+
+    handle /ws {
+        reverse_proxy localhost:8080
+    }
+}

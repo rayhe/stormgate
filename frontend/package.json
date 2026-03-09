@@ -1,0 +1,11 @@
+{
+  "name": "stormgate-ws-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ws-proxy.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
