@@ -5,6 +5,13 @@ const WS_PORT = 8080;
 const MUD_HOST = '127.0.0.1';
 const MUD_PORT = 4000;
 
+const IAC = 0xFF;
+const WILL = 0xFB;
+const WONT = 0xFC;
+const DO = 0xFD;
+const DONT = 0xFE;
+const SB = 0xFA;
+const SE = 0xF0;
 const TELOPT_GMCP = 201;
 
 const wss = new WebSocketServer({ port: WS_PORT });
@@ -21,7 +28,7 @@ wss.on('connection', (ws, req) => {
   });
 
   tcp.on('data', (buf) => {
-    const { text, gmcp } = parseTelnet(buf);
+    const { text, gmcp } = parseTelnet(buf, tcp);
     // Send any GMCP messages as JSON text frames
     for (const msg of gmcp) {
       if (ws.readyState === 1) {
@@ -63,25 +70,32 @@ wss.on('connection', (ws, req) => {
 
 /**
  * Parse telnet data: strip IAC sequences, extract GMCP subnegotiations.
+ * Auto-responds IAC DO GMCP when server sends IAC WILL GMCP.
  * Returns { text: Buffer, gmcp: [{ pkg, data }] }
  */
-function parseTelnet(buf) {
+function parseTelnet(buf, tcp) {
   const out = [];
   const gmcp = [];
   let i = 0;
 
   while (i < buf.length) {
-    if (buf[i] === 0xFF && i + 1 < buf.length) {
+    if (buf[i] === IAC && i + 1 < buf.length) {
       const cmd = buf[i + 1];
-      if (cmd >= 0xFB && cmd <= 0xFE && i + 2 < buf.length) {
-        i += 3; // WILL/WONT/DO/DONT + option byte
-      } else if (cmd === 0xFA) {
+      if (cmd >= WILL && cmd <= DONT && i + 2 < buf.length) {
+        const opt = buf[i + 2];
+        // Auto-negotiate GMCP: respond DO to WILL
+        if (cmd === WILL && opt === TELOPT_GMCP && tcp.writable) {
+          tcp.write(Buffer.from([IAC, DO, TELOPT_GMCP]));
+          console.log('[GMCP] Negotiated GMCP with server');
+        }
+        i += 3;
+      } else if (cmd === SB) {
         // Subnegotiation: IAC SB <option> <data...> IAC SE
         const option = i + 2 < buf.length ? buf[i + 2] : 0;
         i += 3; // skip IAC SB option
         const start = i;
         while (i < buf.length - 1) {
-          if (buf[i] === 0xFF && buf[i + 1] === 0xF0) { break; }
+          if (buf[i] === IAC && buf[i + 1] === SE) { break; }
           i++;
         }
         if (option === TELOPT_GMCP) {
@@ -101,7 +115,7 @@ function parseTelnet(buf) {
           }
         }
         i += 2; // skip IAC SE
-      } else if (cmd === 0xFF) {
+      } else if (cmd === IAC) {
         out.push(0xFF); // Escaped 0xFF
         i += 2;
       } else {
