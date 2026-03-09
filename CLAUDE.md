@@ -166,19 +166,106 @@ Three licenses apply (all in `src/`):
 
 ### Status
 
-Phase 1 scaffold is complete. Dependencies require `npm install` (needs external network access to npmjs.org).
+All 5 phases implemented. Code is written but dependencies have not been installed yet (`npm install` needs external network access to npmjs.org).
+
+**Completed:**
+- Phase 1: Web client scaffold (React + Firebase Auth + terminal)
+- Phase 2: Firestore schema, security rules, area migration script
+- Phase 3: Full TypeScript game engine (33+ commands, game loop, combat, regen, weather)
+- Phase 4: Permissions & roles (save/load, admin commands, character selection, auto-save)
+- Phase 5: Enhanced web UI (vitals bars, minimap, combat overlay, mobile responsive)
+
+**Remaining before playable:**
+- `npm install` in `web/client/` and `web/server/` (needs npmjs.org access)
+- Firebase project setup (create project, enable Google Sign-In, get service account key)
+- Run area migration: `cd web/server && npx tsx src/migration/migrate.ts ../../area/`
+- Deploy server to Oracle Cloud VM
+- Deploy client to Firebase Hosting
 
 ### Architecture
 
-- **Client** (`web/client/`): React + TypeScript + Vite
-  - Firebase Auth with Google Sign-In
-  - WebSocket connection to game server with auto-reconnect
-  - ANSI color terminal renderer (maps all 16 MUD color codes)
-  - Command input with up/down arrow history recall
-- **Server** (`web/server/`): Node.js + TypeScript + Express + ws
-  - Firebase Admin SDK verifies auth tokens on WebSocket connect
-  - Creates/updates user docs in Firestore on login
-  - Stub command handler (help, look, who, say, quit) — to be replaced by full game engine
+```
+web/
+├── client/                    # React + TypeScript + Vite frontend
+│   └── src/
+│       ├── core/
+│       │   ├── config.ts      # Firebase project config + WebSocket URL
+│       │   ├── auth.ts        # Google Sign-In, token management
+│       │   ├── connection.ts  # WebSocket client with auto-reconnect + structured messages
+│       │   ├── protocol.ts    # JSON message types (vitals, room, combat, channel)
+│       │   └── gameState.tsx  # React context game state store
+│       └── components/
+│           ├── LoginScreen.tsx   # ASCII art banner + Google sign-in
+│           ├── Terminal.tsx      # ANSI color terminal renderer + combat overlay
+│           ├── VitalsPanel.tsx   # HP/Mana/Move bars with animation + critical pulsing
+│           ├── RoomPanel.tsx     # Compass exits + 3x3 auto-map of visited rooms
+│           ├── SidePanel.tsx     # Container for vitals + room + quick actions
+│           ├── MobileNav.tsx     # Touch direction buttons + actions (mobile only)
+│           ├── CombatOverlay.tsx # Enemy HP bar, damage flash, auto-hide
+│           └── App.tsx           # Layout with side panel, mobile responsive
+├── server/                    # Node.js + TypeScript + Express + ws backend
+│   └── src/
+│       ├── server.ts          # Express + WebSocket server, Firebase Admin, character selection
+│       ├── index.ts           # Original stub server (unused, kept for reference)
+│       └── engine/
+│           ├── types.ts       # All interfaces/enums from merc.h (832 lines)
+│           ├── world.ts       # In-memory world state, mob/obj factories, charRoomMap
+│           ├── handler.ts     # char/obj manipulation, affects, stat getters
+│           ├── output.ts      # sendToChar, act() with $-tokens, prompt rendering
+│           ├── commands.ts    # 33+ commands with prefix matching
+│           ├── fight.ts       # Full combat: damage calc, death, corpses, NPC AI (898 lines)
+│           ├── update.ts      # Game loop (4Hz), violence, regen, time, weather, mob AI
+│           ├── save.ts        # Firestore character save/load, auto-save (540 lines)
+│           ├── admin.ts       # 15 admin/immortal/builder commands (1002 lines)
+│           ├── protocol.ts    # Structured JSON messages to client (vitals, room, combat)
+│           └── index.ts       # Barrel export
+│       └── migration/
+│           ├── area-parser.ts # Parses all 115 .are files (1232 lines)
+│           └── migrate.ts     # Batch imports into Firestore (363 lines)
+├── firebase/
+│   ├── firebase.json          # Hosting + Firestore config
+│   └── firestore.rules        # Role-based security (player/builder/immortal/admin)
+└── .gitignore
+```
+
+### Game Engine
+
+**Commands (33+):**
+
+| Category | Commands |
+|----------|----------|
+| Movement | north, east, south, west, up, down |
+| Info | look, score, who, inventory, equipment, exits, help |
+| Communication | say, tell, shout, chat |
+| Objects | get, drop, wear, remove, give |
+| Combat | kill, flee, consider, wimpy |
+| Position | rest, sleep, stand, wake |
+| Actions | quit, save, recall |
+| Builder (106+) | rstat, mstat, ostat |
+| Immortal (108+) | goto, transfer, peace, slay, stat, force, wiznet |
+| Admin (115+) | setrole, advance, restore, purge |
+
+**Combat system:**
+- Hit/miss rolls with hitroll, armor, dexterity
+- Weapon damage dice + damroll bonus, bare-hand fallback
+- 16-tier damage messages (miss → scratch → hit → maul → OBLITERATE)
+- Attack nouns by weapon type (slash, stab, thrust, pound, chop, etc.)
+- 1-5 attacks/round based on level + dual wield bonus
+- NPC death: corpse with inventory, XP/gold to killer
+- PC death: respawn at recall, lose 10% XP
+- Wimpy auto-flee
+- NPC AI: wandering (10% per pulse), aggression (attack PCs), scavenging (pick up items)
+
+**Save system:**
+- Full character serialization to Firestore (stats, equipment, inventory, affects, pcdata)
+- Character selection menu on login (pick existing or create new)
+- Auto-save every 5 minutes
+- Save on quit, disconnect, and server shutdown
+
+**Permissions:**
+- Role hierarchy: player → builder (106+) → immortal (108+) → admin (115+)
+- `setrole` command updates both in-game level and Firestore user doc
+- Firestore security rules enforce document-level access by role
 
 ### Setup
 
@@ -187,19 +274,8 @@ Phase 1 scaffold is complete. Dependencies require `npm install` (needs external
 3. Place Firebase service account JSON at `web/server/service-account.json`
 4. `cd web/client && npm install && npm run dev`
 5. `cd web/server && npm install && npm run dev`
-6. Open `http://localhost:5173`
-
-### Key Files
-
-| File | Purpose |
-|------|---------|
-| `web/client/src/core/config.ts` | Firebase project config + WebSocket URL |
-| `web/client/src/core/auth.ts` | Google Sign-In, token management |
-| `web/client/src/core/connection.ts` | WebSocket client with auto-reconnect |
-| `web/client/src/components/Terminal.tsx` | ANSI terminal renderer + command input |
-| `web/client/src/components/LoginScreen.tsx` | Login page with Google sign-in |
-| `web/client/src/App.tsx` | App shell, routes login vs terminal |
-| `web/server/src/index.ts` | WebSocket server, auth verification, stub commands |
+6. Migrate area data: `cd web/server && npx tsx src/migration/migrate.ts ../../area/`
+7. Open `http://localhost:5173`
 
 ### Hosting Target
 
@@ -209,7 +285,7 @@ Phase 1 scaffold is complete. Dependencies require `npm install` (needs external
 - **Database**: Cloud Firestore
 - **Cost**: $0/month (all free tier)
 
-See `PLAN.md` for full implementation plan including Firestore schema, security rules, engine port order, and deployment checklist.
+See `PLAN.md` for full deployment checklist.
 
 ## Deployment (Live)
 
@@ -228,8 +304,6 @@ Features from other Diku/Merc forks that Stormgate could adopt. Prioritized by i
 | Feature | Description | Port From | Effort |
 |---------|-------------|-----------|--------|
 | Copyover/hotboot | Restart server binary without disconnecting players. Save descriptor state, exec() new binary, reconnect. | ROM, SMAUG, tbaMUD | Medium |
-| GMCP protocol | Send structured JSON (HP, mana, room info, inventory) via telnet subneg to web client for rich UI panels (HP bars, minimap, etc.) | BasedMUD, tbaMUD | Medium |
-| Automap | Generate ASCII minimap from room exits, render in web client | tbaMUD, AFKMud | Low |
 | Split AC | 4 armor class values (pierce/bash/slash/magic) instead of 1. Adds tactical depth. | ROM 2.4 | Medium |
 | Auction house | Escrow-based item trading between players | AFKMud | Low-Medium |
 | Player housing | Persistent rooms owned by players with door locks | tbaMUD | Medium |
