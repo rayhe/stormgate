@@ -16,10 +16,20 @@ Stormgate is a text-based Multi-User Dungeon (MUD) server written in C. It desce
 
 ```
 stormgate/
-├── src/          # C source code (~170 files including .o and project files)
-├── area/         # Area data files (.are) defining the game world (~150 areas)
-├── player/       # Player save files (gzipped, organized by first letter)
-├── log/          # Game log files (numbered sequentially)
+├── src/              # C source code (~170 files including .o and project files)
+├── area/             # Area data files (.are) defining the game world (~150 areas)
+├── player/           # Player save files (gzipped, organized by first letter)
+├── log/              # Game log files (numbered sequentially)
+├── web/              # Web version (Phase 1 scaffold)
+│   ├── client/       # React + TypeScript + Vite frontend
+│   │   └── src/
+│   │       ├── core/         # Auth, WebSocket connection, config
+│   │       └── components/   # LoginScreen, Terminal
+│   └── server/       # Node.js + TypeScript + Express + ws backend
+│       └── src/
+│           └── index.ts      # WebSocket server with Firebase Auth
+├── CLAUDE.md
+├── PLAN.md           # Full implementation plan (phases, hosting, schema)
 └── README.md
 ```
 
@@ -151,3 +161,52 @@ Three licenses apply (all in `src/`):
 - Saved as text files in `player/<first_letter>/PlayerName`
 - Optional gzip compression (`AUTO_COMPRESS`)
 - Contains all character state: stats, equipment, skills, aliases, quest progress
+
+## Web Version (web/)
+
+### Status
+
+Phase 1 scaffold is complete. Dependencies require `npm install` (needs external network access to npmjs.org).
+
+### Architecture
+
+- **Client** (`web/client/`): React + TypeScript + Vite
+  - Firebase Auth with Google Sign-In
+  - WebSocket connection to game server with auto-reconnect
+  - ANSI color terminal renderer (maps all 16 MUD color codes)
+  - Command input with up/down arrow history recall
+- **Server** (`web/server/`): Node.js + TypeScript + Express + ws
+  - Firebase Admin SDK verifies auth tokens on WebSocket connect
+  - Creates/updates user docs in Firestore on login
+  - Stub command handler (help, look, who, say, quit) — to be replaced by full game engine
+
+### Setup
+
+1. Create a Firebase project, enable Google Sign-In in Authentication
+2. Copy web app config into `web/client/src/core/config.ts`
+3. Place Firebase service account JSON at `web/server/service-account.json`
+4. `cd web/client && npm install && npm run dev`
+5. `cd web/server && npm install && npm run dev`
+6. Open `http://localhost:5173`
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `web/client/src/core/config.ts` | Firebase project config + WebSocket URL |
+| `web/client/src/core/auth.ts` | Google Sign-In, token management |
+| `web/client/src/core/connection.ts` | WebSocket client with auto-reconnect |
+| `web/client/src/components/Terminal.tsx` | ANSI terminal renderer + command input |
+| `web/client/src/components/LoginScreen.tsx` | Login page with Google sign-in |
+| `web/client/src/App.tsx` | App shell, routes login vs terminal |
+| `web/server/src/index.ts` | WebSocket server, auth verification, stub commands |
+
+### Hosting Target
+
+- **Game server**: Oracle Cloud Always Free ARM A1 VM (systemd + Nginx/Caddy + Let's Encrypt)
+- **Client**: Firebase Hosting (static files)
+- **Auth**: Firebase Authentication (Google provider)
+- **Database**: Cloud Firestore
+- **Cost**: $0/month (all free tier)
+
+See `PLAN.md` for full implementation plan including Firestore schema, security rules, engine port order, and deployment checklist.
