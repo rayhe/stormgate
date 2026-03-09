@@ -210,3 +210,65 @@ Phase 1 scaffold is complete. Dependencies require `npm install` (needs external
 - **Cost**: $0/month (all free tier)
 
 See `PLAN.md` for full implementation plan including Firestore schema, security rules, engine port order, and deployment checklist.
+
+## Deployment (Live)
+
+- **Play:** https://new.rayhe.net/stormgate.html or `telnet 129.146.126.146 4000`
+- **VM:** Oracle Cloud ARM A1 Flex, 4 OCPU / 24GB RAM (always free max)
+- **Services:** stormgate (C MUD, port 4000), stormgate-web (WS proxy, port 8080), Caddy (HTTPS)
+- **Frontend:** Cloudflare Pages (rayhe.net), connects via `wss://macmini.rayhe.net/ws`
+- **Build:** `make -j$(nproc) -f makefile.prod` in `src/` (requires `-fcommon` for GCC 10+)
+
+## Modernization Options
+
+Features from other Diku/Merc forks that Stormgate could adopt. Prioritized by impact.
+
+### High Impact
+
+| Feature | Description | Port From | Effort |
+|---------|-------------|-----------|--------|
+| Copyover/hotboot | Restart server binary without disconnecting players. Save descriptor state, exec() new binary, reconnect. | ROM, SMAUG, tbaMUD | Medium |
+| GMCP protocol | Send structured JSON (HP, mana, room info, inventory) via telnet subneg to web client for rich UI panels (HP bars, minimap, etc.) | BasedMUD, tbaMUD | Medium |
+| Automap | Generate ASCII minimap from room exits, render in web client | tbaMUD, AFKMud | Low |
+| Split AC | 4 armor class values (pierce/bash/slash/magic) instead of 1. Adds tactical depth. | ROM 2.4 | Medium |
+| Auction house | Escrow-based item trading between players | AFKMud | Low-Medium |
+| Player housing | Persistent rooms owned by players with door locks | tbaMUD | Medium |
+
+### Medium Impact
+
+| Feature | Description | Port From |
+|---------|-------------|-----------|
+| Overland wilderness map | ANSI-rendered terrain map replacing boring connector zones, multiple continents | AFKMud |
+| Layered equipment | Wear cloak over armor over shirt on same body slot | SMAUG |
+| Socketed/runed weapons | Diablo-style gem slots for equipment bonuses | AFKMud |
+| Random treasure generation | Configurable loot tables per area, Diablo-style drops | AFKMud |
+| DG Scripts | Full scripting language (if/while/variables) for mobs/rooms/objects — much more powerful than MobProgs | tbaMUD |
+| Dual currency | Silver and gold coins | ROM 2.4 |
+| Corpse saving | Corpses persist across reboots | SMAUG |
+| Levers/switches/buttons | Interactive room mechanisms for puzzles | SMAUG |
+
+### What Stormgate Already Has (from Envy/Mythran)
+
+These are features that some forks added but Stormgate already has:
+- OLC (Online Creation) for builders
+- Immunities/Resistances/Vulnerabilities (IRV)
+- Clans, religions, 27 languages
+- Equipment durability and repair
+- Crafting (potions, scrolls, forging)
+- MobProgs + object/room progs
+- NPC hunting/tracking AI
+- Economy with bank system
+- Quest system
+
+### Reference Codebases (all open source on GitHub)
+
+| Codebase | Lineage | URL | Notes |
+|----------|---------|-----|-------|
+| Magma MUD | Envy/UltraEnvy (closest to Stormgate) | github.com/Xangis/magma | Same ancestry |
+| UltraEnvy 2.2 | Envy (Mythran's direct ancestor) | github.com/DikuMUDOmnibus/Ultra-Envy | |
+| ROM 2.4 | Merc | github.com/gblues/ROM | Split AC, dual currency |
+| BasedMUD | ROM (modernized) | github.com/scandum/basedmud | MTH telnet support |
+| AFKMud | SMAUG (most feature-rich) | github.com/Arthmoor/AFKMud | C++, overland, runes, auction |
+| SmaugFUSS | SMAUG (community-maintained) | github.com/smaugmuds/_smaug_ | |
+| tbaMUD | CircleMUD | github.com/tbamud/tbamud | DG Scripts, automap, housing |
+| LuminariMUD | tbaMUD | github.com/LuminariMUD/Luminari-Source | D20/Pathfinder rules |
