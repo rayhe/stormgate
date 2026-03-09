@@ -70,8 +70,6 @@ import {
   updatePos,
 } from './spells.js';
 
-import type { CommandEntry } from './commands.js';
-
 // ============================================================================
 //  Constants
 // ============================================================================
@@ -878,22 +876,6 @@ export function getMagicCommands(): Array<{
     { name: 'slist',    fn: doSlist,    minPosition: Position.DEAD,     minLevel: 0, log: 0 },
   ];
 }
-
-// ============================================================================
-//  magicCommands -- exported as CommandEntry[] array
-// ============================================================================
-
-/**
- * Exported command entries for the magic/skill system, typed as CommandEntry[].
- */
-export const magicCommands: CommandEntry[] = [
-  { name: 'cast',     fn: doCast,     minPosition: Position.FIGHTING, minLevel: 0, log: 0 },
-  { name: 'use',      fn: doUse,      minPosition: Position.FIGHTING, minLevel: 0, log: 0 },
-  { name: 'practice', fn: doPractice, minPosition: Position.RESTING,  minLevel: 0, log: 0 },
-  { name: 'spells',   fn: doSpells,   minPosition: Position.DEAD,     minLevel: 0, log: 0 },
-  { name: 'skills',   fn: doSkills,   minPosition: Position.DEAD,     minLevel: 0, log: 0 },
-  { name: 'slist',    fn: doSlist,    minPosition: Position.DEAD,     minLevel: 0, log: 0 },
-];
 
 // ============================================================================
 //  Spell function registry (maps string names to implementations)

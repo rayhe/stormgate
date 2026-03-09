@@ -1436,7 +1436,7 @@ function skill_backstab(sn: number, level: number, ch: CharData, vo: unknown): n
     sendToChar(ch, `${colors.red}You need to wield a weapon to backstab.\r\n`);
     return SKPELL_BOTCHED;
   }
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     const baseDam = dice(wield.value[1] || 1, wield.value[2] || 4);
@@ -1455,7 +1455,7 @@ function skill_bash(sn: number, level: number, ch: CharData, vo: unknown): numbe
     sendToChar(ch, `${colors.red}Bash whom?\r\n`);
     return SKPELL_BOTCHED;
   }
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     const dam = dice(2, ch.level);
@@ -1474,7 +1474,7 @@ function skill_bash(sn: number, level: number, ch: CharData, vo: unknown): numbe
 
 function skill_kick(sn: number, level: number, ch: CharData, vo: unknown): number {
   const victim = vo as CharData;
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     const dam = dice(3, ch.level);
@@ -1492,7 +1492,7 @@ function skill_disarm(sn: number, level: number, ch: CharData, vo: unknown): num
     sendToChar(ch, `${colors.red}Your opponent is not wielding a weapon.\r\n`);
     return SKPELL_BOTCHED;
   }
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     act('You disarm $N!', ch, null, victim, TO_CHAR);
@@ -1506,7 +1506,7 @@ function skill_disarm(sn: number, level: number, ch: CharData, vo: unknown): num
 
 function skill_trip(sn: number, level: number, ch: CharData, vo: unknown): number {
   const victim = vo as CharData;
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     act('You trip $N and $N goes down!', ch, null, victim, TO_CHAR);
@@ -1527,7 +1527,7 @@ function skill_hide(sn: number, level: number, ch: CharData, vo: unknown): numbe
     sendToChar(ch, `${colors.blue}You step out of the shadows.\r\n`);
     return SKPELL_NO_DAMAGE;
   }
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     ch.affectedBy |= AFF_HIDE;
@@ -1545,7 +1545,7 @@ function skill_sneak(sn: number, level: number, ch: CharData, vo: unknown): numb
     sendToChar(ch, `${colors.blue}You stop sneaking.\r\n`);
     return SKPELL_NO_DAMAGE;
   }
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     const af = newAffect(sn, level, ch.level, ApplyType.NONE, 0, AFF_SNEAK);
@@ -1575,7 +1575,7 @@ function skill_rescue(sn: number, level: number, ch: CharData, vo: unknown): num
     sendToChar(ch, `${colors.blue}They don't need rescuing.\r\n`);
     return SKPELL_BOTCHED;
   }
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     act('You rescue $N!', ch, null, victim, TO_CHAR);
@@ -1589,7 +1589,7 @@ function skill_rescue(sn: number, level: number, ch: CharData, vo: unknown): num
 
 function skill_punch(sn: number, level: number, ch: CharData, vo: unknown): number {
   const victim = vo as CharData;
-  const pcdata = world.pcdata.get(ch.id);
+  const pcdata = world.pcData.get(ch.id);
   const learned = pcdata?.learned.get(sn) ?? 0;
   if (numberPercent() <= Math.floor(learned / 10)) {
     const dam = dice(2, ch.level);
