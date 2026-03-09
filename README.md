@@ -4,8 +4,6 @@ A text-based MUD (Multi-User Dungeon) descended from the Diku/Merc/Envy lineage.
 
 **Play now:** [rayhe.net/stormgate](https://new.rayhe.net/stormgate.html) | `telnet 129.146.126.146 4000`
 
-<img src="http://rayhe.net/cat" width="600px"/>
-
 ## Architecture
 
 ```
