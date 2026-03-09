@@ -1,0 +1,18 @@
+# Build artifacts
+src/*.o
+src/stormgate
+src/*.core
+
+# Logs
+log/
+
+# Player data (may contain password hashes)
+player/
+
+# Editor backups
+*~
+*.swp
+*.swo
+
+# OS files
+.DS_Store

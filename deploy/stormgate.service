@@ -1,0 +1,22 @@
+[Unit]
+Description=Stormgate MUD Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/stormgate/area
+ExecStart=/opt/stormgate/src/stormgate 4000
+Restart=always
+RestartSec=5
+User=stormgate
+Group=stormgate
+StandardOutput=append:/opt/stormgate/log/stormgate.log
+StandardError=append:/opt/stormgate/log/stormgate.log
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/stormgate/player /opt/stormgate/log /opt/stormgate/area
+
+[Install]
+WantedBy=multi-user.target
