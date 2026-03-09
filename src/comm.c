@@ -199,6 +199,10 @@ extern void  userl_update args( ( struct descriptor_data *d, bool login ) );
 int	_read		args( ( int fd, char *buf, int nbyte ) );
 int	_write		args( ( int fd, char *buf, int nbyte ) );
 #endif
+
+bool    check_ban         args( ( struct descriptor_data *dnew, bool loggedin ) );
+extern void  userl_update args( ( struct descriptor_data *d, bool login ) );
+
 #ifdef linux
 int	listen		args( ( int s, int backlog ) );
 int	read		args( ( int fd, char *buf, int nbyte ) );
